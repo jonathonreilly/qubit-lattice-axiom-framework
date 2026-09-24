@@ -1,0 +1,801 @@
+===== runner cache v1 =====
+runner: scripts/local_electric_completions_and_postbirth_field_phase_2026_09_24.py
+runner_sha256: 02a28f6e847d65ef1d39961a5b56c7672b987354c8cb11e355b289afb4653fd5
+input_fingerprint_sha256: 071fe58471116f85c4f180bf5ca90b1da33d277015ccba2f15851889db633c4b
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT completion_and_terminal_phase_check.py; stdout sha256=8eed6dad996c522d7cded6e4c49cd60773991dfca1b20ff0858274e5206a3374
+{
+  "scope": "root conditional completion and terminal interference control",
+  "source_sha256": {
+    "full_rotor_energy_control.py": "3010bf6cee123324bbdade36b0cbc5c20f3f274c8fba778afe2e1d6c904c1f06",
+    "mobile_compensation_model_20260924.py": "eb53d8e60b7bbef8ccfb460fc64b25cab007edb87cd7af45151d76f52c95c23a",
+    "cube_high_flux_birth.py": "d3f0a282d6a8ad0024c0794bd507fa3e25a3a500b420f7d77b39cc84eeb8cfab"
+  },
+  "rows": [
+    {
+      "n": -7,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -6,
+            6,
+            0,
+            -7,
+            0,
+            7,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -6,
+            7,
+            -1,
+            -7,
+            0,
+            7,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        172,
+        186
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "49",
+          "first_D_lambda_variance": "2401",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "275/3",
+          "first_D_lambda_variance": "1225",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "14/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "113",
+          "first_D_lambda_variance": "784",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "7"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "177",
+          "first_D_lambda_variance": "49",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "14"
+        }
+      ]
+    },
+    {
+      "n": -2,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            1,
+            0,
+            -2,
+            0,
+            2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            -1,
+            2,
+            -1,
+            -2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        12,
+        16
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "4",
+          "first_D_lambda_variance": "16",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "20/3",
+          "first_D_lambda_variance": "100/9",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "4/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "8",
+          "first_D_lambda_variance": "9",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "12",
+          "first_D_lambda_variance": "4",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "4"
+        }
+      ]
+    },
+    {
+      "n": -1,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            1,
+            -1,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        4,
+        6
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "1",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "5/3",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "2",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "1"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "3",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2"
+        }
+      ]
+    },
+    {
+      "n": 0,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        4,
+        4
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "0",
+          "first_D_lambda_variance": "0",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "2/3",
+          "first_D_lambda_variance": "0",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "1",
+          "first_D_lambda_variance": "0",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "2",
+          "first_D_lambda_variance": "0",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            2,
+            -2,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            2,
+            -1,
+            -1,
+            1,
+            0,
+            -1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        10,
+        12
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "1",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "11/3",
+          "first_D_lambda_variance": "1/9",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "5",
+          "first_D_lambda_variance": "0",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "1"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "9",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            3,
+            -3,
+            0,
+            2,
+            0,
+            -2,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            3,
+            -2,
+            -1,
+            2,
+            0,
+            -2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        24,
+        28
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "4",
+          "first_D_lambda_variance": "16",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "32/3",
+          "first_D_lambda_variance": "4",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "4/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "14",
+          "first_D_lambda_variance": "1",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "2"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "24",
+          "first_D_lambda_variance": "4",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "4"
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "ordered_two_mark_norm_squared": 2,
+      "small_time_history_probability_over_kappa2_t2": 1,
+      "terminal_states": [
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            20,
+            -20,
+            0,
+            19,
+            0,
+            -19,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "E": [
+            20,
+            -19,
+            -1,
+            19,
+            0,
+            -19,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "wilson_translation_difference": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "terminal_E2_eigenvalues": [
+        1486,
+        1524
+      ],
+      "lambdas": [
+        {
+          "lambda": "0",
+          "first_D_lambda_mean": "361",
+          "first_D_lambda_variance": "130321",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "0"
+        },
+        {
+          "lambda": "1/3",
+          "first_D_lambda_mean": "2225/3",
+          "first_D_lambda_variance": "494209/9",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "38/3"
+        },
+        {
+          "lambda": "1/2",
+          "first_D_lambda_mean": "932",
+          "first_D_lambda_variance": "29241",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "19"
+        },
+        {
+          "lambda": "1",
+          "first_D_lambda_mean": "1503",
+          "first_D_lambda_variance": "361",
+          "D_lambda_H4_covariance": "0",
+          "terminal_frequency_over_K_absolute": "38"
+        }
+      ]
+    }
+  ],
+  "local_diagonal_bounds": [
+    {
+      "S": 1,
+      "exact_largest_abs_local_R": "1/2"
+    },
+    {
+      "S": 2,
+      "exact_largest_abs_local_R": "2/3"
+    },
+    {
+      "S": 3,
+      "exact_largest_abs_local_R": "3/4"
+    },
+    {
+      "S": 4,
+      "exact_largest_abs_local_R": "4/5"
+    },
+    {
+      "S": 8,
+      "exact_largest_abs_local_R": "8/9"
+    },
+    {
+      "S": 16,
+      "exact_largest_abs_local_R": "16/17"
+    }
+  ]
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

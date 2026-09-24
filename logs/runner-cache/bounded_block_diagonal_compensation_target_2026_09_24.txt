@@ -1,0 +1,1155 @@
+===== runner cache v1 =====
+runner: scripts/bounded_block_diagonal_compensation_target_2026_09_24.py
+runner_sha256: ac0b2ee164ba64f7a2b294bae0788236e7cc4b6a83fe61960c7f1465fa27cb3e
+input_fingerprint_sha256: 48e2351df05b311cad8a29b494d90f2761b8165f03491a89b6121bda4fe4af52
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT block_expansion_check.py; stdout sha256=0057c6dd37d97539377d6d99be530ff95fd18965a969a60e21ce8c0c5c44a5cd
+{
+  "environment": {
+    "python": "3.12.8",
+    "numpy": "2.4.1",
+    "sympy": "1.14.0"
+  },
+  "W_diagonal": [
+    "0",
+    "0",
+    "1",
+    "1",
+    "2",
+    "0",
+    "0",
+    "1",
+    "0"
+  ],
+  "N_diagonal": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "2",
+    "2",
+    "2",
+    "4"
+  ],
+  "T": [
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "2",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "-2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "C": [
+    [
+      "1",
+      "2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "-2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "4",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "2",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/3"
+    ]
+  ],
+  "jumps": [
+    [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-1/2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ]
+    ]
+  ],
+  "P_indices": [
+    0,
+    1,
+    5,
+    6,
+    8
+  ],
+  "M": [
+    [
+      "1",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "5",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "-2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-2",
+      "4",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "C0": [
+    [
+      "1",
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "-1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "2",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/3"
+    ]
+  ],
+  "C1": [
+    [
+      "3",
+      "1",
+      "0"
+    ],
+    [
+      "1",
+      "-2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-1"
+    ]
+  ],
+  "Z": [
+    [
+      "1",
+      "-1",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "K2": [
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "-6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3",
+      "-4",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/3"
+    ]
+  ],
+  "K4": [
+    [
+      "3/2",
+      "11/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "11/2",
+      "55/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "4",
+      "-17/2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-17/2",
+      "18",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "leading_effective_jumps": [
+    [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-4",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1",
+        "2",
+        "0"
+      ]
+    ],
+    [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1/2",
+        "1",
+        "0"
+      ]
+    ]
+  ],
+  "commutator_M_C0_frobenius_squared": "202",
+  "graph_fourth_antihermitian_frobenius_squared": "202",
+  "exact_Riccati_orders_1_to_3_zero": true,
+  "canonical_fourth_formula_verified": true,
+  "canonical_full_cluster_checks": [
+    {
+      "epsilon": 0.125,
+      "canonical_remainder_norm": 0.0010850776538656227,
+      "remainder_over_epsilon6": 284.4465964949498,
+      "fourth_coefficient_error": 4.444478070233591,
+      "wrong_graph_coefficient_error": 7.760544215790896,
+      "wrong_omitted_C1_error": 7.74107457061091,
+      "global_rotated_remainder_times_epsilon_minus2": 6.4080540065392615,
+      "parity_error": 0.0,
+      "off_W_block_norm": 6.224415503441008e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "canonical_remainder_norm": 1.966540679740141e-05,
+      "remainder_over_epsilon6": 329.9307775678717,
+      "fourth_coefficient_error": 1.2887920998744988,
+      "wrong_graph_coefficient_error": 5.714492842804937,
+      "wrong_omitted_C1_error": 5.81035589551818,
+      "global_rotated_remainder_times_epsilon_minus2": 6.6692900480667925,
+      "parity_error": 0.0,
+      "off_W_block_norm": 7.464791422108578e-16
+    },
+    {
+      "epsilon": 0.03125,
+      "canonical_remainder_norm": 3.2033135518352997e-07,
+      "remainder_over_epsilon6": 343.9531735991553,
+      "fourth_coefficient_error": 0.3358917710929251,
+      "wrong_graph_coefficient_error": 5.179094305036182,
+      "wrong_omitted_C1_error": 6.227280770997434,
+      "global_rotated_remainder_times_epsilon_minus2": 6.745439382034418,
+      "parity_error": 0.0,
+      "off_W_block_norm": 1.1721141456619307e-15
+    },
+    {
+      "epsilon": 0.015625,
+      "canonical_remainder_norm": 5.059239803329915e-09,
+      "remainder_over_epsilon6": 347.6683119667753,
+      "fourth_coefficient_error": 0.0848799589762635,
+      "wrong_graph_coefficient_error": 5.044781326362472,
+      "wrong_omitted_C1_error": 6.344726798774532,
+      "global_rotated_remainder_times_epsilon_minus2": 6.765303012899697,
+      "parity_error": 0.0,
+      "off_W_block_norm": 2.2368735524148553e-16
+    }
+  ],
+  "scalar_and_excited_block_controls": [
+    {
+      "epsilon": 0.125,
+      "scalar_rotation_error": 1.3310786961604053e-15,
+      "W2_only_compensation_low_block_change": 1.1699925728553583e-05,
+      "W2_change_over_epsilon6": 3.0670653301859505
+    },
+    {
+      "epsilon": 0.0625,
+      "scalar_rotation_error": 7.933582992442602e-16,
+      "W2_only_compensation_low_block_change": 2.0125823775592264e-07,
+      "W2_change_over_epsilon6": 3.3765529266104695
+    },
+    {
+      "epsilon": 0.03125,
+      "scalar_rotation_error": 7.930146828498029e-16,
+      "W2_only_compensation_low_block_change": 3.229781797583463e-09,
+      "W2_change_over_epsilon6": 3.4679517984592665
+    }
+  ]
+}
+
+COMPONENT density_residual_check.py; stdout sha256=f1b491cd232f74d688da0b4600fbe81df1579e201cdec3189175b91d02c51c75
+{
+  "delta": 0.7,
+  "kappa": 0.4,
+  "full_Hilbert_dimension": 9,
+  "P_dimension": 5,
+  "residual_norm_convention": "Euclidean induced norm of vectorized matrices (Hilbert--Schmidt), a finite control only; the proof uses dimension-free trace-norm estimates.",
+  "initial_state_0": "Pure N=0 superposition of the first two P states with relative phase i.",
+  "initial_state_1": "Pure P superposition across N=0,2,4 with amplitudes proportional to (1,i,1/2,-i/3,1/4).",
+  "residual_controls": [
+    {
+      "epsilon": 0.125,
+      "off_discrepancy_HS_norm": 20.42944845045631,
+      "epsilon_times_off_discrepancy": 2.5536810563070387,
+      "diagonal_discrepancy_HS_norm": 3.3873549837029464,
+      "diagonal_discrepancy_over_epsilon": 27.09883986962357,
+      "corrector_HS_norm": 0.00710768776631813,
+      "corrector_over_epsilon3": 3.6391361363548826,
+      "corrected_residual_HS_norm": 3.985755962716922,
+      "corrected_residual_over_epsilon": 31.886047701735375,
+      "rest_generator_norm_times_epsilon2": 8.618986942124987,
+      "target_generator_norm_times_epsilon2": 5.7254809227922525,
+      "residual_identity_error": 2.3209975462797545e-14,
+      "corrector_hermiticity_error": 3.6758835571425706e-17,
+      "effective_jump_error": 0.4402202229180504,
+      "excited_jump_leakage_over_epsilon2": 5.444902389366414,
+      "corrected_embedding_minimum_eigenvalue": -0.00018807424220538998
+    },
+    {
+      "epsilon": 0.0625,
+      "off_discrepancy_HS_norm": 44.60426591982012,
+      "epsilon_times_off_discrepancy": 2.7877666199887576,
+      "diagonal_discrepancy_HS_norm": 0.9855148554320486,
+      "diagonal_discrepancy_over_epsilon": 15.768237686912778,
+      "corrector_HS_norm": 0.000971599757665914,
+      "corrector_over_epsilon3": 3.979672607399584,
+      "corrected_residual_HS_norm": 1.7998823726085602,
+      "corrected_residual_over_epsilon": 28.798117961736963,
+      "rest_generator_norm_times_epsilon2": 8.949907905924213,
+      "target_generator_norm_times_epsilon2": 5.928709190073551,
+      "residual_identity_error": 1.1176481242959854e-13,
+      "corrector_hermiticity_error": 1.568052697275199e-17,
+      "effective_jump_error": 0.12788450869093673,
+      "excited_jump_leakage_over_epsilon2": 6.203331609965536,
+      "corrected_embedding_minimum_eigenvalue": -7.272051502797501e-06
+    },
+    {
+      "epsilon": 0.03125,
+      "off_discrepancy_HS_norm": 91.54155326168072,
+      "epsilon_times_off_discrepancy": 2.8606735394275224,
+      "diagonal_discrepancy_HS_norm": 0.257131256493858,
+      "diagonal_discrepancy_over_epsilon": 8.228200207803456,
+      "corrector_HS_norm": 0.00012469229859907418,
+      "corrector_over_epsilon3": 4.085917240494463,
+      "corrected_residual_HS_norm": 0.8768736201436942,
+      "corrected_residual_over_epsilon": 28.059955844598214,
+      "rest_generator_norm_times_epsilon2": 9.046442123717089,
+      "target_generator_norm_times_epsilon2": 5.980030997135673,
+      "residual_identity_error": 4.55382584891807e-13,
+      "corrector_hermiticity_error": 6.863653402491994e-18,
+      "effective_jump_error": 0.033363762091773705,
+      "excited_jump_leakage_over_epsilon2": 6.436525944749353,
+      "corrected_embedding_minimum_eigenvalue": -2.4146963807987326e-07
+    },
+    {
+      "epsilon": 0.015625,
+      "off_discrepancy_HS_norm": 184.32482574710593,
+      "epsilon_times_off_discrepancy": 2.88007540229853,
+      "diagonal_discrepancy_HS_norm": 0.0649964114991241,
+      "diagonal_discrepancy_over_epsilon": 4.159770335943942,
+      "corrector_HS_norm": 1.569442960765111e-05,
+      "corrector_over_epsilon3": 4.114200555068092,
+      "corrected_residual_HS_norm": 0.43536750096705557,
+      "corrected_residual_over_epsilon": 27.863520061891556,
+      "rest_generator_norm_times_epsilon2": 9.071625614852225,
+      "target_generator_norm_times_epsilon2": 5.992892046572218,
+      "residual_identity_error": 1.8670442796791347e-12,
+      "corrector_hermiticity_error": 2.2336512315821238e-18,
+      "effective_jump_error": 0.008433573886260856,
+      "excited_jump_leakage_over_epsilon2": 6.498286369191753,
+      "corrected_embedding_minimum_eigenvalue": -7.665616814591998e-09
+    }
+  ],
+  "density_controls": [
+    {
+      "epsilon": 0.125,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.3708921020068418,
+      "trace_error_over_epsilon": 2.9671368160547344,
+      "exact_density_trace_error": 4.232561097396482e-15,
+      "exact_density_minimum_eigenvalue": -3.807545124902221e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.3923881826562531,
+      "trace_error_over_epsilon": 3.1391054612500247,
+      "exact_density_trace_error": 2.9109531955890317e-15,
+      "exact_density_minimum_eigenvalue": -3.077682138091388e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.3323023914907386,
+      "trace_error_over_epsilon": 2.6584191319259087,
+      "exact_density_trace_error": 1.203566444208955e-14,
+      "exact_density_minimum_eigenvalue": -9.281927482197468e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.3318042380520303,
+      "trace_error_over_epsilon": 2.6544339044162424,
+      "exact_density_trace_error": 7.795046341882272e-15,
+      "exact_density_minimum_eigenvalue": -7.682282746111149e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.32917833620909054,
+      "trace_error_over_epsilon": 2.6334266896727243,
+      "exact_density_trace_error": 6.461562076933352e-14,
+      "exact_density_minimum_eigenvalue": -5.58235378110277e-15
+    },
+    {
+      "epsilon": 0.125,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.34174469927910317,
+      "trace_error_over_epsilon": 2.7339575942328254,
+      "exact_density_trace_error": 4.3303643360970844e-14,
+      "exact_density_minimum_eigenvalue": -4.559409125616496e-15
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.15135912349604666,
+      "trace_error_over_epsilon": 2.4217459759367466,
+      "exact_density_trace_error": 6.882080244438425e-15,
+      "exact_density_minimum_eigenvalue": -2.2117736853540322e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.14871571108619536,
+      "trace_error_over_epsilon": 2.3794513773791257,
+      "exact_density_trace_error": 1.3963721958169578e-14,
+      "exact_density_minimum_eigenvalue": -1.7817795519370696e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.1480242988702111,
+      "trace_error_over_epsilon": 2.3683887819233775,
+      "exact_density_trace_error": 1.058734565724743e-14,
+      "exact_density_minimum_eigenvalue": -1.4718537553861734e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.14637490821069535,
+      "trace_error_over_epsilon": 2.3419985313711256,
+      "exact_density_trace_error": 4.2750358123545355e-14,
+      "exact_density_minimum_eigenvalue": -1.0552493169501311e-16
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.11917257124180267,
+      "trace_error_over_epsilon": 1.9067611398688427,
+      "exact_density_trace_error": 1.5592860416846524e-13,
+      "exact_density_minimum_eigenvalue": -5.599029027249632e-14
+    },
+    {
+      "epsilon": 0.0625,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.12094515572260986,
+      "trace_error_over_epsilon": 1.9351224915617578,
+      "exact_density_trace_error": 7.255952004402771e-14,
+      "exact_density_minimum_eigenvalue": -4.6208757155795443e-14
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.1108485296128639,
+      "trace_error_over_epsilon": 3.547152947611645,
+      "exact_density_trace_error": 4.363912362757798e-13,
+      "exact_density_minimum_eigenvalue": -6.139664045325323e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.10610156277655095,
+      "trace_error_over_epsilon": 3.3952500088496302,
+      "exact_density_trace_error": 4.256307028072807e-13,
+      "exact_density_minimum_eigenvalue": -5.91084369507683e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0627296596504714,
+      "trace_error_over_epsilon": 2.007349108815085,
+      "exact_density_trace_error": 9.946179382860777e-13,
+      "exact_density_minimum_eigenvalue": -4.789502968455568e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.06331379768430256,
+      "trace_error_over_epsilon": 2.026041525897682,
+      "exact_density_trace_error": 1.0780674762998617e-12,
+      "exact_density_minimum_eigenvalue": -5.056468413681802e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.06136504986707279,
+      "trace_error_over_epsilon": 1.9636815957463294,
+      "exact_density_trace_error": 8.85350121703736e-12,
+      "exact_density_minimum_eigenvalue": -5.544254791111122e-17
+    },
+    {
+      "epsilon": 0.03125,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.06055969237594613,
+      "trace_error_over_epsilon": 1.937910156030276,
+      "exact_density_trace_error": 7.94658776940382e-12,
+      "exact_density_minimum_eigenvalue": -4.572159355827008e-17
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.0,
+      "initial_state": 0,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": 0.0
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.0,
+      "initial_state": 1,
+      "trace_distance_norm": 0.0,
+      "trace_error_over_epsilon": 0.0,
+      "exact_density_trace_error": 2.220446049250313e-16,
+      "exact_density_minimum_eigenvalue": -1.4636113025052578e-16
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.03,
+      "initial_state": 0,
+      "trace_distance_norm": 0.05089411809004507,
+      "trace_error_over_epsilon": 3.2572235577628845,
+      "exact_density_trace_error": 7.585268052245474e-12,
+      "exact_density_minimum_eigenvalue": -2.073090949468636e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.03,
+      "initial_state": 1,
+      "trace_distance_norm": 0.04910798465800357,
+      "trace_error_over_epsilon": 3.1429110181122284,
+      "exact_density_trace_error": 8.444085469734825e-12,
+      "exact_density_minimum_eigenvalue": -1.710933467525525e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.12,
+      "initial_state": 0,
+      "trace_distance_norm": 0.037743599116764885,
+      "trace_error_over_epsilon": 2.4155903434729527,
+      "exact_density_trace_error": 2.742300066279711e-11,
+      "exact_density_minimum_eigenvalue": -5.000597949006507e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.12,
+      "initial_state": 1,
+      "trace_distance_norm": 0.03676489936272837,
+      "trace_error_over_epsilon": 2.352953559214616,
+      "exact_density_trace_error": 3.1423040970249956e-11,
+      "exact_density_minimum_eigenvalue": -4.126666406498139e-12
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.35,
+      "initial_state": 0,
+      "trace_distance_norm": 0.022415773881052568,
+      "trace_error_over_epsilon": 1.4346095283873643,
+      "exact_density_trace_error": 1.553929828699378e-10,
+      "exact_density_minimum_eigenvalue": -1.1147959126939865e-22
+    },
+    {
+      "epsilon": 0.015625,
+      "time": 0.35,
+      "initial_state": 1,
+      "trace_distance_norm": 0.02234471052778155,
+      "trace_error_over_epsilon": 1.4300614737780193,
+      "exact_density_trace_error": 1.5785803023811353e-10,
+      "exact_density_minimum_eigenvalue": -1.833406623386779e-17
+    }
+  ],
+  "maximum_trace_error_over_epsilon": 3.547152947611645,
+  "proof_limit": "These floating finite-block comparisons corroborate the analytic estimate; no interval certificate or spin/volume-uniform numerical assertion."
+}
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

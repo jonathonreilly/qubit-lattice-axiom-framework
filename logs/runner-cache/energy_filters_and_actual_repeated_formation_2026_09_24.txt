@@ -1,0 +1,2262 @@
+===== runner cache v1 =====
+runner: scripts/energy_filters_and_actual_repeated_formation_2026_09_24.py
+runner_sha256: 88cfbd67ed23f0b73139197a15ae2eb03bfd4e5e5f4070b91583eda14b748998
+input_fingerprint_sha256: 55ec404faf4b41525e73b693ea7b676a1da0417e5b851d314a2e0ac6659b3687
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 2.64
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT flat_band_spin_correction_probe.py; stdout sha256=286f50bdf8b82a62f0dd531e257c4ade073bc9688493424e8e0d25cd93d2897d
+{
+  "source_sha256": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b",
+  "status": "author exploratory exact-rational flat-projector and leading spin correction controls",
+  "exact_rows": [
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2080",
+      "D2_leakage_norm_squared": "32",
+      "flat_compressed_expectation": "64"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    }
+  ],
+  "finite_spin_core_expansion": [
+    {
+      "S": 8,
+      "core_expansion_residual_norm": 0.004979872200340616
+    },
+    {
+      "S": 16,
+      "core_expansion_residual_norm": 0.0013046294986268816
+    },
+    {
+      "S": 32,
+      "core_expansion_residual_norm": 0.0003351217725739629
+    },
+    {
+      "S": 64,
+      "core_expansion_residual_norm": 8.500923182638994e-05
+    },
+    {
+      "S": 128,
+      "core_expansion_residual_norm": 2.1413202925062014e-05
+    }
+  ],
+  "invariant_under_D2_on_tested_vectors": false,
+  "scope": "Finite-support core identities do not establish uniform ordinary-time convergence or an invariant finite-spin band."
+}
+
+COMPONENT flat_compressed_operators.py; stdout sha256=70866b7e9b7757976549d0056c32a74104b31408f16f7b59e82a6d4654fda218
+{
+  "source_sha256": "59d9e1edc8f199e2ead35101849717df9e682ff7ecea1f474d3159b5f8552dc4",
+  "rows": [
+    {
+      "kind": 0,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 2,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 3,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 + 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 - 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 2,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 3,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    }
+  ],
+  "status": "author exact symbolic identities in the compact flat basis",
+  "scope": "Compression and invariant H4, not yet a joint-scaling time-limit proof."
+}
+
+COMPONENT energy_filter_check.py; stdout sha256=9021239103b388b8e2008c15f44cd793d52abe5a832b450e17573a8122211cd2
+{"S": 4, "eta": 8.0, "physical_dimension": 264, "sharp_width": 5.656854249492381, "sharp_width_over_eta": 0.7071067811865476, "selected_eigenvalue_count": 44, "eigen_residual_Frobenius": 1.5081813582264348e-13, "accepted_norm_squared": 0.16705161829811882, "selected_vector_error_to_F_first_output": 0.8092422800740386, "selected_bright_norm_squared": 0.1552607671076402, "flat_rejection_norm_squared": 0.4996123007517887, "smooth_filter_vector_error_to_reference": 0.5256784518948276, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.1079875188900708, "finite_norm_squared": 1.0000000000000007}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000007}, {"t": 0.4, "state_norm_error": 0.10798751889002042, "finite_norm_squared": 1.0000000000000009}], "elapsed_seconds": 0.024531374976504594}
+{"S": 8, "eta": 28.8, "physical_dimension": 552, "sharp_width": 10.73312629199899, "sharp_width_over_eta": 0.37267799624996495, "selected_eigenvalue_count": 64, "eigen_residual_Frobenius": 9.793602281882759e-13, "accepted_norm_squared": 0.4372290134038468, "selected_vector_error_to_F_first_output": 0.37648072124029297, "selected_bright_norm_squared": 0.04546633898372879, "flat_rejection_norm_squared": 0.09627139448188236, "smooth_filter_vector_error_to_reference": 0.23751935197679477, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.049495224481784034, "finite_norm_squared": 1.0000000000000004}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000018}, {"t": 0.4, "state_norm_error": 0.049495224481748146, "finite_norm_squared": 1.0000000000000018}], "elapsed_seconds": 0.057277125015389174}
+{"S": 16, "eta": 108.80000000000001, "physical_dimension": 1128, "sharp_width": 20.861447696648476, "sharp_width_over_eta": 0.1917412472118426, "selected_eigenvalue_count": 104, "eigen_residual_Frobenius": 7.310690556368412e-12, "accepted_norm_squared": 0.5258173655337233, "selected_vector_error_to_F_first_output": 0.15995908704589532, "selected_bright_norm_squared": 0.025580044611292017, "flat_rejection_norm_squared": 6.864917264323593e-06, "smooth_filter_vector_error_to_reference": 0.11612385702106155, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.024263095755240736, "finite_norm_squared": 1.0000000000000002}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 1.0000000000000018}, {"t": 0.4, "state_norm_error": 0.024263095755217855, "finite_norm_squared": 0.9999999999999937}], "elapsed_seconds": 0.23577175004174933}
+{"S": 32, "eta": 422.40000000000003, "physical_dimension": 2280, "sharp_width": 41.10474425172841, "sharp_width_over_eta": 0.09731236802019036, "selected_eigenvalue_count": 144, "eigen_residual_Frobenius": 4.884815480268184e-11, "accepted_norm_squared": 0.5104254343601545, "selected_vector_error_to_F_first_output": 0.10194039304701412, "selected_bright_norm_squared": 0.010390765455290798, "flat_rejection_norm_squared": 1.078279288960238e-06, "smooth_filter_vector_error_to_reference": 0.0558534289990162, "pure_Hamiltonian_motion": [{"t": -0.4, "state_norm_error": 0.012905510461670319, "finite_norm_squared": 1.000000000000004}, {"t": 0.0, "state_norm_error": 0.0, "finite_norm_squared": 0.9999999999999956}, {"t": 0.4, "state_norm_error": 0.012905510461644511, "finite_norm_squared": 0.9999999999999876}], "elapsed_seconds": 1.7497837499831803}
+{
+  "source_sha256": "039a179e3f7abdd21984197775e7f5dde9f591a93c357dc1e0b5b6bf00227e77",
+  "reused_sources": {
+    "finite_spin_dynamics_check.py": "90186b1c250d1978003dbb121e43c3b6486830f54b44cab4f8c4fafd2b2be945",
+    "flat_band_spin_correction_probe.py": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b"
+  },
+  "exact": {
+    "exact_Laurent_Grams_all_24_marks": [
+      {
+        "edge": 0,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 1,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 2,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 3,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 4,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 5,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 6,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 7,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      }
+    ],
+    "resolved_first_total": 8,
+    "coherent_first_total": 8,
+    "opposite_sign_projected_cross_Grams_vanish": true,
+    "scope": "Translation-covariant physical field operator identities, not one-flux norms."
+  },
+  "numerical": {
+    "parameters": {
+      "K": 0.4,
+      "delta": 0.7,
+      "kappa_in_unitary_control": 0.0
+    },
+    "smooth_filter": "g(x)=16^2/(x^2+16^2)",
+    "flat_reference_cut": 24,
+    "flat_reference_filter_error_norm_bound": 1.6500200274598355e-18,
+    "flat_reference_filter_bound_scope": "Analytic truncation bound; floating-point solve and roundoff errors are separate diagnostics, not interval certified.",
+    "reference_numerical_interior_resolvent_residual_norms": [
+      4.3922339255266425e-17,
+      4.3922339255266425e-17
+    ],
+    "reference_numerical_omitted_boundary_residual_norms": [
+      1.2140371989325218e-153,
+      1.2140371989325218e-153
+    ],
+    "flat_reference_motion_Dyson_tail_norm_bound": 5.878362905564118e-17,
+    "sharp_width_sequence": "2 sqrt(eta); this is expanding and subfast asymptotically",
+    "rows": [
+      {
+        "S": 4,
+        "eta": 8.0,
+        "physical_dimension": 264,
+        "sharp_width": 5.656854249492381,
+        "sharp_width_over_eta": 0.7071067811865476,
+        "selected_eigenvalue_count": 44,
+        "eigen_residual_Frobenius": 1.5081813582264348e-13,
+        "accepted_norm_squared": 0.16705161829811882,
+        "selected_vector_error_to_F_first_output": 0.8092422800740386,
+        "selected_bright_norm_squared": 0.1552607671076402,
+        "flat_rejection_norm_squared": 0.4996123007517887,
+        "smooth_filter_vector_error_to_reference": 0.5256784518948276,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.1079875188900708,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.10798751889002042,
+            "finite_norm_squared": 1.0000000000000009
+          }
+        ],
+        "elapsed_seconds": 0.024531374976504594
+      },
+      {
+        "S": 8,
+        "eta": 28.8,
+        "physical_dimension": 552,
+        "sharp_width": 10.73312629199899,
+        "sharp_width_over_eta": 0.37267799624996495,
+        "selected_eigenvalue_count": 64,
+        "eigen_residual_Frobenius": 9.793602281882759e-13,
+        "accepted_norm_squared": 0.4372290134038468,
+        "selected_vector_error_to_F_first_output": 0.37648072124029297,
+        "selected_bright_norm_squared": 0.04546633898372879,
+        "flat_rejection_norm_squared": 0.09627139448188236,
+        "smooth_filter_vector_error_to_reference": 0.23751935197679477,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.049495224481784034,
+            "finite_norm_squared": 1.0000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.049495224481748146,
+            "finite_norm_squared": 1.0000000000000018
+          }
+        ],
+        "elapsed_seconds": 0.057277125015389174
+      },
+      {
+        "S": 16,
+        "eta": 108.80000000000001,
+        "physical_dimension": 1128,
+        "sharp_width": 20.861447696648476,
+        "sharp_width_over_eta": 0.1917412472118426,
+        "selected_eigenvalue_count": 104,
+        "eigen_residual_Frobenius": 7.310690556368412e-12,
+        "accepted_norm_squared": 0.5258173655337233,
+        "selected_vector_error_to_F_first_output": 0.15995908704589532,
+        "selected_bright_norm_squared": 0.025580044611292017,
+        "flat_rejection_norm_squared": 6.864917264323593e-06,
+        "smooth_filter_vector_error_to_reference": 0.11612385702106155,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.024263095755240736,
+            "finite_norm_squared": 1.0000000000000002
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.024263095755217855,
+            "finite_norm_squared": 0.9999999999999937
+          }
+        ],
+        "elapsed_seconds": 0.23577175004174933
+      },
+      {
+        "S": 32,
+        "eta": 422.40000000000003,
+        "physical_dimension": 2280,
+        "sharp_width": 41.10474425172841,
+        "sharp_width_over_eta": 0.09731236802019036,
+        "selected_eigenvalue_count": 144,
+        "eigen_residual_Frobenius": 4.884815480268184e-11,
+        "accepted_norm_squared": 0.5104254343601545,
+        "selected_vector_error_to_F_first_output": 0.10194039304701412,
+        "selected_bright_norm_squared": 0.010390765455290798,
+        "flat_rejection_norm_squared": 1.078279288960238e-06,
+        "smooth_filter_vector_error_to_reference": 0.0558534289990162,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.012905510461670319,
+            "finite_norm_squared": 1.000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 0.9999999999999956
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.012905510461644511,
+            "finite_norm_squared": 0.9999999999999876
+          }
+        ],
+        "elapsed_seconds": 1.7497837499831803
+      }
+    ],
+    "limitations": "Finite sizes corroborate the ring claims; no cube propagation, full filtered finite-spin count process, or convergence rate is inferred."
+  }
+}
+
+RESULT ENERGY_FILTER_RESULTS.json
+{
+  "source_sha256": "039a179e3f7abdd21984197775e7f5dde9f591a93c357dc1e0b5b6bf00227e77",
+  "reused_sources": {
+    "finite_spin_dynamics_check.py": "90186b1c250d1978003dbb121e43c3b6486830f54b44cab4f8c4fafd2b2be945",
+    "flat_band_spin_correction_probe.py": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b"
+  },
+  "exact": {
+    "exact_Laurent_Grams_all_24_marks": [
+      {
+        "edge": 0,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 0,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 1,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 1,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 2,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 2,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 3,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 3,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 4,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 4,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 5,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 5,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 6,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 6,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      },
+      {
+        "edge": 7,
+        "sign": -1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": 1,
+        "unfiltered_Gram": 1,
+        "filtered_Gram": "1/2",
+        "projected_output_terms": 2
+      },
+      {
+        "edge": 7,
+        "sign": null,
+        "unfiltered_Gram": 2,
+        "filtered_Gram": "1",
+        "projected_output_terms": 4
+      }
+    ],
+    "resolved_first_total": 8,
+    "coherent_first_total": 8,
+    "opposite_sign_projected_cross_Grams_vanish": true,
+    "scope": "Translation-covariant physical field operator identities, not one-flux norms."
+  },
+  "numerical": {
+    "parameters": {
+      "K": 0.4,
+      "delta": 0.7,
+      "kappa_in_unitary_control": 0.0
+    },
+    "smooth_filter": "g(x)=16^2/(x^2+16^2)",
+    "flat_reference_cut": 24,
+    "flat_reference_filter_error_norm_bound": 1.6500200274598355e-18,
+    "flat_reference_filter_bound_scope": "Analytic truncation bound; floating-point solve and roundoff errors are separate diagnostics, not interval certified.",
+    "reference_numerical_interior_resolvent_residual_norms": [
+      4.3922339255266425e-17,
+      4.3922339255266425e-17
+    ],
+    "reference_numerical_omitted_boundary_residual_norms": [
+      1.2140371989325218e-153,
+      1.2140371989325218e-153
+    ],
+    "flat_reference_motion_Dyson_tail_norm_bound": 5.878362905564118e-17,
+    "sharp_width_sequence": "2 sqrt(eta); this is expanding and subfast asymptotically",
+    "rows": [
+      {
+        "S": 4,
+        "eta": 8.0,
+        "physical_dimension": 264,
+        "sharp_width": 5.656854249492381,
+        "sharp_width_over_eta": 0.7071067811865476,
+        "selected_eigenvalue_count": 44,
+        "eigen_residual_Frobenius": 1.5081813582264348e-13,
+        "accepted_norm_squared": 0.16705161829811882,
+        "selected_vector_error_to_F_first_output": 0.8092422800740386,
+        "selected_bright_norm_squared": 0.1552607671076402,
+        "flat_rejection_norm_squared": 0.4996123007517887,
+        "smooth_filter_vector_error_to_reference": 0.5256784518948276,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.1079875188900708,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000007
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.10798751889002042,
+            "finite_norm_squared": 1.0000000000000009
+          }
+        ],
+        "elapsed_seconds": 0.024531374976504594
+      },
+      {
+        "S": 8,
+        "eta": 28.8,
+        "physical_dimension": 552,
+        "sharp_width": 10.73312629199899,
+        "sharp_width_over_eta": 0.37267799624996495,
+        "selected_eigenvalue_count": 64,
+        "eigen_residual_Frobenius": 9.793602281882759e-13,
+        "accepted_norm_squared": 0.4372290134038468,
+        "selected_vector_error_to_F_first_output": 0.37648072124029297,
+        "selected_bright_norm_squared": 0.04546633898372879,
+        "flat_rejection_norm_squared": 0.09627139448188236,
+        "smooth_filter_vector_error_to_reference": 0.23751935197679477,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.049495224481784034,
+            "finite_norm_squared": 1.0000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.049495224481748146,
+            "finite_norm_squared": 1.0000000000000018
+          }
+        ],
+        "elapsed_seconds": 0.057277125015389174
+      },
+      {
+        "S": 16,
+        "eta": 108.80000000000001,
+        "physical_dimension": 1128,
+        "sharp_width": 20.861447696648476,
+        "sharp_width_over_eta": 0.1917412472118426,
+        "selected_eigenvalue_count": 104,
+        "eigen_residual_Frobenius": 7.310690556368412e-12,
+        "accepted_norm_squared": 0.5258173655337233,
+        "selected_vector_error_to_F_first_output": 0.15995908704589532,
+        "selected_bright_norm_squared": 0.025580044611292017,
+        "flat_rejection_norm_squared": 6.864917264323593e-06,
+        "smooth_filter_vector_error_to_reference": 0.11612385702106155,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.024263095755240736,
+            "finite_norm_squared": 1.0000000000000002
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 1.0000000000000018
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.024263095755217855,
+            "finite_norm_squared": 0.9999999999999937
+          }
+        ],
+        "elapsed_seconds": 0.23577175004174933
+      },
+      {
+        "S": 32,
+        "eta": 422.40000000000003,
+        "physical_dimension": 2280,
+        "sharp_width": 41.10474425172841,
+        "sharp_width_over_eta": 0.09731236802019036,
+        "selected_eigenvalue_count": 144,
+        "eigen_residual_Frobenius": 4.884815480268184e-11,
+        "accepted_norm_squared": 0.5104254343601545,
+        "selected_vector_error_to_F_first_output": 0.10194039304701412,
+        "selected_bright_norm_squared": 0.010390765455290798,
+        "flat_rejection_norm_squared": 1.078279288960238e-06,
+        "smooth_filter_vector_error_to_reference": 0.0558534289990162,
+        "pure_Hamiltonian_motion": [
+          {
+            "t": -0.4,
+            "state_norm_error": 0.012905510461670319,
+            "finite_norm_squared": 1.000000000000004
+          },
+          {
+            "t": 0.0,
+            "state_norm_error": 0.0,
+            "finite_norm_squared": 0.9999999999999956
+          },
+          {
+            "t": 0.4,
+            "state_norm_error": 0.012905510461644511,
+            "finite_norm_squared": 0.9999999999999876
+          }
+        ],
+        "elapsed_seconds": 1.7497837499831803
+      }
+    ],
+    "limitations": "Finite sizes corroborate the ring claims; no cube propagation, full filtered finite-spin count process, or convergence rate is inferred."
+  }
+}
+
+RESULT FLAT_BAND_SPIN_CORRECTION_RESULTS.json
+{
+  "source_sha256": "791330246ebb0f35b696edd17cead1c95fc4db9ccd43792b569c01293e375d4b",
+  "status": "author exploratory exact-rational flat-projector and leading spin correction controls",
+  "exact_rows": [
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        0,
+        1
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2080",
+      "D2_leakage_norm_squared": "32",
+      "flat_compressed_expectation": "64"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "10",
+      "D2_leakage_norm_squared": "2",
+      "flat_compressed_expectation": "4"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 0,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 1,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "291",
+      "D2_leakage_norm_squared": "53/2",
+      "flat_compressed_expectation": "23"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 2,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "857/2",
+      "D2_leakage_norm_squared": "73/2",
+      "flat_compressed_expectation": "28"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "136",
+      "D2_leakage_norm_squared": "8",
+      "flat_compressed_expectation": "16"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "0",
+      "D2_leakage_norm_squared": "0",
+      "flat_compressed_expectation": "0"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 3,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "666",
+      "D2_leakage_norm_squared": "18",
+      "flat_compressed_expectation": "36"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "75",
+      "D2_leakage_norm_squared": "29/2",
+      "flat_compressed_expectation": "11"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1",
+      "D2_leakage_norm_squared": "1/2",
+      "flat_compressed_expectation": "1"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 4,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "2225/2",
+      "D2_leakage_norm_squared": "109/2",
+      "flat_compressed_expectation": "46"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": -2,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "81/2",
+      "D2_leakage_norm_squared": "17/2",
+      "flat_compressed_expectation": "8"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 0,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "9/2",
+      "D2_leakage_norm_squared": "5/2",
+      "flat_compressed_expectation": "2"
+    },
+    {
+      "C": [
+        1,
+        2
+      ],
+      "minus_word_index": 5,
+      "initial_circulation": 3,
+      "flat_vector_norm_squared": "1/2",
+      "D2_norm_squared": "1473",
+      "D2_leakage_norm_squared": "137/2",
+      "flat_compressed_expectation": "53"
+    }
+  ],
+  "finite_spin_core_expansion": [
+    {
+      "S": 8,
+      "core_expansion_residual_norm": 0.004979872200340616
+    },
+    {
+      "S": 16,
+      "core_expansion_residual_norm": 0.0013046294986268816
+    },
+    {
+      "S": 32,
+      "core_expansion_residual_norm": 0.0003351217725739629
+    },
+    {
+      "S": 64,
+      "core_expansion_residual_norm": 8.500923182638994e-05
+    },
+    {
+      "S": 128,
+      "core_expansion_residual_norm": 2.1413202925062014e-05
+    }
+  ],
+  "invariant_under_D2_on_tested_vectors": false,
+  "scope": "Finite-support core identities do not establish uniform ordinary-time convergence or an invariant finite-spin band."
+}
+
+RESULT FLAT_COMPRESSED_OPERATORS_RESULTS.json
+{
+  "source_sha256": "59d9e1edc8f199e2ead35101849717df9e682ff7ecea1f474d3159b5f8552dc4",
+  "rows": [
+    {
+      "kind": 0,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 2,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 3,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 0,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 + 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 0,
+      "electric_quadratic": "4*f**2 - 8*f + 4",
+      "leading_spin_leakage_norm_squared": "4*f**2 - 8*f + 4",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 0,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 1,
+      "electric_quadratic": "4*f**2 - 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 1,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 2,
+      "electric_quadratic": "4*f**2 - 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 - 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 2,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 3,
+      "electric_quadratic": "4*f**2",
+      "leading_spin_leakage_norm_squared": "4*f**2",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 3,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 4,
+      "electric_quadratic": "4*f**2 + 3*f + 1",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 6*f + 1",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": -1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 1,
+          "r": 4,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    },
+    {
+      "kind": 1,
+      "r": 5,
+      "electric_quadratic": "4*f**2 + 5*f + 2",
+      "leading_spin_leakage_norm_squared": "10*f**2 + 14*f + 5",
+      "H4_terms": [
+        {
+          "kind": 0,
+          "r": 0,
+          "circulation_shift": 1,
+          "coefficient": "-2"
+        },
+        {
+          "kind": 0,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "2"
+        },
+        {
+          "kind": 1,
+          "r": 5,
+          "circulation_shift": 0,
+          "coefficient": "12"
+        }
+      ]
+    }
+  ],
+  "status": "author exact symbolic identities in the compact flat basis",
+  "scope": "Compression and invariant H4, not yet a joint-scaling time-limit proof."
+}
+
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

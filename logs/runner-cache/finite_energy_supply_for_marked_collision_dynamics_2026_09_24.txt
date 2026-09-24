@@ -1,0 +1,526 @@
+===== runner cache v1 =====
+runner: scripts/finite_energy_supply_for_marked_collision_dynamics_2026_09_24.py
+runner_sha256: 630063fa3e482f10fa3abaf735a1358bb578f8aec6743feb3d8b852ad33f1bf8
+input_fingerprint_sha256: cc704ed5b0e7225d0677e55321d4f450d06785035575002dc6d8415cd27d8dd0
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1.46
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT finite_battery_control.py; stdout sha256=6cc11d597d10985d81e0a609cba06619807df02a30ef72144101d925ad22cc79
+{
+  "scope": "Two arbitrary six-dimensional unitaries, two noncommensurate positive gaps, genuine finite battery boundaries",
+  "exact_small_L": 2,
+  "exact_full_unitarity": true,
+  "exact_composition": true,
+  "exact_energy_commutation": true,
+  "wrong_cyclic_wrap_energy_change": "4*sqrt(2)",
+  "rows": [
+    {
+      "L": 3,
+      "battery_dimension": 25,
+      "total_dimension": 150,
+      "nearest_shift_overlap": 0.7071067811865477,
+      "isometry_operator_norm_error": 0.9826934428918207,
+      "proved_isometry_bound": 1.5307337294603591,
+      "reference_input_trace_norm_error": 0.7791713734874544,
+      "proved_channel_bound": 2.0,
+      "initial_battery_mean": 6.292528739883945,
+      "energy_balance_residual": 1.7763568394002505e-15,
+      "same_battery_composition_residual": 5.551115123125783e-17
+    },
+    {
+      "L": 7,
+      "battery_dimension": 81,
+      "total_dimension": 486,
+      "nearest_shift_overlap": 0.9238795325112867,
+      "isometry_operator_norm_error": 0.5255881079165157,
+      "proved_isometry_bound": 0.780361288064513,
+      "reference_input_trace_norm_error": 0.2537292504598883,
+      "proved_channel_bound": 1.560722576129026,
+      "initial_battery_mean": 12.58505747976789,
+      "energy_balance_residual": 0.0,
+      "same_battery_composition_residual": 2.7755575615628914e-17
+    },
+    {
+      "L": 15,
+      "battery_dimension": 289,
+      "total_dimension": 1734,
+      "nearest_shift_overlap": 0.9807852804032307,
+      "isometry_operator_norm_error": 0.26732678786182523,
+      "proved_isometry_bound": 0.3920685613182424,
+      "reference_input_trace_norm_error": 0.06937501872186744,
+      "proved_channel_bound": 0.7841371226364848,
+      "initial_battery_mean": 25.17011495953578,
+      "energy_balance_residual": 3.552713678800501e-15,
+      "same_battery_composition_residual": 1.3877787807814457e-17
+    },
+    {
+      "L": 31,
+      "battery_dimension": 1089,
+      "total_dimension": 6534,
+      "nearest_shift_overlap": 0.9951847266721969,
+      "isometry_operator_norm_error": 0.13423736423686178,
+      "proved_isometry_bound": 0.19627069730967206,
+      "reference_input_trace_norm_error": 0.01790230851867995,
+      "proved_channel_bound": 0.3925413946193441,
+      "initial_battery_mean": 50.34022991907156,
+      "energy_balance_residual": 1.4210854715202004e-14,
+      "same_battery_composition_residual": 6.938893903907228e-18
+    }
+  ],
+  "claim_status": "Author consistency control; analytic arbitrary-dimension proof is in the note"
+}
+
+COMPONENT marked_collision_control.py; stdout sha256=367811176f642ff7671970fc8067e1a444806b0c4c74dfbf909b5526e29f4ee8
+{
+  "scope": "Complete sixteen-state physical star, original resolved/coherent jump matrices; author consistency controls",
+  "source_sha256": "6430b8fbc0766ac6e78c4beba477d8356028b9fd241e7ed04945d58501eb855b",
+  "collision_rows": [
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 16,
+      "tau": 0.0125,
+      "full_superoperator_Frobenius_error": 0.4150382571540985,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.9782402715518749,
+      "proved_reduced_channel_bound": 14.011199999999997,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.524520648507847,
+      "energy_error": 0.3833457410686707
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 32,
+      "tau": 0.00625,
+      "full_superoperator_Frobenius_error": 0.20049809409155506,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.4733580932652772,
+      "proved_reduced_channel_bound": 7.0055999999999985,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.323645731172565,
+      "energy_error": 0.18247082373338852
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 64,
+      "tau": 0.003125,
+      "full_superoperator_Frobenius_error": 0.09863365185675074,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.23309978601718417,
+      "proved_reduced_channel_bound": 3.5027999999999992,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.230278839713345,
+      "energy_error": 0.08910393227416868
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 128,
+      "tau": 0.0015625,
+      "full_superoperator_Frobenius_error": 0.048928894148114736,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.11569578864616449,
+      "proved_reduced_channel_bound": 1.7513999999999996,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.185213016437799,
+      "energy_error": 0.04403810899862215
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 16,
+      "tau": 0.0125,
+      "full_superoperator_Frobenius_error": 0.42807378447317423,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.9874126816399127,
+      "proved_reduced_channel_bound": 14.45988706484902,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.93686611378302,
+      "energy_error": 0.45070894448987353
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 32,
+      "tau": 0.00625,
+      "full_superoperator_Frobenius_error": 0.20688601113115537,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.4779441396656934,
+      "proved_reduced_channel_bound": 7.22994353242451,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.700758222053089,
+      "energy_error": 0.21460105275994312
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 64,
+      "tau": 0.003125,
+      "full_superoperator_Frobenius_error": 0.10180056773038972,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.23539337652360745,
+      "proved_reduced_channel_bound": 3.614971766212255,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.590976047172739,
+      "energy_error": 0.10481887787959288
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 128,
+      "tau": 0.0015625,
+      "full_superoperator_Frobenius_error": 0.05050618176838692,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.11684272605292687,
+      "proved_reduced_channel_bound": 1.8074858831061276,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.537969430716528,
+      "energy_error": 0.05181226142338158
+    }
+  ],
+  "finite_battery_rows": [
+    {
+      "instrument": "resolved",
+      "L": 7,
+      "battery_dimension": 81,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.09852396430797232,
+      "proved_isometry_bound": 0.780361288064513,
+      "prepared_battery_energy": 56.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 9.434120151752268e-14,
+      "stationary_input_joint_flag_energy_probability_error": 1.734723475976807e-18
+    },
+    {
+      "instrument": "resolved",
+      "L": 15,
+      "battery_dimension": 289,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.04968554349624858,
+      "proved_isometry_bound": 0.3920685613182424,
+      "prepared_battery_energy": 112.00000000000004,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 1.725009024511337e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "resolved",
+      "L": 31,
+      "battery_dimension": 1089,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.02489613756026775,
+      "proved_isometry_bound": 0.19627069730967206,
+      "prepared_battery_energy": 224.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 3.0039859488795173e-13,
+      "stationary_input_joint_flag_energy_probability_error": 8.673617379884035e-19
+    },
+    {
+      "instrument": "coherent",
+      "L": 7,
+      "battery_dimension": 81,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.09852396430797232,
+      "proved_isometry_bound": 0.780361288064513,
+      "prepared_battery_energy": 56.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 8.723577415992168e-14,
+      "stationary_input_joint_flag_energy_probability_error": 7.047314121155779e-19
+    },
+    {
+      "instrument": "coherent",
+      "L": 15,
+      "battery_dimension": 289,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.04968554349624858,
+      "proved_isometry_bound": 0.3920685613182424,
+      "prepared_battery_energy": 112.00000000000004,
+      "delivered_system_energy": 0.10273620422741009,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 1.7247314687551807e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "coherent",
+      "L": 31,
+      "battery_dimension": 1089,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.024896137560267612,
+      "proved_isometry_bound": 0.19627069730967206,
+      "prepared_battery_energy": 224.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 3.0039859488795173e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.734723475976807e-18
+    }
+  ],
+  "limits": "Reduced-channel convergence and complete discrete marked isometry; no continuous event-time path comparison or autonomous clock"
+}
+
+RESULT FINITE_BATTERY_RESULTS.json
+{
+  "scope": "Two arbitrary six-dimensional unitaries, two noncommensurate positive gaps, genuine finite battery boundaries",
+  "exact_small_L": 2,
+  "exact_full_unitarity": true,
+  "exact_composition": true,
+  "exact_energy_commutation": true,
+  "wrong_cyclic_wrap_energy_change": "4*sqrt(2)",
+  "rows": [
+    {
+      "L": 3,
+      "battery_dimension": 25,
+      "total_dimension": 150,
+      "nearest_shift_overlap": 0.7071067811865477,
+      "isometry_operator_norm_error": 0.9826934428918207,
+      "proved_isometry_bound": 1.5307337294603591,
+      "reference_input_trace_norm_error": 0.7791713734874544,
+      "proved_channel_bound": 2.0,
+      "initial_battery_mean": 6.292528739883945,
+      "energy_balance_residual": 1.7763568394002505e-15,
+      "same_battery_composition_residual": 5.551115123125783e-17
+    },
+    {
+      "L": 7,
+      "battery_dimension": 81,
+      "total_dimension": 486,
+      "nearest_shift_overlap": 0.9238795325112867,
+      "isometry_operator_norm_error": 0.5255881079165157,
+      "proved_isometry_bound": 0.780361288064513,
+      "reference_input_trace_norm_error": 0.2537292504598883,
+      "proved_channel_bound": 1.560722576129026,
+      "initial_battery_mean": 12.58505747976789,
+      "energy_balance_residual": 0.0,
+      "same_battery_composition_residual": 2.7755575615628914e-17
+    },
+    {
+      "L": 15,
+      "battery_dimension": 289,
+      "total_dimension": 1734,
+      "nearest_shift_overlap": 0.9807852804032307,
+      "isometry_operator_norm_error": 0.26732678786182523,
+      "proved_isometry_bound": 0.3920685613182424,
+      "reference_input_trace_norm_error": 0.06937501872186744,
+      "proved_channel_bound": 0.7841371226364848,
+      "initial_battery_mean": 25.17011495953578,
+      "energy_balance_residual": 3.552713678800501e-15,
+      "same_battery_composition_residual": 1.3877787807814457e-17
+    },
+    {
+      "L": 31,
+      "battery_dimension": 1089,
+      "total_dimension": 6534,
+      "nearest_shift_overlap": 0.9951847266721969,
+      "isometry_operator_norm_error": 0.13423736423686178,
+      "proved_isometry_bound": 0.19627069730967206,
+      "reference_input_trace_norm_error": 0.01790230851867995,
+      "proved_channel_bound": 0.3925413946193441,
+      "initial_battery_mean": 50.34022991907156,
+      "energy_balance_residual": 1.4210854715202004e-14,
+      "same_battery_composition_residual": 6.938893903907228e-18
+    }
+  ],
+  "claim_status": "Author consistency control; analytic arbitrary-dimension proof is in the note"
+}
+
+RESULT MARKED_COLLISION_RESULTS.json
+{
+  "scope": "Complete sixteen-state physical star, original resolved/coherent jump matrices; author consistency controls",
+  "source_sha256": "6430b8fbc0766ac6e78c4beba477d8356028b9fd241e7ed04945d58501eb855b",
+  "collision_rows": [
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 16,
+      "tau": 0.0125,
+      "full_superoperator_Frobenius_error": 0.4150382571540985,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.9782402715518749,
+      "proved_reduced_channel_bound": 14.011199999999997,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.524520648507847,
+      "energy_error": 0.3833457410686707
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 32,
+      "tau": 0.00625,
+      "full_superoperator_Frobenius_error": 0.20049809409155506,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.4733580932652772,
+      "proved_reduced_channel_bound": 7.0055999999999985,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.323645731172565,
+      "energy_error": 0.18247082373338852
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 64,
+      "tau": 0.003125,
+      "full_superoperator_Frobenius_error": 0.09863365185675074,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.23309978601718417,
+      "proved_reduced_channel_bound": 3.5027999999999992,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.230278839713345,
+      "energy_error": 0.08910393227416868
+    },
+    {
+      "lambda": 0.0,
+      "instrument": "resolved",
+      "steps": 128,
+      "tau": 0.0015625,
+      "full_superoperator_Frobenius_error": 0.048928894148114736,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.11569578864616449,
+      "proved_reduced_channel_bound": 1.7513999999999996,
+      "exact_GKLS_energy": 6.141174907439177,
+      "collision_energy": 6.185213016437799,
+      "energy_error": 0.04403810899862215
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 16,
+      "tau": 0.0125,
+      "full_superoperator_Frobenius_error": 0.42807378447317423,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.9874126816399127,
+      "proved_reduced_channel_bound": 14.45988706484902,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.93686611378302,
+      "energy_error": 0.45070894448987353
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 32,
+      "tau": 0.00625,
+      "full_superoperator_Frobenius_error": 0.20688601113115537,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.4779441396656934,
+      "proved_reduced_channel_bound": 7.22994353242451,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.700758222053089,
+      "energy_error": 0.21460105275994312
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 64,
+      "tau": 0.003125,
+      "full_superoperator_Frobenius_error": 0.10180056773038972,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.23539337652360745,
+      "proved_reduced_channel_bound": 3.614971766212255,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.590976047172739,
+      "energy_error": 0.10481887787959288
+    },
+    {
+      "lambda": 1.0,
+      "instrument": "coherent",
+      "steps": 128,
+      "tau": 0.0015625,
+      "full_superoperator_Frobenius_error": 0.05050618176838692,
+      "unnormalized_Choi_trace_norm_upper_bound": 0.11684272605292687,
+      "proved_reduced_channel_bound": 1.8074858831061276,
+      "exact_GKLS_energy": 7.486157169293146,
+      "collision_energy": 7.537969430716528,
+      "energy_error": 0.05181226142338158
+    }
+  ],
+  "finite_battery_rows": [
+    {
+      "instrument": "resolved",
+      "L": 7,
+      "battery_dimension": 81,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.09852396430797232,
+      "proved_isometry_bound": 0.780361288064513,
+      "prepared_battery_energy": 56.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 9.434120151752268e-14,
+      "stationary_input_joint_flag_energy_probability_error": 1.734723475976807e-18
+    },
+    {
+      "instrument": "resolved",
+      "L": 15,
+      "battery_dimension": 289,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.04968554349624858,
+      "proved_isometry_bound": 0.3920685613182424,
+      "prepared_battery_energy": 112.00000000000004,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 1.725009024511337e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "resolved",
+      "L": 31,
+      "battery_dimension": 1089,
+      "flag_dimension": 7,
+      "unitary_completion_error": 5.591648388972051e-15,
+      "all_input_isometry_operator_norm_error": 0.02489613756026775,
+      "proved_isometry_bound": 0.19627069730967206,
+      "prepared_battery_energy": 224.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 3.0039859488795173e-13,
+      "stationary_input_joint_flag_energy_probability_error": 8.673617379884035e-19
+    },
+    {
+      "instrument": "coherent",
+      "L": 7,
+      "battery_dimension": 81,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.09852396430797232,
+      "proved_isometry_bound": 0.780361288064513,
+      "prepared_battery_energy": 56.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 8.723577415992168e-14,
+      "stationary_input_joint_flag_energy_probability_error": 7.047314121155779e-19
+    },
+    {
+      "instrument": "coherent",
+      "L": 15,
+      "battery_dimension": 289,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.04968554349624858,
+      "proved_isometry_bound": 0.3920685613182424,
+      "prepared_battery_energy": 112.00000000000004,
+      "delivered_system_energy": 0.10273620422741009,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 1.7247314687551807e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "instrument": "coherent",
+      "L": 31,
+      "battery_dimension": 1089,
+      "flag_dimension": 4,
+      "unitary_completion_error": 5.085776244623973e-15,
+      "all_input_isometry_operator_norm_error": 0.024896137560267612,
+      "proved_isometry_bound": 0.19627069730967206,
+      "prepared_battery_energy": 224.0,
+      "delivered_system_energy": 0.10273620422741006,
+      "target_collision_energy": 0.10273620422741006,
+      "energy_balance_residual": 3.0039859488795173e-13,
+      "stationary_input_joint_flag_energy_probability_error": 1.734723475976807e-18
+    }
+  ],
+  "limits": "Reduced-channel convergence and complete discrete marked isometry; no continuous event-time path comparison or autonomous clock"
+}
+
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,949 @@
+===== runner cache v1 =====
+runner: scripts/exact_microscopic_energy_at_a_star_birth_2026_09_24.py
+runner_sha256: 1f6908de94f7bcf9497fedcf8bf8ac69cc4db53de9218bb6ed95d507dc121bf7
+input_fingerprint_sha256: e59a3f89c712e7a4fccf4783958373a41f45e36a173eb3bb12fa04b6d5dad51b
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT exact_star_energy.py; stdout sha256=9e8dd8f8267796c5b5a5a5bb700b6cca7a2dad643cdf9f17167ea6196d803736
+{
+  "basis_dimensions": {
+    "1": 4,
+    "3": 12
+  },
+  "initial_energy": "0",
+  "N3_high_dimensionless_eigenvalue": "3*epsilon**2 + 1",
+  "dressed_initial_energy_derivative": {
+    "resolved": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+    "coherent": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))"
+  }
+}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "-1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "delta/epsilon**2", "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6"}
+{"instrument": "resolved", "mark": "1", "rate": "2*kappa/(3*epsilon**2 + 1)", "conditional_energy": "2*delta/epsilon**2", "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)", "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6"}
+
+RESULT EXACT_STAR_ENERGY_RESULTS.json
+{
+  "scope": "Exact supplied original formation model on one A center with three B leaves; not a repeated-birth graph",
+  "basis_dimensions": {
+    "1": 4,
+    "3": 12
+  },
+  "physical_bases": {
+    "1": [
+      {
+        "q": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "E": [
+          0,
+          0,
+          -1
+        ]
+      },
+      {
+        "q": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "E": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "q": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "E": [
+          -1,
+          0,
+          0
+        ]
+      },
+      {
+        "q": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "E": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "3": [
+      {
+        "q": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "E": [
+          0,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "E": [
+          -1,
+          0,
+          -1
+        ]
+      },
+      {
+        "q": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "E": [
+          -1,
+          -1,
+          0
+        ]
+      },
+      {
+        "q": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "E": [
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "q": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "E": [
+          -1,
+          1,
+          -1
+        ]
+      },
+      {
+        "q": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          -1,
+          -1,
+          1
+        ]
+      },
+      {
+        "q": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "E": [
+          1,
+          0,
+          -1
+        ]
+      },
+      {
+        "q": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "E": [
+          1,
+          -1,
+          0
+        ]
+      },
+      {
+        "q": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "E": [
+          0,
+          1,
+          -1
+        ]
+      },
+      {
+        "q": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "E": [
+          0,
+          -1,
+          1
+        ]
+      },
+      {
+        "q": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "E": [
+          -1,
+          1,
+          0
+        ]
+      },
+      {
+        "q": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "E": [
+          -1,
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "F_matrices": {
+    "1": [
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "3": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "initial_energy": "0",
+  "dressed_input_norm_squared": "3*epsilon**2 + 1",
+  "N3_high_dimensionless_eigenvalue": "3*epsilon**2 + 1",
+  "N3_high_multiplicity": 3,
+  "N3_low_eigenvalue": "0",
+  "N3_low_multiplicity": 9,
+  "bare_A_input_energy": "3*delta/epsilon**2",
+  "bare_A_initial_dissipative_energy_derivative": "0",
+  "rows": [
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "2",
+      "conditional_energy": "2*delta/epsilon**2",
+      "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "-1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "1",
+      "conditional_energy": "delta/epsilon**2",
+      "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "2",
+      "conditional_energy": "2*delta/epsilon**2",
+      "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "-1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "1",
+      "conditional_energy": "delta/epsilon**2",
+      "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "2",
+      "conditional_energy": "2*delta/epsilon**2",
+      "high_spectral_probability": "2*epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "2*delta**2*(epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "-1",
+      "rate": "2*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "2",
+      "c": "1",
+      "conditional_energy": "delta/epsilon**2",
+      "high_spectral_probability": "epsilon**2/(3*epsilon**2 + 1)",
+      "conditional_energy_variance": "delta**2*(2*epsilon**2 + 1)/epsilon**6",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        1
+      ],
+      "mark": "coherent",
+      "rate": "4*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "4",
+      "c": "3/2",
+      "conditional_energy": "3*delta/(2*epsilon**2)",
+      "high_spectral_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))",
+      "conditional_energy_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            0,
+            1
+          ],
+          "E": [
+            1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "E": [
+            1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        2
+      ],
+      "mark": "coherent",
+      "rate": "4*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "4",
+      "c": "3/2",
+      "conditional_energy": "3*delta/(2*epsilon**2)",
+      "high_spectral_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))",
+      "conditional_energy_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            1,
+            0
+          ],
+          "E": [
+            -1,
+            -1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            0,
+            -1,
+            1
+          ],
+          "E": [
+            0,
+            1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            1,
+            -1,
+            0
+          ],
+          "E": [
+            -1,
+            1,
+            0
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "edge": [
+        0,
+        3
+      ],
+      "mark": "coherent",
+      "rate": "4*kappa/(3*epsilon**2 + 1)",
+      "target_B_norm_squared": "4",
+      "c": "3/2",
+      "conditional_energy": "3*delta/(2*epsilon**2)",
+      "high_spectral_probability": "3*epsilon**2/(2*(3*epsilon**2 + 1))",
+      "conditional_energy_variance": "3*delta**2*(3*epsilon**2 + 2)/(4*epsilon**6)",
+      "physical_output": [
+        {
+          "q": [
+            -1,
+            0,
+            1,
+            1
+          ],
+          "E": [
+            0,
+            -1,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            -1,
+            1,
+            0,
+            1
+          ],
+          "E": [
+            -1,
+            0,
+            -1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            0,
+            1,
+            -1
+          ],
+          "E": [
+            0,
+            -1,
+            1
+          ],
+          "unnormalized_amplitude": "1"
+        },
+        {
+          "q": [
+            1,
+            1,
+            0,
+            -1
+          ],
+          "E": [
+            -1,
+            0,
+            1
+          ],
+          "unnormalized_amplitude": "1"
+        }
+      ]
+    }
+  ],
+  "dressed_initial_energy_derivative": {
+    "resolved": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))",
+    "coherent": "18*delta*kappa/(epsilon**2*(3*epsilon**2 + 1))"
+  },
+  "physical_Gauss_check": true,
+  "spin_scope": "All integer S>=1, exact normalized amplitudes 0 <-> +/-1",
+  "identities": "Exact symbolic matrix equality; idempotent high spectral projector; square factorization; all actual jump outputs"
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

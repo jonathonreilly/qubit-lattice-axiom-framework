@@ -1,0 +1,2578 @@
+===== runner cache v1 =====
+runner: scripts/ungated_sum_of_squares_and_tuning_2026_09_24.py
+runner_sha256: 1b7401b2b7300e73f390af705dcdba198541aa6770b814e118454173ce51cc75
+input_fingerprint_sha256: 40afdab97477dc2eb0e3ac3b015f6d1d9d27da45f80cdfa68ce845fb9b06eabc
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.53
+status: ok
+----- stdout -----
+Evidence boundary: supplied models and stated limits; finite controls confer no audit verdict.
+COMPONENT mechanism_check.py; stdout sha256=1340de7ac64aa512070351ec9807b15cf73f7e283b93dbeece7a5903b80cb400
+{
+  "source_sha256": "cba64b3cdb5b0b4fa3a95b6049ac41ae839b866907a04907d4404f85da3e6c6e",
+  "exact_rational_sum_of_squares": [
+    {
+      "resource": "rotor",
+      "seed": "initial_four",
+      "epsilon": "1/7",
+      "dressed_support": 108,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "rotor",
+      "seed": "resolved_first",
+      "epsilon": "1/7",
+      "dressed_support": 24,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "spin1",
+      "seed": "initial_four",
+      "epsilon": "1/7",
+      "dressed_support": 108,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "spin1",
+      "seed": "resolved_first",
+      "epsilon": "1/7",
+      "dressed_support": 24,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    }
+  ],
+  "all_first_mark_exact_rotor_rate_polynomials": [
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    }
+  ],
+  "scope": "Exact finite rational/path identities. General operator and convergence statements use the accompanying proofs, not extrapolation of these controls."
+}
+
+RESULT MECHANISM_CONTROLS.json
+{
+  "source_sha256": "cba64b3cdb5b0b4fa3a95b6049ac41ae839b866907a04907d4404f85da3e6c6e",
+  "exact_rational_sum_of_squares": [
+    {
+      "resource": "rotor",
+      "seed": "initial_four",
+      "epsilon": "1/7",
+      "dressed_support": 108,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "rotor",
+      "seed": "resolved_first",
+      "epsilon": "1/7",
+      "dressed_support": 24,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "spin1",
+      "seed": "initial_four",
+      "epsilon": "1/7",
+      "dressed_support": 108,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    },
+    {
+      "resource": "spin1",
+      "seed": "resolved_first",
+      "epsilon": "1/7",
+      "dressed_support": 24,
+      "all_four_local_constraints_exact_zero": true,
+      "direct_full_H_action_exact_zero": true,
+      "outward_nilpotence_and_pair_commutation_verified": true
+    }
+  ],
+  "all_first_mark_exact_rotor_rate_polynomials": [
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        -1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": false,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        1
+      ],
+      "first_Gram": 2,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        1
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        2
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        0,
+        4
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          1,
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        1,
+        3
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        1,
+        5
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        2,
+        3
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          -1,
+          1,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        2,
+        6
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        3,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          1,
+          0,
+          -1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        4,
+        5
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          1,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        4,
+        6
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        5,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          -1,
+          0,
+          1,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    },
+    {
+      "coherent_first": true,
+      "first_edge": [
+        6,
+        7
+      ],
+      "first_signs": [
+        -1,
+        1
+      ],
+      "first_Gram": 4,
+      "normalized_second_rate_over_kappa": {
+        "identity": 8,
+        "loop": [
+          0,
+          -1,
+          1,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "loop_coefficient": 1,
+        "adjoint_coefficient": 1
+      },
+      "all_normalizable_fields_rate_bounds_over_kappa": [
+        6,
+        10
+      ]
+    }
+  ],
+  "scope": "Exact finite rational/path identities. General operator and convergence statements use the accompanying proofs, not extrapolation of these controls."
+}
+
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

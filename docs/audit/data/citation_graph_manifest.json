@@ -1,6 +1,6 @@
 {
- "edge_count": 14536,
- "node_count": 6618,
+ "edge_count": 14589,
+ "node_count": 6638,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -285,6 +285,10 @@
   "active_sector_grounded_by_mass_vs_k_dominant_operator_sieve_narrow_theorem_note_2026-06-06": {
    "deps_hash": "709c3097cb26",
    "out_degree": 4
+  },
+  "actual_cube_birth_energy_on_the_fast_time_scale_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "ad144bdd166d",
+   "out_degree": 2
   },
   "actual_first_output_components_and_two_birth_bounds_bounded_theorem_note_2026-09-24": {
    "deps_hash": "7e94f2dfc176",
@@ -1870,6 +1874,10 @@
    "deps_hash": "5d2bb444d436",
    "out_degree": 5
   },
+  "autonomous_finite_clock_for_the_original_reduced_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "afd5814d8cef",
+   "out_degree": 3
+  },
   "axiom_edit_repair_map_cycle973_note_2026-08-09": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -2301,6 +2309,10 @@
   "bounded_admission_registry_proposal_note_2026-06-15": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "bounded_block_diagonal_compensation_target_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c4303103ee6b",
+   "out_degree": 2
   },
   "bounded_two_star_bksf_cycle789_target_chart_bridge_cycle869_bounded_theorem_note_2026-08-02": {
    "deps_hash": "00d57df89f58",
@@ -5214,6 +5226,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "energy_filters_and_actual_repeated_formation_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "f9183bd2dcb8",
+   "out_degree": 3
+  },
   "energy_product_and_test_body_law_above_the_half_filled_sea_conditional_bounded_theorem_note_2026-09-03": {
    "deps_hash": "5f88f42e7358",
    "out_degree": 2
@@ -5401,6 +5417,14 @@
   "exact_gauss_reduction_and_fixed_volume_weak_coupling_spectrum_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
    "out_degree": 3
+  },
+  "exact_microscopic_energy_at_a_star_birth_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1e5276f1135b",
+   "out_degree": 2
+  },
+  "exact_terminal_counts_on_seven_site_path_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "de3037be7fea",
+   "out_degree": 2
   },
   "exact_tier_ewitness_bounded_note_2026-05-07_ewitness": {
    "deps_hash": "382ffbe3c6b3",
@@ -5594,6 +5618,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "finite_energy_supply_for_marked_collision_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "8916706121e0",
+   "out_degree": 3
+  },
   "finite_formation_with_retained_fourth_order_dynamics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "1c6a1605e119",
    "out_degree": 4
@@ -5625,6 +5653,14 @@
   "finite_step_gaussian_gauge_canonical_logarithm_and_coulomb_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_time_star_energy_and_supply_bound_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "6ed39f12dd81",
+   "out_degree": 2
+  },
+  "first_birth_energy_spread_on_seven_site_path_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "6ba1692fafaf",
+   "out_degree": 2
   },
   "first_event_instrument_corollary_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
@@ -5981,6 +6017,10 @@
   "fm_transfer_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "formation_balance_and_unsaturated_dark_states_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "fa64a37ff82b",
+   "out_degree": 3
   },
   "formation_order_covariance_and_isotropic_binary_order_blind_classification_bounded_theorem_note_2026-09-13": {
    "deps_hash": "8a36f31932c1",
@@ -7118,6 +7158,10 @@
    "deps_hash": "5e93d700a831",
    "out_degree": 1
   },
+  "general_microscopic_birth_energy_and_cube_power_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e66572aa6763",
+   "out_degree": 4
+  },
   "general_n_census_law_cycle870_bounded_theorem_note_2026-07-28": {
    "deps_hash": "51bbcb706c9d",
    "out_degree": 1
@@ -7896,6 +7940,10 @@
   },
   "higgs_z3_charge_pmns_gauge_redundancy_theorem_note_2026-04-17": {
    "deps_hash": "56d57800d2ce",
+   "out_degree": 2
+  },
+  "high_flux_actual_birth_energy_spread_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1e5276f1135b",
    "out_degree": 2
   },
   "higher_order_structural_theorems_note": {
@@ -13090,6 +13138,14 @@
    "deps_hash": "7c59543ab5ac",
    "out_degree": 1
   },
+  "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "f9e439353aad",
+   "out_degree": 3
+  },
+  "local_electric_completions_and_postbirth_field_phase_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "666e0b9cf11e",
+   "out_degree": 4
+  },
   "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8ec463c38283",
    "out_degree": 1
@@ -13105,6 +13161,10 @@
   "local_hall_free_mixed_weyl_quartet_and_common_metric_bounded_theorem_note_2026-09-13": {
    "deps_hash": "f52127449f6a",
    "out_degree": 4
+  },
+  "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1e5276f1135b",
+   "out_degree": 2
   },
   "local_parity_exchange_carrier_recurrent_bell_cycle821_bounded_theorem_note_2026-07-30": {
    "deps_hash": "b7437e336fa1",
@@ -13137,6 +13197,10 @@
   "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {
    "deps_hash": "4fb4f7ea0100",
    "out_degree": 4
+  },
+  "local_volume_dynamics_with_commuting_electric_terms_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "93cec19a3712",
+   "out_degree": 3
   },
   "local_zsym_predictor_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14685,6 +14749,10 @@
   "one_generation_matter_closure_note": {
    "deps_hash": "8ab2176d839a",
    "out_degree": 2
+  },
+  "one_link_exponential_moment_bound_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "fa64a37ff82b",
+   "out_degree": 3
   },
   "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": {
    "deps_hash": "52a20c694372",
@@ -17210,6 +17278,10 @@
    "deps_hash": "f015d82dc5d6",
    "out_degree": 1
   },
+  "rotor_drift_and_finite_spin_high_flux_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e2d2431ac888",
+   "out_degree": 2
+  },
   "rotor_global_gauss_dressing_coulomb_variational_compression_bounded_theorem_note_2026-09-16": {
    "deps_hash": "f015d82dc5d6",
    "out_degree": 1
@@ -18578,6 +18650,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "star_energy_cost_across_the_electric_family_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9d948feaa779",
+   "out_degree": 4
+  },
   "star_supported_bridge_class_note": {
    "deps_hash": "b77af84c23c5",
    "out_degree": 2
@@ -19689,6 +19765,10 @@
   "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
    "deps_hash": "311d6b921eb1",
    "out_degree": 3
+  },
+  "ungated_sum_of_squares_and_tuning_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1e5276f1135b",
+   "out_degree": 2
   },
   "unification_basin_failure_note": {
    "deps_hash": "c90c9ba91199",

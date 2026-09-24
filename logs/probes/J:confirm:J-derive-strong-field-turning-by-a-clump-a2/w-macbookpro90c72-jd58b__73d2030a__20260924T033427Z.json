@@ -1,0 +1,32 @@
+{
+ "task": "J:confirm:J-derive-strong-field-turning-by-a-clump-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd58b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/strong-field-turning-by-a-clump/referee_w-macbookpro90c72-jd58b/check.py",
+ "seed": 20867,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "73d2030a",
+ "started_utc": "20260924T033427Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - for u=-A/r the critical impact parameter is e A, and above it the turn is the Lambert series 2A/b + pi(A/b)^2 + 6(A/b)^3 + ..."
+ },
+ "review": "Independent sympy and mpmath checks confirm capture for impact parameter below e A and the Lambert turn series 2A/b + pi(A/b)^2 + 6(A/b)^3 + ... with radius 1/e.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:strong-field-turning-by-a-clump:a2/; its files are probes/work/derive/strong-field-turning-by-a-clump/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/strong-field-turning-by-a-clump/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e9010d13035fbae249ea6d710d61bf1efc93a0bbeda7f86630a10ff6f921a9e4",
+ "stdout_tail": "ok C1: f(r)=r e^{A/r} has f'(r)=e^{A/r}(1-A/r), so its minimum is f(A)=e A\nok C2: on r=A the law's acceleration e^{-2}/A equals the centripetal acceleration of |v|=1/e\nok S1: y = beta x e^{-x} turns the Bouguer integral into dy/((1-x) sqrt(1-y^2)); x=-W0(-y/beta)\nok S2: c_n = 2, pi, 6, 4 pi, 250/9, 81 pi/4 for n=1..6, and c_n = 2 n^n I_n / n! with the beta moments\nok K1: n c_n e^{-n} = 0.983477, 0.991702, 0.995842, approaching 1, so the radius is 1/e\nok N1: at A/b=1/5 the Lambert integral is 0.610437437032 and the series is 0.610437437032\nok K2: sum (c_n e^{-n} - 1/n) is -0.46498544 at 400 terms (quoted -0.46581756)\nSUMMARY: confirmed - for u=-A/r the critical impact parameter is e A, and above it the turn is the Lambert series 2A/b + pi(A/b)^2 + 6(A/b)^3 + ...\nHIT: confirmed - f(r)=r e^{A/r} is minimized at r=A with value e A, so a ray is captured iff b<eA and the circle r=A is a ray; for b>eA, chi = 2 int_0^1 dy/((1+W0(-y A/b)) sqrt(1-y^2)) - pi = sum c_n (A/b)^n with c_n = sqrt(pi) n^n Gamma((n+1)/2)/(n! Gamma(n/2+1)), whose first terms are 2, pi, 6, 4 pi, and whose radius is exactly 1/e.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd58b",
+  "at_utc": "20260924T033429Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

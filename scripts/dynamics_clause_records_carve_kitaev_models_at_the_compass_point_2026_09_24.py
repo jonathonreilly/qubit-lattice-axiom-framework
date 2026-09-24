@@ -19,6 +19,18 @@ A. Carvings (python-sat). With zero fields required, the complete enumeration
    occur. Without the zero-field requirement, components winding in three
    directions occur (sizes printed), and each such carving has a record
    touching U along all three axes.
+A'. Why (a proof, checked on every enumerated zero-field carving): each
+   carved site u has partners along x, y, z; call the unit square spanned by
+   two of its partner bonds closed when its fourth corner is carved. The
+   recorded site behind u along an axis touches U along that axis, so the
+   zero-field condition forces one of u's two squares containing that axis to
+   be closed; hence at least two of u's three squares are closed. The carved
+   sites, partner bonds and closed squares then form a surface with boundary
+   (vertices in three squares are interior, in two squares on the boundary),
+   and counting gives Euler characteristic chi = (number of interior sites)/4
+   >= 0. A torus or Klein bottle would need chi = 0 with no boundary, which
+   is impossible; so the winding rank is at most 1, and a winding component
+   has chi = 0 with every site on the boundary: a strip one square wide.
 B. Zero fields: on the staircase tube (4x4x4) and the cube cluster, contents
    orthogonal to the touched axes exist and cancel every field.
 C. Exact solvability: on the cube and on periodic staircase tubes of 8 and 12
@@ -154,6 +166,69 @@ for Ls, maxsol, want_complete in (((4, 4, 4), 5000, True), ((5, 5, 5), 5000, Tru
     summary.append(f"{'x'.join(map(str, Ls))}: {len(sols)}{' (complete)' if complete else ' sampled'}, ranks {sorted(set(ranks))}")
 check("zero-field carvings: every component is finite or winds in one direction", all_ok and tube_seen,
       "; ".join(summary))
+
+
+def surface_data(U, Ls):
+    """Per component: (sites, interior sites, Euler characteristic, winding rank, min closed squares)."""
+    def partner(u, ax):
+        for d in (1, -1):
+            t = list(u)
+            t[ax] = (t[ax] + d) % Ls[ax]
+            if tuple(t) in U:
+                return d
+        raise ValueError("not a carving")
+    out = []
+    comps_rank = {}
+    for (n, r), members in zip(components(U, Ls), component_members(U, Ls)):
+        Dsizes = []
+        for u in members:
+            sg = [partner(u, ax) for ax in range(3)]
+            k = 0
+            for a_, b_ in ((0, 1), (0, 2), (1, 2)):
+                t = list(u)
+                t[a_] = (t[a_] + sg[a_]) % Ls[a_]
+                t[b_] = (t[b_] + sg[b_]) % Ls[b_]
+                k += tuple(t) in U
+            Dsizes.append(k)
+        V = len(members)
+        F = sum(Dsizes) / 4
+        chi = V - 1.5 * V + F
+        out.append((V, sum(1 for k in Dsizes if k == 3), chi, r, min(Dsizes)))
+    return out
+
+
+def component_members(U, Ls):
+    res, seen = [], set()
+    for s in sorted(U):
+        if s in seen:
+            continue
+        comp, q = {s}, deque([s])
+        while q:
+            v = q.popleft()
+            for ax in range(3):
+                for d in (1, -1):
+                    t = list(v)
+                    t[ax] = (t[ax] + d) % Ls[ax]
+                    w = tuple(t)
+                    if w in U and w not in comp:
+                        comp.add(w)
+                        q.append(w)
+        seen |= comp
+        res.append(sorted(comp))
+    return res
+
+
+surf_ok, types = True, set()
+for Ls, maxsol in (((4, 4, 4), 5000), ((5, 5, 5), 5000), ((6, 6, 6), 300)):
+    sols, _ = carvings(Ls, True, maxsol)
+    for U in sols:
+        for V, nint, chi, r, mind in surface_data(U, Ls):
+            surf_ok &= mind >= 2 and abs(chi - nint / 4) < 1e-12 and r <= 1 and (r == 0 or nint == 0)
+            types.add((V, nint, chi, r) if r == 0 else ('tube', nint, chi, r))
+fin = sorted(t for t in types if t[0] != 'tube')
+tub = sorted(set(t[1:] for t in types if t[0] == 'tube'))
+check("proof step: every carved site has >= 2 closed squares; chi = interior/4; winding components are strips (no interior sites)",
+      surf_ok and len(tub) > 0, f"finite component types (sites, interior, chi, rank) {fin}; tube (interior, chi, rank) {tub}")
 three_d, forced, sizes = 0, True, {}
 for Ls in ((4, 4, 4), (5, 5, 5)):
     sols, complete = carvings(Ls, False, 5000)

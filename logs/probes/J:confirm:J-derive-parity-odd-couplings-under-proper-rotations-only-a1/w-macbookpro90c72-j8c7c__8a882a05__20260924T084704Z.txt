@@ -1,0 +1,5 @@
+STEP 3 FOLLOWS: the closed loop (e1,e1,e2,-e1,-e2,e3,-e1,-e3) has tau(gamma)-tau(-gamma) = -a^3 beta^5
+STEP 4 FOLLOWS: on the 4^3 torus with the integer rate field, tr((2wH)^8) is 4083834945536 against its mirror 4082722668544 at (a,beta)=(1,2); the two agree when a=0 and when beta=0
+STEP 2 FOLLOWS: Pi keeps a0 and a and breaks beta; eps Pi keeps a0 and beta and breaks a; Theta Pi keeps beta and breaks a0 and a; Theta eps Pi keeps a and breaks a0 and beta. The two walk-keeping inversions both reverse a
+SUMMARY: confirmed - the scalar hop a is the nearest-neighbour term reversed by both walk-keeping inversions; for a*beta != 0 no site-local inversion is a symmetry because tau-tau_mirror = -a^3 beta^5; a chiral rate field and its mirror differ at the 8th moment; blindness removes the odd field densities and does not remove a
+HIT: confirmed - parity-odd generator term is the scalar hop a, obstructed by the chiral 8-loop -a^3 beta^5 and visible as tr((2wH)^8) differing from its mirror; the odd field sector does not survive blindness

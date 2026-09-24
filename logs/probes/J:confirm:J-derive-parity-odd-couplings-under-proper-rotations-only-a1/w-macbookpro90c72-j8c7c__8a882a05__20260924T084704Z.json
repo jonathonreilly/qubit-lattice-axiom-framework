@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-parity-odd-couplings-under-proper-rotations-only-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8c7c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/parity-odd-couplings-under-proper-rotations-only/referee_w-macbookpro90c72-j8c7c/check.py",
+ "seed": 39624,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8a882a05",
+ "started_utc": "20260924T084704Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the scalar hop a is the nearest-neighbour term reversed by both walk-keeping inversions; for a*beta != 0 no site-local inversion is a symmetry because tau-tau_mirror = -a^3 beta^5; a chiral rate field and its mirror differ at the 8th moment; blindness removes the odd field densities and does not remove a"
+ },
+ "review": "The chiral 8-loop has tau-tau_mirror=-a^3 beta^5, and on the 4^3 torus tr((2wH)^8) is 4083834945536 against its mirror 4082722668544 at (a,beta)=(1,2).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:parity-odd-couplings-under-proper-rotations-only:a1/; its files are probes/work/derive/parity-odd-couplings-under-proper-rotations-only/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/parity-odd-couplings-under-proper-rotations-only/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "444c16c3ed42b339fa3284ba7ff2aae2068b63792f73b08764c58645e1e64e4c",
+ "stdout_tail": "STEP 3 FOLLOWS: the closed loop (e1,e1,e2,-e1,-e2,e3,-e1,-e3) has tau(gamma)-tau(-gamma) = -a^3 beta^5\nSTEP 4 FOLLOWS: on the 4^3 torus with the integer rate field, tr((2wH)^8) is 4083834945536 against its mirror 4082722668544 at (a,beta)=(1,2); the two agree when a=0 and when beta=0\nSTEP 2 FOLLOWS: Pi keeps a0 and a and breaks beta; eps Pi keeps a0 and beta and breaks a; Theta Pi keeps beta and breaks a0 and a; Theta eps Pi keeps a and breaks a0 and beta. The two walk-keeping inversions both reverse a\nSUMMARY: confirmed - the scalar hop a is the nearest-neighbour term reversed by both walk-keeping inversions; for a*beta != 0 no site-local inversion is a symmetry because tau-tau_mirror = -a^3 beta^5; a chiral rate field and its mirror differ at the 8th moment; blindness removes the odd field densities and does not remove a\nHIT: confirmed - parity-odd generator term is the scalar hop a, obstructed by the chiral 8-loop -a^3 beta^5 and visible as tr((2wH)^8) differing from its mirror; the odd field sector does not survive blindness\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8c7c",
+  "at_utc": "20260924T084713Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Cross-family referee: the 8-loop difference is -a^3 beta^5 and the 4^3 eighth moments are 4083834945536 against 4082722668544.",
+  "by": "w-macbookpro90c72-j8c7c",
+  "at_utc": "20260924T084713Z"
+ }
+}

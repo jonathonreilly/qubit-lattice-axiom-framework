@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/ice_unit_field_sum_rule_is_ten_times_closer_in_three_dimensions_than_in_square_ice_2026_09_23.py
+runner_sha256: a6b811c606c82959fefc9bb6cb60ab178255b043d76c1bb326e559dddd94c797
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 37.74
+status: ok
+----- stdout -----
+== A. The square-ice transfer ==
+[PASS] tr T^b from the site-by-site transfer equals the dense row-transfer count on 4x4, 4x6, 6x4, 6x6 :: 4x4: 2970, 4x6: 98466, 6x4: 98466, 6x6: 16448400
+
+== B. The planar sum rule ==
+[PASS] the one-dimensional zone average of sqrt(Q/(Q+4)) is 1/2 within 1e-9, so K = 1/2 and c = 1/4 on wide strips :: average 0.500000000000
+
+== C. Square ice ==
+[PASS] c(2) rises with the width for a = 4 to 20 and exceeds K_a/2 by 4.1% to 4.7% at every width, the excess growing from a = 6 on :: 4: 0.24252 (+4.21%), 6: 0.25255 (+4.11%), 8: 0.25641 (+4.29%), 10: 0.25829 (+4.42%), 12: 0.25933 (+4.50%), 14: 0.25998 (+4.55%), 16: 0.26040 (+4.59%), 18: 0.26069 (+4.61%), 20: 0.26090 (+4.63%)
+
+== D. Three-dimensional ice ==
+[PASS] on the prisms 2x8 and 4x4 the flux cost lies within 0.5% of its sum-rule value, at least ten times closer than square ice at every width :: 2x8: 0.31374 (-0.40%), 4x4: 0.32704 (-0.02%)
+
+time 37 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-persistent-record-threshold-in-3d-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j1aa6",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-persistent-record-threshold-in-3d/referee_w-macbookpro90c72-j1aa6/check.py",
+ "seed": 67942,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "47e7741c",
+ "started_utc": "20260924T163902Z",
+ "elapsed_s": 10.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - the diagonal threshold and the axis factorisation survive. When cos kappa < 0 and the diagonal roots are real, the algebraically larger root can lie below sqrt(a); the root of larger modulus is still at least sqrt(a), so the leading multiplier is real on that side of the threshold. Face diagonals and p <= 1/6 were not claimed."
+ },
+ "review": "On the body diagonal the leading multiplier leaves the real line exactly at |sin kappa| = 3(1-p)/(3p+2); on the axes the density branch stays real, and the line threshold is the larger value (1-p)/p.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-persistent-record-threshold-in-3d:a1/; its files are probes/work/derive/the-persistent-record-threshold-in-3d/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-persistent-record-threshold-in-3d/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6b9689cd0f882a055f2b5607fdcfe3a39e3162da746600318c392acc71f18245",
+ "stdout_tail": "l iff |sin| > (1-p)/p\nok: product of the diagonal quadratic roots is a\nok: at p=1/2, kappa=pi the algebraically larger root is -2/5, below sqrt(a)\nok: the root of larger modulus is still at least sqrt(a) > a, and it is real\nok: D^2 - N^2 = (1-c^2)(lam^2 - a^2)^2, so |N| <= D when |c|<=1 and lam>a>0\nok: D = (lam-a)^2 + 2 a lam (1-c) >= (lam-a)^2\nok: kappa* = 3 eps/5 + 9 eps^2/25 + 63 eps^3/250 + O(eps^4)\nok: 3(1-p)/(3p+2) = 3 eps/(5-3 eps)\nok: at p=9/10, kappa=pi/2: P(9/10) < 0 < P(1)\nok: at that point the cubic discriminant is negative, so one real root and two non-real\nok: at kappa=pi the cubic discriminant is 64(1-p)^2(6p-1)^2(p^2+28p-4)/15625\nok: at k=0 the spectrum is 1 once and a five times\nTOTAL FAIL = 0\nHIT: confirmed - on the body diagonal the quadratic factor has quarter-discriminant [9(1-p)^2 - sin^2 kappa (3p+2)^2]/25, so its roots leave the real line exactly when |sin kappa| > 3(1-p)/(3p+2). Their modulus is sqrt(a) when they are non-real, which exceeds the modulus a of the other four multipliers. On the axes the characteristic polynomial is (lam-a)^3 times the printed cubic, and the line threshold is |sin k| > (1-p)/p.\nSUMMARY: confirmed - the diagonal threshold and the axis factorisation survive. When cos kappa < 0 and the diagonal roots are real, the algebraically larger root can lie below sqrt(a); the root of larger modulus is still at least sqrt(a), so the leading multiplier is real on that side of the threshold. Face diagonals and p <= 1/6 were not claimed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j1aa6",
+  "at_utc": "20260924T163920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Body-diagonal leading multiplier leaves the real line at |sin kappa| = 3(1-p)/(3p+2); the axis density branch stays real.",
+  "by": "w-macbookpro90c72-j1aa6",
+  "at_utc": "20260924T163920Z"
+ }
+}

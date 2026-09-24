@@ -1,0 +1,23 @@
+ok: a = p - q = (6p-1)/5
+ok: a + 6q = 1
+ok: on the axis, det(lam I - M) = (lam - a)^3 P(lam)
+ok: on the body diagonal, det = (lam - a z)^2 (lam - a/z)^2 Q(lam)
+ok: diagonal quarter-discriminant is [9(1-p)^2 - sin^2 (3p+2)^2]/25
+ok: (3p+2)^2 - 5(6p-1) = 9(1-p)^2
+ok: the diagonal threshold is below 1 exactly when p > 1/6
+ok: for p in (0,1) the diagonal threshold is strictly below the line threshold (1-p)/p
+ok: line quarter-discriminant is (1-p)^2 - p^2 sin^2, so non-real iff |sin| > (1-p)/p
+ok: product of the diagonal quadratic roots is a
+ok: at p=1/2, kappa=pi the algebraically larger root is -2/5, below sqrt(a)
+ok: the root of larger modulus is still at least sqrt(a) > a, and it is real
+ok: D^2 - N^2 = (1-c^2)(lam^2 - a^2)^2, so |N| <= D when |c|<=1 and lam>a>0
+ok: D = (lam-a)^2 + 2 a lam (1-c) >= (lam-a)^2
+ok: kappa* = 3 eps/5 + 9 eps^2/25 + 63 eps^3/250 + O(eps^4)
+ok: 3(1-p)/(3p+2) = 3 eps/(5-3 eps)
+ok: at p=9/10, kappa=pi/2: P(9/10) < 0 < P(1)
+ok: at that point the cubic discriminant is negative, so one real root and two non-real
+ok: at kappa=pi the cubic discriminant is 64(1-p)^2(6p-1)^2(p^2+28p-4)/15625
+ok: at k=0 the spectrum is 1 once and a five times
+TOTAL FAIL = 0
+HIT: confirmed - on the body diagonal the quadratic factor has quarter-discriminant [9(1-p)^2 - sin^2 kappa (3p+2)^2]/25, so its roots leave the real line exactly when |sin kappa| > 3(1-p)/(3p+2). Their modulus is sqrt(a) when they are non-real, which exceeds the modulus a of the other four multipliers. On the axes the characteristic polynomial is (lam-a)^3 times the printed cubic, and the line threshold is |sin k| > (1-p)/p.
+SUMMARY: confirmed - the diagonal threshold and the axis factorisation survive. When cos kappa < 0 and the diagonal roots are real, the algebraically larger root can lie below sqrt(a); the root of larger modulus is still at least sqrt(a), so the leading multiplier is real on that side of the threshold. Face diagonals and p <= 1/6 were not claimed.

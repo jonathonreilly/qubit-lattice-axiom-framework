@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Candidate assembly, thirteenth edition: the source-linked graph from the axioms
+"""Candidate assembly, fourteenth edition: the source-linked graph from the axioms
 to the eleven preserved targets, with results as AND nodes, route choices as
 OR nodes, and the exact minimal decision sets of every target.
 
@@ -63,7 +63,14 @@ gapless, its gap falling as the smallest transverse wavenumber (open PR
 lattice field (open PR #8869).  The unit link field fixes one stiffness for
 the flux cost and the correlations (open PR #8871), and test defects
 interact through the lattice Green's function at that stiffness (open PR
-#8875).  The minimal sets are unchanged.
+#8875).  The minimal sets are unchanged.  Fourteenth edition: ten more cited
+pull requests have landed, among them the first-edition inputs 8637, 8641
+and 8646 and the photon-lane results 8859 and 8864, so ten more nodes link
+to their landed notes and five stay open.  On cubic tori to side 24 the
+winding stiffness and the correlations carry the sum-rule stiffness, with a
+long-wavelength value 0.5% above 1/3 (open PR #8881), and the static photon
+has two degenerate transverse polarizations with one stiffness (open PR
+#8890).  The minimal sets are unchanged.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -100,16 +107,16 @@ NODES = {
     "GLUED_HIERARCHY": (L, D + "A_HIERARCHY_OF_NEIGHBOURHOOD_CONDITIONS_GLUED_BREAKABLE_AND_FREE_RECORD_GROUPS_UNDER_SHIFTING_TICKS_BOUNDED_THEOREM_NOTE_2026-09-03.md"),
     "CUBIC_ICE_RK": (L, D + "SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md"),
     "GRAVITY_BOUNDARIES": (L, D + "LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md"),
-    "FAIR_COIN_ANTIPARALLEL": (OP, "open PR #8637 (menus-and-Born)"),
-    "SOLDERED_SPLIT": (OP, "open PR #8637 (menus-and-Born)"),
-    "AFFINE_REDUCTION": (OP, "open PR #8637 (menus-and-Born)"),
-    "CLOCK_INVISIBILITY": (OP, "open PR #8641 (clock-and-rate)"),
-    "HOLE_READS_CLOCK": (OP, "open PR #8641 (clock-and-rate)"),
+    "FAIR_COIN_ANTIPARALLEL": (L, D + "MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "SOLDERED_SPLIT": (L, D + "MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "AFFINE_REDUCTION": (L, D + "MENUS_AND_BORN_STABILIZER_DEGENERATE_SUPPORTS_ANTIPODAL_WEIGHT_CLASS_AND_NON_AFFINE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "CLOCK_INVISIBILITY": (L, D + "CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "HOLE_READS_CLOCK": (L, D + "CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "BLOCK_CHAIN_EQUALITY": (L, D + "FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "UNIT_DIAL": (L, D + "FORMATION_UNIT_SEQUENTIAL_VS_JOINT_COVARIANT_SETS_BLOCK_CHAIN_EQUALITY_PRODUCT_FILL_VISIBILITY_AND_GLUED_UNIT_HOLE_DISSOLUTION_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
-    "KERNEL_MISMATCH": (OP, "open PR #8646 (record-dynamics)"),
-    "NN_EXCLUSION": (OP, "open PR #8646 (record-dynamics)"),
-    "CODE_RIGIDITY": (OP, "open PR #8646 (record-dynamics)"),
+    "KERNEL_MISMATCH": (L, D + "RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "NN_EXCLUSION": (L, D + "RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
+    "CODE_RIGIDITY": (L, D + "RECORD_DYNAMICS_FINISHED_RECORD_CORRELATORS_AGAINST_PROPAGATION_KERNELS_NEAREST_NEIGHBOUR_SENTENCE_EXCLUDES_LONG_RANGE_PAIRS_AND_GLUED_SUPPORT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "ORDER_BLIND_RANGE": (L, D + "ORDER_BLIND_NEAREST_NEIGHBOUR_FORMATION_INDEPENDENCE_BEYOND_NEIGHBOURS_UNSOLDERED_CONSTANCY_AND_SOLDERED_ESCAPE_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "UNSOLDERED_CONSTANCY": (L, D + "ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
     "PAIR_FORM_HOLES": (L, D + "ORDER_BLIND_FORMATION_WITH_ZEROS_AND_HOLES_NEVER_FAILING_UNSOLDERED_RULES_ARE_CONSTANT_AND_HOLE_RULES_HAVE_PAIR_FORM_BOUNDED_THEOREM_NOTE_2026-09-22.md"),
@@ -146,11 +153,13 @@ NODES = {
     "OCTANT_RECORDED": (L, D + "RELATIONAL_CYCLE_LETTERS_RECORD_THEIR_OCTANT_UNDER_THE_ROTATION_COVARIANT_STATIC_RULE_ON_THE_LANDED_ICE_TORUS_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
     "FOLDED_ROLES": (L, D + "STRONG_CYCLE_LETTERS_RECORD_FRAME_AND_ROLES_UNDER_THE_ROTATION_COVARIANT_RULE_ON_EVERY_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
     "GENERIC_LETTERS": (L, D + "STRONG_CYCLE_LETTERS_ARE_GENERIC_EVERY_OBSTRUCTION_IS_A_NONTRIVIAL_ANGLE_RELATION_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
-    "ROW_TRANSFER_SQUARE": (OP, "open PR #8859 (the flux stiffness is Gaussian on the square cross-section, by row transfer)"),
-    "GAPLESS_CHAIN": (OP, "open PR #8864 (the zero-flux layer chain's gap falls as the smallest transverse wavenumber)"),
+    "ROW_TRANSFER_SQUARE": (L, D + "UNIFORM_ICE_FLUX_STIFFNESS_ON_A_SQUARE_CROSS_SECTION_BY_ROW_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
+    "GAPLESS_CHAIN": (L, D + "UNIFORM_ICE_ZERO_FLUX_LAYER_CHAIN_GAP_CLOSES_AS_THE_SMALLEST_TRANSVERSE_WAVENUMBER_BOUNDED_THEOREM_NOTE_2026-09-23.md"),
     "MASSLESS_BRANCH": (OP, "open PR #8869 (the layer transfer's branch has the dispersion of a massless nearest-neighbour lattice field)"),
     "ONE_STIFFNESS": (OP, "open PR #8871 (the unit link field fixes one stiffness for the flux cost and the correlations)"),
     "TEST_DEFECT_COULOMB": (OP, "open PR #8875 (test defects interact through the lattice Green's function at the flux-cost stiffness)"),
+    "WINDING_STIFFNESS": (OP, "open PR #8881 (on cubic tori to side 24 the winding stiffness and the correlations carry the sum-rule stiffness)"),
+    "TWO_POLARIZATIONS": (OP, "open PR #8890 (the static photon has two degenerate transverse polarizations with one stiffness)"),
     "DEC_SOLDER": ("decision", "recorded in SOLDER_CENSUS and SOLDER_MENU"),
     "DEC_MIRROR": ("decision", "recorded in HANDED_CENSUS"),
     "DEC_ALPHABET": ("decision", "recorded in READABILITY, ROLES_REGISTERED, FRAME_REGISTRATION, STATIC_ICE_RECORDS and UNIFORM_ICE_COORDINATION"),
@@ -208,7 +217,7 @@ CANDIDATES = {
     "DEC_RULE": ["order-sensitive nearest-neighbour rule", "soldered order-blind rule of nearest-neighbour reach", "support rule with holes"],
     "DEC_READING": ["formation reading of the distribution sentence", "static reading of the distribution sentence"],
 }
-WITHDRAWN = {"DEC_LOCALITY": "nearest-neighbour locality is Admissibility text (open PR #8646, corrected)",
+WITHDRAWN = {"DEC_LOCALITY": "nearest-neighbour locality is Admissibility text (PR #8646, landed)",
              "order-blind physical rule": "excluded under the unsoldered reading by the text (PRs #8663, #8664, #8666, landed)"}
 EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("PRIM", "ORDER_LAW"), ("PRIM", "ORDER_VISIBLE"), ("PRIM", "ORDER_LAW_FRONTS"),
@@ -241,6 +250,7 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
     ("OCTANT_RECORDED", "ROLES_PAIR_LETTERS"), ("FOLDED_ROLES", "ROLES_PAIR_LETTERS"), ("GENERIC_LETTERS", "ROLES_PAIR_LETTERS"),
     ("ROW_TRANSFER_SQUARE", "T_RECORD_DYNAMICS"), ("GAPLESS_CHAIN", "T_RECORD_DYNAMICS"), ("MASSLESS_BRANCH", "T_RECORD_DYNAMICS"),
     ("ONE_STIFFNESS", "T_RECORD_DYNAMICS"), ("TEST_DEFECT_COULOMB", "T_RECORD_DYNAMICS"),
+    ("WINDING_STIFFNESS", "T_RECORD_DYNAMICS"), ("TWO_POLARIZATIONS", "T_RECORD_DYNAMICS"),
     ("ROLES_PAIR_LETTERS", "ROLES_SOURCE"),
     ("STATIC_ICE_ROUTE", "PHOTON_ROUTE"), ("FORMED_ICE_ROUTE", "PHOTON_ROUTE"),
     ("ORDER_LAW", "T_FORMATION_LAW"), ("ORDER_VISIBLE", "T_FORMATION_LAW"), ("UNSOLDERED_CONSTANCY", "T_FORMATION_LAW"),
@@ -264,7 +274,7 @@ EDGES = [("AX", n) for n, (k, p) in NODES.items() if k in (L, OP)] + [
 ]
 OPEN_EDGES = {
     "T_GRAVITY": ["record-statistic bridge from a supported source to a curvature response (unproved)",
-                  "continuum bridge (unproved; on the computed prisms the uniform ice flux behaves as one massless Gaussian lattice field with its stiffness fixed by the unit link field and lattice-Coulomb test charges, open PRs #8859, #8864, #8869, #8871, #8875)"],
+                  "continuum bridge (unproved; on the computed prisms the uniform ice flux behaves as one massless Gaussian lattice field with its stiffness fixed by the unit link field and lattice-Coulomb test charges, PRs #8859 and #8864, landed, and open PRs #8869, #8871, #8875; on tori to side 24 the long-wavelength stiffness is c = 0.335, within 0.5% of the sum-rule 1/3, with two degenerate polarizations, open PRs #8881, #8890)"],
     "T_RECORD_DYNAMICS": ["photon dynamics rests on the landed quantum Hamiltonian (supplied bridge; the equal-time law is selected by a positive static rule, PR #8698, landed; linear sweep rules move flux by a linear transfer, damped when strictly positive and rigid for permutations, with mixed cases beyond both, PR #8726, landed)",
                           "defect densities of front-like order laws on large windows (not computed)",
                           "first-formation orders beyond corner growth, broadcast and the designed order (not classified)",
@@ -330,8 +340,8 @@ def topo_order(nodes, parents):
 
 print("== 1. Well-formedness and source linking ==")
 kinds = {k: sum(1 for n, (kk, p) in NODES.items() if kk == k) for k in ("source", L, OP, "decision", "choice", "route", "target")}
-check("node ledger: 2 sources, 51 landed, 13 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
-      kinds == {"source": 2, L: 51, OP: 13, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 103)
+check("node ledger: 2 sources, 61 landed, 5 open, 12 decision groups, 6 choices, 8 routes, 11 targets",
+      kinds == {"source": 2, L: 61, OP: 5, "decision": 12, "choice": 6, "route": 8, "target": 11} and len(NODES) == 105)
 check("every edge endpoint is declared; no edge enters a source or a decision; target edges go to targets",
       all(u in NODES and v in NODES for u, v in EDGES)
       and all(NODES[v][0] not in ("source", "decision") for u, v in EDGES)
@@ -351,8 +361,8 @@ check("the eleven targets are exactly the design note's preserved list",
 print()
 print("== 2. Acyclicity and minimal decision sets ==")
 ACYC, ORD = topo_order(list(NODES), PARENTS)
-check("the graph is acyclic over all 103 nodes, and the same sorter rejects a two-node cycle",
-      ACYC and len(ORD) == 103 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
+check("the graph is acyclic over all 105 nodes, and the same sorter rejects a two-node cycle",
+      ACYC and len(ORD) == 105 and topo_order(("a", "b"), {"a": ["b"], "b": ["a"]})[0] is False)
 SETS = {t: decision_sets(t) for t in NODES if NODES[t][0] == "target"}
 fmt = lambda fam: " | ".join(sorted("{" + ",".join(sorted(x.replace("DEC_", "") for x in s)) + "}" for s in fam))
 EXPECT_GRAVITY = {frozenset(s) for s in (
@@ -433,7 +443,8 @@ check("the formed photon route passes through the coordinator result; directed i
       and "CYCLE_LETTER_ROLES" in PARENTS["ROLES_PAIR_LETTERS"] and "SWEEP_NO_ROLES" in PARENTS["ROLES_PAIR_LETTERS"]
       and all(n in PARENTS["ROLES_PAIR_LETTERS"] for n in ("OCTANT_RECORDED", "FOLDED_ROLES", "GENERIC_LETTERS")),
       "the window results carry plan letters into single-site formation, the unit results carry the layer order into joint units, and the spiral, letter and multi-qubit unit results join the relational letters")
-PHOTON_LANE = ("ROW_TRANSFER_SQUARE", "GAPLESS_CHAIN", "MASSLESS_BRANCH", "ONE_STIFFNESS", "TEST_DEFECT_COULOMB")
+PHOTON_LANE = ("ROW_TRANSFER_SQUARE", "GAPLESS_CHAIN", "MASSLESS_BRANCH", "ONE_STIFFNESS", "TEST_DEFECT_COULOMB",
+               "WINDING_STIFFNESS", "TWO_POLARIZATIONS")
 NOPH = {k: [q for q in v if q not in PHOTON_LANE] for k, v in PARENTS.items()}
 check("the photon-lane results feed record dynamics only and change no minimal set",
       all([v for u, v in EDGES if u == n] == ["T_RECORD_DYNAMICS"] for n in PHOTON_LANE)

@@ -1,0 +1,202 @@
+{
+  "source_sha256": "43160568a42934b2e33f8b4921e495c0eb7019bc18d9accd141c2110dc16fd81",
+  "original_and_snapshot_files_revalidated": 20,
+  "immutable_members_revalidated": {
+    "PRE_SEAL.json": 15,
+    "POST_SEAL.json": 27
+  },
+  "extraction": {
+    "function_comparisons": [
+      {
+        "origin": "prior cube definitions",
+        "function": "complete_spin_one",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "prior cube definitions",
+        "function": "jump_matrix",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "prior cube definitions",
+        "function": "canonical_preparation",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "sealed Fisher author controls",
+        "function": "fisher",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "sealed Fisher author controls",
+        "function": "trace_norm",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "sealed Fisher author controls",
+        "function": "witness_controls",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "sealed Fisher author controls",
+        "function": "conserving_resource_controls",
+        "exact_source_segment_equal": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "range_project",
+        "AST_equal_after_explicit_helper_renaming": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "range_trnorm",
+        "AST_equal_after_explicit_helper_renaming": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "range_fisher",
+        "AST_equal_after_explicit_helper_renaming": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "coherence_bandwidth",
+        "AST_equal_after_explicit_helper_renaming": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "exact_block_frequency_control",
+        "AST_equal_after_explicit_helper_renaming": true
+      },
+      {
+        "origin": "post-PRE author range controls",
+        "function": "prepared_output_swap_controls",
+        "AST_equal_after_explicit_helper_renaming": true
+      }
+    ],
+    "cube_constants_equal": true,
+    "actual_cube_numerical_body_equal_after_loader_and_provenance_changes": true,
+    "actual_cube_complete_diff": [
+      "--- sealed author actual_cube_controls",
+      "+++ publication actual_cube_controls",
+      "@@ -1,12 +1,9 @@",
+      " def actual_cube_controls():",
+      "-    assert hashlib.sha256(PARENT.read_bytes()).hexdigest()==PARENT_SHA",
+      "-    spec=importlib.util.spec_from_file_location('frozen_cube_author_builder',PARENT)",
+      "-    builder=importlib.util.module_from_spec(spec);spec.loader.exec_module(builder)",
+      "-    models=builder.complete_spin_one();m4,m6=models[4],models[6]",
+      "-    marks=[builder.jump_matrix(m4,m6,1),builder.jump_matrix(m4,m6,-1)]",
+      "+    models=complete_spin_one();m4,m6=models[4],models[6]",
+      "+    marks=[jump_matrix(m4,m6,1),jump_matrix(m4,m6,-1)]",
+      "     marks.append(marks[0]+marks[1]);alpha=.1;rows=[]",
+      "     for epsilon in (.08,.05,.03):",
+      "-        start=time.monotonic();psi,prep=builder.canonical_preparation(m4,epsilon)",
+      "+        start=time.monotonic();psi,prep=canonical_preparation(m4,epsilon)",
+      "         H4=epsilon**-4*(diags(m4['W'],dtype=float)-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C'])",
+      "         H6=epsilon**-4*(diags(m6['W'],dtype=float)-epsilon*(m6['F']+m6['F'].T)+epsilon**2*m6['C'])",
+      "         hp=H4@psi;initial_mean=float(np.vdot(psi,hp).real)",
+      "@@ -28,5 +25,5 @@",
+      "         row={'epsilon':epsilon,'initial_fisher':initial_fisher,'initial_energy_mean':initial_mean,",
+      "              'preparation':prep,'outputs':outputs,'elapsed_seconds':time.monotonic()-start}",
+      "         rows.append(row);print(json.dumps(row),flush=True)",
+      "-    return {'parent_path':str(PARENT),'parent_sha256':PARENT_SHA,'rows':rows,",
+      "+    return {'builder_provenance':'Definitions copied into this runner from author source 4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d; no runtime source import','rows':rows,",
+      "             'scope':'Author reuse of complete S=1 physical matrices, actual canonical preparation and original marks. Varying epsilon at fixed S is a finite coefficient control, not the joint spin limit.'}"
+    ],
+    "imports": [
+      "pathlib",
+      "hashlib",
+      "json",
+      "math",
+      "time",
+      "numpy",
+      "scipy.sparse",
+      "scipy.sparse.linalg"
+    ]
+  },
+  "cache": {
+    "declared_inputs_in_order": [
+      {
+        "path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "bytes": 30360,
+        "sha256": "19225a255dbed81b2703e3770e5a0604a50c34ff898f85aaa58adf5bc8618462"
+      },
+      {
+        "path": ".claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md",
+        "bytes": 17231,
+        "sha256": "43c7587af4011778660406d196035965df858061a7da0581b780c5ebefe58045"
+      },
+      {
+        "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "bytes": 17317,
+        "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718"
+      },
+      {
+        "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "bytes": 10011,
+        "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "bytes": 14902,
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      }
+    ],
+    "fingerprint": "db305d360f1ac2a73d1c5690aa0d5a604b29dc7d7c61e82b76dbab90d78ffd45",
+    "cache_exact_bytes_match_execution_and_actual_input_bytes": true,
+    "runner_sha256": "5a20a84d626d5fff24e45475ed7166831bbb519a48298f3598229c7286f1e7af",
+    "cache_sha256": "bc8918037a05eb27d098762b4d5a52c4b76713cd3a39d874391d52bcc1e2723d",
+    "execution_seconds": 1.8560919761657715,
+    "timeout_seconds": 180,
+    "stdout_bytes": 16352,
+    "stdout_sha256": "3e09d1fcdcc2223cce03e38ccea3c7a39801f3608fca9e9dcaf006d3cabfbeef",
+    "all_four_stdout_JSON_objects_match_results": true,
+    "resolution_lines": [
+      "per_element: Phase matrix elements, success weights, finite conserving identities and premise-changing controls are explicitly exercised.",
+      "per_site: checked and not executed \u2014 this runner does not compute a sitewise formation law or a site-resolved apparatus energy supply.",
+      "per_mode: Finite energy-frequency support is checked, including absent output coherences despite nonzero high-energy populations; no all-mode scan.",
+      "per_block: Complete S=1 physical cube inputs and original marks are checked separately from finite resource toys; the joint-spin proof is analytic.",
+      "lattice_wide: checked and not executed \u2014 no thermodynamic-limit or continuum-lattice apparatus is constructed or excluded by these controls.",
+      "TOTAL: PASS=5 FAIL=0"
+    ],
+    "all_scientific_values_match_prior_author_runs": true
+  },
+  "prose": {
+    "cube_scaled_values": [
+      0.1608400123787234,
+      0.08049249046510022,
+      0.24136813642832977
+    ],
+    "input_fisher": 196.65757886155188,
+    "frequency_values": {
+      "system_input_bandwidth": 1,
+      "apparatus_spectral_diameter": 200,
+      "apparatus_coherence_bandwidth": 1,
+      "output_high_low_minimum_gap": 99,
+      "forbidden_output_coherence_max": 0.0,
+      "output_high_energy_probability": 0.2306622939367945,
+      "apparatus_fisher": 0.2800000000000061,
+      "apparatus_energy_variance": 3394.788571428573,
+      "free_energy_conservation_residual": 0.0,
+      "nonconserving_phase_injection_detected": true
+    },
+    "swap_means": [
+      0.040000000000000015,
+      0.04,
+      0.040000000000000015,
+      0.040000000000000015
+    ],
+    "all_empirical_numeric_prose_matches": true,
+    "process_inventory_reported_scanned": 187,
+    "process_inventory_matching_distinct_paths": 30,
+    "six_named_paths_present": [
+      ".claude/science/physics-loops/record-matter-block04-20260905/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/record-matter-block05-20260905/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/record-battery-transport-20260907/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/toe-axiom-closure-block100-record-jump-resource-generator-20260814/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/conformal-causal-source-repair-block01-20260716/NO_GO_LEDGER.md",
+      ".claude/science/physics-loops/eta-affine-repeat-correction-20260909/bodies/9974a09029ed36dd056f6a01fd9bd3c2de463e3e/NO_GO_LEDGER.md"
+    ],
+    "process_limits": "The inventory reports 187 scanned but does not enumerate all 187. Its 30 matching paths are counted directly. Six complete ledger reads and the bridge read remain author-reported; no independent historical audit-status verification."
+  },
+  "scope": "Deterministic correspondence only. No author scientific runner imported or executed; no new frontier derivation or audit verdict."
+}

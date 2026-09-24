@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T13:51:38.680223+00:00",
+  "elapsed_seconds": 0.22646625014021993,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/post_coherence_checks.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent",
+  "source_sha256": "f6abcdf590c71b905f4d7d486cde89ceb86f80fbc24098cd8e8f0c3221f69273",
+  "exit_code": 0,
+  "stdout_sha256": "92e004bee02a40448f98ca40832541474539e670c1f2971a6de2260d57f6ca22",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

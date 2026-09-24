@@ -1,0 +1,24 @@
+{
+  "sealed_utc": "2026-09-24T13:40:15.217762+00:00",
+  "isolation": "Prepared before reading any new root derivation/checkpoint or new checker packet; only specified model sources and QFI reference used.",
+  "pre_sha256": "77e330c478ef2290bfdc96382bc95524f8e9444bf22e2f29f77f8f2b231f0ac7",
+  "source_pins_sha256": "2235ea5020b7128fc9890fa035204869290ba02aabe0395e15c1378a02e388bf",
+  "files_sha256": {
+    "CHECKPOINT.md": "ffca78293449c43241d95bb8f333bf14b74c7f3f58480522d2bb852f8e7854b7",
+    "COHERENCE_CHECK_RESULTS.json": "bc5ad938aa4e0cfacd78d3de49b340a575a4c016235874ea37f3b62d7a652349",
+    "COMMAND_LOG.md": "9d3f79c8c04a7db823d0223defbe81548e89dc12a76c7025f4db25467e6354d7",
+    "PRE.md": "77e330c478ef2290bfdc96382bc95524f8e9444bf22e2f29f77f8f2b231f0ac7",
+    "SOURCE_PINS.json": "2235ea5020b7128fc9890fa035204869290ba02aabe0395e15c1378a02e388bf",
+    "SOURCE_VALIDATION.log": "9cb51e33aeaa3e1127d8bf4133b9d550a9a83a181905afeec496fbb3363f6187",
+    "coherence_checks.log": "1cea4105cc109a8d62a397b46f13f159ec6e3a577ca1555fd38f3005444a6707",
+    "coherence_checks.py": "ef2728242259d98b208bd47550cd0e1b3e2460965eabbf96228b02e0499bd095",
+    "sources/2112.04694v1.pdf": "5783f838166dc3cd8a408d6026ed4fb2ae66e30ff2c1503b91d989af41820d1b",
+    "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "sources/AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "sources/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "sources/planning_AGENTS.md": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+  },
+  "scope": "Single-input selected cube birth output; no continuum-time, iid, full-instrument, reservoir or audit claim."
+}

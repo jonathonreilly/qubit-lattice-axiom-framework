@@ -1,6 +1,6 @@
 {
- "edge_count": 14619,
- "node_count": 6648,
+ "edge_count": 14622,
+ "node_count": 6649,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -289,6 +289,10 @@
   "actual_birth_rotor_energy_has_an_algebraic_lower_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "d069d9134edd",
    "out_degree": 1
+  },
+  "actual_cube_birth_apparatus_coherence_and_energy_range_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "627ff4c7c7c1",
+   "out_degree": 3
   },
   "actual_cube_birth_energy_on_the_fast_time_scale_bounded_theorem_note_2026-09-24": {
    "deps_hash": "ad144bdd166d",

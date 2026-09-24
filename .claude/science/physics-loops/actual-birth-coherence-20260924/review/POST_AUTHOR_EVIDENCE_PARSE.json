@@ -1,0 +1,16 @@
+[
+  {
+    "prefix": "",
+    "stdout_all_bytes_parsed": 13615,
+    "objects": 4,
+    "full_result_and_each_row_agree": true,
+    "stderr": ""
+  },
+  {
+    "prefix": "control_attempt01/",
+    "stdout_all_bytes_parsed": 13617,
+    "objects": 4,
+    "full_result_and_each_row_agree": true,
+    "stderr": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/coherence_controls.py:89: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  H4=epsilon**-4*(diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C'])\n/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/coherence_controls.py:90: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.\n  H6=epsilon**-4*(diags(m6['W'])-epsilon*(m6['F']+m6['F'].T)+epsilon**2*m6['C'])\n"
+  }
+]

@@ -42,7 +42,7 @@ review_findings: Ten selection reviews chose this route after comparing alternat
 pr_status: Open, ready for focused review as a stacked conditional milestone; integrated gates and landing await source dependency #8831.
 pr_number: 8943
 pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943
-pr_science_checkpoint_commit: d7ba50d4e20a66d995c8fdc4e69254f0536b0108
+pr_science_checkpoint_commit: 2db08ec5034633a9cb038d61c32fa45755bfd45b
 pr_base_commit: b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953
 next_exact_action: Derive the 15-cell local symbol/action of the staggered positive Jacobi operator, identify stationary and resonant phase families, then prove uniform cancellation for the two mod-3 matrix elements at the three frozen times or certify a separated subsequence.
 stop_condition: Continue until a controlled fixed-time convergence theorem, certified bounded-observable discrepancy, exact equality for the tested observable, or the user-authorized runtime is exhausted; record any remaining route as open rather than force closure.

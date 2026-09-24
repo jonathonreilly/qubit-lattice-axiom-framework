@@ -37,7 +37,7 @@ No independent review-loop or audit verdict has been received for this block. Th
 
 ## Review checkpoint
 
-The coherent conditional milestone was opened ready for focused review as PR [#8943](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943), stacked on open parent #8831. The last public science checkpoint before the zero-mode extension is `d7ba50d4e20a66d995c8fdc4e69254f0536b0108`; integrated-current-main gates, merge, and formal retention remain pending on the parent chain.
+The coherent conditional milestone was opened ready for focused review as PR [#8943](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943), stacked on open parent #8831. The last public science checkpoint before the zero-mode extension is `d7ba50d4e20a66d995c8fdc4e69254f0536b0108`; the zero-mode theorem and runner are captured in source checkpoint `2db08ec5034633a9cb038d61c32fa45755bfd45b`. Integrated-current-main gates, merge, and formal retention remain pending on the parent chain.
 
 ## Focused verification of the zero-mode extension
 

@@ -1,0 +1,9 @@
+PASS T1 one record: v = b + ((1-a)/6) M g; isolated M=I; neighbour h = 2/5, 2/3, 1/2 and M = h(2I - ee^T); a=1 kills the gradient
+PASS T2 the weight is (2a-1) per record, and c = (2a-1)n - 1 is exactly the detailed-balance exponent
+PASS T3 lone record: D0 = 1/12 and V1 = -c D0 g at a = 1, 3/4, 0 along x and along (1,2,3)
+PASS T3 tethered pair: D0 = 2/105, 2/135, 1/54; V1 = -c D0 g; every move balances W exp(-c g.X)
+PASS S9 two records in contact at a=1 have instantaneous centre velocity (e^g - 1)/24, up the gradient
+PASS T4 the printed drifts follow from V = -c D0: lone 0, 1/24, 1/6 and pairs 3 D0 at a=0
+TOTAL FAIL=0
+HIT: confirmed - at first order in a uniform gradient, one record moves as b + ((1-a)/6) M g, the equilibrium weight is (2a-1) per record, and a tethered cluster drifts at -((2a-1)n-1) D0 g per centre-clock tick. D0 is 1/12 for a lone record and 2/105, 2/135, 1/54 for tethered pairs of equal, opposite and orthogonal content. At a=1 a lone record does not fall and a bound pair falls at D_pair g.
+SUMMARY: confirmed the partial result. The drift is not universal across a lone record and a bound pair, while the equilibrium weight is one factor (2a-1) per record. Block 95's free pairs on Z^3 were not shown to be bound; the tether is a finite witness. The physical-time sketch and the Green-function decay stay as stated, not rebuilt.

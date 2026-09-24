@@ -3,7 +3,7 @@
 
 A synthesis of the 2026-09-24 campaign (open PRs 9040, 9041, 9043, 9046,
 9048, 9050, 9052, 9054, 9066, 9069, 9072, 9077, 9081, 9083, 9084, 9085, 9086, 9088,
-9095, 9097). Each check re-derives, in a fast independent form,
+9095, 9097, 9112). Each check re-derives, in a fast independent form,
 the load-bearing identity of one block; the ledger records which supplied
 decision points each block uses and checks the ledger is closed (every point
 used is declared, every declared point is used). Nothing here adopts a
@@ -11,7 +11,7 @@ decision point or adds a premise.
 
 Checks:
 
-L. Ledger: the decision points used by the twenty blocks are exactly the
+L. Ledger: the decision points used by the twenty-one blocks are exactly the
    declared ones.
 1. (9040) Possibility covariance leaves the Heisenberg coupling alone; full
    soldering leaves three couplings.
@@ -67,6 +67,10 @@ L. Ledger: the decision points used by the twenty blocks are exactly the
 20. (9097) A chain of Kitaev sites with record fields on its dangling axes
    has a bipartite Majorana coupling graph (S H S = -H); a field along a
    leaf's kept axis matches the exact spin spectrum and breaks S.
+21. (9112) Covariant odd star terms under full soldering, as signed rotation
+   orbits, number 37 at weights 1 and 3; Kitaev's pattern on a three-site
+   cluster maps to the same-class Majorana bilinear -i eps u u c c, checked
+   against the exact spin spectrum.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """
@@ -128,7 +132,7 @@ DECLARED = {
     "D-rev": "reversible, continuous-time, time-homogeneous evolution with a nearest-neighbour generator",
     "D-chan": "the evolution of a finite region between records is a channel",
     "D-onlyrec": "records are the only irreversible events",
-    "D-chir": "a time-reversal-odd star term of weight at most three",
+    "D-chir": "a time-reversal-odd star term (weight at most three, or up to seven in 9112)",
     "D-tsoft": "a soft vector-constraint energy on link sites with one-site slot fields",
     "D-slot": "the tensor slot type: rotor (unbounded) or qubit",
 }
@@ -152,7 +156,8 @@ USED = {
     9086: {"D-chan", "D-onlyrec"},
     9088: {"D-pc", "D-sold", "D-chir", "D-pattern"},
     9095: {"D-roles", "D-tsoft", "D-slot"},
-    9097: {"D-dyn", "D-sold", "D-pattern"},
+    9097: {"D-dyn", "D-sold", "D-perm", "D-pattern"},
+    9112: {"D-dyn", "D-sold", "D-perm", "D-pattern", "D-chir"},
 }
 used_all = set().union(*USED.values())
 check("ledger: the decision points used are exactly the declared ones",
@@ -882,6 +887,64 @@ leaf_break = np.linalg.norm(_SL @ (1j * _AL) @ _SL + 1j * _AL)
 check("dangling-axis record fields keep S H S = -H; a leaf's kept-axis field is solvable and breaks it",
       sub_viol < 1e-12 and leaf_dev < 1e-12 and leaf_break > 1e-3,
       f"ring |S H S + H| {sub_viol:.0e}; leaf pair spectrum match {leaf_dev:.0e}, |S H S + H| {leaf_break:.2f}")
+
+# ------------------------------------------ 21: covariant odd star terms and Kitaev's pattern
+print("21. covariant odd star terms and the Majorana image of Kitaev's pattern")
+_POS = [np.zeros(3, dtype=int)] + [np.array(v) for v in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]]
+_strs = [((0,), (a,)) for a in range(3)] + [(sup, labs) for sup in itertools.combinations(range(7), 3)
+                                             for labs in itertools.product(range(3), repeat=3)]
+_sid = {s_: i for i, s_ in enumerate(_strs)}
+_pidx = {tuple(v): i for i, v in enumerate(_POS)}
+
+
+def _image(R, s_):
+    sup, labs = s_
+    new = [_pidx[tuple(R @ _POS[x])] for x in sup]
+    sign, lab2 = 1, []
+    for a in labs:
+        b = int(np.flatnonzero(R[:, a])[0])
+        sign *= int(R[b, a])
+        lab2.append(b)
+    order = sorted(range(len(sup)), key=lambda t: new[t])
+    return _sid[(tuple(new[t] for t in order), tuple(lab2[t] for t in order))], sign
+
+
+_Rs = [np.round(R).astype(int) for R in O]
+_seen, _count = set(), 0
+for i0 in range(len(_strs)):
+    if i0 in _seen:
+        continue
+    orb, front, ok = {i0: 1}, [i0], True
+    while front:
+        x = front.pop()
+        for R in _Rs:
+            y, sg = _image(R, _strs[x])
+            if y in orb:
+                ok &= orb[y] == orb[x] * sg
+            else:
+                orb[y] = orb[x] * sg
+                front.append(y)
+    _seen |= set(orb)
+    _count += ok
+# Kitaev's pattern s^x_i s^y_m s^z_k on i - m - k (bonds along x and z): its Majorana image is a c_i - c_k hopping.
+# Spin model on three sites against free Majoranas c_i, c_m, c_k plus the five decoupled dangling b's.
+_k = rng.normal()
+_Hs = np.kron(np.kron(Pm[0], Pm[0]), np.eye(2)) + np.kron(np.eye(2), np.kron(Pm[2], Pm[2])) \
+    + _k * np.kron(np.kron(Pm[0], Pm[1]), Pm[2])
+_spin = np.sort(np.linalg.eigvalsh(_Hs))
+_best = 9.0
+for _sgn in (1, -1):
+    _A = np.zeros((8, 8))                               # c_i, c_m, c_k, then five dangling b's (decoupled)
+    _A[0, 1], _A[1, 2], _A[0, 2] = -2.0, -2.0, -2.0 * _sgn * _k
+    _A = _A - _A.T
+    _eps = np.sort(np.linalg.eigvalsh(1j * _A))[4:]
+    _lev = {0: [], 1: []}
+    for occ in itertools.product((0, 1), repeat=4):
+        _lev[sum(occ) % 2].append(-0.5 * _eps.sum() + np.dot(occ, _eps))
+    _best = min(_best, min(np.max(np.abs(np.sort(_lev[q_]) - _spin)) for q_ in (0, 1)))
+check("covariant odd star terms number 37 at weights 1 and 3 under full soldering; Kitaev's pattern is a same-class c-c hopping",
+      _count == 37 and _best < 1e-9,
+      f"signed orbits {_count}; three-site spin levels reproduced by c_i - c_m - c_k hopping plus a c_i - c_k term to {_best:.0e}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

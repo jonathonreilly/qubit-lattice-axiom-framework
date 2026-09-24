@@ -1,0 +1,7 @@
+PASS species: 3D partition (+1|-1), (-2|+2), (+1|-1); 2D (+1|-1), (-1|+1); net flux needs the two named theorems
+PASS cone identity: sum chi (mu-E)^3 = -384 a^3, so the cone density is -64 a^3/pi^2 at every mu
+PASS symmetry: E_+(k+pi)-a0 = -(E_-(k)-a0) on every even torus
+PASS exclusion: 4^3: [70, 64, 58] on 64 sites; 4^2: [18, 14] on 16 sites; top gap needs at least Ns+6 in 3D and Ns+2 in 2D
+PASS jam: on a packed lattice every hop leaves the space, so PHP is a0 N and n(k)=1; the 4x3 enumeration was not repeated
+HIT: confirmed - both bands see the same zeros, so the Berry fluxes cancel in every gap if the index theorem and the two-band flux relation are granted; the top-gap filling needs at least Ns+6 records in 3D (70 on the 4^3 torus) and does not exist under exclusion; the middle gap is the jam
+SUMMARY: confirmed the species partition, the cone identity -384 a^3, the spectral symmetry, and the fillings 70/64/58 and 18/14. The 64^3 pocket scan and the 4x4 ground-state runs were not re-executed.

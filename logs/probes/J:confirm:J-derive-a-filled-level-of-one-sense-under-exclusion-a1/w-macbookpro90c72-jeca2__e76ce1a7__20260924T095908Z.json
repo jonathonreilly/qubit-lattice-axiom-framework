@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-filled-level-of-one-sense-under-exclusion-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jeca2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-filled-level-of-one-sense-under-exclusion/referee_w-macbookpro90c72-jeca2/check.py",
+ "seed": 43948,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e76ce1a7",
+ "started_utc": "20260924T095908Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the species partition, the cone identity -384 a^3, the spectral symmetry, and the fillings 70/64/58 and 18/14. The 64^3 pocket scan and the 4x4 ground-state runs were not re-executed."
+ },
+ "review": "The top gap needs 70 records on 64 sites and the cone sum is -384 a^3, so the lens filling does not exist under exclusion and the net species count is a partition, not one sense.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-filled-level-of-one-sense-under-exclusion:a1/; its files are probes/work/derive/a-filled-level-of-one-sense-under-exclusion/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-filled-level-of-one-sense-under-exclusion/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a79d0291adcc5697f95ca3bcf56197658728615a4adf81290ca477df5e3a0375",
+ "stdout_tail": "PASS species: 3D partition (+1|-1), (-2|+2), (+1|-1); 2D (+1|-1), (-1|+1); net flux needs the two named theorems\nPASS cone identity: sum chi (mu-E)^3 = -384 a^3, so the cone density is -64 a^3/pi^2 at every mu\nPASS symmetry: E_+(k+pi)-a0 = -(E_-(k)-a0) on every even torus\nPASS exclusion: 4^3: [70, 64, 58] on 64 sites; 4^2: [18, 14] on 16 sites; top gap needs at least Ns+6 in 3D and Ns+2 in 2D\nPASS jam: on a packed lattice every hop leaves the space, so PHP is a0 N and n(k)=1; the 4x3 enumeration was not repeated\nHIT: confirmed - both bands see the same zeros, so the Berry fluxes cancel in every gap if the index theorem and the two-band flux relation are granted; the top-gap filling needs at least Ns+6 records in 3D (70 on the 4^3 torus) and does not exist under exclusion; the middle gap is the jam\nSUMMARY: confirmed the species partition, the cone identity -384 a^3, the spectral symmetry, and the fillings 70/64/58 and 18/14. The 64^3 pocket scan and the 4x4 ground-state runs were not re-executed.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jeca2",
+  "at_utc": "20260924T095918Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "On the 4^3 torus the top gap needs 70 records on 64 sites, and the species nets are a partition with zero total sense.",
+  "by": "w-macbookpro90c72-jeca2",
+  "at_utc": "20260924T095918Z"
+ }
+}

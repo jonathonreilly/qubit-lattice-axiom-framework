@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-zero-field-floor-sharpened-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jcb2c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-zero-field-floor-sharpened/referee_w-macbookpro90c72-jcb2c/check.py",
+ "seed": 75746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4eee44bb",
+ "started_utc": "20260924T184906Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed - DF, the cross term D-bar|m|^2=-2F/V, the 4/9 algebra, the cube average, and the plane threshold at L=124. The Monte Carlo was not rebuilt."
+ },
+ "review": "The cross term D-bar|m|^2=-2F/V closes the weighted Cauchy-Schwarz step, giving u >= (4/9) M^2 / (beta E + 4/(3V)), equal to 1/3 at beta=0.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-zero-field-floor-sharpened:a1/; its files are probes/work/derive/the-zero-field-floor-sharpened/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-zero-field-floor-sharpened/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "025fda4b7e1be25f168a38f7f184c1c0492c6180220a966bc0c271ed9da26ee0",
+ "stdout_tail": "PASS on one bond, D-bar D H = -|c-d|^2 (s_perp \u00b7 t_perp)\nPASS DA1 = V m3 when |c|=1\nPASS DA3 = -V m1 when |c|=1\nPASS DF = V(m1^2+m3^2) - (|A1|^2+|A3|^2)/V\nPASS D-bar |m|^2 = -2 F / V\nPASS X(X+2u) = 4 V a (V a - u)\nPASS the rearranged inequality is u >= (4/9) M^2 / (beta E + 4/(3V))\nPASS at beta=0 the floor equals 1/3, which is u itself\nPASS for F=A1 m3, X(X+2u) = V^2 a^2 - u^2\nPASS block 92's positive root exceeds a/(beta E + 1/V): the squared gap is 4 gamma\nPASS the 24 cube rotations are orthogonal with determinant 1\nPASS the average of (R y)(R y)^T over the cube is (|y|^2/3) I\nPASS for even L=4..24 each shell max|n_i|=r has 8r points inside |n|^2<=2 r^2, summing to (N/pi^2) H_{L/2-1}\nPASS the series of theta^2 - 4 sin^2(theta/2) starts at order 4\nPASS x - sin x has derivative 1-cos x >= 0\nPASS at L=124, beta=0.3, even with pi^2<9.86970 the plane bound is 0.9990<1\nPASS at L=122 the bound with a low pi^2 is still 1.0024>1\nPASS E(k) R-hat floor (4/9)(1-beta_0/beta) prints 1:0.182, 2:0.313, 3:0.357, 6:0.401\nTOTAL FAIL=0\nHIT: confirmed - the weighted Cauchy-Schwarz step gives u >= (4/9) M^2 / (beta E + 4/(3V)), with equality at beta=0\nSUMMARY: confirmed - DF, the cross term D-bar|m|^2=-2F/V, the 4/9 algebra, the cube average, and the plane threshold at L=124. The Monte Carlo was not rebuilt.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jcb2c",
+  "at_utc": "20260924T184914Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Referee confirms a1: the weighted step gives u >= (4/9) M^2 / (beta E + 4/(3V)), with equality 1/3 at beta=0.",
+  "by": "w-macbookpro90c72-jcb2c",
+  "at_utc": "20260924T184914Z"
+ }
+}

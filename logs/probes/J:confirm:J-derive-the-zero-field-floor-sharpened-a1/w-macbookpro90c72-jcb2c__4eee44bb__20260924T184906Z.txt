@@ -1,0 +1,21 @@
+PASS on one bond, D-bar D H = -|c-d|^2 (s_perp · t_perp)
+PASS DA1 = V m3 when |c|=1
+PASS DA3 = -V m1 when |c|=1
+PASS DF = V(m1^2+m3^2) - (|A1|^2+|A3|^2)/V
+PASS D-bar |m|^2 = -2 F / V
+PASS X(X+2u) = 4 V a (V a - u)
+PASS the rearranged inequality is u >= (4/9) M^2 / (beta E + 4/(3V))
+PASS at beta=0 the floor equals 1/3, which is u itself
+PASS for F=A1 m3, X(X+2u) = V^2 a^2 - u^2
+PASS block 92's positive root exceeds a/(beta E + 1/V): the squared gap is 4 gamma
+PASS the 24 cube rotations are orthogonal with determinant 1
+PASS the average of (R y)(R y)^T over the cube is (|y|^2/3) I
+PASS for even L=4..24 each shell max|n_i|=r has 8r points inside |n|^2<=2 r^2, summing to (N/pi^2) H_{L/2-1}
+PASS the series of theta^2 - 4 sin^2(theta/2) starts at order 4
+PASS x - sin x has derivative 1-cos x >= 0
+PASS at L=124, beta=0.3, even with pi^2<9.86970 the plane bound is 0.9990<1
+PASS at L=122 the bound with a low pi^2 is still 1.0024>1
+PASS E(k) R-hat floor (4/9)(1-beta_0/beta) prints 1:0.182, 2:0.313, 3:0.357, 6:0.401
+TOTAL FAIL=0
+HIT: confirmed - the weighted Cauchy-Schwarz step gives u >= (4/9) M^2 / (beta E + 4/(3V)), with equality at beta=0
+SUMMARY: confirmed - DF, the cross term D-bar|m|^2=-2F/V, the 4/9 algebra, the cube average, and the plane threshold at L=124. The Monte Carlo was not rebuilt.

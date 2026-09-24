@@ -1,0 +1,216 @@
+{
+ "task": "J:derive:deferred-20260924-spin-packets:a1",
+ "worker": "w-macbookpro9927a-j9ca8",
+ "model": "claude-opus-5-5",
+ "pass": "first bounded pass; not a claim that batch 13 is exhausted",
+ "origin_main_sha": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+ "landing_snapshot": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+ "batch_landed_commit": "d7a3aa92b0b2f99e9a451efbbccda77de4625f68",
+ "review_finding": "U13-R3 (PR8839: the actual-output check consumed historical high-spin saved-vector files; replay deferred)",
+ "canonical_notes": [
+  "docs/ACTUAL_FIRST_OUTPUT_COMPONENTS_AND_TWO_BIRTH_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md (origin/main)",
+  "docs/PREPARED_FLAT_SECTOR_WITH_ELECTRIC_DYNAMICS_AND_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md (origin/main; model definitions)"
+ ],
+ "residual_worked": {
+  "statement": "recover the provenance of the saved high-spin vectors and reproduce, independently, the note's S=192 finite-window diagnostic (and the whole deferred window table)",
+  "domain": "the supplied eight-site ring, six-record P space, physical Gauss intervals, S = 64, 96, 128, 192, t in {0,.4,.8,1.2}, (K,delta,kappa) = (.4,.7,.3)",
+  "quantifiers": "the four saved runs and the 48 window rows; no statement for other S, times, parameters or seeds",
+  "premises": "the landed prepared-flat-sector note (basis (4), electric table, H4 action (6), loss) and the actual-first-output note; no import of the frozen builders",
+  "success_witness": "independent rebuild equals the saved vectors to 1e-12 and reproduces every window row; exact checks of the flat-sector algebra and of the seed as the actual first output"
+ },
+ "source_groups_inspected": [
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_author/ACTUAL_OUTPUT_CONTROLS.json",
+   "sha256": "3afe11fd3557548296be316988e862001550f76c3aae6c23fd8bfa1a12eecfc5",
+   "bytes": 20096,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "all 48 finite-window rows (S = 64..192, N = 1, 2, 8, four times) reproduced to relative 1e-6 or better; exact first-sector/loss/convolution parts are landed (already-landed)"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/actual_first_output_author/CHECK.stdout.log",
+   "sha256": "3afe11fd3557548296be316988e862001550f76c3aae6c23fd8bfa1a12eecfc5",
+   "bytes": 20096,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "byte-identical content group with ACTUAL_OUTPUT_CONTROLS.json"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_author/PREDECLARED_SCOPE.md",
+   "sha256": "d996277986e8564a17e107a271d9f68d3f67fca6886edd1ead921071d063bcb2",
+   "bytes": 1394,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "scope of the initial S <= 64 probe (resolved and coherent first outputs)"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_author/full_first_output_probe.py",
+   "sha256": "59ee21a0102216fcfc8c39cd85ecb77651b040b0f1b69ae7ff2ad953926429da",
+   "bytes": 3265,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "open",
+   "note": "initial probe S = 4..64 with the coherent-instrument seed (|03,1,1> + |03,0,1>)/sqrt2; not replayed in this pass"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/CHECK.stdout.log",
+   "sha256": "2cd44f0674b60594c4a494ea6d25974559d06f8421c37d07df1b623c97267d4f",
+   "bytes": 14215,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "stdout of the follow-up run; same rows as DECOMPOSITION_RESULTS"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/DECOMPOSITION_RESULTS.json",
+   "sha256": "3626c7968602176f0b5c921d61fe6651147f04a0d071f795190032824f12be6b",
+   "bytes": 11852,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "provenance: vector hashes, parameters, script source hash; its rows are functions of the reproduced vectors"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/PREDECLARED_SCOPE.md",
+   "sha256": "16cc0a96bdcde08b13e1f6cd652bd9b0dda57fc3e827e5007aa50f400e946e1c",
+   "bytes": 1286,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "historical",
+   "note": "predeclared scope of the follow-up; no science beyond the saved run"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/PROPAGATED_S128.npz",
+   "sha256": "42c948a05b39e4687c6c9a5055d01a7575256bac5656450cb94926b7b1606343",
+   "bytes": 229943,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "as S64"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/PROPAGATED_S192.npz",
+   "sha256": "2b9a8dd7a325f5b27f5cc5dedb547f21662738d270378e64db386bb49dfd0f75",
+   "bytes": 344324,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "as S64; carries the note's S=192 diagnostic"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/PROPAGATED_S64.npz",
+   "sha256": "9a3e318278a7b3138917584ca336cd347babbaddfd8317a9adccf409513615d8",
+   "bytes": 115352,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "independently re-propagated from the landed note text; equal to the saved vectors to 1e-12 at t = 0, .4, .8, 1.2 (check N1)"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/PROPAGATED_S96.npz",
+   "sha256": "cb3d3736928a58a910b0ed35de0741cc2ca1f12fe04207a9d38b8d20824a6a33",
+   "bytes": 172564,
+   "category": "historical-evidence",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "as S64"
+  },
+  {
+   "pr": 8839,
+   "head": "8ccef7097deb77fe79f0d9406eef7d5c6e4962bd",
+   "path": ".claude/science/mobile-record-formation-20260920/campaign12h_fourth/finite_spin_unprepared_followup/unprepared_decomposition_check.py",
+   "sha256": "a9b2739f5607b9fad812e1de4215973d26662026683a4d0790617ddaf68f6313",
+   "bytes": 3809,
+   "category": "source-candidate",
+   "sha256_verified_from_frozen_head": true,
+   "disposition": "recovered",
+   "note": "provenance: seed line psi = |(0,3),1,1>, builder hash 5030a960, flat reference cut 48; replaced by an independent rebuild"
+  }
+ ],
+ "dispositions": {
+  "recovered": [
+   "8839 PROPAGATED_S64/96/128/192.npz (independently reproduced)",
+   "8839 DECOMPOSITION_RESULTS.json and unprepared_decomposition_check.py (provenance)",
+   "8839 ACTUAL_OUTPUT_CONTROLS.json finite-window table (reproduced)"
+  ],
+  "already_landed": [
+   "exact first-sector counts, finite-spin loss bound and two-birth convolution (canonical runner of the actual-first-output note)",
+   "flat-sector algebra of the prepared note (re-checked here exactly)"
+  ],
+  "historical": [
+   "8839 follow-up PREDECLARED_SCOPE and CHECK.stdout.log",
+   "8839 actual-output CHECK.stdout.log",
+   "8839 initial-probe PREDECLARED_SCOPE"
+  ],
+  "duplicate": [],
+  "active_elsewhere": [],
+  "open": [
+   "8839 initial S <= 64 probe including the coherent-instrument seed",
+   "8839 cube_point_spectrum and cube_unprepared groups",
+   "rates or uniform bounds for the finite-S window errors (the replay gives none)"
+  ]
+ },
+ "not_inspected": "8839 AUTHOR_SEAL/RUN_RECEIPT files (administrative), FULL_FIRST_OUTPUT_RESULTS.json and PROBE logs of the initial probe, the cube_* and original_local_limit_review groups; PR8831, PR8832, PR8943 sources: left open",
+ "existing_task_log_links": [
+  {
+   "problem": "composite-bodies-rest-energy-without-a-larger-site-algebra",
+   "log": "logs/probes/J:derive:composite-bodies-rest-energy-without-a-larger-site-algebra:a3 and :a4 (a4 = this worker machine, issue 8733)",
+   "issue": 8733,
+   "confirm_issue": null,
+   "relation": "rest energy of composite bodies; no overlap with the PR8839 replay"
+  }
+ ],
+ "remaining_ranked_source_groups": [
+  {
+   "rank": 1,
+   "group": "PR8839 finite_spin_unprepared_author (S = 4..64, resolved and coherent first outputs)",
+   "why": "the same builder now reproduces cheaply; the coherent seed was not replayed"
+  },
+  {
+   "rank": 2,
+   "group": "PR8839 cube_point_spectrum_* and cube_unprepared_* (cube six-record rotor point spectrum, local density limit)",
+   "why": "deferred auxiliary controls of two landed notes"
+  },
+  {
+   "rank": 3,
+   "group": "PR8831 (U13-R2 tail-moment proof sections, second formation clock)",
+   "why": "attributed proof preserved; historical tail controls deferred"
+  },
+  {
+   "rank": 4,
+   "group": "PR8943 (U13-R4..R6 corrections)",
+   "why": "corrections landed; historical diagnostics deferred"
+  },
+  {
+   "rank": 5,
+   "group": "PR8832 (prepared flat sector auxiliary files)",
+   "why": "model tables now re-checked exactly here"
+  }
+ ],
+ "next_exact_action": "replay the initial S <= 64 probe including the coherent-instrument seed with the independent builder; then the PR8839 cube groups"
+}

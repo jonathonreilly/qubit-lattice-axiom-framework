@@ -1,7 +1,7 @@
 ---
 claim_id: dynamics_clause_a_covariant_time_reversal_odd_star_term_gives_a_record_carved_majorana_network_a_chern_number_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: the compass point of the fully soldered dynamics clause (open PR 9040), records acting as fields (open PR 9041), a record pattern with record contents, and a covariant time-reversal-odd star term. The clause and the star term are covariant under full soldering. The record pattern and its contents are supplied, non-covariant choices. (i) A 19-site relaxed three-direction network on the 4x4x4 cell (from open PR 9097's zero-field search) has no record touching unrecorded sites along all three axes. Each record points along the last axis that avoids its unrecorded neighbours, with sign (-1)^(x+y+z), so every field on an unrecorded site vanishes. (ii) Covariant odd star terms under full soldering, built as signed orbits of the 24 proper rotations, give 37 lattice terms at weights 1 and 3 (open PR 9088's count) and 325 at weights 1, 3, 5 and 7. (iii) Pauli strings on the carving, with records replaced by their values, are mapped exactly to Kitaev's Majoranas. The map reproduces the bond matrix, and matches exact spin spectra on three-site clusters and on 30 random tree clusters with multi-site strings to 1e-14. (iv) The covariant terms whose reduced strings are all free Majorana bilinears form a 41-dimensional subspace here; 5 of its directions act on the Majoranas. The projection onto it of the weight-5 orbit s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z} is a covariant term of weights 5 and 7. Its non-free strings cancel exactly, and its free image is 27 Kitaev patterns at corners plus the dangling-axis field s^x at (2,2,2), with the largest coefficient. (v) The compass bonds plus lambda times that term, in the 16 translation-invariant flux sectors of the cell: at lambda = 1, 2 and 4 the lowest (8 degenerate) have 12 exact zero modes per cell, a gap above them (0.019, 0.035, 0.017), and weak Chern numbers (-1, 0, 0). The phase is a window: the gap vanishes at lambda = 0.5 and 10 and is open at 0.9 and 8. (vi) A slab 12 cells thick, open along z, carries one chiral Majorana mode on each surface, of opposite chirality. (vii) The field term is essential: without it the gap vanishes. Time reversal (lambda -> -lambda) and uniform instead of staggered record signs both give (+1, 0, 0). (viii) The phase needs exactly zero dangling fields. Dangling fields of 0.1 remove the Chern number, and with generic record contents no covariant term stays free. No chiral phase of the full lattice, no charged or Weyl fermion and no physical identification is claimed."
+claim_scope: "Setting, all supplied and none adopted: the compass point of the fully soldered dynamics clause (open PR 9040), records acting as fields (open PR 9041), a record pattern with record contents, and a covariant time-reversal-odd star term. The clause and the star term are covariant under full soldering. The record pattern and its contents are supplied, non-covariant choices. (i) A 19-site relaxed three-direction network on the 4x4x4 cell (from open PR 9097's zero-field search) has no record touching unrecorded sites along all three axes. Each record points along the last axis that avoids its unrecorded neighbours, with sign (-1)^(x+y+z), so every field on an unrecorded site vanishes. (ii) Covariant odd star terms under full soldering, built as signed orbits of the 24 proper rotations, give 37 lattice terms at weights 1 and 3 (open PR 9088's count) and 325 at weights 1, 3, 5 and 7. (iii) Pauli strings on the carving, with records replaced by their values, are mapped exactly to Kitaev's Majoranas. The map reproduces the bond matrix, and matches exact spin spectra on three-site clusters and on 30 random tree clusters with multi-site strings to 1e-14. (iv) The covariant terms whose reduced strings are all free Majorana bilinears form a 41-dimensional subspace here; 5 of its directions act on the Majoranas. The projection onto it of the weight-5 orbit s^x_{+x} s^y_{-x} s^y_{+y} s^z_{-y} s^z_{+z} is a covariant term of weights 5 and 7. Its non-free strings cancel exactly, and its free image is 27 Kitaev patterns at corners plus the dangling-axis field s^x at (2,2,2), with the largest coefficient. (v) The compass bonds plus lambda times that term, in the 16 translation-invariant flux sectors of the cell: at lambda = 1, 2 and 4 the lowest (8 degenerate) have 12 exact zero modes per cell, a gap above them (0.019, 0.035, 0.017), and weak Chern numbers (-1, 0, 0). The phase is a window: the gap vanishes at lambda = 0.5 and 10 and is open at 0.9 and 8. (vi) A slab 12 cells thick, open along z, carries one chiral Majorana mode on each surface, of opposite chirality. (vii) The field term is essential: without it the gap vanishes. Time reversal (lambda -> -lambda) and uniform instead of staggered record signs both give (+1, 0, 0). (viii) The net chirality needs exactly zero dangling fields. With random dangling fields of 0.1 (three draws) and 0.2, 2 exact zero modes per cell remain, the chiral bands stay separated from the 12 bands grown from the zero modes and keep Chern number -1 on the k_x planes, and the negative zero-mode bands take Chern number +1, so the total vanishes. With generic record contents no covariant term stays free. No chiral phase of the full lattice, no charged or Weyl fermion and no physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
@@ -42,8 +42,11 @@ This note goes to higher weight, on a supplied record pattern.
 So the clause and a covariant star term, one Admissibility neighbourhood
 wide, give chiral Majorana bands on a supplied record pattern. This is the
 first chiral content the campaign has found from covariant operators. The
-carving and its contents are fine-tuned: the phase needs exactly zero
-dangling fields.
+carving and its contents are fine-tuned: the net chirality needs exactly
+zero dangling fields.
+- **Why.** Dangling fields leave the chiral bands in place, still with
+  Chern number −1. But they turn the 12 zero modes into bands that carry
+  the opposite Chern number, +1. So the total cancels.
 
 ## Setting and decision points
 
@@ -175,22 +178,31 @@ So each surface carries one chiral Majorana mode, with opposite chirality
 on the two, as a Chern number of magnitude 1 on the `k_x` planes requires.
 These modes sit alongside the 12 decoupled bulk zero modes per cell. ∎
 
-## Theorem 7 — the phase needs zero dangling fields
+## Theorem 7 — dangling fields make the zero modes cancel the chirality
 
 The 12 zero modes per cell sit entirely on dangling `b` Majoranas, which the
 zero-field records leave decoupled.
-- **Adding dangling fields.** Give every dangling axis a field of about 0.1
-  through the clause, with random signs, and keep the star term as reduced
-  by the zero-field contents.
+- **Adding dangling fields.** Give every dangling axis a field through the
+  clause, with random signs and sizes between 0.5 and 1.5 times `ε`. Keep
+  the star term as reduced by the zero-field contents, at `λ = 2`. Take
+  `ε = 0.1` with three random draws, and `ε = 0.2`.
   - That couples the `b`'s in, leaving 2 exact zero modes per cell.
-  - The negative bands' Chern number on the `k_x` planes becomes 0.
+  - **The chiral bands survive.** The 12 bands grown from the zero modes
+    stay below the chiral bands. Refined over the zone, they reach 0.122,
+    0.079, 0.105 and 0.265, and the chiral bands start at 0.155, 0.113,
+    0.138 and 0.286. The ten negative chiral bands keep Chern number −1 on
+    the `k_x` planes.
+  - **The zero modes compensate.** The negative bands grown from the zero
+    modes carry Chern number +1 on the same planes. So all the negative
+    bands together have Chern number 0.
 - **Generic contents.** Open PR 9054's generic contents, a fixed direction
   projected orthogonal to kept axes, leave fields on the dangling axes.
   With them, no covariant odd star term of weight at most seven stays free
   on this carving.
 
-So the chiral phase needs the zero-field contents, which are realizable but
-fine-tuned. ∎
+So the net chirality of the ground state needs the zero-field contents,
+which are realizable but fine-tuned. Away from them the chiral bands remain,
+but the zero modes cancel their Chern number. ∎
 
 ## Theorem 8 — what fixes the handedness
 
@@ -224,6 +236,14 @@ So the record contents set the handedness. ∎
   - A coarse survey of the 16 realizable networks of open PR 9097 found
     candidates on 5. Refined checks of several showed gaps that vanish
     somewhere, with Chern numbers differing between planes.
+- **Other free directions.** A random search over the five active free
+  directions, with the largest string coefficient 1, 2 or 4, found coarse
+  (6³-grid) gaps up to twice this term's.
+  - Refined, the best gapped case has gap 0.044 and weak Chern numbers
+    `(+1, 0, 0)`. Its dangling-field test also gives compensation, with
+    the signs reversed.
+  - Several coarse candidates were gapless when refined, with Chern numbers
+    differing between `k_x` planes.
 
 ## What this means for the lanes
 
@@ -240,7 +260,8 @@ So the record contents set the handedness. ∎
   - The spin model's ground state is extensively degenerate, from the 12
     decoupled zero modes per cell.
   - The gap is small, 0.02 to 0.035 of `|K|`.
-  - The phase needs exactly zero dangling fields.
+  - The net chirality needs exactly zero dangling fields. Otherwise the
+    zero modes carry the opposite Chern number.
 - **Prior art.**
   - Kitaev (2006): a time-reversal-odd three-spin term gaps his model into
     a chiral phase.
@@ -261,7 +282,7 @@ The runner has 8 checks and all pass in about a minute.
 | The term | Free subspace 41, of which 5 act, all through the same 28 strings; 23 orbits of weights 5 and 7; non-free strings cancel to 1e-15; image of 27 Kitaev patterns plus the field at `(2,2,2)`. |
 | The chiral phase | The table above. |
 | Surface modes | 64 top and 31 bottom in-gap surface states, 4 others; signed crossings of ±0.01, top +1 and bottom −1. |
-| Zero fields needed | Zero modes all on dangling `b`'s; dangling fields of 0.1 leave 2 zero modes and Chern number 0; generic contents leave no free term. |
+| Zero modes compensate | Zero modes all on dangling `b`'s; with dangling fields of 0.1 (three draws) and 0.2, 2 zero modes remain, the chiral bands stay separated and keep −1, the zero-mode bands take +1, total 0; generic contents leave no free term. |
 | Window and handedness | Gap 3e-14, 0.0105, 0.0017 and 6e-17 at `λ = 0.5, 0.9, 8, 10`; without the field, gap 5e-18; `λ = −2` and uniform signs give `(+1, 0, 0)`. |
 
 ## Independent check

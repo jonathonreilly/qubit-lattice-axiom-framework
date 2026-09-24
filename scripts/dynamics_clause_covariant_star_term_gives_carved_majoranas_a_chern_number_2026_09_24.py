@@ -783,6 +783,53 @@ def chern_tilted(eps, p, kf, N=24):
 
 
 cx7 = [chern_tilted(0.1, 0, kf) for kf in (0.5, 2.5)]
+
+
+def chern_window(Hk, kf, lo, hi, N=24):
+    """Chern number on the k_x = kf plane of the bands with energies in (lo, hi); None if their count varies."""
+    ks = np.linspace(0, 2 * np.pi, N, endpoint=False)
+    vec = {}
+    for i1, k1 in enumerate(ks):
+        for i2, k2 in enumerate(ks):
+            w, V = np.linalg.eigh(Hk(np.array([kf, k1, k2])))
+            vec[(i1, i2)] = V[:, (w > lo) & (w < hi)]
+    if len({x.shape[1] for x in vec.values()}) != 1:
+        return None
+    tot = 0.0
+    for i1 in range(N):
+        for i2 in range(N):
+            q = [vec[(i1, i2)], vec[((i1 + 1) % N, i2)], vec[((i1 + 1) % N, (i2 + 1) % N)], vec[(i1, (i2 + 1) % N)]]
+            tot += np.angle(np.prod([np.linalg.det(q[j].conj().T @ q[(j + 1) % 4]) for j in range(4)]))
+    return tot / (2 * np.pi)
+
+
+def split_chern(eps, seed):
+    """With random dangling fields: the top of the 12 bands grown from the zero modes, the bottom of the chiral bands,
+    and on two k_x planes the Chern numbers of the negative zero-mode bands and of the negative chiral bands."""
+    r_ = np.random.default_rng(seed)
+    tl = r_.choice([1, -1], size=len(dangling_terms)) * r_.uniform(0.5, 1.5, size=len(dangling_terms))
+
+    def Hk(k):
+        A = np.zeros((nm, nm), dtype=complex)
+        add_terms(A, [(eps * t * cf, g1, g2) for (cf, g1, g2), t in zip(dangling_terms, tl)], k, 1.0, carv)
+        return H_of(uvals, ent, carv, np.asarray(k, float), 2.0) + 1j * A
+    half = nm // 2
+    band = lambda k, i: np.linalg.eigvalsh(Hk(k))[i]
+    ev = np.array([np.linalg.eigvalsh(Hk(k)) for k in grid7])
+    opts = {"xatol": 1e-7, "fatol": 1e-11, "maxiter": 1500}
+    top = max(-minimize(lambda k: -band(k, half + 5), grid7[i], method="Nelder-Mead", options=opts).fun
+              for i in np.argsort(-ev[:, half + 5])[:3])
+    bot = min(minimize(lambda k: band(k, half + 6), grid7[i], method="Nelder-Mead", options=opts).fun
+              for i in np.argsort(ev[:, half + 6])[:3])
+    cut = 0.5 * (top + bot)
+    cz = [chern_window(Hk, kf, -cut, -1e-7) for kf in (0.5, 2.5)]
+    cc = [chern_window(Hk, kf, -np.inf, -cut) for kf in (0.5, 2.5)]
+    return top, bot, cz, cc
+
+
+splits = {(eps, seed): split_chern(eps, seed) for eps, seed in ((0.1, 4), (0.1, 5), (0.1, 6), (0.2, 4))}
+split_ok = all(top < bot and all(c_ is not None and abs(c_ - 1) < 1e-6 for c_ in cz) and
+               all(c_ is not None and abs(c_ + 1) < 1e-6 for c_ in cc) for top, bot, cz, cc in splits.values())
 # generic contents (open PR 9054's rule: a fixed direction projected orthogonal to the kept axes of unrecorded
 # neighbours), which leave fields on the dangling axes: how many covariant terms stay free?
 gcontent = {}
@@ -821,12 +868,15 @@ for vi, orb in enumerate(VECS):
 g_bad = np.array([(car.image(g_pm[k_]) is None) if g_pm[k_] else False for k_ in g_keys])
 _, g_sv, _ = np.linalg.svd(g_A[g_bad])
 g_free = len(VECS) - int(np.sum(g_sv > 1e-9))
-check("the phase needs zero dangling fields: its zero modes sit on dangling b's, and tilted records of size 0.1 remove the Chern number",
+sp_txt = "; ".join(f"{eps}/{seed}: zero-mode bands to {top:.4f}, chiral from {bot:.4f}"
+                   for (eps, seed), (top, bot, cz, cc) in splits.items())
+check("dangling fields make the zero modes cancel the chirality: the chiral bands keep -1, the zero-mode bands take +1",
       zm.shape[1] == 12 and abs(b_weight - 12) < 1e-9 and nz7 < 12 and all(c is not None and abs(c) < 1e-6 for c in cx7)
-      and g_free == 0,
-      f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; with dangling fields of size 0.1 (random signs): "
-      f"exact zero modes {nz7}, Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; "
-      f"with open PR 9054's generic contents no covariant term stays free (free dimension {g_free})")
+      and split_ok and g_free == 0,
+      f"zero modes {zm.shape[1]}, weight on dangling b's {b_weight:.3f}; dangling fields (size/draw) leave {nz7} exact zero modes, "
+      f"total Chern numbers on two k_x planes {[float(round(c, 6)) + 0.0 for c in cx7]}; {sp_txt}; in every case the chiral "
+      f"bands keep -1 and the negative zero-mode bands carry +1 on both planes; with open PR 9054's generic contents no "
+      f"covariant term stays free (free dimension {g_free})")
 
 # ------------------------------------------------ 8. the window, the field, and the handedness
 def lowest_at(lam, TT=None, drop_b=False):

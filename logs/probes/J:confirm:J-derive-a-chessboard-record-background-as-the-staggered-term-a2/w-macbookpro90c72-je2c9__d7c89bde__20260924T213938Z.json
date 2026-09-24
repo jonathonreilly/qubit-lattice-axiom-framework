@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-chessboard-record-background-as-the-staggered-term-a2",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-je2c9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-chessboard-record-background-as-the-staggered-term/referee_w-macbookpro90c72-je2c9/check.py",
+ "seed": 85978,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d7c89bde",
+ "started_utc": "20260924T213938Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed no-go at the premise. Block 17's chessboard is the reflection-positivity estimate, and its Gibbs states agree across sites; every site carries a value, so a presence-sensitive coin scalar is a uniform offset. If a sublattice background is supplied by other means, the eight zeros have energies c/2 +- sqrt(c^2/4 + (2a(3-2|n|))^2), the two branches multiply to -lambda^2, and a chessboard of clocks is felt only through the on-site term with m = (c/2) kappa^(1/4). The 4^3 floating-point spectrum was not rebuilt."
+ },
+ "review": "Independent check of block 17's note and the conditional spectrum: the chessboard name is the reflection-positivity estimate, agreement is not a staggered background, and if a sublattice is supplied the zeros sit at c/2 +- sqrt(c^2/4+(2a(3-2|n|))^2) with clock mass (c/2) kappa^(1/4).",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "d226b3e5f96c578294bdfde585c701dd7083d89800e7e27da5c212533ed267dc",
+ "stdout_tail": "its order is agreement of values, and the note has no sublattice or staggered pattern\nPASS P2 uniform offset: a record at every site adds the same c; at the eight zeros the coin vector vanishes and the level is only shifted\nPASS C1 masses: at the eight zeros the energies are c/2 +- sqrt(c^2/4 + (2a(3-2|n|))^2); paired momenta share the splitting; a=0 gives |c|/2; E+ E- = -lambda^2\nPASS C3 rates: a chessboard of clocks has delta = (log kappa)/4, so the on-site mass is (c/2) kappa^(1/4), and (1+epsilon) e^{delta epsilon} equals (1+epsilon) e^delta\nPASS C4 covariance: the chessboard sign is invariant under all 48 cube symmetries and flips under every odd translation\nSUMMARY: confirmed no-go at the premise. Block 17's chessboard is the reflection-positivity estimate, and its Gibbs states agree across sites; every site carries a value, so a presence-sensitive coin scalar is a uniform offset. If a sublattice background is supplied by other means, the eight zeros have energies c/2 +- sqrt(c^2/4 + (2a(3-2|n|))^2), the two branches multiply to -lambda^2, and a chessboard of clocks is felt only through the on-site term with m = (c/2) kappa^(1/4). The 4^3 floating-point spectrum was not rebuilt.\nHIT: confirmed - block 17 has no chessboard record background; its ordered states are translation-invariant agreement, so the supplied clause gives no staggered term. The conditional spectrum, filling identity, and clock mass m = (c/2) kappa^(1/4) hold if such a background is supplied otherwise\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je2c9",
+  "at_utc": "20260924T213956Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed no-go: block 17's chessboard is the estimate, not a staggered record background. Conditional zeros are c/2 +- sqrt(c^2/4+(2a(3-2|n|))^2) and the clock mass is (c/2) kappa^(1/4).",
+  "by": "w-macbookpro90c72-je2c9",
+  "at_utc": "20260924T213956Z"
+ }
+}

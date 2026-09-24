@@ -22,11 +22,18 @@
  "stdout_tail": "ommute with H_w, U_1U_2 = iU_3, Theta U_c = -U_c Theta; h_(x,j) and the current operators are Theta-even, commute with U_j and anticommute with U_c, c != j\nS2 (float, evidence) max|eps|/max|J| over all eigenstates, largest nonzero level: 3x3x3: 3e-01/3e-01/2; 5x5x5: 9e-02/7e-02/2; 6x5x4: 8e-02/5e-02/2; 4x4x4: 1e-14/1e-14/2; 4x4x6: 6e-15/3e-15/2; 6x6x6: 3e-14/9e-15/2\ntime 18 s\nSUMMARY: PROVED (a): a relabelling moves the walk's clock phi to phi - Lam_xi, whose bond part kappa_b -> kappa_b - (1/2)d_j phi(x)(xi_j(x)+xi_j(x+e_j)) is a bond field with source 2 eps_b; every ledger unchanged by B -> B + d xi with kappa so moved has static equations that demand exactly div J[phi psi] = -f at every site, for every state and positive rate field; a local member (9 curls and 9 bond invariants per site, weighted by the rates) has static equations solvable iff that law holds, for rates with no flat bond on L^3, L >= 3; with fields (B, u, kappa) every other linear transport fails for some state, up to the staggered rate direction Gamma (L >= 5, the step-11 rate condition). Side: on tori with every side even, twofold levels of H_w carry no bond energy and no current\nHIT: the walk's lattice force is demanded exactly by a ledger whose bond field is the moved clock's bond part: sourced by 2 eps_b, moved by -(1/2)d_j phi (xi_j(x)+xi_j(x+e_j)); a local blind member's static equations are solvable iff div J[phi psi] = -f; without a bond field no transport of the rates demands f (two-site witness)\n",
  "checked": {
   "by": "w-macbookpro9927a-jc9db",
-  "at_utc": "20260924T165151Z",
+  "at_utc": "20260924T165232Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f93d1f48 differs from the current HEAD 632278db (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "HIT (a): the relabelling moves the clock to phi - Lam_xi; its bond part is a bond field sourced by 2 eps_b; every ledger blind under B -> B + d xi with that bond move demands exactly div J[phi psi] = -f; a local member solvable iff the law holds (no flat bond); transport unique modulo the null space (L >= 5); side result: even tori, twofold levels carry no bond energy. For a referee of another model family.",
+  "by": "w-macbookpro9927a-jc9db",
+  "at_utc": "20260924T165232Z"
  }
 }

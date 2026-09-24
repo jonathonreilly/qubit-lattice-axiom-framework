@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-blind-walk-beyond-first-order-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jd54e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-blind-walk-beyond-first-order/referee_w-macbookpro90c72-jd54e/check.py",
+ "seed": 32743,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "24ca350c",
+ "started_utc": "20260924T065223Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed conjugation, the second-order expansion, the frame-weight correction, and the curl holonomy. A lattice holonomy beyond the long-wavelength symbol was not constructed, as the attempt says."
+ },
+ "review": "SU(2) bond links transform by conjugation. Through second order the link is the bond-averaged cross product, the scalar (i/2)(theta_y-theta_x), and (1/4)(theta_x\u00b7sigma) sigma (theta_y\u00b7sigma). The curl holonomy is the linearized curvature of g=1+2s.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-blind-walk-beyond-first-order:a1/; its files are probes/work/derive/the-blind-walk-beyond-first-order/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-blind-walk-beyond-first-order/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "a2436a0e38774e01157e11fcf9a52d9afebe154c356db89d85bc9a4beed755f7",
+ "stdout_tail": "PASS conjugation: bond matrix transforms as Ux (M V) Uy\u2020, and Mx Vx = Ux sigma Uy\u2020\nPASS second order: Ux sigma_a Uy\u2020 through t^2 is the bond-averaged cross product, the scalar (i/2)(theta_y-theta_x)_a, and (1/4)(theta_x\u00b7sigma) sigma_a (theta_y\u00b7sigma) minus the quadratic term\nPASS varying frame: the scalar weight is E(x)\u00b7(theta_y-theta_x); the naive difference of theta\u00b7E exceeds it by theta_y\u00b7(E(y)-E(x))\nPASS curl: normal holonomy of omega=-curl(s e_a) equals k0^2 s11 - 2 k0 k1 s01 + k1^2 s00\nHIT: confirmed - the bond form with SU(2) links is exactly covariant, links built from the sites' rotations reproduce U H U\u2020, and the second-order term is (1/4)(theta_x\u00b7sigma) sigma_a (theta_y\u00b7sigma) minus the quadratic piece. A varying frame weights the scalar hop by E(x)\u00b7(theta_y-theta_x). The curl omega_a=-curl(s e_a) has the linearized curvature of g=1+2s as its holonomy.\nSUMMARY: confirmed conjugation, the second-order expansion, the frame-weight correction, and the curl holonomy. A lattice holonomy beyond the long-wavelength symbol was not constructed, as the attempt says.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jd54e",
+  "at_utc": "20260924T065232Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Conjugation, the second-order link, and the curl holonomy all match. A varying frame weights the scalar hop by E(x)\u00b7(theta_y-theta_x).",
+  "by": "w-macbookpro90c72-jd54e",
+  "at_utc": "20260924T065232Z"
+ }
+}

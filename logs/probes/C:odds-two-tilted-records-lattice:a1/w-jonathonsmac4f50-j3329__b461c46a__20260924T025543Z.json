@@ -1,0 +1,32 @@
+{
+ "task": "C:odds-two-tilted-records-lattice:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j3329",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/compute/odds-two-tilted-records-lattice/w-jonathonsmac4f50-j3329/run.py",
+ "seed": 18543,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b461c46a",
+ "started_utc": "20260924T025543Z",
+ "elapsed_s": 1735.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "sphere-menu odds, two tilted records: far sideways lean follows sum_i tilt_i h_i (reaching probabilities of the pair; max rel. deviation 0.083) rather than the sum of one-record fields (0.179); beta 1: E_int like +8.67e-01 +4.62e-01 +2.98e-01 +1.57e-01, unlike -5.08e-01 -3.94e-01 -2.77e-01 -1.53e-01 (opposite signs at every d: True), aligned -3.17e-02 -2.39e-03 -1.81e-04 -1.04e-06; beta 0.6: E_int like +7.47e-01 +4.52e-01 +2.95e-01 +1.55e-01, unlike -4.70e-01 -3.99e-01 -2.92e-01 -1.59e-01 (opposite signs at every d: True), aligned -1.68e-01 -4.00e-02 -9.77e-03 -6.00e-04"
+ },
+ "review": "Block 103's sphere-menu odds solver (probes/lib), boxes 21^3 at beta=1 and 17^3 at beta=0.6, records tilted 90 degrees (like/unlike/perp azimuths) and aligned, d = 2,3,4,6: far sideways lean vs the linear boundary-value prediction sum_i tilt_i h_i (hitting probabilities, massless turn mode) and vs the sum of one-record fields; summed site log normalizer E_int of the pair minus the singles vs d. Same-family provenance.",
+ "what": "WORKED COMPUTATION (independent run 1 of 2): SETTING (possibility's odds under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; block 42's reading that an unformed site's odds are a condition for its neighbours, pi_x(s) ~ prod_y (K1 pi_y)(s), a record a point mass; open PRs #8919 (block 103: possibility's odds on the sphere menu - past the massless point beta0 in (5085, 5086)/10^4 the turn of the lean has per-neighbour eigenvalue exactly 1/6, fed by content off the lean (beta s_perp.s0_perp), never by a count; bodies charge it by capacity; vacancies at the neutral scale), #8548 (block 42: the reading; T4(b) the content-blind normalizer; T5 seven outcomes; T6 boundary values), #8547 (block 41: T4 the symmetry lemma and its quadratic two-tilt model), #8153 (block 19: the sphere menu), #8546 (block 40: the neutral scale), #8866 (block 96: waves need a coupling time reversal flips); decision record #8572 (seventeenth addendum); ALL clauses supplied, nothing adopted; read the notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). With probes/lib/odds_sphere_lattice.py (block 103's nonlinear odds; import solve()): two records with contents tilted 90 degrees off the lean at separations d = 2, 3, 4, 6 along x on a 21^3 box at beta = 1 (and beta = 0.6 on 17^3), relative azimuth 0 (like), pi (unlike), pi/2: (i) the sideways lean at far sites against the sum of the one-record fields and against the pair's reaching probability; (ii) the site log normalizer (content-averaged weight) summed over all unformed sites, minus twice the one-record value, against d for like and unlike pairs; (iii) the same with records aligned with the lean. EXPECTATION: far fields follow the pair's capacity; the d-dependent weight differs in sign between like and unlike tilts and vanishes for aligned records. HIT if like and unlike do not differ in sign, or aligned records show a d-dependence beyond the massive range. DELIVERABLE in your unit worktree: probes/work/compute/odds-two-tilted-records-lattice/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/odds-two-tilted-records-lattice/<name>/run.py\"",
+ "stdout_sha256": "1f7c5316dfd9b5de0438bc64cdc04636268690833d52e250f15674e6e388cc8e",
+ "stdout_tail": "275) | deviation / largest far field, from sum_i tilt_i h_i: 0.037, from the sum of the one-record fields: 0.028 | E_int = +3.490878e-03\nN   d=4 aligned: E_int = -9.770925e-03\nN   d=6 like    far sideways lean (pair) (+0.0749,-0.0000) (+0.0901,-0.0000) (+0.0446,-0.0000) | deviation / largest far field, from sum_i tilt_i h_i: 0.010, from the sum of the one-record fields: 0.025 | E_int = +1.549300e-01\nN   d=6 unlike  far sideways lean (pair) (-0.0641,-0.0000) (-0.0000,-0.0000) (-0.0000,-0.0000) | deviation / largest far field, from sum_i tilt_i h_i: 0.008, from the sum of the one-record fields: 0.026 | E_int = -1.594301e-01\nN   d=6 perp    far sideways lean (pair) (+0.0063,+0.0697) (+0.0463,+0.0463) (+0.0229,+0.0229) | deviation / largest far field, from sum_i tilt_i h_i: 0.023, from the sum of the one-record fields: 0.014 | E_int = -1.550012e-03\nN   d=6 aligned: E_int = -5.996769e-04\nN elapsed 1735 s\n\nSUMMARY: sphere-menu odds, two tilted records: far sideways lean follows sum_i tilt_i h_i (reaching probabilities of the pair; max rel. deviation 0.083) rather than the sum of one-record fields (0.179); beta 1: E_int like +8.67e-01 +4.62e-01 +2.98e-01 +1.57e-01, unlike -5.08e-01 -3.94e-01 -2.77e-01 -1.53e-01 (opposite signs at every d: True), aligned -3.17e-02 -2.39e-03 -1.81e-04 -1.04e-06; beta 0.6: E_int like +7.47e-01 +4.52e-01 +2.95e-01 +1.55e-01, unlike -4.70e-01 -3.99e-01 -2.92e-01 -1.59e-01 (opposite signs at every d: True), aligned -1.68e-01 -4.00e-02 -9.77e-03 -6.00e-04\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3329",
+  "at_utc": "20260924T032438Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

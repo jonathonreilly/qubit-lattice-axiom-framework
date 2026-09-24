@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:strong-field-turning-by-a-clump:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro9927a-j72ca",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/strong-field-turning-by-a-clump/w-macbookpro9927a-j72ca/check.py",
+ "seed": 14761,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "455d917f",
+ "started_utc": "20260924T015241Z",
+ "elapsed_s": 6.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED for the stated ray law with u = -A/r: rays are those of the index e^{A/r}; (b) a ray is captured iff its impact parameter is below e A (the circular ray sits at r = A); (a) the turn is chi = 2 int_0^1 dy/((1 + W0(-yA/b))sqrt(1-y^2)) - pi = sum_n (sqrt(pi) n^n/n!) G((n+1)/2)/G(n/2+1) (A/b)^n = 2A/b + pi(A/b)^2 + 6(A/b)^3 + 4pi(A/b)^4 + ..., convergent exactly for b > eA, with chi = -log(1 - eA/b) + C + o(1) at the threshold"
+ },
+ "review": "Rays of the stated law are those of the index e^{A/r} (Bouguer invariant from x x v e^{-2u}); capture iff b < eA (r e^{A/r} has its minimum eA at the circular ray r = A); the turn at all orders is chi = 2 int_0^1 dy/((1+W0(-yA/b)) sqrt(1-y^2)) - pi = sum_n sqrt(pi) n^n G((n+1)/2)/(n! G(n/2+1)) (A/b)^n = 2A/b + pi(A/b)^2 + 6(A/b)^3 + ..., convergent exactly for b > eA, with chi = -log(1 - eA/b) - 0.46582 at the threshold; the ray ODE reproduces it to 1e-6",
+ "what": "DERIVATION, independent attempt 2 of 2: The clocked walk near a condensed clump: capture and turning beyond first order. SETTING (the moving-records column of the admissibility induced-law campaign, under the owner's reading: records move, one per site at a time; possibility shifts at the site as the neighbourhood changes; open PRs #8860 (block 95, records on their own clocks attract with a 1/r potential equal both ways) #8866 (block 96, waves need a coupling time reversal flips) #8872 (block 97, the sign: a record that cannot read the field from its own motion hops on its own clock) #8878 (block 98, a wave passing a record turns by twice the pair energy); the clock clause #8568 (block 53, with its 2026-09-23 corrigendum on the mean velocity), the walk #8570 (block 54), the kept books #8571 (block 55), the delay #8578 (block 57); decision record #8572 (tenth to thirteenth addenda); ALL clauses supplied, nothing adopted; read the relevant notes on their PR branches before starting - git fetch origin <branch>; git show origin/<branch>:<note>). TASK: block 95's control condenses 96 records into one clump whose central clocks run at e^-11 of the mean; block 98 gives the first-order turn 2|U(b)|. For rays of E = w(x)|sin k| with u = -A/r (w = e^u), exactly: (a) the turn angle at all orders for long waves (the ray law dv/dt = -w^2 grad u + 2(v.grad u)v with |v| = w), as a function of A/b; (b) whether rays can be captured (a critical impact parameter) and its value in units of A. HIT: (a) or (b) exact. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/strong-field-turning-by-a-clump/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes on the PR branches named above (git fetch origin <branch>; git show origin/<branch>:<note>; find them with gh pr view <n> --json files,headRefName); any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/strong-field-turning-by-a-clump/<name>/check.py\"",
+ "stdout_sha256": "0059a3ad5b94548d0e298b56e92049254a1deea9421a6fb004655cd69b7dc74b",
+ "stdout_tail": "oduces the exact turn at b = 50A...3A (to 1e-6; the series agrees with the integral to 1e-9) and near the threshold (2.75A, 2.72A: loops of 3.6 and 7.3 rad), and every ray with b < eA = 2.71828A falls inside r = A/4\n     [numerical] n c_n e^-n = 0.96726, 0.99667, 0.99967 (-> 1); chi + log(1 - eA/b) at 1 - eA/b = 1e-04: -0.465488, 1e-06: -0.465813, 1e-08: -0.465817; C = sum_n (c_n e^-n - 1/n) = -0.4658175633 = 2 int_0^(pi/2) [1/(1+W0(-sin t/e)) - cos t/(2(1-sin t))] dt - pi + 2 log 2 = -0.4658175633\nok   K: the series converges exactly for b > eA and diverges at b = eA (positive terms, Tonelli, and the integrand ~ 1/(2(1-y)) at y -> 1 when b = eA); near the threshold chi = -log(1 - eA/b) + C + o(1) with C = sum_n (c_n e^-n - 1/n)\nchecks: 6 ok, 0 fail\nSUMMARY: PROVED for the stated ray law with u = -A/r: rays are those of the index e^{A/r}; (b) a ray is captured iff its impact parameter is below e A (the circular ray sits at r = A); (a) the turn is chi = 2 int_0^1 dy/((1 + W0(-yA/b))sqrt(1-y^2)) - pi = sum_n (sqrt(pi) n^n/n!) G((n+1)/2)/G(n/2+1) (A/b)^n = 2A/b + pi(A/b)^2 + 6(A/b)^3 + 4pi(A/b)^4 + ..., convergent exactly for b > eA, with chi = -log(1 - eA/b) + C + o(1) at the threshold\nHIT: for rays of E = w|sin k| at long waves with u = -A/r the critical impact parameter is exactly e A (circular ray at r = A), and the turn at all orders is chi = sum_n (sqrt(pi) n^n/n!) G((n+1)/2)/G(n/2+1) (A/b)^n = 2 int_0^1 dy/((1 + W0(-yA/b)) sqrt(1-y^2)) - pi, convergent exactly for b > eA\n",
+ "checked": {
+  "by": "w-macbookpro9927a-j72ca",
+  "at_utc": "20260924T015301Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

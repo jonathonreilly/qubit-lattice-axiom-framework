@@ -1,0 +1,74 @@
+{
+  "external/FIFTH_CHECKLIST_LINK_REPAIR.json": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTH_CHECKLIST_LINK_REPAIR.json",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/external/FIFTH_CHECKLIST_LINK_REPAIR.json",
+    "sha256": "cca6a891015ce1c8bd3e94948f234346fd93cea4d969ff33a96e2f365eed5511",
+    "bytes": 808
+  },
+  "external/FIFTH_PUBLICATION_FINAL_CACHE_EXECUTION.json": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTH_PUBLICATION_FINAL_CACHE_EXECUTION.json",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/external/FIFTH_PUBLICATION_FINAL_CACHE_EXECUTION.json",
+    "sha256": "5bf91ca5ac8215584c41f824504e6b001833ad41dc752fd0b933f8c30e8ff4ce",
+    "bytes": 18001
+  },
+  "external/FIFTH_PUBLICATION_FINAL_SOURCES.json": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTH_PUBLICATION_FINAL_SOURCES.json",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/external/FIFTH_PUBLICATION_FINAL_SOURCES.json",
+    "sha256": "2a730593ce7480ed6470ddc3b40a403e923583083817e0c1f3168302918ab5d8",
+    "bytes": 1168
+  },
+  "publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md",
+    "sha256": "43c7587af4011778660406d196035965df858061a7da0581b780c5ebefe58045",
+    "bytes": 17231
+  },
+  "publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md",
+    "sha256": "0bfbbea87a4f8ba0a9cae328c3948d2ced3a8b45d2ee5152ec9dbfa99adfae77",
+    "bytes": 1071
+  },
+  "publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+    "bytes": 30471
+  },
+  "publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "bytes": 17317
+  },
+  "publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "bytes": 10011
+  },
+  "publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "bytes": 14902
+  },
+  "publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt",
+    "sha256": "70d919e87a42fe1d84fb02e2a5a3f4fe63e3530d6f811afe58c97d25bb48a9b4",
+    "bytes": 16733
+  },
+  "publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json",
+    "sha256": "56cffe771486b68cc6b76ab2ebea0a9839dfdca5fcf893ca7e0e46d36b8eb32d",
+    "bytes": 11313
+  },
+  "publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py": {
+    "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py",
+    "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/LINK_REPAIR_sources/publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py",
+    "sha256": "5a20a84d626d5fff24e45475ed7166831bbb519a48298f3598229c7286f1e7af",
+    "bytes": 15909
+  }
+}

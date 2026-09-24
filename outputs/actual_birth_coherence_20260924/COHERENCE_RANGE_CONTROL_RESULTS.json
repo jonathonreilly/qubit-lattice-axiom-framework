@@ -117,7 +117,7 @@
             "resource_lower_from_exact_birth": 5834.006375601439
           }
         ],
-        "elapsed_seconds": 0.3602752089500427
+        "elapsed_seconds": 0.36143433302640915
       },
       {
         "epsilon": 0.05,
@@ -166,7 +166,7 @@
             "resource_lower_from_exact_birth": 38774.621173107014
           }
         ],
-        "elapsed_seconds": 0.3236911669373512
+        "elapsed_seconds": 0.3404679161030799
       },
       {
         "epsilon": 0.03,
@@ -215,7 +215,7 @@
             "resource_lower_from_exact_birth": 297788.6960363604
           }
         ],
-        "elapsed_seconds": 0.36944437492638826
+        "elapsed_seconds": 0.372918542008847
       }
     ],
     "scope": "Author reuse of complete S=1 physical matrices, actual canonical preparation and original marks. Varying epsilon at fixed S is a finite coefficient control, not the joint spin limit."

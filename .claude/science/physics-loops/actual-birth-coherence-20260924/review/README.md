@@ -17,7 +17,7 @@ saved inventory; the root's six full ledger reads remain author-reported scope.
 
 The root read all complete reports, checker code, results and logs, inspected
 the full mathematical publication diff, and reverified all 73 PRE/POST/final
-seal members. The final author runner passed in 1.856 seconds with no warnings
+seal members. The first publication runner passed in 1.856 seconds with no warnings
 or traceback in its entire merged output. Fixed-S cube and finite resource
 controls corroborate specific identities; the written proof supplies uniform
 quantifiers. These evidence types are not interchangeable PASS counts.
@@ -38,3 +38,14 @@ Vocabulary, compilation, source hashes, path allowlist, citation manifest and
 exact-tree receipt are mechanical checks. Combined pipeline, strict audit
 lint, changed-evidence landing and retained audit remain pending. This task
 does not merge, apply audit verdicts or adopt premises.
+
+The exact-tree preflight initially rejected a local Markdown link outside its
+docs-only citation resolver. The real checklist itself was unchanged. The
+note now links to that same checklist on this publication branch. The unchanged
+primary runner was genuinely rerun in 1.787 seconds against the new note bytes.
+The separate LINK_REPAIR_COMPARISON and seal verify exactly one URL change,
+unchanged scientific results apart from timings, and fresh fingerprint/cache
+bytes. The root read its complete script, logs, output and diff, and verified
+all 22 additional seal members. FINAL_EXECUTION.json describes this repaired
+revision. Prior frozen manifests, outputs and the failed preflight remain
+preserved externally; no gate or scientific premise was changed.

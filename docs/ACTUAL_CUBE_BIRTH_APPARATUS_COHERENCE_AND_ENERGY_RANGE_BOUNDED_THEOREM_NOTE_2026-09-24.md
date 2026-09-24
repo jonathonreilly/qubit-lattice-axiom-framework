@@ -532,7 +532,7 @@ claim is made.
 
 ## No-Go Discipline Gate
 
-The committed [N1-N8 checklist](../.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md)
+The committed [N1-N8 checklist](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/codex/mobile-record-birth-coherence-20260924/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md)
 records real attack families and positive escapes, the collapsed resource
 relations, hidden-premise and prior-residual checks, and the remaining formal
 packet limitation. It does not invent prior retained authority or claim a

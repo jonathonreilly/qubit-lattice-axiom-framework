@@ -1,0 +1,7 @@
+PASS laplacian: on the 3^3 torus, sum (phi_x-phi_y)^2 = phi Lambda phi, and Lambda kills the constant
+PASS 4-cube coefficient: 56 nonzero modes, beta = -(24+24*sqrt(2)+8*sqrt(3))/192, c = (3+3*sqrt(2)+sqrt(3))/48
+PASS bond algebra: phi_x phi_y = (w_x+w_y)/2 - (phi_x-phi_y)^2/2, and the difference is sqrt(w_x w_y)*4*sinh^2(du/4); c=-beta/2>0
+PASS variational sea: on 4^3, E_fix equals beta times the bond sum for a constant and a varying field, and the re-optimised sea lies at or below it
+PASS line and cube: the ring mean tends to 2/pi and the clocked sum matches; midpoint I=1.19380, c=I/6=0.19897
+HIT: confirmed - the filled lower band of the rate-independent walk, held fixed and then clocked, has energy beta * sum_bonds phi_x phi_y for every rate field. On the 4^3 torus c=-beta/2=(3+3*sqrt(2)+sqrt(3))/48. The identity rewrites this as 3 beta sum w + c sum (phi_x-phi_y)^2. The sea that re-optimises lies at or below that energy.
+SUMMARY: confirmed the Laplacian identity, the 4^3 closed form, the sinh rewriting, the 4^3 variational comparison, and the ring limit 2/pi. The 6^3 sample and the quoted gamma were not rebuilt; a 48^3 midpoint gives I in (1.19, 1.20). Holding the modes and dropping the volume term are the attempt's supplied clauses.

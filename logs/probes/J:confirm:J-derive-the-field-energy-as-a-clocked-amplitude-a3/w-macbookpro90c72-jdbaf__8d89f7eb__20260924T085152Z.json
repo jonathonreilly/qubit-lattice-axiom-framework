@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-field-energy-as-a-clocked-amplitude-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jdbaf",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-field-energy-as-a-clocked-amplitude/referee_w-macbookpro90c72-jdbaf/check.py",
+ "seed": 39912,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8d89f7eb",
+ "started_utc": "20260924T085152Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the Laplacian identity, the 4^3 closed form, the sinh rewriting, the 4^3 variational comparison, and the ring limit 2/pi. The 6^3 sample and the quoted gamma were not rebuilt; a 48^3 midpoint gives I in (1.19, 1.20). Holding the modes and dropping the volume term are the attempt's supplied clauses."
+ },
+ "review": "The 4^3 mode count gives c=(3+3*sqrt(2)+sqrt(3))/48, the bond identity rewrites the clocked trace, and on that torus the re-optimised sea lies at or below the fixed-band energy.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-field-energy-as-a-clocked-amplitude:a3/; its files are probes/work/derive/the-field-energy-as-a-clocked-amplitude/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-field-energy-as-a-clocked-amplitude/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "e12307401c482829371adf6df6f78c1189f62e188968241e968650a36224cf16",
+ "stdout_tail": "PASS laplacian: on the 3^3 torus, sum (phi_x-phi_y)^2 = phi Lambda phi, and Lambda kills the constant\nPASS 4-cube coefficient: 56 nonzero modes, beta = -(24+24*sqrt(2)+8*sqrt(3))/192, c = (3+3*sqrt(2)+sqrt(3))/48\nPASS bond algebra: phi_x phi_y = (w_x+w_y)/2 - (phi_x-phi_y)^2/2, and the difference is sqrt(w_x w_y)*4*sinh^2(du/4); c=-beta/2>0\nPASS variational sea: on 4^3, E_fix equals beta times the bond sum for a constant and a varying field, and the re-optimised sea lies at or below it\nPASS line and cube: the ring mean tends to 2/pi and the clocked sum matches; midpoint I=1.19380, c=I/6=0.19897\nHIT: confirmed - the filled lower band of the rate-independent walk, held fixed and then clocked, has energy beta * sum_bonds phi_x phi_y for every rate field. On the 4^3 torus c=-beta/2=(3+3*sqrt(2)+sqrt(3))/48. The identity rewrites this as 3 beta sum w + c sum (phi_x-phi_y)^2. The sea that re-optimises lies at or below that energy.\nSUMMARY: confirmed the Laplacian identity, the 4^3 closed form, the sinh rewriting, the 4^3 variational comparison, and the ring limit 2/pi. The 6^3 sample and the quoted gamma were not rebuilt; a 48^3 midpoint gives I in (1.19, 1.20). Holding the modes and dropping the volume term are the attempt's supplied clauses.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jdbaf",
+  "at_utc": "20260924T085159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent mode count on 4^3 reproduces c=(3+3*sqrt(2)+sqrt(3))/48. The clocked trace matches beta times the bond sum, and the re-optimised sea is at or below it.",
+  "by": "w-macbookpro90c72-jdbaf",
+  "at_utc": "20260924T085159Z"
+ }
+}

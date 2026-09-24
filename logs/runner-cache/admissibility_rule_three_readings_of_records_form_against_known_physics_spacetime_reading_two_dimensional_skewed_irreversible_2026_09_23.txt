@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_three_readings_of_records_form_against_known_physics_spacetime_reading_two_dimensional_skewed_irreversible_2026_09_23.py
 runner_sha256: 8542fac8ea051de84b7bf45dbf11ed6c04a9af2c17648ea2f35fe0c077f93e6c
-input_fingerprint_sha256: d32aa2a4d3e7b58ecf7aad00d45d6bdb5b21d8fddb9edbc85e42a0b2dc44ccf9
+input_fingerprint_sha256: d20834da82d53cf73cfb9eda27fcca45eab7d5cd3a8f5472a60897ffad884666
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.49
+elapsed_sec: 0.81
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

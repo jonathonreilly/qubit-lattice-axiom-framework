@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-isotropic-streaming-clause-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je5f4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/isotropic-streaming-clause/referee_w-macbookpro90c72-je5f4/check.py",
+ "seed": 50583,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e2081547",
+ "started_utc": "20260924T114943Z",
+ "elapsed_s": 9.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed the sphere moments, the isotropy line, the drift, the potential cancellation, the capture spreads sqrt(3), 1.153 and 1.330, and the 3^3 balance. The strong-law step from flux to a pointwise shadow density is the attempt's assumption."
+ },
+ "review": "Shell sums confirm mean drift kappa s and isotropy exactly on lambda1 = lambda2 + (8/3) lambda3. The 3^3 census balances with exchange. Capture stays anisotropic; the strong-law shadow density is assumed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:isotropic-streaming-clause:a1/; its files are probes/work/derive/isotropic-streaming-clause/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/isotropic-streaming-clause/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7d269bfaec6503eee2e8d77e66c6fe248f47649004f630d3b4130e67de0c473f",
+ "stdout_tail": "at line alpha=(3/4)lambda2+lambda3, beta=lambda2/8+lambda3/6, D_n=(5/4)lambda2+(5/3)lambda3\nPASS drift: each opposite pair contributes (s\u00b7dhat) d, and the mean displacement is kappa s with kappa = lambda1 + 2*sqrt(2)*lambda2 + 4*lambda3/sqrt(3)\nPASS potential: away from the origin, grad(1/r) is divergence-free and each component is harmonic, so both streaming terms vanish\nPASS capture: closed capture matches the 26-neighbour sum; on the isotropy line body exceeds axis by -2*sqrt(2) - 1 + sqrt(3) + sqrt(6)*lambda2+-2/3 + 4*sqrt(3)/3*lambda3; spreads are sqrt(3), 1.1530, 1.3301\nPASS census: with exchange, unbalanced counts are 0 on 11700, 12636 and 23400 configurations; without exchange, 7290 of 12636 fail. The shell rule reverses under reflection\nHIT: confirmed - the forward-only shell rule has mean displacement kappa s with one constant, and its fourth-rank moment is isotropic exactly when lambda1 = lambda2 + (8/3) lambda3. On that line the streaming term is (3/2)[alpha Lap g + 2 beta grad div g] and it vanishes for g=grad(1/r). The uniform product measure balances for every rate table tested, with exchange. The capture rate is never constant on this family: on the isotropy line a body diagonal is captured faster than an axis.\nSUMMARY: confirmed the sphere moments, the isotropy line, the drift, the potential cancellation, the capture spreads sqrt(3), 1.153 and 1.330, and the 3^3 balance. The strong-law step from flux to a pointwise shadow density is the attempt's assumption.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je5f4",
+  "at_utc": "20260924T115000Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Shell sums and the 3^3 census confirm the isotropy line and stationarity. The strong-law shadow density stays assumed.",
+  "by": "w-macbookpro90c72-je5f4",
+  "at_utc": "20260924T115000Z"
+ }
+}

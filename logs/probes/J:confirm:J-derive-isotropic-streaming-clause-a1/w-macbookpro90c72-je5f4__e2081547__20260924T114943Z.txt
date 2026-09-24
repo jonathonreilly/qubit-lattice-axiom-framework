@@ -1,0 +1,8 @@
+PASS sphere: <|s.n|>=1/2, <s_n^2 |s.n|>=1/4, <s_transverse^2 |s.n|>=1/8, and the odd part of (s.n) averages to 0
+PASS moment: T is isotropic iff lambda1 = lambda2 + (8/3) lambda3; on that line alpha=(3/4)lambda2+lambda3, beta=lambda2/8+lambda3/6, D_n=(5/4)lambda2+(5/3)lambda3
+PASS drift: each opposite pair contributes (s·dhat) d, and the mean displacement is kappa s with kappa = lambda1 + 2*sqrt(2)*lambda2 + 4*lambda3/sqrt(3)
+PASS potential: away from the origin, grad(1/r) is divergence-free and each component is harmonic, so both streaming terms vanish
+PASS capture: closed capture matches the 26-neighbour sum; on the isotropy line body exceeds axis by -2*sqrt(2) - 1 + sqrt(3) + sqrt(6)*lambda2+-2/3 + 4*sqrt(3)/3*lambda3; spreads are sqrt(3), 1.1530, 1.3301
+PASS census: with exchange, unbalanced counts are 0 on 11700, 12636 and 23400 configurations; without exchange, 7290 of 12636 fail. The shell rule reverses under reflection
+HIT: confirmed - the forward-only shell rule has mean displacement kappa s with one constant, and its fourth-rank moment is isotropic exactly when lambda1 = lambda2 + (8/3) lambda3. On that line the streaming term is (3/2)[alpha Lap g + 2 beta grad div g] and it vanishes for g=grad(1/r). The uniform product measure balances for every rate table tested, with exchange. The capture rate is never constant on this family: on the isotropy line a body diagonal is captured faster than an axis.
+SUMMARY: confirmed the sphere moments, the isotropy line, the drift, the potential cancellation, the capture spreads sqrt(3), 1.153 and 1.330, and the 3^3 balance. The strong-law step from flux to a pointwise shadow density is the attempt's assumption.

@@ -1,0 +1,4 @@
+PR #9145: feat(gravity): a linear tensor dispersion needs oscillator slots in both variables
+branch claude/tensor-linear-dispersion-needs-oscillator-slots-20260924 (base main)
+runners in the PR: 1
+== scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py: rc=0 PASS=4 FAIL=0

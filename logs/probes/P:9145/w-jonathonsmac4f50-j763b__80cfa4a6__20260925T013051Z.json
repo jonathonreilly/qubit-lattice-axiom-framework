@@ -1,0 +1,36 @@
+{
+ "task": "P:9145",
+ "type": "pr-reexecution",
+ "lane": "tensor-linear-dispersion-needs-oscillato",
+ "worker": "w-jonathonsmac4f50-j763b",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9145",
+ "pr": 9145,
+ "branch": "claude/tensor-linear-dispersion-needs-oscillator-slots-20260924",
+ "git_sha": "80cfa4a6",
+ "started_utc": "20260925T013051Z",
+ "elapsed_s": 8.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9145's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "e57976b79d0a3f745048895c8e83b64a0b4091bfff062cf76acdb9df30f67747",
+ "stdout_tail": "PR #9145: feat(gravity): a linear tensor dispersion needs oscillator slots in both variables\nbranch claude/tensor-linear-dispersion-needs-oscillator-slots-20260924 (base main)\nrunners in the PR: 1\n== scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j763b",
+  "at_utc": "20260925T013059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+# Block 144 — results (2026-09-25)
+
+- **Runner.** `scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py`: `TOTAL: PASS=25 FAIL=0` (about 10 s). Nine mutations, each failing in its own family.
+- **T1.** At the closing ratio with block 136's shift, the member per unit K equals the second-order part of the comparator's lapse-and-shift action, up to a total derivative, iff alpha = K/4 and beta = -alpha. K plays the part of 1/(16 pi G).
+- **T2.** For sources that keep the books, at alpha = K/4 the member's exchange is (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2) at every nonzero frequency, with or without the shift. At other alpha there is no solution unless e = 0: the condition is (K - 4 alpha) e / (4 alpha) = 0. Static clock u = -e/(4 K p^2).
+- **T3.** Two slow bodies: L = (m1 m2 / (16 pi K r)) [1 + (3/2)(v1^2 + v2^2) - (7/2) v1.v2 - (1/2)(n.v1)(n.v2)].
+- **T4.** For a pull (k/r)[1 + a(v1^2 + v2^2) + b v1.v2 + c(n.v1)(n.v2)]: W(P) = 1 + [(1 + 2(2a + b))<U> + (1 + 2c)<U_P>]/M. W = 1 along every axis iff 2a + b = -1/2 and c = -1/2, the same conditions as invariance under a long-wave change of velocity. The member meets both. The clock's pull alone gives W = 1 + (<U> + <U_P>)/M < 1 (circular orbit: 1 + <U>/M across, 1 + (3/2)<U>/M within; on a line, refill o's 1 + <U>/(2m) - <T>/m).
+- **T5.** Without the shift nothing in the pull changes. The member gains lengths drifting linearly in time by a transverse relabelling, with conserved residual K(lap xi - grad div xi), felt by content as -xi.P (a fixed vector potential).

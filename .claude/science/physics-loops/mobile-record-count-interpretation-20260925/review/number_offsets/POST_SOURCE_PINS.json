@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-09-25T01:17:12.039957+00:00",
+  "author_sealed_utc": "2026-09-25T00:35:47.792952+00:00",
+  "author_seal_sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+  "PRE_seal_sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+  "PRE_members_unchanged": 22,
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stderr",
+      "frozen": "post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stdout",
+      "frozen": "post_frozen_author/CONTROL.stdout",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "bytes": 60855,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/EXECUTION.json",
+      "frozen": "post_frozen_author/EXECUTION.json",
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4",
+      "bytes": 368,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870",
+      "bytes": 7935,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_RESULTS.json",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_RESULTS.json",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "bytes": 60855,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/ROOT_REVIEW.json",
+      "frozen": "post_frozen_author/ROOT_REVIEW.json",
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb",
+      "bytes": 1276,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/SOURCE_PINS.json",
+      "frozen": "post_frozen_author/SOURCE_PINS.json",
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a",
+      "bytes": 1112,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/number_offset_controls.py",
+      "frozen": "post_frozen_author/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "bytes": 5639,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/AUTHOR_SEAL.json",
+      "frozen": "post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+      "bytes": 1270,
+      "role": "Released root candidate or author evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa",
+      "bytes": 972,
+      "role": "Later authorized scope qualification; rate premise supplied, not independently derived here"
+    }
+  ],
+  "root_PRE_verification_receipt": {
+    "supplied_filename": "THIRTY_SECOND_PRE_ROOT_VERIFICATION.json",
+    "supplied_sha256": "7d68867d691c7bad7ca5e871dd67d9140be2182ef878f3e9bfde8cbc771fcc9b",
+    "basis": "Root release message; not imported as independent proof or opened by this comparison."
+  },
+  "other_active_author_sources_read": []
+}

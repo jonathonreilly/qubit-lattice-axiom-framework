@@ -1,0 +1,99 @@
+{
+  "verified_utc": "2026-09-25T00:52:01.750102+00:00",
+  "scope": "Evidence binding, origin verification and result inventory; not an audit or an additional physics proof.",
+  "source_count": 11,
+  "git_origins": 10,
+  "scientific_parents": 3,
+  "source_rows": [
+    {
+      "frozen_path": "sources/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "origin_matches": true,
+      "role": "scientific parent"
+    },
+    {
+      "frozen_path": "sources/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "origin_matches": true,
+      "role": "scientific parent"
+    },
+    {
+      "frozen_path": "sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "origin_matches": true,
+      "role": "scientific parent"
+    },
+    {
+      "frozen_path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "origin_matches": true,
+      "role": "instruction only"
+    },
+    {
+      "frozen_path": "sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "origin_matches": true,
+      "role": "instruction only; installation inspected before pinned selection"
+    }
+  ],
+  "control_source_sha256": "600f2abcd718c2c348d69039135e91d9a419bd2b0403316ce4e20eeabbcf592b",
+  "control_result_sha256": "640f6e62da99070fe780ec6807a288073b55622d1aefabb4d4db9b15ee065c37",
+  "control_import_modules": [
+    "pathlib",
+    "hashlib",
+    "json",
+    "platform",
+    "time",
+    "itertools",
+    "numpy",
+    "numpy.polynomial.legendre",
+    "scipy.linalg",
+    "scipy"
+  ],
+  "control_author_imports": [],
+  "star_words": 4,
+  "star_birth_rows": 4,
+  "abstract_cases": 6,
+  "abstract_path_rows": 18,
+  "abstract_energy_rows": 9,
+  "maximum_control_residual": 8.719123808207471e-16,
+  "PRE_sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6",
+  "SOURCE_PINS_sha256": "e1d31f7110202da90887290645df65e8f6f4ce151d9f7643aa850a574a2c01e2",
+  "verifier_sha256": "6a0a63b39453586089d3cf6cd2b7da0fd5bfcf4ce8e77e4c25ab553fec5a156b"
+}

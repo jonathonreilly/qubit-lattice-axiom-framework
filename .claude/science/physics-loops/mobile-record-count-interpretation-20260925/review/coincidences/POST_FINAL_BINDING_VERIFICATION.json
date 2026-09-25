@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-09-25T01:17:46.336465+00:00",
+  "PRE_seal_sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+  "PRE_members_unchanged": 43,
+  "new_release_and_PRE_anchor_origins_verified": 16,
+  "prior_origins_verified": 12,
+  "instruction_origins_verified": 3,
+  "own_POST_execution_exit_code": 0,
+  "own_POST_source_sha256": "4dbc8fea9654652b3e21605b9faa602b5194a5ebd13fa25703c31b59699a13c3",
+  "own_POST_complete_stdout_result_identity": true,
+  "complete_Decimal_view_rows_bound": 166,
+  "POST_report_sha256": "a9c3ecc41bd23dbae2f131cf9b290dbb362d6b5099d103e54e30a3752e020c1e",
+  "POST_source_manifest_sha256": "6253eb765f321b3c22ae93ea65bed1bfbb98794d68421dfa8c91ed5b4eaef95a",
+  "author_executions_by_checker": 0,
+  "new_primary_executions": 0
+}

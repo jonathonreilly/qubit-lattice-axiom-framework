@@ -1,0 +1,15 @@
+# Final publication read and failure record
+
+This records the final released-source correspondence for the combined root31/root32 count-interpretation publication. It does not change any earlier PRE, POST, author, or incident file.
+
+The complete public note, both author arguments, both root programs, canonical wrapper, relevant cache fingerprint/serialization implementation, all authorized supplements, root32 PRE/POST/chronology, root32 binding failure and repair, and the specifically authorized scope-incident file were read. My unchanged root31 PRE/POST and their previously fully read control rows were reused by verified identity. Earlier declared energy parents were hash-bound dependencies only, without a new scientific certification.
+
+Both full author-to-public diffs were read. Every newly disclosed root32 scientific row was read from exact JSONL views: count indices 0--107, power 0--23, same-sector 0--3, and history 0--35. The root31 fresh scientific payload was checked recursively against the completely read sealed original, with only its timer excluded. Both child stdout representations and the complete canonical stdout/cache were verified byte-for-byte.
+
+The initial broad display of the external execution JSON was truncated because it embeds the complete combined stdout. That output was expressly authorized in this task; this is a display/completeness issue, not another scope incident. The truncated display was not treated as a completed review. The verifier preserved all 154490 stdout bytes and generated bounded row views; subsequent complete reads and exact identity checks supplied the missing coverage.
+
+No new scientific or bookkeeping execution failed in this final comparison. The new verifier ran once with exit zero and empty stderr. No author, primary, repository-cache or inherited numerical control was run or imported. Only stored-number arithmetic, source parsing, hashing, serialization and copying were performed.
+
+Earlier failures remain unchanged under their prior seals. In particular, root31's finite-g direct-subtraction conditioning failure and later stable evaluation, its initially incorrect dispatched metadata-seal filename lookup, and root32's initial SHA-string/entry-object binding assertion failure remain visible in their separate PRE/POST evidence. Root32's chronology addendum corrects an inaccurate original POST sentence; both versions and the incident record remain bound. Current authorized disclosure does not reset earlier blindness claims.
+
+The final source refresh checks all 61 scientific/evidence/anchor origins and the three previously read instruction origins. Only new files in `two-detector-coincidence-independent` are created. Previous report/seal members, public sources, author sources, audit state and campaign state remain untouched. No active forbidden packet was opened.

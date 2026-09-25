@@ -1,0 +1,603 @@
+{
+  "star": {
+    "physical_scope": "Complete Gauss-legal rotor P space on the three-site tree; all energy-diagonal values zero and no magnetic pair.",
+    "kappa": 0.7,
+    "duration": 0.6,
+    "words": [
+      {
+        "charges": [
+          1,
+          0,
+          0
+        ],
+        "fields_A_to_B": [
+          0,
+          0
+        ],
+        "N": 1
+      },
+      {
+        "charges": [
+          1,
+          1,
+          -1
+        ],
+        "fields_A_to_B": [
+          -1,
+          1
+        ],
+        "N": 3
+      },
+      {
+        "charges": [
+          1,
+          -1,
+          1
+        ],
+        "fields_A_to_B": [
+          1,
+          -1
+        ],
+        "N": 3
+      },
+      {
+        "charges": [
+          -1,
+          1,
+          1
+        ],
+        "fields_A_to_B": [
+          -1,
+          -1
+        ],
+        "N": 3
+      }
+    ],
+    "primitive_birth_rows": [
+      {
+        "edge": 0,
+        "sign": 1,
+        "input": 0,
+        "output": 2,
+        "number_change": 2
+      },
+      {
+        "edge": 0,
+        "sign": -1,
+        "input": 0,
+        "output": 3,
+        "number_change": 2
+      },
+      {
+        "edge": 1,
+        "sign": 1,
+        "input": 0,
+        "output": 1,
+        "number_change": 2
+      },
+      {
+        "edge": 1,
+        "sign": -1,
+        "input": 0,
+        "output": 3,
+        "number_change": 2
+      }
+    ],
+    "electric_diagonal": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "cases": [
+      {
+        "instrument": "resolved",
+        "vacuum_survival": 0.18637397603940997,
+        "exact_survival_error": 0.0,
+        "state_difference_coherent_initial": 0.27377596634666806,
+        "number_diagonal_difference": 0.0,
+        "state_difference_number_definite_initial": 0.0,
+        "selected_rates": [
+          0.7000000000000001,
+          0.7000000000000001,
+          0.7000000000000001,
+          0.7000000000000001
+        ],
+        "selected_offset_powers": [
+          1.085,
+          1.085,
+          1.085,
+          1.085
+        ]
+      },
+      {
+        "instrument": "coherent_unscaled_sign_sum",
+        "vacuum_survival": 0.18637397603940997,
+        "exact_survival_error": 0.0,
+        "state_difference_coherent_initial": 0.27377596634666806,
+        "number_diagonal_difference": 0.0,
+        "state_difference_number_definite_initial": 0.0,
+        "selected_rates": [
+          1.4000000000000001,
+          1.4000000000000001
+        ],
+        "selected_offset_powers": [
+          2.17,
+          2.17
+        ]
+      }
+    ],
+    "coherent_vs_unresolved_density_difference": 0.9899494936611667
+  },
+  "abstract": {
+    "scope": "Abstract bounded number-graded parent class; six states, three number sectors, no Gauss or rotor assertion.",
+    "horizon": 0.73,
+    "initial_density_eigenvalues": [
+      0.0283333333333333,
+      0.028333333333333318,
+      0.02833333333333333,
+      0.028333333333333335,
+      0.0283333333333334,
+      0.8583333333333334
+    ],
+    "max_comparison_error": 8.719123808207471e-16,
+    "rows": [
+      {
+        "instrument": "resolved",
+        "offset": "scalar",
+        "offset_by_N": {
+          "0": 0.47,
+          "2": 0.47,
+          "4": 0.47
+        },
+        "errors": {
+          "unconditional_number_blocks": 0.0,
+          "number_diagonal_input_full_state": 0.0,
+          "mean_offset": 5.551115123125783e-17,
+          "variance_shift": 5.551115123125783e-17,
+          "power_operator": 1.8292903756300755e-16,
+          "power_expectation": 2.7755575615628914e-17,
+          "raw_output_energy": 2.7755575615628914e-17,
+          "integrated_offset_balance": 0.0,
+          "global_rotation_special_case": 1.0009352982033145e-16,
+          "scalar_full_state": 5.054568667899559e-17
+        },
+        "full_state_difference": 5.054568667899559e-17,
+        "global_rotation_residual": 1.0009352982033145e-16,
+        "energy_rows": [
+          {
+            "rate": 0.25040185713680047,
+            "power_difference": 2.7755575615628914e-17,
+            "raw_output_energy_difference": 0.11768887285429622,
+            "centered_jump_energy_rate_difference": -1.3877787807814457e-17
+          },
+          {
+            "rate": 0.12422987586344905,
+            "power_difference": -6.938893903907228e-18,
+            "raw_output_energy_difference": 0.05838804165582106,
+            "centered_jump_energy_rate_difference": 0.0
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.7430892945235488,
+            "phase_formula_error": 3.601087055786921e-16,
+            "effect_error": 2.611090194369167e-16,
+            "conditional_number_block_error": 1.2659012919633696e-16,
+            "conditional_full_state_difference": 2.0488261318549687e-16
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.22612998497169653,
+            "phase_formula_error": 2.787890068101276e-16,
+            "effect_error": 1.9154363847587536e-16,
+            "conditional_number_block_error": 3.428374978984829e-16,
+            "conditional_full_state_difference": 3.9951856112403666e-16
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              1
+            ],
+            "record_density": 0.023936833421086025,
+            "phase_formula_error": 7.384300342650183e-17,
+            "effect_error": 1.4357391453888702e-17,
+            "conditional_number_block_error": 3.200227582219828e-16,
+            "conditional_full_state_difference": 3.200227582219828e-16
+          }
+        ]
+      },
+      {
+        "instrument": "resolved",
+        "offset": "affine",
+        "offset_by_N": {
+          "0": -0.4,
+          "2": 0.2,
+          "4": 0.8
+        },
+        "errors": {
+          "unconditional_number_blocks": 0.0,
+          "number_diagonal_input_full_state": 0.0,
+          "mean_offset": 1.3877787807814457e-17,
+          "variance_shift": 0.0,
+          "power_operator": 1.389512421408389e-16,
+          "power_expectation": 5.551115123125783e-17,
+          "raw_output_energy": 8.326672684688674e-17,
+          "integrated_offset_balance": 0.0,
+          "global_rotation_special_case": 1.6431161684906892e-16
+        },
+        "full_state_difference": 0.25978422492838893,
+        "global_rotation_residual": 1.6431161684906892e-16,
+        "energy_rows": [
+          {
+            "rate": 0.25040185713680047,
+            "power_difference": 0.15024111428208034,
+            "raw_output_energy_difference": 0.13227322917849602,
+            "centered_jump_energy_rate_difference": 0.10237716594374598
+          },
+          {
+            "rate": 0.12422987586344905,
+            "power_difference": 0.07453792551806943,
+            "raw_output_energy_difference": 0.04581130810161577,
+            "centered_jump_energy_rate_difference": 0.03097921273728394
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.7430892945235488,
+            "phase_formula_error": 3.2146256170591253e-16,
+            "effect_error": 4.0472254912487196e-16,
+            "conditional_number_block_error": 9.120899187807948e-17,
+            "conditional_full_state_difference": 0.3449381154024976
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.22612998497169653,
+            "phase_formula_error": 1.9405316897740616e-16,
+            "effect_error": 1.284164130818787e-16,
+            "conditional_number_block_error": 2.0256591189304034e-16,
+            "conditional_full_state_difference": 0.26294012023484464
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              1
+            ],
+            "record_density": 0.023936833421086025,
+            "phase_formula_error": 1.505972038486269e-16,
+            "effect_error": 6.943364797517433e-17,
+            "conditional_number_block_error": 8.719123808207471e-16,
+            "conditional_full_state_difference": 8.719123808207471e-16
+          }
+        ]
+      },
+      {
+        "instrument": "resolved",
+        "offset": "nonlinear",
+        "offset_by_N": {
+          "0": -0.7,
+          "2": 0.9,
+          "4": -0.2
+        },
+        "errors": {
+          "unconditional_number_blocks": 1.2874489342371163e-16,
+          "number_diagonal_input_full_state": 1.2874489342371163e-16,
+          "mean_offset": 1.0755285551056204e-16,
+          "variance_shift": 2.220446049250313e-16,
+          "power_operator": 1.3947004136484323e-16,
+          "power_expectation": 8.326672684688674e-17,
+          "raw_output_energy": 5.551115123125783e-17,
+          "integrated_offset_balance": 1.1102230246251565e-16
+        },
+        "full_state_difference": 0.43516641602884515,
+        "global_rotation_residual": 0.08936325424246477,
+        "energy_rows": [
+          {
+            "rate": 0.25040185713680047,
+            "power_difference": 0.030775111538769523,
+            "raw_output_energy_difference": 0.07467476554603811,
+            "centered_jump_energy_rate_difference": 0.06777301042294424
+          },
+          {
+            "rate": 0.12422987586344905,
+            "power_difference": 0.10442380320135164,
+            "raw_output_energy_difference": 0.07337044457407321,
+            "centered_jump_energy_rate_difference": 0.06994633186186815
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.7430892945235488,
+            "phase_formula_error": 4.1924358259804065e-16,
+            "effect_error": 4.56176205529224e-16,
+            "conditional_number_block_error": 1.9131661050856328e-16,
+            "conditional_full_state_difference": 0.5821784784758252
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.22612998497169653,
+            "phase_formula_error": 1.960851493111304e-16,
+            "effect_error": 1.7554167342883506e-16,
+            "conditional_number_block_error": 2.3895379246822594e-16,
+            "conditional_full_state_difference": 0.19102894379702268
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              1
+            ],
+            "record_density": 0.023936833421086025,
+            "phase_formula_error": 9.336938611713342e-17,
+            "effect_error": 4.2314453738321004e-17,
+            "conditional_number_block_error": 4.755686064395397e-16,
+            "conditional_full_state_difference": 4.755686064395397e-16
+          }
+        ]
+      },
+      {
+        "instrument": "coherent_single_mark",
+        "offset": "scalar",
+        "offset_by_N": {
+          "0": 0.47,
+          "2": 0.47,
+          "4": 0.47
+        },
+        "errors": {
+          "unconditional_number_blocks": 0.0,
+          "number_diagonal_input_full_state": 0.0,
+          "mean_offset": 1.1102230246251565e-16,
+          "variance_shift": 5.551115123125783e-17,
+          "power_operator": 2.9244371525636465e-16,
+          "power_expectation": 5.551115123125783e-17,
+          "raw_output_energy": 5.551115123125783e-17,
+          "integrated_offset_balance": 5.551115123125783e-17,
+          "global_rotation_special_case": 9.405274012971544e-17,
+          "scalar_full_state": 6.333522686699748e-17
+        },
+        "full_state_difference": 6.333522686699748e-17,
+        "global_rotation_residual": 9.405274012971544e-17,
+        "energy_rows": [
+          {
+            "rate": 0.36030081588257945,
+            "power_difference": -5.551115123125783e-17,
+            "raw_output_energy_difference": 0.16934138346481226,
+            "centered_jump_energy_rate_difference": -8.326672684688674e-17
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.740616308979035,
+            "phase_formula_error": 3.273851106429365e-16,
+            "effect_error": 2.6910028968576024e-16,
+            "conditional_number_block_error": 1.3267466700961422e-16,
+            "conditional_full_state_difference": 2.3806687393793523e-16
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.32317833235290205,
+            "phase_formula_error": 3.1676639673831405e-16,
+            "effect_error": 2.884444029575346e-16,
+            "conditional_number_block_error": 2.2308256065833056e-16,
+            "conditional_full_state_difference": 2.7179185893998313e-16
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              0
+            ],
+            "record_density": 0.09616710577771727,
+            "phase_formula_error": 2.498001805406602e-16,
+            "effect_error": 3.488821756485609e-16,
+            "conditional_number_block_error": 6.220060906716534e-16,
+            "conditional_full_state_difference": 6.220060906716534e-16
+          }
+        ]
+      },
+      {
+        "instrument": "coherent_single_mark",
+        "offset": "affine",
+        "offset_by_N": {
+          "0": -0.4,
+          "2": 0.2,
+          "4": 0.8
+        },
+        "errors": {
+          "unconditional_number_blocks": 0.0,
+          "number_diagonal_input_full_state": 0.0,
+          "mean_offset": 8.326672684688674e-17,
+          "variance_shift": 0.0,
+          "power_operator": 1.4821483875836085e-16,
+          "power_expectation": 1.1102230246251565e-16,
+          "raw_output_energy": 5.551115123125783e-17,
+          "integrated_offset_balance": 2.7755575615628914e-17,
+          "global_rotation_special_case": 1.9240070112853608e-16
+        },
+        "full_state_difference": 0.2673898821164397,
+        "global_rotation_residual": 1.9240070112853608e-16,
+        "energy_rows": [
+          {
+            "rate": 0.36030081588257945,
+            "power_difference": 0.2161804895295476,
+            "raw_output_energy_difference": 0.16286988069025232,
+            "centered_jump_energy_rate_difference": 0.1196812207511208
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.740616308979035,
+            "phase_formula_error": 2.6497581688725326e-16,
+            "effect_error": 3.8820615418653684e-16,
+            "conditional_number_block_error": 1.1712521845780507e-16,
+            "conditional_full_state_difference": 0.3489752270521218
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.32317833235290205,
+            "phase_formula_error": 4.614234013918333e-16,
+            "effect_error": 5.324442579404919e-16,
+            "conditional_number_block_error": 2.290095219055342e-16,
+            "conditional_full_state_difference": 0.2311408594416722
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              0
+            ],
+            "record_density": 0.09616710577771727,
+            "phase_formula_error": 1.5202354861220294e-16,
+            "effect_error": 2.451306065445149e-16,
+            "conditional_number_block_error": 1.951176878248556e-16,
+            "conditional_full_state_difference": 1.951176878248556e-16
+          }
+        ]
+      },
+      {
+        "instrument": "coherent_single_mark",
+        "offset": "nonlinear",
+        "offset_by_N": {
+          "0": -0.7,
+          "2": 0.9,
+          "4": -0.2
+        },
+        "errors": {
+          "unconditional_number_blocks": 1.5265253850361378e-16,
+          "number_diagonal_input_full_state": 1.5265253850361378e-16,
+          "mean_offset": 2.983724378680108e-16,
+          "variance_shift": 2.220446049250313e-16,
+          "power_operator": 2.2930524797158405e-16,
+          "power_expectation": 1.3877787807814457e-16,
+          "raw_output_energy": 1.1102230246251565e-16,
+          "integrated_offset_balance": 1.942890293094024e-16
+        },
+        "full_state_difference": 0.44631844002863874,
+        "global_rotation_residual": 0.1094052244489422,
+        "energy_rows": [
+          {
+            "rate": 0.36030081588257945,
+            "power_difference": 0.16783757660031362,
+            "raw_output_energy_difference": 0.15778625218580494,
+            "centered_jump_energy_rate_difference": 0.1394072530519154
+          }
+        ],
+        "path_rows": [
+          {
+            "times": [],
+            "labels": [],
+            "record_density": 0.740616308979035,
+            "phase_formula_error": 4.032178052774207e-16,
+            "effect_error": 2.958606360643468e-16,
+            "conditional_number_block_error": 1.4332415953566345e-16,
+            "conditional_full_state_difference": 0.5965494696896471
+          },
+          {
+            "times": [
+              0.18
+            ],
+            "labels": [
+              0
+            ],
+            "record_density": 0.32317833235290205,
+            "phase_formula_error": 3.5272521090420434e-16,
+            "effect_error": 5.266250202865052e-16,
+            "conditional_number_block_error": 2.03919521467322e-16,
+            "conditional_full_state_difference": 0.16792642449559295
+          },
+          {
+            "times": [
+              0.18,
+              0.49
+            ],
+            "labels": [
+              0,
+              0
+            ],
+            "record_density": 0.09616710577771727,
+            "phase_formula_error": 2.5626980138831173e-16,
+            "effect_error": 3.0467987022359185e-16,
+            "conditional_number_block_error": 4.3028860307068514e-16,
+            "conditional_full_state_difference": 4.3028860307068514e-16
+          }
+        ]
+      }
+    ],
+    "wrong_claim_discriminators": [
+      {
+        "instrument": "resolved",
+        "incorrect_global_rotation_residual": 0.08936325424246477,
+        "incorrect_full_state_invariance_residual": 0.43516641602884515,
+        "centered_rate_vs_GKLS_power_difference": 0.03699789888417472,
+        "Hamiltonian_loss_noncommutation": 0.3153873511255643
+      },
+      {
+        "instrument": "coherent_single_mark",
+        "incorrect_global_rotation_residual": 0.1094052244489422,
+        "incorrect_full_state_invariance_residual": 0.44631844002863874,
+        "centered_rate_vs_GKLS_power_difference": 0.028430323548398223,
+        "Hamiltonian_loss_noncommutation": 0.8775300799687724
+      }
+    ]
+  },
+  "execution": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "elapsed_seconds": 0.03128162492066622,
+    "source_sha256": "600f2abcd718c2c348d69039135e91d9a419bd2b0403316ce4e20eeabbcf592b",
+    "author_programs_run_or_imported": []
+  }
+}

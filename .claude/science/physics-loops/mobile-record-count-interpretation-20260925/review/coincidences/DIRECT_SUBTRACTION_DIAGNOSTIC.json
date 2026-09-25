@@ -1,0 +1,58 @@
+{
+  "scope": "Narrow diagnosis of first failed normalized subtraction test; own code only.",
+  "own_source_sha256": "dc6632fbf3383d87b8c3f0e082a80720e927273714f77bf7bba830358bd7175e",
+  "rows": [
+    {
+      "g": 0.4,
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "A": 0.7958402487831568,
+      "B": 5.00297734320592e-08,
+      "direct_normalized": 2.43633277643385,
+      "stable_exact_normalized": 2.4363327764717884,
+      "difference": 3.793854119749085e-11,
+      "subtraction_numerator": 2.1864037555267835e-09,
+      "subtraction_denominator": 8.974158935410718e-10,
+      "conditioning_scale": 33383415.179938782
+    },
+    {
+      "g": 0.2,
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "A": 0.7958402487831568,
+      "B": 5.00297734320592e-08,
+      "direct_normalized": 2.4840832004674165,
+      "stable_exact_normalized": 2.4840831940475465,
+      "difference": 6.419869968965486e-09,
+      "subtraction_numerator": 1.5329055418674548e-10,
+      "subtraction_denominator": 6.170910626419503e-11,
+      "conditioning_scale": 32197501.041584074
+    },
+    {
+      "g": 0.1,
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "A": 0.7958402487831568,
+      "B": 5.00297734320592e-08,
+      "direct_normalized": 2.4960208040816028,
+      "stable_exact_normalized": 2.4960207985074274,
+      "difference": 5.574175343525667e-09,
+      "subtraction_numerator": 9.859306005345712e-12,
+      "subtraction_denominator": 3.9500095468849224e-12,
+      "conditioning_scale": 31909805.723769855
+    },
+    {
+      "g": 0.05,
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "A": 0.7958402487831568,
+      "B": 5.00297734320592e-08,
+      "direct_normalized": 2.4990052002116103,
+      "stable_exact_normalized": 2.499005199626577,
+      "difference": 5.850333550938558e-10,
+      "subtraction_numerator": 6.206368253357144e-13,
+      "subtraction_denominator": 2.4835355495985374e-13,
+      "conditioning_scale": 31838417.50639645
+    }
+  ]
+}

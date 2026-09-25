@@ -1,0 +1,61 @@
+{
+  "role": "Blind independent PRE, with inherited model and effort; no delegation",
+  "authorized_science": [
+    "Three exact supplied parent notes at b47a67e3a08febd2aaf3545eae9a278b4901a72d"
+  ],
+  "new_author_sources_read": [],
+  "author_programs_executed_or_imported": [],
+  "other_active_science_packets_read": [],
+  "prior_exposure": "Earlier completed photon-added-energy PRE/POST is disclosed background; the present number-offset argument is reconstructed from the three allowed parent definitions.",
+  "source_read_coverage": {
+    "all_three_scientific_arguments": "Read completely",
+    "initial_aggregate_read": "The combined tool output was truncated; the common-compensation and local-pair parents were then read in full from exact frozen copies before the proof was completed.",
+    "current_checkout_drift": "Used exact requested Git revision rather than the advanced checkout."
+  },
+  "independent_checks": [
+    "Exact number grading from local hopping, creation, and magnetic pair definitions",
+    "Chronological record-path phase derivation retaining coherent original mark amplitudes",
+    "Primitive full Gauss-space reconstruction on a three-vertex star",
+    "Independent complete Liouvillian matrix exponentiation compared with path products in a separately specified abstract parent class",
+    "Direct energy operator, moment, and integrated bounded-offset comparisons"
+  ],
+  "scientific_execution_attempts": [
+    {
+      "attempt": 1,
+      "execution_file": "CONTROL_ATTEMPT_01_EXECUTION.json",
+      "exit_code": 0,
+      "stderr_empty": true,
+      "source_unchanged_after_execution": true
+    }
+  ],
+  "discarded_stronger_claims_preserved": [
+    {
+      "claim": "All full conditional and unconditional states are invariant for arbitrary initial number coherences.",
+      "disposition": "False; exact path phases and both the Gauss-legal star and abstract controls retain explicit counterexamples."
+    },
+    {
+      "claim": "Every nonlinear f gives a single unconditional conjugation by exp(-i t f(N)).",
+      "disposition": "False in the abstract three-sector controls; the exact chronological phase contains the times spent in successive sectors."
+    },
+    {
+      "claim": "A coherent sign-sum jump can be replaced by the corresponding incoherent sum of output densities.",
+      "disposition": "False; the physical star output detects the omitted off-diagonal terms."
+    },
+    {
+      "claim": "The selected dissipative power always equals rate times the post-event minus unselected pre-event mean energy.",
+      "disposition": "False; the two definitions have distinct loss/selection terms and explicit different offset transformations for mixed-number inputs."
+    },
+    {
+      "claim": "Bounded record evolution supplies ordinary energy moments for arbitrary normal densities.",
+      "disposition": "Unsupported and generally false for heavy electric tails; moments and full-energy derivatives carry separate domain assumptions."
+    }
+  ],
+  "unperformed_or_unauthorized_actions": [
+    "No parent primary rerun",
+    "No author runner execution/import",
+    "No source, branch, publication, audit or axiom mutation",
+    "No experiment or reservoir-energy identification",
+    "No infinite-volume or microscopic-energy-limit extrapolation"
+  ],
+  "next_action_after_seal": "Stop before author disclosure; a released-source comparison would require a separate POST."
+}

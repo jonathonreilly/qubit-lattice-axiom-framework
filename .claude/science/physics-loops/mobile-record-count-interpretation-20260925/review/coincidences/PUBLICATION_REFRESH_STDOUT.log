@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-09-25T02:34:15.007135+00:00",
+  "source_refresh_sha256": "00c50def189b79cadddfc28a355cf86482edfed5bac523448507a33961085fe2",
+  "source_manifest_sha256": "bb9a99f09f45bedd7e1c1a833aea07166b2e690529e43727d03fe394de41e6c9",
+  "comparison_sha256": "cc227e136278e1a6339a93b029ae61b6243aa9570a13d989337ec3b7fa4c6039",
+  "read_and_failure_log_sha256": "5aec0e7d536a912d92a68005628ccc4cf70cb32cf21433f6e1ba5c202ae4e6d0",
+  "unchanged_scientific_evidence_anchor_origins": 61,
+  "unchanged_instruction_origins": 3,
+  "prior_seals": [
+    {
+      "name": "PRE31",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE_SEAL.json",
+      "sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+      "unchanged_members": 43
+    },
+    {
+      "name": "POST31",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_SEAL.json",
+      "sha256": "275f99adc9ca2b43e0db8307647839697a195e9422d400922f7b46cb721d3ad3",
+      "unchanged_members": 33
+    },
+    {
+      "name": "PRE32",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "unchanged_members": 22
+    },
+    {
+      "name": "POST32",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SEAL.json",
+      "sha256": "43f565d7b9e362ca13e012bfadbe5b7e05b2ce22abb2c4a9ef3f24cd63d6099b",
+      "unchanged_members": 26
+    },
+    {
+      "name": "POST32_chronology",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_CHRONOLOGY_ADDENDUM_SEAL.json",
+      "sha256": "122752e6e420a095cb1f7c9a0ab30da49b3711ecdfcfef9b821788bf3d12fe1d",
+      "unchanged_members": 1
+    }
+  ],
+  "author_sealed_members_verified": [
+    8,
+    8
+  ],
+  "publication_head": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+  "publication_status_read_only": " M docs/audit/data/citation_graph_manifest.json\n?? .claude/science/physics-loops/mobile-record-count-interpretation-20260925/\n?? docs/ORIGINAL_COINCIDENCES_AND_NUMBER_ENERGY_IDENTIFIABILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md\n?? logs/runner-cache/original_coincidences_and_number_energy_identifiability_2026_09_25.txt\n?? outputs/count_interpretation_20260925/\n?? scripts/original_coincidences_and_number_energy_identifiability_2026_09_25.py\n",
+  "author_primary_runs_by_checker": 0,
+  "scientific_repairs_required_for_pinned_publication": [],
+  "limits": "Released-source correspondence only; no new blind PRE, no applied audit verdict."
+}

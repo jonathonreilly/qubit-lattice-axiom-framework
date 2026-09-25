@@ -1,0 +1,10 @@
+{
+  "status": "sealed and all members reverified",
+  "member_count": 26,
+  "POST_sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2",
+  "POST_SEAL_sha256": "43f565d7b9e362ca13e012bfadbe5b7e05b2ce22abb2c4a9ef3f24cd63d6099b",
+  "PRE_members_unchanged": 22,
+  "prior_publication_members_unchanged": 33,
+  "author_members_verified": 8,
+  "released_source_origins": 10
+}

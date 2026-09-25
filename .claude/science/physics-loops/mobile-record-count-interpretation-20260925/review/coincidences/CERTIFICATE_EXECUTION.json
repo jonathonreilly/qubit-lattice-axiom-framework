@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-25T00:33:47.874921+00:00",
+  "elapsed_seconds": 0.0475376658141613,
+  "exit_code": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "covariance_certificate.py"
+  ],
+  "code_sha256": "4ec649497da93c54658e91f52a07cc837ee8c0b43dc062c2df13758bffbf4c59",
+  "stdout_sha256": "d19f249f03a3c7c6ed9c0f1be6fb0e774079a331b32d6e61de65eaf66d9a9b69",
+  "stderr_bytes": 0
+}

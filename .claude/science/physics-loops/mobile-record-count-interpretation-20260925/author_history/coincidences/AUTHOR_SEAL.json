@@ -1,0 +1,38 @@
+{
+  "sealed_utc": "2026-09-25T00:12:47.947473+00:00",
+  "status": "Root candidate before independent reconstruction; same selected model/effort",
+  "files": {
+    "COINCIDENCE_RESULTS.json": {
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627
+    },
+    "CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONTROL.stdout": {
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627
+    },
+    "EXECUTION.json": {
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019",
+      "bytes": 309
+    },
+    "ROOT_REVIEW.json": {
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7",
+      "bytes": 1780
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92",
+      "bytes": 4487
+    },
+    "TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md": {
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "bytes": 14782
+    },
+    "coincidence_controls.py": {
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "bytes": 5561
+    }
+  }
+}

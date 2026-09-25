@@ -1,0 +1,61 @@
+{
+  "verified_utc": "2026-09-25T00:46:31.011364+00:00",
+  "source_sha256": "a858150ebb26d9e02d2f239e1f8b3e193d6fa88dac84c6dd86db05b52f9aea58",
+  "source_origins_and_snapshots_verified": 12,
+  "new_scientific_reruns_by_this_verifier": 0,
+  "own_main_control_runs": 2,
+  "own_exact_covariance_certificate_runs": 1,
+  "own_inline_diagnosis_runs": 1,
+  "failed_main_run_preserved": true,
+  "author_or_parent_control_runs": 0,
+  "primitive_rows": 8,
+  "leading_rows": 12,
+  "finite_g_rows": 48,
+  "rational_certificate_geometries": 2,
+  "rational_groups_total": 84,
+  "covariance_floating_rows": [
+    {
+      "L": 12,
+      "separation": [
+        6,
+        0,
+        0
+      ],
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "normalized_covariance": -0.0002507271236051742
+    },
+    {
+      "L": 12,
+      "separation": [
+        0,
+        0,
+        6
+      ],
+      "v": 0.7958402487831568,
+      "c": 0.0001533928202163341,
+      "normalized_covariance": 0.00019274323012799665
+    },
+    {
+      "L": 16,
+      "separation": [
+        8,
+        0,
+        0
+      ],
+      "v": 0.7958588527704434,
+      "c": -5.9540180382285784e-05,
+      "normalized_covariance": -7.481248738394002e-05
+    }
+  ],
+  "maximum_reference_quadrature_error": 5.551115123125783e-17,
+  "maximum_quadrature_order_change": 1.6653345369377348e-16,
+  "maximum_scaled_subtraction_numerator_error": 3.0159832314295937e-16,
+  "maximum_scaled_subtraction_denominator_error": 2.0328790734103203e-16,
+  "ill_conditioned_direct_ratio_rows_reported_without_precision_assertion": 12,
+  "maximum_recorded_direct_ratio_error": 7.057658191200744e-08,
+  "largest_conditioning_scale": 374960624.1176431,
+  "complete_results_stdout_identity": true,
+  "current_stderr_empty": true,
+  "verification_limits": "Exact primitive algebra and explicit rational finite-sum covariance enclosures; Gaussian quadrature is floating corroboration. Full time theorem is analytic; no actual full-generator simulation, empirical fit or author review."
+}

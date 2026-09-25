@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T02:24:29.010594+00:00",
+  "duration_seconds": 0.1398947909474373,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_verify.py"
+  ],
+  "source_sha256": "1350cb551484f76531799472d89befca42945b42f74f12a5f53d00960943d652",
+  "stdout_sha256": "64e45287750cb62ce187353bd60655cc6a8b7e52dfdc88be8c1d206798e3644b",
+  "stderr_bytes": 0,
+  "scope": "Own read-only source/payload/cache verification; no author imports or executions, no primary rerun."
+}

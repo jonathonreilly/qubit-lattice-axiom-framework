@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-25T01:06:13.449468+00:00",
+  "scope": "Root full blind PRE scientific reading and exact source/record verification before author disclosure",
+  "PRE_sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6",
+  "PRE_SEAL_sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+  "members_verified": 22,
+  "source_origins": 11,
+  "root_read": [
+    "complete PRE proof",
+    "complete independent control and verifier",
+    "all four Gauss-star words and four original birth paths, both instruments",
+    "all six abstract cases, eighteen paths, nine energy rows and counterexamples",
+    "full independence record, actual execution and source evidence"
+  ],
+  "supported": [
+    "exact full record-law invariance for all normal densities",
+    "number-diagonal conditional state invariance with surviving coherence counterexamples",
+    "bounded offset-power transformation; unchanged same-number input-energy differences"
+  ],
+  "PRE_only_additions": [
+    "physical three-vertex full Gauss-space check",
+    "unconditional affine rotation and nonlinear counterexample",
+    "energy variance and bounded integrated offset ledger",
+    "selected versus unselected-premean energy distinctions"
+  ],
+  "source_verifier": {
+    "exit_code": 0,
+    "elapsed_seconds": 0.24685458303429186,
+    "stdout_sha256": "72713a49014a2dd2592ce9367fec0ce721fa75664d678e77a1e1f7e4d1e08a61",
+    "stderr_bytes": 0
+  },
+  "scientific_reruns_by_root": 0,
+  "remaining": [
+    "Released author comparison not yet dispatched; checker is finishing Part A publication correspondence",
+    "fixed gamma offsets do not alter root30 leading weak-field power since selected rate is O(g^2)",
+    "no empirically selected f, energy probe or reservoir, no added axiom or audit verdict"
+  ]
+}

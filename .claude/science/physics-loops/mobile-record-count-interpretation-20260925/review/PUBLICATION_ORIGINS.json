@@ -1,0 +1,704 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "sha256": "8b2a7452d211da8ec198891806971a528ebaca89201d1aca9d2919f3774f1a1c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/AUTHOR_SEAL.json",
+      "sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/COINCIDENCE_RESULTS.json",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/CONTROL.stdout",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/EXECUTION.json",
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/ROOT_REVIEW.json",
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/SOURCE_METADATA_QUALIFICATION.md",
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/SOURCE_PINS.json",
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/coincidence_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/AUTHOR_SEAL.json",
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/CONTROL.stdout",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/EXECUTION.json",
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/NUMBER_OFFSET_RESULTS.json",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/ROOT_REVIEW.json",
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/SOURCE_PINS.json",
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/number_offset_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CERTIFICATE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CERTIFICATE_EXECUTION.json",
+      "sha256": "49d8d31e682d2b886531851a479853b280b9767a0b50ede15d1522400c130277"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CERTIFICATE_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CERTIFICATE_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CERTIFICATE_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CERTIFICATE_STDOUT.log",
+      "sha256": "d19f249f03a3c7c6ed9c0f1be6fb0e774079a331b32d6e61de65eaf66d9a9b69"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CONTROL_EXECUTION.json",
+      "sha256": "812cb8b4f4fb53d81d06e8351b464496ae21219c8ce9167ac90b9422571a012e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CONTROL_RESULTS.json",
+      "sha256": "53681f9a777fa9caee348997efff0fc5931f82000a102f838f805dac9a527298"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/CONTROL_STDOUT.log",
+      "sha256": "53681f9a777fa9caee348997efff0fc5931f82000a102f838f805dac9a527298"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/COVARIANCE_CERTIFICATE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/COVARIANCE_CERTIFICATE.json",
+      "sha256": "d19f249f03a3c7c6ed9c0f1be6fb0e774079a331b32d6e61de65eaf66d9a9b69"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/DIRECT_SUBTRACTION_DIAGNOSTIC.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/DIRECT_SUBTRACTION_DIAGNOSTIC.json",
+      "sha256": "6dc23be1dfba808e848b80f50b0f5bd42b5e67ba678646c3892f9ce156d1dc9d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/DIRECT_SUBTRACTION_DIAGNOSTIC_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/DIRECT_SUBTRACTION_DIAGNOSTIC_EXECUTION.json",
+      "sha256": "73d9731d6804fc7f9ab539149295e7e1b5f867c96d806cd73d02d9b3ebf247eb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/DIRECT_SUBTRACTION_DIAGNOSTIC_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/DIRECT_SUBTRACTION_DIAGNOSTIC_STDOUT.log",
+      "sha256": "6dc23be1dfba808e848b80f50b0f5bd42b5e67ba678646c3892f9ce156d1dc9d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST.md",
+      "sha256": "a9c3ecc41bd23dbae2f131cf9b290dbb362d6b5099d103e54e30a3752e020c1e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_COMPARISON.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_COMPARISON.json",
+      "sha256": "09e8e14487027c872931eed91b7f54a42e7543bcbf6c6063d4921020451433d4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_FINITE_REVIEW_0.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_FINITE_REVIEW_0.jsonl",
+      "sha256": "ad8858ba30b69ce39e6b9511f7ebface0ad5c37a83102a41824f3f2b7be314de"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_FINITE_REVIEW_1.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_FINITE_REVIEW_1.jsonl",
+      "sha256": "0a7718ad89b399e06a1daa7a959a8492a1109e6de74645d455af51600f72d8a8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_FINITE_REVIEW_2.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_FINITE_REVIEW_2.jsonl",
+      "sha256": "aa7f0e5a0a97911b4cb1bb3c2d0d1fc88717f94c9b96081a341fa23bc5b8b75b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_MOMENT_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_MOMENT_ROWS.jsonl",
+      "sha256": "8c474a404af1a9f16807b075094a08ae0d4a909340a3468360ce06bf975d852d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_DECIMAL_SPATIAL_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_DECIMAL_SPATIAL_ROWS.jsonl",
+      "sha256": "ece8409c00f5437a8ce9defefccedb2a52c6e01692bd9e26ada02274fa694e5a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_FINAL_BINDING_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_FINAL_BINDING_VERIFICATION.json",
+      "sha256": "83e86b9ba9ed6d43dcc110af2ff085e2a9832e11c45b5984a6e6ede2158657bb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_FOCK_ROWS_00_09.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_FOCK_ROWS_00_09.jsonl",
+      "sha256": "f00e1e497f423a579d4536f39a48c5d11cc8dc4a37af389fba2ce3ab822e167b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_FOCK_ROWS_10_19.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_FOCK_ROWS_10_19.jsonl",
+      "sha256": "0b7948c4cb0b7d0b462ab6e022c9b77ef0e7cad4636b2adade6c07ae41e2c67c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_FOCK_ROWS_20_29.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_FOCK_ROWS_20_29.jsonl",
+      "sha256": "ccdc7e7bf768557c60b1b0f071448d55e0dbbc1c7db44c30e8c03638a670026e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_READ_AND_FAILURE_LOG.md",
+      "sha256": "9829c27a902f0aebaa9f6ae9b789656eca40b987a1d5b29bb8cda8679c7a530d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_SEAL.json",
+      "sha256": "275f99adc9ca2b43e0db8307647839697a195e9422d400922f7b46cb721d3ad3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_SOURCE_PINS.json",
+      "sha256": "6253eb765f321b3c22ae93ea65bed1bfbb98794d68421dfa8c91ed5b4eaef95a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "20b98b2fffc74338a4a91f2e45ec8864243c1490f6bddc675772ce3ede188aa3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_SPATIAL_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_SPATIAL_ROWS.jsonl",
+      "sha256": "e2e5280ec311b375b13b373391a977b9ae7ffc9ac144adc9049d4eefe18b0d21"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_VERIFICATION_EXECUTION.json",
+      "sha256": "97b7709d458a9f6f18aa460f30aab55c906437fecd58e00dd8aa91080b0bc521"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_VERIFICATION_REPORT.json",
+      "sha256": "950c46d0dedad12b0ff48a695ce3839a92547cdded6d5ce171af0c70257a8ebc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/POST_VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST_VERIFICATION_STDOUT.log",
+      "sha256": "950c46d0dedad12b0ff48a695ce3839a92547cdded6d5ce171af0c70257a8ebc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PRE.md",
+      "sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PRE_SEAL.json",
+      "sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_CHILD_1_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_CHILD_1_STDOUT.json",
+      "sha256": "821ebae1ed3687c713d800ea49059ff5990084dde0d267061b68bd7666f3292c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_CHILD_2_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_CHILD_2_STDOUT.json",
+      "sha256": "a284fe332064c6c1ed06fb2502e480f938ef8006b27699c66829a2ab2955944e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_COMPARISON.md",
+      "sha256": "cc227e136278e1a6339a93b029ae61b6243aa9570a13d989337ec3b7fa4c6039"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "cae4400d76a71a24e064cbd2ef7df77a50f12d783fa1e7d1bd952168c2b99f27"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_COMPLETE_PRIMARY_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_COMPLETE_PRIMARY_STDOUT.log",
+      "sha256": "48052dcd49f0805b748b59b1e41a6e1972d0f13a290e56f96952cd93c09b3a03"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_FINAL_BINDING_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_FINAL_BINDING_VERIFICATION.json",
+      "sha256": "349344248311001ece66ddb0b9089e524c7db20766e2a55cb3f18b784f0075a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_COUNT_ROWS_000.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_COUNT_ROWS_000.jsonl",
+      "sha256": "ee9829a4f7d48a0419e8e45676debff878b5a536898185f4e6fa9d9ccffa310c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_COUNT_ROWS_036.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_COUNT_ROWS_036.jsonl",
+      "sha256": "9aba8d681e0eb1e89c45d4313d42c83e19092747015c60bb175484df1e6a68e3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_COUNT_ROWS_072.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_COUNT_ROWS_072.jsonl",
+      "sha256": "b877ceba9639d1141d9f6044f75fbb85cb1fbed144b524c0f86ecbcf86b6aaad"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_HISTORY_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_HISTORY_ROWS.jsonl",
+      "sha256": "df980443079f601dd170f1cb545cc384ef4084de669e92f1e49dddcf76eefa37"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_POWER_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_POWER_ROWS.jsonl",
+      "sha256": "64a4be8ae4ad74083410aeee544c406ee357bfc8ccdf41b44192590c65d3e0c4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_NUMBER_SAME_SECTOR_ROWS.jsonl",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_NUMBER_SAME_SECTOR_ROWS.jsonl",
+      "sha256": "f6ac5d166fe202aa50d4554afca1f0aa5f67981d55478f7e794e695abaa97cb4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_READ_AND_FAILURE_LOG.md",
+      "sha256": "5aec0e7d536a912d92a68005628ccc4cf70cb32cf21433f6e1ba5c202ae4e6d0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_REFRESH_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_REFRESH_EXECUTION.json",
+      "sha256": "404b67751fcf82973c5b3762ebd68a71ba5750d1f8aaa91f98f257cd81b4c866"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_REFRESH_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_REFRESH_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_REFRESH_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_REFRESH_STDOUT.log",
+      "sha256": "349344248311001ece66ddb0b9089e524c7db20766e2a55cb3f18b784f0075a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "bb9a99f09f45bedd7e1c1a833aea07166b2e690529e43727d03fe394de41e6c9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_SOURCE_PINS_INITIAL.json",
+      "sha256": "7c9ff3f23766d41461350079ba55ff46f534d5476d51ce25d10bf84b77579f7c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_VERIFICATION_REPORT.json",
+      "sha256": "64e45287750cb62ce187353bd60655cc6a8b7e52dfdc88be8c1d206798e3644b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_VERIFIER_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_VERIFIER_EXECUTION.json",
+      "sha256": "a763ade8565cb4dc34b2724b357e9481f11bd8044f8229e6589b587fcbffdedb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_VERIFIER_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_VERIFIER_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_VERIFIER_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PUBLICATION_VERIFIER_STDOUT.log",
+      "sha256": "64e45287750cb62ce187353bd60655cc6a8b7e52dfdc88be8c1d206798e3644b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/READ_AND_FAILURE_LOG.md",
+      "sha256": "df508a8d265f55d17d062c846e285b18d1243acf3cd046e6a44b052266efa6ac"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/SOURCE_PINS.json",
+      "sha256": "962ebbd7bfb080193c286c31397ce96fa96e0f51259711b36f44f59fd6bd60fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/SOURCE_PINS_INITIAL.json",
+      "sha256": "9ca1d4f85fcaea0233a9b76a6c8c0d921c310b1f1fb240620f4b05cee5cf28a0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/VERIFICATION_EXECUTION.json",
+      "sha256": "cd2182b28213f64513054dfb8acd098cb8bea5b1376a145c8a92f8107d1335d6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/VERIFICATION_REPORT.json",
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/VERIFICATION_STDOUT.log",
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/covariance_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/covariance_certificate.py",
+      "sha256": "4ec649497da93c54658e91f52a07cc837ee8c0b43dc062c2df13758bffbf4c59"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/diagnose_subtraction.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/diagnose_subtraction.py",
+      "sha256": "3c8b0816233ad8db0d8c59e03acf3487edf269ac85c80d48fd6730910e387586"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_verify.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/post_verify.py",
+      "sha256": "4dbc8fea9654652b3e21605b9faa602b5194a5ebd13fa25703c31b59699a13c3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_COMPARISON.md",
+      "sha256": "6d5aee141dc5a8e212d3ce4c4f48f6ffe74ccaaca5cc176cbc1becef4e8bf6a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_FINAL_BINDING_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_FINAL_BINDING_VERIFICATION.json",
+      "sha256": "80f9f2f6165e0130de94174098e39e54f9f3284538185ec6555ddb255dd6749d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_READ_AND_FAILURE_LOG.md",
+      "sha256": "31ad43d6015a11c0704563c772533542ffaf9bd6147c795c4fd41f09bc6c7d06"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_REFRESH_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_REFRESH_EXECUTION.json",
+      "sha256": "e95a278f82df9b8b7c4eb24ca8d221be9ed19887e41bcca6c429e9c453215f12"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_REFRESH_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_REFRESH_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_REFRESH_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_REFRESH_STDOUT.log",
+      "sha256": "80f9f2f6165e0130de94174098e39e54f9f3284538185ec6555ddb255dd6749d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_history/refresh_before_wording/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_history/refresh_before_wording/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "54c008d7d2295f22f01a34a90fa81127b74af884eba9e1eed045389081a58598"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_refresh.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_refresh.py",
+      "sha256": "00c50def189b79cadddfc28a355cf86482edfed5bac523448507a33961085fe2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_verify.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/publication_verify.py",
+      "sha256": "1350cb551484f76531799472d89befca42945b42f74f12a5f53d00960943d652"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/two_detector_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/two_detector_controls.py",
+      "sha256": "7c1c296790b00c33a93708ad52f6c89955d9c96f021e2268152410f7362dd713"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/verify_evidence.py",
+      "sha256": "a858150ebb26d9e02d2f239e1f8b3e193d6fa88dac84c6dd86db05b52f9aea58"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/CONTROL_ATTEMPT_01_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/CONTROL_ATTEMPT_01_EXECUTION.json",
+      "sha256": "d51e10dff440dffc4426ac691a95bc29f133c5bcdadab52e576db728b9a9b23c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/CONTROL_ATTEMPT_01_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/CONTROL_ATTEMPT_01_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/CONTROL_ATTEMPT_01_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/CONTROL_ATTEMPT_01_STDOUT.json",
+      "sha256": "640f6e62da99070fe780ec6807a288073b55622d1aefabb4d4db9b15ee065c37"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/EVIDENCE_VERIFICATION.json",
+      "sha256": "2c8314bd74df698db1d7c26242143c4a7d3f69e2238d1f9045ebd48879f83d3b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/EVIDENCE_VERIFICATION_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/EVIDENCE_VERIFICATION_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "sha256": "fe6fbc8a4ff3226f35470880817775c70067fe709b5c8926b314fa8ff743a0a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST.md",
+      "sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_ATTEMPT_02_EXECUTION.json",
+      "sha256": "c76be4e38dde3a0dc5c2ecfde9e279990f74e0a9e5cd09199c01a6d3bf22bce1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_ATTEMPT_02_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_ATTEMPT_02_STDOUT.json",
+      "sha256": "0456f95cd939a4c36811aa3d9f3ba1c6a01dcb5892b064d60da4bb61e5a66a2f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_EXECUTION.json",
+      "sha256": "571b7845f013f294f1063bd527e5db4df0dbca724962729149d2be47e9da019a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_FAILURE_HISTORY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_FAILURE_HISTORY.json",
+      "sha256": "86dc00e526cdd82252084de3e95daeb1b39971c6ce9cb0ee70d382214a35df80"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_STDERR.txt",
+      "sha256": "509c07517684ecd62f726748f67f59ccd4aa14a50bda99d0ac3ba5dc8b79416e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_BINDING_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_BINDING_STDOUT.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_CHRONOLOGY_ADDENDUM.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_CHRONOLOGY_ADDENDUM.md",
+      "sha256": "779a1ee05b5bde456fc958bd2624cccc1e315ed0540e5847ea8e613f310a2ae1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_CHRONOLOGY_ADDENDUM_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_CHRONOLOGY_ADDENDUM_SEAL.json",
+      "sha256": "122752e6e420a095cb1f7c9a0ab30da49b3711ecdfcfef9b821788bf3d12fe1d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_CORRECTIONS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_CORRECTIONS.json",
+      "sha256": "5a0097a55805058d3dc7c26fd78a9fcd41c254ba95691702d1b088c6c68e3a00"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_SEAL.json",
+      "sha256": "43f565d7b9e362ca13e012bfadbe5b7e05b2ce22abb2c4a9ef3f24cd63d6099b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_SEAL_EXECUTION.json",
+      "sha256": "3ee5db0f3c813e483e5dd6c1b8f0f52feddfa2fdc20f2af682a76c77c5600ab4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST_SOURCE_PINS.json",
+      "sha256": "aee655b5bb3bb333c408c9f71c73176130f2916e88e7c2d295dba1c5e92c36ab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/PRE.md",
+      "sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/PRE_SEAL_EXECUTION.json",
+      "sha256": "5ec5067821547ce3415ca0d4ab87509a82168f5f2a60b2c460d1bc3cdc7a7f78"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/PRE_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/SOURCE_PINS.json",
+      "sha256": "e1d31f7110202da90887290645df65e8f6f4ce151d9f7643aa850a574a2c01e2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/number_offset_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/number_offset_control.py",
+      "sha256": "600f2abcd718c2c348d69039135e91d9a419bd2b0403316ce4e20eeabbcf592b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_bind_and_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/post_bind_and_check.py",
+      "sha256": "4bc6b134377e4339a92b286f379d916fc2c2dde2fc6df991993ca3c7c21ee297"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_history/post_bind_and_check_attempt_01.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/post_history/post_bind_and_check_attempt_01.py",
+      "sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/seal_post.py",
+      "sha256": "766da3f7b8a343f08621cb3905840f3b4d7dde72bdecad19a74c97983dc01b1a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/seal_pre.py",
+      "sha256": "f57563265b488c35458f5941eaf653a9e2f2c389efd89612d9c59c17d387be0e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/verify_evidence.py",
+      "sha256": "6a0a63b39453586089d3cf6cd2b7da0fd5bfcf4ce8e77e4c25ab553fec5a156b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "sha256": "b09cbbe9bf4a83be75d18b087b24055fd617224ef15d432393ad8917ba26bc6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FIRST_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/THIRTY_FIRST_PRE_ROOT_VERIFICATION.json",
+      "sha256": "1836c8c303a22101d3780578e6db461be26d68a36915878e0777e5023f0a0b15"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FIRST_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/THIRTY_FIRST_POST_ROOT_VERIFICATION.json",
+      "sha256": "9058a11a0422ec5847e310aae6ab273ee57775d11b8ab78d12ff6cf143afe7fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SECOND_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/THIRTY_SECOND_PRE_ROOT_VERIFICATION.json",
+      "sha256": "7d68867d691c7bad7ca5e871dd67d9140be2182ef878f3e9bfde8cbc771fcc9b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SECOND_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/THIRTY_SECOND_POST_ROOT_VERIFICATION.json",
+      "sha256": "b620a894b7b2a9cc96124692fce35a05f4a91f9d1107d5494918cd99fd59783a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/COUNT_INTERPRETATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8297fa09debe7f5823ef4d94cb743b5ba5e3a3cbc9f69247fa5c54c34b8b3327"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/COUNT_INTERPRETATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d1252aea107ea5f4e1e99b510581ac8ef0e3f967b1256222aeb950081f096533"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/COUNT_INTERPRETATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "238993bcb9430c6c4509c6d6435d589b34735acbb9c1955e69e4df633ac493de"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/COUNT_INTERPRETATION_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "859e3d6d414c435a55b3bd4688b09535c84694cf31ecf1b240515e6e582d5d1c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_FINAL_REVIEW.md",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/COUNT_INTERPRETATION_FINAL_REVIEW.md",
+      "sha256": "3f893a09df916fce56bac09df39c3a0b7ed27b6678ebf69a53854ce0c5f46581"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SCOPE_INCIDENT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/EARLIER_PUBLICATION_SCOPE_INCIDENT.json",
+      "sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536"
+    }
+  ]
+}

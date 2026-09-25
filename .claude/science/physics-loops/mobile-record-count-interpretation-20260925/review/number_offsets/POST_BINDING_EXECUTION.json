@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-25T01:24:12.285249+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_bind_and_check.py"
+  ],
+  "source_sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49",
+  "elapsed_seconds": 0.07671545795165002,
+  "exit_code": 1,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "509c07517684ecd62f726748f67f59ccd4aa14a50bda99d0ac3ba5dc8b79416e",
+  "scope": "Own binding and stored-row arithmetic only; no author program run."
+}

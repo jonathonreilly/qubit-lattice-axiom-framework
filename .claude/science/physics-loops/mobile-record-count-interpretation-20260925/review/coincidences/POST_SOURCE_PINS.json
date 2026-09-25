@@ -1,0 +1,218 @@
+{
+  "captured_utc": "2026-09-25T01:04:34.752563+00:00",
+  "phase": "Released-source POST; PRE sealed before author disclosure",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stderr",
+      "snapshot": "post_sources/two-detector-coincidence-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stdout",
+      "snapshot": "post_sources/two-detector-coincidence-personal/CONTROL.stdout",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/EXECUTION.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/EXECUTION.json",
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019",
+      "bytes": 309,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7",
+      "bytes": 1780,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92",
+      "bytes": 4487,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "snapshot": "post_sources/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "bytes": 14782,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/coincidence_controls.py",
+      "snapshot": "post_sources/two-detector-coincidence-personal/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "bytes": 5561,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb",
+      "bytes": 1294,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "sha256": "8b2a7452d211da8ec198891806971a528ebaca89201d1aca9d2919f3774f1a1c",
+      "bytes": 424,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "snapshot": "post_sources/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "bytes": 684,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "snapshot": "post_sources/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "sha256": "b09cbbe9bf4a83be75d18b087b24055fd617224ef15d432393ad8917ba26bc6e",
+      "bytes": 719,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE.md",
+      "snapshot": null,
+      "sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+      "bytes": 27135,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE_SEAL.json",
+      "snapshot": null,
+      "sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+      "bytes": 8671,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/SOURCE_PINS.json",
+      "snapshot": null,
+      "sha256": "962ebbd7bfb080193c286c31397ce96fa96e0f51259711b36f44f59fd6bd60fa",
+      "bytes": 10581,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_REPORT.json",
+      "snapshot": null,
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2",
+      "bytes": 2028,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    }
+  ],
+  "author_scientific_members_verified": 8,
+  "metadata_addendum_actual_filename": "AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+  "dispatch_name_lookup": "ADDENDUM_SEAL.json did not exist; the uniquely matching supplied SHA resolved the actual released seal.",
+  "unrelated_source_inventory_entries": "Read as metadata inside the expressly released SOURCE_PINS.json only; no referenced unrelated source/packet was opened.",
+  "author_control_executions_by_checker": 0,
+  "refreshed_utc": "2026-09-25T01:15:05.469128+00:00",
+  "read_coverage": [
+    "Complete released root argument, source, source pins, root review and two qualifications",
+    "All30 Fock moment rows, all120 finite-g rows, all16 spatial rows with every scientific field",
+    "Complete own POST verifier and all30/120/16 comparison rows plus full report",
+    "Exact root output/stdout/empty-stderr/execution binding; complete own PRE seal and live origin hashes"
+  ],
+  "scope_dispositions": {
+    "even_translation": "Required for the unchanged physical A/B preparation; already supplied root qualification; all executed spatial rows comply.",
+    "no_jump_proof": "Sufficient on the explicitly smooth initial and once/twice-marked vectors; no evolved-vector domain invariance presumed.",
+    "static_low_band_diagonal": "Supported after source release for each fixed positive cutoff, even separations and successive parameter choices; not blind PRE work or uniform finite laboratory accuracy.",
+    "rational_L12_certificate": "Own sealed PRE-only work; never attributed to root-before-disclosure derivation.",
+    "full_band_rows": "Four epsilon3.5 rows are full-band controls, beyond the stated epsilon<=2 low-band example range.",
+    "author_executions_by_checker": 0,
+    "audit_or_publication_mutation": false
+  },
+  "unchanged_prior_origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "snapshot_already_in_immutable_PRE": "sources/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "snapshot_already_in_immutable_PRE": "sources/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "snapshot_already_in_immutable_PRE": "sources/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "snapshot_already_in_immutable_PRE": "sources/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "snapshot_already_in_immutable_PRE": "sources/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "snapshot_already_in_immutable_PRE": "sources/literature-photodetection/brouri-quant-ph-0007032v1.pdf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PRE.md",
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/PRE.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PRE_SEAL.json",
+      "sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/PRE_SEAL.json"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST.md",
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/POST.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_SEAL.json",
+      "sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/POST_SEAL.json"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_COMPARISON.md",
+      "sha256": "c24e8e0dcd6df868a59f26e6059f4d19daafdf2604e509e8fc46937fdc73c415",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/PUBLICATION_COMPARISON.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "821c8916b22e267c19129e8e8806e8c3c566875f602ee839e4d54b2bc7763911",
+      "snapshot_already_in_immutable_PRE": "sources/optical-band-response-independent/PUBLICATION_COMPARISON_SEAL.json"
+    }
+  ],
+  "unchanged_instruction_origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "snapshot_already_in_immutable_PRE": "instructions/AGENTS.md"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "snapshot_already_in_immutable_PRE": "instructions/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "snapshot_already_in_immutable_PRE": "instructions/physics-claim-reviewer_SKILL.md"
+    }
+  ]
+}

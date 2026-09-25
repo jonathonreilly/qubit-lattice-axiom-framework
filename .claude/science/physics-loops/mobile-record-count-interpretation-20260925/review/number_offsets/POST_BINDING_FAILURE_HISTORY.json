@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "category": "Own verifier metadata-schema error, not a physics discrepancy",
+  "explanation": "The author seal maps file names to objects containing sha256 and bytes. The first verifier compared a digest to that entire object instead of its sha256 field. All source-origin hashes and PRE/publication seals had already passed before this assertion.",
+  "source": "post_history/post_bind_and_check_attempt_01.py",
+  "source_sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49",
+  "execution": "POST_BINDING_EXECUTION.json",
+  "stdout": "POST_BINDING_STDOUT.json",
+  "stderr": "POST_BINDING_STDERR.txt",
+  "repair": "Read each entry sha256 and bytes; rerun only own read-only binding verifier.",
+  "author_program_executed": false
+}

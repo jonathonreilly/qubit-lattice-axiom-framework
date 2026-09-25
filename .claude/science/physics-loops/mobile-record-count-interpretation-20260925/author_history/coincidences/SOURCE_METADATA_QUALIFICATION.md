@@ -1,0 +1,3 @@
+# Source-disposition metadata qualification
+
+The original author seal and all scientific files remain unchanged. In SOURCE_PINS.json, the field named unrelated_changed_science_not_imported contains the complete inventory delta, including the root's own PR9150. That field name is overly broad: PR9150 at cb0ad485403605fa007132a73d8feaac6b6c2d81 was fully read, reviewed and explicitly used as the optical-scope parent listed above. Only the other newly observed PRs9148,9149,9151,9152 were unread and not imported. No existing head changed and main remained0e6ad8285096ed668816f18caaa6fbbfbd9c50e8. This corrects inventory-disposition wording, not a source hash or scientific result.

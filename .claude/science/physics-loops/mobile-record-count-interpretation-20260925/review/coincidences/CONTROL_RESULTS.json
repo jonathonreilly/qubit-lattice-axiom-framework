@@ -1,0 +1,1845 @@
+{
+  "scope": "Independent primitive original marked paths/Gauss and harmonic field consistency controls. No author reuse, full dynamical simulation, finite-g certificate or experimental fit.",
+  "primitive": {
+    "L": 12,
+    "vertices": 1728,
+    "disjoint_charge_flow_and_mark_supports": true,
+    "integer_common_flows": [
+      {
+        "0": -1,
+        "1": -1,
+        "2": 2,
+        "3": -1,
+        "4": 1,
+        "468": -2,
+        "469": -1,
+        "472": 1,
+        "473": 1,
+        "936": -1,
+        "937": -1
+      },
+      {
+        "2593": -1,
+        "2594": -1,
+        "2595": 2,
+        "2596": -1,
+        "2597": 1,
+        "3060": -2,
+        "3061": -1,
+        "3064": 1,
+        "3065": 1,
+        "3528": -1,
+        "3529": -1
+      }
+    ],
+    "loop_edges": [
+      {
+        "2": 1,
+        "4": -1,
+        "468": -1,
+        "469": 1
+      },
+      {
+        "2595": 1,
+        "2597": -1,
+        "3060": -1,
+        "3061": 1
+      }
+    ],
+    "joint_Gram_coefficients": [
+      {
+        "shift": [],
+        "coefficient": "1"
+      },
+      {
+        "shift": [
+          [
+            2,
+            -1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            468,
+            1
+          ],
+          [
+            469,
+            -1
+          ]
+        ],
+        "coefficient": "-1/2"
+      },
+      {
+        "shift": [
+          [
+            2,
+            -1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            468,
+            1
+          ],
+          [
+            469,
+            -1
+          ],
+          [
+            2595,
+            -1
+          ],
+          [
+            2597,
+            1
+          ],
+          [
+            3060,
+            1
+          ],
+          [
+            3061,
+            -1
+          ]
+        ],
+        "coefficient": "1/4"
+      },
+      {
+        "shift": [
+          [
+            2,
+            -1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            468,
+            1
+          ],
+          [
+            469,
+            -1
+          ],
+          [
+            2595,
+            1
+          ],
+          [
+            2597,
+            -1
+          ],
+          [
+            3060,
+            -1
+          ],
+          [
+            3061,
+            1
+          ]
+        ],
+        "coefficient": "1/4"
+      },
+      {
+        "shift": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            468,
+            -1
+          ],
+          [
+            469,
+            1
+          ]
+        ],
+        "coefficient": "-1/2"
+      },
+      {
+        "shift": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            468,
+            -1
+          ],
+          [
+            469,
+            1
+          ],
+          [
+            2595,
+            -1
+          ],
+          [
+            2597,
+            1
+          ],
+          [
+            3060,
+            1
+          ],
+          [
+            3061,
+            -1
+          ]
+        ],
+        "coefficient": "1/4"
+      },
+      {
+        "shift": [
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            468,
+            -1
+          ],
+          [
+            469,
+            1
+          ],
+          [
+            2595,
+            1
+          ],
+          [
+            2597,
+            -1
+          ],
+          [
+            3060,
+            -1
+          ],
+          [
+            3061,
+            1
+          ]
+        ],
+        "coefficient": "1/4"
+      },
+      {
+        "shift": [
+          [
+            2595,
+            -1
+          ],
+          [
+            2597,
+            1
+          ],
+          [
+            3060,
+            1
+          ],
+          [
+            3061,
+            -1
+          ]
+        ],
+        "coefficient": "-1/2"
+      },
+      {
+        "shift": [
+          [
+            2595,
+            1
+          ],
+          [
+            2597,
+            -1
+          ],
+          [
+            3060,
+            -1
+          ],
+          [
+            3061,
+            1
+          ]
+        ],
+        "coefficient": "-1/2"
+      }
+    ],
+    "rows": [
+      {
+        "signs": [
+          -1,
+          -1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          -1,
+          -1
+        ],
+        "order": [
+          1,
+          0
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          -1,
+          1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          -1,
+          1
+        ],
+        "order": [
+          1,
+          0
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          1,
+          -1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          1,
+          -1
+        ],
+        "order": [
+          1,
+          0
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          1,
+          1
+        ],
+        "order": [
+          0,
+          1
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      },
+      {
+        "signs": [
+          1,
+          1
+        ],
+        "order": [
+          1,
+          0
+        ],
+        "initial_branches": 4,
+        "surviving_paths_per_input_per_step": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "output_branches": 4,
+        "initial_record_count": 872,
+        "final_record_count": 876,
+        "joint_Laurent_terms": 9,
+        "exact_Gauss_and_product_effect": true
+      }
+    ]
+  },
+  "reference": [
+    {
+      "L": 12,
+      "separation": [
+        6,
+        0,
+        0
+      ],
+      "v": 0.7958402487831568,
+      "c": -0.00019953873642662712,
+      "normalized_covariance": -0.0002507271236051742,
+      "leading_rows": [
+        {
+          "packet": "bright_at_first",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": -0.00019953873642662712,
+          "t": -0.0002507271236051742,
+          "A": 0.7958402487831567,
+          "B": 5.0029773432059214e-08,
+          "r": -0.00019953873642662712,
+          "vacuum_joint_coefficient": 0.15834044530366292,
+          "one_joint_coefficient": 0.4750213956345497,
+          "raw_vacuum": 1.000000125728181,
+          "raw_one": 1.0000001257281652,
+          "independent_vacuum_subtracted": 2.5,
+          "joint_vacuum_calibrated": 2.0
+        },
+        {
+          "packet": "phase_quarter",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": -0.00019953873642662712,
+          "t": -0.0002507271236051742,
+          "A": 0.3979201243915783,
+          "B": 0.3979201243915783,
+          "r": -9.976936821331354e-05,
+          "vacuum_joint_coefficient": 0.15834044530366292,
+          "one_joint_coefficient": 0.47502133591098866,
+          "raw_vacuum": 1.000000125728181,
+          "raw_one": 0.7500000942961359,
+          "independent_vacuum_subtracted": 3.7718454306794587e-07,
+          "joint_vacuum_calibrated": 2.514563620452972e-07
+        },
+        {
+          "packet": "opposed_covariance",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": -0.00019953873642662712,
+          "t": -0.0002507271236051742,
+          "A": 0.397820355023365,
+          "B": 0.39782035502336516,
+          "r": 0.3978203550233651,
+          "vacuum_joint_coefficient": 0.15834044530366292,
+          "one_joint_coefficient": 0.4747831344745293,
+          "raw_vacuum": 1.000000125728181,
+          "raw_one": 0.7498119900301708,
+          "independent_vacuum_subtracted": -0.0010030342225938115,
+          "joint_vacuum_calibrated": -0.001003160013845484
+        },
+        {
+          "packet": "aligned_covariance",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": -0.00019953873642662712,
+          "t": -0.0002507271236051742,
+          "A": 0.39801989375979174,
+          "B": 0.39801989375979174,
+          "r": -0.39801989375979174,
+          "vacuum_joint_coefficient": 0.15834044530366292,
+          "one_joint_coefficient": 0.47525953734744825,
+          "raw_vacuum": 1.000000125728181,
+          "raw_one": 0.750188080691936,
+          "independent_vacuum_subtracted": 0.0010027827662475739,
+          "joint_vacuum_calibrated": 0.0010026571010897782
+        }
+      ],
+      "finite_g_rows": [
+        {
+          "packet": "bright_at_first",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.0038047681572074645,
+            0.18116289426237558,
+            0.06168280664090692,
+            0.011174637066281039
+          ],
+          "joint_scaled": 0.436509260401603,
+          "joint_leading": 0.4750213956345497,
+          "independent_subtracted_exact": 2.4363327764717884,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.6653345369377348e-16,
+          "direct_subtraction_error": 3.793854119749085e-11,
+          "direct_subtraction_condition_scale": 33383415.222451206,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.0743161686310164e-16,
+          "scaled_denominator_error": 4.46415078648734e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934946000005454,
+            0.04712173376078915,
+            0.015790804012093037,
+            0.0007440901541080967
+          ],
+          "joint_scaled": 0.4650563463175604,
+          "joint_leading": 0.4750213956345497,
+          "independent_subtracted_exact": 2.4840831940475465,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 3.469446951953614e-17,
+          "direct_subtraction_error": 5.91294124774322e-10,
+          "direct_subtraction_condition_scale": 32197501.0097791,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 5.1320223907350496e-17,
+          "scaled_denominator_error": 2.9840128623131325e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771183675271026e-05,
+            0.01189809203945301,
+            0.003971295211658965,
+            4.725084185345382e-05
+          ],
+          "joint_scaled": 0.4725084185345381,
+          "joint_leading": 0.4750213956345497,
+          "independent_subtracted_exact": 2.4960207985074274,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 2.6020852139652106e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 5.574175343525667e-09,
+          "direct_subtraction_condition_scale": 31909805.731406093,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 2.437744401370247e-16,
+          "scaled_denominator_error": 9.4526387616924e-18
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438720494763e-07,
+            0.002981928011985077,
+            0.0009943057861391742,
+            2.964948648450516e-06
+          ],
+          "joint_scaled": 0.4743917837520825,
+          "joint_leading": 0.4750213956345497,
+          "independent_subtracted_exact": 2.499005199626577,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 2.6020852139652106e-18,
+          "direct_subtraction_error": 5.850333550938558e-10,
+          "direct_subtraction_condition_scale": 31838417.55583747,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.7745042007592673e-16,
+          "scaled_denominator_error": 6.170584000505888e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.0038047681572074645,
+            0.12142284669613748,
+            0.12142284669613748,
+            0.011174635705565181
+          ],
+          "joint_scaled": 0.43650920724863984,
+          "joint_leading": 0.47502133591098866,
+          "independent_subtracted_exact": 3.6117501562172396e-07,
+          "independent_subtracted_limit": 3.7718454306794587e-07,
+          "quadrature_error": 4.163336342344337e-17,
+          "quadrature_order_change": 1.249000902703301e-16,
+          "direct_subtraction_error": 1.3676584130919262e-15,
+          "direct_subtraction_condition_scale": 8.39447163339507,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.9066404875009315e-16,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934946000005454,
+            0.03145626790164583,
+            0.03145626790164583,
+            0.0007440900612975764
+          ],
+          "joint_scaled": 0.46505628831098517,
+          "joint_leading": 0.47502133591098866,
+          "independent_subtracted_exact": 3.7318216119669726e-07,
+          "independent_subtracted_limit": 3.7718454306794587e-07,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 2.7755575615628914e-17,
+          "direct_subtraction_error": 1.734473601257367e-16,
+          "direct_subtraction_condition_scale": 8.096265965944262,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.660322709895641e-17,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771183675271026e-05,
+            0.007934693376400534,
+            0.007934693376400534,
+            4.725083592450481e-05
+          ],
+          "joint_scaled": 0.472508359245048,
+          "joint_leading": 0.47502133591098866,
+          "independent_subtracted_exact": 3.761839475995131e-07,
+          "independent_subtracted_limit": 3.7718454306794587e-07,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 8.253556800681683e-16,
+          "direct_subtraction_condition_scale": 8.023923159377864,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.296512390799245e-16,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438720494763e-07,
+            0.00198811683658709,
+            0.00198811683658709,
+            2.9649482758583985e-06
+          ],
+          "joint_scaled": 0.47439172413734365,
+          "joint_leading": 0.47502133591098866,
+          "independent_subtracted_exact": 3.7693439420079867e-07,
+          "independent_subtracted_limit": 3.7718454306794587e-07,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 1.1120735798566704e-15,
+          "direct_subtraction_condition_scale": 8.005972148832173,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.7573624981512397e-16,
+          "scaled_denominator_error": 1.0164395367051602e-16
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.0038047681572074645,
+            0.12140786824584718,
+            0.12140786824584719,
+            0.011169208626766581
+          ],
+          "joint_scaled": 0.4362972119830695,
+          "joint_leading": 0.4747831344745293,
+          "independent_subtracted_exact": -0.0010030502363067473,
+          "independent_subtracted_limit": -0.0010030342225938115,
+          "quadrature_error": 5.551115123125783e-17,
+          "quadrature_order_change": 1.3877787807814457e-16,
+          "direct_subtraction_error": 1.1837319319196737e-15,
+          "direct_subtraction_condition_scale": 8.396643206289017,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.6498944497982688e-16,
+          "scaled_denominator_error": 5.082197683525801e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934946000005454,
+            0.03145234014445103,
+            0.03145234014445104,
+            0.0007437198958401994
+          ],
+          "joint_scaled": 0.46482493490012455,
+          "joint_leading": 0.4747831344745293,
+          "independent_subtracted_exact": -0.0010030382259900942,
+          "independent_subtracted_limit": -0.0010030342225938115,
+          "quadrature_error": 2.0816681711721685e-17,
+          "quadrature_order_change": 4.163336342344337e-17,
+          "direct_subtraction_error": 1.7184604433895245e-15,
+          "direct_subtraction_condition_scale": 8.098312549020875,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.6367209205740305e-16,
+          "scaled_denominator_error": 2.0328790734103203e-16
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771183675271026e-05,
+            0.007933699644854046,
+            0.007933699644854048,
+            4.7227188905703506e-05
+          ],
+          "joint_scaled": 0.472271889057035,
+          "joint_leading": 0.4747831344745293,
+          "independent_subtracted_exact": -0.0010030352234408858,
+          "independent_subtracted_limit": -0.0010030342225938115,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 1.1965255175550027e-15,
+          "direct_subtraction_condition_scale": 8.025939481249926,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.8793543517204786e-16,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438720494763e-07,
+            0.0019878676611696754,
+            0.0019878676611696762,
+            2.9634622295442896e-06
+          ],
+          "joint_scaled": 0.47415395672708627,
+          "joint_leading": 0.4747831344745293,
+          "independent_subtracted_exact": -0.0010030344728054555,
+          "independent_subtracted_limit": -0.0010030342225938115,
+          "quadrature_error": 1.3010426069826053e-18,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 7.41594285980085e-16,
+          "direct_subtraction_condition_scale": 8.007980965483373,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.1709568751300657e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.0038047681572074645,
+            0.12143782514642783,
+            0.12143782514642783,
+            0.011180062784363787
+          ],
+          "joint_scaled": 0.4367212025142103,
+          "joint_leading": 0.47525953734744825,
+          "independent_subtracted_exact": 0.0010027667609034333,
+          "independent_subtracted_limit": 0.0010027827662475739,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.1102230246251565e-16,
+          "direct_subtraction_error": 5.78096598369271e-16,
+          "direct_subtraction_condition_scale": 8.392301182405717,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 8.079900223417973e-17,
+          "scaled_denominator_error": 1.5246593050577404e-16
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934946000005454,
+            0.03146019565884063,
+            0.03146019565884063,
+            0.0007444602267549535
+          ],
+          "joint_scaled": 0.4652876417218459,
+          "joint_leading": 0.47525953734744825,
+          "independent_subtracted_exact": 0.0010027787648796,
+          "independent_subtracted_limit": 0.0010027827662475739,
+          "quadrature_error": 1.3877787807814457e-17,
+          "quadrature_order_change": 4.163336342344337e-17,
+          "direct_subtraction_error": 1.2780575209259126e-15,
+          "direct_subtraction_condition_scale": 8.094220416955787,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.9610797962407178e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771183675271026e-05,
+            0.007935687107947023,
+            0.007935687107947023,
+            4.7274482943306116e-05
+          ],
+          "joint_scaled": 0.47274482943306106,
+          "joint_leading": 0.47525953734744825,
+          "independent_subtracted_exact": 0.0010027817659035844,
+          "independent_subtracted_limit": 0.0010027827662475739,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 8.844921323136745e-16,
+          "direct_subtraction_condition_scale": 8.021907850350905,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.3916486625592135e-16,
+          "scaled_denominator_error": 1.3552527156068803e-16
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438720494763e-07,
+            0.0019883660120045043,
+            0.0019883660120045043,
+            2.9664343221725083e-06
+          ],
+          "joint_scaled": 0.47462949154760126,
+          "joint_leading": 0.47525953734744825,
+          "independent_subtracted_exact": 0.001002782516161452,
+          "independent_subtracted_limit": 0.0010027827662475739,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 6.240667704826564e-16,
+          "direct_subtraction_condition_scale": 8.00396433975862,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 9.883153958783573e-17,
+          "scaled_denominator_error": 1.6940658945086004e-16
+        }
+      ]
+    },
+    {
+      "L": 12,
+      "separation": [
+        0,
+        0,
+        6
+      ],
+      "v": 0.7958402487831568,
+      "c": 0.0001533928202163341,
+      "normalized_covariance": 0.00019274323012799665,
+      "leading_rows": [
+        {
+          "packet": "bright_at_first",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": 0.0001533928202163341,
+          "t": 0.00019274323012799665,
+          "A": 0.7958402487831567,
+          "B": 2.9565427646939308e-08,
+          "r": 0.0001533928202163341,
+          "vacuum_joint_coefficient": 0.1583404371604879,
+          "one_joint_coefficient": 0.47502134677549956,
+          "raw_vacuum": 1.0000000742999056,
+          "raw_one": 1.0000000742998998,
+          "independent_vacuum_subtracted": 2.5,
+          "joint_vacuum_calibrated": 2.0
+        },
+        {
+          "packet": "phase_quarter",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": 0.0001533928202163341,
+          "t": 0.00019274323012799665,
+          "A": 0.3979201243915783,
+          "B": 0.3979201243915783,
+          "r": 7.669641010816704e-05,
+          "vacuum_joint_coefficient": 0.1583404371604879,
+          "one_joint_coefficient": 0.4750213114814636,
+          "raw_vacuum": 1.0000000742999056,
+          "raw_one": 0.7500000557249292,
+          "independent_vacuum_subtracted": 2.2289971656104336e-07,
+          "joint_vacuum_calibrated": 1.4859981104069556e-07
+        },
+        {
+          "packet": "opposed_covariance",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": 0.0001533928202163341,
+          "t": 0.00019274323012799665,
+          "A": 0.39784342798147015,
+          "B": 0.39784342798147027,
+          "r": -0.3978434279814702,
+          "vacuum_joint_coefficient": 0.1583404371604879,
+          "one_joint_coefficient": 0.47483819721115983,
+          "raw_vacuum": 1.0000000742999056,
+          "raw_one": 0.7498554634796235,
+          "independent_vacuum_subtracted": -0.0007710472204147459,
+          "joint_vacuum_calibrated": -0.0007711215489701566
+        },
+        {
+          "packet": "aligned_covariance",
+          "v1": 0.7958402487831568,
+          "v2": 0.7958402487831568,
+          "covariance": 0.0001533928202163341,
+          "t": 0.00019274323012799665,
+          "A": 0.39799682080168663,
+          "B": 0.39799682080168675,
+          "r": 0.3979968208016867,
+          "vacuum_joint_coefficient": 0.1583404371604879,
+          "one_joint_coefficient": 0.4752044257517675,
+          "raw_vacuum": 1.0000000742999056,
+          "raw_one": 0.7501445783140749,
+          "independent_vacuum_subtracted": 0.0007708986206092253,
+          "joint_vacuum_calibrated": 0.0007708243493370339
+        }
+      ],
+      "finite_g_rows": [
+        {
+          "packet": "bright_at_first",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.003804767973666466,
+            0.18116289426237558,
+            0.06168280356857929,
+            0.011174635982437372
+          ],
+          "joint_scaled": 0.43650921806395976,
+          "joint_leading": 0.47502134677549956,
+          "independent_subtracted_exact": 2.4363327779548,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.6653345369377348e-16,
+          "direct_subtraction_error": 6.5136247506814016e-09,
+          "direct_subtraction_condition_scale": 56490460.71392395,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.2317839730591934e-16,
+          "scaled_denominator_error": 4.826493861083213e-18
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934944737920497,
+            0.04712173376078915,
+            0.01579080320644514,
+            0.0007440900786837897
+          ],
+          "joint_scaled": 0.4650562991773685,
+          "joint_leading": 0.47502134677549956,
+          "independent_subtracted_exact": 2.4840831944470967,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 3.469446951953614e-17,
+          "direct_subtraction_error": 4.509661533091958e-09,
+          "direct_subtraction_condition_scale": 54483690.49048033,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 6.506093788394938e-17,
+          "scaled_denominator_error": 6.756847855756063e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771182867408474e-05,
+            0.01189809203945301,
+            0.0039712950078282065,
+            4.725083701109832e-05
+          ],
+          "joint_scaled": 0.4725083701109831,
+          "joint_leading": 0.47502134677549956,
+          "independent_subtracted_exact": 2.49602079860914,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 2.6020852139652106e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 1.5143350129420696e-08,
+          "direct_subtraction_condition_scale": 53996860.74163689,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.4091844876485542e-16,
+          "scaled_denominator_error": 8.516372090271808e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438212557923e-07,
+            0.002981928011985077,
+            0.0009943057350291792,
+            2.964948343764198e-06
+          ],
+          "joint_scaled": 0.4743917350022716,
+          "joint_leading": 0.47502134677549956,
+          "independent_subtracted_exact": 2.49900519965212,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 2.6020852139652106e-18,
+          "direct_subtraction_error": 1.2856311570885737e-08,
+          "direct_subtraction_condition_scale": 53876059.7059623,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.1151764675104352e-16,
+          "scaled_denominator_error": 7.61830516883854e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.003804767973666466,
+            0.12142284669613748,
+            0.12142284669613748,
+            0.011174635178313278
+          ],
+          "joint_scaled": 0.4365091866528623,
+          "joint_leading": 0.4750213114814636,
+          "independent_subtracted_exact": 2.1343877973219572e-07,
+          "independent_subtracted_limit": 2.2289971656104336e-07,
+          "quadrature_error": 4.163336342344337e-17,
+          "quadrature_order_change": 1.249000902703301e-16,
+          "direct_subtraction_error": 1.3393572159093675e-15,
+          "direct_subtraction_condition_scale": 8.394471485658837,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.8671859917660694e-16,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934944737920497,
+            0.03145626790164583,
+            0.03145626790164583,
+            0.0007440900238367947
+          ],
+          "joint_scaled": 0.4650562648979966,
+          "joint_leading": 0.4750213114814636,
+          "independent_subtracted_exact": 2.2053448235044634e-07,
+          "independent_subtracted_limit": 2.2289971656104336e-07,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 2.7755575615628914e-17,
+          "direct_subtraction_error": 1.2499908724604046e-16,
+          "direct_subtraction_condition_scale": 8.096265813296583,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.9172285609003235e-17,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771182867408474e-05,
+            0.007934693376400534,
+            0.007934693376400534,
+            4.7250833507346445e-05
+          ],
+          "joint_scaled": 0.47250833507346435,
+          "joint_leading": 0.4750213114814636,
+          "independent_subtracted_exact": 2.2230840800817734e-07,
+          "independent_subtracted_limit": 2.2289971656104336e-07,
+          "quadrature_error": 1.734723475976807e-18,
+          "quadrature_order_change": 6.938893903907228e-18,
+          "direct_subtraction_error": 4.949999133865455e-16,
+          "direct_subtraction_condition_scale": 8.023923005502326,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 7.77572111291972e-17,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438212557923e-07,
+            0.00198811683658709,
+            0.00198811683658709,
+            2.9649481235784053e-06
+          ],
+          "joint_scaled": 0.47439169977254475,
+          "joint_leading": 0.4750213114814636,
+          "independent_subtracted_exact": 2.2275188942281328e-07,
+          "independent_subtracted_limit": 2.2289971656104336e-07,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 9.26049792167457e-16,
+          "direct_subtraction_condition_scale": 8.00597199464967,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.4633967660063503e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.003804767973666466,
+            0.12141133220640157,
+            0.12141133220640159,
+            0.011170463181746483
+          ],
+          "joint_scaled": 0.4363462180369719,
+          "joint_leading": 0.47483819721115983,
+          "independent_subtracted_exact": -0.0007710566832528871,
+          "independent_subtracted_limit": -0.0007710472204147459,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.3877787807814457e-16,
+          "direct_subtraction_error": 1.3478801408339791e-15,
+          "direct_subtraction_condition_scale": 8.396140754375839,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.8781962988629044e-16,
+          "scaled_denominator_error": 1.6940658945086004e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934944737920497,
+            0.03145324848915468,
+            0.03145324848915468,
+            0.0007438054639338615
+          ],
+          "joint_scaled": 0.4648784149586634,
+          "joint_leading": 0.47483819721115983,
+          "independent_subtracted_exact": -0.0007710495861097666,
+          "independent_subtracted_limit": -0.0007710472204147459,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 2.7755575615628914e-17,
+          "direct_subtraction_error": 1.3161130171801538e-15,
+          "direct_subtraction_condition_scale": 8.097839005519225,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.0176589501393446e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771182867408474e-05,
+            0.007933929458139932,
+            0.007933929458139933,
+            4.723265516779771e-05
+          ],
+          "joint_scaled": 0.47232655167797705,
+          "joint_leading": 0.47483819721115983,
+          "independent_subtracted_exact": -0.000771047811837594,
+          "independent_subtracted_limit": -0.0007710472204147459,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 1.8590814651608945e-15,
+          "direct_subtraction_condition_scale": 8.025472936704892,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.919616690067166e-16,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438212557923e-07,
+            0.001987925286211006,
+            0.001987925286211007,
+            2.9638057447141343e-06
+          ],
+          "joint_scaled": 0.4742089191542614,
+          "joint_leading": 0.47483819721115983,
+          "independent_subtracted_exact": -0.0007710473682704012,
+          "independent_subtracted_limit": -0.0007710472204147459,
+          "quadrature_error": 8.673617379884035e-19,
+          "quadrature_order_change": 2.168404344971009e-18,
+          "direct_subtraction_error": 1.759334865292228e-15,
+          "direct_subtraction_condition_scale": 8.0075161567793,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.7789959859331513e-16,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0616827991298994,
+            0.0616827991298994,
+            0.003804767973666466,
+            0.12143436118587343,
+            0.12143436118587345,
+            0.011178807174880076
+          ],
+          "joint_scaled": 0.4366721552687529,
+          "joint_leading": 0.4752044257517675,
+          "independent_subtracted_exact": 0.0007708891615729465,
+          "independent_subtracted_limit": 0.0007708986206092253,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.249000902703301e-16,
+          "direct_subtraction_error": 1.330316065639714e-15,
+          "direct_subtraction_condition_scale": 8.392802879938763,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.8553661139564408e-16,
+          "scaled_denominator_error": 1.6940658945086004e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015790802042502508,
+            0.015790802042502508,
+            0.00024934944737920497,
+            0.03145928731413698,
+            0.03145928731413699,
+            0.0007443745837397283
+          ],
+          "joint_scaled": 0.4652341148373301,
+          "joint_leading": 0.4752044257517675,
+          "independent_subtracted_exact": 0.0007708962558356456,
+          "independent_subtracted_limit": 0.0007708986206092253,
+          "quadrature_error": 6.938893903907228e-18,
+          "quadrature_order_change": 3.469446951953614e-17,
+          "direct_subtraction_error": 1.5845614750875647e-15,
+          "direct_subtraction_condition_scale": 8.094693232175157,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.431083820293348e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0039712947133480605,
+            0.0039712947133480605,
+            1.5771182867408474e-05,
+            0.007935457294661137,
+            0.00793545729466114,
+            4.726901184689519e-05
+          ],
+          "joint_scaled": 0.47269011846895176,
+          "joint_leading": 0.4752044257517675,
+          "independent_subtracted_exact": 0.0007708980294149237,
+          "independent_subtracted_limit": 0.0007708986206092253,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 6.938893903907228e-18,
+          "direct_subtraction_error": 4.2435673031082644e-16,
+          "direct_subtraction_condition_scale": 8.02237367284726,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 6.675347543302932e-17,
+          "scaled_denominator_error": 1.0164395367051602e-16
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943056611891028,
+            0.0009943056611891028,
+            9.886438212557923e-07,
+            0.0019883083869631736,
+            0.001988308386963174,
+            2.9660905024426776e-06
+          ],
+          "joint_scaled": 0.47457448039082833,
+          "joint_leading": 0.4752044257517675,
+          "independent_subtracted_exact": 0.0007708984728105934,
+          "independent_subtracted_limit": 0.0007708986206092253,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 5.21175984313782e-16,
+          "direct_subtraction_condition_scale": 8.004428427954702,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 8.246990707153685e-17,
+          "scaled_denominator_error": 1.0164395367051602e-16
+        }
+      ]
+    },
+    {
+      "L": 16,
+      "separation": [
+        8,
+        0,
+        0
+      ],
+      "v": 0.7958588527704434,
+      "c": -5.9540180382285784e-05,
+      "normalized_covariance": -7.481248738394002e-05,
+      "leading_rows": [
+        {
+          "packet": "bright_at_first",
+          "v1": 0.7958588527704434,
+          "v2": 0.7958588527704434,
+          "covariance": -5.9540180382285784e-05,
+          "t": -7.481248738394002e-05,
+          "A": 0.7958588527704434,
+          "B": 4.454348993687269e-09,
+          "r": -5.9540180382285784e-05,
+          "vacuum_joint_coefficient": 0.15834783015578813,
+          "one_joint_coefficient": 0.475043495784914,
+          "raw_vacuum": 1.0000000111938165,
+          "raw_one": 1.0000000111938163,
+          "independent_vacuum_subtracted": 2.5,
+          "joint_vacuum_calibrated": 2.0
+        },
+        {
+          "packet": "phase_quarter",
+          "v1": 0.7958588527704434,
+          "v2": 0.7958588527704434,
+          "covariance": -5.9540180382285784e-05,
+          "t": -7.481248738394002e-05,
+          "A": 0.3979294263852217,
+          "B": 0.3979294263852217,
+          "r": -2.977009019114289e-05,
+          "vacuum_joint_coefficient": 0.15834783015578813,
+          "one_joint_coefficient": 0.4750434904673644,
+          "raw_vacuum": 1.0000000111938165,
+          "raw_one": 0.7500000083953624,
+          "independent_vacuum_subtracted": 3.358144961143312e-08,
+          "joint_vacuum_calibrated": 2.2387633074288744e-08
+        },
+        {
+          "packet": "opposed_covariance",
+          "v1": 0.7958588527704434,
+          "v2": 0.7958588527704434,
+          "covariance": -5.9540180382285784e-05,
+          "t": -7.481248738394002e-05,
+          "A": 0.3978996562950306,
+          "B": 0.3978996562950306,
+          "r": 0.3978996562950306,
+          "vacuum_joint_coefficient": 0.15834783015578813,
+          "one_joint_coefficient": 0.4749724120978852,
+          "raw_vacuum": 1.0000000111938165,
+          "raw_one": 0.7499438937830369,
+          "independent_vacuum_subtracted": -0.0002992611433522346,
+          "joint_vacuum_calibrated": -0.00029927233884383423
+        },
+        {
+          "packet": "aligned_covariance",
+          "v1": 0.7958588527704434,
+          "v2": 0.7958588527704434,
+          "covariance": -5.9540180382285784e-05,
+          "t": -7.481248738394002e-05,
+          "A": 0.39795919647541295,
+          "B": 0.39795919647541295,
+          "r": -0.39795919647541295,
+          "vacuum_joint_coefficient": 0.15834783015578813,
+          "one_joint_coefficient": 0.47511456883684366,
+          "raw_vacuum": 1.0000000111938165,
+          "raw_one": 0.7500561125134848,
+          "independent_vacuum_subtracted": 0.00029923875571928555,
+          "joint_vacuum_calibrated": 0.000299227563577435
+        }
+      ],
+      "finite_g_rows": [
+        {
+          "packet": "bright_at_first",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.06168419564416224,
+            0.06168419564416224,
+            0.0038049400322183458,
+            0.1811669059787243,
+            0.06168419631289601,
+            0.011175135108557525
+          ],
+          "joint_scaled": 0.4365287151780282,
+          "joint_leading": 0.475043495784914,
+          "independent_subtracted_exact": 2.4363312914555677,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 3.469446951953614e-17,
+          "quadrature_order_change": 1.1102230246251565e-16,
+          "direct_subtraction_error": 7.057658191200744e-08,
+          "direct_subtraction_condition_scale": 374960624.1176431,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.4508292550556737e-16,
+          "scaled_denominator_error": 3.086569323830678e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015791168246742506,
+            0.015791168246742506,
+            0.00024936099734409415,
+            0.04712282071576995,
+            0.015791168422102892,
+            0.0007441244066013241
+          ],
+          "joint_scaled": 0.46507775412582747,
+          "joint_leading": 0.475043495784914,
+          "independent_subtracted_exact": 2.4840828228576237,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 1.3877787807814457e-17,
+          "quadrature_order_change": 3.469446951953614e-17,
+          "direct_subtraction_error": 3.569021256311089e-08,
+          "direct_subtraction_condition_scale": 361640192.70910954,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.7910898889577462e-16,
+          "scaled_denominator_error": 2.2765080279064543e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.003971387363870603,
+            0.003971387363870603,
+            1.5771917769757678e-05,
+            0.011898369253661868,
+            0.003971387408237193,
+            4.725303435868956e-05
+          ],
+          "joint_scaled": 0.47253034358689555,
+          "joint_leading": 0.475043495784914,
+          "independent_subtracted_exact": 2.496020705714009,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 1.0408340855860843e-17,
+          "direct_subtraction_error": 6.6833973466629e-08,
+          "direct_subtraction_condition_scale": 358408742.68512833,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 1.9131390958702383e-16,
+          "scaled_denominator_error": 1.752253183645465e-17
+        },
+        {
+          "packet": "bright_at_first",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943288930503787,
+            0.0009943288930503787,
+            9.886899586110002e-07,
+            0.0029819976613462383,
+            0.0009943289041751786,
+            2.9650865000059783e-06
+          ],
+          "joint_scaled": 0.47441384000095643,
+          "joint_leading": 0.475043495784914,
+          "independent_subtracted_exact": 2.4990051764284775,
+          "independent_subtracted_limit": 2.5,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 2.6020852139652106e-18,
+          "direct_subtraction_error": 1.684538508683886e-08,
+          "direct_subtraction_condition_scale": 357606896.77850205,
+          "direct_ratio_assertion_applicable": false,
+          "scaled_numerator_error": 2.113045900437976e-17,
+          "scaled_denominator_error": 3.2304538673848414e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.06168419564416224,
+            0.06168419564416224,
+            0.0038049400322183458,
+            0.12142555081144327,
+            0.12142555081144327,
+            0.011175134987405097
+          ],
+          "joint_scaled": 0.4365287104455115,
+          "joint_leading": 0.4750434904673644,
+          "independent_subtracted_exact": 3.2156057933865685e-08,
+          "independent_subtracted_limit": 3.358144961143312e-08,
+          "quadrature_error": 2.7755575615628914e-17,
+          "quadrature_order_change": 1.1102230246251565e-16,
+          "direct_subtraction_error": 2.2460378262626217e-16,
+          "direct_subtraction_condition_scale": 8.394480824548765,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 3.1313184116233135e-17,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015791168246742506,
+            0.015791168246742506,
+            0.00024936099734409415,
+            0.03145699448125623,
+            0.03145699448125623,
+            0.0007441243983378481
+          ],
+          "joint_scaled": 0.465077748961155,
+          "joint_leading": 0.4750434904673644,
+          "independent_subtracted_exact": 3.322510169196442e-08,
+          "independent_subtracted_limit": 3.358144961143312e-08,
+          "quadrature_error": 2.0816681711721685e-17,
+          "quadrature_order_change": 3.469446951953614e-17,
+          "direct_subtraction_error": 9.52399074714962e-16,
+          "direct_subtraction_condition_scale": 8.096267894332225,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.4608498837665448e-16,
+          "scaled_denominator_error": 0.0
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.003971387363870603,
+            0.003971387363870603,
+            1.5771917769757678e-05,
+            0.007934878308766234,
+            0.007934878308766234,
+            4.725303383079948e-05
+          ],
+          "joint_scaled": 0.47253033830799474,
+          "joint_leading": 0.4750434904673644,
+          "independent_subtracted_exact": 3.3492362631561016e-08,
+          "independent_subtracted_limit": 3.358144961143312e-08,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 1.0408340855860843e-17,
+          "direct_subtraction_error": 1.6975421508113568e-15,
+          "direct_subtraction_condition_scale": 8.023923377031954,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.6667131446089143e-16,
+          "scaled_denominator_error": 1.0164395367051602e-16
+        },
+        {
+          "packet": "phase_quarter",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943288930503787,
+            0.0009943288930503787,
+            9.886899586110002e-07,
+            0.001988163277198309,
+            0.001988163277198309,
+            2.9650864668318516e-06
+          ],
+          "joint_scaled": 0.47441383469309617,
+          "joint_leading": 0.4750434904673644,
+          "independent_subtracted_exact": 3.355917786646478e-08,
+          "independent_subtracted_limit": 3.358144961143312e-08,
+          "quadrature_error": 1.3010426069826053e-18,
+          "quadrature_order_change": 2.168404344971009e-18,
+          "direct_subtraction_error": 5.860055766083559e-16,
+          "direct_subtraction_condition_scale": 8.005971945125745,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 9.26082666460806e-17,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.06168419564416224,
+            0.06168419564416224,
+            0.0038049400322183458,
+            0.12142108141206354,
+            0.12142108141206354,
+            0.011173515572891035
+          ],
+          "joint_scaled": 0.43646545206605597,
+          "joint_leading": 0.4749724120978852,
+          "independent_subtracted_exact": -0.0002992625688550842,
+          "independent_subtracted_limit": -0.0002992611433522346,
+          "quadrature_error": 4.163336342344337e-17,
+          "quadrature_order_change": 1.249000902703301e-16,
+          "direct_subtraction_error": 1.2613065973610116e-15,
+          "direct_subtraction_condition_scale": 8.395128666711098,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.7579242377976942e-16,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015791168246742506,
+            0.015791168246742506,
+            0.00024936099734409415,
+            0.031455822481828696,
+            0.031455822481828696,
+            0.0007440139425000499
+          ],
+          "joint_scaled": 0.4650087140625311,
+          "joint_leading": 0.4749724120978852,
+          "independent_subtracted_exact": -0.00029926149972709824,
+          "independent_subtracted_limit": -0.0002992611433522346,
+          "quadrature_error": 1.3877787807814457e-17,
+          "quadrature_order_change": 2.7755575615628914e-17,
+          "direct_subtraction_error": 1.7060463285145655e-15,
+          "direct_subtraction_condition_scale": 8.096878450055671,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 2.616041405260205e-16,
+          "scaled_denominator_error": 1.3552527156068803e-16
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.003971387363870603,
+            0.003971387363870603,
+            1.5771917769757678e-05,
+            0.007934581790149924,
+            0.007934581790149924,
+            4.7245977654824676e-05
+          ],
+          "joint_scaled": 0.47245977654824667,
+          "joint_leading": 0.4749724120978852,
+          "independent_subtracted_exact": -0.00029926123244589743,
+          "independent_subtracted_limit": -0.0002992611433522346,
+          "quadrature_error": 2.6020852139652106e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 4.523833564695767e-16,
+          "direct_subtraction_condition_scale": 8.0245249053645,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 7.100518378155188e-17,
+          "scaled_denominator_error": 1.6940658945086004e-16
+        },
+        {
+          "packet": "opposed_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943288930503787,
+            0.0009943288930503787,
+            9.886899586110002e-07,
+            0.0019880889259759832,
+            0.0019880889259759832,
+            2.9646430364896657e-06
+          ],
+          "joint_scaled": 0.47434288583834644,
+          "joint_leading": 0.4749724120978852,
+          "independent_subtracted_exact": -0.000299261165625647,
+          "independent_subtracted_limit": -0.0002992611433522346,
+          "quadrature_error": 8.673617379884035e-19,
+          "quadrature_order_change": 2.168404344971009e-18,
+          "direct_subtraction_error": 7.450095228234144e-16,
+          "direct_subtraction_condition_scale": 8.006571234533755,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.1768298574791922e-16,
+          "scaled_denominator_error": 1.3552527156068803e-16
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.4,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.06168419564416224,
+            0.06168419564416224,
+            0.0038049400322183458,
+            0.12143002021082304,
+            0.12143002021082304,
+            0.011176754401919158
+          ],
+          "joint_scaled": 0.43659196882496704,
+          "joint_leading": 0.47511456883684366,
+          "independent_subtracted_exact": 0.00029923733043876277,
+          "independent_subtracted_limit": 0.00029923875571928555,
+          "quadrature_error": 4.163336342344337e-17,
+          "quadrature_order_change": 1.3877787807814457e-16,
+          "direct_subtraction_error": 1.3753104557978624e-15,
+          "direct_subtraction_condition_scale": 8.393833082271938,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.9174873779591732e-16,
+          "scaled_denominator_error": 8.470329472543002e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.2,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.015791168246742506,
+            0.015791168246742506,
+            0.00024936099734409415,
+            0.03145816648068376,
+            0.03145816648068376,
+            0.0007442348541756465
+          ],
+          "joint_scaled": 0.465146783859779,
+          "joint_leading": 0.47511456883684366,
+          "independent_subtracted_exact": 0.0002992383993983062,
+          "independent_subtracted_limit": 0.00029923875571928555,
+          "quadrature_error": 2.0816681711721685e-17,
+          "quadrature_order_change": 4.163336342344337e-17,
+          "direct_subtraction_error": 1.966146429693838e-15,
+          "direct_subtraction_condition_scale": 8.095657430675633,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 3.0159832314295937e-16,
+          "scaled_denominator_error": 6.776263578034401e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.1,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.003971387363870603,
+            0.003971387363870603,
+            1.5771917769757678e-05,
+            0.007935174827382548,
+            0.007935174827382548,
+            4.726009000677431e-05
+          ],
+          "joint_scaled": 0.472600900067743,
+          "joint_leading": 0.47511456883684366,
+          "independent_subtracted_exact": 0.00029923866663898773,
+          "independent_subtracted_limit": 0.00029923875571928555,
+          "quadrature_error": 3.469446951953614e-18,
+          "quadrature_order_change": 8.673617379884035e-18,
+          "direct_subtraction_error": 1.2173964093753487e-15,
+          "direct_subtraction_condition_scale": 8.023321938874908,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 1.9126070123451103e-16,
+          "scaled_denominator_error": 3.388131789017201e-17
+        },
+        {
+          "packet": "aligned_covariance",
+          "g": 0.05,
+          "reference_probabilities_without_kappa_time_factors": [
+            0.0009943288930503787,
+            0.0009943288930503787,
+            9.886899586110002e-07,
+            0.0019882376284206344,
+            0.0019882376284206344,
+            2.965529897174038e-06
+          ],
+          "joint_scaled": 0.47448478354784596,
+          "joint_leading": 0.47511456883684366,
+          "independent_subtracted_exact": 0.00029923873344920785,
+          "independent_subtracted_limit": 0.00029923875571928555,
+          "quadrature_error": 6.505213034913027e-19,
+          "quadrature_order_change": 1.734723475976807e-18,
+          "direct_subtraction_error": 4.2695881552479165e-16,
+          "direct_subtraction_condition_scale": 8.005372745424259,
+          "direct_ratio_assertion_applicable": true,
+          "scaled_numerator_error": 6.750620979045258e-17,
+          "scaled_denominator_error": 6.776263578034401e-17
+        }
+      ]
+    }
+  ],
+  "author_or_parent_modules_imported_or_executed": 0,
+  "source_sha256": "7c1c296790b00c33a93708ad52f6c89955d9c96f021e2268152410f7362dd713",
+  "completed_utc": "2026-09-25T00:31:10.405675+00:00",
+  "elapsed_seconds": 0.06572670908644795
+}

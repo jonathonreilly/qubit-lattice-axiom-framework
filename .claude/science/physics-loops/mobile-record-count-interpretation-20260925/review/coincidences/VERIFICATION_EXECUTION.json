@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T00:46:30.946603+00:00",
+  "duration_seconds": 0.07207904197275639,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/verify_evidence.py"
+  ],
+  "code_sha256": "a858150ebb26d9e02d2f239e1f8b3e193d6fa88dac84c6dd86db05b52f9aea58",
+  "stdout_sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2",
+  "stderr_bytes": 0,
+  "kind": "stored-evidence verification; no scientific rerun"
+}

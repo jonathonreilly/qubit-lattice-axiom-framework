@@ -1,0 +1,19 @@
+{
+  "exact_source_and_ast_files": 2,
+  "same_scientific_scalar_counts": {
+    "str": 493,
+    "float": 2205,
+    "NoneType": 30,
+    "int": 368,
+    "bool": 18
+  },
+  "ignored_timing_only": [
+    "COINCIDENCE_RESULTS.json/elapsed_seconds",
+    "NUMBER_OFFSET_RESULTS.json/elapsed_seconds"
+  ],
+  "all_frozen_sources_verified": 14,
+  "note_sha256": "ce5fb4cb9e4196cfa4c1261c1e7d96e13671acc75a98fceacd07df75e57a4109",
+  "runner_sha256": "acb60f75ae0bc45c054c5867402ab6e9a2b98b322918b05bcfc64f43d1733523",
+  "result_sha256": "3ef652ef3ab22f246bab51d91c091ff4d46c703c9d76fdf3b868dc5d5750f8a8",
+  "claim": "Root correspondence, not an independent scientific replication."
+}

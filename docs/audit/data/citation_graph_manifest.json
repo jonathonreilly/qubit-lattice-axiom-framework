@@ -1,6 +1,6 @@
 {
- "edge_count": 14655,
- "node_count": 6655,
+ "edge_count": 14663,
+ "node_count": 6656,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14881,6 +14881,10 @@
   "ordered_lattice_quasi_persistent_relaunch_note": {
    "deps_hash": "599444f3c8b2",
    "out_degree": 1
+  },
+  "original_coincidences_and_number_energy_identifiability_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "79eb352b7908",
+   "out_degree": 8
   },
   "original_formation_record_photon_readout_and_microscopic_finite_bins_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c7af889f8143",

@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1021,6 +1021,10 @@
   "admissibility_rule_the_eight_species_are_exchanged_by_site_signs_and_a_half_turn_of_the_coin_what_each_varying_field_becomes_bounded_theorem_note_2026-09-21": {
    "deps_hash": "82ae1f8811b0",
    "out_degree": 8
+  },
+  "admissibility_rule_the_exchange_sign_is_not_supplied_by_records_both_hard_core_sectors_meet_every_axiom_and_first_differ_in_the_fourth_moment_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_fall_is_owed_by_the_ledger_a_field_energy_per_local_tick_requires_the_contents_stress_gradient_to_equal_its_weight_bounded_theorem_note_2026-09-21": {
    "deps_hash": "45b2892ddd79",

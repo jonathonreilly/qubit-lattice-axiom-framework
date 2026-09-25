@@ -238,5 +238,53 @@
   "problem": "deferred-20260925-charge-threshold-and-transport",
   "title": "Charge threshold and transport",
   "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-28.json there. Historical tighter finite-torus threshold, full auxiliary band, charge trace-distance, broader escape projector coefficients and formation-factor covariance remainder require separate validation. Test selected charged packets, finite-coupling/fixed-momentum binding, larger dressings, force/current/readout and calibrated scales; the landed global flat threshold and one escape target do not settle these. Before work inspect existing attempts, referee reports and active claims for charge threshold and transport; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-charge-threshold-and-transport/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1",
+  "problem": "deferred-20260925-nearest-neighbour-finite-coupling",
+  "title": "Neighbour-bound pairs beyond leading order",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. The accepted pair-speed result is a leading large-coupling Gram formula at fixed nonzero isolated coin eigenvalue and gap. Derive controlled finite-coupling corrections, handle closing gaps/projector coincidences, and test physical inertial/passive response without inferring it from curvature alone. Original PR9227 and its branch remain recovery inputs. Before work inspect existing attempts, referee reports and active claims for nearest neighbour finite coupling; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-nearest-neighbour-finite-coupling/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-lattice-scattering-threshold-bridge:a1",
+  "problem": "deferred-20260925-lattice-scattering-threshold-bridge",
+  "title": "Lattice scattering threshold bridge",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. PR9229 leaves complete AC scattering/local-current decomposition, regular shell kernels, and uniform complex threshold resolvent estimates including matrix coin cones unproved. Candidate interval enclosures do not count eigenvalues and embedded/outside-domain spectrum remains open. Resolve one exact analytic bridge with explicit hypotheses; do not repeat an unconditional all-local-interaction no-go. Before work inspect existing attempts, referee reports and active claims for matrix coin threshold resolvent; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-lattice-scattering-threshold-bridge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1",
+  "problem": "deferred-20260925-nonlinear-moving-source-completion",
+  "title": "Nonlinear moving source completion",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. PR9230 excludes the radiation pole and gives a conservative near-zone response with supplied source stress. PR9233 supplies self-subtracted moving charge and field-momentum continuation. The finite-cluster virial identity is conditional, not a nonlinear source-field completion. Test one explicit compatible nonlinear evolution with constraints, self-energy and source law; retain resonance, radiation, branch and finite-size domains. Before work inspect existing attempts, referee reports and active claims for nonlinear source constraint completion; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-nonlinear-moving-source-completion/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
  }
 ]

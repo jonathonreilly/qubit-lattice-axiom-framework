@@ -162,6 +162,17 @@
       ],
       "file": "unit-28.json",
       "sha256": "f67dca42a90443b320a91c41a7f44b89dcddbf704bda6e9187a8d13dbac256cc"
+    },
+    {
+      "unit": 29,
+      "prs": [
+        9227,
+        9229,
+        9230,
+        9233
+      ],
+      "file": "unit-29.json",
+      "sha256": "5e36b2d69c898914c0bbe5d336df2f1de6e59676901879e01fa2bf465d80088a"
     }
   ],
   "task_ids": [
@@ -179,10 +190,13 @@
     "J:derive:deferred-20260925-energy-moments-and-apparatus:a1",
     "J:derive:deferred-20260925-preparation-optical-readout:a1",
     "J:derive:deferred-20260925-ground-energy-and-response:a1",
-    "J:derive:deferred-20260925-charge-threshold-and-transport:a1"
+    "J:derive:deferred-20260925-charge-threshold-and-transport:a1",
+    "J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1",
+    "J:derive:deferred-20260925-lattice-scattering-threshold-bridge:a1",
+    "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1"
   ],
   "science_authority": "current origin/main, not frozen originals",
   "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
   "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction",
-  "main_at_latest_supplement": "6b414efff904b7958b5a407686f5b0885d9a1dd7"
+  "main_at_latest_supplement": "25b8c1874f2ea657653dbb298bf383c18d81e0b5"
 }

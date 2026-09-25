@@ -17,3 +17,8 @@ Preserves all 31 walker/source PR originals (434 original paths), their correcte
 ## Unit28 supplement
 
 Preserves all 26 formation, energy and charge PR originals, complete source dispositions and four bounded maximum-thinking recovery tasks. The canonical arguments and runtime helpers were reviewed; historical extensions listed in unit-28-salvage.json are ungraded recovery candidates, not freshly certified proofs. No worker is launched.
+
+
+## Unit29 supplement
+
+Preserves all four pair, scattering and response PR originals and their source dispositions, with three bounded maximum-thinking recovery tasks. Off-pole response and fixed finite-cluster identities do not close nonlinear source-field consistency. No worker is launched.

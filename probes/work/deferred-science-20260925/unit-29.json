@@ -1,0 +1,502 @@
+[
+  {
+    "pr": 9227,
+    "head": "5c7c52847eeb03489813c0ddf3094759f9bd7a9c",
+    "fetch_ref": "refs/pull/9227/head",
+    "landing": "25b8c1874f2ea657653dbb298bf383c18d81e0b5",
+    "findings": {
+      "scope_boundary": "Two supplied excluded walkers with only the stated nearest-neighbour Hermitian interaction. Exact line branches require V nonzero and |b(K)/V|<1. In three dimensions, a fixed nonzero isolated bond eigenvalue and fixed spectral gaps admit the displayed second-order effective generator as g tends to infinity. Its energy-squared curvature matrix has axis sum at most 3/2 in the stated covariant coin sectors. This is not an all-coupling speed, stability or fall theorem; finite-g corrections and other interactions remain open.",
+      "disposition": "retain narrowed canonical result and genuine runner evidence; preserve all original sources; deferred obligations enter ai/probes",
+      "review_coverage": "Full canonical note and runner read; necessary current parent arguments reviewed; all original campaign deltas read, unchanged inherited author history not re-reviewed."
+    },
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "sha256": "fba5ce7cd189dc5e8ddb0ae939264746503bd4d8f3f239d18ecf82d6c9b6c07b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fba5ce7cd189dc5e8ddb0ae939264746503bd4d8f3f239d18ecf82d6c9b6c07b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block142_findings.md",
+        "sha256": "03243d47984edde6aa3132ffdc19452eec644ee2492c68445553697193f4c0ae",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/03243d47984edde6aa3132ffdc19452eec644ee2492c68445553697193f4c0ae",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block142.md",
+        "sha256": "7d53c4c07ee66b7a40bc64781e9ae8c157131478a73ab0bcca104d088138861e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7d53c4c07ee66b7a40bc64781e9ae8c157131478a73ab0bcca104d088138861e",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block142.md",
+        "sha256": "23045d3b3cb80fe297480a77b069e82cf440f9305ac0b8d1f6f69534c0436d4e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/23045d3b3cb80fe297480a77b069e82cf440f9305ac0b8d1f6f69534c0436d4e",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "9340a9f359cbffd19e7bbbcb3def69f7ec7b64118fa0f9a68fa20609cf594c5a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9340a9f359cbffd19e7bbbcb3def69f7ec7b64118fa0f9a68fa20609cf594c5a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "sha256": "88e7bc4925b26761a86f8bb1b501fe4eb50c2ae64da9fead11341c6361149e9f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/88e7bc4925b26761a86f8bb1b501fe4eb50c2ae64da9fead11341c6361149e9f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block142.md",
+        "sha256": "85453e6ee066524b501b028abd64ad3b81a420eade8093caf07f33b3139a5437",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/85453e6ee066524b501b028abd64ad3b81a420eade8093caf07f33b3139a5437",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "sha256": "3e40ffb8c61a7beab65c269ab7da715ff14c48a791ba6b5d0542113574581b7f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3e40ffb8c61a7beab65c269ab7da715ff14c48a791ba6b5d0542113574581b7f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "sha256": "65aec66631cfeaabf1b185893c5b86cd5b5f117db5ed704e702b92bf6773b930",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/65aec66631cfeaabf1b185893c5b86cd5b5f117db5ed704e702b92bf6773b930",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "sha256": "af2910199a32e473cab6dcde8974f2284a0497fb7e6ebd916ecc2e9577a95b48",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/af2910199a32e473cab6dcde8974f2284a0497fb7e6ebd916ecc2e9577a95b48",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "sha256": "350fd6eb1acedfe933d08d444617d59c9c9e5bd3b273d49df807548688f596ea",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/350fd6eb1acedfe933d08d444617d59c9c9e5bd3b273d49df807548688f596ea",
+        "accepted_path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "accepted_sha256": "fb9b11df679056a0c94dd05d8b9a3661679b28c71318fdf2aa485917d54c0b9e",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "2e8a03d2c339ca8314b4d1396a98d28a9698df6d17605df8c2b991c2b228c580",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2e8a03d2c339ca8314b4d1396a98d28a9698df6d17605df8c2b991c2b228c580",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.txt",
+        "sha256": "cfdcd823fccb87dd17d8cc3503cf1b2a80dc7b24b103244ec20686a6469d581a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/cfdcd823fccb87dd17d8cc3503cf1b2a80dc7b24b103244ec20686a6469d581a",
+        "accepted_path": "logs/runner-cache/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.txt",
+        "accepted_sha256": "2a7cf00a36d2467521c0307332d5a85bb3df3b1410a317188c4bdbe61ee25e46",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py",
+        "sha256": "f8b308e5e17434518f2fa97ac90767223a1d071f59a73231643519f80a7d1531",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f8b308e5e17434518f2fa97ac90767223a1d071f59a73231643519f80a7d1531",
+        "accepted_path": "scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py",
+        "accepted_sha256": "0752d526dcea81a7e7ceca60bed72fca42a29b980642ac7fb0be720328bd4c46",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      }
+    ]
+  },
+  {
+    "pr": 9229,
+    "head": "136eb4f7a61b7e1b98b829593bace4f8b7cbc240",
+    "fetch_ref": "refs/pull/9229/head",
+    "landing": "25b8c1874f2ea657653dbb298bf383c18d81e0b5",
+    "findings": {
+      "scope_boundary": "Exact two-walker shell kinematics, band-diagonal placement identity, fixed-channel line shells, removed coin dimensions and rational-interval nondegeneracy certificates at the stated total momenta. Conditional scattering implications require the explicitly stated absolutely-continuous wave-operator, local-current, shell-kernel and complex threshold hypotheses. The determinant conclusion excludes off-continuum eigenvalues only in the specified momentum neighbourhood; embedded states and a global no-binding theorem are not established. The unrestricted local-interaction no-go remains deferred pending the analytic bridge.",
+      "disposition": "retain narrowed canonical result and genuine runner evidence; preserve all original sources; deferred obligations enter ai/probes",
+      "review_coverage": "Full canonical note and runner read; necessary current parent arguments reviewed; all original campaign deltas read, unchanged inherited author history not re-reviewed."
+    },
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "sha256": "4cf64d5b6fc887170ed33d6593bd95532625010e9da73e8d76e11c29b649fad4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4cf64d5b6fc887170ed33d6593bd95532625010e9da73e8d76e11c29b649fad4",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block143_findings.md",
+        "sha256": "5b7f159c56d7f81d91ab1367a4b3c36a331dec7f9227c19bd5391d09e63ca575",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5b7f159c56d7f81d91ab1367a4b3c36a331dec7f9227c19bd5391d09e63ca575",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block143.md",
+        "sha256": "10cd7ffd5bdff506a2d5c090ceaafb36e58d69ae9906cde83a77f5e89fac4358",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/10cd7ffd5bdff506a2d5c090ceaafb36e58d69ae9906cde83a77f5e89fac4358",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block143.md",
+        "sha256": "47f6345f1e7c9e029555983dc4019991518623d0fc4854c3fda39e03ead639a6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/47f6345f1e7c9e029555983dc4019991518623d0fc4854c3fda39e03ead639a6",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "f42b920e29f9ee675ea0088482d6d7dc98360c0e394d4a30a90a5ab94a148e2a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f42b920e29f9ee675ea0088482d6d7dc98360c0e394d4a30a90a5ab94a148e2a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "sha256": "b85e3e564e32e7da9acfcee36f817bb824d639aa405ae9b64487b8baa380bbd8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b85e3e564e32e7da9acfcee36f817bb824d639aa405ae9b64487b8baa380bbd8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block143.md",
+        "sha256": "fffa6627534db53561fc62837b08cddc8360f5357df42953afa1705e22bcebb2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fffa6627534db53561fc62837b08cddc8360f5357df42953afa1705e22bcebb2",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "sha256": "4e109b8e7438c6308c7410371ab9b0621683c066f45ae3d46f19b61a463f5c24",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4e109b8e7438c6308c7410371ab9b0621683c066f45ae3d46f19b61a463f5c24",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "sha256": "076e7cd28d1d008bdcdd9ac81fa5e82e9ff73f513a7f18caa7c972d3029a3ac8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/076e7cd28d1d008bdcdd9ac81fa5e82e9ff73f513a7f18caa7c972d3029a3ac8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "sha256": "dc597b10d2435bf19d1323945665db310fa976a760124d4cbd398818b7405753",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/dc597b10d2435bf19d1323945665db310fa976a760124d4cbd398818b7405753",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "sha256": "96ede3369f36531a398be9e2b2892b399c9e444b84497cd34970e070fbbd25cd",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/96ede3369f36531a398be9e2b2892b399c9e444b84497cd34970e070fbbd25cd",
+        "accepted_path": "docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "accepted_sha256": "06c78db9394c0a7ffc39f08385d3cf2bb6aaa528639c2b4e34994ed00ed6d88a",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "7a0768c503dfa26bd8bd8477be60e6cc68fa7dbd83dd3018ec8e938a092643f7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7a0768c503dfa26bd8bd8477be60e6cc68fa7dbd83dd3018ec8e938a092643f7",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.txt",
+        "sha256": "853b5c53e0c4000217ed726e65dada5d52068d974a70d919ef31e7fa9f1dbcf4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/853b5c53e0c4000217ed726e65dada5d52068d974a70d919ef31e7fa9f1dbcf4",
+        "accepted_path": "logs/runner-cache/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.txt",
+        "accepted_sha256": "e501e6fc033da123c76bea0064fc50cf92cbe3d38806ff3b40ac54bdb3bdd3c2",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py",
+        "sha256": "79e876e0d2910b4b0c6191ce341c9fcbe7ed1fe4a6cb1197ac18c3aff17bf6c8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/79e876e0d2910b4b0c6191ce341c9fcbe7ed1fe4a6cb1197ac18c3aff17bf6c8",
+        "accepted_path": "scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py",
+        "accepted_sha256": "1c8012e5e138a453cb5f9964ec3a5df5ffe618c3cee5cf63a65a5bad44894ae9",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      }
+    ]
+  },
+  {
+    "pr": 9230,
+    "head": "6b91f8337245036fbf155ef06f0c20414f18b4b9",
+    "fetch_ref": "refs/pull/9230/head",
+    "landing": "25b8c1874f2ea657653dbb298bf383c18d81e0b5",
+    "findings": {
+      "scope_boundary": "For the explicitly supplied continuum quadratic action, positive K and alpha, conserved sources and nonzero spatial momentum: the generic nonzero-frequency exchange formula requires omega\u00b2 different from p\u00b2. The static clock formula is separate. With supplied spinless point-body stress and a conservative near-zone prescription, the displayed order-v\u00b2 velocity-dependent interaction gives W=1 through the first weak-binding order using tensor virial averages. No finite response at the wave pole, nonlinear completion, lattice result or physical gravity identification is established.",
+      "disposition": "retain narrowed canonical result and genuine runner evidence; preserve all original sources; deferred obligations enter ai/probes",
+      "review_coverage": "Full canonical note and runner read; necessary current parent arguments reviewed; all original campaign deltas read, unchanged inherited author history not re-reviewed."
+    },
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "sha256": "9cfe30126b97d88090a432b17058b3db4f802436d1d7f6be2b6da837cf3a57ef",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9cfe30126b97d88090a432b17058b3db4f802436d1d7f6be2b6da837cf3a57ef",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block144_findings.md",
+        "sha256": "6775c39722fb81c5172727e6542c0329620c01f9643b5551f4613fb711c4e8d6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6775c39722fb81c5172727e6542c0329620c01f9643b5551f4613fb711c4e8d6",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block144.md",
+        "sha256": "b3772a7aa4d45d8c71738d6cf993985465994bf5573359b333c10bc9b29386dd",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b3772a7aa4d45d8c71738d6cf993985465994bf5573359b333c10bc9b29386dd",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block144.md",
+        "sha256": "ca72d397d8fcbcfdb4077240f6bf3d82adbb486c200fc167e95bf7a81fc6d864",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ca72d397d8fcbcfdb4077240f6bf3d82adbb486c200fc167e95bf7a81fc6d864",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "09e188466afbe8e88556b9ea6ead02525d3975006b21d5a918b8ce405c8ae313",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/09e188466afbe8e88556b9ea6ead02525d3975006b21d5a918b8ce405c8ae313",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "sha256": "0f8a0adaef9dd662b85ae83917cf86541b4df748708255019c1a9cf6a23707e8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0f8a0adaef9dd662b85ae83917cf86541b4df748708255019c1a9cf6a23707e8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block144.md",
+        "sha256": "207c4a093d1981de21fc6da56cb449b7dc76d56fddd5b695c09b2cd7d9e265db",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/207c4a093d1981de21fc6da56cb449b7dc76d56fddd5b695c09b2cd7d9e265db",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "sha256": "045b845867c9477837cacbc180ba1b60607b1d53799f552450959a9c5ce0192c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/045b845867c9477837cacbc180ba1b60607b1d53799f552450959a9c5ce0192c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "sha256": "6abc53212b01d1de2a3e6e743ee3975ccb1d59e8446f106e011b7cfeeb9e0417",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6abc53212b01d1de2a3e6e743ee3975ccb1d59e8446f106e011b7cfeeb9e0417",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "sha256": "fe606f5535d1df26079c7bc75468ed8094423c5b8cf8b9c7cc9d3b1fd0eba95f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fe606f5535d1df26079c7bc75468ed8094423c5b8cf8b9c7cc9d3b1fd0eba95f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_PULL_CARRIES_THE_VELOCITY_TERMS_THAT_GIVE_PULL_BOUND_PAIRS_WEIGHT_ONE_ALONG_EVERY_AXIS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "sha256": "1ad830a9e7ccadb9f726079421acca372d26aec7a631c65bf624bdb0a9ffc1ae",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1ad830a9e7ccadb9f726079421acca372d26aec7a631c65bf624bdb0a9ffc1ae",
+        "accepted_path": "docs/ADMISSIBILITY_RULE_THE_MEMBERS_PULL_CARRIES_THE_VELOCITY_TERMS_THAT_GIVE_PULL_BOUND_PAIRS_WEIGHT_ONE_ALONG_EVERY_AXIS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "accepted_sha256": "a1b29015d3a814cf9c28a5346e394c7c38bdbc8424615d1a86e9f196fe92241a",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "9ae40e9ad420b4add81bfccdaccaebf7865405d1f3864f4a0b3b3dd162b6bf4c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9ae40e9ad420b4add81bfccdaccaebf7865405d1f3864f4a0b3b3dd162b6bf4c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.txt",
+        "sha256": "30f94009245840e7ee8ceedfda48f86dff8a7140ffc157b84aae0bc8c0e7a516",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/30f94009245840e7ee8ceedfda48f86dff8a7140ffc157b84aae0bc8c0e7a516",
+        "accepted_path": "logs/runner-cache/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.txt",
+        "accepted_sha256": "8eb7965ca2423a0183b3bf9414bee7e730fe0ae45baa8cbb6005bbf7fc7bc252",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py",
+        "sha256": "1e71825b46552408154a1f5f16799369c5eeef63daeb37a35eb025306f441386",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1e71825b46552408154a1f5f16799369c5eeef63daeb37a35eb025306f441386",
+        "accepted_path": "scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py",
+        "accepted_sha256": "df946864db814724569ae9b20eefc165f02fc7c5f8e7d4d90d0ca2d95edc97ea",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      }
+    ]
+  },
+  {
+    "pr": 9233,
+    "head": "937d5cfd95f419e5f68f9602e6cd13dd701f1a52",
+    "fetch_ref": "refs/pull/9233/head",
+    "landing": "25b8c1874f2ea657653dbb298bf383c18d81e0b5",
+    "findings": {
+      "scope_boundary": "Within the expressly supplied continuum charge equations, self-field subtraction, trace-free field-momentum constraint and no-free-wave choice: the static ledger has the stated second-order expansion and the selected moving extension gives coefficient 1/2+1/p, for p nonzero. The resulting truncated three-body Hamiltonian gives passive mass M+2a<T>+2s2<U> in the far-field, weak-binding limit. For its p=1 coefficients this equals the inertial energy through that order. This conditional calculation does not derive a nonlinear dynamical completion from the landed static or quadratic source notes. The updated head finite-cluster extension is retained only for fixed finite size with the same supplied pairwise model and virial/spectral-branch hypotheses.",
+      "disposition": "retain narrowed canonical result and genuine runner evidence; preserve all original sources; deferred obligations enter ai/probes",
+      "review_coverage": "Full canonical note and runner read; necessary current parent arguments reviewed; all original campaign deltas read, unchanged inherited author history not re-reviewed."
+    },
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+        "sha256": "6ec0f280cc161fc81b63a3be35559bb0dfc76a2e22db8d367aa8088e0d9c84b9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6ec0f280cc161fc81b63a3be35559bb0dfc76a2e22db8d367aa8088e0d9c84b9",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block145_findings.md",
+        "sha256": "8dd872c5a02df5f2eef3c6041564162c2e1c223e19b3b9256da4b44d40fad287",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8dd872c5a02df5f2eef3c6041564162c2e1c223e19b3b9256da4b44d40fad287",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block145.md",
+        "sha256": "feba91c4f9236874a7755e0565a139d8623414dc5292d7ae1aeb0895f216e1b5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/feba91c4f9236874a7755e0565a139d8623414dc5292d7ae1aeb0895f216e1b5",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block145.md",
+        "sha256": "6db9d9500d00a2e2ae9b34acc0392edc029f143618d4a0ef95e78d8b0e45bdc3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6db9d9500d00a2e2ae9b34acc0392edc029f143618d4a0ef95e78d8b0e45bdc3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+        "sha256": "ff0f9b19716ead7f948c21ca3bdd37519d2ea2a92c2d85b7616e8c5d0abf515d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ff0f9b19716ead7f948c21ca3bdd37519d2ea2a92c2d85b7616e8c5d0abf515d",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+        "sha256": "3c6c8e6b63d23e1594193c5c6cd7cdc785b187a7d1420a067c92c3041230ffd9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3c6c8e6b63d23e1594193c5c6cd7cdc785b187a7d1420a067c92c3041230ffd9",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block145.md",
+        "sha256": "57672a034e8b0730502eab775c11889cdf1bf4cb2e2811e97a4496a6fc2360a1",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/57672a034e8b0730502eab775c11889cdf1bf4cb2e2811e97a4496a6fc2360a1",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+        "sha256": "0996a832ee500efebd65c323d9b625721d2ed7469c317c4661c416850910b86d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0996a832ee500efebd65c323d9b625721d2ed7469c317c4661c416850910b86d",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+        "sha256": "1fb73b4df725ee9ed40419465586bc87159796df2c3a6f62cc2070c15d7b5649",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1fb73b4df725ee9ed40419465586bc87159796df2c3a6f62cc2070c15d7b5649",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+        "sha256": "30ae8c5f227dfa60ab958f28ebc345fce976a95192c66b5575aad3975f57f2e6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/30ae8c5f227dfa60ab958f28ebc345fce976a95192c66b5575aad3975f57f2e6",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. All campaign deltas read; corrected canonical lemmas retained, unresolved source coupling, interaction, realization and readout obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/ADMISSIBILITY_RULE_BINDING_ENERGY_FALLS_WITH_ITS_WEIGHT_ONLY_IN_THE_CURVATURE_MEMBER_PULL_BOUND_PAIRS_FALL_LIKE_ONE_BODY_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "sha256": "7091d05a931fbbd4e4b9fa43afbbcbbad12dc9b72bd7b981fd0a0ed3ebf02fae",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7091d05a931fbbd4e4b9fa43afbbcbbad12dc9b72bd7b981fd0a0ed3ebf02fae",
+        "accepted_path": "docs/ADMISSIBILITY_RULE_BINDING_ENERGY_FALLS_WITH_ITS_WEIGHT_ONLY_IN_THE_CURVATURE_MEMBER_PULL_BOUND_PAIRS_FALL_LIKE_ONE_BODY_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "accepted_sha256": "6c191def8273131bc332da1b9e91d5102ca879fa5cd19994d2218902d411c6cd",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "4b5a158be675a1fafcadd55a3073ba060555ad984b03f28bad0dbce1a9ee6be4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4b5a158be675a1fafcadd55a3073ba060555ad984b03f28bad0dbce1a9ee6be4",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.txt",
+        "sha256": "63fa0096fdaa095fb886c302126b5132bf493c1852818d0f1722c72bb0bd4bd7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/63fa0096fdaa095fb886c302126b5132bf493c1852818d0f1722c72bb0bd4bd7",
+        "accepted_path": "logs/runner-cache/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.txt",
+        "accepted_sha256": "e0fa28e8d58b2c973dbd1fa47871734411c742f6edaaab9f22b209e345e9082a",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py",
+        "sha256": "d629c520b6c2b5814b5453fb22aebdb21616c40b59fc408240698047366b0358",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d629c520b6c2b5814b5453fb22aebdb21616c40b59fc408240698047366b0358",
+        "accepted_path": "scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py",
+        "accepted_sha256": "b0b66af748f019a32b603490eac1fddeb451f1d855610cc074f2ea986c7660bd",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Stronger physical, dynamical and universal claims outside the corrected theorem remain deferred; original exact source retained on remote branch."
+      }
+    ]
+  }
+]

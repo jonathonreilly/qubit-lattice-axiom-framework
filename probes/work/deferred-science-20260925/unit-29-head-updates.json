@@ -1,0 +1,14 @@
+[
+  {
+    "pr": 9230,
+    "old": "d139d07b8d9d250085a111744324df371310be3a",
+    "new": "6b91f8337245036fbf155ef06f0c20414f18b4b9",
+    "scope": "9230 repeats already applied off-pole and premise corrections; 9233 adds conditional finite-cluster algebra, reviewed and retained below."
+  },
+  {
+    "pr": 9233,
+    "old": "1dcab74185eba23a1a4c25eedd99fa51a4a57c1c",
+    "new": "937d5cfd95f419e5f68f9602e6cd13dd701f1a52",
+    "scope": "9230 repeats already applied off-pole and premise corrections; 9233 adds conditional finite-cluster algebra, reviewed and retained below."
+  }
+]

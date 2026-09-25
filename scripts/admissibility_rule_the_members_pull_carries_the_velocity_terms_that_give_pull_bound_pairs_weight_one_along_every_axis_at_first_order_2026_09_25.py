@@ -456,7 +456,7 @@ def family_e(checks: Checks) -> None:
 
 # ============================================================================================ family F
 FENCES = (
-    "This note works within blocks 62 and 101 as landed on main (the member's curvature terms and its quadratic action), with blocks 134, 135, 136 and 140 placed; it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.",
+    "This note works within blocks 62, 101, 134, 135, 136, 139 and 140 as landed on main (the member's curvature terms and quadratic action, one light cone, the bond shift, the staggered mass and the long-wave kinematics); it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.",
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )

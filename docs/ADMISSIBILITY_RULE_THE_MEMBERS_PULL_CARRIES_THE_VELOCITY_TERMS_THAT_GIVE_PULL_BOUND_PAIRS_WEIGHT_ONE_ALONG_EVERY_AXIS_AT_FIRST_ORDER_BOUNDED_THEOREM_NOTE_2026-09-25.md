@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 101's quadratic member with block 62's curvature terms (as landed on main) at the closing ratio beta = -alpha and unit rate wbar = 1, with block 136's bond shift supplied and blocks 134, 135, 136 and 140 (open) placed; long wavelength; first order in 1/K. (T1) exact: the member's quadratic Lagrangian equals K times the second-order part of N sqrt(gamma) (K_ij K^ij - K^2 + R), for lapse 1 + u, shift N and lengths delta + h (the comparator's action, with K in the place of 1/(16 pi G)), up to a total derivative, iff alpha = K/4 and beta = -alpha. (T2) exact: for every source that keeps the books (the energy flows as the momentum, the momentum as a symmetric stress), the member's equations at alpha = K/4 have a solution at every nonzero frequency, with or without the shift, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), T the array of energy, momentum and stress; at any other alpha there is no solution unless e = 0. (T3) exact at order v^2: two slow compact bodies of rest energies m1 and m2 feel L = (m1 m2 / (16 pi K r)) [1 + (3/2)(v1^2 + v2^2) - (7/2) v1.v2 - (1/2)(n.v1)(n.v2)]. (T4) exact at first order in the binding: a pull (k/r)[1 + a(v1^2 + v2^2) + b v1.v2 + c (n.v1)(n.v2)] gives a bound pair the weight W = 1 + [(1 + 2(2a + b))<U> + (1 + 2c)<U_P>]/M along P, which is one along every axis for every bound state iff 2a + b = -1/2 and c = -1/2, exactly the pulls kept by the long-wave change of velocity; the member's pull meets both, and the clock's pull alone gives W = 1 + (<U> + <U_P>)/M, below one. (T5) without the shift the exchange, the pull and the weight are unchanged; the member then has lengths that drift linearly in time by a transverse relabelling, with a conserved momentum-constraint residual, acting on moving content as a fixed vector potential. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 101's quadratic member with block 62's curvature terms, block 136's bond shift (supplied there) and blocks 134, 135, 139 and 140, all as landed on main, at the closing ratio beta = -alpha and unit rate wbar = 1; long wavelength; first order in 1/K. (T1) exact: the member's quadratic Lagrangian equals K times the second-order part of N sqrt(gamma) (K_ij K^ij - K^2 + R), for lapse 1 + u, shift N and lengths delta + h (the comparator's action, with K in the place of 1/(16 pi G)), up to a total derivative, iff alpha = K/4 and beta = -alpha. (T2) exact: for every source that keeps the books (the energy flows as the momentum, the momentum as a symmetric stress), the member's equations at alpha = K/4 have a solution at every nonzero frequency, with or without the shift, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), T the array of energy, momentum and stress; at any other alpha there is no solution unless e = 0. (T3) exact at order v^2: two slow compact bodies of rest energies m1 and m2 feel L = (m1 m2 / (16 pi K r)) [1 + (3/2)(v1^2 + v2^2) - (7/2) v1.v2 - (1/2)(n.v1)(n.v2)]. (T4) exact at first order in the binding: a pull (k/r)[1 + a(v1^2 + v2^2) + b v1.v2 + c (n.v1)(n.v2)] gives a bound pair the weight W = 1 + [(1 + 2(2a + b))<U> + (1 + 2c)<U_P>]/M along P, which is one along every axis for every bound state iff 2a + b = -1/2 and c = -1/2, exactly the pulls kept by the long-wave change of velocity; the member's pull meets both, and the clock's pull alone gives W = 1 + (<U> + <U_P>)/M, below one. (T5) without the shift the exchange, the pull and the weight are unchanged; the member then has lengths that drift linearly in time by a transverse relabelling, with a conserved momentum-constraint residual, acting on moving content as a fixed vector potential. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py
@@ -11,9 +11,9 @@ runner: scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_t
 
 **Date:** 2026-09-25
 **Type:** bounded_theorem
-**Status:** bounded-support (exact at first order in 1/K and order v² within the landed member, with block 136's shift supplied and blocks 134, 135, 136 and 140 placed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
+**Status:** bounded-support (exact at first order in 1/K and order v² within the landed member, with block 136's shift supplied and blocks 134–136, 139 and 140 as landed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
 
-This note works within blocks 62 and 101 as landed on main (the member's curvature terms and its quadratic action), with blocks 134, 135, 136 and 140 placed; it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.
+This note works within blocks 62, 101, 134, 135, 136, 139 and 140 as landed on main (the member's curvature terms and quadratic action, one light cone, the bond shift, the staggered mass and the long-wave kinematics); it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
 
@@ -42,7 +42,7 @@ In plain terms: push a pair that is held together by a pull acting at once, and 
   - `L = α[tr(Ḣ²) − (tr Ḣ)²] + K(uR₁ + R₂) − eu + N·P + ½Σ Θ_ij h_ij`;
   - `Ḣ_ij = ∂_t h_ij − ∂_iN_j − ∂_jN_i`;
   - `R₁ = ∂_i∂_j h_ij − ∇² tr h` and `R₂ = −¼(∂_k h_ij)² + ½(∂_i h_ik)(∂_j h_jk) − ½(∂_i h_ij)∂_j tr h + ¼(∂_k tr h)²`.
-  - The bond shift `N` and its coupling are block 136's, supplied there and here. Block 136 writes them in plane-wave form with its own sign for `N`. In position space, as here, the coupled action keeps relabellings in time as a symmetry only with `+N·P`: with the opposite sign no source that keeps the books has a solution (the runner's mutation `shift_coupling_sign_flipped`).
+  - The bond shift `N` and its coupling are block 136's, supplied there and here. As landed, block 136 states that the shift preserves initially satisfied nonzero-mode lapse and shift constraints for free-walk sources iff `α = K/4`, and that the conserved-source quadratic action is invariant under time-dependent relabellings up to a boundary term. T2 uses only that form. Block 136 writes them in plane-wave form with its own sign for `N`. In position space, as here, the coupled action keeps relabellings in time as a symmetry only with `+N·P`: with the opposite sign no source that keeps the books has a solution (the runner's mutation `shift_coupling_sign_flipped`).
 - **Sources that keep the books.** Energy density `e`, momentum density `P` and symmetric stress `Θ` with `∂_t e = −∇·P` and `∂_t P_j = −∂_iΘ_ij`. Blocks 135 and 136 show the walker's two-step content keeps these books, with `P = P^B` and `Θ` the symmetric stress. `T` is the array `T^{00} = e`, `T^{0i} = P_i`, `T^{ij} = Θ_ij`, contracted with `η = diag(−1, 1, 1, 1)`.
 - **Slow compact bodies (premise).** At long wavelength a slow compact body's content, integrated over its extent, has the point form `e = mγ`, `P = mγv`, `Θ = mγ v⊗v` at its position, with `γ = (1 − v²)^{−1/2}`. This is the long-wave content of a walker packet with `E² = m² + k²` (block 139's staggered mass; block 140's long-wave limit). The face spin (block 138) is not included.
 - **Bound pairs and weight.** Two bodies with free part `Σ_a −m_a(1 − v_a²)^{1/2}` and a pull `L_int`. A bound state is a stationary state of the relative motion under `H₀ = q²/(2μ) + U(r)`, or a bounded orbit with time averages. Its weight along `P̂` is `W(P̂) = E₀ ∂²E/∂P²` at `P = 0` along `P̂`. This is refill o's weight, and block 142's `Hess(E²/2)` at rest.
@@ -157,12 +157,11 @@ audit_required_before_effective_retained: true
   - Block 62: the member's curvature terms, which are the quadratic spatial terms of Fierz and Pauli.
   - Block 101: the member's quadratic action; the clock is a constraint.
   - Blocks 112, 124 and 129: the closing ratio `β = −α`.
-- **Opened, not landed.**
-  - Blocks 134 and 135 (PRs #9193 and #9195): one light cone, `α = K/4`.
-  - Block 136 (PR #9196): symmetric books; a bond shift keeps every constraint iff `α = K/4`.
-  - Block 139 (PR #9201): the staggered mass.
-  - Block 140 (PR #9203): the exact boost charge and its long-wave limit.
-  - Block 142 (PR #9227): pairs bound under one record per site do not move like records; the weight `Hess(E²/2)`.
+  - Blocks 134 and 135: one light cone, `α = K/4`.
+  - Block 136: symmetric books; with a bond shift the initially satisfied nonzero-mode constraints are preserved iff `α = K/4`.
+  - Block 139: the staggered mass.
+  - Block 140: the exact boost charge and its long-wave limit.
+- **Opened, not landed.** Block 142 (PR #9227): pairs bound under one record per site do not move like records; the weight `Hess(E²/2)`.
 - **Probes.** Refill r's problem `the-members-velocity-dependent-pull` poses (a)–(c) of this note; refill o's `the-inertia-of-a-static-binding` poses the static expectation. Neither has an attempt yet.
 - **In the literature.**
   - The lapse-and-shift form of the comparator's action (Arnowitt, Deser and Misner).
@@ -214,8 +213,8 @@ None beyond the supplied member, shift, source link and bodies, and the named im
 | `minimal_axioms` | no possibility or site privileged; no dynamics in the axioms | yes |
 | blocks 62, 101 (landed) | the member's action | yes (restated) |
 | blocks 112, 124, 129 (landed) | the closing ratio | yes (restated; also forced by T1) |
-| blocks 134, 135, 136 (open) | `α = K/4`; the books; the shift | yes (restated; T2 re-derives the `α` condition) |
-| blocks 139, 140 (open) | the walker's long-wave content and change of velocity | yes (premise of the point form) |
+| blocks 134, 135, 136 (landed) | `α = K/4`; the books; the shift | yes (restated; T2 re-derives the `α` condition) |
+| blocks 139, 140 (landed) | the walker's long-wave content and change of velocity | yes (premise of the point form) |
 | blocks 142 (open), refills o and r | the weight and the question | no (comparison) |
 | the comparator | comparison only | no |
 
@@ -255,7 +254,7 @@ None beyond the supplied member, shift, source link and bodies, and the named im
 
 ## Imports
 
-- `minimal_axioms`. Blocks 62, 101, 112, 124 and 129, restated. Blocks 134, 135, 136, 139, 140 and 142, restated.
+- `minimal_axioms`. Blocks 62, 101, 112, 124, 129, 134, 135, 136, 139 and 140 (landed), restated. Block 142 (open), restated.
 - Named standard imports, at definition level:
   - exact symbolic arithmetic;
   - the fundamental solution of the Laplacian in three dimensions;
@@ -272,6 +271,7 @@ None beyond the supplied member, shift, source link and bodies, and the named im
   - A first comparison with the comparator used the full second-order density with position-dependent exponentials and took minutes. The runner uses plane waves with a single Laurent symbol, the wave vector along one axis, and the first-order extrinsic curvature (T1's first step). It runs in seconds.
   - The first expectation was that dropping the shift would change the pull. The exact exchange (runner C2) shows it does not at any nonzero frequency. What changes is confined to the drifting relabellings (T5).
   - The sign of the shift's coupling was fixed by requiring relabellings in time to be a symmetry of the coupled action (see Premises). Block 136's plane-wave convention differs by that choice of sign.
+- **After opening.** Blocks 111–141 landed on main the same day. The citations now point to the landed text. Block 136's landed scope (initially satisfied nonzero-mode constraints; invariance of the conserved-source quadratic action) is the form T2 uses.
 - **Independence.** Mutation census: seven mutations in families B–E, each failing in its own family, and two in family F.
 
 ## Verification

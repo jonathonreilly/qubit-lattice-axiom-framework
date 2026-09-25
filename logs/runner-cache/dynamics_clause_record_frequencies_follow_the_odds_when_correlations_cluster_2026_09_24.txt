@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_record_frequencies_follow_the_odds_when_correlations_cluster_2026_09_24.py
+runner_sha256: 720050b6601189e9a13d41654fec40110ae1b936f0aa1e31501781800237888e
+input_fingerprint_sha256: 8229da1926d5ccda1eb80a0d522f7ba29d7cf5e23a86fc9808ab4bc5854fc467
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.41
+status: ok
+----- stdout -----
+A. the joint law and the variance identity
+[PASS] the joint law is order-independent and E F, Var F obey the exact identities :: 5 random 6-qubit states; order 2.8e-17, moments 2.8e-16
+B. the firewall's two laws as states
+[PASS] product state gives the IID law (1/9, 4/9, 4/9); the cat gives the locked law (1/3, 0, 2/3) :: product [0.111111, 0.444444, 0.444444], cat [0.333333, 0.0, 0.666667]; same one-record odds 2/3
+[PASS] from the n-site states: the product's frequency variance is 2/(9n), the cat's stays 2/9, same mean 2/3 :: n = 4: 0.05556, 0.22222; n = 8: 0.02778, 0.22222; n = 12: 0.01852, 0.22222
+C. clustering in the gapped Kitaev staircase tube
+[PASS] tube ground state: <s^a_i s^b_j> = 0 unless (i,j) is a bond of type a = b; <s_i> = 0 :: largest forbidden correlation 1.7e-13; 18 nonzero bond correlations; gap 0.1290
+[PASS] z-menu frequency variance on the tube is (n + 2 sum_zbonds <s^z s^z> )/(4 n^2), finite n=12 diagnostic :: n = 12: Var F = 0.00971 (1/(4n) = 0.02083)
+D. the ferromagnetic ground multiplet holds cats and products
+[PASS] the multiplet contains the cat (Var F = 1/4) and the x-product (Var F = 1/(4n)), both with odds 1/2 :: degeneracy 7; Var 0.2500 and 0.0417
+per_element: Single-site projectors and connected-correlation identities are tested.
+per_site: Record marginals and their contribution to frequency variance are tested.
+per_mode: checked and not executed — no infinite-volume spectral gap is computed.
+per_block: Finite product, cat, labelled-graph and ferromagnetic-ring states are tested.
+lattice_wide: checked and not executed — uniform clustering is imported conditionally, not numerically proved.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

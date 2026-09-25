@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.py
+runner_sha256: 0686f6e2b5c3b85b417cf9474059162a1acd3d9d151ad35979ade4c69fd06fc2
+input_fingerprint_sha256: 962405955529411d1c78ac3453c9483ea1493fcb7a28fa628d7ce935dead6ded
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.43
+status: ok
+----- stdout -----
+A. a Moriya-twisted bond is a turned XXZ bond
+[PASS] J s1.s2 + D e.(s1 x s2) = V (A (in-plane) + J (along e)) V^dag, V = exp(-i phi e.s2/2), tan phi = D/J :: exact for bonds along x, y and z
+B. along one line the twist is a gauge
+[PASS] a J-D ring along e has the spectrum of the XXZ ring with total twist N phi on the closing bond :: N = 5, 6, 7; max eigenvalue difference 3.6e-14
+C. in three dimensions the twists have curvature
+[PASS] plaquette holonomy R_x(phi) R_y(phi) R_x(-phi) R_y(-phi) is a nonzero rotation for 0 < phi < pi :: smallest angle on the grid 0.0025; at phi = 0.61 (D/J = 0.7): 20.74 deg
+[PASS] twisted and untwisted spectra agree on a straight open chain and differ on a bent chain and on the cube :: straight 5-site chain: 6.2e-15; bent chain x,y,z,x: 0.0849; cube: 0.7789
+D. handed record statistics of the twisted pair
+[PASS] E(a,b) - E(b,a) = c (a x b).e with c odd in D and zero at D = 0 :: c = -1.146925 (D = +0.7), 1.146925 (D = -0.7), 0.0e+00 (D = 0); |c| = 2 sin(phi)
+[PASS] the CHSH maximum of the twisted pair stays 2 sqrt 2 :: 2.828427, 2.828427, 2.828427
+E. handed ground states on the 2x2x2 cube
+[PASS] mean bond vector chirality of the ground state is odd in D; inversion maps H(D) to H(-D) :: chirality -0.458496 (D = 0.5), 0.458496 (D = -0.5), 5.4e-19 (D = 0); gaps 3.8546, 3.8546
+per_element: Bond twist matrices and the signed pair correlator are tested.
+per_site: Local spin rotations and their finite compatibility constraints are tested.
+per_mode: checked and not executed — no dispersion or continuum parity theorem is claimed.
+per_block: Line, plaquette, pair and finite cube comparisons are tested.
+lattice_wide: checked and not executed — finite spectra do not certify all three-dimensional models.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

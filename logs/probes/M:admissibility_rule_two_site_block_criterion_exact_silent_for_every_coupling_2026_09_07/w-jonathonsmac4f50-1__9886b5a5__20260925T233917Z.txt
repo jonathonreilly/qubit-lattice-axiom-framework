@@ -1,0 +1,68 @@
+== block_law_factorization_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=21 FAIL=1
+== coupling_marginals_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=21 FAIL=1
+== lower_bound_lemma_forged
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=21 FAIL=1
+== sequential_upper_bound_forged
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=21 FAIL=1
+== rho_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== rho_prime_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== ratio_bounded_by_one_claimed
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== block_sum_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== optimal_coupling_not_optimal
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=21 FAIL=1
+== region_upper_bound_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== c1_literal_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=21 FAIL=1
+== crossing_cell_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=21 FAIL=1
+== ratio_beyond_one_denied
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=21 FAIL=1
+== claim_two_site_decides
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=21 FAIL=1
+== claim_nonunique_at_silent
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=21 FAIL=1
+== claim_phase_transition
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=21 FAIL=1
+== claim_author_in_theorem
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=21 FAIL=1

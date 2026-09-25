@@ -708,3 +708,23 @@ Block 149 (PR #9242) is the supervisor's own derivation, not refereed by another
 
 What this changes in addendum 34's table:
 - **One light cone.** At linear order, a necessary condition (blocks 134–135). At the lattice scale there is no single cone, but a definite ordering: the member's is outside the walker's everywhere.
+
+## Thirty-ninth addendum (2026-09-25 night): the third column after blocks 144–149, consolidated (a summary of addenda 34–38, no new results)
+
+"Fixed" means fixed by a stated demand in the cited blocks; nothing is adopted. Blocks 111–141 are on main (ef918c1910), with the landing review's scoping. Blocks 142–149 are the supervisor's own derivations, open PRs, not refereed by another model family. Probe results marked unrefereed are same-family and wait for a referee. Rows not listed are as in addendum 34.
+
+| Ingredient | Records alone | With the amplitude layer and the member | Still supplied or open | Blocks |
+|---|---|---|---|---|
+| the member at first order | — | at `α = K/4`, `β = −α`, with the shift, the member's quadratic action is the comparator's lapse-and-shift one, `K` in the place of `1/(16πG)`; its first-order many-body Hamiltonian is the comparator's | its second order for moving bodies (probes refill t) | 101, 136, 144, 145 |
+| `α = K/4` | — | a necessary condition at linear order (the books); independently, the only value at which the lattice's expansion shares the static pull's coupling | as landed: not a universal light cone | 134, 135, 146 |
+| the two cones at the lattice scale | — | a free walker's energies stay strictly inside the member's cone at every lattice momentum, so it never emits or absorbs a single disturbance | two walkers and one disturbance (probes refill u) | 62, 149 |
+| relabellings in time | — | the shift keeps the constraints; without it the pull is unchanged | the shift itself; without it, drifting twists of the lengths would push moving bodies sideways (a reading question) | 124, 136, 144 |
+| groups | records in a gradient drift apart | pull-bound groups move and fall as one body at first order; contact binding under one record per site does not | the constituents' own compactness (probes #9231, unrefereed); the next order | 111, 142, 144, 145 |
+| the lattice as a whole | — | a closed lattice with content has no static state and must stretch or shrink: alike with content, unevenly when empty | the nonlinear kinetic structure beyond the uniform model | 60, 146, 148 |
+| the zero of energy the member sees | — | the half-filled sea has negative energy relative to the books' zero, under one record per site too; if the member sees it, a closed lattice bounces or cannot move | supplied (a reading question) | 139, 147 |
+| a constant energy per unit volume | — | neither the member nor the sea supplies one: on this lattice the sea's energy thins out as it stretches | supplied, if wanted | 147 |
+
+**The owner's reading questions** (findings, not proposals):
+- **Relabellings in time.** Does "No site is privileged" cover relabellings in time? If yes, the shift is a relabelling variable. If no, the member carries drifting twists that push moving bodies sideways.
+- **Instantaneous bindings.** Answered as a finding. A binding without velocity terms never gives a bound pair weight one. The member's pull does, and its bound pairs also fall with their energy (blocks 144 and 145).
+- **The zero of energy.** Which zero of energy does the member see in a many-walker state? Seeing the sea's energy makes a closed lattice with little content bounce, or leaves it unable to move. Seeing only energy above the sea changes nothing else. The sea's radiation-like pressure picks out the lattice's frame, which favours the second reading; no landed clause forces it.

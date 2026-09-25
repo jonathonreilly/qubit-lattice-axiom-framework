@@ -10,7 +10,7 @@ theorems that a kept energy current makes the pair transparent and that a transp
 B (T1): the collision shells.
 C (T2): placements within a band.
 D (T4): the line's shells.
-E (T4, T5): the removed coincident states; the determinant at a removed state.
+E (T4, T5, T6): the removed coincident states; the determinant at a removed state; exact nondegeneracy at one wave vector.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -44,6 +44,8 @@ MUTATION_GATE = {
     "line_shell_forged": "D",
     "removed_count_forged": "E",
     "determinant_zero_forged": "E",
+    "morse_factor_dropped": "E",
+    "cone_tilt_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -205,6 +207,7 @@ def family_e(checks: Checks) -> None:
     checks.check("E1", r_f == 1 and r_b == 3 and ok_ov,
                  "controls: one record per site removes, at every total wave vector, the coincident coin states - one (the singlet) for antisymmetric pairs, three for symmetric pairs; the singlet overlaps every band pair, (1 - s1 s2 n1.n2)/4 != 0 at the test directions, so the removed state couples to the continuum and exclusion scatters, as block 137's lost current requires")
     family_e2(checks)
+    family_e3(checks)
 
 
 def family_e2(checks: Checks) -> None:
@@ -229,6 +232,331 @@ def family_e2(checks: Checks) -> None:
     ok = sp.simplify(delta - ratio) == 0 and sp.simplify(ratio.subs(z, at)) == 0
     checks.check("E2", ok,
                  "T5 (step 1 illustrated): on the line's relative problem truncated to %d positions with the coincident state removed and placed at lambda, the perturbation determinant det(1 + (h'' - h0)(h0 - z)^-1) equals det(h'' - z)/det(h0 - z) symbolically in z and vanishes at z = lambda: a removed state is a zero of the determinant, which transparency would force to be identically one" % n)
+
+
+# ============================================================================================ T6: exact nondegeneracy at one wave vector
+from math import isqrt
+# ---------------------------------------------------------------- rational interval arithmetic
+class Iv:
+    __slots__ = ("lo", "hi")
+
+    def __init__(self, lo, hi=None):
+        lo = Fr(lo)
+        hi = lo if hi is None else Fr(hi)
+        assert lo <= hi
+        self.lo, self.hi = lo, hi
+
+    def __add__(self, o):
+        o = o if isinstance(o, Iv) else Iv(o)
+        return Iv(self.lo + o.lo, self.hi + o.hi)
+    __radd__ = __add__
+
+    def __neg__(self):
+        return Iv(-self.hi, -self.lo)
+
+    def __sub__(self, o):
+        o = o if isinstance(o, Iv) else Iv(o)
+        return Iv(self.lo - o.hi, self.hi - o.lo)
+
+    def __rsub__(self, o):
+        return Iv(o) - self
+
+    def __mul__(self, o):
+        o = o if isinstance(o, Iv) else Iv(o)
+        c = [self.lo * o.lo, self.lo * o.hi, self.hi * o.lo, self.hi * o.hi]
+        return Iv(min(c), max(c))
+    __rmul__ = __mul__
+
+    def inv(self):
+        assert self.lo > 0 or self.hi < 0, "division by an interval containing zero"
+        return Iv(1 / self.hi, 1 / self.lo)
+
+    def __truediv__(self, o):
+        o = o if isinstance(o, Iv) else Iv(o)
+        return self * o.inv()
+
+    def __rtruediv__(self, o):
+        return Iv(o) * self.inv()
+
+    def sq(self):
+        if self.lo >= 0:
+            return Iv(self.lo ** 2, self.hi ** 2)
+        if self.hi <= 0:
+            return Iv(self.hi ** 2, self.lo ** 2)
+        return Iv(0, max(self.lo ** 2, self.hi ** 2))
+
+    def sqrt(self, bits=200):
+        assert self.lo >= 0
+        s = 2 ** bits
+
+        def lower(x):
+            n = x.numerator * s * s // x.denominator
+            return Fr(isqrt(n), s)
+
+        def upper(x):
+            n = -((-x.numerator * s * s) // x.denominator)
+            r = isqrt(n)
+            if r * r < n:
+                r += 1
+            return Fr(r, s)
+        return Iv(lower(self.lo), upper(self.hi))
+
+    def excludes_zero(self):
+        return self.lo > 0 or self.hi < 0
+
+    def width(self):
+        return self.hi - self.lo
+
+
+# ---------------------------------------------------------------- the pair's functions in half-angle-free coordinates t_a = tan k1_a
+def model(tau):
+    """tau = rational tan K0_a; returns sympy expressions for g1, g2, X, Y and the Hessian pieces, in symbols t."""
+    d = len(tau)
+    t = sp.symbols("t1:%d" % (d + 1), real=True)
+    S = [2 * x / (1 + x ** 2) for x in tau]
+    C = [(1 - x ** 2) / (1 + x ** 2) for x in tau]
+    c2k1 = [(1 - ti ** 2) / (1 + ti ** 2) for ti in t]
+    s2k1 = [2 * ti / (1 + ti ** 2) for ti in t]
+    g1 = [ti / (1 + ti ** 2) for ti in t]
+    X = [ti ** 2 / (1 + ti ** 2) for ti in t]
+    g2 = [(S[a] * c2k1[a] - C[a] * s2k1[a]) / 2 for a in range(d)]
+    Y = [(1 - (C[a] * c2k1[a] + S[a] * s2k1[a])) / 2 for a in range(d)]
+    c2k2 = [C[a] * c2k1[a] + S[a] * s2k1[a] for a in range(d)]
+    return t, g1, g2, X, Y, c2k1, c2k2
+
+
+
+
+def horner_iv(coeffs, x):
+    """coeffs highest first (Fractions or Iv); x an Iv."""
+    acc = Iv(0)
+    for c in coeffs:
+        acc = acc * x + (c if isinstance(c, Iv) else Iv(c))
+    return acc
+
+
+def poly_iv(poly, var_ivs, gens):
+    """evaluate a sympy Poly in gens at interval arguments (monomial sum)."""
+    acc = Iv(0)
+    for monom, coeff in poly.terms():
+        term = Iv(Fr(int(coeff.p), int(coeff.q)))
+        for g, e in zip(gens, monom):
+            if e:
+                x = var_ivs[g]
+                p = Iv(1)
+                for _ in range(e):
+                    p = p * x
+                term = term * p
+        acc = acc + term
+    return acc
+
+
+def comp_fns(tau_a):
+    """per-component rational functions of t = tan k1_a, evaluated on an interval."""
+    S = Fr(2) * tau_a / (1 + tau_a ** 2)
+    C = (1 - tau_a ** 2) / (1 + tau_a ** 2)
+
+    def f(ti):
+        den = (Iv(1) + ti.sq()).inv()
+        c2k1 = (Iv(1) - ti.sq()) * den
+        s2k1 = Iv(2) * ti * den
+        g1 = ti * den
+        X = ti.sq() * den
+        g2 = (Iv(S) * c2k1 - Iv(C) * s2k1) * Fr(1, 2)
+        Y = (Iv(1) - (Iv(C) * c2k1 + Iv(S) * s2k1)) * Fr(1, 2)
+        c2k2 = Iv(C) * c2k1 + Iv(S) * s2k1
+        return c2k1, g1, X, c2k2, g2, Y
+    return f
+
+
+def det_iv(M):
+    n = len(M)
+    if n == 2:
+        return M[0][0] * M[1][1] - M[0][1] * M[1][0]
+    if n == 3:
+        return (M[0][0] * (M[1][1] * M[2][2] - M[1][2] * M[2][1])
+                - M[0][1] * (M[1][0] * M[2][2] - M[1][2] * M[2][0])
+                + M[0][2] * (M[1][0] * M[2][1] - M[1][1] * M[2][0]))
+    raise ValueError
+
+
+def hess_dets(tau, box):
+    """interval determinants of s1 H(k1) + s2 H(k2) for (s1, s2) = (+,+) and (+,-) at a box of t = tan k1."""
+    d = len(tau)
+    comps = [comp_fns(Fr(tau[a]))(box[a]) for a in range(d)]
+    X = sum((c[2] for c in comps), Iv(0))
+    Y = sum((c[5] for c in comps), Iv(0))
+    if not (X.lo > 0 and Y.lo > 0):
+        return None
+    e1 = X.sqrt()
+    e2 = Y.sqrt()
+    e1i, e2i = e1.inv(), e2.inv()
+    e1i3, e2i3 = e1i * e1i * e1i, e2i * e2i * e2i
+    H1 = [[(comps[a][0] * e1i if a == b else Iv(0)) - comps[a][1] * comps[b][1] * e1i3 for b in range(d)] for a in range(d)]
+    H2 = [[(comps[a][3] * e2i if a == b else Iv(0)) - comps[a][4] * comps[b][4] * e2i3 for b in range(d)] for a in range(d)]
+    out = {}
+    for s2 in (1, -1):
+        M = [[H1[a][b] + H2[a][b] * s2 for b in range(d)] for a in range(d)]
+        grad = [comps[a][1] * e1i - comps[a][4] * e2i * s2 for a in range(d)]
+        out[(1, s2)] = (det_iv(M), any(g.excludes_zero() for g in grad))
+    return out
+
+
+def cone_tilts(tau):
+    """squared gradient of the smooth record's energy at every cone point (k1 = corner or k2 = corner): must be < 1."""
+    d = len(tau)
+    sinsq = [Fr(x) ** 2 / (1 + Fr(x) ** 2) for x in tau]
+    sincos = [Fr(x) / (1 + Fr(x) ** 2) for x in tau]
+    tilt2 = sum(v ** 2 for v in sincos) / sum(sinsq)
+    return tilt2
+
+
+def system_2d(tau):
+    t, g1, g2, X, Y, c2k1, c2k2 = model(tau)
+    t1, t2 = t
+    P = sp.Poly(sp.numer(sp.together(g1[0] * g2[1] - g1[1] * g2[0])), t1, t2)
+    Q = sp.Poly(sp.numer(sp.together(g1[0] ** 2 * (Y[0] + Y[1]) - g2[0] ** 2 * (X[0] + X[1]))), t1, t2)
+    return t, P, Q
+
+
+def certify_2d(tau, prec_exp=60):
+    t, P, Q = system_2d(tau)
+    t1, t2 = t
+    R = sp.Poly(sp.resultant(P.as_expr(), Q.as_expr(), t2), t1)
+    assert not R.is_zero
+    eps = sp.Rational(1, 10 ** prec_exp)
+    # coefficients of P in t2, as polys in t1
+    Pt2 = sp.Poly(P.as_expr(), t2)
+    coeffs = [sp.Poly(c, t1) for c in Pt2.all_coeffs()]
+    assert not all(c.is_zero for c in coeffs)
+    cones = {(Fr(0), Fr(0)), (Fr(tau[0]), Fr(tau[1]))}
+    report = []
+    for f, mult in sp.factor_list(R.as_expr())[1]:
+        fp = sp.Poly(f, t1)
+        for (a, b), m in fp.intervals(eps=eps):
+            a, b = Fr(int(sp.Rational(a).p), int(sp.Rational(a).q)), Fr(int(sp.Rational(b).p), int(sp.Rational(b).q))
+            if a == b:   # exact rational root
+                cs = [Fr(int(sp.Rational(c.eval(a)).p), int(sp.Rational(c.eval(a)).q)) if not c.is_zero else Fr(0) for c in coeffs]
+                qpoly = sp.Poly(sum(sp.Rational(cs[i].numerator, cs[i].denominator) * t2 ** (len(cs) - 1 - i) for i in range(len(cs))), t2)
+                roots2 = []
+                for (c0, c1), m2 in qpoly.intervals(eps=eps):
+                    roots2.append(Iv(Fr(int(sp.Rational(c0).p), int(sp.Rational(c0).q)), Fr(int(sp.Rational(c1).p), int(sp.Rational(c1).q))))
+                I1 = Iv(a)
+            else:
+                I1 = Iv(a, b)
+                A, B, C = [horner_iv([Fr(int(x.p), int(x.q)) for x in c.all_coeffs()], I1) if not c.is_zero else Iv(0) for c in coeffs]
+                assert A.excludes_zero(), "leading coefficient not separated"
+                disc = B * B - Iv(4) * A * C
+                if disc.hi < 0:
+                    report.append(("no real t2", a))
+                    continue
+                assert disc.lo > 0, "discriminant not separated"
+                sq = disc.sqrt()
+                roots2 = [(-B + sq) / (Iv(2) * A), (-B - sq) / (Iv(2) * A)]
+            for I2 in roots2:
+                if I1.width() == 0 and I2.width() == 0 and (I1.lo, I2.lo) in cones:
+                    report.append(("cone", (I1.lo, I2.lo)))
+                    continue
+                # a candidate: Q must vanish there for a genuine stationary point; record Q's enclosure
+                Qv = poly_iv(Q, {t1: I1, t2: I2}, (t1, t2))
+                dets = hess_dets(tau, [I1, I2])
+                if dets is None:
+                    report.append(("eps interval touches zero", (I1.lo, I2.lo)))
+                    continue
+                verdict = {}
+                for k, (dv, gnz) in dets.items():
+                    verdict[k] = "not stationary" if gnz else ("nondegenerate" if dv.excludes_zero() else "UNDECIDED")
+                report.append(("candidate", I1.lo, I2.lo, "Q excludes 0" if Qv.excludes_zero() else "Q may vanish", verdict))
+    return R, report
+
+
+def iv_of(r):
+    r = sp.Rational(r)
+    return Fr(int(r.p), int(r.q))
+
+
+def quad_roots_iv(coeff_polys, x_iv, var):
+    """real roots (intervals) of sum c_i(x) y^i where coefficient polys are in `var`, evaluated at the interval x_iv."""
+    cs = [horner_iv([iv_of(z) for z in c.all_coeffs()], x_iv) if not c.is_zero else Iv(0) for c in coeff_polys]
+    if len(cs) == 3:
+        A, B, C = cs
+        assert A.excludes_zero(), "leading coefficient not separated"
+        disc = B * B - Iv(4) * A * C
+        if disc.hi < 0:
+            return []
+        assert disc.lo > 0, "discriminant not separated"
+        sq = disc.sqrt()
+        return [(-B + sq) / (Iv(2) * A), (-B - sq) / (Iv(2) * A)]
+    if len(cs) == 2:
+        A, B = cs
+        assert A.excludes_zero()
+        return [-B / A]
+    raise ValueError
+
+
+def certify_3d(tau, prec_exp=80):
+    t, g1, g2, X, Y, c2k1, c2k2 = model(tau)
+    t1, t2, t3 = t
+    P12 = sp.Poly(sp.numer(sp.together(g1[0] * g2[1] - g1[1] * g2[0])), t1, t2)
+    P13 = sp.Poly(sp.numer(sp.together(g1[0] * g2[2] - g1[2] * g2[0])), t1, t3)
+    Q = sp.Poly(sp.numer(sp.together(g1[0] ** 2 * (Y[0] + Y[1] + Y[2]) - g2[0] ** 2 * (X[0] + X[1] + X[2]))), t1, t2, t3)
+    R1 = sp.Poly(sp.resultant(P13.as_expr(), Q.as_expr(), t3), t1, t2)
+    assert not R1.is_zero
+    R = sp.Poly(sp.resultant(P12.as_expr(), R1.as_expr(), t2), t1)
+    assert not R.is_zero
+    eps = sp.Rational(1, 10 ** prec_exp)
+    c12 = [sp.Poly(c, t1) for c in sp.Poly(P12.as_expr(), t2).all_coeffs()]
+    c13 = [sp.Poly(c, t1) for c in sp.Poly(P13.as_expr(), t3).all_coeffs()]
+    report = []
+    ncand = 0
+    for f, mult in sp.factor_list(R.as_expr())[1]:
+        fp = sp.Poly(f, t1)
+        for (a, b), m in fp.intervals(eps=eps):
+            a, b = iv_of(a), iv_of(b)
+            I1 = Iv(a, b)
+            if a == b and a == 0:
+                report.append(("t1 = 0 (a corner coordinate; no stationary point has sin k cos k = 0)",))
+                continue
+            if a == b and a == Fr(tau[0]):
+                report.append(("t1 = tan K0_1 (k2_1 at a corner coordinate; excluded likewise)",))
+                continue
+            for I2 in quad_roots_iv(c12, I1, t1):
+                for I3 in quad_roots_iv(c13, I1, t1):
+                    ncand += 1
+                    dets = hess_dets(tau, [I1, I2, I3])
+                    if dets is None:
+                        report.append(("eps touches zero", a))
+                        continue
+                    verdict = {}
+                    for k, (dv, gnz) in dets.items():
+                        verdict[k] = "not stationary" if gnz else ("nondegenerate" if dv.excludes_zero() else "UNDECIDED")
+                    report.append(("candidate", a, I2.lo, I3.lo, verdict))
+    return R, report, ncand
+
+
+
+def family_e3(checks: Checks) -> None:
+    """T6: an exact proof that at one total wave vector in each dimension every stationary point of the pair's band functions is nondegenerate."""
+    drop = mut("morse_factor_dropped")
+    out = {}
+    for name, tau in (("plane", (Fr(5, 6), Fr(18, 5))), ("space", (Fr(5, 6), Fr(18, 5), Fr(1, 2)))):
+        if len(tau) == 2:
+            R, rep = certify_2d(tau)
+        else:
+            R, rep, _ = certify_3d(tau)
+        if drop:
+            rep = [r for r in rep if not (r[0] == "candidate" and "nondegenerate" in r[-1].values() and r[-1].get((1, 1)) == "nondegenerate")]
+        undecided = sum(1 for r in rep if r[0] == "candidate" and "UNDECIDED" in r[-1].values())
+        n_pp = sum(1 for r in rep if r[0] == "candidate" and r[-1].get((1, 1)) == "nondegenerate")
+        n_pm = sum(1 for r in rep if r[0] == "candidate" and r[-1].get((1, -1)) == "nondegenerate")
+        tilt = cone_tilts(tau)
+        if mut("cone_tilt_forged"):
+            tilt = tilt + 1
+        out[name] = (undecided, n_pp, n_pm, tilt)
+    ok = (out["plane"][0] == 0 and out["plane"][1:3] == (4, 2) and out["space"][0] == 0 and out["space"][1:3] == (8, 6)
+          and all(v[3] < 1 for v in out.values()))
+    checks.check("E3", ok,
+                 "T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: %d and %d nondegenerate stationary points per quarter-period cell for the ++ and +- band pairs in the plane, %d and %d in space, none undecided; at the cone points the other record's energy has squared gradient %s and %s, below one" % (out["plane"][1], out["plane"][2], out["space"][1], out["space"][2], out["plane"][3], out["space"][3]))
 
 
 # ============================================================================================ family F
@@ -284,8 +612,8 @@ N5_LINES = (
     "per_element: executed - the closed form g_a = sin K_a cos 2q_a of the total two-step momentum, symbolically on Z^2 and Z^3",
     "per_site: executed - the shell derivative dg_1 ^ dE at a Pythagorean point for all four band pairs, by rational comparison",
     "per_mode: executed - the placement lemma for any one-body term f0 + f.sigma, symbolically on Z^3",
-    "per_block: executed - the line's two-point shells with one value of g; the coincident states removed and their overlap with every band pair; the perturbation determinant on a truncation vanishing at the removed state",
-    "lattice_wide: two records; finite-range interactions; almost every total wave vector; the scattering and analytic steps are named standard imports; assumption (A') at one wave vector is named, supported by a floating-point search, not certified",
+    "per_block: executed - the line's two-point shells with one value of g; the coincident states removed and their overlap with every band pair; the perturbation determinant on a truncation vanishing at the removed state; exact nondegeneracy of every stationary point of the pair bands at one wave vector in each dimension",
+    "lattice_wide: two records; finite-range interactions; almost every total wave vector; the scattering and analytic steps are named standard imports; the nondegeneracy T5 needs is proved exactly at one wave vector in each dimension (T6)",
 )
 
 
@@ -321,7 +649,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: exact books need records that never scatter or bind - a kept total energy current makes two interacting records transparent in the plane and in space, and a transparent pair removes and binds nothing (under the named assumption at one wave vector), so nothing local keeps the books under one record per site; on a line no condition arises; supervisor derivation, unrefereed; nothing adopted")
+    print("scope: exact books need records that never scatter or bind - a kept total energy current makes two interacting records transparent in the plane and in space, and a transparent pair removes and binds nothing (with the needed nondegeneracy proved exactly at one wave vector), so nothing local keeps the books under one record per site; on a line no condition arises; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

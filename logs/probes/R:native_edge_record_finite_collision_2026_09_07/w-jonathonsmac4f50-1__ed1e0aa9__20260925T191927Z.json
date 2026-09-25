@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_finite_collision_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_finite_collision_2026_09_07.py",
+ "seed": 63967,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T191927Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "48f27f955f13be3488a96ff12406d14ba272c382d17bf8771b1a34e887fcc259",
+ "stdout_tail": "PASS finite collision rational certificate and fresh native matrix witness\nper_element: accepted signs and one refusal are bound to the live native helper; original false discriminator is preserved.\nper_site: native square evidence is separate from the cube48-register storage certificate.\nper_mode: actual free F differs from conserved K; commutator/splitting constants verified exactly.\nper_block:5402 collisions,7 fresh ancillary qubits each,37862 storage-plus-ancilla qubits; separate combined budget1217/11200.\nlattice_wide: not executed; clock, preparation, global jump synthesis and nearest-neighbor realization remain supplied.\nCHECKS 14 rational; 17 malformed controls; native18 per fixture\nSOURCE_SHA256 1c47ed6bad79d36cfea943f0afd73e29f805ca76b68b00d370c298052b8d170e\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\", \"scripts/native_edge_record_finite_collision_check_2026_09_07.py\": \"8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5\"}\nRESOURCES 0.492569167050533 23.015625 seconds/MiB;180 limits, BLAS1\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T191927Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_finite_collision_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

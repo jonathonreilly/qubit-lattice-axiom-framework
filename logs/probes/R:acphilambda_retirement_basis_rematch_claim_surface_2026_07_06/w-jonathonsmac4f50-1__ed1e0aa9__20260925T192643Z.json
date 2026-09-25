@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_retirement_basis_rematch_claim_surface_2026_07_06",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/acphilambda_retirement_basis_rematch_claim_surface_2026_07_06.py",
+ "seed": 64403,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192643Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90e82a1873d6d8f72b2b2117fa2c06db42fc5c5646c140cb60c0f4ba9330bd89",
+ "stdout_tail": "[PASS] exact two AC obligations\n[PASS] obligations are not supplied premises\n[PASS] historical live admissions remain empty\n[PASS] old governance registry absent\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

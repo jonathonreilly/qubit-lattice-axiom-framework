@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_rule_hermitian_gaussian_instance_formation_precision_ldl_2026_09_07.py",
+ "seed": 64202,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192322Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0526e152bddcfb78eb36623e1fcae83c3f495d50fa87f9d63d3d7fa247621de9",
+ "stdout_tail": "tances; det P real and positive\nPASS: D2 G4: equality det P = prod P_kk for a diagonal P\nPASS: E1 G5: on 2x3 the static marginal, the pinned-static conditional and the formation read-slice covariances of row 1 are pairwise different\nPASS: E2 G5: the formation precision's row-1 block differs from P_11: diagonal [149/48, 149/48, 3] against [3, 3, 3]\nPASS: E3 G5 remark: herm(Q^-1) != (herm Q)^-1 for the non-Hermitian witness Q = [[1,1],[-1,1]]\nPASS: F1 the note carries the three fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (0 hits)\nPASS: F3 runner source: no floating-point literal or conversion call (0 hits)\nper_element: executed \u2014 all 6 path and 24 plaquette orders in both instances; B2/B3 two 2x3 orders per instance; B5 five monotone orders, snake and mirror on the declared complex instance only; C1-C3 one monotone 2x3 order per instance\nper_site: executed \u2014 every site in each tested order; diagonal correction and fill-in at every site/pair in the 62 C1-C3 cases\nper_mode: executed \u2014 the quadratic form of the conditional product against L^H D L; det L = 1; the leading principal minors; the three read-slice covariances\nper_block: executed \u2014 the row-1 block of P, of P_sigma and of the three covariances on 2x3; the determinants on the three windows\nlattice_wide: not claimed \u2014 three finite windows of a declared instance; nothing about larger windows, the plane or any external fixture\nPASS: G1 the five N5 resolution lines are printed\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

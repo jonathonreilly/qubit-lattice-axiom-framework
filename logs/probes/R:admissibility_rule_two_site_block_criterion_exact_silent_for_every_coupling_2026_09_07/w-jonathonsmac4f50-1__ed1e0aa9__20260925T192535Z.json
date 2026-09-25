@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_rule_two_site_block_criterion_exact_silent_for_every_coupling_2026_09_07.py",
+ "seed": 64335,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192535Z",
+ "elapsed_s": 51.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d0f8d4798e46dc628af3af7f6f272999a810ce372831513096c63946fcee5495",
+ "stdout_tail": "): 6c_1 and 5rho(1+c_1) both cross 1 in (8/5, 33/20); rho/c_1 > 1 from t = 39/20\ninfo (t,t,1): 6c_1 and 5rho(1+c_1) both cross 1 in (29/20, 3/2); rho/c_1 > 1 from t = 3/2\nPASS: D1 the sequential number 5rho(1+c_1) crosses 1 in the same scan cell as 6c_1 on (t,1,1) and (t,t,1)\nPASS: D2 rho/c_1 exceeds 1 from t = 39/20 on (t,1,1) and from t = 3/2 on (t,t,1) on the declared scan\nPASS: E1 the note carries the three fence sentences verbatim\nPASS: E2 the note contains no forbidden phrase (hits: [])\nPASS: E3 the criterion's author is named only in the Prior art and Imports sections (violations: [])\nPASS: E4 runner source: no floating-point literal or conversion call (0 hits)\nper_element: executed \u2014 every boundary instance (252 x 126 multisets x 15 pairs) at each triple for rho and rho'; the factorization on every instance at (3,1,2)\nper_site: executed \u2014 the x-marginal and the y-marginal sensitivities separately; the coupling's x and y disagreement probabilities\nper_mode: executed \u2014 the disjoint-support (optimal) and the sequential couplings built explicitly on 202 instances with exact marginals and Hamming distances\nper_block: executed \u2014 the two-site block with its ten boundary slots; the block sum bounds at six triples; the scans on two lines\nlattice_wide: not claimed \u2014 the block contraction's implication on Z^3 is not proved here; the silence at the three triples is a finite exact statement for every coupling\nPASS: F1 the five N5 resolution lines are printed\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192626Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

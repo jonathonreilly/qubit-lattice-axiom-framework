@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_2026_08_14.py",
+ "seed": 64390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192630Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2dfbb7cea6fd52add3322d4984fa5753bc3d9af387f8c6a9a7a96860f328b475",
+ "stdout_tail": "n, obligation ...\nSOURCE_AUTHORITY: current memo and exact declared file bytes; historical Git identities are provenance only\nper_element: checked one exact naive-edge row, the range-two divided-difference identity, 24 prior aliases, two new L8 rows, and a four-step periodic telescope\nper_site: constructed a scalar action with free radius two and metric-vertex radius four; source/matter mixed-Hessian reciprocity comes from one vertex\nper_mode: preserved the L4 null-shell quadrature, separated every L24 Block98 pair, then found Rhat=i and Rhat=-i on exact L8 equal levels\nper_block: affirmative first-order changed-action construction survives locality, shell, reversal, source, and mixed-Hessian reciprocity but fails the necessary nonlinear Ward subblock\nlattice_wide: no full nonlinear action, total energy, constraint stage, Record compiler, law selection, adoption, retention, or rank-greater-than-one carrier is executed\nRESULT: a naive edge Hodge fails first order; the executed range-two-free/range-four-vertex scalar passes the exact phased first-order Ward, source, and mixed-Hessian gates but fails a new exact nonlinear shared-response test\nDECISION_CUT: stop further stencil changes inside the declared class above; every omitted-hypothesis route remains live, while the leading route is a degree-closed rank-greater-than-one cochain or geometry connection\nTOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192633Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

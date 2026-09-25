@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_finite_ladder_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_finite_ladder_check_2026_09_07.py",
+ "seed": 63968,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T191928Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e4a677d0345a45eae7d74df1494818bd9966aae622268f59fac0f4734d663326",
+ "stdout_tail": "7140452079103173, \"delta\": 0.25, \"cap\": 12.0, \"packet\": [4, 5], \"levels\": 48, \"path\": [0, 1, 2], \"dwells\": [0.2, 0.3, 0.4], \"free\": \"original A plus center EB\"}\nOriginal free A is retained; rounded total-energy distribution is invariant.\nOriginal energy drift: -0.0256230505631; unsafe refusal: 0.130765720635\nRetained trace NORM error: 0.490317785609; conventional trace distance is half this value.\nDetected mutations: omit_fuel, double_fuel, separate_sign_refusals, claim_original_energy_invariance, reset_retained_battery, unrestricted_two_rate_uniformization\nSource SHA256: 5f799032e85286ac0f511dd0073c95869830779de2306f6a9daae62ce7d80091\nDependency SHA256: {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\"}\nper_element: both native Record signs, finite translated-battery matrix columns and one combined refusal are checked.\nper_site: four native square vertices, old Records and directed head path01,12,23 are explicit.\nper_mode: noncommensurate sector spectra, rounded total-energy indicators and direct continuous-energy quadrature are checked.\nper_block: all three prescribed event prefixes retain the battery; unsafe completion and six adverse controls are executed.\nlattice_wide: checked and not executed -- no all-path GKSL cube simulation, infinite-volume claim or physical bath realization.\nRESOURCES {\"blas_threads\": 1, \"rss_limit_MiB\": 180, \"timeout_seconds\": 180}\nTOTAL: PASS FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T191928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_finite_ladder_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

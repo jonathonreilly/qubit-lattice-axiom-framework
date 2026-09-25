@@ -1,0 +1,34 @@
+{
+ "task": "R:native_edge_record_finite_collision_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_finite_collision_check_2026_09_07.py",
+ "seed": 63967,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T191927Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e66e1f1332bd1b51d9f636c3c5774850bcedfe436fa9a37996d1b0e44aeb3049",
+ "stdout_tail": "t_full_trace_norm_error\": 0.0005510939586005912}, {\"dissipative_trace_norm_error\": 0.00013139004298473714, \"h\": 0.02, \"split_full_trace_norm_error\": 0.00013976036417180185}, {\"dissipative_trace_norm_error\": 3.308965709459446e-05, \"h\": 0.01, \"split_full_trace_norm_error\": 3.519076586611407e-05}], \"rss_MiB\": 106.15625, \"seconds\": 0.05183187499642372, \"source_sha256\": \"8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5\", \"system_dimension\": 72, \"unitary_dimension\": 288, \"worst\": 5.329097002610779e-15}, \"source_sha256\": \"8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5\"}\nper_element: both native Record signs and ONE absorbing refusal enter each actual star coupling.\nper_site: native square N2, deleted edge01 original fixture and separately preregistered edge23 supplement.\nper_mode: full rounded total-energy matrices, original-free commutator and three-cell battery are checked.\nper_block: actual288-dimensional unitary and reduced CPTP channel compared at h=.04,.02,.01; 18 assertions per fixture.\nlattice_wide: checked and not executed -- no all-path cube, 48-qubit simulation, local bath or autonomous clock claim.\nSOURCE_SHA256 8316bcf64375b3fe4c4235460238121dc8011935140bdffb725a906fa1c62ba5\nDEPENDENCIES {\"scripts/native_edge_record_autonomous_head_native_ladder_check_2026_09_07.py\": \"fa24c6eee30f27387030640d1331f5379981013719c13b10ac5e6f97af3421af\"}\nTOTAL: PASS FAIL=0; original attempted noncommuting discriminator remains false as explicitly reported.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T191928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_finite_collision_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

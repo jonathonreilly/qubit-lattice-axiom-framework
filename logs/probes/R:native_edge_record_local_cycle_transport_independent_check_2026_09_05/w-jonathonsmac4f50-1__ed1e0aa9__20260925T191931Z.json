@@ -1,0 +1,35 @@
+{
+ "task": "R:native_edge_record_local_cycle_transport_independent_check_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_edge_record_local_cycle_transport_independent_check_2026_09_05.py",
+ "seed": 63971,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T191931Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5183b688eda2c23a0b1b0569cc329e8686d1529a02fe1e6db04bc9e1bfa847ac",
+ "stdout_tail": "PASS C0 independent directed half-edge front: order=(0, 3, 5, 6, 9) endpoint_star_only=yes\nPASS C1 connected prefixes and fair nonbridge branches: final_components=1 final_branches=32 min_transport_support=4\nPASS C2 independent continuity and matter viability: continuity=0.000e+00 density=[0.125304,0.874696] min_E=-5.748932 min_excess=0.582630\nPASS C3 independent persistent ledger: start=4.000000 final=1.677930 cap=8.000000 max_drift=0.000e+00 reset=no\nROW step=1 edge=0 J=+0.035746 support=7 E=-5.905910->-5.748932 battery=3.843022 rho=[0.1253,0.8747]\nROW step=2 edge=3 J=+0.256277 support=6 E=-5.748932->-5.330961 battery=3.425051 rho=[0.1993,0.8007]\nROW step=3 edge=5 J=-0.005250 support=4 E=-5.330961->-4.768122 battery=2.862212 rho=[0.3797,0.7097]\nROW step=4 edge=6 J=-0.001859 support=6 E=-4.768122->-4.177400 battery=2.271491 rho=[0.3892,0.6269]\nROW step=5 edge=9 J=-0.030297 support=7 E=-4.177400->-3.583840 battery=1.677930 rho=[0.3472,0.6035]\nSCOPE fixed-N CAR reconstruction; the oriented port order, local pulse, event rule, and scalar battery are supplied finite fixtures, not an endogenous formation law or quantum-battery theorem\nPASS C4 execution envelope: elapsed=0.01s rss=59.5MiB\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T191931Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_edge_record_local_cycle_transport_independent_check_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

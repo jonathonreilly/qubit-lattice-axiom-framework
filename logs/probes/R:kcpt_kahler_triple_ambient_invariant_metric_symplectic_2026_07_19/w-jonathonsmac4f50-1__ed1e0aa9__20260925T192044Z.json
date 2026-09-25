@@ -1,0 +1,35 @@
+{
+ "task": "R:kcpt_kahler_triple_ambient_invariant_metric_symplectic_2026_07_19",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_kahler_triple_ambient_invariant_metric_symplectic_2026_07_19.py",
+ "seed": 64044,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192044Z",
+ "elapsed_s": 19.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e51768d780a2b6bc867e9619b912e2405b43962ff9e499bd8904b1f8334891a3",
+ "stdout_tail": "rm census + metric non-uniqueness ===\n      exact numerators: sym=10752/1536 alt=7680/1536 comm=9216/768\nPASS G19 EXACT DISCRIMINATING: invariant symmetric dimension is 10752/1536=7\nPASS G20 EXACT DISCRIMINATING: invariant antisymmetric dimension is 7680/1536=5\nPASS G21 EXACT DISCRIMINATING: real commutant is 9216/768=12=7+5\n      exact Tr(T) coefficients [1,sqrt2,sqrt3,sqrt6] = ['3', '0', '0', '0']\nPASS G22 EXACT: Tr(T)=3 with radical coefficients zero; involution split is +1^5 / -1^2\n      [float sanity] invariant-symmetric rank r=7 ; T eigenvalues: +1 count=5, -1 count=2\nPASS G22b [FLOAT SANITY -- non-load-bearing]: rank 7, T^2=I, real +/-1 spectrum 5+2, g=I compatible/posdef\nPASS G23 EXACT STRUCTURAL: Unit-8 eight-member bulk-sign family is pinned; bulk dim 28 gives orientation ratio +1\n      [float sanity] ||omega-omega_alt||_F=14.967 ; signed-identity residual=0.0e+00\nPASS G23b [FLOAT SANITY -- non-load-bearing]: omega-omega_alt=-2 J_bulk !=0; sibling invariant/antisymmetric\n=== SUMMARY ===\nSurface: L=4, V_R=R^64, complexification=C^64, |G_amb|=768, shell normalizers Nm=[384, -128, 128, -384]\nGate families: T0 source pins; T1 metric; T2 complex structure; T3 symplectic form; T4 compatibility; T5 Hermitian restriction; T6 exact census/boundary\nLoad-bearing gates use exact integers, exact Q(sqrt2,sqrt3), structural deductions, or explicit parent pins.\nEvery NumPy norm/SVD/eigenspace/spectrum confirmation is tagged [FLOAT SANITY -- non-load-bearing].\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192103Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

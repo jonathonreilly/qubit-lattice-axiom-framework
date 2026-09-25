@@ -1,0 +1,35 @@
+{
+ "task": "R:acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22",
+ "type": "runner-reexecution",
+ "lane": "acphilambda",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/acphilambda_record_positivity_determinant_power_selector_boundary_2026_08_22.py",
+ "seed": 64402,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192642Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1c336689690ea7e91d95cc6a970d0bf020849261d6237cdd3ff0b9f8d3d6c66f",
+ "stdout_tail": "=(I, -1, 2) distinguishing=(2,)\n[PASS] constant calibration preserves exponent while determinant-dependent calibration can change it: constant=(12/7, 75/7) dependent=(2, 5)\n[PASS] conditional determinant-branch menu uses squared-modulus ratios: branch_probabilities=[1/45, 4/45] conditional=[1/5, 4/5] completion=8/9\n[PASS] first-power direct weight needs a supplied positive domain: domain=(0, 2, 5, -1) traces=(0, 2, 5, -1)\n[PASS] modulus-power-one square-root writer is a separate nonlinear bridge: trace ratio=5 complex_linear=False\n[PASS] coarse addition preserves supplied fine-block calibration: equal_fine=(3/7,3/7) equal_coarse=6/7 calibrated_split=3/7 orthogonal=0 refined_effect=Matrix([[3/7]])\n[PASS] squared-modulus amplitude factors compose multiplicatively: composite=25 factors=25\n[PASS] source preserves action, event-map, escape, and axiom boundaries: needles=9 present=9\nper_element: checked \u2014 phase-complete scalar determinant fixtures and their positive-weight typings are exercised exactly\nper_site: checked and not executed \u2014 no site-local matter action, site calibration, or site-to-event lift is claimed\nper_mode: checked and not executed \u2014 no fermion-mode carrier or K/CPT mode relation is selected by this theorem\nper_block: checked \u2014 Hermitian positivity, Kraus branch blocks, and a two-fine-event coarse sum are exercised exactly\nlattice_wide: checked and not executed \u2014 no lattice dynamics, continuum lift, or full charged-lepton action is claimed\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

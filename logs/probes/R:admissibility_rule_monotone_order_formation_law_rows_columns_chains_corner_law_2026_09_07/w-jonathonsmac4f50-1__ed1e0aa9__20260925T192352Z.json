@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_2026_09_07.py",
+ "seed": 64232,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ed1e0aa9",
+ "started_utc": "20260925T192352Z",
+ "elapsed_s": 43.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=39 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2fec88ea5c6418363c9fff5e4fb0c149966d183e28652b90379c4c12dff44453",
+ "stdout_tail": "6}^3 and = at the 6 constant ones\nPASS: F1 the note carries the three fence sentences verbatim\nPASS: F2 the note contains no forbidden phrase (0 hits)\nPASS: F3 the literature name of the structure appears only in Prior art and Imports (violations: [])\nPASS: F4 runner source: no floating-point literal or conversion call (0 hits)\nper_element: executed \u2014 every configuration of 2x3 (46656) for the 5 extensions, all four actual corner orders, the snake, the sum rule and the asymmetric phi; every configuration of 2x4 against 4x2; every (a, b, s) triple for the bridge\nper_site: executed \u2014 every site of every linear extension of 2x3, 3x3, 3x4 (509 orders) records exactly its left and above neighbors; the declared sites of the i-j, j-i sweeps and the snake\nper_mode: executed \u2014 every column and row of 3x3 (both triples) and 3x4 as three-site joints; every 2x2 block position against the corner law; the six staircases and the snake columns as exact defects\nper_block: executed \u2014 the row kernels P and P_rl on all 216 x 216 entries against the definition; p_0 P = p_0 and p_0 P_rl = p_0 on all 216 row states; the 4x3 snake by the carried-value transfer\nlattice_wide: not claimed \u2014 P1 proved for every rectangle and rule; P4, P5 on the infinite strip and the quadrant by block 02's limit arguments; nothing on the static law or plane; outside the top-left class, the finite opposite-corner identity and declared witnesses only\nPASS: G1 the five N5 resolution lines are printed\nTOTAL: PASS=39 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T192435Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

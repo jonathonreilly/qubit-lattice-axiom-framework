@@ -1,0 +1,14 @@
+PASS source and independent-helper closure :: current note, current Minimal Axioms memo, and actual imported helper are source-bound
+PASS measure moments and tomography domain :: zero mean proves half trace; uniqueness needs spanning effects; explicit +/-z coherence counterexample
+PASS determinant biconditional and scalar freedom :: positive root gives iff; context scalar preserves content and changes relative rate
+PASS same-qubit stopped filter with exceptions :: nonscalar W filters and is nonexponential; W=cI is exponential; eventual law requires gamma>0
+PASS Route B complete finite channel :: 9 matrix units, 4 Record units, both coherence blocks, semigroup, basis gauge, helper, phase control
+PASS narrow carrier boundary and finite parity escape :: two Record rays span a qubit; three qubits provide an even blank+logical subspace; placement unproved
+PASS conditional race and filtration :: P_B=4/9, P_Q=1/2; filtering content depends on competitor; centering assumes candidate probabilities
+PASS bounded claim and premise scope :: tomography, scalar/rate, wall, historical-provenance, no-audit, and current-axiom guards are live
+per_element: positive qubit transfer, spanning effects, determinant, and scalar/rate domains
+per_site: complete same-qubit step and full 3x3 blank/Record finite channel
+per_mode: six registered effects and finite parity embedding; no physical uniqueness
+per_block: conditional 4/9 versus 1/2 two-site race and supplied filtration
+lattice_wide: not executed; no source selection, allocator, collision law, empirical corpus, or TOE closure
+TOTAL: PASS=8 FAIL=0

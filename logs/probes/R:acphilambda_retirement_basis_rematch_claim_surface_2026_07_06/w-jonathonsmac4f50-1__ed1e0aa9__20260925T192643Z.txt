@@ -1,0 +1,5 @@
+[PASS] exact two AC obligations
+[PASS] obligations are not supplied premises
+[PASS] historical live admissions remain empty
+[PASS] old governance registry absent
+TOTAL: PASS=4 FAIL=0

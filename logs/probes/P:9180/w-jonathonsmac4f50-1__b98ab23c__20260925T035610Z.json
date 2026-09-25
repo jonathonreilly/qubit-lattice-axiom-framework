@@ -1,0 +1,37 @@
+{
+ "task": "P:9180",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block125-under",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9180",
+ "pr": 9180,
+ "branch": "physics-loop/admissibility-induced-law-block125-under-one-record-per-site-the-a-terms-levels-are-frozen-or-out-of-reach-20260924",
+ "git_sha": "b98ab23c",
+ "started_utc": "20260925T035610Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_under_one_record_per_site_the_a_terms_levels_are_frozen_or_out_of_reach_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "816c11fa6049d513f1dd03c66dd126d93a096a8ce92cf893a281b5b4a0e7b3fd",
+ "stdout_tail": "PR #9180: physics-loop: admissibility induced-law block 125 - under one record per site the a-terms levels are frozen or out of reach: the middle level is one record per site, and a full lattice has a constant generator\nbranch physics-loop/admissibility-induced-law-block125-under-one-record-per-site-the-a-terms-levels-are-frozen-or-out-of-reach-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_under_one_record_per_site_the_a_terms_levels_are_frozen_or_out_of_reach_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation count_forged: expected B observed B ok\n   mutation full_generator_forged: expected C observed C ok\n   mutation hole_bound_forged: expected D observed D ok\n   mutation chiral_moment_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T035617Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

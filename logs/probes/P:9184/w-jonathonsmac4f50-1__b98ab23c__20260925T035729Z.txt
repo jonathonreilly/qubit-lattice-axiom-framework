@@ -1,0 +1,10 @@
+PR #9184: physics-loop: admissibility induced-law block 127 - aligned clusters of moving records: a box loses records bond by bond, its turning size switches at cp = 1, and tied facets need two moves
+branch physics-loop/admissibility-induced-law-block127-aligned-clusters-of-moving-records-turning-size-switches-at-cp-one-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_aligned_clusters_of_moving_records_a_box_loses_records_bond_by_bond_and_its_turning_size_switches_at_cp_one_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation box_rate_forged: expected B observed B ok
+   mutation switch_forged: expected C observed C ok
+   mutation facet_rule_forged: expected D observed D ok
+   mutation path_weight_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

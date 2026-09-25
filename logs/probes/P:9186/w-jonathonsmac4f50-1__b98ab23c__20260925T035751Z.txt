@@ -1,0 +1,10 @@
+PR #9186: physics-loop: admissibility induced-law block 129 - block 60s declared numbers: unit-free speeds force s = p + 2, positive content forces the kinetic sign, and K and alpha/K stay supplied
+branch physics-loop/admissibility-induced-law-block129-block-60s-declared-numbers-what-fixes-them-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_block_60s_declared_numbers_unit_free_speeds_force_s_equals_p_plus_two_positive_content_forces_the_kinetic_sign_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation rescaling_weight_forged: expected B observed B ok
+   mutation speed_power_forged: expected C observed C ok
+   mutation kinetic_sign_forged: expected D observed D ok
+   mutation curvature_power_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

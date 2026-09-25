@@ -1,0 +1,4 @@
+PR #9181: science: original coincidences and count-energy identifiability
+branch codex/mobile-record-coincidence-and-count-identifiability-20260925 (base codex/mobile-record-input-energy-and-mark-power-20260925)
+runners in the PR: 1
+== scripts/original_coincidences_and_number_energy_identifiability_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)

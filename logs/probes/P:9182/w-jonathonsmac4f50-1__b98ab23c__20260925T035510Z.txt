@@ -1,0 +1,10 @@
+PR #9182: physics-loop: admissibility induced-law block 126 - records that move with vacancies: the infrared stiffness is set by the binding scale, long-range order holds above the neutral scale, and at it there is no full bound
+branch physics-loop/admissibility-induced-law-block126-records-that-move-with-vacancies-infrared-stiffness-set-by-the-binding-scale-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_records_that_move_with_vacancies_the_infrared_stiffness_is_set_by_the_binding_scale_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation kernel_threshold_forged: expected B observed B ok
+   mutation twist_on_records_only: expected C observed C ok
+   mutation neutral_value_forged: expected D observed D ok
+   mutation green_bound_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,10 @@
+PR #9187: physics-loop: admissibility induced-law block 130 - the hard-core sea on a ring is one twisted band: it is half filled, with half the free seas volume term and clock stiffness
+branch physics-loop/admissibility-induced-law-block130-the-hard-core-sea-on-a-ring-half-the-free-seas-stiffness-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_hard_core_sea_on_a_ring_is_one_twisted_band_half_filled_with_half_the_free_seas_volume_term_and_clock_stiffness_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation packing_forged: expected B observed B ok
+   mutation wrap_sign_forged: expected C observed C ok
+   mutation twist_set_forged: expected D observed D ok
+   mutation stiffness_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

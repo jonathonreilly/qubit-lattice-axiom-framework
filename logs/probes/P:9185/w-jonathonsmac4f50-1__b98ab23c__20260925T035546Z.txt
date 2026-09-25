@@ -1,0 +1,10 @@
+PR #9185: physics-loop: admissibility induced-law block 128 - the exchange sign is not supplied by records: both hard-core sectors meet every axiom, and they first differ in the fourth moment, by -8 per plaquette
+branch physics-loop/admissibility-induced-law-block128-the-exchange-sign-is-not-supplied-by-records-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_exchange_sign_is_not_supplied_by_records_both_hard_core_sectors_meet_every_axiom_and_first_differ_in_the_fourth_moment_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation sector_not_closed: expected B observed B ok
+   mutation plaquette_value_forged: expected C observed C ok
+   mutation odd_ring_unitary_forged: expected D observed D ok
+   mutation grading_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

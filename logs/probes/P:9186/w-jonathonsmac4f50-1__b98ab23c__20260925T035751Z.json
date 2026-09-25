@@ -1,0 +1,37 @@
+{
+ "task": "P:9186",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block129-block",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9186",
+ "pr": 9186,
+ "branch": "physics-loop/admissibility-induced-law-block129-block-60s-declared-numbers-what-fixes-them-20260924",
+ "git_sha": "b98ab23c",
+ "started_utc": "20260925T035751Z",
+ "elapsed_s": 9.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_block_60s_declared_numbers_unit_free_speeds_force_s_equals_p_plus_two_positive_content_forces_the_kinetic_sign_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "a245de07bd85c33893f9e483a97aee20a43229b78b8ea001eed4abb59a72ab45",
+ "stdout_tail": "PR #9186: physics-loop: admissibility induced-law block 129 - block 60s declared numbers: unit-free speeds force s = p + 2, positive content forces the kinetic sign, and K and alpha/K stay supplied\nbranch physics-loop/admissibility-induced-law-block129-block-60s-declared-numbers-what-fixes-them-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_block_60s_declared_numbers_unit_free_speeds_force_s_equals_p_plus_two_positive_content_forces_the_kinetic_sign_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation rescaling_weight_forged: expected B observed B ok\n   mutation speed_power_forged: expected C observed C ok\n   mutation kinetic_sign_forged: expected D observed D ok\n   mutation curvature_power_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T035800Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

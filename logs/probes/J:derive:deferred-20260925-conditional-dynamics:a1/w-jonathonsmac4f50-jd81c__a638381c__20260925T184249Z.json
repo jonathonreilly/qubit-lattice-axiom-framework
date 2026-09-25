@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260925-conditional-dynamics:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-jonathonsmac4f50-jd81c",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-conditional-dynamics/w-jonathonsmac4f50-jd81c/check.py",
+ "seed": 61769,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a638381c",
+ "started_utc": "20260925T184249Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL exact countermodel for the autonomous-preparation residual of PR #9041 (history- and clock-dependent lam at an isolated site with fixed records)"
+ },
+ "review": "Own countermodel for PR 9041's autonomous-preparation residual: two bonded sites with five cancelling records each, Heisenberg dynamics solved exactly via SWAP, the partner's record at a supplied time tau; the isolated site's time-averaged odds (1 + lam(tau) p_z)/2 with lam(tau) = cos^2(2J tau)/(1 + sin^2(2J tau)) for identical final records, and a rate-dependent lam under a constant hazard; bundle hashes and main verified; PR 9041/9142 by the same model family.",
+ "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-18.json in that directory. Start with PR9041 and its corrected isolated-site law. State a finite autonomous preparation or occurrence question not already supplied by externally controlled rotations or a fixed-record boundary. Give one explicit countermodel or exact construction under declared assumptions; do not derive a clock or Born law from a supplied Hamiltonian. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-conditional-dynamics/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle.",
+ "stdout_sha256": "e20ce1d4334726a4ff51007307b73b76d2f6b634f979c8c64cfe7d6227d769ca",
+ "stdout_tail": "tion of the records alone when the site is prepared by this finite autonomous history: (1, 1/3, 0)\nPASS C7 if y's record is -z instead (weight (1 - sin^2 2J tau)/2 = cos^2(2J tau)/2), x's conditional z-component is 1 at every tau (field -J z-hat, so lam = -1 along h^): the dependence on the formation time is carried by the outcome that keeps the partner's initial content: z = 1\nPASS C8 averaging over a constant formation hazard f for y's record (weighted by the record's own trace-rule weight), x's lam given the record +z is (8*J**2 + f**2)/(24*J**2 + f**2): it depends on the clock rate f/J, so no choice of supplied clock makes the law records-only\n\nTOTAL: PASS=8 FAIL=0\nHIT: within PR #9041's supplied clauses (Heisenberg bond, compression onto records, trace rule) plus a supplied formation time, an explicit finite autonomous history - two bonded sites each with five cancelling records, the partner's record forming at time tau with content +z - leaves the isolated site in the field J z-hat with time-averaged odds (1 + lam(tau) p_z)/2, lam(tau) = cos^2(2J tau)/(1 + sin^2(2J tau)): the same final records give lam = 1, 1/3 or 0 by formation time, and a constant formation hazard gives a rate-dependent lam; the records-only law of the landed Theorem 3 needs a preparation that this finite autonomous dynamics does not supply\nSUMMARY: PARTIAL exact countermodel for the autonomous-preparation residual of PR #9041 (history- and clock-dependent lam at an isolated site with fixed records)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd81c",
+  "at_utc": "20260925T184253Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9243. Exact finite autonomous countermodel: identical final records, isolated-site lam(tau) = cos^2(2J tau)/(1 + sin^2(2J tau)) by formation time; rate-dependent lam under a constant hazard; for a referee of another family.",
+  "by": "w-jonathonsmac4f50-jd81c",
+  "at_utc": "20260925T184253Z"
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "P:9144",
+ "type": "pr-reexecution",
+ "lane": "composite-sites-charged-majorana-matter-",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9144",
+ "pr": 9144,
+ "branch": "claude/composite-sites-charged-majorana-matter-20260924",
+ "git_sha": "d2909d2d",
+ "started_utc": "20260925T015150Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "a2b427b3720e2d11137d93b9c2ff7b94d0f0850384d0323858d8f6af0c45c66e",
+ "stdout_tail": "PR #9144: feat(matter): composite sites give the carved Majoranas an exact charge\nbranch claude/composite-sites-charged-majorana-matter-20260924 (base main)\nrunners in the PR: 1\n== scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T015157Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

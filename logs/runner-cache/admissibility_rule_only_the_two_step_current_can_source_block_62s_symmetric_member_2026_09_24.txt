@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_only_the_two_step_current_can_source_block_62s_symmetric_member_2026_09_24.py
+runner_sha256: 4643503a291cb5dfffdbff0bbb5ff8859f9aaef32e71982e000a217b6b91cb08
+input_fingerprint_sha256: f81407a8bbb3755a187877d7381dd57fdaa8ebe34384acdefc56af7985ac90ad
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.83
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONLY_THE_TWO_STEP_CURRENT_CAN_SOURCE_BLOCK_62S_SYMMETRIC_MEMBER_NO_LOCAL_PLACEMENT_OF_THE_FRAME_RESPONSE_OR_OF_THE_ONE_STEP_CURRENT_KEEPS_ITS_DIVERGENCE_CONDITION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities (the coin); Admissibility is not a dynamics axiom and does not define a time metric (the walk, its currents and the lengths member are supplied clauses)
+PASS: B1 T1(a): for three reflection states (cos theta = 4/5; s = (4/5, 3/5, 0), (4/5, 0, 3/5), (4/5, 0, 0)) at all 125 sites of [-2,2]^3: H psi = E psi, Theta_a^j = s_a s_j rho/E, J_1^j = 0 and J_a^j = s_a s_j cos k_a rho/E (a = 2, 3), exactly
+PASS: B2 T1(b): at q = (2 theta, 0, 0) the q-parts over six rational (k2, k3) samples span: the J-parts v (x) s have 6x6 determinant -107674031068573261824*c**2/165356145130404541015625 and the Theta-parts s (x) s (in Sym(3)) 16707516710808*c**4/2724507423828125, nonzero for every cos theta != 0 - the J-parts fill the space where conserved currents at q live, the Theta-parts all of Sym(3)
+PASS: C1 T2: a transfer P with sym P(0) = -1/2 compatible on every stationary state would need sym(P(q) G(q) w) = 0 on the spans of T1 at every axis q, hence sym P(0) = 0 as q -> 0: a contradiction. Witness: the plain transfer eps = -h/2 on the first reflection state against the relabelling xi = e1 delta_0 pairs to -1152/625 (not 0)
+PASS: D1 T3: the S-current J is conserved (sum_x J . d eta = 0 for every finitely supported eta, checked for one) but a realisation R with Lambda R(0) = 1 would need R(q) G(q) w in e_c (x) C^3 at every q = t e_c, so R(0) would annihilate every uniform shear: a contradiction. Witness: the plain realisation B = -h/2 on the first reflection state against xi = e2 delta_0 pairs to -1728/3125 (not 0)
+PASS: E1 T4(a): on an exact energy-1 superposition of five plane waves with rational sines, sum_j prod_(l != j) C_l [K_a^j(x + e_j) - K_a^j(x - e_j)] = 0 at all 27 sites of [-1,1]^3 for each a (the two-step current's transposed law), while the same combination of the S-current is nonzero at 81 of 81
+PASS: E2 T4(b): the realisation B_i^j = -(1/2) phi_j h_ij, phi_j = (1/2)(1 + T_j^-1) prod_(l != j) C_l, pairs the two-step current with every relabelling to exactly 0 (three random relabellings), while the plain B = -h/2 does not (12.2152, -5.3685, -8.8825)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - H psi = E psi and the closed forms of Theta and J for three reflection states, exactly
+per_site: executed - all 125 sites of [-2,2]^3 for the reflection states; all 27 sites of [-1,1]^3 for the transposed law
+per_mode: executed - the spans of the q-parts at q = (2 theta, 0, 0) as determinants symbolic in cos theta
+per_block: executed - the two witnesses (-1152/625, -1728/3125); conservation of J; the phi-realisation's zero pairing against three relabellings and the plain realisation's nonzero pairing
+lattice_wide: T1-T4 on every stationary state of Z^3 and of L^3 tori with 4 | L; the member's solvability at nonzero wave vector rests on block 62 T5 as landed; the q = 0 condition and strict normalisation of the two-step realisation are not treated; the clauses are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: which placements of the walk currents can source block 62 symmetric member - no local transfer of the frame site response and no local realisation of the one-step current keeps its divergence condition on every stationary state; the two-step current obeys a transposed law and its phi-realisation is exactly compatible; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

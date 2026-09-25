@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 120 (2026-09-24)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 62 as landed: the frame response's preservation of the divergence condition not established; deferred U7-R4, U7-R5"
+source_of_blocker_text: block 62 as landed; deferred review items
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "a strictly normalised realisation of the two-step current; the q = 0 condition"
+```

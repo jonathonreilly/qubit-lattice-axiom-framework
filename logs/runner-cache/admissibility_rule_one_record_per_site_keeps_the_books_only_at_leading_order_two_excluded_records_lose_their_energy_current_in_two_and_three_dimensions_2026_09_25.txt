@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_keeps_the_books_only_at_leading_order_two_excluded_records_lose_their_energy_current_in_two_and_three_dimensions_2026_09_25.py
+runner_sha256: a5e82810702c64a0655327e52fadbb6728001c8a4e1e8bbed55303202a35fe4e
+input_fingerprint_sha256: 03b5f0e84d627b5945164f4955c2219a01a631bd2a662b83da8057611e518cac
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 10.32
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its exclusion, the currents and their placements, the member and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: for two records of block 54's walk under one record per site (block 78's compression), both exchange signs: on Z^2 and Z^3, [H2, J] v != 0 for adjacent pairs, where J = i[H2, D2] is the total energy current of the compressed densities (exact over Q(i), open lattice); on the 5 x 5 torus, with J built from the site densities by minimal image, the same holds
+PASS: C1 T2: the total energy current is kept for free antisymmetric pairs on Z, Z^2 and Z^3 (and on the 5 x 5 torus), where two records may share a site with opposite coins; and for excluded pairs of both signs on the line and on the ring of 7 sites (every basis state)
+PASS: D1 T3: for any finitely supported stress, sum_x x_k sum_ij dbar_i dbar_j Theta_ij (x) = 0 (exact on a rational Theta on 5^3), so the member's identity e_u'' = sum dbar dbar Theta forces the total current d/dt sum_x x e_u(x) to be kept; the body-diagonal average keeps every first moment, so block 121's compressed source and block 135's average carry the same total current: with either, T1 leaves no local stress
+PASS: E1 T4: j(k) = (1/2) sin 2k, each record's energy current, is k - (2/3) k^3 + O(k^5) and is the same at the reflected corner (j(pi + kappa) = j(kappa)); a collision keeps the crystal momentum, so for slow records (offsets kappa from their species corners, whether or not they change species, since j is the same at every corner and the corners' parts cancel modulo 2 pi) the total energy current changes by -(2/3) Delta sum kappa^3 + O(kappa^5): the books hold at leading order for every species, and fail only at the collision scale
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - [H2, J] on adjacent pairs over Q(i), open Z, Z^2, Z^3, both exchange signs, with and without exclusion
+per_site: executed - the 5 x 5 torus from site densities by minimal image; the ring of 7 sites on every basis state
+per_mode: executed - the first moment of a double divergence of a rational stress on 5^3; the body-diagonal average's first moments
+per_block: executed - the two-step current's series and species blindness; the third-order change under a kept crystal momentum
+lattice_wide: exact for two records; many records and other placements open; the walk, exclusion, member and link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: one record per site keeps the books only at leading order - two excluded records lose their total energy current in 2D and 3D, keep it on a line; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

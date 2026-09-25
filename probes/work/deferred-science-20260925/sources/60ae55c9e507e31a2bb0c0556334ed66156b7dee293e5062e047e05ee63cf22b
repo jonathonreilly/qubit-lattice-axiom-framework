@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_2026_09_25.py
+runner_sha256: 59b138ce85810f6d93c98cafdfe1313423e50af682c05701e786fe88dae7f4ea
+input_fingerprint_sha256: 68429051ad7fdac24f09f8d061699d03f875a2567d2aa77ce67ec47a191fb049
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 64.72
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_NO_POSSIBILITY_SHIFT_AMONG_NEIGHBOURS_RESTORES_THE_BOOKS_NO_NEIGHBOUR_COIN_TERM_KEEPS_TWO_EXCLUDED_RECORDS_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its exclusion, the currents and their placements, the member and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: on Z^2, for two records under one record per site with either exchange sign, and V any neighbour coin term (a general Hermitian 4 x 4 matrix on the two coins of each neighbouring pair, one per axis, 32 real unknowns, its energy at the pair's midpoint), the defect [H2 + V, J] v of the total energy current has entries that involve none of the unknowns and are nonzero (312 and 468 such entries over the test pairs and components for the two signs), so no neighbour coin term keeps the current
+PASS: C1 T2: on Z^3 with 48 real unknowns (a general coin matrix per axis), for either exchange sign, the defect again has entries free of every unknown and nonzero (592 and 888 entries): no neighbour coin term keeps the current
+PASS: D1 T3: without exclusion and without a term the defect vanishes on every test pair on Z^2 and Z^3 (free pairs keep the current, block 137); with exclusion, the pair at (0,0) and (1,0) with both coins up has the defect -i/16 on the state with records at (-1,-1) (up) and (0,0) (down) for no term and for a rational term, while the term moves 96 other entries: the witnesses are exclusion's and no neighbour coin term reaches them; with the term's energy anywhere on the bond's line (a free offset t), the same 312 entries stay free of every unknown
+PASS: E1 T4: on the line, two excluded records keep the current with no term (block 137 T2), so the obstruction of T1-T2 belongs to two and three dimensions: there a record must pass around the other's site, and exclusion removes paths that no change of the neighbours' coins restores
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the defect of the total energy current symbolically in 32 (Z^2) and 48 (Z^3) real unknowns, both exchange signs
+per_site: executed - adjacent, diagonal and distance-two test pairs with every coin pair; the witness entry for no term and for a rational term
+per_mode: executed - the term's energy anywhere on the bond's line (a symbolic offset); the free and excluded controls
+per_block: executed - the line: excluded pairs keep the current with no term
+lattice_wide: two records on the open lattice; coin terms on neighbouring pairs only; correlated hops and other placements not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: one record per site - no coin interaction between neighbouring records restores the energy current of two excluded records on Z^2 or Z^3; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

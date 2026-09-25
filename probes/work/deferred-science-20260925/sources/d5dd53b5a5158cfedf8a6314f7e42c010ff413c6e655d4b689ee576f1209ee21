@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_2026_09_25.py
+runner_sha256: b78d6a066fec26e4c73bccfa894b7e085299a96ac7fb214206481b0e69f6fbe6
+input_fingerprint_sha256: 584e734f0173ae54a5291de18a8570220d7de01eba314dc79764fb8bf0c5f1f3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.23
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its currents and their placements, the member, its kinetic term and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: on the 5^3, 6^3 and 9^3 tori, as exact operators over Q(i), -[H, [H, e'(x)]] = sum_ij dbar_i dbar_j Theta_ij(x), where e'(x) is the energy density averaged over the eight body-diagonal neighbours and Theta_ij = phi_j^T K_i^j is block 69's reach-three current read through block 120's phi-realisation; both sides are nonzero and have support radius 4 about x, so the 9^3 torus (side > 8) carries the identity to Z^3: every state of the walk, all eight species and both branches, obeys e'' = wbar^2 sum dbar_i dbar_j Theta_ij
+PASS: C1 T2: for the beat of two eigen-waves (k, l, u), (k', l', u') at q = k - k': sin q_j (P_j(k) + P_j(k')) = cos q_j (sin^2 k_j - sin^2 k'_j) (P_j = (1/2) sin 2k_j), and sum_a (sin k_a - sin k'_a) u'^dag sigma_a u = (l - l') u'^dag u modulo l^2 = |s|^2, l'^2 = |s'|^2; so the source's double divergence is prod_l cos q_l (l - l')^2 e_q with e_q = (1/2)(l + l') u'^dag u: the site energy misses by the one factor prod_l cos q_l, the same for every species, branch and k-bar, which the body-diagonal average e' = C_1 C_2 C_3 e supplies exactly
+PASS: D1 T3: on the 5^3 torus the frame's site stress (block 62) matches neither e nor e' (operators nonzero), and neither does block 120's realisation without its transverse average prod_{l != j} C_l; without that average the beat's double divergence is (1/2)(l - l') u'^dag u sum_j cos q_j (sin^2 k_j - sin^2 k'_j), whose ratio to l^2 - l'^2 at the fixed q with cos q = (4/5, 12/13, 1) takes two different values for two k-bars (7645551/9075248 and 197797929/232852880): no placement of the energy repairs it
+PASS: E1 T4: at beta = -alpha the member (block 101's action with block 62's R2 and the full stress, re-derived) demands e_u'' = -(K wbar^2/(4 alpha)) p.Theta.p of the energy e_u that sources its clock; with e_u = e' and the two-step source, T1 gives e'' = -wbar^2 p.Theta.p for every state, so the member admits the walker's content exactly, at every wave vector and for all eight species, iff alpha = K/4; on the 5^3 torus sum_x e'(x) = sum_x e(x) = H exactly; the averaging's symbol prod cos q_l is 1 at q = 0, -1 at pi(1,1,1), and 1 - |q|^2/2 + O(q^4) (checked along (1,2,3))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the operator identity as exact matrices over Q(i) on the 5^3, 6^3 and 9^3 tori, both sides nonzero, support radius 4
+per_site: executed - the identity at two sites of 5^3 and at the origin of 6^3 and 9^3; sum_x e'(x) = sum_x e(x) = H on 5^3
+per_mode: executed - the beat's mechanism symbolically: the trigonometric identity, the eigen-identity modulo l^2 = |s|^2, and the common factor prod cos q_l
+per_block: executed - the member's identity at beta = -alpha re-derived; the site stress and the untransverse realisation fail; two k-bars at one q give different ratios
+lattice_wide: the identity is exact on Z^3 for every state (support radius 4 < 9/2); first order in the member's fields; the walk, currents, placements, member and link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: one light cone exactly on the lattice - the two-step content with the body-diagonal energy meets the member identity for every state and all eight species iff alpha = K/4; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

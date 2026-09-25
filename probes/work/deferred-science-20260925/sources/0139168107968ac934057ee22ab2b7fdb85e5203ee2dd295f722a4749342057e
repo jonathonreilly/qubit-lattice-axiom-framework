@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_hard_core_sea_on_a_ring_is_one_twisted_band_half_filled_with_half_the_free_seas_volume_term_and_clock_stiffness_2026_09_24.py
+runner_sha256: cb0efbd237820b78628a6f37b6bf448cb5b1fd11bef3c968d7337bb3a7c37c17
+input_fingerprint_sha256: 626c3fcdbc599513401b581418bb6cb4b6994245f7c35339855484b8d8ae5a18
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.67
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_HARD_CORE_SEA_ON_A_RING_IS_ONE_TWISTED_BAND_HALF_FILLED_WITH_HALF_THE_FREE_SEAS_VOLUME_TERM_AND_CLOCK_STIFFNESS_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: one record per site (the hard-core compression; records never pass on a ring); records form (which states a sea fills is not given); Admissibility is not a dynamics axiom (the walk, the rates and the composition are supplied)
+PASS: B1 T1: on the ring of six with generic rational bond weights, six records give the zero generator (every hop lands on an occupied site) and three give a nonzero, traceless (no diagonal entry), hermitian one, for both exchange signs, so the energy below one record per site is negative; the generator depends on the rates only through the bond products, which a chessboard phi = c^(+-1) makes exactly 1 on an even ring (and cannot on an odd one)
+PASS: C1 T2: on the rings 8 (4 and 6 records) and 7 (3 records), with generic rational bond weights and both exchange signs, every one of the 24768 nonzero entries of the hard-core generator, after the gauge g = prod over down coins of (-1)^x, equals the up-coin spinless hop; a hop across the wrap bond also rotates the coin sequence and carries (-1)^(N-1) times the stated factor (fermions 1, bosons (-1)^(N-1), times -1 for a down coin on an odd ring): the records are one spinless band with the signed rotation R on the wrap bond
+PASS: D1 T3: counting the orbits of the signed rotation R on coin sequences, with their sign products, the twists (as fractions of a turn) are the same set for fermions and bosons: all N-th roots of unity on the even ring of 8 (N = 4, 6) and all 2N-th roots on the odd ring of 7 (N = 3, 6); so for every rate field both exchange signs have the same ground energy and the same second variation
+PASS: E1 T4: M consecutive terms sin(a + j d) sum to sin(a + (M-1) d/2) sin(M d/2)/sin(d/2) (symbolic, M = 1..8), so a window of M grid points 2 pi j/L sums to sin(centre) sin(pi M/L)/sin(pi/L), so with the twist pi the half-filled band's negative window gives the sea -1/sin(pi/L) (exact, L = 4, 8, 12, 16; the free sea is -2 cot(pi/L)); for the rate mode u = eps cos(qx) the held term is -cos^2(q/2)/(4 pi) and the relaxation integral uses int sin^2 t/cos t = ln(sec t + tan t) - sin t, giving Pi(q) = -cos^2(q/2) ln(sec(q/2) + tan(q/2))/(4 pi sin(q/2)) = -1/(4 pi) + q^2/(24 pi) + ...: volume term c0 = -1/pi and clock stiffness kappa = 1/(6 pi), exactly half the free sea's -2/pi and 1/(3 pi), with the same sign
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - every nonzero entry (24768) of the hard-core generator on rings 8 and 7, both exchange signs, against the twisted spinless band
+per_site: executed - packing and tracelessness on the ring of six; the chessboard's bond products
+per_mode: executed - the twist sets of both exchange signs by orbit counting on rings 8 and 7
+per_block: executed - the window identity; the half-filled sea at L = 4, 8, 12, 16; the held and relaxation integrals and the series of the closed form
+lattice_wide: T1 on every connected lattice; T2-T4 on every ring (T4 in the limit of long rings, the finite sums being Riemann sums of bounded integrands); two and three dimensions not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: the hard-core sea on a ring - one twisted spinless band; one twist set for both exchange signs; half filled; c0 = -1/pi and kappa = 1/(6 pi), half the free sea values with the same sign; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

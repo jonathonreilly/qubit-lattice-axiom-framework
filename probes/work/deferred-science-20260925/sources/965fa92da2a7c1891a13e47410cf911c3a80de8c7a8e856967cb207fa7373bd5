@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_rays_in_the_walkers_frame_fall_with_the_index_raised_and_the_members_travelling_disturbances_act_only_across_their_direction_2026_09_24.py
+runner_sha256: 2e650222a6905d19153afa01dcade80d602542548eefb9f75dbdb8a89c000db4
+input_fingerprint_sha256: 781133f98570b78824a572e6c04b2beb7668f155969e744984ed4ad22149cf2f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.19
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RAYS_IN_THE_WALKERS_FRAME_FALL_WITH_THE_INDEX_RAISED_AND_THE_MEMBERS_TRAVELLING_DISTURBANCES_ACT_ONLY_ACROSS_THEIR_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged (no coin axis carries a preferred rest energy); no site is privileged (the staggered sign breaks one-site translation, as block 77 notes); Admissibility is not a dynamics axiom (the frame, the rates and the ray limit are supplied)
+PASS: B1 T1: for E^2 = a^2 m^2 + w^2 g^{ij} sin k_i sin k_j with a, w and the six g^{ij} general functions of position, the group velocity is exactly v_i = w^2 g^{ij} sin k_j cos k_i / E, and a slow body at k = 0 accelerates as dv_i/dt = -(w^2/a) g^{il} d_l a: the fall is block 59's with the index raised by the inverse metric
+PASS: C1 T2: block 60's weak field as the frame E = (1/l) 1 with l = wbar/w and the rest energy timed by a = w gives the light speed c = w/l = w^2/wbar, so d log c/d log a = 2 exactly (bending twice the fall); in block 60's strong field (l = chi^2, w = N/chi) the far-field logarithms are log c = -(P + 3Q) g and log a = -(P + Q) g at first order, ratio (P + 3Q)/(P + Q)
+PASS: D1 T3: for a travelling transverse traceless disturbance h = (A+ (e1e1 - e2e2) + Ax (e1e2 + e2e1)) cos(q x3 - Omega t), g^{ij} = delta - h at first order, a ray along axis 1 at k = pi/3 has v1 = cos k (1 - h11/2), v2 = -h12, v3 = 0, kdot2 = 0 and kdot3 = (sin k/2) d3 h11 (delayed by h11, turned towards its gradient, drifted by h12), and a ray along the wave vector feels nothing at first order; along the unperturbed ray the drift integrates to -Ax (sin q z0 - sin(q z0 - Omega T))/Omega, bounded by 2|Ax|/Omega
+PASS: E1 T4: M = m0 + m.sigma anticommutes with sigma_1, sigma_2, sigma_3 only if M = 0, and {sigma_1, E.sigma} = 2 E_1, so a uniform on-site rest energy is compatible only with a frame of rank at most two (the reduced walk's m sigma_1 needs E_1^j = 0); on the 4^3 torus with a varying integer frame field (symmetrised bond hops), the staggered sign anticommutes with the walk and (H + m eps)^2 = H^2 + m^2 exactly: the staggered rest energy fits every frame
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the group velocity and the fall with a, w and the six inverse-metric components general functions of position
+per_site: executed - the light speed and rest-energy timing of block 60's weak and strong fields read as a frame
+per_mode: executed - a ray along an axis and along the wave vector in a travelling transverse traceless disturbance, at first order; the integrated drift
+per_block: executed - the anticommutation of a uniform rest energy with the coin matrices; the staggered sign against a varying integer frame on the 4^3 torus
+lattice_wide: T1-T3 in the ray limit (declared) and at first order in the disturbance for T3; T4 exact on every even torus; no packet control; the frame, rates and disturbances supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: rays in the walker frame - fall with the index raised; bending twice the fall in block 60 field; travelling transverse disturbances act only across their direction; uniform rest energy needs rank two, staggered fits every frame; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

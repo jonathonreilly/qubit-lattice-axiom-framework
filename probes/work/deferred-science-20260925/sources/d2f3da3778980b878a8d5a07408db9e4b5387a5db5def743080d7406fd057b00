@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_block_60s_declared_numbers_unit_free_speeds_force_s_equals_p_plus_two_positive_content_forces_the_kinetic_sign_2026_09_24.py
+runner_sha256: 62ab7e7bdd71796a027c4b4d7a3a85a198cc3ed667fb014eff816ee48fb6660e
+input_fingerprint_sha256: 916917ce6405b767930eb9fcce627e86bfe7176aba0670daef75514a181c966b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.98
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BLOCK_60S_DECLARED_NUMBERS_UNIT_FREE_SPEEDS_FORCE_S_EQUALS_P_PLUS_TWO_POSITIVE_CONTENT_FORCES_THE_KINETIC_SIGN_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no site is privileged; Admissibility is not a dynamics axiom (the member, its powers and the kinetic term are supplied); a choice not fixed by the supplied structure remains a named conditional (K and alpha/K)
+PASS: B1 T1: on a ring with symbolic lambda_x and w_x, multiplying every rate by L multiplies block 60's member F = sum w K l^p (a Lap + b q) and the kinetic term c_k l^s lambdadot^2/w by L, for every p and s (weight one under the time label); a uniform rescaling l -> C l with the crossing rates held forces w -> C w (l_b = sqrt(w_x w_y)/c_b), and then F -> C^(1+p) F, the kinetic term -> C^(s-1), the hop energy -> itself and the rest energy -> C times itself: a common weight with the hop energy would need p = -1 and with the rest energy p = 0, neither block 60's p = 1: no single weight for the whole ledger, so the rescaling changes the unit of length that K carries
+PASS: C1 T2: with the background powers kept, the field's mode equation (alpha lbar^s/wbar) omega^2 = K wbar lbar^p P^2 gives omega^2 proportional to wbar^2 lbar^(p-s), which the rescaling multiplies by C^(2+p-s), while the walker's frequencies (hop rates held) are unchanged: the ratio of the two speeds is free of the unit of length iff s = p + 2, and at p = 1 that is s = 3, the comparator's volume power
+PASS: D1 T3: stationarity in w of c_k l^s lambdadot^2/w - m w (block 60 T5(b) as landed) gives c_k = -m w^2/(l^s lambdadot^2), negative whenever the content m is positive, and then l = (1 + t/t0)^(2/s) solves 2 lambda'' + s lambda'^2 = 0; with the isotropic stretch's c_k = 12 alpha + 36 beta (block 124 T2, open) this needs beta < -alpha/3 for alpha > 0, met at beta = -alpha (c_k = -24 alpha) and at the comparator's (K/4, -K/4) (c_k = -6K)
+PASS: E1 T4: for the stretched lattice g = l^2 delta, l = e^lambda, sqrt(g) R = l^(d-2) (-2(d-1) Lap(lambda) - (d-2)(d-1)|grad lambda|^2) exactly in d = 2, 3, 4 (Christoffel symbols computed symbolically): the curvature member's power is p = d - 2, so p = 1 in three dimensions, which block 64 as landed reaches from blindness to coin rotations within its ansatz; with T2, s = 3
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member on a ring with symbolic lengths and rates under the time label and under a rescaling of the lengths
+per_site: executed - the bond length's response to the rescaling; the weights of hop and rest energy
+per_mode: executed - the mode frequency's power of the rescaling and the condition s = p + 2
+per_block: executed - the kinetic sign from stationarity in the rates; the uniform motion; the Ricci scalar of the stretched lattice in d = 2, 3, 4
+lattice_wide: T1-T4 exact as stated; p = 1 rests on block 64's ansatz and s = 3 on the unit-free-speed demand; K, alpha/K and the existence of the kinetic term stay supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: block 60 declared numbers - no common weight under a rescaling of the lengths; unit-free speeds force s = p + 2; positive content forces c_k < 0; the curvature power is p = d - 2; K and alpha/K stay supplied; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

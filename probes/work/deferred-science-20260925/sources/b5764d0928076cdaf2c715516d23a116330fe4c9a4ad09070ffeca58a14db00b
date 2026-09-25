@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_2026_09_25.py
+runner_sha256: 7d89ef667e20f4d72537e139191e1c67aa50ec5bbfd9b3a46d4bdba6bc57e9f3
+input_fingerprint_sha256: d20ab724c68383379859298d02c541c4563753915fb675c3774250c11b0f5f30
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.54
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_COINS_SPIN_ENTERS_THE_SOURCE_LINK_THROUGH_ITS_CURL_THE_SYMMETRIC_MOMENTUM_IS_THE_TWO_STEP_MOMENTUM_PLUS_HALF_THE_CURL_OF_THE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its currents and their placements, the member, its kinetic term and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: on the 5^3, 6^3 and 9^3 tori, as exact operators over Q(i), for j = 1, 2, 3: Q_j - P''_j = (1/2) sum_kl eps_jkl dbar_k S~_l, where S_l(x) = (1/2)[Re psi^dag(x) sigma_l psi(x + e_j + e_k) + Re psi^dag(x + e_k) sigma_l psi(x + e_j)] is the coin's spin on the face perpendicular to l (the mean of its two diagonals) and S~ = C_1 C_2 C_3 S; both sides nonzero, support radius at most 4 on 9^3, so the identity holds on Z^3
+PASS: C1 T2: on 5^3 and 6^3, P^B_j = P''_j + (1/4) (curl S~)_j = P''_j + (1/2) curl(S~/2), with S~/2 the coin's spin (sigma/2): the symmetric momentum is the two-step momentum plus half the curl of the spin; and sum_j dbar_j (curl S~)_j = 0 exactly, so the curl carries no energy and e' flows as P^B
+PASS: D1 T3: on 5^3, for j = 1, 2, 3: sum_i dbar_i (Theta_ij - Theta_ji) = (1/2) d/dt (curl S~)_j, both sides nonzero: the torque on the coin that stops the canonical momentum from being conserved with the symmetric stress (block 136 T3) is exactly the rate of change of the spin's curl
+PASS: E1 T4: the identity behind T1 - for eigenvectors (sigma.s) u = lambda u, (sigma.s') u' = lambda' u': (lambda + lambda') u'^dag sigma_j u = (s_j + s'_j) u'^dag u + i eps_jkl (s - s')_k u'^dag sigma_l u, modulo lambda^2 = |s|^2 (symbolic): the first part is the two-step momentum's beat, the second is the curl of the spin's beat, since s - s' = 2 sin(q/2) cos kbar
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - Q - P'' = (1/2) curl S~ as exact matrices over Q(i) on 5^3, 6^3 and 9^3, support radius at most 4
+per_site: executed - two sites of 5^3 and the origin of 6^3 and 9^3, every component
+per_mode: executed - the eigenvector identity (l + l') u'^dag sigma_j u = (s_j + s'_j) u'^dag u + i eps (s - s')_k u'^dag sigma_l u, symbolically
+per_block: executed - P^B = P'' + (1/4) curl S~; the divergence of the curl; the torque as the rate of the curl
+lattice_wide: the identities are exact on Z^3 for every state (support radius at most 4 < 9/2); the walk, currents and placements supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the coin spin enters the source link through its curl - the symmetric momentum is the two-step momentum plus half the curl of the spin, exactly; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

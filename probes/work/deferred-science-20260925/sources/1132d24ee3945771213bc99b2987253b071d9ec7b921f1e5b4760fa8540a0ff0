@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_species_symmetry_forces_only_doubling_and_a_rate_field_keeps_sixteen_zero_modes_2026_09_24.py
+runner_sha256: c1d06440247409a7b56fb8933253c51a8d6de9c531d1b3a71e65f5642fbec60f
+input_fingerprint_sha256: 907ffbb8d6a3104b1fa63d9d6a64e866a0192cfcb7f9376004865eb646b5af25
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.18
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_SPECIES_SYMMETRY_FORCES_ONLY_DOUBLING_EVERY_NONZERO_LEVEL_IN_A_VARYING_FIELD_IS_A_PAIR_AND_A_RATE_FIELD_KEEPS_EXACTLY_SIXTEEN_ZERO_MODES_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities, no possibility privileged (the coin and its half-turns); Admissibility is not a dynamics axiom (the walk and its fields are supplied clauses)
+PASS: B1 T1(a): on the 4x4x4 torus in a varying rate field w = phi^2: every exchange map V_n = R_n U_n (site sign (-1)^(n.x), coin half-turn) squares to 1 and has V_n H_w V_n = (-1)^|n| H_w; the three even maps anticommute pairwise with V110 V011 = i V101; the reversal Theta = sigma_2 K commutes with H_w and ANTICOMMUTES with each even map (Theta V_n Theta^-1 = -V_n), with Theta^2 = -1
+PASS: B2 T1(b): a varying frame (block 62's site-placed coupling with all nine components random) commutes with Theta but not with the even maps: there only the reversal remains
+PASS: C1 T2: V110, V101, V011 -> sigma_z, sigma_x, -sigma_y with Theta -> sigma_y K satisfy every relation of T1 (involutions, pairwise anticommuting, V110 V011 = i V101, Theta V Theta^-1 = -V, Theta^2 = -1); so on an eigenspace C^2 (x) W the even maps act on the first factor and Theta = sigma_y K (x) Theta_W with Theta_W^2 = +1, a real structure: the symmetry forces even multiplicity and nothing more, never four or eight
+PASS: D1 T3: ker(Phi H Phi) = Phi^-1 ker H; on the 4x4x4 torus the sixteen vectors Phi^-1 (plane wave at k in {0, pi}^3) (x) (coin state) are annihilated exactly by H_w in a varying rate field, and H_w has rank 112 = 128 - 16 modulo p = 1000033 (so over Q(i) as well): exactly sixteen zero modes, the eight species times the two coin states
+PASS: E1 T4(a): the uniform walk on 4x4x4 has characteristic polynomial E^16 (E^2 - 1)^24 (E^2 - 2)^24 (E^2 - 3)^8 (modulo p): levels of multiplicity 16, 24, 24 and 8, where momentum and species labels coincide
+PASS: E2 T4(b): in the varying rate field the V110 = +1 block (64 states) has characteristic polynomial E^8 q(E) with q of degree 56, q(0) != 0 and q squarefree modulo p (hence over Q(i)); V101 carries the block onto the V110 = -1 block, so every nonzero level has multiplicity exactly 2; in the varying frame the characteristic polynomial is q^2 with q of degree 64 squarefree - exact doubling by the reversal alone. By the discriminant, the same holds for every field outside a proper algebraic set
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the 2x2 corepresentation's relations; V_n^2 = 1 and V_n H_w V_n = (-1)^|n| H_w for all eight maps
+per_site: executed - the sixteen zero-mode vectors Phi^-1 (plane wave) (x) (coin) annihilated exactly at every site of the 4x4x4 torus
+per_mode: executed - characteristic polynomials modulo p: the uniform walk (16, 24, 24, 8), the rate field's V110 = +1 block (E^8 times a squarefree degree-56 factor), the frame's square q^2
+per_block: executed - the reversal's anticommutation with the even maps and commutation with the rate and frame walks, as operator identities on 128 states
+lattice_wide: the algebra (T1, T2) on every even torus in rate and reach-three fields; T3 on every even torus for every positive rate field; T4 verified on the 4x4x4 torus and generic by the discriminant; twist fields and other sizes are not re-run; the walk and its fields are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the walk on even tori - the reversal anticommutes with the even exchange maps, so the species symmetry forces only doubling; a rate field keeps exactly sixteen zero modes and pairs every other level; a frame keeps only the reversal; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

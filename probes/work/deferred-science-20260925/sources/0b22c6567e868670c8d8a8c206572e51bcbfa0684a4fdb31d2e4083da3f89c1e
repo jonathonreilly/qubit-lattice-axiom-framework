@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_2026_09_25.py
+runner_sha256: 39c1c94151d692deb6f99bc4c6d50d68650b7fbc4a4bdfc4c11adbb16c6a4ee8
+input_fingerprint_sha256: bf9bfba1b3aadebd66b5aa8efd2fde3647d0474ddcd28355926de0edcaf3d490
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.29
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its rest energy and its momenta are supplied; the memo does not define a time metric)
+PASS: B1 T1: i[H, D_i] = P_i for the energy dipole D_i = (X_i H + H X_i)/2 (the first moment of the averaged energy e') and the two-step momentum P_i = S_i C_i: symbolically on spinor functions of k, and as exact vectors over Q(i) on the open lattice for the massless walk and with the staggered mass m = 3/4 (both H + m eps and its dipole); so the boost charge K_i = D_i - t P_i is kept, for every state
+PASS: C1 T2: i[D_i, P_j] = - delta_ij cos(2 k_j) H (on the lattice, C2_j H with C2_j = (T_j^2 + T_j^-2)/2), symbolically and as exact vectors, massless and massive: the boost-momentum bracket carries the factor cos 2k, which is block 106's fall weight of the two-step momentum; at every species corner cos 2(pi n + kappa) = cos 2 kappa
+PASS: D1 T3: i[D_i, D_j] = eps_ijl J_l with J_l = (X x P)_l + (1/2) C_i C_j sigma_l ({i, j} the directions other than l): the orbital angular momentum of the two-step momentum plus the coin's spin sigma/2 carried on the faces (block 138's face spin, summed); [H, J_l] = 0 exactly; symbolically, and as exact vectors for the massless walk and with the staggered mass, where J is the same: the boost charges' bracket is an exactly kept, mass-independent angular momentum
+PASS: E1 T4: [J_l, P_m] = i eps_lmn cos(2 k_m) P_n (symbolically): the angular momentum turns the two-step momentum with the same factor cos 2k; every factor tends to 1 at long wavelength (cos 2 tau kappa = 1 - 2 tau^2 kappa^2 + ...), where the brackets become the comparator's kinematic ones with J = L + sigma/2; at the species corner pi n the spin weight cos k_i cos k_j tends to (-1)^(n_i + n_j), each species' own spin for its reflected frame
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - i[H, D] = P, the boost-momentum and boost-boost brackets and [H, J] = 0 as exact vectors over Q(i) on the open lattice, massless and with m = 3/4
+per_site: executed - four test states per mass, every component
+per_mode: executed - all brackets symbolically on spinor functions of k: i[H, D_i], i[D_i, P_j], i[D_i, D_j], [H, J_l], [J_l, P_m]
+per_block: executed - the long-wave series of the factors and the species' spin signs at all eight corners
+lattice_wide: identities of operators on the whole lattice (symbolic in k); the J-J bracket not claimed exact; the walk and its rest energy supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the walk carries an exact boost charge; its brackets give the fall weight cos 2k and an exactly kept angular momentum with the face spin; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

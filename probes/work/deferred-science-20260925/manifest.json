@@ -91,6 +91,44 @@
       ],
       "file": "unit-25.json",
       "sha256": "20cf8bb52dcb54f838d384b7da2434020fa5606f98698468ce100a74940c9947"
+    },
+    {
+      "unit": 27,
+      "prs": [
+        9151,
+        9152,
+        9154,
+        9156,
+        9157,
+        9159,
+        9160,
+        9162,
+        9170,
+        9173,
+        9174,
+        9176,
+        9177,
+        9178,
+        9180,
+        9182,
+        9184,
+        9185,
+        9186,
+        9187,
+        9188,
+        9190,
+        9191,
+        9193,
+        9195,
+        9196,
+        9197,
+        9200,
+        9201,
+        9203,
+        9205
+      ],
+      "file": "unit-27.json",
+      "sha256": "ceb1721e989e71d6542c5880fd25e03f4cad14a47df61c4be02aaa72121dfb0f"
     }
   ],
   "task_ids": [
@@ -100,10 +138,14 @@
     "J:derive:deferred-20260925-nonlinear-weights:a1",
     "J:derive:deferred-20260925-ring-limits:a1",
     "J:derive:deferred-20260925-matter-clocks:a1",
-    "J:derive:deferred-20260925-spectral-readout:a1"
+    "J:derive:deferred-20260925-spectral-readout:a1",
+    "J:derive:deferred-20260925-walker-source-closure:a1",
+    "J:derive:deferred-20260925-excluded-record-interactions:a1",
+    "J:derive:deferred-20260925-clock-formation-selection:a1",
+    "J:derive:deferred-20260925-walker-realization-limits:a1"
   ],
   "science_authority": "current origin/main, not frozen originals",
   "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
   "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction",
-  "main_at_latest_supplement": "ddb9249c52edf56a20a13d28266f6a333c08c800"
+  "main_at_latest_supplement": "ef918c1910ccf8b7a1125fbbdfc54eb84186176e"
 }

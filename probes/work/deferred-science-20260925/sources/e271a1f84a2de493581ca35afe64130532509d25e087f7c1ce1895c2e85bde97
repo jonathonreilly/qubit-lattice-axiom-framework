@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_one_record_per_site_the_a_terms_levels_are_frozen_or_out_of_reach_2026_09_24.py
+runner_sha256: 585f16bc7e8ba86207bacd9531562b29c490cf6bcf5635d8e24b2e5f51e7b98a
+input_fingerprint_sha256: 1e244e00bf83ee44b141f111c472f5bf69ddc1ba5c7fe9310f74599b3241cbea
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.65
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_THE_A_TERMS_LEVELS_ARE_FROZEN_OR_OUT_OF_REACH_THE_MIDDLE_LEVEL_IS_ONE_RECORD_PER_SITE_AND_A_FULL_LATTICE_HAS_A_CONSTANT_GENERATOR_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: a site never carries more than one record (the premise of the hard-core compression); records form; Admissibility is not a dynamics axiom (the family, the stagger and the composition are supplied)
+PASS: B1 T1: on the 4^3 and 6^3 tori, for (a0, a) = (1/3, 1/10), (0, 1/4), (-2/5, 2/3), exactly N - z/2 one-record states lie below a0 (z = #(E = a0), even), at least N + 6 + z/2 lie at or below a0 + 2a and at most N - 6 - z/2 below a0 - 2a ([(4, 64, 0), (4, 58, 12)] ...); the odd 3^3 torus gives 26 of 54 (even sides are needed); on 4^3 the stagger anticommutes with A (no on-site part), (A + m eps)^2 = A^2 + m^2 and eps T_1 anticommutes with A + m eps, so with m != 0 exactly N states lie below a0 and none within |m| of it
+PASS: C1 T2: with four records on block 78's ring of four (a0, a, m) = (1/3, 1/10, 1/3), the compressed generator of both compositions (antisymmetric and symmetric) is exactly 4 a0 times the identity on all 16 coin configurations (every hop lands on an occupied site; the stagger sums to zero on an even ring), while with three records it is hermitian and moves the hole
+PASS: D1 T3: a hop a 1 +/- sigma_j/(2i) has column sums |a| + 1/2 for sigma_1, sigma_2 and sqrt(a^2 + 1/4) <= |a| + 1/2 for sigma_3, so with N_h holes the moving part has norm at most 6(|a| + 1/2) N_h (two hops per hole on a ring: every row sum at most 2(|a| + 1/2) N_h, exact on the ring of six with one and two holes, both compositions, hermitian); the window |E - a0| < 6a needs |sin k| < 12a: 56 of the 1728 momenta of 12^3 at a = 1/20, and on 6^3 at mu = a0 - 4a the holes number 6, within the bound z/2 + #(a0 - 6a < E < a0) = 6
+PASS: E1 T4: the eight corners carry levels a0 + 2a(3 - 2|n|) with multiplicities 1:3:3:1 and senses (-1)^|n| (block 77 T1); the sense-weighted moments sum chi_n L_n^p vanish for p = 0, 1, 2 and equal 384 a^3 at p = 3, for every a0: the net sense is zero and the level offsets carry none
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the stagger against A, (A + m eps)^2 = A^2 + m^2 and eps T_1 against A + m eps on every basis vector of the 4^3 torus, with symbolic a and m
+per_site: executed - the full ring of four under both compositions; the hole-moving generator's hermiticity and row sums on the ring of six with one and two holes
+per_mode: executed - exact band counts on 4^3 and 6^3 for three parameter pairs and on the odd 3^3; the thin window on 12^3
+per_block: executed - the sense-weighted moments of the eight corners; the hole count against its bound on 6^3
+lattice_wide: T1 on even tori (as a density in infinite volume); T2 on every even torus; T3's norm bound on every torus and its window bound for a < 1/12; the family, the stagger and the compression supplied; the interacting gas's senses not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: block 77 family under block 78 compression - the middle level is one record per site; fillings above need more records than sites; at one record per site the generator is constant; near it only holes move; senses net zero; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

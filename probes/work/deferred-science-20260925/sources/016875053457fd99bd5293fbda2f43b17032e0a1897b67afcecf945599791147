@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_record_gas_does_make_the_chessboard_when_a_recorded_bond_is_expensive_a_wall_counting_bound_2026_09_24.py
+runner_sha256: 35c5eef0f774d2520db2593abd32603ad271d6855191e71b20b7fba23fe5ddb2
+input_fingerprint_sha256: f5e016315d7e6b149482b79bcd12004412ee54ee40518abb104e97f139fe045b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.96
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_RECORD_GAS_DOES_MAKE_THE_CHESSBOARD_WHEN_A_RECORDED_BOND_COSTS_A_FACTOR_BELOW_NINE_OVER_62500_AND_THE_TWO_FRAMED_STATES_DIFFER_AT_EVERY_SITE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: one record per site, records permanent (the gas's exclusion); each site has a domain of local possibilities (the six-axis contents); Admissibility is not a dynamics axiom (the record gas and its weights are supplied clauses)
+PASS: B1 T1(a): on the framed 4^3 box (A-chessboard held outside, 240 bonds meeting the box), B - 3N - (#unlike - #bonds)/2 takes one value over 60 sampled arrangements, so at zeta = g^-3 H the law is H^N g^(#unlike/2) Q up to a constant (a bond is unlike when its two ends have the same occupancy)
+PASS: B2 T1(b): on the 4^3 torus the complement n -> 1 - n sends B to 3V - 6N + B (60 arrangements), so without contents the weight zeta^N g^B is complement-symmetric exactly at zeta = g^-3 and every even torus is exactly half filled there
+PASS: C1 T2(a): M = J + 6 lambda1 P1 + 6 lambda2 P2 with rows summing to 6, Lambda = max M = 6 max(p,q,r)/(p+q+4r), m = min M (five triples); on every set of at most 6 sites of the 2x2x2 cube at (3,1,2) and (12,1,2), Q = 1 on forests (376) and Q <= Lambda^(cycle rank) otherwise (116)
+PASS: C2 T2(b),(c): on p + q = 2r ((3,1,2) and (1,3,2)) every bond set on at most 5 cube sites has Q >= 1 and adding a bond never lowers Q; identifying two non-adjacent records multiplies Q by exactly 1 across components and by at least (m/Lambda)^deg within one (every pair, at most 6 sites, (3,1,2) and (12,1,2))
+PASS: D1 T3(a): on near-chessboard arrangements of the framed 4^3 box (720 maps: 120 arrangements, six directions), every wall bond of V is unlike; the translation drops the unlike bonds by exactly |dV|; N' - N = #(back in A) - #(front in A), at most the runs of V along d; sigma = -sigma'(. + d) on V (injective at fixed (V, d)); the frame is untouched; the runs and the front sizes over the six directions each sum to |dV|
+PASS: D2 T3(b): the content factor through the map obeys Q(n)/Q(n') <= Lambda^(|D|+|F|) (Lambda/m)^(5|F|), F the occupied wall bonds on the d-front (1746 maps at (3,1,2) and (12,1,2), 222 with Q(n) != Q(n')); with d chosen from V alone to minimise its front, Q(n)/Q(n') <= Lambda^|dV| (Lambda/m)^(5|dV|/6), so w(n)/w(n') <= x^|dV| with x = g^(1/2) Lambda (Lambda/m)^(5/6) max(H, 1/H)^(1/6)
+PASS: E1 T4(a): fixed polycubes of 1 to 7 cells number [1, 3, 15, 86, 534, 3481, 23502]; the regions V around a site with |dV| <= 22 number {6: 1, 10: 6, 14: 45, 16: 12, 18: 332, 20: 240, 22: 2538}, and seven cells already need |dV| >= 24; every wall of at most six cells is connected through shared vertices and through shared edges; the e1 ray from x leaves V within |dV|/4 sites; a plaquette meets 32 others at a vertex and 12 along an edge
+PASS: E2 T4(b): r_k = (32/(k-1)) C(31k, k-2) is the k-th coefficient of U + U^2, U = x(1+U)^31 (exact to k = 13); at x0 = 3/250 < 30^30/31^31, U(x0) <= 31/1000; so the sum over V around a site of x0^|dV| is at most 0.08962 (exact small counts to |dV| = 22, the tree bound (k/4) r_k beyond), and 1 - 2 x that >= 82/100
+PASS: E3 T5: at zeta = g^-3 (H = 1) the certificate x <= 3/250 holds, i.e. g^3 Lambda^6 (Lambda/m)^5 <= (3/250)^6, at: (1,1,1): g <= 9/62500; (3,1,2): g <= 1/100000; (5,2,4): g <= 9/500000; (12,1,2): g <= 19/100000000; (9,8,8): g <= 97/1000000 (no contents: p = q = r, M = 1)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - M's decomposition at five triples; Q on every subgraph of at most 6 sites of the 2x2x2 cube (forests, cycle bound, monotone on p + q = 2r, merges)
+per_site: executed - the unlike-bond identity on 60 framed arrangements of the 4^3 box; complement symmetry on 60 arrangements of the 4^3 torus
+per_mode: executed - the translation map on 720 maps (unlike drop, record count, injectivity, frame) and the content bound on 1728 maps at two triples
+per_block: executed - fixed polycubes to 7 cells, wall counts to |dV| = 22, wall connectedness and the ray for every region of at most six cells; the certificate at x0 = 3/250 in exact rationals
+lattice_wide: every framed box and every even torus; T4(b) and T5 with the imported connectedness of walls; the gas, its bond scale, activity and contents are supplied; half filling with contents and the walk's gap on the gas's arrangements are not re-run or treated
+PASS: G1 the five N5 resolution lines are printed
+scope: block 81's record gas makes the chessboard when a recorded bond is expensive - at zeta = g^-3 the framed states differ at every site by at least 0.82 in sigma for g <= 9/62500 without contents and g <= 1/100000 at (3,1,2); contents act on cycles and merges only; wall connectedness imported; nothing adopted
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

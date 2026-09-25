@@ -1,0 +1,4 @@
+PR #9167: physics: separate actual input energy from original mark power
+branch codex/mobile-record-input-energy-and-mark-power-20260925 (base codex/mobile-record-optical-energy-and-count-bridge-20260924)
+runners in the PR: 1
+== scripts/actual_input_energy_and_original_mark_power_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)

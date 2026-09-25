@@ -1,0 +1,36 @@
+{
+ "task": "P:9167",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-input-energy-and-mark-powe",
+ "worker": "w-jonathonsmac4f50-je16c",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9167",
+ "pr": 9167,
+ "branch": "codex/mobile-record-input-energy-and-mark-power-20260925",
+ "git_sha": "1b41ac84",
+ "started_utc": "20260925T032446Z",
+ "elapsed_s": 8.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/actual_input_energy_and_original_mark_power_2026_09_25.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9167's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "63b285c6345b40076e3a660e6db6997d8c1de40f59d008606752b3d3bf10641a",
+ "stdout_tail": "PR #9167: physics: separate actual input energy from original mark power\nbranch codex/mobile-record-input-energy-and-mark-power-20260925 (base codex/mobile-record-optical-energy-and-count-bridge-20260924)\nrunners in the PR: 1\n== scripts/actual_input_energy_and_original_mark_power_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je16c",
+  "at_utc": "20260925T032455Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

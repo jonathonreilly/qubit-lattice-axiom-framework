@@ -1,0 +1,36 @@
+{
+ "task": "P:9166",
+ "type": "pr-reexecution",
+ "lane": "gaussian-photon-comparator-for-the-pure-",
+ "worker": "w-jonathonsmac4f50-je403",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9166",
+ "pr": 9166,
+ "branch": "claude/gaussian-photon-comparator-for-the-pure-ring-structure-factor-20260924",
+ "git_sha": "1a011554",
+ "started_utc": "20260925T032711Z",
+ "elapsed_s": 11.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9166's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "7eae8229f1ab613510727f057f3d34e5c6da5d9a07021b5f3c75ba010b6d1810",
+ "stdout_tail": "PR #9166: feat(photon): gaussian lattice maxwell comparator for the pure-ring structure factor\nbranch claude/gaussian-photon-comparator-for-the-pure-ring-structure-factor-20260924 (base main)\nrunners in the PR: 1\n== scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je403",
+  "at_utc": "20260925T032723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

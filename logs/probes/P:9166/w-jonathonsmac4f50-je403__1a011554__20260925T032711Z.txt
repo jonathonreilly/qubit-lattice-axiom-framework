@@ -1,0 +1,4 @@
+PR #9166: feat(photon): gaussian lattice maxwell comparator for the pure-ring structure factor
+branch claude/gaussian-photon-comparator-for-the-pure-ring-structure-factor-20260924 (base main)
+runners in the PR: 1
+== scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py: rc=0 PASS=7 FAIL=0

@@ -1,0 +1,17 @@
+PASS M1 at alpha = K/4, sources that keep the books (3 random rational (omega, p, Theta, Theta')): the member's plane-wave equations (Euler-Lagrange of the stated Lagrangian, derived here) have a solution WITH the shift, and the pairing -e'u + N.P' + (1/2)Theta'.h equals (1/(2K))[T'.T - (1/2)T'T]/(p^2 - omega^2), independent of the free (relabelling) parameters: with shift: pairing 2371/(15360*K) vs target 2371/(15360*K)
+PASS M2 the same WITHOUT the shift (N = 0, no N.P term): a solution exists and the pairing is the same: without shift: pairing 2371/(15360*K) vs target 2371/(15360*K)
+PASS M3 at alpha = K/3 (not K/4) a moving source with e != 0 has no solution, with or without the shift
+PASS X1 T1.T2 - (1/2)T1T2 for e = m gamma, P = m gamma v, Theta = m gamma v v, to order v^2: m1 m2 [1/2 + (3/4)(v1^2 + v2^2) - 2 v1.v2]
+PASS X2 d_i d_j r = (delta_ij - n_i n_j)/r, so the retardation kernel v1_i v2_j d_i d_j r/(8 pi) = [v1.v2 - (n.v1)(n.v2)]/(8 pi r); FT[1/p^4] = -r/(8 pi) is consistent with FT[1/p^2] = 1/(4 pi r) (Lap(-r/(8pi)) = -1/(4 pi r))
+PASS X3 block 144 T3: L_int = (m1 m2/(16 pi K r))[1 + (3/2)(v1^2 + v2^2) - (7/2)v1.v2 - (1/2)(n.v1)(n.v2)]: a = 3/2, b = -7/2, c = -1/2
+PASS W1 the P^2 coefficient of the pair's Hamiltonian (relativistic kinetic terms + first-order pull, P = lambda ehat) is |e|^2/(2M) - (|e|^2 T + 2T_P)/(2M^2) + ((2a+b)|e|^2 U + c U_P)/M^2, T = q^2/(2 mu), T_P = (ehat.q)^2/(2 mu), U_P = -k (n.ehat)^2/r: exact
+PASS W2 the leading kinetic term has no P.q cross term (centre-of-mass split p_a = mu_a P +- q)
+PASS W3 with the directional virial 2<T_P> = -<U_P>, to first order in the binding: W = 1 + [(1 + 2(2a+b))<U> + (1 + 2c)<U_P>]/M (block 144 T4)
+PASS W4 the directional virial's ingredient: x_P d_P V = -U_P for V = -k/r (x_P = ehat.x, U_P = -k (n.ehat)^2/r)
+PASS W5 W = 1 along every axis for every bound state iff 1 + 2(2a+b) = 0 and 1 + 2c = 0 (<U_P>/<U> ranges over an interval as the orbit turns); the member's (3/2, -7/2, -1/2) satisfies both; the clock alone (0, 0, 0) gives W = 1 + (<U> + <U_P>)/M < 1
+   G: solutions for {G, H} = P at first order in k and in the momenta: [{a: -b/2 - 1/4, c: -1/2, sigma1: 1/2, sigma2: 1/2}]
+PASS G1 a centre-of-energy G = sum (m + p^2/2m) x - (k/r)(sigma1 x1 + sigma2 x2) with {G, H} = P at first order in k exists iff c = -1/2 and 2a + b = -1/2 (then sigma1 = sigma2 = 1/2), solved at 24 configurations: the pulls with weight one along every axis are exactly those with a first-order boost generator: [{a: -b/2 - 1/4, c: -1/2, sigma1: 1/2, sigma2: 1/2}]
+
+TOTAL: PASS=12 FAIL=0
+HIT: block 144 confirmed by independent routes: the member's plane-wave equations derived here from the landed quadratic action (with block 136's shift) give the exchange (1/(2K))[T'.T - T'T/2]/(p^2 - omega^2) at alpha = K/4, with or without the shift, and no solution at alpha != K/4; the two-body pull (m1 m2/(16 pi K r))[1 + (3/2)(v1^2+v2^2) - (7/2)v1.v2 - (1/2)(n.v1)(n.v2)]; a direct bound-state computation gives W = 1 + [(1 + 2(2a+b))<U> + (1+2c)<U_P>]/M; and a first-order centre-of-energy generator exists iff c = -1/2, 2a + b = -1/2: pull-bound pairs have weight one along every axis
+SUMMARY: PARTIAL block 144's T2, T3, T4 (and T5's 'pull unchanged without the shift') confirmed by a direct Euler-Lagrange solution, a direct bound-state computation and a Poisson-bracket boost generator; T5's drifting-lengths claim and T1 not re-checked

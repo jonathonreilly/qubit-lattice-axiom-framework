@@ -4,12 +4,15 @@ block 139's staggered mass and block 62's member at alpha = K/4 (as landed): the
 the member's frequency is |p(q)|, p_j = 2 sin(q_j/2); since s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), every energy
 difference satisfies |E(k) - E(k - q)| < |p(q)| for q != 0 (mod 2 pi), strictly; with the staggered mass the energies
 sqrt(mu^2 + s^2) differ by even less; so energy and lattice momentum cannot both be kept when one walker emits or absorbs one
-disturbance. The two agree at long wavelength and separate at third order (the supervisor's own derivation; not adopted).
+disturbance. The two agree at long wavelength and separate at third order. All of this is within one band: the member's
+frequency is exactly a symmetric pair's energy, |p(q)| = 2|s(q/2)|, and pair creation out of the filled sea is
+kinematically open when sum_a cos q_a > 0 (the supervisor's own derivation; not adopted).
 
 B (T1): the difference identity; exact rational configurations; the equality case.
 C (T2): the staggered mass: the energies are 1-Lipschitz in |s|.
 D (T3): long wavelength: agreement at first order, the walker below the member at third order.
-E (T1): the walker's own dispersion in place of the member's would allow emission at the boundary (control).
+E (T1, T5): the walker's own dispersion in place of the member's would allow emission at the boundary (control); the
+symmetric pair and the pair window out of the filled sea.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -41,6 +44,7 @@ MUTATION_GATE = {
     "lipschitz_forged": "C",
     "third_order_forged": "D",
     "control_inverted": "E",
+    "pair_window_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -165,6 +169,18 @@ def family_e(checks: Checks) -> None:
     below = strictly_below(E1sq, E2sq, om2)
     expect = True if mut("control_inverted") else False
     checks.check("E1", below == expect, "control: against the walker's own dispersion the strict inequality fails at k = q = pi/2 in one dimension (difference 1 equals |sin q|), so the member's half-angle frequency is what keeps the walker strictly inside")
+    # T5: the filled sea can absorb. Interband (pair) energy |s(k)| + |s(k + q)|: |s(q)| at k = 0; 2|cos(q/2)| at k_a = pi/2 - q_a/2
+    qs = sp.Symbol("qs", real=True)
+    at_mid = sp.simplify(sp.sin(sp.pi / 2 - qs / 2) - sp.cos(qs / 2)) == 0 and sp.simplify(sp.sin(sp.pi / 2 + qs / 2) - sp.cos(qs / 2)) == 0
+    half_angle = sp.simplify(4 * sp.cos(qs / 2) ** 2 - 4 * sp.sin(qs / 2) ** 2 - 4 * sp.cos(qs)) == 0
+    sh, ch = Fr(3, 5), Fr(4, 5)
+    if mut("pair_window_forged"):
+        sh, ch = Fr(4, 5), Fr(3, 5)
+    low = 3 * (2 * sh * ch) ** 2
+    mid = 3 * (2 * sh) ** 2
+    high = 3 * (2 * ch) ** 2
+    checks.check("E2", at_mid and half_angle and low < mid < high,
+                 "T5: the pair energy |s(k)| + |s(k + q)| is |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| iff sum cos q_a > 0; so, by continuity, a disturbance with sum cos q_a > 0 can lift a walker out of the filled sea (exact example: sin(q_a/2) = 3/5 on every axis gives 1728/625 < 108/25 < 192/25)")
 
 
 # ============================================================================================ family F
@@ -257,7 +273,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no single walker emits or absorbs one of the member travelling disturbances; the two agree at long wavelength and separate at third order; supervisor derivation, unrefereed; nothing adopted")
+    print("scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no single walker emits or absorbs one of the member travelling disturbances; the two agree at long wavelength and separate at third order; within one band only: pair creation out of the filled sea is kinematically open when sum cos q > 0; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

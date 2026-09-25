@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk, block 139's staggered mass and block 62's member with its lattice differences at the kinetic normalization alpha = K/4 of blocks 134 and 135, all as landed on main; unit rate. (T1) exact: the walker's energy is |s(k)| with s_j = sin k_j and the member's travelling disturbances have frequency |p(q)| with p_j = 2 sin(q_j/2); since s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), every energy difference obeys |E(k) - E(k - q)| < |p(q)| for q != 0 (mod 2 pi), strictly (the equality case forces q = 0; 32768 exact rational configurations checked). (T2) exact: with the staggered mass the energies sqrt(mu^2 + |s|^2) differ by no more than the |s| do, so massive walkers stay strictly inside too. (T3) hence one free walker cannot emit or absorb one of the member's travelling disturbances while keeping energy and lattice momentum; against the walker's own dispersion the strict inequality would fail at the edge of the zone, so the member's half-angle frequency is what keeps the walker inside. (T4) along an axis the two agree at first order and separate at third, sin q - 2 sin(q/2) = -q^3/8 + ...: one cone at long wavelength, the walker's inside the member's at the lattice scale. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk, block 139's staggered mass and block 62's member with its lattice differences at the kinetic normalization alpha = K/4 of blocks 134 and 135, all as landed on main; unit rate. (T1) exact: the walker's energy is |s(k)| with s_j = sin k_j and the member's travelling disturbances have frequency |p(q)| with p_j = 2 sin(q_j/2); since s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), every energy difference obeys |E(k) - E(k - q)| < |p(q)| for q != 0 (mod 2 pi), strictly (the equality case forces q = 0; 32768 exact rational configurations checked). (T2) exact: with the staggered mass the energies sqrt(mu^2 + |s|^2) differ by no more than the |s| do, so massive walkers stay strictly inside too. (T3) hence one free walker cannot emit or absorb one of the member's travelling disturbances while keeping energy and lattice momentum; against the walker's own dispersion the strict inequality would fail at the edge of the zone, so the member's half-angle frequency is what keeps the walker inside. (T4) along an axis the two agree at first order and separate at third, sin q - 2 sin(q/2) = -q^3/8 + ...: one cone at long wavelength, the walker's inside the member's at the lattice scale. (T5) exact: T1-T4 concern a walker's own transitions within its band; the member's frequency is exactly the energy of a symmetric walker pair, |p(q)| = 2|s(q/2)|, and the pair energy |s(k)| + |s(k + q)| equals |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| if and only if sum_a cos q_a > 0; so, wherever the sea is filled, a disturbance with sum_a cos q_a > 0 can lift a walker out of the sea (pair creation is kinematically open; the rate is not computed; with the staggered mass the channel closes for |p(q)| < 2 mu). The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py
@@ -28,8 +28,9 @@ The landing review scoped `α = K/4` (blocks 134–135) as a necessary condition
 - **T3: no emission or absorption.** One free walker cannot emit or absorb one of the member's travelling disturbances while keeping energy and lattice momentum.
   - The half-angle in the member's frequency is what keeps the walker inside. Against the walker's own dispersion the inequality would fail at the edge of the zone.
 - **T4: one cone at long wavelength only.** Along an axis the two agree at first order and separate at third, `sin q − 2 sin(q/2) = −q³/8 + ⋯`. At the lattice scale the walker's cone lies inside the member's.
+- **T5: but the filled sea can absorb.** T1–T4 concern a walker's own transitions within its band. The member's frequency is exactly the energy of a symmetric walker pair, `|p(q)| = 2|s(q/2)|`. The pair energy `|s(k)| + |s(k + q)|` equals `|s(q)| < |p(q)|` at `k = 0` and `2|cos(q/2)|` at `k_a = π/2 − q_a/2`, which exceeds `|p(q)|` if and only if `Σ_a cos q_a > 0`. So wherever the sea is filled, a disturbance can lift a walker out of it: pair creation is kinematically open. The rate is not computed. With the staggered mass the channel closes for `|p(q)| < 2μ`.
 
-In plain terms: at long wavelengths the walker and the member's ripples share a top speed. At the lattice scale the ripples are faster, and every walker energy change is smaller than any ripple's energy with the same momentum. So a walker moving freely can never shake off one of the member's ripples, and can never swallow one: energy and momentum cannot both balance. Walkers are stable against the member, at every scale.
+In plain terms: at long wavelengths the walker and the member's ripples share a top speed. At the lattice scale the ripples are faster, and every walker energy change is smaller than any ripple's energy with the same momentum. So a walker moving freely can never shake off one of the member's ripples, and can never swallow one: energy and momentum cannot both balance. The same ordering has a second face. A ripple carries exactly the energy of a pair of walkers moving apart symmetrically, so wherever the sea of walkers is filled, a ripple can turn into a walker and a hole in the sea. The sea can absorb what a single walker cannot.
 
 ## Premises and declared objects
 
@@ -68,6 +69,18 @@ In plain terms: at long wavelengths the walker and the member's ripples share a 
 *Statement.* Along an axis, `sin q − 2 sin(q/2) = −q³/8 + O(q⁵)`. The two agree at first order, one cone at long wavelength. Beyond it the walker's energy is below the member's frequency.
 
 *Proof.* Series (runner D1). ∎
+
+## Theorem T5 — the filled sea can absorb
+
+*Statement.* T1–T4 concern transitions within one band. For transitions from the filled sea's band to the walker's band (pair creation):
+- (a) the member's frequency is exactly the energy of a symmetric pair: `|p(q)| = 2|s(q/2)|`;
+- (b) the pair energy `|s(k)| + |s(k + q)|` equals `|s(q)| < |p(q)|` at `k = 0`, and `2|cos(q/2)|` at `k_a = π/2 − q_a/2`, which exceeds `|p(q)|` if and only if `Σ_a cos q_a > 0`;
+- (c) hence, by continuity, a disturbance with `Σ_a cos q_a > 0` can lift a walker out of the filled sea with energy and lattice momentum kept. This covers every small `q`.
+- With the staggered mass every pair costs at least `2μ`, so the channel is closed for `|p(q)| < 2μ`.
+
+Whether the member couples to the sea's pairs with a nonzero amplitude, and at what rate, is not computed here.
+
+*Proof.* (a) by definition, since `2|sin(q_a/2)|` is `|s_a(q/2)|` doubled. (b) `sin(π/2 ∓ q_a/2) = cos(q_a/2)`, and `4cos²(q_a/2) − 4sin²(q_a/2) = 4cos q_a` (runner E2, with an exact example `1728/625 < 108/25 < 192/25`). (c) the pair energy is continuous on the torus. ∎
 
 ## Machine status and trace
 
@@ -111,16 +124,17 @@ Target: where a free walker's energies sit against the member's travelling distu
 - (O1) the inequality and its strictness (T1);
 - (O2) the massive case (T2);
 - (O3) the consequence and the control (T3);
-- (O4) the long-wave agreement (T4).
+- (O4) the long-wave agreement (T4);
+- (O5) transitions out of the filled sea (T5).
 
-T1–T4 discharge them.
+T1–T5 discharge them.
 
 ## No-Go Discipline Gate
 
 The note's negative sentence: no single free walker emits or absorbs one of the member's travelling disturbances.
 
 ### N1 — Routes by which the sentence could fail or mislead
-1. *One walker, one disturbance.* Processes with two walkers, or two disturbances, are not excluded.
+1. *One walker, one disturbance, within one band.* Processes with two walkers or two disturbances are not excluded, and pair creation out of the filled sea is kinematically open (T5).
 2. *The member's normalization.* At `α ≠ K/4` the frequency is `|p|·√(K/(4α))`. For `α > K/4` the member's disturbances are slower and the conclusion can fail at long wavelength.
 3. *The coupling* is assumed translation invariant, so lattice momentum is kept.
 
@@ -163,7 +177,7 @@ None beyond the supplied walk, mass, member and normalization.
 
 ## Boundaries and non-claims
 
-- One walker and one disturbance; the member at `α = K/4` and unit rate.
+- One walker and one disturbance, within one band; the member at `α = K/4` and unit rate. Pair creation out of the filled sea is open (T5).
 - Not refereed by another model family.
 - No gravitational claim is made.
 
@@ -177,7 +191,12 @@ None beyond the supplied walk, mass, member and normalization.
 - **Who and when.** Supervisor-run block, the ninety-seventh since the source-link direction opened; 2026-09-25.
 - **Provenance.** The supervisor's own derivation (Claude Opus 5.5), with exact checks by its own runner. It is not refereed by another model family.
 - **Before writing.** The own prior-art check (memory, open PRs, probes attempts, main) found the member's lattice differences (block 62) and no comparison of the two dispersions at the lattice scale.
-- **Independence.** Mutation census: four mutations in families B–E, each failing in its own family, and two in family F.
+- **After opening (a panel's report).** A three-lens panel (programme strategy, lattice field theory, gravitation theory) reviewed blocks 144–149. All three panelists were Claude Opus 5.5 subagents, the same model family as the supervisor, so this is not an independent check.
+  - All three pointed out that T1–T4 cover only transitions within one band, and that the member's frequency is exactly a symmetric pair's energy. T5 was added: pair creation out of the filled sea is kinematically open.
+  - The gravitation panelist suggested that a mass restores strictness. That holds only for `|p(q)| < 2μ` (T5); T5 does not decide the massive channel for `|p(q)| ≥ 2μ`.
+  - The strategy panelist noted that T1 is a lemma: the sine-difference identity plus the reverse triangle inequality. That is its proof here too.
+  - The first plain-language summary ("walkers are stable against the member at every scale") was too broad and is replaced.
+- **Independence.** Mutation census: five mutations in families B–E, each failing in its own family, and two in family F.
 
 ## Verification
 
@@ -185,4 +204,4 @@ None beyond the supplied walk, mass, member and normalization.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

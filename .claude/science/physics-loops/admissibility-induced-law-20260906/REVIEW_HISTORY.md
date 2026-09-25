@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-25 block 149 — author checks (not a review PASS)
 The supervisor's own derivation, not refereed by another model family. Exact identities and rational comparisons. Census 6/6 in family.
+
+## 2026-09-25 block 149 follow-up — T5 after a panel report (author checks, not a review PASS)
+A three-lens panel (all Claude Opus 5.5 subagents, the same model family) found that T1-T4 cover only transitions within one band. T5 adds: the member frequency is exactly a symmetric pair energy, and pair creation out of the filled sea is kinematically open when sum_a cos q_a > 0 (closed for |p(q)| < 2 mu). Runner 14/0; census 7/7 in family.

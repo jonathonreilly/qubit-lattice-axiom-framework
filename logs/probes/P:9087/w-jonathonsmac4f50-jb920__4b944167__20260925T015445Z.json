@@ -1,0 +1,36 @@
+{
+ "task": "P:9087",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-integrated-variance-202609",
+ "worker": "w-jonathonsmac4f50-jb920",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9087",
+ "pr": 9087,
+ "branch": "codex/mobile-record-integrated-variance-20260924",
+ "git_sha": "4b944167",
+ "started_utc": "20260925T015445Z",
+ "elapsed_s": 62.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/time_integrated_microscopic_cube_birth_variance_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9087's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "00c23ab853569ebf153e739ba9d24afe7c38b151f27a99c1036683a664072cf0",
+ "stdout_tail": "PR #9087: Bound later integrated energy variance after an actual cube birth\nbranch codex/mobile-record-integrated-variance-20260924 (base codex/mobile-record-ordinary-energy-20260924)\nrunners in the PR: 1\n== scripts/time_integrated_microscopic_cube_birth_variance_2026_09_24.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb920",
+  "at_utc": "20260925T015547Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

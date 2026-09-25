@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -777,6 +777,10 @@
   "admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_matched_pulls_and_a_kept_ledger_fix_the_clock_laws_second_order_bounded_theorem_note_2026-09-21": {
    "deps_hash": "5ec70685512e",
    "out_degree": 4
+  },
+  "admissibility_rule_aligned_clusters_of_moving_records_a_box_loses_records_bond_by_bond_its_turning_size_switches_at_cp_equals_one_and_tied_facets_need_two_moves_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_alternating_lengths_are_a_relabelling_invisible_to_the_walk_and_free_for_the_ledger_a_rest_energy_needs_the_bonds_own_amplitude_no_strain_gaps_at_first_order_bounded_theorem_note_2026-09-22": {
    "deps_hash": "ae219f2a5bc3",

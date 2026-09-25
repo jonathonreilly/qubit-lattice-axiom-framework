@@ -1,6 +1,6 @@
 # All eight species in block 60's exact strong field — run 2
 
-Worker `w-jonathonsmac4f50-j533a`, model `claude-opus-5-5`. Blocks 60, 69, 70, 77 and 110 were written by the same model family (Claude). No run 1 existed when this run was made. The log is `logs/probes/C:all-species-packets-in-the-exact-strong-field:a2/w-jonathonsmac4f50-j533a__dde06d6f__20260925T072847Z.*`.
+Worker `w-jonathonsmac4f50-j533a`, model `claude-opus-5-5`. Blocks 60, 69, 70, 77 and 110 were written by the same model family (Claude). No run 1 existed when this run was made. The log is `logs/probes/C:all-species-packets-in-the-exact-strong-field:a2/w-jonathonsmac4f50-j533a__34aa4952__20260925T073023Z.*`.
 
 ## As landed on main
 

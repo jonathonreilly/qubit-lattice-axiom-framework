@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py
-runner_sha256: 8215d24cb125079e525a537c6781d4e60f9b089926505f686765d156a75dbc6e
-input_fingerprint_sha256: 05bb9e2d0a63e05aff59cc7b5c21ee5751a2f9a5bf9697479bd0a0d591c45755
+runner_sha256: 1e71825b46552408154a1f5f16799369c5eeef63daeb37a35eb025306f441386
+input_fingerprint_sha256: 111366597d0a36dfc017e7641e8f6d27fab82a9bec22fd843003b4880e544533
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 9.45
+elapsed_sec: 9.70
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -15,8 +15,8 @@ PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admis
 PASS: B1 the first-order curvature of the lengths delta + h is R1 = d_i d_j h_ij - lap tr h, exactly
 PASS: B2 the second-order part of sqrt(gamma) R minus the member's R2 averages to zero on every plane wave (wave vector along an axis; both are rotation-invariant contractions): the actions agree
 PASS: B3 with K_ij = (1/2) Hdot_ij at first order, the member per unit K equals the comparator's second-order lapse-and-shift density on every plane wave iff alpha = K/4 and beta = -alpha
-PASS: C1 with the shift at alpha = K/4: the plane-wave matrix is hermitian of rank 6 of 10 (four relabellings); every source that keeps the books has a solution, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), free of the relabellings
-PASS: C2 without the shift at alpha = K/4: rank 6 of 7, and the same exchange at every nonzero frequency
+PASS: C1 with the shift at alpha = K/4: the plane-wave matrix is hermitian of rank 6 of 10 (four relabellings); every source that keeps the books has a solution off the light cone, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), free of the relabellings
+PASS: C2 without the shift at alpha = K/4: rank 6 of 7, and the same exchange at every nonzero frequency off the light cone
 PASS: C3 at alpha = K/3, K/5 and 2K, with or without the shift, a source that keeps the books has no solution; at general alpha the one condition is (K - 4 alpha) e / (4 alpha) = 0
 PASS: C4 static content: the clock is u = -e/(4 K p^2), block 101's law at unit rate
 PASS: C5 without the shift: time enters only through the lengths' second derivatives, and the static part annihilates a relabelling, so h = t (d xi + (d xi)^T), u = 0 solves the source-free member; its momentum-constraint residual is -K p^2 xi_perp (nonzero across the wave vector); with the shift N = xi it is a pure relabelling

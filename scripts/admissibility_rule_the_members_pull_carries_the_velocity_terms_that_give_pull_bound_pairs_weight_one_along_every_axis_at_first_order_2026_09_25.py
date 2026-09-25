@@ -249,10 +249,10 @@ def family_c(checks: Checks) -> None:
     mat, pairing, expected = exchange(books_alpha, K, p, w, True, sign)
     ok1 = (pairing is not None and sp.simplify(pairing - expected) == 0 and mat.rank() == 6
            and sp.simplify(mat - mat.H) == sp.zeros(*mat.shape))
-    checks.check("C1", ok1, "with the shift at alpha = K/4: the plane-wave matrix is hermitian of rank 6 of 10 (four relabellings); every source that keeps the books has a solution, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), free of the relabellings")
+    checks.check("C1", ok1, "with the shift at alpha = K/4: the plane-wave matrix is hermitian of rank 6 of 10 (four relabellings); every source that keeps the books has a solution off the light cone, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), free of the relabellings")
     mat0, pairing0, expected0 = exchange(K / 4, K, p, w, False)
     ok2 = pairing0 is not None and sp.simplify(pairing0 - expected0) == 0 and mat0.rank() == 6
-    checks.check("C2", ok2, "without the shift at alpha = K/4: rank 6 of 7, and the same exchange at every nonzero frequency")
+    checks.check("C2", ok2, "without the shift at alpha = K/4: rank 6 of 7, and the same exchange at every nonzero frequency off the light cone")
     blocked = True
     for with_shift in (True, False):
         for alpha in (K / 3, K / 5, 2 * K):
@@ -456,7 +456,7 @@ def family_e(checks: Checks) -> None:
 
 # ============================================================================================ family F
 FENCES = (
-    "This note works within blocks 62, 101, 134, 135, 136, 139 and 140 as landed on main (the member's curvature terms and quadratic action, one light cone, the bond shift, the staggered mass and the long-wave kinematics); it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.",
+    "This note works within blocks 62, 101, 134, 135, 136, 139 and 140 as landed on main (the member's curvature terms and quadratic action, the kinetic normalization alpha = K/4, the bond shift, the staggered mass and the long-wave kinematics); it reports the pull the member carries between two slow bodies at first order and the weight of the pairs it binds; nothing is adopted and no gravitational claim is made.",
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )

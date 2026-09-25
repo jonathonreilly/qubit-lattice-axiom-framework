@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py",
+ "seed": 65109,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T193829Z",
+ "elapsed_s": 681.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "11accf237b689ba4bc938a1c55a6afc6d91c01525f6b347a9ad4c93a7ddd6e53",
+ "stdout_tail": "EASURED by an AST walk -- Block 211's strict form\nGATES A=PASS B=PASS C=PASS D=PASS E=PASS F=PASS G=PASS H=PASS I=PASS\nN5: NOTHING HERE IS REGISTERED OR ADOPTED. SYMBOL means an exact finite Bloch matrix; CONE means the zero set of a homogeneous determinant; METRIC means one of two declared degree-block readings; DISPERSION means exact matrix branches. The live runtime inputs are the bounded recovered 201/209/211 construction helper, the current Block 105 assembly helper, the paired note, axioms, and registry; historical parent bodies and caches are preserved only as recovery evidence. At the degree-diagonal representative, the graded onsite determinant factorizes into the two reading quadrics. On the coincidence curve it is proportional to (k^T G1 k)^2, with factors 8/9 at L+- and 3/4 at L-+. None of the listed curved witness matrices is scalar, but this finite fact is not universal: the positive-definite opposite-sign point g0=3/8, g1=1/3, v0=sqrt(110)/12, v1=16sqrt(110)/165 has overlap pencil (kt^2+kx^2+ky^2) I. In two dimensions the overlap pencil is generically scalar, while the graded pencil is scalar on v^2=1-c^2; the form matrices are not scalar as symbolic identities but may be scalar at special values such as zero shear. No assembly, metric reading, action, propagator, continuum, spacetime cone, dynamics, or gravity is selected or supplied. Every negative is confined to the displayed formal family, exact identities, and named finite witnesses.\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T194951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

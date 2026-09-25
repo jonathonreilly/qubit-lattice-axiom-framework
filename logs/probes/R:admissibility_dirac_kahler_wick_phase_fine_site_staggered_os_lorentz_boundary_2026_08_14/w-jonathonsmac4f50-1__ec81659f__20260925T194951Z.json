@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_wick_phase_fine_site_staggered_os_lorentz_boundary_2026_08_14.py",
+ "seed": 65791,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T194951Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ec45306fd65731d90b5ebef0087254a8d364db6fa2e0fcdc90193ecfc916cbb0",
+ "stdout_tail": "ations while OS energy and cent...\n       sinh^2 E=r^2; sin^2 omega=r^2; omega-E=r^3/3+O(r^7)\n[PASS] I-scope-no-go-discipline-and-TOE-firewall: N1-N8 preserve curved histories, ADM transport, finite-spacing Lorentz, zero-mode, axiom...\nSOURCE_AUTHORITY: current memo and exact declared file bytes; historical Git identities are provenance only\nper_element: exact Clifford phases, Hodge Ward response, time-cell pole, reflected-Gram factors, and induced reflection are checked\nper_site: one staggered Grassmann mode per fine site is exactly relabeled into 2^d exterior components on each even 2^d cell\nper_mode: the reduced-BZ d=2 two-line Gram has rank two and the d=4 eight-spatial-line Gram has rank eight\nper_block: the full flat free 2^4 carrier placement, same-action Euclidean kernel, and two-slice OS quotient are exact\nlattice_wide: checked and not executed \u2014 curved histories, actual ADM cross-links, joint gravity, exact finite-spacing Lorentz reconstruction, zero-mode choice, energy, Records, selection, and retention remain open\nRESULT: flat mI+iM0 is phase-selected and exactly fine-site equivalent to the free staggered OS action in d=2,4; Q_E(H)=mH+iM(H) is its Ward-compatible degree-preserving extension\nDECISION_CUT: advance Q_E to curved Hodge histories and the actual ADM transporter; do not identify flat mI+M0 with the July massive Euclidean OS kernel\nTOE: zero obligation retirement, zero retained-positive end-to-end theories, and no percentage movement\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T194954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

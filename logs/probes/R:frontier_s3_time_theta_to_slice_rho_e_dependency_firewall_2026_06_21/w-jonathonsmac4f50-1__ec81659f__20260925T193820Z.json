@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_s3_time_theta_to_slice_rho_e_dependency_firewall_2026_06_21.py",
+ "seed": 65100,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T193820Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c50ab59bd5cba095a96b8a281c64ea31cea3d2dedc2e0dc3e6bc60a8ab2dbe48",
+ "stdout_tail": "utoff radius 4.0, a genuinely whole-grid operator of dimension 1052, and it is certified as a whole here: symmetry residual 3.331e-16 against EXACT_TOL, smallest eigenvalue 1.148587e+00 strictly positive, and the one-step transfer exp(-Lambda_R) contractive with largest eigenvalue 3.170846e-01 below one. Grid size 15 and cutoff 4.0 are the only ones executed; no thermodynamic limit is taken and nothing here is asserted about growing the box.\nDeterminism: this runner uses no RNG, optimizer, root-finding or Monte Carlo. The only sweep is the fixed time list [0.0, 0.5, 1.0, 2.0], with the semigroup step t -> t+0.5 taken wherever both endpoints lie in that list; tolerances are EXACT_TOL = 1e-12, 5e-14 for the semigroup residual and 1e-12 for the norm ratio. The eigenvalue and symmetry figures above are interpolated from this run's own backbone rather than quoted from a past run, since LAPACK and expm residuals move between environments while the verdicts do not.\n\n========================================================================================\nPASS=10 FAIL=0\n\nVERDICT: exact-support firewall for the theta-to-slice consumer. The unresolved\nrho_E entry propagates only through the E-center source factor q_E=1+rho_E/6.\nShell couplings and T-channel couplings are rho-independent for every checked\ntime, and the rho-dependent E-center tensor is just a rank-one source factor\ntimes the same exact slice seed V_R(t). This narrows the consumer ambiguity but\ndoes not derive rho_E=21/4.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193821Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

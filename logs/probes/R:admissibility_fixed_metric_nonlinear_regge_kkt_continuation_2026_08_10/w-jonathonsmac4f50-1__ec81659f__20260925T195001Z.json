@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_fixed_metric_nonlinear_regge_kkt_continuation_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_fixed_metric_nonlinear_regge_kkt_continuation_2026_08_10.py",
+ "seed": 65801,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T195001Z",
+ "elapsed_s": 102.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a7649d93844209b8007f83385c52c90b5a0db96afde3a54c4118ca7af9a41d2b",
+ "stdout_tail": "11941071), residual=1.658e-58, radius=1.0e-9, contraction=2.709e-03; bundle-A: center=(0.017745864568,-0.001860447975,-0.001860447975,-0.001860447975,0.150221081), residual=1.809e-52, radius=1.0e-9, contraction=2.728e-03; bundle-B: center=(0.018342069611,0.0014290423143,0.0014290423143,0.0014290423143,0.15660868399), residual=4.666e-59, radius=1.0e-9, contraction=2.500e-03\n[PASS] ten-channel-kkt-closure\n       each complete equation residual lies in the ten-dimensional metric-reaction image; the eleventh reaction of the quadratic completion is replaced by native nonlinear response\n[PASS] independent-periodic-box-action-reconstruction\n       background/bundle-B per-cell action errors=[7.129e-14,2.341e-14]; background gradient max=8.721e-09; bundle-B source-direction gradient error=9.678e-09\n[PASS] theorem-source-surface\n[PASS] no-go-discipline-source-surface\n[PASS] canonical-axiom-nonmutation\nper_element: checked all fifteen homogeneous edge directions through the ten-plus-five direct-sum decomposition\nper_site: checked the full fifty-hinge, two-hundred-forty-incidence action per translation cell\nper_mode: checked the compact k=0 five-normal nonlinear system and all ten affine metric reactions\nper_block: checked one interval-certified background, its full normal Hessian, and all three declared source continuations\nlattice_wide: checked the homogeneous periodic sector; curved, time-dependent, inhomogeneous, and open-boundary stability remain outside scope\nTOTAL: PASS=13 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T195143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

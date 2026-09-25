@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_exterior_character_jr_r3_q2_symmetric_action_crossing_top_spin_independent_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_exterior_character_jr_r3_q2_symmetric_action_crossing_top_spin_independent_2026_08_29.py",
+ "seed": 65800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T195000Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f5ab8a9083fb9ee485ba1e2a61ae23f8a915f94a9a404f2d9c5d593b4a1eaaca",
+ "stdout_tail": "[PASS] oriented original-link reconstruction gives three four-link plaquettes and one eight-link merged loop\n[PASS] the first two placements are disjoint and the boundary placement shares only oppositely oriented h3\n[PASS] maximal-torus census gives disjoint multiplicities four and eight\n[PASS] maximal-torus census gives shared multiplicities three, seven, and one coupled top label\n[PASS] O(3) defining-vector fusion has a unique unit-coefficient top summand\n[PASS] disjoint census reproduces r_n^4 r_1^8 at every checked spin\n[PASS] shared census reproduces r_n^3 r_1^7 r_(n+1) at every checked spin\n[PASS] both disjoint placements have identical positive symmetric factors\n[PASS] the shared placement has positive symmetric factors on the supplied-sign domain\n[PASS] physical-Q top channels carry a nontrivial internal-rung label absent from the coarse merged loop\n[PASS] identity crossing makes every two-order factor two and every layer coefficient a power of two\n[PASS] a nonphysical signed shared-rung sample cancels exactly at spin two while disjoint factors do not\nTOTAL: PASS=12 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T195001Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

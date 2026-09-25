@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_exterior_character_jr_r3_q2_symmetric_action_crossing_top_spin_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_exterior_character_jr_r3_q2_symmetric_action_crossing_top_spin_2026_08_29.py",
+ "seed": 65800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T195000Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "89abe88df6fa2ed313540bf92b10fcd93f245290d6c37bf2787983c98989da8a",
+ "stdout_tail": "ASS] one-step parent scalar preserves the independently reconstructed two-order addition and common sign\n[PASS] scope locks preserve all open boundaries\n[PASS] independent maximal-torus and original-link implementation\nplacement_link_counts {'p0_disjoint': {1: 8, 4: 4}, 'p1_disjoint': {1: 8, 4: 4}, 'p2_shared_h3': {1: 7, 4: 3, 5: 1}}\npositive_layer8_top {'p0_disjoint': '68074889084598031842035895902904928315391875027952246898251607393297/580622889317460633155988493572221404424124200157411316007323982678853415209659430254739606640625', 'p1_disjoint': '68074889084598031842035895902904928315391875027952246898251607393297/580622889317460633155988493572221404424124200157411316007323982678853415209659430254739606640625', 'p2_shared_h3': '2043700353157911585674124273866825200870893827000036032512/42365480948111397793352488302328981671348897332733331468363653749716115135015459375'}\nsigned_shared_cancellation_spin 2\nper_element: checked and executed \u2014 both operator orders and exact top coefficients were compared term by term\nper_site: checked and not executed \u2014 no physical site-evolution or sitewise dynamics statement is made\nper_mode: checked and not executed \u2014 no momentum, continuum, or normal-mode construction enters this packet\nper_block: checked and executed \u2014 all three fine-plaquette placements in the supplied two-cell local geometry were tested\nlattice_wide: checked and not executed \u2014 mixed placements, invariant closure, and global memory are not inferred\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T195000Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

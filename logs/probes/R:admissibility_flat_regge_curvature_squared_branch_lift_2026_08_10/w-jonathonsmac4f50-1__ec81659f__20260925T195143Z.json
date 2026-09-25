@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_flat_regge_curvature_squared_branch_lift_2026_08_10.py",
+ "seed": 65903,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ec81659f",
+ "started_utc": "20260925T195143Z",
+ "elapsed_s": 45.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "03cc07e920f9f1a7fc15fa722c8178b155b706fe5951406e709cc4ed13d68021",
+ "stdout_tail": "ent interval on all 25,308 finite-torus modes\n       modes=25308; coefficient evaluations=126540; failures=0; first crossing=0.009864625; correction gap=4.908e-02; minimum nonzero gap=0.032365006; gauge=5.031e-14\n[PASS] bounded-brillouin-stress-scan: the bounded coefficient interval retains four gauge zeros and lifts the extra branch across every declared Brillouin stress sample\n       samples=7183; coefficient evaluations=35915; failures=0; correction gap=2.090e-10; minimum extra lift=527.529003976; minimum nonzero gap=9.684e-06; gauge=5.033e-14\n[PASS] infrared-einstein-order-preservation: the entire coefficient window keeps the curvature-square metric correction at O(k^4) beside the O(k^2) Einstein term\n       low=2.999e-08,7.499e-09,1.872e-09; high=3.839e-06,9.599e-07,2.396e-07\nper_element: checked all fifteen actual edge classes in both local action Hessians and the repaired body-edge source\nper_site: checked every one of fifty hinge classes and all two-hundred-forty dihedral incidences per translation cell\nper_mode: checked two curved spatial soft-mode brackets plus 25,308 exhaustive torus modes and 7,183 stress samples across the bounded coefficient window\nper_block: checked the Block-19 nonflat background, the flat repaired coefficient family, and their distinct constraint interpretations\nlattice_wide: checked complete L=3 through L=10 periodic spectra, coefficient monotonicity, and independent L=3 action reconstructions without source projection\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T195229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

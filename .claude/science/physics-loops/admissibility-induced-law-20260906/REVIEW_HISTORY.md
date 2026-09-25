@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-25 block 142 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. A floating-point exploration at g = 40 reproduced the weights. Census 7/7 in family.

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py
+runner_sha256: 5ada0981ce7415794c6e302fb2673eef2dd3b8be77b070caf7b637a41b02464d
+input_fingerprint_sha256: 59ac3e434a8f55d30b6703113cb5433558ab3a68263c011eff3b0985f4acda04
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.77
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, one record per site, the neighbour possibility shift and any timing of it are supplied; the memo does not define a time metric)
+PASS: B1 T1: on the line (walkers sigma_z D), under one record per site and for either exchange sign, a pair of equal coins bound as neighbours by V has exactly E = V + sin^2(K/2)/V (the half-line wave z^(r-1), z = sin(K/2)/V), so c^2 = d^2(E^2/2)/dK^2 at rest is 1/2 for every V: half the walker's; opposite coins have E = V + cos^2(K/2)/V exactly, c^2 = -1/2 - 1/(2V^2), inverted; without exclusion the even channel reaches coincidence and E = V + 3 b^2/V + O(b^4), c^2 = 3/2
+PASS: C1 T2: for any coins on the bond e_a, the strongly bound pair's second-order generator for keeping its bond is exactly 5/2 - (1/2) cos K_a sigma_a sigma_a - sum_{b != a} cos K_b sigma_b sigma_b in three dimensions (1/2 - (1/2) cos K sigma_z sigma_z on the line, where it is T1 exactly); exclusion halves the term along the bond (the rear record cannot step first) and removes any two-step link between the bond's ends; E = g m0 + Lambda/(g m0) + O(g^-3), since no odd path returns to a bond
+PASS: D1 T3: a possibility shift on a bond that is covariant under the bond's rotations and the records' exchange is mu_pm (spin +-1 along the bond) plus any hermitian form on the zero-spin plane {S, t_a} (five real numbers); at strong binding its bound pairs live on one of: a ray cos(theta) S + e^(i phi) sin(theta) t_a, the spin +-1 plane, or an accidental union; fermion pairs on a ray never roll and have E^2 = g^2 m0^2 + 2(5/2 + (1/2) cos K_a + (2 cos^2(theta) - 1) sum_(b != a) cos K_b), weight -1/2 along the bond and 1 - 2 cos^2(theta) across; on every rest level of every case the sum over the three axes of the weight matrix is one number, (3 - 8 cos^2(theta))/2 on a ray, 3/2 or -1/2 (spin +-1 plane, fermions), 1/2 (bosons), and in the accidental unions rational functions of cos^2(theta) (two values, -3/4 and -1/2, on the one level where a ray meets a spin +-1 level of the same kind), never above 3/2, which the pairs with zero spin along the bond reach: no bound pair has weight one along all three axes, which needs 3
+PASS: E1 T4: a free record has d^2(eps^2/2)/dk_d^2 = cos 2k_d, one along each axis at rest (sum 3); without exclusion the same-bond law is 3 - sum_b cos K_b sigma_b sigma_b (the along-bond term not halved) and the bond's ends are linked through coincidence; contact pairs (block 115) have the same law at coincidence, so their axis weights are the coin correlations: -1, -1, -1 for the singlet, and -1 along a, +1 across for t_a (sum 1); the neighbour term timed by sqrt(w(x1) w(x2)) scales like the hops under a joint translation
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the line's bound pair exactly (the half-line wave for both coin alignments and every V) and the same-bond law as a symbolic operator identity in K on Z^3 and on the line
+per_site: executed - every bond position and every intermediate position of the second-order generator; exclusion's removed step; the odd coordinate sum of every bond position
+per_mode: executed - the commutant of the bond's rotations and exchange (five real numbers) and every ground space it allows: a ray with symbolic mixing and phase, the spin +-1 plane, the zero-spin plane, the coin-blind shift, the union with symbolic mixing and its two coincidences
+per_block: executed - the weight matrices along each axis on every rest level, their first-order blocks and their sum over the axes; the controls (a free record, no exclusion, contact pairs, the timed term)
+lattice_wide: two records; strong binding at leading order in 1/g in three dimensions (exact for every binding on the line); moderate binding, the staggered mass, pushes, non-covariant shifts and more records not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: one record per site - pairs bound as neighbours have c^2 = 1/2 on a line for every binding, and in space, at strong binding, no rotation-covariant possibility shift gives a bound pair weight one along all three axes (the axis sum is at most 3/2, against 3); supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

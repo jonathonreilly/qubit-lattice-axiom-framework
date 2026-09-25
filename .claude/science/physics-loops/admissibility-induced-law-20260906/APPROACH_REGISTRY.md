@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F142 pairs bound as neighbours under one record per site | the line exactly (half-line wave, both coin alignments, every V); the strong-binding same-bond law as a symbolic identity; the commutant of the bond's rotations and exchange; every covariant ground space with symbolic mixing; per-level axis sums; controls | block 142 (own derivation, unrefereed) |

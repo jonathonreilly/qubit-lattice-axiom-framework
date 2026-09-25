@@ -1,0 +1,10 @@
+PR #9188: physics-loop: admissibility induced-law block 131 - rays in the walkers frame: the fall has its index raised, and the members travelling disturbances act only across their direction
+branch physics-loop/admissibility-induced-law-block131-rays-in-the-walkers-frame-travelling-disturbances-act-across-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_rays_in_the_walkers_frame_fall_with_the_index_raised_and_the_members_travelling_disturbances_act_only_across_their_direction_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation fall_index_forged: expected B observed B ok
+   mutation bending_ratio_forged: expected C observed C ok
+   mutation ray_row_forged: expected D observed D ok
+   mutation stagger_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

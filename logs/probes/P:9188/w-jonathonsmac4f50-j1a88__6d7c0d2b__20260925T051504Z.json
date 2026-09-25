@@ -1,0 +1,37 @@
+{
+ "task": "P:9188",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block131-rays-",
+ "worker": "w-jonathonsmac4f50-j1a88",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9188",
+ "pr": 9188,
+ "branch": "physics-loop/admissibility-induced-law-block131-rays-in-the-walkers-frame-travelling-disturbances-act-across-20260924",
+ "git_sha": "6d7c0d2b",
+ "started_utc": "20260925T051504Z",
+ "elapsed_s": 24.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_rays_in_the_walkers_frame_fall_with_the_index_raised_and_the_members_travelling_disturbances_act_only_across_their_direction_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9188's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "4519f50dd450173af93377fb3ca47a55d3b21f91b0bce8fce630bb68740abbf8",
+ "stdout_tail": "PR #9188: physics-loop: admissibility induced-law block 131 - rays in the walkers frame: the fall has its index raised, and the members travelling disturbances act only across their direction\nbranch physics-loop/admissibility-induced-law-block131-rays-in-the-walkers-frame-travelling-disturbances-act-across-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_rays_in_the_walkers_frame_fall_with_the_index_raised_and_the_members_travelling_disturbances_act_only_across_their_direction_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation fall_index_forged: expected B observed B ok\n   mutation bending_ratio_forged: expected C observed C ok\n   mutation ray_row_forged: expected D observed D ok\n   mutation stagger_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1a88",
+  "at_utc": "20260925T051529Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_rest_energy_from_binding_two_walkers_exact_in_one_dimension_invisible_under_one_record_per_site_anisotropic_in_three_2026_09_24.py
+runner_sha256: e188de253d64ce39eb15fa4fd093477fb33854fe6e68189878c18526cac0193f
+input_fingerprint_sha256: ea543859cc69a2b7270a133aa367abeda73ccf32f7a6492d037be08b1cc657b6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.47
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk, its clock and the pair interaction are supplied clauses)
+PASS: B1 T1: for two walkers sigma_z D on the line with a contact term V delta (V < 0), the bound state at total wave number K has phi(q) = 1/(E - eps(q)), eps = 2 sin(K/2) cos q for equal coins and 2 cos(K/2) sin q for opposite coins, and 1 = V (1/2pi) int dq/(E - eps) with (1/2pi) int dq/(a - 2b cos q) = sign(a)/sqrt(a^2 - 4b^2) (checked exactly at four points): co-moving pairs have E^2 = V^2 + 4 sin^2(K/2) = V^2 + K^2 - K^4/12 + ... - a rest energy |V| with the walker's own speed 1 - and counter-moving pairs E^2 = V^2 + 4 cos^2(K/2) = V^2 + 4 - K^2 + ..., inverted at rest
+PASS: C1 T2: at rest (K = 0) in three dimensions the pair's kinetic operator is A = h(q).(sigma^1 - sigma^2); in the coin singlet and the Cartesian triplets T_j (zero total coin spin along axis j) its resolvent has <S|(E - A)^-1|S> = E/(E^2 - 4|h|^2), the triplet block (1 - n n^T)/E + n n^T E/(E^2 - 4|h|^2) with n = h/|h|, and singlet-triplet elements odd in h; averaged over q (cubic symmetry, <n_i n_j f> = delta_ij <f>/3) the contact conditions split into a singlet channel 1 = V I(E) and three triplet channels 1 = V (2/(3E) + I(E)/3), I(E) = <E/(E^2 - 4|h|^2)>
+PASS: D1 T3: the pair's moments M_n = <A(q; K)^n>_q are constant terms of Laurent polynomials; M_2 = 3 - sum_i cos K_i sigma^1_i sigma^2_i, and for motion along an axis M_2 and M_4 are diagonal in {S, T_x, T_y, T_z}; the strong-binding condition E = V sum m_n/E^n then gives, exactly to O(V^-2) and O(kappa^2): singlet E^2 = V^2 + 12 - 24/V^2 - (1 - 8/V^2) kappa^2 (inverted), triplets polarized across the motion V^2 + 4 + 16/V^2 + (1 - 2/V^2) kappa^2 (normal, c^2 = 1 - 2/V^2), the triplet along the motion V^2 + 4 + 16/V^2 - (1 + 4/V^2) kappa^2 (inverted)
+PASS: E1 T4-T5: at coincidence the exchange of two walkers acts on the coins alone, with eigenvalue -1 on the singlet and +1 on each triplet, so a contact term reaches antisymmetric walkers only in the singlet and symmetric ones only in the triplets; under one record per site no amplitude sits at coincidence and the contact term vanishes identically; with the clock w = 4^x on a 7-site chain, the timed contact term V w(x) keeps H_w T = 4 T H_w for the joint translation of the pair, exactly on interior vectors, and the untimed contact term breaks it
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the lattice integral at four points; the one-dimensional dispersions and their expansions (symbolic)
+per_site: executed - the resolvent in the singlet and Cartesian triplets, symbolic in h; the exchange operator on the coins
+per_mode: executed - the pair's second and fourth moments as constant terms of Laurent polynomials, and the strong-binding dispersion of every channel
+per_block: executed - the timed and untimed contact terms against the joint translation on a 7-site chain with w = 4^x (exact)
+lattice_wide: T1 on Z for every V < 0 and K; T2-T3 on Z^3 at rest and, for motion along an axis, to O(V^-2) and O(kappa^2); T4-T5 for every pair on every lattice; the walk, its clock and the contact interaction are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: two walkers bound by a contact term - in 1D co-moving pairs have rest energy |V| and the walker's speed, counter-moving pairs are inverted; under one record per site the contact term vanishes; in 3D only triplets polarized across the motion are normal (c^2 = 1 - 2/V^2); nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

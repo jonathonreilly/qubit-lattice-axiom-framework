@@ -1,0 +1,21 @@
+PASS I.group subgroups=30
+PASS I.source_stabilizer C4=(20, 21, 22, 23), derived={3: (20, 21, 22, 23), 7: (20, 21, 22, 23)}
+PASS I.action.L3 correct=576, reversed=120
+PASS I.sextet.L3 sextet=(1, 4, 9, 15, 18, 23)
+PASS I.clusters.L3 within=1.243e-10, across=4.000000
+PASS I.orientation_witness.L3 left-block spread=4.000000
+PASS I.covering.L3 count-law=30/30
+PASS I.noncomplement_witness.L3 bad order-four coverage=12
+PASS I.probes.L3 matches=30/30, cover=1.140e-11, noncover=2.477e-02
+PASS I.accidental_source.L3 identity-subgroup all-ones spread=2.498e-16
+PASS I.action.L4 correct=576, reversed=120
+PASS I.sextet.L4 sextet=(1, 4, 9, 15, 18, 23)
+PASS I.clusters.L4 within=1.243e-10, across=4.000000
+PASS I.orientation_witness.L4 left-block spread=4.000000
+PASS I.covering.L4 count-law=30/30
+PASS I.noncomplement_witness.L4 bad order-four coverage=12
+PASS I.probes.L4 matches=30/30, cover=1.788e-10, noncover=9.497e-02
+PASS I.accidental_source.L4 identity-subgroup all-ones spread=7.250e-14
+PASS I.factorization S=(1, 4, 9, 15, 18, 23), C4=(20, 21, 22, 23)
+PASS I.primary_receipt independent facts agree with the primary receipt
+TOTAL: PASS=20 FAIL=0

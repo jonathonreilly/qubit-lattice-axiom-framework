@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05.py",
+ "seed": 66357,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4374c1e4",
+ "started_utc": "20260925T195917Z",
+ "elapsed_s": 359.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e0c92e7e5f7a113fd8516403fa230a6637be7f1e21915d309c407fa9a6f81d5",
+ "stdout_tail": "for the zero octets: [((1, 12), 96), ((1, 16), 192), ((2, 10), 144), ((3, 10), 96), ((4, 12), 24), ((4, 16), 96)]\nPASS hostile.support  deleting one piece from a certified zero octet destroys the full-table identity\nPASS hostile.dependency  a failed direct-dependency receipt cannot satisfy the acceptance predicate\nPASS hostile.sample_geometry  sample-disjoint declared pieces can overlap, so the exact separator gate is load-bearing\n\nper_element: checked -- all 192 used pieces enter the exact incidence, response, support-search, orbit, and corner-geometry censuses\nper_site: checked -- one supplied 16-corner coordinate cell only; no physical assembly-cell or framework site identification is executed\nper_mode: checked and not executed -- the finite cutting incidence system has no field, spectral, or momentum-mode decomposition\nper_block: checked -- all 15,800 geometric cuttings and every used-piece support of cardinality at most eight under the certified split search\nlattice_wide: checked and not executed -- no multi-cell, arbitrary-domain, thermodynamic, boundary, or continuum negative is asserted\nPASS dep.primary_receipt  the primary pass receipt binds the current primary bytes and exactly matches the independently reconstructed row-order-invariant incidence/readings identity; ordered hashes are retained as traversal-specific provenance\nRECEIPT outputs/physical_cell_cutting_least_computing_sets_cycle737_independent_check_2026_08_05_receipt_2026-08-05.json\nTOTAL: PASS=43 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T200517Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

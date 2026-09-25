@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_mirror_atom_toggle_orbit_cycle799_2026_08_15.py",
+ "seed": 66730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4374c1e4",
+ "started_utc": "20260925T200530Z",
+ "elapsed_s": 9.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5b70df2e60129dc83aa355f95365e759052454a4c56b2cc29904bd13f09027e9",
+ "stdout_tail": ": each cutting recovers its transported partition from its own point masks and the fixed flip\nPASS atom-size-profiles the atom-size profiles are exactly 6, every size divisible by 4, every profile summing to 24, and the recount is 15800\natom-size-profiles detail: (24) at 2636 fibers, each with 2 cuttings\natom-size-profiles detail: (4, 20) at 552 fibers, each with 4 cuttings\natom-size-profiles detail: (12, 12) at 384 fibers, each with 4 cuttings\natom-size-profiles detail: (4, 4, 16) at 336 fibers, each with 8 cuttings\natom-size-profiles detail: (4, 4, 4, 12) at 192 fibers, each with 16 cuttings\natom-size-profiles detail: (4, 4, 4, 4, 4, 4) at 16 fibers, each with 64 cuttings\nPASS global-mirror-action full atom toggle is the same-fiber mirror at 4116 of 4116 heads; mirror-fixed cuttings: 0\nglobal-mirror-action detail: mirrors are cuttings at 15800 of 15800, with 0 fixed; the involution acts freely\nPASS axis-order-census the complete 48-walk axis-order census has the five claimed shapes across all 15800 cuttings\ncensus: over the 48 walk representations of a cutting the axis-order census takes 5 shapes, written as multiplicity: orders\ncensus: {2: 24} at 9368, {1: 12, 3: 12} at 5664, {2: 8, 4: 8} at 552, {4: 12} at 120, {2: 16, 4: 4} at 96\nPASS ascent-census the claimed ascent shape occurs at all 15800 cuttings and is the only shape\ncensus: the ascent census inside a cutting is {0: 1, 1: 11, 2: 11, 3: 1} at all 15800 cuttings, one shape, kept by every toggle\nTOTAL: PASS=12 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T200539Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

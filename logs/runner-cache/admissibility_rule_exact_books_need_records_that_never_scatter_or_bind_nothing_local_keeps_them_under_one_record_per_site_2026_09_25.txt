@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py
+runner_sha256: 1c8012e5e138a453cb5f9964ec3a5df5ffe618c3cee5cf63a65a5bad44894ae9
+input_fingerprint_sha256: 30b6491fb808582cb9c250e0d48064c871091638345b6b417c1e055ffbd386d5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.36
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_NO_POSSIBILITY_SHIFT_AMONG_NEIGHBOURS_RESTORES_THE_BOOKS_NO_NEIGHBOUR_COIN_TERM_KEEPS_TWO_EXCLUDED_RECORDS_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, one record per site, the interaction and the placements are supplied; the memo does not define a time metric)
+PASS: B1 T1: the total two-step momentum of two records at total wave vector K and relative q is g_a = sin K_a cos 2q_a in every band (symbolic, Z^2 and Z^3); at the point k1 = K/2 + q, k2 = K/2 - q with Pythagorean angles the shell derivative dg_1 ^ dE on (q_1, q_2) is nonzero for all four band pairs in both dimensions (dg_1/dq_1 = -2002/7225, squares 31196736/206353225 vs 242274816/1650390625 and 60868953216/346879771225 vs 394547360256/1387978515625 differ), so g is not constant on the shell there; being analytic, it is non-constant on every shell component for almost every K and E
+PASS: C1 T2: for any translation-invariant one-body placement f(k) = f0 + f.sigma, the change i[h(k), f(k)] of one record's current has zero trace against each band projector (1 +- h/eps)/2 (symbolic on Z^3): within a band a placement adds nothing to the current; the free record's current is its two-step momentum sin k cos k, a multiple of the identity on the coins that commutes with h(k)
+PASS: D1 T4: on the line (walkers sigma_z D) the collision shells are pairs of points: equal coins have E = 2 sin(K/2) cos q, shell {q0, -q0}; opposite coins have E = 2 cos(K/2) sin q, shell {q0, pi - q0}; on both g = sin K cos 2q takes one value, this identity is within a fixed coin channel, not a statement about arbitrary coin-changing collisions
+PASS: E1 controls: one record per site removes, at every total wave vector, the coincident coin states - one (the singlet) for antisymmetric pairs, three for symmetric pairs; the singlet overlaps every band pair, (1 - s1 s2 n1.n2)/4 != 0 at the test directions, this is an overlap identity only, not by itself a scattering proof
+PASS: E2 T5 (step 1 illustrated): on the line's relative problem truncated to 7 positions with the coincident state removed and placed at lambda, the perturbation determinant det(1 + (h'' - h0)(h0 - z)^-1) equals det(h'' - z)/det(h0 - z) symbolically in z and vanishes at z = lambda: a removed state is a zero of the determinant, which transparency forces to one only under the additional infinite-volume analytic hypotheses, not tested by this finite example
+PASS: E3 T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: 4 and 2 nondegenerate candidate enclosures per half-period cell (existence in every box not asserted) for the ++ and +- band pairs in the plane, 8 and 6 in space, none undecided; at the cone points the other record's energy has squared gradient 139761000/606502321 and 2653455542/8714332815, below one
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the closed form g_a = sin K_a cos 2q_a of the total two-step momentum, symbolically on Z^2 and Z^3
+per_site: executed - the shell derivative dg_1 ^ dE at a Pythagorean point for all four band pairs, by rational comparison
+per_mode: executed - the placement lemma for any one-body term f0 + f.sigma, symbolically on Z^3
+per_block: executed - the line's two-point shells with one value of g; the coincident states removed and their overlap with every band pair; the perturbation determinant on a truncation vanishing at the removed state; exact nondegeneracy of every stationary point of the pair bands at one wave vector in each dimension
+lattice_wide: exact finite algebra and interval certificate only; infinite-volume scattering and threshold application remain conditional
+PASS: G1 the five N5 resolution lines are printed
+scope: Exact two-walker shell kinematics, band-diagonal placement identity, fixed-channel line shells, removed coin dimensions and rational-interval nondegeneracy certificates at the stated total momenta. Conditional scattering implications require the explicitly stated absolutely-continuous wave-operator, local-current, shell-kernel and complex threshold hypotheses. The determinant conclusion excludes off-continuum eigenvalues only in the specified momentum neighbourhood; embedded states and a global no-binding theorem are not established. The unrestricted local-interaction no-go remains deferred pending the analytic bridge.
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

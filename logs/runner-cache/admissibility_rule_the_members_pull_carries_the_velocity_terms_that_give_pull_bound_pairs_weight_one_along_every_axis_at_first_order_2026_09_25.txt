@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py
+runner_sha256: df946864db814724569ae9b20eefc165f02fc7c5f8e7d4d90d0ca2d95edc97ea
+input_fingerprint_sha256: e4a2c0b0e589875e55a4b6211e2a8ef6cd6c216963983103e4d8a22bde917b83
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 9.21
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_PULL_CARRIES_THE_VELOCITY_TERMS_THAT_GIVE_PULL_BOUND_PAIRS_WEIGHT_ONE_ALONG_EVERY_AXIS_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_FROM_THE_SOURCE_LINK_THE_WALKERS_SMOOTH_STATES_MEET_THE_MEMBERS_IDENTITY_AT_LEADING_ORDER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its shift, its kinetic term, the source link and the bodies are supplied; the memo does not define a time metric)
+PASS: B1 the first-order curvature of the lengths delta + h is R1 = d_i d_j h_ij - lap tr h, exactly
+PASS: B2 the second-order part of sqrt(gamma) R minus the member's R2 averages to zero on every plane wave (wave vector along an axis; both are rotation-invariant contractions): the actions agree
+PASS: B3 with K_ij = (1/2) Hdot_ij at first order, the member per unit K equals the comparator's second-order lapse-and-shift density on every plane wave iff alpha = K/4 and beta = -alpha
+PASS: C1 with the shift at alpha = K/4: the plane-wave matrix is hermitian of rank 6 of 10 (four relabellings); every conserved source away from p=0 and omega**2=p**2 has a solution, and a second source feels (1/(2K)) [T'.T - (1/2) T' T] / (p^2 - omega^2), free of the relabellings
+PASS: C2 without the shift at alpha = K/4: rank 6 of 7, and the same exchange at nonzero frequency away from the wave pole (omega**2 != p**2, p != 0)
+PASS: C3 at alpha = K/3, K/5 and 2K, with or without the shift, a source that keeps the books has no solution; at general alpha the one condition is (K - 4 alpha) e / (4 alpha) = 0
+PASS: C4 static content: the clock is u = -e/(4 K p^2), block 101's law at unit rate
+PASS: C5 without the shift: time enters only through the lengths' second derivatives, and the static part annihilates a relabelling, so h = t (d xi + (d xi)^T), u = 0 solves the source-free member; its momentum-constraint residual is -K p^2 xi_perp (nonzero across the wave vector); with the shift N = xi it is a pure relabelling
+PASS: C6 content that keeps its books couples to the drifting lengths as -xi.P plus total derivatives: (1/2) Theta.h = d/dt(t xi.P) - xi.P + d_i(t Theta_ij xi_j)
+PASS: D1 point bodies: T1.T2 - (1/2) T1 T2 = (m1 m2 / 2) [1 + (3/2)(v1^2 + v2^2) - 4 v1.v2] through order v^2
+PASS: D2 1/(p^2 - w^2) = 1/p^2 + w^2/p^4 + w^4/(p^4 (p^2 - w^2)) exactly; lap r = 2/r and lap(1/r) = 0 off the origin, so 1/p^4 is -r/(8 pi) where 1/p^2 is 1/(4 pi r)
+PASS: D3 d/dt1 d/dt2 |x1(t1) - x2(t2)| = -[v1.v2 - (n.v1)(n.v2)] / r
+PASS: D4 the pull between two slow bodies: (m1 m2 / (16 pi K r)) [1 + (3/2)(v1^2 + v2^2) - (7/2) v1.v2 - (1/2)(n.v1)(n.v2)]
+PASS: E1 first-order Legendre transform: the P^2 part of the corrections is (P^2/(2M)) {-(T + 2 T_P)/M + (2/M)[(2a + b) U + c U_P]}
+PASS: E2 tensor virial bracket: {2 (e.x)(e.q), H0} = 2 (e.q)^2 / mu - 2k (e.x)^2 / r^3, whose average vanishes in a bound state: 2 <T_P> = -<U_P>
+PASS: E3 W = 1 + [(1 + 2(2a + b))<U> + (1 + 2c)<U_P>]/M; one along every axis iff 2a + b = -1/2 and c = -1/2; the member's pull (3/2, -7/2, -1/2) gives W = 1; the clock's pull alone gives 1 + (<U> + <U_P>)/M, and on a line with equal masses 1 + <U>/(2m) - <T>/m
+PASS: E4 long-wave boost dx_a = -eps t + v_a (eps.x_a): the Lagrangian changes by dF/dt - (k/r)[(2a + b + 1/2) eps.(v1 + v2) + (c + 1/2)(n.eps)(n.(v1 + v2))] through third order (v ~ k^(1/2) ~ lambda)
+PASS: E5 in units of <U>/M: a circular orbit across and in its plane, and an isotropic state: the member's pull gives 0, 0, 0; the clock's pull alone gives 1, 3/2, 4/3 (W below one)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member's curvature terms against the second-order curvature of the lengths delta + h on every plane wave, and the kinetic normalization alpha = K/4 as the only match
+per_site: executed - the member's plane-wave equations with and without the shift, solved exactly for every source that keeps the books, at nonzero frequency away from the wave pole (omega**2 != p**2, p != 0); the static clock law
+per_mode: executed - the one obstruction (K - 4 alpha) e / (4 alpha) at any other alpha, with and without the shift; the drifting relabellings without the shift
+per_block: executed - the pull between two slow bodies to order v^2; the weight of a bound pair from the P^2 coefficient and the tensor virial bracket; the boost remainder through third order
+lattice_wide: long wavelength; first order in 1/K; slow compact bodies in point form; spin couplings and the member's cubic order not supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: For the explicitly supplied continuum quadratic action, positive K and alpha, conserved sources and nonzero spatial momentum: the generic nonzero-frequency exchange formula requires omega² different from p². The static clock formula is separate. With supplied spinless point-body stress and a conservative near-zone prescription, the displayed order-v² velocity-dependent interaction gives W=1 through the first weak-binding order using tensor virial averages. No finite response at the wave pole, nonlinear completion, lattice result or physical gravity identification is established.
+TOTAL: PASS=25 FAIL=0
+
+----- stderr -----
+

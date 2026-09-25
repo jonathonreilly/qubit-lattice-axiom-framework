@@ -1,6 +1,6 @@
 {
- "edge_count": 15034,
- "node_count": 6751,
+ "edge_count": 15050,
+ "node_count": 6755,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -814,6 +814,10 @@
    "deps_hash": "0349996ab9d9",
    "out_degree": 3
   },
+  "admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "8e814a9e18db",
+   "out_degree": 4
+  },
   "admissibility_rule_binding_scale_pinned_at_the_neutral_value_pair_weight_is_the_rules_likelihood_ratio_no_binding_without_a_cycle_all_binding_is_agreement_around_loops_bounded_theorem_note_2026-09-20": {
    "deps_hash": "f6e4ac704374",
    "out_degree": 3
@@ -861,6 +865,10 @@
   "admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_the_relabellings_coupling_shows_them_different_lengths_bounded_theorem_note_2026-09-21": {
    "deps_hash": "2e36a66177dc",
    "out_degree": 6
+  },
+  "admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "75e3c4308656",
+   "out_degree": 4
   },
   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
    "deps_hash": "1b3132f0c69b",
@@ -989,6 +997,10 @@
   "admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_bounded_theorem_note_2026-09-25": {
    "deps_hash": "33d4b6e6a587",
    "out_degree": 4
+  },
+  "admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "4c120594c282",
+   "out_degree": 3
   },
   "admissibility_rule_only_the_two_step_current_can_source_block_62s_symmetric_member_no_local_placement_of_the_frame_response_or_of_the_one_step_current_keeps_its_divergence_condition_bounded_theorem_note_2026-09-24": {
    "deps_hash": "066282047c8d",
@@ -1129,6 +1141,10 @@
   "admissibility_rule_the_hard_core_sea_on_a_ring_is_one_twisted_band_half_filled_with_half_the_free_seas_volume_term_and_clock_stiffness_bounded_theorem_note_2026-09-24": {
    "deps_hash": "5deedc14cb4f",
    "out_degree": 3
+  },
+  "admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "42c47777d5d1",
+   "out_degree": 5
   },
   "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
    "deps_hash": "50f0b383a81d",

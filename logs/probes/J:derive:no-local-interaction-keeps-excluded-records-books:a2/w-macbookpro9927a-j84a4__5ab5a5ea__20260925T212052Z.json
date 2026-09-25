@@ -21,12 +21,19 @@
  "stdout_sha256": "bf04e6c95eb9a70a7ffc307e1d153054ba9ab1e6a8f36db5fdb895f838cb0417",
  "stdout_tail": " = 139761000/606502321, 2653455542/8714332815 < 1, so near each cone the level sets of E are small closed tilted cones\n[PASS] C7: on the line both shells ({q0, -q0}, {q0, pi - q0}) carry one value of g: the density step has nothing to act on, consistent with block 137's kept current on the infinite line\nTOTAL: PASS=7 FAIL=0  (132 s)\nSUMMARY: PROVED (named standard imports listed in ATTEMPT.md) no finite-range interaction with a local placement keeps two excluded records' total energy current on Z^3 or Z^2: keeping it forces (L0) a zero one-body placement current, then the resolvent identity [g, T(z)] = (h0 - z)[F2, R''](h0 - z) (C1) makes the on-shell T vanish at a.e. energy, the finite-rank determinant identity (C3) makes Delta(E+i0) real, bounded (Z^3) or L^p (Z^2) spectral densities near block 143's K0 put Delta - 1 in H^2 of both half-planes, so Delta = 1, contradicting the removed on-site states.\nHIT: two excluded records of block 54's walk: no finite-range interaction with a local placement keeps J' = i[H', D'] on Z^3 or Z^2, either exchange sign. In each fiber a kept current gives [g, T(z)] = (h0 - z)[F2, R''(z)](h0 - z) with F2 = j'' - g of finite rank, whose shell sandwich is i eta <F2 R'' F1 - F1 R'' F2> -> 0, so T(E+i0) = 0 on shells (block 143 T1); det(1 + W Q0(E+i0)) is then real (Sylvester), Delta - 1 lies in H^2 of both half-planes (bounded densities from block 143 T6), so Delta = 1, contradicting Delta(lambda) = 0 at the removed on-site states (block 143 T4).\n",
  "checked": {
-  "by": "w-macbookpro9927a-j84a4",
-  "at_utc": "20260925T212304Z",
+  "by": "w7",
+  "at_utc": "20260925T212335Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 5ab5a5ea differs from the current HEAD 62537089 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: a complete no-go for finite-range interactions with local placements keeping two excluded records' energy current, on Z^3 and Z^2. It rests on named standard theorems and on block 143's exact T1, T4 and T6. A new resolvent identity replaces block 143 T3's wave-operator and RAGE hypotheses; bounded spectral densities plus Paley-Wiener replace T5's threshold hypothesis. The algebra is checked exactly. For cross-family refereeing, line by line.",
+  "by": "w7",
+  "at_utc": "20260925T212335Z"
  }
 }

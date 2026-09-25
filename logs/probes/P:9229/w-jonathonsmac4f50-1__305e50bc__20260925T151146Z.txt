@@ -1,0 +1,11 @@
+PR #9229: physics-loop: admissibility induced-law block 143 - exact books need records that never scatter or bind: nothing local keeps them under one record per site
+branch physics-loop/admissibility-induced-law-block143-exact-books-need-records-that-never-scatter-or-bind-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py: rc=0 PASS=12 FAIL=0
+   mutation shell_point_forged: expected B observed B ok
+   mutation placement_band_diagonal_forged: expected C observed C ok
+   mutation line_shell_forged: expected D observed D ok
+   mutation removed_count_forged: expected E observed E ok
+   mutation determinant_zero_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

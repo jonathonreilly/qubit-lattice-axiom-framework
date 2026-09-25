@@ -11,7 +11,7 @@ EXACT (stated and used): (a) the fixed points are block 95's field plus any cons
     dv_z/dtau = Gamma e^{v_z} r_z - mean_y(Gamma e^{v_y} r_y),   d ubar/dtau = mean_y(Gamma e^{v_y} r_y),   hops at e^{v_x}/q per unit tau,
     r_z = (1/q) sum_e v_{z+e} - v_z + lambda (n_z - nbar):
 the configuration process in tau is autonomous; the label time only adds the global factor e^{-ubar}.  The mean ubar is NOT conserved by the
-weighted relaxation: it drifts (either sign), and the label-time clocks of the whole lattice speed up or run down with it.
+weighted relaxation (sum_z 1/w_z is, exactly): in the slaved limit the gauge constant depends on the configuration through Z(C).
 Measured (floating point, numba, RK4 for the field, thinning for the hops): the tau-weighted separation law (the stationary estimator) and the
 label-time-weighted one, against exp(-q lambda G(d)); the drift of ubar per hop; one record's mean-square displacement per unit label time and per
 unit tau against the bare hop (w = 1: MSD per unit time 1).  Gamma = 100, 10, 1, 0.1 (bare total hop rate 1); lambda = log kappa = -1/2, -1.
@@ -115,6 +115,17 @@ lhs = sp.exp(uu[0] + c) * rz([x + c for x in uu], 0); rhs0 = sp.exp(c) * sp.exp(
 out("X exact: under u -> u + c the relaxation's right-hand side and every hop rate scale by e^c (residual %s): the process in internal time "
     "d tau = e^{ubar} dt with the mean projected out is exactly the label-time process" % sp.simplify(lhs - rhs0))
 
+# exact: sum_z 1/w_z is conserved by the relaxation (d/dt sum e^{-u} = -Gamma sum_z r_z = 0: the mean-neighbour operator has zero column sums
+# and sum (n - nbar) = 0).  So in the slaved limit u = u95(C) + c(C) with sum_z e^{-u} fixed: every rate carries e^{c(C)} = Z(C)/S0,
+# Z(C) = sum_z exp(-q lambda sum_r G(z - r)), and the LABEL-time slaved law is block 95's divided by Z(C); the internal-time law is block 95's.
+tsym = sp.Symbol('t'); us = [sp.Function('u%d' % i)(tsym) for i in range(12)]
+rr = [(us[(z + 1) % 12] + us[(z - 1) % 12]) / 2 - us[z] + lm * (sp.Symbol('n%d' % z) - sp.Rational(2, 12)) for z in range(12)]
+dsum = sum(-sp.exp(-us[z]) * (sp.Symbol('Gam') * sp.exp(us[z]) * rr[z]) for z in range(12))
+nsum = sum(sp.Symbol('n%d' % z) for z in range(12))
+inv = sp.simplify(dsum.subs(nsum, 2) if False else dsum)
+inv_ok = sp.simplify(sp.expand(inv).subs(sp.Symbol('n11'), 2 - sum(sp.Symbol('n%d' % z) for z in range(11)))) == 0
+out("X exact (ring, symbolic): d/dt sum_z 1/w_z = -Gamma sum_z r_z = %s when sum_z n_z = 2 (the record count): sum 1/w is conserved, the mean "
+    "clock is not; the slaved label-time law is block 95's divided by Z(C) = sum_z exp(-q lambda sum_r G(z - r))" % ("0" if inv_ok else "NONZERO"))
 GAMMAS = (100.0, 10.0, 1.0, 0.1); LAMS = (-0.5, -1.0)
 S = {}
 for name, nbr, q, V, Gv, offs, disp, farsite, (T_small, T_big) in SYS:
@@ -123,6 +134,11 @@ for name, nbr, q, V, Gv, offs, disp, farsite, (T_small, T_big) in SYS:
         unif = np.ones(V); unif[0] = 0.0; unif /= unif.sum()
         mGt, mGu = (target * Gv).sum(), (unif * Gv).sum()
         nn = offs[0][nbr[0]]
+        Zc = np.array([np.exp(-q * lam * (Gv[offs[0]] + Gv[offs[d]])).sum() for d in range(V)])   # Z for records at 0 and at offset d
+        lab = np.exp(-q * lam * Gv) / Zc; lab[0] = 0.0; lab /= lab.sum()
+        frac_lab = ((lab * Gv).sum() - mGu) / (mGt - mGu)
+        out("X %s, lambda = %.1f: the slaved LABEL-time law pi95/Z: <G(d)> fraction %.3f of the way from random to block 95's law, TV %.4f from it"
+            % (name, lam, frac_lab, 0.5 * np.abs(lab - target).sum()))
         cells = []
         vmax = -q * lam * 2 * abs(Gv.min())                        # the largest clock exponent two records can make (both at one place)
         for Gam in GAMMAS:
@@ -141,10 +157,10 @@ for name, nbr, q, V, Gv, offs, disp, farsite, (T_small, T_big) in SYS:
             nnr = pp[nn].sum() / target[nn].sum()
             hops = np.mean([r[4] for r in res]); ubar = np.mean([r[2] for r in res]); tl = np.mean([r[3] for r in res])
             cells.append((Gam, tv, np.mean(frac), np.std(frac) / 2, nnr, np.mean(fracT), np.std(fracT) / 2, ubar / max(hops, 1), ubar, tl / Ttau, time.time() - t0))
-            S[(name, lam, Gam)] = (tv, np.mean(frac), np.std(frac) / 2, ubar / max(hops, 1))
+            S[(name, lam, Gam)] = (tv, np.mean(frac), np.std(frac) / 2, ubar / max(hops, 1), np.mean(fracT), np.std(fracT) / 2, frac_lab)
         out("N %s, lambda = %.1f, two records, pair law exp(-%d lambda G(d)) (uniform is at TV %.4f): %s" % (name, lam, int(q), 0.5 * np.abs(unif - target).sum(),
             "; ".join("Gamma = %g: internal-time law TV %.4f, <G(d)> %.3f +- %.3f of the way from random to the pair law, nearest-neighbour weight/target %.3f | "
-                      "label-time-weighted <G(d)> %.3f +- %.3f | mean clock drift per hop %+.2e (ubar %+.2f at the end, label time / internal time %.2g) (%.0f s)" % x for x in cells)))
+                      "label-time-weighted <G(d)> %.3f +- %.3f | mean-clock change per hop %+.2e (ubar %+.2f at the end, label time / internal time %.2g) (%.0f s)" % x for x in cells)))
 
 for name, nbr, q, V, Gv, offs, disp, farsite, _ in SYS:
     for lam in LAMS:
@@ -172,9 +188,13 @@ out("")
 hits = []
 for name, *_ in SYS:
     for lam in LAMS:
-        tv, fr, er, drift = S[(name, lam, 100.0)]
-        if abs(fr - 1) > max(0.15, 3 * er):
-            hits.append("pair law fails at Gamma = 100 on the %s, lambda = %.1f: internal-time <G(d)> %.3f +- %.3f of the way to the pair law" % (name, lam, fr, er))
+        tv, fr, er, drift, frT, erT, flab = S[(name, lam, 100.0)]
+        if abs(frT - 1) > max(0.15, 3 * erT):
+            hits.append("in LABEL time (the task's time) block 95's pair law does not return at Gamma = 100 on the %s, lambda = %.1f: <G(d)> %.3f +- %.3f of "
+                        "the way from random to it, against %.3f predicted for block 95's law divided by Z(C) (sum 1/w is the conserved quantity, so the "
+                        "slaved clocks carry the configuration factor Z(C)); in internal time d tau = e^{ubar} dt it returns (%.3f +- %.3f)" % (name, lam, frT, erT, flab, fr, er))
+        elif abs(fr - 1) > max(0.15, 3 * er):
+            hits.append("pair law fails at Gamma = 100 on the %s, lambda = %.1f even in internal time: %.3f +- %.3f" % (name, lam, fr, er))
         for Gam in GAMMAS:
             Dtau, Dt = S[(name, lam, Gam, "D")]
             if Dt > 1.05:
@@ -191,10 +211,10 @@ if all(ds > db for _, _, ds, db, _, _ in slow_small):
                 "diffusion is at large or intermediate Gamma, where the record carries its own slow clock (adiabatic value exp(q lambda G(0)))"
                 % "; ".join("%s lambda=%.1f: %.3f vs %.3f (minimum %.3f at Gamma = %g)" % (n, l, ds, db, dm, g) for n, l, ds, db, g, dm in slow_small))
 for h in hits: out("HIT: " + h)
-out("SUMMARY: delayed clocks (the task's law): the weighted relaxation does not conserve the mean clock, which drifts by %+.1e..%+.1e per hop, so "
-    "label-time-weighted laws depend on the history; in internal time (exactly equivalent) the separation law approaches block 95's exp(-q lambda "
-    "G(d)) as Gamma grows (fraction of the way at Gamma = 100/10/1/0.1: ring lambda=-1 %s; 8^3 lambda=-1 %s); one record's MSD per unit label time "
-    "(bare 1): ring lambda=-1 %s, 8^3 lambda=-1 %s"
-    % (min(S[k][3] for k in S if len(k) == 3), max(S[k][3] for k in S if len(k) == 3),
+out("SUMMARY: delayed clocks (the task's law) conserve sum 1/w, not the mean clock: in LABEL time the large-Gamma separation law is block 95's divided "
+    "by Z(C) (ring, Gamma = 100: <G(d)> fraction %.2f and %.2f of the way to block 95's law at lambda = -1/2, -1, against %.2f and %.2f predicted for "
+    "pi95/Z), in internal time d tau = e^{ubar} dt it is block 95's (ring lambda=-1, Gamma = 100/10/1/0.1: %s; 8^3 lambda=-1: %s, weak statistics); "
+    "one record's MSD per unit label time (bare 1) grows as Gamma FALLS: ring lambda=-1 %s, 8^3 lambda=-1 %s (the slaved record carries its slow clock)"
+    % (S[("ring of 12", -0.5, 100.0)][4], S[("ring of 12", -1.0, 100.0)][4], S[("ring of 12", -0.5, 100.0)][6], S[("ring of 12", -1.0, 100.0)][6],
        " / ".join("%.2f" % S[("ring of 12", -1.0, g)][1] for g in GAMMAS), " / ".join("%.2f" % S[("8^3 torus", -1.0, g)][1] for g in GAMMAS),
        " / ".join("%.2f" % S[("ring of 12", -1.0, g, "D")][1] for g in GAMMAS), " / ".join("%.2f" % S[("8^3 torus", -1.0, g, "D")][1] for g in GAMMAS)))

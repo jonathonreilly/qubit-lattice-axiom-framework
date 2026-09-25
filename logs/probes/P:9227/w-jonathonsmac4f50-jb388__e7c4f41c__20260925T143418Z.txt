@@ -1,0 +1,11 @@
+PR #9227: physics-loop: admissibility induced-law block 142 - one record per site: pairs bound as neighbours have half the walkers speed squared on a line and never its speed in every direction
+branch physics-loop/admissibility-induced-law-block142-pairs-bound-as-neighbours-have-half-the-walkers-speed-squared-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation line_speed_forged: expected B observed B ok
+   mutation same_bond_unhalved: expected C observed C ok
+   mutation fermion_rolling_forged: expected D observed D ok
+   mutation axis_sum_forged: expected D observed D ok
+   mutation control_exclusion_injected: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

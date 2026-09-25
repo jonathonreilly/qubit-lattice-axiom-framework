@@ -1,0 +1,37 @@
+{
+ "task": "P:9227",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block142-pairs",
+ "worker": "w-jonathonsmac4f50-jb388",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9227",
+ "pr": 9227,
+ "branch": "physics-loop/admissibility-induced-law-block142-pairs-bound-as-neighbours-have-half-the-walkers-speed-squared-20260925",
+ "git_sha": "e7c4f41c",
+ "started_utc": "20260925T143418Z",
+ "elapsed_s": 49.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9227's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "46b0f7bb65d4c4d27e8a23ad1aa5ed180e16bbd77ba46e88b4abe36b3e458999",
+ "stdout_tail": "PR #9227: physics-loop: admissibility induced-law block 142 - one record per site: pairs bound as neighbours have half the walkers speed squared on a line and never its speed in every direction\nbranch physics-loop/admissibility-induced-law-block142-pairs-bound-as-neighbours-have-half-the-walkers-speed-squared-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py: rc=0 PASS=11 FAIL=0\n   mutation line_speed_forged: expected B observed B ok\n   mutation same_bond_unhalved: expected C observed C ok\n   mutation fermion_rolling_forged: expected D observed D ok\n   mutation axis_sum_forged: expected D observed D ok\n   mutation control_exclusion_injected: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb388",
+  "at_utc": "20260925T143507Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

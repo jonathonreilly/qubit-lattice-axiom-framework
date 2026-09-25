@@ -1,0 +1,36 @@
+{
+ "task": "P:9137",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-unrestricted-observation-c",
+ "worker": "w-jonathonsmac4f50-j1357",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9137",
+ "pr": 9137,
+ "branch": "codex/mobile-record-unrestricted-observation-counts-20260924",
+ "git_sha": "44cbb7bf",
+ "started_utc": "20260925T022136Z",
+ "elapsed_s": 6.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9137's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "c078ee71ecd9319cc1c73e45717f1068f0d8f3239b919b2e6a1c9f38a5cbfda5",
+ "stdout_tail": "PR #9137: Bound original-record counts with unrestricted background formation\nbranch codex/mobile-record-unrestricted-observation-counts-20260924 (base codex/mobile-record-original-photon-record-bridge-20260924)\nrunners in the PR: 1\n== scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1357",
+  "at_utc": "20260925T022143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #9137: Bound original-record counts with unrestricted background formation
+branch codex/mobile-record-unrestricted-observation-counts-20260924 (base codex/mobile-record-original-photon-record-bridge-20260924)
+runners in the PR: 1
+== scripts/local_background_and_unrestricted_original_record_counts_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)

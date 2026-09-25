@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -797,6 +797,10 @@
   "admissibility_rule_binding_scale_pinned_at_the_neutral_value_pair_weight_is_the_rules_likelihood_ratio_no_binding_without_a_cycle_all_binding_is_agreement_around_loops_bounded_theorem_note_2026-09-20": {
    "deps_hash": "f6e4ac704374",
    "out_degree": 3
+  },
+  "admissibility_rule_block_60s_declared_numbers_unit_free_speeds_force_s_equals_p_plus_two_positive_content_forces_the_kinetic_sign_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_the_sea_against_block_59s_bond_law_gives_every_species_one_rest_energy_bounded_theorem_note_2026-09-22": {
    "deps_hash": "ae2e28684684",

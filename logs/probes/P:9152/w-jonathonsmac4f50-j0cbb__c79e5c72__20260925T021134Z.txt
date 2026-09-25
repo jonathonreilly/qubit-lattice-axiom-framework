@@ -1,0 +1,10 @@
+PR #9152: physics-loop: admissibility induced-law block 112 - the curvature member's constraint algebra closes on the lattice only at beta = -alpha, and there the walker's own states cannot be its content
+branch physics-loop/admissibility-induced-law-block112-the-curvature-members-constraints-close-only-at-beta-minus-alpha-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_curvature_members_constraint_algebra_closes_only_at_beta_equals_minus_alpha_where_the_walker_cannot_be_its_content_2026_09_24.py: rc=0 PASS=12 FAIL=0
+   mutation one_corner_taken_to_close: expected B observed B ok
+   mutation noether_source_dropped: expected C observed C ok
+   mutation identity_speed_forged: expected D observed D ok
+   mutation stress_taken_divergence_free: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

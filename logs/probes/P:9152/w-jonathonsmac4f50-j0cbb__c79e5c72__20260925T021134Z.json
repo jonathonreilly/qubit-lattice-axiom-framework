@@ -1,0 +1,37 @@
+{
+ "task": "P:9152",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block112-the-c",
+ "worker": "w-jonathonsmac4f50-j0cbb",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9152",
+ "pr": 9152,
+ "branch": "physics-loop/admissibility-induced-law-block112-the-curvature-members-constraints-close-only-at-beta-minus-alpha-20260924",
+ "git_sha": "c79e5c72",
+ "started_utc": "20260925T021134Z",
+ "elapsed_s": 10.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_curvature_members_constraint_algebra_closes_only_at_beta_equals_minus_alpha_where_the_walker_cannot_be_its_content_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9152's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "492262b6967c37b960f171fa332ef2fc3be6ca7932df2166e6fa4fbeb6cb4017",
+ "stdout_tail": "PR #9152: physics-loop: admissibility induced-law block 112 - the curvature member's constraint algebra closes on the lattice only at beta = -alpha, and there the walker's own states cannot be its content\nbranch physics-loop/admissibility-induced-law-block112-the-curvature-members-constraints-close-only-at-beta-minus-alpha-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_curvature_members_constraint_algebra_closes_only_at_beta_equals_minus_alpha_where_the_walker_cannot_be_its_content_2026_09_24.py: rc=0 PASS=12 FAIL=0\n   mutation one_corner_taken_to_close: expected B observed B ok\n   mutation noether_source_dropped: expected C observed C ok\n   mutation identity_speed_forged: expected D observed D ok\n   mutation stress_taken_divergence_free: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0cbb",
+  "at_utc": "20260925T021144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -92,8 +92,11 @@ with `h = J q`, and a conditional Bloch vector `r₀` of length 0.8 at
   most 2e-15.
 - **Field menu.** For all four clocks the recorded frequency of `+ĥ` equals
   `(1 + r₀·ĥ)/2 = 0.7826` to 2e-16.
-- **Tilted menu.** On the menu `p ∝ ĥ + 0.9 ê⊥`, the four clocks give 0.8437,
-  0.8154, 0.8360 and 0.8570 (spread 0.0417).
+- **Tilted menu.** On the menu `p ∝ ĥ + 0.9 ê`, the four clocks give 0.8437,
+  0.8154, 0.8360 and 0.8570 (spread 0.0417). Here ê is the normalized
+  cross product of the covariance-section axis and the x axis. It is
+  perpendicular to that covariance axis, not to ĥ: ê·ĥ ≈ 0.424 and
+  p·ĥ ≈ 0.861 (about 30.5 degrees).
 - **Formation times.** The conditional mean formation times are 1.000, 1.562,
   1.278 and 1.565: a state-dependent rate changes when, and on the tilted
   menu also what, is recorded.

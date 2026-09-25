@@ -1,6 +1,6 @@
 {
- "edge_count": 14715,
- "node_count": 6681,
+ "edge_count": 14762,
+ "node_count": 6688,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3386,6 +3386,10 @@
    "deps_hash": "4fbc4ff44eb4",
    "out_degree": 1
   },
+  "composite_sites_give_the_carved_majoranas_an_exact_charge_one_qubit_per_site_cannot_two_can_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "composite_source_additivity_2d_note": {
    "deps_hash": "bcfd06e4ab26",
    "out_degree": 1
@@ -5150,6 +5154,10 @@
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
   },
+  "dynamics_clause_campaign_synthesis_what_one_local_dynamics_clause_buys_and_what_it_leaves_open_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "529e9c12113b",
+   "out_degree": 22
+  },
   "dynamics_clause_charges_are_gauss_defects_no_qubit_carries_a_covariant_charge_under_full_soldering_defects_are_bosons_and_record_phases_are_pure_gauge_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f892b007ac95",
    "out_degree": 3
@@ -6133,6 +6141,10 @@
   "formation_order_covariance_and_isotropic_binary_order_blind_classification_bounded_theorem_note_2026-09-13": {
    "deps_hash": "8a36f31932c1",
    "out_degree": 5
+  },
+  "formation_rate_functions_the_axiom_text_admits_record_determined_clocks_reduce_to_the_constant_clock_between_neighbour_records_and_state_reading_clocks_split_by_menu_dephasing_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "94e0a2187e53",
+   "out_degree": 2
   },
   "formation_unit_sequential_vs_joint_covariant_sets_block_chain_equality_product_fill_visibility_and_glued_unit_hole_dissolution_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
@@ -7241,6 +7253,10 @@
   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
    "deps_hash": "b48fd9e48b4d",
    "out_degree": 6
+  },
+  "gauging_the_composite_site_charge_the_link_field_dresses_the_yao_lee_bond_and_the_z2_partner_survives_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "82b557e050f3",
+   "out_degree": 2
   },
   "gaussian_lattice_maxwell_comparator_gives_a_linear_size_independent_transverse_structure_factor_and_misses_the_pure_ring_level_step_bounded_theorem_note_2026-09-24": {
    "deps_hash": "224053b8559b",
@@ -14546,6 +14562,10 @@
    "deps_hash": "ee879b3e093d",
    "out_degree": 1
   },
+  "next_needs_synthesis_what_the_remaining_sectors_cost_in_supplied_structure_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "dc5bd532898b",
+   "out_degree": 9
+  },
   "nn_formation_selector_two_model_kill_bounded_note_2026-08-14": {
    "deps_hash": "c675330f0b77",
    "out_degree": 6
@@ -17478,6 +17498,10 @@
    "deps_hash": "e535a9ace557",
    "out_degree": 1
   },
+  "round_three_synthesis_the_photon_from_four_sides_the_formation_clocks_the_text_admits_and_a_three_dimensional_charge_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "08110dd26eef",
+   "out_degree": 8
+  },
   "route_a_fixed_type_atlas_correction_cycle822_bounded_theorem_note_2026-07-30": {
    "deps_hash": "20e02c11a8d5",
    "out_degree": 4
@@ -19453,6 +19477,10 @@
   "the_generation_count_is_the_spatial_dimension_on_the_k1_branch_and_is_undefined_on_k0_the_wilson_operator_is_the_k0_operator_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "7479cc2f8517",
+   "out_degree": 3
   },
   "the_interaction_generates_the_staggered_mass_at_hartree_level_and_no_term_in_the_law_fixes_its_sign_bounded_theorem_note_2026-09-03": {
    "deps_hash": "c8eee4235fc9",

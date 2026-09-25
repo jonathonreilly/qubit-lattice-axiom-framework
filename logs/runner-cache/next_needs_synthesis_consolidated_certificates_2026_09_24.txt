@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/next_needs_synthesis_consolidated_certificates_2026_09_24.py
+runner_sha256: ff1a50e68fc05d133ce5a736658ab4f92e4e9813298ecddee9ff87f17f2caacc
+input_fingerprint_sha256: a57da607965031f02984741d8a4fbaf5e07b5cded35a3d99a294096419bae56d
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 18.21
+status: ok
+----- stdout -----
+[PASS] finite check: 9140: local record menus rebuild a two-site state; the graded pair is locally indistinguishable; half the swap is positive on products but not a state :: reconstruction 9e-17; graded pair agrees on local products to 0e+00 with trace distance 1; <ab|W|ab> >= 0.000 over 500 product states, smallest eigenvalue -0.50
+[PASS] finite check: 9142: precession conserves r.h, so two different clocks record the same field-menu odds :: r.h conserved to 2e-16; constant and purity clocks both record 0.7826 = (1 + r.h)/2
+[PASS] finite check: 9144: a star of four dimers has the three-flavour free spectrum and an exactly conserved matter spin :: levels [-4.242641, -1.414214, 1.414214, 4.242641] with degeneracies [32, 96, 96, 32]; [H, S] = 0
+[PASS] finite check: 9145: the scalar-gauge pattern is a null direction of the momentum form, which is invariant on ker G only :: G S^T = 0; s.M0 s = 0e+00; change on ker G 3e-13
+[PASS] finite check: 9146: the fine torus has 9600 ice states in 937 flip classes, largest 864; the Jastrow sampled-grid minimum is alpha = 0.14 :: 9600 states, 937 classes, largest 864; alpha* = 0.14; exact E0 -9.0267
+[PASS] finite check: 9148: a short guided projector run on the largest class agrees with the exact component energy within the stated finite-seed tolerance :: exact -9.0267, projector -9.0181 +- 0.0189
+[PASS] finite check: 9149: the dressed composite bond commutes with both Gauss operators and the bare one does not; the partner product commutes with both :: |[G, H_dressed]| = 0e+00, |[G, H_bare]| = 2.0, |[tau^z tau^z, H]| = 0e+00
+[PASS] finite check: 9153: the canonical zero-winding ice state with q reversed lines is ice with winding (2q, 0, 0), slab-independent :: q = 0: ice True, W = (0, 0, 0); q = 1: ice True, W = (2, 0, 0); q = 2: ice True, W = (4, 0, 0)
+[PASS] finite check: the register: 14 decision points across eight blocks, each used by at least one block, none adopted :: 9140: D-tomo, D-alg; 9142: D-form, D-menu, D-dyn; 9144: D-comp, D-roles, D-bond, D-dyn; 9145: D-osc; 9146: D-gauss, D-ring, D-RK; 9148: D-gauss, D-ring, D-guide; 9149: D-comp, D-roles, D-bond, D-background, D-gauss, D-ring; 9153: D-gauss, D-ring, D-guide
+TOTAL: PASS=9 FAIL=0 (18 s)
+
+----- stderr -----
+

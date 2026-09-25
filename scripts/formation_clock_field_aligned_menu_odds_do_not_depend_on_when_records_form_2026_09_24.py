@@ -40,7 +40,7 @@ import sys
 import numpy as np
 from scipy.linalg import expm
 
-AUDIT_INPUT_PATHS = ('docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'docs/DYNAMICS_CLAUSE_COVARIANT_NEAREST_NEIGHBOUR_TWO_QUBIT_GENERATORS_HEISENBERG_UNDER_POSSIBILITY_COVARIANCE_THREE_COUPLINGS_UNDER_FULL_SOLDERING_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'docs/DYNAMICS_CLAUSE_RECORDS_ACT_AS_FIELDS_A_SITE_WITH_SIX_RECORDED_NEIGHBOURS_IS_A_QUBIT_IN_THEIR_FIELD_AND_ITS_LAW_POINTS_ALONG_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md')
+AUDIT_INPUT_PATHS = ['docs/DYNAMICS_CLAUSE_COVARIANT_NEAREST_NEIGHBOUR_TWO_QUBIT_GENERATORS_HEISENBERG_UNDER_POSSIBILITY_COVARIANCE_THREE_COUPLINGS_UNDER_FULL_SOLDERING_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'docs/DYNAMICS_CLAUSE_RECORDS_ACT_AS_FIELDS_A_SITE_WITH_SIX_RECORDED_NEIGHBOURS_IS_A_QUBIT_IN_THEIR_FIELD_AND_ITS_LAW_POINTS_ALONG_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md']
 AUDIT_TIMEOUT_SEC = 600
 
 RESULTS = []
@@ -129,7 +129,10 @@ rho_t = Ut @ rho0 @ Ut.conj().T
 r_expm = np.array([np.trace(rho_t @ SIG[a]).real for a in range(3)])
 prec_dev = np.abs(r_expm - rot(hhat, w * 1.37) @ r0).max()
 cons = np.abs(rt @ hhat - r0 @ hhat).max()
-tilt = unit(hhat + 0.9 * perp)                                      # a menu tilted from the field
+# perp is perpendicular to the covariance-section axis, not hhat.
+tilt = unit(hhat + 0.9 * perp)
+assert abs(perp @ hhat - 0.423999152002544) < 1e-10
+assert abs(tilt @ hhat - 0.861) < 0.001
 RATES = {
     "constant": lambda r, p: np.ones(len(r)),
     "purity |r|^2": lambda r, p: np.sum(r * r, axis=1),
@@ -180,7 +183,7 @@ check("isolated site: the field menu's recorded odds equal (1 + r.h)/2 for every
       comm < 1e-12 and prec_dev < 1e-9 and cons < 1e-9 and dev_field < 1e-9 and spread_tilt > 0.02
       and clock_time_error < 1e-6 and tau_spread > 0.1,
       f"[H, h.sigma] = {comm:.0e}; precession vs expm {prec_dev:.0e}; r.h conserved to {cons:.0e}; field-menu odds deviate from "
-      f"(1 + r.h)/2 = {born_field:.4f} by at most {dev_field:.0e} over the four clocks; tilted menu: odds "
+      f"(1 + r.h)/2 = {born_field:.4f} by at most {dev_field:.0e} over the four clocks; tilted menu cosine {tilt @ hhat:.3f} to h, added component cosine {perp @ hhat:.3f}: odds "
       f"{', '.join(f'{P:.4f}' for P in rows_tilt)} (spread {spread_tilt:.4f}); conditional mean formation times "
       f"{', '.join(f'{t:.3f}' for t in taus)}; largest survival at T = 60 is {max(survs):.0e}")
 

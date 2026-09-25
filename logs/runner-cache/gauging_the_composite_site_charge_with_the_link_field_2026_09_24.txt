@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py
+runner_sha256: 58dd41e4bc5b7cfc2de3253e063345283756ce32a039eaf3fbb7862cc81e8af8
+input_fingerprint_sha256: 0361409f6961580daba3ee6141a87fd3338d4b39f4b329509c62e9272390a7ef
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.50
+status: ok
+----- stdout -----
+[PASS] finite check: geometry: a dressed bond spans two vertices, one link and two cubes in a 4 x 2 x 2 block, in no closed star; one role per site class :: support roles ['vertex', 'vertex', 'link', 'cube', 'cube']; bounding box 4x2x2; closed stars containing it: 0; a cube site's six neighbours at distance two are cube sites; plaquette sites stay free
+[PASS] finite check: gauge invariance: the dressed bonds and the ring commute with every Gauss operator; the bare Yao-Lee bonds do not; SU(2) breaks to U(1) :: |[G_v, H_dressed]| = 0e+00, |[G_v, ring]| = 0e+00, |[G_v, H_bare]| = 2.0; |[S^z, H]| = 0e+00, |[S^x, H_dressed]| = 1.0, |[S^x, H_bare]| = 0e+00
+[PASS] finite check: the Z2 flux of the partner qubits commutes with the dressed Hamiltonian and the ring :: |[W, H]| = 0e+00; the product of the four bond factors equals -W exactly
+[PASS] finite check: the gauge sector: fixed total charge 2, matter records determined by link records, invariant under H; spectra by Z2 flux :: gauge-sector dimension 112 of 4096; N_f = 2 in every state; 6 matter patterns with [1, 1, 1, 1, 1, 2] link patterns each; leakage of H out of the sector 0e+00; W diagonal on the sector; g = 0: lowest levels [-7.7274, -7.7274, -6.899, -6.899]; g = 1/2: [-7.8175, -7.8175, -6.8217, -6.8217]; g = 1/2 by Z2 flux W = +1: [-7.8175, -7.8175, -5.4179], W = -1: [-6.8217, -6.8217, -6.8217]
+[PASS] finite check: the odd three-dimer term dressed along its two-link path keeps gauge invariance, the charge and the Z2 flux; it is odd under record-basis conjugation, under which the bonds and ring are even :: |[G_v, odd_dressed]| = 0e+00, |[G_v, odd_bare]| = 0.7; |[S^z, odd]| = 0e+00; |[W, odd]| = 0e+00; under record-basis conjugation K the odd term flips sign (0e+00) while the bonds and ring are even (0e+00); the spin-flip time reversal of the ungauged model is broken by the dressing (|Y K H Y - H| = 4.0, bare 0e+00); leakage 0e+00; lowest levels with the odd term at kappa = 0.35: [-7.8683, -7.8683, -6.886, -6.886]
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

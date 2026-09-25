@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py
+runner_sha256: 25a0e4015da0c8e8a38e9277c73db75ea3ebf31172a20cbd189d21c96dd880e8
+input_fingerprint_sha256: 9db22ac5705f213ef67d5eed6dfda69f0f5ede2f20708954d6145cb1df8b14f7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 21.05
+status: ok
+----- stdout -----
+[PASS] finite check: supplied periodic site set: finite residue, origin-cycle and torus checks :: sites per 2x2x4 cell 8, degrees [3], induced trivalent True, flavours xyz at every site True, bipartite True, (1,1,2) translation True -> 4 sites per primitive cell, inversion about a chain-bond midpoint True, girth 10, 10-cycles through a site 10, coordination sequence [3, 6, 12, 24, 38], connected on 4x4x8 torus True
+[PASS] finite check: unoriented site/color pattern counts; directed records and partner pairing excluded :: per 4x4x8 doubled cell: 16 vertices of which 8 unrecorded network sites and 8 recorded; 48 link sites of which 12 carry flavour records, 24 join a network site to a recorded site, 12 join two recorded sites; site-set stabiliser 8 of 24 (orbit 3), pattern-with-flavours stabiliser 2 of 24 (orbit 12); the rule flavour = record axis is equivariant by construction
+[PASS] finite check: 8-qubit star: [H, S] = 0 exactly and spectrum = three-flavour free Majorana spectrum :: J=(1.0, 0.8, 0.6), kappa=0.35; max|[H,S^a]| 0.0e+00; spectrum deviation with odd-term hopping +kappa: 1.6e-14, -kappa: 1.7e-14 (the spectrum is even in kappa, so no spectrum fixes the sign: a convention); 256 levels, 16 distinct, lowest -6.035520
+[PASS] finite check: 10-loop operators commute with all bond and odd terms; term supports are small blocks :: 10 loops through a site, all commute with 1176 terms; control (one wrong Pauli) breaks commutation True; bond support box [(2, 2, 4), (2, 4, 2), (4, 2, 2)], odd-term boxes [(2, 4, 4), (2, 6, 2), (4, 2, 4), (6, 2, 2)]
+[PASS] finite check: chosen band sector: near-zero search/threshold counts; anisotropic sampled gap :: min gap 2.4e-21 at k/2pi = (0.0833, 0.5833, 1.0000); near-zero counts N=16: 576, N=48: 1460 -> threshold-count exponent 0.85; bandwidth 6.000; J=(1,1,2.5) gap 1.0000
+[PASS] finite check: kappa = 0.3: located candidate crossings have opposite discrete Berry fluxes :: 2 nodes, gaps < 1e-7; chiralities [-1, 1] (Berry flux residual 0.000); spectrum symmetric under E -> -E at sampled momenta to 8e-15; counts N=16: 200, N=48: 214 -> threshold-count exponent 0.06; nodes at k/2pi: (0.355, 0.645, 1.000); (0.645, 0.355, 1.000)
+[PASS] finite check: specified Clifford representations: algebra dimensions 256, 64, 16 on 16, 8, 4 states :: 6 b + 3 c (SU(2), six-valent): algebra dim 256 on 16 states -> 4 qubits; 6 b + 2 c (U(1)): 64 on 8 -> 3 qubits; 3 b + 3 c (trivalent Yao-Lee): 16 on 4 -> 2 qubits
+[PASS] finite check: two supplied cubic flux patterns: finite threshold counts, local nodes and Berry cubes :: zero flux counts N=16: 1084, N=48: 11164 -> threshold-count exponent 2.12; pi flux counts 1, 1 -> threshold-count exponent 0.00; 1 pi-flux nodes in the 2x2x2 zone, degeneracy [8], Berry flux [-0.0]; energy per site zero flux -1.0026, pi flux -1.1938 (ordering between these two finite quadratures only)
+TOTAL: PASS=8 FAIL=0  (runtime 20 s)
+
+----- stderr -----
+

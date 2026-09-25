@@ -1,0 +1,37 @@
+{
+ "task": "P:9176",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block122-waves",
+ "worker": "w-jonathonsmac4f50-jf38f",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9176",
+ "pr": 9176,
+ "branch": "physics-loop/admissibility-induced-law-block122-waves-need-signed-weights-20260924",
+ "git_sha": "dbfd38f3",
+ "started_utc": "20260925T032554Z",
+ "elapsed_s": 11.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_waves_need_signed_weights_nonnegative_rules_keep_an_undamped_branch_only_by_rigid_transport_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9176's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9b017381240fd7c62a1f56326519a8468413ee2aac28094d027d6a2ff0d9bbc7",
+ "stdout_tail": "PR #9176: physics-loop: admissibility induced-law block 122 - waves need signed weights: a formation rule with nonnegative weights keeps an undamped branch only by rigid transport, and the amplitude step is a signed rule\nbranch physics-loop/admissibility-induced-law-block122-waves-need-signed-weights-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_waves_need_signed_weights_nonnegative_rules_keep_an_undamped_branch_only_by_rigid_transport_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation average_taken_lossless: expected B observed B ok\n   mutation lemma_forged: expected C observed C ok\n   mutation signed_rule_forged: expected D observed D ok\n   mutation unitary_step_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf38f",
+  "at_utc": "20260925T032605Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

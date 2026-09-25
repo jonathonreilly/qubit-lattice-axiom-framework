@@ -1,0 +1,10 @@
+PR #9176: physics-loop: admissibility induced-law block 122 - waves need signed weights: a formation rule with nonnegative weights keeps an undamped branch only by rigid transport, and the amplitude step is a signed rule
+branch physics-loop/admissibility-induced-law-block122-waves-need-signed-weights-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_waves_need_signed_weights_nonnegative_rules_keep_an_undamped_branch_only_by_rigid_transport_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation average_taken_lossless: expected B observed B ok
+   mutation lemma_forged: expected C observed C ok
+   mutation signed_rule_forged: expected D observed D ok
+   mutation unitary_step_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

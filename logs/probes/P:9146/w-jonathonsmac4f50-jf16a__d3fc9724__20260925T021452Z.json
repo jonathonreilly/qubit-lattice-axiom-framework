@@ -1,0 +1,36 @@
+{
+ "task": "P:9146",
+ "type": "pr-reexecution",
+ "lane": "ring-model-rk-point-coulomb-class-and-pu",
+ "worker": "w-jonathonsmac4f50-jf16a",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9146",
+ "pr": 9146,
+ "branch": "claude/ring-model-rk-point-coulomb-class-and-pure-ring-diagnostics-20260924",
+ "git_sha": "d3fc9724",
+ "started_utc": "20260925T021452Z",
+ "elapsed_s": 37.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9146's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9bb3a70e1d91e82513097dd1ac27c8ea359589bd475cfa8f00568ca9f3c36e5c",
+ "stdout_tail": "PR #9146: feat(photon): ring model between the RK and pure-ring points, finite diagnostics\nbranch claude/ring-model-rk-point-coulomb-class-and-pure-ring-diagnostics-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py: rc=0 PASS=3 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf16a",
+  "at_utc": "20260925T021529Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

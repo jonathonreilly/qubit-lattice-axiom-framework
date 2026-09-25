@@ -1,0 +1,4 @@
+PR #9146: feat(photon): ring model between the RK and pure-ring points, finite diagnostics
+branch claude/ring-model-rk-point-coulomb-class-and-pure-ring-diagnostics-20260924 (base main)
+runners in the PR: 1
+== scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py: rc=0 PASS=3 FAIL=0

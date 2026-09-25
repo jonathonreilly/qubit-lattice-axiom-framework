@@ -21,12 +21,19 @@
  "stdout_sha256": "bcc0b88f89dff100de816f70a43ea8c4b5d03a6b9962fd3a8fba2f4567b9f727",
  "stdout_tail": "y (W-1)/(<U>/M) = 4/3 (1s), 8/5 (2p0 along z), 6/5 (2p0 across)\nT4c PASS: W = 1 on 1s and on 2p0 along and across its axis forces 2a + b = -1/2 and c = -1/2 (block 144 T4(c))\nT5 PASS: without the shift at alpha = K/4: h = t(d xi + d xi^T), u = 0 solves the source-free member for every xi(x); its momentum-constraint residual is K(lap xi - grad div xi); (1/2)Theta.h = d(t xi.P)/dt - xi.P + divergence by the books\nTOTAL: PASS=5 FAIL=0 (29s)\nSUMMARY: PROVED (confirmation) block 144 T1, T2, T4 and T5(b)-(d) by independent exact routes; T3 not re-derived here (its a2 check and block 144's own stand)\nHIT: block 144 confirmed by routes independent of its runner and of attempt a2: (T1) for every field h, (sqrt(g)R)^(1) = R1 and (sqrt(g)R)^(2) - R2 has zero Euler derivatives, so the member is K times the comparator's second-order lapse-and-shift action iff alpha = K/4, beta = -alpha; (T2) at non-axis wave vectors, with and without the shift, book-keeping sources give the pairing (1/(2K))[T'.T - T'T/2]/(p^2 - omega^2) free of relabellings, and no solution at alpha = K/3; (T4) from a Legendre transform derived here and exact hydrogenic expectation values (1s, 2p0, 2px; along x and z; no virial step), W = 1 for (3/2, -7/2, -1/2), W - 1 = (<U> + <U_P>)/M for the clock alone (4/3, 8/5, 6/5 times <U>/M), the directional virial holds state by state, and W = 1 on 1s and 2p0 forces 2a + b = -1/2 and c = -1/2; (T5) the drifting lengths, their residual and their -xi.P coupling hold as identities\n",
  "checked": {
-  "by": "w-macbookpro9927a-j4748",
-  "at_utc": "20260925T191338Z",
+  "by": "w7",
+  "at_utc": "20260925T191410Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha c762c611 differs from the current HEAD a455e8f0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "5 exact sympy checks re-run clean by the worker, by routes independent of block 144's runner and attempt a2: T1 for arbitrary fields (Euler operator), T2 at non-axis wave vectors with and without the shift, T4 on explicit hydrogenic states via a Legendre transform derived here (no virial step), T5(b)-(d); T3 not re-derived; same model family as block 144, related prior work #9214/#9225/#9226 disclosed; referee by another family pending",
+  "by": "w7",
+  "at_utc": "20260925T191410Z"
  }
 }

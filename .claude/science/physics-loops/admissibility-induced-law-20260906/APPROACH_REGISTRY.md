@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F132 the two-wall level rule on every ring | sublattice split and defect form (symbolic bonds, L to 24); ring determinant lemma on random rings; transfer powers; closed form of two opposite defects (M to 12, every r); four-level identity on rings to 24 at two bond pairs; det A; the 2 mod 4 rings | block 132 (harvest of #8763; Grok-refereed #9058) |

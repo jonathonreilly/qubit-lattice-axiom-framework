@@ -1,0 +1,36 @@
+{
+ "task": "P:9153",
+ "type": "pr-reexecution",
+ "lane": "ring-model-winding-splittings-and-imagin",
+ "worker": "w-jonathonsmac4f50-j2b6e",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9153",
+ "pr": 9153,
+ "branch": "claude/ring-model-winding-splittings-and-imaginary-time-gap-20260924",
+ "git_sha": "e2323d80",
+ "started_utc": "20260925T015708Z",
+ "elapsed_s": 239.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=2 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9153's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9db7a63944e3992df3e06024df49c964db35551fa1f9791d50ad067d8d804bdb",
+ "stdout_tail": "PR #9153: feat(photon): winding-sector splittings and relaxation of the ring model at V = 0\nbranch claude/ring-model-winding-splittings-and-imaginary-time-gap-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py: rc=0 PASS=2 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2b6e",
+  "at_utc": "20260925T020107Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "P:9140",
+ "type": "pr-reexecution",
+ "lane": "composition-law-local-tomography-reading",
+ "worker": "w-jonathonsmac4f50-j9f89",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9140",
+ "pr": 9140,
+ "branch": "claude/composition-law-local-tomography-reading-20260924",
+ "git_sha": "8180c1a8",
+ "started_utc": "20260925T014659Z",
+ "elapsed_s": 5.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9140's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "c91a1ce3551cb000657b4709a1ccb6b124ae54c019645a585309413ec69e8304",
+ "stdout_tail": "PR #9140: feat(composition): local-tomography reading of Record tests both composites\nbranch claude/composition-law-local-tomography-reading-20260924 (base main)\nrunners in the PR: 1\n== scripts/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9f89",
+  "at_utc": "20260925T014704Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -144,7 +144,7 @@ Consequences:
 
 *Statement.* Take `tan K₀ = (5/6, 18/5)` on `ℤ²` and `(5/6, 18/5, 1/2)` on `ℤ³`, and the band functions `E(q) = s₁ε(K₀/2 + q) + s₂ε(K₀/2 − q)`.
 - Every stationary point of every band pair, away from the cone points, is nondegenerate.
-- Per cell of a quarter period in each coordinate there are 4 stationary points for `(+, +)` and 2 for `(+, −)` in the plane, and 8 and 6 in space; `(−, −)` and `(−, +)` have the same points with the Hessian negated.
+- Per cell of half a period in each coordinate (a quarter of the torus in the plane, an eighth in space) there are 4 stationary points for `(+, +)` and 2 for `(+, −)` in the plane, and 8 and 6 in space; `(−, −)` and `(−, +)` have the same points with the Hessian negated.
 - At the cone points, the other record's energy has squared gradient `139761000/606502321` (plane) and `2653455542/8714332815` (space), below one.
 
 *Proof.*
@@ -293,7 +293,7 @@ No approved primitive is used. Nothing is proposed for registration.
   - A first counting argument, following the phase of the continuum, forced only bound pairs inside the continuum, not a contradiction. The argument through the perturbation determinant (T5) closes the question, given the nondegeneracy proved in T6, because transparency makes the determinant real on the continuum and hence entire.
   - A first version assumed nondegenerate stationary points at almost every wave vector. Since the books are an operator identity, one wave vector and its neighbourhood suffice, and T6 proves that case.
   - A floating-point search at `K₀ = (0.7, 1.3)` in the plane found 16, 8, 8 and 16 stationary points for the four band pairs, all nondegenerate (smallest `|det Hess|` about `0.27`). At `K₀ = (0.7, 1.3, 0.45)` in space it found 64, 48, 48 and 64, all nondegenerate (smallest about `0.29`).
-  - T6 then proved the nondegeneracy exactly at nearby wave vectors with rational half-angle data. The counts agree with the search, divided by the four (plane) and eight (space) quarter-period cells.
+  - T6 then proved the nondegeneracy exactly at nearby wave vectors with rational half-angle data. The counts agree with the search, divided by the four (plane) and eight (space) half-period cells.
 - **Independence.** Mutation census: seven mutations in families B–E (four in E), each failing in its own family, and two in family F.
 
 ## Verification

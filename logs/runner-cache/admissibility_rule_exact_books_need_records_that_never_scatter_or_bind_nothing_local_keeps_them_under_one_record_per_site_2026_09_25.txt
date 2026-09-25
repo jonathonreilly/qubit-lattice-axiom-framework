@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py
-runner_sha256: cbaac4d3e4fc89a98e54e7ef24430a49d77e1343db437894689618cf804f2f55
-input_fingerprint_sha256: 212094278a92a2b5acb9ec7d7552b77d116124d83cee15fc083c537a44793b01
+runner_sha256: 79e876e0d2910b4b0c6191ce341c9fcbe7ed1fe4a6cb1197ac18c3aff17bf6c8
+input_fingerprint_sha256: 96b7586789e136c956e12fa7337b30aca75e5f2e9cb4f1575e699a7c060b37f5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.38
+elapsed_sec: 2.70
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -17,7 +17,7 @@ PASS: C1 T2: for any translation-invariant one-body placement f(k) = f0 + f.sigm
 PASS: D1 T4: on the line (walkers sigma_z D) the collision shells are pairs of points: equal coins have E = 2 sin(K/2) cos q, shell {q0, -q0}; opposite coins have E = 2 cos(K/2) sin q, shell {q0, pi - q0}; on both g = sin K cos 2q takes one value, so a kept current puts no condition on the line's collisions (as block 137 found: the line keeps its books under one record per site)
 PASS: E1 controls: one record per site removes, at every total wave vector, the coincident coin states - one (the singlet) for antisymmetric pairs, three for symmetric pairs; the singlet overlaps every band pair, (1 - s1 s2 n1.n2)/4 != 0 at the test directions, so the removed state couples to the continuum and exclusion scatters, as block 137's lost current requires
 PASS: E2 T5 (step 1 illustrated): on the line's relative problem truncated to 7 positions with the coincident state removed and placed at lambda, the perturbation determinant det(1 + (h'' - h0)(h0 - z)^-1) equals det(h'' - z)/det(h0 - z) symbolically in z and vanishes at z = lambda: a removed state is a zero of the determinant, which transparency would force to be identically one
-PASS: E3 T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: 4 and 2 nondegenerate stationary points per quarter-period cell for the ++ and +- band pairs in the plane, 8 and 6 in space, none undecided; at the cone points the other record's energy has squared gradient 139761000/606502321 and 2653455542/8714332815, below one
+PASS: E3 T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: 4 and 2 nondegenerate stationary points per half-period cell for the ++ and +- band pairs in the plane, 8 and 6 in space, none undecided; at the cone points the other record's energy has squared gradient 139761000/606502321 and 2653455542/8714332815, below one
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)

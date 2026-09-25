@@ -556,7 +556,7 @@ def family_e3(checks: Checks) -> None:
     ok = (out["plane"][0] == 0 and out["plane"][1:3] == (4, 2) and out["space"][0] == 0 and out["space"][1:3] == (8, 6)
           and all(v[3] < 1 for v in out.values()))
     checks.check("E3", ok,
-                 "T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: %d and %d nondegenerate stationary points per quarter-period cell for the ++ and +- band pairs in the plane, %d and %d in space, none undecided; at the cone points the other record's energy has squared gradient %s and %s, below one" % (out["plane"][1], out["plane"][2], out["space"][1], out["space"][2], out["plane"][3], out["space"][3]))
+                 "T6: at tan K0 = (5/6, 18/5) on Z^2 and (5/6, 18/5, 1/2) on Z^3, the stationary points of the pair's band functions lie on the real roots of an exact resultant (degree 16 and 40), isolated exactly; at every candidate, for each band pair, rational interval arithmetic shows either a nonvanishing gradient or a nonvanishing Hessian determinant: %d and %d nondegenerate stationary points per half-period cell for the ++ and +- band pairs in the plane, %d and %d in space, none undecided; at the cone points the other record's energy has squared gradient %s and %s, below one" % (out["plane"][1], out["plane"][2], out["space"][1], out["space"][2], out["plane"][3], out["space"][3]))
 
 
 # ============================================================================================ family F

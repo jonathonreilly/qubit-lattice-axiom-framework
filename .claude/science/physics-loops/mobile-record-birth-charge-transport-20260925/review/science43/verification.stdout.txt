@@ -1,0 +1,1244 @@
+{
+  "scope": "Read-only PRE43 evidence check. No scientific source module is imported.\n\nReads every saved physical word and rechecks its charges, Gauss law, projector,\nnorm contribution and source/log bindings. An independently written sparse\ncharge-map enumerator recomputes the two full witness matrix elements, including\nopposite-sign inputs, without the main control's bitset representation.\n",
+  "source_sha256": "db0e74ea33278f26bee2c5fcbfb68e01e8aa94a28510ce5321c043b6ef34cded",
+  "all_physical_rows_checked": 18782,
+  "volumes": [
+    {
+      "side": 4,
+      "result_sha256": "2e896ec6eded7299c0b7e0102fff2805a5927101d3b704e56d8a846e7c8e7924",
+      "resolved": [
+        {
+          "initial_sign": -1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 4080,
+          "normalized_t_squared_delta_squared_coefficient": "816",
+          "dephased_initial_branch_coefficient": "816",
+          "loss_expectation_over_kappa": "1688",
+          "Q_loss_exactly_zero": true
+        },
+        {
+          "initial_sign": 1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 7920,
+          "normalized_t_squared_delta_squared_coefficient": "1584",
+          "dephased_initial_branch_coefficient": "1536",
+          "loss_expectation_over_kappa": "1712",
+          "Q_loss_exactly_zero": true
+        }
+      ],
+      "coherent": {
+        "operator": "B_edge,+ plus B_edge,-, unnormalized",
+        "input_norm_squared": 10,
+        "QH4_raw_norm_squared": 12000,
+        "normalized_t_squared_delta_squared_coefficient": "1200",
+        "cross_sign_QH4_inner_product": 0,
+        "loss_expectation_over_kappa": "1700"
+      },
+      "row_counts": {
+        "resolved_QH4": [
+          930,
+          1890
+        ],
+        "resolved_loss": [
+          270,
+          255
+        ],
+        "coherent_QH4": 2820
+      },
+      "independent_sparse_charge_witness_reconstructions": [
+        {
+          "witness_sign": -1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                3,
+                0,
+                0
+              ]
+            ],
+            "minus_locations": [
+              [
+                1,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": -4,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            }
+          ]
+        },
+        {
+          "witness_sign": 1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            "minus_locations": [
+              [
+                3,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  3,
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  3,
+                  1,
+                  0
+                ],
+                [
+                  3,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  3,
+                  1,
+                  0
+                ],
+                [
+                  3,
+                  2,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": -2,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      2,
+                      0
+                    ],
+                    [
+                      3,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      2,
+                      1
+                    ],
+                    [
+                      3,
+                      2,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      3,
+                      0,
+                      0
+                    ],
+                    [
+                      3,
+                      2,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source_and_stdout_bindings_match": true,
+      "external_elapsed_seconds": 0.8985094171948731
+    },
+    {
+      "side": 6,
+      "result_sha256": "0ba30fb5223f0148bcf86ae19058e6a9a48909997c0e1ad69c80f5d3d2f34952",
+      "resolved": [
+        {
+          "initial_sign": -1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 3296,
+          "normalized_t_squared_delta_squared_coefficient": "3296/5",
+          "dephased_initial_branch_coefficient": "3296/5",
+          "loss_expectation_over_kappa": "31236/5",
+          "Q_loss_exactly_zero": true
+        },
+        {
+          "initial_sign": 1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 8816,
+          "normalized_t_squared_delta_squared_coefficient": "8816/5",
+          "dephased_initial_branch_coefficient": "8624/5",
+          "loss_expectation_over_kappa": "31356/5",
+          "Q_loss_exactly_zero": true
+        }
+      ],
+      "coherent": {
+        "operator": "B_edge,+ plus B_edge,-, unnormalized",
+        "input_norm_squared": 10,
+        "QH4_raw_norm_squared": 12112,
+        "normalized_t_squared_delta_squared_coefficient": "6056/5",
+        "cross_sign_QH4_inner_product": 0,
+        "loss_expectation_over_kappa": "31296/5"
+      },
+      "row_counts": {
+        "resolved_QH4": [
+          752,
+          2132
+        ],
+        "resolved_loss": [
+          272,
+          257
+        ],
+        "coherent_QH4": 2884
+      },
+      "independent_sparse_charge_witness_reconstructions": [
+        {
+          "witness_sign": -1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                5,
+                0,
+                0
+              ]
+            ],
+            "minus_locations": [
+              [
+                1,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": -4,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            }
+          ]
+        },
+        {
+          "witness_sign": 1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            "minus_locations": [
+              [
+                5,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  5,
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  5,
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  5,
+                  1,
+                  0
+                ],
+                [
+                  5,
+                  2,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": -2,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      2,
+                      0
+                    ],
+                    [
+                      5,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      2,
+                      1
+                    ],
+                    [
+                      5,
+                      2,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      5,
+                      0,
+                      0
+                    ],
+                    [
+                      5,
+                      2,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source_and_stdout_bindings_match": true,
+      "external_elapsed_seconds": 1.7628805418498814
+    },
+    {
+      "side": 8,
+      "result_sha256": "adf385dc98dbf8477ff6c11b33ed1e6c5d67a73120070f554031cf85d748c21f",
+      "resolved": [
+        {
+          "initial_sign": -1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 3200,
+          "normalized_t_squared_delta_squared_coefficient": "640",
+          "dephased_initial_branch_coefficient": "640",
+          "loss_expectation_over_kappa": "75636/5",
+          "Q_loss_exactly_zero": true
+        },
+        {
+          "initial_sign": 1,
+          "input_norm_squared": 5,
+          "QH4_raw_norm_squared": 8820,
+          "normalized_t_squared_delta_squared_coefficient": "1764",
+          "dephased_initial_branch_coefficient": "8628/5",
+          "loss_expectation_over_kappa": "75756/5",
+          "Q_loss_exactly_zero": true
+        }
+      ],
+      "coherent": {
+        "operator": "B_edge,+ plus B_edge,-, unnormalized",
+        "input_norm_squared": 10,
+        "QH4_raw_norm_squared": 12020,
+        "normalized_t_squared_delta_squared_coefficient": "1202",
+        "cross_sign_QH4_inner_product": 0,
+        "loss_expectation_over_kappa": "75696/5"
+      },
+      "row_counts": {
+        "resolved_QH4": [
+          728,
+          2133
+        ],
+        "resolved_loss": [
+          272,
+          257
+        ],
+        "coherent_QH4": 2861
+      },
+      "independent_sparse_charge_witness_reconstructions": [
+        {
+          "witness_sign": -1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                7,
+                0,
+                0
+              ]
+            ],
+            "minus_locations": [
+              [
+                1,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  1,
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": -4,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      0,
+                      1,
+                      0
+                    ],
+                    [
+                      1,
+                      0,
+                      0
+                    ]
+                  ]
+                },
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      0,
+                      0
+                    ],
+                    [
+                      1,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      1,
+                      0,
+                      0
+                    ],
+                    [
+                      0,
+                      1,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            }
+          ]
+        },
+        {
+          "witness_sign": 1,
+          "final": {
+            "occupied_B": [
+              [
+                0,
+                0,
+                1
+              ],
+              [
+                0,
+                2,
+                1
+              ]
+            ],
+            "minus_locations": [
+              [
+                7,
+                1,
+                0
+              ]
+            ],
+            "vacant_A": [],
+            "electric": [
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  0,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  0,
+                  2,
+                  1
+                ],
+                -1
+              ],
+              [
+                [
+                  0,
+                  2,
+                  0
+                ],
+                [
+                  7,
+                  2,
+                  0
+                ],
+                1
+              ],
+              [
+                [
+                  7,
+                  1,
+                  0
+                ],
+                [
+                  7,
+                  0,
+                  0
+                ],
+                -1
+              ],
+              [
+                [
+                  7,
+                  1,
+                  0
+                ],
+                [
+                  7,
+                  2,
+                  0
+                ],
+                -1
+              ]
+            ]
+          },
+          "full_primitive_matrix_elements": [
+            {
+              "initial_sign": -1,
+              "matrix_element": 0,
+              "complete_matching_paths": []
+            },
+            {
+              "initial_sign": 1,
+              "matrix_element": -2,
+              "complete_matching_paths": [
+                {
+                  "initial_partner": [
+                    0,
+                    0,
+                    1
+                  ],
+                  "A_pair": [
+                    [
+                      0,
+                      2,
+                      0
+                    ],
+                    [
+                      7,
+                      1,
+                      0
+                    ]
+                  ],
+                  "outward_destinations": [
+                    [
+                      0,
+                      2,
+                      1
+                    ],
+                    [
+                      7,
+                      2,
+                      0
+                    ]
+                  ],
+                  "return_sources": [
+                    [
+                      7,
+                      0,
+                      0
+                    ],
+                    [
+                      7,
+                      2,
+                      0
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source_and_stdout_bindings_match": true,
+      "external_elapsed_seconds": 1.4866260001435876
+    }
+  ],
+  "no_author_or_PRE40_scientific_program_imported": true
+}

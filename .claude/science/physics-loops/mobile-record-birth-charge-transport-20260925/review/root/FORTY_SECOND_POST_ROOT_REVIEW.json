@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-25T08:13:41.189635+00:00",
+  "report_sha256": "25c981ebf21e21916d0cda69383652813b2f08f48c2734c251652fcb5d6329d3",
+  "seal_sha256": "97fb749f28603a6a3d49df3aaf654f02377a412f33607df19e7604a3db024fc4",
+  "full_report_and_all_new_scientific_verifier_recorder_sealer_code_read": true,
+  "full_compact_scientific_output_read": true,
+  "all_raw_rows_mechanically_checked": 12708,
+  "raw_rows_manually_read": false,
+  "PRE_members": 33,
+  "POST_members": 21,
+  "elapsed_seconds": 0.5875135830137879,
+  "exit_code": 0,
+  "observed_files_byte_stat_unchanged": 73,
+  "full_output_equal_except_timestamp": true,
+  "mathematical_repairs": [],
+  "publication_qualifications": [
+    "Require positive initial total rate for an almost-sure first event; standing non-null mark ensures this when kappa>0.",
+    "Define H4 using overlapping A pairs explicitly.",
+    "The sign involution acts on the span of individual branch ranges, not necessarily the coherent output range."
+  ],
+  "attribution": "PRE broader graph controls and additional results remain separately attributed; POST directly verifies fixed-mark anisotropy and author operator approximation.",
+  "read_limit": "One oversized combined output was clipped in repeated receipt metadata. Missing sealer/report and all compact scientific output were then read completely; full repeated inventories verified mechanically.",
+  "new_independent_derivation_or_audit": false
+}

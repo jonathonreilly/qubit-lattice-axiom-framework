@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T09:08:51.163269+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.py"
+  ],
+  "source_sha256": "a57f24e8c45af4d39c93f220d9df691b46d36101fa4c23a5cbd2b23966c3eebe",
+  "recorder_sha256": "9f2ab5f6e2510a315127a5bcabbb003433b949dded934350867f72adb7e5a1aa",
+  "elapsed_seconds": 0.02363316691480577,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "capture_mechanics.stdout.txt",
+      "sha256": "f8217f4258ed9cab0e6276481ce62c0d728fb85b7eb8ae8c4b06ae1f3504b69b",
+      "bytes": 682
+    },
+    "stderr.txt": {
+      "path": "capture_mechanics.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

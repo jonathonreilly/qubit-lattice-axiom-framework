@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-25T07:11:57.084865+00:00",
+  "scope": "Personal candidate42, no independent confirmation; sealed before root read of independent40 or41 PRE. No external source adopted as new primitive.",
+  "members": [
+    {
+      "path": "ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "bytes": 13333
+    },
+    {
+      "path": "ROOT_READ_RECEIPT.json",
+      "sha256": "89fe5d294b22a5ecdfc850e802db441e2e6e1a9f324b40328c82a7d3de15bd10",
+      "bytes": 4374
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "03b4056d4cfc5037c94297561eaac2766c28ff7bc06309caf76ae6df22b6604e",
+      "bytes": 2136
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c",
+      "bytes": 3637
+    },
+    {
+      "path": "attempt01/EXECUTION.json",
+      "sha256": "bc7354c47fcfe35ed0fc95ad6d6564bbb3eacf5bdd3127a91f173e093c25bf62",
+      "bytes": 229
+    },
+    {
+      "path": "attempt01/RESULT.json",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221
+    },
+    {
+      "path": "attempt01/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    },
+    {
+      "path": "attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "attempt01/stdout.log",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221
+    },
+    {
+      "path": "charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    }
+  ]
+}

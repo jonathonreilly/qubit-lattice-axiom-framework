@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/low_wave_remainder_control.py"
+  ],
+  "elapsed_seconds": 0.056151665979996324,
+  "exit_code": 0,
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "source_sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05",
+  "source_unchanged": true,
+  "started_utc": "2026-09-25T07:40:38.545442+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "fb941d016250c8d0df0ae560737fc0dd67c6aeae937b8c601cd6d39dbe058b73"
+}

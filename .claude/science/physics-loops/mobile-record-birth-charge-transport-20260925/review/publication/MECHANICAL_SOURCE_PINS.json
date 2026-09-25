@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-09-25T09:08:51.184627+00:00",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication/docs/audit/scripts/write_citation_graph_manifest.py",
+      "snapshot": "sources/mechanical_graph_manifest_writer.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "bytes": 2049,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 463740772,
+      "mtime_ns": 1790326460022838366,
+      "ctime_ns": 1790326460022838366,
+      "nlink": 1,
+      "role": "Read-only mechanical dependency-hash convention; source never imported/executed"
+    }
+  ]
+}

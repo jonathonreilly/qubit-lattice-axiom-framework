@@ -1,0 +1,7 @@
+Final binding checks completed without rerunning the primary or any scientific program.
+104 source origins and snapshots match their initial bytes and stable stats.
+80 previous independent43 files match their initial bytes and stable stats.
+Three new capture/comparison execution receipts and full logs match their current code.
+The complete comparison output, graph base snapshot, exact cache and fingerprint claims are bound.
+All historical files are read only; only this new subdirectory is written or locked.
+The sealing receipt is outside the seal to avoid a self-referential hash.

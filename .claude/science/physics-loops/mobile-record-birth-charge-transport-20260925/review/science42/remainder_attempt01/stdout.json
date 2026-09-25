@@ -1,0 +1,312 @@
+{
+  "cosine_error_degree": 12,
+  "cosine_truncation_degree": 10,
+  "group_count": 16,
+  "rows": [
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/32",
+        "0",
+        "0"
+      ],
+      "quadratic": "1/1536",
+      "quadratic_error_interval": [
+        "21943778545300795391/414188434035815304344371200",
+        "3134825506471542199/59169776290830757763481600"
+      ],
+      "quartic_correction": "1/18874368",
+      "rigorous_second_moment_interval": [
+        "38518854947169803043401/59169776290830757763481600",
+        "269631984630188621303809/414188434035815304344371200"
+      ],
+      "sixth_error_bound": "1/579820584960"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/32",
+        "1/32",
+        "0"
+      ],
+      "quadratic": "1/768",
+      "quadratic_error_interval": [
+        "21943778545300795391/207094217017907652172185600",
+        "3134825506471542199/29584888145415378881740800"
+      ],
+      "quartic_correction": "1/9437184",
+      "rigorous_second_moment_interval": [
+        "38518854947169803043401/29584888145415378881740800",
+        "269631984630188621303809/207094217017907652172185600"
+      ],
+      "sixth_error_bound": "1/289910292480"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/32",
+        "1/32",
+        "1/32"
+      ],
+      "quadratic": "1/512",
+      "quadratic_error_interval": [
+        "21943778545300795391/138062811345271768114790400",
+        "3134825506471542199/19723258763610252587827200"
+      ],
+      "quartic_correction": "1/6291456",
+      "rigorous_second_moment_interval": [
+        "38518854947169803043401/19723258763610252587827200",
+        "269631984630188621303809/138062811345271768114790400"
+      ],
+      "sixth_error_bound": "1/193273528320"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/32",
+        "1/16",
+        "-1/64"
+      ],
+      "quadratic": "7/2048",
+      "quadratic_error_interval": [
+        "20446219994865945101981/22620211010809326487927259136",
+        "511155499871648638737067/565505275270233162198181478400"
+      ],
+      "quartic_correction": "91/100663296",
+      "rigorous_second_moment_interval": [
+        "1932368203333933104968328533/565505275270233162198181478400",
+        "77294728133357324199180643/22620211010809326487927259136"
+      ],
+      "sixth_error_bound": "1387/12369505812480"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/8",
+        "0",
+        "0"
+      ],
+      "quadratic": "1/96",
+      "quadratic_error_interval": [
+        "334672037306111/24687554480780083200",
+        "334672037306113/24687554480780083200"
+      ],
+      "quartic_correction": "1/73728",
+      "rigorous_second_moment_interval": [
+        "256827353804153087/24687554480780083200",
+        "256827353804153089/24687554480780083200"
+      ],
+      "sixth_error_bound": "1/141557760"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/8",
+        "1/8",
+        "0"
+      ],
+      "quadratic": "1/48",
+      "quadratic_error_interval": [
+        "334672037306111/12343777240390041600",
+        "334672037306113/12343777240390041600"
+      ],
+      "quartic_correction": "1/36864",
+      "rigorous_second_moment_interval": [
+        "256827353804153087/12343777240390041600",
+        "256827353804153089/12343777240390041600"
+      ],
+      "sixth_error_bound": "1/70778880"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/8",
+        "1/8",
+        "1/8"
+      ],
+      "quadratic": "1/32",
+      "quadratic_error_interval": [
+        "334672037306111/8229184826926694400",
+        "334672037306113/8229184826926694400"
+      ],
+      "quartic_correction": "1/24576",
+      "rigorous_second_moment_interval": [
+        "256827353804153087/8229184826926694400",
+        "256827353804153089/8229184826926694400"
+      ],
+      "sixth_error_bound": "1/47185920"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/8",
+        "1/4",
+        "-1/16"
+      ],
+      "quadratic": "7/128",
+      "quadratic_error_interval": [
+        "1557023489760093457/6741348210218348052480",
+        "7785117448811654827/33706741051091740262400"
+      ],
+      "quartic_correction": "91/393216",
+      "rigorous_second_moment_interval": [
+        "1835552283782767890773/33706741051091740262400",
+        "367110456756555815663/6741348210218348052480"
+      ],
+      "sixth_error_bound": "1387/3019898880"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/2",
+        "0",
+        "0"
+      ],
+      "quadratic": "1/6",
+      "quadratic_error_interval": [
+        "5066962031/1471492915200",
+        "723851719/210213273600"
+      ],
+      "quartic_correction": "1/288",
+      "rigorous_second_moment_interval": [
+        "34311693881/210213273600",
+        "240181857169/1471492915200"
+      ],
+      "sixth_error_bound": "1/34560"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      "quadratic": "1/3",
+      "quadratic_error_interval": [
+        "5066962031/735746457600",
+        "723851719/105106636800"
+      ],
+      "quartic_correction": "1/144",
+      "rigorous_second_moment_interval": [
+        "34311693881/105106636800",
+        "240181857169/735746457600"
+      ],
+      "sixth_error_bound": "1/17280"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "quadratic": "1/2",
+      "quadratic_error_interval": [
+        "5066962031/490497638400",
+        "723851719/70071091200"
+      ],
+      "quartic_correction": "1/96",
+      "rigorous_second_moment_interval": [
+        "34311693881/70071091200",
+        "240181857169/490497638400"
+      ],
+      "sixth_error_bound": "1/11520"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1/2",
+        "1",
+        "-1/4"
+      ],
+      "quadratic": "7/8",
+      "quadratic_error_interval": [
+        "23062764782929/401815665377280",
+        "115313835102187/2009078326886400"
+      ],
+      "quartic_correction": "91/1536",
+      "rigorous_second_moment_interval": [
+        "1642629700923413/2009078326886400",
+        "328525942422191/401815665377280"
+      ],
+      "sixth_error_bound": "1387/737280"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1",
+        "0",
+        "0"
+      ],
+      "quadratic": "2/3",
+      "quadratic_error_interval": [
+        "19304867/359251200",
+        "19304869/359251200"
+      ],
+      "quartic_correction": "1/18",
+      "rigorous_second_moment_interval": [
+        "220195931/359251200",
+        "220195933/359251200"
+      ],
+      "sixth_error_bound": "1/540"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1",
+        "1",
+        "0"
+      ],
+      "quadratic": "4/3",
+      "quadratic_error_interval": [
+        "19304867/179625600",
+        "19304869/179625600"
+      ],
+      "quartic_correction": "1/9",
+      "rigorous_second_moment_interval": [
+        "220195931/179625600",
+        "220195933/179625600"
+      ],
+      "sixth_error_bound": "1/270"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1",
+        "1",
+        "1"
+      ],
+      "quadratic": "2",
+      "quadratic_error_interval": [
+        "19304867/119750400",
+        "19304869/119750400"
+      ],
+      "quartic_correction": "1/6",
+      "rigorous_second_moment_interval": [
+        "220195931/119750400",
+        "220195933/119750400"
+      ],
+      "sixth_error_bound": "1/180"
+    },
+    {
+      "all_interval_inclusions": true,
+      "k": [
+        "1",
+        "2",
+        "-1/2"
+      ],
+      "quadratic": "7/2",
+      "quadratic_error_interval": [
+        "409873632293/490497638400",
+        "81976963967/98099527680"
+      ],
+      "quartic_correction": "91/96",
+      "rigorous_second_moment_interval": [
+        "261371382913/98099527680",
+        "1306868102107/490497638400"
+      ],
+      "sixth_error_bound": "1387/11520"
+    }
+  ],
+  "status": "all rational interval assertions passed"
+}

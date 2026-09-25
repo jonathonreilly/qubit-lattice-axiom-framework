@@ -1,0 +1,4580 @@
+{
+  "coherent_vs_dephased": [
+    {
+      "charge_diagonal_equal": true,
+      "coherent_norm2": 2,
+      "coherent_purity": "1",
+      "density_difference_HS2": "1/2",
+      "field_components": 1,
+      "graph": "star",
+      "offdiagonal_sign_entries": 2,
+      "original_mark": [
+        0,
+        1
+      ],
+      "sign_dephased_purity": "1/2",
+      "support": 2
+    },
+    {
+      "charge_diagonal_equal": true,
+      "coherent_norm2": 8,
+      "coherent_purity": "1",
+      "density_difference_HS2": "1/2",
+      "field_components": 3,
+      "graph": "irregular",
+      "offdiagonal_sign_entries": 18,
+      "original_mark": [
+        0,
+        2
+      ],
+      "sign_dephased_purity": "1/2",
+      "support": 6
+    },
+    {
+      "charge_diagonal_equal": true,
+      "coherent_norm2": 16,
+      "coherent_purity": "1",
+      "density_difference_HS2": "1/2",
+      "field_components": 3,
+      "graph": "cubic_L2",
+      "offdiagonal_sign_entries": 72,
+      "original_mark": [
+        0,
+        1
+      ],
+      "sign_dephased_purity": "1/2",
+      "support": 12
+    },
+    {
+      "charge_diagonal_equal": true,
+      "coherent_norm2": 40,
+      "coherent_purity": "1",
+      "density_difference_HS2": "1/2",
+      "field_components": 3,
+      "graph": "cubic_L4",
+      "offdiagonal_sign_entries": 450,
+      "original_mark": [
+        0,
+        1
+      ],
+      "sign_dephased_purity": "1/2",
+      "support": 30
+    }
+  ],
+  "external_programs_imported": false,
+  "fourier": [
+    {
+      "A_character": [
+        "1",
+        "0"
+      ],
+      "C": "1",
+      "exact": true,
+      "mode": [
+        0,
+        0,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "0",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "0",
+          "second": "0"
+        },
+        "0": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "0",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "0",
+          "second": "0"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "0",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "0",
+          "second": "0"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        0,
+        0,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        0,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        0,
+        0,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        0,
+        1,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        1,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        0,
+        1,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        1,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        2,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        0,
+        2,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        0,
+        2,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        0,
+        2,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        0,
+        3,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        3,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        0,
+        3,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        0,
+        3,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        1,
+        0,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        1,
+        0,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        0,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        1,
+        0,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        1,
+        1,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        1,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        1,
+        1,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        1,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        2,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        1,
+        2,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        1,
+        2,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        1,
+        2,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        1,
+        3,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        3,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        1,
+        3,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        1,
+        3,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        2,
+        0,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        2,
+        0,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        0,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        2,
+        0,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        2,
+        1,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        1,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        2,
+        1,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        1,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        2,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        2,
+        2,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "1",
+        "0"
+      ],
+      "C": "-1",
+      "exact": true,
+      "mode": [
+        2,
+        2,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4",
+            "0"
+          ],
+          "center_variance": "0",
+          "global_mean": [
+            "-4",
+            "0"
+          ],
+          "global_variance": "0",
+          "second": "16"
+        },
+        "0": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "4",
+          "global_mean": [
+            "-2",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "8"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "0",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "0",
+          "second": "0"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        2,
+        2,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        2,
+        3,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        3,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        2,
+        3,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        2,
+        3,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "2/3",
+      "exact": true,
+      "mode": [
+        3,
+        0,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "0": {
+          "center_mean": [
+            "-1/3",
+            "0"
+          ],
+          "center_variance": "11/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        3,
+        0,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        0,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        3,
+        0,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        3,
+        1,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        1,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        3,
+        1,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        1,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        2,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        3,
+        2,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-2/3",
+      "exact": true,
+      "mode": [
+        3,
+        2,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-10/3",
+            "0"
+          ],
+          "center_variance": "8/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12",
+          "second": "12"
+        },
+        "0": {
+          "center_mean": [
+            "-5/3",
+            "0"
+          ],
+          "center_variance": "35/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "20/3",
+          "second": "20/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "4/3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4/3",
+          "second": "4/3"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        3,
+        2,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "1/3",
+      "exact": true,
+      "mode": [
+        3,
+        3,
+        0
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/5",
+          "second": "16/5"
+        },
+        "0": {
+          "center_mean": [
+            "-2/3",
+            "0"
+          ],
+          "center_variance": "20/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "8/3",
+          "second": "8/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        3,
+        1
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "-1/3",
+      "exact": true,
+      "mode": [
+        3,
+        3,
+        2
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-8/3",
+            "0"
+          ],
+          "center_variance": "64/45",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "128/15",
+          "second": "128/15"
+        },
+        "0": {
+          "center_mean": [
+            "-4/3",
+            "0"
+          ],
+          "center_variance": "32/9",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "16/3",
+          "second": "16/3"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "32/15",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "32/15",
+          "second": "32/15"
+        }
+      }
+    },
+    {
+      "A_character": [
+        "0",
+        "0"
+      ],
+      "C": "0",
+      "exact": true,
+      "mode": [
+        3,
+        3,
+        3
+      ],
+      "statistics": {
+        "-1": {
+          "center_mean": [
+            "-2",
+            "0"
+          ],
+          "center_variance": "8/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "28/5",
+          "second": "28/5"
+        },
+        "0": {
+          "center_mean": [
+            "-1",
+            "0"
+          ],
+          "center_variance": "3",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "4",
+          "second": "4"
+        },
+        "1": {
+          "center_mean": [
+            "0",
+            "0"
+          ],
+          "center_variance": "12/5",
+          "global_mean": [
+            "0",
+            "0"
+          ],
+          "global_variance": "12/5",
+          "second": "12/5"
+        }
+      }
+    }
+  ],
+  "graphs": [
+    {
+      "A": 1,
+      "B": 2,
+      "actual_loss_over_kappa": 4,
+      "charge_pattern_multiplicities_match": true,
+      "degrees": [
+        2
+      ],
+      "distinct_charge_patterns": 3,
+      "edges": 2,
+      "exact_Gram_entries": 6,
+      "graph": "star",
+      "input_fields": 1,
+      "invalid_all_label_coherent_norm2": 6,
+      "invalid_all_label_merge_changes_instrument": true,
+      "ordered_wedges": 2,
+      "primitive_output_checks": 4,
+      "vertices": 3
+    },
+    {
+      "A": 2,
+      "B": 3,
+      "actual_loss_over_kappa": 16,
+      "charge_pattern_multiplicities_match": true,
+      "degrees": [
+        2,
+        3
+      ],
+      "distinct_charge_patterns": 10,
+      "edges": 5,
+      "exact_Gram_entries": 135,
+      "graph": "irregular",
+      "input_fields": 3,
+      "invalid_all_label_coherent_norm2": 24,
+      "invalid_all_label_merge_changes_instrument": true,
+      "ordered_wedges": 8,
+      "primitive_output_checks": 48,
+      "vertices": 5
+    },
+    {
+      "A": 4,
+      "B": 4,
+      "actual_loss_over_kappa": 48,
+      "charge_pattern_multiplicities_match": true,
+      "degrees": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "distinct_charge_patterns": 24,
+      "edges": 12,
+      "exact_Gram_entries": 324,
+      "graph": "cubic_L2",
+      "input_fields": 3,
+      "invalid_all_label_coherent_norm2": 72,
+      "invalid_all_label_merge_changes_instrument": true,
+      "ordered_wedges": 24,
+      "primitive_output_checks": 144,
+      "vertices": 8
+    },
+    {
+      "A": 32,
+      "B": 32,
+      "actual_loss_over_kappa": 1920,
+      "charge_pattern_multiplicities_match": true,
+      "degrees": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "distinct_charge_patterns": 960,
+      "edges": 192,
+      "exact_Gram_entries": 5184,
+      "graph": "cubic_L4",
+      "input_fields": 3,
+      "invalid_all_label_coherent_norm2": 2880,
+      "invalid_all_label_merge_changes_instrument": true,
+      "ordered_wedges": 960,
+      "primitive_output_checks": 5760,
+      "vertices": 64
+    }
+  ],
+  "group_counts": {
+    "coherent_vs_dephased": 4,
+    "fourier": 64,
+    "graphs": 4,
+    "moments": 60,
+    "primitive_fields": 10,
+    "selected_mark_moments": 8
+  },
+  "method": "fresh integer/Fraction primitives",
+  "moments": [
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": -1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 4,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 0,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "point_A",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "-2",
+        "0"
+      ],
+      "second_absolute": "4",
+      "sigma": -1,
+      "test": "point_A",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 4,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "-1",
+        "0"
+      ],
+      "second_absolute": "2",
+      "sigma": 0,
+      "test": "point_A",
+      "variance_absolute": "1"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": 1,
+      "test": "point_B",
+      "variance_absolute": "1"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "1",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": -1,
+      "test": "point_B",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 4,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "1/2",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": 0,
+      "test": "point_B",
+      "variance_absolute": "3/4"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": 1,
+      "test": "real_index",
+      "variance_absolute": "1"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "3",
+        "0"
+      ],
+      "second_absolute": "9",
+      "sigma": -1,
+      "test": "real_index",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 4,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "3/2",
+        "0"
+      ],
+      "second_absolute": "5",
+      "sigma": 0,
+      "test": "real_index",
+      "variance_absolute": "11/4"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "2",
+      "sigma": 1,
+      "test": "complex_index",
+      "variance_absolute": "2"
+    },
+    {
+      "branches": 2,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "3",
+        "3"
+      ],
+      "second_absolute": "18",
+      "sigma": -1,
+      "test": "complex_index",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 4,
+      "exact": true,
+      "graph": "star",
+      "mean": [
+        "3/2",
+        "3/2"
+      ],
+      "second_absolute": "10",
+      "sigma": 0,
+      "test": "complex_index",
+      "variance_absolute": "11/2"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": -1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 16,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 0,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "point_A",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "-1/2",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": -1,
+      "test": "point_A",
+      "variance_absolute": "3/4"
+    },
+    {
+      "branches": 16,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "-1/4",
+        "0"
+      ],
+      "second_absolute": "1/2",
+      "sigma": 0,
+      "test": "point_A",
+      "variance_absolute": "7/16"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "3/4",
+      "sigma": 1,
+      "test": "point_B",
+      "variance_absolute": "3/4"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "3/4",
+        "0"
+      ],
+      "second_absolute": "3/4",
+      "sigma": -1,
+      "test": "point_B",
+      "variance_absolute": "3/16"
+    },
+    {
+      "branches": 16,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "3/8",
+        "0"
+      ],
+      "second_absolute": "3/4",
+      "sigma": 0,
+      "test": "point_B",
+      "variance_absolute": "39/64"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "7/4",
+      "sigma": 1,
+      "test": "real_index",
+      "variance_absolute": "7/4"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "17/4",
+        "0"
+      ],
+      "second_absolute": "75/4",
+      "sigma": -1,
+      "test": "real_index",
+      "variance_absolute": "11/16"
+    },
+    {
+      "branches": 16,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "17/8",
+        "0"
+      ],
+      "second_absolute": "41/4",
+      "sigma": 0,
+      "test": "real_index",
+      "variance_absolute": "367/64"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "17/4",
+      "sigma": 1,
+      "test": "complex_index",
+      "variance_absolute": "17/4"
+    },
+    {
+      "branches": 8,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "17/4",
+        "1/2"
+      ],
+      "second_absolute": "81/4",
+      "sigma": -1,
+      "test": "complex_index",
+      "variance_absolute": "31/16"
+    },
+    {
+      "branches": 16,
+      "exact": true,
+      "graph": "irregular",
+      "mean": [
+        "17/8",
+        "1/4"
+      ],
+      "second_absolute": "49/4",
+      "sigma": 0,
+      "test": "complex_index",
+      "variance_absolute": "491/64"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": -1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 48,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 0,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "point_A",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "-1/2",
+        "0"
+      ],
+      "second_absolute": "1",
+      "sigma": -1,
+      "test": "point_A",
+      "variance_absolute": "3/4"
+    },
+    {
+      "branches": 48,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "-1/4",
+        "0"
+      ],
+      "second_absolute": "1/2",
+      "sigma": 0,
+      "test": "point_A",
+      "variance_absolute": "7/16"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "1/2",
+      "sigma": 1,
+      "test": "point_B",
+      "variance_absolute": "1/2"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "1/2",
+        "0"
+      ],
+      "second_absolute": "1/2",
+      "sigma": -1,
+      "test": "point_B",
+      "variance_absolute": "1/4"
+    },
+    {
+      "branches": 48,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "1/4",
+        "0"
+      ],
+      "second_absolute": "1/2",
+      "sigma": 0,
+      "test": "point_B",
+      "variance_absolute": "7/16"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "14",
+      "sigma": 1,
+      "test": "real_index",
+      "variance_absolute": "14"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "14",
+      "sigma": -1,
+      "test": "real_index",
+      "variance_absolute": "14"
+    },
+    {
+      "branches": 48,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "14",
+      "sigma": 0,
+      "test": "real_index",
+      "variance_absolute": "14"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "11/3",
+      "sigma": 1,
+      "test": "complex_index",
+      "variance_absolute": "11/3"
+    },
+    {
+      "branches": 24,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "5/2",
+        "3/2"
+      ],
+      "second_absolute": "23",
+      "sigma": -1,
+      "test": "complex_index",
+      "variance_absolute": "29/2"
+    },
+    {
+      "branches": 48,
+      "exact": true,
+      "graph": "cubic_L2",
+      "mean": [
+        "5/4",
+        "3/4"
+      ],
+      "second_absolute": "40/3",
+      "sigma": 0,
+      "test": "complex_index",
+      "variance_absolute": "269/24"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": -1,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 1920,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 0,
+      "test": "constant",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "0",
+      "sigma": 1,
+      "test": "point_A",
+      "variance_absolute": "0"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "-1/16",
+        "0"
+      ],
+      "second_absolute": "1/8",
+      "sigma": -1,
+      "test": "point_A",
+      "variance_absolute": "31/256"
+    },
+    {
+      "branches": 1920,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "-1/32",
+        "0"
+      ],
+      "second_absolute": "1/16",
+      "sigma": 0,
+      "test": "point_A",
+      "variance_absolute": "63/1024"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "1/16",
+      "sigma": 1,
+      "test": "point_B",
+      "variance_absolute": "1/16"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "1/16",
+        "0"
+      ],
+      "second_absolute": "1/16",
+      "sigma": -1,
+      "test": "point_B",
+      "variance_absolute": "15/256"
+    },
+    {
+      "branches": 1920,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "1/32",
+        "0"
+      ],
+      "second_absolute": "1/16",
+      "sigma": 0,
+      "test": "point_B",
+      "variance_absolute": "63/1024"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "2548/5",
+      "sigma": 1,
+      "test": "real_index",
+      "variance_absolute": "2548/5"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "2912/5",
+      "sigma": -1,
+      "test": "real_index",
+      "variance_absolute": "2912/5"
+    },
+    {
+      "branches": 1920,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "546",
+      "sigma": 0,
+      "test": "real_index",
+      "variance_absolute": "546"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "0",
+        "0"
+      ],
+      "second_absolute": "91/16",
+      "sigma": 1,
+      "test": "complex_index",
+      "variance_absolute": "91/16"
+    },
+    {
+      "branches": 960,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "5/8",
+        "3/16"
+      ],
+      "second_absolute": "287/16",
+      "sigma": -1,
+      "test": "complex_index",
+      "variance_absolute": "4483/256"
+    },
+    {
+      "branches": 1920,
+      "exact": true,
+      "graph": "cubic_L4",
+      "mean": [
+        "5/16",
+        "3/32"
+      ],
+      "second_absolute": "189/16",
+      "sigma": 0,
+      "test": "complex_index",
+      "variance_absolute": "11987/1024"
+    }
+  ],
+  "primitive_fields": [
+    {
+      "actual_output_branches": 4,
+      "coherent_edges_total_norm2": 4,
+      "field": 0,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "star",
+      "input_max_abs_E": 0,
+      "resolved_minus_total_norm2": 2,
+      "resolved_plus_total_norm2": 2
+    },
+    {
+      "actual_output_branches": 16,
+      "coherent_edges_total_norm2": 16,
+      "field": 0,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "irregular",
+      "input_max_abs_E": 0,
+      "resolved_minus_total_norm2": 8,
+      "resolved_plus_total_norm2": 8
+    },
+    {
+      "actual_output_branches": 16,
+      "coherent_edges_total_norm2": 16,
+      "field": 1,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "irregular",
+      "input_max_abs_E": 1,
+      "resolved_minus_total_norm2": 8,
+      "resolved_plus_total_norm2": 8
+    },
+    {
+      "actual_output_branches": 16,
+      "coherent_edges_total_norm2": 16,
+      "field": 2,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "irregular",
+      "input_max_abs_E": 2,
+      "resolved_minus_total_norm2": 8,
+      "resolved_plus_total_norm2": 8
+    },
+    {
+      "actual_output_branches": 48,
+      "coherent_edges_total_norm2": 48,
+      "field": 0,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L2",
+      "input_max_abs_E": 0,
+      "resolved_minus_total_norm2": 24,
+      "resolved_plus_total_norm2": 24
+    },
+    {
+      "actual_output_branches": 48,
+      "coherent_edges_total_norm2": 48,
+      "field": 1,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L2",
+      "input_max_abs_E": 2,
+      "resolved_minus_total_norm2": 24,
+      "resolved_plus_total_norm2": 24
+    },
+    {
+      "actual_output_branches": 48,
+      "coherent_edges_total_norm2": 48,
+      "field": 2,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L2",
+      "input_max_abs_E": 3,
+      "resolved_minus_total_norm2": 24,
+      "resolved_plus_total_norm2": 24
+    },
+    {
+      "actual_output_branches": 1920,
+      "coherent_edges_total_norm2": 1920,
+      "field": 0,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L4",
+      "input_max_abs_E": 0,
+      "resolved_minus_total_norm2": 960,
+      "resolved_plus_total_norm2": 960
+    },
+    {
+      "actual_output_branches": 1920,
+      "coherent_edges_total_norm2": 1920,
+      "field": 1,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L4",
+      "input_max_abs_E": 2,
+      "resolved_minus_total_norm2": 960,
+      "resolved_plus_total_norm2": 960
+    },
+    {
+      "actual_output_branches": 1920,
+      "coherent_edges_total_norm2": 1920,
+      "field": 2,
+      "gauss_and_regional_charge_tests": true,
+      "graph": "cubic_L4",
+      "input_max_abs_E": 3,
+      "resolved_minus_total_norm2": 960,
+      "resolved_plus_total_norm2": 960
+    }
+  ],
+  "selected_mark_moments": [
+    {
+      "exact_selected_mark_moment_comparisons": 6,
+      "graph": "star",
+      "selected_edges": 2,
+      "test": "real_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 6,
+      "graph": "star",
+      "selected_edges": 2,
+      "test": "complex_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 15,
+      "graph": "irregular",
+      "selected_edges": 5,
+      "test": "real_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 15,
+      "graph": "irregular",
+      "selected_edges": 5,
+      "test": "complex_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 36,
+      "graph": "cubic_L2",
+      "selected_edges": 12,
+      "test": "real_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 36,
+      "graph": "cubic_L2",
+      "selected_edges": 12,
+      "test": "complex_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 576,
+      "graph": "cubic_L4",
+      "selected_edges": 192,
+      "test": "real_index"
+    },
+    {
+      "exact_selected_mark_moment_comparisons": 576,
+      "graph": "cubic_L4",
+      "selected_edges": 192,
+      "test": "complex_index"
+    }
+  ],
+  "status": "all exact assertions passed"
+}

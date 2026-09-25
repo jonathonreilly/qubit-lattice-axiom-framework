@@ -1,0 +1,7 @@
+{
+  "scope": "Editorial inline-math escaping only; no scientific code or sealed PRE change",
+  "before_sha256": "9348fc6543d72e7cfbb680f0d252b9d0382bfdef7034e9b6cc243064c78b2981",
+  "after_sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690",
+  "inline_math_spans": 106,
+  "preserved_draft": "post_history/POST_before_math_typesetting.md"
+}

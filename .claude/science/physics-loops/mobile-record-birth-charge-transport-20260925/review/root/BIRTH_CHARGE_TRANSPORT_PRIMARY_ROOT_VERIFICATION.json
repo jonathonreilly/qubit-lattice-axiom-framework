@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-25T09:00:24.561294+00:00",
+  "source_proofs_reused_at_verified_identity": true,
+  "complete_new_frontmatter_front_footer_wrapper_and_presentation_changes_read": true,
+  "exact_embedded_proofs_after_listed_qualifications": true,
+  "comparisons": [
+    {
+      "label": "charge",
+      "all_non_timing_leaves_exact": 186008,
+      "old_elapsed_seconds": 3.940266374964267,
+      "new_elapsed_seconds": 3.5472362500149757
+    },
+    {
+      "label": "transport",
+      "all_non_timing_leaves_exact": 17758,
+      "old_elapsed_seconds": 0.08149287500418723,
+      "new_elapsed_seconds": 0.06772220903076231
+    }
+  ],
+  "wrapper_runtime_artifact_execution_cache_identity_passed": true,
+  "cache_status": "fresh",
+  "old_graph_nodes_unchanged": 6667,
+  "added_nodes": 1,
+  "added_edges": 3,
+  "no_finite_time_propagator_or_experimental_fit": true,
+  "limitations": "Static charge result applies at actual first event; transport coefficients require supplied immediately pre-mark zero electric field. No identification of the latter with the waiting field. No natural-time lifetime or physical observation.",
+  "failed_bookkeeping_attempts": [
+    "Unnecessary wrapper newline correction stopped at assertion; source already correct and unchanged.",
+    "Manifest writer invoked before graph build completed; failed without output manifest modification.",
+    "Initial runner-cache path lookup used docs/audit/scripts instead of scripts; read-only lookup failure."
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "author42_exposure": false,
+  "counts": {
+    "exact_Gram_entries": 5649,
+    "group_rows": 166,
+    "primitive_outputs": 5956,
+    "selected_mark_moments": 1266
+  },
+  "executions": [
+    {
+      "directory": "primitive_attempt01",
+      "elapsed_seconds": 4.673731832997873,
+      "empty_stderr": true,
+      "exit_code": 0,
+      "source_sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9"
+    },
+    {
+      "directory": "remainder_attempt01",
+      "elapsed_seconds": 0.056151665979996324,
+      "empty_stderr": true,
+      "exit_code": 0,
+      "source_sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05"
+    }
+  ],
+  "members_verified": 27,
+  "mode": "read only; no scientific execution or imports",
+  "observations": [
+    {
+      "bytes": 48833,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/CONTROL_READOUT.txt",
+      "sha256": "7fac4ba348de72f1ccb3a168cdcbeacbcbdb801d2fae834a26e047397730a8e1"
+    },
+    {
+      "bytes": 2746,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/FAILURES_AND_LIMITS.md",
+      "sha256": "0d186e7559ee52558d55cf143a000e3b0d6f86127039e874ff3f41e80093235e"
+    },
+    {
+      "bytes": 28946,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE.md",
+      "sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81"
+    },
+    {
+      "bytes": 28242,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE_DRAFT01_BEFORE_PAIR_SCOPE_REPAIR.md",
+      "sha256": "df96886c8de24de6dad0dd6a26196b4c838cfee61b4b05698fd8aa5c6e6bceb8"
+    },
+    {
+      "bytes": 2077,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE_PAIR_SCOPE_REPAIR.diff",
+      "sha256": "329de608bc7427f5014ccc7d02b16c61e179a29fbf44f6bd59a93f43c2aebf9d"
+    },
+    {
+      "bytes": 3758,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/SOURCE_PINS.json",
+      "sha256": "0fd02b611e8dad6c386c0639913f01b9686ea76198e711f052d6fef867e380c8"
+    },
+    {
+      "bytes": 3693,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/SOURCE_PINS_INITIAL.json",
+      "sha256": "8377d93aaea2f87b57ee64e0a298b993c80bb79e785a85aa546c9eac408ad06f"
+    },
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 1923,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/low_wave_remainder_control.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05"
+    },
+    {
+      "bytes": 1334,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/prepare_evidence.py",
+      "sha256": "da7137dff7c6bacdf88a903e8070a03017d67107dfaa0e406714507d4761b651"
+    },
+    {
+      "bytes": 678,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/EXECUTION.json",
+      "sha256": "0056f83bf4fd995c04876ff3d8029fc821b7f192eb2b0bd22cd5bbff8958977c"
+    },
+    {
+      "bytes": 16589,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/source.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 87932,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/stdout.json",
+      "sha256": "04b1ed1bc0640e416e1b287807be905a78494a668a45066d1264fecf5c6b537f"
+    },
+    {
+      "bytes": 16589,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_birth_charge_control.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9"
+    },
+    {
+      "bytes": 1516,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/record_control_attempt.py",
+      "sha256": "3af26872e5374cedc8c95424fd01cc4329ebfbc46c5ce4d5a2b39d4119ed1d3c"
+    },
+    {
+      "bytes": 1786,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/record_readonly_verification.py",
+      "sha256": "987ce323e76047e78734bf63b51e252ba28d8473a415a1c4d346dc78e2cda01f"
+    },
+    {
+      "bytes": 677,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/EXECUTION.json",
+      "sha256": "fcfd924b6c8346ac4419decb22cbfdae4e9fe0318f5722ff64da4d400b0b4d1b"
+    },
+    {
+      "bytes": 1923,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/source.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05"
+    },
+    {
+      "bytes": 0,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8157,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/stdout.json",
+      "sha256": "fb941d016250c8d0df0ae560737fc0dd67c6aeae937b8c601cd6d39dbe058b73"
+    },
+    {
+      "bytes": 16764,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 8199,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/verify_readonly.py",
+      "sha256": "b815a798bedfc6027b3b0adea04f306c090c26f430931cacc1d267be45d1b040"
+    },
+    {
+      "bytes": 10953,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 14902,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 16764,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "origins_verified": 6,
+  "prior_premise_transcription_repair_preserved": true,
+  "status": "all fixed evidence and arithmetic checks passed",
+  "verified_utc": "2026-09-25T07:55:25.434422+00:00"
+}

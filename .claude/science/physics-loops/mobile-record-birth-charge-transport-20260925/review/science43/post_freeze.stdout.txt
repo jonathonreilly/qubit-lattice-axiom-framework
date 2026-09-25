@@ -1,0 +1,272 @@
+{
+  "at_utc": "2026-09-25T08:28:19.088942+00:00",
+  "phase": "Released-source POST43",
+  "author_seal_sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+  "author_members": 11,
+  "author_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/AUTHOR_SEAL.json",
+      "frozen_path": "post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+      "bytes": 2211,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/AUTHOR_SEAL.json",
+        "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+        "bytes": 2211,
+        "dev": 16777231,
+        "ino": 461813047,
+        "mode": 33060,
+        "mtime_ns": 1790322339042039900,
+        "ctime_ns": 1790322339042158024,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "frozen_path": "post_sources/author/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "bytes": 15036,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+        "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+        "bytes": 15036,
+        "dev": 16777231,
+        "ino": 461812736,
+        "mode": 33060,
+        "mtime_ns": 1790322249540767491,
+        "ctime_ns": 1790322339042169858,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ROOT_READ_RECEIPT.json",
+      "frozen_path": "post_sources/author/ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+      "bytes": 1235,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ROOT_READ_RECEIPT.json",
+        "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+        "bytes": 1235,
+        "dev": 16777231,
+        "ino": 461813046,
+        "mode": 33060,
+        "mtime_ns": 1790322339040792071,
+        "ctime_ns": 1790322339042144066,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/SOURCE_PINS.json",
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+      "bytes": 3152,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/SOURCE_PINS.json",
+        "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+        "bytes": 3152,
+        "dev": 16777231,
+        "ino": 461813045,
+        "mode": 33060,
+        "mtime_ns": 1790322339040293073,
+        "ctime_ns": 1790322339042100483,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/WORKING_DERIVATION.md",
+      "frozen_path": "post_sources/author/WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "bytes": 3923,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/WORKING_DERIVATION.md",
+        "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+        "bytes": 3923,
+        "dev": 16777231,
+        "ino": 461630566,
+        "mode": 33060,
+        "mtime_ns": 1790321401390376793,
+        "ctime_ns": 1790322339042115441,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/EXECUTION.json",
+      "frozen_path": "post_sources/author/attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+      "bytes": 223,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/EXECUTION.json",
+        "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+        "bytes": 223,
+        "dev": 16777231,
+        "ino": 461630972,
+        "mode": 33060,
+        "mtime_ns": 1790321673289304611,
+        "ctime_ns": 1790322339042276024,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/RESULT.json",
+      "frozen_path": "post_sources/author/attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/RESULT.json",
+        "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+        "bytes": 368706,
+        "dev": 16777231,
+        "ino": 461630973,
+        "mode": 33060,
+        "mtime_ns": 1790321673290676981,
+        "ctime_ns": 1790322339042247441,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/cluster_escape_controls.py",
+      "frozen_path": "post_sources/author/attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/cluster_escape_controls.py",
+        "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+        "bytes": 6164,
+        "dev": 16777231,
+        "ino": 461630971,
+        "mode": 33060,
+        "mtime_ns": 1790321673289092070,
+        "ctime_ns": 1790322339042289982,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stderr.log",
+      "frozen_path": "post_sources/author/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "dev": 16777231,
+        "ino": 461630970,
+        "mode": 33060,
+        "mtime_ns": 1790321673288856196,
+        "ctime_ns": 1790322339042229899,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stdout.log",
+      "frozen_path": "post_sources/author/attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stdout.log",
+        "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+        "bytes": 368706,
+        "dev": 16777231,
+        "ino": 461630969,
+        "mode": 33060,
+        "mtime_ns": 1790321673288148782,
+        "ctime_ns": 1790322339042262482,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/birth_geometry.py",
+      "frozen_path": "post_sources/author/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/birth_geometry.py",
+        "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+        "bytes": 7604,
+        "dev": 16777231,
+        "ino": 461630963,
+        "mode": 33060,
+        "mtime_ns": 1790321673012449759,
+        "ctime_ns": 1790322339042130274,
+        "nlink": 1
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/cluster_escape_controls.py",
+      "frozen_path": "post_sources/author/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Released author evidence, not independent execution",
+      "observed_origin": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/cluster_escape_controls.py",
+        "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+        "bytes": 6164,
+        "dev": 16777231,
+        "ino": 461630964,
+        "mode": 33060,
+        "mtime_ns": 1790321673048706672,
+        "ctime_ns": 1790322339042182608,
+        "nlink": 1
+      }
+    }
+  ],
+  "reused_unchanged_parent_and_procedure_pins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "frozen_path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "frozen_path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "frozen_path": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "frozen_path": "sources/AGENTS.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "frozen_path": "sources/SCIENCE_WORKFLOW.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "git:origin/ai/execution:AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "frozen_path": "sources/AGENTS_execution.md",
+      "exact_current_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "frozen_path": "sources/physics-claim-reviewer_SKILL.md",
+      "exact_current_bytes": true
+    }
+  ],
+  "prior_pre_seal_sha256": "b329a26433813d8c39038c47d5ff37b3d488c851edbc2c3e296b0359da1ef823",
+  "forbidden_reference_origins_not_followed": true,
+  "author_programs_imported_or_executed": false,
+  "old_sealed_writers_executed": false
+}

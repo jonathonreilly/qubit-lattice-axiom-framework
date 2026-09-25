@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 143 (2026-09-25)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "blocks 137 and 141 (open): whether any local interaction or placement restores the books under one record per site"
+source_of_blocker_text: blocks 137 and 141 (open); probes refill n
+reachability_to_target: advances
+artifact_role: no_go
+next_trace_action: "assumption (A); long-wave books for interacting records"
+```

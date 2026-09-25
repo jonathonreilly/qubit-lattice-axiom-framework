@@ -1,0 +1,7 @@
+# Block 143 — control and findings (2026-09-25)
+
+1. **Provenance.** The supervisor's own derivation (Claude Opus 5.5). The exact inputs are checked by its own runner; the scattering steps are standard theorems named as imports. No other model family has refereed it.
+2. **A correction during the work.** The first shell check compared unsimplified trigonometric expressions with zero, which is not a proof. The runner uses Pythagorean angles, so nonvanishing is a comparison of rationals.
+3. **A second correction.** A first counting argument, following the phase of the continuum, gave only bound pairs inside the continuum, not a contradiction. The perturbation determinant closes the question: transparency makes it real on the continuum, hence (under assumption (A)) entire and identically one, while a removed state is one of its zeros.
+4. **Assumption (A)** (nondegenerate stationary points for almost every K) is named, not checked.
+5. **For the owner.** Exact books hold only for records that never scatter and never bind. One record per site makes records scatter, and no local rule can make that invisible. The fork's third option (a placement or push rule) is closed. What remains is books exact only for free records, or books at long wavelength.

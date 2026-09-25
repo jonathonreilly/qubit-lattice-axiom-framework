@@ -1,6 +1,6 @@
 {
  "edge_count": 14762,
- "node_count": 6688,
+ "node_count": 6689,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -833,6 +833,10 @@
   "admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_the_relabellings_coupling_shows_them_different_lengths_bounded_theorem_note_2026-09-21": {
    "deps_hash": "2e36a66177dc",
    "out_degree": 6
+  },
+  "admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_exact_uniqueness_region_one_site_contraction_coupling_bounded_theorem_note_2026-09-06": {
    "deps_hash": "1b3132f0c69b",

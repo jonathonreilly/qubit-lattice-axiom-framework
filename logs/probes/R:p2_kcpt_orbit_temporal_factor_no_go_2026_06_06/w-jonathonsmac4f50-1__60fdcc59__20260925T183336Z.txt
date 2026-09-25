@@ -1,0 +1,43 @@
+--- Section S: structural slot (spatial/count-preserving vs temporal/count-doubling) ---
+PASS: native spatial BZ corner count = 2^3 = 8
+PASS: P (inversion) maps the 8 corners ONTO the 8 corners (count preserved)
+PASS: C (sublattice parity) maps the 8 corners ONTO the 8 corners (count preserved)
+PASS: P, C are involutions on the corner set (P^2=C^2=id)
+PASS: K/CPT operation is a PERMUTATION of the 8 spatial corners (cardinality unchanged)
+PASS: adding the temporal corner k4 in {0,pi} gives 2^4 = 16 corners
+PASS: the temporal factor DOUBLES the count: 16 = 8 x 2
+PASS: temporal doubling is a NEW Z2 factor (Cartesian product), not a permutation of the 8
+--- Section L: antiunitary (K/CPT) vs unitary (temporal corner) ---
+PASS: Theta_H is an involution (Theta_H^2 = id), P real orthogonal
+PASS: Theta_H is ANTILINEAR: Theta_H(i v) = -i Theta_H(v)
+PASS: S (temporal corner exchange) is unitary (S^dag S = I) and an involution
+PASS: S is LINEAR: S(i w) = i S(w)
+PASS: antilinear involution (K/CPT) != linear involution (temporal corner) -> distinct Z2
+--- Section C: finite-additivity gives x1 for the realized orbit, not x2 ---
+PASS: readout of the realized orbit as ONE record gives multiplicity 1
+PASS: splitting the orbit into two disjoint records gives multiplicity 2
+PASS: the x2 is NOT free: it requires the finer 2-record partition (= occupancy/weighting)
+PASS: A3 disclaims the occupancy/weighting rule the x2 requires (axiom text)
+--- Section K: real-time (Keldysh) doubling cancels in |det| (Z=1) ---
+PASS: Keldysh contour: |det(fwd) * det(bwd)| = |det * det^{-1}| = 1 (robust over 200 ops)
+PASS: thermofield generator H(x)I - I(x)H~ has a zero mode (thermal vacuum), Tr H_tf = 0
+--- Section E: the Euclidean temporal product DOES supply the factor (not foreclosed) ---
+PASS: Euclidean temporal product |det|^{L_t}: L_t=2 doubles the exponent vs L_t=1
+PASS: Euclidean temporal product changes the magnitude (|det| != 1 generically) -- unlike Keldysh=1
+PASS: Euclidean exponent 8 x L_t : L_t=2 gives the 16 (temporal product, the open P2 route)
+--- Section G: the generation K/CPT '2' is the Frobenius-Schur count, not a temporal corner ---
+PASS: complex conjugation fixes chi_0 (trivial, real)
+PASS: complex conjugation SWAPS chi_1 <-> chi_2 (faithful pair)
+PASS: the generation K/CPT count is 2 = #{K-orbits of C3 characters} = R(+)C (Frobenius-Schur)
+PASS: this '2' lives on the GENERATION (3-character) factor, NOT on a spacetime temporal corner
+--- N5 execution certificate: what this runner resolves ---
+per_element: resolved on the explicitly written constants only. The spatial involution is laid down as a literal 4 x 4 real permutation matrix and the temporal exchange as the literal 2 x 2 swap, both checked entrywise against their squares and against the identity; and the three C3 characters 1, omega, omega^2 are compared one at a time under conjugation. The random operators of the Keldysh and Euclidean sections are by contrast never inspected entry by entry - they enter only through a determinant.
+per_site: checked and not executed. Despite the Z^3 framing, this runner never leaves momentum space: the 8 objects it enumerates are Brillouin-zone corners with each coordinate in {0, pi}, not lattice points, and the inversion and sublattice-parity maps act on those momenta. No real-space site, no field value at a site and no neighbour relation is constructed anywhere in the file.
+per_mode: resolved, and the entire no-go is a mode-count statement. The corners are the doubler modes: 2^3 = 8 spatial ones are enumerated explicitly, the Matsubara corner k4 in {0, pi} is adjoined as a Cartesian factor to give 2^4 = 16, and the decisive structural claim is exactly that 16 = 8 x 2 arises by adjoining a coordinate rather than by permuting the existing eight. The thermofield generator is additionally diagonalized and its zero mode located, which is the one place a spectrum is computed rather than counted.
+per_block: resolved as orbits and multiplicities, with no within-block amplitude evaluated. Two block structures are exercised: the K-orbits of the C3 characters, which split into one fixed real character and one conjugate pair, giving the Frobenius-Schur count 2 on the generation factor; and the record partition, where the realized orbit read as a single record gives multiplicity 1 against the finer two-record partition's multiplicity 2. Both are counts of blocks, not readouts inside them.
+lattice_wide: checked, and resolved only as an exponent arithmetic, with the missing global object being this note's own declared boundary. The whole-lattice claim is the exponent 8 x L_t, and the runner exercises it at L_t = 1 and 2 on a random 4 x 4 stand-in rather than on any actual lattice determinant; no volume, no sequence and no continuum limit is taken. The note is explicit that the Euclidean route is not foreclosed and that the Wick rotation P2 remains the open primitive, so the global derivation is absent by the note's own statement.
+  scope: three checks are algebraic or literal identities dressed as tests. det(D) det(D^-1) = 1 holds for every invertible D, so sampling it 200 times confirms numerical linear algebra rather than the Keldysh cancellation; the Euclidean scaling check asks whether |det|^2 / |det| equals |det|, which is automatic; and the exponent check evaluates the constant expression 8 * 2 == 16.
+  scope: one check asserts a hand-encoded Python constant. The claim that the record axiom disclaims the occupancy and weighting rule is carried by a variable set to True beside a comment quoting the axiom text; no file is read and no string is matched, so that leg is a transcription rather than a verification.
+  scope: the seeded stream (seed 20260606) supplies the antilinearity vectors and the 200-sample Keldysh and Euclidean operator batches. Two back-to-back runs are byte-identical, and no sampled quantity is quoted above. Note that the leg asserting the Euclidean magnitude differs from 1 is a property of the draw - it records that no sampled determinant landed within 1e-6 of unity - and not a theorem.
+
+TOTAL: PASS=26 FAIL=0

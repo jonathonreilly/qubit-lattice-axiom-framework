@@ -1,0 +1,35 @@
+{
+ "task": "R:p2_euclidean_vs_lorentzian_fork_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "p2",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/p2_euclidean_vs_lorentzian_fork_2026_06_05.py",
+ "seed": 61215,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183335Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a7af2856954f1b03ae0cc7659c97774473f060b2639011d5bf58367079fda64d",
+ "stdout_tail": "gered taste 2^(d/2): d=2->2, d=6->8 (integers, even d)\nPASS: integer taste count (hence the 16/256) REQUIRES even d -> P2: Z^3 -> Z^4\nPASS: hierarchy 16 = 2^(4/2) taste x 4 modes = 16 (Euclidean Z^4)\nPASS: genuine d=3 analog 2^(3/2)*4 = 11.3 (NOT 16): no native integer 16\nPASS: Yukawa 256 = (dim_C M_2)^4 = 4^4 (tensor count, d=4)\nPASS: gamma_5 exists in d=3+1 (d_s + d_t = 4, even)\nPASS: gamma_5 is a Z_2 grading (involution, trace 0)\nPASS: a 4th lattice corner DOUBLES BZ corners 2^3=8 -> 2^4=16 (a momentum coordinate)\nPASS: chiral 2-fold supplies a factor 2 (two chiral blocks), NOT the taste factor 4 -> cannot manufacture the 16\nPASS: native d=3+1 Dirac: H^2 = (k^2+m^2) I (gapped, spectral; NO taste-16)\n  v_pred = 248.120 GeV   v_obs = 246.220 GeV   rel = 0.772%   1/alpha_LM = 11.02\nPASS: Euclidean branch reproduces v via alpha_LM^16 to <1% (labelled comparison)\nPASS: the matching exponent is exactly 16 = Euclidean Z^4 taste x modes\nPASS: discriminator: 16 = 8 (spatial Z^3) x 2 (Euclidean temporal corner k_4 in {0,pi})\nPASS: native continuous emergent time has NO temporal corner -> count stays 8 (not 16)\n  v_native (alpha_LM^8) = 5.413e+10 GeV  -> overshoots EW scale by ~8.3 decades\nPASS: native d=3 magnitude (alpha_LM^8) overshoots the EW scale by many decades\nPASS: FORK: Euclidean branch HAS the integer 16 (taste); native d=3+1 spectrum does NOT\nPASS: RESOLVED -> DIFFERS: the v-match (exponent 16) is Euclidean-regulator-specific, NOT native to d=3+1\n\nSUMMARY: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183336Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

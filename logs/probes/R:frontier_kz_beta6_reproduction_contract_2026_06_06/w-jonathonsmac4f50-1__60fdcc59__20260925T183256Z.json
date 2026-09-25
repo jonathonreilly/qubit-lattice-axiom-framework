@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_kz_beta6_reproduction_contract_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_kz_beta6_reproduction_contract_2026_06_06.py",
+ "seed": 61176,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183256Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=21 FAIL=0",
+   "PASS=21, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65d59c13dded619319f95f9dd6ab38deaf85499161342f0e74cfe8ff12e7a94e",
+ "stdout_tail": "d W_lift shortcut fails the reproduction contract\n[PASS] support-only SDP fails without beta-coupled loop equations\n[PASS] primary source-data route is the only non-SDP acceptable route\n[PASS] repo-owned SDP route requires beta-coupled equations plus solver metadata\n[PASS] accepted templates are route contracts, not actual beta=6 numeric brackets\n\nD. boundary\n[PASS] this block prunes support-only beta=6 reproduction attempts\n[PASS] this block does not certify a new finite SU(3) beta=6 bracket\n[PASS] next positive K-Z route must supply source data or loop equations\n\nSCORECARD: PASS=21 FAIL=0\nper_element: checked \u2014 exact coordinate lambda=Nc^2/beta=1.5 and PSD scalar/matrix conditions were evaluated; FAIL=0.\nper_site: checked \u2014 no local plaquette/site value is invented: the old W_lift shortcut is rejected=True.\nper_mode: checked \u2014 source-data and beta-coupled SDP reproduction modes were evaluated independently; accepted=True,True.\nper_block: checked \u2014 four reproduction candidate blocks were classified, including support-only SDP accepted=False.\nlattice_wide: checked and not executed \u2014 a finite SU3 beta=6 ensemble requires source data or beta-coupled loop equations absent from this contract-only claim; executed contract PASS=21, FAIL=0.\nVERDICT: The K-Z beta=6 gate cannot be closed by the old W_lift shortcut or by support-only SDP constraints. A future reproduction must target lambda=1.5 and provide primary source data or beta-coupled loop equations with solver/cutoff evidence.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

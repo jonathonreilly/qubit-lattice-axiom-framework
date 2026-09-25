@@ -1,0 +1,35 @@
+{
+ "task": "R:terminal_center_site_record_diagonal_commit_minimal_carrier_boundary_2026_08_20",
+ "type": "runner-reexecution",
+ "lane": "terminal",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/terminal_center_site_record_diagonal_commit_minimal_carrier_boundary_2026_08_20.py",
+ "seed": 61196,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183316Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e3e075a7822c7cfb1fafe41be0daa169505762d45dfee444883c0218023b494a",
+ "stdout_tail": "-ledger] the total absorbing channel has Kraus rank four while its blank formation corner has rank three; two pure-environment qubits suffice and no export/no-return transport is inferred\nPASS [integrated-rank-four-factor-isometry] the program-controlled freshness-flag channel has total rank four and active-formation rank three, with seven qubit tensor factors; no spatial embedding or edge compiler is inferred\nPASS [stipulated-candidate-diagonal-table] conditional on formation at the declared target, the stipulated joint table has support only on Q_j paired with Record content kappa(j); it proves label agreement but is not a formation kernel\nPASS [same-marginal-off-diagonal-hostile] an exact epsilon-cycle coupling has both correct marginals and positive mismatch mass, proving that marginal equality alone does not force pathwise correlation\nPASS [admissibility-marginal-free-law-control] a supplied normalized uniform site menu gives every kappa(j) positive support but differs from both exact instrument centers; code legality does not supply the trace/Admissibility equality\nPASS [terminal-label-swap-hostile] a label-mixing future unitary violates declared terminal-atom permanence/subharmonicity and is outside the isolated absorbing commit law\nSCOPE: exact supplied finite CPTP/dual/rank/carrier/coupling checks. Separate calibration, actual marginal and global trajectory/resource obligations remain open; no independent or exhaustive physical interface count.\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183321Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

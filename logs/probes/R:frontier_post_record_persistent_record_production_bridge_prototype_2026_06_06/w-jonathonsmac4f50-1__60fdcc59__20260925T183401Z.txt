@@ -1,0 +1,69 @@
+
+------------------------------------------------------------------------------
+Source theorem and semantic scope checks
+------------------------------------------------------------------------------
+PASS source note exists
+PASS source contains theorem anchor: **Claim type:** positive_theorem
+PASS source contains theorem anchor: **Dependencies:** none.
+PASS source contains theorem anchor: Q(y) = sum_{x in X : F(x)=y} P(x).
+PASS source contains theorem anchor: sum_{x in X} P(x) h(F(x)).
+PASS source contains theorem anchor: sum_{x,x' in X} P(x) P(x') K(F(x),F(x')).
+PASS source contains theorem anchor: The map must be total on `X`; its image may be a proper subset of `Y`.
+PASS source contains theorem anchor: The legacy path name is an identifier
+PASS source contains theorem anchor: repository metadata outside the theorem arguments
+PASS source excludes stale or physical overclaim: persistent_record_production_overlap` rows
+PASS source excludes stale or physical overclaim: production row map has exactly three
+PASS source excludes stale or physical overclaim: frontier_post_record_audit_evidence_ladder_row_bucketing_2026_06_06\.py
+PASS source excludes stale or physical overclaim: frontier_post_record_production_dynamics_needed_row_map_2026_06_06\.py
+PASS source excludes stale or physical overclaim: docs/audit/data/
+PASS source excludes stale or physical overclaim: \baudit_status\s*:
+PASS source excludes stale or physical overclaim: \beffective_status\s*:
+PASS source excludes stale or physical overclaim: \bRecord (?:derives|supplies|selects|fixes)\b
+PASS source excludes stale or physical overclaim: \bphysical (?:production|record-writing) (?:law|kernel) (?:is|follows)\b
+PASS source excludes stale or physical overclaim: PERSISTENT_RECORD_PRODUCTION_OVERLAP_ROWS
+PASS source excludes stale or physical overclaim: SUPPLIED_RECORD_WRITING_BRIDGE_PROTOTYPE
+
+------------------------------------------------------------------------------
+Exact finite pushforward
+------------------------------------------------------------------------------
+PASS colliding fibers sum exactly :: (('red', Fraction(5, 6)), ('blue', Fraction(1, 6)), ('unused', Fraction(0, 1)))
+PASS pushforward is nonnegative
+PASS pushforward is normalized exactly
+PASS unused target is retained with zero mass
+PASS pushforward verifies by target-label semantics
+
+------------------------------------------------------------------------------
+Observable pullback identity
+------------------------------------------------------------------------------
+PASS signed observable target expectation is exact :: -5/6
+PASS observable pullback identity is exact :: -5/6
+
+------------------------------------------------------------------------------
+Arbitrary product-kernel transport
+------------------------------------------------------------------------------
+PASS arbitrary signed asymmetric kernel transports exactly :: 143/216
+PASS transport theorem does not require symmetry
+PASS transport theorem does not require unit bounds
+PASS transport theorem does not require diagonal one
+
+------------------------------------------------------------------------------
+Defined word/count example
+------------------------------------------------------------------------------
+PASS word/count image packet is exact :: (('2:0:L', Fraction(1, 2)), ('1:1:L', Fraction(1, 4)), ('1:1:R', Fraction(1, 8)), ('0:2:R', Fraction(1, 8)))
+PASS defined word kernel is symmetric
+PASS defined word kernel is positive and at most one
+PASS defined word kernel equals one on the diagonal
+PASS defined word example product expectation is 169/320 :: 169/320
+PASS word example also closes through source-product transport
+PASS defined capped counts are componentwise nondecreasing :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R'), (2, 2, 'R')]
+PASS defined first marker is unchanged after its first assignment :: [(0, 0, 'none'), (0, 1, 'R'), (1, 1, 'R'), (2, 1, 'R'), (2, 2, 'R')]
+
+------------------------------------------------------------------------------
+Ordering and carrier permutations
+------------------------------------------------------------------------------
+PASS pushforward is permutation-equivariant by target label
+PASS observable identity is permutation-invariant
+PASS kernel identity is permutation-invariant
+
+SUMMARY: MODE=normal PASS=42 FAIL=0
+THEOREM_SCOPE=EXACT_FINITE_DETERMINISTIC_PUSHFORWARD_OBSERVABLE_AND_PRODUCT_KERNEL_TRANSPORT

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_records_pointer_grounds_block_channel_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_records_pointer_grounds_block_channel_2026_05_31.py",
+ "seed": 61172,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183252Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e6cbc0a196b7359bcf6c022bb6c7148dc792ed4440b27fe90999aeb1c445b093",
+ "stdout_tail": "he per-block measure-J\n       fixed complex structure, not a one-parameter symmetry group\n\n========================================================================================\nF3 - trace-style dimension count\n========================================================================================\n[PASS] F3.1 full trace I/3 weights the doublet by dimension 2\n       two-block pointer-style count and dimension-weighted trace count are distinct\n\n========================================================================================\nF4 - equal-weight functional -> r=1/2; dimension-weighted -> r=1; trace flat\n========================================================================================\n[PASS] F4.1 equal-weight log-capacity extremum -> E_+=E_perp -> r=|b|^2/a^2=1/2 -> Q=2/3\n       r* (equal-weight) = 1/2\n[PASS] F4.2 dimension-weighted extremum -> r=1 -> Q=1; linear trace E_++E_perp=T flat\n       r* (dimension-weighted) = 1; trace = T (constant, ranks neither)\n\n========================================================================================\nSUMMARY\n========================================================================================\n  7/7 checks passed\n\n  Finite algebra supports two bookkeeping readouts:\n    pointer-style S=C+C^2 resolves singlet/doublet blocks\n    trace-style I/3 weights the doublet by dimension\n  Equal-weight and dimension-weighted functionals give different extrema.\n  Records/objectivity dynamics are not derived here.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183253Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

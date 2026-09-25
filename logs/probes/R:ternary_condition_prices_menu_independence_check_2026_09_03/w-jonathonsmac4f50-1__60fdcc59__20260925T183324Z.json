@@ -1,0 +1,35 @@
+{
+ "task": "R:ternary_condition_prices_menu_independence_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "ternary",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/ternary_condition_prices_menu_independence_check_2026_09_03.py",
+ "seed": 61204,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183324Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7213a6852906b837a4c0809209b0a443453af03d619121eaa0c4f5aba43970fb",
+ "stdout_tail": "rit-quartic-fails the menu-independent quartic deformation gives 6/5, 46/45 and 3462/3125 on three qutrit bases\nPASS: T4-qutrit-basis-blind that same deformation is exactly one on the Fourier basis, so one qutrit basis is not enough\nPASS: T5-planar-ternary-blind the specific z=0 isosceles ternary is blind to the three stated z-dependent gradings\nPASS: T5-rotated-ternary-sees the rational rotation changes the plane, still coplanar: 221/225, 50209/50625, 43/45\nPASS: source-record-axiom the canonical Record axiom says a readout value is determined by record content alone\nPASS: source-admissibility-reading the canonical Admissibility reading note says the distribution does not supply the formation site, probability, or rate\nPASS: surface-status this note keeps its conditional surface, its exact claim scope, and independent audit explicit\nper_element: every menu, grading value, merge witness, and world-table weight above is checked as an exact rational element\nper_site: one M_2(C) site and one M_3(C) carrier are checked; no multi-site or lattice claim is made\nper_mode: odd and unrestricted sphere-polynomial sections through degree five are checked by exact rational rank; the frame theorem is named only\nper_block: this block checks parent quotations, conditional Cycle-984 toy typing, both grading families, and the planar-menu warning together\nlattice_wide: checked and not executed \u2014 the statements are one-site finite algebra and register no lattice-wide claim\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183326Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

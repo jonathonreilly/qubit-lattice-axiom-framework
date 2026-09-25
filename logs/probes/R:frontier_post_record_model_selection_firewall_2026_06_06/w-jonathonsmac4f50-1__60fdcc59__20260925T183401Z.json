@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_post_record_model_selection_firewall_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_post_record_model_selection_firewall_2026_06_06.py",
+ "seed": 61241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183401Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=48 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "956f6d76dea25868b77f00aba8ceca5e8e10184fba63770aad59896f835f7bb8",
+ "stdout_tail": "duces each word to one exponent, and only the hand-written skew law is position-sensitive, giving mass 1/4 to ('A','B') against 1/2 to ('B','A').\n  per_mode: checked and not executed \u2014 a likelihood here is one number per candidate law and is never resolved into components; no operator, spectrum, eigenvector, correlation function or Fourier decomposition is constructed at any point in the five sections.\n  per_block: resolved candidate by candidate across the supplied family \u2014 each law is normalized on its own before scoring, each carries its own likelihood at the realized word, the posterior reweights each candidate by its own prior mass, and enlarging the family from {fair, skew} to {fair, skew, spike} moves the argmax off the tie and onto the spike, which is exactly the family-extension counterexample.\n  lattice_wide: checked and not executed \u2014 the runner never leaves the horizons N = 2 and N = 4, builds no volume and takes no limit of any kind, and the four obstructions it reports are explicit finite witnesses (one prior pair, one tie pair, one family extension, one threshold pair) rather than a general theorem over all priors, families and thresholds; of the recorded passes, 18 are string-presence checks over four repository documents and 9 are firewall booleans hardcoded False in this file.\n\nSUMMARY: PASS=48 FAIL=0\nPOST_RECORD_SCORE_TO_CANONICAL_SELECTION=FALSE\nSUPPLIED_SELECTION_RULE_REQUIRED=TRUE\nRECORD_DERIVES_MODEL_FAMILY=FALSE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183401Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

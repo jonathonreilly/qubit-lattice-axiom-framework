@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_staggered_first_order_generation_determinant_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_staggered_first_order_generation_determinant_2026_06_11.py",
+ "seed": 61175,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "60fdcc59",
+ "started_utc": "20260925T183255Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f5987621ba6a888f06e610fdeb33aa5b6e7c03883fa09a0e74b03529bfb99d0d",
+ "stdout_tail": "by delta -> -delta: the trivial channel is K-fixed and the two (generically distinct) doublet eigenvalues swap -- the doublet is one K-orbit\n[PASS] (19) landed rho-map arithmetic: Hermitian-channel (count-twice) slotting -> r = 1; holomorphic-channel (count-once / one slot per K-orbit) slotting -> r = 1/2 (cells cited from the landed fork note; orientation pinned there, arithmetic reproven here)\nRESIDUAL (declared-open): which horn is physical is NOT decided by this surface: the K-real (Hermitian) restriction c = conj(b) is the already-named K-reality admission of CHARGED_LEPTON_KOIDE_VALUE_FULL_CHAIN_OF_CUSTODY_2026-06-02; the holomorphic horn keeps the channel weights complex and consumes the orbit-occupancy premise candidate instead. Neither is derived here.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades: kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention (STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03 section 5).\n\nTOTAL: PASS=19 FAIL=0\nVERDICT: the one-component staggered measure delivers a FIRST-ORDER generation determinant (single power, computed by explicit Grassmann expansion); the taste-conjugate triplet squares the generation factor channel-uniformly (r-neutral); count-twice |b|^2 dependence enters EXACTLY and ONLY through the K-reality restriction c = conj(b); the doublet channels are one K-orbit. No occupancy rule, premise adoption, or audit status is set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

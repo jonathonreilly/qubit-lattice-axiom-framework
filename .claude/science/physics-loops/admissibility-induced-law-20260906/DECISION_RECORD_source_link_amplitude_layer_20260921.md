@@ -571,3 +571,24 @@ So on this lattice the exact books of blocks 135–139 are a property of content
 **A question the table raises for the owner's reading** (no action taken). Block 136 keeps every constraint of the member with a bond shift coupled to the symmetric momentum. Block 124 (open) found that without it the transverse relabellings drift. Probes #9226 (unrefereed, same model family) finds that no landed object can be that shift. Whether "No site is privileged" extends to relabellings that change with time is a reading of the axiom. If it does, the shift is a relabelling variable rather than a field to supply. If it does not, the drifting transverse relabellings are physical.
 
 **Erratum to addendum 30.** Block 143's assumption is now needed at one total wave vector only, not at almost every one: the four band functions of the free pair must have only nondegenerate stationary points at that wave vector. Since the books are an operator identity, a neighbourhood of one wave vector suffices. A floating-point search supports it at one wave vector in each dimension; the search is not a proof.
+
+## Thirty-second addendum (2026-09-25): a landing guide for blocks 111–143 (no new results)
+
+The lane has 33 open hand-off PRs. They are grouped here by theme, with provenance and dependencies, for landing in thematic batches.
+- **Provenance.** Blocks 111–133 are harvests of probes attempts confirmed by a Grok referee. Block 127 has a Grok referee report but no confirm issue. Blocks 134–143 are the supervisor's own derivations and are not refereed by another model family.
+- **Dependencies** in brackets are open blocks; everything else cites landed notes.
+
+| Theme | Harvests (Grok-refereed) | Own derivations (unrefereed) |
+|---|---|---|
+| moving records and groups | 111 #9151 (settle alike, drift apart; a binding clause is needed), 113 #9154 (the clocked walk's realizations), 114 #9156 (only the turn is massless), 115 #9157 (contact binding: `c = 1` on a line, invisible under one record per site), 118 #9162 (forward streaming: isotropy is one number), 122 #9176 (waves need signed weights), 123 #9177 (persistent records: damped density waves in 3D), 126 #9182 (moving records with vacancies), 127 #9184 (aligned moving clusters) | 142 #9227 (neighbour-bound pairs: `c² = 1/2` on a line, never weight one on all axes in space) [115] |
+| the rest energy | 117 #9160 (the record gas makes the chessboard), 119 #9170 (species symmetry forces only doubling), 133 #9191 (a massive body at rest on one sublattice) | 139 #9201 (the staggered mass is the only rest energy that keeps the books) [135, 136] |
+| the member and the source link | 112 #9152 (the lapse constraints close only at `β = −α`), 116 #9159 (a formed record keeps the ledger only at a price), 120 #9173 (only the two-step current can source the member), 124 #9178 (rotation blindness: two kinetic numbers; transverse relabellings drift), 129 #9186 (block 60's numbers), 131 #9188 (rays in the walkers' frame) | 134 #9193 (one light cone, leading order) [120]; 135 #9195 (exact, every state) [134]; 136 #9196 (symmetric books, the bond shift) [135]; 138 #9200 (the spin through its curl) [136]; 140 #9203 (the exact boost charge) [136, 138] |
+| one record per site | 121 #9174 (the compressed source; the chain pair is two free fermions), 125 #9180 (the a-term's levels frozen or out of reach), 128 #9185 (the exchange sign is not supplied), 130 #9187 (the hard-core sea on a ring), 132 #9190 (the two-wall level rule) | 137 #9197 (the books only at leading order) [121, 136]; 141 #9205 (no neighbour coin term restores them) [137]; 143 #9229 (nothing local restores them; exact books need records that never scatter or bind) [137, 140] |
+
+**Other-family checks already in hand or in the queue.**
+- Probes #9204 re-derives block 135.
+- #9225 re-derives block 124 T5. Its scope point on T1 is already covered by block 124's stated premise, so no corrigendum is owed.
+- #9214 extends blocks 136 and 138 with the face spin's exact balance law.
+- #9221 and #9165 extend block 128.
+- All of these wait for a referee of another family, idle since 2026-09-24 21:39Z.
+- The probes problems of refills m, n and p ask the questions of blocks 141 and 143 independently.

@@ -1,7 +1,7 @@
 ---
 claim_id: next_needs_synthesis_what_the_remaining_sectors_cost_in_supplied_structure_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Synthesis of eight open blocks (PRs 9140, 9142, 9144, 9145, 9146, 9148, 9149, 9153) on the sectors the morning campaign left open, with fourteen recorded decision points, none adopted. Each block supplies structure and certifies its cost, on supplied models with finite certificates. (a) Composition: read as local tomography of reconstructions, the Record axiom's readout locality admits the ordinary tensor product and excludes the graded composite; a second reading, the generated algebra, fixes the state set. (b) Record formation: a clock whose rate depends on the site's conditional state changes the recorded odds everywhere except on the field-aligned menu of an isolated site, where the clause conserves r.h. (c) Charge: one qubit per site gives neutral Majoranas; two qubits per matter site give an exact SU(2) charge and, with a link field, an exactly gauge-invariant U(1) with the Z2 partner intact, at the price of plaquette-corner terms, a third site class, a staggered background and the loss of exact solvability in the charged sector. (d) Gravity: a linear tensor dispersion needs oscillator slots in both canonical variables; rotor and clock slots cannot; qubits emulate oscillators up to a top-level defect. (e) Photon: at the pure-ring point the record measure is a mildly re-weighted ice ensemble with no plaquette order to the 8^3 torus, a flux-quantum cost compatible with 1/L between 4^3 and 6^3, and a multi-exponential relaxation from which no gap is read. The runner recomputes one identity per block (reconstruction from record menus, precession conserving r.h, the four-dimer spectrum, the null direction of the momentum form, the fine-torus counts and Jastrow optimum, a short projector control, the dressed bond's gauge invariance, the canonical winding states) and checks the register of decision points. No decision point is adopted, no block is audited, and no physical identification is made."
+claim_scope: "Synthesis of eight blocks (open PRs 9140, 9144, 9145, 9146, 9148, 9149, 9153, and the landed record-formation clock note) on the sectors the morning campaign left open, with fourteen recorded decision points, none adopted. Each block supplies structure and certifies its cost, on supplied models with finite certificates. (a) Composition: read as local tomography of reconstructions, the Record axiom's readout locality admits the ordinary tensor product and excludes the graded composite; a second reading, the generated algebra, fixes the state set. (b) Record formation: a clock whose rate depends on the site's conditional state changes the recorded odds everywhere except on the field-aligned menu of an isolated site, where the clause conserves r.h. (c) Charge: one qubit per site gives neutral Majoranas; two qubits per matter site give an exact SU(2) charge and, with a link field, an exactly gauge-invariant U(1) with the Z2 partner intact, at the price of plaquette-corner terms, a third site class, a staggered background and the loss of exact solvability in the charged sector. (d) Gravity: a linear tensor dispersion needs oscillator slots in both canonical variables; rotor and clock slots cannot; qubits emulate oscillators up to a top-level defect. (e) Photon: at the pure-ring point the record measure is a mildly re-weighted ice ensemble with no plaquette order to the 8^3 torus, a flux-quantum cost compatible with 1/L between 4^3 and 6^3, and a multi-exponential relaxation from which no gap is read. The runner recomputes one identity per block (reconstruction from record menus, precession conserving r.h, the four-dimer spectrum, the null direction of the momentum form, the fine-torus counts and Jastrow optimum, a short projector control, the dressed bond's gauge invariance, the canonical winding states) and checks the register of decision points. No decision point is adopted, no block is audited, and no physical identification is made."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/next_needs_synthesis_consolidated_certificates_2026_09_24.py
@@ -19,7 +19,13 @@ The morning campaign (open PR 9061) supplied one local dynamics clause and
 found what it generates. It left five sectors open: the composition law,
 when records form, charged matter, a linear graviton, and the photon's phase.
 Eight further blocks attacked them. Each supplies a structure and certifies
-its price. This note collects the prices.
+its price. This note collects the prices. One of the eight, the formation
+clock, has since landed on main as
+`RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md`,
+with the reviewer's corrections (the conditional hazard, the menu dependence
+of the formation-weighted state, the dependence on the initial preparation,
+the time-step bias and the trajectory errors made explicit); the others are
+cited as open PRs.
 
 | Sector | What was supplied | What it buys | What it costs | Blocks |
 |---|---|---|---|---|
@@ -116,7 +122,8 @@ None is adopted.
 - A finite model on truncated-oscillator slots with its constraints handled.
 - The photon: its gap and dispersion at the pure-ring point, and the extent
   of the Coulomb phase in `V/g`.
-- Independent checks: every block here is self-checked only.
+- Independent checks: every block here is self-checked only, except the
+  landed formation-clock note, which the review train checked and corrected.
 
 ## Checks
 
@@ -137,8 +144,9 @@ about 15 seconds:
 
 ## Independent check
 
-None. Every block in this synthesis is self-checked only; an independent
-checker per block is the repo's discipline and remains owed.
+None of this note. Of the eight blocks, the formation-clock note has been
+reviewed and landed; the other seven are self-checked only, and an
+independent checker per block remains owed.
 
 ## What this does not do
 

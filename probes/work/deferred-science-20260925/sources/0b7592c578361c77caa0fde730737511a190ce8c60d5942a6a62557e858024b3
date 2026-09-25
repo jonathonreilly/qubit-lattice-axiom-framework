@@ -1,0 +1,62 @@
+{
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "exact_side_runner_sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+  "phase": "exp[-i/4*(lambda^2-C*lambda)]",
+  "rows": [
+    {
+      "S": 512,
+      "dimension": 5117,
+      "actual_period_three_readout": 0.3416691033315873,
+      "actual_V_expectation_real": 0.012503654997380972,
+      "actual_V_expectation_imag": -0.0028430375459818345,
+      "factorization_state_l2_error": 7.118950583390875e-12,
+      "factorization_readout_error": 1.2951882344672737e-13,
+      "state_norm_error": 2.220446049250313e-16,
+      "scope": "finite-spin float64 spectral diagnostic; no interval certificate or asymptotic inference"
+    },
+    {
+      "S": 640,
+      "dimension": 6397,
+      "actual_period_three_readout": 0.33705331511910025,
+      "actual_V_expectation_real": 0.005579972678650421,
+      "actual_V_expectation_imag": -0.002223704798242708,
+      "factorization_state_l2_error": 1.1647046743479506e-11,
+      "factorization_readout_error": 1.4873898333981426e-14,
+      "state_norm_error": 8.881784197001252e-16,
+      "scope": "finite-spin float64 spectral diagnostic; no interval certificate or asymptotic inference"
+    },
+    {
+      "S": 768,
+      "dimension": 7677,
+      "actual_period_three_readout": 0.33725968799788864,
+      "actual_V_expectation_real": 0.005889531996832972,
+      "actual_V_expectation_imag": 0.010391016807261105,
+      "factorization_state_l2_error": 1.9279541517181217e-11,
+      "factorization_readout_error": 7.036461841300556e-14,
+      "state_norm_error": 2.6645352591003757e-15,
+      "scope": "finite-spin float64 spectral diagnostic; no interval certificate or asymptotic inference"
+    },
+    {
+      "S": 896,
+      "dimension": 8957,
+      "actual_period_three_readout": 0.336208453964828,
+      "actual_V_expectation_real": 0.004312680947242009,
+      "actual_V_expectation_imag": -0.013265886894741757,
+      "factorization_state_l2_error": 2.302322354572824e-11,
+      "factorization_readout_error": 6.343017853506348e-13,
+      "state_norm_error": 2.220446049250313e-15,
+      "scope": "finite-spin float64 spectral diagnostic; no interval certificate or asymptotic inference"
+    },
+    {
+      "S": 1024,
+      "dimension": 10237,
+      "actual_period_three_readout": 0.32857056452908323,
+      "actual_V_expectation_real": -0.007144153206375207,
+      "actual_V_expectation_imag": -0.0089543007856549,
+      "factorization_state_l2_error": 2.580512416822847e-11,
+      "factorization_readout_error": 4.308568371695901e-13,
+      "state_norm_error": 1.7763568394002505e-15,
+      "scope": "finite-spin float64 spectral diagnostic; no interval certificate or asymptotic inference"
+    }
+  ]
+}

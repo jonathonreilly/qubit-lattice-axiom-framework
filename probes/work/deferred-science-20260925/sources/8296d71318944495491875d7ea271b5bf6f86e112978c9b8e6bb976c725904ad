@@ -1,0 +1,8 @@
+{
+  "runner_sha256": {
+    "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py": "b577641c74bd6d9f6a3fed209973786594c8354d1eba0dafba5054f0168a49f2",
+    "scripts/postmark_electric_two_band_central_match_2026_09_24.py": "c63441d90c7373cabe1e0ea78704a474b077bcd7a106cae372b91cf26bc4d795"
+  },
+  "mutations": 9,
+  "all_expected_failures_observed": true
+}

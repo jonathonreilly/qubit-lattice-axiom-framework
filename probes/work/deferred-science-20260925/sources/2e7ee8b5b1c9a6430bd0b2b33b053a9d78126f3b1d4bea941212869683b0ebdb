@@ -1,0 +1,20 @@
+Source: explicit --runners.  Runners under consideration: 4
+  fresh:           0
+  stale to refresh:4
+  missing on disk: 0
+
+Executing 4 runner(s) with concurrency=3...
+Live logs available under logs/runner-cache/.in-progress/<stem>.txt — `tail -F` any one to watch a specific runner mid-execution.
+  [  1/4] OK          1.2s  postmark_electric_moving_index_cell_symbol_2026_09_24.py
+  [  2/4] OK          5.1s  postmark_electric_five_site_inter_fiber_phase_2026_09_24.py
+  [  3/4] OK          7.2s  postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py
+  [  4/4] OK         13.7s  postmark_electric_two_band_central_match_2026_09_24.py
+
+Done in 14.9s.
+  ok             4
+  nonzero_exit   0
+  timeout        0
+  error          0
+  missing        0
+
+Cache layout: logs/runner-cache/<runner-stem>.txt

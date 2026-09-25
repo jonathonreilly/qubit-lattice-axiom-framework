@@ -1,0 +1,1322 @@
+{
+  "claim_status": "exact finite-dimensional reduction plus double-precision exploratory spectral diagnostics; no fixed-time kernel or readout limit is proved",
+  "source_revision": "7f7c153fdaef62db8efdc6bd238bfcbc7379f57b",
+  "upstream_source_sha256": {
+    "fast_vacancy_note": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+    "zero_mode_note": "b697aecbc9c8551df69eea76ea2e2aeb404dc0478fdc32e4dd1554b26a08fec8",
+    "core_boundary_note": "6b791a007320753af0ac5f2d3a11ea713598360ab757185b3bc3c1c2c77d808e",
+    "physical_hop_enumerator": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5"
+  },
+  "operator": "N_S=J M_S J, C=S(S+1), G_S=N_S^2-C*N_S, V|n>=exp(2*pi*i*n/3)|n>, O=(I+V+V*)/3",
+  "finite_interval": "I_S=[-5S,5S-4] intersect Z",
+  "exact_algebra": {
+    "factorization": "e^{-itG_S}|0> = e^{it*C*N_S} eta_S(t), eta_S(t)=e^{-it*N_S^2}|0>",
+    "kernel": "K_S(a,b;t)=<a|e^{-it*C*N_S} V e^{it*C*N_S}|b>",
+    "prepared_state_expectation": "<V>_S=<eta_S(t)|B_S(t)|eta_S(t)>, B_S=e^{-it*C*N_S} V e^{it*C*N_S}",
+    "spectral_sum": "sum_{j,k} exp(-it*C*lambda_j) exp(+it*C*lambda_k) phi_j(a) phi_k(b) sum_n omega^n phi_j(n) phi_k(n), for a real orthonormal Jacobi eigenbasis",
+    "echo_identity": "K_S(a,b;t)=omega^b<a|e^{-it*C*N_S}e^{it*C*V*N_S*V*}|b>",
+    "fixed_index_zero_suffices": "if each fixed a,b kernel entry tends to zero and eta_S converges strongly to eta in l2(Z), then ||B_S||=1 and finite-support approximation imply <V>_S->0 and <O>_S->1/3",
+    "falsifier_boundary": "one nonzero/nonconvergent fixed entry invalidates this sufficient criterion only; a certified wall for the physical readout requires separated actual <O> subsequences"
+  },
+  "physical_hop_coefficient_crosscheck": {
+    "independent_reconstruction": "scripts/core_derivation.py enumerates the physical charge/electric states and all ordered two-hop paths",
+    "spins": [
+      {
+        "S": 1,
+        "sites": 7,
+        "max_abs_entry_error": 0.0
+      },
+      {
+        "S": 2,
+        "sites": 17,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "S": 3,
+        "sites": 27,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "S": 5,
+        "sites": 47,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "S": 8,
+        "sites": 77,
+        "max_abs_entry_error": 1.1102230246251565e-16
+      }
+    ],
+    "maximum_abs_entry_error": 2.220446049250313e-16,
+    "convention": "the physical M_S=-H_2 has positive links; N_S=J M_S J has negative links"
+  },
+  "signed_label_geometry_crosscheck": {
+    "residue_reflection": "m_minus=-m_plus-1; f(m)=f(-m-1)",
+    "residue_count": 15,
+    "finite_edges_checked": 2001,
+    "max_abs_edge_factor_offset_from_n_over5": 0.8,
+    "preceding_edge_offset_bound_from_node": "<6/5"
+  },
+  "small_dense_identity_crosscheck": {
+    "spin": 3,
+    "time": 0.25,
+    "echo_operator_identity_error_2norm": 2.1067777138950111e-16,
+    "generator_factorization_l2_error": 1.5841484482597525e-15,
+    "spectral_kernel_vs_dense_expm_error_2norm": 6.039829538330028e-15,
+    "production_fixed_entry_vs_dense_expm_max_error": 1.4488835837920474e-15,
+    "production_readout_vs_dense_expm_error": 6.662783593823664e-16
+  },
+  "homogeneous_reference_crosscheck": {
+    "operator": "N_infinity=2I-U-U*, V U V*=omega U",
+    "kernel_formula": "omega^b * i^(a-b) * exp(-i*(a-b)*pi/6) * J_(a-b)(2*sqrt(3)*theta)",
+    "modes": [
+      [
+        -2,
+        1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "uniform_grid_points_per_integral": 16384,
+    "theta_samples": [
+      {
+        "theta": 0.0,
+        "bessel_argument": 0.0,
+        "max_quadrature_formula_error": 7.850462293418876e-17
+      },
+      {
+        "theta": 0.3,
+        "bessel_argument": 1.0392304845413263,
+        "max_quadrature_formula_error": 2.482534153247273e-16
+      },
+      {
+        "theta": 1.0,
+        "bessel_argument": 3.4641016151377544,
+        "max_quadrature_formula_error": 3.4021815010030383e-16
+      },
+      {
+        "theta": 10.0,
+        "bessel_argument": 34.64101615137754,
+        "max_quadrature_formula_error": 9.718485871048692e-17
+      },
+      {
+        "theta": 100.0,
+        "bessel_argument": 346.41016151377545,
+        "max_quadrature_formula_error": 2.6359672983221025e-16
+      }
+    ],
+    "maximum_Fourier_quadrature_vs_Bessel_error": 3.4021815010030383e-16,
+    "analytic_consequence": "for fixed integer a,b, stationary phase gives K_infinity=O(theta^-1/2); with theta=t*S(S+1), this reference kernel is O(S^-1) at fixed nonzero t",
+    "scope": "translation-invariant infinite Jacobi reference only; it does not approximate the finite-spin kernel uniformly at theta of order S^2"
+  },
+  "diagnostic_method": "SciPy eigh_tridiagonal in float64; fixed-index entries by two spectral matrix-vector actions; all displayed scans are exploratory and are not interval-certified",
+  "numerics": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "time": 0.25,
+    "spins": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192,
+      256,
+      384,
+      512
+    ],
+    "rows": [
+      {
+        "S": 4,
+        "dimension": 37,
+        "time": 0.25,
+        "time_times_C": 5.0,
+        "max_S_times_row_sum_minus_4w": 6.556601048851672,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.17736387121271693,
+            "imag": 0.11220654223602257
+          },
+          "0,-1": {
+            "real": -0.0018571519199647828,
+            "imag": 0.11146843241206461
+          },
+          "1,-1": {
+            "real": 0.14598126095964042,
+            "imag": -0.05165541726988222
+          },
+          "-1,0": {
+            "real": 0.05576147248469902,
+            "imag": -0.08351306772593498
+          },
+          "0,0": {
+            "real": -0.15828391926315893,
+            "imag": -0.03154518323312779
+          },
+          "1,0": {
+            "real": -0.0726280664332201,
+            "imag": -0.05600121843946372
+          },
+          "-1,1": {
+            "real": 0.18844105552224477,
+            "imag": 0.04041716495736637
+          },
+          "0,1": {
+            "real": 0.0852654751411131,
+            "imag": 0.02705196836120298
+          },
+          "1,1": {
+            "real": -0.08436321543625169,
+            "imag": -0.28891517454532634
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.2039306793440076,
+          "imag": -0.0554205030147124
+        },
+        "actual_O_expectation": 0.4692871195626718,
+        "direct_O_diagonal_expectation": 0.46928711956267266,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.2039306793440077,
+          "imag": -0.05542050301471238
+        },
+        "factorization_l2_error": 1.824984568490924e-15,
+        "actual_readout_identity_error": 8.582937747229195e-17,
+        "projector_character_identity_error": 8.881784197001252e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 2,
+            "eigenvectors_with_lambda_at_least_epsilon": 21,
+            "maximum_cap_mass": 0.2775418793610394
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 3,
+            "eigenvectors_with_lambda_at_least_epsilon": 14,
+            "maximum_cap_mass": 0.026415784326750038
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 8,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 6,
+        "dimension": 57,
+        "time": 0.25,
+        "time_times_C": 10.5,
+        "max_S_times_row_sum_minus_4w": 7.319249067991226,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.1366954666219345,
+            "imag": 0.12683947595320863
+          },
+          "0,-1": {
+            "real": 0.011639879874339093,
+            "imag": -0.12728998080817
+          },
+          "1,-1": {
+            "real": 0.0738525459620305,
+            "imag": -0.07868678444665825
+          },
+          "-1,0": {
+            "real": 0.062180318969788914,
+            "imag": 0.1703368664484564
+          },
+          "0,0": {
+            "real": -0.033928030280894916,
+            "imag": 0.09686762261176812
+          },
+          "1,0": {
+            "real": 0.09141399331978158,
+            "imag": -0.06727230650471488
+          },
+          "-1,1": {
+            "real": 0.032591699993125306,
+            "imag": -0.13247255212091624
+          },
+          "0,1": {
+            "real": -0.07971750979341342,
+            "imag": 0.031521999304903445
+          },
+          "1,1": {
+            "real": -0.06546751664951919,
+            "imag": -0.09563603723718939
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.1688091324746793,
+          "imag": -0.04599129249243466
+        },
+        "actual_O_expectation": 0.44587275498311957,
+        "direct_O_diagonal_expectation": 0.4458727549831191,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.16880913247467924,
+          "imag": -0.04599129249243464
+        },
+        "factorization_l2_error": 1.91929122560836e-15,
+        "actual_readout_identity_error": 5.928593550334434e-17,
+        "projector_character_identity_error": 4.440892098500626e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 2,
+            "eigenvectors_with_lambda_at_least_epsilon": 33,
+            "maximum_cap_mass": 0.2586762533681208
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 6,
+            "eigenvectors_with_lambda_at_least_epsilon": 19,
+            "maximum_cap_mass": 0.004817572190898642
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 14,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 8,
+        "dimension": 77,
+        "time": 0.25,
+        "time_times_C": 18.0,
+        "max_S_times_row_sum_minus_4w": 7.743211366689625,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.13239119732403837,
+            "imag": -0.04386678461125823
+          },
+          "0,-1": {
+            "real": 0.01641637751398259,
+            "imag": 0.03276075323165184
+          },
+          "1,-1": {
+            "real": 0.016749480315743387,
+            "imag": 0.09482014480335599
+          },
+          "-1,0": {
+            "real": -0.0798347880983418,
+            "imag": -0.08704779959240252
+          },
+          "0,0": {
+            "real": -0.047030278112343574,
+            "imag": -0.06408813387060164
+          },
+          "1,0": {
+            "real": -0.05564149344999571,
+            "imag": 0.06922291922912596
+          },
+          "-1,1": {
+            "real": 0.011682985112851658,
+            "imag": 0.013045607692511604
+          },
+          "0,1": {
+            "real": 0.02734790106630415,
+            "imag": -0.08453512813399644
+          },
+          "1,1": {
+            "real": 0.06869837111236703,
+            "imag": 0.05160859830807022
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.045677951282725504,
+          "imag": 0.1380352683644569
+        },
+        "actual_O_expectation": 0.3028813658115163,
+        "direct_O_diagonal_expectation": 0.3028813658115165,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.0456779512827255,
+          "imag": 0.13803526836445684
+        },
+        "factorization_l2_error": 2.5333018705319814e-15,
+        "actual_readout_identity_error": 5.594315114139762e-17,
+        "projector_character_identity_error": 1.6653345369377348e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 3,
+            "eigenvectors_with_lambda_at_least_epsilon": 42,
+            "maximum_cap_mass": 0.017981625336351302
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 8,
+            "eigenvectors_with_lambda_at_least_epsilon": 25,
+            "maximum_cap_mass": 0.00010988083274251023
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 20,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 12,
+        "dimension": 117,
+        "time": 0.25,
+        "time_times_C": 39.0,
+        "max_S_times_row_sum_minus_4w": 8.199986829615813,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.04492893627479347,
+            "imag": -0.014540471345168978
+          },
+          "0,-1": {
+            "real": 0.0386194197823461,
+            "imag": -0.004324872917088534
+          },
+          "1,-1": {
+            "real": -0.034422616548288834,
+            "imag": -0.009705486220864925
+          },
+          "-1,0": {
+            "real": 0.026151720369989303,
+            "imag": 0.03808464885142783
+          },
+          "0,0": {
+            "real": 0.0745239172814323,
+            "imag": 0.022090764155583077
+          },
+          "1,0": {
+            "real": 0.03834710915133132,
+            "imag": 0.013386283270005468
+          },
+          "-1,1": {
+            "real": -0.05508572954434112,
+            "imag": 0.001070958007753392
+          },
+          "0,1": {
+            "real": 0.05311668045257987,
+            "imag": -0.013333047036457685
+          },
+          "1,1": {
+            "real": 0.06681289350929825,
+            "imag": 0.03300889249651411
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.08681936485024308,
+          "imag": 0.029822682806367677
+        },
+        "actual_O_expectation": 0.39121290990016205,
+        "direct_O_diagonal_expectation": 0.39121290990016266,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.08681936485024308,
+          "imag": 0.029822682806367712
+        },
+        "factorization_l2_error": 5.02749614604101e-15,
+        "actual_readout_identity_error": 3.469446951953614e-17,
+        "projector_character_identity_error": 6.106226635438361e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 4,
+            "eigenvectors_with_lambda_at_least_epsilon": 63,
+            "maximum_cap_mass": 0.003432862552222791
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 14,
+            "eigenvectors_with_lambda_at_least_epsilon": 37,
+            "maximum_cap_mass": 6.884134131537173e-07
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 32,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 16,
+        "dimension": 157,
+        "time": 0.25,
+        "time_times_C": 68.0,
+        "max_S_times_row_sum_minus_4w": 8.441889111920014,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.09809272966227822,
+            "imag": 0.05130498473593827
+          },
+          "0,-1": {
+            "real": -0.02981784970892059,
+            "imag": 0.017372448565947718
+          },
+          "1,-1": {
+            "real": 0.040361039688021697,
+            "imag": -0.024559628874402866
+          },
+          "-1,0": {
+            "real": -0.03923417450974264,
+            "imag": 0.04320848477178309
+          },
+          "0,0": {
+            "real": -0.013029829508144963,
+            "imag": 0.10297735106582856
+          },
+          "1,0": {
+            "real": -0.014624169001299227,
+            "imag": 0.020039682485289187
+          },
+          "-1,1": {
+            "real": -0.006099606210573576,
+            "imag": -0.04402148684935592
+          },
+          "0,1": {
+            "real": 0.02411054495520675,
+            "imag": 0.08678833955897716
+          },
+          "1,1": {
+            "real": 0.05865185893111205,
+            "imag": 0.010193009631420575
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.048495857599340254,
+          "imag": 0.00755457517762681
+        },
+        "actual_O_expectation": 0.3010027616004398,
+        "direct_O_diagonal_expectation": 0.3010027616004405,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.048495857599340234,
+          "imag": 0.007554575177626775
+        },
+        "factorization_l2_error": 7.320094405818688e-15,
+        "actual_readout_identity_error": 4.046035655711836e-17,
+        "projector_character_identity_error": 6.661338147750939e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 8,
+            "eigenvectors_with_lambda_at_least_epsilon": 83,
+            "maximum_cap_mass": 0.0019845767388092846
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 18,
+            "eigenvectors_with_lambda_at_least_epsilon": 48,
+            "maximum_cap_mass": 6.646641971583979e-11
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 44,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 24,
+        "dimension": 237,
+        "time": 0.25,
+        "time_times_C": 150.0,
+        "max_S_times_row_sum_minus_4w": 8.693523566466135,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.05241477677494577,
+            "imag": -0.05778347203082736
+          },
+          "0,-1": {
+            "real": -0.016039853227807606,
+            "imag": -0.023146312893866768
+          },
+          "1,-1": {
+            "real": 0.01828509818870542,
+            "imag": -0.02348085100236898
+          },
+          "-1,0": {
+            "real": 0.04872824216239179,
+            "imag": -0.10721473742914917
+          },
+          "0,0": {
+            "real": 0.007679671253260717,
+            "imag": -0.01612763416241375
+          },
+          "1,0": {
+            "real": 0.01687745407001672,
+            "imag": -0.01737192396879879
+          },
+          "-1,1": {
+            "real": -0.020430174189371524,
+            "imag": -0.049514985052613564
+          },
+          "0,1": {
+            "real": -0.0770952305906462,
+            "imag": -0.06413586112501363
+          },
+          "1,1": {
+            "real": -0.0016176950084813898,
+            "imag": -0.074443815838411
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.05590043541444112,
+          "imag": -0.09390830526076271
+        },
+        "actual_O_expectation": 0.2960663763903726,
+        "direct_O_diagonal_expectation": 0.2960663763903721,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.055900435414441105,
+          "imag": -0.09390830526076274
+        },
+        "factorization_l2_error": 2.0668873941538395e-14,
+        "actual_readout_identity_error": 3.1031676915590914e-17,
+        "projector_character_identity_error": 4.996003610813204e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 12,
+            "eigenvectors_with_lambda_at_least_epsilon": 122,
+            "maximum_cap_mass": 4.772718466624104e-07
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 30,
+            "eigenvectors_with_lambda_at_least_epsilon": 72,
+            "maximum_cap_mass": 3.7547951627367615e-15
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 68,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 32,
+        "dimension": 317,
+        "time": 0.25,
+        "time_times_C": 264.0,
+        "max_S_times_row_sum_minus_4w": 8.823175069168922,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.026730497539889705,
+            "imag": 0.05128808861155002
+          },
+          "0,-1": {
+            "real": -0.020386547549265596,
+            "imag": 0.0008319242825497557
+          },
+          "1,-1": {
+            "real": -0.02864561099393298,
+            "imag": -0.015887932954700652
+          },
+          "-1,0": {
+            "real": 0.008358336805476298,
+            "imag": -0.018487219074665384
+          },
+          "0,0": {
+            "real": -0.04315298744131328,
+            "imag": 0.026222989696377142
+          },
+          "1,0": {
+            "real": 0.03550837135800479,
+            "imag": 0.054884468133344466
+          },
+          "-1,1": {
+            "real": -0.03473119492610505,
+            "imag": -0.05806579417706177
+          },
+          "0,1": {
+            "real": -0.007047920355833211,
+            "imag": -0.029645307587431217
+          },
+          "1,1": {
+            "real": 0.11621883862814372,
+            "imag": -0.020567349330220787
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.004077562703509886,
+          "imag": -0.039464036509578554
+        },
+        "actual_O_expectation": 0.33061495819766007,
+        "direct_O_diagonal_expectation": 0.33061495819766085,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.004077562703509867,
+          "imag": -0.03946403650957855
+        },
+        "factorization_l2_error": 2.5855595967361512e-14,
+        "actual_readout_identity_error": 1.9491530832281063e-17,
+        "projector_character_identity_error": 7.771561172376096e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 18,
+            "eigenvectors_with_lambda_at_least_epsilon": 163,
+            "maximum_cap_mass": 2.555222986059563e-08
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 40,
+            "eigenvectors_with_lambda_at_least_epsilon": 95,
+            "maximum_cap_mass": 7.66667962124121e-22
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 90,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 48,
+        "dimension": 477,
+        "time": 0.25,
+        "time_times_C": 588.0,
+        "max_S_times_row_sum_minus_4w": 8.955487295151148,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.01707482967636717,
+            "imag": 0.013291522731920432
+          },
+          "0,-1": {
+            "real": -0.023597044602181455,
+            "imag": 0.048407541527672786
+          },
+          "1,-1": {
+            "real": -0.004569867075479803,
+            "imag": 0.02299889708099058
+          },
+          "-1,0": {
+            "real": 0.0043602587525712975,
+            "imag": -0.02960415064385208
+          },
+          "0,0": {
+            "real": -0.04101732580524253,
+            "imag": -0.011327578116840903
+          },
+          "1,0": {
+            "real": -0.02771221608953686,
+            "imag": 0.03811615912380792
+          },
+          "-1,1": {
+            "real": 0.009896361917936549,
+            "imag": -0.018522059618280694
+          },
+          "0,1": {
+            "real": 0.025338540371665365,
+            "imag": -0.02473672185057127
+          },
+          "1,1": {
+            "real": 0.005672044623687422,
+            "imag": 0.03562404718268607
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.012282908381938296,
+          "imag": 0.04019224955180765
+        },
+        "actual_O_expectation": 0.3415219389212922,
+        "direct_O_diagonal_expectation": 0.3415219389212927,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.012282908381938278,
+          "imag": 0.04019224955180765
+        },
+        "factorization_l2_error": 6.651338606737466e-14,
+        "actual_readout_identity_error": 1.734723475976807e-17,
+        "projector_character_identity_error": 4.996003610813204e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 28,
+            "eigenvectors_with_lambda_at_least_epsilon": 243,
+            "maximum_cap_mass": 1.8065447835732317e-13
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 62,
+            "eigenvectors_with_lambda_at_least_epsilon": 142,
+            "maximum_cap_mass": 2.727477027306203e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 138,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 64,
+        "dimension": 637,
+        "time": 0.25,
+        "time_times_C": 1040.0,
+        "max_S_times_row_sum_minus_4w": 9.022666810974657,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.06328591983871686,
+            "imag": -0.024514490117410553
+          },
+          "0,-1": {
+            "real": -0.010955269434554602,
+            "imag": 0.0075423678371457714
+          },
+          "1,-1": {
+            "real": 0.01006233634636147,
+            "imag": -0.036184281770782444
+          },
+          "-1,0": {
+            "real": 0.052284384621825844,
+            "imag": -0.0689844384535318
+          },
+          "0,0": {
+            "real": -0.039768399099473356,
+            "imag": -0.008125617872264138
+          },
+          "1,0": {
+            "real": 0.049679292447068896,
+            "imag": 0.007708175556570133
+          },
+          "-1,1": {
+            "real": -0.0409743428989888,
+            "imag": -0.00032508119212324056
+          },
+          "0,1": {
+            "real": -0.05061145349795079,
+            "imag": -0.0022070008589334007
+          },
+          "1,1": {
+            "real": -0.016261967471989637,
+            "imag": -0.03697111322004483
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.0014346318741734788,
+          "imag": -0.08739141668704495
+        },
+        "actual_O_expectation": 0.33237691208388437,
+        "direct_O_diagonal_expectation": 0.33237691208388376,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.0014346318741734585,
+          "imag": -0.08739141668704495
+        },
+        "factorization_l2_error": 1.0179893710192604e-13,
+        "actual_readout_identity_error": 2.0383000842727483e-17,
+        "projector_character_identity_error": 6.106226635438361e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 38,
+            "eigenvectors_with_lambda_at_least_epsilon": 323,
+            "maximum_cap_mass": 9.586714927383004e-19
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 82,
+            "eigenvectors_with_lambda_at_least_epsilon": 189,
+            "maximum_cap_mass": 1.4455171579244676e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 184,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 96,
+        "dimension": 957,
+        "time": 0.25,
+        "time_times_C": 2328.0,
+        "max_S_times_row_sum_minus_4w": 9.090542688078745,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.0008974180687879134,
+            "imag": -0.009225771123676257
+          },
+          "0,-1": {
+            "real": 0.009268395361787286,
+            "imag": -0.04942772255782246
+          },
+          "1,-1": {
+            "real": 0.004762061868280288,
+            "imag": -0.006140120798450757
+          },
+          "-1,0": {
+            "real": -0.026924704726037557,
+            "imag": -0.00482068300738516
+          },
+          "0,0": {
+            "real": 0.020596105220160903,
+            "imag": -0.028454315783008076
+          },
+          "1,0": {
+            "real": -0.01737481970370659,
+            "imag": -0.00027696537312254035
+          },
+          "-1,1": {
+            "real": -0.014415140483559793,
+            "imag": -0.00930773251502678
+          },
+          "0,1": {
+            "real": -0.04012529943047306,
+            "imag": -0.009594651087431188
+          },
+          "1,1": {
+            "real": -0.0447900659323817,
+            "imag": -0.0020902272972891343
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.027750591959778758,
+          "imag": -0.016726482039311687
+        },
+        "actual_O_expectation": 0.31483293869348083,
+        "direct_O_diagonal_expectation": 0.31483293869347984,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.027750591959778748,
+          "imag": -0.016726482039311676
+        },
+        "factorization_l2_error": 2.853904287823427e-13,
+        "actual_readout_identity_error": 1.471961680016039e-17,
+        "projector_character_identity_error": 9.992007221626409e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 60,
+            "eigenvectors_with_lambda_at_least_epsilon": 483,
+            "maximum_cap_mass": 5.481342582248235e-28
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 126,
+            "eigenvectors_with_lambda_at_least_epsilon": 283,
+            "maximum_cap_mass": 2.32458883492346e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 278,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 128,
+        "dimension": 1277,
+        "time": 0.25,
+        "time_times_C": 4128.0,
+        "max_S_times_row_sum_minus_4w": 9.124745141863256,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.014595355305261428,
+            "imag": -0.01502354438252387
+          },
+          "0,-1": {
+            "real": -0.0040208863275535585,
+            "imag": -0.037150232998932
+          },
+          "1,-1": {
+            "real": 0.011607848481193324,
+            "imag": -0.038376697928435344
+          },
+          "-1,0": {
+            "real": 0.0060229444776067845,
+            "imag": 0.024868172868827698
+          },
+          "0,0": {
+            "real": 0.03444100997459705,
+            "imag": 0.004162189275916816
+          },
+          "1,0": {
+            "real": -0.025042003243758944,
+            "imag": 0.022429923826022134
+          },
+          "-1,1": {
+            "real": -0.017422554278965233,
+            "imag": -0.0017973087397951878
+          },
+          "0,1": {
+            "real": -0.0408234649445942,
+            "imag": -0.03021103718183467
+          },
+          "1,1": {
+            "real": -0.03911386069982553,
+            "imag": 0.010719368772232557
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.03767388976517773,
+          "imag": -0.010096635269287623
+        },
+        "actual_O_expectation": 0.30821740682321486,
+        "direct_O_diagonal_expectation": 0.30821740682321397,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.0376738897651777,
+          "imag": -0.01009663526928763
+        },
+        "factorization_l2_error": 5.08932016236206e-13,
+        "actual_readout_identity_error": 2.8609792490763984e-17,
+        "projector_character_identity_error": 8.881784197001252e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 80,
+            "eigenvectors_with_lambda_at_least_epsilon": 642,
+            "maximum_cap_mass": 1.1908223717821434e-32
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 168,
+            "eigenvectors_with_lambda_at_least_epsilon": 376,
+            "maximum_cap_mass": 2.4008720972835508e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 372,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 192,
+        "dimension": 1917,
+        "time": 0.25,
+        "time_times_C": 9264.0,
+        "max_S_times_row_sum_minus_4w": 9.16020220791391,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.007006846847690844,
+            "imag": -0.005424418429395153
+          },
+          "0,-1": {
+            "real": 0.005698514777511194,
+            "imag": -0.0067193634504297325
+          },
+          "1,-1": {
+            "real": 0.005897986945095439,
+            "imag": -0.015995857942616966
+          },
+          "-1,0": {
+            "real": 0.03299502723552933,
+            "imag": -0.021241051273070737
+          },
+          "0,0": {
+            "real": -0.002642106260054292,
+            "imag": -0.0010034143291556517
+          },
+          "1,0": {
+            "real": -0.01077397358984189,
+            "imag": -0.00857466633579841
+          },
+          "-1,1": {
+            "real": 0.018996551496313047,
+            "imag": 0.0005820482722056599
+          },
+          "0,1": {
+            "real": 0.022319258386231743,
+            "imag": -0.0016291427695029528
+          },
+          "1,1": {
+            "real": -0.0023258346238210323,
+            "imag": 0.018074729467101352
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.009588418437301174,
+          "imag": 0.003665715373022619
+        },
+        "actual_O_expectation": 0.33972561229153414,
+        "direct_O_diagonal_expectation": 0.33972561229153514,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.009588418437301183,
+          "imag": 0.003665715373022604
+        },
+        "factorization_l2_error": 1.1724939062552256e-12,
+        "actual_readout_identity_error": 1.7107047482856787e-17,
+        "projector_character_identity_error": 9.992007221626409e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 122,
+            "eigenvectors_with_lambda_at_least_epsilon": 962,
+            "maximum_cap_mass": 1.3059091106290813e-32
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 254,
+            "eigenvectors_with_lambda_at_least_epsilon": 564,
+            "maximum_cap_mass": 2.8751375801284836e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 560,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 256,
+        "dimension": 2557,
+        "time": 0.25,
+        "time_times_C": 16448.0,
+        "max_S_times_row_sum_minus_4w": 9.194733128068421,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.007528330451255207,
+            "imag": 0.008254032385909903
+          },
+          "0,-1": {
+            "real": -0.0017888891135108954,
+            "imag": 0.01396635093571583
+          },
+          "1,-1": {
+            "real": -0.0016427206710586538,
+            "imag": -0.020328740234456532
+          },
+          "-1,0": {
+            "real": -0.0014731263629090066,
+            "imag": 0.0007813500485896862
+          },
+          "0,0": {
+            "real": 0.006183106392794036,
+            "imag": 0.02791399830408082
+          },
+          "1,0": {
+            "real": -0.019931002047019947,
+            "imag": 0.008874133731838887
+          },
+          "-1,1": {
+            "real": -0.014650574988800078,
+            "imag": -0.016395904839627506
+          },
+          "0,1": {
+            "real": -0.004743239681403355,
+            "imag": -0.016367880639507254
+          },
+          "1,1": {
+            "real": 0.00826869284197281,
+            "imag": -0.007171646256901172
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": -0.005415836130623644,
+          "imag": -0.007484335405719607
+        },
+        "actual_O_expectation": 0.3297227759129176,
+        "direct_O_diagonal_expectation": 0.3297227759129159,
+        "kernel_quadratic_form_v_expectation": {
+          "real": -0.005415836130623651,
+          "imag": -0.007484335405719637
+        },
+        "factorization_l2_error": 1.7780385213911719e-12,
+        "actual_readout_identity_error": 3.029564307160424e-17,
+        "projector_character_identity_error": 1.7208456881689926e-15,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 162,
+            "eigenvectors_with_lambda_at_least_epsilon": 1282,
+            "maximum_cap_mass": 1.1671311168405986e-32
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 340,
+            "eigenvectors_with_lambda_at_least_epsilon": 751,
+            "maximum_cap_mass": 2.3494176383030077e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 746,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 384,
+        "dimension": 3837,
+        "time": 0.25,
+        "time_times_C": 36960.0,
+        "max_S_times_row_sum_minus_4w": 9.229372697098775,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": 0.0070434086925562425,
+            "imag": 0.021116846852443118
+          },
+          "0,-1": {
+            "real": 0.0076271782330289565,
+            "imag": -0.01840635386107569
+          },
+          "1,-1": {
+            "real": 0.0062483771430226626,
+            "imag": -0.008347860838387972
+          },
+          "-1,0": {
+            "real": 0.009036657457776051,
+            "imag": 0.006658892908060647
+          },
+          "0,0": {
+            "real": 0.007099278721480341,
+            "imag": -0.013492291408851385
+          },
+          "1,0": {
+            "real": 0.018674821891467665,
+            "imag": 0.013651888377190096
+          },
+          "-1,1": {
+            "real": -0.0021104440610492875,
+            "imag": 0.009484815048694306
+          },
+          "0,1": {
+            "real": -0.01091081896733136,
+            "imag": -0.004411538506379752
+          },
+          "1,1": {
+            "real": 0.0186085069055801,
+            "imag": -0.016829721778085754
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.023642299616896345,
+          "imag": 0.0038393391805971945
+        },
+        "actual_O_expectation": 0.34909486641126425,
+        "direct_O_diagonal_expectation": 0.3490948664112652,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.023642299616896352,
+          "imag": 0.0038393391805971624
+        },
+        "factorization_l2_error": 4.6059792971719734e-12,
+        "actual_readout_identity_error": 3.283396684877014e-17,
+        "projector_character_identity_error": 9.43689570931383e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 246,
+            "eigenvectors_with_lambda_at_least_epsilon": 1922,
+            "maximum_cap_mass": 2.0104537195287401e-32
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 512,
+            "eigenvectors_with_lambda_at_least_epsilon": 1126,
+            "maximum_cap_mass": 4.748215225844951e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 1122,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      },
+      {
+        "S": 512,
+        "dimension": 5117,
+        "time": 0.25,
+        "time_times_C": 65664.0,
+        "max_S_times_row_sum_minus_4w": 9.249858067181961,
+        "fixed_index_kernel_entries": {
+          "-1,-1": {
+            "real": -0.014203178511129035,
+            "imag": -0.007738888610007176
+          },
+          "0,-1": {
+            "real": 0.007374175417110589,
+            "imag": -0.02358979719184232
+          },
+          "1,-1": {
+            "real": 0.010278171746148364,
+            "imag": 0.002067620075661898
+          },
+          "-1,0": {
+            "real": -0.001282102902541076,
+            "imag": -0.0019446892883773189
+          },
+          "0,0": {
+            "real": -0.00526360578382981,
+            "imag": 0.004563478570611713
+          },
+          "1,0": {
+            "real": -0.004110619915534449,
+            "imag": 0.0006845012409822803
+          },
+          "-1,1": {
+            "real": 0.005816889144549373,
+            "imag": -1.2420718834815422e-05
+          },
+          "0,1": {
+            "real": -0.01861354928841398,
+            "imag": 0.009975586967495842
+          },
+          "1,1": {
+            "real": -0.0008409169106383821,
+            "imag": 0.014768459476944277
+          }
+        },
+        "actual_prepared_state_v_expectation": {
+          "real": 0.012503654997508192,
+          "imag": -0.0028430375459573822
+        },
+        "actual_O_expectation": 0.3416691033316721,
+        "direct_O_diagonal_expectation": 0.34166910333167255,
+        "kernel_quadratic_form_v_expectation": {
+          "real": 0.012503654997508211,
+          "imag": -0.002843037545957375
+        },
+        "factorization_l2_error": 7.118952181679165e-12,
+        "actual_readout_identity_error": 2.0456685677126058e-17,
+        "projector_character_identity_error": 4.440892098500626e-16,
+        "endpoint_high_energy_cap_mass": [
+          {
+            "epsilon": 1.0,
+            "cap_sites": 328,
+            "eigenvectors_with_lambda_at_least_epsilon": 2563,
+            "maximum_cap_mass": 3.175367635786922e-32
+          },
+          {
+            "epsilon": 2.0,
+            "cap_sites": 682,
+            "eigenvectors_with_lambda_at_least_epsilon": 1501,
+            "maximum_cap_mass": 8.51701956274663e-32
+          },
+          {
+            "epsilon": 4.0,
+            "cap_sites": 1496,
+            "eigenvectors_with_lambda_at_least_epsilon": 0,
+            "maximum_cap_mass": 0.0
+          }
+        ]
+      }
+    ]
+  },
+  "interpretation": "The scan can expose likely oscillation and prioritize proof work, but finite double-precision values prove neither convergence nor nonconvergence and do not force an axiom revision."
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-zwtt4lib/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 262, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-zwtt4lib/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 250, in main
+    "finite_spin_coefficient_expansion_check": verify_finite_spin_expansion(),
+                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-zwtt4lib/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 193, in verify_finite_spin_expansion
+    raise ArithmeticError((spin, side, "1/S cell expansion", max_residual))
+ArithmeticError: (128, '+', '1/S cell expansion', 146.30668604651146)

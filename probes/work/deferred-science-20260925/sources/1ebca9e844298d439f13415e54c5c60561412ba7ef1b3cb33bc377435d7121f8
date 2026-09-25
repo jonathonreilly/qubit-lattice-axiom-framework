@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-ehs9jx4w/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 262, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-ehs9jx4w/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 251, in main
+    "principal_bloch_matrix_check": verify_principal_bands(),
+                                    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/postmark-mutation-ehs9jx4w/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 164, in verify_principal_bands
+    raise ArithmeticError(("principal Bloch bands", maximum_error))
+ArithmeticError: ('principal Bloch bands', 0.009831000000002366)

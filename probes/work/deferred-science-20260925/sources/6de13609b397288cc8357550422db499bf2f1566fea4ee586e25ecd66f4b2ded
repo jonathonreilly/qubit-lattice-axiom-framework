@@ -1,0 +1,96 @@
+{
+  "runner_sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+  "mutations": [
+    {
+      "mutation": "label_reflection",
+      "before": "if NEG_LEFT[r] != -POS_LEFT[r] - 1:",
+      "after": "if NEG_LEFT[r] == -POS_LEFT[r] - 1:",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('left Casimir reflection', 0)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/label_reflection.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/label_reflection.stderr"
+    },
+    {
+      "mutation": "diagonal_coefficient",
+      "before": "diagonal[i] = weight(left) + weight(previous_right)",
+      "after": "diagonal[i] = weight(left) - weight(previous_right)",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('physical coefficient mismatch', 1, np.float64(2.0))",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/diagonal_coefficient.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/diagonal_coefficient.stderr"
+    },
+    {
+      "mutation": "staggered_link_sign",
+      "before": "return lo, hi, diagonal, -positive_links, positive_links",
+      "after": "return lo, hi, diagonal, positive_links, positive_links",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('physical coefficient mismatch', 1, np.float64(2.0))",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/staggered_link_sign.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/staggered_link_sign.stderr"
+    },
+    {
+      "mutation": "generator_phase_sign",
+      "before": "np.exp(-1j * time * (eigenvalues**2 - casimir * eigenvalues))",
+      "after": "np.exp(+1j * time * (eigenvalues**2 - casimir * eigenvalues))",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('finite-time readout identities', 3, 1.441698742021876, 1.6829500065255886e-16, 0.0)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/generator_phase_sign.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/generator_phase_sign.stderr"
+    },
+    {
+      "mutation": "kernel_phase_order",
+      "before": "before_character = evolve(eigenvalues, eigenvectors, basis_b, plus)",
+      "after": "before_character = evolve(eigenvalues, eigenvectors, basis_b, minus)",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('dense identity check', 2.4771182072877383e-15, 0.0, 3.3228424179391444e-15, 1.5841484482597525e-15, 6.039829538330028e-15, 0.411382108905646, 6.662783593823664e-16, 1.0408340855860843e-17)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/kernel_phase_order.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/kernel_phase_order.stderr"
+    },
+    {
+      "mutation": "character_sign",
+      "before": "omega = np.exp(2j * np.pi * np.remainder(nodes, 3) / 3)",
+      "after": "omega = np.exp(-2j * np.pi * np.remainder(nodes, 3) / 3)",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('dense identity check', 2.4771182072877383e-15, 0.0, 3.3228424179391444e-15, 1.5841484482597525e-15, 6.039829538330028e-15, 0.4958025361150261, 0.03896913058132954, 0.07976036590807788)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/character_sign.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/character_sign.stderr"
+    },
+    {
+      "mutation": "projector_formula",
+      "before": "observable = (1.0 + omega + np.conjugate(omega)) / 3.0",
+      "after": "observable = (1.0 + omega + np.conjugate(omega)) / 2.0",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('finite-time readout identities', 3, 7.299157365557721e-16, 1.6829500065255886e-16, 0.28249125354893245)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/projector_formula.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/projector_formula.stderr"
+    },
+    {
+      "mutation": "bessel_character_prefactor",
+      "before": "formula = (np.exp(1j * b * phi) * (1j ** m)",
+      "after": "formula = (np.exp(-1j * b * phi) * (1j ** m)",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('homogeneous Fourier/Bessel kernel', 1.7320508075688767)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/bessel_character_prefactor.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/bessel_character_prefactor.stderr"
+    },
+    {
+      "mutation": "arcsine_low_mass_formula",
+      "before": "np.arccos(1.0 - epsilon / 2.0) / np.pi",
+      "after": "np.arccos(1.0 - epsilon) / np.pi",
+      "exit_code": 1,
+      "detected": true,
+      "failure": "ArithmeticError: ('prepared-state low-energy arcsine check', 32, 0.25, 0.16133858123769892, 0.2300534561626159, 0.06871487492491699)",
+      "stdout_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/arcsine_low_mass_formula.stdout",
+      "stderr_path": "/Users/jonreilly/Projects/Physics-worktrees/postmark-moving-index-central-match-20260924/outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/arcsine_low_mass_formula.stderr"
+    }
+  ],
+  "all_detected": true
+}

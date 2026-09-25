@@ -82,6 +82,15 @@
       ],
       "file": "unit-23.json",
       "sha256": "75e4855ed18f544d7c4166cc8b6adc695a64cbe73e536f3b140e74b0b350c18c"
+    },
+    {
+      "unit": 25,
+      "prs": [
+        9078,
+        9091
+      ],
+      "file": "unit-25.json",
+      "sha256": "20cf8bb52dcb54f838d384b7da2434020fa5606f98698468ce100a74940c9947"
     }
   ],
   "task_ids": [
@@ -90,10 +99,11 @@
     "J:derive:deferred-20260925-integer-gauge:a1",
     "J:derive:deferred-20260925-nonlinear-weights:a1",
     "J:derive:deferred-20260925-ring-limits:a1",
-    "J:derive:deferred-20260925-matter-clocks:a1"
+    "J:derive:deferred-20260925-matter-clocks:a1",
+    "J:derive:deferred-20260925-spectral-readout:a1"
   ],
   "science_authority": "current origin/main, not frozen originals",
   "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
   "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction",
-  "main_at_latest_supplement": "4c7f75ea51c73381edb925b5088feeb5a50d9b76"
+  "main_at_latest_supplement": "ddb9249c52edf56a20a13d28266f6a333c08c800"
 }

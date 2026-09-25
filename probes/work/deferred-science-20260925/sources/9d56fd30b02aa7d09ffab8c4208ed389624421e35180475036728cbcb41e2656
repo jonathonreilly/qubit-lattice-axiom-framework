@@ -1,0 +1,214 @@
+{
+  "base": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "observable": "1[n mod 3=0]",
+  "operator": "H_S=C N_S",
+  "prepared_state": "delta_0",
+  "spins": [
+    {
+      "S": 8,
+      "anchors": 16,
+      "candidate_pole_modes_rel_gap_le_1e-8": 0,
+      "candidate_pole_prepared_mass": 0.0,
+      "character_expectation_difference": 2.179298796140383e-15,
+      "dimension": 77,
+      "direct_character_expectation": "(-0.04567795128272571+0.13803526836445768j)",
+      "direct_period_three_readout": 0.3028813658115159,
+      "generic_modes_reconstructed": 77,
+      "interior": 61,
+      "interior_pole_count_with_multiplicity": 61,
+      "interpretation": "actual supplied-generator finite readout plus sampled full-spectrum reconstruction and finite pole-neighborhood weights; no asymptotic pole-mass or phase-cancellation bound",
+      "max_full_eigenvector_reconstruction_l2_error": 1.0012085785918316e-13,
+      "max_normalized_QV_operator_norm_on_selected_pairs": 0.9931404118771846,
+      "max_normalized_T_isometry_error": 1.6909615593393099e-13,
+      "max_reconstruction_equation_residual": 1.386859813732773e-14,
+      "max_two_energy_QV_vs_direct_overlap_error": 2.6793062412441745e-15,
+      "min_anchor_norm_among_generic_modes": 0.26481986636851973,
+      "min_relative_full_to_interior_spectrum_gap": 0.0006914077529994364,
+      "period_three_readout_difference": 2.7755575615628914e-15,
+      "prepared_mass_near_poles": {
+        "1e-02": {
+          "modes": 20,
+          "prepared_mass": 0.19533005647160923
+        },
+        "1e-03": {
+          "modes": 1,
+          "prepared_mass": 0.01241153670980531
+        },
+        "1e-04": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-08": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "reconstructed_basis_orthogonality_error": 1.0180609096175481e-13,
+      "schur_character_expectation_with_direct_pole_fallback": "(-0.04567795128272788+0.13803526836445792j)",
+      "schur_period_three_readout_with_direct_pole_fallback": 0.30288136581151315,
+      "selected_two_energy_pairs_checked": 49,
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E",
+      "unitary_character_compression_norm": 1.0000000000000537
+    },
+    {
+      "S": 16,
+      "anchors": 32,
+      "candidate_pole_modes_rel_gap_le_1e-8": 0,
+      "candidate_pole_prepared_mass": 0.0,
+      "character_expectation_difference": 1.3347228920484555e-16,
+      "dimension": 157,
+      "direct_character_expectation": "(-0.04849585759934034+0.0075545751776264596j)",
+      "direct_period_three_readout": 0.3010027616004398,
+      "generic_modes_reconstructed": 157,
+      "interior": 125,
+      "interior_pole_count_with_multiplicity": 125,
+      "interpretation": "actual supplied-generator finite readout plus sampled full-spectrum reconstruction and finite pole-neighborhood weights; no asymptotic pole-mass or phase-cancellation bound",
+      "max_full_eigenvector_reconstruction_l2_error": 7.179955960443019e-13,
+      "max_normalized_QV_operator_norm_on_selected_pairs": 0.9984177482377713,
+      "max_normalized_T_isometry_error": 3.941355196546997e-13,
+      "max_reconstruction_equation_residual": 5.306605394387269e-14,
+      "max_two_energy_QV_vs_direct_overlap_error": 2.7873136056466704e-15,
+      "min_anchor_norm_among_generic_modes": 0.2995771495217941,
+      "min_relative_full_to_interior_spectrum_gap": 1.9418253270557924e-05,
+      "period_three_readout_difference": 3.885780586188048e-16,
+      "prepared_mass_near_poles": {
+        "1e-02": {
+          "modes": 78,
+          "prepared_mass": 0.3727046052633046
+        },
+        "1e-03": {
+          "modes": 13,
+          "prepared_mass": 0.04617435414177163
+        },
+        "1e-04": {
+          "modes": 1,
+          "prepared_mass": 0.007147731849422648
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-08": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "reconstructed_basis_orthogonality_error": 7.240254429766869e-13,
+      "schur_character_expectation_with_direct_pole_fallback": "(-0.048495857599340206+0.00755457517762648j)",
+      "schur_period_three_readout_with_direct_pole_fallback": 0.30100276160043943,
+      "selected_two_energy_pairs_checked": 49,
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E",
+      "unitary_character_compression_norm": 1.0000000000004299
+    },
+    {
+      "S": 32,
+      "anchors": 64,
+      "candidate_pole_modes_rel_gap_le_1e-8": 0,
+      "candidate_pole_prepared_mass": 0.0,
+      "character_expectation_difference": 2.0635945279918194e-14,
+      "dimension": 317,
+      "direct_character_expectation": "(-0.004077562703518188-0.03946403650957628j)",
+      "direct_period_three_readout": 0.33061495819765463,
+      "generic_modes_reconstructed": 317,
+      "interior": 253,
+      "interior_pole_count_with_multiplicity": 253,
+      "interpretation": "actual supplied-generator finite readout plus sampled full-spectrum reconstruction and finite pole-neighborhood weights; no asymptotic pole-mass or phase-cancellation bound",
+      "max_full_eigenvector_reconstruction_l2_error": 2.720346541223768e-12,
+      "max_normalized_QV_operator_norm_on_selected_pairs": 0.9996195864008881,
+      "max_normalized_T_isometry_error": 1.9837986541372635e-12,
+      "max_reconstruction_equation_residual": 2.402393077459022e-13,
+      "max_two_energy_QV_vs_direct_overlap_error": 5.087414061986691e-15,
+      "min_anchor_norm_among_generic_modes": 0.3196038652698265,
+      "min_relative_full_to_interior_spectrum_gap": 4.06328671428727e-05,
+      "period_three_readout_difference": 1.5765166949677223e-14,
+      "prepared_mass_near_poles": {
+        "1e-02": {
+          "modes": 222,
+          "prepared_mass": 0.6152213636055128
+        },
+        "1e-03": {
+          "modes": 45,
+          "prepared_mass": 0.10860324677419386
+        },
+        "1e-04": {
+          "modes": 6,
+          "prepared_mass": 0.01578860186079772
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-08": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "reconstructed_basis_orthogonality_error": 2.7275557882468748e-12,
+      "schur_character_expectation_with_direct_pole_fallback": "(-0.004077562703534262-0.03946403650956334j)",
+      "schur_period_three_readout_with_direct_pole_fallback": 0.33061495819763886,
+      "selected_two_energy_pairs_checked": 49,
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E",
+      "unitary_character_compression_norm": 1.000000000001773
+    },
+    {
+      "S": 64,
+      "anchors": 128,
+      "candidate_pole_modes_rel_gap_le_1e-8": 0,
+      "candidate_pole_prepared_mass": 0.0,
+      "character_expectation_difference": 1.8369239091146913e-14,
+      "dimension": 637,
+      "direct_character_expectation": "(-0.0014346318741759838-0.0873914166870557j)",
+      "direct_period_three_readout": 0.33237691208388265,
+      "generic_modes_reconstructed": 637,
+      "interior": 509,
+      "interior_pole_count_with_multiplicity": 509,
+      "interpretation": "actual supplied-generator finite readout plus sampled full-spectrum reconstruction and finite pole-neighborhood weights; no asymptotic pole-mass or phase-cancellation bound",
+      "max_full_eigenvector_reconstruction_l2_error": 1.3524004473892959e-11,
+      "max_normalized_QV_operator_norm_on_selected_pairs": 0.9999067013570637,
+      "max_normalized_T_isometry_error": 5.171916360034069e-10,
+      "max_reconstruction_equation_residual": 8.573985975332193e-13,
+      "max_two_energy_QV_vs_direct_overlap_error": 1.1739883098428188e-14,
+      "min_anchor_norm_among_generic_modes": 0.3466106487591794,
+      "min_relative_full_to_interior_spectrum_gap": 4.984266142899357e-06,
+      "period_three_readout_difference": 1.099120794378905e-14,
+      "prepared_mass_near_poles": {
+        "1e-02": {
+          "modes": 542,
+          "prepared_mass": 0.7070508740101609
+        },
+        "1e-03": {
+          "modes": 186,
+          "prepared_mass": 0.24160556111454298
+        },
+        "1e-04": {
+          "modes": 21,
+          "prepared_mass": 0.020919435837226035
+        },
+        "1e-06": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        },
+        "1e-08": {
+          "modes": 0,
+          "prepared_mass": 0.0
+        }
+      },
+      "reconstructed_basis_orthogonality_error": 1.3534289979120286e-11,
+      "schur_character_expectation_with_direct_pole_fallback": "(-0.0014346318741715776-0.08739141668707354j)",
+      "schur_period_three_readout_with_direct_pole_fallback": 0.33237691208387166,
+      "selected_two_energy_pairs_checked": 49,
+      "target_generator": "G_S=N_S^2-C*N_S, evaluated via H_S=C*N_S eigenvalues",
+      "target_phase": "exp(-it*(E^2/C^2-E)) for H_S eigenvalue E",
+      "unitary_character_compression_norm": 1.0000000000081584
+    }
+  ],
+  "status": "author-only finite pole-aware Schur diagnostic",
+  "time": 0.25
+}

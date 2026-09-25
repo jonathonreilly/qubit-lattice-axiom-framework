@@ -1,0 +1,559 @@
+{
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "exact_side_runner_sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+  "derivation": "A_plus(lambda)=pi(2-sqrt(lambda)) gives principal Weyl count N_{<=lambda}~5S sqrt(lambda), hence lambda_j~(j/(5S))^2 and theta_j~(S+1)j^2/(100S). A quadratic phase predicts lag-derivative aliases at 2*a*h=2*pi*m, i.e. h near 100*pi*m.",
+  "rows": [
+    {
+      "S": 96,
+      "dimension": 957,
+      "principal_weyl_quadratic_coefficient": 0.010104166666666666,
+      "fitted_theta_coefficients_a_b": [
+        0.009991043050445174,
+        0.180615215469926
+      ],
+      "fit_residual_abs_quantiles_rad": {
+        "0.5": 0.9968357143916364,
+        "0.9": 2.1261481050275846,
+        "0.99": 3.182374613781753,
+        "1.0": 3.5562028789404394
+      },
+      "fit_residual_rms_rad": 1.3443254562678169,
+      "q_exact_real_imag": [
+        -0.02775343983454769,
+        1.734723475976807e-18
+      ],
+      "q_quadratic_fit_real_imag": [
+        -0.004570901300884437,
+        0.0
+      ],
+      "q_fit_absolute_error": 0.02318253853366325,
+      "lag_resonance_bins": {
+        "0.01": {
+          "weyl_alias_lag_count": 3,
+          "weyl_alias_sum_abs_Lh": 0.0018140437213924909,
+          "weyl_alias_signed_real_Lh": -0.001028062693469543,
+          "weyl_alias_signed_readout_contribution": -0.002056125386939086,
+          "fitted_alias_lag_count": 3,
+          "fitted_alias_sum_abs_Lh": 0.000539295432734692,
+          "fitted_alias_signed_real_Lh": -0.0005044156316205083,
+          "fitted_alias_signed_readout_contribution": -0.0010088312632410166,
+          "all_lag_sum_abs_Lh": 0.3886525284676429,
+          "all_lag_signed_real_Lh": -0.014097061227677371
+        },
+        "0.03": {
+          "weyl_alias_lag_count": 10,
+          "weyl_alias_sum_abs_Lh": 0.004056950352884695,
+          "weyl_alias_signed_real_Lh": -0.0019068189011658015,
+          "weyl_alias_signed_readout_contribution": -0.003813637802331603,
+          "fitted_alias_lag_count": 10,
+          "fitted_alias_sum_abs_Lh": 0.0034409524074351184,
+          "fitted_alias_signed_real_Lh": -0.0022097311959956706,
+          "fitted_alias_signed_readout_contribution": -0.004419462391991341,
+          "all_lag_sum_abs_Lh": 0.3886525284676429,
+          "all_lag_signed_real_Lh": -0.014097061227677371
+        },
+        "0.1": {
+          "weyl_alias_lag_count": 34,
+          "weyl_alias_sum_abs_Lh": 0.012901377747195849,
+          "weyl_alias_signed_real_Lh": -0.004210002351743808,
+          "weyl_alias_signed_readout_contribution": -0.008420004703487615,
+          "fitted_alias_lag_count": 35,
+          "fitted_alias_sum_abs_Lh": 0.012195100010079207,
+          "fitted_alias_signed_real_Lh": -0.002819254751929116,
+          "fitted_alias_signed_readout_contribution": -0.005638509503858232,
+          "all_lag_sum_abs_Lh": 0.3886525284676429,
+          "all_lag_signed_real_Lh": -0.014097061227677371
+        }
+      },
+      "largest_lag_terms": [
+        {
+          "h": 793,
+          "real": 0.0016942759458574695,
+          "imag": 0.0011847973474246622,
+          "abs": 0.0020674418335652734
+        },
+        {
+          "h": 445,
+          "real": -0.0011435463834459235,
+          "imag": -0.0015569353342578295,
+          "abs": 0.001931772752202699
+        },
+        {
+          "h": 491,
+          "real": 0.0006562339400450416,
+          "imag": -0.0016344879498400742,
+          "abs": 0.0017613045853115377
+        },
+        {
+          "h": 147,
+          "real": 0.0009801058910998757,
+          "imag": 0.0014321311019478086,
+          "abs": 0.0017353982398674163
+        },
+        {
+          "h": 791,
+          "real": 0.0004958623680271568,
+          "imag": -0.001599529989390022,
+          "abs": 0.0016746270256339302
+        },
+        {
+          "h": 485,
+          "real": 0.0015438079819165196,
+          "imag": -0.0004436591150973803,
+          "abs": 0.0016062927801114427
+        },
+        {
+          "h": 383,
+          "real": -0.0009828642696975483,
+          "imag": 0.00125426375358132,
+          "abs": 0.0015934866601876518
+        },
+        {
+          "h": 305,
+          "real": 0.0002511969942687404,
+          "imag": -0.0015695898984594528,
+          "abs": 0.001589563581388176
+        },
+        {
+          "h": 483,
+          "real": -0.0014493085732254383,
+          "imag": -0.0004227612834950481,
+          "abs": 0.0015097093903288594
+        },
+        {
+          "h": 283,
+          "real": -0.001395397296954424,
+          "imag": -0.0004599554989947886,
+          "abs": 0.0014692490181733176
+        },
+        {
+          "h": 775,
+          "real": 0.001404828330901177,
+          "imag": 0.00032459776392801084,
+          "abs": 0.0014418413045996607
+        },
+        {
+          "h": 201,
+          "real": -9.024360648843116e-05,
+          "imag": -0.0014348891388669873,
+          "abs": 0.0014377241562102527
+        }
+      ],
+      "scope": "finite float64 diagnostic; a fitted phase is a discriminator, not a theorem or asymptotic substitution"
+    },
+    {
+      "S": 192,
+      "dimension": 1917,
+      "principal_weyl_quadratic_coefficient": 0.010052083333333333,
+      "fitted_theta_coefficients_a_b": [
+        0.009997489377260218,
+        0.17587615347504057
+      ],
+      "fit_residual_abs_quantiles_rad": {
+        "0.5": 1.4170119779519155,
+        "0.9": 3.126116365745293,
+        "0.99": 4.337080485997157,
+        "1.0": 4.937118796762661
+      },
+      "fit_residual_rms_rad": 1.92278422499668,
+      "q_exact_real_imag": [
+        0.009589238342634535,
+        -1.734723475976807e-18
+      ],
+      "q_quadratic_fit_real_imag": [
+        0.009285939091664648,
+        8.673617379884035e-19
+      ],
+      "q_fit_absolute_error": 0.00030329925096988716,
+      "lag_resonance_bins": {
+        "0.01": {
+          "weyl_alias_lag_count": 6,
+          "weyl_alias_sum_abs_Lh": 0.0012093249545029289,
+          "weyl_alias_signed_real_Lh": 2.1965424134066817e-05,
+          "weyl_alias_signed_readout_contribution": 4.3930848268133634e-05,
+          "fitted_alias_lag_count": 6,
+          "fitted_alias_sum_abs_Lh": 0.0012760690128213405,
+          "fitted_alias_signed_real_Lh": -0.0006655860771766784,
+          "fitted_alias_signed_readout_contribution": -0.0013311721543533567,
+          "all_lag_sum_abs_Lh": 0.3781346960770703,
+          "all_lag_signed_real_Lh": 0.004698650376840064
+        },
+        "0.03": {
+          "weyl_alias_lag_count": 19,
+          "weyl_alias_sum_abs_Lh": 0.004409310677355813,
+          "weyl_alias_signed_real_Lh": -0.0009533139587517445,
+          "weyl_alias_signed_readout_contribution": -0.001906627917503489,
+          "fitted_alias_lag_count": 19,
+          "fitted_alias_sum_abs_Lh": 0.0037304130454441516,
+          "fitted_alias_signed_real_Lh": -0.00034078905550261366,
+          "fitted_alias_signed_readout_contribution": -0.0006815781110052273,
+          "all_lag_sum_abs_Lh": 0.3781346960770703,
+          "all_lag_signed_real_Lh": 0.004698650376840064
+        },
+        "0.1": {
+          "weyl_alias_lag_count": 64,
+          "weyl_alias_sum_abs_Lh": 0.014459788704017115,
+          "weyl_alias_signed_real_Lh": -0.0011648746721538746,
+          "weyl_alias_signed_readout_contribution": -0.0023297493443077493,
+          "fitted_alias_lag_count": 65,
+          "fitted_alias_sum_abs_Lh": 0.014942758058318609,
+          "fitted_alias_signed_real_Lh": -0.0025832819352292367,
+          "fitted_alias_signed_readout_contribution": -0.005166563870458473,
+          "all_lag_sum_abs_Lh": 0.3781346960770703,
+          "all_lag_signed_real_Lh": 0.004698650376840064
+        }
+      },
+      "largest_lag_terms": [
+        {
+          "h": 169,
+          "real": -0.001093938307858282,
+          "imag": 0.0004545074758973709,
+          "abs": 0.001184600382849187
+        },
+        {
+          "h": 1581,
+          "real": 0.0006673864368055577,
+          "imag": -0.0008532268220760293,
+          "abs": 0.0010832362004392112
+        },
+        {
+          "h": 491,
+          "real": -0.00021087269354234844,
+          "imag": -0.0009786927750424959,
+          "abs": 0.001001152755977921
+        },
+        {
+          "h": 1011,
+          "real": -0.0004077962046549217,
+          "imag": -0.0008775425580854405,
+          "abs": 0.0009676666191318669
+        },
+        {
+          "h": 921,
+          "real": 0.000732505941838361,
+          "imag": 0.0006067359176498144,
+          "abs": 0.0009511537355206396
+        },
+        {
+          "h": 427,
+          "real": 0.0008299780183366817,
+          "imag": 0.0004490146162083441,
+          "abs": 0.0009436512260845167
+        },
+        {
+          "h": 381,
+          "real": -0.0005646651455102668,
+          "imag": 0.0007500988478107672,
+          "abs": 0.0009388796557819172
+        },
+        {
+          "h": 409,
+          "real": 0.000927575405657182,
+          "imag": -1.9234114001702256e-05,
+          "abs": 0.0009277748025903248
+        },
+        {
+          "h": 1443,
+          "real": 0.0007276242230928369,
+          "imag": -0.0005092569298928916,
+          "abs": 0.0008881326650199214
+        },
+        {
+          "h": 493,
+          "real": -0.0008306565209816312,
+          "imag": 0.00025329536593455133,
+          "abs": 0.0008684174101509167
+        },
+        {
+          "h": 667,
+          "real": 0.000711408357815455,
+          "imag": 0.0004963250876938142,
+          "abs": 0.000867433250598543
+        },
+        {
+          "h": 999,
+          "real": 0.000220853246957213,
+          "imag": 0.0008170158194173429,
+          "abs": 0.0008463397697554665
+        }
+      ],
+      "scope": "finite float64 diagnostic; a fitted phase is a discriminator, not a theorem or asymptotic substitution"
+    },
+    {
+      "S": 384,
+      "dimension": 3837,
+      "principal_weyl_quadratic_coefficient": 0.010026041666666667,
+      "fitted_theta_coefficients_a_b": [
+        0.00999931963146197,
+        0.17315761376379496
+      ],
+      "fit_residual_abs_quantiles_rad": {
+        "0.5": 2.044441069916502,
+        "0.9": 4.3347136843542105,
+        "0.99": 6.1126869457488455,
+        "1.0": 6.696042833767251
+      },
+      "fit_residual_rms_rad": 2.7199298394398412,
+      "q_exact_real_imag": [
+        0.023642224388823692,
+        0.0
+      ],
+      "q_quadratic_fit_real_imag": [
+        0.0015683566288487143,
+        -1.734723475976807e-18
+      ],
+      "q_fit_absolute_error": 0.022073867759974976,
+      "lag_resonance_bins": {
+        "0.01": {
+          "weyl_alias_lag_count": 12,
+          "weyl_alias_sum_abs_Lh": 0.0013395998988454038,
+          "weyl_alias_signed_real_Lh": -0.0003906553511052218,
+          "weyl_alias_signed_readout_contribution": -0.0007813107022104436,
+          "fitted_alias_lag_count": 12,
+          "fitted_alias_sum_abs_Lh": 0.001010468442815729,
+          "fitted_alias_signed_real_Lh": -0.0003823595383456955,
+          "fitted_alias_signed_readout_contribution": -0.000764719076691391,
+          "all_lag_sum_abs_Lh": 0.37157255599556327,
+          "all_lag_signed_real_Lh": 0.01178257968091021
+        },
+        "0.03": {
+          "weyl_alias_lag_count": 37,
+          "weyl_alias_sum_abs_Lh": 0.0033820584625512172,
+          "weyl_alias_signed_real_Lh": -0.0011458211549218416,
+          "weyl_alias_signed_readout_contribution": -0.0022916423098436832,
+          "fitted_alias_lag_count": 37,
+          "fitted_alias_sum_abs_Lh": 0.0033168605162545222,
+          "fitted_alias_signed_real_Lh": -0.0004008224417332838,
+          "fitted_alias_signed_readout_contribution": -0.0008016448834665676,
+          "all_lag_sum_abs_Lh": 0.37157255599556327,
+          "all_lag_signed_real_Lh": 0.01178257968091021
+        },
+        "0.1": {
+          "weyl_alias_lag_count": 124,
+          "weyl_alias_sum_abs_Lh": 0.012016745510776554,
+          "weyl_alias_signed_real_Lh": -0.002211014897702278,
+          "weyl_alias_signed_readout_contribution": -0.004422029795404556,
+          "fitted_alias_lag_count": 125,
+          "fitted_alias_sum_abs_Lh": 0.012160268783068882,
+          "fitted_alias_signed_real_Lh": -0.0009674808236153819,
+          "fitted_alias_signed_readout_contribution": -0.0019349616472307638,
+          "all_lag_sum_abs_Lh": 0.37157255599556327,
+          "all_lag_signed_real_Lh": 0.01178257968091021
+        }
+      },
+      "largest_lag_terms": [
+        {
+          "h": 1929,
+          "real": 0.0004185618053606051,
+          "imag": 0.0003487145905412834,
+          "abs": 0.0005447897305962218
+        },
+        {
+          "h": 843,
+          "real": 0.0003650523970569849,
+          "imag": -0.0003314586232289272,
+          "abs": 0.0004930801877077058
+        },
+        {
+          "h": 2023,
+          "real": -0.00021706001286141244,
+          "imag": 0.0004165089200866373,
+          "abs": 0.0004696751320808175
+        },
+        {
+          "h": 1639,
+          "real": 0.00016097556743153584,
+          "imag": 0.0004194238067165429,
+          "abs": 0.00044925434104803135
+        },
+        {
+          "h": 1785,
+          "real": 8.693877266939644e-05,
+          "imag": -0.0004293127554190194,
+          "abs": 0.0004380271591565205
+        },
+        {
+          "h": 711,
+          "real": -0.00013244474199765498,
+          "imag": 0.0004150388104492372,
+          "abs": 0.0004356590683802453
+        },
+        {
+          "h": 3015,
+          "real": -0.00042083340064517384,
+          "imag": 5.128171027471205e-05,
+          "abs": 0.0004239464174955143
+        },
+        {
+          "h": 471,
+          "real": 0.0001395589610926728,
+          "imag": 0.0003989023063814269,
+          "abs": 0.00042261064072936916
+        },
+        {
+          "h": 691,
+          "real": 0.00036671555796559364,
+          "imag": -0.0002068846670886319,
+          "abs": 0.00042104817530823086
+        },
+        {
+          "h": 1771,
+          "real": 0.0002540087312004728,
+          "imag": 0.00032219750575716855,
+          "abs": 0.00041028242497359634
+        },
+        {
+          "h": 565,
+          "real": -0.0002911149159268942,
+          "imag": -0.000285664886219108,
+          "abs": 0.0004078631161231653
+        },
+        {
+          "h": 993,
+          "real": 6.212203855640653e-05,
+          "imag": -0.000401257853398635,
+          "abs": 0.0004060381910467094
+        }
+      ],
+      "scope": "finite float64 diagnostic; a fitted phase is a discriminator, not a theorem or asymptotic substitution"
+    },
+    {
+      "S": 512,
+      "dimension": 5117,
+      "principal_weyl_quadratic_coefficient": 0.01001953125,
+      "fitted_theta_coefficients_a_b": [
+        0.009999607192522466,
+        0.1724241011438762
+      ],
+      "fit_residual_abs_quantiles_rad": {
+        "0.5": 2.380652055289829,
+        "0.9": 4.9655735613613174,
+        "0.99": 7.037130434937393,
+        "1.0": 7.878764700869681
+      },
+      "fit_residual_rms_rad": 3.1339134430400524,
+      "q_exact_real_imag": [
+        0.012503551074628472,
+        -2.6020852139652106e-18
+      ],
+      "q_quadratic_fit_real_imag": [
+        0.008333705310076031,
+        0.0
+      ],
+      "q_fit_absolute_error": 0.004169845764552441,
+      "lag_resonance_bins": {
+        "0.01": {
+          "weyl_alias_lag_count": 16,
+          "weyl_alias_sum_abs_Lh": 0.0010581413275941765,
+          "weyl_alias_signed_real_Lh": -0.0002773391250108639,
+          "weyl_alias_signed_readout_contribution": -0.0005546782500217278,
+          "fitted_alias_lag_count": 16,
+          "fitted_alias_sum_abs_Lh": 0.001116659838373559,
+          "fitted_alias_signed_real_Lh": -0.00022062499565576426,
+          "fitted_alias_signed_readout_contribution": -0.00044124999131152853,
+          "all_lag_sum_abs_Lh": 0.3720044246427695,
+          "all_lag_signed_real_Lh": 0.006197713526893455
+        },
+        "0.03": {
+          "weyl_alias_lag_count": 49,
+          "weyl_alias_sum_abs_Lh": 0.0038310976097084624,
+          "weyl_alias_signed_real_Lh": -0.00010317605571609977,
+          "weyl_alias_signed_readout_contribution": -0.00020635211143219955,
+          "fitted_alias_lag_count": 49,
+          "fitted_alias_sum_abs_Lh": 0.003679562290101335,
+          "fitted_alias_signed_real_Lh": 0.0001566002410840283,
+          "fitted_alias_signed_readout_contribution": 0.0003132004821680566,
+          "all_lag_sum_abs_Lh": 0.3720044246427695,
+          "all_lag_signed_real_Lh": 0.006197713526893455
+        },
+        "0.1": {
+          "weyl_alias_lag_count": 164,
+          "weyl_alias_sum_abs_Lh": 0.013153497204786322,
+          "weyl_alias_signed_real_Lh": -0.00031775325317973796,
+          "weyl_alias_signed_readout_contribution": -0.0006355065063594759,
+          "fitted_alias_lag_count": 165,
+          "fitted_alias_sum_abs_Lh": 0.012755540900384523,
+          "fitted_alias_signed_real_Lh": 0.000615184068870998,
+          "fitted_alias_signed_readout_contribution": 0.001230368137741996,
+          "all_lag_sum_abs_Lh": 0.3720044246427695,
+          "all_lag_signed_real_Lh": 0.006197713526893455
+        }
+      },
+      "largest_lag_terms": [
+        {
+          "h": 1365,
+          "real": 0.00042813904734805637,
+          "imag": -0.0001881594387720961,
+          "abs": 0.0004676612216798945
+        },
+        {
+          "h": 2557,
+          "real": -2.2347492975549327e-05,
+          "imag": 0.0004303180254441114,
+          "abs": 0.00043089791536326925
+        },
+        {
+          "h": 2689,
+          "real": 0.0002891378663088847,
+          "imag": 0.0003187354377904088,
+          "abs": 0.0004303405454254782
+        },
+        {
+          "h": 2569,
+          "real": 0.00010243154101293002,
+          "imag": -0.0003800158372282094,
+          "abs": 0.0003935787813621823
+        },
+        {
+          "h": 2331,
+          "real": -1.5636126850949243e-05,
+          "imag": 0.00037779695282028666,
+          "abs": 0.00037812038562234766
+        },
+        {
+          "h": 1035,
+          "real": 0.0003650717007853692,
+          "imag": 6.274555441888955e-05,
+          "abs": 0.00037042455549498335
+        },
+        {
+          "h": 2415,
+          "real": 0.00022288109246177388,
+          "imag": -0.00029085728930147936,
+          "abs": 0.0003664340924596922
+        },
+        {
+          "h": 2645,
+          "real": -0.00030821341676148865,
+          "imag": 0.0001714980442307617,
+          "abs": 0.0003527138917689058
+        },
+        {
+          "h": 2571,
+          "real": 7.213959261610572e-05,
+          "imag": -0.0003414919915045738,
+          "abs": 0.0003490285104179565
+        },
+        {
+          "h": 1577,
+          "real": 1.1308553971174022e-05,
+          "imag": -0.00034280774060656066,
+          "abs": 0.00034299421338077106
+        },
+        {
+          "h": 1431,
+          "real": -0.0001812283070627027,
+          "imag": 0.00028046896004644845,
+          "abs": 0.0003339259451290803
+        },
+        {
+          "h": 1009,
+          "real": 8.915600734523436e-05,
+          "imag": -0.000318625914880424,
+          "abs": 0.000330864424317772
+        }
+      ],
+      "scope": "finite float64 diagnostic; a fitted phase is a discriminator, not a theorem or asymptotic substitution"
+    }
+  ]
+}

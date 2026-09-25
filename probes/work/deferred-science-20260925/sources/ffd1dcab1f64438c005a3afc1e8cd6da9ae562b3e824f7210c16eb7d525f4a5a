@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_label_reflection_334uqjha/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_label_reflection_334uqjha/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 565, in main
+    label_geometry = verify_signed_label_geometry()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_label_reflection_334uqjha/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 74, in verify_signed_label_geometry
+    raise ArithmeticError(("left Casimir reflection", r))
+ArithmeticError: ('left Casimir reflection', 0)

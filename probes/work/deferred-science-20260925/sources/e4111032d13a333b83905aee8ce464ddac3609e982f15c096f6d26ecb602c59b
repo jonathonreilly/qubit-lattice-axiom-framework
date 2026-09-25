@@ -1,0 +1,12 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_interface_identity_b3g5m_32/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_interface_identity_b3g5m_32/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 491, in main
+    "actual_center_interface": verify_actual_interface(),
+                               ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_interface_identity_b3g5m_32/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 452, in verify_actual_interface
+    raise ArithmeticError("R_m=C-m(m+1) is not invariant under m -> -m-1 at the seam")
+ArithmeticError: R_m=C-m(m+1) is not invariant under m -> -m-1 at the seam

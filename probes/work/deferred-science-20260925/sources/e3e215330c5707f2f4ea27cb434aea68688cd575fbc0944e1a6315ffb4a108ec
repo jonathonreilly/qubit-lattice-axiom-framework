@@ -1,0 +1,14 @@
+/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_arcsine_low_mass_formula_pnv3jcz3/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py:348: RuntimeWarning: invalid value encountered in arccos
+  arcsine_limit = float(np.arccos(1.0 - epsilon) / np.pi)
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_arcsine_low_mass_formula_pnv3jcz3/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_arcsine_low_mass_formula_pnv3jcz3/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 574, in main
+    rows = [kernel_and_readout(spin, time, limit_profile) for spin in spins]
+            ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_arcsine_low_mass_formula_pnv3jcz3/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 351, in kernel_and_readout
+    raise ArithmeticError(("prepared-state low-energy arcsine check",
+                           spin, epsilon, low_spectral_mass,
+                           arcsine_limit, low_mass_error))
+ArithmeticError: ('prepared-state low-energy arcsine check', 32, 0.25, 0.16133858123769892, 0.2300534561626159, 0.06871487492491699)

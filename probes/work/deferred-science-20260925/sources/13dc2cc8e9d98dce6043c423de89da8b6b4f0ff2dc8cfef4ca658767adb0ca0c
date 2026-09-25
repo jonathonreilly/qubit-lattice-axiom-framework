@@ -1,0 +1,417 @@
+===== runner cache v1 =====
+runner: scripts/postmark_electric_principal_weyl_count_2026_09_24.py
+runner_sha256: 89035c92f1495bb2eaaca765492794a0bad4c88c5d3909e0dae13afbb7f5b09a
+input_fingerprint_sha256: 95ddd9922e45afb67a777c9f854e8fa8a8e794ed81e9180729b07fb9b8f08970
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+{
+  "claim_id": "postmark_electric_principal_weyl_count_2026_09_24",
+  "source_revision": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+  "inputs_sha256": {
+    "exact_side_runner": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+    "exact_side_note": "36463f97761bb0b51f288efb6e1de58aeabc2ece3ad51c2871199232410c0121",
+    "five_site_note": "a3af4101711b8b61bfe87551b2651de498784de17d58cf3356e864b3a9b700e3",
+    "this_runner": "89035c92f1495bb2eaaca765492794a0bad4c88c5d3909e0dae13afbb7f5b09a"
+  },
+  "limiting_measure": "1_(0,4)(lambda)/(4*sqrt(lambda)) d lambda",
+  "limiting_moments": "4^m/(2m+1)",
+  "limiting_counting_fraction": "sqrt(lambda)/2 for 0<=lambda<=4",
+  "rows": [
+    {
+      "S": 8,
+      "dimension": 77,
+      "eigenvalue_min_max": [
+        1.2666109802744188e-17,
+        3.954538667919716
+      ],
+      "moments_0_through_8": {
+        "0": {
+          "finite_empirical_moment": 1.0,
+          "limit_formula": 1.0,
+          "absolute_error": 0.0
+        },
+        "1": {
+          "finite_empirical_moment": 1.4487734487734487,
+          "limit_formula": 1.3333333333333333,
+          "absolute_error": 0.11544011544011545
+        },
+        "2": {
+          "finite_empirical_moment": 3.526294692961359,
+          "limit_formula": 3.2,
+          "absolute_error": 0.3262946929613588
+        },
+        "3": {
+          "finite_empirical_moment": 10.104205636613043,
+          "limit_formula": 9.142857142857142,
+          "absolute_error": 0.9613484937559011
+        },
+        "4": {
+          "finite_empirical_moment": 31.455345451873217,
+          "limit_formula": 28.444444444444443,
+          "absolute_error": 3.0109010074287745
+        },
+        "5": {
+          "finite_empirical_moment": 102.95672837636711,
+          "limit_formula": 93.0909090909091,
+          "absolute_error": 9.865819285458016
+        },
+        "6": {
+          "finite_empirical_moment": 348.455341637975,
+          "limit_formula": 315.0769230769231,
+          "absolute_error": 33.37841856105189
+        },
+        "7": {
+          "finite_empirical_moment": 1207.8530098364492,
+          "limit_formula": 1092.2666666666667,
+          "absolute_error": 115.5863431697826
+        },
+        "8": {
+          "finite_empirical_moment": 4262.406654675296,
+          "limit_formula": 3855.0588235294117,
+          "absolute_error": 407.3478311458839
+        }
+      },
+      "cdf_samples": {
+        "0.25": {
+          "finite_counting_fraction": 0.2077922077922078,
+          "limit_formula": 0.25,
+          "absolute_error": 0.042207792207792194
+        },
+        "1.0": {
+          "finite_counting_fraction": 0.45454545454545453,
+          "limit_formula": 0.5,
+          "absolute_error": 0.04545454545454547
+        },
+        "2.25": {
+          "finite_counting_fraction": 0.7272727272727273,
+          "limit_formula": 0.75,
+          "absolute_error": 0.022727272727272707
+        },
+        "3.24": {
+          "finite_counting_fraction": 0.8831168831168831,
+          "limit_formula": 0.9,
+          "absolute_error": 0.016883116883116944
+        }
+      },
+      "scope": "finite eigensolve corroboration only; no weak-limit certificate or local-gap bound"
+    },
+    {
+      "S": 16,
+      "dimension": 157,
+      "eigenvalue_min_max": [
+        -1.2487734190923563e-16,
+        3.976189251005977
+      ],
+      "moments_0_through_8": {
+        "0": {
+          "finite_empirical_moment": 1.0,
+          "limit_formula": 1.0,
+          "absolute_error": 0.0
+        },
+        "1": {
+          "finite_empirical_moment": 1.3952791307605845,
+          "limit_formula": 1.3333333333333333,
+          "absolute_error": 0.06194579742725126
+        },
+        "2": {
+          "finite_empirical_moment": 3.3626771427941717,
+          "limit_formula": 3.2,
+          "absolute_error": 0.16267714279417156
+        },
+        "3": {
+          "finite_empirical_moment": 9.612582623962682,
+          "limit_formula": 9.142857142857142,
+          "absolute_error": 0.4697254811055398
+        },
+        "4": {
+          "finite_empirical_moment": 29.908491645186842,
+          "limit_formula": 28.444444444444443,
+          "absolute_error": 1.4640472007423995
+        },
+        "5": {
+          "finite_empirical_moment": 97.88362750840369,
+          "limit_formula": 93.0909090909091,
+          "absolute_error": 4.792718417494598
+        },
+        "6": {
+          "finite_empirical_moment": 331.2938396363007,
+          "limit_formula": 315.0769230769231,
+          "absolute_error": 16.21691655937758
+        },
+        "7": {
+          "finite_empirical_moment": 1148.4527622527216,
+          "limit_formula": 1092.2666666666667,
+          "absolute_error": 56.18609558605499
+        },
+        "8": {
+          "finite_empirical_moment": 4053.2091475105044,
+          "limit_formula": 3855.0588235294117,
+          "absolute_error": 198.1503239810927
+        }
+      },
+      "cdf_samples": {
+        "0.25": {
+          "finite_counting_fraction": 0.2229299363057325,
+          "limit_formula": 0.25,
+          "absolute_error": 0.02707006369426751
+        },
+        "1.0": {
+          "finite_counting_fraction": 0.4713375796178344,
+          "limit_formula": 0.5,
+          "absolute_error": 0.0286624203821656
+        },
+        "2.25": {
+          "finite_counting_fraction": 0.7388535031847133,
+          "limit_formula": 0.75,
+          "absolute_error": 0.011146496815286677
+        },
+        "3.24": {
+          "finite_counting_fraction": 0.89171974522293,
+          "limit_formula": 0.9,
+          "absolute_error": 0.008280254777070062
+        }
+      },
+      "scope": "finite eigensolve corroboration only; no weak-limit certificate or local-gap bound"
+    },
+    {
+      "S": 32,
+      "dimension": 317,
+      "eigenvalue_min_max": [
+        -1.4939808295838435e-17,
+        3.9878047045389895
+      ],
+      "moments_0_through_8": {
+        "0": {
+          "finite_empirical_moment": 1.0,
+          "limit_formula": 1.0,
+          "absolute_error": 0.0
+        },
+        "1": {
+          "finite_empirical_moment": 1.3654526335914348,
+          "limit_formula": 1.3333333333333333,
+          "absolute_error": 0.0321193002581015
+        },
+        "2": {
+          "finite_empirical_moment": 3.280830603134876,
+          "limit_formula": 3.2,
+          "absolute_error": 0.080830603134876
+        },
+        "3": {
+          "finite_empirical_moment": 9.374630357633176,
+          "limit_formula": 9.142857142857142,
+          "absolute_error": 0.23177321477603385
+        },
+        "4": {
+          "finite_empirical_moment": 29.165990112079996,
+          "limit_formula": 28.444444444444443,
+          "absolute_error": 0.721545667635553
+        },
+        "5": {
+          "finite_empirical_moment": 95.45258081033985,
+          "limit_formula": 93.0909090909091,
+          "absolute_error": 2.3616717194307597
+        },
+        "6": {
+          "finite_empirical_moment": 323.0690913655258,
+          "limit_formula": 315.0769230769231,
+          "absolute_error": 7.992168288602727
+        },
+        "7": {
+          "finite_empirical_moment": 1119.964648698474,
+          "limit_formula": 1092.2666666666667,
+          "absolute_error": 27.69798203180744
+        },
+        "8": {
+          "finite_empirical_moment": 3952.7777626935467,
+          "limit_formula": 3855.0588235294117,
+          "absolute_error": 97.71893916413501
+        }
+      },
+      "cdf_samples": {
+        "0.25": {
+          "finite_counting_fraction": 0.2302839116719243,
+          "limit_formula": 0.25,
+          "absolute_error": 0.019716088328075698
+        },
+        "1.0": {
+          "finite_counting_fraction": 0.48580441640378547,
+          "limit_formula": 0.5,
+          "absolute_error": 0.014195583596214534
+        },
+        "2.25": {
+          "finite_counting_fraction": 0.7444794952681388,
+          "limit_formula": 0.75,
+          "absolute_error": 0.005520504731861164
+        },
+        "3.24": {
+          "finite_counting_fraction": 0.8958990536277602,
+          "limit_formula": 0.9,
+          "absolute_error": 0.004100946372239789
+        }
+      },
+      "scope": "finite eigensolve corroboration only; no weak-limit certificate or local-gap bound"
+    },
+    {
+      "S": 64,
+      "dimension": 637,
+      "eigenvalue_min_max": [
+        -4.648516814531601e-17,
+        3.9938271374663707
+      ],
+      "moments_0_through_8": {
+        "0": {
+          "finite_empirical_moment": 1.0,
+          "limit_formula": 1.0,
+          "absolute_error": 0.0
+        },
+        "1": {
+          "finite_empirical_moment": 1.3496920661755825,
+          "limit_formula": 1.3333333333333333,
+          "absolute_error": 0.016358732842249202
+        },
+        "2": {
+          "finite_empirical_moment": 3.2402295105570684,
+          "limit_formula": 3.2,
+          "absolute_error": 0.04022951055706825
+        },
+        "3": {
+          "finite_empirical_moment": 9.257946414939221,
+          "limit_formula": 9.142857142857142,
+          "absolute_error": 0.11508927208207886
+        },
+        "4": {
+          "finite_empirical_moment": 28.802604135580943,
+          "limit_formula": 28.444444444444443,
+          "absolute_error": 0.3581596911364997
+        },
+        "5": {
+          "finite_empirical_moment": 94.26312786168344,
+          "limit_formula": 93.0909090909091,
+          "absolute_error": 1.17221877077435
+        },
+        "6": {
+          "finite_empirical_moment": 319.04413572475045,
+          "limit_formula": 315.0769230769231,
+          "absolute_error": 3.9672126478273526
+        },
+        "7": {
+          "finite_empirical_moment": 1106.0176133507628,
+          "limit_formula": 1092.2666666666667,
+          "absolute_error": 13.750946684096107
+        },
+        "8": {
+          "finite_empirical_moment": 3903.5818841363334,
+          "limit_formula": 3855.0588235294117,
+          "absolute_error": 48.52306060692172
+        }
+      },
+      "cdf_samples": {
+        "0.25": {
+          "finite_counting_fraction": 0.24175824175824176,
+          "limit_formula": 0.25,
+          "absolute_error": 0.00824175824175824
+        },
+        "1.0": {
+          "finite_counting_fraction": 0.49293563579277866,
+          "limit_formula": 0.5,
+          "absolute_error": 0.007064364207221341
+        },
+        "2.25": {
+          "finite_counting_fraction": 0.7472527472527473,
+          "limit_formula": 0.75,
+          "absolute_error": 0.0027472527472527375
+        },
+        "3.24": {
+          "finite_counting_fraction": 0.8979591836734694,
+          "limit_formula": 0.9,
+          "absolute_error": 0.0020408163265306367
+        }
+      },
+      "scope": "finite eigensolve corroboration only; no weak-limit certificate or local-gap bound"
+    },
+    {
+      "S": 128,
+      "dimension": 1277,
+      "eigenvalue_min_max": [
+        3.336639344041352e-18,
+        3.9968944069735604
+      ],
+      "moments_0_through_8": {
+        "0": {
+          "finite_empirical_moment": 1.0,
+          "limit_formula": 1.0,
+          "absolute_error": 0.0
+        },
+        "1": {
+          "finite_empirical_moment": 1.341589116934676,
+          "limit_formula": 1.3333333333333333,
+          "absolute_error": 0.008255783601342825
+        },
+        "2": {
+          "finite_empirical_moment": 3.220060224480233,
+          "limit_formula": 3.2,
+          "absolute_error": 0.020060224480233035
+        },
+        "3": {
+          "finite_empirical_moment": 9.20020099436789,
+          "limit_formula": 9.142857142857142,
+          "absolute_error": 0.05734385151074761
+        },
+        "4": {
+          "finite_empirical_moment": 28.622872642181996,
+          "limit_formula": 28.444444444444443,
+          "absolute_error": 0.1784281977375528
+        },
+        "5": {
+          "finite_empirical_moment": 93.67487079239572,
+          "limit_formula": 93.0909090909091,
+          "absolute_error": 0.5839617014866292
+        },
+        "6": {
+          "finite_empirical_moment": 317.0533344459111,
+          "limit_formula": 315.0769230769231,
+          "absolute_error": 1.9764113689880105
+        },
+        "7": {
+          "finite_empirical_moment": 1099.1177109631694,
+          "limit_formula": 1092.2666666666667,
+          "absolute_error": 6.851044296502778
+        },
+        "8": {
+          "finite_empirical_moment": 3879.2365529157655,
+          "limit_formula": 3855.0588235294117,
+          "absolute_error": 24.177729386353803
+        }
+      },
+      "cdf_samples": {
+        "0.25": {
+          "finite_counting_fraction": 0.245105716523101,
+          "limit_formula": 0.25,
+          "absolute_error": 0.004894283476898992
+        },
+        "1.0": {
+          "finite_counting_fraction": 0.49725920125293654,
+          "limit_formula": 0.5,
+          "absolute_error": 0.0027407987470634554
+        },
+        "2.25": {
+          "finite_counting_fraction": 0.7486296006264683,
+          "limit_formula": 0.75,
+          "absolute_error": 0.0013703993735316722
+        },
+        "3.24": {
+          "finite_counting_fraction": 0.898981989036805,
+          "limit_formula": 0.9,
+          "absolute_error": 0.0010180109631949819
+        }
+      },
+      "scope": "finite eigensolve corroboration only; no weak-limit certificate or local-gap bound"
+    }
+  ]
+}
+
+----- stderr -----
+

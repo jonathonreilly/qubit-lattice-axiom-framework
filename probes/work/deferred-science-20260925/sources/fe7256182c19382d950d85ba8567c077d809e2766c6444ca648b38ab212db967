@@ -1,0 +1,158 @@
+{
+  "claim_status": "conditional primitive-cell symbol theorem; no global finite-spin propagator or readout limit is claimed",
+  "source_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "source_sha256": {
+    "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+    "docs/ZERO_MODE_AND_GOEGENBAUER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b697aecbc9c8551df69eea76ea2e2aeb404dc0478fdc32e4dd1554b26a08fec8",
+    "docs/POSTMARK_ELECTRIC_CORE_AND_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-24.md": "6b791a007320753af0ac5f2d3a11ea713598360ab757185b3bc3c1c2c77d808e",
+    "docs/POSTMARK_ELECTRIC_EXACT_SIDE_FIXED_INDEX_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4f4c34845ffcd4ff751f8aac991cb6c6c64ab3656b457d8ddf041986a70ccb9e",
+    "docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md": "8669bf6b6999433dd07c1a4b030a9606eec9fe11bd45dba4da7456d15e97882d",
+    "docs/POSTMARK_ELECTRIC_FIVE_SITE_INTER_FIBER_PHASE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b920b9634a6ab0bdb3e3f27ca2e0e464e4f2a3c63a6a38c2e44a8177f018c0af",
+    "scripts/core_derivation.py": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5"
+  },
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0",
+  "operator": "N_S=J M_S J on I_S=[-5S,5S-4]; C=S(S+1)",
+  "exact_signed_five_site_family": {
+    "edges_checked": 2001,
+    "positive_raw_label_shift": "+1 per five residues",
+    "negative_raw_label_shift": "-1 per five residues; converted by f(m)=f(-m-1)",
+    "cell_left_offsets": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "cell_right_offsets": [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "previous_right_offsets": [
+      -1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "physical_hop_crosscheck": {
+    "sentinel_spins": [
+      {
+        "spin": 1,
+        "dimension": 7,
+        "max_abs_entry_error": 0.0
+      },
+      {
+        "spin": 2,
+        "dimension": 17,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "spin": 3,
+        "dimension": 27,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "spin": 5,
+        "dimension": 47,
+        "max_abs_entry_error": 2.220446049250313e-16
+      },
+      {
+        "spin": 8,
+        "dimension": 77,
+        "max_abs_entry_error": 2.220446049250313e-16
+      }
+    ],
+    "largest_abs_entry_error": 2.220446049250313e-16
+  },
+  "subprincipal_cell_coefficients": {
+    "diagonal_1_over_S": [
+      "2*u**2",
+      "2*u*(u - 2)",
+      "2*u*(u - 1)",
+      "2*u*(u - 2)",
+      "2*u*(u - 3)"
+    ],
+    "positive_link_1_over_S": [
+      "u*(u - 1)",
+      "u*(u - 2)",
+      "u*(u - 1)",
+      "u*(u - 3)",
+      "u*(u - 2)"
+    ],
+    "staggered_offdiagonal_sign": "minus the positive link"
+  },
+  "principal_five_cell_bloch_symbol": {
+    "matrix_samples": 15,
+    "maximum_eigenvalue_error": 1.7763568394002505e-15,
+    "eigenvalues": "2*w - 2*w*cos((theta+2*pi*l)/5), l=0,...,4"
+  },
+  "period_three_character_action": {
+    "basis_vectors_checked": 15,
+    "shift_angle_mod_2pi": "4*pi/3",
+    "internal_multiplier": [
+      "1",
+      "exp(2*I*pi/3)",
+      "exp(-2*I*pi/3)",
+      "1",
+      "exp(2*I*pi/3)"
+    ],
+    "maximum_dft_error": 1.2658490090568385e-15,
+    "fourier_convention": "F_s(theta)=sum_h exp(-i*h*theta) psi_(h,s)"
+  },
+  "principal_inter_fiber_phase_stationary_set": {
+    "phase_difference": "2*sqrt(3)*(1-x^2)*sin(k+pi/3)",
+    "gradient": [
+      "-4*sqrt(3)*x*sin(k + pi/3)",
+      "-2*sqrt(3)*(x - 1)*(x + 1)*cos(k + pi/3)"
+    ],
+    "all_joint_critical_points_for_x_in_(-1,1)": [
+      {
+        "point": [
+          "0",
+          "pi/6"
+        ],
+        "hessian": [
+          [
+            "-4*sqrt(3)",
+            "0"
+          ],
+          [
+            "0",
+            "-2*sqrt(3)"
+          ]
+        ],
+        "determinant": "24"
+      },
+      {
+        "point": [
+          "0",
+          "7*pi/6"
+        ],
+        "hessian": [
+          [
+            "4*sqrt(3)",
+            "0"
+          ],
+          [
+            "0",
+            "2*sqrt(3)"
+          ]
+        ],
+        "determinant": "24"
+      }
+    ],
+    "determinant_at_each": 24
+  },
+  "same_fiber_bragg_crossing_rule": "cos(q_l)=cos(q_l') within one five-cell fiber only at theta=0 or pi with q=-q' mod 2*pi; first-order gaps are not evaluated here",
+  "readout_equal_energy_points": [
+    "k=-pi/3 mod 2*pi",
+    "k=2*pi/3 mod 2*pi"
+  ],
+  "scope_limit": "The finite N_S has a slowly varying five-site cell structure. These local-symbol identities do not control transport for time theta=C/4, central matching, alias sums, or p_S."
+}

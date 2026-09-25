@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_generator_phase_sign_c98zgm54/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_generator_phase_sign_c98zgm54/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 570, in main
+    dense = verify_small_dense_identities(limit_profile)
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_generator_phase_sign_c98zgm54/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 481, in verify_small_dense_identities
+    production = kernel_and_readout(spin, time, profile, fixed_sites=(-1, 0, 1))
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_generator_phase_sign_c98zgm54/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 396, in kernel_and_readout
+    raise ArithmeticError(("finite-time readout identities", spin,
+                           factorization_error, identity_error, observable_error))
+ArithmeticError: ('finite-time readout identities', 3, 1.441698742021876, 1.6829500065255886e-16, 0.0)

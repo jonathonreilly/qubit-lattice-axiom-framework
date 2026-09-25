@@ -1,0 +1,19 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_projected_derivative_kra4wp2w/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_projected_derivative_kra4wp2w/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 486, in main
+    "outer_two_band_crossings": verify_crossing_normal_forms(),
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_projected_derivative_kra4wp2w/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 330, in verify_crossing_normal_forms
+    verify_principal_projected_derivatives()}
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_central_wrong_projected_derivative_kra4wp2w/scripts/postmark_electric_two_band_central_match_2026_09_24.py", line 264, in verify_principal_projected_derivatives
+    raise ArithmeticError((theta0, derivative, target))
+ArithmeticError: (0, Matrix([
+[sqrt(3)/15,           0],
+[         0, -sqrt(3)/15]]), Matrix([
+[sqrt(3)/16,           0],
+[         0, -sqrt(3)/16]]))

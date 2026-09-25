@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_staggered_link_sign_7afejzkm/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 617, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_staggered_link_sign_7afejzkm/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 566, in main
+    physical = verify_physical_coefficients()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_staggered_link_sign_7afejzkm/scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py", line 166, in verify_physical_coefficients
+    raise ArithmeticError(("physical coefficient mismatch", spin, worst))
+ArithmeticError: ('physical coefficient mismatch', 1, np.float64(2.0))

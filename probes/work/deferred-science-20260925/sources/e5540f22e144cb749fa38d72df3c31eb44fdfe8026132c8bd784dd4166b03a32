@@ -1,0 +1,12 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_bragg_principal_slope_8op7fcyn/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 474, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_bragg_principal_slope_8op7fcyn/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 437, in main
+    bragg_crossings = verify_bragg_crossing_compressions()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_wrong_bragg_principal_slope_8op7fcyn/scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py", line 327, in verify_bragg_crossing_compressions
+    raise ArithmeticError(("five-cell crossing slope", str(theta),
+                           pair, slope_square))
+ArithmeticError: ('five-cell crossing slope', '0', (1, 4), 11*sqrt(5)*u**4/450 + 11*u**4/90 - 11*u**2/45 - 11*sqrt(5)*u**2/225 + 11*sqrt(5)/450 + 11/90)

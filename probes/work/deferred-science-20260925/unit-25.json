@@ -1,0 +1,1396 @@
+[
+  {
+    "pr": 9078,
+    "head": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+    "fetch_ref": "refs/pull/9078/head",
+    "landing": "ddb9249c52edf56a20a13d28266f6a333c08c800",
+    "findings": "Preserve four conditional proofs; correct growing-window bound, unwrapped fiber shift, quadratic long-time scale and simple-spectrum hypothesis. Recover exact off-pole Schur/divided-difference and phase-sensitivity lemmas. Preserve all exploratory packet/attempt paths at frozen branch; no uniform selected-time cancellation result.",
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/APPROACH_REGISTRY.md",
+        "sha256": "7a8f9f8b6b70d88a7215b328ab5104039a93da81918dbd2ef89988a483868f85",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7a8f9f8b6b70d88a7215b328ab5104039a93da81918dbd2ef89988a483868f85",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/ARTIFACT_PLAN.md",
+        "sha256": "f93bf502adc49899cd5672233e70d717873ff4fabdd2ab83a096da51e24f2ec6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f93bf502adc49899cd5672233e70d717873ff4fabdd2ab83a096da51e24f2ec6",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "7b50f272074278b2238bca6423c48e2c9d93d411e7eacec76e14767626c9ea69",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7b50f272074278b2238bca6423c48e2c9d93d411e7eacec76e14767626c9ea69",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "8cfd359bab10fdac86058f8ffdb60dab6d31569f391ecf47d06624ee66f44d56",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8cfd359bab10fdac86058f8ffdb60dab6d31569f391ecf47d06624ee66f44d56",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/GOAL.md",
+        "sha256": "611f9c588abf6dc76c989410e014e61a94cf2cc292dbb52c74312479df41814e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/611f9c588abf6dc76c989410e014e61a94cf2cc292dbb52c74312479df41814e",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/HANDOFF.md",
+        "sha256": "9ea0c446ca98030f365b3c0be87d16bdb9fead45664d10441b01b439efd51942",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9ea0c446ca98030f365b3c0be87d16bdb9fead45664d10441b01b439efd51942",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/LITERATURE_BRIDGES.md",
+        "sha256": "aee6c9bc734758af3e5c6bbc20a1ac50758e13e07a5b8c722343570b647326d0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/aee6c9bc734758af3e5c6bbc20a1ac50758e13e07a5b8c722343570b647326d0",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/NO_GO_LEDGER.md",
+        "sha256": "481364f1c700631df8e2b172e88781395975dac6c9ff06fbbe06501478ee64c0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/481364f1c700631df8e2b172e88781395975dac6c9ff06fbbe06501478ee64c0",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/OPPORTUNITY_QUEUE.md",
+        "sha256": "3a6de33944231510470ac2688ad4a7b6c656a6b2ff74c50999b89d45dcd22497",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3a6de33944231510470ac2688ad4a7b6c656a6b2ff74c50999b89d45dcd22497",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/PR_BACKLOG.md",
+        "sha256": "aa99cc83623708e5ce31f7b375a5fc56d13e58b29a67b9370bc230f345814dcb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/aa99cc83623708e5ce31f7b375a5fc56d13e58b29a67b9370bc230f345814dcb",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/REVIEW_HISTORY.md",
+        "sha256": "c16995d95058422a68acdb01213e55dd74f2172b3a4e2efae286623d86b348d8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c16995d95058422a68acdb01213e55dd74f2172b3a4e2efae286623d86b348d8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/ROUTE_PORTFOLIO.md",
+        "sha256": "396fd2df70c2ae45f171c4547037c1ea6fa5057bfb1d059ea970c10661db6839",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/396fd2df70c2ae45f171c4547037c1ea6fa5057bfb1d059ea970c10661db6839",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/STATE.yaml",
+        "sha256": "970640af8943cbbdce7e0180efca48c4221834bd02a060af1ed0dc49e14b6c1a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/970640af8943cbbdce7e0180efca48c4221834bd02a060af1ed0dc49e14b6c1a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/TRACE_GATE.md",
+        "sha256": "8e981fb779b9585dbfe808b319fdac73c4c2c1589a419d270fd979d7cd29aea4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8e981fb779b9585dbfe808b319fdac73c4c2c1589a419d270fd979d7cd29aea4",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/POSTMARK_ELECTRIC_EXACT_SIDE_FIXED_INDEX_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "36463f97761bb0b51f288efb6e1de58aeabc2ece3ad51c2871199232410c0121",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/36463f97761bb0b51f288efb6e1de58aeabc2ece3ad51c2871199232410c0121",
+        "accepted_path": "docs/POSTMARK_ELECTRIC_EXACT_SIDE_FIXED_INDEX_KERNEL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "62702c159c6667d4aae328f35d3fbd4bcd1e60831c45eed9f85f3edde78a9d8e",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/POSTMARK_ELECTRIC_FIVE_SITE_INTER_FIBER_PHASE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "a3af4101711b8b61bfe87551b2651de498784de17d58cf3356e864b3a9b700e3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a3af4101711b8b61bfe87551b2651de498784de17d58cf3356e864b3a9b700e3",
+        "accepted_path": "docs/POSTMARK_ELECTRIC_FIVE_SITE_INTER_FIBER_PHASE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "ee3adbee2afc2235439822fd38b9935e5a6b1c8521cd8f9b373a7014daf7c707",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "1d6931d1d96530f7e13a48bea601ac4836f27d9b7594b2918e68cc16230afb07",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1d6931d1d96530f7e13a48bea601ac4836f27d9b7594b2918e68cc16230afb07",
+        "accepted_path": "docs/POSTMARK_ELECTRIC_MOVING_INDEX_CELL_SYMBOL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "081dbaf7cc43366f475e43feeaf8975e7d91e57dd446ee42919b2c2cb4033caa",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "59a56446318f4ba9403bf5161d41e605d13ace7190764b6e3276c8c7b48c7634",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/59a56446318f4ba9403bf5161d41e605d13ace7190764b6e3276c8c7b48c7634",
+        "accepted_path": "docs/POSTMARK_ELECTRIC_TWO_BAND_CENTRAL_MATCH_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "39f3aafcad5950b9e334b96c1692b3db78209ddf3ad7c934903a9b4398769fb2",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "df46ccf28655f264dd54746f778e0f23b6e2b992147e48f5d76f1f6e7be599f3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/df46ccf28655f264dd54746f778e0f23b6e2b992147e48f5d76f1f6e7be599f3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.txt",
+        "sha256": "f08b15facb401d0d1d68477276a3e8d3762a586f793cbcf436a8386a13bd6601",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f08b15facb401d0d1d68477276a3e8d3762a586f793cbcf436a8386a13bd6601",
+        "accepted_path": "logs/runner-cache/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.txt",
+        "accepted_sha256": "72a2044441f28f202171f910085f7808445acbd11e9a8a99a71521444eb89fc9",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "logs/runner-cache/postmark_electric_five_site_inter_fiber_phase_2026_09_24.txt",
+        "sha256": "9ff70a1bc7d5be2464f95888ec3bf3b109b2668b5277e2bb34bb4665e25e6b45",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9ff70a1bc7d5be2464f95888ec3bf3b109b2668b5277e2bb34bb4665e25e6b45",
+        "accepted_path": "logs/runner-cache/postmark_electric_five_site_inter_fiber_phase_2026_09_24.txt",
+        "accepted_sha256": "41a4eee3f55599a0ad89597a9221f352ce4d24e2a520282f8356e7c385aa0657",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "logs/runner-cache/postmark_electric_moving_index_cell_symbol_2026_09_24.txt",
+        "sha256": "2be965144b0fc0202fe7986c42e27c3fead941e63d0a65098d38c3da2ec96d6c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2be965144b0fc0202fe7986c42e27c3fead941e63d0a65098d38c3da2ec96d6c",
+        "accepted_path": "logs/runner-cache/postmark_electric_moving_index_cell_symbol_2026_09_24.txt",
+        "accepted_sha256": "1a8955930a8b02c73e562f9c0808a0c2c767e373bcbbb5f34d2d4ffe14c40e05",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "logs/runner-cache/postmark_electric_two_band_central_match_2026_09_24.txt",
+        "sha256": "18fd586189ce58b475b0036b9e78f07654de5d530dd58eb9499da6e4cd512d72",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/18fd586189ce58b475b0036b9e78f07654de5d530dd58eb9499da6e4cd512d72",
+        "accepted_path": "logs/runner-cache/postmark_electric_two_band_central_match_2026_09_24.txt",
+        "accepted_sha256": "7ce28bb8503d07508d428da3850a17a1c1a05d6ac3d7b66f1e516821a15b5809",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/CELL_SYMBOL_RESULTS.json",
+        "sha256": "342019791dcc4e18d460a024c1093966981f80b6f3c47046a80b785c9db0adcf",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/342019791dcc4e18d460a024c1093966981f80b6f3c47046a80b785c9db0adcf",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/EXACT_SIDE_FIXED_INDEX_KERNEL_RESULTS.json",
+        "sha256": "4db220ccf549992b3c2104ce2ce1baed912122b302490afb8dbe05dd95c5620e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4db220ccf549992b3c2104ce2ce1baed912122b302490afb8dbe05dd95c5620e",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/FIVE_SITE_INTER_FIBER_PHASE_AUTHOR_RUN.json",
+        "sha256": "fe7256182c19382d950d85ba8567c077d809e2766c6444ca648b38ab212db967",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fe7256182c19382d950d85ba8567c077d809e2766c6444ca648b38ab212db967",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/FIVE_SITE_INTER_FIBER_PHASE_CROSSING_CHECK.log",
+        "sha256": "aad6f5bc76b7fbefb97f04ef6a09180731eda8d59821dd7cc20c923974e728c6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/aad6f5bc76b7fbefb97f04ef6a09180731eda8d59821dd7cc20c923974e728c6",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/FIVE_SITE_INTER_FIBER_PHASE_RESULTS.json",
+        "sha256": "1b9053633d6928f81bcc5570d8d078912b6b4ae51995207f9140a1adb5240a78",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1b9053633d6928f81bcc5570d8d078912b6b4ae51995207f9140a1adb5240a78",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/TWO_BAND_MATCH_RESULTS.json",
+        "sha256": "670053a882f30f66263e0fb2df1ea7727dbb3a2037575b93b103c10923996f1d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/670053a882f30f66263e0fb2df1ea7727dbb3a2037575b93b103c10923996f1d",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/WEIGHTED_ALIAS_DIAGNOSTIC.json",
+        "sha256": "a31764a58f0d16331b49bb47679319393f1304555ade7318463dce9ac33a5311",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a31764a58f0d16331b49bb47679319393f1304555ade7318463dce9ac33a5311",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/WEIGHTED_ALIAS_DIAGNOSTIC.log",
+        "sha256": "a31764a58f0d16331b49bb47679319393f1304555ade7318463dce9ac33a5311",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a31764a58f0d16331b49bb47679319393f1304555ade7318463dce9ac33a5311",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/audit_lint_conformant_candidate.txt",
+        "sha256": "6915f2fb2aa3c899b5591eeba2a1ad2db206c0dd497a854f99595bd8a6b352a7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6915f2fb2aa3c899b5591eeba2a1ad2db206c0dd497a854f99595bd8a6b352a7",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/audit_lint_final_source.txt",
+        "sha256": "6915f2fb2aa3c899b5591eeba2a1ad2db206c0dd497a854f99595bd8a6b352a7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6915f2fb2aa3c899b5591eeba2a1ad2db206c0dd497a854f99595bd8a6b352a7",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/canonical_three_runner_precompute.txt",
+        "sha256": "1d975b068ec704ebce366a2fd96f1374e2f8c62d831a0e9edf5d70d76eebd833",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1d975b068ec704ebce366a2fd96f1374e2f8c62d831a0e9edf5d70d76eebd833",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/cell_central_mutations_final.log",
+        "sha256": "8296d71318944495491875d7ea271b5bf6f86e112978c9b8e6bb976c725904ad",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8296d71318944495491875d7ea271b5bf6f86e112978c9b8e6bb976c725904ad",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/changed_audit_evidence_conformant_candidate.txt",
+        "sha256": "ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/changed_audit_evidence_final_source.txt",
+        "sha256": "ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ff851df931d0021115f9637b04619e5759bf9b053ad915677979f3c3f27baa6c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/discrete_phase_alias_probe.py",
+        "sha256": "d5efe00b9885da27a4deae9e1298533d68fb7c723c8fdee459784dc5b8a721ed",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d5efe00b9885da27a4deae9e1298533d68fb7c723c8fdee459784dc5b8a721ed",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/discrete_phase_alias_probe.txt",
+        "sha256": "e9ae4b61978a921998c71c75cf972ebbbbd38d0160603c12d6edcab7c582e25a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e9ae4b61978a921998c71c75cf972ebbbbd38d0160603c12d6edcab7c582e25a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/endpoint_tail_and_scalar_run.txt",
+        "sha256": "7c7fc96bd076d75aee2b307628684f5b840d841650e9d94e28b2492280eec4a7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7c7fc96bd076d75aee2b307628684f5b840d841650e9d94e28b2492280eec4a7",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/exact_mutations_final.log",
+        "sha256": "a193a47f1660ff9152a176fee4adfa0144b7015e4a178aa3de76daedc7e42969",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a193a47f1660ff9152a176fee4adfa0144b7015e4a178aa3de76daedc7e42969",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/exact_mutations_final.txt",
+        "sha256": "2213593de48de47b9265af5de56bc0576f23d5623b6dd184f8e3663a8e1dc3f0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2213593de48de47b9265af5de56bc0576f23d5623b6dd184f8e3663a8e1dc3f0",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_canonical_precompute.txt",
+        "sha256": "cf55e75ede8a8bd4c48762a1ae04a37543c9527e2093fc39997e4d96f11195bb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/cf55e75ede8a8bd4c48762a1ae04a37543c9527e2093fc39997e4d96f11195bb",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_exact_cache_refresh.txt",
+        "sha256": "be0327192e059b3e09d26cb95931e3e276bec6affe67857ebd01103bf47d363f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/be0327192e059b3e09d26cb95931e3e276bec6affe67857ebd01103bf47d363f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_pipeline_author_source.log",
+        "sha256": "352925fa6c49298205a45c921a7f167365f68a498bc9cd767167d8a0a95cda8b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/352925fa6c49298205a45c921a7f167365f68a498bc9cd767167d8a0a95cda8b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_pipeline_author_source_external_v3.log",
+        "sha256": "6b3bd2738353e44f57855c0014c4cd59e636030e9ec139eca125de2d26863ece",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6b3bd2738353e44f57855c0014c4cd59e636030e9ec139eca125de2d26863ece",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_pipeline_author_source_v2.log",
+        "sha256": "1bccc7978926d3f2a424a633d70070ef196938a3bd037557a7d2220306b7a1aa",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1bccc7978926d3f2a424a633d70070ef196938a3bd037557a7d2220306b7a1aa",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_precompute_2026_09_24.log",
+        "sha256": "6b328bc626b3862a59ed8587916836a79bdae56eca14b9b5163f140be5435156",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6b328bc626b3862a59ed8587916836a79bdae56eca14b9b5163f140be5435156",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/final_precompute_v2_2026_09_24.log",
+        "sha256": "2e7ee8b5b1c9a6430bd0b2b33b053a9d78126f3b1d4bea941212869683b0ebdb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2e7ee8b5b1c9a6430bd0b2b33b053a9d78126f3b1d4bea941212869683b0ebdb",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/five_site_mutations_final.log",
+        "sha256": "d170bd60735b19fcad10baf4d98dec18d65a5eadc4c47071cec4be809e591afc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d170bd60735b19fcad10baf4d98dec18d65a5eadc4c47071cec4be809e591afc",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/five_site_mutations_slope_recheck.log",
+        "sha256": "bc8f4d08ff4133b66c242a243865d8c7b9ae848a0bac18387fad205118c66bda",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/bc8f4d08ff4133b66c242a243865d8c7b9ae848a0bac18387fad205118c66bda",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/five_site_runner_slope_recheck.log",
+        "sha256": "87d1249418f5d79a38de96eebe7a5a1d2995721b355f99a794be890b1f0e31e3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/87d1249418f5d79a38de96eebe7a5a1d2995721b355f99a794be890b1f0e31e3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/isolated_full_pipeline.txt",
+        "sha256": "3d673103535f3b037ac1dee612425494d6d95bd1b6adc8059d738456f9bdc5fd",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3d673103535f3b037ac1dee612425494d6d95bd1b6adc8059d738456f9bdc5fd",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/isolated_full_pipeline_conformant_source.txt",
+        "sha256": "20afefd489ffa96651e28986fd23c94d9a78b21cc8defbeca0f336381aef550c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/20afefd489ffa96651e28986fd23c94d9a78b21cc8defbeca0f336381aef550c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/isolated_full_pipeline_final_source.txt",
+        "sha256": "7dc7ddeae1c083ab56bb7aa334bda74b5d8829df77562794983928f6d10e637c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7dc7ddeae1c083ab56bb7aa334bda74b5d8829df77562794983928f6d10e637c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/isolated_full_pipeline_final_v2.txt",
+        "sha256": "65e4f547ec0e95f0ff9dd70228ef0e2c7f3e2b62de40aeeafaf493648a7e1e61",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/65e4f547ec0e95f0ff9dd70228ef0e2c7f3e2b62de40aeeafaf493648a7e1e61",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/isolated_full_pipeline_final_v3.txt",
+        "sha256": "802d4d2ad0aabd5022e5fd2f8d5e4e61a33515219ea8f17bfe47c0cf506ab34c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/802d4d2ad0aabd5022e5fd2f8d5e4e61a33515219ea8f17bfe47c0cf506ab34c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/kernel_bessel_quadrature_failed_prefactor_check.txt",
+        "sha256": "a28189409905d74664c19d299c65a49ec4065bc2edb37838801c9190b83092f5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a28189409905d74664c19d299c65a49ec4065bc2edb37838801c9190b83092f5",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/kernel_target_scalar_profile_run.txt",
+        "sha256": "8eabbee0b09829f12317dba860cb52699413051c90711bccdc14b33cb8802d07",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8eabbee0b09829f12317dba860cb52699413051c90711bccdc14b33cb8802d07",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/large_spin_640_768.txt",
+        "sha256": "09b86a830cee754e55ef4c73c4d5058788da969d75bb116649186ac59aecd636",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/09b86a830cee754e55ef4c73c4d5058788da969d75bb116649186ac59aecd636",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/pre_main_fast_forward_7f7c153/CELL_SYMBOL_RESULTS.json",
+        "sha256": "095bd6c8995545af438abb8a0b5f86505adfac116a47cfa88ed5f307b4bb2ca0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/095bd6c8995545af438abb8a0b5f86505adfac116a47cfa88ed5f307b4bb2ca0",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/pre_main_fast_forward_7f7c153/EXACT_SIDE_FIXED_INDEX_KERNEL_RESULTS.json",
+        "sha256": "c4b222f9c56505cce05b78efe45c86d922df7e848eb875fc0209a2da56890c59",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c4b222f9c56505cce05b78efe45c86d922df7e848eb875fc0209a2da56890c59",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/pre_main_fast_forward_7f7c153/TWO_BAND_MATCH_RESULTS.json",
+        "sha256": "730c44a4b52868c4e0fafd7d46b672362e331bd2c62c2da8eeb42eaebf6bb346",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/730c44a4b52868c4e0fafd7d46b672362e331bd2c62c2da8eeb42eaebf6bb346",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/promotion_value_gate_repo_search.txt",
+        "sha256": "2dbc1a4f244d8a7a67a0b999dcbc55907ba86e3484bd330349035e74377df82a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2dbc1a4f244d8a7a67a0b999dcbc55907ba86e3484bd330349035e74377df82a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/promotion_value_gate_repo_search_0e6ad.txt",
+        "sha256": "0079f1d8f6709765a621c0cc714583ffa2aa7e53d8c52d545bcbf6f50063fa91",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0079f1d8f6709765a621c0cc714583ffa2aa7e53d8c52d545bcbf6f50063fa91",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/schur_weyl_two_energy_probe.log",
+        "sha256": "6baf870bf141ec582de1ffccc214a25d3034ae8ff5cf74f36993e2ca2e7693b1",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6baf870bf141ec582de1ffccc214a25d3034ae8ff5cf74f36993e2ca2e7693b1",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/schur_weyl_two_energy_probe.py",
+        "sha256": "8a15c8de8388fb617a9755f503d7a07601e85b166cad08c30c5b3906d83c70bc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8a15c8de8388fb617a9755f503d7a07601e85b166cad08c30c5b3906d83c70bc",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/vocab_lint_fix_final.txt",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/vocab_lint_report_final.txt",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/CELL_CENTRAL_MUTATION_CHECKS.json",
+        "sha256": "c05e6bcd1dd1433a7dc424847647d8c1a38a3f70d4aad356f100ee04fc12b7ea",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c05e6bcd1dd1433a7dc424847647d8c1a38a3f70d4aad356f100ee04fc12b7ea",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/MUTATION_CHECKS.json",
+        "sha256": "9c93781f60282321d3cf06f665b99cadc7321af70f1b6b12b8faa3a2791cfe99",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9c93781f60282321d3cf06f665b99cadc7321af70f1b6b12b8faa3a2791cfe99",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_finite_spin_expansion.stderr",
+        "sha256": "968eed296e7c76612d28cbaf11b8fb78ffbd05a46317d2ddbb09c6e6cc294898",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/968eed296e7c76612d28cbaf11b8fb78ffbd05a46317d2ddbb09c6e6cc294898",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_finite_spin_expansion.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_principal_bands.stderr",
+        "sha256": "1ebca9e844298d439f13415e54c5c60561412ba7ef1b3cb33bc377435d7121f8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1ebca9e844298d439f13415e54c5c60561412ba7ef1b3cb33bc377435d7121f8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_principal_bands.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_resonance_projection.stderr",
+        "sha256": "25d1b00d2fdfd1fb6e0b67be9d259b0818fd14b1de3d322d6c8bf30d8daa2749",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/25d1b00d2fdfd1fb6e0b67be9d259b0818fd14b1de3d322d6c8bf30d8daa2749",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_resonance_projection.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_first_order_diagonal.log",
+        "sha256": "7dfe059db2d2b02efe93ebac66ca02b2ccf28d1ab7ed8ceaa8445c6c83936d74",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7dfe059db2d2b02efe93ebac66ca02b2ccf28d1ab7ed8ceaa8445c6c83936d74",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_principal_diagonal.log",
+        "sha256": "16393a9ac00f6b9ef0341a80987487ce106e187d520429d691210e477a1d929c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/16393a9ac00f6b9ef0341a80987487ce106e187d520429d691210e477a1d929c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_wrong_signed_residue.log",
+        "sha256": "e5c463274d0d65799fc4e8f71632989f9f9524bcdcbeb2eb51335ff9dda8cb02",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e5c463274d0d65799fc4e8f71632989f9f9524bcdcbeb2eb51335ff9dda8cb02",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_frozen_projection.stderr",
+        "sha256": "b630a9948536ebe7154013505ae7e31025114d47060725320c8349cbf3b210d2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b630a9948536ebe7154013505ae7e31025114d47060725320c8349cbf3b210d2",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_frozen_projection.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_interface_identity.stderr",
+        "sha256": "4e4aa31867fc4320ef81606e4804d2b11e6753c6c0d056fbf3041483820185e1",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4e4aa31867fc4320ef81606e4804d2b11e6753c6c0d056fbf3041483820185e1",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_interface_identity.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_casimir_second_order.log",
+        "sha256": "5c17713ff9cf08ec6f9c87941a043becb604fabb4fac0ff79b5b0f3e7098325a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5c17713ff9cf08ec6f9c87941a043becb604fabb4fac0ff79b5b0f3e7098325a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_interface_identity.log",
+        "sha256": "e4111032d13a333b83905aee8ce464ddac3609e982f15c096f6d26ecb602c59b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e4111032d13a333b83905aee8ce464ddac3609e982f15c096f6d26ecb602c59b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_outer_detuning.log",
+        "sha256": "f48925b806abfc485566b779bfd04cda9a04270aac530c8a2877d2b8dba5abff",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f48925b806abfc485566b779bfd04cda9a04270aac530c8a2877d2b8dba5abff",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_physical_hop_helper.log",
+        "sha256": "c5150ce31b39ce7158e5b284b9a9cb8d2a280caa15b1ce272106b0478444bbbf",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c5150ce31b39ce7158e5b284b9a9cb8d2a280caa15b1ce272106b0478444bbbf",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_projected_derivative.log",
+        "sha256": "71777e9da8ec093a8fe54a4612e0e4dece88764bbaeb79564d2265155d5c2a8f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/71777e9da8ec093a8fe54a4612e0e4dece88764bbaeb79564d2265155d5c2a8f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_wrong_projection_coefficient.log",
+        "sha256": "417f9ec8a29ea6c440d236b0533db8beaa3a4fd0382a51474948c7bfddc71344",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/417f9ec8a29ea6c440d236b0533db8beaa3a4fd0382a51474948c7bfddc71344",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/MUTATION_CHECKS.json",
+        "sha256": "6de13609b397288cc8357550422db499bf2f1566fea4ee586e25ecd66f4b2ded",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6de13609b397288cc8357550422db499bf2f1566fea4ee586e25ecd66f4b2ded",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/arcsine_low_mass_formula.stderr",
+        "sha256": "e3e215330c5707f2f4ea27cb434aea68688cd575fbc0944e1a6315ffb4a108ec",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3e215330c5707f2f4ea27cb434aea68688cd575fbc0944e1a6315ffb4a108ec",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/arcsine_low_mass_formula.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/bessel_character_prefactor.stderr",
+        "sha256": "43158bac4c1a53582c6aced7033df38284d791e28b672d8832bfa805f84602da",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/43158bac4c1a53582c6aced7033df38284d791e28b672d8832bfa805f84602da",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/bessel_character_prefactor.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/character_sign.stderr",
+        "sha256": "649ec7f123ed77d64943fa2748bac09e5662ef0ada74d7d75c0f8d123840ad34",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/649ec7f123ed77d64943fa2748bac09e5662ef0ada74d7d75c0f8d123840ad34",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/character_sign.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/diagonal_coefficient.stderr",
+        "sha256": "e0a8e3b111aad889f380901bb0301251fc969b10c27ab2713909898f52672765",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e0a8e3b111aad889f380901bb0301251fc969b10c27ab2713909898f52672765",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/diagonal_coefficient.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/generator_phase_sign.stderr",
+        "sha256": "a388f2413d80726aa63c25cf5b4589a481502ac6eec17f3aaf053369de9b5772",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a388f2413d80726aa63c25cf5b4589a481502ac6eec17f3aaf053369de9b5772",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/generator_phase_sign.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/kernel_phase_order.stderr",
+        "sha256": "4289d61b67c77acc34cba6848e36eb96bf165a05810b7e8588ec99bb169490f5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4289d61b67c77acc34cba6848e36eb96bf165a05810b7e8588ec99bb169490f5",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/kernel_phase_order.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/label_reflection.stderr",
+        "sha256": "ffd1dcab1f64438c005a3afc1e8cd6da9ae562b3e824f7210c16eb7d525f4a5a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ffd1dcab1f64438c005a3afc1e8cd6da9ae562b3e824f7210c16eb7d525f4a5a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/label_reflection.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/projector_formula.stderr",
+        "sha256": "a2f6e17c4c48526a262061505df33af0eff40e8da8a8b2767153ea61fb31ca42",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a2f6e17c4c48526a262061505df33af0eff40e8da8a8b2767153ea61fb31ca42",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/projector_formula.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/staggered_link_sign.stderr",
+        "sha256": "975f4f05033d1037365952f6884f60e9b17d360e82d57a3ae0f1b4c3931c79e7",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/975f4f05033d1037365952f6884f60e9b17d360e82d57a3ae0f1b4c3931c79e7",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/exact_kernel/staggered_link_sign.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/five_site/MUTATION_CHECKS.json",
+        "sha256": "0fbb63045d697f878d1c391e4551f0fb5db5d0cbf2845b7ecff89b21fcaf172b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0fbb63045d697f878d1c391e4551f0fb5db5d0cbf2845b7ecff89b21fcaf172b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/five_site/wrong_bragg_principal_slope.log",
+        "sha256": "e5540f22e144cb749fa38d72df3c31eb44fdfe8026132c8bd784dd4166b03a32",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e5540f22e144cb749fa38d72df3c31eb44fdfe8026132c8bd784dd4166b03a32",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/five_site/wrong_five_site_left_offset.log",
+        "sha256": "876eb3c19142671cbc5178aaec9b3e84a0e6c12c5345f0725eb5fefe2e3be77d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/876eb3c19142671cbc5178aaec9b3e84a0e6c12c5345f0725eb5fefe2e3be77d",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/five_site/wrong_period_three_fiber_index.log",
+        "sha256": "fd6229360ed9a74c9d0a32176a4bc4b78ef1ba77c7d256ce5d4579255b93d0db",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fd6229360ed9a74c9d0a32176a4bc4b78ef1ba77c7d256ce5d4579255b93d0db",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/outer_detuning_slope.stderr",
+        "sha256": "fcaa93c5856afea66e6a7dc69cf125f638bfb05efc1f38a77a84736cdb6716b5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fcaa93c5856afea66e6a7dc69cf125f638bfb05efc1f38a77a84736cdb6716b5",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/outer_detuning_slope.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/physical_state_core_check.stderr",
+        "sha256": "7b88d6d1c316a14649bb44b8e752ca5057cc980d9e23c12b0cd0addef1040344",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7b88d6d1c316a14649bb44b8e752ca5057cc980d9e23c12b0cd0addef1040344",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/physical_state_core_check.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/principal_projected_derivative.stderr",
+        "sha256": "9493a4f2cc6032871da49c0377fa84893a988224162e349b40487a8940dc3835",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9493a4f2cc6032871da49c0377fa84893a988224162e349b40487a8940dc3835",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/principal_projected_derivative.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/run_cell_central_mutation_checks.py",
+        "sha256": "427f44d405615edc1f8e7968c7655feea47e285acee5d4f211c3fa89d45071bc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/427f44d405615edc1f8e7968c7655feea47e285acee5d4f211c3fa89d45071bc",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/run_exact_mutation_checks.py",
+        "sha256": "c8a138cf6603053a71d27b6d056e818b7d83f25694b20413cc7589e5e70f8e20",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c8a138cf6603053a71d27b6d056e818b7d83f25694b20413cc7589e5e70f8e20",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/run_five_site_mutation_checks.py",
+        "sha256": "6dfebdff6e7f4d27e643200d4942e15e9e521483d9a0757389eccffa3df4ca74",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6dfebdff6e7f4d27e643200d4942e15e9e521483d9a0757389eccffa3df4ca74",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/scalar_central_match.stderr",
+        "sha256": "a97c2cfa7b9206cf2ba87507cf014118dc610a6dfa77e45b57222cee03971fe5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a97c2cfa7b9206cf2ba87507cf014118dc610a6dfa77e45b57222cee03971fe5",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/scalar_central_match.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/weighted_alias_diagnostic.py",
+        "sha256": "c1abe8ccb5b7af2447b62c1bee9b5e513a5776639972568932fc5d9a030a5b8c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c1abe8ccb5b7af2447b62c1bee9b5e513a5776639972568932fc5d9a030a5b8c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py",
+        "sha256": "a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a9d8a0235745cc91794b56cfbb77ed53e3e96366c9edf9cc4b95439be0b87054",
+        "accepted_path": "scripts/postmark_electric_exact_side_fixed_index_kernel_2026_09_24.py",
+        "accepted_sha256": "5e1f9746a12a996bb68d053fa6225fba67505af18ef6ed99236a6cd55f1f8c25",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py",
+        "sha256": "b1469c27af28e3021e34acb5e474f03e2593f15a05ef9df093c7e71ab757c036",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b1469c27af28e3021e34acb5e474f03e2593f15a05ef9df093c7e71ab757c036",
+        "accepted_path": "scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py",
+        "accepted_sha256": "f5a4330c7cf4bccb393bddb0e1170380c4a33261fb729092fc949ef543dc88ec",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+        "sha256": "b577641c74bd6d9f6a3fed209973786594c8354d1eba0dafba5054f0168a49f2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b577641c74bd6d9f6a3fed209973786594c8354d1eba0dafba5054f0168a49f2",
+        "accepted_path": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+        "accepted_sha256": "d95873142cf85524940df48ece32637b1f91f613bad2b3be9a57758898c1f385",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+        "sha256": "c63441d90c7373cabe1e0ea78704a474b077bcd7a106cae372b91cf26bc4d795",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c63441d90c7373cabe1e0ea78704a474b077bcd7a106cae372b91cf26bc4d795",
+        "accepted_path": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+        "accepted_sha256": "9d59b0b1569408749b65657e12826657abd19c818739a7b6882c74035dc8ca18",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      }
+    ]
+  },
+  {
+    "pr": 9091,
+    "head": "c734332ca227c4371f3c188f96227c494b43f533",
+    "fetch_ref": "refs/pull/9091/head",
+    "landing": "ddb9249c52edf56a20a13d28266f6a333c08c800",
+    "findings": "Correct beta-integral prefactor and endpoint quantile justification; add finite PSD/norm and moment controls to diagnostic runner. Weak measure/quantile convergence does not control individual gaps, phases or readout.",
+    "files": [
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/APPROACH_REGISTRY.md",
+        "sha256": "03d4cfc105fe857236a8d7dd63951024f599d6e6c27db52bf2c8607cc490d515",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/03d4cfc105fe857236a8d7dd63951024f599d6e6c27db52bf2c8607cc490d515",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/ARTIFACT_PLAN.md",
+        "sha256": "ec244e1350b82ba34f39a71b074a5fbc24b8603e77ea0bdb92f17a855b1a3e9a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ec244e1350b82ba34f39a71b074a5fbc24b8603e77ea0bdb92f17a855b1a3e9a",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/HANDOFF.md",
+        "sha256": "90f021c625e1119ffb143e79a531b302babe6388d19be31ac1cdac8a17a40b7c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/90f021c625e1119ffb143e79a531b302babe6388d19be31ac1cdac8a17a40b7c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/OPPORTUNITY_QUEUE.md",
+        "sha256": "adced3caaf4a8bd744fc568fa26a071a00e50873e9ff9511ebad6a7deb521c66",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/adced3caaf4a8bd744fc568fa26a071a00e50873e9ff9511ebad6a7deb521c66",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/PR_BACKLOG.md",
+        "sha256": "5e7d43e394016180307489ca1f9f2fe2b548fc4f95db19a69070ae7d27baaff3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5e7d43e394016180307489ca1f9f2fe2b548fc4f95db19a69070ae7d27baaff3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/REVIEW_HISTORY.md",
+        "sha256": "7308fc5f6bb70c4931c7571b9ad8c2db5359b2467fe999d90c800b0e3b7ff401",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7308fc5f6bb70c4931c7571b9ad8c2db5359b2467fe999d90c800b0e3b7ff401",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/ROUTE_PORTFOLIO.md",
+        "sha256": "de0a5d4eba676be4697ba398850f3533622ee1810ddce42ffd901a9133f54824",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/de0a5d4eba676be4697ba398850f3533622ee1810ddce42ffd901a9133f54824",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/STATE.yaml",
+        "sha256": "2cbab35881432abdeb1a44738e4eab4eb0e157baa25bb098cfac04123bd57bcf",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2cbab35881432abdeb1a44738e4eab4eb0e157baa25bb098cfac04123bd57bcf",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": ".claude/science/physics-loops/postmark-electric-moving-index-20260924/TRACE_GATE.md",
+        "sha256": "1a8398f7d5d1519c837556ef00dd3fb81616ae0e182a7dfce05a9741c236209b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1a8398f7d5d1519c837556ef00dd3fb81616ae0e182a7dfce05a9741c236209b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "docs/POSTMARK_ELECTRIC_PRINCIPAL_WEYL_COUNT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "34810e1a1c4cdbbced7e271ff7da8f019c85460662f070ac09f25e0569ef4a08",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/34810e1a1c4cdbbced7e271ff7da8f019c85460662f070ac09f25e0569ef4a08",
+        "accepted_path": "docs/POSTMARK_ELECTRIC_PRINCIPAL_WEYL_COUNT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "e1d112290db32899809d1d18918a7d164b1649a4d76e9775b6387e63c43f68de",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "98c283dbfe4612ae0ce056ce68e74048046c64a4ae0b89dfa089403795db5527",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/98c283dbfe4612ae0ce056ce68e74048046c64a4ae0b89dfa089403795db5527",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Original generated audit/status output is historical only and rejected as landing authority. Current combined gate regenerates compatibility; no audit verdict is applied. Exact frozen original recoverable."
+      },
+      {
+        "original_path": "logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt",
+        "sha256": "13dc2cc8e9d98dce6043c423de89da8b6b4f0ff2dc8cfef4ca658767adb0ca0c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/13dc2cc8e9d98dce6043c423de89da8b6b4f0ff2dc8cfef4ca658767adb0ca0c",
+        "accepted_path": "logs/runner-cache/postmark_electric_principal_weyl_count_2026_09_24.txt",
+        "accepted_sha256": "ba52d470f50aef92de857c7708286b9a34bfffa1bba6f82d8c374e228ae69045",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.json",
+        "sha256": "0b7592c578361c77caa0fde730737511a190ce8c60d5942a6a62557e858024b3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0b7592c578361c77caa0fde730737511a190ce8c60d5942a6a62557e858024b3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.py",
+        "sha256": "e07c81c11e1eb19c413df6ed11b1085972e1794666e4223f622aee9a60351896",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e07c81c11e1eb19c413df6ed11b1085972e1794666e4223f622aee9a60351896",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/actual_readout_extended_sizes.stdout",
+        "sha256": "e35943713fc2d753a7a4d6b9c83670a0b10021c2b7e10633d8efe0343359f632",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e35943713fc2d753a7a4d6b9c83670a0b10021c2b7e10633d8efe0343359f632",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_pole_mass_probe.json",
+        "sha256": "0e64bfff6731d76a031e03f08f268d37e3af6a854c2868cc5f7c479349ef5b5f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0e64bfff6731d76a031e03f08f268d37e3af6a854c2868cc5f7c479349ef5b5f",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_pole_mass_probe.py",
+        "sha256": "dece52d6be2f92c9e020e2bf6de0c3596b29c6f059d314aaaa95f2bab67426b3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/dece52d6be2f92c9e020e2bf6de0c3596b29c6f059d314aaaa95f2bab67426b3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_schur_probe.json",
+        "sha256": "9d56fd30b02aa7d09ffab8c4208ed389624421e35180475036728cbcb41e2656",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9d56fd30b02aa7d09ffab8c4208ed389624421e35180475036728cbcb41e2656",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/corrected_actual_generator_schur_probe.py",
+        "sha256": "fea8731dfa1ed3a6f2a3535a655ba420833e63dc74400db0c1cd3b044a943a21",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fea8731dfa1ed3a6f2a3535a655ba420833e63dc74400db0c1cd3b044a943a21",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/fixed_low_lag_phase_cancellation_probe_v1.json",
+        "sha256": "5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/fixed_low_lag_phase_cancellation_probe_v1.py",
+        "sha256": "37faaa9326b403b112174477a880d51059970f8a8be0da92c473efe9996ac96b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/37faaa9326b403b112174477a880d51059970f8a8be0da92c473efe9996ac96b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/fixed_low_lag_phase_cancellation_probe_v1.stdout",
+        "sha256": "5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/full_lag_scale_decomposition.json",
+        "sha256": "ede59933a26d8375c31d676e5c665413b9364c3b91650217cb39d0c5156400cb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ede59933a26d8375c31d676e5c665413b9364c3b91650217cb39d0c5156400cb",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/full_lag_scale_decomposition.py",
+        "sha256": "f17f258237ee48ac98c9498def429bab80fcd4d2dd324fa7083920b909313f79",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f17f258237ee48ac98c9498def429bab80fcd4d2dd324fa7083920b909313f79",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/full_lag_scale_decomposition.stdout",
+        "sha256": "ede59933a26d8375c31d676e5c665413b9364c3b91650217cb39d0c5156400cb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ede59933a26d8375c31d676e5c665413b9364c3b91650217cb39d0c5156400cb",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/low_lag_phase_cancellation_probe.json",
+        "sha256": "5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/low_lag_phase_cancellation_probe.py",
+        "sha256": "37faaa9326b403b112174477a880d51059970f8a8be0da92c473efe9996ac96b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/37faaa9326b403b112174477a880d51059970f8a8be0da92c473efe9996ac96b",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/low_lag_phase_cancellation_probe.stdout",
+        "sha256": "5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5bc426efc6a4d9fd6f863baa29de774f217a58cd234991a4614457a1d9192004",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_alias_overlap_census.json",
+        "sha256": "ef62f5fad6bb5281fa04860a4de59938edc9d0b7be908e15ee0e98b21be53463",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ef62f5fad6bb5281fa04860a4de59938edc9d0b7be908e15ee0e98b21be53463",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_alias_overlap_census.py",
+        "sha256": "a063f40d31707df0edf46e9bc8751fa857a121e388b26f1420ed1886d9e20db2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a063f40d31707df0edf46e9bc8751fa857a121e388b26f1420ed1886d9e20db2",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/phase_alias_overlap_census.stdout",
+        "sha256": "7e51d57406713a8c8f109d3fcedc21a5eb27adf4bc291c271d0731bf416a4016",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7e51d57406713a8c8f109d3fcedc21a5eb27adf4bc291c271d0731bf416a4016",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/principal_weyl_count_2026_09_24.stdout",
+        "sha256": "e36b1da3bf135af58aa81c14a9505ede978ed81432788361e16950d8f2ff82aa",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e36b1da3bf135af58aa81c14a9505ede978ed81432788361e16950d8f2ff82aa",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/quadratic_phase_resonant_lag_probe.json",
+        "sha256": "96f27aae8e1c18768bd9ab15bc0a192343a20678ae586e592e77f786023723aa",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/96f27aae8e1c18768bd9ab15bc0a192343a20678ae586e592e77f786023723aa",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/quadratic_phase_resonant_lag_probe.py",
+        "sha256": "74349b147bd2f3f3021249fcd3e8a8e8091303fb6bd9fd8a1ce9e81721e79bdd",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/74349b147bd2f3f3021249fcd3e8a8e8091303fb6bd9fd8a1ce9e81721e79bdd",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/quadratic_phase_resonant_lag_probe.stdout",
+        "sha256": "472b68c5cfd3992316bc90b68b475bdaba36ec6088c19882f22e4617b301a720",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/472b68c5cfd3992316bc90b68b475bdaba36ec6088c19882f22e4617b301a720",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/selected_lag_phase_cancellation_probe.json",
+        "sha256": "88cd3b8f462405848316691408423d54b2f331cd03a6e01d20c82407290be3e3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/88cd3b8f462405848316691408423d54b2f331cd03a6e01d20c82407290be3e3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/selected_lag_phase_cancellation_probe.py",
+        "sha256": "d4de43522221fa655e95c02010868fcb9732725eb6c4745c90f77069cac9552c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d4de43522221fa655e95c02010868fcb9732725eb6c4745c90f77069cac9552c",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/selected_lag_phase_cancellation_probe.stdout",
+        "sha256": "88cd3b8f462405848316691408423d54b2f331cd03a6e01d20c82407290be3e3",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/88cd3b8f462405848316691408423d54b2f331cd03a6e01d20c82407290be3e3",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.json",
+        "sha256": "b33f7d2c9062b552611d33405daa1563836df5a5539b4683bc2ea5935b6a9862",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b33f7d2c9062b552611d33405daa1563836df5a5539b4683bc2ea5935b6a9862",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.py",
+        "sha256": "2e73b72e4b87ca035d37d522edef6fa6907ae6be36565adf4c3e5f3819c192bc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2e73b72e4b87ca035d37d522edef6fa6907ae6be36565adf4c3e5f3819c192bc",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/attempt_logs/weyl_alias_scaling_probe.stdout",
+        "sha256": "5fd105eb4d3ec3ca49b69c5658f795ee742d51cc15a654eac247f9cfcca97bf8",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5fd105eb4d3ec3ca49b69c5658f795ee742d51cc15a654eac247f9cfcca97bf8",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "outputs/postmark_moving_index_2026_09_24/principal_weyl_count_2026_09_24.json",
+        "sha256": "e36b1da3bf135af58aa81c14a9505ede978ed81432788361e16950d8f2ff82aa",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e36b1da3bf135af58aa81c14a9505ede978ed81432788361e16950d8f2ff82aa",
+        "accepted_path": null,
+        "accepted_sha256": null,
+        "disposition": "Historical campaign, exploratory attempt or author diagnostic retained at frozen remote branch and local exact original, excluded from fresh execution authority. Useful Schur representation and phase-sensitivity lemma recovered into canonical exact-side note; all stronger phase cancellation, pole-uniformity and readout limit obligations remain open. No original branch deletion; include source recovery in deferred probes intake."
+      },
+      {
+        "original_path": "scripts/postmark_electric_principal_weyl_count_2026_09_24.py",
+        "sha256": "89035c92f1495bb2eaaca765492794a0bad4c88c5d3909e0dae13afbb7f5b09a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/89035c92f1495bb2eaaca765492794a0bad4c88c5d3909e0dae13afbb7f5b09a",
+        "accepted_path": "scripts/postmark_electric_principal_weyl_count_2026_09_24.py",
+        "accepted_sha256": "5e08e033b02eca12619e743eba9d0495b1d6947fde29bcf131c2b259fc3109ef",
+        "disposition": "Canonical conditional proof/runner retained with narrow corrections and fresh cache. Unresolved selected-time cancellation remains deferred; original exact source retained on remote branch."
+      }
+    ]
+  }
+]

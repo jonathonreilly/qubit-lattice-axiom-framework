@@ -1,0 +1,56 @@
+{
+  "energy_pair_checks": [
+    {
+      "anchor_dimension": 2,
+      "full_dimension": 7,
+      "identity_weight_is_schur_negative_divided_difference_error": 6.3109611985757e-16,
+      "interior_dimension": 5,
+      "interior_partition_cross_cell_link_max": 0.0,
+      "interpretation": "exact finite block-elimination identity sampled in floating arithmetic; no phase-sum bound",
+      "spin": 1,
+      "weighted_two_energy_overlap_abs_error": 4.965068306494546e-16
+    },
+    {
+      "anchor_dimension": 4,
+      "full_dimension": 17,
+      "identity_weight_is_schur_negative_divided_difference_error": 1.2873322020932782e-14,
+      "interior_dimension": 13,
+      "interior_partition_cross_cell_link_max": 0.0,
+      "interpretation": "exact finite block-elimination identity sampled in floating arithmetic; no phase-sum bound",
+      "spin": 2,
+      "weighted_two_energy_overlap_abs_error": 4.965068306494546e-16
+    },
+    {
+      "anchor_dimension": 6,
+      "full_dimension": 27,
+      "identity_weight_is_schur_negative_divided_difference_error": 3.7234784864448326e-14,
+      "interior_dimension": 21,
+      "interior_partition_cross_cell_link_max": 0.0,
+      "interpretation": "exact finite block-elimination identity sampled in floating arithmetic; no phase-sum bound",
+      "spin": 3,
+      "weighted_two_energy_overlap_abs_error": 4.965068306494546e-16
+    },
+    {
+      "anchor_dimension": 10,
+      "full_dimension": 47,
+      "identity_weight_is_schur_negative_divided_difference_error": 4.3014122156863483e-14,
+      "interior_dimension": 37,
+      "interior_partition_cross_cell_link_max": 0.0,
+      "interpretation": "exact finite block-elimination identity sampled in floating arithmetic; no phase-sum bound",
+      "spin": 5,
+      "weighted_two_energy_overlap_abs_error": 8.005932084973442e-16
+    }
+  ],
+  "exact_reduced_observable": "Q_V(lambda,mu)=V_A+H_AI*(lambda-H_II)^(-1)*V_I*(mu-H_II)^(-1)*H_IA; <Phi_lambda,V Phi_mu>=x_lambda^* Q_V x_mu",
+  "operator": "H_S=C*N_S; target fast phase is exp(-i*H_S/4)",
+  "scope": "The identity reduces exact weighted eigenvector overlaps to anchor coordinates. It does not control the O(S^2)-time phase cancellation, central/Bragg resonance sum, or the fixed-time prepared-state readout.",
+  "status": "author-only representation probe",
+  "symbolic_four_site": {
+    "corner_resolvent": "A**(3/2)*B**(3/2)/(2*A**3*B - A**3*z + 2*A**2*B**2 - 10*A**2*B*z + 4*A**2*z**2 + A*B**3 - 8*A*B**2*z + 13*A*B*z**2 - 4*A*z**3 - B**3*z + 4*B**2*z**2 - 4*B*z**3 + z**4)",
+    "determinant_factor": "2*A**3*B - A**3*z + 2*A**2*B**2 - 10*A**2*B*z + 4*A**2*z**2 + A*B**3 - 8*A*B**2*z + 13*A*B*z**2 - 4*A*z**3 - B**3*z + 4*B**2*z**2 - 4*B*z**3 + z**4",
+    "determinant_recurrence_matches_matrix": true,
+    "exact_identity": true,
+    "schur_offdiagonal": "-A**3*B**2/(2*A**3*B - A**3*z + 2*A**2*B**2 - 10*A**2*B*z + 4*A**2*z**2 + A*B**3 - 8*A*B**2*z + 13*A*B*z**2 - 4*A*z**3 - B**3*z + 4*B**2*z**2 - 4*B*z**3 + z**4)",
+    "target_schur_offdiagonal": "-A**3*B**2/det(K)"
+  }
+}

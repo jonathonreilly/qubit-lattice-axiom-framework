@@ -1,0 +1,131 @@
+{
+  "status": "all load-bearing scratch mutations were rejected",
+  "checks": [
+    {
+      "check_family": "cell_resonance_projection",
+      "scratch_source": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": {
+        "before": "POS_LEFT = (0, 1, 0, 1, 1, 1, 2, 1, 2, 2, 2, 3, 2, 3, 3)",
+        "after": "POS_LEFT = (0, 2, 0, 1, 1, 1, 2, 1, 2, 2, 2, 3, 2, 3, 3)"
+      },
+      "purpose": "Changing one supplied residue label must break the exact crossing-matrix check.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_resonance_projection.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_resonance_projection.stderr"
+    },
+    {
+      "check_family": "cell_principal_bands",
+      "scratch_source": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": {
+        "before": "matrix[np.diag_indices(15)] = 2 * w",
+        "after": "matrix[np.diag_indices(15)] = 2.01 * w"
+      },
+      "purpose": "Perturbing the 15-cell principal matrix must fail the direct eigenvalue check.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_principal_bands.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_principal_bands.stderr"
+    },
+    {
+      "check_family": "cell_finite_spin_expansion",
+      "scratch_source": "scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py",
+      "mutation": {
+        "before": "d1 = alpha(left[r], u) + alpha(previous_right[r], u)",
+        "after": "d1 = alpha(left[r], u) + alpha(previous_right[r], u) + 1"
+      },
+      "purpose": "Perturbing the first-order diagonal coefficient must exceed the declared finite-sample remainder envelope.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_finite_spin_expansion.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/cell_finite_spin_expansion.stderr"
+    },
+    {
+      "check_family": "outer_detuning_slope",
+      "scratch_source": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": {
+        "before": "sqrt3 * (1-u**2) / 15,\n         u * (3*u - 11)",
+        "after": "sqrt3 * (1-u**2) / 16,\n         u * (3*u - 11)"
+      },
+      "purpose": "Perturbing the predicted slope must fail comparison with the principal-band derivative.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/outer_detuning_slope.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/outer_detuning_slope.stderr"
+    },
+    {
+      "check_family": "principal_projected_derivative",
+      "scratch_source": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": {
+        "before": "target = sp.diag(sigma*sp.sqrt(3)/15, -sigma*sp.sqrt(3)/15)",
+        "after": "target = sp.diag(sigma*sp.sqrt(3)/16, -sigma*sp.sqrt(3)/16)"
+      },
+      "purpose": "Perturbing the compressed derivative target must fail the explicit 15-by-15 derivative check.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/principal_projected_derivative.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/principal_projected_derivative.stderr"
+    },
+    {
+      "check_family": "central_frozen_projection",
+      "scratch_source": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": {
+        "before": "-27*k**2 - 33*k - sp.Rational(62, 5)",
+        "after": "-27*k**2 - 32*k - sp.Rational(62, 5)"
+      },
+      "purpose": "Perturbing one central projected coefficient must fail the exact symbolic matrix comparison.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_frozen_projection.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_frozen_projection.stderr"
+    },
+    {
+      "check_family": "scalar_central_match",
+      "scratch_source": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": {
+        "before": "outer_to_second_order = 1-u**2+h*alpha-h**2*(u-a)*(u-a-1)",
+        "after": "outer_to_second_order = 1-u**2+h*alpha-h**2*(u-a)*(u-a-1) + h**2"
+      },
+      "purpose": "Perturbing the second-order term must fail the exact Casimir expansion identity.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/scalar_central_match.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/scalar_central_match.stderr"
+    },
+    {
+      "check_family": "physical_state_core_check",
+      "scratch_source": "scripts/core_derivation.py",
+      "mutation": {
+        "before": "out[q2] -= amp1 * amp2",
+        "after": "out[q2] -= 2 * amp1 * amp2"
+      },
+      "purpose": "Doubling every physical two-hop coefficient must fail the independent finite-spin core comparison.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/physical_state_core_check.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/physical_state_core_check.stderr"
+    },
+    {
+      "check_family": "central_interface_identity",
+      "scratch_source": "scripts/postmark_electric_two_band_central_match_2026_09_24.py",
+      "mutation": {
+        "before": "if sp.simplify(f(-1)-f(0)) != 0:",
+        "after": "if sp.simplify(f(-1)-f(0)) == 0:"
+      },
+      "purpose": "Inverting the seam identity predicate must make the runner reject the exact central join.",
+      "exit_code": 1,
+      "detected": true,
+      "stderr_first_line": "Traceback (most recent call last):",
+      "stdout_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_interface_identity.stdout",
+      "stderr_path": "outputs/postmark_moving_index_2026_09_24/mutation_checks/central_interface_identity.stderr"
+    }
+  ]
+}

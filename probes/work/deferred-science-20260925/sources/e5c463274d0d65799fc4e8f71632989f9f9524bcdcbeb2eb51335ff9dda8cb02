@@ -1,0 +1,15 @@
+
+--- stderr ---
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_cell_wrong_signed_residue_v5khw_rp/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 262, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_cell_wrong_signed_residue_v5khw_rp/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 201, in main
+    resonances = verify_symbolic_resonances()
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/mutation_cell_wrong_signed_residue_v5khw_rp/scripts/postmark_electric_moving_index_cell_symbol_2026_09_24.py", line 130, in verify_symbolic_resonances
+    raise ArithmeticError((side, zone, matrix, target))
+ArithmeticError: ('+', 0, Matrix([
+[       u*(15*u - 56)/5, u*(9 + 5*sqrt(3)*I)/15],
+[u*(9 - 5*sqrt(3)*I)/15,        u*(15*u - 56)/5]]), Matrix([
+[         u*(3*u - 11), 2*u*(1 + sqrt(3)*I)/5],
+[2*u*(1 - sqrt(3)*I)/5,          u*(3*u - 11)]]))

@@ -1,0 +1,56 @@
+{
+  "analytic_review": [
+    "bounded current commutator sign and self-adjoint extension",
+    "bounded charge continuity without electric moments",
+    "full original branch isometries and both instrument normalizations",
+    "connected covariance and Fourier phase/volume conversion",
+    "all electric basis and normal diagonal mixtures have zero Hamiltonian-current mean"
+  ],
+  "at": "2026-09-25T10:22:09.305496+00:00",
+  "complete_reads": [
+    "POST proof",
+    "new read-only verifier",
+    "verification recorder and report",
+    "complete final/working diff",
+    "all five compact covariance matrices and means",
+    "complex polarizations, Fourier rows, current/charge multiplicities and circulation counterexample"
+  ],
+  "equation_or_code_repair": false,
+  "kind": "Primary root proof and source review; not another independent reconstruction or audit verdict",
+  "limitations": "8480 raw primitive rows checked mechanically, not all manually read. No empirical identification, finite-frequency spectrum, microscopic derivative transfer or retained status.",
+  "pre_extensions_separately_attributed": true,
+  "replay": "Fresh inspected read-only run: 1.643035125 seconds, exit 0, empty stderr; 88 observed files unchanged; all scientific output exact except timestamp.",
+  "required_repairs_applied_to_separate_generation": [
+    "Remove zero-field exclusivity sentence; preserve original author bytes and seals."
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST.md",
+      "sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_SEAL.json",
+      "sha256": "474656df6a908fd8964eb87e9ce20221b0fdd0496fb97363c071323856443e26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verify_post_readonly.py",
+      "sha256": "c32eb0119e989634f06b0c8febbfbd1f2bc21849d66837745b7aede87875811b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY_EXECUTION.json",
+      "sha256": "e4afc87d3423a42731451ebbfb4895f8c9bd2e7af7f60ef87cc17f6120751cbe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY.stdout.json",
+      "sha256": "9e7f4566401b155655d645a38cb71c42d1d957908091d7fbf439c52a1509ae11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/QUALIFICATION_SEAL.json",
+      "sha256": "f13762c1ce4d0de5d4d6b185fd59059519b59956fa3f11a038ea514c85329a13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "sha256": "e1447ae3d5a5cad6c756dc1b2079e0bee6e275c53bc8f9a9d926037168c9cba4"
+    }
+  ]
+}

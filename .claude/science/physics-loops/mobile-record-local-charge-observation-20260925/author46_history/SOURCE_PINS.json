@@ -1,0 +1,53 @@
+{
+  "at": "2026-09-25T09:19:53.311718+00:00",
+  "main": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Unchanged supplied common-law premise; prior complete read reused"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Unchanged supplied common-law premise; prior complete read reused"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Unchanged supplied common-law premise; prior complete read reused"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "role": "Original branch-isometry law, restated in this proof"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "role": "Original personally sealed42 identity"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE.md",
+      "sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81",
+      "role": "Previously read independent42 exposure; not new independence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/POST.md",
+      "sha256": "25c981ebf21e21916d0cda69383652813b2f08f48c2734c251652fcb5d6329d3",
+      "role": "Previously read released-source42 comparison exposure"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Instructions"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Current unchanged workflow"
+    }
+  ],
+  "independent46_requested_before_author_seal": false,
+  "independent45_read": false
+}

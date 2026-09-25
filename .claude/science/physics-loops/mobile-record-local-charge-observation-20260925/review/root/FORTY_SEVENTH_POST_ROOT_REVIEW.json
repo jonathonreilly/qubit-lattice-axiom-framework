@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-09-25T10:35:15.454138+00:00",
+  "elapsed_seconds": 0.4421869160141796,
+  "exit_code": 0,
+  "program_sha256": "e3856ecc18409389c7c411af8c4641f43f346259aafa6b226012d6193946952e",
+  "seal_member_counts": {
+    "PRE_SEAL.json": 39,
+    "POST_SEAL.json": 42
+  },
+  "observed_files": 110,
+  "byte_and_stat_preservation": true,
+  "complete_scientific_output_equal": true,
+  "stdout_sha256": "ab8daaf6af1ce4c428422b06a8f690d4b3c655be0d88cbeca3c8b42ab49b9671",
+  "complete_POST_argument_and_new_checker_and_writers_read": true,
+  "all_six_compact_geometry_and_bound_groups_read": true,
+  "stored_large_support_lists_mechanically_reconstructed_not_all_manually_read": true,
+  "required_mathematical_repairs": [],
+  "scope": "Root reviewed the complete released proof and fresh read-only correspondence. No independent propagation or new PRE attribution.",
+  "qualifications": [
+    "Degree-at-most-six constants and bounded functions of matter charges.",
+    "Root quotient Cov(a,b)/Var(b) differs from PRE Pearson normalization.",
+    "PRE colored-series refinement remains separately attributed and locally timed.",
+    "Auxiliary A2/B4 tree permits two births; historical A3/B3 fixture does not.",
+    "No measured charge/time/length/readout identification or empirical agreement."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/charge_current_control.py"
+  ],
+  "elapsed_seconds": 0.13422100013121963,
+  "exit_code": 0,
+  "source_sha256": "5f4300e84dbb3968d42278521e56187397b6a508a4d864b4bd683f66a8ccb160",
+  "source_unchanged": true,
+  "started_utc": "2026-09-25T09:32:51.055079+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "a9d5e0aa047bc8ec4f8fcb76ffcfec16bd71cef0dbe08197c90720244f78fb36"
+}

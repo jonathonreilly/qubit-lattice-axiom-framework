@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-09-25T11:03:31.179855+00:00",
+  "elapsed_seconds": 1.1019892911426723,
+  "exit_code": 0,
+  "observed_files": 193,
+  "byte_and_stat_unchanged": true,
+  "output_byte_exact": true,
+  "program_sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9",
+  "report_sha256": "afd2fc9d3044c4cc1a9f0b4c439cad0c910595a1ed04362cb3ae367b3bf83b5e",
+  "seal_sha256": "5846abbbf9931aea9abe51949e9074cfa9fd47e17eade05f063d4d770cd035a8",
+  "sealed_members": 62,
+  "complete_new_code_and_report_read": true,
+  "full_compact_output_read": true,
+  "required_repairs": [],
+  "scope": "Released-source Part II comparison and both output payloads, not a new blind derivation."
+}

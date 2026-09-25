@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-25T09:20:32.059512+00:00",
+  "author_note_sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+  "complete_working_and_final_argument_read": true,
+  "complete_all_new_code_read": true,
+  "full_final_note_diff_read": true,
+  "all_five_compact_mean_covariance_and_current_groups_read": true,
+  "all_8480_raw_rows_mechanically_checked": true,
+  "all_raw_vectors_manually_read": false,
+  "primary_result_sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad",
+  "readonly_result_sha256": "c6eaa774761934c9878854b74137e7fb500b6554a262b59482091cad2bd6102a",
+  "failed_scientific_attempts": [],
+  "independence": "Personal derivation and personal data reconstruction, not independent confirmation. Root42 PRE/POST already known. No independent45 argument read.",
+  "observation": "Existing bounded charge-current/covariance consequence before fitting, conditional on supplied model and initial matter. No measured finite-frequency noise or empirical identification."
+}

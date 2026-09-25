@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-25T10:10:15.492039+00:00",
+  "equations_or_code_changed": false,
+  "kind": "Wording-only qualification",
+  "members": [
+    {
+      "path": "CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "sha256": "e1447ae3d5a5cad6c756dc1b2079e0bee6e275c53bc8f9a9d926037168c9cba4"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "sha256": "32e296ed994812fec4b9300f071d8a313abd042c711d0b7519f4bb37e0652ac2"
+    },
+    {
+      "path": "WORDING_ONLY.diff",
+      "sha256": "f3fc7654beb59cb86e80cc2d17127f996c1ddcf5a4b874f8175a08d27579a17c"
+    }
+  ],
+  "original_preserved": true,
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE.md",
+      "sha256": "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_SEAL.json",
+      "sha256": "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST.md",
+      "sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_SEAL.json",
+      "sha256": "474656df6a908fd8964eb87e9ce20221b0fdd0496fb97363c071323856443e26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY_EXECUTION.json",
+      "sha256": "e4afc87d3423a42731451ebbfb4895f8c9bd2e7af7f60ef87cc17f6120751cbe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY.stdout.json",
+      "sha256": "9e7f4566401b155655d645a38cb71c42d1d957908091d7fbf439c52a1509ae11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/qualify_forty_sixth_current_wording.py",
+      "sha256": "f6d3e24b72993422d718ced07511aa81999cd6f1f3e67a13a7e225e68b8fc943"
+    }
+  ]
+}

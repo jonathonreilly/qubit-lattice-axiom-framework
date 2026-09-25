@@ -1,0 +1,72 @@
+{
+  "at_utc": "2026-09-25T10:32:17.779668+00:00",
+  "PRE_seal_sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255",
+  "author47_seal_sha256": "1f2cb7ce4c8e8b5491a2e35aae215f7e0533d6119343074173ef13dc877d8ba8",
+  "actual_new_executions": [
+    {
+      "receipt": "post_capture.execution.json",
+      "sha256": "4f37b4d360fd93819f12bbab26c1daca597c009912d81e1b72b24b0935accc00",
+      "program": "capture_post_sources.py",
+      "source_sha256": "f98cc3b45e6ddfa31a8764dde01af09d8a92cc3241c416e0bf38076527a9f586",
+      "started_utc": "2026-09-25T10:18:15.633405+00:00",
+      "elapsed_seconds": 0.0824760408140719,
+      "exit_code": 0,
+      "outputs": {
+        "stdout.txt": {
+          "path": "post_capture.stdout.txt",
+          "sha256": "c8a64c6f0c22680e84367892afb1fbad08f48dd31e520f19808bd5bc0abfb5e4",
+          "bytes": 213
+        },
+        "stderr.txt": {
+          "path": "post_capture.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "receipt": "post_comparison.execution.json",
+      "sha256": "86c0284f14005aff20d424f590a031991906928e77709be95add9f56b7c16cbc",
+      "program": "post_compare_read_only.py",
+      "source_sha256": "e3856ecc18409389c7c411af8c4641f43f346259aafa6b226012d6193946952e",
+      "started_utc": "2026-09-25T10:24:30.869866+00:00",
+      "elapsed_seconds": 0.4749894170090556,
+      "exit_code": 0,
+      "outputs": {
+        "stdout.txt": {
+          "path": "post_comparison.stdout.txt",
+          "sha256": "ab8daaf6af1ce4c428422b06a8f690d4b3c655be0d88cbeca3c8b42ab49b9671",
+          "bytes": 14384
+        },
+        "stderr.txt": {
+          "path": "post_comparison.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "readonly_comparator_review": {
+    "sha256": "e3856ecc18409389c7c411af8c4641f43f346259aafa6b226012d6193946952e",
+    "import_modules": [
+      "ast",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ],
+    "no_write_or_dynamic_execution_calls_in_inspected_source": true,
+    "scope": "Static interface check plus complete source read, not a general Python security proof."
+  },
+  "complete_comparison_counts": {
+    "volumes": 6,
+    "local_tests": 18,
+    "stored_atom_occurrences": 14916,
+    "stored_group_occurrences": 23487
+  },
+  "scientific_failures_in_POST": [],
+  "packaging_failures_in_POST": [],
+  "report_sha256": "6258dff3852b842a9c736d7194378aca3b1fae6837f1938cc347ea8a75fd36b9"
+}

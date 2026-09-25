@@ -1,0 +1,1674 @@
+{
+  "PRE46_nonzero_coherent_field_current": {
+    "cycle": [
+      1,
+      -1,
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0
+    ],
+    "mean_current_numerator_over_delta": [
+      [
+        4,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "meaning": "Nonzero Hamiltonian circulation current with zero charge divergence",
+    "norm_squared": 2,
+    "unnormalized_amplitudes": [
+      [
+        0,
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        1,
+        [
+          0,
+          -1
+        ]
+      ]
+    ]
+  },
+  "PRE47_correspondence": [
+    {
+      "L": 4,
+      "branches": 1920,
+      "full_covariance_entries_each": 4096,
+      "instruments": 2,
+      "plus_only_rejected": true
+    },
+    {
+      "L": 6,
+      "branches": 6480,
+      "full_covariance_entries_each": 46656,
+      "instruments": 2,
+      "plus_only_rejected": true
+    }
+  ],
+  "PRE47_tree_scope": {
+    "A": 2,
+    "B": 4,
+    "P_dimension": 40,
+    "finite_time_rows": 24,
+    "full_dimension": 90,
+    "historical_A3_B3_capacity_floor": 1,
+    "minimum_N6_probability": 2.5592833328030667e-08,
+    "number_sectors": [
+      2,
+      4,
+      6
+    ],
+    "numerical_evolution_rerun": false,
+    "ratio_definitions_distinct": true
+  },
+  "cache": {
+    "entire_cache_and_execution_result_equal": true,
+    "identity": "fresh",
+    "input_fingerprint_sha256": "3b9e82f6cbffbeea7c9d1f08bd5b065d974e5c33a7201679c0db6c077cc6471b"
+  },
+  "canonical_embedded_bodies": [
+    {
+      "embedded_lines": 198,
+      "embedded_sha256": "094bea4e1c4786bab3e3e20beef7bfed1cb8bc1147e7432b8c329662017a8448",
+      "first_line": 78,
+      "replacements": 2,
+      "source": "native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "source_sha256": "e1447ae3d5a5cad6c756dc1b2079e0bee6e275c53bc8f9a9d926037168c9cba4"
+    },
+    {
+      "embedded_lines": 243,
+      "embedded_sha256": "31bfcfc6550eecf962b406bcb3d506cdddc24e0f10d7e54d503e8d2e5dad0f47",
+      "first_line": 279,
+      "replacements": 5,
+      "source": "native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md",
+      "source_sha256": "9a83191276a1a0380158ef88961c1d36b0d82c9cd645210739c999c4568f464a"
+    }
+  ],
+  "complete_fresh_publication_vs_author_outputs": [
+    {
+      "label": "current",
+      "new_elapsed_seconds": 1.1407075838651508,
+      "non_timing_scalar_leaves": 177399,
+      "old_elapsed_seconds": 1.7815674999728799,
+      "runtime_sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "strict_complete_non_timing_equality": true
+    },
+    {
+      "label": "finite_time",
+      "new_elapsed_seconds": 0.08019112492911518,
+      "non_timing_scalar_leaves": 249500,
+      "old_elapsed_seconds": 0.10008400003425777,
+      "runtime_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+      "strict_complete_non_timing_equality": true
+    }
+  ],
+  "concurrent_metadata_changes": [
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233501647,
+          "before": 1790333421947157331
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/GIT_SOURCE_EVIDENCE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233529273,
+          "before": 1790333420967602893
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PRIOR_PRESERVATION_BEFORE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233688775,
+          "before": 1790333421976381553
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/SOURCE_PINS.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233705942,
+          "before": 1790333421981109386
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.execution.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233721943,
+          "before": 1790333421980907799
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233737526,
+          "before": 1790333421980835423
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233752652,
+          "before": 1790333398871435743
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture_sources.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233769569,
+          "before": 1790333716325394791
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/compare_read_only.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233787694,
+          "before": 1790333724741557527
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.execution.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233804819,
+          "before": 1790333724741419150
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233820528,
+          "before": 1790333724741336065
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233835736,
+          "before": 1790333398872091713
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/record_run.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233869737,
+          "before": 1790333421813435520
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/base_citation_graph_manifest.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233887237,
+          "before": 1790333420967878022
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_FROZEN_SOURCES.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233909904,
+          "before": 1790333421012852522
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233927988,
+          "before": 1790333421012724019
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233945738,
+          "before": 1790333421012098550
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233964530,
+          "before": 1790333421012426222
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233980656,
+          "before": 1790333421011740460
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PUBLICATION_WORKING_SOURCES.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233997989,
+          "before": 1790333421013274571
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/build_local_charge_observation_publication.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234016073,
+          "before": 1790333421014075876
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/local-charge-observation-publication-history/PREMATURE_GRAPH_DEPENDENCY_FAILURE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234033115,
+          "before": 1790333421014309881
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/local-charge-observation-publication-history/verify_publication_attempt01.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234049198,
+          "before": 1790333421013656077
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/verify_local_charge_observation_publication.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234065282,
+          "before": 1790333421015266147
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/AUTHOR_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234080282,
+          "before": 1790333421015841199
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234096408,
+          "before": 1790333421016637130
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234111783,
+          "before": 1790333421020268735
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234128616,
+          "before": 1790333421018262075
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234143825,
+          "before": 1790333421016313999
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/current_noise_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234159034,
+          "before": 1790333421044812876
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234173701,
+          "before": 1790333421045152298
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/QUALIFICATION.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234188493,
+          "before": 1790333421045530888
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/QUALIFICATION_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234204368,
+          "before": 1790333421045803435
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/WORDING_ONLY.diff"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234221576,
+          "before": 1790333421021766387
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/AUTHOR_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234237744,
+          "before": 1790333421022464607
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234253494,
+          "before": 1790333421023273455
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234268411,
+          "before": 1790333421044155364
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234285328,
+          "before": 1790333421029669984
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234300744,
+          "before": 1790333421022843864
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/local_support_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234317786,
+          "before": 1790333420968973000
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234335954,
+          "before": 1790333420969275047
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234351037,
+          "before": 1790333421010705651
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/AGENTS.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234366704,
+          "before": 1790333420970729156
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234382704,
+          "before": 1790333420972047346
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234398580,
+          "before": 1790333420972657356
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234414538,
+          "before": 1790333420973032405
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234429872,
+          "before": 1790333421011447497
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234446997,
+          "before": 1790333420974799561
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234463997,
+          "before": 1790333421009911053
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/audit/scripts/write_citation_graph_manifest.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234481623,
+          "before": 1790333420976933557
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234500040,
+          "before": 1790333420977402023
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234518540,
+          "before": 1790333420977697320
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/current.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234536332,
+          "before": 1790333420979335349
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/current.stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234561249,
+          "before": 1790333420981007962
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234578083,
+          "before": 1790333420988346216
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234596333,
+          "before": 1790333421007134296
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234618959,
+          "before": 1790333421008572738
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/scripts/runner_cache.py"
+    }
+  ],
+  "current_controls": [
+    {
+      "Fourier": null,
+      "branches": 48,
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -16,
+          48,
+          -32,
+          -56
+        ],
+        [
+          0,
+          -16,
+          448,
+          0,
+          48,
+          -64
+        ],
+        [
+          0,
+          48,
+          0,
+          384,
+          -144,
+          -240
+        ],
+        [
+          0,
+          -32,
+          48,
+          -144,
+          168,
+          24
+        ],
+        [
+          0,
+          -56,
+          -64,
+          -240,
+          24,
+          472
+        ]
+      ],
+      "edges": 12,
+      "graph": "torus2",
+      "means": [
+        0,
+        -12,
+        0,
+        -96,
+        36,
+        60
+      ],
+      "vertices": 8
+    },
+    {
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1/2",
+          "0",
+          "0"
+        ],
+        "defect_sum": 1,
+        "full_initial_second_moment_slope_in_kappa": 2560,
+        "imaginary_self_covariance": 0,
+        "site_normalized_slope_in_kappa": 40
+      },
+      "branches": 1920,
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -160,
+          240,
+          40,
+          0
+        ],
+        [
+          0,
+          -160,
+          53760,
+          0,
+          -1280,
+          1280
+        ],
+        [
+          0,
+          240,
+          0,
+          15360,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          -1280,
+          0,
+          1280,
+          0
+        ],
+        [
+          0,
+          0,
+          1280,
+          0,
+          0,
+          1280
+        ]
+      ],
+      "edges": 192,
+      "graph": "torus4",
+      "means": [
+        0,
+        -60,
+        0,
+        -3840,
+        0,
+        0
+      ],
+      "vertices": 64
+    },
+    {
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1",
+          "0",
+          "0"
+        ],
+        "defect_sum": 2,
+        "full_initial_second_moment_slope_in_kappa": 17280,
+        "imaginary_self_covariance": 0,
+        "site_normalized_slope_in_kappa": 80
+      },
+      "branches": 6480,
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -240,
+          240,
+          80,
+          0
+        ],
+        [
+          0,
+          -240,
+          302400,
+          0,
+          -8640,
+          0
+        ],
+        [
+          0,
+          240,
+          0,
+          51840,
+          0,
+          0
+        ],
+        [
+          0,
+          80,
+          -8640,
+          0,
+          17280,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "edges": 648,
+      "graph": "torus6",
+      "means": [
+        0,
+        -60,
+        0,
+        -12960,
+        0,
+        0
+      ],
+      "vertices": 216
+    },
+    {
+      "Fourier": null,
+      "branches": 8,
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          4,
+          -4
+        ],
+        [
+          0,
+          0,
+          0,
+          64,
+          24,
+          40
+        ],
+        [
+          0,
+          0,
+          4,
+          24,
+          28,
+          -16
+        ],
+        [
+          0,
+          0,
+          -4,
+          40,
+          -16,
+          76
+        ]
+      ],
+      "edges": 6,
+      "graph": "path7",
+      "means": [
+        0,
+        0,
+        0,
+        -16,
+        -6,
+        -10
+      ],
+      "vertices": 7
+    },
+    {
+      "Fourier": null,
+      "branches": 24,
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -72,
+          48,
+          -24,
+          -72
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ],
+        [
+          0,
+          48,
+          -240,
+          192,
+          -48,
+          -240
+        ],
+        [
+          0,
+          -24,
+          56,
+          -48,
+          56,
+          56
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ]
+      ],
+      "edges": 6,
+      "graph": "K2_3",
+      "means": [
+        0,
+        -12,
+        60,
+        -48,
+        12,
+        60
+      ],
+      "vertices": 5
+    }
+  ],
+  "finite_time_geometry": [
+    {
+      "L": 4,
+      "M": {
+        "AA": [
+          "217678233600",
+          "4758912000",
+          "23760000"
+        ],
+        "AB": [
+          "544195584000",
+          "12970368000",
+          "73440000"
+        ],
+        "BB": [
+          "393030144000",
+          "8771328000",
+          "47520000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 32,
+      "global_magnetic_pairs": 240,
+      "local_sets": {
+        "A": {
+          "X1": 138,
+          "X2": 213,
+          "counts": {
+            "formation": 1,
+            "magnetic": 15
+          },
+          "halo_counts": {
+            "formation": 31,
+            "magnetic": 240
+          }
+        },
+        "AB": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          }
+        },
+        "B": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          }
+        }
+      },
+      "positive_denominator": "47722800/401957",
+      "rational_time": "1/315455853600"
+    },
+    {
+      "L": 6,
+      "M": {
+        "AA": [
+          "745910747136",
+          "12522470400",
+          "49680000"
+        ],
+        "AB": [
+          "2316821999616",
+          "43623360000",
+          "196560000"
+        ],
+        "BB": [
+          "1345856145408",
+          "24657696000",
+          "109080000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 108,
+      "global_magnetic_pairs": 972,
+      "local_sets": {
+        "A": {
+          "X1": 174,
+          "X2": 354,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 67,
+            "magnetic": 735
+          }
+        },
+        "AB": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          }
+        },
+        "B": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          }
+        }
+      },
+      "positive_denominator": "3198289200/26887567",
+      "rational_time": "5/6529806971352"
+    },
+    {
+      "L": 8,
+      "M": {
+        "AA": [
+          "975198486528",
+          "15676416000",
+          "60480000"
+        ],
+        "AB": [
+          "3613942407168",
+          "64590566400",
+          "280800000"
+        ],
+        "BB": [
+          "1994416349184",
+          "35141299200",
+          "151200000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 256,
+      "global_magnetic_pairs": 2304,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 390,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 82,
+            "magnetic": 972
+          }
+        },
+        "AB": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          }
+        },
+        "B": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          }
+        }
+      },
+      "positive_denominator": "1240580400/10425229",
+      "rational_time": "5/10127317656096"
+    },
+    {
+      "L": 12,
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "AB": [
+          "4363722989568",
+          "75396096000",
+          "319680000"
+        ],
+        "BB": [
+          "2369306640384",
+          "40544064000",
+          "170640000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 864,
+      "global_magnetic_pairs": 7776,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          }
+        }
+      },
+      "positive_denominator": "2990110800/25124333",
+      "rational_time": "5/12203190030096"
+    },
+    {
+      "L": 16,
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "AB": [
+          "4371220795392",
+          "75452083200",
+          "319680000"
+        ],
+        "BB": [
+          "2373055543296",
+          "40572057600",
+          "170640000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 2048,
+      "global_magnetic_pairs": 18432,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        }
+      },
+      "positive_denominator": "2995165200/25166777",
+      "rational_time": "5/12223805590224"
+    },
+    {
+      "L": 20,
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "AB": [
+          "4371220795392",
+          "75452083200",
+          "319680000"
+        ],
+        "BB": [
+          "2373055543296",
+          "40572057600",
+          "170640000"
+        ]
+      },
+      "error": "1/60",
+      "global_formation_groups": 4000,
+      "global_magnetic_pairs": 36000,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        }
+      },
+      "positive_denominator": "2995165200/25166777",
+      "rational_time": "5/12223805590224"
+    }
+  ],
+  "graph": {
+    "dependencies": [
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "formation_balance_and_unsaturated_dark_states_bounded_theorem_note_2026-09-24"
+    ],
+    "new_edges": 14681,
+    "new_node": "original_local_charge_current_and_finite_time_covariance_bounded_theorem_note_2026-09-25",
+    "new_nodes": 6668,
+    "old_edges": 14678,
+    "old_nodes": 6667,
+    "unchanged_old_nodes": 6667
+  },
+  "incomplete_publication_reviews_used_as_completed_evidence": false,
+  "limitations": "Proof and premise assessment is in REPORT.md. Large raw arrays are mechanically checked, not all manually read. No author code, old writer, numerical propagator, or pipeline was executed.",
+  "original_bytes_unchanged": 332,
+  "original_files_byte_and_stat_unchanged": 275,
+  "previously_partial47_chmod_changes": 57,
+  "prior_failed_graph_write": {
+    "execution_repeated": false,
+    "failed_verifier_hash_bound": true,
+    "record_sha256": "d878bcad193fb57276427e1433c1538a4efac2d4812d72dbca53ce927f4a08c1"
+  },
+  "qualified46_exact_single_prose_repair": true,
+  "scope": "NEW released-source recovery comparison; not original-reviewer final approval, not a blinded derivation, and not an audit.",
+  "sealed_records": [
+    {
+      "members": 15,
+      "path": "native-charge-current-noise-personal/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d"
+    },
+    {
+      "members": 3,
+      "path": "native-charge-current-noise-qualified/QUALIFICATION_SEAL.json",
+      "sha256": "f13762c1ce4d0de5d4d6b185fd59059519b59956fa3f11a038ea514c85329a13"
+    },
+    {
+      "members": 31,
+      "path": "native-charge-current-noise-independent/PRE_SEAL.json",
+      "sha256": "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410"
+    },
+    {
+      "members": 32,
+      "path": "native-charge-current-noise-independent/POST_SEAL.json",
+      "sha256": "474656df6a908fd8964eb87e9ce20221b0fdd0496fb97363c071323856443e26"
+    },
+    {
+      "members": 17,
+      "path": "native-charge-finite-time-personal/AUTHOR_SEAL.json",
+      "sha256": "1f2cb7ce4c8e8b5491a2e35aae215f7e0533d6119343074173ef13dc877d8ba8"
+    },
+    {
+      "members": 39,
+      "path": "native-charge-finite-time-independent/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "members": 42,
+      "path": "native-charge-finite-time-independent/POST_SEAL.json",
+      "sha256": "2ce94c18e4e8ff9d0a0e14b0e2925e65b41aa7f02f4016530d07fb20325af7a6"
+    }
+  ],
+  "source_files_matched": 14,
+  "stored_atom_occurrences_compared": 14916,
+  "stored_group_occurrences_compared": 23487
+}

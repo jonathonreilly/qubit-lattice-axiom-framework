@@ -1,0 +1,7 @@
+{
+  "source_records": 25,
+  "author47_members": 17,
+  "preserved_PRE_files": 41,
+  "pins_sha256": "cc61d562df92b61bbfbf54ea2e782a021723ef37c532576a9cb890be9c14553c",
+  "all_expected_source_bytes_verified": true
+}

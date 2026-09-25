@@ -1,0 +1,26 @@
+{
+  "result": "PRIMITIVE_RESULTS.json",
+  "tori": [
+    {
+      "L": 4,
+      "primitive_rows": 1920,
+      "gram_rows": 63,
+      "rates": {
+        "resolved": 1920,
+        "coherent": 1920,
+        "plus_only_mutant": 960
+      }
+    },
+    {
+      "L": 6,
+      "primitive_rows": 6480,
+      "gram_rows": 63,
+      "rates": {
+        "resolved": 6480,
+        "coherent": 6480,
+        "plus_only_mutant": 3240
+      }
+    }
+  ],
+  "all_primitive_intermediate_and_final_gauss_checks": true
+}

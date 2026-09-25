@@ -1,0 +1,28 @@
+{
+  "branch": "codex/mobile-record-local-charge-observation-20260925",
+  "captured_utc": "2026-09-25T10:58:02.166312+00:00",
+  "frozen_file_checks": {
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py": true,
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py": true,
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+    "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md": true,
+    "docs/audit/data/citation_graph_manifest.json": true,
+    "logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt": true,
+    "outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json": true,
+    "outputs/native_local_charge_covariance_20260925/current.stderr.txt": true,
+    "outputs/native_local_charge_covariance_20260925/current.stdout.json": true,
+    "outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt": true,
+    "outputs/native_local_charge_covariance_20260925/finite_time.stdout.json": true,
+    "scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py": true
+  },
+  "frozen_manifest_sha256": "ab6385c5cde92eef0512a455934dc90600ac711dbb2e613c43b198a43848005d",
+  "head": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "instruction_ref": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "network_refresh_performed": false,
+  "origin_main": "cf1b55b9e574e3c118e37b5bb504af9fd8ca8d34",
+  "requested_base": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "scope": "New released-source recovery review; no original-reviewer final approval or new blinded derivation.",
+  "status": " M docs/audit/data/citation_graph_manifest.json\n?? .claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py\n?? .claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py\n?? docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md\n?? logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt\n?? outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json\n?? outputs/native_local_charge_covariance_20260925/current.stderr.txt\n?? outputs/native_local_charge_covariance_20260925/current.stdout.json\n?? outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt\n?? outputs/native_local_charge_covariance_20260925/finite_time.stdout.json\n?? scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py\n"
+}

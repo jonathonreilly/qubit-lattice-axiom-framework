@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-25T10:32:17.747844+00:00",
+  "skill_read_as_process_guidance": {
+    "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+    "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "bytes": 14490,
+    "mode": 33188,
+    "dev": 16777231,
+    "ino": 295080999,
+    "mtime_ns": 1788906558708050244,
+    "ctime_ns": 1788906559024445316,
+    "nlink": 1
+  },
+  "application": "Bounded proof, premise and evidence review only; explicit task scope controls. No audit, publication, delegation or model change.",
+  "unchanged_repository_instruction_copies": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication/AGENTS.md",
+      "snapshot": "post_sources/bound_sources/5_AGENTS.md",
+      "role": "Unchanged common-model parent or procedure identity",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 463724320,
+      "mtime_ns": 1790326457847340516,
+      "ctime_ns": 1790326457847340516,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "post_sources/bound_sources/6_SCIENCE_WORKFLOW.md",
+      "role": "Unchanged common-model parent or procedure identity",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 463735052,
+      "mtime_ns": 1790326459030019356,
+      "ctime_ns": 1790326459030019356,
+      "nlink": 1
+    }
+  ],
+  "editable_prompts_modified": [],
+  "model_or_effort_changed": false,
+  "author_programs_or_old_writers_executed": []
+}

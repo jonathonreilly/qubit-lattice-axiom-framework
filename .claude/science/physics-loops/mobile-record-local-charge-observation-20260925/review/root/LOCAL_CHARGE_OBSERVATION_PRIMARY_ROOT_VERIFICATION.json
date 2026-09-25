@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-25T10:41:38.494598+00:00",
+  "source_proofs_reused_at_verified_identity": true,
+  "complete_new_frontmatter_front_footer_wrapper_and_presentation_changes_read": true,
+  "exact_embedded_proofs_after_listed_qualifications": true,
+  "comparisons": [
+    {
+      "label": "current",
+      "all_non_timing_leaves_exact": 177399,
+      "old_elapsed_seconds": 1.7815674999728799,
+      "new_elapsed_seconds": 1.1407075838651508
+    },
+    {
+      "label": "finite_time",
+      "all_non_timing_leaves_exact": 249500,
+      "old_elapsed_seconds": 0.10008400003425777,
+      "new_elapsed_seconds": 0.08019112492911518
+    }
+  ],
+  "wrapper_runtime_artifact_execution_cache_identity_passed": true,
+  "cache_status": "fresh",
+  "old_graph_nodes_unchanged": 6667,
+  "added_nodes": 1,
+  "added_edges": 3,
+  "no_time_propagator_or_experimental_fit": true,
+  "limitations": "Conditional preparation and matter-charge functions. Fixed-local-support error only; conservative model-time window. No measured identification, calibration, infinite-volume evolution, Fourier-volume remainder, or microscopic joint transfer.",
+  "PRE_additions_separately_attributed": true,
+  "failed_scientific_executions": [],
+  "failed_build_attempts": [
+    "Premature graph-manifest writer failed because graph build was still running; freeze verifier rejected unchanged base topology. No graph manifest or verification receipt was written by that attempt; exact prior verifier and failure record preserved."
+  ]
+}

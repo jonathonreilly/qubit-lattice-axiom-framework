@@ -1,0 +1,121 @@
+{
+  "at_utc": "2026-09-25T09:52:32.123377+00:00",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "Only authorized scientific parent",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411337905,
+      "mtime_ns": 1790247110238463826,
+      "ctime_ns": 1790247110238463826,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "Only authorized scientific parent",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411337899,
+      "mtime_ns": 1790247110237258803,
+      "ctime_ns": 1790247110237258803,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "Only authorized scientific parent",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411336919,
+      "mtime_ns": 1790247110088356765,
+      "ctime_ns": 1790247110088356765,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "snapshot": "sources/procedure_AGENTS.md",
+      "role": "Procedure only; no scientific premise",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411329219,
+      "mtime_ns": 1790247109016911615,
+      "ctime_ns": 1790247109016911615,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "sources/procedure_SCIENCE_WORKFLOW.md",
+      "role": "Procedure only; no scientific premise",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411339933,
+      "mtime_ns": 1790247110546458927,
+      "ctime_ns": 1790247110546458927,
+      "nlink": 1
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "snapshot": "sources/procedure_SKILL_FRESHNESS_CHECK.md",
+      "role": "Procedure only; no scientific premise",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "mode": 33188,
+      "dev": 16777231,
+      "ino": 411339998,
+      "mtime_ns": 1790247110569287403,
+      "ctime_ns": 1790247110569287403,
+      "nlink": 1
+    },
+    {
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "eb1f1ca8338848cf2046582e13aef372d8540937",
+      "git_path": "AGENTS.md",
+      "snapshot": "sources/ai_execution_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "role": "Procedure only; read existing refs, no fetch or mutation"
+    },
+    {
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "snapshot": "sources/physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "role": "Procedure only; read existing refs, no fetch or mutation"
+    },
+    {
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "snapshot": "sources/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "role": "Procedure only; read existing refs, no fetch or mutation"
+    }
+  ],
+  "scientific_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "observed_origin_main": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "prior_exposure": "Earlier42/43 PRE/POST and final publication comparison are disclosed historical exposure; no prior scientific code reused.",
+  "forbidden_packets_read": [],
+  "scientific_programs_imported": []
+}

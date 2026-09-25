@@ -1,0 +1,226 @@
+{
+  "commands": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "codex/mobile-record-local-charge-observation-20260925\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--porcelain=v1",
+        "--untracked-files=all"
+      ],
+      "exit_code": 0,
+      "stdout": " M docs/audit/data/citation_graph_manifest.json\n?? .claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py\n?? .claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py\n?? docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md\n?? logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt\n?? outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json\n?? outputs/native_local_charge_covariance_20260925/current.stderr.txt\n?? outputs/native_local_charge_covariance_20260925/current.stdout.json\n?? outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt\n?? outputs/native_local_charge_covariance_20260925/finite_time.stdout.json\n?? scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-status",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a"
+      ],
+      "exit_code": 0,
+      "stdout": "M\tdocs/audit/data/citation_graph_manifest.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/audit/data/citation_graph_manifest.json"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "snapshot": "sources/base_citation_graph_manifest.json",
+        "sha256": "687e5130acd4b38ac5f318c4bea9c1362920a687eae2306c08b2706a35e20abf",
+        "bytes": 943724
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+        "bytes": 10953,
+        "same_as_live_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+        "bytes": 14902,
+        "same_as_live_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+        "bytes": 16764,
+        "same_as_live_path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:scripts/runner_cache.py"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+        "bytes": 24941,
+        "same_as_live_path": "scripts/runner_cache.py"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/audit/scripts/write_citation_graph_manifest.py"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+        "bytes": 2049,
+        "same_as_live_path": "docs/audit/scripts/write_citation_graph_manifest.py"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:AGENTS.md"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+        "bytes": 737,
+        "same_as_live_path": "AGENTS.md"
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      ],
+      "exit_code": 0,
+      "stdout": {
+        "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+        "bytes": 12253,
+        "same_as_live_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md"
+      },
+      "stderr": ""
+    }
+  ],
+  "base_parent_and_helper_identities": [
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "bytes": 2049
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    }
+  ]
+}

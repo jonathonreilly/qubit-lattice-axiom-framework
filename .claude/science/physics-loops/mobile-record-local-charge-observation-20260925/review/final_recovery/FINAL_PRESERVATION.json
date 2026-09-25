@@ -1,0 +1,750 @@
+{
+  "checked_utc": "2026-09-25T11:10:19.331599+00:00",
+  "fully_unchanged": 275,
+  "original47_new_report_or_seal_read": false,
+  "original_bytes_unchanged": 332,
+  "previously_partial47_chmod_changes": [
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233501647,
+          "before": 1790333421947157331
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/GIT_SOURCE_EVIDENCE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233529273,
+          "before": 1790333420967602893
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PRIOR_PRESERVATION_BEFORE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233688775,
+          "before": 1790333421976381553
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/SOURCE_PINS.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233705942,
+          "before": 1790333421981109386
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.execution.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233721943,
+          "before": 1790333421980907799
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233737526,
+          "before": 1790333421980835423
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233752652,
+          "before": 1790333398871435743
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture_sources.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233769569,
+          "before": 1790333716325394791
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/compare_read_only.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233787694,
+          "before": 1790333724741557527
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.execution.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233804819,
+          "before": 1790333724741419150
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233820528,
+          "before": 1790333724741336065
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233835736,
+          "before": 1790333398872091713
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/record_run.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233869737,
+          "before": 1790333421813435520
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/base_citation_graph_manifest.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233887237,
+          "before": 1790333420967878022
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_FROZEN_SOURCES.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233909904,
+          "before": 1790333421012852522
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233927988,
+          "before": 1790333421012724019
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stdout.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233945738,
+          "before": 1790333421012098550
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233964530,
+          "before": 1790333421012426222
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233980656,
+          "before": 1790333421011740460
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/LOCAL_CHARGE_OBSERVATION_PUBLICATION_WORKING_SOURCES.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072233997989,
+          "before": 1790333421013274571
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/build_local_charge_observation_publication.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234016073,
+          "before": 1790333421014075876
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/local-charge-observation-publication-history/PREMATURE_GRAPH_DEPENDENCY_FAILURE.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234033115,
+          "before": 1790333421014309881
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/local-charge-observation-publication-history/verify_publication_attempt01.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234049198,
+          "before": 1790333421013656077
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/external/verify_local_charge_observation_publication.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234065282,
+          "before": 1790333421015266147
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/AUTHOR_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234080282,
+          "before": 1790333421015841199
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234096408,
+          "before": 1790333421016637130
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234111783,
+          "before": 1790333421020268735
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234128616,
+          "before": 1790333421018262075
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/attempt01/stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234143825,
+          "before": 1790333421016313999
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-personal/current_noise_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234159034,
+          "before": 1790333421044812876
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234173701,
+          "before": 1790333421045152298
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/QUALIFICATION.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234188493,
+          "before": 1790333421045530888
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/QUALIFICATION_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234204368,
+          "before": 1790333421045803435
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-current-noise-qualified/WORDING_ONLY.diff"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234221576,
+          "before": 1790333421021766387
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/AUTHOR_SEAL.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234237744,
+          "before": 1790333421022464607
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234253494,
+          "before": 1790333421023273455
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/EXECUTION.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234268411,
+          "before": 1790333421044155364
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234285328,
+          "before": 1790333421029669984
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/attempt01/stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234300744,
+          "before": 1790333421022843864
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/native-charge-finite-time-personal/local_support_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234317786,
+          "before": 1790333420968973000
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234335954,
+          "before": 1790333420969275047
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234351037,
+          "before": 1790333421010705651
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/AGENTS.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234366704,
+          "before": 1790333420970729156
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234382704,
+          "before": 1790333420972047346
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234398580,
+          "before": 1790333420972657356
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234414538,
+          "before": 1790333420973032405
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234429872,
+          "before": 1790333421011447497
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234446997,
+          "before": 1790333420974799561
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234463997,
+          "before": 1790333421009911053
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/docs/audit/scripts/write_citation_graph_manifest.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234481623,
+          "before": 1790333420976933557
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234500040,
+          "before": 1790333420977402023
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234518540,
+          "before": 1790333420977697320
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/current.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234536332,
+          "before": 1790333420979335349
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/current.stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234561249,
+          "before": 1790333420981007962
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234578083,
+          "before": 1790333420988346216
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stdout.json"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234596333,
+          "before": 1790333421007134296
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py"
+    },
+    {
+      "changes": {
+        "ctime_ns": {
+          "after": 1790334072234618959,
+          "before": 1790333421008572738
+        },
+        "mode": {
+          "after": 292,
+          "before": 420
+        }
+      },
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/sources/publication/scripts/runner_cache.py"
+    }
+  ],
+  "worktree_head_branch_and_status_unchanged": true
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/compare_read_only.py", line 40, in <module>
+    assert signature(Path(row['original']))=={k:row[k] for k in signature(Path(row['original']))},row['original']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: /Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/GIT_SOURCE_EVIDENCE.json

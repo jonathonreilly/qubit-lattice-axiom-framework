@@ -1,0 +1,354 @@
+{
+  "scope": "Final released-source comparison. Science assessment Part II and initial-compression joins; both payloads compared mechanically. No primary, author, historical writer, audit or pipeline executed.",
+  "frozen_manifest_sha256": "ab6385c5cde92eef0512a455934dc90600ac711dbb2e613c43b198a43848005d",
+  "frozen_files": 14,
+  "source_origins": 44,
+  "protected_prior_files": 85,
+  "observed_paths_unchanged": 174,
+  "base": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "branch": "codex/mobile-record-local-charge-observation-20260925",
+  "candidate_changed_paths": [
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py",
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py",
+    "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt",
+    "outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json",
+    "outputs/native_local_charge_covariance_20260925/current.stderr.txt",
+    "outputs/native_local_charge_covariance_20260925/current.stdout.json",
+    "outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt",
+    "outputs/native_local_charge_covariance_20260925/finite_time.stdout.json",
+    "scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py"
+  ],
+  "complete_note_and_wrapper_match_inert_writer": true,
+  "presentation_replacements": [
+    2,
+    5
+  ],
+  "qualification46_exactly_one_prose_replacement": true,
+  "comparisons": [
+    {
+      "label": "current",
+      "runtime_sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "author_output_sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad",
+      "fresh_output_sha256": "8aa219f33df7b834bfc021fe65847e8bb4c1d4b392ac989ff853ae98b034a5df",
+      "non_timing_leaf_count": 177399,
+      "leaf_types": {
+        "str": 8523,
+        "int": 168872,
+        "NoneType": 3,
+        "bool": 1
+      },
+      "only_differences": [
+        {
+          "path": [
+            "elapsed_seconds"
+          ],
+          "old": 1.7815674999728799,
+          "fresh": 1.1407075838651508
+        }
+      ],
+      "complete_compact_results": [
+        {
+          "graph": "torus2",
+          "vertices": 8,
+          "A": 4,
+          "primitive_rows": 48,
+          "Fourier": null
+        },
+        {
+          "graph": "torus4",
+          "vertices": 64,
+          "A": 32,
+          "primitive_rows": 1920,
+          "Fourier": {
+            "allowed_k_in_pi": [
+              "1/2",
+              "0",
+              "0"
+            ],
+            "full_initial_second_moment_slope_in_kappa": 2560,
+            "site_normalized_slope_in_kappa": 40,
+            "defect_sum": 1,
+            "imaginary_self_covariance": 0
+          }
+        },
+        {
+          "graph": "torus6",
+          "vertices": 216,
+          "A": 108,
+          "primitive_rows": 6480,
+          "Fourier": {
+            "allowed_k_in_pi": [
+              "1",
+              "0",
+              "0"
+            ],
+            "full_initial_second_moment_slope_in_kappa": 17280,
+            "site_normalized_slope_in_kappa": 80,
+            "defect_sum": 2,
+            "imaginary_self_covariance": 0
+          }
+        },
+        {
+          "graph": "path7",
+          "vertices": 7,
+          "A": 4,
+          "primitive_rows": 8,
+          "Fourier": null
+        },
+        {
+          "graph": "K2_3",
+          "vertices": 5,
+          "A": 2,
+          "primitive_rows": 24,
+          "Fourier": null
+        }
+      ]
+    },
+    {
+      "label": "finite_time",
+      "runtime_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+      "author_output_sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545",
+      "fresh_output_sha256": "fa35240e69133e82a52702afbcf4eadc7bdc3ff5954649e8533bb7d49561abdf",
+      "non_timing_leaf_count": 249500,
+      "leaf_types": {
+        "str": 38537,
+        "int": 210939,
+        "bool": 18,
+        "float": 6
+      },
+      "only_differences": [
+        {
+          "path": [
+            "elapsed_seconds"
+          ],
+          "old": 0.10008400003425777,
+          "fresh": 0.08019112492911518
+        }
+      ],
+      "complete_compact_results": [
+        {
+          "L": 4,
+          "M": {
+            "AA": [
+              "217678233600",
+              "4758912000",
+              "23760000"
+            ],
+            "BB": [
+              "393030144000",
+              "8771328000",
+              "47520000"
+            ],
+            "AB": [
+              "544195584000",
+              "12970368000",
+              "73440000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "1/315455853600",
+            "decimal_time": 3.170015672836448e-12,
+            "denominator": "47722800/401957",
+            "ratio_error_bound": "1/60"
+          }
+        },
+        {
+          "L": 6,
+          "M": {
+            "AA": [
+              "745910747136",
+              "12522470400",
+              "49680000"
+            ],
+            "BB": [
+              "1345856145408",
+              "24657696000",
+              "109080000"
+            ],
+            "AB": [
+              "2316821999616",
+              "43623360000",
+              "196560000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "5/6529806971352",
+            "decimal_time": 7.65719418956231e-13,
+            "denominator": "3198289200/26887567",
+            "ratio_error_bound": "1/60"
+          }
+        },
+        {
+          "L": 8,
+          "M": {
+            "AA": [
+              "975198486528",
+              "15676416000",
+              "60480000"
+            ],
+            "BB": [
+              "1994416349184",
+              "35141299200",
+              "151200000"
+            ],
+            "AB": [
+              "3613942407168",
+              "64590566400",
+              "280800000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "5/10127317656096",
+            "decimal_time": 4.937141471997098e-13,
+            "denominator": "1240580400/10425229",
+            "ratio_error_bound": "1/60"
+          }
+        },
+        {
+          "L": 12,
+          "M": {
+            "AA": [
+              "1039050768384",
+              "16422912000",
+              "62640000"
+            ],
+            "BB": [
+              "2369306640384",
+              "40544064000",
+              "170640000"
+            ],
+            "AB": [
+              "4363722989568",
+              "75396096000",
+              "319680000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "5/12203190030096",
+            "decimal_time": 4.0972893052298604e-13,
+            "denominator": "2990110800/25124333",
+            "ratio_error_bound": "1/60"
+          }
+        },
+        {
+          "L": 16,
+          "M": {
+            "AA": [
+              "1039050768384",
+              "16422912000",
+              "62640000"
+            ],
+            "BB": [
+              "2373055543296",
+              "40572057600",
+              "170640000"
+            ],
+            "AB": [
+              "4371220795392",
+              "75452083200",
+              "319680000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "5/12223805590224",
+            "decimal_time": 4.090379189275355e-13,
+            "denominator": "2995165200/25166777",
+            "ratio_error_bound": "1/60"
+          }
+        },
+        {
+          "L": 20,
+          "M": {
+            "AA": [
+              "1039050768384",
+              "16422912000",
+              "62640000"
+            ],
+            "BB": [
+              "2373055543296",
+              "40572057600",
+              "170640000"
+            ],
+            "AB": [
+              "4371220795392",
+              "75452083200",
+              "319680000"
+            ]
+          },
+          "illustrative": {
+            "max_time_for_bound_one_over_sixty": "5/12223805590224",
+            "decimal_time": 4.090379189275355e-13,
+            "denominator": "2995165200/25166777",
+            "ratio_error_bound": "1/60"
+          }
+        }
+      ]
+    }
+  ],
+  "declared_inputs": [
+    {
+      "path": "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "bytes": 30350,
+      "sha256": "087ba77c29a8d44a88aa3bb493d34bd1db64e10115a935a7521ea8895a12359e"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 16764,
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py",
+      "bytes": 6692,
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py",
+      "bytes": 5849,
+      "sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+    }
+  ],
+  "input_fingerprint_sha256": "3b9e82f6cbffbeea7c9d1f08bd5b065d974e5c33a7201679c0db6c077cc6471b",
+  "exact_full_cache_reconstruction": true,
+  "cache_semantics": "fresh; stored status ok and exit0",
+  "wrapper_elapsed_seconds": 1.3664364169817418,
+  "API_elapsed_seconds": 1.462062120437622,
+  "outer_receipt_elapsed_seconds": 1.4692887500859797,
+  "cache_sha256": "07c11a625f1de764a6b020803a51634648c558fa3e677d91f9103ae84baf50cc",
+  "result_sha256": "12c3f617abd76dcd472ae06ad9385537a6977b458109dd3020b199c3286e2c05",
+  "graph": {
+    "old_nodes": 6667,
+    "new_nodes": 6668,
+    "old_edges": 14678,
+    "new_edges": 14681,
+    "added_node": "original_local_charge_current_and_finite_time_covariance_bounded_theorem_note_2026-09-25",
+    "exact_parent_ids": [
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "formation_balance_and_unsaturated_dark_states_bounded_theorem_note_2026-09-24"
+    ],
+    "new_node": {
+      "out_degree": 3,
+      "deps_hash": "bdb2639dba99"
+    },
+    "all_prior_nodes_identical": true
+  },
+  "failure_history": {
+    "old_verifier_sha256": "58a3e2354ca2e589c2d1c5b158a579ea83c3c6abb513a2df08c9b3b10a74f80e",
+    "current_verifier_only_adds_failure_metadata": true,
+    "historical_cause": "Author-recorded premature graph dependency; no independent historical trace reconstruction claimed."
+  },
+  "independent_science_reproduction": false,
+  "own_scientific_authority": "Unchanged PRE47/POST47, not root verification metadata."
+}

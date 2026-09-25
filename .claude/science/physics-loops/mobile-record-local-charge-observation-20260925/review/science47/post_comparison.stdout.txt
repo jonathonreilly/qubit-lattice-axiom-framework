@@ -1,0 +1,604 @@
+{
+  "scope": "Released-source correspondence and own global common-B incidence reconstruction; no author program or old writer executed.",
+  "author47_members": 17,
+  "source_origins": 25,
+  "prior_PRE_files_unchanged": 41,
+  "all_observed_sources_and_copies_unchanged": 91,
+  "working_to_final_literal_replacements": [
+    {
+      "old_sha256": "2cbc41613d744bb9019ce06acc86140a05d16ef19582bbb0e7a42b09c773f2e9",
+      "new_sha256": "9fc94689f40c62541e7f1205368277e118e1f57e2165cf636cafccc4e78e65c3",
+      "old_bytes": 175,
+      "new_bytes": 191
+    },
+    {
+      "old_sha256": "7239075b994897c911b9ec22c9b8cfcc57fcef9274c2081b0752f3418029d8e8",
+      "new_sha256": "9b32fb61984197b7a62e4c1d7f4b5e904875dc09b28b0b6d530f3f52e3c22720",
+      "old_bytes": 66,
+      "new_bytes": 355
+    },
+    {
+      "old_sha256": "e9bc4aebed62e2159733cdaa4e316b74c2191edd73baee494e1d70de36092831",
+      "new_sha256": "2f8a6699c5b6e9d9243ecd8738a1e03d161432dfa1cfdf5f7fe0fafff9a61f16",
+      "old_bytes": 336,
+      "new_bytes": 3758
+    }
+  ],
+  "author_execution_bindings": [
+    {
+      "subpacket": "attempt01",
+      "source_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+      "stdout_sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545",
+      "elapsed_seconds": 0.16434854199178517,
+      "exit_code": 0
+    },
+    {
+      "subpacket": "root_readonly_attempt01",
+      "source_sha256": "a23f6abd79f2f7fcf7a876d2baf85b53168f27dc55a8fdccada092ef2037dba3",
+      "stdout_sha256": "d33e426307324f8941a52c456767c3e7126f23e256836a0775f8edbd5290c4cd",
+      "elapsed_seconds": 0.7240049589890987,
+      "exit_code": 0
+    }
+  ],
+  "full_primary_output_sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545",
+  "author_primary_internal_elapsed_seconds": 0.10008400003425777,
+  "graphs": [
+    {
+      "L": 4,
+      "global_formation_groups": 32,
+      "global_magnetic_pairs": 240,
+      "global_electric_terms": 192,
+      "complete_stored_atoms_compared": 1279,
+      "complete_stored_groups_compared": 993,
+      "sets": {
+        "A": {
+          "X1": 138,
+          "X2": 213,
+          "counts": {
+            "formation": 1,
+            "magnetic": 15
+          },
+          "halo_counts": {
+            "formation": 31,
+            "magnetic": 240
+          },
+          "J_coefficients": [
+            77760,
+            600
+          ],
+          "J_halo_coefficients": [
+            1244160,
+            18600
+          ]
+        },
+        "B": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          },
+          "J_coefficients": [
+            388800,
+            3600
+          ],
+          "J_halo_coefficients": [
+            1244160,
+            19200
+          ]
+        },
+        "AB": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          },
+          "J_coefficients": [
+            388800,
+            3600
+          ],
+          "J_halo_coefficients": [
+            1244160,
+            19200
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "217678233600",
+          "4758912000",
+          "23760000"
+        ],
+        "BB": [
+          "393030144000",
+          "8771328000",
+          "47520000"
+        ],
+        "AB": [
+          "544195584000",
+          "12970368000",
+          "73440000"
+        ]
+      },
+      "ratio_window": "1/315455853600",
+      "decimal_window": 3.170015672836448e-12,
+      "positive_denominator": "47722800/401957",
+      "exact_ratio_error": "1/60"
+    },
+    {
+      "L": 6,
+      "global_formation_groups": 108,
+      "global_magnetic_pairs": 972,
+      "global_electric_terms": 648,
+      "complete_stored_atoms_compared": 2356,
+      "complete_stored_groups_compared": 2979,
+      "sets": {
+        "A": {
+          "X1": 174,
+          "X2": 354,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 67,
+            "magnetic": 735
+          },
+          "J_coefficients": [
+            93312,
+            600
+          ],
+          "J_halo_coefficients": [
+            3810240,
+            40200
+          ]
+        },
+        "B": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            4618944,
+            53400
+          ]
+        },
+        "AB": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            4618944,
+            53400
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "745910747136",
+          "12522470400",
+          "49680000"
+        ],
+        "BB": [
+          "1345856145408",
+          "24657696000",
+          "109080000"
+        ],
+        "AB": [
+          "2316821999616",
+          "43623360000",
+          "196560000"
+        ]
+      },
+      "ratio_window": "5/6529806971352",
+      "decimal_window": 7.65719418956231e-13,
+      "positive_denominator": "3198289200/26887567",
+      "exact_ratio_error": "1/60"
+    },
+    {
+      "L": 8,
+      "global_formation_groups": 256,
+      "global_magnetic_pairs": 2304,
+      "global_electric_terms": 1536,
+      "complete_stored_atoms_compared": 2755,
+      "complete_stored_groups_compared": 4347,
+      "sets": {
+        "A": {
+          "X1": 177,
+          "X2": 390,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 82,
+            "magnetic": 972
+          },
+          "J_coefficients": [
+            93312,
+            600
+          ],
+          "J_halo_coefficients": [
+            5038848,
+            49200
+          ]
+        },
+        "B": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            7309440,
+            76800
+          ]
+        },
+        "AB": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            7309440,
+            76800
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "975198486528",
+          "15676416000",
+          "60480000"
+        ],
+        "BB": [
+          "1994416349184",
+          "35141299200",
+          "151200000"
+        ],
+        "AB": [
+          "3613942407168",
+          "64590566400",
+          "280800000"
+        ]
+      },
+      "ratio_window": "5/10127317656096",
+      "decimal_window": 4.937141471997098e-13,
+      "positive_denominator": "1240580400/10425229",
+      "exact_ratio_error": "1/60"
+    },
+    {
+      "L": 12,
+      "global_formation_groups": 864,
+      "global_magnetic_pairs": 7776,
+      "global_electric_terms": 5184,
+      "complete_stored_atoms_compared": 2842,
+      "complete_stored_groups_compared": 5052,
+      "sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          },
+          "J_coefficients": [
+            93312,
+            600
+          ],
+          "J_halo_coefficients": [
+            5380992,
+            51000
+          ]
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8864640,
+            87600
+          ]
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8864640,
+            87600
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "BB": [
+          "2369306640384",
+          "40544064000",
+          "170640000"
+        ],
+        "AB": [
+          "4363722989568",
+          "75396096000",
+          "319680000"
+        ]
+      },
+      "ratio_window": "5/12203190030096",
+      "decimal_window": 4.0972893052298604e-13,
+      "positive_denominator": "2990110800/25124333",
+      "exact_ratio_error": "1/60"
+    },
+    {
+      "L": 16,
+      "global_formation_groups": 2048,
+      "global_magnetic_pairs": 18432,
+      "global_electric_terms": 12288,
+      "complete_stored_atoms_compared": 2842,
+      "complete_stored_groups_compared": 5058,
+      "sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          },
+          "J_coefficients": [
+            93312,
+            600
+          ],
+          "J_halo_coefficients": [
+            5380992,
+            51000
+          ]
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8880192,
+            87600
+          ]
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8880192,
+            87600
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "BB": [
+          "2373055543296",
+          "40572057600",
+          "170640000"
+        ],
+        "AB": [
+          "4371220795392",
+          "75452083200",
+          "319680000"
+        ]
+      },
+      "ratio_window": "5/12223805590224",
+      "decimal_window": 4.090379189275355e-13,
+      "positive_denominator": "2995165200/25166777",
+      "exact_ratio_error": "1/60"
+    },
+    {
+      "L": 20,
+      "global_formation_groups": 4000,
+      "global_magnetic_pairs": 36000,
+      "global_electric_terms": 24000,
+      "complete_stored_atoms_compared": 2842,
+      "complete_stored_groups_compared": 5058,
+      "sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          },
+          "J_coefficients": [
+            93312,
+            600
+          ],
+          "J_halo_coefficients": [
+            5380992,
+            51000
+          ]
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8880192,
+            87600
+          ]
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          },
+          "J_coefficients": [
+            482112,
+            3600
+          ],
+          "J_halo_coefficients": [
+            8880192,
+            87600
+          ]
+        }
+      },
+      "M": {
+        "AA": [
+          "1039050768384",
+          "16422912000",
+          "62640000"
+        ],
+        "BB": [
+          "2373055543296",
+          "40572057600",
+          "170640000"
+        ],
+        "AB": [
+          "4371220795392",
+          "75452083200",
+          "319680000"
+        ]
+      },
+      "ratio_window": "5/12223805590224",
+      "decimal_window": 4.090379189275355e-13,
+      "positive_denominator": "2995165200/25166777",
+      "exact_ratio_error": "1/60"
+    }
+  ],
+  "sealed_PRE_coefficient_comparisons": [
+    {
+      "L": 4,
+      "both_original_instruments": "Exact first coefficients match sealed PRE primitives."
+    },
+    {
+      "L": 6,
+      "both_original_instruments": "Exact first coefficients match sealed PRE primitives."
+    }
+  ],
+  "scientific_proof_assessment": "Separate POST.md; numerical geometry is not evidence of weak-star measurability or physical selection."
+}

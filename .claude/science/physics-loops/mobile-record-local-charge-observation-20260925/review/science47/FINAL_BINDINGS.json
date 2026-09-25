@@ -1,0 +1,61 @@
+{
+  "additional_procedural_pin_sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4",
+  "artifact_execution_binding_scope": "Successful writer receipts followed by independent complete stored-evidence reconstruction; artifact hashes are observed at verification and closure, not backdated to execution start.",
+  "audit_or_publication_changes": [],
+  "execution_receipts": [
+    {
+      "elapsed_seconds": 0.2691188750322908,
+      "exit_code": 0,
+      "receipt": "capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "elapsed_seconds": 3.0245806670282036,
+      "exit_code": 0,
+      "receipt": "primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "elapsed_seconds": 0.5478522919584066,
+      "exit_code": 0,
+      "receipt": "tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "elapsed_seconds": 0.47898420807905495,
+      "exit_code": 0,
+      "receipt": "verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    }
+  ],
+  "failures_preserved": "FAILED_ROUTES_AND_SCOPE.md; no scientific execution failed.",
+  "historical_programs_executed": [],
+  "new_agents": 0,
+  "read_only_verifier_guard": {
+    "imports": [
+      "collections",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib",
+      "subprocess"
+    ],
+    "no_file_mutation_calls": true,
+    "only_subprocess_calls": "git show of pinned sources"
+  },
+  "report": {
+    "path": "PRE.md",
+    "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+  },
+  "scientific_result_hashes": {
+    "PRIMITIVE_RESULTS.json": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b",
+    "TREE_RESULTS.json": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+  },
+  "scope": "Bounded independent PRE47; prior42/43 exposure retained, no author47 release.",
+  "seal_writer_sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5",
+  "source_pins_sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7",
+  "source_preservation_sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07",
+  "verification_output_sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e",
+  "verification_source_sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+}

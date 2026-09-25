@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_admissibility_taxicab_shell_record_instrument_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_admissibility_taxicab_shell_record_instrument_2026_08_14.py",
+ "seed": 66791,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57fc4ba7",
+ "started_utc": "20260925T200631Z",
+ "elapsed_s": 57.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "606b92ffd12b0c87a76f7f0b0d436c22355a94b401ff2074cd3bf04a71e041fe",
+ "stdout_tail": "s actual linear/cubic branch and asymmetric k=2,3 cylinder probabilities match independent exact weights\nPASS: affinity-discriminator extended midpoint preparation affinity accepts linear and rejects cubic response\nPASS: mutation-normalization adding 1/100 to one branch mass is rejected by shell normalization\nPASS: mutation-permanence overwriting the seed is rejected by the append-only Record invariant\nPASS: live-axiom-quotes the note uses the current Lattice, Qubit, Admissibility, and Record wording\nPASS: claim-boundary-contract bounded status, supplied law fields, zero score movement, and non-adoption are visible\nPASS: no-go-discipline-contract the landed note contains a PASS gate and every N1 through N8 section\nPASS: audit-input-paths literal inputs bind own note, current premise and conditional comparison text\nper_element: exact complementary M_2(C) projectors and both response laws are resolved for all 26 nonzero local directions.\nper_site: every forming site on shells through the executed radius receives one supported matrix content with normalized local odds.\nper_mode: checked and not executed \u2014 no Fourier, transfer-spectrum, or continuum mode exhaustion is claimed by this growth law.\nper_block: exact finite-cylinder normalization, shell marginalization, two-cube iteration, and append-only updates are executed.\nlattice_wide: taxicab-ball induction and count formulas are proved symbolically; countable extension uses the consistent cylinder family.\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T200728Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

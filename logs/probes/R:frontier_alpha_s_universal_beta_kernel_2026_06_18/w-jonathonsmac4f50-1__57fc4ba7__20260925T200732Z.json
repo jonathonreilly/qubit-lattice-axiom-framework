@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_alpha_s_universal_beta_kernel_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_alpha_s_universal_beta_kernel_2026_06_18.py",
+ "seed": 66852,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57fc4ba7",
+ "started_utc": "20260925T200732Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "da0111abc7a6505916e07a06df2a2c48153629c51925e073840d7868e703ba43",
+ "stdout_tail": "== Defined coefficient packet ==\n[PASS] C_A is exactly 3 :: 3\n[PASS] C_F is exactly 4/3 :: 4/3\n[PASS] b0 simplifies exactly :: 11 - 2*n/3\n[PASS] b1 simplifies exactly :: 102 - 38*n/3\n[PASS] b0(6) exact value :: 7\n[PASS] b0(5) exact value :: 23/3\n[PASS] b1(6) exact value :: 26\n[PASS] b1(5) exact value :: 116/3\n[PASS] b1(4) exact value :: 154/3\n[PASS] b1(3) exact value :: 64\n\n== Slopes, roots, and signs ==\n[PASS] b0 unit slope is -2/3\n[PASS] b1 unit slope is -38/3\n[PASS] b0 root is 33/2\n[PASS] b1 root is 153/19\n[PASS] b0 integer sign window :: tail=-2*m/3 - 1/3\n[PASS] b1 integer sign window :: tail=-38*m/3 - 12\n\n== Defined coordinate identities ==\n[PASS] g-to-alpha vector-field identity\n[PASS] alpha-to-a vector-field identity\n\nSUMMARY: MODE=normal PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T200733Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

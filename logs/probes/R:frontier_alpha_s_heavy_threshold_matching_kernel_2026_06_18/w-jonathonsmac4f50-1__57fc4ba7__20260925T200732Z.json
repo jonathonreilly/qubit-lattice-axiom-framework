@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_alpha_s_heavy_threshold_matching_kernel_2026_06_18.py",
+ "seed": 66852,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57fc4ba7",
+ "started_utc": "20260925T200732Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "93ca4073a525201b310255cb17f46509f24f9c7ef67e268ffad730cc5f5408d0",
+ "stdout_tail": "\n[PASS] physical semantics are absent from the theorem surface\n[PASS] QCD context denies physical authority from the formal lemma\n\n=== Defined coefficient sequence ===\n[PASS] c(6) = 7\n[PASS] c(5) = 23/3\n[PASS] c(4) = 25/3\n[PASS] c(3) = 9\n[PASS] c(n-1) - c(n) = 2/3 on the full adjacent domain\n[PASS] positive domain is exactly indices 0 through 16\n[PASS] every admissible coefficient is a positive exact Fraction\n\n=== Fixed-coefficient affine identities ===\n[PASS] segment formula is exact\n[PASS] U after T is the identity\n[PASS] T after U is the identity\n[PASS] same-coefficient intervals concatenate\n[PASS] three-step composition is associative\n[PASS] segment validation preserves an exact supplied triple\n\n=== Finite marked paths ===\n[PASS] one segment realizes the empty marker list\n[PASS] two segments emit one identity marker\n[PASS] four segments emit three ordered markers\n[PASS] every marker carries its value exactly\n[PASS] sequential path equals exact summed closed form\n[PASS] reverse inverse maps recover the initial value\n[PASS] path output has exact Fraction type\n[PASS] prefix then suffix grouping equals the full path\n\n=== Marker-jump counterexamples ===\n[PASS] empty marker list accepts an empty jump tuple\n[PASS] zero-jump realization equals defined identity carries\n[PASS] one nonzero jump changes the result by exactly that jump\n[PASS] arbitrary jumps change the result by their exact sum\n[PASS] nonzero cancelling jumps can preserve only the final value\n\nSUMMARY: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T200732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

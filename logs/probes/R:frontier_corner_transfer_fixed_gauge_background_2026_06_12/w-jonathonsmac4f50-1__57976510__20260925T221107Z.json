@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_corner_transfer_fixed_gauge_background_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_corner_transfer_fixed_gauge_background_2026_06_12.py",
+ "seed": 74267,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221107Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f275aafa1767e67ae0832ce3f91400d0e97e753d249c9c2a9337c7f5131b5eb1",
+ "stdout_tail": "--------------------------------------------------\n  [PASS] N5: both interacting opens narrow to the U-INTEGRATED level, not beyond -- remaining object is the measure over backgrounds / gauge dynamics\n\n----------------------------------------------------------------------------------------\nB-checks -- source-note and dependency hygiene\n----------------------------------------------------------------------------------------\n  [PASS] engine contract: anti-Hermitian recurrence inputs are explicit\n  [PASS] engine contract: exact positive-definite modal theorem is present\n  [PASS] engine firewall: physical transfer, RP, and P2 are explicitly excluded\n  [PASS] engine firewall: deleted physical/RP claims remain absent\n  [PASS] substep1 grep: canonical Berezin determinant side present\n  [PASS] registrability grep: Record-registrable / phase-free class present\n  [PASS] firewall sentence: fixed background only\n  [PASS] firewall sentence: U-INTEGRATED level remains named open\n  [PASS] firewall sentence: no species reading, no occupancy cell, r never fixed, binary untouched\n  [PASS] closing language absent: no forbidden integrated-level closure strings\n  [PASS] link inventory exactly three markdown links -- count=3\n  [PASS] companions are backticked, not dependency-linked\n  [PASS] No-promotion statement present\n  [PASS] Berezin self-check flag is true\n\nSCORECARD: PASS=31 FAIL=0\nSUMMARY: fixed-background corner transfer checks complete; U-integrated gauge dynamics remains the named open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221108Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

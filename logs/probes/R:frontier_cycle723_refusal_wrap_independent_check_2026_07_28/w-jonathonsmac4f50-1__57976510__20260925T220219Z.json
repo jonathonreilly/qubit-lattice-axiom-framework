@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle723_refusal_wrap_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.py",
+ "seed": 73739,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220219Z",
+ "elapsed_s": 3.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5e781293fb8ecdb6598299597b27ddef925b4544adecbcbf7f43c19061b76d00",
+ "stdout_tail": "ome_control_present\": true,\n            \"branch_present\": true,\n            \"expected_control_count\": 2,\n            \"lift_call\": \"tof\"\n          }\n        }\n      },\n      \"label\": \"primary_source_discipline\",\n      \"pass\": true\n    },\n    {\n      \"detail\": {\n        \"MCX_expansion_sizes\": {\n          \"four_controls\": 5,\n          \"three_controls\": 3\n        },\n        \"expected_primary_report_cross_check\": 95850,\n        \"formula\": \"728 + 12306 + 2796 + 79240 + 780 = 95850\",\n        \"identity_stations\": 39,\n        \"lifted_CNOT_subtotal\": 2796,\n        \"lifted_TOF_subtotal\": 79240,\n        \"lifted_X_subtotal\": 12306,\n        \"nonidentity_stations\": 91,\n        \"pass\": true,\n        \"program_gate_census\": {\n          \"CNOT\": 932,\n          \"TOF\": 15848,\n          \"X\": 12306\n        },\n        \"program_row_gate_total\": 29086,\n        \"rail_gates\": 780,\n        \"rail_swaps\": 260,\n        \"rebuilt_wrapped_word_size\": 95850,\n        \"sandwich_shell\": {\n          \"gates_per_nonidentity_station\": 8,\n          \"subtotal\": 728\n        },\n        \"stations\": 130,\n        \"track_sites\": 260,\n        \"unknown_gate_kinds\": []\n      },\n      \"label\": \"count_consistency\",\n      \"pass\": true\n    }\n  ],\n  \"report_sha256\": \"62ace64687ae02bed1a69389361d308207df28affbf8ede2eb649cf516f76bf7\",\n  \"runtime_seconds\": 2.849547541933134,\n  \"status\": \"PASS\",\n  \"top_level_blocklist\": [\n    \"frontier_cycle723_refusal_wrapped_controller_2026_07_28\"\n  ]\n}\nREFUSAL_WRAPPED_CONTROLLER_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220222Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle723_refusal_wrap_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

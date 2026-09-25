@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py",
+ "seed": 73931,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220531Z",
+ "elapsed_s": 297.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83f81f3cc543b3f4ee833520cec4ea3d6ff0118cce325971c155803240dbf92f",
+ "stdout_tail": "tion\": \"advance_down\",\n      \"phase\": \"DOWN\",\n      \"predicate_pattern\": {\n        \"allocator_FRESH\": 1,\n        \"allocator_HEAD\": 1,\n        \"allocator_ROTOR\": 1,\n        \"allocator_TOKEN\": 1,\n        \"allocator_interface\": 1,\n        \"allocator_valid\": 1,\n        \"boundary\": 0,\n        \"destination_blank\": 1,\n        \"endpoint\": 1,\n        \"exhausted\": 0,\n        \"law0\": 1,\n        \"law1\": 1,\n        \"law2\": 1,\n        \"law3\": 1,\n        \"link_latch_clean\": 1,\n        \"link_work_clean\": 1,\n        \"pending\": 0,\n        \"pointer\": 1,\n        \"prewrap\": 0,\n        \"rail_cleanup\": 0,\n        \"rail_start\": 0,\n        \"rail_valid\": 0,\n        \"retry_echo\": 0,\n        \"wrap\": 0\n      },\n      \"site_role\": \"any\"\n    },\n    {\n      \"case_class\": \"ACK propagation\",\n      \"enable_latches\": [\n        \"return\"\n      ],\n      \"name\": \"ack_return\",\n      \"next_phase_action\": \"propagate_ack\",\n      \"phase\": \"ACK\",\n      \"predicate_pattern\": {\n        \"link_latch_clean\": 1,\n        \"link_work_clean\": 1\n      },\n      \"site_role\": \"interior_or_boundary\"\n    },\n    {\n      \"case_class\": \"source cleanup\",\n      \"enable_latches\": [\n        \"source_cleanup\"\n      ],\n      \"name\": \"ack_source_cleanup\",\n      \"next_phase_action\": \"hold_ack\",\n      \"phase\": \"ACK\",\n      \"predicate_pattern\": {\n        \"link_latch_clean\": 1,\n        \"link_work_clean\": 1\n      },\n      \"site_role\": \"source\"\n    }\n  ],\n  \"transition_table_supplied\": true,\n  \"wavefront_action_request_controller_compiled_to_m2\": true\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221028Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.py",
+ "seed": 74367,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221247Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "54af0d6ea9a6344ae119edac570b061ad7b12477afb1200460986de9228c85e2",
+ "stdout_tail": "s derived here.\n       TT(yz)=-0.250000 = TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000); gauge(xy)=-1.46e-09  (per k^2, unit-norm channels, raw S_R orientation)\n\nTOTAL: PASS=10 FAIL=0\nVERDICT: on the RETAINED cubic-Coxeter complex (the exact six-tetrahedra body-diagonal chain of\nthe deficit-vanishing row), the second variation of the Regge action around flat EQUALS the\ncontinuum linearized Einstein-Hilbert second variation at leading order, EXACTLY and\nISOTROPICALLY: Q_h(k) = c * Q_EH(k) + O(k^4) with the single constant c = -1/2 in all three\nlattice directions (= the textbook delta^2 S_R = (1/2) delta^2 int sqrt(g) R with the\nvariational sign, DERIVED including the 1/2). Vertex displacements are exact zero modes at\nevery momentum (discrete gauge); constant metric perturbations re-flatten (k=0 zero modes);\nthe single non-metric breathing mode is massive (no extra flat direction); the two TT channels\nare equal and the transverse-trace channel is equal-magnitude opposite-sign (ratio -1) -- the\ndegenerate-supermetric no-go's named comparator pair (+-k^2/2) is hereby DERIVED from the\nframework's own retained geometry. The one remaining sign is the overall action orientation\n(S_R vs -S_R), the same single located sign residual as the arrow/stability/spectral no-go\nrow. OPEN (named): the 4D/timelike cubic-Coxeter extension (the kinetic fiber metric from the\ngeometric action itself), edge-length-DOF provenance, action selection, nonlinear closure.\nNo PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221248Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cubic_coxeter_regge_second_variation_3d_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

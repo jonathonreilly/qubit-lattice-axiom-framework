@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle726_wavefront_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle726_wavefront_independent_check_2026_07_28.py",
+ "seed": 74228,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221028Z",
+ "elapsed_s": 15.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7147a8712c1eb9d8a46ab378f1b9108193976d593aadba2685cec2e9f7d77d85",
+ "stdout_tail": "cate\",\n          \"_row_predicate\",\n          \"_row_stage_word\",\n          \"wavefront_controller_stages\",\n          \"wavefront_controller_word\"\n        ],\n        \"runtime_state_executor_calls_in_compiler_path\": [],\n        \"while_loops_in_compiler_path\": []\n      },\n      \"label\": \"primary_source_discipline\",\n      \"pass\": true\n    }\n  ],\n  \"claim_boundary\": \"Checks the supplied table, request-controller compiler structure, and separate gating gadgets. It does not certify an integrated controller-plus-physical-macros executable word.\",\n  \"controller_driven_macro_execution_integrated\": false,\n  \"cycle\": 726,\n  \"declared_input_paths\": [\n    \"scripts/frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28.py\",\n    \"scripts/frontier_cycle718_spatial_ack_physical_m2_route_2026_07_26.py\"\n  ],\n  \"end_to_end_runtime_host_selection_removed\": false,\n  \"note_path\": \"docs/WAVEFRONT_CONTROLLER_M2_COMPILER_CYCLE726_BOUNDED_THEOREM_NOTE_2026-07-28.md\",\n  \"primary_read_as_data_only\": true,\n  \"report_sha256\": \"3dfa012a68156a1167fde5a23243a39bd014629d61e4610b510d943245d07a54\",\n  \"runtime_seconds\": 15.054366040974855,\n  \"status\": \"PASS\",\n  \"top_level_blocklist\": [\n    \"frontier_cycle726_wavefront_controller_m2_compiler_2026_07_28\"\n  ]\n}\nCHECK_SUMMARY 5/5\nTABLE 1adf939cd4bafd8a431bce72f963981521e950ccc63e9962f83afc6de9bae7ac ROWS 19\nFREDKIN_IDENTITY_CENSUS 1216 FAILURES 0\nREPLAY_CENSUS 19/19 FULL_STEPS 26 ACTION_EVENTS 73\nRUNTIME_SECONDS 15.054366\nCYCLE726_WAVEFRONT_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221044Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle726_wavefront_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

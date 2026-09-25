@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_measure_positivity_agnostic_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_measure_positivity_agnostic_2026_05_31.py",
+ "seed": 73730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220210Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c35ea935dcabbe9a8facb39f61a7b5580511b5ac99a492d84c28c99a28e8554",
+ "stdout_tail": "[PASS] P1 OS Gram PSD identically for 1-complex (det_C) and 2-real (det_R) -> RP AGNOSTIC to counting\n       RP holds equally for both field contents; statistics-blind\n[PASS] P2 Bargmann J_qubit=i*I3 (central, gen-blind) != J_cs (doublet-only) -> wrong complex structure\n       qubit Kahler measure descends via central i, not via the generation J_cs\n[PASS] P3 positivity -> Hermitian readout Q=(1+2r)/3 for EVERY r -> secures readout CLASS not r=1/2\n       RP necessary for the signed/Brannen readout (-> Q=2/3 possible) but holds for all r\n\nSCORECARD PASS=3 FAIL=0\nVERDICT: positivity AGNOSTIC -- these finite checks do NOT select det_C over det_R and do NOT\nclose r=1/2. They secure the signed-Hermitian readout CLASS (partial support, necessary for\nQ=2/3) but not the value. Broader flavor-lane exhaustion, statistics selection, and any\nphysical det_C readout bridge remain outside this runner's scope.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

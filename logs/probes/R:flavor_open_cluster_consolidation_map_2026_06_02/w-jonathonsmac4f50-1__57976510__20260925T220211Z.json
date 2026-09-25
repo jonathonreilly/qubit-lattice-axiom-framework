@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_open_cluster_consolidation_map_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_open_cluster_consolidation_map_2026_06_02.py",
+ "seed": 73731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220211Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b091c09e37cc57db19facda88e979443f06bed2e5df5160b505b8850443047a1",
+ "stdout_tail": "[PASS] exact Q = 1/3 + (2/3)r (the identity the VALUE thread re-derives 3 ways: field-vs-coupling / two-observables / 3-channel anatomy)\n[PASS] three Q-lanes on ONE curve: r=0->1/3, r=1/2->2/3, r=1->1\n[PASS] the ONE residual: equal-block (3a^2=6|b|^2) -> r=1/2 -> Q=2/3; dimension (1:2) -> r=1 -> Q=1\n       = AC_phi_lambda / det_C-vs-det_R / koide_frobenius_isotype_split_uniqueness \u2014 the bit no route forces\n[PASS] the ASYMMETRY thread's 2/9 = L_3(1,2) on the SAME H (signed equivariant eta / finite Molien weight)\n       L_3(1,2)=0.222222\n\nSCORECARD PASS=4 FAIL=0\nMAP THESIS verified: the whole open koide/flavor cluster is ONE operator + ONE residual bit. #2453 is the\ncanonical VALUE anchor; the parallel-worker PRs converge on the same residual from 6 independent routes and\nsupply genuine complements (Berry unification #2441, matter-attachment graded-statistics gate #2465, on-site\nWeyl boosts #2460, K0-real #2412, operator-intrinsic 2/9 #2451). This runner asserts NO audit status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

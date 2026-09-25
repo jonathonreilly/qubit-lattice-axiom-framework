@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_conditional_law_depth_axis_saturation_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_conditional_law_depth_axis_saturation_2026_06_12.py",
+ "seed": 74254,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221054Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0604213684fcd368f8ef7248a3a4d347bc7db13c708d4ffae6b04b050d5609e6",
+ "stdout_tail": ": 300 draws, rng 7777): clears=18/18\n[PASS] W3d null-clearing existence: clears=18/18 seed=4242 depth_cap=9 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=10 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=11 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=12 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=13 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=4242 depth_cap=14 row=9 k2:gap=0.093464,k3:gap=0.087613,k4:gap=0.117852 | seed=99 depth_cap=9 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=10 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=11 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=12 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=13 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=99 depth_cap=14 row=7 k2:gap=0.108720,k3:gap=0.189604,k4:gap=0.274502 | seed=7 depth_cap=9 row=6 k2:gap=0.091612,k3:gap=0.128894,k4:gap=0.126116 | seed=7 depth_cap=10 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=11 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=12 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=13 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601 | seed=7 depth_cap=14 row=10 k2:gap=0.315108,k3:gap=0.330883,k4:gap=0.305601\nTOTAL: PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221102Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_conditional_law_depth_axis_saturation_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

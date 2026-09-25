@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle330_symmetric_edge_sign_physical_m2_adversary_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle330_symmetric_edge_sign_physical_m2_adversary_2026_07_25.py",
+ "seed": 74390,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221310Z",
+ "elapsed_s": 10.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f87fd78b6906a84d3e3898c1cd3f071922ad0f41232bf8ab5695295655fe732f",
+ "stdout_tail": "changed targets\", \"a full simultaneous two-star M64 update and recurrent schedule\"], \"pass\": true, \"periodic_seam_witnesses\": [{\"L\": 5, \"outer_edge_M2\": 74, \"patterns\": [[1, 0, 0, 0], [1, 0, 0, 0]], \"witness_hashes\": [\"2c2e3f640edf50621594e982a1b02ccc105db575eed0119559641e1dcc323615\", \"04e5346aa30f8292fbb56fb115b53a647f159b52fce5ababed27eb03abdb4e39\"]}, {\"L\": 6, \"outer_edge_M2\": 89, \"patterns\": [[1, 0, 0, 0], [1, 0, 0, 0]], \"witness_hashes\": [\"f91f5a842dcd325d092d22c1bc5b0562890e5726ab46da3d6505098525f5af5c\", \"5a6be09bd8f061a102130d5c8c70b99852ace07f79c8a502fa65d689e3798dba\"]}], \"resources\": {\"candidate_claimed_support_M2\": 3, \"candidate_label_dimension\": 8, \"candidate_physical_dimension\": 8, \"elapsed_seconds\": 10.136870125075802, \"peak_rss_mb\": 114.65625, \"route_b_active_label_bits\": 7, \"route_b_active_support_M2\": 5, \"six_directions\": 6, \"sizes\": [5, 6]}, \"sources\": {\"root_candidate\": {\"path\": \"scripts/frontier_cycle330_symmetric_edge_sign_translator_2026_07_25.py\", \"sha256\": \"07af25886fdc67e681e9139f48c7bb3d4fa023ab7cb78f917e83fbae6c41614a\"}, \"route_b\": {\"path\": \"scripts/frontier_two_overlapping_star_sparse_qutrit_edge_gauge_2026_07_25.py\", \"sha256\": \"1690b2aec7c1864988a158c56c0d78e8d69c257e6559cea1e048588908e30d78\"}}, \"status\": \"bounded-exact-three-data-M2-no-unitary\", \"terminal\": \"EXACT_THREE_DATA_M2_TRANSLATOR_NO_UNITARY_N1_N8_PASS_LARGER_SUPPORT_OPEN\", \"tests_failed\": 0, \"tests_passed\": 9}\nRESULT EXACT_THREE_DATA_M2_TRANSLATOR_NO_UNITARY_N1_N8_PASS_LARGER_SUPPORT_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221320Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

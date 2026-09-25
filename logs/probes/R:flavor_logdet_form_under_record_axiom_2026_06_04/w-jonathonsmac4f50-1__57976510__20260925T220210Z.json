@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_logdet_form_under_record_axiom_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_logdet_form_under_record_axiom_2026_06_04.py",
+ "seed": 73730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220210Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e5715f3a391c361f32d1993913950b4d62242808da5a76b6329c2836ae430d89",
+ "stdout_tail": "[PASS] det is multiplicative on sampled invertible matrices; trace is not\n[PASS] sample determinant powers multiply, illustrating the separate det-character family\n       uniqueness of this family is cited from the separate det-character note, not proved here\n[PASS] det(A (+) B) = det(A) det(B) over disjoint blocks\n[PASS] raw |det|^p multiplies across blocks, while log |det| is additive\n       Record supplies only the additivity rule for an already specified scalar record functional\n[PASS] log |det| additivity holds over three disjoint blocks\n[PASS] log |det H| equals sum_modes log |lambda| for a finite Hermitian example\n\nSCORECARD PASS=6 FAIL=0\nCONDITIONAL FORM: once a finite scalar record surface and separate det-character\nauthority are supplied, Record-compatible additivity selects W = c log |det|.\nRecord alone supplies no log-det, source/action, Born weight, value, or bounded status.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

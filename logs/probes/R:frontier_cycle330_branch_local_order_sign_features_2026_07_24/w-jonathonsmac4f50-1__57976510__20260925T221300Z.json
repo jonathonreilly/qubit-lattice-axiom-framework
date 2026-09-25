@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle330_branch_local_order_sign_features_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle330_branch_local_order_sign_features_2026_07_24.py",
+ "seed": 74380,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221300Z",
+ "elapsed_s": 10.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b0322b3a942232ec1f299cddbef33e3446da0162a06a394976e2d14a44bfed4d",
+ "stdout_tail": "tonomous collision control, preparation and state genesis\", \"minimality, impossibility, shared obstruction, axiom pressure, time, source, Record and probability\"], \"pass\": true, \"register_route\": {\"S7_cases\": 35280, \"actual_branch_masks\": 7, \"blank_projectors\": 15, \"conditional_projectors\": 6, \"ordered_pair_register_M2\": 42, \"proper_cubic_product_cases\": 4032}, \"resources\": {\"actual_cross_support_M2_per_center_arm\": 5, \"elapsed_seconds\": 9.87570854194928, \"existing_endpoint_tag_controls\": 12, \"new_ordered_pair_register_M2\": 42, \"peak_rss_mb\": 104.578125, \"register_radius\": 7, \"six_interface_union_M2\": 42, \"supplied_incidence_role_controls\": 12, \"two_endpoint_interface_M2_per_center_arm\": 9}, \"status\": \"bounded-cycle330-branch-local-order-sign-feature-certificate\", \"supplied\": [\"the landed Cycle-311 branch labels, odd-carrier direction, stream slice and endpoint tag M2 occupations\", \"the landed Cycle-330 center, six arms, endpoint-mode dictionary and n<=2 domain\", \"the covariant two-endpoint interface union for each center-arm pair\", \"twelve branch-incidence controls if those role labels are materialized coherently\", \"42 ordered-pair register M2, conditional antisymmetric state and static projectors\", \"the standard S7 relabeling action, proper-cubic coordinate action and tolerance 2e-12\"], \"terminal\": \"BRANCH_LOCAL_SIGN_FEATURES_CLOSE_DENSE_PHYSICAL_ROLE_NOT_RETIRED\", \"tests_failed\": 0, \"tests_passed\": 5}\nRESULT BRANCH_LOCAL_SIGN_FEATURES_CLOSE_DENSE_PHYSICAL_ROLE_NOT_RETIRED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221310Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

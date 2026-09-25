@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.py",
+ "seed": 74368,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221248Z",
+ "elapsed_s": 11.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "82bbef2bae9e235e424f9a31d8c687312e158102ee6e3e2338c7aaf791545d82",
+ "stdout_tail": " (the located sign residual)\n       V_TT(yz)=-0.250000 = V_TT(E)=-0.250000; transverse-trace=+0.250000 (ratio -1.0000)\n\nTOTAL: PASS=10 FAIL=0\nVERDICT: the retained 3D cubic-Coxeter chain extends by the emergent tick (Z^3 x Z_tau, the\npath complex whose spatial slice IS the retained chain; c_t = c_s per the kinetic-isotropy\nprimitive, structural grant only), and on the flat OS0 background: deficits vanish (the 4D\ntick extension of the retained flat anchor), vertex displacements are exact zero modes at\nevery momentum, the five non-metric modes are massive, and the second variation of the Regge\naction matches c = -1/2 times the 4D Euclidean linearized EH pairing at O(k^2) ISOTROPICALLY\nACROSS TICK-MIXED DIRECTIONS -- so at pure-tick momentum the geometric action natively yields\nthe lambda-one DeWitt kinetic fiber metric (K_trace:K_TT = -2:+1, both TT equal) with ZERO\nlapse/shift kinetic weights (the multiplier structure), and at zero tick-frequency the\nspatial comparator pair (+-, equal magnitude). The supplied comparator inputs named by the\ndegenerate-supermetric no-go and the structural pieces certified by the 3+1 target-operator\nrow are reproduced on this tick complex by delta^2 S_R. Remaining open: the overall action\norientation (the same single located sign residual), edge-length-DOF provenance, action\nselection, nonlinear closure. The tick-scale itself is NOT derived (retained clock-rate no-go\nrespected; c_t = c_s is the primitive's structural grant). No PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221300Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cubic_coxeter_regge_second_variation_3plus1_2026_06_09.txt against the .txt beside this log"
+  ]
+ }
+}

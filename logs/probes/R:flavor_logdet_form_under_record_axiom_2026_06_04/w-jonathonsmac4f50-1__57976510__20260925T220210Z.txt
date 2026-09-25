@@ -1,0 +1,13 @@
+[PASS] det is multiplicative on sampled invertible matrices; trace is not
+[PASS] sample determinant powers multiply, illustrating the separate det-character family
+       uniqueness of this family is cited from the separate det-character note, not proved here
+[PASS] det(A (+) B) = det(A) det(B) over disjoint blocks
+[PASS] raw |det|^p multiplies across blocks, while log |det| is additive
+       Record supplies only the additivity rule for an already specified scalar record functional
+[PASS] log |det| additivity holds over three disjoint blocks
+[PASS] log |det H| equals sum_modes log |lambda| for a finite Hermitian example
+
+SCORECARD PASS=6 FAIL=0
+CONDITIONAL FORM: once a finite scalar record surface and separate det-character
+authority are supplied, Record-compatible additivity selects W = c log |det|.
+Record alone supplies no log-det, source/action, Born weight, value, or bounded status.

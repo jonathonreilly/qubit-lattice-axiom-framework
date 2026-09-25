@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_bksf_two_cell_tableau_intertwiner_2026_07_25.py",
+ "seed": 74486,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221446Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a1b688adb55a70d0306605feb69e18f251e34d4513b8faab3a23b39b9bff2d75",
+ "stdout_tail": "n the two-cell patch, distinct from global tableau completion :: {'max_loop_weight': 27, 'D_weight': 2, 'max_logical_X_weight': 15, 'max_logical_Z_weight': 6, 'max_update_term_weight': 13, 'max_global_completion_destabilizer_weight': 12}\nPASS note preserves the scoped positive and N1-N8 boundary :: ()\nSUMMARY_JSON {\"deletion\": {\"all_24_logical_XZ_rows_active_mod_stabilizers\": true, \"all_25_loop_rows_active\": true, \"all_D_presentation_has_one_redundancy\": true, \"selected_independent_D_active\": true}, \"fail\": 0, \"graph\": {\"cycle_rank\": 25, \"edges\": 38, \"logical_exponent\": 12, \"loop_rank\": 25, \"stabilizer_rank\": 26, \"vertices\": 14, \"wilson_rank\": 0}, \"intertwiner\": {\"FSWAP_exact\": true, \"all_24_onsite_coin_edges_exact\": true, \"dressed_hop_exact\": true, \"logical_columns_checked_without_dense_edge_states\": 4096, \"onsite_B_and_contacts_exact\": true, \"zero_leakage_by_stabilizer_commutation\": true}, \"pass\": 9, \"support\": {\"D_weight\": 2, \"max_global_completion_destabilizer_weight\": 12, \"max_logical_X_weight\": 15, \"max_logical_Z_weight\": 6, \"max_loop_weight\": 27, \"max_update_term_weight\": 13}, \"tableau\": {\"bounded_depth_or_range_proved\": false, \"construction\": \"global_GF2_symplectic_completion\", \"inverse_generator_checks\": 76, \"rows\": 76, \"sha256\": \"78be12ae5978315eb977ebc92ba81df2c7d10f0cd8c1d096ec5ed85248d5ae32\"}, \"terminal\": \"TWO_CELL_BKSF_TABLEAU_INTERTWINER_POSITIVE_SCALABLE_LOCAL_PREPARATION_OPEN\"}\nRESULT TWO_CELL_BKSF_TABLEAU_INTERTWINER_POSITIVE_SCALABLE_LOCAL_PREPARATION_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221446Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

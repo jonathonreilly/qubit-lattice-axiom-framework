@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cubic_coxeter_regge_linearized_action_selection_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cubic_coxeter_regge_linearized_action_selection_2026_06_10.py",
+ "seed": 74299,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221139Z",
+ "elapsed_s": 30.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c15d4bc0972631161d9da5fcfc553bdcb287715a2d751cf201056711f063207a",
+ "stdout_tail": "e linearized level the action-selection question is answered on the framework's\nown 3+1 complex. Gauge annihilation + locality at O(k^2) admit the\nbackground-metric EH class (ten-dimensional: one linearized EH form per constant flat metric;\nidentified via GL(4) pullbacks); mass terms are excluded, and the\nonly freedom beyond one overall constant is WHICH flat background (anisotropy/units data).\nThe bridge applies to exact embedding-inert local lattice forms; the sampled declared-stencil\nfamily probe verifies representative random elements have leading metric physics in that class.\nThe Regge action is one such form and realizes the ISOTROPIC background g = delta -- the\ncomplex's own flat metric, with the tick on equal footing per the kinetic-isotropy primitive --\nwith c = -1/2 (the textbook normalization), including a previously untested mixed direction.\nThe freedom beyond the constant and the background starts at O(k^4) (the deficit-squared\ndiscrete curvature-squared term, exhibited: gauge-exact, nonzero, zero leading content) -- the\nlattice analogue of Lovelock's theorem at quadratic order. The hypothesis is load-bearing\n(a mass term violates it at O(1)). The action-selection gap REDUCES to: the single leading\nconstant's orientation and magnitude (the located sign residual + the registered scale\nreference), the background-metric choice (fixed by the complex's flat geometry + the\nkinetic-isotropy primitive), the O(k^4) tail, and the nonlinear completion. No PDG/fitted value.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cubic_coxeter_regge_linearized_action_selection_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

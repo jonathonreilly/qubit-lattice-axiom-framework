@@ -1,0 +1,13 @@
+[PASS] finite identity: log |det K| = sum_modes log |lambda|
+       W=13.204763
+[PASS] finite identity: block-diagonal log-det adds over disjoint blocks
+[PASS] det is multiplicative in the sampled character test; trace is not
+[PASS] finite identity: dW/dj_x = Re Tr[(D+J)^-1 P_x] against numeric derivative
+       max|analytic - numeric| = 7.11e-10; this source/action factor is not from Record
+[PASS] residual after Record additivity remains non-empty
+       record-readout realization, det-character authority, source/action coupling
+
+SCORECARD PASS=5 FAIL=0
+PROVENANCE: Record additivity is only factor 1. The log-det generator still needs
+record-readout realization, det-character authority, and source/action coupling.
+No existing row is re-cited or promoted; no audit status is set.

@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_corner_fork_resolution_layer_record_dynamics_2026_06_12.py",
+ "seed": 74267,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221107Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=23 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "796b0604a79dbfa3ab80c5b52e9b949765ac3e42ed6fd568636c421824974c3a",
+ "stdout_tail": " dep RP phrase present: 'free fermion-sector two-step positivity factor': docs/AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md contains the real phrase\n[PASS] B dep registrability phrase present: 'finitely additive over finite': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase\n[PASS] B dep registrability phrase present: 'constant on `K`/CPT': docs/REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md contains the real phrase\n[PASS] B note firewall sentences present: required firewall fragments found in note\n[PASS] B closing language absent: forbidden branch-selection/fork-closure phrases absent\n[PASS] B link inventory exactly two load-bearing links: links=[('`AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md`', 'AXIOM_FIRST_RP_TWO_STEP_TRANSFER_MATRIX_POSITIVITY_NOTE_2026-05-28.md'), ('`REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md`', 'REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md')]\n[PASS] B context companions are backticked only: wave companions, occupancy note, and R-D chain are context tokens, not markdown links\n[PASS] B No-promotion statement present: No-promotion statement and status authority sentence found\n\nSUMMARY:\nPASS=23 FAIL=2\nResult: both fork branches are registrable and generically unequal; the fork is registration-blind, leaving branch discrimination to record dynamics.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221107Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=23 FAIL=2' vs cache 'PASS=25 FAIL=0'"
+  ]
+ }
+}

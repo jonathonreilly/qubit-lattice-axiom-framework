@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle723_refusal_wrapped_controller_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle723_refusal_wrapped_controller_2026_07_28.py",
+ "seed": 73742,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220222Z",
+ "elapsed_s": 135.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "df73cd692eb17d31c317f49d20843836372c13dfa58070381989cc4f2bf0dd3f",
+ "stdout_tail": "ilures\": 0,\n          \"logical_failures\": 0,\n          \"postimage_failures\": 0,\n          \"program_stations\": 35,\n          \"token_return_failures\": 0\n        },\n        \"reference\": {\n          \"fixed_word_failures\": 0,\n          \"inverse_failures\": 0,\n          \"logical_failures\": 0,\n          \"postimage_failures\": 0,\n          \"token_return_failures\": 0\n        }\n      },\n      \"12\": {\n        \"imported_word_sha256\": \"2f88bd1cb742ec942c403fe8e80a29f28a628234e48f5a7517d3fa9eae17d221\",\n        \"observed\": {\n          \"banks\": 12,\n          \"controller_semantic_gates\": 61328,\n          \"controller_word_sha256\": \"2f88bd1cb742ec942c403fe8e80a29f28a628234e48f5a7517d3fa9eae17d221\",\n          \"fixed_word_failures\": 0,\n          \"inverse_failures\": 0,\n          \"logical_failures\": 0,\n          \"postimage_failures\": 0,\n          \"program_stations\": 91,\n          \"token_return_failures\": 0\n        },\n        \"reference\": {\n          \"fixed_word_failures\": 0,\n          \"inverse_failures\": 0,\n          \"logical_failures\": 0,\n          \"postimage_failures\": 0,\n          \"token_return_failures\": 0\n        }\n      }\n    },\n    \"padded_130_digest_match\": true,\n    \"padded_130_semantic_gates\": 61562,\n    \"padded_130_sha256\": \"e2f3bbdb81db1c242721b7cdbc4b1c3caec51da30f99842d8d8e888c9204ce87\"\n  },\n  \"word_size_comparison\": {\n    \"added_semantic_gates\": 34288,\n    \"unwrapped_semantic_gates\": 61562,\n    \"wrapped_semantic_gates\": 95850,\n    \"wrapped_to_unwrapped_ratio\": 1.5569669601377474\n  }\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220437Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle723_refusal_wrapped_controller_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.py",
+ "seed": 74330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221210Z",
+ "elapsed_s": 37.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "05293c4521165d21a6c77f777509869ddf8d3b0a07832873210d6f3b84668056",
+ "stdout_tail": " as the\nspatial ones -- the hypercubic (sin^2-type) scalar correction law, within the kinetic-isotropy structural graining\nat O(k^4). alpha runs from -1/6 (axes) through -1/8 (face diagonals) to -1/9 (body diagonals), spread\n1/18; the chain-orientation harmonics are ABSENT (face+ = face-, body+ = body-): the fingerprint is\nB3-symmetric, more symmetric than the complex itself. No other branch appears near the cone in the three scanned F9 directions;\nthe continuum trace-channel third on-shell null is not realized as a lattice branch in those scanned directions (the exactly-decoupled\nfifth branch carries an O(1) share of that class). The off-shell projected C4 is not captured by the\nsimple curvature-contraction basis tried (honest negative; raw table reported; its pure-tick row equals its pure-space row channel-by-channel --\nthe S4 tick-space footing at O(k^4)). UNITS REMARK (units only, no dimensionless physics granted, no phenomenology or bound claim): in lattice units the correction is\n|alpha|(ka)^2 <= (ka)^2/6; with the registered scale reference a^{-1} = M_Pl it is Planck-suppressed --\nof order 1e-80 relative at gravitational-wave-band momenta (context arithmetic only). This is the structural fingerprint of the geometric\nroute, not a near-term test. Open and unchanged: overall action orientation (the located sign residual),\nedge-length-DOF provenance, action selection, O(k^6) and nonlinear closure, tick scale (clock-rate\nboundary respected). No PDG / fitted value consumed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221247Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cubic_coxeter_regge_ok4_fingerprint_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

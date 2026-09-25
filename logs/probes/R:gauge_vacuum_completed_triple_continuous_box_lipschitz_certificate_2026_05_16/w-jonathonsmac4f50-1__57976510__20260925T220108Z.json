@@ -1,0 +1,35 @@
+{
+ "task": "R:gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "gauge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.py",
+ "seed": 73668,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220108Z",
+ "elapsed_s": 47.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e916088d1725d926554c1a82f60d44eababa8c8f07b587756715af9d2f21dc69",
+ "stdout_tail": "ded empirical Lipschitz constants  (71418 cells accepted by g(center) - sum L_i (w_i / 2) > DELTA)\n\n--- Stage 3: cross-check g value at original audit corner ---\n  [PASS] gap value at the audited boundary corner is consistent with the parent note's report (>= DELTA)  (g(corner) = 1.072635e-01 (DELTA = 5.0e-03))\n\n Honest scope of this support check:\n   - The adaptive subdivision produces a finite list of axis-aligned\n     boxes whose union is exactly the audited parameter box and whose\n     interiors are pairwise disjoint. On each leaf box B,\n           min_{p in B} g(p) >= g(center_B) - sum_i L_i * w_i(B) / 2 > DELTA,\n     using the empirical Lipschitz upper bounds L_i validated above.\n   - Therefore the empirical-Lipschitz model gives g(p) > DELTA = 5.0e-03\n     on the whole continuous box.\n   - The Lipschitz bounds are sampled sup gradients * 2.5 safety. They\n     are reproducible from RNG seed 2031 and verified each run.\n   - A formal continuous-family no-go still needs an analytic or interval\n     Lipschitz bound.\n   - A strict analytic Lipschitz bound from operator-norm derivatives\n     (without the safety cushion) would be ~10^6x larger because the\n     sample operator e_three has spectral norm ~1033; tightening that\n     to match the empirical Lipschitz is a follow-up derivation gap.\n\n================================================================================\n SUMMARY: PASS=7, FAIL=0\n================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220155Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gauge_vacuum_completed_triple_continuous_box_lipschitz_certificate_2026_05_16.txt against the .txt beside this log"
+  ]
+ }
+}

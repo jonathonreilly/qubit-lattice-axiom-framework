@@ -1,0 +1,35 @@
+{
+ "task": "R:flavor_missing_axiom_carrier_measure_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "flavor",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/flavor_missing_axiom_carrier_measure_2026_05_30.py",
+ "seed": 73731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T220211Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fe810132f7e05327cb88717a9820f8cb2bb313a1f2e1f5de3892385c529ff5af",
+ "stdout_tail": "[PASS] C1 HS split: ||I||^2=3, ||J-I||^2=6, <I,J-I>_HS=0\n[PASS] C2 three finite partitions remain distinct\n       channel r=1/2; idempotent r=17/2 - 6*sqrt(2); per-mode r=1\n[PASS] C3 generator-channel HS scoring gives r=1/(N-1)\n       {2: '1', 3: '1/2', 4: '1/3', 6: '1/5'}\n[PASS] C4 finite generation coordinate gives Q=2/3 after the supplied r=1/2 endpoint\n[PASS] C5 Record finite additivity leaves the two-sector normalized coordinate arbitrary\n       d choices for p: {'1/5': 'u/4', '1/2': 'u', '2/3': '2*u'}\n[PASS] C6 Record admits both r=1/2 and r=1 endpoints; it selects neither\n       r=1/2 -> rho=1, p=1/2; r=1 -> rho=2, p=2/3\n[PASS] C7 K\u00e4hler/moment-map algebra independently returns r=1/2 but does not select authority\n[PASS] C8 r=1/2 circulant point commutes with C3 shift, so it does not import chirality\n[PASS] C9 source guards: current Record authorities are cited as boundary, not as a new axiom\n\nSCORECARD PASS=9 FAIL=0\nANSWER: existing Record gives finite additive readout coordinates and the\ngeneration dial rho=2r, while the generator-channel HS rule would give\nr=1/(N-1). Record also proves the selection is not automatic: arbitrary\ntwo-sector coordinates remain admissible until a carrier-measure/readout\nselection theorem is supplied. No new axiom is introduced here.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T220211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

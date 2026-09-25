@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_cross_edge_formation_gate_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cross_edge_formation_gate_2026_07_12.py",
+ "seed": 74268,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "57976510",
+ "started_utc": "20260925T221108Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=19 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98a0021cf3fd5eefb680ce5467f01849a466b8df84153b7bfc33dade9196340c",
+ "stdout_tail": "er permits distinct product and correlated joint answers\n[PASS] 19 pointwise Record-readout additivity coexists with exact statistical dependence\n[PASS] 20 the four graded independence payers are enumerated and none is adopted\n\nVERDICT: FAIL \u2014 at least one source guard or exact theorem check failed; the bounded claim is not certified.\nT2: F:C_form->Delta({s,d}), p_i=f(c_i); c_1=c_2 under (LE) and (LAW) implies p_1=p_2, and implies no joint equation.\nLAW-EQUIVALENCE (LE): after a supplied lattice translation/proper rotation, the complete law-domain conditions, record environment, menu, and s/d labels agree; different epochs are not automatically equivalent.\nINDEPENDENCE PAYER TABLE:\n  formation dynamics | prospective derivation/bridge | open; no supplier here\n  product/maximal ignorance | candidate licensing criterion | not adopted\n  physical locality | prospective screening/factorization theorem | additivity is insufficient\n  supplied product-law condition | non-satisfying condition | conditional only; not adopted\nTOTAL: PASS=19 FAIL=1\nPROPOSED CLAIM_SCOPE: bounded_theorem \u2014 formation-gate consolidation plus Qualification-conditional marginal identity; independence isolated, not derived.\nHOSTILE-AUDIT UNCERTAINTIES: whether the complete-condition equivalence is ever physically realized across epochs; whether finite-history coupling is packaged in the same formation law; and whether quotient labels transport unchanged. The exact binary arithmetic has no numerical uncertainty.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221109Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=19 FAIL=1' vs cache 'TOTAL: PASS=20 FAIL=0'"
+  ]
+ }
+}

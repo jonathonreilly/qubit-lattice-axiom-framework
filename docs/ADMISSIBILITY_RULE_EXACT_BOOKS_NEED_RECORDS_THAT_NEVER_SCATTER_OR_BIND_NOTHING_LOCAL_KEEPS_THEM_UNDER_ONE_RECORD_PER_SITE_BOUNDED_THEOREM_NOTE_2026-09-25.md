@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk (as landed on main) for two records, either exchange sign, with any finite-range translation-invariant hermitian interaction W acting on block 78's one-record-per-site space (as landed) or on the full two-record space, and any local placement of the energy; blocks 136, 137 and 140 (open) placed. (T1) exact: the total two-step momentum of two records at total wave vector K and relative wave vector q is g_a = sin K_a cos 2q_a in every band; in two and three dimensions its derivative along the collision shells (fixed K and energy) is nonzero at explicit points for all four band pairs, so, being analytic, g is constant on no shell component for almost every K and energy. (T2) exact: a one-body placement adds nothing to a record's current within a band. (T3) proof with named standard imports: if the total energy current of such a pair is kept, then for almost every K the pair's scattering operator commutes with the total two-step momentum and is therefore the identity: the pair is transparent, and its records never scatter. (T4) on the line every shell is two points on which g takes one value, so a kept current puts no condition there. (T5) proof with named standard imports, assuming that for almost every K the free pair's band functions have only nondegenerate stationary points: a transparent finite-rank change of the free pair has perturbation determinant identically one, so it removes no state and binds no pair; hence under one record per site no finite-range interaction and no local placement keeps two records' books in the plane or in space, and without exclusion an interaction that keeps the books binds nothing. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk (as landed on main) for two records, either exchange sign, with any finite-range translation-invariant hermitian interaction W acting on block 78's one-record-per-site space (as landed) or on the full two-record space, and any local placement of the energy; blocks 136, 137 and 140 (open) placed. (T1) exact: the total two-step momentum of two records at total wave vector K and relative wave vector q is g_a = sin K_a cos 2q_a in every band; in two and three dimensions its derivative along the collision shells (fixed K and energy) is nonzero at explicit points for all four band pairs, so, being analytic, g is constant on no shell component for almost every K and energy. (T2) exact: a one-body placement adds nothing to a record's current within a band. (T3) proof with named standard imports: if the total energy current of such a pair is kept, then for almost every K the pair's scattering operator commutes with the total two-step momentum and is therefore the identity: the pair is transparent, and its records never scatter. (T4) on the line every shell is two points on which g takes one value, so a kept current puts no condition there. (T5) proof with named standard imports, assuming (A') that at some total wave vector K0 the free pair's band functions have only nondegenerate stationary points (floating-point evidence at one K0 in each dimension, not a certificate): near K0 a transparent finite-rank change of the free pair has perturbation determinant identically one, so it removes no state and binds no pair; hence under one record per site no finite-range interaction and no local placement keeps two records' books in the plane or in space, and without exclusion an interaction that keeps the books binds nothing. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_2026_09_25.py
@@ -11,7 +11,7 @@ runner: scripts/admissibility_rule_exact_books_need_records_that_never_scatter_o
 
 **Date:** 2026-09-25
 **Type:** bounded_theorem
-**Status:** bounded-support (exact kinematics and proofs from named standard scattering theory, with one named genericity assumption, within the landed walk and exclusion, with blocks 136, 137 and 140 placed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
+**Status:** bounded-support (exact kinematics and proofs from named standard scattering theory, with one named assumption at a single wave vector, within the landed walk and exclusion, with blocks 136, 137 and 140 placed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
 
 This note works within blocks 54 and 78 as landed on main (the walk and one record per site), with blocks 136, 137 and 140 placed; it reports that no local interaction keeps two records' books under one record per site in two or three dimensions; nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
@@ -50,7 +50,10 @@ In plain terms: the member's books require energy to flow exactly as the records
   - The perturbation determinant and its relation to the scattering matrix: the Birman–Krein formula.
   - Continuous boundary values of the free resolvent away from thresholds (limiting absorption).
   - The Schwarz reflection principle, removable isolated singularities, and Liouville's theorem.
-- **Assumption (A), named.** For almost every total wave vector `K`, the free pair's band functions in the fiber have only nondegenerate stationary points. Then there are finitely many thresholds, and near each one the free pair's resolvent entries grow at most logarithmically in the plane and stay bounded in space. (A) is a genericity statement for analytic families and is not checked here.
+- **Assumption (A′), named.** There is a total wave vector `K₀` at which the free pair's four band functions (away from the cone points where a record's energy vanishes) have only nondegenerate stationary points.
+  - Nondegenerate stationary points persist under small changes of `K` (implicit function theorem), so (A′) then holds for every `K` in a neighbourhood `U` of `K₀`.
+  - For such `K` there are finitely many thresholds. Near each one the free pair's resolvent entries grow at most logarithmically in the plane and stay bounded in space; cone points are no worse.
+  - (A′) is expected for almost every `K`. A floating-point search supports it (Review record); that search is not a proof.
 
 ## Theorem T1 — the collision shells
 
@@ -120,17 +123,17 @@ Since `g` and `E` are analytic away from the band-touching points, `dg₁ ∧ dE
 
 ## Theorem T5 — transparency leaves nothing removed and nothing bound
 
-*Statement.* Assume (A). Let `h''(K)` be a finite-rank change of `h₀(K)`, as in T3's step 1, with the removed states placed at an energy `λ` outside the spectrum. Suppose the pair is transparent, `S(K, E) = 1` for almost every `E`. Then the perturbation determinant `Δ(z) = det(1 + (h'' − h₀)(h₀ − z)⁻¹)` is identically one, so `h''(K)` has no eigenvalue outside the spectrum of `h₀(K)`.
+*Statement.* Assume (A′), and let `K` lie in the neighbourhood `U` of `K₀`. Let `h''(K)` be a finite-rank change of `h₀(K)`, as in T3's step 1, with the removed states placed at an energy `λ` outside the spectrum. Suppose the pair is transparent, `S(K, E) = 1` for almost every `E`. Then the perturbation determinant `Δ(z) = det(1 + (h'' − h₀)(h₀ − z)⁻¹)` is identically one, so `h''(K)` has no eigenvalue outside the spectrum of `h₀(K)`.
 
 Consequences:
-- **(i) One record per site.** The removed states are eigenvalues of `h''` at `λ`. So no finite-range interaction makes the excluded pair transparent. With T3, no finite-range interaction and no local placement keeps two records' books in the plane or in space.
-- **(ii) Without exclusion.** An interaction that keeps the books binds no pair, since every bound pair is an eigenvalue outside the free spectrum.
+- **(i) One record per site.** The removed states are eigenvalues of `h''` at `λ`. So no finite-range interaction makes the excluded pair transparent at any `K` in `U`. If the books held, T3 would make the pair transparent for almost every `K`, including almost every `K` in `U`, a set of positive measure. So no finite-range interaction and no local placement keeps two records' books in the plane or in space.
+- **(ii) Without exclusion.** An interaction that keeps the books binds no pair at any `K` in `U`, since every bound pair is an eigenvalue outside the free spectrum.
 
 *Proof.*
 1. `Δ` is analytic off the spectrum of `h₀`, tends to one at infinity, and vanishes exactly at the eigenvalues of `h''` off that spectrum. Also `Δ(z̄)` is the complex conjugate of `Δ(z)`.
 2. `det S(E) = Δ(E − i0)/Δ(E + i0)` (Imports). Transparency gives `det S = 1`, so `Δ(E + i0)` is real for almost every `E`. By the continuity of the boundary values away from thresholds (Imports), it is real on every open interval of the continuum between thresholds.
 3. Real boundary values let `Δ` be continued across those intervals by reflection, and the continuation from below is `Δ` itself (Imports). So `Δ` is analytic except at the finitely many thresholds.
-4. Near a threshold, under (A), the free pair's resolvent entries grow at most logarithmically (plane) or stay bounded (space). `Δ` is a polynomial in finitely many of them, so it grows slower than any pole, and the singularity is removable (Imports).
+4. Near a threshold, for `K` in `U`, the free pair's resolvent entries grow at most logarithmically (plane) or stay bounded (space). `Δ` is a polynomial in finitely many of them, so it grows slower than any pole, and the singularity is removable (Imports).
 5. `Δ` is then entire and tends to one, so it is identically one (Imports). An eigenvalue of `h''` off the spectrum would be a zero of `Δ`.
 
 ∎
@@ -148,7 +151,7 @@ target_blocker_text: "blocks 137 and 141 (open): one record per site loses the b
 source_of_blocker_text: blocks 137 and 141 (open); probes refill n
 reachability_to_target: advances
 artifact_role: no_go
-next_trace_action: "assumption (A) for the pair fibers of the walk; more than two records; how far the books hold at long wavelength for interacting records"
+next_trace_action: "a certificate for assumption (A') at one wave vector; more than two records; how far the books hold at long wavelength for interacting records"
 conditional_surface_status: "two records; finite-range interactions; almost every total wave vector"
 hypothetical_axiom_status: "nothing adopted"
 admitted_observation_status: null
@@ -183,14 +186,14 @@ Target: what an interaction must do for two records to keep their total energy c
 - (O4) the line and the removed states (T4);
 - (O5) transparency against removed and bound states (T5).
 
-T1–T5 discharge them, with assumption (A) named.
+T1–T5 discharge them, with assumption (A′) named.
 
 ## No-Go Discipline Gate
 
 The note's negative sentence: in the plane and in space, no finite-range interaction and no local placement keeps the total energy current of two records under one record per site; without exclusion, a kept current forces the pair to be transparent and unbound.
 
 ### N1 — Routes by which the sentence could fail or mislead
-1. *Assumption (A).* T5 assumes that for almost every `K` the free pair's band functions have only nondegenerate stationary points. A family whose thresholds carried stronger singularities could escape step 4. (A) is not checked here.
+1. *Assumption (A′).* T5 assumes that at one total wave vector the four band functions of the free pair have only nondegenerate stationary points. A floating-point search supports this at one wave vector in each dimension but does not certify it. A band function with degenerate stationary points at every wave vector could escape step 4.
 2. *Exceptional wave vectors.* The statements hold for almost every `K`; a measure-zero set of `K` (flat bands, band touchings) is not treated. The books are an operator identity, so failing at almost every `K` suffices.
 3. *Infinite reach.* Interactions without a finite reach are not treated.
 4. *More records.* The argument is for two records.
@@ -213,14 +216,14 @@ The standard scattering theory named under Imports; nothing else beyond the supp
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "nothing local keeps two records' books under one record per site in the plane or in space" | executed: `g`'s closed form symbolically | executed: the shell derivative at an exact point for all four band pairs | executed: the placement lemma for any one-body term | executed: the line's shells; the removed states; the determinant identity on a truncation | two records; finite reach; almost every `K`; assumption (A) |
+| "nothing local keeps two records' books under one record per site in the plane or in space" | executed: `g`'s closed form symbolically | executed: the shell derivative at an exact point for all four band pairs | executed: the placement lemma for any one-body term | executed: the line's shells; the removed states; the determinant identity on a truncation | two records; finite reach; almost every `K`; assumption (A′) |
 
 ### N6 — Partial-closure paths and primitive scan
 No approved primitive is used. Nothing is proposed for registration.
 
 ### N7 — Steelman
 - *Objection:* "Some cleverly tuned neighbour term, or a push, might make excluded records pass each other invisibly."
-  - *Reply:* T5 rules this out for every finite-range term under (A). A pair that never scatters would have to have lost no state, and one record per site loses one (or three) at every total wave vector.
+  - *Reply:* T5 rules this out for every finite-range term under (A′). A pair that never scatters would have to have lost no state, and one record per site loses one (or three) at every total wave vector.
 
 ### N8 — Cross-cycle echo
 - Block 137: one record per site loses the current.
@@ -235,7 +238,7 @@ No approved primitive is used. Nothing is proposed for registration.
 
 ## Boundaries and non-claims
 
-- Two records; finite-range interactions; almost every total wave vector; assumption (A).
+- Two records; finite-range interactions; almost every total wave vector; assumption (A′).
 - Not refereed by another model family.
 - No gravitational claim is made.
 
@@ -250,7 +253,8 @@ No approved primitive is used. Nothing is proposed for registration.
   - the stationary scattering kernel of a finite-rank perturbation;
   - the Birman–Krein formula;
   - limiting absorption for the free pair away from thresholds;
-  - the Schwarz reflection principle, removable singularities and Liouville's theorem.
+  - the Schwarz reflection principle, removable singularities and Liouville's theorem;
+  - the implicit function theorem, for the persistence of nondegenerate stationary points.
 
 ## Review record
 
@@ -259,7 +263,9 @@ No approved primitive is used. Nothing is proposed for registration.
 - **Before writing.** The own prior-art check found blocks 137 and 141 and the probes problems of refills m and n. None has an attempt.
 - **Checks during the work.**
   - The first shell check compared unsimplified trigonometric expressions with zero, which is not a proof. The runner instead uses angles with rational sines and cosines, so that nonvanishing is a comparison of rationals.
-  - A first counting argument, following the phase of the continuum, forced only bound pairs inside the continuum, not a contradiction. The argument through the perturbation determinant (T5) closes the question under (A), because transparency makes the determinant real on the continuum and hence entire.
+  - A first counting argument, following the phase of the continuum, forced only bound pairs inside the continuum, not a contradiction. The argument through the perturbation determinant (T5) closes the question under (A′), because transparency makes the determinant real on the continuum and hence entire.
+  - The first version of (A) asked for nondegenerate stationary points at almost every wave vector. Since the books are an operator identity, one wave vector and its neighbourhood suffice.
+  - A floating-point search at `K₀ = (0.7, 1.3)` in the plane found 16, 8, 8 and 16 stationary points for the four band pairs, all nondegenerate (smallest `|det Hess|` about `0.27`). At `K₀ = (0.7, 1.3, 0.45)` in space it found 64, 48, 48 and 64, all nondegenerate (smallest about `0.29`). This supports (A′) but is not a certificate.
 - **Independence.** Mutation census: five mutations in families B–E (two in E), each failing in its own family, and two in family F.
 
 ## Verification

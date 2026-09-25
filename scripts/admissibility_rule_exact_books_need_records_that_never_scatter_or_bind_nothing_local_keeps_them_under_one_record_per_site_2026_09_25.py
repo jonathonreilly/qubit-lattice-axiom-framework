@@ -285,7 +285,7 @@ N5_LINES = (
     "per_site: executed - the shell derivative dg_1 ^ dE at a Pythagorean point for all four band pairs, by rational comparison",
     "per_mode: executed - the placement lemma for any one-body term f0 + f.sigma, symbolically on Z^3",
     "per_block: executed - the line's two-point shells with one value of g; the coincident states removed and their overlap with every band pair; the perturbation determinant on a truncation vanishing at the removed state",
-    "lattice_wide: two records; finite-range interactions; almost every total wave vector; the scattering and analytic steps are named standard imports; assumption (A) on the critical points is named, not checked",
+    "lattice_wide: two records; finite-range interactions; almost every total wave vector; the scattering and analytic steps are named standard imports; assumption (A') at one wave vector is named, supported by a floating-point search, not certified",
 )
 
 
@@ -321,7 +321,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: exact books need records that never scatter or bind - a kept total energy current makes two interacting records transparent in the plane and in space, and a transparent pair removes and binds nothing (under assumption (A)), so nothing local keeps the books under one record per site; on a line no condition arises; supervisor derivation, unrefereed; nothing adopted")
+    print("scope: exact books need records that never scatter or bind - a kept total energy current makes two interacting records transparent in the plane and in space, and a transparent pair removes and binds nothing (under the named assumption at one wave vector), so nothing local keeps the books under one record per site; on a line no condition arises; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

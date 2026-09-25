@@ -1,0 +1,36 @@
+{
+ "task": "P:9213",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-native-charge-and-separate",
+ "worker": "w-jonathonsmac4f50-jc503",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9213",
+ "pr": 9213,
+ "branch": "codex/mobile-record-native-charge-and-separated-threshold-20260925",
+ "git_sha": "b58f5ef6",
+ "started_utc": "20260925T143620Z",
+ "elapsed_s": 6.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/native_birth_charge_and_separated_threshold_2026_09_25.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9213's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "8da194e0724d644e66373750df186ca1afc032097474c622b53abd045d129f78",
+ "stdout_tail": "PR #9213: Derive the global separated threshold and distinguish native birth charge\nbranch codex/mobile-record-native-charge-and-separated-threshold-20260925 (base codex/mobile-record-native-ground-energy-and-formation-20260925)\nrunners in the PR: 1\n== scripts/native_birth_charge_and_separated_threshold_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc503",
+  "at_utc": "20260925T143627Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

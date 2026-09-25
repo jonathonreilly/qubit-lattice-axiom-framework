@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block117: "opened for review 2026-09-24; sixty-fifth block since the source-link direction opened (harvest, Grok-refereed): the record gas makes the chessboard when a recorded bond is expensive - g <= 9/62500 without contents, 10^-5 at (3,1,2); nothing adopted"

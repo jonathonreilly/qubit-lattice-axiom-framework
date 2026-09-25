@@ -1,0 +1,36 @@
+{
+ "task": "P:9131",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-original-photon-record-bri",
+ "worker": "w-jonathonsmac4f50-j2be5",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9131",
+ "pr": 9131,
+ "branch": "codex/mobile-record-original-photon-record-bridge-20260924",
+ "git_sha": "2ff01877",
+ "started_utc": "20260925T021737Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9131's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "3da9268352a74c8945c68692ab236e72905e3e06669f7e58a11fc8149089f4f0",
+ "stdout_tail": "PR #9131: Connect original formation records to prepared photon packets and finite timing windows\nbranch codex/mobile-record-original-photon-record-bridge-20260924 (base codex/mobile-record-photon-observation-bridge-20260924)\nrunners in the PR: 1\n== scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2be5",
+  "at_utc": "20260925T021744Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

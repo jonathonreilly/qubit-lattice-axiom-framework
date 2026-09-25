@@ -1,0 +1,4 @@
+PR #9131: Connect original formation records to prepared photon packets and finite timing windows
+branch codex/mobile-record-original-photon-record-bridge-20260924 (base codex/mobile-record-photon-observation-bridge-20260924)
+runners in the PR: 1
+== scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)

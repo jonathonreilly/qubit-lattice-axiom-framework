@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F134 one light cone from the source link | the member's mode equations at beta = -alpha with R2 and the full stress; leading-order beats of two eigen-waves (24 cases); lattice series for two axis beats; the light-cone solve and six partly reflected species | block 134 (own derivation, unrefereed) |

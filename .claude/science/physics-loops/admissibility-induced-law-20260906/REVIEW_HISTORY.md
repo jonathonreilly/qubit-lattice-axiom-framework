@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-25 block 134 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. The own prior-art check found the long-wave remark in the-dewitt-ratio-and-local-conservation a2; it is credited. Family B was tightened to include R₂ and the full stress, T2 was widened to both branches, and T3 was restricted to axis beats. Census 6/6 in family.

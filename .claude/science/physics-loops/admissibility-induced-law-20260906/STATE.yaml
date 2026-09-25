@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block134: "opened for review 2026-09-25; eighty-second block since the source-link direction opened (own derivation, unrefereed): one light cone from the source link - the walker's smooth states meet the member's identity at leading order iff alpha = K/4; nothing adopted"

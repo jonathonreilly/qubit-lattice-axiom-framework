@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F118 forward streaming on 26 neighbours | zone moments; T for shell rules (81 components, symbolic); mean step and total rate; universal diagonal and rules at 342 rational contents; arc identity; stationarity censuses on the 3^3 torus (11700, 23400) | block 118 (harvest of #8688, #8583, #9127; Grok-refereed) |

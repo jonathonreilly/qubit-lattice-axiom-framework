@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_forward_streaming_on_the_26_neighbours_isotropy_is_one_number_constant_rate_rules_capture_isotropically_2026_09_24.py
+runner_sha256: e771ec651681cb4b561f22ad04edbe73cc4a66a3dabdd5cea5b3f186bc6bc77c
+input_fingerprint_sha256: 4f9fc41b988a8f953053a21a700facf31d2f454909be386ed7fce02b5e6d634f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.06
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_FORWARD_STREAMING_ON_THE_26_NEIGHBOURS_ISOTROPY_OF_THE_SECOND_ORDER_TERM_IS_ONE_NUMBER_AND_CONSTANT_RATE_RULES_CAPTURE_ISOTROPICALLY_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: one record per site (exchange at an occupied target); each site has a domain of local possibilities (the content, read as the direction of travel); Admissibility is not a dynamics axiom (the streaming clause and its rates are supplied)
+PASS: B1 T1(a): <s_i s_j |s.n|> = (delta_ij + n_i n_j)/8 (zone lemma: <|t|^3> = 1/4, <x^2 |t|> = 1/8); for the forward shell rule lambda_|d|^2 (s.d/|d|)_+ on the 26 neighbours the second moment is (2 l1 + 8 l2 + 8 l3) I and the only obstruction to an isotropic fourth-rank moment is T1111 - T1122 - 2 T1212 = (l1 - l2 - (8/3) l3)/8; on that line all 81 components are alpha dd + beta(dd + dd) with alpha = 3*lambda2/4 + lambda3, beta = lambda2/8 + lambda3/6; block 51's axis clause gives 1/(4 sqrt3), 1/(8 sqrt3), 0
+PASS: B2 T1(b): the mean step is kappa s, kappa = l1 + 2 sqrt2 l2 + 4 l3/sqrt3, at five directions (generic ones included); the total rate r(s) = l1 |s|_1 + l2 sqrt2 sum max(|s_i|,|s_j|) + (l3/sqrt3) sum |s1 +- s2 +- s3| matches the direct sum; on the isotropy line r(body) - r(axis) = (sqrt3 + sqrt6 - 1 - 2 sqrt2) l2 + (4 sqrt3/3 - 2/3) l3, both coefficients positive, so capture stays anisotropic; the potential inflow g = grad(1/r) has lap g = 0 and div g = 0, so the isotropic streaming term vanishes on it
+PASS: C1 T2(a),(b): on the 26 neighbours any rule with mean s has M_mm >= |s_m|, with equality iff it is sign-compatible; both constant-rate rules below have M_mm = |s_m| exactly at all 342 rational test contents (48 images each), so T1111 = <|s1|^3> = 1/4 and T1122 = <s1^2 |s2|> = 1/8 (exact) for every sign-compatible rule, and the fourth-rank moment is isotropic iff beta = T1212 = <|s1 s2| W12> = 1/16 (axis hops: beta = 0)
+PASS: C2 T2(c): no pointwise route - on the arc s = (a, b, 0), 0 < b < a, a forward rule of total rate 1 has M11 = a and M12 = a + b - 1, and M = alpha I + beta' s s^T would force M22 - b = -(a - b)(1 - a)(1 - b)/(ab) < 0 (identity on the arc, sign at four rational arc points), which is impossible since M22 >= b
+PASS: D1 T3(a): the staircase rule (1 - t)[(a-b) u_i + (b-c)(u_i+u_j) + c(u_i+u_j+u_k)] + t[a u_i + b u_j + c u_k], t = (1 - a)/(b + c), and the maximal-merge axes-and-faces rule have, at all 342 rational test contents: weights >= 0, total exactly 1, mean exactly s, every weighted target forward (s.d > 0), at most 7 targets, 0 <= t <= b + c, and a(-s, d) = a(s, -d)
+PASS: D2 T3(b): both rules are covariant under the permutations of the axes, including at ties (a = b, b = c, c = 0), so they are continuous on the sphere and cubic-covariant; with the total rate constant, a capturing site takes content s at rate rho r0 for every s (first order in the density), and the flux form of the far shadow is 1/(4 pi) per unit capture in every direction
+PASS: E1 T4: on the 3^3 torus with all 26 hop vectors, random positive integer rates with a(-s, d) = a(s, -d), and hop / exchange / reflection with the content reversed at a solid site: every configuration balances (11700 with a solid site and 2 records of six contents, 23400 with 3 records of two contents), so the uniform product measure is stationary; with exchange suppressed 702 of 1404 configurations do not balance
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the zone moments <|t|^3> = 1/4 and <x^2 |t|> = 1/8; T for the forward shell rules, all 81 components, symbolic in the three rates
+per_site: executed - both constant-rate rules at every rational test content: weights, total, mean, forward, sign-compatible, the universal diagonal, a(-s, d) = a(s, -d)
+per_mode: executed - the mean step kappa s and the total rate r(s) at five contents; the potential inflow; the arc identity of the no-pointwise lemma
+per_block: executed - stationarity censuses on the 3^3 torus with all 26 hop vectors (11700 and 23400 configurations), and a failing census without exchange
+lattice_wide: T1-T4 for every content and every rate function as stated; the values of beta and the isotropic mixture are numerical only; the clause and its hop set are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: forward streaming on the 26 neighbours - shell rules isotropic at fourth rank on l1 = l2 + (8/3) l3 but with anisotropic capture; every sign-compatible rule has M_mm = |s_m|, so isotropy is beta = 1/16; staircase and axes-and-faces rules have constant total rate; stationarity for every rate function with exchange; the isotropy of the mixture numerical; nothing adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

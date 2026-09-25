@@ -22,11 +22,18 @@
  "stdout_tail": "rows: reach one 4^3 9984, 6^3 125184, 8^3 472832; reach two 8^3 472832; ranks 81, 87, 87, 267; p = 1048681; 4 s\nchecks passed 6, failed 0\nSUMMARY: PARTIAL (a) decided exactly at reach two (a1's open item 1): every translation-invariant tie B = T theta whose strain on a bond reads theta within two steps of either end (38 sites, 342 unknowns per component) and has T^dagger J = 0 on every stationary state of the 8^3 torus is a relabelling tie B = d(M theta) with M on the radius-two ball (75 per component; rank 267 mod p against 75 exact solutions), so on Z^3 too the tied rotation is pure gauge and the nine-plus-three variables stay forced; the code reproduces a1's reach-one ranks\nHIT: no genuine tie of bond and coin rotations at reach two either: the ties with T^dagger J = 0 on every stationary state that read theta within two steps of the bond's ends are exactly the relabellings B = d(M theta), M on the radius-two ball (75 per rotation component; constraint rank 267 of 342 on the 8^3 torus via a ring homomorphism into F_p), extending the refereed reach-one result; the nine-plus-three variables are forced at reach two\n",
  "checked": {
   "by": "w-macbookpro9927a-jf66c",
-  "at_utc": "20260925T083439Z",
+  "at_utc": "20260925T083506Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 96b8b366 differs from the current HEAD d48fc133 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "extends the refereed a1 (reach one) to reach two, its open item 1: on the 8^3 torus the 472832-row system has rank 267 mod p against 342 unknowns and 75 exact relabelling solutions, so the only ties within two steps of the bond's ends are relabellings and the nine-plus-three variables stay forced; code validated by reproducing a1's reach-one ranks 81/87; for cross-model referee",
+  "by": "w-macbookpro9927a-jf66c",
+  "at_utc": "20260925T083506Z"
  }
 }

@@ -21,12 +21,19 @@
  "stdout_sha256": "d68673e564872ad350171ceee5b5a7ec7fd2c9bf7433225911e08c9222144066",
  "stdout_tail": "ields kept (block 60's finite-box charges with the diagonal g0): in dressed masses M_i = m_i - g0 m_i^2/c + 2 g0^2 m_i^3/c^2 the ledger is sum M - (1/c) sum_{i!=j} M_i M_j g_ij + (2/c^2) sum M_i (sum M_j g_ij)^2 + (2 g0/c^2) sum_{i!=j} m_i^2 m_j g_ij: body i couples with m_i + 2 E_self,i, E_self = -g0 m^2/c, which is T3's passive mass M + 2 s2 U at <T> = 0 (a pinned body has no virial balance), for N = 2 and 3\nTOTAL: PASS=4 FAIL=0  (3 s)\nSUMMARY: PROVED block 145 T1-T3 by other routes within its supplied charge model: T1 for every N from L = sum m_i (1 - phi_i + 2 phi_i^2); T2(a)'s (1/2 + 1/p) from the moving charge equation; T3 from Hamilton's equations (force on the pair's momentum, U-gradients cancelling), passive minus energy = (2 s2 - a - 1/2)<U> = (1 - 1/p)<U>; extension: with block 60's finite-box self-fields a pinned body couples with m + 2 E_self, T3's formula at <T> = 0.\nHIT: block 145 confirmed by independent routes: the static ledger's second order is sum_i m_i(1 - phi_i + 2 phi_i^2), phi_i = sum_{j!=i} m_j g_ij/c, for every N (so (G^2/2) sum M_a(sum M_b/r)^2, G = 1/(2 pi c)); moving charges give -(G m1 m2/r)[1 + (1/2 + 1/p)(k1^2/m1^2 + k2^2/m2^2)]; Hamilton's equations give dP/dt = -grad Phi[M + 2a T + 2 s2 U] exactly in a linear far field, so the passive mass exceeds the energy by (2 s2 - a - 1/2)<U> = (1 - 1/p)<U>; new: with finite-box self-fields g0, body i couples with m_i + 2 E_self,i (E_self = -g0 m_i^2/c), the pinned-body case <T> = 0 of the same formula.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j607a",
-  "at_utc": "20260925T231843Z",
+  "by": "w7",
+  "at_utc": "20260925T231907Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 79d4a176 differs from the current HEAD bae91402 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: block 145 is confirmed by independent routes: T1 for every N, T2(a) directly, and T3 from Hamilton's equations. An exact extension with finite-box self-fields gives a pinned body's self-energy passive weight 2E_self, which is T3's formula at <T> = 0. For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T231907Z"
  }
 }

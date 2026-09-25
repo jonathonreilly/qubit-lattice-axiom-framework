@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/native_birth_charge_and_separated_threshold_2026_09_25.py
+runner_sha256: bf6e140fefe770f051b09771711b7d9df08a477ed217d5b38816a25963331036
+input_fingerprint_sha256: 2223b4c8b45f917da63069b8c229d1e0d7bae432e0e8c6da5662205591af46be
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.81
+status: ok
+----- stdout -----
+{
+  "scope": "Fresh exact-source primitive controls of conditional global flat threshold and native birth charges; no new independence, finite-g dynamics or physical calibration.",
+  "source_sha256": "bf6e140fefe770f051b09771711b7d9df08a477ed217d5b38816a25963331036",
+  "runtime_source_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+  "elapsed_seconds": 2.725712375016883,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 5371,
+  "stdout_sha256": "62b336177cb00dd3e36ded216a300af89998f239af6f852726f89041986b55c3",
+  "complete_scientific_artifact": {
+    "path": "outputs/native_charge_threshold_20260925/CHARGE_THRESHOLD_RESULTS.json",
+    "sha256": "e4c05862ee6cfc39640d25bab6a76a10e5315595d3ade7aafde009101c4db6b9",
+    "bytes": 175630
+  },
+  "all_assertions_passed": true
+}
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,304 @@
+===== runner cache v1 =====
+runner: scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py
+runner_sha256: e71510cc19045c60eaf884a4c2f93408ba5b04b08af1d5b4c9424667857a4b51
+input_fingerprint_sha256: 114a63a25d474cf87b061c3fb68f196c0c85bebb58603d1026cb7b4133f41321
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.52
+status: ok
+----- stdout -----
+{"epsilon": 0.08, "initial_fisher": 224.36851988056878, "initial_energy_mean": -82.17609159491134, "preparation": {"eigen_residual": 1.4950162428466653e-14, "orthogonality_error": 2.1240963515765003e-14, "minimum_overlap_eigenvalue": 0.9210809304629287}, "outputs": [{"b": 2, "r": 4, "probability": 0.00013272127584875183, "conditional_energy_mean": 294.5755950543855, "conditional_energy_variance": 7584261.641492664, "weighted_birth_fisher": 4026.371525718621, "scaled_coefficient": 0.16492017769343473, "target_coefficient": 0.16000000000000003, "ratio_to_target": 1.0307511105839668, "resource_lower_from_exact_birth": 3802.003005838052}, {"b": 2, "r": 2, "probability": 0.0001327098170063641, "conditional_energy_mean": 143.32986373223713, "conditional_energy_variance": 3817114.653305081, "weighted_birth_fisher": 2026.274348529713, "scaled_coefficient": 0.08299619731577705, "target_coefficient": 0.08000000000000002, "ratio_to_target": 1.037452466447213, "resource_lower_from_exact_birth": 1801.9058286491443}, {"b": 4, "r": 6, "probability": 0.00026543109285511585, "conditional_energy_mean": 218.95599408430593, "conditional_energy_variance": 5706165.421611955, "weighted_birth_fisher": 6058.374895482137, "scaled_coefficient": 0.24815103571894834, "target_coefficient": 0.24000000000000005, "ratio_to_target": 1.0339626488289513, "resource_lower_from_exact_birth": 5834.006375601568}], "elapsed_seconds": 0.2894670420791954}
+{"epsilon": 0.05, "initial_fisher": 204.88023901959605, "initial_energy_mean": -83.35475820691597, "preparation": {"eigen_residual": 1.551527632959709e-14, "orthogonality_error": 2.017353212784378e-14, "minimum_overlap_eigenvalue": 0.9696220911034525}, "outputs": [{"b": 2, "r": 4, "probability": 5.081582976123446e-05, "conditional_energy_mean": 782.0205492415539, "conditional_energy_variance": 127687837.60767676, "weighted_birth_fisher": 25954.253673807412, "scaled_coefficient": 0.16221408546129637, "target_coefficient": 0.16000000000000003, "ratio_to_target": 1.0138380341331021, "resource_lower_from_exact_birth": 25749.373434787816}, {"b": 2, "r": 2, "probability": 5.0815179617242914e-05, "conditional_energy_mean": 387.02576185654897, "conditional_energy_variance": 64005093.817394, "weighted_birth_fisher": 13009.72135499744, "scaled_coefficient": 0.08131075846873402, "target_coefficient": 0.08000000000000002, "ratio_to_target": 1.016384480859175, "resource_lower_from_exact_birth": 12804.841115977844}, {"b": 4, "r": 6, "probability": 0.00010163100937847738, "conditional_energy_mean": 584.5244189601368, "conditional_energy_variance": 95884862.43151917, "weighted_birth_fisher": 38979.50141212695, "scaled_coefficient": 0.24362188382579347, "target_coefficient": 0.24000000000000005, "ratio_to_target": 1.0150911826074727, "resource_lower_from_exact_birth": 38774.621173107356}], "elapsed_seconds": 0.26528933295048773}
+{"epsilon": 0.03, "initial_fisher": 196.65757886157735, "initial_energy_mean": -83.77807451933738, "preparation": {"eigen_residual": 8.678148721313802e-15, "orthogonality_error": 2.9394846748745877e-14, "minimum_overlap_eigenvalue": 0.9891481452973069}, "outputs": [{"b": 2, "r": 4, "probability": 1.8110669466804886e-05, "conditional_energy_mean": 2204.2283337731146, "conditional_energy_variance": 2741035013.654489, "weighted_birth_fisher": 198567.91651694188, "scaled_coefficient": 0.1608400123787229, "target_coefficient": 0.16000000000000003, "ratio_to_target": 1.0052500773670179, "resource_lower_from_exact_birth": 198371.2589380803}, {"b": 2, "r": 2, "probability": 1.8110639868940484e-05, "conditional_energy_mean": 1098.1196259919054, "conditional_energy_variance": 1371755025.4680145, "weighted_birth_fisher": 99373.44501864197, "scaled_coefficient": 0.08049249046509999, "target_coefficient": 0.08000000000000002, "ratio_to_target": 1.0061561308137497, "resource_lower_from_exact_birth": 99176.7874397804}, {"b": 4, "r": 6, "probability": 3.622130933574537e-05, "conditional_energy_mean": 1651.174431805096, "conditional_energy_variance": 2056699212.9764843, "weighted_birth_fisher": 297985.35361522116, "scaled_coefficient": 0.2413681364283291, "target_coefficient": 0.24000000000000005, "ratio_to_target": 1.0057005684513711, "resource_lower_from_exact_birth": 297788.6960363596}], "elapsed_seconds": 0.3224516670452431}
+{
+  "phase_witness": [
+    {
+      "epsilon": 0.12,
+      "success_probability": 0.00028800000000000006,
+      "exact_weighted_fisher": 749.382716049383,
+      "scaled_coefficient": 0.15539200000000003,
+      "asymptotic_coefficient": 0.16000000000000003,
+      "approximation_error": 2.0736000000000067e-06,
+      "robust_lower": 681.3427835993775,
+      "realized_noisy_fisher": 717.4683616231162,
+      "pinching_error_over_epsilon_cubed": 0.05574800444858994,
+      "stationary_resource_energy_variance": 1205.632716049383,
+      "stationary_resource_fisher": 0.0
+    },
+    {
+      "epsilon": 0.08,
+      "success_probability": 0.00012800000000000002,
+      "exact_weighted_fisher": 3856.249999999999,
+      "scaled_coefficient": 0.15795199999999995,
+      "asymptotic_coefficient": 0.16000000000000003,
+      "approximation_error": 4.096000000000003e-07,
+      "robust_lower": 3628.212618741896,
+      "realized_noisy_fisher": 3747.2551995609356,
+      "pinching_error_over_epsilon_cubed": 0.056205337824800944,
+      "stationary_resource_energy_variance": 6103.515624999999,
+      "stationary_resource_fisher": 0.0
+    },
+    {
+      "epsilon": 0.05,
+      "success_probability": 5.000000000000002e-05,
+      "exact_weighted_fisher": 25472.000000000007,
+      "scaled_coefficient": 0.15920000000000006,
+      "asymptotic_coefficient": 0.16000000000000003,
+      "approximation_error": 6.249999999999983e-08,
+      "robust_lower": 24546.485790063805,
+      "realized_noisy_fisher": 25022.584448650705,
+      "pinching_error_over_epsilon_cubed": 0.056426943918663555,
+      "stationary_resource_energy_variance": 39999.99999999999,
+      "stationary_resource_fisher": 0.0
+    },
+    {
+      "epsilon": 0.03,
+      "success_probability": 1.8000000000000004e-05,
+      "exact_weighted_fisher": 197175.3086419754,
+      "scaled_coefficient": 0.15971200000000005,
+      "asymptotic_coefficient": 0.16000000000000003,
+      "approximation_error": 8.100000000000185e-09,
+      "robust_lower": 192924.22549044728,
+      "realized_noisy_fisher": 195087.61946139106,
+      "pinching_error_over_epsilon_cubed": 0.05651760787577623,
+      "stationary_resource_energy_variance": 308641.975308642,
+      "stationary_resource_fisher": 0.0
+    }
+  ],
+  "conserving_resource": [
+    {
+      "input_resource_fisher": 0.84,
+      "flagged_output_fisher": 0.20643771379828724,
+      "free_energy_change": 5.551115123125783e-17,
+      "output_trace": 0.9999999999999998
+    },
+    {
+      "input_resource_fisher": 0.0,
+      "flagged_output_fisher": 0.0,
+      "free_energy_change": 4.163336342344337e-17,
+      "output_trace": 0.9999999999999997
+    }
+  ],
+  "actual_cube": {
+    "builder_provenance": "Definitions copied into this runner from author source 4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d; no runtime source import",
+    "rows": [
+      {
+        "epsilon": 0.08,
+        "initial_fisher": 224.36851988056878,
+        "initial_energy_mean": -82.17609159491134,
+        "preparation": {
+          "eigen_residual": 1.4950162428466653e-14,
+          "orthogonality_error": 2.1240963515765003e-14,
+          "minimum_overlap_eigenvalue": 0.9210809304629287
+        },
+        "outputs": [
+          {
+            "b": 2,
+            "r": 4,
+            "probability": 0.00013272127584875183,
+            "conditional_energy_mean": 294.5755950543855,
+            "conditional_energy_variance": 7584261.641492664,
+            "weighted_birth_fisher": 4026.371525718621,
+            "scaled_coefficient": 0.16492017769343473,
+            "target_coefficient": 0.16000000000000003,
+            "ratio_to_target": 1.0307511105839668,
+            "resource_lower_from_exact_birth": 3802.003005838052
+          },
+          {
+            "b": 2,
+            "r": 2,
+            "probability": 0.0001327098170063641,
+            "conditional_energy_mean": 143.32986373223713,
+            "conditional_energy_variance": 3817114.653305081,
+            "weighted_birth_fisher": 2026.274348529713,
+            "scaled_coefficient": 0.08299619731577705,
+            "target_coefficient": 0.08000000000000002,
+            "ratio_to_target": 1.037452466447213,
+            "resource_lower_from_exact_birth": 1801.9058286491443
+          },
+          {
+            "b": 4,
+            "r": 6,
+            "probability": 0.00026543109285511585,
+            "conditional_energy_mean": 218.95599408430593,
+            "conditional_energy_variance": 5706165.421611955,
+            "weighted_birth_fisher": 6058.374895482137,
+            "scaled_coefficient": 0.24815103571894834,
+            "target_coefficient": 0.24000000000000005,
+            "ratio_to_target": 1.0339626488289513,
+            "resource_lower_from_exact_birth": 5834.006375601568
+          }
+        ],
+        "elapsed_seconds": 0.2894670420791954
+      },
+      {
+        "epsilon": 0.05,
+        "initial_fisher": 204.88023901959605,
+        "initial_energy_mean": -83.35475820691597,
+        "preparation": {
+          "eigen_residual": 1.551527632959709e-14,
+          "orthogonality_error": 2.017353212784378e-14,
+          "minimum_overlap_eigenvalue": 0.9696220911034525
+        },
+        "outputs": [
+          {
+            "b": 2,
+            "r": 4,
+            "probability": 5.081582976123446e-05,
+            "conditional_energy_mean": 782.0205492415539,
+            "conditional_energy_variance": 127687837.60767676,
+            "weighted_birth_fisher": 25954.253673807412,
+            "scaled_coefficient": 0.16221408546129637,
+            "target_coefficient": 0.16000000000000003,
+            "ratio_to_target": 1.0138380341331021,
+            "resource_lower_from_exact_birth": 25749.373434787816
+          },
+          {
+            "b": 2,
+            "r": 2,
+            "probability": 5.0815179617242914e-05,
+            "conditional_energy_mean": 387.02576185654897,
+            "conditional_energy_variance": 64005093.817394,
+            "weighted_birth_fisher": 13009.72135499744,
+            "scaled_coefficient": 0.08131075846873402,
+            "target_coefficient": 0.08000000000000002,
+            "ratio_to_target": 1.016384480859175,
+            "resource_lower_from_exact_birth": 12804.841115977844
+          },
+          {
+            "b": 4,
+            "r": 6,
+            "probability": 0.00010163100937847738,
+            "conditional_energy_mean": 584.5244189601368,
+            "conditional_energy_variance": 95884862.43151917,
+            "weighted_birth_fisher": 38979.50141212695,
+            "scaled_coefficient": 0.24362188382579347,
+            "target_coefficient": 0.24000000000000005,
+            "ratio_to_target": 1.0150911826074727,
+            "resource_lower_from_exact_birth": 38774.621173107356
+          }
+        ],
+        "elapsed_seconds": 0.26528933295048773
+      },
+      {
+        "epsilon": 0.03,
+        "initial_fisher": 196.65757886157735,
+        "initial_energy_mean": -83.77807451933738,
+        "preparation": {
+          "eigen_residual": 8.678148721313802e-15,
+          "orthogonality_error": 2.9394846748745877e-14,
+          "minimum_overlap_eigenvalue": 0.9891481452973069
+        },
+        "outputs": [
+          {
+            "b": 2,
+            "r": 4,
+            "probability": 1.8110669466804886e-05,
+            "conditional_energy_mean": 2204.2283337731146,
+            "conditional_energy_variance": 2741035013.654489,
+            "weighted_birth_fisher": 198567.91651694188,
+            "scaled_coefficient": 0.1608400123787229,
+            "target_coefficient": 0.16000000000000003,
+            "ratio_to_target": 1.0052500773670179,
+            "resource_lower_from_exact_birth": 198371.2589380803
+          },
+          {
+            "b": 2,
+            "r": 2,
+            "probability": 1.8110639868940484e-05,
+            "conditional_energy_mean": 1098.1196259919054,
+            "conditional_energy_variance": 1371755025.4680145,
+            "weighted_birth_fisher": 99373.44501864197,
+            "scaled_coefficient": 0.08049249046509999,
+            "target_coefficient": 0.08000000000000002,
+            "ratio_to_target": 1.0061561308137497,
+            "resource_lower_from_exact_birth": 99176.7874397804
+          },
+          {
+            "b": 4,
+            "r": 6,
+            "probability": 3.622130933574537e-05,
+            "conditional_energy_mean": 1651.174431805096,
+            "conditional_energy_variance": 2056699212.9764843,
+            "weighted_birth_fisher": 297985.35361522116,
+            "scaled_coefficient": 0.2413681364283291,
+            "target_coefficient": 0.24000000000000005,
+            "ratio_to_target": 1.0057005684513711,
+            "resource_lower_from_exact_birth": 297788.6960363596
+          }
+        ],
+        "elapsed_seconds": 0.3224516670452431
+      }
+    ],
+    "scope": "Author reuse of complete S=1 physical matrices, actual canonical preparation and original marks. Varying epsilon at fixed S is a finite coefficient control, not the joint spin limit."
+  },
+  "frequency": {
+    "system_input_bandwidth": 1,
+    "apparatus_spectral_diameter": 200,
+    "apparatus_coherence_bandwidth": 1,
+    "output_high_low_minimum_gap": 99,
+    "forbidden_output_coherence_max": 0.0,
+    "output_high_energy_probability": 0.2306622939367945,
+    "apparatus_fisher": 0.2800000000000061,
+    "apparatus_energy_variance": 3394.788571428573,
+    "free_energy_conservation_residual": 0.0,
+    "nonconserving_phase_injection_detected": true
+  },
+  "prepared_output_swap": [
+    {
+      "epsilon": 0.12,
+      "apparatus_mean_above_ground": 0.040000000000000015,
+      "apparatus_spectral_diameter": 4822.530864197532,
+      "apparatus_fisher": 749.3827160493834,
+      "scaled_fisher": 0.1553920000000001,
+      "limiting_scaled_fisher": 0.16000000000000003,
+      "scaled_coherence_bandwidth": 1.0,
+      "selected_output_error": 0.0,
+      "conservation_residual": 0.0
+    },
+    {
+      "epsilon": 0.08,
+      "apparatus_mean_above_ground": 0.04,
+      "apparatus_spectral_diameter": 24414.062499999996,
+      "apparatus_fisher": 3856.250000000003,
+      "scaled_fisher": 0.15795200000000012,
+      "limiting_scaled_fisher": 0.16000000000000003,
+      "scaled_coherence_bandwidth": 0.9999999999999999,
+      "selected_output_error": 0.0,
+      "conservation_residual": 0.0
+    },
+    {
+      "epsilon": 0.05,
+      "apparatus_mean_above_ground": 0.040000000000000015,
+      "apparatus_spectral_diameter": 159999.99999999997,
+      "apparatus_fisher": 25471.999999999996,
+      "scaled_fisher": 0.1592,
+      "limiting_scaled_fisher": 0.16000000000000003,
+      "scaled_coherence_bandwidth": 1.0,
+      "selected_output_error": 0.0,
+      "conservation_residual": 0.0
+    },
+    {
+      "epsilon": 0.03,
+      "apparatus_mean_above_ground": 0.040000000000000015,
+      "apparatus_spectral_diameter": 1234567.901234568,
+      "apparatus_fisher": 197175.30864197543,
+      "scaled_fisher": 0.15971200000000008,
+      "limiting_scaled_fisher": 0.16000000000000003,
+      "scaled_coherence_bandwidth": 1.0,
+      "selected_output_error": 0.0,
+      "conservation_residual": 0.0
+    }
+  ],
+  "source_sha256": "e71510cc19045c60eaf884a4c2f93408ba5b04b08af1d5b4c9424667857a4b51",
+  "scope": "Finite author corroboration; no uniform-limit numerical proof, full marked-map sufficiency or formal negative-packet PASS."
+}
+per_element: Phase matrix elements, success weights, finite conserving identities and premise-changing controls are explicitly exercised.
+per_site: checked and not executed — this runner does not compute a sitewise formation law or a site-resolved apparatus energy supply.
+per_mode: Finite energy-frequency support is checked, including absent output coherences despite nonzero high-energy populations; no all-mode scan.
+per_block: Complete S=1 physical cube inputs and original marks are checked separately from finite resource toys; the joint-spin proof is analytic.
+lattice_wide: checked and not executed — no thermodynamic-limit or continuum-lattice apparatus is constructed or excluded by these controls.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

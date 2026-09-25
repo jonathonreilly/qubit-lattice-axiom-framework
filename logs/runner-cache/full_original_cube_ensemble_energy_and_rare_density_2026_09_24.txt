@@ -1,0 +1,511 @@
+===== runner cache v1 =====
+runner: scripts/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.py
+runner_sha256: eec2bf3e5b0086e59e95a15e6a4d6c4ac3b5af2e695fb68a38579b50f243e4ec
+input_fingerprint_sha256: a8ea56e61301c43272f76d3f38c62c60f8a3eafac37279d2af7d16f26b8a80ef
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.78
+status: ok
+----- stdout -----
+{
+  "source_algebra": {
+    "rows": [
+      {
+        "S": null,
+        "input_count": 5,
+        "edge_mark_checks": 180,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 0.0,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": false
+      },
+      {
+        "S": 2,
+        "input_count": 6,
+        "edge_mark_checks": 216,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 0.0,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": true
+      },
+      {
+        "S": 3,
+        "input_count": 6,
+        "edge_mark_checks": 216,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 3.1554436208840472e-30,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": true
+      },
+      {
+        "S": 7,
+        "input_count": 6,
+        "edge_mark_checks": 216,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 3.1554436208840472e-30,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": true
+      },
+      {
+        "S": 21,
+        "input_count": 6,
+        "edge_mark_checks": 216,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 6.310887241768095e-30,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": true
+      },
+      {
+        "S": 100,
+        "input_count": 6,
+        "edge_mark_checks": 216,
+        "max_twice_first_high_identity_residual_squared": 0.0,
+        "max_six_times_second_high_coefficient_residual_squared": 6.310887241768095e-30,
+        "missing_middle_factor_mutant_max_norm_squared": 1312.0,
+        "moving_boundary_word_included": true
+      }
+    ],
+    "mutant_nonzero_cases": 1239,
+    "reused_helper_sha256": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+    "scope": "Explicit reuse of root charge, normalized-shift and hop helpers; new all-edge triple coefficient and boundary checks. Rotor integer coefficients are exact in these operations; spin weights are floating checks. This is not an independent reconstruction or a uniform contour-series proof."
+  },
+  "evolving_input_cascade": {
+    "parameters": {
+      "delta": 1.1,
+      "kappa": 0.17,
+      "b": 2.0,
+      "r": 4.0,
+      "age_cap": 2.6
+    },
+    "maximum_real_fast_eigenvalue": -0.06490027702708749,
+    "targets": [
+      {
+        "t": 0.4,
+        "Sigma_trace": 3.8725137671763807,
+        "Sigma_bright_trace": 1.7456852649774361,
+        "bright_trace_target": 1.7456852649774386,
+        "Lyapunov_residual": 2.504908740149908e-15,
+        "common_low_mean": 0.0016992343237481125,
+        "mean_target": 4.2614643782177675,
+        "scaled_variance_target": 4.685741658283422,
+        "incorrect_zero_field_source_trace_distance": 1.7870471047753183,
+        "Sigma_real": [
+          [
+            0.9587361891740801,
+            0.0018408676836061955,
+            -0.10120237686301305,
+            -0.05092959358275817
+          ],
+          [
+            0.0018408676836062787,
+            1.1680923130248644,
+            -0.17067786423185954,
+            0.4037065274370719
+          ],
+          [
+            -0.10120237686301305,
+            -0.17067786423185954,
+            0.8983588283831845,
+            -0.006507742918737458
+          ],
+          [
+            -0.050929593582758184,
+            0.4037065274370719,
+            -0.006507742918737569,
+            0.8473264365942517
+          ]
+        ],
+        "Sigma_imag": [
+          [
+            0.0,
+            -0.02942988674233099,
+            0.17603640246777427,
+            -0.10008071191453963
+          ],
+          [
+            0.029429886742330942,
+            0.0,
+            0.07962693250548619,
+            0.15055796857457754
+          ],
+          [
+            -0.1760364024677744,
+            -0.07962693250548612,
+            4.163336342344337e-17,
+            0.030635561440015252
+          ],
+          [
+            0.10008071191453967,
+            -0.1505579685745776,
+            -0.030635561440015363,
+            -2.7755575615628914e-17
+          ]
+        ]
+      },
+      {
+        "t": 1.1,
+        "Sigma_trace": 2.697858898612083,
+        "Sigma_bright_trace": 1.3759538236579585,
+        "bright_trace_target": 1.3759538236579587,
+        "Lyapunov_residual": 2.26412105866216e-15,
+        "common_low_mean": -0.09089244004610926,
+        "mean_target": 2.8767523484271824,
+        "scaled_variance_target": 3.264409267320621,
+        "incorrect_zero_field_source_trace_distance": 3.4752332482879944,
+        "Sigma_real": [
+          [
+            0.9373342588032172,
+            -0.1194556980707805,
+            0.13758486691290828,
+            0.04356850038768395
+          ],
+          [
+            -0.11945569807078053,
+            0.3845708161509074,
+            -0.03595435477094952,
+            -0.14405309653817083
+          ],
+          [
+            0.13758486691290817,
+            -0.03595435477094941,
+            0.9289709536606119,
+            -0.21170145345722408
+          ],
+          [
+            0.04356850038768395,
+            -0.14405309653817075,
+            -0.2117014534572242,
+            0.4469828699973466
+          ]
+        ],
+        "Sigma_imag": [
+          [
+            -5.551115123125783e-17,
+            0.25065918394456654,
+            0.1737904838074712,
+            -0.10818228490446925
+          ],
+          [
+            -0.25065918394456643,
+            4.85722573273506e-17,
+            -0.022297219557360106,
+            0.02091247813254281
+          ],
+          [
+            -0.1737904838074714,
+            0.022297219557360026,
+            -1.1102230246251565e-16,
+            0.23031374560278137
+          ],
+          [
+            0.1081822849044692,
+            -0.02091247813254292,
+            -0.23031374560278126,
+            6.938893903907228e-17
+          ]
+        ]
+      },
+      {
+        "t": 2.3,
+        "Sigma_trace": 1.8219738720156713,
+        "Sigma_bright_trace": 0.9149802309674653,
+        "bright_trace_target": 0.9149802309674663,
+        "Lyapunov_residual": 1.2163578355431912e-15,
+        "common_low_mean": -0.15955651730785655,
+        "mean_target": 1.8446147419093821,
+        "scaled_variance_target": 2.2045883851389627,
+        "incorrect_zero_field_source_trace_distance": 1.5584910048410243,
+        "Sigma_real": [
+          [
+            0.36745864435825165,
+            0.010662952600043032,
+            0.10709044487584819,
+            0.022762184742841238
+          ],
+          [
+            0.010662952600042963,
+            0.5395349966899543,
+            0.15032453482043837,
+            0.02497133338838339
+          ],
+          [
+            0.10709044487584828,
+            0.15032453482043845,
+            0.41275642164638443,
+            0.055498093729289016
+          ],
+          [
+            0.022762184742841293,
+            0.02497133338838345,
+            0.05549809372928895,
+            0.5022238093210809
+          ]
+        ],
+        "Sigma_imag": [
+          [
+            -2.7755575615628914e-17,
+            0.05550388686083228,
+            0.03977299539706457,
+            -0.042275293564472516
+          ],
+          [
+            -0.05550388686083209,
+            0.0,
+            0.046272677510728964,
+            0.09059314656073497
+          ],
+          [
+            -0.03977299539706464,
+            -0.04627267751072919,
+            -2.7755575615628914e-17,
+            0.06048273561256627
+          ],
+          [
+            0.042275293564472335,
+            -0.09059314656073508,
+            -0.06048273561256608,
+            -2.7755575615628914e-17
+          ]
+        ]
+      }
+    ],
+    "rows": [
+      {
+        "t": 0.4,
+        "epsilon": 0.16,
+        "full_mean": 4.160794125248896,
+        "mean_target": 4.2614643782177675,
+        "scaled_full_variance": 4.570688625223402,
+        "scaled_variance_target": 4.685741658283422,
+        "scaled_high_density_trace_distance": 0.42508933779487346,
+        "scaled_high_trace": 3.7774014138115763,
+        "target_high_trace": 3.8725137671763807,
+        "scaled_recent_density_trace_distance": 0.05980994013368682,
+        "scaled_older_than_epsilon_high_trace": 1.2520272993463184,
+        "terminal_probability": 0.004012796984136507,
+        "minimum_diagonal_block_eigenvalue": -4.077505408380188e-16
+      },
+      {
+        "t": 0.4,
+        "epsilon": 0.08,
+        "full_mean": 4.374699276186851,
+        "mean_target": 4.2614643782177675,
+        "scaled_full_variance": 4.811158358354846,
+        "scaled_variance_target": 4.685741658283422,
+        "scaled_high_density_trace_distance": 0.2041024037771625,
+        "scaled_high_trace": 3.974297939175204,
+        "target_high_trace": 3.8725137671763807,
+        "scaled_recent_density_trace_distance": 0.014875482545532948,
+        "scaled_older_than_epsilon_high_trace": 0.5805543948069583,
+        "terminal_probability": 0.0014634432803767887,
+        "minimum_diagonal_block_eigenvalue": -7.192090793122431e-16
+      },
+      {
+        "t": 0.4,
+        "epsilon": 0.04,
+        "full_mean": 4.2893610930340245,
+        "mean_target": 4.2614643782177675,
+        "scaled_full_variance": 4.716724278895818,
+        "scaled_variance_target": 4.685741658283422,
+        "scaled_high_density_trace_distance": 0.05022031129577118,
+        "scaled_high_trace": 3.897616024919403,
+        "target_high_trace": 3.8725137671763807,
+        "scaled_recent_density_trace_distance": 0.0037142033262278747,
+        "scaled_older_than_epsilon_high_trace": 0.08435041805408397,
+        "terminal_probability": 0.00039683915554948916,
+        "minimum_diagonal_block_eigenvalue": -3.807202779917164e-15
+      },
+      {
+        "t": 0.4,
+        "epsilon": 0.02,
+        "full_mean": 4.26839503796605,
+        "mean_target": 4.2614643782177675,
+        "scaled_full_variance": 4.693444136384419,
+        "scaled_variance_target": 4.685741658283422,
+        "scaled_high_density_trace_distance": 0.012485919830421957,
+        "scaled_high_trace": 3.878751651414433,
+        "target_high_trace": 3.8725137671763807,
+        "scaled_recent_density_trace_distance": 0.0009282613810509574,
+        "scaled_older_than_epsilon_high_trace": 0.0024326648995929762,
+        "terminal_probability": 0.0001010998855011179,
+        "minimum_diagonal_block_eigenvalue": -1.2114285309885898e-14
+      },
+      {
+        "t": 0.4,
+        "epsilon": 0.01,
+        "full_mean": 4.263194266078288,
+        "mean_target": 4.2614643782177675,
+        "scaled_full_variance": 4.687664511054651,
+        "scaled_variance_target": 4.685741658283422,
+        "scaled_high_density_trace_distance": 0.0031170613507031488,
+        "scaled_high_trace": 3.8740708299396105,
+        "target_high_trace": 3.8725137671763807,
+        "scaled_recent_density_trace_distance": 0.00023204728980644047,
+        "scaled_older_than_epsilon_high_trace": 3.2348948035394122e-06,
+        "terminal_probability": 2.5392394806542378e-05,
+        "minimum_diagonal_block_eigenvalue": -6.903658457278705e-14
+      },
+      {
+        "t": 1.1,
+        "epsilon": 0.16,
+        "full_mean": 3.148601206537707,
+        "mean_target": 2.8767523484271824,
+        "scaled_full_variance": 3.561560912206193,
+        "scaled_variance_target": 3.264409267320621,
+        "scaled_high_density_trace_distance": 0.3757603548790881,
+        "scaled_high_trace": 2.9423461662325345,
+        "target_high_trace": 2.697858898612083,
+        "scaled_recent_density_trace_distance": 0.044683632680321377,
+        "scaled_older_than_epsilon_high_trace": 1.0823376466548396,
+        "terminal_probability": 0.013904723887123865,
+        "minimum_diagonal_block_eigenvalue": 3.4346265153043195e-16
+      },
+      {
+        "t": 1.1,
+        "epsilon": 0.08,
+        "full_mean": 2.932605006964063,
+        "mean_target": 2.8767523484271824,
+        "scaled_full_variance": 3.3258427972356337,
+        "scaled_variance_target": 3.264409267320621,
+        "scaled_high_density_trace_distance": 0.0693486116653492,
+        "scaled_high_trace": 2.7482246791058076,
+        "target_high_trace": 2.697858898612083,
+        "scaled_recent_density_trace_distance": 0.011173686722157974,
+        "scaled_older_than_epsilon_high_trace": 0.31696658238715225,
+        "terminal_probability": 0.0038723767996286687,
+        "minimum_diagonal_block_eigenvalue": -7.153629476793092e-16
+      },
+      {
+        "t": 1.1,
+        "epsilon": 0.04,
+        "full_mean": 2.8896937591876966,
+        "mean_target": 2.8767523484271824,
+        "scaled_full_variance": 3.2786663620067524,
+        "scaled_variance_target": 3.264409267320621,
+        "scaled_high_density_trace_distance": 0.015552666541481486,
+        "scaled_high_trace": 2.709531960399913,
+        "target_high_trace": 2.697858898612083,
+        "scaled_recent_density_trace_distance": 0.0027937191419923494,
+        "scaled_older_than_epsilon_high_trace": 0.03419251787871341,
+        "terminal_probability": 0.0009909773667285634,
+        "minimum_diagonal_block_eigenvalue": -6.476231289288883e-15
+      },
+      {
+        "t": 1.1,
+        "epsilon": 0.02,
+        "full_mean": 2.8799242680315746,
+        "mean_target": 2.8767523484271824,
+        "scaled_full_variance": 3.267905177191569,
+        "scaled_variance_target": 3.264409267320621,
+        "scaled_high_density_trace_distance": 0.003777364751601925,
+        "scaled_high_trace": 2.7007200316240434,
+        "target_high_trace": 2.697858898612083,
+        "scaled_recent_density_trace_distance": 0.0006984503128061182,
+        "scaled_older_than_epsilon_high_trace": 0.0005558937432134332,
+        "terminal_probability": 0.0002491513381126545,
+        "minimum_diagonal_block_eigenvalue": -4.3870207680420456e-15
+      },
+      {
+        "t": 1.1,
+        "epsilon": 0.01,
+        "full_mean": 2.877541375081989,
+        "mean_target": 2.8767523484271824,
+        "scaled_full_variance": 3.265278984691684,
+        "scaled_variance_target": 3.264409267320621,
+        "scaled_high_density_trace_distance": 0.0009374339883586001,
+        "scaled_high_trace": 2.698570619505647,
+        "target_high_trace": 2.697858898612083,
+        "scaled_recent_density_trace_distance": 0.00017461389141508024,
+        "scaled_older_than_epsilon_high_trace": 4.617810549601989e-07,
+        "terminal_probability": 6.237544315621193e-05,
+        "minimum_diagonal_block_eigenvalue": 1.483620851099771e-13
+      },
+      {
+        "t": 2.3,
+        "epsilon": 0.16,
+        "full_mean": 1.7867576595067405,
+        "mean_target": 1.8446147419093821,
+        "scaled_full_variance": 2.140827169904086,
+        "scaled_variance_target": 2.2045883851389627,
+        "scaled_high_density_trace_distance": 0.33804846521900395,
+        "scaled_high_trace": 1.7657967689326106,
+        "target_high_trace": 1.8219738720156713,
+        "scaled_recent_density_trace_distance": 0.0351756867631214,
+        "scaled_older_than_epsilon_high_trace": 0.6044356560615275,
+        "terminal_probability": 0.026140920585639483,
+        "minimum_diagonal_block_eigenvalue": 2.468070308471687e-16
+      },
+      {
+        "t": 2.3,
+        "epsilon": 0.08,
+        "full_mean": 1.8246563926298314,
+        "mean_target": 1.8446147419093821,
+        "scaled_full_variance": 2.1828659533855976,
+        "scaled_variance_target": 2.2045883851389627,
+        "scaled_high_density_trace_distance": 0.0904011872938806,
+        "scaled_high_trace": 1.8027975611739582,
+        "target_high_trace": 1.8219738720156713,
+        "scaled_recent_density_trace_distance": 0.00892006471767773,
+        "scaled_older_than_epsilon_high_trace": 0.22411697187300156,
+        "terminal_probability": 0.006840107938362797,
+        "minimum_diagonal_block_eigenvalue": 2.146787306123715e-15
+      },
+      {
+        "t": 2.3,
+        "epsilon": 0.04,
+        "full_mean": 1.839466636798886,
+        "mean_target": 1.8446147419093821,
+        "scaled_full_variance": 2.199004319369068,
+        "scaled_variance_target": 2.2045883851389627,
+        "scaled_high_density_trace_distance": 0.02268170748064461,
+        "scaled_high_trace": 1.817025266193937,
+        "target_high_trace": 1.8219738720156713,
+        "scaled_recent_density_trace_distance": 0.0022380588464022797,
+        "scaled_older_than_epsilon_high_trace": 0.033741548232639175,
+        "terminal_probability": 0.0017294896484030065,
+        "minimum_diagonal_block_eigenvalue": -1.4848460426735224e-15
+      },
+      {
+        "t": 2.3,
+        "epsilon": 0.02,
+        "full_mean": 1.8433205611123948,
+        "mean_target": 1.8446147419093821,
+        "scaled_full_variance": 2.2031858575537737,
+        "scaled_variance_target": 2.2045883851389627,
+        "scaled_high_density_trace_distance": 0.005671246358467992,
+        "scaled_high_trace": 1.820729562677669,
+        "target_high_trace": 1.8219738720156713,
+        "scaled_recent_density_trace_distance": 0.0005600198928705112,
+        "scaled_older_than_epsilon_high_trace": 0.0009705042419577356,
+        "terminal_probability": 0.0004335983721777564,
+        "minimum_diagonal_block_eigenvalue": 7.666499150426323e-14
+      },
+      {
+        "t": 2.3,
+        "epsilon": 0.01,
+        "full_mean": 1.844290791075717,
+        "mean_target": 1.8446147419093821,
+        "scaled_full_variance": 2.204237392685281,
+        "scaled_variance_target": 2.2045883851389627,
+        "scaled_high_density_trace_distance": 0.0014177980643348665,
+        "scaled_high_trace": 1.8216623851201017,
+        "target_high_trace": 1.8219738720156713,
+        "scaled_recent_density_trace_distance": 0.00014003658647324793,
+        "scaled_older_than_epsilon_high_trace": 1.3045652162669219e-06,
+        "terminal_probability": 0.00010847637019231454,
+        "minimum_diagonal_block_eigenvalue": 5.1789831512406556e-14
+      }
+    ],
+    "scope": "Exact diagonal density blocks of a supplied ten-state GKLS cascade with a rotating two-state initial input, born low doublet, four fast matter states and terminal doublet. A coherent first jump has low amplitude sqrt(kappa b)I and high amplitude sqrt(kappa) epsilon R; the second jump absorbs bright states at rate 2 kappa/epsilon^2. Off-diagonal density blocks are unnecessary for these block-diagonal Hermitian energy moments and are not approximated here. This toy has an exponential fast gap, unlike the cube rotor. No cube limit, QFI or conserving-apparatus claim."
+  },
+  "elapsed_seconds": 0.5170059580123052,
+  "source_sha256": "eec2bf3e5b0086e59e95a15e6a4d6c4ac3b5af2e695fb68a38579b50f243e4ec",
+  "provenance": {
+    "embedded_author_word_helpers": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+    "reused_author_control": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7"
+  }
+}
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

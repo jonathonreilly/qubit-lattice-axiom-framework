@@ -1,6 +1,6 @@
 {
- "edge_count": 14897,
- "node_count": 6725,
+ "edge_count": 15034,
+ "node_count": 6751,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -290,6 +290,10 @@
    "deps_hash": "d069d9134edd",
    "out_degree": 1
   },
+  "actual_cube_birth_apparatus_coherence_and_energy_range_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9d41da499c2a",
+   "out_degree": 4
+  },
   "actual_cube_birth_energy_on_the_fast_time_scale_bounded_theorem_note_2026-09-24": {
    "deps_hash": "ad144bdd166d",
    "out_degree": 2
@@ -297,6 +301,10 @@
   "actual_first_output_components_and_two_birth_bounds_bounded_theorem_note_2026-09-24": {
    "deps_hash": "7e94f2dfc176",
    "out_degree": 3
+  },
+  "actual_input_energy_and_original_mark_power_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "f50f774f1cf7",
+   "out_degree": 8
   },
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",
@@ -5778,6 +5786,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "finite_autonomous_marked_dynamics_under_grid_observations_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "8005e4099186",
+   "out_degree": 3
+  },
   "finite_bksf_sign_and_superlattice_marker_census_bounded_theorem_note_2026-09-02": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5902,6 +5914,10 @@
    "deps_hash": "6ed39f12dd81",
    "out_degree": 2
   },
+  "finite_window_microscopic_energy_laws_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "c39d6945922c",
+   "out_degree": 4
+  },
   "first_birth_energy_spread_on_seven_site_path_bounded_theorem_note_2026-09-24": {
    "deps_hash": "6ba1692fafaf",
    "out_degree": 2
@@ -5957,6 +5973,10 @@
   "fixed_target_x_cnot_preparation_count_cycle753_bounded_theorem_note_2026-07-28": {
    "deps_hash": "b57520e0b473",
    "out_degree": 4
+  },
+  "fixed_time_microscopic_cube_birth_energy_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "2b578556dfd9",
+   "out_degree": 5
   },
   "flat_holonomy_minimization_and_periodic_spectral_floor_bounded_theorem_note_2026-09-13": {
    "deps_hash": "9c83fb5042d9",
@@ -6469,6 +6489,10 @@
   "full_fock_unit_weight_source_support_note_2026-07-28": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "full_original_cube_ensemble_energy_and_rare_matter_field_density_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bddcb746372f",
+   "out_degree": 7
   },
   "full_physical_epr_companion_input_substitution_cycle799_bounded_theorem_note_2026-07-30": {
    "deps_hash": "39b252a4b556",
@@ -11586,6 +11610,10 @@
    "deps_hash": "7680adde7def",
    "out_degree": 2
   },
+  "initial_cube_energy_layer_and_exact_band_balance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "df104289a7d7",
+   "out_degree": 7
+  },
   "inner_automorphism_invariance_tracial_identification_narrow_theorem_note_2026-05-20": {
    "deps_hash": "13a354b49fb5",
    "out_degree": 2
@@ -13394,6 +13422,10 @@
    "deps_hash": "ac3c8d928b00",
    "out_degree": 2
   },
+  "local_background_and_unrestricted_original_record_counts_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "b15dedf1f526",
+   "out_degree": 5
+  },
   "local_clock_relation_cycle869_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7c59543ab5ac",
    "out_degree": 1
@@ -13746,6 +13778,10 @@
    "deps_hash": "4a576dba9306",
    "out_degree": 6
   },
+  "microscopic_ground_energy_and_formation_budget_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "fe8fc72636bc",
+   "out_degree": 6
+  },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",
    "out_degree": 4
@@ -13825,6 +13861,10 @@
   "mixed_entangled_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e45ff6568ef9",
    "out_degree": 1
+  },
+  "mixed_low_field_inputs_retain_cube_birth_energy_and_coherence_bounds_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c2f4758c16c9",
+   "out_degree": 6
   },
   "mixed_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",
@@ -13921,6 +13961,10 @@
   "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "native_birth_charge_and_separated_threshold_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "d6845a57b2e3",
+   "out_degree": 5
   },
   "native_certified_imaginary_time_note_2026-09-09": {
    "deps_hash": "77b25aca8756",
@@ -14189,6 +14233,10 @@
   "native_global_projector_certificate_note_2026-09-10": {
    "deps_hash": "51d0e0f274bd",
    "out_degree": 10
+  },
+  "native_ground_energy_and_original_formation_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "b7df52c7dd4c",
+   "out_degree": 4
   },
   "native_growing_formation_current_bounded_theorem_note_2026-09-13": {
    "deps_hash": "d4a1bc27cca4",
@@ -14758,6 +14806,10 @@
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
+  "no_first_birth_cube_energy_and_apparatus_coherence_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d6f2e603d722",
+   "out_degree": 5
+  },
   "no_per_site_bosonic_ccr_theorem_note_2026-05-02": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
@@ -15070,6 +15122,10 @@
    "deps_hash": "a9cb5a27b029",
    "out_degree": 4
   },
+  "optical_reference_energy_limits_for_original_record_counts_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "ba19981f5a4e",
+   "out_degree": 5
+  },
   "optimized_clock_loop_dressing_fidelity_and_defect_path_gaps_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8237288c57b0",
    "out_degree": 2
@@ -15105,6 +15161,34 @@
   "ordered_lattice_quasi_persistent_relaunch_note": {
    "deps_hash": "599444f3c8b2",
    "out_degree": 1
+  },
+  "ordinary_microscopic_cube_energy_after_the_birth_layer_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "f1b740f9fecd",
+   "out_degree": 4
+  },
+  "original_birth_charge_and_grouping_dynamics_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "b7df52c7dd4c",
+   "out_degree": 4
+  },
+  "original_coincidences_and_number_energy_identifiability_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "c621284cb84c",
+   "out_degree": 9
+  },
+  "original_formation_and_field_response_budget_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "b7df52c7dd4c",
+   "out_degree": 4
+  },
+  "original_formation_record_photon_readout_and_microscopic_finite_bins_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1e3206769fec",
+   "out_degree": 6
+  },
+  "original_local_charge_current_and_finite_time_covariance_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "b7df52c7dd4c",
+   "out_degree": 4
+  },
+  "original_record_calibration_and_prepared_matter_probe_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bdb2dbdd7f65",
+   "out_degree": 6
   },
   "osterwalder_schrader_from_framework_narrow_theorem_note_2026-05-27": {
    "deps_hash": "37b34cf3d5e2",
@@ -15321,6 +15405,10 @@
   "persistent_record_refinement_note": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "photon_dispersion_observational_constraints_and_live_formation_response_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "81c174a25595",
+   "out_degree": 6
   },
   "physical_adjacency_admissible_assembly_trade_cycle723_note_2026-08-03": {
    "deps_hash": "eaad6dc5dd30",
@@ -16434,6 +16522,10 @@
    "deps_hash": "bb80bd5715c5",
    "out_degree": 4
   },
+  "prepared_original_record_probe_energy_vacuum_response_and_clock_scope_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "1f215bb95f6b",
+   "out_degree": 7
+  },
   "primitive_p_bae_m1_m2_duality_note_2026-05-10_ppbae_duality": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -16981,6 +17073,10 @@
   "realized_state_primitive": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "recent_births_force_full_cube_energy_variance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9c49edb77adb",
+   "out_degree": 5
   },
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",
@@ -18013,6 +18109,10 @@
   "sharded_content_survival_law_cycle877_bounded_theorem_note_2026-07-28": {
    "deps_hash": "ba80223b81ab",
    "out_degree": 1
+  },
+  "sharp_actual_rotor_cube_energy_tail_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "5ff287580778",
+   "out_degree": 3
   },
   "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {
    "deps_hash": "e3b0c44298fc",
@@ -19921,6 +20021,10 @@
   "time_axis_is_the_history_index_record_monotone_direction_bounded_note_2026-07-03": {
    "deps_hash": "1f65fcda86e7",
    "out_degree": 2
+  },
+  "time_integrated_microscopic_cube_birth_variance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9c49edb77adb",
+   "out_degree": 5
   },
   "toe_derivation_campaign_axiom_sufficiency_by_underdetermination_witnesses_note_2026-09-13": {
    "deps_hash": "b9664c163946",

@@ -1,0 +1,304 @@
+===== runner cache v1 =====
+runner: scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py
+runner_sha256: a4046e2f392e7ccfc945d3b54280cb6d6b0f8763bd3ce706cebd8d51566c504e
+input_fingerprint_sha256: d65461dd883cae495f1c7e7bcaae6944df26cf19fa88e982aebde05b7aa030f4
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 109.06
+status: ok
+----- stdout -----
+{
+  "phase_kernel_checks": [
+    {
+      "phase": "00000",
+      "kernel_dimension": 1,
+      "exact_kernel_gram_determinant": "24",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "00011",
+      "kernel_dimension": 1,
+      "exact_kernel_gram_determinant": "24",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "01101",
+      "kernel_dimension": 2,
+      "exact_kernel_gram_determinant": "144",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "01110",
+      "kernel_dimension": 1,
+      "exact_kernel_gram_determinant": "24",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "10100",
+      "kernel_dimension": 1,
+      "exact_kernel_gram_determinant": "24",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "10111",
+      "kernel_dimension": 2,
+      "exact_kernel_gram_determinant": "144",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "11001",
+      "kernel_dimension": 4,
+      "exact_kernel_gram_determinant": "1296",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    },
+    {
+      "phase": "11010",
+      "kernel_dimension": 2,
+      "exact_kernel_gram_determinant": "144",
+      "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+      "linear_dark_diagonal_mutation_rejected": true
+    }
+  ],
+  "spin_shift_weight_checks": [
+    {
+      "spin": 1,
+      "max_source_field": 3,
+      "interior_and_box_boundary_checked": true
+    },
+    {
+      "spin": 2,
+      "max_source_field": 4,
+      "interior_and_box_boundary_checked": true
+    },
+    {
+      "spin": 5,
+      "max_source_field": 7,
+      "interior_and_box_boundary_checked": true
+    },
+    {
+      "spin": 20,
+      "max_source_field": 22,
+      "interior_and_box_boundary_checked": true
+    }
+  ],
+  "linear_weight_mutation_witness": [
+    5,
+    -7,
+    -1,
+    30.0
+  ],
+  "scope": "Exact dark-block/kernel algebra and finite scalar boundary controls, not a numerical proof of Sobolev decay or the joint limit."
+}
+{"epsilon": 0.12, "norm": [0.001321667707492689, 0.0011243449051967832, 0.0012273189431433163], "norm_over_epsilon_fourth": [6.3737833115966875, 5.422188007314735, 5.9187834835229385], "quadrature_difference": 1.2751650314783003e-14, "preparation": {"eigen_residual": 1.5897395112788425e-14, "orthogonality_error": 2.3756383430453002e-14, "minimum_overlap_eigenvalue": 0.820088321982336}, "elapsed_seconds": 26.622275500092655}
+{"epsilon": 0.08, "norm": [0.00028655976200532926, 0.00024211661513650246, 0.0002652781690645576], "norm_over_epsilon_fourth": [6.996087939583234, 5.911050174231017, 6.4765177994276755], "quadrature_difference": 6.896275763595002e-16, "preparation": {"eigen_residual": 1.4950162428466653e-14, "orthogonality_error": 2.1240963515765003e-14, "minimum_overlap_eigenvalue": 0.9210809304629287}, "elapsed_seconds": 26.903283707913943}
+{"epsilon": 0.05, "norm": [4.622400470705957e-05, 3.887020551943967e-05, 4.270506703740854e-05], "norm_over_epsilon_fourth": [7.395840753129529, 6.219232883110346, 6.832810725985365], "quadrature_difference": 2.976860264928284e-16, "preparation": {"eigen_residual": 1.551527632959709e-14, "orthogonality_error": 2.017353212784378e-14, "minimum_overlap_eigenvalue": 0.9696220911034525}, "elapsed_seconds": 27.777376958052628}
+{"epsilon": 0.03, "norm": [6.142005037515429e-06, 5.153785255620724e-06, 5.669413452071419e-06], "norm_over_epsilon_fourth": [7.582722268537568, 6.3626978464453385, 6.999275866754839], "quadrature_difference": 1.7380075262979764e-16, "preparation": {"eigen_residual": 8.678148721313802e-15, "orthogonality_error": 2.9394846748745877e-14, "minimum_overlap_eigenvalue": 0.9891481452973069}, "elapsed_seconds": 27.028546749963425}
+{
+  "structural": {
+    "phase_kernel_checks": [
+      {
+        "phase": "00000",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "00011",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "01101",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "01110",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "10100",
+        "kernel_dimension": 1,
+        "exact_kernel_gram_determinant": "24",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "10111",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "11001",
+        "kernel_dimension": 4,
+        "exact_kernel_gram_determinant": "1296",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      },
+      {
+        "phase": "11010",
+        "kernel_dimension": 2,
+        "exact_kernel_gram_determinant": "144",
+        "coefficientwise_zero_dark_block_checked_by_primitive_builder": true,
+        "linear_dark_diagonal_mutation_rejected": true
+      }
+    ],
+    "spin_shift_weight_checks": [
+      {
+        "spin": 1,
+        "max_source_field": 3,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 2,
+        "max_source_field": 4,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 5,
+        "max_source_field": 7,
+        "interior_and_box_boundary_checked": true
+      },
+      {
+        "spin": 20,
+        "max_source_field": 22,
+        "interior_and_box_boundary_checked": true
+      }
+    ],
+    "linear_weight_mutation_witness": [
+      5,
+      -7,
+      -1,
+      30.0
+    ],
+    "scope": "Exact dark-block/kernel algebra and finite scalar boundary controls, not a numerical proof of Sobolev decay or the joint limit."
+  },
+  "second_high_band": {
+    "complete_physical_dimensions": {
+      "4": 3197,
+      "6": 5604,
+      "8": 672
+    },
+    "leading_cancellation": [
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 13.2664991614216
+      },
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 12.328828005937952
+      },
+      {
+        "integer_residual_nonzeros": 0,
+        "changed_middle_coefficient_norm": 18.110770276274835
+      }
+    ],
+    "projector_rows": [
+      {
+        "epsilon": 0.12,
+        "norm": [
+          0.001321667707492689,
+          0.0011243449051967832,
+          0.0012273189431433163
+        ],
+        "norm_over_epsilon_fourth": [
+          6.3737833115966875,
+          5.422188007314735,
+          5.9187834835229385
+        ],
+        "quadrature_difference": 1.2751650314783003e-14,
+        "preparation": {
+          "eigen_residual": 1.5897395112788425e-14,
+          "orthogonality_error": 2.3756383430453002e-14,
+          "minimum_overlap_eigenvalue": 0.820088321982336
+        },
+        "elapsed_seconds": 26.622275500092655
+      },
+      {
+        "epsilon": 0.08,
+        "norm": [
+          0.00028655976200532926,
+          0.00024211661513650246,
+          0.0002652781690645576
+        ],
+        "norm_over_epsilon_fourth": [
+          6.996087939583234,
+          5.911050174231017,
+          6.4765177994276755
+        ],
+        "quadrature_difference": 6.896275763595002e-16,
+        "preparation": {
+          "eigen_residual": 1.4950162428466653e-14,
+          "orthogonality_error": 2.1240963515765003e-14,
+          "minimum_overlap_eigenvalue": 0.9210809304629287
+        },
+        "elapsed_seconds": 26.903283707913943
+      },
+      {
+        "epsilon": 0.05,
+        "norm": [
+          4.622400470705957e-05,
+          3.887020551943967e-05,
+          4.270506703740854e-05
+        ],
+        "norm_over_epsilon_fourth": [
+          7.395840753129529,
+          6.219232883110346,
+          6.832810725985365
+        ],
+        "quadrature_difference": 2.976860264928284e-16,
+        "preparation": {
+          "eigen_residual": 1.551527632959709e-14,
+          "orthogonality_error": 2.017353212784378e-14,
+          "minimum_overlap_eigenvalue": 0.9696220911034525
+        },
+        "elapsed_seconds": 27.777376958052628
+      },
+      {
+        "epsilon": 0.03,
+        "norm": [
+          6.142005037515429e-06,
+          5.153785255620724e-06,
+          5.669413452071419e-06
+        ],
+        "norm_over_epsilon_fourth": [
+          7.582722268537568,
+          6.3626978464453385,
+          6.999275866754839
+        ],
+        "quadrature_difference": 1.7380075262979764e-16,
+        "preparation": {
+          "eigen_residual": 8.678148721313802e-15,
+          "orthogonality_error": 2.9394846748745877e-14,
+          "minimum_overlap_eigenvalue": 0.9891481452973069
+        },
+        "elapsed_seconds": 27.028546749963425
+      }
+    ],
+    "scope": "Complete finite S=1 actual-preparation/projector consistency check. The written parity/analytic proof, not these four samples, supplies the uniform estimate."
+  },
+  "elapsed_seconds": 108.52437116706278,
+  "source_sha256": "a4046e2f392e7ccfc945d3b54280cb6d6b0f8763bd3ce706cebd8d51566c504e",
+  "scope": "Finite author controls. Uniform Sobolev, weighted-analytic, growing-time, mean and mesoscopic-variance conclusions require the written proof and separate independent reconstruction."
+}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

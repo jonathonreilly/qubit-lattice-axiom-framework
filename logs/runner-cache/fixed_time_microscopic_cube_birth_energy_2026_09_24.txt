@@ -1,0 +1,546 @@
+===== runner cache v1 =====
+runner: scripts/fixed_time_microscopic_cube_birth_energy_2026_09_24.py
+runner_sha256: ef8fb022dda8386d5f6145bf3a55d2049ad43340f4126d474e1b9d60612bf26e
+input_fingerprint_sha256: cb363454eaa8ba26de1638b32e813f9d5a49fb7685933efc0ebbbd0bfa941f9a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 130.35
+status: ok
+----- stdout -----
+Complete spin-one spaces built: {4: 3197, 6: 5604, 8: 672}
+/private/tmp/cl3-review21-20260925/scripts/fixed_time_microscopic_cube_birth_energy_2026_09_24.py:101: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  h=diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C']
+/private/tmp/cl3-review21-20260925/scripts/fixed_time_microscopic_cube_birth_energy_2026_09_24.py:123: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  h=(diags(m6['W'])-epsilon*(F+F.T)+epsilon**2*m6['C']).tocsc()
+{"epsilon": 0.1, "contour_16_to_32_difference": 8.494838416438239e-08, "projector_difference_divided_by_epsilon_cubed": 2.2499035503239844, "commutation_action_residual": 1.0043395260671333e-13, "elapsed_seconds": 43.10742833290715}
+{"epsilon": 0.075, "contour_16_to_32_difference": 8.672490729895684e-08, "projector_difference_divided_by_epsilon_cubed": 2.3264334553546213, "commutation_action_residual": 3.2915178095492774e-13, "elapsed_seconds": 39.933709750068374}
+{"epsilon": 0.05, "contour_16_to_32_difference": 8.751818951291896e-08, "projector_difference_divided_by_epsilon_cubed": 2.3811949522629403, "commutation_action_residual": 5.261289198839887e-13, "elapsed_seconds": 46.77298312506173}
+{
+  "small_controls": {
+    "orthogonal_high_weight_starts_at": 1.7346150245485432e-34,
+    "orthogonal_high_weight_maximum": 5.172755643157776e-06,
+    "oblique_max_increment": -4.05122355870267e-09,
+    "oblique_projector_nonselfadjoint_norm": 0.004320184384125314,
+    "density_counterexample": [
+      {
+        "n": 10,
+        "trace_norm_distance": 0.19999999999999998,
+        "energy": 10.0
+      },
+      {
+        "n": 100,
+        "trace_norm_distance": 0.02000000000000001,
+        "energy": 100.0
+      },
+      {
+        "n": 1000,
+        "trace_norm_distance": 0.002000000000000001,
+        "energy": 1000.0
+      }
+    ]
+  },
+  "complete_cube": {
+    "complete_dimensions": {
+      "4": 3197,
+      "6": 5604,
+      "8": 672
+    },
+    "rows": [
+      {
+        "epsilon": 0.1,
+        "spin": 1,
+        "not_a_joint_scaling_sequence": true,
+        "preparation": {
+          "eigen_residual": 1.5199150851497322e-14,
+          "orthogonality_error": 2.35400806546551e-14,
+          "minimum_overlap_eigenvalue": 0.8756259506515011
+        },
+        "contour_16_to_32_difference": 8.494838416438239e-08,
+        "projector_difference_on_actual_outputs": 0.002249903550323985,
+        "projector_difference_divided_by_epsilon_cubed": 2.2499035503239844,
+        "commutation_action_residual": 1.0043395260671333e-13,
+        "physical_times": [
+          0.0,
+          0.005,
+          0.01,
+          0.015,
+          0.02
+        ],
+        "mark_order": [
+          "resolved_plus",
+          "resolved_minus",
+          "coherent"
+        ],
+        "oblique_component_squared_norm": [
+          [
+            0.02013449539239882,
+            0.010080796494958816,
+            0.01511028914533203
+          ],
+          [
+            0.016303438217677546,
+            0.008166683383381433,
+            0.012249639101559014
+          ],
+          [
+            0.011435205444519762,
+            0.005730672177667457,
+            0.008589162028147999
+          ],
+          [
+            0.008442634925091126,
+            0.004248375358797389,
+            0.0063939821086520295
+          ],
+          [
+            0.00610497349153685,
+            0.0030741276114417755,
+            0.00462935516998774
+          ]
+        ],
+        "survival": [
+          [
+            0.9999999999999998,
+            1.000000000000001,
+            0.9999999999999973
+          ],
+          [
+            0.9697484838778209,
+            0.9713036544614544,
+            0.9705392604487056
+          ],
+          [
+            0.9388184908579684,
+            0.9428738456006964,
+            0.940857907108346
+          ],
+          [
+            0.9106870778508206,
+            0.9165842082827896,
+            0.9136858597971035
+          ],
+          [
+            0.8835764746777791,
+            0.8915436975563101,
+            0.8876083115662815
+          ]
+        ],
+        "epsilon_squared_mean_over_delta": [
+          [
+            1.8215229851619545,
+            0.8714607251448857,
+            1.3465429067543857
+          ],
+          [
+            1.4526363073474917,
+            0.6884946893756281,
+            1.071854996945364
+          ],
+          [
+            0.9604594114696439,
+            0.44374494911322576,
+            0.7027701513461007
+          ],
+          [
+            0.6729418966883797,
+            0.30337037130440575,
+            0.49271779245186653
+          ],
+          [
+            0.4424353953254014,
+            0.18853664725379082,
+            0.31921612988329695
+          ]
+        ],
+        "epsilon_sixth_second_moment_over_delta_squared": [
+          [
+            2.015915291208285,
+            1.0093941484101836,
+            1.5125001759842553
+          ],
+          [
+            1.640034522893138,
+            0.8213659465763445,
+            1.2318492650266832
+          ],
+          [
+            1.1407397546924356,
+            0.5716340295363455,
+            0.856721680991223
+          ],
+          [
+            0.8477981438322353,
+            0.42716282553753315,
+            0.642001298083048
+          ],
+          [
+            0.6115818463098996,
+            0.30813289057279675,
+            0.46362123125817656
+          ]
+        ],
+        "epsilon_sixth_variance_over_delta_squared": [
+          [
+            1.982735831353552,
+            1.001799710455483,
+            1.4943683979869498
+          ],
+          [
+            1.6189330004788962,
+            0.8166256972033601,
+            1.2203605336819159
+          ],
+          [
+            1.1315149318816295,
+            0.5696649337377104,
+            0.8517828221349928
+          ],
+          [
+            0.8432696358690498,
+            0.4262424897156794,
+            0.6395735898530616
+          ],
+          [
+            0.6096243555195322,
+            0.30777742989921975,
+            0.46260224188239984
+          ]
+        ],
+        "elapsed_seconds": 43.10742833290715
+      },
+      {
+        "epsilon": 0.075,
+        "spin": 1,
+        "not_a_joint_scaling_sequence": true,
+        "preparation": {
+          "eigen_residual": 1.4677043692146163e-14,
+          "orthogonality_error": 2.1688861801656646e-14,
+          "minimum_overlap_eigenvalue": 0.9308081535240905
+        },
+        "contour_16_to_32_difference": 8.672490729895684e-08,
+        "projector_difference_on_actual_outputs": 0.0009814641139777307,
+        "projector_difference_divided_by_epsilon_cubed": 2.3264334553546213,
+        "commutation_action_residual": 3.2915178095492774e-13,
+        "physical_times": [
+          0.0,
+          0.005,
+          0.01,
+          0.015,
+          0.02
+        ],
+        "mark_order": [
+          "resolved_plus",
+          "resolved_minus",
+          "coherent"
+        ],
+        "oblique_component_squared_norm": [
+          [
+            0.011301911207805984,
+            0.00565336063010865,
+            0.008478098513218384
+          ],
+          [
+            0.006906832963466031,
+            0.00345527687418901,
+            0.005180383568289957
+          ],
+          [
+            0.0039054412253290813,
+            0.001964717982561173,
+            0.0029589992682823823
+          ],
+          [
+            0.002256336001995466,
+            0.0011442070085930596,
+            0.0017322424212393229
+          ],
+          [
+            0.0013126465255680522,
+            0.0006657096336969711,
+            0.0010083142482575462
+          ]
+        ],
+        "survival": [
+          [
+            0.9999999999999982,
+            1.0,
+            0.9999999999999996
+          ],
+          [
+            0.9685038553875306,
+            0.9706251480036994,
+            0.9695645666977046
+          ],
+          [
+            0.9390483046129574,
+            0.9429810477205071,
+            0.9410430397271062
+          ],
+          [
+            0.9113954362117789,
+            0.9170665109740538,
+            0.914266614204967
+          ],
+          [
+            0.885058784222194,
+            0.8925818108393583,
+            0.8888489773275371
+          ]
+        ],
+        "epsilon_squared_mean_over_delta": [
+          [
+            1.8991008062944428,
+            0.9272557824808559,
+            1.4131944159755232
+          ],
+          [
+            1.1183435097560033,
+            0.5379591868806542,
+            0.8280336905427395
+          ],
+          [
+            0.5902580265117758,
+            0.27625440038574595,
+            0.4377867155660775
+          ],
+          [
+            0.30117977612311336,
+            0.13357268111570056,
+            0.22307509493996677
+          ],
+          [
+            0.13728827909973687,
+            0.051240935266705694,
+            0.09779109984855378
+          ]
+        ],
+        "epsilon_sixth_second_moment_over_delta_squared": [
+          [
+            2.009759864115921,
+            1.0053086659787434,
+            1.507485736974095
+          ],
+          [
+            1.2246469813281364,
+            0.6129535581358296,
+            0.918635616161652
+          ],
+          [
+            0.6933770335615258,
+            0.3488142288217115,
+            0.5256481863497801
+          ],
+          [
+            0.4010760769058267,
+            0.20362967090169498,
+            0.30811313483714753
+          ],
+          [
+            0.2341657663920157,
+            0.11889086390797464,
+            0.18010964158844675
+          ]
+        ],
+        "epsilon_sixth_variance_over_delta_squared": [
+          [
+            1.9894728298332873,
+            1.0004722724941824,
+            1.4962519456515329
+          ],
+          [
+            1.2176118376704361,
+            0.6113256826478648,
+            0.9147788923278617
+          ],
+          [
+            0.6914172580360545,
+            0.3483849485444662,
+            0.5245701145529456
+          ],
+          [
+            0.40056583733213286,
+            0.20352931155778003,
+            0.3078332207859961
+          ],
+          [
+            0.2340597459893885,
+            0.11887609471983522,
+            0.1800558491553928
+          ]
+        ],
+        "elapsed_seconds": 39.933709750068374
+      },
+      {
+        "epsilon": 0.05,
+        "spin": 1,
+        "not_a_joint_scaling_sequence": true,
+        "preparation": {
+          "eigen_residual": 1.551527632959709e-14,
+          "orthogonality_error": 2.017353212784378e-14,
+          "minimum_overlap_eigenvalue": 0.9696220911034525
+        },
+        "contour_16_to_32_difference": 8.751818951291896e-08,
+        "projector_difference_on_actual_outputs": 0.0002976493690328676,
+        "projector_difference_divided_by_epsilon_cubed": 2.3811949522629403,
+        "commutation_action_residual": 5.261289198839887e-13,
+        "physical_times": [
+          0.0,
+          0.005,
+          0.01,
+          0.015,
+          0.02
+        ],
+        "mark_order": [
+          "resolved_plus",
+          "resolved_minus",
+          "coherent"
+        ],
+        "oblique_component_squared_norm": [
+          [
+            0.0050115247994489106,
+            0.0025059731846505695,
+            0.0037587888351849306
+          ],
+          [
+            0.0014860901173565822,
+            0.0007464973387977125,
+            0.001123389258227699
+          ],
+          [
+            0.00043242988477035997,
+            0.00021932293449660666,
+            0.00033216330719707557
+          ],
+          [
+            0.00013063819563929486,
+            6.749983592890894e-05,
+            0.00010347840317235259
+          ],
+          [
+            4.321642817956078e-05,
+            2.2773273384853682e-05,
+            3.536387125040763e-05
+          ]
+        ],
+        "survival": [
+          [
+            1.0000000000000018,
+            1.0000000000000038,
+            1.0000000000000064
+          ],
+          [
+            0.9690265980640023,
+            0.9708821712235186,
+            0.9699618999120381
+          ],
+          [
+            0.9410512313428381,
+            0.9440324688730579,
+            0.942548951387983
+          ],
+          [
+            0.9148843745592496,
+            0.918619602073331,
+            0.9167584782973973
+          ],
+          [
+            0.8898902290187173,
+            0.8943494331858087,
+            0.89212702926019
+          ]
+        ],
+        "epsilon_squared_mean_over_delta": [
+          [
+            1.9550513731038865,
+            0.9675644046413758,
+            1.4613110474003492
+          ],
+          [
+            0.546402425200985,
+            0.2650395278667411,
+            0.4086365782975902
+          ],
+          [
+            0.12673787742937392,
+            0.05547147901466348,
+            0.09366514905319925
+          ],
+          [
+            0.007217106818921168,
+            -0.004233316646320664,
+            0.0032721276707490276
+          ],
+          [
+            -0.026268762534795473,
+            -0.021131075703221803,
+            -0.022748931367536654
+          ]
+        ],
+        "epsilon_sixth_second_moment_over_delta_squared": [
+          [
+            2.0046780272986413,
+            1.0024200430896038,
+            1.503539550435628
+          ],
+          [
+            0.5943195294748278,
+            0.29864013597192307,
+            0.4494178675493183
+          ],
+          [
+            0.17323579453045526,
+            0.08788953663156097,
+            0.1331452189821375
+          ],
+          [
+            0.05224224975229819,
+            0.027048521110985036,
+            0.04143013458460535
+          ],
+          [
+            0.01727936539017273,
+            0.009102024895821537,
+            0.01414194679381555
+          ]
+        ],
+        "epsilon_sixth_variance_over_delta_squared": [
+          [
+            1.9951224626199529,
+            1.0000795908967812,
+            1.498200975492492
+          ],
+          [
+            0.593573140449164,
+            0.2984645210935935,
+            0.44900040791651136
+          ],
+          [
+            0.173195638306517,
+            0.08788184391910078,
+            0.1331232860817696
+          ],
+          [
+            0.052242119535721096,
+            0.027048476308560467,
+            0.04143010781755661
+          ],
+          [
+            0.017277640270459957,
+            0.009100908589920598,
+            0.014140653009119639
+          ]
+        ],
+        "elapsed_seconds": 46.77298312506173
+      }
+    ]
+  },
+  "builder_provenance": "Selected complete_spin_one and jump_matrix definitions from the prior guarded control cf51bc234d72cb26667b740dddf9f29b27b3c43826dac74df941401a113df125, included here without algorithm changes.",
+  "builder_reuse": "Previous checker builder, personally reused here; these new controls are not independent reconstruction.",
+  "scope": "Numerical finite spin-one checks only; no interval certification, no joint-limit fit. The analytic proof supplies the asymptotic claim.",
+  "all_assertions_passed": true,
+  "elapsed_seconds": 129.94452925003134
+}
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

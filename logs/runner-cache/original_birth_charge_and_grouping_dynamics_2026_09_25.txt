@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py
+runner_sha256: 6589fc0d0837aac7084e20cd4a08d1e7716f6c62e740dc5465aee86169284460
+input_fingerprint_sha256: 49e307ecd5853b49ee58499277c77b27f2b7d92eb6a116e3e23633d19809242e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 3.61
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional original-birth charge and supplied-input grouping dynamics; no new independence, particle lifetime, units or empirical claim.",
+  "source_sha256": "6589fc0d0837aac7084e20cd4a08d1e7716f6c62e740dc5465aee86169284460",
+  "artifacts": [
+    {
+      "label": "charge",
+      "path": "outputs/native_birth_charge_transport_20260925/charge.stdout.json",
+      "sha256": "17916dcc4013cab5c5b7c97647324bcd21a9591988cf3f2a6834df3bfa1c680a",
+      "bytes": 3884221,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+    },
+    {
+      "label": "transport",
+      "path": "outputs/native_birth_charge_transport_20260925/transport.stdout.json",
+      "sha256": "308b3e4e835b8f97859fb682d4e459494a38481852462214d98964844a0560da",
+      "bytes": 368706,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1"
+    }
+  ],
+  "runtime_sha256": {
+    "scripts/review_support/unit28/pr9217/charge_cluster_controls.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+    "scripts/review_support/unit28/pr9217/cluster_escape_controls.py": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+    "scripts/review_support/unit28/pr9217/birth_geometry.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+  },
+  "elapsed_seconds": 3.549152790918015,
+  "all_assertions_passed": true
+}
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

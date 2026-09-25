@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py
+runner_sha256: 9ac33302ba4e4c99b333bd5b603284426d450821479a1054473e59e72c7bca99
+input_fingerprint_sha256: 32ffe785cafbcbab698c1b202be1fdd1e860235142da437ef7624d8e8dc6bedc
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.32
+status: ok
+----- stdout -----
+{
+  "scope": "Conditional original local charge current and covariance; no time propagation, measured readout or empirical claim.",
+  "source_sha256": "9ac33302ba4e4c99b333bd5b603284426d450821479a1054473e59e72c7bca99",
+  "artifacts": [
+    {
+      "label": "current",
+      "path": "outputs/native_local_charge_covariance_20260925/current.stdout.json",
+      "sha256": "abfee85815378c9bfd6a91609f19a836511ba2bac5059b5a564378d5121e99fd",
+      "bytes": 1235781,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "label": "finite_time",
+      "path": "outputs/native_local_charge_covariance_20260925/finite_time.stdout.json",
+      "sha256": "3e7db929e7a94431498e078663af9ea6a7ced4b4236df88cb4d8d488a3c9aac5",
+      "bytes": 7158312,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+    }
+  ],
+  "runtime_sha256": {
+    "scripts/review_support/unit28/pr9219/current_noise_controls.py": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+    "scripts/review_support/unit28/pr9219/local_support_controls.py": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+  },
+  "elapsed_seconds": 1.2361546669853851,
+  "all_assertions_passed": true
+}
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

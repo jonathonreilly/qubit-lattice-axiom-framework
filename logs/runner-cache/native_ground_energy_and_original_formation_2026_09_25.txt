@@ -1,0 +1,93 @@
+===== runner cache v1 =====
+runner: scripts/native_ground_energy_and_original_formation_2026_09_25.py
+runner_sha256: 9edaae30c5f30aa27048b9e833869be4a32d56e0f2a3672bd60ba824ccb9ac39
+input_fingerprint_sha256: f4a0fdd3bfc3f8cca8f4220ffdcea38de6682178a9dba668e33492218fcbcfe4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 6.96
+status: ok
+----- stdout -----
+{
+  "scope": "Fresh reuse of personally derived source controls for three separately checked conditional arguments; no new independence or physical fit.",
+  "source_sha256": "9edaae30c5f30aa27048b9e833869be4a32d56e0f2a3672bd60ba824ccb9ac39",
+  "stages": [
+    {
+      "program": "scripts/review_support/unit28/pr9199/pair/native_pair_controls.py",
+      "source_sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa",
+      "elapsed_seconds": 2.356134000001475,
+      "exit_code": 0,
+      "stdout_sha256": "79c1825bcae924cdee5dbbbb4e9325b1c7c32bb41c18e8b218f666b8c5577ce1",
+      "stdout_bytes": 1579,
+      "stderr_bytes": 0
+    },
+    {
+      "program": "scripts/review_support/unit28/pr9199/pair/native_pair_local_row_certificate.py",
+      "source_sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+      "elapsed_seconds": 1.29845474998001,
+      "exit_code": 0,
+      "stdout_sha256": "7ca10081bbaa2b22bfbbedb0d7738716ac356f79390e5b4296d3a392ebfe7c0e",
+      "stdout_bytes": 4119,
+      "stderr_bytes": 0
+    },
+    {
+      "program": "scripts/review_support/unit28/pr9199/pair/native_pair_row_polynomial_certificate.py",
+      "source_sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630",
+      "elapsed_seconds": 0.20354200003203005,
+      "exit_code": 0,
+      "stdout_sha256": "925fafe56632998982e72e0ed915a491fef47bbce10524c6ff57f724645c160b",
+      "stdout_bytes": 8216,
+      "stderr_bytes": 0
+    },
+    {
+      "program": "scripts/review_support/unit28/pr9199/filling/ground_filling_certificates.py",
+      "source_sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+      "elapsed_seconds": 0.23129612498451024,
+      "exit_code": 0,
+      "stdout_sha256": "c23adf9b24f2cab81985baeeb9f9800a56d1824037d862e7ef2ed282726c7873",
+      "stdout_bytes": 49447,
+      "stderr_bytes": 0
+    },
+    {
+      "program": "scripts/review_support/unit28/pr9199/activity/primitive_rate_energy_controls.py",
+      "source_sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8",
+      "elapsed_seconds": 2.720757917035371,
+      "exit_code": 0,
+      "stdout_sha256": "1fd8ed843b50eefb47947d109f18e71adf15bee2b87fe16a975fbfac016a1b05",
+      "stdout_bytes": 45457,
+      "stderr_bytes": 0
+    }
+  ],
+  "complete_scientific_artifacts": [
+    {
+      "path": "outputs/native_ground_20260925/activity_PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "sha256": "cc09396fd80da08fd76da7df5a06dd6d6995b1d1344041e8dd2f7f8f37e053f0",
+      "bytes": 3028894
+    },
+    {
+      "path": "outputs/native_ground_20260925/filling_GROUND_FILLING_CERTIFICATES.json",
+      "sha256": "c23adf9b24f2cab81985baeeb9f9800a56d1824037d862e7ef2ed282726c7873",
+      "bytes": 49447
+    },
+    {
+      "path": "outputs/native_ground_20260925/pair_LOCAL_ROW_CERTIFICATE.json",
+      "sha256": "c3982e91c8a37dbd1129de0df46f6a78aaa7a983eb2e53960655fb8c3ae4ad57",
+      "bytes": 27774
+    },
+    {
+      "path": "outputs/native_ground_20260925/pair_NATIVE_PAIR_RESULTS.json",
+      "sha256": "ac23b2ecaebba48b32c3e998b11f5c59b6c88aef8f312aaa8519936f448d926b",
+      "bytes": 715580
+    },
+    {
+      "path": "outputs/native_ground_20260925/pair_ROW_POLYNOMIAL_CERTIFICATE.json",
+      "sha256": "925fafe56632998982e72e0ed915a491fef47bbce10524c6ff57f724645c160b",
+      "bytes": 8216
+    }
+  ],
+  "elapsed_seconds": 6.880493792006746,
+  "all_assertions_passed": true
+}
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

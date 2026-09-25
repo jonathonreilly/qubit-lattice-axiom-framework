@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/microscopic_ground_energy_and_formation_budget_2026_09_25.py
+runner_sha256: 1402c54cd9cd3f2cd36b05a8955733c73fa613ccb755e7182b67d96c3d84a2f6
+input_fingerprint_sha256: 53ef66ebaa987a40b9ed5ad3ab3d92542f28a076bd3c19d31fa87bef855509ca
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.52
+status: ok
+----- stdout -----
+{
+  "scope": "Fresh reuse of exact root cycle controls for the microscopic transfer; no numerical cubic residence theorem or new independent check.",
+  "source_sha256": "1402c54cd9cd3f2cd36b05a8955733c73fa613ccb755e7182b67d96c3d84a2f6",
+  "runtime_source_sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+  "elapsed_seconds": 0.442102791974321,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 8969,
+  "stdout_sha256": "5788f11a3b8f7f835a9aad62cd678f671ffbec3f1d17eae79d17de0b8961b916",
+  "complete_scientific_artifact": {
+    "path": "outputs/microscopic_energy_budget_20260925/SPIN_ENERGY_CONTROL_RESULTS.json",
+    "sha256": "5788f11a3b8f7f835a9aad62cd678f671ffbec3f1d17eae79d17de0b8961b916",
+    "bytes": 8969
+  },
+  "all_assertions_passed": true
+}
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

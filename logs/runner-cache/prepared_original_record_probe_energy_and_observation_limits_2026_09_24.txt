@@ -1,0 +1,115 @@
+===== runner cache v1 =====
+runner: scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py
+runner_sha256: 0351ab34366f0d1a96f24c1c5c4099e83ad7eaa7a6d1c9eb253ed70d5468f82f
+input_fingerprint_sha256: aef976cb74223fece43b6ee995026a00d2331ef9672958cccd9197387bcd7c07
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.85
+status: ok
+----- stdout -----
+{
+  "scope": "Exact disclosed root coefficients and conditional SI arithmetic; no full rotor propagation.",
+  "input_rows": [
+    {
+      "side": 6,
+      "vertices": 216,
+      "overlap_pairs": 972,
+      "active_pair_counts": [
+        242,
+        252
+      ],
+      "all_B_empty_flat_scalar": -69336,
+      "mean_H4": "-64199",
+      "mean_minus_background": "5137",
+      "variance_H4": "5502897",
+      "selected_mark_leakage": {
+        "-1": {
+          "norm_squared": "8133884",
+          "output_words": 1798
+        },
+        "1": {
+          "norm_squared": "8133884",
+          "output_words": 1798
+        }
+      },
+      "shifted_action_words": 1788,
+      "action_certificate_sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795"
+    },
+    {
+      "side": 16,
+      "vertices": 4096,
+      "overlap_pairs": 18432,
+      "active_pair_counts": [
+        243,
+        254
+      ],
+      "all_B_empty_flat_scalar": -1314816,
+      "mean_H4": "-1309676",
+      "mean_minus_background": "5140",
+      "variance_H4": "5516448",
+      "selected_mark_leakage": {
+        "-1": {
+          "norm_squared": "7982020",
+          "output_words": 1792
+        },
+        "1": {
+          "norm_squared": "7982020",
+          "output_words": 1792
+        }
+      },
+      "shifted_action_words": 1846,
+      "action_certificate_sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318"
+    }
+  ],
+  "output_rows": [
+    {
+      "side": 16,
+      "vertices": 4096,
+      "overlap_pairs": 18432,
+      "all_B_empty_flat_scalar": -1314816,
+      "selected_output_matter_rows": [
+        {
+          "sigma": -1,
+          "mean_H4": -1307664,
+          "mean_minus_empty": 7152,
+          "variance_H4": 7016504,
+          "nonzero_output_words": 2044,
+          "active_pair_count": 279,
+          "record_number": 2054
+        },
+        {
+          "sigma": 1,
+          "mean_H4": -1307664,
+          "mean_minus_empty": 7152,
+          "variance_H4": 6416696,
+          "nonzero_output_words": 2294,
+          "active_pair_count": 279,
+          "record_number": 2054
+        }
+      ]
+    }
+  ],
+  "unit_rows": [
+    {
+      "benchmark": "MAGIC2017",
+      "E_QG2_lower_GeV": "5.9e10",
+      "orientation_independent_necessary_a_upper_m": "2.006715055518330161602316015458180715870569866674404073860346786241745e-26",
+      "necessary_tau_upper_seconds": "6.693680918144812574312046287229082713850559464956266757919396311970414e-35",
+      "status": "Conditional published timing conversion; no selected scale or new fit."
+    },
+    {
+      "benchmark": "LHAASO2024_v2_ML_MINOS",
+      "E_QG2_lower_GeV": "6.9e11",
+      "orientation_independent_necessary_a_upper_m": "1.71588678660263013818169050597148785849802350918536000518493420852555e-27",
+      "necessary_tau_upper_seconds": "5.723582234355709302672619289079940291553376933803184619090498295742818e-36",
+      "status": "Conditional published timing conversion; no selected scale or new fit."
+    }
+  ],
+  "source_sha256": "0351ab34366f0d1a96f24c1c5c4099e83ad7eaa7a6d1c9eb253ed70d5468f82f",
+  "elapsed_seconds": 1.7498738749418408,
+  "all_assertions_passed": true
+}
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

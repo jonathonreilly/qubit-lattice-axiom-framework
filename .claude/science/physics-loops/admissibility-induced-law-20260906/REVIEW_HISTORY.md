@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-25 block 147 — author checks (not a review PASS)
 The supervisor's own derivation, not refereed by another model family. Exact torus sum, spectra and series. Census 8/8 in family.
+
+## 2026-09-25 block 147 follow-up - the sea's equation of state after a panel's report (author checks, not a review PASS)
+Panel of three Claude Opus 5.5 subagents (same model family). T1(e): massless sea p = rho/3, massive 0 < p/rho < 1/3, constant energy per volume p = -rho (E2); all eight species count. Runner 14/0; census 9/9.

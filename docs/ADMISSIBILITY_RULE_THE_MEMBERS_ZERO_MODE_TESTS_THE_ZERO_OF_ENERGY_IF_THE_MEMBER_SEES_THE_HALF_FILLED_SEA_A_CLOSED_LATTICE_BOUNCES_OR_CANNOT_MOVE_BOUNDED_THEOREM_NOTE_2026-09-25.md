@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 60's homogeneous kinetic model and block 101's static clock law, with block 139's staggered mass and the books' zero of energy, all as landed on main, and block 146's zero-mode constraint 24 alpha l^3 lamdot^2 = m (open) placed; uniform content on a closed lattice; unit rate. (T1) exact: the walk's spectrum is symmetric about the books' zero, so the half-filled sea has negative energy; on a uniformly stretched lattice it is -I/l per site for the massless walk (I = (3 + sqrt 3 + 3 sqrt 2)/8 on the 4^3 torus) and -<sqrt(mu^2 + s^2/l^2)> per site with the staggered mass mu; per unit volume neither stays constant as the lattice stretches; under one record per site the many-walker hopping anticommutes with the product of sublattice signs, so the hard-core sea's energy is negative too (checked exactly on the 4^3 torus with two walkers). (T2) exact: if the member sees the sea's energy, a closed lattice holding only the sea has no uniform motion (and, by block 146, no static state); with rest content m0 and the massless sea it turns at l = I/m0, where it bounces, with an exact history; with the massive sea it reaches large lengths only if m0 > mu, and has no uniform motion at all if m0 <= mu. (T3) if the member sees energy measured above the sea, the sea drops out of the zero mode and block 146 holds unchanged; the subtraction is a constant per site and keeps the books. Which zero the member sees is not fixed by the landed clauses. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 60's homogeneous kinetic model and block 101's static clock law, with block 139's staggered mass and the books' zero of energy, all as landed on main, and block 146's zero-mode constraint 24 alpha l^3 lamdot^2 = m (open) placed; uniform content on a closed lattice; unit rate. (T1) exact: the walk's spectrum is symmetric about the books' zero, so the half-filled sea has negative energy; on a uniformly stretched lattice it is -I/l per site for the massless walk (I = (3 + sqrt 3 + 3 sqrt 2)/8 on the 4^3 torus) and -<sqrt(mu^2 + s^2/l^2)> per site with the staggered mass mu; per unit volume neither stays constant as the lattice stretches, and with block 146's pressure the massless sea has p = rho/3 and the massive sea 0 < p/rho < 1/3, while an energy constant per unit volume has p = -rho; under one record per site the many-walker hopping anticommutes with the product of sublattice signs, so the hard-core sea's energy is negative too (checked exactly on the 4^3 torus with two walkers). (T2) exact: if the member sees the sea's energy, a closed lattice holding only the sea has no uniform motion (and, by block 146, no static state); with rest content m0 and the massless sea it turns at l = I/m0, where it bounces, with an exact history; with the massive sea it reaches large lengths only if m0 > mu, and has no uniform motion at all if m0 <= mu. (T3) if the member sees energy measured above the sea, the sea drops out of the zero mode and block 146 holds unchanged; the subtraction is a constant per site and keeps the books. Which zero the member sees is not fixed by the landed clauses. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py
@@ -25,6 +25,7 @@ Block 146 (open) found that a closed lattice with content must stretch or shrink
   - On a uniformly stretched lattice the massless sea has `−I/ℓ` per site, with `I` the zone average of `|sin k|` (`(3 + √3 + 3√2)/8` on the `4³` torus).
   - With the staggered mass `μ`, the sea has `−⟨√(μ² + s²/ℓ²)⟩` per site.
   - Per unit volume neither stays constant as the lattice stretches: the massless sea dilutes like negative top-speed content, and the massive sea tends to negative content at rest.
+  - With block 146's pressure the massless sea has `p = ρ/3`, the pressure of top-speed content, and the massive sea `0 < p/ρ < 1/3`. An energy that is constant per unit volume would need `p = −ρ`.
   - Under one record per site the hard-core sea's energy is negative too.
 - **T2: if the member sees the sea.**
   - A closed lattice holding only the sea has no uniform motion, and (block 146) no static state: no solution at all.
@@ -50,12 +51,13 @@ In plain terms: the lattice's vacuum, the filled sea of walkers, has negative en
 *Statement.*
 - (a) The walk's plane-wave block is traceless, with eigenvalues in `±` pairs. So the half-filled sea's energy per site is minus the zone average of the positive eigenvalues.
 - (b) On a uniformly stretched lattice:
-  - the massless sea has `−I/ℓ` per site, with `I = ⟨|s|⟩` and `s = (sin k_a)`; on the `4³` torus `I = (3 + √3 + 3√2)/8`;
+  - the massless sea has `−I/ℓ` per site, with `I = ⟨|s|⟩` and `s = (sin k_a)`; on the `4³` torus `I = (3 + √3 + 3√2)/8`; the average runs over the whole zone, including the eight corners where `s` vanishes, so all eight of the walk's light species (block 135) contribute;
   - with the staggered mass, the block on `(k, k + (π, π, π))` squares to `(μ² + s²/ℓ²)`, so the sea has `−⟨√(μ² + s²/ℓ²)⟩` per site.
 - (c) Per unit volume the sea's energy is `−I/ℓ⁴` or `−⟨√(μ² + s²/ℓ²)⟩/ℓ³`. Both change with `ℓ` at every length, so the sea never acts as a constant energy per unit volume.
 - (d) Under one record per site (block 78's compression), on `ℤ³` or an even torus, the many-walker hopping anticommutes with the product of the sublattice signs `(−1)^{x₁+x₂+x₃}` over occupied sites. So in every sector its spectrum is symmetric about zero, and the hard-core sea's energy is negative whenever the hopping acts at all.
+- (e) With block 146's pressure, `dm/dλ = −3pℓ³`, the massless sea has `p = ρ/3` exactly. With the staggered mass each mode has `p/ρ = y/(3(μ² + y))`, `y = s²/ℓ²`, so `0 ≤ p/ρ < 1/3`, and the massive sea has `0 < p/ρ < 1/3`. An energy that is constant per unit volume has `p = −ρ`. So neither sea acts as one.
 
-*Proof.* (a) and (b): runner B1. (c): runner E1. (d): each hop moves one walker by one step and flips exactly one sign, so every matrix element joins states of opposite total sign; the compression keeps this. Runner B2 checks it exactly for two walkers on the `4³` torus (8064 states). ∎
+*Proof.* (a) and (b): runner B1. (c): runner E1. (e): runner E2; every mode's energy has the same sign, so the sea's ratio lies between its modes' ratios. (d): each hop moves one walker by one step and flips exactly one sign, so every matrix element joins states of opposite total sign; the compression keeps this. Runner B2 checks it exactly for two walkers on the `4³` torus (8064 states). ∎
 
 ## Theorem T2 — if the member sees the sea
 
@@ -189,7 +191,11 @@ None beyond the supplied member, walk, sea and zero of energy.
 - **Who and when.** Supervisor-run block, the ninety-fifth since the source-link direction opened; 2026-09-25.
 - **Provenance.** The supervisor's own derivation (Claude Opus 5.5), with exact checks by its own runner. It is not refereed by another model family.
 - **Before writing.** The own prior-art check (memory, open PRs, probes attempts, main) found the sea's constant in #9198 and the books' zero in block 139, and no treatment of the sea in the zero mode.
-- **Independence.** Mutation census: six mutations in families B–E, each failing in its own family, and two in family F.
+- **After opening (a panel's report).** A three-lens panel (programme strategy, lattice field theory, gravitation theory; all three Claude Opus 5.5 subagents, the same model family as the supervisor, so not an independent check) made three points, now in the note.
+  - The sea's equation of state was left unstated. With a cutoff that stretches with the lattice, the sea's energy dilutes like negative top-speed content, not like a constant energy of empty space. T1(e) now states it (runner E2).
+  - Every sea quantity counts all eight light species. T1(b) now says so.
+  - T2 and T3 restate the question whether a gravitating field sees the vacuum's energy, in the lane's terms. It is a reading question, not a derivation target: which zero the member sees stays with the owner.
+- **Independence.** Mutation census: seven mutations in families B–E, each failing in its own family, and two in family F.
 
 ## Verification
 
@@ -197,4 +203,4 @@ None beyond the supplied member, walk, sea and zero of energy.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

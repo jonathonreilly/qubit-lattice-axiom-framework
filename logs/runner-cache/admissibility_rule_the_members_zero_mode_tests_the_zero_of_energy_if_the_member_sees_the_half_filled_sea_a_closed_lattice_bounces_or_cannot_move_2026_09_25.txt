@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py
-runner_sha256: 81b00feb62c90550fc7dca55ae5c3f3c547470afcbb5d8394510f17d72aae478
-input_fingerprint_sha256: 303d876adedffb86dba1be805d435be3f71b5a70d9ea4b999209261fcc8b4bba
+runner_sha256: 894bd99e5cabb40cc9c4f4bf020e94db11fec9b125687c21d62827e265dd6eb2
+input_fingerprint_sha256: c72dd962c234df7ed74dbc8e7d888498ee9cb703c911ccbc7dc560c6aae4fc13
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.77
+elapsed_sec: 1.63
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -18,18 +18,19 @@ PASS: C1 if the member sees the sea: with the sea alone the constraint 24 alpha 
 PASS: C2 the exact history from the bounce: t(l) = +-(sqrt(24 alpha)/m0^2)[(2/3)(m0 l - I)^(3/2) + 2 I (m0 l - I)^(1/2)]
 PASS: D1 each massive mode's sea energy sqrt(mu^2 + s^2/l^2) falls with l, from s/l at small l to mu at large l; so the net energy m0 - <sqrt(mu^2 + s^2/l^2)> rises with l to m0 - mu: the lattice reaches large lengths only if m0 > mu, turning once where the net energy vanishes, and has no uniform motion at all if m0 <= mu
 PASS: E1 per unit volume the sea's energy is -I/l^4 (massless) or -<sqrt(mu^2 + s^2/l^2)>/l^3 (massive); both change with l at every length, so on this lattice the sea never acts as a constant energy per unit volume
+PASS: E2 with block 146's pressure dm/dlam = -3 p l^3: the massless sea has p = rho/3 exactly; each massive mode has p/rho = y/(3(mu^2 + y)), y = s^2/l^2, so 0 <= p/rho < 1/3 and the massive sea has 0 < p/rho < 1/3; an energy constant per unit volume has p = -rho, so neither sea acts as one
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
 per_element: executed - the walk's spectrum about the books' zero; the massless sea's energy on the 4^3 torus
 per_site: executed - the stretched spectra, massless and with the staggered mass
-per_mode: executed - each massive mode's sea energy as the lattice stretches
+per_mode: executed - each massive mode's sea energy and pressure as the lattice stretches
 per_block: executed - the zero-mode constraint with the sea: no motion, the bounce and its exact history, the threshold m0 > mu
 lattice_wide: uniform content on a closed lattice; block 146's zero-mode constraint on block 60's homogeneous model
 PASS: G1 the five N5 resolution lines are printed
-scope: the half-filled sea has negative energy relative to the books zero; per unit volume it scales as -I/l^4 or -<sqrt(mu^2 + s^2/l^2)>/l^3, never constant; if the member sees it, a closed lattice with only the sea cannot move, with rest content m0 it bounces at l = I/m0 (massless sea) or needs m0 > mu (massive sea); if the member sees energy above the sea block 146 holds; supervisor derivation, unrefereed; nothing adopted
-TOTAL: PASS=13 FAIL=0
+scope: the half-filled sea has negative energy relative to the books zero; per unit volume it scales as -I/l^4 or -<sqrt(mu^2 + s^2/l^2)>/l^3, never constant, with p = rho/3 (massless) or 0 < p/rho < 1/3 (massive) where a constant energy per unit volume has p = -rho; if the member sees it, a closed lattice with only the sea cannot move, with rest content m0 it bounces at l = I/m0 (massless sea) or needs m0 > mu (massive sea); if the member sees energy above the sea block 146 holds; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

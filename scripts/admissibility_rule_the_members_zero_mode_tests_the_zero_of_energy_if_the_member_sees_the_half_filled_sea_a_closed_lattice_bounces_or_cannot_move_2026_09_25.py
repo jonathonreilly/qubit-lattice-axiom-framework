@@ -2,7 +2,8 @@
 """Exact checks: the member's zero mode tests the zero of energy - within block 146's zero-mode constraint (open) on block 60's
 homogeneous model, with blocks 139 and 101 as landed: the walk's spectrum is symmetric about the books' zero, so the half-filled
 sea has negative energy; on a uniformly stretched lattice it is -I/l per site for the massless walk (I = (3 + sqrt 3 + 3 sqrt 2)/8
-on the 4^3 torus) and -<sqrt(mu^2 + s^2/l^2)> with the staggered mass; per unit volume it never stays constant. If the member sees
+on the 4^3 torus) and -<sqrt(mu^2 + s^2/l^2)> with the staggered mass; per unit volume it never stays constant: with block 146's pressure
+the massless sea has p = rho/3 and the massive sea 0 < p/rho < 1/3, while an energy constant per unit volume has p = -rho. If the member sees
 the sea, a closed lattice holding only the sea has no uniform motion; with rest content m0 and the massless sea it turns at
 l = I/m0 (a bounce), with an exact history; with the massive sea it can reach large lengths only if m0 > mu. If the member sees
 energy above the sea, block 146 holds unchanged (the supervisor's own derivation; not adopted).
@@ -10,7 +11,7 @@ energy above the sea, block 146 holds unchanged (the supervisor's own derivation
 B (T1): the sea's energy: the spectrum's symmetry, the massless sum on a torus, the stretched spectra.
 C (T2): the member sees the sea: the sea alone; the massless sea with rest content (the turn and its history).
 D (T2): the massive sea with rest content: monotonic net energy; the threshold m0 > mu.
-E (T1): the sea per unit volume never stays constant.
+E (T1): the sea per unit volume never stays constant; its pressure against that of a constant energy per unit volume.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -44,6 +45,7 @@ MUTATION_GATE = {
     "bounce_history_forged": "C",
     "mass_threshold_forged": "D",
     "constant_density_forged": "E",
+    "sea_pressure_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -200,6 +202,21 @@ def family_e(checks: Checks) -> None:
     if forged:
         ok = ok and sp.diff(const, lam) != 0
     checks.check("E1", ok, "per unit volume the sea's energy is -I/l^4 (massless) or -<sqrt(mu^2 + s^2/l^2)>/l^3 (massive); both change with l at every length, so on this lattice the sea never acts as a constant energy per unit volume")
+    power = 2 if mut("sea_pressure_forged") else 1
+    m_sea = -I * sp.exp(-power * lam)
+    p_sea = -sp.diff(m_sea, lam) / (3 * sp.exp(3 * lam))       # block 146's pressure: dm/dlam = -3 p l^3
+    third = sp.simplify(p_sea - m_sea / sp.exp(3 * lam) / 3) == 0
+    rho0 = sp.Symbol("rho0", positive=True)
+    m_const = rho0 * sp.exp(3 * lam)
+    minus_one = sp.simplify(-sp.diff(m_const, lam) / (3 * sp.exp(3 * lam)) + rho0) == 0
+    sm = sp.Symbol("sm", positive=True)                         # |s| of one mode
+    y = sm ** 2 * sp.exp(-2 * lam)
+    m_mode = -sp.sqrt(mu ** 2 + y)
+    ratio = sp.simplify((-sp.diff(m_mode, lam) / (3 * sp.exp(3 * lam))) / (m_mode / sp.exp(3 * lam)))
+    ratio_ok = sp.simplify(ratio - y / (3 * (mu ** 2 + y))) == 0
+    gap_ok = sp.simplify(sp.Rational(1, 3) - ratio - mu ** 2 / (3 * (mu ** 2 + y))) == 0
+    checks.check("E2", third and minus_one and ratio_ok and gap_ok,
+                 "with block 146's pressure dm/dlam = -3 p l^3: the massless sea has p = rho/3 exactly; each massive mode has p/rho = y/(3(mu^2 + y)), y = s^2/l^2, so 0 <= p/rho < 1/3 and the massive sea has 0 < p/rho < 1/3; an energy constant per unit volume has p = -rho, so neither sea acts as one")
 
 
 # ============================================================================================ family F
@@ -254,7 +271,7 @@ def family_f(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed - the walk's spectrum about the books' zero; the massless sea's energy on the 4^3 torus",
     "per_site: executed - the stretched spectra, massless and with the staggered mass",
-    "per_mode: executed - each massive mode's sea energy as the lattice stretches",
+    "per_mode: executed - each massive mode's sea energy and pressure as the lattice stretches",
     "per_block: executed - the zero-mode constraint with the sea: no motion, the bounce and its exact history, the threshold m0 > mu",
     "lattice_wide: uniform content on a closed lattice; block 146's zero-mode constraint on block 60's homogeneous model",
 )
@@ -292,7 +309,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: the half-filled sea has negative energy relative to the books zero; per unit volume it scales as -I/l^4 or -<sqrt(mu^2 + s^2/l^2)>/l^3, never constant; if the member sees it, a closed lattice with only the sea cannot move, with rest content m0 it bounces at l = I/m0 (massless sea) or needs m0 > mu (massive sea); if the member sees energy above the sea block 146 holds; supervisor derivation, unrefereed; nothing adopted")
+    print("scope: the half-filled sea has negative energy relative to the books zero; per unit volume it scales as -I/l^4 or -<sqrt(mu^2 + s^2/l^2)>/l^3, never constant, with p = rho/3 (massless) or 0 < p/rho < 1/3 (massive) where a constant energy per unit volume has p = -rho; if the member sees it, a closed lattice with only the sea cannot move, with rest content m0 it bounces at l = I/m0 (massless sea) or needs m0 > mu (massive sea); if the member sees energy above the sea block 146 holds; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

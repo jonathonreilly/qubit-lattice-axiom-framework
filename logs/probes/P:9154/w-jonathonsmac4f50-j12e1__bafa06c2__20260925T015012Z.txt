@@ -1,0 +1,10 @@
+PR #9154: physics-loop: admissibility induced-law block 113 - the clocked walk's realizations: every one keeps the even shift, those keeping every shift form a torus, and none keeps the half-turn about the gradient
+branch physics-loop/admissibility-induced-law-block113-the-clocked-walks-realizations-a-torus-and-no-half-turn-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_clocked_walks_realizations_every_one_keeps_the_even_shift_those_keeping_every_shift_form_a_torus_none_the_half_turn_2026_09_24.py: rc=0 PASS=14 FAIL=0
+   mutation series_coefficient_forged: expected B observed B ok
+   mutation isotropic_vector_forged: expected C observed C ok
+   mutation half_turn_vector_taken_isotropic: expected D observed D ok
+   mutation pairing_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

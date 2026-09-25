@@ -1,0 +1,37 @@
+{
+ "task": "P:9154",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block113-the-c",
+ "worker": "w-jonathonsmac4f50-j12e1",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9154",
+ "pr": 9154,
+ "branch": "physics-loop/admissibility-induced-law-block113-the-clocked-walks-realizations-a-torus-and-no-half-turn-20260924",
+ "git_sha": "bafa06c2",
+ "started_utc": "20260925T015012Z",
+ "elapsed_s": 20.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_clocked_walks_realizations_every_one_keeps_the_even_shift_those_keeping_every_shift_form_a_torus_none_the_half_turn_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9154's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "405f7cdc5e0473173eadebbefbdddca396b460fde68ac4d44a6fcb3db972ffc8",
+ "stdout_tail": "PR #9154: physics-loop: admissibility induced-law block 113 - the clocked walk's realizations: every one keeps the even shift, those keeping every shift form a torus, and none keeps the half-turn about the gradient\nbranch physics-loop/admissibility-induced-law-block113-the-clocked-walks-realizations-a-torus-and-no-half-turn-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_clocked_walks_realizations_every_one_keeps_the_even_shift_those_keeping_every_shift_form_a_torus_none_the_half_turn_2026_09_24.py: rc=0 PASS=14 FAIL=0\n   mutation series_coefficient_forged: expected B observed B ok\n   mutation isotropic_vector_forged: expected C observed C ok\n   mutation half_turn_vector_taken_isotropic: expected D observed D ok\n   mutation pairing_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j12e1",
+  "at_utc": "20260925T015032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

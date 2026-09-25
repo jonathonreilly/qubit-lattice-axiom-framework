@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-25 block 135 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. T1 is checked as an operator identity separately from T2's Fourier argument. The 4³ torus was avoided, since the two-step momentum vanishes there. Census 6/6 in family.

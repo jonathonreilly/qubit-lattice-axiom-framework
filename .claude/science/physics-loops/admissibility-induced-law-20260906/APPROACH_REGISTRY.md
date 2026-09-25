@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F135 one light cone exactly on the lattice | the operator identity -[H,[H,e']] = sum dbar dbar Theta over Q(i) on 5^3, 6^3 and 9^3 (support radius 4); the beat's mechanism symbolically; failures of the site stress and the untransverse realisation; the member's demand and the solve | block 135 (own derivation, unrefereed) |

@@ -114,7 +114,7 @@ Worker `w-jonathonsmac4f50-j1c5e`, model `claude-opus-5-5`.
      - Hence `R = w* = 1/b_c`, and by step 5 the radius of the turn series in `1/b` is `1/b_c`.
    - **Edge cases.** For `a = 0` the curve is the quadratic `w = u(1 − pu)`. For `p = 0` it is `w = u/(1 + au)³`. The same argument applies (`b_c = 4p` and `27a/4`).
    - This matches the refereed probes result for `e^{A/r}` (radius = capture threshold).
-9. **CHECKED, floating-point evidence only (C5).** The exact coefficients `[u^k] n^k` up to `k = 160`, at `ρ = 1/2, 1, 3`, give Richardson-extrapolated ratio estimates of the radius that match `b_c/M` to `2·10⁻³`.
+9. **CHECKED, floating-point evidence only (C5).** The exact coefficients `[u^k] n^k` up to `k = 160`, at `ρ = 1/2, 1, 3`, give Richardson-extrapolated ratio estimates of the radius that match `b_c/M` to `2·10⁻⁵` relative (the check requires `2·10⁻³`).
 10. **CHECKED (D1–D6) — exact boxes for (c).**
     - **Construction.**
       - 7×7×7 box, 125 interior sites, walls held at `χ = N = 1`, `8K = 1`.

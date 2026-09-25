@@ -1,0 +1,35 @@
+PASS A1 direct expansion of the orbit integral to order (1/b)^5 for n = 1 + nu1/r + ... + nu5/r^5: the (1/b)^k coefficient is m_k [u^k] n(u)^k, k = 1..5: k=4: 3*pi*(nu1**4 + 12*nu1**2*nu2 + 12*nu1*nu3 + 6*nu2**2 + 4*nu4)/8  [66 s]
+PASS A2 orders 1-3 agree with block 110 T4's 2nu1, pi(nu2 + nu1^2/2), (4/3)(nu1^3 + 6nu1nu2 + 3nu3)  [66 s]
+PASS A3 m_k = 2, pi/2, 4/3, 3pi/8, 16/15, 5pi/16 for k = 1..6 (m_k = sqrt(pi) Gamma((k+1)/2)/Gamma(k/2+1))  [66 s]
+PASS A4 Lagrange-Buermann at the scope used, exactly to order 12 on five random rational indices and the member (a, p) = (2/7, 3/5): [w^k] log n(u(w)) = (1/k)[u^k] n(u)^k for u = w n(u)  [66 s]
+PASS A5 member: [u^k] ((1+au)^3/(1-pu))^k = sum_j C(3k,k-j) C(k+j-1,j) a^(k-j) p^j, k = 1..8  [66 s]
+PASS A6 the member's turn coefficients m_k [u^k] n^k equal block 110 T4's four listed coefficients  [66 s]
+PASS A7 at a = p = M/2 the series is 4, 15pi/4, 128/3, 3465pi/64, 3584/5, 255255pi/256 (M/b)^k, k = 1..6: [4, 15*pi/4, 128/3, 3465*pi/64, 3584/5, 255255*pi/256]  [66 s]
+PASS A8 for n = e^(kappa u) the formula gives block 110 T5's c_n = sqrt(pi) n^n Gamma((n+1)/2)/(n! Gamma(n/2+1)) kappa^n, n = 1..8  [66 s]
+PASS A9 at a fixed first-order turn (3a + p = 2M, p = rho a) the second-order term is 6pi(5 + 4rho + rho^2)/(3 + rho)^2 (M/b)^2  [66 s]
+PASS A10 (new) at a fixed first-order turn the third-order term is (64/3)(42 + 54rho + 27rho^2 + 5rho^3)/(3 + rho)^3 (M/b)^3: 896/27 at rho = 0, 128/3 at rho = 1: 64*(5*rho**3 + 27*rho**2 + 54*rho + 42)/(3*(rho + 3)**3)  [66 s]
+   B: Disc_u[(1+au)^3 - b u (1 - p u)] = -b**2*(27*a**4 - 4*a**3*b + 54*a**3*p - 6*a**2*b*p + 27*a**2*p**2 + 6*a*b*p**2 - b**2*p**2 + 4*b*p**3)
+PASS B1 block 110 T3's closed form b_c/M = 2(rho + s + 2)^3/((rho+3)(s+1)(rho+s+1)) is a root of the discriminant (reduced with s^2 = rho^2 + rho + 1)  [67 s]
+PASS B2 at b = b_c the cubic has the double root u* = 1/(a + p + sqrt(a^2 + ap + p^2)) (the circular ray), and 0 < u* < 1/p  [67 s]
+PASS B3 b_c/M = 9/2, 4 sqrt7 - 40/7, 3 sqrt3, (70 + 26 sqrt13)/27 at rho = 0, 1/2, 1, 3: {0: 9/2, 1/2: -40/7 + 4*sqrt(7), 1: 3*sqrt(3), 3: 70/27 + 26*sqrt(13)/27}  [67 s]
+PASS B4 b_c/M -> 8 as rho -> oo  [67 s]
+PASS B5 d(max_u w)/drho < 0 on a grid of 44 rho in [0, 1000] (evaluated from the exact expression): b_c rises with rho  [67 s]
+PASS C1 w(u) = u(1-pu)/(1+au)^3 = 1/(r n): w'(u) = (1 - 2(a+p)u + a p u^2)/(1 + a u)^4: (a*p*u**2 - 2*a*u - 2*p*u + 1)/(a*u + 1)**4  [67 s]
+PASS C2 the finite critical values of w are w* = 1/b_c (at u* in (0, 1/p)) and w- = w(1/(a+p-S)) < 0 with 1/(a+p-S) > 1/p (tested at 4 (a,p))  [67 s]
+PASS C3 on (-1/a, 0] the quadratic 1 - 2(a+p)u + apu^2 > 0 (all terms positive): the principal branch u(w) is increasing and analytic on (-oo, w*)  [67 s]
+PASS C4 d log n/du = (3a/(1+au) + p/(1-pu)) > 0 on [0, 1/p): log n(u(w)) has a square-root branch point at w*, not a removable one  [67 s]
+   C5 (floating-point evidence) ratio test on exact coefficients L_k = [u^k] n^k, radius estimate b by Richardson of L_{k+1}/L_k:
+      rho = 1/2: ratio at k = 160: 4.853490, Richardson 4.868628, b_c/M = 4.868720
+      rho = 1: ratio at k = 160: 5.179895, Richardson 5.196059, b_c/M = 5.196152
+      rho = 3: ratio at k = 160: 6.045635, Richardson 6.064491, b_c/M = 6.064605
+PASS C5 (evidence) the growth rate of the exact coefficients matches b_c/M to 2e-3 at rho = 1/2, 1, 3  [67 s]
+PASS D1 7x7x7 box (125 interior sites), sources 1/2, 1/3 on two neighbours, content bond energy 1/20, 8K = 1: site equations exact at all 125 sites, Q = sum e/(8Kw chi), P = sum (e+2tau)/(8K chi), P - Q = (1/8K) sum [2tau - e(1-w)/w]/chi, 8KQ = H + F and 4K(P+Q) = H_rest + 2 H_hop exactly: P = 0.748911, Q = 5/6, clocks 0.7763 0.8146, rest parts 0.4157 0.2755  [70 s]
+PASS D2 balanced content: bond energy B* = 11/12 digits (exact rational) gives P = Q = 5/6 exactly with positive rest parts; clocks 0.7657, 0.8033; F = H_hop (T2(e)) exactly: B* = 0.102379, rest parts 0.383437 0.245138  [78 s]
+PASS D3 T2(d) on D2: 0 <= tau <= e at both content sites and sum (e/chi)(1 - 3w)/w = -1.118565 <= 0  [78 s]
+PASS D4 sources 3, 3: clocks 0.0683, 0.0710 < 1/3 at P = Q, and balance forces rest parts -2.2257, -2.2121 < 0 (T2(d)'s bound, exact)  [85 s]
+PASS D5 content bond from an interior site next to a wall into the wall (B = 1/10): site equations and charge formulas exact, but 8KQ - (H + F) = -1/20 and 4K(P + Q) - (H_rest + 2H_hop) = -1/10, both nonzero: T2(e) needs content away from the walls  [88 s]
+PASS D6 a single body at rest (tau = 0): P = w0 Q exactly (block 60), P = 0.406849, Q = 1/2, w0 = 0.813699  [90 s]
+
+TOTAL: PASS=26 FAIL=0 (90 s)
+HIT: the turn of block 110's curvature-member exterior at every order in closed form, chi(b) = sum_k m_k [u^k] n(u)^k b^-k with m_k = sqrt(pi) Gamma((k+1)/2)/Gamma(k/2+1), for the member sum_j C(3k,k-j) C(k+j-1,j) a^(k-j) p^j (Lagrange inversion of w = u/n(u); block 110's T4 orders 1-4 and T5 reproduced), and the series in 1/b has radius exactly 1/b_c, the capture threshold, for every charge ratio
+SUMMARY: PARTIAL all-orders turn formula (orbit integral expanded directly, Lagrange inversion), T3 re-derived by the discriminant, radius of the turn series = capture threshold at every rho, T2(a)-(e) and the wall hypothesis checked on exact 7^3 boxes (balanced, too-compact, wall)

@@ -1,0 +1,10 @@
+PR #9201: physics-loop: admissibility induced-law block 139 - the books admit one rest energy: the staggered mass keeps them exactly, so massive content meets the member iff alpha = K/4
+branch physics-loop/admissibility-induced-law-block139-the-books-admit-one-rest-energy-the-staggered-mass-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_books_admit_one_rest_energy_the_staggered_mass_keeps_them_exactly_so_massive_content_meets_the_member_iff_alpha_equals_k_over_four_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation coin_mass_in_place: expected B observed B ok
+   mutation offset_admitted_forged: expected C observed C ok
+   mutation coin_mass_current_forged: expected D observed D ok
+   mutation light_cone_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

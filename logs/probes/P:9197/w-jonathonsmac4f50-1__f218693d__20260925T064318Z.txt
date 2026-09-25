@@ -1,0 +1,10 @@
+PR #9197: physics-loop: admissibility induced-law block 137 - one record per site keeps the books only at leading order: two excluded records lose their energy current in two and three dimensions
+branch physics-loop/admissibility-induced-law-block137-one-record-per-site-keeps-the-books-only-at-leading-order-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_record_per_site_keeps_the_books_only_at_leading_order_two_excluded_records_lose_their_energy_current_in_two_and_three_dimensions_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation exclusion_dropped: expected B observed B ok
+   mutation line_excluded_forged: expected C observed C ok
+   mutation first_moment_forged: expected D observed D ok
+   mutation cubic_order_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

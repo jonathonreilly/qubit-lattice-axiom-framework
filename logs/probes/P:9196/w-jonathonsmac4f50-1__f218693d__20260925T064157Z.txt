@@ -1,0 +1,10 @@
+PR #9196: physics-loop: admissibility induced-law block 136 - the two-step content keeps symmetric books where the member keeps its fields, and a bond shift keeps every constraint iff alpha = K/4
+branch physics-loop/admissibility-induced-law-block136-two-step-content-keeps-symmetric-books-bond-shift-keeps-every-constraint-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_two_step_content_keeps_symmetric_books_where_the_member_keeps_its_fields_and_a_bond_shift_keeps_every_constraint_iff_alpha_equals_k_over_four_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation energy_current_halved: expected B observed B ok
+   mutation symmetrized_momentum_dropped: expected C observed C ok
+   mutation control_passes_forged: expected D observed D ok
+   mutation light_cone_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

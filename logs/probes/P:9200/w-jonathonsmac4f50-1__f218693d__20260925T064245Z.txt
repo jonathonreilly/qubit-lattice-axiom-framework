@@ -1,0 +1,10 @@
+PR #9200: physics-loop: admissibility induced-law block 138 - the coins spin enters the source link through its curl: the symmetric momentum is the two-step momentum plus half the curl of the spin
+branch physics-loop/admissibility-induced-law-block138-the-coins-spin-enters-the-source-link-through-its-curl-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation one_diagonal_only: expected B observed B ok
+   mutation belinfante_factor_forged: expected C observed C ok
+   mutation torque_sign_forged: expected D observed D ok
+   mutation spin_identity_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

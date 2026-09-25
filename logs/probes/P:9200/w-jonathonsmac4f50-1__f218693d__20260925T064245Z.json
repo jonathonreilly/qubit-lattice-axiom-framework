@@ -1,0 +1,37 @@
+{
+ "task": "P:9200",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block138-the-c",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9200",
+ "pr": 9200,
+ "branch": "physics-loop/admissibility-induced-law-block138-the-coins-spin-enters-the-source-link-through-its-curl-20260925",
+ "git_sha": "f218693d",
+ "started_utc": "20260925T064245Z",
+ "elapsed_s": 17.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "071fa38b6b24d3c5cd31559227f4c6e7aab9c913d316d402e92f8333b886e5cf",
+ "stdout_tail": "PR #9200: physics-loop: admissibility induced-law block 138 - the coins spin enters the source link through its curl: the symmetric momentum is the two-step momentum plus half the curl of the spin\nbranch physics-loop/admissibility-induced-law-block138-the-coins-spin-enters-the-source-link-through-its-curl-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_2026_09_25.py: rc=0 PASS=11 FAIL=0\n   mutation one_diagonal_only: expected B observed B ok\n   mutation belinfante_factor_forged: expected C observed C ok\n   mutation torque_sign_forged: expected D observed D ok\n   mutation spin_identity_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T064303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

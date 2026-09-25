@@ -728,3 +728,90 @@ What this changes in addendum 34's table:
 - **Relabellings in time.** Does "No site is privileged" cover relabellings in time? If yes, the shift is a relabelling variable. If no, the member carries drifting twists that push moving bodies sideways.
 - **Instantaneous bindings.** Answered as a finding. A binding without velocity terms never gives a bound pair weight one. The member's pull does, and its bound pairs also fall with their energy (blocks 144 and 145).
 - **The zero of energy.** Which zero of energy does the member see in a many-walker state? Seeing the sea's energy makes a closed lattice with little content bounce, or leaves it unable to move. Seeing only energy above the sea changes nothing else. The sea's radiation-like pressure picks out the lattice's frame, which favours the second reading; no landed clause forces it.
+
+## Fortieth addendum (2026-09-25 night): a panel on what follows the first-order member programme; corrections to blocks 146–149; pacing and the next programme, pre-registered
+
+Nothing is adopted. The panel was convened at a direction-setting juncture, per the owner's standing directive. Three lenses reviewed a dossier of blocks 144–149 and six candidate programmes:
+- **A**, the nonlinear completion;
+- **B**, the placements;
+- **C**, records and the member;
+- **D**, lattice-scale predictions;
+- **E**, a pause;
+- **F**, the panel's own proposal.
+
+The lenses were programme strategy with a rigour hawk, lattice field theory, and gravitation theory. **Provenance:** all three panelists were Claude Opus 5.5 subagents. A first strategy panelist on Fable stopped at its usage limit and was rerun on Opus. The panel is the supervisor's own model family, so its agreement with the supervisor is not an independent check.
+
+**1. What all three found (corrections, now in the open PRs).**
+- **Block 149 covers only transitions within one band.** The member's frequency is exactly a symmetric pair's energy, `|p(q)| = 2|s(q/2)|`. So pair creation out of the filled sea is kinematically open whenever `Σ_a cos q_a > 0`, and closed for `|p(q)| < 2μ`. T5 now states this (5aacd93e4b), and the rate is not computed. The gravitation panelist suggested that a mass restores strictness; that holds only for `|p(q)| < 2μ`.
+- **Block 146's `α = K/4` is the same condition met again, not a second route.** At `β = −α`, `α/K` is the member's only free kinetic ratio, so every comparison of a kinetic effect with the static pull tests that one number. Count it once.
+- **Blocks 146 and 148 assumed a direction of time.** The equations are even under reversing time. Block 146 shows that there is no static state, not that the lattice expands. Block 148 shows that with content the stretch is alike wherever the lattice is large, not "late". Both runners now check the time mirrors.
+- **Block 147 is the vacuum-energy question in the lane's terms.** It is a reading question, not a derivation target. Its unstated point is now T1(e): with block 146's pressure, the massless sea has `p = ρ/3` and the massive sea `0 < p/ρ < 1/3`, while an energy constant per unit volume has `p = −ρ`. Every sea quantity counts all eight light species.
+- **Blocks 144–148 recover the comparator's known results.** These are the quadratic lapse-and-shift action, the first-order many-body Hamiltonian, the weight of binding energy, and the uniform and uneven stretch laws. Matching them checks the lane's bookkeeping, not the lattice. What is lattice-specific: exactness from the books (134–136), block 143, and block 149.
+- **Block 145's "clusters of any size"** is already scoped on main (25b8c1874f): any fixed finite cluster, term by term, and no uniform large-cluster limit.
+- **The independent checks of block 144 come from the same family.** #9238 and, since the panel, #9245 are same-family re-derivations by other routes. They are not referee checks. #9245 does not re-derive T3.
+
+**2. Where the panelists differ: the first step.**
+- **Strategy: A0, a gate on the lapse placement.** Does some cubic-symmetric, range-1 placement of the lapse on the kinetic term make the member's constraints close at first order? The test is `{C_P[u₁], C_P[u₂]} = C_j[ξ_j(u₁, u₂)] + O(fields²)`, an exact identity over the rationals, run with and without the shift. As a control, with `β` left free the runner must return `β = −α`. The panelist's prior is 0.6 that A0 passes. (Block 112, landed, already answers it; see section 4.)
+- **Gravitation: a gate on block 143, then A1.**
+  - The gate asks whether block 143's defect survives at zero momentum. If the coarse-grained energy of records under one record per site is not conserved, records cannot be an exact source, and C goes first. If the defect is a divergence up to order `q²`, A stays first.
+  - A1 is the cubic question. Find all local cubic vertices and first-order deformations of the member's lattice gauge symmetry, range ≤ 1, as exact polynomial identities. Is the continuum part one-dimensional, equal to the comparator's, and tied to the walker's coupling?
+- **Lattice field theory: F0, the sea's kinetic tensor, then A.**
+  - The sea's adiabatic inertia for a slow uniform stretch is positive by construction, and it vanishes for dilation at `μ = 0`. The member's kinetic form is indefinite: the trace direction is negative at `β = −α`. So no positive response of the sea can supply it.
+  - If the member sees the sea's response, the sea's inertia shifts the member's kinetic ratios. It also adds a third, cubic-only kinetic term. Both effects are of relative order `G/a²`.
+  - The panelist's numbers for these are floating-point estimates, not checked: `β/α ≈ −0.47`, and the cubic-only term `≈ +0.39 α`.
+
+**3. Pacing (the supervisor's execution rule, from the strategy panelist).**
+- At most three unrefereed block PRs open at once. Four are open now (146–149), so no new block PR opens until some land or are refereed. Corrections to open PRs continue.
+- Nothing builds on an unrefereed root.
+- A result with less than about a one-in-ten prior of failing goes into a consolidating note as a lemma, not into its own PR.
+- Each block states its priors and decision table before it runs.
+
+**4. The next programme, pre-registered.** This is programme A, with stops. Work proceeds in scratch until the pacing rule allows a PR.
+- **G: does the records' defect survive at zero momentum? Answered by landed block 137, so no new block.**
+  - In T1 (exact witnesses), two records under one record per site keep their total energy but not their total energy current, in two and three dimensions. So the defect vanishes at zero momentum for energy and survives at zero momentum for momentum, the current the member's identity needs kept (137 T3).
+  - For slow records the change is cubic in their offsets, but only in conditional channel kinematics (137 T4).
+  - Under the gravitation panelist's rule, C would go first. But C's next step needs an owner reading: the records' exclusion, and whether the member's source is the walkers' books or the records'. So this goes to the owner as a finding.
+  - Programme A continues in scratch. A0 is answered (next bullet); A0′ and A1 concern the member with free walkers, whose books are exact.
+- **A0: already answered by landed block 112.** Block 112 is a harvest of three probe attempts refereed by another model family, with its own runner. It turned up in the own prior-art check after the panel; the dossier and all three panelists missed it.
+  - At flat strain, for the term linear in canonical momentum, the bracket of two lapse constraints equals the strains' relabelling generator, with `ξ_j = (K/(4α))(N_{x+e_j}M_x − N_xM_{x+e_j})`.
+  - This holds exactly, for every pair of lapses, if and only if `β = −α` and the face timing is symmetric: the four-corner mean or either opposite-corner mean. These three give the same bracket; one-corner timing fails.
+  - Under A0's table, several placements pass but coincide at this order. So the work continues to A1, where the placements can first differ.
+- **A consequence for the shift.** This is the supervisor's one-line consequence of block 112; it is unrefereed and goes to a consolidating note.
+  - Delta lapses on the two ends of a bond give that bond alone, so the relabellings `ξ(M, N)` span every bond field.
+  - Suppose every clock profile is a relabelling in time. Block 112 T2 finds this at linear order for the member's action at `β = −α`. Then keeping the clock constraints for every profile forces the whole momentum constraint, transverse part included, and block 144 T5's drifting twists are not consistent.
+  - If only a uniform clock profile is allowed, `ξ(M, 1)` is a gradient, and only the lattice divergence of the momentum constraint is forced. The twists then survive, but the allowed clock profiles depend on the state.
+- **A0′ (next, in scratch): the walker's side of block 112's algebra.** Does the walk with a lapse on each bond close on block 112's relabellings, paired with the books' placement of the two-step momentum?
+  - The supervisor's priors, set before running: below one in ten for exact closure at every lapse; closure is expected at first order in the lapse's departures from uniform, with `α = K/4` met again as the matching of normalizations (count it once).
+  - A negative will go to a consolidating note, not a block.
+- **A1 (up to three blocks): the cubic question above.**
+  - Continue if the continuum part is one-dimensional, equals the comparator's vertex, and is tied to the walker's coupling.
+  - Flag a departure if it has dimension two or more, or is not tied.
+  - Stop, and record the obstruction and its order in the spacing, if nothing closes at range ≤ 2.
+  - The panel's shared expectation is an obstruction. On other lattices, discretized gravity has broken diffeomorphism symmetry; see the literature.
+- **F0's sign lemma** (the sea's inertia is positive, the member's form indefinite) will go into a consolidating note if it is proved exactly. It will not be a block.
+
+**5. The owner's reading questions, sharpened.** These are findings, not proposals.
+- **The zero of energy is now one question: does the member see the sea's response at all?** The response means both the sea's energy (block 147) and its inertia (the lattice panelist).
+  - If yes, the sea's negative energy makes a closed lattice bounce, and its positive inertia shifts the member's kinetic ratios.
+  - If the member's source is books net of the sea's response, neither enters.
+  - **The clocks' algebra constrains the answer.** This is the supervisor's lemma, from exact checks in scratch; it is unrefereed and goes to a consolidating note.
+    - Block 112's closure needs the kinetic form on the line `γ = 0`, `β = −α`. A cubic-only term `γΣḣ_ii²` puts the bracket outside the relabellings' span for every `c`: on the `3³` torus the rank goes from 78 to 80, for three values of `γ`.
+    - On uniform strains that line takes the values `(−6, 2, 2)α` on the dilation, E and T strains, so it is indefinite.
+    - The sea's adiabatic inertia is positive semidefinite and nonzero. Its T part is `(1/16)⟨[(s₁² − s₂²)² + (s₁² + s₂²)s₃²]/|s|⁵⟩ > 0`.
+    - So adding the sea's inertia to the landed member takes it off the closing line. The member cannot see the sea's response on top of its landed numbers and keep its clocks' algebra. The consistent readings: either the landed numbers already include the sea's response, or the member does not see it.
+    - At `μ = 0` the sea's inertia has no dilation part, and its own ratio is `β/α = −μ_E/(3μ_T)`. That ratio lies strictly between −1 and 0, because `s₁²s₂² ≤ (s₁⁴ + s₂⁴)/2`.
+- **Relabellings in time, sharpened by block 112 (section 4).** Is every clock profile a relabelling in time?
+  - If yes, the whole momentum constraint is forced and the drifting twists go.
+  - If only uniform profiles are, the twists survive with clock profiles that depend on the state.
+- **Records one per (site, coin).** Lattice-gas automata keep exact local mass and momentum books under per-channel exclusion. But their energy is their particle count. With the walk's dispersion, addendum 30's costs table (block 143) covers one and two records per site: exact books need records that never scatter or bind.
+
+**6. Addendum 39's table, corrected.**
+- **`α = K/4`:** "a necessary condition at linear order (the books), met again in the zero mode; count it once".
+- **The two cones:** "within one band a free walker never emits or absorbs a single disturbance; pair creation out of the filled sea is kinematically open".
+- **The lattice as a whole:** "a closed lattice with content has no static state; with content the stretch is alike wherever the lattice is large; the equations fix no direction of time".
+
+**7. Probes since addendum 39.** Both are unrefereed, and both need a referee of another family.
+- **#9245:** block 144 T1, T2, T4 and T5 confirmed by routes independent of its runner. This is the same family; T3 is not re-derived.
+- **#9246:** block 143's assumption (A′) certified in exact rational interval arithmetic at two further `K₀`, on `ℤ²` and `ℤ³`. Also the same family.
+
+The other-family referees have been idle since 2026-09-24 21:40Z. Dispatching them is outside this session.

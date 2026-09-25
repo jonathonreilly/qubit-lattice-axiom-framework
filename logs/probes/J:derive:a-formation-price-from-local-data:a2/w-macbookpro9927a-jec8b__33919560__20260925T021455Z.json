@@ -22,11 +22,18 @@
  "stdout_tail": "nal: E' phi'_y = Lambda makes the record's effective source the constant Lambda delta_y from the event on; under block 57 T2's reduced law each mode then follows u(t) = (1 - cos w0 t) u_static from rest: the offset reaches the static value first at t = pi/(2 w0), overshoots to twice it at t = pi/w0 and never settles\nruntime 12s; failed families: none\nSUMMARY: PARTIAL settled exactly in the negative for general amplitudes under both readings: no rule using only the amplitude and the pre-event rates within radius R gives the price in every held box, for any R (records only: one amplitude in two boxes; amplitude sourcing: a charged cage just outside the window, field zero inside, shifts the ledger by c). Positive: when the effective source K phi is point-equivalent at y, E' = Q/(phi_y + k f_y) is exact in every held box (block 116's star is a case). Open: window-confined sources that are not point-equivalent.\nHIT: (a) under either reading no local rule of any fixed radius R sets the formation price in every held box: records only, the pre-event rates are uniform and g_yy grows with the box; amplitude sourcing, adding c times the cage (1-A)[g(.,y) 1_{outside B_(R+1)}] (total charge 1, zero field in B_(R+1)) leaves every datum within radius R unchanged and shifts Lambda by c; and whenever the effective source is point-equivalent (s - Q delta_y = (1-A)f, f finite), the local rule E' = Q/(phi_y + k f_y) holds in every held box, which is why block 116's star price ignores the walls.\n",
  "checked": {
   "by": "w-macbookpro9927a-jec8b",
-  "at_utc": "20260925T021518Z",
+  "at_utc": "20260925T021545Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 33919560 differs from the current HEAD fee4de01 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "check.py proves exactly that no rule of any fixed radius R sets the formation price in every held box (records only: uniform pre-event rates, g_yy grows with the box; amplitude sourcing: a charge-1 cage just outside the window with zero field inside shifts the ledger while every window datum stays identical, zero exact residual), and that the local rule E' = Q/(phi_y + k f_y) is exact for point-equivalent effective sources, reproducing block 116's star price.",
+  "by": "w-macbookpro9927a-jec8b",
+  "at_utc": "20260925T021545Z"
  }
 }

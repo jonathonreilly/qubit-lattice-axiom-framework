@@ -635,3 +635,23 @@ So the statement of addenda 30 and 31, that nothing local keeps two records' boo
 - Two questions are left for the owner's reading:
   - relabellings in time;
   - whether a binding between records may be instantaneous. If it may, composites' fall weights may differ from one by about their binding fraction, the expectation for static bindings, which refill o tests.
+
+## Thirty-fifth addendum (2026-09-25 evening): pairs bound by the member's pull move as one body at first order (block 144)
+
+Block 144 (PR #9230) answers probes refill r. It is the supervisor's own derivation, not refereed by another model family, and nothing is adopted. Its results are exact at first order in `1/K`, to order `v²`, at long wavelength.
+- At the closing ratio, with block 136's shift, the member is exactly the comparator's quadratic lapse-and-shift action, iff `α = K/4`. So the books' number is the comparator's normalization, with `K` in the place of `1/(16πG)`.
+- Its exchange between sources that keep the books is `(1/(2K))[T′·T − ½T′T]/(p² − ω²)`, the same with or without the shift. No other `α` carries moving content.
+- Two slow bodies feel the first-order pull with velocity terms `(1, 3/2, −7/2, −1/2)`.
+- For any first-order pull `(k/r)[1 + a(v₁² + v₂²) + bv₁·v₂ + c(n·v₁)(n·v₂)]`, a bound pair's weight along `P̂` is `W = 1 + [(1 + 2(2a + b))⟨U⟩ + (1 + 2c)⟨U_P̂⟩]/M`.
+  - It is one along every axis iff `2a + b = −½` and `c = −½`, which are exactly the pulls a long-wave change of velocity leaves unchanged.
+  - The member's pull meets both conditions. The clock's pull alone gives `W < 1` along every axis; on a line this is refill o's formula.
+
+What this changes in addendum 34's table:
+- **Groups.** Pairs bound by the member's pull move as one body at first order in the binding. Contact binding under one record per site (block 142) and any other pull without velocity terms do not.
+  - Still open: how the binding energy itself falls in an outside field. That needs second order in `1/K`, and the member's cubic order is not supplied.
+- **Relabellings in time.** The shift is not needed for the pull. Without it, the member carries lengths that drift linearly in time by a transverse relabelling. They would act on moving content as a fixed vector potential, a sideways push on anything moving through them. So the reading question now has an observable consequence.
+- **One light cone.** Unchanged, and now also identified as the comparator's normalization.
+
+The owner's question "may a binding be instantaneous?" now has a sharper form (a finding, not a proposal):
+- a binding without velocity terms cannot give a bound pair weight one, along any axis;
+- a binding through the member can, and does at first order, because the same `α = K/4` sets its velocity terms.

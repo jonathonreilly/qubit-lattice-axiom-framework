@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_gauge_full_slice_su3_product_fubini_factorization_2026_06_06.py",
+ "seed": 57795,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173635Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7da1ecf6b92d90eed3703504565e07e928d2cd36f771346d370bffcf00ca9f29",
+ "stdout_tail": "\n  marked_scalar  -> fixed ['U_left', 'W_marked']\n  rim_left       -> rim   ['U_left', 'W_marked', 'r0', 'r1']\n  rim_right      -> rim   ['U_right', 'W_marked', 'r2', 'r3']\n  far_bulk_a     -> far   ['U_left', 'f0', 'f1']\n  far_bulk_b     -> far   ['U_right', 'f2', 'f3', 'f4']\n\n[PASS] companion note exists\n[PASS] parent rim-lift note exists\n[PASS] rim and far variables are disjoint\n[PASS] all moving variables are uniquely named\n[PASS] every plaquette is classified as fixed/rim/far\n[PASS] no plaquette mixes rim and far variables\n[PASS] at least one rim plaquette is present\n[PASS] at least one far plaquette is present\n[PASS] explicit variables are SU(3) matrices: Re Tr(gh)=-0.417807\n[PASS] Wilson Re Tr term is bounded on SU(3)\n[PASS] finite product-measure identity holds exactly\n[PASS] class projection pulls out W-independent far scalar\n[PASS] companion note contains boundary phrase: G = SU(3)\n[PASS] companion note contains boundary phrase: Xi = Xi^rim sqcup Xi^far\n[PASS] companion note contains boundary phrase: no plaquette contains both a rim variable and a far variable\n[PASS] companion note contains boundary phrase: Fubini/Tonelli applies directly\n[PASS] companion note contains boundary phrase: not a separate proof of the temporal-gauge mixed-kernel compression\n[PASS] companion note contains boundary phrase: does not apply an audit verdict\n[PASS] parent note now points to SU(3) product-Fubini companion\n[PASS] companion note states no audit-data edit\n\nSUMMARY: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

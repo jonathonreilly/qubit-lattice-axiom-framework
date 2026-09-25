@@ -1,0 +1,48 @@
+Route-2 physical color-ray source primitive current-bank no-go
+Scope: no current-source derivation; conditional ray consequence only
+
+PART 1: supplied physical color ray gives the target line
+PASS: H_psi is traceless
+PASS: H_psi is nonzero in adjoint coordinates
+PASS: selected adjoint line projector has rank 1 and trace 1
+PASS: adjoint complement has rank 7 -- rank=7
+PASS: complement fraction is exactly 7/8
+PASS: Route-2 endpoint arithmetic gives rho_E=21/4 and c_TE=-8/9
+
+PART 2: invariant/scalar current-bank data cannot select an adjoint line
+PASS: Gell-Mann basis has Tr(T_a T_b)=delta_ab/2
+PASS: commutant of the fundamental SU(3) generators is one-dimensional -- dim=1
+PASS: ad-invariant traceless subspace is zero-dimensional
+PASS: scalar/depolarized density has zero traceless adjoint vector
+PASS: a color-ray line is gauge-covariant, not gauge-invariant
+
+PART 3: Fierz channel count supplies an 8-block, not one line inside it
+PASS: 3 x 3bar channel dimensions split as 1+8=9
+PASS: F_adj is exactly 8/9 at N_c=3
+PASS: isotropic adjoint block has rank 8, not rank 1
+PASS: isotropic adjoint block has no distinguished eigenline -- multiplicity 8
+
+PART 4: current-bank typed reachability
+PASS: current bank has no path to a physical color-ray source line
+PASS: current bank has no path to a Route-2 adjoint line selector
+PASS: current bank has no path to rho_E=21/4 through this route
+PASS: a supplied physical color ray reaches rho_E=21/4 conditionally
+PASS: adding exactly the missing primitive makes the target reachable
+
+PART 5: current source-bank quote anchors
+PASS: quote anchors present: color orientation retired -- all anchors found
+PASS: quote anchors present: depolarization kills traceless mean -- all anchors found
+PASS: quote anchors present: Fierz support is channel algebra -- all anchors found
+PASS: quote anchors present: Rconn/readout selector open gate -- all anchors found
+PASS: quote anchors present: Z3 color/generation bridge open -- all anchors found
+PASS: quote anchors present: Route-2 E-center primitive remains open -- all anchors found
+
+PART 6: N5 execution certificate
+per_element: the finest resolution actually performed is basis-entry level -- all 64 Gell-Mann pairings Tr(T_a T_b) are evaluated and matched against delta_ab/2 within the named tolerance 1e-10, which is what licenses reading adjoint coordinates entrywise; no individual matrix entry, norm or singular value is quoted in this certificate, since those are floating-point decomposition outputs.
+per_site: checked and not executed -- everything in this file lives on the fixed internal color factor C^3 and its adjoint, where the indices are color labels and not lattice sites; there is no star, no arm and no spatial coordinate anywhere in the runner, so no site-resolved quantity exists for it to evaluate.
+per_mode: genuinely resolved on the color channel content -- the 3 x 3bar product splits as 1 + 8 = 9, the adjoint fraction is exactly F_adj = 8/9, and the isotropic adjoint block is confirmed to have rank 8 with a spectrum flat to within 1e-10, so no single mode inside the adjoint is distinguished; that flatness is exactly why a channel count cannot stand in for a ray.
+per_block: the blocks here are the adjoint decomposition and the typed reachability graph -- a supplied ray's line projector has rank 1 against a complement of rank 7 inside the 8-dimensional adjoint, giving the exact fraction 7/8, while the graph side sweeps 8 current-bank edges, 6 conditional ray edges and one bridging primitive edge; the ranks are computed at a 1e-09 threshold and the edge counts are inventory rather than amplitude.
+lattice_wide: checked and not executed -- the ad-invariant traceless subspace is found to be zero-dimensional, so there is not even a global invariant direction inside the internal factor to certify, and past that the file carries no lattice, no volume and no limit; what it does assert is current-bank reachability, which is by construction a claim about the present source bank and not about all possible sources.
+
+PASS=26 FAIL=0 TOTAL=26
+VERDICT: current source bank does not supply a physical color-ray source primitive; adding such a primitive would conditionally reach rho_E=21/4 through the adjoint-line complement route.

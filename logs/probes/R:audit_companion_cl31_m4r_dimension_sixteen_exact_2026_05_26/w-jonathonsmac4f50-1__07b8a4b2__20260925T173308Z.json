@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cl31_m4r_dimension_sixteen_exact_2026_05_26.py",
+ "seed": 57588,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173308Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f1dbe011ff9cf8e85a21010bdf3fe95e611c2131492130c3ebf146951e6cacc5",
+ "stdout_tail": " 16  (upstream narrow theorem)\n  [PASS (A)] (C2-bridge) dim_R Cl(3, 1) at signature (3, 1) is 16  (present narrow theorem)\n  [PASS (A)] (C2-bridge) both integers equal 16 (arithmetic match at n = 4)  (16 = 16 from independent surfaces)\n\n----------------------------------------------------------------------------------------\nPart 15: (C3-sanity) Volume element \u03c9 = \u0393_1 \u0393_2 \u0393_3 \u0393_4 properties\n----------------------------------------------------------------------------------------\n  [PASS (A)] (C3-sanity) \u03c9 = \u0393_1 \u0393_2 \u0393_3 \u0393_4 is a real 4x4 matrix  (real matrix)\n  [PASS (A)] (C3-sanity) \u03c9^2 = -I_4 in signature (3, 1)  ((-1)^{n(n-1)/2 + q} = (-1)^{6+1} = -1)\n  [PASS (A)] (C3-sanity) {\u03c9, \u0393_1} = 0 (volume element anticommutes at n even)  (parity rule for even n)\n  [PASS (A)] (C3-sanity) {\u03c9, \u0393_2} = 0 (volume element anticommutes at n even)  (parity rule for even n)\n  [PASS (A)] (C3-sanity) {\u03c9, \u0393_3} = 0 (volume element anticommutes at n even)  (parity rule for even n)\n  [PASS (A)] (C3-sanity) {\u03c9, \u0393_4} = 0 (volume element anticommutes at n even)  (parity rule for even n)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 100\n  FAIL = 0\n\n  Note path: CL31_M4R_DIMENSION_SIXTEEN_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  cl31_m4r_dimension_sixteen_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173308Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "task": "R:audit_companion_g_bare_two_ward_h_unit_residue_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_g_bare_two_ward_h_unit_residue_dep_resolution_2026_06_04.py",
+ "seed": 57794,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173634Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=67 FAIL=0",
+   "PASS=67 FAIL=0",
+   "PASS=67 FAIL=0",
+   "PASS=67 FAIL=0' second_TOTAL='TOTAL: PASS=67 FAIL=0",
+   "PASS=78 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fe7ed5c048bd231c0ae1b36c7863dd77f30ea8e4ce901fa3ae9015042aa56e7b",
+ "stdout_tail": "iom or import' :: present=True\n  PASS companion_note_contains 'claim_type = meta' :: present=True\n  PASS companion_note_contains 'no parent edits' :: present=True\n  PASS companion_note_contains 'no dep edits' :: present=True\n  PASS companion_note_excludes 'we hereby promote' :: present=False\n  PASS companion_note_excludes 'this companion sets effective_status' :: present=False\n  PASS companion_note_excludes 'this companion declares the parent retained' :: present=False\n  PASS companion_note_excludes 'this companion overrides independent audit handl' :: present=False\n\n========================================================================\nBLOCK 8: no-edit gates against origin/main\n========================================================================\n  PASS parent_note_origin_main_fetched :: main_bytes=11469\n  PASS parent_note_byte_identical_to_origin_main :: local_bytes=11469 main_bytes=11469\n  PASS parent_runner_origin_main_fetched :: main_bytes=22514\n  PASS parent_runner_byte_identical_to_origin_main :: local_bytes=22514 main_bytes=22514\n  PASS dep_note_origin_main_fetched :: main_bytes=16694\n  PASS dep_note_byte_identical_to_origin_main :: local_bytes=16694 main_bytes=16694\n  PASS W1_note_origin_main_fetched :: main_bytes=3485\n  PASS W1_note_byte_identical_to_origin_main :: local_bytes=3485 main_bytes=3485\n\n========================================================================\nSUMMARY: PASS=78 FAIL=0\nFINAL_TAG: G_BARE_TWO_WARD_H_UNIT_RESIDUE_DEP_RESOLUTION_HYGIENE_OK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_g_bare_two_ward_h_unit_residue_dep_resolution_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

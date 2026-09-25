@@ -1,0 +1,12 @@
+PR #9233: physics-loop: admissibility induced-law block 145 - binding energy falls with its weight only in the curvature member: pull-bound pairs fall like one body at first order
+branch physics-loop/admissibility-induced-law-block145-binding-energy-falls-with-its-weight-only-in-the-curvature-member-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py: rc=0 PASS=18 FAIL=0
+   mutation static_second_order_forged: expected B observed B ok
+   mutation stretched_bond_coupling_dropped: expected C observed C ok
+   mutation field_momentum_trace_kept: expected C observed C ok
+   mutation outside_static_cross_term_dropped: expected D observed D ok
+   mutation scalar_virial_forged: expected D observed D ok
+   mutation inertia_delay_term_dropped: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

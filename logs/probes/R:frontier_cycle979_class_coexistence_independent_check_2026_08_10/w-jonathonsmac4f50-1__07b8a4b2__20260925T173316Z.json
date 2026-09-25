@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle979_class_coexistence_independent_check_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle979_class_coexistence_independent_check_2026_08_10.py",
+ "seed": 57596,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173316Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b007d6537f98be38fc83c8ec40914baa4bec5c68ec695090fb5c053d7781df89",
+ "stdout_tail": "CYCLE979_CLASS_COEXISTENCE_INDEPENDENT_CHECK\nR0_PRIMARY_AST_AND_PINS PASS :: source_reads=4<=6; pins=True; primary_imported=false\nR1_INDEPENDENT_COEXISTENCE_CENSUS PASS :: programs=155; class_counts={\"CNOT\":6,\"TOF_OPPOSITE_CONTROLS\":3,\"TOF_PERPENDICULAR_CONTROLS\":12}; classless=134; multi_class=0; proper_cubic=True\nR2_REFUTE_CONDITIONAL_REQUIREMENT_AND_WEIGHT_TEST PASS :: premise=P_instance(non-axiom); conditional=PER_INSTANCE; axiom_implication=NOT_DERIVED; survivors/5=5/5; neighbour_variation=true; proper_cubic=true; exclusions=[]\nR3_NONUNIFORM_INPUT PASS :: p_zero=1/4; TV_by_class={\"CNOT\":\"1/2\",\"TOF_OPPOSITE_CONTROLS\":\"1/2\",\"TOF_PERPENDICULAR_CONTROLS\":\"1/2\"}\nR4_RECEIPT_CACHE_BINDING PASS :: semantic_headlines_bound=true\nR5_ACTIVE_CORRUPTION_PROBES PASS :: rejected=8/8; ids=[\"CACHE_WEIGHT_HEADLINE_CORRUPTED\",\"CLASS_COUNT_CORRUPTED\",\"COEXISTENCE_INJECTED_CONDITIONAL_UNCHANGED\",\"EXCLUSION_WITHOUT_WITNESS\",\"NONUNIFORM_TV_CORRUPTED\",\"PROGRAM_REMOVED\",\"SURROGATE_DEPENDENCE_FLIPPED\",\"SURVIVOR_REMOVED\"]\nR6_CONTROLS PASS :: runtime_s=0.139<300; stdout_bytes=1118<6000; determinism=True\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle979_class_coexistence_independent_check_2026_08_10.txt against the .txt beside this log"
+  ]
+ }
+}

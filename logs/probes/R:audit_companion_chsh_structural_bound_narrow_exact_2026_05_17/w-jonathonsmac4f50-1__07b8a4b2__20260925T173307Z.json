@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_chsh_structural_bound_narrow_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_chsh_structural_bound_narrow_exact_2026_05_17.py",
+ "seed": 57587,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173307Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1792c1073074d1f62af42e5de31fd8ec4ca7b2111553fed480dfabcc5306d693",
+ "stdout_tail": " R3 cross-check: H = C^2 (dim 2 per Cl(3) site)\n  [PASS (A)] Part 5 \u2014 S_op eigenvalues in [-2sqrt(2), 2sqrt(2)] (self-adjoint spectral bound)  (eigenvalues = [-2.8284271247461903, 0.0, 0.0, 2.8284271247461903])\n  [PASS (A)] Part 5 \u2014 max eigenvalue of S_op equals 2*sqrt(2) (saturating)  (max eig = 2.828427124746190)\n\n  [BOUNDARY] explicit boundary guards (printed only):\n    - This note does NOT derive the Born rule P=|A|^2 from nothing (R1 imported).\n    - This note does NOT claim the framework Hamiltonian saturates 2*sqrt(2) at derived couplings.\n    - This note does NOT close bell_inequality_derived_note from G to C; only sub-question (a) is closed, and (b) is narrowed to its algebraic core (product-state bound |S| <= 2) with the G=0 separability bridge and the saturation equality still open.\n    - This note does NOT derive a physical normalization of G or its continuum scaling.\n    - This note does NOT address experimental Bell-test loopholes (detection, locality).\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n\n  PASS = 35\n  FAIL = 0\n\n  STATUS: ALL EXACT-ALGEBRA CHECKS PASS\n  CLOSURE: Structural CHSH bounds (classical 2, Tsirelson 2*sqrt(2)) derived\n           from cited one-hop inputs R1-R4 + Landau identity.\n           Class A (pure algebra over cited inputs).\n           Saturating witness exists in Cl(3) per-site Hilbert dim two.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173308Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

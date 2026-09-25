@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_g_bare_l3a_trace_surface_invariance_2026_05_17.py",
+ "seed": 57793,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173633Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "89224f7da2e556a4344144976e56ec69c0fbdd29486b291bb59a04a293dae825",
+ "stdout_tail": "are^2  (V_3: 1/2; V: 1/2)\n  [PASS (A)] L3a-consistent counterfactual g_bare^2 = 2: both surfaces recover the same g_bare^2  (V_3: 2; V: 2)\n  [PASS (A)] L3a-consistent counterfactual g_bare^2 = 4: both surfaces recover the same g_bare^2  (V_3: 4; V: 4)\n  [PASS (A)] At g_bare^2 = 1/4: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)\n  [PASS (A)] At g_bare^2 = 1: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)\n  [PASS (A)] At g_bare^2 = 7/11: beta_V / beta_V3 = 4/3 (L3a-invariant)  (ratio = 4/3)\n\n================================================================================\nSECTION F \u2014 Parent-row consistency checks\n================================================================================\n  [PASS (A)] W=V_3 specialization reproduces canonical beta = 2 N_c = 6 (parent runner)  (beta_canonical = 2 * 3 = 6)\n  [PASS (A)] Trace-surface routing factor on beta: V_3 -> V gives 4/3 (parallel to c^2 from rescaling)  (factor = 4/3; rescaling parallel: T_a -> c T_a gives c^2 factor on beta)\n\n================================================================================\nSCORECARD\n================================================================================\nPASS = 33\nFAIL = 0\nTOTAL = 33\n\nVERDICT: all class (A) algebraic + numerical checks PASS.\n  The L3a binary admission N_F in {1/2, 1} is physically inert\n  for g_bare: both trace surfaces yield g_bare = 1 at the\n  Wilson canonical matching surface, differing only in the\n  conventional beta value (6 for V_3, 8 for V).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173634Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

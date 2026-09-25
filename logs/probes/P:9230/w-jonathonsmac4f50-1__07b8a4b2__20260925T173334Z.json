@@ -1,0 +1,37 @@
+{
+ "task": "P:9230",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block144-the-m",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9230",
+ "pr": 9230,
+ "branch": "physics-loop/admissibility-induced-law-block144-the-members-pull-gives-pull-bound-pairs-weight-one-20260925",
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173334Z",
+ "elapsed_s": 96.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=25 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "08928fad74077017ed5c5fd686fc7b32a47b0e5257060e5180c7b43ddbd7b474",
+ "stdout_tail": "PR #9230: physics-loop: admissibility induced-law block 144 - the member's pull carries the velocity terms that give pull-bound pairs weight one along every axis at first order\nbranch physics-loop/admissibility-induced-law-block144-the-members-pull-gives-pull-bound-pairs-weight-one-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py: rc=0 PASS=25 FAIL=0\n   mutation curvature_second_order_forged: expected B observed B ok\n   mutation shift_coupling_sign_flipped: expected C observed C ok\n   mutation alpha_off_the_books: expected C observed C ok\n   mutation drift_residual_forged: expected C observed C ok\n   mutation retardation_dropped: expected D observed D ok\n   mutation static_pull_taken_for_the_member: expected E observed E ok\n   mutation boost_half_dropped: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173510Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_full_star_infrared_response_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_full_star_infrared_response_2026_09_09.py",
+ "seed": 57784,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b8a4b2",
+ "started_utc": "20260925T173624Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=1217 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5c7ad2eabe98bc5f1395236f6aad8c168b152bd3bf5ed3b6c3a79672c60b452c",
+ "stdout_tail": "RARED_RESPONSE_NOTE_2026-09-09.md\": \"5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f\",\n    \"docs/NATIVE_STAR_THERMODYNAMIC_LIMIT_NOTE_2026-09-09.md\": \"1557d48a8e3d5fcc17a01982484bffa6f27e0be16a42c88062eadb455dada226\",\n    \"docs/NATIVE_UNIFORM_QUASILOCAL_STAR_VERTEX_NOTE_2026-09-09.md\": \"0c6c768b4fb0416067c5de3dd159596a0367e8c9c77c10f0c5700936ff6aa2f0\",\n    \"docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md\": \"fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd\",\n    \"scripts/native_full_star_infrared_controls_2026_09_09.py\": \"0b942d42160768ce61fac504f3e65fe5d301cd5407b3b3388e8563deb5f1c436\"\n  },\n  \"source_sha256\": \"67dec92c934027435ac8a040a11ac4c09d1dea16d21fa97814c743f451a35a8f\",\n  \"elapsed_seconds\": 0.12497170898132026,\n  \"peak_rss_bytes\": 24739840,\n  \"actual_current_surface_status\": \"conditional-support\"\n}\nTOTAL: PASS=1217 FAIL=0\nper_element: exact finite CAR and graded-commutator predicates are executed on the declared four-mode fixture.\nper_site: finite graded Gram and rational spatial-exponent controls are executed; all-volume spatial bounds are analytical.\nper_mode: occupation counting and inverse-moment controls are executed; conical native mode counting is analytical.\nper_block: one-particle subtraction and the one-sided filter are checked in the finite fixture, not on every native block.\nlattice_wide: spectral limits and uniform singleton row bounds are analytical; no native physical or interacting calculation is run.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T173625Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_full_star_infrared_response_2026_09_09.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,54 @@
+{
+  "N": 32,
+  "partial": "8223152199588493141583117622665893590581959114158086540393219859417548249879118733903/7391489254844752334484309200990477845019994038770026442295562088329408803543067918336",
+  "C0_h_upper": "1039679023115954089616608500511118001063925856327669538094192737345369782641059746250899/2262719648139349808394009154153210030306745675118474344647728944289840269984621666500608",
+  "comparison_7_over_15": true,
+  "physical_matrix_calls": 0,
+  "physical_integral_calls": 0,
+  "status": "PASS",
+  "predicates": 64,
+  "nonnative_rank_one_examples": [
+    {
+      "n": 1,
+      "polar_cos_negative": true,
+      "cos_squared": "121/697",
+      "scaled_norm_F_squared": "661/324"
+    },
+    {
+      "n": 2,
+      "polar_cos_negative": true,
+      "cos_squared": "4225/6529",
+      "scaled_norm_F_squared": "6385/5184"
+    },
+    {
+      "n": 4,
+      "polar_cos_negative": true,
+      "cos_squared": "78961/88177",
+      "scaled_norm_F_squared": "87601/82944"
+    },
+    {
+      "n": 16,
+      "polar_cos_negative": true,
+      "cos_squared": "21169201/21316657",
+      "scaled_norm_F_squared": "21307441/21233664"
+    }
+  ],
+  "summands": 33,
+  "scope": "finite exact supporting controls; no physical evaluation",
+  "input_hashes": {
+    "docs/NATIVE_PAIR_VACUUM_CHART_NOTE_2026-09-09.md": "4849d98ce1cf17fad72f91082ebeed348505f2a98d0a5d78869c2364c7f2b6c3",
+    "scripts/native_pair_vacuum_chart_controls_2026_09_09.py": "81c08ba1893b77c334faff93c1ff5845178b4e7581eabbb35c4959b3953235b8",
+    "docs/NATIVE_FINITE_EXCITATION_WARD_NOTE_2026-09-09.md": "4860838240a66b23b7ffe3ae2adb26e431e912516bf7ddd206aec018bb69da6d",
+    "docs/NATIVE_INFINITE_STAR_NODE_REDUCTION_NOTE_2026-09-09.md": "a6969c8e2f3e3ac75f3264d95fad3f94c328461ecf94c59788272736944ee019",
+    "docs/NATIVE_ZERO_PENALTY_OPTIMAL_FLUX_DISPERSION_NOTE_2026-09-08.md": "fc9d6059643cb4468b6cdbaf4134c5c311d1e9d44622b97d5d71d407544fe3dd"
+  },
+  "actual_current_surface_status": "conditional-support",
+  "assembled_review": "historical independent reviews preserved separately; this is execution evidence only",
+  "elapsed_seconds": 0.0041732919635251164
+}
+TOTAL: PASS=64 FAIL=0
+per_element: exact recurrence and constant comparisons are executed; operator inequalities remain analytical.
+per_site: synthetic rank-one counterexamples execute; no native impurity overlap is evaluated.
+per_mode: the finite return cutoff uses33 summands; the infinite tail is bounded analytically.
+per_block: stationary and normalized-time chart bounds are analytical, not simulated Gaussian evolutions.
+lattice_wide: trace-class transversality and reference-overlap claims are analytical; mixed-impurity overlaps remain uncomputed.

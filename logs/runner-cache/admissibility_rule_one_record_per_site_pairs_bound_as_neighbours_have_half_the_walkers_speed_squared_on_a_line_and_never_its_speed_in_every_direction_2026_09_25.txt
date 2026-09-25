@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_one_record_per_site_pairs_bound_as_neighbours_have_half_the_walkers_speed_squared_on_a_line_and_never_its_speed_in_every_direction_2026_09_25.py
-runner_sha256: 5ada0981ce7415794c6e302fb2673eef2dd3b8be77b070caf7b637a41b02464d
-input_fingerprint_sha256: 59ac3e434a8f55d30b6703113cb5433558ab3a68263c011eff3b0985f4acda04
+runner_sha256: f8b308e5e17434518f2fa97ac90767223a1d071f59a73231643519f80a7d1531
+input_fingerprint_sha256: a0690104f4617cd84314efb8e0cc967578f638601029ffe577f68b64e64687d3
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 7.77
+elapsed_sec: 8.75
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

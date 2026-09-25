@@ -133,7 +133,7 @@ So a pair that keeps its bond has `c² = ½⟨σ_a⊗σ_a⟩` along the bond and
 
 ∎
 
-*Checked (D1).* The commutant and its five generators; each ground space; the fermions' diagonal form on a ray; every axis sum, with the bound `3/2` shown as a quotient of polynomials in `cos θ` with nonnegative coefficients.
+*Checked (D1).* The commutant and its five generators; each ground space; the fermions' diagonal form on a ray; every entry of the table, symbolic in `cos θ`, and both coincidences; the bound `3/2`, shown as a quotient of polynomials in `cos θ` with nonnegative coefficients.
 
 ## Theorem T4 — the controls
 

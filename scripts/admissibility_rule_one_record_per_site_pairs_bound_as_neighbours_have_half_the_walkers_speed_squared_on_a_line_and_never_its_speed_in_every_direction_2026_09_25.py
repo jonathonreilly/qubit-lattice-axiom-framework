@@ -416,6 +416,20 @@ def family_d(checks: Checks) -> None:
     ok_vals = all(sp.simplify(results[k][0] - expect[k][0]) == 0 for k in expect)
     want_pm = {"f": {0: sp.Rational(3, 2), 4: -sp.Rational(1, 2)}, "b": {2: sp.Rational(1, 2)}}
     ok_vals = ok_vals and all(dict((sp.simplify(v), w) for v, w in results[("pm", nm)]) == want_pm[nm] for nm in ("f", "b"))
+    # every entry of the note's table
+    table = {
+        ("plane0", "f"): {1: sp.Rational(3, 2), 5: -sp.Rational(5, 2)}, ("plane0", "b"): {1: sp.Rational(3, 2), 5: -sp.Rational(5, 2)},
+        ("all", "f"): {0: sp.Rational(7, 10), 1: sp.Rational(3, 2), 4: -sp.Rational(1, 2), 5: -sp.Rational(17, 10)},
+        ("all", "b"): {1: sp.Rational(3, 2), 2: sp.Rational(1, 2), 5: -sp.Rational(5, 2)},
+        ("union", "f"): {0: (4 * mu + 3) / (2 * (4 * mu + 1)), 4: -sp.Rational(1, 2), 4 * mu + 1: (3 + 12 * mu - 32 * mu ** 2) / (2 * (4 * mu + 1))},
+        ("union", "b"): {2: sp.Rational(1, 2), 4 * mu + 1: (3 - 8 * mu) / 2},
+        ("coincide", "b"): {2: sp.Rational(1, 2)},
+    }
+    for key, want in table.items():
+        got = dict((sp.simplify(v), w) for v, w in results[key])
+        ok_vals = ok_vals and set(got) == set(want) and all(sp.simplify(got[k] - want[k]) == 0 for k in want)
+    got_cf = dict((sp.simplify(v), w) for v, w in results[("coincide", "f")])
+    ok_vals = ok_vals and set(got_cf) == {0, 4} and got_cf[0] == sp.Rational(3, 4) and got_cf[4] is None
     # every per-level axis sum is a single number (a multiple of the identity on the level), except at the fermions' coincidence,
     # where the merged level keeps its two values -3/4 and -1/2; every value is at most 3/2 for c^2 in [0, 1]
     allsums = [results[("ray", "f")][0], results[("ray", "b")][0]]

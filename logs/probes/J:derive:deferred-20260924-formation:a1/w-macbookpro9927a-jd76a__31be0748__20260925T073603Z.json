@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260924-formation:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-macbookpro9927a-jd76a",
+ "model": "claude-opus-5-5",
+ "command": "python3 /Users/jonreilly/.probe-w7/.probe-workers/Physics/J-derive-deferred-20260924-formation-a1/probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/check.py",
+ "seed": 21763,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "31be0748",
+ "started_utc": "20260925T073603Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL PR8178's nonlinear torus memory separated from the gain-one proxy: exact drift/noise decomposition of the plane average (drift along local fields; direction drift only from |S_x| differences); single-site rate -3b log A(3b)/A(3b) > 1 = 1/|m|^2 for all b; under two stated small-noise premises (A1-A2, open) the first-order law lambda1 tau_L = 1 + s2(S*_L + 2 - 1/(2L^2)), S*_2,3,4 = 27/32, 11/9, 189/128, against 1 + 2 S*_L s2 for 1/|m|^2; seeded Monte Carlo agrees at L=2,3,4,16"
+ },
+ "review": "check.py passes 37 checks: the exact drift/noise identities of the plane average, the L=1 control, S*_2,3,4 = 27/32, 11/9, 189/128 with the first-order assembly, and the recorded seeded Monte Carlo placing the nonlinear memory rate above 1/|m|^2 at L=2,3,4 and below it at L=16; this matches the unit's what for PR8178 with premises A1-A2 stated as open",
+ "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Formation laws and nonlinear scaling. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-05.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8178: separate the corrected linear transient proxy from the still-unproved nonlinear memory/scaling law. Recover auxiliary calculations only if they bear on an explicit gap in that distinction. Before calculating, inspect existing attempts/logs for these related problems: corrigendum-PR8178, corrigendum-PR8180, formation-response-kernel, plane-memory-loss-2. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-formation/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing.",
+ "stdout_sha256": "90520b867125aab1418be4689657fe3917700361b2fe43ab192bab790bbc529a",
+ "stdout_tail": "ows: beta L | reported D1 ratio lag25 lag100 | 1/|m|^2 | first-order 1+s2(S*+2-1/2L^2) | 1+2S*s2\n    6  16 | 1.34 1.33 | 1.40 | 1.244 | 1.277\n    6  32 | 1.42 1.42 | 1.53 | 1.274 | 1.338\n   12  16 | 1.14 1.14 | 1.17 | 1.125 | 1.143\n   12  32 | 1.17 1.19 | 1.21 | 1.141 | 1.174\n   24  16 | 1.06 1.06 | 1.08 | 1.064 | 1.072\n   48  16 | 1.02 1.02 | 1.04 | 1.032 | 1.036\nN fresh L=2 beta=40 coef 2.719+-0.049 (first order 2.594, 2S* 1.6875); origin/main copy of note identical: True\nchecks passed 37, failed 0\nSUMMARY: PARTIAL PR8178's nonlinear torus memory separated from the gain-one proxy: exact drift/noise decomposition of the plane average (drift along local fields; direction drift only from |S_x| differences); single-site rate -3b log A(3b)/A(3b) > 1 = 1/|m|^2 for all b; under two stated small-noise premises (A1-A2, open) the first-order law lambda1 tau_L = 1 + s2(S*_L + 2 - 1/(2L^2)), S*_2,3,4 = 27/32, 11/9, 189/128, against 1 + 2 S*_L s2 for 1/|m|^2; seeded Monte Carlo agrees at L=2,3,4,16\nHIT: the historical 1/|m|^2 factor is not the strong-coupling law of the nonlinear sphere law's torus memory: at fixed L the first order is lambda1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/(2L^2)), S*_L = L^-2 sum_{k!=0} 1/(1-u_k), versus 1/|m|^2 = 1 + 2 S*_L sigma^2 (log L coefficients differ by a factor 2; the gap changes sign between L=7 and L=8); seeded Monte Carlo puts the memory rate >= 5 SE above 1/|m|^2 at L=2,3,4 (beta=20) and >= 5 SE below it at L=16; exact at L=1: -3b log A(3b)/A(3b) > 1\n",
+ "checked": {
+  "by": "w-macbookpro9927a-jd76a",
+  "at_utc": "20260925T073608Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

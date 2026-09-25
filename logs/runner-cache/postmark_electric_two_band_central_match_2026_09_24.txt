@@ -1,0 +1,457 @@
+===== runner cache v1 =====
+runner: scripts/postmark_electric_two_band_central_match_2026_09_24.py
+runner_sha256: 9d59b0b1569408749b65657e12826657abd19c818739a7b6882c74035dc8ca18
+input_fingerprint_sha256: ddb2b0a3f26f20b994994decf6c946f247bd9e8018487fff3a57f3302c6f3a4c
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 17.47
+status: ok
+----- stdout -----
+{
+  "claim_status": "conditional local two-band normal form and finite-support central coefficient theorem; no global propagator asymptotic",
+  "upstream_model_source_note": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "historical_upstream_model_source_sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+  "historical_upstream_model_source_revision": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+  "historical_source_pr_status": "PR #8831 is CLOSED without merge; its conditional source is present in the cited canonical main note",
+  "historical_main_revision_searched": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+  "read_inventory": {
+    "scientific_inputs": [
+      "the supplied six-site path and signed hop labels in the cited source notes",
+      "the physical charge/electric state and legal-hop enumeration in scripts/core_derivation.py",
+      "the exact signed 15-residue cell construction stated in the cited notes"
+    ],
+    "package_integrity_reads": [
+      "scripts/runner_cache.py binds this runner SHA-256 and the declared input fingerprints; no external data files are read at execution time"
+    ]
+  },
+  "operator": "N_S=J M_S J, N_inf=2I-shift-shift*, G_S=N_S^2-C N_S, C=S(S+1)",
+  "outer_two_band_crossings": {
+    "crossings": [
+      {
+        "side": "positive",
+        "boundary": "theta=0",
+        "bands": [
+          5,
+          10
+        ],
+        "principal_eigenvalue": "3*(1-u^2)",
+        "detuning_slope_first_band": "sqrt(3)*(1 - u**2)/15",
+        "common_subprincipal_shift": "u*(3*u - 11)",
+        "subprincipal_coupling": "2*u*(1 + sqrt(3)*I)/5",
+        "first_order_normal_form_matrix": [
+          [
+            "sqrt(3)*delta*(1 - u**2)/15 + h*u*(3*u - 11)",
+            "2*h*u*(1 + sqrt(3)*I)/5"
+          ],
+          [
+            "2*h*u*(1 - sqrt(3)*I)/5",
+            "-sqrt(3)*delta*(1 - u**2)/15 + h*u*(3*u - 11)"
+          ]
+        ],
+        "leading_gap_for_delta_theta_O_1_over_S": "sqrt(4*delta**2*(1 - u**2)**2/75 + 64*h**2*u**2/25)"
+      },
+      {
+        "side": "negative",
+        "boundary": "theta=0",
+        "bands": [
+          5,
+          10
+        ],
+        "principal_eigenvalue": "3*(1-u^2)",
+        "detuning_slope_first_band": "sqrt(3)*(1 - u**2)/15",
+        "common_subprincipal_shift": "u*(3*u + 11)",
+        "subprincipal_coupling": "2*u*(-1 - sqrt(3)*I)/5",
+        "first_order_normal_form_matrix": [
+          [
+            "sqrt(3)*delta*(1 - u**2)/15 + h*u*(3*u + 11)",
+            "2*h*u*(-1 - sqrt(3)*I)/5"
+          ],
+          [
+            "2*h*u*(-1 + sqrt(3)*I)/5",
+            "-sqrt(3)*delta*(1 - u**2)/15 + h*u*(3*u + 11)"
+          ]
+        ],
+        "leading_gap_for_delta_theta_O_1_over_S": "sqrt(4*delta**2*(1 - u**2)**2/75 + 64*h**2*u**2/25)"
+      },
+      {
+        "side": "positive",
+        "boundary": "theta=pi",
+        "bands": [
+          12,
+          2
+        ],
+        "principal_eigenvalue": "1-u^2",
+        "detuning_slope_first_band": "-sqrt(3)*(1 - u**2)/15",
+        "common_subprincipal_shift": "u*(5*u - 17)/5",
+        "subprincipal_coupling": "2*u*(3 - sqrt(3)*I)/15",
+        "first_order_normal_form_matrix": [
+          [
+            "-sqrt(3)*delta*(1 - u**2)/15 + h*u*(5*u - 17)/5",
+            "2*h*u*(3 - sqrt(3)*I)/15"
+          ],
+          [
+            "2*h*u*(3 + sqrt(3)*I)/15",
+            "sqrt(3)*delta*(1 - u**2)/15 + h*u*(5*u - 17)/5"
+          ]
+        ],
+        "leading_gap_for_delta_theta_O_1_over_S": "sqrt(4*delta**2*(1 - u**2)**2/75 + 64*h**2*u**2/75)"
+      },
+      {
+        "side": "negative",
+        "boundary": "theta=pi",
+        "bands": [
+          12,
+          2
+        ],
+        "principal_eigenvalue": "1-u^2",
+        "detuning_slope_first_band": "-sqrt(3)*(1 - u**2)/15",
+        "common_subprincipal_shift": "u*(5*u + 17)/5",
+        "subprincipal_coupling": "-2*u*(3 - sqrt(3)*I)/15",
+        "first_order_normal_form_matrix": [
+          [
+            "-sqrt(3)*delta*(1 - u**2)/15 + h*u*(5*u + 17)/5",
+            "-2*h*u*(3 - sqrt(3)*I)/15"
+          ],
+          [
+            "-2*h*u*(3 + sqrt(3)*I)/15",
+            "sqrt(3)*delta*(1 - u**2)/15 + h*u*(5*u + 17)/5"
+          ]
+        ],
+        "leading_gap_for_delta_theta_O_1_over_S": "sqrt(4*delta**2*(1 - u**2)**2/75 + 64*h**2*u**2/75)"
+      }
+    ],
+    "independent_explicit_15x15_matrix_projections": "all four N1 projections match exactly in the stated exp(+i*q*r) Bloch basis",
+    "fixed_basis_principal_derivative_check": [
+      {
+        "boundary": "theta=0",
+        "bands": [
+          5,
+          10
+        ],
+        "fixed_basis_projected_derivative_of_N0_over_w": [
+          [
+            "sqrt(3)/15",
+            "0"
+          ],
+          [
+            "0",
+            "-sqrt(3)/15"
+          ]
+        ]
+      },
+      {
+        "boundary": "theta=pi",
+        "bands": [
+          12,
+          2
+        ],
+        "fixed_basis_projected_derivative_of_N0_over_w": [
+          [
+            "-sqrt(3)/15",
+            "0"
+          ],
+          [
+            "0",
+            "sqrt(3)/15"
+          ]
+        ]
+      }
+    ]
+  },
+  "one_global_signed_label_family": {
+    "residue_identities": [
+      {
+        "residue": 0,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 1,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 2,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 3,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 4,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 5,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 6,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 7,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 8,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 9,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 10,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 11,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 12,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 13,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      },
+      {
+        "residue": 14,
+        "L_minus_equals_minus_L_plus_minus_1": true,
+        "R_minus_equals_minus_R_plus_minus_1": true,
+        "factors_equal_for_symbolic_signed_cell_index": true
+      }
+    ],
+    "exact_identity": "f(-m-1)=f(m), f(m)=m(m+1)",
+    "signed_cell_rule": "for n=15k+r, both edge factors use f(3k+L_r^+) and f(3k+R_r^+) for every integer k",
+    "finite_edge_crosscheck_n_minus1000_to1000": 2001,
+    "actual_labels_on_edge_minus1_to0": [
+      -1,
+      0
+    ],
+    "scope": "exact coefficient identity throughout the path; it removes a sign-induced coefficient defect at the origin and makes no propagator claim"
+  },
+  "central_projected_cell_coefficients": {
+    "crossings": [
+      {
+        "side": "positive",
+        "boundary": "theta=0",
+        "bands": [
+          5,
+          10
+        ],
+        "projected_Q_matrix": [
+          [
+            "-27*k**2 - 33*k - 62/5",
+            "6*k/5 + 6*sqrt(3)*I*k/5 + 4/5 + 6*sqrt(3)*I/5"
+          ],
+          [
+            "6*k/5 - 6*sqrt(3)*I*k/5 + 4/5 - 6*sqrt(3)*I/5",
+            "-27*k**2 - 33*k - 62/5"
+          ]
+        ],
+        "Q_coupling_magnitude": "2*sqrt(36*k**2 + 66*k + 31)/5",
+        "central_frozen_cell_gap_coefficient": "4*sqrt(36*k**2 + 66*k + 31)/5",
+        "outer_linear_Q_coupling_as_k_large": "12*k/5",
+        "constant_inner_correction_after_outer_linear_term": "11/5",
+        "physical_cell_index_domain": "k>=1",
+        "scope": "coefficient projection of a side-frozen cell; not the spectrum of the full central interface operator"
+      },
+      {
+        "side": "negative",
+        "boundary": "theta=0",
+        "bands": [
+          5,
+          10
+        ],
+        "projected_Q_matrix": [
+          [
+            "-27*k**2 + 33*k - 62/5",
+            "-6*k/5 - 6*sqrt(3)*I*k/5 + 4/5 + 6*sqrt(3)*I/5"
+          ],
+          [
+            "-6*k/5 + 6*sqrt(3)*I*k/5 + 4/5 - 6*sqrt(3)*I/5",
+            "-27*k**2 + 33*k - 62/5"
+          ]
+        ],
+        "Q_coupling_magnitude": "2*sqrt(36*k**2 - 66*k + 31)/5",
+        "central_frozen_cell_gap_coefficient": "4*sqrt(36*k**2 - 66*k + 31)/5",
+        "outer_linear_Q_coupling_as_k_large": "12*k/5",
+        "constant_inner_correction_after_outer_linear_term": "-11/5",
+        "physical_cell_index_domain": "K>=1",
+        "scope": "coefficient projection of a side-frozen cell; not the spectrum of the full central interface operator"
+      },
+      {
+        "side": "positive",
+        "boundary": "theta=pi",
+        "bands": [
+          12,
+          2
+        ],
+        "projected_Q_matrix": [
+          [
+            "-9*k**2 - 51*k/5 - 58/15",
+            "6*k/5 - 2*sqrt(3)*I*k/5 + 8/15 - 2*sqrt(3)*I/15"
+          ],
+          [
+            "6*k/5 + 2*sqrt(3)*I*k/5 + 8/15 + 2*sqrt(3)*I/15",
+            "-9*k**2 - 51*k/5 - 58/15"
+          ]
+        ],
+        "Q_coupling_magnitude": "2*sqrt(108*k**2 + 90*k + 19)/15",
+        "central_frozen_cell_gap_coefficient": "4*sqrt(108*k**2 + 90*k + 19)/15",
+        "outer_linear_Q_coupling_as_k_large": "4*sqrt(3)*k/5",
+        "constant_inner_correction_after_outer_linear_term": "sqrt(3)/3",
+        "physical_cell_index_domain": "k>=1",
+        "scope": "coefficient projection of a side-frozen cell; not the spectrum of the full central interface operator"
+      },
+      {
+        "side": "negative",
+        "boundary": "theta=pi",
+        "bands": [
+          12,
+          2
+        ],
+        "projected_Q_matrix": [
+          [
+            "-9*k**2 + 51*k/5 - 58/15",
+            "-6*k/5 + 2*sqrt(3)*I*k/5 + 8/15 - 2*sqrt(3)*I/15"
+          ],
+          [
+            "-6*k/5 - 2*sqrt(3)*I*k/5 + 8/15 + 2*sqrt(3)*I/15",
+            "-9*k**2 + 51*k/5 - 58/15"
+          ]
+        ],
+        "Q_coupling_magnitude": "2*sqrt(108*k**2 - 90*k + 19)/15",
+        "central_frozen_cell_gap_coefficient": "4*sqrt(108*k**2 - 90*k + 19)/15",
+        "outer_linear_Q_coupling_as_k_large": "4*sqrt(3)*k/5",
+        "constant_inner_correction_after_outer_linear_term": "-sqrt(3)/3",
+        "physical_cell_index_domain": "K>=1",
+        "scope": "coefficient projection of a side-frozen cell; not the spectrum of the full central interface operator"
+      }
+    ],
+    "independent_explicit_15x15_matrix_projections": "all four central Q projections match exactly in the stated exp(+i*q*r) Bloch basis"
+  },
+  "scalar_outer_to_inner_match": {
+    "exact_finite_spin_factor": "1 - h^2*(3k+a)*(3k+a+1)/(1+h), h=1/S",
+    "outer_expansion_through_h2": "(1-u^2)+h*(u^2-u*(2a+1))-h^2*(u-a)*(u-a-1)",
+    "central_substitution": "u=3kh with fixed k",
+    "difference_through_h2": "0",
+    "conclusion": "the finite-offset h^2 term contributes at order one to C*(N_S-N_inf) when u=3k/S and k is fixed"
+  },
+  "coefficientwise_core_limit_check": {
+    "spins": [
+      {
+        "S": 64,
+        "max_abs_error_on_n_-60_to_60": {
+          "diagonal": 4.800000000001091,
+          "offdiagonal": 2.4000000000005457
+        }
+      },
+      {
+        "S": 128,
+        "max_abs_error_on_n_-60_to_60": {
+          "diagonal": 2.4186046511640598,
+          "offdiagonal": 1.2093023255820299
+        }
+      },
+      {
+        "S": 256,
+        "max_abs_error_on_n_-60_to_60": {
+          "diagonal": 1.2140077820949955,
+          "offdiagonal": 0.6070038910474977
+        }
+      },
+      {
+        "S": 512,
+        "max_abs_error_on_n_-60_to_60": {
+          "diagonal": 0.608187134435866,
+          "offdiagonal": 0.304093567217933
+        }
+      }
+    ],
+    "source": "independent enumeration of physical charge/electric states and all ordered two-hop paths in scripts/core_derivation.py, compared with the signed-label formula in this runner",
+    "coefficientwise_theorem": "For every f in c00(Z), S^2*(N_S-N_inf)f -> Qf in l2, where Q is the tridiagonal operator with diagonal d_n and offdiagonal c_n defined in the accompanying note.",
+    "uniform_growing_window_bound": "For edge labels in cells |k|<=K_S=o(sqrt(S)), the diagonal coefficient error is O((K_S+1)^2/S) and the offdiagonal error is O((K_S+1)^2/S+(K_S+1)^4/S^2), uniformly. This follows by writing A=f(m_L), B=f(m_R)=O((K_S+1)^2), using S^2/C=S/(S+1), and Taylor expanding sqrt((1-A/C)(1-B/C)) for A/C,B/C=o(1).",
+    "generator_core_identity": "(G_S+C*N_inf)f = N_S^2*f - C*(N_S-N_inf)f -> (N_inf^2-Q)f for each f in c00(Z).",
+    "role": "finite-spin corroboration of the exact coefficientwise formula; not a uniform operator-norm estimate"
+  },
+  "actual_center_interface": {
+    "actual_core_coefficients_n_minus3_to3": {
+      "-3": [
+        "0",
+        "0"
+      ],
+      "-2": [
+        "0",
+        "0"
+      ],
+      "-1": [
+        "0",
+        "0"
+      ],
+      "0": [
+        "0",
+        "0"
+      ],
+      "1": [
+        "-2",
+        "1"
+      ],
+      "2": [
+        "0",
+        "0"
+      ],
+      "3": [
+        "-2",
+        "2"
+      ]
+    },
+    "actual_negative_edge_labels_at_n_minus1": [
+      -1,
+      0
+    ],
+    "positive_extrapolated_edge_labels_at_n_minus1": [
+      "0",
+      "-1"
+    ],
+    "casimir_identity": "m(m+1)=(-m-1)(-m)",
+    "central_diagonal_match_at_n0": "0",
+    "central_link_match_at_n_minus1": "0",
+    "scope": "the Casimir factors match across n=-1/0 despite different signed labels; this local check supplies no fixed-time propagation estimate"
+  },
+  "scope_limit": "The 2x2 matrices are projections of frozen-cell symbols; the fixed-support Q limit is an unbounded polynomial Jacobi operator on c00. Neither gives a global finite-spin gap, scattering matrix, statewise tail bound, or fixed-time readout limit."
+}
+TOTAL: PASS=6 FAIL=0 (executed identity/finite-control families; no asymptotic certification)
+
+----- stderr -----
+

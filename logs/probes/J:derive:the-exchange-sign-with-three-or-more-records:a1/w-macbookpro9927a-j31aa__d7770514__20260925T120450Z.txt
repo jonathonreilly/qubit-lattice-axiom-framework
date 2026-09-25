@@ -1,0 +1,33 @@
+W1 PASS: all 55987 walks of <= 6 hops on Z^3: coin factor = +-q(displacement mod 2), q in {1, i s1, i s2, i s3} products (quaternion group mod sign is abelian)
+W2 PASS: on Z^2 every hop flips the sigma_3 coin and the sublattice: g = (-1)^(a+x1+x2) is kept by each record
+A1 PASS: 3x3 torus, N=3, k=2,3,4: tr_K+- (2H)^k = [tr + -3 tr P_12 + 2 tr P_123]/6 (exact integers), so tr_K+ - tr_K- = tr P_12 (k=4: -11520); the ring exchange enters only tr_K+ + tr_K-
+A2.2 PASS: Z^2: two records, per site tr P(2H_2)^2 = 0, tr P(2H_2)^4 = -128 (= -8 in H units: -8 per plaquette)
+A2.3 PASS: Z^3: two records, per site tr P(2H_2)^2 = 0, tr P(2H_2)^4 = -384 (= -24 in H units: -8 per plaquette); per pair -2, -1, 0
+A3.2 PASS: Z^2 side 5, N=3, H units per site: tr P_12 H^2 = tr P_12 H^3 = 0; tr P_12 H^4 = -336 = -16*1(V-4); free-third reference -400; connected 64; ring exchange tr P_123 H^4 = -3
+A3.3 PASS: Z^3 side 5, N=3, H units per site: tr P_12 H^2 = tr P_12 H^3 = 0; tr P_12 H^4 = -5808 = -16*3(V-4); free-third reference -6000; connected 192; ring exchange tr P_123 H^4 = -9
+A4 PASS: Z^2 side 5, N=4: tr P_12 H^4 / V = -13440 = -8*2^2*(V-4)(V-5); sector difference = tr P_12 H^4/(N-2)! = -8 n_p V 2^(N-2) C(V-4,N-2)
+A5 PASS: the four-record ring exchange (a 4-cycle, odd) has zero trace at order 4 on Z^2 and Z^3
+A6 PASS: pair exchange per site, H units: order 4: -8 (Z^2), -24 (Z^3); order 6: -60 (Z^2), -252 (Z^3)
+A7 PASS: connected three-record part per site, order 6, H units: Z^2 1764 (third record static 480, stepping out and back 1284), Z^3 8124 (1860 + 6264); 7x7 brute force: actual - reference = 1764
+A8 PASS: ring exchanges per site, H units: three records (even) order 4: -3 (Z^2), -9 (Z^3); order 6: 90, 702; four records (odd) order 6: 78 (Z^2), 546 (Z^3); Z^2 values = 7x7 brute force
+B1 PASS: two records (neighbours, diagonal, knight's move), complex coins: every Taylor coefficient of the source up to t^5 vanishes, direct and exchange parts alike
+B2 PASS: three records (L and line on Z^2, L on Z^3), complex coins: e+ - e- = 0 through t^3; the common source's t^3 coefficient is the ring exchange alone, d^3e/dt^3 = {(1, 0): '1/144', (0, 1): '-1/144'}
+B3 PASS: four records on a plaquette, complex coins: d^3(e+ - e-)/dt^3 = 0, d^5(e+ - e-)/dt^5 = +-1/224 on the far corners of the four neighbouring plaquettes (sum 0)
+C32+ PASS: 3x3, N=2, sym : E0 = -2.3314730774 (2E0 root of x**8 - 40*x**6 + 493*x**4 - 2214*x**2 + 2736), 4-fold; no eigenvalue below
+C32- PASS: 3x3, N=2, anti: E0 = -2.4494897428 (2E0 root of x**2 - 24), 1-fold; no eigenvalue below
+C33+ PASS: 3x3, N=3, sym : E0 = -3.3485824207 (2E0 root of deg 16, sha 8a1a2f4416), 2-fold; no eigenvalue below
+C33- PASS: 3x3, N=3, anti: E0 = -3.4071521701 (2E0 root of deg 72, sha 4a38b0b3ed), 4-fold; no eigenvalue below
+C34+ PASS: 3x3, N=4, sym : E0 = -3.7907221233 (2E0 root of deg 112, sha 9d25af2dcc), 4-fold; no eigenvalue below
+C34- PASS: 3x3, N=4, anti: E0 = -4.0866558476 (2E0 root of deg 112, sha eb4be1f6af), 4-fold; no eigenvalue below
+C42+ PASS: 4x4, N=2, sym : E0 = -2.8284271247 (2E0 root of x**2 - 32), 1-fold; no eigenvalue below
+C42- PASS: 4x4, N=2, anti: E0 = -2.8284271247 (2E0 root of x**2 - 32), 3-fold; no eigenvalue below
+C43+ PASS: 4x4, N=3, sym : E0 = -3.9991096304 (2E0 root of deg 48, sha 9bde5d0aa5), 4-fold; no eigenvalue below
+C43- PASS: 4x4, N=3, anti: E0 = -3.9991096304 (2E0 root of deg 48, sha 9bde5d0aa5), 4-fold; no eigenvalue below
+D32 PASS: 3x3, N=2: antisymmetric ground energy below symmetric (disjoint windows)
+D33 PASS: 3x3, N=3: antisymmetric ground energy below symmetric (disjoint windows)
+D34 PASS: 3x3, N=4: antisymmetric ground energy below symmetric (disjoint windows)
+D42 PASS: 4x4, N=2: both ground energies are the one root of the same irreducible polynomial in the common window: equal
+D43 PASS: 4x4, N=3: both ground energies are the one root of the same irreducible polynomial in the common window: equal
+TOTAL: PASS=30 FAIL=0 (252s)
+SUMMARY: PARTIAL exchange sign with N>=3 records under exclusion: traces first differ at order 4 for every N; three records add only exclusion; four-record ring exchange from order 6; the source is sector-blind for N<=3; exact small-torus ground energies
+HIT: for records under exclusion (block 54 walk, block 78 compression), tr_K+ H_N^k - tr_K- H_N^k = (2/N!) sum_{pi odd} tr P_pi H_N^k is 0 for k<4 and at k=4 equals -8 n_p V 2^(N-2) C(V-4,N-2) on side>=5 tori (n_p = 1 on Z^2, 3 on Z^3): the pair plaquette exchange with the other corners empty; the three-record ring exchange is even (-3 per plaquette at order 4, both sectors), so a third record changes the sign term only through exclusion (connected +64/+192 per site at order 4, +1764/+8124 at order 6, H units); the first many-record odd process is the four-record ring exchange at order 6 (+78/+546 per site); every hop multiplies the coin by a quaternion unit, so for records starting on definite sites, any coins, block 55's source is the same in both sectors at all times for N=2,3 and first differs at N=4 (order t^5); ground energies: 3x3 torus antisymmetric lower at N=2,3,4 (N=2: -sqrt6), 4x4 torus equal at N=2 (-2 sqrt2) and N=3 (one root of a degree-48 polynomial)

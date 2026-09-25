@@ -1,7 +1,7 @@
 [
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -13,11 +13,51 @@
   "id": "J:derive:deferred-20260925-conditional-dynamics:a1",
   "problem": "deferred-20260925-conditional-dynamics",
   "title": "Conditional dynamics and occurrence suppliers",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-18.json in that directory. Start with PR9041 and its corrected isolated-site law. State a finite autonomous preparation or occurrence question not already supplied by externally controlled rotations or a fixed-record boundary. Give one explicit countermodel or exact construction under declared assumptions; do not derive a clock or Born law from a supplied Hamiltonian. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-conditional-dynamics/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9041 and its corrected isolated-site law. State a finite autonomous preparation or occurrence question not already supplied by externally controlled rotations or a fixed-record boundary. Give one explicit countermodel or exact construction under declared assumptions; do not derive a clock or Born law from a supplied Hamiltonian. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9142 at e14e6e4f4868b3e72340b2a805aed088f89e4def, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9052 at 6d5759d488d9222a94aa9ec14d013aa7d40d83c6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9050 at 5d7a43f384721e5b8d2297441a90c243ea74b11c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9046 at 13cb25934fa81fd216429618bc8e8937d4f19c4f, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9043 at e9f72aafa7a7a352de9e616d4cb9876daee6b11e, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9041 at deeba38b0e405a3ae8f381bf2b120da881cd007c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9040 at 5de357f4807d6978873ab103e10a3e047fd5b380. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-conditional-dynamics/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Start with PR9041 and its corrected isolated-site law. State a finite autonomous preparation or occurrence question not already supplied by externally controlled rotations or a fixed-record boundary. Give one explicit countermodel or exact construction under declared assumptions; do not derive a clock or Born law from a supplied Hamiltonian.",
+  "source_references": [
+   {
+    "pr": 9142,
+    "head": "e14e6e4f4868b3e72340b2a805aed088f89e4def",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9142"
+   },
+   {
+    "pr": 9052,
+    "head": "6d5759d488d9222a94aa9ec14d013aa7d40d83c6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9052"
+   },
+   {
+    "pr": 9050,
+    "head": "5d7a43f384721e5b8d2297441a90c243ea74b11c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9050"
+   },
+   {
+    "pr": 9046,
+    "head": "13cb25934fa81fd216429618bc8e8937d4f19c4f",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9046"
+   },
+   {
+    "pr": 9043,
+    "head": "e9f72aafa7a7a352de9e616d4cb9876daee6b11e",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9043"
+   },
+   {
+    "pr": 9041,
+    "head": "deeba38b0e405a3ae8f381bf2b120da881cd007c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9041"
+   },
+   {
+    "pr": 9040,
+    "head": "5de357f4807d6978873ab103e10a3e047fd5b380",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9040"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -29,11 +69,41 @@
   "id": "J:derive:deferred-20260925-band-gauge:a1",
   "problem": "deferred-20260925-band-gauge",
   "title": "Band and gauge global obligations",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-19.json in that directory. Start with PR9054: preserve the corrected explicit periodic cycle witness and distinguish the N=16 periodic lift from the covering tree. Pick one remaining quantitative global minimization or spectral enclosure claim from the frozen original and prove a bounded instance with rigorous arithmetic, or identify an explicit counterexample. Do not relabel a sampled band gap as global. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-species, deferred-20260924-stability, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-band-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9054: preserve the corrected explicit periodic cycle witness and distinguish the N=16 periodic lift from the covering tree. Pick one remaining quantitative global minimization or spectral enclosure claim from the frozen original and prove a bounded instance with rigorous arithmetic, or identify an explicit counterexample. Do not relabel a sampled band gap as global. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9048 at cb641d8f3eedb7d328f92b43865770d3380a4a2f, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9054 at 8fcae64c5b0f50da7377738f2202fd204c0bf706, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9088 at f8430b0f95dec01f974c18f1ea44a81fd2da7ce9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9097 at 48dd41edef55a29d5bfcc446419bc97e593294d4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9112 at b113cf8d0fa87f4a2fffdcc53e9fa639a0ca4a60. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-band-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Start with PR9054: preserve the corrected explicit periodic cycle witness and distinguish the N=16 periodic lift from the covering tree. Pick one remaining quantitative global minimization or spectral enclosure claim from the frozen original and prove a bounded instance with rigorous arithmetic, or identify an explicit counterexample. Do not relabel a sampled band gap as global.",
+  "source_references": [
+   {
+    "pr": 9048,
+    "head": "cb641d8f3eedb7d328f92b43865770d3380a4a2f",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9048"
+   },
+   {
+    "pr": 9054,
+    "head": "8fcae64c5b0f50da7377738f2202fd204c0bf706",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9054"
+   },
+   {
+    "pr": 9088,
+    "head": "f8430b0f95dec01f974c18f1ea44a81fd2da7ce9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9088"
+   },
+   {
+    "pr": 9097,
+    "head": "48dd41edef55a29d5bfcc446419bc97e593294d4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9097"
+   },
+   {
+    "pr": 9112,
+    "head": "b113cf8d0fa87f4a2fffdcc53e9fa639a0ca4a60",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9112"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -45,11 +115,51 @@
   "id": "J:derive:deferred-20260925-integer-gauge:a1",
   "problem": "deferred-20260925-integer-gauge",
   "title": "Unrestricted integer gauge support",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-20.json in that directory. Start with PR9077 or PR9095: determine one unrestricted integer-support lower bound beyond the previous coefficient-box MILP search. State coefficient domain and anchor normalization; preserve even-N cube and odd-N freeze distinctions and corrected effective-Hamiltonian factors. One exact dual certificate or counterexample is sufficient. Other phase and compact-oscillator obligations remain ranked open. Before work inspect existing attempts, referee reports and active claims for the-exchange-sign-from-the-coin, deferred-20260924-species, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-integer-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9077 or PR9095: determine one unrestricted integer-support lower bound beyond the previous coefficient-box MILP search. State coefficient domain and anchor normalization; preserve even-N cube and odd-N freeze distinctions and corrected effective-Hamiltonian factors. One exact dual certificate or counterexample is sufficient. Other phase and compact-oscillator obligations remain ranked open. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9066 at a3f5b3befaaa3ac264377c45e9f0938c587fe468, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9069 at 20bea6fc2965f7b3981e83c0d13e2d1dd0b942c2, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9072 at 44851ea327976031e29defbd0c8dcc6f73dd374b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9077 at bf3663ce79efd91384dd41b617f9403814a7c623, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9081 at 772e7fba3402ec3ab3562d23abb9c03be10d1965, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9095 at d3ac4167f983b583cd38dcea3212e4bb8ca98704, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9145 at 43cbf9f857e20b654f9a1d0f94a99bc360594271. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-integer-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Start with PR9077 or PR9095: determine one unrestricted integer-support lower bound beyond the previous coefficient-box MILP search. State coefficient domain and anchor normalization; preserve even-N cube and odd-N freeze distinctions and corrected effective-Hamiltonian factors. One exact dual certificate or counterexample is sufficient. Other phase and compact-oscillator obligations remain ranked open.",
+  "source_references": [
+   {
+    "pr": 9066,
+    "head": "a3f5b3befaaa3ac264377c45e9f0938c587fe468",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9066"
+   },
+   {
+    "pr": 9069,
+    "head": "20bea6fc2965f7b3981e83c0d13e2d1dd0b942c2",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9069"
+   },
+   {
+    "pr": 9072,
+    "head": "44851ea327976031e29defbd0c8dcc6f73dd374b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9072"
+   },
+   {
+    "pr": 9077,
+    "head": "bf3663ce79efd91384dd41b617f9403814a7c623",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9077"
+   },
+   {
+    "pr": 9081,
+    "head": "772e7fba3402ec3ab3562d23abb9c03be10d1965",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9081"
+   },
+   {
+    "pr": 9095,
+    "head": "d3ac4167f983b583cd38dcea3212e4bb8ca98704",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9095"
+   },
+   {
+    "pr": 9145,
+    "head": "43cbf9f857e20b654f9a1d0f94a99bc360594271",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9145"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -61,11 +171,41 @@
   "id": "J:derive:deferred-20260925-nonlinear-weights:a1",
   "problem": "deferred-20260925-nonlinear-weights",
   "title": "Nonlinear weight classification beyond affine candidates",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-21.json in that directory. Start with PR9083: the corrected self-weighted Schmidt test classifies only already-affine covariant f_lambda. Formulate the full nonlinear functional constraint with normalized weights, endpoint support and composition assumptions explicit, then prove one nontrivial necessary condition or supply a counterexample. Do not assume ensemble affinity in order to derive it. The controlled randomizer and tensor-positive channel arguments remain conditional. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, the-exchange-sign-from-the-coin, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-nonlinear-weights/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9083: the corrected self-weighted Schmidt test classifies only already-affine covariant f_lambda. Formulate the full nonlinear functional constraint with normalized weights, endpoint support and composition assumptions explicit, then prove one nontrivial necessary condition or supply a counterexample. Do not assume ensemble affinity in order to derive it. The controlled randomizer and tensor-positive channel arguments remain conditional. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9083 at 7e2c8026bb1a8d76c5f95da8fe2046ada3493697, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9084 at 2df5947a26d283ee82241f0d287f8222f3995cab, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9085 at fbfebbbb4ffa99030a19ab0b4f00901fb02c5518, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9086 at a4c092788832103f5af5c6a2d043acf6ef9c2261, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9140 at 1bdd8cad967a53505ebefeb33a12f450dd5a1c1a. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-nonlinear-weights/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Start with PR9083: the corrected self-weighted Schmidt test classifies only already-affine covariant f_lambda. Formulate the full nonlinear functional constraint with normalized weights, endpoint support and composition assumptions explicit, then prove one nontrivial necessary condition or supply a counterexample. Do not assume ensemble affinity in order to derive it. The controlled randomizer and tensor-positive channel arguments remain conditional.",
+  "source_references": [
+   {
+    "pr": 9083,
+    "head": "7e2c8026bb1a8d76c5f95da8fe2046ada3493697",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9083"
+   },
+   {
+    "pr": 9084,
+    "head": "2df5947a26d283ee82241f0d287f8222f3995cab",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9084"
+   },
+   {
+    "pr": 9085,
+    "head": "fbfebbbb4ffa99030a19ab0b4f00901fb02c5518",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9085"
+   },
+   {
+    "pr": 9086,
+    "head": "a4c092788832103f5af5c6a2d043acf6ef9c2261",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9086"
+   },
+   {
+    "pr": 9140,
+    "head": "1bdd8cad967a53505ebefeb33a12f450dd5a1c1a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9140"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -77,11 +217,73 @@
   "id": "J:derive:deferred-20260925-ring-limits:a1",
   "problem": "deferred-20260925-ring-limits",
   "title": "Finite ring diagnostics and limit obligations",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-22.json there. Begin with PR9220: choose one estimator or finite-box regulator comparison whose uncertainty can be bounded independently. State the sampled distribution, exact observable, truncation and population target. Preserve the finite-depth and unavailable-depth limitations; do not infer regulator independence or thermodynamic convergence from agreement of two finite runs. Other ring-model obligations remain ranked open. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-stability, the-hard-core-sea-in-one-dimension-exactly, the-hard-core-sea-in-two-and-three-dimensions; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-ring-limits/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Begin with PR9220: choose one estimator or finite-box regulator comparison whose uncertainty can be bounded independently. State the sampled distribution, exact observable, truncation and population target. Preserve the finite-depth and unavailable-depth limitations; do not infer regulator independence or thermodynamic convergence from agreement of two finite runs. Other ring-model obligations remain ranked open. Additional target from PR9236/9239: determine what controlled component, population, projection, field-size and spectral-weight estimates would justify a dispersion conclusion from energy-curvature moment bounds. An upper bound alone is not a measured photon speed; RK zero local energy does not establish susceptibility or saturation. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9146 at 51b884ccb663e487b5d8976b333c307832d3b1c7, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9148 at 08a8793df4867d7bef3230345261c58439c98742, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9153 at 24b5a245688465b6f1f2f07141a448e0f5929081, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9161 at 3bc88bce2ee80024795fa3fcd3f50bc324495fb3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9163 at 87b3cbb14cb1c81e6fbb46455f8565e83f8e3596, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9166 at d0baf9ff16c0beade7eee8d444ae12bb932083aa, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9169 at 9fd0b011038e489f92dc80986ec47664d9107777, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9171 at 07a595e9a1d789dbb1c8a29b571566bb48cf92f8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9220 at 3b655b7c876b67e354c61bbfb0ddee04bdd5f691, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9236 at 874b0990d39d1c878674daa26aa856dc460556a9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9239 at d8e4a65264dcb826b5655933cd830cd93cb29daa. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-ring-limits/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Begin with PR9220: choose one estimator or finite-box regulator comparison whose uncertainty can be bounded independently. State the sampled distribution, exact observable, truncation and population target. Preserve the finite-depth and unavailable-depth limitations; do not infer regulator independence or thermodynamic convergence from agreement of two finite runs. Other ring-model obligations remain ranked open. Additional target from PR9236/9239: determine what controlled component, population, projection, field-size and spectral-weight estimates would justify a dispersion conclusion from energy-curvature moment bounds. An upper bound alone is not a measured photon speed; RK zero local energy does not establish susceptibility or saturation.",
+  "source_references": [
+   {
+    "pr": 9146,
+    "head": "51b884ccb663e487b5d8976b333c307832d3b1c7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9146"
+   },
+   {
+    "pr": 9148,
+    "head": "08a8793df4867d7bef3230345261c58439c98742",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9148"
+   },
+   {
+    "pr": 9153,
+    "head": "24b5a245688465b6f1f2f07141a448e0f5929081",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9153"
+   },
+   {
+    "pr": 9161,
+    "head": "3bc88bce2ee80024795fa3fcd3f50bc324495fb3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9161"
+   },
+   {
+    "pr": 9163,
+    "head": "87b3cbb14cb1c81e6fbb46455f8565e83f8e3596",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9163"
+   },
+   {
+    "pr": 9166,
+    "head": "d0baf9ff16c0beade7eee8d444ae12bb932083aa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9166"
+   },
+   {
+    "pr": 9169,
+    "head": "9fd0b011038e489f92dc80986ec47664d9107777",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9169"
+   },
+   {
+    "pr": 9171,
+    "head": "07a595e9a1d789dbb1c8a29b571566bb48cf92f8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9171"
+   },
+   {
+    "pr": 9220,
+    "head": "3b655b7c876b67e354c61bbfb0ddee04bdd5f691",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9220"
+   },
+   {
+    "pr": 9236,
+    "head": "874b0990d39d1c878674daa26aa856dc460556a9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9236",
+    "status_at_intake": "under review; not yet landed"
+   },
+   {
+    "pr": 9239,
+    "head": "d8e4a65264dcb826b5655933cd830cd93cb29daa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9239",
+    "status_at_intake": "under review; not yet landed"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -93,11 +295,58 @@
   "id": "J:derive:deferred-20260925-matter-clocks:a1",
   "problem": "deferred-20260925-matter-clocks",
   "title": "Conditional matter networks and formation clocks",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-23.json there. Begin with PR9164: state a single formation-clock selection or finite-window scaling question beyond the supplied hazard-family identities. Preserve the corrected fact that both iterated infinite-window/slow-rate limits dephase; do not resurrect a noncommutation claim. Distinguish a supplied hazard from an axiom-derived formation law. If an existing task covers this exactly, update recovery status and choose one other ranked residual in this bundle without duplicating active work. Before work inspect existing attempts, referee reports and active claims for deferred-20260925-conditional-dynamics, deferred-20260924-formation; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-matter-clocks/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Begin with PR9164: state a single formation-clock selection or finite-window scaling question beyond the supplied hazard-family identities. Preserve the corrected fact that both iterated infinite-window/slow-rate limits dephase; do not resurrect a noncommutation claim. Distinguish a supplied hazard from an axiom-derived formation law. If an existing task covers this exactly, update recovery status and choose one other ranked residual in this bundle without duplicating active work. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9144 at 12645c9624a92743c2a84af8ba1207143cf42a74, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9149 at 705a0c331e707300a33d2bb6ee599ad9145f84d8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9168 at 8a47c2dff898dd8eb26f567fffe66c3f70455add, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9155 at 6b4ca7cd38d56db2093f5794637b9d337cb431d0, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9172 at 4e37c6e728cb50f9b289dd9ba13b07c5aa0467be, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9061 at a16b369221b2b4ae63cfddb10fe60cb36f50ec08, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9164 at 949725492ef91dcead40a6144355cec643ed3d60, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9218 at ccf7274e270a93daedcaac39fd9973198f7dea3d. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-clock-formation-selection:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-matter-clocks/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Begin with PR9164: state a single formation-clock selection or finite-window scaling question beyond the supplied hazard-family identities. Preserve the corrected fact that both iterated infinite-window/slow-rate limits dephase; do not resurrect a noncommutation claim. Distinguish a supplied hazard from an axiom-derived formation law. If an existing task covers this exactly, update recovery status and choose one other ranked residual in this bundle without duplicating active work.",
+  "source_references": [
+   {
+    "pr": 9144,
+    "head": "12645c9624a92743c2a84af8ba1207143cf42a74",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9144"
+   },
+   {
+    "pr": 9149,
+    "head": "705a0c331e707300a33d2bb6ee599ad9145f84d8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9149"
+   },
+   {
+    "pr": 9168,
+    "head": "8a47c2dff898dd8eb26f567fffe66c3f70455add",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9168"
+   },
+   {
+    "pr": 9155,
+    "head": "6b4ca7cd38d56db2093f5794637b9d337cb431d0",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9155"
+   },
+   {
+    "pr": 9172,
+    "head": "4e37c6e728cb50f9b289dd9ba13b07c5aa0467be",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9172"
+   },
+   {
+    "pr": 9061,
+    "head": "a16b369221b2b4ae63cfddb10fe60cb36f50ec08",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9061"
+   },
+   {
+    "pr": 9164,
+    "head": "949725492ef91dcead40a6144355cec643ed3d60",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9164"
+   },
+   {
+    "pr": 9218,
+    "head": "ccf7274e270a93daedcaac39fd9973198f7dea3d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9218"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-clock-formation-selection:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -109,11 +358,28 @@
   "id": "J:derive:deferred-20260925-spectral-readout:a1",
   "problem": "deferred-20260925-spectral-readout",
   "title": "Conditional spectral chain and selected-time readout",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-25.json there. Begin with one selected-time cancellation or readout remainder estimate for the five-result postmark chain. Specify the spin/window/time scaling and a success witness. The corrected Weyl moment is 4^m/(2m+1); endpoint quantiles follow only from positivity and the 4+24/S norm bound. Finite Schur identities hold off poles; do not assume pole-uniform control. An O(S^-2) eigenvalue error can yield O(1) phase error on O(S^2) times. Preserve finite-support and (K+1)^2/S limitations; do not infer long-time or readout convergence from finite numerical fits. Inspect prior work before choosing a residual; keep other obligations ranked open. Before work inspect existing attempts, referee reports and active claims for postmark, spectral, selected-time, moving-index, deferred-20260924; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-spectral-readout/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Begin with one selected-time cancellation or readout remainder estimate for the five-result postmark chain. Specify the spin/window/time scaling and a success witness. The corrected Weyl moment is 4^m/(2m+1); endpoint quantiles follow only from positivity and the 4+24/S norm bound. Finite Schur identities hold off poles; do not assume pole-uniform control. An O(S^-2) eigenvalue error can yield O(1) phase error on O(S^2) times. Preserve finite-support and (K+1)^2/S limitations; do not infer long-time or readout convergence from finite numerical fits. Inspect prior work before choosing a residual; keep other obligations ranked open. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9078 at 5171af01191cc2db9d5bad0f8eca2185114ebbe3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9091 at c734332ca227c4371f3c188f96227c494b43f533. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-preparation-optical-readout:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-spectral-readout/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Begin with one selected-time cancellation or readout remainder estimate for the five-result postmark chain. Specify the spin/window/time scaling and a success witness. The corrected Weyl moment is 4^m/(2m+1); endpoint quantiles follow only from positivity and the 4+24/S norm bound. Finite Schur identities hold off poles; do not assume pole-uniform control. An O(S^-2) eigenvalue error can yield O(1) phase error on O(S^2) times. Preserve finite-support and (K+1)^2/S limitations; do not infer long-time or readout convergence from finite numerical fits. Inspect prior work before choosing a residual; keep other obligations ranked open.",
+  "source_references": [
+   {
+    "pr": 9078,
+    "head": "5171af01191cc2db9d5bad0f8eca2185114ebbe3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9078"
+   },
+   {
+    "pr": 9091,
+    "head": "c734332ca227c4371f3c188f96227c494b43f533",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9091"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-preparation-optical-readout:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -125,11 +391,173 @@
   "id": "J:derive:deferred-20260925-walker-source-closure:a1",
   "problem": "deferred-20260925-walker-source-closure",
   "title": "Walker source closure beyond the necessary identities",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-27.json there. Select one unresolved nonzero-mode source/field coupling residual after blocks134-139. The landed longitudinal identities and preservation of initially satisfied constraints do not establish zero-mode solvability, nonlinear dynamics or a physical universal light cone. Keep averaging, phase pullback, fixed current and source domains explicit. Before work inspect existing attempts, referee reports and active claims for source closure, constraints, phase pullback; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-walker-source-closure/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Select one unresolved nonzero-mode source/field coupling residual after blocks134-139. The landed longitudinal identities and preservation of initially satisfied constraints do not establish zero-mode solvability, nonlinear dynamics or a physical universal light cone. Keep averaging, phase pullback, fixed current and source domains explicit. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151 at fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152 at ebb46c743c5671cdd8c352c2f2bb27fa176f1e13, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154 at 83703ce444d1d8210d3b1582cbe3db8eb79e0a56, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156 at 65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157 at 82170379077a2d2af45a82f8a27e695969d7c153, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159 at 0981f09c94f1ef15eb88112662338b946257c8b0, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160 at 24cc9059fba92e8bfbeec3f61f8d056241784ec4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162 at 3eaf52ff8e11f79cc3ff315391fece2bdcea4518, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170 at c398d575b37ce4e4564a2e0977764fe5e3b576b4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173 at 2c7d2337779890bd4e0175508a6c698bab6b89d6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174 at c163ceb3d881e849066c68118cc5d64624b272f1, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176 at 248efca4af4cccbc4c22124d477f8eb2c1d7bb06, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177 at f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178 at e348a6bc8badedb136f7ed13a9c0816197ba3bfb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180 at 958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182 at 4167e2da0adc7279f5ef33626b29be5684fec7e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184 at 2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185 at 2cd8beed055330fc3beab981e9125f0c57089edb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186 at 763707e9b4cceab1a2f39d366b7ce80635c634f8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187 at 5ec5adb6ba3203cbb4d7c0c67adbd71095f65016, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188 at 53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190 at a84b15e947c51d00444a13f0b5d84a055a36155a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191 at 4ad51fd69c19f74b0183ac8c3576bd5d84ace42b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193 at 52e320a4b6a6e1ea2bd763adf9a83a524e3838a8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195 at 7aac20aa22a68b2e930e1aa52878b05eaabbf053, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196 at d7e6aacc7b8cae11c85f64497d74be97f8102afc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197 at 9aa4e51c1c52c084af0a61c4bd3cebc0e084017b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200 at 133b1d2ca7dad87ae42babc0391e1840c1b1082b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201 at 004e5be7e09f069e3681b084c6fff028b2f4590c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203 at 0ea534d94482029e1ec1af4dde36dc8704963f12, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205 at 340b64fa9db9d785aa177ceaedb1e2c135be9df7. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nonlinear-moving-source-completion:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-walker-source-closure/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Select one unresolved nonzero-mode source/field coupling residual after blocks134-139. The landed longitudinal identities and preservation of initially satisfied constraints do not establish zero-mode solvability, nonlinear dynamics or a physical universal light cone. Keep averaging, phase pullback, fixed current and source domains explicit.",
+  "source_references": [
+   {
+    "pr": 9151,
+    "head": "fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151"
+   },
+   {
+    "pr": 9152,
+    "head": "ebb46c743c5671cdd8c352c2f2bb27fa176f1e13",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152"
+   },
+   {
+    "pr": 9154,
+    "head": "83703ce444d1d8210d3b1582cbe3db8eb79e0a56",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154"
+   },
+   {
+    "pr": 9156,
+    "head": "65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156"
+   },
+   {
+    "pr": 9157,
+    "head": "82170379077a2d2af45a82f8a27e695969d7c153",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157"
+   },
+   {
+    "pr": 9159,
+    "head": "0981f09c94f1ef15eb88112662338b946257c8b0",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159"
+   },
+   {
+    "pr": 9160,
+    "head": "24cc9059fba92e8bfbeec3f61f8d056241784ec4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160"
+   },
+   {
+    "pr": 9162,
+    "head": "3eaf52ff8e11f79cc3ff315391fece2bdcea4518",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162"
+   },
+   {
+    "pr": 9170,
+    "head": "c398d575b37ce4e4564a2e0977764fe5e3b576b4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170"
+   },
+   {
+    "pr": 9173,
+    "head": "2c7d2337779890bd4e0175508a6c698bab6b89d6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173"
+   },
+   {
+    "pr": 9174,
+    "head": "c163ceb3d881e849066c68118cc5d64624b272f1",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174"
+   },
+   {
+    "pr": 9176,
+    "head": "248efca4af4cccbc4c22124d477f8eb2c1d7bb06",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176"
+   },
+   {
+    "pr": 9177,
+    "head": "f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177"
+   },
+   {
+    "pr": 9178,
+    "head": "e348a6bc8badedb136f7ed13a9c0816197ba3bfb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178"
+   },
+   {
+    "pr": 9180,
+    "head": "958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180"
+   },
+   {
+    "pr": 9182,
+    "head": "4167e2da0adc7279f5ef33626b29be5684fec7e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182"
+   },
+   {
+    "pr": 9184,
+    "head": "2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184"
+   },
+   {
+    "pr": 9185,
+    "head": "2cd8beed055330fc3beab981e9125f0c57089edb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185"
+   },
+   {
+    "pr": 9186,
+    "head": "763707e9b4cceab1a2f39d366b7ce80635c634f8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186"
+   },
+   {
+    "pr": 9187,
+    "head": "5ec5adb6ba3203cbb4d7c0c67adbd71095f65016",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187"
+   },
+   {
+    "pr": 9188,
+    "head": "53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188"
+   },
+   {
+    "pr": 9190,
+    "head": "a84b15e947c51d00444a13f0b5d84a055a36155a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190"
+   },
+   {
+    "pr": 9191,
+    "head": "4ad51fd69c19f74b0183ac8c3576bd5d84ace42b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191"
+   },
+   {
+    "pr": 9193,
+    "head": "52e320a4b6a6e1ea2bd763adf9a83a524e3838a8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193"
+   },
+   {
+    "pr": 9195,
+    "head": "7aac20aa22a68b2e930e1aa52878b05eaabbf053",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195"
+   },
+   {
+    "pr": 9196,
+    "head": "d7e6aacc7b8cae11c85f64497d74be97f8102afc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196"
+   },
+   {
+    "pr": 9197,
+    "head": "9aa4e51c1c52c084af0a61c4bd3cebc0e084017b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197"
+   },
+   {
+    "pr": 9200,
+    "head": "133b1d2ca7dad87ae42babc0391e1840c1b1082b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200"
+   },
+   {
+    "pr": 9201,
+    "head": "004e5be7e09f069e3681b084c6fff028b2f4590c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201"
+   },
+   {
+    "pr": 9203,
+    "head": "0ea534d94482029e1ec1af4dde36dc8704963f12",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203"
+   },
+   {
+    "pr": 9205,
+    "head": "340b64fa9db9d785aa177ceaedb1e2c135be9df7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -141,11 +569,171 @@
   "id": "J:derive:deferred-20260925-excluded-record-interactions:a1",
   "problem": "deferred-20260925-excluded-record-interactions",
   "title": "Excluded-record dynamics beyond fixed-position coin repairs",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-27.json there. Select one interaction or source-placement route outside the proved three-hop fixed-position coin obstruction. Preserve the two-record and finite-range first-moment hypotheses. Conditional free-channel current expansions are not scattering theorems. Correlated hops or alternative densities need their own exact decisive witness. Before work inspect existing attempts, referee reports and active claims for exclusion, current, correlated hops, neighbor binding; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-excluded-record-interactions/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Select one interaction or source-placement route outside the proved three-hop fixed-position coin obstruction. Preserve the two-record and finite-range first-moment hypotheses. Conditional free-channel current expansions are not scattering theorems. Correlated hops or alternative densities need their own exact decisive witness. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151 at fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152 at ebb46c743c5671cdd8c352c2f2bb27fa176f1e13, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154 at 83703ce444d1d8210d3b1582cbe3db8eb79e0a56, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156 at 65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157 at 82170379077a2d2af45a82f8a27e695969d7c153, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159 at 0981f09c94f1ef15eb88112662338b946257c8b0, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160 at 24cc9059fba92e8bfbeec3f61f8d056241784ec4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162 at 3eaf52ff8e11f79cc3ff315391fece2bdcea4518, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170 at c398d575b37ce4e4564a2e0977764fe5e3b576b4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173 at 2c7d2337779890bd4e0175508a6c698bab6b89d6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174 at c163ceb3d881e849066c68118cc5d64624b272f1, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176 at 248efca4af4cccbc4c22124d477f8eb2c1d7bb06, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177 at f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178 at e348a6bc8badedb136f7ed13a9c0816197ba3bfb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180 at 958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182 at 4167e2da0adc7279f5ef33626b29be5684fec7e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184 at 2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185 at 2cd8beed055330fc3beab981e9125f0c57089edb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186 at 763707e9b4cceab1a2f39d366b7ce80635c634f8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187 at 5ec5adb6ba3203cbb4d7c0c67adbd71095f65016, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188 at 53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190 at a84b15e947c51d00444a13f0b5d84a055a36155a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191 at 4ad51fd69c19f74b0183ac8c3576bd5d84ace42b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193 at 52e320a4b6a6e1ea2bd763adf9a83a524e3838a8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195 at 7aac20aa22a68b2e930e1aa52878b05eaabbf053, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196 at d7e6aacc7b8cae11c85f64497d74be97f8102afc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197 at 9aa4e51c1c52c084af0a61c4bd3cebc0e084017b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200 at 133b1d2ca7dad87ae42babc0391e1840c1b1082b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201 at 004e5be7e09f069e3681b084c6fff028b2f4590c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203 at 0ea534d94482029e1ec1af4dde36dc8704963f12, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205 at 340b64fa9db9d785aa177ceaedb1e2c135be9df7. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-excluded-record-interactions/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Select one interaction or source-placement route outside the proved three-hop fixed-position coin obstruction. Preserve the two-record and finite-range first-moment hypotheses. Conditional free-channel current expansions are not scattering theorems. Correlated hops or alternative densities need their own exact decisive witness.",
+  "source_references": [
+   {
+    "pr": 9151,
+    "head": "fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151"
+   },
+   {
+    "pr": 9152,
+    "head": "ebb46c743c5671cdd8c352c2f2bb27fa176f1e13",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152"
+   },
+   {
+    "pr": 9154,
+    "head": "83703ce444d1d8210d3b1582cbe3db8eb79e0a56",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154"
+   },
+   {
+    "pr": 9156,
+    "head": "65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156"
+   },
+   {
+    "pr": 9157,
+    "head": "82170379077a2d2af45a82f8a27e695969d7c153",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157"
+   },
+   {
+    "pr": 9159,
+    "head": "0981f09c94f1ef15eb88112662338b946257c8b0",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159"
+   },
+   {
+    "pr": 9160,
+    "head": "24cc9059fba92e8bfbeec3f61f8d056241784ec4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160"
+   },
+   {
+    "pr": 9162,
+    "head": "3eaf52ff8e11f79cc3ff315391fece2bdcea4518",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162"
+   },
+   {
+    "pr": 9170,
+    "head": "c398d575b37ce4e4564a2e0977764fe5e3b576b4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170"
+   },
+   {
+    "pr": 9173,
+    "head": "2c7d2337779890bd4e0175508a6c698bab6b89d6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173"
+   },
+   {
+    "pr": 9174,
+    "head": "c163ceb3d881e849066c68118cc5d64624b272f1",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174"
+   },
+   {
+    "pr": 9176,
+    "head": "248efca4af4cccbc4c22124d477f8eb2c1d7bb06",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176"
+   },
+   {
+    "pr": 9177,
+    "head": "f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177"
+   },
+   {
+    "pr": 9178,
+    "head": "e348a6bc8badedb136f7ed13a9c0816197ba3bfb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178"
+   },
+   {
+    "pr": 9180,
+    "head": "958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180"
+   },
+   {
+    "pr": 9182,
+    "head": "4167e2da0adc7279f5ef33626b29be5684fec7e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182"
+   },
+   {
+    "pr": 9184,
+    "head": "2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184"
+   },
+   {
+    "pr": 9185,
+    "head": "2cd8beed055330fc3beab981e9125f0c57089edb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185"
+   },
+   {
+    "pr": 9186,
+    "head": "763707e9b4cceab1a2f39d366b7ce80635c634f8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186"
+   },
+   {
+    "pr": 9187,
+    "head": "5ec5adb6ba3203cbb4d7c0c67adbd71095f65016",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187"
+   },
+   {
+    "pr": 9188,
+    "head": "53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188"
+   },
+   {
+    "pr": 9190,
+    "head": "a84b15e947c51d00444a13f0b5d84a055a36155a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190"
+   },
+   {
+    "pr": 9191,
+    "head": "4ad51fd69c19f74b0183ac8c3576bd5d84ace42b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191"
+   },
+   {
+    "pr": 9193,
+    "head": "52e320a4b6a6e1ea2bd763adf9a83a524e3838a8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193"
+   },
+   {
+    "pr": 9195,
+    "head": "7aac20aa22a68b2e930e1aa52878b05eaabbf053",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195"
+   },
+   {
+    "pr": 9196,
+    "head": "d7e6aacc7b8cae11c85f64497d74be97f8102afc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196"
+   },
+   {
+    "pr": 9197,
+    "head": "9aa4e51c1c52c084af0a61c4bd3cebc0e084017b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197"
+   },
+   {
+    "pr": 9200,
+    "head": "133b1d2ca7dad87ae42babc0391e1840c1b1082b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200"
+   },
+   {
+    "pr": 9201,
+    "head": "004e5be7e09f069e3681b084c6fff028b2f4590c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201"
+   },
+   {
+    "pr": 9203,
+    "head": "0ea534d94482029e1ec1af4dde36dc8704963f12",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203"
+   },
+   {
+    "pr": 9205,
+    "head": "340b64fa9db9d785aa177ceaedb1e2c135be9df7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -157,11 +745,173 @@
   "id": "J:derive:deferred-20260925-clock-formation-selection:a1",
   "problem": "deferred-20260925-clock-formation-selection",
   "title": "Clock and formation model selection residuals",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-27.json there. Select one unresolved binding, formation readout or ordered-state dynamical residual. Sigma-finite reversible weights are not stationary probabilities; static annealed order is not a formation or relaxation law. Keep target capacity, positive rates, finite-volume versus infinite-kernel hypotheses and supplied readout conventions explicit. Before work inspect existing attempts, referee reports and active claims for clock, formation, binding, annealed order; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-clock-formation-selection/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Select one unresolved binding, formation readout or ordered-state dynamical residual. Sigma-finite reversible weights are not stationary probabilities; static annealed order is not a formation or relaxation law. Keep target capacity, positive rates, finite-volume versus infinite-kernel hypotheses and supplied readout conventions explicit. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151 at fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152 at ebb46c743c5671cdd8c352c2f2bb27fa176f1e13, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154 at 83703ce444d1d8210d3b1582cbe3db8eb79e0a56, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156 at 65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157 at 82170379077a2d2af45a82f8a27e695969d7c153, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159 at 0981f09c94f1ef15eb88112662338b946257c8b0, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160 at 24cc9059fba92e8bfbeec3f61f8d056241784ec4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162 at 3eaf52ff8e11f79cc3ff315391fece2bdcea4518, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170 at c398d575b37ce4e4564a2e0977764fe5e3b576b4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173 at 2c7d2337779890bd4e0175508a6c698bab6b89d6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174 at c163ceb3d881e849066c68118cc5d64624b272f1, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176 at 248efca4af4cccbc4c22124d477f8eb2c1d7bb06, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177 at f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178 at e348a6bc8badedb136f7ed13a9c0816197ba3bfb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180 at 958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182 at 4167e2da0adc7279f5ef33626b29be5684fec7e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184 at 2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185 at 2cd8beed055330fc3beab981e9125f0c57089edb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186 at 763707e9b4cceab1a2f39d366b7ce80635c634f8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187 at 5ec5adb6ba3203cbb4d7c0c67adbd71095f65016, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188 at 53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190 at a84b15e947c51d00444a13f0b5d84a055a36155a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191 at 4ad51fd69c19f74b0183ac8c3576bd5d84ace42b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193 at 52e320a4b6a6e1ea2bd763adf9a83a524e3838a8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195 at 7aac20aa22a68b2e930e1aa52878b05eaabbf053, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196 at d7e6aacc7b8cae11c85f64497d74be97f8102afc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197 at 9aa4e51c1c52c084af0a61c4bd3cebc0e084017b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200 at 133b1d2ca7dad87ae42babc0391e1840c1b1082b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201 at 004e5be7e09f069e3681b084c6fff028b2f4590c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203 at 0ea534d94482029e1ec1af4dde36dc8704963f12, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205 at 340b64fa9db9d785aa177ceaedb1e2c135be9df7. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-matter-clocks:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-clock-formation-selection/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Select one unresolved binding, formation readout or ordered-state dynamical residual. Sigma-finite reversible weights are not stationary probabilities; static annealed order is not a formation or relaxation law. Keep target capacity, positive rates, finite-volume versus infinite-kernel hypotheses and supplied readout conventions explicit.",
+  "source_references": [
+   {
+    "pr": 9151,
+    "head": "fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151"
+   },
+   {
+    "pr": 9152,
+    "head": "ebb46c743c5671cdd8c352c2f2bb27fa176f1e13",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152"
+   },
+   {
+    "pr": 9154,
+    "head": "83703ce444d1d8210d3b1582cbe3db8eb79e0a56",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154"
+   },
+   {
+    "pr": 9156,
+    "head": "65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156"
+   },
+   {
+    "pr": 9157,
+    "head": "82170379077a2d2af45a82f8a27e695969d7c153",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157"
+   },
+   {
+    "pr": 9159,
+    "head": "0981f09c94f1ef15eb88112662338b946257c8b0",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159"
+   },
+   {
+    "pr": 9160,
+    "head": "24cc9059fba92e8bfbeec3f61f8d056241784ec4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160"
+   },
+   {
+    "pr": 9162,
+    "head": "3eaf52ff8e11f79cc3ff315391fece2bdcea4518",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162"
+   },
+   {
+    "pr": 9170,
+    "head": "c398d575b37ce4e4564a2e0977764fe5e3b576b4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170"
+   },
+   {
+    "pr": 9173,
+    "head": "2c7d2337779890bd4e0175508a6c698bab6b89d6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173"
+   },
+   {
+    "pr": 9174,
+    "head": "c163ceb3d881e849066c68118cc5d64624b272f1",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174"
+   },
+   {
+    "pr": 9176,
+    "head": "248efca4af4cccbc4c22124d477f8eb2c1d7bb06",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176"
+   },
+   {
+    "pr": 9177,
+    "head": "f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177"
+   },
+   {
+    "pr": 9178,
+    "head": "e348a6bc8badedb136f7ed13a9c0816197ba3bfb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178"
+   },
+   {
+    "pr": 9180,
+    "head": "958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180"
+   },
+   {
+    "pr": 9182,
+    "head": "4167e2da0adc7279f5ef33626b29be5684fec7e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182"
+   },
+   {
+    "pr": 9184,
+    "head": "2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184"
+   },
+   {
+    "pr": 9185,
+    "head": "2cd8beed055330fc3beab981e9125f0c57089edb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185"
+   },
+   {
+    "pr": 9186,
+    "head": "763707e9b4cceab1a2f39d366b7ce80635c634f8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186"
+   },
+   {
+    "pr": 9187,
+    "head": "5ec5adb6ba3203cbb4d7c0c67adbd71095f65016",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187"
+   },
+   {
+    "pr": 9188,
+    "head": "53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188"
+   },
+   {
+    "pr": 9190,
+    "head": "a84b15e947c51d00444a13f0b5d84a055a36155a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190"
+   },
+   {
+    "pr": 9191,
+    "head": "4ad51fd69c19f74b0183ac8c3576bd5d84ace42b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191"
+   },
+   {
+    "pr": 9193,
+    "head": "52e320a4b6a6e1ea2bd763adf9a83a524e3838a8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193"
+   },
+   {
+    "pr": 9195,
+    "head": "7aac20aa22a68b2e930e1aa52878b05eaabbf053",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195"
+   },
+   {
+    "pr": 9196,
+    "head": "d7e6aacc7b8cae11c85f64497d74be97f8102afc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196"
+   },
+   {
+    "pr": 9197,
+    "head": "9aa4e51c1c52c084af0a61c4bd3cebc0e084017b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197"
+   },
+   {
+    "pr": 9200,
+    "head": "133b1d2ca7dad87ae42babc0391e1840c1b1082b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200"
+   },
+   {
+    "pr": 9201,
+    "head": "004e5be7e09f069e3681b084c6fff028b2f4590c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201"
+   },
+   {
+    "pr": 9203,
+    "head": "0ea534d94482029e1ec1af4dde36dc8704963f12",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203"
+   },
+   {
+    "pr": 9205,
+    "head": "340b64fa9db9d785aa177ceaedb1e2c135be9df7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-matter-clocks:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -173,11 +923,171 @@
   "id": "J:derive:deferred-20260925-walker-realization-limits:a1",
   "problem": "deferred-20260925-walker-realization-limits",
   "title": "Walker realization and continuum limits",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-27.json there. Select one unresolved extension, spectral, mass or continuum residual. Keep sector-preserving domain restrictions, finite-size genericity and ordered limits explicit. A Gaussian ansatz is not a nonlinear limit; eight-dimensional mass classification is not arbitrary-potential uniqueness; smooth spectral support is needed for the checkerboard rapid-decay lemma. Before work inspect existing attempts, referee reports and active claims for realization, boundary domains, spectral limits, mass; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-walker-realization-limits/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Select one unresolved extension, spectral, mass or continuum residual. Keep sector-preserving domain restrictions, finite-size genericity and ordered limits explicit. A Gaussian ansatz is not a nonlinear limit; eight-dimensional mass classification is not arbitrary-potential uniqueness; smooth spectral support is needed for the checkerboard rapid-decay lemma. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151 at fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152 at ebb46c743c5671cdd8c352c2f2bb27fa176f1e13, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154 at 83703ce444d1d8210d3b1582cbe3db8eb79e0a56, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156 at 65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157 at 82170379077a2d2af45a82f8a27e695969d7c153, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159 at 0981f09c94f1ef15eb88112662338b946257c8b0, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160 at 24cc9059fba92e8bfbeec3f61f8d056241784ec4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162 at 3eaf52ff8e11f79cc3ff315391fece2bdcea4518, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170 at c398d575b37ce4e4564a2e0977764fe5e3b576b4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173 at 2c7d2337779890bd4e0175508a6c698bab6b89d6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174 at c163ceb3d881e849066c68118cc5d64624b272f1, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176 at 248efca4af4cccbc4c22124d477f8eb2c1d7bb06, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177 at f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178 at e348a6bc8badedb136f7ed13a9c0816197ba3bfb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180 at 958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182 at 4167e2da0adc7279f5ef33626b29be5684fec7e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184 at 2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185 at 2cd8beed055330fc3beab981e9125f0c57089edb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186 at 763707e9b4cceab1a2f39d366b7ce80635c634f8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187 at 5ec5adb6ba3203cbb4d7c0c67adbd71095f65016, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188 at 53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190 at a84b15e947c51d00444a13f0b5d84a055a36155a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191 at 4ad51fd69c19f74b0183ac8c3576bd5d84ace42b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193 at 52e320a4b6a6e1ea2bd763adf9a83a524e3838a8, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195 at 7aac20aa22a68b2e930e1aa52878b05eaabbf053, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196 at d7e6aacc7b8cae11c85f64497d74be97f8102afc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197 at 9aa4e51c1c52c084af0a61c4bd3cebc0e084017b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200 at 133b1d2ca7dad87ae42babc0391e1840c1b1082b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201 at 004e5be7e09f069e3681b084c6fff028b2f4590c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203 at 0ea534d94482029e1ec1af4dde36dc8704963f12, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205 at 340b64fa9db9d785aa177ceaedb1e2c135be9df7. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-walker-realization-limits/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Select one unresolved extension, spectral, mass or continuum residual. Keep sector-preserving domain restrictions, finite-size genericity and ordered limits explicit. A Gaussian ansatz is not a nonlinear limit; eight-dimensional mass classification is not arbitrary-potential uniqueness; smooth spectral support is needed for the checkerboard rapid-decay lemma.",
+  "source_references": [
+   {
+    "pr": 9151,
+    "head": "fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151"
+   },
+   {
+    "pr": 9152,
+    "head": "ebb46c743c5671cdd8c352c2f2bb27fa176f1e13",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152"
+   },
+   {
+    "pr": 9154,
+    "head": "83703ce444d1d8210d3b1582cbe3db8eb79e0a56",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9154"
+   },
+   {
+    "pr": 9156,
+    "head": "65f18ede5ab0e6bc6d4e9d7a347ec7c6e40010bf",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9156"
+   },
+   {
+    "pr": 9157,
+    "head": "82170379077a2d2af45a82f8a27e695969d7c153",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9157"
+   },
+   {
+    "pr": 9159,
+    "head": "0981f09c94f1ef15eb88112662338b946257c8b0",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9159"
+   },
+   {
+    "pr": 9160,
+    "head": "24cc9059fba92e8bfbeec3f61f8d056241784ec4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9160"
+   },
+   {
+    "pr": 9162,
+    "head": "3eaf52ff8e11f79cc3ff315391fece2bdcea4518",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9162"
+   },
+   {
+    "pr": 9170,
+    "head": "c398d575b37ce4e4564a2e0977764fe5e3b576b4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170"
+   },
+   {
+    "pr": 9173,
+    "head": "2c7d2337779890bd4e0175508a6c698bab6b89d6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9173"
+   },
+   {
+    "pr": 9174,
+    "head": "c163ceb3d881e849066c68118cc5d64624b272f1",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9174"
+   },
+   {
+    "pr": 9176,
+    "head": "248efca4af4cccbc4c22124d477f8eb2c1d7bb06",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9176"
+   },
+   {
+    "pr": 9177,
+    "head": "f8fb5519520fe9ff1a2a39be8f9cf38aca6124e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9177"
+   },
+   {
+    "pr": 9178,
+    "head": "e348a6bc8badedb136f7ed13a9c0816197ba3bfb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9178"
+   },
+   {
+    "pr": 9180,
+    "head": "958c8ed2c47367a0c9ac10de2a08b2ebee7d3fe7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9180"
+   },
+   {
+    "pr": 9182,
+    "head": "4167e2da0adc7279f5ef33626b29be5684fec7e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9182"
+   },
+   {
+    "pr": 9184,
+    "head": "2cc2429c48b374d727fcb22f4722ddb8ddb5b4b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9184"
+   },
+   {
+    "pr": 9185,
+    "head": "2cd8beed055330fc3beab981e9125f0c57089edb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9185"
+   },
+   {
+    "pr": 9186,
+    "head": "763707e9b4cceab1a2f39d366b7ce80635c634f8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9186"
+   },
+   {
+    "pr": 9187,
+    "head": "5ec5adb6ba3203cbb4d7c0c67adbd71095f65016",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9187"
+   },
+   {
+    "pr": 9188,
+    "head": "53da74f28a5cccc84e0d6e0ffe22ca8de72b22ce",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9188"
+   },
+   {
+    "pr": 9190,
+    "head": "a84b15e947c51d00444a13f0b5d84a055a36155a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9190"
+   },
+   {
+    "pr": 9191,
+    "head": "4ad51fd69c19f74b0183ac8c3576bd5d84ace42b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9191"
+   },
+   {
+    "pr": 9193,
+    "head": "52e320a4b6a6e1ea2bd763adf9a83a524e3838a8",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9193"
+   },
+   {
+    "pr": 9195,
+    "head": "7aac20aa22a68b2e930e1aa52878b05eaabbf053",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9195"
+   },
+   {
+    "pr": 9196,
+    "head": "d7e6aacc7b8cae11c85f64497d74be97f8102afc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9196"
+   },
+   {
+    "pr": 9197,
+    "head": "9aa4e51c1c52c084af0a61c4bd3cebc0e084017b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9197"
+   },
+   {
+    "pr": 9200,
+    "head": "133b1d2ca7dad87ae42babc0391e1840c1b1082b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9200"
+   },
+   {
+    "pr": 9201,
+    "head": "004e5be7e09f069e3681b084c6fff028b2f4590c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9201"
+   },
+   {
+    "pr": 9203,
+    "head": "0ea534d94482029e1ec1af4dde36dc8704963f12",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9203"
+   },
+   {
+    "pr": 9205,
+    "head": "340b64fa9db9d785aa177ceaedb1e2c135be9df7",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9205"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -189,11 +1099,148 @@
   "id": "J:derive:deferred-20260925-energy-moments-and-apparatus:a1",
   "problem": "deferred-20260925-energy-moments-and-apparatus",
   "title": "Energy moments and apparatus",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-28.json there. Uniform physical-process resource bounds beyond one-input swaps; joint growing-time/volume windows and moment-uniformity; distinguish weak energy laws from ordinary moments. Alternative PRE decay/cutoff witnesses and exact toy controls are historical support, not additional retained claims. Before work inspect existing attempts, referee reports and active claims for energy moments and apparatus; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-energy-moments-and-apparatus/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Uniform physical-process resource bounds beyond one-input swaps; joint growing-time/volume windows and moment-uniformity; distinguish weak energy laws from ordinary moments. Alternative PRE decay/cutoff witnesses and exact toy controls are historical support, not additional retained claims. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038 at 6391ac7040663e953c0ca89a8d3e29fc019e6c18, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049 at 0648cc1c37137fe23a581ec2c5e40ea3a56c7493, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057 at c234d47c9d99b7fd5590957ec08d9083877d25e6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067 at ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079 at e846ee9d4133f65d3778fa4dc36524a9ada6db6b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087 at 93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101 at eeb6c3b9770d1353ea28a73ffad23854f12f721a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102 at b091c3cc7de0c26126c752860b28e8e778bd6851, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104 at 55dfb1a8c7924d345d961a7e4763b11f20f1786a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109 at 28965d2737ee32b01bba972273fa51d399c594e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120 at c34ef756d0985e8afed9b38fb1014623b6c2f3bc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124 at 117189ba595d3b62bfcd38a5891c75b87cc355b6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131 at 04dcf088de81990632d869142f30a59e881a8f31, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137 at fdcd4b520036d1d2596715fda7a1bc24fc8710df, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143 at fb1991dfa6971e449513fb8e29884376739d21cc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147 at 1217d914870dd275893a5e15774c4a70bcde37f5, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150 at cb0ad485403605fa007132a73d8feaac6b6c2d81, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167 at 63c82141301f5fe3828b1ed4d385bd9696628e7b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181 at 8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192 at fa81cd2a2c6038a97e862e8ff1ec83bda18084b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199 at d3dfdff92b6eb9e422da3691d13af4c249b7c4e9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206 at bc441a380b91c8d3df18e2b47500148e85418dd3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208 at a4cb43ee996adcc63b13da4fe7501e11643eddeb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213 at bbc136dad67a3a05446b45f21df61759ca9510b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217 at 01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219 at 29ce443ded3739df89523e6872b0740b1ecd3ffb. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-ground-energy-and-response:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-energy-moments-and-apparatus/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Uniform physical-process resource bounds beyond one-input swaps; joint growing-time/volume windows and moment-uniformity; distinguish weak energy laws from ordinary moments. Alternative PRE decay/cutoff witnesses and exact toy controls are historical support, not additional retained claims.",
+  "source_references": [
+   {
+    "pr": 9038,
+    "head": "6391ac7040663e953c0ca89a8d3e29fc019e6c18",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038"
+   },
+   {
+    "pr": 9049,
+    "head": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049"
+   },
+   {
+    "pr": 9057,
+    "head": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057"
+   },
+   {
+    "pr": 9067,
+    "head": "ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067"
+   },
+   {
+    "pr": 9079,
+    "head": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079"
+   },
+   {
+    "pr": 9087,
+    "head": "93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087"
+   },
+   {
+    "pr": 9101,
+    "head": "eeb6c3b9770d1353ea28a73ffad23854f12f721a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101"
+   },
+   {
+    "pr": 9102,
+    "head": "b091c3cc7de0c26126c752860b28e8e778bd6851",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102"
+   },
+   {
+    "pr": 9104,
+    "head": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104"
+   },
+   {
+    "pr": 9109,
+    "head": "28965d2737ee32b01bba972273fa51d399c594e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109"
+   },
+   {
+    "pr": 9120,
+    "head": "c34ef756d0985e8afed9b38fb1014623b6c2f3bc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120"
+   },
+   {
+    "pr": 9124,
+    "head": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124"
+   },
+   {
+    "pr": 9131,
+    "head": "04dcf088de81990632d869142f30a59e881a8f31",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131"
+   },
+   {
+    "pr": 9137,
+    "head": "fdcd4b520036d1d2596715fda7a1bc24fc8710df",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137"
+   },
+   {
+    "pr": 9143,
+    "head": "fb1991dfa6971e449513fb8e29884376739d21cc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143"
+   },
+   {
+    "pr": 9147,
+    "head": "1217d914870dd275893a5e15774c4a70bcde37f5",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147"
+   },
+   {
+    "pr": 9150,
+    "head": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150"
+   },
+   {
+    "pr": 9167,
+    "head": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167"
+   },
+   {
+    "pr": 9181,
+    "head": "8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181"
+   },
+   {
+    "pr": 9192,
+    "head": "fa81cd2a2c6038a97e862e8ff1ec83bda18084b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192"
+   },
+   {
+    "pr": 9199,
+    "head": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199"
+   },
+   {
+    "pr": 9206,
+    "head": "bc441a380b91c8d3df18e2b47500148e85418dd3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206"
+   },
+   {
+    "pr": 9208,
+    "head": "a4cb43ee996adcc63b13da4fe7501e11643eddeb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208"
+   },
+   {
+    "pr": 9213,
+    "head": "bbc136dad67a3a05446b45f21df61759ca9510b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213"
+   },
+   {
+    "pr": 9217,
+    "head": "01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217"
+   },
+   {
+    "pr": 9219,
+    "head": "29ce443ded3739df89523e6872b0740b1ecd3ffb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-ground-energy-and-response:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -205,11 +1252,148 @@
   "id": "J:derive:deferred-20260925-preparation-optical-readout:a1",
   "problem": "deferred-20260925-preparation-optical-readout",
   "title": "Preparation optical readout",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-28.json there. Native physical preparation, positive-window microscopic rates, detector/readout and scale identification. Review historical mean-energy optimizer, continuum overlap improvement, two-probe geometries, positive-time power and preparation-error extensions independently before promotion. Do not equate reference photons, bare counts, actual energy, heat or absorption. Before work inspect existing attempts, referee reports and active claims for preparation optical readout; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-preparation-optical-readout/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Native physical preparation, positive-window microscopic rates, detector/readout and scale identification. Review historical mean-energy optimizer, continuum overlap improvement, two-probe geometries, positive-time power and preparation-error extensions independently before promotion. Do not equate reference photons, bare counts, actual energy, heat or absorption. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038 at 6391ac7040663e953c0ca89a8d3e29fc019e6c18, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049 at 0648cc1c37137fe23a581ec2c5e40ea3a56c7493, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057 at c234d47c9d99b7fd5590957ec08d9083877d25e6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067 at ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079 at e846ee9d4133f65d3778fa4dc36524a9ada6db6b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087 at 93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101 at eeb6c3b9770d1353ea28a73ffad23854f12f721a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102 at b091c3cc7de0c26126c752860b28e8e778bd6851, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104 at 55dfb1a8c7924d345d961a7e4763b11f20f1786a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109 at 28965d2737ee32b01bba972273fa51d399c594e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120 at c34ef756d0985e8afed9b38fb1014623b6c2f3bc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124 at 117189ba595d3b62bfcd38a5891c75b87cc355b6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131 at 04dcf088de81990632d869142f30a59e881a8f31, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137 at fdcd4b520036d1d2596715fda7a1bc24fc8710df, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143 at fb1991dfa6971e449513fb8e29884376739d21cc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147 at 1217d914870dd275893a5e15774c4a70bcde37f5, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150 at cb0ad485403605fa007132a73d8feaac6b6c2d81, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167 at 63c82141301f5fe3828b1ed4d385bd9696628e7b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181 at 8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192 at fa81cd2a2c6038a97e862e8ff1ec83bda18084b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199 at d3dfdff92b6eb9e422da3691d13af4c249b7c4e9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206 at bc441a380b91c8d3df18e2b47500148e85418dd3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208 at a4cb43ee996adcc63b13da4fe7501e11643eddeb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213 at bbc136dad67a3a05446b45f21df61759ca9510b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217 at 01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219 at 29ce443ded3739df89523e6872b0740b1ecd3ffb. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-spectral-readout:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-preparation-optical-readout/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Native physical preparation, positive-window microscopic rates, detector/readout and scale identification. Review historical mean-energy optimizer, continuum overlap improvement, two-probe geometries, positive-time power and preparation-error extensions independently before promotion. Do not equate reference photons, bare counts, actual energy, heat or absorption.",
+  "source_references": [
+   {
+    "pr": 9038,
+    "head": "6391ac7040663e953c0ca89a8d3e29fc019e6c18",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038"
+   },
+   {
+    "pr": 9049,
+    "head": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049"
+   },
+   {
+    "pr": 9057,
+    "head": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057"
+   },
+   {
+    "pr": 9067,
+    "head": "ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067"
+   },
+   {
+    "pr": 9079,
+    "head": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079"
+   },
+   {
+    "pr": 9087,
+    "head": "93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087"
+   },
+   {
+    "pr": 9101,
+    "head": "eeb6c3b9770d1353ea28a73ffad23854f12f721a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101"
+   },
+   {
+    "pr": 9102,
+    "head": "b091c3cc7de0c26126c752860b28e8e778bd6851",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102"
+   },
+   {
+    "pr": 9104,
+    "head": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104"
+   },
+   {
+    "pr": 9109,
+    "head": "28965d2737ee32b01bba972273fa51d399c594e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109"
+   },
+   {
+    "pr": 9120,
+    "head": "c34ef756d0985e8afed9b38fb1014623b6c2f3bc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120"
+   },
+   {
+    "pr": 9124,
+    "head": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124"
+   },
+   {
+    "pr": 9131,
+    "head": "04dcf088de81990632d869142f30a59e881a8f31",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131"
+   },
+   {
+    "pr": 9137,
+    "head": "fdcd4b520036d1d2596715fda7a1bc24fc8710df",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137"
+   },
+   {
+    "pr": 9143,
+    "head": "fb1991dfa6971e449513fb8e29884376739d21cc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143"
+   },
+   {
+    "pr": 9147,
+    "head": "1217d914870dd275893a5e15774c4a70bcde37f5",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147"
+   },
+   {
+    "pr": 9150,
+    "head": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150"
+   },
+   {
+    "pr": 9167,
+    "head": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167"
+   },
+   {
+    "pr": 9181,
+    "head": "8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181"
+   },
+   {
+    "pr": 9192,
+    "head": "fa81cd2a2c6038a97e862e8ff1ec83bda18084b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192"
+   },
+   {
+    "pr": 9199,
+    "head": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199"
+   },
+   {
+    "pr": 9206,
+    "head": "bc441a380b91c8d3df18e2b47500148e85418dd3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206"
+   },
+   {
+    "pr": 9208,
+    "head": "a4cb43ee996adcc63b13da4fe7501e11643eddeb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208"
+   },
+   {
+    "pr": 9213,
+    "head": "bbc136dad67a3a05446b45f21df61759ca9510b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213"
+   },
+   {
+    "pr": 9217,
+    "head": "01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217"
+   },
+   {
+    "pr": 9219,
+    "head": "29ce443ded3739df89523e6872b0740b1ecd3ffb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-spectral-readout:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -221,11 +1405,148 @@
   "id": "J:derive:deferred-20260925-ground-energy-and-response:a1",
   "problem": "deferred-20260925-ground-energy-and-response",
   "title": "Ground energy and response",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-28.json there. Stronger historical filling/activity, late-time budget and normal-state moment-free response results require separate proof/source validation. Landed fixed-graph ordered limits and fourth-moment response domain do not establish a selected physical vacuum, thermal reservoir, detector or infinite-volume law. Before work inspect existing attempts, referee reports and active claims for ground energy and response; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-ground-energy-and-response/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Stronger historical filling/activity, late-time budget and normal-state moment-free response results require separate proof/source validation. Landed fixed-graph ordered limits and fourth-moment response domain do not establish a selected physical vacuum, thermal reservoir, detector or infinite-volume law. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038 at 6391ac7040663e953c0ca89a8d3e29fc019e6c18, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049 at 0648cc1c37137fe23a581ec2c5e40ea3a56c7493, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057 at c234d47c9d99b7fd5590957ec08d9083877d25e6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067 at ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079 at e846ee9d4133f65d3778fa4dc36524a9ada6db6b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087 at 93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101 at eeb6c3b9770d1353ea28a73ffad23854f12f721a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102 at b091c3cc7de0c26126c752860b28e8e778bd6851, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104 at 55dfb1a8c7924d345d961a7e4763b11f20f1786a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109 at 28965d2737ee32b01bba972273fa51d399c594e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120 at c34ef756d0985e8afed9b38fb1014623b6c2f3bc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124 at 117189ba595d3b62bfcd38a5891c75b87cc355b6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131 at 04dcf088de81990632d869142f30a59e881a8f31, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137 at fdcd4b520036d1d2596715fda7a1bc24fc8710df, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143 at fb1991dfa6971e449513fb8e29884376739d21cc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147 at 1217d914870dd275893a5e15774c4a70bcde37f5, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150 at cb0ad485403605fa007132a73d8feaac6b6c2d81, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167 at 63c82141301f5fe3828b1ed4d385bd9696628e7b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181 at 8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192 at fa81cd2a2c6038a97e862e8ff1ec83bda18084b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199 at d3dfdff92b6eb9e422da3691d13af4c249b7c4e9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206 at bc441a380b91c8d3df18e2b47500148e85418dd3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208 at a4cb43ee996adcc63b13da4fe7501e11643eddeb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213 at bbc136dad67a3a05446b45f21df61759ca9510b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217 at 01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219 at 29ce443ded3739df89523e6872b0740b1ecd3ffb. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-energy-moments-and-apparatus:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-ground-energy-and-response/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Stronger historical filling/activity, late-time budget and normal-state moment-free response results require separate proof/source validation. Landed fixed-graph ordered limits and fourth-moment response domain do not establish a selected physical vacuum, thermal reservoir, detector or infinite-volume law.",
+  "source_references": [
+   {
+    "pr": 9038,
+    "head": "6391ac7040663e953c0ca89a8d3e29fc019e6c18",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038"
+   },
+   {
+    "pr": 9049,
+    "head": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049"
+   },
+   {
+    "pr": 9057,
+    "head": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057"
+   },
+   {
+    "pr": 9067,
+    "head": "ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067"
+   },
+   {
+    "pr": 9079,
+    "head": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079"
+   },
+   {
+    "pr": 9087,
+    "head": "93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087"
+   },
+   {
+    "pr": 9101,
+    "head": "eeb6c3b9770d1353ea28a73ffad23854f12f721a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101"
+   },
+   {
+    "pr": 9102,
+    "head": "b091c3cc7de0c26126c752860b28e8e778bd6851",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102"
+   },
+   {
+    "pr": 9104,
+    "head": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104"
+   },
+   {
+    "pr": 9109,
+    "head": "28965d2737ee32b01bba972273fa51d399c594e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109"
+   },
+   {
+    "pr": 9120,
+    "head": "c34ef756d0985e8afed9b38fb1014623b6c2f3bc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120"
+   },
+   {
+    "pr": 9124,
+    "head": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124"
+   },
+   {
+    "pr": 9131,
+    "head": "04dcf088de81990632d869142f30a59e881a8f31",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131"
+   },
+   {
+    "pr": 9137,
+    "head": "fdcd4b520036d1d2596715fda7a1bc24fc8710df",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137"
+   },
+   {
+    "pr": 9143,
+    "head": "fb1991dfa6971e449513fb8e29884376739d21cc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143"
+   },
+   {
+    "pr": 9147,
+    "head": "1217d914870dd275893a5e15774c4a70bcde37f5",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147"
+   },
+   {
+    "pr": 9150,
+    "head": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150"
+   },
+   {
+    "pr": 9167,
+    "head": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167"
+   },
+   {
+    "pr": 9181,
+    "head": "8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181"
+   },
+   {
+    "pr": 9192,
+    "head": "fa81cd2a2c6038a97e862e8ff1ec83bda18084b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192"
+   },
+   {
+    "pr": 9199,
+    "head": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199"
+   },
+   {
+    "pr": 9206,
+    "head": "bc441a380b91c8d3df18e2b47500148e85418dd3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206"
+   },
+   {
+    "pr": 9208,
+    "head": "a4cb43ee996adcc63b13da4fe7501e11643eddeb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208"
+   },
+   {
+    "pr": 9213,
+    "head": "bbc136dad67a3a05446b45f21df61759ca9510b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213"
+   },
+   {
+    "pr": 9217,
+    "head": "01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217"
+   },
+   {
+    "pr": 9219,
+    "head": "29ce443ded3739df89523e6872b0740b1ecd3ffb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-energy-moments-and-apparatus:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -237,11 +1558,148 @@
   "id": "J:derive:deferred-20260925-charge-threshold-and-transport:a1",
   "problem": "deferred-20260925-charge-threshold-and-transport",
   "title": "Charge threshold and transport",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-28.json there. Historical tighter finite-torus threshold, full auxiliary band, charge trace-distance, broader escape projector coefficients and formation-factor covariance remainder require separate validation. Test selected charged packets, finite-coupling/fixed-momentum binding, larger dressings, force/current/readout and calibrated scales; the landed global flat threshold and one escape target do not settle these. Before work inspect existing attempts, referee reports and active claims for charge threshold and transport; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-charge-threshold-and-transport/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Historical tighter finite-torus threshold, full auxiliary band, charge trace-distance, broader escape projector coefficients and formation-factor covariance remainder require separate validation. Test selected charged packets, finite-coupling/fixed-momentum binding, larger dressings, force/current/readout and calibrated scales; the landed global flat threshold and one escape target do not settle these. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038 at 6391ac7040663e953c0ca89a8d3e29fc019e6c18, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049 at 0648cc1c37137fe23a581ec2c5e40ea3a56c7493, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057 at c234d47c9d99b7fd5590957ec08d9083877d25e6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067 at ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079 at e846ee9d4133f65d3778fa4dc36524a9ada6db6b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087 at 93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101 at eeb6c3b9770d1353ea28a73ffad23854f12f721a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102 at b091c3cc7de0c26126c752860b28e8e778bd6851, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104 at 55dfb1a8c7924d345d961a7e4763b11f20f1786a, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109 at 28965d2737ee32b01bba972273fa51d399c594e4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120 at c34ef756d0985e8afed9b38fb1014623b6c2f3bc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124 at 117189ba595d3b62bfcd38a5891c75b87cc355b6, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131 at 04dcf088de81990632d869142f30a59e881a8f31, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137 at fdcd4b520036d1d2596715fda7a1bc24fc8710df, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143 at fb1991dfa6971e449513fb8e29884376739d21cc, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147 at 1217d914870dd275893a5e15774c4a70bcde37f5, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150 at cb0ad485403605fa007132a73d8feaac6b6c2d81, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167 at 63c82141301f5fe3828b1ed4d385bd9696628e7b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181 at 8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192 at fa81cd2a2c6038a97e862e8ff1ec83bda18084b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199 at d3dfdff92b6eb9e422da3691d13af4c249b7c4e9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206 at bc441a380b91c8d3df18e2b47500148e85418dd3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208 at a4cb43ee996adcc63b13da4fe7501e11643eddeb, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213 at bbc136dad67a3a05446b45f21df61759ca9510b3, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217 at 01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219 at 29ce443ded3739df89523e6872b0740b1ecd3ffb. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-charge-threshold-and-transport/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "Historical tighter finite-torus threshold, full auxiliary band, charge trace-distance, broader escape projector coefficients and formation-factor covariance remainder require separate validation. Test selected charged packets, finite-coupling/fixed-momentum binding, larger dressings, force/current/readout and calibrated scales; the landed global flat threshold and one escape target do not settle these.",
+  "source_references": [
+   {
+    "pr": 9038,
+    "head": "6391ac7040663e953c0ca89a8d3e29fc019e6c18",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9038"
+   },
+   {
+    "pr": 9049,
+    "head": "0648cc1c37137fe23a581ec2c5e40ea3a56c7493",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9049"
+   },
+   {
+    "pr": 9057,
+    "head": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9057"
+   },
+   {
+    "pr": 9067,
+    "head": "ec79a0032dbc14375c0a9d0eb7eda1c7be8eedfa",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9067"
+   },
+   {
+    "pr": 9079,
+    "head": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9079"
+   },
+   {
+    "pr": 9087,
+    "head": "93d20a39ad4bcbab30463033d0cd1e7ff3a02fe3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9087"
+   },
+   {
+    "pr": 9101,
+    "head": "eeb6c3b9770d1353ea28a73ffad23854f12f721a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9101"
+   },
+   {
+    "pr": 9102,
+    "head": "b091c3cc7de0c26126c752860b28e8e778bd6851",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9102"
+   },
+   {
+    "pr": 9104,
+    "head": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9104"
+   },
+   {
+    "pr": 9109,
+    "head": "28965d2737ee32b01bba972273fa51d399c594e4",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9109"
+   },
+   {
+    "pr": 9120,
+    "head": "c34ef756d0985e8afed9b38fb1014623b6c2f3bc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9120"
+   },
+   {
+    "pr": 9124,
+    "head": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9124"
+   },
+   {
+    "pr": 9131,
+    "head": "04dcf088de81990632d869142f30a59e881a8f31",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9131"
+   },
+   {
+    "pr": 9137,
+    "head": "fdcd4b520036d1d2596715fda7a1bc24fc8710df",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9137"
+   },
+   {
+    "pr": 9143,
+    "head": "fb1991dfa6971e449513fb8e29884376739d21cc",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9143"
+   },
+   {
+    "pr": 9147,
+    "head": "1217d914870dd275893a5e15774c4a70bcde37f5",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9147"
+   },
+   {
+    "pr": 9150,
+    "head": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150"
+   },
+   {
+    "pr": 9167,
+    "head": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167"
+   },
+   {
+    "pr": 9181,
+    "head": "8337fbfc7bd62fe4aa5560d3e92d1c817b03ba83",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9181"
+   },
+   {
+    "pr": 9192,
+    "head": "fa81cd2a2c6038a97e862e8ff1ec83bda18084b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9192"
+   },
+   {
+    "pr": 9199,
+    "head": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9199"
+   },
+   {
+    "pr": 9206,
+    "head": "bc441a380b91c8d3df18e2b47500148e85418dd3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9206"
+   },
+   {
+    "pr": 9208,
+    "head": "a4cb43ee996adcc63b13da4fe7501e11643eddeb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9208"
+   },
+   {
+    "pr": 9213,
+    "head": "bbc136dad67a3a05446b45f21df61759ca9510b3",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9213"
+   },
+   {
+    "pr": 9217,
+    "head": "01130172d88eaaa2adac8ae0b60cd3fb4b3b2f4d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9217"
+   },
+   {
+    "pr": 9219,
+    "head": "29ce443ded3739df89523e6872b0740b1ecd3ffb",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9219"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -253,11 +1711,38 @@
   "id": "J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1",
   "problem": "deferred-20260925-nearest-neighbour-finite-coupling",
   "title": "Neighbour-bound pairs beyond leading order",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. The accepted pair-speed result is a leading large-coupling Gram formula at fixed nonzero isolated coin eigenvalue and gap. Derive controlled finite-coupling corrections, handle closing gaps/projector coincidences, and test physical inertial/passive response without inferring it from curvature alone. Original PR9227 and its branch remain recovery inputs. Before work inspect existing attempts, referee reports and active claims for nearest neighbour finite coupling; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-nearest-neighbour-finite-coupling/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: The accepted pair-speed result is a leading large-coupling Gram formula at fixed nonzero isolated coin eigenvalue and gap. Derive controlled finite-coupling corrections, handle closing gaps/projector coincidences, and test physical inertial/passive response without inferring it from curvature alone. Original PR9227 and its branch remain recovery inputs. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227 at 5c7c52847eeb03489813c0ddf3094759f9bd7a9c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229 at 136eb4f7a61b7e1b98b829593bace4f8b7cbc240, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230 at 6b91f8337245036fbf155ef06f0c20414f18b4b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233 at 937d5cfd95f419e5f68f9602e6cd13dd701f1a52. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-charge-threshold-and-transport:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-nearest-neighbour-finite-coupling/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "The accepted pair-speed result is a leading large-coupling Gram formula at fixed nonzero isolated coin eigenvalue and gap. Derive controlled finite-coupling corrections, handle closing gaps/projector coincidences, and test physical inertial/passive response without inferring it from curvature alone. Original PR9227 and its branch remain recovery inputs.",
+  "source_references": [
+   {
+    "pr": 9227,
+    "head": "5c7c52847eeb03489813c0ddf3094759f9bd7a9c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227"
+   },
+   {
+    "pr": 9229,
+    "head": "136eb4f7a61b7e1b98b829593bace4f8b7cbc240",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229"
+   },
+   {
+    "pr": 9230,
+    "head": "6b91f8337245036fbf155ef06f0c20414f18b4b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230"
+   },
+   {
+    "pr": 9233,
+    "head": "937d5cfd95f419e5f68f9602e6cd13dd701f1a52",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-charge-threshold-and-transport:a1"
+  ]
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -269,11 +1754,36 @@
   "id": "J:derive:deferred-20260925-lattice-scattering-threshold-bridge:a1",
   "problem": "deferred-20260925-lattice-scattering-threshold-bridge",
   "title": "Lattice scattering threshold bridge",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. PR9229 leaves complete AC scattering/local-current decomposition, regular shell kernels, and uniform complex threshold resolvent estimates including matrix coin cones unproved. Candidate interval enclosures do not count eigenvalues and embedded/outside-domain spectrum remains open. Resolve one exact analytic bridge with explicit hypotheses; do not repeat an unconditional all-local-interaction no-go. Before work inspect existing attempts, referee reports and active claims for matrix coin threshold resolvent; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-lattice-scattering-threshold-bridge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: PR9229 leaves complete AC scattering/local-current decomposition, regular shell kernels, and uniform complex threshold resolvent estimates including matrix coin cones unproved. Candidate interval enclosures do not count eigenvalues and embedded/outside-domain spectrum remains open. Resolve one exact analytic bridge with explicit hypotheses; do not repeat an unconditional all-local-interaction no-go. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227 at 5c7c52847eeb03489813c0ddf3094759f9bd7a9c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229 at 136eb4f7a61b7e1b98b829593bace4f8b7cbc240, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230 at 6b91f8337245036fbf155ef06f0c20414f18b4b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233 at 937d5cfd95f419e5f68f9602e6cd13dd701f1a52. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-lattice-scattering-threshold-bridge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "PR9229 leaves complete AC scattering/local-current decomposition, regular shell kernels, and uniform complex threshold resolvent estimates including matrix coin cones unproved. Candidate interval enclosures do not count eigenvalues and embedded/outside-domain spectrum remains open. Resolve one exact analytic bridge with explicit hypotheses; do not repeat an unconditional all-local-interaction no-go.",
+  "source_references": [
+   {
+    "pr": 9227,
+    "head": "5c7c52847eeb03489813c0ddf3094759f9bd7a9c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227"
+   },
+   {
+    "pr": 9229,
+    "head": "136eb4f7a61b7e1b98b829593bace4f8b7cbc240",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229"
+   },
+   {
+    "pr": 9230,
+    "head": "6b91f8337245036fbf155ef06f0c20414f18b4b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230"
+   },
+   {
+    "pr": 9233,
+    "head": "937d5cfd95f419e5f68f9602e6cd13dd701f1a52",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": []
  },
  {
   "type": "judgment",
-  "lane": "deferred-science-recovery",
+  "lane": "stronger-claim-research",
   "tier": 3,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -285,6 +1795,103 @@
   "id": "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1",
   "problem": "deferred-20260925-nonlinear-moving-source-completion",
   "title": "Nonlinear moving source completion",
-  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-29.json there. PR9230 excludes the radiation pole and gives a conservative near-zone response with supplied source stress. PR9233 supplies self-subtracted moving charge and field-momentum continuation. The finite-cluster virial identity is conditional, not a nonlinear source-field completion. Test one explicit compatible nonlinear evolution with constraints, self-energy and source law; retain resonance, radiation, branch and finite-size domains. Before work inspect existing attempts, referee reports and active claims for nonlinear source constraint completion; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-nonlinear-moving-source-completion/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle."
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: PR9230 excludes the radiation pole and gives a conservative near-zone response with supplied source stress. PR9233 supplies self-subtracted moving charge and field-momentum continuation. The finite-cluster virial identity is conditional, not a nonlinear source-field completion. Test one explicit compatible nonlinear evolution with constraints, self-energy and source law; retain resonance, radiation, branch and finite-size domains. Include PR9237/9241 homogeneous scalar and diagonal actions as candidate reductions: derive or refute their embedding into complete lapse, shift, shear and nonuniform source equations. Quadratic kinetics do not fix nonlinear evolution; expanding-branch rate isotropization need not equalize limiting length ratios. Coordinate this homogeneous case within this task rather than creating a duplicate completion task. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227 at 5c7c52847eeb03489813c0ddf3094759f9bd7a9c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229 at 136eb4f7a61b7e1b98b829593bace4f8b7cbc240, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230 at 6b91f8337245036fbf155ef06f0c20414f18b4b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233 at 937d5cfd95f419e5f68f9602e6cd13dd701f1a52, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9237 at d6b9ec2b365298cfdc472bee8a9d8e6c892c848d, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9241 at cc74f9e72ec145a5bdaa816018c0f4a511cd8bd5. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-walker-source-closure:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-nonlinear-moving-source-completion/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+  "research_target": "PR9230 excludes the radiation pole and gives a conservative near-zone response with supplied source stress. PR9233 supplies self-subtracted moving charge and field-momentum continuation. The finite-cluster virial identity is conditional, not a nonlinear source-field completion. Test one explicit compatible nonlinear evolution with constraints, self-energy and source law; retain resonance, radiation, branch and finite-size domains. Include PR9237/9241 homogeneous scalar and diagonal actions as candidate reductions: derive or refute their embedding into complete lapse, shift, shear and nonuniform source equations. Quadratic kinetics do not fix nonlinear evolution; expanding-branch rate isotropization need not equalize limiting length ratios. Coordinate this homogeneous case within this task rather than creating a duplicate completion task.",
+  "source_references": [
+   {
+    "pr": 9227,
+    "head": "5c7c52847eeb03489813c0ddf3094759f9bd7a9c",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227"
+   },
+   {
+    "pr": 9229,
+    "head": "136eb4f7a61b7e1b98b829593bace4f8b7cbc240",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229"
+   },
+   {
+    "pr": 9230,
+    "head": "6b91f8337245036fbf155ef06f0c20414f18b4b9",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230"
+   },
+   {
+    "pr": 9233,
+    "head": "937d5cfd95f419e5f68f9602e6cd13dd701f1a52",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233"
+   },
+   {
+    "pr": 9237,
+    "head": "d6b9ec2b365298cfdc472bee8a9d8e6c892c848d",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9237",
+    "status_at_intake": "under review; not yet landed"
+   },
+   {
+    "pr": 9241,
+    "head": "cc74f9e72ec145a5bdaa816018c0f4a511cd8bd5",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9241",
+    "status_at_intake": "under review; not yet landed"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-walker-source-closure:a1"
+  ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-sea-source-subtraction-consistency:a1",
+  "problem": "deferred-20260925-sea-source-subtraction-consistency",
+  "title": "Consistent evolving sea source and pressure",
+  "lane": "stronger-claim-research",
+  "research_target": "Can an explicitly specified evolving lattice source consistently use a free instantaneous sea energy or its subtraction? Derive the energy and pressure counterterms and test conservation. Distinguish free fermions from fully occupied hard-core hopping, which is blocked; massive instantaneous Hamiltonians at different lengths need not preserve occupations. Deliver one consistent conditional source prescription or a decisive obstruction to that prescription, without selecting a physical vacuum by assumption.",
+  "source_references": [
+   {
+    "pr": 9240,
+    "head": "b88ec3d5f3e7e0494032ead91fa1826af27d9087",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9240",
+    "status_at_intake": "under review; not yet landed"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1"
+  ],
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Can an explicitly specified evolving lattice source consistently use a free instantaneous sea energy or its subtraction? Derive the energy and pressure counterterms and test conservation. Distinguish free fermions from fully occupied hard-core hopping, which is blocked; massive instantaneous Hamiltonians at different lengths need not preserve occupations. Deliver one consistent conditional source prescription or a decisive obstruction to that prescription, without selecting a physical vacuum by assumption. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9240 at b88ec3d5f3e7e0494032ead91fa1826af27d9087. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nonlinear-moving-source-completion:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-same-band-radiation-boundary:a1",
+  "problem": "deferred-20260925-same-band-radiation-boundary",
+  "title": "Interband radiation: actual coupling and occupation rules",
+  "lane": "stronger-claim-research",
+  "research_target": "Does a specified walker-field coupling allow an interband single-quantum process? The strict same-band energy-difference inequality does not answer this: explicit interband energy/momentum resonances exist. Compute an actual transition matrix element and occupation constraint for one resonance, with the single-quantum energy assumption explicit. Prove suppression under stated hypotheses or exhibit a nonzero allowed amplitude; do not repeat the already-refuted universal kinematic no-go.",
+  "source_references": [
+   {
+    "pr": 9242,
+    "head": "bea8e806aa67aed2657544d7820cc7fcaec67b0a",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9242",
+    "status_at_intake": "under review; not yet landed"
+   }
+  ],
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-nonlinear-moving-source-completion:a1"
+  ],
+  "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Does a specified walker-field coupling allow an interband single-quantum process? The strict same-band energy-difference inequality does not answer this: explicit interband energy/momentum resonances exist. Compute an actual transition matrix element and occupation constraint for one resonance, with the single-quantum energy assumption explicit. Prove suppression under stated hypotheses or exhibit a nonzero allowed amplitude; do not repeat the already-refuted universal kinematic no-go. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9242 at bea8e806aa67aed2657544d7820cc7fcaec67b0a. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nonlinear-moving-source-completion:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-same-band-radiation-boundary/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR."
  }
 ]

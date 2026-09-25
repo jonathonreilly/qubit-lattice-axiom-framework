@@ -1,24 +1,9 @@
-# Deferred science from additional landing batches
+# Stronger-claim research for J agents
 
-This supplement preserves 43 reviewed PR originals and their precise corrected boundaries. Main is scientific authority; these originals are recovery material only. Read the relevant unit JSON, verify its content-addressed source files, fetch current main and inspect the accepted source before selecting one still-open residual. No prior PASS heading restores a demoted claim.
+The live queue is `probes/tasks/deferred-science-20260925.json`, mirrored in `probes/TASKS.json`: **20 scientific research tasks**, not PRs awaiting landing. Eighteen existing task IDs and their progress are preserved; ring-energy and homogeneous-completion questions were folded into existing tasks, and two distinct sea-source/radiation questions were added.
 
-Seven bounded first-pass tasks are in the existing maximum-thinking J queue. Use claim.py and inspect earlier attempts/active claims before doing new work. Worker outputs remain provisional pending independent confirmation and later authorized review. No worker or agent was launched by this intake.
+Each task states the stronger question, known review boundary, source PR/commit references, expected evidence and related tasks. Claim through the normal maximum-thinking J queue. Work on one precise unresolved obligation and return a proof, counterexample or checked partial result; the stronger claim is a hypothesis, not an expected conclusion. Inspect current main, active claims and prior attempts first. Do not redo an existing result, reopen a PR, or rebuild its packet. Independent confirmation remains required.
 
-Live progress is in claim.py status, logs/probes/J:derive:deferred-20260925-* and per-worker RECOVERY_STATUS.json under probes/work/derive/. Completion of one task does not exhaust its source unit; keep remaining obligations ranked and explicit. For the earlier 160-PR bundle see ../deferred-science-20260924/README.md.
+The existing manifest and unit files describe **104 historical PR snapshots**, not 104 research jobs. They remain archival references for already-started work; no new snapshots are needed for this intake. PR/commit links provide provenance. These archives do not grant scientific authority, and their historical counts are not the queue size.
 
-Unit18: conditional generator, record/frequency and clock boundaries. Unit19: finite gauge/band and topology obligations. Unit20: integer support, tensor gauge and effective dynamics. Unit21: ensemble affinity, nonlinear weights, channel and composition assumptions. Unit22: finite ring-model diagnostics, estimator and limiting obligations. Unit23: conditional matter networks, synthesis and formation clocks. All 17 added originals have landed narrowed source; the original branches remain preserved. Unit25: five conditional spectral results, with selected-time cancellation, pole-uniform estimates, propagation and readout limits remaining open. Both original PR payloads are preserved in full, including material excluded from the canonical landing.
-
-
-## Unit27 supplement
-
-Preserves all 31 walker/source PR originals (434 original paths), their corrected source dispositions and four bounded maximum-thinking recovery tasks. This brings the September25 bundle to 74 reviewed PR originals. No worker is launched; each task selects one unresolved residual and checks current work before proceeding.
-
-
-## Unit28 supplement
-
-Preserves all 26 formation, energy and charge PR originals, complete source dispositions and four bounded maximum-thinking recovery tasks. The canonical arguments and runtime helpers were reviewed; historical extensions listed in unit-28-salvage.json are ungraded recovery candidates, not freshly certified proofs. No worker is launched.
-
-
-## Unit29 supplement
-
-Preserves all four pair, scattering and response PR originals and their source dispositions, with three bounded maximum-thinking recovery tasks. Off-pole response and fixed finite-cluster identities do not close nonlinear source-field consistency. No worker is launched.
+Progress remains in claim.py status, logs/probes, and each task's probes/work/derive/<problem>/<worker>/ directory. Existing completed attempts and active claims are not reset. No workers were launched by this queue update.

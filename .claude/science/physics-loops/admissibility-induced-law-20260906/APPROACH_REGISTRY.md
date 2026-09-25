@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F114 possibility's odds: one massless channel, its motion, the log far field | sector kernels (series); order comparison (rational bounds); large-β chain (polynomial eigenmodes); precession spectra (symbolic); six-axis map to third order (exact); cubic coefficient; centre manifold | block 114 (harvest of #8933, #8926, #8723; Grok-refereed) |

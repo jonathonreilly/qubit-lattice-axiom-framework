@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_possibilitys_odds_only_the_turn_is_massless_a_precessing_turn_diffuses_a_records_lean_runs_logarithmically_2026_09_24.py
+runner_sha256: 3b0cb8d9e06cbfee479e14321e08e0f7c6c1729eed14f9da0c8c396e75264e8e
+input_fingerprint_sha256: 2f581c07a0031a7fe09a96e0bd425ef57e9fc623a7b455940c7c3bfe9e0c3201
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.42
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_POSSIBILITYS_ODDS_ONLY_THE_TURN_IS_MASSLESS_A_PRECESSING_TURN_DIFFUSES_AND_ON_THE_SIX_AXIS_MASSLESS_SURFACE_A_RECORDS_LEAN_FALLS_AS_ONE_OVER_R_ONLY_UP_TO_A_LOGARITHM_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the odds map, its menu and any precession are supplied clauses)
+PASS: B1 T1: on the sphere menu, the one-neighbour kernel e^(beta s.b) splits by azimuthal order m into the positive kernels e^(beta t t') I_m(beta r r'): the angular average of e^(x cos psi) cos(m psi) matches I_m(x) through x^12 for m = 0..4; and I_m(x) < I_1(x) for m = 2, 3, 4 at x = 1/2, 1, 3 by exact rational bounds (the order comparison the proof imports for every x > 0)
+PASS: B2 T1: as beta grows the sea tends in the tangent plane to a Gaussian of curvature a with a -> a beta/(2a + beta) under one neighbour, fixed by the sixth power at a = 5 beta/2; the per-neighbour chain is y | x Gaussian with mean x/6 and variance 1/(6 beta), whose Hermite modes have eigenvalues 6^-n (checked for n <= 3): masses (1 - 6 mu)/mu = [0, 30, 210] - the turn (n = 1) massless, the lean size and m = +-2 at 30, the next at 210
+PASS: C1 T2: on the ordered sea the turns relax as tau' = -(Gamma + Omega n x)(tau - mean of the six neighbours), so omega(k) = (+-Omega - i Gamma) E(k)/6 exactly, E = sum(2 - 2 cos k_j): circularly polarized, omega ~ k^2, one quality factor Omega/Gamma at every k - no sound; on the staggered sea (beta < 0) the two sublattices precess oppositely and lambda^2 + 2 Gamma lambda + (Gamma^2 + Omega^2)(1 - gamma^2) = 0: at Gamma = 0, omega = +-Omega sqrt(1 - gamma^2) = +-Omega |k|/sqrt 3 + O(k^3) along an axis, and for Gamma > 0 the slow root is -(Gamma^2 + Omega^2)(1 - gamma^2)/(2 Gamma) + ..., diffusive
+PASS: D1 T3: for block 42's six-axis map, a site whose neighbours carry leans v_y and quadrupoles D_y gets v' = l1 S1 + 3 l1^3 (sum v^3 - S1 sum v^2) - 2 l1 l2 (sum vD - S1 sum D) + O(t^5) and D' = l2 sum D + (3/2) l1^2 (S1^2 - sum v^2) + O(t^4), exactly (three weight triples, two neighbourhoods); for slow fields the quadrupole is slaved, D = 45 l1^2 v^2/(1 - 6 l2), and the lean obeys -Lap v + m^2 v + u v^3 = source, u = 90 l1^2 (1 - 36 l2)/(1 - 6 l2); on the massless surface 5p = 7q + 4r, l1 = 1/6 and u = (5/2)(4r - 7q)/(r - q), 5/2 at (3,1,2)
+PASS: E1 T4: for v = A(r)/r, Lap v = A''/r, so away from the source the cubic lean equation is A'' = u A^3/r^2, that is A_tau tau - A_tau = u A^3 in tau = log r; its decaying solutions lie on the centre manifold A_tau = -u A^3 + 3 u^2 A^5 - 24 u^3 A^7 + ... (checked through order 8), so (A^-2)_tau = 2u - 6 u^2 A^2 + ...: A^-2 = 2u log r - 3u log log r + C + o(1) - a record's lean falls as 1/r only up to this logarithm, and a weak source keeps a 1/r field out to about r0 exp(1/(2 u A0^2))
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the sector kernels' series through x^12; the order comparison at three points by rational bounds; the large-beta Gaussian chain's Hermite eigenvalues
+per_site: executed - the six-axis map's third-order expansion, exactly, for three weight triples and two neighbourhoods
+per_mode: executed - the turn's frequencies on the ordered and the staggered sea (symbolic), the sound speed along an axis and the slow root
+per_block: executed - the slaved quadrupole, the cubic coefficient on the massless surface, the radial reduction and the centre manifold through order 8
+lattice_wide: T1 for every beta above block 103's massless point and every non-decreasing leaning sea, with the positive-kernel and order-comparison imports; T2 for the supplied precession on both seas; T3-T4 for block 42's six-axis map at every weight triple, in the gradient expansion; the maps, the menus and the precession are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: possibility's odds - on the sphere menu only the turn is massless for |m| >= 1 (with named imports), the large-beta masses are 6^n - 6; a precessing turn diffuses (omega ~ k^2), sound only on a staggered sea without relaxation; on the six-axis massless surface the lean has a cubic term u = (5/2)(4r - 7q)/(r - q) and a record's 1/r field runs logarithmically; nothing adopted
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

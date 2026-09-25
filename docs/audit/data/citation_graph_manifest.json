@@ -1,6 +1,6 @@
 {
  "edge_count": 14640,
- "node_count": 6655,
+ "node_count": 6656,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -941,6 +941,10 @@
   "admissibility_rule_possibilitys_odds_carry_content_not_record_count_at_long_range_a_massless_turn_channel_in_the_ordered_sea_bounded_theorem_note_2026-09-23": {
    "deps_hash": "b7002d5b27d6",
    "out_degree": 4
+  },
+  "admissibility_rule_possibilitys_odds_only_the_turn_is_massless_a_precessing_turn_diffuses_and_on_the_six_axis_massless_surface_a_records_lean_falls_as_one_over_r_only_up_to_a_logarithm_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_re_recording_at_every_tick_static_law_stationary_light_cone_bilayer_long_range_order_green_function_response_conditional_on_an_excluded_clause_bounded_theorem_note_2026-09-20": {
    "deps_hash": "7fff3dc3d206",

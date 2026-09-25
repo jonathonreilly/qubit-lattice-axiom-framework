@@ -401,3 +401,16 @@ The owner asked: "are you writing blocks from the opus probe work?" Blocks 95–
 Two further points bear on this:
 - Records under one per site keep the books only at leading order (block 137).
 - A probes attempt (#9198, unrefereed) finds that the sea of block 62's frame-coupled walk does not induce the member's form: its order-`q²` part is not relabelling-invariant, its kinetic part is never at `β = −α`, and a uniform shear lowers its energy.
+
+## Twenty-fifth addendum (2026-09-25): the walk's own kinematics (block 140)
+
+| # | Question | State | Deciding computation | Status |
+|---|---|---|---|---|
+| 134 | Summed over the lattice, the books of blocks 136 and 139 concern the energy's centroid. What are the brackets of the walk's energy dipole? | The centroid moves exactly with the two-step momentum, so the walk carries an exactly kept boost charge, with or without its rest energy. The boost charge's bracket with the momentum is the energy times `cos 2k`: block 106's fall weight. Its bracket with itself is an exactly kept, mass-independent angular momentum, made of the two-step orbital part and the coin's spin on the faces (block 138). The angular momentum turns the momentum with the same factor `cos 2k`. Every factor tends to 1 at long wavelength, where the brackets are the comparator's kinematic ones with `J = L + σ/2`, and each species keeps its own spin sign. | block 140 (#9203), the supervisor's own derivation, not refereed by another family; own runner 11/0 (symbolic and exact vectors) | exact operator identities; the bracket of two angular-momentum components not claimed exact |
+
+**Reading.** Three results that were stated separately are brackets of one object, the walk's energy dipole:
+- the fall weight (block 106);
+- the exact books (blocks 136, 139);
+- the face spin (block 138).
+
+The walk thus carries a copy of the comparator's kinematics. It is exact where the books are exact, and deformed by `cos 2k` where the fall is. Under one record per site (block 137) the boost charge is not kept.

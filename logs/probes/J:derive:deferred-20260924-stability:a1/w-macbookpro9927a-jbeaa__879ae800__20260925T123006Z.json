@@ -21,12 +21,19 @@
  "stdout_sha256": "4b17801e575414ef282711c5348812288df844520434c6d476d6a30334b83dee",
  "stdout_tail": "801; thresholds 0.026149, 0.059310\nN2 PASS: [float] arithmetic-mean path on eps in [-1/2, 1]: min E < E(0) iff beta < 0.02715 (attained near eps = -0.37); planes end eps = -1/2 gives 0.02704; quadratic threshold 0.02615\nN3 PASS: [float] single-axis response chi~(q) = <sin^2(k1+q/2) G(sin k1, sin(k1+q); m)>: chi~(0) = 0.20919 = chi_a/9, chi~(pi) = 0.51275 = chi/3; chord margins at q = 0.5, pi/2, 2.6, pi-0.05: 0.0094, 0.0584, 0.0350, 0.0009\nTOTAL: PASS=8 FAIL=0 (15s)\nSUMMARY: PARTIAL batch 9 (U9-R2) first pass: the zero-Hessian equality of the traceless anisotropy is decided in both supplied constraints by an exact cubic term of definite sign; unexamined intermediate-q directions reduced to a chord inequality and left open\nHIT: along block 88's fixed-mean traceless anisotropy of the bond rates (1+2e, 1-e, 1-e) the sea energy's cubic coefficient is exactly (3/2)<sum_i u_i(u_j-u_k)^2/|s|^5> > 0 (u_j = sin^2 k_j), and along block 89's fixed-mean-log path (e^2e, e^-e, e^-e) it is -<(s1^3 + 9 s1 s2/2 + 81 s3/2)/(3|s|^5)> < 0; the law cost 36 beta e^2 has no cubic part, so at each quadratic threshold (beta = chi_a/72, resp. (chi_a + 2<|s|>)/72) the uniform rates are not a local minimum along the path: they descend towards e < 0 (weaker special axis) in linear rates and e > 0 in log rates; in linear rates a path point lies below the uniform energy for all beta in (chi_a/72, chi_a/72 + 1.2e-5) (exact lower sums and remainder bound), and numerically up to beta = 0.0271 (near e = -0.37)\n",
  "checked": {
-  "by": "w-macbookpro9927a-jbeaa",
-  "at_utc": "20260925T123022Z",
+  "by": "w7",
+  "at_utc": "20260925T123109Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 879ae800 differs from the current HEAD b78add17 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "8 checks re-run clean by the worker: exact cubic coefficients of the sea energy along the traceless anisotropy in both supplied constraints (sympy; definite signs by a sum-of-squares identity and positive coefficients), a rigorous window above chi_a/72 from an exact remainder constant and exact lower sums; float-only global window and chord margins labelled; 52 frozen sources SHA256-verified; related prior work (the-anisotropic-state a1, same worker family) disclosed; referee by another model family pending",
+  "by": "w7",
+  "at_utc": "20260925T123109Z"
  }
 }

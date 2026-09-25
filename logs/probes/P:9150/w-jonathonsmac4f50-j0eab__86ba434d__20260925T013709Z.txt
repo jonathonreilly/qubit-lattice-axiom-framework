@@ -1,0 +1,4 @@
+PR #9150: Bound optical energy and original count response; define experiment comparison gap
+branch codex/mobile-record-optical-energy-and-count-bridge-20260924 (base codex/mobile-record-probe-energy-and-observation-limits-20260924)
+runners in the PR: 1
+== scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)

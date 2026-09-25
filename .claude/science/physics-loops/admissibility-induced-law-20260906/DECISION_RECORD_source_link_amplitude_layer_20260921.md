@@ -592,3 +592,14 @@ The lane has 33 open hand-off PRs. They are grouped here by theme, with provenan
 - #9221 and #9165 extend block 128.
 - All of these wait for a referee of another family, idle since 2026-09-24 21:39Z.
 - The probes problems of refills m, n and p ask the questions of blocks 141 and 143 independently.
+
+## Thirty-third addendum (2026-09-25): block 143's last assumption is proved
+
+Block 143 (PR #9229) needed one assumption: nondegenerate stationary points of the free pair's energy bands at one total wave vector. A second follow-up commit proves it (T6). At `tan K₀ = (5/6, 18/5)` in the plane and `(5/6, 18/5, 1/2)` in space, the proof checks every stationary point of every band pair:
+- exact resultants (degree 16 and 40);
+- exact isolation of their real roots;
+- rational interval arithmetic.
+
+Each is nondegenerate: 4 and 2, and 8 and 6, per cell of half a period in each coordinate. At the cone points the other record's energy gradient is below one.
+
+So the statement of addenda 30 and 31, that nothing local keeps two records' books under one record per site in the plane or in space, now rests only on named standard imports: scattering theory for finite-rank perturbations, and the relation between the perturbation determinant and the scattering matrix. It is still the supervisor's own derivation, not refereed by another model family. The erratum in addendum 31 is superseded.

@@ -244,6 +244,28 @@ def family_d(checks: Checks) -> None:
     family_ok = sp.simplify(gap.subs({A: HALF + 1 / pw, s2: 1}) - (1 - 1 / pw) * Uv) == 0
     checks.check("D3", general_ok and member_ok and family_ok,
                  "passive mass M + 2a<T> + 2 s2 <U> minus the pair's energy M + <T> + <U> is (2 s2 - a - 1/2)<U>: zero for the curvature member (a = 3/2, s2 = 1); (1 - 1/p)<U> for the bilinear member X = l^(p/2)")
+    # a cluster of three bodies (0, 1, 2) and an outside body (3) at rest
+    m4 = sp.symbols("m1:5", positive=True)
+    p4 = [sp.Matrix(sp.symbols("p%d_1:4" % (i + 1), real=True)) for i in range(4)]
+    R4, N4 = {}, {}
+    for a in range(4):
+        for b in range(a + 1, 4):
+            R4[(a, b)] = R4[(b, a)] = sp.Symbol("r%d%d" % (a + 1, b + 1), positive=True)
+            N4[(a, b)] = sp.Matrix(sp.symbols("n%d%d_1:4" % (a + 1, b + 1), real=True))
+            N4[(b, a)] = -N4[(a, b)]
+    h4 = sp.expand(pair_hamiltonian(A, B, C, s2, G, m4, p4, R4, N4, range(4)).subs({p4[3][i]: 0 for i in range(3)}))
+    per4 = sp.expand(sp.diff(h4, m4[3]).subs(m4[3], 0) - 1)
+    phi4 = [-G / R4[(a, 3)] for a in range(3)]
+    share = [-G * m4[a] * sum(m4[b] / R4[(a, b)] for b in range(3) if b != a) for a in range(3)]
+    cross4 = [0, 0, 0] if mut("outside_static_cross_term_dropped") else share
+    exp4 = sum(phi4[a] * (m4[a] + A * p4[a].dot(p4[a]) / m4[a] + s2 * cross4[a]) for a in range(3)) + s2 * G ** 2 / 2 * sum(m4[a] / R4[(a, 3)] for a in range(3)) ** 2
+    # U is a sum of pair terms f(x_a - x_b); (x_a.grad_a + x_b.grad_b) f = (x_a - x_b).grad f, so Euler's identity per pair suffices
+    xr = sp.Matrix(sp.symbols("z1:4", real=True))
+    kp = sp.Symbol("kp", positive=True)
+    fpair = -kp / sp.sqrt(xr.dot(xr))
+    euler = sp.simplify(sum(xr[i] * sp.diff(fpair, xr[i]) for i in range(3)) + fpair) == 0
+    checks.check("D4", sp.expand(per4 - exp4) == 0 and euler,
+                 "a cluster of three bodies near an outside body: the coupling is sum_a Phi_a [m_a + 2a T_a + s2 U_a] with sum_a U_a = 2U, and sum_a x_a.grad_a U = -U (so 2<T> = -<U>): the passive mass keeps its pair form for any number of bodies")
 
 
 # ============================================================================================ family E
@@ -279,10 +301,44 @@ def family_e(checks: Checks) -> None:
     ratio = sp.simplify(((Mv + 2 * A * Tv + 2 * Uv) / (Mv + Tv + Uv)).subs(Tv, -Uv / 2))
     checks.check("E2", w_ok and ratio == 1, "passive mass M + 3<T> + 2<U> over inertia M + <T> + <U> is exactly 1 with 2<T> = -<U>: a pair bound by the curvature member's pull falls in a distant body's pull like one body, at first order in its binding")
 
+    G3 = sp.Symbol("G", positive=True)
+    m3 = sp.symbols("m1:4", positive=True)
+    p3 = [sp.Matrix(sp.symbols("p%d_1:4" % (i + 1), real=True)) for i in range(3)]
+    R3, N3 = {}, {}
+    for a in range(3):
+        for b in range(a + 1, 3):
+            R3[(a, b)] = R3[(b, a)] = sp.Symbol("r%d%d" % (a + 1, b + 1), positive=True)
+            N3[(a, b)] = sp.Matrix(sp.symbols("n%d%d_1:4" % (a + 1, b + 1), real=True))
+            N3[(b, a)] = -N3[(a, b)]
+    M3 = sum(m3)
+    PP = sp.Matrix(sp.symbols("P1:4"))
+    qq = [sp.Matrix(sp.symbols("q%d_1:4" % (i + 1))) for i in range(2)]
+    qq.append(-qq[0] - qq[1])
+    sub = {p3[a][i]: m3[a] / M3 * PP[i] + qq[a][i] for a in range(3) for i in range(3)}
+    hc = sp.expand((pair_hamiltonian(A, B, C, 1, G3, m3, p3, R3, N3, range(3)) - M3 - sum(p3[a].dot(p3[a]) / (2 * m3[a]) for a in range(3))).subs(sub, simultaneous=True))
+    coef3 = sp.expand(hc.subs({PP[i]: sv * PP[i] for i in range(3)}, simultaneous=True)).coeff(sv, 2)
+    pp2 = PP.dot(PP)
+    T3 = sum(qq[a].dot(qq[a]) / (2 * m3[a]) for a in range(3))
+    TP3 = sum(PP.dot(qq[a]) ** 2 / (2 * m3[a] * pp2) for a in range(3))
+    prs = [(0, 1), (0, 2), (1, 2)]
+    U3 = sum(-G3 * m3[a] * m3[b] / R3[(a, b)] for a, b in prs)
+    UP3 = sum(-G3 * m3[a] * m3[b] * N3[(a, b)].dot(PP) ** 2 / (R3[(a, b)] * pp2) for a, b in prs)
+    tgt3 = pp2 / (2 * M3) * (-(T3 + 2 * TP3) / M3 + 2 / M3 * ((2 * A + B) * U3 + C * UP3))
+    # per pair: (e.x)(e.grad f) for f = -k/|x| equals -f_e with f_e = -k (e.x)^2/|x|^3; the cluster's U and U_e are sums of pair terms
+    xr = sp.Matrix(sp.symbols("z1:4", real=True))
+    ev = sp.Matrix(sp.symbols("e1:4", real=True))
+    kp = sp.Symbol("kp", positive=True)
+    rr3 = sp.sqrt(xr.dot(xr))
+    fpair = -kp / rr3
+    fe = -kp * ev.dot(xr) ** 2 / rr3 ** 3
+    tensor = sp.simplify(ev.dot(xr) * ev.dot(sp.Matrix([sp.diff(fpair, xr[i]) for i in range(3)])) + fe) == 0
+    checks.check("E3", sp.simplify(sp.expand(coef3 - tgt3)) == 0 and tensor and w_ok,
+                 "a cluster of three bodies: the P^2 coefficient keeps its pair form, and sum_a (e.x_a)(e.grad_a U) = -U_e (so 2<T_e> = -<U_e>); with (3/2, -7/2, -1/2) its inertia is its energy, so a pull-bound cluster of any number of bodies falls like one body")
+
 
 # ============================================================================================ family F
 FENCES = (
-    "This note works within blocks 60, 62, 101, 134, 135, 136 and 140 as landed on main (the static curvature member and its family, the member's quadratic action, one light cone, the bond shift and the long-wave kinematics), with block 144 placed; it reports how a pair bound by the member's pull falls in the pull of a distant body at first order in its binding; nothing is adopted and no gravitational claim is made.",
+    "This note works within blocks 60, 62, 101, 134, 135, 136 and 140 as landed on main (the static curvature member and its family, the member's quadratic action, the kinetic normalization alpha = K/4, the bond shift and the long-wave kinematics), with block 144 placed; it reports how a pair bound by the member's pull falls in the pull of a distant body at first order in its binding; nothing is adopted and no gravitational claim is made.",
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py
-runner_sha256: 658d1f41d594c687f2ea06bfbbb67a81a64461bfa73dcea1aebdbfffdf937e5d
-input_fingerprint_sha256: 7325f9332b74f29777710343abd2c55479bb58e863c277a8e6fa1da21f49f262
+runner_sha256: d629c520b6c2b5814b5453fb22aebdb21616c40b59fc408240698047366b0358
+input_fingerprint_sha256: 7a218cf7c30179722701c208f96a673c9fdcffa91b4e215439b8988409c6ebae
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.27
+elapsed_sec: 4.46
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -21,8 +21,10 @@ PASS: C4 the curvature member's first-order momentum terms, from the ledger and 
 PASS: D1 a pair near a third body at rest: the Hamiltonian's coupling per unit outside mass is sum_a Phi_a [m_a + 2a T_a + s2 U] + s2 (G^2/2)(m1/r13 + m2/r23)^2, the last smaller by r12/R
 PASS: D2 scalar virial bracket: {x.q, H0} = 2T + U with U = -k/r, so 2<T> = -<U> in a bound state
 PASS: D3 passive mass M + 2a<T> + 2 s2 <U> minus the pair's energy M + <T> + <U> is (2 s2 - a - 1/2)<U>: zero for the curvature member (a = 3/2, s2 = 1); (1 - 1/p)<U> for the bilinear member X = l^(p/2)
+PASS: D4 a cluster of three bodies near an outside body: the coupling is sum_a Phi_a [m_a + 2a T_a + s2 U_a] with sum_a U_a = 2U, and sum_a x_a.grad_a U = -U (so 2<T> = -<U>): the passive mass keeps its pair form for any number of bodies
 PASS: E1 the same Hamiltonian's P^2 coefficient, with the tensor virial 2<T_P> = -<U_P>, gives W = 1 along every axis for (a, b, c) = (3/2, -7/2, -1/2): the pair's inertia is its energy (block 144 T4 re-checked)
 PASS: E2 passive mass M + 3<T> + 2<U> over inertia M + <T> + <U> is exactly 1 with 2<T> = -<U>: a pair bound by the curvature member's pull falls in a distant body's pull like one body, at first order in its binding
+PASS: E3 a cluster of three bodies: the P^2 coefficient keeps its pair form, and sum_a (e.x_a)(e.grad_a U) = -U_e (so 2<T_e> = -<U_e>); with (3/2, -7/2, -1/2) its inertia is its energy, so a pull-bound cluster of any number of bodies falls like one body
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -34,7 +36,7 @@ per_block: executed - a pair's coupling to a distant body's potential, the scala
 lattice_wide: long wavelength; first order in the binding and in the outside field; point constituents with their own fields dropped
 PASS: G1 the five N5 resolution lines are printed
 scope: the static ledger to second order is the same for every bilinear member; moving bodies carry (1/2 + 1/p) k^2/m^2; a pull-bound pair has passive mass equal to its energy only for the curvature member p = 1, and with the inertia of block 144 such a pair falls like one body at first order in its binding; supervisor derivation, unrefereed; nothing adopted
-TOTAL: PASS=18 FAIL=0
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

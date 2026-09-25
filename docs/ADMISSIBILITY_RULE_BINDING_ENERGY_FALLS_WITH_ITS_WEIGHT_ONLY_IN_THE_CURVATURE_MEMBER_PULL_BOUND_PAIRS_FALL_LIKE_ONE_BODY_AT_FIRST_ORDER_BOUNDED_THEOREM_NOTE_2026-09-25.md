@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 60's static members (the curvature member and its bilinear family c X Delta X with X = l^(p/2)), block 101's quadratic member with block 62's curvature terms and block 136's bond shift, and blocks 134, 135 and 140, all as landed on main, with block 144 (open) placed; long wavelength; point constituents whose own fields are dropped; first order in the binding and in an outside body's field. (T1) exact: the ledger of bodies at rest is M - sum G M_a M_b / r_ab + (G^2/2) sum_a M_a (sum_b M_b / r_ab)^2 to second order, with G = 1/(2 pi c), for every bilinear member (G = 1/(16 pi K) for the curvature member). (T2) exact: for moving bodies the first-order ledger is -(G m_a m_b / r)[1 + (1/2 + 1/p)(k_a^2/m_a^2 + k_b^2/m_b^2)]; for the curvature member the field momentum at the shift's constraint (trace-free, no free waves) adds (G/2r)[7 k_a.k_b + (n.k_a)(n.k_b)], so its first-order Hamiltonian is block 144's pull changed to momenta, plus T1's static term. (T3) exact: a bound pair far from a third body couples to that body's potential with passive mass M + 2a<T> + 2 s2 <U>, where a is the first-order kinetic coefficient and s2 the static second-order one, and this differs from the pair's energy by (2 s2 - a - 1/2)<U>. For the curvature member (a = 3/2, s2 = 1) the passive mass is the pair's energy, which is also its inertia (block 144), so the pair falls like one body; for any other bilinear member the passive mass differs from the energy by (1 - 1/p)<U>. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 60's static members (the curvature member and its bilinear family c X Delta X with X = l^(p/2)), block 101's quadratic member with block 62's curvature terms and block 136's bond shift, and blocks 134, 135 and 140, all as landed on main, with block 144 (open) placed; long wavelength; point constituents whose own fields are dropped; first order in the binding and in an outside body's field. (T1) exact: the ledger of bodies at rest is M - sum G M_a M_b / r_ab + (G^2/2) sum_a M_a (sum_b M_b / r_ab)^2 to second order, with G = 1/(2 pi c), for every bilinear member (G = 1/(16 pi K) for the curvature member). (T2) exact: for moving bodies the first-order ledger is -(G m_a m_b / r)[1 + (1/2 + 1/p)(k_a^2/m_a^2 + k_b^2/m_b^2)]; for the curvature member the field momentum at the shift's constraint (trace-free, no free waves) adds (G/2r)[7 k_a.k_b + (n.k_a)(n.k_b)], so its first-order Hamiltonian is block 144's pull changed to momenta, plus T1's static term. (T3) exact: a bound pair far from a third body couples to that body's potential with passive mass M + 2a<T> + 2 s2 <U>, where a is the first-order kinetic coefficient and s2 the static second-order one, and this differs from the pair's energy by (2 s2 - a - 1/2)<U>. For the curvature member (a = 3/2, s2 = 1) the passive mass is the pair's energy, which is also its inertia (block 144), so the pair falls like one body, and so does a pull-bound cluster of any number of bodies; for any other bilinear member the passive mass differs from the energy by (1 - 1/p)<U>. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py
@@ -13,7 +13,7 @@ runner: scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_
 **Type:** bounded_theorem
 **Status:** bounded-support (exact at first order in the binding and in the outside field, within block 60's static members and the landed quadratic member with its shift, with block 144 placed; point constituents whose own fields are dropped; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
 
-This note works within blocks 60, 62, 101, 134, 135, 136 and 140 as landed on main (the static curvature member and its family, the member's quadratic action, one light cone, the bond shift and the long-wave kinematics), with block 144 placed; it reports how a pair bound by the member's pull falls in the pull of a distant body at first order in its binding; nothing is adopted and no gravitational claim is made.
+This note works within blocks 60, 62, 101, 134, 135, 136 and 140 as landed on main (the static curvature member and its family, the member's quadratic action, the kinetic normalization alpha = K/4, the bond shift and the long-wave kinematics), with block 144 placed; it reports how a pair bound by the member's pull falls in the pull of a distant body at first order in its binding; nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
 
@@ -29,7 +29,7 @@ Block 144 (open) found that a pair bound by the member's pull carries its energy
 - **T3: the fall.**
   - A bound pair far from a third body couples to that body's potential with passive mass `M + 2a⟨T⟩ + 2s₂⟨U⟩`. Here `a` is the first-order kinetic coefficient and `s₂` the static second-order one.
   - This differs from the pair's energy `M + ⟨T⟩ + ⟨U⟩` by `(2s₂ − a − ½)⟨U⟩`.
-  - For the curvature member, `a = 3/2` and `s₂ = 1`, so the passive mass is the pair's energy. Its inertia is also its energy (block 144, re-checked here). So the pair falls like one body, at first order in its binding.
+  - For the curvature member, `a = 3/2` and `s₂ = 1`, so the passive mass is the pair's energy. Its inertia is also its energy (block 144, re-checked here). So the pair falls like one body, at first order in its binding. The same holds for a cluster of any number of bodies.
   - For any other bilinear member the passive mass differs from the energy by `(1 − 1/p)⟨U⟩`.
 
 In plain terms: a bound pair weighs a little less than its parts. For it to fall like a single body of that reduced energy, two corrections must cancel. The parts' energy of motion weighs extra, through the bonds the member stretches. The pull's own energy weighs through the member's second-order terms. The static second order is the same for every member in block 60's family; the stretching is not. Only for the curvature member, the one whose lengths are the square of its field, do the two cancel exactly. Then a pair bound by the member falls exactly as a single body with the pair's energy, to first order in how tightly it is bound.
@@ -89,12 +89,14 @@ The same second-order term appears whatever `p` is, because the static constrain
 - (b) In a bound state, `2⟨T⟩ = −⟨U⟩`. So the passive mass `M + 2a⟨T⟩ + 2s₂⟨U⟩` differs from the pair's energy `M + ⟨T⟩ + ⟨U⟩` by `(2s₂ − a − ½)⟨U⟩`.
 - (c) For the curvature member (`a = 3/2`, `s₂ = 1`) the passive mass is the pair's energy. Its inertia is also its energy: the same Hamiltonian's `P²` coefficient with the tensor virial gives `W = 1` (block 144 T4, re-checked). So the pair falls in the third body's pull like one body, at first order in its binding and in `Φ`.
 - (d) For any other bilinear member (`a = ½ + 1/p`, `s₂ = 1`) the passive mass differs from the energy by `(1 − 1/p)⟨U⟩`, which is nonzero for `p ≠ 1`.
+- (e) The same holds for a cluster of any number of bodies bound by the member's pull: its coupling to the outside body, its `P²` coefficient and both virial identities are sums over pairs. So a pull-bound cluster of the curvature member falls like one body at first order.
 
 *Proof.*
 - (a) Differentiate the three-body Hamiltonian in `m₃` at `m₃ = 0`, with the third body at rest (runner D1).
 - (b) `{x·q, H₀} = 2T + U` (runner D2); its average vanishes in a bound state. Then the difference is algebra (runner D3).
 - (c) Runner E1 and E2. The force on the pair's centre is `−∇Φ` times the passive mass, and its inertia is `E₀`.
-- (d) T2(a) and T1, by substitution (runner D3). ∎
+- (d) T2(a) and T1, by substitution (runner D3).
+- (e) Runner D4 and E3 check the coupling and the `P²` coefficient for a three-body cluster. Each pair term `−k/r` is homogeneous of degree `−1`, so `Σ_a x_a·∇_aU = −U` and `Σ_a(e·x_a)(e·∇_aU) = −U_e` for any number of bodies; runner D4 and E3 check this per pair. ∎
 
 For `p ≠ 1` the pair's inertia is not treated, because no kinetic term for those members is landed. The statement there concerns the passive mass only.
 
@@ -121,8 +123,8 @@ audit_required_before_effective_retained: true
 - **Blocks, as landed.**
   - Block 60: the static members, rates as multipliers, the ledger as the walls' term, and the curvature member's exact static field.
   - Blocks 62 and 101: the member's quadratic action.
-  - Blocks 134 and 135: `α = K/4`.
-  - Block 136: the bond shift and its constraint.
+  - Blocks 134 and 135: `α = K/4`, as a necessary longitudinal condition (landed as that, not as a universal light cone).
+  - Block 136: the bond shift, and the preservation of its initially satisfied nonzero-mode constraints (landed without general solvability).
   - Block 140: the long-wave kinematics.
 - **Opened, not landed.** Block 144 (PR #9230): the member's first-order pull and a bound pair's inertia.
 - **Probes.** Probe #9231 (unrefereed) finds that content with hop energy can balance the curvature member's two charges exactly, which bears on the constituents' own compactness. No attempt poses this note's question.
@@ -227,6 +229,7 @@ No approved primitive is used. Nothing is proposed for registration.
   - A symbolic series with the exponent `−4/p` left free dropped its first-order term (a limitation of the series routine). The runner uses the first-order form `1 − (4/p)(X − 1)`, which is exact at the order kept.
   - A first sign slip in the static cross term (`−s₂U` for `+s₂U`) made the curvature member's passive mass wrong. The exact coupling identity (runner D1) caught it.
   - The first three-body check simplified square roots of positions and did not finish. The runner uses separate distance and direction symbols. The coupling is an identity in them.
+- **After opening.** The landing review landed blocks 134 and 135 as a necessary longitudinal condition (no universal light cone), and block 136 without general solvability. The fence and prior art follow that wording. T3(e), clusters of any number of bodies, was added with checks D4 and E3.
 - **Independence.** Mutation census: six mutations in families B–E, each failing in its own family, and two in family F.
 
 ## Verification
@@ -235,4 +238,4 @@ No approved primitive is used. Nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py
 ```
 
-Expected: `TOTAL: PASS=18 FAIL=0`.
+Expected: `TOTAL: PASS=20 FAIL=0`.

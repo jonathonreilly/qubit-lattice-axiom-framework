@@ -655,3 +655,18 @@ What this changes in addendum 34's table:
 The owner's question "may a binding be instantaneous?" now has a sharper form (a finding, not a proposal):
 - a binding without velocity terms cannot give a bound pair weight one, along any axis;
 - a binding through the member can, and does at first order, because the same `α = K/4` sets its velocity terms.
+
+## Thirty-sixth addendum (2026-09-25 evening): binding energy falls with its weight only in the curvature member (block 145)
+
+Block 145 (PR #9233) is the supervisor's own derivation, not refereed by another model family; nothing is adopted. It works at first order in the binding and in an outside field, at long wavelength, with point constituents.
+- Block 60's exact static field gives the ledger of bodies at rest to second order. It is the same for every bilinear member.
+- Moving bodies carry `(½ + 1/p)k²/m²` each. For the curvature member, the field momentum at the shift's constraint adds block 144's `7` and `1` terms. That is a second route to block 144's pull, by a different method in different variables.
+- A pull-bound pair's passive mass is its energy for the curvature member. For any other bilinear member it misses by `(1 − 1/p)⟨U⟩`. With block 144's inertia, pairs bound by the curvature member's pull fall like one body, and so do pull-bound clusters of any number of bodies.
+
+What this changes in addendum 34's table:
+- **Groups.** Pairs bound by the member's pull move and fall as one body, at first order in their binding. Still open:
+  - the constituents' own compactness: a body pinned at rest on one site has unequal lapse and length charges (block 60 T4(d)); probes #9231 (unrefereed) finds the charges balance for content with hop energy;
+  - the next order.
+- **The curvature power.** The fall of binding energy gives a second route to `p = 1`, besides block 64 (via block 129).
+
+Landing status: blocks 111–141 are on main (ef918c1910). Addendum 32's landing guide is executed except for blocks 142–145, which are open. The landing review scoped blocks 134–135 as a necessary longitudinal condition, with no universal light cone, and block 136 as the preservation of initially satisfied nonzero-mode constraints, with no general solvability. Blocks 144 and 145 were reworded to match.

@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F122 waves need signed weights | Schur-Cohn certificates for nonnegative witnesses at five rational angles; the entrywise lemma on 3x3 instances; the signed rule's dispersion; the coin walk's identity | block 122 (harvest of waves-need-signed-weights a1-a5; Grok-refereed) |

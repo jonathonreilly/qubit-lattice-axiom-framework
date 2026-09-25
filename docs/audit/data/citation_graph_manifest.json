@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1117,6 +1117,10 @@
   "admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_clocked_record_motion_never_oscillates_bounded_theorem_note_2026-09-23": {
    "deps_hash": "72f114ec07ca",
    "out_degree": 5
+  },
+  "admissibility_rule_waves_need_signed_weights_a_formation_rule_with_nonnegative_weights_keeps_an_undamped_branch_only_by_rigid_transport_and_the_amplitude_step_is_a_signed_rule_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_what_a_formation_event_does_to_the_ledger_and_to_the_far_field_the_monopole_never_jumps_the_dipole_does_bounded_theorem_note_2026-09-21": {
    "deps_hash": "786a0b747078",

@@ -1,0 +1,90 @@
+{
+  "at": "2026-09-25T01:50:12.473315+00:00",
+  "main": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "parents": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Supplied model parent; previously fully read, pair-law parent reread in full for this derivation."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Supplied model parent; previously fully read, pair-law parent reread in full for this derivation."
+    }
+  ],
+  "inventory": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OBSERVATION_OPEN_PR_INVENTORY_0149.json",
+    "sha256": "09ecf726d87ea1cb203caef0c663fb98c21b88519da0de1ff06b2851d2fc2d64",
+    "delta": [
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/ring-model-pure-structure-factor-on-the-ten-cubed-torus-and-the-four-size-series-20260924",
+        "headRefOid": "98241d3c7e296158e0a39df484545b93a6efd422",
+        "isDraft": false,
+        "number": 9171,
+        "title": "docs(ring-model): add the 10^3 point of the pure structure factor and the four-size series",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9171"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "physics-loop/admissibility-induced-law-block119-the-species-symmetry-forces-only-doubling-20260924",
+        "headRefOid": "c398d575b37ce4e4564a2e0977764fe5e3b576b4",
+        "isDraft": false,
+        "number": 9170,
+        "title": "physics-loop: admissibility induced-law block 119 - the species symmetry forces only doubling: every nonzero level in a varying field is a pair, and a rate field keeps exactly the sixteen zero modes",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9170"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/ring-model-from-the-rk-point-to-the-pure-ring-point-the-weight-moves-to-the-corner-20260924",
+        "headRefOid": "9fd0b011038e489f92dc80986ec47664d9107777",
+        "isDraft": false,
+        "number": 9169,
+        "title": "docs(ring-model): sweep the transverse weight map from the RK point to the pure-ring point",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9169"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/three-dimensional-composite-site-network-with-an-exact-charge-20260924",
+        "headRefOid": "8a47c2dff898dd8eb26f567fffe66c3f70455add",
+        "isDraft": false,
+        "number": 9168,
+        "title": "feat(matter): embed the hyperhoneycomb composite-site network with an exact charge",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9168"
+      },
+      {
+        "baseRefName": "codex/mobile-record-optical-energy-and-count-bridge-20260924",
+        "headRefName": "codex/mobile-record-input-energy-and-mark-power-20260925",
+        "headRefOid": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+        "isDraft": false,
+        "number": 9167,
+        "title": "physics: separate actual input energy from original mark power",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9167"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/gaussian-photon-comparator-for-the-pure-ring-structure-factor-20260924",
+        "headRefOid": "d0baf9ff16c0beade7eee8d444ae12bb932083aa",
+        "isDraft": false,
+        "number": 9166,
+        "title": "feat(photon): gaussian lattice maxwell comparator for the pure-ring structure factor",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9166"
+      },
+      {
+        "baseRefName": "main",
+        "headRefName": "claude/composite-sites-charged-majorana-matter-20260924",
+        "headRefOid": "12645c9624a92743c2a84af8ba1207143cf42a74",
+        "isDraft": false,
+        "number": 9144,
+        "title": "feat(matter): composite sites give the carved Majoranas an exact charge",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9144"
+      }
+    ],
+    "reuse": "Own PR9167 was personally authored and fully reviewed. All other new/changed entries are metadata only; their science was not imported."
+  },
+  "native_preparation": "Actual original resolved birth of a fixed finite-electric-support basis input, not the prior g-dependent prepared detector state.",
+  "scope": "Full common rotor Hamiltonian; no assertion of finite-spin fast-Hamiltonian energy convergence."
+}

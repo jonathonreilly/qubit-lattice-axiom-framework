@@ -1,0 +1,44 @@
+{
+  "recorded_utc": "2026-09-25T04:42:21.178812+00:00",
+  "scope": "Read-only replay and preservation of the prior unsaved comparison failure, not a scientific rerun.",
+  "failed_assumption": "Only four elapsed times and the fresh local-certificate content hash would differ.",
+  "error": "AssertionError: actual difference paths include two floating eigensolver diagnostics.",
+  "all_differences": [
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_top_delta_eigenvalue",
+      "original": 12085.721034416918,
+      "fresh": 12085.72103441692
+    },
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_eigen_residual",
+      "original": 5.5462400803892106e-12,
+      "fresh": 5.513518614398954e-12
+    },
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/elapsed_seconds",
+      "original": 3.853663665940985,
+      "fresh": 2.7830663749482483
+    },
+    {
+      "path": "pair_LOCAL_ROW_CERTIFICATE.json/elapsed_seconds",
+      "original": 1.733345750020817,
+      "fresh": 1.4319601249881089
+    },
+    {
+      "path": "pair_ROW_POLYNOMIAL_CERTIFICATE.json/prior_row_certificate_sha256",
+      "original": "89a6f07c1ec4008a1288b60a1ffa50dfa4432d016ec254c8b72d8b5e6eaaaae1",
+      "fresh": "9332e83d26c7b34e54560739aef25d8d9739740c0eb542510f2dc86d2da40bc5"
+    },
+    {
+      "path": "filling_GROUND_FILLING_CERTIFICATES.json/elapsed_seconds",
+      "original": 0.29450170788913965,
+      "fresh": 0.24778720806352794
+    },
+    {
+      "path": "activity_PRIMITIVE_RATE_ENERGY_RESULTS.json/elapsed_seconds",
+      "original": 3.8899712911807,
+      "fresh": 3.561247417004779
+    }
+  ],
+  "consequence": "The first comparison did not verify or freeze the publication. Sources and scientific outputs were left unchanged."
+}

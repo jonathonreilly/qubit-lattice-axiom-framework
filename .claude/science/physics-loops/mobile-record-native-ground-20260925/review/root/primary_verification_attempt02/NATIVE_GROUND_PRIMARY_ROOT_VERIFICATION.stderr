@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_native_ground_publication_primary.py", line 121, in <module>
+    assert cache_module.cache_status(b['runner']) == 'ok'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

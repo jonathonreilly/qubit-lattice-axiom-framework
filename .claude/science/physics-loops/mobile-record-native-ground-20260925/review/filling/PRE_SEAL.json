@@ -1,0 +1,196 @@
+{
+  "phase": "Blind independent PRE, sealed before candidate disclosure",
+  "sealed_utc": "2026-09-25T03:23:23.028861+00:00",
+  "report": "PRE.md",
+  "report_sha256": "edaaee9321fe99e298acba00dd5c8b9dd750529595806eb04d844bbd27f38b72",
+  "source_manifest": "SOURCE_PINS.json",
+  "source_manifest_sha256": "d93fa97e5b8c79bc0b17dae087974a55f22493d9d0b78453840044dd6bbeb4f5",
+  "main_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "science_sources": 2,
+  "definition_only_parameterization_sha256": "15787c0e58784ced65fc8211370ede1059d82f6fa654ce15b2cde3fb25115e16",
+  "controls_source_sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90",
+  "controls_result_sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f",
+  "members": [
+    {
+      "path": "APPROACH_REGISTRY.md",
+      "sha256": "8e6671c2ce3d1e4361d4ccac82ddcacde40d718a8a3b8cc53d7d84392eb483fe",
+      "bytes": 2733
+    },
+    {
+      "path": "CONTROL_EXTENSION_DIFF.txt",
+      "sha256": "bbce177a2df2408bd7828235d29305f1be0a64b1d9651297d69ecdba28a33137",
+      "bytes": 2316
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f",
+      "bytes": 52752
+    },
+    {
+      "path": "INSTRUCTION_SOURCE_CONSISTENCY.json",
+      "sha256": "0343657155ea521468002c087eed747c4d212c2eba552c8fb946ecc218d037d2",
+      "bytes": 1885
+    },
+    {
+      "path": "LOCAL_CERTIFICATE_REVIEW.tsv",
+      "sha256": "3a25d56099909b13aa3db9c755c0188c1d9fcbadcecf69b2374ac891a3a48910",
+      "bytes": 3139
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "edaaee9321fe99e298acba00dd5c8b9dd750529595806eb04d844bbd27f38b72",
+      "bytes": 20348
+    },
+    {
+      "path": "RAYLEIGH_REVIEW.tsv",
+      "sha256": "491511dd2e72f4d206cd04025c84de69e8cc388599b87de45c8bb96b53f768cb",
+      "bytes": 1337
+    },
+    {
+      "path": "READ_AND_FAILURE_LOG.md",
+      "sha256": "39da9ae8772da30bc986b6621fc6045121c8a3e96aef39b0666b2916793d9a72",
+      "bytes": 2780
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "d93fa97e5b8c79bc0b17dae087974a55f22493d9d0b78453840044dd6bbeb4f5",
+      "bytes": 6379
+    },
+    {
+      "path": "SOURCE_PINS_INITIAL.json",
+      "sha256": "0497d1a21451005113271db84a885f9992fe0f174cb3e2126c1e7c29dced76c5",
+      "bytes": 3041
+    },
+    {
+      "path": "SUPPLIED_PARAMETERIZATION.md",
+      "sha256": "15787c0e58784ced65fc8211370ede1059d82f6fa654ce15b2cde3fb25115e16",
+      "bytes": 823
+    },
+    {
+      "path": "VERIFICATION_EXECUTION.json",
+      "sha256": "d7e16123d79d3b3acf9d996a29a6ebf6a83a9b47883ad9334df094912203a750",
+      "bytes": 613
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "94170dce641f311c3b1ff743df788d2244c387498080c96a95ec5a8735b18922",
+      "bytes": 4607
+    },
+    {
+      "path": "VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "VERIFICATION_STDOUT.log",
+      "sha256": "94170dce641f311c3b1ff743df788d2244c387498080c96a95ec5a8735b18922",
+      "bytes": 4607
+    },
+    {
+      "path": "control_attempt01/CONTROL_RESULTS.json",
+      "sha256": "167177eba43626000f01df92336dc585a03ea4e0e6245c0e3821f44bb0068b74",
+      "bytes": 51682
+    },
+    {
+      "path": "control_attempt01/EXECUTION.json",
+      "sha256": "76c92f466b7388c5e4888cf1ed6e4d0bcb58c534ae7f57297c796ead79727688",
+      "bytes": 512
+    },
+    {
+      "path": "control_attempt01/ground_filling_control.py",
+      "sha256": "41e85e4991d17085268e7671e0ca5698355f06c589bc8739a4ad566b828b415e",
+      "bytes": 15205
+    },
+    {
+      "path": "control_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "control_attempt01/stdout.log",
+      "sha256": "167177eba43626000f01df92336dc585a03ea4e0e6245c0e3821f44bb0068b74",
+      "bytes": 51682
+    },
+    {
+      "path": "control_attempt02/CONTROL_RESULTS.json",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f",
+      "bytes": 52752
+    },
+    {
+      "path": "control_attempt02/EXECUTION.json",
+      "sha256": "c20be56d9871075593b3bac35c2de8278872034d2f791cb3d30a2172678aac5a",
+      "bytes": 711
+    },
+    {
+      "path": "control_attempt02/ground_filling_control.py",
+      "sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90",
+      "bytes": 16270
+    },
+    {
+      "path": "control_attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "control_attempt02/stdout.log",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f",
+      "bytes": 52752
+    },
+    {
+      "path": "ground_filling_control.py",
+      "sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90",
+      "bytes": 16270
+    },
+    {
+      "path": "instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "instructions/PLANNING_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164
+    },
+    {
+      "path": "instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "instructions/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "path": "instructions/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "verify_pre.py",
+      "sha256": "0d1e58a9fe4aa6c6444f8e4addfda23eb7a8420962d36b542bf48d7cd52aeb61",
+      "bytes": 8786
+    }
+  ],
+  "author_candidate_read": false,
+  "other_active_checker_packets_read": false,
+  "parent_or_author_runners_opened_imported_or_executed": false,
+  "delegation": false,
+  "publication_or_audit_mutation": false,
+  "scope": "Fixed-graph common-Hamiltonian spectral-infimum occupation bounds; no exact minimizing filling, phase, physical vacuum, microscopic spectral convergence or volume-uniform threshold."
+}

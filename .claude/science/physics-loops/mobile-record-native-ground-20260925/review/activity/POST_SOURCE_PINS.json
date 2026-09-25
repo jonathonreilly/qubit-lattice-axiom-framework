@@ -1,0 +1,166 @@
+{
+  "created_utc": "2026-09-25T04:08:09.541637+00:00",
+  "phase": "Released-source POST",
+  "author_members": 9,
+  "author_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "frozen_path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 1616,
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/CONTROL_ATTEMPT01.stderr",
+      "frozen_path": "post_sources/author/CONTROL_ATTEMPT01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/CONTROL_ATTEMPT01.stdout",
+      "frozen_path": "post_sources/author/CONTROL_ATTEMPT01.stdout",
+      "bytes": 45454,
+      "sha256": "69f27361498e02124ff41b386d3aa80d7e4d96c8e56fa946498cf3c117f0a32b",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/EXECUTION_ATTEMPT01.json",
+      "frozen_path": "post_sources/author/EXECUTION_ATTEMPT01.json",
+      "bytes": 419,
+      "sha256": "95c62dd8d7b8703b15216d52f2864ad43da481557fa2341237bc945253778a6a",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "frozen_path": "post_sources/author/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "bytes": 16531,
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "frozen_path": "post_sources/author/PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "bytes": 3028891,
+      "sha256": "5a2080dff069ea2f24bc5411d25a60b3f4dc3c5a892b7133393be3d89e703433",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/ROOT_REVIEW.json",
+      "frozen_path": "post_sources/author/ROOT_REVIEW.json",
+      "bytes": 1184,
+      "sha256": "208d71a49086d1c9e822227bc48c71f749e799e50c4d5a7bb5e0c2fb51935528",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/SOURCE_PINS.json",
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 2524,
+      "sha256": "e733811bd136e4a763d7cda899499e079bb3e24999296e832d62cd220094f5c9",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/WORKING_DERIVATION.md",
+      "frozen_path": "post_sources/author/WORKING_DERIVATION.md",
+      "bytes": 5750,
+      "sha256": "18b4dbe70813d06bac8907f49c33066a42cab538afe8bd4642368fb7a86de70b",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/primitive_rate_energy_controls.py",
+      "frozen_path": "post_sources/author/primitive_rate_energy_controls.py",
+      "bytes": 9661,
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8",
+      "role": "Released author source/evidence"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/GROUND_FORMATION_MAIN_REFRESH_0331.json",
+      "frozen_path": "post_sources/GROUND_FORMATION_MAIN_REFRESH_0331.json",
+      "bytes": 1007,
+      "sha256": "475581d44dabea7ffc548fa1fdf90449c82a1b984c4bea0c771feec2ec5e5dd1",
+      "role": "Author source-refresh receipt; process evidence only"
+    }
+  ],
+  "author_source_origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/local_pair.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/common_limit.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/formation_balance.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "frozen_path": "sources/AGENTS_pointer.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "frozen_path": "sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "frozen_path": "sources/provisional_filling.md",
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb",
+      "bytes": 14482
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/AUTHOR_SEAL.json",
+      "frozen_path": "sources/provisional_filling_seal.json",
+      "sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+      "bytes": 1561
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/GROUND_FORMATION_MAIN_REFRESH_0331.json",
+      "frozen_path": "post_sources/GROUND_FORMATION_MAIN_REFRESH_0331.json",
+      "sha256": "475581d44dabea7ffc548fa1fdf90449c82a1b984c4bea0c771feec2ec5e5dd1",
+      "bytes": 1007
+    }
+  ],
+  "procedure_sources": [
+    {
+      "origin": "git:60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "frozen_path": "post_sources/procedures/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "origin": "git:60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "frozen_path": "post_sources/procedures/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "origin": "git:60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/ai_methodology/skills/review-loop/SKILL.md",
+      "frozen_path": "post_sources/procedures/review-loop/SKILL.md",
+      "bytes": 19430,
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "origin": "git:60c5f194d940a7bbaf1cdd545296e31d74a02f1a:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "frozen_path": "post_sources/procedures/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    }
+  ],
+  "procedures_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "procedural_scope": "Scoped mathematical/source review only; no full review-loop, branch action, new scientific source, audit, model change or delegation",
+  "preserved_PRE_seal_sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51",
+  "preserved_PRE_members": 35,
+  "author_program_execution_or_import": false,
+  "forbidden_packets_read": false
+}

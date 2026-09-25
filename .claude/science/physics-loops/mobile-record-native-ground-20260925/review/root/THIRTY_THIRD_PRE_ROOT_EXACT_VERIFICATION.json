@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-25T02:24:22.374770+00:00",
+  "occupation": [
+    {
+      "L": 2,
+      "complete_direct_Gram_rows": 1,
+      "exact_sparse_entries": 6,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "-5",
+      "exact_Collatz_upper": "-5"
+    },
+    {
+      "L": 4,
+      "complete_direct_Gram_rows": 5,
+      "exact_sparse_entries": 923,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "8000605572249/1562500000",
+      "exact_Collatz_upper": "2510070995367/490211134"
+    },
+    {
+      "L": 6,
+      "complete_direct_Gram_rows": 9,
+      "exact_sparse_entries": 1874,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "5866216125375419/970768083869",
+      "exact_Collatz_upper": "6025118031802106/997063892943"
+    },
+    {
+      "L": 8,
+      "complete_direct_Gram_rows": 18,
+      "exact_sparse_entries": 3583,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "2010726433740840/332578272649",
+      "exact_Collatz_upper": "3020246001073918/499554877857"
+    }
+  ],
+  "primitive": [
+    {
+      "L": 2,
+      "all_primitive_rows_consumed": 36,
+      "primitive_path_count": 1764,
+      "exact_occupation_comparisons": 6,
+      "resolved_birth_branches_rechecked": 4
+    },
+    {
+      "L": 4,
+      "all_primitive_rows_consumed": 15,
+      "primitive_path_count": 206448,
+      "exact_occupation_comparisons": 15,
+      "resolved_birth_branches_rechecked": 10
+    }
+  ],
+  "role": "Root reran only the independently written read-only verification functions; no author program or original two independent controls were rerun.",
+  "elapsed_seconds": 3.5494532079901546
+}

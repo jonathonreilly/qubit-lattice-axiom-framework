@@ -1,0 +1,105 @@
+{
+  "scope": "Check PRE source/log bindings and every saved exact row, without imports.\n\nThe occupation rows are independently recomputed from the direct intermediate\nfour-B-set Gram formula, not from the normal-order implementation under test.\nNo author code or live scientific runner is loaded or executed.\n",
+  "source_sha256": "0687682a968a8e053ee303c537dae7ba7d323f963a920be03e2582dd74ddf4e1",
+  "source_checks": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    }
+  ],
+  "execution_bindings": [
+    {
+      "label": "freeze",
+      "script_sha256": "aafc56d27ce006a02f39bf9e00e7e506271bb5aa1ebda6deffc081f48bdd4f88",
+      "receipt_sha256": "b5bc112c363353d0af6e6a949a8a9e803cc24b4778ccec1bc434eef7180a0711",
+      "stdout_sha256": "2a520697339184563626f826a24b33bb0a67cd87119c216b623ca38ac05deade"
+    },
+    {
+      "label": "occupation",
+      "script_sha256": "03bce1285535335e2fa843facf2bf5c26725f6f4c4b016372aab835e749a9daf",
+      "receipt_sha256": "93ea69d6f27d6b811e175e7924de34dd7060aee8eb4b83cc74604176e6fe1978",
+      "stdout_sha256": "f38594411710c7970036d2c8d2856711e5b68beb5e679ba453c579d50bf918bc"
+    },
+    {
+      "label": "primitive",
+      "script_sha256": "890d0d1dcd431349e9b6f9dd3fd2f3beda9bd1a8c7460eb1d6e686576706ee8a",
+      "receipt_sha256": "1d921d9e43dcfe953c8f2da6a3bdbb2e1c4c8b125e9d991f6795e45a47b4e098",
+      "stdout_sha256": "d91b4c511bac749e00c74cc25351a693bff90e9933d643de893ef46497a160fb"
+    }
+  ],
+  "occupation": [
+    {
+      "L": 2,
+      "complete_direct_Gram_rows": 1,
+      "exact_sparse_entries": 6,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "-5",
+      "exact_Collatz_upper": "-5"
+    },
+    {
+      "L": 4,
+      "complete_direct_Gram_rows": 5,
+      "exact_sparse_entries": 923,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "8000605572249/1562500000",
+      "exact_Collatz_upper": "2510070995367/490211134"
+    },
+    {
+      "L": 6,
+      "complete_direct_Gram_rows": 9,
+      "exact_sparse_entries": 1874,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "5866216125375419/970768083869",
+      "exact_Collatz_upper": "6025118031802106/997063892943"
+    },
+    {
+      "L": 8,
+      "complete_direct_Gram_rows": 18,
+      "exact_sparse_entries": 3583,
+      "all_quotient_entries_recomputed": true,
+      "exact_Collatz_lower": "2010726433740840/332578272649",
+      "exact_Collatz_upper": "3020246001073918/499554877857"
+    }
+  ],
+  "primitive": [
+    {
+      "L": 2,
+      "all_primitive_rows_consumed": 36,
+      "primitive_path_count": 1764,
+      "exact_occupation_comparisons": 6,
+      "resolved_birth_branches_rechecked": 4
+    },
+    {
+      "L": 4,
+      "all_primitive_rows_consumed": 15,
+      "primitive_path_count": 206448,
+      "exact_occupation_comparisons": 15,
+      "resolved_birth_branches_rechecked": 10
+    }
+  ],
+  "full_result_hashes": {
+    "OCCUPATION_SPECTRUM_RESULTS.json": "ffcc6f8682e61213a04b164aa353c503e4c01a6ecf9201667a70cb4b01485a6c",
+    "PRIMITIVE_COLORED_RESULTS.json": "624f04e44fd76d33e7d82f08326d4b7ee1b15cfa70362ce42f7401f01dad21f8"
+  },
+  "PRE_sha256": "af9ddd081ee38c4f59cee428b43132d8a4d4cef87e4e6efecb933daf768d614a",
+  "elapsed_seconds": 4.228729584021494,
+  "all_checks_satisfied": true,
+  "no_author_code": true,
+  "authority_limit": "Own deterministic evidence checks; not an audit or a finite-g spectral reproduction"
+}

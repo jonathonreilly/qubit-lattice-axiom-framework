@@ -1,0 +1,626 @@
+{
+  "PRE_coarse_thresholds_on_shared_L_ge_6_domain": {
+    "lower": "421/2604",
+    "strictly_sharper_than_root": true,
+    "upper": "209/336"
+  },
+  "PRE_members_unchanged": 35,
+  "PRE_seal_sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384",
+  "all_comparisons_passed": true,
+  "allowed_parent_and_workflow_origins_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "load-bearing main science",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "load-bearing main science",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "role": "workflow",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "workflow",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  ],
+  "artificial_ambient_average_checks": [
+    {
+      "falling_factorial_value": "35",
+      "m": 0,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "185/3",
+      "m": 1,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "535/6",
+      "m": 2,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "112",
+      "m": 3,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "12502/99",
+      "m": 4,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "12845/99",
+      "m": 5,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "8035/66",
+      "m": 6,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "10220/99",
+      "m": 7,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "7603/99",
+      "m": 8,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "513/11",
+      "m": 9,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "1225/66",
+      "m": 10,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "0",
+      "m": 11,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "0",
+      "m": 12,
+      "n": 12,
+      "r": 1
+    },
+    {
+      "falling_factorial_value": "36",
+      "m": 0,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "194/3",
+      "m": 1,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "3034/33",
+      "m": 2,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "6232/55",
+      "m": 3,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "5656/45",
+      "m": 4,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "12614/99",
+      "m": 5,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "3902/33",
+      "m": 6,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "9836/99",
+      "m": 7,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "36308/495",
+      "m": 8,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "2434/55",
+      "m": 9,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "578/33",
+      "m": 10,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "0",
+      "m": 11,
+      "n": 12,
+      "r": 2
+    },
+    {
+      "falling_factorial_value": "0",
+      "m": 12,
+      "n": 12,
+      "r": 2
+    }
+  ],
+  "author_members_verified": 9,
+  "author_output_byte_identical_to_stdout": true,
+  "author_seal_sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+  "author_stored_execution": {
+    "code_sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+    "elapsed_seconds": 0.34177000005729496,
+    "exit_code": 0,
+    "started_utc": "2026-09-25T02:36:28.520682+00:00",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_bytes": 49447,
+    "stdout_sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57"
+  },
+  "checked_utc": "2026-09-25T03:54:46.075440+00:00",
+  "chronology": {
+    "PRE_sealed_utc": "2026-09-25T03:23:23.028861+00:00",
+    "author_precedes_PRE": true,
+    "author_sealed_utc": "2026-09-25T02:55:49.585286+00:00"
+  },
+  "direct_shared_PRE_geometry_matches": [
+    {
+      "L": 6,
+      "PRE_over_root": 2,
+      "PRE_trial": "779703084/3745",
+      "root_trial": "389851542/3745"
+    },
+    {
+      "L": 8,
+      "PRE_over_root": 2,
+      "PRE_trial": "91650816/187",
+      "root_trial": "45825408/187"
+    }
+  ],
+  "half_filling_strict_excess_checks": [
+    {
+      "L": 6,
+      "half_trial_per_n": "7219473/7490",
+      "positive_excess": "42624/3745"
+    },
+    {
+      "L": 8,
+      "half_trial_per_n": "358011/374",
+      "positive_excess": "888/187"
+    },
+    {
+      "L": 10,
+      "half_trial_per_n": "473646963/496006",
+      "positive_excess": "600624/248003"
+    },
+    {
+      "L": 12,
+      "half_trial_per_n": "472525377/495362",
+      "positive_excess": "346536/247681"
+    }
+  ],
+  "limitations": [
+    "This comparison parses prior controls; it does not rerun their 3072 subsets, geometry enumeration or physical paths.",
+    "L=10,12 incidence values are checked against the proved formula and read author code, not a fresh independent graph enumeration.",
+    "No normalizable ground vector, exact minimizing filling, fixed-g thermodynamic limit, physical vacuum or empirical implication established."
+  ],
+  "live_pinned_origins_verified": 17,
+  "local_masks_represented": 3072,
+  "local_rows_compared_with_independent_PRE": 147,
+  "root_thresholds": {
+    "lower": "421/2640",
+    "upper": "4103/6008"
+  },
+  "root_union_maxima_from_stored_PRE_rows": [
+    {
+      "increment_max": "69/2",
+      "patterns": 36,
+      "r": 1,
+      "t": 0,
+      "vacancy_max": "28"
+    },
+    {
+      "increment_max": "40",
+      "patterns": 36,
+      "r": 1,
+      "t": 1,
+      "vacancy_max": "24"
+    },
+    {
+      "increment_max": "37",
+      "patterns": 25,
+      "r": 2,
+      "t": 0,
+      "vacancy_max": "104/3"
+    },
+    {
+      "increment_max": "44",
+      "patterns": 25,
+      "r": 2,
+      "t": 1,
+      "vacancy_max": "80/3"
+    },
+    {
+      "increment_max": "38",
+      "patterns": 25,
+      "r": 2,
+      "t": 2,
+      "vacancy_max": "23"
+    }
+  ],
+  "scope": "Released-source mathematical/evidence correspondence; no author/PRE scientific execution, no new blind reconstruction or audit verdict.",
+  "sealed_PRE_tooling_limitation": {
+    "POST_verifier_has_no_file_writing_calls": true,
+    "old_verifier_executed": false,
+    "write_calls": [
+      {
+        "expression": "(HERE / 'CONTROL_EXTENSION_DIFF.txt').write_text(difference)",
+        "line": 69
+      },
+      {
+        "expression": "(HERE / 'SOURCE_PINS.json').write_text(json.dumps(pins, indent=2) + '\\n')",
+        "line": 132
+      },
+      {
+        "expression": "(HERE / 'VERIFICATION_REPORT.json').write_text(text)",
+        "line": 146
+      }
+    ]
+  },
+  "source_sha256": "8886068fd7204f5fd2fc826be2a3181956d838735d899e7f3fb7cfccd02f2501",
+  "torus_stored_row_arithmetic_checks": [
+    {
+      "L": 6,
+      "Rayleigh_per_n": "321",
+      "m": 0,
+      "n": 108,
+      "root_bounds_per_n": [
+        "321",
+        "3004"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "241991/642",
+      "m": 2,
+      "n": 108,
+      "root_bounds_per_n": [
+        "1183/3",
+        "79606/27"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "73334691/79394",
+      "m": 26,
+      "n": 108,
+      "root_bounds_per_n": [
+        "3823/3",
+        "61582/27"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "7219473/7490",
+      "m": 54,
+      "n": 108,
+      "root_bounds_per_n": [
+        "2301",
+        "1502"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "2541027/5671",
+      "m": 80,
+      "n": 108,
+      "root_bounds_per_n": [
+        "9763/3",
+        "21028/27"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "393/214",
+      "m": 106,
+      "n": 108,
+      "root_bounds_per_n": [
+        "12623/3",
+        "1502/27"
+      ]
+    },
+    {
+      "L": 6,
+      "Rayleigh_per_n": "0",
+      "m": 108,
+      "n": 108,
+      "root_bounds_per_n": [
+        "4281",
+        "0"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "321",
+      "m": 0,
+      "n": 256,
+      "root_bounds_per_n": [
+        "321",
+        "3004"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "3749391/10880",
+      "m": 2,
+      "n": 256,
+      "root_bounds_per_n": [
+        "5631/16",
+        "95377/32"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "443020107/474980",
+      "m": 64,
+      "n": 256,
+      "root_bounds_per_n": [
+        "1311",
+        "2253"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "358011/374",
+      "m": 128,
+      "n": 256,
+      "root_bounds_per_n": [
+        "2301",
+        "1502"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "201610521/474980",
+      "m": 192,
+      "n": 256,
+      "root_bounds_per_n": [
+        "3291",
+        "751"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "3537/10880",
+      "m": 254,
+      "n": 256,
+      "root_bounds_per_n": [
+        "68001/16",
+        "751/32"
+      ]
+    },
+    {
+      "L": 8,
+      "Rayleigh_per_n": "0",
+      "m": 256,
+      "n": 256,
+      "root_bounds_per_n": [
+        "4281",
+        "0"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "321",
+      "m": 0,
+      "n": 500,
+      "root_bounds_per_n": [
+        "321",
+        "3004"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "41553339/124750",
+      "m": 2,
+      "n": 500,
+      "root_bounds_per_n": [
+        "8421/25",
+        "373998/125"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "19101125334/20584249",
+      "m": 124,
+      "n": 500,
+      "root_bounds_per_n": [
+        "32577/25",
+        "282376/125"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "473646963/496006",
+      "m": 250,
+      "n": 500,
+      "root_bounds_per_n": [
+        "2301",
+        "1502"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "2527409133/5881214",
+      "m": 374,
+      "n": 500,
+      "root_bounds_per_n": [
+        "82077/25",
+        "94626/125"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "10611/124750",
+      "m": 498,
+      "n": 500,
+      "root_bounds_per_n": [
+        "106629/25",
+        "1502/125"
+      ]
+    },
+    {
+      "L": 10,
+      "Rayleigh_per_n": "0",
+      "m": 500,
+      "n": 500,
+      "root_bounds_per_n": [
+        "4281",
+        "0"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "321",
+      "m": 0,
+      "n": 864,
+      "root_bounds_per_n": [
+        "321",
+        "3004"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "13587029/41424",
+      "m": 2,
+      "n": 864,
+      "root_bounds_per_n": [
+        "1981/6",
+        "323681/108"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "397143803853/427002044",
+      "m": 216,
+      "n": 864,
+      "root_bounds_per_n": [
+        "1311",
+        "2253"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "472525377/495362",
+      "m": 432,
+      "n": 864,
+      "root_bounds_per_n": [
+        "2301",
+        "1502"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "181343764335/427002044",
+      "m": 648,
+      "n": 864,
+      "root_bounds_per_n": [
+        "3291",
+        "751"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "393/13808",
+      "m": 862,
+      "n": 864,
+      "root_bounds_per_n": [
+        "25631/6",
+        "751/108"
+      ]
+    },
+    {
+      "L": 12,
+      "Rayleigh_per_n": "0",
+      "m": 864,
+      "n": 864,
+      "root_bounds_per_n": [
+        "4281",
+        "0"
+      ]
+    }
+  ],
+  "unopened_historical_context_metadata": [
+    {
+      "live_hash_checked": false,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+      "referenced_file_opened": false,
+      "role": "Previously read provisional context; not independent verification of root35.",
+      "sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922"
+    },
+    {
+      "live_hash_checked": false,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/AUTHOR_SEAL.json",
+      "referenced_file_opened": false,
+      "role": "Previously read provisional context; not independent verification of root35.",
+      "sha256": "69a754ada477506f4437705dbb49e8ebe93b3c230185b7376b3b8d6bfb18dc6d"
+    },
+    {
+      "live_hash_checked": false,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE.md",
+      "referenced_file_opened": false,
+      "role": "Previously read provisional context; not independent verification of root35.",
+      "sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9"
+    },
+    {
+      "live_hash_checked": false,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE_SEAL.json",
+      "referenced_file_opened": false,
+      "role": "Previously read provisional context; not independent verification of root35.",
+      "sha256": "bed28ea9c81afb7822d0ddeeb552260e3e0547b6f387c9edb8dbd6aec83ee25b"
+    }
+  ]
+}

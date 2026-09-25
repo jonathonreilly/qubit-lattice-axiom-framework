@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T04:11:31.623396+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_primitive_comparison.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent",
+  "elapsed_seconds": 4.0717242090031505,
+  "exit_code": 0,
+  "script_sha256": "f1663352dc4edb85435331d0b3f4ec3a50f477ffd0fd5cf96c1b54f14c8a415d",
+  "stdout_bytes": 36462,
+  "stdout_sha256": "705010176fed221d0ba7a25e1e19c1f2a3299cdfa6967fba120f70f3f3f83a63",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

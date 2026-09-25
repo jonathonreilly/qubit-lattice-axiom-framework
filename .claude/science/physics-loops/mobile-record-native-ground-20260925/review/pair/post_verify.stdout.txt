@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-25T02:38:20.072058+00:00",
+  "source_sha256": "3fa330a19fe75f16eb75dca3f7da5885284f2217ee0882fafed95c28ba355ae2",
+  "POST_sha256": "d2053231ce071291e0736d65a1c00437bf3aac190ac740e7c5f0940f6420e1e7",
+  "POST_comparison_sha256": "02a7cd6b8b22c874adab0443be00b54585006dc0f46950122e1f89fda3f997fb",
+  "exact_author_origins_and_procedural_snapshots": 27,
+  "unchanged_PRE_members": 42,
+  "own_execution_bindings": [
+    {
+      "label": "post_freeze",
+      "receipt_sha256": "921540b40ee9f0c46eb70d243d282c10fc6d6144dbf990a34caec5dd42af8a54",
+      "elapsed_seconds": 0.24412045790813863,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "label": "post_compare",
+      "receipt_sha256": "90bcc9dd6b70b318304f8d8f6f78afcf5b153d72c2ef410c4c116224095678a4",
+      "elapsed_seconds": 2.0977389998733997,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "numerical_metadata_and_prose": [
+    {
+      "L": 2,
+      "metadata_matches_PRE": true,
+      "exact_gap": [
+        "5/2",
+        "5/2"
+      ],
+      "author_floating_residual": 3.00540469234687e-14,
+      "floating_residual_independently_reproduced": false,
+      "displayed_decimal_interval_verified": false
+    },
+    {
+      "L": 4,
+      "metadata_matches_PRE": true,
+      "exact_gap": [
+        "-2510070995367/980422268",
+        "-8000605572249/3125000000"
+      ],
+      "author_floating_residual": 2.384715226458301e-12,
+      "floating_residual_independently_reproduced": false,
+      "displayed_decimal_interval_verified": true
+    },
+    {
+      "L": 6,
+      "metadata_matches_PRE": true,
+      "exact_gap": [
+        "-3012559015901053/997063892943",
+        "-5866216125375419/1941536167738"
+      ],
+      "author_floating_residual": 5.5462400803892106e-12,
+      "floating_residual_independently_reproduced": false,
+      "displayed_decimal_interval_verified": true
+    },
+    {
+      "L": 8,
+      "metadata_matches_PRE": true,
+      "exact_gap": [
+        "-1510123000536959/499554877857",
+        "-1005363216870420/332578272649"
+      ],
+      "author_floating_residual": 6.7354054606760765e-12,
+      "floating_residual_independently_reproduced": false,
+      "displayed_decimal_interval_verified": true
+    }
+  ],
+  "complete_comparison_summary_projection_matches": true,
+  "original_author_receipts_unchanged": true,
+  "all_scientific_parents_unchanged": true,
+  "author_programs_executed_or_imported": false,
+  "all_checks_satisfied": true,
+  "scope": "Exact bindings and numerical prose checks. Recorded floating residuals are author diagnostics; no audit or new eigenvalue run."
+}

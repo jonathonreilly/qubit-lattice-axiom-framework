@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-25T04:20:55.344480+00:00",
+  "POST_sha256": "0a737a77bdc61c1bf5f2e138f7d928e5165a6b9c66564ee1eec9a105196dec6b",
+  "seal_sha256": "85c0e0e9fc2c05217d48d21c73a8927b8c7f5718073355d65640c9a93fb41451",
+  "members": {
+    "PRE_SEAL.json": 35,
+    "POST_SEAL.json": 33
+  },
+  "unique_live_origins": 18,
+  "procedure_git_bindings": 4,
+  "root_coverage": "Complete POST, new primitive comparison and binding scripts, all 72 numeric summary rows, complete 5-state physical support/Q/Gamma/D matrices and four rational phase rows, source bindings and execution receipts read. Initial long result display truncation repaired with all72 compact complete numeric rows; all full payload hashes checked.",
+  "fresh_check": "Reviewed binding-script AST with exactly its final report-file write removed; all assertions and stdout unchanged. Exact reproduction except timestamp. Adapter saved externally.",
+  "own_independent_POST_reconstruction": {
+    "columns": 72,
+    "entries": 43970,
+    "author_program_run": false,
+    "elapsed_seconds": 4.0717242090031505
+  },
+  "result": "No mathematical repair. Phase-deficit proof legitimately uses entrywise order, with full form domain. Global theorem remains conditional on35, whose separate PRE/POST root review exists.",
+  "scope_limits": [
+    "No new independent35 reconstruction in36POST.",
+    "PRE36 stronger affine operator theorem and distance-four fixture retain PRE provenance.",
+    "Cube phase check uses degree-three coefficient4, not degree-six8/5.",
+    "No physical vacuum, microscopic transfer or empirical validation in this packet."
+  ]
+}

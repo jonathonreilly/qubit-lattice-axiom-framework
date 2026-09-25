@@ -1,0 +1,165 @@
+{
+  "control": "Independent primitive all-color local star Laurent Gram enumeration",
+  "original_resolved_and_unnormalized_coherent": true,
+  "source_words": 1458,
+  "outward_paths": 2916,
+  "M_entries": 11050,
+  "Gamma_entries": 8746,
+  "identities_exact": true,
+  "channels": [
+    {
+      "b": 0,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 0,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 1,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 1,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 2,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 2,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 3,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 3,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 4,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 4,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 5,
+      "sigma": -1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    },
+    {
+      "b": 5,
+      "sigma": 1,
+      "paths": 810,
+      "distinct_laurent_entries": 2582
+    }
+  ],
+  "vacancy_blocks": [
+    {
+      "v": 0,
+      "input_words": 128,
+      "outward_column_count": 0,
+      "intermediate_row_count": 0,
+      "intermediate_matter_words": 0,
+      "zero_angle_M_row_sum": 0,
+      "affine_coefficient": "7/5",
+      "certified_affine_upper": "0",
+      "gamma_over_kappa_upper": 0
+    },
+    {
+      "v": 1,
+      "input_words": 384,
+      "outward_column_count": 1,
+      "intermediate_row_count": 6,
+      "intermediate_matter_words": 64,
+      "zero_angle_M_row_sum": 6,
+      "affine_coefficient": "1",
+      "certified_affine_upper": "6",
+      "gamma_over_kappa_upper": 0
+    },
+    {
+      "v": 2,
+      "input_words": 480,
+      "outward_column_count": 2,
+      "intermediate_row_count": 5,
+      "intermediate_matter_words": 192,
+      "zero_angle_M_row_sum": 10,
+      "affine_coefficient": "3/5",
+      "certified_affine_upper": "6",
+      "gamma_over_kappa_upper": 20
+    },
+    {
+      "v": 3,
+      "input_words": 320,
+      "outward_column_count": 3,
+      "intermediate_row_count": 4,
+      "intermediate_matter_words": 240,
+      "zero_angle_M_row_sum": 12,
+      "affine_coefficient": "1/5",
+      "certified_affine_upper": "12/5",
+      "gamma_over_kappa_upper": 48
+    },
+    {
+      "v": 4,
+      "input_words": 120,
+      "outward_column_count": 4,
+      "intermediate_row_count": 3,
+      "intermediate_matter_words": 160,
+      "zero_angle_M_row_sum": 12,
+      "affine_coefficient": "-1/5",
+      "certified_affine_upper": "0",
+      "gamma_over_kappa_upper": 72
+    },
+    {
+      "v": 5,
+      "input_words": 24,
+      "outward_column_count": 5,
+      "intermediate_row_count": 2,
+      "intermediate_matter_words": 60,
+      "zero_angle_M_row_sum": 10,
+      "affine_coefficient": "-3/5",
+      "certified_affine_upper": "0",
+      "gamma_over_kappa_upper": 80
+    },
+    {
+      "v": 6,
+      "input_words": 2,
+      "outward_column_count": 6,
+      "intermediate_row_count": 1,
+      "intermediate_matter_words": 12,
+      "zero_angle_M_row_sum": 6,
+      "affine_coefficient": "-1",
+      "certified_affine_upper": "0",
+      "gamma_over_kappa_upper": 60
+    }
+  ],
+  "derivation_limit": "Norm proof is Schur/Cauchy on exact paths; enumeration is a bounded corroboration, not a global spectral computation.",
+  "entries_sha256": "c3f78f738794d9ec6520ba028f78e089ec60ffc2d176002dbfd7c2a488e0ce16",
+  "elapsed_seconds": 0.18887612503021955
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-25T04:42:51.880184+00:00",
+  "error": "Root verifier asserted cache_status == ok; actual API correctly returns fresh for usable cache.",
+  "source_read": "scripts/runner_cache.py lines426-450",
+  "scope": "Bookkeeping API expectation only; all full scientific leaf and rational checks had completed. No scientific program rerun or output edit.",
+  "preserved_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stderr",
+      "sha256": "4b4cdd53650f3a65a0ebe66c199486be417006609c0d4ca72406a9a3ff139a5c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/verify_native_ground_publication_primary.py",
+      "sha256": "a6d92cf3b84c1da2c5d4430bd7935571b7feb7b6c6c210c3874775cd5e0d6934"
+    }
+  ]
+}

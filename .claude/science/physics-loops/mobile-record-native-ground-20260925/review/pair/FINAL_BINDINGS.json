@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-09-25T02:19:45.617067+00:00",
+  "scope": "Bind the final formatting-corrected PRE to unchanged scientific evidence.",
+  "source_sha256": "c7331f51d37decc17ab1e14de6884d417b4cca6dc001b7e3c214f13bda4e53da",
+  "final_PRE_sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9",
+  "verified_original_PRE_sha256": "af9ddd081ee38c4f59cee428b43132d8a4d4cef87e4e6efecb933daf768d614a",
+  "formatting_only_identity": true,
+  "scientific_verification_sha256": "efabae392d81364ce769e87915ef145bfd075ab9a5e816a695c75b22f1d661e9",
+  "scientific_controls_unchanged": true,
+  "all_sources_refreshed_unchanged": true,
+  "complete_direct_Gram_representative_rows": 33,
+  "complete_exact_Gram_sparse_entries": 6386,
+  "complete_primitive_rows": 51,
+  "total_primitive_paths": 208212,
+  "original_resolved_birth_branches_rechecked": 14,
+  "execution_bindings": [
+    {
+      "label": "freeze",
+      "receipt_sha256": "b5bc112c363353d0af6e6a949a8a9e803cc24b4778ccec1bc434eef7180a0711",
+      "elapsed_seconds": 0.09493362484499812,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "label": "occupation",
+      "receipt_sha256": "93ea69d6f27d6b811e175e7924de34dd7060aee8eb4b83cc74604176e6fe1978",
+      "elapsed_seconds": 1.0159674999304116,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "label": "primitive",
+      "receipt_sha256": "1d921d9e43dcfe953c8f2da6a3bdbb2e1c4c8b125e9d991f6795e45a47b4e098",
+      "elapsed_seconds": 2.09134841687046,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "label": "verify",
+      "receipt_sha256": "5c1d3f5c4e87ad088b95f1fcd51d80f37e84305fa42eda7315a699dc69d154cb",
+      "elapsed_seconds": 4.283148208865896,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "label": "math_repair",
+      "receipt_sha256": "9614a138539e8e8816b198cd05b01f2301f4c91fd8c15811bec16aa57bbc1a37",
+      "elapsed_seconds": 0.062472250079736114,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "author_disclosure_received": false,
+  "all_checks_satisfied": true,
+  "authority_limit": "Evidence binding only; no audit verdict"
+}

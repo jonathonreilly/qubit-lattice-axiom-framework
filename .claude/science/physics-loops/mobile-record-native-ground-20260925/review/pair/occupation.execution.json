@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T02:03:50.492214+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/occupation_spectrum.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent",
+  "elapsed_seconds": 1.0159674999304116,
+  "exit_code": 0,
+  "script_sha256": "03bce1285535335e2fa843facf2bf5c26725f6f4c4b016372aab835e749a9daf",
+  "stdout_bytes": 16020,
+  "stdout_sha256": "f38594411710c7970036d2c8d2856711e5b68beb5e679ba453c579d50bf918bc",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

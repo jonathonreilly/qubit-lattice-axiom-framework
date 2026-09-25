@@ -1,0 +1,197 @@
+{
+  "cubic_symmetry_groups": [
+    {
+      "absolute_coordinate_type": [
+        0,
+        0,
+        2
+      ],
+      "displacements": 6,
+      "exact_row_sum": 11900,
+      "example": {
+        "displacement": [
+          -2,
+          0,
+          0
+        ],
+        "active_pairs": 164,
+        "common_active_pairs": 22,
+        "diagonal": -2540,
+        "row_sum": 11900,
+        "nonzero_targets": 335,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    },
+    {
+      "absolute_coordinate_type": [
+        0,
+        0,
+        4
+      ],
+      "displacements": 6,
+      "exact_row_sum": 12122,
+      "example": {
+        "displacement": [
+          -4,
+          0,
+          0
+        ],
+        "active_pairs": 185,
+        "common_active_pairs": 1,
+        "diagonal": -2566,
+        "row_sum": 12122,
+        "nonzero_targets": 191,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    },
+    {
+      "absolute_coordinate_type": [
+        0,
+        1,
+        1
+      ],
+      "displacements": 12,
+      "exact_row_sum": 11512,
+      "example": {
+        "displacement": [
+          -1,
+          -1,
+          0
+        ],
+        "active_pairs": 149,
+        "common_active_pairs": 37,
+        "diagonal": -2524,
+        "row_sum": 11512,
+        "nonzero_targets": 357,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    },
+    {
+      "absolute_coordinate_type": [
+        0,
+        1,
+        3
+      ],
+      "displacements": 24,
+      "exact_row_sum": 12168,
+      "example": {
+        "displacement": [
+          -3,
+          -1,
+          0
+        ],
+        "active_pairs": 183,
+        "common_active_pairs": 3,
+        "diagonal": -2562,
+        "row_sum": 12168,
+        "nonzero_targets": 229,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    },
+    {
+      "absolute_coordinate_type": [
+        0,
+        2,
+        2
+      ],
+      "displacements": 12,
+      "exact_row_sum": 12188,
+      "example": {
+        "displacement": [
+          -2,
+          -2,
+          0
+        ],
+        "active_pairs": 182,
+        "common_active_pairs": 4,
+        "diagonal": -2560,
+        "row_sum": 12188,
+        "nonzero_targets": 242,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    },
+    {
+      "absolute_coordinate_type": [
+        1,
+        1,
+        2
+      ],
+      "displacements": 24,
+      "exact_row_sum": 12248,
+      "example": {
+        "displacement": [
+          -2,
+          -1,
+          -1
+        ],
+        "active_pairs": 179,
+        "common_active_pairs": 7,
+        "diagonal": -2554,
+        "row_sum": 12248,
+        "nonzero_targets": 283,
+        "maximum_active_vertex_distance_from_nearer_input": 4
+      }
+    }
+  ],
+  "far_controls": [
+    {
+      "displacement": [
+        0,
+        0,
+        6
+      ],
+      "active_pairs": 186,
+      "common_active_pairs": 0,
+      "diagonal": -2568,
+      "row_sum": 12096,
+      "nonzero_targets": 169,
+      "maximum_active_vertex_distance_from_nearer_input": 4
+    },
+    {
+      "displacement": [
+        2,
+        2,
+        2
+      ],
+      "active_pairs": 186,
+      "common_active_pairs": 0,
+      "diagonal": -2568,
+      "row_sum": 12096,
+      "nonzero_targets": 169,
+      "maximum_active_vertex_distance_from_nearer_input": 4
+    },
+    {
+      "displacement": [
+        4,
+        2,
+        0
+      ],
+      "active_pairs": 186,
+      "common_active_pairs": 0,
+      "diagonal": -2568,
+      "row_sum": 12096,
+      "nonzero_targets": 169,
+      "maximum_active_vertex_distance_from_nearer_input": 4
+    },
+    {
+      "displacement": [
+        12,
+        0,
+        0
+      ],
+      "active_pairs": 186,
+      "common_active_pairs": 0,
+      "diagonal": -2568,
+      "row_sum": 12096,
+      "nonzero_targets": 169,
+      "maximum_active_vertex_distance_from_nearer_input": 4
+    }
+  ],
+  "min_delta_Q_row_sum": 11512,
+  "max_delta_Q_row_sum": 12248,
+  "proposed_all_L_at_least_10_g2_tau_gap_interval": [
+    -3062.0,
+    -2878.0
+  ],
+  "elapsed_seconds": 1.4319601249881089
+}

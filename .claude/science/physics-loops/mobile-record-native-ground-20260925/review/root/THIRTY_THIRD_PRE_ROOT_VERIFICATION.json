@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-25T02:25:25.561785+00:00",
+  "PRE_sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9",
+  "seal_sha256": "bed28ea9c81afb7822d0ddeeb552260e3e0547b6f387c9edb8dbd6aec83ee25b",
+  "sealed_members_verified": 42,
+  "origin_bindings_verified": 4,
+  "execution_bindings_verified": 6,
+  "root_read": "Complete PRE, two scientific controls, exact verifier, formatting/final binding code, complete numerical row summaries and all 14 birth branches. Large exact matrices and sparse rows fully recomputed and compared by the read-only verifier.",
+  "fresh_exact_verification": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_THIRD_PRE_ROOT_EXACT_VERIFICATION.json",
+    "sha256": "fefd6389a65159c767622021d56a4e019eb812b0dd33bda8ae1cc039c165d6e3"
+  },
+  "assessment": "Independent leading sector/cyclic-edge structure agrees; its Perron matrix is half the root Q convention. Exact fixed-g full/cyclic equality is not established. Independent Rayleigh all-degree-six sign bound and strong-resolvent proof retain their own provenance. Root local-polynomial bounds await released comparison.",
+  "preserved_history": "Inline-math repair only, old verifier binding retained, one nonexecuting orchestration parse failure."
+}

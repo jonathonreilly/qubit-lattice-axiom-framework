@@ -1,0 +1,1179 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/AUTHOR_SEAL.json",
+      "sha256": "69a754ada477506f4437705dbb49e8ebe93b3c230185b7376b3b8d6bfb18dc6d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/CONTROL.stdout",
+      "sha256": "f90f83ec18904ea405122cf9a6715edb40ca58794256936f7616ef08a4ea3306"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/EXECUTION.json",
+      "sha256": "f746bfbdabe2ee2f9adabd65045b86dad45dfa140a677cea76c7488ef87ee120"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/LOCAL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/LOCAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/LOCAL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/LOCAL.stdout",
+      "sha256": "6e18e044028b762d1f482faaabf993d345da23ada9ea4d422238117f6d12279b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/LOCAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/LOCAL_EXECUTION.json",
+      "sha256": "01b8cb738e90956476bc58fb37165fdaad652d11a858719ed5d178fece9b18f0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/LOCAL_ROW_CERTIFICATE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/LOCAL_ROW_CERTIFICATE.json",
+      "sha256": "89a6f07c1ec4008a1288b60a1ffa50dfa4432d016ec254c8b72d8b5e6eaaaae1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+      "sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/NATIVE_PAIR_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/NATIVE_PAIR_RESULTS.json",
+      "sha256": "5fdae94953701d76459412d818f8086089279f84cc4d29f76299c57f3848476f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/POLYNOMIAL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/POLYNOMIAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/POLYNOMIAL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/POLYNOMIAL.stdout",
+      "sha256": "1ed171b0d5f5c1abffb5d18db130798d48e0616a22254adc1873fe19127df2f8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/POLYNOMIAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/POLYNOMIAL_EXECUTION.json",
+      "sha256": "4a4699c2220d070a58052ba7b37e219bc496521131397223843e8523ebd674c3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/ROOT_REVIEW.json",
+      "sha256": "f13a9366e8aaf4dca3a7777bf8744033031183072b550ba28eca5b34b9e29185"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/ROOT_VERIFICATION.json",
+      "sha256": "2cf64c35f52daca3cfb4aa9acb472f3b8597a94f6d0ae32e73b7214399e06e62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/ROW_POLYNOMIAL_CERTIFICATE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/ROW_POLYNOMIAL_CERTIFICATE.json",
+      "sha256": "1ed171b0d5f5c1abffb5d18db130798d48e0616a22254adc1873fe19127df2f8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/SOURCE_PINS.json",
+      "sha256": "e9ae312e06616b7c0bab953545c2eaa8b01ee6cb449fc27aa3aec6292f3d3d51"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/WORKING_DERIVATION.md",
+      "sha256": "ed88cfbdca0b0aab7893ee586082a29ce151853f21e9aa7ff755f657c3285134"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/native_pair_controls.py",
+      "sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_local_row_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/native_pair_local_row_certificate.py",
+      "sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_row_polynomial_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/native_pair_row_polynomial_certificate.py",
+      "sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/verify_native_pair_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/verify_native_pair_evidence.py",
+      "sha256": "5a22e20c1a822678524f5a1af799c3b8a0a164eb8a2b59aaa610e7b4f690d228"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/CHECKPOINT.md",
+      "sha256": "e1ca1faa57488e22d7aa0018e2ea3aa628d74a30a741ae92f82f714364f1b7e5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/EVIDENCE_LOG.md",
+      "sha256": "42dd157b8ca470911ff371179395f8d8a2eac57e44ed0b8a1dfafb8ae3c7fc5c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/FINAL_BINDINGS.json",
+      "sha256": "f65b23da684c745961bcdbf3e6936519ab78a1cd61f15a608cf6fbc219759e4c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/MATH_DELIMITER_REPAIR.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/MATH_DELIMITER_REPAIR.json",
+      "sha256": "2ff8f2d6edadee0e1cd5f9ca9e3873ddf5d28cba66255a0e20eebde78a45c410"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/OCCUPATION_SPECTRUM_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/OCCUPATION_SPECTRUM_RESULTS.json",
+      "sha256": "ffcc6f8682e61213a04b164aa353c503e4c01a6ecf9201667a70cb4b01485a6c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/ORCHESTRATION_FAILURE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/ORCHESTRATION_FAILURE.md",
+      "sha256": "98e96b8365a56036863c0db625bdb6ff4a1e15d4cf536de2497ae7ab005f76b6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST.md",
+      "sha256": "d2053231ce071291e0736d65a1c00437bf3aac190ac740e7c5f0940f6420e1e7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_CHECKPOINT.md",
+      "sha256": "702ee8707abcfbc07f808678d3e0f172e4108f22b035200f933369fc3f2c8863"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_COMPARISON_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_COMPARISON_RESULTS.json",
+      "sha256": "02a7cd6b8b22c874adab0443be00b54585006dc0f46950122e1f89fda3f997fb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_EVIDENCE_LOG.md",
+      "sha256": "05b0182af163f13ba205e474668867b09df5ba5e1db058c223323d3097b85af9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_FINAL_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_FINAL_VERIFICATION.json",
+      "sha256": "3ae0b84c24b17fba5f625ea4bc5adfbec4c786882ea1e74dfa86fde2571c6fca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_SEAL.json",
+      "sha256": "69a4ee27e9f7990945f2f2ed54a269fd9221314ef726be69833eac2020519de9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST_SOURCE_PINS.json",
+      "sha256": "64425f51fc3ac1c5322c7d61fcb6a8af1db51cb50b93b0e7a78f7f40193c0743"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/PRE.md",
+      "sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/PRE_SEAL.json",
+      "sha256": "bed28ea9c81afb7822d0ddeeb552260e3e0547b6f387c9edb8dbd6aec83ee25b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE_VERIFICATION_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/PRE_VERIFICATION_RESULTS.json",
+      "sha256": "efabae392d81364ce769e87915ef145bfd075ab9a5e816a695c75b22f1d661e9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRIMITIVE_COLORED_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/PRIMITIVE_COLORED_RESULTS.json",
+      "sha256": "624f04e44fd76d33e7d82f08326d4b7ee1b15cfa70362ce42f7401f01dad21f8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/SOURCE_PINS.json",
+      "sha256": "2a520697339184563626f826a24b33bb0a67cd87119c216b623ca38ac05deade"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/final_bindings.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/final_bindings.execution.json",
+      "sha256": "561691741b3ca324fec52a31adee6ed1e87453f9161c264a9da7faef3461e42c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/final_bindings.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/final_bindings.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/final_bindings.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/final_bindings.stdout.txt",
+      "sha256": "f65b23da684c745961bcdbf3e6936519ab78a1cd61f15a608cf6fbc219759e4c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/finalize_bindings.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/finalize_bindings.py",
+      "sha256": "c7331f51d37decc17ab1e14de6884d417b4cca6dc001b7e3c214f13bda4e53da"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/freeze.execution.json",
+      "sha256": "b5bc112c363353d0af6e6a949a8a9e803cc24b4778ccec1bc434eef7180a0711"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/freeze.stdout.txt",
+      "sha256": "2a520697339184563626f826a24b33bb0a67cd87119c216b623ca38ac05deade"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/freeze_sources.py",
+      "sha256": "aafc56d27ce006a02f39bf9e00e7e506271bb5aa1ebda6deffc081f48bdd4f88"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/history/PRE_before_math_delimiter_repair.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/history/PRE_before_math_delimiter_repair.md",
+      "sha256": "af9ddd081ee38c4f59cee428b43132d8a4d4cef87e4e6efecb933daf768d614a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/math_repair.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/math_repair.execution.json",
+      "sha256": "9614a138539e8e8816b198cd05b01f2301f4c91fd8c15811bec16aa57bbc1a37"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/math_repair.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/math_repair.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/math_repair.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/math_repair.stdout.txt",
+      "sha256": "2ff8f2d6edadee0e1cd5f9ca9e3873ddf5d28cba66255a0e20eebde78a45c410"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/occupation.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/occupation.execution.json",
+      "sha256": "93ea69d6f27d6b811e175e7924de34dd7060aee8eb4b83cc74604176e6fe1978"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/occupation.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/occupation.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/occupation.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/occupation.stdout.txt",
+      "sha256": "f38594411710c7970036d2c8d2856711e5b68beb5e679ba453c579d50bf918bc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/occupation_spectrum.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/occupation_spectrum.py",
+      "sha256": "03bce1285535335e2fa843facf2bf5c26725f6f4c4b016372aab835e749a9daf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_compare.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_compare.execution.json",
+      "sha256": "90bcc9dd6b70b318304f8d8f6f78afcf5b153d72c2ef410c4c116224095678a4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_compare.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_compare.py",
+      "sha256": "81d452b4d3b5bc7f5533946eb02652c587873a7f5111586dc4529f4c46c44c01"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_compare.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_compare.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_compare.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_compare.stdout.txt",
+      "sha256": "6725f99b116a1c536d72d112b3a4de59357efb477425180524626bf5115357d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_freeze.execution.json",
+      "sha256": "921540b40ee9f0c46eb70d243d282c10fc6d6144dbf990a34caec5dd42af8a54"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_freeze.stdout.txt",
+      "sha256": "64425f51fc3ac1c5322c7d61fcb6a8af1db51cb50b93b0e7a78f7f40193c0743"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_freeze_sources.py",
+      "sha256": "f45434468b79e02d948644ebb22b64b26ca55673406c0d3a436de922d529ad67"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_verify.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_verify.execution.json",
+      "sha256": "feed539306658fcbed4a9819a4403c08b690dba69095ff8963b9e4ad90cedbe7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_verify.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_verify.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_verify.stdout.txt",
+      "sha256": "3ae0b84c24b17fba5f625ea4bc5adfbec4c786882ea1e74dfa86fde2571c6fca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/post_verify_evidence.py",
+      "sha256": "3fa330a19fe75f16eb75dca3f7da5885284f2217ee0882fafed95c28ba355ae2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/primitive.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/primitive.execution.json",
+      "sha256": "1d921d9e43dcfe953c8f2da6a3bdbb2e1c4c8b125e9d991f6795e45a47b4e098"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/primitive.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/primitive.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/primitive.stdout.txt",
+      "sha256": "d91b4c511bac749e00c74cc25351a693bff90e9933d643de893ef46497a160fb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/primitive_colored_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/primitive_colored_control.py",
+      "sha256": "890d0d1dcd431349e9b6f9dd3fd2f3beda9bd1a8c7460eb1d6e686576706ee8a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/repair_inline_math.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/repair_inline_math.py",
+      "sha256": "b3a64ed790bda10150bf1dcb716404ebfe29f6e7da76f6c7e26be9a8e061c7a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/run_logged.py",
+      "sha256": "5040efe8948abd216d57ac3ae7528c50f79fc20c4d1222b6de917c4baf856819"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/seal_post.py",
+      "sha256": "4cffcbd459fe39820f2f608472e85865ec3cf733931879f66e736648203cb5af"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/seal_pre.py",
+      "sha256": "ec87eb20d83734b0e18fdedf68e18b82dc4a33d606c3983d1fc1eb4d4b76d70a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/verify.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/verify.execution.json",
+      "sha256": "5c1d3f5c4e87ad088b95f1fcd51d80f37e84305fa42eda7315a699dc69d154cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/verify.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/verify.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/verify.stdout.txt",
+      "sha256": "efabae392d81364ce769e87915ef145bfd075ab9a5e816a695c75b22f1d661e9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/verify_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/verify_pre.py",
+      "sha256": "0687682a968a8e053ee303c537dae7ba7d323f963a920be03e2582dd74ddf4e1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/AUTHOR_SEAL.json",
+      "sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/CONTROL.stdout",
+      "sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/EXECUTION.json",
+      "sha256": "89e82d001b25fb062cf0655d40587efb30234337a0b158a2af8f011258159445"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/GROUND_FILLING_CERTIFICATES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/GROUND_FILLING_CERTIFICATES.json",
+      "sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/ROOT_REVIEW.json",
+      "sha256": "abe3cbbac444aa41d790c09333bdc74ae07cb64290cfed46e6ace044cabe7862"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/SOURCE_PINS.json",
+      "sha256": "9280163bb7bd88c6eb1b5ca2f1234281c7ecff392c261133e308fd6193828f90"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/WORKING_DERIVATION.md",
+      "sha256": "84c701607e7697ebfe9dc4b0438bc3d3e76c8c9c126e9e1f39ced705cecabc45"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/ground_filling_certificates.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/ground_filling_certificates.py",
+      "sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/APPROACH_REGISTRY.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/APPROACH_REGISTRY.md",
+      "sha256": "8e6671c2ce3d1e4361d4ccac82ddcacde40d718a8a3b8cc53d7d84392eb483fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/CONTROL_EXTENSION_DIFF.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/CONTROL_EXTENSION_DIFF.txt",
+      "sha256": "bbce177a2df2408bd7828235d29305f1be0a64b1d9651297d69ecdba28a33137"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/CONTROL_RESULTS.json",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/INSTRUCTION_SOURCE_CONSISTENCY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/INSTRUCTION_SOURCE_CONSISTENCY.json",
+      "sha256": "0343657155ea521468002c087eed747c4d212c2eba552c8fb946ecc218d037d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/LOCAL_CERTIFICATE_REVIEW.tsv",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/LOCAL_CERTIFICATE_REVIEW.tsv",
+      "sha256": "3a25d56099909b13aa3db9c755c0188c1d9fcbadcecf69b2374ac891a3a48910"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST.md",
+      "sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_FINAL_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_FINAL_VERIFICATION.json",
+      "sha256": "82328489d16cc67b00ec17b68a95a39cda6438f03245a7c019c0076e6bd1919c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_READ_AND_FAILURE_LOG.md",
+      "sha256": "a330c30e457d23e3db3dc322ac34d352b599952d7ed85502f4f6a939198126b3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_ROOT_LOCAL_r1.tsv",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_ROOT_LOCAL_r1.tsv",
+      "sha256": "96a428af33ad44f244a9e36fe12dbfc6550fda6c61c80f1e7482f97adc81430b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_ROOT_LOCAL_r2.tsv",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_ROOT_LOCAL_r2.tsv",
+      "sha256": "fc826fdcc47d97628d7f43cfcc1d964392eabe9337f37d339a5ae907dd2ed2b1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_ROOT_REMAINING_ROWS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_ROOT_REMAINING_ROWS.json",
+      "sha256": "5aded972c53d3c81c20ea0e52a1d463a31e7e8714bca5be347d762eb7821e288"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_SEAL.json",
+      "sha256": "913f1afadcdb43214ee63108b015e8e95df6c1cc98221a07295a99afbb404bed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_SOURCE_PINS.json",
+      "sha256": "3954069f7a52c4e634db6da187e0223a5dcb38d85711bd7073321e28e7758aeb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "c40f96641e529c1abd863b590db69c496260a44b39bce1e515c372e66bcd564a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/PRE.md",
+      "sha256": "edaaee9321fe99e298acba00dd5c8b9dd750529595806eb04d844bbd27f38b72"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/PRE_SEAL.json",
+      "sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/RAYLEIGH_REVIEW.tsv",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/RAYLEIGH_REVIEW.tsv",
+      "sha256": "491511dd2e72f4d206cd04025c84de69e8cc388599b87de45c8bb96b53f768cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/READ_AND_FAILURE_LOG.md",
+      "sha256": "39da9ae8772da30bc986b6621fc6045121c8a3e96aef39b0666b2916793d9a72"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/SOURCE_PINS.json",
+      "sha256": "d93fa97e5b8c79bc0b17dae087974a55f22493d9d0b78453840044dd6bbeb4f5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/SOURCE_PINS_INITIAL.json",
+      "sha256": "0497d1a21451005113271db84a885f9992fe0f174cb3e2126c1e7c29dced76c5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/SUPPLIED_PARAMETERIZATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/SUPPLIED_PARAMETERIZATION.md",
+      "sha256": "15787c0e58784ced65fc8211370ede1059d82f6fa654ce15b2cde3fb25115e16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/VERIFICATION_EXECUTION.json",
+      "sha256": "d7e16123d79d3b3acf9d996a29a6ebf6a83a9b47883ad9334df094912203a750"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/VERIFICATION_REPORT.json",
+      "sha256": "94170dce641f311c3b1ff743df788d2244c387498080c96a95ec5a8735b18922"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/VERIFICATION_STDOUT.log",
+      "sha256": "94170dce641f311c3b1ff743df788d2244c387498080c96a95ec5a8735b18922"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt01/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt01/CONTROL_RESULTS.json",
+      "sha256": "167177eba43626000f01df92336dc585a03ea4e0e6245c0e3821f44bb0068b74"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt01/EXECUTION.json",
+      "sha256": "76c92f466b7388c5e4888cf1ed6e4d0bcb58c534ae7f57297c796ead79727688"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt01/ground_filling_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt01/ground_filling_control.py",
+      "sha256": "41e85e4991d17085268e7671e0ca5698355f06c589bc8739a4ad566b828b415e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt01/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt01/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt01/stdout.log",
+      "sha256": "167177eba43626000f01df92336dc585a03ea4e0e6245c0e3821f44bb0068b74"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt02/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt02/CONTROL_RESULTS.json",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt02/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt02/EXECUTION.json",
+      "sha256": "c20be56d9871075593b3bac35c2de8278872034d2f791cb3d30a2172678aac5a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt02/ground_filling_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt02/ground_filling_control.py",
+      "sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt02/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/control_attempt02/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/control_attempt02/stdout.log",
+      "sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/ground_filling_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/ground_filling_control.py",
+      "sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/post_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/post_check.py",
+      "sha256": "8886068fd7204f5fd2fc826be2a3181956d838735d899e7f3fb7cfccd02f2501"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/post_verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/post_verification_attempt01/EXECUTION.json",
+      "sha256": "3778c18a9dd2a80aacefdc5f831edb9bd98f8431fffef9e6f5bc47401c699951"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/post_verification_attempt01/post_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/post_verification_attempt01/post_check.py",
+      "sha256": "8886068fd7204f5fd2fc826be2a3181956d838735d899e7f3fb7cfccd02f2501"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/post_verification_attempt01/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/post_verification_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/post_verification_attempt01/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/post_verification_attempt01/stdout.log",
+      "sha256": "24369e4b581f544641b23f1f087c532af15b0e254f5cc5230099fd1e16601589"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/verify_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/verify_pre.py",
+      "sha256": "0d1e58a9fe4aa6c6444f8e4addfda23eb7a8420962d36b542bf48d7cd52aeb61"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/CONTROL_ATTEMPT01.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/CONTROL_ATTEMPT01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/CONTROL_ATTEMPT01.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/CONTROL_ATTEMPT01.stdout",
+      "sha256": "69f27361498e02124ff41b386d3aa80d7e4d96c8e56fa946498cf3c117f0a32b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/EXECUTION_ATTEMPT01.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/EXECUTION_ATTEMPT01.json",
+      "sha256": "95c62dd8d7b8703b15216d52f2864ad43da481557fa2341237bc945253778a6a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "sha256": "5a2080dff069ea2f24bc5411d25a60b3f4dc3c5a892b7133393be3d89e703433"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/ROOT_REVIEW.json",
+      "sha256": "208d71a49086d1c9e822227bc48c71f749e799e50c4d5a7bb5e0c2fb51935528"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/SOURCE_PINS.json",
+      "sha256": "e733811bd136e4a763d7cda899499e079bb3e24999296e832d62cd220094f5c9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/WORKING_DERIVATION.md",
+      "sha256": "18b4dbe70813d06bac8907f49c33066a42cab538afe8bd4642368fb7a86de70b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/primitive_rate_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/primitive_rate_energy_controls.py",
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/CHECKPOINT.md",
+      "sha256": "18a17cc0484f019283fe3a32fe6460ccb61e83eefa3ab902965eaf9bfb00c45f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/DARK_FIXTURE_PATHS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/DARK_FIXTURE_PATHS.json",
+      "sha256": "73a46c0dc8eb0f18ada6ac193776d5213425e8c3fb01a5aacf8327492178d047"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/DARK_FIXTURE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/DARK_FIXTURE_RESULTS.json",
+      "sha256": "290cb8294ba5623bd2def65da4459eeea9dcb9ae1dbb6bdffde8f29a94754bd6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/EVIDENCE_VERIFICATION.json",
+      "sha256": "a39ee32d1f564fbac27fa403a81c6c586df5a509bc7da8bf942b26f8d1122fc6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST.md",
+      "sha256": "0a737a77bdc61c1bf5f2e138f7d928e5165a6b9c66564ee1eec9a105196dec6b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_BINDING_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST_BINDING_VERIFICATION.json",
+      "sha256": "716c39d7d05c9c3c5a5f36e77e72501b3a29089d0043c02490da35f3ab7d1948"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST_CHECKPOINT.md",
+      "sha256": "f356fa51f3f25e2ef2486213623b1255e24ca7f86dc9961cafd925c606091104"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_PRIMITIVE_COMPARISON.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST_PRIMITIVE_COMPARISON.json",
+      "sha256": "705010176fed221d0ba7a25e1e19c1f2a3299cdfa6967fba120f70f3f3f83a63"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST_SEAL.json",
+      "sha256": "85c0e0e9fc2c05217d48d21c73a8927b8c7f5718073355d65640c9a93fb41451"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST_SOURCE_PINS.json",
+      "sha256": "b8726f8295765042ea99269d7e88c87c7f68864f3a463c62d4a488edf2f9a071"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/PRE.md",
+      "sha256": "d78d92e13dd62895d1f7c8ebff2cfc28f9e88b19d1778cd6eba8cfc3e195d6bc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/PRE_SEAL.json",
+      "sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/PROCESS_LOG.md",
+      "sha256": "02a2c2985bf4ab1b88ec3f07eb877fed425adf13e3fcf6b5d927b31ff29dd587"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/SOURCE_PINS.json",
+      "sha256": "a7be673bf8a41527e3c05da8e31203ff5633edc9cc2e1672cc3c27978c607e30"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/STAR_CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/STAR_CONTROL_RESULTS.json",
+      "sha256": "59ee6620222bfd96475ffc6a749e189ab30b91d86758211f0c71ae9a0ba54176"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/STAR_LAURENT_ENTRIES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/STAR_LAURENT_ENTRIES.json",
+      "sha256": "c3f78f738794d9ec6520ba028f78e089ec60ffc2d176002dbfd7c2a488e0ce16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/dark_fixture.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/dark_fixture.execution.json",
+      "sha256": "5f73d41eee5f679aebf15acf1902534524a3b39fa9188e1e864f7bd263190b72"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/dark_fixture.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/dark_fixture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/dark_fixture.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/dark_fixture.stdout.txt",
+      "sha256": "290cb8294ba5623bd2def65da4459eeea9dcb9ae1dbb6bdffde8f29a94754bd6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/freeze.execution.json",
+      "sha256": "14b56f61249b262c3fe894ae808a14a4f3e58cbfcd46f860c104078865b9710b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/freeze.stdout.txt",
+      "sha256": "a7be673bf8a41527e3c05da8e31203ff5633edc9cc2e1672cc3c27978c607e30"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/freeze_sources.py",
+      "sha256": "0597eb690fd27cf55b3678cb2aab96fdfb344e03ad9ccf3b50c100be5751da19"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/physical_dark_fixture_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/physical_dark_fixture_control.py",
+      "sha256": "e063adf630cfab3e7bc7a7d638e3ce3207569f1ef58c5ac280cc6867247e54b7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_bindings.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_bindings.execution.json",
+      "sha256": "8514ac946969fc3b2195a467ed934db6a84e1f294508338e47d071f6e7315b16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_bindings.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_bindings.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_bindings.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_bindings.stdout.txt",
+      "sha256": "716c39d7d05c9c3c5a5f36e77e72501b3a29089d0043c02490da35f3ab7d1948"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_comparison.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_comparison.execution.json",
+      "sha256": "5faa2da5ab2f5c63ae0eae3eb6f5da5383f81f9ecbbc4d89e49a0d8d732f34a8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_comparison.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_comparison.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_comparison.stdout.txt",
+      "sha256": "705010176fed221d0ba7a25e1e19c1f2a3299cdfa6967fba120f70f3f3f83a63"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_freeze.execution.json",
+      "sha256": "06e2d29cc59ff6fa27fd42bc71da5de0b5fa6e4a74d4cea9be9bf71b63eaddbd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_freeze.stdout.txt",
+      "sha256": "b8726f8295765042ea99269d7e88c87c7f68864f3a463c62d4a488edf2f9a071"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_freeze_sources.py",
+      "sha256": "f58105919ee11969cc414818e8cb1901c0d0e73a3e137f01afdb60270feed990"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_primitive_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_primitive_comparison.py",
+      "sha256": "f1663352dc4edb85435331d0b3f4ec3a50f477ffd0fd5cf96c1b54f14c8a415d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/post_verify_bindings.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/post_verify_bindings.py",
+      "sha256": "5b5a3b75ed7710a6b21d1293b8cf2ab5470a196c4c0bbadb031e693937e1325e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/run_logged.py",
+      "sha256": "5040efe8948abd216d57ac3ae7528c50f79fc20c4d1222b6de917c4baf856819"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/seal_post.py",
+      "sha256": "2db0e647c68285102943a8e731454aa54fe7753faa1c53b2bebda83032cd168a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/seal_pre.py",
+      "sha256": "430d2d7ca52907d20c36761bbd16ec3344b09934ad99b0c2c6d2d96df8a9d7ea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/star.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/star.execution.json",
+      "sha256": "c0bf97e1d9a1fecc0ed24b9964751e18e85132a59abad429b472a8ecd566b372"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/star.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/star.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/star.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/star.stdout.txt",
+      "sha256": "59ee6620222bfd96475ffc6a749e189ab30b91d86758211f0c71ae9a0ba54176"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/star_primitive_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/star_primitive_control.py",
+      "sha256": "000072d3f39a86f6c9205a29ae95e9bd38c40f833ab77330070e6ba997caa12a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/verification.execution.json",
+      "sha256": "3c0d100cae888ed73075323c59b0d34734e743ccc60fa3518f582b31fbfc527e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/verification.stdout.txt",
+      "sha256": "a39ee32d1f564fbac27fa403a81c6c586df5a509bc7da8bf942b26f8d1122fc6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/verify_evidence.py",
+      "sha256": "c6f750841af9038665184fc79943296929f643cca34590b83836bf316f3bd0d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/CHECKPOINT.md",
+      "sha256": "edba16bfc06e8bfdfa53b162bab89377ba5fc5030a1b8b04a1428379d4b38dd3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/FINAL_BINDING_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/FINAL_BINDING_VERIFICATION.json",
+      "sha256": "458ef8cd89e30a6bfa0a14a17138d16884c03acdd0aa72b8fef4877fb452856c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/PROCESS_LOG.md",
+      "sha256": "c215ebf0813340cb18e6002be86409d3fe68b90498e2dc1ff200a5ab42762189"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/PUBLICATION_COMPARISON.md",
+      "sha256": "634e5eb994d58942350284dda85919b9d53ed4c6eafad54b1ae92d6e96fe9624"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "fe73f2ace3948ed56f9b756652364fbb7012d2e8f858b73f7c42f8e896e95087"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/REPORT_CREATION_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/REPORT_CREATION_FAILURE.json",
+      "sha256": "c16906fea3cd76dfd1fbe17f2c1be06c8f3fecf6708859a168411301680beaae"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/SOURCE_INVENTORY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/SOURCE_INVENTORY.json",
+      "sha256": "cb27b3a4730678e71cce7931fdf7cda713fb06772e7d52b07556349242fd8947"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/check_publication_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/check_publication_read_only.py",
+      "sha256": "7910c3cf69c7973b6046abe2d66988626069874d2327bc7f85250c85f66928f6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/comparison_attempt01.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/comparison_attempt01.execution.json",
+      "sha256": "07f0ba82c38c288ebadccae7c5141036a97b53a590059e7295c53843764d34fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/comparison_attempt01.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/comparison_attempt01.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/comparison_attempt01.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/comparison_attempt01.stdout.txt",
+      "sha256": "d6304a6239e456b9abad4c3f79e24e369e88bb98395d0505d9770db831ed91de"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/freeze.execution.json",
+      "sha256": "244f18a676ccbe6d14e19effbdfbaf0cb8f15a542c46af39961ef628160635c6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/freeze.stdout.txt",
+      "sha256": "596329574b1b4a4f6b34cf2b7459f2b032669f26bc1752eb196a84b8f0bbde09"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/freeze_sources.py",
+      "sha256": "6e48bb79d0b0c33ddfadf8156811396929dc419d19e3a7895cef67c2a25b371d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/run_logged.py",
+      "sha256": "c3f250652516ed355fe0051d5ee1c08eca5b8d426c8ebb4a76b8ae4fc3e1c232"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/publication_comparison/seal_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/publication/seal_publication.py",
+      "sha256": "32444e6cf11e9f8bb4a9ab60e4d3f8610ce72eb63674ba52eaf7342cc16ec485"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PUBLICATION_WORKING_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "099c7d2232dcbf8e5a620f7ce90eef0b4de3267fee5931cac7bd5fdfdc6c9a1e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d0460afcbbcf15a646e655d44888069bde0648552797e5af3b043c7651846b6f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "b74514da875b7c4068d871075bea883ea686999684fb48ceb9838a917ea4885b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "61ba73289c6be4125862f4ee72b1a90d7179ec4f6e7aa98207c54702ea080089"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "sha256": "900c67961ab022421850417ebb1e8f3102cf681c46f64ea028906b70ef6ec593"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT02_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT02_FAILURE.json",
+      "sha256": "fec32a65fd21ff2e7e670e2208c9b15a8a0e92d1af2cdc59556ff2fdde397dec"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "9d6b0fcdd8e9ceb637e72b05c9313d06111bd9654868b640ea8f3ba0d938f316"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_FINAL_READONLY_RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_FINAL_READONLY_RESULT.json",
+      "sha256": "d6304a6239e456b9abad4c3f79e24e369e88bb98395d0505d9770db831ed91de"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_FINAL_READONLY.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_FINAL_READONLY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_native_ground_publication_final.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/verify_native_ground_publication_final.py",
+      "sha256": "e852f74f3de7e842fb86ff91e3aba3951a4a8f6274bc7542490e3b0b8f94db9a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_FINAL_REVIEW.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_FINAL_REVIEW.md",
+      "sha256": "54beed471afa6041385955923d9f93978d8867d3ade91a5f590e573ee41ae093"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_GROUND_MAIN_REFRESH_0446.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/NATIVE_GROUND_MAIN_REFRESH_0446.json",
+      "sha256": "a6657adc385ab726d5df50f5a805c54d7cdcea3d41f904175663fb51d513fec1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_native_ground_publication_primary.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/verify_native_ground_publication_primary.py",
+      "sha256": "2b3d60dc1ed263cde328fafeb36f36e8188e4e1b1ccdd64e8f4e543cf4a63ff9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_THIRD_POST_ROOT_ATTEMPT01_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_THIRD_POST_ROOT_ATTEMPT01_FAILURE.json",
+      "sha256": "77913713be5f3f6c7d065950d0746e59c38fed0395df8ed0664c76378cc59f03"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_THIRD_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_THIRD_POST_ROOT_VERIFICATION.json",
+      "sha256": "4e5851a3b32566b9991d236d1475a35351342ef3a30458c1a7e503af6a67eaa7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_THIRD_PRE_ROOT_EXACT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_THIRD_PRE_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "fefd6389a65159c767622021d56a4e019eb812b0dd33bda8ae1cc039c165d6e3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_THIRD_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_THIRD_PRE_ROOT_VERIFICATION.json",
+      "sha256": "fe54a392a2dc48669da07e302ab561d3e9d8d91e8be5515f23ad36ff684ca234"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FIFTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_FIFTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "e026a0a4350cf1e91bc5af9490d81b7945bf3f12fb6dd11d749006ad0d314823"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FIFTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_FIFTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "718a4156a4f9fdcad85dfe5b4926ca8c2bfc2e83cfc07996162fc44a2aea9a6d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FIFTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_FIFTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "eac75024e98ba5c709ec0f31621deb534aec8f864c460844a7975abe45609957"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "59d5a9feabb28a7215e4a9ba0467a205f5506315c3a0ab40b47947c240031968"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_POST_ROOT_READONLY_ADAPTER.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_POST_ROOT_READONLY_ADAPTER.py",
+      "sha256": "41f60a96f1816d4e12cfc6466bb57edec90e94df3e44e30defdf69a89cd2b0d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "e0b276897f19a3f599b84572af8edbc4185f33d77cba1cc9ec09b4246c40a29e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_PRE_ROOT_EXACT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_PRE_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "a39ee32d1f564fbac27fa403a81c6c586df5a509bc7da8bf942b26f8d1122fc6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_PRE_ROOT_READONLY_ADAPTER.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_PRE_ROOT_READONLY_ADAPTER.py",
+      "sha256": "b58a3b719ee74640641ee5f08e99d8347206c822656babc7547cd149e2174531"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_SIXTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/THIRTY_SIXTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "035b7535674e1524406662588ec0e2374578119a5319c308043f641fc0755e94"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/primary_verification_attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stderr",
+      "sha256": "4b4cdd53650f3a65a0ebe66c199486be417006609c0d4ca72406a9a3ff139a5c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/primary_verification_attempt02/NATIVE_GROUND_PRIMARY_ROOT_VERIFICATION.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication-history/primary-verification-attempt02/verify_native_ground_publication_primary.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/root/primary_verification_attempt02/verify_native_ground_publication_primary.py",
+      "sha256": "a6d92cf3b84c1da2c5d4430bd7935571b7feb7b6c6c210c3874775cd5e0d6934"
+    }
+  ]
+}

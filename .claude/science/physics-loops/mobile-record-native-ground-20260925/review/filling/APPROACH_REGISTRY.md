@@ -1,0 +1,13 @@
+# Bounded PRE obligation map
+
+The target is occupation constraints on number sectors attaining the global spectral infimum of the supplied full common Hamiltonian on fixed even simple degree-six cubic tori. Permitted premises are exactly the two pinned parents, with the supplied parameter redefinition eta=2g^4. No exact minimizing filling, physical vacuum, phase, or thermodynamic uniformity is an assumed success condition.
+
+| Family | Object and mechanism | Terminal obligation | Scope versus target | Status and evidence | Reopen condition |
+|---|---|---|---|---|---|
+| Exact full-filling comparison | Actual gated D and vanishing outward F | Exhibit a negative-energy physical competitor | Weaker: excludes full occupancy at all positive couplings | Complete bounded calculation, PRE Sections 1--2 and physical controls | Different Hamiltonian or restriction of the physical Hilbert space |
+| Positive path row bounds | Charge/electric basis, exhaustive local occupation patterns | Uniform all-color/all-field norm bounds at fixed m | Supplies quantitative occupation constraints | Exact 3072-mask certificate and analytic Schur argument, PRE Section 3 | A missing path sign, multiplicity, geometry type or domain counterexample |
+| Physical fixed-number trial | Symmetric color/occupation vector and integer cycle-coordinate boxes | Realize a strict extensive magnetic gain with vanishing scaled electric cost | Supplies the matching variational comparison | Exact independent combinatorial averages plus Gauss/Folner proof, PRE Sections 4--6 | Failure of Gauss embedding, winding completeness or electric-domain control |
+| Finite magnetic symbol reduction | Full Gauss flow lattice and nonnegative Laurent matrix | Prove weak-coupling sector-bottom limit without assuming an eigenvector | Stronger characterization, not an exact minimizer calculation | PRE Section 5, finite-dimensional variational principle and physical trial | A sector restriction or coefficient sign that invalidates the absolute-value argument |
+| Exact minimizing filling or phase | Actual finite-coupling sector energies and further volume limit | Resolve all surviving sector comparisons and ground-state structure | Stronger than requested supported bounds | Open, not asserted or numerically simulated | New analytic spectral information; finite controls alone are insufficient |
+
+No independent author argument was used to choose these routes. The local primitive-path and combinatorial-union computations are distinct checks within this one PRE, not separate-agent reviews. The instructions' general multi-agent search-round advice is constrained by the explicit no-delegation assignment. The inherited model and reasoning effort were retained.

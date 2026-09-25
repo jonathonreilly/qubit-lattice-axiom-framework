@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T03:46:37.798662+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/star_primitive_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent",
+  "elapsed_seconds": 0.2574091248679906,
+  "exit_code": 0,
+  "script_sha256": "000072d3f39a86f6c9205a29ae95e9bd38c40f833ab77330070e6ba997caa12a",
+  "stdout_bytes": 3942,
+  "stdout_sha256": "59ee6620222bfd96475ffc6a749e189ab30b91d86758211f0c71ae9a0ba54176",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

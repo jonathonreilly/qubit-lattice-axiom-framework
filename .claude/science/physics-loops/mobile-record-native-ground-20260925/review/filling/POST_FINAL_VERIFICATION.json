@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-09-25T03:52:04.505036+00:00",
+  "PRE_seal_sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384",
+  "PRE_members_unchanged": 35,
+  "author_seal_sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+  "author_members_verified": 9,
+  "POST_live_origins_unchanged": 21,
+  "POST_report_sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c",
+  "POST_source_pins_sha256": "3954069f7a52c4e634db6da187e0223a5dcb38d85711bd7073321e28e7758aeb",
+  "stored_verification_stdout_sha256": "24369e4b581f544641b23f1f087c532af15b0e254f5cc5230099fd1e16601589",
+  "stored_verification_success": true,
+  "author_or_PRE_programs_executed_during_POST": false,
+  "no_material_scientific_correction": true,
+  "tooling_limitation_preserved": "Sealed verify_pre.py writes three PRE files; not executed during POST.",
+  "scope": "Released-source comparison only; no audit or publication change."
+}

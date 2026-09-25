@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-25T03:08:48.932884+00:00",
+  "duration_seconds": 0.2437565829604864,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/ground_filling_control.py"
+  ],
+  "source_sha256": "41e85e4991d17085268e7671e0ca5698355f06c589bc8739a4ad566b828b415e",
+  "stdout_sha256": "167177eba43626000f01df92336dc585a03ea4e0e6245c0e3821f44bb0068b74",
+  "stderr_bytes": 0
+}

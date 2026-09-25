@@ -1,0 +1,551 @@
+{
+  "source_sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630",
+  "topology_helper_sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+  "prior_row_certificate_sha256": "89a6f07c1ec4008a1288b60a1ffa50dfa4432d016ec254c8b72d8b5e6eaaaae1",
+  "synthetic": {
+    "exhaustive_input_pairs": 180,
+    "distinct_parameter_rows": [
+      [
+        3,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        0,
+        1,
+        0,
+        8
+      ],
+      [
+        3,
+        1,
+        0,
+        2,
+        0,
+        4
+      ],
+      [
+        3,
+        1,
+        1,
+        0,
+        0,
+        8
+      ],
+      [
+        3,
+        1,
+        1,
+        1,
+        0,
+        12
+      ],
+      [
+        3,
+        1,
+        1,
+        1,
+        1,
+        8
+      ],
+      [
+        3,
+        1,
+        1,
+        2,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        0,
+        4
+      ],
+      [
+        3,
+        1,
+        2,
+        1,
+        1,
+        4
+      ],
+      [
+        3,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        0,
+        1,
+        0,
+        10
+      ],
+      [
+        3,
+        2,
+        1,
+        0,
+        0,
+        10
+      ],
+      [
+        3,
+        2,
+        1,
+        1,
+        0,
+        10
+      ],
+      [
+        3,
+        2,
+        1,
+        1,
+        1,
+        4
+      ],
+      [
+        3,
+        2,
+        1,
+        2,
+        1,
+        -4
+      ],
+      [
+        3,
+        2,
+        2,
+        1,
+        1,
+        -4
+      ],
+      [
+        3,
+        2,
+        2,
+        2,
+        2,
+        -4
+      ],
+      [
+        6,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        0,
+        1,
+        0,
+        56
+      ],
+      [
+        6,
+        1,
+        0,
+        2,
+        0,
+        88
+      ],
+      [
+        6,
+        1,
+        1,
+        0,
+        0,
+        56
+      ],
+      [
+        6,
+        1,
+        1,
+        1,
+        0,
+        138
+      ],
+      [
+        6,
+        1,
+        1,
+        1,
+        1,
+        80
+      ],
+      [
+        6,
+        1,
+        1,
+        2,
+        1,
+        130
+      ],
+      [
+        6,
+        1,
+        2,
+        0,
+        0,
+        88
+      ],
+      [
+        6,
+        1,
+        2,
+        1,
+        1,
+        130
+      ],
+      [
+        6,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        0,
+        1,
+        0,
+        64
+      ],
+      [
+        6,
+        2,
+        0,
+        2,
+        0,
+        104
+      ],
+      [
+        6,
+        2,
+        1,
+        0,
+        0,
+        64
+      ],
+      [
+        6,
+        2,
+        1,
+        1,
+        0,
+        148
+      ],
+      [
+        6,
+        2,
+        1,
+        1,
+        1,
+        88
+      ],
+      [
+        6,
+        2,
+        1,
+        2,
+        1,
+        140
+      ],
+      [
+        6,
+        2,
+        2,
+        0,
+        0,
+        104
+      ],
+      [
+        6,
+        2,
+        2,
+        1,
+        1,
+        140
+      ],
+      [
+        6,
+        2,
+        2,
+        2,
+        2,
+        152
+      ]
+    ]
+  },
+  "single_occupied_B_contributions": [
+    {
+      "r": 1,
+      "sa": 0,
+      "sc": 1,
+      "t": 0,
+      "count": 30,
+      "row_contribution": 56
+    },
+    {
+      "r": 1,
+      "sa": 1,
+      "sc": 1,
+      "t": 1,
+      "count": 3,
+      "row_contribution": 80
+    },
+    {
+      "r": 2,
+      "sa": 0,
+      "sc": 1,
+      "t": 0,
+      "count": 48,
+      "row_contribution": 64
+    },
+    {
+      "r": 2,
+      "sa": 1,
+      "sc": 1,
+      "t": 1,
+      "count": 12,
+      "row_contribution": 88
+    }
+  ],
+  "two_occupied_B_interactions": [
+    {
+      "displacement": [
+        0,
+        0,
+        2
+      ],
+      "common_active_pairs": 22,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 0,
+          "s_max": 2,
+          "t": 0,
+          "interaction_per_pair": -24,
+          "pairs": 4
+        },
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 26,
+          "pairs": 4
+        },
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 2,
+          "t": 1,
+          "interaction_per_pair": -6,
+          "pairs": 2
+        },
+        {
+          "r": 2,
+          "s_min": 0,
+          "s_max": 2,
+          "t": 0,
+          "interaction_per_pair": -24,
+          "pairs": 4
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 2,
+          "t": 1,
+          "interaction_per_pair": -12,
+          "pairs": 8
+        }
+      ],
+      "interaction_row_correction": -196,
+      "full_row_sum": 11900
+    },
+    {
+      "displacement": [
+        0,
+        1,
+        1
+      ],
+      "common_active_pairs": 37,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 0,
+          "s_max": 2,
+          "t": 0,
+          "interaction_per_pair": -24,
+          "pairs": 8
+        },
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 2,
+          "t": 1,
+          "interaction_per_pair": -6,
+          "pairs": 4
+        },
+        {
+          "r": 2,
+          "s_min": 0,
+          "s_max": 2,
+          "t": 0,
+          "interaction_per_pair": -24,
+          "pairs": 10
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 20,
+          "pairs": 2
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 2,
+          "t": 1,
+          "interaction_per_pair": -12,
+          "pairs": 12
+        },
+        {
+          "r": 2,
+          "s_min": 2,
+          "s_max": 2,
+          "t": 2,
+          "interaction_per_pair": -24,
+          "pairs": 1
+        }
+      ],
+      "interaction_row_correction": -584,
+      "full_row_sum": 11512
+    },
+    {
+      "displacement": [
+        0,
+        0,
+        4
+      ],
+      "common_active_pairs": 1,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 26,
+          "pairs": 1
+        }
+      ],
+      "interaction_row_correction": 26,
+      "full_row_sum": 12122
+    },
+    {
+      "displacement": [
+        0,
+        1,
+        3
+      ],
+      "common_active_pairs": 3,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 26,
+          "pairs": 2
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 20,
+          "pairs": 1
+        }
+      ],
+      "interaction_row_correction": 72,
+      "full_row_sum": 12168
+    },
+    {
+      "displacement": [
+        0,
+        2,
+        2
+      ],
+      "common_active_pairs": 4,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 26,
+          "pairs": 2
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 20,
+          "pairs": 2
+        }
+      ],
+      "interaction_row_correction": 92,
+      "full_row_sum": 12188
+    },
+    {
+      "displacement": [
+        1,
+        1,
+        2
+      ],
+      "common_active_pairs": 7,
+      "interaction_counts": [
+        {
+          "r": 1,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 26,
+          "pairs": 2
+        },
+        {
+          "r": 2,
+          "s_min": 1,
+          "s_max": 1,
+          "t": 0,
+          "interaction_per_pair": 20,
+          "pairs": 5
+        }
+      ],
+      "interaction_row_correction": 152,
+      "full_row_sum": 12248
+    }
+  ],
+  "scope": "Exact root controls of the pair-count polynomial; not an independent reconstruction."
+}

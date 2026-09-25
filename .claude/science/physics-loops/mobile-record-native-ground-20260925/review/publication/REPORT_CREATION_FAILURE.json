@@ -1,0 +1,11 @@
+{
+  "phase": "Report artifact creation, after successful scientific correspondence check",
+  "tool": "functions.exec",
+  "error": "SyntaxError: Decimals with leading zeros are not allowed in strict mode.",
+  "cause": "Unescaped Markdown backticks prematurely ended the JavaScript String.raw template for an apply_patch request.",
+  "nested_tool_executed": false,
+  "filesystem_effect": "None; JavaScript failed to parse before apply_patch.",
+  "scientific_execution": false,
+  "recovery": "Retry the report patch using escaped template delimiters and replace them with literal Markdown backticks before apply_patch.",
+  "prior_sources_or_results_changed": false
+}

@@ -1,0 +1,30 @@
+{
+  "verified_utc": "2026-09-25T05:07:12.055188+00:00",
+  "frozen_source_origins": 97,
+  "prior_seals": 9,
+  "prior_members": 254,
+  "prior_bytes_preserved": true,
+  "complete_artifacts": 5,
+  "exact_leaf_difference_count": 7,
+  "input_fingerprint_sha256": "8da2fa65a2e3e4a69323a9c33164a527964bee81b95407bb3cfa2c072c05f705",
+  "own_run_bindings": [
+    {
+      "receipt": "freeze.execution.json",
+      "source_sha256": "6e48bb79d0b0c33ddfadf8156811396929dc419d19e3a7895cef67c2a25b371d",
+      "stdout_sha256": "596329574b1b4a4f6b34cf2b7459f2b032669f26bc1752eb196a84b8f0bbde09",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "receipt": "comparison_attempt01.execution.json",
+      "source_sha256": "7910c3cf69c7973b6046abe2d66988626069874d2327bc7f85250c85f66928f6",
+      "stdout_sha256": "d6304a6239e456b9abad4c3f79e24e369e88bb98395d0505d9770db831ed91de",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "read_only_checker_static_mutation_scan_completed": true,
+  "author_scientific_execution_or_import": false,
+  "report_creation_failure_preserved": "REPORT_CREATION_FAILURE.json",
+  "report_sha256": "634e5eb994d58942350284dda85919b9d53ed4c6eafad54b1ae92d6e96fe9624"
+}

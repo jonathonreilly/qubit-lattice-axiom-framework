@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T01:50:12.473986+00:00",
+  "note_sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922",
+  "root_review": "Personally derived and reviewed complete flat-matrix lower/upper bounds, uniform-minus intertwining, exact row polynomial and all six interaction-count decompositions, connectivity, and finite-support moment proof for actual cyclic spectral edges. Full three control sources and output certificates inspected; all integer/rational entries checked by the separate deterministic verifier.",
+  "original_working_note_retained": true,
+  "negative_result_boundary": "N0 cannot be the global energy-ground sector in the declared degree-six weak-g regime. Hamiltonian N conservation does not imply spontaneous decay; autonomous birth energy accounting remains open.",
+  "counterexample_preserved": "Degree-three cube has opposite leading gap +5/2. Wrapped L4/6/8 rows do not prove the all-L>=10 bound.",
+  "independent_status": "Not yet independently reconstructed.",
+  "new_axiom_or_model_adoption": false,
+  "empirical_claim": false
+}

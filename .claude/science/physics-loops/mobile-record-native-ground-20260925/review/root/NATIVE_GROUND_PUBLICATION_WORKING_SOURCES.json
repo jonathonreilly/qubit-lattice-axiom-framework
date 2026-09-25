@@ -1,0 +1,69 @@
+{
+  "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "branch": "codex/mobile-record-native-ground-energy-and-formation-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-native-ground-20260925",
+  "note": "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/native_ground_energy_and_original_formation_2026_09_25.py",
+  "output_directory": "outputs/native_ground_20260925",
+  "parent_paths": [
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_controls.py",
+    ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_local_row_certificate.py",
+    ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_row_polynomial_certificate.py",
+    ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/filling/ground_filling_certificates.py",
+    ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/activity/primitive_rate_energy_controls.py"
+  ],
+  "source_notes": [
+    {
+      "unit": "pair",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+      "sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922"
+    },
+    {
+      "unit": "filling",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb"
+    },
+    {
+      "unit": "activity",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_controls.py",
+      "sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_local_row_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_local_row_certificate.py",
+      "sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_row_polynomial_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_row_polynomial_certificate.py",
+      "sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/ground_filling_certificates.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/filling/ground_filling_certificates.py",
+      "sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/primitive_rate_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/activity/primitive_rate_energy_controls.py",
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8",
+      "adaptation": "None; exact sealed scientific source."
+    }
+  ]
+}

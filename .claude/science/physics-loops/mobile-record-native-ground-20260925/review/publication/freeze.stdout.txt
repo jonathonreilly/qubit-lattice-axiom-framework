@@ -1,0 +1,51 @@
+{
+  "frozen_source_count": 97,
+  "prior_seals": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/AUTHOR_SEAL.json",
+      "sha256": "69a754ada477506f4437705dbb49e8ebe93b3c230185b7376b3b8d6bfb18dc6d",
+      "verified_member_count": 21
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/AUTHOR_SEAL.json",
+      "sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+      "verified_member_count": 9
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "verified_member_count": 9
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/PRE_SEAL.json",
+      "sha256": "bed28ea9c81afb7822d0ddeeb552260e3e0547b6f387c9edb8dbd6aec83ee25b",
+      "verified_member_count": 42
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/POST_SEAL.json",
+      "sha256": "69a4ee27e9f7990945f2f2ed54a269fd9221314ef726be69833eac2020519de9",
+      "verified_member_count": 46
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/PRE_SEAL.json",
+      "sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384",
+      "verified_member_count": 35
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/POST_SEAL.json",
+      "sha256": "913f1afadcdb43214ee63108b015e8e95df6c1cc98221a07295a99afbb404bed",
+      "verified_member_count": 24
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE_SEAL.json",
+      "sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51",
+      "verified_member_count": 35
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/POST_SEAL.json",
+      "sha256": "85c0e0e9fc2c05217d48d21c73a8927b8c7f5718073355d65640c9a93fb41451",
+      "verified_member_count": 33
+    }
+  ],
+  "inventory_sha256": "cb27b3a4730678e71cce7931fdf7cda713fb06772e7d52b07556349242fd8947"
+}

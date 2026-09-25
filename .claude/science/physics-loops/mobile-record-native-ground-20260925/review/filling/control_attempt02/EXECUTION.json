@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T03:14:28.504274+00:00",
+  "duration_seconds": 0.280452209059149,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/ground_filling_control.py"
+  ],
+  "source_sha256": "1406d17665162aad66dcd35b0010626ec9b89db9ebdfc075afcdaa7702918d90",
+  "stdout_sha256": "59fa8293b8d71749331e306b37be0720216dc54d9b976646b6d3079d8146f18f",
+  "stderr_bytes": 0,
+  "reason": "Add narrow exact cycle-coordinate displacement and explicit three-winding checks supporting the quantitative physical finite-support trial; first successful source/result/log retained."
+}

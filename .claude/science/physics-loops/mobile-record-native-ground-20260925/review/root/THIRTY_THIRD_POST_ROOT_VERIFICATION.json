@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-25T03:02:37.195599+00:00",
+  "elapsed_seconds": 1.864286958007142,
+  "POST_sha256": "d2053231ce071291e0736d65a1c00437bf3aac190ac740e7c5f0940f6420e1e7",
+  "POST_seal_sha256": "69a4ee27e9f7990945f2f2ed54a269fd9221314ef726be69833eac2020519de9",
+  "POST_members": 46,
+  "PRE_members_unchanged": 42,
+  "new_origins_verified": 27,
+  "own_execution_bindings_verified": 3,
+  "root_read": "Complete POST and all4newsourcefiles, evidence log and bindings read. Exact all208quotientrows/11884entries,1296coloredcubeentries,84near4far180synthetic499periodicrows recomputed by the reviewed independent comparison functions into memory and exactly compared with stored JSON output. Single/interaction inventories, distinctsyntheticpatterns and groupedperiodicrows inspected. No author program executed.",
+  "scope": "Root re-executes the reviewed independent comparison functions, not a third independent scientific reconstruction. Sealed files untouched.",
+  "first_attempt_failure": {
+    "record": "THIRTY_THIRD_POST_ROOT_ATTEMPT01_FAILURE.json",
+    "sha256": "77913713be5f3f6c7d065950d0746e59c38fed0395df8ed0664c76378cc59f03",
+    "diagnosis": "Direct Python equality differed because in-memory periodic displacement/cubic-label tuples deserialize as JSON lists. Quotient and every normalized local scalar matched exactly after round-trip through the same JSON representation. No scientific correction."
+  },
+  "result": "No required scientific repair. Public synthesis should state leading-only cyclic support and preserve the fixed incoming basis-state restriction."
+}

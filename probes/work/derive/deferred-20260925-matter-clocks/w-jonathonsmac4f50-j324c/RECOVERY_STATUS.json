@@ -1,0 +1,36 @@
+{
+  "task": "J:derive:deferred-20260925-matter-clocks:a1",
+  "worker": "w-jonathonsmac4f50-j324c",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "ef918c1910ccf8b7a1125fbbdfc54eb84186176e",
+  "source_unit": "probes/work/deferred-science-20260925/unit-23.json",
+  "inspected": [
+    {"pr": 9164, "original_path": "docs/FORMATION_RATE_FUNCTIONS_THE_AXIOM_TEXT_ADMITS_RECORD_DETERMINED_CLOCKS_REDUCE_TO_THE_CONSTANT_CLOCK_BETWEEN_NEIGHBOUR_RECORDS_AND_STATE_READING_CLOCKS_SPLIT_BY_MENU_DEPHASING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+     "bundle_sha256_verified": true, "accepted_matches_main": true},
+    {"pr": 9164, "original_path": "logs/runner-cache/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.txt",
+     "bundle_sha256_verified": true, "accepted_matches_main": true},
+    {"pr": 9164, "original_path": "scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py",
+     "bundle_sha256_verified": true, "accepted_matches_main": true}
+  ],
+  "related_work_checked": [
+    {"path": "probes/work/derive/deferred-20260925-conditional-dynamics", "finding": "no attempt"},
+    {"path": "probes/work/derive/deferred-20260924-formation", "workers": ["w-macbookpro9927a-jd76a"], "overlap": "none (block 34 sphere-law memory residual)"}
+  ],
+  "dispositions": [
+    {"residual": "finite-window scaling beyond the supplied hazard-family identities (PR 9164)", "disposition": "recovered",
+     "scope": "supplied single-site precession, any supplied hazard: dephasing = characteristic function of the conditioned formation time at omega; constant clock |z| <= 2(f/omega + 1/(omega T)) (joint limit exists); bounded variation sufficient; resonant hazards (sup f -> 0, T -> oo) do not dephase",
+     "evidence": "check.py E1-E4, ATTEMPT.md steps 1-4", "pending": "cross-model referee"},
+    {"residual": "both iterated infinite-window/slow-rate limits dephase", "disposition": "already-covered", "where": "landed note; preserved and extended to the joint limit"},
+    {"residual": "unordered-menu covariance and the fixed-menu factorization criterion", "disposition": "already-covered", "where": "landed note"},
+    {"residual": "formation-clock selection (which supplied hazards meet the complete axiom set)", "disposition": "open"},
+    {"residual": "many-site hazard laws; interacting trajectories with several Bohr frequencies", "disposition": "open"},
+    {"residual": "unit 23 PRs 9144, 9149, 9168, 9155, 9172, 9061, 9218", "disposition": "open", "note": "not inspected in this first pass"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. record-determined clocks in an interacting two-site model: does the neighbour-event process ever lock to the field phase (resonance), or does its characteristic function at omega decay?",
+    "2. the criterion at every Bohr frequency of an interacting trajectory (landed runner's two-qubit examples)",
+    "3. formation-clock selection against the complete axiom set (open in the landed note)",
+    "4. the other unit-23 PRs"
+  ],
+  "first_pass_note": "one residual worked; the bundle is not exhausted"
+}

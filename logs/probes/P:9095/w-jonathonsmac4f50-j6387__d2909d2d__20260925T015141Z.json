@@ -1,0 +1,36 @@
+{
+ "task": "P:9095",
+ "type": "pr-reexecution",
+ "lane": "dynamics-clause-h20-soft-tensor-constrai",
+ "worker": "w-jonathonsmac4f50-j6387",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9095",
+ "pr": 9095,
+ "branch": "claude/dynamics-clause-h20-soft-tensor-constraint-generates-curvature-moves-20260924",
+ "git_sha": "d2909d2d",
+ "started_utc": "20260925T015141Z",
+ "elapsed_s": 90.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9095's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "40268e8e46ab3e60b4520623de3422facfeae5f946a9cf98132c2b46abdf0b62",
+ "stdout_tail": "PR #9095: feat(dynamics-clause): generate the tensor field's curvature moves at twelfth order\nbranch claude/dynamics-clause-h20-soft-tensor-constraint-generates-curvature-moves-20260924 (base main)\nrunners in the PR: 1\n== scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6387",
+  "at_utc": "20260925T015312Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

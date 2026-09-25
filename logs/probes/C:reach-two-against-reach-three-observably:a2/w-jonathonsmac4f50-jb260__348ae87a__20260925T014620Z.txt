@@ -1,0 +1,19 @@
+X exact: stretch B_x^x = b, k = (q,0,0): dE/db = sin q x {frame 1, reach two cos(q), reach three cos(q)**2}: PASS
+X exact: symmetric shear B_x^y = B_y^x = b: velocity tilt dv_y/d(2b) per unit = {frame 1, reach two cos(k_x)/2 + 1/2, reach three cos(k_x)}
+X hence at fixed time the stretch deflection scales 1 : cos q : cos^2 q (ray, first order); reach two and three differ by 10 per cent where cos q = 0.9, q = 0.4510
+N stretch q=0.2: packet deflection (ray cloud) frame -1.5829 (-1.5446) | reach two -1.5424 (-1.5059) | reach three -1.5033 (-1.4685) | reach3/ray - 1 = +0.024; reach2/frame 0.974 (cos q 0.980), reach3/frame 0.950 (cos^2 q 0.961)
+N stretch q=0.4: packet deflection (ray cloud) frame -1.9644 (-1.8884) | reach two -1.8040 (-1.7343) | reach three -1.6585 (-1.5945) | reach3/ray - 1 = +0.040; reach2/frame 0.918 (cos q 0.921), reach3/frame 0.844 (cos^2 q 0.848)
+N stretch q=0.6: packet deflection (ray cloud) frame -2.0196 (-1.9721) | reach two -1.6637 (-1.6261) | reach three -1.3739 (-1.3442) | reach3/ray - 1 = +0.022; reach2/frame 0.824 (cos q 0.825), reach3/frame 0.680 (cos^2 q 0.681)
+N stretch q=0.8: packet deflection (ray cloud) frame -2.0414 (-2.0003) | reach two -1.4216 (-1.3956) | reach three -0.9949 (-0.9788) | reach3/ray - 1 = +0.016; reach2/frame 0.696 (cos q 0.697), reach3/frame 0.487 (cos^2 q 0.485)
+N stretch q=1.0: packet deflection (ray cloud) frame -2.0522 (-2.0119) | reach two -1.1104 (-1.0918) | reach three -0.6078 (-0.5997) | reach3/ray - 1 = +0.014; reach2/frame 0.541 (cos q 0.540), reach3/frame 0.296 (cos^2 q 0.292)
+N stretch q=1.2: packet deflection (ray cloud) frame -2.0605 (-2.0168) | reach two -0.7504 (-0.7370) | reach three -0.2823 (-0.2791) | reach3/ray - 1 = +0.012; reach2/frame 0.364 (cos q 0.362), reach3/frame 0.137 (cos^2 q 0.131)
+N shear   q=0.2: packet deflection (ray cloud) frame +0.5250 (+0.9634) | reach two +0.5120 (+0.9476) | reach three +0.5012 (+0.9321) | reach3/ray - 1 = -0.462; reach2/frame 0.975 (cos q 0.980), reach3/frame 0.955 (cos^2 q 0.961)
+N shear   q=0.4: packet deflection (ray cloud) frame +1.0094 (+1.0511) | reach two +0.9552 (+1.0032) | reach three +0.9087 (+0.9561) | reach3/ray - 1 = -0.050; reach2/frame 0.946 (cos q 0.921), reach3/frame 0.900 (cos^2 q 0.848)
+N shear   q=0.6: packet deflection (ray cloud) frame +1.0350 (+1.0301) | reach two +0.9295 (+0.9345) | reach three +0.8343 (+0.8407) | reach3/ray - 1 = -0.008; reach2/frame 0.898 (cos q 0.825), reach3/frame 0.806 (cos^2 q 0.681)
+N shear   q=0.8: packet deflection (ray cloud) frame +0.9676 (+0.9507) | reach two +0.8064 (+0.8025) | reach three +0.6576 (+0.6572) | reach3/ray - 1 = +0.001; reach2/frame 0.833 (cos q 0.697), reach3/frame 0.680 (cos^2 q 0.485)
+N shear   q=1.0: packet deflection (ray cloud) frame +0.8238 (+0.7970) | reach two +0.6228 (+0.6123) | reach three +0.4344 (+0.4312) | reach3/ray - 1 = +0.008; reach2/frame 0.756 (cos q 0.540), reach3/frame 0.527 (cos^2 q 0.292)
+N shear   q=1.2: packet deflection (ray cloud) frame +0.5966 (+0.5591) | reach two +0.4000 (+0.3824) | reach three +0.2134 (+0.2090) | reach3/ray - 1 = +0.021; reach2/frame 0.670 (cos q 0.362), reach3/frame 0.358 (cos^2 q 0.131)
+N elapsed 707 s
+N stretch, reach3/reach2 by q: packets 0.2:0.975 0.4:0.919 0.6:0.826 0.8:0.700 1.0:0.547 1.2:0.376 ; ray clouds 0.2:0.975 0.4:0.919 0.6:0.827 0.8:0.701 1.0:0.549 1.2:0.379 -> 10 per cent at q = 0.441 (packets), 0.442 (rays), 0.451 (first-order cos q = 0.9)
+
+SUMMARY: stretch gradient, species (0,0,0): packet deflections follow their own ray clouds (reach three: +0.024, +0.040, +0.022, +0.016, +0.014, +0.012 at q = 0.2..1.2); the reach-three/reach-two ratio falls below 0.9 near q = 0.44 (first-order cos q = 0.9 at 0.451); against the frame ray times cos^2 q the reach-three packets deviate by +0.013, +0.035, +0.023, +0.025, +0.035, +0.066

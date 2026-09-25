@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_cluster_decomposition_temporal_narrow_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.py",
+ "seed": 74551,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221551Z",
+ "elapsed_s": 6.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "65edf1978087e22ab23db9cf11f405def1a61a1baac5eb5be057dfaf6cb5d0a3",
+ "stdout_tail": "ted: True\n  CHK3 [PASS]\n\n--- CHK4: L3 lattice light cone (contrapositive of L1) ---\n  for every tested time, a finite distance threshold d* with proxy < 0.05 exists: True\n  CHK4 [PASS]\n\n--- CHK5: temporal clustering spectral identity (bridge B.6) ---\n  max |identity residual| over samples/n: 5.722e-15\n  CHK5 [PASS]\n\n--- CHK6: temporal clustering inequality (bridge B.7) ---\n  Delta_T (gap) supplied by construction; inequality checked.\n  worst slack (rhs - lhs), should be >= 0: 3.793e-01\n  CHK6 [PASS]\n\n--- CHK7: no-gap counterexample (Delta_T = 0 does not cluster) ---\n    n =  1: |connected| = 1.0000\n    n =  4: |connected| = 1.0000\n    n =  8: |connected| = 1.0000\n    n = 16: |connected| = 1.0000\n    n = 32: |connected| = 1.0000\n  connected correlator stays O(1) (no clustering without gap): True\n  CHK7 [PASS]\n\n==========================================================================\n SUMMARY\n==========================================================================\n   [PASS] CHK1 L4 repaired triangle norm bound\n   [PASS] CHK2 L4 J_* and v_LR finite\n   [PASS] CHK3 L1 Lieb-Robinson envelope\n   [PASS] CHK4 L3 lattice light cone\n   [PASS] CHK5 temporal clustering identity (B.6)\n   [PASS] CHK6 temporal clustering inequality (B.7)\n   [PASS] CHK7 no-gap counterexample\n\n   TOTAL: 7 PASS / 0 FAIL\n\n verdict: narrowed L1/L3/L4 reproven; L4 norm bound repaired;\n          temporal transfer-matrix clustering (B.6/B.7) exhibited;\n          SPATIAL L2 / equation (3) remains the open bridge.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221557Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_cluster_decomposition_temporal_narrow_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

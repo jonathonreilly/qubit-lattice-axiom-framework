@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_chsh_tsirelson_lattice_qubits_bound_2026_05_20.py",
+ "seed": 74546,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221546Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "138fc6f77444f1890b58c25936b4ec2bf74401a8bfa5e81913c9b975256202a4",
+ "stdout_tail": "CHSH Tsirelson lattice-qubit audit companion\nsurface: finite two-site M_2(C) tensor M_2(C) operator algebra\n[PASS (A)] A_1 is self-adjoint\n[PASS (A)] A_1 is an involution\n[PASS (A)] A_2 is self-adjoint\n[PASS (A)] A_2 is an involution\n[PASS (A)] B_1 is self-adjoint\n[PASS (A)] B_1 is an involution\n[PASS (A)] B_2 is self-adjoint\n[PASS (A)] B_2 is an involution\n[PASS (A)] tensor locality [A_1 tensor I, I tensor B_1] = 0\n[PASS (A)] tensor locality [A_1 tensor I, I tensor B_2] = 0\n[PASS (A)] tensor locality [A_2 tensor I, I tensor B_1] = 0\n[PASS (A)] tensor locality [A_2 tensor I, I tensor B_2] = 0\n[PASS (A)] CHSH operator is self-adjoint\n[PASS (A)] repaired Landau identity C^2 = 4I - [A_1,A_2] tensor [B_1,B_2]\n[PASS (A)] negative control: old plus-sign identity is not the displayed square\n[PASS (A)] [sigma_z, sigma_x] = 2i sigma_y\n[PASS (A)] ||[A_1,A_2]|| <= 2 (2.000000000000000)\n[PASS (A)] ||[B_1,B_2]|| <= 2 (2.000000000000000)\n[PASS (A)] ||C|| = 2*sqrt(2) for the standard witness configuration (2.828427124746190)\n[PASS (A)] CHSH spectrum stays within [-2*sqrt(2), 2*sqrt(2)] (-2.828427124746, 0.000000000000, 0.000000000000, 2.828427124746)\n[PASS (A)] Bell state has unit norm\n[PASS (A)] <Phi+|C|Phi+> = 2*sqrt(2) (2*sqrt(2))\n[PASS (A)] random involution sweep preserves Landau identity (max residual 3.093e-15)\n[PASS (A)] random involution sweep obeys Tsirelson upper bound (max ||C|| 2.826156645011288)\nTOTAL: PASS=24, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

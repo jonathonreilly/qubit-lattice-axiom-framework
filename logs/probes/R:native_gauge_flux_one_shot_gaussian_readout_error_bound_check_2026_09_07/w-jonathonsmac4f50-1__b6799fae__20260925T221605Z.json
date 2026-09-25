@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.py",
+ "seed": 74565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221605Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "82a7b67fb4f0520b681543c20e2c6b60f06b6513bb55ec3c2a2f7e9801065db1",
+ "stdout_tail": "PASS: 41 exact contraction, native exterior-power and mixture checks.\nper_element: six fixed contraction spectra checked by 24 rational principal-minor and error inequalities\nper_site: checked and not executed \u2014 no spatial-lattice evolution is simulated in this finite encoded-instrument test\nper_mode: literal nine-mode rank-four reflection and all 36 exterior-square columns checked by five aggregate tests\nper_block: four-rule shared-orientation mixture table, ten mixture checks and one input-dependent oracle countercontrol executed\nlattice_wide: checked and not executed \u2014 adaptive protocols, additional readouts and general energy apparatus lie outside this one-shot theorem\nsource_sha256=f960948a7da958e1d8bf2929b506eddf903de215bcab72eb0b5f744f29edb31e\nTOTAL: PASS=41 FAIL=0\nResources: 0.027324s; 20.844 MiB; limits180s/180MiB.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221605Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_flux_one_shot_gaussian_readout_error_bound_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

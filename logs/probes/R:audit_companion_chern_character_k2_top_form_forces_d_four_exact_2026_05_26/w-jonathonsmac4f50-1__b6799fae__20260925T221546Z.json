@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_chern_character_k2_top_form_forces_d_four_exact_2026_05_26.py",
+ "seed": 74546,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221546Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "856975f121ba09ae5548a40aa6492ecb72908a587bcdb0b3ee00d1da972f46d9",
+ "stdout_tail": "--------------------------------------------------------------------------------\nPart 8: (K8) Uniqueness \u2014 d = 4 is unique with k = 2\n----------------------------------------------------------------------------------------\n  [PASS (A)] (K8) Among d \u2208 {0, ..., 8} with k = 2, unique top-form match is d = 4  (matching d = [4])\n  [PASS (A)] (K8) sympy solve(2\u00b72 = d): unique solution d = 4  (sympy solutions = [4])\n\n----------------------------------------------------------------------------------------\nPart 9: Factorial-coefficient identity (i/(2\u03c0))^2 / 2! = -1/(8 \u03c0^2)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (K9) (i/(2\u03c0))^1 / 1! = i / (2 \u03c0)  (Chern char k=1 coeff)  (computed = I/(2*pi))\n  [PASS (A)] (K9) (i/(2\u03c0))^2 / 2! = -1 / (8 \u03c0^2)  (Chern char k=2 coeff)  (computed = -1/(8*pi**2))\n  [PASS (A)] (K9) (i/(2\u03c0))^3 / 3! = -i / (48 \u03c0^3)  (Chern char k=3 coeff)  (computed = -I/(48*pi**3))\n  [PASS (A)] (K9) 8 \u03c0^2 = 2 \u00b7 (2\u03c0)^2  (factor 2 from 1/2! in ch_2)  (2 \u00b7 (2\u03c0)^2 = 8*pi**2)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 131\n  FAIL = 0\n\n  Note path: CHERN_CHARACTER_K2_TOP_FORM_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  chern_character_k2_top_form_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact symbolic precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

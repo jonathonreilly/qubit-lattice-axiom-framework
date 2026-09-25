@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.py",
+ "seed": 74526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221526Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1e2e6c4d773a530a01071e2539e648389b65bb6836d23efa012d00e4f77cb02e",
+ "stdout_tail": "issing local coordinates; it already coordinatizes the exact-closure manifold  (the remaining gap is semantic strength, not hidden-variable incompleteness)\n\n========================================================================================\nPART 4: CURRENT eta=1 PLUS SIGN SEMANTICS STILL DO NOT ISOLATE A POINT\n========================================================================================\n  [PASS] Nearby distinct exact roots remain inside the current eta=1 plus sign semantics  (max |root_a-root_b|=9.308925e-02)\n  [PASS] Those nearby exact roots already carry different sign-observable values  (max observable difference=5.125363e-03)\n  [PASS] Therefore eta_1 = 1 with gamma > 0, E1 > 0, E2 > 0, Delta_src > 0 is an open semantic region, not a point-selector law  (local observable coordinates exist, but the current semantics do not fix their values)\n\n========================================================================================\nPART 5: BOTTOM LINE\n========================================================================================\n  [PASS] Any future local scalar-equation selector must fix additional observable values beyond eta_1 = 1 and the current sign chamber  (the observed local codimension deficit is 4 real equations on the exact-closure manifold)\n\n========================================================================================\nSUMMARY: PASS=10 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221526Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_local_observable_coordinate_theorem_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cl3_chiral_cube_wilson_hop_doubling_foreclosed_2026_05_27.py",
+ "seed": 74547,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221547Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=67 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "397a7a710e32f6d26727a7b922c775f496d6ab097f9430ca1b4c8c41b0ad2c4a",
+ "stdout_tail": " on a single link and the site-level content actually executed is that the backward hop never reaches a second site \u2014 U^dag is confirmed numerically to equal U^H on the same link and U U^dag to equal I, so the forward/backward pair is a Hermitian sum on one link rather than a two-link product across adjacent sites.\n  per_mode: checked and not executed \u2014 despite the word doubling, nothing here concerns Brillouin-zone doubler modes; no Fourier transform, momentum variable or mode sum is formed at any point, the expansion being carried out at coincident points in position space, so no mode-resolved quantity bears on the factor-of-two question.\n  per_block: the Fierz sandwich is resolved channel by channel and that is what closes route (D4) \u2014 sum_a T^a M T^a returns C_F I in the singlet channel M = I, which is where a fundamental scalar's self-energy lives, and returns -(1/(2 N_c)) M in the adjoint channel for traceless M; the same block reading is then rerun across the SU(2), SU(3) and SU(4) fundamentals, each landing a factor of two below its target.\n  lattice_wide: checked and not executed \u2014 no volume, no site sum and no thermodynamic limit is computed here; the one lattice-wide number in play, the structural product m_DM = N_sites * v = 16 v, arrives as an imported audit-discovery comparator that this runner only compares against, and the reason 16 v cannot be reached is a same-link algebraic fact rather than anything about lattice extent.\n\n=== SCORECARD ===\n  PASS=67 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221548Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

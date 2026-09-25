@@ -1,0 +1,35 @@
+{
+ "task": "R:gravity_sign_is_one_residual_at_the_tt_kernel_block_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gravity",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gravity_sign_is_one_residual_at_the_tt_kernel_block_2026_06_08.py",
+ "seed": 74709,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221829Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "47aa68f67b571de6ef9e20fc6c01da5453014e9e3cb88a3dcd6b7fbf663a8d54",
+ "stdout_tail": "GRAVITY SIGN: bounded scalar-W TT-kernel residual locator\n==============================================================================\n[PASS] K1 exchange-sign identity under supplied source/action premises\n       kappa=+1: K_TT=+0.50, V=-0.50; kappa=-1: K_TT=-0.50, V=+0.50\n[PASS] K2 scalar-W Hessian annihilates TT spin-2 samples\n       checked=4000, max |qhat qhat : h_TT|=8.22e-16\n[PASS] K3 source note keeps the route boundary explicit\n       guardrails present for bounded scope, scalar-W-only kernel, no-go discipline, and no primitive\n\nTOTAL: PASS=3 FAIL=0\nVERDICT: PASS for the bounded route locator. Under supplied source/action premises,\nthe attraction sign tracks the healthy spin-2 kinetic sign. The scalar-W metric\nHessian is rank-one longitudinal and annihilates TT perturbations, so that route\ncannot determine the spin-2 kinetic sign. Geometric, full stress-response, and\nRP/unitarity routes remain open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/gravity_sign_is_one_residual_at_the_tt_kernel_block_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

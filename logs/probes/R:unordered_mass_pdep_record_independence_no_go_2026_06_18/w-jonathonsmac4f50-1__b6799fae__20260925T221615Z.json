@@ -1,0 +1,34 @@
+{
+ "task": "R:unordered_mass_pdep_record_independence_no_go_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "unordered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/unordered_mass_pdep_record_independence_no_go_2026_06_18.py",
+ "seed": 74575,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221615Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "49956e0d3147d210429107bc101b15f95db803d141feffa9286f16e335699d59",
+ "stdout_tail": "xecuted \u2014 the index k labels a C_3 sector of the registered datum, not a lattice position, and no spatial coordinate, neighbour relation or lattice extent is introduced at any point in the countermodel.\nper_mode: the three sector modes k = 0, 1, 2 are resolved one by one \u2014 the K/CPT map sigma(k) = -k mod 3 is confirmed to be an involution fixing exactly one label, the mode orbits come out as [(0,), (1, 2)], and lambda_(sigma(k))(-delta) matches lambda_k(delta) within 1e-10 across all 4 hard-coded (a, b, delta) triples.\nper_block: record blocks are enumerated exhaustively over the 8 subsets of {0, 1, 2} \u2014 all 27 disjoint subset pairs satisfy finite additivity, the empty record reads zero, and both the singlet and the doublet collections are invariant under delta -> -delta, for each of the 3 unregistered scalings q in [1.0, 2.0, -3.0].\nlattice_wide: checked and not executed \u2014 the countermodel lives on a three-element sector label set with no lattice, no volume and no limit of any kind; 6 of the 18 checks are note and parent substring guards deciding nothing numerical, and the witness itself is the exact structural fact that I_q = q * sum lambda rescales with an unregistered q while the registered datum ([k], lambda_k) does not move.\n========================================================================================\nSUMMARY: UNORDERED MASS P-DEP RECORD-INDEPENDENCE NO-GO PASS=18 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221615Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

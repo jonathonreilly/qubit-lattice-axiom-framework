@@ -1,0 +1,35 @@
+{
+ "task": "R:carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15",
+ "type": "runner-reexecution",
+ "lane": "carrier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/carrier_preserving_closed_integer_charge_gas_convexification_2026_09_15.py",
+ "seed": 74716,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221836Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "143c0a6010d9ca50c79b3593383a0449026cb2414f642f183c539b558cdfd1dd",
+ "stdout_tail": "0359,\n      \"positive_variance_term\": 0.004084113311877866,\n      \"combined\": -1.0925723867294401e-11,\n      \"direct_charge_curvature\": -1.092560619106681e-11,\n      \"error\": 1.176762275918418e-16\n    },\n    {\n      \"beta\": 2.0,\n      \"sigma\": 0.13,\n      \"mean_curvature\": -0.004084106887846092,\n      \"positive_variance_term\": 0.0040841068803669014,\n      \"combined\": -7.479190877734965e-12,\n      \"direct_charge_curvature\": -7.479092098613607e-12,\n      \"error\": 9.877912135759783e-17\n    },\n    {\n      \"beta\": 2.0,\n      \"sigma\": 0.37,\n      \"mean_curvature\": -0.004084103720664162,\n      \"positive_variance_term\": 0.0040841037281433975,\n      \"combined\": 7.479235113183602e-12,\n      \"direct_charge_curvature\": 7.479092098613227e-12,\n      \"error\": 1.4301457037466938e-16\n    }\n  ]\n}\nTOTAL: PASS=6 FAIL=0\nper_element: executed exact exterior derivatives and closure in six carrier-cancellation examples in3D and4D.\nper_site: executed positive theta kernels, Poisson Hessians and multiprecision action differences; positive kernels can coexist with negative effective curvature.\nper_mode: executed finite Gaussian covariance splits and precision series, plus Eulerian moment-tail polynomial identities.\nper_block: executed hard-core graph indices and source Gaussian quadratures with the positive source-variance term retained.\nlattice_wide: checked and not executed: infinite rooted cluster sums, arbitrary integer fillings and volume-uniform convexity rely on the written analytic hypotheses.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221836Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

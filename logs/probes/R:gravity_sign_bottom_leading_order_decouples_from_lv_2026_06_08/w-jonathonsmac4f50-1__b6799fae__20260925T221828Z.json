@@ -1,0 +1,35 @@
+{
+ "task": "R:gravity_sign_bottom_leading_order_decouples_from_lv_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gravity",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gravity_sign_bottom_leading_order_decouples_from_lv_2026_06_08.py",
+ "seed": 74708,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221828Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0cbd32911dab16523ca1a751d80653b0692cb16e2aee1dcd396da6a30b748afe",
+ "stdout_tail": "Conditional order separation for gravity-sign LV corrections\n========================================================================\n[PASS] B1 supplied leading coefficient controls the strict k->0 sign\n       tested alpha=[-50.0, -5.0, -1.0, 0.0, 1.0, 5.0, 50.0]; max tiny-k coefficient error=6.667e-12\n[PASS] B2 LV contribution is O(k^2) relative to the leading coefficient\n       relative LV terms=2.800e-02, 2.800e-04, 2.800e-06, 2.800e-08; decade ratios=100.0, 100.0, 100.0\n[PASS] B3 result depends on the supplied c2 sign\n       signs for supplied c2=+0.5,-0.5 are [1.0, -1.0]\n[PASS] B4 source note demotes the broad wall-relocation claim\n       missing=[]\n\nTOTAL: PASS=4 FAIL=0\nBoundary: conditional order-counting only. This runner does not prove G>0,\ndoes not supply c2, and does not retire Lorentz/naturalness or dynamical-metric walls.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221828Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

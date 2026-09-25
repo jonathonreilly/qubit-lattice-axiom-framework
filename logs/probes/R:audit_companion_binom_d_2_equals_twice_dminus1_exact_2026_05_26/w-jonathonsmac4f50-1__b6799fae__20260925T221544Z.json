@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_binom_d_2_equals_twice_dminus1_exact_2026_05_26.py",
+ "seed": 74544,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221544Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f22d3af80a5c4a93219ad38a48b692dc3e10a18e3e514813b0e551ce7700d801",
+ "stdout_tail": "----------------------------\n  [PASS (A)] (D4) at d = 2: L - R = -1 < 0  (L - R = -1)\n  [PASS (A)] (D4) at d = 3: L - R = -1 < 0  (L - R = -1)\n\n----------------------------------------------------------------------------------------\nPart 6: (D5) Uniqueness over d in {2, ..., 12}\n----------------------------------------------------------------------------------------\n  [PASS (A)] (D5) Among d in {2, ..., 12}, exactly d = 4 satisfies L(d) = R(d)  (matching d values = [4])\n  [PASS (A)] (D5) Among d in {2, ..., 20}, exactly d = 4 satisfies L(d) = R(d)  (matching d values (extended) = [4])\n\n----------------------------------------------------------------------------------------\nPart 7: (D6) Informational geometric reading (cross-check, not load-bearing)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (D6) [info] dim \u039b^2(R^4) = dim so(4) = 6  (dim \u039b^2(R^4) = 6, dim so(4) = 6)\n  [PASS (A)] (D6) [info] 6 = 2 \u00d7 3 = 2 \u00d7 dim su(2) (self-dual + anti-self-dual halves)  (6 = 2 \u00d7 3 = 6)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 48\n  FAIL = 0\n\n  Note path: BINOM_D_2_EQUALS_TWICE_DMINUS1_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  binom_d_2_equals_twice_dminus1_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

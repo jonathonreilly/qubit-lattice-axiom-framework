@@ -1,0 +1,66 @@
+========================================================================================
+DM WILSON DIRECT-DESCENDANT CONSTRUCTIVE TRANSPORT PLATEAU THEOREM
+========================================================================================
+
+========================================================================================
+PART 1: THE CONSTRUCTIVE WITNESS SATURATES THE KNOWN GLOBAL EXTREMAL VALUE
+========================================================================================
+  [PASS] The original constructive witness lies strictly inside the constructive sign chamber  (min(gamma,E1,E2)=0.150147244666)
+  [PASS] Its favored constructive column eta_1 matches the known unconstrained global extremal value  ((witness,global)=(1.052220313052,1.052220313050))
+
+========================================================================================
+PART 2: THREE ADDITIONAL CONSTRUCTIVE INTERIOR MAXIMIZERS EXIST
+========================================================================================
+  [PASS] W0 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.150147244666)
+  [PASS] W0 attains the same extremal eta_1 value as the constructive witness  (eta_1=1.052220313052)
+  [PASS] W0 is an interior stationary constructive extremizer on the fixed seed surface  (||grad eta_1||=4.864e-08)
+  [PASS] W1 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.098758874797)
+  [PASS] W1 attains the same extremal eta_1 value as the constructive witness  (eta_1=1.052220313052)
+  [PASS] W1 is an interior stationary constructive extremizer on the fixed seed surface  (||grad eta_1||=3.884e-07)
+  [PASS] W2 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.090366396107)
+  [PASS] W2 attains the same extremal eta_1 value as the constructive witness  (eta_1=1.052220313052)
+  [PASS] W2 is an interior stationary constructive extremizer on the fixed seed surface  (||grad eta_1||=1.270e-07)
+  [PASS] W3 stays strictly inside gamma > 0, E1 > 0, E2 > 0  (min sign margin=0.059339947995)
+  [PASS] W3 attains the same extremal eta_1 value as the constructive witness  (eta_1=1.052220313052)
+  [PASS] W3 is an interior stationary constructive extremizer on the fixed seed surface  (||grad eta_1||=1.642e-07)
+
+========================================================================================
+PART 3: THE CONSTRUCTIVE EXTREMAL SET IS OBSERVABLY NONUNIQUE
+========================================================================================
+  [PASS] The four constructive extremal witnesses are pairwise distinct in source coordinates  (min source separation=0.434108122298)
+  [PASS] They are also pairwise distinct in observable data beyond eta_1  (min observable separation=0.173238763320)
+
+========================================================================================
+PART 4: BOTTOM LINE
+========================================================================================
+  [PASS] Constructive-sign transport extremality therefore does not uniquely canonicalize the endpoint  (multiple distinct constructive witnesses attain the same extremal eta_1)
+  [PASS] So the canonical path law still needs extra selector content beyond transport extremality  (transport picks a plateau, not a unique constructive endpoint)
+
+  W0:
+    x      = [1.174162 0.462544 0.053294]
+    y      = [0.758741 0.026904 0.134354]
+    delta  = 1.882595756164
+    eta    = [0.929321 1.05222  0.80149 ]
+    triplet= (0.150147244666, 0.296562850784, 1.986407435174)
+  W1:
+    x      = [0.905339 0.341085 0.443576]
+    y      = [0.775621 0.0043   0.140079]
+    delta  = 2.248936000000
+    eta    = [0.745697 1.05222  0.879573]
+    triplet= (0.098758874797, 0.122043673033, 1.345447439635)
+  W2:
+    x      = [1.108615 0.419912 0.161473]
+    y      = [0.834433 0.003722 0.081846]
+    delta  = 1.480589000000
+    eta    = [0.82166  1.05222  0.692877]
+    triplet= (0.090366396107, 0.242890637537, 1.999429075982)
+  W3:
+    x      = [1.132103 0.528258 0.029639]
+    y      = [0.484235 0.185501 0.250264]
+    delta  = 2.930589000000
+    eta    = [1.014053 1.05222  1.035028]
+    triplet= (0.059339947995, 0.391399371840, 1.311532356132)
+
+========================================================================================
+SUMMARY: PASS=18 FAIL=0
+========================================================================================

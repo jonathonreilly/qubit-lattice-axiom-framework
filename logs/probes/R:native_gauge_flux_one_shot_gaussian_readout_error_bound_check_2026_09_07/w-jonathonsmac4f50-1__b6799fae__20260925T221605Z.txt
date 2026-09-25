@@ -1,0 +1,9 @@
+PASS: 41 exact contraction, native exterior-power and mixture checks.
+per_element: six fixed contraction spectra checked by 24 rational principal-minor and error inequalities
+per_site: checked and not executed — no spatial-lattice evolution is simulated in this finite encoded-instrument test
+per_mode: literal nine-mode rank-four reflection and all 36 exterior-square columns checked by five aggregate tests
+per_block: four-rule shared-orientation mixture table, ten mixture checks and one input-dependent oracle countercontrol executed
+lattice_wide: checked and not executed — adaptive protocols, additional readouts and general energy apparatus lie outside this one-shot theorem
+source_sha256=f960948a7da958e1d8bf2929b506eddf903de215bcab72eb0b5f744f29edb31e
+TOTAL: PASS=41 FAIL=0
+Resources: 0.027324s; 20.844 MiB; limits180s/180MiB.

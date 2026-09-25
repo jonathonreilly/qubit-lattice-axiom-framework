@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_2026_04_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_2026_04_19.py",
+ "seed": 74519,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221519Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f14007a522dc0806de461be21c5ff7e86375f762b400121ae5c9f2d376b3d172",
+ "stdout_tail": "0.904931446681)\n  [PASS] That root is transverse, constructive, positive-branch, and locally full-rank  (deriv=0.755728, pack=[1.       0.121678 0.113364 1.201336 0.020218], min singulars=(6.906412e-03,6.909143e-03))\n\n========================================================================================\nPART 4: BOTTOM LINE\n========================================================================================\n  [PASS] The plateau-breaking spectral-isotropy family therefore has a concrete exact local scalar representative  (use J_iso = 27 Delta_src / (R11+R22+R33)^3)\n  [PASS] That scalar yields the cleanest current retained-closeout candidate on the certified plateau set  (endpoint law = maximize J_iso on the constructive plateau; closure law = unique eta_1 = 1 crossing on the aligned-seed -> W1 segment)\n\n  certified plateau J_iso values:\n    W0: J_iso=0.002047934111, spectrum=[0.928978 0.069853 0.001169]\n    W1: J_iso=0.093481561087, spectrum=[0.84665  0.118979 0.034371]\n    W2: J_iso=0.015699097176, spectrum=[0.935587 0.052597 0.011816]\n    W3: J_iso=0.000160310038, spectrum=[0.854455 0.145497 0.000048]\n\n  J_iso-selected endpoint witness = W1\n  aligned-seed -> W1 root lambda = 0.904931446681\n  selected root observable pack   = [1.       0.121678 0.113364 1.201336 0.020218]\n\n========================================================================================\nSUMMARY: PASS=8 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221521Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dm_wilson_direct_descendant_constructive_transport_plateau_normalized_schur_determinant_selector_2026_04_19.txt against the .txt beside this log"
+  ]
+ }
+}

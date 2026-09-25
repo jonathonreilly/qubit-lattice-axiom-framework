@@ -1,0 +1,25 @@
+CL3_PAULI_IRREP_EXACT_CERTIFICATE arithmetic=Gaussian-rational
+mode=normal table=bit-inversion
+N1_N8_STATUS=PASS current_execution=true
+N1_ROUTE id=complex-kernel-solve; class=algebraic_rearrangement; marker=ATTEMPTED; closed=true; mechanism=algebraic full-basis kernel solve for both complex actions; outcome=both exact maps have rank four and opposite-ideal kernel dimension four
+N1_ROUTE id=central-character-separation; class=symmetry_or_representation; marker=ATTEMPTED; closed=true; mechanism=representation central-character and commutant separation; outcome=a simple module selects one central character and the opposite-character intertwiner space is zero
+N1_ROUTE id=finite-simple-counterexamples; class=numerical_or_finite_case; marker=ATTEMPTED; closed=true; mechanism=finite exact compute of scalar and doubled module candidates; outcome=the scalar system is inconsistent and the four-dimensional doubled module is reducible
+N1_ROUTE id=faithful-direct-sum-carrier; class=alternate_carrier_or_sector; marker=ATTEMPTED; closed=true; mechanism=alternate module carrier rho_plus direct-sum rho_minus; outcome=the stacked carrier is faithful only because it contains both invariant chirality summands and is reducible
+N1_ROUTE id=gram-normalization; class=normalization_or_units; marker=ATTEMPTED; closed=true; mechanism=normalization of the intertwiner Gram matrix under Hermitian generators; outcome=Hermitian images force scalar normalization while the bare non-Hermitian similarity keeps a nonscalar Gram matrix
+N2_DISPOSITION open_walls=0; the two conclusions are separately computed exact boundaries, not unresolved conditions.
+N3_DISPOSITION inputs=displayed_Clifford_relations,finite_unital_complex_modules; Hermitian generators are explicit only in the conditional unitary refinement; no carrier or imported value enters.
+N4_DISPOSITION prior_witnesses=0; all five route families are ATTEMPTED in this execution.
+N5_RESOLUTION per_element: both irreducible complex actions have computed opposite-ideal kernel dimensions (4,4).
+N5_RESOLUTION per_site: one abstract real Cl(3,0) copy has exact image ranks (8,8); no physical site is identified.
+N5_RESOLUTION per_mode: the central-action solve has exactly 2 characters and a simple module selects one.
+N5_RESOLUTION per_block: central-block dimensions are (4,4); stacked rank is 8, while each irrep kills the other block.
+N5_RESOLUTION lattice_wide: NOT TESTED and outside this abstract one-algebra theorem; no lattice-wide negative assertion is made.
+N6_DISPOSITION partial_closures=faithful_reducible_direct_sum,Hermitian_same_sign_unitary_refinement; neither changes the exact irreducible complex kernel boundary.
+N7_STEELMAN_ARGUMENT stack rho_plus and rho_minus to obtain a faithful complex representation, apparently defeating nonfaithfulness.
+N7_STEELMAN_RESOLUTION combined_rank=8; faithful=true; reducible=true; invariant_summand_dimensions=2,2; each irreducible kernel_dimension=4.
+N8_DISPOSITION prior_witnesses=0; local analogous controls closed=2; repository echo indexing remains audit-orchestrator-owned.
+CERTIFIED split=M2(C)+M2(C) irreps=2 dimensions=2,2
+CERTIFIED real_ranks=8,8 complex_kernel_dimensions=4,4
+========================================================================
+TOTAL: PASS=51, FAIL=0
+========================================================================

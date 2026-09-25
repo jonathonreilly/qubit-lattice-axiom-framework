@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_exact_2026_05_27.py",
+ "seed": 74548,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221548Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "548adb456f67fe5d49a33fc3f3c95b0f22bb4e5430d8ffca6cfc7f490ba97672",
+ "stdout_tail": "------------------------------------------------------------------\nPart 7: (S6) Antisymmetric block spans the Y = -1 eigenspace\n----------------------------------------------------------------------------------------\n  [PASS (A)] (S6) P_symm @ v_{ant, 0} = 0\n  [PASS (A)] (S6) P_symm @ v_{ant, 1} = 0\n  [PASS (A)] (S6) P_antisymm @ v_{ant, 0} = v_{ant, 0}\n  [PASS (A)] (S6) P_antisymm @ v_{ant, 1} = v_{ant, 1}\n  [PASS (A)] (S6) Y @ v_{ant, 0} = (-1) v_{ant, 0}\n  [PASS (A)] (S6) Y @ v_{ant, 1} = (-1) v_{ant, 1}\n\n----------------------------------------------------------------------------------------\nPart 8: Burnside hw=3 sanity\n----------------------------------------------------------------------------------------\n  [PASS (A)] Burnside hw=3 subspace is 1-dim (only |111>)  (got 1 hw=3 basis vectors)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 25\n  FAIL = 0\n  TOTAL = 25\n\n  Note: CL3_HYPERCHARGE_EIGENVALUE_SPECTRUM_ON_CHIRAL_CUBE_NARROW_THEOREM_NOTE_2026-05-27.md\n  Claim ID: cl3_hypercharge_eigenvalue_spectrum_on_chiral_cube_narrow_theorem_note_2026-05-27\n\nVERDICT: companion audit-friendly exact-symbolic verification of\n         (S1)-(S6) PASSES. The operator Y on (C^2)^{otimes 3}\n         has spectrum {+1/3 (mult 6), -1 (mult 2)} at exact\n         rational precision; the dark hw=3 Burnside singlet\n         |111> carries Y = +1/3.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221548Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

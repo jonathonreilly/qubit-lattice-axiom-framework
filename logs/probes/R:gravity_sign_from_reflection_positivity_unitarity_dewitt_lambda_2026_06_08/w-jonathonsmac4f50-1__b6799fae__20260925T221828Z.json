@@ -1,0 +1,35 @@
+{
+ "task": "R:gravity_sign_from_reflection_positivity_unitarity_dewitt_lambda_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "gravity",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gravity_sign_from_reflection_positivity_unitarity_dewitt_lambda_2026_06_08.py",
+ "seed": 74708,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221828Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=3 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "386071db60f4ff45b63acf731f601d2c64717806fbf6252ef77410fbc2bcb74a",
+ "stdout_tail": "GRAVITY SIGN: bounded reflection-positive unitarity gate\n==============================================================================\n[PASS] H1 RP Gram is positive semidefinite; indefinite Gram has a ghost direction\n       min RP eigenvalue=2.430e-02; indefinite eigenvalues=[-1.0, 1.0, 1.0]\n[PASS] H2 DeWitt lambda-one has TT/trace split; lambda=0 and lambda=1/d do not\n       TT=+1; trace(lambda=1)=-2; trace(lambda=0)=+1; trace(lambda=1/d)=+0e+00\n[PASS] H3 source note keeps RP/unitarity route conditional\n       guardrails present for RP-alone boundary, supermetric blocker, no-go scope, and primitive scope\n\nTOTAL: PASS=3 FAIL=0\nVERDICT: PASS for the bounded RP/unitarity gate only. RP forbids physical\nnegative-norm ghosts after reconstruction, and the lambda-one DeWitt control\nhas the TT/trace sign split. G>0 is not derived from RP alone; the open work is\nto derive physical RP TT modes, conformal gauge removal, and source/action\norientation in the framework.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221828Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

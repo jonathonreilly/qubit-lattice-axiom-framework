@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_cl3_taste_abstract_c8_orbit_scope_2026_06_12.py",
+ "seed": 74550,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b6799fae",
+ "started_utc": "20260925T221550Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e829250eceb6cfc2c88da7fa34571c217f6130263daa4d33140dcec7d41d828a",
+ "stdout_tail": "==============================================================================\nCL3 abstract C^8 S3/Z3 orbit and restricted-spectrum verifier\n==============================================================================\n\n-- S3/Z3 group action on C^8 --\n  [PASS] T12^2 = I8\n  [PASS] T23^2 = I8\n  [PASS] Z3^3 = I8\n  [PASS] (T12*T23)^3 = I8\n  [PASS] hw=1 subspace is invariant under T12,T23,Z3\n\n-- Z3 orbit on the hw=1 labels --\n  [PASS] Z3: (1,0,0) -> (0,1,0)\n  [PASS] Z3: (0,1,0) -> (0,0,1)\n  [PASS] Z3: (0,0,1) -> (1,0,0)\n\n-- Character decomposition --\n  [PASS] chi(e)=8  (got 8.0)\n  [PASS] chi(2-cycle)=4  (got 4.0)\n  [PASS] chi(3-cycle)=2  (got 2.0)\n  [PASS] C^8 = 4*A1 + 0*A2 + 2*E  (n_A1=4.0, n_A2=0.0, n_E=2.0)\n  [PASS] hw=1 sector = A1 + E  (chi_hw1=(3,1,0))\n\n-- Restricted Y and T3 spectra on hw=1 --\n  [PASS] hw=1 Y spectrum = {-1,+1/3,+1/3}  (got [-1.        0.333333  0.333333])\n  [PASS] hw=1 T3 spectrum = {-1/2,+1/2,+1/2}  (got [-0.5  0.5  0.5])\n\n==============================================================================\nTOTAL: PASS=15 FAIL=0\nVERDICT: the abstract C^8 tensor-position S3 representation decomposes as 4*A1 + 0*A2 + 2*E; the hw=1 subspace is A1+E with a Z3 three-label orbit; the restricted Y and T3 spectra are {-1,+1/3,+1/3} and {-1/2,+1/2,+1/2}. No carrier or physical-family identification is asserted.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T221550Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

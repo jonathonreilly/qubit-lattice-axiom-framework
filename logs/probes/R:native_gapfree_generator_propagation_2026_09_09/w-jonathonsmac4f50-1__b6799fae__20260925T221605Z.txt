@@ -1,0 +1,6 @@
+TOTAL: PASS=44 FAIL=0
+per_element: small rational generator, local-resolvent and sign identities executed; no native operator evaluation
+per_site: analytical local-source construction only; no sitewise native array execution
+per_mode: Poisson sufficient-condition arithmetic executed; full native propagation remains uncomputed
+per_block: finite synthetic first-action Gram control executed; physical leakage is an uncomputed hypothesis
+lattice_wide: uniform analytical propagation statement is conditional on the stated ORIGINAL-domain leakage bound

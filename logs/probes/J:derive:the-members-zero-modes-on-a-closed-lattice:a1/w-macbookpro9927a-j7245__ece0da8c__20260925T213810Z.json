@@ -21,12 +21,19 @@
  "stdout_sha256": "c5eecd87bff2c7d4db66338dfdf8842e61397500fda3939892b894886ba275d7",
  "stdout_tail": " V = 0 block 148's rest-content family tends to Kasner, lamdot_k t -> 1 - 2 D_k/D with sum 1 and, on the cone, sum of squares 1; with unequal lengths [H(k; l(t)), H(k; l(t'))] != 0 unless the three ratios agree, so block 146's exact 1/l law for top-speed walkers does not carry over to three lengths (it needs slow stretching)\nTOTAL: PASS=6 FAIL=0  (1 s)\nSUMMARY: PROVED blocks 146, 147 and 148 hold as stated within their supplied homogeneous models, by Euler-Lagrange equations derived here: c_k = -24 alpha; G = 1/(16 pi K) and the Friedmann form iff alpha = K/4; the pressure form; t^(1/2), t^(2/3); the sea's -I/l with I(4^3) = (3 + sqrt3 + 3 sqrt2)/8, the staggered square from position space; the bounce at l = I/m0; the cross-term-only kinetic term, Kasner, and the rest-content family on its cone. Additions: that family is Kasner near V = 0; with three unequal lengths the walk does not commute in time.\nHIT: blocks 146, 147 and 148 confirmed independently: from c_k l^3 lamdot^2/w - w m and -8 alpha V sum_{i<m} lamdot_i lamdot_m/w - w m with Euler-Lagrange equations derived here, every stated solution (t^(1/2), t^(2/3), the bounce at l = I/m0 with lamddot = m0^4/(48 alpha I^3), Kasner with sum p = sum p^2 = 1, the rest-content family on D0^2 + D1^2 + D2^2 = 2 sum D_i D_j) satisfies them exactly, and G = 1/(16 pi K), alpha = K/4 and I(4^3) hold; new: the rest-content family starts as Kasner with p_k = 1 - 2 D_k/D, and with unequal lengths top-speed walkers lose the exact 1/l law.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j7245",
-  "at_utc": "20260925T213812Z",
+  "by": "w7",
+  "at_utc": "20260925T213840Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha ece0da8c differs from the current HEAD d8c02d35 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: an independent confirmation of blocks 146, 147 and 148 within their supplied homogeneous models. The Euler-Lagrange equations are derived afresh, and every stated solution satisfies them exactly; the finite facts are rebuilt independently. Two exact additions: the content family starts as Kasner, and unequal lengths break the 1/l law. For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T213840Z"
  }
 }

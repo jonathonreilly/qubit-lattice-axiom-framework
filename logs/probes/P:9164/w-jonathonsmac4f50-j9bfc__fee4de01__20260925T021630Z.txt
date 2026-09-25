@@ -1,0 +1,4 @@
+PR #9164: feat(record-formation): classify the formation rate functions the axiom text admits
+branch claude/formation-rate-functions-the-axiom-text-admits-20260924 (base main)
+runners in the PR: 1
+== scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py: rc=0 PASS=7 FAIL=0

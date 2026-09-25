@@ -1,0 +1,36 @@
+{
+ "task": "P:9164",
+ "type": "pr-reexecution",
+ "lane": "formation-rate-functions-the-axiom-text-",
+ "worker": "w-jonathonsmac4f50-j9bfc",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9164",
+ "pr": 9164,
+ "branch": "claude/formation-rate-functions-the-axiom-text-admits-20260924",
+ "git_sha": "fee4de01",
+ "started_utc": "20260925T021630Z",
+ "elapsed_s": 5.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9164's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "715846cc68f8b12beb202ed7a910bad1a1bc15bc417e130d4b7d8a60655cff42",
+ "stdout_tail": "PR #9164: feat(record-formation): classify the formation rate functions the axiom text admits\nbranch claude/formation-rate-functions-the-axiom-text-admits-20260924 (base main)\nrunners in the PR: 1\n== scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9bfc",
+  "at_utc": "20260925T021635Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

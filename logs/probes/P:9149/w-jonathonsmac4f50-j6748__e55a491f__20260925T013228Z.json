@@ -1,0 +1,36 @@
+{
+ "task": "P:9149",
+ "type": "pr-reexecution",
+ "lane": "gauging-the-composite-site-charge-with-t",
+ "worker": "w-jonathonsmac4f50-j6748",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9149",
+ "pr": 9149,
+ "branch": "claude/gauging-the-composite-site-charge-with-the-link-field-20260924",
+ "git_sha": "e55a491f",
+ "started_utc": "20260925T013228Z",
+ "elapsed_s": 6.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9149's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "e20133de77c667ca8bc831ce49dc74651ec876e83de99c7c965d4bab41ce6200",
+ "stdout_tail": "PR #9149: feat(gauge): gauge the composite-site charge with the spin-1/2 link field\nbranch claude/gauging-the-composite-site-charge-with-the-link-field-20260924 (base main)\nrunners in the PR: 1\n== scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6748",
+  "at_utc": "20260925T013234Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

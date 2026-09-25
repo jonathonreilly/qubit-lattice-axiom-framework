@@ -1,0 +1,4 @@
+PR #9149: feat(gauge): gauge the composite-site charge with the spin-1/2 link field
+branch claude/gauging-the-composite-site-charge-with-the-link-field-20260924 (base main)
+runners in the PR: 1
+== scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py: rc=0 PASS=5 FAIL=0

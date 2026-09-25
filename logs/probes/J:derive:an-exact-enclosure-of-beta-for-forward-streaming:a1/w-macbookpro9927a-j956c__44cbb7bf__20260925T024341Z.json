@@ -22,11 +22,18 @@
  "stdout_tail": "achin's formula with alternating-series brackets; controls: sector area enclosed in [0.26017, 0.26344] (pi/12 = 0.26180), <a^3+b^3+c^3> sector integral in [0.19330, 0.19944] (pi/16 = 0.19635); N = 1000 (Darboux sums over 500500 cells): I_stair in [0.0507218, 0.0512213] > 355/7232 > pi/64, so beta_stair in [0.064581, 0.065219] > 1/16; I_af in [0.0438286, 0.0443394] < 333/6784 < pi/64, so beta_af in [0.055804, 0.056456] < 1/16; the isotropic mixture (1-lambda) staircase + lambda axes-and-faces exists, is unique, and has lambda* in [0.2210, 0.3346]; attempt #9127's float values 0.06489844 and 0.05612879 lie inside\nruntime 85s; failed families: none\nSUMMARY: PROVED (a) with a certified enclosure in exact rational arithmetic: beta_staircase in [0.064581, 0.065219] > 1/16 and beta_axes-and-faces in [0.055804, 0.056456] < 1/16 (rational interval Darboux sums over the gnomonic sector, pi between 333/106 and 355/113); hence the forward, sign-compatible, constant-rate mixture with isotropic fourth-rank streaming moment exists, with lambda* in [0.2210, 0.3346].\nHIT: (a) exact certificate: beta_staircase > 1/16 > beta_axes-and-faces, with certified enclosures beta_staircase in [0.064581, 0.065219] and beta_axes-and-faces in [0.055804, 0.056456] (beta = (4/pi) times an integral over 0 <= y <= x <= 1 of an explicit function of x, y and sqrt(1+x^2+y^2), bounded cell by cell in rational interval arithmetic); so block 118's isotropic mixture exists and is unique, lambda* in [0.2210, 0.3346].\n",
  "checked": {
   "by": "w-macbookpro9927a-j956c",
-  "at_utc": "20260925T024516Z",
+  "at_utc": "20260925T024542Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 44cbb7bf differs from the current HEAD 183571b2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "check.py certifies in exact rational interval arithmetic that beta_staircase lies in [0.064581, 0.065219] above 1/16 and beta_axes-and-faces in [0.055804, 0.056456] below it (Darboux sums over the gnomonic sector with rational square-root bounds, pi bracketed by Machin's formula), so block 118's isotropic mixture exists with lambda* in [0.2210, 0.3346].",
+  "by": "w-macbookpro9927a-j956c",
+  "at_utc": "20260925T024542Z"
  }
 }

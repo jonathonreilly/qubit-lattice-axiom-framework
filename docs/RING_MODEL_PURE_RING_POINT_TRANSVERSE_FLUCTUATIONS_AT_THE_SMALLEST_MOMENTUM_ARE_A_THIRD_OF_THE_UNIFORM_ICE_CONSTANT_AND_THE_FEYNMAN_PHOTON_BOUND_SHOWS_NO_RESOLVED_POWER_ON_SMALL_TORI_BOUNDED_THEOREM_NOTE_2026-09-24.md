@@ -1,7 +1,7 @@
 ---
 claim_id: ring_model_pure_ring_point_transverse_fluctuations_at_the_smallest_momentum_are_a_third_of_the_uniform_ice_constant_and_the_feynman_photon_bound_shows_no_resolved_power_on_small_tori_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice with the exact vertex Gauss law (cubic ice) and the covariant plaquette clause -g (U + U^dag) at V = 0, g = 1 (open PRs 9066, 9072); the guided continuous-time projector Monte Carlo of open PR 9148 in the zero-winding sector of open PR 9153. Exact: for the transverse field mode O_a(k) = N^{-1/2} sum_{a-links} e^{ikx} sigma (the landed uniform-ice normalisation) the sum rule <0|O^dag (H - E_0) O|0> = 2 u_0 s^2 holds in every state, u_0 = -E_0/N_p the ring expectation per plaquette and s^2 = 2 - 2 cos k, so the Feynman quotient omega_SMA(k) = 2 u_0 s^2 / S_T(k) needs only the energy and the pure structure factor; on the 2^3 torus (9600 ice states; flip component of the canonical state 864 states, E_0 = -9.026721) the sum rule holds to 1e-9, S_T(pi) = 1.012148, omega_SMA = 2.9728 against the lowest coupled level 2.5173, and the forward-walking estimators reproduce S_T and C(tau <= 1) within errors while the mixed estimator is 5.6 standard errors low. Finite diagnostics (120 walkers, projection 40, forward lag 2, ten-bin errors): uniform ice has S_T(k_min) = 1.51, 1.53, 1.50 on 4^3, 6^3, 8^3 (constant; quotient quadratic, 8^3 value 0.2034 against the landed 0.2027); the pure-ring ground state has S_T(k_min) = 0.692 +- 0.013, 0.557 +- 0.022, 0.575 +- 0.028 (lag 4 agrees within errors), a fall S(4)/S(8) - 1 = 0.20 at 3.2 standard errors, pairwise exponents 0.54 +- 0.11 (4^3-6^3) and -0.11 +- 0.22 (6^3-8^3), three-point 0.35 +- 0.07; along the 8^3 zone S_T = 0.575, 0.833, 1.019 at k = pi/4, pi/2, 3pi/4; omega_SMA(k_min) = 1.690 +- 0.032, 1.037 +- 0.041, 0.587 +- 0.029, omega_SMA L = 6.76, 6.22, 4.69 against the uniform-ice 2.71, 2.03, 1.63; the 8^3 bound at pi/4, pi/2, 3pi/4 is 0.587, 1.382, 1.775 (ratios 2.36, 3.03; linear 2, 3; quadratic 4, 9); the ground-state correlation C(tau) of the mode has early rates equal to the bound within errors and late rates 1.40 +- 0.15, 0.77 +- 0.21, 0.47 +- 0.18 on [0.5, 1.0], upper bounds on the lowest coupled excitation at k_min. Auxiliary runs (not in the runner): 60 walkers on 6^3 give S_T(k_min) = 0.589 +- 0.034 and 240 walkers on 8^3 give 0.541 +- 0.027 with energies within 0.0002 per plaquette of the 120-walker values. No gap value, no dispersion law, no phase and no thermodynamic limit is claimed; no power law in L or k is resolved on 4^3-8^3."
+claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice with the exact vertex Gauss law (cubic ice) and the covariant plaquette clause -g (U + U^dag) at V = 0, g = 1 (open PRs 9066, 9072); the guided continuous-time projector Monte Carlo of open PR 9148 in the zero-winding sector of open PR 9153. Exact: for the transverse field mode O_a(k) = N^{-1/2} sum_{a-links} e^{ikx} sigma (the landed uniform-ice normalisation) the sum rule <0|O^dag (H - E_0) O|0> = 2 u_0 s^2 holds in every state, u_0 = -E_0/N_p the ring expectation per plaquette and s^2 = 2 - 2 cos k, so the Feynman quotient omega_SMA(k) = 2 u_0 s^2 / S_T(k) needs only the energy and the pure structure factor; on the 2^3 torus (9600 ice states; flip component of the canonical state 864 states, E_0 = -9.026721) the sum rule holds to 1e-9, S_T(pi) = 1.012148, omega_SMA = 2.9728 against the lowest coupled level 2.5173, and the forward-walking estimators reproduce S_T and C(tau <= 1) within errors while the mixed estimator is 5.6 standard errors low. Finite diagnostics (120 walkers, projection 40, forward lag 2, ten-bin errors): uniform ice has S_T(k_min) = 1.51, 1.53, 1.50 on 4^3, 6^3, 8^3 (constant; quotient quadratic, 8^3 value 0.2034 against the landed 0.2027); the pure-ring ground state has S_T(k_min) = 0.692 +- 0.013, 0.557 +- 0.022, 0.575 +- 0.028 (lag 4 agrees within errors), a fall S(4)/S(8) - 1 = 0.20 at 3.2 standard errors, pairwise exponents 0.54 +- 0.11 (4^3-6^3) and -0.11 +- 0.22 (6^3-8^3), three-point 0.35 +- 0.07; along the 8^3 zone S_T = 0.575, 0.833, 1.019 at k = pi/4, pi/2, 3pi/4; omega_SMA(k_min) = 1.690 +- 0.032, 1.037 +- 0.041, 0.587 +- 0.029, omega_SMA L = 6.76, 6.22, 4.69 against the uniform-ice 2.71, 2.03, 1.63; the 8^3 bound at pi/4, pi/2, 3pi/4 is 0.587, 1.382, 1.775 (ratios 2.36, 3.03; linear 2, 3; quadratic 4, 9); the ground-state correlation C(tau) of the mode has early rates equal to the bound within errors and late rates 1.40 +- 0.15, 0.77 +- 0.21, 0.47 +- 0.18 on [0.5, 1.0], upper bounds on the lowest coupled excitation at k_min. Auxiliary runs (not in the runner): 60 walkers on 6^3 give S_T(k_min) = 0.589 +- 0.034 and 240 walkers on 8^3 give 0.541 +- 0.027 with energies within 0.0002 per plaquette of the 120-walker values. No gap value, no dispersion law, no phase and no thermodynamic limit is claimed; no power law in L or k is resolved on 4^3-8^3. Correction (open PR 9220): the ten-bin errors of the forward-walking structure factor understate the run-to-run scatter by about a factor of two (seven 8^3 runs of S_T(pi/4): standard deviation 0.059); run averages give S_T(k_min) = 0.710 +- 0.010, 0.572 +- 0.018, 0.491 +- 0.022 on 4^3, 6^3, 8^3, a monotonic fall; the level step between 6^3 and 8^3 and the fitted exponents are within that scatter."
 upstream_dependencies:
   - minimal_axioms
   - uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_bounded_theorem_note_2026-09-23
@@ -40,7 +40,8 @@ note computes the same quotient in the pure-ring ground state.
   `S_T(k_min) = 0.692 ± 0.013, 0.557 ± 0.022, 0.575 ± 0.028`: about a third
   of the uniform-ice constant, falling from 4³ to 6³ (five standard errors)
   and level between 6³ and 8³ (pairwise exponents `0.54 ± 0.11` and
-  `−0.11 ± 0.22`); along the 8³ zone it rises, `0.575, 0.833, 1.019` at
+  `−0.11 ± 0.22`; open PR 9220 found this level step within the
+  run-to-run scatter, see the Correction below); along the 8³ zone it rises, `0.575, 0.833, 1.019` at
   `k = π/4, π/2, 3π/4`.
 - **The bound is three times the uniform-ice bound and falls faster than
   `1/L`.** `ω_SMA(k_min) = 1.690 ± 0.032, 1.037 ± 0.041, 0.587 ± 0.029`, so
@@ -221,6 +222,24 @@ A first pass of this block (two modes per size, 120/100/80 walkers,
 `0.522 ± 0.031`, `0.459 ± 0.080`; its 8³ value is 1.4 standard errors
 below the certified one, and the flat `ω_SMA·L` it suggested did not
 survive the six-mode statistics. ∎
+
+## Correction (2026-09-25)
+
+Open PR 9220 compared this block's method against two regulators and found
+two things that bear on the numbers above. First, the ten-bin errors of the
+forward-walking structure factor are too small: only 3–6 % of the walkers'
+ancestors survive the forward lag on 8³, and seven independent runs of
+`S_T(π/4)` on 8³ (this block's, its auxiliary 240-walker run, the first
+pass, and four runs at 60–480 walkers) scatter with a standard deviation of
+0.059 against quoted errors of 0.023–0.039. Second, the walker population
+biases the energy and the short-range correlations, and the bias grows
+with the torus. Averaged over independent runs, `S_T(k_min)` is
+`0.710 ± 0.010`, `0.572 ± 0.018`, `0.491 ± 0.022` on 4³, 6³, 8³: the fall
+survives and becomes monotonic, while the level step between 6³ and 8³,
+the pairwise exponent `−0.11 ± 0.22` and the three-point fit quoted above
+are within the run-to-run scatter. The table above is kept as measured; its
+errors should be read as about half the realistic ones. The exact sum rule,
+the 2³ control and the uniform-ice reference are unaffected.
 
 ## What this means for the lanes
 

@@ -1,0 +1,4 @@
+PR #9161: docs(ring-model): bound the pure-ring photon by the Feynman quotient with a pure structure factor
+branch claude/ring-model-density-channel-excitation-at-the-smallest-momentum-20260924 (base main)
+runners in the PR: 1
+== scripts/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.py: rc=0 PASS=5 FAIL=0

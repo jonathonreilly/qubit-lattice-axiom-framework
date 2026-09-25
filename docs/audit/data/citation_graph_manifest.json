@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -757,6 +757,10 @@
   "admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_and_the_curvature_member_doubles_the_bending_bounded_theorem_note_2026-09-21": {
    "deps_hash": "8151e8a2bc05",
    "out_degree": 6
+  },
+  "admissibility_rule_a_massive_body_at_rest_sits_on_one_sublattice_its_chessboard_of_clocks_stays_local_and_never_enters_the_pull_at_any_power_of_the_distance_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_weight_and_inertia_tied_by_the_walk_bounded_theorem_note_2026-09-21": {
    "deps_hash": "2ab57d7cb8cd",

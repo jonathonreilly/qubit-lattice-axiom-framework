@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_massive_body_at_rest_sits_on_one_sublattice_its_chessboard_of_clocks_stays_local_and_never_enters_the_pull_2026_09_24.py
+runner_sha256: abb9cba323a0f034120ccae879a7ba6a8338895340276badda0b564f6eee9fe2
+input_fingerprint_sha256: 3ac0c7ea1df20664c8688a43e3168c8567b2ed56ef987ef53f95d48b64f71f97
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_MASSIVE_BODY_AT_REST_SITS_ON_ONE_SUBLATTICE_ITS_CHESSBOARD_OF_CLOCKS_STAYS_LOCAL_AND_NEVER_ENTERS_THE_PULL_AT_ANY_POWER_OF_THE_DISTANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged (the staggered mass breaks one-site translation, as block 77 notes; the chessboard of clocks it sources is local); Admissibility is not a dynamics axiom (the walk, the mass, the clock laws and the members are supplied)
+PASS: B1 T1: on the 4^3 torus with block 77's H + m eps (m = 3/4), the eight positive rest states e^(i pi n.x)(1 + eps)u satisfy (H + m eps) chi = m chi exactly, vanish on every odd site, and have energy density m|chi_x|^2 >= 0 on the even sites and 0 on the odd ones, summing to m; with a clock field of rational phi the density is exactly m w_x |chi_x|^2, since phi H phi at an even site reads only odd neighbours
+PASS: C1 T2: on the 4^3 torus the state e^(i pi x1/2)(1 + eps/3)(1, 1) is an eigenstate of H + m eps with E = 5/4 at m = 3/4 (E^2 = |sin k|^2 + m^2); its weight is 4/5 on the even sites and 1/5 on the odd ones, its mass part sum m eps |psi|^2 is 9/20 = m^2/E, and its energy density E |psi_x|^2 is non-negative at every site
+PASS: D1 T3: the six-neighbour average reverses the stagger (A eps = -eps on 4^3), so the rest source (m/V) eps is solved in the simplest member's weak-field law (1 - A) u = -(gamma/6)(e - ebar) by u = -(gamma m/(12 V)) eps, a chessboard of clocks phi = c^eps that costs (2/gamma) 3V (c - 1/c)^2 > 0; every bond product phi_x phi_y is 1, so no odd-step operator feels it, but phi (m eps) phi = m (c^2 - c^-2)/2 + m eps (c^2 + c^-2)/2: a massive walker feels it as a scalar potential and a mass factor
+PASS: E1 T4: the simplest member's weak-field symbol 1 - A(k) = Delta(k)/6 and the curvature member's Delta(k) = sum 2(1 - cos k_j) vanish only at k = 0 and equal 2 and 12 at the stagger's wave vector pi(1,1,1); both give the same kernel -gamma/Delta(k), -gamma/|k|^2 near k = 0; so the staggered part of a body's source makes a field analytic in k away from 0, decaying faster than any power of the distance, and the pull between two bodies at rest is a function of their monopole and higher moments at every power of 1/R, with leading term -(gamma/(4 pi)) Q_A Q_B / R
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the eight positive rest states of H + m eps on every site of the 4^3 torus, with and without a rational clock field
+per_site: executed - the energy density of a moving eigenstate at every site; its even and odd weights and its mass part
+per_mode: executed - the six-neighbour average of the stagger; the chessboard field and its bond cost; the bond products; the mass term under a chessboard of clocks
+per_block: executed - the two members' symbols at the stagger's wave vector and near zero, and their common kernel
+lattice_wide: T1-T3 exact on the 4^3 torus and by proof on every even torus; T4 on the infinite lattice by the analyticity of the kernel away from k = 0; the walk, mass, clock laws and members supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: a massive body at rest sits on one sublattice; its chessboard of clocks is local, unfelt by odd-step operators, felt by a massive walker; the staggered part never enters the pull at any power of the distance; nothing adopted
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

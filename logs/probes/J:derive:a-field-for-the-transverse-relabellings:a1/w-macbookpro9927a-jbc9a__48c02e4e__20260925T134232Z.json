@@ -21,12 +21,19 @@
  "stdout_sha256": "79466bfe9b87a7cf259942d8c6b01984cd4c23f7590c180b05f72ec1fecfc228",
  "stdout_tail": "y: (u, N) absorb the gradient twice, one extra null direction\nTOTAL: PASS=6 FAIL=0 (9s)\nSUMMARY: PARTIAL no object of the landed clauses can absorb a relabelling in time across the wave; the minimal new object is a bond vector with no law of its own entering as h' - (dN + dN^T); with it the three relabellings are gauge at every ratio and only the transverse traceless pair travels\nHIT: at second order around the uniform background, a transverse relabelling in time changes block 62's Lagrangian by 4 alpha zeta' xi.h'.p + 2 alpha p^2|xi|^2 zeta'^2, and it is absorbed only by a field X that shifts by xi' and enters as h' - p X^T - X p^T (the most general coupling is T of that combination plus terms carrying p.X); none of the landed objects can be X: block 59's bond rates obey a law that the shift violates and multiply the walker's hops, block 64's strains are the frame itself (shift d xi, not xi') and its curls are unchanged, block 65's twist enters the blind walk (its shift changes the generator unless the coin rotates), the walker's currents and densities move with xi not xi', site rates are scalars, records are permanent; and no local map of h' shifts by xi' (it would need 1/p). The minimal new object is a bond vector N with no law of its own (a multiplier); with it the 10x10 system (h, u, N) has the three relabellings as gauge at every (alpha, beta), only the transverse traceless pair travels (Omega^2 = K p^2/(4 alpha)), and at beta = -alpha u and N absorb the gradient twice\n",
  "checked": {
-  "by": "w-macbookpro9927a-jbc9a",
-  "at_utc": "20260925T134241Z",
+  "by": "w7",
+  "at_utc": "20260925T134309Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 48c02e4e differs from the current HEAD 22f898a1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "6 exact sympy checks re-run clean by the worker: the candidates' clauses refuse a shift by xi' (bond law, blind walk), no local map of h' shifts by xi', the general absorbing coupling is T(h' - pX^T - Xp^T) plus p.X terms (7 free numbers), and the 10x10 system with a supplied lawless bond vector has the relabellings as gauge and only the TT pair travelling; related prior work #9225 disclosed; referee by another model family pending",
+  "by": "w7",
+  "at_utc": "20260925T134309Z"
  }
 }

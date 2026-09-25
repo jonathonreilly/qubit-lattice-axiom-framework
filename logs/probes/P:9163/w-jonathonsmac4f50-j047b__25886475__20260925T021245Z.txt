@@ -1,0 +1,4 @@
+PR #9163: docs(ring-model): fix the transverse weight of ice by a sum rule and map where the ring term moves it
+branch claude/ring-model-transverse-weight-sum-rule-and-where-the-ring-term-moves-it-20260924 (base main)
+runners in the PR: 1
+== scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py: rc=0 PASS=4 FAIL=0

@@ -1,0 +1,36 @@
+{
+ "task": "P:9163",
+ "type": "pr-reexecution",
+ "lane": "ring-model-transverse-weight-sum-rule-an",
+ "worker": "w-jonathonsmac4f50-j047b",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9163",
+ "pr": 9163,
+ "branch": "claude/ring-model-transverse-weight-sum-rule-and-where-the-ring-term-moves-it-20260924",
+ "git_sha": "25886475",
+ "started_utc": "20260925T021245Z",
+ "elapsed_s": 69.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9163's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "f96cc19b291eaf5cde366a210d718c5c34add70412fcb23a6d76ed1bed47a9e4",
+ "stdout_tail": "PR #9163: docs(ring-model): fix the transverse weight of ice by a sum rule and map where the ring term moves it\nbranch claude/ring-model-transverse-weight-sum-rule-and-where-the-ring-term-moves-it-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j047b",
+  "at_utc": "20260925T021354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

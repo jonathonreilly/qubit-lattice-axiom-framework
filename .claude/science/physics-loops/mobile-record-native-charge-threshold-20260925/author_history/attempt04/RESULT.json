@@ -1,0 +1,414 @@
+{
+  "at": "2026-09-25T06:11:47.645873+00:00",
+  "source_rows_sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da",
+  "purpose": "Propose a short exact rational certificate; floating LP is proposal only. All conclusions require exact residual and infinite/fixed-torus argument.",
+  "lp_success": true,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "denominator": 1000000000,
+  "deficit_numerators": [
+    {
+      "type": [
+        0,
+        0,
+        2
+      ],
+      "numerator": 30355481
+    },
+    {
+      "type": [
+        0,
+        0,
+        4
+      ],
+      "numerator": 0
+    },
+    {
+      "type": [
+        0,
+        0,
+        6
+      ],
+      "numerator": 82543
+    },
+    {
+      "type": [
+        0,
+        1,
+        1
+      ],
+      "numerator": 62454728
+    },
+    {
+      "type": [
+        0,
+        1,
+        3
+      ],
+      "numerator": 592565
+    },
+    {
+      "type": [
+        0,
+        1,
+        5
+      ],
+      "numerator": 257096
+    },
+    {
+      "type": [
+        0,
+        2,
+        2
+      ],
+      "numerator": 1564788
+    },
+    {
+      "type": [
+        0,
+        2,
+        4
+      ],
+      "numerator": 501938
+    },
+    {
+      "type": [
+        0,
+        3,
+        3
+      ],
+      "numerator": 0
+    },
+    {
+      "type": [
+        1,
+        1,
+        2
+      ],
+      "numerator": 2988879
+    },
+    {
+      "type": [
+        1,
+        1,
+        4
+      ],
+      "numerator": 733404
+    },
+    {
+      "type": [
+        1,
+        2,
+        3
+      ],
+      "numerator": 1227493
+    },
+    {
+      "type": [
+        2,
+        2,
+        2
+      ],
+      "numerator": 0
+    }
+  ],
+  "residuals": [
+    {
+      "type": [
+        0,
+        0,
+        2
+      ],
+      "numerator_at_common_denominator": -10002520
+    },
+    {
+      "type": [
+        0,
+        0,
+        4
+      ],
+      "numerator_at_common_denominator": -9999140
+    },
+    {
+      "type": [
+        0,
+        0,
+        6
+      ],
+      "numerator_at_common_denominator": -10004780
+    },
+    {
+      "type": [
+        0,
+        0,
+        8
+      ],
+      "numerator_at_common_denominator": -52773064
+    },
+    {
+      "type": [
+        0,
+        0,
+        10
+      ],
+      "numerator_at_common_denominator": -330172
+    },
+    {
+      "type": [
+        0,
+        1,
+        1
+      ],
+      "numerator_at_common_denominator": -16736738424
+    },
+    {
+      "type": [
+        0,
+        1,
+        3
+      ],
+      "numerator_at_common_denominator": -9991656
+    },
+    {
+      "type": [
+        0,
+        1,
+        5
+      ],
+      "numerator_at_common_denominator": -10000960
+    },
+    {
+      "type": [
+        0,
+        1,
+        7
+      ],
+      "numerator_at_common_denominator": -247840420
+    },
+    {
+      "type": [
+        0,
+        1,
+        9
+      ],
+      "numerator_at_common_denominator": -2349072
+    },
+    {
+      "type": [
+        0,
+        2,
+        2
+      ],
+      "numerator_at_common_denominator": -9994872
+    },
+    {
+      "type": [
+        0,
+        2,
+        4
+      ],
+      "numerator_at_common_denominator": -10006332
+    },
+    {
+      "type": [
+        0,
+        2,
+        6
+      ],
+      "numerator_at_common_denominator": -629410552
+    },
+    {
+      "type": [
+        0,
+        2,
+        8
+      ],
+      "numerator_at_common_denominator": -8102320
+    },
+    {
+      "type": [
+        0,
+        3,
+        3
+      ],
+      "numerator_at_common_denominator": -10221152344
+    },
+    {
+      "type": [
+        0,
+        3,
+        5
+      ],
+      "numerator_at_common_denominator": -826527132
+    },
+    {
+      "type": [
+        0,
+        3,
+        7
+      ],
+      "numerator_at_common_denominator": -15522000
+    },
+    {
+      "type": [
+        0,
+        4,
+        4
+      ],
+      "numerator_at_common_denominator": -789066016
+    },
+    {
+      "type": [
+        0,
+        4,
+        6
+      ],
+      "numerator_at_common_denominator": -18497972
+    },
+    {
+      "type": [
+        0,
+        5,
+        5
+      ],
+      "numerator_at_common_denominator": -18118784
+    },
+    {
+      "type": [
+        1,
+        1,
+        2
+      ],
+      "numerator_at_common_denominator": -10003268
+    },
+    {
+      "type": [
+        1,
+        1,
+        4
+      ],
+      "numerator_at_common_denominator": -10001320
+    },
+    {
+      "type": [
+        1,
+        1,
+        6
+      ],
+      "numerator_at_common_denominator": -1006997068
+    },
+    {
+      "type": [
+        1,
+        1,
+        8
+      ],
+      "numerator_at_common_denominator": -15122752
+    },
+    {
+      "type": [
+        1,
+        2,
+        3
+      ],
+      "numerator_at_common_denominator": -10005992
+    },
+    {
+      "type": [
+        1,
+        2,
+        5
+      ],
+      "numerator_at_common_denominator": -2239581620
+    },
+    {
+      "type": [
+        1,
+        2,
+        7
+      ],
+      "numerator_at_common_denominator": -47148420
+    },
+    {
+      "type": [
+        1,
+        3,
+        4
+      ],
+      "numerator_at_common_denominator": -2821579612
+    },
+    {
+      "type": [
+        1,
+        3,
+        6
+      ],
+      "numerator_at_common_denominator": -84019412
+    },
+    {
+      "type": [
+        1,
+        4,
+        5
+      ],
+      "numerator_at_common_denominator": -101033752
+    },
+    {
+      "type": [
+        2,
+        2,
+        2
+      ],
+      "numerator_at_common_denominator": -27847107864
+    },
+    {
+      "type": [
+        2,
+        2,
+        4
+      ],
+      "numerator_at_common_denominator": -3767374720
+    },
+    {
+      "type": [
+        2,
+        2,
+        6
+      ],
+      "numerator_at_common_denominator": -125238440
+    },
+    {
+      "type": [
+        2,
+        3,
+        3
+      ],
+      "numerator_at_common_denominator": -3994869584
+    },
+    {
+      "type": [
+        2,
+        3,
+        5
+      ],
+      "numerator_at_common_denominator": -190540620
+    },
+    {
+      "type": [
+        2,
+        4,
+        4
+      ],
+      "numerator_at_common_denominator": -208696560
+    },
+    {
+      "type": [
+        3,
+        3,
+        4
+      ],
+      "numerator_at_common_denominator": -249702480
+    }
+  ],
+  "all_exact_residuals_nonpositive": true,
+  "all_deficits_in_zero_one": true
+}

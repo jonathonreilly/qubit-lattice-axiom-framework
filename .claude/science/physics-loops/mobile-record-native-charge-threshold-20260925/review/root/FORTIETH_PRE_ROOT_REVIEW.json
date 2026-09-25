@@ -1,0 +1,42 @@
+{
+  "at": "2026-09-25T07:13:46.528906+00:00",
+  "report_sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+  "seal_sha256": "c8287bdc28f8c38368b4130c306c285270037e4b8b4e54614d97c25c14869e07",
+  "seal_members": 54,
+  "observed_files_content_size_mtime_ctime_unchanged": 61,
+  "fresh_readonly_runs": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_read_only.py",
+      "source_sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af",
+      "elapsed_seconds": 0.1149956660810858,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "entire_output_exact": true,
+      "result_sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_small_period_read_only.py",
+      "source_sha256": "e35554659132ac064a95d2298ddd4c4ec24e71945569bd5c87e8538860f735cb",
+      "elapsed_seconds": 0.04083929187618196,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "entire_output_exact": true,
+      "result_sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62"
+    }
+  ],
+  "complete_PRE_proof_all_scientific_codes_verifiers_and_process_logs_read": true,
+  "clipped_display_repair": "Process log and both complete verifier outputs reread separately without truncation; source programs appeared fully before the clipped evidence section.",
+  "read_scope": "All proof, all new program source, source pins, receipts, 37 residual groups, eight finite rational intervals, all summary charge moments and small-period results. 6876 raw unwrapped entries,15080 main matrix entries,120 full Gauss rows are mechanically verified in full; not claimed all manually read.",
+  "independent_only_additions": [
+    "Exact auxiliary kernel polynomial and full algebraic band",
+    "Strict finite upper edge and certified L6 through20 beyond root conservative L24 scope",
+    "Trace-distance lower bounds separating actual birth and uniform-minus comparisons",
+    "Nonzero-total-momentum fiber limitation"
+  ],
+  "required_math_repairs": [],
+  "scope": "Conditional PRE review before author40 release, no empirical or retained audit claim.",
+  "candidate42_sealed_before_this_PRE_read": {
+    "note_sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+    "seal_sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "ast.parse before builder execution",
+  "error": "Unterminated single-quoted header literal at line40",
+  "scientific_runner_executed": false,
+  "publication_mutated": false,
+  "original_source_sha256": "82dd275bcca80656c4f561eb756edbf39934a823425afe84965cfbf5bd2336ee"
+}

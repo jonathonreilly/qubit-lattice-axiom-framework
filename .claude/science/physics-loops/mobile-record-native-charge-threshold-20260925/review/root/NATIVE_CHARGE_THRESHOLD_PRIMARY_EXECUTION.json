@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/native_birth_charge_and_separated_threshold_2026_09_25.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"scope\": \"Fresh exact-source primitive controls of conditional global flat threshold and native birth charges; no new independence, finite-g dynamics or physical calibration.\",\n  \"source_sha256\": \"a1b8d6a9d5b137b0084afd81de0cd3221e7997f61259bb993ce946bb209ca331\",\n  \"runtime_source_sha256\": \"710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447\",\n  \"elapsed_seconds\": 2.9040614580735564,\n  \"exit_code\": 0,\n  \"stderr_bytes\": 0,\n  \"stdout_bytes\": 5372,\n  \"stdout_sha256\": \"10430b23f6793db0a77f7f88b7f19e23e42070d38b3acacf38525c8286b57af4\",\n  \"complete_scientific_artifact\": {\n    \"path\": \"outputs/native_charge_threshold_20260925/CHARGE_THRESHOLD_RESULTS.json\",\n    \"sha256\": \"c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9\",\n    \"bytes\": 175631\n  },\n  \"all_assertions_passed\": true\n}\nTOTAL_PASS: 1\n",
+  "stderr": "",
+  "elapsed_sec": 2.9698009490966797,
+  "timeout_sec": 120,
+  "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/logs/runner-cache/.in-progress/native_birth_charge_and_separated_threshold_2026_09_25.txt"
+}

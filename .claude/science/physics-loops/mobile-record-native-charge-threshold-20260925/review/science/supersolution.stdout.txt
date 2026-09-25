@@ -1,0 +1,149 @@
+{
+  "source_sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+  "helper_sha256": "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0",
+  "runs": [
+    {
+      "radius": 4,
+      "support_types": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "success": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "floating_margin": -0.046614862380696204,
+      "rational_corrections": [
+        "-2989/98081",
+        "1/2447",
+        "-4465/69864",
+        "-13/73639",
+        "-77/61629",
+        "-133/46729"
+      ],
+      "exact_positive_h": true,
+      "exact_max_residual": "10914397283895418240254/234065195224057522369931",
+      "exact_feasible": false
+    },
+    {
+      "radius": 6,
+      "support_types": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "success": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "floating_margin": 0.0006192027757373748,
+      "rational_corrections": [
+        "-2167/67869",
+        "-21/40436",
+        "-12/77519",
+        "-3078/47089",
+        "-151/98598",
+        "-27/60551",
+        "-11/3924",
+        "-59/68236",
+        "-90/82253",
+        "-269/60441",
+        "-101/87802",
+        "-163/83728",
+        "-233/89506"
+      ],
+      "exact_positive_h": true,
+      "exact_max_residual": "-8073532194500935842644729858691291933106190129/13226229856517434673985735982049286542891610588879",
+      "exact_feasible": true
+    }
+  ],
+  "separated_threshold": 12096,
+  "elapsed_seconds": 0.07942966697737575,
+  "scope": "New finite-support supersolution search; all failures retained, not conclusions."
+}

@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-09-25T06:32:07.545168+00:00",
+  "root_personal_derivation": true,
+  "status": "Sealed before independent40 request/disclosure. No independent confirmation.",
+  "final_source_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+  "result_sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf",
+  "complete_standalone_code_and_all_result_groups_read": true,
+  "unwrapped_rows": 37,
+  "periodic_rows": 68,
+  "reciprocity_rows": 43,
+  "kernel_entries": 85,
+  "earlier_personal_grouped_rows_and_short_certificate_all_exact": true,
+  "charge_primitive_outputs": 8448,
+  "complete_personal_proof": "Local primitive definition, supersolution tail, ground-state transform, separated box trials, conservative torus lifting, ordered weak-g then volume limit, full charge fluctuations and resolved/coherent original births.",
+  "failed_routes_preserved": [
+    "Support2 and support4 LP ansatzes infeasible; not no-go proofs.",
+    "Attempt04 had a here-document source not separately saved; final standalone reconstruction has saved source and full output."
+  ],
+  "physical_limit": "No measured calibration or charged-particle identification; no full finite-g binding exclusion, typical birth energy or physical odd-number sector.",
+  "required_repairs": []
+}

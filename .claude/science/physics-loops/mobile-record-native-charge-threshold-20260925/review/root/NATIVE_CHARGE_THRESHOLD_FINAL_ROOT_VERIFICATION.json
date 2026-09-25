@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T08:16:57.742420+00:00",
+  "report_sha256": "191539d0684a81ad60f1867dec2cd236a61486a549da817f116156468deaa67e",
+  "seal_sha256": "03acaccb377f4f7296b33ac797031014f90aa652acdd12ed7178ed3819b7d3dd",
+  "full_report_all_new_verifier_recorder_sealer_source_and_complete_output_read": true,
+  "failed_attempt_source_difference_and_full_stderr_read": true,
+  "scoped_prior_proof_PRE_POST_and_primary_reviews_reused": true,
+  "elapsed_seconds": 0.21000366588123143,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "sealed_members": 172,
+  "original_correspondence_inputs": 155,
+  "observed_files_byte_stat_unchanged": 328,
+  "output_exact_except_timestamp_and_new_seal_count": true,
+  "required_repairs": [],
+  "scope": "Released-source correspondence, not an additional independent derivation or audit.",
+  "limits": [
+    "Global edge does not classify fixed-total-momentum fibers.",
+    "No finite-g energy-window probability, typical birth energy, selected charge packet or measured force.",
+    "Historical attempt04 writer and execution receipt remain missing."
+  ],
+  "read_note": "diff exit 1 means the expected preserved local checker correction, not a failed verification."
+}

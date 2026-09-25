@@ -1,0 +1,86 @@
+
+FILE DECISIVE_RESULTS.json
+scope "Independent exact certificates from own primitive kernel and physical charge paths.\n\nSearched witnesses are disclosed: the supersolution comes from our preceding\nLP search; finite eigenvectors only propose rational Collatz test vectors.\nNo author40 or earlier author runtime/result is read, run, or imported.\n"
+source_sha256 "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770"
+helper_sha256 "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0"
+search_artifact_sha256 "006d787cb859251a42905f29f2a8e85fe763bdb4caf9da7224af6ff5626a860a"
+Q_convention "Q_I=-H4=2 sum unordered pair Grams; all threshold values use this convention."
+single_algebraic_kernel dict keys= ['complete_column', 'cubic_groups', 'row_sum', 'odd_occupancy_is_not_physical']
+supersolution dict keys= ['denominator', 'corrections_numerators', 'positive_minimum_numerator', 'threshold', 'complete_unwrapped_type_rows', 'raw_ordered_primitive_cross_checks', 'maximum_unwrapped_residual_numerator']
+finite_tori list 8 first= [{"L": 6, "n": 108, "types": [[0, 0, 2], [0, 1, 1], [0, 1, 3], [0, 2, 2], [0, 3, 3], [1, 1, 2], [1, 2, 3], [2, 2, 2], [2, 3, 3]], "relative_class_weights": [6, 12, 12, 12, 3, 24, 24, 8, 6], "matrix_rows": [[[0, -1922], [1, 3696], [2, 3472], [3, 1896], [4, 64], [5, 4112], [6, 512], [7, 96]], [[0, 1848], [1, 1864], [2, 1288], [3, 1168], [4, 24], [5, 4872], [6, 352], [7, 96]], [[0, 1736], [1, 1288], [2, -356], [3, 1960], [4, 476], [5, 3912], [6, 2952], [7, 192], [8, 80]], [[0, 948], [1, 1168], [2, 1960], [3, -1536], [4, 848], [5, 3816], [6, 3840], [7, 984], [8, 160]], [[0, 128], [1, 96], [2, 1904], [3, 3392], [4, -2568], [5, 768], [6, 6976], [7, 384], [8, 1016]], [[0, 1028], [1, 2436], [2, 1956], [3, 1908], [4, 96], [5, 808], [6, 2936], [7, 960], [8, 120]], [[0, 128], [1, 176], [2, 1476], [3, 1920], [4, 872], [5, 2936], [6, 1288], [7, 1856], [8, 1444]], [[0, 72], [1, 144], [2, 288], [3, 1476], [4, 144], [5, 2880], [6, 5568], [7, -1164], [8, 2688]], [[2, 160], [3, 320], [4, 508], [5, 480],
+physical_charge_control dict keys= ['L', 'n', 'emitter', 'marked_B', 'partner_set', 'actual_birth_branches', 'uniform_minus_fixed_B_occupation', 'uniform_minus_Gauss_rows', 'normalized_charge_moments', 'flat_color_overlap_squared', 'coherent_diag_equals_equal_resolved_mixture']
+limits "No g-dependent calculation, dynamics, physical charge calibration or author program. Charge diagonal equality does not dephase the coherent output. Flat color projection is not a physical energy spectral weight."
+elapsed_seconds 6.096554375020787
+supersolution row {"separation": [0, 0, 2], "row_sum": 11900, "height_numerator": 968070842, "residual_numerator": -611008, "grouped_column": [[[0, 0, 2], -2372], [[0, 0, 4], 444], [[0, 0, 6], 4], [[0, 1, 1], 3616], [[0, 1, 3], 3488], [[0, 1, 5], 64], [[0, 2, 2], 1776], [[0, 2, 4], 112], [[0, 3, 3], 64], [[1, 1, 2], 3904], [[1, 1, 4], 192], [[1, 2, 3], 512], [[2, 2, 2], 96]], "raw_column_sha256": "4619cf1830d0d1887cf7f4e259a1efaf4e019e2df76155e7938b7db1e2fe6dc2"}
+cross row {"separation": [0, 0, 2], "all_complete_column_entries": 335, "match": true}
+
+FILE UNWRAPPED_PRIMITIVE_COLUMNS.json
+list length 37 first row {"separation": [0, 0, 2], "complete_column": [[[[-4, 0, 0], [0, 0, 2]], 2], [[[-4, 0, 2], [0, 0, 0]], 2], [[[-3, -1, 0], [0, 0, 2]], 8], [[[-3, -1, 2], [0, 0, 0]], 8], [[[-3, 0, -1], [0, 0, 2]], 8], [[[-3, 0, 1], [0, 0, 0]], 8], [[[-3, 0, 1], [0, 0, 2]], 8], [[[-3, 0, 3], [0, 0, 0]], 8], [[[-3, 1, 0], [0, 0, 2]], 8], [[[-3, 1, 2], [0, 0, 0]], 8], [[[-2, -2, 0], [0, 0, 2]], 12], [[[-2, -2, 2], [0, 0, 0]], 12], [[[-2, -1, -1], [0, 0, 2]], 24], [[[-2, -1, 1], [0, 0, 0]], 24], [[[-2, -1, 1], [0, 0, 2]], 24], [[[-2, -1, 3], [0, 0, 0]], 24], [[[-2, 0, -2], [0, 0, 2]], 12], [[[-2, 0, 0], [-2, 0, 2]], 2], [[[-2, 0, 0], [-1, -1, 2]], 2], [[[-2, 0, 0], [-1, 0, 1]], 4], [[[-2, 0, 0], [-1, 0, 3]], 2], [[[-2, 0, 0], [-1, 1, 2]], 2], [[[-2, 0, 0], [0, -1, 1]], 2], [[[-2, 0, 0], [0, 0, 0]], 10], [[[-2, 0, 0], [0, 0, 2]], 216], [[[-2, 0, 0], [0, 1, 1]], 2], [[[-2, 0, 0], [1, 0, 1]], 2], [[[-2, 0, 2], [-1, -1, 0]], 2], [[[-2, 0, 2], [-1, 0, -1]], 2], [[[-2, 0, 2], [-1, 0, 1]], 4], [[[-2, 0, 2], [-1, 1, 0]], 2], [[[-2, 0, 2], [0, -1, 1]], 2], [[[-2, 0, 2], [0, 0, 0]], 216], [[[-2, 0, 2], [0, 0, 2]], 10], [[[-2, 0, 2], [0, 1, 1]], 2], [[[-2, 0, 2], [1, 0, 1]], 2], [[[-2, 0, 4], [0, 0, 0]], 12], [[[-2, 1, -1], [0, 0, 2]], 24], [[[-2, 1, 1], [0, 0, 0]], 24], [[[-2, 1, 1], [0, 0, 2]], 24], [[[-2, 1, 3], [0, 0, 0]], 24], [[[-2, 2, 0], [0, 0, 2]], 12], [[[-2, 2, 2], [0, 0, 0]], 12], [[[-1, -3, 0], [0, 0, 2]], 8], [[[-1, -3, 2], [0, 0, 0]], 8], [[[-1, -2, -1], [0, 0, 2]], 24], [[[-1, -2, 1], [0, 0, 0]], 24], [[[-1, -2, 1], [0, 0, 2]], 24], [[[-1, -2, 3], [0, 0, 0]], 24], [[[-1, -1, -2], [0, 0, 2]], 24], [[[-1, -1, 0], [-1, -1, 2]], 4], [[[-1, -1, 0], [-1, 0, 1]], 6], [[[-1, -1, 0], [-1, 0, 3]], 2], [[[-1, -1, 0], [-1, 1, 2]], 2], [[[-1, -1, 0], [0, -2, 2]], 2], [[[-1, -1, 0], [0, -1, 1]], 6], [[[-1, -1, 0], [0, -1, 3]], 2], [[[-1, -1, 0], [0, 0, 0]], 20], [[[-1, -1, 0], [0, 0, 2]], 416], [[[-1, -1, 0], [0, 1, 1]], 4], [[[-1, -1, 0], [1, -1, 2]], 2], [[[-1, -1, 0], [1, 0, 1]], 4], [[[-1, -1, 2], [-1, 0, -1]], 2], [[[-1, -1, 2], [-1, 0, 1]], 6], [[[-1, -1, 2], [-1, 1, 0]], 2], [[[-1, -1, 2], [0, -2, 0]], 2], [[[-1, -1, 2], [0, -1, -1]], 2], [[[-1, -1, 2], [0, -1, 1]], 6], [[[-1, -1, 2], [0, 0, 0]], 416], [[[-1, -1, 2], [0, 0, 2]], 20], [[[-1, -1, 2], [0, 1, 1]], 4], [[[-1, -1, 2], [1, -1, 0]], 2], [[[-1, -1, 2], [1, 0, 1]], 4], [[[-1, -1, 4], [0, 0, 0]], 24], [[[-1, 0, -3], [0, 0, 2]], 8], [[[-1, 0, -1], [-1, 0, 1]], 6], [[[-1, 0, -1], [-1, 0, 3]], 2], [[[-1, 0, -1], [-1, 1, 2]], 2]
+
+FILE post_sources/author/attempt01/stdout.json
+scope "Exploration of a flat-magnetic occupancy-pair threshold using prior exact root row machinery. No physical charge, finite-coupling binding, infinite-volume or audited result."
+source_sha256 "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab"
+reused_helper_sha256 "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa"
+classes list 13 first= [{"displacement_type": [0, 0, 2], "row_sum": 11900, "correction": -196, "deficit_coefficients": [14468, -3616], "grouped_exact_row": [[[0, 0, 2], -2372], [[0, 0, 4], 444], [[0, 0, 6], 4], [[0, 1, 1], 3616], [[0, 1, 3], 3488], [[0, 1, 5], 64], [[0, 2, 2], 1776], [[0, 2, 4], 112], [[0, 3, 3], 64], [[1, 1, 2], 3904], [[1, 1, 4], 192], [[1, 2, 3], 512], [[2, 2, 2], 96]]}]
+lp_success false
+lp_message "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+proposed_deficits null
+exact_supersolution_residuals null
+all_listed_residuals_nonpositive null
+elapsed_seconds 0.19363345787860453
+
+FILE post_sources/author/attempt02/RESULT.json
+scope "Personal exact flat occupancy exploration. No physical charge identification, full finite-g binding or infinite-volume theorem inferred from LP."
+source_sha256 "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d"
+row_source_sha256 "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab"
+radius 4
+variables 6
+inequalities 23
+rows list 23 first= [{"displacement_type": [0, 0, 2], "row_sum": 11900, "correction": -196, "grouped_exact_row": [[[0, 0, 2], -2372], [[0, 0, 4], 444], [[0, 0, 6], 4], [[0, 1, 1], 3616], [[0, 1, 3], 3488], [[0, 1, 5], 64], [[0, 2, 2], 1776], [[0, 2, 4], 112], [[0, 3, 3], 64], [[1, 1, 2], 3904], [[1, 1, 4], 192], [[1, 2, 3], 512], [[2, 2, 2], 96]], "deficit_coefficients": [14468, -444, -3616, -3488, -1776, -3904]}]
+lp_success false
+lp_message "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+exact_certificate null
+elapsed_seconds 0.38324895803816617
+
+FILE post_sources/author/attempt03/RESULT.json
+scope "Personal exact flat occupancy exploration. No physical charge identification, full finite-g binding or infinite-volume theorem inferred from LP."
+source_sha256 "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d"
+row_source_sha256 "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab"
+radius 6
+variables 13
+inequalities 37
+rows list 37 first= [{"displacement_type": [0, 0, 2], "row_sum": 11900, "correction": -196, "grouped_exact_row": [[[0, 0, 2], -2372], [[0, 0, 4], 444], [[0, 0, 6], 4], [[0, 1, 1], 3616], [[0, 1, 3], 3488], [[0, 1, 5], 64], [[0, 2, 2], 1776], [[0, 2, 4], 112], [[0, 3, 3], 64], [[1, 1, 2], 3904], [[1, 1, 4], 192], [[1, 2, 3], 512], [[2, 2, 2], 96]], "deficit_coefficients": [14468, -444, -4, -3616, -3488, -64, -1776, -112, -64, -3904, -192, -512, -96]}]
+lp_success true
+lp_message "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+exact_certificate dict keys= ['deficits', 'residuals', 'all_deficits_in_zero_one', 'all_residuals_nonpositive', 'chosen_active_constraints']
+elapsed_seconds 0.5572342500090599
+
+FILE post_sources/author/attempt04/RESULT.json
+at "2026-09-25T06:11:47.645873+00:00"
+source_rows_sha256 "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da"
+purpose "Propose a short exact rational certificate; floating LP is proposal only. All conclusions require exact residual and infinite/fixed-torus argument."
+lp_success true
+message "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+denominator 1000000000
+deficit_numerators list 13 first= [{"type": [0, 0, 2], "numerator": 30355481}]
+residuals list 37 first= [{"type": [0, 0, 2], "numerator_at_common_denominator": -10002520}]
+all_exact_residuals_nonpositive true
+all_deficits_in_zero_one true
+
+FILE post_sources/author/attempt05/RESULT.json
+scope "Personal exact flat occupancy supersolution and charge/color controls. Not independent review, a finite-g binding theorem, a physical projector, charge calibration or particle identification."
+source_sha256 "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447"
+imported_scientific_helpers list 0 first= []
+denominator 1000000000
+deficits list 13 first= [[[0, 0, 2], 30355481]]
+unwrapped_rows list 37 first= [{"type": [0, 0, 2], "active_A_pairs": 164, "ordered_out_return_paths": 11798, "row_sum": 11900, "target_count": 335, "trial_residual_numerator": -10002520, "grouped_integer_row": [[[0, 0, 2], -2372], [[0, 0, 4], 444], [[0, 0, 6], 4], [[0, 1, 1], 3616], [[0, 1, 3], 3488], [[0, 1, 5], 64], [[0, 2, 2], 1776], [[0, 2, 4], 112], [[0, 3, 3], 64], [[1, 1, 2], 3904], [[1, 1, 4], 192], [[1, 2, 3], 512], [[2, 2, 2], 96]]}]
+near_total_row_defect -1548
+periodic_controls list 68 first= [{"side": 24, "type": [0, 0, 2], "origin": [1, 0, 0], "row_sum": 11900, "trial_residual_numerator": -10002520, "target_count": 335, "near_full_grouped_row_equal_unwrapped": true}]
+reciprocity_controls list 43 first= [{"input_type": [0, 0, 2], "target": [[-3, 0, 0], [1, 0, 2]], "both_coefficients": 2}]
+auxiliary_one_occupancy_kernel list 85 first= [[[-4, 0, 0], 2]]
+auxiliary_kernel_row_sum 6048
+auxiliary_kernel_second_moment list 3 first= [[7392, 0, 0]]
+auxiliary_ordered_paths 6339
+far_pair_equals_two_auxiliary_contributions true
+charge_controls list 3 first= [{"side": 2, "A_sites": 4, "occupied_sites_after_one_birth": 6, "uniform_minus_mean_A_excitation": "-1/3", "uniform_minus_mean_occupied_B_charge": "2/3", "uniform_minus_probability_minus_on_B": "1/3", "resolved_first_birth_color_line_weight": "1/6", "flat_coherent_first_birth_color_line_weight": "1/3", "counts": {"resolved_primitive_outputs": 48, "minus_on_A": 24, "resolved_edge_sign_marks": 24, "minus_on_B": 24, "flat_coherent_edge_controls": 12}, "test_charge_rows": [{"test": "total", "charge_mean": "0", "charge_variance": "0"}, {"test": "one_A", "charge_mean": "-1/3", "charge_variance": "5/9"}, {"test": "one_B", "charge_mean": "2/3", "charge_variance": "5/9"}, {"test": "both_B", "charge_mean": "4/3", "charge_variance": "8/9"}, {"test": "coordinate", "charge_mean": "-2/3", "charge_variance": "161/9"}]}]
+elapsed_seconds 3.0906439169775695

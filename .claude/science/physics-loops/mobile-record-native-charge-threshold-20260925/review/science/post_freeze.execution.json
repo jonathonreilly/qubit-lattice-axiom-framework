@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-09-25T07:18:54.884025+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.py"
+  ],
+  "source_sha256": "02ab996d7f8c1971e30beec6641a44cd4d224e872202a3e31ea3ff0837a2e380",
+  "recorder_sha256": "9fcb0c8f3b209a535b929e12129ef4d90f03321c61fb17aa6eb379831593b152",
+  "elapsed_seconds": 0.06253683404065669,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "post_freeze.stdout.txt",
+      "bytes": 200,
+      "sha256": "fc6424d3981df92337888398f9c95499c7b717cabe991579d46efae523f62a43"
+    },
+    "stderr.txt": {
+      "path": "post_freeze.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

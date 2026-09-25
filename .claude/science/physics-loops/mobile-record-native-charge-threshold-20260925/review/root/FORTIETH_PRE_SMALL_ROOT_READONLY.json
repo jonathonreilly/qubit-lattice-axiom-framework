@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "L": 2,
+      "q0": 108,
+      "single_row": 42,
+      "exact_pair_interval": [
+        "-10",
+        "-10"
+      ]
+    },
+    {
+      "L": 4,
+      "q0": 17280,
+      "single_row": 5160,
+      "exact_pair_interval": [
+        "8000605572249/781250000",
+        "2510070995367/245105567"
+      ]
+    }
+  ],
+  "all_checks_completed": true,
+  "source_imports_or_writes": false
+}

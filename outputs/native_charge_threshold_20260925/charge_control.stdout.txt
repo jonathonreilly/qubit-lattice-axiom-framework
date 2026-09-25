@@ -1,0 +1,268 @@
+{
+  "scope": "Personal exact flat occupancy supersolution and charge/color controls. Not independent review, a finite-g binding theorem, a physical projector, charge calibration or particle identification.",
+  "source_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+  "imported_scientific_helpers": [],
+  "denominator": 1000000000,
+  "deficits": [
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      30355481
+    ],
+    [
+      [
+        0,
+        0,
+        4
+      ],
+      0
+    ],
+    [
+      [
+        0,
+        0,
+        6
+      ],
+      82543
+    ],
+    [
+      [
+        0,
+        1,
+        1
+      ],
+      62454728
+    ],
+    [
+      [
+        0,
+        1,
+        3
+      ],
+      592565
+    ],
+    [
+      [
+        0,
+        1,
+        5
+      ],
+      257096
+    ],
+    [
+      [
+        0,
+        2,
+        2
+      ],
+      1564788
+    ],
+    [
+      [
+        0,
+        2,
+        4
+      ],
+      501938
+    ],
+    [
+      [
+        0,
+        3,
+        3
+      ],
+      0
+    ],
+    [
+      [
+        1,
+        1,
+        2
+      ],
+      2988879
+    ],
+    [
+      [
+        1,
+        1,
+        4
+      ],
+      733404
+    ],
+    [
+      [
+        1,
+        2,
+        3
+      ],
+      1227493
+    ],
+    [
+      [
+        2,
+        2,
+        2
+      ],
+      0
+    ]
+  ],
+  "near_total_row_defect": -1548,
+  "auxiliary_kernel_row_sum": 6048,
+  "auxiliary_kernel_second_moment": [
+    [
+      7392,
+      0,
+      0
+    ],
+    [
+      0,
+      7392,
+      0
+    ],
+    [
+      0,
+      0,
+      7392
+    ]
+  ],
+  "auxiliary_ordered_paths": 6339,
+  "far_pair_equals_two_auxiliary_contributions": true,
+  "charge_controls": [
+    {
+      "side": 2,
+      "A_sites": 4,
+      "occupied_sites_after_one_birth": 6,
+      "uniform_minus_mean_A_excitation": "-1/3",
+      "uniform_minus_mean_occupied_B_charge": "2/3",
+      "uniform_minus_probability_minus_on_B": "1/3",
+      "resolved_first_birth_color_line_weight": "1/6",
+      "flat_coherent_first_birth_color_line_weight": "1/3",
+      "counts": {
+        "resolved_primitive_outputs": 48,
+        "minus_on_A": 24,
+        "resolved_edge_sign_marks": 24,
+        "minus_on_B": 24,
+        "flat_coherent_edge_controls": 12
+      },
+      "test_charge_rows": [
+        {
+          "test": "total",
+          "charge_mean": "0",
+          "charge_variance": "0"
+        },
+        {
+          "test": "one_A",
+          "charge_mean": "-1/3",
+          "charge_variance": "5/9"
+        },
+        {
+          "test": "one_B",
+          "charge_mean": "2/3",
+          "charge_variance": "5/9"
+        },
+        {
+          "test": "both_B",
+          "charge_mean": "4/3",
+          "charge_variance": "8/9"
+        },
+        {
+          "test": "coordinate",
+          "charge_mean": "-2/3",
+          "charge_variance": "161/9"
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "A_sites": 32,
+      "occupied_sites_after_one_birth": 34,
+      "uniform_minus_mean_A_excitation": "-1/17",
+      "uniform_minus_mean_occupied_B_charge": "16/17",
+      "uniform_minus_probability_minus_on_B": "1/17",
+      "resolved_first_birth_color_line_weight": "1/34",
+      "flat_coherent_first_birth_color_line_weight": "1/17",
+      "counts": {
+        "resolved_primitive_outputs": 1920,
+        "minus_on_A": 960,
+        "resolved_edge_sign_marks": 384,
+        "minus_on_B": 960,
+        "flat_coherent_edge_controls": 192
+      },
+      "test_charge_rows": [
+        {
+          "test": "total",
+          "charge_mean": "0",
+          "charge_variance": "0"
+        },
+        {
+          "test": "one_A",
+          "charge_mean": "-1/17",
+          "charge_variance": "33/289"
+        },
+        {
+          "test": "one_B",
+          "charge_mean": "16/17",
+          "charge_variance": "33/289"
+        },
+        {
+          "test": "both_B",
+          "charge_mean": "32/17",
+          "charge_variance": "64/289"
+        },
+        {
+          "test": "coordinate",
+          "charge_mean": "96/17",
+          "charge_variance": "20228/289"
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "A_sites": 108,
+      "occupied_sites_after_one_birth": 110,
+      "uniform_minus_mean_A_excitation": "-1/55",
+      "uniform_minus_mean_occupied_B_charge": "54/55",
+      "uniform_minus_probability_minus_on_B": "1/55",
+      "resolved_first_birth_color_line_weight": "1/110",
+      "flat_coherent_first_birth_color_line_weight": "1/55",
+      "counts": {
+        "resolved_primitive_outputs": 6480,
+        "minus_on_A": 3240,
+        "resolved_edge_sign_marks": 1296,
+        "minus_on_B": 3240,
+        "flat_coherent_edge_controls": 648
+      },
+      "test_charge_rows": [
+        {
+          "test": "total",
+          "charge_mean": "0",
+          "charge_variance": "0"
+        },
+        {
+          "test": "one_A",
+          "charge_mean": "-1/55",
+          "charge_variance": "109/3025"
+        },
+        {
+          "test": "one_B",
+          "charge_mean": "54/55",
+          "charge_variance": "109/3025"
+        },
+        {
+          "test": "both_B",
+          "charge_mean": "108/55",
+          "charge_variance": "216/3025"
+        },
+        {
+          "test": "coordinate",
+          "charge_mean": "108/55",
+          "charge_variance": "487296/3025"
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 2.8379909999202937
+}

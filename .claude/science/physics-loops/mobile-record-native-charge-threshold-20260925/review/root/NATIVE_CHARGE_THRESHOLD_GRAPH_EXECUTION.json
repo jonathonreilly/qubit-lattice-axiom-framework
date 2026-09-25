@@ -1,0 +1,13 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "docs/audit/scripts/build_graph.py"
+    ],
+    "at": "2026-09-25T07:53:18.036504+00:00",
+    "elapsed_seconds": 0.02006612508557737,
+    "exit_code": 2,
+    "stdout_bytes": 0,
+    "stderr_bytes": 314
+  }
+]

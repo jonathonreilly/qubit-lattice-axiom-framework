@@ -1,0 +1,2489 @@
+{
+  "captured_utc": "2026-09-25T08:01:44.492391+00:00",
+  "scope": "Released-source publication40 correspondence; newly exposed reviewer; no scientific source executed or imported.",
+  "originals_modified": false,
+  "stat_scope": "Mode, device, inode, size, mtime_ns, ctime_ns; access times are not changed explicitly or used as content evidence.",
+  "member_count": 155,
+  "members": [
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/.claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/runtime/two_record_threshold_and_charge_controls.py",
+      "expected_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/.claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/runtime/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461895248,
+        "size": 10329,
+        "mtime_ns": 1790322672439992466,
+        "ctime_ns": 1790322672439992466
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461828997,
+        "size": 16764,
+        "mtime_ns": 1790322479797977387,
+        "ctime_ns": 1790322479797977387
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461829978,
+        "size": 14902,
+        "mtime_ns": 1790322479914388808,
+        "ctime_ns": 1790322479914388808
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461829984,
+        "size": 10953,
+        "mtime_ns": 1790322479914984473,
+        "ctime_ns": 1790322479914984473
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "expected_sha256": "fd0f9f7c23db2aae9e9e13be9f14d776c9f10153ca886002815d5aff22ddf743",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "fd0f9f7c23db2aae9e9e13be9f14d776c9f10153ca886002815d5aff22ddf743",
+      "bytes": 22053,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461895245,
+        "size": 22053,
+        "mtime_ns": 1790322672439776925,
+        "ctime_ns": 1790322672439776925
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "expected_sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461830172,
+        "size": 57438,
+        "mtime_ns": 1790322479938435556,
+        "ctime_ns": 1790322479938435556
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/logs/runner-cache/native_birth_charge_and_separated_threshold_2026_09_25.txt",
+      "expected_sha256": "051cc11634e62fadee58af9a497b8fe0420a1370cb4c28d7c7afeffbe2041d73",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/logs/runner-cache/native_birth_charge_and_separated_threshold_2026_09_25.txt",
+      "sha256": "051cc11634e62fadee58af9a497b8fe0420a1370cb4c28d7c7afeffbe2041d73",
+      "bytes": 1203,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903583,
+        "size": 1203,
+        "mtime_ns": 1790322709845198569,
+        "ctime_ns": 1790322709845198569
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/outputs/native_charge_threshold_20260925/CHARGE_THRESHOLD_RESULTS.json",
+      "expected_sha256": "c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/outputs/native_charge_threshold_20260925/CHARGE_THRESHOLD_RESULTS.json",
+      "sha256": "c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9",
+      "bytes": 175631,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903581,
+        "size": 175631,
+        "mtime_ns": 1790322709833696026,
+        "ctime_ns": 1790322709833696026
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/outputs/native_charge_threshold_20260925/NATIVE_CHARGE_THRESHOLD_PUBLIC_RESULTS.json",
+      "expected_sha256": "fa4c0a7f47cede17ff9e8b35a420dedc6f853eebf03c423ca82671d4bd899d35",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/outputs/native_charge_threshold_20260925/NATIVE_CHARGE_THRESHOLD_PUBLIC_RESULTS.json",
+      "sha256": "fa4c0a7f47cede17ff9e8b35a420dedc6f853eebf03c423ca82671d4bd899d35",
+      "bytes": 817,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903582,
+        "size": 817,
+        "mtime_ns": 1790322709834360899,
+        "ctime_ns": 1790322709834360899
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/outputs/native_charge_threshold_20260925/charge_control.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/outputs/native_charge_threshold_20260925/charge_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903580,
+        "size": 0,
+        "mtime_ns": 1790322709832514781,
+        "ctime_ns": 1790322709832545947
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/outputs/native_charge_threshold_20260925/charge_control.stdout.txt",
+      "expected_sha256": "10430b23f6793db0a77f7f88b7f19e23e42070d38b3acacf38525c8286b57af4",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/outputs/native_charge_threshold_20260925/charge_control.stdout.txt",
+      "sha256": "10430b23f6793db0a77f7f88b7f19e23e42070d38b3acacf38525c8286b57af4",
+      "bytes": 5372,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903579,
+        "size": 5372,
+        "mtime_ns": 1790322709832434531,
+        "ctime_ns": 1790322709832434531
+      }
+    },
+    {
+      "role": "publication",
+      "snapshot": "frozen/publication/scripts/native_birth_charge_and_separated_threshold_2026_09_25.py",
+      "expected_sha256": "a1b8d6a9d5b137b0084afd81de0cd3221e7997f61259bb993ce946bb209ca331",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/scripts/native_birth_charge_and_separated_threshold_2026_09_25.py",
+      "sha256": "a1b8d6a9d5b137b0084afd81de0cd3221e7997f61259bb993ce946bb209ca331",
+      "bytes": 3100,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461895249,
+        "size": 3100,
+        "mtime_ns": 1790322672440103382,
+        "ctime_ns": 1790322672440103382
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/NATIVE_CHARGE_THRESHOLD_FROZEN_SOURCES.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_FROZEN_SOURCES.json",
+      "sha256": "060e3dbc6faf998cc8378d2067ca2f3b326bb2e5331cd0078897563cd790abb1",
+      "bytes": 5310,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903585,
+        "size": 5310,
+        "mtime_ns": 1790322709857713191,
+        "ctime_ns": 1790322709857713191
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/NATIVE_CHARGE_THRESHOLD_PUBLICATION_WORKING_SOURCES.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "79426979f4412219318d8c3f07d6dd2b6f414f34a9909f6b6879fc44af0106b4",
+      "bytes": 3341,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461895250,
+        "size": 3341,
+        "mtime_ns": 1790322672440407256,
+        "ctime_ns": 1790322672440407256
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/NATIVE_CHARGE_THRESHOLD_PRIMARY_EXECUTION.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PRIMARY_EXECUTION.json",
+      "sha256": "0f9c1c4b6313b377f0fac8b21e871765c97062ff31e11d70261c1e31bb06df37",
+      "bytes": 1303,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903584,
+        "size": 1303,
+        "mtime_ns": 1790322709845859108,
+        "ctime_ns": 1790322709845859108
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/NATIVE_CHARGE_THRESHOLD_PRIMARY_ROOT_REVIEW.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PRIMARY_ROOT_REVIEW.json",
+      "sha256": "9724d12a55d34977a94b080098b9ecfaef5453faa15232d996ad3355fdbf4278",
+      "bytes": 643,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461903586,
+        "size": 643,
+        "mtime_ns": 1790322709858105357,
+        "ctime_ns": 1790322709858105357
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/build_native_charge_threshold_publication.py",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/build_native_charge_threshold_publication.py",
+      "sha256": "37a0fb94ff4ec8b2b22f21a6577cf20edde567bc6c1e913947351b26db912759",
+      "bytes": 11024,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461892328,
+        "size": 11024,
+        "mtime_ns": 1790322671616515175,
+        "ctime_ns": 1790322671616515175
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/FORTIETH_PRE_ROOT_REVIEW.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_ROOT_REVIEW.json",
+      "sha256": "4ccf03db0eff99a37d454908bbd2790c0b02959626912918b7d1b4605a094bca",
+      "bytes": 2551,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461628728,
+        "size": 2551,
+        "mtime_ns": 1790320426529659830,
+        "ctime_ns": 1790320426529659830
+      }
+    },
+    {
+      "role": "process",
+      "snapshot": "frozen/process/FORTIETH_POST_ROOT_REVIEW.json",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_POST_ROOT_REVIEW.json",
+      "sha256": "d7349f768ea515190e6db9dadb6499aee9cc17b7a9379fb2ab9171282c0482d3",
+      "bytes": 1899,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461813274,
+        "size": 1899,
+        "mtime_ns": 1790322416944263861,
+        "ctime_ns": 1790322416944263861
+      }
+    },
+    {
+      "role": "tooling",
+      "snapshot": "frozen/tooling/runner_cache.py",
+      "expected_sha256": null,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941,
+      "original_stat": {
+        "mode": 33188,
+        "dev": 16777231,
+        "ino": 461891277,
+        "size": 24941,
+        "mtime_ns": 1790322487875107563,
+        "ctime_ns": 1790322487875107563
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/AUTHOR_SEAL.json",
+      "expected_sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/AUTHOR_SEAL.json",
+      "sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a",
+      "bytes": 4806,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541786,
+        "size": 4806,
+        "mtime_ns": 1790317927551840347,
+        "ctime_ns": 1790317927552160725
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "expected_sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5",
+      "bytes": 16258,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541587,
+        "size": 16258,
+        "mtime_ns": 1790317859159246970,
+        "ctime_ns": 1790317927551877139
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/ROOT_REVIEW.json",
+      "expected_sha256": "0aea7a82d8e2b1dcda078d0b21832c5176aa1d168de077a7b50d7f0c769913ae",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/ROOT_REVIEW.json",
+      "sha256": "0aea7a82d8e2b1dcda078d0b21832c5176aa1d168de077a7b50d7f0c769913ae",
+      "bytes": 1315,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541785,
+        "size": 1315,
+        "mtime_ns": 1790317927545526109,
+        "ctime_ns": 1790317927551892889
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/SOURCE_PINS.json",
+      "expected_sha256": "be8ba0122571991290d1095b7fee18f633910c176781c8d6c68c8190e03ca5f1",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/SOURCE_PINS.json",
+      "sha256": "be8ba0122571991290d1095b7fee18f633910c176781c8d6c68c8190e03ca5f1",
+      "bytes": 2681,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541784,
+        "size": 2681,
+        "mtime_ns": 1790317927542851120,
+        "ctime_ns": 1790317927551903139
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/WORKING_DERIVATION.md",
+      "expected_sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/WORKING_DERIVATION.md",
+      "sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c",
+      "bytes": 7724,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461449901,
+        "size": 7724,
+        "mtime_ns": 1790316815779732775,
+        "ctime_ns": 1790317927551913306
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt01/EXECUTION.json",
+      "expected_sha256": "a4965aab4eaf4385b0ccf39a980e0d46b71631490b347a1a2f7164b07d3a8097",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/EXECUTION.json",
+      "sha256": "a4965aab4eaf4385b0ccf39a980e0d46b71631490b347a1a2f7164b07d3a8097",
+      "bytes": 239,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460729982,
+        "size": 239,
+        "mtime_ns": 1790316282421012595,
+        "ctime_ns": 1790317927551923639
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt01/explore_two_record_threshold.py",
+      "expected_sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "bytes": 3518,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460729977,
+        "size": 3518,
+        "mtime_ns": 1790316281318556438,
+        "ctime_ns": 1790317927551934306
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt01/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460729981,
+        "size": 0,
+        "mtime_ns": 1790316282420505637,
+        "ctime_ns": 1790317927551943389
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt01/stdout.json",
+      "expected_sha256": "16c6e662dc77bac86cd8166cb84f24426f91ca88e51d3337f6dc6bd8ff167af6",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/stdout.json",
+      "sha256": "16c6e662dc77bac86cd8166cb84f24426f91ca88e51d3337f6dc6bd8ff167af6",
+      "bytes": 34120,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460729980,
+        "size": 34120,
+        "mtime_ns": 1790316282420430012,
+        "ctime_ns": 1790317927551952806
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt02/EXECUTION.json",
+      "expected_sha256": "1707d05ad695845cb9adea7b6038df38d38a61ef1643b775bc6c40b4f4bccf81",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/EXECUTION.json",
+      "sha256": "1707d05ad695845cb9adea7b6038df38d38a61ef1643b775bc6c40b4f4bccf81",
+      "bytes": 237,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730381,
+        "size": 237,
+        "mtime_ns": 1790316367488550075,
+        "ctime_ns": 1790317927551965473
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt02/RESULT.json",
+      "expected_sha256": "3561f6d74808b441b188cdc1b92c7b31bdb65442f816a8fdde225705efbf2d93",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/RESULT.json",
+      "sha256": "3561f6d74808b441b188cdc1b92c7b31bdb65442f816a8fdde225705efbf2d93",
+      "bytes": 72873,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730378,
+        "size": 72873,
+        "mtime_ns": 1790316367408177047,
+        "ctime_ns": 1790317927551976598
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt02/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730370,
+        "size": 3444,
+        "mtime_ns": 1790316365752543522,
+        "ctime_ns": 1790317927551987848
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt02/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730380,
+        "size": 0,
+        "mtime_ns": 1790316367488029617,
+        "ctime_ns": 1790317927551997890
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt02/stdout.log",
+      "expected_sha256": "2a616280774db8c349679ee8c38b524d7998fd19b5a70fa478a42cee188854b5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/stdout.log",
+      "sha256": "2a616280774db8c349679ee8c38b524d7998fd19b5a70fa478a42cee188854b5",
+      "bytes": 603,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730379,
+        "size": 603,
+        "mtime_ns": 1790316367487979117,
+        "ctime_ns": 1790317927552008474
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt03/EXECUTION.json",
+      "expected_sha256": "8d9d63aff418ea9e49b9138a29c38f2525fac8dc95af8ead3b98e67c7679a827",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/EXECUTION.json",
+      "sha256": "8d9d63aff418ea9e49b9138a29c38f2525fac8dc95af8ead3b98e67c7679a827",
+      "bytes": 238,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460910282,
+        "size": 238,
+        "mtime_ns": 1790316486966773916,
+        "ctime_ns": 1790317927552017932
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt03/RESULT.json",
+      "expected_sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/RESULT.json",
+      "sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da",
+      "bytes": 145183,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460910279,
+        "size": 145183,
+        "mtime_ns": 1790316486902012085,
+        "ctime_ns": 1790317927552027474
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt03/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460910277,
+        "size": 3444,
+        "mtime_ns": 1790316485266248463,
+        "ctime_ns": 1790317927552038640
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt03/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460910281,
+        "size": 0,
+        "mtime_ns": 1790316486966331874,
+        "ctime_ns": 1790317927552049432
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt03/stdout.log",
+      "expected_sha256": "0eaba9f81f23206342cc5d9061c390cd2b9b0b930100e5a8562709ec16de44e8",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/stdout.log",
+      "sha256": "0eaba9f81f23206342cc5d9061c390cd2b9b0b930100e5a8562709ec16de44e8",
+      "bytes": 8511,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460910280,
+        "size": 8511,
+        "mtime_ns": 1790316486966277249,
+        "ctime_ns": 1790317927552059641
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt04/RESULT.json",
+      "expected_sha256": "cdee15c6500fe0a85dc7d72442c07fa0cc46a7525e2931029edeb5079dc374ce",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt04/RESULT.json",
+      "sha256": "cdee15c6500fe0a85dc7d72442c07fa0cc46a7525e2931029edeb5079dc374ce",
+      "bytes": 6302,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461270051,
+        "size": 6302,
+        "mtime_ns": 1790316707646875947,
+        "ctime_ns": 1790317927552069266
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt05/EXECUTION.json",
+      "expected_sha256": "cb069e7973f31a13bec9ea2503101f17c4bc0fd876c3492249420daac092d7f3",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/EXECUTION.json",
+      "sha256": "cb069e7973f31a13bec9ea2503101f17c4bc0fd876c3492249420daac092d7f3",
+      "bytes": 739,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541241,
+        "size": 739,
+        "mtime_ns": 1790317565013366906,
+        "ctime_ns": 1790317927552079766
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt05/RESULT.json",
+      "expected_sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/RESULT.json",
+      "sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf",
+      "bytes": 175631,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541238,
+        "size": 175631,
+        "mtime_ns": 1790317565005229023,
+        "ctime_ns": 1790317927552088891
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt05/stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541240,
+        "size": 0,
+        "mtime_ns": 1790317565012033016,
+        "ctime_ns": 1790317927552098141
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt05/stdout.txt",
+      "expected_sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/stdout.txt",
+      "sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac",
+      "bytes": 5372,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541239,
+        "size": 5372,
+        "mtime_ns": 1790317565011970682,
+        "ctime_ns": 1790317927552108933
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/attempt05/two_record_threshold_and_charge_controls.py",
+      "expected_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541235,
+        "size": 10329,
+        "mtime_ns": 1790317561844988932,
+        "ctime_ns": 1790317927552118433
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/explore_two_record_threshold.py",
+      "expected_sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "bytes": 3518,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460729974,
+        "size": 3518,
+        "mtime_ns": 1790316281196214231,
+        "ctime_ns": 1790317927552127517
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 460730366,
+        "size": 3444,
+        "mtime_ns": 1790316365636367977,
+        "ctime_ns": 1790317927552136600
+      }
+    },
+    {
+      "role": "author",
+      "snapshot": "frozen/author/two_record_threshold_and_charge_controls.py",
+      "expected_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461541232,
+        "size": 10329,
+        "mtime_ns": 1790317561660650268,
+        "ctime_ns": 1790317927552146058
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/PRE_SEAL.json",
+      "expected_sha256": "c8287bdc28f8c38368b4130c306c285270037e4b8b4e54614d97c25c14869e07",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PRE_SEAL.json",
+      "sha256": "c8287bdc28f8c38368b4130c306c285270037e4b8b4e54614d97c25c14869e07",
+      "bytes": 9740,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627940,
+        "size": 9740,
+        "mtime_ns": 1790319881793377784,
+        "ctime_ns": 1790319881797611791
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/CHARGE_COHERENCE_RESULTS.json",
+      "expected_sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/CHARGE_COHERENCE_RESULTS.json",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "bytes": 3820,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625346,
+        "size": 3820,
+        "mtime_ns": 1790319103941474025,
+        "ctime_ns": 1790319881793436575
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/CHECKPOINT.md",
+      "expected_sha256": "090d9f16692b7075e70afb8d0a42392695e7710193eb7ba44e2c8e1e8249f3e8",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/CHECKPOINT.md",
+      "sha256": "090d9f16692b7075e70afb8d0a42392695e7710193eb7ba44e2c8e1e8249f3e8",
+      "bytes": 1839,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627563,
+        "size": 1839,
+        "mtime_ns": 1790319686099486230,
+        "ctime_ns": 1790319881793476741
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/DECISIVE_RESULTS.json",
+      "expected_sha256": "b23f0cdf4cc348a7530623e071a678e7a319435a63aa601bb5ea0cfd07600e90",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/DECISIVE_RESULTS.json",
+      "sha256": "b23f0cdf4cc348a7530623e071a678e7a319435a63aa601bb5ea0cfd07600e90",
+      "bytes": 1491980,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623758,
+        "size": 1491980,
+        "mtime_ns": 1790318723824510516,
+        "ctime_ns": 1790319881794353776
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/FINAL_BINDINGS.json",
+      "expected_sha256": "51d593003192b4190aaa6e24ca7a6d73cb203ae9c33d5ffe154bc73964d61a6a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/FINAL_BINDINGS.json",
+      "sha256": "51d593003192b4190aaa6e24ca7a6d73cb203ae9c33d5ffe154bc73964d61a6a",
+      "bytes": 5412,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627939,
+        "size": 5412,
+        "mtime_ns": 1790319881786220884,
+        "ctime_ns": 1790319881794419150
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/PRE.md",
+      "expected_sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PRE.md",
+      "sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+      "bytes": 23861,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627287,
+        "size": 23861,
+        "mtime_ns": 1790319859792725380,
+        "ctime_ns": 1790319881794466442
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/PROCESS_LOG.md",
+      "expected_sha256": "df6697dbe964e92faa94cfb740994aa641652b7aa301ab4c24be37a48844663b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PROCESS_LOG.md",
+      "sha256": "df6697dbe964e92faa94cfb740994aa641652b7aa301ab4c24be37a48844663b",
+      "bytes": 5008,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627562,
+        "size": 5008,
+        "mtime_ns": 1790319686099339020,
+        "ctime_ns": 1790319881794504941
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/SMALL_PERIOD_RESULTS.json",
+      "expected_sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SMALL_PERIOD_RESULTS.json",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "bytes": 8528,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625979,
+        "size": 8528,
+        "mtime_ns": 1790319205431610029,
+        "ctime_ns": 1790319881794542233
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/SOURCE_PINS.json",
+      "expected_sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SOURCE_PINS.json",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "bytes": 4405,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620410,
+        "size": 4405,
+        "mtime_ns": 1790318242538478605,
+        "ctime_ns": 1790319881794575899
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/SUPERSOLUTION_EXPLORATION.json",
+      "expected_sha256": "006d787cb859251a42905f29f2a8e85fe763bdb4caf9da7224af6ff5626a860a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SUPERSOLUTION_EXPLORATION.json",
+      "sha256": "006d787cb859251a42905f29f2a8e85fe763bdb4caf9da7224af6ff5626a860a",
+      "bytes": 26782,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621050,
+        "size": 26782,
+        "mtime_ns": 1790318410631431723,
+        "ctime_ns": 1790319881794625732
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/THRESHOLD_EXPLORATION.json",
+      "expected_sha256": "f7cbce371b51a1deed335e39a21ea534902a3ee5f94d539a600ccc9214eee069",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/THRESHOLD_EXPLORATION.json",
+      "sha256": "f7cbce371b51a1deed335e39a21ea534902a3ee5f94d539a600ccc9214eee069",
+      "bytes": 621592,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620421,
+        "size": 621592,
+        "mtime_ns": 1790318248917890592,
+        "ctime_ns": 1790319881794972396
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/UNWRAPPED_PRIMITIVE_COLUMNS.json",
+      "expected_sha256": "4b987e221fadd22e0066ed7a034ae80bd731376bbe6f57d23bede3b03dfd7ab9",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/UNWRAPPED_PRIMITIVE_COLUMNS.json",
+      "sha256": "4b987e221fadd22e0066ed7a034ae80bd731376bbe6f57d23bede3b03dfd7ab9",
+      "bytes": 1286338,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623759,
+        "size": 1286338,
+        "mtime_ns": 1790318723863321853,
+        "ctime_ns": 1790319881795580016
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/__pycache__/primitive_kernel.cpython-313.pyc",
+      "expected_sha256": "6efe3c1ce6553fec7f540ff75ff38dfd0fde62f4f3fe0d28d4340988e0e1322d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/__pycache__/primitive_kernel.cpython-313.pyc",
+      "sha256": "6efe3c1ce6553fec7f540ff75ff38dfd0fde62f4f3fe0d28d4340988e0e1322d",
+      "bytes": 8167,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621049,
+        "size": 8167,
+        "mtime_ns": 1790318410550889137,
+        "ctime_ns": 1790319881795626307
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/charge_coherence.execution.json",
+      "expected_sha256": "be65baa4cf6e400058cb76469e10938289ff5519f7c0887474f81a63d44190f5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.execution.json",
+      "sha256": "be65baa4cf6e400058cb76469e10938289ff5519f7c0887474f81a63d44190f5",
+      "bytes": 632,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625349,
+        "size": 632,
+        "mtime_ns": 1790319103946479340,
+        "ctime_ns": 1790319881795661515
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/charge_coherence.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625348,
+        "size": 0,
+        "mtime_ns": 1790319103946279004,
+        "ctime_ns": 1790319881795699056
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/charge_coherence.stdout.txt",
+      "expected_sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.stdout.txt",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "bytes": 3820,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625347,
+        "size": 3820,
+        "mtime_ns": 1790319103946239045,
+        "ctime_ns": 1790319881795733098
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/charge_coherence_control.py",
+      "expected_sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence_control.py",
+      "sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a",
+      "bytes": 2695,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625180,
+        "size": 2695,
+        "mtime_ns": 1790319067575214943,
+        "ctime_ns": 1790319881795765514
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/decisive.execution.json",
+      "expected_sha256": "ce868c7a31ebae30eaade8a5fd57dc5c63c389a559b03051fd0fca9c7e38d2c6",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.execution.json",
+      "sha256": "ce868c7a31ebae30eaade8a5fd57dc5c63c389a559b03051fd0fca9c7e38d2c6",
+      "bytes": 643,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623762,
+        "size": 643,
+        "mtime_ns": 1790318723920429385,
+        "ctime_ns": 1790319881795798264
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/decisive.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623761,
+        "size": 0,
+        "mtime_ns": 1790318723920139589,
+        "ctime_ns": 1790319881795828889
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/decisive.stdout.txt",
+      "expected_sha256": "b3abbfddefa0caaf438537ce2437dd9c7c9e27e734263c47b098686ff026092f",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.stdout.txt",
+      "sha256": "b3abbfddefa0caaf438537ce2437dd9c7c9e27e734263c47b098686ff026092f",
+      "bytes": 6708,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623760,
+        "size": 6708,
+        "mtime_ns": 1790318723920093172,
+        "ctime_ns": 1790319881795863138
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/decisive_threshold_and_charge_control.py",
+      "expected_sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive_threshold_and_charge_control.py",
+      "sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770",
+      "bytes": 10357,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461623410,
+        "size": 10357,
+        "mtime_ns": 1790318700983931013,
+        "ctime_ns": 1790319881795902930
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/exploration.execution.json",
+      "expected_sha256": "9ddff99c6dae646278fb149704b811b4087fe2c376ec2eb5cce0bacfe7b28632",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.execution.json",
+      "sha256": "9ddff99c6dae646278fb149704b811b4087fe2c376ec2eb5cce0bacfe7b28632",
+      "bytes": 639,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620424,
+        "size": 639,
+        "mtime_ns": 1790318248956995225,
+        "ctime_ns": 1790319881795953346
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/exploration.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620423,
+        "size": 0,
+        "mtime_ns": 1790318248956798846,
+        "ctime_ns": 1790319881795995762
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/exploration.stdout.txt",
+      "expected_sha256": "80d623ff1f56a4df23948dde58782c44520994887ab87c9ab5ef417996104cbf",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.stdout.txt",
+      "sha256": "80d623ff1f56a4df23948dde58782c44520994887ab87c9ab5ef417996104cbf",
+      "bytes": 10425,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620422,
+        "size": 10425,
+        "mtime_ns": 1790318248956750845,
+        "ctime_ns": 1790319881796043137
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/freeze.execution.json",
+      "expected_sha256": "8d45650daf1dd355249d7ced11847b26611da8092b63cb2da677a21a8a7aa4b2",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.execution.json",
+      "sha256": "8d45650daf1dd355249d7ced11847b26611da8092b63cb2da677a21a8a7aa4b2",
+      "bytes": 621,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620414,
+        "size": 621,
+        "mtime_ns": 1790318242542769846,
+        "ctime_ns": 1790319881796087720
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/freeze.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620413,
+        "size": 0,
+        "mtime_ns": 1790318242542568091,
+        "ctime_ns": 1790319881796131386
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/freeze.stdout.txt",
+      "expected_sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.stdout.txt",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "bytes": 4405,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620412,
+        "size": 4405,
+        "mtime_ns": 1790318242542525881,
+        "ctime_ns": 1790319881796175469
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/freeze_sources.py",
+      "expected_sha256": "922b547a98fbcb82693213b6f7b54b08074f646003b339deb3341561fe212ddc",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze_sources.py",
+      "sha256": "922b547a98fbcb82693213b6f7b54b08074f646003b339deb3341561fe212ddc",
+      "bytes": 3317,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620391,
+        "size": 3317,
+        "mtime_ns": 1790318232315717394,
+        "ctime_ns": 1790319881796208761
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/primitive_kernel.py",
+      "expected_sha256": "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/primitive_kernel.py",
+      "sha256": "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0",
+      "bytes": 2736,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621010,
+        "size": 2736,
+        "mtime_ns": 1790318405417286068,
+        "ctime_ns": 1790319881796242427
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/primitive_threshold_exploration.py",
+      "expected_sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/primitive_threshold_exploration.py",
+      "sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+      "bytes": 4777,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620392,
+        "size": 4777,
+        "mtime_ns": 1790318232315881651,
+        "ctime_ns": 1790319881796277135
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/run_logged.py",
+      "expected_sha256": "2f3ab244d8506cdc12f47d06e0a5b8494f127b93bf1644bd8c62f2c0de81c75d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/run_logged.py",
+      "sha256": "2f3ab244d8506cdc12f47d06e0a5b8494f127b93bf1644bd8c62f2c0de81c75d",
+      "bytes": 1168,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620390,
+        "size": 1168,
+        "mtime_ns": 1790318232315216416,
+        "ctime_ns": 1790319881796312343
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/seal_pre.py",
+      "expected_sha256": "14cb7bd68c999f25a9a5a963d34bebfc7f7d06d2baa2e33f5903c9551cba9213",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/seal_pre.py",
+      "sha256": "14cb7bd68c999f25a9a5a963d34bebfc7f7d06d2baa2e33f5903c9551cba9213",
+      "bytes": 4687,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461627913,
+        "size": 4687,
+        "mtime_ns": 1790319859803934746,
+        "ctime_ns": 1790319881796373051
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_period.execution.json",
+      "expected_sha256": "b9f1a777b41dabac9546fdac9f46baf16708e4b8efc2559330dba52634a9382a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.execution.json",
+      "sha256": "b9f1a777b41dabac9546fdac9f46baf16708e4b8efc2559330dba52634a9382a",
+      "bytes": 628,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625982,
+        "size": 628,
+        "mtime_ns": 1790319205443794978,
+        "ctime_ns": 1790319881796406634
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_period.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625981,
+        "size": 0,
+        "mtime_ns": 1790319205443388390,
+        "ctime_ns": 1790319881796436217
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_period.stdout.txt",
+      "expected_sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.stdout.txt",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "bytes": 8528,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625980,
+        "size": 8528,
+        "mtime_ns": 1790319205443252096,
+        "ctime_ns": 1790319881796474967
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_period_control.py",
+      "expected_sha256": "11372194114a4590222b2c2cea4ad14438754afebb55cd0a79cb9f36ea6c787a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period_control.py",
+      "sha256": "11372194114a4590222b2c2cea4ad14438754afebb55cd0a79cb9f36ea6c787a",
+      "bytes": 2432,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625977,
+        "size": 2432,
+        "mtime_ns": 1790319205039433443,
+        "ctime_ns": 1790319881796506716
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_verification.execution.json",
+      "expected_sha256": "287bd002d72ee012498d555ae615c8ed8c5b35c67ba0c9fa09926de1f6ca7d2b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.execution.json",
+      "sha256": "287bd002d72ee012498d555ae615c8ed8c5b35c67ba0c9fa09926de1f6ca7d2b",
+      "bytes": 636,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461626416,
+        "size": 636,
+        "mtime_ns": 1790319290726386954,
+        "ctime_ns": 1790319881796538883
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_verification.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461626415,
+        "size": 0,
+        "mtime_ns": 1790319290726189660,
+        "ctime_ns": 1790319881796569549
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/small_verification.stdout.txt",
+      "expected_sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.stdout.txt",
+      "sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62",
+      "bytes": 404,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461626414,
+        "size": 404,
+        "mtime_ns": 1790319290726137409,
+        "ctime_ns": 1790319881796606382
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/AGENTS.md",
+      "expected_sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620407,
+        "size": 737,
+        "mtime_ns": 1790318242480951585,
+        "ctime_ns": 1790319881796653715
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/AGENTS_execution.md",
+      "expected_sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/AGENTS_execution.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620409,
+        "size": 10164,
+        "mtime_ns": 1790318242537885297,
+        "ctime_ns": 1790319881796690632
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620406,
+        "size": 16764,
+        "mtime_ns": 1790318242480202356,
+        "ctime_ns": 1790319881796747589
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620405,
+        "size": 14902,
+        "mtime_ns": 1790318242462288495,
+        "ctime_ns": 1790319881796881422
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620404,
+        "size": 10953,
+        "mtime_ns": 1790318242443974873,
+        "ctime_ns": 1790319881796965129
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "expected_sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620403,
+        "size": 57438,
+        "mtime_ns": 1790318242425312366,
+        "ctime_ns": 1790319881797042879
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/sources/SCIENCE_WORKFLOW.md",
+      "expected_sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461620408,
+        "size": 12253,
+        "mtime_ns": 1790318242482173993,
+        "ctime_ns": 1790319881797090462
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/supersolution.execution.json",
+      "expected_sha256": "23b5d2ad8397554a628501122e9d1e148a3efbd839e2947622e971f9c2c94e73",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.execution.json",
+      "sha256": "23b5d2ad8397554a628501122e9d1e148a3efbd839e2947622e971f9c2c94e73",
+      "bytes": 632,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621053,
+        "size": 632,
+        "mtime_ns": 1790318410668443620,
+        "ctime_ns": 1790319881797133503
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/supersolution.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621052,
+        "size": 0,
+        "mtime_ns": 1790318410668254659,
+        "ctime_ns": 1790319881797176419
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/supersolution.stdout.txt",
+      "expected_sha256": "ecec57487d8a73e12cae5f3d64180204ec76908cb4a9cf3d092a700c6c5e15dc",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.stdout.txt",
+      "sha256": "ecec57487d8a73e12cae5f3d64180204ec76908cb4a9cf3d092a700c6c5e15dc",
+      "bytes": 2745,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621051,
+        "size": 2745,
+        "mtime_ns": 1790318410668214492,
+        "ctime_ns": 1790319881797234794
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/supersolution_exploration.py",
+      "expected_sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution_exploration.py",
+      "sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+      "bytes": 2733,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461621011,
+        "size": 2733,
+        "mtime_ns": 1790318405418064162,
+        "ctime_ns": 1790319881797291752
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/verification.execution.json",
+      "expected_sha256": "e983559ae02d285ca374b8e9b76ca8a17eab62e2b64463f8554b8b4178c064bc",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.execution.json",
+      "sha256": "e983559ae02d285ca374b8e9b76ca8a17eab62e2b64463f8554b8b4178c064bc",
+      "bytes": 624,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625360,
+        "size": 624,
+        "mtime_ns": 1790319108584027222,
+        "ctime_ns": 1790319881797367293
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/verification.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625359,
+        "size": 0,
+        "mtime_ns": 1790319108583780177,
+        "ctime_ns": 1790319881797412251
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/verification.stdout.txt",
+      "expected_sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.stdout.txt",
+      "sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a",
+      "bytes": 9577,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625358,
+        "size": 9577,
+        "mtime_ns": 1790319108583704801,
+        "ctime_ns": 1790319881797457959
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/verify_read_only.py",
+      "expected_sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_read_only.py",
+      "sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af",
+      "bytes": 11020,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461625181,
+        "size": 11020,
+        "mtime_ns": 1790319103765194614,
+        "ctime_ns": 1790319881797546625
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/verify_small_period_read_only.py",
+      "expected_sha256": "e35554659132ac064a95d2298ddd4c4ec24e71945569bd5c87e8538860f735cb",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_small_period_read_only.py",
+      "sha256": "e35554659132ac064a95d2298ddd4c4ec24e71945569bd5c87e8538860f735cb",
+      "bytes": 2335,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461626413,
+        "size": 2335,
+        "mtime_ns": 1790319290525681268,
+        "ctime_ns": 1790319881797597707
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/POST_SEAL.json",
+      "expected_sha256": "1df6721dded12cd248c17448f94f538b18007d547703c567a573e260e17517df",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_SEAL.json",
+      "sha256": "1df6721dded12cd248c17448f94f538b18007d547703c567a573e260e17517df",
+      "bytes": 9699,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630580,
+        "size": 9699,
+        "mtime_ns": 1790321407368483126,
+        "ctime_ns": 1790321407370453485
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/POST.md",
+      "expected_sha256": "806ba9afa526623eaf113e2f8d0b46066a17531957fe83509498ed9c5f501705",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST.md",
+      "sha256": "806ba9afa526623eaf113e2f8d0b46066a17531957fe83509498ed9c5f501705",
+      "bytes": 21166,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630440,
+        "size": 21166,
+        "mtime_ns": 1790321407142144572,
+        "ctime_ns": 1790321407368532834
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/POST_FINAL_BINDINGS.json",
+      "expected_sha256": "cce4af62fbd7afb3cdcffacb067cc75dfa9168072a715cb2754c271172106f98",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_FINAL_BINDINGS.json",
+      "sha256": "cce4af62fbd7afb3cdcffacb067cc75dfa9168072a715cb2754c271172106f98",
+      "bytes": 5393,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630579,
+        "size": 5393,
+        "mtime_ns": 1790321407365052446,
+        "ctime_ns": 1790321407368570125
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/POST_PROCESS_LOG.md",
+      "expected_sha256": "b60f126019a2f4693bd35d213351bee642819c82cc4fc02e8638035323ca1c93",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_PROCESS_LOG.md",
+      "sha256": "b60f126019a2f4693bd35d213351bee642819c82cc4fc02e8638035323ca1c93",
+      "bytes": 4244,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630441,
+        "size": 4244,
+        "mtime_ns": 1790321295910074681,
+        "ctime_ns": 1790321407368603583
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/POST_SOURCE_PINS.json",
+      "expected_sha256": "a858f7800021155b982d1cd8c8c0809032bc61c8b8322f950ff05bae2c719705",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_SOURCE_PINS.json",
+      "sha256": "a858f7800021155b982d1cd8c8c0809032bc61c8b8322f950ff05bae2c719705",
+      "bytes": 35877,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629140,
+        "size": 35877,
+        "mtime_ns": 1790320734943715824,
+        "ctime_ns": 1790321407368648708
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_freeze.execution.json",
+      "expected_sha256": "adaa0dbe8707ae88ea632ff3eddb8ea7db92eccf8d4ba9335fd988267c62ab38",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.execution.json",
+      "sha256": "adaa0dbe8707ae88ea632ff3eddb8ea7db92eccf8d4ba9335fd988267c62ab38",
+      "bytes": 851,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629143,
+        "size": 851,
+        "mtime_ns": 1790320734947370252,
+        "ctime_ns": 1790321407368679458
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_freeze.py",
+      "expected_sha256": "02ab996d7f8c1971e30beec6641a44cd4d224e872202a3e31ea3ff0837a2e380",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.py",
+      "sha256": "02ab996d7f8c1971e30beec6641a44cd4d224e872202a3e31ea3ff0837a2e380",
+      "bytes": 3156,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629081,
+        "size": 3156,
+        "mtime_ns": 1790320713695134524,
+        "ctime_ns": 1790321407368709124
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_freeze.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629142,
+        "size": 0,
+        "mtime_ns": 1790320734947132921,
+        "ctime_ns": 1790321407368736999
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_freeze.stdout.txt",
+      "expected_sha256": "fc6424d3981df92337888398f9c95499c7b717cabe991579d46efae523f62a43",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.stdout.txt",
+      "sha256": "fc6424d3981df92337888398f9c95499c7b717cabe991579d46efae523f62a43",
+      "bytes": 200,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629141,
+        "size": 200,
+        "mtime_ns": 1790320734947044547,
+        "ctime_ns": 1790321407368764415
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_inspect.execution.json",
+      "expected_sha256": "1a1d6e7def1c0d346027f227e57493b07d43f43cfb7919fcf703a6e0622ad941",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.execution.json",
+      "sha256": "1a1d6e7def1c0d346027f227e57493b07d43f43cfb7919fcf703a6e0622ad941",
+      "bytes": 856,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629188,
+        "size": 856,
+        "mtime_ns": 1790320770276350941,
+        "ctime_ns": 1790321407368792457
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_inspect.py",
+      "expected_sha256": "f22aa3762056f08ae40b4a2cde42a005ffcd0ebc893906f3a1e217a0c6a5030b",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.py",
+      "sha256": "f22aa3762056f08ae40b4a2cde42a005ffcd0ebc893906f3a1e217a0c6a5030b",
+      "bytes": 1200,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629185,
+        "size": 1200,
+        "mtime_ns": 1790320770136040263,
+        "ctime_ns": 1790321407368820165
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_inspect.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629187,
+        "size": 0,
+        "mtime_ns": 1790320770276074485,
+        "ctime_ns": 1790321407368846415
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_inspect.stdout.txt",
+      "expected_sha256": "81c7315a1de5b966771e27ed5faf4eac83e38931ed00e109e2b37c7b54eb37ff",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.stdout.txt",
+      "sha256": "81c7315a1de5b966771e27ed5faf4eac83e38931ed00e109e2b37c7b54eb37ff",
+      "bytes": 11950,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629186,
+        "size": 11950,
+        "mtime_ns": 1790320770275947028,
+        "ctime_ns": 1790321407368885081
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_payload_review.execution.json",
+      "expected_sha256": "a81f2bafd1dd1065674a9abf42528bf83355d07be7eb2a774946dff5f1e44561",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.execution.json",
+      "sha256": "a81f2bafd1dd1065674a9abf42528bf83355d07be7eb2a774946dff5f1e44561",
+      "bytes": 877,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630099,
+        "size": 877,
+        "mtime_ns": 1790321052940779269,
+        "ctime_ns": 1790321407368914247
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_payload_review.py",
+      "expected_sha256": "f02051ab1cbbc5afbe20773586fd44635cfc0bc363dba4cb183bb09d27af3fe0",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.py",
+      "sha256": "f02051ab1cbbc5afbe20773586fd44635cfc0bc363dba4cb183bb09d27af3fe0",
+      "bytes": 430,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630096,
+        "size": 430,
+        "mtime_ns": 1790321052812197161,
+        "ctime_ns": 1790321407368942330
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_payload_review.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630098,
+        "size": 0,
+        "mtime_ns": 1790321052940504438,
+        "ctime_ns": 1790321407368969497
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_payload_review.stdout.txt",
+      "expected_sha256": "bfdc0110a7ff374f87cb944c8694f3daf733d1e26f3109cd1e1b04cc4298c258",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.stdout.txt",
+      "sha256": "bfdc0110a7ff374f87cb944c8694f3daf733d1e26f3109cd1e1b04cc4298c258",
+      "bytes": 20065,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630097,
+        "size": 20065,
+        "mtime_ns": 1790321052940396355,
+        "ctime_ns": 1790321407369005455
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_run_logged.py",
+      "expected_sha256": "9fcb0c8f3b209a535b929e12129ef4d90f03321c61fb17aa6eb379831593b152",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_run_logged.py",
+      "sha256": "9fcb0c8f3b209a535b929e12129ef4d90f03321c61fb17aa6eb379831593b152",
+      "bytes": 1314,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629103,
+        "size": 1314,
+        "mtime_ns": 1790320734776602533,
+        "ctime_ns": 1790321407369032663
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_seal.py",
+      "expected_sha256": "1a51a0a97998bb2b953752fb7444a95939066cc42e53e7d2feeb5a088b5deaac",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_seal.py",
+      "sha256": "1a51a0a97998bb2b953752fb7444a95939066cc42e53e7d2feeb5a088b5deaac",
+      "bytes": 5599,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461630542,
+        "size": 5599,
+        "mtime_ns": 1790321380141563078,
+        "ctime_ns": 1790321407369062538
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/FORTIETH_PRE_ROOT_REVIEW.json",
+      "expected_sha256": "4ccf03db0eff99a37d454908bbd2790c0b02959626912918b7d1b4605a094bca",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/FORTIETH_PRE_ROOT_REVIEW.json",
+      "sha256": "4ccf03db0eff99a37d454908bbd2790c0b02959626912918b7d1b4605a094bca",
+      "bytes": 2551,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629139,
+        "size": 2551,
+        "mtime_ns": 1790320734940337727,
+        "ctime_ns": 1790321407369102121
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/AUTHOR_SEAL.json",
+      "expected_sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a",
+      "bytes": 4806,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629138,
+        "size": 4806,
+        "mtime_ns": 1790320734940114020,
+        "ctime_ns": 1790321407369142037
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "expected_sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5",
+      "bytes": 16258,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629106,
+        "size": 16258,
+        "mtime_ns": 1790320734932323251,
+        "ctime_ns": 1790321407369193703
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/ROOT_REVIEW.json",
+      "expected_sha256": "0aea7a82d8e2b1dcda078d0b21832c5176aa1d168de077a7b50d7f0c769913ae",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/ROOT_REVIEW.json",
+      "sha256": "0aea7a82d8e2b1dcda078d0b21832c5176aa1d168de077a7b50d7f0c769913ae",
+      "bytes": 1315,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629107,
+        "size": 1315,
+        "mtime_ns": 1790320734932817039,
+        "ctime_ns": 1790321407369241370
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/SOURCE_PINS.json",
+      "expected_sha256": "be8ba0122571991290d1095b7fee18f633910c176781c8d6c68c8190e03ca5f1",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/SOURCE_PINS.json",
+      "sha256": "be8ba0122571991290d1095b7fee18f633910c176781c8d6c68c8190e03ca5f1",
+      "bytes": 2681,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629108,
+        "size": 2681,
+        "mtime_ns": 1790320734933039870,
+        "ctime_ns": 1790321407369286619
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/WORKING_DERIVATION.md",
+      "expected_sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/WORKING_DERIVATION.md",
+      "sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c",
+      "bytes": 7724,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629109,
+        "size": 7724,
+        "mtime_ns": 1790320734933255952,
+        "ctime_ns": 1790321407369325827
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt01/EXECUTION.json",
+      "expected_sha256": "a4965aab4eaf4385b0ccf39a980e0d46b71631490b347a1a2f7164b07d3a8097",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt01/EXECUTION.json",
+      "sha256": "a4965aab4eaf4385b0ccf39a980e0d46b71631490b347a1a2f7164b07d3a8097",
+      "bytes": 239,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629111,
+        "size": 239,
+        "mtime_ns": 1790320734933496742,
+        "ctime_ns": 1790321407369356910
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt01/explore_two_record_threshold.py",
+      "expected_sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt01/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "bytes": 3518,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629112,
+        "size": 3518,
+        "mtime_ns": 1790320734933715990,
+        "ctime_ns": 1790321407369390577
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt01/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629113,
+        "size": 0,
+        "mtime_ns": 1790320734933790031,
+        "ctime_ns": 1790321407369421743
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt01/stdout.json",
+      "expected_sha256": "16c6e662dc77bac86cd8166cb84f24426f91ca88e51d3337f6dc6bd8ff167af6",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt01/stdout.json",
+      "sha256": "16c6e662dc77bac86cd8166cb84f24426f91ca88e51d3337f6dc6bd8ff167af6",
+      "bytes": 34120,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629114,
+        "size": 34120,
+        "mtime_ns": 1790320734934095445,
+        "ctime_ns": 1790321407369467701
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt02/EXECUTION.json",
+      "expected_sha256": "1707d05ad695845cb9adea7b6038df38d38a61ef1643b775bc6c40b4f4bccf81",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt02/EXECUTION.json",
+      "sha256": "1707d05ad695845cb9adea7b6038df38d38a61ef1643b775bc6c40b4f4bccf81",
+      "bytes": 237,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629116,
+        "size": 237,
+        "mtime_ns": 1790320734934303985,
+        "ctime_ns": 1790321407369501992
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt02/RESULT.json",
+      "expected_sha256": "3561f6d74808b441b188cdc1b92c7b31bdb65442f816a8fdde225705efbf2d93",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt02/RESULT.json",
+      "sha256": "3561f6d74808b441b188cdc1b92c7b31bdb65442f816a8fdde225705efbf2d93",
+      "bytes": 72873,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629117,
+        "size": 72873,
+        "mtime_ns": 1790320734934553108,
+        "ctime_ns": 1790321407369563992
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt02/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt02/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629118,
+        "size": 3444,
+        "mtime_ns": 1790320734934739023,
+        "ctime_ns": 1790321407369597742
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt02/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629119,
+        "size": 0,
+        "mtime_ns": 1790320734934823522,
+        "ctime_ns": 1790321407369630116
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt02/stdout.log",
+      "expected_sha256": "2a616280774db8c349679ee8c38b524d7998fd19b5a70fa478a42cee188854b5",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt02/stdout.log",
+      "sha256": "2a616280774db8c349679ee8c38b524d7998fd19b5a70fa478a42cee188854b5",
+      "bytes": 603,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629120,
+        "size": 603,
+        "mtime_ns": 1790320734935215936,
+        "ctime_ns": 1790321407369661241
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt03/EXECUTION.json",
+      "expected_sha256": "8d9d63aff418ea9e49b9138a29c38f2525fac8dc95af8ead3b98e67c7679a827",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt03/EXECUTION.json",
+      "sha256": "8d9d63aff418ea9e49b9138a29c38f2525fac8dc95af8ead3b98e67c7679a827",
+      "bytes": 238,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629122,
+        "size": 238,
+        "mtime_ns": 1790320734935474475,
+        "ctime_ns": 1790321407369692824
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt03/RESULT.json",
+      "expected_sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt03/RESULT.json",
+      "sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da",
+      "bytes": 145183,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629123,
+        "size": 145183,
+        "mtime_ns": 1790320734936657632,
+        "ctime_ns": 1790321407369788157
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt03/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt03/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629124,
+        "size": 3444,
+        "mtime_ns": 1790320734936955255,
+        "ctime_ns": 1790321407369833073
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt03/stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt03/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629125,
+        "size": 0,
+        "mtime_ns": 1790320734937045837,
+        "ctime_ns": 1790321407369876656
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt03/stdout.log",
+      "expected_sha256": "0eaba9f81f23206342cc5d9061c390cd2b9b0b930100e5a8562709ec16de44e8",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt03/stdout.log",
+      "sha256": "0eaba9f81f23206342cc5d9061c390cd2b9b0b930100e5a8562709ec16de44e8",
+      "bytes": 8511,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629126,
+        "size": 8511,
+        "mtime_ns": 1790320734937457792,
+        "ctime_ns": 1790321407369923906
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt04/RESULT.json",
+      "expected_sha256": "cdee15c6500fe0a85dc7d72442c07fa0cc46a7525e2931029edeb5079dc374ce",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt04/RESULT.json",
+      "sha256": "cdee15c6500fe0a85dc7d72442c07fa0cc46a7525e2931029edeb5079dc374ce",
+      "bytes": 6302,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629128,
+        "size": 6302,
+        "mtime_ns": 1790320734937794789,
+        "ctime_ns": 1790321407369961489
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt05/EXECUTION.json",
+      "expected_sha256": "cb069e7973f31a13bec9ea2503101f17c4bc0fd876c3492249420daac092d7f3",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt05/EXECUTION.json",
+      "sha256": "cb069e7973f31a13bec9ea2503101f17c4bc0fd876c3492249420daac092d7f3",
+      "bytes": 739,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629130,
+        "size": 739,
+        "mtime_ns": 1790320734938047704,
+        "ctime_ns": 1790321407369992072
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt05/RESULT.json",
+      "expected_sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt05/RESULT.json",
+      "sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf",
+      "bytes": 175631,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629131,
+        "size": 175631,
+        "mtime_ns": 1790320734938434493,
+        "ctime_ns": 1790321407370093196
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt05/stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt05/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629132,
+        "size": 0,
+        "mtime_ns": 1790320734938539200,
+        "ctime_ns": 1790321407370124071
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt05/stdout.txt",
+      "expected_sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt05/stdout.txt",
+      "sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac",
+      "bytes": 5372,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629133,
+        "size": 5372,
+        "mtime_ns": 1790320734938882447,
+        "ctime_ns": 1790321407370157654
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/attempt05/two_record_threshold_and_charge_controls.py",
+      "expected_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/attempt05/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629134,
+        "size": 10329,
+        "mtime_ns": 1790320734939071446,
+        "ctime_ns": 1790321407370194028
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/explore_two_record_threshold.py",
+      "expected_sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+      "bytes": 3518,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629135,
+        "size": 3518,
+        "mtime_ns": 1790320734939268861,
+        "ctime_ns": 1790321407370226528
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/explore_two_record_threshold_extended.py",
+      "expected_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+      "bytes": 3444,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629136,
+        "size": 3444,
+        "mtime_ns": 1790320734939444026,
+        "ctime_ns": 1790321407370262070
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_sources/author/two_record_threshold_and_charge_controls.py",
+      "expected_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_sources/author/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629137,
+        "size": 10329,
+        "mtime_ns": 1790320734939814356,
+        "ctime_ns": 1790321407370296777
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_verification.execution.json",
+      "expected_sha256": "ef14351dd0384d73ec64025941f7d5356c0d3144f2c055621921c01f22fee352",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.execution.json",
+      "sha256": "ef14351dd0384d73ec64025941f7d5356c0d3144f2c055621921c01f22fee352",
+      "bytes": 874,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629942,
+        "size": 874,
+        "mtime_ns": 1790321027023892604,
+        "ctime_ns": 1790321407370325944
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_verification.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629941,
+        "size": 0,
+        "mtime_ns": 1790321027023512482,
+        "ctime_ns": 1790321407370355069
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_verification.stdout.txt",
+      "expected_sha256": "bd3364b49be102c773f87b87b10053093ff1c70796c3c6dba3899aca4ca965f2",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.stdout.txt",
+      "sha256": "bd3364b49be102c773f87b87b10053093ff1c70796c3c6dba3899aca4ca965f2",
+      "bytes": 43882,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629940,
+        "size": 43882,
+        "mtime_ns": 1790321027023343234,
+        "ctime_ns": 1790321407370401485
+      }
+    },
+    {
+      "role": "prior_checker",
+      "snapshot": "frozen/prior_checker/post_verify_read_only.py",
+      "expected_sha256": "f4a580f2a6ce2b2342052af4f9f17f4b338317060c8829a10bb7e26d606a53f1",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verify_read_only.py",
+      "sha256": "f4a580f2a6ce2b2342052af4f9f17f4b338317060c8829a10bb7e26d606a53f1",
+      "bytes": 19478,
+      "original_stat": {
+        "mode": 33060,
+        "dev": 16777231,
+        "ino": 461629928,
+        "size": 19478,
+        "mtime_ns": 1790321016114545696,
+        "ctime_ns": 1790321407370438318
+      }
+    }
+  ]
+}

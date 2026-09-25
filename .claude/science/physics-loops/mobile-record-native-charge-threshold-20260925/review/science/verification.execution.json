@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:51:48.467997+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_read_only.py"
+  ],
+  "source_sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af",
+  "elapsed_seconds": 0.11486720899119973,
+  "exit_code": 0,
+  "stdout_sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a",
+  "stdout_bytes": 9577,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

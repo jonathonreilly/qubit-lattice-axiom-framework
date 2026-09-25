@@ -1,0 +1,16 @@
+{
+  "scope": "Fresh exact-source primitive controls of conditional global flat threshold and native birth charges; no new independence, finite-g dynamics or physical calibration.",
+  "source_sha256": "a1b8d6a9d5b137b0084afd81de0cd3221e7997f61259bb993ce946bb209ca331",
+  "runtime_source_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+  "elapsed_seconds": 2.9040614580735564,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 5372,
+  "stdout_sha256": "10430b23f6793db0a77f7f88b7f19e23e42070d38b3acacf38525c8286b57af4",
+  "complete_scientific_artifact": {
+    "path": "outputs/native_charge_threshold_20260925/CHARGE_THRESHOLD_RESULTS.json",
+    "sha256": "c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9",
+    "bytes": 175631
+  },
+  "all_assertions_passed": true
+}

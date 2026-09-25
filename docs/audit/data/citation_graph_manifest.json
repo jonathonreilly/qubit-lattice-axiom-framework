@@ -1,6 +1,6 @@
 {
- "edge_count": 14681,
- "node_count": 6668,
+ "edge_count": 14685,
+ "node_count": 6669,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13757,6 +13757,10 @@
   "naive_lattice_fermion_two_power_d_species_count_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "native_birth_charge_and_separated_threshold_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "6fe2cc02290e",
+   "out_degree": 4
   },
   "native_certified_imaginary_time_note_2026-09-09": {
    "deps_hash": "77b25aca8756",

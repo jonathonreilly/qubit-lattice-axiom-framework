@@ -1,0 +1,50 @@
+{
+  "at_utc": "2026-09-25T06:32:07.541983+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication/docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438,
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_controls.py",
+      "sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa",
+      "bytes": 10799
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_local_row_certificate.py",
+      "sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+      "bytes": 3767
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OBSERVATION_CHARGE_SCALE_SOURCE_INVENTORY_0557.json",
+      "sha256": "2d8b2c190cfc5ee856c90837fcc15e9caca1a16fd5c7ec88ae360f063cfa8f29",
+      "bytes": 1231
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OBSERVATION_CHARGE_SCALE_ROOT_REVIEW_0559.json",
+      "sha256": "4d963b901d92e8438152ae587b2ac1370ab5d3da72a111117207fe5323cea158",
+      "bytes": 1973
+    }
+  ],
+  "scope": "Exact personally reused sources. No new author40 independent review has been dispatched."
+}

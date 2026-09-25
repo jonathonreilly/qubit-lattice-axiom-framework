@@ -1,0 +1,7 @@
+{
+  "frozen_author_files": 28,
+  "root_receipts": 1,
+  "preserved_prior_files": 55,
+  "PRE_members_verified": 54,
+  "pins_sha256": "a858f7800021155b982d1cd8c8c0809032bc61c8b8322f950ff05bae2c719705"
+}

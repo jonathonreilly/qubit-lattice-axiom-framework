@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-25T07:51:49.857730+00:00",
+  "all_nontiming_leaves_equal": 6714,
+  "differences": [
+    {
+      "path": "/elapsed_seconds",
+      "old": 3.0906439169775695,
+      "new": 2.8379909999202937
+    }
+  ],
+  "fresh_runner_status": "ok",
+  "artifact_sha256": "c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9",
+  "wrapper_result_sha256": "fa4c0a7f47cede17ff9e8b35a420dedc6f853eebf03c423ca82671d4bd899d35",
+  "cache_sha256": "051cc11634e62fadee58af9a497b8fe0420a1370cb4c28d7c7afeffbe2041d73",
+  "scope": "Actual fresh primary run; exact personal source reuse, no new independence or finite-g physical prediction."
+}

@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F138 the coin's spin in the symmetric momentum | Q - P'' = (1/2) curl S~ as exact operators over Q(i) on 5^3, 6^3 and 9^3; P^B = P'' + (1/4) curl S~ and div curl = 0; the torque as the rate of the curl; the eigenvector identity symbolically | block 138 (own derivation, unrefereed) |

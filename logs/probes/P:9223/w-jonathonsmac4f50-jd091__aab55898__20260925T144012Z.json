@@ -1,0 +1,30 @@
+{
+ "task": "P:9223",
+ "type": "pr-reexecution",
+ "lane": "physics-loops-rollups-completion-2026092",
+ "worker": "w-jonathonsmac4f50-jd091",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9223",
+ "pr": 9223,
+ "branch": "archive/physics-loops-rollups-completion-20260925",
+ "git_sha": "aab55898",
+ "started_utc": "20260925T144012Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #9223's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "199881d88abf496cecff8ea7a80c0a2c8d4917bc3c50066959c48cc4217749a3",
+ "stdout_tail": "PR #9223: archive: complete the August physics-loops roll-ups packet (gravity mainline roll-up, 08-20 handoff, landing core)\nbranch archive/physics-loops-rollups-completion-20260925 (base main)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd091",
+  "at_utc": "20260925T144017Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

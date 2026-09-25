@@ -21,12 +21,19 @@
  "stdout_sha256": "cf5f6923f914a5a76970194afccb349c2c3f4749e1b4695996072c385a02b5e5",
  "stdout_tail": ": on-shell O(lambda) books defect <f|C1_a|i> = (g_a(i) - g_a(f)) <f|V|i>, g(i) - g(f) = (1,-1,0): nonzero for a = 1, 2 in every sector and band pair\n[PASS] E3: off-grid shell pair (sin,cos of k: 3/5,4/5; 5/13,12/13; 20/29,21/29; K1=K2: 8/17,15/17; K3: 7/25,24/25), axes 1,2 swapped: g_1 - g_2 = -147456/1221025, |v|^2 = Ghat^2 eps^2(1+n.n')/2 eps~^2(1+m.m')/2 = 10478294359134993/21590194575625 > 0 for every band pair\nTOTAL: PASS=9 FAIL=0  (16 s)\nSUMMARY: PARTIAL first-order books identity for two walkers under block 53's pull: for every placement of the pull's energy in ATTEMPT.md's class the O(lambda) part of [H', J'] has on-shell off-forward kernel (g(k) - g(k'))<b|V|a>, placement-independent; the Born amplitude is nonzero at exact shell pairs where g changes (E1-E3), so exact books first fail at first order in the coupling; the all-orders scattering form stays conditional on a long-range wave-operator bridge.\nHIT: under block 53's pull V = sum G(x-y) e_x e_y two walkers lose exact books at first order: for placements with first moment (x+y)/2 + beta r + rho0(r), sum |G rho0| finite, plus finite-range and one-body terms keeping the free books, the O(lambda) part of [H', J'] is (g(k) - g(k'))<b|V|a> on the shell off forward; at K = (pi/4,pi/4,3pi/4), k = (0,pi/2,pi/4) -> (pi/2,0,pi/4) the Born amplitude is nonzero (|v|^2 = 9/4; nonzero in both exchange sectors) while g changes by (1,-1,0); on every torus with 8 | L no J(lambda) = sum P + O(lambda) commutes with H2 + lambda V.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j4dc1",
-  "at_utc": "20260925T202355Z",
+  "by": "w7",
+  "at_utc": "20260925T202434Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 62685cff differs from the current HEAD 97ee9aee (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: a first-order books identity for two walkers under block 53's pull, holding for every placement in the stated class, with exact nonzero Born amplitudes at shell pairs where g changes. So the books fail at first order in the coupling. The finite-torus form needs no locality. The all-orders scattering form is conditional and is not claimed. For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T202434Z"
  }
 }

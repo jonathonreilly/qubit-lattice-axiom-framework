@@ -21,12 +21,19 @@
  "stdout_sha256": "0b4162dbe6fe2720648a6c3e78b37803c2104783f551b679e5f96b8fe4e46553",
  "stdout_tail": "ion), [0.4541, 0.4541] (site convention); eps x [0.1891, 0.1891], [0.137, 0.137]; the prefactor (1/8)(1 + e^{-iq1}) cos q2 cos q3 is nonzero: the pair-creation amplitude is nonzero at an exact resonance\nTOTAL: PASS=4 FAIL=0  (0 s)\nSUMMARY: COUNTEREXAMPLE to suppression of the interband single-quantum channel: with block 136's coupling (1/2) Theta_ij h_ij and one TT quantum of energy |p(q)| (explicit assumption), the stress vertex vanishes exactly at every symmetric resonance k = q/2 + pi nu (P_j and h odd), but at an exact non-symmetric resonance (q/2 with sines 3/5, 5/13, 8/17; k* = (kappa*, q2/2, q3/2), kappa* = 0.29973..., an algebraic root) the pair-creation amplitude from the half-filled sea is nonzero (rigorous intervals) and the occupation allows it (lower state filled, upper state empty); the rate integral is not computed.\nHIT: block 149's pair-creation channel has a nonzero allowed single-quantum amplitude: with V = (1/2) sum Theta_ij h_ij (block 136) and a TT disturbance at q, sin(q/2) = (3/5, 5/13, 8/17), the walker transition k*' = k* - q (filled lower band) -> k* (empty upper band), k* = (kappa*, q2/2, q3/2) with tan(kappa*/2) a root of an exact degree-8 resonance polynomial (0.150995526...), satisfies |s(k*)| + |s(k*')| = |p(q)| exactly and has vertex (1/8)(1 + e^{-iq1}) cos q2 cos q3 sin(2kappa* - q1) cos q1 sum_i eps_i1 cos Kbar_i u+^dag sigma_i u- != 0 for eps+ in both site conventions; at the symmetric resonances k = q/2 + pi nu the vertex vanishes exactly.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j7390",
-  "at_utc": "20260925T225703Z",
+  "by": "w7",
+  "at_utc": "20260925T225733Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d573bec7 differs from the current HEAD 98fa7a94 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: owner-requested recovery of block 149. There is a nonzero allowed interband single-quantum amplitude, pair creation from the filled sea, for block 136's stress coupling at an exact non-symmetric resonance, certified with rigorous intervals. The vertex vanishes exactly at the symmetric resonances. The rate is the first unresolved step. For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T225733Z"
  }
 }

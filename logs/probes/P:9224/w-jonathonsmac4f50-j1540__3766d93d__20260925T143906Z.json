@@ -1,0 +1,30 @@
+{
+ "task": "P:9224",
+ "type": "pr-reexecution",
+ "lane": "densify-skill-20260925",
+ "worker": "w-jonathonsmac4f50-j1540",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9224",
+ "pr": 9224,
+ "branch": "methodology/densify-skill-20260925",
+ "git_sha": "3766d93d",
+ "started_utc": "20260925T143906Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR re-execution of #9224's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "111795123c805d28e119df663d5072ef770528c0f66cdb4b2ce4838b2e3f97e0",
+ "stdout_tail": "PR #9224: skills: add the densify backlog-combing skill and its /densify command\nbranch methodology/densify-skill-20260925 (base main)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1540",
+  "at_utc": "20260925T143911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

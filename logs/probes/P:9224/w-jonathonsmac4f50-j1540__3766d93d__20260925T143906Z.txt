@@ -1,0 +1,3 @@
+PR #9224: skills: add the densify backlog-combing skill and its /densify command
+branch methodology/densify-skill-20260925 (base main)
+runners in the PR: 0

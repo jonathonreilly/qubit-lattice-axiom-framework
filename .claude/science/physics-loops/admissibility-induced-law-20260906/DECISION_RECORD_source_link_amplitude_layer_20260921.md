@@ -670,3 +670,30 @@ What this changes in addendum 34's table:
 - **The curvature power.** The fall of binding energy gives a second route to `p = 1`, besides block 64 (via block 129).
 
 Landing status: blocks 111–141 are on main (ef918c1910). Addendum 32's landing guide is executed except for blocks 142–145, which are open. The landing review scoped blocks 134–135 as a necessary longitudinal condition, with no universal light cone, and block 136 as the preservation of initially satisfied nonzero-mode constraints, with no general solvability. Blocks 144 and 145 were reworded to match.
+
+## Thirty-seventh addendum (2026-09-25 evening): the zero mode is an expansion at the static pull's coupling (block 146), it tests the zero of energy (block 147), and uneven stretches (block 148)
+
+Block 146 (PR #9237) answers the landing review's zero-mode residual for uniform content. It is the supervisor's own derivation, not refereed by another model family; nothing is adopted. It uses only landed blocks: 60, 101, 124, 129 and 134–136.
+- A static closed lattice holds no positive content: the member's clock constraint has no zero mode.
+- On a uniform stretch the member's kinetic term gives `c_k = −24α`, so block 60's uniform motion exists: `λ̇² = ρ/(24α)`.
+- This is `(8πG/3)ρ` with the static pull's own coupling `G = 1/(16πK)` iff `α = K/4`, and then `ℓ̈/ℓ = −(4πG/3)(ρ + 3p)`. That is a route to `α = K/4` independent of the books (134–136); block 144's condition is the books' condition in exchange form.
+- Top-speed walkers' energies fall exactly as `1/ℓ` (pressure `ρ/3`, expansion `t^{1/2}`); rest content gives `t^{2/3}`.
+
+What this changes in addendum 34's table:
+- **A new row: the lattice as a whole.** From records alone: nothing. With the amplitude layer and the member: a closed lattice with content must expand or contract, at the static pull's coupling iff `α = K/4`. Still open: uniform shear; massive walkers in a stretching lattice.
+- **α = K/4.** It is now fixed two independent ways, both as necessary conditions: by the books, and by the expansion's coupling.
+
+Block 147 (PR #9240) is also the supervisor's own derivation, unrefereed. It takes up the walker's sea.
+- The walk's energies come in plus-and-minus pairs about the books' zero (block 139), so the half-filled sea has negative energy: `−I/ℓ` per site for massless walkers and `−⟨√(μ² + s²/ℓ²)⟩` with the staggered mass. On this lattice it thins out as the lattice stretches and is never a constant energy per unit volume. Under one record per site the hard-core sea's energy is negative too, by the same plus-and-minus symmetry.
+- **If the member sees the sea's energy:**
+  - a closed lattice holding only the sea has no solution;
+  - one with rest content `m₀` per site bounces at `ℓ = I/m₀`;
+  - with massive walkers, reaching large lengths needs more than one walker's rest energy of content per site.
+- **If the member sees only energy above the sea:** block 146 holds. The subtraction is a constant and keeps the books.
+
+Block 148 (PR #9241; own derivation, unrefereed) treats uneven uniform stretches with three lengths. At the closing ratio only the cross term of the member's kinetic term survives.
+- An empty closed lattice can move, as `ℓ_i = t^{p_i}` with `Σp = Σp² = 1`, with some length shrinking or fixed. It never stretches alike.
+- With rest content the stretch becomes alike at late times (`t^{2/3}`).
+- The three-length volume factor is supplied.
+
+**A new reading question for the owner** (a finding, not a proposal): which zero of energy does the member see in a many-walker state? The landed clauses fix only the zero of one-walker energies.

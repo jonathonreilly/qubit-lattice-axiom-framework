@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py
+runner_sha256: f50247e04bd5eb085b1a3a0bf8fc2247c700a3e57d6f105b64f71de969067171
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 224.05
+status: ok
+----- stdout -----
+[PASS] the RK point V = g: the local energy vanishes identically, the projector samples uniform ice (axis star, corner star and flippable density within 3 standard errors of the zero-winding uniform ensemble), sum rule exact :: 4^3: max |E(tau)| 0e+00; axis T/2 1.521+-0.012 vs sector-uniform 1.599+-0.031 (-2.3 sigma); corner T 3.07+-0.03 vs 3.01+-0.17 (+0.3); n_f 0.2658+-0.0003 vs 0.2651+-0.0014 (+0.5); sum rule to 9e-16; 6^3: max |E(tau)| 0e+00; axis T/2 1.527+-0.012 vs sector-uniform 1.517+-0.034 (+0.3 sigma); corner T 3.02+-0.03 vs 3.00+-0.11 (+0.1); n_f 0.2611+-0.0002 vs 0.2606+-0.0008 (+0.7); sum rule to 9e-16; 224 s
+[PASS] 4^3 sweep V = 1, 0.75, 0.5, 0.25, 0: the axis weight falls and the corner weight rises monotonically within errors, both resolved between the end points at more than 3 standard errors; ring expectation u_0 and flippable density along the way :: V=1.00: e0 +0.00000, u0 0.2658, n_f 0.2658, axis T/2 1.521+-0.012, corner T 3.07+-0.03 (14 s); V=0.75: e0 -0.06830, u0 0.2783, n_f 0.2800, axis T/2 1.185+-0.015, corner T 3.53+-0.06 (14 s); V=0.50: e0 -0.13982, u0 0.2856, n_f 0.2916, axis T/2 0.984+-0.006, corner T 3.85+-0.07 (15 s); V=0.25: e0 -0.21450, u0 0.2906, n_f 0.3046, axis T/2 0.857+-0.013, corner T 4.97+-0.12 (15 s); V=0.00: e0 -0.29203, u0 0.2920, n_f 0.3209, axis T/2 0.726+-0.018, corner T 7.59+-0.60 (15 s); end-point resolution axis 37.0 sigma, corner 7.5 sigma
+[PASS] 6^3 sweep V = 1, 0.5, 0: the same ordering, the V = 0 axis star agreeing with open PR 9161 (0.557 +- 0.022) within 3 standard errors :: V=1.00: 6^3 axis T/2 1.527+-0.012 (4^3 1.521), corner 3.02+-0.03 (4^3 3.07), u0 0.2611 (4^3 0.2658), n_f 0.2611; V=0.50: 6^3 axis T/2 0.720+-0.018 (4^3 0.984), corner 4.00+-0.17 (4^3 3.85), u0 0.2828 (4^3 0.2856), n_f 0.2888; V=0.00: 6^3 axis T/2 0.610+-0.022 (4^3 0.726), corner 6.55+-0.74 (4^3 7.59), u0 0.2887 (4^3 0.2920), n_f 0.3124; 224 s
+TOTAL: PASS=3 FAIL=0 (224 s)
+
+----- stderr -----
+

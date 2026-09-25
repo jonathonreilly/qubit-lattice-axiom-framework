@@ -1,0 +1,37 @@
+{
+ "task": "P:9159",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block116-formi",
+ "worker": "w-jonathonsmac4f50-j37ce",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9159",
+ "pr": 9159,
+ "branch": "physics-loop/admissibility-induced-law-block116-forming-one-record-keeps-the-ledger-only-at-a-price-20260924",
+ "git_sha": "ff955096",
+ "started_utc": "20260925T013521Z",
+ "elapsed_s": 15.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_forming_one_record_keeps_the_ledger_only_at_a_price_site_blind_only_with_the_ambient_at_infinity_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=15 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9159's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "533b8ec96b891b5b6d1c13c719a095265ce65884cb90a0b43f682b20ea9038d1",
+ "stdout_tail": "PR #9159: physics-loop: admissibility induced-law block 116 - forming one record keeps the ledger only at a price: one price serves every site only with the ambient at infinity, and a source in two places separates the two readings\nbranch physics-loop/admissibility-induced-law-block116-forming-one-record-keeps-the-ledger-only-at-a-price-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_forming_one_record_keeps_the_ledger_only_at_a_price_site_blind_only_with_the_ambient_at_infinity_2026_09_24.py: rc=0 PASS=15 FAIL=0\n   mutation moving_ledger_forged: expected B observed B ok\n   mutation site_blind_price_in_box: expected C observed C ok\n   mutation star_price_forged: expected D observed D ok\n   mutation unformed_source_kick_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j37ce",
+  "at_utc": "20260925T013536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+PR #9159: physics-loop: admissibility induced-law block 116 - forming one record keeps the ledger only at a price: one price serves every site only with the ambient at infinity, and a source in two places separates the two readings
+branch physics-loop/admissibility-induced-law-block116-forming-one-record-keeps-the-ledger-only-at-a-price-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_forming_one_record_keeps_the_ledger_only_at_a_price_site_blind_only_with_the_ambient_at_infinity_2026_09_24.py: rc=0 PASS=15 FAIL=0
+   mutation moving_ledger_forged: expected B observed B ok
+   mutation site_blind_price_in_box: expected C observed C ok
+   mutation star_price_forged: expected D observed D ok
+   mutation unformed_source_kick_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,37 @@
+{
+ "task": "P:9151",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block111-recor",
+ "worker": "w-jonathonsmac4f50-j793e",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9151",
+ "pr": 9151,
+ "branch": "physics-loop/admissibility-induced-law-block111-records-in-a-clock-gradient-settle-alike-but-do-not-drift-alike-20260924",
+ "git_sha": "33919560",
+ "started_utc": "20260925T014104Z",
+ "elapsed_s": 38.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_records_in_a_clock_gradient_settle_with_one_weight_per_record_but_do_not_drift_alike_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9151's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "79ccabcb0f17388333fa9fc068da6ccc3231ce188ef47005bbd211e312f5e891",
+ "stdout_tail": "PR #9151: physics-loop: admissibility induced-law block 111 - in a clock gradient moving records settle with one weight per record but do not drift alike, and groups need a binding clause to fall as groups\nbranch physics-loop/admissibility-induced-law-block111-records-in-a-clock-gradient-settle-alike-but-do-not-drift-alike-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_records_in_a_clock_gradient_settle_with_one_weight_per_record_but_do_not_drift_alike_2026_09_24.py: rc=0 PASS=12 FAIL=0\n   mutation gradient_term_kept_at_a_one: expected B observed B ok\n   mutation tilt_exponent_forged: expected C observed C ok\n   mutation drift_sign_flipped: expected D observed D ok\n   mutation contact_push_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j793e",
+  "at_utc": "20260925T014143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

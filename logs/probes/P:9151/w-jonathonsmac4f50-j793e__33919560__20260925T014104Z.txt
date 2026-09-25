@@ -1,0 +1,10 @@
+PR #9151: physics-loop: admissibility induced-law block 111 - in a clock gradient moving records settle with one weight per record but do not drift alike, and groups need a binding clause to fall as groups
+branch physics-loop/admissibility-induced-law-block111-records-in-a-clock-gradient-settle-alike-but-do-not-drift-alike-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_records_in_a_clock_gradient_settle_with_one_weight_per_record_but_do_not_drift_alike_2026_09_24.py: rc=0 PASS=12 FAIL=0
+   mutation gradient_term_kept_at_a_one: expected B observed B ok
+   mutation tilt_exponent_forged: expected C observed C ok
+   mutation drift_sign_flipped: expected D observed D ok
+   mutation contact_push_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

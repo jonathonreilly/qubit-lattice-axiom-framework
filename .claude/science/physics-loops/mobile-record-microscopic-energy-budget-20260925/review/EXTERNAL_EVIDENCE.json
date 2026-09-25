@@ -1,0 +1,1089 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/PRIMITIVE_ATTEMPT_REPAIR.diff",
+      "sha256": "e3316f65def8d9e516a3d5ffd75ad3857ccb46564c3eaff3ea1e3b8eeccdec99",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/PLANNING_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/instructions/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/CONTROL_ATTEMPT02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/CONTROL_ATTEMPT02.stdout",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/EXECUTION_ATTEMPT02.json",
+      "sha256": "5daa6b0d098a2734c53dc7ba9dcf6f9cd9bf590ecf01e2137f3617857fccfb4c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/ROOT_REVIEW.json",
+      "sha256": "bc3ad8aca092b9708902e7f337b0c2e3e82679b9e116506da530f9188ce166b3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/SOURCE_PINS.json",
+      "sha256": "f241a9f6f647a6d38b9e23a862b0cb490c37b652e96026a1d1fbf22c0d497e05",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/WORKING_DERIVATION.md",
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/history/attempt01/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/history/attempt01/primitive_spin_energy_controls.py",
+      "sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/post_sources/author37/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/PROVISIONAL_AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/sources/PROVISIONAL_GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/post_sources/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/post_sources/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/post_sources/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/post_sources/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/post_sources/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/INSTALLED_NO_GO_DISCIPLINE_SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/provisional_author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/sources/provisional_author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/CONTROL_ATTEMPT02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/CONTROL_ATTEMPT02.stdout",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/EXECUTION_ATTEMPT02.json",
+      "sha256": "5daa6b0d098a2734c53dc7ba9dcf6f9cd9bf590ecf01e2137f3617857fccfb4c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/ROOT_REVIEW.json",
+      "sha256": "bc3ad8aca092b9708902e7f337b0c2e3e82679b9e116506da530f9188ce166b3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/SOURCE_PINS.json",
+      "sha256": "f241a9f6f647a6d38b9e23a862b0cb490c37b652e96026a1d1fbf22c0d497e05",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/WORKING_DERIVATION.md",
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/history/attempt01/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/history/attempt01/primitive_spin_energy_controls.py",
+      "sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author37/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/APPROACH_REGISTRY.md",
+      "sha256": "f60a1d2dfde0ae75c71ca1cbc74b6f2583b6469562a9d20e090ad42e8ac0fed9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/POST.md",
+      "sha256": "f6d97ebac36e45216db8168bb20789b291e6129b9d7eae27a5e5789eff9a52ad",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/POST_READ_AND_VERIFICATION_LOG.md",
+      "sha256": "8ea12dfc630aa62d41e2385eda94396372bf6aa1d9b8e987f2f932623501d346",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/POST_SEAL.json",
+      "sha256": "f5c927582a00e8f2b16daca281237559f7850721790ccd717ee09307938a22a0",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/POST_SOURCE_PINS.json",
+      "sha256": "2520937835422f1a63ffbb4df0398004f2e9e201a2617aa948a1fccfdf02c0cd",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "659629a84f18cd434ea4946b6c09996ec95e579fc7bca99302b67da9842d8ed1",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRE.md",
+      "sha256": "e6baa773fa665323a5390a914296d87af9068aa2974783160397332c39a68a4e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRE_SEAL.json",
+      "sha256": "81464c8af25297f2f5765d785e2fe0a01accf566cccfce10e767d86fb79c9baa",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRIMITIVE_ATTEMPT_REPAIR.diff",
+      "sha256": "e3316f65def8d9e516a3d5ffd75ad3857ccb46564c3eaff3ea1e3b8eeccdec99",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRIMITIVE_FINAL_REVIEW.tsv",
+      "sha256": "7f443d8fb8a6c9b623fe06aa5fa010362db95c774d871b37e4763164e3eafc91",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRIMITIVE_NONZERO_D_EXTENSION.diff",
+      "sha256": "d1c976929347f94dbc31683d64a6a2debaa6910e19be7fd5e1dfcc3288f25759",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/PRIMITIVE_REVIEW.tsv",
+      "sha256": "cdf063912c125b83c7517eea2ad0f61c55a5addb57f4c77525bd02aa60a44dc1",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/READ_AND_FAILURE_LOG.md",
+      "sha256": "e1a2c75a188ccb5e0cf657b2fbc3aa7bbd10255a6fe8812a31f9019fc0b16e01",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/SOURCE_PINS.json",
+      "sha256": "a9f90147b9bf10616309c8ced291839d5312b43eff4ae8fa10223de695f7790e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/SOURCE_PINS_INITIAL.json",
+      "sha256": "f2af092ef7a30d693177693c9cc3688cc3123ab9c9ab111b508d400984923b74",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/PLANNING_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/instructions/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_attempt01/EXECUTION.json",
+      "sha256": "668699ee83d900832839246d792be6b57864ba38ed8a2e8e303c87df22fd8d8f",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_attempt01/MICROSCOPIC_RESULTS.json",
+      "sha256": "4e7914448941be58c6b705724a118a158830c6b1171a9c39b89259b39e222d6a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_attempt01/microscopic_control.py",
+      "sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_attempt01/stdout.log",
+      "sha256": "4e7914448941be58c6b705724a118a158830c6b1171a9c39b89259b39e222d6a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/microscopic_control.py",
+      "sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/CONTROL_ATTEMPT02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/CONTROL_ATTEMPT02.stdout",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/EXECUTION_ATTEMPT02.json",
+      "sha256": "5daa6b0d098a2734c53dc7ba9dcf6f9cd9bf590ecf01e2137f3617857fccfb4c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/ROOT_REVIEW.json",
+      "sha256": "bc3ad8aca092b9708902e7f337b0c2e3e82679b9e116506da530f9188ce166b3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/SOURCE_PINS.json",
+      "sha256": "f241a9f6f647a6d38b9e23a862b0cb490c37b652e96026a1d1fbf22c0d497e05",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/WORKING_DERIVATION.md",
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/history/attempt01/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "role": "Historical whitespace-bearing diff, preserved unchanged externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/history/attempt01/primitive_spin_energy_controls.py",
+      "sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_sources/author37/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_verification_attempt01/EXECUTION.json",
+      "sha256": "6c35e359427c2a8ea3c5ac9d7c3a74f266a60718309f00080f17ee3e112c39a2",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_verification_attempt01/VERIFICATION_REPORT.json",
+      "sha256": "79ffff96691c6bcfeb902a68fa952f2eb41929287f62b394294d5f2ef4236ba3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_verification_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_verification_attempt01/stdout.log",
+      "sha256": "79ffff96691c6bcfeb902a68fa952f2eb41929287f62b394294d5f2ef4236ba3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/post_verification_attempt01/verify_post_readonly.py",
+      "sha256": "1cd99ea2cfdf4f301fef39635413e92cff5963d3ecc42ddd2c6fb0d72e75756e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt01/EXECUTION.json",
+      "sha256": "b62210b6e59c702ae5dfb2f52fc7acfb6aa7263d63344c3e03da0619ac3c4f77",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt01/primitive_control.py",
+      "sha256": "f4db9a188aed51e64a5c19fe57a6d4030f9fb2ec4ec7f5cce95c2594bf55023e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt01/stderr.log",
+      "sha256": "117554e215b73aaa9fe618529d6f8a7ee4df03173e5861eb489f4a412f03b31a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt01/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt02/EXECUTION.json",
+      "sha256": "0a5313721b8853095d60af9bf39f8a04f749008506fc40ce80083ddc8a479362",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt02/PRIMITIVE_RESULTS.json",
+      "sha256": "8c8d67a75dba4d20dd3001190af0df6c081d5364438d700ee85ab4a13f84a7ec",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt02/primitive_control.py",
+      "sha256": "294f037463869ef1460e16f18a9c30574dd7460e5af244b4da4883ac3337996f",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt02/stdout.log",
+      "sha256": "8c8d67a75dba4d20dd3001190af0df6c081d5364438d700ee85ab4a13f84a7ec",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt03/EXECUTION.json",
+      "sha256": "f2193d735a5ef20bfae06c3f739f7610921f0c1d723435cbb1a804699aa63f13",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt03/PRIMITIVE_RESULTS.json",
+      "sha256": "7066541369da5efc342e407e6205712694baffdbad22f6cd0a0f8103a3807c9f",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt03/primitive_control.py",
+      "sha256": "412d728fbf1137454311dd3e55d68c49ee49c5a1df120c3ed350ff53d99071a5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt03/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_attempt03/stdout.log",
+      "sha256": "7066541369da5efc342e407e6205712694baffdbad22f6cd0a0f8103a3807c9f",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/primitive_control.py",
+      "sha256": "412d728fbf1137454311dd3e55d68c49ee49c5a1df120c3ed350ff53d99071a5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/PROVISIONAL_AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/sources/PROVISIONAL_GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verification_attempt01/EXECUTION.json",
+      "sha256": "86a1904836ad1d60cea4254bd57f1944d9162f54e4c0ed7e8a1e0eb1c72e6e71",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verification_attempt01/VERIFICATION_REPORT.json",
+      "sha256": "1a0564e27720518f1472d58e86932a1c6b5b5a5c5519a69341f3bb7f5979bc1b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verification_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verification_attempt01/stdout.log",
+      "sha256": "1a0564e27720518f1472d58e86932a1c6b5b5a5c5519a69341f3bb7f5979bc1b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verification_attempt01/verify_pre.py",
+      "sha256": "748453fe85bfbc6cfac416ea798da34275785dd59b5cde2008b982d711900a74",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verify_post_readonly.py",
+      "sha256": "1cd99ea2cfdf4f301fef39635413e92cff5963d3ecc42ddd2c6fb0d72e75756e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent37/verify_pre.py",
+      "sha256": "748453fe85bfbc6cfac416ea798da34275785dd59b5cde2008b982d711900a74",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/EVIDENCE_VERIFICATION.json",
+      "sha256": "f7cc521651fc7ab1bb5db59f9891da5c7516363e71cfa23e67d3bb16f16c524e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/EVIDENCE_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/EVIDENCE_VERIFICATION_EXECUTION.json",
+      "sha256": "b523bf309dcadb7c3e07c7929109dee4c0cb5378dc7bd43a3e78e4e619c6d190",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "sha256": "2149d00e3f3f619bf7de4a430a86aadce5a6f678e73b583d744e2f9c64f1c77b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST.md",
+      "sha256": "29ae5d781835e75e3c79d726d8a183b8161e6b497581e57a6e3119b245631f15",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_EVIDENCE_VERIFICATION.json",
+      "sha256": "99c39da7450d6f2d2633f0050eafd260b90a89e306a1a0f08ef7153c7974b5ed",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_EVIDENCE_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_EVIDENCE_VERIFICATION_EXECUTION.json",
+      "sha256": "b431f9a85787a1d78fde6a8540024a66d99ba735cb6bbbba8b7243f644e9de58",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_REVIEW_RECORD.json",
+      "sha256": "191907e6a3f93797d60c0ad19639a764d01fb75b8899cd3d8bcab41d45f86602",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_SEAL.json",
+      "sha256": "630e81391367f5486af2cde99081b6ce1d3c92d5b20ddcdc33a358f69559cb02",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/POST_SOURCE_PINS.json",
+      "sha256": "d1033d0a72c9ccdb2fdf6b1390dd406990e582d1c2dad6396fee0222929deb61",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/PRE.md",
+      "sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/PRE_SEAL.json",
+      "sha256": "db299c055ce8a454d3bd8a99ef33e13ba9688582214cf0250a16af278fab2025",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/SOURCE_PINS.json",
+      "sha256": "ad21276215dc2f62ec678dd38fb8b602cb7ad0924c781730516d9447043fcfb4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/post_sources/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/post_sources/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/post_sources/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/post_sources/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/post_sources/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/seal_post.py",
+      "sha256": "ff3de048b999bd7766291970dffdaca96e1c4e999fa2955c54df0a2a1e03ec95",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/seal_pre.py",
+      "sha256": "73e39f87ad08e80b1497ba42346a09b5c468e579e2e8582ba5c193edc2d83c0b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/INSTALLED_NO_GO_DISCIPLINE_SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/provisional_author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/sources/provisional_author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/verify_post_bindings.py",
+      "sha256": "7d75e77a7da9574f467de58be2768722509bf51feba76fb18b01d03d57f2bda5",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/independent38/verify_pre_sources.py",
+      "sha256": "da7d024f253d13ad2c0b4c618b041c098b9f8c05edc20b5e3fe388da5970be89",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/MICROSCOPIC_ENERGY_BUDGET_MAIN_PARENT_REFRESH_0555.json",
+      "sha256": "fd6eb40c6dd4a0146f356fe77988cdf7019b2f045d8122e41e7140a06a07e997",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/MICROSCOPIC_ENERGY_BUDGET_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "3b3dc7eb1cd68c715a072ec72baf6800af3ca04ded0676050b43d44a0b8c0711",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/MICROSCOPIC_ENERGY_BUDGET_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "0fa4904bf899749797399f323e9149828bce57c1f6e6bff825812bdf1064e83b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/MICROSCOPIC_ENERGY_BUDGET_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d8908ec842e1e8e4bf565dd4a9032a00dd19c4c691f4062c2d6be58692c855b9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/MICROSCOPIC_ENERGY_BUDGET_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "f2648e04dbfaeae455a97b27bc178e50c145a61b6428b55bed97cddddb55dc37",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "8f067613d17887bc7ce052a1158e75b778beb720ce41a0551c87d393f99b7bff",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_POST_ROOT_EXACT_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "4d18d08a4fe266c6e4e1f113b06ea3b4b24beee21a63538744015e6259e4f33c",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_PRE_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "2ffbf3f4df987a5f0e2dc7b70d2ea0c63bbaf51bb66b41157bb50d62ebabfa83",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_PRE_ROOT_EXACT_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_EIGHTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "d7688798417aeb062066809bf638f6a0f18d366be95359e8eb6babc090247c95",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_POST_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "399932d410b266218263a0e7b2a9abd8beab51e5724c2ac9e1e3d81be0dfb9c4",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_POST_ROOT_EXACT_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "ecb5287990df31a108257305d4831834fd43bf6f02250bbda9e2e5d4daca8b2a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_PRE_ROOT_EXACT_VERIFICATION.json",
+      "sha256": "366d2f48c59a46c32d65c86ef425f0c51bca805fbc09eaba56275f2e8296f529",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_PRE_ROOT_EXACT_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/THIRTY_SEVENTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "fe75f7c7eac988c771672c42965efc147105e8fbb473834d731831e3b32fd656",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/metadata/build_microscopic_energy_budget_publication.py",
+      "sha256": "0a0bd1caf0db5e0cabc4ebc719ffb5235c58caef49c656ca9131b0c61604b03e",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/.claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/runtime/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/MICROSCOPIC_GROUND_ENERGY_AND_FORMATION_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "b6529a9f54915bd6d8157401e74cc1dbdb8d3577917dc8eadf4ca0133f04680d",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/logs/runner-cache/microscopic_ground_energy_and_formation_budget_2026_09_25.txt",
+      "sha256": "a866e09fe9634d2b192f1ad7591e77309e14d88004c89a2849359899d179e878",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/outputs/microscopic_energy_budget_20260925/MICROSCOPIC_ENERGY_BUDGET_PUBLIC_RESULTS.json",
+      "sha256": "924f02f5eb1d058cfd714a48f0b1099352931ffce1bbe65c0d4d0a0de79ec39a",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/outputs/microscopic_energy_budget_20260925/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/outputs/microscopic_energy_budget_20260925/microscopic_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/outputs/microscopic_energy_budget_20260925/microscopic_control.stdout.txt",
+      "sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/publication/scripts/microscopic_ground_energy_and_formation_budget_2026_09_25.py",
+      "sha256": "89bd0473e7c0a976dd42a5c868f2431edb360c6384fd080e61e5997b539ed2e9",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/snapshot/tooling/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "role": "Duplicate frozen source/instruction snapshot, bound by copied seal and manifest."
+    }
+  ]
+}

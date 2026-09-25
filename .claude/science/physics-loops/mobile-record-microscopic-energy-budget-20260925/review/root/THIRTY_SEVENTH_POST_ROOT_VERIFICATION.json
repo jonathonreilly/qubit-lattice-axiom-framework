@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-09-25T05:19:44.044957+00:00",
+  "seal_sha256": "f5c927582a00e8f2b16daca281237559f7850721790ccd717ee09307938a22a0",
+  "seal_members_unchanged": 28,
+  "checker_sha256": "1cd99ea2cfdf4f301fef39635413e92cff5963d3ecc42ddd2c6fb0d72e75756e",
+  "elapsed_seconds": 0.20441758283413947,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stored_output_equal_except_execution_timestamp": true,
+  "full_proof_and_checker_read": true,
+  "scientific_rerun": false,
+  "required_math_repairs": [],
+  "report_sha256": "f6d97ebac36e45216db8168bb20789b291e6129b9d7eae27a5e5789eff9a52ad",
+  "finding": "No required repair of exact gated coefficient, form comparison, one-sided full energy and coherent rate transfer. Global application still depends on root36 and its fixed-volume small-ratio regime. PRE-only counterexamples retain attribution.",
+  "root_read_issues": "Two guessed filenames were absent; actual listed files read. A batched display was truncated and repaired by bounded full reads. One metadata-only dictionary-key assumption raised KeyError; the actual final schema was then inspected and every origin rebound. No scientific program or sealed file changed."
+}

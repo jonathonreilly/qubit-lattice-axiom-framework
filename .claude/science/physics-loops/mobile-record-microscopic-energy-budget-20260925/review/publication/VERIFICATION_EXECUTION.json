@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T06:05:59.370655+00:00",
+  "finished_utc": "2026-09-25T06:05:59.585964+00:00",
+  "elapsed_seconds": 0.2070375420153141,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/publication_comparison/verify_publication_readonly.py"
+  ],
+  "source_sha256": "f43e96d35f688ce5142512257aa5426e7a21c24c3e52f09f989fc5d8db44beac",
+  "stdout": {
+    "path": "VERIFICATION_REPORT.json",
+    "sha256": "b07a40120356d57e2a920345705496c0e9c27132bd2e2090da9d05d92ca287e7",
+    "bytes": 6196
+  },
+  "stderr": {
+    "path": "VERIFICATION.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "observed_unique_files": 338,
+  "before_after_content_size_mtime_ctime_equal": true,
+  "scope": "Genuine read-only verifier execution. Outputs saved by outer recorder only after the preservation check; no original writer or scientific program execution."
+}

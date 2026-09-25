@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-09-25T05:19:44.255780+00:00",
+  "seal_sha256": "db299c055ce8a454d3bd8a99ef33e13ba9688582214cf0250a16af278fab2025",
+  "seal_members_unchanged": 20,
+  "checker_sha256": "da7d024f253d13ad2c0b4c618b041c098b9f8c05edc20b5e3fe388da5970be89",
+  "elapsed_seconds": 0.19185300008393824,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stored_output_equal_except_execution_timestamp": true,
+  "full_proof_and_checker_read": true,
+  "scientific_rerun": false,
+  "required_math_repairs": [],
+  "report_sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+  "finding": "Independent consequences of conditional author37 imports. Uniform capped bound extends via positivity above its zero crossing; finite count yields time averages and late-time energy at fixed S. Exact examples distinguish initial power, monotonicity, bare versus interacting energy conservation. Root38 author was sealed before PRE disclosure.",
+  "not_reconstructed_here": "Author37 microscopic transfer and common-law dependencies; no imported premise independently recertified by this PRE.",
+  "root_read_issues": "Two guessed filenames were absent; actual listed files read. Truncated aggregate display repaired by bounded reads. No scientific numerical run needed or claimed."
+}

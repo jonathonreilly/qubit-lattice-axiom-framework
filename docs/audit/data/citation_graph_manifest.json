@@ -1,6 +1,6 @@
 {
- "edge_count": 14681,
- "node_count": 6668,
+ "edge_count": 14686,
+ "node_count": 6669,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13581,6 +13581,10 @@
   "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
    "deps_hash": "4a576dba9306",
    "out_degree": 6
+  },
+  "microscopic_ground_energy_and_formation_budget_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "2b3d32fad0a4",
+   "out_degree": 5
   },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",

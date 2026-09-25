@@ -1,0 +1,112 @@
+{
+  "checked_utc": "2026-09-25T04:50:31.476587+00:00",
+  "verifier_source_sha256": "748453fe85bfbc6cfac416ea798da34275785dd59b5cde2008b982d711900a74",
+  "PRE_sha256": "e6baa773fa665323a5390a914296d87af9068aa2974783160397332c39a68a4e",
+  "source_manifest_sha256": "a9f90147b9bf10616309c8ced291839d5312b43eff4ae8fa10223de695f7790e",
+  "source_entries_verified": 12,
+  "live_origins_verified": 11,
+  "exact_git_objects_verified": 7,
+  "attempt_receipts": [
+    {
+      "attempt": "primitive_attempt01",
+      "started_utc": "2026-09-25T04:28:11.299248+00:00",
+      "elapsed_seconds": 0.0414413339458406,
+      "exit_code": 1,
+      "source_sha256": "f4db9a188aed51e64a5c19fe57a6d4030f9fb2ec4ec7f5cce95c2594bf55023e",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_bytes": 0,
+      "stderr_sha256": "117554e215b73aaa9fe618529d6f8a7ee4df03173e5861eb489f4a412f03b31a",
+      "stderr_bytes": 719,
+      "parent_or_author_code_executed": false
+    },
+    {
+      "attempt": "primitive_attempt02",
+      "started_utc": "2026-09-25T04:28:29.335503+00:00",
+      "elapsed_seconds": 0.11167924990877509,
+      "exit_code": 0,
+      "source_sha256": "294f037463869ef1460e16f18a9c30574dd7460e5af244b4da4883ac3337996f",
+      "stdout_sha256": "8c8d67a75dba4d20dd3001190af0df6c081d5364438d700ee85ab4a13f84a7ec",
+      "stdout_bytes": 24230,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "parent_or_author_code_executed": false
+    },
+    {
+      "attempt": "primitive_attempt03",
+      "started_utc": "2026-09-25T04:32:29.561521+00:00",
+      "elapsed_seconds": 0.12205154192633927,
+      "exit_code": 0,
+      "source_sha256": "412d728fbf1137454311dd3e55d68c49ee49c5a1df120c3ed350ff53d99071a5",
+      "stdout_sha256": "7066541369da5efc342e407e6205712694baffdbad22f6cd0a0f8103a3807c9f",
+      "stdout_bytes": 26744,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "parent_or_author_code_executed": false
+    },
+    {
+      "attempt": "microscopic_attempt01",
+      "started_utc": "2026-09-25T04:31:32.424953+00:00",
+      "elapsed_seconds": 0.13716625003144145,
+      "exit_code": 0,
+      "source_sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+      "stdout_sha256": "4e7914448941be58c6b705724a118a158830c6b1171a9c39b89259b39e222d6a",
+      "stdout_bytes": 16137,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "parent_or_author_code_executed": false,
+      "blas_threads_requested": 1
+    }
+  ],
+  "primitive_counts": {
+    "previous_rows_unchanged": 45,
+    "current_rows": 51,
+    "nonzero_D_rows_added": 6,
+    "omitting_finite_spin_correction_rejected_rows": 28,
+    "primitive_Gauss_output_checks": 13035,
+    "integer_weight_cases": 556,
+    "unconfined_flux_formula_rows": 8
+  },
+  "microscopic_controls": {
+    "spin_rows": 5,
+    "mixed_coherence_rows": 20,
+    "S_values": [
+      4,
+      8,
+      12,
+      16,
+      24
+    ],
+    "smallest_retained_roundoff_high_weight": -5.329070518200751e-15
+  },
+  "control_imports": {
+    "primitive_control.py": [
+      "collections",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "pathlib",
+      "time"
+    ],
+    "microscopic_control.py": [
+      "hashlib",
+      "itertools",
+      "json",
+      "math",
+      "numpy",
+      "pathlib",
+      "time"
+    ]
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4"
+  },
+  "verifier_has_no_file_mutation_calls": true,
+  "root37_or_other_checker_access": false,
+  "parent_or_author_scientific_execution": false,
+  "provisional_dependency_retained": "Root36 common-law energy/activity inequality, including its fixed-graph small-K/delta global scope.",
+  "all_evidence_comparisons_passed": true,
+  "limits": "Bookkeeping and arithmetic correspondence; no rerun of scientific controls, formal audit, empirical test or proof replacement."
+}

@@ -1,0 +1,218 @@
+{
+  "verified_utc": "2026-09-25T05:05:09.510586+00:00",
+  "scope": "Released-source correspondence and stored-evidence arithmetic only; no scientific runner execution or applied audit verdict.",
+  "pre_seal_sha256": "81464c8af25297f2f5765d785e2fe0a01accf566cccfce10e767d86fb79c9baa",
+  "pre_members_unchanged": 48,
+  "author_seal_sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+  "author_members_live_and_snapshot_verified": 17,
+  "permitted_parent_origins_verified": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572"
+    }
+  ],
+  "author_manifest_entries_matched_to_allowed_parents": 6,
+  "author_manifest_references_not_followed": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/AUTHOR_SEAL.json",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE_SEAL.json"
+  ],
+  "author_program_functions_parsed": [
+    "cycle_space",
+    "outgoing",
+    "create",
+    "sparse_paths",
+    "rectangular",
+    "dense_norm",
+    "build"
+  ],
+  "changed_functions_from_preserved_failed_attempt": [
+    "build"
+  ],
+  "preserved_repair_diff_exact": true,
+  "attempt01_exit_code": 1,
+  "attempt02_exit_code": 0,
+  "attempt02_wall_seconds": 0.4523119160439819,
+  "attempt02_internal_seconds": 0.16115583293139935,
+  "result_stdout_byte_identity": true,
+  "author_identity_row_review": [
+    {
+      "cycle_length": 4,
+      "spin": 1,
+      "dimension": 19,
+      "coefficient_residual": 0.0,
+      "loss_residual": 0.0
+    },
+    {
+      "cycle_length": 4,
+      "spin": 2,
+      "dimension": 39,
+      "coefficient_residual": 1.7763568394002505e-15,
+      "loss_residual": 2.220446049250313e-16
+    },
+    {
+      "cycle_length": 4,
+      "spin": 4,
+      "dimension": 79,
+      "coefficient_residual": 1.7763568394002505e-15,
+      "loss_residual": 2.220446049250313e-16
+    },
+    {
+      "cycle_length": 8,
+      "spin": 1,
+      "dimension": 323,
+      "coefficient_residual": 0.0,
+      "loss_residual": 0.0
+    },
+    {
+      "cycle_length": 8,
+      "spin": 2,
+      "dimension": 855,
+      "coefficient_residual": 1.0658141036401503e-14,
+      "loss_residual": 8.881784197001252e-16
+    },
+    {
+      "cycle_length": 8,
+      "spin": 3,
+      "dimension": 1387,
+      "coefficient_residual": 7.105427357601002e-15,
+      "loss_residual": 8.881784197001252e-16
+    }
+  ],
+  "author_spectral_stored_arithmetic": [
+    {
+      "spin": 1,
+      "energy_minus_common": 0.039902381918647034,
+      "rate_error_over_epsilon": -1.1396349764206484,
+      "eigenvector_residual": 4.2460115075710474e-11
+    },
+    {
+      "spin": 2,
+      "energy_minus_common": 0.013367472911699707,
+      "rate_error_over_epsilon": -0.652503613561417,
+      "eigenvector_residual": 3.250592557309733e-10
+    },
+    {
+      "spin": 4,
+      "energy_minus_common": 0.0040171137487625685,
+      "rate_error_over_epsilon": -0.3563987651498314,
+      "eigenvector_residual": 2.894730206305453e-09
+    },
+    {
+      "spin": 8,
+      "energy_minus_common": 0.0011165003739792567,
+      "rate_error_over_epsilon": -0.18767977198371882,
+      "eigenvector_residual": 6.761074149575574e-08
+    }
+  ],
+  "creation_defect_polynomial_checks": [
+    {
+      "q": -1,
+      "sigma": -1,
+      "polynomial_coefficients": [
+        1,
+        3,
+        2
+      ],
+      "minimum_on_stored_integer_range": 0
+    },
+    {
+      "q": -1,
+      "sigma": 1,
+      "polynomial_coefficients": [
+        1,
+        1,
+        2
+      ],
+      "minimum_on_stored_integer_range": 2
+    },
+    {
+      "q": 1,
+      "sigma": -1,
+      "polynomial_coefficients": [
+        1,
+        -1,
+        2
+      ],
+      "minimum_on_stored_integer_range": 2
+    },
+    {
+      "q": 1,
+      "sigma": 1,
+      "polynomial_coefficients": [
+        1,
+        -3,
+        2
+      ],
+      "minimum_on_stored_integer_range": 0
+    }
+  ],
+  "own_sealed_primitive_groups": {
+    "identity": 51,
+    "scalar": 7,
+    "flux": 8
+  },
+  "own_sealed_coherence_comparison": [
+    {
+      "spin": 4,
+      "rows": 4,
+      "energy_excess": 0.529469466817666,
+      "min_rate": 6.7827844287939945,
+      "max_rate": 7.833855905373512
+    },
+    {
+      "spin": 8,
+      "rows": 4,
+      "energy_excess": 0.5084924517237184,
+      "min_rate": 7.640563187543156,
+      "max_rate": 8.058394449813461
+    },
+    {
+      "spin": 12,
+      "rows": 4,
+      "energy_excess": 0.505177011759474,
+      "min_rate": 7.817137368844027,
+      "max_rate": 8.054813075219771
+    },
+    {
+      "spin": 16,
+      "rows": 4,
+      "energy_excess": 0.502922062103397,
+      "min_rate": 7.885608341855905,
+      "max_rate": 8.043161454000975
+    },
+    {
+      "spin": 24,
+      "rows": 4,
+      "energy_excess": 0.5013088718671854,
+      "min_rate": 7.9405277572746025,
+      "max_rate": 8.027932944980428
+    }
+  ],
+  "stationary_gap_in_delta_n_units": "4",
+  "root_and_PRE_parameters_compared": "Root K=100 versus PRE K=1; numerical spectra are not asserted identical.",
+  "scientific_programs_imported_or_executed": false,
+  "verifier_writes_files_or_spawns_processes": false,
+  "all_checks_passed": true
+}

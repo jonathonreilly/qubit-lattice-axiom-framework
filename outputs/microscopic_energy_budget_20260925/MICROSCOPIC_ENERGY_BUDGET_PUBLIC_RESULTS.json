@@ -1,0 +1,16 @@
+{
+  "scope": "Fresh reuse of exact root cycle controls for the microscopic transfer; no numerical cubic residence theorem or new independent check.",
+  "source_sha256": "89bd0473e7c0a976dd42a5c868f2431edb360c6384fd080e61e5997b539ed2e9",
+  "runtime_source_sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+  "elapsed_seconds": 0.6599441249854863,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 8965,
+  "stdout_sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+  "complete_scientific_artifact": {
+    "path": "outputs/microscopic_energy_budget_20260925/SPIN_ENERGY_CONTROL_RESULTS.json",
+    "sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+    "bytes": 8965
+  },
+  "all_assertions_passed": true
+}

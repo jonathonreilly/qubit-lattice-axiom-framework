@@ -1,0 +1,93 @@
+{
+  "at_utc": "2026-09-25T05:28:05.663946+00:00",
+  "signed_by": "/root/rotor_upper_tail_check",
+  "signature_kind": "Checker identification and SHA256 content manifest; no external cryptographic-signature assertion.",
+  "phase": "Released-source POST38",
+  "scope": "Conditional comparison of the complete four-member author38 argument and metadata with preserved PRE38. No independent confirmation of the author37 import or retained audit disposition.",
+  "result": "No required mathematical correction; fixed-parameter, hitting-time, unbounded-reservoir and additive-energy interpretations are explicit in POST.",
+  "member_count": 13,
+  "released_source_binding_count": 5,
+  "reused_PRE_source_binding_count": 12,
+  "preserved_PRE": {
+    "report": {
+      "sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+      "bytes": 29080
+    },
+    "seal": {
+      "sha256": "db299c055ce8a454d3bd8a99ef33e13ba9688582214cf0250a16af278fab2025",
+      "bytes": 4535
+    },
+    "member_count": 20,
+    "all_member_hashes_reverified_and_read_only": true
+  },
+  "original_author_or_scientific_programs_executed": [],
+  "other_active_packets_or_publications_read": false,
+  "immutability": "All listed POST members and this seal are chmod 0444. PRE remains unchanged; future work requires a new generation.",
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "29ae5d781835e75e3c79d726d8a183b8161e6b497581e57a6e3119b245631f15",
+      "bytes": 16414
+    },
+    {
+      "path": "POST_EVIDENCE_VERIFICATION.json",
+      "sha256": "99c39da7450d6f2d2633f0050eafd260b90a89e306a1a0f08ef7153c7974b5ed",
+      "bytes": 15638
+    },
+    {
+      "path": "POST_EVIDENCE_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_EVIDENCE_VERIFICATION_EXECUTION.json",
+      "sha256": "b431f9a85787a1d78fde6a8540024a66d99ba735cb6bbbba8b7243f644e9de58",
+      "bytes": 934
+    },
+    {
+      "path": "POST_REVIEW_RECORD.json",
+      "sha256": "191907e6a3f93797d60c0ad19639a764d01fb75b8899cd3d8bcab41d45f86602",
+      "bytes": 2254
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "d1033d0a72c9ccdb2fdf6b1390dd406990e582d1c2dad6396fee0222929deb61",
+      "bytes": 3599
+    },
+    {
+      "path": "post_sources/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "bytes": 877
+    },
+    {
+      "path": "post_sources/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "bytes": 10021
+    },
+    {
+      "path": "post_sources/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "bytes": 1249
+    },
+    {
+      "path": "post_sources/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "bytes": 1117
+    },
+    {
+      "path": "post_sources/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "bytes": 2421
+    },
+    {
+      "path": "seal_post.py",
+      "sha256": "ff3de048b999bd7766291970dffdaca96e1c4e999fa2955c54df0a2a1e03ec95",
+      "bytes": 4641
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "sha256": "7d75e77a7da9574f467de58be2768722509bf51feba76fb18b01d03d57f2bda5",
+      "bytes": 7646
+    }
+  ]
+}

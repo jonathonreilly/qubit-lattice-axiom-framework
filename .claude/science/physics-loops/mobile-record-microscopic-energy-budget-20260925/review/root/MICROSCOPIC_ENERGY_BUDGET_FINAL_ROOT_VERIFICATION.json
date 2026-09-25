@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-09-25T06:20:44.201550+00:00",
+  "reviewer": "root",
+  "report_sha256": "8aaae2a2cc0436a3c48fa0ca24609a0d1fed03d1fa264d798616cdf20c5a1d2b",
+  "seal_sha256": "cd01b9df653f64846803d461a0c0ed516f42b7bbf42a9611a69bd8f151d4418f",
+  "complete_report_and_verifier_read": true,
+  "complete_execution_and_scope_logs_read": true,
+  "clipped_display_repaired": "VERIFICATION_REPORT.json read separately in full; historical reference receipt used only as schema with complete builder and selected context fields.",
+  "seal_members_unchanged": 176,
+  "snapshot_origins_bound": 168,
+  "observed_files_unchanged_content_size_mtime_ctime": 345,
+  "readonly_verifier_sha256": "f43e96d35f688ce5142512257aa5426e7a21c24c3e52f09f989fc5d8db44beac",
+  "readonly_elapsed_seconds": 0.21237970795482397,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "full_output_exact_except_at_utc": true,
+  "output_sha256": "f4e6faaa687cfdfc001173ed8714024db00ccb63e6225293e9d04f7944f3894f",
+  "prior_recovery_pins_reverified": 928,
+  "required_scientific_repairs": [],
+  "scope": "Root rereview and identity validation of previously reviewed personal37/38, separate PRE/POST and final released-source correspondence. No fresh independent scientific reconstruction or audit disposition.",
+  "scientific_program_or_original_seal_writer_executions": []
+}

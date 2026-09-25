@@ -1,0 +1,27 @@
+{
+  "agent": "/root/rotor_upper_tail_check",
+  "phase": "Released-source POST38",
+  "release_coverage": "Complete AUTHOR_SEAL.json and all four sealed members were read. New sources are frozen separately; all PRE files are preserved.",
+  "scientific_result": "No required mathematical correction to the conditional total-residence and first-hitting-time argument. Additive-energy implementation conclusion is valid with the finite-expectation and strong-conservation interpretation stated in POST.",
+  "required_quantifier_precision": [
+    "Fixed graph, positive fixed couplings in the imported regime and fixed alpha in (0,4), then sufficiently large spin.",
+    "Uniform spin threshold over initial densities comes from the fixed-cap state-uniform estimate.",
+    "Hitting time depends on spin and initial ground density; no universal observation time with identical gain is selected.",
+    "Total residence measure includes all returns but alone is not a pointwise relaxation theorem.",
+    "The target is the unconditioned full ordinary mean energy, not an individual recorded energy or mark energy."
+  ],
+  "energy_ledger_precision": [
+    "The author explicitly assumes additive energy conservation at the endpoints and no omitted energy or external work in that balance.",
+    "An unbounded reservoir requires well-defined expectations or nonnegative forms; an unexcited normal state requires attained ground support.",
+    "A conserving unitary requires strong commutation with additive energy, not merely a formal commutator.",
+    "Conservation of an interacting total Hamiltonian alone permits an interaction-energy contribution.",
+    "Passivity at nonzero temperature is not zero excitation; no heat/work/light or vacuum identification follows."
+  ],
+  "independence": "This is comparison by the same checker after release, not another blind derivation. Author37 stays explicitly provisional. PRE additions retain their original attribution.",
+  "scientific_or_author_programs_executed": [],
+  "original_sealing_writers_executed": [],
+  "new_failed_attempts": [],
+  "forbidden_sources_accessed": [],
+  "mutations": "Only new POST files and frozen release copies in the existing external independent directory.",
+  "stop_after_seal": true
+}

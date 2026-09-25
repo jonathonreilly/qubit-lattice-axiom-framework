@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-25T04:54:33.157903+00:00",
+  "authorship": "Personally derived by root with unchanged selected model and reasoning effort.",
+  "argument_read": "Complete note and working route personally read. Stray plus in a prose line corrected before sealing; no scientific revision.",
+  "checks": [
+    "Full charge space N>=n from Gauss, N<=2n, exact birth increment two.",
+    "Actual microscopic minimum replaces rotor infimum with an explicit vanishing remainder.",
+    "Bound on total occupation time uses all-state capped estimate and exact finite-spin balance, without extrapolating a fixed-time approximation.",
+    "Every initial ground density reaches alpha delta n excitation; no unique ground or positive initial derivative assumed.",
+    "Alpha two coefficient is 5/(16 kappa); no calibrated physical time inferred.",
+    "Energy-conserving endpoint bookkeeping distinguishes zero-excitation environment from merely passive finite-temperature reservoir."
+  ],
+  "new_numerical_execution": false,
+  "independent_review": "Not yet performed; root37 itself remains a provisional import.",
+  "limits": "No physical vacuum identification, energy source construction, observed fit, volume-uniform result, audit status or new axiom."
+}

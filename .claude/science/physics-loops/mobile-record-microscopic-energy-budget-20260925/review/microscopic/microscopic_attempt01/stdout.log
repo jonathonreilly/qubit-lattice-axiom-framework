@@ -1,0 +1,438 @@
+{
+  "source_sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+  "couplings": {
+    "K": 1,
+    "delta": 1,
+    "kappa": 1
+  },
+  "scope": "Own complete physical square finite-spin matrices; finite floating diagnostics, not degree-six root36 evidence or a proof of asymptotic uniformity.",
+  "rows": [
+    {
+      "S": 4,
+      "epsilon": 0.22360679774997896,
+      "N2_dimension": 49,
+      "N4_dimension": 30,
+      "low_cluster_dimension": 9,
+      "high_cluster_minimum": 0.8419242579928118,
+      "canonical_low_remainder_norm": 0.7230042623797209,
+      "canonical_low_remainder_over_epsilon_squared": 14.460085247594419,
+      "ground_energy": -4.921207543435314,
+      "common_compressed_infimum": -5.5139568847493114,
+      "normalized_low_common_energy": -5.511790223521064,
+      "normalized_low_D": 0.8972959415499923,
+      "finite_spin_magnetic_form_error": -0.06915000422477795,
+      "actual_ground_rate": 7.291317991006494,
+      "effective_spin_ground_rate": 7.825478676284446,
+      "common_ground_rate": 7.999999999999993,
+      "ground_bare_high_weight": 0.19196268858582968,
+      "ground_rotated_high_weight": 8.881784197001252e-16,
+      "bare_P_mean_energy": 80.0,
+      "dressed_P_mean_energy": -3.58179504169256,
+      "bare_P_rate": 0.0,
+      "dressed_P_rate": 7.140703219778956,
+      "bare_dressed_trace_distance": 0.8563856927262415,
+      "full_occupancy_escaping_word": {
+        "q": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          1,
+          -1,
+          -2,
+          2
+        ],
+        "D": 0,
+        "microscopic_energy": 0,
+        "microscopic_rate": 0,
+        "stationary_exact": true
+      },
+      "mixed_state_rows": [
+        {
+          "coherence": "-1.0",
+          "rotated_high_weight": 0.0012499999999999998,
+          "actual_mean_energy": -4.391738076617648,
+          "mean_energy_excess": 0.529469466817666,
+          "actual_rate": 6.7827844287939945,
+          "normalized_low_common_rate": 7.999999999999993,
+          "rate_difference_over_epsilon": -5.443553520975697,
+          "common_low_energy": -5.511790223521064
+        },
+        {
+          "coherence": "0.0",
+          "rotated_high_weight": 0.0012499999999999998,
+          "actual_mean_energy": -4.391738076617648,
+          "mean_energy_excess": 0.529469466817666,
+          "actual_rate": 7.308320167083753,
+          "normalized_low_common_rate": 7.999999999999993,
+          "rate_difference_over_epsilon": -3.093286250132817,
+          "common_low_energy": -5.511790223521064
+        },
+        {
+          "coherence": "1.0",
+          "rotated_high_weight": 0.0012499999999999998,
+          "actual_mean_energy": -4.391738076617648,
+          "mean_energy_excess": 0.529469466817666,
+          "actual_rate": 7.833855905373512,
+          "normalized_low_common_rate": 7.999999999999993,
+          "rate_difference_over_epsilon": -0.7430189792899379,
+          "common_low_energy": -5.511790223521064
+        },
+        {
+          "coherence": "0.5j",
+          "rotated_high_weight": 0.0012499999999999998,
+          "actual_mean_energy": -4.391738076617648,
+          "mean_energy_excess": 0.529469466817666,
+          "actual_rate": 7.308320167083753,
+          "normalized_low_common_rate": 7.999999999999993,
+          "rate_difference_over_epsilon": -3.093286250132817,
+          "common_low_energy": -5.511790223521064
+        }
+      ]
+    },
+    {
+      "S": 8,
+      "epsilon": 0.11785113019775793,
+      "N2_dimension": 97,
+      "N4_dimension": 62,
+      "low_cluster_dimension": 17,
+      "high_cluster_minimum": 0.949304965802664,
+      "canonical_low_remainder_norm": 0.20624214573182773,
+      "canonical_low_remainder_over_epsilon_squared": 14.849434492691593,
+      "ground_energy": -5.352429455323403,
+      "common_compressed_infimum": -5.5139568850565395,
+      "normalized_low_common_energy": -5.513770976438631,
+      "normalized_low_D": 0.9246296107856311,
+      "finite_spin_magnetic_form_error": -0.01993421510404926,
+      "actual_ground_rate": 7.842137065070511,
+      "effective_spin_ground_rate": 7.949037070347242,
+      "common_ground_rate": 7.999999999999954,
+      "ground_bare_high_weight": 0.05525242906127157,
+      "ground_rotated_high_weight": 5.773159728050814e-15,
+      "bare_P_mean_energy": 287.99999999999994,
+      "dressed_P_mean_energy": -3.886846227150508,
+      "bare_P_rate": 0.0,
+      "dressed_P_rate": 7.771973378443448,
+      "bare_dressed_trace_distance": 0.4662911189753376,
+      "full_occupancy_escaping_word": {
+        "q": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          3,
+          -3,
+          -4,
+          4
+        ],
+        "D": 0,
+        "microscopic_energy": 0,
+        "microscopic_rate": 0,
+        "stationary_exact": true
+      },
+      "mixed_state_rows": [
+        {
+          "coherence": "-1.0",
+          "rotated_high_weight": 9.645061728395065e-05,
+          "actual_mean_energy": -4.8439370035996845,
+          "mean_energy_excess": 0.5084924517237184,
+          "actual_rate": 8.058394449813461,
+          "normalized_low_common_rate": 7.999999999999954,
+          "rate_difference_over_epsilon": 0.49549333736146123,
+          "common_low_energy": -5.513770976438631
+        },
+        {
+          "coherence": "0.0",
+          "rotated_high_weight": 9.645061728395065e-05,
+          "actual_mean_energy": -4.8439370035996845,
+          "mean_energy_excess": 0.5084924517237184,
+          "actual_rate": 7.849478818678309,
+          "normalized_low_common_rate": 7.999999999999954,
+          "rate_difference_over_epsilon": -1.277214576296942,
+          "common_low_energy": -5.513770976438631
+        },
+        {
+          "coherence": "1.0",
+          "rotated_high_weight": 9.645061728395065e-05,
+          "actual_mean_energy": -4.8439370035996845,
+          "mean_energy_excess": 0.5084924517237184,
+          "actual_rate": 7.640563187543156,
+          "normalized_low_common_rate": 7.999999999999954,
+          "rate_difference_over_epsilon": -3.0499224899553457,
+          "common_low_energy": -5.513770976438631
+        },
+        {
+          "coherence": "0.5j",
+          "rotated_high_weight": 9.645061728395065e-05,
+          "actual_mean_energy": -4.8439370035996845,
+          "mean_energy_excess": 0.5084924517237184,
+          "actual_rate": 7.849478818678309,
+          "normalized_low_common_rate": 7.999999999999954,
+          "rate_difference_over_epsilon": -1.277214576296942,
+          "common_low_energy": -5.513770976438631
+        }
+      ]
+    },
+    {
+      "S": 12,
+      "epsilon": 0.08006407690254357,
+      "N2_dimension": 145,
+      "N4_dimension": 94,
+      "low_cluster_dimension": 25,
+      "high_cluster_minimum": 0.9756641868179983,
+      "canonical_low_remainder_norm": 0.09669514838994916,
+      "canonical_low_remainder_over_epsilon_squared": 15.08444314883207,
+      "ground_energy": -5.440001231181869,
+      "common_compressed_infimum": -5.513956885056474,
+      "normalized_low_common_energy": -5.513916442304286,
+      "normalized_low_D": 0.9304312117882438,
+      "finite_spin_magnetic_form_error": -0.00926902335795465,
+      "actual_ground_rate": 7.931899873572636,
+      "effective_spin_ground_rate": 7.976230351487028,
+      "common_ground_rate": 8.000000000000043,
+      "ground_bare_high_weight": 0.025592933033781178,
+      "ground_rotated_high_weight": -5.329070518200751e-15,
+      "bare_P_mean_energy": 624.0,
+      "dressed_P_mean_energy": -3.9482519596185472,
+      "bare_P_rate": 0.0,
+      "dressed_P_rate": 7.896154849891079,
+      "bare_dressed_trace_distance": 0.3186868519047657,
+      "full_occupancy_escaping_word": {
+        "q": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          5,
+          -5,
+          -6,
+          6
+        ],
+        "D": 0,
+        "microscopic_energy": 0,
+        "microscopic_rate": 0,
+        "stationary_exact": true
+      },
+      "mixed_state_rows": [
+        {
+          "coherence": "-1.0",
+          "rotated_high_weight": 2.0545693622616697e-05,
+          "actual_mean_energy": -4.934824219422395,
+          "mean_energy_excess": 0.505177011759474,
+          "actual_rate": 7.817137368844027,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -2.2839535311023633,
+          "common_low_energy": -5.513916442304286
+        },
+        {
+          "coherence": "0.0",
+          "rotated_high_weight": 2.0545693622616697e-05,
+          "actual_mean_energy": -4.934824219422395,
+          "mean_energy_excess": 0.505177011759474,
+          "actual_rate": 7.9359752220318995,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -0.799669220517911,
+          "common_low_energy": -5.513916442304286
+        },
+        {
+          "coherence": "1.0",
+          "rotated_high_weight": 2.0545693622616697e-05,
+          "actual_mean_energy": -4.934824219422395,
+          "mean_energy_excess": 0.505177011759474,
+          "actual_rate": 8.054813075219771,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": 0.68461509006653,
+          "common_low_energy": -5.513916442304286
+        },
+        {
+          "coherence": "0.5j",
+          "rotated_high_weight": 2.0545693622616697e-05,
+          "actual_mean_energy": -4.934824219422395,
+          "mean_energy_excess": 0.505177011759474,
+          "actual_rate": 7.9359752220318995,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -0.799669220517911,
+          "common_low_energy": -5.513916442304286
+        }
+      ]
+    },
+    {
+      "S": 16,
+      "epsilon": 0.06063390625908324,
+      "N2_dimension": 193,
+      "N4_dimension": 126,
+      "low_cluster_dimension": 33,
+      "high_cluster_minimum": 0.9858053723916141,
+      "canonical_low_remainder_norm": 0.05605468858851346,
+      "canonical_low_remainder_over_epsilon_squared": 15.246875296075661,
+      "ground_energy": -5.471681835264301,
+      "common_compressed_infimum": -5.51395688505649,
+      "normalized_low_common_energy": -5.513943479696571,
+      "normalized_low_D": 0.9325491058508792,
+      "finite_spin_magnetic_form_error": -0.005330340137286226,
+      "actual_ground_rate": 7.9619903187739745,
+      "effective_spin_ground_rate": 7.986314993951665,
+      "common_ground_rate": 8.000000000000043,
+      "ground_bare_high_weight": 0.014692107315375343,
+      "ground_rotated_high_weight": -5.329070518200751e-15,
+      "bare_P_mean_energy": 1088.0,
+      "dressed_P_mean_energy": -3.970431175386192,
+      "bare_P_rate": 0.0,
+      "dressed_P_rate": 7.9407501587890374,
+      "bare_dressed_trace_distance": 0.2418594249168134,
+      "full_occupancy_escaping_word": {
+        "q": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          7,
+          -7,
+          -8,
+          8
+        ],
+        "D": 0,
+        "microscopic_energy": 0,
+        "microscopic_rate": 0,
+        "stationary_exact": true
+      },
+      "mixed_state_rows": [
+        {
+          "coherence": "-1.0",
+          "rotated_high_weight": 6.758217993079584e-06,
+          "actual_mean_energy": -4.968759773160904,
+          "mean_energy_excess": 0.502922062103397,
+          "actual_rate": 8.043161454000975,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": 0.7118369352043292,
+          "common_low_energy": -5.513943479696571
+        },
+        {
+          "coherence": "0.0",
+          "rotated_high_weight": 6.758217993079584e-06,
+          "actual_mean_energy": -4.968759773160904,
+          "mean_energy_excess": 0.502922062103397,
+          "actual_rate": 7.96438489792844,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -0.5873793108334888,
+          "common_low_energy": -5.513943479696571
+        },
+        {
+          "coherence": "1.0",
+          "rotated_high_weight": 6.758217993079584e-06,
+          "actual_mean_energy": -4.968759773160904,
+          "mean_energy_excess": 0.502922062103397,
+          "actual_rate": 7.885608341855905,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -1.8865955568713069,
+          "common_low_energy": -5.513943479696571
+        },
+        {
+          "coherence": "0.5j",
+          "rotated_high_weight": 6.758217993079584e-06,
+          "actual_mean_energy": -4.968759773160904,
+          "mean_energy_excess": 0.502922062103397,
+          "actual_rate": 7.96438489792844,
+          "normalized_low_common_rate": 8.000000000000043,
+          "rate_difference_over_epsilon": -0.5873793108334888,
+          "common_low_energy": -5.513943479696571
+        }
+      ]
+    },
+    {
+      "S": 24,
+      "epsilon": 0.040824829046386304,
+      "N2_dimension": 289,
+      "N4_dimension": 190,
+      "low_cluster_dimension": 49,
+      "high_cluster_minimum": 0.9934708005371524,
+      "canonical_low_remainder_norm": 0.02574746745000854,
+      "canonical_low_remainder_over_epsilon_squared": 15.448480470005121,
+      "ground_energy": -5.494841577327785,
+      "common_compressed_infimum": -5.5139568850557925,
+      "normalized_low_common_energy": -5.513954114545009,
+      "normalized_low_D": 0.9341038451668727,
+      "finite_spin_magnetic_form_error": -0.0024211625167215754,
+      "actual_ground_rate": 7.983125712374486,
+      "effective_spin_ground_rate": 7.993778613655726,
+      "common_ground_rate": 7.999999999999998,
+      "ground_bare_high_weight": 0.006664148815362923,
+      "ground_rotated_high_weight": 2.220446049250313e-16,
+      "bare_P_mean_energy": 2399.9999999999995,
+      "dressed_P_mean_energy": -3.9866338135261663,
+      "bare_P_rate": 0.0,
+      "dressed_P_rate": 7.973245010778202,
+      "bare_dressed_trace_distance": 0.16309415930544363,
+      "full_occupancy_escaping_word": {
+        "q": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "E": [
+          11,
+          -11,
+          -12,
+          12
+        ],
+        "D": 0,
+        "microscopic_energy": 0,
+        "microscopic_rate": 0,
+        "stationary_exact": true
+      },
+      "mixed_state_rows": [
+        {
+          "coherence": "-1.0",
+          "rotated_high_weight": 1.3888888888888894e-06,
+          "actual_mean_energy": -4.993532705460599,
+          "mean_energy_excess": 0.5013088718671854,
+          "actual_rate": 8.027932944980428,
+          "normalized_low_common_rate": 7.999999999999998,
+          "rate_difference_over_epsilon": 0.6842146221528953,
+          "common_low_energy": -5.513954114545009
+        },
+        {
+          "coherence": "0.0",
+          "rotated_high_weight": 1.3888888888888894e-06,
+          "actual_mean_energy": -4.993532705460599,
+          "mean_energy_excess": 0.5013088718671854,
+          "actual_rate": 7.984230351127516,
+          "normalized_low_common_rate": 7.999999999999998,
+          "rate_difference_over_epsilon": -0.3862759316043833,
+          "common_low_energy": -5.513954114545009
+        },
+        {
+          "coherence": "1.0",
+          "rotated_high_weight": 1.3888888888888894e-06,
+          "actual_mean_energy": -4.993532705460599,
+          "mean_energy_excess": 0.5013088718671854,
+          "actual_rate": 7.9405277572746025,
+          "normalized_low_common_rate": 7.999999999999998,
+          "rate_difference_over_epsilon": -1.4567664853616837,
+          "common_low_energy": -5.513954114545009
+        },
+        {
+          "coherence": "0.5j",
+          "rotated_high_weight": 1.3888888888888894e-06,
+          "actual_mean_energy": -4.993532705460599,
+          "mean_energy_excess": 0.5013088718671854,
+          "actual_rate": 7.984230351127516,
+          "normalized_low_common_rate": 7.999999999999998,
+          "rate_difference_over_epsilon": -0.3862759316043833,
+          "common_low_energy": -5.513954114545009
+        }
+      ]
+    }
+  ],
+  "all_assertions_passed": true,
+  "elapsed_seconds": 0.03939004195854068
+}

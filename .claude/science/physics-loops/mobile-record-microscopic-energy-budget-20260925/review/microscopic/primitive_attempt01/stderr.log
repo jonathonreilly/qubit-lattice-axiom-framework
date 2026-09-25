@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/primitive_control.py", line 237, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/primitive_control.py", line 174, in main
+    words.update(g.births({initial:Q(1)}))
+                 ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/primitive_control.py", line 153, in births
+    for a,b,i in self.edges:
+        ^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)

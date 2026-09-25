@@ -1,0 +1,10 @@
+/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py:97: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  Dc=sp.diags(Ds[c][P]);correction-=(Ma@Dc+Dc@Ma)/(2*C)
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py", line 151, in <module>
+    row,data=build(length,spin);identity.append(row)
+             ~~~~~^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py", line 133, in build
+    assert dense_norm(resolved-coherent)==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

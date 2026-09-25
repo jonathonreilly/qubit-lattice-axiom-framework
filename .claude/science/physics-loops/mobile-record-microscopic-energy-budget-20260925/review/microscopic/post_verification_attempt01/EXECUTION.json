@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-25T05:05:09.521114+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-independent/verify_post_readonly.py"
+  ],
+  "elapsed_seconds": 0.061507332837209105,
+  "exit_code": 0,
+  "source_sha256": "1cd99ea2cfdf4f301fef39635413e92cff5963d3ecc42ddd2c6fb0d72e75756e",
+  "stdout_bytes": 6993,
+  "stderr_bytes": 0,
+  "own_and_author_file_hash_maps_unchanged_by_verifier": true,
+  "compared_preexisting_file_count": 87
+}

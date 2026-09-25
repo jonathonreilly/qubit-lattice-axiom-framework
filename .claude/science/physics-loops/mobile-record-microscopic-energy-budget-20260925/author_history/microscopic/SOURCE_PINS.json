@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-25T04:16:40.274690+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "scope": "Supplied current parent; source identities verified, no retained audit inferred."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "scope": "Supplied current parent; source identities verified, no retained audit inferred."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "scope": "Supplied current parent; source identities verified, no retained audit inferred."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "scope": "Supplied current parent; source identities verified, no retained audit inferred."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/AUTHOR_SEAL.json",
+      "sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE.md",
+      "sha256": "d78d92e13dd62895d1f7c8ebff2cfc28f9e88b19d1778cd6eba8cfc3e195d6bc",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/PRE_SEAL.json",
+      "sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51",
+      "scope": "Provisional common-law dependency; independent36 PRE was exposed before this final author37 note and is context, not a replacement for the author36 constants."
+    }
+  ],
+  "workflow_revision": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+}

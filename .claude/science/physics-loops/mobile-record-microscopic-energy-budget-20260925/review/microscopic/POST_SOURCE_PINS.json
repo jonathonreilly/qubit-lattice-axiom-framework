@@ -1,0 +1,250 @@
+{
+  "phase": "Released root37 POST; not a new blind PRE or an applied audit verdict",
+  "captured_utc": "2026-09-25T05:09:39.195241+00:00",
+  "author37_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/CONTROL_ATTEMPT01.stderr",
+      "snapshot": "post_sources/author37/CONTROL_ATTEMPT01.stderr",
+      "path": "CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "bytes": 1044
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/CONTROL_ATTEMPT01.stdout",
+      "snapshot": "post_sources/author37/CONTROL_ATTEMPT01.stdout",
+      "path": "CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/CONTROL_ATTEMPT02.stderr",
+      "snapshot": "post_sources/author37/CONTROL_ATTEMPT02.stderr",
+      "path": "CONTROL_ATTEMPT02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/CONTROL_ATTEMPT02.stdout",
+      "snapshot": "post_sources/author37/CONTROL_ATTEMPT02.stdout",
+      "path": "CONTROL_ATTEMPT02.stdout",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "bytes": 8966
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/EXECUTION_ATTEMPT01.json",
+      "snapshot": "post_sources/author37/EXECUTION_ATTEMPT01.json",
+      "path": "EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "bytes": 230
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/EXECUTION_ATTEMPT02.json",
+      "snapshot": "post_sources/author37/EXECUTION_ATTEMPT02.json",
+      "path": "EXECUTION_ATTEMPT02.json",
+      "sha256": "5daa6b0d098a2734c53dc7ba9dcf6f9cd9bf590ecf01e2137f3617857fccfb4c",
+      "bytes": 230
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "snapshot": "post_sources/author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "path": "FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "bytes": 16847
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/ROOT_REVIEW.json",
+      "snapshot": "post_sources/author37/ROOT_REVIEW.json",
+      "path": "ROOT_REVIEW.json",
+      "sha256": "bc3ad8aca092b9708902e7f337b0c2e3e82679b9e116506da530f9188ce166b3",
+      "bytes": 1078
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/author37/SOURCE_PINS.json",
+      "path": "SOURCE_PINS.json",
+      "sha256": "f241a9f6f647a6d38b9e23a862b0cb490c37b652e96026a1d1fbf22c0d497e05",
+      "bytes": 4410
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "snapshot": "post_sources/author37/SPIN_ENERGY_CONTROL_RESULTS.json",
+      "path": "SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "bytes": 8966
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/WORKING_DERIVATION.md",
+      "snapshot": "post_sources/author37/WORKING_DERIVATION.md",
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "bytes": 6276
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "snapshot": "post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "path": "history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "bytes": 1044
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "snapshot": "post_sources/author37/history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "path": "history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/EXECUTION_ATTEMPT01.json",
+      "snapshot": "post_sources/author37/history/attempt01/EXECUTION_ATTEMPT01.json",
+      "path": "history/attempt01/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "bytes": 230
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/REPAIR.diff",
+      "snapshot": "post_sources/author37/history/attempt01/REPAIR.diff",
+      "path": "history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "bytes": 2984
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/history/attempt01/primitive_spin_energy_controls.py",
+      "snapshot": "post_sources/author37/history/attempt01/primitive_spin_energy_controls.py",
+      "path": "history/attempt01/primitive_spin_energy_controls.py",
+      "sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+      "bytes": 10355
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py",
+      "snapshot": "post_sources/author37/primitive_spin_energy_controls.py",
+      "path": "primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "bytes": 10486
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/author37/AUTHOR_SEAL.json",
+      "path": "AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "bytes": 3067
+    }
+  ],
+  "unchanged_PRE_anchors": [
+    {
+      "path": "PRE.md",
+      "sha256": "e6baa773fa665323a5390a914296d87af9068aa2974783160397332c39a68a4e",
+      "bytes": 26287,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "81464c8af25297f2f5765d785e2fe0a01accf566cccfce10e767d86fb79c9baa",
+      "bytes": 9502,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "a9f90147b9bf10616309c8ced291839d5312b43eff4ae8fa10223de695f7790e",
+      "bytes": 7533,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "verify_pre.py",
+      "sha256": "748453fe85bfbc6cfac416ea798da34275785dd59b5cde2008b982d711900a74",
+      "bytes": 8250,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "primitive_control.py",
+      "sha256": "412d728fbf1137454311dd3e55d68c49ee49c5a1df120c3ed350ff53d99071a5",
+      "bytes": 9739,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "primitive_attempt03/PRIMITIVE_RESULTS.json",
+      "sha256": "7066541369da5efc342e407e6205712694baffdbad22f6cd0a0f8103a3807c9f",
+      "bytes": 26744,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "microscopic_control.py",
+      "sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+      "bytes": 8530,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    },
+    {
+      "path": "microscopic_attempt01/MICROSCOPIC_RESULTS.json",
+      "sha256": "4e7914448941be58c6b705724a118a158830c6b1171a9c39b89259b39e222d6a",
+      "bytes": 16137,
+      "scope": "Unchanged PRE anchor; referenced rather than rewritten or included as newly authored POST evidence."
+    }
+  ],
+  "permitted_parent_sources_reused": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Permitted exact main note; complete argument read; parent runner not opened/imported/executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Permitted exact main note; complete argument read; parent runner not opened/imported/executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Permitted exact main note; complete argument read; parent runner not opened/imported/executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Permitted exact main note; complete argument read; parent runner not opened/imported/executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "snapshot": "sources/PROVISIONAL_GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "bytes": 16531,
+      "scope": "Expressly permitted provisional common-law dependency. No root36 control/checker access; seal entries are not followed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/AUTHOR_SEAL.json",
+      "snapshot": "sources/PROVISIONAL_AUTHOR_SEAL.json",
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+      "bytes": 1616,
+      "scope": "Expressly permitted provisional common-law dependency. No root36 control/checker access; seal entries are not followed."
+    }
+  ],
+  "own_new_verifier": {
+    "path": "verify_post_readonly.py",
+    "sha256": "1cd99ea2cfdf4f301fef39635413e92cff5963d3ecc42ddd2c6fb0d72e75756e",
+    "execution": "post_verification_attempt01/EXECUTION.json",
+    "report": "post_verification_attempt01/VERIFICATION_REPORT.json",
+    "report_sha256": "79ffff96691c6bcfeb902a68fa952f2eb41929287f62b394294d5f2ef4236ba3"
+  },
+  "scope_limits": {
+    "author_programs_opened": true,
+    "author_programs_imported_or_executed": false,
+    "forbidden_packet_references_followed": false,
+    "parent_programs_executed": false,
+    "PRE_members_mutated": false,
+    "publication_or_audit_mutation": false,
+    "required_math_repairs_found": 0
+  }
+}

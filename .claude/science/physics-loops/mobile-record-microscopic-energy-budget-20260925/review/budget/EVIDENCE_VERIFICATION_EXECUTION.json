@@ -1,0 +1,22 @@
+{
+  "scope": "One genuine read-only identity-verifier execution; no scientific control execution.",
+  "started_utc": "2026-09-25T05:15:05.727076+00:00",
+  "finished_utc": "2026-09-25T05:15:05.948770+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/verify_pre_sources.py"
+  ],
+  "elapsed_seconds": 0.22102870815433562,
+  "returncode": 0,
+  "script_sha256": "da7d024f253d13ad2c0b4c618b041c098b9f8c05edc20b5e3fe388da5970be89",
+  "stdout": {
+    "path": "EVIDENCE_VERIFICATION.json",
+    "sha256": "f7cc521651fc7ab1bb5db59f9891da5c7516363e71cfa23e67d3bb16f16c524e",
+    "bytes": 8115
+  },
+  "stderr": {
+    "path": "EVIDENCE_VERIFICATION.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

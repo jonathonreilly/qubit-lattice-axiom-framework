@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-25T04:50:31.250113+00:00",
+  "elapsed_seconds": 0.24298808304592967,
+  "exit_code": 0,
+  "source_sha256": "748453fe85bfbc6cfac416ea798da34275785dd59b5cde2008b982d711900a74",
+  "stdout_sha256": "1a0564e27720518f1472d58e86932a1c6b5b5a5c5519a69341f3bb7f5979bc1b",
+  "stdout_bytes": 4155,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "scientific_controls_rerun": false,
+  "only_new_output_files_written": true
+}

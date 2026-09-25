@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-09-25T05:21:59.136469+00:00",
+  "scope": "Bounded released-source POST38. Five released files comprise the author seal and all four members. No other new science packet is authorized or read.",
+  "released_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/AUTHOR_SEAL.json",
+      "frozen": "post_sources/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "bytes": 877,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "frozen": "post_sources/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "bytes": 10021,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/ROOT_REVIEW.json",
+      "frozen": "post_sources/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "bytes": 1249,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/SOURCE_PINS.json",
+      "frozen": "post_sources/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "bytes": 1117,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/WORKING_DERIVATION.md",
+      "frozen": "post_sources/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "bytes": 2421,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction"
+    }
+  ],
+  "preserved_pre": {
+    "report": {
+      "path": "PRE.md",
+      "sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+      "bytes": 29080
+    },
+    "seal": {
+      "path": "PRE_SEAL.json",
+      "sha256": "db299c055ce8a454d3bd8a99ef33e13ba9688582214cf0250a16af278fab2025",
+      "bytes": 4535
+    },
+    "source_pins": {
+      "path": "SOURCE_PINS.json",
+      "sha256": "ad21276215dc2f62ec678dd38fb8b602cb7ad0924c781730516d9447043fcfb4",
+      "bytes": 7353
+    },
+    "member_count": 20,
+    "all_members_unchanged_and_read_only_at_creation": true
+  },
+  "reused_source_bindings": {
+    "manifest": "SOURCE_PINS.json",
+    "source_count": 12,
+    "status": "Exact previously read sources and instructions; all are rechecked by the separate read-only POST verifier. Author37 stays a conditional import."
+  },
+  "recorded_author38_seal_utc": "2026-09-25T04:54:33.157903+00:00",
+  "recorded_independent_pre_seal_utc": "2026-09-25T05:16:06.494293+00:00",
+  "chronology_scope": "These are file-recorded seal times, not an external trusted timestamp or a proof of unrecorded activity.",
+  "author_program_execution": false,
+  "foreign_active_packets_or_publications_read": false
+}

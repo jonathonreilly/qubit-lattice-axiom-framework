@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_strict_nearest_neighbor_state_dependent_record_born_history_single_front_2026_08_12",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_strict_nearest_neighbor_state_dependent_record_born_history_single_front_2026_08_12.py",
+ "seed": 70834,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211354Z",
+ "elapsed_s": 19.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5456e446b8126a24ec08787213fe2b6138eb666fc2813e5584edfeebfad369aa",
+ "stdout_tail": "t decodes, literal shared E0 carrier, additive readout, and 72/72 active rotation/translation controls close\nPASS D-projective-contingent-history: 243 length-five cylinders, 81 held marginals, and distinct positive members (0, 0, 0, 1, 2, 1)/(2, 2, 2, 1, 1, 0)\nPASS E-homogeneous-strict-nearest-neighbor-schema: three covariant local clauses use only six unit offsets across 480 contexts / 1440 exact stochastic branches\nPASS F-absence-finalized-unique-local-answer: 5/5 symbolic role relations, 16/16 accumulated-history parity cases, and all 192 held microsteps have one local answer; no host schedule is supplied\nPASS G-arbitrary-length-permanent-renewal: N=64 writes 193 permanent M2 Records; exact parity/residue proof gives 3N+1 fresh sites for every N on the declared strip\nPASS H-positive-claim-boundary: unbounded single-front existence theorem only; global completion, selection, adoption, audit retention, and TOE scoring remain open\nMETRICS fixture_pairs=10 covariance=72/72 decoder_cases=1104 schema_cases=480 intertwiner_branches=1440 cylinders_N5=243 active_induction=5/5 parity_quotient=16/16 active_microsteps=192 records_N64=193 cp_min=-1.129e-16\nBOUNDARY: the unchanged state-dependent CP kernel and projective contingent histories now execute through one homogeneous strict-NN absence-finalized 3N+1 single front; physical law selection, autonomous matter compilation, rate/time, multi-front/global resources, audit retention, and TOE percentages remain open\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211414Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

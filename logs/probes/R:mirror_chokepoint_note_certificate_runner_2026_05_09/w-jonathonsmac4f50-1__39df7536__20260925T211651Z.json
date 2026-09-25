@@ -1,0 +1,34 @@
+{
+ "task": "R:mirror_chokepoint_note_certificate_runner_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "mirror",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/mirror_chokepoint_note_certificate_runner_2026_05_09.py",
+ "seed": 71011,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211651Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f7af8e1255bf616c9a6732dfc1dda29bb9feeab79fcbbc2a85eb64eb8791c37",
+ "stdout_tail": "======================================================================\nMIRROR CHOKEPOINT NOTE \u2014 RETAINED-ROW CERTIFICATE\nSource note: docs/MIRROR_CHOKEPOINT_NOTE.md\nCache:       logs/runner-cache/mirror_chokepoint_joint.txt\nScope:       strict default card N=15 and N=25 (mirror p2=0)\n======================================================================\n\n  [PASS] strict joint cache present and readable \u2014 logs/runner-cache/mirror_chokepoint_joint.txt\n  [PASS] cache header status=ok exit_code=0\n  [PASS] cache contains strict NPL_HALF=25 k=5.0 16-seed header \u2014 npl_half=25, k=5.0, seeds=16\n  [PASS] N=15 mirror p2=0 row matches retained-table claim \u2014 d_TV=ok; pur_cl_mean=ok; pur_cl_se=ok; S_norm=ok; gravity_mean=ok; gravity_se=ok; born_below_1e-10=ok; k0_below_1e-12=ok; seeds_ok_expected=ok; gravity_positive=ok\n  [PASS] N=25 mirror p2=0 row matches retained-table claim \u2014 d_TV=ok; pur_cl_mean=ok; pur_cl_se=ok; S_norm=ok; gravity_mean=ok; gravity_se=ok; born_below_1e-10=ok; k0_below_1e-12=ok; seeds_ok_expected=ok; gravity_positive=ok\n  [PASS] cache marks N=40, 60, 80, 100 mirror p2=0 as FAIL on this card \u2014 all four present\n\nPASS=5/5\nSTATUS: RETAINED-ROW CERTIFICATE PASS \u2014 note's narrow N=15/25 table matches strict joint runner-cache; out-of-scope rows are explicitly excluded.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211651Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

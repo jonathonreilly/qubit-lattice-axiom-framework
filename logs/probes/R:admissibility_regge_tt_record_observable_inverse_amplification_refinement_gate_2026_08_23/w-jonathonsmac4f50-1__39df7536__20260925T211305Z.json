@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_regge_tt_record_observable_inverse_amplification_refinement_gate_2026_08_23",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_regge_tt_record_observable_inverse_amplification_refinement_gate_2026_08_23.py",
+ "seed": 70785,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211305Z",
+ "elapsed_s": 8.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "24579f291e8598f10991a5809fef48977aef10abfea5942711e4383f1cccf3a8",
+ "stdout_tail": "reductions=9/12; max fraction=0.679\n[PASS] raw-Parseval-versus-metric-refinement-mismatch: raw Fourier injection is isometric but does not preserve the momentum-dependent metric encoder or its Euclidean Gram form\n       Gram deviation=[1.361e-02,3.246e-01]; axis diff=1.3e-15\n[PASS] phasewise-generalized-Schur-identity: phasewise generalized responses obey the exact finite block-inverse identity on every tested representative\n       max identity=3.405e-08; max solve=4.595e-15\n[PASS] scope-no-go-discipline-and-axiom-boundary: the theorem note keeps the blocker narrow, preserves live routes, and makes no gravity or axiom overclaim\nN5_CERTIFICATE: 2 sourced fixed-average Hessians; 8 TT and 4 source-tensor-candidate lift fibers; 48 shifted/cancelled phase-paired responses; 12 directed refinement comparisons\nBOUNDARY: no branch-dependent gauge generator, relational nonlinear observable, matter/source Hessian, Lorentzian covariance, physical quotient norm, or state/update refinement law is supplied\nSELECTOR_VERDICT: BLOCKED_BY_UNSELECTED_PHYSICAL_QUOTIENT_REFINEMENT_DATA\nROUTE_VERDICT: INCONCLUSIVE\nTOE_MOVEMENT: obligations=0 percentages=0 axioms_amended=0\nCLAIMS_JSON: {\"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"companion_checks\": true, \"lift_fibers\": 12, \"physical_law_selected\": false, \"refinement_comparisons\": 12, \"response_pairs\": 48, \"source_branches\": 2, \"source_candidate_flips\": 4, \"strong_cancellations\": 9, \"tt_flips\": 8}\nelapsed_sec=6.08\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211314Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_regge_tt_record_observable_inverse_amplification_refinement_gate_2026_08_23.txt against the .txt beside this log"
+  ]
+ }
+}

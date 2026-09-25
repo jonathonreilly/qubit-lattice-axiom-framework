@@ -1,0 +1,4 @@
+PR #9248: docs(synthesis): collect the pure-ring photon rebuilt from energies alone
+branch claude/round-four-synthesis-the-pure-ring-photon-from-energies-alone-20260925 (base main)
+runners in the PR: 1
+== scripts/round_four_synthesis_the_pure_ring_photon_from_energies_alone_2026_09_25.py: rc=0 PASS=5 FAIL=0

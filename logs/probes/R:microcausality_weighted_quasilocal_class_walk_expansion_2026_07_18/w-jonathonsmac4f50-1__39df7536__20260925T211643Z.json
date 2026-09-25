@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_weighted_quasilocal_class_walk_expansion_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/microcausality_weighted_quasilocal_class_walk_expansion_2026_07_18.py",
+ "seed": 71003,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211643Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "50b291ed87ec8e1642837cf804e5aed8164ba290607519bc7ead540dd68b1ec7",
+ "stdout_tail": "PASS: l1-sphere-count exact 4r^2+2 values at r=1..4\nPASS: ambient-chain-diameter all subset chains obey sum diameters>=distance, attained\nPASS: bond-incidence-ladder union=12 distinct=11 nonself=10\nPASS: site-weighted-activity exact size and positive-diameter factors reject omissions\nPASS: meeting-row-bound exact finite family obeys sum meeting wstar<=size*kappa\nPASS: peeling-power exact nX*kappa^(k-1) value rejects kappa^k\nPASS: exhaustive-chain-peeling all 31 supports and lengths 1..3 satisfy the bound\nPASS: duhamel-resummation exact order series, slope, and prefactor/sign rejectors\nPASS: decay-sign-rejector negative exponent decreases with distance while positive grows\nPASS: bond-envelope six incident size-two bonds give 12Jemu and rate ratio 6/5\nPASS: pair-activity-closed-form sphere sum and size-two factor reject half-value\nPASS: pair-activity-values exact 3D values 14,684 and 1D value 4\nPASS: even-car-locality distant even term commutes off support and reduction is exact\nPASS: tensor-support-reduction mixed three-site and bond terms obey exact locality\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211643Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

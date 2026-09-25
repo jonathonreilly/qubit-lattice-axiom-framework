@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_sharp_writer_orientation_axiom_decision_2026_09_01",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_sharp_writer_orientation_axiom_decision_2026_09_01.py",
+ "seed": 70800,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211320Z",
+ "elapsed_s": 33.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f692b629768b9566ed1bbf3070902ff9f1bd3f435806d6010d4f8f8986bae6db",
+ "stdout_tail": "oot=R,preset_kappa_plus=R,assume_lueders=R,label_spelling_orientation=R,different_unconditional_channels=R,same_axis_sign_selector=R,later_axis_sign_selector=R,collision_sign_selector=R,event_additivity_as_affinity=R,calibration_is_full_born=R,remove_nonlinear_counterkernel=R,permanence_as_repeatability=R,finite_all_match_proof=R,ignore_repeat_gauge=R,ignore_preparation_gauge=R,synthetic_as_empirical=R,omit_reset_controls=R,absolute_rate=R,axioms_contain_calibration=R,retire_w1_toe=R\nN5_EXECUTION per_element: exact 2x2 effects, PSD support, Choi ranks, endpoint roots, likelihoods and Haar moments executed\nN5_EXECUTION per_site: finite supplied response candidates, support calibration, event addition, formation-selection bias and conditional affinity executed\nN5_EXECUTION per_mode: both global orientations and all 24 proper-cubic spin transports, plus two-through-four-use kernels, executed\nN5_EXECUTION per_block: literal Block-38 F-M-B2 typed separation and one reduced sign-neutral collision quotient wrapper executed\nN5_EXECUTION lattice_wide: checked and not executed - no full-Z3 collision process, empirical corpus, reset theorem or absolute-rate law is supplied\nSUMMARY sharpness=derived orientation=calibration_choice axiom_decision_status=AXIOM_DECISION_READY decision_basis=multi_clause historical_shipping_label=BACKLOG_NO_PR prereg_sign_twin=falsified synthetic_evidence=none input_sha256=d2def0cd99ef65d4745f76efe95b1cd405a69f3194a8098aaab603658361f4ca\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211354Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

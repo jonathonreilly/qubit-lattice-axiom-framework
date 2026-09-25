@@ -1,0 +1,31 @@
+PASS A01 note exists
+PASS A02 Cycle-60 subject hash is frozen
+PASS A03 Cycle-64 subject hash is frozen
+PASS A04 fixed Cycle-57 base has 38 records
+PASS A05 Cycle-60 contributes 52 variables
+PASS A06 Cycle-64 contributes 152 variables
+PASS A07 the two variable footprints are disjoint
+PASS A08 mixed footprint has 204 variables
+PASS B01 mixed table has 163 canonical rows
+PASS B02 canonical union has no input conflict
+PASS B03 rotated union has 3,370 raw inputs
+PASS B04 rotated inputs remain single-valued
+PASS C01 exact candidate census is 461
+PASS C02 exact local-subset census is 6,297
+PASS C03 exact matching-context census is 2,215
+PASS C04 161 canonical rows match somewhere
+PASS C05 mixed scan has 371 bad contexts
+PASS C06 mixed scan has 95 bad target/output triples
+PASS D01 Cycle-64 rows cause 254 footprint mistypes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})
+PASS D02 Cycle-64 rows cause 89 outside writes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})
+PASS D03 Cycle-60 rows add 28 arbitrary-subset mistypes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})
+PASS E01 one P neighbour can mistype an A target
+PASS E02 one A neighbour can write T outside the footprint
+PASS E03 one A neighbour can mistype an F target as T
+PASS E04 PHASE_E plus OPEN_B can mistype L2 as X_B
+PASS F01 Cycle-64's own completed-comb scan has 16 target conflicts
+PASS F02 all fifteen A targets admit both A and P
+PASS F03 L2 admits both L2 and X_B
+
+BAD_ORIGIN_KIND={('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28}
+SUMMARY: 28 PASS / 0 FAIL

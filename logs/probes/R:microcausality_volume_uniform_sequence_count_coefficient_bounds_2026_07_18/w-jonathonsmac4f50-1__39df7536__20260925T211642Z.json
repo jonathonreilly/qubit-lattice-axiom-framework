@@ -1,0 +1,35 @@
+{
+ "task": "R:microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "microcausality",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/microcausality_volume_uniform_sequence_count_coefficient_bounds_2026_07_18.py",
+ "seed": 71002,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211642Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "90d1e6c1006ed3a4398565a472c9882fb8fd2bbc107e98621db494ad4ed994a5",
+ "stdout_tail": "dered sequence sum equals the nested adjoint\nPASS: W1-k3 ordered sequence sum equals the nested adjoint\nPASS: W2a inner-miss sequences vanish exactly\nPASS: W2b a later bond missing the current support kills the word\nPASS: W2c every length-one word is below the distance-two cone\nPASS: W2d a disconnected far site remains silent through order eight\nPASS: W3a exact incidence counts obey the local 6s bound\nPASS: W3b N_0 and independent product-majorant values are exact\nPASS: W3c the product majorant satisfies bar_N_{k+1}=6(m+k)bar_N_k\nPASS: W3d exact survivor counts lie below the product majorant\nPASS: W4a exact adjoints through order four match the Pauli-word derivation\nPASS: W4b the k=2 coefficient obeys actual- and product-count bounds\nPASS: W4c order two reaches X3 and Y3 while Z3 stays silent\nPASS: W4d every order-three word and their sum are silent for all far probes\nPASS: W4e order four re-arrives at X3 and Y3 while Z3 stays silent\nPASS: W5a ratio monotonicity reduces exactly to m-1\nPASS: W5b consecutive product-majorant terms have the stated ratio\nPASS: W5c an independent ratio instance fixes the coefficient 12\nPASS: W5d the sufficient window has constant 12 and half-window ratio one-half\nPASS: W5e exact partial tail is below bar_a_d/(1-r_*)\nPASS: W5f family-level uniformity requires a finite J_*\nPASS: W5g d=0, zero-norm, zero-time, and zero-coupling cases are separate\nPASS: W5h a zero sequence count forces every recurrence majorant afterward to zero\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211642Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

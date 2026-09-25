@@ -1,0 +1,31 @@
+{
+ "task": "R:mixed_local_context_phase_cycle65_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "mixed",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/mixed_local_context_phase_cycle65_2026_07_14.py",
+ "seed": 71049,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211729Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "038691fb0d01791bf10edcd48eea7c300ceaf3bf760b7acc4de90c589df7cf3f",
+ "stdout_tail": "utes 52 variables\nPASS A06 Cycle-64 contributes 152 variables\nPASS A07 the two variable footprints are disjoint\nPASS A08 mixed footprint has 204 variables\nPASS B01 mixed table has 163 canonical rows\nPASS B02 canonical union has no input conflict\nPASS B03 rotated union has 3,370 raw inputs\nPASS B04 rotated inputs remain single-valued\nPASS C01 exact candidate census is 461\nPASS C02 exact local-subset census is 6,297\nPASS C03 exact matching-context census is 2,215\nPASS C04 161 canonical rows match somewhere\nPASS C05 mixed scan has 371 bad contexts\nPASS C06 mixed scan has 95 bad target/output triples\nPASS D01 Cycle-64 rows cause 254 footprint mistypes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})\nPASS D02 Cycle-64 rows cause 89 outside writes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})\nPASS D03 Cycle-60 rows add 28 arbitrary-subset mistypes :: Counter({('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28})\nPASS E01 one P neighbour can mistype an A target\nPASS E02 one A neighbour can write T outside the footprint\nPASS E03 one A neighbour can mistype an F target as T\nPASS E04 PHASE_E plus OPEN_B can mistype L2 as X_B\nPASS F01 Cycle-64's own completed-comb scan has 16 target conflicts\nPASS F02 all fifteen A targets admit both A and P\nPASS F03 L2 admits both L2 and X_B\n\nBAD_ORIGIN_KIND={('c64', 'mistype'): 254, ('c64', 'outside'): 89, ('c60', 'mistype'): 28}\nSUMMARY: 28 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

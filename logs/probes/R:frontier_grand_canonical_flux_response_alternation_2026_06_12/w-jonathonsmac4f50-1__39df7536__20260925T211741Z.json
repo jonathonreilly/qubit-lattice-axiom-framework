@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_grand_canonical_flux_response_alternation_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_grand_canonical_flux_response_alternation_2026_06_12.py",
+ "seed": 71061,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211741Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a92eaca8db214452aa2391a6ebded73ac9bcac916f02b155fe8574ab500d6db4",
+ "stdout_tail": ".0 (real gate: the max exceeds 1e-8, so the response is NOT exactly cancelled; the value is a reported double-precision analytic-derivative model datum, no post-hoc ceiling): not cancelled on the tested grid; reporting observed-scale ceiling; max |Omega''| = 2.074670655794e-04 at N=8 m=0.0 T=1.0\n[PASS] A4 low-T N-sign pattern (real gate: STRICT alternation across all tested N): strict alternation for m=0.4 T=0.3: N=8 -2.452529142295e-02 sign=-, N=10 8.656953066992e-03 sign=+, N=12 -3.299227107615e-03 sign=-, N=14 1.224103602206e-03 sign=+, N=16 -4.589766953448e-04 sign=-\n[PASS] A5 exact mass decoupling (real gate: |Omega''| strictly decreasing in m at every tested N, T=0.3): all tested N decreasing; N=8 decreasing [m=0.4 -2.452529142295e-02, m=1.0 -7.226944642025e-03, m=2.0 -6.161773528251e-04]; N=10 decreasing [m=0.4 8.656953066992e-03, m=1.0 1.955130776919e-03, m=2.0 8.863485878740e-05]; N=12 decreasing [m=0.4 -3.299227107615e-03, m=1.0 -5.421562484320e-04, m=2.0 -1.296908493140e-05]; N=14 decreasing [m=0.4 1.224103602206e-03, m=1.0 1.498192212819e-04, m=2.0 1.911286089657e-06]; N=16 decreasing [m=0.4 -4.589766953448e-04, m=1.0 -4.148657527352e-05, m=2.0 -2.826633804989e-07]\n[PASS] A6 high-T response: T=50 max |Omega''| across N,m grid = 5.412337245048e-16\n[PASS] A6 zero-total-flux gauge invariance: sum(phases)=0.000e+00 Omega diff=1.776356839400e-15\n[PASS] A6 m=0 finite-T analytic value: N=12 m=0 T=0.3 exact Omega''=-5.128094701221e-03; no cusp at T>0\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211741Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_grand_canonical_flux_response_alternation_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

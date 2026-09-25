@@ -1,0 +1,31 @@
+{
+ "task": "R:admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_2026_08_10",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_timelike_edge_current_network_compact_homothety_regge_boundary_2026_08_10.py",
+ "seed": 70854,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211414Z",
+ "elapsed_s": 40.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "96299b050ac458f883dc4c9b7019c3f57b36e341abdec6cf4b7507d4acb6e956",
+ "stdout_tail": " 224, 100, 24), (6, 395, 180, 35), (7, 636, 294, 48), (8, 959, 448, 63)]\n[PASS] positive-bouquet-full-null-compatibility\n       gauge=5.678e-15; full-null=1.136e-13\n[PASS] positive-bouquet-unprojected-solvability\n       max direct solve residual=1.001e-12\n[PASS] positive-bouquet-zero-mode-control\n       homothety=12.071068; solve=13.537799\n[PASS] compact-homothety-null-vector\n       norm=2.8284271; Q0 residual=7.126e-15\n[PASS] nonnegative-source-cone-separation\n       extreme overlap range=[1.000000,2.000000]\n[PASS] composite-timelike-chord-control\n[PASS] positive-bouquet-unprojected-pole\n       coefficients=6.0000781,6.0000781,6.0000391\n[PASS] theorem-source-surface\n[PASS] no-go-discipline-source-surface\n[PASS] boundary-source-surface\n[PASS] canonical-axiom-nonmutation\nper_element: checked all fifteen positive edge-source extreme rays, eight temporal unit directions, two bundles, and the composite chord\nper_site: checked exact incoming-outgoing balance for every vertex of all 504 binary bundle histories and the connected bouquet junction\nper_mode: checked all 2,768 supported binary history-mode pairs and every one of 2,369 nonzero bouquet sources against five null directions\nper_block: checked number-field junction rigidity, positive timelike currents, unprojected tensor and transverse poles, and the axiom boundary\nlattice_wide: checked all 8,755 Fourier modes on six four-tori, every binary history of lengths three through eight, and every compact mean\nTOTAL: PASS=33 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211455Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_gleason_qubit_lattice_projection_narrow_2026_07_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_gleason_qubit_lattice_projection_narrow_2026_07_09.py",
+ "seed": 71060,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T211740Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "020e3430c135b86e6389b5eaa9e1ccd10864526d545da96a647df448381725df",
+ "stdout_tail": "[PASS] A1 raw trace-form needle\n[PASS] A1 physical Born/readout identification remains outside the claim\n[PASS] A2 finite-region Hilbert-space needle\n[PASS] A3 unique trace-form representation needle\n[PASS] A4 live axiom-memo link present\n[PASS] A4 historical axiom-memo link absent\n[PASS] A5 joint-presentation tensor-substrate bridge link present\n[PASS] A5 linked tensor-substrate dependency resolves with its bounded input surface\n[PASS] A6 forbidden readout vocabulary absent\n[PASS] A7 independent-audit status present\n[PASS] A7 retained status absent\n[PASS] B1 dimension threshold and load-bearing region restriction\n[PASS] B2 exact positive density matrix on C^4\n[PASS] B2 measure normalization\n[PASS] B2 exact orthogonal-resolution additivity\n[PASS] B2 pairwise projection additivity\n[PASS] B3 rank-1 projections span the full Hermitian space\n[PASS] B4 commuting-only span deficiency detected\n[PASS] B5 non-positive trace-one matrix violates measure positivity\nTOTAL: PASS=19 FAIL=0\nVERDICT: PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

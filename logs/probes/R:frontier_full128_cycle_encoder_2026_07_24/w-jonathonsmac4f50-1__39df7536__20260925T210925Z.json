@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_cycle_encoder_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_full128_cycle_encoder_2026_07_24.py",
+ "seed": 70565,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T210925Z",
+ "elapsed_s": 15.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "695d99d11e924870832af73cac5a295708ed4f8a7adf71b9b15b751ba965902c",
+ "stdout_tail": "2510752124e-15, \"neighborhood\": \"one K7 cell-plus-port edge graph and one local reference bridge\", \"site_tensor\": \"M2 on each of 22 named graph edges\", \"update\": \"G_physical = U_encoder (G7 tensor I_aux) U_encoder^dagger\"}, \"resources\": {\"elapsed_seconds\": 15.786641707993113, \"peak_rss_mb\": 51.46875}, \"scope_boundary\": \"Positive local port-subspace encoder only; no full neighboring cell, recurrent lattice, state genesis, historical sea compiler, impossibility, minimum-content, shared obstruction, or axiom-pressure claim.\", \"status\": \"constructive-bounded-local-seam-port-encoder-probe\", \"supplied\": [\"this note as the sole mutable repository input for cache freshness\", \"six signed-direction local modes and one live neighboring seam port\", \"symmetry-complete K7 edge-M2 graph plus one port-reference bridge\", \"local parity completion n_reference = parity(cell plus port)\", \"fifteen cycle auxiliaries initialized in the local +1 X-cycle code\", \"one spanning-tree/chord basis used only to synthesize the reversible encoder circuit\", \"beta=-0.3 coin, g=0.37 contact, reverse-FSWAP and -x seam-port factor order\", \"seven-M2 decoded coarse tensor inside the 22-M2 neighborhood\", \"proper-cubic exterior frame action including its local occupied-pair sign\", \"train L3 and held L4 disjoint block-label embeddings, tolerance and RNG seed\"], \"terminal\": \"LOCAL_22_M2_CYCLE_CODE_NLE2_SEAM_PORT_INTERTWINER\", \"tests_failed\": 0, \"tests_passed\": 10}\nRESULT LOCAL_22_M2_CYCLE_CODE_NLE2_SEAM_PORT_INTERTWINER\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T210941Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_cycle_encoder_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

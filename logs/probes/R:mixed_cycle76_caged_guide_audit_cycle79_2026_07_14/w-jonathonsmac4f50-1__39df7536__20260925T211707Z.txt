@@ -1,0 +1,50 @@
+PASS A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 Cycle-67 base is exactly the completed Cycle-60 state
+PASS A04 all 242,033 reachable Cycle-60 states are retained :: 242,033
+PASS A05 exact Cycle-67 availability has 67 masks
+PASS A06 C60+C67 alone remains mixed-safe :: MixedResult(interface_candidates=387, retained_candidates=171, mixed_contexts=8373, certified_wrong=47, certified_wrong_classes=34, new_wrong=0, union_conflicts=0, comb_blockers=0)
+PASS B01 Cycle 72 bare-X_B row writes D1 at the future Z_C site
+PASS B02 that old race has 24 reachable mixed prefixes :: 24
+PASS B03 Cycle 76 removes the bare-X_B row
+PASS C01 literal C67 schedule appends 73 records through L10 :: ()
+PASS C02 P1 and P3 remain open in that prefix
+PASS C03 both open targets see the exact E+L8+L10 signature
+PASS C04 Cycle 76 writes YS at P1 in that all-correct prefix
+PASS C05 Cycle 76 writes YS at P3 in that all-correct prefix
+PASS C06 the correct P writes require their still-absent predecessors
+CYCLE76 ScanResult(interface_candidates=434, retained_candidates=207, contexts=27386, certified_wrong_contexts=496, certified_wrong_classes=48, feasible_wrong_contexts=20, feasible_wrong_classes=(((1, -2, 0), 'DOWN', ('YS',), 'P1'), ((2, -1, 0), 'DOWN', ('YS',), 'P3')), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=446, feasible_phase_blockers=0)
+PASS D01 Cycle 76 collapses to 11 downstream availability masks
+PASS D02 Cycle 76 scan exhausts 27,386 contexts :: 27,386
+PASS D03 496 static wrong contexts have ancestry witnesses
+PASS D04 20 contexts remain causally feasible
+PASS D05 the only feasible classes are the exact P1/P3 thefts :: (((1, -2, 0), 'DOWN', ('YS',), 'P1'), ((2, -1, 0), 'DOWN', ('YS',), 'P3'))
+PASS D06 Cycle 76 creates no raw conflict or feasible blocker
+L7_S8_PREGUIDE ScanResult(interface_candidates=434, retained_candidates=211, contexts=27664, certified_wrong_contexts=496, certified_wrong_classes=48, feasible_wrong_contexts=20, feasible_wrong_classes=(((1, -3, 0), 'DOWN', ('Y0',), None), ((3, -1, 0), 'DOWN', ('Y0',), None)), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=366, feasible_phase_blockers=0)
+J6_L11_PREGUIDE ScanResult(interface_candidates=434, retained_candidates=207, contexts=27062, certified_wrong_contexts=496, certified_wrong_classes=48, feasible_wrong_contexts=10, feasible_wrong_classes=(((1, -1, 0), 'DOWN', ('Y0',), 'P2'),), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=266, feasible_phase_blockers=0)
+PASS E01 L7+S8 preguide has nine availability masks
+PASS E02 L7+S8 preguide leaves two off-footprint Y0 classes :: (((1, -3, 0), 'DOWN', ('Y0',), None), ((3, -1, 0), 'DOWN', ('Y0',), None))
+PASS E03 J6+L11 preguide has nine availability masks
+PASS E04 J6+L11 preguide steals P2 in ten contexts :: (((1, -1, 0), 'DOWN', ('Y0',), 'P2'),)
+PASS F01 caged YS is exactly a W4+W6 pair
+PASS F02 caged YG is exactly an OPEN_B+YS pair
+PASS F03 caged guide is not adjacent to any Cycle-67 target
+PASS F04 cage uses 35 additions / 29 new canonical rows
+PASS F05 cage preserves 149 union canonical / 3,272 raw rows
+PASS G01 cage graph has 53 conditions :: 53
+PASS G02 cage graph has 1,455 states / 5,023 edges :: (1455, 5023)
+PASS G03 every conditional cage schedule reaches one complete terminal
+PASS G04 cage graph has no parasite or conflict
+CAGED ScanResult(interface_candidates=435, retained_candidates=207, contexts=69447, certified_wrong_contexts=496, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=106, feasible_phase_blockers=0)
+PASS H01 cage has 11 downstream availability masks
+PASS H02 cage scan exhausts 69,447 contexts :: 69,447
+PASS H03 all 496 apparent wrong contexts are static false positives
+PASS H04 cage has no feasible wrong or off-footprint write :: ()
+PASS H05 cage has no feasible conflict or blocker
+BY_FIRST ScanResult(interface_candidates=433, retained_candidates=203, contexts=19240, certified_wrong_contexts=203, certified_wrong_classes=48, feasible_wrong_contexts=0, feasible_wrong_classes=(), certified_conflicts=0, feasible_conflicts=0, certified_comb_blockers=0, feasible_comb_blockers=0, certified_phase_blockers=53, feasible_phase_blockers=0)
+PASS I01 BY-first comparator has three availability masks
+PASS I02 BY-first comparator has no feasible mixed defect
+PASS I03 BY-first comparator exhausts 19,240 contexts
+PASS I04 neither small repair claims joint-endpoint B ancestry :: (False, False)
+
+SUMMARY: 43 PASS / 0 FAIL

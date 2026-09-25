@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py",
+ "seed": 70581,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "39df7536",
+ "started_utc": "20260925T210941Z",
+ "elapsed_s": 32.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6756c980da045fdbb5c8496190404852d7945a6c01df77525573e7e309661590",
+ "stdout_tail": "ripts/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.py\", \"scripts/frontier_full128_two_rail_fixed_law_core_2026_07_24.py\", \"scripts/frontier_full128_cycle_cocycle_intertwiner_2026_07_24.py\", \"scripts/frontier_full128_25site_nn_circuit_core_2026_07_24.py\", \"scripts/frontier_full128_bare_frame_pair_cocycle_2026_07_24.py\", \"scripts/frontier_full128_code_projectors_2026_07_24.py\", \"scripts/frontier_full128_cycle_encoder_2026_07_24.py\", \"docs/FULL128_TWO_RAIL_FIXED_LAW_COMPOSITIONAL_INDUCTION_BOUNDED_THEOREM_NOTE_2026-07-24.md\", \"docs/FULL128_LOCAL_M64_SEAM_M2_BARE_FRAME_INTERTWINER_BOUNDED_THEOREM_NOTE_2026-07-24.md\", \"scripts/frontier_full128_25site_nn_supplied_schedule_2026_07_24.py\"], \"temporary_or_external_sources\": 0}, \"status\": \"bounded-fixed-law-compositional-induction-certificate\", \"supplied\": [\"the Cycle655 repo-native full128 combined word and its finite matrix table\", \"the 3908 fixed station records, cassette orientation and selector-before-shift order\", \"the station-zero live-token position and E_full packet placement\", \"B/vacuum plus zero flag, scratch and bypass genesis\", \"the exact controlled one-M2 lifts, Fredkin bypass and routed selector library\", \"the enormous but finite Q, R and A_auto circuit blueprints\", \"the proper-cubic rotated cassette family, mode labels, couplings and factor order\"], \"terminal\": \"FULL128_TWO_RAIL_FIXED_LAW_CYCLE656_CERTIFICATE\", \"tests_failed\": 0, \"tests_passed\": 7}\nRESULT FULL128_TWO_RAIL_FIXED_LAW_CYCLE656_CERTIFICATE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T211013Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_full128_two_rail_fixed_law_cycle656_probe_2026_07_24.txt against the .txt beside this log"
+  ]
+ }
+}

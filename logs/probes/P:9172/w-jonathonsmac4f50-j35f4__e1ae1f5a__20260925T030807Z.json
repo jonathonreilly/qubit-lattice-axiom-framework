@@ -1,0 +1,36 @@
+{
+ "task": "P:9172",
+ "type": "pr-reexecution",
+ "lane": "round-three-synthesis-the-photon-from-fo",
+ "worker": "w-jonathonsmac4f50-j35f4",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9172",
+ "pr": 9172,
+ "branch": "claude/round-three-synthesis-the-photon-from-four-sides-formation-clocks-and-a-three-dimensional-charge-20260924",
+ "git_sha": "e1ae1f5a",
+ "started_utc": "20260925T030807Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=8 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9172's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "d7aeac7e706edcc6fa474d07c035c66269f65f633a3c1268266dcdb67c36bc9a",
+ "stdout_tail": "PR #9172: docs(synthesis): collect round three, the photon from four sides, formation clocks and a 3D charge\nbranch claude/round-three-synthesis-the-photon-from-four-sides-formation-clocks-and-a-three-dimensional-charge-20260924 (base main)\nrunners in the PR: 1\n== scripts/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.py: rc=0 PASS=8 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j35f4",
+  "at_utc": "20260925T030815Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

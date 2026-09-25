@@ -1,0 +1,37 @@
+{
+ "task": "P:9170",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block119-the-s",
+ "worker": "w-jonathonsmac4f50-j1ae5",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9170",
+ "pr": 9170,
+ "branch": "physics-loop/admissibility-induced-law-block119-the-species-symmetry-forces-only-doubling-20260924",
+ "git_sha": "3ac3dd0a",
+ "started_utc": "20260925T032835Z",
+ "elapsed_s": 8.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_species_symmetry_forces_only_doubling_and_a_rate_field_keeps_sixteen_zero_modes_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=13 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9170's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "83e287df909706c9af5d4ad12089cfc0ab7dbc612a13e60ca447822b484b7caa",
+ "stdout_tail": "PR #9170: physics-loop: admissibility induced-law block 119 - the species symmetry forces only doubling: every nonzero level in a varying field is a pair, and a rate field keeps exactly the sixteen zero modes\nbranch physics-loop/admissibility-induced-law-block119-the-species-symmetry-forces-only-doubling-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_species_symmetry_forces_only_doubling_and_a_rate_field_keeps_sixteen_zero_modes_2026_09_24.py: rc=0 PASS=13 FAIL=0\n   mutation reversal_commutes_forged: expected B observed B ok\n   mutation corep_forged: expected C observed C ok\n   mutation zero_modes_forged: expected D observed D ok\n   mutation doubling_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ae5",
+  "at_utc": "20260925T032844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

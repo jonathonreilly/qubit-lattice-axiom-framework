@@ -1,0 +1,10 @@
+PR #9170: physics-loop: admissibility induced-law block 119 - the species symmetry forces only doubling: every nonzero level in a varying field is a pair, and a rate field keeps exactly the sixteen zero modes
+branch physics-loop/admissibility-induced-law-block119-the-species-symmetry-forces-only-doubling-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_species_symmetry_forces_only_doubling_and_a_rate_field_keeps_sixteen_zero_modes_2026_09_24.py: rc=0 PASS=13 FAIL=0
+   mutation reversal_commutes_forged: expected B observed B ok
+   mutation corep_forged: expected C observed C ok
+   mutation zero_modes_forged: expected D observed D ok
+   mutation doubling_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

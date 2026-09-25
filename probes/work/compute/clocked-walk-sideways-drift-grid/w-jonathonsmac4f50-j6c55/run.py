@@ -238,11 +238,13 @@ if len(sys.argv) < 2 or sys.argv[1] != "no3d":
         "walk minus cloud -0.119; g T/(2k) = %.3f  (%.0f s)" % (s3, edge3, cr, cb, s3 / cb, red[0], red[2], time.time() - t1))
 print()
 A = [table[("A: motion x, gradient y", (0, 0, 0), 1, q0)] for q0 in KS]
-out("SUMMARY: the sideways drift of the walk's packets is the anomalous velocity of the branch curvature of h = sin(k).sigma (curvature sin k_x cos k_y "
-    "cos k_z/(2 eps^3) cyclically, exact): over 4 orientations (one oblique gradient) x 4 zero-energy points x 2 branches x 6 wave vectors the measured "
-    "drift equals the central ray with that term to within %.1f%%; along an axis it is g T/(2 sin q) (measured/that = %s at q = %s), g T/(2k) only as "
-    "k -> 0; the drift vector flips with det D = (-1)^(n_x+n_y+n_z) and is the same vector on both branches (so it is minus the sense times "
-    "ghat x v on the + branch, plus on the -); in a symmetric superposition of the eight points the anomalous parts cancel (sums %+.0e, %+.0e) but the "
-    "ordinary lattice ray part, which is the same at all eight points, survives for the oblique gradient (sum %+.3f; zero for axis gradients, %+.0e)%s"
-    % (100 * worst_berry, eight["A"][1], eight["D"][1], eight["D"][0], eight["A"][0], ", ".join("%.3f" % (v[0] / (0.004 * 30 / (2 * np.sin(q0)))) for v, q0 in zip(A, KS)), ", ".join("%.2f" % q0 for q0 in KS),
-       "" if three is None else "; the 3D box-68 packet drifts %+.4f against %+.4f for its 3D cloud" % three))
+axis = ", ".join("%.3f" % (v[0] / (0.004 * 30 / (2 * np.sin(q0)))) for v, q0 in zip(A, KS))
+out("SUMMARY: the sideways drift of the walk's packets is the anomalous velocity of the branch curvature of h = sin(k).sigma (curvature "
+    "sin k_x cos k_y cos k_z/(2 eps^3) cyclically, exact): over 4 orientations (one oblique gradient) x 4 zero-energy points x 2 branches x 6 wave "
+    "vectors the measured drift equals the central ray with that term to within %.1f%%; along an axis it is g T/(2 sin q) (measured/that = %s at "
+    "q = %s), g T/(2k) only as k -> 0; the anomalous drift vector flips with det D = (-1)^(n_x+n_y+n_z) and is the same vector on both branches "
+    "(minus the sense times ghat x v on the + branch, plus on the -); in a symmetric superposition of the eight points the anomalous parts cancel "
+    "(sums %+.0e axis, %+.0e oblique) but the ordinary lattice ray part, the same at all eight points, survives for the oblique gradient (sum %+.3f; "
+    "%+.0e for the axis gradient)%s"
+    % (100 * worst_berry, axis, ", ".join("%.2f" % q0 for q0 in KS), eight["A"][1], eight["D"][1], eight["D"][0], eight["A"][0],
+       "" if three is None else "; the 3D box-68 packet drifts %+.4f against %+.4f for its 3D cloud with curvature" % three))

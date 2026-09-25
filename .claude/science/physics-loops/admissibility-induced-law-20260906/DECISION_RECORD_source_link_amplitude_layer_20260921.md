@@ -459,3 +459,34 @@ The Grok referees have posted nothing since 2026-09-24 21:40Z. The following res
 | #9141, #9158, #9165, #9175 | earlier derivation HITs | See their issues. | various |
 
 Compute HIT #9211, floating point: with the staggered mass at `m = 0.6`, the mixed pair's pulls no longer cancel to `10⁻⁴`. The residual grows as `t³` and falls with the coupling. It bears on blocks 55 and 71.
+
+## Twenty-eighth addendum (2026-09-25): the third column in one table (a summary, no new results)
+
+This gathers addenda 23–27 into one table: what records alone do not supply, and where each ingredient stands. "Fixed" means fixed by a stated demand in the cited blocks; nothing is adopted. Blocks 134–141 are the supervisor's own derivations, not refereed by another model family. Other blocks in the 119–133 range are harvests of Grok-refereed attempts.
+
+| Ingredient | Records alone | With the amplitude layer | Still supplied or open | Blocks |
+|---|---|---|---|---|
+| waves | never: clocked record motion does not oscillate, and odds make no undamped dispersive waves | the signed walk carries them | — (probes #9189: nonlinear record motion also has no lasting waves, unrefereed) | 96, 122, 123 |
+| a clock law | "no master clock" forces the lattice Laplacian | — | the bond energy beyond second order; `γ` (tied to `K` by `γ = 1/(4Kw̄)`) | 53, 55, 56 |
+| a clock stiffness from the sea | — | on rings, the one-record-per-site sea gives `κ = 1/(6π)`, half the free sea's | 2D and 3D under one record per site open (free 3D sea: `κ = I/12`, probes #9210, unrefereed) | 76, 130 |
+| a rest energy | the record gas makes block 79's chessboard when a recorded bond is expensive (`g ≤ 9/62500`) | the staggered mass: the only rest energy a full frame admits, and the only site term that keeps the exact books | the coupling `c`; whether the gas's defects leave a gap (probes #9183, #9212, unrefereed: they fill it) | 77, 79, 117, 119, 131, 133, 139 |
+| a source for the lengths | — | only the two-step current can be placed on the member | the placements: block 120's average and the body-diagonal energy | 62, 120, 135, 136 |
+| one light cone (`α/K`) | — | fixed at `α = K/4` by the source link, exactly for free or massive walker content | — | 129, 134, 135, 136, 139 |
+| the kinetic term and closing ratio | — | blindness to coin rotations fixes the form; `β = −α` from the constraints' closure and relabelling blindness | — | 101, 112, 124, 129 |
+| relabellings in time | — | a bond shift coupled to the symmetric momentum (two-step momentum plus half the curl of the spin) keeps every constraint | the shift itself (no landed clause supplies it) | 124, 136, 138 |
+| the walk's kinematics | — | an exact boost charge; its brackets give the fall weight `cos 2k` and an exactly kept angular momentum with the face spin | the angular momentum's own bracket closes only approximately | 106, 140 |
+| the unit of length `K` | — | — | supplied (the frame-coupled sea does not induce the member: probes #9198, unrefereed) | 129 |
+| action and reaction | only an unrecorded body is pulled and pulls nothing back | under exclusion the pulls match if the pair sources its compressed energy | — | 55, 116, 121 |
+| one record per site and the books | the owner's reading | exact books hold for one walker, free (Pauli) walkers and massive walkers | under one record per site the books are exact only on a line; no neighbour coin interaction repairs them; pushes and placements are open (probes) | 137, 141 |
+| the exchange sign | both sectors meet every axiom; the sign first shows at order four | the books do not see it | supplied | 78, 128 |
+| content of one sense at a crossing | frozen or out of reach under one record per site | — | two records on a site (the parked larger site algebra) or another reading | 77, 78, 125 |
+| a record's energy at formation | the ledger survives formation only at a price | — | the price | 58, 116 |
+| isotropy of moving records | forward streaming needs diagonal steps; isotropy rests on one number `β` | — | exact `β` (probes #9179 certifies the mixture exists, unrefereed) | 51, 52, 118 |
+| groups | records in a gradient settle alike but drift apart | — | a binding clause | 108, 111, 113, 127 |
+
+**The owner's fork** (a finding, not a proposal). The exact books that fix one light cone hold for free walkers, which may share a site with opposite coins. They do not hold under one record per site in two or three dimensions. The routes are:
+- accept books exact only at leading order;
+- allow two records per site with opposite possibilities (the parked larger site algebra);
+- find a pushing rule or an energy placement (open, with the probes).
+
+At the closing ratio the member's constraints need exact books. Away from it, the clock responds at once to any change of energy (block 101).

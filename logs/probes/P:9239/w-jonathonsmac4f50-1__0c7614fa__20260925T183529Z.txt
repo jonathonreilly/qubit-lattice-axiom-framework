@@ -1,0 +1,4 @@
+PR #9239: docs(ring-model): follow the energy-only photon bounds to the RK point
+branch claude/ring-model-energy-only-photon-bounds-from-the-pure-ring-point-to-the-rk-point-20260925 (base main)
+runners in the PR: 1
+== scripts/ring_model_energy_only_photon_bounds_from_the_pure_ring_point_to_the_rk_point_2026_09_25.py: rc=0 PASS=3 FAIL=0

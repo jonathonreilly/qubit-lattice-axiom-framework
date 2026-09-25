@@ -1,6 +1,6 @@
 {
  "edge_count": 14897,
- "node_count": 6725,
+ "node_count": 6726,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -805,6 +805,10 @@
   "admissibility_rule_around_a_body_the_walks_rays_match_the_comparators_at_every_order_exactly_when_its_two_charges_agree_and_they_agree_only_when_hop_energy_balances_the_slowed_clocks_bounded_theorem_note_2026-09-24": {
    "deps_hash": "0349996ab9d9",
    "out_degree": 3
+  },
+  "admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_binding_scale_pinned_at_the_neutral_value_pair_weight_is_the_rules_likelihood_ratio_no_binding_without_a_cycle_all_binding_is_agreement_around_loops_bounded_theorem_note_2026-09-20": {
    "deps_hash": "f6e4ac704374",

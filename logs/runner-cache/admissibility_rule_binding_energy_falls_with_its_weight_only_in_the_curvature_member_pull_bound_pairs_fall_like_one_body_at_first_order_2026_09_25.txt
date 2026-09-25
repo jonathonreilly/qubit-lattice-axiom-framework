@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_binding_energy_falls_with_its_weight_only_in_the_curvature_member_pull_bound_pairs_fall_like_one_body_at_first_order_2026_09_25.py
+runner_sha256: 658d1f41d594c687f2ea06bfbbb67a81a64461bfa73dcea1aebdbfffdf937e5d
+input_fingerprint_sha256: 7325f9332b74f29777710343abd2c55479bb58e863c277a8e6fa1da21f49f262
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.27
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BINDING_ENERGY_FALLS_WITH_ITS_WEIGHT_ONLY_IN_THE_CURVATURE_MEMBER_PULL_BOUND_PAIRS_FALL_LIKE_ONE_BODY_AT_FIRST_ORDER_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the members, the shift, the kinetic term, the source link and the bodies are supplied; the memo does not define a time metric)
+PASS: B1 block 60 T4 with charges Q_i X_i = M_i / c and self-fields dropped: the ledger c sum Q_i of three bodies at rest is M - sum G M_a M_b / r_ab + (G^2/2) sum_a M_a (sum_b M_b / r_ab)^2 to second order, G = 1/(2 pi c)
+PASS: B2 for the curvature member c = 8K, so G = 1/(16 pi K), the value block 144 found for the member's quadratic action
+PASS: C1 moving bodies, energy sqrt(m^2 + k^2 / l^2) through bonds l = X^(2/p): the ledger is sum (m + k^2/2m - k^4/8m^3) - (G m1 m2 / r)[1 + (1/2 + 1/p)(k1^2/m1^2 + k2^2/m2^2)] at first order; 3/2 for the curvature member p = 1
+PASS: C2 the shift's constraint 2 d_i Pi_ij + P_j = 0 with Pi trace-free and without free waves: Pi = i(p V + V p - (2/3) p.V), V = [P/2 - p (p.P)/(8 p^2)]/p^2, and Pi_1.Pi_2 = [P1.P2/2 - (p.P1)(p.P2)/(8 p^2)]/p^2
+PASS: C3 d_i d_j r = (delta_ij - n_i n_j)/r, so p_i p_j / p^4 is (delta - n n)/(8 pi r); the field momentum's energy (1/K) int Pi.Pi between two bodies is (G/2r)[7 k1.k2 + (n.k1)(n.k2)]
+PASS: C4 the curvature member's first-order momentum terms, from the ledger and the field momentum, are minus block 144's velocity terms at v = k/m: the Hamiltonian is block 144's pull changed to momenta, plus T1's static term
+PASS: D1 a pair near a third body at rest: the Hamiltonian's coupling per unit outside mass is sum_a Phi_a [m_a + 2a T_a + s2 U] + s2 (G^2/2)(m1/r13 + m2/r23)^2, the last smaller by r12/R
+PASS: D2 scalar virial bracket: {x.q, H0} = 2T + U with U = -k/r, so 2<T> = -<U> in a bound state
+PASS: D3 passive mass M + 2a<T> + 2 s2 <U> minus the pair's energy M + <T> + <U> is (2 s2 - a - 1/2)<U>: zero for the curvature member (a = 3/2, s2 = 1); (1 - 1/p)<U> for the bilinear member X = l^(p/2)
+PASS: E1 the same Hamiltonian's P^2 coefficient, with the tensor virial 2<T_P> = -<U_P>, gives W = 1 along every axis for (a, b, c) = (3/2, -7/2, -1/2): the pair's inertia is its energy (block 144 T4 re-checked)
+PASS: E2 passive mass M + 3<T> + 2<U> over inertia M + <T> + <U> is exactly 1 with 2<T> = -<U>: a pair bound by the curvature member's pull falls in a distant body's pull like one body, at first order in its binding
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the static ledger of three bodies to second order from block 60's charges, for every bilinear member
+per_site: executed - the moving-body ledger for the member X = l^(p/2), and the field momentum at the shift's constraint
+per_mode: executed - the first-order Hamiltonian against block 144's pull changed to momenta
+per_block: executed - a pair's coupling to a distant body's potential, the scalar and tensor virial brackets, the passive mass and the inertia
+lattice_wide: long wavelength; first order in the binding and in the outside field; point constituents with their own fields dropped
+PASS: G1 the five N5 resolution lines are printed
+scope: the static ledger to second order is the same for every bilinear member; moving bodies carry (1/2 + 1/p) k^2/m^2; a pull-bound pair has passive mass equal to its energy only for the curvature member p = 1, and with the inertia of block 144 such a pair falls like one body at first order in its binding; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

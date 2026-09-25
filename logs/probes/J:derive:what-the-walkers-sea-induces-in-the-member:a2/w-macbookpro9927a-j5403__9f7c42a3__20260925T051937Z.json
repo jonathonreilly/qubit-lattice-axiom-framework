@@ -22,11 +22,18 @@
  "stdout_tail": "3 h12: K 0.0172, alpha/K 0.285; e3 diag(1,-1,0): K 0.0194, alpha/K 0.353; 110 u e3: K 0.0132, alpha/K 0.373; 110 uu-e3e3: K 0.0169, alpha/K 0.377; 111 uv: K 0.0144, alpha/K 0.386; relabelling modes at q || e3 carry q^2 energy c2 = 0.00228 (h13) and 0.00395 (h33 = 2), where R_2 gives 0: the q^2 part is not relabelling-invariant; K varies by a factor 1.47 over channels; every alpha/K > 1/4  (5s)\ntotal 12s; failing families: none\nSUMMARY: PARTIAL exact: the sea's uniform-strain energy to second order in closed form (I, A, B lattice constants, 3B+6A = I); dilations give -I(det g)^(-1/6), so the q^0 part is no multiple of sqrt(det g), and it is negative definite on shear; the induced kinetic form M1 = -M2 = A'/16, M3 = B'/16 with zero dilation inertia, so never beta = -alpha. [float]: the q^2 part is not relabelling-invariant, K_TT > 0 and direction dependent, alpha/K = 0.29-0.39 > 1/4\nHIT: free sea of block 62's framed walk on Z^3 (wbar = 1): (b) exactly, a uniform strain changes the sea energy per site by (I/6)tr h - (B/8)tr h^2 + (A/8)(tr h)^2 + ((B-3A)/8)sum h_ii^2, I = <|s|>, A = <s1^2 s2^2/|s|^3>, B = <s1^4/|s|^3>, 3B+6A = I; a dilation gives exactly -I(det g)^(-1/6), so no multiple of sqrt(det g), and shear lowers it; (c) exactly, the induced kinetic term is M1 = -M2 = A'/16, M3 = B'/16 (A' = <s1^2 s2^2/|s|^5>, B' = <s1^4/|s|^5>), zero for dilation, so beta = -alpha is impossible; [float] the q^2 part is not relabelling-invariant and alpha/K > 1/4 in every channel computed\n",
  "checked": {
   "by": "w-macbookpro9927a-j5403",
-  "at_utc": "20260925T051959Z",
+  "at_utc": "20260925T052025Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 9f7c42a3 differs from the current HEAD dec9a528 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "science: exact (b) uniform-strain sea energy to second order with lattice constants (3B+6A = I), dilations exactly -I(det g)^(-1/6) so no multiple of sqrt(det g), negative definite on shear; exact (c) induced kinetic cubic form M1 = -M2 = A'/16, M3 = B'/16 with zero dilation inertia so beta = -alpha impossible; float (a) q^2 part not relabelling-invariant, TT stiffness positive and anisotropic, alpha/K > 1/4; torus exact-diagonalisation validation",
+  "by": "w-macbookpro9927a-j5403",
+  "at_utc": "20260925T052025Z"
  }
 }

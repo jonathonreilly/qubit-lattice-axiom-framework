@@ -47,6 +47,20 @@ under three readings: `0.46` for a linear photon, `0.575` for a level,
   smallest momenta the bound `2u_0 s²/S_T` scales as `k^{1.45}`; its
   product with `L` runs `6.77, 6.22, 4.69, 4.30`.
 
+- **The 12³ run (auxiliary, not in the runner) shifts the reading.** At
+  `k_min = π/6`, `S_T = 0.496 ± 0.057` (forward lags 1–6 on a plateau
+  `0.52–0.49`, lag 8 `0.458 ± 0.034`), on top of both fits' predictions
+  (0.473, 0.491) and 1.9 standard errors above the pure linear form through
+  8³. But at fixed momentum the structure factor grows with the torus:
+  `S_T(π/3) = 0.557 ± 0.022` on 6³ against `0.778 ± 0.048` on 12³ (four
+  standard errors), and `S_T(π/2) = 0.692 ± 0.013` on 4³, `0.75–0.83` on
+  8³, `0.89 ± 0.08` rising to `0.94 ± 0.06` across the lags on 12³. The
+  smallest-momentum series therefore mixes the `k`-dependence with a
+  finite-size suppression that weakens as `L` grows, and neither fit above
+  has an infinite-volume meaning; the observable that does is `S_T(k)` at
+  fixed `k` extrapolated in `L`, whose present lower bounds are
+  `0.94, 0.78, 0.58, 0.51, 0.50` at `k = π/2, π/3, π/4, π/5, π/6`.
+
 Supplied model, finite diagnostics: no power law, no gap value, no phase
 and no thermodynamic limit is claimed. If the constant `S_0` in the
 mildly preferred form persists as `L` grows, the transverse fluctuations
@@ -99,6 +113,43 @@ None is adopted.
 - **Second momentum.** `S_T(2π/5) = 0.714 ± 0.043` on 10³ continues the rise with
   `k` at fixed size seen on 8³ (`0.575, 0.833, 1.019` at `π/4, π/2, 3π/4`).
 
+## Auxiliary — the 12³ run and the fixed-momentum series
+
+One run on the 12³ torus (100 walkers, projection 34, blocks of 0.05, the
+first 12 discarded, forward lags 1, 2, 4, 6, 8, seed 22; 28 minutes on one
+core) is quoted here without a runner of its own; its numbers are not
+certified by the cache of this note.
+
+| quantity | value |
+|---|---|
+| `e_0` per plaquette | `−0.28665 ± 0.00010` (100 walkers; the population-control bias grows with the torus: 8³ gave −0.28800 at 120 and −0.28813 at 240 walkers) |
+| `S_T(π/6)`, lags 1 / 2 / 4 / 6 / 8 | `0.518 ± 0.050`, `0.496 ± 0.057`, `0.502 ± 0.057`, `0.486 ± 0.054`, `0.458 ± 0.034` (mixed 0.585) |
+| `S_T(π/3)`, lags 1–8 | `0.788, 0.778, 0.792, 0.789, 0.777` (`± 0.03–0.05`; mixed 0.797) |
+| `S_T(π/2)`, lags 1–8 | `0.874, 0.891, 0.923, 0.923, 0.943` (`± 0.06–0.08`; mixed 0.956) |
+| Feynman bound at `π/6` | `0.310 ± 0.036`, `ω·L = 3.72`, `ω/k = 0.59` |
+| correlation rates at `π/6` on `[0, 0.3]`, `[0.5, 1]`, `[1, 2]` | `0.33, 0.28, 0.24` (each `± 0.3–0.5`) |
+
+- **Fixed momentum, growing size.** `S_T(π/3)`: `0.557 ± 0.022` (6³) →
+  `0.778 ± 0.048` (12³), a growth of `0.22 ± 0.05`. `S_T(π/2)`:
+  `0.692 ± 0.013` (4³) → `0.833 ± 0.040` / `0.751 ± 0.018` (8³ at 120 /
+  240 walkers) → `0.89–0.94` (12³). The lags are flat at `π/3` and rise
+  with the lag at `π/2`, so the growth is in the ground state, not in the
+  estimator. This is the effect open PR 9166 found outside any Gaussian at
+  2.7–3.4 standard errors on 8³; on 12³ it is resolved at four.
+- **What it does to the series.** Each `S_T(k_min(L), L)` sits on the
+  finite-size-suppressed branch of its own torus; the fall from 0.692 to
+  0.496 along the series is the sum of the `k`-dependence (a fall) and the
+  suppression's weakening (a rise), and the level step between 6³ and 8³ is
+  where the two nearly cancel. The constant-plus-linear and power fits
+  describe this composite, not `S_∞(k)`. Present lower bounds on
+  `S_∞(k)`, taking the largest torus at each momentum, are `0.94, 0.78,
+  0.58, 0.51, 0.50` at `k = π/2, π/3, π/4, π/5, π/6`: a factor 1.9 over a
+  factor 3 in `k`, still growing at the larger momenta.
+- **The bound follows.** With `S_∞(k)` larger than the series values, the
+  Feynman bound at each `k` is smaller than the series gave: `1.25` at
+  `π/2` and `0.74` at `π/3` on 12³ against `1.69` and `1.04` on 4³ and 6³.
+  The mode at `π/6` decays with rate `0.25–0.33`, `ω·L ≈ 3–4`.
+
 ## What this means for the lanes
 
 - **Photon lane.** Four sizes now: the smallest-momentum fluctuations fall
@@ -115,8 +166,9 @@ None is adopted.
 
 ## What stays open
 
-- The 12³ point at this precision (predictions `0.473` and `0.491`), and
-  the fixed-`k` series at `π/2` (4³, 8³, 12³) and `π/3` (6³, 12³).
+- The fixed-`k` extrapolations in `L`: `S_T(π/2)` on 16³, `S_T(π/3)` on
+  18³, `S_T(π/4)` on 16³, at a precision of 0.03, which need 250–500
+  walkers and forward lags growing with the torus; a certified 12³ point.
 - The late-time gap on 10³ beyond `τ = 2`.
 - Independent checks of every number here.
 

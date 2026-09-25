@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_fixed_sector_live_input_teleportation_2026_07_27.py",
+ "seed": 75959,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T223919Z",
+ "elapsed_s": 11.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d33e1de1862bea5ca514112ca1b0fc31687a08e0d7a9014e6142f2bf49abcdf7",
+ "stdout_tail": " work\",\n      \"pass\": true\n    },\n    {\n      \"label\": \"every physical correction generator is the exact gauge-and-center-preserving image of its raw Bell Pauli\",\n      \"pass\": true\n    },\n    {\n      \"label\": \"exhaustive one-cell and deterministic larger-box branches satisfy the corrected-channel intertwiner\",\n      \"pass\": true\n    },\n    {\n      \"label\": \"spatial correction deletion is detected\",\n      \"pass\": true\n    },\n    {\n      \"label\": \"held non-collinear ladder detects failure of the bounded two-cell raw-X correction gate\",\n      \"pass\": true\n    }\n  ],\n  \"claim_boundary\": \"exact fixed-sector corrected-channel algebra only; the raw-mode Bell route fails the bounded-local correction gate because its Jordan--Wigner cleanup grows on non-collinear boxes; not a physical compiler, no no-go, and no axiom pressure\",\n  \"derived\": \"fixed-sector raw Bell parity law, exact Heisenberg branch correction algebra, and a held-size locality falsification of the raw-X/Jordan--Wigner-cleanup correction route\",\n  \"open\": \"autonomous sector/genesis law; sector-summed live-input encoder; collision-free merge of preparation, Bell, decoder and recurrent G controllers; physical reason for parity superselection; downstream time/source/Record/Born bridges\",\n  \"status\": \"PASS\",\n  \"supplied\": \"fixed parity label shared by live input and resource; one-time Choi preparation epoch; fixed local center signs; mixed gauge reference; rooted mode-tree/router table; clean Bell and syndrome registers\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T223931Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

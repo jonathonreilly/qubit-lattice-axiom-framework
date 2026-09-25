@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_repeated_star_choi_tensor_2026_07_27.py",
+ "seed": 76410,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T224650Z",
+ "elapsed_s": 27.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "500a4a645c33c20cc96da80b521316687762a2d656af6c214582c16d5857a85d",
+ "stdout_tail": "256\": \"0fc933eef3af2630e341aa2266c52e10ff84651abbfa8a67a169d18b6a6e2f3f\", \"status\": \"cycle720-positive-normalized-repeated-star-graded-Choi-PEPO__autonomous-genesis-open\", \"supplied\": [\"the parity-superselected physical law domain; off-diagonal parity coherences are erased rather than preserved\", \"one bounded quantum parity rail summed over both sectors through tensor contractions, with no host sector query\", \"local R2 relation-center values and a maximally mixed gauge factor\", \"a local Bell reference for a Stinespring purification when a pure dilation is requested\", \"the fixed matter/companion port convention\"], \"tensor_construction\": {\"analytic_size_independent_bond_dimension_formula\": \"2^(2*83 endpoint-centered selectors + 1 shared parity rail)\", \"analytic_size_independent_bond_dimension_upper_bound\": 187072209578355573530071658587684226515959365500928, \"formula\": \"rho_J=2^(-Q) product_j (I + S_j), where the commuting signed Choi graph generators S_j are chosen from repeated radius-one truncated-star channel bases\", \"maximum_local_gauge_Bell_reference_qubits\": 21, \"maximum_measured_selector_congestion\": 20, \"maximum_support_diameter_cells\": 2, \"measured_held_box_bond_dimension_formula\": \"2^(20 selectors + 1 shared parity rail)\", \"measured_held_box_bond_dimension_upper_bound\": 2097152, \"optimization_status\": \"explicit but unoptimized rectilinear selector routing\", \"selector_hyperedge_dimension\": 2}}\nREPEATED_STAR_CHOI_PEPO_POSITIVE__AUTONOMOUS_GENESIS_AND_M2_EXECUTION_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224717Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

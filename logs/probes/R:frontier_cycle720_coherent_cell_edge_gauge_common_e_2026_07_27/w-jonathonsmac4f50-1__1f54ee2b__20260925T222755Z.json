@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_coherent_cell_edge_gauge_common_e_2026_07_27.py",
+ "seed": 75275,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T222755Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "798a3a49e9eec0800c411a839c9ec08c24c01dbb9c197745f9148724374e3b7d",
+ "stdout_tail": "{\"contradictions\": 4562, \"rank\": 1566, \"variables\": 1566}, \"cell_radius_2\": {\"contradictions\": 6626, \"rank\": 3438, \"variables\": 3438}, \"cell_radius_3\": {\"contradictions\": 7932, \"rank\": 5022, \"variables\": 5022}}, \"stabilizer_commutator_failures\": 0, \"symmetric_variables\": 5886, \"transformed_coordinate_failures\": 0, \"transformed_family_failures\": {\"onsite_B\": 0, \"onsite_even\": 0, \"seam\": 0}, \"transformed_logical_term_failures\": 0, \"transformed_phase_failures\": 0}], \"schedule_covariance\": {\"Euler_marker_object_family_transported\": true, \"constraint_family_covariance\": \"cell incidence, Gauss stars, and elementary square plaquettes are transported geometrically\", \"frame_colour_bijection_failures\": 0, \"frame_colour_product_failures\": 0, \"ordered_frame_products\": 576, \"proper_cubic_frames\": 24, \"transformed_common_E_executed\": false, \"translation_colour_failures\": 0, \"translation_parity_residues\": 8, \"uniform_marker_sector_genesis_supplied\": true}, \"status\": \"cycle720-positive-coherent-edge-gauge-common-E-nonlocal-marker-genesis-open\", \"supplied\": [\"one uniform Euler-marker superselection sector and its nonlocal genesis\", \"one stabilizer vacuum seed and its local plaquette/Gauss/equality sector\", \"one within-cell six-mode Majorana order\", \"the solved finite-box logical Clifford orientation of E\", \"the 24 program phases; these are a schedule, not physical time\", \"Cycle219 coin and Cycle230 contact parameters\"]}\nCOHERENT_EDGE_GAUGE_EULER_COMMON_E_FINITE_POSITIVE_LOCALITY_GENESIS_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T222757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_local_genesis_broadcast_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_local_genesis_broadcast_2026_07_27.py",
+ "seed": 76230,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T224350Z",
+ "elapsed_s": 9.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ef73e82206832407758deeace120e7c9577e7ad3b21f0e5f411b38907e1d49f1",
+ "stdout_tail": "ts it\", \"fault tolerance bath renewal and periodic topology\"], \"pass\": true, \"report_sha256\": \"6496b99cadd72ce6345b0fd3459faebb623efc50ab2be0d665739eabde409957\", \"status\": \"cycle720-positive-local-coframe-and-parity-twirl-genesis__complete-companion-E-open\", \"supplied\": [\"a finite open connected box and one temporary boundary-root preparation port\", \"a size/shape-specific rooted spanning tree plus transported local cubic port chart and parent/child router table\", \"clean non-root coframe and parity-copy target M2 at the one-time preparation input\", \"three local Bell-reference M2 for coframe randomness and one Bell pair for the parity twirl\", \"one fresh/active/spent one-time controller epoch and a one-hot root token\", \"permission to trace five typed semantic environment M2 after the one-time channel\"], \"three_route_genesis_comparison\": {\"A_retain_semantic_environments\": \"positive bounded-density G tensor I spectator extension; removes trace/reset, but held-size local placement of the canonical reference coordinates remains open\", \"B_local_preparation\": \"positive for the uniform coframe mixture and parity twirl with a bounded local returned-work controller; repeated-star mixed-gauge/center Choi preparation remains open\", \"C_sectorwise_code_covariance\": \"positive 24/576 affine-covariant direct-sum code with three typed coframe gauge bits; this avoids uniform weights for law covariance but supplies rather than selects the gauge state\"}}\nLOCAL_COFRAME_AND_PARITY_TWIRL_GENESIS_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224359Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

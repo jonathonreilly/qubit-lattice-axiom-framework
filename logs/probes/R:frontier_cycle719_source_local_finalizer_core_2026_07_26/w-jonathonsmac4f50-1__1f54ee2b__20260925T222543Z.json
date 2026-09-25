@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle719_source_local_finalizer_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle719_source_local_finalizer_core_2026_07_26.py",
+ "seed": 75143,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T222543Z",
+ "elapsed_s": 103.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a951057baa99869a6bd52c3e5b36fb7b3dd6dddd5e5a4bb5b6d6158caa6a7c18",
+ "stdout_tail": "final recurrent-law criterion\", \"positive-density or post-capacity renewal beyond the declared finite Cycle610 bank\", \"objective occurrence/admission, inaccessible inverse, permanent Record, Born/history, and source/gravity meaning\"], \"order\": {\"failures\": 178, \"rows\": 756}, \"pass\": true, \"report_sha256\": \"6beb76c17976b41b2884a76d51ba584a65f1a0fd500d3187f47fa4d10a4b468e\", \"route\": {\"allocator_physical_primitives\": 250958, \"blank_route_work_M2\": 1953, \"coin_QR_residual\": 1.3496230663401984e-15, \"forward_route_deletions\": 71482, \"forward_routed_NN_gates\": 1318202, \"forward_word_sha256\": \"4593a477f9fdeea0a922b5f3131b2ef9aa5e3b45603264b80412a4a95eb00840\", \"inverse_route_deletions\": 71482, \"inverse_routed_NN_gates\": 1318202, \"inverse_word_sha256\": \"0029bfe5827c840da3d4934e506c7980a951e11fd31f5191d8d4ce248a893f16\", \"maximum_route_distance\": 24, \"non_NN_failures\": 0, \"operand_order_failures\": 0, \"physical_assigned_M2\": 5816, \"route_return_failures\": 0, \"semantic_allocator_gates\": 29086, \"total_physical_primitives\": 252358, \"touched_M2\": 7769}, \"source_truth\": {\"event_rows\": 2048, \"failures\": 0, \"matter_rows\": 4096, \"no_event_rows\": 2048}, \"supplied\": [\"clean finite 12-bank/link genesis, one-token sector, and blank route work\", \"BINDER/ACTUAL/ADMISS/LAW and the fixed outward/packet/inward factor order\", \"the Cycle713 endpoint pointer produced before the allocator word\", \"matter endpoint occupations used by the fixed bank-zero carrier copy\"]}\nCYCLE719_SOURCE_LOCAL_FINALIZER_CORE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T222726Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

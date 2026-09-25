@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py",
+ "seed": 76118,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T224159Z",
+ "elapsed_s": 111.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "978c58bed9a65f17bfd9333ef54bf88cd24a0731258dad4b701a0ebc0f5bb220",
+ "stdout_tail": " encoded-input Clifford could remove the remaining supplied epoch\",\n    \"N8_cross_cycle\": \"uses the existing repeated-star Choi graph, local parity rail, coframe gauge, and recurrent G certificates without revising them\",\n    \"broad_no_go_gate\": \"FAIL\"\n  },\n  \"open\": \"translation-invariant autonomous genesis/enforcement law; literal collision-free controller layout with the recurrent matter word; deterministic Choi-to-live-input injection/teleportation correction; physical reason for parity superselection; Record/Born/time/source\",\n  \"pump_algebra\": {\n    \"Kraus_completeness_identity\": \"K_plus=P_plus, K_minus=C P_minus; K_plus^dagger K_plus + K_minus^dagger K_minus=P_plus+P_minus=I\",\n    \"canonical_eigensign_rows\": [\n      [\n        1,\n        1\n      ],\n      [\n        -1,\n        1\n      ]\n    ],\n    \"canonical_output_plus_failures\": 0,\n    \"canonical_trace_preservation_failures\": 0,\n    \"isometry_identity\": \"V_dagger V=I because the retained-syndrome circuit is a product of Clifford unitaries; no reset or postselection occurs\",\n    \"prepared_sector_identity\": \"S K_plus=K_plus and S K_minus=K_minus when C anticommutes with S\",\n    \"unitary_dilation_gates\": \"Hadamard, controlled signed Pauli, Hadamard, controlled correction\"\n  },\n  \"status\": \"PASS\",\n  \"supplied\": \"one-time preparation epoch; root/corner and axis-order gauge; size/shape router instantiation from the fixed rule; clean local Bell references, route rail and syndrome banks; parity-superselected channel domain\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224350Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

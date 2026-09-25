@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_bounded_general_clifford_orbit_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_bounded_general_clifford_orbit_2026_07_27.py",
+ "seed": 75269,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T222749Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1fa0f1b62fd2836e0123baa1767f3fffbac2a64a64d6769a636c47a5e09319b5",
+ "stdout_tail": "ctions are charged only to exact Clifford equations; even-algebra positive uses exact ranks and Gram residuals\", \"N5_resolution\": \"2x2x2 plus held 3x2x2 and 3x3x2 open boxes\", \"N6_partial_closure\": \"full even algebra closes despite full-state E remaining open\", \"N7_steelman\": \"a non-Clifford locality-preserving encoding or genuine subsystem quotient could evade the fixed-Clifford reduction\", \"N8_cross_cycle_echo\": \"consistent with the prior long-range diagonal E and local plaquette-span certificates\", \"gate\": \"FAIL_for_broad_no_go__route_specific_clifford_and_marker_result_only\"}, \"open\": [\"a bounded-radius full-state QCA E outside this fixed Clifford representation\", \"a local preparation/refresh law for the gauge stabilizer vacuum\", \"coherent full-parity encoding without the growing marker-sector flip\", \"transformed-E proper-cubic covariance, because no bounded transformed E has closed\", \"literal M2 placement/routing and composed coin/contact update\", \"periodic boxes and Wilson/spin sectors\"], \"pass\": true, \"report_sha256\": \"7135f4f72b1079ffdd4c78ff9d261b63b150710329578123fef4292b8b43b6e0\", \"status\": \"cycle720-positive-even-algebra-orbit__bounded-full-state-E-open\", \"supplied\": [\"choice of a total-parity sector, unless coherent even/odd superpositions are required\", \"a stabilizer/gauge vacuum representative\", \"within-cell mode order and local generator labels\", \"the 24-phase schedule, which is not physical time\"]}\nBOUNDED_GENERAL_CLIFFORD_REJECTED__LOCAL_EVEN_ORBIT_POSITIVE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T222752Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

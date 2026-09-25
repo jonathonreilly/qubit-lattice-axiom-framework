@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_subsystem_m2_update_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py",
+ "seed": 76437,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T224717Z",
+ "elapsed_s": 21.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ac9059cf97271ea2beb2077ee10307e5d6598d10ec066a65cb5c844c187fa05",
+ "stdout_tail": "eters explicit\", \"N4_residual_matching\": \"rank/kernel/phase/gauge residuals separated from local-factor and route residuals\", \"N5_resolution\": \"2x2x2,3x2x2,3x3x2,5x3x2 without refit\", \"N6_partial_closure\": \"local subsystem compiler closes before pure-state E\", \"N7_steelman\": \"a bounded gauge-fixing preparation could promote this result\", \"N8_cross_cycle_echo\": \"uses Cycle658 endpoint incidence with factor-private local companions and Cycle709/718 M2 routing\", \"gate\": \"FAIL_for_broad_no_go__constructive_subsystem_positive\"}, \"open\": [\"a bounded-local preparation circuit for the explicit sectorwise gauge-fixing maps\", \"autonomous gauge-center genesis and repair\", \"coherent even/odd parity transport\", \"active transformed operator/subsystem covariance rather than route geometry alone\", \"collision-free constant-depth parallel routing, periodic sectors, and fault tolerance\", \"physical time, source/gravity, Record, and Born/history bridges\"], \"pass\": true, \"report_sha256\": \"7fc0a1999b8b27837a89ab91574f6ab0d7665d882b87c2f49776d4628dfb0cbb\", \"status\": \"cycle720-positive-local-companion-subsystem-M2-update__pure-state-E-open\", \"supplied\": [\"one fixed total-parity superselection label at genesis\", \"one gauge-center sector/vacuum representative\", \"one within-cell order for matter and companion Majoranas\", \"Cycle709 spacing-16 chart, serial route schedule, and blank route-work M2\", \"Cycle219 coin and Cycle230 contact parameters\"]}\nCOMPANION_SUBSYSTEM_M2_UPDATE_POSITIVE__PURE_STATE_E_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224739Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

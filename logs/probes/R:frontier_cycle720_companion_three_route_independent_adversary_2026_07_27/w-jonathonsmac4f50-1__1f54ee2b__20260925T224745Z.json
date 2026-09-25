@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_three_route_independent_adversary_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_three_route_independent_adversary_2026_07_27.py",
+ "seed": 76465,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T224745Z",
+ "elapsed_s": 7.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "720732422ae60649bac6c6409e0453d42dc50837121a84c7067c4e3342c80e65",
+ "stdout_tail": "_commutator\": 0, \"logical\": 0, \"parity\": 0, \"sector_sign\": 0}, \"cover_excess_factors\": 0, \"cover_missing_factors\": 0, \"cross_edge_seam_commutators\": 0, \"duplicated_view_factors\": 132, \"expected_logical_update_factors\": 428, \"factor_deletion_residual\": 0.7653668647301793, \"hostile_interleave_residual\": 0.9999999999999997, \"logical_update_factors\": 428, \"orientation_reversal_residual\": 0.0, \"placement_collisions\": 0, \"recurrence_proof_class\": \"factorwise signed-coordinate equality plus one fixed ordered unitary word; recurrence is algebraic induction on the declared code, not a fresh state-space execution at every power\", \"route_non_NN_failures\": 0, \"route_return_failures\": 0, \"routed_primitives\": 26940, \"runtime_parity_queries\": 0, \"seam_factor_pattern_failures\": 0, \"sector_conditioned_gates\": 0, \"shared_cells\": 4, \"shared_embedding_failures\": 0, \"shared_registers\": 36, \"union_cells\": 12, \"union_registers\": 108, \"within_edge_noncommuting_pairs\": 80, \"word_category_order_failures\": 0, \"word_unitarity_residual\": 9.42129743476075e-16}, \"report_sha256\": \"70b7f8742681ec4cd5deb3dd3554899ab94c6ba00090ee5a0d83a8d5911b3cc5\", \"status\": \"PASS\", \"top_level_blocklist\": [\"frontier_cycle720_companion_fixed_sector_even_car_bell_2026_07_27\", \"frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27\", \"frontier_cycle720_companion_local_genesis_broadcast_2026_07_27\", \"frontier_cycle720_companion_recurrent_overlap_update_2026_07_27\"]}\nCOMPANION_THREE_ROUTE_INDEPENDENT_ADVERSARY_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224752Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

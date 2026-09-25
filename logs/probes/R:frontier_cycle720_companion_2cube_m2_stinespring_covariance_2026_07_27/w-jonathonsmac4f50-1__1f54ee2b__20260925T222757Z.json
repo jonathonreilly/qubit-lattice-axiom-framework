@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py",
+ "seed": 75277,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T222757Z",
+ "elapsed_s": 248.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e7a97db0b5e7372aa96c619c84d2f57378554c0be878d9f096c4b9b007e04c4",
+ "stdout_tail": "circuit-positive\"}, \"open\": [\"replace the finite synthesized 2-cube tableaus by one recurrent translation-compatible local Stinespring tile\", \"autonomously supply or dynamically prepare the pure reference/environment ancillas and center phase orientations\", \"derive rather than posit the parity-superselected law domain\", \"import the independently tested overlap-consistent local coframe gauge into the recurrent tile\", \"bridge the physical endpoint channel to time, source/gravity, Record, Born/history, and a prediction surface\"], \"pass\": true, \"report_sha256\": \"61a6209c1d1df6c3d663c1f0bf138b314b9c1e473338ad32f83c6c82d0d2cb46\", \"status\": \"cycle720-positive-2cube-M2-Stinespring-and-local-coframe-covariance__recurrent-open\", \"supplied\": [\"72 physical-output M2 sites initialized in the canonical zero sector before encoding\", \"19 pure reference M2 qubits and permission to trace them after Bell preparation\", \"one decoded input-parity environment qubit and permission to trace it nonselectively\", \"the parity-superselected law domain; parity-off-diagonal coherence is dephased\", \"one finite representative of the locally constrained three-bit coframe gauge for the frame circuit\", \"24 coframe M2 sites in the local-alternation code; this runner does not derive their genesis\", \"the synthesized finite 2-cube signed tableaus and fixed serial routing schedule\", \"a 6x6x4 M2 placement with five clean blank route sites\"]}\nM2_STINESPRING_AND_LOCAL_COFRAME_COVARIANCE_POSITIVE__RECURRENT_GENESIS_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T223206Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

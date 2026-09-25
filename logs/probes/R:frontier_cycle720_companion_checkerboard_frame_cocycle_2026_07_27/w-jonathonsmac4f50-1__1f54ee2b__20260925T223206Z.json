@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle720_companion_checkerboard_frame_cocycle_2026_07_27.py",
+ "seed": 75526,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T223206Z",
+ "elapsed_s": 264.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f6278903a434adab398394e5dcd2322d2bdad8079e3c464d3a92b1836ce8261",
+ "stdout_tail": "er the eight coframe-origin sectors with the coframe output retained\"], \"uniform_eight_origin_physical_channel\": {\"affine_group_elements\": 192, \"coframe_origin_sectors_uniformly_retained\": 8, \"compiled_controlled_Z_count_range\": [0, 24], \"compiled_controlled_Z_primitive_gate_count_range\": [0, 72], \"compiled_controlled_word_coframe_X_failures\": 0, \"compiled_controlled_word_sector_projection_failures\": 0, \"constraint_transport_contexts\": 6144, \"density_boundary\": \"the uniform mixture over all eight retained coframe code sectors is an executed block-diagonal density/Choi channel; coherent off-diagonal origin phases are not claimed\", \"generated_affine_group_elements\": 192, \"generator_count\": 5, \"generator_product_origin_blocks\": 7680, \"local_alternation_constraint_transport_failures\": 0, \"onsite_controlled_Z_per_cell_range\": [0, 3], \"physical_word\": \"permute the three coframe bits with the port frame, apply affine bit complements for unit translations, perform the bare frame word, then apply one onsite CZ(coframe_axis, companion_axis) for each negatively oriented target axis\", \"proper_rotation_density_Choi_product_failures\": 0, \"proper_rotation_product_origin_blocks\": 4608, \"seed_transport_failures\": 0, \"signed_physical_tableau_product_failures\": 0, \"translation_density_Choi_product_failures\": 0, \"translation_product_origin_blocks\": 512, \"two_cube_controlled_Z_gate_count_range\": [0, 24], \"uniform_origin_density_Choi_product_failures\": 0}}\nCHECKERBOARD_LOCAL_FRAME_CORRECTION_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T223630Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

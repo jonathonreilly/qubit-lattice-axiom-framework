@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle719_two_rail_recurrent_controller_core_2026_07_26.py",
+ "seed": 75247,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1f54ee2b",
+ "started_utc": "20260925T222727Z",
+ "elapsed_s": 22.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8eb49cdcf6b4292660e0bc0cb2410e3c8150e73106f85182913cdb34298e9adc",
+ "stdout_tail": "aximum_route_distance\": 45, \"non_NN_failures\": 0, \"one_M2_primitives\": 436284, \"operand_order_failures\": 0, \"physical_primitives\": 740226, \"route_blueprint_sha256\": \"6b384e8144e77817c9531672db55785e2f31800650fa6456f1b9b62870ba73af\", \"route_return_failures\": 0, \"routed_NN_gates\": 13315466, \"touched_M2\": 16669, \"two_M2_primitives\": 303942}, \"frame_product_failures\": 0, \"inverse\": {\"delete_first_route_swap_detected\": 239552, \"maximum_route_distance\": 45, \"non_NN_failures\": 0, \"one_M2_primitives\": 436284, \"operand_order_failures\": 0, \"physical_primitives\": 740226, \"route_blueprint_sha256\": \"4a3465fd99efc14b1e028d9069224f6e49b63ba985e753da2f7828c3e2131295\", \"route_return_failures\": 0, \"routed_NN_gates\": 13315466, \"touched_M2\": 16669, \"two_M2_primitives\": 303942}, \"ordered_frame_products\": 576, \"placement_collisions\": 0, \"program_nonidentity_stations\": 91, \"program_semantic_gates\": 29086, \"program_word_sha256\": \"9caff870b38f56714a5e014c005c7f593276d216cf7c6e3f0e0ba08a01021e0d\", \"proper_cubic_frames\": 24, \"rail_cycle_NN_failures\": 0, \"stations\": 130, \"total_declared_M2\": 6206, \"translation_failures\": 0}}, \"report_sha256\": \"b365a0f9d068b2d8fa7500b436ed27f34842b0fdc12acd37d5c7e9b9e0d648f0\", \"supplied\": [\"one controller token at source station and zero B/work rails\", \"source boundary and oriented finite program ring\", \"Q-before-R layer order and bounded local macro gate order\", \"clean data-bank/link/route genesis and event predicates\"]}\nCYCLE719_TWO_RAIL_RECURRENT_CONTROLLER_CORE_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T222749Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

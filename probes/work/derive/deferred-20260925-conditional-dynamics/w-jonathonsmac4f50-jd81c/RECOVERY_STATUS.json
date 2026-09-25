@@ -1,0 +1,31 @@
+{
+  "task": "J:derive:deferred-20260925-conditional-dynamics:a1",
+  "worker": "w-jonathonsmac4f50-jd81c",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "25b8c1874f2ea657653dbb298bf383c18d81e0b5",
+  "source_unit": "probes/work/deferred-science-20260925/unit-18.json",
+  "inspected": [
+    {"pr": 9041, "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_ACT_AS_FIELDS_A_SITE_WITH_SIX_RECORDED_NEIGHBOURS_IS_A_QUBIT_IN_THEIR_FIELD_AND_ITS_LAW_POINTS_ALONG_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md", "bundle_sha256_verified": true, "accepted_matches_main": true},
+    {"pr": 9041, "original_path": "logs/runner-cache/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.txt", "bundle_sha256_verified": true, "accepted_matches_main": true},
+    {"pr": 9041, "original_path": "scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py", "bundle_sha256_verified": true, "accepted_matches_main": true},
+    {"pr": 9142, "note": "landed note RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_... read on main: 'Clock independence still depends on the supplied initial component r_0.h^ ... A separate preparation rule would be required.'"}
+  ],
+  "related_work_checked": [
+    {"path": "probes/work/derive/deferred-20260925-conditional-dynamics", "finding": "no attempt"},
+    {"path": "probes/work/derive/deferred-20260924-formation", "workers": ["w-macbookpro9927a-jd76a"], "overlap": "none"}
+  ],
+  "dispositions": [
+    {"residual": "finite autonomous preparation of the isolated-site law (PR 9041 T3's antecedent)", "disposition": "recovered",
+     "scope": "explicit exact countermodel under the supplied clauses plus a supplied formation time: lam(tau) = cos^2(2J tau)/(1 + sin^2(2J tau)) for identical final records; constant-hazard average (8J^2 + f^2)/(24J^2 + f^2)",
+     "evidence": "check.py C1-C8, ATTEMPT.md steps 1-8", "pending": "cross-model referee"},
+    {"residual": "clock independence depends on the supplied r_0.h^ (PR 9142)", "disposition": "already-covered", "where": "landed PR 9142 note; sharpened here to an autonomously generated, formation-time-dependent component"},
+    {"residual": "PR 9043 cross-wing PR-box, PR 9046 readability/product law, PR 9050 holonomy, PR 9052 variance criterion, PR 9040 oriented-bond representative", "disposition": "open", "note": "not inspected in this first pass"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. a history-independent preparation or relaxation clause for isolated sites (a bath the axioms would have to supply)",
+    "2. whether any finite autonomous history makes lam records-only for all formation times",
+    "3. a derived formation time (occurrence), which would enter the isolated-site law through lam(tau)",
+    "4. unit 18's other PRs"
+  ],
+  "first_pass_note": "one residual worked; the bundle is not exhausted"
+}

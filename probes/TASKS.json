@@ -52480,6 +52480,147 @@
   "what": "re-execute the runners of PR #9233 (physics-loop: admissibility induced-law block 145 - binding energy fal) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9233 --worker <name> --review \"...\""
  },
  {
+  "id": "J:falsifier:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): attack RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9236",
+  "type": "judgment",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9236 (docs(ring-model): bound the pure-ring photon with energies a): for every number in the theorem statements of RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925; git show origin/claude/ring-model-controlled-population-energy-only-bounds-on-the-photon-20260925:<note>. Create probes/work/pr9236/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9236/<script>.py\""
+ },
+ {
+  "id": "P:9236",
+  "type": "pr-reexecution",
+  "lane": "ring-model-controlled-population-energy-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9236",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9236 (docs(ring-model): bound the pure-ring photon with energies alone) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9236 --worker <name> --review \"...\""
+ },
+ {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
   "type": "judgment",
   "lane": "adjacency",
@@ -68371,10 +68512,10 @@
   "id": "X:formation-3plus1-lro-large",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68441,10 +68582,10 @@
   "id": "X:lightcone-near-the-proved-threshold",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68529,10 +68670,10 @@
   "id": "X:formation-4plus1-thresholds",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68617,10 +68758,10 @@
   "id": "X:record-gas-chessboard-onset",
   "type": "scan",
   "lane": "moving-records",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 record_gas_stagger.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68759,10 +68900,10 @@
   "id": "X:covariant-six-neighbour-onset",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68838,10 +68979,10 @@
   "id": "X:covariant-weighted-onsets",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -68935,10 +69076,10 @@
   "id": "X:covariant-two-classes-and-copy",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -69005,10 +69146,10 @@
   "id": "X:clocked-gas-condensation-grid",
   "type": "scan",
   "lane": "moving-records-clocks",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 clocked_gas.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"

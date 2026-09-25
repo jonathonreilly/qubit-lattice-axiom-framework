@@ -3,10 +3,10 @@
   "id": "X:covariant-six-neighbour-onset",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -82,10 +82,10 @@
   "id": "X:covariant-weighted-onsets",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -179,10 +179,10 @@
   "id": "X:covariant-two-classes-and-copy",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_covariant.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"

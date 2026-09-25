@@ -3,10 +3,10 @@
   "id": "X:clocked-gas-condensation-grid",
   "type": "scan",
   "lane": "moving-records-clocks",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 clocked_gas.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"

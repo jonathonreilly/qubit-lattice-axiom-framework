@@ -3,10 +3,10 @@
   "id": "X:formation-3plus1-lro-large",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -73,10 +73,10 @@
   "id": "X:lightcone-near-the-proved-threshold",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -161,10 +161,10 @@
   "id": "X:formation-4plus1-thresholds",
   "type": "scan",
   "lane": "formation-3plus1",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 formation_levelplane.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
@@ -249,10 +249,10 @@
   "id": "X:record-gas-chessboard-onset",
   "type": "scan",
   "lane": "moving-records",
-  "tier": "1",
+  "tier": 1,
   "command": "cd probes/lib && python3 record_gas_stagger.py {EXTRA}",
   "cwd": ".",
-  "timeout_s": "28800",
+  "timeout_s": 28800,
   "hit_pattern": "(?!x)x",
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"

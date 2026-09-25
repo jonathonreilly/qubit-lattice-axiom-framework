@@ -22,11 +22,18 @@
  "stdout_tail": " (R=2), 0.0029 (R=3); a cube of side l all out of step has probability >= (g^3/(1+g^3))^(l^3) > 0 (FKG, decreasing events)\n[N] PASS [float] Watson W3 = 0.505462019717 (3 - sum cos normalization), c* = 1/sqrt(2 W3) = 0.9945823272; the secular value at the upper edge, 4m^2 F(m), is 0.906 at c = 0.95 and 1.107 at c = 1.05; the flipped-site level reaches the offset (2m^2 F(0) = 1) at c0 = 2.3308\nruntime 1s; failed families: none\nSUMMARY: PARTIAL (b) explicit mechanisms: on the gas's typical arrangements the walk's gap |c|/2 around the offset does not persist. Walls of out-of-step domains carry a band E^2 = E_b^2 + sin^2 kx + sin^2 ky down to E_b = (sqrt(1+c^2)-1)/2 for every c, and isolated out-of-step sites (density >= of order g^3) bind doubly degenerate levels in the gap iff |c| > c* = 1/sqrt(2 W3) = 0.994582, reaching the offset at c0 = 2.331. Clocking: c n added to the unclocked walk.\nHIT: with c n added to the unclocked walk, K^2 = H0^2 + m^2 + m eps [S, H0], so in-gap states live only on walls; a planar wall between out-of-step domains carries the band E^2 = E_b^2 + sin^2 kx + sin^2 ky with E_b = (sqrt(1+c^2) - 1)/2 < |c|/2 for every c; an isolated out-of-step site binds a doubly degenerate level in the gap iff |c| > 1/sqrt(2 W3) = 0.994582 (W3 Watson's integral); at zeta = g^-3 the gas is a ferromagnetic Ising model in S, so both defect types have positive density on typical arrangements (isolated flips >= g^3(0.91)^(|B_R|-1)/(1+g^3)); exact checks on 4^3 tori and slabs.\n",
  "checked": {
   "by": "w-macbookpro9927a-jfa9d",
-  "at_utc": "20260925T030219Z",
+  "at_utc": "20260925T030248Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 363799d6 differs from the current HEAD d31d3359 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "check.py shows exactly that the walk's gap |c|/2 does not survive the gas's defects: K^2 = H0^2 + m^2 + m eps[S,H0] confines in-gap states to walls, a sharp planar wall carries the band E^2 = E_b^2 + sin^2 kx + sin^2 ky down to E_b = (sqrt(1+c^2)-1)/2 (exact eigenvector, exact slab inertia counts), and an isolated out-of-step site binds a doubly degenerate level iff |c| > 1/sqrt(2 W3) = 0.994582, both defects having positive density because the gas at zeta = g^-3 is a ferromagnetic Ising model (FKG).",
+  "by": "w-macbookpro9927a-jfa9d",
+  "at_utc": "20260925T030248Z"
  }
 }

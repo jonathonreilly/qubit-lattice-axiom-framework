@@ -1,0 +1,16 @@
+[PASS] A1: velocity cos(k_a) sigma_a and (1/2){h, dh/dk_a} = sin k_a cos k_a * 1 (block 140 T1 in symbols: the one-record current is a scalar on the coin)
+[PASS] A2: P(k) + P(K - k) = sin K cos(2k - K) componentwise (block 143 T1)
+[PASS] A3: [h.s,[h.s,f.s]] = 4(|h|^2 f - (h.f)h).s: a one-body placement keeps the free books only if [h, f] = 0 (lemma L0)
+[PASS] B1: 4^3 torus, clock law solved exactly in position space: sum_xy G(x-y)<f1|e_x|i1><f2|e_y|i2> = L^3 Ghat(k1'-k1) (1/2)u'(h'+h)u (x) (1/2)w'(h'+h)w in 5 cases (incl. forward and non-conserving), Ghat = 1/(1 - sum cos p/3)
+[PASS] C1: open chain 5, box 2x3, box 2x2x2, generic even G and generic placement weights (incl. weight off both records): i[V,D2] + i[H2,F_V] = sum G(r)[j_x e_y + e_x j_y + (x-c) i[e_x,H] e_y + (y-c) e_x i[e_y,H]], j_x = sum_z (z-x) i[e_x,e_z]
+[PASS] D1: K=(pi/4,pi/4,3pi/4): (k,K-k)=((0,pi/2,pi/4),(pi/4,-pi/4,pi/2)) -> (k',K-k')=((pi/2,0,pi/4),(-pi/4,pi/4,pi/2)); eps^2 = 3/2, 2 kept, all four band energies equal and distinct; g: (1/2,-1/2,1/2) -> (-1/2,1/2,1/2); no transfer is 0 mod 2pi; Ghat = 3/2 (direct), 2+sqrt2 (exchange); all momenta on the 8-torus grid
+[PASS] E1: |<f|V|i>|^2 at the witness, all 4 band pairs: distinguishable = 9/4 each; symmetric/antisymmetric are elements of Q(sqrt2,sqrt3) with nonzero rational Galois norm
+    (+1,+1) sym: 841*sqrt(6)/192 + 1457*sqrt(2)/192 + 301*sqrt(3)/48 + 1677/128  (~45.4241)
+    (+1,+1) anti: 103*sqrt(3)/48 + 521*sqrt(2)/192 + 301*sqrt(6)/192 + 765/128  (~17.3709)
+    (+1,-1) sym: -301*sqrt(3)/48 - 841*sqrt(6)/192 + 1457*sqrt(2)/192 + 1677/128  (~2.2427)
+    (+1,-1) anti: -301*sqrt(6)/192 - 103*sqrt(3)/48 + 521*sqrt(2)/192 + 765/128  (~2.2573)
+[PASS] E2: on-shell O(lambda) books defect <f|C1_a|i> = (g_a(i) - g_a(f)) <f|V|i>, g(i) - g(f) = (1,-1,0): nonzero for a = 1, 2 in every sector and band pair
+[PASS] E3: off-grid shell pair (sin,cos of k: 3/5,4/5; 5/13,12/13; 20/29,21/29; K1=K2: 8/17,15/17; K3: 7/25,24/25), axes 1,2 swapped: g_1 - g_2 = -147456/1221025, |v|^2 = Ghat^2 eps^2(1+n.n')/2 eps~^2(1+m.m')/2 = 10478294359134993/21590194575625 > 0 for every band pair
+TOTAL: PASS=9 FAIL=0  (16 s)
+SUMMARY: PARTIAL first-order books identity for two walkers under block 53's pull: for every placement of the pull's energy in ATTEMPT.md's class the O(lambda) part of [H', J'] has on-shell off-forward kernel (g(k) - g(k'))<b|V|a>, placement-independent; the Born amplitude is nonzero at exact shell pairs where g changes (E1-E3), so exact books first fail at first order in the coupling; the all-orders scattering form stays conditional on a long-range wave-operator bridge.
+HIT: under block 53's pull V = sum G(x-y) e_x e_y two walkers lose exact books at first order: for placements with first moment (x+y)/2 + beta r + rho0(r), sum |G rho0| finite, plus finite-range and one-body terms keeping the free books, the O(lambda) part of [H', J'] is (g(k) - g(k'))<b|V|a> on the shell off forward; at K = (pi/4,pi/4,3pi/4), k = (0,pi/2,pi/4) -> (pi/2,0,pi/4) the Born amplitude is nonzero (|v|^2 = 9/4; nonzero in both exchange sectors) while g changes by (1,-1,0); on every torus with 8 | L no J(lambda) = sum P + O(lambda) commutes with H2 + lambda V.

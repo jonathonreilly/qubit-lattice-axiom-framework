@@ -1,0 +1,29 @@
+X exact (4x4 torus, two records, both exchange signs, generic rational phi): the chessboard phi -> phi 2^(+-1) leaves the hard-core generator unchanged entry by entry: PASS (every hop joins opposite sublattices, as block 76 T1 for one body)
+X exact: at one record per site (the free negative branch's filling on a torus: V records) no hop is possible, H = 0: the jam (block 85)
+N 4x3 torus, N = 6 records (hard-core dim 59136): | hard-core bosonic: E0/site -0.454989, chi -0.08672, |eps| term +2.4e-06, gap to 1st excited 5.64e-02 | hard-core fermionic: E0/site -0.467423, chi -0.08878, |eps| term +2.5e-06, gap to 1st excited 7.20e-02 | free antisymmetric: E0/site -0.607623, chi -0.46630, |eps| -5.5e-04 | free symmetric: E0/site -0.661432, chi -1.26204, |eps| -1.6e-03 (19 s)
+N 4x3 torus, N = 4 records (hard-core dim 7920): | hard-core bosonic: E0/site -0.379289, chi -0.10194, |eps| term +4.4e-06, gap to 1st excited 0.00e+00 | hard-core fermionic: E0/site -0.384901, chi -0.10547, |eps| term +6.9e-06, gap to 1st excited 4.25e-02 | free antisymmetric: E0/site -0.440957, chi -0.42465, |eps| -5.5e-04 | free symmetric: E0/site -0.440954, chi -0.84136, |eps| -1.1e-03 (1 s)
+N 4x4 torus, N = 4 records (hard-core dim 29120): | hard-core bosonic: E0/site -0.323492, chi -0.12938, |eps| term +3.6e-05, gap to 1st excited 1.92e-01 | hard-core fermionic: E0/site -0.323492, chi -0.12938, |eps| term +3.6e-05, gap to 1st excited 2.17e-01 | free antisymmetric: E0/site -0.353550, chi -0.41645, |eps| -8.6e-04 | free symmetric: E0/site -0.353547, chi -0.82847, |eps| -1.7e-03 (3 s)
+N 4x4 torus, N = 6 records (hard-core dim 512512): | hard-core bosonic: E0/site -0.421112, chi -0.11725, |eps| term -8.3e-06, gap to 1st excited 1.76e-01 | hard-core fermionic: E0/site -0.426777, chi -0.09601, |eps| term +1.3e-06, gap to 1st excited 9.68e-14 | free antisymmetric: E0/site -0.478550, chi -0.44769, |eps| -8.6e-04 | free symmetric: E0/site -0.530321, chi -1.24270, |eps| -2.6e-03 (102 s)
+N 4x3 free negative sea (all negative one-body levels filled; the hard-core crowd at V records is jammed, E = 0, chi = 0): E/site -0.896300, chi -0.19405, |eps| +3.4e-06
+N 4x4 free negative sea (all negative one-body levels filled; the hard-core crowd at V records is jammed, E = 0, chi = 0): E/site -0.853553, chi -0.19202, |eps| +2.6e-06
+N stiffness part Dchi = chi - e0/4 at q = pi/2 (lattice q^2 = 2), per site:
+   4x3 N=6  hard-core bosonic    e0 -0.454989  chi -0.08672  Dchi +0.02703
+   4x3 N=6  hard-core fermionic  e0 -0.467423  chi -0.08878  Dchi +0.02808
+   4x3 N=6  free antisymmetric   e0 -0.607623  chi -0.46630  Dchi -0.31439
+   4x3 N=6  free symmetric       e0 -0.661432  chi -1.26204  Dchi -1.09668
+   4x3 N=4  hard-core bosonic    e0 -0.379289  chi -0.10194  Dchi -0.00712
+   4x3 N=4  hard-core fermionic  e0 -0.384901  chi -0.10547  Dchi -0.00925
+   4x3 N=4  free antisymmetric   e0 -0.440957  chi -0.42465  Dchi -0.31441
+   4x3 N=4  free symmetric       e0 -0.440954  chi -0.84136  Dchi -0.73112
+   4x4 N=4  hard-core bosonic    e0 -0.323492  chi -0.12938  Dchi -0.04850
+   4x4 N=4  hard-core fermionic  e0 -0.323492  chi -0.12938  Dchi -0.04850
+   4x4 N=4  free antisymmetric   e0 -0.353550  chi -0.41645  Dchi -0.32806
+   4x4 N=4  free symmetric       e0 -0.353547  chi -0.82847  Dchi -0.74008
+   4x4 N=6  hard-core bosonic    e0 -0.421112  chi -0.11725  Dchi -0.01197
+   4x4 N=6  hard-core fermionic  e0 -0.426777  chi -0.09601  Dchi +0.01068
+   4x4 N=6  free antisymmetric   e0 -0.478550  chi -0.44769  Dchi -0.32805
+   4x4 N=6  free symmetric       e0 -0.530321  chi -1.24270  Dchi -1.11012
+   4x3 N=12 free sea             e0 -0.896300  chi -0.19405  Dchi +0.03002
+   4x4 N=16 free sea             e0 -0.853553  chi -0.19202  Dchi +0.02137
+
+SUMMARY: 4x3 torus at half filling (6 records): raw second-order response chi < 0 for every model (hard-core bosonic -0.0867, fermionic -0.0888, free antisymmetric -0.4663); with the local volume term e0/4 removed the stiffness part is hard-core +0.0270 / +0.0281, free negative sea +0.0300 (same sign, positive: a clock stiffness), free fermions at the same density -0.3144 (opposite); the chessboard of clocks is an exact zero; at the sea's filling the hard-core crowd is jammed (E = 0, no response)

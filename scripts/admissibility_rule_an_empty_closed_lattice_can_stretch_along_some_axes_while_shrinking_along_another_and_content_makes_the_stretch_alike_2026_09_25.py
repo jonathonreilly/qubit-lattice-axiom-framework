@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Exact checks: an empty closed lattice can stretch along some axes while shrinking along another, and content makes the
-stretch alike - within block 61's three-length kinetic family and block 60's homogeneous model (landed), with the member's kinetic
+"""Exact checks: an empty closed lattice can stretch along some axes while shrinking along another, and with content the
+stretch is alike wherever the lattice is large - within block 61's three-length kinetic family and block 60's homogeneous model (landed), with the member's kinetic
 term (blocks 124 and 134-136, landed) and block 146 (open) placed: on a uniform diagonal stretch the member's kinetic term is
 M1 sum lamdot^2 + M2 sum lamdot_i lamdot_m with M1 = 4(alpha + beta), M2 = 8 beta, so only -8 alpha sum_{i<m} lamdot_i lamdot_m
 survives at the closing ratio; with the volume l1 l2 l3 an empty lattice moves as l_i = (t/t0)^(p_i) with sum p = sum p^2 = 1
 (one length shrinking), and has no isotropic motion; with rest content the exact family 8 alpha V (S - lamdot_k) = m0 t + D_k
-becomes isotropic, lamdot_k t -> 2/3 (the supervisor's own derivation; not adopted).
+is isotropic wherever the lattice is large, lamdot_k t -> 2/3 as t -> +oo and as t -> -oo, and is closed under reversing time
+(t -> -t, D_k -> -D_k), so the equations fix no direction (the supervisor's own derivation; not adopted).
 
 B (T1): the member's kinetic term on a uniform diagonal stretch.
 C (T2): the empty lattice: the exponents and their constraint; no isotropic motion; one length shrinks.
-D (T3): rest content: the exact family and its constraint; the late-time limit.
+D (T3): rest content: the exact family and its constraint; the limits in both directions of time; the time mirror.
 E (T3): the reduction to block 146 on the isotropic stretch.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
@@ -41,6 +42,7 @@ MUTATION_GATE = {
     "cross_term_coefficient_forged": "B",
     "exponent_family_forged": "C",
     "content_cone_dropped": "D",
+    "mirror_sign_forged": "D",
     "isotropic_reduction_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
@@ -153,8 +155,16 @@ def family_d(checks: Checks) -> None:
     cone_ok = sp.simplify(resid - expected_resid) == 0
     el_ok = all(sp.simplify(sp.diff(8 * al * Vt * (S - lamdot[k]), t) - m0) == 0 for k in range(3))
     late = [sp.limit(x * t, t, sp.oo) for x in lamdot]
-    checks.check("D1", sum_ok and cone_ok and el_ok and late == [sp.Rational(2, 3)] * 3,
-                 "rest content m0: 8 alpha V (S - lamdot_k) = m0 t + D_k with V = (3 m0 t^2/2 + D t)/(16 alpha) keeps the equations, and the constraint holds exactly on the cone D0^2 + D1^2 + D2^2 = 2(D0 D1 + D0 D2 + D1 D2); late on every lamdot_k t -> 2/3: the stretch becomes alike, block 146's t^(2/3)")
+    tr = sp.Symbol("tr", real=True)
+    lam_r = [x.subs(t, tr) for x in lamdot]
+    past = [sp.limit(x * tr, tr, -sp.oo) for x in lam_r]
+    flip = {tr: -tr, D[0]: -D[0], D[1]: -D[1], D[2]: -D[2]}
+    if mut("mirror_sign_forged"):
+        flip = {tr: -tr}
+    mirror_ok = all(sp.simplify(x.subs(flip, simultaneous=True) + x) == 0 for x in lam_r)
+    two_thirds = [sp.Rational(2, 3)] * 3
+    checks.check("D1", sum_ok and cone_ok and el_ok and late == two_thirds and past == two_thirds and mirror_ok,
+                 "rest content m0: 8 alpha V (S - lamdot_k) = m0 t + D_k with V = (3 m0 t^2/2 + D t)/(16 alpha) keeps the equations, and the constraint holds exactly on the cone D0^2 + D1^2 + D2^2 = 2(D0 D1 + D0 D2 + D1 D2); every lamdot_k t -> 2/3 as t -> +oo and as t -> -oo, so the stretch is alike wherever the lattice is large, block 146's |t|^(2/3); the family is closed under t -> -t with D_k -> -D_k, so the equations fix no direction")
 
 
 # ============================================================================================ family E
@@ -218,7 +228,7 @@ N5_LINES = (
     "per_element: executed - the member's kinetic term on a uniform diagonal stretch, and its two coefficients",
     "per_site: executed - the three-length homogeneous model: constraint and equations",
     "per_mode: executed - the empty lattice's exponents: an exact rational family; the sign argument",
-    "per_block: executed - rest content: the exact family, its cone condition and its late-time limit",
+    "per_block: executed - rest content: the exact family, its cone condition, its limits in both directions of time and its time mirror",
     "lattice_wide: uniform stretches of a closed lattice; the volume factor l1 l2 l3 supplied; unit rate",
 )
 
@@ -255,7 +265,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: at the closing ratio only the cross term of the member kinetic term survives on a uniform stretch; an empty closed lattice moves as t^(p_i) with sum p = sum p^2 = 1, some length shrinking, and cannot stretch alike; with rest content the stretch becomes alike, t^(2/3); supervisor derivation, unrefereed; nothing adopted")
+    print("scope: at the closing ratio only the cross term of the member kinetic term survives on a uniform stretch; an empty closed lattice moves as t^(p_i) with sum p = sum p^2 = 1, some length shrinking, and cannot stretch alike; with rest content the stretch is alike wherever the lattice is large, |t|^(2/3), in either direction of time; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-25 block 148 — author checks (not a review PASS)
 The supervisor's own derivation, not refereed by another model family. Exact substitutions and limits. Census 6/6 in family.
+
+## 2026-09-25 block 148 follow-up - time direction after a panel's report (author checks, not a review PASS)
+Panel of three Claude Opus 5.5 subagents (same model family). T3 now 'alike wherever the lattice is large': both limits and the time mirror checked (D1). Runner 12/0; census 7/7.

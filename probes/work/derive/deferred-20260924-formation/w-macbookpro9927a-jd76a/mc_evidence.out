@@ -1,0 +1,27 @@
+(a) one-level decorrelation; coef = (x1*tau_L - 1)/sigma^2 ; pred1 = S*+2-1/L^2 ; 2S* = first-order coef of 1/E|M|^2
+  L= 2 beta=  20 sigma2=0.016389 x1*tau=1.045146 coef=2.7547+-0.0070 1/E|M|^2=1.029020 (1/E|M|^2-1)/sigma2=1.7707
+  L= 2 beta=  40 sigma2=0.008264 x1*tau=1.022025 coef=2.6652+-0.0205 1/E|M|^2=1.014283 (1/E|M|^2-1)/sigma2=1.7284
+  L= 2 beta=  80 sigma2=0.004149 x1*tau=1.010917 coef=2.6311+-0.0304 1/E|M|^2=1.007086 (1/E|M|^2-1)/sigma2=1.7078
+  L= 2 beta= 160 sigma2=0.002079 x1*tau=1.005308 coef=2.5529+-0.0648 1/E|M|^2=1.003529 (1/E|M|^2-1)/sigma2=1.6975
+  L= 2 weighted linear fit in sigma^2: intercept 2.5741+-0.0274 slope 11.0 ; pred1 2.5938 ; 2S* 1.6875
+  L= 3 beta=  20 sigma2=0.016389 x1*tau=1.054416 coef=3.3203+-0.0119 1/E|M|^2=1.042590 (1/E|M|^2-1)/sigma2=2.5987
+  L= 3 beta=  40 sigma2=0.008264 x1*tau=1.026456 coef=3.2013+-0.0255 1/E|M|^2=1.020829 (1/E|M|^2-1)/sigma2=2.5205
+  L= 3 beta=  80 sigma2=0.004149 x1*tau=1.012793 coef=3.0832+-0.0422 1/E|M|^2=1.010296 (1/E|M|^2-1)/sigma2=2.4815
+  L= 3 weighted linear fit in sigma^2: intercept 3.0444+-0.0389 slope 16.9 ; pred1 3.1111 ; 2S* 2.4444
+  L= 4 beta=  20 sigma2=0.016389 x1*tau=1.060449 coef=3.6884+-0.0115 1/E|M|^2=1.051873 (1/E|M|^2-1)/sigma2=3.1651
+  L= 4 beta=  40 sigma2=0.008264 x1*tau=1.029304 coef=3.5460+-0.0270 1/E|M|^2=1.025255 (1/E|M|^2-1)/sigma2=3.0560
+  L= 4 beta=  80 sigma2=0.004149 x1*tau=1.014324 coef=3.4520+-0.0383 1/E|M|^2=1.012461 (1/E|M|^2-1)/sigma2=3.0032
+  L= 4 weighted linear fit in sigma^2: intercept 3.3854+-0.0381 slope 18.5 ; pred1 3.4141 ; 2S* 2.9531
+  L=16 beta=  48 sigma2=0.006896 x1*tau=1.033421 coef=4.8463+-0.0593 1/E|M|^2=1.038025 (1/E|M|^2-1)/sigma2=5.5138
+  L=16 beta=  96 sigma2=0.003460 x1*tau=1.016527 coef=4.7765+-0.0899 1/E|M|^2=1.018675 (1/E|M|^2-1)/sigma2=5.3970
+  L=16 weighted linear fit in sigma^2: intercept 4.7062+-0.1900 slope 20.3 ; pred1 4.6404 ; 2S* 5.2885
+(b) memory rate lam1 (slope of -log C between lags l1<l2) at beta=20
+  L=2 lags 9,73: lam1*tau=1.04754+-0.00063 x1*tau=1.04500 -log(1-x1)*tau=1.04725 1/E|M|^2=1.02902 (lam1*tau-1/E|M|^2)/se=29.4 ; first-order lam1*tau=1.04456
+  L=3 lags 20,165: lam1*tau=1.05484+-0.00119 x1*tau=1.05461 -log(1-x1)*tau=1.05562 1/E|M|^2=1.04259 (lam1*tau-1/E|M|^2)/se=10.3 ; first-order lam1*tau=1.05190
+  L=4 lags 36,293: lam1*tau=1.06255+-0.00189 x1*tau=1.06048 -log(1-x1)*tau=1.06106 1/E|M|^2=1.05187 (lam1*tau-1/E|M|^2)/se=5.7 ; first-order lam1*tau=1.05646
+(c) L=16 beta=12: 1/E|M|^2=1.17019; first-order lam1*tau=1.12537
+  lag   1: -log C(l)/l * tau = 1.15098+-0.00072
+  lag   4: -log C(l)/l * tau = 1.14788+-0.00126
+  lag  16: -log C(l)/l * tau = 1.14473+-0.00223
+  lag  64: -log C(l)/l * tau = 1.14449+-0.00432
+total 1372s

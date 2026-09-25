@@ -1,0 +1,337 @@
+{
+ "task": "J:derive:deferred-20260924-formation:a1",
+ "worker": "w-macbookpro9927a-jd76a",
+ "model": "claude-opus-5-5",
+ "batch": 5,
+ "pass": "first bounded pass; not an exhaustion of batch 5",
+ "origin_main_sha": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+ "landing_snapshot": "c288aa9cfeea8fd2256fe4b71a60c401d64f7ce6",
+ "batch_landed_commit": "5efa36e7c357ae2a62ee586a5407f90982f6ded9",
+ "frozen_heads": {
+  "8178": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd"
+ },
+ "canonical_note": {
+  "path": "docs/ADMISSIBILITY_RULE_UNSOLDERED_FORMATION_LAW_TORUS_MEMORY_TIME_ZERO_MODE_RATE_EXACTLY_STATIONARY_MODES_BRACKETED_AND_THE_NONLINEAR_LAW_MEASURED_AGAINST_IT_BOUNDED_THEOREM_NOTE_2026-09-17.md",
+  "sha256_landed": "407e07d95da723167ea96d1d7a7d564c5e17b830d4e6f3dd3482a175bf41ee55",
+  "identical_on_origin_main": true
+ },
+ "review_findings_touched": {
+  "U5-R1": "preserved: the gain-one recurrence stays a supplied comparator; this pass shows the Cartesian gain A(3beta) never enters the direction rate (exact drift identity) and derives the comparator as the leading strong-coupling term only modulo premises A1-A2",
+  "U5-R3": "preserved: no size independence, limiting coefficient or universal law restored; the first-order excess grows like sigma^2 S*_L (log L)",
+  "U5-R8": "preserved: historical data stay historical; fresh seeded evidence is mc_evidence.out, numerical not exact"
+ },
+ "residual_worked": {
+  "source": "PR8178 RESULTS_block34.md executed bullet and CHECKER_block34_findings.md (the nonlinear direction diffuses 1/|m|^2 faster; size independence)",
+  "statement": "fixed L, beta -> infinity: lambda1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/(2L^2)) + O(sigma^4) and x1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/L^2) + O(sigma^4), versus 1/E|M|^2 = 1 + 2 S*_L sigma^2 + O(sigma^4)",
+  "status_in_this_pass": "exact identities and the L=1 control proved; first-order law derived modulo premises A1 (small-noise stationary moments) and A2 (increment correlations higher order); seeded Monte Carlo agreement at L=2,3,4,16",
+  "first_failing_step": "A1 (no proof of small-noise concentration of the stationary law with comparator moments); A2 for the memory rate",
+  "disposition": "recovered and sharpened; open as a theorem"
+ },
+ "source_groups_inspected": [
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+   "sha256": "96c984c8fe0ac6bc8dc6f7f5d812acbd14ef8f2448763e6f2486a60c3d1b65bf",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block34_findings.md",
+   "sha256": "280a758f5aa00fc0c7d6bf79ba32fc6356d68ec2bad40ad75ec7843892d7602a",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical; read",
+   "note": "states the demoted nonlinear claims (size independence, tracks 1/|m|^2); the residual of this pass tests them"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block34.md",
+   "sha256": "625683367666facdd3ed2768aff1e53c77e93797228863cbf11e7e87c39e0719",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block34.md",
+   "sha256": "fc228750e3345b7ce9be9684e707561c537ab796e5cbdfd67bf5bd83543bea96",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+   "sha256": "534a7e59a4c18404c13ddaf3c55d7f68754977539d5e07f520fcdb73d1053c31",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/NO_GO_LEDGER.md",
+   "sha256": "f083183e70380367623f157c16a0b5ae812b78e36ad3a59d45f739c581ff728f",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+   "sha256": "fb80ce345957987de86dde53552c6d0043aaa9a74921760d5481ca9900a9e3c5",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block34.md",
+   "sha256": "764089c4e4e69ee2d8d80d3d5a41691baa6ac2481c6103a391ce1523f8c6f28f",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical; read",
+   "note": "its 'Executed (not claimed)' bullet and '1/|m|^2 ... first quantitative target' are the residual worked here"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+   "sha256": "26f6207b889a91621ad5f4cdeac568defe5f048ab441de644b139af9e1056ccd",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+   "sha256": "caa2841045208740d0e7e3d9d340f24bff7319cd848a73f42cf6363f992e5beb",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+   "sha256": "7048634d28f7ecb149f48ac0e15edb8497b2dfc0ead70d3d6f3287c6ec7269ca",
+   "sha256_verified": true,
+   "category": "process-context",
+   "disposition": "process-context; not used as evidence",
+   "note": "campaign process state"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.out.txt",
+   "sha256": "71a0e1986f004b32abdcb0e73a35b719d6d72f849a7357dbd35cc78d32ee07d2",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "historical; not used",
+   "note": "outputs of the refuter above"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_refuter.py",
+   "sha256": "eb6bb80f1b71276590c52c86caf55f5ae8d4c36012b4a525ecfa9736316e9bf2",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical; header read",
+   "note": "floating-point cross-checks of T1-T3 (superseded by main exact runner) and an independent sampler with the exponential-fit estimator; not recovered"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.out.txt",
+   "sha256": "b3dfd4bc1e2ae5cfe296b9c4234188b2f481e11eb5d79648a6e674700e8a9309",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "historical; read",
+   "note": "raw lag series with SEs; L=16 short-lag ratios agree with mc_evidence.out within 1-2 SE; the L=32 beta=12 series rises 1.165 -> 1.225+-0.026 (lags 25 -> 400): open point on premise A2 at larger L"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_msd.py",
+   "sha256": "845be5ac8b9e23df9ba5a1f5088dabd92fb94dbd3f2fc028da9479ab9dd53ec7",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical; read",
+   "note": "defines the historical estimator D_1 = MSD/(2 l); superseded here by the l=1 decay-rate estimator of mc_evidence.py (same kernel sampler)"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.out.txt",
+   "sha256": "2cf183e8f2036760386e1f529ae30e775799fc8447b6c17c7cb6f56102e2520c",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "historical; header read",
+   "note": "outputs of the unreliable estimator; not used"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/specs/supervisor_control_block34_torus_sim.py",
+   "sha256": "4084ce1a458ac09ffd0ecbde953a467ab2f73f8e6a9b234d10768a0567063c37",
+   "sha256_verified": true,
+   "category": "source-candidate",
+   "disposition": "historical; header read",
+   "note": "exponential-fit estimator of E[m_z]; recorded unreliable by its own CHECKER; not recovered"
+  },
+  {
+   "pr": 8178,
+   "head": "e6ffae5b460b9ec0fd0d99c99f9784232bd225bd",
+   "path": "docs/audit/data/citation_graph_manifest.json",
+   "sha256": "bc65a62a7bea3f614f30ce5d5b826da0a4f8d464291687c60a79ddeb4f0e3486",
+   "sha256_verified": true,
+   "category": "historical-evidence",
+   "disposition": "not science",
+   "note": "regenerated shared citation manifest"
+  }
+ ],
+ "dispositions_summary": {
+  "recovered_open": [
+   "RESULTS_block34.md executed nonlinear claim",
+   "CHECKER_block34_findings.md settled facts"
+  ],
+  "historical": [
+   "torus_msd.py/.out",
+   "torus_sim.py/.out",
+   "refuter.py/.out"
+  ],
+  "already_landed": [
+   "T1-T3 of the canonical note (exact comparator)",
+   "U5-R1 sphere mean derivative A(3beta)/3 (on main)"
+  ],
+  "duplicate": [],
+  "active_elsewhere": [],
+  "process_context": 9
+ },
+ "existing_task_log_links": {
+  "corrigendum-PR8178": [
+   "probes/work/derive/corrigendum-PR8178/w-jonathonsmac4f50-j9532",
+   "probes/work/derive/corrigendum-PR8178/w-jonathonsmac4f50-j888a",
+   "probes/work/derive/corrigendum-PR8178/referee_w-macbookpro90c72-j3bc2",
+   "probes/work/derive/corrigendum-PR8178/referee_w-macbookpro90c72-jb1e0"
+  ],
+  "corrigendum-PR8180": [
+   "own earlier a1, issue #8846 (different statement)"
+  ],
+  "formation-response-kernel": [
+   "probes/work/derive/formation-response-kernel/ (a1-a6, six referees; linear comparator response only)"
+  ],
+  "plane-memory-loss": [
+   "logs/probes/J:derive:plane-memory-loss:a1..a4 (infinite plane)"
+  ],
+  "plane-memory-loss-2": [
+   "logs/probes/J:derive:plane-memory-loss-2:a1..a4 (infinite plane; a2 transverse sensitivity A(|V|)/|V|)"
+  ]
+ },
+ "remaining_ranked_source_groups": [
+  {
+   "pr": 8507,
+   "head": "0b4d93c55133d72002408e095399cb5c13ce56ee",
+   "finding": "U5-R4",
+   "source_candidates": [
+    "CHECKER_block36_findings.md",
+    "RESULTS_block36.md",
+    "supervisor_control_block36_memory.py",
+    "supervisor_control_block36_refuter.py",
+    "supervisor_control_block36_response.py"
+   ],
+   "historical_evidence": [
+    "supervisor_control_block36_memory.out.txt",
+    "supervisor_control_block36_refuter.out.txt",
+    "supervisor_control_block36_response.out.txt",
+    "citation_graph_manifest.json"
+   ],
+   "n_sources": 18,
+   "status": "open (not inspected in this pass)",
+   "why_ranked_here": "block 36 memory/response controls (supervisor_control_block36_memory.py, _response.py, RESULTS/CHECKER_block36): nearest to this pass (formation-law memory and response); check against formation-response-kernel a1-a6 first"
+  },
+  {
+   "pr": 8180,
+   "head": "7c844adf7555a3558729be69179646f6a83a1539",
+   "finding": "U5-R2",
+   "source_candidates": [
+    "CHECKER_block35_findings.md",
+    "RESULTS_block35.md",
+    "supervisor_control_block35_kernel_sim.py",
+    "supervisor_control_block35_refuter.py"
+   ],
+   "historical_evidence": [
+    "supervisor_control_block35_kernel_sim.out.txt",
+    "supervisor_control_block35_refuter.out.txt",
+    "citation_graph_manifest.json"
+   ],
+   "n_sources": 16,
+   "status": "open (not inspected in this pass)",
+   "why_ranked_here": "block 35 kernel_sim/refuter controls and RESULTS/CHECKER_block35: nonlinear kernel simulations behind the heat-kernel-times-plane-Green statement; corrigendum-PR8180 (my a1, #8846) covers the convention/complex-phase part only"
+  },
+  {
+   "pr": 8510,
+   "head": "af5ffc4a712a5c75b847b6e5cdd560f3272d2d7d",
+   "finding": "U5-R5",
+   "source_candidates": [
+    "CHECKER_block37_findings.md",
+    "RESULTS_block37.md",
+    "supervisor_control_block37_family.py",
+    "supervisor_control_block37_mintree.py",
+    "supervisor_control_block37_refuter.py",
+    "supervisor_control_block37_rooted.py"
+   ],
+   "historical_evidence": [
+    "supervisor_control_block37_refuter.out.txt",
+    "citation_graph_manifest.json"
+   ],
+   "n_sources": 17,
+   "status": "open (not inspected in this pass)",
+   "why_ranked_here": "block 37 family/mintree/rooted/refuter controls: six-axis formation threshold and the 10/9 constant (integer program, local search); combinatorial, exact-checkable"
+  },
+  {
+   "pr": 8512,
+   "head": "94a63b77f61a88f787f3a03b939bc79986231d15",
+   "finding": "U5-R5",
+   "source_candidates": [
+    "CHECKER_block38_findings.md",
+    "RESULTS_block38.md",
+    "supervisor_control_block38_refuter.py"
+   ],
+   "historical_evidence": [
+    "supervisor_control_block38_refuter.out.txt",
+    "citation_graph_manifest.json"
+   ],
+   "n_sources": 14,
+   "status": "open (not inspected in this pass)",
+   "why_ranked_here": "block 38 refuter control and RESULTS/CHECKER_block38: product inequality / antichain factorization controls"
+  }
+ ],
+ "next_exact_action": "Either (i) prove A1 at fixed L (Lyapunov bound E|pi|^4 <= C_L sigma^4, then second moments from the stationarity equation) and bound the A2 correlation sum, or (ii) take the next ranked group: PR8507 block 36 memory/response controls, after checking formation-response-kernel a1-a6.",
+ "deliverables": [
+  "probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/ATTEMPT.md",
+  "probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/check.py",
+  "probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/mc_evidence.py",
+  "probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/mc_evidence.out",
+  "probes/work/derive/deferred-20260924-formation/w-macbookpro9927a-jd76a/RECOVERY_STATUS.json"
+ ]
+}

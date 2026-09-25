@@ -1,0 +1,58 @@
+{
+  "task": "J:derive:deferred-20260925-nonlinear-weights:a1",
+  "worker": "w-jonathonsmac4f50-j7529",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "ef918c1910ccf8b7a1125fbbdfc54eb84186176e",
+  "source_unit": "probes/work/deferred-science-20260925/unit-21.json",
+  "inspected": [
+    {
+      "pr": 9083,
+      "original_path": "docs/DYNAMICS_CLAUSE_A_DISTANT_RECORD_IS_A_RECORDED_RANDOMIZER_LOCALITY_OF_MARGINALS_FORCES_PREPARATION_AFFINITY_AND_THE_TRACE_RULE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bundle_sha256": "1bf01f0da92c0664df18750622bb82156337ab4e8c69b560d6b37ec175689d00",
+      "bundle_sha256_verified": true,
+      "accepted_sha256": "d209a22e6c37d739b08f1f2f4eac3729af530c121212f53ddbe31f9f7c0523bb",
+      "accepted_matches_main": true
+    },
+    {
+      "pr": 9083,
+      "original_path": "logs/runner-cache/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.txt",
+      "bundle_sha256": "df266b17608cfff4d36255cba11bf8240073a87e992f9a7cc8d9f4e843330b17",
+      "bundle_sha256_verified": true,
+      "accepted_sha256": "ca88660da717d8d28ae30696f7b699c3d6d59460092b356facfaae66ed856c99",
+      "accepted_matches_main": true
+    },
+    {
+      "pr": 9083,
+      "original_path": "scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py",
+      "bundle_sha256": "7d92cdc0fc2df3480c1a3169c6748a4d091b49d4a01cf1f53355d4f6c69b9b6a",
+      "bundle_sha256_verified": true,
+      "accepted_sha256": "def00e3d6cba7decb6839e0ad40386fcf44da0d9bbcf026b189d6269c2d71500",
+      "accepted_matches_main": true
+    }
+  ],
+  "related_work_checked": [
+    {"path": "probes/work/derive/deferred-20260924-formation", "workers": ["w-macbookpro9927a-jd76a"], "overlap": "none (formation residual)"},
+    {"path": "probes/work/derive/the-exchange-sign-from-the-coin", "workers": ["w-macbookpro90c72-j3430", "referee_w-macbookpro90c72-je52e"], "overlap": "none (exchange-sign residual)"},
+    {"main_search": ["self-weighted", "Self-consistent weights", "nonlinear self"], "finding": "residual stated open in the landed note and in the dynamics-clause campaign synthesis; no resolution on main"}
+  ],
+  "dispositions": [
+    {"residual": "self-weighted classification beyond the affine covariant family (PR 9083 'wider closure remains deferred')", "disposition": "recovered",
+     "scope": "necessary condition under explicit premises: qubit sites, covariant law without extra directional input, antipodal normalization, steering composition, self-weights, measurable law; conclusion Born or constant a.e. at any single Bloch length; endpoint support excludes the constant law",
+     "evidence": "check.py C1-C6, ATTEMPT.md steps 1-7", "pending": "cross-model referee"},
+    {"residual": "exact positive-effect support instead of a sampled ratio bound", "disposition": "already-covered", "where": "landed note, 'Countermodels and finite diagnostics'"},
+    {"residual": "controlled preparation versus an autonomous recorded randomizer", "disposition": "already-covered", "where": "landed note, 'Supplied setting' (controlled protocol only); native realization open"},
+    {"residual": "general affinity with self-weights for mixed-state ensembles (the landed argument imports Born weights)", "disposition": "open"},
+    {"residual": "derive the steering composition (K) from the record clauses; the replacement-rule countermodel shows it is essential", "disposition": "open"},
+    {"residual": "frequency convergence and finite-time propagation obligations", "disposition": "open", "note": "kept separate as the landed note requires"},
+    {"residual": "PR 9084 tensor-positive channel (CP) premises", "disposition": "open", "note": "not worked in this unit; no active claim seen"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. pointwise classification without regularity (chords at every Bloch length and all partner menus)",
+    "2. qudit sites (harmonic analysis on CP^(d-1)); binary and larger menus",
+    "3. self-weighted ensemble affinity for mixed states, replacing the Born-weight premise of the landed general argument",
+    "4. the steering composition (K) from the axioms' record clauses, or a countermodel showing it cannot be derived",
+    "5. laws with extra directional input (non-covariant)",
+    "6. PR 9084's channel premises; frequency and propagation obligations"
+  ],
+  "first_pass_note": "one residual worked; the bundle is not exhausted"
+}

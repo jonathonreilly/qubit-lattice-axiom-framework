@@ -1,0 +1,15 @@
+PASS C1 for every 0 < l < 1: the pure state sqrt((1+l)/2)|+x>|0> + sqrt((1-l)/2)|-x>|1> has Bloch vectors l x-hat (A) and l z-hat (B); the partner's z-menu (along its Bloch vector) steers A to +-x-hat with Born weights (1+-l)/2 (radial chord); the partner's y-menu (orthogonal to its Bloch vector, r_B.q' = 0) steers A to n+- = (l, +-sqrt(1-l^2), 0) with Born weights 1/2 (perpendicular chord)
+PASS C2 P_L(cos psi) = sum_j a_j a_(L-j) cos((L-2j) psi), a_j = C(2j,j)/4^j > 0, for L = 1..13: every cos(k psi) with k = L, L-2, ... >= 0 has a positive coefficient
+PASS C3 for L = 1, 3, 5, 7: (1/2)[P_L(cos(theta-beta)) + P_L(cos(theta+beta))] - (2w-1) P_L(cos theta) = sum_k c_k^(L) [cos(k beta) - (2w-1)] cos(k theta), c_k^(L) > 0
+PASS C4 at l = 3/5 (cos beta = 3/5, sin beta = 4/5): cos(beta) = 3/5 and cos(3 beta) = -117/125 differ, so no w makes both the k = 1 and the k = 3 modes vanish; hence any Legendre component of H of degree >= 3 is excluded, and H(c) = a1 c a.e.
+PASS C5a the landed note's Schmidt test is the radial chord: for the affine family it demands lam(lam - 1) = 0 (residual (lam - lam^2) l c / 2)
+PASS C5b the perpendicular chord holds for every affine law (cos beta = l)
+PASS C5c with H(c) = a1 c and a1 != 0: 2w - 1 = l and w = 1/2 + a1 l force a1 = 1/2, w = (1 + l)/2: h(c) = (1 + c)/2, f(l, x) = (1 + x)/2 (Born); a1 = 0 is the constant law
+PASS C5d Born satisfies both chords (radial: C5a at lam = 1; perpendicular: C5b at lam = 1)
+PASS C5e a nonlinear law with the support, h(c) = 1/2 + (3c - c^3)/4: at l = 3/5 the cos(theta) and cos(3 theta) coefficients of [**] are -9*(5*w - 4)/40 and (125*w - 4)/1000, with no common root w
+   C6 (evidence) min over w in [0,1] of max over theta of |[**] residual| at l = 0.6: tanh k=2 0.1474, tanh k=0.5 0.0154, cubic 0.0960; Born: 1.67e-16
+PASS C6 (evidence) the three nonlinear laws leave a residual > 1e-3 for every w; Born leaves < 1e-12
+
+TOTAL: PASS=10 FAIL=0
+HIT: within the supplied qubit setting of PR #9083 (covariant binary law F(r,q) = f(|r|, r.q), antipodal normalization, projective steering of a pure two-qubit state, the partner using the same law for its weights), self-weighted equal-time no-signalling for just two partner menus (along and orthogonal to its Bloch vector) at ONE Bloch length 0 < l < 1 forces the pure law to be Born, h(c) = (1+c)/2, or constant, a.e., and then f(l, x) = (1+x)/2 or 1/2: every Legendre component of degree >= 3 is excluded because cos(k beta) = 2w - 1 cannot hold for k = 1 and 3; no ensemble affinity and no Born ensemble weights are assumed; the endpoint support excludes the constant law
+SUMMARY: PARTIAL the deferred nonlinear self-weighted closure recovered as a necessary condition under explicit premises (steering composition, covariance, normalization, measurable law): Born or constant; remaining: pointwise without regularity, higher-dimensional sites, laws with extra directional input, and deriving the steering composition itself (the landed replacement-rule countermodel shows it is essential)

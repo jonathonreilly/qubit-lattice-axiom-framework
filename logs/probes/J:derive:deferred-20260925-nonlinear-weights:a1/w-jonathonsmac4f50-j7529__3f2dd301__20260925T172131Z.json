@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260925-nonlinear-weights:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-jonathonsmac4f50-j7529",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-nonlinear-weights/w-jonathonsmac4f50-j7529/check.py",
+ "seed": 56891,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3f2dd301",
+ "started_utc": "20260925T172131Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the deferred nonlinear self-weighted closure recovered as a necessary condition under explicit premises (steering composition, covariance, normalization, measurable law): Born or constant; remaining: pointwise without regularity, higher-dimensional sites, laws with extra directional input, and deriving the steering composition itself (the landed replacement-rule countermodel shows it is essential)"
+ },
+ "review": "Own route on PR 9083's deferred residual: two partner menus (along and orthogonal to the partner's Bloch vector) on one entangled state give, with self-weights and the steering composition, a linear identity in the odd part of the pure law for all menus on the sphere; its Legendre components of degree >= 3 are excluded because cos(k beta) = 2w - 1 cannot hold for k = 1 and 3; Born or constant a.e., no affinity or Born ensemble weights assumed; bundle hashes and main verified; PR 9083 by the same model family.",
+ "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-21.json in that directory. Start with PR9083: the corrected self-weighted Schmidt test classifies only already-affine covariant f_lambda. Formulate the full nonlinear functional constraint with normalized weights, endpoint support and composition assumptions explicit, then prove one nontrivial necessary condition or supply a counterexample. Do not assume ensemble affinity in order to derive it. The controlled randomizer and tensor-positive channel arguments remain conditional. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, the-exchange-sign-from-the-coin, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-nonlinear-weights/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle.",
+ "stdout_sha256": "898ab3fe2d3c155d274b8ddc5914e6e1a9218218d782b7bbc0abd24749be545e",
+ "stdout_tail": ": at l = 3/5 the cos(theta) and cos(3 theta) coefficients of [**] are -9*(5*w - 4)/40 and (125*w - 4)/1000, with no common root w\n   C6 (evidence) min over w in [0,1] of max over theta of |[**] residual| at l = 0.6: tanh k=2 0.1474, tanh k=0.5 0.0154, cubic 0.0960; Born: 1.67e-16\nPASS C6 (evidence) the three nonlinear laws leave a residual > 1e-3 for every w; Born leaves < 1e-12\n\nTOTAL: PASS=10 FAIL=0\nHIT: within the supplied qubit setting of PR #9083 (covariant binary law F(r,q) = f(|r|, r.q), antipodal normalization, projective steering of a pure two-qubit state, the partner using the same law for its weights), self-weighted equal-time no-signalling for just two partner menus (along and orthogonal to its Bloch vector) at ONE Bloch length 0 < l < 1 forces the pure law to be Born, h(c) = (1+c)/2, or constant, a.e., and then f(l, x) = (1+x)/2 or 1/2: every Legendre component of degree >= 3 is excluded because cos(k beta) = 2w - 1 cannot hold for k = 1 and 3; no ensemble affinity and no Born ensemble weights are assumed; the endpoint support excludes the constant law\nSUMMARY: PARTIAL the deferred nonlinear self-weighted closure recovered as a necessary condition under explicit premises (steering composition, covariance, normalization, measurable law): Born or constant; remaining: pointwise without regularity, higher-dimensional sites, laws with extra directional input, and deriving the steering composition itself (the landed replacement-rule countermodel shows it is essential)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7529",
+  "at_utc": "20260925T172156Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9234. Self-weighted no-signalling with two partner menus forces Born or constant (a.e.) for covariant qubit laws under the steering composition; no affinity or Born weights assumed; Legendre degrees >= 3 excluded; for a referee of another family.",
+  "by": "w-jonathonsmac4f50-j7529",
+  "at_utc": "20260925T172156Z"
+ }
+}

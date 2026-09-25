@@ -1,0 +1,266 @@
+[
+  {
+    "pr": 9144,
+    "head": "12645c9624a92743c2a84af8ba1207143cf42a74",
+    "fetch_ref": "refs/pull/9144/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Restrict bare-Majorana obstruction; distinguish exact spin symmetry and parton charge from physical particle claims; guard Berry overlaps and label sampled half-gaps.",
+    "files": [
+      {
+        "original_path": "docs/COMPOSITE_SITES_GIVE_THE_CARVED_MAJORANAS_AN_EXACT_CHARGE_ONE_QUBIT_PER_SITE_CANNOT_TWO_CAN_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "0d12ba0357de82c8b4de9627922f404e96e99163f3df8dfb2633342b5285f081",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0d12ba0357de82c8b4de9627922f404e96e99163f3df8dfb2633342b5285f081",
+        "accepted_path": "docs/COMPOSITE_SITES_GIVE_THE_CARVED_MAJORANAS_AN_EXACT_CHARGE_ONE_QUBIT_PER_SITE_CANNOT_TWO_CAN_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "fe7a6939175b489a2c789c5e96d7f8d006adf1ccebd068d7c3705b3834aaa6b3",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.txt",
+        "sha256": "530b6f8bc5d0a8be14fbf36d84eba695cfbf87f8ed30d97d812482b0f70aefcf",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/530b6f8bc5d0a8be14fbf36d84eba695cfbf87f8ed30d97d812482b0f70aefcf",
+        "accepted_path": "logs/runner-cache/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.txt",
+        "accepted_sha256": "bc92011dce6a8d2c958cdfafb384c3e8b7d7547db3e0e245e1d9bea5d064ff42",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py",
+        "sha256": "2e5d1ddaabe74b3778fd04be8b4fc5503a407b0e924aabc6275690af18065879",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2e5d1ddaabe74b3778fd04be8b4fc5503a407b0e924aabc6275690af18065879",
+        "accepted_path": "scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py",
+        "accepted_sha256": "21335992d07d55da17c59d8fa67450c0f2bf532203054b68a9f6f42365b68037",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9149,
+    "head": "705a0c331e707300a33d2bb6ee599ad9145f84d8",
+    "fetch_ref": "refs/pull/9149/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Prove dressed-hop increments and finite plaquette flux only; retain zero-background vacuum; correct antiunitary action on link flux and enforce exact sector counts.",
+    "files": [
+      {
+        "original_path": "docs/GAUGING_THE_COMPOSITE_SITE_CHARGE_THE_LINK_FIELD_DRESSES_THE_YAO_LEE_BOND_AND_THE_Z2_PARTNER_SURVIVES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "74320ba28d27e6ad6009be6cd54949a3c13d64a197c5095e5cd78441c16a86dc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/74320ba28d27e6ad6009be6cd54949a3c13d64a197c5095e5cd78441c16a86dc",
+        "accepted_path": "docs/GAUGING_THE_COMPOSITE_SITE_CHARGE_THE_LINK_FIELD_DRESSES_THE_YAO_LEE_BOND_AND_THE_Z2_PARTNER_SURVIVES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "85fe45d0977585c64b7ccdffc8cb0413e5e26cc027a27bd7c77220dea46ad138",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.txt",
+        "sha256": "947f6f77fabacc1f17c57c08aa4890c7f81b96441dc47bed577539c790f15862",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/947f6f77fabacc1f17c57c08aa4890c7f81b96441dc47bed577539c790f15862",
+        "accepted_path": "logs/runner-cache/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.txt",
+        "accepted_sha256": "7cf0ab3b6f13a9ad230a7c9399da3284e95380665ae94a3f2daf3b6a90cdaf84",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py",
+        "sha256": "27af25dda8e9be675465eca1ae8e9468641a9074d39e8c8387df531fd0cfd936",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/27af25dda8e9be675465eca1ae8e9468641a9074d39e8c8387df531fd0cfd936",
+        "accepted_path": "scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py",
+        "accepted_sha256": "58dd41e4bc5b7cfc2de3253e063345283756ce32a039eaf3fbb7862cc81e8af8",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9168,
+    "head": "8a47c2dff898dd8eb26f567fffe66c3f70455add",
+    "fetch_ref": "refs/pull/9168/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Bound topology/symmetry tests to their covered pattern; separate physical partner symmetry; guard Berry cubes; restrict finite node diagnostics and Clifford representation minimum.",
+    "files": [
+      {
+        "original_path": "docs/THE_HYPERHONEYCOMB_EMBEDS_IN_THE_DOUBLED_CUBIC_LATTICE_A_THREE_DIMENSIONAL_COMPOSITE_SITE_NETWORK_WITH_AN_EXACT_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "0b4bdb1d9abd3b4f2dbcfaeefb84fc784037de917a0c5b5bcfc9c073885edb9d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0b4bdb1d9abd3b4f2dbcfaeefb84fc784037de917a0c5b5bcfc9c073885edb9d",
+        "accepted_path": "docs/THE_HYPERHONEYCOMB_EMBEDS_IN_THE_DOUBLED_CUBIC_LATTICE_A_THREE_DIMENSIONAL_COMPOSITE_SITE_NETWORK_WITH_AN_EXACT_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "72bec69c09dd89e4bf2b61e61d0343c335cead637f38988a3c9ce97e0ad9cde7",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.txt",
+        "sha256": "d63dc275e52522170067205c30966a4763f088906d6037e8649bd714ab27edd9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d63dc275e52522170067205c30966a4763f088906d6037e8649bd714ab27edd9",
+        "accepted_path": "logs/runner-cache/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.txt",
+        "accepted_sha256": "5e5f76613240093740156d5953c05f230aefd2c4ef117334aeb66d07accb8fda",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py",
+        "sha256": "0674425d686bf383de67bc7d5ef97ecc2deabc33edfe4607220e962ed79d9ce6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0674425d686bf383de67bc7d5ef97ecc2deabc33edfe4607220e962ed79d9ce6",
+        "accepted_path": "scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py",
+        "accepted_sha256": "25a0e4015da0c8e8a38e9277c73db75ea3ebf31172a20cbd189d21c96dd880e8",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9155,
+    "head": "6b4ca7cd38d56db2093f5794637b9d337cb431d0",
+    "fetch_ref": "refs/pull/9155/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Carry parent review limits through synthesis; compare the same off-constraint vector under a shift; separate supplied composition, clock and model choices.",
+    "files": [
+      {
+        "original_path": "docs/NEXT_NEEDS_SYNTHESIS_WHAT_THE_REMAINING_SECTORS_COST_IN_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "d1a0f7785163836d0800d48afa34fe5897990a03530b62de4b659e6285b64efc",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d1a0f7785163836d0800d48afa34fe5897990a03530b62de4b659e6285b64efc",
+        "accepted_path": "docs/NEXT_NEEDS_SYNTHESIS_WHAT_THE_REMAINING_SECTORS_COST_IN_SUPPLIED_STRUCTURE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "8e0b09d893ff6e6cdc89bbc79a7240f16d6d7eb6cf460c02885b324c36a193a6",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/next_needs_synthesis_consolidated_certificates_2026_09_24.txt",
+        "sha256": "fe00b43aa6bbd5511e8b8cb11243abe9a6563cc136ef9284123db385ce240717",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fe00b43aa6bbd5511e8b8cb11243abe9a6563cc136ef9284123db385ce240717",
+        "accepted_path": "logs/runner-cache/next_needs_synthesis_consolidated_certificates_2026_09_24.txt",
+        "accepted_sha256": "ca1ff9c3e3a3bf571089ea0f1eaf6ec3d6a834092794d930c224d90e822ee2ba",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/next_needs_synthesis_consolidated_certificates_2026_09_24.py",
+        "sha256": "47b664aee71d1bc230c2466e05149a6e30ab3f35f213f1d09c37bb0cb953e773",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/47b664aee71d1bc230c2466e05149a6e30ab3f35f213f1d09c37bb0cb953e773",
+        "accepted_path": "scripts/next_needs_synthesis_consolidated_certificates_2026_09_24.py",
+        "accepted_sha256": "ff1a50e68fc05d133ce5a736658ab4f92e4e9813298ecddee9ff87f17f2caacc",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9172,
+    "head": "4e37c6e728cb50f9b289dd9ba13b07c5aa0467be",
+    "fetch_ref": "refs/pull/9172/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Correct ground-state and six-mode f-sum scope, harmonic zero modes, reduced oscillators, historical fit objective and dephasing interpretation.",
+    "files": [
+      {
+        "original_path": "docs/ROUND_THREE_SYNTHESIS_THE_PHOTON_FROM_FOUR_SIDES_THE_FORMATION_CLOCKS_THE_TEXT_ADMITS_AND_A_THREE_DIMENSIONAL_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "3200089b3258acfc596920857c7159ef09f45e8c6faeaee4178634a0816baa37",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3200089b3258acfc596920857c7159ef09f45e8c6faeaee4178634a0816baa37",
+        "accepted_path": "docs/ROUND_THREE_SYNTHESIS_THE_PHOTON_FROM_FOUR_SIDES_THE_FORMATION_CLOCKS_THE_TEXT_ADMITS_AND_A_THREE_DIMENSIONAL_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "709877cf8dbae436d7bd7609c8d8c54f51afb1c37113862ba74a46fce5b769df",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.txt",
+        "sha256": "522eb8437f0bfa8550c8b686b36a56eddeeeae66204040d91c11c496e252ff13",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/522eb8437f0bfa8550c8b686b36a56eddeeeae66204040d91c11c496e252ff13",
+        "accepted_path": "logs/runner-cache/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.txt",
+        "accepted_sha256": "c581200b4908669e39495e636749668f50597b19db98e7eab08378d658e20e1e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.py",
+        "sha256": "fe18febfa889a69f47b934cb704df1be3a5f67f48047c8a5944cdbb71b33dd4f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fe18febfa889a69f47b934cb704df1be3a5f67f48047c8a5944cdbb71b33dd4f",
+        "accepted_path": "scripts/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.py",
+        "accepted_sha256": "bbda167e759a3fef38ee1288683cea86c329361654696a00504ee52cd2cad040",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9061,
+    "head": "a16b369221b2b4ae63cfddb10fe60cb36f50ec08",
+    "fetch_ref": "refs/pull/9061/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Carry all 21 corrected parents through synthesis; remove global minima, phase and nonlinear Born promotions; scope signed-orbit basis and spectral sign ambiguity.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_CAMPAIGN_SYNTHESIS_WHAT_ONE_LOCAL_DYNAMICS_CLAUSE_BUYS_AND_WHAT_IT_LEAVES_OPEN_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "1206c0e4b2e82c5150949b3f1e0589000cd6e526f87099dd2a33bce4566044bb",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1206c0e4b2e82c5150949b3f1e0589000cd6e526f87099dd2a33bce4566044bb",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_CAMPAIGN_SYNTHESIS_WHAT_ONE_LOCAL_DYNAMICS_CLAUSE_BUYS_AND_WHAT_IT_LEAVES_OPEN_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "0a54de58e9b64b059046bb8f85a156e5b7f4ff915b432adcfde13919eb7c040c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.txt",
+        "sha256": "0d253c71153b5df230ffa4e410ef778f21a220e5d4999a56264de38a90525cd9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0d253c71153b5df230ffa4e410ef778f21a220e5d4999a56264de38a90525cd9",
+        "accepted_path": "logs/runner-cache/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.txt",
+        "accepted_sha256": "ddbb9410f204191d9878c3a5c5a65ce73d5a9754cffe8b58a016eba98e5c8167",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py",
+        "sha256": "98f400cdb9d9d10c7763d662296da950d1f345f1b065ef8d578dcac4b18268ff",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/98f400cdb9d9d10c7763d662296da950d1f345f1b065ef8d578dcac4b18268ff",
+        "accepted_path": "scripts/dynamics_clause_campaign_synthesis_consolidated_certificates_2026_09_24.py",
+        "accepted_sha256": "8ffd9cad53e3b58b4e4baa4b09eee5d5f93fd14d510c53777fdeafe831872e11",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9164,
+    "head": "949725492ef91dcead40a6144355cec643ed3d60",
+    "fetch_ref": "refs/pull/9164/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Replace axiom-admission classification by conditional models; correct unordered-menu covariance and finite-window limits; both iterated infinite-window/slow-rate limits dephase; add exact finite-window controls.",
+    "files": [
+      {
+        "original_path": "docs/FORMATION_RATE_FUNCTIONS_THE_AXIOM_TEXT_ADMITS_RECORD_DETERMINED_CLOCKS_REDUCE_TO_THE_CONSTANT_CLOCK_BETWEEN_NEIGHBOUR_RECORDS_AND_STATE_READING_CLOCKS_SPLIT_BY_MENU_DEPHASING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c5c568a1752bbb5c4a98528a67732e4fb48a4c429a945ebbd356b4354ba69d7f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c5c568a1752bbb5c4a98528a67732e4fb48a4c429a945ebbd356b4354ba69d7f",
+        "accepted_path": "docs/FORMATION_RATE_FUNCTIONS_THE_AXIOM_TEXT_ADMITS_RECORD_DETERMINED_CLOCKS_REDUCE_TO_THE_CONSTANT_CLOCK_BETWEEN_NEIGHBOUR_RECORDS_AND_STATE_READING_CLOCKS_SPLIT_BY_MENU_DEPHASING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "9123bfcb823a4df77dd1dcb7842148114809fe31c58d8fb84738be0b12c64f34",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.txt",
+        "sha256": "a9c5d4b4f19fbf07d407e001d4d97212dceae40ed3080ff815c6fdecbd1f060c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a9c5d4b4f19fbf07d407e001d4d97212dceae40ed3080ff815c6fdecbd1f060c",
+        "accepted_path": "logs/runner-cache/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.txt",
+        "accepted_sha256": "587bd7d29a61269124a5d8f89f954511f80454c58d2338c314df5e3b7fe6ff5b",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py",
+        "sha256": "e563a0758b3113206794653eb2e074c076897001ae83f9111eb6c5ad5a50aad9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e563a0758b3113206794653eb2e074c076897001ae83f9111eb6c5ad5a50aad9",
+        "accepted_path": "scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py",
+        "accepted_sha256": "e69ac390b92db83a48bd2a4e697c34527ce3a64cce38dac6c2fe351dcfe759c0",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9218,
+    "head": "ccf7274e270a93daedcaac39fd9973198f7dea3d",
+    "fetch_ref": "refs/pull/9218/head",
+    "landing": "4c7f75ea51c73381edb925b5088feeb5a50d9b76",
+    "findings": "Apply only tilt geometry to current main; preserve all unit18 corrections; add cosine assertions and fresh reproduction.",
+    "files": [
+      {
+        "original_path": "docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "60131fadc8d8b6a49a320f9bb71d3d3cb184f86a17e6be983d9842752f292d19",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/60131fadc8d8b6a49a320f9bb71d3d3cb184f86a17e6be983d9842752f292d19",
+        "accepted_path": "docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "a6bc27566ae41c9a8e0121b4d65513401ed6558e3586df0ff2d57885fe80c8ce",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.txt",
+        "sha256": "43308441212d98fcbfa68506415044605c7ef6ae1d0f005255c9b9ce9e807631",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/43308441212d98fcbfa68506415044605c7ef6ae1d0f005255c9b9ce9e807631",
+        "accepted_path": "logs/runner-cache/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.txt",
+        "accepted_sha256": "e3238b788ef056c34b37cb7416afbd3777b016e71217b64a9e3c109bc996f8fc",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py",
+        "sha256": "27feb7a53254b377a9ac6d8b214f5a7630c3782c071067e7059da6584d87acc6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/27feb7a53254b377a9ac6d8b214f5a7630c3782c071067e7059da6584d87acc6",
+        "accepted_path": "scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py",
+        "accepted_sha256": "b98d2b19ee93010fcae40df8aa7dac44720bf7c4f899ba3393d3b336decf7938",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader physical particle, phase, minimality, clock-admission and unconditional law interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  }
+]

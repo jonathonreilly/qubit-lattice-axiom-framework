@@ -1,0 +1,299 @@
+[
+  {
+    "pr": 9146,
+    "head": "51b884ccb663e487b5d8976b333c307832d3b1c7",
+    "fetch_ref": "refs/pull/9146/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Finite flip spectra and a sampled variational family; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_BETWEEN_THE_ROKHSAR_KIVELSON_AND_PURE_RING_POINTS_SMALL_TORUS_AND_VARIATIONAL_DIAGNOSTICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "15dcc6261bbc67861108c847bf722266c1a5c78c4031c5ebf7c2489b29183363",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/15dcc6261bbc67861108c847bf722266c1a5c78c4031c5ebf7c2489b29183363",
+        "accepted_path": "docs/RING_MODEL_BETWEEN_THE_ROKHSAR_KIVELSON_AND_PURE_RING_POINTS_SMALL_TORUS_AND_VARIATIONAL_DIAGNOSTICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "752a6b744b36f376332140d49bf9bbf78354c3448d49d65732e15610e0c8917a",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.txt",
+        "sha256": "a866a1cbf3527922f90e2d2b30a7a264258458ff313759520f7c02fab7efe812",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a866a1cbf3527922f90e2d2b30a7a264258458ff313759520f7c02fab7efe812",
+        "accepted_path": "logs/runner-cache/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.txt",
+        "accepted_sha256": "93206622e3f35afde0842e23cb1a4312ecefe9f77c8f125c30cca5a31d93e58c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py",
+        "sha256": "a55cb889374a632242e0b60b0855934de642694c457a96d5d9dd11af8de8bde5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a55cb889374a632242e0b60b0855934de642694c457a96d5d9dd11af8de8bde5",
+        "accepted_path": "scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py",
+        "accepted_sha256": "bfd6e470cfbb4a55f61b4b6da458d9dae48347e62f4103e31c3bc023b3e32ff9",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9148,
+    "head": "08a8793df4867d7bef3230345261c58439c98742",
+    "fetch_ref": "refs/pull/9148/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Finite-population projector diagnostics for the supplied ring model; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_PROJECTOR_MONTE_CARLO_AT_THE_PURE_RING_POINT_ENERGIES_BELOW_VARIATIONAL_AND_NO_GROWTH_OF_PLAQUETTE_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "5d5af2cb7949ac1dc5b5e01eaded443c150d6e1aaaa7a39923ce3d34643106aa",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5d5af2cb7949ac1dc5b5e01eaded443c150d6e1aaaa7a39923ce3d34643106aa",
+        "accepted_path": "docs/RING_MODEL_PROJECTOR_MONTE_CARLO_AT_THE_PURE_RING_POINT_ENERGIES_BELOW_VARIATIONAL_AND_NO_GROWTH_OF_PLAQUETTE_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "db36dbdd65436c03ef259aafe6848681362cf1021efd292b8ac2e729d5c34a43",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.txt",
+        "sha256": "d0cb870bf4c7b20c0a0dbeb63125fa339bc53be43e93dcc56779295f19198d62",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d0cb870bf4c7b20c0a0dbeb63125fa339bc53be43e93dcc56779295f19198d62",
+        "accepted_path": "logs/runner-cache/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.txt",
+        "accepted_sha256": "501942c158d52991750ec310ead0eb68a34fa7917c41bbc400e7fd0c95075015",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.py",
+        "sha256": "a848662641ae02a9d7f1d1bcf836c140bc5b07e7a41496f8453cd94b2ba567ca",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a848662641ae02a9d7f1d1bcf836c140bc5b07e7a41496f8453cd94b2ba567ca",
+        "accepted_path": "scripts/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.py",
+        "accepted_sha256": "ef66bbea451caebe4ee5457ac906df05da86cb2db9928edc59061f6b2a916579",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9153,
+    "head": "24b5a245688465b6f1f2f07141a448e0f5929081",
+    "fetch_ref": "refs/pull/9153/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Conserved winding and finite projector relaxation diagnostics; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_WINDING_SECTOR_SPLITTINGS_RESOLVED_ON_THE_SMALL_TORI_AND_A_MULTI_EXPONENTIAL_RELAXATION_AT_THE_PURE_RING_POINT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "5779f4461b0cf733bbc1338850753e520d70b1d1fe77c6525f4d0446eb592afe",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5779f4461b0cf733bbc1338850753e520d70b1d1fe77c6525f4d0446eb592afe",
+        "accepted_path": "docs/RING_MODEL_WINDING_SECTOR_SPLITTINGS_RESOLVED_ON_THE_SMALL_TORI_AND_A_MULTI_EXPONENTIAL_RELAXATION_AT_THE_PURE_RING_POINT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "6ddfda6abc678bf789203a4469ceeb1ba96546a204ac693f32f7f203728c4e1f",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.txt",
+        "sha256": "98c707b1b97dd6b9e602e767bcfb529cded68914ab0bd72d699f9d2f88a0be60",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/98c707b1b97dd6b9e602e767bcfb529cded68914ab0bd72d699f9d2f88a0be60",
+        "accepted_path": "logs/runner-cache/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.txt",
+        "accepted_sha256": "86a39cbf873e890245ed3f6cf97aec1f330a405029efe7c323b856a5f700e477",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py",
+        "sha256": "c8773d978d1ac68bc519666ea4d0e388c6b77f10c8eb492137ddb02fcad1f133",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c8773d978d1ac68bc519666ea4d0e388c6b77f10c8eb492137ddb02fcad1f133",
+        "accepted_path": "scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py",
+        "accepted_sha256": "3282d60147715ef05294afeb00feca89e84d81df7e268a4b0b540ff7409f6a54",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9161,
+    "head": "3bc88bce2ee80024795fa3fcd3f50bc324495fb3",
+    "fetch_ref": "refs/pull/9161/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Conditional ground-state f-sum and finite transverse-mode estimates; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_PURE_RING_POINT_TRANSVERSE_FLUCTUATIONS_AT_THE_SMALLEST_MOMENTUM_ARE_A_THIRD_OF_THE_UNIFORM_ICE_CONSTANT_AND_THE_FEYNMAN_PHOTON_BOUND_SHOWS_NO_RESOLVED_POWER_ON_SMALL_TORI_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "9712762cdb4377a65d63431ab43a7046344dbd96060574e7b555c6781f0742c0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9712762cdb4377a65d63431ab43a7046344dbd96060574e7b555c6781f0742c0",
+        "accepted_path": "docs/RING_MODEL_PURE_RING_POINT_TRANSVERSE_FLUCTUATIONS_AT_THE_SMALLEST_MOMENTUM_ARE_A_THIRD_OF_THE_UNIFORM_ICE_CONSTANT_AND_THE_FEYNMAN_PHOTON_BOUND_SHOWS_NO_RESOLVED_POWER_ON_SMALL_TORI_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "fd7af8cd4c84f8fe5242f50c6710fffeaaefd1e16b4289d9f958e166aa140d88",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.txt",
+        "sha256": "8c40b076988b5fb7ab38a672fb17fbd1443dfe4d80d0a7a247ed68cbb7206566",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/8c40b076988b5fb7ab38a672fb17fbd1443dfe4d80d0a7a247ed68cbb7206566",
+        "accepted_path": "logs/runner-cache/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.txt",
+        "accepted_sha256": "fc1f20a9aadd55e23783056978815869ad441e189c5f37802abeceaeff1c188e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.py",
+        "sha256": "00ef46aa369eaf13f72d0c78ba7d20402644888f0753b7af74677753e950241b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/00ef46aa369eaf13f72d0c78ba7d20402644888f0753b7af74677753e950241b",
+        "accepted_path": "scripts/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.py",
+        "accepted_sha256": "f88b8dbeb74353d25c24e96ede5c242e746593322c24621b60a34c05e7941ff5",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9163,
+    "head": "87b3cbb14cb1c81e6fbb46455f8565e83f8e3596",
+    "fetch_ref": "refs/pull/9163/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Exact Parseval constraint and finite transverse-weight maps; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_ICE_TRANSVERSE_WEIGHT_SUM_RULE_THE_RING_TERM_MOVES_THE_WEIGHT_FROM_THE_SMALLEST_MOMENTA_TO_THE_ZONE_CORNER_WITHOUT_A_GROWING_PEAK_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "891edf56522dc507a3b5a30a2191dfe1601b72648deed8a011ff9adcd12c4ff1",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/891edf56522dc507a3b5a30a2191dfe1601b72648deed8a011ff9adcd12c4ff1",
+        "accepted_path": "docs/RING_MODEL_ICE_TRANSVERSE_WEIGHT_SUM_RULE_THE_RING_TERM_MOVES_THE_WEIGHT_FROM_THE_SMALLEST_MOMENTA_TO_THE_ZONE_CORNER_WITHOUT_A_GROWING_PEAK_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "d1423e5c01b664523648d0479cf226650662044b189d721d5049532092221f05",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.txt",
+        "sha256": "ccdffad34a295e22ab12d076f40629c9e2a136fa7d1ecaf014f61ed6eed1c8df",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ccdffad34a295e22ab12d076f40629c9e2a136fa7d1ecaf014f61ed6eed1c8df",
+        "accepted_path": "logs/runner-cache/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.txt",
+        "accepted_sha256": "6ec6ea3ac9059bec1ff57b57b7f47455501553e29a729bc53e40d668a8b47954",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py",
+        "sha256": "2f9bc6f1361fc8c5c60ce34d0eef531aec897df5dcc91c01d21ef8be1cca6627",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2f9bc6f1361fc8c5c60ce34d0eef531aec897df5dcc91c01d21ef8be1cca6627",
+        "accepted_path": "scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py",
+        "accepted_sha256": "c2f67b056d997eb42c1b1da523972b9694acf8bd968e46694bc77c9c59a4bad1",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9166,
+    "head": "d0baf9ff16c0beade7eee8d444ae12bb932083aa",
+    "fetch_ref": "refs/pull/9166/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Reduced Gaussian Maxwell comparator and historical fit arithmetic; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/GAUSSIAN_LATTICE_MAXWELL_COMPARATOR_GIVES_A_LINEAR_SIZE_INDEPENDENT_TRANSVERSE_STRUCTURE_FACTOR_AND_MISSES_THE_PURE_RING_LEVEL_STEP_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "5092e9a3bc20b257290bc835becf1cad013329643729aa7f4c6b2145f7580f2d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5092e9a3bc20b257290bc835becf1cad013329643729aa7f4c6b2145f7580f2d",
+        "accepted_path": "docs/GAUSSIAN_LATTICE_MAXWELL_COMPARATOR_GIVES_A_LINEAR_SIZE_INDEPENDENT_TRANSVERSE_STRUCTURE_FACTOR_AND_MISSES_THE_PURE_RING_LEVEL_STEP_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "1dd6ad11bdae5f475ff2917493bb746aea4040fdb386d48973b4dc5e6c3fa5ba",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.txt",
+        "sha256": "e1a0c2ea305bf6d9c7a6e08c694f66e195a45bcdc8947509d41b384ea278ec66",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e1a0c2ea305bf6d9c7a6e08c694f66e195a45bcdc8947509d41b384ea278ec66",
+        "accepted_path": "logs/runner-cache/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.txt",
+        "accepted_sha256": "b349e9bcadc386df4bbbe8079df019ba92a5c91d59669fed302f20f819a1fed0",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py",
+        "sha256": "1b5befe98098fce04f829b5fdb6372c0080ffa2123ba00b529b74e9ed20835a5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1b5befe98098fce04f829b5fdb6372c0080ffa2123ba00b529b74e9ed20835a5",
+        "accepted_path": "scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py",
+        "accepted_sha256": "56c44620f97da6fc230674117d13912f4c39fb2803dfcb86f213ed71e9bd9eef",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9169,
+    "head": "9fd0b011038e489f92dc80986ec47664d9107777",
+    "fetch_ref": "refs/pull/9169/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "RK stationary law and a finite coupling-grid sweep; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_FROM_THE_RK_POINT_TO_THE_PURE_RING_POINT_THE_TRANSVERSE_WEIGHT_MOVES_TO_THE_ZONE_CORNER_CONTINUOUSLY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c84e6495f1d557a8f1fbde8bd1ec36e386dac41a92b782d7e1a5b94c4d4caaad",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c84e6495f1d557a8f1fbde8bd1ec36e386dac41a92b782d7e1a5b94c4d4caaad",
+        "accepted_path": "docs/RING_MODEL_FROM_THE_RK_POINT_TO_THE_PURE_RING_POINT_THE_TRANSVERSE_WEIGHT_MOVES_TO_THE_ZONE_CORNER_CONTINUOUSLY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "4a401a363659c7fc2904aa407758fb962a21ec766ff109db845f404d2ca049d5",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.txt",
+        "sha256": "6b000e6d94cdbca249abf96064c6074c706f8465eecdeb4175b2ac21f5222263",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6b000e6d94cdbca249abf96064c6074c706f8465eecdeb4175b2ac21f5222263",
+        "accepted_path": "logs/runner-cache/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.txt",
+        "accepted_sha256": "a2be265ef6a91782be5455af3a8a581c95fea18c7f98c878fb85674c6190e4e2",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py",
+        "sha256": "f50247e04bd5eb085b1a3a0bf8fc2247c700a3e57d6f105b64f71de969067171",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f50247e04bd5eb085b1a3a0bf8fc2247c700a3e57d6f105b64f71de969067171",
+        "accepted_path": "scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py",
+        "accepted_sha256": "62f740828387627e8310cfe1d7ddbf4165111ef18192d128ca121d37e8d48f3d",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9171,
+    "head": "07a595e9a1d789dbb1c8a29b571566bb48cf92f8",
+    "fetch_ref": "refs/pull/9171/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Ten-cubed estimator and descriptive four-size fits; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_THE_TEN_CUBED_POINT_LIES_BETWEEN_THE_LINEAR_AND_LEVEL_READINGS_AND_A_CONSTANT_PLUS_A_LINEAR_TERM_FITS_THE_FOUR_SIZES_MILDLY_BETTER_THAN_A_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "139fa61cab4a8ec40f9e953a89e518c271445fdf978acb74472fe14b36f59e62",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/139fa61cab4a8ec40f9e953a89e518c271445fdf978acb74472fe14b36f59e62",
+        "accepted_path": "docs/RING_MODEL_THE_TEN_CUBED_POINT_LIES_BETWEEN_THE_LINEAR_AND_LEVEL_READINGS_AND_A_CONSTANT_PLUS_A_LINEAR_TERM_FITS_THE_FOUR_SIZES_MILDLY_BETTER_THAN_A_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "9b719f3c032da119615ba6f2aa8942651748ac4bf15516362bf32ff09acd6be9",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.txt",
+        "sha256": "0eb94fe9d68ac8ead9661a3ce00d7c94ed4274100510abef2e5133cbba705822",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0eb94fe9d68ac8ead9661a3ce00d7c94ed4274100510abef2e5133cbba705822",
+        "accepted_path": "logs/runner-cache/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.txt",
+        "accepted_sha256": "be5b653c17facb5a116e1281c99b121c43dc4679c3103407e71c83d21f731528",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py",
+        "sha256": "a5c4b7160b18fd71ba8411acef7011b39fce1101a702220450458652e538ead9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a5c4b7160b18fd71ba8411acef7011b39fce1101a702220450458652e538ead9",
+        "accepted_path": "scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py",
+        "accepted_sha256": "516e3c77b59085a2662c1014bf274b3395c1e6fbc69c2ababe26bace8fe97a92",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9220,
+    "head": "3b655b7c876b67e354c61bbfb0ddee04bdd5f691",
+    "fetch_ref": "refs/pull/9220/head",
+    "landing": "58b5efa6077895d87d7ea6589f06cc3f4ddf68f3",
+    "findings": "Compressed boundary identities and finite regulator diagnostics; Exact hypotheses and support restrictions made explicit; Finite estimates separated from ground-state or thermodynamic conclusions; Historical constants and auxiliary runs denied fresh empirical authority; Original recovery branch retained for unresolved science",
+    "files": [
+      {
+        "original_path": "docs/RING_MODEL_TWO_REGULATORS_A_REGION_BOUNDED_BY_RECORDS_MATCHES_THE_TORUS_AT_SIZE_EIGHT_AND_THE_WALKER_POPULATION_IS_THE_LARGER_REGULATOR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "sha256": "21be67b30fff3ac4eb132d3fc822a8d340a4314a825c9a959aeb12d346ff53a6",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/21be67b30fff3ac4eb132d3fc822a8d340a4314a825c9a959aeb12d346ff53a6",
+        "accepted_path": "docs/RING_MODEL_TWO_REGULATORS_A_REGION_BOUNDED_BY_RECORDS_MATCHES_THE_TORUS_AT_SIZE_EIGHT_AND_THE_WALKER_POPULATION_IS_THE_LARGER_REGULATOR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+        "accepted_sha256": "2809d93b918664f98dcb3ebfe36c2720179da01df471eb0779b13a4e98da3f1c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/ring_model_two_regulators_a_region_bounded_by_records_against_the_torus_and_the_walker_population_2026_09_25.txt",
+        "sha256": "c0a3d247932a5f8fade4988902aaff5138cccf64e7cc34d9cf41e0e8dd6b2e96",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c0a3d247932a5f8fade4988902aaff5138cccf64e7cc34d9cf41e0e8dd6b2e96",
+        "accepted_path": "logs/runner-cache/ring_model_two_regulators_a_region_bounded_by_records_against_the_torus_and_the_walker_population_2026_09_25.txt",
+        "accepted_sha256": "396c434f2e45779a4573e77991928625e000d2ace12eaf5c6b5ca3a2820c6456",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/ring_model_two_regulators_a_region_bounded_by_records_against_the_torus_and_the_walker_population_2026_09_25.py",
+        "sha256": "d1b301d33eddec145e77049cdaf5cde1524b4e27919b09d0841ef0be8138117f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d1b301d33eddec145e77049cdaf5cde1524b4e27919b09d0841ef0be8138117f",
+        "accepted_path": "scripts/ring_model_two_regulators_a_region_bounded_by_records_against_the_torus_and_the_walker_population_2026_09_25.py",
+        "accepted_sha256": "06a04e41bc51610b9026f09998b025eec6d82ad57102a28e1aa357a1df42ecff",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader phase, convergence, gap and population-independence interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  }
+]

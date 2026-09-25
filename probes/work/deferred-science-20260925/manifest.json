@@ -51,15 +51,49 @@
       ],
       "file": "unit-21.json",
       "sha256": "89cdc7ba80c1e30833f25461d7a46587ac85af883bd65e089b9a59fce8cb2d32"
+    },
+    {
+      "unit": 22,
+      "prs": [
+        9146,
+        9148,
+        9153,
+        9161,
+        9163,
+        9166,
+        9169,
+        9171,
+        9220
+      ],
+      "file": "unit-22.json",
+      "sha256": "47c6bdff59db6dd08f3d9a09ba350737384674f7d1ffd28285acd8a727aea9a2"
+    },
+    {
+      "unit": 23,
+      "prs": [
+        9144,
+        9149,
+        9168,
+        9155,
+        9172,
+        9061,
+        9164,
+        9218
+      ],
+      "file": "unit-23.json",
+      "sha256": "75e4855ed18f544d7c4166cc8b6adc695a64cbe73e536f3b140e74b0b350c18c"
     }
   ],
   "task_ids": [
     "J:derive:deferred-20260925-conditional-dynamics:a1",
     "J:derive:deferred-20260925-band-gauge:a1",
     "J:derive:deferred-20260925-integer-gauge:a1",
-    "J:derive:deferred-20260925-nonlinear-weights:a1"
+    "J:derive:deferred-20260925-nonlinear-weights:a1",
+    "J:derive:deferred-20260925-ring-limits:a1",
+    "J:derive:deferred-20260925-matter-clocks:a1"
   ],
   "science_authority": "current origin/main, not frozen originals",
   "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
-  "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction"
+  "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction",
+  "main_at_latest_supplement": "4c7f75ea51c73381edb925b5088feeb5a50d9b76"
 }

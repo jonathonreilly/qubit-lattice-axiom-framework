@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py
+runner_sha256: a5c4b7160b18fd71ba8411acef7011b39fce1101a702220450458652e538ead9
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 494.32
+status: ok
+----- stdout -----
+[PASS] 10^3 pure-ring point: energy in the range of the smaller tori, S_T(k_min = pi/5) resolved (error <= 12 %) with a forward-walking plateau (lags 4 and 6 within 2.5 standard errors of lag 2), correlation chain (early rate <= bound, later rates <= earlier, within errors) :: e0 -0.28741+-0.00010 (8^3 at 120 walkers -0.28800, at 240 -0.28813); S_T(k_min) mixed 0.623, forward lags 1/2/4/6 0.543+-0.039/0.510+-0.046/0.506+-0.042/0.512+-0.041; S_T(2 pi/5) lag 2 0.714+-0.043; omega_SMA 0.430+-0.039, omega L 4.30, omega/k 0.685; rates on [0,0.3] 0.42+-0.46, [0.5,1] 0.39+-0.32, [1,2] 0.41+-0.16; 2757078 hops, 494 s
+[PASS] the four-size series S_T(k_min) on 4^3-10^3: pairwise exponents, a weighted power-law fit and a linear-plus-constant fit with their chi^2 (2 degrees of freedom each), the 12^3 value each predicts, and the 10^3 point against open PR 9166's three readings (reported; no power asserted) :: S_T 0.692+-0.013, 0.557+-0.022, 0.575+-0.028, 0.510+-0.046; pairwise nu 4-6 0.54+-0.11, 6-8 -0.11+-0.22, 8-10 0.53+-0.46, 4-10 0.33+-0.10; power law nu = 0.34+-0.06 (chi^2 5.1); S = S0 + a k: S0 = 0.392+-0.040, a = 0.189+-0.030 (chi^2 3.8); 12^3 predictions: power 0.473, linear-plus-constant 0.491; 10^3 point vs open PR 9166: linear 0.460 (+1.1 sigma), level 0.575 (-1.4 sigma), quadratic 0.375 (+3.0 sigma)
+[PASS] the Feynman bound omega_SMA = 2 u0 s^2 / S_T at k_min on 4^3-10^3: omega L, omega/k and the fitted exponent of the bound in k (reported) :: 4^3: omega 1.692+-0.032, omega L 6.77, omega/k 1.077; 6^3: omega 1.037+-0.041, omega L 6.22, omega/k 0.990; 8^3: omega 0.587+-0.029, omega L 4.69, omega/k 0.747; 10^3: omega 0.430+-0.039, omega L 4.30, omega/k 0.685; exponent of omega in k over the four points 1.45 (1 linear, 2 quadratic); late-rate x L at k_min on 10^3 3.9
+TOTAL: PASS=3 FAIL=0 (494 s)
+
+----- stderr -----
+

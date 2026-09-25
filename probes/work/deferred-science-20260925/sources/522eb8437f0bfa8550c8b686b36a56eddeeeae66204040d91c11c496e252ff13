@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/round_three_synthesis_one_identity_per_block_and_the_register_2026_09_24.py
+runner_sha256: fe18febfa889a69f47b934cb704df1be3a5f67f48047c8a5944cdbb71b33dd4f
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.93
+status: ok
+----- stdout -----
+[PASS] open PR 9161: on the exact 2^3 flip component (864 states, E0 = -9.026721) the Feynman numerator <O^dag (H - E0) O> equals 2 u0 s^2 :: 9600 ice states, component 864, E0 -9.026721, f 3.008907 vs 2 u0 s^2 3.008907; 2 s
+[PASS] open PR 9163: the zone average of the transverse weight is exactly 3 and the longitudinal combination vanishes on uniform and guided ice samples of 4^3 and 6^3 :: max |mean_k T - 3| 4e-16; max longitudinal amplitude 3e-15
+[PASS] open PR 9169: on the same component the RK clause D - A annihilates the uniform vector exactly and is non-negative (its lowest eigenvalue is zero) :: |(D - A) 1|max 0e+00; lowest eigenvalue -8.7e-16; N_flip on the component in [4, 16]
+[PASS] open PR 9166: the lattice Maxwell covariance (1/2) sqrt(K/U) (C^T C)^{1/2} on 4^3 is divergence-free and equals A |s(k)| (1 - g g^+) at every k, with kernel N + 2 :: |D C^T|max 0, |D Sigma|max 1e-15, |S - closed form|max 2e-15, kernel 66 = N + 2; 3 s
+[PASS] open PR 9164: rate functionals of the menu odds are invariant under menu dephasing rho -> P+ rho P+ + P- rho P-, purity and coherence rates are not :: max |f(rho) - f(Delta_p rho)| over 300 Bloch-ball states: odds 1e-16, law 1e-16; purity 0.491, coherence 0.981
+[PASS] open PR 9168: on the 4x4x8 torus every hyperhoneycomb site has exactly three nearest neighbours in the site set (axis bonds, three of six), the network is connected and bipartite, and half the points are sites :: 64 sites of 128 points, degrees [3], connected True, bipartite True
+[PASS] open PR 9171: from the certified S_T(k_min) on 4^3-10^3 the weighted power law and the linear-plus-constant fit reproduce nu = 0.34, chi^2 5.1 and S0 = 0.392, a = 0.189, chi^2 3.8 :: nu 0.341 (chi^2 5.06); S0 0.392, a 0.189 (chi^2 3.82)
+[PASS] register of decision points touched in round three (none adopted) :: D-gauss; D-roles; D-ring; D-RK (the potential V n_p and its sweep, open PR 9169); D-form-const; D-form-law; D-form-records; D-form-odds; D-form-state; D-form-time; D-register (open PR 9164); D-comp (which composite sites are recorded, open PR 9168); D-axes / D-flavour (record-selected bond flavours, open PR 9168); D-Gauss-comparator (the lattice Maxwell theory as a supplied comparison, open PR 9166)
+TOTAL: PASS=8 FAIL=0 (3 s)
+
+----- stderr -----
+

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py
+runner_sha256: 0674425d686bf383de67bc7d5ef97ecc2deabc33edfe4607220e962ed79d9ce6
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 18.73
+status: ok
+----- stdout -----
+[PASS] hyperhoneycomb embeds in Z^3 with axis bonds :: sites per 2x2x4 cell 8, degrees [3], induced trivalent True, flavours xyz at every site True, bipartite True, (1,1,2) translation True -> 4 sites per primitive cell, inversion about a chain-bond midpoint True, girth 10, 10-cycles through a site 10, coordination sequence [3, 6, 12, 24, 38], connected on 4x4x8 torus True
+[PASS] record pattern: half the composite sites, flavour records on links, covariant rule, supplied pattern :: per 4x4x8 doubled cell: 16 vertices of which 8 unrecorded network sites and 8 recorded; 48 link sites of which 12 carry flavour records, 24 join a network site to a recorded site, 12 join two recorded sites; site-set stabiliser 8 of 24 (orbit 3), pattern-with-flavours stabiliser 2 of 24 (orbit 12); the rule flavour = record axis is equivariant by construction
+[PASS] 8-qubit star: [H, S] = 0 exactly and spectrum = three-flavour free Majorana spectrum :: J=(1.0, 0.8, 0.6), kappa=0.35; max|[H,S^a]| 0.0e+00; spectrum deviation with odd-term hopping +kappa: 1.6e-14, -kappa: 1.5e-14 (the spectrum is even in kappa, so no spectrum fixes the sign: a convention); 256 levels, 16 distinct, lowest -6.035520
+[PASS] 10-loop operators commute with all bond and odd terms; term supports are small blocks :: 10 loops through a site, all commute with 1176 terms; control (one wrong Pauli) breaks commutation True; bond support box [(2, 2, 4), (2, 4, 2), (4, 2, 2)], odd-term boxes [(2, 4, 4), (2, 6, 2), (4, 2, 4), (6, 2, 2)]
+[PASS] kappa = 0, isotropic, flux-free: nodal line (dimension 1); anisotropic J_z = 2.5: gapped :: min gap 2.4e-21 at k/2pi = (0.0833, 0.5833, 1.0000); near-zero counts N=16: 576, N=48: 1460 -> dimension estimate 0.85; bandwidth 6.000; J=(1,1,2.5) gap 1.0000
+[PASS] kappa = 0.3: nodal line breaks into Weyl points with chirality +-1 summing to zero :: 2 nodes, gaps < 1e-7; chiralities [-1, 1] (Berry flux residual 0.000); spectrum symmetric under E -> -E at every k (inversion x particle-hole) to 8e-15; counts N=16: 200, N=48: 214 -> dimension estimate 0.06; nodes at k/2pi: (0.355, 0.645, 1.000); (0.645, 0.355, 1.000)
+[PASS] six-valent site content: generated algebra dimensions 256, 64, 16 -> 4, 3, 2 qubits :: 6 b + 3 c (SU(2), six-valent): algebra dim 256 on 16 states -> 4 qubits; 6 b + 2 c (U(1)): 64 on 8 -> 3 qubits; 3 b + 3 c (trivalent Yao-Lee): 16 on 4 -> 2 qubits
+[PASS] six-valent cubic bands: zero flux surface (dimension 2), pi flux point nodes with zero Berry flux :: zero flux counts N=16: 1084, N=48: 11164 -> dimension 2.12; pi flux counts 1, 1 -> dimension 0.00; 1 pi-flux nodes in the 2x2x2 zone, degeneracy [8], Berry flux [-0.0]; energy per site zero flux -1.0026, pi flux -1.1938 (Lieb ordering, finite diagnostic)
+TOTAL: PASS=8 FAIL=0  (runtime 18 s)
+
+----- stderr -----
+

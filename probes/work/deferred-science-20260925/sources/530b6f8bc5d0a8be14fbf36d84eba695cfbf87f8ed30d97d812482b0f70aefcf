@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py
+runner_sha256: 2e5d1ddaabe74b3778fd04be8b4fc5503a407b0e924aabc6275690af18065879
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+[PASS] one qubit per site: a Majorana bilinear between two components is not physical, a bond bilinear of one component is :: physical projector rank 4; |P (i c_j c_k) P| = 0e+00; the bilinear anticommutes with D_j (0e+00); the bond bilinear survives with norm 1.000; leakage of exp(i theta Q) out of the physical space 0.2955 at theta = 0.3 (= |sin theta|) and 1 at pi/2
+[PASS] the composite bond term sits on a plaquette's four corners, in no single star, and its family is covariant :: weight 4; pairwise distances up to 1.414; closed stars containing the support: 0; orbit of the (dimer axis, bond direction) pair under the 24 proper rotations: 24
+[PASS] four dimers in a star: exactly four levels -3e, -e, e, 3e with degeneracies 32, 96, 96, 32; the matter spin is conserved and one flavour excitation raises the largest S^z by one :: [H, S] = 0e+00; e = 1.414214; levels [np.float64(-4.242641), np.float64(-1.414214), np.float64(1.414214), np.float64(4.242641)] with degeneracies [32, 96, 96, 32]; largest S^z per level [1, 2, 2, 1]; multiplets (spin: count) per level [{0: 8, 1: 8}, {0: 8, 1: 16, 2: 8}, {0: 8, 1: 16, 2: 8}, {0: 8, 1: 8}]
+[PASS] the odd three-dimer term is time-reversal odd, keeps the matter spin, and leaves the spectrum free with next-nearest hopping :: T H T^-1 = H to 0e+00, T H3 T^-1 = -H3 to 0e+00; [H3, S] = 0e+00; spin spectrum vs three-flavour free spectrum: 8e-15 without and 2e-14 with the odd term (each free level repeated 4 times)
+[PASS] a honeycomb layer of dimers with the odd term: per-flavour Chern number of modulus one, flipping with the sign of the odd term :: J = (1, 1, 1), kappa = 0.2: gap 2.000, Chern number +1.0000; kappa = -0.2: -1.0000
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

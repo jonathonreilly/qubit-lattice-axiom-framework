@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py
+runner_sha256: 27feb7a53254b377a9ac6d8b214f5a7630c3782c071067e7059da6584d87acc6
+input_fingerprint_sha256: ff552585a00ba09b4b886a5e0fd172685e5ff942d91a2abde47340909f06040a
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 4.86
+status: ok
+----- stdout -----
+[PASS] covariance classifies the rate functions: 2 invariants with no axis, 4 with a physical field axis, 3 with an unordered menu axis :: degree-<=2 invariant dimensions: all rotations 2 ({1, |r|^2}); rotations about h 4 ({1, |r|^2, r.h, (r.h)^2}); with the flip of an unordered menu 3 ({1, |r|^2, (r.n)^2})
+[PASS] isolated site: the field menu's recorded odds equal (1 + r.h)/2 for every clock; a tilted menu's odds depend on the clock :: [H, h.sigma] = 0e+00; precession vs expm 1e-16; r.h conserved to 2e-16; field-menu odds deviate from (1 + r.h)/2 = 0.7826 by at most 2e-16 over the four clocks; tilted menu at cosine 0.861 to h (its added component has cosine 0.424 to h): odds 0.8437, 0.8154, 0.8360, 0.8570 (spread 0.0417); conditional mean formation times 1.000, 1.562, 1.278, 1.565; largest survival at T = 60 is 2e-15
+[PASS] the recorded law is a trace rule of the formation-weighted state, a valid state for every clock :: |r_f| over clocks and menus at most 0.7209; recorded odds equal (1 + r_f.p)/2 to 1e-12 for each clock
+[PASS] with an unrecorded neighbour r.h is not conserved and the field menu's odds depend on the clock :: r_A.h varies by 0.252 along the trajectory; field-menu odds 0.7197, 0.7204, 0.7242, 0.7535 (spread 0.0338) against the isolated value 0.7826; largest survival at T = 60 is 9e-14
+[PASS] ring of six with clocks everywhere: stack frequencies of the aligned outcome per clock, with Monte Carlo errors (diagnostic) :: constant: 0.481 +- 0.026, mean time to full recording 2.59; purity |r|^2: 0.497 +- 0.026, mean time to full recording 12.91; aligned odds (1+r.p)/2: 0.521 +- 0.026, mean time to full recording 15.26; alignment 2(r.p)^2: 0.506 +- 0.026, mean time to full recording 44.00
+per_element: Degree-two rate invariants and weighted trace probabilities are tested.
+per_site: Isolated precession and clock-weighted local menus are tested.
+per_mode: checked and not executed — no normal-mode or continuum clock limit is claimed.
+per_block: One- and two-site trajectories and finite-step six-site samples are tested.
+lattice_wide: checked and not executed — no many-site continuous-time limit or formation law is derived.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

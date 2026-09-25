@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py
+runner_sha256: 295ff52c2954dfd23740a0272694b058b28c6167404d817f6102a3b48c50cd31
+input_fingerprint_sha256: 6505dd23cda48fb7ca707ca703de8b353c6fd4afa73b0194870c989e59f2a89d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 133.63
+status: ok
+----- stdout -----
+[PASS] the carving: a 19-site relaxed three-direction network whose zero-field records are realizable :: connected True, winding rank 3, bonds 22; every record touches at most 2 axes; largest field on an unrecorded site 0
+[PASS] covariant odd star terms under full soldering, as signed rotation orbits :: weights 1 and 3: 37 (the linked companion construction's full-soldering count); weights 1, 3, 5, 7: 325
+[PASS] exact Majorana images: the bond matrix is reproduced, and three-site clusters match the spin spectrum :: bond matrix deviation 0e+00; 12 clusters with bonds, Kitaev's pattern and dangling fields: largest spectral deviation 5e-15; 30 random tree clusters with multi-site product strings: 1e-14; on the carving Kitaev's pattern is a free same-class c-c bilinear and a kept-axis field is not free
+[PASS] Selected star term: offset-preserving nonfree cancellation :: rational=True; active strings 28; largest forbidden residual 0.000e+00
+[PASS] the free covariant subspace, and the projection of the weight-5 orbit onto it :: free subspace dimension 41 of 325, of which 5 directions act on the Majoranas here; projected term uses 23 orbits of weights [5, 7]; non-free strings cancel to 2e-15; its free image is 27 Kitaev patterns at corners plus the dangling-axis field ((2, 2, 2), 0) with coefficient -1.1787; every free covariant term acts through these same 28 strings
+[PASS] sampled lowest sectors: positive refined band minima and sampled Chern numbers (-1, 0, 0) :: lambda 1.0: 8 lowest sectors (next 0.0120 up), 12 zero modes, gap 0.0190, weak Chern numbers (-1, 0, 0); lambda 2.0: 8 lowest sectors (next 0.0242 up), 12 zero modes, gap 0.0351, weak Chern numbers (-1, 0, 0); lambda 4.0: 8 lowest sectors (next 0.0388 up), 12 zero modes, gap 0.0174, weak Chern numbers (-1, 0, 0)
+[PASS] chiral surface modes: on a slab open along z the in-gap states sit on the surfaces and cross the gap with opposite chirality :: 12-cell slab at k_x = 1, lambda = 2, 121 values of k_y: surface-localized in-gap states top 64, bottom 31, other 4; signed crossings of E = -0.01 and 0.01: top [1, 1], bottom [-1, -1]
+[PASS] specified added quadratic fields: sampled all-axis perturbations cancel the Chern number; selected pairs preserve it :: zero modes 12, weight on dangling b's 12.000; fields on all 13 axes (size/draw) leave 2 exact zero modes, total Chern numbers on two k_x planes [0.0, 0.0]; 0.1/4: zero-mode bands to 0.1222, chiral from 0.1550; 0.1/5: zero-mode bands to 0.0792, chiral from 0.1128; 0.1/6: zero-mode bands to 0.1047, chiral from 0.1380; 0.2/4: zero-mode bands to 0.2645, chiral from 0.2862; in every case the chiral bands keep -1 and the negative zero-mode bands carry +1; fields of 0.1 on two axes only: z(2,1,2) and x(2,2,1) leave 10 zero modes, gap 4.7e-03, total C_x [-1, -1, -1]; y(0,0,1) and x(0,1,0): gap 7.3e-04, total [0, 0, 0]; with the linked companion construction's generic contents no covariant term stays free (free dimension 0)
+[PASS] Uniform-record star term: offset-preserving nonfree cancellation :: rational=True; active strings 28; largest forbidden residual 0.000e+00
+[PASS] a window in lambda; the dangling-axis field is essential; time reversal and uniform record signs flip the handedness :: gap at lambda 0.5, 0.9, 8, 10: 3e-14, 0.0105, 0.0017, 3e-18; without the field term at lambda 2: 8e-18; lambda = -2: C_x = +1; uniform record signs: gap 0.0351, weak Chern numbers [1, 0, 0]
+[PASS] Node-search star term: offset-preserving nonfree cancellation :: rational=False; active strings 28; largest forbidden residual 1.038e-14
+Node-search orbit coefficients: [(55, 0.06020736111741301), (56, 0.20843395750038538), (59, -0.0691689351903304), (72, -0.8634046079583858), (102, 0.1690744235218938), (105, 0.5150714555904709), (111, -1.2544035123506545), (114, 0.46411994789284394), (117, -1.565133742005977), (156, 2.36535164632986), (162, 0.10886706240447916), (184, -0.46411994789284305), (188, 0.020847827138920895), (198, -2.365351646329855), (204, 2.2961827111395205), (245, -2.3653516463298545), (248, 0.020847827138921197), (255, 1.1109481339792022), (258, 0.06950752842599878), (260, 0.46411994789283756), (272, -0.20843395750038493), (273, -0.34833315236791784), (280, -0.06916893519032807), (290, 0.07394784994545905)]
+[PASS] node search finds a particle-hole-related pair of auxiliary band crossings with sampled charges -1 and +1 :: direction [-1.928 -1.492  4.792 -0.488 -0.316] on the principal directions: 20 coupled Majoranas; touchings from 24 seeds: [(5.172, 6.197, 6.074), (1.111, 0.086, 0.209)] at energies [-0.0071, 0.0071], charges [-1, 1]; splitting/|q| 0.309-1.387, the same at q = 1e-3 and 1e-2; C_x of the lower half of the coupled bands on 13 planes [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0], jumping by the charges at the nodes
+per_element: Pauli compression, signed group actions and declared Clifford identities are the element-level checks.
+per_site: Local supports and explicit carving-site constraints are checked only under the supplied record rules.
+per_mode: Finite Bloch grids and stated optimizers are diagnostics; no certified global band gap is inferred.
+per_block: Named finite cells and covariance coefficient spaces are checked with their explicit size and support restrictions.
+lattice_wide: General lattice conclusions rely only on displayed conditional arguments; finite searches do not certify physical emergence.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

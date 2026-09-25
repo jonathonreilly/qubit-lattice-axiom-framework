@@ -1,6 +1,6 @@
 {
- "edge_count": 14640,
- "node_count": 6655,
+ "edge_count": 14661,
+ "node_count": 6660,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5130,6 +5130,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "dynamics_clause_a_covariant_time_reversal_odd_star_term_gives_a_record_carved_majorana_network_a_chern_number_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e23a95af8450",
+   "out_degree": 6
+  },
   "dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
@@ -5142,6 +5146,10 @@
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
   },
+  "dynamics_clause_record_fields_keep_the_carved_majoranas_sublattice_symmetric_and_a_gapless_start_plus_a_time_reversal_odd_term_gives_a_chern_number_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "a23731497a06",
+   "out_degree": 4
+  },
   "dynamics_clause_record_frequencies_follow_the_one_shot_odds_exactly_when_correlations_cluster_bounded_theorem_note_2026-09-24": {
    "deps_hash": "0f0142367439",
    "out_degree": 4
@@ -5150,9 +5158,21 @@
    "deps_hash": "a59898a41151",
    "out_degree": 3
   },
+  "dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_gapped_majorana_fermions_in_a_static_z2_gauge_field_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d416a5f883f6",
+   "out_degree": 4
+  },
+  "dynamics_clause_records_carve_kitaev_models_at_the_compass_point_zero_field_carvings_are_cubes_and_tubes_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "9fce644fd0e7",
+   "out_degree": 3
+  },
   "dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_forming_sites_must_be_isolated_and_never_interact_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
+  },
+  "dynamics_clause_time_reversal_odd_star_terms_covariance_allows_them_and_on_the_cube_carving_none_keeps_the_majoranas_free_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "5f141bcbc75f",
+   "out_degree": 4
   },
   "dynamics_coupling_residual_classifier_2026-06-06": {
    "deps_hash": "e3b0c44298fc",

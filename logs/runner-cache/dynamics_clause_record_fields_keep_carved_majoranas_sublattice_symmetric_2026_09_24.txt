@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py
+runner_sha256: 305d300227a2ba4a35922eaaf99fc30b69782cda8379f3c575f008026b42afee
+input_fingerprint_sha256: f1c98becfed06231bbed8d6118c8e463b46320671b90849599f09ed44008cd66
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 55.57
+status: ok
+----- stdout -----
+[PASS] sublattice symmetry: every bond and every dangling-axis field joins opposite classes, so S H(k) S = -H(k) :: both networks, all 24 gauge sectors, random record fields, random momenta: largest |S H S + H| 0e+00
+[PASS] sampled particle-hole-invariant planes have vanishing negative-band Chern numbers :: planes k_a = 0, pi for each axis, both networks: largest |Chern number| 4e-16; top of the negative bands -0.618 (20-site), -1.437 (16-site); flat zero bands per cell 2 and 4
+[PASS] outside the content rule, a leaf's kept-axis field stays free-Majorana solvable and breaks the sublattice symmetry :: two-site leaf pair, 20 random field sets: spin spectrum = one parity sector of the Majorana spectrum to 6e-15; |S H S + H| up to 12.60
+[PASS] Kitaev pattern: sampled strengths have two numerical zero bands, positive refined minima and zero sampled Chern numbers :: 20-site kappa 0.05: gap 0.6122; 20-site kappa 0.2: gap 0.5405; 20-site kappa 1.0: gap 0.5691; 20-site kappa 4.0: gap 0.3413; 16-site kappa 0.05: gap 0.0337; 16-site kappa 0.2: gap 0.1322; 16-site kappa 1.0: gap 0.4309; 16-site kappa 4.0: gap 0.2100; two numerical zero bands per cell at the sampled strengths; Chern numbers 0 on the three k = 0 sampled planes
+[PASS] a gapless start plus Kitaev's pattern gives a Chern number: the 20-site network with decoupled dangling Majoranas :: gap at kappa 0 6e-13; at kappa 0.3 0.0528; weak Chern numbers on planes normal to x, y, z [1, 0, 0] (three planes each); but 7 of its records touch unrecorded sites along all three axes, so individually perpendicular record contents cannot realize zero fields; net-field cancellation is not excluded
+[PASS] individual orthogonal records realize zero fields on sixteen sampled networks; eight have near-zero grid eigenvalues :: 16 distinct networks in 3000 solutions on 4x4x4, every record touching at most two axes; 8 have gapless dispersive Majorana bands on an 8^3 grid, sizes [16, 18]
+[PASS] specified finite-cell reductions give no same-class bilinear under the tested constructive criterion :: 16 zero-field networks, random zero-field record contents: nonzero reduced free-image ranks trivial 0-0, sign twist 0-0, axis 2-2, full 0-0, possibility 0-0; coefficient nullities {'trivial': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'sign twist': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'axis': [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], 'full': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'possibility': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}; same-class bilinears among the free images 0; criterion: Kitaev's pattern free same-class, bond and dangling field free opposite-class, kept-axis field not free: True
+per_element: Pauli compression, signed group actions and declared Clifford identities are the element-level checks.
+per_site: Local supports and explicit carving-site constraints are checked only under the supplied record rules.
+per_mode: Finite Bloch grids and stated optimizers are diagnostics; no certified global band gap is inferred.
+per_block: Named finite cells and covariance coefficient spaces are checked with their explicit size and support restrictions.
+lattice_wide: General lattice conclusions rely only on displayed conditional arguments; finite searches do not certify physical emergence.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

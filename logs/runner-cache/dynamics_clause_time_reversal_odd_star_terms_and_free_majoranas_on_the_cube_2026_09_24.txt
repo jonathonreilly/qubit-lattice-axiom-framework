@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_time_reversal_odd_star_terms_and_free_majoranas_on_the_cube_2026_09_24.py
+runner_sha256: 8a5500eaabc5e7a3374b2e312ac0dc3df97666dfc2f4e773eeba962d37a3db92
+input_fingerprint_sha256: 15a9de2212a5fbe5c942c2dda2b936973f36d2b5f089aaff701c69b2b5129ad9
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 10.39
+status: ok
+----- stdout -----
+[PASS] possibility covariance allows one T-odd star term of weight <= 3: the orientation-weighted octant chirality :: dimension 1; by class (field, centre-perp, centre-collinear, octant, mixed) [0, 0, 0, 1, 0]; sum det[d1 d2 d3] s_d1.(s_d2 x s_d3) residual 6.7e-16
+[PASS] under the four landed actions the covariant T-odd star terms of weight <= 3 span 68, 50, 49, 37 dimensions :: totals [68, 50, 49, 37]; by class trivial [3, 18, 18, 11, 18]; sign twist [1, 12, 8, 11, 18]; axis [0, 12, 8, 11, 18]; full [0, 12, 2, 11, 12]
+[PASS] no covariant T-odd star term contains Kitaev's pattern s^a_i s^c_m s^b_k :: pattern terms 12; intersections [0, 0, 0, 0, 0]
+[PASS] on the cube, loop-commuting Pauli strings are the bond-operator products; Majorana degree 0, 2 or 4 :: commutant 2048 = products 2048; Kitaev pattern degree 2; tripod = -i K_x K_y K_z residual 0e+00, degree 4, time-reversal odd residual 0e+00
+[PASS] on the cube no covariant T-odd star term keeps the loops and the Majoranas free; the loop-keeper is the quartic tripod :: trivial: on cube 32, keep loops 0, free 0; sign twist: on cube 24, keep loops 0, free 0; axis: on cube 23, keep loops 1, free 0; full: on cube 23, keep loops 1, free 0; possibility: on cube 1, keep loops 0, free 0; the loop-keeper is sum sign(dx dy dz) s^x s^y s^z over octants, degree 4
+per_element: Pauli compression, signed group actions and declared Clifford identities are the element-level checks.
+per_site: Local supports and explicit carving-site constraints are checked only under the supplied record rules.
+per_mode: checked and not executed: this finite cube obstruction makes no momentum-band or continuum claim.
+per_block: Named finite cells and covariance coefficient spaces are checked with their explicit size and support restrictions.
+lattice_wide: General lattice conclusions rely only on displayed conditional arguments; finite searches do not certify physical emergence.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

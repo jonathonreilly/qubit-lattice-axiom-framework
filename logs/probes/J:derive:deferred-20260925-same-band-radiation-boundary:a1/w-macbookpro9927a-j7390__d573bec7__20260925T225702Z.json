@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260925-same-band-radiation-boundary:a1",
+ "type": "judgment",
+ "lane": "stronger-claim-research",
+ "worker": "w-macbookpro9927a-j7390",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-same-band-radiation-boundary/w-macbookpro9927a-j7390/check.py",
+ "seed": 77022,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d573bec7",
+ "started_utc": "20260925T225702Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "COUNTEREXAMPLE to suppression of the interband single-quantum channel: with block 136's coupling (1/2) Theta_ij h_ij and one TT quantum of energy |p(q)| (explicit assumption), the stress vertex vanishes exactly at every symmetric resonance k = q/2 + pi nu (P_j and h odd), but at an exact non-symmetric resonance (q/2 with sines 3/5, 5/13, 8/17; k* = (kappa*, q2/2, q3/2), kappa* = 0.29973..., an algebraic root) the pair-creation amplitude from the half-filled sea is nonzero (rigorous intervals) and the occupation allows it (lower state filled, upper state empty); the rate integral is not computed."
+ },
+ "review": "Self-review (claude-opus-5-5), owner-requested recovery of block 149 (PR 9242; frozen head bea8e806aa, current head 5aacd93e4b, both sha256-verified; origin/main 25b8c1874f). The vertex of block 136's stress coupling is re-derived as an exact Laurent identity (S1). It vanishes exactly at every symmetric resonance k = q/2 + pi nu (S2). An exact non-symmetric resonance is an algebraic root of a degree-8 polynomial, Sturm-isolated and genuine after squaring (S3). There the TT amplitude is nonzero by rigorous interval arithmetic, in both site conventions and for both polarizations (S4), and the occupation allows it. The single-quantum energy |p(q)| is an explicit assumption. The rate is not computed; that is the first unresolved step. The known refutation of the universal no-go is preserved, not repeated.",
+ "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Does a specified walker-field coupling allow an interband single-quantum process? The strict same-band energy-difference inequality does not answer this: explicit interband energy/momentum resonances exist. Compute an actual transition matrix element and occupation constraint for one resonance, with the single-quantum energy assumption explicit. Prove suppression under stated hypotheses or exhibit a nonzero allowed amplitude; do not repeat the already-refuted universal kinematic no-go. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9242 at bea8e806aa67aed2657544d7820cc7fcaec67b0a. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nonlinear-moving-source-completion:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-same-band-radiation-boundary/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+ "stdout_sha256": "0b4162dbe6fe2720648a6c3e78b37803c2104783f551b679e5f96b8fe4e46553",
+ "stdout_tail": "ion), [0.4541, 0.4541] (site convention); eps x [0.1891, 0.1891], [0.137, 0.137]; the prefactor (1/8)(1 + e^{-iq1}) cos q2 cos q3 is nonzero: the pair-creation amplitude is nonzero at an exact resonance\nTOTAL: PASS=4 FAIL=0  (0 s)\nSUMMARY: COUNTEREXAMPLE to suppression of the interband single-quantum channel: with block 136's coupling (1/2) Theta_ij h_ij and one TT quantum of energy |p(q)| (explicit assumption), the stress vertex vanishes exactly at every symmetric resonance k = q/2 + pi nu (P_j and h odd), but at an exact non-symmetric resonance (q/2 with sines 3/5, 5/13, 8/17; k* = (kappa*, q2/2, q3/2), kappa* = 0.29973..., an algebraic root) the pair-creation amplitude from the half-filled sea is nonzero (rigorous intervals) and the occupation allows it (lower state filled, upper state empty); the rate integral is not computed.\nHIT: block 149's pair-creation channel has a nonzero allowed single-quantum amplitude: with V = (1/2) sum Theta_ij h_ij (block 136) and a TT disturbance at q, sin(q/2) = (3/5, 5/13, 8/17), the walker transition k*' = k* - q (filled lower band) -> k* (empty upper band), k* = (kappa*, q2/2, q3/2) with tan(kappa*/2) a root of an exact degree-8 resonance polynomial (0.150995526...), satisfies |s(k*)| + |s(k*')| = |p(q)| exactly and has vertex (1/8)(1 + e^{-iq1}) cos q2 cos q3 sin(2kappa* - q1) cos q1 sum_i eps_i1 cos Kbar_i u+^dag sigma_i u- != 0 for eps+ in both site conventions; at the symmetric resonances k = q/2 + pi nu the vertex vanishes exactly.\n",
+ "checked": {
+  "by": "w-macbookpro9927a-j7390",
+  "at_utc": "20260925T225703Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

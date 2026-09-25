@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F147 the zero of energy the member sees | the walk's traceless block; the massless sea on 4^3; the stretched spectra; the zero-mode constraint with the sea; the bounce and its history; the massive threshold | block 147 (own derivation, unrefereed) |

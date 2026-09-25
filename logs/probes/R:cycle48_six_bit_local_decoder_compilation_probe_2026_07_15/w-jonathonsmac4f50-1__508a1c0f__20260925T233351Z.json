@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_six_bit_local_decoder_compilation_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_six_bit_local_decoder_compilation_probe_2026_07_15.py",
+ "seed": 79231,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233351Z",
+ "elapsed_s": 88.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ed1cdfa35f7a7ebee42bd50d59fafb6fb30bb6e5f2aadbe3b13d5bbe0bcb2d5a",
+ "stdout_tail": "ROLE_CENSUS 153 27 126 126\nTABLE_CENSUS 126 3024 12860 0\nINSTANCE_CENSUS 1536 10752 9216 0\nDECODER_CENSUS 60 4 False\nMUTATION_CENSUS 768 0\nRESULT FINITE_CYCLE48_LOCAL_DECODER\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233519Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+SCOPE: abelian U(1) flux, free rings, finite T, mu_ch grid; the alternation-fate table is the datum; NOT claimed: b3, non-abelian, gauge self-energy (named gap), thermodynamic-limit asymptotics, d=3. (X3-import) used nowhere.
+
+X2b THE TABLE: exact Omega_second(0)
+mu_ch=0.25 m=0.0 T=0.3 | N=8: -1.8648822116080446e-02 | N=10: +5.3923179419285913e-03 | N=12: -1.0018206927142892e-03 | N=14: -2.0567262938163411e-05 | N=16: +1.8813176946266830e-04
+mu_ch=0.25 m=0.0 T=0.6 | N=8: -2.1150269140217115e-03 | N=10: +3.2205895056573036e-04 | N=12: -4.4813616947060597e-05 | N=14: +5.2815979159764881e-06 | N=16: -3.8629744653073672e-07
+mu_ch=0.25 m=0.4 T=0.3 | N=8: -1.5883597301198552e-02 | N=10: +4.5608870076232072e-03 | N=12: -1.0576209708531709e-03 | N=14: +1.5846477935760328e-04 | N=16: +3.5695508534022702e-05
+mu_ch=0.25 m=0.4 T=0.6 | N=8: -1.9169462181107266e-03 | N=10: +2.8783295974751238e-04 | N=12: -3.9976360279130041e-05 | N=14: +4.8495448158256127e-06 | N=16: -4.2409462418235844e-07
+mu_ch=0.50 m=0.0 T=0.3 | N=8: +8.1028542633379830e-03 | N=10: -7.2316736962127481e-03 | N=12: +4.0406415630702269e-03 | N=14: -1.7521168600192552e-03 | N=16: +6.0612287807310095e-04
+mu_ch=0.50 m=0.0 T=0.6 | N=8: -3.0869645131302581e-04 | N=10: -1.1609529482289882e-04 | N=12: +4.9984526651898620e-05 | N=14: -1.3162575831053569e-05 | N=16: +2.8241193270328591e-06
+mu_ch=0.50 m=0.4 T=0.3 | N=8: +3.1523778619759746e-03 | N=10: -4.1739381287059438e-03 | N=12: +2.5476086321181354e-03 | N=14: -1.1503755713464237e-03 | N=16: +4.2697761032687437e-04
+mu_ch=0.50 m=0.4 T=0.6 | N=8: -3.7966871617187842e-04 | N=10: -7.8928682966536434e-05 | N=12: +3.8334921863544813e-05 | N=14: -1.0268864295809310e-05 | N=16: +2.2124175882709540e-06
+mu_ch=1.00 m=0.0 T=0.3 | N=8: +1.8104416333257496e-02 | N=10: -8.9847732824629295e-04 | N=12: -2.0144513803522918e-03 | N=14: +1.0245546787069348e-03 | N=16: -1.8707780655324163e-04
+mu_ch=1.00 m=0.0 T=0.6 | N=8: +1.9274570610889885e-03 | N=10: -3.0446417315655588e-04 | N=12: +2.2032559661017137e-05 | N=14: +3.1576280211664809e-06 | N=16: -1.4422053103910204e-06
+mu_ch=1.00 m=0.4 T=0.3 | N=8: +1.7473475559122903e-02 | N=10: -2.3393479463506145e-03 | N=12: -1.1484042905348865e-03 | N=14: +8.2668833551432369e-04 | N=16: -2.3355049373593312e-04
+mu_ch=1.00 m=0.4 T=0.6 | N=8: +1.7405330072685146e-03 | N=10: -2.8676631985877221e-04 | N=12: +2.4579990019292508e-05 | N=14: +1.6991177801718715e-06 | N=16: -1.1136027754793387e-06
+mu_ch=1.50 m=0.0 T=0.3 | N=8: -8.5741143059570243e-03 | N=10: +2.8769012208510886e-03 | N=12: +5.1903399409026704e-04 | N=14: -3.4305382487090363e-04 | N=16: -1.1719448764543200e-05
+mu_ch=1.50 m=0.0 T=0.6 | N=8: +5.5976765980314536e-04 | N=10: +1.0545616154618298e-04 | N=12: -2.8229863975669928e-05 | N=14: +1.7502782095613068e-06 | N=16: +3.8540629241495816e-07
+mu_ch=1.50 m=0.4 T=0.3 | N=8: -6.7459858915566301e-03 | N=10: +3.1660852639120510e-03 | N=12: +2.1821504612858089e-04 | N=14: -3.3876723847546877e-04 | N=16: +2.6767839366947932e-05
+mu_ch=1.50 m=0.4 T=0.6 | N=8: +6.2121440296451780e-04 | N=10: +8.3830557289540919e-05 | N=12: -2.6448195080335662e-05 | N=14: +2.1223828342541162e-06 | N=16: +2.6863492278914047e-07
+
+X2c ALTERNATION FATE: full tested grid
+m=0.0 T=0.3 mu_ch=0.25 signs=-+--+ classification=mixed-nonalternating values=[-1.864882e-02, +5.392318e-03, -1.001821e-03, -2.056726e-05, +1.881318e-04]
+m=0.0 T=0.3 mu_ch=0.50 signs=+-+-+ classification=sign-alternating values=[+8.102854e-03, -7.231674e-03, +4.040642e-03, -1.752117e-03, +6.061229e-04]
+m=0.0 T=0.3 mu_ch=1.00 signs=+--+- classification=mixed-nonalternating values=[+1.810442e-02, -8.984773e-04, -2.014451e-03, +1.024555e-03, -1.870778e-04]
+m=0.0 T=0.3 mu_ch=1.50 signs=-++-- classification=mixed-nonalternating values=[-8.574114e-03, +2.876901e-03, +5.190340e-04, -3.430538e-04, -1.171945e-05]
+m=0.0 T=0.6 mu_ch=0.25 signs=-+-+- classification=sign-alternating values=[-2.115027e-03, +3.220590e-04, -4.481362e-05, +5.281598e-06, -3.862974e-07]
+m=0.0 T=0.6 mu_ch=0.50 signs=--+-+ classification=mixed-nonalternating values=[-3.086965e-04, -1.160953e-04, +4.998453e-05, -1.316258e-05, +2.824119e-06]
+m=0.0 T=0.6 mu_ch=1.00 signs=+-++- classification=mixed-nonalternating values=[+1.927457e-03, -3.044642e-04, +2.203256e-05, +3.157628e-06, -1.442205e-06]
+m=0.0 T=0.6 mu_ch=1.50 signs=++-++ classification=mixed-nonalternating values=[+5.597677e-04, +1.054562e-04, -2.822986e-05, +1.750278e-06, +3.854063e-07]
+m=0.4 T=0.3 mu_ch=0.25 signs=-+-++ classification=mixed-nonalternating values=[-1.588360e-02, +4.560887e-03, -1.057621e-03, +1.584648e-04, +3.569551e-05]
+m=0.4 T=0.3 mu_ch=0.50 signs=+-+-+ classification=sign-alternating values=[+3.152378e-03, -4.173938e-03, +2.547609e-03, -1.150376e-03, +4.269776e-04]
+m=0.4 T=0.3 mu_ch=1.00 signs=+--+- classification=mixed-nonalternating values=[+1.747348e-02, -2.339348e-03, -1.148404e-03, +8.266883e-04, -2.335505e-04]
+m=0.4 T=0.3 mu_ch=1.50 signs=-++-+ classification=mixed-nonalternating values=[-6.745986e-03, +3.166085e-03, +2.182150e-04, -3.387672e-04, +2.676784e-05]
+m=0.4 T=0.6 mu_ch=0.25 signs=-+-+- classification=sign-alternating values=[-1.916946e-03, +2.878330e-04, -3.997636e-05, +4.849545e-06, -4.240946e-07]
+m=0.4 T=0.6 mu_ch=0.50 signs=--+-+ classification=mixed-nonalternating values=[-3.796687e-04, -7.892868e-05, +3.833492e-05, -1.026886e-05, +2.212418e-06]
+m=0.4 T=0.6 mu_ch=1.00 signs=+-++- classification=mixed-nonalternating values=[+1.740533e-03, -2.867663e-04, +2.457999e-05, +1.699118e-06, -1.113603e-06]
+m=0.4 T=0.6 mu_ch=1.50 signs=++-++ classification=mixed-nonalternating values=[+6.212144e-04, +8.383056e-05, -2.644820e-05, +2.122383e-06, +2.686349e-07]
+
+X2d MAGNITUDE TREND: mu_ch=0.25: mean_abs=4.339253e-03, max_abs=1.588360e-02; mu_ch=0.50: mean_abs=2.290256e-03, max_abs=4.173938e-03; mu_ch=1.00: mean_abs=4.404293e-03, max_abs=1.747348e-02; mu_ch=1.50: mean_abs=2.099164e-03, max_abs=6.745986e-03
+[PASS] X2a analytic-vs-FD N=8 m=0.4 T=0.3 mu_ch=0.5: analytic=+3.1523778619759746e-03, fd=+3.1523761379048665e-03, rel=5.469e-07, gate rel<1e-4
+[PASS] X2a analytic-vs-FD N=10 m=0.4 T=0.3 mu_ch=1.0: analytic=-2.3393479463506145e-03, fd=-2.3393411652250506e-03, rel=2.899e-06, gate rel<1e-4
+[PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=0.25: observed signs=-+--+, classification=mixed-nonalternating; expected signs=-+--+, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=0.50: observed signs=+-+-+, classification=sign-alternating; expected signs=+-+-+, classification=sign-alternating
+[PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=1.00: observed signs=+--+-, classification=mixed-nonalternating; expected signs=+--+-, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.0 T=0.3 mu_ch=1.50: observed signs=-++--, classification=mixed-nonalternating; expected signs=-++--, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.0 T=0.6 mu_ch=0.25: observed signs=-+-+-, classification=sign-alternating; expected signs=-+-+-, classification=sign-alternating
+[PASS] X2c alternation fate m=0.0 T=0.6 mu_ch=0.50: observed signs=--+-+, classification=mixed-nonalternating; expected signs=--+-+, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.0 T=0.6 mu_ch=1.00: observed signs=+-++-, classification=mixed-nonalternating; expected signs=+-++-, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.0 T=0.6 mu_ch=1.50: observed signs=++-++, classification=mixed-nonalternating; expected signs=++-++, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.3 mu_ch=0.25: observed signs=-+-++, classification=mixed-nonalternating; expected signs=-+-++, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.3 mu_ch=0.50: observed signs=+-+-+, classification=sign-alternating; expected signs=+-+-+, classification=sign-alternating
+[PASS] X2c alternation fate m=0.4 T=0.3 mu_ch=1.00: observed signs=+--+-, classification=mixed-nonalternating; expected signs=+--+-, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.3 mu_ch=1.50: observed signs=-++-+, classification=mixed-nonalternating; expected signs=-++-+, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=0.25: observed signs=-+-+-, classification=sign-alternating; expected signs=-+-+-, classification=sign-alternating
+[PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=0.50: observed signs=--+-+, classification=mixed-nonalternating; expected signs=--+-+, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=1.00: observed signs=+-++-, classification=mixed-nonalternating; expected signs=+-++-, classification=mixed-nonalternating
+[PASS] X2c alternation fate m=0.4 T=0.6 mu_ch=1.50: observed signs=++-++, classification=mixed-nonalternating; expected signs=++-++, classification=mixed-nonalternating
+[PASS] X2d no uniform-sign N-sequence on full tested grid: no (m,T,mu_ch) in the tested grid has a uniform N-sequence; mu_ch=0.25: mean_abs=4.339253e-03, max_abs=1.588360e-02; mu_ch=0.50: mean_abs=2.290256e-03, max_abs=4.173938e-03; mu_ch=1.00: mean_abs=4.404293e-03, max_abs=1.747348e-02; mu_ch=1.50: mean_abs=2.099164e-03, max_abs=6.745986e-03
+[PASS] X2e particle-hole relation Omega_second(mu_ch)=Omega_second(-mu_ch): max_abs_diff over table grid=1.527e-16, gate <1e-10
+[PASS] X2f gauge invariance at mu_ch=0.5: max_abs_diff uniform-vs-boundary gauge=2.776e-17, gate <1e-10
+[PASS] X2f T=50 kills the response: max_abs Omega_second over N,m,mu_ch grid at T=50 is 5.358e-16, gate <1e-12
+[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=8 m=0.4 T=0.3 mu_ch=0: observed=-2.4525291422948139e-02, reference=-2.4525291422948042e-02, abs_diff=9.714e-17, gate <1e-10
+[PASS] X2f mu_ch=0 cross-reference zero-doping predecessor value, N=10 m=0.4 T=0.3 mu_ch=0: observed=+8.6569530669921915e-03, reference=+8.6569530669922956e-03, abs_diff=1.041e-16, gate <1e-10
+
+X2g N5 EXECUTION CERTIFICATE: what this runner resolves
+per_element: checked — the exact second derivative is assembled from individual matrix elements in the energy eigenbasis, never from a closed-form aggregate: the Hellmann-Feynman piece sums the diagonal entries Re(w_e)_{aa} against their own occupations, the sum-over-states piece runs over every entry |v_e,ab|^2, and the divided-difference matrix is filled entry by entry with a degenerate branch whenever |E_a - E_b| <= 1e-12.
+per_site: checked — the ring is built site by site. Each site carries its own staggered on-site term m*(-1)^site and each of the N bonds is written individually, and the two site-resolved gauge constructions are compared directly: the uniform gauge spreads phi/N over every bond while the boundary gauge loads the entire phase onto the single bond (N-1, 0), agreeing to 1e-10.
+per_mode: checked — eigh resolves all N single-particle levels individually, each level gets its own Fermi occupation at the given (T, mu_ch), and the response is then a double sum over ordered level pairs. That per-mode resolution is what makes the result analytic rather than differenced, and it is validated against finite differencing at two instances to relative tolerance 1e-4.
+per_block: checked — the staggered mass partitions the ring into two interleaved sublattice blocks on even and odd sites, and the entire grid is run at both m=0.0, where those blocks are degenerate, and m=0.4, where they are split. The alternation-fate table is classified separately for each, and the two disagree at tested points: at T=0.3, mu_ch=0.25 the m=0.0 pattern is -+--+ while the m=0.4 pattern is -+-++.
+lattice_wide: checked and executed only as a finite-N statement — the ring size is swept over N in (8, 10, 12, 14, 16) at every one of the 16 (m, T, mu_ch) combinations, and the absence of any uniform-sign N-sequence is asserted across that whole tested grid. No thermodynamic or continuum limit is taken anywhere; the note names that extrapolation as an explicit follow-on, so no asymptotic claim is certified here.
+TOTAL: PASS=24 FAIL=0

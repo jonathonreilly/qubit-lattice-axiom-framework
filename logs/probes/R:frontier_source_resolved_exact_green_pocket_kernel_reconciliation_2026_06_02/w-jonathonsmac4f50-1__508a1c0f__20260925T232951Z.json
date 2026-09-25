@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02.py",
+ "seed": 78991,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232951Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "96f0266939d8afba0e933efc495cb21a14cc8b2ef23a4ef7f7b2ec9aa46c6382",
+ "stdout_tail": "\n  PASS: gain_doc/gain_impl == exp(-mu eps) (diff 2.220e-16 < 1e-12)\n  PASS: gain_impl matches parent frozen gain (diff 3.900e-07 < 5e-07)\n\nPART C. Bit-for-bit reproduction of frozen observables\n  zero-source delta (doc convention): +0.000000e+00\n  PASS: zero-source reduction (doc) |delta|=0.000e+00 <= 1e-12\n         s           inst      green_doc     green_impl       diff\n  ----------------------------------------------------------------\n    0.0010  +1.713544e-03  +2.139974e-03  +2.139974e-03   3.35e-16\n    0.0020  +3.440703e-03  +4.279368e-03  +4.279368e-03   3.03e-16\n    0.0040  +6.936763e-03  +8.557987e-03  +8.557987e-03   3.23e-16\n    0.0080  +1.410179e-02  +1.712572e-02  +1.712572e-02   1.49e-16\n  PASS: doc vs impl deflection agreement max diff 3.352e-16 <= 1e-12\n  PASS: doc green deflections match parent cache to printed precision (max diff 1.014e-09)\n  PASS: instantaneous comparator unchanged to printed precision (max diff 4.902e-09)\n\nPART D. Parent hard-bar set under as-documented kernel\n  TOWARD rows: 4/4\n  instantaneous F~M exponent: 1.013\n  green-kernel  F~M exponent: 1.000\n  mean |green/inst| ratio: 1.235\n  PASS: TOWARD sign 4/4\n  PASS: green F~M exponent 1.000 in [0.95, 1.05]\n  PASS: mean |green/inst| ratio 1.235 in [1.10, 1.40]\n  PASS: gain_doc 2.048186e+00 in (0, 100)\n\n====================================================================================\nTOTAL: PASS=11, FAIL=0\n====================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232953Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_source_resolved_exact_green_pocket_kernel_reconciliation_2026_06_02.txt against the .txt beside this log"
+  ]
+ }
+}

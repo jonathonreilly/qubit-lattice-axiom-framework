@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_dynamics_nontriviality_selection_firewall_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dynamics_nontriviality_selection_firewall_2026_06_06.py",
+ "seed": 79021,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233021Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=48 FAIL=0",
+   "PASS=48, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "11c3ad2d843f76dfd4bf0b448b4af1d1d37d851c259d49f8d9cd51899cea8fe5",
+ "stdout_tail": "y class membership\nPASS bare open hop is excluded by class membership\nPASS minimality/truncation principle supplied flag is false\n\n------------------------------------------------------------------------------\nFirewall flags\n------------------------------------------------------------------------------\nPASS nonzero dynamics selected flag is false\nPASS coupling values selected flag is false\nPASS action shape selected flag is false\nPASS lowest-order truncation selected flag is false\nPASS clock/rate selected flag is false\nPASS Born/probability selected flag is false\nPASS generation/Koide dial selected flag is false\n\nSUMMARY: PASS=48 FAIL=0\nFORM_CLASS_SELECTS_NONZERO_DYNAMICS=FALSE\nFORM_CLASS_SELECTS_COUPLINGS_ACTION_OR_TRUNCATION=FALSE\nALLOWED_CLASS_MEMBERSHIP_INTERFACE=TRUE\nGENERATION_OR_KOIDE_DIAL_SELECTED=FALSE\nper_element: checked \u2014 Hermiticity and charge-commutator entries were computed for mass, electric, exchange, and gauge-variant control terms; FAIL=0.\nper_site: checked \u2014 one-site mass and bare-flip supports were tested against the same local charge-class predicate; FAIL=0.\nper_mode: checked \u2014 trivial and nontrivial Heisenberg derivatives were evaluated for zero and exchange generators; FAIL=0.\nper_block: checked \u2014 five distinct coefficient tuples remain in the allowed two-qubit Hamiltonian block; FAIL=0.\nlattice_wide: checked \u2014 supports through plaquette, rectangle, and longer paths were classified, but no truncation or dynamics selector was supplied; PASS=48, FAIL=0.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233021Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

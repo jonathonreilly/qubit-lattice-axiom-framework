@@ -1,0 +1,35 @@
+{
+ "task": "R:declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "declared",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py",
+ "seed": 79533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233853Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=46 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b22e6ceb296a314b72a169cf1308c660c9bd6b15525cd3b40166c89f51d25955",
+ "stdout_tail": "c-rational-beta\nPASS: n16-displayed-partial-sums\nPASS: n16-displayed-upper-envelope\nPASS: n16-displayed-positive-gap\nPASS: n16-certified-half-ceiling  (interval=(0.413686349469,0.485214633536))\nPASS: n20-certified-interval-contained-in-n16  (interval=(0.422457924839,0.423155539914))\nPASS: n20-independent-half-ceiling\nPASS: declared-comparator-exact-rational\nPASS: strict-object-value-separation-n16\nPASS: strict-object-value-separation-n20\nPASS: mutation-comparator-as-haar-mean-rejected\nPASS: comparator-not-used-by-haar-enclosure\nPASS: june10-recurrence-source-present\nPASS: june10-withholds-comparator-derivation\nPASS: alpha-source-declares-comparison-input\nPASS: finite-diagnostic-withholds-value-derivation\nPASS: note-machine-status-complete\nPASS: note-dependency-links-complete\nPASS: note-primary-name-is-explicit\nPASS: note-correct-tail-formula\nPASS: note-coupling-specific-boundary\nPASS: note-object-separation-boundary\nPASS: no-go-n1-through-n8-present\nPASS: no-go-n1-route-count-and-markers\nPASS: no-go-steelman-accepted\nPASS: no-go-live-routes-preserved\nPASS: n5-certificate-five-lines-in-note\nN5_CERTIFICATE:\nper-element: executed \u2014 exact recurrence coefficient arithmetic\nper-site: not applicable \u2014 the proved object has no lattice sites\nper-mode: not applicable \u2014 no mode decomposition is used\nper-block: executed \u2014 the one-plaquette Haar block is fully bounded\nlattice-wide: not executed \u2014 no correlated 4D lattice is evaluated\nPASS: explicit-nonclaims-visible\nTOTAL: PASS=46 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233853Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

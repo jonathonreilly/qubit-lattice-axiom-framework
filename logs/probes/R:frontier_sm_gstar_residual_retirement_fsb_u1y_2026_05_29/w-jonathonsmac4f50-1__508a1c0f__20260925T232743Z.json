@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_sm_gstar_residual_retirement_fsb_u1y_2026_05_29.py",
+ "seed": 78863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232743Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=61 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "710c99f6069baabf768ad30a6ea9683376efe7908d24ca7b0539dde8652a0e56",
+ "stdout_tail": "----------\n6. No-overclaim / forbidden-import / vocabulary scan\n----------------------------------------------------------------------------------------\n  [PASS] no bare '**Status:** retained/promoted' line\n  [PASS] claim type is bounded_theorem\n  [PASS] status authority is independent audit lane only\n  [PASS] note states full fermionic-SB law NOT claimed derived\n  [PASS] note states hypercharge values NOT claimed derived\n  [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'link unitar' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'monte carlo' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'best-fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'chi-squared fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'fitted to data' (0 occurrence(s))\n  [PASS] no new-vocabulary string 'algebraic universality'\n  [PASS] no new-vocabulary string 'two-class framing'\n  [PASS] no new-vocabulary string 'lattice-realization-invariant by definition'\n  [PASS] no new-vocabulary string '(CKN)'\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n  PASS = 61\n  FAIL = 0\n\nRESULT: PASS=61 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232743Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=61 FAIL=0' vs cache 'PASS=66 FAIL=0'"
+  ]
+ }
+}

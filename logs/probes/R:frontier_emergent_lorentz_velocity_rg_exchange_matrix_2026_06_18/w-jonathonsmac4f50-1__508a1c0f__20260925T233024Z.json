@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_emergent_lorentz_velocity_rg_exchange_matrix_2026_06_18.py",
+ "seed": 79024,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233024Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f2980df80dcb16c5bed0077ce42f326245a8406bc7d6eda66930c2cf0ea2e68c",
+ "stdout_tail": "04\n[PASS] S3: ratio eta=7/10 flows toward 1 -- d eta/dl = 4191/13600\n[PASS] S3: ratio eta=3/2 flows toward 1 -- d eta/dl = -361/544\n[PASS] S3: ratio eta=4 flows toward 1 -- d eta/dl = -231/34\n[PASS] S4: characteristic data are exact: trace=-(a+b), determinant=0 -- a=4/9, b=7/6, trace=-29/18\n[PASS] S4: common-speed line is fixed\n[PASS] S4: weighted common speed b*v_F+a*v_b is invariant -- left null vector=(b,a)=(7/6,4/9)\n[PASS] S4: difference mode obeys d(v_F-v_b)/dl=-(a+b)(v_F-v_b)\n[PASS] S4: ratio eta=1/3 flows toward 1 -- d eta/dl = 5/9\n[PASS] S4: ratio eta=7/10 flows toward 1 -- d eta/dl = 227/600\n[PASS] S4: ratio eta=3/2 flows toward 1 -- d eta/dl = -79/72\n[PASS] S4: ratio eta=4 flows toward 1 -- d eta/dl = -46/3\n[PASS] U1: row-sum-zero + mutual-drag signs uniquely identify positive exchange coefficients -- M=[[-2/5,2/5],[3/7,-3/7]] -> a=2/5, b=3/7\n[PASS] U2: row-sum-zero + mutual-drag signs uniquely identify positive exchange coefficients -- M=[[-5/4,5/4],[1/6,-1/6]] -> a=5/4, b=1/6\n========================================================================================\nInterpretation:\n- The exact exchange matrix supplies the algebraic one-loop RG form.\n- The remaining Nature-grade input is physical: derive positive a,b from\n  the framework's actual interacting matter/gauge vertices and compare the\n  resulting coefficient/gamma against Lorentz-violation bounds.\nTOTAL: PASS=37 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

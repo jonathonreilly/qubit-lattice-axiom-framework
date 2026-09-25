@@ -1,0 +1,18 @@
+PASS FINITE_SUPPLIER: reviewed finite helper and current Block105 bytes are bound
+PASS 8x4_FORM: shape=(8, 8), free_symbols=['s_t']
+PASS 8x4_ISOMETRY: X^dagger X=I_2
+PASS 8x4_COMPRESSION: X^dagger F_T X=(171*s_t/250 + 114/125) I_2
+PASS 8x4_RATIONAL_PD: det(s_t)=0:12996/15625,1/8:159201/160000,1/2:393129/250000,1:159201/62500; all PD
+PASS 8x4_TRANSPORT_RESPONSE: slope=(171/250)I_2; gap[1/8->1/2]=(513/2000)I_2
+PASS 12x4_FORM: shape=(8, 8), free_symbols=['s_t']
+PASS 12x4_ISOMETRY: X^dagger X=I_2
+PASS 12x4_COMPRESSION: X^dagger F_T X=(171*s_t/250 + 114/125) I_2
+PASS 12x4_RATIONAL_PD: det(s_t)=0:12996/15625,1/8:159201/160000,1/2:393129/250000,1:159201/62500; all PD
+PASS 12x4_TRANSPORT_RESPONSE: slope=(171/250)I_2; gap[1/8->1/2]=(513/2000)I_2
+PASS CROSS_EXTENT_COMPRESSION: 8x4 and 12x4 give the same exact rank-2 affine compression
+PASS AFFINE_RESPONSE_IDENTITY: Tr[(P+epsilon Q)Delta]=d+epsilon q with Tr[P Delta]=d!=0
+PASS NONZERO_ORTHOGONAL_PSD_SUPPORT: Q is nonzero PSD, has support orthogonal to P, and ambient dimension is two
+PASS AFFINE_ADMIXTURE_EFFECT: epsilon*=d^2/[2(d^2+q^2)] is in (0,1) and gives a rank-2 effect
+PASS AFFINE_SENSITIVITY_PERSISTS: response=d[2(d^2+q^2)+dq]/[2(d^2+q^2)] is nonzero
+PASS SOURCE_INPUT_BINDING: float_literals=0, inputs_bound=True
+TOTAL: PASS=17 FAIL=0

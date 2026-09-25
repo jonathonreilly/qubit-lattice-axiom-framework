@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.py",
+ "seed": 79005,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233005Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "45c2ad7d9f64de509fd85dd447be113a1ef084ce5ec094ea002b6cf321fc37e2",
+ "stdout_tail": "CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK\nR0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=9; sha_pins=True; primary_executed=false\nR1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{\"J\":1,\"class\":\"CNOT\",\"control_arity\":1,\"member_count\":6,\"off_diagonal_control_gram_sum\":0},{\"J\":2,\"class\":\"TOF_PERPENDICULAR_CONTROLS\",\"control_arity\":2,\"member_count\":12,\"off_diagonal_control_gram_sum\":0},{\"J\":0,\"class\":\"TOF_OPPOSITE_CONTROLS\",\"control_arity\":2,\"member_count\":3,\"off_diagonal_control_gram_sum\":-1}]; rotations=24; J_invariant=True\nR2_CANDIDATE_OUTCOMES PASS :: outcomes={\"COINCIDES\":0,\"DISAGREES\":2,\"NOT_COMPARABLE\":9}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN\nR3_RECEIPT_CACHE_NOTE_BINDING PASS :: bound=True\nR4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=13/13\nR5_CONTROLS PASS :: determinism=True; runtime_s=0.013<300; stdout_bytes=928<6000<150000\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233005Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle981_j_landed_invariant_identification_independent_check_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

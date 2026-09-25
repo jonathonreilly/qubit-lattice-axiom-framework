@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_species_bridge_minimum_decomposition_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_species_bridge_minimum_decomposition_2026_06_13.py",
+ "seed": 78993,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232953Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "98fd3287494fe7fbe05fa5ba68e23bf6de8e4d70e17df273a51178c56a75d41c",
+ "stdout_tail": "entification itself is the irreducible residual of AC_phi_lambda(iii): contentless at the tested C_3-structural grade (this note), but still an interpretive bridge of the same C_3-grade class as the universal abstract->physical identification -- NOT derived away, only shown to carry no tested number/selector/structural choice.\nRESIDUAL (declared-open): the carrier-triplet vacuity consumes the staggered surface at the gate-note grade (the hw structure and U_R/eps operators); across-fermion-type alignment (CKM/PMNS) is a SEPARATE residual, not addressed here.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention).\n\nTOTAL: PASS=10 FAIL=0\nVERDICT: the species bridge AC_phi_lambda(iii) decomposes into derived support (the hw=1 carrier is M_3(C), irreducible, no proper quotient) + two vacuities (within-triplet naming: single C_3 orbit, equipartition; carrier-triplet choice: hw=1 and hw=2 unitarily equivalent via the chirality eps, a C_3-intertwiner) + one irreducible residual that is contentless at the tested C_3-structural grade (under the C_3 relabeling and eps carrier-swap symmetries tested here; supplies no tested number/selector/ordering/weight) -- the same C_3-grade class as the universal abstract->physical identification. The minimum form of AC_phi_lambda(iii) is a single C_3-grade contentless interpretive identification. Nothing retired; no audit status set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232954Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle60_cycle67_mixed_composition_audit_cycle70_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cycle60",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle60_cycle67_mixed_composition_audit_cycle70_2026_07_14.py",
+ "seed": 79493,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233813Z",
+ "elapsed_s": 13.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "46d770981cd8bf4b757d4bf74420f98a438d723493170e73ff77c6aa94729f8c",
+ "stdout_tail": "PASS A01 note exists\nPASS A02 proper cubic group has 24 rotations\nPASS A03 count predicate exactly matches Cycle 67 :: 1332 local subsets\nPASS A04 every Cycle-67 role has an explicit parent predicate\nPASS A05 all dynamic parents are strictly lower rank\nPASS B01 completed-comb certificate independently finds 47 apparent bad rows\nPASS B02 all 47 rows have must-ancestor witnesses\nPASS B03 no must-ancestor witness is the same site twice\nPASS B04 fixed point and correct-condition counts are exact :: 17/308\nPASS B05 all within-rank prefixes retain progress :: (30240, 0)\nPASS C01 exact F6-to-DONE Steiner minimum is 15 edges :: 15\nPASS C02 completion barrier meets the ten-new-record lower bound :: 10\nPASS C03 Cycle-67 FP is exactly the Cycle-68 J3 interface\nPASS D01 all 242,033 Cycle-60 states are retained :: 242,033\nPASS D02 reachable comb states collapse to 67 phase-availability masks :: 67\nPASS D03 the full 91-record phase is available at the comb terminal\nPASS E01 full local interface has 387 candidates :: 387\nPASS E02 exact prefilter retains 171 candidates :: 171\nPASS E03 mixed union scan exhausts 8,373 contexts :: 8373\nPASS E04 only the same 47 certified apparent wrong rows remain :: (47, 34)\nPASS E05 partial Cycle 60 creates no new wrong/off-footprint write\nPASS E06 Cycle-60/Cycle-67 union has no output conflict\nPASS E07 no feasible Cycle-67 record can block an open comb target\n\nSUMMARY: 23 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233827Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

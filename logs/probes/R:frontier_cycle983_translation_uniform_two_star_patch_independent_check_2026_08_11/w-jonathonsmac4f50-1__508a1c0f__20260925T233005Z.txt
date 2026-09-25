@@ -1,0 +1,7 @@
+CYCLE983_TRANSLATION_UNIFORM_TWO_STAR_PATCH_INDEPENDENT_CHECK
+A_INDEPENDENT_RECONSTRUCTION PASS :: targets=2; support=12; witnesses=[21, 21]; agreement=True
+B_REFUTATION_POWER PASS :: rejected=15/15; outcome_neutral=[true,true]
+C_ARTIFACT_BINDING PASS :: pins=True; clean_bookkeeping=True
+D_PROVENANCE PASS :: primary_imported=False; cycle719_imported=False; prior_cycles_executed=False
+E_CONTROLS PASS :: source_reads=4<=6; determinism=True; runtime_lt_300=True
+TOTAL: PASS=5 FAIL=0

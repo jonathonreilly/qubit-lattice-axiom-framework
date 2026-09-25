@@ -1,0 +1,35 @@
+{
+ "task": "R:d3_pinch_native_upper_leg_composition_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "d3",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/d3_pinch_native_upper_leg_composition_2026_06_11.py",
+ "seed": 79533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233853Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "92f206c9e21d8666f3ea89b3af1c216990eef4dd22ae3342285b7e1b8c849382",
+ "stdout_tail": "OTH LOWER SOURCES PINCH WITH THE NATIVE UPPER LEG TO {3}\n==============================================================================\n  [PASS] cited lane: {3,4,5} \\cap {d <= 3} = {3} exactly  --  lower set is a CITED retained_bounded input; the intersection is computed\n  [PASS] native surrogate: {3,4,5} \\cap {d <= 3} = {3} exactly\n  [PASS] coherence: the cited pass-set and the native surrogate set AGREE on the tested range\n\nHOSTILE/CONTRAST: EACH LEG ALONE FAILS TO PIN\n==============================================================================\n  [PASS] lower leg alone does not pin: d = 4 and d = 5 pass both lower sources  --  without the qubit bound, the pinch is {3,4,5}\n  [PASS] upper leg alone does not pin: the d = 1 Dirac-square carrier exists exactly (D^2 = I (x) Lap)  --  without the lower leg, d = 1, 2 remain; both legs are load-bearing\n\nSCOPE HONESTY: what is NOT claimed\n==============================================================================\n  [PASS] the 1/(4 pi r) reference is derived in-runner from the continuum heat-kernel identity (no imported constant)  --  the orbit/atomic textbook routes contribute no quantity anywhere in this composition\n  [PASS] the lower-leg criteria are NAMED selection requirements: d=4,5 are excluded only by the upper leg, d=1,2 only by the lower\n\n==============================================================================\nSCORECARD: PASS=19 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233853Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

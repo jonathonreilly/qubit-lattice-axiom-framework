@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_single_clock_uniqueness_scope_boundary_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_single_clock_uniqueness_scope_boundary_2026_06_06.py",
+ "seed": 78858,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232738Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ad2df3698908e0df472bfa1a5bf0f8673284f75f4c4dbcb66d2c737378b9ff12",
+ "stdout_tail": "in this runner carries an extent, a volume, or a size that could be varied, the largest object being a 4x4 diagonal matrix. The blocking reason is the scope boundary this note exists to record: excluding a second clock requires a separate axis or transfer uniqueness premise, and no such premise is supplied or derived here, so there is no framework-wide one-clock result for any lattice-scale statement to rest on.\nScope: seventeen of the nineteen checks evaluate a symbolic condition. Two of them, N4 and B4, are invoked with a hardcoded True and state a scope conclusion in prose without computing anything; resolution is claimed above only for the seventeen.\nDeterminism: this runner uses sympy exact rational and symbolic arithmetic end to end. There is no RNG, optimizer, root-finding, grid scan, Monte Carlo, or flow integration, and there is no floating-point tolerance anywhere in the file -- every comparison is exact symbolic equality, so no quantity in this certificate is interpolated from a sampled or converged value and none could differ between environments.\n\n========================================================================\nScorecard\n========================================================================\nPASS=19 FAIL=0\nFINDING: finite-dimensional Stone uniqueness is relative to a supplied positive transfer T and fixed time scale tau. It does not by itself fix tau, exclude other supplied positive transfers, or prove a broad framework-wide one-clock exclusion theorem.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

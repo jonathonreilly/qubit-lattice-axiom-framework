@@ -1,0 +1,25 @@
+PASS A01 note exists
+PASS A02 proper cubic group has 24 rotations
+PASS A03 count predicate exactly matches Cycle 67 :: 1332 local subsets
+PASS A04 every Cycle-67 role has an explicit parent predicate
+PASS A05 all dynamic parents are strictly lower rank
+PASS B01 completed-comb certificate independently finds 47 apparent bad rows
+PASS B02 all 47 rows have must-ancestor witnesses
+PASS B03 no must-ancestor witness is the same site twice
+PASS B04 fixed point and correct-condition counts are exact :: 17/308
+PASS B05 all within-rank prefixes retain progress :: (30240, 0)
+PASS C01 exact F6-to-DONE Steiner minimum is 15 edges :: 15
+PASS C02 completion barrier meets the ten-new-record lower bound :: 10
+PASS C03 Cycle-67 FP is exactly the Cycle-68 J3 interface
+PASS D01 all 242,033 Cycle-60 states are retained :: 242,033
+PASS D02 reachable comb states collapse to 67 phase-availability masks :: 67
+PASS D03 the full 91-record phase is available at the comb terminal
+PASS E01 full local interface has 387 candidates :: 387
+PASS E02 exact prefilter retains 171 candidates :: 171
+PASS E03 mixed union scan exhausts 8,373 contexts :: 8373
+PASS E04 only the same 47 certified apparent wrong rows remain :: (47, 34)
+PASS E05 partial Cycle 60 creates no new wrong/off-footprint write
+PASS E06 Cycle-60/Cycle-67 union has no output conflict
+PASS E07 no feasible Cycle-67 record can block an open comb target
+
+SUMMARY: 23 PASS / 0 FAIL

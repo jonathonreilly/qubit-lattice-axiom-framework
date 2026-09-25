@@ -1,0 +1,38 @@
+{
+ "task": "R:d3_native_stable_orbit_upper_bound_composition_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "d3",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/d3_native_stable_orbit_upper_bound_composition_2026_06_09.py",
+ "seed": 79533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233853Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=53 FAIL=0",
+   "PASS=50 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dfcc7ea10648cafb707cad5bf391ed6d7b1c5f435e4b82a4512a266837f2c103",
+ "stdout_tail": "d finite packet\nPASS stable support note derives Green-kernel potential shape\nPASS stable support note gives d=3 stable and d>=5 unstable classification\nPASS stable support note does not consume full Bertrand closure theorem\nPASS Coulomb support note remains bounded companion support\nPASS legacy-named wrapper consumes native stable-orbit edge\nPASS legacy-named gate consumes native stable-orbit edge\nPASS note non-claims block overread\nPASS note declares source-only audit boundary without retained-grade promotion\nPASS note records current lower and upper composition text\nPASS note permits wrapper/gate wiring without changing support-note claim\nPASS lower support set is exactly {3,4,5}\nPASS native stable upper set over checked dims is d<=3\nPASS Coulomb weak upper set over checked dims is d<=4\nPASS strict d=3 spectrum set is singleton {3}\nPASS lower intersect native stable upper is {3} :: [3]\nPASS lower intersect Coulomb weak upper is {3,4} :: [3, 4]\nPASS lower intersect strict spectrum is {3} :: [3]\nPASS native stable edge is decisive while weak Coulomb is not\nPASS Coulomb companion remains compatible with selected d=3\nPASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists\nPASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists\nPASS stable-orbit cache certifies PASS=8\nPASS Coulomb cache certifies PASS=53 FAIL=0\n============================================================================\nAUDIT_VERDICT_APPLIED=FALSE\nSUMMARY: PASS=50 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233853Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

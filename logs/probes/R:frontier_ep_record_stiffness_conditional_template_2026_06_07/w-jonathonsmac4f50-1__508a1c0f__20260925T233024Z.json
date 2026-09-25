@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_ep_record_stiffness_conditional_template_2026_06_07",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_ep_record_stiffness_conditional_template_2026_06_07.py",
+ "seed": 79024,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233024Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "52b452cefcd588fa81842c6e2cc569c9b8fd2903dc3e788b22c3447110f6aaa9",
+ "stdout_tail": "EP record-stiffness conditional shared-coupling template\n========================================================================\n[PASS] supplied local energy curvature gives stiffness V''(phi0)=m^2\n       displacement cost=epsilon**2*m**2/2\n[PASS] failed packet-dispersion route is width-dependent\n       response=1/(m*sigma)\n[PASS] lattice rest gap is the supplied stiffness exactly\n       E2(p=0)=m**2; small-p=m**2 + p1**2\n[PASS] recorded-energy source integral gives the same m and no packet-width dependence\n       integral |psi|^2=1; integral m|psi|^2=m\n[PASS] conditional shared-coupling template gives ratio one\n       m_grav/m_inert=1\n[PASS] source note keeps the open-gate conditional boundary\n       no Record-alone mass derivation is asserted\n========================================================================\nTOTAL: 6 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

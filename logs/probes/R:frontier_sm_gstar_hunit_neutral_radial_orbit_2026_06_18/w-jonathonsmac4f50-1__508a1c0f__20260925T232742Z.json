@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_sm_gstar_hunit_neutral_radial_orbit_2026_06_18.py",
+ "seed": 78862,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232742Z",
+ "elapsed_s": 0.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=66 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9c2940504fa3ed4fc498b2bbbe1a24f2498ee37c8b6fcddc659a46a6eaedbdf7",
+ "stdout_tail": "es with SU(2)_L generator 3\n[PASS] fundamental generator stack has no invariant vector\n[PASS] Hom_SU(2)(trivial,fundamental) dimension is zero\n\nPart 5: gstar census boundary\n[PASS] single supplied doublet gives g_* = 427/4: 427/4\n[PASS] second independent doublet gives g_* = 443/4: 443/4\n[PASS] second independent doublet shift is +4: 4\n[PASS] radial support does not add a second doublet\n\nPart 6: note and downstream firewall checks\n[PASS] support note firewall phrase present: does not derive the one-complex `SU(2)_L` EWSB thermal doublet from\n[PASS] support note firewall phrase present: does not promote the `g_*` Higgs-sector row\n[PASS] support note firewall phrase present: does not introduce a new axiom\n[PASS] support note firewall phrase present: retained-bounded declared-inventory premise\n[PASS] support note firewall phrase present: neutral/radial carrier\n[PASS] support note firewall phrase present: not field-content authority\n[PASS] downstream gstar note cites this support note\n[PASS] downstream citation keeps support-only scope\n[PASS] no-go note remains compatible with support route\n[PASS] forbidden overclaim absent: **Status:** retained\n[PASS] forbidden overclaim absent: proposed_retained\n[PASS] forbidden overclaim absent: promoted to retained\n[PASS] forbidden overclaim absent: fully derives the doublet\n[PASS] forbidden overclaim absent: field-content authority from H_unit\n\nwrote outputs/sm_gstar_hunit_neutral_radial_orbit_support_2026-06-18.json\nSUMMARY: PASS=66 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232743Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=66 FAIL=1' vs cache 'SUMMARY: PASS=67 FAIL=0'"
+  ]
+ }
+}

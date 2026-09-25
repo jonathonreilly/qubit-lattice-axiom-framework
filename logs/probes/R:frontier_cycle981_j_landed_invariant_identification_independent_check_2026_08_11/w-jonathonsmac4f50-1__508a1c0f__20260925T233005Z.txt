@@ -1,0 +1,8 @@
+CYCLE981_J_LANDED_INVARIANT_IDENTIFICATION_INDEPENDENT_CHECK
+R0_PRIMARY_AST_TEXT_AND_PINS PASS :: reads=4<=9; sha_pins=True; primary_executed=false
+R1_INDEPENDENT_SHARED_INPUTS PASS :: witnesses=21; orbit_table=[{"J":1,"class":"CNOT","control_arity":1,"member_count":6,"off_diagonal_control_gram_sum":0},{"J":2,"class":"TOF_PERPENDICULAR_CONTROLS","control_arity":2,"member_count":12,"off_diagonal_control_gram_sum":0},{"J":0,"class":"TOF_OPPOSITE_CONTROLS","control_arity":2,"member_count":3,"off_diagonal_control_gram_sum":-1}]; rotations=24; J_invariant=True
+R2_CANDIDATE_OUTCOMES PASS :: outcomes={"COINCIDES":0,"DISAGREES":2,"NOT_COMPARABLE":9}; verdict=NO_COINCIDENCE_IN_ENUMERATED_INVENTORY__LANDED_NEWNESS_OPEN
+R3_RECEIPT_CACHE_NOTE_BINDING PASS :: bound=True
+R4_ACTIVE_CORRUPTION_PROBES PASS :: rejected=13/13
+R5_CONTROLS PASS :: determinism=True; runtime_s=0.013<300; stdout_bytes=928<6000<150000
+TOTAL: PASS=6 FAIL=0

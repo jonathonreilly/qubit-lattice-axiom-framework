@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_dynamics_form_from_record_preservation_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_dynamics_form_from_record_preservation_2026_06_05.py",
+ "seed": 79014,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233014Z",
+ "elapsed_s": 6.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=62 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c60b6a44ca35ed2bd0993d75dc68f08724e54db67e6fd957aac702f9a463fbd7",
+ "stdout_tail": " NOT forced (the residual / admissions):\n    * the COUPLINGS (beta / g_bare, kappa, m, relative weights) -- any values.\n    * MINIMALITY / lowest-order TRUNCATION (why ONLY plaquette+nn, not + larger\n      loops / longer paths) -- larger invariants are equally admissible.\n    * NONtriviality: H=0 is in the class; dynamics need not be nonzero.\n  RECONCILES WITH 'action hand-added': the FORM-CLASS is forced; the specific\n    action (Wilson vs heat-kernel vs Manton; the coupling; the truncation) is\n    NOT -- exactly the BRIDGE_GAP_ACTION_FORM_UNIQUENESS no-go, which lives\n    ENTIRELY INSIDE this forced class (all 3 candidates are gauge-invariant-local).\n\n==========================================================================\nS6  Companion-note firewall: the honest non-claims are present\n==========================================================================\nPASS S6.0 companion note exists\nPASS S6 firewall present: does **not** derive the action...\nPASS S6 firewall present: says **nothing** about\n  `beta = 6`...\nPASS S6 firewall present: does **not** force minimality...\nPASS S6 firewall present: does **not** force non-trivial dynamics...\nPASS S6 firewall present: the dynamics **form-class**...\nPASS S6 firewall present: inside** the gauge-invariant-local class...\n\n==========================================================================\nSELF-CHECK SUMMARY\n==========================================================================\nSUMMARY: PASS=62 FAIL=0\nPEAK_RSS_MB: 130.8\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233021Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_dynamics_form_from_record_preservation_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_physical_tableau_row_gate_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_physical_tableau_row_gate_probe_2026_07_15.py",
+ "seed": 79181,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233301Z",
+ "elapsed_s": 50.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ae0decb42b51a16f706fd695aafea3519b96f2e9ae4854795fec53f7ca336075",
+ "stdout_tail": "ROLES 32 {0: 'R_A22', 1: 'R_B01', 2: 'R_B21', 3: 'R_C22', 4: 'R_C23'}\nTABLE 160 3840 71420 0\nTAPES 800 2400 1600 [45] 0\nSTATE_BASES 1800 0\nRESULT PHYSICAL_TABLEAU_ROW_GATE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233351Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

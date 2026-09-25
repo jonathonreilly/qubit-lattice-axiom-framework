@@ -1,0 +1,62 @@
+Declared plaquette comparator versus bare one-plaquette Haar mean
+AUDIT_INPUT_PATHS:
+  docs/DECLARED_PLAQUETTE_COMPARISON_VALUE_DISTINCT_FROM_ONE_PLAQUETTE_HAAR_MEAN_BOUNDED_THEOREM_NOTE_2026-08-13.md
+  docs/PLAQUETTE_VALUE_DERIVATION_PROGRAM_SPECIFICATION_AND_BRACKET_REDUCTION_NARROW_THEOREM_NOTE_2026-06-10.md
+  docs/ALPHA_S_DERIVED_NOTE.md
+  docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md
+AUDIT_TIMEOUT_SEC: 180
+cache_write: false
+external_scientific_inputs: June 10 exact recurrence; alpha_s declared comparator; finite-diagnostic non-derivation boundary
+PASS: audit-input-paths-exist  (4 paths)
+PASS: audit-input-paths-unique-and-normalized
+PASS: audit-timeout-declared
+PASS: declared-matching-three-point-gate  ((N_c,g)=(3,1),(3,2),(2,1))
+PASS: declared-point-is-beta-six
+PASS: mutation-product-matching-rejected
+PASS: mutation-missing-factor-two-rejected
+PASS: recurrence-seed-a0
+PASS: recurrence-seed-a1
+PASS: recurrence-seed-a2
+PASS: recurrence-a3
+PASS: recurrence-a4
+PASS: recurrence-nonnegative-through-proof-truncation
+PASS: haar-moment-majorant-through-proof-truncation
+PASS: mutation-recurrence-lag2-sign-rejected
+PASS: tail-j16-correct-first-omitted-index
+PASS: tail-jprime16-exact
+PASS: mutation-submitted-off-by-one-tail-rejected  (draft factor (N+2)/(N-4) is too small at N=16)
+PASS: tail-generic-rational-beta
+PASS: n16-displayed-partial-sums
+PASS: n16-displayed-upper-envelope
+PASS: n16-displayed-positive-gap
+PASS: n16-certified-half-ceiling  (interval=(0.413686349469,0.485214633536))
+PASS: n20-certified-interval-contained-in-n16  (interval=(0.422457924839,0.423155539914))
+PASS: n20-independent-half-ceiling
+PASS: declared-comparator-exact-rational
+PASS: strict-object-value-separation-n16
+PASS: strict-object-value-separation-n20
+PASS: mutation-comparator-as-haar-mean-rejected
+PASS: comparator-not-used-by-haar-enclosure
+PASS: june10-recurrence-source-present
+PASS: june10-withholds-comparator-derivation
+PASS: alpha-source-declares-comparison-input
+PASS: finite-diagnostic-withholds-value-derivation
+PASS: note-machine-status-complete
+PASS: note-dependency-links-complete
+PASS: note-primary-name-is-explicit
+PASS: note-correct-tail-formula
+PASS: note-coupling-specific-boundary
+PASS: note-object-separation-boundary
+PASS: no-go-n1-through-n8-present
+PASS: no-go-n1-route-count-and-markers
+PASS: no-go-steelman-accepted
+PASS: no-go-live-routes-preserved
+PASS: n5-certificate-five-lines-in-note
+N5_CERTIFICATE:
+per-element: executed — exact recurrence coefficient arithmetic
+per-site: not applicable — the proved object has no lattice sites
+per-mode: not applicable — no mode decomposition is used
+per-block: executed — the one-plaquette Haar block is fully bounded
+lattice-wide: not executed — no correlated 4D lattice is evaluated
+PASS: explicit-nonclaims-visible
+TOTAL: PASS=46 FAIL=0

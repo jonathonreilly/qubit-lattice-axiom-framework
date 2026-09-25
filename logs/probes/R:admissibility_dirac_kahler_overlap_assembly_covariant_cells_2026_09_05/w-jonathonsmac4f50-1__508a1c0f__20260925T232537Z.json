@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.py",
+ "seed": 78737,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T232537Z",
+ "elapsed_s": 83.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2d614389385eceda9bea70fed6b5d17e3cb6b3b0d5912aedbcb55abcec54c146",
+ "stdout_tail": " s = 0 only at those ten witnesses. The joint factorization in (s,kappa) is generic and does not imply irreducibility at every nonzero-s specialization. Primitive bench factor shapes are divided by their stated leading-coefficient squares to obtain monic characteristic polynomials. No assembly selection, premise adoption, physical cone, action, spacetime, continuum, dispersion law, or dynamics is claimed.\nTOTAL: PASS=30 FAIL=0\n\n[stderr]\n[phase] authority: 4 ms\n[phase] group: 11530 ms\n[phase] census: 1305 ms\n[phase] fold: 50 ms\n[loci] witness 2\n[loci] witness 11\n[loci] witness 16\n[loci] witness 25\n[loci] witness 38\n[loci] witness 47\n[loci] witness 52\n[loci] witness 61\n[loci] witness W1\n[loci] witness flat\n[phase] loci: 35956 ms\n[cone] witness 2\n[cone] witness 11\n[cone] witness 16\n[cone] witness 25\n[cone] witness 38\n[cone] witness 47\n[cone] witness 52\n[cone] witness 61\n[cone] witness W1\n[cone] witness flat\n[phase] cone: 29586 ms\n[bench] witness line onsite form\n[bench] witness line onsite pencil\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] W1 line onsite form\n[bench] W1 line onsite pencil\n[bench] W1 line overlap form\n[bench] W1 line overlap pencil\n[bench] flat line onsite form\n[bench] flat line onsite pencil\n[bench] flat line overlap form\n[bench] flat line overlap pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] W1 zero overlap form\n[bench] W1 zero overlap pencil\n[phase] bench: 4008 ms\n[phase] smallk: 1084 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T232701Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/admissibility_dirac_kahler_overlap_assembly_covariant_cells_2026_09_05.txt against the .txt beside this log"
+  ]
+ }
+}

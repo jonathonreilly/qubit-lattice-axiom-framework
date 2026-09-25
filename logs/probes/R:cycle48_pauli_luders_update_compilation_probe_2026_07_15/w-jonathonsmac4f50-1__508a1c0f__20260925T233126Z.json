@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_pauli_luders_update_compilation_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_pauli_luders_update_compilation_probe_2026_07_15.py",
+ "seed": 79086,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "508a1c0f",
+ "started_utc": "20260925T233126Z",
+ "elapsed_s": 94.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "534cd3aa0175c96d611fac77d0a13af50dd6152567f332766aa0153da68a5faa",
+ "stdout_tail": "BRANCH 1800 {Fraction(0, 1): 180, Fraction(1, 1): 180, Fraction(1, 2): 1440}\nROLES {0: 'ALL', 1: 'AUX', 2: 'A_0_0', 3: 'B0', 4: 'B1', 5: 'GU', 6: 'GY', 7: 'J1', 8: 'J2', 9: 'J3', 10: 'J6', 11: 'JOINT', 12: 'OZ', 13: 'R_A13', 14: 'R_A21'}\nTABLE 1800 43200 67580 0\nPAIR 54000 156600 102600 [42] 0\nRESULT CONDITIONAL_PAULI_LUDERS_UPDATE_GRAMMAR\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T233301Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

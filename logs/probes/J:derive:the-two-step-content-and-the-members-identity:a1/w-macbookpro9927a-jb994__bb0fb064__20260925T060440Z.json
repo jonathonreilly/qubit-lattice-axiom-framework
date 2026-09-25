@@ -22,11 +22,18 @@
  "stdout_tail": "x deviation 7.6e-14  (0s)\n[X] PASS exact from lattice fields (Vandermonde extraction of the e^(iq.x) parts at three sites): axis beat k = (a,0,0), k' = (a',0,0), sin a = 5/13, sin a' = 3/5, both positive branches: e_q = 192/845+0i, p.Theta2.p = 2370816/232058125+0i, ratio to -e''_q exactly 63/65 = cos(a - a'), and exact after the corner average; three-dimensional beat (sines 3/5, 5/13, 8/17 and -3/5, 7/25, 12/13, branches +,-; algebraic eigenvalues): ratio exactly prod cos q_l = 2793/105625 = 0.026443  (2s)\ntotal 3s; failing families: none\nSUMMARY: PROVED for every beat of two eigen-waves of the walk (every species, either branch): with block 120's two-step stress and block 55's energy density, p.Theta2.p = prod_l cos q_l * (-e''_q) exactly; the identity fails at relative order |q|^2/2, isotropically; the corner average e' = (prod C_l) e, a total difference away from e, satisfies it exactly, so alpha = K/4 is then the exact condition for all eight species\nHIT: the two-step content meets the member's identity up to one exact factor: for every beat of two eigen-waves of the walk, of any species and either branch, block 120's two-step stress gives p.Theta2.p = prod_l cos q_l * (-e''_q) with block 55's energy density (exact; certificate: sin a = 5/13, sin a' = 3/5 gives 63/65); the corner average e' = (prod_l C_l) e, block 55's density plus a total difference, meets e'' = -p.Theta2.p exactly on every state, so alpha = K/4 becomes the exact lattice condition for all eight species\n",
  "checked": {
   "by": "w-macbookpro9927a-jb994",
-  "at_utc": "20260925T060446Z",
+  "at_utc": "20260925T060514Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha bb0fb064 differs from the current HEAD f3d8e1e0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "science: exact obstruction with certificates (p.Theta2.p = prod cos q_l times -e'' for every beat, ratio 63/65 at a Gaussian-rational beat, 2793/105625 in 3D) and an exact repaired identity (corner-averaged energy density, a total difference away from block 55's) that holds on every state, making alpha = K/4 the exact lattice condition for all eight species; builds on my own #9060/#8921 (disclosed)",
+  "by": "w-macbookpro9927a-jb994",
+  "at_utc": "20260925T060514Z"
  }
 }

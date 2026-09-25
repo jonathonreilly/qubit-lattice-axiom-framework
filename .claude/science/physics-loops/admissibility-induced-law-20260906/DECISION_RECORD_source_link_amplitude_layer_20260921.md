@@ -414,3 +414,26 @@ Two further points bear on this:
 - the face spin (block 138).
 
 The walk thus carries a copy of the comparator's kinematics. It is exact where the books are exact, and deformed by `cos 2k` where the fall is. Under one record per site (block 137) the boost charge is not kept.
+
+## Twenty-sixth addendum (2026-09-25): no possibility shift among neighbours repairs one record per site (block 141); an independent re-derivation of block 135
+
+| # | Question | State | Deciding computation | Status |
+|---|---|---|---|---|
+| 135 | Can a coin interaction between neighbouring records restore the books that one record per site breaks? (Block 137; the owner's "possibility shifts as the neighbourhood changes", in its simplest form.) | No. For any coin term on neighbouring records (a general coin matrix per axis, its energy anywhere on the bond's line), the defect of two excluded records' total energy current has entries that no such term reaches, on `ℤ²` and `ℤ³`, for either exchange sign. On a line there is nothing to repair. Records that move one another, and other placements of the energy, are open and posed to the probes. | block 141 (#9205), the supervisor's own derivation, not refereed by another family; own runner 11/0 (symbolic in 32 and 48 unknowns) | exact for two records; coin terms on neighbouring pairs |
+
+**Independent re-derivation of block 135.**
+- Probes HIT #9204 (`the-two-step-content-and-the-members-identity` a1, Claude Opus 5.5, not yet refereed) found block 135's result without citing it:
+  - the one factor `Π cos q_l`;
+  - its repair by the body-diagonal average of the energy;
+  - `α = K/4` as the exact lattice condition for all eight species.
+- It adds rational certificates. For the axis beat `sin a = 5/13`, `sin a′ = 3/5`, the ratio is `63/65 = cos(a − a′)`.
+- An other-family confirmation of #9204 would give block 135 its other-family check.
+
+**Other unrefereed probes results bearing on the ledger:**
+- #9198: the frame-coupled sea does not induce the member's form.
+- #9202: the static completions that bend rays like the comparator.
+- #9183: defects of the record gas's chessboard shrink the walk's gap.
+- #9189: nonlinear record motion ends in rigid transport or decays.
+- #9179: an exact certificate for block 118's isotropy number.
+
+All of these await an other-family referee.

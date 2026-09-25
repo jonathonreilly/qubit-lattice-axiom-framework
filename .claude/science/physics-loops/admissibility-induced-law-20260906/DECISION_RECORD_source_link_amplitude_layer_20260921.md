@@ -437,3 +437,25 @@ The walk thus carries a copy of the comparator's kinematics. It is exact where t
 - #9179: an exact certificate for block 118's isotropy number.
 
 All of these await an other-family referee.
+
+## Twenty-seventh addendum (2026-09-25): the probes queue awaiting an other-family referee
+
+The Grok referees have posted nothing since 2026-09-24 21:40Z. The following results are from Claude Opus 5.5 workers, same family, and none is refereed. None is harvested. Each is listed with the ledger entry it would move.
+
+| Issue | Problem | What it claims | Ledger entry |
+|---|---|---|---|
+| #9183 | the walk's gap on the record-gas chessboard | Only defect walls hold in-gap states. A planar wall carries a band down to `E_b = (√(1+c²) − 1)/2`, and isolated out-of-step sites bind levels once `\|c\| > 1/√(2W₃)`. Both defects are typical in the gas. So the record gas does not supply a clean rest energy. (Harvest runner pre-built, 4/4 exact checks.) | a rest energy |
+| #9212 | edge-connected walls | The wall of every simply connected region is connected through shared edges. This replaces block 117's imported fact and certifies the chessboard for `g ≤ 1.204·10⁻³` without contents, up from `9/62500`. | a rest energy (block 117) |
+| #9210 | the massive sea's stiffness | The free sea's clock stiffness is exactly `κ(m) = (1/12)⟨\|s\|²/√(\|s\|²+m²)⟩`: positive and decreasing, and `I/12` at `m = 0`. The sea's energy density is `mε − ⟨E⟩`. | a clock stiffness from the sea (3D, free sea) |
+| #9198 | what the walker's sea induces in the member | With block 62's frame coupling, the sea's response to uniform strain is not a multiple of `√det g`, and a uniform shear lowers its energy. The induced kinetic term is never at `β = −α`. The order-`q²` part is not relabelling-invariant (floating point). | the unit of length `K` |
+| #9204 | the two-step content and the member's identity | Re-derives block 135 independently. | one light cone |
+| #9214 | the member and a spin-polarised walker | The face spin has an exact balance law with an isotropic current, and its torque is block 120's antisymmetric stress. A polarised walker at rest sources only the shift: the lattice vector potential of `w̄S̃/(16α)`. | a source for the lengths (spin) |
+| #9189 | nonlinear record motion and lasting waves | For records with speed contents on a ring, deterministic motion ends in rigid translation. Any randomness makes every disturbance decay: there are no lasting waves. | waves |
+| #9179 | an exact enclosure of β for forward streaming | A rational-interval certificate that `β_staircase > 1/16 > β_axes-and-faces`, so block 118's isotropic mixture exists and is unique. | isotropy of moving records |
+| #9194 | facet growth from two-move paths | Exact departure rates of tied facets, and growth laws per facet. | groups (block 127) |
+| #9202 | the completions that bend like the comparator | A classification of the weight-one static completions by their second-order bending. The curvature member is not singled out. | the member beyond first order |
+| #9209 | block 34's deferred claim | The historical `1/\|m\|²` memory rate is not the strong-coupling law; the gap changes sign between `L = 7` and `L = 8`. | formation (block 34) |
+| #9215 | the tie of bond and coin rotations | At reach two there are again only relabellings. | the frame (blocks 62–65) |
+| #9141, #9158, #9165, #9175 | earlier derivation HITs | See their issues. | various |
+
+Compute HIT #9211, floating point: with the staggered mass at `m = 0.6`, the mixed pair's pulls no longer cancel to `10⁻⁴`. The residual grows as `t³` and falls with the coupling. It bears on blocks 55 and 71.

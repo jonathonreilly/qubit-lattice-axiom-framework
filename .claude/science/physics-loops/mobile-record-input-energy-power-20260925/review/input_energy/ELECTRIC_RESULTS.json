@@ -1,0 +1,517 @@
+{
+  "rows": [
+    {
+      "side": 6,
+      "constant_count_rows": [
+        {
+          "sum_6_mx_plus_my": 2592,
+          "sum_mx_my": 175,
+          "sum_occupied_common_neighbors": 60,
+          "constant_defect": 2357,
+          "occupied_B_pair_counts": [
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  5
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 15
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  5,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            }
+          ]
+        },
+        {
+          "sum_6_mx_plus_my": 2592,
+          "sum_mx_my": 170,
+          "sum_occupied_common_neighbors": 60,
+          "constant_defect": 2362,
+          "occupied_B_pair_counts": [
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  5
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 15
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  5
+                ],
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  5,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 15
+            }
+          ]
+        }
+      ],
+      "electric_rows": [
+        {
+          "reference_field_nonzero_edges": 0,
+          "direct_branch_D_values": [
+            16,
+            4
+          ],
+          "averaged_D": [
+            10,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 101,
+          "direct_branch_D_values": [
+            398,
+            344
+          ],
+          "averaged_D": [
+            371,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 102,
+          "direct_branch_D_values": [
+            340,
+            344
+          ],
+          "averaged_D": [
+            342,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 109,
+          "direct_branch_D_values": [
+            372,
+            306
+          ],
+          "averaged_D": [
+            339,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        }
+      ],
+      "central_plaquette_electric_mask_exact": [
+        1,
+        2
+      ],
+      "input_data_sha256": "7e92ecfede0c45d647113f2f41a7c0581be2657e3f0062cf97c87fa0d3392e5c"
+    },
+    {
+      "side": 8,
+      "constant_count_rows": [
+        {
+          "sum_6_mx_plus_my": 2592,
+          "sum_mx_my": 174,
+          "sum_occupied_common_neighbors": 60,
+          "constant_defect": 2358,
+          "occupied_B_pair_counts": [
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  7
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 14
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  7,
+                  0
+                ],
+                [
+                  1,
+                  0,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            }
+          ]
+        },
+        {
+          "sum_6_mx_plus_my": 2592,
+          "sum_mx_my": 168,
+          "sum_occupied_common_neighbors": 60,
+          "constant_defect": 2364,
+          "occupied_B_pair_counts": [
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  0,
+                  7
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 14
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  0,
+                  7
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 20
+            },
+            {
+              "B_pair": [
+                [
+                  0,
+                  1,
+                  0
+                ],
+                [
+                  0,
+                  7,
+                  0
+                ]
+              ],
+              "ordered_A_neighbor_overlap_count": 14
+            }
+          ]
+        }
+      ],
+      "electric_rows": [
+        {
+          "reference_field_nonzero_edges": 0,
+          "direct_branch_D_values": [
+            16,
+            4
+          ],
+          "averaged_D": [
+            10,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 101,
+          "direct_branch_D_values": [
+            398,
+            344
+          ],
+          "averaged_D": [
+            371,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 102,
+          "direct_branch_D_values": [
+            340,
+            344
+          ],
+          "averaged_D": [
+            342,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        },
+        {
+          "reference_field_nonzero_edges": 109,
+          "direct_branch_D_values": [
+            372,
+            306
+          ],
+          "averaged_D": [
+            339,
+            1
+          ],
+          "quadratic_form_exact_equal": true
+        }
+      ],
+      "central_plaquette_electric_mask_exact": [
+        1,
+        2
+      ],
+      "input_data_sha256": "bd35c2eb36e45f1320ea030381b662c9787295b860cd4a99de9f373206c877f7"
+    }
+  ],
+  "source_sha256": "05175620d33e650e44647017017c641250c5cdbf63daba836bc2777e6461a442"
+}

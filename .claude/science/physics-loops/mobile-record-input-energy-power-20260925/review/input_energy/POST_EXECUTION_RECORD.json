@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-09-25T00:09:28.930545+00:00",
+  "record_type": "Observed commands transcribed from this session; final source/result hashes are separately verified.",
+  "commands": [
+    {
+      "command": "python3 post_bind_and_compare.py > POST_EXACT_COMPARISON_STDOUT.json 2> POST_EXACT_COMPARISON_STDERR.txt",
+      "exit_code": 1,
+      "history": "post_history/initial_pair_coordinate_comparison",
+      "disposition": "Three scalar-only pair labels required modulo-8 comparison; all unwrapped polynomial coefficients already matched."
+    },
+    {
+      "command": "python3 post_bind_and_compare.py > POST_EXACT_COMPARISON_STDOUT.json 2> POST_EXACT_COMPARISON_STDERR.txt",
+      "exit_code": 0
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 post_fft_control.py > POST_FFT_RESULTS.json 2> POST_FFT_STDERR.txt",
+      "exit_code": 0,
+      "runs": 2,
+      "second_run_reason": "Added explicit historical relative-loss and bound-field comparisons.",
+      "final_runner_elapsed_seconds": 0.25616358290426433
+    }
+  ],
+  "author_program_executions": 0,
+  "independent_implementation": "FFT on PRE edge fields, with inverse-FFT electric projection."
+}

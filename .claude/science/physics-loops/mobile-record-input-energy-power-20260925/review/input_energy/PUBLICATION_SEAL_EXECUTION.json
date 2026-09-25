@@ -1,0 +1,8 @@
+{
+  "status": "sealed and verified",
+  "members": 33,
+  "report_sha256": "dcf357e3014199d0a720394308c28b142760c15d9a9754d2e9376c343b53d2e6",
+  "seal_sha256": "19f2c31594a7a807771dde273c81bc01af9ecaf001f70eb569f4228be99e779c",
+  "source_pins_sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4",
+  "scope_incident_sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536"
+}

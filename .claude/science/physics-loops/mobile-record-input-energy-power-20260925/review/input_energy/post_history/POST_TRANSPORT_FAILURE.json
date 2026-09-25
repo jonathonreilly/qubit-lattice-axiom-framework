@@ -1,0 +1,7 @@
+{
+  "kind": "functions.exec JavaScript parse failure",
+  "error": "SyntaxError: missing ) after argument list",
+  "cause": "Unescaped Markdown backticks in a String.raw template containing the attempted POST patch.",
+  "filesystem_or_scientific_execution": false,
+  "disposition": "Successful subsequent POST write used plain identifiers with unambiguous string transport."
+}

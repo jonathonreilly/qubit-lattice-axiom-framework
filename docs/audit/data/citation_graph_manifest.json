@@ -1,6 +1,6 @@
 {
- "edge_count": 14648,
- "node_count": 6654,
+ "edge_count": 14655,
+ "node_count": 6655,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -297,6 +297,10 @@
   "actual_first_output_components_and_two_birth_bounds_bounded_theorem_note_2026-09-24": {
    "deps_hash": "7e94f2dfc176",
    "out_degree": 3
+  },
+  "actual_input_energy_and_original_mark_power_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "7c663669093e",
+   "out_degree": 7
   },
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,1907 @@
+{
+  "sigma": -1,
+  "local_pairs": 261,
+  "changed_pairs": 201,
+  "power2_terms": 307,
+  "nonzero_winding_terms": 4,
+  "quadratic_form": "Q_2(x)=(ell.x)(r.x), r=r4/4",
+  "r4": [
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -5870,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 5518,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -20,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        2
+      ],
+      "b": [
+        0,
+        1,
+        2
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        2
+      ],
+      "b": [
+        1,
+        0,
+        2
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        4
+      ],
+      "b": [
+        0,
+        1,
+        4
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        4
+      ],
+      "b": [
+        1,
+        0,
+        4
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": 368,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -384,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        1,
+        2
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        2,
+        1
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        1,
+        1,
+        1
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": 368,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -384,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        1,
+        4
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        2,
+        5
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        1,
+        1,
+        5
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        2,
+        1
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        2,
+        5
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        4,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        4,
+        0
+      ],
+      "b": [
+        1,
+        4,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -364,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        0,
+        2
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        1,
+        1
+      ],
+      "numerator": -16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        2,
+        0,
+        1
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -364,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        0,
+        4
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        1,
+        5
+      ],
+      "numerator": -16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        2,
+        0,
+        5
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        1,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": 6694,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        1,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": -6694,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -372,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        4,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        2,
+        5,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        0,
+        1
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        0,
+        5
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        5,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        5,
+        1,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        5,
+        1,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -48,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": 32,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        1,
+        1
+      ],
+      "numerator": 8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        1,
+        5
+      ],
+      "numerator": 8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        5,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        5,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    }
+  ],
+  "flat_output_H4": "-321*L^3+correction for local geometry without periodic identifications",
+  "flat_output_correction": 7146,
+  "local_output_H4_flat": -11504,
+  "max_flow_l1": 8,
+  "quadratic4_entries": 520
+}
+{
+  "sigma": 1,
+  "local_pairs": 261,
+  "changed_pairs": 201,
+  "power2_terms": 307,
+  "nonzero_winding_terms": 4,
+  "quadratic_form": "Q_2(x)=(ell.x)(r.x), r=r4/4",
+  "r4": [
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -5870,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 5518,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -20,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        2
+      ],
+      "b": [
+        0,
+        1,
+        2
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        2
+      ],
+      "b": [
+        1,
+        0,
+        2
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        4
+      ],
+      "b": [
+        0,
+        1,
+        4
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        0,
+        4
+      ],
+      "b": [
+        1,
+        0,
+        4
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": 368,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -384,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        1,
+        2
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        0,
+        2,
+        1
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        1
+      ],
+      "b": [
+        1,
+        1,
+        1
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": 368,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -384,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        1,
+        4
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        0,
+        2,
+        5
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        1,
+        5
+      ],
+      "b": [
+        1,
+        1,
+        5
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        2,
+        1
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        2,
+        0
+      ],
+      "b": [
+        0,
+        2,
+        5
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        4,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        4,
+        0
+      ],
+      "b": [
+        1,
+        4,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        1
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        0,
+        5,
+        5
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": 16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": -364,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        0,
+        2
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        1,
+        1
+      ],
+      "numerator": -16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        1
+      ],
+      "b": [
+        2,
+        0,
+        1
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": -364,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        0,
+        4
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        1,
+        5
+      ],
+      "numerator": -16,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        0,
+        5
+      ],
+      "b": [
+        2,
+        0,
+        5
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        1,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": 6694,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        1,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": -6694,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": -372,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 388,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        4,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        5,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        1,
+        5,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        1,
+        5,
+        0
+      ],
+      "b": [
+        2,
+        5,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        1,
+        0,
+        0
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        0,
+        1
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        0,
+        5
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        2,
+        0,
+        0
+      ],
+      "b": [
+        2,
+        5,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        0,
+        0,
+        1
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        1
+      ],
+      "b": [
+        5,
+        1,
+        1
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        0,
+        0,
+        5
+      ],
+      "numerator": 12,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        0,
+        5
+      ],
+      "b": [
+        5,
+        1,
+        5
+      ],
+      "numerator": -8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        0,
+        1,
+        0
+      ],
+      "numerator": -48,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": 32,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        1,
+        1
+      ],
+      "numerator": 8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        1,
+        0
+      ],
+      "b": [
+        5,
+        1,
+        5
+      ],
+      "numerator": 8,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        5,
+        0
+      ],
+      "b": [
+        0,
+        5,
+        0
+      ],
+      "numerator": 4,
+      "denominator": 1
+    },
+    {
+      "a": [
+        5,
+        5,
+        0
+      ],
+      "b": [
+        5,
+        0,
+        0
+      ],
+      "numerator": -4,
+      "denominator": 1
+    }
+  ],
+  "flat_output_H4": "-321*L^3+correction for local geometry without periodic identifications",
+  "flat_output_correction": 7146,
+  "local_output_H4_flat": -11504,
+  "max_flow_l1": 8,
+  "quadratic4_entries": 520
+}
+COMPLETE L6 elapsed 1.840468583861366

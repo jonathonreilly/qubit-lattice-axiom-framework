@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-24T23:17:34.831680+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/flat_matter_controls.py",
+      "sha256": "ce3c7aa5e31bfb78231b4cd4ae746a97878fa39da6ae08fc24ab63d14db3c7d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b"
+    }
+  ],
+  "open_dependency": "Optical-band root is unreviewed. Its elementary Fourier count argument is repeated explicitly here. All frontier work by root."
+}

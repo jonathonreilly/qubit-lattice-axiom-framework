@@ -1,0 +1,24 @@
+{
+  "verified_utc": "2026-09-25T01:12:22.736568+00:00",
+  "scope": "Part A source/output correspondence, existing seals and explicit process limits only.",
+  "publication_source_records_verified": 9,
+  "preserved_seal_member_counts": [
+    45,
+    42,
+    22
+  ],
+  "exact_runtime_files": 2,
+  "exact_payload_leaves_compared": 17107,
+  "allowed_metadata_differences": 3,
+  "scientific_value_differences": 0,
+  "cache_body_scope": "Verified writer-formatted tail; complete combined stdout not copied.",
+  "combined_input_fingerprint_scope": "Recorded metadata; full excluded raw inputs not independently recomputed.",
+  "scope_incident_preserved": true,
+  "author_programs_run": [],
+  "report_sha256": "dcf357e3014199d0a720394308c28b142760c15d9a9754d2e9376c343b53d2e6",
+  "source_pins_sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4",
+  "binding_results_sha256": "5dde20b5c1605dab3ee79fb38f5b009d4eb16fd97ed7ddd95ed57823065cccd2",
+  "metadata_checks_sha256": "1a7b6d62d094cb998c0d9bb050a30fd243b4469df58c7394732de577dd69f639",
+  "scope_incident_sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536",
+  "verifier_sha256": "092ca9ee3e26a2214250c8c4fc9127c1bd2cd7d1b6a6559625317688c04f9774"
+}

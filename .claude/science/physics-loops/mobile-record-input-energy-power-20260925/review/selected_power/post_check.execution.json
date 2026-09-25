@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T00:37:22.098778+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 0.46282616700045764,
+  "exit_code": 0,
+  "script_sha256": "b377af836456c2c3e1e413d16c6457de879121d1177d1ddba4b46a17917c2cc8",
+  "stdout_bytes": 49873,
+  "stdout_sha256": "ac608d834cb1068f002e9cecdaa980b40b4b098315992cf6b0067ec0d5acc9d6",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

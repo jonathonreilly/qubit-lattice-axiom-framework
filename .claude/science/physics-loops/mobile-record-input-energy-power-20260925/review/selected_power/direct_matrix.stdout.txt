@@ -1,0 +1,98 @@
+{
+  "scope": "Separate complex matrix implementation of full side-six pair Hamiltonian on the five relevant prebirth words; original selected mark.",
+  "full_H4_pairs": 972,
+  "prebirth_words": 5,
+  "samples": [
+    {
+      "sample": 0,
+      "sigma": -1,
+      "born_norm_squared": 0.0,
+      "full_gain": -0.0,
+      "full_anticommutator_subtrahend": 0.0,
+      "full_power": -0.0,
+      "laurent_power": 0.0,
+      "difference": -0.0,
+      "full_output_H4_diagonal": -62190.0
+    },
+    {
+      "sample": 0,
+      "sigma": 1,
+      "born_norm_squared": 0.0,
+      "full_gain": -0.0,
+      "full_anticommutator_subtrahend": 0.0,
+      "full_power": -0.0,
+      "laurent_power": 0.0,
+      "difference": -0.0,
+      "full_output_H4_diagonal": -62190.0
+    },
+    {
+      "sample": 1,
+      "sigma": -1,
+      "born_norm_squared": 9.437056727497456e-33,
+      "full_gain": -5.868905578830668e-28,
+      "full_anticommutator_subtrahend": 1.0558070306369356e-14,
+      "full_power": -1.0558070306369943e-14,
+      "laurent_power": -5.684341886080802e-14,
+      "difference": 4.628534855443807e-14,
+      "full_output_H4_diagonal": -62190.0
+    },
+    {
+      "sample": 1,
+      "sigma": 1,
+      "born_norm_squared": 6.933347799794049e-33,
+      "full_gain": -4.311848996691919e-28,
+      "full_anticommutator_subtrahend": 9.133394545477616e-15,
+      "full_power": -9.133394545478046e-15,
+      "laurent_power": -5.684341886080802e-14,
+      "difference": 4.771002431532997e-14,
+      "full_output_H4_diagonal": -62190.0
+    },
+    {
+      "sample": 2,
+      "sigma": -1,
+      "born_norm_squared": 0.1789522364964689,
+      "full_gain": -11084.498701818748,
+      "full_anticommutator_subtrahend": -11689.289713080567,
+      "full_power": 604.7910112618192,
+      "laurent_power": 604.7910112618179,
+      "difference": 1.3642420526593924e-12,
+      "full_output_H4_diagonal": -61941.1018204149
+    },
+    {
+      "sample": 2,
+      "sigma": 1,
+      "born_norm_squared": 0.1789522364964689,
+      "full_gain": -11084.498701818748,
+      "full_anticommutator_subtrahend": -11689.28971308057,
+      "full_power": 604.7910112618229,
+      "laurent_power": 604.7910112618179,
+      "difference": 5.002220859751105e-12,
+      "full_output_H4_diagonal": -61941.1018204149
+    },
+    {
+      "sample": 3,
+      "sigma": -1,
+      "born_norm_squared": 3.3295223644018187e-05,
+      "full_gain": -2.070607039326346,
+      "full_anticommutator_subtrahend": -2.210094175768737,
+      "full_power": 0.13948713644239108,
+      "laurent_power": 0.13948713643957178,
+      "difference": 2.8193003487331225e-12,
+      "full_output_H4_diagonal": -62189.311640150256
+    },
+    {
+      "sample": 3,
+      "sigma": 1,
+      "born_norm_squared": 3.3295223644018234e-05,
+      "full_gain": -2.070607039326349,
+      "full_anticommutator_subtrahend": -2.210094175768745,
+      "full_power": 0.13948713644239596,
+      "laurent_power": 0.13948713643957178,
+      "difference": 2.8241853300414732e-12,
+      "full_output_H4_diagonal": -62189.311640150256
+    }
+  ],
+  "all_actual_electric_terms_excluded_from_this_magnetic_check": true,
+  "no_author_code_or_Laurent_implementation_imported": true,
+  "source_sha256": "2cc6c493ac87418a4d98fc8af06e11e73ead8d18f1efc5c8609115bff035a3c0"
+}

@@ -1,0 +1,27 @@
+{
+  "author_members_verified": 20,
+  "preserved_PRE_members": 45,
+  "polynomial_sides": [
+    8,
+    16
+  ],
+  "exact_coefficient_comparisons": 282,
+  "oriented_fillings": 140,
+  "pair_summary_comparisons": 532,
+  "history_rows": 12,
+  "active_union_bounds": [
+    [
+      -4,
+      5
+    ],
+    [
+      -5,
+      5
+    ],
+    [
+      -5,
+      5
+    ]
+  ],
+  "result_sha256": "88c3ddeec597e50c2f20e96e196aea10f6506744a6dc837918dbeff97c9b177e"
+}

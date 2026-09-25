@@ -1,0 +1,179 @@
+{
+  "verified_utc": "2026-09-25T01:04:39.123149+00:00",
+  "prior_seals": [
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent",
+      "seal": "PRE_SEAL.json",
+      "sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+      "sealed_utc": "2026-09-24T23:49:17.223205+00:00",
+      "members_verified": 45
+    },
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent",
+      "seal": "POST_SEAL.json",
+      "sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80",
+      "sealed_utc": "2026-09-25T00:13:05.450398+00:00",
+      "members_verified": 42
+    },
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent",
+      "seal": "PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "sealed_utc": "2026-09-25T00:52:46.780324+00:00",
+      "members_verified": 22
+    }
+  ],
+  "runtime_rows": [
+    {
+      "program": "prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "bytes": 4344,
+      "byte_identical_to_POST": true,
+      "AST_identical_to_POST": true,
+      "functions": [
+        "add_word",
+        "negative",
+        "control"
+      ]
+    },
+    {
+      "program": "energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "bytes": 6387,
+      "byte_identical_to_POST": true,
+      "AST_identical_to_POST": true,
+      "functions": [
+        "key",
+        "combine",
+        "neg",
+        "unwrap",
+        "positive_word",
+        "face",
+        "fillings",
+        "word_fourier",
+        "spectral"
+      ]
+    }
+  ],
+  "payload_comparisons": [
+    {
+      "result": "ENERGY_POLYNOMIAL_RESULTS.json",
+      "author_sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "fresh_stdout_sha256": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af",
+      "all_scientific_leaves_equal": true,
+      "leaf_counts": {
+        "str": 1,
+        "int": 12844,
+        "float": 1
+      },
+      "metadata_differences": [
+        {
+          "path": "/elapsed_seconds",
+          "author": 0.2287669579964131,
+          "publication": 0.30004191608168185
+        }
+      ],
+      "fresh_stage": {
+        "program": "prepared_energy_polynomial.py",
+        "code_sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+        "result": "ENERGY_POLYNOMIAL_RESULTS.json",
+        "stdout_sha256": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af",
+        "stdout_bytes": 425564,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.3376416659448296
+      }
+    },
+    {
+      "result": "ENERGY_SPECTRAL_RESULTS.json",
+      "author_sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "fresh_stdout_sha256": "61b9afe6d8fb3ec32cbdbf82458fcad4f970924ed81fadfd2034ebf4995497db",
+      "all_scientific_leaves_equal": true,
+      "leaf_counts": {
+        "str": 4,
+        "int": 4056,
+        "float": 187,
+        "bool": 12,
+        "NoneType": 2
+      },
+      "metadata_differences": [
+        {
+          "path": "/source_sha256",
+          "author": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+          "publication": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af"
+        },
+        {
+          "path": "/elapsed_seconds",
+          "author": 0.6551797080319375,
+          "publication": 0.7809866671450436
+        }
+      ],
+      "fresh_stage": {
+        "program": "energy_spectral_controls.py",
+        "code_sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+        "result": "ENERGY_SPECTRAL_RESULTS.json",
+        "stdout_sha256": "61b9afe6d8fb3ec32cbdbf82458fcad4f970924ed81fadfd2034ebf4995497db",
+        "stdout_bytes": 133672,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.9516973339486867
+      }
+    }
+  ],
+  "execution": {
+    "started_utc": "2026-09-25T00:56:52.986448+00:00",
+    "cache_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/logs/runner-cache/actual_input_energy_and_original_mark_power_2026_09_25.txt",
+    "cache_status": "fresh",
+    "execution_metadata": {
+      "runner": "scripts/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "status": "ok",
+      "exit_code": 0,
+      "elapsed_sec": 3.958324909210205,
+      "timeout_sec": 120,
+      "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/logs/runner-cache/.in-progress/actual_input_energy_and_original_mark_power_2026_09_25.txt"
+    },
+    "stderr_bytes": 0,
+    "combined_stdout_sha256": "61b58c3e9c6b0ba51b2aa5c20198b367a68e49546b3895864667800d42f3d4d4",
+    "combined_stdout_bytes": 2089805,
+    "combined_stdout_equals_result_plus_summary": true,
+    "Part_A_stage_rows": [
+      {
+        "program": "prepared_energy_polynomial.py",
+        "code_sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+        "result": "ENERGY_POLYNOMIAL_RESULTS.json",
+        "stdout_sha256": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af",
+        "stdout_bytes": 425564,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.3376416659448296
+      },
+      {
+        "program": "energy_spectral_controls.py",
+        "code_sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+        "result": "ENERGY_SPECTRAL_RESULTS.json",
+        "stdout_sha256": "61b9afe6d8fb3ec32cbdbf82458fcad4f970924ed81fadfd2034ebf4995497db",
+        "stdout_bytes": 133672,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.9516973339486867
+      }
+    ],
+    "cache_header": {
+      "runner": "scripts/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "runner_sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+      "input_fingerprint_sha256": "54f912d616790c7c2956051ba6c2e70215fa1ae7cbebf9657de924dcc18e8336",
+      "timeout_sec": "120",
+      "exit_code": "0",
+      "elapsed_sec": "3.96",
+      "status": "ok"
+    },
+    "cache_stdout_bytes": 200001,
+    "cache_stdout_is_complete": false,
+    "cache_stdout_is_verified_suffix": true,
+    "cache_stderr_bytes": 1,
+    "scope": "No combined stdout body copied into this scoped evidence."
+  },
+  "source_count": 9,
+  "comparison_code_sha256": "5400c46eb7a00cd97814462ebaa62571537ebc6fcda53dde0106299aefcde909",
+  "source_pins_sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4"
+}

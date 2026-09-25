@@ -1,0 +1,238 @@
+{
+  "sealed_utc": "2026-09-24T23:49:17.223205+00:00",
+  "scope": "Blind independent PRE completed before any photon-added-energy author release.",
+  "note": "PRE.md",
+  "member_count": 45,
+  "members": [
+    {
+      "path": "COMBINATORIAL_FIRST_PATH_FAILURE_STDERR.txt",
+      "bytes": 307,
+      "sha256": "db513692dd3167863ea138c81278fcbc3413cbc360067a166b6318f8f38741fa"
+    },
+    {
+      "path": "COMBINATORIAL_FIRST_PATH_FAILURE_STDOUT.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COMBINATORIAL_RESULTS.json",
+      "bytes": 1779,
+      "sha256": "a60289b0626a6006eba52faf5112173de1e44ecb39db5814e4100d8a739a3f52"
+    },
+    {
+      "path": "COMBINATORIAL_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CONTROL_EXECUTION_RECORD.json",
+      "bytes": 2121,
+      "sha256": "3006b664501b5d4c4068d81b321eabfeadafd5ef33b2abd82c22748607865a71"
+    },
+    {
+      "path": "ELECTRIC_RESULTS.json",
+      "bytes": 11380,
+      "sha256": "ab80baf3998b246a61db6e0e3fdf9b1d495962f3fa8e9f315546aa0b9fe399f0"
+    },
+    {
+      "path": "ELECTRIC_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ENERGY_FORM_RESULTS.json",
+      "bytes": 9362,
+      "sha256": "e6f5a0685245277b60e0a9df35056ab8bcf0be431f22ebad0da7e28de34779b9"
+    },
+    {
+      "path": "ENERGY_FORM_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "bytes": 4101,
+      "sha256": "ce9d54222b9e87bc4aefbbc562156a8fbce08ef9f9ee50c213fd8aaf05aada83"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "FORMATTING_REPAIR.json",
+      "bytes": 328,
+      "sha256": "89da6b2c0a3263b2258b5ac10307861985bf5cb8274907b0cd9a1f4735a44978"
+    },
+    {
+      "path": "FORMATTING_REPAIR_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LAURENT_DATA_L6.json",
+      "bytes": 939464,
+      "sha256": "7e92ecfede0c45d647113f2f41a7c0581be2657e3f0062cf97c87fa0d3392e5c"
+    },
+    {
+      "path": "LAURENT_DATA_L8.json",
+      "bytes": 2026331,
+      "sha256": "bd35c2eb36e45f1320ea030381b662c9787295b860cd4a99de9f373206c877f7"
+    },
+    {
+      "path": "MAGNETIC_CONTROL_RESULTS.json",
+      "bytes": 4584,
+      "sha256": "bdcf198eaecf45c605c41905998ecbf5267a1c90579e82e978a63e6ba70d5c66"
+    },
+    {
+      "path": "MAGNETIC_CONTROL_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 28269,
+      "sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9"
+    },
+    {
+      "path": "SOURCE_FREEZE_RESULTS.json",
+      "bytes": 219,
+      "sha256": "6810b6c5d7eed5f99980fe279b7cf07778d1a9675962e95e37ff894c6ac94a6e"
+    },
+    {
+      "path": "SOURCE_FREEZE_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 9341,
+      "sha256": "9642c898dc188abc7d4c149f92c728c711f519642e18d86dea1fee7425208037"
+    },
+    {
+      "path": "SURFACE_DECOMPOSITION_L10.json",
+      "bytes": 39348,
+      "sha256": "efa005f402f22d7fd302bd44cb75b685ff3fed81a8e6a68a6e23a5091f6c574e"
+    },
+    {
+      "path": "SURFACE_DECOMPOSITION_L6.json",
+      "bytes": 39236,
+      "sha256": "8fbe73ef5d7fe441d7ff1be93b5db0d31465553cfe36794545ecf6d0f741a305"
+    },
+    {
+      "path": "SURFACE_DECOMPOSITION_L8.json",
+      "bytes": 39348,
+      "sha256": "cbb7e63c8552bceb3d255ea83860f770daa76d8221596537c8ca685e23c4f555"
+    },
+    {
+      "path": "combinatorial_formula_check.py",
+      "bytes": 5823,
+      "sha256": "7267fb1e66c1064c486962d464807dd2764fb644fadb3d7b5bf0ce545952da81"
+    },
+    {
+      "path": "electric_and_coefficients_check.py",
+      "bytes": 4072,
+      "sha256": "05175620d33e650e44647017017c641250c5cdbf63daba836bc2777e6461a442"
+    },
+    {
+      "path": "energy_form_control.py",
+      "bytes": 7533,
+      "sha256": "72f35542a2121f985f0cb25d86e8f87746648b5e480959217d37774904d4b296"
+    },
+    {
+      "path": "freeze_inputs.py",
+      "bytes": 4850,
+      "sha256": "872b98b9a6c824df5f4eacea26b1fff5c5f1ebbb9c4541ed7ed501f55d84da02"
+    },
+    {
+      "path": "frozen_inputs/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "frozen_inputs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "frozen_inputs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "frozen_inputs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 36259,
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "frozen_inputs/PLANNING_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "path": "frozen_inputs/PRIOR_23_24_PRE.md",
+      "bytes": 37575,
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27"
+    },
+    {
+      "path": "frozen_inputs/PRIOR_23_24_PRE_SEAL.json",
+      "bytes": 8106,
+      "sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc"
+    },
+    {
+      "path": "frozen_inputs/PRIOR_23_24_primitive_dynamics_control.py",
+      "bytes": 9105,
+      "sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c"
+    },
+    {
+      "path": "frozen_inputs/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "frozen_inputs/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "frozen_inputs/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "frozen_inputs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "frozen_inputs/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "magnetic_increment_control.py",
+      "bytes": 9083,
+      "sha256": "718ed52dd8c9acfcc80f13260d2dbbb3956ebb2646a389046fcf35416e93f938"
+    },
+    {
+      "path": "repair_note_delimiters.py",
+      "bytes": 2265,
+      "sha256": "d736bc840350ec74174e1d32e9379faedcd62f2d592111620cae8f7bbd616886"
+    },
+    {
+      "path": "seal_pre.py",
+      "bytes": 1983,
+      "sha256": "9880d40ac129cacaa8bedc60ca0bdc519fcea2014520a99462fbe5aff235d2be"
+    },
+    {
+      "path": "verify_evidence.py",
+      "bytes": 5105,
+      "sha256": "080c6d2fd65b6b610b5b0d7ca3ae00e36bed42c8e9f6e4199c0500ca47f44ad9"
+    }
+  ],
+  "excluded": "Only generated __pycache__, this seal, and its post-seal execution stdout/stderr.",
+  "scientific_status": "Conditional independent derivation and bounded controls, no audit authority.",
+  "blinding": "No photon-added-energy author source or runner, other active checker packet, or campaign checkpoint was opened.",
+  "prior_packets": "Unchanged; prior 23/24 PRE explicitly reused only as pinned known background.",
+  "stop_after_seal": true
+}

@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-09-25T01:04:39.122713+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76",
+      "bytes": 8373,
+      "frozen_path": "publication_frozen/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "scope": "Shared source metadata; out-of-scope entries are metadata only."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+      "bytes": 31122,
+      "frozen_path": "publication_frozen/PUBLIC_NOTE_PART_A_AND_SHARED_CONTEXT.md",
+      "frozen_sha256": "4d126daf5b0a65d12819ae14c50256b07948bd4f26c97d5acb0c6755badb302b",
+      "scope": "Original lines 1-307 and 523-end only; whole-file hash is a mechanical identity, not Part B science coverage."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/energy/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "bytes": 4344,
+      "frozen_path": "publication_frozen/runtime_energy/prepared_energy_polynomial.py",
+      "scope": "Part A runtime; exact disclosed author copy."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/energy/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "bytes": 6387,
+      "frozen_path": "publication_frozen/runtime_energy/energy_spectral_controls.py",
+      "scope": "Part A runtime; exact disclosed author copy."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/scripts/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+      "bytes": 4856,
+      "frozen_path": "publication_frozen/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "scope": "Shared wrapper only; no Part B runtime body read."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/outputs/input_energy_power_20260925/ENERGY_POWER_RESULTS.json",
+      "sha256": "8301e6c5263d2842e1d129b1f30357c659a05fec09a6f11924ab4ec5d0256632",
+      "bytes": 2089791,
+      "frozen_path": "publication_frozen/PART_A_RESULT_EXTRACT.json",
+      "frozen_sha256": "f8eede017ca56a822594bd4b791d4198d5f40c423014d49bde06e4313d51837a",
+      "scope": "Only two energy payloads extracted; combined digest is mechanical identity only."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "67e4c75c06bbcaa98bbb4e9e3a9881c2a2ed90c6f38977fb1613bc812e97eccc",
+      "bytes": 2207488,
+      "frozen_path": "publication_frozen/EXECUTION_PART_A_AND_SHARED_METADATA.json",
+      "frozen_sha256": "b8cdd3655cb8c0dd48505698da3bc01a6e1bbbf98a0e4cfd4555be200d36a21d",
+      "scope": "Shared execution metadata, equality check and Part A stage rows only; embedded combined stdout not copied."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/input-energy-power-publication/logs/runner-cache/actual_input_energy_and_original_mark_power_2026_09_25.txt",
+      "sha256": "e2b4b63baf8443841d70afa3a92024402e6a3260414c6dd760a39de0b3a720fd",
+      "bytes": 200372,
+      "frozen_path": "publication_frozen/CACHE_HEADER_ONLY.txt",
+      "frozen_sha256": "0dd75c947165e5bdd1a1c5b4df8f7f3e781ce557ea0f3e705fdc8e3e84c597e6",
+      "scope": "Header extraction and opaque suffix verification only; cache stdout body not copied."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "10ace3e319afd96b84c84c89a24733631fe07416ea603c38bcb974fb41f82109",
+      "bytes": 5329,
+      "frozen_path": "publication_frozen/ROOT_VERIFICATION_PART_A_AND_SHARED_METADATA.json",
+      "frozen_sha256": "7eed4f1dfb28d4427551dda1854bcec3c4ee99e9016bd0f1e0039d9dfd29c893",
+      "scope": "Root process evidence; Part A rows selected. No independent proof imported."
+    }
+  ],
+  "prior_seals_verified": [
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent",
+      "seal": "PRE_SEAL.json",
+      "sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+      "sealed_utc": "2026-09-24T23:49:17.223205+00:00",
+      "members_verified": 45
+    },
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent",
+      "seal": "POST_SEAL.json",
+      "sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80",
+      "sealed_utc": "2026-09-25T00:13:05.450398+00:00",
+      "members_verified": 42
+    },
+    {
+      "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent",
+      "seal": "PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "sealed_utc": "2026-09-25T00:52:46.780324+00:00",
+      "members_verified": 22
+    }
+  ],
+  "excluded_science": [
+    "Part B note body",
+    "Part B runtime bodies and scientific payload comparison",
+    "root30/root31/root32 author packets",
+    "other active checkers",
+    "campaign checkpoint/outcome"
+  ],
+  "scope_incident_record": "PUBLICATION_SCOPE_INCIDENT.json"
+}

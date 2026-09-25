@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-09-24T23:35:47.872983+00:00",
+  "blind_scope": "Only four authorized physics sources, unchanged procedures and own sealed 23/24 background. No author runner or active root packet was read.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "physics parent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "physics parent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "physics parent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication",
+      "git_revision": "fb1991dfa6971e449513fb8e29884376739d21cc",
+      "git_path": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "provisional admitted exact preparation"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/AGENTS.md",
+      "role": "procedure pointer"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SCIENCE_WORKFLOW.md",
+      "role": "procedure"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SKILL.md",
+      "role": "procedure reused at same revision"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SKILL_FRESHNESS_CHECK.md",
+      "role": "procedure reused at same revision"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "git_path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "git_bytes_exact_equal": true,
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/proof-search-governance.md",
+      "role": "procedure reused at same revision"
+    },
+    {
+      "git_repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "git_revision": "eb1f1ca8338848cf2046582e13aef372d8540937",
+      "git_path": "AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PLANNING_AGENTS.md",
+      "role": "applicable cached planning instructions; no campaign checkpoint read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PRE.md",
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_PRE.md",
+      "role": "own previously sealed background; no new increment result imported"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PRE_SEAL.json",
+      "sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_PRE_SEAL.json",
+      "role": "own previously sealed background; no new increment result imported"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/primitive_dynamics_control.py",
+      "sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_primitive_dynamics_control.py",
+      "role": "own previously sealed background; no new increment result imported"
+    }
+  ],
+  "freeze_code_sha256": "872b98b9a6c824df5f4eacea26b1fff5c5f1ebbb9c4541ed7ed501f55d84da02"
+}

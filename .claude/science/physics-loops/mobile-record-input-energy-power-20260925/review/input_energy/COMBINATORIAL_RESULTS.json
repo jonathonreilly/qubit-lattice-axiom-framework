@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "side": 6,
+      "constant": 4719,
+      "flat_defect": 5137,
+      "cosine_count": 70,
+      "cross_same_source_paths": 83,
+      "cross_cosine_histogram": {
+        "166": 1,
+        "2": 3
+      },
+      "diagonal_missing_cosine_histogram": {
+        "4": 56,
+        "2": 11
+      },
+      "surface_weight_sum": 436,
+      "full_primitive_coefficientwise_comparison": true,
+      "harmonic_signatures_all_zero": true,
+      "surface_certificate_sha256": "8fbe73ef5d7fe441d7ff1be93b5db0d31465553cfe36794545ecf6d0f741a305"
+    },
+    {
+      "side": 8,
+      "constant": 4722,
+      "flat_defect": 5140,
+      "cosine_count": 70,
+      "cross_same_source_paths": 83,
+      "cross_cosine_histogram": {
+        "166": 1,
+        "2": 3
+      },
+      "diagonal_missing_cosine_histogram": {
+        "4": 56,
+        "2": 11
+      },
+      "surface_weight_sum": 436,
+      "full_primitive_coefficientwise_comparison": true,
+      "harmonic_signatures_all_zero": true,
+      "surface_certificate_sha256": "cbb7e63c8552bceb3d255ea83860f770daa76d8221596537c8ca685e23c4f555"
+    },
+    {
+      "side": 10,
+      "constant": 4722,
+      "flat_defect": 5140,
+      "cosine_count": 70,
+      "cross_same_source_paths": 83,
+      "cross_cosine_histogram": {
+        "166": 1,
+        "2": 3
+      },
+      "diagonal_missing_cosine_histogram": {
+        "4": 56,
+        "2": 11
+      },
+      "surface_weight_sum": 436,
+      "full_primitive_coefficientwise_comparison": null,
+      "harmonic_signatures_all_zero": true,
+      "surface_certificate_sha256": "efa005f402f22d7fd302bd44cb75b685ff3fed81a8e6a68a6e23a5091f6c574e"
+    }
+  ],
+  "source_sha256": "7267fb1e66c1064c486962d464807dd2764fb644fadb3d7b5bf0ce545952da81",
+  "elapsed_seconds": 0.142032666830346
+}

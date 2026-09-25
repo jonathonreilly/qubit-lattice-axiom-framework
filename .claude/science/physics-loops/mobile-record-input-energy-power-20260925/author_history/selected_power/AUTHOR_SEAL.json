@@ -1,0 +1,78 @@
+{
+  "sealed_utc": "2026-09-24T23:47:11.946442+00:00",
+  "status": "Author candidate before independent reconstruction; unchanged selected model/effort",
+  "files": {
+    "CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONTROL.stdout": {
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "bytes": 1108502
+    },
+    "EXECUTION.json": {
+      "sha256": "a28145200af5625e11441ee976d9a13d96ad71b3ab94a35bac05645edf6be677",
+      "bytes": 200
+    },
+    "ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md": {
+      "sha256": "dc34643135d5b31b627420ba6bc325b7d5b5dbf9095e6801d25b26d1dd8c66c6",
+      "bytes": 11240
+    },
+    "POSITIVE.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "POSITIVE.stdout": {
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "bytes": 5092
+    },
+    "POSITIVE_EXECUTION.json": {
+      "sha256": "7e0e6361822bf06aa7d8a5493e7aab0de0995dd5648bb451de49165078742e47",
+      "bytes": 308
+    },
+    "POWER_POLYNOMIAL_RESULTS.json": {
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "bytes": 1108502
+    },
+    "POWER_POSITIVE_CERTIFICATE.json": {
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "bytes": 5092
+    },
+    "POWER_SPECTRAL_RESULTS.json": {
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "bytes": 14941
+    },
+    "ROOT_REVIEW.json": {
+      "sha256": "a87dbbdcb534b42e17fdb5904c13d34b73d44c1f5497fee63621aa5e0b63fdf2",
+      "bytes": 1000
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "2188fd68dce582e4f86db868cd9ba9ca763aaa86675655e9d4a9ac97befb95d3",
+      "bytes": 2210
+    },
+    "SPECTRAL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "SPECTRAL.stdout": {
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "bytes": 14941
+    },
+    "SPECTRAL_EXECUTION.json": {
+      "sha256": "aef16985f23d9754d22910d37d0899700775e0e6f142089d4472e055bea20faa",
+      "bytes": 200
+    },
+    "power_positive_certificate.py": {
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+      "bytes": 3020
+    },
+    "power_spectral_controls.py": {
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+      "bytes": 3970
+    },
+    "selected_power_polynomial.py": {
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+      "bytes": 4979
+    }
+  }
+}

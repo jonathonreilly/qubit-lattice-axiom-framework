@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-09-25T00:09:28.929013+00:00",
+  "root_source_unchanged": true,
+  "location": "Root Section 4",
+  "finding": "The sentence It is not negative total energy conflicts literally with the negative common leading mean of the displayed h_g. The result is an energy difference invariant under an additive zero.",
+  "proposed_public_text": "The result concerns the difference between two input means. Adding a scalar to the Hamiltonian changes neither that difference nor its sign.",
+  "root_response": "Agreed. The intended conclusion concerns the input difference and does not determine the sign of total energy under an arbitrary zero. The full supplied h indeed has the negative common leading mean. I will preserve the sealed author wording and replace that sentence in public text with the energy-difference/additive-zero statement. Continue your bounded checks; no new author-code execution needed.",
+  "scope": "Coordination record, not a changed or reviewed public source."
+}

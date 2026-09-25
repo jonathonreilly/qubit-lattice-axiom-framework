@@ -1,0 +1,514 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PLANNING_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_PRE.md",
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_PRE_SEAL.json",
+      "sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/PRIOR_23_24_primitive_dynamics_control.py",
+      "sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/frozen_inputs/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "5feb53d99a0e1008019ff4563c16ba880ab3ab6e38fee5fd2682e62f081ee157",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "4dd7d35946c80fda3c70322c5ee61b475ea9f5fba4fde7a0e7cbae3521ed23cd",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/CONTROL.stdout",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ENERGY_POLYNOMIAL_RESULTS.json",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/EXECUTION.json",
+      "sha256": "d19bcffe62cb6a8ba89c510114af76c461db58e2b35c1ac60ecd1add1451b113",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/PRESEAL_ELECTRIC_CORRECTION.md",
+      "sha256": "a2fb49dfe4f567dc226bb89bfc7cbd46236a8575a5132933a529ed42d0ca7cb3",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ROOT_REVIEW.md",
+      "sha256": "c362fd8417bbcc0c14acf3ce35601bb13f339b9bdd9710f36a3e00258379bcf9",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SOURCE_PINS.json",
+      "sha256": "86f22245e10d07575237c6e8e44e1aee2b3caab66882d9ae71abcfb2f4ecb36d",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL.stdout",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL_EXECUTION.json",
+      "sha256": "fc94d17d74b59ce488310f1f5114068953e5097ac41a7d7e7418b3f519343149",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "c3acc0d5aadf55e2434c2f7e577bd45624fdb84bbef08b02b7b9c9be94b39adf",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL.stdout",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json",
+      "sha256": "e37c9ceb6de5f1db9f3de02158e776da6b762ef04a098a26903c8889ced7910a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/energy_spectral_controls.py",
+      "sha256": "602091cef199b21c239920a2e8732e910fa0daf2145e57a1d0d1dc4cc6756225",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/CACHE_HEADER_ONLY.txt",
+      "sha256": "0dd75c947165e5bdd1a1c5b4df8f7f3e781ce557ea0f3e705fdc8e3e84c597e6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/ENERGY_POLYNOMIAL_RESULTS.json",
+      "sha256": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "61b9afe6d8fb3ec32cbdbf82458fcad4f970924ed81fadfd2034ebf4995497db",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/EXECUTION_PART_A_AND_SHARED_METADATA.json",
+      "sha256": "b8cdd3655cb8c0dd48505698da3bc01a6e1bbbf98a0e4cfd4555be200d36a21d",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/PART_A_AUTHOR_TO_PUBLIC.diff",
+      "sha256": "68ececc5b36b049c7febb2dabbe69a834217d0ec09144b631cf2782272c48e88",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/PART_A_RESULT_EXTRACT.json",
+      "sha256": "f8eede017ca56a822594bd4b791d4198d5f40c423014d49bde06e4313d51837a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/PUBLIC_NOTE_PART_A_AND_SHARED_CONTEXT.md",
+      "sha256": "4d126daf5b0a65d12819ae14c50256b07948bd4f26c97d5acb0c6755badb302b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/ROOT_VERIFICATION_PART_A_AND_SHARED_METADATA.json",
+      "sha256": "7eed4f1dfb28d4427551dda1854bcec3c4ee99e9016bd0f1e0039d9dfd29c893",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/RUNNER_CACHE_RELEVANT_PROCEDURE.txt",
+      "sha256": "839cd2f2f958ab84e6d6117e45d1e3a66663f34e0de615c2cba2beb53c31a2d9",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/runtime_energy/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_frozen/runtime_energy/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/CHECKPOINT.md",
+      "sha256": "4d45435568f325f69e351d29fc51b0002cf3c664468bca3354d9d22b486ed9cc",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_CHECKPOINT.md",
+      "sha256": "9a390dddfec1e8514148458255e3c6bf1f02a3a4ff185d6ba294e5fb9cfa2280",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_PART_B_DIFF.txt",
+      "sha256": "11e171f4235744181a2ef387a3741d8c7163b3d7d208ac0cfa34ee13e6201862",
+      "role": "Exact sealed diff retained externally: its intentional blank context lines have trailing spaces. Do not rewrite the sealed evidence."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "b0378a615fdaaca99e563a78e4e1361a19635976e114e2f04f5e5485ceb8a69c",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/CONTROL.stdout",
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/EXECUTION.json",
+      "sha256": "a28145200af5625e11441ee976d9a13d96ad71b3ab94a35bac05645edf6be677",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "sha256": "dc34643135d5b31b627420ba6bc325b7d5b5dbf9095e6801d25b26d1dd8c66c6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POSITIVE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POSITIVE.stdout",
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POSITIVE_EXECUTION.json",
+      "sha256": "7e0e6361822bf06aa7d8a5493e7aab0de0995dd5648bb451de49165078742e47",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POWER_POLYNOMIAL_RESULTS.json",
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POWER_POSITIVE_CERTIFICATE.json",
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/POWER_SPECTRAL_RESULTS.json",
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/ROOT_REVIEW.json",
+      "sha256": "a87dbbdcb534b42e17fdb5904c13d34b73d44c1f5497fee63621aa5e0b63fdf2",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/SOURCE_PINS.json",
+      "sha256": "2188fd68dce582e4f86db868cd9ba9ca763aaa86675655e9d4a9ac97befb95d3",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/SPECTRAL.stdout",
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/SPECTRAL_EXECUTION.json",
+      "sha256": "aef16985f23d9754d22910d37d0899700775e0e6f142089d4472e055bea20faa",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/power_positive_certificate.py",
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/power_spectral_controls.py",
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_sources/author/selected_power_polynomial.py",
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/CACHE_EXECUTION.json",
+      "sha256": "67e4c75c06bbcaa98bbb4e9e3a9881c2a2ed90c6f38977fb1613bc812e97eccc",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/ENERGY_POWER_RESULTS.json",
+      "sha256": "8301e6c5263d2842e1d129b1f30357c659a05fec09a6f11924ab4ec5d0256632",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/FROZEN_SOURCES.json",
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/PRIMARY_CACHE.txt",
+      "sha256": "e2b4b63baf8443841d70afa3a92024402e6a3260414c6dd760a39de0b3a720fd",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/Part_B_payload/POWER_POLYNOMIAL_RESULTS.json",
+      "sha256": "0cbf8e4d41684f534f0f6f1dc1bd710c3c27eac73ec16b969fdbd3552d03819a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/Part_B_payload/POWER_POSITIVE_CERTIFICATE.json",
+      "sha256": "fb4294ee4d9dcf8b9ad93a28a1cd1e9bd46a8d2ce3009a39c5d506dbc3a19d3b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/Part_B_payload/POWER_SPECTRAL_RESULTS.json",
+      "sha256": "fb1d3c29f65408710e8ebdad4e9ad1584de0f063e4eda17a3a0c7eff4cab0374",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/ROOT_VERIFICATION.json",
+      "sha256": "10ace3e319afd96b84c84c89a24733631fe07416ea603c38bcb974fb41f82109",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/energy/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/energy/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/power_positive_certificate.py",
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/power_spectral_controls.py",
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/.claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/selected_power_polynomial.py",
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/declared_inputs/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/primary_runner.py",
+      "sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_sources/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/common_limit.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/local_pair.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/prepared_note.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/prior_POST.md",
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/prior_POST_SEAL.json",
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/prior_PRE.md",
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/prior_PRE_SEAL.json",
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/weak_packets.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/sources/workflow.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Preserved original/frozen duplicate outside this publication; bound by the copied seals and origin metadata."
+    }
+  ]
+}

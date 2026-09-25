@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_evidence.py", line 71, in <module>
+    assert len(inventory)==264 and all(row['power2_coefficient_sum']==0 for row in inventory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,141 @@
+{
+  "scope": "Own exact coefficient correspondence plus finite Fourier covariance arithmetic; no author runner, no compact dynamics or interval enclosure.",
+  "correspondence": [
+    {
+      "L": 6,
+      "sigma": -1,
+      "full_polynomial_equal": false,
+      "differing_terms": 7,
+      "nonzero_winding_actual": 4,
+      "differing_zero_winding_terms": 3,
+      "r_equal": false,
+      "flat_correction": 7146
+    },
+    {
+      "L": 6,
+      "sigma": 1,
+      "full_polynomial_equal": false,
+      "differing_terms": 7,
+      "nonzero_winding_actual": 4,
+      "differing_zero_winding_terms": 3,
+      "r_equal": false,
+      "flat_correction": 7146
+    },
+    {
+      "L": 16,
+      "sigma": -1,
+      "full_polynomial_equal": true,
+      "differing_terms": 0,
+      "nonzero_winding_actual": 0,
+      "differing_zero_winding_terms": 0,
+      "r_equal": true,
+      "flat_correction": 7152
+    },
+    {
+      "L": 16,
+      "sigma": 1,
+      "full_polynomial_equal": true,
+      "differing_terms": 0,
+      "nonzero_winding_actual": 0,
+      "differing_zero_winding_terms": 0,
+      "r_equal": true,
+      "flat_correction": 7152
+    }
+  ],
+  "r_support_edges": 67,
+  "ell_dot_r": "6200",
+  "r_minus_1675ell_norm_squared": "227520",
+  "numeric": [
+    {
+      "L": 6,
+      "vacuum_ell_variance": 0.7954185754891875,
+      "vacuum_r_variance": 1977419.8378056544,
+      "vacuum_cross": 1243.3761669922774,
+      "selected_vacuum_power_in_kappa_over_tau_units": 310.84404174806934,
+      "one_particle_added_power_range_in_kappa_over_tau_units": [
+        -2.691888263491876,
+        624.3799717596305
+      ],
+      "full_one_particle_power_range_in_kappa_over_tau_units": [
+        308.15215348457747,
+        935.2240135076999
+      ],
+      "output_flat_H4": -62190,
+      "vacuum_gain_limit_in_kappa_over_tau_units": -6183.385151209071,
+      "vacuum_anticommutator_subtrahend_limit_in_kappa_over_tau_units": -6494.229192957141,
+      "covariance_cauchy_gap": 26892.17788702622
+    },
+    {
+      "L": 16,
+      "vacuum_ell_variance": 0.7958588527704437,
+      "vacuum_r_variance": 1982542.0525253583,
+      "vacuum_cross": 1245.352403774519,
+      "selected_vacuum_power_in_kappa_over_tau_units": 311.33810094362974,
+      "one_particle_added_power_range_in_kappa_over_tau_units": [
+        -2.690524691437986,
+        625.3667265786975
+      ],
+      "full_one_particle_power_range_in_kappa_over_tau_units": [
+        308.64757625219175,
+        936.7048275223272
+      ],
+      "output_flat_H4": -1307664,
+      "vacuum_gain_limit_in_kappa_over_tau_units": -130089.49635615118,
+      "vacuum_anticommutator_subtrahend_limit_in_kappa_over_tau_units": -130400.83445709481,
+      "covariance_cauchy_gap": 26921.03390501975,
+      "harmonic_vacuum_characteristic_rows": [
+        {
+          "g": 0.2,
+          "magnetic_power_in_kappa_over_tau_units": 308.42605065460367,
+          "limiting_power": 311.33810094362974,
+          "error": -2.9120502890260695
+        },
+        {
+          "g": 0.1,
+          "magnetic_power_in_kappa_over_tau_units": 310.60641130302497,
+          "limiting_power": 311.33810094362974,
+          "error": -0.7316896406047704
+        },
+        {
+          "g": 0.05,
+          "magnetic_power_in_kappa_over_tau_units": 311.15494753558363,
+          "limiting_power": 311.33810094362974,
+          "error": -0.1831534080461097
+        },
+        {
+          "g": 0.025,
+          "magnetic_power_in_kappa_over_tau_units": 311.29229813570834,
+          "limiting_power": 311.33810094362974,
+          "error": -0.045802807921404565
+        },
+        {
+          "g": 0.0125,
+          "magnetic_power_in_kappa_over_tau_units": 311.32664933786515,
+          "limiting_power": 311.33810094362974,
+          "error": -0.011451605764591477
+        }
+      ]
+    },
+    {
+      "L": 20,
+      "vacuum_ell_variance": 0.795863913723425,
+      "vacuum_r_variance": 1982558.148763616,
+      "vacuum_cross": 1245.3614305040558,
+      "selected_vacuum_power_in_kappa_over_tau_units": 311.34035762601394,
+      "one_particle_added_power_range_in_kappa_over_tau_units": [
+        -2.6905412775891477,
+        625.3712565296171
+      ],
+      "full_one_particle_power_range_in_kappa_over_tau_units": [
+        308.6498163484248,
+        936.711614155631
+      ],
+      "output_flat_H4": -2560848,
+      "vacuum_gain_limit_in_kappa_over_tau_units": -254760.8139663507,
+      "vacuum_anticommutator_subtrahend_limit_in_kappa_over_tau_units": -255072.1543239767,
+      "covariance_cauchy_gap": 26921.394872171804
+    }
+  ],
+  "indefinite_added_one_particle_form": true,
+  "source_sha256": "46fe9108532a225e608de7aa8349caaafd8d10e86f11f135a82816f3b8bacaa1"
+}

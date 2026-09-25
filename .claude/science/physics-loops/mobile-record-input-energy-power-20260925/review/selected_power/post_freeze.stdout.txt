@@ -1,0 +1,217 @@
+{
+  "phase": "Released-source POST",
+  "created_utc": "2026-09-25T00:26:17.525947+00:00",
+  "author_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/AUTHOR_SEAL.json",
+      "frozen_path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 2739,
+      "sha256": "b0378a615fdaaca99e563a78e4e1361a19635976e114e2f04f5e5485ceb8a69c",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/CONTROL.stderr",
+      "frozen_path": "post_sources/author/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/CONTROL.stdout",
+      "frozen_path": "post_sources/author/CONTROL.stdout",
+      "bytes": 1108502,
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/EXECUTION.json",
+      "frozen_path": "post_sources/author/EXECUTION.json",
+      "bytes": 200,
+      "sha256": "a28145200af5625e11441ee976d9a13d96ad71b3ab94a35bac05645edf6be677",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "frozen_path": "post_sources/author/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "bytes": 11240,
+      "sha256": "dc34643135d5b31b627420ba6bc325b7d5b5dbf9095e6801d25b26d1dd8c66c6",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE.stderr",
+      "frozen_path": "post_sources/author/POSITIVE.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE.stdout",
+      "frozen_path": "post_sources/author/POSITIVE.stdout",
+      "bytes": 5092,
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE_EXECUTION.json",
+      "frozen_path": "post_sources/author/POSITIVE_EXECUTION.json",
+      "bytes": 308,
+      "sha256": "7e0e6361822bf06aa7d8a5493e7aab0de0995dd5648bb451de49165078742e47",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_POLYNOMIAL_RESULTS.json",
+      "frozen_path": "post_sources/author/POWER_POLYNOMIAL_RESULTS.json",
+      "bytes": 1108502,
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_POSITIVE_CERTIFICATE.json",
+      "frozen_path": "post_sources/author/POWER_POSITIVE_CERTIFICATE.json",
+      "bytes": 5092,
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_SPECTRAL_RESULTS.json",
+      "frozen_path": "post_sources/author/POWER_SPECTRAL_RESULTS.json",
+      "bytes": 14941,
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/ROOT_REVIEW.json",
+      "frozen_path": "post_sources/author/ROOT_REVIEW.json",
+      "bytes": 1000,
+      "sha256": "a87dbbdcb534b42e17fdb5904c13d34b73d44c1f5497fee63621aa5e0b63fdf2",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SOURCE_PINS.json",
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 2210,
+      "sha256": "2188fd68dce582e4f86db868cd9ba9ca763aaa86675655e9d4a9ac97befb95d3",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL.stderr",
+      "frozen_path": "post_sources/author/SPECTRAL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL.stdout",
+      "frozen_path": "post_sources/author/SPECTRAL.stdout",
+      "bytes": 14941,
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL_EXECUTION.json",
+      "frozen_path": "post_sources/author/SPECTRAL_EXECUTION.json",
+      "bytes": 200,
+      "sha256": "aef16985f23d9754d22910d37d0899700775e0e6f142089d4472e055bea20faa",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/power_positive_certificate.py",
+      "frozen_path": "post_sources/author/power_positive_certificate.py",
+      "bytes": 3020,
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/power_spectral_controls.py",
+      "frozen_path": "post_sources/author/power_spectral_controls.py",
+      "bytes": 3970,
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+      "role": "released root source or author evidence; never executed or imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/selected_power_polynomial.py",
+      "frozen_path": "post_sources/author/selected_power_polynomial.py",
+      "bytes": 4979,
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+      "role": "released root source or author evidence; never executed or imported"
+    }
+  ],
+  "reused_PRE_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/local_pair.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "supplied full-P local H4 and original mark"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/common_limit.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "supplied full electric form, Hamiltonian and GKLS model"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/weak_packets.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "role": "normalized compact packets; transverse quotient and zero electric winding"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "frozen_path": "sources/prepared_note.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259,
+      "role": "section B exact J_- preparation and C.2 alternatives; other observation claims not imported"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/PRE.md",
+      "frozen_path": "sources/prior_PRE.md",
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589",
+      "bytes": 27226,
+      "role": "explicit prior independent background"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/PRE_SEAL.json",
+      "frozen_path": "sources/prior_PRE_SEAL.json",
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+      "bytes": 5991,
+      "role": "prior evidence identity"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/POST.md",
+      "frozen_path": "sources/prior_POST.md",
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee",
+      "bytes": 23192,
+      "role": "explicit prior released-source comparison background"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/POST_SEAL.json",
+      "frozen_path": "sources/prior_POST_SEAL.json",
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+      "bytes": 6733,
+      "role": "prior evidence identity"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "frozen_path": "sources/workflow.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "previously read unchanged procedure"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "frozen_path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "previously read unchanged procedure"
+    }
+  ],
+  "PRE_seal_sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+  "PRE_members_unchanged": 65,
+  "author_seal_members": 18,
+  "author_private_reuse_references_followed": false,
+  "forbidden_other_packets_read": false,
+  "author_code_run_or_imported": false
+}

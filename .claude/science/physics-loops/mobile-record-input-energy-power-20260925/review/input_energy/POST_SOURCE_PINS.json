@@ -1,0 +1,134 @@
+{
+  "created_utc": "2026-09-24T23:58:38.405857+00:00",
+  "author_inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "5feb53d99a0e1008019ff4563c16ba880ab3ab6e38fee5fd2682e62f081ee157",
+      "bytes": 13081
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/CONTROL.stderr",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/CONTROL.stdout",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/CONTROL.stdout",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "bytes": 425563
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ENERGY_POLYNOMIAL_RESULTS.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ENERGY_POLYNOMIAL_RESULTS.json",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "bytes": 425563
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ENERGY_SPECTRAL_RESULTS.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "bytes": 133672
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/EXECUTION.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/EXECUTION.json",
+      "sha256": "d19bcffe62cb6a8ba89c510114af76c461db58e2b35c1ac60ecd1add1451b113",
+      "bytes": 201
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/PRESEAL_ELECTRIC_CORRECTION.md",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/PRESEAL_ELECTRIC_CORRECTION.md",
+      "sha256": "a2fb49dfe4f567dc226bb89bfc7cbd46236a8575a5132933a529ed42d0ca7cb3",
+      "bytes": 897
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ROOT_REVIEW.md",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/ROOT_REVIEW.md",
+      "sha256": "c362fd8417bbcc0c14acf3ce35601bb13f339b9bdd9710f36a3e00258379bcf9",
+      "bytes": 1593
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SOURCE_PINS.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SOURCE_PINS.json",
+      "sha256": "86f22245e10d07575237c6e8e44e1aee2b3caab66882d9ae71abcfb2f4ecb36d",
+      "bytes": 1853
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL.stderr",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL.stdout",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL.stdout",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "bytes": 133672
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL_EXECUTION.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/SPECTRAL_EXECUTION.json",
+      "sha256": "fc94d17d74b59ce488310f1f5114068953e5097ac41a7d7e7418b3f519343149",
+      "bytes": 200
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/energy_spectral_controls.py",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "bytes": 6387
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "c3acc0d5aadf55e2434c2f7e577bd45624fdb84bbef08b02b7b9c9be94b39adf",
+      "bytes": 12017
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "bytes": 132679
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL.stderr",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL.stdout",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL.stdout",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "bytes": 132679
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json",
+      "sha256": "e37c9ceb6de5f1db9f3de02158e776da6b762ef04a098a26903c8889ced7910a",
+      "bytes": 200
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/energy_spectral_controls.py",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/history/pre-electric-occupancy-correction/energy_spectral_controls.py",
+      "sha256": "602091cef199b21c239920a2e8732e910fa0daf2145e57a1d0d1dc4cc6756225",
+      "bytes": 5430
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/prepared_energy_polynomial.py",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "bytes": 4344
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/AUTHOR_SEAL.json",
+      "frozen_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "4dd7d35946c80fda3c70322c5ee61b475ea9f5fba4fde7a0e7cbae3521ed23cd",
+      "bytes": 3302
+    }
+  ],
+  "preserved_PRE_seal_sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+  "preserved_PRE_members": 45,
+  "external_source_handling": "Root SOURCE_PINS was read as metadata. The optical packet it names was not opened; the needed cube estimate is fully in the released note. The old flat helper was not opened or executed."
+}

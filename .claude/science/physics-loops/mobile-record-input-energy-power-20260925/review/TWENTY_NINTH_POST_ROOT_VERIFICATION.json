@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-25T00:22:39.408920+00:00",
+  "POST_sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0",
+  "POST_seal_sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80",
+  "POST_members_verified": 42,
+  "unchanged_PRE_members": 45,
+  "live_author_origins": 21,
+  "full_read": [
+    "POST proof and limits",
+    "post_bind_and_compare.py, post_fft_control.py, post_verify_evidence.py",
+    "All 12 current/historical correction rows and 44 values each",
+    "Complete independent FFT rows and all comparison errors",
+    "Execution/correction records and coordinate-failure disposition"
+  ],
+  "exact_correspondence_scope": "282 coefficients, 140 fillings and 532 pair summaries verified by reviewed exact comparison; no manual reconstruction of every repeated row claimed. Fresh root run only read-only evidence verifier.",
+  "required_public_repair": "Input mean-energy difference is invariant under additive energy zero; retain original sealed wording and correction history.",
+  "scope": "Conditional input mean-energy theorem supported; optional optical identification not independently physically validated. No audit verdict."
+}

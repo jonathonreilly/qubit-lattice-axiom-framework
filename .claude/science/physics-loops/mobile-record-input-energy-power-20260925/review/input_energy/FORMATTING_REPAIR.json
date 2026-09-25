@@ -1,0 +1,7 @@
+{
+  "draft_sha256": "4debb0fd61afa85df2e59802792c804519a2c12a7439b0e638c6abcae04b0716",
+  "corrected_note_sha256": "b5b043bead3e6bbfd5865adee2bb50caf86851540c06a0a928701d9cb95244e7",
+  "inline_parenthetical_expressions_repaired": 187,
+  "display_equations_unchanged": true,
+  "scope": "draft formatting repair before sealing"
+}

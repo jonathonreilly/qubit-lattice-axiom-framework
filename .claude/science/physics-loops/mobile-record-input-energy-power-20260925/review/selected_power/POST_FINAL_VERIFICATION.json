@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-09-25T00:45:09.518203+00:00",
+  "scope": "Final exact-source and execution verification; no scientific rerun or audit verdict",
+  "source_sha256": "d735a1cf26ca6809933a81b8a583cb3e9be0a7f8bede77852c0dbd3a541c75df",
+  "PRE_seal_sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+  "PRE_members_unchanged": 65,
+  "released_author_files_plus_seal_unchanged": 19,
+  "prior_live_origins_unchanged": 10,
+  "own_execution_log_bindings": [
+    {
+      "label": "post_freeze",
+      "script_sha256": "f17bbe6146d2e914f5a7d100e2ff53476e37da788c9e10a2f00e488cd1fca194",
+      "stdout_sha256": "d4602c1b61e9a35a202d4da07c2b90884717d8e557e5bd1cb615b7c2ba6b9c0d",
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.08724762499332428
+    },
+    {
+      "label": "post_check",
+      "script_sha256": "b377af836456c2c3e1e413d16c6457de879121d1177d1ddba4b46a17917c2cc8",
+      "stdout_sha256": "ac608d834cb1068f002e9cecdaa980b40b4b098315992cf6b0067ec0d5acc9d6",
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.46282616700045764
+    }
+  ],
+  "refreshed_main_exact_git_sources": [
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "show",
+        "b47a67e3a08febd2aaf3545eae9a278b4901a72d:docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_bytes": 10953,
+      "stdout_sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "complete_stdout_retained_at": "sources/local_pair.md",
+      "equals_PRE_source_bytes": true
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "show",
+        "b47a67e3a08febd2aaf3545eae9a278b4901a72d:docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_bytes": 14902,
+      "stdout_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "complete_stdout_retained_at": "sources/common_limit.md",
+      "equals_PRE_source_bytes": true
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "show",
+        "b47a67e3a08febd2aaf3545eae9a278b4901a72d:docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "stdout_bytes": 19851,
+      "stdout_sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "complete_stdout_retained_at": "sources/weak_packets.md",
+      "equals_PRE_source_bytes": true
+    }
+  ],
+  "checker_imports": [
+    "collections",
+    "datetime",
+    "fractions",
+    "itertools",
+    "pathlib",
+    "hashlib",
+    "json",
+    "math",
+    "time",
+    "numpy"
+  ],
+  "author_imports_or_execution": false,
+  "report_sha256": "83e9fa441b7fbee49d1b7e24708dcd15a7d0641abbba3efb57065f188d7a80e4",
+  "report_bytes": 20039,
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "numpy_version": "2.4.4",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+}

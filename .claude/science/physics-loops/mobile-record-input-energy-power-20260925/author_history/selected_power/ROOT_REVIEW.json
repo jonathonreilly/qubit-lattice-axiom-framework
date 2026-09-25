@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-24T23:47:11.946226+00:00",
+  "coverage": [
+    "Complete three root programs and proof read",
+    "Power normalization and adjoint action personally derived",
+    "264 local pair support, remote cancellation and harmonic winding length checked",
+    "Exact Hessian factorization and all67 t entries inspected",
+    "32-plaquette filling read completely and all525 rational link equalities verified",
+    "All18 Fourier rows inspected, including empty band",
+    "All3 execution receipts, source hashes and stdout/result equality verified"
+  ],
+  "status": "Root authored conditional candidate, independent reconstruction required before promotion",
+  "failures": [],
+  "limitations": [
+    "No independently reconstructed result yet",
+    "No total all-channel flux or reservoir heat/work ledger",
+    "No finite-g laboratory count law or empirical identification",
+    "First spectral run intentionally retains then-pending electric proof label; note completes proof later"
+  ]
+}

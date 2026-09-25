@@ -1,0 +1,2446 @@
+{
+  "scope": "Independent POST comparisons and certificate checks; no author code imports.\n\nAuthor JSON is treated as data. The magnetic coefficient was reconstructed in\nthe sealed PRE. Plaquettes here are walked in A-to-B coordinates. No linear\nprogram is run and the released author programs are never executed.\n",
+  "created_utc": "2026-09-25T00:37:22.522970+00:00",
+  "source_sha256": "b377af836456c2c3e1e413d16c6457de879121d1177d1ddba4b46a17917c2cc8",
+  "bindings": {
+    "PRE_members_unchanged": 65,
+    "author_sources_frozen_and_live_equal": 19,
+    "earlier_live_origins_unchanged": 10,
+    "author_execution_correspondence": [
+      {
+        "script": "selected_power_polynomial.py",
+        "receipt": "EXECUTION.json",
+        "source_sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+        "stdout_result_sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+        "stdout_result_bytes": 1108502,
+        "stdout_equals_result": true,
+        "stderr_bytes": 0,
+        "recorded_execution_elapsed_seconds": 1.2106947919819504,
+        "internal_elapsed_seconds": 1.1766735408455133,
+        "independently_executed": false
+      },
+      {
+        "script": "power_spectral_controls.py",
+        "receipt": "SPECTRAL_EXECUTION.json",
+        "source_sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+        "stdout_result_sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+        "stdout_result_bytes": 14941,
+        "stdout_equals_result": true,
+        "stderr_bytes": 0,
+        "recorded_execution_elapsed_seconds": 0.4916321251075715,
+        "internal_elapsed_seconds": 0.3904643750283867,
+        "independently_executed": false
+      },
+      {
+        "script": "power_positive_certificate.py",
+        "receipt": "POSITIVE_EXECUTION.json",
+        "source_sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+        "stdout_result_sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+        "stdout_result_bytes": 5092,
+        "stdout_equals_result": true,
+        "stderr_bytes": 0,
+        "recorded_execution_elapsed_seconds": 1.0414613340981305,
+        "internal_elapsed_seconds": 0.014264250174164772,
+        "independently_executed": false
+      }
+    ],
+    "author_internal_result_dependency_hashes_exact": true,
+    "receipt_limit": "First two execution receipts bind code and exit/time only; stdout/result binding is by the unchanged author seal, not a new execution receipt."
+  },
+  "exact_coefficient_correspondence": {
+    "polynomial_rows": [
+      {
+        "sigma": -1,
+        "L": 16,
+        "words_compared_exactly": 303,
+        "PRE_stored_coefficient_divisor": 2,
+        "equals_PRE_L16": true,
+        "equals_PRE_infinite_lift": true,
+        "all_pair_rows_compared": 264,
+        "nonzero_pair_rows": 202,
+        "constant": "2794",
+        "coefficient_sum": "0",
+        "absolute_coefficient_sum": "6700",
+        "maximum_word_length": 8,
+        "exact_zero_divergence_and_zero_winding": true
+      },
+      {
+        "sigma": 1,
+        "L": 16,
+        "words_compared_exactly": 303,
+        "PRE_stored_coefficient_divisor": 2,
+        "equals_PRE_L16": true,
+        "equals_PRE_infinite_lift": true,
+        "all_pair_rows_compared": 264,
+        "nonzero_pair_rows": 202,
+        "constant": "2794",
+        "coefficient_sum": "0",
+        "absolute_coefficient_sum": "6700",
+        "maximum_word_length": 8,
+        "exact_zero_divergence_and_zero_winding": true
+      }
+    ],
+    "all_author_words_read_and_compared": 606,
+    "all_author_pair_rows_read_and_compared": 528,
+    "t_vector_edges_compared_exactly": 67,
+    "t_equals_PRE_r_after_orientation_conversion": true,
+    "hessian_entries": 520,
+    "hessian_full_matrix_rows": 86,
+    "hessian_full_matrix_equalities": 7396,
+    "hessian_factorization_exact": true,
+    "cp_H_cp": "49600",
+    "ell_dot_r": "6200"
+  },
+  "exact_filling": {
+    "source": "Released author certificate, checked against the independently sealed PRE r",
+    "candidate_faces": 375,
+    "link_equalities": 525,
+    "all_equalities_exact": true,
+    "supplied_nonzero_faces": 32,
+    "filling_l1": "646",
+    "baseline_coefficient": 1550,
+    "covariance_lower_multiple": 904,
+    "covariance_upper_multiple": 2196,
+    "altered_first_coefficient_by_one_is_rejected": true,
+    "negative_control_residual_edges": 4,
+    "all_face_rows": [
+      {
+        "origin": [
+          -1,
+          -1,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              -1,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              -1,
+              -1,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          0,
+          -1
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              0,
+              -1
+            ],
+            "b": [
+              -1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              -1,
+              0,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              -1,
+              1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          0,
+          -1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              0,
+              -1
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              -1,
+              0,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          0,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "10",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          0,
+          0
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-3",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              0,
+              1
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              -1,
+              0,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          0,
+          0
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              0,
+              1
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              -1,
+              0,
+              1
+            ],
+            "b": [
+              -1,
+              1,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              -1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              -1,
+              1,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          -1,
+          1,
+          -1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              -1,
+              1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              -1,
+              1,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              -1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -2,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              -2,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              -2,
+              0
+            ],
+            "b": [
+              1,
+              -2,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              1,
+              -2,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -1,
+          -1
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              -1,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              -1,
+              -1
+            ],
+            "b": [
+              1,
+              -1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              -1,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -1,
+          -1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              -1,
+              -1
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              -1,
+              -1
+            ],
+            "b": [
+              1,
+              -1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              1,
+              -1,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -1,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "98",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -1,
+          0
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              -1,
+              1
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              -1,
+              1
+            ],
+            "b": [
+              1,
+              -1,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              0,
+              -1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              1,
+              -1,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          -1,
+          1
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "2",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              -1,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              -1,
+              1
+            ],
+            "b": [
+              1,
+              -1,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              -1,
+              1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          -2
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              -2
+            ],
+            "b": [
+              0,
+              1,
+              -2
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              -2
+            ],
+            "b": [
+              1,
+              0,
+              -2
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              0,
+              1,
+              -2
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              1,
+              0,
+              -2
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          -1
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "93",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          -1
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "-1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              0,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "23",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-94",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "93",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              2
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              2
+            ],
+            "b": [
+              1,
+              0,
+              2
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              0,
+              2
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          0,
+          1
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              0,
+              2
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              0,
+              2
+            ],
+            "b": [
+              0,
+              1,
+              2
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              1,
+              2
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          1,
+          -2
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              1,
+              -2
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              0,
+              1,
+              -2
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          1,
+          -1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "98",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          1,
+          -1
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "-1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              -1
+            ],
+            "b": [
+              0,
+              2,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              2,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              2,
+              0
+            ],
+            "b": [
+              0,
+              2,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          1,
+          0
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-4",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              1,
+              1,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              1,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          0,
+          1,
+          0
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              0,
+              1,
+              1
+            ],
+            "b": [
+              0,
+              2,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              2,
+              0
+            ],
+            "b": [
+              0,
+              1,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              0,
+              2,
+              0
+            ],
+            "b": [
+              0,
+              2,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          -1,
+          0
+        ],
+        "mu": 0,
+        "nu": 1,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              -1,
+              0
+            ],
+            "b": [
+              2,
+              -1,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              2,
+              -1,
+              0
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          0,
+          -2
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "-1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              0,
+              -2
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              1,
+              0,
+              -2
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              -2
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          0,
+          -1
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              2,
+              0,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              2,
+              0,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          0,
+          -1
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "-98",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              -1
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              1,
+              -1
+            ],
+            "value": "-1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "mu": 0,
+        "nu": 2,
+        "coefficient": "-1",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              2,
+              0,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              2,
+              0,
+              0
+            ],
+            "b": [
+              2,
+              0,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "mu": 1,
+        "nu": 2,
+        "coefficient": "4",
+        "independent_A_to_B_boundary": [
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "1"
+          },
+          {
+            "a": [
+              1,
+              0,
+              1
+            ],
+            "b": [
+              1,
+              1,
+              1
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              0,
+              0
+            ],
+            "value": "-1"
+          },
+          {
+            "a": [
+              1,
+              1,
+              0
+            ],
+            "b": [
+              1,
+              1,
+              1
+            ],
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "optimizer_run": false,
+    "optimizer_tolerance_or_optimality_used": false
+  },
+  "own_low_band_control": {
+    "scope": "Independent finite Fourier locality/band check at L16; theorem proved analytically in POST",
+    "L": 16,
+    "nonzero_momenta": 4095,
+    "transverse_residual": 2.220446049250313e-16,
+    "vacuum_plaquette_covariance": 0.7958588527704435,
+    "equals_PRE_value_within_roundoff": true,
+    "rows": [
+      {
+        "L": 16,
+        "epsilon": 0.1,
+        "nonzero_momenta": 0,
+        "momentum_count_bound": 1.7280000000000004,
+        "restricted_plaquette_covariance": 0.0,
+        "covariance_bound": 2.1093750000000005e-05,
+        "empty_band": true,
+        "maximum_deviation_over_32_certificate_face_covariances": 0.0
+      },
+      {
+        "L": 16,
+        "epsilon": 0.2,
+        "nonzero_momenta": 0,
+        "momentum_count_bound": 13.824000000000003,
+        "restricted_plaquette_covariance": 0.0,
+        "covariance_bound": 0.00033750000000000007,
+        "empty_band": true,
+        "maximum_deviation_over_32_certificate_face_covariances": 0.0
+      },
+      {
+        "L": 16,
+        "epsilon": 0.4,
+        "nonzero_momenta": 6,
+        "momentum_count_bound": 110.59200000000003,
+        "restricted_plaquette_covariance": 0.00019051789259387527,
+        "covariance_bound": 0.005400000000000001,
+        "empty_band": false,
+        "maximum_deviation_over_32_certificate_face_covariances": 5.421010862427522e-20
+      },
+      {
+        "L": 16,
+        "epsilon": 0.7,
+        "nonzero_momenta": 26,
+        "momentum_count_bound": 592.7039999999998,
+        "restricted_plaquette_covariance": 0.0011693660940539298,
+        "covariance_bound": 0.05064609374999999,
+        "empty_band": false,
+        "maximum_deviation_over_32_certificate_face_covariances": 4.336808689942018e-19
+      },
+      {
+        "L": 16,
+        "epsilon": 1.0,
+        "nonzero_momenta": 80,
+        "momentum_count_bound": 1728.0,
+        "restricted_plaquette_covariance": 0.005063833313979617,
+        "covariance_bound": 0.2109375,
+        "empty_band": false,
+        "maximum_deviation_over_32_certificate_face_covariances": 1.734723475976807e-18
+      },
+      {
+        "L": 16,
+        "epsilon": 2.0,
+        "nonzero_momenta": 909,
+        "momentum_count_bound": 13824.0,
+        "restricted_plaquette_covariance": 0.11875940597750588,
+        "covariance_bound": 3.375,
+        "empty_band": false,
+        "maximum_deviation_over_32_certificate_face_covariances": 2.7755575615628914e-17
+      }
+    ],
+    "author_L32_L64_reexecuted": false,
+    "interval_arithmetic": false
+  },
+  "author_spectral_arithmetic": {
+    "all_rows_read": 18,
+    "L16_agrees_with_sealed_PRE": true,
+    "units": "Root tables: kappa/(4 tau); PRE power tables: kappa/tau.",
+    "scope": "All stored scalar arithmetic and bounds checked; no new independent reproduction of L32/L64 sums.",
+    "historical_pending_electric_proof_label_preserved": "All power rows are in kappa/(4 tau); electric contribution tends to zero, proof pending.",
+    "graph_rows": [
+      {
+        "L": 16,
+        "v_p": 0.7958588527704435,
+        "covariance": 1245.3524037745194,
+        "rows": [
+          {
+            "epsilon": 0.2,
+            "empty": true,
+            "theorem_band": true,
+            "arithmetic_fields_available": false
+          },
+          {
+            "epsilon": 0.4,
+            "empty": false,
+            "reference_mu": 0.3901806440322569,
+            "vacuum_magnetic_power_units": 1245.3524037745194,
+            "one_minus_vacuum_power_units": 0.6780007666723373,
+            "one_magnetic_power_units": 1246.0304045411917,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 0.7,
+            "empty": false,
+            "reference_mu": 0.572128394768272,
+            "vacuum_magnetic_power_units": 1245.3524037745194,
+            "one_minus_vacuum_power_units": 4.14363726586097,
+            "one_magnetic_power_units": 1249.4960410403803,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 1.0,
+            "empty": false,
+            "reference_mu": 0.816638468180261,
+            "vacuum_magnetic_power_units": 1245.3524037745194,
+            "one_minus_vacuum_power_units": 17.824750743115644,
+            "one_magnetic_power_units": 1263.177154517635,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 2.0,
+            "empty": false,
+            "reference_mu": 1.6870172190886656,
+            "vacuum_magnetic_power_units": 1245.3524037745194,
+            "one_minus_vacuum_power_units": 400.4079213648156,
+            "one_magnetic_power_units": 1645.760325139335,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 3.5,
+            "empty": false,
+            "reference_mu": 2.5130084223324927,
+            "vacuum_magnetic_power_units": 1245.3524037745194,
+            "one_minus_vacuum_power_units": 2490.704807549039,
+            "one_magnetic_power_units": 3736.0572113235585,
+            "theorem_band": false,
+            "arithmetic_fields_available": true
+          }
+        ]
+      },
+      {
+        "L": 32,
+        "v_p": 0.7958668811554088,
+        "covariance": 1245.3667237736254,
+        "rows": [
+          {
+            "epsilon": 0.2,
+            "empty": false,
+            "reference_mu": 0.1960342806591214,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 0.04266301973938108,
+            "one_magnetic_power_units": 1245.4093867933648,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 0.4,
+            "empty": false,
+            "reference_mu": 0.31260462269692624,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 0.3463246189729391,
+            "one_magnetic_power_units": 1245.7130483925982,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 0.7,
+            "empty": false,
+            "reference_mu": 0.5675533961618602,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 3.895375321888055,
+            "one_magnetic_power_units": 1249.2620990955133,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 1.0,
+            "empty": false,
+            "reference_mu": 0.8101706872403114,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 16.66071491852167,
+            "one_magnetic_power_units": 1262.0274386921471,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 2.0,
+            "empty": false,
+            "reference_mu": 1.6703056114845563,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 381.85533935912645,
+            "one_magnetic_power_units": 1627.2220631327518,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 3.5,
+            "empty": false,
+            "reference_mu": 2.512983072114368,
+            "vacuum_magnetic_power_units": 1245.3667237736254,
+            "one_minus_vacuum_power_units": 2490.7334475472508,
+            "one_magnetic_power_units": 3736.100171320876,
+            "theorem_band": false,
+            "arithmetic_fields_available": true
+          }
+        ]
+      },
+      {
+        "L": 64,
+        "v_p": 0.7958673809958539,
+        "covariance": 1245.3676154519667,
+        "rows": [
+          {
+            "epsilon": 0.2,
+            "empty": false,
+            "reference_mu": 0.1566992944811666,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 0.021722372489755674,
+            "one_magnetic_power_units": 1245.3893378244563,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 0.4,
+            "empty": false,
+            "reference_mu": 0.3082012052965781,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 0.3363939854966702,
+            "one_magnetic_power_units": 1245.7040094374634,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 0.7,
+            "empty": false,
+            "reference_mu": 0.561794078710386,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 3.7429310481623856,
+            "one_magnetic_power_units": 1249.110546500129,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 1.0,
+            "empty": false,
+            "reference_mu": 0.8048639733371042,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 16.235806272131306,
+            "one_magnetic_power_units": 1261.603421724098,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 2.0,
+            "empty": false,
+            "reference_mu": 1.6682731520300829,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 379.72631903789363,
+            "one_magnetic_power_units": 1625.0939344898602,
+            "theorem_band": true,
+            "arithmetic_fields_available": true
+          },
+          {
+            "epsilon": 3.5,
+            "empty": false,
+            "reference_mu": 2.5129814938481805,
+            "vacuum_magnetic_power_units": 1245.3676154519667,
+            "one_minus_vacuum_power_units": 2490.735230903934,
+            "one_magnetic_power_units": 3736.1028463559005,
+            "theorem_band": false,
+            "arithmetic_fields_available": true
+          }
+        ]
+      }
+    ]
+  },
+  "scalar_domain_diagnostic": {
+    "integer_rows_checked": 804,
+    "minimum_nonnegative_gap": 0,
+    "inequality": "E(E-sigma) <= 2 E(E-q) + 2, E integer and q,sigma in {-1,1}",
+    "limit": "Bounded diagnostic only; complete integer proof and original B path/mask argument are in POST."
+  },
+  "author_code_run_or_imported": false,
+  "forbidden_references_followed": false,
+  "elapsed_seconds": 0.27608724986203015
+}

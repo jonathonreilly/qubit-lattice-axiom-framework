@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-24T23:52:16.062230+00:00",
+  "PRE_sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9",
+  "PRE_seal_sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+  "verified_members": 45,
+  "source_origins": 13,
+  "certificate_verification_sha256": "28b2fe8b42261ed59e31a0bd21070915534b69963a7a42968eb6dc7670b2b124",
+  "read_scope": [
+    "Complete independent PRE proof",
+    "Complete4 scientific scripts and mechanical verifier",
+    "Complete magnetic/combinatorial/electric/Fourier results, including14 band rows,2 witnesses,8 finite-g Gaussian rows,8 electric evaluations and24 B-pair count rows",
+    "All execution/failure records; exact entire source and coefficient/surface identities verified mechanically"
+  ],
+  "judgment": "Independent magnetic compression and full electric form agree structurally. The distinct witness, sharper symmetry-based band bound, equal-reference-energy variation and energy-tail formulas are independent PRE additions, not claims of prior root authorship.",
+  "limits": [
+    "No author released before sealed PRE and this root read/verification",
+    "Side6/8 exact coefficients checked; side10 combinatorial construction is separately attributed, not a direct16 computation",
+    "No publication/audit verdict, empirical photon identification, absorption or finite-g laboratory error"
+  ],
+  "next": "Release sealed root29 plus preserved electric-occupancy correction/history for scoped POST. Keep root30 hidden."
+}

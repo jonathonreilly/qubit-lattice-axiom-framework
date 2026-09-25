@@ -1,0 +1,8 @@
+{
+  "sealed_utc": "2026-09-24T23:49:17.223205+00:00",
+  "members": 45,
+  "PRE_sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9",
+  "PRE_SEAL_sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+  "SOURCE_PINS_sha256": "9642c898dc188abc7d4c149f92c728c711f519642e18d86dea1fee7425208037",
+  "every_member_verified_after_sealing": true
+}

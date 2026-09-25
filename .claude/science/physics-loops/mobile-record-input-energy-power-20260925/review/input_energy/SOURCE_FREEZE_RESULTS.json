@@ -1,0 +1,6 @@
+{
+  "sources": 13,
+  "all_named_expected_hashes_match": true,
+  "all_nine_working_source_files_equal_pinned_git_bytes": true,
+  "source_pins_sha256": "9642c898dc188abc7d4c149f92c728c711f519642e18d86dea1fee7425208037"
+}

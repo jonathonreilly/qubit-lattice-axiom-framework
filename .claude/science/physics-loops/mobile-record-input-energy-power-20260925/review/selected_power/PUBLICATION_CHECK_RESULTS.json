@@ -1,0 +1,264 @@
+{
+  "created_utc": "2026-09-25T01:06:29.187422+00:00",
+  "source_sha256": "1f7cbf4829f5be220fb64a41448f5c88b39547fe0a3ab433abbe02ddab21dadd",
+  "scope": "Scoped publication correspondence only: no primary or author execution.\n\nPart B is compared to the unchanged released-source POST. Other declared\ninputs are hashed as opaque bytes solely to recompute the complete cache\nfingerprint; Part A science and other personal/checker packets are not read.\n",
+  "preserved_PRE_POST": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+      "unchanged_members": 65
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "583af00f065fbc2d9c5de9fff379b441f9c09a67cad630612380929329932369",
+      "unchanged_members": 38
+    }
+  ],
+  "source_count": 20,
+  "note_sha256": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+  "runner_sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+  "scoped_note_lines": {
+    "front_matter": [
+      1,
+      53
+    ],
+    "Part_B": [
+      308,
+      522
+    ],
+    "shared_footer": [
+      523,
+      561
+    ]
+  },
+  "Part_B_exact_author_body_except_declared_amendments": true,
+  "amendment_count": 4,
+  "amendment_roles": [
+    "Explicit psi and Bpsi electric domain",
+    "Smooth-packet weighted derivative precision",
+    "Rename excluded Part A reference",
+    "Actual independent PRE/POST attribution"
+  ],
+  "power_runtime_sources": [
+    {
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/selected_power_polynomial.py",
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+      "bytes": 4979,
+      "exact_prior_POST_source_bytes": true,
+      "full_AST_identical": true,
+      "function_definitions": [
+        "word_sum",
+        "neg",
+        "cross",
+        "control",
+        "loc",
+        "near",
+        "hop",
+        "bare_creation",
+        "B",
+        "Bstar"
+      ],
+      "code_executed_or_imported": false
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/power_spectral_controls.py",
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+      "bytes": 3970,
+      "exact_prior_POST_source_bytes": true,
+      "full_AST_identical": true,
+      "function_definitions": [
+        "canon_word",
+        "ft",
+        "run"
+      ],
+      "code_executed_or_imported": false
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/runtime/power/power_positive_certificate.py",
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+      "bytes": 3020,
+      "exact_prior_POST_source_bytes": true,
+      "full_AST_identical": true,
+      "function_definitions": [
+        "face",
+        "run"
+      ],
+      "code_executed_or_imported": false
+    }
+  ],
+  "new_scientific_reruns": 0,
+  "whole_result_sha256": "8301e6c5263d2842e1d129b1f30357c659a05fec09a6f11924ab4ec5d0256632",
+  "Part_B_payload": [
+    {
+      "result": "POWER_POLYNOMIAL_RESULTS.json",
+      "old_sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+      "fresh_stage": {
+        "program": "selected_power_polynomial.py",
+        "code_sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b",
+        "result": "POWER_POLYNOMIAL_RESULTS.json",
+        "stdout_sha256": "0cbf8e4d41684f534f0f6f1dc1bd710c3c27eac73ec16b969fdbd3552d03819a",
+        "stdout_bytes": 1108502,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 1.2208481668494642
+      },
+      "fresh_stage_bytes_reconstructed_exactly": true,
+      "scientific_leaf_counts": {
+        "str": 1141,
+        "int": 32452
+      },
+      "all_scientific_leaves_and_types_exact": true,
+      "allowed_top_level_changes": {
+        "elapsed_seconds": {
+          "old": 1.1766735408455133,
+          "fresh": 1.1749041669536382
+        }
+      }
+    },
+    {
+      "result": "POWER_SPECTRAL_RESULTS.json",
+      "old_sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+      "fresh_stage": {
+        "program": "power_spectral_controls.py",
+        "code_sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633",
+        "result": "POWER_SPECTRAL_RESULTS.json",
+        "stdout_sha256": "fb1d3c29f65408710e8ebdad4e9ad1584de0f063e4eda17a3a0c7eff4cab0374",
+        "stdout_bytes": 14940,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.5443628330249339
+      },
+      "fresh_stage_bytes_reconstructed_exactly": true,
+      "scientific_leaf_counts": {
+        "str": 71,
+        "bool": 19,
+        "int": 272,
+        "float": 92
+      },
+      "all_scientific_leaves_and_types_exact": true,
+      "allowed_top_level_changes": {
+        "elapsed_seconds": {
+          "old": 0.3904643750283867,
+          "fresh": 0.452503832988441
+        },
+        "source_sha256": {
+          "old": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+          "fresh": "0cbf8e4d41684f534f0f6f1dc1bd710c3c27eac73ec16b969fdbd3552d03819a"
+        }
+      }
+    },
+    {
+      "result": "POWER_POSITIVE_CERTIFICATE.json",
+      "old_sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b",
+      "fresh_stage": {
+        "program": "power_positive_certificate.py",
+        "code_sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b",
+        "result": "POWER_POSITIVE_CERTIFICATE.json",
+        "stdout_sha256": "fb4294ee4d9dcf8b9ad93a28a1cd1e9bd46a8d2ce3009a39c5d506dbc3a19d3b",
+        "stdout_bytes": 5091,
+        "stderr_bytes": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 0.8008158328011632
+      },
+      "fresh_stage_bytes_reconstructed_exactly": true,
+      "scientific_leaf_counts": {
+        "str": 38,
+        "int": 162,
+        "bool": 2
+      },
+      "all_scientific_leaves_and_types_exact": true,
+      "allowed_top_level_changes": {
+        "elapsed_seconds": {
+          "old": 0.014264250174164772,
+          "fresh": 0.01713491603732109
+        },
+        "input_sha256": {
+          "old": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+          "fresh": "fb1d3c29f65408710e8ebdad4e9ad1584de0f063e4eda17a3a0c7eff4cab0374"
+        }
+      }
+    }
+  ],
+  "total_Part_B_nonruntime_leaf_counts": {
+    "str": 1250,
+    "int": 32886,
+    "bool": 21,
+    "float": 92
+  },
+  "unallowed_payload_changes": [],
+  "all_fresh_power_input_hashes_match_stage_bytes": true,
+  "complete_execution_stdout_equals_result_plus_trailer": true,
+  "execution_record_sha256": "67e4c75c06bbcaa98bbb4e9e3a9881c2a2ed90c6f38977fb1613bc812e97eccc",
+  "reported_API_elapsed_seconds": 3.958324909210205,
+  "primary_internal_elapsed_seconds": 3.8667462919838727,
+  "reported_exit_code": 0,
+  "reported_separate_stderr_bytes": 0,
+  "complete_merged_stdout_bytes": 2089805,
+  "cache_sha256": "e2b4b63baf8443841d70afa3a92024402e6a3260414c6dd760a39de0b3a720fd",
+  "cache_bytes": 200372,
+  "cache_exact_format_and_tail_of_execution": true,
+  "input_fingerprint_sha256": "54f912d616790c7c2956051ba6c2e70215fa1ae7cbebf9657de924dcc18e8336",
+  "declared_input_count": 13,
+  "all_declared_bytes_match_expected": true,
+  "freshness_scope": "Current content/fingerprint and captured execution/cache correspondence; no new primary execution or historical stat-token reconstruction",
+  "root_verification_process_record_only": true,
+  "Part_A_scientific_review": false,
+  "parent_hash_checks": [
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb1991dfa6971e449513fb8e29884376739d21cc",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "1217d914870dd275893a5e15774c4a70bcde37f5",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "117189ba595d3b62bfcd38a5891c75b87cc355b6",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    },
+    {
+      "path": "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "exact_git_and_publication_bytes": true,
+      "stdout_retained": "publication_sources/declared_inputs/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "new_scientific_review": false
+    }
+  ]
+}

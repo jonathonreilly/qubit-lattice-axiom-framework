@@ -1,0 +1,87 @@
+X zone constants by the exact one-dimensional representation: I = <1/sqrt S> = 0.91068810328886025104, J = <sqrt S> = 1.1938011214297952098 (30 digits); double-precision quadrature agrees to 2.2e-16, 1.5e-13
+X local threshold (landed T2, both the three-axis and the one-axis law): kappa_c = I/4 = 0.227672025822
+N midpoint grids: L = 32: I 0.90968367 (-1.0e-03), J 1.1938041727 (+3.1e-06), kappa_c 0.22742092; L = 64: I 0.91043837 (-2.5e-04), J 1.1938013091 (+1.9e-07), kappa_c 0.22760959; L = 128: I 0.91062575 (-6.2e-05), J 1.1938011331 (+1.2e-08), kappa_c 0.22765644; L = 256: I 0.91067252 (-1.6e-05), J 1.1938011222 (+7.3e-10), kappa_c 0.22766813
+N the grids' error in I falls by 4.02, 4.01, 4.00 per doubling (second order: 4)
+N the one-dimensional representation at gaps m^2 = 1 .. 1e10 against the 48^3 midpoint average: relative differences below 2.1e-10 (value), 3.3e-16 (derivative)
+X beyond second order the sea's gain is not analytic: (<sqrt(S+m^2)> - J - m^2 I/2)/m^4 at m = [0.02, 0.04, 0.08, 0.16]: -0.29000, -0.25482, -0.21950, -0.18374; slope in log m 0.05075, 0.05096, 0.05160 against 1/(2 pi^2) = 0.05066 (eight nodes, each a cone): F3 - F3(0) = (6 kappa - 3I/2) delta^2 + (9/(2 pi^2)) delta^4 log(1/delta) + O(delta^4), a POSITIVE quartic-log term
+N three axes, 6 kappa delta^2: kappa = 0.800 kappa_c = 0.182138: no critical point for delta > 0; F < F(0) for every delta > 0 on the scan
+N three axes, 6 kappa delta^2: kappa = 0.900 kappa_c = 0.204905: min at delta = 0.392021, F - F(0) = -0.00791743; max at delta = 1.347505, F - F(0) = +0.08752596; runaway branch crosses F(0) at delta = 1.707244 (T4 witness 10.259)
+N three axes, 6 kappa delta^2: kappa = 0.950 kappa_c = 0.216288: min at delta = 0.221652, F - F(0) = -0.00140474; max at delta = 1.517673, F - F(0) = +0.22864411; runaway branch crosses F(0) at delta = 1.987061 (T4 witness 10.495)
+N three axes, 6 kappa delta^2: kappa = 0.990 kappa_c = 0.225395: min at delta = 0.076040, F - F(0) = -0.00003568; max at delta = 1.628148, F - F(0) = +0.36412201; runaway branch crosses F(0) at delta = 2.156044 (T4 witness 10.685)
+N three axes, 6 kappa delta^2: kappa = 0.999 kappa_c = 0.227444: min at delta = 0.019465, F - F(0) = -0.00000024; max at delta = 1.650935, F - F(0) = +0.39717299; runaway branch crosses F(0) at delta = 2.190141 (T4 witness 10.727)
+N three axes, 6 kappa delta^2: kappa = 1.000 kappa_c = 0.227672: max at delta = 1.653426, F - F(0) = +0.40090184; runaway branch crosses F(0) at delta = 2.193857 (T4 witness 10.732)
+N three axes, 6 kappa delta^2: kappa = 1.001 kappa_c = 0.227900: max at delta = 1.655911, F - F(0) = +0.40464194; runaway branch crosses F(0) at delta = 2.197559 (T4 witness 10.737)
+N three axes, 6 kappa delta^2: kappa = 1.010 kappa_c = 0.229949: max at delta = 1.677933, F - F(0) = +0.43880574; runaway branch crosses F(0) at delta = 2.230266 (T4 witness 10.779)
+N three axes, 6 kappa delta^2: kappa = 1.050 kappa_c = 0.239056: max at delta = 1.769364, F - F(0) = +0.60133456; runaway branch crosses F(0) at delta = 2.364196 (T4 witness 10.969)
+N three axes, 6 kappa delta^2: kappa = 1.100 kappa_c = 0.250439: max at delta = 1.871821, F - F(0) = +0.82802061; runaway branch crosses F(0) at delta = 2.511276 (T4 witness 11.205)
+N three axes, 6 kappa delta^2: kappa = 1.250 kappa_c = 0.284590: max at delta = 2.127013, F - F(0) = +1.65266346; runaway branch crosses F(0) at delta = 2.867153 (T4 witness 11.915)
+N three axes, 6 kappa delta^2: kappa = 1.500 kappa_c = 0.341508: max at delta = 2.450880, F - F(0) = +3.45718092; runaway branch crosses F(0) at delta = 3.302773 (T4 witness 13.098)
+N three axes, 6 kappa delta^2: kappa = 2.000 kappa_c = 0.455344: max at delta = 2.910320, F - F(0) = +8.43168321; runaway branch crosses F(0) at delta = 3.898355 (T4 witness 15.464)
+N three axes, 6 kappa delta^2: kappa = 3.000 kappa_c = 0.683016: max at delta = 3.500385, F - F(0) = +22.71665175; runaway branch crosses F(0) at delta = 4.635182 (T4 witness 20.196)
+N three axes, 6 kappa delta^2: kappa = 5.000 kappa_c = 1.138360: max at delta = 4.191362, F - F(0) = +63.92741168; runaway branch crosses F(0) at delta = 5.469326 (T4 witness 29.660)
+N three axes, 6 kappa delta^2: kappa = 10.000 kappa_c = 2.276720: max at delta = 5.076009, F - F(0) = +214.48399474; runaway branch crosses F(0) at delta = 6.505782 (T4 witness 53.321)
+N one axis, 2 kappa delta^2: kappa = 0.800 kappa_c = 0.182138: no critical point for delta > 0; F < F(0) for every delta > 0 on the scan
+N one axis, 2 kappa delta^2: kappa = 0.900 kappa_c = 0.204905: no critical point for delta > 0; F < F(0) for every delta > 0 on the scan
+N one axis, 2 kappa delta^2: kappa = 0.950 kappa_c = 0.216288: no critical point for delta > 0; F < F(0) for every delta > 0 on the scan
+N one axis, 2 kappa delta^2: kappa = 0.990 kappa_c = 0.225395: no critical point for delta > 0; F < F(0) for every delta > 0 on the scan
+N one axis, 2 kappa delta^2: kappa = 0.999 kappa_c = 0.227444: min at delta = 0.055325, F - F(0) = -0.00000058; max at delta = 0.237962, F - F(0) = +0.00002418; runaway branch crosses F(0) at delta = 0.300043 (T4 witness 14.188)
+N one axis, 2 kappa delta^2: kappa = 1.000 kappa_c = 0.227672: max at delta = 0.260631, F - F(0) = +0.00005261; runaway branch crosses F(0) at delta = 0.336648 (T4 witness 14.196)
+N one axis, 2 kappa delta^2: kappa = 1.001 kappa_c = 0.227900: max at delta = 0.278817, F - F(0) = +0.00008582; runaway branch crosses F(0) at delta = 0.364594 (T4 witness 14.204)
+N one axis, 2 kappa delta^2: kappa = 1.010 kappa_c = 0.229949: max at delta = 0.380423, F - F(0) = +0.00054960; runaway branch crosses F(0) at delta = 0.513675 (T4 witness 14.278)
+N one axis, 2 kappa delta^2: kappa = 1.050 kappa_c = 0.239056: max at delta = 0.599162, F - F(0) = +0.00522294; runaway branch crosses F(0) at delta = 0.827463 (T4 witness 14.606)
+N one axis, 2 kappa delta^2: kappa = 1.100 kappa_c = 0.250439: max at delta = 0.767768, F - F(0) = +0.01605491; runaway branch crosses F(0) at delta = 1.068901 (T4 witness 15.016)
+N one axis, 2 kappa delta^2: kappa = 1.250 kappa_c = 0.284590: max at delta = 1.109944, F - F(0) = +0.07847241; runaway branch crosses F(0) at delta = 1.556519 (T4 witness 16.245)
+N one axis, 2 kappa delta^2: kappa = 1.500 kappa_c = 0.341508: max at delta = 1.501826, F - F(0) = +0.27739184; runaway branch crosses F(0) at delta = 2.102116 (T4 witness 18.294)
+N one axis, 2 kappa delta^2: kappa = 2.000 kappa_c = 0.455344: max at delta = 2.036968, F - F(0) = +1.01074035; runaway branch crosses F(0) at delta = 2.816278 (T4 witness 22.392)
+N one axis, 2 kappa delta^2: kappa = 3.000 kappa_c = 0.683016: max at delta = 2.700610, F - F(0) = +3.64544149; runaway branch crosses F(0) at delta = 3.663840 (T4 witness 30.589)
+N one axis, 2 kappa delta^2: kappa = 5.000 kappa_c = 1.138360: max at delta = 3.449181, F - F(0) = +12.51056184; runaway branch crosses F(0) at delta = 4.586554 (T4 witness 46.981)
+N one axis, 2 kappa delta^2: kappa = 10.000 kappa_c = 2.276720: max at delta = 4.379404, F - F(0) = +48.61729099; runaway branch crosses F(0) at delta = 5.696897 (T4 witness 87.962)
+X anisotropy: d^2<sqrt A>/d eps^2 at 0 = 4.2703274907; threshold beta_c = that/72 = 0.0593101040; landed T3's (chi_a + 2J)/72 with chi_a = 1.8827252545 (the linear-rate model's second derivative) = 0.0593101041 (difference -9.3e-11)
+N anisotropy on the midpoint grid L = 32: beta_c = 0.0593121596 (+2.1e-06)
+N anisotropy on the midpoint grid L = 64: beta_c = 0.0593102301 (+1.3e-07)
+N anisotropy on the midpoint grid L = 128: beta_c = 0.0593101115 (+7.4e-09)
+N anisotropy on the midpoint grid L = 256: beta_c = 0.0593101041 (+3.2e-11)
+X anisotropy: third derivative of <sqrt A> at 0 = 6.931361: the landscape is not even in eps, so the barrier is lower on the side eps > 0
+N anisotropy: the analytic derivative against a central difference at eps = 0 (0.00e+00, zero by symmetry) and at eps = 0.3: 1.5909092972 vs 1.5909090971
+N anisotropy, 36 beta eps^2: beta = 0.800 beta_c = 0.047448: eps > 0: no critical point; G < G(0) all along | eps < 0: min at eps = -0.268701, G - G(0) = -0.00961174, max at eps = -1.927705, G - G(0) = +0.95562543; runaway crosses G(0) at eps = -2.558493
+N anisotropy, 36 beta eps^2: beta = 0.900 beta_c = 0.053379: eps > 0: no critical point; G < G(0) all along | eps < 0: min at eps = -0.126178, G - G(0) = -0.00111423, max at eps = -2.158611, G - G(0) = +1.85169443; runaway crosses G(0) at eps = -2.890710
+N anisotropy, 36 beta eps^2: beta = 0.950 beta_c = 0.056345: eps > 0: no critical point; G < G(0) all along | eps < 0: min at eps = -0.062087, G - G(0) = -0.00013645, max at eps = -2.257445, G - G(0) = +2.37262274; runaway crosses G(0) at eps = -3.028212
+N anisotropy, 36 beta eps^2: beta = 0.990 beta_c = 0.058717: eps > 0: no critical point; G < G(0) all along | eps < 0: min at eps = -0.012327, G - G(0) = -0.00000108, max at eps = -2.330564, G - G(0) = +2.82226639; runaway crosses G(0) at eps = -3.128529
+N anisotropy, 36 beta eps^2: beta = 0.999 beta_c = 0.059251: eps > 0: no critical point; G < G(0) all along | eps < 0: max at eps = -2.346375, G - G(0) = +2.92735258; runaway crosses G(0) at eps = -3.150078
+N anisotropy, 36 beta eps^2: beta = 1.000 beta_c = 0.059310: eps > 0: no critical point; G < G(0) all along | eps < 0: max at eps = -2.348118, G - G(0) = +2.93911641; runaway crosses G(0) at eps = -3.152451
+N anisotropy, 36 beta eps^2: beta = 1.001 beta_c = 0.059369: eps > 0: no critical point; runaway crosses G(0) at eps = +0.002129 | eps < 0: max at eps = -2.349858, G - G(0) = +2.95089770; runaway crosses G(0) at eps = -3.154819
+N anisotropy, 36 beta eps^2: beta = 1.010 beta_c = 0.059903: eps > 0: max at eps = +0.012302, G - G(0) = +0.00000108; runaway crosses G(0) at eps = +0.018451 | eps < 0: max at eps = -2.365402, G - G(0) = +3.05771295; runaway crosses G(0) at eps = -3.175946
+N anisotropy, 36 beta eps^2: beta = 1.050 beta_c = 0.062276: eps > 0: max at eps = +0.061415, G - G(0) = +0.00013429; runaway crosses G(0) at eps = +0.092141 | eps < 0: max at eps = -2.432013, G - G(0) = +3.54929001; runaway crosses G(0) at eps = -3.265981
+N anisotropy, 36 beta eps^2: beta = 1.100 beta_c = 0.065241: eps > 0: max at eps = +0.123048, G - G(0) = +0.00107539; runaway crosses G(0) at eps = +0.184790 | eps < 0: max at eps = -2.510160, G - G(0) = +4.20147204; runaway crosses G(0) at eps = -3.370635
+N anisotropy, 36 beta eps^2: beta = 1.250 beta_c = 0.074138: eps > 0: max at eps = +0.310076, G - G(0) = +0.01703796; runaway crosses G(0) at eps = +0.461962 | eps < 0: max at eps = -2.717276, G - G(0) = +6.39569291; runaway crosses G(0) at eps = -3.643558
+N anisotropy, 36 beta eps^2: beta = 1.500 beta_c = 0.088965: eps > 0: max at eps = +0.580632, G - G(0) = +0.12956818; runaway crosses G(0) at eps = +0.832035 | eps < 0: max at eps = -2.997870, G - G(0) = +10.77476048; runaway crosses G(0) at eps = -4.004766
+N anisotropy, 36 beta eps^2: beta = 2.000 beta_c = 0.118620: eps > 0: max at eps = +0.915275, G - G(0) = +0.76308038; runaway crosses G(0) at eps = +1.269648 | eps < 0: max at eps = -3.416170, G - G(0) = +21.85311761; runaway crosses G(0) at eps = -4.529074
+N anisotropy, 36 beta eps^2: beta = 3.000 beta_c = 0.177930: eps > 0: max at eps = +1.278266, G - G(0) = +3.44263543; runaway crosses G(0) at eps = +1.735787 | eps < 0: max at eps = -3.972514, G - G(0) = +51.38620489; runaway crosses G(0) at eps = -5.206718
+N anisotropy, 36 beta eps^2: beta = 5.000 beta_c = 0.296551: eps > 0: max at eps = +1.664762, G - G(0) = +13.00069640; runaway crosses G(0) at eps = +2.217324 | eps < 0: max at eps = -4.638285, G - G(0) = +131.83507345; runaway crosses G(0) at eps = -5.996126
+N anisotropy, 36 beta eps^2: beta = 10.000 beta_c = 0.593101: eps > 0: max at eps = +2.135782, G - G(0) = +52.98681260; runaway crosses G(0) at eps = +2.783748 | eps < 0: max at eps = -5.502244, G - G(0) = +412.64408193; runaway crosses G(0) at eps = -6.995663
+N three axes, kappa = 2 kappa_c, midpoint grid 256^3 against the exact representation: barrier at 2.910320 (exact 2.910320), height +8.43168321 (exact +8.43168321), crossing at 3.898355 (exact 3.898355)
+
+SUMMARY: log-rate balance: kappa_c = I/4 = 0.22767203 for the three-axis (6 kappa delta^2) and the one-axis (2 kappa delta^2) law and beta_c = 0.05931010 = (chi_a + 2J)/72 for the anisotropy, as landed (midpoint 256^3: 0.22766813, 0.05931010); beyond second order the sea adds +(m^4/(2 pi^2)) log(1/m) (eight conical nodes, m^2 the added gap), so for the alternation the threshold is not where the barrier vanishes: three axes, the small-delta minimum below kappa_c at 0.9/0.99/0.999 kappa_c is at delta = 0.392/0.076/0.019 and the barrier at kappa_c is at delta = 1.653 (height 0.4), at 2 and 10 kappa_c 2.910 (height 8.4) and 5.076 (height 2.1e+02); one axis, barrier at 1.001/1.01/2/10 kappa_c at 0.279 (height 8.6e-05)/0.380 (height 0.00055)/2.037 (height 1)/4.379 (height 49); the anisotropy is analytic with a cubic term (the side eps > 0 lower), its eps > 0 barrier shrinks to zero at beta_c: barrier (eps > 0 | eps < 0) at 1.01 beta_c +0.012 (height 1.1e-06) | -2.365 (height 3.1), at 2 beta_c +0.915 (height 0.76) | -3.416 (height 22); the runaway branch crosses the uniform value at finite distance in every case (T4's unbounded objective): three axes at kappa_c, 2 kappa_c, 10 kappa_c at delta = 2.194, 3.898, 6.506
+
+[stderr]
+/Users/jonBridger/.probe-workers/probes-view/C-the-alternation-balance-in-log-rates-a1/probes/work/compute/the-alternation-balance-in-log-rates/w-jonathonsmac4f50-j274e/run.py:27: IntegrationWarning: The algorithm does not converge.  Roundoff error is detected
+  in the extrapolation table.  It is assumed that the requested tolerance
+  cannot be achieved, and that the returned result (if full_output = 1) is 
+  the best which can be obtained.
+  v, _ = quad(f, a, b, limit=400, epsabs=1e-15, epsrel=1e-13); tot += v
+/Users/jonBridger/.probe-workers/probes-view/C-the-alternation-balance-in-log-rates-a1/probes/work/compute/the-alternation-balance-in-log-rates/w-jonathonsmac4f50-j274e/run.py:27: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  v, _ = quad(f, a, b, limit=400, epsabs=1e-15, epsrel=1e-13); tot += v
+/Users/jonBridger/.probe-workers/probes-view/C-the-alternation-balance-in-log-rates-a1/probes/work/compute/the-alternation-balance-in-log-rates/w-jonathonsmac4f50-j274e/run.py:27: IntegrationWarning: The maximum number of subdivisions (400) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  v, _ = quad(f, a, b, limit=400, epsabs=1e-15, epsrel=1e-13); tot += v
+/Users/jonBridger/.probe-workers/probes-view/C-the-alternation-balance-in-log-rates-a1/probes/work/compute/the-alternation-balance-in-log-rates/w-jonathonsmac4f50-j274e/run.py:27: IntegrationWarning: The integral is probably divergent, or slowly convergent.
+  v, _ = quad(f, a, b, limit=400, epsabs=1e-15, epsrel=1e-13); tot += v
+/Users/jonBridger/.probe-workers/probes-view/C-the-alternation-balance-in-log-rates-a1/probes/work/compute/the-alternation-balance-in-log-rates/w-jonathonsmac4f50-j274e/run.py:27: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  v, _ = quad(f, a, b, limit=400, epsabs=1e-15, epsrel=1e-13); tot += v

@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-25T07:05:23.356680+00:00",
+  "old_note_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+  "new_note_sha256": "fb7e648244754b469504f08aa4cd251148d3736740af4f55c7e5c63675c23d14",
+  "exact_replacement": {
+    "publication_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "old": "In the supplied common matter/rotor model, each original formation event reduces\na particular aggregate field-response strength by the same amount.",
+    "new": "In the supplied common matter/rotor model, the expected original formation count\nfixes the change of a particular aggregate field-response strength.",
+    "root_acknowledged": true,
+    "applied_in_this_packet": false,
+    "requires_new_note_identity_and_fresh_primary_cache_before_final_binding": true
+  },
+  "prior_publication_generation": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication-generation1",
+  "prior_report_unchanged": true,
+  "root_prior_review_sha256": "9633926ed3775b97c781f9c12dbbe78b83a178a7f0147c4599a28568f923d365"
+}

@@ -1,0 +1,16 @@
+{
+  "scope": "Fresh reuse of exact root geometry, Gauss, electric-identity and original-birth controls; no dynamical simulation, measured probe or new independent check.",
+  "source_sha256": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+  "runtime_source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+  "elapsed_seconds": 23.810994792031124,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 69430,
+  "stdout_sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+  "complete_scientific_artifact": {
+    "path": "outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+    "sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+    "bytes": 69430
+  },
+  "all_assertions_passed": true
+}

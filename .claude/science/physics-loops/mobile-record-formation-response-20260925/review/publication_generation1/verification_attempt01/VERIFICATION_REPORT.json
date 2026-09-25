@@ -1,0 +1,2374 @@
+{
+  "verified_utc": "2026-09-25T06:50:10.314928+00:00",
+  "scope": "Released-source publication correspondence only; no scientific program rerun or new blind proof.",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/.claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py",
+      "snapshot": "sources_initial/publication/.claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py",
+      "sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+      "bytes": 7870
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources_initial/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources_initial/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources_initial/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "snapshot": "sources_initial/publication/docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+      "bytes": 16414
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt",
+      "snapshot": "sources_initial/publication/logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt",
+      "sha256": "778af73fdbb335095c4873b380c23087707b022ab2816fa5af28cab1d09fbe2b",
+      "bytes": 1187
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json",
+      "snapshot": "sources_initial/publication/outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json",
+      "sha256": "9b92fdc3bf2772e9b5dd0dc2dab6e9a1e614b17e266b8dbd769d71a267648264",
+      "bytes": 799
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+      "snapshot": "sources_initial/publication/outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+      "sha256": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+      "bytes": 69430
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/response_control.stderr.txt",
+      "snapshot": "sources_initial/publication/outputs/formation_response_20260925/response_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/response_control.stdout.txt",
+      "snapshot": "sources_initial/publication/outputs/formation_response_20260925/response_control.stdout.txt",
+      "sha256": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+      "bytes": 69430
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/scripts/original_formation_and_field_response_budget_2026_09_25.py",
+      "snapshot": "sources_initial/publication/scripts/original_formation_and_field_response_budget_2026_09_25.py",
+      "sha256": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+      "bytes": 2600
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "sources_initial/external/FORMATION_RESPONSE_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "23b2fce537953a8866ee216eaa372346f81265c0004fec800f21699ff2be5455",
+      "bytes": 4333
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_PUBLICATION_WORKING_SOURCES.json",
+      "snapshot": "sources_initial/external/FORMATION_RESPONSE_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "bd3342c9afafdfac9df8186442ad1efc38c34a454a445fd2d54fd4e920aefd1b",
+      "bytes": 2621
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "sources_initial/external/FORMATION_RESPONSE_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "ededa179b537ecb2191714f1fefdef4666fefcba8695ebccf0b7bf51ae3352ba",
+      "bytes": 1281
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "sources_initial/external/FORMATION_RESPONSE_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "bf163b76c8be4a026ad66cd40a31aadc0aebca7ea08b62bc3d6f94dc7e130688",
+      "bytes": 2200
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/build_formation_response_publication.py",
+      "snapshot": "sources_initial/external/build_formation_response_publication.py",
+      "sha256": "b6bbb67d00edd4303d9999dc720cae7bac86b5356afbd29cc3997bd2c19eb1d4",
+      "bytes": 8513
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/scripts/runner_cache.py",
+      "snapshot": "sources_initial/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ],
+  "preserved_seals": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "d65cdc1e27cd6757c9437f62cec7c45bfa7a3c850da4c5f2f2fe510983c00dad",
+      "members": 30
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "79359f5d5cddd65d799a6eba47aec005a10d2b3f708a32264b263f9df5f0d9db",
+      "members": 21
+    }
+  ],
+  "preserved_author_origins": 10,
+  "parents": [
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "PRE_identity_unchanged": true
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "PRE_identity_unchanged": true
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "PRE_identity_unchanged": true
+    }
+  ],
+  "body_correspondence": {
+    "author_sha256": "229ec44bb80c1450fbba8b45d6a586a489edebd21aab8fc0db9f43ab74401eaa",
+    "publication_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "one_status_replacement": {
+      "old": "Personal conditional root candidate, 25 September 2026. No independent\nconfirmation is claimed here.",
+      "new": "Personally derived conditional result, 25 September 2026. Separate scoped\nPRE and POST checks are complete; no retained audit status."
+    },
+    "heading_increment": 2,
+    "headings_shifted": 7,
+    "remaining_body_exact": true
+  },
+  "front_finding": {
+    "required_wording_qualification": true,
+    "reason": "Expected-count identity is unconditional; fixed normalized-history decrement requires definite initial N.",
+    "root_acknowledged": true,
+    "publication_edited_by_checker": false
+  },
+  "runtime_byte_and_AST_identity": true,
+  "runtime_functions": [
+    "geometry",
+    "gauss",
+    "flow",
+    "electric",
+    "translated",
+    "response",
+    "words",
+    "primitive",
+    "main"
+  ],
+  "wrapper_functions": [
+    "main"
+  ],
+  "declared_inputs": [
+    "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py"
+  ],
+  "input_fingerprint_sha256": "ef494681a8970c1327781a6f5d2b5cec59d78666f8a5970f8886d47ce1a85ce9",
+  "cache_entire_bytes_reconstructed": true,
+  "cache_truncation": false,
+  "leaf_count": 3234,
+  "leaf_types": {
+    "str": 2,
+    "int": 3227,
+    "bool": 4,
+    "float": 1
+  },
+  "all_differences": [
+    {
+      "path": "/elapsed_seconds",
+      "original": 24.078476916998625,
+      "fresh": 23.669415833894163
+    }
+  ],
+  "geometry": [
+    {
+      "side": 2,
+      "vertices": 8,
+      "A_sites": 4,
+      "edges": 12,
+      "plaquettes": 6,
+      "edge_squared_incidence": 2,
+      "degree": 3,
+      "response_coefficient_in_K": 12,
+      "per_birth_decrement_in_K": 24,
+      "complete_charge_enumeration": true,
+      "charge_words": 65
+    },
+    {
+      "side": 4,
+      "vertices": 64,
+      "A_sites": 32,
+      "edges": 192,
+      "plaquettes": 192,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    },
+    {
+      "side": 6,
+      "vertices": 216,
+      "A_sites": 108,
+      "edges": 648,
+      "plaquettes": 648,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    }
+  ],
+  "complete_scientific_rows": [
+    {
+      "side": 2,
+      "word_index": 0,
+      "charge_encoding": "-++-++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 1,
+      "charge_encoding": "-++++-++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 2,
+      "charge_encoding": "-+++++-+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 44
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 3,
+      "charge_encoding": "--++++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 4,
+      "charge_encoding": "-00+++++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 5,
+      "charge_encoding": "-0++0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 24,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 6,
+      "charge_encoding": "-0+++++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 7,
+      "charge_encoding": "-+-+++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 8,
+      "charge_encoding": "-+0+0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 42
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 9,
+      "charge_encoding": "-+0++++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 10,
+      "charge_encoding": "-+++-+++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 56
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 11,
+      "charge_encoding": "-+++0++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 24,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 12,
+      "charge_encoding": "-++++++-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 13,
+      "charge_encoding": "+++-+-++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 14,
+      "charge_encoding": "+++-++-+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 15,
+      "charge_encoding": "+-+-++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 16,
+      "charge_encoding": "+00-++++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 17,
+      "charge_encoding": "+0+-0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 18,
+      "charge_encoding": "+0+-+++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 19,
+      "charge_encoding": "++--++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 20,
+      "charge_encoding": "++0-0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 21,
+      "charge_encoding": "++0-+++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 22,
+      "charge_encoding": "+++--+++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 23,
+      "charge_encoding": "+++-0++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 24,
+      "charge_encoding": "+++-+++-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 25,
+      "charge_encoding": "+++++--+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 44
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 26,
+      "charge_encoding": "+-+++-++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 27,
+      "charge_encoding": "+00++-++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 28,
+      "charge_encoding": "+0++0-++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 50
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 29,
+      "charge_encoding": "+0+++-+0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 30,
+      "charge_encoding": "++-++-++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 31,
+      "charge_encoding": "++0+0-++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 42
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 32,
+      "charge_encoding": "++0++-+0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 33,
+      "charge_encoding": "++++--++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 56
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 34,
+      "charge_encoding": "++++0-+0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 35,
+      "charge_encoding": "+++++-+-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 36,
+      "charge_encoding": "+-++++-+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 37,
+      "charge_encoding": "+00+++-+",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 26,
+          "electric_squared_norm": 48
+        },
+        {
+          "winding_multiple": 0,
+          "D": 6,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 6,
+          "electric_squared_norm": 18
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 38,
+      "charge_encoding": "+0++0+-+",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 14,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 14,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 39,
+      "charge_encoding": "+0++++-0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 38
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 18
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 40,
+      "charge_encoding": "++-+++-+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 60
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 41,
+      "charge_encoding": "++0+0+-+",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 36,
+          "electric_squared_norm": 46
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 3,
+          "D": 16,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 42,
+      "charge_encoding": "++0+++-0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 46
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 16
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 43,
+      "charge_encoding": "++++-+-+",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 44,
+      "charge_encoding": "++++0+-0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 34
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 45,
+      "charge_encoding": "++++++--",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 46,
+      "charge_encoding": "+--+++++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 47,
+      "charge_encoding": "+-0+0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 48,
+      "charge_encoding": "+-0++++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 49,
+      "charge_encoding": "+-++-+++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 50,
+      "charge_encoding": "+-++0++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 51,
+      "charge_encoding": "+-+++++-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 52,
+      "charge_encoding": "+0-+0+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 53,
+      "charge_encoding": "+0-++++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 54,
+      "charge_encoding": "+00+-+++",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 55,
+      "charge_encoding": "+00+0++0",
+      "B_occupied": 0,
+      "exact_response_in_K": 48,
+      "second_differences": 18,
+      "primitive_paths": 48,
+      "resolved_loss_diagonal": 48,
+      "coherent_loss_diagonal": 48,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 56,
+      "charge_encoding": "+00++++-",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 57,
+      "charge_encoding": "+0++-++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 50
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 58,
+      "charge_encoding": "+0++0++-",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 59,
+      "charge_encoding": "++-+-+++",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 60,
+      "charge_encoding": "++-+0++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 61,
+      "charge_encoding": "++-++++-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 62,
+      "charge_encoding": "++0+-++0",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 63,
+      "charge_encoding": "++0+0++-",
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 64,
+      "charge_encoding": "++++-++-",
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 0,
+      "charge_encoding": "+0+00+0++0+00+0+0+0++0+00+0++0+0+0+00+0++0+00+0+0+0++0+00+0++0+0",
+      "B_occupied": 0,
+      "exact_response_in_K": 1536,
+      "second_differences": 576,
+      "primitive_paths": 1920,
+      "resolved_loss_diagonal": 1920,
+      "coherent_loss_diagonal": 1920,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 1,
+      "charge_encoding": "-+++0+0++0+00+0+0+0++0+00+0++0+0+0+00+0++0+00+0+0+0++0+00+0++0+0",
+      "B_occupied": 2,
+      "exact_response_in_K": 1440,
+      "second_differences": 576,
+      "primitive_paths": 1688,
+      "resolved_loss_diagonal": 1688,
+      "coherent_loss_diagonal": 1688,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 2,
+      "charge_encoding": "-+-++++++0+00+0+0+0++0+00+0++0+0+0+00+0++0+00+0+0+0++0+00+0++0+0",
+      "B_occupied": 4,
+      "exact_response_in_K": 1344,
+      "second_differences": 576,
+      "primitive_paths": 1488,
+      "resolved_loss_diagonal": 1488,
+      "coherent_loss_diagonal": 1488,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 3,
+      "charge_encoding": "-+-++-+--+-++-+-+++++++++++++++++0+00+0++0+00+0+0+0++0+00+0++0+0",
+      "B_occupied": 16,
+      "exact_response_in_K": 768,
+      "second_differences": 576,
+      "primitive_paths": 640,
+      "resolved_loss_diagonal": 640,
+      "coherent_loss_diagonal": 640,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 4,
+      "charge_encoding": "-+-++-+--+-++-+-+-+--+-++-+--+-+++++++++++++++++++++++++++++++++",
+      "B_occupied": 32,
+      "exact_response_in_K": 0,
+      "second_differences": 576,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 48
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 68
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 0,
+      "charge_encoding": "+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0",
+      "B_occupied": 0,
+      "exact_response_in_K": 5184,
+      "second_differences": 1944,
+      "primitive_paths": 6480,
+      "resolved_loss_diagonal": 6480,
+      "coherent_loss_diagonal": 6480,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 54
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 1,
+      "charge_encoding": "-++++00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0",
+      "B_occupied": 2,
+      "exact_response_in_K": 5088,
+      "second_differences": 1944,
+      "primitive_paths": 6244,
+      "resolved_loss_diagonal": 6244,
+      "coherent_loss_diagonal": 6244,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 30
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 60
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 2,
+      "charge_encoding": "-+-+++++0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0",
+      "B_occupied": 4,
+      "exact_response_in_K": 4992,
+      "second_differences": 1944,
+      "primitive_paths": 6028,
+      "resolved_loss_diagonal": 6028,
+      "coherent_loss_diagonal": 6028,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 58
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 3,
+      "charge_encoding": "-+-+-++-+-+--+-+-++-+-+--+-+-++-+-+-+-+-+--+-+-++-+-+-++++++++++++++++++++++++++++++++++++++++++++++++++++++0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0+0+0+00+0+0++0+0+00+0+0++0+0+00+0+0+0+0+0++0+0+00+0+0++0+0+00+0+0++0+0+0",
+      "B_occupied": 54,
+      "exact_response_in_K": 2592,
+      "second_differences": 1944,
+      "primitive_paths": 2520,
+      "resolved_loss_diagonal": 2520,
+      "coherent_loss_diagonal": 2520,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 20,
+          "electric_squared_norm": 142
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 114
+        },
+        {
+          "winding_multiple": 3,
+          "D": 30,
+          "electric_squared_norm": 162
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 4,
+      "charge_encoding": "-+-+-++-+-+--+-+-++-+-+--+-+-++-+-+-+-+-+--+-+-++-+-+--+-+-++-+-+--+-+-+-+-+-++-+-+--+-+-++-+-+--+-+-++-+-+-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
+      "B_occupied": 108,
+      "exact_response_in_K": 0,
+      "second_differences": 1944,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 164
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 144
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 204
+        }
+      ]
+    }
+  ],
+  "artifact_metadata": {
+    "source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "scope": "Exact integer full-charge/Gauss/rotor and primitive-column checks; no finite-time simulation, microscopic response transfer or empirical identification.",
+    "all_assertions_passed": true,
+    "second_difference_checks": 13770,
+    "primitive_paths_checked": 27344,
+    "elapsed_seconds": 23.669415833894163
+  },
+  "wrapper_result": {
+    "scope": "Fresh reuse of exact root geometry, Gauss, electric-identity and original-birth controls; no dynamical simulation, measured probe or new independent check.",
+    "source_sha256": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+    "runtime_source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "elapsed_seconds": 23.721290500136092,
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "stdout_bytes": 69430,
+    "stdout_sha256": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+    "complete_scientific_artifact": {
+      "path": "outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+      "sha256": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+      "bytes": 69430
+    },
+    "all_assertions_passed": true
+  },
+  "execution": {
+    "runner": "scripts/original_formation_and_field_response_budget_2026_09_25.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stderr": "",
+    "elapsed_sec": 23.80979561805725,
+    "timeout_sec": 120
+  },
+  "all_correspondence_assertions_passed": true,
+  "scientific_proof_reused_from_unchanged_PRE_POST": true,
+  "new_independent_scientific_validation_claimed": false,
+  "program_imports_or_execution": false,
+  "file_writes_or_processes": false
+}

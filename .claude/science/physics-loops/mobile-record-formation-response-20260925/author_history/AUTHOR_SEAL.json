@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-25T05:39:58.422153+00:00",
+  "phase": "Personal root39 candidate before independent PRE disclosure",
+  "members": [
+    {
+      "path": "CONTROL_ATTEMPT01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_ATTEMPT01.stdout",
+      "sha256": "f8df67461df107971fb45c92e418d1255d299eecbaae9571cf6e443c438d34c8",
+      "bytes": 69430
+    },
+    {
+      "path": "EXECUTION_ATTEMPT01.json",
+      "sha256": "6d26db5fe50872f765a17b0b6c6570a13a5573afbccb6867c44f78b4065f7d31",
+      "bytes": 231
+    },
+    {
+      "path": "FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+      "sha256": "229ec44bb80c1450fbba8b45d6a586a489edebd21aab8fc0db9f43ab74401eaa",
+      "bytes": 11629
+    },
+    {
+      "path": "RESPONSE_SUM_RESULTS.json",
+      "sha256": "f8df67461df107971fb45c92e418d1255d299eecbaae9571cf6e443c438d34c8",
+      "bytes": 69430
+    },
+    {
+      "path": "ROOT_REVIEW.json",
+      "sha256": "09b5924a1a6391a72914dd5c2155b8eb721b5cc8251092931381d1db29fe4839",
+      "bytes": 1325
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "9c59eeb531f2cfd4beb71609fd077e800abfeb703212767286f8ae9b44927e78",
+      "bytes": 2263
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "834ae63db216cc29c75d79fe323a1d91ad988f03fd2808d980c58fef92aa1149",
+      "bytes": 4901
+    },
+    {
+      "path": "response_sum_controls.py",
+      "sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+      "bytes": 7870
+    }
+  ]
+}

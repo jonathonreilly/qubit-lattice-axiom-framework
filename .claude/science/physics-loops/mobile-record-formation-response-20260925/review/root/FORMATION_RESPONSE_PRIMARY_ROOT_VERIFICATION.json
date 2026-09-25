@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-09-25T06:40:22.469315+00:00",
+  "source_body_exact_except_declared_status_and_headings": true,
+  "source_files_sha256": {
+    "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "scripts/original_formation_and_field_response_budget_2026_09_25.py": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  },
+  "input_fingerprint_sha256": "ef494681a8970c1327781a6f5d2b5cec59d78666f8a5970f8886d47ce1a85ce9",
+  "all_leaf_count": 3234,
+  "unchanged_leaf_count": 3233,
+  "leaf_types": {
+    "str": 2,
+    "int": 3227,
+    "bool": 4,
+    "float": 1
+  },
+  "all_differences": [
+    {
+      "path": "/elapsed_seconds",
+      "original": 24.078476916998625,
+      "fresh": 23.669415833894163
+    }
+  ],
+  "complete_geometry_groups": 3,
+  "complete_charge_rows": 75,
+  "complete_flow_rows": 225,
+  "second_difference_checks": 13770,
+  "primitive_paths_checked": 27344,
+  "scientific_artifact_sha256": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+  "runner_result_sha256": "9b92fdc3bf2772e9b5dd0dc2dab6e9a1e614b17e266b8dbd769d71a267648264",
+  "cache_sha256": "778af73fdbb335095c4873b380c23087707b022ab2816fa5af28cab1d09fbe2b",
+  "outer_elapsed_seconds": 23.80979561805725,
+  "source_writer_location": "Exact source copy in temporary directory; sealed author files preserved.",
+  "scope": "Root primary reproduction and complete payload comparison, not a new independent proof."
+}

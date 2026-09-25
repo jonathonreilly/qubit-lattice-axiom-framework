@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-25T07:21:19.659082+00:00",
+  "report_sha256": "a23e997e59c0376be029b4b78e40964d9fb7a8c18a7a0253e79c66d191ea8255",
+  "seal_sha256": "dc07b3e6b01a3668f52eefd5110843725d786d34a8ed0e1cefb5c5ca0d34792c",
+  "new_sealed_members": 36,
+  "prior_sealed_members_unchanged": 91,
+  "source_origins_bound": 18,
+  "complete_report_all_verifier_and_recorder_code_full_result_and_failure_logs_read": true,
+  "scope": "Focused corrected-generation correspondence with unchanged full proof/PRE/POST review reused; no additional independent reconstruction or audit verdict.",
+  "elapsed_seconds": 0.06375883286818862,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "observed_files_content_size_mtime_ctime_unchanged": 149,
+  "output_exact_except_verified_utc": true,
+  "output_sha256": "c4e1e50a1131c2be624f3d749fdc1c21344aae89342048448b2adce2863d8875",
+  "generation1_finding_resolved": true,
+  "required_repairs": [],
+  "root_read_filename_failure": "Initial cat used nonexistent verify_publication_generation2_readonly.py; file listing located verify_generation2_readonly.py, subsequently fully read. No execution failure or source change."
+}

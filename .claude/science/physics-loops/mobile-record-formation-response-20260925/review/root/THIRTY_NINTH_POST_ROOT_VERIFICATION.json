@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-25T06:07:38.867093+00:00",
+  "POST_sha256": "29db0f69529dcd971763090061764884aabfafc99cfcbc5bde8d78b19e78cdf8",
+  "POST_seal_sha256": "79359f5d5cddd65d799a6eba47aec005a10d2b3f708a32264b263f9df5f0d9db",
+  "PRE_members": 30,
+  "POST_members": 21,
+  "author_members": 9,
+  "all_unchanged": true,
+  "complete_root_reads": [
+    "complete POST proof",
+    "complete verifier",
+    "source inventory and log",
+    "all75 lossless rows with225 flows",
+    "complete verification metadata and75 derived rows"
+  ],
+  "readonly_execution_seconds": 0.07685337495058775,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "fresh_stored_output_exact_except_timestamp": true,
+  "required_math_repair": false,
+  "limits": "Original sufficient fourth-moment response class and PRE-only all-normal-density strengthening remain distinct. No microscopic derivative or physical readout/empirical inference."
+}

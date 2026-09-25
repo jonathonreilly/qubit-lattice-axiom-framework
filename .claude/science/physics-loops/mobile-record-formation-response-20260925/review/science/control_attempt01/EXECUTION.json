@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-25T05:36:59.486419+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/response_primitive_control.py"
+  ],
+  "source_sha256": "6c2ccab16901682bae4e81af1b96ae109dd5e09b7e3b65a8628ff87e0b8c2f22",
+  "elapsed_seconds": 0.5476167080923915,
+  "exit_code": 0,
+  "stdout_bytes": 24259,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,109 @@
+{
+  "verified_utc": "2026-09-25T05:51:44.054422+00:00",
+  "scope": "Read-only source/evidence verification; not a rerun of scientific code or audit verdict.",
+  "sources_verified": [
+    {
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "snapshot": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "snapshot": "instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "snapshot": "instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "snapshot": "instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "source_entries": 6,
+  "scientific_group_counts": {
+    "geometry_rows": 3,
+    "operator_rows": 21,
+    "coherence_rows": 63,
+    "primitive_rows": 21,
+    "global_balance_rows": 7
+  },
+  "all_previous_scientific_entries_unchanged": true,
+  "geometry_extension_diff_exact": true,
+  "geometry_complete": [
+    {
+      "L": 4,
+      "vertices": 64,
+      "plaquettes": 192,
+      "B_sites": 32,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 240,
+      "extra_straight_winding_four_cycles": 48,
+      "all_four_cycles_per_B": 15,
+      "response_per_vacancy_if_all_four_cycles_summed": 60
+    },
+    {
+      "L": 6,
+      "vertices": 216,
+      "plaquettes": 648,
+      "B_sites": 108,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 648,
+      "extra_straight_winding_four_cycles": 0,
+      "all_four_cycles_per_B": 12,
+      "response_per_vacancy_if_all_four_cycles_summed": 48
+    },
+    {
+      "L": 8,
+      "vertices": 512,
+      "plaquettes": 1536,
+      "B_sites": 256,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 1536,
+      "extra_straight_winding_four_cycles": 0,
+      "all_four_cycles_per_B": 12,
+      "response_per_vacancy_if_all_four_cycles_summed": 48
+    }
+  ],
+  "coherence_determinants": [
+    "0",
+    "12",
+    "3"
+  ],
+  "count_coefficient_elementary": 96,
+  "count_coefficient_all_four_cycles_L4": 120,
+  "controls": [
+    {
+      "source_sha256": "6c2ccab16901682bae4e81af1b96ae109dd5e09b7e3b65a8628ff87e0b8c2f22",
+      "elapsed_seconds": 0.5476167080923915,
+      "exit_code": 0,
+      "stdout_bytes": 24259,
+      "stderr_bytes": 0
+    },
+    {
+      "source_sha256": "5566c18b555cb96ca73604a73a6eb1ea8de9d937ef7e8e59cacf184ace782f62",
+      "elapsed_seconds": 0.5590087911114097,
+      "exit_code": 0,
+      "stdout_bytes": 24796,
+      "stderr_bytes": 0
+    }
+  ],
+  "current_scientific_source_sha256": "5566c18b555cb96ca73604a73a6eb1ea8de9d937ef7e8e59cacf184ace782f62",
+  "final_scientific_result_sha256": "56fd83f43214f73b13dc8cea3ba9b2c8a406f92134234c7da741a03c216de49e",
+  "scientific_programs_imported_or_executed_by_verifier": false,
+  "file_writes_or_processes_by_verifier": false,
+  "all_checks_passed": true
+}

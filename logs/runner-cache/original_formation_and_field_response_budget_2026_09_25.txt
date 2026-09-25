@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/original_formation_and_field_response_budget_2026_09_25.py
+runner_sha256: 9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0
+input_fingerprint_sha256: d924c8c02ab999ab05e2f8cf16d264d5369008911ed0787492144731300c64a1
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.90
+status: ok
+----- stdout -----
+{
+  "scope": "Fresh reuse of exact root geometry, Gauss, electric-identity and original-birth controls; no dynamical simulation, measured probe or new independent check.",
+  "source_sha256": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+  "runtime_source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+  "elapsed_seconds": 23.810994792031124,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "stdout_bytes": 69430,
+  "stdout_sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+  "complete_scientific_artifact": {
+    "path": "outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+    "sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+    "bytes": 69430
+  },
+  "all_assertions_passed": true
+}
+TOTAL_PASS: 1
+
+----- stderr -----
+

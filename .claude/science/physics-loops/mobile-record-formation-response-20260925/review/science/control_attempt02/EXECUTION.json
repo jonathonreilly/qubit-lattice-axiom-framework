@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-25T05:39:08.560830+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/response_primitive_control.py"
+  ],
+  "source_sha256": "5566c18b555cb96ca73604a73a6eb1ea8de9d937ef7e8e59cacf184ace782f62",
+  "elapsed_seconds": 0.5590087911114097,
+  "exit_code": 0,
+  "stdout_bytes": 24796,
+  "stderr_bytes": 0,
+  "reason": "Explicitly distinguish L=4 winding graph four-cycles from elementary coordinate plaquettes."
+}

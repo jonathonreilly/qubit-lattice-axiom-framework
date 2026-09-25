@@ -1,0 +1,79 @@
+{
+  "phase": "Released root39 POST",
+  "captured_utc": "2026-09-25T05:52:36.027763+00:00",
+  "preserved_PRE_seal_sha256": "d65cdc1e27cd6757c9437f62cec7c45bfa7a3c850da4c5f2f2fe510983c00dad",
+  "preserved_PRE_members_verified": 30,
+  "author_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/CONTROL_ATTEMPT01.stderr",
+      "snapshot": "post_sources/author39/CONTROL_ATTEMPT01.stderr",
+      "path": "CONTROL_ATTEMPT01.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/CONTROL_ATTEMPT01.stdout",
+      "snapshot": "post_sources/author39/CONTROL_ATTEMPT01.stdout",
+      "path": "CONTROL_ATTEMPT01.stdout",
+      "sha256": "f8df67461df107971fb45c92e418d1255d299eecbaae9571cf6e443c438d34c8",
+      "bytes": 69430
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/EXECUTION_ATTEMPT01.json",
+      "snapshot": "post_sources/author39/EXECUTION_ATTEMPT01.json",
+      "path": "EXECUTION_ATTEMPT01.json",
+      "sha256": "6d26db5fe50872f765a17b0b6c6570a13a5573afbccb6867c44f78b4065f7d31",
+      "bytes": 231
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+      "snapshot": "post_sources/author39/FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+      "path": "FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+      "sha256": "229ec44bb80c1450fbba8b45d6a586a489edebd21aab8fc0db9f43ab74401eaa",
+      "bytes": 11629
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/RESPONSE_SUM_RESULTS.json",
+      "snapshot": "post_sources/author39/RESPONSE_SUM_RESULTS.json",
+      "path": "RESPONSE_SUM_RESULTS.json",
+      "sha256": "f8df67461df107971fb45c92e418d1255d299eecbaae9571cf6e443c438d34c8",
+      "bytes": 69430
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/ROOT_REVIEW.json",
+      "snapshot": "post_sources/author39/ROOT_REVIEW.json",
+      "path": "ROOT_REVIEW.json",
+      "sha256": "09b5924a1a6391a72914dd5c2155b8eb721b5cc8251092931381d1db29fe4839",
+      "bytes": 1325
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/author39/SOURCE_PINS.json",
+      "path": "SOURCE_PINS.json",
+      "sha256": "9c59eeb531f2cfd4beb71609fd077e800abfeb703212767286f8ae9b44927e78",
+      "bytes": 2263
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/WORKING_DERIVATION.md",
+      "snapshot": "post_sources/author39/WORKING_DERIVATION.md",
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "834ae63db216cc29c75d79fe323a1d91ad988f03fd2808d980c58fef92aa1149",
+      "bytes": 4901
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/response_sum_controls.py",
+      "snapshot": "post_sources/author39/response_sum_controls.py",
+      "path": "response_sum_controls.py",
+      "sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+      "bytes": 7870
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/author39/AUTHOR_SEAL.json",
+      "path": "AUTHOR_SEAL.json",
+      "sha256": "ffd9f68e551afb30573d4cf727f8f5c58b4b32d6feb2c128fd660ecd74416486",
+      "bytes": 1572
+    }
+  ],
+  "author_scientific_program_imported_or_executed": false
+}

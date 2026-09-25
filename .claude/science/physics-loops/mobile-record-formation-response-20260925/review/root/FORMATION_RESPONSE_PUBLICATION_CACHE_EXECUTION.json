@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/original_formation_and_field_response_budget_2026_09_25.py",
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "{\n  \"scope\": \"Fresh reuse of exact root geometry, Gauss, electric-identity and original-birth controls; no dynamical simulation, measured probe or new independent check.\",\n  \"source_sha256\": \"9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0\",\n  \"runtime_source_sha256\": \"dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5\",\n  \"elapsed_seconds\": 23.721290500136092,\n  \"exit_code\": 0,\n  \"stderr_bytes\": 0,\n  \"stdout_bytes\": 69430,\n  \"stdout_sha256\": \"077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913\",\n  \"complete_scientific_artifact\": {\n    \"path\": \"outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json\",\n    \"sha256\": \"077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913\",\n    \"bytes\": 69430\n  },\n  \"all_assertions_passed\": true\n}\nTOTAL_PASS: 1\n",
+  "stderr": "",
+  "elapsed_sec": 23.80979561805725,
+  "timeout_sec": 120,
+  "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/logs/runner-cache/.in-progress/original_formation_and_field_response_budget_2026_09_25.txt"
+}

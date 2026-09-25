@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-09-25T07:04:32.963902+00:00",
+  "report_sha256": "504e9dadbdc6d79843480b2c2becc7d90b4b0c0875e3b1e89192f7992288e2cc",
+  "seal_sha256": "79e3d680e9316faa167b18f44a5f66f6a27cebb8ce33d8081f82c19b77fa55dd",
+  "complete_report_verifier_recorder_scope_and_failure_logs_read": true,
+  "complete_verifier_result_read": true,
+  "truncated_display_repaired": "All 75 scientific rows, with all 225 flows, reread as lossless arrays in a separate complete output.",
+  "verifier_sha256": "14a514f4a471a535e23b6420bb4ae70a701312068fb2f8c7b906e6e0d7dbf467",
+  "elapsed_seconds": 0.09097458282485604,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "full_output_exact_except_verified_utc": true,
+  "observed_files_content_size_mtime_ctime_unchanged": 121,
+  "required_repair": {
+    "publication_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "old": "In the supplied common matter/rotor model, each original formation event reduces\na particular aggregate field-response strength by the same amount.",
+    "new": "In the supplied common matter/rotor model, the expected original formation count\nfixes the change of a particular aggregate field-response strength.",
+    "root_acknowledged": true,
+    "applied_in_this_packet": false,
+    "requires_new_note_identity_and_fresh_primary_cache_before_final_binding": true
+  },
+  "scope": "Root correspondence review using unchanged PRE/POST; no new independent science or applied audit verdict.",
+  "scientific_programs_executed": []
+}

@@ -1,0 +1,1091 @@
+{
+  "scope": "Own exact finite primitive identities; no evolution simulation, author code or photon identification.",
+  "source_sha256": "5566c18b555cb96ca73604a73a6eb1ea8de9d937ef7e8e59cacf184ace782f62",
+  "geometry_rows": [
+    {
+      "L": 4,
+      "vertices": 64,
+      "plaquettes": 192,
+      "B_sites": 32,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 240,
+      "extra_straight_winding_four_cycles": 48,
+      "all_four_cycles_per_B": 15,
+      "response_per_vacancy_if_all_four_cycles_summed": 60
+    },
+    {
+      "L": 6,
+      "vertices": 216,
+      "plaquettes": 648,
+      "B_sites": 108,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 648,
+      "extra_straight_winding_four_cycles": 0,
+      "all_four_cycles_per_B": 12,
+      "response_per_vacancy_if_all_four_cycles_summed": 48
+    },
+    {
+      "L": 8,
+      "vertices": 512,
+      "plaquettes": 1536,
+      "B_sites": 256,
+      "plaquettes_per_B": 12,
+      "plaquettes_per_edge": 4,
+      "response_per_vacancy_at_K1": 48,
+      "all_graph_four_cycles": 1536,
+      "extra_straight_winding_four_cycles": 0,
+      "all_four_cycles_per_B": 12,
+      "response_per_vacancy_if_all_four_cycles_summed": 48
+    }
+  ],
+  "operator_rows": [
+    {
+      "state": "initial",
+      "plaquette": 0,
+      "D": 0,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "initial",
+      "plaquette": 13,
+      "D": 0,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "initial",
+      "plaquette": 74,
+      "D": 0,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 0,
+      "D": 0,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 13,
+      "D": 0,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 74,
+      "D": 0,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 0,
+      "D": 86,
+      "A_p": 2,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 13,
+      "D": 86,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 74,
+      "D": 86,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 0,
+      "D": 60,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 13,
+      "D": 60,
+      "A_p": 2,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 74,
+      "D": 60,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 0,
+      "D": 46,
+      "A_p": 2,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 13,
+      "D": 46,
+      "A_p": 2,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 74,
+      "D": 46,
+      "A_p": 0,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 0
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 0,
+      "D": 156,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 13,
+      "D": 156,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 74,
+      "D": 156,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 0,
+      "D": 36,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 13,
+      "D": 36,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 74,
+      "D": 36,
+      "A_p": 4,
+      "XX_YY_XY_and_sum_exact": true,
+      "output_words_XX": 3
+    }
+  ],
+  "coherence_rows": [
+    {
+      "state": "initial",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "full_occupancy",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "1",
+      "YY": "3",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "3",
+      "YY": "1",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "2",
+      "YY": "2",
+      "XY": "1",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "1",
+      "YY": "3",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "3",
+      "YY": "1",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "2",
+      "YY": "2",
+      "XY": "1",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "1",
+      "YY": "3",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "3",
+      "YY": "1",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "2",
+      "YY": "2",
+      "XY": "1",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "1",
+      "YY": "3",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "3",
+      "YY": "1",
+      "XY": "0",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "2",
+      "YY": "2",
+      "XY": "1",
+      "matrix_determinant": "3",
+      "sum": "4"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "0",
+      "YY": "0",
+      "XY": "0",
+      "matrix_determinant": "0",
+      "sum": "0"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 0,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 0,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 0,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 13,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 13,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 13,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 74,
+      "phase": "plus",
+      "XX": "2",
+      "YY": "6",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 74,
+      "phase": "minus",
+      "XX": "6",
+      "YY": "2",
+      "XY": "0",
+      "matrix_determinant": "12",
+      "sum": "8"
+    },
+    {
+      "state": "initial_with_winding_three",
+      "plaquette": 74,
+      "phase": "imaginary",
+      "XX": "4",
+      "YY": "4",
+      "XY": "2",
+      "matrix_determinant": "12",
+      "sum": "8"
+    }
+  ],
+  "primitive_rows": [
+    {
+      "state": "initial",
+      "instrument": "resolved_minus",
+      "jump_output_words": 5,
+      "jump_norm_squared": "5",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "initial",
+      "instrument": "resolved_plus",
+      "jump_output_words": 5,
+      "jump_norm_squared": "5",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "initial",
+      "instrument": "coherent_edge",
+      "jump_output_words": 10,
+      "jump_norm_squared": "10",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "full_occupancy",
+      "instrument": "resolved_minus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "full_occupancy",
+      "instrument": "resolved_plus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "full_occupancy",
+      "instrument": "coherent_edge",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "instrument": "resolved_minus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "instrument": "resolved_plus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "instrument": "coherent_edge",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "instrument": "resolved_minus",
+      "jump_output_words": 1,
+      "jump_norm_squared": "1",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "instrument": "resolved_plus",
+      "jump_output_words": 1,
+      "jump_norm_squared": "1",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "instrument": "coherent_edge",
+      "jump_output_words": 2,
+      "jump_norm_squared": "2",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "instrument": "resolved_minus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "instrument": "resolved_plus",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "instrument": "coherent_edge",
+      "jump_output_words": 0,
+      "jump_norm_squared": "0",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "instrument": "resolved_minus",
+      "jump_output_words": 4,
+      "jump_norm_squared": "4",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "instrument": "resolved_plus",
+      "jump_output_words": 4,
+      "jump_norm_squared": "4",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "instrument": "coherent_edge",
+      "jump_output_words": 8,
+      "jump_norm_squared": "8",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "initial_with_winding_three",
+      "instrument": "resolved_minus",
+      "jump_output_words": 5,
+      "jump_norm_squared": "5",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "initial_with_winding_three",
+      "instrument": "resolved_plus",
+      "jump_output_words": 5,
+      "jump_norm_squared": "5",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    },
+    {
+      "state": "initial_with_winding_three",
+      "instrument": "coherent_edge",
+      "jump_output_words": 10,
+      "jump_norm_squared": "10",
+      "Wilson_commutator_exact": true,
+      "Gauss_and_number_change_exact": true,
+      "response_loss_balance_exact": true
+    }
+  ],
+  "global_balance_rows": [
+    {
+      "state": "initial",
+      "N": 32,
+      "vacant_B": 32,
+      "summed_response": 1536,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "full_occupancy",
+      "N": 64,
+      "vacant_B": 0,
+      "summed_response": 0,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "isolated_two_vacancies",
+      "N": 62,
+      "vacant_B": 2,
+      "summed_response": 96,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "nearby_two_vacancies",
+      "N": 62,
+      "vacant_B": 2,
+      "summed_response": 96,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "eight_vacancies_one_minus_A",
+      "N": 56,
+      "vacant_B": 8,
+      "summed_response": 384,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "sixteen_vacancies_two_minus_A",
+      "N": 48,
+      "vacant_B": 16,
+      "summed_response": 768,
+      "capacity_relation_exact": true
+    },
+    {
+      "state": "initial_with_winding_three",
+      "N": 32,
+      "vacant_B": 32,
+      "summed_response": 1536,
+      "capacity_relation_exact": true
+    }
+  ],
+  "all_assertions_passed": true,
+  "elapsed_seconds": 0.5117910830304027
+}

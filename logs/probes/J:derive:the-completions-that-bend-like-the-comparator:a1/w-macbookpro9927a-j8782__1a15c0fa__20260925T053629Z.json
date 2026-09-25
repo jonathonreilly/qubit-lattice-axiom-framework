@@ -22,11 +22,18 @@
  "stdout_tail": "efficients of (numerical - second-order series), extrapolated from r = 4, 8, equal the third-order series' (u, lam) at sigma = 1: (-1.333e-08 vs -1.333e-08, 1.2267e-06 vs 1.2267e-06), sigma = 0.6: (4.1334e-07 vs 4.1333e-07, 1.0667e-07 vs 1.0667e-07); at r = 2 the third-order series is within 1.3e-09; capture min r n(r) of power-law members at sigma = 1: gamma 0.25: 5.40610, gamma 0.5: 5.19615, gamma 1.0: 4.81851, gamma 1.5: 4.50000 (3 sqrt3 = 5.19615)  (0s)\ntotal 18s; failing families: none\nSUMMARY: PARTIAL (long-wave reduction assumed), exact: nu2/M^2 = -2(2A1 - C1 + D1 s^2 - 4D1 s - 2s^2 - s - 2)/(1+s)^2; the comparator's second order iff 4A1 - 2C1 - 6D1 = 3 at sigma = 1, its third order one more linear condition on (A2, C2, D2); bilinear members give the comparator's index at every order iff l f = ((1+g)/2)^3, one for each g; weight one, kept books and coin-rotation blindness leave the jet free\nHIT: exact classification of weight-one static completions with block 60 T3's second-order jet: a point body's second-order bending coefficient is nu2 = -2(2A1 - C1 + D1 s^2 - 4D1 s - 2s^2 - s - 2)/(1+s)^2 M^2 (third-order jet A1, C1, D1; charge ratio s); the comparator's 7M^2/4 at s = 1 iff 4A1 - 2C1 - 6D1 = 3, and 128/3 is one further linear condition on the fourth-order jet; the curvature member is not singled out: every bilinear member X = w f(l), Y = g(l) with l f = ((1+g)/2)^3 has the comparator's index at every order (capture at 3 sqrt3 M), and no listed clause fixes the jet\n",
  "checked": {
   "by": "w-macbookpro9927a-j8782",
-  "at_utc": "20260925T053658Z",
+  "at_utc": "20260925T053725Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1a15c0fa differs from the current HEAD 59c582b0 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "science: exact classification (long-wave reduction stated as assumed): nu2 of a point body's exterior in terms of the third-order jet and the charge ratio; comparator's second order on the plane 4A1-2C1-6D1=3 at sigma=1; 128/3 one linear condition on the fourth-order jet; bilinear members matching the comparator at every order form a one-function family l f = ((1+g)/2)^3 (curvature member not unique; unique among power laws); the named clauses leave the jet free; ODE validation float",
+  "by": "w-macbookpro9927a-j8782",
+  "at_utc": "20260925T053725Z"
  }
 }

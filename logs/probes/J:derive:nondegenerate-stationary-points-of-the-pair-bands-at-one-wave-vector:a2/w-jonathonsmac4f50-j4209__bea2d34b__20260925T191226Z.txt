@@ -1,0 +1,10 @@
+   Z^2, sigma = +1: 16 stationary points (numerical seeds); Krawczyk boxes certified: True, pairwise disjoint per chart: True; smallest |det| lower bound 1.553e+00; exclusion boxes 14420, uncleared 0  [24 s]
+   Z^2, sigma = -1: 8 stationary points (numerical seeds); Krawczyk boxes certified: True, pairwise disjoint per chart: True; smallest |det| lower bound 3.279e+00; exclusion boxes 2932, uncleared 0  [29 s]
+PASS C1 Z^2 at K0 = (2 atan(1/3), 2 atan(2/3)): every zero of grad eps(k1) - sigma grad eps(k2) away from the cone points lies in exactly one certified Krawczyk box (one zero each, interval Jacobian determinant excluding 0); sigma = +1 (bands (+,+), (-,-)): 16, sigma = -1 (bands (+,-), (-,+)): 8 nondegenerate stationary points  [29 s]
+   Z^3, sigma = +1: 64 stationary points (numerical seeds); Krawczyk boxes certified: True, pairwise disjoint per chart: True; smallest |det| lower bound 1.034e+00; exclusion boxes 252040, uncleared 0  [738 s]
+   Z^3, sigma = -1: 48 stationary points (numerical seeds); Krawczyk boxes certified: True, pairwise disjoint per chart: True; smallest |det| lower bound 2.901e+00; exclusion boxes 160712, uncleared 0  [1159 s]
+PASS C2 Z^3 at K0 = (2 atan(1/3), 2 atan(2/3), 2 atan(1/4)): the same certificate: sigma = +1: 64, sigma = -1: 48 nondegenerate stationary points  [1159 s]
+
+TOTAL: PASS=2 FAIL=0 (1159 s)
+HIT: assumption (A') of block 143 certified: in exact rational interval arithmetic (Krawczyk boxes and exclusion boxes, cone neighbourhoods cleared by a magnitude test), the four pair bands at K0 = (2 atan(1/3), 2 atan(2/3)) on Z^2 have 16, 8, 8 and 16 stationary points away from the cone points, all nondegenerate; on Z^3 at K0 = (2 atan(1/3), 2 atan(2/3), 2 atan(1/4)): 64, 48, 48 and 64
+SUMMARY: PROVED (A') at one K0 on Z^2 and at one K0 on Z^3, by an exact rational interval certificate

@@ -1,0 +1,37 @@
+{
+ "task": "P:9191",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block133-a-mas",
+ "worker": "w-jonathonsmac4f50-j4a8d",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9191",
+ "pr": 9191,
+ "branch": "physics-loop/admissibility-induced-law-block133-a-massive-body-at-rest-sits-on-one-sublattice-chessboard-stays-local-20260924",
+ "git_sha": "362eec64",
+ "started_utc": "20260925T051647Z",
+ "elapsed_s": 10.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_massive_body_at_rest_sits_on_one_sublattice_its_chessboard_of_clocks_stays_local_and_never_enters_the_pull_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9191's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "95880352d7bc38b3447801ef1d0c05cfb2af9dc6dd7acdc8aa118a7b7a6c185f",
+ "stdout_tail": "PR #9191: physics-loop: admissibility induced-law block 133 - a massive body at rest sits on one sublattice: its chessboard of clocks stays local, and never enters the pull at any power of the distance\nbranch physics-loop/admissibility-induced-law-block133-a-massive-body-at-rest-sits-on-one-sublattice-chessboard-stays-local-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_massive_body_at_rest_sits_on_one_sublattice_its_chessboard_of_clocks_stays_local_and_never_enters_the_pull_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation rest_density_forged: expected B observed B ok\n   mutation moving_weight_forged: expected C observed C ok\n   mutation chessboard_field_forged: expected D observed D ok\n   mutation symbol_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4a8d",
+  "at_utc": "20260925T051658Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+PR #9191: physics-loop: admissibility induced-law block 133 - a massive body at rest sits on one sublattice: its chessboard of clocks stays local, and never enters the pull at any power of the distance
+branch physics-loop/admissibility-induced-law-block133-a-massive-body-at-rest-sits-on-one-sublattice-chessboard-stays-local-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_massive_body_at_rest_sits_on_one_sublattice_its_chessboard_of_clocks_stays_local_and_never_enters_the_pull_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation rest_density_forged: expected B observed B ok
+   mutation moving_weight_forged: expected C observed C ok
+   mutation chessboard_field_forged: expected D observed D ok
+   mutation symbol_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

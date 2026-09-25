@@ -129,13 +129,25 @@ def V(eps):
     return 1 / SQPI * qint(lambda x: (1 - g(a * x * x) * g(b * x * x) ** 2) / (x * x) if x > 1e-8 else 0.5 * a + b, 1 / np.sqrt(max(a, b, 1.0)))
 def d2(fun, h):
     return (fun(h) - 2 * fun(0.0) + fun(-h)) / h ** 2
-V2 = (4 * d2(V, 0.01) - d2(V, 0.02)) / 3
+gp = lambda u: 0.5 * (i1e(0.5 * u) - i0e(0.5 * u))          # d/du <exp(-u sin^2 k)>
+def Vp(eps):          # d<sqrt A>/d eps, differentiated under the integral (no finite differences)
+    a, b = np.exp(4 * eps), np.exp(-2 * eps)
+    return 1 / SQPI * qint(lambda x: -(4 * a * gp(a * x * x) * g(b * x * x) ** 2 - 4 * b * g(a * x * x) * g(b * x * x) * gp(b * x * x)),
+                           1 / np.sqrt(max(a, b, 1.0)))
+def rich1(fun, h):      # derivative at 0 of fun by Richardson-extrapolated central differences
+    c = lambda hh: (fun(hh) - fun(-hh)) / (2 * hh)
+    return (4 * c(h / 2) - c(h)) / 3
+V2 = rich1(Vp, 0.01)
 bc = V2 / 72
 # linear-rate model (1 + 2 eps, 1 - eps, 1 - eps): chi_a = its second derivative of <sqrt A>
 def Vlin(eps):
     a, b = (1 + 2 * eps) ** 2, (1 - eps) ** 2
     return 1 / SQPI * qint(lambda x: (1 - g(a * x * x) * g(b * x * x) ** 2) / (x * x) if x > 1e-8 else 0.5 * a + b)
-chi_a = (4 * d2(Vlin, 0.01) - d2(Vlin, 0.02)) / 3
+def Vlinp(eps):        # d<sqrt A_lin>/d eps under the integral, A_lin = (1 + 2 eps)^2 s_x^2 + (1 - eps)^2 (s_y^2 + s_z^2)
+    a, b = (1 + 2 * eps) ** 2, (1 - eps) ** 2
+    da, db = 4 * (1 + 2 * eps), -2 * (1 - eps)
+    return 1 / SQPI * qint(lambda x: -(da * gp(a * x * x) * g(b * x * x) ** 2 + 2 * db * g(a * x * x) * g(b * x * x) * gp(b * x * x)))
+chi_a = rich1(Vlinp, 0.01)
 out("X anisotropy: d^2<sqrt A>/d eps^2 at 0 = %.10f; threshold beta_c = that/72 = %.10f; landed T3's (chi_a + 2J)/72 with chi_a = %.10f (the "
     "linear-rate model's second derivative) = %.10f (difference %.1e)" % (V2, bc, chi_a, (chi_a + 2 * J) / 72, bc - (chi_a + 2 * J) / 72))
 for L in GRIDS:
@@ -148,11 +160,6 @@ V3 = (V(0.02) - 2 * V(0.01) + 2 * V(-0.01) - V(-0.02)) / (2 * 0.01 ** 3)
 out("X anisotropy: third derivative of <sqrt A> at 0 = %.6f: the landscape is not even in eps, so the barrier is lower on the side eps %s 0"
     % (V3, ">" if V3 > 0 else "<"))
 
-gp = lambda u: 0.5 * (i1e(0.5 * u) - i0e(0.5 * u))          # d/du <exp(-u sin^2 k)>
-def Vp(eps):          # d<sqrt A>/d eps, differentiated under the integral (no finite differences)
-    a, b = np.exp(4 * eps), np.exp(-2 * eps)
-    return 1 / SQPI * qint(lambda x: -(4 * a * gp(a * x * x) * g(b * x * x) ** 2 - 4 * b * g(a * x * x) * g(b * x * x) * gp(b * x * x)),
-                           1 / np.sqrt(max(a, b, 1.0)))
 _fd = (V(1e-3) - V(-1e-3)) / 2e-3
 out("N anisotropy: the analytic derivative against a central difference at eps = 0 (%.2e, zero by symmetry) and at eps = 0.3: %.10f vs %.10f"
     % (Vp(0.0), Vp(0.3), (V(0.3 + 1e-4) - V(0.3 - 1e-4)) / 2e-4))

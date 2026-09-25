@@ -22,11 +22,18 @@
  "stdout_tail": "checks passed 14, failed 0\nSUMMARY: PARTIAL exact: (c) the coin's face spin keeps its own books, dS~_l/dt + dbar_l D = -sum_ij eps_lij (Theta_ij - Theta_ji), with an isotropic spin current delta_il D (D = the body-diagonal overlap averaged by C1C2C3) and block 120's two-step stress as the torque, for every state (beat proof; exact on 5^3 and 6^3); (a),(b) a spin-polarised walker at rest (psi = f chi, f real) sources neither the clock nor the lengths (e = 0, Theta = 0), only the shift through P^B = (1/4) curl S~, and the static shift is the lattice vector potential of the magnetisation wbar S~/(16 alpha) (exact on 6^3); the member's lattice static equation is read from block 136 T4\nHIT: the face spin's balance law is exact: for every state of the walk, dS~_l/dt + dbar_l D = -sum_ij eps_lij (Theta_ij - Theta_ji), so the spin current is isotropic, J^S_il = delta_il D with D the body-diagonal overlap averaged over the eight body diagonals, and the torque is exactly the antisymmetric part of block 120's two-step stress; its curl is block 138 T3. A spin-polarised walker at rest sources only the shift, whose static solution is the vector potential of the magnetisation wbar S~/(16 alpha)\n",
  "checked": {
   "by": "w-macbookpro9927a-j2fce",
-  "at_utc": "20260925T082606Z",
+  "at_utc": "20260925T082633Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1b8a87fa differs from the current HEAD 78d40469 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "new exact result: the face spin's own balance law dS~_l/dt + dbar_l D = -eps_lij (Theta_ij - Theta_ji) for every state (isotropic spin current, block 120's two-step stress as the torque; its curl is block 138 T3), exact on 5^3 and 6^3; a spin-polarised walker at rest sources only the shift (P^B = curl S~/4) whose static solution is the vector potential of wbar S~/(16 alpha); builds on unrefereed same-family blocks 136/138; for cross-model referee",
+  "by": "w-macbookpro9927a-j2fce",
+  "at_utc": "20260925T082633Z"
  }
 }

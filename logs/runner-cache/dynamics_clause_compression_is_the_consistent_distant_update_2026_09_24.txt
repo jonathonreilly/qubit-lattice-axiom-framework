@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.py
+runner_sha256: 2cede3a0ebb6eecf51d2428887b83a80a3411800307a660098be6a996bac3f8a
+input_fingerprint_sha256: 330874efd9b14bb7bc8241978d508d67de569a5ea0e9cd02d43ad1a689fbb06d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+[PASS] joint laws are product projectors: each E_qr lies on the line where the ranges of P_q (x) I and I (x) P_r meet, and the marginals fix c = 1 :: range intersection dimensions [1, 1, 1, 1]; marginal system rank 4, residual 1e-15, unique solution c = [1.0, 1.0, 1.0, 1.0]
+[PASS] sequential consistency gives compression on the partner: the partner's state after record q is the Lueders conditional state :: 200 random pairs (ranks 1-4); largest deviation 1.1e-15
+[PASS] a reset update fails: leaving the partner unchanged gives p_q p_r, which misses the joint law on a singlet by |a.b|/4 :: largest deviation from |a.b|/4 over 100 random axis pairs 2e-16; gap at parallel axes 0.250
+[PASS] the whole rest: two-qubit tomography of the rest after a record reproduces its Lueders compression :: 100 random three-qubit states; largest deviation 3.8e-16
+[PASS] two-possibility menus are antipodal: e1 P1 + e2 P2 = I is solvable only for antipodal possibilities, with e1 = e2 = 1 :: angle between possibilities (deg), completeness residual, weights: 180.0: 0.000 [1.0, 1.0]; 162.0: 0.219 [0.976113, 0.976113]; 90.0: 0.816 [0.666667, 0.666667]; 36.0: 0.975 [0.52507, 0.52507]
+[PASS] minus-X positive-probability partial-trace regression
+[PASS] zero-probability conditional branch is explicitly undefined
+N5 resolution: Require positive outcome probability for a conditional state; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Correct the rest partial trace by identifying site indices; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Specify complete partner tomography and joint Born premises; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Separate partner uniqueness from global instrument uniqueness; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Retain larger supported menus as a counterroute; see the explicit conditional proof and limitation in the paired note.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py
+runner_sha256: def00e3d6cba7decb6839e0ad40386fcf44da0d9bbcf026b189d6269c2d71500
+input_fingerprint_sha256: d6a01a81a94af1b15d3f77863a0996ea2d280f84bbac44703600c323b7c7581f
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.10
+status: ok
+----- stdout -----
+[PASS] the clause carries purifications: the Heisenberg bond at J t = pi is the swap, and partial swaps give every reduced Bloch length :: |U - phase * SWAP| 3.4e-16; reduced Bloch lengths along the partial swap [1.0, 0.966, 0.866, 0.707, 0.5, 0.259, 0.0]
+[PASS] steering realizes every chord: a record on a purifying partner leaves the site in either endpoint with the chord weights :: 200 random chords; largest deviation 1.1e-15
+[PASS] the trace rule is consistent: the steered average equals the law at the reduced state :: largest |sum_b p_b P(rho_b) - P(rho)| over 300 chords 1.1e-16
+[PASS] nonlinear laws signal: a tanh deformation of the landed exp counterkernel and a cubic deformation change the site's marginal with the distant record and its axis :: record-or-not shift: tanh 0.201, cubic 0.062; axis-choice shift: tanh 0.166, cubic 0.057
+[PASS] chord consistency forces affinity: the cubic deformation passes only at zero deformation, and fails in proportion to it :: largest chord violation eps 0.0: 2.2e-16, eps 0.01: 2.5e-03, eps 0.1: 2.3e-02, eps 0.3: 6.2e-02
+[PASS] orientation from compression: a record must leave a normalizable compressed state, so P(q | -q) = 0; this forces lambda = 1 and, for any two-outcome effect, E_q = P_q :: lambda passing on a 21-point grid: [1.0]; 13529 sampled effects (sample ratio |E_q - P_q| / violation up to 4.31)
+[PASS] self-consistent weights: with the partner's weights from the same law, the sampled laws agree with the exact affine-family classification; support excludes lambda = 0 :: largest marginal shift: Born (lambda 1) 2.2e-16, trivial (lambda 0) 0.0e+00, lambda 0.5 1.0e-01, anti-Born (lambda -1) 7.3e-01, cubic 6.9e-02
+[PASS] the distant update carries the argument: with a replacement update (the lock alone) anti-Born and tanh laws pass D-loc :: anti-Born: D-loc shift 1e-16, largest gap to the trace rule 0.93; tanh: D-loc shift 1e-16, largest gap to the trace rule 0.15 (the lock holds by construction)
+[PASS] D-loc is an equal-time reading: a record at distance 3 leaves site 0 unchanged at equal time and shifts it afterwards :: shift of site 0's Bloch vector at t = 0, 0.01, 0.05, 0.1: 0e+00, 1.9e-08, 2.4e-06, 1.9e-05; growth exponent 3.00
+[PASS] affine self-weighted identity lambda=-1.0
+[PASS] affine self-weighted identity lambda=0.0
+[PASS] affine self-weighted identity lambda=0.5
+[PASS] affine self-weighted identity lambda=1.0
+[PASS] support ratio has no constant linear bound
+N5 resolution: Supply ensemble weights in the general affinity argument; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Restrict self-weighted classification to the affine covariant family; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Separate controlled preparation from an autonomous randomizer; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Use exact positive-effect support instead of a sampled ratio bound; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Keep frequency and finite-time propagation obligations separate; see the explicit conditional proof and limitation in the paired note.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.py
+runner_sha256: 4211cd924eafbdd31ff8bc52ba07ba541ba20c5a42d71dc606df6498c7a4e4f8
+input_fingerprint_sha256: 9ff1ff8fcba7ce3e02b8e19163e46fc92b596f3b8ed485c3711038c045d0a146
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.54
+status: ok
+----- stdout -----
+[PASS] purity: aggregate random examples exhibit purity loss; sampled unitaries preserve purity :: lowest output purity over non-unitary channels 0.383; unitary purity defect 2.8e-15
+[PASS] the replacement channel keeps purity but sends orthogonal states to the same output :: output purity 1; trace distance of orthogonal inputs 1 -> 0.0e+00
+[PASS] mechanism: proportional Kraus operators give a unitary conjugation; a generic channel has non-parallel Kraus outputs :: proportional-Kraus deviation from U rho U^dag 2.8e-16; largest non-parallelism 0.889
+[PASS] distinguishability: aggregate random examples exhibit distance loss; sampled unitaries preserve distances :: largest drop 0.864; unitary change 1.2e-15
+[PASS] the lemma: parallel outputs on every input mean proportional maps, or two rank-one maps with a common range :: rank-one pair with a common range: non-parallelism 4e-16, not proportional (rank 2); rank-two with rank-one: non-parallelism up to 0.993
+N5 resolution: Prove the parallel-output linear-map lemma including its kernel; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Retain the pure replacement exception before imposing distances; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Normalize proportional Kraus matrices using trace preservation; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Keep input and output dimensions equal in the unitary classification; see the explicit conditional proof and limitation in the paired note.
+N5 resolution: Treat record-only irreversibility as a supplied mathematical requirement; see the explicit conditional proof and limitation in the paired note.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

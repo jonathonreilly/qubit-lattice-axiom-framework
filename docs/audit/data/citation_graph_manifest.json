@@ -1,6 +1,6 @@
 {
- "edge_count": 14678,
- "node_count": 6667,
+ "edge_count": 14689,
+ "node_count": 6672,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5134,6 +5134,10 @@
    "deps_hash": "e23a95af8450",
    "out_degree": 6
   },
+  "dynamics_clause_a_distant_record_is_a_recorded_randomizer_locality_of_marginals_forces_preparation_affinity_and_the_trace_rule_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "dynamics_clause_a_soft_vector_constraint_and_slot_fields_generate_the_landed_tensor_field_s_curvature_moves_at_twelfth_order_bounded_theorem_note_2026-09-24": {
    "deps_hash": "a4b603a422e7",
    "out_degree": 2
@@ -5152,6 +5156,10 @@
   },
   "dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_heisenberg_under_possibility_covariance_three_couplings_under_full_soldering_bounded_theorem_note_2026-09-24": {
    "deps_hash": "43d25c493f2c",
+   "out_degree": 2
+  },
+  "dynamics_clause_locality_of_marginals_makes_a_site_s_evolution_between_records_linear_and_completely_positive_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bf9f124f2bf1",
    "out_degree": 2
   },
   "dynamics_clause_moriya_handedness_is_a_twist_with_curvature_gauged_along_a_line_not_in_three_dimensions_and_seen_in_records_bounded_theorem_note_2026-09-24": {
@@ -5174,6 +5182,10 @@
    "deps_hash": "a59898a41151",
    "out_degree": 3
   },
+  "dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_a_channel_that_keeps_pure_states_pure_and_distinguishable_is_unitary_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d6f255501020",
+   "out_degree": 2
+  },
   "dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_gapped_majorana_fermions_in_a_static_z2_gauge_field_bounded_theorem_note_2026-09-24": {
    "deps_hash": "d416a5f883f6",
    "out_degree": 4
@@ -5185,6 +5197,10 @@
   "dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_forming_sites_must_be_isolated_and_never_interact_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
+  },
+  "dynamics_clause_the_compression_update_is_the_one_distant_update_consistent_with_locality_of_marginals_and_affine_joint_laws_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "bf9f124f2bf1",
+   "out_degree": 2
   },
   "dynamics_clause_the_covariant_plaquette_clause_annihilates_uniform_ice_exactly_at_the_rokhsar_kivelson_point_and_unrecorded_plaquettes_can_polarize_the_ice_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",
@@ -17057,6 +17073,10 @@
   "record_projective_history_local_append_downstream_law_candidate_bounded_theorem_note_2026-08-21": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
+  },
+  "record_readout_locality_read_as_local_tomography_admits_the_ordinary_composite_and_excludes_the_graded_one_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "a81d367f784b",
+   "out_degree": 4
   },
   "record_reset_sink_entropy_ledger_2026-06-05": {
    "deps_hash": "630eac816cd1",

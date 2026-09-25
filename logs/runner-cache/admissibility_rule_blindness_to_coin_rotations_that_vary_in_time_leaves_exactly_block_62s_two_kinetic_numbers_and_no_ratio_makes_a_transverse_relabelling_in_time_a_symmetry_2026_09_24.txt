@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_blindness_to_coin_rotations_that_vary_in_time_leaves_exactly_block_62s_two_kinetic_numbers_and_no_ratio_makes_a_transverse_relabelling_in_time_a_symmetry_2026_09_24.py
+runner_sha256: ffe44171759266fb85d3568609b1e93c5eac4a828381e5d9bb40a7e087034173
+input_fingerprint_sha256: d1112ea55f028dfc9d684eb116fe09141d3a6b3d88b7da3e1d9a34d2a6419261
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.14
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_BLINDNESS_TO_COIN_ROTATIONS_THAT_VARY_IN_TIME_LEAVES_EXACTLY_BLOCK_62S_TWO_KINETIC_NUMBERS_AND_NO_RATIO_MAKES_A_TRANSVERSE_RELABELLING_IN_TIME_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged (blindness to rotations of the coin axes) and no site is privileged (blindness to relabellings); Admissibility is not a dynamics axiom (the frame, the member and its kinetic term are supplied clauses)
+PASS: B1 T1: for a generic rational frame E with nine symbolic rates and three symbolic rotation rates, a rotation of the coin axes varying in time (the tick label) shifts the lowered frame rate g V (V = E' E^-1/w) by an exactly antisymmetric matrix, while sym(g V) = -g'/(2w); so I1 + I2 and (tr V)^2 are unchanged and I1 - I2 is not: a quadratic kinetic term built from V with the metric alone is blind iff c1 = c2 and has exactly two numbers, (det e/w)[alpha tr(g^-1 g' g^-1 g') + beta (tr g^-1 g')^2], block 62's family
+PASS: C1 T2: for the isotropic stretch h = 2 lambda delta the kinetic term is (12 alpha + 36 beta) lambda'^2 / w, block 60 T5's c_k, increasing in beta: for alpha > 0 negative (block 60 T5's uniform motion of a closed lattice) iff beta < -alpha/3; at the closing ratio beta = -alpha (blocks 101, 112) it is -24 alpha, inside that region; -6K at (K/4, -K/4)
+PASS: D1 T3: a transverse relabelling varying in time (h -> h + p xi^T + xi p^T, xi = (p2, -p1, 0) zeta(t), p.xi = 0) leaves R1 and R2 unchanged and changes the Lagrangian by exactly 4 alpha zeta' xi.h'.p + 2 alpha p^2 (p1^2 + p2^2) zeta'^2 (no beta), whose variational derivative in zeta, -4 alpha (xi.h''.p + p^2 (p1^2 + p2^2) zeta''), is not zero: not a total derivative, so a symmetry at no ratio with alpha != 0, and no field of the clauses couples to it; against it, the gradient relabelling h -> h + p p^T zeta(t) with u -> u - (2 alpha/K) zeta'' changes alpha h'_ij h'_ij + beta h'^2 + K(u R1 + R2) by -2 alpha d(zeta' R1)/dt + (alpha + beta)(2 p^2 tr h' zeta' + p^4 zeta'^2) exactly (symbolic functions of time), a symmetry up to a total derivative iff beta = -alpha (block 112 T2's field part, re-checked)
+PASS: D2 T5: in block 62's cube family M1 sum h'_jj^2 + M2 sum h'_ii h'_jj + M3 sum h'_ij^2 (no metric premise), the gradient relabelling in time with u -> u + (c/K) zeta'' is a symmetry up to a total derivative iff (M1, M2, M3) = (0, c, -c): the rotation-invariant member (M3 = 2 M1 - M2) at beta = -alpha, alpha = -c/2; a transverse relabelling (xi = p x a, symbolic a) is one iff (M1, M2, M3) = (M, 2M, 0), the pure trace term with alpha = 0; both together only for zero (every variational derivative solved exactly at symbolic p)
+PASS: E1 T4: block 62's 7x7 mode determinant (six strains and the rates' multiplier u; block 62 T4 at K = 1) equals -32 K^2 X^3 alpha^2 (alpha + beta)(p^2)^2 (K p^2 - 4 alpha X)^2 at two rational p; M (p p^T, 2 alpha X/K) = 2 (alpha + beta) X p^2 (delta, 0) exactly, so the gradient direction is null at every X iff beta = -alpha; a transverse relabelling (xi = (p2, -p1, 0), u = 0) is null only at X = 0, with quadratic value 4 alpha X p^2 (p1^2 + p2^2) at every ratio: two of the three zero-frequency directions drift uniformly in time and nothing removes them; the travelling pair X = K p^2/(4 alpha) moves on the walker's light cone iff alpha = K/4, which no clause fixes
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the coin-rotation shift of the lowered frame rate, antisymmetric for a generic rational frame with symbolic rates
+per_site: executed - the invariants I1 + I2, I1 - I2 and (tr K)^2 before and after the rotation; sym(g K) = -g'/(2w)
+per_mode: executed - the 7x7 mode determinant at two rational p; the null vector at beta = -alpha; the travelling pair's light-cone condition
+per_block: executed - the gradient and transverse relabellings with the fields as symbolic functions of the tick; the cube family's symmetry conditions solved exactly
+lattice_wide: at second order in the strains and first order around the identity frame (T1 for every frame); beyond second order the question is block 112's closure; alpha/K, K and the existence of the kinetic term stay declared
+PASS: G1 the five N5 resolution lines are printed
+scope: blindness demands varying in time on block 62 member - coin-rotation blindness leaves exactly two kinetic numbers; transverse relabellings are a symmetry at no ratio (a shift-like field is missing); the gradient relabelling holds iff beta = -alpha as in block 112, and in the cube family it forces the rotation-invariant member at beta = -alpha; alpha/K stays declared; nothing adopted
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,31 @@
+{
+ "task": "R:cubic_neighbor_kernel_selection_first_principles_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_neighbor_kernel_selection_first_principles_probe_2026_07_14.py",
+ "seed": 77531,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230531Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4d921ea2d61bab463049b03420beedc872dd4211ef69da433915e9418d329285",
+ "stdout_tail": "outcome name\nPASS shape-sensitive is exactly proper-cubic covariant\nPASS shape-sensitive has full mixed-profile support\nPASS incidence gives 1/6 on one active label-1 channel\nPASS label-space uniformity gives 1/2 on the same mixed support\nPASS quadratic channel weight gives 1/26 on the same profile\nPASS three symmetry-complete count kernels predict distinct transcripts\nPASS shape kernel assigns 1/4 to an opposite pair\nPASS shape kernel assigns 1/3 to an adjacent pair\nPASS proper-cubic covariance does not force count-only dependence\nPASS incidence adds the stronger geometry-blind counting quotient\nPASS uniform outcome-label sample space ignores multiplicity\nPASS uniform causal-channel sample space respects multiplicity\nPASS maximum symmetry does not choose a sample-space quotient\nPASS power alpha=1 obeys proportional-refinement invariance\nPASS power alpha=2 obeys proportional-refinement invariance\nPASS power alpha=3 obeys proportional-refinement invariance\nPASS power alpha=4 obeys proportional-refinement invariance\nPASS refinement invariance leaves distinct exact weight laws\nPASS finite channel additivity forces the linear table\nPASS linear channel coarse-graining derives incidence probabilities\nPASS quadratic symmetry kernel fails finite channel additivity\nPASS the first quadratic failure is already the two-channel union\nPASS record scalar readout is additive independently of formation kernel\nPASS all inequivalent kernels share the same additive readout\nRESULT PASS=52 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230532Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

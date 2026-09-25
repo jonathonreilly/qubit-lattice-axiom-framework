@@ -1,0 +1,32 @@
+{
+ "task": "R:cycle48_decoder_clifford_machine_cycle146_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_decoder_clifford_machine_cycle146_2026_07_15.py",
+ "seed": 77683,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230803Z",
+ "elapsed_s": 100.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c3a9cf0f871ccc6815290c260f9b15422404693357bc847a35fa41a8f7a6144b",
+ "stdout_tail": " :: \nPASS 480 five-parent rows compile all state/gate contexts :: Counter({5: 480})\nPASS transition grammar has 11,520 covariant raw rows :: \nPASS transition rows are disjoint from the Cycle-145 merged law :: (12860, 11520, 24380)\nPASS every transition output equals the Cycle-48 matrix image :: \n\nRECURRENT TWO-OPERATION MACHINE\nPASS all 3,840 two-operation transcripts reach the exact terminal :: (11040, 7200, {39}, [])\nPASS reject is terminal while every valid output is reusable :: \n\nPREPARATION-TO-DYNAMICS BIND\nPASS port decoder retains 126 five-parent rows :: Counter({5: 126})\nPASS bound+decoder+transition union is 24,380-row single-valued :: \nPASS Cycle-144 terminal gains no decoder/transition front :: {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nPASS all 12,288 rotated preparation/operation histories are exact :: (97536, 85248, {69}, [])\nPASS valid preparation writes the exact next state and invalid preparation never transitions :: \nPASS deleting any direct transition parent suppresses that transition output :: (2400, ())\n\nSCOPE\nFAIL note contains: preparation-to-clifford record machine :: \nFAIL note contains: operation bits remain supplied event records :: \nFAIL note contains: does not derive born probabilities :: \nFAIL note contains: engineered finite transition table :: \nFAIL note contains: no axiom addition follows :: \nFAIL note contains: n1 \u2014 alternative routes :: \nFAIL note contains: n8 \u2014 cross-cycle echo :: \n\nTOTAL\nPASS 16 FAIL 8\nRESULT FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230943Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

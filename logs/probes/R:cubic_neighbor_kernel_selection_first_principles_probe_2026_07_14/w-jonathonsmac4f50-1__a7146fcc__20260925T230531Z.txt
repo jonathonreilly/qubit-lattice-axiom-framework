@@ -1,0 +1,53 @@
+PASS enumerated all 24 proper cubic rotations
+PASS all rotations act differently on the six neighbor directions
+PASS 64 binary neighbor colorings have exactly ten proper-cubic orbits
+PASS rotation orbits partition all binary neighborhoods
+PASS orbit sizes match exact cubic geometry
+PASS outcome-name exchange reduces ten spatial orbits to six pairs
+PASS two cubic orbit types are self-complementary
+PASS cubic covariance plus label symmetry and endpoint copying leave three exact parameters
+PASS neighbor-count quotient has seven profiles
+PASS count-only label-equivariant endpoint-copy kernels retain two parameters
+PASS incidence is normalized and nonnegative
+PASS incidence copies singleton homogeneous support
+PASS incidence has no privileged outcome name
+PASS incidence is exactly proper-cubic covariant
+PASS incidence has full mixed-profile support
+PASS label-uniform is normalized and nonnegative
+PASS label-uniform copies singleton homogeneous support
+PASS label-uniform has no privileged outcome name
+PASS label-uniform is exactly proper-cubic covariant
+PASS label-uniform has full mixed-profile support
+PASS quadratic-power is normalized and nonnegative
+PASS quadratic-power copies singleton homogeneous support
+PASS quadratic-power has no privileged outcome name
+PASS quadratic-power is exactly proper-cubic covariant
+PASS quadratic-power has full mixed-profile support
+PASS shape-sensitive is normalized and nonnegative
+PASS shape-sensitive copies singleton homogeneous support
+PASS shape-sensitive has no privileged outcome name
+PASS shape-sensitive is exactly proper-cubic covariant
+PASS shape-sensitive has full mixed-profile support
+PASS incidence gives 1/6 on one active label-1 channel
+PASS label-space uniformity gives 1/2 on the same mixed support
+PASS quadratic channel weight gives 1/26 on the same profile
+PASS three symmetry-complete count kernels predict distinct transcripts
+PASS shape kernel assigns 1/4 to an opposite pair
+PASS shape kernel assigns 1/3 to an adjacent pair
+PASS proper-cubic covariance does not force count-only dependence
+PASS incidence adds the stronger geometry-blind counting quotient
+PASS uniform outcome-label sample space ignores multiplicity
+PASS uniform causal-channel sample space respects multiplicity
+PASS maximum symmetry does not choose a sample-space quotient
+PASS power alpha=1 obeys proportional-refinement invariance
+PASS power alpha=2 obeys proportional-refinement invariance
+PASS power alpha=3 obeys proportional-refinement invariance
+PASS power alpha=4 obeys proportional-refinement invariance
+PASS refinement invariance leaves distinct exact weight laws
+PASS finite channel additivity forces the linear table
+PASS linear channel coarse-graining derives incidence probabilities
+PASS quadratic symmetry kernel fails finite channel additivity
+PASS the first quadratic failure is already the two-channel union
+PASS record scalar readout is additive independently of formation kernel
+PASS all inequivalent kernels share the same additive readout
+RESULT PASS=52 FAIL=0

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle822_route_b_radius_one_parity_even_synthesis_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle822_route_b_radius_one_parity_even_synthesis_2026_07_30.py",
+ "seed": 78209,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231649Z",
+ "elapsed_s": 32.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a71c2d503d8cc7f629a27594c04d79fbe7c9db3e73cb32476d1600c3d22e6274",
+ "stdout_tail": "r at most one and every typed route label returns\nPASS same-type dirty O spectators are borrowed without a state assumption and add no persistent stateful M2\nPASS blank charged and neutral route-work overhead is counted separately for every held shape\nPASS the finite A* search has an explicit box and per-macro expansion bound\nPASS the computed typed atlas transports in all 24 frames, 8 origins and 576 frame products\nPASS A* recomputation and normalized local templates are explicitly separated from program transport\nPASS the routed seam compiler avoids the actual Cycle789 non-O and Cycle821 carrier palettes and fits the landed padded word bound\nPASS phase, compiler-rotation, and returned-route deletion/mutation controls are active\nVERDICT {\"boundary\": \"arbitrary adjacent R_Q and R_ZZ rotations, the finite-box serial A* atlas, and its charged/neutral blank route-work overhead are supplied; only the computed program transports cubically, while proper-frame recomputation and normalized local templates fail, so no translation-invariant routing law, parallel recurrent-G recolouring, exact pairing-block number conservation, genesis, or autonomous occurrence is claimed\", \"derived\": \"exact Cycle821 pair atoms and all tested up-to-17-M2 recurrent seam rotations from onsite/adjacent Cycle821-matter-parity-even primitives; same-type arbitrary-state spectators and every typed route label return\", \"failed_checks\": [], \"status\": \"cycle822-route-B-positive-radius-one-parity-even-synthesis\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231722Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_repulsive_flux_fixed_half_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_repulsive_flux_fixed_half_2026_09_04.py",
+ "seed": 77535,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230536Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8906bdcd140ce0d9d156bad808a0ddbbf23e02193bf3b559b0b87192b27a3112",
+ "stdout_tail": "fixed-half cubic repulsive-flux finite diagnostics\nPASS polar direct/trace/vectorization: cases=240 max_residual=8.882e-16\nPASS polar roots preserve norm and charge: max_residual=1.554e-15\nPASS polar fixed-half q=0 inequality: cases=120 min_margin=0.00347261903\nPASS polar q=+-1 algebraic observation: cases=120 min_margin=0.0039729331; no off-half flux claim\nPASS mutation requires complex conjugation: seed=415 cases=200 wrong_min_margin=-1.26463224\nPASS CAR crossing gauge and Hermiticity: fields=12 cross=2.24e-16 herm=5.89e-16 gauge=2.84e-14\nPASS CAR fixed-half reflection inequality: cases=48 dim=70 min_margin=0.00480984757\nPASS CAR centered/uncentered N=4 shift: shift=-3V max_matrix_residual=0.00e+00\nPASS KS plaquettes and Wilson loops: fields=18 plaquettes=7584 loops=1416 residual=0.000e+00\nPASS KS direct/Bloch spectra: all8twists=4^3,6^3 max_residual=1.599e-14\nPASS canonical finite-volume gap: sizes=4^3,4x4x6,6^3,4x6x8 min_gap=1.73205081 formula_res=9.33e-15\nPASS mutation rejects all-periodic 4^3: zero_modes=8 E_periodic-E_canonical=6.58613981\nPASS finite reflection/cycle geometry: sizes=4 cycles=2028 cut_cycles=1620\nPASS fixed-N versus full-Fock centering: cube shifts N=2:0, N=4:-3 max_res=0.00e+00\nPASS domain guards: rejected=5/5 (KS/geometry odd,length2; V<0)\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/cubic_repulsive_flux_fixed_half_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

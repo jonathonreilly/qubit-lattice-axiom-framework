@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_repulsive_flux_fixed_half_independent_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.py",
+ "seed": 77536,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230536Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8f9f05f7a3c7490a9ad4a78627f2119f77760b752279a96f7a844c37cd68ee9b",
+ "stdout_tail": "PASS pauli_car_centering CAR=0.0e+00 centering_N2,4,6=1.8e-15 dimN4=70\nPASS exact_polar_mutations local=-8/5 drop_bar_margin=-8/5 polar_margin=2 KT=-1 Kdag=1 q_to_Q0=True\nPASS fixed_half_reflection cases=12 spec=3.4e-14 herm=0.0e+00 N/Q=0.0e+00 polar_Q0=2.3e-15 norm=3.3e-15 margins=(1.098e-01,2.461e-01)\nPASS centered_ground_diagnostic diagnostic_only centered_full_vs_N4=2.1e-14 plaquette=0.0e+00\nPASS canonical_torus bandgaps=(4, 4, 4):4.898979/(-1, -1, -1);(4, 4, 6):4.472136/(-1, -1, 1);(6, 6, 6):3.464102/(1, 1, 1) formula=9.3e-15 h2=0.0e+00 clifford=0.0e+00 herm=0.0e+00 wrong4_gap=3.1e-16\nPASS guards_import_firewall domain_rejections=3/3 imports=ast,numpy,sympy,time local_imports=0\nRUNTIME_SECONDS=0.369\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230537Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/cubic_repulsive_flux_fixed_half_independent_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

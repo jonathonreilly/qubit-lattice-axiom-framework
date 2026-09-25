@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle797_companion_priority_center_preparation_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle797_companion_priority_center_preparation_2026_07_30.py",
+ "seed": 77833,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231033Z",
+ "elapsed_s": 15.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4394f4f3395feb504e1ed6a362effb0898348247f23e4152347fe8727eb84ecf",
+ "stdout_tail": "gle-coordinate+deterministic-held\", \"flux_tests\": 4128, \"full_center_residual_failures\": 0, \"local_syndromes_enumerated_weight_at_most_5\": 11354, \"logical_commutator_failures\": 0, \"maximum_applied_moves\": 24, \"maximum_joint_measure_correct_cells\": 14, \"maximum_joint_measure_correct_diameter\": 6, \"maximum_local_syndrome_rank\": 18, \"maximum_move_Pauli_weight\": 36, \"maximum_move_cells\": 11, \"maximum_move_diameter\": 4, \"maximum_projected_syndrome_weight\": 4, \"parity_commutator_failures\": 0, \"physical_M2\": 270, \"plaquette_plus_parity_rank\": 31, \"plaquettes\": 38, \"shape\": [5, 3, 2], \"triangular_atlas_rows\": 30, \"triangular_replay_failures\": 0, \"unique_projected_local_moves\": 5696}], \"open\": [\"derive the priority/front as a translation-compatible recurrent local law and audit all 24 frames/576 products\", \"literal nearest-neighbor routing and collision colors for the controlled Pauli measurements\", \"prepare or renew a lawful gauge factor\", \"insert arbitrary raw six-mode logical coordinates into companion L\", \"compose seam/contact/update and held-size recurrence\"], \"report_sha256\": \"84e2e2d1a905acc1ec009a442bc8eac1015b34ebe7a82e7785583cc3e3917a87\", \"source_sha256\": \"783441416eba8d538f388bb8560fe2d4021324880dde5b7dff04b2f91927b36a\", \"status\": \"PASS_BOUNDED_NONPOSTSELECTED_CENTER_PUMP__PRIORITY_FRAME_SUPPLIED\", \"supplied\": [\"one axial proper-cubic frame and open-boundary corner\", \"the finite-box triangular priority/front atlas\", \"fresh local syndrome/work registers initialized blank\"]}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

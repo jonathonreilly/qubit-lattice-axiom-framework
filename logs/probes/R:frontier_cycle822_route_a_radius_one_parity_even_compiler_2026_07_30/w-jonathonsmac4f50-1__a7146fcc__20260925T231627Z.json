@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle822_route_a_radius_one_parity_even_compiler_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle822_route_a_radius_one_parity_even_compiler_2026_07_30.py",
+ "seed": 78187,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231627Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7a549c972437032af28dfb43e0b723777b372274d1a34bc9203f338ae312b7b4",
+ "stdout_tail": "irty_opposite_rail_residual\": 1.4142135623730947,\n        \"letters\": \"ZZXYZXYZZZZ\",\n        \"maximum_exhaustive_sparse_column_dense_residual\": 3.1401849173675503e-16,\n        \"phase\": 0,\n        \"pivot_and_order_variants\": 4,\n        \"support\": 11,\n        \"x_weight\": 4\n      },\n      {\n        \"dirty_opposite_rail_residual\": 1.4142135623730947,\n        \"letters\": \"ZZYYZXXZZZZ\",\n        \"maximum_exhaustive_sparse_column_dense_residual\": 3.1401849173675503e-16,\n        \"phase\": 2,\n        \"pivot_and_order_variants\": 4,\n        \"support\": 11,\n        \"x_weight\": 4\n      },\n      {\n        \"dirty_opposite_rail_residual\": 1.4142135623730947,\n        \"letters\": \"ZZZZXYZXYZZZZZZZZ\",\n        \"maximum_exhaustive_sparse_column_dense_residual\": 3.1401849173675503e-16,\n        \"phase\": 0,\n        \"pivot_and_order_variants\": 4,\n        \"support\": 17,\n        \"x_weight\": 4\n      },\n      {\n        \"dirty_opposite_rail_residual\": 1.4142135623730947,\n        \"letters\": \"ZZZZYYZXXZZZZZZZZ\",\n        \"maximum_exhaustive_sparse_column_dense_residual\": 3.1401849173675503e-16,\n        \"phase\": 2,\n        \"pivot_and_order_variants\": 4,\n        \"support\": 17,\n        \"x_weight\": 4\n      }\n    ],\n    \"unique_translated_factor_templates\": 7\n  },\n  \"status\": \"SUPERSEDED_INVALID_FIXED_P_EXT\",\n  \"supplied\": \"two clean dual-rail token M2 in |10> for each serialized seam factor; routing workspace modes; fixed chart, factor order, route program, and occurrence; the landed Cycle720/789/794/821 registers\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231649Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

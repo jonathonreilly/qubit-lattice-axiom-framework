@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle799_full_physical_epr_companion_input_substitution_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle799_full_physical_epr_companion_input_substitution_2026_07_30.py",
+ "seed": 77861,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231101Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71bc6758fdc9f72053f71f1c0cbe401dc7289d457ab8abba584a1acf3ed3c122",
+ "stdout_tail": "1929a6e058815\", \"resource_identity\": {\"deleted_CNOT_state_residual\": 0.9999999999999999, \"deleted_H_state_residual\": 0.7653668647301795, \"dirty_O_input_state_residual\": 1.414213562373095, \"hostile_reverse_order_state_residual\": 0.9999999999999999, \"identity\": \"for every Hermitian Pauli word P, the Cycle-789 signed pair P_O P_I^* is a product of local EPR stabilizers\", \"maximum_signed_local_pair_residual\": 0.0, \"minimum_signed_local_pair_expectation\": 0.9999999999999998, \"preparation_state_residual\": 0.0, \"six_site_Pauli_words_tested\": 4096, \"six_site_tensor_induction_failures\": 0}, \"source_sha256\": \"19b277f684f95c6e477e72dea78051bb3a7ce3acb1b32b0983fcdf000466a680\", \"span_monotonicity\": {\"deterministic_trials\": 4096, \"inclusion_under_invertible_postcomposition_failures\": 0, \"independent_generator_deletions_exposed\": 4087, \"maximum_signed_conjugation_homomorphism_residual\": 4.9076946705118025e-15, \"theorem\": \"if the required Choi-character group A is contained in the full-EPR group B, fixed unitary conjugation and later linear postcomposition preserve that containment\"}, \"status\": \"PASS\", \"supplied\": [\"the landed Cycle-789 interface formula whose required O/I resource rows are paired Hermitian Pauli characters\", \"clean physical O and I M2 banks at resource genesis\", \"one transported proper-cubic coframe selecting the local x/y/z route order and corresponding O/I site pairing\", \"the landed Cycle-794 Bell/correction prefix and Cycle-720 recurrent G for downstream substitution\"]}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231102Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

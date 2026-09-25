@@ -1,0 +1,31 @@
+{
+ "task": "R:cubic_qubit_relativistic_reduction_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_qubit_relativistic_reduction_probe_2026_07_14.py",
+ "seed": 77532,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230532Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc6e495567dd130d162a0312db8dc67a3f52a68fda3eb9dbf972dd1aec12a445",
+ "stdout_tail": "y cubic edge\n\n===============================================================================\nG - Naive two-band node and chirality census\n===============================================================================\nPASS G naive two-band spatial law has eight nodes\nPASS G node chiralities balance four plus and four minus :: Counter({1: 4, -1: 4})\nPASS G no single handed node is selected by the cubic sine law\n\n===============================================================================\nH - Constitutional-content needles\n===============================================================================\nPASS H note contains conclusion boundary: no lattice-axiom change\nPASS H note contains conclusion boundary: no qubit-axiom change\nPASS H note contains conclusion boundary: law-level content remains\nPASS H note contains conclusion boundary: exact update\nPASS H note contains conclusion boundary: axis order\nPASS H note contains conclusion boundary: time orientation\nPASS H note contains conclusion boundary: macro-step\nPASS H note contains conclusion boundary: low-momentum\nPASS H note contains conclusion boundary: wilson parameter\nPASS H note contains conclusion boundary: two tastes\nPASS H note contains conclusion boundary: interactions\nPASS H note contains conclusion boundary: not an axiom candidate\n\n===============================================================================\nSUMMARY\n===============================================================================\nPASS=66\nFAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230535Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_anisotropy_sections_so3_frame_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_anisotropy_sections_so3_frame_2026_06_17.py",
+ "seed": 77527,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230527Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "808073d131d4a355bac891e88c7c4fd34fdd09890c6d5655f7fb55cc2be81ea4",
+ "stdout_tail": "otropic  (tr=-2.22e-16)\n[FLAT] PASS: ISOTROPIC (Frobenius) complement energy is SO(3)-orbit-FLAT (reproduces retained thm)  (max orbit-var=1.22e-15)\n[FLAT] PASS: O_h-ANISOTROPIC (Frobenius+cubic) complement energy is NOT orbit-flat -> opens the channel  (max orbit-var=0.1934 (>0))\n[FLAT] PASS: the anisotropic weight W is itself EXACTLY O_h-invariant (breaking is within the O_h class)\n[LATTICE] PASS: the cubic axis 4-tensor C_ijkl (=lattice l=4 anisotropy) gives a graviton weight whose anisotropic part IS the orbit-flat-breaking direction G_aniso  (||Gcub_dev - 1.0954 G_aniso||=3.89e-16)\n[LATTICE] PASS: the l=4 cubic harmonic is NONZERO on the active lattice shells (the c_aniso witness)  (H4={'(3,3,0)': -32.4, '(4,1,0)': 83.6, '(3,2,2)': -60.4, '(4,1,1)': 63.6})\n[LATTICE] PASS: lattice dispersion w(k)=6-2 sum cos(k_i) has quartic coefficient -(1/12) sum k_i^4 in independent directions  (quartic={'axis': -0.083333, 'face-diagonal': -0.166666, 'body-diagonal': -0.249999})\n[LATTICE] PASS: sum k_i^4 decomposes as (3/5)|k|^4 + H4(k), so the quartic anisotropy is the same l=4 cubic-harmonic channel\n[NOTE] PASS: companion note uses canonical bounded_theorem metadata\n[NOTE] PASS: companion note links the cached runner output\n[NOTE] PASS: unaudited lattice-shell sibling is reader context only, not a markdown graph dependency\n[NOTE] PASS: companion note preserves GR-value/action/frame-bundle boundaries\n[NOTE] PASS: companion note does not author audit-lane status\n\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/cubic_anisotropy_sections_so3_frame_2026_06_17.txt against the .txt beside this log"
+  ]
+ }
+}

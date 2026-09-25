@@ -1,0 +1,36 @@
+{
+ "task": "R:cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_matching_product_qubit_qca_schedule_orbit_2026_07_11.py",
+ "seed": 77531,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230531Z",
+ "elapsed_s": 0.6,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=21 FAIL=5",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f81d483984a71d7525959ff65493f37b245ba7b6dbf2e48a49138a41cfad4d5a",
+ "stdout_tail": "jugacy orbit of all eight products\nPASS I09: every iSWAP macro-tick moves a computational-basis local Z support by exact graph distance six\nPASS I10: reversing all six layers with the same iSWAP gate gives the exact inverse because the six global parity factors cancel\nPASS I11: reversing the schedule with gatewise iSWAP-dagger is the general adjoint construction and also gives the inverse\nPASS I12: L=4 collapses all eight orientations and is an explicit finite-size artifact\nPASS Z01: all 720 CZ schedules are the same exact qubit unitary\nPASS Z02: omitting one CZ layer fails the all-edge product mutation control\nPASS Z03: the all-edge CZ circuit is invariant under unit translations\nPASS Z04: the all-edge CZ circuit is invariant under all 24 proper cubic rotations\nPASS Z05: CZ conjugates a local X only onto its radius-one neighbor star\nFAIL N01: source note exists\nFAIL N02: source contains boundary marker: genuine one-qubit-site circuit\nFAIL N03: source contains boundary marker: does not select iSWAP or CZ\nFAIL N04: source contains boundary marker: does not classify arbitrary qubit QCAs\nFAIL N05: source contains boundary marker: does not establish that an axiom update is necessary\nBOUNDARY: the six-layer macro-tick, gate choice, even periodic torus, supplied quasi-local extension, and schedule semantics are conditional inputs.\nBOUNDARY: CZ closes schedule dependence conditionally; iSWAP leaves eight symmetry-related ticks and no one-site-invariant member.\nTOTAL: PASS=21 FAIL=5\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230531Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=21 FAIL=5' vs cache 'TOTAL: PASS=26 FAIL=0'"
+  ]
+ }
+}

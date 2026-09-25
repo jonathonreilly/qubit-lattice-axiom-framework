@@ -1,0 +1,31 @@
+{
+ "task": "R:cycle48_decoder_clifford_bind_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "cycle48",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cycle48_decoder_clifford_bind_probe_2026_07_15.py",
+ "seed": 77587,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230627Z",
+ "elapsed_s": 95.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c243f8a094d1c6c0f2fab13075a1f2868d6440ff6f77ec35cbd09f5263905911",
+ "stdout_tail": "TABLE 126 3024 480 11520 24380 0\nBOUND_FRONT {(-9, -1, 0): frozenset({'B1'}), (-11, 1, 2): frozenset({'R_B21'})}\nINSTANCE 12288 97536 85248 [69] 0\nRESULT DECODER_TO_CLIFFORD_CAUSAL_BIND\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230803Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

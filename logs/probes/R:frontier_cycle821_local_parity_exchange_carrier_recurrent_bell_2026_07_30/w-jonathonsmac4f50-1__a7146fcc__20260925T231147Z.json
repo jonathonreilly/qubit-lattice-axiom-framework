@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle821_local_parity_exchange_carrier_recurrent_bell_2026_07_30.py",
+ "seed": 77907,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231147Z",
+ "elapsed_s": 186.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99794efe18115fb64d122ac5001b2e5b2e0c9b4ffc70196dfc696fb2b97e7f7b",
+ "stdout_tail": " syndrome banks; finite chart, local tag atlas, colour/slot schedule, boundary and stage order\",\n  \"two_cell_two_epoch\": {\n    \"atomic_factorization\": {\n      \"atom_parity_commutator_failures\": 0,\n      \"controlled_composites\": 92,\n      \"controlled_row_letter_replay_failures\": 0,\n      \"maximum_atom_cell_diameter\": 1,\n      \"maximum_atom_targets_excluding_control\": 2,\n      \"parity_even_atoms\": 196\n    },\n    \"carrier_X_rows_not_returned_after_two_epochs\": 0,\n    \"carrier_Z_rows_not_returned_after_two_epochs\": 2,\n    \"carrier_modes\": 2,\n    \"carrier_modes_per_cell\": 1,\n    \"cells\": 2,\n    \"compiled_elementary_gates\": 424,\n    \"deleted_second_epoch_corrections_detected\": 23,\n    \"deleted_second_epoch_corrections_tested\": 23,\n    \"extended_gate_parity_commutator_failures\": 0,\n    \"hostile_carrier_axis_binary_signed_failures\": {\n      \"X\": [\n        0,\n        0\n      ],\n      \"Y\": [\n        0,\n        0\n      ],\n      \"Z\": [\n        0,\n        0\n      ]\n    },\n    \"intermediate_binary_signed_failures\": [\n      0,\n      0\n    ],\n    \"maximum_compiled_atom_targets\": 2,\n    \"minimum_deleted_correction_failures\": 2,\n    \"parity_odd_corrections_per_epoch\": 12,\n    \"physical_M2_per_companion_bank\": 18,\n    \"rank\": 23,\n    \"shape\": [\n      2,\n      1,\n      1\n    ],\n    \"two_epoch_binary_signed_failures\": [\n      0,\n      0\n    ],\n    \"unextended_second_epoch_channel_binary_signed_failures\": [\n      0,\n      0\n    ],\n    \"unextended_second_epoch_parity_commutator_failures\": 12\n  }\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

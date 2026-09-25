@@ -1,0 +1,35 @@
+{
+ "task": "R:covariant_effect_map_nonselection_repeat_certainty_collapse_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "covariant",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/covariant_effect_map_nonselection_repeat_certainty_collapse_2026_07_11.py",
+ "seed": 77520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230520Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=56 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d83955b60d5cee5529bf6c30223335d5f7f89fbcbfa9a371f392b40d2d81a235",
+ "stdout_tail": "e hostile family\nPASS C01: a PSD zero-diagonal 2x2 principal minor forces its off-diagonal entry to vanish\nPASS C02: zero diagonal with nonzero off-diagonal forces a negative eigenvalue, so PSD is load-bearing\nPASS C03: generic d=2 Hermitian menu is jointly normalized\nPASS C04: the two repeat weights isolate the remaining diagonal b\nPASS C05: second repeat certainty forces b=0\nPASS C06: PSD of the repeat-calibrated E0 forces its off-diagonal to zero\nPASS C07: the generic d=2 menu collapses to P0,P1\nPASS C08d2: repeat certainty alone admits E_i=I\nPASS C09d2: the repeat-only hostile family fails joint normalization\nPASS C08d4: repeat certainty alone admits E_i=I\nPASS C09d4: the repeat-only hostile family fails joint normalization\nPASS S01: source note exists\nPASS S02: source contains boundary marker: A physical derivation of (11) for the formation effects remains open\nPASS S03: source contains boundary marker: does not derive POVM additivity\nPASS S04: source contains boundary marker: does not derive repeat certainty from Record permanence\nPASS S05: source contains boundary marker: does not identify an outcome label as a framework Record\nPASS S06: source contains boundary marker: does not establish that the axioms require amendment\nBOUNDARY: additivity, menu normalization, effects, and repeat certainty are named conditional hypotheses with zero premise weight.\nBOUNDARY: the collapse theorem selects E_i=P_i only after the named condition RC_i=Tr(P_i E_i)=1.\nTOTAL: PASS=56 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

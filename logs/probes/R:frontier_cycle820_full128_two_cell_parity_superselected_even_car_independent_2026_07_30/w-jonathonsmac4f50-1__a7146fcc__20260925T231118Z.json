@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle820_full128_two_cell_parity_superselected_even_car_independent_2026_07_30.py",
+ "seed": 77878,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231118Z",
+ "elapsed_s": 16.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "14580dbee814c6d8d976107f21e4ab1431644b6642a8c5b3f1068d88a58fbfd6",
+ "stdout_tail": "s\": 23\n      },\n      {\n        \"correction_mutations\": 23,\n        \"frame\": 20,\n        \"minimum_correction_failure\": 2,\n        \"minimum_sign_failure\": 2,\n        \"parity_even_correction_rows\": 11,\n        \"parity_odd_correction_rows\": 12,\n        \"physical_rank\": 23,\n        \"sign_mutations\": 23\n      },\n      {\n        \"correction_mutations\": 23,\n        \"frame\": 21,\n        \"minimum_correction_failure\": 2,\n        \"minimum_sign_failure\": 2,\n        \"parity_even_correction_rows\": 11,\n        \"parity_odd_correction_rows\": 12,\n        \"physical_rank\": 23,\n        \"sign_mutations\": 23\n      },\n      {\n        \"correction_mutations\": 23,\n        \"frame\": 22,\n        \"minimum_correction_failure\": 2,\n        \"minimum_sign_failure\": 2,\n        \"parity_even_correction_rows\": 11,\n        \"parity_odd_correction_rows\": 12,\n        \"physical_rank\": 23,\n        \"sign_mutations\": 23\n      },\n      {\n        \"correction_mutations\": 23,\n        \"frame\": 23,\n        \"minimum_correction_failure\": 2,\n        \"minimum_sign_failure\": 2,\n        \"parity_even_correction_rows\": 11,\n        \"parity_odd_correction_rows\": 12,\n        \"physical_rank\": 23,\n        \"sign_mutations\": 23\n      }\n    ],\n    \"rank\": 23,\n    \"undetected_Bell_sign_flips\": 0,\n    \"undetected_correction_deletions\": 0\n  },\n  \"scope\": \"independent bounded two-cell parity-superselected even-CAR check; total parity value is not fixed; no odd closure claim\",\n  \"shape\": [\n    2,\n    1,\n    1\n  ],\n  \"target_even_algebra_rank\": 23\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231134Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

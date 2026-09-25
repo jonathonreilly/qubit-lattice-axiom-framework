@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle821_local_parity_exchange_carrier_independent_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle821_local_parity_exchange_carrier_independent_2026_07_30.py",
+ "seed": 77894,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231135Z",
+ "elapsed_s": 12.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "128ca08887f0dd94cb7a086ad91eb67ee81214d09341e54a5dee0c2cd8750d8f",
+ "stdout_tail": "d from the channel input\",\"the landed Cycle-720/789 fixture, private-dual atlas, clean definite pump and Bell syndrome stabilizer inputs, and L-R live/reference character resource; coherent syndrome/carrier inputs instead implement a controlled-X joint channel outside the scalar-r statement\",\"the proper-cubic frame/coframe chart, fixed stage order, finite boundary, and carrier site offset (3,-7,-4)\"],\"two_copy_shared_carrier_executor\":{\"carrier_M2_per_cell\":1,\"carrier_controls_per_cell_per_copy\":12,\"carrier_density_spanning_states\":16,\"carrier_state_basis\":[\"I/2\",\"X+\",\"Y+\",\"Z+\"],\"carrier_state_binary_signed_or_rank_failures\":0,\"carrier_update_failures\":0,\"carrier_updates\":[{\"X_invariant_failure\":0,\"Z_control_product_failure\":0,\"cell\":0,\"retained_syndrome_controls\":24},{\"X_invariant_failure\":0,\"Z_control_product_failure\":0,\"cell\":1,\"retained_syndrome_controls\":24}],\"conditional_update\":\"rho_c -> X_c^r rho_c X_c^r, with r the xor of the six pump and six Bell odd-row syndromes in that cell\",\"disjoint_channel_copies\":2,\"expected_output_rank\":46,\"hostile_carrier_states\":{\"Bell_Phi_plus\":{\"binary_failures\":0,\"rank\":46,\"rows\":46,\"signed_failures\":0},\"Bell_singlet\":{\"binary_failures\":0,\"rank\":46,\"rows\":46,\"signed_failures\":0}},\"output_rank_range\":[46,46],\"pump_resource\":{\"binary_failures\":0,\"rank\":23,\"rows\":23,\"signed_failures\":0},\"two_copy_channel_identity_for_all_inputs_condition\":\"r_cell_copy_1 xor r_cell_copy_2 = 0; cumulative r=1 still fixes state-specific X-invariant inputs\"}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231147Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

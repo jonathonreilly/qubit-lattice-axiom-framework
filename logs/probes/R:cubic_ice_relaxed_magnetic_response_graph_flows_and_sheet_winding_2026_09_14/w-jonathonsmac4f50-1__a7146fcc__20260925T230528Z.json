@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_ice_relaxed_magnetic_response_graph_flows_and_sheet_winding_2026_09_14.py",
+ "seed": 77528,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230528Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8040c4254ee891ea977352942dd38e34d9c4574d36a4028dd0f00c6982cc3158",
+ "stdout_tail": "02e-31}, {'V': 1.3, 'beta': 0.4, 'history_curvature': 0.15895026185323877, 'spectral_curvature': 0.15895026185323757, 'Taylor_ratio_tail_bound': 3.6843942472424717e-47}, {'V': 1.3, 'beta': 1.0, 'history_curvature': 1.087529401468107, 'spectral_curvature': 1.0875294014681027, 'Taylor_ratio_tail_bound': 6.306192443645286e-29}], 'actual_RK_thermal_sector': [{'beta': 4.0, 'mobile_chi': 0.2740141816474039, 'full_zero_flux_chi': 0.017716695772546063, 'mobile_thermal_weight': 0.06465612716112468}, {'beta': 12.0, 'mobile_chi': 0.28504782186703176, 'full_zero_flux_chi': 0.01676788263203955, 'mobile_thermal_weight': 0.05882480533340606}, {'beta': 32.0, 'mobile_chi': 0.2850500282417461, 'full_zero_flux_chi': 0.01676764872010097, 'mobile_thermal_weight': 0.058823529411758606}], 'thermal_limit': 0.016767648720102904, 'global_ground_curvature_at_RK': 0}\nPASS positive_history_and_sector_limits declared exact identities and finite tolerances checked\nTOTAL: PASS=8 FAIL=0\nper_element: rational correctors, integer chain periods and actual geometric source signs are checked.\nper_site: every local degree and Gauss condition is checked in the exhaustive L=2 state census.\nper_mode: complete finite Kubo spectra and the exact six-rate current channel are examined.\nper_block: positive closed histories, degenerate sectors and explicit membrane sequences are compared.\nlattice_wide: checked and not executed \u2014 quantified finite-volume identities use written proofs; no uniform photon phase is established.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

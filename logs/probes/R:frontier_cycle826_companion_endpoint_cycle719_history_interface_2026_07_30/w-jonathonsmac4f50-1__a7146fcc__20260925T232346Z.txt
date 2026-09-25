@@ -1,0 +1,170 @@
+{
+  "audit": "unset",
+  "authority": "none",
+  "checks": {
+    "cycle719_controller_consumes_all_four_endpoint_rows_exactly": true,
+    "cycle823_full_seam_composes_with_history_interface_on_all_classes": true,
+    "declared_inputs_are_unique_existing_repo_relative_files": true,
+    "dirty_pointer_and_token_sector_controls_are_active": true,
+    "success_finalizer_deletion_is_active": true
+  },
+  "claim_scope": "exact register-interface composition of the Cycle823 full-seam opportunity with the landed Cycle719 finite recurrent controller; same-chart physical port placement remains open",
+  "composition": {
+    "composition_failures": 0,
+    "endpoint_scratch_cleanup_failures": 0,
+    "held_shapes": 4,
+    "history_class_counts": {
+      "()": 656,
+      "(-1,)": 328,
+      "(1,)": 328
+    },
+    "interface_xor_failures": 0,
+    "maximum_composition_residual": 0.0,
+    "per_shape": [
+      {
+        "cases": 16,
+        "failures": 0,
+        "shape": [
+          2,
+          1,
+          1
+        ]
+      },
+      {
+        "cases": 32,
+        "failures": 0,
+        "shape": [
+          3,
+          1,
+          1
+        ]
+      },
+      {
+        "cases": 320,
+        "failures": 0,
+        "shape": [
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "cases": 944,
+        "failures": 0,
+        "shape": [
+          5,
+          3,
+          2
+        ]
+      }
+    ],
+    "physical_or_target_phase_classes": 1312
+  },
+  "controller_truth_table": {
+    "controller_token_failures": 0,
+    "controller_transient_cleanup_failures": 0,
+    "dirty_pointer_inputs_detected": 4,
+    "endpoint_preservation_failures": 0,
+    "expected_success_rows": 2,
+    "failures": 0,
+    "history_orientation_failures": 0,
+    "inverse_failures": 0,
+    "program_stations": 130,
+    "rows": [
+      {
+        "controller_token_returned": true,
+        "controller_transients_returned_clean": true,
+        "expected_history": [],
+        "history": [],
+        "inverse_exact": true,
+        "left": 0,
+        "pointer": 0,
+        "pointer_returned_clean": true,
+        "right": 0
+      },
+      {
+        "controller_token_returned": true,
+        "controller_transients_returned_clean": true,
+        "expected_history": [
+          1
+        ],
+        "history": [
+          1
+        ],
+        "inverse_exact": true,
+        "left": 0,
+        "pointer": 1,
+        "pointer_returned_clean": true,
+        "right": 1
+      },
+      {
+        "controller_token_returned": true,
+        "controller_transients_returned_clean": true,
+        "expected_history": [
+          -1
+        ],
+        "history": [
+          -1
+        ],
+        "inverse_exact": true,
+        "left": 1,
+        "pointer": 1,
+        "pointer_returned_clean": true,
+        "right": 0
+      },
+      {
+        "controller_token_returned": true,
+        "controller_transients_returned_clean": true,
+        "expected_history": [],
+        "history": [],
+        "inverse_exact": true,
+        "left": 1,
+        "pointer": 0,
+        "pointer_returned_clean": true,
+        "right": 1
+      }
+    ],
+    "source_pointer_cleanup_failures": 0,
+    "success_finalizer_deletions_detected": 2,
+    "truth_rows": 4,
+    "two_token_inputs_detected": 2,
+    "zero_token_inputs_detected": 2
+  },
+  "cycle": 826,
+  "inventory": {
+    "derived": [
+      "exact four-row endpoint-to-history interface",
+      "exact 1312-class coherent composition",
+      "source-pointer and controller-token return on success",
+      "exact inverse on the finite Cycle719 bank"
+    ],
+    "open": [
+      "same-chart collision-free physical placement and route between compilers",
+      "autonomous unique-token and clean-bank genesis or enforcement",
+      "post-capacity renewal and multi-source arbitration",
+      "objective admission, physical time, permanent Record, Born/history, and source/gravity"
+    ],
+    "supplied": [
+      "Cycle823 finite full-seam compiler and clean endpoint registers",
+      "Cycle719 unique token, finite program ring, banks, and clean work",
+      "wire identification between endpoint occupations/pointer and controller inputs",
+      "program occurrence and successful admission sector"
+    ]
+  },
+  "runtime_seconds": 0.432279109954834,
+  "source_sha256": {
+    "docs/COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_CYCLE826_BOUNDED_THEOREM_NOTE_2026-07-30.md": "75a6e9757178d0d9f42e971b6e2efcdec0e98b359497b2d60571a03b05302d8a",
+    "docs/COMPANION_FULL_SEAM_ENDPOINT_INSTRUMENT_CYCLE823_BOUNDED_THEOREM_NOTE_2026-07-30.md": "8679f0f737a399b024193bb000158f86049ea10932cccfe1965b5d403ca310f4",
+    "docs/RECURRENT_MATTER_HISTORY_CONTROLLER_CYCLE719_BOUNDED_THEOREM_NOTE_2026-07-26.md": "d1b33aa0e892494027a64b4908446bf7f871b899d6de69cd65e0d05a9317e9be",
+    "scripts/frontier_cycle719_recurrent_matter_history_controller_2026_07_26.py": "ef9398b3f27dcbb540446d6c5c165c5803014cffa37da59071751810a7ac9978",
+    "scripts/frontier_cycle823_companion_full_seam_endpoint_instrument_2026_07_30.py": "1c70bf782005bbf90608c99417470dcb0f964749644849c8835ef6314c61a737",
+    "scripts/frontier_cycle826_companion_endpoint_cycle719_history_interface_2026_07_30.py": "7132c530e8ff55e9015094b3eaba48b50eabf3ebf85aee31d4b126a5879e8af5"
+  },
+  "status": "cycle826-companion-endpoint-cycle719-history-interface-bounded-positive"
+}
+CHECK declared_inputs_are_unique_existing_repo_relative_files: PASS
+CHECK cycle719_controller_consumes_all_four_endpoint_rows_exactly: PASS
+CHECK cycle823_full_seam_composes_with_history_interface_on_all_classes: PASS
+CHECK success_finalizer_deletion_is_active: PASS
+CHECK dirty_pointer_and_token_sector_controls_are_active: PASS
+CYCLE826_COMPANION_ENDPOINT_CYCLE719_HISTORY_INTERFACE_BOUNDED_PASS

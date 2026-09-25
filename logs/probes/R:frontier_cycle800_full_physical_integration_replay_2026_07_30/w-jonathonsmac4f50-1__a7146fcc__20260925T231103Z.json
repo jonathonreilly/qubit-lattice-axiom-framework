@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle800_full_physical_integration_replay_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle800_full_physical_integration_replay_2026_07_30.py",
+ "seed": 77863,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T231103Z",
+ "elapsed_s": 3.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "738316e2cbb467195d76aa4160df91621b4289788dbfc664cd6e4dcafd95ad0a",
+ "stdout_tail": "d_coframe_schedule_2026_07_30.py\": \"3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68\"}, \"source_sha256\": \"a35a50dd20e8ffc2c09dc989420612a0413ce3b1e1463ff24c825caf0b5ae41a\", \"status\": \"PASS\", \"supplied\": [\"clean physical O endpoint M2 at the one-time transfer genesis\", \"an independent already companion-encoded full physical L bank in the fixed parity-center-gauge code sector\", \"the finite cell chart, boundary, transported coframe, corresponding O/L slots, local route order and transfer-before-G program order\", \"the landed Cycle-720 recurrent physical update and Cycle-789 physical palettes\"], \"transfer\": {\"coherent_word_vs_direct_swap_on_clean_domain_residual\": 4.732681091546602e-16, \"direct_swap_isometry_residual\": 0.0, \"dirty_I_domain_residual\": 1.9999999999999996, \"dirty_O_domain_residual\": 1.9999999999999996, \"dirty_O_second_use_clean_L_residual\": 1.4142135623730951, \"external_reference_entanglement_transfer_residual\": 3.1569827355773645e-16, \"gate_deletion_residuals\": {\"CNOT_IO\": 1.414213562373095, \"CNOT_LI\": 1.414213562373095, \"CNOT_OI\": 1.414213562373095, \"CZ_LO\": 1.414213562373095, \"H_I_reset\": 1.0823922002923938, \"H_L_pre\": 2.0, \"H_L_reset\": 1.0823922002923938, \"H_O\": 1.0823922002923938}, \"hostile_correction_order_residual\": 1.414213562373095, \"isometry_residual\": 4.732681091546602e-16, \"minimum_gate_deletion_residual\": 1.0823922002923938, \"two_slot_entangled_input_transfer_residual\": 6.297190057159811e-16, \"unitarity_residual\": 1.893072436618641e-15}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231106Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

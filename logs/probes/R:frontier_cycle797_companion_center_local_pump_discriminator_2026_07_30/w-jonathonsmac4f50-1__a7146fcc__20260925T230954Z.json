@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle797_companion_center_local_pump_discriminator_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle797_companion_center_local_pump_discriminator_2026_07_30.py",
+ "seed": 77794,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230954Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0dee84e8a02716b7f7d71774c0ede0229be9ac7a26f1e5a28881c8f5d272f0cc",
+ "stdout_tail": " 0], [2, 2, 0], [8, 8, 0], [16, 16, 0], [32, 32, 0], [64, 64, 0], [128, 128, 0], [256, 256, 0], [512, 512, 0], [1024, 1024, 0], [2048, 2048, 0], [4096, 4096, 0], [8192, 8192, 0], [16384, 16384, 0], [32768, 32768, 0], [65536, 65536, 0]], \"maximum_accepted_moves\": 15, \"stuck_nonzero_syndromes\": 4113}}, \"raw_local_commutant_rows_with_nonzero_syndrome\": 452, \"shape\": [5, 3, 2], \"test_kind\": \"singletons+all+deterministic-sample\", \"tested_syndromes\": 4127, \"unique_local_syndrome_moves\": 134}], \"open\": [\"a translation-compatible convergent center-reset law rather than a finite global syndrome solve\", \"literal gate routing/coloring for simultaneous overlapping moves\", \"raw six-mode logical-coordinate insertion into companion L\", \"gauge-factor preparation and renewal\", \"proper-cubic covariance of a successful recurrent law\"], \"report_sha256\": \"0552a99c9ad5c160a079b59b9e70656e75438cd9bd47cb4cb1f289e002c1d101\", \"rules\": [\"fair strict-Hamming descent over every radius-one move\", \"fixed cyclic sweep firing every move that touches a violated center\", \"fixed cyclic sweep firing every move that does not increase local violated-center count\"], \"source_sha256\": \"8a44e417ffd4c2fde44b9d0e7e63178e3d8c658d07f8979f57913cf1bba433f3\", \"status\": \"PASS_LOCAL_CONTROLLABILITY_AND_FROZEN_PUMP_DISCRIMINATOR\", \"supplied\": [\"Cycle-720 companion physical dictionary and local-center basis\", \"one total-parity superselection label\", \"fresh local syndrome environments and a fair recurrent local-rule scheduler\"]}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T231002Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

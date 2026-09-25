@@ -1,0 +1,35 @@
+{
+ "task": "R:cubic_nn_condition_domain_separation_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "cubic",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/cubic_nn_condition_domain_separation_2026_08_13.py",
+ "seed": 77532,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a7146fcc",
+ "started_utc": "20260925T230532Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6f3cce6ff8638765838aadf560217e77ff595fa6157f6f7db12ccc69d7dbed95",
+ "stdout_tail": " kernel unchanged\nPASS: nonvacuous-condition-use changing one used support coordinate changes the product kernel\nPASS: adjacent-not-guaranteed an allowed nonconstant kernel on N(e1) can use the visible origin coordinate\nPASS: correlated-environment distinct support coordinates can be fair yet perfectly correlated\nPASS: marginal-independence-not-forced the correlated joint differs from the product of its fair margins\nPASS: fairness-not-forced valid Bernoulli margins need not equal one half\nPASS: formation-not-derived the source-bound formation residual is not replaced by geometry\nPASS: mutation-moore a diagonal distance-two site excludes the origin under six-neighbor adjacency but includes it under Moore adjacency\nPASS: mutation-overlap replacing spacing 3 by the declared spacing-2 axis family breaks disjointness\nPASS: note-contract machine fields, semantic boundary, N1-N8, and forbidden-phrase hygiene hold\nper_element: origin visibility and omission are checked on named cubic sites and exact six-coordinate domains\nper_site: supplied local kernels are tested with nonconstant dependence on an actual nearest-neighbor coordinate\nper_mode: checked and not executed \u2014 no spectral or harmonic mode claim occurs in this finite graph theorem\nper_block: the three-site conditional product and two-site correlated-environment counterexample are executed\nlattice_wide: checked and not executed \u2014 no global independence, formation, or physical register compiler is claimed\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230532Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

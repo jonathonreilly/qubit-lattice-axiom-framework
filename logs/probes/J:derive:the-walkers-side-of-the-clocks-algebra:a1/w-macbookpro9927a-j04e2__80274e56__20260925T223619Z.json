@@ -21,12 +21,19 @@
  "stdout_sha256": "8cdbbba7d43b93fe1a506c061583514e8929b1cb39744bfa280538836965d2f8",
  "stdout_tail": "ere)\n[PASS] X5: straight two-step coefficient (arithmetic rule), at every site and on all three axes for generic rational m, n: <x|i[H[m], H[n]]|x + 2e_a> = -(i/16)[(m0 n1 - m1 n0) + (m1 n2 - m2 n1) + (m0 n2 - m2 n0)] times the coin identity: the two bonds' xi plus a second-neighbour term (m0 n2 - m2 n0) that no nearest-bond xi can produce\nTOTAL: PASS=5 FAIL=0  (1 s)\nSUMMARY: COUNTEREXAMPLE the walker's clock algebra does not close on sum xi(M,N).P^B exactly: with block 137's density e (arithmetic or geometric bond mean) it fails already at first order in the lapse departures for every normalization, because the landed P^B is the current of the averaged density e' = C1C2C3 e; with e' it closes exactly at first order iff K/(4 alpha) = 1 (alpha = K/4) and fails at second order, witnessed by delta lapses two steps apart (xi = 0, bracket nonzero); on a straight two-step path the arithmetic rule leaves a second-neighbour term (m0 n2 - m2 n0).\nHIT: on the 6^3 torus, exactly over Q(i): i[H, sum g e'] = sum_{x,j}(g_{x+e_j} - g_x) P^B_j (block 136 T1/T2 as operator identities), so the walker's lapse bracket matches block 112's xi(M,N).P^B at first order iff K/(4 alpha) = 1 when the lapse couples to e' = C1C2C3 e, while with block 137's e (arithmetic or geometric mean) no normalization matches even at first order; exact closure fails at second order: delta lapses at u and u + 2e_1 give xi = 0 but a nonzero bracket, and the two-step element carries (m0 n2 - m2 n0) beyond the bonds' xi.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j04e2",
-  "at_utc": "20260925T223621Z",
+  "by": "w7",
+  "at_utc": "20260925T223649Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 80274e56 differs from the current HEAD db967e24 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: an exact counterexample to the walker's clock-algebra closure on block 112's xi(M,N).P^B. The first order closes iff alpha = K/4, and only if the lapse couples to block 136's averaged density e'; it fails for block 137's e at every normalization. The second-order obstruction is witnessed by delta lapses two steps apart and the second-neighbour term (m0 n2 - m2 n0). For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T223649Z"
  }
 }

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_two_wall_level_rule_holds_on_every_ring_whose_length_is_a_multiple_of_four_and_an_antipodal_wall_pair_costs_the_sea_exactly_2026_09_24.py
+runner_sha256: bb78e71dcd0b97a3b2e9f65e83699d82c508a8973455c09b2032c842697811cc
+input_fingerprint_sha256: 2d868d5d790fa164cfc352f3566eeb99bbb9c018f74773cfe54ac6fcab8de711
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.24
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_TWO_WALL_LEVEL_RULE_HOLDS_ON_EVERY_RING_WHOSE_LENGTH_IS_A_MULTIPLE_OF_FOUR_AND_AN_ANTIPODAL_WALL_PAIR_COSTS_THE_SEA_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_DEFECTS_OF_THE_ALTERNATION_ARE_SEPARABLE_WALLS_CARRY_SHEETS_OF_LOWER_MASS_LINES_LOWER_STILL_AND_THREE_CROSSING_WALLS_BIND_EXACT_ZERO_MODES_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_WHAT_A_WALL_IN_THE_ALTERNATION_COSTS_THE_SEA_CHARGES_IT_BY_AN_EXACT_LEVEL_RULE_BLOCK_59S_COLLINEAR_COUPLING_REWARDS_IT_DOMAINS_IFF_ALPHA_LARGE_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged (the alternation and its walls are supplied patterns of bond rates); Admissibility is not a dynamics axiom (the hop, the bond rates and the sea are supplied)
+PASS: B1 T1: on rings L = 4..16, h^2 of block 87's operator h = (1/2i)(t T - T^T t) splits into two sublattice blocks with equal characteristic polynomials (A A^dagger and A^dagger A); for 4 | L and symbolic strong and weak bonds (L = 8..24), the even block with block 87's two walls (at sites 0 and L/2) is the wall-free chain D - C(S + S^-1), D = (t_s^2 + t_w^2)/4, C = t_s t_w/4, plus +eta at the strong-strong wall and -eta at the weak-weak wall, eta = (t_s^2 - t_w^2)/4, the walls M/2 apart
+PASS: C1 T2: on rings of 3-7 sites with random rational diagonals and hops, det(lambda - J) = (prod b_i)(tr(T_(M-1) ... T_0) - 2) exactly; B = [[2z, -1], [1, 0]] has (B^k)_11 = U_k and tr B^k = 2 T_k (k <= 12); and two opposite diagonal defects +-eta = +-eps C, r sublattice sites apart on a ring of M (2r original-lattice sites), give 2(T_M - 1) - eps^2 U_(r-1) U_(M-r-1), symbolically for every M = 3..12 and every r
+PASS: D1 T3: for every ring L = 4, 8, ..., 24 at (t_s, t_w) = (13/10, 7/10) and (7/4, 2/5), det(lambda - J_walls)(lambda - (t_s - t_w)^2/4)(lambda - (t_s + t_w)^2/4) = det(lambda - J_0) lambda (lambda - (t_s^2 + t_w^2)/2) exactly: two walls remove the band-edge levels and add 0 and (t_s^2 + t_w^2)/2, each twice in h^2; D^2 - 4C^2 = eta^2 symbolically; for t = e^(+-delta) the rule for magnitudes is abs(sinh), cosh -> 0, sqrt(cosh 2 delta); so an antipodal wall pair raises the sea's energy by exactly max(t_s, t_w) - sqrt((t_s^2 + t_w^2)/2) > 0, block 87's (1 + delta) - sqrt(1 + delta^2) at t = 1 +- delta, on every ring with 4 | L
+PASS: E1 T4: for random rational bonds on rings of 6-12 sites the sublattice block has det A = (prod_even t - prod_odd t)/(2i)^M, so exact zero modes exist iff the two bond products agree, and then exactly two; block 87's antipodal walls on rings L = 8, 12, 16 balance them (a zero level of J_odd); on rings L = 6, 10 (L = 2 mod 4) no level of the wall-free ring survives the walls and (t_s + t_w)^2/4 is not a wall-free level, so the four-level rule cannot hold there
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the sublattice blocks of h^2 and the walls as diagonal defects, symbolically in the two bonds, on rings L = 8..24
+per_site: executed - the ring determinant lemma on random rational rings of 3-7 sites; the powers of the transfer matrix
+per_mode: executed - the Chebyshev form of two opposite defects for every M = 3..12 and every separation
+per_block: executed - the four-level identity on rings L = 4..24 at two bond pairs; the determinant of the sublattice block; the rings of length 2 mod 4
+lattice_wide: T1-T3 for every ring with 4 | L by proof, checked through L = 24; T4 zero-mode criterion on even rings; the all-level-movement counterexamples are only the stated L=6,10 fixtures; one axis; the alternation, the walls and the sea supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Two-wall transfer rule with small-ring exceptions and restricted failure examples. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

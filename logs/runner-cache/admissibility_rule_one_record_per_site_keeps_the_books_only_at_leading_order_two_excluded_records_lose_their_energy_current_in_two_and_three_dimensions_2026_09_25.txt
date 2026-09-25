@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_keeps_the_books_only_at_leading_order_two_excluded_records_lose_their_energy_current_in_two_and_three_dimensions_2026_09_25.py
+runner_sha256: dbb7744322f7b375dc6c194eaaa77387760ca6ab67e430faebc4cf3570592950
+input_fingerprint_sha256: 1cf05366b6af82f5d32bd7051535f7c536777d71fc890be762d0d8e228655590
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 12.38
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_THE_SOURCE_IS_THE_COMPRESSED_DENSITY_ON_A_CHAIN_TWO_RECORDS_ARE_TWO_FREE_FERMIONS_OF_THE_CHARGE_BAND_AND_ACTION_EQUALS_REACTION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its exclusion, the currents and their placements, the member and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: for two records of block 54's walk under one record per site (block 78's compression), both exchange signs: on Z^2 and Z^3, [H2, J] v != 0 for adjacent pairs, where J = i[H2, D2] is the total energy current of the compressed densities (exact over Q(i), open lattice); on the 5 x 5 torus, with J built from the site densities by minimal image, the same holds
+PASS: C1 T2: the total energy current is kept for free antisymmetric pairs on Z, Z^2 and Z^3 (and on the 5 x 5 torus), where two records may share a site with opposite coins; and for excluded pairs of both signs on the line and on the ring of 7 sites (every basis state)
+PASS: D1 T3: for any finitely supported stress, sum_x x_k sum_ij dbar_i dbar_j Theta_ij (x) = 0 (exact on a rational Theta on 5^3), so the member's identity e_u'' = sum dbar dbar Theta forces the total current d/dt sum_x x e_u(x) to be kept; the body-diagonal average keeps every first moment, so block 121's compressed source and block 135's average carry the same total current: with either, T1 excludes the stated finite-range number-conserving zero-vacuum stress class with this first moment
+PASS: E1 T4: free one-record j(k)=sin(2k)/2 has expansion k-2k^3/3+O(k^5) and period pi. For assumed free incoming/outgoing channels all within epsilon < pi/4 of corners and equal total crystal momentum, the offset sums agree and current changes have the stated cubic expansion. The tested tuple is only kinematic: no scattering existence, energy-conserving collision, or bound during interaction is established.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - [H2, J] on adjacent pairs over Q(i), open Z, Z^2, Z^3, both exchange signs, with and without exclusion
+per_site: executed - the 5 x 5 torus from site densities by minimal image; the ring of 7 sites on every basis state
+per_mode: executed - the first moment of a double divergence of a rational stress on 5^3; the body-diagonal average's first moments
+per_block: executed - the two-step current's series and species blindness; the third-order change under a kept crystal momentum
+lattice_wide: exact for two records; many records and other placements open; the walk, exclusion, member and link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Exact excluded-pair current nonconservation; conditional free-channel expansion is not a scattering theorem. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

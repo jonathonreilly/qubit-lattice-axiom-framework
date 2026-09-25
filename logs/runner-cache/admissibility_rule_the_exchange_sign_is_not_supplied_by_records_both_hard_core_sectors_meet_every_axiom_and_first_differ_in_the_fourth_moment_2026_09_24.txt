@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_exchange_sign_is_not_supplied_by_records_both_hard_core_sectors_meet_every_axiom_and_first_differ_in_the_fourth_moment_2026_09_24.py
+runner_sha256: be0d2fad70d23b2c3c0f1c3576fb8fdb8484ffa6be1b1b0c68d01497347d6080
+input_fingerprint_sha256: 2a215b761e5757f3f5dd0a784116bc7757746b7b77338d9493b8834d8c2d1e54
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.88
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_EXCHANGE_SIGN_IS_NOT_SUPPLIED_BY_RECORDS_BOTH_HARD_CORE_SECTORS_MEET_EVERY_AXIOM_AND_FIRST_DIFFER_IN_THE_FOURTH_MOMENT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: one record per site and permanence (the hard-core space); readout by content alone (readouts commute with the exchange); the one-site domain M_2(C); a choice not fixed by the supplied structure remains a named conditional (the exchange sign)
+PASS: B1 T1: on block 78's ring of four with its reduced walk, the hard-core two-record space HC (dimension 4n(n-1) = 48) is closed under the compressed generator, which is hermitian and commutes exactly with the exchange P on every basis vector; so the symmetric and antisymmetric parts of HC (each of dimension 2n(n-1)) are two composition rules, each closed under the walk and each with one record per site
+PASS: C1 T2: on the infinite lattices Z^2 and Z^3 the coin-summed exchange amplitude <Ps|(2H_2)^k|s> of two records vanishes at orders k = 2, 3 for every separation, and at order 4 sums to -128 per site on Z^2 and -384 per site on Z^3, i.e. tr(P H_2^4) = -8 per plaquette (-8 per site on Z^2, -24 on Z^3); per pair on Z^3 it is -32/16 = -2 for neighbours, -16/16 = -1 on a face diagonal and 0 at distance 2 on a line
+PASS: D1 T3: on block 78's rings with the reduced walk, tr(P (2H_2)^k) = 0 for k < N and 128, -1248, 7680 at k = N for N = 4, 6, 8 (an exchange must wind); on the odd rings N = 5, 7 the unitary U = (sigma_1 x sigma_1)(G x G) J, with J the sign of the order of the two positions and G = (-1)^x, commutes with the two-record walk and anticommutes with P on every basis vector, so the two sectors are unitarily equivalent and all spectral moments agree; observable and initial-state equivalence is not asserted
+PASS: E1 T4: no linear map of C^2 anticommutes with all three sigma_a except 0, and the antilinear ones are c sigma_2 K, which square to -|c|^2: no involution reversing all three generators acts on C2; a separately demanded complex-linear grading needs at least C4 (Gamma = 1 x sigma_3, e_a = sigma_a x sigma_1, pseudoscalar squaring to -1); two graded presentations compose to Cl(6,0) (six anticommuting square-one generators, 64 trace-orthogonal products), not to M_2(C) x M_2(C); the half-turn about e_2 acts on the coin by D = -i sigma_2 with D^2 = -1 (one record), while D x D squares to +1 on two records, on both sectors alike
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the compressed two-record generator on every basis vector of the ring of four: closure, hermiticity, commutation with the exchange
+per_site: executed - the coin-summed exchange amplitude of every separation up to distance 2 on Z^2 and Z^3 at orders 2, 3 and 4
+per_mode: executed - the exchange traces tr(P (2H_2)^k) for k <= N on the rings of 4, 6 and 8
+per_block: executed - the odd-ring unitary on every basis vector of the rings of 5 and 7; the grading and the Clifford composite; the discrete exchange rotation
+lattice_wide: T1-T4 on the stated lattices and rings; T2 on the infinite lattice by local enumeration; the walk, the compression and the composition supplied; three or more records not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: Fixed-sector exclusion witness and restricted grading algebra; no general observable indistinguishability. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

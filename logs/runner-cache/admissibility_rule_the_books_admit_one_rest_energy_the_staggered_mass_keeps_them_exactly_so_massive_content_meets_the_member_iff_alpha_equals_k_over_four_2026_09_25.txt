@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_books_admit_one_rest_energy_the_staggered_mass_keeps_them_exactly_so_massive_content_meets_the_member_iff_alpha_equals_k_over_four_2026_09_25.py
+runner_sha256: ab0a7baac9877a69cbde2e2e37d48ad9b6138f327d401b54e465a7dd83cca690
+input_fingerprint_sha256: edb1ae0b7f0c1db856d48d9805814e039afce0be07f71c2ac327a421b0bf2b9f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.82
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_THE_TWO_STEP_MOMENTUM_IS_THE_ONLY_ONE_AMONG_CONSERVED_COVARIANT_MOMENTA_OF_REACH_TWO_THAT_IS_EVERY_SPECIES_OWN_WAVE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its rest energy, the currents and their placements, the member and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: with block 77's staggered rest energy m eps (m = 3/4 and 5/2 on 6^3, m = 3/4 on 10^3), as exact operators over Q(i): i[H + m eps, e'_m] = - sum_j dbar_j P''_j with e'_m = C_1 C_2 C_3 Re psi^dag (H + m eps) psi and the same carried two-step momentum P''; i[H + m eps, P''_j] = - sum_i dbar_i Theta_ij and i[H + m eps, Q_j] = - sum_i dbar_i Theta_ji with the same stress; support radius at most 4 on 10^3 (side > 8), so the massive walker keeps the books on Z^3
+PASS: C1 T2: on 6^3 the energy law's defect i[H + M, e'_{H+M}] + div P'' is linear in a site term M (the term commutes with its own density); for the eight terms 1, eps, sigma_a, eps sigma_a it vanishes only for eps, and the other seven defects are linearly independent (rank 7 over Q(i) on 200 entries): with the carried two-step momentum (block 73: a member of the restricted normalized polynomial commutant family), within this eight-dimensional real span, the fixed energy law admits only multiples of the staggered term, the staggered mass; a constant offset, a uniform coin mass and a staggered coin mass each break them
+PASS: D1 T3: m eps anticommutes with H, so (H + m eps)^2 = H^2 + m^2 exactly (6^3), the dispersion E^2 = |sin k|^2 + m^2, and each wave's energy current E dE/dk_j = sin k_j cos k_j is its two-step momentum at every k, as for the massless walker; a uniform coin mass m sigma_3 shifts sin k_3 to sin k_3 + m and its current (sin k_3 + m) cos k_3 is not the two-step momentum; a constant offset V adds V times the velocity sigma_j cos k_j to the total current, and the velocity does not commute with sigma.s, so by block 137 T3 no finite-range zero-vacuum stress can give the double-divergence identity with an offset while preserving this energy first moment: this fixed density/current convention rejects a constant offset; no physical energy zero is selected
+PASS: E1 T4: block 136's member with a bond shift at beta = -alpha keeps its clock constraint iff e' = (K wbar^2/(4 alpha)) p P_z; by T1 the massive walker's averaged energy flows as wbar^2 times the same momentum, so the specified massive sources preserve the initially satisfied nonzero-mode constraints for all states iff alpha = K/4: the rest energy does not move the light cone; the massive walker's waves are slower than wbar, but its books carry the coefficient wbar^2
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the energy and momentum laws with the staggered mass as exact matrices over Q(i) on 6^3 (two masses) and 10^3, support radius at most 4
+per_site: executed - the energy-law defect for each of the eight site terms on 6^3, and their rank
+per_mode: executed - (H + m eps)^2 = H^2 + m^2; the plane-wave currents with the staggered and the coin mass; the velocity against sigma.s
+per_block: executed - the member's clock constraint with a bond shift and the solve
+lattice_wide: exact on Z^3 for every state at uniform rates; the eight-dimensional constant-plus-checkerboard site-term span only; the walk, rest energy, currents, member and link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: All-real-mass cancellation and classification within fixed eight-dimensional site-term span; no arbitrary-potential or physical energy-zero classification. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

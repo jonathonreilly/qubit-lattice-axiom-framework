@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_light_cone_from_the_source_link_the_walkers_smooth_states_meet_the_members_identity_at_leading_order_iff_alpha_equals_k_over_four_2026_09_25.py
+runner_sha256: b53fcf70bef0b78b56d6a453c8c0e67ef559824b87ca5a9b18e86aa2ef914272
+input_fingerprint_sha256: dc2f78b9bf6f1aff8c50be4ca621afe6c4146a7efe038ea923646e60f9752e1a
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_FROM_THE_SOURCE_LINK_THE_WALKERS_SMOOTH_STATES_MEET_THE_MEMBERS_IDENTITY_AT_LEADING_ORDER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ACTION_AND_REACTION_THE_RATE_FIELDS_SOURCE_IS_THE_AMPLITUDES_ENERGY_DENSITY_MATCHED_PULLS_AND_A_KEPT_LEDGER_FIX_THE_CLOCK_LAWS_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_BLINDNESS_TO_COIN_ROTATIONS_THAT_VARY_IN_TIME_LEAVES_EXACTLY_BLOCK_62S_TWO_KINETIC_NUMBERS_AND_NO_RATIO_MAKES_A_TRANSVERSE_RELABELLING_IN_TIME_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, the member, its kinetic term and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: along p = p z, block 101's quadratic action (R2 as block 62 declares it) at beta = -alpha with block 62's stress coupling (1/2) sum Theta_ij h_ij and the source -e u: R1 = 2p^2 phi and R2 do not involve xi, c_x, c_y, and the u-constraint 2K wbar p^2 phi = e with the longitudinal equation give exactly e'' = -(K wbar^2/(4 alpha)) p^2 Theta_zz = -(K wbar^2/(4 alpha)) p.Theta.p (symbolic functions of time)
+PASS: C1 T2: for any two eigen-waves of the walker (either branch, energies l and l') near k = 0 and near the all-reflected corner pi(1,1,1), with rational-norm offsets (three pairs, four branch pairs, both corners: 24 cases), the beat's ratio (l - l')^2 (l + l') u'^dag u / [(q.M)(q.(s + s'))] is exactly 1 at leading order: e''_q = -(l - l')^2 e_q and p.Theta.p at q agree, with Theta_q = (1/2) M_a (s_j + s'_j) and e_q = (1/2)(l + l') u'^dag u; a clock rate wbar multiplies energies, e and Theta, giving e'' = -wbar^2 p.Theta.p
+PASS: D1 T3: with the lattice's sin k, p = 2 sin(q/2) and eigenvectors, for k = t kappa and k' = t kappa' the ratio is 1 - 9t^2/4 for kappa = (0,0,1), kappa' = (0,0,2) and 1 - 5t^2/12 for kappa = (1,0,0), kappa' = (1,0,1); both beats run along the z axis, where the member's demand involves only the on-site component Theta_zz; exactly 1 at leading order, with lattice corrections of relative order |k|^2 that depend on the waves' directions (the walker is not exactly such content on the lattice, block 112 T4)
+PASS: E1 T4: all same-corner smooth-state beats satisfy this necessary longitudinal source identity at leading order iff K wbar^2/(4 alpha) = wbar^2, i.e. alpha = K/4, when the member's travelling pair (speed^2 K wbar^2/(4 alpha)) moves at the walker's top speed wbar: one light cone; for the six partly reflected species (one or two corner signs negative) the leading ratio differs from pair to pair and is complex, so no single alpha serves them (the species problem of blocks 72, 74 and 120)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member's mode equations at beta = -alpha with symbolic functions of time, re-deriving e'' = -(K wbar^2/(4 alpha)) p.Theta.p
+per_site: executed - the beat of two eigen-waves of either branch: energy density, stress and frequency, at leading order in 24 cases (three pairs, four branch pairs, two corners)
+per_mode: executed - the lattice ratio's series in the wave number for two beats along an axis (on-site stress only)
+per_block: executed - the light-cone condition; the leading ratio for the six partly reflected species
+lattice_wide: T1 exact at second order; T2 at leading order in the wave numbers; T3's corrections from series; the walk, member and source link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Necessary leading-order longitudinal compatibility only; no full consistency or universal light cone. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

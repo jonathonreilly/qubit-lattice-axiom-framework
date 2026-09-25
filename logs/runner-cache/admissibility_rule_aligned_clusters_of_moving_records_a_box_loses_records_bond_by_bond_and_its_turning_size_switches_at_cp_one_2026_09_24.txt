@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_aligned_clusters_of_moving_records_a_box_loses_records_bond_by_bond_and_its_turning_size_switches_at_cp_one_2026_09_24.py
+runner_sha256: aedbcc442d201463f17b66e787f0af3c708ef4374b5a2dd8593a2935e1b09bf5
+input_fingerprint_sha256: 95d95dfe2ad165aea899deaff6619752c2a46fe1558fff1755cf232d5fe45579
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.64
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ALIGNED_CLUSTERS_OF_MOVING_RECORDS_A_BOX_LOSES_RECORDS_BOND_BY_BOND_ITS_TURNING_SIZE_SWITCHES_AT_CP_EQUALS_ONE_AND_TIED_FACETS_NEED_TWO_MOVES_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_BINDING_SCALE_PINNED_AT_THE_NEUTRAL_VALUE_PAIR_WEIGHT_IS_THE_RULES_LIKELIHOOD_RATIO_NO_BINDING_WITHOUT_A_CYCLE_ALL_BINDING_IS_AGREEMENT_AROUND_LOOPS_BOUNDED_THEOREM_NOTE_2026-09-20.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: a site never carries more than one record (a move needs an empty site); records form (block 39 T4 rate); Admissibility is not a dynamics axiom (the motion, the rate convention and the formation rate are supplied)
+PASS: B1 T1: for the aligned L-box (L = 2..7) every record move ends at an isolated site, there are 6L^2 occupied-empty bonds, and with every bond visited at one rate the departure rate is E(L) = 24/(1+x^3) + 24(L-2)/(1+x^4) + 6(L-2)^2/(1+x^5), x = cp; E = 6L^2/(1+x^5) + beta L + gamma with beta = 24x^4(x-1)/((1+x^4)(1+x^5)) and gamma = 24x^3(x-1)^3(x+1)(x^2+1)/((1+x^3)(1+x^4)(1+x^5)), both of the sign of x - 1, and E = 3L^2 at x = 1; the per-bond rule is in detailed balance with the static law at a corner (ratio x^-3), while one attempt per record split over its empty bonds is off by the factor 2
+PASS: C1 T2: with growth G = 6 z c A_1 L^2 at the touching sites and z_c = 1/(c A_1 (1 + x^5)), the finite-size terms of E carry the sign of x - 1, the finite-size correction switches sign at cp=1; a continuous balance zero above L=2 requires z strictly between z2=1/(c A1(1+x^3)) and zc, and does not prove dynamical stability, at the neutral scale 5p = q + 4r; at (3,1,2), c = c0 = 1/2, x = 3/2: z_c = 16/825 exactly, the instantaneous balance is negative at every size L = 2..200 at (9/10) z_c and at z_c, and at (11/10) z_c its balance changes from negative to positive between 17 and 18; the per-record count would instead give positive instantaneous balance up to L = 10 at (9/10) z_c
+PASS: D1 T3: on 19 facet normals (signed, |coordinates| <= 4) a record in surface layer m of {n.v <= 0} has 3 + #{i: |n_i| <= m} recorded neighbours and can reach an isolated site in one move iff m < h - k (h >= k the two largest |n_i|), then along the largest normal component only: no record of a tied facet ((110), (111), (221), (331), ...) can leave in one move; the octahedron |x|+|y|+|z| <= R (R = 1..8) loses records in one move only at its six tips, and the rhombic dodecahedron at 6 + 12R (R even) or 6 + 12(R - 1) (R odd) bonds
+PASS: E1 T4: a top-layer record of (111), (110), (100) has k_s = 3, 4, 5 recorded neighbours; on (111) it reaches an isolated site in two moves, the first a hop of probability 1/(1+x) to a site with two recorded neighbours (1/(1+x^3) on (110)), and any displacement to an isolated site multiplies the static weight by x^{-k_s}: a one-move balance is no growth law for tied facets; one move reaches exactly twice the sum of the projection areas: 6L^2 for the box (L = 2..5) and 12R^2 + 12R + 6 for the octahedron and the rhombic dodecahedron (R = 1..5)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - every occupied-empty bond of the L-box for L = 2..7, with its departure weight and the isolation of its destination
+per_site: executed - the surface layers of 19 facet normals: recorded neighbours and one-move destinations of every surface record in a window
+per_mode: executed - the rate's split into its L^2, L and constant terms, symbolically in x; detailed balance at a corner for both counts
+per_block: executed - growth against departure at (3,1,2) for L = 2..200 at three formation rates; the octahedron, the rhombic dodecahedron and the projection counts
+lattice_wide: the box for every L by the census, the facets by the layer rule; the instantaneous accounting of the ideal shape; the motion, the rate convention, the scale and the formation rate supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Instantaneous cluster drift and local path geometry; no survival, stability or irreversible-formation theorem. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

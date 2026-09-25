@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_waves_need_signed_weights_nonnegative_rules_keep_an_undamped_branch_only_by_rigid_transport_2026_09_24.py
+runner_sha256: 828b91883c564672d34577424da8d45245f872ce3246168372700fb87a7ce53d
+input_fingerprint_sha256: 5e91cfacd042ba8da862a9962786d7e2c9debf8ed2bc6e639a951596307e32a5
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WAVES_NEED_SIGNED_WEIGHTS_A_FORMATION_RULE_WITH_NONNEGATIVE_WEIGHTS_KEEPS_AN_UNDAMPED_BRANCH_ONLY_BY_RIGID_TRANSPORT_AND_THE_AMPLITUDE_STEP_IS_A_SIGNED_RULE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_DIRECTED_GAUSSIAN_PROPAGATOR_OVERLAP_COVARIANCE_GAIN_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md
+  docs/ADMISSIBILITY_RULE_WAVES_AMONG_MOVING_RECORDS_NEED_A_COUPLING_THAT_TIME_REVERSAL_FLIPS_CLOCKED_RECORD_MOTION_NEVER_OSCILLATES_BOUNDED_THEOREM_NOTE_2026-09-23.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: the admissibility rule supplies a probability distribution at each site (nonnegative odds); records form; Admissibility is not a dynamics axiom (the formation law in level time and the walk are supplied clauses)
+PASS: B1 T1: at five rational angles (Schur-Cohn, exact): the neighbour average (1 + e^-ik)/2, block 96's persistent line walk at p = 9/25, and the decaying partners of the split two-level rule and of the two-component mixing rule have every root strictly inside the unit disk; the unimodular branches that remain are transport - e^-ik for the split and mixing rules, +-e^-ik/2 for the half-step rule
+PASS: C1 T2 (the entrywise lemma, on instances): for a row-stochastic irreducible 3x3 C, a gauge D C D^-1 times a global unit phase keeps a unimodular eigenvalue, while a single entry phase that is no gauge (with or without a reduced modulus) leaves every root strictly inside the unit disk (Schur-Cohn at five rational angles) - consistent with the lemma |B| <= C, B x = lambda x, |lambda| = 1 => |B| = C, whose equality case is rigid transport up to a gauge
+PASS: D1 T3: for theta_{t+1} = 2a P theta_t - theta_{t-1} (P the neighbour average, symbol P(k) = (1/d) sum_j cos k_j; the deeper weight -1 is negative) the two roots multiply to 1, so both are unimodular exactly when |a P(k)| <= 1: at a = 1 all roots are unimodular but repeated endpoints allow linear growth for arbitrary recurrence data, cos omega = P(k); in one dimension omega = |k| exactly; in three dimensions omega^2 = |k|^2/3 + O(k^4) along an axis and along the body diagonal alike; at a = 5/4 the rule has the root 2 at k = 0 and grows
+PASS: E1 T4: the 1+1 coin walk U(k) = C(theta) diag(e^-ik, e^ik) has det U = 1 and tr U = 2 cos theta cos k, so by the matrix identity U^2 - (tr U) U + 1 = 0 each amplitude obeys psi_{t+1} = 2 cos theta C psi_t - psi_{t-1} (C the neighbour average): the amplitude step is T3's signed rule with a = cos theta, bounded at every wave number for unitary-compatible initial data
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - Schur-Cohn certificates for the average, the persistent line walk and the decaying partners of the split and mixing rules at five rational angles
+per_site: executed - the entrywise lemma on a row-stochastic 3x3 matrix: gauges keep a unimodular eigenvalue, a single non-gauge phase or a reduced entry does not
+per_mode: executed - the signed rule's roots multiply to one; omega = |k| on the line; omega^2 = |k|^2/3 + O(k^4) along an axis and the body diagonal; growth at a = 5/4
+per_block: executed - the coin walk: det U = 1, tr U = 2 cos theta cos k, U^2 - (tr U) U + 1 = 0
+lattice_wide: T2's classification for every nonnegative gain-one rule of any depth, any number of components and any dimension, classwise with the source graph-cycle proof; T3-T4 for every wave number; the formation law and the walk are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Supplied multilevel dynamics; reducibility, unit-circle and defective signed-recurrence countercontrols. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

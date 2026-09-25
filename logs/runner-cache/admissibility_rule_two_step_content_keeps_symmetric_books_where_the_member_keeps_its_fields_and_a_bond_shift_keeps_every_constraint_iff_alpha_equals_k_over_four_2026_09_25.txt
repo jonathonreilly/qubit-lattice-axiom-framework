@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_two_step_content_keeps_symmetric_books_where_the_member_keeps_its_fields_and_a_bond_shift_keeps_every_constraint_iff_alpha_equals_k_over_four_2026_09_25.py
+runner_sha256: 5e71990816ab6d4ba076933efda185f87f7d746427ce09d066e1ebf88bc8adb1
+input_fingerprint_sha256: 3c450b1473bdb00a4ddd9cecbac899f351b6a91a210b7fc818cd0ed2b5526cc6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.90
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_ONLY_THE_TWO_STEP_CURRENT_CAN_SOURCE_BLOCK_62S_SYMMETRIC_MEMBER_NO_LOCAL_PLACEMENT_OF_THE_FRAME_RESPONSE_OR_OF_THE_ONE_STEP_CURRENT_KEEPS_ITS_DIVERGENCE_CONDITION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_TWO_STEP_MOMENTUM_IS_THE_ONLY_ONE_AMONG_CONSERVED_COVARIANT_MOMENTA_OF_REACH_TWO_THAT_IS_EVERY_SPECIES_OWN_WAVE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THREE_RESPONSES_EIGHT_SPECIES_THE_FRAMES_SITE_STRESS_HAS_THE_WRONG_SIGN_IN_SHEAR_FOR_SIX_SPECIES_ONLY_THE_TWO_STEP_CURRENT_SERVES_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its currents and their placements, the member, its kinetic term and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: on the 5^3, 6^3 and 9^3 tori, as exact operators over Q(i), i[H, e'(x)] = - sum_j dbar_j P''_j(x), with e' = C_1 C_2 C_3 e and P''_j = phi_j^T pi_j the two-step momentum density pi_j = Re psi^dag P_j psi carried to the bond x -> x + e_j by block 120's average; both sides nonzero, support radius 3 <= 4 on 9^3, so the law holds on Z^3: the energy current is exactly the two-step momentum (wbar^2 times it at a rate wbar)
+PASS: C1 T2: on the same tori, for j = 1, 2, 3: i[H, P''_j] = - sum_i dbar_i Theta_ij (block 69's law carried by block 120's average), and the bond's coin-energy current Q_j = C_1 C_2 C_3 (1/2) Re[psi^dag(x+e_j) sigma_j (H psi)(x) + (H psi)^dag(x+e_j) sigma_j psi(x)] obeys i[H, Q_j] = - sum_i dbar_i Theta_ji with sum_j dbar_j Q_j = sum_j dbar_j P''_j but Q != P''; so P^B = (P'' + Q)/2 obeys i[H, P^B_j] = - sum_i dbar_i Theta^sym_ij with the symmetric stress the member sees, and e' still has current P^B; support radius 4 <= 4 on 9^3, so the laws hold on Z^3
+PASS: D1 T3: on the 5^3 torus the energy law fails with the site energy e, with the unaveraged two-step density, and with the one-step momentum carried by the same average; for each j the canonical momentum P''_j is not conserved with the symmetric stress (the antisymmetric part, the torque on the coin, has a nonzero divergence), nor with block 62's site stress (operators nonzero)
+PASS: E1 T4: give block 101's member at beta = -alpha a bond vector N_j entering as h' -> h' - (p N^T + N p^T) and coupled as -N.P (supplied, not adopted); along p = p z its lapse and shift constraints are 2K wbar p^2 phi = e and 8 alpha p phi'/wbar = P_z (with 4 alpha p (p N_x - c_x')/wbar = P_x across), and the evolution keeps them iff P_z' = -p Theta_zz, P_x' = -p Theta_xz with the symmetric stress, and e' = (K wbar^2/(4 alpha)) p P_z; with P = P^B, T1-T2 give the first two for every state and the energy current wbar^2 P^B, so initially satisfied nonzero-mode lapse and shift constraints are preserved for all free-walk sources iff alpha = K/4, and the prescribed conserved-source quadratic action is invariant under time-dependent relabellings up to a boundary term
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the energy and momentum laws as exact matrices over Q(i) on the 5^3, 6^3 and 9^3 tori, both sides nonzero, support radius at most 4
+per_site: executed - the laws at two sites of 5^3 and at the origin of 6^3 and 9^3, for every momentum component
+per_mode: executed - the member with a lapse and a bond shift along one axis: constraints, their preservation, and the three conditions
+per_block: executed - nine failing variants: site energy, unaveraged and one-step momenta, the canonical momentum with the symmetric stress, the site stress
+lattice_wide: the laws are exact on Z^3 for every state (support radius at most 4 < 9/2); first order in the member's fields; the walk, currents, placements, member, shift and link supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Conservation identities and preservation of initially satisfied nonzero-mode constraints; no general solvability or nonlinear gauge theory. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

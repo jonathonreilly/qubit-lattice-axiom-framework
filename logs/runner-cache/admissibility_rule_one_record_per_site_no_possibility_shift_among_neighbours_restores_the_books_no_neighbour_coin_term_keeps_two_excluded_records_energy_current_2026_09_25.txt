@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_2026_09_25.py
+runner_sha256: c3fab81e476b026682bf9fbcbb0a3a6bae366827b50e16a109272f8c996d58c6
+input_fingerprint_sha256: 3dc5cc0e974687fbe425daaf67e5d0a2d0ce5491380adb53aa09de47168f29b0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.61
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_NO_POSSIBILITY_SHIFT_AMONG_NEIGHBOURS_RESTORES_THE_BOOKS_NO_NEIGHBOUR_COIN_TERM_KEEPS_TWO_EXCLUDED_RECORDS_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_KEEPS_THE_BOOKS_ONLY_AT_LEADING_ORDER_TWO_EXCLUDED_RECORDS_LOSE_THEIR_ENERGY_CURRENT_IN_TWO_AND_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_THE_SOURCE_IS_THE_COMPRESSED_DENSITY_ON_A_CHAIN_TWO_RECORDS_ARE_TWO_FREE_FERMIONS_OF_THE_CHARGE_BAND_AND_ACTION_EQUALS_REACTION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its exclusion, the currents and their placements, the member and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: for both exchange signs the specified three-hop entry is -i/16. Every interaction or interaction-dipole factor has zero displacement, so all monomials containing any of the 32 coefficients have at most two hops and cannot reach it; arbitrary bond-line placement offsets are covered by this support proof.
+PASS: C1 T2: the same specified witness is -i/16 in three dimensions for both signs. Its minimum hop count three excludes every monomial involving the 48 fixed-position interaction coefficients or their placement offsets.
+PASS: D1 T3: the free antisymmetric controls have zero full residual; a rational neighbour interaction preserves the -i/16 witness while changing 96 other entries. Offset independence follows from the three-hop support proof, not a sample of offsets.
+PASS: E1 T4: adjacent and distance-two excluded pairs of both signs have zero defect on the infinite line; general conservation uses the scalar-chain reduction, not extrapolation from these examples.
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the exact three-hop witness in Z^2 and Z^3, both signs; support proof excludes all 32/48 interaction coefficients
+per_site: executed - the specified adjacent witness for no term and for a rational term
+per_mode: executed - offset independence by the three-hop support proof; exact free and excluded controls
+per_block: executed - the line: excluded pairs keep the current with no term
+lattice_wide: two records on the open lattice; coin terms on neighbouring pairs only; correlated hops and other placements not treated
+PASS: G1 the five N5 resolution lines are printed
+scope: Three-hop support witness excludes specified fixed-position neighbor coin corrections; no general possibility-shift no-go. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

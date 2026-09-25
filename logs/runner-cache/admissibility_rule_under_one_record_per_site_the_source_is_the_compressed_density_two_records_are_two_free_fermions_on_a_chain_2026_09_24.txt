@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_one_record_per_site_the_source_is_the_compressed_density_two_records_are_two_free_fermions_on_a_chain_2026_09_24.py
+runner_sha256: b8ba1135ace95624404d2be088c2fed4e5e3e3963e2e7e6f17bf543dd385c2ff
+input_fingerprint_sha256: 31f02b838f2e4f4b1521ae99c612621e6d029a529ca3b4243a3fe4fd38acc867
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_THE_SOURCE_IS_THE_COMPRESSED_DENSITY_ON_A_CHAIN_TWO_RECORDS_ARE_TWO_FREE_FERMIONS_OF_THE_CHARGE_BAND_AND_ACTION_EQUALS_REACTION_SURVIVES_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ACTION_AND_REACTION_THE_RATE_FIELDS_SOURCE_IS_THE_AMPLITUDES_ENERGY_DENSITY_MATCHED_PULLS_AND_A_KEPT_LEDGER_FIX_THE_CLOCK_LAWS_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_MANY_RECORDS_UNDER_EXCLUSION_SOURCE_IS_THE_PROJECTED_DENSITY_CHESSBOARD_INVISIBLE_INTERACTING_SEA_STIFFENS_CLOCKS_OPPOSITELY_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: a site never carries more than one record (the exclusion P); each site has a domain of local possibilities (the coin); Admissibility is not a dynamics axiom (the walk and the moving records are supplied clauses)
+PASS: B1 T1: on block 78's ring of 6 (its rates and two orthogonal states), for the antisymmetric pair under exclusion: (phi_x/2) dE/dphi_x (exact, E is linear in each bond factor at fixed state) equals the compressed density at every site, the densities sum to E_hc = 12349656/122046701, and they differ from the one-record densities e1 + e2 (total 16169964/134909593) at all six sites
+PASS: C1 T2: on an open chain of 7 with generic rational rates, in the ordered basis (x_L < x_R, coins in order) with the gauge (-1)^x on down coins, every nonzero matrix element of P H2 P (480, both exchange signs) keeps the coin sequence, moves one record by one site, and equals the up-coin hop times phi_x phi_y: the compressed generator is the free two-fermion hop of the charge band times the identity on the coin sequence, and records never pass
+PASS: D1 T3: for a generic antisymmetric charge amplitude on the chain of 7 (coin sector up, down), the compressed density of the record pair equals the charge band's one-particle trace 2 Re sum_z sum_b c(x,z)* h(x,b) c(b,z)/|c|^2 at every site, exactly: the source is the actual charge-state reduced-density trace, not necessarily a two-orbital sum
+PASS: E1 T4: on an open chain with w = 4^x (12 interior columns) and for the three-dimensional walk sum_a sigma_a S_a in a 5x3x3 box with w = 4^(x1) (400 interior columns), translating both records by one step up the gradient multiplies P H2 P by 4, since every hop carries phi_x phi_y and exclusion is translation invariant (block 54's finite-power identity carried to the excluded pair, in every dimension); this proves no exact crystal-momentum force or passive mass. The bookkeeping ratio of original-orbital and compressed energies is E_free/E_hc = 3356276805253/2833481402466 on block 78's ring
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the energies E_hc and E_free on block 78's ring and their ratio, exactly
+per_site: executed - the fixed-state source identity at all six sites of block 78's ring; the compressed density against the charge trace at all seven sites of a chain
+per_mode: executed - every nonzero matrix element of the compressed generator in the ordered, gauged basis, both exchange signs
+per_block: executed - the scaling identity of the excluded pair on 12 selected interior columns of a chain with w = 4^x and on 400 of the three-dimensional walk in a 5x3x3 box
+lattice_wide: T1 and T4 in every dimension (T4 checked on a chain and for the three-dimensional walk); T2-T3 on every chain (the reduction needs records that cannot pass, so not in two or three dimensions); no passive-mass inference from discrete scaling; the walk and the records are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Fixed-state density derivative and open-chain unitary equivalence; no generic inertia or physical force universality. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

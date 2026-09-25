@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_clocked_walks_realizations_every_one_keeps_the_even_shift_those_keeping_every_shift_form_a_torus_none_the_half_turn_2026_09_24.py
+runner_sha256: 1ddce8dd4bfadd41697fdf13a77debef9c0ab3e0aaf63932447f7df201f829be
+input_fingerprint_sha256: 9c3e7b6c7a6c9d4f991fae1119242ca7f3ddcf134657c4c49c42f569b154dc1c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.65
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_CLOCKED_WALKS_REALIZATIONS_EVERY_ONE_KEEPS_THE_EVEN_SHIFT_THOSE_KEEPING_EVERY_SHIFT_FORM_A_TORUS_AND_NONE_KEEPS_THE_HALF_TURN_ABOUT_THE_GRADIENT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_IN_AN_EXPONENTIAL_CLOCK_FIELD_THE_WALKS_DYNAMICS_NEEDS_A_BOUNDARY_CONDITION_AT_THE_FAST_CLOCK_END_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/ADMISSIBILITY_RULE_IN_THREE_DIMENSIONS_THE_CLOCKED_WALK_NEEDS_A_FAST_END_CONDITION_EXACTLY_IN_THE_SECTORS_WITH_SMALL_TRANSVERSE_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-23.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the walk and its clock are supplied clauses)
+PASS: B1 T1: on the line (w = lambda^x), psi(n) = (eps/mu)^n v_s S(z lambda^-n) with sigma_1 v_s = s v_s solves the walk at energy z iff (i s eps/2)(S(lambda X) - S(X/lambda)) = X S(X); the series c_0 = 1, c_j = -2 i s eps c_(j-1)/(lambda^j - lambda^-j) leaves the exact remainder -c_5 X^6 at order 5 for all four (s, eps), symbolic in lambda: its coefficients fall like lambda^(-j^2/2), so each of the four solutions is entire in z and behaves as (+-1/mu)^n at the fast end - all four are square-summable there at every energy
+PASS: B2 T1: on the four zero-energy solutions (eps/mu)^n v the boundary form is G = diag(-i sigma_1, +i sigma_1) in the blocks eps = +1, -1, the same at every cut; the unit shift acts as eps mu and the shift by two as the scalar lambda = mu^2, so G(T1 x, T1 y) = lambda G(x, y)
+PASS: C1 T2: the unit shift has eigenvalues +mu, -mu on the blocks, and each block is nondegenerate for G, so a plane kept by it is L(v1, v2) = span(v1 (x) E+, v2 (x) E-), Lagrangian exactly when v1 and v2 are isotropic for sigma_1: v = (1, i t) or (0, 1) - a torus of realizations, every one kept by the shift by two (a scalar); L meets the chains (x, sigma_3 x) and (x, -sigma_3 x) exactly when v2 is parallel to sigma_3 v1 (t2 = -t1), block 108's circle; the witness v1 = (1, 0), v2 = (1, i) is Lagrangian, kept by every shift, and chain-mixing
+PASS: D1 T3: the line walk commutes with sigma_1 (the half-turn of the content about the line), which commutes with the unit shift on the boundary space; a plane kept by both is spanned by joint eigenvectors (1, +-1) (x) E+-, whose G-norms are -2*I, 2*I, 2*I, -2*I - none is isotropic, so no realization keeps both the half-turn and the identity for the unit shift
+PASS: E1 T4: at lambda = 4 and (sin k2, sin k3) = (1/4, 1/3), m = 5/12 < m* = 3/4; the zero-energy solutions (r/mu)^n v with N v = ((r - 1/r)/2) v, N = sin k2 sigma_3 - sin k3 sigma_2, have r = 3/2, -2/3 (N = +m) and 2/3, -3/2 (N = -m), labelled a, b, c, d; the unit shift acts on them as mu/r = 4/3, -3, 3, -4/3, four distinct values
+PASS: E2 T4: the boundary form is independent of the cut and nonzero only on the pairs a-c and b-d (r_i r_j = 1); every other pair vanishes, through isotropy of each spinor or r_i + r_j = 0; so the planes kept by the unit shift are the six pairs and the Lagrangian ones are exactly ab, ad, bc, cd - four realizations keep every x1-shift in this sector
+PASS: E3 T4: the quarter-turn about x1 (e^(-i pi sigma_1/4)) carries N_p to N_(-p3, p2) and the half-turn sigma_1 carries it to N_(-p), so proper cubic rotations fixing x1 keep the labels and each of the four choices is rotation-covariant; but as m -> 0 each choice tends to a plane that depends on the direction of (sin k2, sin k3) - for bc, span([0, 0, 1, 0] E+, [0, 1, 0, 0] E-) along (1, 0) against span([0, 0, I, 1], [-I, 1, 0, 0]) along (0, 1) - so no choice is continuous at the four points m = 0, where by T3 no unit-shift-compatible plane keeps the half-turn
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the series solutions' recursion and remainder at every energy (symbolic in lambda), and the boundary form of the four zero-energy solutions
+per_site: executed - the boundary form at four cuts; the unit shift and the shift by two on the boundary space
+per_mode: executed - the torus of Lagrangian planes kept by the unit shift, the chain test, a chain-mixing witness, and the half-turn's joint eigenvectors
+per_block: executed - a sector with 0 < m < m*: the four Floquet solutions, the pairing, the four kept planes, rotation labels and the direction-dependent limits
+lattice_wide: T1-T3 for the line walk in w = lambda^x with the endpoint theory imported at definition level; T4 sector by sector on Z^3 with w = lambda^(x1); the walk, the clock and the exponential field are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Line extension classification; 3D obstruction restricted to decomposable translation-preserving domains. Supplied model only; no audit verdict.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

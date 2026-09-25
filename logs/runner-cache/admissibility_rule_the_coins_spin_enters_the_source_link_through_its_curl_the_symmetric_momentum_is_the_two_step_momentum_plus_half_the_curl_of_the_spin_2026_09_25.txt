@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_2026_09_25.py
+runner_sha256: b80c76c94171be5bfe515ddd7275138e14f61cec5328d35ce84c96aa86f7d0f1
+input_fingerprint_sha256: 8fe39c75a4f51ce452c8054dd943e6610b3b105c2cbea6f438fe09d67ce45af8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.45
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_COINS_SPIN_ENTERS_THE_SOURCE_LINK_THROUGH_ITS_CURL_THE_SYMMETRIC_MOMENTUM_IS_THE_TWO_STEP_MOMENTUM_PLUS_HALF_THE_CURL_OF_THE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONLY_THE_TWO_STEP_CURRENT_CAN_SOURCE_BLOCK_62S_SYMMETRIC_MEMBER_NO_LOCAL_PLACEMENT_OF_THE_FRAME_RESPONSE_OR_OF_THE_ONE_STEP_CURRENT_KEEPS_ITS_DIVERGENCE_CONDITION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_TWO_STEP_MOMENTUM_IS_THE_ONLY_ONE_AMONG_CONSERVED_COVARIANT_MOMENTA_OF_REACH_TWO_THAT_IS_EVERY_SPECIES_OWN_WAVE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THREE_RESPONSES_EIGHT_SPECIES_THE_FRAMES_SITE_STRESS_HAS_THE_WRONG_SIGN_IN_SHEAR_FOR_SIX_SPECIES_ONLY_THE_TWO_STEP_CURRENT_SERVES_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its currents and their placements, the member, its kinetic term and the source link are supplied; the memo does not define a time metric)
+PASS: B1 T1: on the 5^3, 6^3 and 9^3 tori, as exact operators over Q(i), for j = 1, 2, 3: Q_j - P''_j = (1/2) sum_kl eps_jkl dbar_k S~_l, where S_l(x) = (1/2)[Re psi^dag(x) sigma_l psi(x + e_j + e_k) + Re psi^dag(x + e_k) sigma_l psi(x + e_j)] is the specified face bilinear perpendicular to l (the mean of its two diagonals) and S~ = C_1 C_2 C_3 S; both sides nonzero, support radius at most 4 on 9^3, so the identity holds on Z^3
+PASS: C1 T2: on 5^3 and 6^3, P^B_j = P''_j + (1/4) (curl S~)_j = P''_j + (1/2) curl(S~/2), with S~/2 the specified averaged face bilinear: the symmetric momentum is the two-step momentum plus half the curl of the specified face bilinear; and sum_j dbar_j (curl S~)_j = 0 exactly, so the curl has zero divergence and therefore changes no term in this energy-continuity equation and e' flows as P^B
+PASS: D1 T3: on 5^3, for j = 1, 2, 3: sum_i dbar_i (Theta_ij - Theta_ji) = (1/2) d/dt (curl S~)_j, both sides nonzero: the torque on the coin that stops the canonical momentum from being conserved with the symmetric stress (block 136 T3) is exactly the rate of change of the face-bilinear curl
+PASS: E1 T4: the identity behind T1 - for eigenvectors (sigma.s) u = lambda u, (sigma.s') u' = lambda' u': (lambda + lambda') u'^dag sigma_j u = (s_j + s'_j) u'^dag u + i eps_jkl (s - s')_k u'^dag sigma_l u, modulo lambda^2 = |s|^2 (symbolic): the first part is the two-step momentum's beat, the second is the curl of the specified face bilinear's beat, since s - s' = 2 sin(q/2) cos kbar
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - Q - P'' = (1/2) curl S~ as exact matrices over Q(i) on 5^3, 6^3 and 9^3, support radius at most 4
+per_site: executed - two sites of 5^3 and the origin of 6^3 and 9^3, every component
+per_mode: executed - the eigenvector identity (l + l') u'^dag sigma_j u = (s_j + s'_j) u'^dag u + i eps (s - s')_k u'^dag sigma_l u, symbolically
+per_block: executed - P^B = P'' + (1/4) curl S~; the divergence of the curl; the torque as the rate of the curl
+lattice_wide: the identities are exact on Z^3 for every state (support radius at most 4 < 9/2); the walk, currents and placements supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: Specified face-bilinear curl identity, not derived physical on-site spin. Supplied model only; no audit verdict.
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

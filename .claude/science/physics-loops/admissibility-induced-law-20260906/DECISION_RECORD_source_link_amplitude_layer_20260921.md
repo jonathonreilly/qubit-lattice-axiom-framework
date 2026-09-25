@@ -551,3 +551,23 @@ The third route, a placement or push rule under one record per site, is closed f
 So the choice that keeps exact books is not two records per site as such, but records that never scatter or bind. Under any interacting reading the books hold only for slow records, with a third-order defect.
 
 **What survives.** One light cone, `α = K/4`, is already fixed by the leading-order books (block 134). Slow interacting records keep those, since their defect is third order (block 137). So one light cone survives under the owner's reading. What is lost is the exact closure of the member's constraints at the closing ratio, which needs the exact books.
+
+## Thirty-first addendum (2026-09-25): exactness is a linear-order property (a reading of blocks 137–143, not a new theorem)
+
+**The reading.** Block 143's obstruction is kinematic. A collision keeps the total wave vector and the energy, but in the plane and in space it can change the total two-step momentum. Exact books forbid that change, so they forbid any collision that scatters. The cause of the collision does not enter:
+- one record per site (blocks 137, 141, 143);
+- a neighbour binding (blocks 142, 143);
+- walkers that pull on each other through the member once the member acts back on them.
+
+So on this lattice the exact books of blocks 135–139 are a property of content that does not interact, which is the linear order of the source link. From the first order at which content scatters, whatever makes it scatter, the books hold only at long wavelength, with a third-order defect for slow content (block 137).
+
+**Scope of the reading.** Block 143 proves the obstruction for two records with a finite-range interaction (T3), and the impossibility of transparency under one record per site (T5, under a named assumption at one wave vector). For walkers that scatter through the member the interaction is long-range and carried by a field, which T3 does not cover. There the statement above is an expectation from the same kinematics, not a theorem.
+
+**What it does to the owner's fork** (a finding, not a proposal).
+- Allowing two records per site would not by itself give exact books to content that interacts, including through the member.
+- So the fork is less "one record per site against exact books" than "exact books at linear order, long-wave books beyond it", for any reading of records.
+- One light cone, `α = K/4`, is fixed at linear order (blocks 134–136) and is untouched.
+
+**A question the table raises for the owner's reading** (no action taken). Block 136 keeps every constraint of the member with a bond shift coupled to the symmetric momentum. Block 124 (open) found that without it the transverse relabellings drift. Probes #9226 (unrefereed, same model family) finds that no landed object can be that shift. Whether "No site is privileged" extends to relabellings that change with time is a reading of the axiom. If it does, the shift is a relabelling variable rather than a field to supply. If it does not, the drifting transverse relabellings are physical.
+
+**Erratum to addendum 30.** Block 143's assumption is now needed at one total wave vector only, not at almost every one: the four band functions of the free pair must have only nondegenerate stationary points at that wave vector. Since the books are an operator identity, a neighbourhood of one wave vector suffices. A floating-point search supports it at one wave vector in each dimension; the search is not a proof.

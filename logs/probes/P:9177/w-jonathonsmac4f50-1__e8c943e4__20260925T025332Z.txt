@@ -1,0 +1,10 @@
+PR #9177: physics-loop: admissibility induced-law block 123 - persistent records in three dimensions carry damped density waves along the body diagonals past an exact threshold, and none along the axes
+branch physics-loop/admissibility-induced-law-block123-persistent-records-in-three-dimensions-damped-density-waves-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_persistent_records_in_three_dimensions_carry_damped_density_waves_along_the_body_diagonals_and_none_along_the_axes_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation axis_cubic_forged: expected B observed B ok
+   mutation diagonal_threshold_forged: expected C observed C ok
+   mutation scaling_forged: expected D observed D ok
+   mutation damping_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

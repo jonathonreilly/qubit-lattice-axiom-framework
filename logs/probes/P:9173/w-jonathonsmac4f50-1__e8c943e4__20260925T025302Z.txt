@@ -1,0 +1,10 @@
+PR #9173: physics-loop: admissibility induced-law block 120 - only the two-step current can source block 62's symmetric member: no local placement of the frame response or of the one-step current keeps its divergence condition
+branch physics-loop/admissibility-induced-law-block120-only-the-two-step-current-can-source-the-symmetric-member-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_only_the_two_step_current_can_source_block_62s_symmetric_member_2026_09_24.py: rc=0 PASS=13 FAIL=0
+   mutation site_response_forged: expected B observed B ok
+   mutation transfer_pairing_forged: expected C observed C ok
+   mutation current_not_conserved: expected D observed D ok
+   mutation phi_realisation_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

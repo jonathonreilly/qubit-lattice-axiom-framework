@@ -1,0 +1,10 @@
+PR #9174: physics-loop: admissibility induced-law block 121 - under one record per site the source is the compressed density: on a chain two records are two free fermions of the charge band, and action equals reaction survives
+branch physics-loop/admissibility-induced-law-block121-under-one-record-per-site-the-source-is-the-compressed-density-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_under_one_record_per_site_the_source_is_the_compressed_density_two_records_are_two_free_fermions_on_a_chain_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation ledger_density_forged: expected B observed B ok
+   mutation gauge_forged: expected C observed C ok
+   mutation charge_trace_forged: expected D observed D ok
+   mutation scaling_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,10 @@
+PR #9157: physics-loop: admissibility induced-law block 115 - a rest energy from binding two walkers is exact with the walker's own speed in one dimension, invisible under one record per site, and anisotropic in three
+branch physics-loop/admissibility-induced-law-block115-a-rest-energy-from-binding-two-walkers-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_rest_energy_from_binding_two_walkers_exact_in_one_dimension_invisible_under_one_record_per_site_anisotropic_in_three_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation one_dimensional_speed_forged: expected B observed B ok
+   mutation triplet_resolvent_forged: expected C observed C ok
+   mutation along_triplet_taken_normal: expected D observed D ok
+   mutation untimed_contact_taken_to_scale: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

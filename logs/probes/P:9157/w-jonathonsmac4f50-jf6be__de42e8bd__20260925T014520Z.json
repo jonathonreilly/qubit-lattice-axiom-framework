@@ -1,0 +1,37 @@
+{
+ "task": "P:9157",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block115-a-res",
+ "worker": "w-jonathonsmac4f50-jf6be",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9157",
+ "pr": 9157,
+ "branch": "physics-loop/admissibility-induced-law-block115-a-rest-energy-from-binding-two-walkers-20260924",
+ "git_sha": "de42e8bd",
+ "started_utc": "20260925T014520Z",
+ "elapsed_s": 22.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_a_rest_energy_from_binding_two_walkers_exact_in_one_dimension_invisible_under_one_record_per_site_anisotropic_in_three_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9157's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "7c75c74d990d7262af99a804c0eea04cc7ab1a7c658fb4532f11bffa9ca0413e",
+ "stdout_tail": "PR #9157: physics-loop: admissibility induced-law block 115 - a rest energy from binding two walkers is exact with the walker's own speed in one dimension, invisible under one record per site, and anisotropic in three\nbranch physics-loop/admissibility-induced-law-block115-a-rest-energy-from-binding-two-walkers-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_a_rest_energy_from_binding_two_walkers_exact_in_one_dimension_invisible_under_one_record_per_site_anisotropic_in_three_2026_09_24.py: rc=0 PASS=11 FAIL=0\n   mutation one_dimensional_speed_forged: expected B observed B ok\n   mutation triplet_resolvent_forged: expected C observed C ok\n   mutation along_triplet_taken_normal: expected D observed D ok\n   mutation untimed_contact_taken_to_scale: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf6be",
+  "at_utc": "20260925T014542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

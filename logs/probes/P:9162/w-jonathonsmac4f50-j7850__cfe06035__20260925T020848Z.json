@@ -1,0 +1,37 @@
+{
+ "task": "P:9162",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block118-forwa",
+ "worker": "w-jonathonsmac4f50-j7850",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9162",
+ "pr": 9162,
+ "branch": "physics-loop/admissibility-induced-law-block118-forward-streaming-on-the-26-neighbours-isotropy-is-one-number-20260924",
+ "git_sha": "cfe06035",
+ "started_utc": "20260925T020848Z",
+ "elapsed_s": 22.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_forward_streaming_on_the_26_neighbours_isotropy_is_one_number_constant_rate_rules_capture_isotropically_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=14 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9162's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "89efd414ea8d54d6e0ba2e9da560ac9eca3c4603b96777efdbf7ae7315f47808",
+ "stdout_tail": "PR #9162: physics-loop: admissibility induced-law block 118 - forward streaming on the 26 neighbours: isotropy of the second-order term is one number, and constant-rate rules capture isotropically\nbranch physics-loop/admissibility-induced-law-block118-forward-streaming-on-the-26-neighbours-isotropy-is-one-number-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_forward_streaming_on_the_26_neighbours_isotropy_is_one_number_constant_rate_rules_capture_isotropically_2026_09_24.py: rc=0 PASS=14 FAIL=0\n   mutation isotropy_line_forged: expected B observed B ok\n   mutation diagonal_forged: expected C observed C ok\n   mutation staircase_weight_forged: expected D observed D ok\n   mutation exchange_dropped: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7850",
+  "at_utc": "20260925T020910Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+PR #9162: physics-loop: admissibility induced-law block 118 - forward streaming on the 26 neighbours: isotropy of the second-order term is one number, and constant-rate rules capture isotropically
+branch physics-loop/admissibility-induced-law-block118-forward-streaming-on-the-26-neighbours-isotropy-is-one-number-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_forward_streaming_on_the_26_neighbours_isotropy_is_one_number_constant_rate_rules_capture_isotropically_2026_09_24.py: rc=0 PASS=14 FAIL=0
+   mutation isotropy_line_forged: expected B observed B ok
+   mutation diagonal_forged: expected C observed C ok
+   mutation staircase_weight_forged: expected D observed D ok
+   mutation exchange_dropped: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

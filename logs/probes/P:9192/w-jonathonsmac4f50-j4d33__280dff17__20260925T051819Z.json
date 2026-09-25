@@ -1,0 +1,36 @@
+{
+ "task": "P:9192",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-finite-window-energy-laws-",
+ "worker": "w-jonathonsmac4f50-j4d33",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9192",
+ "pr": 9192,
+ "branch": "codex/mobile-record-finite-window-energy-laws-20260925",
+ "git_sha": "280dff17",
+ "started_utc": "20260925T051819Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9192's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9603f5767f446ce6905b0af56fc8012e094e2bd018d54048ee2ef0f33f414672",
+ "stdout_tail": "PR #9192: science: bound microscopic energy laws after original formation\nbranch codex/mobile-record-finite-window-energy-laws-20260925 (base main)\nrunners in the PR: 1\n== scripts/finite_window_microscopic_energy_laws_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4d33",
+  "at_utc": "20260925T051824Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

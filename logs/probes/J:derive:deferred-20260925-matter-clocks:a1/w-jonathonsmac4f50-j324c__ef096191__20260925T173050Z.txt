@@ -1,0 +1,16 @@
+PASS E1 for the constant clock the characteristic function of the conditioned formation time at omega is the landed note's z = f[1 - e^{-(f - i om)T}]/[(f - i om)(1 - e^{-fT})]
+PASS E1b the Bloch components: int w_T cos(om t) dt = Re z (so r_bar = r_par + Re z r_perp + Im z hhat x r_perp)
+PASS E2a lemma: 1/(1 - e^{-y}) <= 1 + 1/y for y > 0 [(y+1)(1 - e^{-y}) - y is 0 at y = 0 with derivative y e^{-y} >= 0]
+PASS E2b |z|^2 = x^2 (1 - 2e^{-kappa}cos tau + e^{-2kappa}) / ((1 + x^2)(1 - e^{-kappa})^2) <= x^2 (1 + e^{-kappa})^2/((1 + x^2)(1 - e^{-kappa})^2): the difference is 2x^2 e^{-kappa}(1 + cos tau)/((1+x^2)(1-e^{-kappa})^2) >= 0
+PASS E2c hence, with E2a, |z| <= 2x/(1 - e^{-kappa}) <= 2x(1 + 1/kappa) = 2(f/omega + 1/(omega T)) for every f, T > 0 (spot-checked at 64 points, 40 digits): the joint limit (f, 1/T) -> (0, 0) exists along every path and is the field-dephased average (z = 0); both iterated limits are special paths
+PASS E2d sharpness at fixed T, f -> 0: z -> (e^{i om T} - 1)/(i om T) (the landed uniform average), whose modulus at om T = pi is 2/pi = 2/(om T): the 1/(om T) term is attained
+PASS E2e sharpness at fixed f, T -> oo: z -> f/(f - i om) (the landed z_infinity), |z| = f/sqrt(f^2 + om^2): within a factor 2 of the f/om term
+PASS E3 the landed linear hazard's formation density beta t e^{-beta t^2/2} is unimodal with its peak at t = 1/sqrt(beta), value sqrt(beta) e^{-1/2}: |z| <= 2 sqrt(beta) e^{-1/2}/(omega (1 - e^{-beta T^2/2})) for T >= 1/sqrt(beta), so it too dephases jointly as beta -> 0 with beta T^2 -> oo
+PASS E4a cosine-modulated formation density w = (1 + cos om t)/T on T = 2 pi N/omega: z = 1/2 for every N (no dephasing as T -> oo): 1/2
+PASS E4b the hazard f = m w/(1 - m W), W = int_0^t w, has survival S = 1 - m W, formation density f S = m w and formation probability m before T: any density on [0, T] is a supplied hazard's; with w = (1 + cos om t)/T, sup f <= 2m/(T(1-m)) -> 0 as T -> oo while |z| = 1/2
+PASS E4c a piecewise-constant hazard switching between f0 and 0 at the half-periods (as neighbour records synchronized with the field could impose) gives, as f0 -> 0 with N periods, the uniform law on the 'on' half-periods and z -> (1/pi) int_{-pi/2}^{pi/2} e^{i phi} d phi = 2/pi, for every N
+PASS E4d exact square-wave clock over one period: z(f0) -> 2/pi as f0 -> 0
+
+TOTAL: PASS=12 FAIL=0
+HIT: for PR #9164's supplied qubit precession and ANY supplied hazard, the formation-weighted Bloch average's perpendicular part is the characteristic function z = E[exp(i omega tau) | tau < T] of the conditioned formation time at the precession frequency; the constant clock obeys |z| <= 2(f/omega + 1/(omega T)), so the joint slow-rate/long-window limit exists along every path and dephases (sharp up to a factor 2 in each term); slow rates and long windows do not dephase in general: hazards modulated at the precession frequency keep |z| = 1/2 (cosine) or -> 2/pi (half-period square wave) while sup f -> 0 and T -> oo; bounded variation, |z| <= (w(0)+w(T)+TV(w))/omega, is sufficient
+SUMMARY: PARTIAL a finite-window dephasing criterion for supplied formation clocks (characteristic function at omega), with a joint-limit bound for the constant clock and resonant counterexamples for time-dependent hazards; no clock is selected or derived from the axioms

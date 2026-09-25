@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260925-matter-clocks:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-jonathonsmac4f50-j324c",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-matter-clocks/w-jonathonsmac4f50-j324c/check.py",
+ "seed": 57450,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ef096191",
+ "started_utc": "20260925T173050Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL a finite-window dephasing criterion for supplied formation clocks (characteristic function at omega), with a joint-limit bound for the constant clock and resonant counterexamples for time-dependent hazards; no clock is selected or derived from the axioms"
+ },
+ "review": "Own route on PR 9164's finite-window residual: the formation-weighted Bloch average's perpendicular part is the characteristic function of the conditioned formation time at the precession frequency; constant clock |z| <= 2(f/omega + 1/(omega T)) exactly (joint limit exists, both iterated limits preserved); bounded-variation bound for any supplied hazard; resonant hazards (cosine, half-period square wave) keep |z| = 1/2, 2/pi as sup f -> 0 and T -> oo; bundle hashes and main verified; PR 9164 by the same model family.",
+ "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-23.json there. Begin with PR9164: state a single formation-clock selection or finite-window scaling question beyond the supplied hazard-family identities. Preserve the corrected fact that both iterated infinite-window/slow-rate limits dephase; do not resurrect a noncommutation claim. Distinguish a supplied hazard from an axiom-derived formation law. If an existing task covers this exactly, update recovery status and choose one other ranked residual in this bundle without duplicating active work. Before work inspect existing attempts, referee reports and active claims for deferred-20260925-conditional-dynamics, deferred-20260924-formation; search current main and open source for the exact residual and reuse settled results. Fetch origin/main and record its SHA, verify bundled source hashes and compare accepted source against findings. Frozen originals are exploratory history, not authority. Work one residual with explicit domain, quantifiers, premises and success witness. Deliver probes/work/derive/deferred-20260925-matter-clocks/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json with inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Mark steps PROVED/CHECKED/ASSUMED and independently test decisive finite claims. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT requires demonstrated new mathematics or a defect, not metadata recovery. Commit the checker before run_probe.py, validate the log and finish through claim.py. Use the existing maximum-thinking J queue and normal cross-model confirmation. Do not launch workers or subagents, change budgets, edit scientific/audit authority or merge science. One pass does not exhaust the bundle.",
+ "stdout_sha256": "756a4e5ca3b8ea55f951b03d3a95e2971f4c0425bfd7debd6b34a47e77f3d4e2",
+ "stdout_tail": "bability m before T: any density on [0, T] is a supplied hazard's; with w = (1 + cos om t)/T, sup f <= 2m/(T(1-m)) -> 0 as T -> oo while |z| = 1/2\nPASS E4c a piecewise-constant hazard switching between f0 and 0 at the half-periods (as neighbour records synchronized with the field could impose) gives, as f0 -> 0 with N periods, the uniform law on the 'on' half-periods and z -> (1/pi) int_{-pi/2}^{pi/2} e^{i phi} d phi = 2/pi, for every N\nPASS E4d exact square-wave clock over one period: z(f0) -> 2/pi as f0 -> 0\n\nTOTAL: PASS=12 FAIL=0\nHIT: for PR #9164's supplied qubit precession and ANY supplied hazard, the formation-weighted Bloch average's perpendicular part is the characteristic function z = E[exp(i omega tau) | tau < T] of the conditioned formation time at the precession frequency; the constant clock obeys |z| <= 2(f/omega + 1/(omega T)), so the joint slow-rate/long-window limit exists along every path and dephases (sharp up to a factor 2 in each term); slow rates and long windows do not dephase in general: hazards modulated at the precession frequency keep |z| = 1/2 (cosine) or -> 2/pi (half-period square wave) while sup f -> 0 and T -> oo; bounded variation, |z| <= (w(0)+w(T)+TV(w))/omega, is sufficient\nSUMMARY: PARTIAL a finite-window dephasing criterion for supplied formation clocks (characteristic function at omega), with a joint-limit bound for the constant clock and resonant counterexamples for time-dependent hazards; no clock is selected or derived from the axioms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j324c",
+  "at_utc": "20260925T173111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9235. Dephasing = characteristic function of the conditioned formation time at omega; constant clock |z| <= 2(f/omega + 1/(omega T)) (joint limit exists); BV bound; resonant hazards do not dephase; for a referee of another family.",
+  "by": "w-jonathonsmac4f50-j324c",
+  "at_utc": "20260925T173111Z"
+ }
+}

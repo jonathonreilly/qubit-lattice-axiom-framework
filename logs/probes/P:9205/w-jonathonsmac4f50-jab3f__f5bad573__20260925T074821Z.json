@@ -1,0 +1,37 @@
+{
+ "task": "P:9205",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block141-no-ne",
+ "worker": "w-jonathonsmac4f50-jab3f",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9205",
+ "pr": 9205,
+ "branch": "physics-loop/admissibility-induced-law-block141-no-neighbour-coin-term-restores-the-books-under-one-record-per-site-20260925",
+ "git_sha": "f5bad573",
+ "started_utc": "20260925T074821Z",
+ "elapsed_s": 434.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9205's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "ae0865878ec41fd75b69eab7d97b0d07194f14f862b87268e253727ff72f1e39",
+ "stdout_tail": "PR #9205: physics-loop: admissibility induced-law block 141 - one record per site: no possibility shift among neighbours restores the books; no neighbour coin term keeps two excluded records energy current\nbranch physics-loop/admissibility-induced-law-block141-no-neighbour-coin-term-restores-the-books-under-one-record-per-site-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_2026_09_25.py: rc=0 PASS=11 FAIL=0\n   mutation exclusion_lifted_in_2d: expected B observed B ok\n   mutation third_dimension_witness_forged: expected C observed C ok\n   mutation control_excluded_forged: expected D observed D ok\n   mutation line_obstruction_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jab3f",
+  "at_utc": "20260925T075535Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

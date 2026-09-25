@@ -1,0 +1,10 @@
+PR #9205: physics-loop: admissibility induced-law block 141 - one record per site: no possibility shift among neighbours restores the books; no neighbour coin term keeps two excluded records energy current
+branch physics-loop/admissibility-induced-law-block141-no-neighbour-coin-term-restores-the-books-under-one-record-per-site-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_record_per_site_no_possibility_shift_among_neighbours_restores_the_books_no_neighbour_coin_term_keeps_two_excluded_records_energy_current_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation exclusion_lifted_in_2d: expected B observed B ok
+   mutation third_dimension_witness_forged: expected C observed C ok
+   mutation control_excluded_forged: expected D observed D ok
+   mutation line_obstruction_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

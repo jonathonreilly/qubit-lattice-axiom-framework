@@ -97,7 +97,7 @@ The task asks for:
      - `0.463` at `(0.1, 2)` and `0.480` at `(0.3, 1)`.
      - Without the backflow: `0.493` and `0.594`.
    - **Executed** (F1, F2; side 32, 12 runs):
-     - axis waves give `ν_iso = 0.448 ± 0.027` at `(0.1, 2)` and `0.352 ± 0.011` at `(0.3, 1)`;
+     - axis waves give `ν_iso = 0.437 ± 0.017` (F1; F2's run with another seed: `0.448 ± 0.027`) at `(0.1, 2)` and `0.352 ± 0.011` at `(0.3, 1)`;
      - with `ν_cub = √3/16` (step 6), `η ≈ 0.24` and `0.31`;
      - the polarization ratio gives `1.16 ± 0.17` and `1.17 ± 0.11`, that is `η = 0.33 ± 0.34` and `0.35 ± 0.21`, consistent with the above.
    - **Against block 51.** Its executed wind shapes near a body (shell 6–10, sink smeared) read `η ≈ 0.3–0.5`. The executed viscosity puts `η` at the low end of that range.

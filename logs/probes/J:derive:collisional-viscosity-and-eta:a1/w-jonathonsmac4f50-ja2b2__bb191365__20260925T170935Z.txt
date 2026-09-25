@@ -1,0 +1,35 @@
+PASS E1 sphere moments: <|s_k|> = 1/2, <max(s_k,0)> = 1/4, <s_i^2|s_i|> = 1/4, <s_i^2|s_k|> = 1/8, <s_k^2 1(s_k>0)> = 1/6, <s_k^4> = 1/5, <s_i^2 s_k^2> = 1/15  [0 s]
+PASS E2a E_w[w w^T] = (I - Phat Phat^T)/2 for w uniform on the circle orthogonal to Phat (Phat = z shown; covariance gives the general case)  [0 s]
+PASS E2b averaging the re-draw of (s1, s2) over an isotropic partner s2: <Delta(s s^T summed over the pair)> = -(1/2)(s1 s1^T - I/3) (s1 = z-hat; rotation covariance of the clause gives every s1): [[1/6, 0, 0], [0, 1/6, 0], [0, 0, -1/3]]  [1 s]
+PASS E2c the re-draw keeps the pair's momentum (out1 + out2 = P) and number: the first harmonic and the density are not relaxed  [1 s]
+PASS E3 Chapman-Enskog: delta Pi_ij = -(n/omega_2)[(2/15) S_ij - (2/45) delta_ij div U], so d_t g_i gets (1/(15 omega_2)) (Lap g_i + (1/3) d_i div g): nu_coll = 1/(15 omega_2) = 1/(45 gamma rho), isotropic  [1 s]
+PASS E4a the exchange's forward carry restores exactly what exclusion removes: current = (1/sqrt3)[T_x - A+_x g_i(x + e)] - (mirror)  [1 s]
+PASS E4b in local equilibrium A+- = rho/4 +- g_k/2 (g = rho U)  [1 s]
+PASS E4c the backflow adds (rho/(4 sqrt3)) Lap g_i to the momentum equation, the same along every axis and for every component: isotropic  [1 s]
+   E5 eta = nu_lat / nu_iso;  nu_lat = sqrt3/16 = 0.10825;  nu_coll = 1/(45 gamma rho)
+      (rho, gamma) = (1/10, 2): small-density nu_iso 0.2194, eta 0.493;  with the exclusion backflow nu_iso 0.2338, eta 0.463
+      (rho, gamma) = (3/10, 1): small-density nu_iso 0.1823, eta 0.594;  with the exclusion backflow nu_iso 0.2256, eta 0.480
+      (rho, gamma) = (1/10, 1): small-density nu_iso 0.3305, eta 0.328;  with the exclusion backflow nu_iso 0.3449, eta 0.314
+      (rho, gamma) = (3/10, 4): small-density nu_iso 0.1268, eta 0.854;  with the exclusion backflow nu_iso 0.1701, eta 0.637
+PASS E5 eta at (0.1, 2) and (0.3, 1) is 0.46-0.60 (exact expressions), inside or at the edge of block 51's executed 0.3-0.5  [1 s]
+PASS E6 transverse waves are eigenpolarizations with damping q^2 (nu_iso + nu_lat c): c = 0 along an axis, 1/2 along a face diagonal polarized in the face, 0 polarized across it; so the in-face over across-face ratio at the same q is 1 + eta/2  [1 s]
+PASS F0 (evidence) the lib's scatter_pair with s1 = z and an isotropic partner: mean change (0.1662, 0.1657, -0.3319) against E2b's exact (1/6, 1/6, -1/3), 1e5 samples  [2 s]
+   F (floating-point evidence): transverse momentum waves in probes/lib/inertial.py tick_s, periodic side 32, 12 runs of 120 ticks each; nu = decay rate / q^2
+      (rho, gamma) = (0.1, 2): axis (q along x, g along y) nu = 0.4366 +- 0.0173; face diagonal in-face nu = 0.5093 +- 0.0525, across-face nu = 0.4375 +- 0.0453; in/across = 1.164 +- 0.170
+         predicted: nu_iso 0.2194 (small density) or 0.2338 (with the exclusion backflow); in/across 1 + eta/2 = 1.247 or 1.232
+      (rho, gamma) = (0.3, 1): axis (q along x, g along y) nu = 0.3521 +- 0.0109; face diagonal in-face nu = 0.4143 +- 0.0334, across-face nu = 0.3528 +- 0.0152; in/across = 1.174 +- 0.107
+         predicted: nu_iso 0.1823 (small density) or 0.2256 (with the exclusion backflow); in/across 1 + eta/2 = 1.297 or 1.240
+PASS F1 (evidence) the in-face polarization of a face-diagonal wave decays faster than the across-face one at both (rho, gamma), as the cubic term requires  [33 s]
+   F2 (evidence) axis waves at rho = 0.1 against gamma; molecular chaos: nu = sqrt3/16 + rho/(4 sqrt3) + 1/(45 gamma rho)
+      gamma 1: nu = 0.5437 +- 0.0274; molecular chaos 0.3449
+      gamma 2: nu = 0.4482 +- 0.0274; molecular chaos 0.2338
+      gamma 4: nu = 0.4149 +- 0.0273; molecular chaos 0.1782
+      gamma 8: nu = 0.4069 +- 0.0195; molecular chaos 0.1505
+      side 48, gamma 2 (smaller q): nu = 0.4386 +- 0.0159 against 0.4482 at side 32
+PASS F2 (evidence, counterexample to the molecular-chaos closure) at rho = 0.1 the transverse viscosity saturates in gamma: nu(8)/nu(2) = 0.908 against the closure's 0.644, and nu(8) = 0.407 exceeds the closure's 0.150 by 13 standard errors; side 48 agrees with side 32 (hydrodynamic)  [104 s]
+   F3 (evidence) uniform stress <s_z^2 - 1/3> from a product start, rho 0.1, gamma 2, side 48: 0.1069 0.0811 0.0653 0.0545 0.0448 0.0379 0.0317; rate over tick 1 0.276, mean over 6 ticks 0.203; molecular chaos 3 gamma rho = 0.600; first-tick estimate for pairs re-drawn at most once, 3 rho (1 - e^-gamma) = 0.259
+PASS F3 (evidence) the uniform stress relaxes at about 0.3 per tick, not 3 gamma rho = 0.6: re-draws of a pair already re-drawn relax nothing (exact: the pair's law given P is already the re-draw's)  [105 s]
+
+TOTAL: PASS=14 FAIL=0 (105 s)
+HIT: for block 51's bond re-draw, exact: one re-draw with an isotropic partner removes exactly half of the pair's second harmonic, and a pair already re-drawn is unchanged in law by further re-draws; the molecular-chaos (product-state) Chapman-Enskog value nu_coll = 1/(45 gamma rho) (isotropic) is therefore not the gas's: executed transverse waves give nu saturating in gamma (0.45, 0.41, 0.41 at gamma 2, 4, 8, rho 0.1, against 0.23, 0.18, 0.15), eta = nu_lat/nu about 0.24 at (0.1, 2) and 0.31 at (0.3, 1); exact product-state exchange currents: forward carry = free streaming, backflow adds the isotropic rho/(4 sqrt3), cubic part sqrt3/16 unchanged
+SUMMARY: ROUTE FAILS AT step 4 (the molecular-chaos rate 6 gamma rho of independent re-draws): repeated re-draws of the same adjacent pair are redundant, the stress relaxes at the rate new adjacencies form; exact partial results: the halving identity, the Chapman-Enskog form nu = 1/(15 omega_2), the exchange backflow, the transverse eigen-dampings; measured eta about 0.24-0.31

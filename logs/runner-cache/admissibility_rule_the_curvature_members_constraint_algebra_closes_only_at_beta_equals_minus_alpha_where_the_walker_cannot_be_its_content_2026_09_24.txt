@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_curvature_members_constraint_algebra_closes_only_at_beta_equals_minus_alpha_where_the_walker_cannot_be_its_content_2026_09_24.py
+runner_sha256: 04cbd45f43fef5acc38f0709a5e8db240fd64fe41134b14e914b41d4fda6aec1
+input_fingerprint_sha256: 7d04146fd765ec3b5227cbbed84342335e3ca331f73f906c99679b0711322b54
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.40
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: each site has a domain of local possibilities; Admissibility is not a dynamics axiom and does not define a time metric (the clocks, the lengths, the kinetic term and the walk are supplied clauses)
+PASS: B1 T1: on the 4^3 torus, for three lapse pairs, alpha = 3/7 and K = 5/11, the part of {C[N], C[M]} linear in the strains, K(B[N,M] - B[M,N]), equals the relabelling generator G[xi] exactly, with xi_j(x -> x + e_j) = (K/(4 alpha))(N_(x + e_j) M_x - N_x M_(x + e_j)), at c = beta/(alpha + 3 beta) = 1/2 (beta = -alpha), with each face term timed by the mean of its four corners or of either pair of opposite corners
+PASS: B2 T1: the closure needs both conditions - one-corner timing at beta = -alpha, and c = 0, 1/3, 1/4 with symmetric timing, all miss G[xi]; on the 3^3 torus with lapses at 0 and e1 the bracket is affine in c, b(c) = b(1/2) + (1 - 2c) b1, and b1 lies outside the span of all relabellings (rank 78 -> 79): for c != 1/2 no relabelling field closes the algebra
+PASS: C1 T2: along p = p z, with R1 = 2 p^2 phi and block 62's coupling, the gradient relabelling h -> h + p p^T zeta, u -> u - (2 alpha/(K wbar^2)) zeta'' changes the action at beta = -alpha by a total derivative plus zeta [(2 alpha/(K wbar^2)) e'' + (p^2/2) Theta_zz] exactly; for beta != -alpha an extra term proportional to alpha + beta remains: the ratio that closes the algebra is the ratio at which gradient relabellings are a symmetry, and then the sources must obey (2 alpha/(K wbar^2)) e'' + p.Theta.p/2 = 0
+PASS: D1 T3: at alpha + beta = 0 the u-equation is the constraint 2 K wbar p^2 phi = e and the longitudinal relabelling's equation then reads e'' = -(K wbar^2/(4 alpha)) p.Theta.p (p along z: p.Theta.p = p^2 Theta_zz); this is the second derivative of continuity e' + i p.J = 0 with momentum balance P' + i p.Theta = 0 exactly when J = (K wbar^2/(4 alpha)) P, not continuity itself (a constant e' stays free)
+PASS: E1 T4: the walk's positive-branch waves k1 = (a, b, 0), k2 = (-b, a, 0) with sin a = 3/5, sin b = 5/13 have the same energy (squared 2146/4225), so their superposition is stationary and e'' = 0 at q = k2 - k1; its frame response there (block 62: Theta_a^j = (1/2) chi1^dag sigma_a chi2 (sin k1 + sin k2)_j) has p.Theta.p = 128 sqrt(2146)(1 - i)/65^4 != 0 and p.Theta != 0 in every component: at beta = -alpha, T3 has no solution with the walk as content, and by block 62 T5 as landed the static equations have none at any ratio
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the gradient relabelling's change of the mode action, and the equations of motion at alpha + beta = 0 (symbolic)
+per_site: executed - the linear bracket against the relabelling generator at every strain of a 4^3 torus for three lapse pairs and four face timings
+per_mode: executed - the walk's stationary two-wave state and its frame response at the difference wave vector (exact algebraic numbers)
+per_block: executed - the obstruction's rank against all relabellings on the 3^3 torus; the affine dependence on the kinetic ratio
+lattice_wide: T1 at linear order for block 62's staggered placement on every torus of side >= 3 and every lapse; T2-T3 for block 101's quadratic action at every lattice wave vector; T4 for block 62's frame response as the stress; the member, the kinetic family, the face timing and the coupling are supplied
+PASS: G1 the five N5 resolution lines are printed
+scope: the curvature member's lapse constraints close onto the strains' relabelling on the lattice at linear order exactly when beta = -alpha with symmetric face timing; there the gradient relabelling is a symmetry and the sources must obey e'' = -(K wbar^2/(4 alpha)) p.Theta.p, which the walk's own stationary states violate; nothing adopted
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

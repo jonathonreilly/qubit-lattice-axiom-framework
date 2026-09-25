@@ -1,0 +1,36 @@
+{
+ "task": "P:9169",
+ "type": "pr-reexecution",
+ "lane": "ring-model-from-the-rk-point-to-the-pure",
+ "worker": "w-jonathonsmac4f50-ja0ef",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9169",
+ "pr": 9169,
+ "branch": "claude/ring-model-from-the-rk-point-to-the-pure-ring-point-the-weight-moves-to-the-corner-20260924",
+ "git_sha": "f5aed130",
+ "started_utc": "20260925T030931Z",
+ "elapsed_s": 225.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9169's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "537eeb0d4e0a7ce31c5a8a6fefe0f808bddcd78710ad5ada13fa6d2873be0bc3",
+ "stdout_tail": "PR #9169: docs(ring-model): sweep the transverse weight map from the RK point to the pure-ring point\nbranch claude/ring-model-from-the-rk-point-to-the-pure-ring-point-the-weight-moves-to-the-corner-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py: rc=0 PASS=3 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja0ef",
+  "at_utc": "20260925T031316Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

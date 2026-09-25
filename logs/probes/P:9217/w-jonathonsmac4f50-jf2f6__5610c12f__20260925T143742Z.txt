@@ -1,0 +1,4 @@
+PR #9217: Derive original first-birth charge law and grouping dynamics
+branch codex/mobile-record-birth-charge-and-grouping-dynamics-20260925 (base main)
+runners in the PR: 1
+== scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)

@@ -1,0 +1,36 @@
+{
+ "task": "P:9217",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-birth-charge-and-grouping-",
+ "worker": "w-jonathonsmac4f50-jf2f6",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9217",
+ "pr": 9217,
+ "branch": "codex/mobile-record-birth-charge-and-grouping-dynamics-20260925",
+ "git_sha": "5610c12f",
+ "started_utc": "20260925T143742Z",
+ "elapsed_s": 9.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9217's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "784e38e71b7d3948142aa359e51ce3315685100c9821660ce987ccc3221ec48c",
+ "stdout_tail": "PR #9217: Derive original first-birth charge law and grouping dynamics\nbranch codex/mobile-record-birth-charge-and-grouping-dynamics-20260925 (base main)\nrunners in the PR: 1\n== scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf2f6",
+  "at_utc": "20260925T143751Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

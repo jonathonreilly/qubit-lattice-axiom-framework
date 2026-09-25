@@ -25,6 +25,12 @@ x, y, x, y.
    condition: in every gauge-invariant basis state the matter record at a vertex equals the outward link flux plus
    the background, so the matter records are functions of the link records (and not conversely: the number of link
    patterns per matter pattern is reported). The spectrum in the gauge sector at g = 0 and g = 1/2, by Z2 flux.
+5. The odd three-dimer term of open PR 9144, kappa (tau^x tau^z tau^y)(sigma . sigma) on the path v1 - v2 - v3, with its
+   charged part dressed by the two link raising operators along the path: it commutes with every Gauss operator (the
+   undressed one does not), with the matter charge and with the Z2 flux; under complex conjugation in the record basis,
+   the anti-unitary symmetry of the gauged model, it flips sign while the bonds and the ring are even; the spin-flip
+   time reversal of the ungauged model is broken by the dressing (it flips the charge but not the flux). It shifts the
+   gauge-sector spectrum.
 
 Prints one line per check and TOTAL: PASS=N FAIL=M.
 """
@@ -188,6 +194,39 @@ check("the gauge sector: fixed total charge 2, matter records determined by link
       f"{sorted(link_per_matter.values())} link patterns each; leakage of H out of the sector {leak:.0e}; W diagonal on the sector; "
       f"g = 0: lowest levels {np.round(spec0[:4], 4).tolist()}; g = 1/2: {np.round(spec1[:4], 4).tolist()}; "
       f"g = 1/2 by Z2 flux W = +1: {np.round(e_by_w[1], 4).tolist()}, W = -1: {np.round(e_by_w[-1], 4).tolist()}")
+
+# ------------------------------------------------ 5. the time-reversal-odd term, dressed along its two-link path
+# path v1 - v2 - v3 through the corner v2 (bond types x then y): kappa (tau^x_1 tau^z_2 tau^y_3)(sigma_1 . sigma_3), with the
+# charged part hopping the fermion from v3 to v1: the outward flux at v1 must rise by one (s^+_12), the flux through v2 must
+# pass (s^+_23 keeps -E12 + E23 fixed), and the outward flux at v3 then falls by one.
+kappa = 0.35
+odd_tau = TAU(0, "x") @ TAU(1, "z") @ TAU(2, "y")
+odd_dressed = kappa * odd_tau @ (SIG(0, "z") @ SIG(2, "z") + 2 * (op(0, SP) @ splus["12"] @ splus["23"] @ op(2, SM)
+                                                                 + op(0, SM) @ sminus["12"] @ sminus["23"] @ op(2, SP)))
+odd_bare = kappa * odd_tau @ (SIG(0, "z") @ SIG(2, "z") + 2 * (op(0, SP) @ op(2, SM) + op(0, SM) @ op(2, SP)))
+# anti-unitary symmetries: K = complex conjugation in the record basis (fixes every record and link value); the spin-flip
+# time reversal Y..Y K of the ungauged model flips the charge but not the flux, so the dressed hops break it
+T_odd = odd_dressed.conj()
+T_even = (H_matter + ring).conj()
+Yall = op(0, Y)
+for q_ in range(1, NQ):
+    Yall = Yall @ op(q_, Y)
+spinflip_break = float(abs(Yall @ H_matter.conj() @ Yall - H_matter).max())
+spinflip_bare = float(abs(Yall @ H_bare.conj() @ Yall - H_bare).max())
+comm_odd = max(cnorm(G[i], odd_dressed) for i in range(4))
+comm_odd_bare = max(cnorm(G[i], odd_bare) for i in range(4))
+HG_odd = (P.T @ (H_matter + 0.5 * ring + odd_dressed) @ P).toarray()
+leak_odd = float(abs(((sp.identity(DIM, format="csr") - P @ P.T) @ (H_matter + 0.5 * ring + odd_dressed) @ P)).max())
+spec_odd = np.linalg.eigvalsh(HG_odd)
+check("the odd three-dimer term dressed along its two-link path keeps gauge invariance, the charge and the Z2 flux; it is odd under record-basis conjugation, under which the bonds and ring are even",
+      comm_odd == 0.0 and comm_odd_bare > 0.5 and cnorm(Sz, odd_dressed) == 0.0 and cnorm(W, odd_dressed) == 0.0
+      and abs(T_odd + odd_dressed).max() < 1e-12 and abs(T_even - (H_matter + ring)).max() < 1e-12 and leak_odd < 1e-12
+      and abs(spec_odd - spec1).max() > 1e-6 and spinflip_break > 0.5 and spinflip_bare < 1e-12,
+      f"|[G_v, odd_dressed]| = {comm_odd:.0e}, |[G_v, odd_bare]| = {comm_odd_bare:.1f}; |[S^z, odd]| = {cnorm(Sz, odd_dressed):.0e}; "
+      f"|[W, odd]| = {cnorm(W, odd_dressed):.0e}; under record-basis conjugation K the odd term flips sign ({abs(T_odd + odd_dressed).max():.0e}) "
+      f"while the bonds and ring are even ({abs(T_even - (H_matter + ring)).max():.0e}); the spin-flip time reversal of the ungauged model "
+      f"is broken by the dressing (|Y K H Y - H| = {spinflip_break:.1f}, bare {spinflip_bare:.0e}); leakage {leak_odd:.0e}; lowest levels "
+      f"with the odd term at kappa = {kappa}: {np.round(spec_odd[:4], 4).tolist()}")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")
 sys.exit(0 if all(RESULTS) else 1)

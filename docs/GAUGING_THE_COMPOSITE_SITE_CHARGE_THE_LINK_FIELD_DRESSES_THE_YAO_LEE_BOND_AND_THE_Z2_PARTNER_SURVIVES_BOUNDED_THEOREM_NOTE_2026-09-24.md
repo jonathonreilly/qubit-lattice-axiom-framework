@@ -1,7 +1,7 @@
 ---
 claim_id: gauging_the_composite_site_charge_the_link_field_dresses_the_yao_lee_bond_and_the_z2_partner_survives_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: doubled coordinates with one role per site class (D-roles: vertex = matter qubit sigma, link = U(1) link qubit with E_l = s^z_l/2 along the link's orientation as in open PR 9066, cube = the Z2 gauge partner tau of the vertex at -(1,1,1), plaquette free; D-comp); the Yao-Lee bond of open PR 9144 between composite sites two steps apart with its charged part dressed by the link raising operator, J (tau^l tau^l)[sigma^z sigma^z + 2(sigma^+ s^+_l sigma^- + h.c.)]; the Gauss law G_v = sum_out E_l - n_v + rho_v with n_v = (1 + sigma^z_v)/2 and the staggered background rho_v = 1 on odd vertices (D-background); the covariant ring -g (U + U^dag) of open PR 9072. Finite certificates on one plaquette of four composite sites with four links (12 qubits). (i) The dressed bond's five-site support (two vertices, one link, two cubes) fits a 4 x 2 x 2 block and no closed seven-site star; cube sites have six cube neighbours at distance two; the four site classes take four roles. (ii) Every Gauss operator commutes exactly with the dressed bonds and with the ring; the undressed Yao-Lee bonds violate it with commutator norm 2.0; the total matter charge commutes with H, while the matter S^x commutes with the undressed bonds (norm 0) and not with the dressed ones (norm 1.0): the SU(2) of open PR 9144 breaks to the gauged U(1). (iii) The product of the four partner qubits' sigma^z commutes exactly with the dressed Hamiltonian and the ring, and equals minus the product of the four bond factors: the Z2 flux sector survives the gauging. (iv) The gauge sector has dimension 112 of 4096; every state has total charge 2, the number of odd vertices; the matter record at each vertex equals the outward link flux plus the background, so the six matter patterns are functions of the link records (with 1, 1, 1, 1, 1, 2 link patterns each); H leaves the sector invariant (leakage 0); the lowest levels are -7.7274 (twice), -6.8990 (twice) at g = 0 and -7.8175 (twice), -6.8217 (twice) at g = 1/2, the latter with the ground pair in the Z2 flux sector W = +1 and the W = -1 sector starting at -6.8217. No gauged phase, no continuum, no three-dimensional record realization and no physical identification is claimed."
+claim_scope: "Setting, all supplied and none adopted: doubled coordinates with one role per site class (D-roles: vertex = matter qubit sigma, link = U(1) link qubit with E_l = s^z_l/2 along the link's orientation as in open PR 9066, cube = the Z2 gauge partner tau of the vertex at -(1,1,1), plaquette free; D-comp); the Yao-Lee bond of open PR 9144 between composite sites two steps apart with its charged part dressed by the link raising operator, J (tau^l tau^l)[sigma^z sigma^z + 2(sigma^+ s^+_l sigma^- + h.c.)]; the Gauss law G_v = sum_out E_l - n_v + rho_v with n_v = (1 + sigma^z_v)/2 and the staggered background rho_v = 1 on odd vertices (D-background); the covariant ring -g (U + U^dag) of open PR 9072. Finite certificates on one plaquette of four composite sites with four links (12 qubits). (i) The dressed bond's five-site support (two vertices, one link, two cubes) fits a 4 x 2 x 2 block and no closed seven-site star; cube sites have six cube neighbours at distance two; the four site classes take four roles. (ii) Every Gauss operator commutes exactly with the dressed bonds and with the ring; the undressed Yao-Lee bonds violate it with commutator norm 2.0; the total matter charge commutes with H, while the matter S^x commutes with the undressed bonds (norm 0) and not with the dressed ones (norm 1.0): the SU(2) of open PR 9144 breaks to the gauged U(1). (iii) The product of the four partner qubits' sigma^z commutes exactly with the dressed Hamiltonian and the ring, and equals minus the product of the four bond factors: the Z2 flux sector survives the gauging. (iv) The gauge sector has dimension 112 of 4096; every state has total charge 2, the number of odd vertices; the matter record at each vertex equals the outward link flux plus the background, so the six matter patterns are functions of the link records (with 1, 1, 1, 1, 1, 2 link patterns each); H leaves the sector invariant (leakage 0); the lowest levels are -7.7274 (twice), -6.8990 (twice) at g = 0 and -7.8175 (twice), -6.8217 (twice) at g = 1/2, the latter with the ground pair in the Z2 flux sector W = +1 and the W = -1 sector starting at -6.8217. (v) The odd three-dimer term of open PR 9144 on the path v1-v2-v3, kappa (tau^x tau^z tau^y)(sigma . sigma) with its charged part dressed by the two link raising operators along the path, commutes exactly with every Gauss operator (undressed: norm 0.7), with the matter charge and with the Z2 flux; under complex conjugation in the record basis it flips sign while the bonds and ring are even; the spin-flip time reversal of the ungauged model is broken by the dressing (norm 4.0, undressed 0); at kappa = 0.35 and g = 1/2 the lowest gauge-sector levels are -7.8683 (twice), -6.8860 (twice). No gauged phase, no continuum, no three-dimensional record realization and no physical identification is claimed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/gauging_the_composite_site_charge_with_the_link_field_2026_09_24.py
@@ -33,6 +33,12 @@ law and a covariant ring. This note couples the two.
   commutes with everything, so the model keeps a static Z2 flux sector as the
   undressed Yao–Lee model does. Per Z2 sector the model is a U(1) quantum
   link theory of the charged fermion plus a neutral Majorana flavour.
+- **Chirality survives the gauging.** The odd three-dimer term of open PR
+  9144, dressed along its two-link path, keeps gauge invariance, the charge
+  and the Z2 flux, and is odd under the anti-unitary symmetry of the gauged
+  model, complex conjugation in the record basis. The spin-flip time
+  reversal of the ungauged model is broken by the coupling itself: it flips
+  the charge but not the flux.
 - **The background is the staggered sea.** On a closed lattice the outward
   fluxes sum to zero, so a one-sign charge has no gauge-invariant state; a
   staggered background charge gives a half-filled sector. Here the sector has
@@ -112,6 +118,30 @@ The charged sector is no longer free. ∎
   −7.8175 (twice), −6.8217 (twice). At `g = 1/2` the ground pair lies in
   `W = +1` and the `W = −1` sector starts at −6.8217. ∎
 
+## Theorem 5 — the odd term, dressed, keeps the charge and flips under record conjugation
+
+On the path `v1–v2–v3` (bond types `x` then `y` at the corner `v2`) the odd
+term of open PR 9144, `κ (τ^x_1 τ^z_2 τ^y_3)(σ_1·σ_3)`, hops the fermion from
+`v3` to `v1`; the Gauss law along the path requires the two link fluxes `E_12`
+and `E_23` to rise together, so the dressed term is
+`κ (τ^x_1 τ^z_2 τ^y_3)[σ^z_1 σ^z_3 + 2(σ^+_1 s^+_12 s^+_23 σ^-_3 + h.c.)]`.
+- `[G_v, odd_dressed] = 0` for every vertex; the undressed term has
+  commutator norm 0.7.
+- `[S^z, odd] = 0` and `[W, odd] = 0`: charge and Z2 flux survive.
+- Under complex conjugation `K` in the record basis, which fixes every
+  record and every link value, the odd term flips sign (it carries one
+  `τ^y`) while the dressed bonds and the ring are even. This is the
+  anti-unitary symmetry of the gauged model; the spin-flip time reversal
+  `Y⊗…⊗Y K` of the ungauged Yao–Lee model, used in open PR 9144, is broken
+  by the dressing (`‖Y K H Y − H‖ = 4.0`, 0 for the bare bonds), because it
+  flips the charge `n_v` but not the direction of the flux.
+- At `κ = 0.35`, `g = 1/2`, the lowest gauge-sector levels move to −7.8683
+  (twice) and −6.8860 (twice).
+
+So the chiral, charged structure of open PR 9144 admits a gauge-invariant
+form. Whether it still carries a Chern number on a layer, once the link
+field fluctuates, is not computed here. ∎
+
 ## What this means for the lanes
 
 - **Gauge and matter lanes.** The ladder now has: Z2 gauge field and neutral
@@ -134,8 +164,9 @@ The charged sector is no longer free. ∎
 - The phase of the gauged model, the fate of the neutral flavour, and
   whether the ring clause and the dressed bonds can be generated rather than
   supplied.
-- Chirality with the gauged charge: the odd term of open PR 9144 was not
-  dressed here.
+- Chirality with the gauged charge on a layer: the dressed odd term is
+  gauge invariant (Theorem 5), but its Chern number with a fluctuating link
+  field is not computed.
 
 ## Prior art
 
@@ -146,7 +177,7 @@ prior art, not as premises.
 
 ## Checks
 
-The runner has 4 checks and all pass in about a second.
+The runner has 5 checks and all pass in about a second.
 
 | Check | Result |
 |---|---|
@@ -154,6 +185,7 @@ The runner has 4 checks and all pass in about a second.
 | Gauge invariance | Commutators 0 (dressed, ring), 2.0 (bare); `[S^z, H] = 0`; `‖[S^x, H_dressed]‖ = 1.0`, `[S^x, H_bare] = 0`. |
 | Z2 partner | `[W, H] = [W, ring] = 0`; bond-factor product `= −W`. |
 | Gauge sector | 112 states; `N_f = 2`; leakage 0; levels as above. |
+| Odd term | Commutators 0 (dressed) and 0.7 (bare) with `G_v`; 0 with `S^z`, `W`; odd under `K`, bonds and ring even; spin-flip time reversal broken (4.0); levels −7.8683 (×2), −6.8860 (×2). |
 
 ## Independent check
 
@@ -165,4 +197,4 @@ reviewed this block.
 - It adopts no role pattern, pairing, dressing, background or ring.
 - It treats one plaquette of four composite sites; no phase, continuum or
   three-dimensional record realization is claimed.
-- It does not dress the time-reversal-odd term of open PR 9144.
+- It does not compute the Chern number of the dressed odd term on a layer.

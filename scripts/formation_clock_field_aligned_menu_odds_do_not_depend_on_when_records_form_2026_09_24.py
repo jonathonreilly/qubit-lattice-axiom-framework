@@ -129,7 +129,9 @@ rho_t = Ut @ rho0 @ Ut.conj().T
 r_expm = np.array([np.trace(rho_t @ SIG[a]).real for a in range(3)])
 prec_dev = np.abs(r_expm - rot(hhat, w * 1.37) @ r0).max()
 cons = np.abs(rt @ hhat - r0 @ hhat).max()
-tilt = unit(hhat + 0.9 * perp)                                      # a menu tilted from the field
+# The tilted menu axis is hhat + 0.9 * (a unit vector perpendicular to the covariance-section axis hax), normalised.
+# That vector is not perpendicular to hhat; the check below prints both cosines to hhat.
+tilt = unit(hhat + 0.9 * perp)
 RATES = {
     "constant": lambda r, p: np.ones(len(r)),
     "purity |r|^2": lambda r, p: np.sum(r * r, axis=1),
@@ -180,7 +182,8 @@ check("isolated site: the field menu's recorded odds equal (1 + r.h)/2 for every
       comm < 1e-12 and prec_dev < 1e-9 and cons < 1e-9 and dev_field < 1e-9 and spread_tilt > 0.02
       and clock_time_error < 1e-6 and tau_spread > 0.1,
       f"[H, h.sigma] = {comm:.0e}; precession vs expm {prec_dev:.0e}; r.h conserved to {cons:.0e}; field-menu odds deviate from "
-      f"(1 + r.h)/2 = {born_field:.4f} by at most {dev_field:.0e} over the four clocks; tilted menu: odds "
+      f"(1 + r.h)/2 = {born_field:.4f} by at most {dev_field:.0e} over the four clocks; tilted menu at cosine "
+      f"{tilt @ hhat:.3f} to h (its added component has cosine {perp @ hhat:.3f} to h): odds "
       f"{', '.join(f'{P:.4f}' for P in rows_tilt)} (spread {spread_tilt:.4f}); conditional mean formation times "
       f"{', '.join(f'{t:.3f}' for t in taus)}; largest survival at T = 60 is {max(survs):.0e}")
 

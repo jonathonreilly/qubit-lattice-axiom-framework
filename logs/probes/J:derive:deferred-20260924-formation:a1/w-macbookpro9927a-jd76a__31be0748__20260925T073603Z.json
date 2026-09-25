@@ -22,11 +22,18 @@
  "stdout_tail": "ows: beta L | reported D1 ratio lag25 lag100 | 1/|m|^2 | first-order 1+s2(S*+2-1/2L^2) | 1+2S*s2\n    6  16 | 1.34 1.33 | 1.40 | 1.244 | 1.277\n    6  32 | 1.42 1.42 | 1.53 | 1.274 | 1.338\n   12  16 | 1.14 1.14 | 1.17 | 1.125 | 1.143\n   12  32 | 1.17 1.19 | 1.21 | 1.141 | 1.174\n   24  16 | 1.06 1.06 | 1.08 | 1.064 | 1.072\n   48  16 | 1.02 1.02 | 1.04 | 1.032 | 1.036\nN fresh L=2 beta=40 coef 2.719+-0.049 (first order 2.594, 2S* 1.6875); origin/main copy of note identical: True\nchecks passed 37, failed 0\nSUMMARY: PARTIAL PR8178's nonlinear torus memory separated from the gain-one proxy: exact drift/noise decomposition of the plane average (drift along local fields; direction drift only from |S_x| differences); single-site rate -3b log A(3b)/A(3b) > 1 = 1/|m|^2 for all b; under two stated small-noise premises (A1-A2, open) the first-order law lambda1 tau_L = 1 + s2(S*_L + 2 - 1/(2L^2)), S*_2,3,4 = 27/32, 11/9, 189/128, against 1 + 2 S*_L s2 for 1/|m|^2; seeded Monte Carlo agrees at L=2,3,4,16\nHIT: the historical 1/|m|^2 factor is not the strong-coupling law of the nonlinear sphere law's torus memory: at fixed L the first order is lambda1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/(2L^2)), S*_L = L^-2 sum_{k!=0} 1/(1-u_k), versus 1/|m|^2 = 1 + 2 S*_L sigma^2 (log L coefficients differ by a factor 2; the gap changes sign between L=7 and L=8); seeded Monte Carlo puts the memory rate >= 5 SE above 1/|m|^2 at L=2,3,4 (beta=20) and >= 5 SE below it at L=16; exact at L=1: -3b log A(3b)/A(3b) > 1\n",
  "checked": {
   "by": "w-macbookpro9927a-jd76a",
-  "at_utc": "20260925T073608Z",
+  "at_utc": "20260925T073656Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 31be0748 differs from the current HEAD 261acffa (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "new partial result on PR8178's nonlinear sphere law: exact drift/noise decomposition of the plane average and an exact single-site control; the first-order strong-coupling memory law lambda1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/(2L^2)) holds modulo two stated premises and differs from the historical 1/|m|^2 factor (2 S*_L); seeded Monte Carlo agrees at L = 2, 3, 4, 16; for cross-model referee",
+  "by": "w-macbookpro9927a-jd76a",
+  "at_utc": "20260925T073656Z"
  }
 }

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-25 block 136 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. The runner's index-swap control caught the first draft's coupling to the canonical momentum; the symmetric momentum P^B replaced it. Census 6/6 in family.

@@ -1,0 +1,11 @@
+PR #9097: feat(dynamics-clause): show record fields keep carved Majoranas non-chiral; a gapless start gives a Chern number
+branch claude/dynamics-clause-h21-record-fields-keep-carved-majoranas-sublattice-symmetric-20260924 (base main)
+runners in the PR: 1
+== scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py: rc=1 no PASS/FAIL count line (verdict by exit code)
+HIT: scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py: rc=1, no PASS/FAIL count line (verdict by exit code)
+
+[stderr]
+Traceback (most recent call last):
+  File "/private/var/folders/k9/v0pzrzy17zjg3k5p1lkcgp4r0000gp/T/probe-pr9097-8lu2xybo/scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py", line 56, in <module>
+    from pysat.card import CardEnc, EncType
+ModuleNotFoundError: No module named 'pysat'

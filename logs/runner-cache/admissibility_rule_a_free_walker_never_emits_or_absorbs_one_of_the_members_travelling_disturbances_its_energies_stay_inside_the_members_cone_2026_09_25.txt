@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py
+runner_sha256: ad3b84dff774a1fbd5c161defb54880a30ad7a6bb0ad1d65246dcd5774bac39f
+input_fingerprint_sha256: 3a8486b1db111199bd348bc282b03bad8d4b2cffce9c1c18fec575df0c794277
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.90
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_FREE_WALKER_NEVER_EMITS_OR_ABSORBS_ONE_OF_THE_MEMBERS_TRAVELLING_DISTURBANCES_ITS_ENERGIES_STAY_INSIDE_THE_MEMBERS_CONE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its staggered mass, the member and its kinetic normalization are supplied; the memo does not define a time metric)
+PASS: B1 s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), so |s(k) - s(k - q)| <= |p(q)| with p_j = 2 sin(q_j/2), the member's frequency at alpha = K/4
+PASS: B2 exact rational configurations (angles with rational sines and cosines, 32768 of them in three dimensions): every energy difference |E(k) - E(k - q)| is strictly below |p(q)|
+PASS: B3 equality in |s(k) - s(k - q)| <= |p(q)| needs k_j = q_j/2 (mod pi) wherever q_j != 0, and there s_j(k - q) = -s_j(k); equality in ||s(k)| - |s(k - q)|| <= |s(k) - s(k - q)| needs s(k - q) a nonnegative multiple of s(k); both together force q = 0
+PASS: C1 with the staggered mass the energies are sqrt(mu^2 + |s|^2): (mu^2 + a^2)(mu^2 + b^2) - (mu^2 + ab)^2 = mu^2 (a - b)^2 >= 0, so |sqrt(mu^2 + a^2) - sqrt(mu^2 + b^2)| <= |a - b|; massive walkers stay strictly inside the member's cone too
+PASS: D1 along an axis the walker's energy sin q and the member's frequency 2 sin(q/2) agree at first order and differ at third: sin q - 2 sin(q/2) = -q^3/8 + ..., the walker below
+PASS: E1 control: against the walker's own dispersion the strict inequality fails at k = q = pi/2 in one dimension (difference 1 equals |sin q|), so the member's half-angle frequency is what keeps the walker strictly inside
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the difference identity for one component
+per_site: executed - 32768 exact rational configurations in three dimensions
+per_mode: executed - the equality case and why it forces q = 0; the staggered-mass Lipschitz identity
+per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion
+lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time
+PASS: G1 the five N5 resolution lines are printed
+scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no single walker emits or absorbs one of the member travelling disturbances; the two agree at long wavelength and separate at third order; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

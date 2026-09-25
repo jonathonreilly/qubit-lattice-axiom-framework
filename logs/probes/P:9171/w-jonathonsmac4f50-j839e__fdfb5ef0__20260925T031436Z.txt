@@ -1,0 +1,4 @@
+PR #9171: docs(ring-model): add the 10^3 point of the pure structure factor and the four-size series
+branch claude/ring-model-pure-structure-factor-on-the-ten-cubed-torus-and-the-four-size-series-20260924 (base main)
+runners in the PR: 1
+== scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py: rc=0 PASS=3 FAIL=0

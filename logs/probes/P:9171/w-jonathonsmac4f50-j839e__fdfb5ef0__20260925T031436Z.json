@@ -1,0 +1,36 @@
+{
+ "task": "P:9171",
+ "type": "pr-reexecution",
+ "lane": "ring-model-pure-structure-factor-on-the-",
+ "worker": "w-jonathonsmac4f50-j839e",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9171",
+ "pr": 9171,
+ "branch": "claude/ring-model-pure-structure-factor-on-the-ten-cubed-torus-and-the-four-size-series-20260924",
+ "git_sha": "fdfb5ef0",
+ "started_utc": "20260925T031436Z",
+ "elapsed_s": 546.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9171's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "d6414366d2ffd497ad676fd1aca8d3154da38ac96b2efd460f866aaf8a50d00b",
+ "stdout_tail": "PR #9171: docs(ring-model): add the 10^3 point of the pure structure factor and the four-size series\nbranch claude/ring-model-pure-structure-factor-on-the-ten-cubed-torus-and-the-four-size-series-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_pure_structure_factor_on_the_ten_cubed_torus_and_the_four_size_series_at_the_smallest_momentum_2026_09_24.py: rc=0 PASS=3 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j839e",
+  "at_utc": "20260925T032343Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

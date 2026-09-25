@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_einselection_pointer_frame_unistochastic_criterion_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_color_einselection_pointer_frame_unistochastic_criterion_2026_06_09.py",
+ "seed": 65061,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193741Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "40273e72575c2590eacd2985bc949c437c0bc75ce594180bc080ed0a9f8b5b10",
+ "stdout_tail": "ue fixed pt, oscillation ===\n[PASS] C7 cyclic-permutation T_U is irreducible: unique stationary distribution\n[PASS] C7 periodic: >1 unit-modulus eigenvalue (period 3)\n[PASS] C7 Phi^n oscillates with period 3 (no pointwise relaxation)\n[PASS] C7 Cesaro (period) average IS I3/3\n\n=== C8: Perron-primitive T_U (no zero amplitude in B) -> UNIQUE pointer state I3/3, relaxation ===\n[PASS] C8 Haar U gives strictly positive T_U (Perron-primitive sufficient condition)\n[PASS] C8 Perron-primitive T_U: 1 is the unique unit-modulus eigenvalue\n[PASS] C8 Phi^n(rho) -> I3/3 for every state (depolarization, single frame)\n[PASS] C8 strictly positive T_U has uniform stationary distribution\n\n=== C9: order parameter P = Tr(rho^2)-1/3 contracts in strictly positive witnesses ===\n[PASS] C9 P = ||traceless(rho)||_F^2 (identity), and 0 iff rho=I3/3\n[PASS] C9 P decreases monotonically to 0 in the strictly positive witness\n\n=== C10: GUARD SU(3)-covariance does NOT imply contraction ===\n[PASS] C10 identity channel is SU(3)-covariant\n[PASS] C10 identity channel is inert (no contraction of P)\n[PASS] C10 Phi is frame-fixed (NOT globally SU(3)-covariant): a named-frame admission\n\n=== C11: RELOCATION gate -- single-frame depolarization <=> T_U Perron primitive (open input) ===\n[PASS] C11 only the Perron-primitive (Haar witness) case depolarizes\n[PASS] C11 T_U is invariant under diagonal-phase dressing of U\n[PASS] C11 same T_U => same depolarization verdict (criterion depends on T_U only)\n\nTOTAL: PASS=28 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193741Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

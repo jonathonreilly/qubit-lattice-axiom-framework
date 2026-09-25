@@ -1,0 +1,35 @@
+{
+ "task": "R:DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_2026_04_18",
+ "type": "runner-reexecution",
+ "lane": "DM",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_2026_04_18.py",
+ "seed": 65020,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193700Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7c7c02ae5dfe36d1249c522be0fa3e1b5f28650225b45116cf60aa0bf8727566",
+ "stdout_tail": "IATION IS EXACTLY Re Tr(L_e^{-1} X)\n========================================================================================\n  [PASS] The derivative of the full observable response matches Re Tr(L_e^{-1} X)  (fd=0.93501143, analytic=0.93501144)\n  [PASS] For Hermitian probes the same derivative equals Tr(H_e X)  (err=0.00e+00)\n\n========================================================================================\nPART 4: NINE HERMITIAN PROBES RECONSTRUCT THE DESCENDED H_e EXACTLY\n========================================================================================\n  [PASS] The standard 9-channel Hermitian probe family reconstructs H_e exactly  (err=0.00e+00)\n  [PASS] The reconstructed H_e is Hermitian  (err=0.00e+00)\n\n========================================================================================\nPART 5: AMBIENT COMPLETION UNCERTAINTY DOES NOT CHANGE THE LOCAL DESCENDANT LAW\n========================================================================================\n  [PASS] Different ambient completions with the same L_e give the same first variation on X  (err=1.78e-15)\n  [PASS] Different ambient completions with the same L_e give the same first variation on Y  (err=0.00e+00)\n  [PASS] The two ambient completions are genuinely different matrices  (matrix_diff=8.078)\n\n========================================================================================\nSUMMARY: PASS=17 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193701Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/DM_WILSON_DIRECT_DESCENDANT_LOCAL_SCHUR_SOURCE_FAMILY_THEOREM_2026_04_18.txt against the .txt beside this log"
+  ]
+ }
+}

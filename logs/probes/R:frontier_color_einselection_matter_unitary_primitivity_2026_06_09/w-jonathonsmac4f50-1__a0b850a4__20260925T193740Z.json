@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_einselection_matter_unitary_primitivity_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_color_einselection_matter_unitary_primitivity_2026_06_09.py",
+ "seed": 65060,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193740Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0c8ee5d4918121ef5fcbca68b5a98195668eebe759480377735e75efc98f270a",
+ "stdout_tail": "ict is FRAME-DEPENDENT (S=I in the V-eigenframe) ===\n[PASS] D6 in the V-eigenframe |V_ij|^2 is diagonal (S = I, reducible)\n[PASS] D6 covariant frame-dependence: primitive in computational frame, reducible in V-eigenframe\n\n=== D7: maps onto the block-06 criterion (C5 free / C8 covariant) ===\n[PASS] D7 free reproduces block-06 C5 (every B-diagonal state fixed)\n[PASS] D7 covariant reproduces block-06 C8 (unique pointer state I3/3)\n\n=== D8: CIRCULARITY gate -- in this matter family, primitive S requires a presupposed background connection ===\n[PASS] D8 free hopping (V = I3, NO presupposed connection) does NOT depolarize\n[PASS] D8 covariant hopping (V != I3, a presupposed SU(3) connection) depolarizes\n[PASS] D8 logical: matter-lane depolarization CONSUMES a presupposed background link\n\n=== D9: order parameter P = Tr(rho^2)-1/3 (free preserves / covariant drives to 0) ===\n[PASS] D9 P = ||traceless(rho)||_F^2 identity, 0 iff rho=I3/3\n[PASS] D9 free preserves P > 0 (no depolarization)\n[PASS] D9 covariant drives P monotonically to 0\n\n=== D10: GUARD -- free color-diagonal transport is SU(3)-covariant AND inert ===\n[PASS] D10 free transport is jointly SU(3)-covariant\n[PASS] D10 free induced color unitary is I3 (covariance does NOT imply frame rotation)\n\n=== D11: relocation/decision table (no hat discharged) ===\n[PASS] D11 only the presupposed-connection (covariant) column depolarizes\n[PASS] D11 d=2 sanity: generic 2x2 unitary gives strictly positive (primitive) S\n\nTOTAL: PASS=26 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193741Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

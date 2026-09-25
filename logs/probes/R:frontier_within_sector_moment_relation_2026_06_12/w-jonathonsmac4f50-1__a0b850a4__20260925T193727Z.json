@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_within_sector_moment_relation_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_within_sector_moment_relation_2026_06_12.py",
+ "seed": 65047,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193727Z",
+ "elapsed_s": 2.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d751b1c8516340a6dff90711fc0bb93c4ca0c76550711c6a4c605fb96749781b",
+ "stdout_tail": "ns  (finite=24/24)\n==============================================================================\nY3c verdict: measured delta pattern\n==============================================================================\n[PASS] Y3c the measured pattern: raw |delta| > 0.05 on a MAJORITY of sectors (sizeable raw deviations) while the weighted mean stays below the permutation null at every seed -- no structure resolvable BEYOND relabeling noise at these family sizes (power-limited consistency)  (large=20/24, weighted mean delta=+0.149950, weighted mean |delta|=0.160800)\n==============================================================================\nY3d permutation-control summary\n==============================================================================\nseed 4242: weighted mean |delta|=0.204944, permuted-label null p95=0.296861, relation=record <= null_p95\nseed 99: weighted mean |delta|=0.070610, permuted-label null p95=0.312038, relation=record <= null_p95\nseed 7: weighted mean |delta|=0.206847, permuted-label null p95=0.289439, relation=record <= null_p95\n==============================================================================\nSCOPE\n==============================================================================\nFirst distributional characterization of the within-sector remainder at the L=3 depth-stable most-spread events; k=3 adequate sectors only; Born cap and named instruments inherited; trajectories are realized-state data; audit lane grades statuses.\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_within_sector_moment_relation_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+Weak-field action correction: square-root placement and leading order
+==============================================================================
+[PASS] leading normalized-depth orders distinguish the two square-root placements  --  p[linear]=1.000000000, p[L*sqrt(1-f)]=1.000000000, p[L*(1-sqrt(f))]=0.500000000, stated depth/f=0.500000000
+[PASS] the reviewed probe source evaluates valley_sqrt as L*(1-sqrt(f))  --  source-derived order=0.500000000
+[PASS] L*sqrt(1-f) gives an order-one response on the reviewed fixed family  --  Born=2.504e-15, gravity=+0.000072090, TOWARD=7/7, F~M=0.999998032
+[PASS] the geometric spent-delay depth has leading order one-half  --  order=0.499993360, depth/sqrt(2*epsilon)=0.999977640
+[PASS] exact depth formulas and the f^2/8 coefficient agree independently  --  worst direct mismatch=5.551e-17, second coefficient=0.125015627
+==============================================================================
+5 PASS / 0 FAIL

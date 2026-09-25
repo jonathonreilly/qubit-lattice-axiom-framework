@@ -1,0 +1,36 @@
+{
+ "task": "R:kcpt_l6_ind8_separator_reach_census_surface_comparison_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "kcpt",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/kcpt_l6_ind8_separator_reach_census_surface_comparison_2026_07_25.py",
+ "seed": 64548,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8f9274c6",
+ "started_utc": "20260925T192908Z",
+ "elapsed_s": 121.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=25 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3437fbf3cdb41cf5b41ab2ebaa70016424fcd89a9938d54761dc87b61a8a7408",
+ "stdout_tail": "L=6 (min|omega-1/9| 0.111); L=6 gains 1/4 True, 4/15 True, 1/2 True (not in L=4 set)\n[GATE CHR1] PASS -- Dchi set [-6, 0, 6]; +6 on 2 classes/144 el, -6 on 2 classes/144 el; |Dchi!=0|=4 classes/288 el, each size 72 dim 108\n[GATE CHR2] PASS -- {Dchi!=0} (n=4) is a PROPER subset of {omega=1/3} (n=5); counterexample class size 12 dim 68 has omega=1/3, Dchi=+4.8e-16 (L=4 equality does not survive)\n[GATE UNL1] PASS -- max omega 1.000000000000 on 3 classes sizes [4, 144, 144]; minimal reaching class size 4\n[GATE UNL2] PASS -- g1=diag((-1)^x1).T(1,1,1): in G_amb True, [g1,D2]=0 True, class size 4, dim<A_nat,g1>=68, omega=1.000000000000\n[GATE UNL3] PASS -- dim Z(<A_nat,g1>)=17; sep6 = e_a - e_b (resid 5.7e-15), e_a,e_b central (max comm 3.9e-14), each a single minimal central idempotent of rank 8=8; corner-center counts e_a->1, e_b->1, (e_a+e_b, rank 16)->2 (rejector resolves 2 blocks)\n[GATE DIAL1] PASS -- fixed sign (-1)^x1, linear part I: translation alone sweeps omega [((1, 1, 1), np.float64(1.0)), ((1, 1, 3), np.float64(0.5)), ((1, 1, 5), np.float64(0.333333)), ((3, 3, 3), np.float64(0.25)), ((1, 1, 0), np.float64(0.0))]\n\n[PERT] wrong separator P8a flips: ['S4-blindness (overlap^2 A_nat: sep6 1.2e-32 -> P8a 0.1250)', 'CN[omega=0] identity class (sep6 1.2e-32 -> P8a 0.1250)']\n[GATE PERT1] PASS -- P8a not blind (overlap^2 0.1250); identity class omega: sep6 1.2e-32 vs P8a 0.1250; 2 gates flip -> runner discriminates\n\n[info] wall-clock 121.8s, peak RSS 1.34 GB\nTOTAL: PASS=25 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193110Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=25 FAIL=1' vs cache 'TOTAL: PASS=26 FAIL=0'"
+  ]
+ }
+}

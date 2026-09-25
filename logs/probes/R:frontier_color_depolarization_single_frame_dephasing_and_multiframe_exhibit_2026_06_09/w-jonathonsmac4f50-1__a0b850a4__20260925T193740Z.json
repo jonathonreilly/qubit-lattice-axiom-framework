@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_color_depolarization_single_frame_dephasing_and_multiframe_exhibit_2026_06_09.py",
+ "seed": 65060,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193740Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b4c4c100540688942d5f2f850e36c0b9ab398e329f973d7daab316fb16840eab",
+ "stdout_tail": " (scalar-projector) instrument is inert on rho_color\n[PASS] color-blind scalar-projector Lueders = identity on rho_color  ::  registers no color content; contracts nothing\n\n[D4] multi-frame averaging DOES depolarize (exact sufficiency exhibits)\n[PASS] comp & Fourier frames are mutually unbiased (all overlaps = 1/3)\n[PASS] two MUB frames -> EXACTLY I_3/3 in two steps\n[PASS] order parameter non-increasing along the two-frame cycle, hits 0\n[PASS] Heisenberg-Weyl 9-element twirl -> EXACTLY I_3/3 (finite irreducible)\n[PASS] a NON-uniform finite average does NOT reach I_3/3 (weight is load-bearing)  ::  ||E_skew - I/3|| = 0.188\n\n[D5] guards: covariance does not force contraction; reduced purity not conserved\n[PASS] identity channel is covariant yet inert (covariance != contraction)  ::  SU(3)-covariance alone does not single out I/3 as an attractor\n[PASS] generic global unitary changes reduced color purity (no purity-conservation)  ::  dP = 0.061\n[PASS] single unitary does not single out I_3/3 (no attractor)  ::  ||rho_color' - I/3|| = 0.539\n\n[D6] guard: multi-frame is sufficient, not shown necessary\n[PASS] single fixed frame plus mixing matter unitary can also reach I_3/3  ::  multi-frame averaging is a sufficiency exhibit, not a necessity theorem\n[PASS] dephasing-only insufficiency independent of any second frame  ::  D2/D3 reference only one frame / the inert instrument\n[PASS] color polarization is a genuine content condition (echoes block 04 order param)\n\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

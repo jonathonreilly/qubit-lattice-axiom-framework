@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cluster_decomp_lr_poisson_tail_repair_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cluster_decomp_lr_poisson_tail_repair_2026_06_06.py",
+ "seed": 65060,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193740Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS = 13   FAIL = 0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a05792362cfc1d0e2128eb065927b79fa6cac06bf2461d8c641d206e526ef232",
+ "stdout_tail": "e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=1.43e-03 <= 2.23e-02 <= 1.95e-01 <= 4.29e-01\n  [PASS] x=5.0, R=20: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=5.12e-05 <= 5.82e-03 <= 6.55e-02 <= 2.44e-01\n  [PASS] x=2.0, R=9: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=1.75e-03 <= 1.04e-02 <= 7.91e-02 <= 2.09e-01\n  [PASS] x=1.0, R=8: tail <= e^x x^R/R! <= e^x(ex/R)^R <= e^(1+e)x e^-R  --  tail=2.79e-05 <= 6.74e-05 <= 4.83e-04 <= 1.38e-02\n  [PASS] => exponential light cone exp(-(d - v_LR|t|)/xi) with R=d/R_int (R>ex)\n\n[BLOCK 4] Light-cone behaviour: decays once outside the cone (R > e x)\n  [PASS] tail strictly decreases as R grows past e*x (genuine clustering outside cone)  --  e*x=8.15; tails=['7.6e-02', '1.4e-03', '2.5e-06', '5.2e-13', '4.4e-25']\n  [PASS] TEETH: inside the cone (R < e x) the tail is O(e^x) (no clustering) -- as expected  --  R=8 < e*x=54.4: tail=4.85e+08 (not small)\n\n[BLOCK 5] Scope of the repair\n  [PASS] repairs L1 (Lieb-Robinson commutator bound / Step 3 math)\n  [PASS] does NOT alone promote L2 (spatial clustering): needs a retained mass-gap authority  --  source note's own scope: LR controls commutators, not static correlators\n  [PASS] constants are honest O(1) light-cone constants (v_LR ~ e J_* D_int R_int, xi=R_int)  --  not a tuned fit\n\n================================================================================\nSCORECARD:  PASS = 13   FAIL = 0\n================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

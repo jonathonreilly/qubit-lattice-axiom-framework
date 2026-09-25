@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_wigner_core_coincidence_poincare_generators_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_wigner_core_coincidence_poincare_generators_2026_06_08.py",
+ "seed": 65044,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193724Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "529bb240b5c4e9e1e286af82371a8fe88e08a861a7091bd7f88677094e9c11dd",
+ "stdout_tail": "3739 <= 1/2\n  [PASS] (E3) half-line control (from the parent #3015 repair): same operator on a half-line LEAKS norm at the boundary  --  self-adjointness is a full-line/global-mass-shell fact, discriminating; not an algebraic coincidence\n\n--------------------------------------------------------------------------------------------\nF: Reed-Simon VIII.11 core lemma => common core => Stone gen = differential gen (all ten)\n--------------------------------------------------------------------------------------------\n  [PASS] (F1) C_c^inf(H_m^+;C^2) DENSE in L^2(H_m^+, d^3p/2E; C^2)\n  [PASS] (F2) C_c^inf U(g)-INVARIANT for all g (translations: phase; rotations: preserve support; boosts: D1 + smooth cocycle)\n  [PASS] (F3) C_c^inf subset D(A_Stone) with A_Stone|C_c^inf = A_diff  (B1-B3: strong derivative = differential generator)\n  [PASS] (F4) Reed-Simon Vol I Thm VIII.11: dense + U(t)-invariant + subset D(A) => CORE for the Stone generator A  --  premises F1+F2+F3 => C_c^inf is a common core for all ten generators\n  [PASS] (F5) => Stone generators COINCIDE with differential generators (agree on a core => identical self-adjoint closures): GAP CLOSED  --  H,P real mult; J orbital+spin; K full-line momentum + bounded spin (Kato-Rellich); algebra closes on C_c^inf; Casimir P^2=m^2\n\n============================================================================================\nTOTAL: 21 PASS / 0 FAIL\n============================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193725Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

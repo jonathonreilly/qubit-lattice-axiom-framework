@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_within_sector_ess_adequacy_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_within_sector_ess_adequacy_2026_06_12.py",
+ "seed": 65045,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193725Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1ef19b30349ea5f5a1d0d4435ebb467524c2b75fa4518634233399d9d9b914a1",
+ "stdout_tail": "===================================================================\n  [PASS] seed 4242: adequate-ESS weighted mean |delta| is <= fixed seeded 300-draw permutation-null p95 diagnostic  (adequate 8/8; record 0.204944; null p95 0.299612)\n  [PASS] seed 99: adequate-ESS weighted mean |delta| is <= fixed seeded 300-draw permutation-null p95 diagnostic  (adequate 8/8; record 0.070610; null p95 0.311746)\n  [PASS] seed 7: no adequate-ESS prefix-3 sectors survive, so the moment-relation comparison is untested\n==============================================================================\nEffective-sample-size verdict\n==============================================================================\n  [PASS] ESS verdict: the predecessor's power-limited-consistency conclusion survives the stricter adequacy filter where testable (seed 7 untestable; fixed seeded null computed on the fixed adequate sector IDs)  (4242:adequate=8,record=0.204944,null=0.299612; 99:adequate=8,record=0.070610,null=0.311746; 7:adequate=0,untested)\n==============================================================================\nTOTAL: PASS=15 FAIL=0\n==============================================================================\nSCOPE: ESS refinement of the L=3 within-sector wrapped-Gaussian moment\n  relation delta = |ch2| - |ch1|^4, restricted to prefix-3 record sectors\n  at the pinned predecessor rows 4242@9, 99@7, and 7@4. Finite power only;\n  Born cap inherited; statuses are pipeline-derived and the audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193727Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

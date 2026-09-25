@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_dual_normalized_source_readout_two_factor_bridge_2026_06_21.py",
+ "seed": 65031,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a0b850a4",
+ "started_utc": "20260925T193711Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6a19755d2d88200c0e45c47197b995315fd60a8730ddc748a86fd703abe32903",
+ "stdout_tail": "=5/4, rho_E=3/2, center T/E=-4/3\n       q_E=5/4, rho_E=3/2, center T/E=-4/3\n[PASS] two independent source/readout dual legs give lambda=(w_T1/w_E)^2=9/4\n       lambda_double=9/4\n[PASS] two dual factors conditionally give q_E=15/8, rho_E=21/4, center T/E=-8/9\n       q_E=15/8, rho_E=21/4, center T/E=-8/9\n\n-- Current-surface license checks --\n[PASS] prototype note leaves named inputs, reduced shell amplitude, and primitive bridge open\n[PASS] bilinear note remains class-A definition only and does not derive a physical tensor primitive\n[PASS] constructed support tensor note is bounded, not an exact endpoint coefficient theorem\n[PASS] theta-to-slice note still names the missing readout-map endpoint triple as the uniqueness blocker\n[PASS] quadratic covariance no-go identifies inverse-square projector weighting as the sharp gap\n[PASS] new note marks actual current-surface status as conditional-support and forbids endpoint closure\n[PASS] new note states the exact remaining license target: two independent dual-normalized legs\n\n====================================================================================\nPASS=19 FAIL=0\n\nVERDICT: conditional-support. Finite-frame Riesz dual normalization supplies one reciprocal\nlocal projector-weight factor. Two independent source/readout dual legs would supply the\ndegree-two inverse-square law and hence the Route-2 endpoint algebra exactly. Current Route-2\ntensor/readout notes do not yet license those two independent legs, so rho_E remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T193711Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

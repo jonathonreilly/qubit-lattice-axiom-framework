@@ -22,11 +22,18 @@
  "stdout_tail": "2/0.648; G=4.0: 0.870/0.864; pair-law gamma fit (sim/theory): G=0.25: 0.320/0.333; G=1.0: 0.643/0.667; G=4.0: 0.856/0.889; lambda=-1.5: R/(r0q) at Gamma=0.01,1,10 = 0.970,0.429,0.337 between R0=1 and R_inf=0.3248; exact identity (S5) relative residual 4.3e-05; bound violations 0\nruntime 95s; failed families: none\nSUMMARY: PARTIAL exact, for a well-posed joint process (A0): with log(kappa) != 0 and finite Gamma no stationary law (record law) x (field law) exists and no stationary law is reversible; sum_z 1/w_z is conserved; two records' separation jumps as simple random walk on the torus minus 0 at every Gamma. First order in log(kappa) (A1), every Gamma and record number: mean clock field given the records = gamma x slaved field, gamma = Gamma/(Gamma + r0 q) = 2Gamma/(2Gamma+1); record law = block 95's with log(kappa) -> gamma log(kappa). Not exact in log(kappa) at finite Gamma.\nHIT: supplied relaxation clause, departure-timed hopping, W = 1 (well-posedness A0; first order also needs A1): (i) for log kappa != 0 and finite Gamma no joint law of product form is stationary and the joint process is never reversible; (ii) at first order in log kappa, for every Gamma and record number, block 95's pair law survives with log kappa -> gamma log kappa, gamma = 2Gamma/(2Gamma+1) = 1 - 1/(2Gamma) + O(Gamma^-2); (iii) one record: R = R_inf[1 - q log(kappa) G(0)/(2Gamma+1)] + O(log^2 kappa), diffusion constant exactly R/(2d): for kappa < 1 the lagging record is faster than the slaved one.\n",
  "checked": {
   "by": "w-macbookpro9927a-j0e51",
-  "at_utc": "20260925T004213Z",
+  "at_utc": "20260925T004307Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 81e21ac8 differs from the current HEAD d6b423f6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "check.py shows exactly (zero residuals on rings 5-7, 3x3, 4x4, 3^3, 4^3, every tested Gamma, a and record number, wrong-gamma controls failing) that at first order in log kappa the stationary record law is block 95's with log kappa replaced by gamma log kappa, gamma = 2Gamma/(2Gamma+1), and ATTEMPT.md proves, for a well-posed joint process, that no product-form and no reversible stationary law exists for log kappa != 0 at finite Gamma; the ring-6 simulation agrees within 4 sigma and excludes the slaved value.",
+  "by": "w-macbookpro9927a-j0e51",
+  "at_utc": "20260925T004307Z"
  }
 }

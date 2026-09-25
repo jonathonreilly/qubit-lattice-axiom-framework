@@ -1,0 +1,11 @@
+{
+  "status": "POST sealed; all 20 POST and all 25 preserved PRE members verified",
+  "POST_sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20",
+  "POST_SEAL_sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+  "POST_SOURCE_PINS_sha256": "c2ea89a3449b8fadeb9d6429e6ba9eb20cce3ecea82d29b4a65b822924ae8d03",
+  "own_binding_code_sha256": "53c7cb68654f3651e62ab7b7a61f0e6071e61d87cc716bf525ce2da2809e4917",
+  "own_binding_output_sha256": "2f63e402e86e4e686cf587aa4aa9e2563ce2b0266a529bfa11eaa860217dd3a3",
+  "member_count": 20,
+  "released_source_origin_count": 10,
+  "author_programs_executed": []
+}

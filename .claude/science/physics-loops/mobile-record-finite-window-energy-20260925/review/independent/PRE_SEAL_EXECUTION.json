@@ -1,0 +1,10 @@
+{
+  "status": "sealed and all 25 members verified",
+  "PRE_sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743",
+  "PRE_SEAL_sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+  "SOURCE_PINS_sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43",
+  "control_source_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+  "control_result_sha256": "eb4cce1e093c254a3c7a885dcd6733ea319b96979e3d6fbb7eaa18546c4c3192",
+  "member_count": 25,
+  "source_origin_count": 13
+}

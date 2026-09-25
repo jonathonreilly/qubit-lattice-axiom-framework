@@ -1,0 +1,44 @@
+{
+  "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "branch": "codex/mobile-record-finite-window-energy-laws-20260925",
+  "note": "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+  "packet": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925",
+  "result": "outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py"
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/finite_window_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "adaptation": "None; exact sealed scientific source."
+    }
+  ],
+  "parent_paths": [
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "files_sha256": {
+    "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+    "scripts/finite_window_microscopic_energy_laws_2026_09_25.py": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+    "outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json": "6a39a535a52df7e80a2a660c6aa5a6ed2ab5ee04becd1d85870eda739cf3d319",
+    "logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt": "856a1dea5097fceb4798a7a1c3a1dc45e12007c4ba6e31837f086b40aeb7e069"
+  },
+  "cache": "logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt",
+  "frozen_utc": "2026-09-25T03:42:54.393894+00:00"
+}

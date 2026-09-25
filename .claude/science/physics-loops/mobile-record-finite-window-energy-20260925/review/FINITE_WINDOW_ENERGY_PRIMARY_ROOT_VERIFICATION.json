@@ -1,0 +1,35 @@
+{
+  "at": "2026-09-25T03:42:54.393025+00:00",
+  "source_identity": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/finite_window_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "adaptation": "None; exact sealed scientific source."
+    }
+  ],
+  "all_payload_leaf_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "ignored_fields": [
+    "elapsed_seconds"
+  ],
+  "scientific_differences": [],
+  "note_adaptations": [
+    "overlapping-star magnetic sum restored",
+    "fixed bounded continuous responses explicit",
+    "candidate status replaced with scoped PRE/POST status",
+    "PRE native counterexample copied with parent labels expanded and provenance explicit"
+  ],
+  "limits": "Fresh exact-source execution plus complete payload correspondence, not another independent reconstruction.",
+  "failed_path_lookup_preserved": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json"
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-25T03:05:06.173131+00:00",
+  "source_sha256": "53c7cb68654f3651e62ab7b7a61f0e6071e61d87cc716bf525ce2da2809e4917",
+  "elapsed_seconds": 0.11971887503750622,
+  "exit_code": 0,
+  "stdout_sha256": "2f63e402e86e4e686cf587aa4aa9e2563ce2b0266a529bfa11eaa860217dd3a3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Own metadata and stored decimal-table comparison; no author run/import or matrix eigensystem/exponential replication."
+}

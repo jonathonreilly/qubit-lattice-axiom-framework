@@ -1,0 +1,207 @@
+{
+  "checked_utc": "2026-09-25T03:49:46.026163+00:00",
+  "scope": "Read-only final-source and complete stored-payload correspondence.\n\nNo scientific runner, cache helper, matrix exponential, or eigensystem is\nimported or executed. This program writes only its JSON report to stdout.\nThe cache fingerprint serialization is independently transcribed from the\nseparately released and pinned runner_cache.py tooling.\n",
+  "checker_sha256": "c8f0579ef259bc0df33cfad78e2978a60bbc55199b64a35ca8ad0c0b5f1ea1fd",
+  "source_pins_sha256": "3dcbc643760944756f471369eea54dc37187b2703b0aa384157e1626749dfe19",
+  "preserved_seals": {
+    "PRE_SEAL.json": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+    "POST_SEAL.json": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0"
+  },
+  "preserved_member_counts": {
+    "PRE_SEAL.json": 25,
+    "POST_SEAL.json": 20
+  },
+  "nine_publication_bindings_verified": 9,
+  "external_metadata_bindings_verified": 4,
+  "separate_tooling_bindings_verified": 1,
+  "total_current_origins_verified": 14,
+  "parent_git_bindings": [
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    }
+  ],
+  "runtime_exact_byte_correspondence": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/finite_window_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "adaptation": "None; exact sealed scientific source.",
+      "sealed_baseline": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/post_frozen_author/finite_window_energy_controls.py",
+      "byte_identical": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "adaptation": "None; exact sealed scientific source.",
+      "sealed_baseline": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py",
+      "byte_identical": true
+    }
+  ],
+  "tooling_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+  "tool_functions_read_not_called": [
+    "declared_input_paths",
+    "declared_input_fingerprint",
+    "_lexical_path_stat_tokens",
+    "runner_sha256",
+    "parse_cache_header",
+    "write_cache"
+  ],
+  "declared_inputs_in_order": [
+    {
+      "path": "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+      "bytes": 23183
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "bytes": 6301
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "bytes": 12127
+    }
+  ],
+  "input_fingerprint_sha256": "f82ab9b31c1b7e8dc17b5009f3d58f50bb4c01d4266a4643a208a89a52b51f35",
+  "fingerprint_recomputed_without_import": true,
+  "full_payload_leaf_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "per_program_leaf_counts": {
+    "root_generic": {
+      "str": 453,
+      "int": 11,
+      "bool": 2
+    },
+    "independent_native": {
+      "str": 11,
+      "float": 410,
+      "int": 221,
+      "bool": 6
+    }
+  },
+  "excluded_elapsed_fields_only": [
+    {
+      "path": "root_generic/elapsed_seconds",
+      "historical": 0.10359320905990899,
+      "fresh": 0.08806937490589917
+    },
+    {
+      "path": "independent_native/elapsed_seconds",
+      "historical": 0.0126952501013875,
+      "fresh": 0.010761958081275225
+    }
+  ],
+  "scientific_differences": [],
+  "stage_stdout_exactly_reconstructed": [
+    {
+      "program": "finite_window_energy_controls.py",
+      "sha256": "78ee0871266e4279b8ee86b1b2e61a4648f0b1332956c96af8c257e513734d76",
+      "bytes": 33975,
+      "historical_result_sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2"
+    },
+    {
+      "program": "primitive_energy_control.py",
+      "sha256": "f6482a8371170ae8b1576ecc8b6e1610896f2fdb2f9814484cb4ace0d0c0987f",
+      "bytes": 23511,
+      "historical_result_sha256": "eb4cce1e093c254a3c7a885dcd6733ea319b96979e3d6fbb7eaa18546c4c3192"
+    }
+  ],
+  "result_sha256": "6a39a535a52df7e80a2a660c6aa5a6ed2ab5ee04becd1d85870eda739cf3d319",
+  "result_bytes": 65487,
+  "cache_sha256": "856a1dea5097fceb4798a7a1c3a1dc45e12007c4ba6e31837f086b40aeb7e069",
+  "cache_bytes": 65867,
+  "full_cache_equals_reconstructed_header_stdout_stderr": true,
+  "execution_embedded_stdout_equals_result_plus_pass_marker": true,
+  "cache_header": "===== runner cache v1 =====\nrunner: scripts/finite_window_microscopic_energy_laws_2026_09_25.py\nrunner_sha256: 566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084\ninput_fingerprint_sha256: f82ab9b31c1b7e8dc17b5009f3d58f50bb4c01d4266a4643a208a89a52b51f35\ntimeout_sec: 120\nexit_code: 0\nelapsed_sec: 0.68\nstatus: ok\n----- stdout -----\n",
+  "execution_seconds": 0.6842081546783447,
+  "wrapper_seconds": 0.5669277089182287,
+  "stage_records": [
+    {
+      "program": "finite_window_energy_controls.py",
+      "code_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "stdout_sha256": "78ee0871266e4279b8ee86b1b2e61a4648f0b1332956c96af8c257e513734d76",
+      "stdout_bytes": 33975,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.1626005000434816
+    },
+    {
+      "program": "primitive_energy_control.py",
+      "code_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "stdout_sha256": "f6482a8371170ae8b1576ecc8b6e1610896f2fdb2f9814484cb4ace0d0c0987f",
+      "stdout_bytes": 23511,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.4020937921013683
+    }
+  ],
+  "root_receipt_agrees_with_own_complete_comparison": true,
+  "historical_root_path_lookup_failure": {
+    "at": "2026-09-25T03:42:54.390083+00:00",
+    "failure": "Read-only verifier looked for CONTROL_ATTEMPT01_STDOUT.json; actual immutable file is CONTROL_ATTEMPT_01_STDOUT.json. Assertion on path inventory failed before native comparison or output/seal creation. No scientific control failed or was rerun.",
+    "repair": "Use exact returned filename, with unchanged source/output bytes."
+  },
+  "public_text_exact_scoped_transformations_verified": true,
+  "complete_text_deltas": {
+    "root_core": "--- sealed_root_sections1to6\n+++ public_sections1to6\n@@ -14,7 +14,7 @@\n     delta/[epsilon^2 S(S+1)]=K.\n \n The target on the full rotor P space is h=K D+delta H4, with the actual\n-vacancy-gated D and H4=-2 sum_(a<c) (F_c F_a P)*(F_c F_a P).\n+vacancy-gated D and H4=-2 sum_(a<c, distance(a,c)=2) (F_c F_a P)*(F_c F_a P).\n H4 is bounded at fixed graph and D is nonnegative self-adjoint multiplication.\n No reduction of D to an empty-matter sum of squares is made after formation.\n The weak-field substitution K=g^2/(2 tau), delta=1/(4 tau g^2) is optional\n@@ -186,7 +186,7 @@\n     mean=a^2 epsilon^-2,  variance=a^2 epsilon^-6.          (11)\n \n These follow directly from the p2 diagonal and off-diagonal entry in (9).\n-They diverge. A finite continuous energy-response function sees the common\n+They diverge. A fixed bounded continuous energy-response function sees the common\n limit, while the ordinary energy budget is dominated by a vanishing high tail.\n For a fixed energy interval containing ca^2 in its interior the probability\n tends to one; a projector with an endpoint at that limiting atom need not\n@@ -213,5 +213,6 @@\n is erased, and no count, density or weak-measure result is promoted to energy\n conservation, absorbed photon energy, native vacuum selection or TOE closure.\n \n-This is a proposed conditional theorem and exact illustrative counterexample.\n-It must undergo selective independent reconstruction before publication.+The conditional theorem and illustrative counterexample have a sealed independent\n+PRE and released-source POST within the scope recorded above. No retained audit\n+status or physical energy identification is inferred.",
+    "native": "--- sealed_PRE_Section5\n+++ public_Section7\n@@ -1,6 +1,9 @@\n-## 5. Exact physical counterexample: vanishing spectral mass, divergent energy\n+## 7. Independent native counterexample\n \n-Take the disjoint union of an A-centred two-leaf star and a single A--B edge. This is an admissible fixed finite simple bipartite graph of P2--P3. It is not a cube or a connected-volume construction, and no conclusion about a separate cube moment asymptotic is inferred from it. Every field is fixed by Gauss law on these trees: for an A-to-B edge, E_b=-q_b and the charge sum in each connected component is one.\n+This section is adapted from the sealed independent PRE, with its provenance retained.\n+\n+\n+Take the disjoint union of an A-centred two-leaf star and a single A--B edge. This is an admissible fixed finite simple bipartite graph of the common-law and local-pair parents. It is not a cube or a connected-volume construction, and no conclusion about a separate cube moment asymptotic is inferred from it. Every field is fixed by Gauss law on these trees: for an A-to-B edge, E_b=-q_b and the charge sum in each connected component is one.\n \n The two-leaf component has exactly six full physical charge words:\n \n@@ -8,7 +11,7 @@\n \n The single-edge component has exactly two, (0,+) and (+,0). Thus the full physical Hilbert space has dimension twelve for every S>=1; all legal matter and electric words are retained. Every permitted hop or birth shifts a zero link to +/-1 with normalized spin weight one. These matrices are therefore exactly independent of S. No field box truncation of a larger physical tree space is used.\n \n-There is only one A site per component, so all compensation gates equal one, D_(a,S)=D_(a,infinity) on these words, and C_a=F_a*F_a. On the full P space the gated D vanishes. Distinct A stars are disconnected, hence P3 gives H4=0; direct computation of all terms in P1's coefficient agrees. The common target Hamiltonian is exactly h=0.\n+There is only one A site per component, so all compensation gates equal one, D_(a,S)=D_(a,infinity) on these words, and C_a=F_a*F_a. On the full P space the gated D vanishes. Distinct A stars are disconnected, hence the local-pair identity gives H4=0; direct computation of all terms in the bounded-compensation parent's coefficient agrees. The common target Hamiltonian is exactly h=0.\n \n In the single-edge spectator, let u=(+,0) and v=(0,+). Both original signed creation operators vanish identically on its complete physical space: there is no legal word with both endpoints empty. The absence of its births is therefore a property of the original instrument, not a deleted channel. In basis (u,v),\n \n@@ -48,4 +51,4 @@\n \n The independent primitive_energy_control.py builds every word, hop, compensation and original jump directly. It retains all six resolved channels and all three coherent channels, including the identically zero spectator channels. Structural identities are checked for both instruments. The event/energy example and time-density table use the stated resolved mark; no separate coherent numerical event simulation is claimed. Six spins S=1,2,4,8,16,32 are checked. The complete results include six structural rows, six energy/event rows with three bounded energy tests each, and 24 initial-layer rows. The bounded test values evaluate the analytically specified two-atom law; the separate matrix checks concern its high-energy spectral weight and direct moments. Those formula evaluations are illustrative, not additional independent verification of the law.\n \n-All structural residuals are exactly zero in the stored arithmetic. At S=32, the actual event probability is 0.0920628360861927 versus limit 0.0922814585308593; the exact high-energy probability is 1/1057, its energy is 1116192, its mean is 1056, and its variance is 1177583616. The largest relative moment diagnostic residual is 9.74222991840868e-11, including the full fast unitary's floating error. These floating computations are not interval enclosures; the displayed exact matrix/eigenvector calculation supplies the all-S counterexample. The run completed in 0.44775387505069375 external seconds, exit 0, empty stderr; its internal scientific time is separately recorded as 0.0126952501013875 seconds.+All structural residuals are exactly zero in the stored arithmetic. At S=32, the actual event probability is 0.0920628360861927 versus limit 0.0922814585308593; the exact high-energy probability is 1/1057, its energy is 1116192, its mean is 1056, and its variance is 1177583616. The largest relative moment diagnostic residual is 9.74222991840868e-11, including the full fast unitary's floating error. These floating computations are not interval enclosures; the displayed exact matrix/eigenvector calculation supplies the all-S counterexample. The sealed independent PRE run completed in 0.44775387505069375 external seconds, exit 0, empty stderr; its internal scientific time is separately recorded as 0.0126952501013875 seconds."
+  },
+  "row_coverage": {
+    "root_spectrum": 10,
+    "root_first_event": 15,
+    "root_characteristic": 20,
+    "root_soft_and_interval": 5,
+    "native_structure": 6,
+    "native_energy_event": 6,
+    "native_bounded_formula_tests": 18,
+    "native_initial_layer": 24,
+    "native_separate_abstract_examples": 2,
+    "all_primitive_words_and_matrices_compared": true
+  },
+  "author_and_primary_programs_imported_or_executed": [],
+  "cache_helper_imported_or_called": false,
+  "new_independent_scientific_reconstruction": false,
+  "other_active_science_opened": [],
+  "limitations": [
+    "Source/output correspondence does not independently rerun the scientific calculation.",
+    "Fresh execution uses the exact earlier root and independent programs; independence belongs to the sealed PRE history.",
+    "A first combined metadata display was truncated; all payload and metadata were subsequently read in complete bounded batches."
+  ],
+  "binding_failures": []
+}

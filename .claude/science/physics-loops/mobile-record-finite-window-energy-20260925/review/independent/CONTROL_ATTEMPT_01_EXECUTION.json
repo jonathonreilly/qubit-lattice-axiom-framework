@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-25T02:34:37.942254+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py"
+  ],
+  "source_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+  "elapsed_seconds": 0.44775387505069375,
+  "exit_code": 0,
+  "stdout_sha256": "eb4cce1e093c254a3c7a885dcd6733ea319b96979e3d6fbb7eaa18546c4c3192",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Own primitive finite physical graph control only."
+}

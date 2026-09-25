@@ -1,0 +1,5 @@
+{
+  "at": "2026-09-25T03:42:54.390083+00:00",
+  "failure": "Read-only verifier looked for CONTROL_ATTEMPT01_STDOUT.json; actual immutable file is CONTROL_ATTEMPT_01_STDOUT.json. Assertion on path inventory failed before native comparison or output/seal creation. No scientific control failed or was rerun.",
+  "repair": "Use exact returned filename, with unchanged source/output bytes."
+}

@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-25T04:02:49.529461+00:00",
+  "current_checkpoint_sha256": "eb8816df0682199a40c0b15c8864c52529f005c6271e3b8900e65ad724f09b7b",
+  "active_sources_verified": 351,
+  "publication_seal_sha256": "dbe7b8e5f0ba94c1aea2dad3ebfccb77e77d30fbd65213e1609b91eac761cdf0",
+  "member_counts": {
+    "PRE_SEAL.json": 25,
+    "POST_SEAL.json": 20,
+    "PUBLICATION_COMPARISON_SEAL.json": 27
+  },
+  "fresh_read_only_check_exit_code": 0,
+  "fresh_read_only_stderr_bytes": 0,
+  "complete_comparison_matches_sealed_output_except_timestamp": true,
+  "root_coverage": "Complete final publication report, both new checker scripts and complete 16311-byte binding stdout read. Prior full root PRE/POST and primary verification retained unchanged. Exact full payload/cache/text correspondence rerun without executing scientific controls.",
+  "verified_current_origins": 14,
+  "verified_publication_bindings": 9,
+  "scientific_payload_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "new_scientific_rerun": false,
+  "retained_audit_verdict": false,
+  "publication_copy_inventory": "Pending exact package/allowlist verification; checker did not inventory additional copied evidence."
+}

@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py
+runner_sha256: c2f67b056d997eb42c1b1da523972b9694acf8bd968e46694bc77c9c59a4bad1
+input_fingerprint_sha256: 9d7a14a76587b35f363cb20a739be6a48d62a8a20a5036ac4aa5b6b013066121
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 106.44
+status: ok
+----- stdout -----
+[PASS] finite diagnostic: identities on uniform and guided ice samples of 4^3 and 6^3: zone average of the weight map is 3 (Parseval) and the longitudinal combination sum_a (1 - e^{-ik_a}) O_a(k) vanishes (Gauss law) :: max |mean_k T - 3| 4.4e-16; max longitudinal amplitude 3.2e-15; 0 s
+[PASS] finite diagnostic: uniform-ice star map on 4^3 and 6^3: the axis star (1,0,0) carries 3/2 per polarisation within 0.12; the map by star (T summed over the two transverse polarisations; 3 is the zone average) :: 4^3: (2,2,2):2.82 (2,2,1):2.95 (2,2,0):2.98 (2,1,1):3.01 (2,1,0):3.00 (2,0,0):3.04 (1,1,1):2.88 (1,1,0):2.99 (1,0,0):2.98 (0,0,0):4.51; 6^3: (3,3,3):2.98 (3,3,2):3.02 (3,3,1):3.07 (3,3,0):2.97 (3,2,2):3.03 (3,2,1):2.99 (3,2,0):2.99 (3,1,1):3.01 (3,1,0):2.90 (3,0,0):2.82 (2,2,2):2.95 (2,2,1):2.98 (2,2,0):3.00 (2,1,1):2.96 (2,1,0):3.08 (2,0,0):3.04 (1,1,1):2.90 (1,1,0):3.04 (1,0,0):2.94 (0,0,0):4.41; 3 s
+[PASS] finite diagnostic: pure-ring point on 4^3: sum rule exact per block, nominal comparison to stored PR 9161 values, and the star that receives the weight :: e0 -0.29276+-0.00035; mean_k T = 3 to 9e-16; axis star T/2 = 0.711+-0.014 (open PR 9161 0.692+-0.013, +1.0 sigma); variational axis T/2 1.075; ratio pure/uniform by star: (2,2,2):2.18 (2,2,1):1.64 (2,2,0):1.41 (2,1,1):1.21 (2,1,0):0.99 (2,0,0):0.77 (1,1,1):1.02 (1,1,0):0.72 (1,0,0):0.48; lowest (1,0,0) 0.48, highest (2,2,2) 2.18 (pure 6.13+-0.36 vs uniform 2.82); stars above uniform at 2 sigma: (2,2,2) (2,2,1) (2,2,0) (2,1,1); 268949 hops, 20 s
+[PASS] finite diagnostic: pure-ring point on 6^3: sum rule exact per block, nominal comparison to stored PR 9161 values, and the star that receives the weight :: e0 -0.28914+-0.00016; mean_k T = 3 to 9e-16; axis star T/2 = 0.530+-0.022 (open PR 9161 0.557+-0.022, -0.9 sigma); variational axis T/2 1.030; ratio pure/uniform by star: (3,3,3):2.06 (3,3,2):1.63 (3,3,1):1.33 (3,3,0):1.28 (3,2,2):1.51 (3,2,1):1.22 (3,2,0):1.20 (3,1,1):1.01 (3,1,0):0.94 (3,0,0):0.90 (2,2,2):1.33 (2,2,1):1.10 (2,2,0):0.99 (2,1,1):0.85 (2,1,0):0.74 (2,0,0):0.65 (1,1,1):0.70 (1,1,0):0.51 (1,0,0):0.36; lowest (1,0,0) 0.36, highest (3,3,3) 2.06 (pure 6.12+-0.53 vs uniform 2.98); stars above uniform at 2 sigma: (3,3,3) (3,3,2) (3,3,1) (3,3,0) (3,2,2) (3,2,1) (3,2,0) (2,2,2) (2,2,1); 897880 hops, 83 s
+TOTAL: PASS=4 FAIL=0 (106 s)
+
+----- stderr -----
+

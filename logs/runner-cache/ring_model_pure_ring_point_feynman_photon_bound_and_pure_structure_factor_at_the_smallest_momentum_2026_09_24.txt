@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_pure_ring_point_feynman_photon_bound_and_pure_structure_factor_at_the_smallest_momentum_2026_09_24.py
+runner_sha256: f88b8dbeb74353d25c24e96ede5c242e746593322c24621b60a34c05e7941ff5
+input_fingerprint_sha256: bea0be1f7d3d264ab61fde8cdfb64379e2f46299ff59be4c5646f7ff482d4ffb
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 515.31
+status: ok
+----- stdout -----
+[PASS] finite diagnostic: exact 2^3 torus: flip component of the canonical zero-winding state, the sum rule f = 2 u0 s^2, the quotient against the lowest coupled level, and the exact log-convex correlation function :: 9600 ice states, component 864 states / 6912 flips, E0 -9.026721; f 3.008907 vs 2 u0 s^2 3.008907; <O> 2e-15; S 1.012148; omega_SMA 2.9728 vs lowest coupled level 2.5173 (ratio 1.181; uncoupled levels below it: 7); exact rates 2.929 on [0,0.1] -> 2.529 on [1.5,2]; 3 s
+[PASS] finite diagnostic: projector estimators against the exact 2^3 numbers: mixed energy, forward-walking S at lags 1 and 2, C(tau <= 1) at forward lag 2 :: E mixed -9.0163+-0.0133 (exact -9.0267); S mixed 0.9837+-0.0051 (-5.6 sigma), forward lags 1/2/4: 1.0129+-0.0058 (+0.1), 1.0041+-0.0096 (-0.8), 1.0078+-0.0099 (-0.4) vs exact 1.0121; C(tau<=1): max |dev| 1.4, mean 1.1 sigma; 71562 hops; 10 s
+[PASS] finite diagnostic: uniform-ice reference: sampled S_T(k_min) and quotient on the stated sizes, reproducing the landed uniform-ice runner on 8^3 :: 4^3: n_f 0.2559, S_T(k_min) 1.510+-0.019, omega_RK 0.6780, omega_RK L 2.71; 6^3: n_f 0.2588, S_T(k_min) 1.531+-0.025, omega_RK 0.3381, omega_RK L 2.03; 8^3: n_f 0.2598, S_T(k_min) 1.496+-0.054, omega_RK 0.2034, omega_RK L 1.63 (landed 8^3: n_f 0.25934, omega 0.2027); 17 s
+[PASS] finite diagnostic: pure-ring point: energies reproduce open PR 9148; the pure S_T(k_min) is resolved on 4^3, 6^3, 8^3 with a forward-walking plateau and falls between 4^3 and 8^3 (threshold 2.5 standard errors); three-point and pairwise exponents S ~ L^-nu :: 4^3: e0 -0.29263+-0.00031 (ref -0.2926), S_T(k_min) mixed 0.862, forward lags 1/2/4 0.727/0.692+-0.013/0.688+-0.019, 269271 hops, 17 s; 6^3: e0 -0.28885+-0.00014 (ref -0.2883), S_T(k_min) mixed 0.702, forward lags 1/2/4 0.574/0.557+-0.022/0.567+-0.025, 897170 hops, 83 s; 8^3: e0 -0.28800+-0.00011 (ref -0.2871), S_T(k_min) mixed 0.636, forward lags 1/2/4 0.572/0.575+-0.028/0.564+-0.034, 2119392 hops, 397 s; uniform-ice S_T(k_min) 1.51/1.53/1.50; fall S(4)/S(8) - 1 = 0.20 at 3.2 sigma; three-point nu = 0.35+-0.07, pairwise 4-6 0.54+-0.11, 6-8 -0.11+-0.22 (1 for a linear photon, 0 for the uniform-ice constant)
+[PASS] finite diagnostic: finite estimate of the conditional Feynman quotient: estimated omega_SMA L by size next to the uniform-ice value (reported, not asserted), the dispersion of the bound on 8^3, and the correlation-rate chain (early rate <= bound, late rate <= early rate, within errors) :: 4^3 (k 1.571): omega_SMA 1.690+-0.032, omega L 6.76+-0.13, omega/k 1.076 (uniform ice 0.432); rates on [0,0.3] 1.59+-0.12, on [0.5,1] 1.40+-0.15, late x L 5.6; 6^3 (k 1.047): omega_SMA 1.037+-0.041, omega L 6.22+-0.25, omega/k 0.990 (uniform ice 0.323); rates on [0,0.3] 0.96+-0.23, on [0.5,1] 0.77+-0.21, late x L 4.6; 8^3 (k 0.785): omega_SMA 0.587+-0.029, omega L 4.69+-0.23, omega/k 0.747 (uniform ice 0.259); rates on [0,0.3] 0.54+-0.24, on [0.5,1] 0.47+-0.18, late x L 3.8; omega L on 8^3 differs from 4^3 by 7.9 sigma; 8^3 bound at k = pi/4, pi/2, 3pi/4: 0.587, 1.382, 1.775; ratios 2.36, 3.03 (linear 2, 3; lattice 2 sin(k/2): 1.85, 2.41; quadratic 4, 9); 8^3 S_T at pi/2 0.833+-0.040 vs 4^3 0.692+-0.013
+TOTAL: PASS=5 FAIL=0 (515 s)
+
+----- stderr -----
+

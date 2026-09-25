@@ -1,6 +1,6 @@
 {
- "edge_count": 14689,
- "node_count": 6672,
+ "edge_count": 14715,
+ "node_count": 6681,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -7241,6 +7241,10 @@
   "gauged_log_transfer_quasilocality_combes_thomas_narrow_theorem_note_2026-06-13": {
    "deps_hash": "b48fd9e48b4d",
    "out_degree": 6
+  },
+  "gaussian_lattice_maxwell_comparator_gives_a_linear_size_independent_transverse_structure_factor_and_misses_the_pure_ring_level_step_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "224053b8559b",
+   "out_degree": 3
   },
   "gbare_root_su2_scale_transport_bridge_narrow_theorem_note_2026-06-17": {
    "deps_hash": "84f25e085f27",
@@ -17381,6 +17385,38 @@
   "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": {
    "deps_hash": "f38aec7a66e3",
    "out_degree": 7
+  },
+  "ring_model_between_the_rokhsar_kivelson_and_pure_ring_points_small_torus_and_variational_diagnostics_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "dd5d9f9e9fba",
+   "out_degree": 2
+  },
+  "ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_continuously_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "18af15845786",
+   "out_degree": 4
+  },
+  "ring_model_ice_transverse_weight_sum_rule_the_ring_term_moves_the_weight_from_the_smallest_momenta_to_the_zone_corner_without_a_growing_peak_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "45e18dcda2ca",
+   "out_degree": 2
+  },
+  "ring_model_projector_monte_carlo_at_the_pure_ring_point_energies_below_variational_and_no_growth_of_plaquette_order_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "8e8d709ba697",
+   "out_degree": 2
+  },
+  "ring_model_pure_ring_point_transverse_fluctuations_at_the_smallest_momentum_are_a_third_of_the_uniform_ice_constant_and_the_feynman_photon_bound_shows_no_resolved_power_on_small_tori_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "6675d0634619",
+   "out_degree": 4
+  },
+  "ring_model_the_ten_cubed_point_lies_between_the_linear_and_level_readings_and_a_constant_plus_a_linear_term_fits_the_four_sizes_mildly_better_than_a_power_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "f5bb5f169ef1",
+   "out_degree": 3
+  },
+  "ring_model_two_regulators_a_region_bounded_by_records_matches_the_torus_at_size_eight_and_the_walker_population_is_the_larger_regulator_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "d8fc4d319bbf",
+   "out_degree": 4
+  },
+  "ring_model_winding_sector_splittings_resolved_on_the_small_tori_and_a_multi_exponential_relaxation_at_the_pure_ring_point_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e95ea6bd1a35",
+   "out_degree": 2
   },
   "ring_monodromy_does_not_force_car_note_2026-06-04": {
    "deps_hash": "249b8e8adb93",

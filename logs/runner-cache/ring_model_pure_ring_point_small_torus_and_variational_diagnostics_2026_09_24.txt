@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py
+runner_sha256: bfd6e470cfbb4a55f61b4b6da458d9dae48347e62f4103e31c3bc023b3e32ff9
+input_fingerprint_sha256: 099a9f66f15728607d8181327c8cee9500baebb5814c213a00a4a940b681fc9e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 53.15
+status: ok
+----- stdout -----
+[PASS] finite diagnostic: the fine Z_4^3 torus: 9600 ice states, 937 flip classes, largest 864; ground-state diagnostics along V/g :: 9600 states, 937 classes, largest 864; global V = 0 ground state in the class of size 864; V/g = 0.0: E0/plaquette -0.3761, gap 2.2258, RK fidelity 0.807, <N_flip> 10.12, TV from uniform 0.345; V/g = 0.25: E0/plaquette -0.2738, gap 1.9417, RK fidelity 0.885, <N_flip> 9.53, TV from uniform 0.263; V/g = 0.5: E0/plaquette -0.1773, gap 1.5934, RK fidelity 0.945, <N_flip> 9.01, TV from uniform 0.184; V/g = 0.75: E0/plaquette -0.0861, gap 1.2758, RK fidelity 0.984, <N_flip> 8.52, TV from uniform 0.099; V/g = 1.0: E0/plaquette 0.0000, gap 0.9696, RK fidelity 1.000, <N_flip> 8.00, TV from uniform 0.000
+[PASS] finite diagnostic: the Jastrow family on the largest class at V = 0: grid-minimizing alpha, variational energy against the exact one, fidelity :: alpha* = 0.14; E_var/plaquette -0.3704 vs exact -0.3761 (relative excess 0.0153); fidelity with the exact ground state 0.9689; uniform state energy -0.3333
+[PASS] finite diagnostic: loop-update variational Monte Carlo at V = 0 on the 4^3, 6^3 and 8^3 coarse tori: energies against alpha, the sampled-grid minimum, and flippable-plaquette structure factors :: 4^3: alpha 0.0: E -0.2568 +- 0.0005, alpha 0.1: E -0.2719 +- 0.0005, alpha 0.2: E -0.2776 +- 0.0004, alpha 0.25: E -0.2768 +- 0.0008, alpha 0.3: E -0.2712 +- 0.0006, alpha 0.35: E -0.2632 +- 0.0022, alpha 0.4: E -0.2363 +- 0.0052, alpha 0.6: E -0.0297 +- 0.0092; optimum alpha 0.2; 6^3: alpha 0.0: E -0.2589 +- 0.0005, alpha 0.2: E -0.2796 +- 0.0003, alpha 0.4: E -0.2547 +- 0.0018 (optimum 0.2); 8^3: alpha 0.0: E -0.2597 +- 0.0010, alpha 0.2: E -0.2797 +- 0.0003; flippable density at alpha 0 / optimum: 4^3 0.257 / 0.298, 8^3 0.260 / 0.299; configuration-centered S(q)/N_p at (0,0,0), (pi,0,0), (pi,pi,0), (pi,pi,pi) on 8^3: alpha 0 [0.0, 0.064, 0.218, 0.303], optimum [0.0, 0.091, 0.2, 0.263]; S(pi,pi,pi)/N_p at alpha 0 / optimum by size: 4^3 0.315 / 0.298, 6^3 0.299 / 0.306, 8^3 0.303 / 0.263; loop acceptance at the sampled-grid minimum 0.64; Monte Carlo time 43 s
+TOTAL: PASS=3 FAIL=0 (53 s)
+
+----- stderr -----
+

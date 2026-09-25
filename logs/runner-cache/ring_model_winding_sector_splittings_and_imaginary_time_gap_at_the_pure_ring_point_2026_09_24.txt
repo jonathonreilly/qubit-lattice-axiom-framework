@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py
+runner_sha256: 3282d60147715ef05294afeb00feca89e84d81df7e268a4b0b540ff7409f6a54
+input_fingerprint_sha256: 871a063040be224c104435fc448665f954e04a906a998b8d48c54f1232ee4227
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 360.16
+status: ok
+----- stdout -----
+[PASS] finite diagnostic: winding sectors: canonical sector states are ice with the intended flux, fluxes are slab-independent, the one-quantum splitting is resolved on 4^3 and the 6^3 run is precise enough to see it; dE(1) L and dE(2)/dE(1) :: 4^3: E0(0) -56.229+-0.079, E0(1) -55.417+-0.052, dE(1) 0.811+-0.095, dE(1) L 3.25+-0.38, dE(2)/dE(1) 2.75 (unconstrained uniform-ice <Phi_x^2> 1.393 from 750 samples); 6^3: E0(0) -187.211+-0.084, E0(1) -186.863+-0.103, dE(1) 0.348+-0.133, dE(1) L 2.09+-0.80 (unconstrained uniform-ice <Phi_x^2> 2.033 from 400 samples)
+[PASS] finite diagnostic: imaginary-time relaxation from a uniform walker distribution: selected-window fits: early and late effective rates by size, ground energies agreeing with open PR 9148 :: 4^3: start -0.2825 -> E0 -0.2928+-0.0001 per plaquette (open PR 9148: -0.2926); rate on tau in [0.3, 0.7]: 2.04 (20 points), on [1.0, 2.5]: 1.92 (13 points); 37 s; 6^3: start -0.2771 -> E0 -0.2892+-0.0001 per plaquette (open PR 9148: -0.2883); rate on tau in [0.3, 0.7]: 2.42 (20 points), on [1.0, 2.5]: 0.47 (49 points); 236 s; 8^3: start -0.2769 -> E0 -0.2874+-0.0000 per plaquette (open PR 9148: -0.2871); rate on tau in [0.3, 0.7]: 1.88 (20 points), on [1.0, 2.5]: 0.58 (14 points); 87 s
+TOTAL: PASS=2 FAIL=0 (360 s)
+
+----- stderr -----
+

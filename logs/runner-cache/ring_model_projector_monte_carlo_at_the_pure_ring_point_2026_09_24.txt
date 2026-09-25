@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.py
+runner_sha256: ef66bbea451caebe4ee5457ac906df05da86cb2db9928edc59061f6b2a916579
+input_fingerprint_sha256: 80fd57cc8ea461f5fdbc0be40641344af981f5cc588569153d978786c2ea0282
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 110.43
+status: ok
+----- stdout -----
+[PASS] finite diagnostic: control on the fine Z_4^3 torus: the projector energy and mixed flippable number agree with exact diagonalization :: exact E0 = -9.0267, projector -9.0412 +- 0.0149; exact mixed <N_flip> 10.500, projector 10.496 +- 0.031; exact pure 10.124, variational 10.907, extrapolated 10.085; 53436 hops, 3 s
+[PASS] finite diagnostic: coarse 4^3, 6^3, 8^3 tori: the projector energy lies below the variational one, with the stated segment comparison :: 4^3: variational -0.2766, projector -0.2926 +- 0.0003 (gain 5.81%), halves differ by 2.8 sigma, 89118 hops in 5 s; 6^3: variational -0.2806, projector -0.2883 +- 0.0003 (gain 2.76%), halves differ by 0.7 sigma, 238287 hops in 20 s; 8^3: variational -0.2797, projector -0.2871 +- 0.0002 (gain 2.65%), halves differ by 1.9 sigma, 422476 hops in 72 s
+[PASS] finite diagnostic: flippable density and configuration-centered plaquette structure factors, variational / mixed / extrapolated, by size; S(pi,pi,pi) stable between the halves of the projection :: 4^3: density 0.295 / 0.314+-0.001 / 0.333; S(pi,pi,pi)/N_p 0.274 / 0.284+-0.008 / 0.294 (halves 0.274, 0.293, 1.4 sigma apart); mixed S at (0,0,0),(pi,0,0),(pi,pi,0) 0.000, 0.080, 0.249; 6^3: density 0.300 / 0.307+-0.000 / 0.314; S(pi,pi,pi)/N_p 0.295 / 0.300+-0.010 / 0.305 (halves 0.280, 0.320, 2.4 sigma apart); mixed S at (0,0,0),(pi,0,0),(pi,pi,0) 0.000, 0.076, 0.242; 8^3: density 0.302 / 0.305+-0.000 / 0.309; S(pi,pi,pi)/N_p 0.285 / 0.288+-0.014 / 0.291 (halves 0.296, 0.280, 0.6 sigma apart); mixed S at (0,0,0),(pi,0,0),(pi,pi,0) 0.000, 0.080, 0.211
+TOTAL: PASS=3 FAIL=0 (110 s)
+
+----- stderr -----
+

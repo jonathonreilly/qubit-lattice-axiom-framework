@@ -50,6 +50,7 @@ So a local rotation is the walk with bond rates `cos(Δ/2)` (a **second-order** 
 
 | rotation axis / gradient | coin **not** co-rotated (odd) | rays of the equivalent walk with the kick ∇θ/2 | coin **co-rotated** (`ψ0 → Uψ0`): odd / even | equivalent-walk rays |
 |---|---|---|---|---|
+| z / x, θ0 = 0.05, 0.1, 0.2 (λ = 64) | y +0.0027, +0.0055, +0.0109 | n/a | 0 / 8e−5, 3.2e−4, **1.3e−3** | |
 | z / y, θ0 = 0.2, λ = 64 | x −0.0655 | n/a (the coin is not a σ_z eigenstate, so the kick splits) | 0 / **+6e−5** | 0 / +7e−5 |
 | x / y, θ0 = 0.05, 0.1, 0.2 (λ = 64) | y **+0.277, +0.553, +1.106** | +0.287, +0.574, +1.147 | 0 / ≤ 6e−5 | 0 / ≤ 7e−5 |
 | x / y, θ0 = 0.1, λ = 128 / 32 | +0.312 / +0.679 | +0.322 / +0.747 | 0 / ≤ 4e−5 | |
@@ -64,7 +65,7 @@ At fixed θ0, the drift grows sub-linearly as the wavelength shortens: 0.31, 0.5
 
 **Answer to (ii).** Yes, in two distinct ways, both captured by the exact identity:
 1. **Preparation.** A packet whose coin is not co-rotated (here the `σ_x = +1` coin under a rotation about coin x) carries, in the rotated frame, the phase `e^{iθ/2}`, a momentum kick `∇θ/2`. It drifts linearly in the angle, up to **1.1 sites** at t = 80.
-2. **Dynamics.** A co-rotated packet feels only `cos(Δ/2)` (≤ 6e−5 sites, second order), unless the rotation axis has a component along the gradient. In that case the coin-blind hop moves it at first order: **0.33 sites** at θ0 = 0.2, against 0.36 for the equivalent-walk rays.
+2. **Dynamics.** A co-rotated packet feels only `cos(Δ/2)`, a second-order effect: ≤ 6e−5 sites for the gradient along y, and up to 1.3e−3 for the rotation about coin z varying along x (slope 2.00). The exception is when the rotation axis has a component along the gradient. In that case the coin-blind hop moves it at first order: **0.33 sites** at θ0 = 0.2, against 0.36 for the equivalent-walk rays.
 
 ## (iii) Conservation
 

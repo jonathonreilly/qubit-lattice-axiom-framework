@@ -1,0 +1,163 @@
+{
+  "completed_utc": "2026-09-24T19:50:24.365811+00:00",
+  "scope": "Byte bindings and recorded-table arithmetic only; no numerical replication",
+  "verifier_sha256": "f0408da1a4bd8f3a9f6556b071aba64bb29c1af44db4ea9ace8b305e15a3f9fa",
+  "PRE_seal_sha256": "34cbabad0237942680176e23a39bfdd6e9f4f34bbf56f1ff4f50b15178838f41",
+  "PRE_members_unchanged": [
+    {
+      "path": "ABSTRACT_CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "ABSTRACT_CONTROL.stdout.log",
+      "sha256": "a50a95e9444cb0ff80cfeaeaf3cfcfb8e865c1fd019f728a0106070251ef6c7c",
+      "bytes": 12375,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "ABSTRACT_CONTROL_EXECUTION.json",
+      "sha256": "ac345146db629dd296df25a577c6c45eb0fe5b2db7152e88aaec5bf1f7c30611",
+      "bytes": 585,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "ABSTRACT_CONTROL_RESULTS.json",
+      "sha256": "a50a95e9444cb0ff80cfeaeaf3cfcfb8e865c1fd019f728a0106070251ef6c7c",
+      "bytes": 12375,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "e48f606abebb28c5e60cbd98539284aee214e3f2819597621c6809dc1f5d2ec0",
+      "bytes": 25195,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "sha256": "35a00ac4b1a1ed9e398aa87e9a39c30bdd74c4a5a413b6fee031c06a188c6393",
+      "bytes": 2125,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "a7ab592e0b77f3f2a1e125074ec36b08f8ee4c8b3e46a6e1c95de1c111546286",
+      "bytes": 2495,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "abstract_record_control.py",
+      "sha256": "c2df3043cc82f1744a4dc1667ce9fb10588b0a04943c3eedd99a201b874c5ac7",
+      "bytes": 7901,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "sources/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "sources/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "matches_frozen_PRE": true
+    },
+    {
+      "path": "sources/standing-execution-AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "matches_frozen_PRE": true
+    }
+  ],
+  "author_seal_sha256": "1c43b31b63f89ba2bf246e50aa5e8dd95d93d77f0e06aafd8d394909966a9146",
+  "author_member_count": 7,
+  "all_author_member_hashes_match": true,
+  "all_released_origins_still_equal_snapshots": true,
+  "exact_git_origin_count": 5,
+  "root_parent_pins": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches_verified_PRE_parent": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches_verified_PRE_parent": true
+    }
+  ],
+  "author_execution": {
+    "started_utc": "2026-09-24T19:19:25.830257+00:00",
+    "wall_seconds": 0.6305460829753429,
+    "exit_code": 0,
+    "script_sha256": "dc9952e2ae47f69cc9a258b72c01d009b356b6459e168e830dc045dfaca59771"
+  },
+  "author_result_internal_elapsed_seconds": 0.29888254194520414,
+  "execution_and_result_source_fingerprint": "dc9952e2ae47f69cc9a258b72c01d009b356b6459e168e830dc045dfaca59771",
+  "stdout_byte_equal_result": true,
+  "stderr_bytes": 0,
+  "all_six_waiting_and_five_grid_rows_inspected": true,
+  "recorded_table_checks": [
+    {
+      "waiting_epsilon": ".4",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "waiting_epsilon": ".2",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "waiting_epsilon": ".1",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "waiting_epsilon": ".05",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "waiting_epsilon": ".025",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "waiting_epsilon": ".0125",
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "grid_bins": 6,
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "grid_bins": 12,
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "grid_bins": 24,
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "grid_bins": 48,
+      "recorded_arithmetic_consistent": true
+    },
+    {
+      "grid_bins": 96,
+      "recorded_arithmetic_consistent": true
+    }
+  ],
+  "author_code_rerun": false,
+  "other_provisional_packet_files_opened": false,
+  "verification_limitation": "Recorded source/execution/output correspondence; no fresh author run or independent reproduction of numerical values."
+}

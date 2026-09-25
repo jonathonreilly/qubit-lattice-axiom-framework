@@ -1,0 +1,14 @@
+{
+  "scope": "Read-only metadata, hash, complete JSON and cache byte comparisons; no physics primary execution.",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/publication-metadata-independent/metadata_repair_checks.py"
+  ],
+  "started_utc": "2026-09-24T16:44:15.306967+00:00",
+  "elapsed_seconds": 0.7074243749957532,
+  "exit_code": 0,
+  "checker_sha256": "02304916deb084796618443891497eed179f234d2a89bcc8a6972626b5240b8f",
+  "stdout_sha256": "240e4a29899bd3361c925f4f4f8c77b29d40531f3d57e76dc4e49649c5aaaa1f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

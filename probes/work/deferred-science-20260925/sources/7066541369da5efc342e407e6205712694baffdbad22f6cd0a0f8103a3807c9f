@@ -1,0 +1,1518 @@
+{
+  "source_sha256": "412d728fbf1137454311dd3e55d68c49ee49c5a1df120c3ed350ff53d99071a5",
+  "scope": "Own exact spin-one primitive columns and integer weight comparisons; higher-spin displayed scalar amplitudes are floating evaluations of exact fractions.",
+  "local_identity_rows": [
+    {
+      "graph": "square",
+      "q": [
+        -1,
+        1,
+        1,
+        1
+      ],
+      "E": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "E": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 2,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-4",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "number": 2,
+      "D": "4",
+      "H4_output_words": 2,
+      "H4_diagonal": "-6",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "E": [
+        -1,
+        1,
+        0,
+        0
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "square",
+      "q": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        -1,
+        1
+      ],
+      "number": 4,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "E": [
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "2",
+      "H4_output_words": 3,
+      "H4_diagonal": "-3",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "number": 5,
+      "D": "2",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 1,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 3,
+      "D": "0",
+      "H4_output_words": 1,
+      "H4_diagonal": "-12",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 1,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "E": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 3,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        -1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        -1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "E": [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "E": [
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        -1,
+        1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 0,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1,
+        0
+      ],
+      "number": 5,
+      "D": "2",
+      "H4_output_words": 5,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "number": 5,
+      "D": "2",
+      "H4_output_words": 5,
+      "H4_diagonal": "-2",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "E": [
+        1,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "E": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 3,
+      "D": "0",
+      "H4_output_words": 19,
+      "H4_diagonal": "-36",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": false
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "E": [
+        1,
+        -1,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 3,
+      "D": "4",
+      "H4_output_words": 10,
+      "H4_diagonal": "-36",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "E": [
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "E": [
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    },
+    {
+      "graph": "K3_3",
+      "q": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "E": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "number": 5,
+      "D": "0",
+      "H4_output_words": 2,
+      "H4_diagonal": "0",
+      "canonical_equals_local": true,
+      "dropping_finite_spin_correction_is_wrong": true
+    }
+  ],
+  "graph_totals": [
+    {
+      "graph": "square",
+      "input_columns": 8,
+      "primitive_Gauss_outputs_checked": 290,
+      "distant_unordered_A_pairs": 0
+    },
+    {
+      "graph": "three_star_tree_with_distant_pair",
+      "input_columns": 12,
+      "primitive_Gauss_outputs_checked": 2247,
+      "distant_unordered_A_pairs": 1
+    },
+    {
+      "graph": "K3_3",
+      "input_columns": 31,
+      "primitive_Gauss_outputs_checked": 10498,
+      "distant_unordered_A_pairs": 0
+    }
+  ],
+  "scalar_weight_rows": [
+    {
+      "S": 1,
+      "C": 2,
+      "integer_shift_cases": 12,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 2,
+      "C": 6,
+      "integer_shift_cases": 20,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 3,
+      "C": 12,
+      "integer_shift_cases": 28,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 4,
+      "C": 20,
+      "integer_shift_cases": 36,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 8,
+      "C": 72,
+      "integer_shift_cases": 68,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 16,
+      "C": 272,
+      "integer_shift_cases": 132,
+      "gate_weight_and_birth_comparison_exact": true
+    },
+    {
+      "S": 32,
+      "C": 1056,
+      "integer_shift_cases": 260,
+      "gate_weight_and_birth_comparison_exact": true
+    }
+  ],
+  "unconfined_flux_operator_counterexample_rows": [
+    {
+      "S": 2,
+      "cycle_flux": 1,
+      "initial_D": 0,
+      "new_vacancy_D": 2,
+      "exact_prefactor": "-1/6",
+      "exact_return_weight_squared": "1",
+      "finite_spin_H4_offdiagonal": -0.16666666666666666,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 4,
+      "cycle_flux": 2,
+      "initial_D": 0,
+      "new_vacancy_D": 8,
+      "exact_prefactor": "-1/5",
+      "exact_return_weight_squared": "9/10",
+      "finite_spin_H4_offdiagonal": -0.18973665961010278,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 8,
+      "cycle_flux": 4,
+      "initial_D": 0,
+      "new_vacancy_D": 32,
+      "exact_prefactor": "-2/9",
+      "exact_return_weight_squared": "5/6",
+      "finite_spin_H4_offdiagonal": -0.20286020648339487,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 16,
+      "cycle_flux": 8,
+      "initial_D": 0,
+      "new_vacancy_D": 128,
+      "exact_prefactor": "-4/17",
+      "exact_return_weight_squared": "27/34",
+      "finite_spin_H4_offdiagonal": -0.20967830321858982,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 32,
+      "cycle_flux": 16,
+      "initial_D": 0,
+      "new_vacancy_D": 512,
+      "exact_prefactor": "-8/33",
+      "exact_return_weight_squared": "17/22",
+      "finite_spin_H4_offdiagonal": -0.21310280557370487,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 64,
+      "cycle_flux": 32,
+      "initial_D": 0,
+      "new_vacancy_D": 2048,
+      "exact_prefactor": "-16/65",
+      "exact_return_weight_squared": "99/130",
+      "finite_spin_H4_offdiagonal": -0.21480903651055,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 128,
+      "cycle_flux": 64,
+      "initial_D": 0,
+      "new_vacancy_D": 8192,
+      "exact_prefactor": "-32/129",
+      "exact_return_weight_squared": "65/86",
+      "finite_spin_H4_offdiagonal": -0.21565906636401652,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    },
+    {
+      "S": 256,
+      "cycle_flux": 128,
+      "initial_D": 0,
+      "new_vacancy_D": 32768,
+      "exact_prefactor": "-64/257",
+      "exact_return_weight_squared": "387/514",
+      "finite_spin_H4_offdiagonal": -0.21608308602247686,
+      "rotor_H4_entire_sector": 0,
+      "nonzero_limit": -0.21650635094610965,
+      "interpretation": "No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."
+    }
+  ],
+  "all_assertions_passed": true,
+  "elapsed_seconds": 0.08823066693730652
+}

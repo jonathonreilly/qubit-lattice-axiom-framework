@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-09-24T20:56:37.532137+00:00",
+  "phase": "Bounded released-source unrestricted-count POST",
+  "unchanged_PRE_seal_sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0",
+  "unchanged_PRE_members": 29,
+  "author_seal_sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8",
+  "released_sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/AUTHOR_SEAL.json",
+      "snapshot": "post-released/AUTHOR_SEAL.json",
+      "sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8",
+      "bytes": 1121
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/COUNT_WINDOW.stderr",
+      "snapshot": "post-released/COUNT_WINDOW.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/COUNT_WINDOW_RESULTS.json",
+      "snapshot": "post-released/COUNT_WINDOW_RESULTS.json",
+      "sha256": "fa3e44571833d1cf21baa8e78d8ae7d5b1ce5d9107cac3344703339d32252910",
+      "bytes": 7877
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/EXECUTION.json",
+      "snapshot": "post-released/EXECUTION.json",
+      "sha256": "5fb5f0a8c3e5005fc0ff42b1f53fcfe532385cfe1318f6373ccf1625ca4628a0",
+      "bytes": 294
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/ROOT_REVIEW.md",
+      "snapshot": "post-released/ROOT_REVIEW.md",
+      "sha256": "457f243db65bf35d17e10709e4da71f6aa367b0441cfa09e26db94094eb23a33",
+      "bytes": 1312
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/SOURCE_PINS.json",
+      "snapshot": "post-released/SOURCE_PINS.json",
+      "sha256": "4b92483d633f215655fd1c917f439840ffc25b357a1208b439a47d5feac8db6b",
+      "bytes": 2257
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/UNRESTRICTED_FINITE_BIN_RECORD_CONTRAST_ROOT.md",
+      "snapshot": "post-released/UNRESTRICTED_FINITE_BIN_RECORD_CONTRAST_ROOT.md",
+      "sha256": "5ad270f81ab37e1ffb14130937228c6c67b0bdd0858362d76ea6bf5057a8d1cd",
+      "bytes": 14968
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unrestricted-record-count-personal/count_window_controls.py",
+      "snapshot": "post-released/count_window_controls.py",
+      "sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+      "bytes": 5891
+    }
+  ],
+  "reused_prior_source": {
+    "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/post-released/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+    "snapshot": "post-prior-source/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+    "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+    "bytes": 11201
+  },
+  "author_dependency_pins_matched_to_prior_evidence": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "snapshot": "sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "prior_provenance": {
+        "kind": "exact_git",
+        "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "snapshot": "sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+        "bytes": 14902
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "snapshot": "sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "prior_provenance": {
+        "kind": "exact_git",
+        "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "snapshot": "sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+        "bytes": 10953
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "snapshot": "sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "prior_provenance": {
+        "kind": "exact_git",
+        "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+        "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+        "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "snapshot": "sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+        "bytes": 19851
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027,
+      "snapshot": "sources/external/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "prior_provenance": {
+        "kind": "released_external",
+        "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+        "snapshot": "sources/external/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+        "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+        "bytes": 11027,
+        "scope": "Provisional geometry, original resolved zero-lag effect and prepared boundary premise."
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+      "bytes": 11201,
+      "snapshot": "post-prior-source/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "prior_POST_seal_sha256": "73dc48a63907c5cbe3f3973723151a84af4b7d55e10959eb62f7c6b042da3545",
+      "prior_review": "Earlier independent microscopic-record POST, reused; not new review."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d",
+      "bytes": 9955,
+      "snapshot": "sources/external/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "prior_provenance": {
+        "kind": "released_external",
+        "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+        "snapshot": "sources/external/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+        "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d",
+        "bytes": 9955,
+        "scope": "Provisional first-pair proof, used only for disclosed analytic estimates; not an unrestricted-count theorem."
+      }
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+      "bytes": 14324,
+      "snapshot": "sources/external/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "prior_provenance": {
+        "kind": "released_external",
+        "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+        "snapshot": "sources/external/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+        "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+        "bytes": 14324,
+        "scope": "Provisional single-local-observable bound only; not independently confirmed here."
+      }
+    }
+  ],
+  "review_scope": "Complete author note/code/output and provenance, conditional on the pinned parent LR and prepared-state estimates. No author execution or unrelated packet read."
+}

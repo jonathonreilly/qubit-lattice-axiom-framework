@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/publication_correspondence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent",
+  "started_utc": "2026-09-24T17:40:23.227971+00:00",
+  "finished_utc": "2026-09-24T17:40:23.432107+00:00",
+  "elapsed_seconds": 0.20416524983011186,
+  "returncode": 0,
+  "reason_for_second_execution": "Add explicit primary-runner lexical-path symlink check; first successful source/result/logs archived. No primary execution.",
+  "files": {
+    "publication_correspondence_check.py": {
+      "sha256": "659fc7f1ace5b47fbf3df8b32f9621f53009f4dfa6375147cb3c16dad2954109",
+      "bytes": 13786
+    },
+    "PUBLICATION_CHECK.stdout.txt": {
+      "sha256": "82c6ce5bfcea3a6fb5b1afa91e2f3782c6cc8c86b1c1b73726194736a5e908c3",
+      "bytes": 8129
+    },
+    "PUBLICATION_CHECK.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "PUBLICATION_EVIDENCE_CHECK.json": {
+      "sha256": "82c6ce5bfcea3a6fb5b1afa91e2f3782c6cc8c86b1c1b73726194736a5e908c3",
+      "bytes": 8129
+    }
+  }
+}

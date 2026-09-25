@@ -1,0 +1,28 @@
+{
+  "kind": "bounded_final_integrated_variance_publication_comparison",
+  "sealed_at_utc": "2026-09-24T15:12:54.878310+00:00",
+  "files": {
+    "PUBLICATION_COMPARISON.md": "dd107241a14f21d5ea63ecde8fcb70499e32364c3ea34b4181214ae34c45c360",
+    "PUBLICATION_COMPARISON_SOURCE_PINS.json": "90c0a2e028043b28e654cc15889b7a701e129b9964bb62aaeadf579b93704237",
+    "publication_evidence_checks.py": "37952b1b6107fb362aef2b083b2720164526ad11781e5218520028801288e259",
+    "PUBLICATION_EVIDENCE_VERIFICATION.json": "fd07031e564943123a8368115b6cc30427ce03b8f17641a2017351223b1994e6",
+    "PUBLICATION_EVIDENCE_VERIFICATION.log": "fd07031e564943123a8368115b6cc30427ce03b8f17641a2017351223b1994e6"
+  },
+  "reviewed_note_sha256": "f667f03f5b6b9fd1e50e3c01f800e19d754dae8281354ff2d0196d97ddbd44ae",
+  "reviewed_runner_sha256": "1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc",
+  "reviewed_cache_sha256": "798d06fc344c941c72841aee55de266044d3e83771c9faebad6edc36c2416406",
+  "reviewed_result_sha256": "4a6501b933299c5ac6a658b615725b8bc47ebdfaa613bb9fe6b3947137ff7958",
+  "recomputed_input_fingerprint_sha256": "7cf998c03e1131be4115269ca68c9279ce49544e944d3c6e74d95f5ba9e3332b",
+  "material_mathematical_discrepancies": [],
+  "material_source_adaptation_discrepancies": [],
+  "material_completed_evidence_discrepancies": [],
+  "verdict_scope": "No material discrepancy in the specified conditional theorem, PRE-origin extensions, source adaptation or completed cache evidence. Selective comparison only; no retained or formal audit status applied.",
+  "comparison_script_exit_code": 0,
+  "complete_comparison_log_inspected": true,
+  "PRE_POST_and_evidence_preserved": true,
+  "primary_or_expensive_cube_controls_rerun": false,
+  "small_new_author_local_star_function_replayed": true,
+  "new_independent_derivation_claimed": false,
+  "wrapper_exception_preserved_and_distinguished": true,
+  "publication_cache_or_audit_state_mutated": false
+}

@@ -1,0 +1,18 @@
+{
+  "read_utc": "2026-09-24T12:53:37.405558+00:00",
+  "read_head": "21ba8460d67c896a54cab5922e7ffde05f43786a",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/sources/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e"
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-independent/sources/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+    }
+  ],
+  "instructions": "Applicable AGENTS and SCIENCE_WORKFLOW unchanged per dispatch; reused the already-read versions pinned in rotor-upper-tail-independent/SOURCE_PINS.json.",
+  "independence": "No root checkpoint, autonomous-process-personal files, new root derivation/runner, or other checker packet read."
+}

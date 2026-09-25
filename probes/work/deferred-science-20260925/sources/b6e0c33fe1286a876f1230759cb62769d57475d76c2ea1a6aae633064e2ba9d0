@@ -1,0 +1,161 @@
+{
+  "sealed_utc": "2026-09-24T20:44:59.569553+00:00",
+  "phase": "Blind unrestricted-count PRE",
+  "scope": "Unrestricted full-semigroup pair count; conditional fixed-graph prepared positive-lag contrast with explicit decreasing-rate hypothesis; local factorial variance bound, repetition assumptions, fixed-parameter microscopic count transfer, and a named additional local product-observable obligation. No root unrestricted-count candidate or other active independent packet read.",
+  "source_snapshot_count": 17,
+  "source_origins": {
+    "exact_git": 9,
+    "authorized_external": 8
+  },
+  "prior_microscopic_PRE_POST_unchanged": true,
+  "new_science_control_execution_count": 1,
+  "author_or_parent_science_execution_count": 0,
+  "frozen_member_count": 29,
+  "members": [
+    {
+      "path": "CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL.stdout.log",
+      "sha256": "07d116b36b8c324adf22dddbf4821bb8fcb6e9d8d9c471aba8ec3524931ed3cc",
+      "bytes": 7049
+    },
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "14dde894f71a1ae49276615558b0b275db0928c88b1c7152c307a3051380e230",
+      "bytes": 651
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e",
+      "bytes": 38484
+    },
+    {
+      "path": "SOURCE_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "SOURCE_CHECK.stdout.log",
+      "sha256": "6a8ee238ecfa52dd2f4e5bb94605642aabbeca7b562cf6f1cfd2d0c683e3688c",
+      "bytes": 6416
+    },
+    {
+      "path": "SOURCE_CHECK_EXECUTION.json",
+      "sha256": "78582723b0cdda66ab80127cf0e9449f34ff1d40ef5cc99f9ef430fb522712cf",
+      "bytes": 600
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "sha256": "6a8ee238ecfa52dd2f4e5bb94605642aabbeca7b562cf6f1cfd2d0c683e3688c",
+      "bytes": 6416
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "12a5a92bc9067ea2d5079b3363a49dceed67e0eae95d7da34db1f40858610610",
+      "bytes": 8853
+    },
+    {
+      "path": "UNRESTRICTED_COUNT_CONTROL_RESULTS.json",
+      "sha256": "07d116b36b8c324adf22dddbf4821bb8fcb6e9d8d9c471aba8ec3524931ed3cc",
+      "bytes": 7049
+    },
+    {
+      "path": "sources/external/local-record-background-personal/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18",
+      "bytes": 857
+    },
+    {
+      "path": "sources/external/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+      "bytes": 14324
+    },
+    {
+      "path": "sources/external/magnetic-lag-photon-personal/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d",
+      "bytes": 9955
+    },
+    {
+      "path": "sources/external/microscopic-record-readout-independent/POST.md",
+      "sha256": "c276edf6749f4c03c31faf5912ee60a21f8530defe702105e186f158b587c6c3",
+      "bytes": 24757
+    },
+    {
+      "path": "sources/external/microscopic-record-readout-independent/POST_SEAL.json",
+      "sha256": "73dc48a63907c5cbe3f3973723151a84af4b7d55e10959eb62f7c6b042da3545",
+      "bytes": 3147
+    },
+    {
+      "path": "sources/external/microscopic-record-readout-independent/PRE.md",
+      "sha256": "e48f606abebb28c5e60cbd98539284aee214e3f2819597621c6809dc1f5d2ec0",
+      "bytes": 25195
+    },
+    {
+      "path": "sources/external/microscopic-record-readout-independent/PRE_SEAL.json",
+      "sha256": "34cbabad0237942680176e23a39bfdd6e9f4f34bbf56f1ff4f50b15178838f41",
+      "bytes": 2620
+    },
+    {
+      "path": "sources/external/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    },
+    {
+      "path": "sources/main/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "sources/main/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "path": "sources/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "unrestricted_count_controls.py",
+      "sha256": "07bad4820aa7d504a0266f14ba816ece49528ecc0f8fce11ea8285a73335472f",
+      "bytes": 9609
+    },
+    {
+      "path": "verify_evidence.py",
+      "sha256": "d9e72e2e06869fe3549602afadc64dbb5ef93805714b86c202dffbd0328f6c29",
+      "bytes": 4208
+    }
+  ]
+}

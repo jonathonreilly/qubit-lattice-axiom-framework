@@ -1,0 +1,49 @@
+{
+  "recorded_utc": "2026-09-24T23:49:09.320134+00:00",
+  "record_type": "Commands observed in this tool session, transcribed before sealing; source and full stdout are bound separately.",
+  "commands": [
+    {
+      "command": "python3 magnetic_increment_control.py > MAGNETIC_CONTROL_RESULTS.json 2> MAGNETIC_CONTROL_STDERR.txt",
+      "exit_code": 0,
+      "elapsed_seconds_from_runner": 1.8190530419815332
+    },
+    {
+      "command": "python3 combinatorial_formula_check.py > COMBINATORIAL_RESULTS.json 2> COMBINATORIAL_STDERR.txt",
+      "exit_code": 2,
+      "science_executed": false,
+      "preserved_stderr": "COMBINATORIAL_FIRST_PATH_FAILURE_STDERR.txt",
+      "disposition": "Newly created file was moved from the accidental adjacent path into the assigned directory."
+    },
+    {
+      "command": "python3 combinatorial_formula_check.py > COMBINATORIAL_RESULTS.json 2> COMBINATORIAL_STDERR.txt",
+      "exit_code": 0,
+      "elapsed_seconds_from_runner": 0.142032666830346
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 energy_form_control.py > ENERGY_FORM_RESULTS.json 2> ENERGY_FORM_STDERR.txt",
+      "exit_code": 0,
+      "elapsed_seconds_from_runner": 3.372618875000626
+    },
+    {
+      "command": "python3 electric_and_coefficients_check.py > ELECTRIC_RESULTS.json 2> ELECTRIC_STDERR.txt",
+      "exit_code": 0,
+      "runs": 2,
+      "reason_for_second_run": "Added direct occupied-B-pair count rows used in the constant proof."
+    },
+    {
+      "command": "python3 freeze_inputs.py > SOURCE_FREEZE_RESULTS.json 2> SOURCE_FREEZE_STDERR.txt",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 verify_evidence.py > EVIDENCE_VERIFICATION.json 2> EVIDENCE_VERIFICATION_STDERR.txt",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 repair_note_delimiters.py > FORMATTING_REPAIR.json 2> FORMATTING_REPAIR_STDERR.txt",
+      "exit_code": 0,
+      "scope": "Draft inline delimiters; subsequent equal-reference-energy proof paragraph is included in the final seal."
+    }
+  ],
+  "no_author_runner_executed": true,
+  "no_parent_primary_rerun": true
+}

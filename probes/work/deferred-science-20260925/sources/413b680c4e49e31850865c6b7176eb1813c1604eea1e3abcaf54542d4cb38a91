@@ -1,0 +1,569 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/CONTROL_REPAIR_DIFF.txt",
+      "sha256": "65bebf68721b9f550b6b0444f8bbd0855ad1f4c993bde85f57349b9879ba8d70",
+      "role": "Exact sealed diff with context-line whitespace; retained externally unchanged."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_PART_31_DIFF.txt",
+      "sha256": "403977e8f09d0464e4221dab1e4bb16fa52f7805e52584726c77efbf2e46f73f",
+      "role": "Exact sealed diff with context-line whitespace; retained externally unchanged."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PUBLICATION_PART_32_DIFF.txt",
+      "sha256": "10d311b82a84db1355ac0e3de1c0c6c6158798aca3a8be1fe8a16a0d17077405",
+      "role": "Exact sealed diff with context-line whitespace; retained externally unchanged."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/attempt01_direct_subtraction_failure/CONTROL_EXECUTION.json",
+      "sha256": "7affc5987e98ffc98593769ac92b86f398070fe13161963b084a2061912224df",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/attempt01_direct_subtraction_failure/CONTROL_STDERR.log",
+      "sha256": "67e0e25ab27db1cbc1f4b4a0b0eeabdd2c320e646f18fb0a069ac3222dce3327",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/attempt01_direct_subtraction_failure/CONTROL_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/attempt01_direct_subtraction_failure/PRESERVATION.json",
+      "sha256": "349fde533bc6f05b03f2e71eb19cca5a7ffdf5386bacede2c529b7bd0f1632bc",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/attempt01_direct_subtraction_failure/two_detector_controls.py",
+      "sha256": "dc6632fbf3383d87b8c3f0e082a80720e927273714f77bf7bba830358bd7175e",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "sha256": "b09cbbe9bf4a83be75d18b087b24055fd617224ef15d432393ad8917ba26bc6e",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "sha256": "8b2a7452d211da8ec198891806971a528ebaca89201d1aca9d2919f3774f1a1c",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/CONTROL.stdout",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/EXECUTION.json",
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/post_sources/two-detector-coincidence-personal/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/COUNT_INTERPRETATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "238993bcb9430c6c4509c6d6435d589b34735acbb9c1955e69e4df633ac493de",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/COUNT_INTERPRETATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d1252aea107ea5f4e1e99b510581ac8ef0e3f967b1256222aeb950081f096533",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/COUNT_INTERPRETATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8297fa09debe7f5823ef4d94cb743b5ba5e3a3cbc9f69247fa5c54c34b8b3327",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "sha256": "b09cbbe9bf4a83be75d18b087b24055fd617224ef15d432393ad8917ba26bc6e",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/.claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/coincidence/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/.claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/number_offset/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/ORIGINAL_COINCIDENCES_AND_NUMBER_ENERGY_IDENTIFIABILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "ce5fb4cb9e4196cfa4c1261c1e7d96e13671acc75a98fceacd07df75e57a4109",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/logs/runner-cache/original_coincidences_and_number_energy_identifiability_2026_09_25.txt",
+      "sha256": "a305bbc1803edc8a96af5f723f3094526928e9c470425ff31ab24f6ae420cfe1",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/outputs/count_interpretation_20260925/COUNT_INTERPRETATION_RESULTS.json",
+      "sha256": "3ef652ef3ab22f246bab51d91c091ff4d46c703c9d76fdf3b868dc5d5750f8a8",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/scripts/original_coincidences_and_number_energy_identifiability_2026_09_25.py",
+      "sha256": "acb60f75ae0bc45c054c5867402ab6e9a2b98b322918b05bcfc64f43d1733523",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/count-interpretation-publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST.md",
+      "sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_EXECUTION.json",
+      "sha256": "c76be4e38dde3a0dc5c2ecfde9e279990f74e0a9e5cd09199c01a6d3bf22bce1",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_ATTEMPT_02_STDOUT.json",
+      "sha256": "0456f95cd939a4c36811aa3d9f3ba1c6a01dcb5892b064d60da4bb61e5a66a2f",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_EXECUTION.json",
+      "sha256": "571b7845f013f294f1063bd527e5db4df0dbca724962729149d2be47e9da019a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_FAILURE_HISTORY.json",
+      "sha256": "86dc00e526cdd82252084de3e95daeb1b39971c6ce9cb0ee70d382214a35df80",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_STDERR.txt",
+      "sha256": "509c07517684ecd62f726748f67f59ccd4aa14a50bda99d0ac3ba5dc8b79416e",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_BINDING_STDOUT.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_CHRONOLOGY_ADDENDUM.md",
+      "sha256": "779a1ee05b5bde456fc958bd2624cccc1e315ed0540e5847ea8e613f310a2ae1",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_CHRONOLOGY_ADDENDUM_SEAL.json",
+      "sha256": "122752e6e420a095cb1f7c9a0ab30da49b3711ecdfcfef9b821788bf3d12fe1d",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_CORRECTIONS.json",
+      "sha256": "5a0097a55805058d3dc7c26fd78a9fcd41c254ba95691702d1b088c6c68e3a00",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/POST_SEAL.json",
+      "sha256": "43f565d7b9e362ca13e012bfadbe5b7e05b2ce22abb2c4a9ef3f24cd63d6099b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/PRE.md",
+      "sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/post_bind_and_check.py",
+      "sha256": "4bc6b134377e4339a92b286f379d916fc2c2dde2fc6df991993ca3c7c21ee297",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-independent/post_history/post_bind_and_check_attempt_01.py",
+      "sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/AUTHOR_SEAL.json",
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/CONTROL.stdout",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/EXECUTION.json",
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/NUMBER_OFFSET_RESULTS.json",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/ROOT_REVIEW.json",
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/SOURCE_PINS.json",
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/number-offset-observation-personal/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/photon-added-energy-independent/PUBLICATION_SCOPE_INCIDENT.json",
+      "sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "sha256": "8b2a7452d211da8ec198891806971a528ebaca89201d1aca9d2919f3774f1a1c",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/CONTROL.stdout",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/EXECUTION.json",
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/publication_sources/two-detector-coincidence-personal/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/POST.md",
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/POST_SEAL.json",
+      "sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/PRE.md",
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/PRE_SEAL.json",
+      "sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/PUBLICATION_COMPARISON.md",
+      "sha256": "c24e8e0dcd6df868a59f26e6059f4d19daafdf2604e509e8fc46937fdc73c415",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-band-response-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "821c8916b22e267c19129e8e8806e8c3c566875f602ee839e4d54b2bc7763911",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/sources/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/CONTROL.stdout",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/EXECUTION.json",
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/NUMBER_OFFSET_RESULTS.json",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/ROOT_REVIEW.json",
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/SOURCE_PINS.json",
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_frozen_author/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/sources/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "role": "Preserved frozen duplicate or private recovery anchor; externally bound by copied source inventories and seals."
+    }
+  ]
+}

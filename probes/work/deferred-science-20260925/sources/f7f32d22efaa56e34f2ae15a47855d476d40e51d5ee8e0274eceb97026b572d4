@@ -1,0 +1,549 @@
+{
+  "scope": "Independent finite harmonic symbol, analytic-remainder checks and conditional units/cosmology conversions. No source data or parent runner executed.",
+  "precision_decimal_digits": 70,
+  "rows": [
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "x": "1.0",
+      "A4": 1.0,
+      "velocity": [
+        0.8775825618903728,
+        0.0,
+        0.0
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 9.055679078826712e-72,
+      "curl_relative_error": 1.2075577480563767e-16,
+      "scaled_remainders": {
+        "phase": 0.0005177438750726672,
+        "vector": 0.0025825618903727162,
+        "radial": 0.0025825618903727162,
+        "speed": 0.0025825618903727162,
+        "plane_time": 0.014493927324549122,
+        "ray_time": 0.014493927324549122,
+        "energy_plane_time": 0.029066433311133413,
+        "energy_ray_time": 0.029066433311133413
+      }
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "x": "0.1",
+      "A4": 1.0,
+      "velocity": [
+        0.9987502603949663,
+        0.0,
+        0.0
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 4.165612376260288e-70,
+      "curl_relative_error": 0.0,
+      "scaled_remainders": {
+        "phase": 0.0005208023324256396,
+        "vector": 0.0026039496624656287,
+        "radial": 0.0026039496624656287,
+        "speed": 0.0026039496624656287,
+        "plane_time": 0.013034084612211531,
+        "ray_time": 0.013034084612211531,
+        "energy_plane_time": 0.023486394322370468,
+        "energy_ray_time": 0.023486394322370468
+      }
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "x": "0.001",
+      "A4": 1.0,
+      "velocity": [
+        0.9999998750000026,
+        0.0,
+        0.0
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 1.353172013390918e-66,
+      "curl_relative_error": 0.0,
+      "scaled_remainders": {
+        "phase": 0.000520833330233135,
+        "vector": 0.002604166644965278,
+        "radial": 0.002604166644965278,
+        "speed": 0.002604166644965278,
+        "plane_time": 0.01302083465711819,
+        "ray_time": 0.01302083465711819,
+        "energy_plane_time": 0.02343750488281316,
+        "energy_ray_time": 0.02343750488281316
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        0
+      ],
+      "x": "1.0",
+      "A4": 0.5,
+      "velocity": [
+        0.6633710494654613,
+        0.6633710494654613,
+        0.0
+      ],
+      "tangential_speed": 1.2806664169775034e-71,
+      "derivative_error": 9.055679078826712e-72,
+      "curl_relative_error": 2.3153243077808205e-16,
+      "scaled_remainders": {
+        "phase": 0.00012982148055394247,
+        "vector": 0.0006483350397287123,
+        "radial": 0.0006483350397287123,
+        "speed": 0.0006483350397287123,
+        "plane_time": 0.0034295152484089767,
+        "ray_time": 0.0034295152484089767,
+        "energy_plane_time": 0.006513556895588477,
+        "energy_ray_time": 0.006513556895588477
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        0
+      ],
+      "x": "0.1",
+      "A4": 0.5,
+      "velocity": [
+        0.7066648854819856,
+        0.7066648854819856,
+        0.0
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 3.712828422318952e-70,
+      "curl_relative_error": 1.7354464581613524e-16,
+      "scaled_remainders": {
+        "phase": 0.00013020445815259532,
+        "vector": 0.0006510145405360546,
+        "radial": 0.0006510145405360546,
+        "speed": 0.0006510145405360546,
+        "plane_time": 0.0032568639032890903,
+        "ray_time": 0.0032568639032890903,
+        "energy_plane_time": 0.0058654826505859115,
+        "energy_ray_time": 0.0058654826505859115
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        0
+      ],
+      "x": "0.001",
+      "A4": 0.5,
+      "velocity": [
+        0.7071067369923741,
+        0.7071067369923741,
+        0.0
+      ],
+      "tangential_speed": 1.2806664169775034e-71,
+      "derivative_error": 3.1342610859727134e-66,
+      "curl_relative_error": 0.0,
+      "scaled_remainders": {
+        "phase": 0.00013020833294580852,
+        "vector": 0.000651041663953993,
+        "radial": 0.000651041663953993,
+        "speed": 0.000651041663953993,
+        "plane_time": 0.003255208498806432,
+        "ray_time": 0.003255208498806432,
+        "energy_plane_time": 0.0058593756103516035,
+        "energy_ray_time": 0.0058593756103516035
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        1
+      ],
+      "x": "1.0",
+      "A4": 0.3333333333333333,
+      "velocity": [
+        0.5534606019846088,
+        0.5534606019846088,
+        0.5534606019846088
+      ],
+      "tangential_speed": 1.5684896261566393e-71,
+      "derivative_error": 0.0,
+      "curl_relative_error": 3.424750272758989e-16,
+      "scaled_remainders": {
+        "phase": 5.7755681002334546e-05,
+        "vector": 0.00028854929166525334,
+        "radial": 0.00028854929166525334,
+        "speed": 0.00028854929166525334,
+        "plane_time": 0.0014975027780110717,
+        "ray_time": 0.0014975027780110717,
+        "energy_plane_time": 0.002793498446328781,
+        "energy_ray_time": 0.002793498446328781
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        1
+      ],
+      "x": "0.1",
+      "A4": 0.3333333333333333,
+      "velocity": [
+        0.5771097232827364,
+        0.5771097232827364,
+        0.5771097232827364
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 4.256169167048555e-70,
+      "curl_relative_error": 1.7352054239309193e-16,
+      "scaled_remainders": {
+        "phase": 5.7869222162025536e-05,
+        "vector": 0.00028934381442001684,
+        "radial": 0.00028934381442001684,
+        "speed": 0.00028934381442001684,
+        "plane_time": 0.0014472497156079807,
+        "ray_time": 0.0014472497156079807,
+        "energy_plane_time": 0.002605975932366893,
+        "energy_ray_time": 0.002605975932366893
+      }
+    },
+    {
+      "direction": [
+        1,
+        1,
+        1
+      ],
+      "x": "0.001",
+      "A4": 0.3333333333333333,
+      "velocity": [
+        0.5773502451333647,
+        0.5773502451333647,
+        0.5773502451333647
+      ],
+      "tangential_speed": 0.0,
+      "derivative_error": 5.1568470082286596e-67,
+      "curl_relative_error": 2.1175824269574842e-16,
+      "scaled_remainders": {
+        "phase": 5.7870370255548206e-05,
+        "vector": 0.0002893518510480967,
+        "radial": 0.0002893518510480967,
+        "speed": 0.0002893518510480967,
+        "plane_time": 0.0014467593082883247,
+        "ray_time": 0.0014467593082883247,
+        "energy_plane_time": 0.0026041668475115824,
+        "energy_ray_time": 0.0026041668475115824
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        3
+      ],
+      "x": "1.0",
+      "A4": 0.5,
+      "velocity": [
+        0.26965909723082143,
+        0.5201712087198356,
+        0.7337488691966811
+      ],
+      "tangential_speed": 0.03237931216855802,
+      "derivative_error": 9.055679078826712e-72,
+      "curl_relative_error": 3.4725999098534e-16,
+      "scaled_remainders": {
+        "phase": 0.00018432506771882455,
+        "vector": 0.0011672594596160147,
+        "radial": 0.0009205338180189348,
+        "speed": 0.0014789764141711328,
+        "plane_time": 0.003120331144547102,
+        "ray_time": 0.002486570645979304,
+        "energy_plane_time": 0.006168757923960923,
+        "energy_ray_time": 0.005479833317320997
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        3
+      ],
+      "x": "0.1",
+      "A4": 0.5,
+      "velocity": [
+        0.26728510568999087,
+        0.5343793048112381,
+        0.8010918271487163
+      ],
+      "tangential_speed": 0.00033058115337620766,
+      "derivative_error": 1.2677950710357397e-70,
+      "curl_relative_error": 5.206339317553272e-16,
+      "scaled_remainders": {
+        "phase": 0.0001848675544140221,
+        "vector": 0.0011718076624313949,
+        "radial": 0.000924326768613178,
+        "speed": 0.0014710879236868326,
+        "plane_time": 0.0029832097575088184,
+        "ray_time": 0.0024357646409390553,
+        "energy_plane_time": 0.005591531861251559,
+        "energy_ray_time": 0.005043630343236691
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        3
+      ],
+      "x": "0.001",
+      "A4": 0.5,
+      "velocity": [
+        0.2672612442986855,
+        0.5345224695072822,
+        0.8017836565357027
+      ],
+      "tangential_speed": 3.306500287445117e-08,
+      "derivative_error": 1.3645459463139243e-66,
+      "curl_relative_error": 2.1175824563683514e-16,
+      "scaled_remainders": {
+        "phase": 0.00018487305581518586,
+        "vector": 0.001171853843918886,
+        "radial": 0.0009243652779754945,
+        "speed": 0.0014710125196846786,
+        "plane_time": 0.002981884850619476,
+        "ray_time": 0.0024352375405793814,
+        "energy_plane_time": 0.005586051932554584,
+        "energy_ray_time": 0.005039404576960545
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        4
+      ],
+      "x": "1.0",
+      "A4": 0.6190476190476191,
+      "velocity": [
+        0.22215579207629774,
+        0.4337746498858349,
+        0.7862287462729275
+      ],
+      "tangential_speed": 0.042002139589736885,
+      "derivative_error": 9.055679078826712e-72,
+      "curl_relative_error": 2.3381875310200603e-16,
+      "scaled_remainders": {
+        "phase": 0.00029050755201941896,
+        "vector": 0.001685166412991435,
+        "radial": 0.0014508115217045404,
+        "speed": 0.0024048895320540444,
+        "plane_time": 0.004788312321449668,
+        "ray_time": 0.0036721532065747855,
+        "energy_plane_time": 0.009630369499984153,
+        "energy_ray_time": 0.008392700994827118
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        4
+      ],
+      "x": "0.1",
+      "A4": 0.6190476190476191,
+      "velocity": [
+        0.21825686182163548,
+        0.43640979592852214,
+        0.871988467040034
+      ],
+      "tangential_speed": 0.00042836092749699183,
+      "derivative_error": 2.173362978918411e-70,
+      "curl_relative_error": 1.7356186182003579e-16,
+      "scaled_remainders": {
+        "phase": 0.0002913677245648575,
+        "vector": 0.0016914949087111057,
+        "radial": 0.0014568211306689649,
+        "speed": 0.0023749968689160505,
+        "plane_time": 0.004533370663612301,
+        "ray_time": 0.00361377264068736,
+        "energy_plane_time": 0.008533079127256081,
+        "energy_ray_time": 0.007612531807899231
+      }
+    },
+    {
+      "direction": [
+        1,
+        2,
+        4
+      ],
+      "x": "0.001",
+      "A4": 0.6190476190476191,
+      "velocity": [
+        0.21821789413274045,
+        0.43643577787415266,
+        0.8728714726176823
+      ],
+      "tangential_speed": 4.284454252835979e-08,
+      "derivative_error": 1.5773815717035885e-66,
+      "curl_relative_error": 2.1175824773761142e-16,
+      "scaled_remainders": {
+        "phase": 0.00029137647034868603,
+        "vector": 0.001691559513420537,
+        "radial": 0.0014568823499939824,
+        "speed": 0.0023747098332485604,
+        "plane_time": 0.004530929679261941,
+        "ray_time": 0.0036131020539626204,
+        "energy_plane_time": 0.008522804989611247,
+        "energy_ray_time": 0.007604977269615421
+      }
+    },
+    {
+      "direction": [
+        2,
+        -3,
+        6
+      ],
+      "x": "1.0",
+      "A4": 0.5801749271137027,
+      "velocity": [
+        0.2887458311988471,
+        -0.4257501646370817,
+        0.7744909389452768
+      ],
+      "tangential_speed": 0.042199942200177074,
+      "derivative_error": 4.527839539413356e-72,
+      "curl_relative_error": 5.826364215098753e-16,
+      "scaled_remainders": {
+        "phase": 0.0002671891000696645,
+        "vector": 0.0015850750533750564,
+        "radial": 0.0013344073150128057,
+        "speed": 0.0022925753824468023,
+        "plane_time": 0.004121649781798353,
+        "ray_time": 0.0030121230714031553,
+        "energy_plane_time": 0.008314784811774884,
+        "energy_ray_time": 0.007092499613327691
+      }
+    },
+    {
+      "direction": [
+        2,
+        -3,
+        6
+      ],
+      "x": "0.1",
+      "A4": 0.5801749271137027,
+      "velocity": [
+        0.28574448269581176,
+        -0.42854382979498146,
+        0.8563006587403085
+      ],
+      "tangential_speed": 0.00043037646516574517,
+      "derivative_error": 1.9016926065536096e-70,
+      "curl_relative_error": 1.735562389718509e-16,
+      "scaled_remainders": {
+        "phase": 0.0002679547287903457,
+        "vector": 0.0015907057413173157,
+        "radial": 0.0013397580909972745,
+        "speed": 0.002266549559190962,
+        "plane_time": 0.003921534768284364,
+        "ray_time": 0.0029933979183858093,
+        "energy_plane_time": 0.007434188242287449,
+        "energy_ray_time": 0.006505153479792881
+      }
+    },
+    {
+      "direction": [
+        2,
+        -3,
+        6
+      ],
+      "x": "0.001",
+      "A4": 0.5801749271137027,
+      "velocity": [
+        0.2857142887338609,
+        -0.4285714258121615,
+        0.8571427729071236
+      ],
+      "tangential_speed": 4.3046130522433883e-08,
+      "derivative_error": 6.525250673830164e-67,
+      "curl_relative_error": 2.1175824705164364e-16,
+      "scaled_remainders": {
+        "phase": 0.00026796250492425465,
+        "vector": 0.0015907631494616273,
+        "radial": 0.0013398125230658041,
+        "speed": 0.0022662972667334114,
+        "plane_time": 0.003919608696078794,
+        "ray_time": 0.0029931238180303703,
+        "energy_plane_time": 0.007425890020919991,
+        "energy_ray_time": 0.006499405053284346
+      }
+    }
+  ],
+  "mutations": {
+    "phase_velocity_substitution_delay_ratio": "0.3333333361111111359126986193783085093035303688942686600913139116479808",
+    "isotropic_A4_1_mutant_axis_to_body_ratio": "2.999999958333333506944444214800117817108196159122085307698368087892554"
+  },
+  "conversions": {
+    "hbar_c_GeV_m": "0.0000000000000001973269804593024658908944081867211037272727035563164005962674339804383",
+    "parsec_m": "30856775814913672.78913937957796471610731921160409179801404019227702329",
+    "rows": [
+      {
+        "label": "MAGIC_quadratic_subluminal_with_systematics",
+        "E_QG2_GeV": 59000000000.0,
+        "a_sqrt_A4_bound_m": 1.1585774774903827e-26,
+        "axis_a_bound_m": 1.1585774774903827e-26,
+        "unknown_orientation_a_bound_m": 2.0067150555183303e-26,
+        "quadratic_slowness_coefficient_GeV_minus2": 4.309106578569377e-22
+      },
+      {
+        "label": "MAGIC_quadratic_subluminal_without_systematics",
+        "E_QG2_GeV": 80000000000.0,
+        "a_sqrt_A4_bound_m": 8.544508896491573e-27,
+        "axis_a_bound_m": 8.544508896491573e-27,
+        "unknown_orientation_a_bound_m": 1.4799523534447685e-26,
+        "quadratic_slowness_coefficient_GeV_minus2": 2.34375e-22
+      },
+      {
+        "label": "LHAASO_v2_quadratic_subluminal_ML_MINOS",
+        "E_QG2_GeV": 690000000000.0,
+        "a_sqrt_A4_bound_m": 9.906676981439505e-28,
+        "axis_a_bound_m": 9.906676981439505e-28,
+        "unknown_orientation_a_bound_m": 1.71588678660263e-27,
+        "quadratic_slowness_coefficient_GeV_minus2": 3.1505986137366098e-24
+      }
+    ],
+    "cosmology": {
+      "H0_per_second": "0.00000000000000000218298892936972427965290644573535201129169269972939354742037662293484",
+      "Omega_m": "0.315",
+      "z": "0.151",
+      "I0_seconds": "66645841266704038.74477177502132849966892338259879118230774419040947475",
+      "I2_seconds": "77077839348634403.91742209222693196737449129210250875471427694053560111",
+      "I2_over_I0": "1.156528867873142810677959260491028142167114239972690083175626249256042",
+      "two_quadratures_relative_difference": "5.079517944308438134867741810608525180415867892063626718428592806236269e-71",
+      "illustrative_1000_minus_200_GeV_delay_at_table_limit_seconds": "0.2331276804495558530583654963385465931931683693081550237104784590868843",
+      "description": "Illustrative coefficient conversion; this is not a fit, measurement, or predicted value of a."
+    },
+    "LHAASO_printed_precision": {
+      "eta2_upper_printed": "0.32",
+      "Eplanck_GeV_assumed": "12200000000000000000.0",
+      "EQG2_from_printed_eta_GeV": "682000733137.4358574047979689630392518093885996815153459026236598502089",
+      "EQG2_table_GeV": "6.9e11",
+      "relative_difference": "0.0117291176884294364080851353603807229206732250045591801619141634972193",
+      "eta2_from_printed_EQG2": "0.3126233984457046838899390884268010922075194286914513757613946649863474",
+      "a_sqrt_A4_from_printed_eta_m": "1.002287356165606332879823452773108949010206909341140104067875771138869e-27",
+      "conclusion": "The displayed eta2 endpoint and displayed EQG2 value are not exact numerical inverses; retain both rather than claiming exact table correspondence."
+    }
+  },
+  "elapsed_seconds": 0.17025879095308483,
+  "source_sha256": "8b45196ba4a106f6f8be0454312602a03abfeedda372dac00be5858f785b8d01"
+}

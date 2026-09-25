@@ -1,0 +1,12 @@
+{
+  "note_sha256": "3b808676ba912bc0024581356a4b8d54bc33e5028c7bc7db18df18618f580a9b",
+  "runner_sha256": "a58a09da5c9673462c3fad051b37fa921cfdbfebcb4e56a7c633ca00d6549dce",
+  "result_sha256": "937394774f9e5b77753c468d721e24578111860350bcf3835bfb3c24c845dfdf",
+  "cache_sha256": "6fc3d14cdbdb194fb5aef57aa50220bcf0f637d33ae39c1c13a1e3c70c3d7763",
+  "root_functions_identical_AST": 8,
+  "exact_floats": 391,
+  "differences": [],
+  "primary_seconds": 1.7760000228881836,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

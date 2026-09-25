@@ -1,0 +1,1064 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "5feb53d99a0e1008019ff4563c16ba880ab3ab6e38fee5fd2682e62f081ee157"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/AUTHOR_SEAL.json",
+      "sha256": "4dd7d35946c80fda3c70322c5ee61b475ea9f5fba4fde7a0e7cbae3521ed23cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/CONTROL.stdout",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ENERGY_POLYNOMIAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/ENERGY_POLYNOMIAL_RESULTS.json",
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ENERGY_SPECTRAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/EXECUTION.json",
+      "sha256": "d19bcffe62cb6a8ba89c510114af76c461db58e2b35c1ac60ecd1add1451b113"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/PRESEAL_ELECTRIC_CORRECTION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/PRESEAL_ELECTRIC_CORRECTION.md",
+      "sha256": "a2fb49dfe4f567dc226bb89bfc7cbd46236a8575a5132933a529ed42d0ca7cb3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/ROOT_REVIEW.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/ROOT_REVIEW.md",
+      "sha256": "c362fd8417bbcc0c14acf3ce35601bb13f339b9bdd9710f36a3e00258379bcf9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/SOURCE_PINS.json",
+      "sha256": "86f22245e10d07575237c6e8e44e1aee2b3caab66882d9ae71abcfb2f4ecb36d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/SPECTRAL.stdout",
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/SPECTRAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/SPECTRAL_EXECUTION.json",
+      "sha256": "fc94d17d74b59ce488310f1f5114068953e5097ac41a7d7e7418b3f519343149"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/energy_spectral_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/energy_spectral_controls.py",
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "sha256": "c3acc0d5aadf55e2434c2f7e577bd45624fdb84bbef08b02b7b9c9be94b39adf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/SPECTRAL.stdout",
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json",
+      "sha256": "e37c9ceb6de5f1db9f3de02158e776da6b762ef04a098a26903c8889ced7910a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/history/pre-electric-occupancy-correction/energy_spectral_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/energy_spectral_controls.py",
+      "sha256": "602091cef199b21c239920a2e8732e910fa0daf2145e57a1d0d1dc4cc6756225"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/prepared_energy_polynomial.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/prepared_energy_polynomial.py",
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/AUTHOR_SEAL.json",
+      "sha256": "b0378a615fdaaca99e563a78e4e1361a19635976e114e2f04f5e5485ceb8a69c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/CONTROL.stdout",
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/EXECUTION.json",
+      "sha256": "a28145200af5625e11441ee976d9a13d96ad71b3ab94a35bac05645edf6be677"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "sha256": "dc34643135d5b31b627420ba6bc325b7d5b5dbf9095e6801d25b26d1dd8c66c6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POSITIVE.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POSITIVE.stdout",
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POSITIVE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POSITIVE_EXECUTION.json",
+      "sha256": "7e0e6361822bf06aa7d8a5493e7aab0de0995dd5648bb451de49165078742e47"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_POLYNOMIAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POWER_POLYNOMIAL_RESULTS.json",
+      "sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_POSITIVE_CERTIFICATE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POWER_POSITIVE_CERTIFICATE.json",
+      "sha256": "959fcdc60492b703c95d8f6eeece171f61106428660abdeed5a712c14eb01d2b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/POWER_SPECTRAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/POWER_SPECTRAL_RESULTS.json",
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/ROOT_REVIEW.json",
+      "sha256": "a87dbbdcb534b42e17fdb5904c13d34b73d44c1f5497fee63621aa5e0b63fdf2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/SOURCE_PINS.json",
+      "sha256": "2188fd68dce582e4f86db868cd9ba9ca763aaa86675655e9d4a9ac97befb95d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/SPECTRAL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/SPECTRAL.stdout",
+      "sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/SPECTRAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/SPECTRAL_EXECUTION.json",
+      "sha256": "aef16985f23d9754d22910d37d0899700775e0e6f142089d4472e055bea20faa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/power_positive_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/power_positive_certificate.py",
+      "sha256": "7ca2a3580a8b2c90ed9ee3f4ae1fde7c08336237f7743fb0b64fabf0fe29cd0b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/power_spectral_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/power_spectral_controls.py",
+      "sha256": "5fbf4599e5571419d8b555b1444d978dbec86043b50c20a810e56f360089e633"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/selected_power_polynomial.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/selected_power_polynomial.py",
+      "sha256": "4bdcfb289da43524edfe91b190bc3dcc1818f17516b70f7e37b674af10e46e9b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/COMBINATORIAL_FIRST_PATH_FAILURE_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/COMBINATORIAL_FIRST_PATH_FAILURE_STDERR.txt",
+      "sha256": "db513692dd3167863ea138c81278fcbc3413cbc360067a166b6318f8f38741fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/COMBINATORIAL_FIRST_PATH_FAILURE_STDOUT.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/COMBINATORIAL_FIRST_PATH_FAILURE_STDOUT.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/COMBINATORIAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/COMBINATORIAL_RESULTS.json",
+      "sha256": "a60289b0626a6006eba52faf5112173de1e44ecb39db5814e4100d8a739a3f52"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/COMBINATORIAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/COMBINATORIAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/CONTROL_EXECUTION_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/CONTROL_EXECUTION_RECORD.json",
+      "sha256": "3006b664501b5d4c4068d81b321eabfeadafd5ef33b2abd82c22748607865a71"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/ELECTRIC_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/ELECTRIC_RESULTS.json",
+      "sha256": "ab80baf3998b246a61db6e0e3fdf9b1d495962f3fa8e9f315546aa0b9fe399f0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/ELECTRIC_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/ELECTRIC_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/ENERGY_FORM_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/ENERGY_FORM_RESULTS.json",
+      "sha256": "e6f5a0685245277b60e0a9df35056ab8bcf0be431f22ebad0da7e28de34779b9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/ENERGY_FORM_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/ENERGY_FORM_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/EVIDENCE_VERIFICATION.json",
+      "sha256": "ce9d54222b9e87bc4aefbbc562156a8fbce08ef9f9ee50c213fd8aaf05aada83"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/EVIDENCE_VERIFICATION_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/EVIDENCE_VERIFICATION_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/FORMATTING_REPAIR.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/FORMATTING_REPAIR.json",
+      "sha256": "89da6b2c0a3263b2258b5ac10307861985bf5cb8274907b0cd9a1f4735a44978"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/FORMATTING_REPAIR_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/FORMATTING_REPAIR_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/LAURENT_DATA_L6.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/LAURENT_DATA_L6.json",
+      "sha256": "7e92ecfede0c45d647113f2f41a7c0581be2657e3f0062cf97c87fa0d3392e5c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/LAURENT_DATA_L8.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/LAURENT_DATA_L8.json",
+      "sha256": "bd35c2eb36e45f1320ea030381b662c9787295b860cd4a99de9f373206c877f7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/MAGNETIC_CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/MAGNETIC_CONTROL_RESULTS.json",
+      "sha256": "bdcf198eaecf45c605c41905998ecbf5267a1c90579e82e978a63e6ba70d5c66"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/MAGNETIC_CONTROL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/MAGNETIC_CONTROL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST.md",
+      "sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_CORRECTION_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_CORRECTION_RECORD.json",
+      "sha256": "05093418c3277b2977ca427290571391bbace61cc604238c4ce2e29a739fc93b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EVIDENCE_VERIFICATION.json",
+      "sha256": "e6b09d19adfe61d8f3d7991eeda74212e9573d97056c086943ac4f95f7d57110"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EVIDENCE_VERIFICATION_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EVIDENCE_VERIFICATION_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EXACT_COMPARISON.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EXACT_COMPARISON.json",
+      "sha256": "88c3ddeec597e50c2f20e96e196aea10f6506744a6dc837918dbeff97c9b177e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EXACT_COMPARISON_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EXACT_COMPARISON_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EXACT_COMPARISON_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EXACT_COMPARISON_STDOUT.json",
+      "sha256": "81c697f0dcb6661c3916d6765440c260c22edb45168278df4180f2ff8eea8f6b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_EXECUTION_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_EXECUTION_RECORD.json",
+      "sha256": "a1b169eec553390e13dc1e6d41560e29e068abd2e73d95de38a0221ff791896d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_FFT_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_FFT_RESULTS.json",
+      "sha256": "dd695b9a5cedfcae933bbd309262d19d89a75bb8f44963ba2edaa3c50cb0f4a0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_FFT_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_FFT_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_SEAL.json",
+      "sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_SEAL_EXECUTION.json",
+      "sha256": "90a5af19c01740d593f4a8751504117b313ae861a49d06e229c33522570aa6fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST_SOURCE_PINS.json",
+      "sha256": "d755d2cd2a570e5956496fbc032cb19bd71fb7710a2c91b5beff3491ebf804c2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PRE.md",
+      "sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PRE_SEAL.json",
+      "sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_BINDING_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_BINDING_RESULTS.json",
+      "sha256": "5dde20b5c1605dab3ee79fb38f5b009d4eb16fd97ed7ddd95ed57823065cccd2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_BINDING_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_BINDING_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_BINDING_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_BINDING_STDOUT.json",
+      "sha256": "b921af73b5af1a5a0defa38b16a48a137188aa6c185adcfbcbd33e9e85cb5453"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_COMPARISON.md",
+      "sha256": "dcf357e3014199d0a720394308c28b142760c15d9a9754d2e9376c343b53d2e6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "19f2c31594a7a807771dde273c81bc01af9ecaf001f70eb569f4228be99e779c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_EVIDENCE_VERIFICATION.json",
+      "sha256": "ac9579f2714af3c8cf8957e91250b76807d3165b1bc9f75e324b47b48837490e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_EVIDENCE_VERIFICATION_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_EVIDENCE_VERIFICATION_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_EXECUTION_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_EXECUTION_RECORD.json",
+      "sha256": "9bd745157cca33f0da6c03fa23bdbdeaf27e76c3db477a602dec8a2235e8d8ed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_METADATA_CHECKS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_METADATA_CHECKS.json",
+      "sha256": "1a7b6d62d094cb998c0d9bb050a30fd243b4469df58c7394732de577dd69f639"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_METADATA_CHECKS_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_METADATA_CHECKS_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_METADATA_CHECKS_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_METADATA_CHECKS_STDOUT.json",
+      "sha256": "1a7b6d62d094cb998c0d9bb050a30fd243b4469df58c7394732de577dd69f639"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SCOPE_INCIDENT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_SCOPE_INCIDENT.json",
+      "sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_SEAL_EXECUTION.json",
+      "sha256": "682c5d566d5b49f77f0cd34bd6ae9085bb1e3d850d3e88bb0bc0c17e0050691b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SEAL_EXECUTION.json",
+      "sha256": "3d7d54c685954c04a5fce4ca4787083bcbced7b1801a80c506c2d0787150c68d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SOURCE_FREEZE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SOURCE_FREEZE_RESULTS.json",
+      "sha256": "6810b6c5d7eed5f99980fe279b7cf07778d1a9675962e95e37ff894c6ac94a6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SOURCE_FREEZE_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SOURCE_FREEZE_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SOURCE_PINS.json",
+      "sha256": "9642c898dc188abc7d4c149f92c728c711f519642e18d86dea1fee7425208037"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SURFACE_DECOMPOSITION_L10.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SURFACE_DECOMPOSITION_L10.json",
+      "sha256": "efa005f402f22d7fd302bd44cb75b685ff3fed81a8e6a68a6e23a5091f6c574e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SURFACE_DECOMPOSITION_L6.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SURFACE_DECOMPOSITION_L6.json",
+      "sha256": "8fbe73ef5d7fe441d7ff1be93b5db0d31465553cfe36794545ecf6d0f741a305"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/SURFACE_DECOMPOSITION_L8.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/SURFACE_DECOMPOSITION_L8.json",
+      "sha256": "cbb7e63c8552bceb3d255ea83860f770daa76d8221596537c8ca685e23c4f555"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/combinatorial_formula_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/combinatorial_formula_check.py",
+      "sha256": "7267fb1e66c1064c486962d464807dd2764fb644fadb3d7b5bf0ce545952da81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/electric_and_coefficients_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/electric_and_coefficients_check.py",
+      "sha256": "05175620d33e650e44647017017c641250c5cdbf63daba836bc2777e6461a442"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/energy_form_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/energy_form_control.py",
+      "sha256": "72f35542a2121f985f0cb25d86e8f87746648b5e480959217d37774904d4b296"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/freeze_inputs.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/freeze_inputs.py",
+      "sha256": "872b98b9a6c824df5f4eacea26b1fff5c5f1ebbb9c4541ed7ed501f55d84da02"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/magnetic_increment_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/magnetic_increment_control.py",
+      "sha256": "718ed52dd8c9acfcc80f13260d2dbbb3956ebb2646a389046fcf35416e93f938"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_bind_and_compare.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_bind_and_compare.py",
+      "sha256": "8dc35ee5708e20c68df91cd38d0d95e469182550c29bc69c93e1134843bb4cc0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_fft_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_fft_control.py",
+      "sha256": "8982492a605813aecf9b1d92936b05d5d7c4e3c3656702d81f42e270ca797d1b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_history/POST_TRANSPORT_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_history/POST_TRANSPORT_FAILURE.json",
+      "sha256": "4f9a7e2a21296982254dc74422a3640475879ff51c2bed24d91d87e392c13cdc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_history/initial_pair_coordinate_comparison/POST_EXACT_COMPARISON_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_history/initial_pair_coordinate_comparison/POST_EXACT_COMPARISON_STDERR.txt",
+      "sha256": "0a74c4ece95cfaa7b7f257b7acf60c577babd260688dc296ff8dde5a69ab7854"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_history/initial_pair_coordinate_comparison/POST_EXACT_COMPARISON_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_history/initial_pair_coordinate_comparison/POST_EXACT_COMPARISON_STDOUT.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_history/initial_pair_coordinate_comparison/post_bind_and_compare.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_history/initial_pair_coordinate_comparison/post_bind_and_compare.py",
+      "sha256": "94091e1b744f3adcbe34fdca7218b8bd922c00b7af2acf0523a901704a7d5e4c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/post_verify_evidence.py",
+      "sha256": "5ca96f0e9908b137e7bbb4fbaf9b44ae3f273d268ff4c34de6ff764b3577df7b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_bind_part_a.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/publication_bind_part_a.py",
+      "sha256": "5400c46eb7a00cd97814462ebaa62571537ebc6fcda53dde0106299aefcde909"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_metadata_checks.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/publication_metadata_checks.py",
+      "sha256": "71e9b2cd8961b300ac5ee608952ed7343fdb8613d4c70f7eb3226da3723fd36a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/publication_verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/publication_verify_evidence.py",
+      "sha256": "092ca9ee3e26a2214250c8c4fc9127c1bd2cd7d1b6a6559625317688c04f9774"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/repair_note_delimiters.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/repair_note_delimiters.py",
+      "sha256": "d736bc840350ec74174e1d32e9379faedcd62f2d592111620cae8f7bbd616886"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/seal_post.py",
+      "sha256": "2b667afeb55f7aafe60d741378feca7903d597fa441baa63acf3e2c872a03b36"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/seal_pre.py",
+      "sha256": "9880d40ac129cacaa8bedc60ca0bdc519fcea2014520a99462fbe5aff235d2be"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/seal_publication_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/seal_publication_comparison.py",
+      "sha256": "cac6689bd33fc01581f95560c41d1e8fcd52dbd3c4127a5e35da50fde65beeb3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/verify_evidence.py",
+      "sha256": "080c6d2fd65b6b610b5b0d7ca3ae00e36bed42c8e9f6e4199c0500ca47f44ad9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/COEFFICIENT_TABLE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/COEFFICIENT_TABLE.md",
+      "sha256": "f52994d6bc4f145b2e43566c1282f95f38e16a4042f835c045f9ab82a2ae23ff"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/DIRECT_MATRIX_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/DIRECT_MATRIX_RESULTS.json",
+      "sha256": "2e548720c5efa1d2a119c1e3055d0d00023ad60c45ce6891b83c431436c97264"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/EVIDENCE_LOG.md",
+      "sha256": "5cd7264f520081940900a502e6f26ab964d6a05590964964d61c3d3b7ea553e6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/EVIDENCE_VERIFICATION.json",
+      "sha256": "660d3b8c6d68e21b4c7c62c6021e5205c7805399d08c536a2b3820d102898f23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/FINAL_RECHECK.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/FINAL_RECHECK.json",
+      "sha256": "7e7056c809c47e5817970cf3691e870569923dcaca0c2ff95deda0a529f34197"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/FOURIER_CORRESPONDENCE_INITIAL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/FOURIER_CORRESPONDENCE_INITIAL_RESULTS.json",
+      "sha256": "cf1b55508d90983653512e0b2c22dba555a9fcf1ebaca7994d9b497f3be58af9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/FOURIER_CORRESPONDENCE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/FOURIER_CORRESPONDENCE_RESULTS.json",
+      "sha256": "bf30837098015920cbd99d5f571cf6cdd798cf3bd3977d9dd4fbb61c20b28988"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/JET_CHECK_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/JET_CHECK_RESULTS.json",
+      "sha256": "0326311f07ae1a39e28ba9a5e31fa60c42eaada5f9c33bfd1df775ecc5107273"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/L16_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/L16_RESULTS.json",
+      "sha256": "9383b4224442b927e3d565a197598b10decd061e8af5676cbfc9b551c35c62df"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/L6_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/L6_RESULTS.json",
+      "sha256": "7325b28d7331f2781d5584cb67ce5350da7ff6c64486b64208fee47ad7df4380"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/L6_WINDING_DIFFERENCE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/L6_WINDING_DIFFERENCE.json",
+      "sha256": "cc13fdbabe9fd81214ffcf5519dca41c950625beac343ae8fd1916de0ef432ed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST.md",
+      "sha256": "83e9fa441b7fbee49d1b7e24708dcd15a7d0641abbba3efb57065f188d7a80e4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_CHECK_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST_CHECK_RESULTS.json",
+      "sha256": "ac608d834cb1068f002e9cecdaa980b40b4b098315992cf6b0067ec0d5acc9d6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST_EVIDENCE_LOG.md",
+      "sha256": "59352dd755c569517ebda3f790b7bcc8377d64a0d1bbcfd11a202e160b09fa60"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_FINAL_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST_FINAL_VERIFICATION.json",
+      "sha256": "7721e6fdae5466519e41e7cf8923c1e31f0fd595c17686f364620897b14d13da"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST_SEAL.json",
+      "sha256": "583af00f065fbc2d9c5de9fff379b441f9c09a67cad630612380929329932369"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST_SOURCE_PINS.json",
+      "sha256": "d4602c1b61e9a35a202d4da07c2b90884717d8e557e5bd1cb615b7c2ba6b9c0d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PRE.md",
+      "sha256": "be47d27ab25dbf1853331b1bb8f02a2b67b3cc93c244b4a830fa86b810c71216"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PRE_SEAL.json",
+      "sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_CHECK_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_CHECK_RESULTS.json",
+      "sha256": "e11d631ee9a983cab90af97f0e10bb402b5ed782d31c71438d4a0cf661d0c212"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_COMPARISON.md",
+      "sha256": "64f8526758cfb4b4cea6a0833713440f4c03d05edea12d2fe8d756a584fffdf4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "318c1b01fb81795ca58709b64bce1de2bddb39981904b7fe1a52b10a2eaf8b69"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_EVIDENCE_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_EVIDENCE_LOG.md",
+      "sha256": "f87fdb83efe226adadc9174b9c33a0013e939b7309426248513f2ae26db20dd9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_SCOPED_NOTE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_SCOPED_NOTE.md",
+      "sha256": "f4c07dbd1f47b0c6c3883eb06089b489df955b3b0fd6c507ca989cbeea735fda"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "65fabd8d7f3a02122c8c94aa175725a7f8eeac4c7abd2931ff9e25a24498651d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/SOURCE_PINS.json",
+      "sha256": "7d0b8b3ffd79ee4730ab1e415cc7d1d6f2928b431f7a2cde9712fef61c305973"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/direct_matrix.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/direct_matrix.execution.json",
+      "sha256": "92ebda1137ab4233988ec817406e475a6b3677eebc7b45763b59781b687744ca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/direct_matrix.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/direct_matrix.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/direct_matrix.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/direct_matrix.stdout.txt",
+      "sha256": "2e548720c5efa1d2a119c1e3055d0d00023ad60c45ce6891b83c431436c97264"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/direct_matrix_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/direct_matrix_check.py",
+      "sha256": "2cc6c493ac87418a4d98fc8af06e11e73ead8d18f1efc5c8609115bff035a3c0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier.execution.json",
+      "sha256": "3cf252cdfd26f5e7decc82e0af995b5535e3df32bebd32792dfbc2640b053926"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier.stdout.txt",
+      "sha256": "cf1b55508d90983653512e0b2c22dba555a9fcf1ebaca7994d9b497f3be58af9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_and_correspondence.initial_L6_gain.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier_and_correspondence.initial_L6_gain.py",
+      "sha256": "d2f496718609d245f9c564e767b9b49cb8a6a1778b869feef86da1b9f05b20ef"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_and_correspondence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier_and_correspondence.py",
+      "sha256": "46fe9108532a225e608de7aa8349caaafd8d10e86f11f135a82816f3b8bacaa1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_corrected.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier_corrected.execution.json",
+      "sha256": "371e8fed6108f66f84eb345f50fa55ec4fd6f919e686f0f9f001ea2231ac14c8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_corrected.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier_corrected.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_corrected.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/fourier_corrected.stdout.txt",
+      "sha256": "bf30837098015920cbd99d5f571cf6cdd798cf3bd3977d9dd4fbb61c20b28988"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/freeze.execution.json",
+      "sha256": "1cb55894a8aca33935a62112566ab6dd9d71a70bcce304d9f78d7442ebaf9241"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/freeze.stdout.txt",
+      "sha256": "7d0b8b3ffd79ee4730ab1e415cc7d1d6f2928b431f7a2cde9712fef61c305973"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/freeze_sources.py",
+      "sha256": "34539f1cbaa27b68069607c8ffc0534ae3ebfa1c17d07619973a34fccc574149"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/infinite_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/infinite_RESULTS.json",
+      "sha256": "cf41168d37492ab318a1a6e99569b5f72b80b89ca58879363f259b47e21461e8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/jet.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/jet.execution.json",
+      "sha256": "067b9a101cb0399cc3498c70a29744ea57d2e83e1eba1aa7af842aab86c05fbc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/jet.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/jet.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/jet.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/jet.stdout.txt",
+      "sha256": "0326311f07ae1a39e28ba9a5e31fa60c42eaada5f9c33bfd1df775ecc5107273"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/jet_coefficient_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/jet_coefficient_check.py",
+      "sha256": "f03a3607f583f4e7c6c2c1c28fc2a20271ab2cfc788edd20b19261e7730f338b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_check.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_check.execution.json",
+      "sha256": "4211b76e2c954be7bb9548ef81dbe578481320371c6f2ac6e89ab4bf9064f85f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_check.py",
+      "sha256": "b377af836456c2c3e1e413d16c6457de879121d1177d1ddba4b46a17917c2cc8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_check.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_check.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_check.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_check.stdout.txt",
+      "sha256": "ac608d834cb1068f002e9cecdaa980b40b4b098315992cf6b0067ec0d5acc9d6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_freeze.execution.json",
+      "sha256": "d07b7798cfe9c27976103be0279d035c0711b5cf0db142faeba78602230653d6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_freeze.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_freeze.py",
+      "sha256": "f17bbe6146d2e914f5a7d100e2ff53476e37da788c9e10a2f00e488cd1fca194"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_freeze.stdout.txt",
+      "sha256": "d4602c1b61e9a35a202d4da07c2b90884717d8e557e5bd1cb615b7c2ba6b9c0d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_seal.py",
+      "sha256": "0b30da2b0509232018c7ff8ecb165d2ce0dcfc84d8f804c04d8ffe0df5c769e7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_verify.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_verify.execution.json",
+      "sha256": "36ce87b8348cbfd6dff0de5fb8cb001a63e071d074de0609a8623e4b956d4fa2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_verify.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_verify.py",
+      "sha256": "d735a1cf26ca6809933a81b8a583cb3e9be0a7f8bede77852c0dbd3a541c75df"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_verify.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_verify.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/post_verify.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/post_verify.stdout.txt",
+      "sha256": "7721e6fdae5466519e41e7cf8923c1e31f0fd595c17686f364620897b14d13da"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L16.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L16.execution.json",
+      "sha256": "e662495ab334fc21319d77f44967ad921e656834d7cc8aa0bcae70bbba182e11"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L16.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L16.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L16.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L16.stdout.txt",
+      "sha256": "302e9f8f4bc819940280389431d9b18c369e448f95c696653c0f21cca03e4dc3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L6.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L6.execution.json",
+      "sha256": "2b8693b67c9e7c4bd9076fa91cb9e667e5f609cde35660b0a3e68db37f3703cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L6.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_L6.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_L6.stdout.txt",
+      "sha256": "4deaaceb43de9cbf6ea825ed5e69f0b057604b881884e07e5759b9bc96fa035a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_infinite.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_infinite.execution.json",
+      "sha256": "833dbf32537922cdf08c8ee13f4d65c0c52bb151a75a5676da70faf586d51cfc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_infinite.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_infinite.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_infinite.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_infinite.stdout.txt",
+      "sha256": "aad63450f75896ee938bb5a190a15a4868e356b5d0cfbf34132fa0ec73882953"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_power.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/primitive_power.py",
+      "sha256": "4fb7c4471d0318ea9398b2ffa1ef9563c83df88883983beb2ec8b3b851c60f92"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_compare.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/publication_compare.execution.json",
+      "sha256": "c633f08b260b424a9a1f9e120ae4046e5588a91cb408d818a71ef1805eb664a2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_compare.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/publication_compare.py",
+      "sha256": "1f7cbf4829f5be220fb64a41448f5c88b39547fe0a3ab433abbe02ddab21dadd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_compare.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/publication_compare.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_compare.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/publication_compare.stdout.txt",
+      "sha256": "e11d631ee9a983cab90af97f0e10bb402b5ed782d31c71438d4a0cf661d0c212"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/publication_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/publication_seal.py",
+      "sha256": "d147c7a9b0d287e2a9832b8a41aeb4137603117e654e5c990a2c4bc661fa8aa5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/run_logged.py",
+      "sha256": "5c46d5e2da2402e312cfb9ecd3ae23bb143fcedbb0dda6c32eb5b2e06f47221c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/seal_pre.py",
+      "sha256": "23b9f75c62d6348f302f54d6359c1e9377ed41f25f17927718acc74da766f417"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify.execution.json",
+      "sha256": "8afff2c2d0a743e860c2afbbf696ecaf63577af5efd38ff81f35206bc24520ec"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify.stderr.txt",
+      "sha256": "47c4102db36b913f501ea5e1bf6f527198af9e9c61ecaa3bfcf5692ca18eef15"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_corrected.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify_corrected.execution.json",
+      "sha256": "fac0ade656567dde523df7b04d33f84f61a73932089ac10838a5aff25a04e01c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_corrected.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify_corrected.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_corrected.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify_corrected.stdout.txt",
+      "sha256": "660d3b8c6d68e21b4c7c62c6021e5205c7805399d08c536a2b3820d102898f23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_evidence.initial_uniform_pair_count.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify_evidence.initial_uniform_pair_count.py",
+      "sha256": "968f18b89b483975927fd9488802208c21f2f3a39ed9b7fb585769998a5e8abc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/verify_evidence.py",
+      "sha256": "79238b4dbc7ba51e4c0c79073fb364f0f55275aaa233397fdb16418578baf3d4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ADDED_ENERGY_PUBLIC_WORDING_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/ADDED_ENERGY_PUBLIC_WORDING_QUALIFICATION.md",
+      "sha256": "11656b555407b9259c03b68c2087b8c4cbd6ebc1bbb3faa8073dd34ef035c622"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/POWER_PUBLIC_DOMAIN_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/POWER_PUBLIC_DOMAIN_QUALIFICATION.md",
+      "sha256": "24582ffcc651d5cdaa44c93987f153262435f6b066ff7da0f2c1d518af18d2e3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_NINTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/TWENTY_NINTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "9e93248a3895d00774a4626132dce8874b509c1906e6a463064f6b9768e5768c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_NINTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/TWENTY_NINTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "511547871f7a35c278bb8cbc51225956da8f45798621fca1a209b94c32fc2c23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTIETH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/THIRTIETH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "58b2e0625028e04c67c4860b5c418dbe2e9f839551e1d7cc1931ed29da4a2955"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTIETH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/THIRTIETH_POST_ROOT_VERIFICATION.json",
+      "sha256": "57c2c9ad946d7146950ac303547d674476a3ed2d77878c21bb0458e39105e9d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/INPUT_ENERGY_POWER_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "67e4c75c06bbcaa98bbb4e9e3a9881c2a2ed90c6f38977fb1613bc812e97eccc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/INPUT_ENERGY_POWER_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "10ace3e319afd96b84c84c89a24733631fe07416ea603c38bcb974fb41f82109"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/INPUT_ENERGY_POWER_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "fa1943c8e84d63fb05c075cbff582ea61df768ad7f588060f08e530eb5eb05cf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_FINAL_REVIEW.md",
+      "publication": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/INPUT_ENERGY_POWER_FINAL_REVIEW.md",
+      "sha256": "b9946bc181e65e7e596d9d524f2f67a3e673308e4e6c3abb595bc5e447a6b534"
+    }
+  ]
+}

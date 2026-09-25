@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-25T04:12:09.630068+00:00",
+  "seconds": 0.3964193749707192,
+  "exit_code": 1,
+  "source_sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+  "stdout_bytes": 0,
+  "stderr_bytes": 1044
+}

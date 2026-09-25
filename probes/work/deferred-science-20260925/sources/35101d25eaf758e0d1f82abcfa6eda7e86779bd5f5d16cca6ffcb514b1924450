@@ -1,0 +1,35 @@
+{
+  "kind": "independent_averaged_variance_pre_before_author_release",
+  "sealed_at_utc": "2026-09-24T14:42:51.145549+00:00",
+  "pre_file": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/PRE.md",
+  "pre_sha256": "57819426fec612dcb000612dcb8419cca34d3538904dcaefea13fb4820181d8e",
+  "base_science_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "ordinary_parent_revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+  "ordinary_parent_observed_head_at_seal": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+  "source_hashes": {
+    "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+    "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+  },
+  "evidence_hashes": {
+    "independent_variance_checks.py": "44b7e0eea9c2b9d64f6c32a00af87fea6e1c99a2446c844606bbb16a4ad4bd77",
+    "FINITE_CHECKS.json": "3b33852cd7e75dafd68faf6f0bfa24acd2c929faf9365bc3d0ea046d7df3e81c",
+    "FINITE_CHECKS.log": "9e03a26750f717bd4c8f89fc5aeb8ad1c827cf7746175b43b6265babe6b8d9ef"
+  },
+  "new_author_sources_read": false,
+  "fixed_time_variance_personal_read": false,
+  "averaged_variance_personal_read": false,
+  "delegation_used": false,
+  "finite_control_exit_code": 0,
+  "finite_control_log_completely_inspected": true,
+  "conclusions": [
+    "For fixed 0<a<b, liminf epsilon^2 times integrated ordinary variance is at least kappa/2 times the limiting second-birth probability increment.",
+    "An exact local-star reconstruction gives 2I <= Gamma_B,infinity <=16I and a strictly positive probability increment.",
+    "The scaled integral minus its nonnegative exact first-high-Riesz energy-square contribution converges to that coefficient; the high remainder is unresolved.",
+    "No pointwise full-variance conclusion or physical reservoir identification is asserted."
+  ],
+  "formal_audit_status_applied": false
+}

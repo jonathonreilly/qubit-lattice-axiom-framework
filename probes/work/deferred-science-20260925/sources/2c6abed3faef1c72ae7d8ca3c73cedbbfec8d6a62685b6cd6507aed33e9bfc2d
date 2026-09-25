@@ -1,0 +1,406 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "canonical_copy": "outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "canonical_copy": "outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_A_CORRESPONDENCE.diff",
+      "sha256": "3c517be49c11a116098cdb19ecc4cdcec9e0a8a26b838b1e23ec46f1c87de1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_B_CORRESPONDENCE.diff",
+      "sha256": "e7f846850c55d31a718f4d74d773806e5a79b0dc86181aa6b07893fe4ec7f8bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_A_CORRESPONDENCE.diff",
+      "sha256": "3c517be49c11a116098cdb19ecc4cdcec9e0a8a26b838b1e23ec46f1c87de1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_B_CORRESPONDENCE.diff",
+      "sha256": "e7f846850c55d31a718f4d74d773806e5a79b0dc86181aa6b07893fe4ec7f8bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/__pycache__/primitive_dynamics_control.cpython-313.pyc",
+      "sha256": "7ba152ab1c72540617005c13715be5e1427a7990080eb4257cb14ba730791930"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/AUTHOR_SEAL.json",
+      "sha256": "70c96cb1ce304408760dbf698a119a8468d9ca466438b4ce1aa8fd5f5ce42af4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/EXECUTION.json",
+      "sha256": "94e7d99cd3b114a8c91cff2158250517e89f15a9d6bc57c65d7098ce5efc34cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/FLAT_MATTER.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/FLAT_MATTER_RESULTS.json",
+      "sha256": "aaa4ee6e9f84d7e7aa065bb68747165c3fe7257d1f4366028d7770d8f9a5aeca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md",
+      "sha256": "867d9b04e2023cdf3280382840e1f98fe1cd9061bf529ca94a84390c888bedc1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/ROOT_REVIEW.md",
+      "sha256": "f010a6dd57e764adb06a560a3f124732b3157b2d02f750af670dd8c64fd8217a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/SOURCE_PINS.json",
+      "sha256": "cd24ee55a929037415ca1dd1b645391154bf0743f85661fb0d1d5c13b9b7d8ee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-dynamics-personal/flat_matter_controls.py",
+      "sha256": "ce3c7aa5e31bfb78231b4cd4ae746a97878fa39da6ae08fc24ab63d14db3c7d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/AUTHOR_SEAL.json",
+      "sha256": "51b08bce5a0bbfefff5b6125164cf9a00510deda5fe0da11acb06b25623941bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/EXECUTION.json",
+      "sha256": "6ac7d2289a12b3957afbfcd026eec5f0a4746a669a8948c2d324b57c639292e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/OUTPUT_ENERGY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/OUTPUT_ENERGY_RESULTS.json",
+      "sha256": "ce61deef4a687cc851fd19b12a35cfbdc32a34f70b35fe274a45ce882957e659"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/ROOT_EDITORIAL_QUALIFICATION.md",
+      "sha256": "9463799001beacfe35f5dacfc6260e360397bfce4ab1c11b36df130196468cda"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md",
+      "sha256": "57d3e1c06396db01957536224d7c03d0b3a04908a34ae01bb56a37ea5250ff35"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/SOURCE_PINS.json",
+      "sha256": "9bff76ca71e18ba6787cd01311af0702ffbd92362834f810fdcf3af018b8e8fd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_sources/prepared-probe-output-energy-personal/output_energy_controls.py",
+      "sha256": "8d70c1821496c04cf98b066e0186fc6aa544c5f3f06bc97b312dabcc1e9a0eee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "948111c494396643e5c79827ab71b0f59978542a0ae985f8bf490ced267e9d92"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "6bc0a19c2b4bd8787048072b81a9a5a485523c94491617c6a1bf3e3fa6f08d65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9c2fa71f055ceecaa9bb3a3ef6929c9be3772f8bd7a10a2e83480c8641217c69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_sources/repo/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "54b05c8d2e36496944f42a149f7c55dd5f868f299c8acb692c2fc5bdb9be174a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/external/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d80880656dbe908a900cc3e43d3b2f48b156993729ef1dc7a33d00bcfa65c04b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7b7814246e22731aac2538422d95035b60f6f1c23cf6035ade93c43dc137cce8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "5a31469c3bc0659f530d6527e3aae7128c6b6df514f354701090c2fb45c80aa4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_16.json",
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/FLAT_ACTION_SIDE_6.json",
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "9e43d561fb8a01e806b8e64e11028da0de4af33e085c29ac5304402a164ee78d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_sources/repo/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/external/prepared-matter-probe-personal/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/external/unrestricted-record-count-independent/PRE.md",
+      "sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/external/unrestricted-record-count-independent/PRE_SEAL.json",
+      "sha256": "b6e0c33fe1286a876f1230759cb62769d57475d76c2ea1a6aae633064e2ba9d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/sources/main/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_FRONT_DELTA.diff",
+      "sha256": "db0435b410cffdf689bfa806651f6580e9354a2c116136c591c5c3bac35bd1f4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/AUTHOR_SEAL.json",
+      "sha256": "47791345950251e276eec8d36de489e59c97999aa2b17547f83af3c20ffacaa6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/CONTROL.stdout",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/EXECUTION.json",
+      "sha256": "c41e3dda93649cfdbabe4868bb7e17e6aa631e6c3473e43eb1ed6f5ec4c9dcfe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/ROOT_METADATA_QUALIFICATION.md",
+      "sha256": "1a4d164b0d23ae64f90b4004b22eb8dce169d316f63c761dcdbb99efcec0eb7f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/SOURCE_PINS.json",
+      "sha256": "852b90181a7aa93e0742cfa144ee1abba784d5fc46c22a84b4c08ea04ce4a0db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/UNIT_CONVERSIONS.json",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/post_sources/unit_conversions.py",
+      "sha256": "cad001b23a6fd9c896ee978a34e7320f6cb0e3ae98d8f46f6ad61652a1af5fb7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/infrastructure/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7b7814246e22731aac2538422d95035b60f6f1c23cf6035ade93c43dc137cce8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "e3a458300c9e9b2e57dac999f2c38ddb02ea54a736c2489778fce584e12dd379"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "54b05c8d2e36496944f42a149f7c55dd5f868f299c8acb692c2fc5bdb9be174a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "d80880656dbe908a900cc3e43d3b2f48b156993729ef1dc7a33d00bcfa65c04b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "9e43d561fb8a01e806b8e64e11028da0de4af33e085c29ac5304402a164ee78d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/prior_run/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "5a31469c3bc0659f530d6527e3aae7128c6b6df514f354701090c2fb45c80aa4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "948111c494396643e5c79827ab71b0f59978542a0ae985f8bf490ced267e9d92"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "6bc0a19c2b4bd8787048072b81a9a5a485523c94491617c6a1bf3e3fa6f08d65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/receipts/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9c2fa71f055ceecaa9bb3a3ef6929c9be3772f8bd7a10a2e83480c8641217c69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt",
+      "sha256": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json",
+      "sha256": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/publication_sources/tree/scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py",
+      "sha256": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-24T16:38:05.553578+00:00",
+  "comparison_base": "918fbe18619667017c56c29677f9f02363368d89",
+  "only_note_change": "Visible Type and proposed_retained status metadata; conditional/audit caveats and all mathematics unchanged.",
+  "fresh_primary_seconds": 75.59323716163635,
+  "scientific_results_equal_original_except_timings": true,
+  "stdout_objects": 4,
+  "files_sha256": {
+    "docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f8e82e59a7a58eb2de853830af9c9ab6d97e743a396878d46eec882bf2395f2d",
+    "scripts/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py": "3d0e581de398f11cae0986b18c425e699b7b78f5269a85857eadb0151d1a0d77",
+    "logs/runner-cache/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.txt": "b62612615e8bde8ad27c16069e7809737f255c7b2ec6104b041d843050136a78",
+    "outputs/no_first_birth_cube_energy_20260924/NOEVENT_CONTROL_RESULTS.json": "91436cf9aedef1b106682e8137a72363a2bb0a2a7d742c007c0f88c0d4a1d6aa"
+  }
+}

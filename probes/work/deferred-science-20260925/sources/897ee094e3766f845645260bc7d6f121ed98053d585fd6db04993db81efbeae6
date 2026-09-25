@@ -1,0 +1,66 @@
+{
+  "phase": "Personal43 author seal before independent reconstruction",
+  "sealed_utc": "2026-09-25T07:45:39.041896+00:00",
+  "report": "ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+  "report_sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+  "members": [
+    {
+      "path": "ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "bytes": 15036
+    },
+    {
+      "path": "ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+      "bytes": 1235
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+      "bytes": 3152
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "bytes": 3923
+    },
+    {
+      "path": "attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+      "bytes": 223
+    },
+    {
+      "path": "attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706
+    },
+    {
+      "path": "attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164
+    },
+    {
+      "path": "attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706
+    },
+    {
+      "path": "birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    },
+    {
+      "path": "cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164
+    }
+  ],
+  "status": "Conditional personal result; independent review pending",
+  "independent41_motivation_read_and_credited": true,
+  "no_new_axiom_audit_or_empirical_claim": true
+}

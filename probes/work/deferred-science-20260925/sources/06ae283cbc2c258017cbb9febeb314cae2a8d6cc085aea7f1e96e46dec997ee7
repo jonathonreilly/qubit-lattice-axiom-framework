@@ -1,0 +1,12 @@
+{
+  "runner": "scripts/sharp_actual_rotor_cube_energy_tail_2026_09_24.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 49.27271795272827,
+  "timeout_seconds": 900,
+  "source_sha256": "3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f",
+  "result_sha256": "afdf975511fd04331d91b51829e2d80078b2ea200b60a9cdd11be6f44742b87b",
+  "full_witness_sha256": "efed9ff85c39626b132bb897a743bd77d2117757249a9becfcb828f51358cdec",
+  "cache_record": "logs/runner-cache/sharp_actual_rotor_cube_energy_tail_2026_09_24.txt",
+  "scope": "Root primary execution. Separate independent algebra and released-source comparison are documented in POST.md."
+}

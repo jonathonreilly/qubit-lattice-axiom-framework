@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_bind_and_check.py", line 199, in <module>
+    print(json.dumps(run(), indent=2, allow_nan=False))
+                     ~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/post_bind_and_check.py", line 64, in run
+    assert digest(FROZEN / name) == sha
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

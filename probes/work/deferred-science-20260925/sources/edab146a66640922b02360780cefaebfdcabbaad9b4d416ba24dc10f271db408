@@ -1,0 +1,13 @@
+{
+  "execution": {
+    "runner": "scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "{\n  \"scope\": \"Conditional original-birth charge and supplied-input grouping dynamics; no new independence, particle lifetime, units or empirical claim.\",\n  \"source_sha256\": \"536efbf50f57eb27454b6ea9566f904b25f9f16d8c5627141bd4ca43ad838c61\",\n  \"artifacts\": [\n    {\n      \"label\": \"charge\",\n      \"path\": \"outputs/native_birth_charge_transport_20260925/charge.stdout.json\",\n      \"sha256\": \"2066944750f5779f7b95e2a03aafe44a1969205dd7af526c79abd16b6686d424\",\n      \"bytes\": 3884222,\n      \"exit_code\": 0,\n      \"stderr_bytes\": 0,\n      \"runtime_source_sha256\": \"4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e\"\n    },\n    {\n      \"label\": \"transport\",\n      \"path\": \"outputs/native_birth_charge_transport_20260925/transport.stdout.json\",\n      \"sha256\": \"adfe796cc6d20c13fa1f6c4ab7e868497d322330c695d2e64ff126fccc00c750\",\n      \"bytes\": 368706,\n      \"exit_code\": 0,\n      \"stderr_bytes\": 0,\n      \"runtime_source_sha256\": \"69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1\"\n    }\n  ],\n  \"runtime_sha256\": {\n    \".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py\": \"4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e\",\n    \".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py\": \"69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1\",\n    \".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py\": \"4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e\"\n  },\n  \"elapsed_seconds\": 3.737793000182137,\n  \"all_assertions_passed\": true\n}\nTOTAL_PASS: 1\n",
+    "stderr": "",
+    "elapsed_sec": 3.840963840484619,
+    "timeout_sec": 120,
+    "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication/logs/runner-cache/.in-progress/original_birth_charge_and_grouping_dynamics_2026_09_25.txt"
+  },
+  "cache": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication/logs/runner-cache/original_birth_charge_and_grouping_dynamics_2026_09_25.txt"
+}

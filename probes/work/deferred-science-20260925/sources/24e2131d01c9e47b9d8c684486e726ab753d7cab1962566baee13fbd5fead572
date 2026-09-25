@@ -1,0 +1,52 @@
+{
+  "sealed_utc": "2026-09-25T03:34:49.220054+00:00",
+  "author": "/root",
+  "status": "Conditional root candidate; not independently checked",
+  "members": [
+    {
+      "path": "CONTROL_ATTEMPT01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CONTROL_ATTEMPT01.stdout",
+      "bytes": 45454,
+      "sha256": "69f27361498e02124ff41b386d3aa80d7e4d96c8e56fa946498cf3c117f0a32b"
+    },
+    {
+      "path": "EXECUTION_ATTEMPT01.json",
+      "bytes": 419,
+      "sha256": "95c62dd8d7b8703b15216d52f2864ad43da481557fa2341237bc945253778a6a"
+    },
+    {
+      "path": "GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "bytes": 16531,
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81"
+    },
+    {
+      "path": "PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "bytes": 3028891,
+      "sha256": "5a2080dff069ea2f24bc5411d25a60b3f4dc3c5a892b7133393be3d89e703433"
+    },
+    {
+      "path": "ROOT_REVIEW.json",
+      "bytes": 1184,
+      "sha256": "208d71a49086d1c9e822227bc48c71f749e799e50c4d5a7bb5e0c2fb51935528"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 2524,
+      "sha256": "e733811bd136e4a763d7cda899499e079bb3e24999296e832d62cd220094f5c9"
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "bytes": 5750,
+      "sha256": "18b4dbe70813d06bac8907f49c33066a42cab538afe8bd4642368fb7a86de70b"
+    },
+    {
+      "path": "primitive_rate_energy_controls.py",
+      "bytes": 9661,
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8"
+    }
+  ]
+}

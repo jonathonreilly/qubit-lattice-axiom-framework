@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T03:22:22.929909+00:00",
+  "duration_seconds": 0.14054375002160668,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-independent/verify_pre.py"
+  ],
+  "source_sha256": "0d1e58a9fe4aa6c6444f8e4addfda23eb7a8420962d36b542bf48d7cd52aeb61",
+  "stdout_sha256": "94170dce641f311c3b1ff743df788d2244c387498080c96a95ec5a8735b18922",
+  "stderr_bytes": 0,
+  "scope": "Own exact stored-evidence and source binding verifier; no scientific parent/author code executed."
+}

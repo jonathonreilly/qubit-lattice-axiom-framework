@@ -1,0 +1,60 @@
+{
+  "captured_utc": "2026-09-24T23:16:04.725158+00:00",
+  "phase": "blind independent PRE",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851,
+      "scientific_read_scope": "Full weak-field note; fixed-volume preparation, quotient and harmonic normalization. Main revision 0e6ad8285096ed668816f18caaa6fbbfbd9c50e8.",
+      "premise_status": "Supplied named conditional parent reused; not recertified."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848,
+      "scientific_read_scope": "Part I and bridge/limitations: supplied timing/SI conversion and exact archival table identities, including the preserved printed-number discrepancy.",
+      "premise_status": "Supplied named conditional parent reused; not recertified."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259,
+      "scientific_read_scope": "A.2, B.1-6, C.2 and relevant D: mode normalization, physical initial isometry, exact effect and full count/microscopic limit premises. Earlier unchanged full reading reused.",
+      "premise_status": "Supplied named conditional parent reused; not recertified."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/probe-physical-limits-publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670,
+      "scientific_read_scope": "Part C only, fully refreshed; prior checked rate/probability ratio and clock identification. Whole-file snapshot/hash is not A/B science coverage.",
+      "premise_status": "Supplied named conditional parent reused; not recertified."
+    }
+  ],
+  "instructions_reused": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "status": "Previously fully read for this coherent campaign; unchanged hash reverified."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "status": "Previously fully read for this coherent campaign; unchanged hash reverified."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "status": "Previously fully read for this coherent campaign; unchanged hash reverified."
+    }
+  ],
+  "author_or_other_active_packets_read": false,
+  "current_checkpoint_read": false,
+  "new_primary_retrievals": 0,
+  "transitive_parents_recertified": false,
+  "whole_file_snapshot_does_not_expand_scientific_scope": true
+}

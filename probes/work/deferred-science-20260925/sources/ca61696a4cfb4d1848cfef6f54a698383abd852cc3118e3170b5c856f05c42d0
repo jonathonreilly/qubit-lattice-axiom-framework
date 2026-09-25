@@ -1,0 +1,90 @@
+{
+  "at_utc": "2026-09-25T11:01:12.264653+00:00",
+  "executions": [
+    {
+      "receipt": "capture.execution.json",
+      "receipt_sha256": "3bc93a00c30f878ed87ddba4452fa68c1b18aba5106298efc59c3e022448810f",
+      "source_sha256": "244146f04671a1d42750b38df2308ac646a637cd312562a6ba045967ba573554",
+      "elapsed_seconds": 1.0791947080288082,
+      "outputs": {
+        "stdout.txt": {
+          "path": "capture.stdout.txt",
+          "sha256": "237a5307625048ca0f514684d4727a3453fe18f6d5ab75bcab58df82ba28564a",
+          "bytes": 237
+        },
+        "stderr.txt": {
+          "path": "capture.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    },
+    {
+      "receipt": "comparison.execution.json",
+      "receipt_sha256": "46cad1760790e5ccd831ba9e313f5751418c29a0670ef221d999df0802b67c2b",
+      "source_sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9",
+      "elapsed_seconds": 1.1339558749459684,
+      "outputs": {
+        "stdout.txt": {
+          "path": "comparison.stdout.txt",
+          "sha256": "ca52b8469b58b8956b6df1519d812468a64f7b16193c3872c5723844be8412db",
+          "bytes": 11638
+        },
+        "stderr.txt": {
+          "path": "comparison.stderr.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      }
+    }
+  ],
+  "final_git": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stdout": "codex/mobile-record-local-charge-observation-20260925\n",
+      "stderr": ""
+    }
+  ],
+  "frozen_manifest_sha256": "ab6385c5cde92eef0512a455934dc90600ac711dbb2e613c43b198a43848005d",
+  "report_sha256": "afd2fc9d3044c4cc1a9f0b4c439cad0c910595a1ed04362cb3ae367b3bf83b5e",
+  "readonly_comparator": {
+    "source_sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9",
+    "imports": [
+      "ast",
+      "collections",
+      "difflib",
+      "hashlib",
+      "json",
+      "math",
+      "os",
+      "pathlib",
+      "re",
+      "stat",
+      "subprocess"
+    ],
+    "inspected_no_file_writes": true,
+    "subprocess_scope": "Six explicitly restricted read-only git commands with optional locks disabled.",
+    "static_check_limit": "Interface guard plus complete source read, not a general security proof."
+  },
+  "scientific_reruns": [],
+  "source_edits": [],
+  "new_execution_failures": [],
+  "interruption": "Root reported interruption about 10:45 UTC; last tool call had completed. At 10:47:54 UTC the new subdirectory was absent and all 14 frozen hashes reverified. No partial execution or comparison files existed.",
+  "applies_audit_verdict": false
+}

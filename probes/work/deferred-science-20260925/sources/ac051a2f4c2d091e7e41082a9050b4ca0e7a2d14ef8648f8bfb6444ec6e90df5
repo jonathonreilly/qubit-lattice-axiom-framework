@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-24T22:10:17.058602+00:00",
+  "elapsed_seconds": 0.08873333293013275,
+  "exit_code": 0,
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "numpy_version": "2.4.4",
+  "scope": "First independent finite reference/count/SI run; no author or parent runner.",
+  "script_sha256": "3ac5d3789979efe54c15ed2532b477ea01f5c6136787e7148b775f4ba3477ecd",
+  "stdout_sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

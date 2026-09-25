@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-25T03:01:02.045278+00:00",
+  "scope": "Released author34 comparison; no author execution.",
+  "author_sealed_utc": "2026-09-25T02:22:26.589818+00:00",
+  "author_seal_sha256": "e59ad86d86b40ac23bf8bf9e3ed656865587041760fde772fe3b664a785f4e68",
+  "PRE_seal_sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+  "PRE_members_unchanged": 25,
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/CONTROL.stderr",
+      "frozen": "post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/CONTROL.stdout",
+      "frozen": "post_frozen_author/CONTROL.stdout",
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2",
+      "bytes": 33975
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/EXECUTION.json",
+      "frozen": "post_frozen_author/EXECUTION.json",
+      "sha256": "fce481070de279bc1017118f5f7f36e8f924bbbf295ae695138fc14e8dc253a3",
+      "bytes": 419
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/FINITE_WINDOW_ENERGY_RESULTS.json",
+      "frozen": "post_frozen_author/FINITE_WINDOW_ENERGY_RESULTS.json",
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2",
+      "bytes": 33975
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "frozen": "post_frozen_author/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "sha256": "a72af425e970c080502a394902adf86437d767e90921b30f6e6c889c99ccb902",
+      "bytes": 12234
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/ROOT_REVIEW.json",
+      "frozen": "post_frozen_author/ROOT_REVIEW.json",
+      "sha256": "3301208fc049212cddcfb1e53e81fc4271e97be11a9226f8c2c51da97d0642ce",
+      "bytes": 1328
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/SOURCE_PINS.json",
+      "frozen": "post_frozen_author/SOURCE_PINS.json",
+      "sha256": "ce71315393d6c100dfba71ee5da05132310fe7a928770d47a6076aad08a1d97d",
+      "bytes": 1245
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/finite_window_energy_controls.py",
+      "frozen": "post_frozen_author/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "bytes": 6301
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/AUTHOR_SEAL.json",
+      "frozen": "post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "e59ad86d86b40ac23bf8bf9e3ed656865587041760fde772fe3b664a785f4e68",
+      "bytes": 1345
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "frozen": "post_frozen_author/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "sha256": "cd145383f395171e33c34666744c326c92729018117e00e30bfd5a8a250ada51",
+      "bytes": 1307,
+      "role": "Released narrow magnetic-pair scope correction; original author generation unchanged."
+    }
+  ],
+  "root_PRE_verification_receipt": {
+    "supplied_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FOURTH_PRE_ROOT_VERIFICATION.json",
+    "supplied_sha256": "c32115be3cdb234a7c58dd4128450fd92926c0f483739d5c290f20ee4a0eb794",
+    "scope": "Supplied root process receipt; not opened or used as independent mathematical proof."
+  }
+}

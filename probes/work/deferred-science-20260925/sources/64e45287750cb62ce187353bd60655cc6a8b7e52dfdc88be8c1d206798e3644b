@@ -1,0 +1,97 @@
+{
+  "verified_utc": "2026-09-25T02:24:29.145858+00:00",
+  "verifier_sha256": "1350cb551484f76531799472d89befca42945b42f74f12a5f53d00960943d652",
+  "frozen_public_files_verified": 14,
+  "new_source_and_anchor_origins": 61,
+  "prior_seal_members_unchanged": {
+    "PRE31": 43,
+    "POST31": 33,
+    "PRE32": 22,
+    "POST32": 26,
+    "POST32_chronology": 1
+  },
+  "exact_source_programs": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/coincidence_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/coincidence/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "exact_bytes": true,
+      "exact_AST": true,
+      "function_definitions": 6
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/number_offset_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/number_offset/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "exact_bytes": true,
+      "exact_AST": true,
+      "function_definitions": 7
+    }
+  ],
+  "declared_inputs": 11,
+  "input_fingerprint_sha256": "2dab98db60f0dd4213388f0267696b7d064681e8388f4442af25291d9fc3b145",
+  "same_scientific_scalar_counts": {
+    "str": 493,
+    "float": 2205,
+    "NoneType": 30,
+    "int": 368,
+    "bool": 18
+  },
+  "scientific_payload_differences": [],
+  "only_ignored_fields": [
+    {
+      "path": "COINCIDENCE_RESULTS.json/elapsed_seconds",
+      "old": 0.10842025000602007,
+      "fresh": 0.15360087505541742
+    },
+    {
+      "path": "NUMBER_OFFSET_RESULTS.json/elapsed_seconds",
+      "old": 0.05183775001205504,
+      "fresh": 0.07835645787417889
+    }
+  ],
+  "fresh_stages": [
+    {
+      "program": "coincidence_controls.py",
+      "code_sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "result": "COINCIDENCE_RESULTS.json",
+      "stdout_sha256": "821ebae1ed3687c713d800ea49059ff5990084dde0d267061b68bd7666f3292c",
+      "stdout_bytes": 73627,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.4671385420951992,
+      "full_serialized_child_stdout_verified": true
+    },
+    {
+      "program": "number_offset_controls.py",
+      "code_sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "result": "NUMBER_OFFSET_RESULTS.json",
+      "stdout_sha256": "a284fe332064c6c1ed06fb2502e480f938ef8006b27699c66829a2ab2955944e",
+      "stdout_bytes": 60855,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.6081185000948608,
+      "full_serialized_child_stdout_verified": true
+    }
+  ],
+  "fresh_primary_elapsed_sec": 1.279486894607544,
+  "fresh_primary_exit_code": 0,
+  "fresh_primary_stderr_bytes": 0,
+  "complete_primary_stdout_bytes": 154490,
+  "cache_contains_complete_stdout": true,
+  "exact_cache_serialization_match": true,
+  "primary_result_stdout_TOTAL_identity": true,
+  "number_offset_stored_checks": {
+    "count_rows": 108,
+    "power_rows": 24,
+    "same_sector_rows": 4,
+    "history_rows": 36,
+    "max_count_difference_recomputed": 1.665335005595971e-15,
+    "max_power_difference_recomputed": 7.105427357601002e-15,
+    "max_diagonal_block_difference_as_stored": 5.063776756646523e-15,
+    "max_coherent_state_difference_as_stored": 0.4207560352393649
+  },
+  "author_or_primary_executions_by_checker": 0,
+  "new_matrix_Fourier_simulations": 0,
+  "limits": "Mechanical correspondence plus read mathematical review. Rerun payload identity is not independent scientific evidence, a full retained audit, a complete execution-history certificate, or an empirical test."
+}

@@ -1,0 +1,97 @@
+{
+  "Part_II_equals_frozen_root_after_only_the_four_requested_corrections_and_trailing_whitespace": true,
+  "Part_I_payload_equal_as_opaque_data_only": true,
+  "all_current_origins_equal_snapshots": true,
+  "all_three_graph_rows_equal_frozen_root": true,
+  "cache_complete_bytes_match_execution_and_current_input_fingerprint": true,
+  "cache_did_not_truncate_output": true,
+  "cache_printed_wall_seconds": "0.37",
+  "checker_source_sha256": "837c7156fb5763985485306e3f108bada4df237a399f4141f24fda1e4a9a4d53",
+  "correction_text_locations": [
+    {
+      "line": 198,
+      "publication_text": "state's trace-norm distance is"
+    },
+    {
+      "line": 205,
+      "publication_text": "bounded gauge-invariant periodic function of the link angles"
+    },
+    {
+      "line": 210,
+      "publication_text": "bounded gauge-invariant periodic angle functions"
+    },
+    {
+      "line": 241,
+      "publication_text": "a real normalized positive-frequency transverse oscillator"
+    },
+    {
+      "line": 242,
+      "publication_text": "omega_k=2sqrt(KJ lambda_k)>0."
+    },
+    {
+      "line": 270,
+      "publication_text": "Summing the original joint marked paths (8), including their output matter, therefore gives"
+    }
+  ],
+  "declared_input_fingerprint_sha256": "0a004bc3e1d50958450b87fde302135af636dc5ee2da558cd4ade6c4dc89b9cc",
+  "declared_inputs": [
+    {
+      "bytes": 18848,
+      "path": "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b"
+    },
+    {
+      "bytes": 19851,
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "bytes": 22993,
+      "path": "docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4"
+    },
+    {
+      "bytes": 21740,
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4"
+    },
+    {
+      "bytes": 14902,
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    }
+  ],
+  "disclosed_function_copy_checks": {
+    "dispersion_controls": {
+      "exact_source_segment_equal": true,
+      "sha256": "72a88f651d2383970dc9575e3d170df0387445775df521bfa809270fceb057c2"
+    },
+    "graph": {
+      "exact_source_segment_equal": true,
+      "sha256": "51be5e5d1c95e5f2c5e48f17b500835257b4baf63abf16667db84f09e25ecf3e"
+    },
+    "graph_control": {
+      "exact_source_segment_equal": true,
+      "sha256": "34a1c49353076440aca548ec64c0566e53b81f7874a2e7cbde08ba86b5f1092c"
+    }
+  },
+  "execution_stdout_exact_result_plus_summary": true,
+  "new_independence_claim": false,
+  "overall": "Requested narrow correspondence checks passed",
+  "primary_rerun_by_this_checker": false,
+  "publication_source_snapshot_count": 13,
+  "reported_external_wall_seconds": 0.372133731842041,
+  "reported_runner_internal_seconds": 0.24922312516719103,
+  "scope": "Final Part II correspondence only; no primary execution, no new physics derivation and no Part I scientific verdict.",
+  "source_and_root_self_fingerprints_match": true,
+  "stderr_empty": true,
+  "unchanged_prior_seal_members_verified": {
+    "POST_SEAL.json": 20,
+    "PRE_SEAL.json": 22
+  }
+}

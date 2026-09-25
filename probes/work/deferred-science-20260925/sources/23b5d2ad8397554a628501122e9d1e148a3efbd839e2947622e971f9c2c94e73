@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:40:09.778313+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution_exploration.py"
+  ],
+  "source_sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+  "elapsed_seconds": 0.8888885420747101,
+  "exit_code": 0,
+  "stdout_sha256": "ecec57487d8a73e12cae5f3d64180204ec76908cb4a9cf3d092a700c6c5e15dc",
+  "stdout_bytes": 2745,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

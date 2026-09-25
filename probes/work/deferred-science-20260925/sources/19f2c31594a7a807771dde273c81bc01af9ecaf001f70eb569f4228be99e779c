@@ -1,0 +1,186 @@
+{
+  "sealed_utc": "2026-09-25T01:13:14.813333+00:00",
+  "scope": "Part A-only final publication correspondence; shared front/footer and process bindings. No Part B validation, new numerical replication, audit or source mutation.",
+  "report": "PUBLICATION_COMPARISON.md",
+  "scope_incident_preserved": true,
+  "combined_input_fingerprint_recomputed": false,
+  "prior_reference_members": [
+    "POST.md",
+    "POST_SEAL.json",
+    "PRE.md",
+    "PRE_SEAL.json"
+  ],
+  "other_preserved_PRE_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+    "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+    "members_verified_unchanged": 22
+  },
+  "member_count": 33,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 15874,
+      "sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0"
+    },
+    {
+      "path": "POST_SEAL.json",
+      "bytes": 8017,
+      "sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 28269,
+      "sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 8241,
+      "sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43"
+    },
+    {
+      "path": "PUBLICATION_BINDING_RESULTS.json",
+      "bytes": 6939,
+      "sha256": "5dde20b5c1605dab3ee79fb38f5b009d4eb16fd97ed7ddd95ed57823065cccd2"
+    },
+    {
+      "path": "PUBLICATION_BINDING_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PUBLICATION_BINDING_STDOUT.json",
+      "bytes": 6893,
+      "sha256": "b921af73b5af1a5a0defa38b16a48a137188aa6c185adcfbcbd33e9e85cb5453"
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "bytes": 12756,
+      "sha256": "dcf357e3014199d0a720394308c28b142760c15d9a9754d2e9376c343b53d2e6"
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_VERIFICATION.json",
+      "bytes": 1238,
+      "sha256": "ac9579f2714af3c8cf8957e91250b76807d3165b1bc9f75e324b47b48837490e"
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_VERIFICATION_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PUBLICATION_EXECUTION_RECORD.json",
+      "bytes": 1096,
+      "sha256": "9bd745157cca33f0da6c03fa23bdbdeaf27e76c3db477a602dec8a2235e8d8ed"
+    },
+    {
+      "path": "PUBLICATION_METADATA_CHECKS.json",
+      "bytes": 6079,
+      "sha256": "1a7b6d62d094cb998c0d9bb050a30fd243b4469df58c7394732de577dd69f639"
+    },
+    {
+      "path": "PUBLICATION_METADATA_CHECKS_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PUBLICATION_METADATA_CHECKS_STDOUT.json",
+      "bytes": 6079,
+      "sha256": "1a7b6d62d094cb998c0d9bb050a30fd243b4469df58c7394732de577dd69f639"
+    },
+    {
+      "path": "PUBLICATION_SCOPE_INCIDENT.json",
+      "bytes": 3475,
+      "sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536"
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "bytes": 6076,
+      "sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4"
+    },
+    {
+      "path": "publication_bind_part_a.py",
+      "bytes": 14521,
+      "sha256": "5400c46eb7a00cd97814462ebaa62571537ebc6fcda53dde0106299aefcde909"
+    },
+    {
+      "path": "publication_frozen/CACHE_HEADER_ONLY.txt",
+      "bytes": 332,
+      "sha256": "0dd75c947165e5bdd1a1c5b4df8f7f3e781ce557ea0f3e705fdc8e3e84c597e6"
+    },
+    {
+      "path": "publication_frozen/ENERGY_POLYNOMIAL_RESULTS.json",
+      "bytes": 425564,
+      "sha256": "1eceb4d91ca183175ada3f32de0c839cec3015ae9a3d781a7cf1a526963055af"
+    },
+    {
+      "path": "publication_frozen/ENERGY_SPECTRAL_RESULTS.json",
+      "bytes": 133672,
+      "sha256": "61b9afe6d8fb3ec32cbdbf82458fcad4f970924ed81fadfd2034ebf4995497db"
+    },
+    {
+      "path": "publication_frozen/EXECUTION_PART_A_AND_SHARED_METADATA.json",
+      "bytes": 2353,
+      "sha256": "b8cdd3655cb8c0dd48505698da3bc01a6e1bbbf98a0e4cfd4555be200d36a21d"
+    },
+    {
+      "path": "publication_frozen/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "bytes": 8373,
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76"
+    },
+    {
+      "path": "publication_frozen/PART_A_AUTHOR_TO_PUBLIC.diff",
+      "bytes": 4418,
+      "sha256": "68ececc5b36b049c7febb2dabbe69a834217d0ec09144b631cf2782272c48e88"
+    },
+    {
+      "path": "publication_frozen/PART_A_RESULT_EXTRACT.json",
+      "bytes": 697889,
+      "sha256": "f8eede017ca56a822594bd4b791d4198d5f40c423014d49bde06e4313d51837a"
+    },
+    {
+      "path": "publication_frozen/PUBLIC_NOTE_PART_A_AND_SHARED_CONTEXT.md",
+      "bytes": 19587,
+      "sha256": "4d126daf5b0a65d12819ae14c50256b07948bd4f26c97d5acb0c6755badb302b"
+    },
+    {
+      "path": "publication_frozen/ROOT_VERIFICATION_PART_A_AND_SHARED_METADATA.json",
+      "bytes": 2680,
+      "sha256": "7eed4f1dfb28d4427551dda1854bcec3c4ee99e9016bd0f1e0039d9dfd29c893"
+    },
+    {
+      "path": "publication_frozen/RUNNER_CACHE_RELEVANT_PROCEDURE.txt",
+      "bytes": 12181,
+      "sha256": "839cd2f2f958ab84e6d6117e45d1e3a66663f34e0de615c2cba2beb53c31a2d9"
+    },
+    {
+      "path": "publication_frozen/actual_input_energy_and_original_mark_power_2026_09_25.py",
+      "bytes": 4856,
+      "sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799"
+    },
+    {
+      "path": "publication_frozen/runtime_energy/energy_spectral_controls.py",
+      "bytes": 6387,
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84"
+    },
+    {
+      "path": "publication_frozen/runtime_energy/prepared_energy_polynomial.py",
+      "bytes": 4344,
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e"
+    },
+    {
+      "path": "publication_metadata_checks.py",
+      "bytes": 5575,
+      "sha256": "71e9b2cd8961b300ac5ee608952ed7343fdb8613d4c70f7eb3226da3723fd36a"
+    },
+    {
+      "path": "publication_verify_evidence.py",
+      "bytes": 4083,
+      "sha256": "092ca9ee3e26a2214250c8c4fc9127c1bd2cd7d1b6a6559625317688c04f9774"
+    },
+    {
+      "path": "seal_publication_comparison.py",
+      "bytes": 3595,
+      "sha256": "cac6689bd33fc01581f95560c41d1e8fcd52dbd3c4127a5e35da50fde65beeb3"
+    }
+  ]
+}

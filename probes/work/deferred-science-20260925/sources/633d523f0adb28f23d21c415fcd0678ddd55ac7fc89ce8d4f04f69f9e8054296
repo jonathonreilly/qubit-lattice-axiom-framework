@@ -1,0 +1,38 @@
+{
+  "runner_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+  "declared_input_fingerprint_sha256": "b1a9ef6034db4d9b1b86e6cf9aefc3498de13a54339716bd4494d05cdec17c29",
+  "declared_inputs": [
+    {
+      "path": "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f"
+    },
+    {
+      "path": "docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967"
+    },
+    {
+      "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    }
+  ],
+  "execution_status": "ok",
+  "exit_code": 0,
+  "stderr_empty": true,
+  "complete_stdout_objects_match_result_json": true,
+  "cache_stdout_matches_execution": true,
+  "execution_elapsed_seconds": 131.29512786865234,
+  "result_elapsed_seconds": 130.34018570790067,
+  "complete_physical_dimensions": {
+    "4": 3197,
+    "6": 5604,
+    "8": 672
+  },
+  "maximum_contour_refinement_difference": 1.2751626413589563e-14,
+  "maximum_eigen_residual": 1.5642536388640448e-14,
+  "minimum_overlap_eigenvalue": 0.8200883219823357,
+  "verification_scope": "Source/receipt/cache/output correspondence, no independent rerun of the scientific numerical calculation."
+}

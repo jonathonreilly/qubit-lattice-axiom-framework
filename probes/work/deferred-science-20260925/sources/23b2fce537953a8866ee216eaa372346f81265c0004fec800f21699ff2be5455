@@ -1,0 +1,48 @@
+{
+  "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "base_branch": "main",
+  "branch": "codex/mobile-record-formation-response-budget-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-formation-response-20260925",
+  "note": "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/original_formation_and_field_response_budget_2026_09_25.py",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py"
+  ],
+  "output_directory": "outputs/formation_response_20260925",
+  "parent_paths": [
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "cache": "logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt",
+  "result": "outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json",
+  "source_note": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-personal/FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+  "presentation_replacements": [
+    {
+      "old": "Personal conditional root candidate, 25 September 2026. No independent\nconfirmation is claimed here.",
+      "new": "Personally derived conditional result, 25 September 2026. Separate scoped\nPRE and POST checks are complete; no retained audit status."
+    }
+  ],
+  "heading_level_increment": 2,
+  "source_files_sha256": {
+    "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "scripts/original_formation_and_field_response_budget_2026_09_25.py": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  },
+  "files_sha256": {
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt": "778af73fdbb335095c4873b380c23087707b022ab2816fa5af28cab1d09fbe2b",
+    "outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json": "9b92fdc3bf2772e9b5dd0dc2dab6e9a1e614b17e266b8dbd769d71a267648264",
+    "outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+    "outputs/formation_response_20260925/response_control.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "outputs/formation_response_20260925/response_control.stdout.txt": "077946747d9e156bbe487623c73a7859898ad60f3651bce63cbfd4d58b6c4913",
+    "scripts/original_formation_and_field_response_budget_2026_09_25.py": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0"
+  }
+}

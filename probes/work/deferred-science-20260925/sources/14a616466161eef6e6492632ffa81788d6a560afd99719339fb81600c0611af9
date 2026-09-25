@@ -1,0 +1,31 @@
+{
+  "scope": "Conditional original-birth charge and supplied-input grouping dynamics; no new independence, particle lifetime, units or empirical claim.",
+  "source_sha256": "536efbf50f57eb27454b6ea9566f904b25f9f16d8c5627141bd4ca43ad838c61",
+  "artifacts": [
+    {
+      "label": "charge",
+      "path": "outputs/native_birth_charge_transport_20260925/charge.stdout.json",
+      "sha256": "2066944750f5779f7b95e2a03aafe44a1969205dd7af526c79abd16b6686d424",
+      "bytes": 3884222,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+    },
+    {
+      "label": "transport",
+      "path": "outputs/native_birth_charge_transport_20260925/transport.stdout.json",
+      "sha256": "adfe796cc6d20c13fa1f6c4ab7e868497d322330c695d2e64ff126fccc00c750",
+      "bytes": 368706,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1"
+    }
+  ],
+  "runtime_sha256": {
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+  },
+  "elapsed_seconds": 3.737793000182137,
+  "all_assertions_passed": true
+}

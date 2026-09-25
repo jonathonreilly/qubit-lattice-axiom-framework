@@ -1,0 +1,123 @@
+{
+  "captured_utc": "2026-09-25T01:04:34.752563+00:00",
+  "phase": "Released-source POST; PRE sealed before author disclosure",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/COINCIDENCE_RESULTS.json",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stderr",
+      "snapshot": "post_sources/two-detector-coincidence-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/CONTROL.stdout",
+      "snapshot": "post_sources/two-detector-coincidence-personal/CONTROL.stdout",
+      "sha256": "2ace5f24cc2d34e092d0a87999d5b2bf633cabd46791e6a4ef682bf18199c606",
+      "bytes": 73627,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/EXECUTION.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/EXECUTION.json",
+      "sha256": "a73319cac4b7138a5031e6c5681495798a8675fc1a6719d535945197edef0019",
+      "bytes": 309,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/ROOT_REVIEW.json",
+      "sha256": "3059fd7dbe153d17e46e6b1fc4e338fed0de25697d1b6bd632cbb1a51b732bb7",
+      "bytes": 1780,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/SOURCE_PINS.json",
+      "sha256": "2f2bfa64f656720c0d9f166c8a5d6c698d88d2c8ed63a68a33aa079525c33a92",
+      "bytes": 4487,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "snapshot": "post_sources/two-detector-coincidence-personal/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "bytes": 14782,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/coincidence_controls.py",
+      "snapshot": "post_sources/two-detector-coincidence-personal/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "bytes": 5561,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/AUTHOR_SEAL.json",
+      "sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb",
+      "bytes": 1294,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "snapshot": "post_sources/two-detector-coincidence-personal/AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+      "sha256": "8b2a7452d211da8ec198891806971a528ebaca89201d1aca9d2919f3774f1a1c",
+      "bytes": 424,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "snapshot": "post_sources/two-detector-coincidence-personal/SOURCE_METADATA_QUALIFICATION.md",
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "bytes": 684,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "snapshot": "post_sources/TWO_DETECTOR_TRANSLATION_QUALIFICATION.md",
+      "sha256": "b09cbbe9bf4a83be75d18b087b24055fd617224ef15d432393ad8917ba26bc6e",
+      "bytes": 719,
+      "scope": "Released root argument/control evidence, or explicit root qualification; data only, author code not executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE.md",
+      "snapshot": null,
+      "sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+      "bytes": 27135,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/PRE_SEAL.json",
+      "snapshot": null,
+      "sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+      "bytes": 8671,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/SOURCE_PINS.json",
+      "snapshot": null,
+      "sha256": "962ebbd7bfb080193c286c31397ce96fa96e0f51259711b36f44f59fd6bd60fa",
+      "bytes": 10581,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-independent/VERIFICATION_REPORT.json",
+      "snapshot": null,
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2",
+      "bytes": 2028,
+      "scope": "Immutable own PRE anchor, reused without alteration."
+    }
+  ],
+  "author_scientific_members_verified": 8,
+  "metadata_addendum_actual_filename": "AUTHOR_SCOPE_ADDENDUM_SEAL.json",
+  "dispatch_name_lookup": "ADDENDUM_SEAL.json did not exist; the uniquely matching supplied SHA resolved the actual released seal.",
+  "unrelated_source_inventory_entries": "Read as metadata inside the expressly released SOURCE_PINS.json only; no referenced unrelated source/packet was opened.",
+  "author_control_executions_by_checker": 0
+}

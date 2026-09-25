@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-09-25T00:42:43.754188+00:00",
+  "execution_form": "Previously executed inline Python; source body subsequently captured in diagnose_subtraction.py without rerunning. Header comments only were added to identify the capture.",
+  "own_control_source_at_execution": "dc6632fbf3383d87b8c3f0e082a80720e927273714f77bf7bba830358bd7175e",
+  "captured_source_sha256": "3c8b0816233ad8db0d8c59e03acf3487edf269ac85c80d48fd6730910e387586",
+  "observed_exit_code": 0,
+  "tool_reported_wall_time_seconds": 0.025526292,
+  "start_time_not_recorded": true,
+  "combined_output_was_complete_JSON": true,
+  "combined_output_sha256": "6dc23be1dfba808e848b80f50b0f5bd42b5e67ba678646c3892f9ce156d1dc9d",
+  "author_modules_used": false
+}

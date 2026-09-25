@@ -1,0 +1,79 @@
+{
+  "at": "2026-09-25T00:22:39.332378+00:00",
+  "PRE_sha256": "be47d27ab25dbf1853331b1bb8f02a2b67b3cc93c244b4a830fa86b810c71216",
+  "PRE_seal_sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+  "sealed_members_verified": 65,
+  "origins_verified": 10,
+  "unchanged_current_main_parents": 3,
+  "execution_bindings": [
+    {
+      "label": "direct_matrix",
+      "script": "direct_matrix_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0134733750019222
+    },
+    {
+      "label": "fourier",
+      "script": "fourier_and_correspondence.initial_L6_gain.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.49569862498901784
+    },
+    {
+      "label": "fourier_corrected",
+      "script": "fourier_and_correspondence.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4872499580960721
+    },
+    {
+      "label": "freeze",
+      "script": "freeze_sources.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.07458845782093704
+    },
+    {
+      "label": "jet",
+      "script": "jet_coefficient_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.34721945808269083
+    },
+    {
+      "label": "primitive_L16",
+      "script": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.105340708978474
+    },
+    {
+      "label": "primitive_L6",
+      "script": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.059264332987368
+    },
+    {
+      "label": "primitive_infinite",
+      "script": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.9782659581396729
+    },
+    {
+      "label": "verify",
+      "script": "verify_evidence.initial_uniform_pair_count.py",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2796152080409229
+    },
+    {
+      "label": "verify_corrected",
+      "script": "verify_evidence.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.3645762091036886
+    }
+  ],
+  "root_read_coverage": [
+    "Full PRE including all 67 coefficients",
+    "primitive_power.py, jet_coefficient_check.py, direct_matrix_check.py, fourier_and_correspondence.py and verifier fully read",
+    "All 8 direct-matrix rows, 3 covariance rows, 5 finite-g rows, 4 correspondence rows and exact 7-word winding difference",
+    "Exact historical source diffs and changed-field/corrected verifier provenance",
+    "Serialized repeating Laurent and pair inventories covered by reviewed exact verification code and sealed result; no manual line-by-line reconstruction claimed"
+  ],
+  "scope": "Supports same conditional power structure, distinct independent sign-indefiniteness and L6 correction; root all-volume positivity certificate not yet disclosed or independently checked. No author code executed by checker.",
+  "read_transport_note": "An initial aggregate display was truncated; affected PRE ending and code were read in subsequent complete bounded calls. Diff command exit 1 indicates displayed differences, not a scientific failure."
+}

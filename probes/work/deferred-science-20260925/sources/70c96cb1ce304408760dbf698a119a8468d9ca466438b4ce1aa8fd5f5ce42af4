@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-24T21:30:07.242305+00:00",
+  "phase": "Personal root before independent dynamics PRE",
+  "files": {
+    "EXECUTION.json": {
+      "sha256": "94e7d99cd3b114a8c91cff2158250517e89f15a9d6bc57c65d7098ce5efc34cf",
+      "bytes": 247
+    },
+    "FLAT_ACTION_SIDE_16.json": {
+      "sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318",
+      "bytes": 961608
+    },
+    "FLAT_ACTION_SIDE_6.json": {
+      "sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795",
+      "bytes": 925914
+    },
+    "FLAT_MATTER.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "FLAT_MATTER_RESULTS.json": {
+      "sha256": "aaa4ee6e9f84d7e7aa065bb68747165c3fe7257d1f4366028d7770d8f9a5aeca",
+      "bytes": 1693
+    },
+    "PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md": {
+      "sha256": "867d9b04e2023cdf3280382840e1f98fe1cd9061bf529ca94a84390c888bedc1",
+      "bytes": 10545
+    },
+    "ROOT_REVIEW.md": {
+      "sha256": "f010a6dd57e764adb06a560a3f124732b3157b2d02f750af670dd8c64fd8217a",
+      "bytes": 1305
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "cd24ee55a929037415ca1dd1b645391154bf0743f85661fb0d1d5c13b9b7d8ee",
+      "bytes": 1396
+    },
+    "flat_matter_controls.py": {
+      "sha256": "ce3c7aa5e31bfb78231b4cd4ae746a97878fa39da6ae08fc24ab63d14db3c7d9",
+      "bytes": 5061
+    }
+  }
+}

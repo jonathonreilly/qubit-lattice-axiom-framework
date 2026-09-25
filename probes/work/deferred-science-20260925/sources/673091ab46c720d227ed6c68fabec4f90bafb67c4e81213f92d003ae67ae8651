@@ -1,0 +1,15 @@
+{
+  "publication_head_at_reference_check": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "references": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/docs/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "072d6024923f05c00f5fd1e80e1dc3952a77c773b48886bd59b7be97adc28133",
+      "equal_to_PRE_source_snapshot": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/docs/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7f6f2dbb4444f69dcc29c29b812e517074ebde65c4725317ccf2f0f2f4ea8d28",
+      "equal_to_PRE_source_snapshot": true
+    }
+  ]
+}

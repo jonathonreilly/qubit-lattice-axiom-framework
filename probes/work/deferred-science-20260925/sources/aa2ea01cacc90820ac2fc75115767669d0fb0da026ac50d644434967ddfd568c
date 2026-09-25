@@ -1,0 +1,8 @@
+{
+  "note_sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+  "result_sha256": "7d5b4786cd04c55acbc36f3ec34ec9254166b79c81e1fe41c747f162f1e6a839",
+  "cache_sha256": "04eeee2b625eb3dde5a418eae39fd4eb4da1ec49f9381075e3d6d5e5c23bb656",
+  "seconds": 0.631274938583374,
+  "all_scientific_values_unchanged_after_restored_limit_hypothesis": true,
+  "first_attempt_preserved": "ninth-first-publication-attempt"
+}

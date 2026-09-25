@@ -1,0 +1,20 @@
+{
+  "scoped_comparisons": [
+    {
+      "packet": "record-observable-calibration-independent",
+      "report_sha256": "c8fc1e0e2de1913eba4a1d733ad9bbf67bbb5659b5014be2379bbb361d6c76e7",
+      "seal_sha256": "486b9f4d7ef91dc869577e43b78a378d1287fcfc5c99f65c43d11cf37a1856a2",
+      "members": 43,
+      "source_origins": 8,
+      "read_status": "complete report, verifier and scientific rows personally inspected"
+    },
+    {
+      "packet": "prepared-matter-probe-independent",
+      "report_sha256": "fbe95c097ac35a587b957b6ab19a584183771a310c391c0ceee2642169eea920",
+      "seal_sha256": "a5dec651fc6c4db4ea5ee92e12f1d851670e4daae4d751f5a6ef902fcb87137f",
+      "members": 33,
+      "source_origins": 13,
+      "read_status": "complete report, verifier and scientific rows personally inspected"
+    }
+  ]
+}

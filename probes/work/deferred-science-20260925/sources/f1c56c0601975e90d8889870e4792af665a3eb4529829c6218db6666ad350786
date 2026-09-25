@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent/publication_correspondence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent",
+  "started_utc": "2026-09-24T16:05:27.799510+00:00",
+  "finished_utc": "2026-09-24T16:05:27.923762+00:00",
+  "elapsed_seconds": 0.12428441597148776,
+  "returncode": 0,
+  "files": {
+    "publication_correspondence_check.py": {
+      "bytes": 11071,
+      "sha256": "0944348d7c710c3e9d89a1d069070d947286760e804c5f7888f6e5892fe6acf1"
+    },
+    "PUBLICATION_EVIDENCE_CHECK.json": {
+      "bytes": 8626,
+      "sha256": "5f3884ecae34db23a3accfa51267d9b85686294d54792d480ce1e5a1c3152d4a"
+    },
+    "PUBLICATION_CODE_DIFF.txt": {
+      "bytes": 7133,
+      "sha256": "822e65193fa330629784c7e5b6116c418e0ba10294368be5d4677e4e3a373c6c"
+    },
+    "PUBLICATION_PROOF_DIFF.txt": {
+      "bytes": 2424,
+      "sha256": "6cc2e1876b8561ff7b4b258caaa6d20668a6776c399a968ad432aeef82bbe489"
+    },
+    "PUBLICATION_CHECK.stdout.txt": {
+      "bytes": 8626,
+      "sha256": "5f3884ecae34db23a3accfa51267d9b85686294d54792d480ce1e5a1c3152d4a"
+    },
+    "PUBLICATION_CHECK.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

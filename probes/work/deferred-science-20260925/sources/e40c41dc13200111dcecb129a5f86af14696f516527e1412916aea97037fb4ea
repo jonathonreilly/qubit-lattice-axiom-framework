@@ -1,0 +1,102 @@
+{
+  "verified_utc": "2026-09-24T20:03:35.557220+00:00",
+  "post_seal_sha256": "73dc48a63907c5cbe3f3973723151a84af4b7d55e10959eb62f7c6b042da3545",
+  "members": [
+    {
+      "path": "POST.md",
+      "matches": true
+    },
+    {
+      "path": "POST_BINDING.stderr.log",
+      "matches": true
+    },
+    {
+      "path": "POST_BINDING.stdout.log",
+      "matches": true
+    },
+    {
+      "path": "POST_BINDING_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "POST_EVIDENCE_CHECK.json",
+      "matches": true
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "path": "post-released/AUTHOR_CONTROL_SEAL.json",
+      "matches": true
+    },
+    {
+      "path": "post-released/CONTROL.stderr.txt",
+      "matches": true
+    },
+    {
+      "path": "post-released/CONTROL.stdout.txt",
+      "matches": true
+    },
+    {
+      "path": "post-released/CONTROL_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "post-released/FINITE_REGISTER_CONTROL_RESULTS.json",
+      "matches": true
+    },
+    {
+      "path": "post-released/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "matches": true
+    },
+    {
+      "path": "post-released/SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "path": "post-released/finite_register_controls.py",
+      "matches": true
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "matches": true
+    }
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/AUTHOR_CONTROL_SEAL.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/finite_register_controls.py",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/SOURCE_PINS.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL.stderr.txt",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/FINITE_REGISTER_CONTROL_RESULTS.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-personal/CONTROL.stdout.txt",
+      "matches": true
+    }
+  ],
+  "complete_post_proof_and_code_read": true,
+  "all_ok": true
+}

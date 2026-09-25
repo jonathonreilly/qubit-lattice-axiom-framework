@@ -1,0 +1,11 @@
+{
+  "after_sha256": "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2",
+  "at_utc": "2026-09-25T09:44:00.153698+00:00",
+  "before_sha256": "d265a1a4a873b16dda7094fa7936d03c3ce3a19fb90b5cf424503ef208a3f750",
+  "equations_or_controls_changed": false,
+  "new_phrase": "The initial charge-mean derivative is -60 kappa on A and +60 kappa on B.",
+  "old_phrase": "The charge mean is -60 kappa on A and +60 kappa on B.",
+  "preserved_before": "history/PRE_before_mean_derivative_wording.md",
+  "reason": "Correct prose to say initial derivative; mean itself vanishes at t=0 as equations already state.",
+  "scientific_programs_rerun": false
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "released_source_photon_observation_Part_I_POST",
+  "sealed_at_utc": "2026-09-24T19:02:42.551792+00:00",
+  "files": {
+    "POST.md": "b9681424f3b3e5347f0527132ef38702960100ddc25da862821981d9cb5c03c5",
+    "post_binding_verification.py": "09b6efc08df7bff29a2a20aa59de1802c60287c025032ab3caa7423b1ec84ca6",
+    "POST_RELEASED_PART_I.txt": "073accfff11ddd3c1048634a3ac6bf364d94ae51d66c4e6b38f1389ee45466b7",
+    "POST_SCOPED_CONTROL_SOURCE.txt": "794deb49581b974575462ea5234f145e0f8f2938747a02b1ab03812fdc6eabf4",
+    "POST_SCOPED_CONTROL_RESULTS.json": "e850a8e736547821d84361d18f0bf86d5464dac6f8d02f1ce07a8f04163a791e",
+    "POST_SOURCE_PINS.json": "22c36567aada8a58e210d50d6196c26766b3d0edc86aa6ad6c55319a06f8a5af",
+    "POST_VERIFICATION.json": "542e645006e1449a38dbdfb2782b1efd4975fc7a555d423a453d231066e0713e",
+    "POST_BINDING_CHECK.stdout.txt": "542e645006e1449a38dbdfb2782b1efd4975fc7a555d423a453d231066e0713e",
+    "POST_BINDING_CHECK.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "POST_BINDING_CHECK_EXECUTION.json": "a4ad395ebf2f32c0d92530ff3b41016471b21368d69299a1757169714ec26537"
+  },
+  "preserved_PRE_sha256": "19e92bfd9575efdaaeb1ad8b1a7a189de6ec900cfab8862ce465222642de8789",
+  "preserved_PRE_seal_sha256": "a83ce23e6d3e27a0a4bccd4ec2170441123e6b49c0cf09b3d2670eea00a1e6e4",
+  "root_candidate_sha256": "15c48725d54c95abe43de50de23b62fbf9d983029ee2152c125f361a9ca316ba",
+  "root_author_control_seal_sha256": "2ee41b61dd03f9e20eacd257469cd03bb54c9b96951bc06c0d58e535e0394f05",
+  "material_derivation_or_conversion_errors": [],
+  "minor_corrections": [
+    {
+      "source_lines": [
+        79,
+        80
+      ],
+      "finding": "Qualify the three-energy equal-ratio sentence as leading quadratic order, allowing the stated quartic dispersion and packet/source/propagation errors."
+    }
+  ],
+  "printed_LHAASO_number_discrepancy_preserved": true,
+  "scope": "Complete Part I and relevant shared closure only. Part II body, graph-control implementations and graph rows are outside the scientific review.",
+  "unchanged_PRE_members_reverified": 37,
+  "root_seal_members_hash_verified_only": 11,
+  "complete_dispersion_rows_read": 30,
+  "primary_or_control_rerun": false,
+  "new_blind_derivation_claim": false,
+  "publication_existing_packets_or_audit_changed": false,
+  "other_checker_work_imported": false,
+  "delegation_used": false,
+  "disposition": "Supported conditional Part I with one minor leading-order wording correction; no Part II or audit verdict.",
+  "immutable_policy": "Preserve this seal and every member unchanged. Any final publication comparison requires a separate packet."
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-25T00:35:47.791272+00:00",
+  "root_personal_derivation": true,
+  "argument_written_before_control": true,
+  "full_argument_and_program_read": true,
+  "all_scientific_rows_read": {
+    "count": 108,
+    "selected_power": 24,
+    "same_N_difference": 4,
+    "fixed_histories": 36
+  },
+  "max_identity_residual": 1.1769395030763611e-14,
+  "controls": "Separate illustrative number-graded five-state system; not a rotor truncation or empirical fit. Exact original-target theorem uses checked number identities.",
+  "preserved_nonidentity": "Conditional inter-number coherences differ, despite identical count probabilities.",
+  "source_reuse": "Number conservation/raising and capacity are already main results; no new claim of discovering them. Earlier energy calculations are mentioned for scope, not independently verified here.",
+  "failures": "No scientific execution failure. All small floating residuals retained.",
+  "limits": [
+    "Comparison family h+f(N) is not an adopted physical modification",
+    "Nonconstant f changes physical energy gaps, not an ordinary energy zero",
+    "No infinite-volume or arbitrary reservoir conclusion",
+    "No empirical prediction or TOE closure",
+    "Independent reconstruction required before publication"
+  ]
+}

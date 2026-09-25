@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-25T00:12:47.947369+00:00",
+  "scope": "Personal root proof/code and evidence review, not independent reconstruction",
+  "read_coverage": [
+    "Complete proof, all source code, compact-domain and full trajectory error argument",
+    "All30 Fock moment rows and120 high-precision uncut initial-effect rows",
+    "All16 finite-torus spatial rows, including negative background-subtracted values",
+    "All current sources and primary execution identities verified"
+  ],
+  "analytic_checks": [
+    "Four-arm Gauss isometry and exact disjoint original-mark product",
+    "Fourth moment coefficient8 from characteristic function",
+    "Full no-jump Duhamel amplitude error O(b/(tau g\u00b2)); two-order integral plus three-jump tail gives sufficient b=o(tau g4)",
+    "Background-subtracted ratio keeps vacuum cross correlation and may be negative without negative event probability",
+    "Raw>=3/4 only for uncorrelated reference quadratures, no exact finite-lattice zero-covariance example assumed",
+    "Large-volume and large-separation covariance limits are static/iterated; microscopic/weak-field windows selected afterward, not a uniform physical estimate"
+  ],
+  "run_seconds": 0.29301258409395814,
+  "Fock_max_residual": 1.7763568394002505e-15,
+  "failures": [],
+  "limitations": [
+    "No matched stationary fluorescence/source or background identification",
+    "No finite physical-g laboratory-time error",
+    "No actual full-energy photon absorption assertion",
+    "No primary-data fit, new axiom, empirical confirmation/exclusion or audit verdict"
+  ],
+  "wording_note": "Control docstring independently hand-derived refers to the root analytic calculation separate from its finite Fock control, not a different researcher or independent checker."
+}

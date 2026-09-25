@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/magnetic_lag_controls.py", line 106, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-personal/magnetic_lag_controls.py", line 92, in main
+    assert max(diffs)<2e-9
+           ^^^^^^^^^^^^^^^
+AssertionError

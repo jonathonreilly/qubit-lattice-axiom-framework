@@ -1,0 +1,12 @@
+{
+  "status": "Revision sealed; 30 members and all earlier PRE/POST/final members verified unchanged",
+  "PUBLICATION_REVISION_sha256": "49fb9b3bdeca3582f3800e99fa045c832dd0120cb97cf86be658daeef4c58844",
+  "PUBLICATION_REVISION_SEAL_sha256": "54e6f7a753c59ba96ccda287f45a682f39397916a0cf58bada9d7d3379a0c6d8",
+  "PUBLICATION_REVISION_SOURCE_PINS_sha256": "ddaaba080c6e5a466674e287751fe162f055c84a571585fe1aeb942abbb7d5cf",
+  "read_only_checker_sha256": "ff7e0d6c9960a12e67c23246f33e2b56de0803439a17b82097af3b30f976467d",
+  "read_only_check_output_sha256": "3f4db25890da508f46c329355782d96aa1891563fb23705524a55d206e0ac43f",
+  "member_count": 30,
+  "current_origins_verified": 14,
+  "new_input_fingerprint_sha256": "18fc944893cea337313ad993f2ac65027120c4ae043285c289d3b1f6fefa42cc",
+  "additional_repair_identified": false
+}

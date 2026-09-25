@@ -1,0 +1,22 @@
+{
+  "files_sha256": {
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+    "scripts/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.py": "9e67aa1bdc1d9fa2227a934d219495c672aa299f9210cfdd0caed07143061676",
+    "outputs/prepared_probe_physical_limits_20260924/PROBE_PHYSICAL_LIMITS_RESULTS.json": "790a2a72d86f4ecf72395c400ee93ba981e854a1a19a7d25d1adc15d79692e7e",
+    "logs/runner-cache/prepared_original_record_probe_energy_and_observation_limits_2026_09_24.txt": "a13f49a4bc999f280335dd0351f44a483a80d632d1d94db734d5d0870b6e9cb6"
+  },
+  "checks": [
+    "input_control AST identical after disclosed name/path adaptation",
+    "output_control AST identical after disclosed name/path adaptation",
+    "unit_control AST arithmetic exact; return replaces outer serialization",
+    "input_rows complete payload exact",
+    "output_rows complete payload exact",
+    "unit_rows complete payload exact",
+    "side6 certificate bytes exact",
+    "side16 certificate bytes exact"
+  ],
+  "differences": [],
+  "primary_seconds": 2.2022247314453125,
+  "exit_code": 0,
+  "stderr_bytes": 0
+}

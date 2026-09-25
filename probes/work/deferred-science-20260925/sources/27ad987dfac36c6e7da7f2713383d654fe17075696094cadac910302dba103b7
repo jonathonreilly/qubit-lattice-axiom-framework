@@ -1,0 +1,2205 @@
+{
+  "description": "Own bounded PRE controls; no author imports and no microscopic simulation.\n\nExact unit-coefficient qutrit/rotor paths on the requested side-six torus;\nindependent finite Fourier/Gauss-Hermite readout checks; finite-band phase check.\nThe analytic PRE, not these finite checks, carries all general quantifiers.\n",
+  "paths": [
+    {
+      "first": "plus",
+      "second": "plus",
+      "path_count": 23,
+      "multiplicity": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "first": "plus",
+      "second": "minus",
+      "path_count": 23,
+      "multiplicity": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "first": "plus",
+      "second": "coherent",
+      "path_count": 46,
+      "multiplicity": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "first": "minus",
+      "second": "plus",
+      "path_count": 23,
+      "multiplicity": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "first": "minus",
+      "second": "minus",
+      "path_count": 23,
+      "multiplicity": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "first": "minus",
+      "second": "coherent",
+      "path_count": 46,
+      "multiplicity": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "first": "coherent",
+      "second": "plus",
+      "path_count": 46,
+      "multiplicity": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "first": "coherent",
+      "second": "minus",
+      "path_count": 46,
+      "multiplicity": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "first": "coherent",
+      "second": "coherent",
+      "path_count": 92,
+      "multiplicity": 4,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 92
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 4
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 4
+        }
+      ],
+      "dephased_effect": [
+        {
+          "translation": [],
+          "coefficient": 92
+        }
+      ]
+    }
+  ],
+  "harmonic": {
+    "box_side": 6,
+    "c_over_a": 1,
+    "time": 0.2,
+    "vacuum_variance": 0.7954185754891872,
+    "local_amplitude_squared": 0.0001541534017373013,
+    "frequencies": [
+      0.9999999999999999,
+      1.414213562373095
+    ],
+    "rows": [
+      {
+        "g": 0.4,
+        "effect_vacuum": 24.876697708936774,
+        "effect_one_particle": 24.876651421043036,
+        "contrast": -4.628789373843257e-05,
+        "formula": -4.6287893738432565e-05,
+        "contrast_over_g2": -0.0002892993358652035,
+        "dephased_contrast": 0.0
+      },
+      {
+        "g": 0.2,
+        "effect_vacuum": 24.968434996574373,
+        "effect_one_particle": 24.96842285893634,
+        "contrast": -1.2137638032827715e-05,
+        "formula": -1.2137638032827712e-05,
+        "contrast_over_g2": -0.00030344095082069283,
+        "dephased_contrast": 0.0
+      },
+      {
+        "g": 0.1,
+        "effect_vacuum": 24.99206161056478,
+        "effect_one_particle": 24.992058539734046,
+        "contrast": -3.070830737388482e-06,
+        "formula": -3.070830737388483e-06,
+        "contrast_over_g2": -0.00030708307373884813,
+        "dephased_contrast": 0.0
+      },
+      {
+        "g": 0.05,
+        "effect_vacuum": 24.99801244181295,
+        "effect_one_particle": 24.998011671811916,
+        "contrast": -7.700010365472976e-07,
+        "formula": -7.700010365472967e-07,
+        "contrast_over_g2": -0.000308000414618919,
+        "dephased_contrast": 0.0
+      }
+    ],
+    "algebraic_state_error_diagnostic": [
+      {
+        "g": 0.4,
+        "norm_error": 0.15848891496438888,
+        "observable_on_vac_norm": 0.2091999934116988,
+        "expectation_difference": 0.06423879413533964,
+        "difference_over_g4": 2.5093278959117042,
+        "bound": 0.16678670459911205
+      },
+      {
+        "g": 0.2,
+        "norm_error": 0.03997602477011881,
+        "observable_on_vac_norm": 0.054384948646468735,
+        "expectation_difference": 0.0037356842098185397,
+        "difference_over_g4": 2.334802631136587,
+        "bound": 0.010740518334110357
+      },
+      {
+        "g": 0.1,
+        "norm_error": 0.009999625024216922,
+        "observable_on_vac_norm": 0.013731508119872792,
+        "expectation_difference": 0.00022722538585997137,
+        "difference_over_g4": 2.272253858599713,
+        "bound": 0.0006745898669312167
+      },
+      {
+        "g": 0.05,
+        "norm_error": 0.0024999941406486483,
+        "observable_on_vac_norm": 0.0034414114787781657,
+        "expectation_difference": 1.4096724503740488e-05,
+        "difference_over_g4": 2.2554759205984776,
+        "bound": 4.220689987812312e-05
+      }
+    ],
+    "scope": "Harmonic finite-mode/quadrature check only; no compact rotor evolution or parent control executed."
+  },
+  "band": {
+    "side": 48,
+    "carrier": [
+      1.0471975511965976,
+      0.5235987755982988,
+      0.0
+    ],
+    "time": 2.0,
+    "band_radius": 0.1308996938995747,
+    "lattice_velocity": [
+      0.7690945006604258,
+      0.44403691698855763,
+      0.0
+    ],
+    "error": 0.003755389259469424,
+    "bound": 0.024529958140022644,
+    "coarser_bound": 0.034437071609839706,
+    "scope": "Five finite allowed modes; fixed time; no large-volume or growing-time theorem inferred."
+  },
+  "checks": [
+    {
+      "name": "geometry",
+      "satisfied": true,
+      "volume": 216,
+      "links": 648,
+      "common_neighbors": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "primitive_loop_gauss_and_winding",
+      "satisfied": true,
+      "loop": [
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "axis": 0,
+          "value": 1
+        },
+        {
+          "start": [
+            0,
+            0,
+            0
+          ],
+          "axis": 1,
+          "value": -1
+        },
+        {
+          "start": [
+            0,
+            1,
+            0
+          ],
+          "axis": 0,
+          "value": -1
+        },
+        {
+          "start": [
+            1,
+            0,
+            0
+          ],
+          "axis": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "first_effect_plus",
+      "satisfied": true,
+      "paths": 5,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 5
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_plus_plus",
+      "satisfied": true,
+      "paths": 23,
+      "final_matter_words": 22,
+      "singleton_outputs": 21,
+      "double_outputs": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_plus_plus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_plus_minus",
+      "satisfied": true,
+      "paths": 23,
+      "final_matter_words": 22,
+      "singleton_outputs": 21,
+      "double_outputs": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_plus_minus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_plus_coherent",
+      "satisfied": true,
+      "paths": 46,
+      "final_matter_words": 44,
+      "singleton_outputs": 42,
+      "double_outputs": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_plus_coherent",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "name": "first_effect_minus",
+      "satisfied": true,
+      "paths": 5,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 5
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_minus_plus",
+      "satisfied": true,
+      "paths": 23,
+      "final_matter_words": 22,
+      "singleton_outputs": 21,
+      "double_outputs": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_minus_plus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_minus_minus",
+      "satisfied": true,
+      "paths": 23,
+      "final_matter_words": 22,
+      "singleton_outputs": 21,
+      "double_outputs": 1,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 1
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 1
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_minus_minus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 23
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_minus_coherent",
+      "satisfied": true,
+      "paths": 46,
+      "final_matter_words": 44,
+      "singleton_outputs": 42,
+      "double_outputs": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_minus_coherent",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "name": "first_effect_coherent",
+      "satisfied": true,
+      "paths": 10,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 10
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_coherent_plus",
+      "satisfied": true,
+      "paths": 46,
+      "final_matter_words": 44,
+      "singleton_outputs": 42,
+      "double_outputs": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_coherent_plus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_coherent_minus",
+      "satisfied": true,
+      "paths": 46,
+      "final_matter_words": 44,
+      "singleton_outputs": 42,
+      "double_outputs": 2,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 2
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 2
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_coherent_minus",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 46
+        }
+      ]
+    },
+    {
+      "name": "ordered_effect_coherent_coherent",
+      "satisfied": true,
+      "paths": 92,
+      "final_matter_words": 88,
+      "singleton_outputs": 84,
+      "double_outputs": 4,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 92
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            }
+          ],
+          "coefficient": 4
+        },
+        {
+          "translation": [
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 0,
+              "value": 1
+            },
+            {
+              "start": [
+                0,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": -1
+            },
+            {
+              "start": [
+                0,
+                1,
+                0
+              ],
+              "axis": 0,
+              "value": -1
+            },
+            {
+              "start": [
+                1,
+                0,
+                0
+              ],
+              "axis": 1,
+              "value": 1
+            }
+          ],
+          "coefficient": 4
+        }
+      ]
+    },
+    {
+      "name": "dephased_effect_coherent_coherent",
+      "satisfied": true,
+      "effect": [
+        {
+          "translation": [],
+          "coefficient": 92
+        }
+      ]
+    },
+    {
+      "name": "all_enumerated_paths_gauss",
+      "satisfied": true,
+      "total_two_mark_paths": 368
+    },
+    {
+      "name": "all_enumerated_paths_record_count_and_charge",
+      "satisfied": true
+    },
+    {
+      "name": "first_total_rate_count",
+      "satisfied": true,
+      "resolved_channels": 1296,
+      "coherent_channels": 648,
+      "total_loss_coefficient": 6480
+    },
+    {
+      "name": "two_mode_transverse_normalization",
+      "satisfied": true,
+      "transverse_residual": 0.0,
+      "one_particle_norm": 0.9999999999999998
+    },
+    {
+      "name": "local_response_cauchy_schwarz",
+      "satisfied": true,
+      "vacuum_local_variance": 0.7954185754891872,
+      "one_particle_local_excess": 0.0003083068034746026,
+      "local_amplitude_re_im": [
+        0.012384015305327487,
+        -0.0008885756325242239
+      ]
+    },
+    {
+      "name": "one_particle_reduced_quadrature_density",
+      "satisfied": true,
+      "alpha": 0.00019380161148800938,
+      "normalization": 1.0
+    },
+    {
+      "name": "harmonic_characteristic_g_0.4",
+      "satisfied": true,
+      "direct_quadrature_difference": -4.628789373843257e-05,
+      "formula_difference": -4.6287893738432565e-05,
+      "effect_vacuum": 24.876697708936774,
+      "effect_one_particle": 24.876651421043036,
+      "divided_by_g2": -0.0002892993358652035
+    },
+    {
+      "name": "observable_specific_error_bound_g_0.4",
+      "satisfied": true,
+      "state_norm_error": 0.15848891496438888,
+      "observable_on_vac_norm": 0.2091999934116988,
+      "expectation_difference": 0.06423879413533964,
+      "difference_over_g4": 2.5093278959117042,
+      "bound": 0.16678670459911205
+    },
+    {
+      "name": "harmonic_characteristic_g_0.2",
+      "satisfied": true,
+      "direct_quadrature_difference": -1.2137638032827715e-05,
+      "formula_difference": -1.2137638032827712e-05,
+      "effect_vacuum": 24.968434996574373,
+      "effect_one_particle": 24.96842285893634,
+      "divided_by_g2": -0.00030344095082069283
+    },
+    {
+      "name": "observable_specific_error_bound_g_0.2",
+      "satisfied": true,
+      "state_norm_error": 0.03997602477011881,
+      "observable_on_vac_norm": 0.054384948646468735,
+      "expectation_difference": 0.0037356842098185397,
+      "difference_over_g4": 2.334802631136587,
+      "bound": 0.010740518334110357
+    },
+    {
+      "name": "harmonic_characteristic_g_0.1",
+      "satisfied": true,
+      "direct_quadrature_difference": -3.070830737388482e-06,
+      "formula_difference": -3.070830737388483e-06,
+      "effect_vacuum": 24.99206161056478,
+      "effect_one_particle": 24.992058539734046,
+      "divided_by_g2": -0.00030708307373884813
+    },
+    {
+      "name": "observable_specific_error_bound_g_0.1",
+      "satisfied": true,
+      "state_norm_error": 0.009999625024216922,
+      "observable_on_vac_norm": 0.013731508119872792,
+      "expectation_difference": 0.00022722538585997137,
+      "difference_over_g4": 2.272253858599713,
+      "bound": 0.0006745898669312167
+    },
+    {
+      "name": "harmonic_characteristic_g_0.05",
+      "satisfied": true,
+      "direct_quadrature_difference": -7.700010365472976e-07,
+      "formula_difference": -7.700010365472967e-07,
+      "effect_vacuum": 24.99801244181295,
+      "effect_one_particle": 24.998011671811916,
+      "divided_by_g2": -0.000308000414618919
+    },
+    {
+      "name": "observable_specific_error_bound_g_0.05",
+      "satisfied": true,
+      "state_norm_error": 0.0024999941406486483,
+      "observable_on_vac_norm": 0.0034414114787781657,
+      "expectation_difference": 1.4096724503740488e-05,
+      "difference_over_g4": 2.2554759205984776,
+      "bound": 4.220689987812312e-05
+    },
+    {
+      "name": "all_plaquette_response_gram_identity_for_xy_modes",
+      "satisfied": true,
+      "translated_xy_sum": 0.6035533905932738,
+      "half_one_particle_frequency": 0.6035533905932736
+    },
+    {
+      "name": "finite_band_phase_translation_bound",
+      "satisfied": true,
+      "side": 48,
+      "time": 2.0,
+      "band_radius": 0.1308996938995747,
+      "sqrt_lambda_lower_bound": 0.9951328067109194,
+      "Hessian_norm_upper_bound": 2.009781997450506,
+      "vector_error": 0.003755389259469424,
+      "weighted_remainder_bound": 0.024529958140022644,
+      "maximum_radius_bound": 0.034437071609839706
+    },
+    {
+      "name": "affine_phase_is_trigonometric_interpolation_translation",
+      "satisfied": true,
+      "interpolation_errors": [
+        2.7755575615628914e-17,
+        4.002966042486721e-16,
+        9.238896857051836e-16
+      ],
+      "lattice_velocity": [
+        0.7690945006604258,
+        0.44403691698855763,
+        0.0
+      ]
+    }
+  ],
+  "all_checks_satisfied": true,
+  "check_count": 40,
+  "runtime_versions": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-25T03:01:37.714801+00:00",
+  "task": "Root readonly POST33 recheck",
+  "attempt": 1,
+  "exit_code": 1,
+  "captured_tool_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 5, in <module>\nAssertionError\n",
+  "stage": "Direct Python object equality between fresh comparison results and their stored JSON deserialization. All invoked comparison functions returned successfully before equality check.",
+  "status": "Diagnose representation mismatch before claiming verification; no scientific result or sealed file changed."
+}

@@ -1,0 +1,56 @@
+from collections import Counter, defaultdict
+
+from itertools import product
+
+from pathlib import Path
+
+from fractions import Fraction
+
+import hashlib, json, time
+
+import mpmath as mp
+
+def dispersion_controls():
+    mp.mp.dps=70
+    rows=[]
+    for direction in ((1,0,0),(1,1,0),(1,1,1),(1,2,3),(-2,3,5)):
+        norm=mp.sqrt(sum(i*i for i in direction));n=[mp.mpf(i)/norm for i in direction]
+        A4=sum(i**4 for i in n)
+        for sx in ('0.00001','.001','.03','.2','.7','1'):
+            x=mp.mpf(sx);D=4*sum(mp.sin(x*i/2)**2 for i in n)
+            vel=[mp.sin(x*i)/mp.sqrt(D) for i in n]
+            radial=sum(u*v for u,v in zip(n,vel));speed=mp.sqrt(sum(v*v for v in vel))
+            assert speed<=1
+            re=abs(radial-(1-A4*x*x/8))/x**4
+            se=abs(speed-(1-A4*x*x/8))/x**4
+            assert re<=mp.mpf(1)/40 and se<=mp.mpf(1)/20
+            phase=mp.sqrt(D)/x
+            rows.append({'direction':direction,'x':sx,'A4':str(A4),
+                         'radial_speed_over_c':str(radial),'speed_over_c':str(speed),
+                         'radial_remainder_over_x4':str(re),'speed_remainder_over_x4':str(se),
+                         'phase_as_group_mutant_error_over_x2':str(abs(phase-radial)/x**2)})
+    # The radial coefficient and phase coefficient differ by a factor of three.
+    assert max(mp.mpf(r['phase_as_group_mutant_error_over_x2']) for r in rows)>mp.mpf('.08')
+    # Exact SI defining constants: h, c, elementary charge; hbar=h/(2pi).
+    h=mp.mpf('6.62607015e-34');c=mp.mpf('299792458');e=mp.mpf('1.602176634e-19')
+    hc_GeV_m=h*c/(2*mp.pi*e*mp.mpf(10)**9)
+    bounds=[]
+    for label,energy in [('MAGIC2017_table6_including_systematics','5.9e10'),
+                         ('LHAASO2024_table1_ML_MINOS','6.9e11')]:
+        aq=mp.sqrt(12)*hc_GeV_m/mp.mpf(energy)
+        bounds.append({'published_analysis':label,'E_QG_2_GeV':energy,
+                       'a_sqrt_A4_upper_m':str(aq),
+                       'a_orientation_independent_necessary_upper_m':str(mp.sqrt(3)*aq),
+                       'status':'conditional conversion, not a new fit or framework prediction'})
+    return {'rows':rows,'hbar_c_GeV_m':str(hc_GeV_m),'conditional_bounds':bounds}
+
+def main():
+    started=time.monotonic()
+    out={'scope':'Root exact finite graph words; harmonic dispersion; conditional conversion only',
+         'graphs':[graph_control(p) for p in ((2,2,2),(6,6),(6,6,6))],
+         'dispersion':dispersion_controls(),
+         'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+    out['elapsed_seconds']=time.monotonic()-started
+    path=Path(__file__).with_name('PHOTON_BIRTH_CONTROL_RESULTS.json')
+    path.write_text(json.dumps(out,indent=2)+'\n')
+    print(json.dumps(out,indent=2))

@@ -1,0 +1,153 @@
+{
+  "frozen_utc": "2026-09-24T14:17:25.339520+00:00",
+  "frozen_manifest_sha256": "c006cd22189ce66b0d9b0bbbeea0948d4d74d8617b30aafeafae53965a98ce41",
+  "scope": "Final publication and declared execution; additional range controls are author evidence written after PRE, never independent.",
+  "files": {
+    "external/FIFTH_PUBLICATION_FROZEN_SOURCES.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTH_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/external/FIFTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "c006cd22189ce66b0d9b0bbbeea0948d4d74d8617b30aafeafae53965a98ce41",
+      "bytes": 1066,
+      "manifest_bound": false
+    },
+    "external/FIFTH_PUBLICATION_CACHE_EXECUTION.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FIFTH_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/external/FIFTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "30c367ea0a3909547c1954e1fb6a97d7c4f7cb48ae43e473762a8ee15569efd4",
+      "bytes": 18005,
+      "manifest_bound": false
+    },
+    "publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "19225a255dbed81b2703e3770e5a0604a50c34ff898f85aaa58adf5bc8618462",
+      "bytes": 30360,
+      "manifest_bound": true
+    },
+    "publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py",
+      "sha256": "5a20a84d626d5fff24e45475ed7166831bbb519a48298f3598229c7286f1e7af",
+      "bytes": 15909,
+      "manifest_bound": true
+    },
+    "publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "43c7587af4011778660406d196035965df858061a7da0581b780c5ebefe58045",
+      "bytes": 17231,
+      "manifest_bound": true
+    },
+    "publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md",
+      "sha256": "0bfbbea87a4f8ba0a9cae328c3948d2ced3a8b45d2ee5152ec9dbfa99adfae77",
+      "bytes": 1071,
+      "manifest_bound": true
+    },
+    "publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json",
+      "sha256": "f047ec4e3ce03e4fd86b802cb5e46deb2bd4cc0b236f218c70a299884da3f8cf",
+      "bytes": 11314,
+      "manifest_bound": true
+    },
+    "publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt",
+      "sha256": "bc8918037a05eb27d098762b4d5a52c4b76713cd3a39d874391d52bcc1e2723d",
+      "bytes": 16735,
+      "manifest_bound": true
+    },
+    "author_range/RANGE_CONTROL_RESULTS.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/RANGE_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_range/RANGE_CONTROL_RESULTS.json",
+      "sha256": "e07bd5d5041c0afdeab9357d852f369c95230672501787d8c4ea78e77f1a1aa2",
+      "bytes": 2425,
+      "manifest_bound": false,
+      "author_range_seal_bound": true
+    },
+    "author_range/RANGE_CONTROL_SEAL.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/RANGE_CONTROL_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_range/RANGE_CONTROL_SEAL.json",
+      "sha256": "7d37b8a55bb617e8523b5066f9bc4275dd6aa2462146db66f82e6a9833d27857",
+      "bytes": 643,
+      "manifest_bound": false
+    },
+    "author_range/range_controls.py": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/range_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_range/range_controls.py",
+      "sha256": "b88d5182ef16789818067037e22e0d15867e12a423f62c7534c31cba483e9995",
+      "bytes": 5347,
+      "manifest_bound": false,
+      "author_range_seal_bound": true
+    },
+    "author_range/RANGE_CONTROL.stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/RANGE_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_range/RANGE_CONTROL.stdout",
+      "sha256": "e07bd5d5041c0afdeab9357d852f369c95230672501787d8c4ea78e77f1a1aa2",
+      "bytes": 2425,
+      "manifest_bound": false,
+      "author_range_seal_bound": true
+    },
+    "author_range/RANGE_CONTROL.stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/RANGE_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_range/RANGE_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "manifest_bound": false,
+      "author_range_seal_bound": true
+    },
+    "author_process/N8_LEDGER_SEARCH.json": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/N8_LEDGER_SEARCH.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_process/N8_LEDGER_SEARCH.json",
+      "sha256": "2ca4bebcd628ec7f264421051b61d2fb61f9c085607c240a3fc36f7983e5f41e",
+      "bytes": 18834,
+      "manifest_bound": false,
+      "scope": "Author process inventory only; complete ledger/bridge reads are author-reported, not independently repeated."
+    },
+    "author_process/REPO_COHERENCE_SEARCH.txt": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/REPO_COHERENCE_SEARCH.txt",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/author_process/REPO_COHERENCE_SEARCH.txt",
+      "sha256": "bb29c98974a42ba09899ab4d8eca9e4a954da86550a584c3c76b71e1a2fcd15c",
+      "bytes": 3187,
+      "manifest_bound": false,
+      "scope": "Author process inventory only; complete ledger/bridge reads are author-reported, not independently repeated."
+    },
+    "publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317,
+      "manifest_bound": false
+    },
+    "publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "manifest_bound": false
+    },
+    "publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "manifest_bound": false
+    },
+    "cache_machinery/runner_cache.py": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/scripts/runner_cache.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/cache_machinery/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941,
+      "manifest_bound": false
+    },
+    "extraction_origin/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py": {
+      "original": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/PUBLICATION_sources/extraction_origin/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py",
+      "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+      "bytes": 11444,
+      "manifest_bound": false
+    }
+  }
+}

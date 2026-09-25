@@ -1,0 +1,2475 @@
+{
+  "scope": "Explicit owner-requested deferred science intake. All canonical arguments and load-bearing runtime sources were read and independently checked. Historical README reports and complete source inventory/headings were read for salvage routing; historical proof/code bodies not used by the canonical result are NOT all freshly reviewed. They remain ungraded, with no claim of exhaustiveness or impossibility. Frozen original branches are kept; every included original blob will be bundled for ai/probes. No subagents or workers.",
+  "groups": {
+    "energy-moments-and-apparatus": {
+      "prs": [
+        9038,
+        9049,
+        9057,
+        9067,
+        9079,
+        9087,
+        9101,
+        9102,
+        9104,
+        9109,
+        9120,
+        9192
+      ],
+      "residual": "Uniform physical-process resource bounds beyond one-input swaps; joint growing-time/volume windows and moment-uniformity; distinguish weak energy laws from ordinary moments. Alternative PRE decay/cutoff witnesses and exact toy controls are historical support, not additional retained claims."
+    },
+    "preparation-optical-readout": {
+      "prs": [
+        9124,
+        9131,
+        9137,
+        9143,
+        9147,
+        9150,
+        9167,
+        9181
+      ],
+      "residual": "Native physical preparation, positive-window microscopic rates, detector/readout and scale identification. Review historical mean-energy optimizer, continuum overlap improvement, two-probe geometries, positive-time power and preparation-error extensions independently before promotion. Do not equate reference photons, bare counts, actual energy, heat or absorption."
+    },
+    "ground-energy-and-response": {
+      "prs": [
+        9199,
+        9206,
+        9208
+      ],
+      "residual": "Stronger historical filling/activity, late-time budget and normal-state moment-free response results require separate proof/source validation. Landed fixed-graph ordered limits and fourth-moment response domain do not establish a selected physical vacuum, thermal reservoir, detector or infinite-volume law."
+    },
+    "charge-threshold-and-transport": {
+      "prs": [
+        9213,
+        9217,
+        9219
+      ],
+      "residual": "Historical tighter finite-torus threshold, full auxiliary band, charge trace-distance, broader escape projector coefficients and formation-factor covariance remainder require separate validation. Test selected charged packets, finite-coupling/fixed-momentum binding, larger dressings, force/current/readout and calibrated scales; the landed global flat threshold and one escape target do not settle these."
+    }
+  },
+  "source_candidates": [
+    {
+      "pr": 9038,
+      "path": ".claude/science/physics-loops/cube-fixed-time-energy-20260924/review/POST.md",
+      "bytes": 12184,
+      "sha256": "31728208ff3c1fe813f418c891d0592803de33a4a87c52ad09d7f397612a7a11",
+      "headings": [
+        "# Released-author comparison: fixed-time actual birth energy",
+        "## What was compared",
+        "## 1. Exact projector contraction is valid",
+        "## 2. The density-based low-block argument preserves its hypotheses",
+        "## 3. Moment normalization and scope",
+        "## 4. Frozen finite controls: actual findings and limits",
+        "## Reviewed source identities"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9038,
+      "path": ".claude/science/physics-loops/cube-fixed-time-energy-20260924/review/PRE.md",
+      "bytes": 21427,
+      "sha256": "1681b7333d6244bcad00b8b287b6fd0e621c466a0d1b61d0c53295edd1576e58",
+      "headings": [
+        "# Independent PRE: microscopic cube energy at positive physical times",
+        "## Result reconstructed before author release",
+        "## Exact model and observable definitions",
+        "## 1. Exact reduction of both ensemble moments",
+        "## 2. Uniform exact block separation and all-time control",
+        "## 3. The energetic tail is small at every later positive time",
+        "## 4. The low block: strong convergence, not an energy inference from density",
+        "## 5. Moment estimates and the variance",
+        "## 6. Independently reconstructed rotor stability input",
+        "## Edge cases, exclusions and unresolved quantities",
+        "## Provenance, exact sources and exposure boundary"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9049,
+      "path": ".claude/science/physics-loops/cube-sharp-rotor-tail-20260924/review/POST.md",
+      "bytes": 12564,
+      "sha256": "241f5a0b701d6704d301c2d2f831d362f8404c9827d1ea56f4c10d94b5db8284",
+      "headings": [
+        "# Independent POST: released sharp rotor-tail argument",
+        "## Frozen sources and prior independence",
+        "## Independent matrix and exact finite evidence",
+        "## Regenerated publication witness and execution record",
+        "## Analytic comparison with PRE",
+        "## Evidence boundary and reproduction"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9049,
+      "path": ".claude/science/physics-loops/cube-sharp-rotor-tail-20260924/review/PRE.md",
+      "bytes": 14029,
+      "sha256": "baaad7bad64e16616ed028120280cd191355c69f3807bee9224a3f0027e3fd45",
+      "headings": [
+        "# Independent PRE: rotor birth-energy upper-tail mechanism",
+        "## Sources and independence boundary",
+        "## Quantified block estimate",
+        "### Direct proof",
+        "### Singular Q and the meaning of decay",
+        "### The squared singular-value scale is necessary in this generality",
+        "## What the physical five-torus still needs",
+        "### A precise sufficient global obligation",
+        "### One geometric route that suffices for (9)",
+        "### What is not established by the assigned inputs",
+        "## PRE conclusion and released-source comparison targets"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9057,
+      "path": ".claude/science/physics-loops/cube-ordinary-energy-20260924/review/POST.md",
+      "bytes": 10675,
+      "sha256": "3d22aba04df68f2112613baedb53697e8e8eade79f4ed6c47a35601bbb5e92b5",
+      "headings": [
+        "# POST comparison: ordinary mean and mesoscopic energy layer",
+        "## Source-bound disposition",
+        "## Complete candidate comparison",
+        "## New POST derivation of the relative window",
+        "## New POST derivation of the epsilon^(6/5) layer",
+        "## Evidence coverage and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9057,
+      "path": ".claude/science/physics-loops/cube-ordinary-energy-20260924/review/PRE.md",
+      "bytes": 19381,
+      "sha256": "1f6e944205553c4941ba851c6dde270b06b444606ae15d51e66324ea99512cb1",
+      "headings": [
+        "# Independent PRE: ordinary microscopic mean after a cube first birth",
+        "## Result and exact domain",
+        "## Conditional inputs actually used",
+        "## 1. A weighted rotor-decay lemma",
+        "## 2. Finite-spin comparison on a genuinely growing fast-time interval",
+        "## 3. The apparent order-one grade-two mean cancels",
+        "## 4. Low-band field domains and uniform integrability",
+        "## 5. Returning to Hermitian energy and the full ensemble",
+        "## Boundaries, failed shortcuts, and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9067,
+      "path": ".claude/science/physics-loops/autonomous-marked-grid-20260924/review/POST.md",
+      "bytes": 16116,
+      "sha256": "2d6c606b364abc2524eeeb65cfb73c8664c5e58a796ed0bdcaa547dca6a60cf2",
+      "headings": [
+        "# Independent POST: finite autonomous process under grid observations",
+        "## Frozen evidence and independence",
+        "## 1. Direct lift and the complete-space gate estimate",
+        "## 2. Independent compact-packet calculation",
+        "## 3. Operational comparison and correlations",
+        "## 4. Original marked bins and free energy",
+        "## 5. Resource scaling with explicit choices",
+        "## 6. Preserved numerical failure and limits of the controls",
+        "## Evidence and remaining scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9067,
+      "path": ".claude/science/physics-loops/autonomous-marked-grid-20260924/review/PRE.md",
+      "bytes": 22512,
+      "sha256": "c30f79fec59168ddbdbc52d72abd6604cba58baf59d6e165de597d806ee9647b",
+      "headings": [
+        "# Independent PRE: finite interventions in the autonomous clock construction",
+        "## Sources and outcome",
+        "## 1. Precise operational comparison",
+        "## 2. Why the one-time conclusion is insufficient",
+        "## 3. An explicit controlled completion of the actual collision gate",
+        "## 4. Joint clock control at a cut",
+        "## 5. Carrying the battery and clock through interventions",
+        "## 6. A separate binned marked-collision estimate",
+        "## 7. Quantitative sufficient theorem and resource choice",
+        "## 8. Records, energy and remaining boundaries",
+        "## Verification boundary and release questions"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9079,
+      "path": ".claude/science/physics-loops/actual-birth-coherence-20260924/review/POST.md",
+      "bytes": 21033,
+      "sha256": "a4a423ed079d0291802fd4a09d1486afdedaae11ec586c9f995789f5f5733945",
+      "headings": [
+        "# Released-source POST: actual birth coherence and finite energy range",
+        "## 1. Sources, isolation, and what is new in POST",
+        "## 2. Precise operational and limiting premises",
+        "## 3. Fisher candidate: derivation and comparison",
+        "## 4. New frequency-support result",
+        "## 5. Restricted swap, ground-relative mean, and sharp scope",
+        "## 6. Evidence correspondence and fresh checks",
+        "## 7. Corrections and open boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9079,
+      "path": ".claude/science/physics-loops/actual-birth-coherence-20260924/review/PRE.md",
+      "bytes": 19342,
+      "sha256": "77e330c478ef2290bfdc96382bc95524f8e9444bf22e2f29f77f8f2b231f0ac7",
+      "headings": [
+        "# Independent PRE: apparatus energy coherence for one selected cube birth",
+        "## 1. Target, convention and result",
+        "## 2. Why the single-input target is enough for a QFI bound",
+        "## 3. Microscopic input, success probability and output scales",
+        "## 4. Approximation with an explicit growing-Hamiltonian bound",
+        "## 5. Exact conservative realization: leading coherence cost, bounded mean",
+        "## 6. A cube approximation of order epsilon^3 removes the divergent QFI cost",
+        "## 7. Controls, limitations and next decision"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9087,
+      "path": ".claude/science/physics-loops/integrated-cube-variance-20260924/author_history/AVERAGED_VARIANCE_PERSONAL_DERIVATION.md",
+      "bytes": 10547,
+      "sha256": "00e05d4918d58840e78f9bd3fb4326dcfb12ade7e5a2db8ca18d1dfc39f63eb0",
+      "headings": [
+        "# A continuing loss contribution to time-integrated microscopic variance",
+        "## 1. Target and parents",
+        "## 2. The exact low component carries microscopic energy variance",
+        "## 3. Rapid relative phases control integrated cross terms",
+        "## 4. Relation to the second birth and to variance",
+        "## 5. Limitations and review obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9087,
+      "path": ".claude/science/physics-loops/integrated-cube-variance-20260924/author_history/PRE_EXTENSION_ROOT_REVIEW.md",
+      "bytes": 5959,
+      "sha256": "12c40fcffeae56ae2954e9f398ece2b7fec62cf10cf7564ebadae2474fb715d8",
+      "headings": [
+        "# Root review of the independent variance extension",
+        "## Exact identity and nonnegative remainder",
+        "## Physical-star rotor coercivity",
+        "## Scope and publication decision"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9087,
+      "path": ".claude/science/physics-loops/integrated-cube-variance-20260924/review/POST.md",
+      "bytes": 10690,
+      "sha256": "5a53e72b0efa31bfd73d3d94246378a7748cf0e71f7f1f28a3ef374334e5f9d5",
+      "headings": [
+        "# Averaged microscopic variance: bounded POST comparison",
+        "## Identities and review boundary",
+        "## Supported statement and physical observable",
+        "## Rectangular Sylvester estimate",
+        "## Probability coefficient and original words",
+        "## Evidence and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9087,
+      "path": ".claude/science/physics-loops/integrated-cube-variance-20260924/review/PRE.md",
+      "bytes": 19668,
+      "sha256": "57819426fec612dcb000612dcb8419cca34d3538904dcaefea13fb4820181d8e",
+      "headings": [
+        "# Independent PRE: time-integrated ordinary cube birth variance",
+        "## Supported conclusion and remaining term",
+        "## Definitions and imported estimates",
+        "## 1. The low no-event component has a large Hermitian energy norm",
+        "## 2. Oscillatory low/high interference is negligible after integration",
+        "## 3. A second exact route exposes the survival coefficient directly",
+        "## 4. A uniform rotor second-birth loss bound",
+        "## Finite checks and their limits",
+        "## Scope, failed shortcut and recovery obligations",
+        "## Source identities and exposure boundary"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9101,
+      "path": ".claude/science/physics-loops/no-first-birth-coherence-20260924/author_history/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "bytes": 4908,
+      "sha256": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753",
+      "headings": [
+        "# A limited attaining construction for the no-first-birth target",
+        "## Truncation and invariant subspace",
+        "## Exact conserving swap and resources",
+        "## Why this is a restricted comparison"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9101,
+      "path": ".claude/science/physics-loops/no-first-birth-coherence-20260924/author_history/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "bytes": 13087,
+      "sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+      "headings": [
+        "# Apparatus coherence forced by the continuous process's no-first-birth sector",
+        "## 1. Original process, target and premises",
+        "## 2. The rotor no-first-birth probability is explicit",
+        "## 3. Uniform finite-spin control of the exact N=4 components",
+        "## 4. A pointwise no-first-birth variance and Hermitian interband coherence",
+        "## 5. A finite robust apparatus bound for this continuous-process target",
+        "## 6. Review obligations and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9101,
+      "path": ".claude/science/physics-loops/no-first-birth-coherence-20260924/review/POST.md",
+      "bytes": 19532,
+      "sha256": "7317b366a9c936f7e2a9708bc4bb1556b55d9c516e98133b576efda9c51916cf",
+      "headings": [
+        "# Released-source POST: continuous no-first-birth apparatus coherence",
+        "## Frozen source and PRE identities",
+        "## 1. Correspondence with the blind PRE",
+        "## 2. Stronger graded estimates checked after release",
+        "## 3. Exact dissipativity and the physical-energy proof",
+        "## 4. Apparatus premises, approximation, and frequency support",
+        "## 5. Limited attainment and bounded ground-relative mean",
+        "## 6. Author control correspondence and numerical limits",
+        "## 7. Precise disposition and remaining limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9101,
+      "path": ".claude/science/physics-loops/no-first-birth-coherence-20260924/review/PRE.md",
+      "bytes": 29091,
+      "sha256": "d56261e53b846906fa40692f1b78a5e89a4e7ac34fb98cdb492563189622607d",
+      "headings": [
+        "# Independent PRE: fixed-time coherence from the no-first-birth sector",
+        "## 1. Domain, sources, and the exact N=4 block",
+        "## 2. Cube identities specific to N=4",
+        "## 3. Hermitian energy bands versus no-event bands",
+        "## 4. Weighted N=4 low motion and its limit",
+        "## 5. Physical energy variance and the full-ensemble lower bound",
+        "## 6. Finite apparatus Fisher bound, including approximation",
+        "## 7. Finite frequency support and energy range",
+        "## 8. Error sensitivity, mean energy, and sector limits",
+        "## 9. Independent controls and remaining evidence limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9102,
+      "path": ".claude/science/physics-loops/mixed-preparation-energy-20260924/author_history/MIXED_LOW_INPUT_BIRTH_ENERGY_PERSONAL_DERIVATION.md",
+      "bytes": 13072,
+      "sha256": "8dacfedaf587d85c5063042e6630ebe44403effaa7ca4590d8d66f277f507dd2",
+      "headings": [
+        "# Original birth energy and coherence for mixed low-band field inputs",
+        "## 1. Input class and actual operation",
+        "## 2. Local operator identities behind B and R",
+        "## 3. Uniform canonical output expansion on this input class",
+        "## 4. One witness works for every mixture in K0",
+        "## 5. Frequency, precision and a limited positive comparison",
+        "## 6. Scope and independent-check obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9102,
+      "path": ".claude/science/physics-loops/mixed-preparation-energy-20260924/review/POST.md",
+      "bytes": 10066,
+      "sha256": "52df4b1f7dd3a94dcf7f27e41548d11d141893f646e6df220ed5b42502da2c46",
+      "headings": [
+        "# Fixed finite input-span robustness: released-source POST",
+        "## Frozen identities and review boundary",
+        "## Operator identities and finite-spin dependence",
+        "## Energy control and the mixed-state witness",
+        "## Frequency, precision and the attaining relaxation",
+        "## Recorded evidence and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9102,
+      "path": ".claude/science/physics-loops/mixed-preparation-energy-20260924/review/PRE.md",
+      "bytes": 21945,
+      "sha256": "b0820179fddd987438afbe69acef5912813d93530050a8ef67156292a4f21647",
+      "headings": [
+        "# Independent PRE: fixed finite electric-word preparations",
+        "## 1. Fixed support, model and reused hypotheses",
+        "## 2. Operator-valued birth coordinates",
+        "## 3. Exact finite-spin weights and the rotor isometries",
+        "## 4. Uniform actual-birth energy moments",
+        "## 5. A density-independent phase witness",
+        "## 6. Robust mixed-state Fisher bound",
+        "## 7. Frequency range and the error-scale limitation",
+        "## 8. Optional one-input comparison with bounded apparatus mean",
+        "## 9. Separate finite controls and their limits",
+        "## 10. Sources, edge cases and disposition"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9104,
+      "path": ".claude/science/physics-loops/recent-birth-variance-20260924/author_history/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+      "bytes": 10990,
+      "sha256": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+      "headings": [
+        "# Recent births in the original continuous ensemble",
+        "## 1. Question and exact decomposition",
+        "## 2. Explicit provisional dependencies and operator coefficients",
+        "## 3. Uniform compact-age source lemma",
+        "## 4. Full-ensemble pointwise variance lower bound",
+        "## 5. Energy carried by a small recent-birth subensemble",
+        "## 6. Physical and evidence boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9104,
+      "path": ".claude/science/physics-loops/recent-birth-variance-20260924/review/POST.md",
+      "bytes": 13927,
+      "sha256": "c6abb14d3ba48f748441941ad9aca16e5d3d6ad73df55677f0e1d483dafd4be3",
+      "headings": [
+        "# POST: recent births in the full original ensemble",
+        "## Frozen inputs and coverage",
+        "## 1. Exact decomposition and normalization agree",
+        "## 2. Required input facts and provisional scope",
+        "## 3. Full fast generator, compact-age limits and variance",
+        "## 4. Constants and order of limits",
+        "## 5. Analytic interpretation of the five-state toy",
+        "## 6. Evidence checks and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9104,
+      "path": ".claude/science/physics-loops/recent-birth-variance-20260924/review/PRE.md",
+      "bytes": 24504,
+      "sha256": "82b7a4734b2fcfba45022c11859abdaa2239468e8b6a6ddc93f15481b1a41a25",
+      "headings": [
+        "# Blind PRE: recent first births in the full compensated-cube ensemble",
+        "## Supported conclusion",
+        "## Frozen sources and conventions",
+        "## 1. Exact first-birth decomposition before a limit",
+        "## 2. The evolved pre-first-birth input",
+        "## 3. Source coefficients for an arbitrary evolved low field",
+        "## 4. The exact recent-birth fast layer",
+        "## 5. Recent-slice moments and the mixed-variance lower bound",
+        "## 6. Distinctions and unresolved questions",
+        "## 7. Limited independent evidence and failure record"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9109,
+      "path": ".claude/science/physics-loops/full-cube-ensemble-energy-20260924/author_history/CONTROL_SCOPE.md",
+      "bytes": 1761,
+      "sha256": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab",
+      "headings": [
+        "# Root controls for the full-ensemble candidate"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9109,
+      "path": ".claude/science/physics-loops/full-cube-ensemble-energy-20260924/author_history/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "bytes": 21226,
+      "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+      "headings": [
+        "# Full original cube ensemble: candidate ordinary-energy anomaly and sharp variance",
+        "## 1. Model, exact ensemble and proposed conclusion",
+        "## 2. Uniform analytic grading and pre-first-birth input",
+        "## 3. Uniform birth-source orders, including the second-high cancellation",
+        "## 4. Smooth-input rotor decay and finite-spin comparison",
+        "## 5. First-high integral: recent and older births",
+        "## 6. Other bands and the common low energy",
+        "## 7. Limits, checks still owed, and why the route matters",
+        "## 8. A trace-class common matter/field description of the energy defect"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9109,
+      "path": ".claude/science/physics-loops/full-cube-ensemble-energy-20260924/review/POST.md",
+      "bytes": 25738,
+      "sha256": "8d9dcbec4f90d8acdc5bf2e50c90851a0e1aa51634d8d1c09661eeefed9af327",
+      "headings": [
+        "# Released-source POST: full original cube ensemble energy and rare density",
+        "## 1. Conclusion and provenance",
+        "## 2. Exact target and agreement with PRE",
+        "## 3. Load-bearing proof comparison",
+        "### 3.1 Grading, actual pre-birth input and the stronger root estimates",
+        "### 3.2 Birth-source cancellation and second band",
+        "### 3.3 Evolved source, genuine growing-time comparison and age integration",
+        "### 3.4 Hermitian energy coordinates and low moments",
+        "## 4. Separate POST reconstruction of the trace-norm extension",
+        "## 5. Separate POST reconstruction of the frozen-source balance",
+        "## 6. Author controls, independent checks and their limits",
+        "## 7. Required scope and disposition"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9109,
+      "path": ".claude/science/physics-loops/full-cube-ensemble-energy-20260924/review/PRE.md",
+      "bytes": 31363,
+      "sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df",
+      "headings": [
+        "# Independent PRE: ordinary full-ensemble energy with continuous cube births",
+        "## 1. Supported statement and exact domain",
+        "## 2. Source identities and provenance",
+        "## 3. Exact full-ensemble decomposition and the low candidate",
+        "## 4. Weighted low motion and uniform birth-time source orders",
+        "### The N=4 transient retains useful grades",
+        "### Apply the actual mark before discarding any grade",
+        "## 5. Smooth-source rotor bounds and the all-age finite-spin estimate",
+        "## 6. Integrating the first-high physical energy",
+        "## 7. All remaining bands and the ordinary low-energy limit",
+        "## 8. Positivity, precision and limits",
+        "## 9. Independent checks and evidence limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9120,
+      "path": ".claude/science/physics-loops/initial-cube-energy-balance-20260924/author_history/INITIAL_ENERGY_LAYER_AND_BAND_POWER_PERSONAL_DERIVATION.md",
+      "bytes": 15235,
+      "sha256": "f93139735be333d46cb7b5d7d0882beaa341532df0a76d24d61676b93514d844",
+      "headings": [
+        "# Initial energy layer and band-resolved power in the full original cube",
+        "## 1. Fixed model and quantities",
+        "## 2. The initial physical-time layer",
+        "## 3. Uniform energy bound needed for integrated accounting",
+        "## 4. Net power as a distribution, including the initial impulse",
+        "## 5. Large opposing terms in the exact first-high energy equation",
+        "## 6. Obligations and scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9120,
+      "path": ".claude/science/physics-loops/initial-cube-energy-balance-20260924/author_history/MATCHED_DENSITY_ROOT_ADDENDUM.md",
+      "bytes": 2997,
+      "sha256": "663c2b5f5961e5bc10d8c1e268bd4dd49f8b56be65d74ca1e41d146fcdd279cb",
+      "headings": [
+        "# Matched rare density on the entire initial interval"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9120,
+      "path": ".claude/science/physics-loops/initial-cube-energy-balance-20260924/review/POST.md",
+      "bytes": 11589,
+      "sha256": "1b8a71eedd1d014e22b23a87e7658cd01fd0645f932b8292dce08ddc645c42c4",
+      "headings": [
+        "# Initial energy and band balance: released-source POST",
+        "## Reviewed identities and independence boundary",
+        "## Compact initial density and scalar limits",
+        "## Fixed-positive-time rare density and the positive carrier",
+        "## Net drift and endpoint bookkeeping",
+        "## Existing controls and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9120,
+      "path": ".claude/science/physics-loops/initial-cube-energy-balance-20260924/review/PRE.md",
+      "bytes": 22696,
+      "sha256": "785f3c87cec7db2d00f2548745b22fd68e74afa09a307081446fc80763555b3a",
+      "headings": [
+        "# Initial full-ensemble energy layer and exact energy balance: independent PRE",
+        "## 1. Hypotheses, provenance and result",
+        "## 2. Exact decomposition and the imported estimates actually used",
+        "## 3. Uniform matched expression including time zero",
+        "## 4. Initial layer, matching and noncommuting limits",
+        "## 5. Exact net system-energy drift",
+        "## 6. Justified limits of the net drift",
+        "## 7. Exact first-high gain and loss, with no coherence discarded",
+        "## 8. Independent controls and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9124,
+      "path": ".claude/science/physics-loops/photon-observation-live-formation-20260924/author_history/PHOTON_OBSERVATION_AND_LIVE_BIRTH_ROOT_DERIVATION.md",
+      "bytes": 14008,
+      "sha256": "15c48725d54c95abe43de50de23b62fbf9d983029ee2152c125f361a9ca316ba",
+      "headings": [
+        "# Photon observations and the response to actual live formation",
+        "## I. A definite observable if the harmonic modes are photons",
+        "### Primary observational comparison, without a raw-data reanalysis",
+        "## II. What the original formation instrument actually does initially",
+        "### Magnetic observables, electric drift and noise",
+        "### Initial change in the wave response, including the new matter",
+        "## What the actual observational bridge still requires"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9124,
+      "path": ".claude/science/physics-loops/photon-observation-live-formation-20260924/review/dispersion/POST.md",
+      "bytes": 9875,
+      "sha256": "b9681424f3b3e5347f0527132ef38702960100ddc25da862821981d9cb5c03c5",
+      "headings": [
+        "# Released-source POST: photon observation Part I only",
+        "## Exact reviewed and preserved sources",
+        "## Mathematical comparison",
+        "## Narrow correction and preserved numerical qualification",
+        "## Primary-source wording and evidence"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9124,
+      "path": ".claude/science/physics-loops/photon-observation-live-formation-20260924/review/dispersion/PRE.md",
+      "bytes": 22323,
+      "sha256": "19e92bfd9575efdaaeb1ad8b1a7a189de6ec900cfab8862ce465222642de8789",
+      "headings": [
+        "# Independent PRE: harmonic lattice dispersion and conditional timing constraints",
+        "## 1. Exact inherited statement and definitions",
+        "## 2. Group propagation and polarization",
+        "## 3. Uniform low-wavevector remainders",
+        "## 4. Energy parameterization and direction of an actual ray",
+        "## 5. Precisely what is borrowed from the timing analyses",
+        "## 6. The cosmological hypothesis is substantive",
+        "## 7. Missing hypotheses and decisive limits of the bridge",
+        "## 8. Independent controls, provenance and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9124,
+      "path": ".claude/science/physics-loops/photon-observation-live-formation-20260924/review/live_formation/POST.md",
+      "bytes": 18841,
+      "sha256": "53166c53e9488630a4e661331555312d3eda018e4d99f1da76576d04a27cb979",
+      "headings": [
+        "# POST: released Part II versus the frozen live-birth field-response PRE",
+        "## 1. Exact inputs and preserved independence",
+        "## 2. Initial source and no-first-birth statements",
+        "## 3. Covariances, transverse injection, and the harmonic diagnostic",
+        "## 4. The full matter-dependent Wilson acceleration",
+        "## 5. Precise textual corrections and domain clarifications",
+        "## 6. Released control correspondence, failures, and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9124,
+      "path": ".claude/science/physics-loops/photon-observation-live-formation-20260924/review/live_formation/PRE.md",
+      "bytes": 26359,
+      "sha256": "20ef1f7b377c377898cddd62d94111561c871f3ea3838957516f241a7ad1e255",
+      "headings": [
+        "# Blind PRE: exact initial field response with live births",
+        "## 1. Frozen sources, conventions, and domain",
+        "## 2. Initial source and exact no-first-birth law",
+        "## 3. Angular response, electric moments, and transverse projection",
+        "## 4. First two exact Wilson derivatives under the full generator",
+        "### The postbirth electric calculation",
+        "## 5. Cube, a simple degree-six torus, and a nonzero test state",
+        "## 6. What these facts do and do not establish about propagation",
+        "## 7. Independent primitive control and evidence limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/MAGNETIC_INTERACTION_PICTURE_FINITE_BIN_ROOT.md",
+      "bytes": 9955,
+      "sha256": "08d178740c897d007a45fea09cde258706bdb5f9ee3756291f20f9af4911662d",
+      "headings": [
+        "# A larger sufficient window for the original two-record packet contrast",
+        "## 1. Fixed setting and claim",
+        "## 2. The actual prebirth graph estimate",
+        "## 3. Magnetic evolution is a smooth matrix multiplier",
+        "## 4. A smooth-observable contrast lemma",
+        "## 5. Integrated contrast and statistical scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/magnetic_lag/ROOT_VERIFICATION.md",
+      "bytes": 595,
+      "sha256": "3cbe09b9bc021a7ae72eaee692d0dce5ebf8ecd2aa10aa823eefe3bf1024f5fc",
+      "headings": [],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/microscopic/MICROSCOPIC_FINITE_BIN_RECORD_BRIDGE_ROOT.md",
+      "bytes": 11201,
+      "sha256": "a04e25530ccf1dc8df8a27b41523d04703c09ff758664792a9487a8cea0ce60c",
+      "headings": [
+        "# From the common rotor readout to microscopic finite-bin records",
+        "## 1. Precisely which parent statement is used",
+        "## 2. Finite deterministic time bins preserve the original instrument",
+        "## 3. Pass from rectangular bins to a positive relative-time window",
+        "## 4. An ordered microscopic realization of the packet contrast",
+        "## 5. A separate finite model tests why the order matters"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/older_finite_bin/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "bytes": 8398,
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5",
+      "headings": [
+        "# Finite-duration formation counts for a prepared photon packet",
+        "## 1. Replace the boundary density by an event with positive probability",
+        "## 2. A sufficient bound on the full postbirth short-time error",
+        "## 3. Controlled finite-bin signal",
+        "## 4. Signal size and what is still missing"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/author_history/readout/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "bytes": 11027,
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "headings": [
+        "# Two actual formation records read a prepared photon packet",
+        "## 1. A local pair of marks with a nonconstant field effect",
+        "## 2. The exact two-event density uses the full postbirth generator",
+        "## 3. A free packet gives a moving coincidence deficit",
+        "## 4. Limits and the remaining measurement bridge"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/POST.md",
+      "bytes": 13944,
+      "sha256": "b9a660f2e4a678576b50c3a1b0f768bdce540f01f473d236268410b42c50ce2b",
+      "headings": [
+        "# Released-source POST: magnetic interaction-picture lag estimate",
+        "## 1. Reviewed identities and preserved independence boundary",
+        "## 2. Analytic comparison",
+        "## 3. Required wording correction",
+        "## 4. Control construction and preserved numerical failures",
+        "## 5. Remaining scope and evidence disposition"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/magnetic_lag/PRE.md",
+      "bytes": 22869,
+      "sha256": "7b6ac7468af969a45dd956de59f6dd3a5d1b347ab500fe885df29549d10b17ed",
+      "headings": [
+        "# Blind PRE: magnetic evolution and a sharper finite-bin photon contrast",
+        "## 1. Exact sources and model scope",
+        "## 2. Smooth matrices must live on all link angles",
+        "## 3. A centered smooth-multiplier contrast lemma",
+        "## 4. Full electric/loss remainder with domains",
+        "## 5. Probability estimate, admissible lags and repetition consequence",
+        "## 6. Limits, failures preserved and microscopic gap",
+        "## 7. Own controls, complete evidence and their limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/POST.md",
+      "bytes": 24757,
+      "sha256": "c276edf6749f4c03c31faf5912ee60a21f8530defe702105e186f158b587c6c3",
+      "headings": [
+        "# Released-source POST: microscopic finite-bin original records",
+        "## 1. Frozen inputs and scope of evidence",
+        "## 2. Full-history register and physical terminal sectors",
+        "## 3. Original coherent channels and the finite-partition limit",
+        "## 4. Positive-width event, target hazard, and bin removal",
+        "## 5. Ordered transfer of the provisional packet contrast",
+        "## 6. Root five-state control versus the independent PRE example",
+        "## 7. Binding checks, execution limits, and disposition of this check"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/microscopic/PRE.md",
+      "bytes": 25195,
+      "sha256": "e48f606abebb28c5e60cbd98539284aee214e3f2819597621c6809dc1f5d2ec0",
+      "headings": [
+        "# Blind PRE: first-and-next original marked record in finite time windows",
+        "## 1. Exact sources and the statement being checked",
+        "## 2. Target boundedness and the exact joint-event kernel",
+        "## 3. A finite classical monitor of the actual marks",
+        "## 4. Why convergence survives the finite grid operations",
+        "## 5. Remove the bins by a target continuity-set argument",
+        "## 6. Abstract shrinking contrasts and a selectable diagonal",
+        "## 7. Separate six-state abstract-parent-class example",
+        "## 8. Independent control, complete evidence, and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/POST.md",
+      "bytes": 10786,
+      "sha256": "326963d63fe778e3e12b5e7b0d8b004699364c6c06b428c17b82e762e09eb051",
+      "headings": [
+        "# Released-source POST: finite-duration two-record contrast",
+        "## 1. Exact reviewed material and preservation",
+        "## 2. The coarser graph estimate is sufficient",
+        "## 3. Probability, contrast and bandwidth scope",
+        "## 4. Count statistic and microscopic comparison",
+        "## 5. Findings and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/older_finite_bin/PRE.md",
+      "bytes": 26702,
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed",
+      "headings": [
+        "# Blind PRE: a sufficient finite-lag window for the supplied two-mark readout",
+        "## 1. Source boundary and fixed hypotheses",
+        "## 2. Event and exact rotor probability",
+        "## 3. An unbounded-domain estimate for the exact prepared orbit",
+        "## 4. Full no-event semigroup and the finite-bin remainder",
+        "## 5. Conditional finite-bin vacuum and packet contrasts",
+        "## 6. Counts under an explicitly supplied repetition assumption",
+        "## 7. Required microscopic labeled-process comparison and order of limits",
+        "## 8. Independent small controls and verification limits",
+        "## 9. Disposition and immutable evidence"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/POST.md",
+      "bytes": 17332,
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c",
+      "headings": [
+        "# POST: released two-formation photon-packet readout candidate",
+        "## 1. Frozen inputs and comparison boundary",
+        "## 2. Load-bearing proof comparison",
+        "## 3. One scope repair and an optional explicit node qualification",
+        "## 4. PRE-only extensions available with attribution",
+        "## 5. Author controls, own correspondence and evidence limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9131,
+      "path": ".claude/science/physics-loops/original-record-photon-bridge-20260924/review/readout/PRE.md",
+      "bytes": 29565,
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d",
+      "headings": [
+        "# Blind PRE: original formation records and prepared one-particle fields",
+        "## 1. Exact premises and conventions",
+        "## 2. Path derivation of the first and ordered two-mark effects",
+        "## 3. Actual first/next densities, with the complete postbirth generator",
+        "## 4. Matching the prepared weak-field states",
+        "## 5. Leading contrast and the useful sharpening of the error estimate",
+        "## 6. Positive-width bins and honest microscopic use",
+        "## 7. A finite narrow-band propagation bound",
+        "## 8. Own evidence and its precise scope",
+        "## 9. Supported conclusion and boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/author_history/count/UNRESTRICTED_FINITE_BIN_RECORD_CONTRAST_ROOT.md",
+      "bytes": 14968,
+      "sha256": "5ad270f81ab37e1ffb14130937228c6c67b0bdd0858362d76ea6bf5057a8d1cd",
+      "headings": [
+        "# Finite-window original record counts with background events permitted",
+        "## 1. The different statistic",
+        "## 2. A two-insertion extension of the local disturbance bound",
+        "## 3. Prepared contrast through a positive lag",
+        "## 4. Count variance cannot be borrowed from a Bernoulli event",
+        "## 5. Fixed-parameter microscopic count moments",
+        "## 6. Observation status",
+        "## 7. Separate deterministic controls"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/author_history/local/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "bytes": 14324,
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+      "headings": [
+        "# Local record statistics with unrestricted background formation",
+        "## 1. Question and exact scope",
+        "## 2. Uniform Hamiltonian locality despite unbounded electric energy",
+        "## 3. Sum the local disturbances, not the global jump rate",
+        "## 4. A local ordered factorial statistic with other events allowed",
+        "## 5. What this would and would not add",
+        "## 6. Separate root controls and evidence limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/review/count/POST.md",
+      "bytes": 33451,
+      "sha256": "259fc65285a094235becbc5accf4e9348a0364ff5d83639d6fa274d534a65a6e",
+      "headings": [
+        "# Unrestricted original record counts: released-source POST",
+        "## Result and exact scope",
+        "## Frozen inputs and evidence identity",
+        "## Original count and instrument",
+        "## The LR/product-observable extension",
+        "## Prepared contrast and limits",
+        "## Proposal domination, actual variance, and repetitions",
+        "## Finite registers, boundary area, and microscopic order of limits",
+        "## Attribution and comparison with PRE",
+        "## Complete control review and numerical limits",
+        "## Public scope corrections and remaining obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/review/count/PRE.md",
+      "bytes": 38484,
+      "sha256": "1fd58a66171c23568841d2527a2091f3992e584cbad970bdb8979a38e4c68e7e",
+      "headings": [
+        "# Blind PRE: unrestricted original marked-pair counts",
+        "## 1. Exact inputs, provenance, and target contract",
+        "## 2. Exact factorial intensity with unrestricted backgrounds",
+        "## 3. Prepared unitary boundary and lag estimates, with provenance",
+        "## 4. A quantitative fixed-graph unrestricted contrast",
+        "## 5. Count variance from three and four selected events",
+        "## 6. Repetition statement and its additional assumptions",
+        "## 7. What the provisional local estimate adds, and what it does not",
+        "## 8. Fixed-parameter microscopic count and variance transfer",
+        "## 9. Independently written bounded controls",
+        "## 10. Obligation map and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/review/local/POST.md",
+      "bytes": 17929,
+      "sha256": "7f140d2c9907c734f81bd70e313c42f3736b475542dd6416aef4349a2581fdad",
+      "headings": [
+        "# POST: local formation background with unrestricted other events",
+        "## 1. Exact released inputs and preservation",
+        "## 2. Local Hamiltonian and instrument comparison",
+        "## 3. Explicit scrutiny of cutoff removal",
+        "## 4. Full factorial intensity and qualitative count limit",
+        "## 5. Narrow premise and prose clarifications",
+        "## 6. Author controls and own correspondence evidence"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9137,
+      "path": ".claude/science/physics-loops/unrestricted-original-records-20260924/review/local/PRE.md",
+      "bytes": 25998,
+      "sha256": "82138c721a9bf2784cbc3510efddbfaf6a47cd3eeb5f0138ad08d2382eb12429",
+      "headings": [
+        "# Blind PRE: local formation background and ordered factorial intensity",
+        "## 1. Exact premises, source identities and local representatives",
+        "## 2. The unbounded diagonal produces one fixed enlargement",
+        "## 3. A sufficient Hamiltonian commutator bound",
+        "## 4. Sum the formation source locally, then use Duhamel",
+        "## 5. The actual full-ensemble factorial statistic",
+        "## 6. Counterexamples and unresolved domains of inference",
+        "## 7. Own bounded evidence and exact limitations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/author_history/calibration/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "bytes": 8020,
+      "sha256": "ef1521b7a83ef3223aa3859814488283ab97571efdeb4b4bcf28867759ee0c27",
+      "headings": [
+        "# Scope worksheet for the original-record observable characterization",
+        "## N1 \u2014 Actual route families and their status",
+        "## N2 \u2014 Conditions and their relations",
+        "## N3 \u2014 Hidden-condition scan",
+        "## N4 \u2014 Exact residual matching",
+        "## N5 \u2014 Resolution audit",
+        "## N6 \u2014 Partial closure and conventions",
+        "## N7 \u2014 Strongest counterargument to a broad no-go",
+        "## N8 \u2014 Cross-cycle scope check"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/author_history/calibration/ORIGINAL_RECORD_OBSERVABLE_CALIBRATION_ROOT.md",
+      "bytes": 13955,
+      "sha256": "07d50a3a8ffd5e170bff4c41ab428908f19e43c484293f8082aae114d6538f30",
+      "headings": [
+        "# What the original formation readout measures",
+        "## 1. Fixed domain and exact initial instrument",
+        "## 2. Leading response for finite-Hermite preparations",
+        "## 3. A phase-sensitive finite-state example",
+        "## 4. Summing probes gives a controlled energy response after averaging",
+        "## 5. Operational comparison with photon detection",
+        "## 6. Scope discipline and live alternatives",
+        "## 7. Separate root controls"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/author_history/probe/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "bytes": 12776,
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf",
+      "headings": [
+        "# A supplied physical matter preparation makes one original mark field sensitive",
+        "## 1. A physical two-branch preparation",
+        "## 2. Exact single-mark effect",
+        "## 3. Prepared field signal at time zero",
+        "## 4. A conservative positive-window statement using the full dynamics",
+        "## 5. Counting noise and supplied repetitions",
+        "## 6. Microscopic scope and outstanding obligations",
+        "## 7. Separate personal controls"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/review/calibration/POST.md",
+      "bytes": 14443,
+      "sha256": "4493fe20219f56e382865f42d7af6f66f7099f8a9a5123d88335613b91acb0b4",
+      "headings": [
+        "# Released-source comparison: original record observable calibration",
+        "## 1. Identity, scope and independence",
+        "## 2. Exact instrument and leading response",
+        "## 3. Spatial/time averaging and the two qualifications",
+        "## 4. Primary comparison and operational limits",
+        "## 5. Code and evidence comparison"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/review/calibration/PRE.md",
+      "bytes": 23134,
+      "sha256": "317f27047dc373562edb0efb5be53ba83a9eb5bcd0f295ec0ef7b481d03f4ee1",
+      "headings": [
+        "# Blind PRE: calibration of the original resolved record observable",
+        "## 1. Fixed model, state preparation and exact observable",
+        "## 2. General leading prepared-state response, with a resolvable remainder",
+        "## 3. Which state families admit a mean calibration?",
+        "## 4. Spatial summation and time averaging",
+        "## 5. A conservative positive-bin version and its domains",
+        "## 6. What comparison with absorption photodetection actually says",
+        "## 7. Empirical benchmark: what Brouri et al. measured",
+        "## 8. Independent controls, source identities and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/review/probe/POST.md",
+      "bytes": 23192,
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee",
+      "headings": [
+        "# POST: the released prepared-matter probe and unrestricted counts",
+        "## 1. Source identities and preserved independence",
+        "## 2. Check the root's actual preparation, not just its final effect",
+        "## 3. Weak-field and domain fidelity",
+        "## 4. Unrestricted counts: new POST reconstruction",
+        "## 5. Factorial moment, variance and repetition coefficient",
+        "## 6. Microscopic moments and exact initial-rate warning",
+        "## 7. PRE alternatives and preparation-error scope remain relevant",
+        "## 8. Evidence correspondence, limits and narrow recommendations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9143,
+      "path": ".claude/science/physics-loops/prepared-original-record-probe-20260924/review/probe/PRE.md",
+      "bytes": 27226,
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589",
+      "headings": [
+        "# Blind PRE: a supplied physical matter preparation for one original formation probe",
+        "## 1. Exact inputs and scope",
+        "## 2. A physical local preparation",
+        "## 3. Exact original path calculation and discriminating controls",
+        "## 4. Exact weak-field preparation contrast and its error sensitivity",
+        "## 5. A limited positive-time event regime under the full generator",
+        "## 6. Microscopic, preparation and empirical boundaries",
+        "## 7. Own checks, evidence limits and recovery"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md",
+      "bytes": 10545,
+      "sha256": "867d9b04e2023cdf3280382840e1f98fe1cd9061bf529ca94a84390c888bedc1",
+      "headings": [
+        "# Energy and a finite scaled window for the supplied matter interference probe",
+        "## 1. Scope and the harmonic-fiber issue",
+        "## 2. Exact finite matter coefficients",
+        "## 3. Prepared energy mean and ordinary variance",
+        "## 4. Fixed scaled positive window with full dynamics",
+        "## 5. Counting noise within this supplied window family",
+        "## 6. Evidence status and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "bytes": 8360,
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b",
+      "headings": [
+        "# What the supplied probe predicts, and which clock scale remains unbridged",
+        "## 1. Sources and the exact question",
+        "## 2. A quantitative vacuum response for this preparation",
+        "## 3. The full process and a recorded click, not only a density",
+        "## 4. A conditional physical-clock diagnostic",
+        "## 5. Scope stress test and remaining routes"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/ROOT_METADATA_QUALIFICATION.md",
+      "bytes": 379,
+      "sha256": "1a4d164b0d23ae64f90b4004b22eb8dce169d316f63c761dcdbb99efcec0eb7f",
+      "headings": [],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/ROOT_EDITORIAL_QUALIFICATION.md",
+      "bytes": 563,
+      "sha256": "9463799001beacfe35f5dacfc6260e360397bfce4ab1c11b36df130196468cda",
+      "headings": [
+        "# Narrow post-seal editorial qualification"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md",
+      "bytes": 6955,
+      "sha256": "57d3e1c06396db01957536224d7c03d0b3a04908a34ae01bb56a37ea5250ff35",
+      "headings": [
+        "# Ordinary energy of the selected prepared-probe output",
+        "## 1. Actual normalized output",
+        "## 2. Full-energy moment limits",
+        "## 3. What this is not an energy ledger for",
+        "## 4. Evidence"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST.md",
+      "bytes": 24542,
+      "sha256": "0c78eb924bf08264f85c9cda41fc8b90dc0a30f4bc9f52a783dc73549098bfb8",
+      "headings": [
+        "# Released-source POST: prepared-probe dynamics and selected-output energy",
+        "## 1. Outcome and limits of this comparison",
+        "## 2. Exact released identities",
+        "## 3. Why side sixteen resolves the topology problem",
+        "## 4. Exact pair action, certificates and coefficient comparison",
+        "## 5. Full ordinary rotor energy and actual short-window dynamics",
+        "## 6. Count variance, restricted optimization and microscopic order",
+        "## 7. Normalized output, power and heat",
+        "## 8. Attribution, evidence status and remaining obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PRE.md",
+      "bytes": 37575,
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27",
+      "headings": [
+        "# Blind independent PRE: dynamics and energy of the supplied prepared probe",
+        "## 1. Supported result and exact scope",
+        "## 2. Source identities and provenance",
+        "## 3. Physical state, operators and domains",
+        "## 4. Gauss and harmonic fibers precede a flat-angle limit",
+        "## 5. Exact magnetic moments and their full rotor meaning",
+        "## 6. The full dynamics disturb the cancellation",
+        "## 7. Positive short count windows and their noise",
+        "### 7.1 The individual rare-count regime supplied in Root22",
+        "### 7.2 A contrast-only improvement",
+        "### 7.3 A controlled critical window showing the extra background",
+        "### 7.4 Count variance and repetitions",
+        "## 8. Normalized initial selected outputs",
+        "## 9. Ordinary microscopic energy is a different operator question",
+        "## 10. Evidence, failures and remaining obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST.md",
+      "bytes": 8569,
+      "sha256": "9ed04ef0513fe997fc92bee72fd6a07919bf8db73bcfd684085f6a8a8ca63d2c",
+      "headings": [
+        "# Released-source comparison: supplied-probe response ratios and clock scope",
+        "## Exact comparison anchors",
+        "## Rate and preparation quantifiers",
+        "## Positive windows with the full process",
+        "## SI meaning and remaining physical hypotheses",
+        "## Evidence and attribution"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9147,
+      "path": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PRE.md",
+      "bytes": 20530,
+      "sha256": "1df863cca91858875c0fb84743f6fcf9a706ebde3a3e799b733bf2d1b8ac2a64",
+      "headings": [
+        "# Independent PRE: selected-probe ratios and a conditional SI window scale",
+        "## 1. Sources, imported premises and exact preparation",
+        "## 2. Mode normalization and the initial rate ratio",
+        "## 3. At least one selected mark in a positive window",
+        "## 4. Microscopic order and excluded point-rate inference",
+        "## 5. Conditional conversion of the existing sufficient window to seconds",
+        "## 6. Independent controls and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "bytes": 10472,
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b",
+      "headings": [
+        "# Optical-band overlap of the original local prepared probe",
+        "## 1. Sources and scope",
+        "## 2. Exact spectral overlap on a finite torus",
+        "## 3. A volume-independent upper bound",
+        "## 4. What the bound says about original counts",
+        "## 5. Conditional observational scale diagnostic",
+        "## 6. A bound needing only mean reference energy",
+        "## 7. Evidence status"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "bytes": 8414,
+      "sha256": "dfb982a3e25645c79c3f2d6c645e7bb65d2cafb768ca01270b125dd40b3dee98",
+      "headings": [
+        "# Optical-band overlap of the original local prepared probe",
+        "## 1. Sources and scope",
+        "## 2. Exact spectral overlap on a finite torus",
+        "## 3. A volume-independent upper bound",
+        "## 4. What the bound says about original counts",
+        "## 5. Conditional observational scale diagnostic",
+        "## 6. Evidence status"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/OPTICAL_EXPERIMENT_COMPARISON_SCOPE_ROOT.md",
+      "bytes": 3828,
+      "sha256": "2f34fa36a2d7da31be5cf78beaf4c1800ed91051dfdc9a542f1bacd09251def0",
+      "headings": [
+        "# A primary optical experiment and the unresolved comparison",
+        "## Primary evidence and what its numbers mean",
+        "## Energy and time translations, explicitly conditional",
+        "## Why there is still no experimental exclusion or confirmation"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/FINITE_VOLUME_OPTICAL_SCALE_DIAGNOSTIC_ROOT.md",
+      "bytes": 3100,
+      "sha256": "f28a1e685cf74050230f123a074c34ea87ddf7f088ad663b7755fd43756b3e1c",
+      "headings": [
+        "# Finite-volume optical-scale diagnostic \u2014 root candidate, unreviewed"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST.md",
+      "bytes": 15736,
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5",
+      "headings": [
+        "# Released comparison of the optical reference-energy and response candidates",
+        "## Exact released scope and origins",
+        "## Reference spectrum and local spectral weights",
+        "## Mean energy, mixed states and transfer to counts",
+        "## Released primary comparison and SI arithmetic",
+        "## Exact repairs, evidence and remaining scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9150,
+      "path": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PRE.md",
+      "bytes": 27493,
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+      "headings": [
+        "# Independent PRE: reference energy, optical bands and the original local probe",
+        "## 1. Sources, permitted reuse and physical scope",
+        "## 2. Reference Hilbert space, energy and Fourier normalization",
+        "## 3. Lowest nonzero reference energy and the conditional optical size",
+        "## 4. Exact hard-band optimum and a finite-volume fourth-power bound",
+        "### Controlled continuum comparison of the static sum",
+        "## 5. A mean-energy ceiling: bounds, exact optimum and surviving tails",
+        "### Exact finite-volume mean-constrained maximum",
+        "### Why the fourth-power band law cannot follow from a mean bound",
+        "## 6. Combining with the same conditional SI ceiling",
+        "## 7. What transfers to counts, and what does not",
+        "## 8. Independent finite controls, preserved correction and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "bytes": 13081,
+      "sha256": "5feb53d99a0e1008019ff4563c16ba880ab3ab6e38fee5fd2682e62f081ee157",
+      "headings": [
+        "# Adding a reference excitation to the original charged probe: actual energy",
+        "## 1. The missing identification tested here",
+        "## 2. Exact local magnetic compression",
+        "## 3. Actual full-energy difference",
+        "## 4. An exact failure of the unrestricted photon-energy reading",
+        "## 5. A positive low-reference-band mean-energy bridge",
+        "## 6. Scientific controls and scope stress test"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/PRESEAL_ELECTRIC_CORRECTION.md",
+      "bytes": 897,
+      "sha256": "a2fb49dfe4f567dc226bb89bfc7cbd46236a8575a5132933a529ed42d0ca7cb3",
+      "headings": [
+        "# Corrected before sealing or independent disclosure"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/input_energy/history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md",
+      "bytes": 12017,
+      "sha256": "c3acc0d5aadf55e2434c2f7e577bd45624fdb84bbef08b02b7b9c9be94b39adf",
+      "headings": [
+        "# Adding a reference excitation to the original charged probe: actual energy",
+        "## 1. The missing identification tested here",
+        "## 2. Exact local magnetic compression",
+        "## 3. Actual full-energy difference",
+        "## 4. An exact failure of the unrestricted photon-energy reading",
+        "## 5. A positive low-reference-band mean-energy bridge",
+        "## 6. Scientific controls and scope stress test"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/author_history/selected_power/ORIGINAL_SELECTED_MARK_ENERGY_POWER_ROOT.md",
+      "bytes": 11240,
+      "sha256": "dc34643135d5b31b627420ba6bc325b7d5b5dbf9095e6801d25b26d1dd8c66c6",
+      "headings": [
+        "# Actual energy power of one original mark on the charged probe",
+        "## 1. Observable and premises",
+        "## 2. Exact magnetic compression with the anticommutator",
+        "## 3. Electric contribution and the power limit",
+        "## 4. A positive baseline proved without a floating sign",
+        "## 5. Low-band response and the observational limitation",
+        "## 6. Evidence and surviving scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/POST.md",
+      "bytes": 15874,
+      "sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0",
+      "headings": [
+        "# POST: released charged-probe input-energy candidate",
+        "## 1. Frozen identities and coverage",
+        "## 2. Magnetic coefficients, locality, and topology",
+        "## 3. Electric correction and the preserved historical error",
+        "## 4. Distinct witnesses and the required wording correction",
+        "## 5. Low-band theorem, zero modes, and limits",
+        "## 6. Numerical comparison and execution bindings",
+        "## 7. Preserved review failures and final scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/input_energy/PRE.md",
+      "bytes": 28269,
+      "sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9",
+      "headings": [
+        "# Blind PRE: reference excitation energy versus the full charged input energy",
+        "## 1. Sources, domain, and the compared objects",
+        "## 2. Exact physical preparation and electric compression",
+        "## 3. Magnetic compression: a finite positive-cosine defect",
+        "## 4. The finite input energy increment",
+        "## 5. An analytic counterexample to automatic energy identification",
+        "## 6. A sufficient low-reference-frequency restriction",
+        "## 7. Independent controls, failure preservation, and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/POST.md",
+      "bytes": 20039,
+      "sha256": "83e9fa441b7fbee49d1b7e24708dcd15a7d0641abbba3efb57065f188d7a80e4",
+      "headings": [
+        "# Released-source POST: selected original-mark energy power",
+        "## 1. Exact sources, provenance and coverage",
+        "## 2. Normalization, primitive and full-Hamiltonian correspondence",
+        "## 3. Electric masks, domain and the fixed-packet limit",
+        "## 4. Independent exact check of the released plaquette filling",
+        "## 5. Independent derivation of the hard-low-band bound",
+        "## 6. Author runtime correspondence and independent evidence limits",
+        "## 7. Preserved PRE contributions and surviving boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9167,
+      "path": ".claude/science/physics-loops/mobile-record-input-energy-power-20260925/review/selected_power/PRE.md",
+      "bytes": 25939,
+      "sha256": "be47d27ab25dbf1853331b1bb8f02a2b67b3cc93c244b4a830fa86b810c71216",
+      "headings": [
+        "# Blind PRE: selected original mark and instantaneous mean-energy power",
+        "## 1. Exact inputs and premise boundary",
+        "## 2. Actual adjoint dissipator and domain",
+        "## 3. Exact local magnetic difference, with gain and loss",
+        "## 4. Haar fiber and the torus-size restriction",
+        "## 5. Compact-packet limit and full gain/anticommutator coefficients",
+        "## 6. Signs and finite arithmetic",
+        "## 7. Separate checks, corrections and unresolved scope",
+        "## Appendix: complete local coefficient table"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/SOURCE_METADATA_QUALIFICATION.md",
+      "bytes": 684,
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "headings": [
+        "# Source-disposition metadata qualification"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/coincidences/TWO_ORIGINAL_DETECTOR_COINCIDENCES_ROOT.md",
+      "bytes": 14782,
+      "sha256": "5b8427fac4eae4fa0c61b03a368e9bd60d443d74dfa502bfe93c5ed4afd70095",
+      "headings": [
+        "# Two original marks: coincidence counts and optical background normalization",
+        "## 1. Two supplied physical probes and one reference excitation",
+        "## 2. Exact Gaussian moments behind the original effects",
+        "## 3. A positive-window result for the actual full process",
+        "## 4. Raw coincidence ratio and background subtraction",
+        "## 5. The decorrelation condition and low-band examples",
+        "## 6. Primary optical comparison: what has and has not been matched",
+        "## 7. Controls and claim status"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/author_history/number_offsets/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "bytes": 7935,
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870",
+      "headings": [
+        "# Original formation counts do not calibrate particle-number energy offsets",
+        "## 1. Exact premise and previously known accounting",
+        "## 2. Every marked history has the same probability",
+        "## 3. The same count law can have different energy power",
+        "## 4. What this resolves for the observation bridge"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/POST.md",
+      "bytes": 22309,
+      "sha256": "a9c3ecc41bd23dbae2f131cf9b290dbb362d6b5099d103e54e30a3752e020c1e",
+      "headings": [
+        "# POST: released two-original-detector coincidence candidate",
+        "## 1. Exact comparison sources and unchanged PRE",
+        "## 2. Physical preparation, joint effects and reference normalization",
+        "## 3. Full no-jump proof versus the PRE factorial proof",
+        "## 4. Coincidence subtraction, dark inputs and source comparison",
+        "## 5. Additional low-band and large-separation claim",
+        "## 6. Source, code and numerical correspondence",
+        "## 7. Findings and remaining scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/coincidences/PRE.md",
+      "bytes": 27135,
+      "sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+      "headings": [
+        "# Blind PRE: two disjoint original prepared marks and coincidences",
+        "## 1. Sources and fixed scope",
+        "## 2. Physical two-copy preparation and exact effects",
+        "## 3. Reference modes and initial joint coefficients",
+        "## 4. A sufficient positive-window limit with all channels",
+        "## 5. Microscopic order, preparation errors and repetitions",
+        "## 6. Raw and vacuum-subtracted normalizations",
+        "## 7. A checked actual disjoint geometry with nonzero covariance",
+        "## 8. Relation to an optical coincidence experiment",
+        "## 9. Controls, preserved failure and verification limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/POST.md",
+      "bytes": 21880,
+      "sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2",
+      "headings": [
+        "# Released-source POST: number offsets and original marked observations",
+        "## 1. Frozen sources, chronology, and independence",
+        "## 2. Complete original record law",
+        "## 3. Energy expressions and a sufficient domain",
+        "## 4. Later weak-field qualification",
+        "## 5. Author evidence and independent binding checks",
+        "## 6. Supported disposition and remaining limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9181,
+      "path": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/review/number_offsets/PRE.md",
+      "bytes": 26240,
+      "sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6",
+      "headings": [
+        "# Blind PRE: number-sector offsets, original formation records, and energy accounting",
+        "## 1. Exact inputs, target, and provenance",
+        "## 2. Parent algebra and well-defined comparison family",
+        "## 3. Exact record-path identity",
+        "## 4. Conditional quantum states: exact surviving scope and counterexamples",
+        "## 5. Ordinary energies and moments",
+        "## 6. Selected energy expressions and their different transformations",
+        "## 7. Exact bounded offset balance and inference from counts",
+        "## 8. Independent controls, discriminators, and retained limitations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "preparation-optical-readout"
+    },
+    {
+      "pr": 9192,
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "bytes": 12234,
+      "sha256": "a72af425e970c080502a394902adf86437d767e90921b30f6e6c889c99ccb902",
+      "headings": [
+        "# Actual finite-window birth records and microscopic energy distributions",
+        "## 1. Exact premises and the gap being addressed",
+        "## 2. Bare P vectors have convergent energy characteristic functions",
+        "## 3. Actual positive-window conditioning",
+        "## 4. A controlled diagonal to the actual effective birth output",
+        "## 5. Exact finite counterexample to upgrading weak energy laws to means",
+        "## 6. Claim scope and the observation bridge"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9192,
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST.md",
+      "bytes": 19733,
+      "sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20",
+      "headings": [
+        "# Released-source POST: finite-window microscopic energy measures",
+        "## 1. Exact reviewed sources and preserved chronology",
+        "## 2. Required magnetic-pair correction",
+        "## 3. Spectral argument compared with PRE",
+        "## 4. Actual records, positive conditioning and the birth-output limit",
+        "## 5. Four-state example: exact scope and algebra",
+        "## 6. Complete source/output correspondence",
+        "## 7. Supported scope after correction"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9192,
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE.md",
+      "bytes": 29737,
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743",
+      "headings": [
+        "# Blind PRE: finite-window formation records and full microscopic energy measurements",
+        "## 1. Premises, exact identities, and source boundary",
+        "## 2. Fixed finite-bin events and conditioned states at a deterministic readout",
+        "## 3. Spectral measurement of the full fast Hamiltonian",
+        "## 4. Time-binned immediate post-first-birth outputs",
+        "## 5. Exact physical counterexample: vanishing spectral mass, divergent energy",
+        "## 6. Distributional limits that are not supplied",
+        "## 7. Scope stress test and evidence integrity"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "energy-moments-and-apparatus"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "bytes": 16531,
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+      "headings": [
+        "# Ground energy and original formation activity in the supplied common law",
+        "## Premises, domains and provisional dependency",
+        "## Results",
+        "## Exact primitive comparison",
+        "## Phase cost, intensity and sector energy",
+        "## Passing to the global minimum",
+        "## Exact controls and failed route",
+        "## Observational meaning and bounded-claim discipline"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/activity/WORKING_DERIVATION.md",
+      "bytes": 5750,
+      "sha256": "18b4dbe70813d06bac8907f49c33066a42cab538afe8bd4642368fb7a86de70b",
+      "headings": [
+        "# Ground energy versus original formation activity \u2014 personal working derivation"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "bytes": 14482,
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb",
+      "headings": [
+        "# Native ground-sector filling in the supplied common Hamiltonian",
+        "## Premises and provenance",
+        "## Claim",
+        "## Physical color space and occupation representation",
+        "## Uniform-occupation trial",
+        "## Uniform row bounds at arbitrary occupancy",
+        "## Physical variational comparison and proof of (3)",
+        "## Exact controls and scope",
+        "## Consequence for the observational bridge",
+        "## No-Go Discipline Gate \u2014 bounded claim audit"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/filling/WORKING_DERIVATION.md",
+      "bytes": 4393,
+      "sha256": "84c701607e7697ebfe9dc4b0438bc3d3e76c8c9c126e9e1f39ced705cecabc45",
+      "headings": [
+        "# Working root extension: a finite density of records in an energetic vacuum"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+      "bytes": 19448,
+      "sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922",
+      "headings": [
+        "# Actual formation outputs reach a lower matter-sector spectral edge",
+        "## 1. Model, spectral objects and result",
+        "## 2. Full physical space and flat magnetic minimum",
+        "## 3. Exact one-minus reduction, with all matter retained",
+        "## 4. Exact row polynomial and static bound for every L>=10",
+        "## 5. The edge is in the actual birth's cyclic spectrum",
+        "## 6. Exact finite controls and geometry counterexample",
+        "## 7. Physical meaning and scope stress test"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/author_history/pair/WORKING_DERIVATION.md",
+      "bytes": 6343,
+      "sha256": "ed88cfbdca0b0aab7893ee586082a29ce151853f21e9aa7ff755f657c3285134",
+      "headings": [
+        "# Native one-pair ground spectrum: personal working derivation",
+        "## 1. Full one-pair physical sector and a proposed flat-angle bound",
+        "## 2. Proposed exact reduction of the flat magnetic ground energy",
+        "## 3. Cubic translation quotient and exact numerical certificates to build",
+        "## 4. Remaining physical obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/POST.md",
+      "bytes": 16875,
+      "sha256": "0a737a77bdc61c1bf5f2e138f7d928e5165a6b9c66564ee1eec9a105196dec6b",
+      "headings": [
+        "# Released-source POST: formation activity versus common-Hamiltonian energy",
+        "## 1. Exact release, prior evidence, and reading scope",
+        "## 2. The primitive inclusion is entrywise, and it is justified",
+        "## 3. Phase cost, electric form domain, and the sector bound",
+        "## 4. Conditional global constants",
+        "## 5. Relation to the sealed PRE and preserved counterexamples",
+        "## 6. Complete numerical/source correspondence",
+        "## 7. Precision repair and remaining limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/activity/PRE.md",
+      "bytes": 19445,
+      "sha256": "d78d92e13dd62895d1f7c8ebff2cfc28f9e88b19d1778cd6eba8cfc3e195d6bc",
+      "headings": [
+        "# Blind PRE: low common-Hamiltonian energy and original formation stationarity",
+        "## 1. Exact premises and provenance",
+        "## 2. An exact intensity identity on one star",
+        "## 3. A uniform local operator bound, with phases and all colors",
+        "## 4. Energy\u2013intensity inequality",
+        "## 5. Stationarity and darkness are different statements",
+        "## 6. Conditional global small-coupling consequence",
+        "## 7. Exact obstructions to stronger interpretations",
+        "## 8. Own controls, complete logs, and boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/POST.md",
+      "bytes": 13958,
+      "sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c",
+      "headings": [
+        "# Released-source POST: native ground-sector filling",
+        "## 1. Exact sources and chronology",
+        "## 2. Model, factor of two, colors and geometry",
+        "## 3. Exact local and variational constants",
+        "## 4. Physical trial, operator domain and limit",
+        "## 5. Distinct PRE additions and unchanged limitations",
+        "## 6. Evidence, tooling limitation and disposition"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/filling/PRE.md",
+      "bytes": 20348,
+      "sha256": "edaaee9321fe99e298acba00dd5c8b9dd750529595806eb04d844bbd27f38b72",
+      "headings": [
+        "# Blind PRE: number-sector filling at the spectral bottom of the supplied common Hamiltonian",
+        "## 1. Sources, target, and exact model",
+        "## 2. Full filling, small tori, and the empty-sector baseline",
+        "## 3. Exact local row bounds, uniform in colors, Gauss flows, and winding",
+        "## 4. A fixed-number magnetic trial and its exact gain",
+        "## 5. Physical finite-support realization and the actual electric term",
+        "## 6. Filling bounds and the order of limits",
+        "## 7. Exact evidence and preserved unsuccessful shortcuts",
+        "## 8. What is established and what remains open"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/POST.md",
+      "bytes": 17389,
+      "sha256": "d2053231ce071291e0736d65a1c00437bf3aac190ac740e7c5f0940f6420e1e7",
+      "headings": [
+        "# Native one-pair spectrum \u2014 released-source POST",
+        "## 1. Exact sources and chronology",
+        "## 2. Conventions and full-sector reconstruction",
+        "## 3. New POST reconstruction of the row polynomial",
+        "## 4. Why the local calculation applies to every \\(L\\ge10\\)",
+        "## 5. Actual cyclic support and the unbounded electric term",
+        "## 6. Exact matrix and stored-evidence comparison",
+        "## 7. Disposition and preserved boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9199,
+      "path": ".claude/science/physics-loops/mobile-record-native-ground-20260925/review/pair/PRE.md",
+      "bytes": 23082,
+      "sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9",
+      "headings": [
+        "# Native one-pair spectral edge: blind independent PRE",
+        "## 1. Statement and important qualification about the meaning of the edge",
+        "## 2. Exact occupied-B and charge bookkeeping",
+        "## 3. Reduction of the magnetic infimum to a finite flat-connection matrix",
+        "## 4. The electric term and the \\(O(1)\\) variational remainder",
+        "## 5. Analytic sign and finite coefficients",
+        "## 6. Why the actual resolved mark sees the leading edge",
+        "## 7. Independent controls and their exact limitations",
+        "## 8. Limits, rejected shortcuts and remaining exact questions"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/author_history/budget/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "bytes": 10021,
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "headings": [
+        "# Actual ground-state heating and the required energy source",
+        "## 1. Exact premises and the provisional imported estimate",
+        "## 2. Total residence time near the actual microscopic minimum",
+        "## 3. A full mean-energy gain from any ground-state input",
+        "## 4. What an energy-conserving implementation would have to supply",
+        "## 5. Verification and claim boundary"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/author_history/budget/WORKING_DERIVATION.md",
+      "bytes": 2421,
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "headings": [
+        "# Personal working route: a time and energy test for a proposed native vacuum"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/author_history/microscopic/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "bytes": 16847,
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "headings": [
+        "# Energy-bounded transfer to the full original compensated generator",
+        "## 1. Supplied model and exact finite-spin coefficient",
+        "## 2. Uniform form comparison on states with bounded gated electric mean",
+        "## 3. Original formation intensities on the same energy-controlled states",
+        "## 4. Actual full energy controls high-cluster contamination",
+        "## 5. Full fast intensity, with the high/low cross terms retained",
+        "## 6. Conditional stationarity consequence for the cubic model",
+        "## 7. Controls, failed attempt, and physical boundary"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/author_history/microscopic/WORKING_DERIVATION.md",
+      "bytes": 6276,
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "headings": [
+        "# Working route: transfer the energy/activity obstruction to the full fast law"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/review/budget/POST.md",
+      "bytes": 16414,
+      "sha256": "29ae5d781835e75e3c79d726d8a183b8161e6b497581e57a6e3119b245631f15",
+      "headings": [
+        "# Released-source POST38: residence time and ordinary-energy accounting",
+        "## 1. Exact release, preserved PRE and comparison coverage",
+        "## 2. The fixed-cap argument and total residence measure",
+        "## 3. First hitting times and ground-input quantifiers",
+        "## 4. Exact additive-energy implementation test",
+        "## 5. Differences from the sealed PRE and provenance",
+        "## 6. Evidence and stopping scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/review/budget/PRE.md",
+      "bytes": 29080,
+      "sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+      "headings": [
+        "# Blind PRE: ordinary system-energy budgets from original formation balance",
+        "## 1. Exact inputs and conditional hypotheses",
+        "## 2. Extending the capped estimate without assuming a capped trajectory",
+        "## 3. Exact finite-time budgets",
+        "## 4. Long time at each fixed finite spin",
+        "## 5. Ground degeneracy, initial power and what is not monotone",
+        "## 6. An unexcited environment and explicit energy conservation",
+        "## 7. Interaction energy, work and heat cannot be hidden in \u201ctotal energy\u201d",
+        "## 8. Scope stress test, proof limits and evidence integrity"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/review/microscopic/POST.md",
+      "bytes": 20227,
+      "sha256": "f6d97ebac36e45216db8168bb20789b291e6129b9d7eae27a5e5789eff9a52ad",
+      "headings": [
+        "# Released-source POST: full microscopic energy and formation",
+        "## 1. Exact scope, chronology and sources",
+        "## 2. Exact fully gated coefficient",
+        "## 3. Outward monotonicity, forms and creation defects",
+        "## 4. Actual mean energy and all density coherences",
+        "## 5. Infima, global and sector quantifiers",
+        "## 6. Controls, failed attempt and genuinely read-only verification",
+        "## 7. PRE additions and remaining limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9206,
+      "path": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/review/microscopic/PRE.md",
+      "bytes": 26287,
+      "sha256": "e6baa773fa665323a5390a914296d87af9068aa2974783160397332c39a68a4e",
+      "headings": [
+        "# Blind PRE: microscopic mean energy, formation activity and stationarity",
+        "## 1. Exact premises and claim",
+        "## 2. Hermitian cluster coercivity",
+        "## 3. The exact finite-spin magnetic correction",
+        "## 4. Controlled form and loss comparison without flux confinement",
+        "## 5. Mixed high/low coherences and proof of the statewise transfer",
+        "## 6. Spectral infima without a compactness assumption",
+        "## 7. Provisional common-law application and exact microscopic stationarity",
+        "## 8. Preserved counterexamples and limits of the bridge",
+        "## 9. Own evidence, failed attempt and verification scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9208,
+      "path": ".claude/science/physics-loops/mobile-record-formation-response-20260925/author_history/FORMATION_AND_WILSON_RESPONSE_BUDGET_ROOT.md",
+      "bytes": 11629,
+      "sha256": "229ec44bb80c1450fbba8b45d6a586a489edebd21aab8fc0db9f43ab74401eaa",
+      "headings": [
+        "# Original formation and a finite-time field-response budget",
+        "## 1. Model and a bounded response operator",
+        "## 2. What response (2) measures",
+        "### A sufficient domain class, preserved by the full evolution",
+        "## 3. Summing the response on the cubic torus",
+        "## 4. Original records determine the entire response-sum budget",
+        "## 5. Verification and the remaining observation bridge"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9208,
+      "path": ".claude/science/physics-loops/mobile-record-formation-response-20260925/author_history/WORKING_DERIVATION.md",
+      "bytes": 4901,
+      "sha256": "834ae63db216cc29c75d79fe323a1d91ad988f03fd2808d980c58fef92aa1149",
+      "headings": [
+        "# Personal route: a finite-time formation/response sum identity"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9208,
+      "path": ".claude/science/physics-loops/mobile-record-formation-response-20260925/author_history/publication_generation1/docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "bytes": 16414,
+      "sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+      "headings": [
+        "# Original formation and the field-response budget",
+        "## Complete personal argument",
+        "### Original formation and a finite-time field-response budget",
+        "#### 1. Model and a bounded response operator",
+        "#### 2. What response (2) measures",
+        "##### A sufficient domain class, preserved by the full evolution",
+        "#### 3. Summing the response on the cubic torus",
+        "#### 4. Original records determine the entire response-sum budget",
+        "#### 5. Verification and the remaining observation bridge",
+        "## Reproduction, sources and review scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9208,
+      "path": ".claude/science/physics-loops/mobile-record-formation-response-20260925/review/science/POST.md",
+      "bytes": 17872,
+      "sha256": "29db0f69529dcd971763090061764884aabfafc99cfcbc5bde8d78b19e78cdf8",
+      "headings": [
+        "# Released-source POST: formation and Wilson response budget",
+        "## 1. Exact sources and review coverage",
+        "## 2. Operator identity, gates, signs and normalization",
+        "## 3. The fourth-moment class is sufficient and preserved",
+        "## 4. Incidence, finite-time counts and conditioned histories",
+        "## 5. Complete control correspondence",
+        "## 6. Preserved routes, verifier and scope"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9208,
+      "path": ".claude/science/physics-loops/mobile-record-formation-response-20260925/review/science/PRE.md",
+      "bytes": 21090,
+      "sha256": "e02c3983ce098b6af566a03a603b8c484f17bd50626181851c3895e27101fcda",
+      "headings": [
+        "# Blind PRE: original formation and a sum of Wilson-quadrature responses",
+        "## 1. Sources, supplied premises and independence",
+        "## 2. What is being perturbed and measured",
+        "## 3. Wilson commutation and the exact core calculation",
+        "## 4. Why the lag derivative needs no electric moment",
+        "## 5. Summation and actual finite-time birth counts",
+        "## 6. The \\(L=4\\) geometry distinction",
+        "## 7. Counterexample to identifying nonzero response with activity",
+        "## 8. Limits, failed routes and evidence"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "ground-energy-and-response"
+    },
+    {
+      "pr": 9213,
+      "path": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "bytes": 16258,
+      "sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5",
+      "headings": [
+        "# First-birth charge and the separated flat magnetic threshold",
+        "## 1. Sources, model and precise limits",
+        "## 2. A local definition and the separated contribution",
+        "## 3. An exact positive supersolution",
+        "## 4. Conservative periodic extension and ordered energy limit",
+        "## 5. Charge observables in the spectral comparison",
+        "## 6. Compare with the original actual first birth",
+        "## 7. Controls, failures and the observation obligation",
+        "## 8. Scope stress test for the narrow threshold exclusion"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9213,
+      "path": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/WORKING_DERIVATION.md",
+      "bytes": 7724,
+      "sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c",
+      "headings": [
+        "# Working candidate40: what the first formed pair does and does not identify",
+        "## Reused exact parent and new proposed threshold",
+        "## Charge interpretation, still to control",
+        "## Evidence and next decisions"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9213,
+      "path": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST.md",
+      "bytes": 21166,
+      "sha256": "806ba9afa526623eaf113e2f8d0b46066a17531957fe83509498ed9c5f501705",
+      "headings": [
+        "# POST40: first-birth charge and separated flat threshold",
+        "## Finding and exact scope",
+        "## 1. Primitive definition and normalization",
+        "## 2. Distinct exact witnesses and the infinite tail",
+        "## 3. Conservative periodic lift and energy limits",
+        "## 4. Charge moments, color leakage and actual marks",
+        "## 5. Specified Gauss-fiber overlap scope",
+        "## 6. Evidence, failures and provenance limits",
+        "## 7. What remains PRE-only and what remains open"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9213,
+      "path": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/PRE.md",
+      "bytes": 23861,
+      "sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+      "headings": [
+        "# Blind PRE: separated-record edge and native charge comparison",
+        "## Findings and source boundary",
+        "## 1. Flat operator and independent path construction",
+        "## 2. Near-record terms and an exact upper-bound certificate",
+        "## 3. Finite tori and winding control",
+        "## 4. Charge of the uniform-minus comparison",
+        "## 5. Actual original first births, with coherent outputs retained",
+        "## 6. Evidence, failures and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "bytes": 13333,
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "headings": [
+        "# Original birth charge clusters and their complete static charge law",
+        "## 1. Premises and actual output isometries",
+        "## 2. Two existing charge sums and their resolution error",
+        "## 3. Full charge moments and characteristic function",
+        "## 4. Explicit cubic static structure factor with geometric error control",
+        "## 5. Relation to the actual first recorded event under the common generator",
+        "## 6. Mark ambiguity and the remaining particle bridge",
+        "## 7. Exact controls and provenance"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/WORKING_DERIVATION.md",
+      "bytes": 3637,
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c",
+      "headings": [
+        "# Working42: charge clusters of the full original first-birth output"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "bytes": 15036,
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "headings": [
+        "# Full dynamics of the smallest original birth charge grouping",
+        "## 1. Premises, provenance, and the diagnostic",
+        "## 2. A specified normal actual-birth preparation",
+        "## 3. A complete Gauss-law target outside the union",
+        "## 4. Exact full-Hamiltonian and loss matrix elements",
+        "## 5. Full Lindblad small-time probability and a controlled remainder",
+        "## 6. Deterministic controls and read coverage",
+        "## 7. Narrow negative-claim stress test"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/WORKING_DERIVATION.md",
+      "bytes": 3923,
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "headings": [
+        "# Working43: does the nearest-neighbor birth charge grouping persist?"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/POST.md",
+      "bytes": 17334,
+      "sha256": "25c981ebf21e21916d0cda69383652813b2f08f48c2734c251652fcb5d6329d3",
+      "headings": [
+        "# POST42 \u2014 released-source comparison of the original birth charge law",
+        "## 1. Scope, chronology, and immutable identities",
+        "## 2. Primitive outputs, normalization, and coherence",
+        "## 3. Regional tests and the point approximation",
+        "## 4. Full moments, characteristic function, and Fourier conventions",
+        "## 5. Actual first-event dynamics and quantifiers",
+        "## 6. Complete stored-data correspondence and provenance limits",
+        "## 7. Disposition and retained limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/PRE.md",
+      "bytes": 28946,
+      "sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81",
+      "headings": [
+        "# PRE42 \u2014 the original first-birth charge law and instantaneous regional charge clusters",
+        "## 1. Result, exposure, and exact premises",
+        "## 2. Literal branch calculation and full marked output maps",
+        "## 3. Complete commuting-charge law, and the role of original labels",
+        "## 4. Exact localized charges at that instant",
+        "## 5. Bounded real and complex test-charge statistics",
+        "## 6. A finite-wave-number law with explicit remainder",
+        "## 7. The law at the actual first event of the full common process",
+        "## 8. Independent finite controls and their limits",
+        "## 9. Failed simplifications, scope limits, and status"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST.md",
+      "bytes": 19506,
+      "sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690",
+      "headings": [
+        "# POST43: original birth grouping under the full generator",
+        "## 1. Sources, identities, and comparison boundary",
+        "## 2. Instrument, sector, and initial normalization",
+        "## 3. Independent check of the author's exact target",
+        "## 4. Full law, time order, and domain",
+        "## 5. Full stored-evidence comparison",
+        "## 6. PRE contributions and limits that remain distinct"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9217,
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/PRE.md",
+      "bytes": 25109,
+      "sha256": "fd8ff944ce30133a794274084603d8e8652c5b8289281a50519b061c097b10fe",
+      "headings": [
+        "# PRE43: escape from the nearest-neighbor grouping union after one original birth",
+        "## Result and distinctions",
+        "## 1. Exact parents and retained model",
+        "## 2. Actual marked inputs and the complete loss term",
+        "## 3. Two complete Gauss-legal transport witnesses",
+        "### Negative resolved sign",
+        "### Positive resolved sign",
+        "## 4. Full GKLS block identity, including recycling",
+        "## 5. Domains and a controlled probability bound",
+        "## 6. Independent primitive controls and retained evidence",
+        "## 7. Scope stress test and remaining limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "bytes": 10761,
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+      "headings": [
+        "# Original charge current and initial charge-covariance growth",
+        "## 1. Existing current and exact charge continuity",
+        "## 2. Initial sector and bounded first derivatives",
+        "## 3. Degree-six cubic Fourier consequence before fitting",
+        "## 4. Observation obligations",
+        "## 5. Exact controls, chronology and limits"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/WORKING_DERIVATION.md",
+      "bytes": 7676,
+      "sha256": "5e004d5b3c375b14beb9c4df5c74ba1b624f6565080da601ab4842f55f5bf5d2",
+      "headings": [
+        "# Personal46 working derivation: original charge current and initial covariance growth",
+        "## 1. Existing current and exact charge continuity",
+        "## 2. Initial sector and bounded first derivatives",
+        "## 3. Degree-six cubic Fourier consequence before fitting",
+        "## 4. Observation obligations and next checks"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md",
+      "bytes": 13072,
+      "sha256": "9a83191276a1a0380158ef88961c1d36b0d82c9cd645210739c999c4568f464a",
+      "headings": [
+        "# Local charge covariance on a finite observation interval",
+        "## 1. Local operators and strengths",
+        "## 2. Two exact integral identities",
+        "## 3. Scalar first term for arbitrary normal initial field",
+        "## 4. Uniformity of the local estimate and its meaning",
+        "## 5. A dimensionless, before-fit local consequence",
+        "## 6. Exact controls and their limits",
+        "## 7. Remaining observation decisions"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/WORKING_DERIVATION.md",
+      "bytes": 9345,
+      "sha256": "c326ca432fe8e3d155064e2405f7389e9ad40fe55397f7041f8386e759be2cd8",
+      "headings": [
+        "# Local charge covariance on a finite observation interval",
+        "## 1. Local operators and strengths",
+        "## 2. Two exact integral identities",
+        "## 3. Scalar first term for arbitrary normal initial field",
+        "## 4. Uniformity of the local estimate and its meaning",
+        "## 5. A dimensionless, before-fit local consequence",
+        "## Pending checks"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST.md",
+      "bytes": 17311,
+      "sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b",
+      "headings": [
+        "# POST46 \u2014 released charge-current and initial-covariance comparison",
+        "## 1. Finding and exact reviewed generation",
+        "## 2. Required narrow prose repair, with counterexamples",
+        "## 3. Current signs, original terms and unbounded domains",
+        "## 4. Initial mean and covariance, including coherent marks",
+        "## 5. Cubic Fourier normalization and scope",
+        "## 6. Complete evidence correspondence and verification limits",
+        "## 7. Attribution and remaining obligations"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/PRE.md",
+      "bytes": 20457,
+      "sha256": "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2",
+      "headings": [
+        "# PRE46 \u2014 bounded charge continuity and initial connected charge covariance",
+        "## 1. Results and scope",
+        "## 2. Sources, supplied definitions and exposure",
+        "## 3. A bounded current from the full primitives",
+        "## 4. Exact continuity and domains without electric moments",
+        "## 5. Minimum-number preparation and initial derivatives",
+        "## 6. A controlled fixed-graph initial expansion",
+        "## 7. Cubic Fourier modes, normalization and small wavevector error",
+        "## 8. Independent exact controls and evidence",
+        "## 9. Failed shortcuts, limits and stopping point"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST.md",
+      "bytes": 19872,
+      "sha256": "6258dff3852b842a9c736d7194378aca3b1fae6837f1938cc347ea8a75fd36b9",
+      "headings": [
+        "# Released-source POST47: finite-time local charge covariance",
+        "## Finding and necessary scope",
+        "## Exact released generation and provenance",
+        "## Reconstruction of the two-Duhamel proof",
+        "## Local norms and the full original instrument",
+        "## Initial compression and covariance coefficient",
+        "## Comparison with the independently sealed PRE",
+        "## Complete stored-evidence comparison",
+        "## Boundaries of this result"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    },
+    {
+      "pr": 9219,
+      "path": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/PRE.md",
+      "bytes": 22522,
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db",
+      "headings": [
+        "# PRE47: local finite-time charge covariance in the full common process",
+        "## Result and quantified scope",
+        "## Exact source boundary",
+        "## 1. First-order coefficient from actual formation paths",
+        "## 2. Electric domains and local dynamics",
+        "## 3. Explicit local constants",
+        "## 4. A colored local Dyson bound retaining every birth",
+        "## 5. Connected covariance and an explicit remainder",
+        "## 6. Dimensionless comparison before fitting",
+        "## 7. Independent controls and what they actually test",
+        "## 8. Evidence and remaining boundaries"
+      ],
+      "disposition": "Canonical overlap retained in the reviewed published argument. Additional or superseded historical arguments remain ungraded recovery candidates, not authority; evaluate separately with the associated exact original controls before promotion.",
+      "group": "charge-threshold-and-transport"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "phase": "released-source POST",
+  "created_utc": "2026-09-24T21:24:53.973938+00:00",
+  "sources": [
+    {
+      "frozen_path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 1119,
+      "sha256": "99a14ba42c0936a52cf4037428168eadc8021651dddc5b718332b4bf8b97fe33",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/AUTHOR_SEAL.json",
+      "role": "released author seal"
+    },
+    {
+      "frozen_path": "post_sources/author/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/CONTROL.stderr",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/EXECUTION.json",
+      "bytes": 255,
+      "sha256": "6bc4f8d6072cc383abfadd75f289ffb4a3493822a8fff71b3dd6b1f065527f18",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/EXECUTION.json",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "bytes": 12776,
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/PREPARED_PROBE_RESULTS.json",
+      "bytes": 8112,
+      "sha256": "8b2a55ee00d36d9ffd0695f8647f8c8c801818f7e248011489af83202feeb6be",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/PREPARED_PROBE_RESULTS.json",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/ROOT_REVIEW.md",
+      "bytes": 1479,
+      "sha256": "2d584726fa1dc3a07a4a6b98c189efc62471a604ffd73a3a3ab9b1f9279245f3",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/ROOT_REVIEW.md",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 2575,
+      "sha256": "bf35b32bbf4a79ce1bca5d98b93ebecf5187daeb97645e225dfd232a5ba75f3b",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/SOURCE_PINS.json",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/author/prepared_probe_controls.py",
+      "bytes": 6889,
+      "sha256": "27da3c4fdff89c16e4c15c96e41296f2ae51964c6048b727c07c2b55cba9683c",
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-personal/prepared_probe_controls.py",
+      "role": "released author evidence; not independent execution"
+    },
+    {
+      "frozen_path": "post_sources/bounded_target.md",
+      "bytes": 10011,
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "conditional main register premise"
+    },
+    {
+      "frozen_path": "post_sources/public_original_readout.md",
+      "bytes": 39966,
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "04dcf088de81990632d869142f30a59e881a8f31",
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "role": "explicitly released public parent; section C used for register reasoning"
+    },
+    {
+      "frozen_path": "post_sources/procedure/physics-claim-reviewer.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "role": "procedural"
+    },
+    {
+      "frozen_path": "post_sources/procedure/skill-freshness.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "procedural"
+    },
+    {
+      "frozen_path": "post_sources/procedure/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "role": "procedural"
+    }
+  ],
+  "reused_unchanged_PRE_sources": [
+    {
+      "frozen_path": "sources/local_compensation.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "conditional supplied mathematical premise"
+    },
+    {
+      "frozen_path": "sources/local_pair_form.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "conditional supplied mathematical premise"
+    },
+    {
+      "frozen_path": "sources/electric_magnetic.md",
+      "bytes": 22993,
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+      "role": "conditional supplied mathematical premise"
+    },
+    {
+      "frozen_path": "sources/weak_field_packets.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "expected_sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "role": "conditional supplied mathematical premise"
+    }
+  ],
+  "preserved_PRE_seal_sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+  "preserved_PRE_members": 33,
+  "author_seal_member_count": 7,
+  "installed_reviewer_matches_pinned_source": true,
+  "author_SOURCE_PINS_private_entries_followed": false,
+  "no_author_code_executed": true,
+  "no_other_active_checker_packets_read": true
+}

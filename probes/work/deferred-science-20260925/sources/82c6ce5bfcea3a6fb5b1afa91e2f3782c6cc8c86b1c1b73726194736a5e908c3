@@ -1,0 +1,203 @@
+{
+  "created_utc": "2026-09-24T17:40:23.426752+00:00",
+  "source_sha256": "659fc7f1ace5b47fbf3df8b32f9621f53009f4dfa6375147cb3c16dad2954109",
+  "prior_seals_unchanged": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+      "unchanged_members": 34
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "72d73d581716f85e7f47521aa7acfc40707b46a8bcc119933dcc0d8eeaf975fa",
+      "unchanged_members": 23
+    }
+  ],
+  "live_and_snapshot_sources_match": 17,
+  "publication_hashes": {
+    "note": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+    "runner": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b",
+    "result": "603bf4ed4fcb27c1c53d3cbf85a962880a1c6ef38a3e7f2375e1b6ab4a82d35e",
+    "cache": "2803e5776faaa9ddf4e33648596386e83021264337c861f52e25b10b5aca93e9"
+  },
+  "base_revision": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+  "declared_inputs": [
+    {
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+      "bytes": 36767
+    },
+    {
+      "path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317,
+      "exact_base_blob_match": true
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "exact_base_blob_match": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "exact_base_blob_match": true
+    },
+    {
+      "path": "docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076,
+      "exact_base_blob_match": true
+    },
+    {
+      "path": "docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264,
+      "exact_base_blob_match": true
+    },
+    {
+      "path": "docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+      "bytes": 24623,
+      "exact_base_blob_match": true
+    }
+  ],
+  "prior_byte_identical_scientific_parents": 5,
+  "newly_read_parent": [
+    {
+      "path": "docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+      "bytes": 24623,
+      "exact_base_blob_match": true
+    }
+  ],
+  "note_citation_targets_match_six_declared_parents": true,
+  "embedded_helper_and_reused_function_AST_checks": [
+    {
+      "name": "charges",
+      "source": "embedded_author_helper",
+      "AST_sha256": "9dc0be838188bbcca641d29285420ad7263b8ae61928718ceed8a370621bdd2f",
+      "exact_AST_match": true
+    },
+    {
+      "name": "weight",
+      "source": "embedded_author_helper",
+      "AST_sha256": "b2b2ae7db3278a7f1210f23b10a0ef45ef495ad315c3bbb8a50ce9f799a6c24c",
+      "exact_AST_match": true
+    },
+    {
+      "name": "hop",
+      "source": "embedded_author_helper",
+      "AST_sha256": "6f25f30f7a81e935031c9593c4e0066fca331c9776a336f9f82cc0c6e1849b14",
+      "exact_AST_match": true
+    },
+    {
+      "name": "cycle",
+      "source": "embedded_author_helper",
+      "AST_sha256": "8e57f00c1fc937e5f18ed2a3d27233517a9abedbbff6a8c951b37536ce84cfa4",
+      "exact_AST_match": true
+    },
+    {
+      "name": "A",
+      "source": "embedded_author_helper_constant",
+      "AST_sha256": "17a7cfb1bbb1c7daf7afcc4a42fb4757afec1461a6b0df8a746e64d0b4b7c703",
+      "exact_AST_match": true
+    },
+    {
+      "name": "B",
+      "source": "embedded_author_helper_constant",
+      "AST_sha256": "8c5cb30737f3e02d0ebbb46a872882baaee4e7469ec9f50ca34db14c508155a1",
+      "exact_AST_match": true
+    },
+    {
+      "name": "EDGES",
+      "source": "embedded_author_helper_constant",
+      "AST_sha256": "61fe057bdcc8fdecf9a1a4ea0bbe91fa625758620623d4162f07071ac0517081",
+      "exact_AST_match": true
+    },
+    {
+      "name": "INDEX",
+      "source": "embedded_author_helper_constant",
+      "AST_sha256": "11fa6a574553d1153155043d5a8646d0f88e923abcf30c3c808127ee251771ab",
+      "exact_AST_match": true
+    },
+    {
+      "name": "vec",
+      "source": "sealed_author_control",
+      "AST_sha256": "6a6ac24b43f0973feb0ef6aa8b15884b4611c74cf2ed0baff599004967f4220f",
+      "exact_AST_match": true
+    },
+    {
+      "name": "mat",
+      "source": "sealed_author_control",
+      "AST_sha256": "dd3f5fcfec2b524eb9692f7105720f4d3ca5d43588216bf816c349e4bda61153",
+      "exact_AST_match": true
+    },
+    {
+      "name": "liouville",
+      "source": "sealed_author_control",
+      "AST_sha256": "bfbc4a92e280e1e06ed2c1641d0a53ab686035a291e19f30c02675248fcf1995",
+      "exact_AST_match": true
+    },
+    {
+      "name": "trace_norm",
+      "source": "sealed_author_control",
+      "AST_sha256": "e1ac98ef42e00d65ebe40159dad44ce23ae9aae3d0eb6de6128c389ee7e35ef3",
+      "exact_AST_match": true
+    },
+    {
+      "name": "realtrace",
+      "source": "sealed_author_control",
+      "AST_sha256": "3e340235323813b6e170075d695b034da6f3b51c57cff068620449abec0ba54f",
+      "exact_AST_match": true
+    },
+    {
+      "name": "driven_blocks",
+      "source": "sealed_author_control",
+      "AST_sha256": "9d7151813bb950bc84c76e06c43d8d65575f72e9daea7cfb11a2b09914e9bb87",
+      "exact_AST_match": true
+    },
+    {
+      "name": "evolving_input_cascade",
+      "source": "sealed_author_control",
+      "AST_sha256": "89c62282d45269b029bf0f3e06e5c55440c88f7e96c764af611319d5e3b00bbc",
+      "exact_AST_match": true
+    }
+  ],
+  "source_algebra_change": "Four dynamic loader/hash statements replaced by one SimpleNamespace using the four copied helper functions and required constants; remainder AST exactly equal.",
+  "primary_main_change": "Output redirected into repository outputs, provenance hashes added, summary printed. Both scientific controls called unchanged.",
+  "primary_imports": [
+    "from pathlib import Path",
+    "from collections import defaultdict",
+    "from types import SimpleNamespace",
+    "import hashlib, json, time, math",
+    "import numpy as np",
+    "from scipy.linalg import expm, solve_continuous_lyapunov"
+  ],
+  "scientific_payloads_exactly_equal_to_author": true,
+  "changed_common_result_keys": [
+    "elapsed_seconds",
+    "source_sha256"
+  ],
+  "new_result_key": "provenance",
+  "source_algebra_case_count": 1260,
+  "source_algebra_mutant_nonzero_count": 1239,
+  "toy_rows_checked": 15,
+  "toy_complex_covariance_matrices_checked": 3,
+  "numeric_prose_matches_saved_results": true,
+  "input_fingerprint_sha256": "bf1190766f15bae5d1cb10d49a68d0a7773c999b3a56699846bfc301351904e7",
+  "runner_and_declared_input_paths_have_no_symlink_components": true,
+  "execution_exit_code": 0,
+  "execution_status": "ok",
+  "execution_elapsed_sec": 1.1261796951293945,
+  "timeout_sec": 120,
+  "complete_recorded_stdout_equals_result_plus_summary": true,
+  "cache_reconstructed_byte_for_byte_from_execution_and_source_identity": true,
+  "API_stderr_field_empty": true,
+  "stream_caveat": "The cache API merges stderr into stdout; the complete merged output contains exactly the saved JSON and expected summary.",
+  "no_scientific_output_tail_truncation": true,
+  "primary_or_author_code_executed": false,
+  "scope": "Source/proof correspondence and declared-input cache identity; reuses immutable PRE/POST science. No new independent primary numerical result, gate execution, audit verdict, publication edit or merge."
+}

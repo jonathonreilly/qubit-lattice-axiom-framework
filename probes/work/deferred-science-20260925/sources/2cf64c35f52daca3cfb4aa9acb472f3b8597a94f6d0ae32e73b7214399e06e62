@@ -1,0 +1,115 @@
+{
+  "verified_utc": "2026-09-25T01:49:26.530981+00:00",
+  "verifier_sha256": "5a22e20c1a822678524f5a1af799c3b8a0a164eb8a2b59aaa610e7b4f690d228",
+  "quotient_certificates": [
+    {
+      "side": 2,
+      "rows": 3,
+      "integer_entries": 9,
+      "gap_exact": {
+        "lower": {
+          "numerator": 5,
+          "denominator": 2,
+          "float_diagnostic": 2.5
+        },
+        "upper": {
+          "numerator": 5,
+          "denominator": 2,
+          "float_diagnostic": 2.5
+        }
+      },
+      "row_sum_min": -10,
+      "row_sum_max": -10
+    },
+    {
+      "side": 4,
+      "rows": 19,
+      "integer_entries": 355,
+      "gap_exact": {
+        "lower": {
+          "numerator": -2510070995367,
+          "denominator": 980422268,
+          "float_diagnostic": -2560.1937831210093
+        },
+        "upper": {
+          "numerator": -8000605572249,
+          "denominator": 3125000000,
+          "float_diagnostic": -2560.19378311968
+        }
+      },
+      "row_sum_min": 9896,
+      "row_sum_max": 10560
+    },
+    {
+      "side": 6,
+      "rows": 55,
+      "integer_entries": 2557,
+      "gap_exact": {
+        "lower": {
+          "numerator": -3012559015901053,
+          "denominator": 997063892943,
+          "float_diagnostic": -3021.4302586055783
+        },
+        "upper": {
+          "numerator": -5866216125375419,
+          "denominator": 1941536167738,
+          "float_diagnostic": -3021.430258602854
+        }
+      },
+      "row_sum_min": 11512,
+      "row_sum_max": 12248
+    },
+    {
+      "side": 8,
+      "rows": 131,
+      "integer_entries": 8963,
+      "gap_exact": {
+        "lower": {
+          "numerator": -1510123000536959,
+          "denominator": 499554877857,
+          "float_diagnostic": -3022.9371536018493
+        },
+        "upper": {
+          "numerator": -1005363216870420,
+          "denominator": 332578272649,
+          "float_diagnostic": -3022.9371535989394
+        }
+      },
+      "row_sum_min": 11512,
+      "row_sum_max": 12248
+    }
+  ],
+  "full_cube_integer_rows": 36,
+  "unwrapped_near_rows": 84,
+  "far_controls": 4,
+  "synthetic_pair_cases": 180,
+  "all_live_code_result_execution_bindings": true,
+  "executions": [
+    {
+      "started_utc": "2026-09-25T01:33:47.356127+00:00",
+      "elapsed_seconds": 4.346336791990325,
+      "code_sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa",
+      "exit_code": 0,
+      "stdout_sha256": "f90f83ec18904ea405122cf9a6715edb40ca58794256936f7616ef08a4ea3306",
+      "stderr_bytes": 0
+    },
+    {
+      "started_utc": "2026-09-25T01:39:02.321946+00:00",
+      "elapsed_seconds": 2.3181015830487013,
+      "code_sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+      "exit_code": 0,
+      "stdout_sha256": "6e18e044028b762d1f482faaabf993d345da23ada9ea4d422238117f6d12279b",
+      "stderr_bytes": 0
+    },
+    {
+      "started_utc": "2026-09-25T01:43:26.478932+00:00",
+      "elapsed_seconds": 0.6702122080605477,
+      "code_sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630",
+      "exit_code": 0,
+      "stdout_sha256": "1ed171b0d5f5c1abffb5d18db130798d48e0616a22254adc1873fe19127df2f8",
+      "stderr_bytes": 0
+    }
+  ],
+  "new_scientific_runs": 0,
+  "scope": "Root exact certificate arithmetic and bindings, not independent scientific reconstruction or a numerical check of the unbounded-operator limit."
+}

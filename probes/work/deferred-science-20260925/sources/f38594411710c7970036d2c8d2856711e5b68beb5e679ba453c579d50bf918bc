@@ -1,0 +1,904 @@
+{
+  "scope": "Own exact two-occupied-B flat-field reduction and finite Perron controls.\n\nNo parent or author program is imported. A simple torus uses unique nearest\nneighbors (thus L2 is the cube of degree3). All matrix entries and final\nCollatz bounds are exact integers/rationals; floating eigensolvers only propose\nthe positive vector used in the rational certificate.\n",
+  "source_sha256": "03bce1285535335e2fa843facf2bf5c26725f6f4c4b016372aab835e749a9daf",
+  "rows": [
+    {
+      "L": 2,
+      "A_count": 4,
+      "B_count": 4,
+      "degree": 3,
+      "overlapping_A_pairs": 6,
+      "common_neighbor_inventory": {
+        "2": 6
+      },
+      "magnetic_Q0": 54,
+      "physical_one_pair_matter_dimension": 36,
+      "occupation_dimension": 6,
+      "pair_creation_matrix_nonzeros": 36,
+      "one_B_diagonal_loss": 27,
+      "one_B_offdiagonal_row_sum": 48,
+      "one_B_row_increment": 21,
+      "total_ordered_shared_pair_weight": 192,
+      "total_ordered_disjoint_pair_weight": 48,
+      "orbit_labels": [
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "orbit_sizes": [
+        6
+      ],
+      "orbit_quotient_offset_from_Q0": [
+        [
+          -5
+        ]
+      ],
+      "exact_detailed_balance": true,
+      "translated_oriented_rows_checked": 5,
+      "uniform_trial_increment": "-5",
+      "minimum_row_increment": -5,
+      "maximum_row_increment": -5,
+      "proposed_positive_integer_vector": [
+        1000000000000
+      ],
+      "exact_Perron_increment_lower": "-5",
+      "exact_Perron_increment_upper": "-5",
+      "lower_decimal": -5.0,
+      "upper_decimal": -5.0,
+      "floating_eigenvalue_diagnostic": -5.0,
+      "relative_ground_energy_coefficient_in_1_over_tau_g2_interval": [
+        2.5,
+        2.5
+      ]
+    },
+    {
+      "L": 4,
+      "A_count": 32,
+      "B_count": 32,
+      "degree": 6,
+      "overlapping_A_pairs": 240,
+      "common_neighbor_inventory": {
+        "2": 240
+      },
+      "magnetic_Q0": 8640,
+      "physical_one_pair_matter_dimension": 16864,
+      "occupation_dimension": 496,
+      "pair_creation_matrix_nonzeros": 7920,
+      "one_B_diagonal_loss": 540,
+      "one_B_offdiagonal_row_sum": 3120,
+      "one_B_row_increment": 2580,
+      "total_ordered_shared_pair_weight": 99840,
+      "total_ordered_disjoint_pair_weight": 168960,
+      "orbit_labels": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "orbit_sizes": [
+        48,
+        192,
+        48,
+        192,
+        16
+      ],
+      "orbit_quotient_offset_from_Q0": [
+        [
+          -916,
+          3104,
+          744,
+          1968,
+          48
+        ],
+        [
+          776,
+          1412,
+          492,
+          2220,
+          48
+        ],
+        [
+          744,
+          1968,
+          -952,
+          3152,
+          368
+        ],
+        [
+          492,
+          2220,
+          788,
+          1412,
+          368
+        ],
+        [
+          144,
+          576,
+          1104,
+          4416,
+          -1080
+        ]
+      ],
+      "exact_detailed_balance": true,
+      "translated_oriented_rows_checked": 25,
+      "uniform_trial_increment": "158580/31",
+      "minimum_row_increment": 4948,
+      "maximum_row_increment": 5280,
+      "proposed_positive_integer_vector": [
+        941205377280,
+        941205377280,
+        1000000000000,
+        1000000000000,
+        999561367000
+      ],
+      "exact_Perron_increment_lower": "8000605572249/1562500000",
+      "exact_Perron_increment_upper": "2510070995367/490211134",
+      "lower_decimal": 5120.38756623936,
+      "upper_decimal": 5120.387566242019,
+      "floating_eigenvalue_diagnostic": 5120.387566240619,
+      "relative_ground_energy_coefficient_in_1_over_tau_g2_interval": [
+        -2560.1937831210093,
+        -2560.19378311968
+      ]
+    },
+    {
+      "L": 6,
+      "A_count": 108,
+      "B_count": 108,
+      "degree": 6,
+      "overlapping_A_pairs": 972,
+      "common_neighbor_inventory": {
+        "1": 324,
+        "2": 648
+      },
+      "magnetic_Q0": 34668,
+      "physical_one_pair_matter_dimension": 635580,
+      "occupation_dimension": 5778,
+      "pair_creation_matrix_nonzeros": 32724,
+      "one_B_diagonal_loss": 642,
+      "one_B_offdiagonal_row_sum": 3666,
+      "one_B_row_increment": 3024,
+      "total_ordered_shared_pair_weight": 395928,
+      "total_ordered_disjoint_pair_weight": 715392,
+      "orbit_labels": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      "orbit_sizes": [
+        324,
+        648,
+        648,
+        648,
+        162,
+        1296,
+        1296,
+        432,
+        324
+      ],
+      "orbit_quotient_offset_from_Q0": [
+        [
+          -961,
+          1848,
+          1736,
+          948,
+          32,
+          2056,
+          256,
+          48,
+          0
+        ],
+        [
+          924,
+          932,
+          644,
+          584,
+          12,
+          2436,
+          176,
+          48,
+          0
+        ],
+        [
+          868,
+          644,
+          -178,
+          980,
+          238,
+          1956,
+          1476,
+          96,
+          40
+        ],
+        [
+          474,
+          584,
+          980,
+          -768,
+          424,
+          1908,
+          1920,
+          492,
+          80
+        ],
+        [
+          64,
+          48,
+          952,
+          1696,
+          -1284,
+          384,
+          3488,
+          192,
+          508
+        ],
+        [
+          514,
+          1218,
+          978,
+          954,
+          48,
+          404,
+          1468,
+          480,
+          60
+        ],
+        [
+          64,
+          88,
+          738,
+          960,
+          436,
+          1468,
+          644,
+          928,
+          722
+        ],
+        [
+          36,
+          72,
+          144,
+          738,
+          72,
+          1440,
+          2784,
+          -582,
+          1344
+        ],
+        [
+          0,
+          0,
+          80,
+          160,
+          254,
+          240,
+          2888,
+          1792,
+          634
+        ]
+      ],
+      "exact_detailed_balance": true,
+      "translated_oriented_rows_checked": 45,
+      "uniform_trial_increment": "646362/107",
+      "minimum_row_increment": 5756,
+      "maximum_row_increment": 6124,
+      "proposed_positive_integer_vector": [
+        970768083869,
+        936905469600,
+        1000000000000,
+        998374315444,
+        998350721296,
+        997063892943,
+        997856209788,
+        997964967371,
+        998875501817
+      ],
+      "exact_Perron_increment_lower": "5866216125375419/970768083869",
+      "exact_Perron_increment_upper": "6025118031802106/997063892943",
+      "lower_decimal": 6042.860517205708,
+      "upper_decimal": 6042.860517211157,
+      "floating_eigenvalue_diagnostic": 6042.860517208459,
+      "relative_ground_energy_coefficient_in_1_over_tau_g2_interval": [
+        -3021.4302586055783,
+        -3021.430258602854
+      ]
+    },
+    {
+      "L": 8,
+      "A_count": 256,
+      "B_count": 256,
+      "degree": 6,
+      "overlapping_A_pairs": 2304,
+      "common_neighbor_inventory": {
+        "1": 768,
+        "2": 1536
+      },
+      "magnetic_Q0": 82176,
+      "physical_one_pair_matter_dimension": 8421120,
+      "occupation_dimension": 32640,
+      "pair_creation_matrix_nonzeros": 77568,
+      "one_B_diagonal_loss": 642,
+      "one_B_offdiagonal_row_sum": 3666,
+      "one_B_row_increment": 3024,
+      "total_ordered_shared_pair_weight": 938496,
+      "total_ordered_disjoint_pair_weight": 1695744,
+      "orbit_labels": [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          4
+        ],
+        [
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          4,
+          4
+        ],
+        [
+          3,
+          3,
+          4
+        ],
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "orbit_sizes": [
+        768,
+        384,
+        1536,
+        3072,
+        1536,
+        1536,
+        1536,
+        384,
+        3072,
+        1536,
+        6144,
+        3072,
+        1024,
+        1536,
+        3072,
+        768,
+        1536,
+        128
+      ],
+      "orbit_quotient_offset_from_Q0": [
+        [
+          -1184,
+          222,
+          1808,
+          1776,
+          888,
+          56,
+          32,
+          0,
+          1952,
+          96,
+          256,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          444,
+          -1282,
+          80,
+          3376,
+          104,
+          880,
+          64,
+          8,
+          208,
+          1696,
+          384,
+          64,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          904,
+          20,
+          928,
+          648,
+          568,
+          16,
+          12,
+          0,
+          2400,
+          36,
+          176,
+          0,
+          48,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          444,
+          422,
+          324,
+          82,
+          490,
+          488,
+          252,
+          8,
+          994,
+          896,
+          1464,
+          84,
+          48,
+          48,
+          40,
+          0,
+          0,
+          0
+        ],
+        [
+          444,
+          26,
+          568,
+          980,
+          -1216,
+          440,
+          440,
+          12,
+          1780,
+          96,
+          1856,
+          96,
+          440,
+          52,
+          80,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          220,
+          16,
+          976,
+          440,
+          -1232,
+          864,
+          220,
+          128,
+          864,
+          1888,
+          976,
+          48,
+          440,
+          128,
+          28,
+          16,
+          0
+        ],
+        [
+          16,
+          16,
+          12,
+          504,
+          440,
+          864,
+          -832,
+          424,
+          96,
+          96,
+          1872,
+          1792,
+          48,
+          96,
+          520,
+          48,
+          36,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          64,
+          48,
+          880,
+          1696,
+          -1284,
+          0,
+          64,
+          384,
+          3392,
+          0,
+          96,
+          192,
+          440,
+          64,
+          4
+        ],
+        [
+          488,
+          26,
+          1200,
+          994,
+          890,
+          64,
+          48,
+          0,
+          126,
+          260,
+          1448,
+          40,
+          440,
+          40,
+          60,
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          424,
+          36,
+          1792,
+          96,
+          864,
+          96,
+          16,
+          520,
+          -832,
+          1872,
+          504,
+          48,
+          440,
+          96,
+          16,
+          12,
+          0
+        ],
+        [
+          32,
+          24,
+          44,
+          732,
+          464,
+          472,
+          468,
+          24,
+          724,
+          468,
+          160,
+          732,
+          440,
+          464,
+          724,
+          32,
+          44,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          84,
+          48,
+          488,
+          896,
+          424,
+          40,
+          252,
+          1464,
+          76,
+          48,
+          488,
+          984,
+          440,
+          300,
+          8
+        ],
+        [
+          36,
+          0,
+          72,
+          144,
+          660,
+          72,
+          72,
+          0,
+          1320,
+          72,
+          2640,
+          144,
+          -1272,
+          660,
+          1320,
+          36,
+          72,
+          0
+        ],
+        [
+          0,
+          12,
+          0,
+          96,
+          52,
+          440,
+          96,
+          24,
+          80,
+          440,
+          1856,
+          976,
+          440,
+          -1228,
+          1776,
+          440,
+          536,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          40,
+          40,
+          64,
+          260,
+          24,
+          60,
+          48,
+          1448,
+          984,
+          440,
+          888,
+          100,
+          472,
+          1156,
+          24
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          56,
+          96,
+          220,
+          0,
+          32,
+          256,
+          1760,
+          48,
+          880,
+          1888,
+          -1232,
+          1824,
+          220
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          36,
+          16,
+          0,
+          12,
+          176,
+          600,
+          48,
+          536,
+          2312,
+          912,
+          960,
+          424
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          12,
+          0,
+          0,
+          0,
+          192,
+          0,
+          144,
+          576,
+          1320,
+          5088,
+          -1284
+        ]
+      ],
+      "exact_detailed_balance": true,
+      "translated_oriented_rows_checked": 90,
+      "uniform_trial_increment": "513822/85",
+      "minimum_row_increment": 5756,
+      "maximum_row_increment": 6124,
+      "proposed_positive_integer_vector": [
+        969074429285,
+        1000000000000,
+        935750684095,
+        998951990202,
+        997902949229,
+        998701243853,
+        998858850314,
+        999318928038,
+        996415261176,
+        998375990105,
+        998218041796,
+        999214342589,
+        997734817947,
+        999109755714,
+        999269804349,
+        999602544406,
+        999721073015,
+        999928247604
+      ],
+      "exact_Perron_increment_lower": "2010726433740840/332578272649",
+      "exact_Perron_increment_upper": "3020246001073918/499554877857",
+      "lower_decimal": 6045.874307197879,
+      "upper_decimal": 6045.874307203699,
+      "floating_eigenvalue_diagnostic": 6045.874307200505,
+      "relative_ground_energy_coefficient_in_1_over_tau_g2_interval": [
+        -3022.9371536018493,
+        -3022.9371535989394
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.4284494579769671,
+  "no_field_truncation": true,
+  "no_author_code": true,
+  "proof_limit": "Flat magnetic coefficient and exact rational finite-matrix checks; no finite-g spectrum or dynamics simulation"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/post_compare_evidence.py"
+  ],
+  "started_utc": "2026-09-24T19:37:57.488619+00:00",
+  "elapsed_seconds": 0.14060170808807015,
+  "exit_code": 0,
+  "runner_sha256": "aa90f0a5c101b9eb695eac1b41065e7d04f325dd92e9833595154acb5f4c95e3",
+  "script_sha256": "17ed2c36f9166d0d6fb91371bbe6122d9efa64eea133ca6be3fac988bdd81b03",
+  "POST_SOURCE_PINS_sha256": "fde51b6ef27bac558f1dd8b47e832e6d7e2015fb64ff63da9eaa4d4c534b609f",
+  "stdout_sha256": "0ebc78bd6d9da4dc6230d0d52b0bf148b5a7caf72e59e95521a091102aadaf93",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Own correspondence only; no author control run or independent reproduction claim."
+}

@@ -1,0 +1,8 @@
+{
+  "runner": "scripts/recent_births_full_cube_energy_variance_2026_09_24.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_sec": 0.4803280830383301,
+  "timeout_sec": 120,
+  "live_log": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-publication/logs/runner-cache/.in-progress/recent_births_full_cube_energy_variance_2026_09_24.txt"
+}

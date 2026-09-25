@@ -1,0 +1,375 @@
+{
+  "at_utc": "2026-09-25T05:30:30.680019+00:00",
+  "scope": "Read-only binding, preservation and rational coefficient check; no imported scientific premise is established by this execution.",
+  "preserved_pre_member_count": 20,
+  "preserved_pre_members": [
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "sha256": "f7cc521651fc7ab1bb5db59f9891da5c7516363e71cfa23e67d3bb16f16c524e",
+      "bytes": 8115,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION_EXECUTION.json",
+      "sha256": "b523bf309dcadb7c3e07c7929109dee4c0cb5378dc7bd43a3e78e4e619c6d190",
+      "bytes": 880,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "sha256": "2149d00e3f3f619bf7de4a430a86aadce5a6f678e73b583d744e2f9c64f1c77b",
+      "bytes": 3137,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "2ea8add0ff63affbee1f050602a7b83c686829d9e8d8cbfc7292accbbe663601",
+      "bytes": 29080,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "ad21276215dc2f62ec678dd38fb8b602cb7ad0924c781730516d9447043fcfb4",
+      "bytes": 7353,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "seal_pre.py",
+      "sha256": "73e39f87ad08e80b1497ba42346a09b5c468e579e2e8582ba5c193edc2d83c0b",
+      "bytes": 3880,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/INSTALLED_NO_GO_DISCIPLINE_SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/provisional_author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "bytes": 3067,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "sources/provisional_author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "bytes": 16847,
+      "unchanged": true,
+      "read_only": true
+    },
+    {
+      "path": "verify_pre_sources.py",
+      "sha256": "da7d024f253d13ad2c0b4c618b041c098b9f8c05edc20b5e3fe388da5970be89",
+      "bytes": 4747,
+      "unchanged": true,
+      "read_only": true
+    }
+  ],
+  "reused_source_binding_count": 12,
+  "reused_source_rows": [
+    {
+      "frozen": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "AGENTS.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "live_origin_matches": true,
+      "revision": "7339efc9f877dde220bebd1540b96b34c379a98b",
+      "git_path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "exact_git_origin_matches": true
+    },
+    {
+      "frozen": "sources/provisional_author37/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "bytes": 16847,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "live_origin_matches": true
+    },
+    {
+      "frozen": "sources/provisional_author37/AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "bytes": 3067,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/AUTHOR_SEAL.json",
+      "live_origin_matches": true
+    },
+    {
+      "frozen": "sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "live_origin_matches": true
+    },
+    {
+      "frozen": "sources/INSTALLED_NO_GO_DISCIPLINE_SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "frozen_matches": true,
+      "origin": "/Users/jonreilly/.codex/skills/no-go-discipline/SKILL.md",
+      "live_origin_matches": true
+    },
+    {
+      "frozen": "sources/AI_EXECUTION_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "frozen_matches": true,
+      "revision": "eb1f1ca8338848cf2046582e13aef372d8540937",
+      "git_path": "AGENTS.md",
+      "exact_git_origin_matches": true
+    }
+  ],
+  "released_source_binding_count": 5,
+  "released_source_rows": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/AUTHOR_SEAL.json",
+      "frozen": "post_sources/author38/AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "bytes": 877,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction",
+      "frozen_and_live_origin_match": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "frozen": "post_sources/author38/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "bytes": 10021,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction",
+      "frozen_and_live_origin_match": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/ROOT_REVIEW.json",
+      "frozen": "post_sources/author38/ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "bytes": 1249,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction",
+      "frozen_and_live_origin_match": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/SOURCE_PINS.json",
+      "frozen": "post_sources/author38/SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "bytes": 1117,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction",
+      "frozen_and_live_origin_match": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/WORKING_DERIVATION.md",
+      "frozen": "post_sources/author38/WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "bytes": 2421,
+      "role": "Released author38 source; compared as author evidence, not independent reconstruction",
+      "frozen_and_live_origin_match": true
+    }
+  ],
+  "all_four_author38_members_verified": true,
+  "author38_dependency_hashes_equal_three_authorized_PRE_inputs": true,
+  "formation_parent_at_author_named_revision": {
+    "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+    "bytes": 16764,
+    "exact_match": true
+  },
+  "recorded_seal_order": {
+    "author38": "2026-09-25T04:54:33.157903+00:00",
+    "PRE38": "2026-09-25T05:16:06.494293+00:00",
+    "author_precedes_PRE": true,
+    "external_trusted_timestamp_claim": false
+  },
+  "coefficient_rows": [
+    {
+      "alpha": "1",
+      "rate_in_units_kappa_n": "12/5",
+      "capacity_in_units_n": "1/2",
+      "time_in_units_inverse_kappa": "5/24",
+      "scope": "Exact rational arithmetic of the displayed conditional bound, not a native control"
+    },
+    {
+      "alpha": "2",
+      "rate_in_units_kappa_n": "8/5",
+      "capacity_in_units_n": "1/2",
+      "time_in_units_inverse_kappa": "5/16",
+      "scope": "Exact rational arithmetic of the displayed conditional bound, not a native control"
+    },
+    {
+      "alpha": "3",
+      "rate_in_units_kappa_n": "4/5",
+      "capacity_in_units_n": "1/2",
+      "time_in_units_inverse_kappa": "5/8",
+      "scope": "Exact rational arithmetic of the displayed conditional bound, not a native control"
+    }
+  ],
+  "local_POST_evidence": [
+    {
+      "path": "POST.md",
+      "sha256": "29ae5d781835e75e3c79d726d8a183b8161e6b497581e57a6e3119b245631f15",
+      "bytes": 16414
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "d1033d0a72c9ccdb2fdf6b1390dd406990e582d1c2dad6396fee0222929deb61",
+      "bytes": 3599
+    },
+    {
+      "path": "POST_REVIEW_RECORD.json",
+      "sha256": "191907e6a3f93797d60c0ad19639a764d01fb75b8899cd3d8bcab41d45f86602",
+      "bytes": 2254
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "sha256": "7d75e77a7da9574f467de58be2768722509bf51feba76fb18b01d03d57f2bda5",
+      "bytes": 7646
+    }
+  ],
+  "author37_scope": "Only previously authorized note and seal; other members and independent checker remain unread.",
+  "scientific_or_original_author_programs_executed": [],
+  "file_writes_by_this_verifier": [],
+  "all_requested_checks": true
+}

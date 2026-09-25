@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-25T07:13:28.396817+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/publication_comparison_generation2/verify_generation2_readonly.py"
+  ],
+  "source_sha256": "336657ff9c76056a3080303dc942201946a358d7c5096b30b66a0066c0b49bd0",
+  "recorder_sha256": "5339f2a330670bcc94c20b5e44d78765a630792cae4c1705b81565541b44344c",
+  "elapsed_seconds": 0.07097979192622006,
+  "exit_code": 0,
+  "stdout_bytes": 14435,
+  "stderr_bytes": 0,
+  "observed_file_count": 137,
+  "observed_content_size_mtime_ctime_unchanged": true,
+  "scientific_programs_imported_or_executed": false,
+  "prior_source_snapshot_failure": "snapshot_attempt01/FAILURE.md"
+}

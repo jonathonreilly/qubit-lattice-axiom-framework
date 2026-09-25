@@ -1,0 +1,12 @@
+{
+  "verified_utc": "2026-09-24T19:11:01.377685+00:00",
+  "note_sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+  "runner_sha256": "268ee539b5978dca070bbb719eb370b181c63257f9ff5319f76969c8534476c5",
+  "result_sha256": "587bf71a3daf63ac62399b93a8fd4d33ab5bc874b75bcdade55a44d317e968d6",
+  "cache_sha256": "21ec8d09699c6d4a5bfd98a068f32d0e004315df8c3430869bfc5d07649b0bcf",
+  "seconds": 0.372133731842041,
+  "three_source_functions_identical": true,
+  "all_three_graph_rows_and_thirty_dispersion_rows_and_both_conversions_equal_sealed_root": true,
+  "stdout_exact_result_plus_summary": true,
+  "independence": "This disclosed rerun does not add independence; existing PRE/POST provide separately scoped checks."
+}

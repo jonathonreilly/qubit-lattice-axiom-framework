@@ -1,0 +1,39 @@
+{
+  "result": "TREE_RESULTS.json",
+  "full_dimension": 90,
+  "P_dimension": 40,
+  "finite_time_rows": 24,
+  "largest_trace_error": 1.1102230246251565e-16,
+  "smallest_later_N6_probability": 2.5592833328030667e-08,
+  "mutations": [
+    {
+      "instrument": "resolved",
+      "mutation": "drop_loss",
+      "trace": 1.0642560080633874,
+      "N6_probability": 0.00025600806338742937
+    },
+    {
+      "instrument": "resolved",
+      "mutation": "drop_recycling",
+      "trace": 0.9380049995307295,
+      "N6_probability": 0.0
+    },
+    {
+      "instrument": "coherent",
+      "mutation": "drop_loss",
+      "trace": 1.0642560080633874,
+      "N6_probability": 0.00025600806338742937
+    },
+    {
+      "instrument": "coherent",
+      "mutation": "drop_recycling",
+      "trace": 0.9380049995307295,
+      "N6_probability": 0.0
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

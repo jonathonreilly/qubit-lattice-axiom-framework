@@ -1,0 +1,136 @@
+{
+  "sealed_utc": "2026-09-25T03:13:30.417069+00:00",
+  "signed_by": "Codex independent checker /root/rotor_upper_tail_check",
+  "scope": "Released-source POST34: full argument and recorded generic four-state control compared with frozen independent PRE; exact correction and bounded source/output arithmetic, not a primary numerical rerun or audit verdict.",
+  "report": "POST.md",
+  "preserved_PRE_sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743",
+  "preserved_PRE_seal_sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+  "preserved_PRE_members_verified": 25,
+  "released_source_origin_count": 10,
+  "exact_scientific_parent_origins_checked_in_binding_record": 3,
+  "author_seal_sha256": "e59ad86d86b40ac23bf8bf9e3ed656865587041760fde772fe3b664a785f4e68",
+  "author_members_verified": 8,
+  "post_disclosure_correction": {
+    "path": "post_frozen_author/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+    "sha256": "cd145383f395171e33c34666744c326c92729018117e00e30bfd5a8a250ada51",
+    "scope": "Restore distance(a,c)=2 in the general-graph H4 pair sum; author generation unchanged."
+  },
+  "wording_recommendation": "Use fixed bounded continuous energy-response function; pointwise finite continuous functions need not have convergent means.",
+  "own_evidence": "Stored-output decimal arithmetic and exact source/log hashes only; direct author eigensystems and matrix exponentials are not independently rerun.",
+  "author_programs_imported_or_executed": [],
+  "other_active_packets_opened": [],
+  "provenance_distinctions": [
+    "Generic four-state bounded-compensation example belongs to the sealed root packet.",
+    "Disconnected physical twelve-dimensional example and stopped-instrument proof are independent PRE additions."
+  ],
+  "limitations": [
+    "Fixed graph and parameters; positive limiting probability for conditional finite-bin events.",
+    "Weak energy-law convergence and fixed bounded continuous responses; no moment or spectral-edge upgrade.",
+    "Ordered small-window limit or an existence diagonal, not arbitrary simultaneous schedules or isolated microscopic timestamps.",
+    "No physical calibration, energy-source, heat/work, audit, publication or model-selection conclusion."
+  ],
+  "member_count": 20,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 19733,
+      "sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20"
+    },
+    {
+      "path": "POST_BINDING_EXECUTION.json",
+      "bytes": 500,
+      "sha256": "5a25b705eebcd71b57463591d67fcd8cddcc412e349884a6bcba67ca64b449fe"
+    },
+    {
+      "path": "POST_BINDING_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "POST_BINDING_STDOUT.json",
+      "bytes": 4306,
+      "sha256": "2f63e402e86e4e686cf587aa4aa9e2563ce2b0266a529bfa11eaa860217dd3a3"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 4099,
+      "sha256": "c2ea89a3449b8fadeb9d6429e6ba9eb20cce3ecea82d29b4a65b822924ae8d03"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 29737,
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 6077,
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 6473,
+      "sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43"
+    },
+    {
+      "path": "post_bind_and_check.py",
+      "bytes": 9103,
+      "sha256": "53c7cb68654f3651e62ab7b7a61f0e6071e61d87cc716bf525ce2da2809e4917"
+    },
+    {
+      "path": "post_frozen_author/AUTHOR_SEAL.json",
+      "bytes": 1345,
+      "sha256": "e59ad86d86b40ac23bf8bf9e3ed656865587041760fde772fe3b664a785f4e68"
+    },
+    {
+      "path": "post_frozen_author/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_frozen_author/CONTROL.stdout",
+      "bytes": 33975,
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2"
+    },
+    {
+      "path": "post_frozen_author/EXECUTION.json",
+      "bytes": 419,
+      "sha256": "fce481070de279bc1017118f5f7f36e8f924bbbf295ae695138fc14e8dc253a3"
+    },
+    {
+      "path": "post_frozen_author/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "bytes": 1307,
+      "sha256": "cd145383f395171e33c34666744c326c92729018117e00e30bfd5a8a250ada51"
+    },
+    {
+      "path": "post_frozen_author/FINITE_WINDOW_ENERGY_RESULTS.json",
+      "bytes": 33975,
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2"
+    },
+    {
+      "path": "post_frozen_author/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "bytes": 12234,
+      "sha256": "a72af425e970c080502a394902adf86437d767e90921b30f6e6c889c99ccb902"
+    },
+    {
+      "path": "post_frozen_author/ROOT_REVIEW.json",
+      "bytes": 1328,
+      "sha256": "3301208fc049212cddcfb1e53e81fc4271e97be11a9226f8c2c51da97d0642ce"
+    },
+    {
+      "path": "post_frozen_author/SOURCE_PINS.json",
+      "bytes": 1245,
+      "sha256": "ce71315393d6c100dfba71ee5da05132310fe7a928770d47a6076aad08a1d97d"
+    },
+    {
+      "path": "post_frozen_author/finite_window_energy_controls.py",
+      "bytes": 6301,
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 6658,
+      "sha256": "b74d6355be99aa3020b67412d69693819a0143fc41308e3fcb9d6c91c1e0787b"
+    }
+  ],
+  "next_step": "Stop after delivering this POST seal; preserve author and PRE generations."
+}

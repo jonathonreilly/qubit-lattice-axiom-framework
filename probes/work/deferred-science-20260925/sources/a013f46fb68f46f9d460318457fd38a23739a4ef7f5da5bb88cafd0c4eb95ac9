@@ -1,0 +1,325 @@
+{
+  "started_utc": "2026-09-25T09:52:24.022444+00:00",
+  "elapsed_seconds": 0.06044966704212129,
+  "exit_code": 0,
+  "report_sha256": "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2",
+  "seal_sha256": "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410",
+  "sealed_members": 31,
+  "observed_files": 38,
+  "byte_and_stat_preservation": true,
+  "scientific_output_exact_except_timestamp": true,
+  "checker_sha256": "8fef3ad200ed4ade4a1cd9ab51cfce45fccddc2156311d7be0b4ad7fb4d00a0c",
+  "stdout_sha256": "7ffaa16c4dc41a915d66fbc1fdfd942e86b3f8e95f500542087266de7d6c07db",
+  "complete_report_scientific_programs_verifier_and_wording_repair_read": true,
+  "compact_output_read_status": "Complete fresh scientific compact output read: all40 matter summaries,7 moment matrices,18 complex kernels, magnetic-current example,18 Fourier means and108 Fourier covariance rows. Long raw current vectors mechanically checked, not all manually read.",
+  "required_PRE_repairs": [],
+  "scope": "PRE-only integrated continuity, local current norms and fixed-graph remainder remain attributed. Root sealed candidate47 before reading PRE46; independent PRE46 did not access author47.",
+  "identities": {
+    "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md": [
+      "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      14490,
+      1788906558708050244,
+      1788906559024445316,
+      33188,
+      295080999
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md": [
+      "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      737,
+      1790247109016911615,
+      1790247109016911615,
+      33188,
+      411329219
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      16764,
+      1790247110088356765,
+      1790247110088356765,
+      33188,
+      411336919
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      14902,
+      1790247110237258803,
+      1790247110237258803,
+      33188,
+      411337899
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      10953,
+      1790247110238463826,
+      1790247110238463826,
+      33188,
+      411337905
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md": [
+      "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      12253,
+      1790247110546458927,
+      1790247110546458927,
+      33188,
+      411339933
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE.md": [
+      "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2",
+      20457,
+      1790329440153369473,
+      1790329553523288451,
+      33060,
+      463801555
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_SEAL.json": [
+      "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410",
+      8598,
+      1790329553523249743,
+      1790329553523756284,
+      33060,
+      463803273
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_WORDING_REPAIR.diff": [
+      "fe197b68ff3b2f37ecd640c96b9bd3e1bf7ccbe6e3b51a739e2afd6c2927847f",
+      1332,
+      1790329440153688473,
+      1790329553523309785,
+      33060,
+      463802643
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_WORDING_REPAIR.json": [
+      "b851df147b0763e697371b57d870a54f163cd79178ae2382ca8a25022a98c4da",
+      652,
+      1790329440154171764,
+      1790329553523329868,
+      33060,
+      463802644
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/SOURCE_PINS.json": [
+      "dd4b85f0abde81d878692a99c4f6e6e40b587c1aaa319ccb1c4dee968c22e6c7",
+      2414,
+      1790328463795762337,
+      1790329553523350160,
+      33060,
+      463799635
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/VERIFICATION_REPORT.md": [
+      "a309764c4f7aa6f5970be18fe5e5a8d721a13af57f58cc4dc2f01074ec3f2189",
+      4467,
+      1790329526609240454,
+      1790329553523366159,
+      33060,
+      463803057
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/charge_current_control.py": [
+      "5f4300e84dbb3968d42278521e56187397b6a508a4d864b4bd683f66a8ccb160",
+      11823,
+      1790328711985445941,
+      1790329553523383409,
+      33060,
+      463800293
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/EXECUTION.json": [
+      "2d8a83bd61bbe7c6638704e7bd24a1be4657a7caa73e20fb1efdf57d68dea6a5",
+      610,
+      1790328772634320467,
+      1790329553523399243,
+      33060,
+      463800911
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/source.py": [
+      "a0998b6212cb6fb68a7568722f5b4ec3f0d8caa0f99a3213f3a9505940af37b5",
+      3210,
+      1790328771055018807,
+      1790329553523414701,
+      33060,
+      463800901
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/stderr.txt": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      0,
+      1790328772634076092,
+      1790329553523428826,
+      33060,
+      463800910
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/stdout.json": [
+      "8b0ff3ab7a0e474259a5705bd050d2cecde45543fd1ce895fe0115740c17eab0",
+      38875,
+      1790328772634019009,
+      1790329553523442618,
+      33060,
+      463800909
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_charge_control.py": [
+      "a0998b6212cb6fb68a7568722f5b4ec3f0d8caa0f99a3213f3a9505940af37b5",
+      3210,
+      1790328711986344233,
+      1790329553523456285,
+      33060,
+      463800294
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/history/PRE_before_mean_derivative_wording.md": [
+      "d265a1a4a873b16dda7094fa7936d03c3ce3a19fb90b5cf424503ef208a3f750",
+      20438,
+      1790329440153054140,
+      1790329553523470326,
+      33060,
+      463802642
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/instructions/AGENTS.md": [
+      "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      737,
+      1790328463794007794,
+      1790329553523486409,
+      33060,
+      463799632
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/instructions/SCIENCE_WORKFLOW.md": [
+      "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      12253,
+      1790328463794657711,
+      1790329553523501493,
+      33060,
+      463799633
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/instructions/physics-claim-reviewer_SKILL.md": [
+      "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      14490,
+      1790328463795121670,
+      1790329553523518993,
+      33060,
+      463799634
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/EXECUTION.json": [
+      "088c48c1278e377da18fa2d582c6b6691ec0162341410c1a353815dc3af1ac81",
+      612,
+      1790328771190806217,
+      1790329553523534909,
+      33060,
+      463800905
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/source.py": [
+      "5f4300e84dbb3968d42278521e56187397b6a508a4d864b4bd683f66a8ccb160",
+      11823,
+      1790328771055064391,
+      1790329553523549326,
+      33060,
+      463800900
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/stderr.txt": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      0,
+      1790328771190155716,
+      1790329553523562743,
+      33060,
+      463800904
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/stdout.json": [
+      "a9d5e0aa047bc8ec4f8fcb76ffcfec16bd71cef0dbe08197c90720244f78fb36",
+      575552,
+      1790328771190082133,
+      1790329553523576159,
+      33060,
+      463800903
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/record_control.py": [
+      "29e090f896bd6a6776e64ea00bdf358c4d937f75c790db7762fe979c49e861fc",
+      1487,
+      1790328759625967192,
+      1790329553523589534,
+      33060,
+      463800882
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/record_verification.py": [
+      "ca721bcb12954b7b4cfdd9d2a86a6184c9463b1c9465d8c1195ead22f7cf9c06",
+      1825,
+      1790329286280257745,
+      1790329553523602159,
+      33060,
+      463801825
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/repair_pre_mean_wording.py": [
+      "c8d6fc1affd53faf5be6bf5664af32c115571f671449dfdbbd182b1616dc6605",
+      1540,
+      1790329431007923956,
+      1790329553523615451,
+      33060,
+      463802592
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/seal_pre.py": [
+      "8ec591130c1a3ef29f03996237e89734d1a6e4c6f31f879874296f27a5c1c0d4",
+      4558,
+      1790329526609867370,
+      1790329553523629034,
+      33060,
+      463803058
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      16764,
+      1790328463793367460,
+      1790329553523645534,
+      33060,
+      463799630
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      14902,
+      1790328463792475918,
+      1790329553523660409,
+      33060,
+      463799629
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": [
+      "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      10953,
+      1790328463791796792,
+      1790329553523674617,
+      33060,
+      463799628
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/EXECUTION.json": [
+      "292f362b78c88a6243c884d62fce11d4d9fa1379c645de3ea4c83cb51659ac27",
+      17791,
+      1790329309330486450,
+      1790329553523688451,
+      33060,
+      463801861
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/source.py": [
+      "8fef3ad200ed4ade4a1cd9ab51cfce45fccddc2156311d7be0b4ad7fb4d00a0c",
+      10822,
+      1790329309330075200,
+      1790329553523703576,
+      33060,
+      463801858
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/stderr.txt": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      0,
+      1790329309330222742,
+      1790329553523717451,
+      33060,
+      463801860
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/stdout.json": [
+      "ed0d918e09f15191dbce0f77cebbcb73709eab9ce3c41f45bcc1fd0d74a31121",
+      66934,
+      1790329309330192367,
+      1790329553523731701,
+      33060,
+      463801859
+    ],
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verify_readonly.py": [
+      "8fef3ad200ed4ade4a1cd9ab51cfce45fccddc2156311d7be0b4ad7fb4d00a0c",
+      10822,
+      1790329286279901537,
+      1790329553523745618,
+      33060,
+      463801824
+    ]
+  },
+  "prior_receipt_sha256": "ce86574f3b1dd9d8da2a3aed787ec3b2ef16be995661e5d618676973fa9f613e",
+  "read_completed_utc": "2026-09-25T09:53:13.498850+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-09-25T01:28:04.181508+00:00",
+  "seals": {
+    "PRE_SEAL.json": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+    "POST_SEAL.json": "275f99adc9ca2b43e0db8307647839697a195e9422d400922f7b46cb721d3ad3"
+  },
+  "member_counts": {
+    "PRE_SEAL.json": 43,
+    "POST_SEAL.json": 33
+  },
+  "unique_live_source_origins": 31,
+  "report_sha256": "a9c3ecc41bd23dbae2f131cf9b290dbb362d6b5099d103e54e30a3752e020c1e",
+  "source_manifest_sha256": "6253eb765f321b3c22ae93ea65bed1bfbb98794d68421dfa8c91ed5b4eaef95a",
+  "read_scope": "Complete POST and new verifier, failure/read log, receipts, full comparison row table (30 moments,120 finite-g,16 spatial). Original author proof/code/rows and full PRE previously read. Scientific differences inspected in compact complete columns, with unrounded Decimal tolerance checks.",
+  "new_author_or_checker_scientific_runs": 0,
+  "binding_and_complete_view_checks": true,
+  "accepted_qualifications": [
+    "Even bipartition-preserving translations for actual preparation copies.",
+    "Four epsilon=3.5 spatial rows are full-band diagnostics, outside epsilon<=2 theorem.",
+    "Actual metadata seal filename AUTHOR_SCOPE_ADDENDUM_SEAL.json."
+  ],
+  "conclusion": "No further mathematical repair identified; conditional full-process shrinking-window and fixed-cutoff existence diagonal only.",
+  "limits": [
+    "No uniform volume/cutoff/time convergence or finite laboratory certificate.",
+    "No native stationary source, detector/background identification or empirical agreement.",
+    "PRE rational covariance certificate and optional extensions keep separate provenance."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "initial_energy_balance_released_source_POST",
+  "sealed_at_utc": "2026-09-24T17:47:11.230324+00:00",
+  "files": {
+    "POST.md": "1b8a71eedd1d014e22b23a87e7658cd01fd0645f932b8292dce08ddc645c42c4",
+    "POST_SOURCE_PINS.json": "ff3bac0758cd1eb9fd29f65c295c925e00c748c46a86a26d6d4a52cf2ff6f10a",
+    "POST_VERIFICATION.json": "131a977b3cb8d2dec564711bcd76740fc7447a15802b4283400d3f4733161cb9"
+  },
+  "preserved_PRE_sha256": "785f3c87cec7db2d00f2548745b22fd68e74afa09a307081446fc80763555b3a",
+  "preserved_PRE_seal_sha256": "f459870253083462c9448a0f1ca2ea50beb9b954b34bdffd783fe27a08f060f8",
+  "reviewed_author_proof_sha256": "f93139735be333d46cb7b5d7d0882beaa341532df0a76d24d61676b93514d844",
+  "reviewed_author_seal_sha256": "498705aaeac3f6cd542ceabe0d0042fc7f301ef6b4e6402c4b56152c8c113513",
+  "reviewed_control_seal_sha256": "97be508f590b9ad739d3fe9805dd2fdcbebfeceab9d859cc105de195c646a7ec",
+  "material_mathematical_discrepancies": [],
+  "minor_presentation_clarification_count": 1,
+  "disposition": "Supported conditional released candidate; preserve the gain/carrier positivity versus exact-loss distributional distinction in its closing summary.",
+  "author_controls_rerun": false,
+  "PRE_and_all_members_unchanged": true,
+  "trace_norm_and_carrier_checks_are_POST_work": true,
+  "stronger_matched_and_initial_derivative_claims_retain_PRE_attribution": true,
+  "publication_retained_or_audit_state_changed": false,
+  "immutable_policy": "Preserve all POST members and this seal; future publication comparison must be separate."
+}

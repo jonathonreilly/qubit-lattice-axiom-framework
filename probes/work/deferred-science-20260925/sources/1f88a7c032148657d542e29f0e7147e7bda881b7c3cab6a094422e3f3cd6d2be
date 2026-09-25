@@ -1,0 +1,602 @@
+{
+  "primitive_words": {
+    "F_Omega_norm_squared": 12,
+    "F_squared_Omega_norm_squared": 168,
+    "initial_rotor_energy_over_delta": -84,
+    "rows": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          4
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          4
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          1
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          1
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          2
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          2
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          7
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          3,
+          7
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          1
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          1
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          4
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          4
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          7
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          5,
+          7
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          2
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          2
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          4
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          4
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "mark": "plus",
+        "b": 2,
+        "r": 4,
+        "initial_loss_form": 0,
+        "loss_after_G": 96,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "mark": "minus",
+        "b": 2,
+        "r": 2,
+        "initial_loss_form": 0,
+        "loss_after_G": 48,
+        "wrong_half_factor_squared_residual": 10
+      },
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          0,
+          4
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          3,
+          1
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          3,
+          2
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          3,
+          7
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          5,
+          1
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          5,
+          4
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          5,
+          7
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          6,
+          2
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          6,
+          4
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      },
+      {
+        "edge": [
+          6,
+          7
+        ],
+        "mark": "coherent",
+        "b": 4,
+        "r": 6,
+        "initial_loss_form": 0,
+        "loss_after_G": 144,
+        "wrong_half_factor_squared_residual": 20
+      }
+    ],
+    "totals": {
+      "resolved": {
+        "sum_b": 48,
+        "sum_r": 72,
+        "sum_loss_after_G": 1728
+      },
+      "coherent": {
+        "sum_b": 48,
+        "sum_r": 72,
+        "sum_loss_after_G": 1728
+      }
+    },
+    "scope": "New exact integer/rational rotor word calculation at zero field; no finite-spin dynamics or joint-limit simulation."
+  },
+  "balance_toy": {
+    "rows": [
+      {
+        "epsilon": 0.2,
+        "clock": "physical",
+        "time": 0.7,
+        "energy": 3.583506408264435,
+        "limiting_energy": 3.9288119162669912,
+        "absolute_energy_error": 0.3453055080025562,
+        "scaled_gain": 0.48924284206493335,
+        "scaled_loss": 0.4515218074413189,
+        "drift": 0.9430258655903607,
+        "finite_difference_error_h": 4.1969785424811334e-09,
+        "finite_difference_error_h_over_2": 1.0494962676688147e-09,
+        "omitted_loss_error": 11.288045184983474
+      },
+      {
+        "epsilon": 0.2,
+        "clock": "initial_layer",
+        "time": 0.024000000000000004,
+        "energy": 0.3149225591530706,
+        "limiting_energy": 0.31552296881217873,
+        "absolute_energy_error": 0.0006004096591081254,
+        "scaled_gain": 0.5439491540919443,
+        "scaled_loss": 0.039680242453286906,
+        "drift": 12.606722790966433,
+        "finite_difference_error_h": 3.523704528163307e-08,
+        "finite_difference_error_h_over_2": 8.807491624907016e-09,
+        "omitted_loss_error": 0.9920060525246814
+      },
+      {
+        "epsilon": 0.1,
+        "clock": "physical",
+        "time": 0.7,
+        "energy": 3.9619805960721552,
+        "limiting_energy": 3.9288119162669912,
+        "absolute_energy_error": 0.033168679805164025,
+        "scaled_gain": 0.4935770496902423,
+        "scaled_loss": 0.49920955510509163,
+        "drift": -0.5632505414849334,
+        "finite_difference_error_h": 1.1595946425302373e-11,
+        "finite_difference_error_h_over_2": 1.1595946425302373e-11,
+        "omitted_loss_error": 49.92095551052075
+      },
+      {
+        "epsilon": 0.1,
+        "clock": "initial_layer",
+        "time": 0.006000000000000001,
+        "energy": 0.31538479400202146,
+        "limiting_energy": 0.31552296881217873,
+        "absolute_energy_error": 0.00013817481015726552,
+        "scaled_gain": 0.5455278051009693,
+        "scaled_loss": 0.03973848404425471,
+        "drift": 50.578932105671456,
+        "finite_difference_error_h": 1.3549724542372132e-07,
+        "finite_difference_error_h_over_2": 3.3878535532494425e-08,
+        "omitted_loss_error": 3.973848370546932
+      },
+      {
+        "epsilon": 0.05,
+        "clock": "physical",
+        "time": 0.7,
+        "energy": 3.9369432736592658,
+        "limiting_energy": 3.9288119162669912,
+        "absolute_energy_error": 0.008131357392274552,
+        "scaled_gain": 0.4946665878591938,
+        "scaled_loss": 0.49605485248106757,
+        "drift": -0.555305848749498,
+        "finite_difference_error_h": 1.0993506105450024e-10,
+        "finite_difference_error_h_over_2": 2.1117219084487715e-11,
+        "omitted_loss_error": 198.4219409924481
+      },
+      {
+        "epsilon": 0.05,
+        "clock": "initial_layer",
+        "time": 0.0015000000000000002,
+        "energy": 0.3154891722969892,
+        "limiting_energy": 0.31552296881217873,
+        "absolute_energy_error": 3.379651518953253e-05,
+        "scaled_gain": 0.545884492269705,
+        "scaled_loss": 0.03975163570942064,
+        "drift": 202.4531426241137,
+        "finite_difference_error_h": 5.373047429202416e-07,
+        "finite_difference_error_h_over_2": 1.343048836588423e-07,
+        "omitted_loss_error": 15.900654149463378
+      },
+      {
+        "epsilon": 0.025,
+        "clock": "physical",
+        "time": 0.7,
+        "energy": 3.93082492118986,
+        "limiting_energy": 3.9288119162669912,
+        "absolute_energy_error": 0.0020130049228685998,
+        "scaled_gain": 0.4949393479883547,
+        "scaled_loss": 0.4952839400699224,
+        "drift": -0.5513473305082925,
+        "finite_difference_error_h": 5.081812748386483e-11,
+        "finite_difference_error_h_over_2": 6.597246082762354e-10,
+        "omitted_loss_error": 792.4543041125354
+      },
+      {
+        "epsilon": 0.025,
+        "clock": "initial_layer",
+        "time": 0.00037500000000000006,
+        "energy": 0.31551456640790565,
+        "limiting_energy": 0.31552296881217873,
+        "absolute_energy_error": 8.402404273077924e-06,
+        "scaled_gain": 0.5459712820083924,
+        "scaled_loss": 0.039754835367396116,
+        "drift": 809.9463146255939,
+        "finite_difference_error_h": 2.144699465134181e-06,
+        "finite_difference_error_h_over_2": 5.360307113733143e-07,
+        "omitted_loss_error": 63.607736051803045
+      }
+    ],
+    "positive_operator_anticommutator_counterexample": {
+      "A": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "Gamma": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pure_state": [
+        0.99498743710662,
+        -0.1
+      ],
+      "diagonal_loss": 0.01,
+      "coherence_loss": -0.099498743710662,
+      "Re_Tr_A_Gamma_rho": -0.08949874371066201,
+      "scope": "Finite algebraic example; does not claim a negative loss on the original cube trajectory."
+    },
+    "scope": "Separate four-level GKLS population solution and finite-difference balance test; not a proxy proof for the cube."
+  },
+  "source_sha256": "c839ffaed8da4e2b8830807695e16b4aac2ec8944139288eec7df1fe2bf7c5fc"
+}

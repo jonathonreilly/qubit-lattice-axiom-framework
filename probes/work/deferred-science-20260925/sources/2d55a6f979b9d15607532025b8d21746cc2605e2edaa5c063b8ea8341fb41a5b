@@ -1,0 +1,78 @@
+{
+  "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "base_branch": "main",
+  "branch": "codex/mobile-record-birth-charge-and-grouping-dynamics-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925",
+  "note": "docs/ORIGINAL_BIRTH_CHARGE_AND_GROUPING_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py"
+  ],
+  "output_directory": "outputs/native_birth_charge_transport_20260925",
+  "parent_paths": [
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "source_notes": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md"
+  ],
+  "cache": "logs/runner-cache/original_birth_charge_and_grouping_dynamics_2026_09_25.txt",
+  "result": "outputs/native_birth_charge_transport_20260925/BIRTH_CHARGE_TRANSPORT_PUBLIC_RESULTS.json",
+  "presentation_replacements": [
+    [
+      {
+        "old": "No independent check\nof this candidate is claimed.",
+        "new": "Separate scoped PRE and POST checks are complete; no retained audit status\nis claimed."
+      },
+      {
+        "old": "h=KD-2delta Q, the original",
+        "new": "h=KD-2delta Q, where Q is the sum of S_xy^* S_xy over unordered\nOVERLAPPING A-star pairs, S_xy=F_y F_x P, the original"
+      },
+      {
+        "old": "On the full output span define",
+        "new": "On the closed span of all individual branch images define"
+      },
+      {
+        "old": "On the output span let Z be q_a restricted to\nthat span",
+        "new": "On that individual-branch span let Z be q_a restricted to\nthat span (not necessarily the range of the coherent output isometry)"
+      },
+      {
+        "old": "Consequently the first time is exponential with that rate when kappa>0;",
+        "new": "Consequently the first time is exponential when its total rate Gamma_0>0;"
+      },
+      {
+        "old": "If kappa=0 there is no event to condition on.",
+        "new": "If Gamma_0=0 there is no event to condition on."
+      },
+      {
+        "old": "There is no independent\ncandidate42 result yet, and no result from independent40/41 was read for this\ncandidate.",
+        "new": "This historical author seal preceded the separate candidate42 checks.\nNo result from independent40/41 was read for this candidate."
+      }
+    ],
+    [
+      {
+        "old": "This author packet is not independently\nchecked at its creation and is not an audit disposition or an observed particle\nprediction.",
+        "new": "This author packet was not independently checked at its creation. Separate\nscoped PRE and POST checks are now complete; they confer no retained audit\nstatus or observed particle prediction."
+      },
+      {
+        "old": "The denominators follow from the five distinct outgoing matter words for each",
+        "new": "An actually occurring conditioned mark requires kappa>0. At kappa=0 these\nnormalized bare-B vectors still define supplied states, but no such event occurs.\nThe denominators follow from the five distinct outgoing matter words for each"
+      }
+    ]
+  ],
+  "heading_level_increment": 2,
+  "source_files_sha256": {
+    "docs/ORIGINAL_BIRTH_CHARGE_AND_GROUPING_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-25.md": "e77b835457f41a17131ac9038cff3538cf3affd73a13fac64dc21465f4891c44",
+    "scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py": "536efbf50f57eb27454b6ea9566f904b25f9f16d8c5627141bd4ca43ad838c61",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+    ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  }
+}

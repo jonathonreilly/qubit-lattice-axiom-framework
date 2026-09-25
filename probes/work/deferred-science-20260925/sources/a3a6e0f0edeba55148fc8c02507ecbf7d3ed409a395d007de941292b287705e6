@@ -1,0 +1,250 @@
+{
+  "scope": "Read-only POST correspondence; never import or execute author controls.",
+  "checks": [
+    {
+      "name": "PRE_seal_preserved",
+      "satisfied": true
+    },
+    {
+      "name": "all_PRE_members_preserved",
+      "satisfied": true,
+      "count": 29
+    },
+    {
+      "name": "all_released_frozen_origins_match",
+      "satisfied": true,
+      "count": 13
+    },
+    {
+      "name": "author_source_pin_git_identities",
+      "satisfied": true,
+      "origins": [
+        {
+          "path": "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+          "bytes": 19851,
+          "scope": "Exact source identity only; no additional theorem imported."
+        },
+        {
+          "path": "docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+          "bytes": 22993,
+          "scope": "Exact source identity only; no additional theorem imported."
+        },
+        {
+          "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+          "bytes": 21740,
+          "scope": "Exact source identity only; no additional theorem imported."
+        },
+        {
+          "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+          "bytes": 14902,
+          "scope": "Exact source identity only; no additional theorem imported."
+        },
+        {
+          "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+          "bytes": 10953,
+          "scope": "Exact source identity only; no additional theorem imported."
+        }
+      ]
+    },
+    {
+      "name": "author_stdout_is_exact_result_bytes",
+      "satisfied": true
+    },
+    {
+      "name": "author_result_source_fingerprints",
+      "satisfied": true
+    },
+    {
+      "name": "author_reported_exits_and_empty_stderr",
+      "satisfied": true,
+      "author_metadata": [
+        {
+          "exit_code": 0,
+          "wall_seconds": 1.061624666908756,
+          "finished_at": "2026-09-24T18:45:04.482687+00:00"
+        },
+        {
+          "exit_code": 0,
+          "wall_seconds": 0.5672767499927431,
+          "finished_at": "2026-09-24T18:48:18.028975+00:00"
+        }
+      ],
+      "caveat": "These are released author execution records, not new independent executions."
+    },
+    {
+      "name": "side_six_effect_correspondence_minus_minus",
+      "satisfied": true,
+      "author_joint_words": 23,
+      "own_paths": 23,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_minus_plus",
+      "satisfied": true,
+      "author_joint_words": 23,
+      "own_paths": 23,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_minus_coherent",
+      "satisfied": true,
+      "author_joint_words": 46,
+      "own_paths": 46,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_plus_minus",
+      "satisfied": true,
+      "author_joint_words": 23,
+      "own_paths": 23,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_plus_plus",
+      "satisfied": true,
+      "author_joint_words": 23,
+      "own_paths": 23,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_plus_coherent",
+      "satisfied": true,
+      "author_joint_words": 46,
+      "own_paths": 46,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_coherent_minus",
+      "satisfied": true,
+      "author_joint_words": 46,
+      "own_paths": 46,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_coherent_plus",
+      "satisfied": true,
+      "author_joint_words": 46,
+      "own_paths": 46,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "side_six_effect_correspondence_coherent_coherent",
+      "satisfied": true,
+      "author_joint_words": 92,
+      "own_paths": 92,
+      "caveat": "Author joint matter/field words differ from the count of final matter words alone."
+    },
+    {
+      "name": "all_author_primitive_rows_consistent",
+      "satisfied": true,
+      "rows": 27,
+      "graph_scopes": [
+        {
+          "periods": [
+            2,
+            2,
+            2
+          ],
+          "degree": 3
+        },
+        {
+          "periods": [
+            6,
+            6
+          ],
+          "degree": 4
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "degree": 6
+        }
+      ]
+    },
+    {
+      "name": "all_author_rotor_output_arithmetic",
+      "satisfied": true,
+      "rows": 36,
+      "max_reference_characteristic_error": 2.220446049250313e-16,
+      "max_vector_error_over_g2": 0.6567118159889734,
+      "max_observable_error_over_g4": 0.5471563418098253,
+      "scope": "Arithmetic checks of author results; no rotor evolution reproduced."
+    },
+    {
+      "name": "author_grid_repeat_alignment",
+      "satisfied": true,
+      "grid_256_512_max_differences": {
+        "actual_cosine": 7.105427357601002e-15,
+        "vector_error_over_g2": 2.003525123583927e-11,
+        "observable_error_over_g4": 1.6132928326584306e-12
+      }
+    },
+    {
+      "name": "all_author_fock_formula_fields",
+      "satisfied": true,
+      "rows": 12,
+      "max_closed_formula_correspondence_error": 0.0,
+      "max_author_matrix_formula_difference": 6.072067428425778e-15,
+      "scope": "Closed-form/output correspondence; author finite Fock matrix was not executed."
+    },
+    {
+      "name": "author_packet_parameter_correspondence",
+      "satisfied": true,
+      "derived_A": 0.018293893334271567,
+      "derived_Hessian_bound": 6.4,
+      "band_radius": 0.09817477042468103
+    },
+    {
+      "name": "author_packet_bound_arithmetic_t_0.0",
+      "satisfied": true,
+      "row": {
+        "time": 0.0,
+        "max_amplitude_error": 0.0,
+        "amplitude_bound": 0.0,
+        "max_intensity_error": 0.0,
+        "intensity_bound": 0.0,
+        "actual_peak_site": 9,
+        "linear_peak_site": 9
+      }
+    },
+    {
+      "name": "author_packet_bound_arithmetic_t_8.0",
+      "satisfied": true,
+      "row": {
+        "time": 8.0,
+        "max_amplitude_error": 5.1291841908001106e-05,
+        "amplitude_bound": 0.00451383725412465,
+        "max_intensity_error": 1.3608076170242012e-07,
+        "intensity_bound": 0.0001651513145104352,
+        "actual_peak_site": 17,
+        "linear_peak_site": 17
+      }
+    },
+    {
+      "name": "author_packet_bound_arithmetic_t_20.0",
+      "satisfied": true,
+      "row": {
+        "time": 20.0,
+        "max_amplitude_error": 0.00012816225376386522,
+        "amplitude_bound": 0.011284593135311626,
+        "max_intensity_error": 3.4366928720590425e-07,
+        "intensity_bound": 0.0004128782862760881,
+        "actual_peak_site": 29,
+        "linear_peak_site": 29
+      }
+    }
+  ],
+  "check_count": 24,
+  "all_checks_satisfied": true,
+  "script_sha256": "17ed2c36f9166d0d6fb91371bbe6122d9efa64eea133ca6be3fac988bdd81b03",
+  "POST_SOURCE_PINS_sha256": "fde51b6ef27bac558f1dd8b47e832e6d7e2015fb64ff63da9eaa4d4c534b609f",
+  "no_author_code_executed": true
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "scope": "Read-only deterministic source/cache bookkeeping; no scientific runner imported or executed.",
+    "started_utc": "2026-09-24T20:27:12.277380+00:00",
+    "elapsed_wall_seconds": 0.05840925010852516,
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/publication_binding_check.py",
+      "publication_sources"
+    ],
+    "exit_code": 0,
+    "verifier_sha256": "45b3c27c5d2a8761c80446ad023ca0d6fbce4b5277d1c32fea12666dee98d11f",
+    "stdout_path": "PUBLICATION_INITIAL_BINDING_REPORT.json",
+    "stdout_sha256": "1761927d3f6ccfcf3ac418bf15d8f07a324c790261217c7e4969474b245db4f5",
+    "stderr_path": "PUBLICATION_INITIAL_BINDING_STDERR.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "scope": "Read-only deterministic source/cache bookkeeping; no scientific runner imported or executed.",
+    "started_utc": "2026-09-24T20:27:12.336631+00:00",
+    "elapsed_wall_seconds": 0.046019457979127765,
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/magnetic-lag-photon-independent/publication_binding_check.py",
+      "publication_final_sources"
+    ],
+    "exit_code": 0,
+    "verifier_sha256": "45b3c27c5d2a8761c80446ad023ca0d6fbce4b5277d1c32fea12666dee98d11f",
+    "stdout_path": "PUBLICATION_FINAL_BINDING_REPORT.json",
+    "stdout_sha256": "de68848d3ebafa3316282eee74d535e083fba3a23503fdb23d23cb16c249f695",
+    "stderr_path": "PUBLICATION_FINAL_BINDING_STDERR.log",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

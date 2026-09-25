@@ -1,0 +1,45 @@
+{
+  "base_revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+  "base_branch": "codex/mobile-record-native-ground-energy-and-formation-20260925",
+  "branch": "codex/mobile-record-native-charge-and-separated-threshold-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925",
+  "note": "docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/native_birth_charge_and_separated_threshold_2026_09_25.py",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/runtime/two_record_threshold_and_charge_controls.py"
+  ],
+  "output_directory": "outputs/native_charge_threshold_20260925",
+  "parent_paths": [
+    "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "source_note": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+  "cache": "logs/runner-cache/native_birth_charge_and_separated_threshold_2026_09_25.txt",
+  "result": "outputs/native_charge_threshold_20260925/NATIVE_CHARGE_THRESHOLD_PUBLIC_RESULTS.json",
+  "presentation_replacements": [
+    {
+      "old": "supplied model; not yet independently checked at this seal. No particle or",
+      "new": "supplied model; separate scoped PRE and POST checks are complete. No particle or"
+    },
+    {
+      "old": "This is the separated flat occupancy threshold. There is no state of this",
+      "new": "This is the global separated flat occupancy threshold. There is no state of this"
+    },
+    {
+      "old": "Start with the original all-A-plus, empty-B, zero-electric-flux basis input.",
+      "new": "Supply the immediately pre-mark all-A-plus, empty-B, zero-electric-flux basis input."
+    }
+  ],
+  "heading_level_increment": 2,
+  "source_files_sha256": {
+    "docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md": "fd0f9f7c23db2aae9e9e13be9f14d776c9f10153ca886002815d5aff22ddf743",
+    "scripts/native_birth_charge_and_separated_threshold_2026_09_25.py": "a1b8d6a9d5b137b0084afd81de0cd3221e7997f61259bb993ce946bb209ca331",
+    ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/runtime/two_record_threshold_and_charge_controls.py": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+    "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  }
+}

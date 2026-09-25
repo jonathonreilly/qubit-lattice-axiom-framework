@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-09-24T16:10:45.301664+00:00",
+  "scope": "Final frozen publication source/control/result/cache comparison only; no primary rerun and no audit verdict",
+  "publication_base_revision": "e846ee9d4133f65d3778fa4dc36524a9ada6db6b",
+  "publication_sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a",
+      "bytes": 31883
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/scripts/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py",
+      "snapshot": "PUBLICATION_sources/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py",
+      "sha256": "3d0e581de398f11cae0986b18c425e699b7b78f5269a85857eadb0151d1a0d77",
+      "bytes": 10075
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/outputs/no_first_birth_cube_energy_20260924/NOEVENT_CONTROL_RESULTS.json",
+      "snapshot": "PUBLICATION_sources/NOEVENT_CONTROL_RESULTS.json",
+      "sha256": "92d901f05b11e949eb9bbb33a63f67b7ef6ddbd33b5fe3109dacd91ec7a5af8d",
+      "bytes": 18338
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/logs/runner-cache/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.txt",
+      "snapshot": "PUBLICATION_sources/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.txt",
+      "sha256": "c69af646dc1e02069ea299287e04f65622c98e7e4be179ff27119ce741783ec4",
+      "bytes": 20889
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SEVENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "PUBLICATION_sources/SEVENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "a38b9d1d15a94c2c9e7552ac9b54940979fd39be945616fda95232eec727605b",
+      "bytes": 756
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SEVENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "PUBLICATION_sources/SEVENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "a43daff31ed4376fd1dca475d4edbe2211691e19676ea3713f94b7c2fcc6d541",
+      "bytes": 22931
+    }
+  ],
+  "procedural_cache_API_source": {
+    "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/scripts/runner_cache.py",
+    "snapshot": "PUBLICATION_sources/RUNNER_CACHE_API.py",
+    "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "bytes": 24941
+  },
+  "actual_declared_inputs": [
+    {
+      "relative_path": "docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 31883,
+      "sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a"
+    },
+    {
+      "relative_path": "docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 17317,
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718"
+    },
+    {
+      "relative_path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10011,
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "relative_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "relative_path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/no-first-birth-publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 30471,
+      "sha256": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7"
+    }
+  ],
+  "input_fingerprint_sha256": "ca3ca68a57c5f8c6ffec44b5efd6cb04e3409d753a648f77e7620d144d60da5a",
+  "preserved_packet_dependencies": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+      "unchanged_members": 23
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "5b0b5634b6096a95ef0956424f48b15e6ae83f70cc210d553dc9c67ed959b218",
+      "unchanged_members": 23
+    }
+  ],
+  "previously_reviewed_source_evidence": [
+    {
+      "path": "PRE.md",
+      "sha256": "d56261e53b846906fa40692f1b78a5e89a4e7ac34fb98cdb492563189622607d",
+      "bytes": 29091
+    },
+    {
+      "path": "POST.md",
+      "sha256": "7317b366a9c936f7e2a9708bc4bb1556b55d9c516e98133b576efda9c51916cf",
+      "bytes": 19532
+    },
+    {
+      "path": "POST_sources/REUSED_ORDINARY_ENERGY_RUNNER.py",
+      "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+      "bytes": 11444
+    },
+    {
+      "path": "POST_sources/noevent_controls.py",
+      "sha256": "2ffedffaad64dc16ebb2767d356f0109171b4b09eb9d947ded7e79626c0655db",
+      "bytes": 6970
+    },
+    {
+      "path": "POST_sources/NOEVENT_CONTROL_RESULTS.json",
+      "sha256": "cc153bee2b8570fcd36b631df2748c8e795e1f33f283b30d67b567ac8ff11aa4",
+      "bytes": 18339
+    },
+    {
+      "path": "INDEPENDENT_CONTROL_RESULTS.json",
+      "sha256": "79d067bcb0447144d0b5ffc369da526939bf50ff7a6aca5346a62d271a67de79",
+      "bytes": 19651
+    }
+  ],
+  "new_comparison_evidence": [
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "2526ff807b54877b8b0ca62b39244120df986c6afabdcdf01ec785f10bdee9ef",
+      "bytes": 12393
+    },
+    {
+      "path": "publication_correspondence_check.py",
+      "sha256": "0944348d7c710c3e9d89a1d069070d947286760e804c5f7888f6e5892fe6acf1",
+      "bytes": 11071
+    },
+    {
+      "path": "PUBLICATION_SOURCE_FREEZE.json",
+      "sha256": "9b552d72770aa21ac5657cbf12376b4e8bdac488bbb228e1e6077172457ecf2a",
+      "bytes": 2466
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_CHECK.json",
+      "sha256": "5f3884ecae34db23a3accfa51267d9b85686294d54792d480ce1e5a1c3152d4a",
+      "bytes": 8626
+    },
+    {
+      "path": "PUBLICATION_CODE_DIFF.txt",
+      "sha256": "822e65193fa330629784c7e5b6116c418e0ba10294368be5d4677e4e3a373c6c",
+      "bytes": 7133
+    },
+    {
+      "path": "PUBLICATION_PROOF_DIFF.txt",
+      "sha256": "6cc2e1876b8561ff7b4b258caaa6d20668a6776c399a968ad432aeef82bbe489",
+      "bytes": 2424
+    },
+    {
+      "path": "PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "f1c56c0601975e90d8889870e4792af665a3eb4529829c6218db6666ad350786",
+      "bytes": 1403
+    },
+    {
+      "path": "PUBLICATION_CHECK.stdout.txt",
+      "sha256": "5f3884ecae34db23a3accfa51267d9b85686294d54792d480ce1e5a1c3152d4a",
+      "bytes": 8626
+    },
+    {
+      "path": "PUBLICATION_CHECK.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "provenance_limit": "Author numerical controls are reused. The independent execution here compares sources and evidence without importing or running those controls. Scientific independence remains the sealed PRE and scoped POST."
+}

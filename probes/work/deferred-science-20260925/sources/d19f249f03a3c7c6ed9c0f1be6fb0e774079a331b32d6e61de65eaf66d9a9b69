@@ -1,0 +1,623 @@
+{
+  "scope": "Exact rational finite Fourier enclosure: actual even side12, xy plaquettes translated by6 along x or z. This is a static sign/size certificate, not a dynamics or laboratory certificate.",
+  "sqrt3_bounds_outward_decimal": [
+    "1.732050807568877293527446341505",
+    "1.732050807568877293527446341506"
+  ],
+  "rows": [
+    {
+      "L": 12,
+      "separation_axis": 0,
+      "translation_length": 6,
+      "exact_group_rows": [
+        {
+          "D_A": 1,
+          "D_B": 0,
+          "weighted_Dxy_A": 4,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 2,
+          "D_B": -1,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 2,
+          "D_B": 0,
+          "weighted_Dxy_A": 16,
+          "weighted_Dxy_B": 0,
+          "momenta": 18
+        },
+        {
+          "D_A": 2,
+          "D_B": 1,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 3,
+          "D_B": -1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 3,
+          "D_B": 0,
+          "weighted_Dxy_A": 36,
+          "weighted_Dxy_B": 0,
+          "momenta": 38
+        },
+        {
+          "D_A": 3,
+          "D_B": 1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 4,
+          "D_B": -2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": 8,
+          "momenta": 12
+        },
+        {
+          "D_A": 4,
+          "D_B": -1,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": 8,
+          "momenta": 48
+        },
+        {
+          "D_A": 4,
+          "D_B": 0,
+          "weighted_Dxy_A": 40,
+          "weighted_Dxy_B": 0,
+          "momenta": 87
+        },
+        {
+          "D_A": 4,
+          "D_B": 1,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": -8,
+          "momenta": 48
+        },
+        {
+          "D_A": 4,
+          "D_B": 2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": -8,
+          "momenta": 12
+        },
+        {
+          "D_A": 5,
+          "D_B": -2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 16,
+          "momenta": 24
+        },
+        {
+          "D_A": 5,
+          "D_B": -1,
+          "weighted_Dxy_A": -40,
+          "weighted_Dxy_B": 16,
+          "momenta": 72
+        },
+        {
+          "D_A": 5,
+          "D_B": 0,
+          "weighted_Dxy_A": 48,
+          "weighted_Dxy_B": 0,
+          "momenta": 132
+        },
+        {
+          "D_A": 5,
+          "D_B": 1,
+          "weighted_Dxy_A": -40,
+          "weighted_Dxy_B": -16,
+          "momenta": 72
+        },
+        {
+          "D_A": 5,
+          "D_B": 2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": -16,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": -3,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 16,
+          "momenta": 8
+        },
+        {
+          "D_A": 6,
+          "D_B": -2,
+          "weighted_Dxy_A": -96,
+          "weighted_Dxy_B": 32,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": -1,
+          "weighted_Dxy_A": -112,
+          "weighted_Dxy_B": 32,
+          "momenta": 108
+        },
+        {
+          "D_A": 6,
+          "D_B": 0,
+          "weighted_Dxy_A": -48,
+          "weighted_Dxy_B": 0,
+          "momenta": 140
+        },
+        {
+          "D_A": 6,
+          "D_B": 1,
+          "weighted_Dxy_A": -112,
+          "weighted_Dxy_B": -32,
+          "momenta": 108
+        },
+        {
+          "D_A": 6,
+          "D_B": 2,
+          "weighted_Dxy_A": -96,
+          "weighted_Dxy_B": -32,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": 3,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": -16,
+          "momenta": 8
+        },
+        {
+          "D_A": 7,
+          "D_B": -2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 16,
+          "momenta": 24
+        },
+        {
+          "D_A": 7,
+          "D_B": -1,
+          "weighted_Dxy_A": -24,
+          "weighted_Dxy_B": 16,
+          "momenta": 72
+        },
+        {
+          "D_A": 7,
+          "D_B": 0,
+          "weighted_Dxy_A": 112,
+          "weighted_Dxy_B": 0,
+          "momenta": 132
+        },
+        {
+          "D_A": 7,
+          "D_B": 1,
+          "weighted_Dxy_A": -24,
+          "weighted_Dxy_B": -16,
+          "momenta": 72
+        },
+        {
+          "D_A": 7,
+          "D_B": 2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": -16,
+          "momenta": 24
+        },
+        {
+          "D_A": 8,
+          "D_B": -2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": 8,
+          "momenta": 12
+        },
+        {
+          "D_A": 8,
+          "D_B": -1,
+          "weighted_Dxy_A": 16,
+          "weighted_Dxy_B": 8,
+          "momenta": 48
+        },
+        {
+          "D_A": 8,
+          "D_B": 0,
+          "weighted_Dxy_A": 144,
+          "weighted_Dxy_B": 0,
+          "momenta": 87
+        },
+        {
+          "D_A": 8,
+          "D_B": 1,
+          "weighted_Dxy_A": 16,
+          "weighted_Dxy_B": -8,
+          "momenta": 48
+        },
+        {
+          "D_A": 8,
+          "D_B": 2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": -8,
+          "momenta": 12
+        },
+        {
+          "D_A": 9,
+          "D_B": -1,
+          "weighted_Dxy_A": 56,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 9,
+          "D_B": 0,
+          "weighted_Dxy_A": 140,
+          "weighted_Dxy_B": 0,
+          "momenta": 38
+        },
+        {
+          "D_A": 9,
+          "D_B": 1,
+          "weighted_Dxy_A": 56,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 10,
+          "D_B": -1,
+          "weighted_Dxy_A": 16,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 10,
+          "D_B": 0,
+          "weighted_Dxy_A": 96,
+          "weighted_Dxy_B": 0,
+          "momenta": 18
+        },
+        {
+          "D_A": 10,
+          "D_B": 1,
+          "weighted_Dxy_A": 16,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 11,
+          "D_B": 0,
+          "weighted_Dxy_A": 44,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 12,
+          "D_B": 0,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 0,
+          "momenta": 1
+        }
+      ],
+      "covariance_lower_outward_decimal": "-0.000199538736426636206809658665",
+      "covariance_upper_outward_decimal": "-0.000199538736426636206809658664",
+      "normalized_abs_covariance_upper_outward_decimal": "0.000345611229569028594632359460",
+      "strictly_nonzero_and_abs_normalized_below_two_thirds": true,
+      "interval_width_upper_outward_decimal": "0.000000000000000000000000000000000000000015485"
+    },
+    {
+      "L": 12,
+      "separation_axis": 2,
+      "translation_length": 6,
+      "exact_group_rows": [
+        {
+          "D_A": 1,
+          "D_B": 0,
+          "weighted_Dxy_A": 4,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 2,
+          "D_B": -1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": -4,
+          "momenta": 6
+        },
+        {
+          "D_A": 2,
+          "D_B": 0,
+          "weighted_Dxy_A": 24,
+          "weighted_Dxy_B": 0,
+          "momenta": 18
+        },
+        {
+          "D_A": 2,
+          "D_B": 1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 4,
+          "momenta": 6
+        },
+        {
+          "D_A": 3,
+          "D_B": -1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": -16,
+          "momenta": 24
+        },
+        {
+          "D_A": 3,
+          "D_B": 0,
+          "weighted_Dxy_A": 60,
+          "weighted_Dxy_B": 0,
+          "momenta": 38
+        },
+        {
+          "D_A": 3,
+          "D_B": 1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": 16,
+          "momenta": 24
+        },
+        {
+          "D_A": 4,
+          "D_B": -2,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": 0,
+          "momenta": 12
+        },
+        {
+          "D_A": 4,
+          "D_B": -1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": -16,
+          "momenta": 48
+        },
+        {
+          "D_A": 4,
+          "D_B": 0,
+          "weighted_Dxy_A": 104,
+          "weighted_Dxy_B": 0,
+          "momenta": 87
+        },
+        {
+          "D_A": 4,
+          "D_B": 1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": 16,
+          "momenta": 48
+        },
+        {
+          "D_A": 4,
+          "D_B": 2,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": 0,
+          "momenta": 12
+        },
+        {
+          "D_A": 5,
+          "D_B": -2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 5,
+          "D_B": -1,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": -16,
+          "momenta": 72
+        },
+        {
+          "D_A": 5,
+          "D_B": 0,
+          "weighted_Dxy_A": 104,
+          "weighted_Dxy_B": 0,
+          "momenta": 132
+        },
+        {
+          "D_A": 5,
+          "D_B": 1,
+          "weighted_Dxy_A": 0,
+          "weighted_Dxy_B": 16,
+          "momenta": 72
+        },
+        {
+          "D_A": 5,
+          "D_B": 2,
+          "weighted_Dxy_A": -16,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": -3,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 16,
+          "momenta": 8
+        },
+        {
+          "D_A": 6,
+          "D_B": -2,
+          "weighted_Dxy_A": -96,
+          "weighted_Dxy_B": 32,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": -1,
+          "weighted_Dxy_A": -112,
+          "weighted_Dxy_B": -8,
+          "momenta": 108
+        },
+        {
+          "D_A": 6,
+          "D_B": 0,
+          "weighted_Dxy_A": -48,
+          "weighted_Dxy_B": 0,
+          "momenta": 140
+        },
+        {
+          "D_A": 6,
+          "D_B": 1,
+          "weighted_Dxy_A": -112,
+          "weighted_Dxy_B": 8,
+          "momenta": 108
+        },
+        {
+          "D_A": 6,
+          "D_B": 2,
+          "weighted_Dxy_A": -96,
+          "weighted_Dxy_B": -32,
+          "momenta": 24
+        },
+        {
+          "D_A": 6,
+          "D_B": 3,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": -16,
+          "momenta": 8
+        },
+        {
+          "D_A": 7,
+          "D_B": -2,
+          "weighted_Dxy_A": -48,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 7,
+          "D_B": -1,
+          "weighted_Dxy_A": -64,
+          "weighted_Dxy_B": -16,
+          "momenta": 72
+        },
+        {
+          "D_A": 7,
+          "D_B": 0,
+          "weighted_Dxy_A": 56,
+          "weighted_Dxy_B": 0,
+          "momenta": 132
+        },
+        {
+          "D_A": 7,
+          "D_B": 1,
+          "weighted_Dxy_A": -64,
+          "weighted_Dxy_B": 16,
+          "momenta": 72
+        },
+        {
+          "D_A": 7,
+          "D_B": 2,
+          "weighted_Dxy_A": -48,
+          "weighted_Dxy_B": 0,
+          "momenta": 24
+        },
+        {
+          "D_A": 8,
+          "D_B": -2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 0,
+          "momenta": 12
+        },
+        {
+          "D_A": 8,
+          "D_B": -1,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": -16,
+          "momenta": 48
+        },
+        {
+          "D_A": 8,
+          "D_B": 0,
+          "weighted_Dxy_A": 80,
+          "weighted_Dxy_B": 0,
+          "momenta": 87
+        },
+        {
+          "D_A": 8,
+          "D_B": 1,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 16,
+          "momenta": 48
+        },
+        {
+          "D_A": 8,
+          "D_B": 2,
+          "weighted_Dxy_A": -32,
+          "weighted_Dxy_B": 0,
+          "momenta": 12
+        },
+        {
+          "D_A": 9,
+          "D_B": -1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": -16,
+          "momenta": 24
+        },
+        {
+          "D_A": 9,
+          "D_B": 0,
+          "weighted_Dxy_A": 116,
+          "weighted_Dxy_B": 0,
+          "momenta": 38
+        },
+        {
+          "D_A": 9,
+          "D_B": 1,
+          "weighted_Dxy_A": 32,
+          "weighted_Dxy_B": 16,
+          "momenta": 24
+        },
+        {
+          "D_A": 10,
+          "D_B": -1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": -4,
+          "momenta": 6
+        },
+        {
+          "D_A": 10,
+          "D_B": 0,
+          "weighted_Dxy_A": 88,
+          "weighted_Dxy_B": 0,
+          "momenta": 18
+        },
+        {
+          "D_A": 10,
+          "D_B": 1,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 4,
+          "momenta": 6
+        },
+        {
+          "D_A": 11,
+          "D_B": 0,
+          "weighted_Dxy_A": 44,
+          "weighted_Dxy_B": 0,
+          "momenta": 6
+        },
+        {
+          "D_A": 12,
+          "D_B": 0,
+          "weighted_Dxy_A": 8,
+          "weighted_Dxy_B": 0,
+          "momenta": 1
+        }
+      ],
+      "covariance_lower_outward_decimal": "0.000153392820216347236392343405",
+      "covariance_upper_outward_decimal": "0.000153392820216347236392343406",
+      "normalized_abs_covariance_upper_outward_decimal": "0.000265684158130991837796795936",
+      "strictly_nonzero_and_abs_normalized_below_two_thirds": true,
+      "interval_width_upper_outward_decimal": "0.000000000000000000000000000000000000000017581"
+    }
+  ],
+  "source_sha256": "4ec649497da93c54658e91f52a07cc837ee8c0b43dc062c2df13758bffbf4c59",
+  "completed_utc": "2026-09-25T00:33:47.918844+00:00"
+}

@@ -1,0 +1,34 @@
+{"name": "frozen_source_local_compensation.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "git_origin_local_compensation.md", "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"name": "frozen_source_local_pair_form.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "git_origin_local_pair_form.md", "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"name": "frozen_source_electric_magnetic.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "git_origin_electric_magnetic.md", "path": "docs/ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md", "verified": true}
+{"name": "frozen_source_agent_pointer.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "git_origin_agent_pointer.md", "path": "AGENTS.md", "verified": true}
+{"name": "frozen_source_workflow.md", "verified": true}
+{"commit": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8", "name": "git_origin_workflow.md", "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md", "verified": true}
+{"name": "frozen_source_readout_PRE.md", "verified": true}
+{"name": "prior_origin_readout_PRE.md", "verified": true}
+{"name": "frozen_source_readout_PRE_SEAL.json", "verified": true}
+{"name": "prior_origin_readout_PRE_SEAL.json", "verified": true}
+{"name": "frozen_source_readout_POST.md", "verified": true}
+{"name": "prior_origin_readout_POST.md", "verified": true}
+{"name": "frozen_source_readout_POST_SEAL.json", "verified": true}
+{"name": "prior_origin_readout_POST_SEAL.json", "verified": true}
+{"name": "frozen_source_NSY_1810.02428v1.pdf", "verified": true}
+{"name": "frozen_source_NSY_required_sections.txt", "verified": true}
+{"member_count": 29, "name": "unchanged_prior_PRE_SEAL.json", "seal_sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6", "verified": true}
+{"member_count": 26, "name": "unchanged_prior_POST_SEAL.json", "seal_sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e", "verified": true}
+{"name": "complete_stdout_result_correspondence", "verified": true}
+{"name": "successful_execution", "verified": true}
+{"name": "execution_binding_script_sha256", "verified": true}
+{"name": "execution_binding_stdout_sha256", "verified": true}
+{"name": "execution_binding_stderr_sha256", "verified": true}
+{"name": "execution_binding_result_sha256", "verified": true}
+{"name": "result_script_binding", "verified": true}
+{"name": "declared_command", "verified": true}
+{"name": "all_checks_passed", "verified": true}
+{"name": "source_freeze_completed", "verified": true}
+{"name": "workflow_still_unchanged", "verified": true}
+TOTAL 33 evidence checks verified

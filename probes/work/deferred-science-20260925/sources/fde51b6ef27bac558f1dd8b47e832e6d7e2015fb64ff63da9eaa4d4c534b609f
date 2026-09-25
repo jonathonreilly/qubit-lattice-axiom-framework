@@ -1,0 +1,114 @@
+{
+  "phase": "released-source POST",
+  "frozen_at_utc": "2026-09-24T19:32:30.262003+00:00",
+  "preserved_PRE_seal_sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6",
+  "preserved_PRE_member_count": 29,
+  "all_PRE_members_unchanged": true,
+  "released_author_files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/AUTHOR_CONTROL_SEAL.json",
+      "frozen_path": "post_sources/author/AUTHOR_CONTROL_SEAL.json",
+      "sha256": "943b8ae9bf740cd2560bd6b77daf91189e8efee33fd857449378fce62ad2d1a2",
+      "bytes": 1593,
+      "lines": 20,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL.stderr.txt",
+      "frozen_path": "post_sources/author/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL.stdout.txt",
+      "frozen_path": "post_sources/author/CONTROL.stdout.txt",
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db",
+      "bytes": 46881,
+      "lines": 2086,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/CONTROL_EXECUTION.json",
+      "frozen_path": "post_sources/author/CONTROL_EXECUTION.json",
+      "sha256": "e5d17f5ad7b80981973733f276288c004a0230b06a56fc6602f9bd558f933e88",
+      "bytes": 111,
+      "lines": 5,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL.stderr.txt",
+      "frozen_path": "post_sources/author/NARROW_CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL.stdout.txt",
+      "frozen_path": "post_sources/author/NARROW_CONTROL.stdout.txt",
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3",
+      "bytes": 4487,
+      "lines": 152,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_CONTROL_EXECUTION.json",
+      "frozen_path": "post_sources/author/NARROW_CONTROL_EXECUTION.json",
+      "sha256": "f4376fb7844d02d15b1c436b285ae5c497708339afa391053257009a87d29d81",
+      "bytes": 112,
+      "lines": 5,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/NARROW_PACKET_RESULTS.json",
+      "frozen_path": "post_sources/author/NARROW_PACKET_RESULTS.json",
+      "sha256": "37a985d72798547907587e5387612497cf839e29565cceaaec9f7ee5be6cefa3",
+      "bytes": 4487,
+      "lines": 152,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/READOUT_CONTROL_RESULTS.json",
+      "frozen_path": "post_sources/author/READOUT_CONTROL_RESULTS.json",
+      "sha256": "8fafbfe150b2049d52c2a0b855f1616abeaf6dd2743e3d098c43f7ecb448a9db",
+      "bytes": 46881,
+      "lines": 2086,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/SOURCE_PINS.json",
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "sha256": "b9b16f37c7236ec8f9886bcf448805be9b744f2e61a5fba14cf5ef6a64e63a23",
+      "bytes": 1735,
+      "lines": 35,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "frozen_path": "post_sources/author/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027,
+      "lines": 211,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/narrow_packet_control.py",
+      "frozen_path": "post_sources/author/narrow_packet_control.py",
+      "sha256": "9331da643e2b6be3a80abbcb43cd59e5fb8684417af4697e324aa37a5bff3b0a",
+      "bytes": 2752,
+      "lines": 50,
+      "role": "Released author evidence; not independent numerical reproduction."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/record_photon_readout_controls.py",
+      "frozen_path": "post_sources/author/record_photon_readout_controls.py",
+      "sha256": "0ed685625ec78c571229885c5fbca8e3e538f2ca5f7516fccaf8fa0a50dab4b0",
+      "bytes": 6331,
+      "lines": 138,
+      "role": "Released author evidence; not independent numerical reproduction."
+    }
+  ],
+  "scope": "Read-only source/evidence comparison; no author control execution, publication edit, audit or delegation."
+}

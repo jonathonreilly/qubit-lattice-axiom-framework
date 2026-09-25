@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-24T23:57:54.727382+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/fourier_and_correspondence.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 0.49569862498901784,
+  "exit_code": 0,
+  "script_sha256": "d2f496718609d245f9c564e767b9b49cb8a6a1778b869feef86da1b9f05b20ef",
+  "stdout_bytes": 4685,
+  "stdout_sha256": "cf1b55508d90983653512e0b2c22dba555a9fcf1ebaca7994d9b497f3be58af9",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

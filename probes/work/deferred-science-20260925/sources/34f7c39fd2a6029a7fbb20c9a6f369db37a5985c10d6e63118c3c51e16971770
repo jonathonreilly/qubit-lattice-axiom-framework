@@ -1,0 +1,15 @@
+{
+  "seals": {
+    "PRE_SEAL.json": {
+      "sha256": "6e08c4d893c9f40eabdb0b296c37bf1b850d48b88a2ec5dd10e2f939e866dce3",
+      "members": 11
+    },
+    "POST_SEAL.json": {
+      "sha256": "e7121548b9b0372773a21dd88db53684327ed6a8f88b4a8e99c08919b7cd09fd",
+      "members": 16
+    }
+  },
+  "origin_pins_verified": 9,
+  "POST_sha256": "9ed04ef0513fe997fc92bee72fd6a07919bf8db73bcfd684085f6a8a8ca63d2c",
+  "review": "Complete POST, binding code and all four stored decimal comparisons read. Same conditional rate/probability limits and SI meaning. No A/B energy scope."
+}

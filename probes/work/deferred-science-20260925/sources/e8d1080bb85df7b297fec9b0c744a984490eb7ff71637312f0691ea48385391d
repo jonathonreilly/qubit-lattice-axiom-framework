@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T09:56:20.251143+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree_full_generator_control.py"
+  ],
+  "source_sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986",
+  "recorder_sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670",
+  "elapsed_seconds": 0.5478522919584066,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22",
+      "bytes": 932
+    },
+    "stderr.txt": {
+      "path": "tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

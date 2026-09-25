@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-24T17:23:37.425742+00:00",
+  "elapsed_seconds": 0.07774512493051589,
+  "exit_code": 0,
+  "source_sha256": "c839ffaed8da4e2b8830807695e16b4aac2ec8944139288eec7df1fe2bf7c5fc",
+  "stdout_sha256": "1f88a7c032148657d542e29f0e7147e7bda881b7c3cab6a094422e3f3cd6d2be",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-independent/independent_balance_controls.py"
+  ]
+}

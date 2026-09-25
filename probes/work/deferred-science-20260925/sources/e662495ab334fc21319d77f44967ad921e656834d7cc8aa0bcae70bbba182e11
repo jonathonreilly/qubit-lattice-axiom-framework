@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-24T23:56:02.813915+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/primitive_power.py",
+    "16",
+    "L16"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 2.105340708978474,
+  "exit_code": 0,
+  "script_sha256": "4fb7c4471d0318ea9398b2ffa1ef9563c83df88883983beb2ec8b3b851c60f92",
+  "stdout_bytes": 23423,
+  "stdout_sha256": "302e9f8f4bc819940280389431d9b18c369e448f95c696653c0f21cca03e4dc3",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "Genuine read-only POST binding/check execution. Only this outer capture writes output receipts; no author program execution.",
+  "started_utc": "2026-09-25T05:26:42.806465+00:00",
+  "finished_utc": "2026-09-25T05:26:43.044821+00:00",
+  "elapsed_seconds": 0.23776266700588167,
+  "returncode": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-independent/verify_post_bindings.py"
+  ],
+  "script_sha256": "7d75e77a7da9574f467de58be2768722509bf51feba76fb18b01d03d57f2bda5",
+  "stdout": {
+    "path": "POST_EVIDENCE_VERIFICATION.json",
+    "sha256": "99c39da7450d6f2d2633f0050eafd260b90a89e306a1a0f08ef7153c7974b5ed",
+    "bytes": 15638
+  },
+  "stderr": {
+    "path": "POST_EVIDENCE_VERIFICATION.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+}

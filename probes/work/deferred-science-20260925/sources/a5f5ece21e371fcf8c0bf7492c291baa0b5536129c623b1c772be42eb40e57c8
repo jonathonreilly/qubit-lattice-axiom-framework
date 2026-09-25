@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verify_correspondence.py", line 301, in <module>
+    main(parser.parse_args().seal)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verify_correspondence.py", line 150, in main
+    base_wrapper = literal(builder, 'wrapper')
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verify_correspondence.py", line 41, in literal
+    assert len(nodes) == 1, name
+           ^^^^^^^^^^^^^^^
+AssertionError: wrapper

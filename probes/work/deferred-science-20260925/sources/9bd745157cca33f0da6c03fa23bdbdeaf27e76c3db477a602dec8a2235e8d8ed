@@ -1,0 +1,22 @@
+{
+  "purpose": "Independent deterministic source/payload comparisons and evidence checks only",
+  "commands": [
+    {
+      "command": "python3 publication_bind_part_a.py > PUBLICATION_BINDING_STDOUT.json 2> PUBLICATION_BINDING_STDERR.txt",
+      "exit_code": 0,
+      "result_timestamp_utc": "2026-09-25T01:04:39.123149+00:00",
+      "stdout_scope": "Part A comparison summaries and shared execution metadata; no combined stdout body"
+    },
+    {
+      "command": "python3 publication_metadata_checks.py > PUBLICATION_METADATA_CHECKS_STDOUT.json 2> PUBLICATION_METADATA_CHECKS_STDERR.txt",
+      "exit_code": 0,
+      "result_timestamp_utc": "2026-09-25T01:08:41.108856+00:00",
+      "stdout_scope": "Declared input identities, cache format and explicit raw-fingerprint limitation"
+    }
+  ],
+  "author_programs_executed_or_imported": [],
+  "primary_reruns": 0,
+  "unrecorded_timing_policy": "No wall duration is invented for these bookkeeping commands; the actual result timestamps are recorded.",
+  "scope_failure_record": "PUBLICATION_SCOPE_INCIDENT.json",
+  "no_external_mutations": true
+}

@@ -1,0 +1,33 @@
+{
+  "verified_utc": "2026-09-24T23:40:16.919866+00:00",
+  "POST_seal_sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc",
+  "members_verified": 58,
+  "live_origins_verified": 38,
+  "snapshots_verified": 33,
+  "read_scope": [
+    "Complete POST proof and limitations",
+    "Complete new verifier code, historical proof/code diff and failure log",
+    "All 20 new Decimal arithmetic rows, 11 empty-band cases, five stored PRE/root comparisons and primary normalization arithmetic",
+    "PRE proof/code/results previously fully read and preserved"
+  ],
+  "judgment": "No material discrepancy in scoped root26/27 conditional claims; released root28 comparison supports no empirical identification. All three editorial/data-label repairs already applied only to current publication; author seals preserved. Stronger independent PRE mathematics remains attributed separately.",
+  "limitations": [
+    "No independent author-runner execution",
+    "No full charged-energy result checked in this scope",
+    "No finite-g, changing-volume or laboratory-count error certificate",
+    "No applied audit verdict"
+  ],
+  "root_bookkeeping_events": [
+    "First combined output exceeded response budget; specific necessary code and all new scientific rows subsequently read completely.",
+    "Read command named nonexistent post_check.py; correct post_verify_and_arithmetic.py read completely.",
+    "First source-pin verification used wrong sources key and stopped before verification; corrected files schema verified110 pins with exactly three intentionally updated current publication evidence mismatches. Old publication generation preserved."
+  ],
+  "candidate_files_verified": {
+    "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+    "scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+  }
+}

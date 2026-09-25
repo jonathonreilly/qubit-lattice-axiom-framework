@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/post_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent",
+  "started_utc": "2026-09-24T21:30:03.565353+00:00",
+  "completed_utc": "2026-09-24T21:30:03.618287+00:00",
+  "elapsed_seconds": 0.05215324996970594,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "script_sha256": "4302d6bb34fb05ce660ab5325c054426f02807f0a61ec6e28ee6253b89c5f064",
+  "stdout_sha256": "336f53f38c3f0e722af4aa6b0bef153be4c07510548a892344aa3c2f0d94004d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "db0339234e5608e7b31575488f5ab765aaa736ea94af6fedf25186640462dc0b",
+  "paths_sha256": "8a512e39fce0e05e7fb70424cc687c8386c449955b9130bd89b031eac0cb1029"
+}

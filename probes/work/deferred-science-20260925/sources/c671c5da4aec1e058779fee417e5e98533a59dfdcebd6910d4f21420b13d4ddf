@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-24T12:30:37.854259+00:00",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/UNSCALED_MEAN_PERSONAL_DERIVATION.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/UNSCALED_MEAN_PERSONAL_DERIVATION.md",
+      "sha256": "d03bf3b34e120d7c85dd7636de9317c2c44b59a2da70aa43d4499c2b698d92ae",
+      "bytes": 17953,
+      "lines": 353
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/AUTHOR_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/AUTHOR_SEAL.json",
+      "sha256": "c534b757eb1ce28601ec6a5c93d6ba1de3aa03ea6e7bac4e9ee94b4c1413d4bb",
+      "bytes": 1077,
+      "lines": 16
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/second_band_control.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/second_band_control.py",
+      "sha256": "ce7aba131edb6ac6edf8c87dd46a3b2f43ee86fc0d1a5a25cad2c1c359cc6711",
+      "bytes": 2072,
+      "lines": 27
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/SECOND_BAND_CONTROL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/SECOND_BAND_CONTROL.json",
+      "sha256": "29d7901dcc08acc615654f5a5641293d1bef704d0c6d6ba59ca2ff15ac22b903",
+      "bytes": 2027,
+      "lines": 79
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/MESOSCOPIC_ENERGY_LAYER_PERSONAL.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/MESOSCOPIC_ENERGY_LAYER_PERSONAL.md",
+      "sha256": "27d130bb494f1a7dde240c88e00f669961a07539b59890274655afda38e096d7",
+      "bytes": 5071,
+      "lines": 98
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/MESOSCOPIC_SUPPLEMENT_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/MESOSCOPIC_SUPPLEMENT_SEAL.json",
+      "sha256": "1b937e6e4a79f93a511d479e9bdbf689a916da576e3553ee2be005a7db147cff",
+      "bytes": 359,
+      "lines": 8
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/SECOND_BAND_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/SECOND_BAND_CONTROL.stderr",
+      "sha256": "5aaf048812e0af6ef06e16f25dc186e79bdf225cb733079399d5900c64593440",
+      "bytes": 981,
+      "lines": 4
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-spin-mean-personal/SECOND_BAND_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/unscaled-mean-independent/POST_sources/SECOND_BAND_CONTROL.stdout",
+      "sha256": "7b6fdf742f53c323e78f00334ec08ca80e38d3667b90f4484a996fe676d9bf89",
+      "bytes": 1057,
+      "lines": 4
+    }
+  ]
+}

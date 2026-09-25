@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-25T11:06:24.508799+00:00",
+  "elapsed_seconds": 2.5570055411662906,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/compare_read_only.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent",
+  "program_sha256": "387d3c4bde61db0a6d791b4a23620d4a8757a4ee5ad339a993d85a9ebcfa1918",
+  "stdout_sha256": "1be9524b6ca3b0b4ada376c6ffd1bb48e7f65f4fd2e0c303a957cddd915508be",
+  "stdout_bytes": 44247,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "scope": "Only new read-only comparator executed; no author code or historical writer."
+}

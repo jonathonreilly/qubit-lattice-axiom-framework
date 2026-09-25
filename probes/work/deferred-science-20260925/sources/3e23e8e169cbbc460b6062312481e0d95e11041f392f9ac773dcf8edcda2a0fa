@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-09-24T23:23:43.770231+00:00",
+  "read_only_PDF_operation": true,
+  "results": [
+    {
+      "argv": [
+        "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdfinfo",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/brouri-quant-ph-0007032v1.pdf"
+      ],
+      "exit_code": 0,
+      "stdout": "Producer:        GPL Ghostscript GIT PRERELEASE 9.22\nCreationDate:    Mon May 28 02:37:23 2018 EDT\nModDate:         Mon May 28 02:37:23 2018 EDT\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           8\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       164208 bytes\nOptimized:       no\nPDF version:     1.4\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+        "-r",
+        "105",
+        "-png",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_sources/brouri-quant-ph-0007032v1.pdf",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_pdf_render/brouri"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    }
+  ]
+}

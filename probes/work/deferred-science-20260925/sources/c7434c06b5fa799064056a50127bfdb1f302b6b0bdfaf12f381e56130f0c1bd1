@@ -1,0 +1,113 @@
+{
+  "implementation": "Independent charge-hop and physical-field dictionaries; no imported repo builders or runners.",
+  "edge_order": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "tree_edge_indices": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    9,
+    11
+  ],
+  "chord_edge_indices": [
+    0,
+    5,
+    7,
+    8,
+    10
+  ],
+  "reduced_tree_incidence_determinant": 1,
+  "charge_grade_dimensions": [
+    36,
+    96,
+    36
+  ],
+  "bright_dark_dimensions": [
+    72,
+    24
+  ],
+  "dark_block_nonzero_Laurent_entries": 0,
+  "witness_Gram_determinant": 4688333314034185078308864,
+  "flat_Q_rank": 23,
+  "flat_dark_constant_vector_annihilated": true,
+  "physical_mark_coefficients": {
+    "resolved_plus": {
+      "b": 2,
+      "r": 4,
+      "G_R_norm_squared": 48,
+      "Gamma_G_R_norm_squared": 96,
+      "B_support": 2,
+      "R_support": 1
+    },
+    "resolved_minus": {
+      "b": 2,
+      "r": 2,
+      "G_R_norm_squared": 24,
+      "Gamma_G_R_norm_squared": 48,
+      "B_support": 2,
+      "R_support": 2
+    },
+    "coherent": {
+      "b": 4,
+      "r": 6,
+      "G_R_norm_squared": 72,
+      "Gamma_G_R_norm_squared": 144,
+      "B_support": 4,
+      "R_support": 3
+    }
+  },
+  "wrong_relative_sign_dark_diagonal": [
+    6
+  ],
+  "source_sha256": "54f61f0f2997e3c74fe881236b6d18662d2fa49688b75b1187ae995831fffb1b"
+}

@@ -1,0 +1,10 @@
+{
+  "verified_utc": "2026-09-24T13:26:23.892075+00:00",
+  "pre_seal_sha256": "7853c846d329a7787680f88b2a62256029a5d42158021d4b6c577315c923358a",
+  "pre_members_unchanged": 5,
+  "released_original_and_snapshot_pairs_matching_pins": 15,
+  "original_parent_sources_unchanged": 2,
+  "own_verifier_hash_matches_execution_source": true,
+  "own_complete_log_json_equals_complete_result_json": true,
+  "scope": "File-identity validation only; analytic and computational conclusions are in POST.md."
+}

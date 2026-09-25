@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-24T16:39:13.660120+00:00",
+  "files_sha256": {
+    "full_ensemble_energy_controls.py": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7",
+    "FULL_ENSEMBLE_CONTROL_RESULTS.json": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+    "CONTROL.stdout.txt": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+    "CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONTROL_EXECUTION.json": "fa76d60015c0827e61cd7033f5cd926804050cb3267b4c156e1ca454314501aa",
+    "CONTROL_SCOPE.md": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab"
+  },
+  "independent_PRE_read": false,
+  "scope": "Root bounded controls only; new actual source-algebra checks and a distinct evolving-input cascade toy, not independent or a cube joint-limit simulation."
+}

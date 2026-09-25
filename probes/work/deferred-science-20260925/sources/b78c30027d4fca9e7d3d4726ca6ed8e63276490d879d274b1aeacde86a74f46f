@@ -1,0 +1,32 @@
+{
+  "kind": "bounded_final_publication_source_comparison",
+  "sealed_at_utc": "2026-09-24T11:34:56.113294+00:00",
+  "comparison_file": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-energy-independent/PUBLICATION_COMPARISON.md",
+  "comparison_sha256": "f087f8ba2b5297b96569494fba90ed35b02dbc83ae7053b1ec9ea3268b41fb98",
+  "publication_root": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/fixed-time-energy-publication",
+  "reviewed_publication_hashes": {
+    "docs/FIXED_TIME_MICROSCOPIC_CUBE_BIRTH_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-24.md": "89be54537211698ae1b2036475e348d1905e75bb9767b6e47da99aeaff9ebaf3",
+    "scripts/fixed_time_microscopic_cube_birth_energy_2026_09_24.py": "62bbf596ac7db4455fc4e6ddea393bd9d105a4625e24d4b34433db5dec66912f"
+  },
+  "preserved_evidence_hashes": {
+    "PRE.md": "1681b7333d6244bcad00b8b287b6fd0e621c466a0d1b61d0c53295edd1576e58",
+    "PRE_SEAL.json": "ab8add60721daeb55da75a082dd6c94e958ab9747c8543f9f7cd40a9be19b288",
+    "POST.md": "31728208ff3c1fe813f418c891d0592803de33a4a87c52ad09d7f397612a7a11",
+    "POST_SEAL.json": "f4e0b2224e1156bd0df53435a67f5ddc1347f630c25f0ae1356aca7747276e18"
+  },
+  "unchanged_ast_functions": [
+    "complete_spin_one",
+    "jump_matrix",
+    "normcols",
+    "riesz_action",
+    "small_controls",
+    "canonical_preparation"
+  ],
+  "material_discrepancies": [],
+  "disposition": "Reviewed publication scope and source adaptation agree with preserved PRE/POST; no material source discrepancy found.",
+  "runtime_result_reviewed": false,
+  "runtime_success_claimed": false,
+  "cache_validity_reviewed": false,
+  "new_independent_derivation_claimed": false,
+  "formal_audit_status_applied": false
+}

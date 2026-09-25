@@ -1,0 +1,145 @@
+{
+  "source_sha256": "f6abcdf590c71b905f4d7d486cde89ceb86f80fbc24098cd8e8f0c3221f69273",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "numpy": "2.4.4",
+  "phase_witness": {
+    "non_eigenvector_derivative": 0.9105158601847634,
+    "formula_derivative": 0.9105158601847636,
+    "phase_witness_lower": 72.46845556363635,
+    "selected_fisher": 290.9792878719998,
+    "noisy_rows": [
+      {
+        "noise": 2e-05,
+        "loss": 0,
+        "selected_error": 4.159999999999492e-07,
+        "selected_probability": 0.012999999999999998,
+        "phase_witness_lower": 72.451108279595,
+        "selected_fisher": 290.9711404705622
+      },
+      {
+        "noise": 0.0007,
+        "loss": 0.0003,
+        "selected_error": 1.8455632000000038e-05,
+        "selected_probability": 0.012996099999999998,
+        "phase_witness_lower": 71.70149807090971,
+        "selected_fisher": 290.606942746949
+      }
+    ]
+  },
+  "frequency_support": {
+    "exact_energy_labels": "a+b*sqrt(2)",
+    "system_modes": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "resource_modes": [
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "input_modes": [
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "maximum_forbidden_output_entry": 0.0,
+    "selected_high_population": 0.011348596093335056,
+    "selected_error": 0.40540080728486166,
+    "witness_error_lower": 0.042,
+    "pinched_target_error": 0.04200000000000001,
+    "resource_coherence_bandwidth": 1.0,
+    "resource_spectral_diameter": 5.414213562373095,
+    "initial_input_frequency_omission_rejected": true,
+    "bandwidth_sufficiency_rejected_by_missing_sqrt2_mode": true
+  },
+  "restricted_swap": [
+    {
+      "epsilon": 0.25,
+      "selected_probability": 0.0078125,
+      "selected_error": 0.0016914558667664825,
+      "projection_formula_error": 0.0016914558667664816,
+      "error_over_epsilon_cubed": 0.10825317547305488,
+      "global_conservation_residual": 0.0,
+      "apparatus_fisher": 603.2589792060489,
+      "scaled_fisher": 2.3564803875236287,
+      "target_scaled_fisher": 2.25,
+      "ground_relative_mean": 0.42085597826086957,
+      "target_mean_limit": 0.375,
+      "apparatus_variance": 173.3089536151273,
+      "scaled_spectral_diameter": 1.63671875,
+      "scaled_coherence_bandwidth": 1.6328125,
+      "target_range_coefficient": 1.5
+    },
+    {
+      "epsilon": 0.125,
+      "selected_probability": 0.0019531249999999998,
+      "selected_error": 0.00010571599167290508,
+      "projection_formula_error": 0.0001057159916729051,
+      "error_over_epsilon_cubed": 0.0541265877365274,
+      "global_conservation_residual": 0.0,
+      "apparatus_fisher": 9316.41296489886,
+      "scaled_fisher": 2.2745148840085108,
+      "target_scaled_fisher": 2.25,
+      "ground_relative_mean": 0.38516837054116787,
+      "target_mean_limit": 0.375,
+      "apparatus_variance": 2404.912479467704,
+      "scaled_spectral_diameter": 1.531982421875,
+      "scaled_coherence_bandwidth": 1.53173828125,
+      "target_range_coefficient": 1.5
+    },
+    {
+      "epsilon": 0.0625,
+      "selected_probability": 0.0004882812500000001,
+      "selected_error": 6.607249479556571e-06,
+      "projection_formula_error": 6.607249479556569e-06,
+      "error_over_epsilon_cubed": 0.027063293868263713,
+      "global_conservation_residual": 0.0,
+      "apparatus_fisher": 147844.66744348302,
+      "scaled_fisher": 2.2559305945355685,
+      "target_scaled_fisher": 2.25,
+      "ground_relative_mean": 0.37746629232838796,
+      "target_mean_limit": 0.375,
+      "apparatus_variance": 37252.825062245705,
+      "scaled_spectral_diameter": 1.5078582763671875,
+      "scaled_coherence_bandwidth": 1.507843017578125,
+      "target_range_coefficient": 1.5
+    }
+  ],
+  "scope": "Independent finite algebra/implementation controls after source release; no author/campaign imports, no microscopic matrix reproduction or numerical proof of a uniform limit."
+}

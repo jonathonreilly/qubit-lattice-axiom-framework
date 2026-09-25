@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent/post_evidence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent",
+  "started_utc": "2026-09-24T15:52:34.059035+00:00",
+  "finished_utc": "2026-09-24T15:52:34.103523+00:00",
+  "elapsed_seconds": 0.04425541707314551,
+  "returncode": 0,
+  "files": {
+    "post_evidence_check.py": {
+      "sha256": "c40bd253bd943c219c99369923519312a950379fbf89f89f89f65f14664ddeb5",
+      "bytes": 6665
+    },
+    "POST_EVIDENCE_CHECK.json": {
+      "sha256": "9b75753954ba6fedbd987421b62c9118dd7a2bf3dee0ca1bed8eed9f94b111ea",
+      "bytes": 6228
+    },
+    "POST_CHECK.stdout.txt": {
+      "sha256": "9b75753954ba6fedbd987421b62c9118dd7a2bf3dee0ca1bed8eed9f94b111ea",
+      "bytes": 6228
+    },
+    "POST_CHECK.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

@@ -1,0 +1,1 @@
+The EXECUTION.json field named started_utc was sampled immediately after the completed subprocess, at receipt creation. It is a completion/recording timestamp, not an exact start timestamp. elapsed_seconds is the independently measured wrapper duration. The source and original receipt remain sealed unchanged; this label qualification does not change any arithmetic or science.

@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-09-25T03:49:45.866294+00:00",
+  "source_sha256": "c8f0579ef259bc0df33cfad78e2978a60bbc55199b64a35ca8ad0c0b5f1ea1fd",
+  "elapsed_seconds": 0.16587962512858212,
+  "exit_code": 0,
+  "stdout_sha256": "3b7d3b25baaf424a68d282af6353d2b06377fee8de814b8e13f7859333dae11e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Own genuinely read-only source, cache-fingerprint, full payload and text correspondence; no scientific runner execution."
+}

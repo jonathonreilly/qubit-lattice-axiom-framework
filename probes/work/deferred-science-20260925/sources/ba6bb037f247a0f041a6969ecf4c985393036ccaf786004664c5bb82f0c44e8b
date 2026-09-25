@@ -1,0 +1,197 @@
+{
+  "sealed_at_utc": "2026-09-25T08:40:16.535606+00:00",
+  "phase": "Released-source independent POST43 correspondence",
+  "report": {
+    "path": "POST.md",
+    "sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690",
+    "bytes": 19506
+  },
+  "source_pins": {
+    "path": "POST_SOURCE_PINS.json",
+    "sha256": "965337cd2ab6a8b4ff8ffea97a660a3e4608ee7e9eb229d48b537b0da4efa6a0",
+    "bytes": 13337
+  },
+  "prior_PRE_seal_sha256": "b329a26433813d8c39038c47d5ff37b3d488c851edbc2c3e296b0359da1ef823",
+  "author_seal_sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+  "member_count": 35,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690",
+      "bytes": 19506
+    },
+    {
+      "path": "POST_FINAL_BINDINGS.json",
+      "sha256": "4a0bdef999315ef7422784dec7cab0481feaf09ee2762654ca375ddb166c9ac5",
+      "bytes": 3908
+    },
+    {
+      "path": "POST_PRESERVATION_AFTER.json",
+      "sha256": "0afdee20185bd7e62df1dcde8c44efcd7846103e9a8028f01daf58de1c3231b4",
+      "bytes": 18614
+    },
+    {
+      "path": "POST_PRESERVATION_BEFORE.json",
+      "sha256": "db56a79c59b224897fb48d4de47e15aac42b382c81955e59407c3ae72822ee53",
+      "bytes": 18584
+    },
+    {
+      "path": "POST_PROCESS_LOG.md",
+      "sha256": "a1e058c1ad0957b1d560df234957690a0f23aa3af3ce73ed4334019f7e091cdd",
+      "bytes": 3439
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "965337cd2ab6a8b4ff8ffea97a660a3e4608ee7e9eb229d48b537b0da4efa6a0",
+      "bytes": 13337
+    },
+    {
+      "path": "post_compare_read_only.py",
+      "sha256": "adaea777dacb73c7e8f67a8b32cf583cf9c436c6035ab5e15eb26128b781a52b",
+      "bytes": 13868
+    },
+    {
+      "path": "post_comparison.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_comparison.console.txt",
+      "sha256": "5ac52bcd4a15c883b395bdfb70982463c20daa9dd93e0da430e5db34d8077965",
+      "bytes": 15765
+    },
+    {
+      "path": "post_comparison.execution.json",
+      "sha256": "faeaec9ad3b07c51f38f81977f75af0671d578220e88acd07c90793ff8234795",
+      "bytes": 879
+    },
+    {
+      "path": "post_comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_comparison.stdout.txt",
+      "sha256": "b7fc89d6a0c1cbf9d8c7ac641e26a92df07ed78e8a95c5b057f2ba0133548437",
+      "bytes": 14886
+    },
+    {
+      "path": "post_freeze.execution.json",
+      "sha256": "ca1e5bcfea9fd882f4a7203552b0aa1d2b0a60e0d1538c0711763f43b91a0334",
+      "bytes": 860
+    },
+    {
+      "path": "post_freeze.py",
+      "sha256": "35c9135c9f6853facbc6c47fb8f49a857672ef68d26c8e33c670e0ab80c41bb3",
+      "bytes": 3569
+    },
+    {
+      "path": "post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_freeze.stdout.txt",
+      "sha256": "965337cd2ab6a8b4ff8ffea97a660a3e4608ee7e9eb229d48b537b0da4efa6a0",
+      "bytes": 13337
+    },
+    {
+      "path": "post_history/POST_before_math_typesetting.md",
+      "sha256": "9348fc6543d72e7cfbb680f0d252b9d0382bfdef7034e9b6cc243064c78b2981",
+      "bytes": 19491
+    },
+    {
+      "path": "post_record.py",
+      "sha256": "c7e8a28d4135e7ab0a42cb4f095f65f283ed7724f72653a43d2faf48552d2f46",
+      "bytes": 1296
+    },
+    {
+      "path": "post_seal.py",
+      "sha256": "4e5d18ae586dfbe741d6b2412660c8796299b998cc7d37aa4dd5e405d04f922f",
+      "bytes": 7549
+    },
+    {
+      "path": "post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+      "bytes": 2211
+    },
+    {
+      "path": "post_sources/author/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "bytes": 15036
+    },
+    {
+      "path": "post_sources/author/ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+      "bytes": 1235
+    },
+    {
+      "path": "post_sources/author/SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+      "bytes": 3152
+    },
+    {
+      "path": "post_sources/author/WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "bytes": 3923
+    },
+    {
+      "path": "post_sources/author/attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+      "bytes": 223
+    },
+    {
+      "path": "post_sources/author/attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706
+    },
+    {
+      "path": "post_sources/author/attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164
+    },
+    {
+      "path": "post_sources/author/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/author/attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706
+    },
+    {
+      "path": "post_sources/author/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    },
+    {
+      "path": "post_sources/author/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164
+    },
+    {
+      "path": "post_typeset.py",
+      "sha256": "f945cfc4a27055f12edf853cd55ff35fdfb515bf5c636e7e728e81c0252aabe1",
+      "bytes": 1603
+    },
+    {
+      "path": "post_typesetting.execution.json",
+      "sha256": "7593cde63e0f903c1a2e47455281c182077ef7ebc3d898ed6c2cc2a315cf6110",
+      "bytes": 870
+    },
+    {
+      "path": "post_typesetting.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_typesetting.stdout.txt",
+      "sha256": "9b547beba2e287b78a1cd54591ec95c9a6d28f71dbfa7e31eb99144bb07f1f9a",
+      "bytes": 364
+    }
+  ],
+  "exclusion": "All original PRE files; POST seal and later receipt cannot self-hash",
+  "immutable_new_files": "New POST members and seal set to mode 0444; original files never chmodded",
+  "stop_condition": "Report sealed hashes and stop; no audit or publication action"
+}

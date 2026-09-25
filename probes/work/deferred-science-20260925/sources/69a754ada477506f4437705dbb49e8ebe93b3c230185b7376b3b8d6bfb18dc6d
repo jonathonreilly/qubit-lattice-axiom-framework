@@ -1,0 +1,92 @@
+{
+  "sealed_utc": "2026-09-25T01:50:12.478999+00:00",
+  "phase": "Personal author candidate before independent reconstruction",
+  "files": {
+    "CONTROL.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "CONTROL.stdout": {
+      "bytes": 1580,
+      "sha256": "f90f83ec18904ea405122cf9a6715edb40ca58794256936f7616ef08a4ea3306"
+    },
+    "EXECUTION.json": {
+      "bytes": 307,
+      "sha256": "f746bfbdabe2ee2f9adabd65045b86dad45dfa140a677cea76c7488ef87ee120"
+    },
+    "LOCAL.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "LOCAL.stdout": {
+      "bytes": 4118,
+      "sha256": "6e18e044028b762d1f482faaabf993d345da23ada9ea4d422238117f6d12279b"
+    },
+    "LOCAL_EXECUTION.json": {
+      "bytes": 308,
+      "sha256": "01b8cb738e90956476bc58fb37165fdaad652d11a858719ed5d178fece9b18f0"
+    },
+    "LOCAL_ROW_CERTIFICATE.json": {
+      "bytes": 27773,
+      "sha256": "89a6f07c1ec4008a1288b60a1ffa50dfa4432d016ec254c8b72d8b5e6eaaaae1"
+    },
+    "NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md": {
+      "bytes": 19448,
+      "sha256": "e177784652f4c6fafb344ddc72ac20144ebabb9b063e009a1a8618529f8ef922"
+    },
+    "NATIVE_PAIR_RESULTS.json": {
+      "bytes": 715583,
+      "sha256": "5fdae94953701d76459412d818f8086089279f84cc4d29f76299c57f3848476f"
+    },
+    "POLYNOMIAL.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "POLYNOMIAL.stdout": {
+      "bytes": 8216,
+      "sha256": "1ed171b0d5f5c1abffb5d18db130798d48e0616a22254adc1873fe19127df2f8"
+    },
+    "POLYNOMIAL_EXECUTION.json": {
+      "bytes": 308,
+      "sha256": "4a4699c2220d070a58052ba7b37e219bc496521131397223843e8523ebd674c3"
+    },
+    "ROOT_REVIEW.json": {
+      "bytes": 1079,
+      "sha256": "f13a9366e8aaf4dca3a7777bf8744033031183072b550ba28eca5b34b9e29185"
+    },
+    "ROOT_VERIFICATION.json": {
+      "bytes": 3405,
+      "sha256": "2cf64c35f52daca3cfb4aa9acb472f3b8597a94f6d0ae32e73b7214399e06e62"
+    },
+    "ROW_POLYNOMIAL_CERTIFICATE.json": {
+      "bytes": 8216,
+      "sha256": "1ed171b0d5f5c1abffb5d18db130798d48e0616a22254adc1873fe19127df2f8"
+    },
+    "SOURCE_PINS.json": {
+      "bytes": 5137,
+      "sha256": "e9ae312e06616b7c0bab953545c2eaa8b01ee6cb449fc27aa3aec6292f3d3d51"
+    },
+    "WORKING_DERIVATION.md": {
+      "bytes": 6343,
+      "sha256": "ed88cfbdca0b0aab7893ee586082a29ce151853f21e9aa7ff755f657c3285134"
+    },
+    "native_pair_controls.py": {
+      "bytes": 10799,
+      "sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa"
+    },
+    "native_pair_local_row_certificate.py": {
+      "bytes": 3767,
+      "sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d"
+    },
+    "native_pair_row_polynomial_certificate.py": {
+      "bytes": 4024,
+      "sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630"
+    },
+    "verify_native_pair_evidence.py": {
+      "bytes": 4808,
+      "sha256": "5a22e20c1a822678524f5a1af799c3b8a0a164eb8a2b59aaa610e7b4f690d228"
+    }
+  },
+  "primary_note": "NATIVE_ONE_PAIR_SPECTRAL_EDGE_ROOT.md",
+  "not_independently_confirmed": true
+}

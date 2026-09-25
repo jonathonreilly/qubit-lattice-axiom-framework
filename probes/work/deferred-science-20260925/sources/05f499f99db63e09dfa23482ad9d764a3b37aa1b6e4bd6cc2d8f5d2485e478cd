@@ -1,0 +1,171 @@
+{
+  "at_utc": "2026-09-25T08:13:33.043575+00:00",
+  "phase": "Blind independent PRE43 final evidence binding",
+  "scope": "Source, saved execution and log identities only; scientific programs not rerun",
+  "report": {
+    "path": "PRE.md",
+    "sha256": "fd8ff944ce30133a794274084603d8e8652c5b8289281a50519b061c097b10fe",
+    "bytes": 25109
+  },
+  "source_pins": {
+    "path": "SOURCE_PINS.json",
+    "sha256": "3ba194311623fc163ef24cbe3b7ac01c92bad561e275471cc84ac37d2ea68b9a",
+    "bytes": 3761
+  },
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "path": "sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "git:origin/ai/execution:AGENTS.md",
+      "path": "sources/AGENTS_execution.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "exact_origin_bytes": true
+    },
+    {
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "path": "sources/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "exact_origin_bytes": true
+    }
+  ],
+  "executions": [
+    {
+      "path": "freeze.execution.json",
+      "sha256": "dcff6b0f2e79b281a492dc5321e5e0d71611ed3695dfd5353876aec7a3b2f48e",
+      "bytes": 852,
+      "script": {
+        "path": "freeze_sources.py",
+        "sha256": "a2751664efb8160ca2a5d643a9af1a8734c89020e583e15b352c1d2be73bf2cb",
+        "bytes": 3727
+      },
+      "exit_code": 0,
+      "all_log_bindings_exact": true,
+      "console_binding_checked": false
+    },
+    {
+      "path": "L4.execution.json",
+      "sha256": "714ac667112d87d09e6a2c990905f84110e7234e6d42e91ca9a1e32b8cdc378e",
+      "bytes": 937,
+      "script": {
+        "path": "primitive_transport.py",
+        "sha256": "fe7c37c69b5fbff754b487a74375fb357b40542bbfda6319451de662c277e1d9",
+        "bytes": 15093
+      },
+      "exit_code": 0,
+      "all_log_bindings_exact": true,
+      "console_binding_checked": false
+    },
+    {
+      "path": "L6.execution.json",
+      "sha256": "ad1f2cbe98d306dd0dfa039270463c3eac90b94748d488a17bc256ad94571b21",
+      "bytes": 937,
+      "script": {
+        "path": "primitive_transport.py",
+        "sha256": "fe7c37c69b5fbff754b487a74375fb357b40542bbfda6319451de662c277e1d9",
+        "bytes": 15093
+      },
+      "exit_code": 0,
+      "all_log_bindings_exact": true,
+      "console_binding_checked": true
+    },
+    {
+      "path": "L8.execution.json",
+      "sha256": "4f3d8476d7d828184bd4d4bc76620b851c19ad34d525f7c2125c0fac455d8e5f",
+      "bytes": 911,
+      "script": {
+        "path": "primitive_transport.py",
+        "sha256": "fe7c37c69b5fbff754b487a74375fb357b40542bbfda6319451de662c277e1d9",
+        "bytes": 15093
+      },
+      "exit_code": 0,
+      "all_log_bindings_exact": true,
+      "console_binding_checked": true
+    },
+    {
+      "path": "verification.execution.json",
+      "sha256": "63b82596ade6756b12e96089d5b39042e1d2fa7472795a075a784cfcab4ef50d",
+      "bytes": 866,
+      "script": {
+        "path": "verify_read_only.py",
+        "sha256": "db0e74ea33278f26bee2c5fcbfb68e01e8aa94a28510ce5321c043b6ef34cded",
+        "bytes": 11207
+      },
+      "exit_code": 0,
+      "all_log_bindings_exact": true,
+      "console_binding_checked": true
+    }
+  ],
+  "scientific_results_and_verifier_output": [
+    {
+      "path": "L4_RESULTS.json",
+      "sha256": "2e896ec6eded7299c0b7e0102fff2805a5927101d3b704e56d8a846e7c8e7924",
+      "bytes": 10115403
+    },
+    {
+      "path": "L6_RESULTS.json",
+      "sha256": "0ba30fb5223f0148bcf86ae19058e6a9a48909997c0e1ad69c80f5d3d2f34952",
+      "bytes": 10334228
+    },
+    {
+      "path": "L8_RESULTS.json",
+      "sha256": "adf385dc98dbf8477ff6c11b33ed1e6c5d67a73120070f554031cf85d748c21f",
+      "bytes": 10257505
+    },
+    {
+      "path": "verification.stdout.txt",
+      "sha256": "d95633c06ab117b62e6a4f287335dffb4266c59fcb3c797340ff6e826a813c62",
+      "bytes": 28762
+    }
+  ],
+  "genuinely_read_only_scientific_verifier": {
+    "path": "verify_read_only.py",
+    "sha256": "db0e74ea33278f26bee2c5fcbfb68e01e8aa94a28510ce5321c043b6ef34cded",
+    "bytes": 11207
+  },
+  "final_binder": {
+    "path": "seal_pre.py",
+    "sha256": "b9c52b66460a41a81adb2ed9869615c363da1403811fef5f4417a81899bc5e23",
+    "bytes": 6110
+  },
+  "preserved_failed_executions": 0,
+  "author43_access": false,
+  "parent_or_author_scientific_program_execution": false,
+  "prior40_mutation_or_scientific_code_reuse": false,
+  "new_delegation_or_model_effort_change": false,
+  "publication_or_audit_mutation": false
+}

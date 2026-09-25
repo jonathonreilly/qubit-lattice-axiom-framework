@@ -1,0 +1,185 @@
+{
+  "at_utc": "2026-09-25T06:05:59.570319+00:00",
+  "scope": "Read-only source, stored-payload and cache correspondence; no scientific rerun or new independent proof.",
+  "snapshot_count": 168,
+  "all_snapshots_equal_live_origins": true,
+  "canonical_manifest_members": 13,
+  "all_canonical_hashes_match": true,
+  "seals": [
+    {
+      "label": "author37",
+      "seal": "AUTHOR_SEAL.json",
+      "sha256": "b2ed6d091f07232dec83eadc338e6385f1e20f5efddfff29288e871b0c792dd3",
+      "members_unchanged": 17
+    },
+    {
+      "label": "author38",
+      "seal": "AUTHOR_SEAL.json",
+      "sha256": "0be5f2ee5066c8a584f1d5db3ddad0c2fec2226ec1929033065d05611ea139e3",
+      "members_unchanged": 4
+    },
+    {
+      "label": "independent37",
+      "seal": "PRE_SEAL.json",
+      "sha256": "81464c8af25297f2f5765d785e2fe0a01accf566cccfce10e767d86fb79c9baa",
+      "members_unchanged": 48
+    },
+    {
+      "label": "independent37",
+      "seal": "POST_SEAL.json",
+      "sha256": "f5c927582a00e8f2b16daca281237559f7850721790ccd717ee09307938a22a0",
+      "members_unchanged": 28
+    },
+    {
+      "label": "independent38",
+      "seal": "PRE_SEAL.json",
+      "sha256": "db299c055ce8a454d3bd8a99ef33e13ba9688582214cf0250a16af278fab2025",
+      "members_unchanged": 20
+    },
+    {
+      "label": "independent38",
+      "seal": "POST_SEAL.json",
+      "sha256": "630e81391367f5486af2cde99081b6ce1d3c92d5b20ddcdc33a358f69559cb02",
+      "members_unchanged": 13
+    }
+  ],
+  "parent_git_bindings": [
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "exact_git_match": true
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "exact_git_match": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "exact_git_match": true
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "exact_git_match": true
+    },
+    {
+      "path": "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "exact_git_match": true
+    }
+  ],
+  "section_correspondence": [
+    {
+      "unit": "microscopic",
+      "declared_presentation_replacements": 1,
+      "heading_level_increment": 2,
+      "entire_section_exact": true,
+      "public_section_sha256": "27c2e412883527966c4b04fa18a750dc4da10c7e970a5683259bdd2841c73fa5"
+    },
+    {
+      "unit": "budget",
+      "declared_presentation_replacements": 2,
+      "heading_level_increment": 2,
+      "entire_section_exact": true,
+      "public_section_sha256": "bdb435f34b1e58427b8a7d8d4aba0ffe4b09065e61640b68d8b7d5821e08de6b"
+    }
+  ],
+  "runtime_exact_author_bytes": true,
+  "runtime_sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+  "input_count": 7,
+  "input_fingerprint_sha256": "27e16141755767214fc57fb35a3cb3d22784e7115b86b0738de6f854265b9a6f",
+  "runner_sha256": "89bd0473e7c0a976dd42a5c868f2431edb360c6384fd080e61e5997b539ed2e9",
+  "helper_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+  "complete_group_counts": {
+    "identity_rows": 6,
+    "spectral_rows": 4,
+    "integer_rows": 4
+  },
+  "total_leaf_counts": {
+    "str": 10,
+    "int": 90,
+    "float": 81,
+    "bool": 13
+  },
+  "scientific_group_leaves_exactly_unchanged": 190,
+  "total_leaves": 194,
+  "unchanged_leaves": 193,
+  "all_payload_differences": [
+    {
+      "path": "/elapsed_seconds",
+      "original": 0.16115583293139935,
+      "fresh": 0.1740700420923531
+    }
+  ],
+  "numeric_identity_rows": [
+    {
+      "cycle": 4,
+      "spin": 1,
+      "dimension": 19,
+      "coefficient_residual": 0.0,
+      "loss_residual": 0.0
+    },
+    {
+      "cycle": 4,
+      "spin": 2,
+      "dimension": 39,
+      "coefficient_residual": 1.7763568394002505e-15,
+      "loss_residual": 2.220446049250313e-16
+    },
+    {
+      "cycle": 4,
+      "spin": 4,
+      "dimension": 79,
+      "coefficient_residual": 1.7763568394002505e-15,
+      "loss_residual": 2.220446049250313e-16
+    },
+    {
+      "cycle": 8,
+      "spin": 1,
+      "dimension": 323,
+      "coefficient_residual": 0.0,
+      "loss_residual": 0.0
+    },
+    {
+      "cycle": 8,
+      "spin": 2,
+      "dimension": 855,
+      "coefficient_residual": 1.0658141036401503e-14,
+      "loss_residual": 8.881784197001252e-16
+    },
+    {
+      "cycle": 8,
+      "spin": 3,
+      "dimension": 1387,
+      "coefficient_residual": 7.105427357601002e-15,
+      "loss_residual": 8.881784197001252e-16
+    }
+  ],
+  "failed_attempt_preserved": true,
+  "repair_diff_exact": true,
+  "changed_original_functions": [
+    "build"
+  ],
+  "max_coefficient_residual": 1.0658141036401503e-14,
+  "max_ground_residual": 6.761074149575574e-08,
+  "source_result_stdout_cache_binding_exact": true,
+  "result_sha256": "924f02f5eb1d058cfd714a48f0b1099352931ffce1bbe65c0d4d0a0de79ec39a",
+  "scientific_artifact_sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+  "cache_sha256": "a866e09fe9634d2b192f1ad7591e77309e14d88004c89a2849359899d179e878",
+  "timers": {
+    "original_inner": 0.16115583293139935,
+    "fresh_inner": 0.1740700420923531,
+    "fresh_wrapper": 0.6599441249854863,
+    "outer_execution": 0.7297959327697754
+  },
+  "original_writer_or_scientific_program_executions": [],
+  "file_writes": [],
+  "all_requested_checks": true
+}

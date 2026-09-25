@@ -1,0 +1,27 @@
+{
+  "main": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "scope": "Complete argument and register premises read; conditional dependency not recertified."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "scope": "Complete argument and register premises read; conditional dependency not recertified."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-personal/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "scope": "Provisional root target contrast; independent check still in progress, no confirmation imported."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-personal/FINITE_DURATION_TWO_RECORD_PHOTON_CONTRAST_ROOT.md",
+      "sha256": "954562baa3c57706b87c4b2e5aeecc7d7fa6c72db8b4590f3aed9f76d7ae63c5",
+      "scope": "Provisional root target contrast; independent check still in progress, no confirmation imported."
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "source_pins_verified": 7,
+  "execution_bindings": [
+    {
+      "tag": "freeze",
+      "source_sha256": "922b547a98fbcb82693213b6f7b54b08074f646003b339deb3341561fe212ddc",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "tag": "exploration",
+      "source_sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "tag": "supersolution",
+      "source_sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "tag": "decisive",
+      "source_sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "tag": "charge_coherence",
+      "source_sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a",
+      "exit_code": 0,
+      "stderr_bytes": 0
+    }
+  ],
+  "single_kernel_polynomial": "K=2P^2+188P-1392 I =2 A^4+164 A^2-2448 I on B, P=A^2-6 I",
+  "single_spectral_interval": [
+    -2448,
+    6048
+  ],
+  "separated_upper_threshold": 12096,
+  "unwrapped_complete_entries": 6876,
+  "all_unwrapped_rows": [
+    {
+      "separation": [
+        0,
+        0,
+        2
+      ],
+      "residual_numerator": -611008,
+      "complete_column_entries": 335
+    },
+    {
+      "separation": [
+        0,
+        0,
+        4
+      ],
+      "residual_numerator": -617966,
+      "complete_column_entries": 191
+    },
+    {
+      "separation": [
+        0,
+        0,
+        6
+      ],
+      "residual_numerator": -614328,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        0,
+        8
+      ],
+      "residual_numerator": -98727716,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        0,
+        10
+      ],
+      "residual_numerator": -619204,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        1,
+        1
+      ],
+      "residual_numerator": -622728,
+      "complete_column_entries": 357
+    },
+    {
+      "separation": [
+        0,
+        1,
+        3
+      ],
+      "residual_numerator": -622664,
+      "complete_column_entries": 229
+    },
+    {
+      "separation": [
+        0,
+        1,
+        5
+      ],
+      "residual_numerator": -618968,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        1,
+        7
+      ],
+      "residual_numerator": -446057772,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        1,
+        9
+      ],
+      "residual_numerator": -4260436,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        2,
+        2
+      ],
+      "residual_numerator": -607772,
+      "complete_column_entries": 242
+    },
+    {
+      "separation": [
+        0,
+        2,
+        4
+      ],
+      "residual_numerator": -619904,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        2,
+        6
+      ],
+      "residual_numerator": -1115040360,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        2,
+        8
+      ],
+      "residual_numerator": -14308288,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        3,
+        3
+      ],
+      "residual_numerator": -620048,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        3,
+        5
+      ],
+      "residual_numerator": -1898884024,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        3,
+        7
+      ],
+      "residual_numerator": -31389612,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        4,
+        4
+      ],
+      "residual_numerator": -2270868312,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        4,
+        6
+      ],
+      "residual_numerator": -49470732,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        0,
+        5,
+        5
+      ],
+      "residual_numerator": -57496352,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        1,
+        2
+      ],
+      "residual_numerator": -620112,
+      "complete_column_entries": 283
+    },
+    {
+      "separation": [
+        1,
+        1,
+        4
+      ],
+      "residual_numerator": -624696,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        1,
+        6
+      ],
+      "residual_numerator": -1728727532,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        1,
+        8
+      ],
+      "residual_numerator": -26300668,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        2,
+        3
+      ],
+      "residual_numerator": -618492,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        2,
+        5
+      ],
+      "residual_numerator": -3814532732,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        2,
+        7
+      ],
+      "residual_numerator": -79562104,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        3,
+        4
+      ],
+      "residual_numerator": -5648418032,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        3,
+        6
+      ],
+      "residual_numerator": -156567864,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        1,
+        4,
+        5
+      ],
+      "residual_numerator": -217653824,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        2,
+        2
+      ],
+      "residual_numerator": -627540,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        2,
+        4
+      ],
+      "residual_numerator": -7340940536,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        2,
+        6
+      ],
+      "residual_numerator": -215949900,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        3,
+        3
+      ],
+      "residual_numerator": -9105574864,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        3,
+        5
+      ],
+      "residual_numerator": -375403696,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        2,
+        4,
+        4
+      ],
+      "residual_numerator": -449415224,
+      "complete_column_entries": 169
+    },
+    {
+      "separation": [
+        3,
+        3,
+        4
+      ],
+      "residual_numerator": -562252668,
+      "complete_column_entries": 169
+    }
+  ],
+  "finite_quotients": [
+    {
+      "L": 6,
+      "dimension": 9,
+      "exact_interval": [
+        "11732432250750838/970768083869",
+        "12050236063604212/997063892943"
+      ],
+      "constant_trial": "1292724/107",
+      "shared_h_max_residual": 5741848572
+    },
+    {
+      "L": 8,
+      "dimension": 18,
+      "exact_interval": [
+        "4021452867481680/332578272649",
+        "6040492002147836/499554877857"
+      ],
+      "constant_trial": "1027644/85",
+      "shared_h_max_residual": 968066812
+    },
+    {
+      "L": 10,
+      "dimension": 27,
+      "exact_interval": [
+        "4029412562828600/333179015649",
+        "6044104739082102/499767357163"
+      ],
+      "constant_trial": "6034356/499",
+      "shared_h_max_residual": 0
+    },
+    {
+      "L": 12,
+      "dimension": 43,
+      "exact_interval": [
+        "12089555436746592/999570357623",
+        "6044622438692682/499772340211"
+      ],
+      "constant_trial": "10437300/863",
+      "shared_h_max_residual": 0
+    },
+    {
+      "L": 14,
+      "dimension": 59,
+      "exact_interval": [
+        "12087445559255844/999357610913",
+        "3021913215151713/249843687508"
+      ],
+      "constant_trial": "5527356/457",
+      "shared_h_max_residual": 0
+    },
+    {
+      "L": 16,
+      "dimension": 84,
+      "exact_interval": [
+        "3022783478179358/249910275065",
+        "12082437758596820/998922140967"
+      ],
+      "constant_trial": "24758964/2047",
+      "shared_h_max_residual": 0
+    },
+    {
+      "L": 18,
+      "dimension": 109,
+      "exact_interval": [
+        "2015325453418290/166615975783",
+        "6046844611064260/499919709529"
+      ],
+      "constant_trial": "35258292/2915",
+      "shared_h_max_residual": 0
+    },
+    {
+      "L": 20,
+      "dimension": 145,
+      "exact_interval": [
+        "12078641896050336/998587133069",
+        "12091111388461708/999618033295"
+      ],
+      "constant_trial": "374964/31",
+      "shared_h_max_residual": 0
+    }
+  ],
+  "all_finite_entries": 15080,
+  "summed_near_row_defect": -1548,
+  "physical_Gauss_charge_rows": 120,
+  "coherent_charge_result_sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+  "discriminators": {
+    "half_Gram_factor_rejected": true,
+    "one_contact_entry_drop_breaks_saved_raw_grouping": true,
+    "wrong_emitter_charge_breaks_Gauss": true,
+    "dephasing_changes_50_cross_sign_entries": true
+  },
+  "own_scientific_programs_imported_or_executed": false,
+  "filesystem_mutation_by_verifier": false,
+  "scope": "Complete stored-certificate arithmetic and independent polynomial/Gauss reconstruction. The primary also compared 13 near-shell columns using separate ordered four-hop enumeration. No author outputs imported.",
+  "all_checks_completed": true
+}

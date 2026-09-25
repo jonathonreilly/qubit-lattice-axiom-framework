@@ -1,0 +1,24 @@
+{
+  "scientific_result_fields_identical": true,
+  "excluded_metadata": [
+    "source_sha256",
+    "elapsed_seconds"
+  ],
+  "complete_source_diff": [
+    "--- attempt01",
+    "+++ final",
+    "@@ -86,8 +86,8 @@",
+    "     marks.append(marks[0]+marks[1]);alpha=.1;rows=[]",
+    "     for epsilon in (.08,.05,.03):",
+    "         start=time.monotonic();psi,prep=builder.canonical_preparation(m4,epsilon)",
+    "-        H4=epsilon**-4*(diags(m4['W'])-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C'])",
+    "-        H6=epsilon**-4*(diags(m6['W'])-epsilon*(m6['F']+m6['F'].T)+epsilon**2*m6['C'])",
+    "+        H4=epsilon**-4*(diags(m4['W'],dtype=float)-epsilon*(m4['F']+m4['F'].T)+epsilon**2*m4['C'])",
+    "+        H6=epsilon**-4*(diags(m6['W'],dtype=float)-epsilon*(m6['F']+m6['F'].T)+epsilon**2*m6['C'])",
+    "         hp=H4@psi;initial_mean=float(np.vdot(psi,hp).real)",
+    "         initial_fisher=4*(float(np.vdot(hp,hp).real)-initial_mean**2)",
+    "         assert 0<initial_fisher<500"
+  ],
+  "first_stderr": "Two SciPy FutureWarning messages only; no traceback.",
+  "final_stderr_bytes": 0
+}

@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T02:32:17.080252+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/post_compare.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent",
+  "elapsed_seconds": 2.0977389998733997,
+  "exit_code": 0,
+  "script_sha256": "81d452b4d3b5bc7f5533946eb02652c587873a7f5111586dc4529f4c46c44c01",
+  "stdout_bytes": 13476,
+  "stdout_sha256": "6725f99b116a1c536d72d112b3a4de59357efb477425180524626bf5115357d2",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

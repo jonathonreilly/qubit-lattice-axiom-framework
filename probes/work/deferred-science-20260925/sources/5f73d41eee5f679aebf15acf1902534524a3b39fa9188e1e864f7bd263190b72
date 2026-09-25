@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T03:48:41.701019+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/physical_dark_fixture_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent",
+  "elapsed_seconds": 0.07742879213765264,
+  "exit_code": 0,
+  "script_sha256": "e063adf630cfab3e7bc7a7d638e3ce3207569f1ef58c5ac280cc6867247e54b7",
+  "stdout_bytes": 1057,
+  "stdout_sha256": "290cb8294ba5623bd2def65da4459eeea9dcb9ae1dbb6bdffde8f29a94754bd6",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

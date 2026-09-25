@@ -1,0 +1,68 @@
+{
+  "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "base_branch": "main",
+  "branch": "codex/mobile-record-local-charge-observation-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925",
+  "note": "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py",
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py"
+  ],
+  "output_directory": "outputs/native_local_charge_covariance_20260925",
+  "parent_paths": [
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "source_notes": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md"
+  ],
+  "cache": "logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt",
+  "result": "outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json",
+  "presentation_replacements": [
+    [
+      {
+        "old": "2026-09-25. Personal conditional theorem candidate; no independent check\nof this candidate is claimed at its author seal. No publication or audit status.",
+        "new": "2026-09-25. Personally derived conditional theorem with separate scoped PRE\nand POST checks. No retained audit status or empirical confirmation is claimed."
+      },
+      {
+        "old": "The root's sealed42 static branch identities are an explicitly imported conditional parent,\nnow separately PRE/POST checked; their proof will be restated rather than\nsilently importing an additional instrument. No root45 result or checker is used.",
+        "new": "The branch identities were previously derived in the personal candidate42.\nTheir proof is restated below from the three common-model parents; it requires\nno additional instrument or physical premise. No root45 result or checker is used."
+      }
+    ],
+    [
+      {
+        "old": "Personal conditional theorem candidate47, 2026-09-25. No independent check\nis claimed at its author seal. It extends the personally sealed candidate46,\nwhose independent PRE is still pending. Candidate46 is an explicit provisional dependency. This is",
+        "new": "Personally derived conditional theorem47, 2026-09-25. Separate scoped PRE and\nPOST checks are complete. It extends the branch compression proved in Part I. This is"
+      },
+      {
+        "old": "theorem or code is used. No47 checker evidence has been seen.",
+        "new": "theorem or code is used. No47 checker evidence had been seen at the author seal."
+      },
+      {
+        "old": "Work on the tensor product with A restricted to its two occupied signs, B to",
+        "new": "Throughout Part II assume a finite simple bipartite graph of maximum degree\nat most six. Work on the tensor product with A restricted to its two occupied signs, B to"
+      },
+      {
+        "old": "Candidate46 remains a declared\nprovisional dependency until its independent result is reviewed. No laboratory",
+        "new": "The candidate46 branch compression is proved in Part I and its separate\nindependent checks have been reviewed. No laboratory"
+      },
+      {
+        "old": "That improvement is an unproved route here, not part of\nthis result.",
+        "new": "That improvement was unproved in the sealed personal author record and is\nnot part of this personal result. PRE47 separately supplies a colored-series\nestimate with its own convergence window; the distinction is recorded above."
+      }
+    ]
+  ],
+  "heading_level_increment": 2,
+  "source_files_sha256": {
+    "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md": "087ba77c29a8d44a88aa3bb493d34bd1db64e10115a935a7521ea8895a12359e",
+    "scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py": "d7c2f48c8f8b238ac8b37183d91fff4553a50ceb635f2750b8bcaa995e66a731",
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  }
+}

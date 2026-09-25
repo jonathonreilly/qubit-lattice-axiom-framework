@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-09-25T00:09:29.052157+00:00",
+  "PRE_members_unchanged": 45,
+  "author_files_and_originals_verified": 21,
+  "source_result_bindings_match": true,
+  "polynomial_coefficient_comparisons": 282,
+  "signed_filling_checks": 140,
+  "active_pair_summary_checks": 532,
+  "FFT_max_absolute_difference": 1.7053025658242404e-13,
+  "FFT_current_rows": 12,
+  "FFT_historical_rows": 12,
+  "FFT_current_finite_g_values": 44,
+  "FFT_historical_finite_g_values": 44,
+  "coordinate_failure_preserved": true,
+  "POST_sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0",
+  "POST_SOURCE_PINS_sha256": "d755d2cd2a570e5956496fbc032cb19bd71fb7710a2c91b5beff3491ebf804c2",
+  "verifier_sha256": "5ca96f0e9908b137e7bbb4fbaf9b44ae3f273d268ff4c34de6ff764b3577df7b"
+}

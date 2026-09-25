@@ -1,0 +1,16 @@
+[
+  {
+    "script": "docs/audit/scripts/build_citation_graph.py",
+    "elapsed_seconds": 107.70687687513418,
+    "exit_code": 0,
+    "stdout": "Wrote docs/audit/data/citation_graph.json\n  nodes: 6669  edges: 14686\n  roots: 3155  leaves: 2723\n  runners attached: 4373\n  claim_type_seed_hint_counts: {'meta': 386, 'bounded_theorem': 3554, 'open_gate': 243, 'no_go': 356, 'positive_theorem': 689, 'none': 1438, 'decoration': 3}\n",
+    "stderr": ""
+  },
+  {
+    "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+    "elapsed_seconds": 0.05931449984200299,
+    "exit_code": 0,
+    "stdout": "Wrote docs/audit/data/citation_graph_manifest.json (6669 nodes, 14686 edges)\n",
+    "stderr": ""
+  }
+]

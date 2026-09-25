@@ -1,0 +1,194 @@
+{
+  "phase": "released-source POST comparison",
+  "sealed_at_utc": "2026-09-24T21:40:17.263479+00:00",
+  "preserved_PRE_seal_sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+  "preserved_PRE_member_count": 33,
+  "all_PRE_members_unchanged": true,
+  "author_note_sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf",
+  "author_seal_sha256": "99a14ba42c0936a52cf4037428168eadc8021651dddc5b718332b4bf8b97fe33",
+  "scope": "Actual root preparation, full count and ordered moment proof comparison, own narrow primitive/Gauss control and author evidence correspondence; no author rerun or audit verdict.",
+  "member_count": 36,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 23192,
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee"
+    },
+    {
+      "path": "POST_CHECKPOINT.md",
+      "bytes": 2589,
+      "sha256": "cc173d459ced54743a63f3e13fa48812a0dcedc4576d7777100a31b6eabbf837"
+    },
+    {
+      "path": "POST_CONTROL_EXECUTION.json",
+      "bytes": 1045,
+      "sha256": "1063535c6b26f72649bf45ac5d10dc1ccc1c0dfcd661bb049eb70b8dcfd5b9ad"
+    },
+    {
+      "path": "POST_CONTROL_RESULTS.json",
+      "bytes": 13649,
+      "sha256": "db0339234e5608e7b31575488f5ab765aaa736ea94af6fedf25186640462dc0b"
+    },
+    {
+      "path": "POST_EVIDENCE_LOG.md",
+      "bytes": 5500,
+      "sha256": "0b15216178f20008971db5e993dabcfe2458b541ff466dfa1a01841c08392c76"
+    },
+    {
+      "path": "POST_EVIDENCE_VERIFICATION.json",
+      "bytes": 6733,
+      "sha256": "54233e63ba8ff662a49511d77462df230c650f6ac174b8b2eb9b01ad3c434854"
+    },
+    {
+      "path": "POST_FREEZE_EXECUTION.json",
+      "bytes": 826,
+      "sha256": "58fb2f55bc152d77730b54180ebcd6cd1cc9173756125396147293d4e20fae24"
+    },
+    {
+      "path": "POST_PATH_CERTIFICATES.json",
+      "bytes": 227323,
+      "sha256": "8a512e39fce0e05e7fb70424cc687c8386c449955b9130bd89b031eac0cb1029"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 8349,
+      "sha256": "850c37ec637d1ed4aa649d397d2f59d4a26f8980d459778371e9f9581d727910"
+    },
+    {
+      "path": "POST_VERIFY_EXECUTION.json",
+      "bytes": 826,
+      "sha256": "a07af63d6594638f72847b42a0a67b11d6308ae3fc25e1f3e7d75fd22fbb308f"
+    },
+    {
+      "path": "freeze_post_sources.py",
+      "bytes": 4250,
+      "sha256": "6c14415de0f635d83a0fccf5ba73e3cfc67f11951f1db11806feca46cd9f3c94"
+    },
+    {
+      "path": "freeze_post_sources.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "freeze_post_sources.stdout.txt",
+      "bytes": 4983,
+      "sha256": "fb134143291e41b2c226c352d211a52f18ace6f0989f31e3626073bfe5923751"
+    },
+    {
+      "path": "post_control.py",
+      "bytes": 9864,
+      "sha256": "4302d6bb34fb05ce660ab5325c054426f02807f0a61ec6e28ee6253b89c5f064"
+    },
+    {
+      "path": "post_control.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_control.stdout.txt",
+      "bytes": 5243,
+      "sha256": "336f53f38c3f0e722af4aa6b0bef153be4c07510548a892344aa3c2f0d94004d"
+    },
+    {
+      "path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 1119,
+      "sha256": "99a14ba42c0936a52cf4037428168eadc8021651dddc5b718332b4bf8b97fe33"
+    },
+    {
+      "path": "post_sources/author/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_sources/author/EXECUTION.json",
+      "bytes": 255,
+      "sha256": "6bc4f8d6072cc383abfadd75f289ffb4a3493822a8fff71b3dd6b1f065527f18"
+    },
+    {
+      "path": "post_sources/author/PREPARED_MATTER_INTERFERENCE_PROBE_ROOT.md",
+      "bytes": 12776,
+      "sha256": "ab3c1883b032e571efdeb52330d7665c262f70e3f303b3236f32f89accbcd7bf"
+    },
+    {
+      "path": "post_sources/author/PREPARED_PROBE_RESULTS.json",
+      "bytes": 8112,
+      "sha256": "8b2a55ee00d36d9ffd0695f8647f8c8c801818f7e248011489af83202feeb6be"
+    },
+    {
+      "path": "post_sources/author/ROOT_REVIEW.md",
+      "bytes": 1479,
+      "sha256": "2d584726fa1dc3a07a4a6b98c189efc62471a604ffd73a3a3ab9b1f9279245f3"
+    },
+    {
+      "path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 2575,
+      "sha256": "bf35b32bbf4a79ce1bca5d98b93ebecf5187daeb97645e225dfd232a5ba75f3b"
+    },
+    {
+      "path": "post_sources/author/prepared_probe_controls.py",
+      "bytes": 6889,
+      "sha256": "27da3c4fdff89c16e4c15c96e41296f2ae51964c6048b727c07c2b55cba9683c"
+    },
+    {
+      "path": "post_sources/bounded_target.md",
+      "bytes": 10011,
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "path": "post_sources/procedure/physics-claim-reviewer.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "post_sources/procedure/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "post_sources/procedure/skill-freshness.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "post_sources/public_original_readout.md",
+      "bytes": 39966,
+      "sha256": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b"
+    },
+    {
+      "path": "run_post_control.py",
+      "bytes": 1221,
+      "sha256": "13b15edfac7efe343993e5f711c71d6bce9aa964ab963a17eb0b66805c84a03c"
+    },
+    {
+      "path": "run_post_freeze.py",
+      "bytes": 1129,
+      "sha256": "af87c099baf7cf6b6b2d644b728d7aa44376f054554acf6aa6d15eac57d1ba80"
+    },
+    {
+      "path": "run_post_verification.py",
+      "bytes": 1153,
+      "sha256": "30159a0aafb2de175b793493c44d52c6039188452d04df0b6f56064a732238fa"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 2241,
+      "sha256": "6d4a79b75a59052f22d08a0c3ca02b4d24bf4ee09aa0c2530da96b25363ae715"
+    },
+    {
+      "path": "verify_post_evidence.py",
+      "bytes": 5632,
+      "sha256": "ee6518e80f21c75d8667f7375107df849712f1e24a4e6a72c4f7a589d9f12a16"
+    },
+    {
+      "path": "verify_post_evidence.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verify_post_evidence.stdout.txt",
+      "bytes": 7621,
+      "sha256": "601ae1fc9e91d2abe4775d83ee4ca8a0677b77fa379f35d75220f8906ee049f7"
+    }
+  ],
+  "preservation": "One-time content-hash ledger. All POST members and this seal set read-only; PRE originals unchanged."
+}

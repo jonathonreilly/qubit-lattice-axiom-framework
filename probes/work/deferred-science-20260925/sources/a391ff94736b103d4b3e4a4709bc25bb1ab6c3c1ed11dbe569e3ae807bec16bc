@@ -1,0 +1,9 @@
+{
+  "frozen_at_utc": "2026-09-24T15:03:07.417698+00:00",
+  "base_revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+  "files_sha256": {
+    "docs/TIME_INTEGRATED_MICROSCOPIC_CUBE_BIRTH_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f667f03f5b6b9fd1e50e3c01f800e19d754dae8281354ff2d0196d97ddbd44ae",
+    "scripts/time_integrated_microscopic_cube_birth_variance_2026_09_24.py": "1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc"
+  },
+  "source_scope": "Complete publication note includes explicitly attributed PRE enhancements; runner includes pinned author controls and new root local-star checks."
+}

@@ -1,0 +1,37 @@
+{
+  "released_utc": "2026-09-24T12:03:06.634075+00:00",
+  "pre_seal_sha256": "e39379df569d84a86374aad4a1a2bf3ee0857fca52dd1c125907221d3fab226b",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/scripts/sharp_actual_rotor_cube_energy_tail_2026_09_24.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/sharp_actual_rotor_cube_energy_tail_2026_09_24.py",
+      "sha256": "3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f",
+      "bytes": 11269
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-tail-personal/SHARP_TAIL_PERSONAL_DERIVATION.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/SHARP_TAIL_PERSONAL_DERIVATION.md",
+      "sha256": "f9999677697678620dff4b32a9d4f560d182b53eb973d26192324d892604e0f8",
+      "bytes": 5143
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-tail-personal/MODULE_EXACT_CERTIFICATES_ALL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/MODULE_EXACT_CERTIFICATES_ALL.json",
+      "sha256": "87421a8bd223addf919cbaa43b224961981bce7c716844a1a7266466ca6f07b2",
+      "bytes": 22341266
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-tail-personal/INCIDENCE_PROBE.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/INCIDENCE_PROBE.json",
+      "sha256": "e37436d844449d4ae58223ec2ff608bd4375e8fdca70d75f9eda50d882c96aa3",
+      "bytes": 67235
+    }
+  ],
+  "root_runner_runtime_status": "No execution record was included in the initial release manifest; the later complete record is bound and compared in PUBLICATION_COMPARISON.json."
+}

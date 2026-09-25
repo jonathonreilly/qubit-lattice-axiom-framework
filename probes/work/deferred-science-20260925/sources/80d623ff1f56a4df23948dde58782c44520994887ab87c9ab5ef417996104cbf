@@ -1,0 +1,897 @@
+{
+  "scope": "Independently written flat pair-add/return paths and candidate supersolutions.\n\nThe optional one-occupied-B object is algebraic only, not a Gauss sector.\nConvention: Q=-H4=2 times the overlapping-star Gram sum, parent Part I.\nNo imported program, artifact, matrix, fitted spectrum or root40 result.\n",
+  "source_sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+  "single_algebraic_column": [
+    [
+      [
+        -4,
+        0,
+        0
+      ],
+      2
+    ],
+    [
+      [
+        -3,
+        -1,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        -3,
+        0,
+        -1
+      ],
+      8
+    ],
+    [
+      [
+        -3,
+        0,
+        1
+      ],
+      8
+    ],
+    [
+      [
+        -3,
+        1,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        -2,
+        -2,
+        0
+      ],
+      12
+    ],
+    [
+      [
+        -2,
+        -1,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        -2,
+        -1,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        -2,
+        0,
+        -2
+      ],
+      12
+    ],
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      220
+    ],
+    [
+      [
+        -2,
+        0,
+        2
+      ],
+      12
+    ],
+    [
+      [
+        -2,
+        1,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        -2,
+        1,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        -2,
+        2,
+        0
+      ],
+      12
+    ],
+    [
+      [
+        -1,
+        -3,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        -1,
+        -2,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        -2,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        -1,
+        -2
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        -1,
+        0
+      ],
+      424
+    ],
+    [
+      [
+        -1,
+        -1,
+        2
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        0,
+        -3
+      ],
+      8
+    ],
+    [
+      [
+        -1,
+        0,
+        -1
+      ],
+      424
+    ],
+    [
+      [
+        -1,
+        0,
+        1
+      ],
+      424
+    ],
+    [
+      [
+        -1,
+        0,
+        3
+      ],
+      8
+    ],
+    [
+      [
+        -1,
+        1,
+        -2
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        1,
+        0
+      ],
+      424
+    ],
+    [
+      [
+        -1,
+        1,
+        2
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        2,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        2,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        -1,
+        3,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        -4,
+        0
+      ],
+      2
+    ],
+    [
+      [
+        0,
+        -3,
+        -1
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        -3,
+        1
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        -2,
+        -2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        -2,
+        0
+      ],
+      220
+    ],
+    [
+      [
+        0,
+        -2,
+        2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        -1,
+        -3
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        -1,
+        -1
+      ],
+      424
+    ],
+    [
+      [
+        0,
+        -1,
+        1
+      ],
+      424
+    ],
+    [
+      [
+        0,
+        -1,
+        3
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        0,
+        -4
+      ],
+      2
+    ],
+    [
+      [
+        0,
+        0,
+        -2
+      ],
+      220
+    ],
+    [
+      [
+        0,
+        0,
+        0
+      ],
+      -1284
+    ],
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      220
+    ],
+    [
+      [
+        0,
+        0,
+        4
+      ],
+      2
+    ],
+    [
+      [
+        0,
+        1,
+        -3
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        1,
+        -1
+      ],
+      424
+    ],
+    [
+      [
+        0,
+        1,
+        1
+      ],
+      424
+    ],
+    [
+      [
+        0,
+        1,
+        3
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        2,
+        -2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        2,
+        0
+      ],
+      220
+    ],
+    [
+      [
+        0,
+        2,
+        2
+      ],
+      12
+    ],
+    [
+      [
+        0,
+        3,
+        -1
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        3,
+        1
+      ],
+      8
+    ],
+    [
+      [
+        0,
+        4,
+        0
+      ],
+      2
+    ],
+    [
+      [
+        1,
+        -3,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        1,
+        -2,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        -2,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        -1,
+        -2
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        -1,
+        0
+      ],
+      424
+    ],
+    [
+      [
+        1,
+        -1,
+        2
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        0,
+        -3
+      ],
+      8
+    ],
+    [
+      [
+        1,
+        0,
+        -1
+      ],
+      424
+    ],
+    [
+      [
+        1,
+        0,
+        1
+      ],
+      424
+    ],
+    [
+      [
+        1,
+        0,
+        3
+      ],
+      8
+    ],
+    [
+      [
+        1,
+        1,
+        -2
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        1,
+        0
+      ],
+      424
+    ],
+    [
+      [
+        1,
+        1,
+        2
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        2,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        2,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        1,
+        3,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        2,
+        -2,
+        0
+      ],
+      12
+    ],
+    [
+      [
+        2,
+        -1,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        2,
+        -1,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        2,
+        0,
+        -2
+      ],
+      12
+    ],
+    [
+      [
+        2,
+        0,
+        0
+      ],
+      220
+    ],
+    [
+      [
+        2,
+        0,
+        2
+      ],
+      12
+    ],
+    [
+      [
+        2,
+        1,
+        -1
+      ],
+      24
+    ],
+    [
+      [
+        2,
+        1,
+        1
+      ],
+      24
+    ],
+    [
+      [
+        2,
+        2,
+        0
+      ],
+      12
+    ],
+    [
+      [
+        3,
+        -1,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        3,
+        0,
+        -1
+      ],
+      8
+    ],
+    [
+      [
+        3,
+        0,
+        1
+      ],
+      8
+    ],
+    [
+      [
+        3,
+        1,
+        0
+      ],
+      8
+    ],
+    [
+      [
+        4,
+        0,
+        0
+      ],
+      2
+    ]
+  ],
+  "single_row_sum": 6048,
+  "single_active_pairs": 93,
+  "single_primitive_returns": 6003,
+  "candidate_separated_upper_edge": 12096,
+  "linear_feasibility": {
+    "success": false,
+    "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+    "floating_x": null,
+    "rational_candidate": null,
+    "exact_feasible": false,
+    "exact_residuals": []
+  },
+  "limits": "Exploration only. Finite support, all-volume extension and spectral interpretation require explicit proof. No root program used.",
+  "elapsed_seconds": 0.15566462511196733,
+  "representatives": [
+    {
+      "displacement": [
+        0,
+        0,
+        2
+      ],
+      "row_sum": 11900,
+      "threshold_deficit": -196,
+      "h_responses": [
+        -14468,
+        3616
+      ],
+      "active_pairs": 164,
+      "primitive_returns": 11186
+    },
+    {
+      "displacement": [
+        0,
+        0,
+        4
+      ],
+      "row_sum": 12122,
+      "threshold_deficit": 26,
+      "h_responses": [
+        444,
+        80
+      ],
+      "active_pairs": 185,
+      "primitive_returns": 11984
+    },
+    {
+      "displacement": [
+        0,
+        0,
+        6
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        4,
+        0
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        0,
+        1,
+        1
+      ],
+      "row_sum": 11512,
+      "threshold_deficit": -584,
+      "h_responses": [
+        1808,
+        -10240
+      ],
+      "active_pairs": 149,
+      "primitive_returns": 10500
+    },
+    {
+      "displacement": [
+        0,
+        1,
+        3
+      ],
+      "row_sum": 12168,
+      "threshold_deficit": 72,
+      "h_responses": [
+        872,
+        644
+      ],
+      "active_pairs": 183,
+      "primitive_returns": 11938
+    },
+    {
+      "displacement": [
+        0,
+        1,
+        5
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        16,
+        4
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        0,
+        2,
+        2
+      ],
+      "row_sum": 12188,
+      "threshold_deficit": 92,
+      "h_responses": [
+        888,
+        1136
+      ],
+      "active_pairs": 182,
+      "primitive_returns": 11914
+    },
+    {
+      "displacement": [
+        0,
+        2,
+        4
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        28,
+        16
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        0,
+        3,
+        3
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        32,
+        24
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        1,
+        1,
+        2
+      ],
+      "row_sum": 12248,
+      "threshold_deficit": 152,
+      "h_responses": [
+        976,
+        2400
+      ],
+      "active_pairs": 179,
+      "primitive_returns": 11842
+    },
+    {
+      "displacement": [
+        1,
+        1,
+        4
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        48,
+        36
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        1,
+        2,
+        3
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        64,
+        88
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    },
+    {
+      "displacement": [
+        2,
+        2,
+        2
+      ],
+      "row_sum": 12096,
+      "threshold_deficit": 0,
+      "h_responses": [
+        72,
+        144
+      ],
+      "active_pairs": 186,
+      "primitive_returns": 12006
+    }
+  ]
+}

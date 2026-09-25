@@ -1,0 +1,4146 @@
+{
+  "source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+  "scope": "Exact integer full-charge/Gauss/rotor and primitive-column checks; no finite-time simulation, microscopic response transfer or empirical identification.",
+  "geometry": [
+    {
+      "side": 2,
+      "vertices": 8,
+      "A_sites": 4,
+      "edges": 12,
+      "plaquettes": 6,
+      "edge_squared_incidence": 2,
+      "degree": 3,
+      "response_coefficient_in_K": 12,
+      "per_birth_decrement_in_K": 24,
+      "complete_charge_enumeration": true,
+      "charge_words": 65
+    },
+    {
+      "side": 4,
+      "vertices": 64,
+      "A_sites": 32,
+      "edges": 192,
+      "plaquettes": 192,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    },
+    {
+      "side": 6,
+      "vertices": 216,
+      "A_sites": 108,
+      "edges": 648,
+      "plaquettes": 648,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    }
+  ],
+  "rows": [
+    {
+      "side": 2,
+      "word_index": 0,
+      "charges": [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 1,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 2,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 44
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 3,
+      "charges": [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 4,
+      "charges": [
+        -1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 5,
+      "charges": [
+        -1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 24,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 6,
+      "charges": [
+        -1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 7,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 8,
+      "charges": [
+        -1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 42
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 9,
+      "charges": [
+        -1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 10,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 56
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 11,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 24,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 12,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 13,
+      "charges": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 14,
+      "charges": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 15,
+      "charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 16,
+      "charges": [
+        1,
+        0,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 17,
+      "charges": [
+        1,
+        0,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 18,
+      "charges": [
+        1,
+        0,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 19,
+      "charges": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 20,
+      "charges": [
+        1,
+        1,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 21,
+      "charges": [
+        1,
+        1,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 22,
+      "charges": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 23,
+      "charges": [
+        1,
+        1,
+        1,
+        -1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 24,
+      "charges": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 25,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 44
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 26,
+      "charges": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 27,
+      "charges": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 28,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 50
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 29,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 4,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 30,
+      "charges": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 31,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 42
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 32,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 33,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 56
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 34,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 35,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 48
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 36,
+      "charges": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 37,
+      "charges": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 26,
+          "electric_squared_norm": 48
+        },
+        {
+          "winding_multiple": 0,
+          "D": 6,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 6,
+          "electric_squared_norm": 18
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 38,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 14,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 14,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 39,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 38
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 18
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 40,
+      "charges": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 60
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 41,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 36,
+          "electric_squared_norm": 46
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 3,
+          "D": 16,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 42,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 46
+        },
+        {
+          "winding_multiple": 0,
+          "D": 4,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 3,
+          "D": 4,
+          "electric_squared_norm": 16
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 43,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 44,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 34
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 24
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 45,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 40
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 20
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 46,
+      "charges": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 47,
+      "charges": [
+        1,
+        -1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 48,
+      "charges": [
+        1,
+        -1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 49,
+      "charges": [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 50,
+      "charges": [
+        1,
+        -1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 51,
+      "charges": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 52,
+      "charges": [
+        1,
+        0,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 53,
+      "charges": [
+        1,
+        0,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 26
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 26
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 54,
+      "charges": [
+        1,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 55,
+      "charges": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 0,
+      "exact_response_in_K": 48,
+      "second_differences": 18,
+      "primitive_paths": 48,
+      "resolved_loss_diagonal": 48,
+      "coherent_loss_diagonal": 48,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 56,
+      "charges": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 34
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 57,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 10
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 50
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 58,
+      "charges": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 10,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 2,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 20,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 59,
+      "charges": [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 8
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 60,
+      "charges": [
+        1,
+        1,
+        -1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 22
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 32
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 61,
+      "charges": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 28
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 62,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        -1,
+        1,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 8,
+          "electric_squared_norm": 14
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 18,
+          "electric_squared_norm": 44
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 63,
+      "charges": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 24,
+      "second_differences": 18,
+      "primitive_paths": 8,
+      "resolved_loss_diagonal": 8,
+      "coherent_loss_diagonal": 8,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 2,
+      "word_index": 64,
+      "charges": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 0,
+      "second_differences": 18,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 12
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 52
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 0,
+      "charges": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 0,
+      "exact_response_in_K": 1536,
+      "second_differences": 576,
+      "primitive_paths": 1920,
+      "resolved_loss_diagonal": 1920,
+      "coherent_loss_diagonal": 1920,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 36
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 1,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 1440,
+      "second_differences": 576,
+      "primitive_paths": 1688,
+      "resolved_loss_diagonal": 1688,
+      "coherent_loss_diagonal": 1688,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 18
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 2
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 38
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 2,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 1344,
+      "second_differences": 576,
+      "primitive_paths": 1488,
+      "resolved_loss_diagonal": 1488,
+      "coherent_loss_diagonal": 1488,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 16,
+          "electric_squared_norm": 20
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 36,
+          "electric_squared_norm": 40
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 3,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 16,
+      "exact_response_in_K": 768,
+      "second_differences": 576,
+      "primitive_paths": 640,
+      "resolved_loss_diagonal": 640,
+      "coherent_loss_diagonal": 640,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 12,
+          "electric_squared_norm": 36
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 16
+        },
+        {
+          "winding_multiple": 3,
+          "D": 12,
+          "electric_squared_norm": 46
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "word_index": 4,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 32,
+      "exact_response_in_K": 0,
+      "second_differences": 576,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 48
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 32
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 68
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 0,
+      "charges": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 0,
+      "exact_response_in_K": 5184,
+      "second_differences": 1944,
+      "primitive_paths": 6480,
+      "resolved_loss_diagonal": 6480,
+      "coherent_loss_diagonal": 6480,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 24
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 0
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 54
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 1,
+      "charges": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 2,
+      "exact_response_in_K": 5088,
+      "second_differences": 1944,
+      "primitive_paths": 6244,
+      "resolved_loss_diagonal": 6244,
+      "coherent_loss_diagonal": 6244,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 30
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 6
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 60
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 2,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 4,
+      "exact_response_in_K": 4992,
+      "second_differences": 1944,
+      "primitive_paths": 6028,
+      "resolved_loss_diagonal": 6028,
+      "coherent_loss_diagonal": 6028,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 24,
+          "electric_squared_norm": 28
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 4
+        },
+        {
+          "winding_multiple": 3,
+          "D": 54,
+          "electric_squared_norm": 58
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 3,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_occupied": 54,
+      "exact_response_in_K": 2592,
+      "second_differences": 1944,
+      "primitive_paths": 2520,
+      "resolved_loss_diagonal": 2520,
+      "coherent_loss_diagonal": 2520,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 20,
+          "electric_squared_norm": 142
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 114
+        },
+        {
+          "winding_multiple": 3,
+          "D": 30,
+          "electric_squared_norm": 162
+        }
+      ]
+    },
+    {
+      "side": 6,
+      "word_index": 4,
+      "charges": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "B_occupied": 108,
+      "exact_response_in_K": 0,
+      "second_differences": 1944,
+      "primitive_paths": 0,
+      "resolved_loss_diagonal": 0,
+      "coherent_loss_diagonal": 0,
+      "flows": [
+        {
+          "winding_multiple": -2,
+          "D": 0,
+          "electric_squared_norm": 164
+        },
+        {
+          "winding_multiple": 0,
+          "D": 0,
+          "electric_squared_norm": 144
+        },
+        {
+          "winding_multiple": 3,
+          "D": 0,
+          "electric_squared_norm": 204
+        }
+      ]
+    }
+  ],
+  "all_assertions_passed": true,
+  "second_difference_checks": 13770,
+  "primitive_paths_checked": 27344,
+  "elapsed_seconds": 24.078476916998625
+}

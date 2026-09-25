@@ -1,0 +1,42 @@
+{
+  "verified_at_utc": "2026-09-24T17:47:11.225634+00:00",
+  "released_packet_hashes_and_all_members_match": true,
+  "author_seal_member_counts": {
+    "AUTHOR_SEAL.json": 2,
+    "CONTROL_SEAL.json": 5
+  },
+  "preserved_PRE_member_count": 19,
+  "all_PRE_members_unchanged": true,
+  "complete_author_argument_and_control_source_read": true,
+  "complete_recorded_control_rows_read": {
+    "initial_profile": 25,
+    "physical_flow": 15,
+    "distribution_test": 5
+  },
+  "control_exit_code_recorded": 0,
+  "control_stderr_bytes": 0,
+  "control_stdout_byte_identical_to_result": true,
+  "control_result_source_hash_matches_frozen_script": true,
+  "recorded_max_fast_age_quadrature_error": 1.5779044737485037e-14,
+  "recorded_band_loss_counterexample": -0.16619037896906005,
+  "author_controls_rerun": false,
+  "new_blind_derivation_claim": false,
+  "new_trace_norm_and_carrier_verification_is_POST_work": true,
+  "stronger_matched_expression_and_initial_derivative_are_PRE_additions": true,
+  "provisional_full_ensemble_independent_PRE_reused_without_recertification": true,
+  "separate_full_ensemble_author_candidate_or_controls_opened": false,
+  "other_active_checker_packets_read": false,
+  "material_mathematical_discrepancies": [],
+  "minor_presentation_clarifications": [
+    {
+      "file": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/initial-energy-balance-personal/INITIAL_ENERGY_LAYER_AND_BAND_POWER_PERSONAL_DERIVATION.md",
+      "lines": [
+        299,
+        305
+      ],
+      "finding": "Name gain and diagonal carrier as the positive quantities; preserve integral/distributional sense for the exact coherence-containing loss in the closing summary."
+    }
+  ],
+  "publication_audit_or_previous_seals_changed": false,
+  "delegation_used": false
+}

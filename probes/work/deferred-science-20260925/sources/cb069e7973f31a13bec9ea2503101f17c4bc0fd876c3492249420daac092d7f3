@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-25T06:26:05.012097+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/two_record_threshold_and_charge_controls.py",
+    "--output",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/RESULT.json"
+  ],
+  "elapsed_seconds": 3.166498542064801,
+  "exit_code": 0,
+  "source_sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+  "stdout_sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,5 @@
+Wrote docs/audit/data/citation_graph.json
+  nodes: 6669  edges: 14685
+  roots: 3155  leaves: 2723
+  runners attached: 4373
+  claim_type_seed_hint_counts: {'meta': 386, 'bounded_theorem': 3554, 'open_gate': 243, 'no_go': 356, 'positive_theorem': 689, 'none': 1438, 'decoration': 3}

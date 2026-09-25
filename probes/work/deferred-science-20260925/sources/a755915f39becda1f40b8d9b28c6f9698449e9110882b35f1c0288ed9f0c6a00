@@ -1,0 +1,389 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/AUTHOR_SEAL.json",
+      "sha256": "4bfc4024aba417878501140db6a2fda47d4251cc0f922a55002939a799848c6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/CONTROL.stdout",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/EXECUTION.json",
+      "sha256": "68edadf09a47c2735b56e9351c5ec9d6f9b87dfacdb01f6fc3c45eb642a44a46"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/FINITE_VOLUME_OPTICAL_SCALE_DIAGNOSTIC_ROOT.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/FINITE_VOLUME_OPTICAL_SCALE_DIAGNOSTIC_ROOT.md",
+      "sha256": "f28a1e685cf74050230f123a074c34ea87ddf7f088ad663b7755fd43756b3e1c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/FINITE_VOLUME_UNITS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/FINITE_VOLUME_UNITS.json",
+      "sha256": "9837ccc76e51a9485d93f1b30d2d2ee037f239aa48b18bf6718b9bedd5d5a40b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/SOURCE_PINS.json",
+      "sha256": "7b239abe193531f39d617ae5b1c8fb3904df34d15b2a8f853fbb47f107f76821"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/finite_volume_units.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/volume/finite_volume_units.py",
+      "sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/AUTHOR_SEAL.json",
+      "sha256": "0207294ccd5079745d0d6915a5060fb74b482eeedabf944a0180174631adba80"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/CONTROL.stdout",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/EXECUTION.json",
+      "sha256": "a24d6644a1483366de5f9b7752881f6e3ea7c84a1a8a4dfbafc623bc2e72d11d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "892598ff8c260bad16fe1fe36d6a3b5e4ba5dcb0b247f394853360f44d4b901b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/OPTICAL_BAND_RESULTS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/OPTICAL_BAND_RESULTS.json",
+      "sha256": "a90635555e9c1fead1a4535cadec7fee910397d3106dcb214fddddfcf46a0ee5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/ROOT_REVIEW.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/ROOT_REVIEW.md",
+      "sha256": "b37904eb273b8dc4ecca744a41fd84962e3b3bfcd5bba95ad5da9d8ae51d76d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/CONTROL.stdout",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/EXECUTION.json",
+      "sha256": "811b8d9d771a692b14a6e8aa975cb216237278dca979cfeaae67ce59ecb01ab4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/OPTICAL_BAND_ORIGINAL_PROBE_RESPONSE_ROOT.md",
+      "sha256": "dfb982a3e25645c79c3f2d6c645e7bb65d2cafb768ca01270b125dd40b3dee98"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/OPTICAL_BAND_RESULTS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/OPTICAL_BAND_RESULTS.json",
+      "sha256": "e5e1148d487249574eedf718a2f3259f98fb0e5f953fb2337da3441fa1b32d16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/SOURCE_PINS.json",
+      "sha256": "bf31cc4d8361d25407755036c7b44bd72593e8071085740085fbaecfd1a02909"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/history/hard-band-only/optical_band_controls.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/history/hard-band-only/optical_band_controls.py",
+      "sha256": "58d4809f8042a301cfb6c95146890bad3a286a891966dcb444ff1d831153754b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/optical_band_controls.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/band/optical_band_controls.py",
+      "sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/AUTHOR_SEAL.json",
+      "sha256": "7a809dd2ca14265b8659fbd5eea19e6377cb4864ab04a35645c9489854a92e01"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/CONTROL.stdout",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/EXECUTION.json",
+      "sha256": "5d5e4a881f7d79f0290721f6c1bb3b0d4f26f5bfc12725e74826ecd407d6dbce"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/EXPERIMENT_UNITS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/EXPERIMENT_UNITS.json",
+      "sha256": "b3870c7b400b6efbca83dd080fac190df2a3c1e59c708809746a18c323393965"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/OPTICAL_EXPERIMENT_COMPARISON_SCOPE_ROOT.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/OPTICAL_EXPERIMENT_COMPARISON_SCOPE_ROOT.md",
+      "sha256": "2f34fa36a2d7da31be5cf78beaf4c1800ed91051dfdc9a542f1bacd09251def0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/SOURCE_PINS.json",
+      "sha256": "96f541f85637f19c0622ea98bcc57b0b4bf39541b5d1b6b53fde087212355685"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/experiment_units.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/author_history/experiment/experiment_units.py",
+      "sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/CONTROL_EXECUTION.json",
+      "sha256": "1a405c4683743bf827262ae96157fae3c05eb70c5424ec1b9f0df0a15f11f796"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/CONTROL_LABEL_CORRECTION_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/CONTROL_LABEL_CORRECTION_VERIFICATION.json",
+      "sha256": "e2045e3ef4076750d143d82615e58b9f6ee1d73c70989067199662d0d502a1bd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/CONTROL_RESULTS.json",
+      "sha256": "740c8d9cd1e04e58d097d3718ba657cd2768ea6499c97313fdc30bcb23234c57"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/CONTROL_STDOUT.log",
+      "sha256": "740c8d9cd1e04e58d097d3718ba657cd2768ea6499c97313fdc30bcb23234c57"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST.md",
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_PDF_RENDER_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_PDF_RENDER_EXECUTION.json",
+      "sha256": "3e23e8e169cbbc460b6062312481e0d95e11041f392f9ac773dcf8edcda2a0fa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_READ_AND_FAILURE_LOG.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_READ_AND_FAILURE_LOG.md",
+      "sha256": "82a953f0e7535fc09b98e36522e9862356c724cb94980ce8d2c4ae58fd83485d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_SEAL.json",
+      "sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_SOURCE_PINS_FINAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_SOURCE_PINS_FINAL.json",
+      "sha256": "b844fb306164649bd631ace3b1116a8f15503f45f19e851b38d30b75cee9553a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "1500c303bd7f25b6f255c562be2dbea67c01de82924e5ec39a10f49ea2f028f6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_VERIFICATION_EXECUTION.json",
+      "sha256": "6493252cdb1420e2394bb271f6516ee91aa8fb9a033902edea23ccccdb3dc2fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_VERIFICATION_REPORT.json",
+      "sha256": "3e0e7a42846945e8225ed392842da0575ea57e352559d30df62c28bbb8f473df"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/POST_VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/POST_VERIFICATION_STDOUT.log",
+      "sha256": "3e0e7a42846945e8225ed392842da0575ea57e352559d30df62c28bbb8f473df"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PRE.md",
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PRE_SEAL.json",
+      "sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_COMPARISON.md",
+      "sha256": "c24e8e0dcd6df868a59f26e6059f4d19daafdf2604e509e8fc46937fdc73c415"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "821c8916b22e267c19129e8e8806e8c3c566875f602ee839e4d54b2bc7763911"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "4f05e24eedbc24fb2ee2164e5d37c465ece298793ba948c74cde836a15cef958"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_VERIFICATION_EXECUTION.json",
+      "sha256": "9c3c05bd47ecf892690112c3f8153e1696b2f87612b12e95cc6548cb04b415a8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_VERIFICATION_REPORT.json",
+      "sha256": "146b9d1424ba24fa70128c6d7735d0d2aee5b3a5ec80ff2d239313225a25ec35"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/PUBLICATION_VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/PUBLICATION_VERIFICATION_STDOUT.log",
+      "sha256": "146b9d1424ba24fa70128c6d7735d0d2aee5b3a5ec80ff2d239313225a25ec35"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/SOURCE_PINS.json",
+      "sha256": "48c31b91d0f628ad61d5ca71713414cb0de85c8ea3a469618d1843c3e573babc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/VERIFICATION_EXECUTION.json",
+      "sha256": "853c2f74c9aafe09021579a05ea6f784d138172910b9fd645c49c38cae6103cf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/VERIFICATION_REPORT.json",
+      "sha256": "017fac69f7746979cd17a587171675ede67436f13dd95efb88b9a52e3adc5a97"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/VERIFICATION_STDOUT.log",
+      "sha256": "017fac69f7746979cd17a587171675ede67436f13dd95efb88b9a52e3adc5a97"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/CONTROL_EXECUTION.json",
+      "sha256": "b581903c3689516f1e3a60a47eec9629023fd59129c128ebdc5616760ff68da9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/CONTROL_RESULTS.json",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/CONTROL_STDOUT.log",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/PRESERVATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/PRESERVATION.json",
+      "sha256": "9e6291a7fde12137ac42adcd5faa2cec6b30257502459530315d9950d1c08ea3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/attempt01_before_empty_band_label_fix/optical_band_controls.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/attempt01_before_empty_band_label_fix/optical_band_controls.py",
+      "sha256": "3a11ce80240f7f2966783b8abd27ea7b271e61dd83c09f97846ae1cb3c6b8084"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/optical_band_controls.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/optical_band_controls.py",
+      "sha256": "56a189c0d7463c5cf6ae90a72209a0881e8a14d1a3b0100abe5b37f48b34cfb8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/post_verify_and_arithmetic.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/post_verify_and_arithmetic.py",
+      "sha256": "8082a0f4ed9130af436d34c44cadf9ed840b97e29f27848d61d10e2582c77b48"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/publication_verify.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/publication_verify.py",
+      "sha256": "a7d4cd3086282c948fd8aa040708664f1a827264d62048be52b5d992fecfc745"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/independent/verify_evidence.py",
+      "sha256": "76d329963967c04fa3a95ed6d5869cc8b677d0776363613d739f42d40595295d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dd431ab59a1f92686dc34024da42740b9c5b004abfd8a0195019a597f3807b95"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d365ab9473afcf1e9a54fbc4d18dc6005ef0efa3d6861a419c81b036ebd5f4f7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "e355c9640d7ec7b72027333141d482cae419785f17e22b2c3f65321c5f946654"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_SEVENTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/TWENTY_SEVENTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "bc2f0068529169d187f6c1ad7a74ff310e9bb0c569220aee0576d0dc2004d975"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/TWENTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "a5fb21a87822225eb99b5225d9554558b1d3b6c1d56ab4bfee6c48240aaa5bea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/optical-observation-bridge-20260924/review/OPTICAL_OBSERVATION_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "3b0f4fad324183d873dcb8d284de6521a00b602cdb7bfff6be02c88298c99461"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "verified_utc": "2026-09-25T01:23:56.567937+00:00",
+  "root_review": "Full proofs, code, scientific payloads, changes, failures and scope statements read; final Part A verifier and exact author/public diff reread after a previous truncated display.",
+  "seal_counts": {
+    "photon-added-energy-independent/PRE_SEAL.json": 45,
+    "photon-added-energy-independent/POST_SEAL.json": 42,
+    "photon-added-energy-independent/PUBLICATION_COMPARISON_SEAL.json": 33,
+    "selected-mark-power-independent/PRE_SEAL.json": 65,
+    "selected-mark-power-independent/POST_SEAL.json": 38,
+    "selected-mark-power-independent/PUBLICATION_COMPARISON_SEAL.json": 34,
+    "photon-added-energy-personal/AUTHOR_SEAL.json": 20,
+    "selected-mark-power-personal/AUTHOR_SEAL.json": 18,
+    "number-offset-observation-independent/PRE_SEAL.json": 22
+  },
+  "bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PRE_SEAL.json",
+      "sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+      "members_verified": 45
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST_SEAL.json",
+      "sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80",
+      "members_verified": 42
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "19f2c31594a7a807771dde273c81bc01af9ecaf001f70eb569f4228be99e779c",
+      "members_verified": 33
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PRE_SEAL.json",
+      "sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+      "members_verified": 65
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST_SEAL.json",
+      "sha256": "583af00f065fbc2d9c5de9fff379b441f9c09a67cad630612380929329932369",
+      "members_verified": 38
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "318c1b01fb81795ca58709b64bce1de2bddb39981904b7fe1a52b10a2eaf8b69",
+      "members_verified": 34
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-personal/AUTHOR_SEAL.json",
+      "sha256": "4dd7d35946c80fda3c70322c5ee61b475ea9f5fba4fde7a0e7cbae3521ed23cd",
+      "members_verified": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-personal/AUTHOR_SEAL.json",
+      "sha256": "b0378a615fdaaca99e563a78e4e1361a19635976e114e2f04f5e5485ceb8a69c",
+      "members_verified": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "members_verified": 22
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "9a0bd1472af2150e1343df8cc79a36b879e469f8dec393919bccdcf33271aaf4",
+      "live_sources_verified": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "65fabd8d7f3a02122c8c94aa175725a7f8eeac4c7abd2931ff9e25a24498651d",
+      "live_sources_verified": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "7c85aea8ef43782ef1a8e6dea959c8ffd2e74112f9c11be825210c0ff6bd7e76"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "67e4c75c06bbcaa98bbb4e9e3a9881c2a2ed90c6f38977fb1613bc812e97eccc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/INPUT_ENERGY_POWER_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "10ace3e319afd96b84c84c89a24733631fe07416ea603c38bcb974fb41f82109"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_NINTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "9e93248a3895d00774a4626132dce8874b509c1906e6a463064f6b9768e5768c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_NINTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "511547871f7a35c278bb8cbc51225956da8f45798621fca1a209b94c32fc2c23"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTIETH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "58b2e0625028e04c67c4860b5c418dbe2e9f839551e1d7cc1931ed29da4a2955"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTIETH_POST_ROOT_VERIFICATION.json",
+      "sha256": "57c2c9ad946d7146950ac303547d674476a3ed2d77878c21bb0458e39105e9d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PRE.md",
+      "sha256": "f27d6dd5374d8003ac7daf3b025818b22c428062daa496d2bbab80616fcdcbb9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/POST.md",
+      "sha256": "af8cf500c117f7410452780ad01175fe0f927d981a5be32e4e00ece0c23dc3d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_COMPARISON.md",
+      "sha256": "dcf357e3014199d0a720394308c28b142760c15d9a9754d2e9376c343b53d2e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PRE.md",
+      "sha256": "be47d27ab25dbf1853331b1bb8f02a2b67b3cc93c244b4a830fa86b810c71216"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/POST.md",
+      "sha256": "83e9fa441b7fbee49d1b7e24708dcd15a7d0641abbba3efb57065f188d7a80e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/PUBLICATION_COMPARISON.md",
+      "sha256": "64f8526758cfb4b4cea6a0833713440f4c03d05edea12d2fe8d756a584fffdf4"
+    }
+  ],
+  "public_note_sha256": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+  "primary_runner_sha256": "30bcc516487bd268c089793b675cf4a39932e03f8fd2b3afc80183f711af5799",
+  "result_sha256": "8301e6c5263d2842e1d129b1f30357c659a05fec09a6f11924ab4ec5d0256632",
+  "cache_sha256": "e2b4b63baf8443841d70afa3a92024402e6a3260414c6dd760a39de0b3a720fd",
+  "seven_parent_git_and_live_bytes_equal": true,
+  "thirteen_declared_inputs_equal": true,
+  "fresh_execution": {
+    "seconds": 3.958324909210205,
+    "exit_code": 0,
+    "separate_stderr_bytes": 0,
+    "combined_stdout_bytes": 2089805,
+    "scientific_reruns_in_this_verification": 0
+  },
+  "independence": {
+    "Part_A": "Separately sealed PRE, released-source POST, and final source/payload correspondence. No author execution. An accidental truncated Part B output excerpt during final correspondence is preserved; it occurred after both Part A scientific seals and the separate number-offset PRE. No Part B science validation is claimed by this checker.",
+    "Part_B": "Separately sealed PRE, released-source POST, and final source/payload correspondence. No author execution. Part A input bytes only were read opaquely for complete cache fingerprint verification; no Part A scientific review.",
+    "combined_cache": "Part A verified the formatted cache tail with only seven directly available inputs. Part B recomputed all thirteen input hashes and the complete fingerprint, and matched full stdout to result plus trailer.",
+    "scope": "Two bounded independent scientific checks of different parts, not two independent reviews of the entire combined result."
+  },
+  "public_repairs": [
+    "Explicit energy-difference and scalar-zero wording in Part A.",
+    "Explicit compact weighted electric-domain assumptions for selected power in Part B."
+  ],
+  "limits": [
+    "Conditional supplied finite-graph model and weak-field limits only.",
+    "No native preparation, physical scale selection, measured energy line, absorption, heat, reservoir ledger, finite laboratory error or empirical agreement.",
+    "No formal audit verdict or TOE completion."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "source_pins_sha256": "bbebc8141695fa9b371b0a0352b3e369ab81a1240d1b9e29d0873f2bdbb5e908",
+  "source_count": 103,
+  "seals": [
+    {
+      "label": "author42",
+      "seal": "AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "members": 10
+    },
+    {
+      "label": "author43",
+      "seal": "AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+      "members": 11
+    },
+    {
+      "label": "independent42",
+      "seal": "PRE_SEAL.json",
+      "sha256": "61b5a0edaffee445ba80cfd7eb7e25cb60dea3e6aede4b449df2fc2e3dbc7cca",
+      "members": 33
+    },
+    {
+      "label": "independent42",
+      "seal": "POST_SEAL.json",
+      "sha256": "97fb749f28603a6a3d49df3aaf654f02377a412f33607df19e7604a3db024fc4",
+      "members": 21
+    }
+  ],
+  "own43_files": 80,
+  "git_context": {
+    "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "graph_base_path": "docs/audit/data/citation_graph_manifest.json",
+    "base_graph_snapshot": "sources/base_citation_graph_manifest.json",
+    "base_graph_sha256": "687e5130acd4b38ac5f318c4bea9c1362920a687eae2306c08b2706a35e20abf",
+    "observed_HEAD": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "observed_branch": "codex/mobile-record-birth-charge-and-grouping-dynamics-20260925"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-25T00:12:47.945634+00:00",
+  "main_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "role": "PR9150 reviewed optical restrictions and primary comparison scope"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "role": "Exact primary PDF, previously fully read; external only"
+    }
+  ],
+  "prepared_PR_head": "fb1991dfa6971e449513fb8e29884376739d21cc",
+  "optical_PR_head": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+  "fresh_inventory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OBSERVATION_OPEN_PR_INVENTORY_0012.json",
+  "inventory_sha256": "2760e6222668c73308079c41a5e49178df776ce595e958e2ab37659386a87c9a",
+  "unrelated_changed_science_not_imported": {
+    "new": [
+      {
+        "baseRefName": "main",
+        "headRefOid": "ebb46c743c5671cdd8c352c2f2bb27fa176f1e13",
+        "isDraft": false,
+        "number": 9152,
+        "title": "physics-loop: admissibility induced-law block 112 - the curvature member's constraint algebra closes on the lattice only at beta = -alpha, and there the walker's own states cannot be its content",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9152"
+      },
+      {
+        "baseRefName": "main",
+        "headRefOid": "fefdd4b3c1d7a85ef7020dc757902ff5fc4c9a6a",
+        "isDraft": false,
+        "number": 9151,
+        "title": "physics-loop: admissibility induced-law block 111 - in a clock gradient moving records settle with one weight per record but do not drift alike, and groups need a binding clause to fall as groups",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9151"
+      },
+      {
+        "baseRefName": "codex/mobile-record-probe-energy-and-observation-limits-20260924",
+        "headRefOid": "cb0ad485403605fa007132a73d8feaac6b6c2d81",
+        "isDraft": false,
+        "number": 9150,
+        "title": "Bound optical energy and original count response; define experiment comparison gap",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9150"
+      },
+      {
+        "baseRefName": "main",
+        "headRefOid": "6dcde6d5e96a2e31555bc566043609d31800f473",
+        "isDraft": false,
+        "number": 9149,
+        "title": "feat(gauge): gauge the composite-site charge with the spin-1/2 link field",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9149"
+      },
+      {
+        "baseRefName": "main",
+        "headRefOid": "08a8793df4867d7bef3230345261c58439c98742",
+        "isDraft": false,
+        "number": 9148,
+        "title": "feat(photon): projector Monte Carlo of the ring model at the pure-ring point",
+        "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9148"
+      }
+    ],
+    "changed": [],
+    "gone": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "seventh_eighth_metadata_repair_comparison",
+  "sealed_at_utc": "2026-09-24T16:44:47.003340+00:00",
+  "files": {
+    "METADATA_REPAIR_COMPARISON.md": "ac92a6e4f0539c9d84c47cfe93e001072cdb48ab9b4ab6e690af41927fcff571",
+    "METADATA_REPAIR_SOURCE_PINS.json": "e94e27bf9e69c351dddb6983085b1612e746c7fbe3c63fc5460065835379b2ed",
+    "METADATA_REPAIR_EVIDENCE.json": "240e4a29899bd3361c925f4f4f8c77b29d40531f3d57e76dc4e49649c5aaaa1f",
+    "metadata_repair_checks.py": "02304916deb084796618443891497eed179f234d2a89bcc8a6972626b5240b8f",
+    "METADATA_REPAIR_CHECK.stdout.txt": "240e4a29899bd3361c925f4f4f8c77b29d40531f3d57e76dc4e49649c5aaaa1f",
+    "METADATA_REPAIR_CHECK.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "METADATA_REPAIR_CHECK_EXECUTION.json": "a065b92b0d5fd7fb798dcce3dd33923ea8c66477f89d88740f021b0477167e65",
+    "SEVENTH_METADATA_ONLY_DIFF.txt": "b03ab1c5e2dbfa6ed7691f98ab42e7172f4da1e0fbe52bef24a63aacb127906a",
+    "EIGHTH_METADATA_ONLY_DIFF.txt": "10dd70d69743e61dce0d3c0b43caef9552801d8d91532431e12c44e5bf50c7bc"
+  },
+  "all_pinned_sources_and_evidence_reverified_at_seal": true,
+  "comparison_bases": {
+    "SEVENTH": "918fbe18619667017c56c29677f9f02363368d89",
+    "EIGHTH": "cfac353eedae504627196bf9e48009f1b4177f94"
+  },
+  "material_metadata_discrepancies": [],
+  "material_cache_execution_output_discrepancies": [],
+  "scientific_values_unchanged_except_recorded_runtime_fields": true,
+  "disposition": "No repair requested within metadata-only delta and complete fresh source/cache/output correspondence scope.",
+  "new_blind_scientific_review_claim": false,
+  "primaries_rerun_by_checker": false,
+  "previous_publication_seals_preserved": true,
+  "publication_or_audit_state_changed": false,
+  "citation_manifest_review_performed": false,
+  "other_active_scientific_packets_read": false,
+  "delegation_used": false
+}

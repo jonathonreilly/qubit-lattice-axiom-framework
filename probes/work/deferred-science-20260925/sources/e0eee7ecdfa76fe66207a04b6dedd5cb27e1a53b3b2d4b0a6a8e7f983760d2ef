@@ -1,0 +1,67 @@
+{
+  "additional_pinned_parent_definition_source_count": 1,
+  "author_seal_member_count_verified": 11,
+  "checker_source_sha256": "872a8d5507bb2187eea304a60490cd58c72305d41ea35edeaefc1360f2fc53b5",
+  "field_response_rows": [
+    {
+      "analytic_initial_counts_and_loop_invariants_match": true,
+      "compared_to_frozen_independent_primitive_run": true,
+      "degree": 3,
+      "loop_edge_labels_not_claimed_identical": true,
+      "periods": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "analytic_initial_counts_and_loop_invariants_match": true,
+      "compared_to_frozen_independent_primitive_run": false,
+      "degree": 4,
+      "loop_edge_labels_not_claimed_identical": true,
+      "periods": [
+        6,
+        6
+      ]
+    },
+    {
+      "analytic_initial_counts_and_loop_invariants_match": true,
+      "compared_to_frozen_independent_primitive_run": true,
+      "degree": 6,
+      "loop_edge_labels_not_claimed_identical": true,
+      "periods": [
+        6,
+        6,
+        6
+      ]
+    }
+  ],
+  "frozen_PRE_member_count_verified": 22,
+  "independent_PRE_auxiliary_check_history": "Preserved unchanged in the original 22-member PRE seal; no rewrite or erasure.",
+  "matching_primary_physics_sources": [
+    "LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "overall": "All requested correspondence checks passed within stated scope",
+  "preserved_root_failure": {
+    "execution": {
+      "exit_code": 1,
+      "finished_at": "2026-09-24T18:26:08.709383+00:00",
+      "wall_seconds": 0.146794208092615
+    },
+    "failure_preserved": true,
+    "reason": "defaultdict(set()) passes a set instance rather than a factory; TypeError before graph results.",
+    "sole_source_change": "defaultdict(set()) -> defaultdict(set)"
+  },
+  "released_root_file_count_verified": 12,
+  "root_current_stderr_empty": true,
+  "root_internal_elapsed_seconds": 0.3747947921510786,
+  "root_result_equals_stdout_bytes": true,
+  "root_successful_execution_record": {
+    "exit_code": 0,
+    "finished_at": "2026-09-24T18:26:36.589274+00:00",
+    "wall_seconds": 0.5278187920339406
+  },
+  "scope": "Released Part II source/data comparison only; no author scientific control rerun, no Part I verdict, no independent numerical replication after release.",
+  "source_code_self_fingerprint_matches": true
+}

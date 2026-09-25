@@ -1,0 +1,1567 @@
+{
+  "scope": "Own exact local qutrit/rotor path and Gauss checks; no dynamical or photon-absorption simulation.",
+  "script_sha256": "ae544cf6cb9198630e87fa5ebcd98cae319f27ca3429ccb3cf38cf6da4168043",
+  "check_count": 11,
+  "checks": [
+    {
+      "name": "dressing_difference_(6, 6, 6)",
+      "verified": true,
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "loop": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          18,
+          -1
+        ],
+        [
+          109,
+          1
+        ]
+      ],
+      "preparation_edges": 6
+    },
+    {
+      "name": "physical_charge_words_(6, 6, 6)",
+      "verified": true,
+      "initial_particle_number": 112,
+      "total_signed_charge": 108
+    },
+    {
+      "name": "all_primitive_gauss_steps_(6, 6, 6)",
+      "verified": true,
+      "initial_and_mark_cases": 24,
+      "legal_old_hops_per_branch": 2,
+      "surviving_mark_paths_per_branch": 1
+    },
+    {
+      "name": "all_prepared_laurent_effects_(6, 6, 6)",
+      "verified": true,
+      "rows": [
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "-1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "-1"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  18,
+                  1
+                ],
+                [
+                  109,
+                  -1
+                ]
+              ],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  18,
+                  -1
+                ],
+                [
+                  109,
+                  1
+                ]
+              ],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "4"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            6,
+            6
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        }
+      ]
+    },
+    {
+      "name": "direct_physical_output_norms_(6, 6, 6)",
+      "verified": true,
+      "rows": [
+        {
+          "input": "zero_flux",
+          "dephased": false,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "zero_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "even_two_flux",
+          "dephased": false,
+          "rate_coefficient": "1/2"
+        },
+        {
+          "input": "even_two_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "odd_two_flux",
+          "dephased": false,
+          "rate_coefficient": "3/2"
+        },
+        {
+          "input": "odd_two_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        }
+      ]
+    },
+    {
+      "name": "dressing_difference_(6, 8, 10)",
+      "verified": true,
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "loop": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          30,
+          -1
+        ],
+        [
+          241,
+          1
+        ]
+      ],
+      "preparation_edges": 6
+    },
+    {
+      "name": "physical_charge_words_(6, 8, 10)",
+      "verified": true,
+      "initial_particle_number": 244,
+      "total_signed_charge": 240
+    },
+    {
+      "name": "all_primitive_gauss_steps_(6, 8, 10)",
+      "verified": true,
+      "initial_and_mark_cases": 24,
+      "legal_old_hops_per_branch": 2,
+      "surviving_mark_paths_per_branch": 1
+    },
+    {
+      "name": "all_prepared_laurent_effects_(6, 8, 10)",
+      "verified": true,
+      "rows": [
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "-1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "-1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "-1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "-1"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "1/2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "1/2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  1,
+                  1
+                ],
+                [
+                  30,
+                  1
+                ],
+                [
+                  241,
+                  -1
+                ]
+              ],
+              "coefficient": "1"
+            },
+            {
+              "shift": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  -1
+                ],
+                [
+                  30,
+                  -1
+                ],
+                [
+                  241,
+                  1
+                ]
+              ],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "loop",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": -1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_plus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "resolved_minus",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "1"
+            }
+          ],
+          "path_count": 2,
+          "final_matter_word_count": 1
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": false,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "4"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        },
+        {
+          "periods": [
+            6,
+            8,
+            10
+          ],
+          "dressing": "star",
+          "relative_sign": 1,
+          "channel": "coherent",
+          "dephased": true,
+          "effect": [
+            {
+              "shift": [],
+              "coefficient": "2"
+            }
+          ],
+          "path_count": 4,
+          "final_matter_word_count": 2
+        }
+      ]
+    },
+    {
+      "name": "direct_physical_output_norms_(6, 8, 10)",
+      "verified": true,
+      "rows": [
+        {
+          "input": "zero_flux",
+          "dephased": false,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "zero_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "even_two_flux",
+          "dephased": false,
+          "rate_coefficient": "1/2"
+        },
+        {
+          "input": "even_two_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        },
+        {
+          "input": "odd_two_flux",
+          "dephased": false,
+          "rate_coefficient": "3/2"
+        },
+        {
+          "input": "odd_two_flux",
+          "dephased": true,
+          "rate_coefficient": "1"
+        }
+      ]
+    },
+    {
+      "name": "complete_effect_inventory",
+      "verified": true,
+      "total_effect_rows": 48,
+      "serialized_path_count": 128
+    }
+  ],
+  "effect_row_count": 48,
+  "path_certificate_sha256": "d1495a65189531dc12f77b14c0366488926cc78a42b938e6cd18bb7c5fe0e66e"
+}

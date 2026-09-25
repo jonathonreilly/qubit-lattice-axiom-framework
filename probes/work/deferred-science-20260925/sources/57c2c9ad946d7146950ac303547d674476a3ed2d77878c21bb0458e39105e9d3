@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-25T00:55:02.311867+00:00",
+  "scope": "Root full scientific reading and exact POST evidence verification, not an audit verdict",
+  "PRE_seal_sha256": "a1cc8dc5b9af73952b55402902076e1b7b28b7bc7bbc2de4834c65dd8297031d",
+  "POST_seal_sha256": "583af00f065fbc2d9c5de9fff379b441f9c09a67cad630612380929329932369",
+  "members": {
+    "PRE_SEAL.json": 65,
+    "POST_SEAL.json": 38
+  },
+  "author_origins": 19,
+  "prior_origins": 10,
+  "root_read": [
+    "complete POST.md",
+    "complete post_check.py",
+    "complete post_verify.py and post_freeze.py",
+    "all 32 fillings and 128 generated edges",
+    "all six independent L16 band rows",
+    "all 18 author spectral arithmetic rows",
+    "complete exact comparisons, bindings, execution logs and POST_FINAL_VERIFICATION"
+  ],
+  "accepted": [
+    "606 exact coefficients and 528 pair summaries agree with independent PRE",
+    "67-edge vector and all 7396 Hessian entries verified",
+    "525 exact filling equations; tamper control",
+    "all-volume positivity and hard-band proofs for each fixed L",
+    "weighted smooth-packet energy derivative; specific B preserves D(D) by monotone occupancy"
+  ],
+  "limits": [
+    "L32/L64 Fourier tables inspected, not freshly independently recomputed",
+    "fixed-L limit constants do not justify simultaneous L/g/optical limits",
+    "no full channel sum, microscopic initial derivative, physical reservoir, absorption or empirical validation"
+  ],
+  "repairs": [
+    "publish explicit smooth compact all-electric-moment domain and weighted Dyson differentiability; do not call degeneracy a counterexample to the specific B"
+  ],
+  "author_or_checker_scientific_reruns": 0,
+  "existing_active_manifest_pins_verified": 150
+}

@@ -1,0 +1,329 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/AUTHOR_SEAL.json",
+      "sha256": "e59ad86d86b40ac23bf8bf9e3ed656865587041760fde772fe3b664a785f4e68"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/CONTROL.stdout",
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/EXECUTION.json",
+      "sha256": "fce481070de279bc1017118f5f7f36e8f924bbbf295ae695138fc14e8dc253a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/FINITE_WINDOW_ENERGY_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_ENERGY_RESULTS.json",
+      "sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "sha256": "a72af425e970c080502a394902adf86437d767e90921b30f6e6c889c99ccb902"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/ROOT_REVIEW.json",
+      "sha256": "3301208fc049212cddcfb1e53e81fc4271e97be11a9226f8c2c51da97d0642ce"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/SOURCE_PINS.json",
+      "sha256": "ce71315393d6c100dfba71ee5da05132310fe7a928770d47a6076aad08a1d97d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-personal/finite_window_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/CONTROL_ATTEMPT_01_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/CONTROL_ATTEMPT_01_EXECUTION.json",
+      "sha256": "2a7b596ab6cee5582b7828fa91fd39159ba05c0057db17f8fe16efb1403c3b5c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/CONTROL_ATTEMPT_01_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/CONTROL_ATTEMPT_01_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/CONTROL_ATTEMPT_01_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/CONTROL_ATTEMPT_01_STDOUT.json",
+      "sha256": "eb4cce1e093c254a3c7a885dcd6733ea319b96979e3d6fbb7eaa18546c4c3192"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/EVIDENCE_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/EVIDENCE_VERIFICATION.json",
+      "sha256": "a99987cab617d847d821562a75f3c65a0f4486bdc4f67f5874f578973ca1f2fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/EVIDENCE_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/EVIDENCE_VERIFICATION_EXECUTION.json",
+      "sha256": "9de95b643bb2ed4b4eaf60a0afc37ddc63cc6ff06f05408d7eb2f09bd4de50ea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/EVIDENCE_VERIFICATION_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/EVIDENCE_VERIFICATION_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "sha256": "4b2a0c596606d6d018b9a3b4f9267f3b89185bd026d4700f350bc021b4ae3471"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST.md",
+      "sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_BINDING_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_BINDING_EXECUTION.json",
+      "sha256": "5a25b705eebcd71b57463591d67fcd8cddcc412e349884a6bcba67ca64b449fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_BINDING_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_BINDING_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_BINDING_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_BINDING_STDOUT.json",
+      "sha256": "2f63e402e86e4e686cf587aa4aa9e2563ce2b0266a529bfa11eaa860217dd3a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_SEAL.json",
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_SEAL_EXECUTION.json",
+      "sha256": "23f773a4822dd2ade2b922909ba458bd1df3d4d399812aa71980752ba77f3151"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST_SOURCE_PINS.json",
+      "sha256": "c2ea89a3449b8fadeb9d6429e6ba9eb20cce3ecea82d29b4a65b822924ae8d03"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE.md",
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE_SEAL.json",
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PRE_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE_SEAL_EXECUTION.json",
+      "sha256": "a8396a0ea91818871d96c5e8d83eb4d7acf29fe6d2a331fa8dcfde40779c06bb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PRE_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_BINDING_ATTEMPT_01_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_BINDING_ATTEMPT_01_EXECUTION.json",
+      "sha256": "bb42ceae64131df9fb0bf9b2f34c1d56691b9719c2a306141a7c50cf9eb39284"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_BINDING_ATTEMPT_01_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_BINDING_ATTEMPT_01_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_BINDING_ATTEMPT_01_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_BINDING_ATTEMPT_01_STDOUT.json",
+      "sha256": "3b7d3b25baaf424a68d282af6353d2b06377fee8de814b8e13f7859333dae11e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_COMPARISON.md",
+      "sha256": "3e587ca34f684d624912b96d61f0b1aeca8791bf1f8a5c984459f6f94710bc6d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "dbe7b8e5f0ba94c1aea2dad3ebfccb77e77d30fbd65213e1609b91eac761cdf0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_COMPARISON_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_COMPARISON_SEAL_EXECUTION.json",
+      "sha256": "68760188557b4e8cbfe6f666060e25d9523a6922bf2a8590d3ca46a5dc99eb6d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_COMPARISON_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_COMPARISON_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION.md",
+      "sha256": "49fb9b3bdeca3582f3800e99fa045c832dd0120cb97cf86be658daeef4c58844"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_CHECK_EXECUTION.json",
+      "sha256": "60f67e0c818a350296dc1403aac92e2dcd593ed543e6d9f0bb7f38842ea68700"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_CHECK_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_CHECK_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_CHECK_STDOUT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_CHECK_STDOUT.json",
+      "sha256": "3f4db25890da508f46c329355782d96aa1891563fb23705524a55d206e0ac43f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_SEAL.json",
+      "sha256": "54e6f7a753c59ba96ccda287f45a682f39397916a0cf58bada9d7d3379a0c6d8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_SEAL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_SEAL_EXECUTION.json",
+      "sha256": "7813a2555591f3f69cd61cbe2fa0bbe21c97624b26a16d638fba6c2bd381900b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_SEAL_STDERR.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_SEAL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_REVISION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_REVISION_SOURCE_PINS.json",
+      "sha256": "ddaaba080c6e5a466674e287751fe162f055c84a571585fe1aeb942abbb7d5cf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "3dcbc643760944756f471369eea54dc37187b2703b0aa384157e1626749dfe19"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/SOURCE_PINS.json",
+      "sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/post_bind_and_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/post_bind_and_check.py",
+      "sha256": "53c7cb68654f3651e62ab7b7a61f0e6071e61d87cc716bf525ce2da2809e4917"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/primitive_energy_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_bind_and_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/publication_bind_and_check.py",
+      "sha256": "c8f0579ef259bc0df33cfad78e2978a60bbc55199b64a35ca8ad0c0b5f1ea1fd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/publication_revision_check.py",
+      "sha256": "ff7e0d6c9960a12e67c23246f33e2b56de0803439a17b82097af3b30f976467d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/seal_post.py",
+      "sha256": "b74d6355be99aa3020b67412d69693819a0143fc41308e3fcb9d6c91c1e0787b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/seal_pre.py",
+      "sha256": "d5273a92611c7dd0eae3d044e0f4876082216dbdf2a48abd71deb755db6160d5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/seal_publication_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/seal_publication_comparison.py",
+      "sha256": "f0b5e74f64987fef2d44d04dfdcf95f6740648a9c5ec14f6c8ed8cd87d1b57f5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/seal_publication_revision.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/seal_publication_revision.py",
+      "sha256": "171e412ab6a3b760e30b436a4620e45e5be7e3fb73aa13177379c18c385c703a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/verify_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/verify_evidence.py",
+      "sha256": "ceef075a3cb0a871990bbfb63dc15885964f8c3c7683a2827c3f044474f74ce7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "sha256": "cd145383f395171e33c34666744c326c92729018117e00e30bfd5a8a250ada51"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FOURTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/THIRTY_FOURTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "c32115be3cdb234a7c58dd4128450fd92926c0f483739d5c290f20ee4a0eb794"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/THIRTY_FOURTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/THIRTY_FOURTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "3bedad8421f9aa1d58e980a04666ab0753013744be271ed877bd7a88f234eff1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8ec03d41266350e7f73b3e1ea38665ed77fe01f91a53fbee7f9424fcd823335b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "04c009b0fa5523c8409d8663c935dffaebcaaa1aad61320c6f90dba1704094de"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "f96c0a11fdf0968c4d035d5881f92ee038c7bed0d766dd3b904171c4b912fd51"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "sha256": "9c21ce603b25de26019d0e07b6dcffe043d80cf3a56632ac4682d886528dcf8f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "95e72b6ba5b1e070bcadba76634a3add3402f7d31f78f8f8d1c0533218d98537"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_FINAL_REVIEW.md",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_FINAL_REVIEW.md",
+      "sha256": "0b5d33c895f76e5e4d2e79704b74923503e4f410f15e87e264b77a0c93a6e424"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.json",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.json",
+      "sha256": "b8edb41ee31f18ef7c82e6388be29e17c9031fbeae964235b9d40adf0c46d25c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FINITE_WINDOW_ENERGY_PUBLICATION_GATE_ATTEMPT01.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_PUBLICATION_GATE_ATTEMPT01.stdout",
+      "sha256": "f7dd534194a438814e87b90ca3361729a2468a1e5692c6e9035edbf09097c63a"
+    }
+  ]
+}

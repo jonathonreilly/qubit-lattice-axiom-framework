@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-25T04:45:34.056510+00:00",
+  "main": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "paths": [
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "same_as_publication_base": true
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "same_as_publication_base": true
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "same_as_publication_base": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "same_as_publication_base": true
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "same_as_publication_base": true
+    }
+  ],
+  "new_prs": [
+    {
+      "number": 9193,
+      "head": "52e320a4b6a6e1ea2bd763adf9a83a524e3838a8",
+      "title": "physics-loop: admissibility induced-law block 134 - one light cone from the source link: the walkers smooth states meet the members identity at leading order iff alpha = K/4"
+    },
+    {
+      "number": 9192,
+      "head": "fa81cd2a2c6038a97e862e8ff1ec83bda18084b9",
+      "title": "science: bound microscopic energy laws after original formation"
+    },
+    {
+      "number": 9191,
+      "head": "4ad51fd69c19f74b0183ac8c3576bd5d84ace42b",
+      "title": "physics-loop: admissibility induced-law block 133 - a massive body at rest sits on one sublattice: its chessboard of clocks stays local, and never enters the pull at any power of the distance"
+    }
+  ],
+  "changed_prior_heads": [],
+  "scope": "Exact imported parents/procedure checked after fetch. New PR metadata is not scientific evidence."
+}

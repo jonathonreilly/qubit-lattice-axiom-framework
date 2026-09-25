@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-25T05:51:44.140949+00:00",
+  "PRE_sha256": "e02c3983ce098b6af566a03a603b8c484f17bd50626181851c3895e27101fcda",
+  "PRE_seal_sha256": "d65cdc1e27cd6757c9437f62cec7c45bfa7a3c850da4c5f2f2fe510983c00dad",
+  "sealed_members": 30,
+  "all_unchanged": true,
+  "complete_root_reads": [
+    "PRE full proof",
+    "full exact control source",
+    "all115 final scientific groups",
+    "read-only verifier",
+    "source manifests, diff and read/failure log"
+  ],
+  "readonly_execution_seconds": 0.054289417108520865,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "fresh_stored_output_exact_except_timestamp": true,
+  "root_review": "No required correction. Bounded strong Duhamel argument supports every normal density; opposite impulse sign consistent. Elementary plaquettes at L4 remain48/96, all graph fourcycles60/120. PRE-only general-density strengthening, response matrix and stationary counterexample retain attribution. No microscopic derivative or observation claim.",
+  "author_unchanged_seal": "ffd9f68e551afb30573d4cf727f8f5c58b4b32d6feb2c128fd660ecd74416486"
+}

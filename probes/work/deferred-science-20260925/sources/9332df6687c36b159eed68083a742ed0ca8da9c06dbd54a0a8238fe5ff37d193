@@ -1,0 +1,10 @@
+{
+  "note_sha256": "e9d858a9a4c456c42496159c0ec75ce085957641870dc98cdb8cd69aed04629c",
+  "runner_sha256": "3acb32fac4d5de45177fab8b7ca728545e733a1eb44ce7d6ab2778c5c28da34a",
+  "result_sha256": "91ecd9d08bb13d30a172be2b72b5eecdb7023c1c70aecb333cd72faa31e569e8",
+  "cache_sha256": "a2ff8beb93dbb4f762cda3e69af5de05f21e053bcc21a0cb4cc2dda5f6b9f6f3",
+  "seconds": 0.19647526741027832,
+  "scientific_payloads_equal_sealed_sources": true,
+  "stdout_exact_result_plus_summary": true,
+  "stderr_caveat": "API merges subprocess stderr into stdout."
+}

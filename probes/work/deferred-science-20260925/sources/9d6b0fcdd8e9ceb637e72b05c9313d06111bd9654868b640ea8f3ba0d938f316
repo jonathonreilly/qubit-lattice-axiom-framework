@@ -1,0 +1,31 @@
+{
+  "verified_utc": "2026-09-25T05:15:30.070393+00:00",
+  "elapsed_seconds": 1.3092187910806388,
+  "exit_code": 0,
+  "sealed_report_sha256": "634e5eb994d58942350284dda85919b9d53ed4c6eafad54b1ae92d6e96fe9624",
+  "seal_sha256": "fe73f2ace3948ed56f9b756652364fbb7012d2e8f858b73f7c42f8e896e95087",
+  "seal_members": 113,
+  "frozen_sources": 97,
+  "prior_seals": 9,
+  "prior_member_entries": 254,
+  "checker_sha256": "7910c3cf69c7973b6046abe2d66988626069874d2327bc7f85250c85f66928f6",
+  "checker_is_read_only_after_full_source_review": true,
+  "root_stdout_sha256": "d6304a6239e456b9abad4c3f79e24e369e88bb98395d0505d9770db831ed91de",
+  "root_stderr_bytes": 0,
+  "fresh_checker_output_byte_identical_to_sealed_output": true,
+  "canonical_note_sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+  "complete_payload_leaf_counts": {
+    "str": 686,
+    "int": 758865,
+    "bool": 151,
+    "float": 33,
+    "NoneType": 36
+  },
+  "exact_certificate_rows": 208,
+  "exact_certificate_nonzero_entries": 11884,
+  "disclosed_difference_count": 7,
+  "new_scientific_or_eigensolver_execution": false,
+  "audit_verdict_applied": false,
+  "required_mathematical_repairs": [],
+  "verification_scope": "Full final report/code/process read; all frozen sources and prior seals rebound; exact stored-certificate and cache arithmetic replay. Earlier blind PRE/released POST scopes remain separate."
+}

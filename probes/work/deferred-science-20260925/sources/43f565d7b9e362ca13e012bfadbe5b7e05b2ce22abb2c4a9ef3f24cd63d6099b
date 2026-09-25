@@ -1,0 +1,159 @@
+{
+  "sealed_utc": "2026-09-25T01:31:26.648028+00:00",
+  "scope": "Bounded released-source root32 POST; original record law, domains, energy/accounting distinctions and conditional weak-field supplement. No author-program execution or audit verdict.",
+  "report": "POST.md",
+  "author_seal_sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+  "author_members_verified": 8,
+  "released_source_origins": 10,
+  "current_parent_git_origins_verified": 3,
+  "PRE_preserved": {
+    "seal_sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+    "members_verified": 22
+  },
+  "prior_Part_A_scope_record_preserved": {
+    "directory": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent",
+    "seal_sha256": "19f2c31594a7a807771dde273c81bc01af9ecaf001f70eb569f4228be99e779c",
+    "members_verified": 33,
+    "incident_sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536",
+    "scope": "Read-only hash verification; no new Part B science inspection or validation."
+  },
+  "POST_domain_argument_attribution": "Independent POST addition, not sealed root or blind PRE authorship.",
+  "weak_field_rate_independently_verified": false,
+  "author_programs_executed_or_imported": [],
+  "other_active_scientific_packets_opened_during_POST": [],
+  "failure_history_preserved": "POST_BINDING_FAILURE_HISTORY.json",
+  "member_count": 26,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 21880,
+      "sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2"
+    },
+    {
+      "path": "POST_BINDING_ATTEMPT_02_EXECUTION.json",
+      "bytes": 651,
+      "sha256": "c76be4e38dde3a0dc5c2ecfde9e279990f74e0a9e5cd09199c01a6d3bf22bce1"
+    },
+    {
+      "path": "POST_BINDING_ATTEMPT_02_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "POST_BINDING_ATTEMPT_02_STDOUT.json",
+      "bytes": 8391,
+      "sha256": "0456f95cd939a4c36811aa3d9f3ba1c6a01dcb5892b064d60da4bb61e5a66a2f"
+    },
+    {
+      "path": "POST_BINDING_EXECUTION.json",
+      "bytes": 651,
+      "sha256": "571b7845f013f294f1063bd527e5db4df0dbca724962729149d2be47e9da019a"
+    },
+    {
+      "path": "POST_BINDING_FAILURE_HISTORY.json",
+      "bytes": 773,
+      "sha256": "86dc00e526cdd82252084de3e95daeb1b39971c6ce9cb0ee70d382214a35df80"
+    },
+    {
+      "path": "POST_BINDING_STDERR.txt",
+      "bytes": 519,
+      "sha256": "509c07517684ecd62f726748f67f59ccd4aa14a50bda99d0ac3ba5dc8b79416e"
+    },
+    {
+      "path": "POST_BINDING_STDOUT.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "POST_CORRECTIONS.json",
+      "bytes": 1815,
+      "sha256": "5a0097a55805058d3dc7c26fd78a9fcd41c254ba95691702d1b088c6c68e3a00"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 4500,
+      "sha256": "aee655b5bb3bb333c408c9f71c73176130f2916e88e7c2d295dba1c5e92c36ab"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 26240,
+      "sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6"
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "bytes": 4540,
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 5569,
+      "sha256": "e1d31f7110202da90887290645df65e8f6f4ce151d9f7643aa850a574a2c01e2"
+    },
+    {
+      "path": "post_bind_and_check.py",
+      "bytes": 10235,
+      "sha256": "4bc6b134377e4339a92b286f379d916fc2c2dde2fc6df991993ca3c7c21ee297"
+    },
+    {
+      "path": "post_frozen_author/AUTHOR_SEAL.json",
+      "bytes": 1270,
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7"
+    },
+    {
+      "path": "post_frozen_author/CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_frozen_author/CONTROL.stdout",
+      "bytes": 60855,
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042"
+    },
+    {
+      "path": "post_frozen_author/EXECUTION.json",
+      "bytes": 368,
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4"
+    },
+    {
+      "path": "post_frozen_author/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "bytes": 7935,
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870"
+    },
+    {
+      "path": "post_frozen_author/NUMBER_OFFSET_RESULTS.json",
+      "bytes": 60855,
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042"
+    },
+    {
+      "path": "post_frozen_author/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "bytes": 972,
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa"
+    },
+    {
+      "path": "post_frozen_author/ROOT_REVIEW.json",
+      "bytes": 1276,
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb"
+    },
+    {
+      "path": "post_frozen_author/SOURCE_PINS.json",
+      "bytes": 1112,
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a"
+    },
+    {
+      "path": "post_frozen_author/number_offset_controls.py",
+      "bytes": 5639,
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724"
+    },
+    {
+      "path": "post_history/post_bind_and_check_attempt_01.py",
+      "bytes": 10041,
+      "sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 5755,
+      "sha256": "766da3f7b8a343f08621cb3905840f3b4d7dde72bdecad19a74c97983dc01b1a"
+    }
+  ],
+  "next_step": "Stop. Root may read this complete sealed comparison before any public incorporation."
+}

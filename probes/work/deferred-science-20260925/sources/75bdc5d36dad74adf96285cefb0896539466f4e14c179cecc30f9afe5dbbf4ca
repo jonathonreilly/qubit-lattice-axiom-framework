@@ -1,0 +1,156 @@
+{
+  "sealed_utc": "2026-09-25T02:47:00.762132+00:00",
+  "signed_by": "Codex independent checker /root/rotor_upper_tail_check",
+  "scope": "Blind bounded PRE: full microscopic spectral energy laws for fixed positive-probability finite-bin records, separately proved stopped birth instrument, ordered birth-output limit, and independent exact small-graph moment counterexample.",
+  "report": "PRE.md",
+  "scientific_source_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "scientific_parent_count": 3,
+  "source_origin_count": 13,
+  "author_sources_read": [],
+  "author_or_parent_scientific_programs_imported_or_executed": [],
+  "own_scientific_controls": [
+    {
+      "source": "primitive_energy_control.py",
+      "execution": "CONTROL_ATTEMPT_01_EXECUTION.json",
+      "output": "CONTROL_ATTEMPT_01_STDOUT.json",
+      "exit_code": 0
+    }
+  ],
+  "limitations": [
+    "Fixed graph and fixed positive event probability; no uniform shrinking-window or growing-volume theorem.",
+    "Weak energy-law convergence does not imply general moment or support-edge convergence.",
+    "Physical counterexample is a disconnected twelve-dimensional graph, not a cube computation.",
+    "Abstract moving-atom/lower-edge examples are not physical rotor simulations.",
+    "No physical calibration, heat, source, audit or native-law-selection conclusion."
+  ],
+  "process_failure_record": "INDEPENDENCE_AND_FAILURE_RECORD.json",
+  "member_count": 25,
+  "members": [
+    {
+      "path": "CONTROL_ATTEMPT_01_EXECUTION.json",
+      "bytes": 642,
+      "sha256": "2a7b596ab6cee5582b7828fa91fd39159ba05c0057db17f8fe16efb1403c3b5c"
+    },
+    {
+      "path": "CONTROL_ATTEMPT_01_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "CONTROL_ATTEMPT_01_STDOUT.json",
+      "bytes": 23509,
+      "sha256": "eb4cce1e093c254a3c7a885dcd6733ea319b96979e3d6fbb7eaa18546c4c3192"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "bytes": 6925,
+      "sha256": "a99987cab617d847d821562a75f3c65a0f4486bdc4f67f5874f578973ca1f2fc"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION_EXECUTION.json",
+      "bytes": 367,
+      "sha256": "9de95b643bb2ed4b4eaf60a0afc37ddc63cc6ff06f05408d7eb2f09bd4de50ea"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION_STDERR.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "INDEPENDENCE_AND_FAILURE_RECORD.json",
+      "bytes": 2213,
+      "sha256": "4b2a0c596606d6d018b9a3b4f9267f3b89185bd026d4700f350bc021b4ae3471"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 29737,
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 6473,
+      "sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43"
+    },
+    {
+      "path": "primitive_energy_control.py",
+      "bytes": 12127,
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b"
+    },
+    {
+      "path": "seal_pre.py",
+      "bytes": 4622,
+      "sha256": "d5273a92611c7dd0eae3d044e0f4876082216dbdf2a48abd71deb755db6160d5"
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "sources/AI_EXECUTION_AGENTS.md",
+      "bytes": 10164,
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "path": "sources/INSTALLED_NO_GO_DISCIPLINE_SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "sources/INSTALLED_PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "sources/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10011,
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "path": "sources/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "sources/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "bytes": 16941,
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "sources/docs/ai_methodology/skills/review-loop/SKILL.md",
+      "bytes": 19430,
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "verify_evidence.py",
+      "bytes": 6106,
+      "sha256": "ceef075a3cb0a871990bbfb63dc15885964f8c3c7683a2827c3f044474f74ce7"
+    }
+  ],
+  "next_step": "Stop before author disclosure. A later released-source comparison must preserve this PRE and use a separately sealed POST."
+}

@@ -1,0 +1,771 @@
+{
+  "author_members_verified": 15,
+  "author_primary": {
+    "elapsed_seconds_external": 1.8560149578843266,
+    "elapsed_seconds_internal": 1.7815674999728799,
+    "exit_code": 0,
+    "source_sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+    "stdout_sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad"
+  },
+  "author_primary_imports": [
+    "collections",
+    "hashlib",
+    "itertools",
+    "json",
+    "pathlib",
+    "time"
+  ],
+  "captured_author_origins_verified": 16,
+  "covariance_entries_checked": 180,
+  "exact_pre_star_correspondences": 8480,
+  "final_argument_diff": "--- WORKING_DERIVATION.md\n+++ CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md\n@@ -1,6 +1,7 @@\n-# Personal46 working derivation: original charge current and initial covariance growth\n+# Original charge current and initial charge-covariance growth\n \n-2026-09-25. Unsealed personal frontier, not independently checked or published.\n+2026-09-25. Personal conditional theorem candidate; no independent check\n+of this candidate is claimed at its author seal. No publication or audit status.\n This targets a bounded charge observable before fitting data. It does not identify\n a laboratory preparation, detector, charge unit or lattice/time scale.\n \n@@ -11,7 +12,7 @@\n the two signs without normalization at each separately recorded edge. All\n integer Gauss fields and unsigned tensor hard-core matter remain present.\n \n-The root's sealed42 static branch identities are a direct provisional parent,\n+The root's sealed42 static branch identities are an explicitly imported conditional parent,\n now separately PRE/POST checked; their proof will be restated rather than\n silently importing an additional instrument. No root45 result or checker is used.\n \n@@ -27,7 +28,8 @@\n D commutes with E_e. The remaining h and L terms are bounded finite sums of\n integer electric translations with bounded matter coefficients. Their\n commutators with E_e only multiply each term by its fixed integral shift.\n-Thus the displayed expression extends to a bounded, finite-support operator;\n+Thus the displayed expression extends to a bounded operator. Its action on P\n+uses only the original finite local terms involving that link;\n it is an expression in existing observables and maps, not a new primitive.\n This is minus the formal adjoint-generator action on E_e. It is meaningful as\n a bounded current even for normal states lacking an electric first moment.\n@@ -130,7 +132,7 @@\n generic long-wavelength Fourier means vanish by lattice translation symmetry.\n The covariance grows even where that mean vanishes.\n \n-## 4. Observation obligations and next checks\n+## 4. Observation obligations\n \n Equation (B) is a conditional charge-density covariance consequence of the\n supplied model and initial matter preparation, calculated before any data fit.\n@@ -141,8 +143,56 @@\n change. An initial slope alone cannot be compared to a measured finite-frequency\n noise spectrum without a controlled time/frequency/readout relation.\n \n-Next: check the current sign/adjoint identity on complete primitive words,\n-verify all degree factors and complex covariance by exact polarization controls\n-on cube, cubic tori and an irregular graph, preserve full evidence, then decide\n-whether a selective independent check is warranted with the next coherent\n-observable milestone. Do not call this unsealed working derivation confirmed.\n+The next observation task is a controlled local finite-time or finite-lag\n+charge readout under the full law, with justified physical preparation and\n+calibration. No experimental exclusion or agreement can be drawn from the\n+unidentified initial slope alone.\n+\n+## 5. Exact controls, chronology and limits\n+\n+current_noise_controls.py is a new standard-library program. It imports no\n+earlier author or checker code. It executes the original outward F move and\n+then j for every primitive mark/destination/sign on the cube, equal L=4,6\n+cubic tori, a seven-site path and K2,3. The irregular graph bipartition is\n+specified combinatorially, not inferred from the displayed coordinate labels.\n+The degree-three cube is never assigned the degree-six Fourier coefficient.\n+No six-site second-birth calculation is used.\n+\n+Every complete charge deviation and electric shift is retained sparsely, with\n+all six integer charge-test values. All 8480 primitive rows satisfy original\n+Gauss and hard-core constraints. Each fixed edge's primitive matter words are\n+distinct, so the same diagonal-charge sums apply to the stipulated coherent\n+edge mark. This verifies a diagonal statistic; it does not equate recycling\n+maps or quantum states. Field-independence for arbitrary normal input is proved\n+by the branch-isometry argument, not inferred from testing zero input flux.\n+\n+The controls check 180 real polarized covariance entries, including the\n+real/imaginary components of allowed complex Fourier modes, all charge means,\n+all link formation currents, their divergence and the actual mark norm/rate\n+factors. The path has degree-one A sites with no formation, which tests the\n+zero-rate endpoint. On L4 at k=(pi/2,0,0) the full covariance slope is 2560\n+in units of kappa and the per-site slope is40. On L6 at k=(pi,0,0) the\n+corresponding values are17280 and80. Constant tests have exactly zero mean\n+and covariance slope on every graph.\n+\n+The primary ran once at09:10:37UTC, exit0, empty stderr, elapsed1.856014958s\n+externally and1.781567500s internally. A separately written root_readonly_check.py\n+reconstructed every stored geometry, primitive field/charge row, coverage set,\n+mark norm, current, mean and covariance without importing or executing the\n+primary. Its fresh run took.462467417s, exit0 and empty stderr; all seven\n+observed input files were byte/stat unchanged. All five compact result groups\n+were read completely. Long raw vectors were checked mechanically, not all\n+manually read. This is personal verification, not independent evidence.\n+\n+The current/core argument, arbitrary-normal-state first derivative and all\n+volume/measurement qualifications are analytic proof obligations not replaced\n+by the finite controls. No second time derivative, finite-frequency spectrum,\n+finite-spin stopping/derivative transfer, thermodynamic dynamics, macroscopic\n+current, physical vacuum instability or experimental fit was computed.\n+\n+There was no failed scientific execution. The original working argument,\n+complete program snapshots, streams, receipts and read-only check remain\n+unchanged. Root had already read the independent42 charge checks and other\n+earlier campaign results before this derivation; no fresh blindness is claimed.\n+No independent45 argument was read or used. The exact source pins and author\n+seal distinguish existing supplied premises from the new conditional observable.\n",
+  "groups": [
+    {
+      "Fourier": null,
+      "charge_drift_counts": [
+        [
+          -12,
+          4
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "complex_polarization": {
+        "bilinear_covariance_fg": [
+          32,
+          -8
+        ],
+        "hermitian_covariance_fg": [
+          -96,
+          104
+        ],
+        "mean_f": [
+          36,
+          60
+        ],
+        "mean_g": [
+          -12,
+          0
+        ],
+        "test": "f=test4+i test5; g=test1+i test2"
+      },
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -16,
+          48,
+          -32,
+          -56
+        ],
+        [
+          0,
+          -16,
+          448,
+          0,
+          48,
+          -64
+        ],
+        [
+          0,
+          48,
+          0,
+          384,
+          -144,
+          -240
+        ],
+        [
+          0,
+          -32,
+          48,
+          -144,
+          168,
+          24
+        ],
+        [
+          0,
+          -56,
+          -64,
+          -240,
+          24,
+          472
+        ]
+      ],
+      "degree_counts": [
+        [
+          3,
+          4
+        ]
+      ],
+      "edges": 12,
+      "formation_current_counts": [
+        [
+          4,
+          12
+        ]
+      ],
+      "graph": "torus2",
+      "mark_norm_counts": [
+        [
+          [
+            4,
+            2,
+            4
+          ],
+          12
+        ]
+      ],
+      "mean": [
+        0,
+        -12,
+        0,
+        -96,
+        36,
+        60
+      ],
+      "primitive_rows": 48,
+      "test_names": [
+        "constant",
+        "site0",
+        "coordinate",
+        "staggered",
+        "index_mod3",
+        "index_mod5"
+      ],
+      "vertices": 8
+    },
+    {
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1/2",
+          "0",
+          "0"
+        ],
+        "defect_sum": 1,
+        "full_initial_second_moment_slope_in_kappa": 2560,
+        "imaginary_self_covariance": 0,
+        "site_normalized_slope_in_kappa": 40
+      },
+      "charge_drift_counts": [
+        [
+          -60,
+          32
+        ],
+        [
+          60,
+          32
+        ]
+      ],
+      "complex_polarization": {
+        "bilinear_covariance_fg": [
+          -1240,
+          -1280
+        ],
+        "hermitian_covariance_fg": [
+          1320,
+          -1280
+        ],
+        "mean_f": [
+          0,
+          0
+        ],
+        "mean_g": [
+          -60,
+          0
+        ],
+        "test": "f=test4+i test5; g=test1+i test2"
+      },
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -160,
+          240,
+          40,
+          0
+        ],
+        [
+          0,
+          -160,
+          53760,
+          0,
+          -1280,
+          1280
+        ],
+        [
+          0,
+          240,
+          0,
+          15360,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          -1280,
+          0,
+          1280,
+          0
+        ],
+        [
+          0,
+          0,
+          1280,
+          0,
+          0,
+          1280
+        ]
+      ],
+      "degree_counts": [
+        [
+          6,
+          32
+        ]
+      ],
+      "edges": 192,
+      "formation_current_counts": [
+        [
+          10,
+          192
+        ]
+      ],
+      "graph": "torus4",
+      "mark_norm_counts": [
+        [
+          [
+            10,
+            5,
+            10
+          ],
+          192
+        ]
+      ],
+      "mean": [
+        0,
+        -60,
+        0,
+        -3840,
+        0,
+        0
+      ],
+      "primitive_rows": 1920,
+      "test_names": [
+        "constant",
+        "site0",
+        "coordinate",
+        "staggered",
+        "Fourier_re",
+        "Fourier_im"
+      ],
+      "vertices": 64
+    },
+    {
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1",
+          "0",
+          "0"
+        ],
+        "defect_sum": 2,
+        "full_initial_second_moment_slope_in_kappa": 17280,
+        "imaginary_self_covariance": 0,
+        "site_normalized_slope_in_kappa": 80
+      },
+      "charge_drift_counts": [
+        [
+          -60,
+          108
+        ],
+        [
+          60,
+          108
+        ]
+      ],
+      "complex_polarization": {
+        "bilinear_covariance_fg": [
+          80,
+          -8640
+        ],
+        "hermitian_covariance_fg": [
+          80,
+          -8640
+        ],
+        "mean_f": [
+          0,
+          0
+        ],
+        "mean_g": [
+          -60,
+          0
+        ],
+        "test": "f=test4+i test5; g=test1+i test2"
+      },
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -240,
+          240,
+          80,
+          0
+        ],
+        [
+          0,
+          -240,
+          302400,
+          0,
+          -8640,
+          0
+        ],
+        [
+          0,
+          240,
+          0,
+          51840,
+          0,
+          0
+        ],
+        [
+          0,
+          80,
+          -8640,
+          0,
+          17280,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "degree_counts": [
+        [
+          6,
+          108
+        ]
+      ],
+      "edges": 648,
+      "formation_current_counts": [
+        [
+          10,
+          648
+        ]
+      ],
+      "graph": "torus6",
+      "mark_norm_counts": [
+        [
+          [
+            10,
+            5,
+            10
+          ],
+          648
+        ]
+      ],
+      "mean": [
+        0,
+        -60,
+        0,
+        -12960,
+        0,
+        0
+      ],
+      "primitive_rows": 6480,
+      "test_names": [
+        "constant",
+        "site0",
+        "coordinate",
+        "staggered",
+        "Fourier_re",
+        "Fourier_im"
+      ],
+      "vertices": 216
+    },
+    {
+      "Fourier": null,
+      "charge_drift_counts": [
+        [
+          -4,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "complex_polarization": {
+        "bilinear_covariance_fg": [
+          4,
+          4
+        ],
+        "hermitian_covariance_fg": [
+          -4,
+          4
+        ],
+        "mean_f": [
+          -6,
+          -10
+        ],
+        "mean_g": [
+          0,
+          0
+        ],
+        "test": "f=test4+i test5; g=test1+i test2"
+      },
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          4,
+          -4
+        ],
+        [
+          0,
+          0,
+          0,
+          64,
+          24,
+          40
+        ],
+        [
+          0,
+          0,
+          4,
+          24,
+          28,
+          -16
+        ],
+        [
+          0,
+          0,
+          -4,
+          40,
+          -16,
+          76
+        ]
+      ],
+      "degree_counts": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "edges": 6,
+      "formation_current_counts": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "graph": "path7",
+      "mark_norm_counts": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          2
+        ],
+        [
+          [
+            2,
+            1,
+            2
+          ],
+          4
+        ]
+      ],
+      "mean": [
+        0,
+        0,
+        0,
+        -16,
+        -6,
+        -10
+      ],
+      "primitive_rows": 8,
+      "test_names": [
+        "constant",
+        "site0",
+        "coordinate",
+        "staggered",
+        "index_mod3",
+        "index_mod5"
+      ],
+      "vertices": 7
+    },
+    {
+      "Fourier": null,
+      "charge_drift_counts": [
+        [
+          -12,
+          2
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "complex_polarization": {
+        "bilinear_covariance_fg": [
+          -368,
+          -16
+        ],
+        "hermitian_covariance_fg": [
+          320,
+          128
+        ],
+        "mean_f": [
+          12,
+          60
+        ],
+        "mean_g": [
+          -12,
+          60
+        ],
+        "test": "f=test4+i test5; g=test1+i test2"
+      },
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -72,
+          48,
+          -24,
+          -72
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ],
+        [
+          0,
+          48,
+          -240,
+          192,
+          -48,
+          -240
+        ],
+        [
+          0,
+          -24,
+          56,
+          -48,
+          56,
+          56
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ]
+      ],
+      "degree_counts": [
+        [
+          3,
+          2
+        ]
+      ],
+      "edges": 6,
+      "formation_current_counts": [
+        [
+          4,
+          6
+        ]
+      ],
+      "graph": "K2_3",
+      "mark_norm_counts": [
+        [
+          [
+            4,
+            2,
+            4
+          ],
+          6
+        ]
+      ],
+      "mean": [
+        0,
+        -12,
+        60,
+        -48,
+        12,
+        60
+      ],
+      "primitive_rows": 24,
+      "test_names": [
+        "constant",
+        "site0",
+        "coordinate",
+        "staggered",
+        "index_mod3",
+        "index_mod5"
+      ],
+      "vertices": 5
+    }
+  ],
+  "limits": "Raw stored data is checked mechanically; analytic domain/all-normal-state claims remain proof review. No finite-lag, microscopic derivative, observed spectrum or audit disposition.",
+  "minimum_sector_nonzero_circulations_checked": [
+    -1000,
+    1001
+  ],
+  "mode": "Released-source read-only POST correspondence; no author or PRE scientific code execution/import",
+  "pre_members_unchanged": 31,
+  "primitive_rows_checked": 8480,
+  "protected_byte_stat_unchanged": 54,
+  "required_repair": "Remove only/exclusivity for zero-field basis current expectation; all electric basis states and diagonal mixtures have zero magnetic-current expectation.",
+  "retained_PRE_coherent_cycle_current_over_delta": {
+    "cycle": [
+      1,
+      -1,
+      0,
+      0,
+      -1,
+      1,
+      0,
+      0
+    ],
+    "mean_current_numerator_over_delta": [
+      [
+        4,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "meaning": "Nonzero Hamiltonian circulation current with zero charge divergence",
+    "norm_squared": 2,
+    "unnormalized_amplitudes": [
+      [
+        0,
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        1,
+        [
+          0,
+          -1
+        ]
+      ]
+    ]
+  },
+  "reused_pre_origins_verified": 6,
+  "shared_L4_normalized_Fourier_covariance": [
+    40,
+    0
+  ],
+  "stored_PRE_diagonal_magnetic_terms_zero": 25,
+  "stored_PRE_magnetic_terms_checked": 553,
+  "transitive_author_origins_not_opened": 4,
+  "verified_utc": "2026-09-25T10:08:18.468777+00:00"
+}

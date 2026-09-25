@@ -12,3 +12,8 @@ Unit18: conditional generator, record/frequency and clock boundaries. Unit19: fi
 ## Unit27 supplement
 
 Preserves all 31 walker/source PR originals (434 original paths), their corrected source dispositions and four bounded maximum-thinking recovery tasks. This brings the September25 bundle to 74 reviewed PR originals. No worker is launched; each task selects one unresolved residual and checks current work before proceeding.
+
+
+## Unit28 supplement
+
+Preserves all 26 formation, energy and charge PR originals, complete source dispositions and four bounded maximum-thinking recovery tasks. The canonical arguments and runtime helpers were reviewed; historical extensions listed in unit-28-salvage.json are ungraded recovery candidates, not freshly certified proofs. No worker is launched.

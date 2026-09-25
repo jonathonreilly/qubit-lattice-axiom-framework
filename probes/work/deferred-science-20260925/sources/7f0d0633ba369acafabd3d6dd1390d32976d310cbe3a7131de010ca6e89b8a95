@@ -1,0 +1,8 @@
+{
+  "publication_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+  "old": "In the supplied common matter/rotor model, each original formation event reduces\na particular aggregate field-response strength by the same amount.",
+  "new": "In the supplied common matter/rotor model, the expected original formation count\nfixes the change of a particular aggregate field-response strength.",
+  "root_acknowledged": true,
+  "applied_in_this_packet": false,
+  "requires_new_note_identity_and_fresh_primary_cache_before_final_binding": true
+}

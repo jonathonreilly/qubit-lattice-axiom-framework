@@ -1,0 +1,88 @@
+{
+  "captured_utc": "2026-09-24T23:42:33.808149+00:00",
+  "scope": "Final publication correspondence only, no new blind derivation",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "bytes": 21012
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py",
+      "snapshot": "publication_sources/publication/scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py",
+      "sha256": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+      "bytes": 5922
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "publication_sources/publication/docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json",
+      "snapshot": "publication_sources/publication/outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json",
+      "sha256": "1bda47c735eb58b0019b24068c4f9d404734675130f3bf47b6be357ecf34b373",
+      "bytes": 22318
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/logs/runner-cache/optical_reference_energy_limits_for_original_record_counts_2026_09_24.txt",
+      "snapshot": "publication_sources/publication/logs/runner-cache/optical_reference_energy_limits_for_original_record_counts_2026_09_24.txt",
+      "sha256": "e148f6e8712bd79f0866b58b692128ae75e150aa9c4511f680e665b132fb16b9",
+      "bytes": 22719
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-observation-publication/scripts/runner_cache.py",
+      "snapshot": "publication_sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "publication_sources/external/OPTICAL_OBSERVATION_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "dd431ab59a1f92686dc34024da42740b9c5b004abfd8a0195019a597f3807b95",
+      "bytes": 2517
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "publication_sources/external/OPTICAL_OBSERVATION_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "d365ab9473afcf1e9a54fbc4d18dc6005ef0efa3d6861a419c81b036ebd5f4f7",
+      "bytes": 24614
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "publication_sources/external/OPTICAL_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "e355c9640d7ec7b72027333141d482cae419785f17e22b2c3f65321c5f946654",
+      "bytes": 1389
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "snapshot": "publication_sources/external/TWENTY_SEVENTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "a5fb21a87822225eb99b5225d9554558b1d3b6c1d56ab4bfee6c48240aaa5bea",
+      "bytes": 2738
+    }
+  ],
+  "base_revision": "1217d914870dd275893a5e15774c4a70bcde37f5",
+  "PRE_seal_sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+  "POST_seal_sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc",
+  "primary_executions_by_reviewer": 0
+}

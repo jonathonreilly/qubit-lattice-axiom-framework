@@ -1,0 +1,497 @@
+{
+  "local_summary": [
+    {
+      "overlap": 1,
+      "union_sites": 11,
+      "complete_subsets_checked": 2048,
+      "local_counts": {
+        "v": 35,
+        "a": 390,
+        "d": 800
+      },
+      "all_m_average_rows": [
+        {
+          "global_B_sites": 12,
+          "occupied": 0,
+          "uniform_Rayleigh": "35"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 1,
+          "uniform_Rayleigh": "185/3"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 2,
+          "uniform_Rayleigh": "535/6"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 3,
+          "uniform_Rayleigh": "112"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 4,
+          "uniform_Rayleigh": "12502/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 5,
+          "uniform_Rayleigh": "12845/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 6,
+          "uniform_Rayleigh": "8035/66"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 7,
+          "uniform_Rayleigh": "10220/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 8,
+          "uniform_Rayleigh": "7603/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 9,
+          "uniform_Rayleigh": "513/11"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 10,
+          "uniform_Rayleigh": "1225/66"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 11,
+          "uniform_Rayleigh": "0"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 12,
+          "uniform_Rayleigh": "0"
+        }
+      ],
+      "maximum_increment_per_occupied": "40",
+      "maximum_row_per_vacant": "28"
+    },
+    {
+      "overlap": 2,
+      "union_sites": 10,
+      "complete_subsets_checked": 1024,
+      "local_counts": {
+        "v": 36,
+        "a": 416,
+        "d": 704
+      },
+      "all_m_average_rows": [
+        {
+          "global_B_sites": 12,
+          "occupied": 0,
+          "uniform_Rayleigh": "36"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 1,
+          "uniform_Rayleigh": "194/3"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 2,
+          "uniform_Rayleigh": "3034/33"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 3,
+          "uniform_Rayleigh": "6232/55"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 4,
+          "uniform_Rayleigh": "5656/45"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 5,
+          "uniform_Rayleigh": "12614/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 6,
+          "uniform_Rayleigh": "3902/33"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 7,
+          "uniform_Rayleigh": "9836/99"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 8,
+          "uniform_Rayleigh": "36308/495"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 9,
+          "uniform_Rayleigh": "2434/55"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 10,
+          "uniform_Rayleigh": "578/33"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 11,
+          "uniform_Rayleigh": "0"
+        },
+        {
+          "global_B_sites": 12,
+          "occupied": 12,
+          "uniform_Rayleigh": "0"
+        }
+      ],
+      "maximum_increment_per_occupied": "44",
+      "maximum_row_per_vacant": "104/3"
+    }
+  ],
+  "torus_certificates": [
+    {
+      "side": 6,
+      "B_sites": 108,
+      "overlapping_pair_counts": {
+        "2": 648,
+        "1": 324
+      },
+      "every_B_union_incidence": {
+        "overlap_1": 33,
+        "overlap_2": 60
+      },
+      "all_B_sites_checked": 108,
+      "selected_occupancies": [
+        {
+          "occupied_B": 0,
+          "minus_charges": 0,
+          "Rayleigh_per_n": "321",
+          "two_row_upper_bounds_per_n": [
+            "321",
+            "3004"
+          ]
+        },
+        {
+          "occupied_B": 2,
+          "minus_charges": 1,
+          "Rayleigh_per_n": "241991/642",
+          "two_row_upper_bounds_per_n": [
+            "1183/3",
+            "79606/27"
+          ]
+        },
+        {
+          "occupied_B": 26,
+          "minus_charges": 13,
+          "Rayleigh_per_n": "73334691/79394",
+          "two_row_upper_bounds_per_n": [
+            "3823/3",
+            "61582/27"
+          ]
+        },
+        {
+          "occupied_B": 54,
+          "minus_charges": 27,
+          "Rayleigh_per_n": "7219473/7490",
+          "two_row_upper_bounds_per_n": [
+            "2301",
+            "1502"
+          ]
+        },
+        {
+          "occupied_B": 80,
+          "minus_charges": 40,
+          "Rayleigh_per_n": "2541027/5671",
+          "two_row_upper_bounds_per_n": [
+            "9763/3",
+            "21028/27"
+          ]
+        },
+        {
+          "occupied_B": 106,
+          "minus_charges": 53,
+          "Rayleigh_per_n": "393/214",
+          "two_row_upper_bounds_per_n": [
+            "12623/3",
+            "1502/27"
+          ]
+        },
+        {
+          "occupied_B": 108,
+          "minus_charges": 54,
+          "Rayleigh_per_n": "0",
+          "two_row_upper_bounds_per_n": [
+            "4281",
+            "0"
+          ]
+        }
+      ],
+      "half_filling_Rayleigh_per_n": "7219473/7490",
+      "half_filling_excess_above_1905_over_2": "42624/3745"
+    },
+    {
+      "side": 8,
+      "B_sites": 256,
+      "overlapping_pair_counts": {
+        "2": 1536,
+        "1": 768
+      },
+      "every_B_union_incidence": {
+        "overlap_1": 33,
+        "overlap_2": 60
+      },
+      "all_B_sites_checked": 256,
+      "selected_occupancies": [
+        {
+          "occupied_B": 0,
+          "minus_charges": 0,
+          "Rayleigh_per_n": "321",
+          "two_row_upper_bounds_per_n": [
+            "321",
+            "3004"
+          ]
+        },
+        {
+          "occupied_B": 2,
+          "minus_charges": 1,
+          "Rayleigh_per_n": "3749391/10880",
+          "two_row_upper_bounds_per_n": [
+            "5631/16",
+            "95377/32"
+          ]
+        },
+        {
+          "occupied_B": 64,
+          "minus_charges": 32,
+          "Rayleigh_per_n": "443020107/474980",
+          "two_row_upper_bounds_per_n": [
+            "1311",
+            "2253"
+          ]
+        },
+        {
+          "occupied_B": 128,
+          "minus_charges": 64,
+          "Rayleigh_per_n": "358011/374",
+          "two_row_upper_bounds_per_n": [
+            "2301",
+            "1502"
+          ]
+        },
+        {
+          "occupied_B": 192,
+          "minus_charges": 96,
+          "Rayleigh_per_n": "201610521/474980",
+          "two_row_upper_bounds_per_n": [
+            "3291",
+            "751"
+          ]
+        },
+        {
+          "occupied_B": 254,
+          "minus_charges": 127,
+          "Rayleigh_per_n": "3537/10880",
+          "two_row_upper_bounds_per_n": [
+            "68001/16",
+            "751/32"
+          ]
+        },
+        {
+          "occupied_B": 256,
+          "minus_charges": 128,
+          "Rayleigh_per_n": "0",
+          "two_row_upper_bounds_per_n": [
+            "4281",
+            "0"
+          ]
+        }
+      ],
+      "half_filling_Rayleigh_per_n": "358011/374",
+      "half_filling_excess_above_1905_over_2": "888/187"
+    },
+    {
+      "side": 10,
+      "B_sites": 500,
+      "overlapping_pair_counts": {
+        "1": 1500,
+        "2": 3000
+      },
+      "every_B_union_incidence": {
+        "overlap_1": 33,
+        "overlap_2": 60
+      },
+      "all_B_sites_checked": 500,
+      "selected_occupancies": [
+        {
+          "occupied_B": 0,
+          "minus_charges": 0,
+          "Rayleigh_per_n": "321",
+          "two_row_upper_bounds_per_n": [
+            "321",
+            "3004"
+          ]
+        },
+        {
+          "occupied_B": 2,
+          "minus_charges": 1,
+          "Rayleigh_per_n": "41553339/124750",
+          "two_row_upper_bounds_per_n": [
+            "8421/25",
+            "373998/125"
+          ]
+        },
+        {
+          "occupied_B": 124,
+          "minus_charges": 62,
+          "Rayleigh_per_n": "19101125334/20584249",
+          "two_row_upper_bounds_per_n": [
+            "32577/25",
+            "282376/125"
+          ]
+        },
+        {
+          "occupied_B": 250,
+          "minus_charges": 125,
+          "Rayleigh_per_n": "473646963/496006",
+          "two_row_upper_bounds_per_n": [
+            "2301",
+            "1502"
+          ]
+        },
+        {
+          "occupied_B": 374,
+          "minus_charges": 187,
+          "Rayleigh_per_n": "2527409133/5881214",
+          "two_row_upper_bounds_per_n": [
+            "82077/25",
+            "94626/125"
+          ]
+        },
+        {
+          "occupied_B": 498,
+          "minus_charges": 249,
+          "Rayleigh_per_n": "10611/124750",
+          "two_row_upper_bounds_per_n": [
+            "106629/25",
+            "1502/125"
+          ]
+        },
+        {
+          "occupied_B": 500,
+          "minus_charges": 250,
+          "Rayleigh_per_n": "0",
+          "two_row_upper_bounds_per_n": [
+            "4281",
+            "0"
+          ]
+        }
+      ],
+      "half_filling_Rayleigh_per_n": "473646963/496006",
+      "half_filling_excess_above_1905_over_2": "600624/248003"
+    },
+    {
+      "side": 12,
+      "B_sites": 864,
+      "overlapping_pair_counts": {
+        "1": 2592,
+        "2": 5184
+      },
+      "every_B_union_incidence": {
+        "overlap_1": 33,
+        "overlap_2": 60
+      },
+      "all_B_sites_checked": 864,
+      "selected_occupancies": [
+        {
+          "occupied_B": 0,
+          "minus_charges": 0,
+          "Rayleigh_per_n": "321",
+          "two_row_upper_bounds_per_n": [
+            "321",
+            "3004"
+          ]
+        },
+        {
+          "occupied_B": 2,
+          "minus_charges": 1,
+          "Rayleigh_per_n": "13587029/41424",
+          "two_row_upper_bounds_per_n": [
+            "1981/6",
+            "323681/108"
+          ]
+        },
+        {
+          "occupied_B": 216,
+          "minus_charges": 108,
+          "Rayleigh_per_n": "397143803853/427002044",
+          "two_row_upper_bounds_per_n": [
+            "1311",
+            "2253"
+          ]
+        },
+        {
+          "occupied_B": 432,
+          "minus_charges": 216,
+          "Rayleigh_per_n": "472525377/495362",
+          "two_row_upper_bounds_per_n": [
+            "2301",
+            "1502"
+          ]
+        },
+        {
+          "occupied_B": 648,
+          "minus_charges": 324,
+          "Rayleigh_per_n": "181343764335/427002044",
+          "two_row_upper_bounds_per_n": [
+            "3291",
+            "751"
+          ]
+        },
+        {
+          "occupied_B": 862,
+          "minus_charges": 431,
+          "Rayleigh_per_n": "393/13808",
+          "two_row_upper_bounds_per_n": [
+            "25631/6",
+            "751/108"
+          ]
+        },
+        {
+          "occupied_B": 864,
+          "minus_charges": 432,
+          "Rayleigh_per_n": "0",
+          "two_row_upper_bounds_per_n": [
+            "4281",
+            "0"
+          ]
+        }
+      ],
+      "half_filling_Rayleigh_per_n": "472525377/495362",
+      "half_filling_excess_above_1905_over_2": "346536/247681"
+    }
+  ],
+  "result_metadata": {
+    "scope": "Exact root occupancy certificates; no diagonalization or physical-vacuum selection.",
+    "necessary_lowest_energy_sector_filling": {
+      "strict_lower": "421/2640",
+      "strict_upper": "4103/6008",
+      "lower_decimal": 0.15946969696969698,
+      "upper_decimal": 0.6829227696404794
+    },
+    "all_assertions_passed": true,
+    "limits": "Finite-pattern proof and finite controls, no full many-body diagonalization or physical vacuum selection; fixed graph before g tends to zero.",
+    "source_sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+    "elapsed_seconds": 0.29450170788913965
+  }
+}

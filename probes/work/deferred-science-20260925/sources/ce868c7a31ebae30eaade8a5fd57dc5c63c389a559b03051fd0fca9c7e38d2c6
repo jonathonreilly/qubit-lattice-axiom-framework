@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:45:17.558636+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive_threshold_and_charge_control.py"
+  ],
+  "source_sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770",
+  "elapsed_seconds": 6.360143375117332,
+  "exit_code": 0,
+  "stdout_sha256": "b3abbfddefa0caaf438537ce2437dd9c7c9e27e734263c47b098686ff026092f",
+  "stdout_bytes": 6708,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

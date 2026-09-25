@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-09-25T03:20:15.967749+00:00",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "snapshot": "instructions/physics-claim-reviewer_SKILL.md",
+      "same_revision_bytes_verified": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "snapshot": "instructions/SKILL_FRESHNESS_CHECK.md",
+      "same_revision_bytes_verified": true
+    },
+    {
+      "origin": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "git_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "git_path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "snapshot": "instructions/proof-search-governance.md",
+      "same_revision_bytes_verified": true
+    }
+  ],
+  "fetch_performed": false,
+  "reason": "Explicit dispatch confines writes to independent directory; provided main revision and existing planning ref were read without mutating repository refs.",
+  "model_effort": "Inherited unchanged per explicit task; no generic landing-model override applied.",
+  "scope": "Instructions only, not scientific imports."
+}

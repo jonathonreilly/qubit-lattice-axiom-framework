@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-09-24T19:00:01.598184+00:00",
+  "seal_members": {
+    "PRE_SEAL.json": 19,
+    "POST_SEAL.json": 3,
+    "PUBLICATION_COMPARISON_SEAL.json": 7
+  },
+  "source_pins": 49,
+  "complete_final_report_and_binding_code_read": true,
+  "all_final_payloads_match_previously_read_rows": true,
+  "new_primary_run": false,
+  "final_report_sha256": "684a4b41dedc4c2fc4bdbf91a601e80cc14f268627b3952992ea7b14e2f3365e",
+  "final_seal_sha256": "812e57a7dbe890732214615c16ad18eb93c71d6948e3db7b2d02d4c8f5031180"
+}

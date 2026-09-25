@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T00:04:05.331151+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/jet_coefficient_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 0.34721945808269083,
+  "exit_code": 0,
+  "script_sha256": "f03a3607f583f4e7c6c2c1c28fc2a20271ab2cfc788edd20b19261e7730f338b",
+  "stdout_bytes": 19853,
+  "stdout_sha256": "0326311f07ae1a39e28ba9a5e31fa60c42eaada5f9c33bfd1df775ecc5107273",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,68 @@
+{
+  "sealed_utc": "2026-09-24T19:23:34.198205+00:00",
+  "phase": "blind_PRE",
+  "scope": "Independent finite-bin graph-domain and semigroup estimate. The two-mark effect and prepared-state boundary contrast are explicitly provisional supplied premises. No finite-bin author or other active checker packet read; no delegation, parent rerun, publication, or audit mutation.",
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "a1df0ea7d34e5199ff1fe5235e2da4fb1219ea47f1eb150a09b948fb349e6f75",
+      "bytes": 855
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283",
+      "bytes": 20259
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "cfb48f263ac16420710014608085cb68512bf62af492b51bedcc1c367c4ba283",
+      "bytes": 20259
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed",
+      "bytes": 26702
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "cefd81353225b5371142c5c0fbbb495b7ff7552c211837772ac6b02079736d49",
+      "bytes": 3050
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "585b38fb229be45c15536a8ad1fa3ff7615dfe3a2018b3c2231642ea08cba3a6",
+      "bytes": 2203
+    },
+    {
+      "path": "finite_bin_controls.py",
+      "sha256": "009c46193124d526ae249f2ff17dd6a55cd06ae4eb8c8f4c72a30955e9f664eb",
+      "bytes": 9350
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    },
+    {
+      "path": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    }
+  ],
+  "read_only_policy": "All twelve members and this seal chmod 0444; subsequent comparison must use separate files."
+}

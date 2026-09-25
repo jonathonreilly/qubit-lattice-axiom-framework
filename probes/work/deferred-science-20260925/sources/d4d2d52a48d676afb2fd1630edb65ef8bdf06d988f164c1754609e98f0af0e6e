@@ -1,0 +1,719 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/AUTHOR_SEAL.json",
+      "sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/FIRST_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_ROOT.md",
+      "sha256": "e31c8ec8ddbb7ef39ef5237afd94cd633d1637f7ab248d0de62fd61bcf2e73a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/ROOT_REVIEW.json",
+      "sha256": "0aea7a82d8e2b1dcda078d0b21832c5176aa1d168de077a7b50d7f0c769913ae"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/SOURCE_PINS.json",
+      "sha256": "be8ba0122571991290d1095b7fee18f633910c176781c8d6c68c8190e03ca5f1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/WORKING_DERIVATION.md",
+      "sha256": "f9f818f89a458a48163b4d9e96cbb4c65132e98a881b316f5dba68768b6d868c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt01/EXECUTION.json",
+      "sha256": "a4965aab4eaf4385b0ccf39a980e0d46b71631490b347a1a2f7164b07d3a8097"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/explore_two_record_threshold.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt01/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt01/stdout.json",
+      "sha256": "16c6e662dc77bac86cd8166cb84f24426f91ca88e51d3337f6dc6bd8ff167af6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt02/EXECUTION.json",
+      "sha256": "1707d05ad695845cb9adea7b6038df38d38a61ef1643b775bc6c40b4f4bccf81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt02/RESULT.json",
+      "sha256": "3561f6d74808b441b188cdc1b92c7b31bdb65442f816a8fdde225705efbf2d93"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/explore_two_record_threshold_extended.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt02/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt02/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt02/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt02/stdout.log",
+      "sha256": "2a616280774db8c349679ee8c38b524d7998fd19b5a70fa478a42cee188854b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt03/EXECUTION.json",
+      "sha256": "8d9d63aff418ea9e49b9138a29c38f2525fac8dc95af8ead3b98e67c7679a827"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt03/RESULT.json",
+      "sha256": "2c204e6f40e3918babb0b20c95adbfe213181deffd857924dc7dbf87905290da"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/explore_two_record_threshold_extended.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt03/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt03/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt03/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt03/stdout.log",
+      "sha256": "0eaba9f81f23206342cc5d9061c390cd2b9b0b930100e5a8562709ec16de44e8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt04/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt04/RESULT.json",
+      "sha256": "cdee15c6500fe0a85dc7d72442c07fa0cc46a7525e2931029edeb5079dc374ce"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt05/EXECUTION.json",
+      "sha256": "cb069e7973f31a13bec9ea2503101f17c4bc0fd876c3492249420daac092d7f3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt05/RESULT.json",
+      "sha256": "57cd589122cc0e6fe82f78b473063268b7cc5d3129b0f60049730d995e6482cf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt05/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt05/stdout.txt",
+      "sha256": "82e9f4dacb7d1b679cce49d941729c71ef0597909479ddfac2f74b2f5a96bbac"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/attempt05/two_record_threshold_and_charge_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/attempt05/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/explore_two_record_threshold.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/explore_two_record_threshold.py",
+      "sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/explore_two_record_threshold_extended.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/explore_two_record_threshold_extended.py",
+      "sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-personal/two_record_threshold_and_charge_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/author_history/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/CHARGE_COHERENCE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/CHARGE_COHERENCE_RESULTS.json",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/CHECKPOINT.md",
+      "sha256": "090d9f16692b7075e70afb8d0a42392695e7710193eb7ba44e2c8e1e8249f3e8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/DECISIVE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/DECISIVE_RESULTS.json",
+      "sha256": "b23f0cdf4cc348a7530623e071a678e7a319435a63aa601bb5ea0cfd07600e90"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/FINAL_BINDINGS.json",
+      "sha256": "51d593003192b4190aaa6e24ca7a6d73cb203ae9c33d5ffe154bc73964d61a6a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST.md",
+      "sha256": "806ba9afa526623eaf113e2f8d0b46066a17531957fe83509498ed9c5f501705"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST_FINAL_BINDINGS.json",
+      "sha256": "cce4af62fbd7afb3cdcffacb067cc75dfa9168072a715cb2754c271172106f98"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST_PROCESS_LOG.md",
+      "sha256": "b60f126019a2f4693bd35d213351bee642819c82cc4fc02e8638035323ca1c93"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST_SEAL.json",
+      "sha256": "1df6721dded12cd248c17448f94f538b18007d547703c567a573e260e17517df"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/POST_SOURCE_PINS.json",
+      "sha256": "a858f7800021155b982d1cd8c8c0809032bc61c8b8322f950ff05bae2c719705"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/PRE.md",
+      "sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/PRE_SEAL.json",
+      "sha256": "c8287bdc28f8c38368b4130c306c285270037e4b8b4e54614d97c25c14869e07"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/PROCESS_LOG.md",
+      "sha256": "df6697dbe964e92faa94cfb740994aa641652b7aa301ab4c24be37a48844663b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SMALL_PERIOD_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/SMALL_PERIOD_RESULTS.json",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/SOURCE_PINS.json",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/SUPERSOLUTION_EXPLORATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/SUPERSOLUTION_EXPLORATION.json",
+      "sha256": "006d787cb859251a42905f29f2a8e85fe763bdb4caf9da7224af6ff5626a860a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/THRESHOLD_EXPLORATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/THRESHOLD_EXPLORATION.json",
+      "sha256": "f7cbce371b51a1deed335e39a21ea534902a3ee5f94d539a600ccc9214eee069"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/UNWRAPPED_PRIMITIVE_COLUMNS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/UNWRAPPED_PRIMITIVE_COLUMNS.json",
+      "sha256": "4b987e221fadd22e0066ed7a034ae80bd731376bbe6f57d23bede3b03dfd7ab9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/charge_coherence.execution.json",
+      "sha256": "be65baa4cf6e400058cb76469e10938289ff5519f7c0887474f81a63d44190f5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/charge_coherence.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/charge_coherence.stdout.txt",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/charge_coherence_control.py",
+      "sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/decisive.execution.json",
+      "sha256": "ce868c7a31ebae30eaade8a5fd57dc5c63c389a559b03051fd0fca9c7e38d2c6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/decisive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/decisive.stdout.txt",
+      "sha256": "b3abbfddefa0caaf438537ce2437dd9c7c9e27e734263c47b098686ff026092f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/decisive_threshold_and_charge_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/decisive_threshold_and_charge_control.py",
+      "sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/exploration.execution.json",
+      "sha256": "9ddff99c6dae646278fb149704b811b4087fe2c376ec2eb5cce0bacfe7b28632"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/exploration.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/exploration.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/exploration.stdout.txt",
+      "sha256": "80d623ff1f56a4df23948dde58782c44520994887ab87c9ab5ef417996104cbf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/freeze.execution.json",
+      "sha256": "8d45650daf1dd355249d7ced11847b26611da8092b63cb2da677a21a8a7aa4b2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/freeze.stdout.txt",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/freeze_sources.py",
+      "sha256": "922b547a98fbcb82693213b6f7b54b08074f646003b339deb3341561fe212ddc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_freeze.execution.json",
+      "sha256": "adaa0dbe8707ae88ea632ff3eddb8ea7db92eccf8d4ba9335fd988267c62ab38"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_freeze.py",
+      "sha256": "02ab996d7f8c1971e30beec6641a44cd4d224e872202a3e31ea3ff0837a2e380"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_freeze.stdout.txt",
+      "sha256": "fc6424d3981df92337888398f9c95499c7b717cabe991579d46efae523f62a43"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_inspect.execution.json",
+      "sha256": "1a1d6e7def1c0d346027f227e57493b07d43f43cfb7919fcf703a6e0622ad941"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_inspect.py",
+      "sha256": "f22aa3762056f08ae40b4a2cde42a005ffcd0ebc893906f3a1e217a0c6a5030b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_inspect.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_inspect.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_inspect.stdout.txt",
+      "sha256": "81c7315a1de5b966771e27ed5faf4eac83e38931ed00e109e2b37c7b54eb37ff"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_payload_review.execution.json",
+      "sha256": "a81f2bafd1dd1065674a9abf42528bf83355d07be7eb2a774946dff5f1e44561"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_payload_review.py",
+      "sha256": "f02051ab1cbbc5afbe20773586fd44635cfc0bc363dba4cb183bb09d27af3fe0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_payload_review.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_payload_review.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_payload_review.stdout.txt",
+      "sha256": "bfdc0110a7ff374f87cb944c8694f3daf733d1e26f3109cd1e1b04cc4298c258"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_run_logged.py",
+      "sha256": "9fcb0c8f3b209a535b929e12129ef4d90f03321c61fb17aa6eb379831593b152"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_seal.py",
+      "sha256": "1a51a0a97998bb2b953752fb7444a95939066cc42e53e7d2feeb5a088b5deaac"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_verification.execution.json",
+      "sha256": "ef14351dd0384d73ec64025941f7d5356c0d3144f2c055621921c01f22fee352"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_verification.stdout.txt",
+      "sha256": "bd3364b49be102c773f87b87b10053093ff1c70796c3c6dba3899aca4ca965f2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/post_verify_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/post_verify_read_only.py",
+      "sha256": "f4a580f2a6ce2b2342052af4f9f17f4b338317060c8829a10bb7e26d606a53f1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/primitive_kernel.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/primitive_kernel.py",
+      "sha256": "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/primitive_threshold_exploration.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/primitive_threshold_exploration.py",
+      "sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/run_logged.py",
+      "sha256": "2f3ab244d8506cdc12f47d06e0a5b8494f127b93bf1644bd8c62f2c0de81c75d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/seal_pre.py",
+      "sha256": "14cb7bd68c999f25a9a5a963d34bebfc7f7d06d2baa2e33f5903c9551cba9213"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_period.execution.json",
+      "sha256": "b9f1a777b41dabac9546fdac9f46baf16708e4b8efc2559330dba52634a9382a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_period.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_period.stdout.txt",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_period_control.py",
+      "sha256": "11372194114a4590222b2c2cea4ad14438754afebb55cd0a79cb9f36ea6c787a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_verification.execution.json",
+      "sha256": "287bd002d72ee012498d555ae615c8ed8c5b35c67ba0c9fa09926de1f6ca7d2b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/small_verification.stdout.txt",
+      "sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/supersolution.execution.json",
+      "sha256": "23b5d2ad8397554a628501122e9d1e148a3efbd839e2947622e971f9c2c94e73"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/supersolution.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/supersolution.stdout.txt",
+      "sha256": "ecec57487d8a73e12cae5f3d64180204ec76908cb4a9cf3d092a700c6c5e15dc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/supersolution_exploration.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/supersolution_exploration.py",
+      "sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/verification.execution.json",
+      "sha256": "e983559ae02d285ca374b8e9b76ca8a17eab62e2b64463f8554b8b4178c064bc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/verification.stdout.txt",
+      "sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/verify_read_only.py",
+      "sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/verify_small_period_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/science/verify_small_period_read_only.py",
+      "sha256": "e35554659132ac064a95d2298ddd4c4ec24e71945569bd5c87e8538860f735cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/PROCESS_LOG.md",
+      "sha256": "f8dd9778e0c48702d869cd064dd1c98dfdbcf049ecccdc82194b5d683491bd80"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/PUBLICATION_COMPARISON.md",
+      "sha256": "191539d0684a81ad60f1867dec2cd236a61486a549da817f116156468deaa67e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "03acaccb377f4f7296b33ac797031014f90aa652acdd12ed7178ed3819b7d3dd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/SOURCE_PINS.json",
+      "sha256": "ead9082430ffbdf89594828929cfde254557a0ca16650523e5d90f70c5a2989b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/capture_sources.py",
+      "sha256": "84401ba0ff1aa5bc62eee5d4d8702e261c34161908d89e05175654e596471857"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/record_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/record_check.py",
+      "sha256": "f828a72f2485a29c4db78d08657aacea1facb65d9d9097a2475185b25da3f6fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/seal_packet.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/seal_packet.py",
+      "sha256": "33b85e554ff261a3a13605d1030bc174141138c9a8722bc766c7f38cc7c57ac0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt01/EXECUTION.json",
+      "sha256": "bdc11a2af90d43ad79e994140c40e69f600784f49db887e546ea7c05448161b6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt01/record_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt01/record_check.py",
+      "sha256": "3e56aca9ba5e4f71c7584055cb0f43e654f6cbef788332393166148774fd071c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt01/stderr.txt",
+      "sha256": "a5f5ece21e371fcf8c0bf7492c291baa0b5536129c623b1c772be42eb40e57c8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt01/stdout.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt01/verify_correspondence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt01/verify_correspondence.py",
+      "sha256": "7c0598d261b3ded6e29b86d0fa09004a949cfbd557c9b848db81d2bdfbfe4a09"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt02/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt02/EXECUTION.json",
+      "sha256": "3b3519104bc5d00d08a5fbd5d45d8b0c2a6ff7d90f6e971f3902e472315ff39c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt02/record_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt02/record_check.py",
+      "sha256": "f828a72f2485a29c4db78d08657aacea1facb65d9d9097a2475185b25da3f6fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt02/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt02/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt02/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt02/stdout.json",
+      "sha256": "90e7e10bbee1af3d3930376190bbad9c1725d45e9ef530c71e6675700f46959b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verification_attempt02/verify_correspondence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verification_attempt02/verify_correspondence.py",
+      "sha256": "82d60d1f0e558584efc13698e29b3606d3d3eaaf190493ff26e8ca932d8c9d81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/publication_comparison/verify_correspondence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/publication/verify_correspondence.py",
+      "sha256": "82d60d1f0e558584efc13698e29b3606d3d3eaaf190493ff26e8ca932d8c9d81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_READONLY.stdout.json",
+      "sha256": "78ffc51a3e21f47f607adeb5035a0569583865bad7b5cf4713cbf057c572cfd7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "8bc9a49e235267db5aab72d8f84085089f3299fbd5d4739f61d43680c2c17a05"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_FROZEN_SOURCES.json",
+      "sha256": "060e3dbc6faf998cc8378d2067ca2f3b326bb2e5331cd0078897563cd790abb1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_run_citation_graph_build.py.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_run_citation_graph_build.py.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_run_citation_graph_build.py.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_run_citation_graph_build.py.stdout",
+      "sha256": "4f51e8fa58237ad4b6087a1b440616a2a3cee6b53276605eabff20b5217a0291"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_write_citation_graph_manifest.py.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_write_citation_graph_manifest.py.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_write_citation_graph_manifest.py.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_ATTEMPT02_write_citation_graph_manifest.py.stdout",
+      "sha256": "64d3008527e879c6918cdcc9427139f9ed50d5b0984c4cd1229268fea98268e8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_EXECUTION.json",
+      "sha256": "c6c2897c6229ead05146b4278eaa7aa433f2616ee501d784764d35dde2316cdf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_GRAPH_EXECUTION_ATTEMPT02.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_GRAPH_EXECUTION_ATTEMPT02.json",
+      "sha256": "57a0228eecafe4c07554cccb16b6cc05db89b587bb5957d6476c1cf89e42a6cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PRIMARY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_PRIMARY_EXECUTION.json",
+      "sha256": "0f9c1c4b6313b377f0fac8b21e871765c97062ff31e11d70261c1e31bb06df37"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PRIMARY_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_PRIMARY_ROOT_REVIEW.json",
+      "sha256": "9724d12a55d34977a94b080098b9ecfaef5453faa15232d996ad3355fdbf4278"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_PUBLICATION_WORKING_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "79426979f4412219318d8c3f07d6dd2b6f414f34a9909f6b6879fc44af0106b4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_build_graph.py.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_build_graph.py.stderr",
+      "sha256": "939cf6dc6892a8ea2309887dc04993dfe427c7116ce21af51396d97408a51cb5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NATIVE_CHARGE_THRESHOLD_build_graph.py.stdout",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/NATIVE_CHARGE_THRESHOLD_build_graph.py.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_POST_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_POST_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_POST_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_POST_ROOT_READONLY.stdout.json",
+      "sha256": "bd3364b49be102c773f87b87b10053093ff1c70796c3c6dba3899aca4ca965f2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_POST_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_POST_ROOT_REVIEW.json",
+      "sha256": "d7349f768ea515190e6db9dadb6499aee9cc17b7a9379fb2ab9171282c0482d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_ROOT_READONLY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_PRE_ROOT_READONLY.json",
+      "sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_ROOT_READONLY.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_PRE_ROOT_READONLY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_PRE_ROOT_REVIEW.json",
+      "sha256": "4ccf03db0eff99a37d454908bbd2790c0b02959626912918b7d1b4605a094bca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_SMALL_ROOT_READONLY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_PRE_SMALL_ROOT_READONLY.json",
+      "sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTIETH_PRE_SMALL_ROOT_READONLY.stderr",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/FORTIETH_PRE_SMALL_ROOT_READONLY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/build_native_charge_threshold_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/build_native_charge_threshold_publication.py",
+      "sha256": "37a0fb94ff4ec8b2b22f21a6577cf20edde567bc6c1e913947351b26db912759"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_native_charge_threshold_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/verify_native_charge_threshold_publication.py",
+      "sha256": "6c4a1db1aff7e8bb84e3cfb977b08b3a87625e9c6581c3cc764f7a2f4d87e8d8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication-history/BUILD_FAILURE_01.json",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/build_history/BUILD_FAILURE_01.json",
+      "sha256": "697e17e10dc10482673056822fa105c5a0af51394c1c1fed63e7b50c6b08d36b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-threshold-publication-history/builder_before_header_literal_repair.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/review/root/build_history/builder_before_header_literal_repair.py",
+      "sha256": "82dd275bcca80656c4f561eb756edbf39934a823425afe84965cfbf5bd2336ee"
+    }
+  ]
+}

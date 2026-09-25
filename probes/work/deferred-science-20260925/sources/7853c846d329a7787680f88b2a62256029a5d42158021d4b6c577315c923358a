@@ -1,0 +1,12 @@
+{
+  "sealed_utc": "2026-09-24T13:08:09.097705+00:00",
+  "stage": "independent-PRE-before-root-source-release",
+  "scope": "Analytic finite-intervention operational construction and binned marked comparison under the two pinned source hypotheses; no root candidate read, no physical resource reset, no audit status.",
+  "files": {
+    "PRE.md": "c30f79fec59168ddbdbc52d72abd6604cba58baf59d6e165de597d806ee9647b",
+    "SOURCE_PINS.json": "f2a30bf1b6ecfe0527a188ba318e3c2aec94514c2e04ccb92713a074fe540bd7",
+    "OPERATIONS.log": "41ad731930cd7dd2ffb22e41012c49fcbffcaa73c995b4140fbcc269573f4209",
+    "sources/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+    "sources/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+  }
+}

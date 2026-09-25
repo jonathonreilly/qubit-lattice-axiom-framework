@@ -1,0 +1,25 @@
+{
+  "at": "2026-09-25T03:37:05.289631+00:00",
+  "PRE_sha256": "edaaee9321fe99e298acba00dd5c8b9dd750529595806eb04d844bbd27f38b72",
+  "seal_sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384",
+  "members": 35,
+  "unique_live_origins_verified": 7,
+  "complete_root_read": [
+    "PRE complete proof",
+    "ground_filling_control.py",
+    "verify_pre.py",
+    "147 local group rows",
+    "48 rational Rayleigh rows",
+    "5 geometry rows",
+    "10 physical rows",
+    "source pins, verification report, parameter supplement, failure log, approach registry, extension diff"
+  ],
+  "fresh_checks": {
+    "stored_local_formula_and_slack_rows": 147,
+    "stored_rayleigh_equalities": 48,
+    "execution_bindings": 2
+  },
+  "finding": "No required mathematical correction identified. PRE adds rectangular side-four coverage, sharper incidence bounds and explicit finite-support electric remainder; preserve that independent provenance. Root author packet not yet released.",
+  "verifier_caution": "verify_pre.py calls write_text on CONTROL_EXTENSION_DIFF.txt, SOURCE_PINS.json and VERIFICATION_REPORT.json despite read-only docstring. It was fully read but NOT executed by root. All sealed bytes are unchanged.",
+  "limits": "Not a third independent reconstruction or empirical/phase identification."
+}

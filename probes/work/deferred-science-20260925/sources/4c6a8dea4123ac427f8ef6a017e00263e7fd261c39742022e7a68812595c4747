@@ -1,0 +1,33 @@
+{
+  "kind": "preparation_uniform_post_source_pins",
+  "frozen_author_packet": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/AUTHOR_SEAL.json": "5699fe83bc73bf6947f0b91f80de26bb32c66e6c665b2487ef19361e971c0235",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/MIXED_LOW_INPUT_BIRTH_ENERGY_PERSONAL_DERIVATION.md": "8dacfedaf587d85c5063042e6630ebe44403effaa7ca4590d8d66f277f507dd2",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/CONTROL_SEAL.json": "0ad1f74ffe289698693788f0483dcf7fa5b3baecf5263093cf8f6f5c0e2bb477",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/mixed_preparation_controls.py": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/MIXED_PREPARATION_CONTROL_RESULTS.json": "902998e149406f0871ed014bf1aba637e8afa6873911d311492ab5770034a02a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/MIXED_PREPARATION_CONTROL.stdout": "902998e149406f0871ed014bf1aba637e8afa6873911d311492ab5770034a02a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/MIXED_PREPARATION_CONTROL.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "preserved_independent_PRE": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/PRE_SEAL.json": "5acf2efb724fe89e525b25fcadf5b2d27bad3da4a2ca88b7392b1efae9accff1",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/PRE.md": "b0820179fddd987438afbe69acef5912813d93530050a8ef67156292a4f21647",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/SOURCE_PINS.json": "75d2a5fdc11f4d3ea6dab99a66a4a66a59caefd03f83024ff3b6ce51333060bb",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/independent_preparation_checks.py": "362ff70752a3cfe855c4b8a1008fa4ad8e8c93338f069b3c8b6576c81969f8b8",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/FINITE_CHECKS.json": "fdffed7dd37b2f78cf832c2bf46f3ee5a881ff56caf0afdab12da79addf0cb32",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/FINITE_CHECKS.log": "fdffed7dd37b2f78cf832c2bf46f3ee5a881ff56caf0afdab12da79addf0cb32"
+  },
+  "reused_parent_sources_at_unchanged_hashes": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-coherence-publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+  },
+  "new_post_verification": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-independent/POST_EVIDENCE_VERIFICATION.json": "e5cdc3bdf87c8a8fb483dc3b4303fefe8c7a01f62cf4f869f73d86cb2d48072a"
+  },
+  "scope": "Complete released candidate and finite evidence comparison against the preserved independent PRE; no new author-control run or transitive recertification."
+}

@@ -1,0 +1,180 @@
+{
+  "checked_utc": "2026-09-25T01:25:21.016244+00:00",
+  "scope": "Released root32 source binding, all stored-row arithmetic, and unchanged-seal checks. Author program never imported or executed.",
+  "checker_sha256": "4bc6b134377e4339a92b286f379d916fc2c2dde2fc6df991993ca3c7c21ee297",
+  "PRE_preserved": {
+    "seal": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+    "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+    "sealed_utc": "2026-09-25T00:52:46.780324+00:00",
+    "members_unchanged": 22
+  },
+  "prior_Part_A_publication_preserved": {
+    "seal": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_COMPARISON_SEAL.json",
+    "sha256": "19f2c31594a7a807771dde273c81bc01af9ecaf001f70eb569f4228be99e779c",
+    "sealed_utc": "2026-09-25T01:13:14.813333+00:00",
+    "members_unchanged": 33,
+    "scope_incident_sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536",
+    "scope": "Mechanical preservation only; no new Part B source read or validation."
+  },
+  "released_origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stderr",
+      "frozen": "post_frozen_author/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/CONTROL.stdout",
+      "frozen": "post_frozen_author/CONTROL.stdout",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "bytes": 60855
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/EXECUTION.json",
+      "frozen": "post_frozen_author/EXECUTION.json",
+      "sha256": "80cc556ee78b2cfacd59d75a6f388982a424b8c78452f519cf0de52df3ceacd4",
+      "bytes": 368
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_COUNT_IDENTIFIABILITY_ROOT.md",
+      "sha256": "ec07ed3d833230481535d12f86e8595059c536a8ae16a9f04bad1e06e0010870",
+      "bytes": 7935
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/NUMBER_OFFSET_RESULTS.json",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_RESULTS.json",
+      "sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+      "bytes": 60855
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/ROOT_REVIEW.json",
+      "frozen": "post_frozen_author/ROOT_REVIEW.json",
+      "sha256": "f0c44e55ed23f5a83fb6f4867754b64b49bd1d644d6bed1ad2770bf3de8c4eeb",
+      "bytes": 1276
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/SOURCE_PINS.json",
+      "frozen": "post_frozen_author/SOURCE_PINS.json",
+      "sha256": "ad290a2b012551dd809164a8b78fff902d80d0fa76433345f9518f5cef85d86a",
+      "bytes": 1112
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/number_offset_controls.py",
+      "frozen": "post_frozen_author/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "bytes": 5639
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/AUTHOR_SEAL.json",
+      "frozen": "post_frozen_author/AUTHOR_SEAL.json",
+      "sha256": "912d4bc7e1285d7001eabdcb1d0a2261c5c51b9be82f0e7555a791e476edd8b7",
+      "bytes": 1270
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "frozen": "post_frozen_author/NUMBER_OFFSET_WEAK_FIELD_APPLICATION_SCOPE.md",
+      "sha256": "d70c0b5fe16dc48fb5dee6a1695ecbad0e6c9f92b082c09825aa47148a0b22aa",
+      "bytes": 972
+    }
+  ],
+  "released_origin_count": 10,
+  "author_seal_members_verified": 8,
+  "current_parent_git_bindings": [
+    {
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "PRE_frozen_and_working_bytes_match": true
+    },
+    {
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "PRE_frozen_and_working_bytes_match": true
+    },
+    {
+      "revision": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "PRE_frozen_and_working_bytes_match": true
+    }
+  ],
+  "author_AST_function_inventory": [
+    "run",
+    "generator",
+    "characteristic",
+    "power",
+    "noevent",
+    "history",
+    "pairs"
+  ],
+  "author_execution_binding": {
+    "at": "2026-09-25T00:35:01.978734+00:00",
+    "script_sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+    "elapsed_seconds": 0.43701254203915596,
+    "exit_code": 0,
+    "stdout_sha256": "77a46850c44b084b8f4620dfa917269ac1c8c4fdb62602e1e9c43c865f32d042",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "author_internal_elapsed_seconds": 0.05183775001205504,
+  "rows_reviewed": {
+    "count": 108,
+    "selected_power": 24,
+    "same_number_difference": 4,
+    "fixed_history": 36
+  },
+  "count_max_stored_complex_difference_recomputed": 1.665335005595971e-15,
+  "power_max_stored_difference_recomputed": 7.105427357601002e-15,
+  "reported_aggregate_recomputed": 1.1769395030763611e-14,
+  "diagonal_block_max_separately_checked": 5.063776756646523e-15,
+  "diagonal_block_error_in_author_aggregate": false,
+  "largest_stored_coherent_state_noninvariance": {
+    "offset": [
+      0.1,
+      1.3,
+      -2.2
+    ],
+    "marks": [],
+    "input": 2,
+    "probability": 0.3759003869013069,
+    "probability_difference_abs": 5.573431933475947e-17,
+    "sector_phase_residual": 1.8965692968349386e-16,
+    "diagonal_block_difference": 1.0308401398887372e-16,
+    "full_conditional_unnormalized_state_difference": 0.4207560352393649
+  },
+  "same_number_input_difference_all_four_offsets": 0.3999999999999999,
+  "electric_graph_bound_polynomial_coefficients": {
+    "left": [
+      2,
+      -4,
+      2
+    ],
+    "right": [
+      2,
+      -4,
+      2
+    ]
+  },
+  "scientific_proof_basis": "Preserved independent PRE, released argument comparison, and explicitly attributed POST sufficient-domain proof.",
+  "independent_author_numerical_replication": false,
+  "new_author_programs_executed_or_imported": [],
+  "other_active_scientific_packets_opened_during_POST": [],
+  "weak_field_rate_premise_independently_checked": false,
+  "current_verifier_failures": [],
+  "preserved_prior_verifier_failure": {
+    "attempt": 1,
+    "category": "Own verifier metadata-schema error, not a physics discrepancy",
+    "explanation": "The author seal maps file names to objects containing sha256 and bytes. The first verifier compared a digest to that entire object instead of its sha256 field. All source-origin hashes and PRE/publication seals had already passed before this assertion.",
+    "source": "post_history/post_bind_and_check_attempt_01.py",
+    "source_sha256": "609c6c0f227735a8325ae62732d240db0d07123ee12567860498acb425ed0d49",
+    "execution": "POST_BINDING_EXECUTION.json",
+    "stdout": "POST_BINDING_STDOUT.json",
+    "stderr": "POST_BINDING_STDERR.txt",
+    "repair": "Read each entry sha256 and bytes; rerun only own read-only binding verifier.",
+    "author_program_executed": false
+  }
+}

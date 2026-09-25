@@ -1,0 +1,64 @@
+{
+  "at": "2026-09-25T07:45:39.039929+00:00",
+  "sources": [
+    {
+      "origin": "git:origin/main:docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "direct supplied-law premise; full prior read reused at unchanged identity"
+    },
+    {
+      "origin": "git:origin/main:docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "direct supplied-law premise; full prior read reused at unchanged identity"
+    },
+    {
+      "origin": "git:origin/main:docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "role": "direct supplied-law premise; full prior read reused at unchanged identity"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "bytes": 13333,
+      "role": "personal prior static birth derivation"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "bytes": 1824,
+      "role": "personal42 sealed identity"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "declared geometry helper reuse"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-force-independent/PRE.md",
+      "sha256": "bfa7d1f53c5d639b968b21211d890f4922a8f20d1497d12ac51f497a161ffe35",
+      "bytes": 22220,
+      "role": "read before this derivation; credited selected-word noninvariance motivation"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "applicable workflow"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "applicable instructions"
+    }
+  ],
+  "independent43_exposure_before_seal": false,
+  "source_change": null
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "released_source_and_recorded_evidence_inspection",
+  "complete_author_argument_read": true,
+  "complete_author_control_script_read": true,
+  "all_author_result_rows_read": true,
+  "author_source_matches_recorded_result": true,
+  "all_author_seal_members_verified": true,
+  "whole_stdout_identical_to_result": true,
+  "stderr_empty": true,
+  "recorded_author_exit_code": 0,
+  "finite_spin_coefficient_rows": 90,
+  "maximum_recorded_formula_residual": 1.7763568394002505e-15,
+  "mixed_witness_cases": 9,
+  "mixed_witness_epsilon_rows": 36,
+  "largest_final_recorded_relative_Fisher_error": 0.0004106047527328016,
+  "author_controls_rerun": false,
+  "new_numerical_physics_checks_run_in_POST": false,
+  "preserved_PRE_and_all_five_members_unchanged": true,
+  "unreleased_recent_birth_energy_personal_read": false,
+  "other_active_checker_packets_read": false
+}

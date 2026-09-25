@@ -1,0 +1,1212 @@
+===== runner cache v1 =====
+runner: scripts/time_integrated_microscopic_cube_birth_variance_2026_09_24.py
+runner_sha256: 1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc
+input_fingerprint_sha256: 7cf998c03e1131be4115269ca68c9279ce49544e944d3c6e74d95f5ba9e3332b
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 47.67
+status: ok
+----- stdout -----
+{"epsilon": 0.08, "scaled_low_second_moment": [6.4536255525387, 4.882189851576796, 5.672497643093612], "predicted_coefficient": [1.9599999999999997, 1.9599999999999997, 1.9599999999999997], "vector_difference_norm": [2.1591850575514697, 1.7537643420638165, 1.9681301517998944], "noevent_energy_vector_norm": [26.97393334250981, 21.90851215297239, 24.58693648498382], "preparation": {"eigen_residual": 1.5137334085616307e-14, "orthogonality_error": 2.0649100374085282e-14, "minimum_overlap_eigenvalue": 0.9210809304629294}, "elapsed_seconds": 10.337335374904796}
+{"epsilon": 0.04, "scaled_low_second_moment": [3.1334301946028633, 2.71697634014135, 2.92550352130441], "predicted_coefficient": [1.9599999999999997, 1.9599999999999997, 1.9599999999999997], "vector_difference_norm": [1.1020796404903423, 0.8915285054337505, 1.0024995553691693], "noevent_energy_vector_norm": [27.547987220100577, 22.28477515002356, 25.058774762613794], "preparation": {"eigen_residual": 1.0145110736187793e-14, "orthogonality_error": 2.8336045435405183e-14, "minimum_overlap_eigenvalue": 0.9806400823598685}, "elapsed_seconds": 11.225785874994472}
+{"epsilon": 0.02, "scaled_low_second_moment": [2.2563458285553266, 2.150801834720687, 2.203592750654916], "predicted_coefficient": [1.9599999999999997, 1.9599999999999997, 1.9599999999999997], "vector_difference_norm": [0.5536807414659488, 0.44746364160717206, 0.5034006275886844], "noevent_energy_vector_norm": [27.68303410183249, 22.37231935385751, 25.169100235997202], "preparation": {"eigen_residual": 9.886809769044418e-15, "orthogonality_error": 2.9294828076138465e-14, "minimum_overlap_eigenvalue": 0.995189580653192}, "energy_weighted_contour_refinement_difference": 1.4040330441143103e-11, "elapsed_seconds": 25.089733249973506}
+{
+  "original_words": {
+    "rows": [
+      {
+        "mark": "plus",
+        "b": 2,
+        "effective_loss_expectation": "8",
+        "Gamma_F_norm_squared": "16",
+        "low_component_scaled_M2_over_kappa_squared": "4",
+        "original_second_birth_outputs": [
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1"
+          }
+        ],
+        "birth_words": [
+          {
+            "fields": [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          },
+          {
+            "fields": [
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "mark": "minus",
+        "b": 2,
+        "effective_loss_expectation": "8",
+        "Gamma_F_norm_squared": "16",
+        "low_component_scaled_M2_over_kappa_squared": "4",
+        "original_second_birth_outputs": [
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1"
+          }
+        ],
+        "birth_words": [
+          {
+            "fields": [
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          },
+          {
+            "fields": [
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          }
+        ]
+      },
+      {
+        "mark": "coherent",
+        "b": 4,
+        "effective_loss_expectation": "8",
+        "Gamma_F_norm_squared": "16",
+        "low_component_scaled_M2_over_kappa_squared": "4",
+        "original_second_birth_outputs": [
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              3,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              5,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              2
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              4
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1/2"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": 1,
+            "norm_squared_over_b": "1"
+          },
+          {
+            "edge": [
+              6,
+              7
+            ],
+            "sign": -1,
+            "norm_squared_over_b": "1"
+          }
+        ],
+        "birth_words": [
+          {
+            "fields": [
+              -1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          },
+          {
+            "fields": [
+              -1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          },
+          {
+            "fields": [
+              1,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          },
+          {
+            "fields": [
+              1,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "coefficient": 1
+          }
+        ]
+      }
+    ],
+    "scope": "Exact integer original cube words and complete resolved loss; no joint-limit simulation."
+  },
+  "local_rotor_loss": {
+    "local_blocks": [
+      {
+        "local_total_charge": 2,
+        "hop_matrix": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "Gram_eigenvalues": {
+          "4": 1,
+          "1": 2
+        }
+      },
+      {
+        "local_total_charge": 0,
+        "hop_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "Gram_eigenvalues": {
+          "4": 1,
+          "3": 2,
+          "1": 2,
+          "0": 1
+        }
+      }
+    ],
+    "cover": [
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 0,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 3,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 4,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 5,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 6,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          1,
+          2
+        ],
+        "negative_site": 7,
+        "active_A": [
+          0,
+          3
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 0,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 2,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 3,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 5,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 6,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          1,
+          4
+        ],
+        "negative_site": 7,
+        "active_A": [
+          0,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 0,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 2,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 3,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 4,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 5,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          1,
+          7
+        ],
+        "negative_site": 6,
+        "active_A": [
+          3,
+          5
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 0,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 1,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 3,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 5,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 6,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          4
+        ],
+        "negative_site": 7,
+        "active_A": [
+          0,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 0,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 1,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 3,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 4,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 5,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          2,
+          7
+        ],
+        "negative_site": 6,
+        "active_A": [
+          3,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 0,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 1,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 2,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 3,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 2
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 5,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 1
+      },
+      {
+        "vacant_B": [
+          4,
+          7
+        ],
+        "negative_site": 6,
+        "active_A": [
+          5,
+          6
+        ],
+        "same_sign_centers": 1
+      }
+    ],
+    "cover_counts": {
+      "1": 24,
+      "2": 12
+    },
+    "wrong_oriented_sign_model_has_kernel": true,
+    "scope": "Exact local algebra and charge cover; the written Gauss-star direct-sum proof extends them to the physical rotor space. PRE-origin argument, root publication control."
+  },
+  "three_grade": {
+    "rows": [
+      {
+        "epsilon": 0.15,
+        "scaled_integrated_variance": 0.17296240109364475,
+        "predicted_limit": 0.15032638139144008,
+        "scaled_low_energy_norm_integral": 0.14524337722685518,
+        "scaled_integrated_mean_square": 0.0008327176068436674,
+        "scaled_cross_terms": -5.2256906131489255e-05,
+        "wrong_use_of_noevent_energy_scaled_low_norm": 0.004883423585645433,
+        "low_survival_exponent": -1.3986335304778945,
+        "eigen_residual": 4.2006004772009846e-16
+      },
+      {
+        "epsilon": 0.1,
+        "scaled_integrated_variance": 0.16010921972343,
+        "predicted_limit": 0.15032638139144008,
+        "scaled_low_energy_norm_integral": 0.14807686354408345,
+        "scaled_integrated_mean_square": 0.0003946735926544153,
+        "scaled_cross_terms": 2.509299085673434e-07,
+        "wrong_use_of_noevent_energy_scaled_low_norm": 0.0022252926050743177,
+        "low_survival_exponent": -1.399725225041885,
+        "eigen_residual": 3.55062409644178e-16
+      },
+      {
+        "epsilon": 0.07,
+        "scaled_integrated_variance": 0.15507874416461825,
+        "predicted_limit": 0.15032638139144008,
+        "scaled_low_energy_norm_integral": 0.14922647856765253,
+        "scaled_integrated_mean_square": 0.00019842233602475866,
+        "scaled_cross_terms": 7.948907390087357e-08,
+        "wrong_use_of_noevent_energy_scaled_low_norm": 0.0011015679507413371,
+        "low_survival_exponent": -1.39993355635435,
+        "eigen_residual": 6.302484916297489e-16
+      },
+      {
+        "epsilon": 0.05,
+        "scaled_integrated_variance": 0.1527410543954102,
+        "predicted_limit": 0.15032638139144008,
+        "scaled_low_energy_norm_integral": 0.14976582032958938,
+        "scaled_integrated_mean_square": 0.00010245736367069839,
+        "scaled_cross_terms": -3.865377600220655e-09,
+        "wrong_use_of_noevent_energy_scaled_low_norm": 0.0005647282187800676,
+        "low_survival_exponent": -1.3999826469089582,
+        "eigen_residual": 1.2260302852826785e-16
+      },
+      {
+        "epsilon": 0.03,
+        "scaled_integrated_variance": 0.15119326602958352,
+        "predicted_limit": 0.15032638139144008,
+        "scaled_low_energy_norm_integral": 0.15012473284754801,
+        "scaled_integrated_mean_square": 3.717953747946358e-05,
+        "scaled_cross_terms": -3.6531914133774986e-10,
+        "wrong_use_of_noevent_energy_scaled_low_norm": 0.00020395372234778046,
+        "low_survival_exponent": -1.3999977461079944,
+        "eigen_residual": 4.581174995605358e-16
+      }
+    ],
+    "scope": "Three-grade supplied toy with one absorbed zero-energy sector; spectral integration includes all nonorthogonal cross terms. Not an actual cube simulation."
+  },
+  "actual_cube_low": {
+    "rows": [
+      {
+        "epsilon": 0.08,
+        "scaled_low_second_moment": [
+          6.4536255525387,
+          4.882189851576796,
+          5.672497643093612
+        ],
+        "predicted_coefficient": [
+          1.9599999999999997,
+          1.9599999999999997,
+          1.9599999999999997
+        ],
+        "vector_difference_norm": [
+          2.1591850575514697,
+          1.7537643420638165,
+          1.9681301517998944
+        ],
+        "noevent_energy_vector_norm": [
+          26.97393334250981,
+          21.90851215297239,
+          24.58693648498382
+        ],
+        "preparation": {
+          "eigen_residual": 1.5137334085616307e-14,
+          "orthogonality_error": 2.0649100374085282e-14,
+          "minimum_overlap_eigenvalue": 0.9210809304629294
+        },
+        "elapsed_seconds": 10.337335374904796
+      },
+      {
+        "epsilon": 0.04,
+        "scaled_low_second_moment": [
+          3.1334301946028633,
+          2.71697634014135,
+          2.92550352130441
+        ],
+        "predicted_coefficient": [
+          1.9599999999999997,
+          1.9599999999999997,
+          1.9599999999999997
+        ],
+        "vector_difference_norm": [
+          1.1020796404903423,
+          0.8915285054337505,
+          1.0024995553691693
+        ],
+        "noevent_energy_vector_norm": [
+          27.547987220100577,
+          22.28477515002356,
+          25.058774762613794
+        ],
+        "preparation": {
+          "eigen_residual": 1.0145110736187793e-14,
+          "orthogonality_error": 2.8336045435405183e-14,
+          "minimum_overlap_eigenvalue": 0.9806400823598685
+        },
+        "elapsed_seconds": 11.225785874994472
+      },
+      {
+        "epsilon": 0.02,
+        "scaled_low_second_moment": [
+          2.2563458285553266,
+          2.150801834720687,
+          2.203592750654916
+        ],
+        "predicted_coefficient": [
+          1.9599999999999997,
+          1.9599999999999997,
+          1.9599999999999997
+        ],
+        "vector_difference_norm": [
+          0.5536807414659488,
+          0.44746364160717206,
+          0.5034006275886844
+        ],
+        "noevent_energy_vector_norm": [
+          27.68303410183249,
+          22.37231935385751,
+          25.169100235997202
+        ],
+        "preparation": {
+          "eigen_residual": 9.886809769044418e-15,
+          "orthogonality_error": 2.9294828076138465e-14,
+          "minimum_overlap_eigenvalue": 0.995189580653192
+        },
+        "energy_weighted_contour_refinement_difference": 1.4040330441143103e-11,
+        "elapsed_seconds": 25.089733249973506
+      }
+    ],
+    "builder_provenance": "Definitions included from pinned author runner 4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d; no runtime source import",
+    "scope": "Author reuse of complete S=1 matrices and approximate Riesz contour. Epsilon varies at fixed S; no joint-limit numerical proof. All three actual first marks are used."
+  },
+  "source_sha256": "1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc",
+  "elapsed_seconds": 46.809544374933466,
+  "scope": "Finite corroboration with explicit reused author definitions; no pointwise variance or sharp integral limit."
+}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790285457.902667,
+  "wall_seconds": 1.6946813750546426,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/primitive_dynamics_control.py"
+  ],
+  "code_sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c",
+  "stdout_sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 243226,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,134 @@
+{
+  "sealed_utc": "2026-09-24T23:17:14.539761+00:00",
+  "phase": "blind independent PRE before author release",
+  "scope": "Finite-volume reference gap, conditional same-clock optical box size, exact hard-band contrast and volume bounds, exact mean-energy optimizer/high-energy tails; static identities separated from imported fixed-graph full count dynamics.",
+  "source_origin_count": 4,
+  "source_premises": "Named supplied parents reused conditionally, not recertified. Fourth parent Part C only.",
+  "author_or_other_active_packets_read": false,
+  "current_checkpoint_read": false,
+  "own_control_runs": 2,
+  "first_run_correction_preserved": "Ten empty-band optimum labels corrected to infeasible/null; every other scientific value identical. Complete first run retained.",
+  "parent_or_author_runner_runs": 0,
+  "new_primary_retrievals": 0,
+  "delegation": false,
+  "model_or_effort_override": false,
+  "publication_audit_or_existing_packet_mutations": false,
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "1a405c4683743bf827262ae96157fae3c05eb70c5424ec1b9f0df0a15f11f796",
+      "bytes": 795
+    },
+    {
+      "path": "CONTROL_LABEL_CORRECTION_VERIFICATION.json",
+      "sha256": "e2045e3ef4076750d143d82615e58b9f6ee1d73c70989067199662d0d502a1bd",
+      "bytes": 246
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "740c8d9cd1e04e58d097d3718ba657cd2768ea6499c97313fdc30bcb23234c57",
+      "bytes": 46302
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "740c8d9cd1e04e58d097d3718ba657cd2768ea6499c97313fdc30bcb23234c57",
+      "bytes": 46302
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+      "bytes": 27493
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "48c31b91d0f628ad61d5ca71713414cb0de85c8ea3a469618d1843c3e573babc",
+      "bytes": 4184
+    },
+    {
+      "path": "VERIFICATION_EXECUTION.json",
+      "sha256": "853c2f74c9aafe09021579a05ea6f784d138172910b9fd645c49c38cae6103cf",
+      "bytes": 296
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "017fac69f7746979cd17a587171675ede67436f13dd95efb88b9a52e3adc5a97",
+      "bytes": 1594
+    },
+    {
+      "path": "VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "VERIFICATION_STDOUT.log",
+      "sha256": "017fac69f7746979cd17a587171675ede67436f13dd95efb88b9a52e3adc5a97",
+      "bytes": 1594
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/CONTROL_EXECUTION.json",
+      "sha256": "b581903c3689516f1e3a60a47eec9629023fd59129c128ebdc5616760ff68da9",
+      "bytes": 661
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/CONTROL_RESULTS.json",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737",
+      "bytes": 43248
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/CONTROL_STDOUT.log",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737",
+      "bytes": 43248
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/PRESERVATION.json",
+      "sha256": "9e6291a7fde12137ac42adcd5faa2cec6b30257502459530315d9950d1c08ea3",
+      "bytes": 1160
+    },
+    {
+      "path": "attempt01_before_empty_band_label_fix/optical_band_controls.py",
+      "sha256": "3a11ce80240f7f2966783b8abd27ea7b271e61dd83c09f97846ae1cb3c6b8084",
+      "bytes": 11346
+    },
+    {
+      "path": "optical_band_controls.py",
+      "sha256": "56a189c0d7463c5cf6ae90a72209a0881e8a14d1a3b0100abe5b37f48b34cfb8",
+      "bytes": 11473
+    },
+    {
+      "path": "sources/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "sources/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "bytes": 18848
+    },
+    {
+      "path": "sources/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d",
+      "bytes": 30670
+    },
+    {
+      "path": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "verify_evidence.py",
+      "sha256": "76d329963967c04fa3a95ed6d5869cc8b677d0776363613d739f42d40595295d",
+      "bytes": 6782
+    }
+  ],
+  "read_only_policy": "All members and this seal chmod0444. Any released POST must be a separate packet."
+}

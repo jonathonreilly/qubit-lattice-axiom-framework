@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:37:27.872523+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/primitive_threshold_exploration.py"
+  ],
+  "source_sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+  "elapsed_seconds": 1.0835755839943886,
+  "exit_code": 0,
+  "stdout_sha256": "80d623ff1f56a4df23948dde58782c44520994887ab87c9ab5ef417996104cbf",
+  "stdout_bytes": 10425,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

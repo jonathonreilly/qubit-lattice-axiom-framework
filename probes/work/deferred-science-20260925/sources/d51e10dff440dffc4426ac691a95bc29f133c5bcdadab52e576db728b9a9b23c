@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-25T00:44:01.137487+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/number_offset_control.py"
+  ],
+  "source_sha256": "600f2abcd718c2c348d69039135e91d9a419bd2b0403316ce4e20eeabbcf592b",
+  "exit_code": 0,
+  "elapsed_seconds": 0.4212477079126984,
+  "stdout_file": "CONTROL_ATTEMPT_01_STDOUT.json",
+  "stdout_sha256": "640f6e62da99070fe780ec6807a288073b55622d1aefabb4d4db9b15ee065c37",
+  "stderr_file": "CONTROL_ATTEMPT_01_STDERR.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

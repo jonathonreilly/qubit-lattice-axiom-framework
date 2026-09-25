@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T20:53:23.834391+00:00",
+  "elapsed_wall_seconds": 0.14666299987584352,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-observable-calibration-independent/calibration_controls.py"
+  ],
+  "exit_code": 0,
+  "source_sha256": "10bc8ffdddd395025bf03dfa3f1d4f673d2e80a47f7b45986370d745e10e46ac",
+  "stdout_sha256": "8d950d27a79d87d7017de2f2515a37a0bca042a456be5f625b6a63f85527be3d",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Independent finite oscillator and arithmetic controls only; no author/parent execution."
+}

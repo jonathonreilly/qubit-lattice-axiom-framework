@@ -1,0 +1,86 @@
+{
+  "sealed_utc": "2026-09-24T20:02:42.536339+00:00",
+  "phase": "blind_PRE",
+  "scope": "New conditional magnetic-lag contrast estimate with the complete original rotor postbirth generator. Provisional readout remains imported; the stronger electric graph estimate is explicitly reused from the earlier sealed PRE. No magnetic-lag candidate, current checkpoint, microscopic-readout or active checker packet opened.",
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "3cf436eadfbff80d2500e1427bccb6fdf7da5a08656694aa8199c1311ee7982f",
+      "bytes": 862
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "2807f15f80bb5afd4d923fe8cc597ac673e92f9a2884eb89276e71669fcae696",
+      "bytes": 13876
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "2807f15f80bb5afd4d923fe8cc597ac673e92f9a2884eb89276e71669fcae696",
+      "bytes": 13876
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "7b6ac7468af969a45dd956de59f6dd3a5d1b347ab500fe885df29549d10b17ed",
+      "bytes": 22869
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "f5ef8803a178b0fda2917a81236de65cfb6c06c0edd2b859410cd5b1d4fffdac",
+      "bytes": 3570
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "f43cbf2b299224d8ac518371c4b895316259e8d6c2af7f1fad1b5df63a563f72",
+      "bytes": 3216
+    },
+    {
+      "path": "magnetic_lag_controls.py",
+      "sha256": "f7fa464eeababbfa24c5f873025853b9024f4ad45a1f0e95e109685326d0d5f0",
+      "bytes": 5235
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_PRE.md",
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed",
+      "bytes": 26702
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_PRE_SEAL.json",
+      "sha256": "7df82180e073ab40cb2228e15fd2e2ff43c731b90e8a690388598389c58d589f",
+      "bytes": 2613
+    },
+    {
+      "path": "sources/FINITE_BIN_PRIOR_SOURCE_PINS.json",
+      "sha256": "cefd81353225b5371142c5c0fbbb495b7ff7552c211837772ac6b02079736d49",
+      "bytes": 3050
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    },
+    {
+      "path": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    }
+  ],
+  "read_only_policy": "All fifteen members and this seal chmod 0444. Any POST must be separate.",
+  "new_primary_runs": 0,
+  "own_control_runs": 1,
+  "delegation": false
+}

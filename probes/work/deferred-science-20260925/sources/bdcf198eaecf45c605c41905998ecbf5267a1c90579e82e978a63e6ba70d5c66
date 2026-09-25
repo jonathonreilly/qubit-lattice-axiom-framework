@@ -1,0 +1,255 @@
+{
+  "method": "exact integer two-hop Gram enumeration, with exact harmonic-character rejection",
+  "rows": [
+    {
+      "side": 6,
+      "vertices": 216,
+      "edges": 648,
+      "A_sites": 108,
+      "overlapping_pairs": 972,
+      "changed_pairs": 260,
+      "gauss_and_Hermiticity_exact": true,
+      "all_flows_divergence_free_exact": true,
+      "empty_constant": -66744,
+      "empty_flat": -69336,
+      "prepared_haar_flat": -64199,
+      "defect_constant": 4719,
+      "defect_haar_flat": 5137,
+      "defect_all_angle_flat": 5137,
+      "haar_killed_term_count": 0,
+      "haar_killed_coefficient_sum": 0,
+      "haar_defect_Laurent_term_count": 141,
+      "cosine_histogram": {
+        "(4, 4)": 55,
+        "(4, 2)": 11,
+        "(6, 2)": 3,
+        "(4, 170)": 1
+      },
+      "haar_defect_coefficient_L1": 5137,
+      "electric_mask_histogram": {
+        "1": 618,
+        "1/2": 12,
+        "0": 18
+      },
+      "electric_constant": [
+        10,
+        1
+      ],
+      "common_paths": [
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            5
+          ]
+        ]
+      ],
+      "data_sha256": "7e92ecfede0c45d647113f2f41a7c0581be2657e3f0062cf97c87fa0d3392e5c"
+    },
+    {
+      "side": 8,
+      "vertices": 512,
+      "edges": 1536,
+      "A_sites": 256,
+      "overlapping_pairs": 2304,
+      "changed_pairs": 262,
+      "gauss_and_Hermiticity_exact": true,
+      "all_flows_divergence_free_exact": true,
+      "empty_constant": -158208,
+      "empty_flat": -164352,
+      "prepared_haar_flat": -159212,
+      "defect_constant": 4722,
+      "defect_haar_flat": 5140,
+      "defect_all_angle_flat": 5140,
+      "haar_killed_term_count": 0,
+      "haar_killed_coefficient_sum": 0,
+      "haar_defect_Laurent_term_count": 141,
+      "cosine_histogram": {
+        "(4, 4)": 55,
+        "(4, 2)": 11,
+        "(4, 170)": 1,
+        "(6, 2)": 3
+      },
+      "haar_defect_coefficient_L1": 5140,
+      "electric_mask_histogram": {
+        "1": 1506,
+        "1/2": 12,
+        "0": 18
+      },
+      "electric_constant": [
+        10,
+        1
+      ],
+      "common_paths": [
+        [
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            7
+          ]
+        ]
+      ],
+      "data_sha256": "bd35c2eb36e45f1320ea030381b662c9787295b860cd4a99de9f373206c877f7"
+    }
+  ],
+  "source_sha256": "718ed52dd8c9acfcc80f13260d2dbbb3956ebb2646a389046fcf35416e93f938",
+  "elapsed_seconds": 1.8190530419815332
+}

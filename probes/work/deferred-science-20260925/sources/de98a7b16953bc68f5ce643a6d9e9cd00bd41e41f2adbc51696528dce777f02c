@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-24T19:50:24.210574+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/verify_post_bindings.py"
+  ],
+  "wall_seconds": 0.1586222080513835,
+  "exit_code": 0,
+  "verifier_sha256": "f0408da1a4bd8f3a9f6556b071aba64bb29c1af44db4ea9ace8b305e15a3f9fa",
+  "stdout_sha256": "6f8f3c6ac862bfbf8b772d04959df686a5adf2b42cade0aa19c49a4c79585d7a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Independent binding check, not execution of author controls."
+}

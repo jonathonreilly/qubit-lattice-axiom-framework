@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-25T06:43:54.666323+00:00",
+  "executions": [
+    {
+      "script": "docs/audit/scripts/build_citation_graph.py",
+      "elapsed_seconds": 119.67744870809838,
+      "exit_code": 0,
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GRAPH_build.stdout",
+        "sha256": "13e148f00f55eb5270f6d601a8086167b0f4e73b567914cb7167b393707aba4c",
+        "bytes": 281
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GRAPH_build.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    },
+    {
+      "script": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "elapsed_seconds": 0.08992145908996463,
+      "exit_code": 0,
+      "stdout": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GRAPH_manifest.stdout",
+        "sha256": "51f53149c39dbb4ed2985baecb9944625ffe8feb164eeb30e5164b1482a081a9",
+        "bytes": 77
+      },
+      "stderr": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GRAPH_manifest.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      }
+    }
+  ]
+}

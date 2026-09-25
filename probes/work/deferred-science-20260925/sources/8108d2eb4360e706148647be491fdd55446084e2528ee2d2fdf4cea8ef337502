@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T09:41:24.985561+00:00",
+  "elapsed_seconds": 0.16434854199178517,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/local_support_controls.py"
+  ],
+  "source_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+  "stdout_sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545",
+  "stderr_bytes": 0
+}

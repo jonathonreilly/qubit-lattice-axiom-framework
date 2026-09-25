@@ -1,0 +1,90 @@
+{
+  "sealed_utc": "2026-09-24T22:32:32.991271+00:00",
+  "phase": "released-source POST",
+  "scope": "Root25 response-ratio and physical-clock corollary only; no A/B energy science, audit or author-control rerun.",
+  "PRE_sha256": "1df863cca91858875c0fb84743f6fcf9a706ebde3a3e799b733bf2d1b8ac2a64",
+  "PRE_seal_sha256": "6e08c4d893c9f40eabdb0b296c37bf1b850d48b88a2ec5dd10e2f939e866dce3",
+  "finding": "No material discrepancy within declared conditional scope. Original execution timestamp label qualified by preserved released supplement.",
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "9ed04ef0513fe997fc92bee72fd6a07919bf8db73bcfd684085f6a8a8ca63d2c",
+      "bytes": 8569
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "5f3528fc853bc1fcc0e33f48fe7d849a9767a236b68f79db8ae2cf55bea3e6ab",
+      "bytes": 4635
+    },
+    {
+      "path": "POST_VERIFICATION_REPORT.json",
+      "sha256": "ed7be0d34df8b9c161f90999ab09b601bcad8fb0085653a0bafc8958a4902d36",
+      "bytes": 2639
+    },
+    {
+      "path": "verify_post_bindings.py",
+      "sha256": "7258c9b1679f64d1bd7a05b4793b92b2ecdb8b7dc068284b12c7961b1e74fefa",
+      "bytes": 5090
+    },
+    {
+      "path": "POST_VERIFICATION_STDOUT.log",
+      "sha256": "1c86d5f3dc281653f606323c4a63d1d6990881660cdb743b733024f46cbe0170",
+      "bytes": 148
+    },
+    {
+      "path": "POST_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_VERIFICATION_EXECUTION.json",
+      "sha256": "5831a28a2c89ef318e48b928e2814513274a2116ce965030500f027ee3564e0c",
+      "bytes": 295
+    },
+    {
+      "path": "post_sources/AUTHOR_SEAL.json",
+      "sha256": "47791345950251e276eec8d36de489e59c97999aa2b17547f83af3c20ffacaa6",
+      "bytes": 1217
+    },
+    {
+      "path": "post_sources/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/CONTROL.stdout",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e",
+      "bytes": 1081
+    },
+    {
+      "path": "post_sources/EXECUTION.json",
+      "sha256": "c41e3dda93649cfdbabe4868bb7e17e6aa631e6c3473e43eb1ed6f5ec4c9dcfe",
+      "bytes": 309
+    },
+    {
+      "path": "post_sources/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b",
+      "bytes": 8360
+    },
+    {
+      "path": "post_sources/ROOT_METADATA_QUALIFICATION.md",
+      "sha256": "1a4d164b0d23ae64f90b4004b22eb8dce169d316f63c761dcdbb99efcec0eb7f",
+      "bytes": 379
+    },
+    {
+      "path": "post_sources/SOURCE_PINS.json",
+      "sha256": "852b90181a7aa93e0742cfa144ee1abba784d5fc46c22a84b4c08ea04ce4a0db",
+      "bytes": 1132
+    },
+    {
+      "path": "post_sources/UNIT_CONVERSIONS.json",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e",
+      "bytes": 1081
+    },
+    {
+      "path": "post_sources/unit_conversions.py",
+      "sha256": "cad001b23a6fd9c896ee978a34e7320f6cb0e3ae98d8f46f6ad61652a1af5fb7",
+      "bytes": 953
+    }
+  ]
+}

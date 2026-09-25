@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:51:43.899368+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/charge_coherence_control.py"
+  ],
+  "source_sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a",
+  "elapsed_seconds": 0.04593204101547599,
+  "exit_code": 0,
+  "stdout_sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+  "stdout_bytes": 3820,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

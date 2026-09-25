@@ -1,0 +1,20 @@
+{
+  "seals": [
+    {
+      "seal": "PRE_SEAL.json",
+      "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+      "members_verified": 34
+    },
+    {
+      "seal": "POST_SEAL.json",
+      "sha256": "72d73d581716f85e7f47521aa7acfc40707b46a8bcc119933dcc0d8eeaf975fa",
+      "members_verified": 23
+    },
+    {
+      "seal": "PUBLICATION_SEAL.json",
+      "sha256": "ddaf10d09d32423e9e596e6200a997ea9dc8ab4c3b4dbfa1659f87df19d0d39b",
+      "members_verified": 33
+    }
+  ],
+  "source_freeze_current": true
+}

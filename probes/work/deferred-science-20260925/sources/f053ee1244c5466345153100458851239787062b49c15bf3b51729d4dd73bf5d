@@ -1,0 +1,10 @@
+{
+  "base_revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "files_sha256": {
+    "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+    "scripts/photon_dispersion_observation_and_live_formation_response_2026_09_24.py": "268ee539b5978dca070bbb719eb370b181c63257f9ff5319f76969c8534476c5"
+  },
+  "root_candidate_sha256": "15c48725d54c95abe43de50de23b62fbf9d983029ee2152c125f361a9ca316ba",
+  "root_control_sha256": "b00520addc22448ae3fed5981964b4907a92ebe093a0bee326c5c17b7e0d8bbc",
+  "modifications": "Leading-order ratio qualifier, reported conversions and printed-number distinction, metadata/imports/review scope; original root seal unchanged."
+}

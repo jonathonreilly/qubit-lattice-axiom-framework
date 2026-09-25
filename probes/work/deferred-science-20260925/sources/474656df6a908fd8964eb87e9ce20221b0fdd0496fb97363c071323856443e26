@@ -1,0 +1,329 @@
+{
+  "findings": {
+    "author_generation_preserved": true,
+    "equation_or_control_repair_required": false,
+    "pre_extensions_separately_attributed": true,
+    "repair_applied": false,
+    "required_prose_repair": "Author section 2: remove only/exclusivity of zero-field basis vector for vanishing Hamiltonian-current expectation; nonzero electric basis states and all normal diagonal mixtures also give zero."
+  },
+  "members": [
+    {
+      "bytes": 17311,
+      "path": "POST.md",
+      "sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b"
+    },
+    {
+      "bytes": 0,
+      "path": "POST_CAPTURE.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 204,
+      "path": "POST_CAPTURE.stdout.json",
+      "sha256": "dc129eea38f288f122ace72765c0cdf921c0d4507d8022a7a5ee5712401f6b05"
+    },
+    {
+      "bytes": 19110,
+      "path": "POST_PRESERVATION_BASELINE.json",
+      "sha256": "41cb14a844bbe5caefd6785627e08956e5a07f825efe87013619c53335442fcd"
+    },
+    {
+      "bytes": 9020,
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "e25d913bc6d45c48355804db85efb0ed09925ed4b22aef5ee02223de53dc87cd"
+    },
+    {
+      "bytes": 0,
+      "path": "POST_VERIFICATION_RECORDER.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 765,
+      "path": "POST_VERIFICATION_RECORDER.stdout.json",
+      "sha256": "a15d67e47e1d9ea0c070e02d1eef7c73a61a9a7e27e4e4804e088e1fa84be3bc"
+    },
+    {
+      "bytes": 3298,
+      "path": "POST_VERIFICATION_REPORT.md",
+      "sha256": "48cc1211aa1bf5884a667f27086e225250be3aa7fea45f0cec280c932bcae67b"
+    },
+    {
+      "bytes": 3114,
+      "path": "capture_post_sources.py",
+      "sha256": "641ad1e5d522317532096c9d0755ecb1a68be64e10f83d6b7dce409f029863ee"
+    },
+    {
+      "bytes": 2977,
+      "path": "post_author_sources/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d"
+    },
+    {
+      "bytes": 10761,
+      "path": "post_author_sources/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d"
+    },
+    {
+      "bytes": 0,
+      "path": "post_author_sources/ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5661,
+      "path": "post_author_sources/ROOT_READONLY.stdout.json",
+      "sha256": "c6eaa774761934c9878854b74137e7fb500b6554a262b59482091cad2bd6102a"
+    },
+    {
+      "bytes": 426,
+      "path": "post_author_sources/ROOT_READONLY_EXECUTION.json",
+      "sha256": "630d6dadbac4b9aff3ed3c9252d5ab9edc1bf806bf223c017dab8228c197bf7b"
+    },
+    {
+      "bytes": 1026,
+      "path": "post_author_sources/ROOT_READ_RECEIPT.json",
+      "sha256": "6b81387dee6096bf03dc7547491c2adb6378e8932104c020549534d6aca8116f"
+    },
+    {
+      "bytes": 3028,
+      "path": "post_author_sources/SOURCE_PINS.json",
+      "sha256": "90624a6e4951de65094780827a37d25b6372f7542ae0cbfd041a4abc64ebbcbf"
+    },
+    {
+      "bytes": 7676,
+      "path": "post_author_sources/WORKING_DERIVATION.md",
+      "sha256": "5e004d5b3c375b14beb9c4df5c74ba1b624f6565080da601ab4842f55f5bf5d2"
+    },
+    {
+      "bytes": 730,
+      "path": "post_author_sources/attempt01/EXECUTION.json",
+      "sha256": "4e221b706221f500e98d3b390f66f1a1631eb7c6bdbd280fa2710215303f0ce9"
+    },
+    {
+      "bytes": 6692,
+      "path": "post_author_sources/attempt01/source.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "bytes": 0,
+      "path": "post_author_sources/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1235781,
+      "path": "post_author_sources/attempt01/stdout.json",
+      "sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad"
+    },
+    {
+      "bytes": 6692,
+      "path": "post_author_sources/current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "bytes": 6314,
+      "path": "post_author_sources/prepare_final.py",
+      "sha256": "219ba2f0a17a3e3c36e7b2f9e07fd01329eb1a797c8921e84750b4d96252a998"
+    },
+    {
+      "bytes": 4939,
+      "path": "post_author_sources/root_readonly_check.py",
+      "sha256": "03e585863f846e4bef3922ff9473d9aa87ddcc4883c7fa09125ace101cdd0b35"
+    },
+    {
+      "bytes": 2839,
+      "path": "post_author_sources/seal_author.py",
+      "sha256": "d411c39eb4f4c6478cc20dbb5c98713ae00bfb4700195a14e974821dedc7ea84"
+    },
+    {
+      "bytes": 55384,
+      "path": "post_verification_attempt01/EXECUTION.json",
+      "sha256": "1a4d4a01d0cb576d0852730c3546e5f22603fd57f785a9280d64cf27a04b7a46"
+    },
+    {
+      "bytes": 15112,
+      "path": "post_verification_attempt01/source.py",
+      "sha256": "c32eb0119e989634f06b0c8febbfbd1f2bc21849d66837745b7aede87875811b"
+    },
+    {
+      "bytes": 0,
+      "path": "post_verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 18723,
+      "path": "post_verification_attempt01/stdout.json",
+      "sha256": "b990731574e02b21fed04152421d266f466aa4eb454f0dfadeeac746d16ff291"
+    },
+    {
+      "bytes": 2270,
+      "path": "record_post_verification.py",
+      "sha256": "c8ca5d7817568cba3e49fc00586cfc2971909e3146410dda3508cca418526978"
+    },
+    {
+      "bytes": 5019,
+      "path": "seal_post.py",
+      "sha256": "a4a58d5b9a5c6974573e96e3ea61504597fc0ab119af10c901016d93c5a0da00"
+    },
+    {
+      "bytes": 15112,
+      "path": "verify_post_readonly.py",
+      "sha256": "c32eb0119e989634f06b0c8febbfbd1f2bc21849d66837745b7aede87875811b"
+    }
+  ],
+  "phase": "Released-source POST46 after unchanged blind PRE46",
+  "preserved_pre_seal_sha256": "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410",
+  "report": "POST.md",
+  "report_sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b",
+  "reused_origins": [
+    {
+      "bytes": 10953,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 14902,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 16764,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "snapshot": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 737,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "snapshot": "instructions/AGENTS.md"
+    },
+    {
+      "bytes": 12253,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "snapshot": "instructions/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "bytes": 14490,
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "snapshot": "instructions/physics-claim-reviewer_SKILL.md"
+    }
+  ],
+  "reviewed_author_note_sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+  "reviewed_author_seal_sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d",
+  "scope": "Finite common-law current/domain and initial charge moments; no microscopic derivative transfer, measured spectrum, calibration, public edit or applied audit status.",
+  "sealed_utc": "2026-09-25T10:00:26.464006+00:00",
+  "source_pins_sha256": "e25d913bc6d45c48355804db85efb0ed09925ed4b22aef5ee02223de53dc87cd",
+  "sources": [
+    {
+      "bytes": 2977,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d",
+      "snapshot": "post_author_sources/AUTHOR_SEAL.json"
+    },
+    {
+      "bytes": 10761,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+      "snapshot": "post_author_sources/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md"
+    },
+    {
+      "bytes": 0,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "post_author_sources/ROOT_READONLY.stderr.txt"
+    },
+    {
+      "bytes": 5661,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY.stdout.json",
+      "sha256": "c6eaa774761934c9878854b74137e7fb500b6554a262b59482091cad2bd6102a",
+      "snapshot": "post_author_sources/ROOT_READONLY.stdout.json"
+    },
+    {
+      "bytes": 426,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY_EXECUTION.json",
+      "sha256": "630d6dadbac4b9aff3ed3c9252d5ab9edc1bf806bf223c017dab8228c197bf7b",
+      "snapshot": "post_author_sources/ROOT_READONLY_EXECUTION.json"
+    },
+    {
+      "bytes": 1026,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READ_RECEIPT.json",
+      "sha256": "6b81387dee6096bf03dc7547491c2adb6378e8932104c020549534d6aca8116f",
+      "snapshot": "post_author_sources/ROOT_READ_RECEIPT.json"
+    },
+    {
+      "bytes": 3028,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/SOURCE_PINS.json",
+      "sha256": "90624a6e4951de65094780827a37d25b6372f7542ae0cbfd041a4abc64ebbcbf",
+      "snapshot": "post_author_sources/SOURCE_PINS.json"
+    },
+    {
+      "bytes": 7676,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/WORKING_DERIVATION.md",
+      "sha256": "5e004d5b3c375b14beb9c4df5c74ba1b624f6565080da601ab4842f55f5bf5d2",
+      "snapshot": "post_author_sources/WORKING_DERIVATION.md"
+    },
+    {
+      "bytes": 730,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/EXECUTION.json",
+      "sha256": "4e221b706221f500e98d3b390f66f1a1631eb7c6bdbd280fa2710215303f0ce9",
+      "snapshot": "post_author_sources/attempt01/EXECUTION.json"
+    },
+    {
+      "bytes": 6692,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/source.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "snapshot": "post_author_sources/attempt01/source.py"
+    },
+    {
+      "bytes": 0,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshot": "post_author_sources/attempt01/stderr.txt"
+    },
+    {
+      "bytes": 1235781,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/stdout.json",
+      "sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad",
+      "snapshot": "post_author_sources/attempt01/stdout.json"
+    },
+    {
+      "bytes": 6692,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "snapshot": "post_author_sources/current_noise_controls.py"
+    },
+    {
+      "bytes": 6314,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/prepare_final.py",
+      "sha256": "219ba2f0a17a3e3c36e7b2f9e07fd01329eb1a797c8921e84750b4d96252a998",
+      "snapshot": "post_author_sources/prepare_final.py"
+    },
+    {
+      "bytes": 4939,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/root_readonly_check.py",
+      "sha256": "03e585863f846e4bef3922ff9473d9aa87ddcc4883c7fa09125ace101cdd0b35",
+      "snapshot": "post_author_sources/root_readonly_check.py"
+    },
+    {
+      "bytes": 2839,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/seal_author.py",
+      "sha256": "d411c39eb4f4c6478cc20dbb5c98713ae00bfb4700195a14e974821dedc7ea84",
+      "snapshot": "post_author_sources/seal_author.py"
+    }
+  ],
+  "verification": {
+    "all_compact_groups_and_diff_read": true,
+    "author_or_historical_program_execution": false,
+    "code": "verify_post_readonly.py",
+    "elapsed_seconds": 1.5653212501201779,
+    "empty_stderr": true,
+    "exit_code": 0,
+    "failed_post_executions": [],
+    "observed_files_byte_stat_unchanged": 77,
+    "raw_rows_all_manually_read": false,
+    "raw_rows_exactly_checked": 8480,
+    "receipt": "post_verification_attempt01/EXECUTION.json"
+  }
+}

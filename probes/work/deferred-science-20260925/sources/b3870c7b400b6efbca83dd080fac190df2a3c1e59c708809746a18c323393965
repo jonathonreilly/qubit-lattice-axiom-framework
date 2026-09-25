@@ -1,0 +1,20 @@
+{
+  "scope": "Conditional unit conversions; no experimental-state fit or exact spectral-support claim.",
+  "spectral_endpoint_rows": [
+    {
+      "wavelength_nm": "637",
+      "energy_eV": "1.9463767414945096112677039961989993285980841869763914797309036661"
+    },
+    {
+      "wavelength_nm": "800",
+      "energy_eV": "1.5498024804150032779719093069734532153962245338799517157357320441"
+    }
+  ],
+  "supplied_mean_reference_energy_ceiling_eV": "2",
+  "mean_energy_limiting_relative_excess_upper": "0.00000000000000000002008174849355220050466604453919852019643832178330876090499486353",
+  "conditional_tau_upper_s": "5.7235822343557093026726192890799402915533769338031846190904982957e-36",
+  "experimental_bin_seconds": "0.000000001",
+  "necessary_bin_over_tau_lower": "174715756506042013143777021.6528689991012473527679570389030656376",
+  "source_sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26",
+  "elapsed_seconds": 0.002098082797601819
+}

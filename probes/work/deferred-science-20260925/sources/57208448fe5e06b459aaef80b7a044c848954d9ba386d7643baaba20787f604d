@@ -1,0 +1,86 @@
+{
+  "at": "2026-09-25T09:20:32.063432+00:00",
+  "phase": "Personal author46 before independent46 request or disclosure",
+  "note": "CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+  "note_sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+  "members": [
+    {
+      "path": "CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+      "bytes": 10761
+    },
+    {
+      "path": "ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "ROOT_READONLY.stdout.json",
+      "sha256": "c6eaa774761934c9878854b74137e7fb500b6554a262b59482091cad2bd6102a",
+      "bytes": 5661
+    },
+    {
+      "path": "ROOT_READONLY_EXECUTION.json",
+      "sha256": "630d6dadbac4b9aff3ed3c9252d5ab9edc1bf806bf223c017dab8228c197bf7b",
+      "bytes": 426
+    },
+    {
+      "path": "ROOT_READ_RECEIPT.json",
+      "sha256": "6b81387dee6096bf03dc7547491c2adb6378e8932104c020549534d6aca8116f",
+      "bytes": 1026
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "90624a6e4951de65094780827a37d25b6372f7542ae0cbfd041a4abc64ebbcbf",
+      "bytes": 3028
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "5e004d5b3c375b14beb9c4df5c74ba1b624f6565080da601ab4842f55f5bf5d2",
+      "bytes": 7676
+    },
+    {
+      "path": "attempt01/EXECUTION.json",
+      "sha256": "4e221b706221f500e98d3b390f66f1a1631eb7c6bdbd280fa2710215303f0ce9",
+      "bytes": 730
+    },
+    {
+      "path": "attempt01/source.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "bytes": 6692
+    },
+    {
+      "path": "attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "attempt01/stdout.json",
+      "sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad",
+      "bytes": 1235781
+    },
+    {
+      "path": "current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "bytes": 6692
+    },
+    {
+      "path": "prepare_final.py",
+      "sha256": "219ba2f0a17a3e3c36e7b2f9e07fd01329eb1a797c8921e84750b4d96252a998",
+      "bytes": 6314
+    },
+    {
+      "path": "root_readonly_check.py",
+      "sha256": "03e585863f846e4bef3922ff9473d9aa87ddcc4883c7fa09125ace101cdd0b35",
+      "bytes": 4939
+    },
+    {
+      "path": "seal_author.py",
+      "sha256": "d411c39eb4f4c6478cc20dbb5c98713ae00bfb4700195a14e974821dedc7ea84",
+      "bytes": 2839
+    }
+  ],
+  "source_pins_sha256": "90624a6e4951de65094780827a37d25b6372f7542ae0cbfd041a4abc64ebbcbf",
+  "independent_confirmation": false,
+  "scope": "Supplied original matter/field generator, bounded charge continuity and initial normal-state charge covariance derivative; no finite-time spectrum, physical calibration or audit status."
+}

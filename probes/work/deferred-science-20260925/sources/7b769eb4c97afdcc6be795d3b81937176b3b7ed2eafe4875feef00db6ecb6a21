@@ -1,0 +1,1 @@
+At 2026-09-24 approximately 21:56 UTC the first post-qualification primary completed and wrote its cache, but the receipt wrapper failed serializing a PosixPath without default=str. The complete tool traceback is retained in the task. A new primary run below supplies a complete receipt; no scientific assertion failed and no cache was restamped.

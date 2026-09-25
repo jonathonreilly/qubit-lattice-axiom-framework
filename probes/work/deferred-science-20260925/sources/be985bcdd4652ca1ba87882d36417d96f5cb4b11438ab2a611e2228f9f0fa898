@@ -1,0 +1,38 @@
+{"inputs_and_PRE_hashes_verified": true, "released_source_hashes": {"SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967", "sharp_actual_rotor_cube_energy_tail_2026_09_24.py": "3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f", "SHARP_TAIL_PERSONAL_DERIVATION.md": "f9999677697678620dff4b32a9d4f560d182b53eb973d26192324d892604e0f8", "MODULE_EXACT_CERTIFICATES_ALL.json": "87421a8bd223addf919cbaa43b224961981bce7c716844a1a7266466ca6f07b2", "INCIDENCE_PROBE.json": "e37436d844449d4ae58223ec2ff608bd4375e8fdca70d75f9eda50d882c96aa3"}}
+{"independent_primitive_Q_verified": true, "coefficient_count": 288, "sector_dimensions": {"0": 36, "1": 96, "2": 36}, "outward_transition_counts": {"0": 216, "1": 216}}
+{"phase": 0, "independent_exact_identities_verified": 24}
+{"phase": 1, "independent_exact_identities_verified": 24}
+{"phase": 2, "independent_exact_identities_verified": 24}
+{"phase": 3, "independent_exact_identities_verified": 24}
+{"phase": 4, "independent_exact_identities_verified": 24}
+{
+  "M_P": 569516385720,
+  "exact_identity_count": 120,
+  "exact_sign_ranks_count": 32,
+  "independent_primitive_Q_verified": true,
+  "independent_verifier_sha256": "31c50f07dc7b5f007cf4de545a8402ad4f8de304d518f49029be6e9664b833a8",
+  "maximum_L1_ceiling": 68891,
+  "mutation_residual_coefficient_counts": {
+    "commutator_sign_reversed": 2,
+    "one_primitive_monomial_removed": 25,
+    "one_witness_coefficient_changed": 4,
+    "target_phase_changed": 4
+  },
+  "output_sha256": {
+    "INDEPENDENT_IDENTITY_RESULTS.json": "063f4d9a1e82037ba2587c685c876cd52cbd371b092153a5ee7066d6bfa2eb0b",
+    "INDEPENDENT_PRIMITIVE_Q.json": "e0b8b5216272ee21bb1473f26a692fc733f28d6617b2e36c11f7ff9a9528a9dc",
+    "INDEPENDENT_SIGN_RANKS.json": "3e0dcab2221e49d22c4735af3328dd63a3bdfd7004967eb23e42bfe1dfbd7c3c"
+  },
+  "rank_deficient_phases": {
+    "00000": 23,
+    "00011": 23,
+    "01101": 22,
+    "01110": 23,
+    "10100": 23,
+    "10111": 22,
+    "11001": 20,
+    "11010": 22
+  },
+  "scope": "All identities and ranks verified against an independent exact primitive-hop reconstruction. No root builder imported, modular search rerun, publication runtime certified, or audit status applied."
+}
+{"verification_elapsed_seconds": 2.279068792006001}

@@ -1,0 +1,47 @@
+{
+  "at": "2026-09-25T07:05:47.338709+00:00",
+  "all_leaf_count": 3234,
+  "unchanged_leaf_count": 3233,
+  "leaf_types": {
+    "str": 2,
+    "int": 3227,
+    "bool": 4,
+    "float": 1
+  },
+  "all_differences": [
+    {
+      "path": "/elapsed_seconds",
+      "original": 24.078476916998625,
+      "fresh": 23.747104792157188
+    }
+  ],
+  "source_files_sha256": {
+    "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md": "fb7e648244754b469504f08aa4cd251148d3736740af4f55c7e5c63675c23d14",
+    "scripts/original_formation_and_field_response_budget_2026_09_25.py": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+    ".claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+  },
+  "input_fingerprint_sha256": "d924c8c02ab999ab05e2f8cf16d264d5369008911ed0787492144731300c64a1",
+  "scientific_artifact_sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+  "runner_result_sha256": "512254d73b834582c2b1b9f0362a1ffb026bf1520ad6689a803d34c94e6d3f97",
+  "cache_sha256": "38547dfa9dc0f01485c3f2cee3ffe5d7173140f1c4efb5a8aacc9343e20ea03c",
+  "outer_elapsed_seconds": 23.903092861175537,
+  "complete_geometry_groups": 3,
+  "complete_charge_rows": 75,
+  "complete_flow_rows": 225,
+  "second_difference_checks": 13770,
+  "primitive_paths_checked": 27344,
+  "repair": {
+    "publication_sha256": "0424d201eef8a74ef9cbf7c05728a86c81bd7524156ac67dc0855ca371ead63c",
+    "old": "In the supplied common matter/rotor model, each original formation event reduces\na particular aggregate field-response strength by the same amount.",
+    "new": "In the supplied common matter/rotor model, the expected original formation count\nfixes the change of a particular aggregate field-response strength.",
+    "root_acknowledged": true,
+    "applied_in_this_packet": false,
+    "requires_new_note_identity_and_fresh_primary_cache_before_final_binding": true
+  },
+  "no_other_note_change": true,
+  "runtime_and_wrapper_unchanged": true,
+  "scope": "Personally witnessed fresh unchanged scientific source run after exact introductory qualification. No new independent reconstruction."
+}

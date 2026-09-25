@@ -1,0 +1,26 @@
+{
+  "at": "2026-09-25T04:54:33.157903+00:00",
+  "scope": "Personally derived conditional energy-residence and energy-source consequence. Not independently checked; root37 remains explicit provisional dependency.",
+  "members": [
+    {
+      "path": "NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d",
+      "bytes": 10021
+    },
+    {
+      "path": "ROOT_REVIEW.json",
+      "sha256": "f1a1c74d35950c076f629cd809dbca75566549c9a7322ba31ef201d42d9793d4",
+      "bytes": 1249
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "09f73d562a14f6549041f209c7d55a93fd262a6d300ce054edd665ca111eaa79",
+      "bytes": 1117
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "57dd395a93e0595ba2febd3d0cba9aff9214e5c0a2ecf519f3ee991061df3ce5",
+      "bytes": 2421
+    }
+  ]
+}

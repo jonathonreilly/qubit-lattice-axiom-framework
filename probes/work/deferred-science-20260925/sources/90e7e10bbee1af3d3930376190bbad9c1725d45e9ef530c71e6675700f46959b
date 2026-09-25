@@ -1,0 +1,570 @@
+{
+  "verified_utc": "2026-09-25T08:06:54.102131+00:00",
+  "scope": "Read-only final correspondence by a newly exposed checker, not a blind reconstruction or scientific primary rerun.",
+  "observed_origins_unchanged": 155,
+  "prior_seals": {
+    "author": {
+      "sha256": "08dd5ec99ddeccfb7f70a50e216cd40e3cf8ab954cbda6fca27fbbfcaecad83a",
+      "members": 27
+    },
+    "prior_PRE": {
+      "sha256": "c8287bdc28f8c38368b4130c306c285270037e4b8b4e54614d97c25c14869e07",
+      "members": 54
+    },
+    "prior_POST": {
+      "sha256": "1df6721dded12cd248c17448f94f538b18007d547703c567a573e260e17517df",
+      "members": 51
+    }
+  },
+  "frozen_publication_files": 12,
+  "base_parent_origins": [
+    {
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "path": "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438
+    },
+    {
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    }
+  ],
+  "body_replacements": [
+    {
+      "old": "supplied model; not yet independently checked at this seal. No particle or",
+      "new": "supplied model; separate scoped PRE and POST checks are complete. No particle or"
+    },
+    {
+      "old": "This is the separated flat occupancy threshold. There is no state of this",
+      "new": "This is the global separated flat occupancy threshold. There is no state of this"
+    },
+    {
+      "old": "Start with the original all-A-plus, empty-B, zero-electric-flux basis input.",
+      "new": "Supply the immediately pre-mark all-A-plus, empty-B, zero-electric-flux basis input."
+    }
+  ],
+  "heading_increment": 2,
+  "complete_note_exact_builder_presentation": true,
+  "wrapper_exact_builder_presentation": true,
+  "runtime_exact_author_source": true,
+  "declared_inputs": [
+    {
+      "path": "docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "fd0f9f7c23db2aae9e9e13be9f14d776c9f10153ca886002815d5aff22ddf743",
+      "bytes": 22053
+    },
+    {
+      "path": "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-native-charge-threshold-20260925/runtime/two_record_threshold_and_charge_controls.py",
+      "sha256": "710428b3f5785b50bad193615c8adfbf163743d7eaca90cf81e4695b677ce447",
+      "bytes": 10329
+    }
+  ],
+  "input_fingerprint_sha256": "e79582accb27009c3fdf50430f9b51e79c7f8f9d15e9532d98c4c79fea8da46c",
+  "cache_sha256": "051cc11634e62fadee58af9a497b8fe0420a1370cb4c28d7c7afeffbe2041d73",
+  "cache_exact_execution_serialization": true,
+  "execution_elapsed_sec": 2.9698009490966797,
+  "primary_wrapper_elapsed_sec": 2.9040614580735564,
+  "payload_comparison": {
+    "equal_nontiming_leaves": 6714,
+    "equal_leaf_types": {
+      "str": 62,
+      "int": 6583,
+      "bool": 69
+    },
+    "permitted_timing_fields": [
+      {
+        "path": "/elapsed_seconds",
+        "author": 3.0906439169775695,
+        "public": 2.8379909999202937
+      }
+    ],
+    "other_differences": []
+  },
+  "full_artifact_sha256": "c789ebb5a340ede954ceb4a812a496cbf6a947db5eff339228c18a4e3cb9d8b9",
+  "wrapper_result_sha256": "fa4c0a7f47cede17ff9e8b35a420dedc6f853eebf03c423ca82671d4bd899d35",
+  "stdout_projection_exact": true,
+  "empty_stderr": true,
+  "stored_arithmetic_scope": "Recomputed arithmetic of already recorded grouped rows and kernel; no primitive graph reconstruction or scientific code execution.",
+  "all_37_stored_row_arithmetic": [
+    {
+      "type": [
+        0,
+        0,
+        2
+      ],
+      "row_sum": 11900,
+      "grouped_entries": 13,
+      "target_count": 335,
+      "residual_numerator": -10002520
+    },
+    {
+      "type": [
+        0,
+        0,
+        4
+      ],
+      "row_sum": 12122,
+      "grouped_entries": 21,
+      "target_count": 191,
+      "residual_numerator": -9999140
+    },
+    {
+      "type": [
+        0,
+        0,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 22,
+      "target_count": 169,
+      "residual_numerator": -10004780
+    },
+    {
+      "type": [
+        0,
+        0,
+        8
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 22,
+      "target_count": 169,
+      "residual_numerator": -52773064
+    },
+    {
+      "type": [
+        0,
+        0,
+        10
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 22,
+      "target_count": 169,
+      "residual_numerator": -330172
+    },
+    {
+      "type": [
+        0,
+        1,
+        1
+      ],
+      "row_sum": 11512,
+      "grouped_entries": 12,
+      "target_count": 357,
+      "residual_numerator": -16736738424
+    },
+    {
+      "type": [
+        0,
+        1,
+        3
+      ],
+      "row_sum": 12168,
+      "grouped_entries": 22,
+      "target_count": 229,
+      "residual_numerator": -9991656
+    },
+    {
+      "type": [
+        0,
+        1,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -10000960
+    },
+    {
+      "type": [
+        0,
+        1,
+        7
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -247840420
+    },
+    {
+      "type": [
+        0,
+        1,
+        9
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -2349072
+    },
+    {
+      "type": [
+        0,
+        2,
+        2
+      ],
+      "row_sum": 12188,
+      "grouped_entries": 19,
+      "target_count": 242,
+      "residual_numerator": -9994872
+    },
+    {
+      "type": [
+        0,
+        2,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 33,
+      "target_count": 169,
+      "residual_numerator": -10006332
+    },
+    {
+      "type": [
+        0,
+        2,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 42,
+      "target_count": 169,
+      "residual_numerator": -629410552
+    },
+    {
+      "type": [
+        0,
+        2,
+        8
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 42,
+      "target_count": 169,
+      "residual_numerator": -8102320
+    },
+    {
+      "type": [
+        0,
+        3,
+        3
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 27,
+      "target_count": 169,
+      "residual_numerator": -10221152344
+    },
+    {
+      "type": [
+        0,
+        3,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 41,
+      "target_count": 169,
+      "residual_numerator": -826527132
+    },
+    {
+      "type": [
+        0,
+        3,
+        7
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 50,
+      "target_count": 169,
+      "residual_numerator": -15522000
+    },
+    {
+      "type": [
+        0,
+        4,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -789066016
+    },
+    {
+      "type": [
+        0,
+        4,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 46,
+      "target_count": 169,
+      "residual_numerator": -18497972
+    },
+    {
+      "type": [
+        0,
+        5,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -18118784
+    },
+    {
+      "type": [
+        1,
+        1,
+        2
+      ],
+      "row_sum": 12248,
+      "grouped_entries": 17,
+      "target_count": 283,
+      "residual_numerator": -10003268
+    },
+    {
+      "type": [
+        1,
+        1,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 30,
+      "target_count": 169,
+      "residual_numerator": -10001320
+    },
+    {
+      "type": [
+        1,
+        1,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 35,
+      "target_count": 169,
+      "residual_numerator": -1006997068
+    },
+    {
+      "type": [
+        1,
+        1,
+        8
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 35,
+      "target_count": 169,
+      "residual_numerator": -15122752
+    },
+    {
+      "type": [
+        1,
+        2,
+        3
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 27,
+      "target_count": 169,
+      "residual_numerator": -10005992
+    },
+    {
+      "type": [
+        1,
+        2,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 42,
+      "target_count": 169,
+      "residual_numerator": -2239581620
+    },
+    {
+      "type": [
+        1,
+        2,
+        7
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 47,
+      "target_count": 169,
+      "residual_numerator": -47148420
+    },
+    {
+      "type": [
+        1,
+        3,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 37,
+      "target_count": 169,
+      "residual_numerator": -2821579612
+    },
+    {
+      "type": [
+        1,
+        3,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 53,
+      "target_count": 169,
+      "residual_numerator": -84019412
+    },
+    {
+      "type": [
+        1,
+        4,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 45,
+      "target_count": 169,
+      "residual_numerator": -101033752
+    },
+    {
+      "type": [
+        2,
+        2,
+        2
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 18,
+      "target_count": 169,
+      "residual_numerator": -27847107864
+    },
+    {
+      "type": [
+        2,
+        2,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 32,
+      "target_count": 169,
+      "residual_numerator": -3767374720
+    },
+    {
+      "type": [
+        2,
+        2,
+        6
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 44,
+      "target_count": 169,
+      "residual_numerator": -125238440
+    },
+    {
+      "type": [
+        2,
+        3,
+        3
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 26,
+      "target_count": 169,
+      "residual_numerator": -3994869584
+    },
+    {
+      "type": [
+        2,
+        3,
+        5
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 43,
+      "target_count": 169,
+      "residual_numerator": -190540620
+    },
+    {
+      "type": [
+        2,
+        4,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 34,
+      "target_count": 169,
+      "residual_numerator": -208696560
+    },
+    {
+      "type": [
+        3,
+        3,
+        4
+      ],
+      "row_sum": 12096,
+      "grouped_entries": 28,
+      "target_count": 169,
+      "residual_numerator": -249702480
+    }
+  ],
+  "historical_row_correspondence": [
+    {
+      "artifact": "attempt01/stdout.json",
+      "row_groups": 13,
+      "grouped_entries": 293,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "artifact": "attempt02/RESULT.json",
+      "row_groups": 23,
+      "grouped_entries": 634,
+      "lp_success": false,
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "artifact": "attempt03/RESULT.json",
+      "row_groups": 37,
+      "grouped_entries": 1187,
+      "lp_success": true,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+    }
+  ],
+  "short_certificate_correspondence": true,
+  "periodic_rows": 68,
+  "reciprocity_rows": 43,
+  "kernel_entries": 85,
+  "charge_aggregate_counts": {
+    "resolved_primitive_outputs": 8448,
+    "minus_on_A": 4224,
+    "resolved_edge_sign_marks": 1704,
+    "minus_on_B": 4224,
+    "flat_coherent_edge_controls": 852
+  },
+  "charge_moment_rows": 15,
+  "charge_raw_word_artifacts_available": false,
+  "preserved_history_gap": "attempt04 has saved result only; its original heredoc writer and separate execution receipt are absent from the author seal.",
+  "own_seal": null,
+  "all_checks_passed": true
+}

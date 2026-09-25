@@ -1,0 +1,152 @@
+{
+  "captured_utc": "2026-09-25T07:09:43.534150+00:00",
+  "phase": "Focused corrected-generation correspondence only",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/.claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py",
+      "snapshot": "sources/publication/.claude/science/physics-loops/mobile-record-formation-response-20260925/runtime/response_sum_controls.py",
+      "sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+      "bytes": 7870,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "snapshot": "sources/publication/docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "fb7e648244754b469504f08aa4cd251148d3736740af4f55c7e5c63675c23d14",
+      "bytes": 16415,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt",
+      "snapshot": "sources/publication/logs/runner-cache/original_formation_and_field_response_budget_2026_09_25.txt",
+      "sha256": "38547dfa9dc0f01485c3f2cee3ffe5d7173140f1c4efb5a8aacc9343e20ea03c",
+      "bytes": 1187,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json",
+      "snapshot": "sources/publication/outputs/formation_response_20260925/FORMATION_RESPONSE_PUBLIC_RESULTS.json",
+      "sha256": "512254d73b834582c2b1b9f0362a1ffb026bf1520ad6689a803d34c94e6d3f97",
+      "bytes": 799,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+      "snapshot": "sources/publication/outputs/formation_response_20260925/RESPONSE_SUM_RESULTS.json",
+      "sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+      "bytes": 69430,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/response_control.stderr.txt",
+      "snapshot": "sources/publication/outputs/formation_response_20260925/response_control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/outputs/formation_response_20260925/response_control.stdout.txt",
+      "snapshot": "sources/publication/outputs/formation_response_20260925/response_control.stdout.txt",
+      "sha256": "be20fc7903259b61a78ddfbea68f25e1d27289c3c50e32f519d05cb785c98985",
+      "bytes": 69430,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/scripts/original_formation_and_field_response_budget_2026_09_25.py",
+      "snapshot": "sources/publication/scripts/original_formation_and_field_response_budget_2026_09_25.py",
+      "sha256": "9c17a0f340ec551fe625ebe4ca36704f773a8a2ea11b7f26519bb706ec116ba0",
+      "bytes": 2600,
+      "scope": "Released canonical content or fresh generation2 evidence; read only."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION2_REPAIR.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION2_REPAIR.json",
+      "sha256": "d82a959ae65d7ae120bd6469a357c69008c792747daf7aad91b02b3af22aaaa9",
+      "bytes": 1103,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION2_CACHE_EXECUTION.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION2_CACHE_EXECUTION.json",
+      "sha256": "96495c6a3cccd2cb8ca1d6664bfa0987d1591c407fb0110f7da611e21a2d0d2f",
+      "bytes": 1282,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION2_FROZEN_SOURCES.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION2_FROZEN_SOURCES.json",
+      "sha256": "60bd39b56e22cd5958525f0b76a9e75b3f768231dbbc53b9ecc1df725ce9857f",
+      "bytes": 5055,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION2_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION2_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "53fdfd470841128a0ad46d307f73b458c5156e09eefa256ebd08caf4301174f1",
+      "bytes": 2739,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/repair_formation_response_publication_generation2.py",
+      "snapshot": "sources/external/repair_formation_response_publication_generation2.py",
+      "sha256": "e43c88b4b5be5074cb398862cac6179baed66d3a2126e7e9d8e81d9ab7bf04c3",
+      "bytes": 4155,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION1_ROOT_REVIEW.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION1_ROOT_REVIEW.json",
+      "sha256": "9633926ed3775b97c781f9c12dbbe78b83a178a7f0147c4599a28568f923d365",
+      "bytes": 1511,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORMATION_RESPONSE_GENERATION1_ROOT_READONLY_RESULT.json",
+      "snapshot": "sources/external/FORMATION_RESPONSE_GENERATION1_ROOT_READONLY_RESULT.json",
+      "sha256": "c8394760ffbf0f7e46d91a65e2beb22c423d2dbb8070a749685c60bc4c07d61c",
+      "bytes": 61732,
+      "scope": "Released repair/execution/review provenance; no program imported or executed."
+    }
+  ],
+  "prior_seals": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/PRE_SEAL.json",
+      "sha256": "d65cdc1e27cd6757c9437f62cec7c45bfa7a3c850da4c5f2f2fe510983c00dad",
+      "members": 30
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/POST_SEAL.json",
+      "sha256": "79359f5d5cddd65d799a6eba47aec005a10d2b3f708a32264b263f9df5f0d9db",
+      "members": 21
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-sum-independent/publication_comparison/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "79e3d680e9316faa167b18f44a5f66f6a27cebb8ce33d8081f82c19b77fa55dd",
+      "members": 40
+    }
+  ],
+  "prior_proof_and_code_review_reused": true,
+  "mutations_outside_this_new_directory": false,
+  "preserved_initial_lookup_failure": "snapshot_attempt01/FAILURE.md"
+}

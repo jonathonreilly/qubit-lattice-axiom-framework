@@ -1,0 +1,39 @@
+{
+  "scope": "Fresh own PRE controls; no author code or parent computations run.",
+  "runner_sha256": "a6b778d7d6467bb841791719e9af773f012deebdf3e0ccd15fc2135745802528",
+  "source_manifest_sha256": "a07ee0d182a82f4f37b36bd9092b0c27bd10670f7546355388ea6737eea84295",
+  "runs": [
+    {
+      "script": "verify_source_pins.py",
+      "script_sha256": "63c1bf81c7634654d28dd8a6b006bde2fe05652f8bbbfe9536ca65c625f8552f",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/verify_source_pins.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent",
+      "started_utc": "2026-09-24T19:11:23.817705+00:00",
+      "elapsed_seconds": 0.18966187490150332,
+      "exit_code": 0,
+      "stdout": "source_verification.stdout.txt",
+      "stderr": "source_verification.stderr.txt",
+      "stdout_sha256": "891c6d114717fffb5c2dcdc736796bc06d43e8c0f7e7f1ada6526c7b800501b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "script": "readout_control.py",
+      "script_sha256": "a52e38e04493c1b09a1ddefcdecd489096ad3f8eeec14f1c23e37090599860fc",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent/readout_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/record-photon-readout-independent",
+      "started_utc": "2026-09-24T19:11:24.007773+00:00",
+      "elapsed_seconds": 0.12856929190456867,
+      "exit_code": 0,
+      "stdout": "readout_control.stdout.txt",
+      "stderr": "readout_control.stderr.txt",
+      "stdout_sha256": "5360a1003931ab50cdeb27cf0bd5e65a92636447f6df8cc4a1bbe346e1367f49",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

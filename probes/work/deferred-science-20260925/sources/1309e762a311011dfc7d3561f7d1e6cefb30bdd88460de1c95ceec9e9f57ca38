@@ -1,0 +1,31 @@
+{
+  "sealed_utc": "2026-09-24T14:42:02.957636+00:00",
+  "scope": "One-link-only correction and new supplied execution/cache binding. No scientific rerun by checker or gate/audit verdict. Earlier reports and seals preserved.",
+  "comparison_sha256": "1f8d30606a4ce7970f511ff6666c1205246407e9c65ceaf0e7fd3eaf999be76a",
+  "previous_publication_comparison_seal_sha256": "8ceaf41f560e60897aa3633d47d04ae71f152ceb36063cde9c536a89e6f86a8c",
+  "new_manifest_sha256": "2a730593ce7480ed6470ddc3b40a403e923583083817e0c1f3168302918ab5d8",
+  "files_sha256": {
+    "LINK_REPAIR_CHECK.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "LINK_REPAIR_CHECK.stdout": "67fe8e596621b126c219d78829f7b127ee633ff3924e083f3df738c492e49bbf",
+    "LINK_REPAIR_CHECK_EXECUTION.json": "fe59afbdaa2be54b2b77d4d506efe420afc581329fd23712aaaa8f1fb87ee364",
+    "LINK_REPAIR_CHECK_RESULTS.json": "67fe8e596621b126c219d78829f7b127ee633ff3924e083f3df738c492e49bbf",
+    "LINK_REPAIR_COMMAND_LOG.md": "120be6a26cbd51a4b5bdd82c25c2e6ed998ea3365127de4624f3c3e315114c25",
+    "LINK_REPAIR_COMPARISON.md": "1f8d30606a4ce7970f511ff6666c1205246407e9c65ceaf0e7fd3eaf999be76a",
+    "LINK_REPAIR_FINAL_VALIDATION.log": "a2673c8a36798a8c4991739632b0d63f04d8057fbba8177554f4e7833aed9e30",
+    "LINK_REPAIR_NOTE_DIFF.patch": "6012e5677cd98a9ad9e32e4743e625945c0dc19e40408992328e03fcec431019",
+    "LINK_REPAIR_SOURCE_PINS.json": "78377c923929d986a51d8d5b5c6f2fba2ab4dcbd2c75d919455bd144f5a072a4",
+    "LINK_REPAIR_sources/external/FIFTH_CHECKLIST_LINK_REPAIR.json": "cca6a891015ce1c8bd3e94948f234346fd93cea4d969ff33a96e2f365eed5511",
+    "LINK_REPAIR_sources/external/FIFTH_PUBLICATION_FINAL_CACHE_EXECUTION.json": "5bf91ca5ac8215584c41f824504e6b001833ad41dc752fd0b933f8c30e8ff4ce",
+    "LINK_REPAIR_sources/external/FIFTH_PUBLICATION_FINAL_SOURCES.json": "2a730593ce7480ed6470ddc3b40a403e923583083817e0c1f3168302918ab5d8",
+    "LINK_REPAIR_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md": "43c7587af4011778660406d196035965df858061a7da0581b780c5ebefe58045",
+    "LINK_REPAIR_sources/publication/.claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md": "0bfbbea87a4f8ba0a9cae328c3948d2ced3a8b45d2ee5152ec9dbfa99adfae77",
+    "LINK_REPAIR_sources/publication/docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+    "LINK_REPAIR_sources/publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "LINK_REPAIR_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "LINK_REPAIR_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "LINK_REPAIR_sources/publication/logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt": "70d919e87a42fe1d84fb02e2a5a3f4fe63e3530d6f811afe58c97d25bb48a9b4",
+    "LINK_REPAIR_sources/publication/outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json": "56cffe771486b68cc6b76ab2ebea0a9839dfdca5fcf893ca7e0e46d36b8eb32d",
+    "LINK_REPAIR_sources/publication/scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py": "5a20a84d626d5fff24e45475ed7166831bbb519a48298f3598229c7286f1e7af",
+    "link_repair_correspondence_checks.py": "323015217a80dadafad3cdf11ad0599a5de5218e59793ee9941bbc3d975914fa"
+  }
+}

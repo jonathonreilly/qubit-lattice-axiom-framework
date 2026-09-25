@@ -1,0 +1,128 @@
+{
+  "at": "2026-09-25T04:42:52.720866+00:00",
+  "source_identity": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_controls.py",
+      "sha256": "6d874248e3f7c3963f6fa3c6ec38c8bd9f465efc870fc29a740ec16bb290c9aa",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_local_row_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_local_row_certificate.py",
+      "sha256": "842b068300b70894f096bdf8c6bb49a4adbb96544a7a8466a3665e592b82be3d",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-personal/native_pair_row_polynomial_certificate.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/pair/native_pair_row_polynomial_certificate.py",
+      "sha256": "637c7d4dccaebd4a90e9588ed591b31a9bde3b1a417dcdcf86b30e55288cb630",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-filling-personal/ground_filling_certificates.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/filling/ground_filling_certificates.py",
+      "sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+      "adaptation": "None; exact sealed scientific source."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-personal/primitive_rate_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-native-ground-20260925/runtime/activity/primitive_rate_energy_controls.py",
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8",
+      "adaptation": "None; exact sealed scientific source."
+    }
+  ],
+  "all_payload_leaf_counts": {
+    "str": 686,
+    "int": 758865,
+    "bool": 151,
+    "float": 33,
+    "NoneType": 36
+  },
+  "all_differences": [
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_top_delta_eigenvalue",
+      "original": 12085.721034416918,
+      "fresh": 12085.72103441692,
+      "absolute_difference": 1.8189894035458565e-12
+    },
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_eigen_residual",
+      "original": 5.5462400803892106e-12,
+      "fresh": 5.513518614398954e-12,
+      "absolute_difference": 3.2721465990256204e-14
+    },
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/elapsed_seconds",
+      "original": 3.853663665940985,
+      "fresh": 2.7830663749482483
+    },
+    {
+      "path": "pair_LOCAL_ROW_CERTIFICATE.json/elapsed_seconds",
+      "original": 1.733345750020817,
+      "fresh": 1.4319601249881089
+    },
+    {
+      "path": "pair_ROW_POLYNOMIAL_CERTIFICATE.json/prior_row_certificate_sha256",
+      "original": "89a6f07c1ec4008a1288b60a1ffa50dfa4432d016ec254c8b72d8b5e6eaaaae1",
+      "fresh": "9332e83d26c7b34e54560739aef25d8d9739740c0eb542510f2dc86d2da40bc5"
+    },
+    {
+      "path": "filling_GROUND_FILLING_CERTIFICATES.json/elapsed_seconds",
+      "original": 0.29450170788913965,
+      "fresh": 0.24778720806352794
+    },
+    {
+      "path": "activity_PRIMITIVE_RATE_ENERGY_RESULTS.json/elapsed_seconds",
+      "original": 3.8899712911807,
+      "fresh": 3.561247417004779
+    }
+  ],
+  "floating_diagnostics_review": [
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_top_delta_eigenvalue",
+      "original": 12085.721034416918,
+      "fresh": 12085.72103441692,
+      "absolute_difference": 1.8189894035458565e-12
+    },
+    {
+      "path": "pair_NATIVE_PAIR_RESULTS.json/quotients/2/floating_eigen_residual",
+      "original": 5.5462400803892106e-12,
+      "fresh": 5.513518614398954e-12,
+      "absolute_difference": 3.2721465990256204e-14
+    }
+  ],
+  "diagnostic_interpretation": "The two eigensolver diagnostics differ at roundoff scale. Every integer matrix entry, positive integer test vector, exact rational interval and other scientific leaf is identical. The rational intervals are verified directly here without rerunning an eigensolver. No stronger diagnosis of the numerical backend is claimed.",
+  "exact_certificates": [
+    {
+      "side": 2,
+      "rows": 3,
+      "entries": 9,
+      "integer_matrix_and_rational_certificate_unchanged": true
+    },
+    {
+      "side": 4,
+      "rows": 19,
+      "entries": 355,
+      "integer_matrix_and_rational_certificate_unchanged": true
+    },
+    {
+      "side": 6,
+      "rows": 55,
+      "entries": 2557,
+      "integer_matrix_and_rational_certificate_unchanged": true
+    },
+    {
+      "side": 8,
+      "rows": 131,
+      "entries": 8963,
+      "integer_matrix_and_rational_certificate_unchanged": true
+    }
+  ],
+  "full_artifacts_bytes": 3829912,
+  "input_fingerprint_sha256": "8da2fa65a2e3e4a69323a9c33164a527964bee81b95407bb3cfa2c072c05f705",
+  "elapsed_sec": 9.626234769821167,
+  "failed_assumption_preserved": "NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+  "failed_cache_api_expectation_preserved": "NATIVE_GROUND_PRIMARY_VERIFICATION_ATTEMPT02_FAILURE.json",
+  "limits": "Fresh exact-source reuse and full correspondence, not another independent derivation or an observed fit."
+}

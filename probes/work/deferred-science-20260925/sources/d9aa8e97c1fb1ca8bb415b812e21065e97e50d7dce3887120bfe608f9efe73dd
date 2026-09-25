@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/process_controls.py", line 225, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/process_controls.py", line 219, in main
+    row=process_control(tau);out['process'].append(row);print(json.dumps(row),flush=True)
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/autonomous-process-personal/process_controls.py", line 148, in process_control
+    assert np.linalg.eigvalsh(K)[0]>-2e-12
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,227 @@
+{
+  "rows": [
+    {
+      "side": 6,
+      "input_data_sha256": "7e92ecfede0c45d647113f2f41a7c0581be2657e3f0062cf97c87fa0d3392e5c",
+      "mode_checks": {
+        "orthonormality_max_residual": 4.440892098500626e-15,
+        "divergence_max_residual": 7.410335858740887e-16,
+        "curl_eigenvalue_max_residual": 2.830524433501838e-15,
+        "expected_transverse_rank": 430,
+        "actual_rank": 430
+      },
+      "relative_form_rank_bound": 100,
+      "global_minimum_actual_to_reference_ratio_floating": -13.69318485510776,
+      "bands": [
+        {
+          "max_reference_frequency_times_tau": 1.0,
+          "momentum_count": 6,
+          "transverse_mode_count": 12,
+          "trace_bound_loss": 1.2314814814814814,
+          "actual_largest_relative_loss_floating": 0.49155405697283405,
+          "minimum_actual_to_reference_ratio_floating": 0.508445943027166
+        },
+        {
+          "max_reference_frequency_times_tau": 1.414213562373,
+          "momentum_count": 18,
+          "transverse_mode_count": 36,
+          "trace_bound_loss": 3.6944444444444446,
+          "actual_largest_relative_loss_floating": 1.40226486068125,
+          "minimum_actual_to_reference_ratio_floating": -0.40226486068125
+        },
+        {
+          "max_reference_frequency_times_tau": 1.732050807569,
+          "momentum_count": 32,
+          "transverse_mode_count": 64,
+          "trace_bound_loss": 6.567901234567902,
+          "actual_largest_relative_loss_floating": 2.405365962172847,
+          "minimum_actual_to_reference_ratio_floating": -1.405365962172847
+        },
+        {
+          "max_reference_frequency_times_tau": 2.0,
+          "momentum_count": 59,
+          "transverse_mode_count": 118,
+          "trace_bound_loss": 12.10956790123457,
+          "actual_largest_relative_loss_floating": 4.2782003466913565,
+          "minimum_actual_to_reference_ratio_floating": -3.2782003466913565
+        },
+        {
+          "max_reference_frequency_times_tau": 2.2360679775,
+          "momentum_count": 95,
+          "transverse_mode_count": 190,
+          "trace_bound_loss": 19.49845679012346,
+          "actual_largest_relative_loss_floating": 6.729677069576479,
+          "minimum_actual_to_reference_ratio_floating": -5.729677069576479
+        },
+        {
+          "max_reference_frequency_times_tau": 2.449489742783,
+          "momentum_count": 119,
+          "transverse_mode_count": 238,
+          "trace_bound_loss": 24.424382716049383,
+          "actual_largest_relative_loss_floating": 8.331572405872159,
+          "minimum_actual_to_reference_ratio_floating": -7.3315724058721585
+        },
+        {
+          "max_reference_frequency_times_tau": 2.645751311065,
+          "momentum_count": 155,
+          "transverse_mode_count": 310,
+          "trace_bound_loss": 31.813271604938272,
+          "actual_largest_relative_loss_floating": 10.71250886496026,
+          "minimum_actual_to_reference_ratio_floating": -9.71250886496026
+        }
+      ],
+      "exact_negative_witness": {
+        "definition": "f=Omega^(1/2)c_p/sqrt(<c_p,Omega c_p>)",
+        "exact_c_p_norm_squared": 4,
+        "exact_curl_c_p_norm_squared": 28,
+        "c_p_Omega_c_p_floating": 10.430603032173938,
+        "reference_energy_times_tau": 2.6844085537175566,
+        "kinetic_loss_times_tau": 0.6669786607432496,
+        "magnetic_loss_times_tau": 33.55510692146945,
+        "actual_increment_limit_times_tau": -31.537677028495146,
+        "exact_analytic_upper_bound_times_tau_numerator": -312,
+        "bound_denominator_c_p_Omega_c_p_floating": 10.430603032173938,
+        "actual_to_reference_ratio": -11.748463915755137
+      },
+      "finite_g_Gaussian_rows": [
+        {
+          "g": 0.2,
+          "uncompacted_Gaussian_increment_times_tau": -31.02551569037068,
+          "error_from_limit": 0.5121613381244678,
+          "error_over_g_squared": 12.804033453111694
+        },
+        {
+          "g": 0.1,
+          "uncompacted_Gaussian_increment_times_tau": -31.408862786316018,
+          "error_from_limit": 0.1288142421791285,
+          "error_over_g_squared": 12.88142421791285
+        },
+        {
+          "g": 0.05,
+          "uncompacted_Gaussian_increment_times_tau": -31.50542485341752,
+          "error_from_limit": 0.03225217507762679,
+          "error_over_g_squared": 12.900870031050713
+        },
+        {
+          "g": 0.025,
+          "uncompacted_Gaussian_increment_times_tau": -31.529610942469095,
+          "error_from_limit": 0.008066086026051522,
+          "error_over_g_squared": 12.905737641682434
+        }
+      ]
+    },
+    {
+      "side": 8,
+      "input_data_sha256": "bd35c2eb36e45f1320ea030381b662c9787295b860cd4a99de9f373206c877f7",
+      "mode_checks": {
+        "orthonormality_max_residual": 5.773159728050814e-15,
+        "divergence_max_residual": 8.939946915089098e-16,
+        "curl_eigenvalue_max_residual": 2.7230903982512367e-15,
+        "expected_transverse_rank": 1022,
+        "actual_rank": 1022
+      },
+      "relative_form_rank_bound": 100,
+      "global_minimum_actual_to_reference_ratio_floating": -13.731404938449264,
+      "bands": [
+        {
+          "max_reference_frequency_times_tau": 0.76536686473,
+          "momentum_count": 6,
+          "transverse_mode_count": 12,
+          "trace_bound_loss": 0.51953125,
+          "actual_largest_relative_loss_floating": 0.21617149042488565,
+          "minimum_actual_to_reference_ratio_floating": 0.7838285095751143
+        },
+        {
+          "max_reference_frequency_times_tau": 1.082392200292,
+          "momentum_count": 18,
+          "transverse_mode_count": 36,
+          "trace_bound_loss": 1.55859375,
+          "actual_largest_relative_loss_floating": 0.6243042766082967,
+          "minimum_actual_to_reference_ratio_floating": 0.3756957233917033
+        },
+        {
+          "max_reference_frequency_times_tau": 1.325654296142,
+          "momentum_count": 26,
+          "transverse_mode_count": 52,
+          "trace_bound_loss": 2.2513020833333335,
+          "actual_largest_relative_loss_floating": 0.8845906831247863,
+          "minimum_actual_to_reference_ratio_floating": 0.11540931687521372
+        },
+        {
+          "max_reference_frequency_times_tau": 1.414213562373,
+          "momentum_count": 32,
+          "transverse_mode_count": 64,
+          "trace_bound_loss": 2.7708333333333335,
+          "actual_largest_relative_loss_floating": 1.0706817711407286,
+          "minimum_actual_to_reference_ratio_floating": -0.0706817711407286
+        },
+        {
+          "max_reference_frequency_times_tau": 1.608038070951,
+          "momentum_count": 56,
+          "transverse_mode_count": 112,
+          "trace_bound_loss": 4.848958333333334,
+          "actual_largest_relative_loss_floating": 1.8090522135523246,
+          "minimum_actual_to_reference_ratio_floating": -0.8090522135523246
+        },
+        {
+          "max_reference_frequency_times_tau": 1.780891034076,
+          "momentum_count": 80,
+          "transverse_mode_count": 160,
+          "trace_bound_loss": 6.927083333333334,
+          "actual_largest_relative_loss_floating": 2.5350454052571085,
+          "minimum_actual_to_reference_ratio_floating": -1.5350454052571085
+        },
+        {
+          "max_reference_frequency_times_tau": 1.847759065023,
+          "momentum_count": 86,
+          "transverse_mode_count": 172,
+          "trace_bound_loss": 7.446614583333334,
+          "actual_largest_relative_loss_floating": 2.7091875030053223,
+          "minimum_actual_to_reference_ratio_floating": -1.7091875030053223
+        }
+      ],
+      "exact_negative_witness": {
+        "definition": "f=Omega^(1/2)c_p/sqrt(<c_p,Omega c_p>)",
+        "exact_c_p_norm_squared": 4,
+        "exact_curl_c_p_norm_squared": 28,
+        "c_p_Omega_c_p_floating": 10.43044398574093,
+        "reference_energy_times_tau": 2.6844494863572206,
+        "kinetic_loss_times_tau": 0.6669766587341146,
+        "magnetic_loss_times_tau": 33.55561857946526,
+        "actual_increment_limit_times_tau": -31.538145751842155,
+        "exact_analytic_upper_bound_times_tau_numerator": -312,
+        "bound_denominator_c_p_Omega_c_p_floating": 10.43044398574093,
+        "actual_to_reference_ratio": -11.74845938138296
+      },
+      "finite_g_Gaussian_rows": [
+        {
+          "g": 0.2,
+          "uncompacted_Gaussian_increment_times_tau": -31.025774824938203,
+          "error_from_limit": 0.5123709269039516,
+          "error_over_g_squared": 12.809273172598788
+        },
+        {
+          "g": 0.1,
+          "uncompacted_Gaussian_increment_times_tau": -31.40927848037552,
+          "error_from_limit": 0.12886727146663546,
+          "error_over_g_squared": 12.886727146663544
+        },
+        {
+          "g": 0.05,
+          "uncompacted_Gaussian_increment_times_tau": -31.505880279632017,
+          "error_from_limit": 0.03226547221013831,
+          "error_over_g_squared": 12.906188884055323
+        },
+        {
+          "g": 0.025,
+          "uncompacted_Gaussian_increment_times_tau": -31.530076339040008,
+          "error_from_limit": 0.008069412802147014,
+          "error_over_g_squared": 12.91106048343522
+        }
+      ]
+    }
+  ],
+  "floating_spectral_results_are_not_interval_certificates": true,
+  "source_sha256": "72f35542a2121f985f0cb25d86e8f87746648b5e480959217d37774904d4b296",
+  "elapsed_seconds": 3.372618875000626
+}

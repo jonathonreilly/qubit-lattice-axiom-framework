@@ -1,0 +1,30 @@
+{
+  "scope": "Conditional original local charge current and covariance; no time propagation, measured readout or empirical claim.",
+  "source_sha256": "d7c2f48c8f8b238ac8b37183d91fff4553a50ceb635f2750b8bcaa995e66a731",
+  "artifacts": [
+    {
+      "label": "current",
+      "path": "outputs/native_local_charge_covariance_20260925/current.stdout.json",
+      "sha256": "8aa219f33df7b834bfc021fe65847e8bb4c1d4b392ac989ff853ae98b034a5df",
+      "bytes": 1235781,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "label": "finite_time",
+      "path": "outputs/native_local_charge_covariance_20260925/finite_time.stdout.json",
+      "sha256": "fa35240e69133e82a52702afbcf4eadc7bdc3ff5954649e8533bb7d49561abdf",
+      "bytes": 7158313,
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "runtime_source_sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+    }
+  ],
+  "runtime_sha256": {
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+    ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+  },
+  "elapsed_seconds": 1.3664364169817418,
+  "all_assertions_passed": true
+}

@@ -1,0 +1,80 @@
+{
+  "checked_utc": "2026-09-25T03:05:06.167238+00:00",
+  "checker_sha256": "53c7cb68654f3651e62ab7b7a61f0e6071e61d87cc716bf525ce2da2809e4917",
+  "scope": "Released-source binding and decimal checks of stored root34 tables.\n\nNo author module is imported or executed. No matrix exponential or eigensystem\nis recomputed. Author-reported direct numerical residuals remain author evidence.\n",
+  "PRE_seal_sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+  "PRE_members_unchanged": 25,
+  "released_source_origins_verified": 10,
+  "author_members_verified": 8,
+  "parent_bindings": [
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    }
+  ],
+  "author_AST_functions": [
+    "string",
+    "complex_pair",
+    "spectrum",
+    "main"
+  ],
+  "author_execution": {
+    "started_utc": "2026-09-25T02:20:48.670328+00:00",
+    "elapsed_seconds": 0.304893417051062,
+    "exit_code": 0,
+    "code_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+    "stdout_sha256": "df526918d68fc1472ce476b7191da45bd737cea75e25748c771e1062065696c2",
+    "stdout_bytes": 33975,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_bytes": 0
+  },
+  "author_internal_elapsed_seconds": 0.10359320905990899,
+  "row_counts": {
+    "spectrum": 10,
+    "first_event": 15,
+    "characteristic": 20,
+    "soft_and_interval": 5
+  },
+  "printed_digit_tolerance_relative": "1e-54; author output prints 60 significant digits from 80-digit calculations",
+  "own_stored_arithmetic_maxima": {
+    "spectral_trace": "4.225806451612903225806451612903225806451720430107526881720414431148109608047173083593479014915019076E-60",
+    "spectral_product": "4.685243138248952934238172511781293345414583333333333333333311381830068824436235622629732900479879327E-60",
+    "mean": "4.407127570878025857389093890895183412880499999999999999999980577226574006751172684342785990676958611E-60",
+    "variance": "8.200173774638679260632435663534059416769999999999999999999932757150065728035077520469638329440946123E-60",
+    "weight_scale": "2.75E-60",
+    "event_difference": "8.4E-61",
+    "event_target": "3.714204097820935713677592014766572227630E-61",
+    "characteristic_difference": "3.191531764919795813229561308742284929503949377495529586563614619655295477807106401288051169130162400E-60",
+    "characteristic_bound": "1.510571566479237925160756485485580878731429E-59",
+    "soft_response": "2.1716081723257827874524016452762113704561E-60",
+    "interior_probability": "3.2E-61"
+  },
+  "maxima_of_reported_author_direct_residuals_not_recomputed": {
+    "direct_eigenvalue_error": "4.42171830020835564819781215375380458041139218659137606913214E-75",
+    "direct_weight_error": "3.16265938296915696730457221538100570231298841471055226502333E-81",
+    "mean_formula_error": "8.6361685550944446253863518628003995711160003644362813850237E-78",
+    "variance_formula_relative_error": "4.21687917729220928973942962050800760308398455294740302003111E-81",
+    "direct_exponential_error": "1.1837119547175656332416880439377632834041060624061016888957E-77"
+  },
+  "exact_original_root_note_sha256": "a72af425e970c080502a394902adf86437d767e90921b30f6e6c889c99ccb902",
+  "separate_magnetic_correction_sha256": "cd145383f395171e33c34666744c326c92729018117e00e30bfd5a8a250ada51",
+  "generic_model_not_original_lattice": true,
+  "independent_numerical_replication": false,
+  "author_programs_imported_or_executed": [],
+  "other_active_packets_opened": [],
+  "failures": []
+}

@@ -1,0 +1,412 @@
+{
+  "scope": "Independent two-state smooth-multiplier and graph-domain machinery controls, not an original-cube simulation.",
+  "limitations": [
+    "Original Gauss covariance and two-mark coefficients are premises, not numerically checked here.",
+    "The Gaussian coordinate is a harmonic reference, not a compact-cutoff trajectory.",
+    "Finite quadrature checks are not interval enclosures.",
+    "A fixed harmonic angle is not the correct initial harmonic projection.",
+    "The magnetic-only toy does not settle the full original model at larger lags."
+  ],
+  "script_sha256": "f7fa464eeababbfa24c5f873025853b9024f4ad45a1f0e95e109685326d0d5f0",
+  "python": "3.13.5",
+  "numpy": "2.4.4",
+  "rows": [
+    {
+      "g": 0.4,
+      "theta": 0.05,
+      "magnetic_contrast": -0.15353427244186335,
+      "boundary_contrast": -0.15372631026437175,
+      "contrast_change_over_g2_theta": 0.024004727813550085,
+      "haar_averaged_factor": 0.9987507810330201,
+      "incorrect_h_equals_zero_factor": 0.997502082639013,
+      "exact_factor_identity_error": 2.3037127760972e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9684162715485525,
+          "analytic_upper_bound": 0.9809008736863976
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1652551985851467,
+          "analytic_upper_bound": 2.17771854659564
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "theta": 0.2,
+      "magnetic_contrast": -0.15068239301659503,
+      "boundary_contrast": -0.15372631026437175,
+      "contrast_change_over_g2_theta": 0.09512241399302257,
+      "haar_averaged_factor": 0.9801991133297817,
+      "incorrect_h_equals_zero_factor": 0.9605304970014426,
+      "exact_factor_identity_error": 1.0824674490095276e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.970978475559577,
+          "analytic_upper_bound": 1.019218948290611
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1681326527682763,
+          "analytic_upper_bound": 2.2160366211998537
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "theta": 0.5,
+      "magnetic_contrast": -0.135678663620876,
+      "boundary_contrast": -0.15372631026437175,
+      "contrast_change_over_g2_theta": 0.22559558304369692,
+      "haar_averaged_factor": 0.8825988432789833,
+      "incorrect_h_equals_zero_factor": 0.7701511529340699,
+      "exact_factor_identity_error": 4.6074255521944e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9855201672213512,
+          "analytic_upper_bound": 1.100411633515673
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1843191158802786,
+          "analytic_upper_bound": 2.2972293064249154
+        }
+      ]
+    },
+    {
+      "g": 0.4,
+      "theta": 1.0,
+      "magnetic_contrast": -0.09407210682197586,
+      "boundary_contrast": -0.15372631026437175,
+      "contrast_change_over_g2_theta": 0.37283877151497424,
+      "haar_averaged_factor": 0.6119453895706177,
+      "incorrect_h_equals_zero_factor": 0.2919265817264289,
+      "exact_factor_identity_error": 8.756884106730922e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 1.0399519219656261,
+          "analytic_upper_bound": 1.2620689482654046
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.2431005327447995,
+          "analytic_upper_bound": 2.458886621174647
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "theta": 0.05,
+      "magnetic_contrast": -0.039552521788738915,
+      "boundary_contrast": -0.03960199334996673,
+      "contrast_change_over_g2_theta": 0.024735780613908263,
+      "haar_averaged_factor": 0.9987507810330201,
+      "incorrect_h_equals_zero_factor": 0.997502082639013,
+      "exact_factor_identity_error": 4.822531263215524e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9682806951950967,
+          "analytic_upper_bound": 0.9714095958354901
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.165107966057929,
+          "analytic_upper_bound": 2.1682272687447326
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "theta": 0.2,
+      "magnetic_contrast": -0.03881783876772715,
+      "boundary_contrast": -0.03960199334996673,
+      "contrast_change_over_g2_theta": 0.09801932277994725,
+      "haar_averaged_factor": 0.9801991133297817,
+      "incorrect_h_equals_zero_factor": 0.9605304970014426,
+      "exact_factor_identity_error": 2.1510571102112408e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9688040049463049,
+          "analytic_upper_bound": 0.9809891144865434
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1657749652260745,
+          "analytic_upper_bound": 2.177806787395786
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "theta": 0.5,
+      "magnetic_contrast": -0.034952673522216315,
+      "boundary_contrast": -0.03960199334996673,
+      "contrast_change_over_g2_theta": 0.23246599138752075,
+      "haar_averaged_factor": 0.8825988432789833,
+      "incorrect_h_equals_zero_factor": 0.7701511529340699,
+      "exact_factor_identity_error": 6.3074545586516706e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9717493889887453,
+          "analytic_upper_bound": 1.0012872857928088
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.169515354866151,
+          "analytic_upper_bound": 2.1981049587020514
+        }
+      ]
+    },
+    {
+      "g": 0.2,
+      "theta": 1.0,
+      "magnetic_contrast": -0.024234257248316737,
+      "boundary_contrast": -0.03960199334996673,
+      "contrast_change_over_g2_theta": 0.3841934025412498,
+      "haar_averaged_factor": 0.6119453895706177,
+      "incorrect_h_equals_zero_factor": 0.2919265817264289,
+      "exact_factor_identity_error": 1.6653345369377348e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9824713736287689,
+          "analytic_upper_bound": 1.0417016144802416
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1829452581317756,
+          "analytic_upper_bound": 2.238519287389484
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "theta": 0.05,
+      "magnetic_contrast": -0.009962570225770406,
+      "boundary_contrast": -0.009975031223974603,
+      "contrast_change_over_g2_theta": 0.024921996408393952,
+      "haar_averaged_factor": 0.9987507810330201,
+      "incorrect_h_equals_zero_factor": 0.997502082639013,
+      "exact_factor_identity_error": 2.9906632725840154e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9682540667577744,
+          "analytic_upper_bound": 0.9690367763727631
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1650744069876606,
+          "analytic_upper_bound": 2.1658544492820053
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "theta": 0.2,
+      "magnetic_contrast": -0.009777516761175775,
+      "boundary_contrast": -0.009975031223974603,
+      "contrast_change_over_g2_theta": 0.09875723139941403,
+      "haar_averaged_factor": 0.9801991133297817,
+      "incorrect_h_equals_zero_factor": 0.9605304970014426,
+      "exact_factor_identity_error": 1.0182826803983858e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9683775477570717,
+          "analytic_upper_bound": 0.9714316560355266
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1652378795411837,
+          "analytic_upper_bound": 2.168249328944769
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "theta": 0.5,
+      "magnetic_contrast": -0.008803951019952905,
+      "boundary_contrast": -0.009975031223974603,
+      "contrast_change_over_g2_theta": 0.23421604080433966,
+      "haar_averaged_factor": 0.8825988432789833,
+      "incorrect_h_equals_zero_factor": 0.7701511529340699,
+      "exact_factor_identity_error": 1.1796119636642288e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9690700076297377,
+          "analytic_upper_bound": 0.9765061988620929
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1661536602206923,
+          "analytic_upper_bound": 2.1733238717713355
+        }
+      ]
+    },
+    {
+      "g": 0.1,
+      "theta": 1.0,
+      "magnetic_contrast": -0.0061041743683354355,
+      "boundary_contrast": -0.009975031223974603,
+      "contrast_change_over_g2_theta": 0.3870856855639167,
+      "haar_averaged_factor": 0.6119453895706177,
+      "incorrect_h_equals_zero_factor": 0.2919265817264289,
+      "exact_factor_identity_error": 1.2212453270876722e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9715564188455552,
+          "analytic_upper_bound": 0.9866097810339512
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.169428928312703,
+          "analytic_upper_bound": 2.1834274539431937
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "theta": 0.05,
+      "magnetic_contrast": -0.002495316892058952,
+      "boundary_contrast": -0.0024984379881795413,
+      "contrast_change_over_g2_theta": 0.024968768964715025,
+      "haar_averaged_factor": 0.9987507810330201,
+      "incorrect_h_equals_zero_factor": 0.997502082639013,
+      "exact_factor_identity_error": 2.067790383364354e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9682478638239076,
+          "analytic_upper_bound": 0.9684435715070814
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1650662203035647,
+          "analytic_upper_bound": 2.1652612444163237
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "theta": 0.2,
+      "magnetic_contrast": -0.002448966700718813,
+      "boundary_contrast": -0.0024984379881795413,
+      "contrast_change_over_g2_theta": 0.09894257492145621,
+      "haar_averaged_factor": 0.9801991133297817,
+      "incorrect_h_equals_zero_factor": 0.9605304970014426,
+      "exact_factor_identity_error": 4.216679089230624e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9682782746646235,
+          "analytic_upper_bound": 0.9690422914227722
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1651068835481313,
+          "analytic_upper_bound": 2.165859964332015
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "theta": 0.5,
+      "magnetic_contrast": -0.002205118478364909,
+      "boundary_contrast": -0.0024984379881795413,
+      "contrast_change_over_g2_theta": 0.23465560785170567,
+      "haar_averaged_factor": 0.8825988432789833,
+      "incorrect_h_equals_zero_factor": 0.7701511529340699,
+      "exact_factor_identity_error": 6.624041593017438e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9684486363408588,
+          "analytic_upper_bound": 0.9703109271294139
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1653346187669174,
+          "analytic_upper_bound": 2.167128600038656
+        }
+      ]
+    },
+    {
+      "g": 0.05,
+      "theta": 1.0,
+      "magnetic_contrast": -0.0015289076079909591,
+      "boundary_contrast": -0.0024984379881795413,
+      "contrast_change_over_g2_theta": 0.3878121520754328,
+      "haar_averaged_factor": 0.6119453895706177,
+      "incorrect_h_equals_zero_factor": 0.2919265817264289,
+      "exact_factor_identity_error": 3.60063541482436e-15,
+      "electric_graph_checks": [
+        {
+          "state": "vacuum",
+          "K_D_magnetic_state_norm": 0.9690579147747054,
+          "analytic_upper_bound": 0.9728368226723785
+        },
+        {
+          "state": "one_particle",
+          "K_D_magnetic_state_norm": 2.1661482502791682,
+          "analytic_upper_bound": 2.169654495581621
+        }
+      ]
+    }
+  ],
+  "excluded_displaced_state_rows": [
+    {
+      "g": 0.4,
+      "mean_sin_displaced_by_g": 0.3741490307023557,
+      "mean_over_g": 0.9353725767558893,
+      "mean_over_g2": 2.338431441889723
+    },
+    {
+      "g": 0.2,
+      "mean_sin_displaced_by_g": 0.19669253792470884,
+      "mean_over_g": 0.9834626896235441,
+      "mean_over_g2": 4.91731344811772
+    },
+    {
+      "g": 0.1,
+      "mean_sin_displaced_by_g": 0.09958414482481766,
+      "mean_over_g": 0.9958414482481766,
+      "mean_over_g2": 9.958414482481764
+    },
+    {
+      "g": 0.05,
+      "mean_sin_displaced_by_g": 0.049947942049407314,
+      "mean_over_g": 0.9989588409881462,
+      "mean_over_g2": 19.979176819762923
+    }
+  ],
+  "fixed_magnetic_bin_rows": [
+    {
+      "magnetic_scaled_lag_beta": 0.1,
+      "bin_averaged_contrast_factor": 0.9983358313501707,
+      "boundary_coefficient_factor": 1.0
+    },
+    {
+      "magnetic_scaled_lag_beta": 0.5,
+      "bin_averaged_contrast_factor": 0.9598652050448802,
+      "boundary_coefficient_factor": 1.0
+    },
+    {
+      "magnetic_scaled_lag_beta": 1.0,
+      "bin_averaged_contrast_factor": 0.8564425732992564,
+      "boundary_coefficient_factor": 1.0
+    }
+  ],
+  "elapsed_seconds": 0.00988245802000165,
+  "all_assertions_passed": true
+}

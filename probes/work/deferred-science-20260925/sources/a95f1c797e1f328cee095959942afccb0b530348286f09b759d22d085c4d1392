@@ -1,0 +1,68 @@
+{
+  "checked_at_utc": "2026-09-24T18:45:41.345762+00:00",
+  "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+  "repository_sources": {
+    "WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "ELECTRIC_AND_MAGNETIC_DYNAMICS_FROM_RECORD_MOTION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+    "UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4"
+  },
+  "read_scope": {
+    "weak_field_note": "Complete argument and all closing scope/imports/source statements.",
+    "electric_parent": "Model and joint scaling; conditional uniform rotor-limit statement and initial moment/preparation hypotheses; closing limitations.",
+    "ring_parent": "Model and conditional local-limit statement; closing limitations.",
+    "MAGIC_1709.00346v1": "Eq. 1, dataset baseline/period, relevant likelihood descriptions, Section 4.3 and Tables 5/6; whole source saved, unrelated scientific arguments not recertified.",
+    "LHAASO_2402.06009v2": "Eqs. 1-8; CCF/ML context, bias and EBL discussion, Table I with ML/MINOS columns and corresponding summary.",
+    "unit_sources": "BIPM c,h,e definitions; IAU resolution notes defining parsec and au."
+  },
+  "preserved_instruction_hashes": {
+    "AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "PHYSICS_CLAIM_REVIEWER_SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+  },
+  "primary_retrievals": {
+    "MAGIC_1709_00346v1": {
+      "requested_url": "https://arxiv.org/pdf/1709.00346v1",
+      "started_at_utc": "2026-09-24T18:30:15.355026+00:00",
+      "exit_code": 0,
+      "stdout": "200 https://arxiv.org/pdf/1709.00346v1\n",
+      "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100 1598k  100 1598k    0     0  3478k      0 --:--:-- --:--:-- --:--:-- 3482k\n",
+      "sha256": "7b01528216cb47bad4f59ac8e8c63be66de01a917b5f03c1d40a36877b4b0ba8",
+      "bytes": 1636651
+    },
+    "LHAASO_2402_06009v2": {
+      "requested_url": "https://arxiv.org/pdf/2402.06009v2",
+      "started_at_utc": "2026-09-24T18:30:15.843529+00:00",
+      "exit_code": 0,
+      "stdout": "200 https://arxiv.org/pdf/2402.06009v2\n",
+      "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n100  503k  100  503k    0     0  2956k      0 --:--:-- --:--:-- --:--:-- 2961k\n",
+      "sha256": "ee06a3a04a9306b0c0c1382e1675dd7df5514777fc13c569a64db7e35bcfcad9",
+      "bytes": 515467
+    }
+  },
+  "all_retrieval_evidence_sha256": {
+    "retrievals/ATTEMPT01_FAILURE.json": "4bc0155e4b865f7cf6636ed8faeb6e45893b6bc95fcd7b52f766647c3dd53356",
+    "retrievals/BIPM_SI_CONSTANTS.headers.txt": "13db6348e2ef3a7c93fac1072aec6e1efb5b912d824743c1f731e6272e7f5777",
+    "retrievals/BIPM_SI_CONSTANTS.source": "4b18c29ae7bf99ff6425b66697204ae48580647d1fd9593d5d4c554a9da520e5",
+    "retrievals/EXTRACTION.json": "481b285deacf240a7d0806aabc4d7a5e5217b663f2dee11bdf2253f596133d52",
+    "retrievals/EXTRACTION_WARNINGS.txt": "f3b057ef8bd6e98fab8a0aa1ac7f696beb09d60c6e1f62eef168ea453303431a",
+    "retrievals/IAU_2015_ARCHIVE.pages.json": "d3306fea804a4858f66eabe88a62f45308fea8bd379e4b07ade6fb7d55ab7ab5",
+    "retrievals/IAU_2015_ARCHIVE.pdf": "9a169a36228b4bdb6ba1f5cd679886253dc1765ae9b32aa7bf125631d8a1a970",
+    "retrievals/IAU_2015_ARCHIVE.pdf.headers.txt": "3fd3b09b267cdefa6a89756fcb5ba11023ae19a90707581edf4e2b0b1cbc5cb8",
+    "retrievals/IAU_2015_ARCHIVE.retrieval.json": "5be7c79ba3ab04e8befa559791ef7170e6643d2e0fee21ad5bdd54c40d90e0a9",
+    "retrievals/IAU_2015_RESOLUTIONS.headers.txt": "003f11786ca1844a09aea7996b27b73701468358e9da9f77c357b057f2917828",
+    "retrievals/LHAASO_2402_06009v2.curl.stderr.txt": "15af26a467a3f4f4821fe0ff912385a905ab5bfddb47580f18116031de58faac",
+    "retrievals/LHAASO_2402_06009v2.curl.stdout.txt": "82e99e00f8c53c1a4428942b93ded4768a0648b854b551ef89264fd02c95e399",
+    "retrievals/LHAASO_2402_06009v2.headers.txt": "45fc026aaed2db18ab6277a3d53ecfb74788cb21ef0a5fac0cf100918067877d",
+    "retrievals/LHAASO_2402_06009v2.pages.json": "ac27c5902980d7bd11fe14b199ecacb56ab38ac56ad5f838273e9c572b9cc66a",
+    "retrievals/LHAASO_2402_06009v2.pdf": "ee06a3a04a9306b0c0c1382e1675dd7df5514777fc13c569a64db7e35bcfcad9",
+    "retrievals/LHAASO_2402_06009v2.retrieval.json": "9856f923584841e90c0e9bff20aad4151da10aab6842913b2dbdbcc34331a4db",
+    "retrievals/MAGIC_1709_00346v1.curl.stderr.txt": "0311639560b8df264832e7f39839c12aa6bbfd3f2870bf8b038789be6283b188",
+    "retrievals/MAGIC_1709_00346v1.curl.stdout.txt": "4c12298fbca9a3e1b93d87546fbbbd832e403ee868e24819da7af70f7260ff53",
+    "retrievals/MAGIC_1709_00346v1.headers.txt": "43b8ac5a49e2c7cf969859f49ae4e875fea043b05397458235b4fb69958cad18",
+    "retrievals/MAGIC_1709_00346v1.pages.json": "935d3943c133d672e57439c3bf0b069c17b1a02816548430db8906fc76e294c8",
+    "retrievals/MAGIC_1709_00346v1.pdf": "7b01528216cb47bad4f59ac8e8c63be66de01a917b5f03c1d40a36877b4b0ba8",
+    "retrievals/MAGIC_1709_00346v1.retrieval.json": "669a75ed431e60c33cff587011670a88477e1f9a03f2742a2c3b6a3e7dd33bba",
+    "retrievals/UNIT_SOURCES_RETRIEVAL.json": "b6e8b46e552e32a37d6d45928e63c7db0697dc7bc507db4c3264da2a3fa210ed"
+  },
+  "scope": "No released or unreleased author argument was read; primary sources and the specifically permitted pinned main notes only."
+}

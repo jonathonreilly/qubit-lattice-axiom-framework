@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-24T23:19:54.581747+00:00",
+  "members_verified": 23,
+  "live_source_origins_verified": 4,
+  "full_PRE_and_two_new_codes_read": true,
+  "scientific_rows_read": 102,
+  "direct_real_fourier_and_three_optimizer_comparisons_read": true,
+  "semantic_empty_band_correction_preserved": true,
+  "root_release_not_yet_sent": true,
+  "note_sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+  "seal_sha256": "0931fe9b88d147fcb9994ea87a0cb48b47cf0215055a8fe9a4780f51ef38666c",
+  "scope": "conditional spectral/mean-constraint proof; static uniform constants not uniform dynamic/physical error"
+}

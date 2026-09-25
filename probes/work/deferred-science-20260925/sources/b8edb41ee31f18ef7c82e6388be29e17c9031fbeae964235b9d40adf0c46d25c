@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-25T04:08:35.457082+00:00",
+  "generation01_commit": "65bfe2ae12623a073de3de00a51e35d33c53e7a7",
+  "preserved_generation": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01",
+  "failure": "Focused gate rejected historical .md evidence links outside docs, because resolve_link_target intentionally accepts only docs sources. The paths exist; no scientific argument failed.",
+  "change": "Point provenance links to their actual evidence directories and name the unchanged historical files explicitly. Canonical source citations and all scientific sections remain unchanged. No gate implementation or exemption altered.",
+  "old_note": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+  "new_note": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb"
+}

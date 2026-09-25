@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_bind_and_compare.py", line 178, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/post_bind_and_compare.py", line 87, in main
+    assert actual==ipairs.get(key,(0,0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

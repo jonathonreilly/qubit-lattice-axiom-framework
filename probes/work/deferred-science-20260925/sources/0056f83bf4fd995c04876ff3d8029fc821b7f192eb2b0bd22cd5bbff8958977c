@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_birth_charge_control.py"
+  ],
+  "elapsed_seconds": 4.673731832997873,
+  "exit_code": 0,
+  "python": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "source_sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9",
+  "source_unchanged": true,
+  "started_utc": "2026-09-25T07:40:38.545315+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "04b1ed1bc0640e416e1b287807be905a78494a668a45066d1264fecf5c6b537f"
+}

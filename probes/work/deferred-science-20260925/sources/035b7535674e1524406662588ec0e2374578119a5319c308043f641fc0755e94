@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-25T04:03:59.624646+00:00",
+  "PRE_sha256": "d78d92e13dd62895d1f7c8ebff2cfc28f9e88b19d1778cd6eba8cfc3e195d6bc",
+  "seal_sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51",
+  "members_verified": 35,
+  "source_origins_verified": 8,
+  "root_coverage": "Complete PRE proof, both new primitive programs, verifier, complete seven vacancy blocks, twelve channel rows, fixture summaries and all four execution receipts read. Every stored Laurent/fixture entry and its Gauss and Hermitian identities consumed by reviewed readonly adapter.",
+  "exact_rows": {
+    "Laurent_M_rows_checked": 11050,
+    "Laurent_Gamma_rows_checked": 8746,
+    "fixture_intermediate_rows_checked": 4,
+    "fixture_Q_rows_checked": 115,
+    "fixture_B_Q_rows_checked": 328
+  },
+  "independent_result": "Q <= 648 n I + 108 Gamma/(5 kappa); h >= -1296 delta n I - 216 delta Gamma/(5 kappa). Conditional global near-ground activity and stationary energy gap use only explicitly provisional author35 half-filling trial.",
+  "new_counterexamples": "Physical L6 distance-four vacancies: Gamma psi=0, D=2, Q mean=4, sum||B Q psi||^2=1240, so instantaneous darkness is not stationary. Saturated sector is stationary at its own sector infimum.",
+  "verification_caveat": "verify_evidence.py describes itself as read-only but creates EVIDENCE_VERIFICATION.json. Original sealed program not rerun; AST adapter removes exactly that final output-file with-statement and preserves all assertions and stdout. Adapter saved externally.",
+  "retained_audit": false,
+  "checker_author36_access_before_PRE_seal": false
+}

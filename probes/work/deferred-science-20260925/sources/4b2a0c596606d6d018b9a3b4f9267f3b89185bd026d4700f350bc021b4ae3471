@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-09-25T02:43:15.660113+00:00",
+  "task": "Blind finite-window energy-measurement PRE",
+  "author_candidate_directory_opened": false,
+  "other_active_scientific_packets_opened": [],
+  "scientific_sources": "Only the three exact permitted parents in SOURCE_PINS.json. Prior completed packet instruction copies were hashed solely to confirm unchanged instructions.",
+  "author_or_parent_programs_imported_or_executed": [],
+  "independent_scientific_program": "primitive_energy_control.py",
+  "scientific_attempts": [
+    {
+      "attempt": 1,
+      "execution": "CONTROL_ATTEMPT_01_EXECUTION.json",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "full_output": "CONTROL_ATTEMPT_01_STDOUT.json"
+    }
+  ],
+  "process_failures": [
+    {
+      "operation": "Initial read-only git show 60c5f194d940a7bbaf1cdd545296e31d74a02f1a:AI_EXECUTION_AGENTS.md",
+      "exit_code": 128,
+      "stdout_bytes": 0,
+      "meaning": "The guessed main-root instruction path does not exist. The actual AGENTS pointer was then read and its standing origin/ai/execution instruction bytes were pinned.",
+      "evidence_limit": "The tool-reported exit/stdout metadata is preserved here; that early lookup stderr was not retained as a file."
+    }
+  ],
+  "scientific_failed_implications_preserved": [
+    "Trace-norm density approximation does not control unbounded energy tests.",
+    "Actual fixed-bin conditional energy laws can converge in total variation while ordinary mean/variance and upper support edge diverge.",
+    "A finite-bin limit does not justify an isolated microscopic-time intensity limit down to the bare initialization layer.",
+    "Weak spectral convergence alone does not imply atom probabilities, total variation, or lower support-edge convergence."
+  ],
+  "unperformed_checks": [
+    "No cube-specific moment or spectral-type computation.",
+    "No independent primary rerun of any parent.",
+    "No author source disclosure or comparison.",
+    "No growing-volume, detector-calibration, or empirical test."
+  ],
+  "no_go_skill_scope": "N1-N8 scope stress test only. No formal publication/audit gate PASS; user-authorized external blind task excludes broader searches and commits."
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "Personal exact flat occupancy exploration. No physical charge identification, full finite-g binding or infinite-volume theorem inferred from LP.",
+  "source_sha256": "4caeffd7a028e8704a8229a7c66a5f65de1dc2d83bfb74f2bf98167c65b3c53d",
+  "row_source_sha256": "0df13c48fca1df42bafb30274ee6aea204ece3a818276822e018b3f94cdf75ab",
+  "radius": 4,
+  "variables": 6,
+  "inequalities": 23,
+  "lp_success": false,
+  "lp_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "exact_certificate": null,
+  "elapsed_seconds": 0.38324895803816617
+}

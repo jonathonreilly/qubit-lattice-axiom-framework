@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790285968.939301,
+  "wall_seconds": 5.925221249926835,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/output_energy_control.py"
+  ],
+  "code_sha256": "2953f3d05511572527fe345ea79f501eabe773b8950268d36c23c74b1f030794",
+  "stdout_sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 9306,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T02:39:41.476104+00:00",
+  "public_files_verified": 14,
+  "independent_final_members": 89,
+  "live_origins_verified": 61,
+  "instruction_origins_verified": 3,
+  "final_report_sha256": "cc227e136278e1a6339a93b029ae61b6243aa9570a13d989337ec3b7fa4c6039",
+  "final_seal_sha256": "cae4400d76a71a24e064cbd2ef7df77a50f12d783fa1e7d1bd952168c2b99f27",
+  "root_read": "Complete final report, verifier and refresh code, output/bindings/failure record; earlier complete original arguments and scientific payloads reused only after exact source/result comparisons. Full public A/B differences, introduction, qualifications and conclusion read.",
+  "result": "No material repair required. Both parts retain their distinct blind PRE/POST provenance; one final combined correspondence. No independent physical calibration or retained audit."
+}

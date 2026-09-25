@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-25T04:31:32.424953+00:00",
+  "elapsed_seconds": 0.13716625003144145,
+  "exit_code": 0,
+  "source_sha256": "74fc088937a5af5adb482b313807c835f8deefd323f9c230aa021365c48e231c",
+  "stdout_sha256": "4e7914448941be58c6b705724a118a158830c6b1171a9c39b89259b39e222d6a",
+  "stdout_bytes": 16137,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "parent_or_author_code_executed": false,
+  "blas_threads_requested": 1
+}

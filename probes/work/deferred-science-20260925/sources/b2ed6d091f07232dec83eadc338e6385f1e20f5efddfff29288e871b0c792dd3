@@ -1,0 +1,91 @@
+{
+  "at": "2026-09-25T04:17:10.098000+00:00",
+  "scope": "Personal root conditional microscopic energy/activity transfer; common-law bound remains explicitly provisional. Independent37 reconstruction pending. All failed-attempt history included.",
+  "members": [
+    {
+      "path": "CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "bytes": 1044
+    },
+    {
+      "path": "CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_ATTEMPT02.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_ATTEMPT02.stdout",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "bytes": 8966
+    },
+    {
+      "path": "EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "bytes": 230
+    },
+    {
+      "path": "EXECUTION_ATTEMPT02.json",
+      "sha256": "5daa6b0d098a2734c53dc7ba9dcf6f9cd9bf590ecf01e2137f3617857fccfb4c",
+      "bytes": 230
+    },
+    {
+      "path": "FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb",
+      "bytes": 16847
+    },
+    {
+      "path": "ROOT_REVIEW.json",
+      "sha256": "bc3ad8aca092b9708902e7f337b0c2e3e82679b9e116506da530f9188ce166b3",
+      "bytes": 1078
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "f241a9f6f647a6d38b9e23a862b0cb490c37b652e96026a1d1fbf22c0d497e05",
+      "bytes": 4410
+    },
+    {
+      "path": "SPIN_ENERGY_CONTROL_RESULTS.json",
+      "sha256": "806c3e033637e7d21bbf6b6415ca3204f71849591e8c66822d4269f158a7bd58",
+      "bytes": 8966
+    },
+    {
+      "path": "WORKING_DERIVATION.md",
+      "sha256": "54ec90dce3e408227b792b71cc0848590ed65a586d79d222ae153f61053843f5",
+      "bytes": 6276
+    },
+    {
+      "path": "history/attempt01/CONTROL_ATTEMPT01.stderr",
+      "sha256": "20d004081a9cadde4d4e728daa058bd5a96c5b1ca3e2d03308e85817e1d4ebc8",
+      "bytes": 1044
+    },
+    {
+      "path": "history/attempt01/CONTROL_ATTEMPT01.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "history/attempt01/EXECUTION_ATTEMPT01.json",
+      "sha256": "d55fbc4f252956c76ab4e65f22120c7c1ecc60d77d8f4f6e3be0fe8c5fcd3730",
+      "bytes": 230
+    },
+    {
+      "path": "history/attempt01/REPAIR.diff",
+      "sha256": "df258827ecd1b3f5351e330d6eb8a66545566058f18362bee851cfe8559cc013",
+      "bytes": 2984
+    },
+    {
+      "path": "history/attempt01/primitive_spin_energy_controls.py",
+      "sha256": "6bddcb72fc24c350201d729c4d684739b837052d95e590e4104f8620ae943d47",
+      "bytes": 10355
+    },
+    {
+      "path": "primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "bytes": 10486
+    }
+  ]
+}

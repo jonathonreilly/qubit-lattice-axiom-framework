@@ -1,0 +1,935 @@
+===== runner cache v1 =====
+runner: scripts/no_first_birth_cube_energy_and_apparatus_coherence_2026_09_24.py
+runner_sha256: 3d0e581de398f11cae0986b18c425e699b7b78f5269a85857eadb0151d1a0d77
+input_fingerprint_sha256: f3deeef2f0cd8e59b466fc3915e959f7397dba42bcdde390446538b8f7e7b219
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 75.59
+status: ok
+----- stdout -----
+{"epsilon": 0.1, "dimension": 3197, "Riesz_norms": [1.000033151934785, 0.004694506493823193, 0.0002606386133266095, 3.287066317459517e-06, 6.954011978432034e-08], "high_norms_over_predicted_powers": [4.694506493823192, 2.6063861332660943, 0.3287066317459516, 0.06954011978432031], "expected_first_high_coefficient": 4.849742261192856, "low_scaled_second_moment": 87.92074111178363, "expected_low_coefficient": 23.519999999999996, "low_vector_error": 8.408507794751094, "decomposition_residual": 2.020427369103185e-15, "preparation": {"eigen_residual": 1.3771939469911254e-14, "orthogonality_error": 2.4861098695852932e-14, "minimum_overlap_eigenvalue": 0.8756259506515022}, "elapsed_seconds": 26.152121040970087}
+{"epsilon": 0.06, "dimension": 3197, "Riesz_norms": [1.0000016337401938, 0.0010430067483935504, 3.650414034981127e-05, 1.0946670553005753e-07, 1.3673607144380318e-09], "high_norms_over_predicted_powers": [4.828734946266438, 2.8166774961274132, 0.14077508427219335, 0.02930728554608265], "expected_first_high_coefficient": 4.849742261192856, "low_scaled_second_moment": 48.17165585799782, "expected_low_coefficient": 23.519999999999996, "low_vector_error": 5.165559248304733, "decomposition_residual": 2.6035287711806303e-15, "preparation": {"eigen_residual": 1.4539745930035285e-14, "orthogonality_error": 2.2593935646549448e-14, "minimum_overlap_eigenvalue": 0.9560482179105989}, "elapsed_seconds": 25.251188792055473}
+{"epsilon": 0.035, "dimension": 3197, "Riesz_norms": [1.000000064816811, 0.00020782745272091043, 4.373168140660149e-06, 2.6850965789961934e-09, 1.9447387309544206e-11], "high_norms_over_predicted_powers": [4.8472875270183176, 2.914231164121714, 0.05112339532806459, 0.01057920413952374], "expected_first_high_coefficient": 4.849742261192856, "low_scaled_second_moment": 32.07174301970164, "expected_low_coefficient": 23.519999999999996, "low_vector_error": 3.034139280175478, "decomposition_residual": 2.7921328120625476e-15, "preparation": {"eigen_residual": 9.49002617166646e-15, "orthogonality_error": 2.8237698924061415e-14, "minimum_overlap_eigenvalue": 0.9852050115922633}, "elapsed_seconds": 23.296650500036776}
+{
+  "geometry": {
+    "all_70_occupancy_rows": [
+      {
+        "occupied": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "grade": 3,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          2,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          2,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          2,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          3,
+          5
+        ],
+        "grade": 1,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          3,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          3,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          4,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          4,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          4,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          1,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          3,
+          5
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          3,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          3,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          4,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          2,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          4,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          4,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          5,
+          6
+        ],
+        "grade": 0,
+        "vacant_edges": 0
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          5,
+          7
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          3,
+          6,
+          7
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          0,
+          4,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          4,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          4,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          0,
+          5,
+          6,
+          7
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          3,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "grade": 4,
+        "vacant_edges": 0
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          5,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          5,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          2,
+          6,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          4,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          4,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      },
+      {
+        "occupied": [
+          1,
+          3,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          4,
+          5,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          4,
+          5,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          1,
+          4,
+          6,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          1,
+          5,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "grade": 2,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          4,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          4,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          2,
+          3,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      },
+      {
+        "occupied": [
+          2,
+          4,
+          5,
+          6
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          2,
+          4,
+          5,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          2,
+          4,
+          6,
+          7
+        ],
+        "grade": 3,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          2,
+          5,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "grade": 1,
+        "vacant_edges": 2
+      },
+      {
+        "occupied": [
+          3,
+          4,
+          5,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          3,
+          4,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          3,
+          5,
+          6,
+          7
+        ],
+        "grade": 1,
+        "vacant_edges": 3
+      },
+      {
+        "occupied": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "grade": 2,
+        "vacant_edges": 4
+      }
+    ],
+    "rotor_word_rows": [
+      {
+        "initial_cycle_flux": -3,
+        "orthogonal_hops": 12,
+        "F_norm_squared": 12,
+        "loss_form": 48,
+        "squared_loss_action_norm": 192
+      },
+      {
+        "initial_cycle_flux": 0,
+        "orthogonal_hops": 12,
+        "F_norm_squared": 12,
+        "loss_form": 48,
+        "squared_loss_action_norm": 192
+      },
+      {
+        "initial_cycle_flux": 4,
+        "orthogonal_hops": 12,
+        "F_norm_squared": 12,
+        "loss_form": 48,
+        "squared_loss_action_norm": 192
+      }
+    ],
+    "spin_edge_rows": [
+      {
+        "S": 1,
+        "minimum_edge_loss": 1.0,
+        "predicted_minimum": 1.0
+      },
+      {
+        "S": 2,
+        "minimum_edge_loss": 0.6666666666666667,
+        "predicted_minimum": 0.6666666666666666
+      },
+      {
+        "S": 3,
+        "minimum_edge_loss": 0.5,
+        "predicted_minimum": 0.5
+      },
+      {
+        "S": 10,
+        "minimum_edge_loss": 0.18181818181818177,
+        "predicted_minimum": 0.18181818181818182
+      },
+      {
+        "S": 40,
+        "minimum_edge_loss": 0.04878048780487809,
+        "predicted_minimum": 0.04878048780487805
+      }
+    ],
+    "scope": "Exact occupancy and integer Gauss words; floating scalar spin identities. No entire large-spin evolution."
+  },
+  "toy": {
+    "rows": [
+      {
+        "epsilon": 0.15,
+        "noevent_probability": 0.4521706540689163,
+        "predicted_probability": 0.36494814645449375,
+        "scaled_conditional_variance": 0.145061794494363,
+        "predicted_conditional_coefficient": 0.23520000000000005,
+        "scaled_weighted_Fisher": 0.2623707459877074,
+        "predicted_Fisher_coefficient": 0.3433432161843878,
+        "first_high_amplitude_over_epsilon_cubed": 0.20166206540986395,
+        "predicted_amplitude_coefficient": 0.29297748044192223,
+        "input_Fisher": 9.394097891519216e-27,
+        "phase_witness_saturation_error": 4.725109192804666e-13
+      },
+      {
+        "epsilon": 0.1,
+        "noevent_probability": 0.40657024265043296,
+        "predicted_probability": 0.36494814645449375,
+        "scaled_conditional_variance": 0.1868474893093163,
+        "predicted_conditional_coefficient": 0.23520000000000005,
+        "scaled_weighted_Fisher": 0.3038665162684516,
+        "predicted_Fisher_coefficient": 0.3433432161843878,
+        "first_high_amplitude_over_epsilon_cubed": 0.2460897003353623,
+        "predicted_amplitude_coefficient": 0.29297748044192223,
+        "input_Fisher": 2.2156623550527586e-26,
+        "phase_witness_saturation_error": 5.3290705182007514e-14
+      },
+      {
+        "epsilon": 0.07,
+        "noevent_probability": 0.38596030391309544,
+        "predicted_probability": 0.36494814645449375,
+        "scaled_conditional_variance": 0.21000192710630267,
+        "predicted_conditional_coefficient": 0.23520000000000005,
+        "scaled_weighted_Fisher": 0.32420963043313716,
+        "predicted_Fisher_coefficient": 0.3433432161843878,
+        "first_high_amplitude_over_epsilon_cubed": 0.2688865210117399,
+        "predicted_amplitude_coefficient": 0.29297748044192223,
+        "input_Fisher": 4.593711750861174e-26,
+        "phase_witness_saturation_error": 2.842170943040401e-14
+      },
+      {
+        "epsilon": 0.04,
+        "noevent_probability": 0.3719443840135405,
+        "predicted_probability": 0.36494814645449375,
+        "scaled_conditional_variance": 0.22642191958591157,
+        "predicted_conditional_coefficient": 0.23520000000000005,
+        "scaled_weighted_Fisher": 0.33686544563018117,
+        "predicted_Fisher_coefficient": 0.3433432161843878,
+        "first_high_amplitude_over_epsilon_cubed": 0.2847336674823874,
+        "predicted_amplitude_coefficient": 0.29297748044192223,
+        "input_Fisher": 2.2241305700651877e-22,
+        "phase_witness_saturation_error": 0.0
+      },
+      {
+        "epsilon": 0.02,
+        "noevent_probability": 0.3667097153482633,
+        "predicted_probability": 0.36494814645449375,
+        "scaled_conditional_variance": 0.23295823288991666,
+        "predicted_conditional_coefficient": 0.23520000000000005,
+        "scaled_weighted_Fisher": 0.34171218908438306,
+        "predicted_Fisher_coefficient": 0.3433432161843878,
+        "first_high_amplitude_over_epsilon_cubed": 0.2908845221732858,
+        "predicted_amplitude_coefficient": 0.29297748044192223,
+        "input_Fisher": 1.3722412670838168e-20,
+        "phase_witness_saturation_error": 5.684341886080801e-13
+      }
+    ],
+    "scope": "Two-level compensated toy with exact Hermitian zero-energy input; diagonalized full noevent evolution at a fixed later time, not the cube."
+  },
+  "actual_spin_one": {
+    "rows": [
+      {
+        "epsilon": 0.1,
+        "dimension": 3197,
+        "Riesz_norms": [
+          1.000033151934785,
+          0.004694506493823193,
+          0.0002606386133266095,
+          3.287066317459517e-06,
+          6.954011978432034e-08
+        ],
+        "high_norms_over_predicted_powers": [
+          4.694506493823192,
+          2.6063861332660943,
+          0.3287066317459516,
+          0.06954011978432031
+        ],
+        "expected_first_high_coefficient": 4.849742261192856,
+        "low_scaled_second_moment": 87.92074111178363,
+        "expected_low_coefficient": 23.519999999999996,
+        "low_vector_error": 8.408507794751094,
+        "decomposition_residual": 2.020427369103185e-15,
+        "preparation": {
+          "eigen_residual": 1.3771939469911254e-14,
+          "orthogonality_error": 2.4861098695852932e-14,
+          "minimum_overlap_eigenvalue": 0.8756259506515022
+        },
+        "elapsed_seconds": 26.152121040970087
+      },
+      {
+        "epsilon": 0.06,
+        "dimension": 3197,
+        "Riesz_norms": [
+          1.0000016337401938,
+          0.0010430067483935504,
+          3.650414034981127e-05,
+          1.0946670553005753e-07,
+          1.3673607144380318e-09
+        ],
+        "high_norms_over_predicted_powers": [
+          4.828734946266438,
+          2.8166774961274132,
+          0.14077508427219335,
+          0.02930728554608265
+        ],
+        "expected_first_high_coefficient": 4.849742261192856,
+        "low_scaled_second_moment": 48.17165585799782,
+        "expected_low_coefficient": 23.519999999999996,
+        "low_vector_error": 5.165559248304733,
+        "decomposition_residual": 2.6035287711806303e-15,
+        "preparation": {
+          "eigen_residual": 1.4539745930035285e-14,
+          "orthogonality_error": 2.2593935646549448e-14,
+          "minimum_overlap_eigenvalue": 0.9560482179105989
+        },
+        "elapsed_seconds": 25.251188792055473
+      },
+      {
+        "epsilon": 0.035,
+        "dimension": 3197,
+        "Riesz_norms": [
+          1.000000064816811,
+          0.00020782745272091043,
+          4.373168140660149e-06,
+          2.6850965789961934e-09,
+          1.9447387309544206e-11
+        ],
+        "high_norms_over_predicted_powers": [
+          4.8472875270183176,
+          2.914231164121714,
+          0.05112339532806459,
+          0.01057920413952374
+        ],
+        "expected_first_high_coefficient": 4.849742261192856,
+        "low_scaled_second_moment": 32.07174301970164,
+        "expected_low_coefficient": 23.519999999999996,
+        "low_vector_error": 3.034139280175478,
+        "decomposition_residual": 2.7921328120625476e-15,
+        "preparation": {
+          "eigen_residual": 9.49002617166646e-15,
+          "orthogonality_error": 2.8237698924061415e-14,
+          "minimum_overlap_eigenvalue": 0.9852050115922633
+        },
+        "elapsed_seconds": 23.296650500036776
+      }
+    ],
+    "builder_sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+    "scope": "Actual canonical N=4 input and all five exact-cluster contour approximations at fixed S=1. No independent builder or joint-scaling numerical proof."
+  },
+  "elapsed_seconds": 74.89411845779978,
+  "source_sha256": "3d0e581de398f11cae0986b18c425e699b7b78f5269a85857eadb0151d1a0d77"
+}
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,55 @@
+{
+  "author42_access": false,
+  "captured_utc": "2026-09-25T07:33:40.877713+00:00",
+  "delegation": false,
+  "historical_context": "Prior39 common-law formation/response knowledge and its later disclosed code are historical exposure; no prior code or packet reopened/imported/copied for fresh controls and no claim of first exposure to the model.",
+  "mutations_outside_this_directory": false,
+  "other_active_packets_or_checkpoint_access": false,
+  "parent_or_prior_scientific_program_import_or_execution": false,
+  "phase": "Blind PRE42 before any author42 disclosure",
+  "pre_seal_reverified_utc": "2026-09-25T07:50:22.388688+00:00",
+  "sources": [
+    {
+      "bytes": 10953,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Complete expressly allowed scientific parent; common finite-graph premises only, no parent runner or extra transitive source opened.",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 14902,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Complete expressly allowed scientific parent; common finite-graph premises only, no parent runner or extra transitive source opened.",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 16764,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "scope": "Complete expressly allowed scientific parent; common finite-graph premises only, no parent runner or extra transitive source opened.",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "snapshot": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "bytes": 737,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/AGENTS.md",
+      "scope": "Previously fully read campaign instruction reused at freshly verified identical bytes; latest bounded brief controls exposure and deliverable.",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "snapshot": "instructions/AGENTS.md"
+    },
+    {
+      "bytes": 12253,
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/formation-response-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "scope": "Previously fully read campaign instruction reused at freshly verified identical bytes; latest bounded brief controls exposure and deliverable.",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "snapshot": "instructions/SCIENCE_WORKFLOW.md"
+    },
+    {
+      "bytes": 14490,
+      "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "scope": "Previously fully read campaign instruction reused at freshly verified identical bytes; latest bounded brief controls exposure and deliverable.",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "snapshot": "instructions/physics-claim-reviewer_SKILL.md"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+===== runner cache v1 =====
+runner: scripts/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.py
+runner_sha256: 8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb
+input_fingerprint_sha256: 98bd881d2988766c559188c1404b66ce9448c593caaaff574c7b3251fcc9fdd7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.89
+status: ok
+----- stdout -----
+{"tau": 0.001, "horizon": 0.003, "clock_dimension": 72, "payload_dimension": 672, "two_observation_joint_clock_error": 0.025778951602639585, "joint_clock_battery_error": 0.025779051349046123, "clock_bound": 1.8787483488571946, "combined_bound": 2.49159208789776, "trace_sums": [0.9999999999999981, 0.9999999999999998, 0.9999999999999998], "full_operator_endpoint_checks": [{"step": 1, "full_payload_endpoint_norm": 0.023126551246632647, "inverse_endpoint_norm": 0.0231265512466328, "analytic_bound": 0.20199095884752086}, {"step": 2, "full_payload_endpoint_norm": 0.03592781419546671, "inverse_endpoint_norm": 0.03592781419546669, "analytic_bound": 0.21841725122733507}, {"step": 3, "full_payload_endpoint_norm": 0.042915353071823904, "inverse_endpoint_norm": 0.04291535307182391, "analytic_bound": 0.23484354360714932}], "near_identity_norm": 0.02319714368049432, "cyclic_wrap_energy_defect": 1.314814546831955, "dimensionless_clock_spectrum_error": 1.7763568394002505e-15, "maximum_lift_composition_residual": 0.0, "elapsed_seconds": 1.2110576250124723, "scope": "Finite adaptive classical-flag readouts with a reference-entangled input and conditional system flip; all actual clock/battery correlations are propagated."}
+{"tau": 0.0001, "horizon": 0.00030000000000000003, "clock_dimension": 72, "payload_dimension": 672, "two_observation_joint_clock_error": 0.007937171141581616, "joint_clock_battery_error": 0.007937181058378123, "clock_bound": 0.5941123932669666, "combined_bound": 1.2069561323075324, "trace_sums": [0.9999999999999988, 0.9999999999999994, 0.9999999999999994], "full_operator_endpoint_checks": [{"step": 1, "full_payload_endpoint_norm": 0.007312814892965961, "inverse_endpoint_norm": 0.0073128148929659945, "analytic_bound": 0.06387514967195469}, {"step": 2, "full_payload_endpoint_norm": 0.011361169773200066, "inverse_endpoint_norm": 0.011361169773200069, "analytic_bound": 0.06906959941516276}, {"step": 3, "full_payload_endpoint_norm": 0.013571418523422238, "inverse_endpoint_norm": 0.013571418523422219, "analytic_bound": 0.07426404915837083}], "near_identity_norm": 0.007335136823934397, "cyclic_wrap_energy_defect": 0.4157789952334765, "dimensionless_clock_spectrum_error": 1.7763568394002505e-15, "maximum_lift_composition_residual": 0.0, "elapsed_seconds": 1.1260112079326063, "scope": "Finite adaptive classical-flag readouts with a reference-entangled input and conditional system flip; all actual clock/battery correlations are propagated."}
+{
+  "packet": [
+    {
+      "N": 3,
+      "c1": 0.5000000000000001,
+      "c2": 0.0,
+      "variance_over_J_squared": 0.9999999999999996,
+      "endpoint_correction": 0.4999999999999999
+    },
+    {
+      "N": 4,
+      "c1": 0.6666666666666667,
+      "c2": 0.16666666666666669,
+      "variance_over_J_squared": 0.5555555555555554,
+      "endpoint_correction": 0.1666666666666666
+    },
+    {
+      "N": 5,
+      "c1": 0.7696723314583158,
+      "c2": 0.3333333333333334,
+      "variance_over_J_squared": 0.29708467541674866,
+      "endpoint_correction": 0.06366100187501753
+    },
+    {
+      "N": 8,
+      "c1": 0.9023689270621826,
+      "c2": 0.6595177968644247,
+      "variance_over_J_squared": 0.06195687161943075,
+      "endpoint_correction": 0.0071488698022420805
+    },
+    {
+      "N": 17,
+      "c1": 0.9774907431347853,
+      "c2": 0.9128241488852544,
+      "variance_over_J_squared": 0.0036956861137293906,
+      "endpoint_correction": 0.00017882352163207645
+    },
+    {
+      "N": 50,
+      "c1": 0.9973715671048257,
+      "c2": 0.989526891337072,
+      "variance_over_J_squared": 5.361119760083355e-05,
+      "endpoint_correction": 8.290391381319685e-07
+    },
+    {
+      "N": 201,
+      "c1": 0.9998371525334888,
+      "c2": 0.9993487684581182,
+      "variance_over_J_squared": 2.1057113652744874e-07,
+      "endpoint_correction": 7.916208163931085e-10
+    }
+  ],
+  "marked_bin": {
+    "h": 1.2524937810560444,
+    "g": 0.5390220576310316,
+    "rows": [
+      {
+        "tau": 0.04,
+        "marked_choi_trace_upper": 0.0012293030181193716,
+        "analytic_bound": 0.00757488088068662,
+        "swapped_marks_choi_trace": 0.05292091426988689,
+        "exact_channel_sum_residual": 1.1775645862382514e-16
+      },
+      {
+        "tau": 0.02,
+        "marked_choi_trace_upper": 0.00030809229931841716,
+        "analytic_bound": 0.001893720220171655,
+        "swapped_marks_choi_trace": 0.026413525841121888,
+        "exact_channel_sum_residual": 1.1201199854083753e-16
+      },
+      {
+        "tau": 0.01,
+        "marked_choi_trace_upper": 7.71187906001548e-05,
+        "analytic_bound": 0.00047343005504291375,
+        "swapped_marks_choi_trace": 0.013195039792770752,
+        "exact_channel_sum_residual": 3.0356092204936747e-18
+      },
+      {
+        "tau": 0.005,
+        "marked_choi_trace_upper": 1.9291655486081492e-05,
+        "analytic_bound": 0.00011835751376072844,
+        "swapped_marks_choi_trace": 0.006594590272167942,
+        "exact_channel_sum_residual": 1.110316604491746e-16
+      }
+    ],
+    "scope": "Exact finite matrix exponentials numerically checked, not interval enclosures."
+  },
+  "process": [
+    {
+      "tau": 0.001,
+      "horizon": 0.003,
+      "clock_dimension": 72,
+      "payload_dimension": 672,
+      "two_observation_joint_clock_error": 0.025778951602639585,
+      "joint_clock_battery_error": 0.025779051349046123,
+      "clock_bound": 1.8787483488571946,
+      "combined_bound": 2.49159208789776,
+      "trace_sums": [
+        0.9999999999999981,
+        0.9999999999999998,
+        0.9999999999999998
+      ],
+      "full_operator_endpoint_checks": [
+        {
+          "step": 1,
+          "full_payload_endpoint_norm": 0.023126551246632647,
+          "inverse_endpoint_norm": 0.0231265512466328,
+          "analytic_bound": 0.20199095884752086
+        },
+        {
+          "step": 2,
+          "full_payload_endpoint_norm": 0.03592781419546671,
+          "inverse_endpoint_norm": 0.03592781419546669,
+          "analytic_bound": 0.21841725122733507
+        },
+        {
+          "step": 3,
+          "full_payload_endpoint_norm": 0.042915353071823904,
+          "inverse_endpoint_norm": 0.04291535307182391,
+          "analytic_bound": 0.23484354360714932
+        }
+      ],
+      "near_identity_norm": 0.02319714368049432,
+      "cyclic_wrap_energy_defect": 1.314814546831955,
+      "dimensionless_clock_spectrum_error": 1.7763568394002505e-15,
+      "maximum_lift_composition_residual": 0.0,
+      "elapsed_seconds": 1.2110576250124723,
+      "scope": "Finite adaptive classical-flag readouts with a reference-entangled input and conditional system flip; all actual clock/battery correlations are propagated."
+    },
+    {
+      "tau": 0.0001,
+      "horizon": 0.00030000000000000003,
+      "clock_dimension": 72,
+      "payload_dimension": 672,
+      "two_observation_joint_clock_error": 0.007937171141581616,
+      "joint_clock_battery_error": 0.007937181058378123,
+      "clock_bound": 0.5941123932669666,
+      "combined_bound": 1.2069561323075324,
+      "trace_sums": [
+        0.9999999999999988,
+        0.9999999999999994,
+        0.9999999999999994
+      ],
+      "full_operator_endpoint_checks": [
+        {
+          "step": 1,
+          "full_payload_endpoint_norm": 0.007312814892965961,
+          "inverse_endpoint_norm": 0.0073128148929659945,
+          "analytic_bound": 0.06387514967195469
+        },
+        {
+          "step": 2,
+          "full_payload_endpoint_norm": 0.011361169773200066,
+          "inverse_endpoint_norm": 0.011361169773200069,
+          "analytic_bound": 0.06906959941516276
+        },
+        {
+          "step": 3,
+          "full_payload_endpoint_norm": 0.013571418523422238,
+          "inverse_endpoint_norm": 0.013571418523422219,
+          "analytic_bound": 0.07426404915837083
+        }
+      ],
+      "near_identity_norm": 0.007335136823934397,
+      "cyclic_wrap_energy_defect": 0.4157789952334765,
+      "dimensionless_clock_spectrum_error": 1.7763568394002505e-15,
+      "maximum_lift_composition_residual": 0.0,
+      "elapsed_seconds": 1.1260112079326063,
+      "scope": "Finite adaptive classical-flag readouts with a reference-entangled input and conditional system flip; all actual clock/battery correlations are propagated."
+    }
+  ],
+  "elapsed_seconds": 2.350598500110209,
+  "source_sha256": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb",
+  "scope": "Root finite consistency controls; not an independent proof or a uniform-resource certificate."
+}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

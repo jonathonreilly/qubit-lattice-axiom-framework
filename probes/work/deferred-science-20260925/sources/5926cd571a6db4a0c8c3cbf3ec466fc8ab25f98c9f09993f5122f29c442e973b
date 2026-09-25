@@ -1,0 +1,276 @@
+{
+  "scope": "Independent byte/provenance and recorded arithmetic verification, not an author numerical rerun or a physical simulation.",
+  "PRE_seal_and_all_members_unchanged": true,
+  "PRE_member_count": 29,
+  "prior_microscopic_PRE_POST_unchanged": {
+    "PRE_members": 13,
+    "POST_members": 15
+  },
+  "released_author_seal_sha256": "fd268c0ec9d37f68136e81e153d71c7775ac652118f8e2adcf40f8c5776b60d8",
+  "released_author_members_verified": 7,
+  "released_snapshots_including_seal": 8,
+  "all_seven_author_dependency_origins_match_prior_pinned_evidence": true,
+  "dependency_source_identity_count": 7,
+  "author_execution_record": {
+    "started_unix": 1790282245.2761421,
+    "elapsed_seconds": 0.16588704194873571,
+    "exit_code": 0,
+    "code_sha256": "86243d8f649124e09e52de0061f2b6af23337640fe3a90d0d58d3ad298dcdc6d",
+    "output_sha256": "fa3e44571833d1cf21baa8e78d8ae7d5b1ce5d9107cac3344703339d32252910",
+    "stderr_bytes": 0
+  },
+  "author_result_internal_seconds": 0.015973458997905254,
+  "binding_limits": "The result has no embedded code/source fingerprint. The frozen external EXECUTION.json and AUTHOR_SEAL.json bind the script and recorded output. This checker did not witness or rerun the author computation; no separate stdout file is claimed.",
+  "recorded_formula_arithmetic": [
+    {
+      "row": 0,
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "max_scaled_recorded_formula_discrepancy": 4e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 1,
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "max_scaled_recorded_formula_discrepancy": 2.1566597653554176e-16,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 2,
+      "h": 0.4,
+      "b": 0.3,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "max_scaled_recorded_formula_discrepancy": 4e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 3,
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "max_scaled_recorded_formula_discrepancy": 2.6666666666666667e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 4,
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "max_scaled_recorded_formula_discrepancy": 2.2293561619404317e-16,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 5,
+      "h": 0.2,
+      "b": 0.7,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "max_scaled_recorded_formula_discrepancy": 2.6666666666666667e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 6,
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "max_scaled_recorded_formula_discrepancy": 6.666666666666667e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 7,
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "max_scaled_recorded_formula_discrepancy": 6.666666666666667e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 8,
+      "h": 0.5,
+      "b": 0.5,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "max_scaled_recorded_formula_discrepancy": 6.666666666666667e-18,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 9,
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 0.02,
+      "r_l": 0.03,
+      "max_scaled_recorded_formula_discrepancy": 5.166666666666667e-19,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 10,
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 2.0,
+      "r_l": 3.0,
+      "max_scaled_recorded_formula_discrepancy": 5.166666666666667e-19,
+      "second_bound_holds_in_decimal_arithmetic": true
+    },
+    {
+      "row": 11,
+      "h": 1.0,
+      "b": 0.02,
+      "r_j": 20.0,
+      "r_l": 30.0,
+      "max_scaled_recorded_formula_discrepancy": 4.1722296395193593e-16,
+      "second_bound_holds_in_decimal_arithmetic": true
+    }
+  ],
+  "register_record_summaries": {
+    "rows": [
+      {
+        "bins": 4,
+        "mesh": 0.25,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 856,
+        "aggregate_square_bracket_gap": 1446,
+        "exact_brackets": 227,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 0,
+          "actual": 2,
+          "upper": 3
+        }
+      },
+      {
+        "bins": 8,
+        "mesh": 0.125,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 445,
+        "aggregate_square_bracket_gap": 553,
+        "exact_brackets": 448,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 0,
+          "actual": 2,
+          "upper": 3
+        }
+      },
+      {
+        "bins": 16,
+        "mesh": 0.0625,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 251,
+        "aggregate_square_bracket_gap": 299,
+        "exact_brackets": 617,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 1,
+          "actual": 2,
+          "upper": 2
+        }
+      },
+      {
+        "bins": 32,
+        "mesh": 0.03125,
+        "histories_checked": 848,
+        "aggregate_bracket_gap": 218,
+        "aggregate_square_bracket_gap": 266,
+        "exact_brackets": 644,
+        "maximum_actual_count": 2,
+        "multiple_count_example": {
+          "times": [
+            0.03,
+            0.2,
+            0.29,
+            0.38,
+            0.5,
+            0.6
+          ],
+          "labels": [
+            "other",
+            "j",
+            "other",
+            "l",
+            "j",
+            "l"
+          ],
+          "lower": 1,
+          "actual": 2,
+          "upper": 2
+        }
+      }
+    ],
+    "nested_partition_histories": 848,
+    "event_cap": 6,
+    "universal_pair_cap": 15,
+    "interval": [
+      0.2,
+      0.6
+    ],
+    "lag": 0.3
+  },
+  "register_histories_reenumerated_by_POST": false,
+  "author_module_imported_or_executed": false,
+  "new_science_simulations_in_POST": 0,
+  "other_active_independent_packets_read": false,
+  "author_sources_rechecked_after_snapshotting": true,
+  "POST_source_pins": {
+    "sha256": "20a965c8da0d750b6d8bee28c062c0b721e51a84b27e916981ed08b8716ec1ec",
+    "bytes": 10010
+  },
+  "all_binding_checks_passed": true
+}

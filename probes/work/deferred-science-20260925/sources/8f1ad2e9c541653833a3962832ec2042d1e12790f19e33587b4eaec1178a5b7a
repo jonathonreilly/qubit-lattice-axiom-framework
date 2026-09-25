@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/independent_source_age_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent",
+  "started_utc": "2026-09-24T16:44:20.216810+00:00",
+  "finished_utc": "2026-09-24T16:44:20.450506+00:00",
+  "elapsed_seconds": 0.2333932090550661,
+  "returncode": 0,
+  "files": {
+    "CONTROL_ATTEMPT_2_SOURCE.py": {
+      "sha256": "7551ceab1125b1371571fa8ba97e022b501addcc735638db65518334821a544c",
+      "bytes": 11482
+    },
+    "CONTROL_ATTEMPT_2.stdout.txt": {
+      "sha256": "0d13f5dd9cc4fab0f761897ab5504e5f21697180f23864aac494a5cddba1d4ca",
+      "bytes": 13189
+    },
+    "CONTROL_ATTEMPT_2.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "INDEPENDENT_SOURCE_AGE_RESULTS.json": {
+      "sha256": "0d13f5dd9cc4fab0f761897ab5504e5f21697180f23864aac494a5cddba1d4ca",
+      "bytes": 13189
+    }
+  },
+  "reason_for_second_execution": "Extend the initially rotor-only exact coefficient check to actual spin-one boundary actions and compensation."
+}

@@ -1,0 +1,376 @@
+===== runner cache v1 =====
+runner: scripts/sharp_actual_rotor_cube_energy_tail_2026_09_24.py
+runner_sha256: 3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f
+input_fingerprint_sha256: d62ab86b39e02d8fcc97e1179c745b2ecf6bbe6d3d031b7ab2fb5ba631450c3d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 49.27
+status: ok
+----- stdout -----
+{"rows_processed": 0, "rank": 1, "elapsed": 0.0001378338783979416}
+{"rows_processed": 2000, "rank": 2001, "elapsed": 0.1375493339728564}
+{"rows_processed": 4000, "rank": 4001, "elapsed": 0.3025790418032557}
+{"rows_processed": 6000, "rank": 6000, "elapsed": 0.7542914589866996}
+{"rows_processed": 8000, "rank": 7999, "elapsed": 2.863946541910991}
+{"rows_processed": 10000, "rank": 9874, "elapsed": 6.016393875004724}
+{"rows_processed": 12000, "rank": 11778, "elapsed": 8.678876208839938}
+{"rows_processed": 14000, "rank": 13529, "elapsed": 15.748386166989803}
+{"rows_processed": 16000, "rank": 15102, "elapsed": 28.526625541970134}
+{"phase": 0, "verified_columns": 24, "elapsed_seconds": 34.03578183380887}
+{"phase": 1, "verified_columns": 24, "elapsed_seconds": 37.05267483391799}
+{"phase": 2, "verified_columns": 24, "elapsed_seconds": 41.38351641688496}
+{"phase": 3, "verified_columns": 24, "elapsed_seconds": 44.20651862490922}
+{"phase": 4, "verified_columns": 24, "elapsed_seconds": 47.22640987485647}
+{
+  "primitive_dimensions": {
+    "bright": 72,
+    "dark": 24,
+    "cycle": 5
+  },
+  "multiplier_l1_degree": 3,
+  "identity_count": 120,
+  "exact_coefficient_checks": true,
+  "maximum_row_coefficient_L1_ceiling": 68891,
+  "sum_matrix_sup_norm_squared_bound": 569516385720,
+  "sign_phase_exact_ranks": [
+    {
+      "pi_bits": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_rank": 23
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "exact_rank": 23
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "exact_rank": 22
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "exact_rank": 23
+    },
+    {
+      "pi_bits": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "exact_rank": 23
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "exact_rank": 22
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "exact_rank": 20
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "exact_rank": 22
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "exact_rank": 24
+    },
+    {
+      "pi_bits": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "exact_rank": 24
+    }
+  ],
+  "certificate_sha256": "efed9ff85c39626b132bb897a743bd77d2117757249a9becfcb828f51358cdec",
+  "certificate_bytes": 22360128,
+  "coefficient_mutation": {
+    "changed_coefficient_remainder_terms": 4,
+    "mutation_rejected": true
+  },
+  "energy_sign_control": {
+    "correct_dark_derivative": "-1/6",
+    "wrong_sign_dark_derivative": "1/6",
+    "claimed_bound_determinant": "1/16",
+    "mutation_rejected": true
+  },
+  "source_sha256": "3374ba47eabe22030e2efabab7111187fe78f899e761cd296b1f6b88d617ca7f",
+  "elapsed_seconds": 48.849369541043416,
+  "scope": "Exact finite Laurent identities and ranks; the written proof supplies the rotor infinite-time bounds. No finite-spin growing-time theorem, asymptotic constant, reservoir, or physical law is inferred."
+}
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,22 @@
+{
+  "runner": "scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_seconds": 1.78664231300354,
+  "timeout_seconds": 180,
+  "source_hashes": {
+    "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "150bd5ba19195a55402d8f74112417f37e168bf50f50dc94d7dcab7d1d3a96a7",
+    "scripts/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.py": "5a20a84d626d5fff24e45475ed7166831bbb519a48298f3598229c7286f1e7af",
+    ".claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_DISCIPLINE_CHECKLIST.md": "43c7587af4011778660406d196035965df858061a7da0581b780c5ebefe58045",
+    ".claude/science/physics-loops/actual-birth-coherence-20260924/NO_GO_LEDGER.md": "0bfbbea87a4f8ba0a9cae328c3948d2ced3a8b45d2ee5152ec9dbfa99adfae77",
+    "outputs/actual_birth_coherence_20260924/COHERENCE_RANGE_CONTROL_RESULTS.json": "56cffe771486b68cc6b76ab2ebea0a9839dfdca5fcf893ca7e0e46d36b8eb32d",
+    "logs/runner-cache/actual_cube_birth_apparatus_coherence_and_energy_range_2026_09_24.txt": "70d919e87a42fe1d84fb02e2a5a3f4fe63e3530d6f811afe58c97d25bb48a9b4"
+  },
+  "sealed_members_reverified": {
+    "PRE": 15,
+    "POST": 27,
+    "original_publication": 31,
+    "link_repair": 22
+  },
+  "scope": "Genuine root rerun after one hyperlink repair. Independent addendum verifies new input fingerprint and exact cache bytes. All previous external sources, executions and scientific reports remain preserved."
+}

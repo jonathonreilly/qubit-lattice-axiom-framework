@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T02:09:01.051770+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent/primitive_colored_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-one-pair-spectrum-independent",
+  "elapsed_seconds": 2.09134841687046,
+  "exit_code": 0,
+  "script_sha256": "890d0d1dcd431349e9b6f9dd3fd2f3beda9bd1a8c7460eb1d6e686576706ee8a",
+  "stdout_bytes": 17361,
+  "stdout_sha256": "d91b4c511bac749e00c74cc25351a693bff90e9933d643de893ef46497a160fb",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

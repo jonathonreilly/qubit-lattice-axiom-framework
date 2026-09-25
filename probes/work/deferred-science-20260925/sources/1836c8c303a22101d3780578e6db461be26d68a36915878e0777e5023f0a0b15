@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-25T01:01:57.017121+00:00",
+  "phase": "Root full blind PRE review before author release",
+  "seal_sha256": "ede144e228ea687ac936f29976027a628c7e87d36837de22b90e34021f3459f1",
+  "report_sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+  "members_verified": 43,
+  "live_origins_and_snapshots_verified": 12,
+  "root_coverage": [
+    "complete PRE proofs and two scientific programs",
+    "complete verifier, diagnosis and correction diff; preserved failed execution",
+    "all eight primitive, twelve leading, forty-eight finite-g and eighty-four exact rational group rows",
+    "complete evidence/read logs and source binding"
+  ],
+  "truncated_display_repaired": "All finite rows for second and third geometries reread in full compact columns; no omitted rows relied on.",
+  "supported": [
+    "original two-mark initial product effect and full-process b=o(tau g^4) conditional law",
+    "vacuum covariance and subtraction distinctions",
+    "independent actual side12 covariance interval signs and negative-subtraction construction"
+  ],
+  "PRE_only_additions": [
+    "actual side12 rational covariance certificate",
+    "initial preparation accuracy and sufficient sampling scales",
+    "joint-vacuum alternative subtraction"
+  ],
+  "limits": [
+    "no full-generator numerical propagation",
+    "no author source/code yet disclosed",
+    "no optical detector or source identification, empirical comparison or uniform laboratory error"
+  ],
+  "scientific_reruns_by_root": 0
+}

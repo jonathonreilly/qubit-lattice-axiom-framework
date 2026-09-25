@@ -1,0 +1,18 @@
+[
+  {
+    "width": 8,
+    "squared_norm_defects": [
+      1.3939960297193466e-12,
+      1.1970424651508438e-12
+    ],
+    "background_bias_over_g2": -1.9695356456850273e-09
+  },
+  {
+    "width": 10,
+    "squared_norm_defects": [
+      1.2241319069516976e-12,
+      1.4777068457760834e-12
+    ],
+    "background_bias_over_g2": 2.535749388243857e-09
+  }
+]

@@ -1,0 +1,343 @@
+{
+  "phase": "Blind independent PRE",
+  "sealed_at_utc": "2026-09-25T00:16:05.219513+00:00",
+  "scope": "Original selected common-rotor mark power on exact charged compact preparation; full gain and anticommutator, fixed-L weak-field limit, exact local coefficients and winding controls.",
+  "source_origins": 10,
+  "member_count": 65,
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 2226,
+      "sha256": "4d45435568f325f69e351d29fc51b0002cf3c664468bca3354d9d22b486ed9cc"
+    },
+    {
+      "path": "COEFFICIENT_TABLE.md",
+      "bytes": 2341,
+      "sha256": "f52994d6bc4f145b2e43566c1282f95f38e16a4042f835c045f9ab82a2ae23ff"
+    },
+    {
+      "path": "DIRECT_MATRIX_RESULTS.json",
+      "bytes": 3264,
+      "sha256": "2e548720c5efa1d2a119c1e3055d0d00023ad60c45ce6891b83c431436c97264"
+    },
+    {
+      "path": "EVIDENCE_LOG.md",
+      "bytes": 6795,
+      "sha256": "5cd7264f520081940900a502e6f26ab964d6a05590964964d61c3d3b7ea553e6"
+    },
+    {
+      "path": "EVIDENCE_VERIFICATION.json",
+      "bytes": 8239,
+      "sha256": "660d3b8c6d68e21b4c7c62c6021e5205c7805399d08c536a2b3820d102898f23"
+    },
+    {
+      "path": "FINAL_RECHECK.json",
+      "bytes": 4020,
+      "sha256": "7e7056c809c47e5817970cf3691e870569923dcaca0c2ff95deda0a529f34197"
+    },
+    {
+      "path": "FOURIER_CORRESPONDENCE_INITIAL_RESULTS.json",
+      "bytes": 4685,
+      "sha256": "cf1b55508d90983653512e0b2c22dba555a9fcf1ebaca7994d9b497f3be58af9"
+    },
+    {
+      "path": "FOURIER_CORRESPONDENCE_RESULTS.json",
+      "bytes": 4685,
+      "sha256": "bf30837098015920cbd99d5f571cf6cdd798cf3bd3977d9dd4fbb61c20b28988"
+    },
+    {
+      "path": "JET_CHECK_RESULTS.json",
+      "bytes": 19853,
+      "sha256": "0326311f07ae1a39e28ba9a5e31fa60c42eaada5f9c33bfd1df775ecc5107273"
+    },
+    {
+      "path": "L16_RESULTS.json",
+      "bytes": 6564333,
+      "sha256": "9383b4224442b927e3d565a197598b10decd061e8af5676cbfc9b551c35c62df"
+    },
+    {
+      "path": "L6_RESULTS.json",
+      "bytes": 6559781,
+      "sha256": "7325b28d7331f2781d5584cb67ce5350da7ff6c64486b64208fee47ad7df4380"
+    },
+    {
+      "path": "L6_WINDING_DIFFERENCE.json",
+      "bytes": 5590,
+      "sha256": "cc13fdbabe9fd81214ffcf5519dca41c950625beac343ae8fd1916de0ef432ed"
+    },
+    {
+      "path": "PRE.md",
+      "bytes": 25939,
+      "sha256": "be47d27ab25dbf1853331b1bb8f02a2b67b3cc93c244b4a830fa86b810c71216"
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "bytes": 4084,
+      "sha256": "7d0b8b3ffd79ee4730ab1e415cc7d1d6f2928b431f7a2cde9712fef61c305973"
+    },
+    {
+      "path": "direct_matrix.execution.json",
+      "bytes": 721,
+      "sha256": "92ebda1137ab4233988ec817406e475a6b3677eebc7b45763b59781b687744ca"
+    },
+    {
+      "path": "direct_matrix.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "direct_matrix.stdout.txt",
+      "bytes": 3264,
+      "sha256": "2e548720c5efa1d2a119c1e3055d0d00023ad60c45ce6891b83c431436c97264"
+    },
+    {
+      "path": "direct_matrix_check.py",
+      "bytes": 4219,
+      "sha256": "2cc6c493ac87418a4d98fc8af06e11e73ead8d18f1efc5c8609115bff035a3c0"
+    },
+    {
+      "path": "fourier.execution.json",
+      "bytes": 729,
+      "sha256": "3cf252cdfd26f5e7decc82e0af995b5535e3df32bebd32792dfbc2640b053926"
+    },
+    {
+      "path": "fourier.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fourier.stdout.txt",
+      "bytes": 4685,
+      "sha256": "cf1b55508d90983653512e0b2c22dba555a9fcf1ebaca7994d9b497f3be58af9"
+    },
+    {
+      "path": "fourier_and_correspondence.initial_L6_gain.py",
+      "bytes": 5573,
+      "sha256": "d2f496718609d245f9c564e767b9b49cb8a6a1778b869feef86da1b9f05b20ef"
+    },
+    {
+      "path": "fourier_and_correspondence.py",
+      "bytes": 5663,
+      "sha256": "46fe9108532a225e608de7aa8349caaafd8d10e86f11f135a82816f3b8bacaa1"
+    },
+    {
+      "path": "fourier_corrected.execution.json",
+      "bytes": 728,
+      "sha256": "371e8fed6108f66f84eb345f50fa55ec4fd6f919e686f0f9f001ea2231ac14c8"
+    },
+    {
+      "path": "fourier_corrected.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fourier_corrected.stdout.txt",
+      "bytes": 4685,
+      "sha256": "bf30837098015920cbd99d5f571cf6cdd798cf3bd3977d9dd4fbb61c20b28988"
+    },
+    {
+      "path": "freeze.execution.json",
+      "bytes": 717,
+      "sha256": "1cb55894a8aca33935a62112566ab6dd9d71a70bcce304d9f78d7442ebaf9241"
+    },
+    {
+      "path": "freeze.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "freeze.stdout.txt",
+      "bytes": 4084,
+      "sha256": "7d0b8b3ffd79ee4730ab1e415cc7d1d6f2928b431f7a2cde9712fef61c305973"
+    },
+    {
+      "path": "freeze_sources.py",
+      "bytes": 3026,
+      "sha256": "34539f1cbaa27b68069607c8ffc0534ae3ebfa1c17d07619973a34fccc574149"
+    },
+    {
+      "path": "infinite_RESULTS.json",
+      "bytes": 6564331,
+      "sha256": "cf41168d37492ab318a1a6e99569b5f72b80b89ca58879363f259b47e21461e8"
+    },
+    {
+      "path": "jet.execution.json",
+      "bytes": 725,
+      "sha256": "067b9a101cb0399cc3498c70a29744ea57d2e83e1eba1aa7af842aab86c05fbc"
+    },
+    {
+      "path": "jet.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "jet.stdout.txt",
+      "bytes": 19853,
+      "sha256": "0326311f07ae1a39e28ba9a5e31fa60c42eaada5f9c33bfd1df775ecc5107273"
+    },
+    {
+      "path": "jet_coefficient_check.py",
+      "bytes": 3336,
+      "sha256": "f03a3607f583f4e7c6c2c1c28fc2a20271ab2cfc788edd20b19261e7730f338b"
+    },
+    {
+      "path": "primitive_L16.execution.json",
+      "bytes": 738,
+      "sha256": "e662495ab334fc21319d77f44967ad921e656834d7cc8aa0bcae70bbba182e11"
+    },
+    {
+      "path": "primitive_L16.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "primitive_L16.stdout.txt",
+      "bytes": 23423,
+      "sha256": "302e9f8f4bc819940280389431d9b18c369e448f95c696653c0f21cca03e4dc3"
+    },
+    {
+      "path": "primitive_L6.execution.json",
+      "bytes": 736,
+      "sha256": "2b8693b67c9e7c4bd9076fa91cb9e667e5f609cde35660b0a3e68db37f3703cd"
+    },
+    {
+      "path": "primitive_L6.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "primitive_L6.stdout.txt",
+      "bytes": 23237,
+      "sha256": "4deaaceb43de9cbf6ea825ed5e69f0b057604b881884e07e5759b9bc96fa035a"
+    },
+    {
+      "path": "primitive_infinite.execution.json",
+      "bytes": 743,
+      "sha256": "833dbf32537922cdf08c8ee13f4d65c0c52bb151a75a5676da70faf586d51cfc"
+    },
+    {
+      "path": "primitive_infinite.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "primitive_infinite.stdout.txt",
+      "bytes": 23428,
+      "sha256": "aad63450f75896ee938bb5a190a15a4868e356b5d0cfbf34132fa0ec73882953"
+    },
+    {
+      "path": "primitive_power.py",
+      "bytes": 8346,
+      "sha256": "4fb7c4471d0318ea9398b2ffa1ef9563c83df88883983beb2ec8b3b851c60f92"
+    },
+    {
+      "path": "run_logged.py",
+      "bytes": 1098,
+      "sha256": "5c46d5e2da2402e312cfb9ecd3ae23bb143fcedbb0dda6c32eb5b2e06f47221c"
+    },
+    {
+      "path": "seal_pre.py",
+      "bytes": 3253,
+      "sha256": "23b9f75c62d6348f302f54d6359c1e9377ed41f25f17927718acc74da766f417"
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "sources/common_limit.md",
+      "bytes": 14902,
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "sources/local_pair.md",
+      "bytes": 10953,
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "sources/prepared_note.md",
+      "bytes": 36259,
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b"
+    },
+    {
+      "path": "sources/prior_POST.md",
+      "bytes": 23192,
+      "sha256": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee"
+    },
+    {
+      "path": "sources/prior_POST_SEAL.json",
+      "bytes": 6733,
+      "sha256": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1"
+    },
+    {
+      "path": "sources/prior_PRE.md",
+      "bytes": 27226,
+      "sha256": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589"
+    },
+    {
+      "path": "sources/prior_PRE_SEAL.json",
+      "bytes": 5991,
+      "sha256": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c"
+    },
+    {
+      "path": "sources/weak_packets.md",
+      "bytes": 19851,
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf"
+    },
+    {
+      "path": "sources/workflow.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "verify.execution.json",
+      "bytes": 716,
+      "sha256": "8afff2c2d0a743e860c2afbbf696ecaf63577af5efd38ff81f35206bc24520ec"
+    },
+    {
+      "path": "verify.stderr.txt",
+      "bytes": 383,
+      "sha256": "47c4102db36b913f501ea5e1bf6f527198af9e9c61ecaa3bfcf5692ca18eef15"
+    },
+    {
+      "path": "verify.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verify_corrected.execution.json",
+      "bytes": 717,
+      "sha256": "fac0ade656567dde523df7b04d33f84f61a73932089ac10838a5aff25a04e01c"
+    },
+    {
+      "path": "verify_corrected.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "verify_corrected.stdout.txt",
+      "bytes": 8239,
+      "sha256": "660d3b8c6d68e21b4c7c62c6021e5205c7805399d08c536a2b3820d102898f23"
+    },
+    {
+      "path": "verify_evidence.initial_uniform_pair_count.py",
+      "bytes": 6002,
+      "sha256": "968f18b89b483975927fd9488802208c21f2f3a39ed9b7fb585769998a5e8abc"
+    },
+    {
+      "path": "verify_evidence.py",
+      "bytes": 6311,
+      "sha256": "79238b4dbc7ba51e4c0c79073fb364f0f55275aaa233397fdb16418578baf3d4"
+    }
+  ],
+  "author_candidate_read": false,
+  "author_code_read_imported_or_run": false,
+  "delegation": false,
+  "audit_or_publication_mutation": false,
+  "preserved_corrections": [
+    "Initial L6 raw gain table used large-lift offset; exact net coefficient unchanged.",
+    "Initial evidence verifier assumed 264 local pairs on L6; actual 261-pair scientific output unchanged."
+  ],
+  "preservation": "One-time content-hash ledger; all members and this seal made read-only. Sources and prior packets untouched."
+}

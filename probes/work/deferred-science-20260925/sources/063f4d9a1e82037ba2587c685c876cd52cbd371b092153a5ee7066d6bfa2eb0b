@@ -1,0 +1,1334 @@
+{
+  "M_P": 569516385720,
+  "arithmetic": "Each rational witness scaled by its exact common denominator, then accumulated over integers.",
+  "declared_uniform_L1_bound": 68891,
+  "identities": [
+    {
+      "column": 0,
+      "combination_terms": 1668,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1136760340641484795159196218855950956935965197161837003,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1591
+    },
+    {
+      "column": 1,
+      "combination_terms": 1996,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2137773499195262263570611024598354101148234222466404479,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 14959
+    },
+    {
+      "column": 2,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        527229458890739644748514033231773217992756884616610347,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 738
+    },
+    {
+      "column": 3,
+      "combination_terms": 1670,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1546806446314064047077993320676004820910602905992624047,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2165
+    },
+    {
+      "column": 4,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        945764673292430574259942489786190750643961601752290172,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1324
+    },
+    {
+      "column": 5,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1506830577825666800615079028541070326039775190390049964,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2109
+    },
+    {
+      "column": 6,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        819372088366029889734281243455962318733638228082117589,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1147
+    },
+    {
+      "column": 7,
+      "combination_terms": 1924,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        17182293432701157110865306010189760651651515928309713751,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 24046
+    },
+    {
+      "column": 8,
+      "combination_terms": 1842,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2877433561726399892625783377407404555456236763315045412,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 4027
+    },
+    {
+      "column": 9,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1286142987869509566710276754732499854475206174351443507,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1800
+    },
+    {
+      "column": 10,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1780491899408353305718069964796539992637081031116787396,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2492
+    },
+    {
+      "column": 11,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        329899163094912679668285327511280942999919588763038186,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 2309
+    },
+    {
+      "column": 12,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        741257519677809649120953430264846170111365113070008906,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1038
+    },
+    {
+      "column": 13,
+      "combination_terms": 1668,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1264478254385791702886392035753079594171243612671621592,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1770
+    },
+    {
+      "column": 14,
+      "combination_terms": 2032,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        27818308339415862182173587518284154551184408843014731377,
+        1429159472652559751165947490696213289812726555557210
+      ],
+      "row_coefficient_L1_ceiling": 19465
+    },
+    {
+      "column": 15,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        780193369025097238805727213363536923529263912810201736,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1092
+    },
+    {
+      "column": 16,
+      "combination_terms": 1672,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1012551594200475183540908381414322796764783695639259867,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1417
+    },
+    {
+      "column": 17,
+      "combination_terms": 1669,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1590288569125008060838009719549576759538560429662652651,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2226
+    },
+    {
+      "column": 18,
+      "combination_terms": 2288,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        49227443943497551514128300118045060337164746991442643629,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 68891
+    },
+    {
+      "column": 19,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        429578455443907177017234411453610628724811302302926242,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 602
+    },
+    {
+      "column": 20,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        941215181041646403340439253112850466756556629847955204,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1318
+    },
+    {
+      "column": 21,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1971964524606773237206310393220729550580093507955078128,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2760
+    },
+    {
+      "column": 22,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        452250448194502734507903091010129815585960675292783337,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 3165
+    },
+    {
+      "column": 23,
+      "combination_terms": 1667,
+      "phase": 0,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1019147013689398452443800217037243680131821100850834969,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1427
+    },
+    {
+      "column": 0,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1353534501718174690327167711854166585339216743539275221,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1895
+    },
+    {
+      "column": 1,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        89158204844139300396850466046473272038001649827025109,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 624
+    },
+    {
+      "column": 2,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        120108158412422851749028067078693286977719536460787586,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 841
+    },
+    {
+      "column": 3,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1333098109623098625417598114903091501746582004019462407,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1866
+    },
+    {
+      "column": 4,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        886608386679534223485638549703803235973748906938501724,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1241
+    },
+    {
+      "column": 5,
+      "combination_terms": 1705,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1778423479066820196424272527534726715800609935365578131,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 12444
+    },
+    {
+      "column": 6,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1298237573971281346612473415049469410478623232544454481,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1817
+    },
+    {
+      "column": 7,
+      "combination_terms": 1687,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        11963766017167545408093987740586701090909777497007249,
+        7521891961329261848241828898401122577961718713459
+      ],
+      "row_coefficient_L1_ceiling": 1591
+    },
+    {
+      "column": 8,
+      "combination_terms": 1783,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        169549187978320111630119691687294954116222437766845348,
+        37609459806646309241209144492005612889808593567295
+      ],
+      "row_coefficient_L1_ceiling": 4509
+    },
+    {
+      "column": 9,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1038750411596795458713621572579075532924044087128975674,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1454
+    },
+    {
+      "column": 10,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1881502805291910446575293630900324668659896436534355313,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2634
+    },
+    {
+      "column": 11,
+      "combination_terms": 1675,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        11413464071178044419178551129394099845778705110272680,
+        7521891961329261848241828898401122577961718713459
+      ],
+      "row_coefficient_L1_ceiling": 1518
+    },
+    {
+      "column": 12,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1481386986044097195860394757578427081874254887609619256,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2074
+    },
+    {
+      "column": 13,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1543219757645253914369729292846547462761053011523380362,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2160
+    },
+    {
+      "column": 14,
+      "combination_terms": 1845,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        12776191220553649618368164004121777508699637437016036973,
+        1429159472652559751165947490696213289812726555557210
+      ],
+      "row_coefficient_L1_ceiling": 8940
+    },
+    {
+      "column": 15,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        270410532508830107262927114802426773895598899054702368,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1893
+    },
+    {
+      "column": 16,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        147221692090749117131201872314800151003580072323612798,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1031
+    },
+    {
+      "column": 17,
+      "combination_terms": 2055,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        4044700899759159586665039414032495973694982164532928586,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 28302
+    },
+    {
+      "column": 18,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        33597039830994546538307646218656879192011083635916522,
+        37609459806646309241209144492005612889808593567295
+      ],
+      "row_coefficient_L1_ceiling": 894
+    },
+    {
+      "column": 19,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        5127348424560718917538242606627796244640408869979065,
+        7521891961329261848241828898401122577961718713459
+      ],
+      "row_coefficient_L1_ceiling": 682
+    },
+    {
+      "column": 20,
+      "combination_terms": 1676,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1699990899119973275176899157727848304749412034123098639,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2380
+    },
+    {
+      "column": 21,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        177944139547261111827967415658306303952281897221164616,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1246
+    },
+    {
+      "column": 22,
+      "combination_terms": 1667,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        197446843919991965252256706297816241853879665984040666,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1382
+    },
+    {
+      "column": 23,
+      "combination_terms": 2467,
+      "phase": 1,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        4506667848158461070357308396081980494893057585773901000,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 31534
+    },
+    {
+      "column": 0,
+      "combination_terms": 1711,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1044656846411396325022720710444677411169532810764867890,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 7310
+    },
+    {
+      "column": 1,
+      "combination_terms": 1670,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        195101869772975587801181682524342196400162482632753026,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1366
+    },
+    {
+      "column": 2,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        187970055259578420004778221376025154090095595624224386,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1316
+    },
+    {
+      "column": 3,
+      "combination_terms": 2126,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        8641011064494031205763504845227464092530279459637392322,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 12093
+    },
+    {
+      "column": 4,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        195013772793018967623919867095584394919629012487232027,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1365
+    },
+    {
+      "column": 5,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        277211474409449937135219227608064823164562826761279434,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1940
+    },
+    {
+      "column": 6,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        859665284854403543611251519248966839220584559962591067,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1204
+    },
+    {
+      "column": 7,
+      "combination_terms": 2326,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        9790803632280301270686054154332181231378022173143565942,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 68508
+    },
+    {
+      "column": 8,
+      "combination_terms": 1913,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1772928386424304225017278951798542283727007371436279480,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 12406
+    },
+    {
+      "column": 9,
+      "combination_terms": 1676,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        594355134875361686169866701658876200960672263258895095,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 4159
+    },
+    {
+      "column": 10,
+      "combination_terms": 1668,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2008974574725117590118421374118950605792156564616229348,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2812
+    },
+    {
+      "column": 11,
+      "combination_terms": 1797,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        472322826559127548097997673032504303711691325271913214,
+        37609459806646309241209144492005612889808593567295
+      ],
+      "row_coefficient_L1_ceiling": 12559
+    },
+    {
+      "column": 12,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1412741555694909868948391474356170032786290105984123968,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1978
+    },
+    {
+      "column": 13,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        194373390312713359307413536054125190814170765798180293,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1361
+    },
+    {
+      "column": 14,
+      "combination_terms": 1682,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        997778072875301019937167509841532240995238433302485297,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 6982
+    },
+    {
+      "column": 15,
+      "combination_terms": 1671,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1044674299098246236811463245008746125432267246068267162,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1462
+    },
+    {
+      "column": 16,
+      "combination_terms": 1905,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2652096652756176567750820122584285403414290276393038793,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 18558
+    },
+    {
+      "column": 17,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2568889497556405660351386099387609510014603502880585718,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 3595
+    },
+    {
+      "column": 18,
+      "combination_terms": 1669,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        424601894609933630496802315627500026878277443238554225,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 2971
+    },
+    {
+      "column": 19,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1238113532467406711503291852814088973177052856111499077,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1733
+    },
+    {
+      "column": 20,
+      "combination_terms": 1667,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        520183248385196846491836357632103294294164392341991258,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 728
+    },
+    {
+      "column": 21,
+      "combination_terms": 2149,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        26467869635175901523212648865132044738208349945050955307,
+        1429159472652559751165947490696213289812726555557210
+      ],
+      "row_coefficient_L1_ceiling": 18520
+    },
+    {
+      "column": 22,
+      "combination_terms": 1671,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        473841368809819694121225568048984137653872165812248228,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 3316
+    },
+    {
+      "column": 23,
+      "combination_terms": 1672,
+      "phase": 2,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2313513837858078062168896190252947236847911357826561916,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 3238
+    },
+    {
+      "column": 0,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1213620508526499668509979416032995787818329325942262502,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1699
+    },
+    {
+      "column": 1,
+      "combination_terms": 1670,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2080326311913412628947168191538272961253572572280350438,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2912
+    },
+    {
+      "column": 2,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        194437022184134628255069364963483413756059933291332016,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1361
+    },
+    {
+      "column": 3,
+      "combination_terms": 2164,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        58222977193458937010488778616396587571983601216726284141,
+        1429159472652559751165947490696213289812726555557210
+      ],
+      "row_coefficient_L1_ceiling": 40740
+    },
+    {
+      "column": 4,
+      "combination_terms": 1673,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        270261779057889033013831247745747455791326675347829408,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1892
+    },
+    {
+      "column": 5,
+      "combination_terms": 1725,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        966372768720504987220344909323660787725374292748777495,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 6762
+    },
+    {
+      "column": 6,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1276857202060411278932209014963104943236563129926872926,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1787
+    },
+    {
+      "column": 7,
+      "combination_terms": 2167,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        21696967593816910599175040241195499534667416785962133462,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 30364
+    },
+    {
+      "column": 8,
+      "combination_terms": 1751,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        3851959207919425805555993577234345792311200624066327017,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 5391
+    },
+    {
+      "column": 9,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        206477851035702517399319263629466635691913725687828187,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1445
+    },
+    {
+      "column": 10,
+      "combination_terms": 1673,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1750898469489027479108719927893117800808711009518742697,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2451
+    },
+    {
+      "column": 11,
+      "combination_terms": 1713,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        344391498075488760290314705590740895454021038931448142,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 2410
+    },
+    {
+      "column": 12,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        418914667858596986212863424845016350839903109019256778,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 587
+    },
+    {
+      "column": 13,
+      "combination_terms": 1672,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        3256921764810409092643594711151438616964900375591945074,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 4558
+    },
+    {
+      "column": 14,
+      "combination_terms": 1831,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        7364829609847818638376883980191081641752142595302798891,
+        1429159472652559751165947490696213289812726555557210
+      ],
+      "row_coefficient_L1_ceiling": 5154
+    },
+    {
+      "column": 15,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        457625193173621898880948330174542388838122719013856582,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 641
+    },
+    {
+      "column": 16,
+      "combination_terms": 2053,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        30922547664686320347299056840881192627621801184212616232,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 43274
+    },
+    {
+      "column": 17,
+      "combination_terms": 2023,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        253525871468526202715769629296098422136346889098420518,
+        7521891961329261848241828898401122577961718713459
+      ],
+      "row_coefficient_L1_ceiling": 33706
+    },
+    {
+      "column": 18,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        807342260084276603211872410712332746965376749046200943,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1130
+    },
+    {
+      "column": 19,
+      "combination_terms": 1678,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1155166762555989281941847323333698451645503508958061566,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1617
+    },
+    {
+      "column": 20,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        237774922969485436682304367651493969338987147842841961,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1664
+    },
+    {
+      "column": 21,
+      "combination_terms": 1667,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2641733705969900773226148374179568722744410923708398522,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 3697
+    },
+    {
+      "column": 22,
+      "combination_terms": 1787,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        5313498088154807672286580059812016883260984666636585602,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 7436
+    },
+    {
+      "column": 23,
+      "combination_terms": 2507,
+      "phase": 3,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        21372053840581811449806882537801291446913149963193194119,
+        571663789061023900466378996278485315925090622222884
+      ],
+      "row_coefficient_L1_ceiling": 37386
+    },
+    {
+      "column": 0,
+      "combination_terms": 2187,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        43886335680715929834972304957936250790952006792929773183,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 61416
+    },
+    {
+      "column": 1,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1198050955061698868060235244341437923539079895599767833,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1677
+    },
+    {
+      "column": 2,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        564455214516259127518117852064624244368971215238942414,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 790
+    },
+    {
+      "column": 3,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        2209928574714679054840793403500372476764649434444599322,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 3093
+    },
+    {
+      "column": 4,
+      "combination_terms": 1670,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        314977630057784454216250776160896668959459812762206538,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 2204
+    },
+    {
+      "column": 5,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        711307036592336717942396396313364274961024080966559538,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 996
+    },
+    {
+      "column": 6,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1153082326079032484775009940422981537301580430745767763,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1614
+    },
+    {
+      "column": 7,
+      "combination_terms": 1669,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        441992742146778454471745234911626712290057511777016962,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 3093
+    },
+    {
+      "column": 8,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        645825128599935905463415375702839864358131757427636392,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 904
+    },
+    {
+      "column": 9,
+      "combination_terms": 1671,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        935247093744084110097502621671402555214287152209359811,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1309
+    },
+    {
+      "column": 10,
+      "combination_terms": 1801,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        8114583522680158225964010624806896666581100505770378729,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 11356
+    },
+    {
+      "column": 11,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        139794834304582043627817709139420084856658554592186185,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 979
+    },
+    {
+      "column": 12,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        814975251328944124560124823735827492534697070052135589,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1141
+    },
+    {
+      "column": 13,
+      "combination_terms": 1710,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        4636684747365519499610497379466240491479607826821057918,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 6489
+    },
+    {
+      "column": 14,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        489580660192463912853718727732802535195907960243212580,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 3426
+    },
+    {
+      "column": 15,
+      "combination_terms": 1677,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        1936652787331151858511485425275851145881809409287373044,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 2711
+    },
+    {
+      "column": 16,
+      "combination_terms": 1669,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        53915566310470925913989992172510267460735704471343474,
+        37609459806646309241209144492005612889808593567295
+      ],
+      "row_coefficient_L1_ceiling": 1434
+    },
+    {
+      "column": 17,
+      "combination_terms": 1670,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        669761549577967266577096643094252485003829266176065834,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 938
+    },
+    {
+      "column": 18,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        939117861967808814298931025530362575520639100838605043,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1315
+    },
+    {
+      "column": 19,
+      "combination_terms": 1671,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        11651903305143929195940083514720086333905434670189488,
+        7521891961329261848241828898401122577961718713459
+      ],
+      "row_coefficient_L1_ceiling": 1550
+    },
+    {
+      "column": 20,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        777172828349156631863443879221604843015690336698294531,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 1088
+    },
+    {
+      "column": 21,
+      "combination_terms": 1746,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        6415974240420030585188065210798943231626364116349240706,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 8979
+    },
+    {
+      "column": 22,
+      "combination_terms": 1667,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        640925561646487791381534374774002321725841641975732239,
+        714579736326279875582973745348106644906363277778605
+      ],
+      "row_coefficient_L1_ceiling": 897
+    },
+    {
+      "column": 23,
+      "combination_terms": 1675,
+      "phase": 4,
+      "residual_coefficient_count": 0,
+      "row_coefficient_L1": [
+        258307614170159382708184821371886339206482348174418226,
+        142915947265255975116594749069621328981272655555721
+      ],
+      "row_coefficient_L1_ceiling": 1808
+    }
+  ],
+  "maximum_L1_ceiling": 68891,
+  "mutation_residual_coefficient_counts": {
+    "commutator_sign_reversed": 2,
+    "one_primitive_monomial_removed": 25,
+    "one_witness_coefficient_changed": 4,
+    "target_phase_changed": 4
+  }
+}

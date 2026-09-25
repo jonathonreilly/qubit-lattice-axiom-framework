@@ -1,0 +1,18 @@
+{
+  "verified_utc": "2026-09-24T16:56:21.490904+00:00",
+  "command": [
+    "python3",
+    "SEAL_PRE.py"
+  ],
+  "sealing_script_sha256": "0818b0da8f4970382b3f07c869c0c6fd3069ccbfa26894ed3c04261e58ba73ed",
+  "source_git_identities_previously_reverified": 7,
+  "source_and_evidence_bytes_unchanged_since_verification": true,
+  "bounded_scientific_control_executions": 2,
+  "successful_control_executions": 2,
+  "full_logs_preserved": true,
+  "author_candidate_unread": true,
+  "delegation_used": false,
+  "large_parent_controls_repeated": false,
+  "audit_verdict_applied": false,
+  "PRE_sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df"
+}

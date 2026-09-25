@@ -1,0 +1,31 @@
+{
+  "preserved_utc": "2026-09-24T23:05:00.108215+00:00",
+  "reason": "Empty hard band was correctly marked band_empty=true, but eta_max=0 and limiting_ratio_max=1 were inappropriate labels for optimization over an empty normalized-state class. Replace those two fields by null and an explicit feasibility field. All spectral weights and proofs remain unchanged.",
+  "members": [
+    {
+      "path": "optical_band_controls.py",
+      "sha256": "3a11ce80240f7f2966783b8abd27ea7b271e61dd83c09f97846ae1cb3c6b8084",
+      "bytes": 11346
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737",
+      "bytes": 43248
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737",
+      "bytes": 43248
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "b581903c3689516f1e3a60a47eec9629023fd59129c128ebdc5616760ff68da9",
+      "bytes": 661
+    }
+  ]
+}

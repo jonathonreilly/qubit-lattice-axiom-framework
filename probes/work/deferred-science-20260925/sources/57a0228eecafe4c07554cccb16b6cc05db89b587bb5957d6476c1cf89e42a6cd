@@ -1,0 +1,24 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "docs/audit/scripts/run_citation_graph_build.py"
+    ],
+    "at": "2026-09-25T07:54:29.739720+00:00",
+    "elapsed_seconds": 111.2839847500436,
+    "exit_code": 0,
+    "stdout_bytes": 281,
+    "stderr_bytes": 0
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "docs/audit/scripts/write_citation_graph_manifest.py"
+    ],
+    "at": "2026-09-25T07:56:21.024463+00:00",
+    "elapsed_seconds": 0.06789854192174971,
+    "exit_code": 0,
+    "stdout_bytes": 77,
+    "stderr_bytes": 0
+  }
+]

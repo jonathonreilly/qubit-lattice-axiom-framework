@@ -1,0 +1,37 @@
+{
+  "sealed_utc": "2026-09-24T13:41:42.322737+00:00",
+  "stage": "final-publication-source-correspondence",
+  "scope": "Complete final note/runner and recorded execution/output/cache correspondence to frozen PRE/POST; no independent numerical replication or audit verdict.",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "7853c846d329a7787680f88b2a62256029a5d42158021d4b6c577315c923358a",
+      "members_unchanged": 5
+    },
+    "POST_SEAL.json": {
+      "sha256": "311c55d8ab6b64eda18c16f61c39b5827211e5c9f5e90adb3158d6c3b709572a",
+      "members_unchanged": 22
+    }
+  },
+  "final_original_snapshot_and_prior_seal_hash_reverification": true,
+  "files": {
+    "PUBLICATION_COMPARISON.md": "14bc7bad19aca8e48612768458d1bb1f28b73f5cbbaae338d6d5927a63fa799f",
+    "PUBLICATION_SOURCE_PINS.json": "4a6a4d7f5bbef9a8ecfe9d89baca64bdcedda264da772eadf5556f6471a0bce8",
+    "publication_correspondence.py": "7f632cf11fd924e9623bff1c027a04857cc05376b8c6e60e907a99ac06e2131a",
+    "PUBLICATION_EVIDENCE_CHECK.json": "f4a84f039b41e864daf3e5637c0a59665ecd2434bbcccba93a4d2418eae445d4",
+    "PUBLICATION_EVIDENCE_CHECK.log": "f4a84f039b41e864daf3e5637c0a59665ecd2434bbcccba93a4d2418eae445d4",
+    "PUBLICATION_EVIDENCE_CHECK.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PUBLICATION_NOTE_DELTA.diff": "fa4cf6d98321cbebeb7f4a47cb045a45ba704dfb8828b2da584a3b504ec8fb27",
+    "publication_sources/worktree/docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "04a95c0ebe36a2c23ad8860ccd9c24d140e17040bdb194a6d96030eaa86a197d",
+    "publication_sources/worktree/scripts/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.py": "8e38fc60019c7d9eb2c377945d4c6bd3e3dbb59fce6736a6c5501a47df97cbbb",
+    "publication_sources/worktree/docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+    "publication_sources/worktree/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+    "publication_sources/worktree/AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+    "publication_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "publication_sources/worktree/outputs/autonomous_marked_grid_observations_20260924/PROCESS_CONTROL_RESULTS.json": "276afe6d625a058b6e6abb5a5bd1689832b7a6e967b4a8da86adec225e03a1fc",
+    "publication_sources/worktree/logs/runner-cache/finite_autonomous_marked_dynamics_under_grid_observations_2026_09_24.txt": "1a789be6cb4ff72d1a042e1252ef4878dc0a0729318d5c4c257d24fffd470c8d",
+    "publication_sources/worktree/scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "publication_sources/external/FOURTH_PUBLICATION_CACHE_EXECUTION.json": "5ff915bfc1cc41328f09b885c2b5b66d18fc56042599550c6c054e82c26b8463",
+    "publication_sources/external/FOURTH_PUBLICATION_FROZEN_SOURCES.json": "78f49b6f3ff4063334f7e9f1a949447c8dee365e21eab6eeb5266e32cff60059",
+    "publication_sources/external/FOURTH_PUBLICATION_RUNNER_DELTA.diff": "164021fd7a0fc344e58256ff8b32716bd5d9d57157a0975a5b8e3905b868dc54"
+  }
+}

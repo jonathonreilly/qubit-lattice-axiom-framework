@@ -1,0 +1,302 @@
+{
+  "status": "All stored support sets, local group lists, global completeness and bound arithmetic checked.",
+  "mode": "Read only, no primary imports/execution; different full-graph offset enumeration at all six sides.",
+  "observed_files": 8,
+  "byte_and_stat_preservation": true,
+  "graphs": [
+    {
+      "L": 4,
+      "global_magnetic_pairs": 240,
+      "global_electric_terms": 192,
+      "local_sets": {
+        "A": {
+          "X1": 138,
+          "X2": 213,
+          "counts": {
+            "formation": 1,
+            "magnetic": 15
+          },
+          "halo_counts": {
+            "formation": 31,
+            "magnetic": 240
+          }
+        },
+        "B": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          }
+        },
+        "AB": {
+          "X1": 213,
+          "X2": 249,
+          "counts": {
+            "formation": 6,
+            "magnetic": 75
+          },
+          "halo_counts": {
+            "formation": 32,
+            "magnetic": 240
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "1/315455853600",
+        "decimal_time": 3.170015672836448e-12,
+        "denominator": "47722800/401957",
+        "ratio_error_bound": "1/60"
+      }
+    },
+    {
+      "L": 6,
+      "global_magnetic_pairs": 972,
+      "global_electric_terms": 648,
+      "local_sets": {
+        "A": {
+          "X1": 174,
+          "X2": 354,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 67,
+            "magnetic": 735
+          }
+        },
+        "B": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          }
+        },
+        "AB": {
+          "X1": 354,
+          "X2": 558,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 89,
+            "magnetic": 891
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "5/6529806971352",
+        "decimal_time": 7.65719418956231e-13,
+        "denominator": "3198289200/26887567",
+        "ratio_error_bound": "1/60"
+      }
+    },
+    {
+      "L": 8,
+      "global_magnetic_pairs": 2304,
+      "global_electric_terms": 1536,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 390,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 82,
+            "magnetic": 972
+          }
+        },
+        "B": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          }
+        },
+        "AB": {
+          "X1": 390,
+          "X2": 702,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 128,
+            "magnetic": 1410
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "5/10127317656096",
+        "decimal_time": 4.937141471997098e-13,
+        "denominator": "1240580400/10425229",
+        "ratio_error_bound": "1/60"
+      }
+    },
+    {
+      "L": 12,
+      "global_magnetic_pairs": 7776,
+      "global_electric_terms": 5184,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1710
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "5/12203190030096",
+        "decimal_time": 4.0972893052298604e-13,
+        "denominator": "2990110800/25124333",
+        "ratio_error_bound": "1/60"
+      }
+    },
+    {
+      "L": 16,
+      "global_magnetic_pairs": 18432,
+      "global_electric_terms": 12288,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "5/12223805590224",
+        "decimal_time": 4.090379189275355e-13,
+        "denominator": "2995165200/25166777",
+        "ratio_error_bound": "1/60"
+      }
+    },
+    {
+      "L": 20,
+      "global_magnetic_pairs": 36000,
+      "global_electric_terms": 24000,
+      "local_sets": {
+        "A": {
+          "X1": 177,
+          "X2": 393,
+          "counts": {
+            "formation": 1,
+            "magnetic": 18
+          },
+          "halo_counts": {
+            "formation": 85,
+            "magnetic": 1038
+          }
+        },
+        "B": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        },
+        "AB": {
+          "X1": 393,
+          "X2": 741,
+          "counts": {
+            "formation": 6,
+            "magnetic": 93
+          },
+          "halo_counts": {
+            "formation": 146,
+            "magnetic": 1713
+          }
+        }
+      },
+      "exact_bound_window": {
+        "max_time_for_bound_one_over_sixty": "5/12223805590224",
+        "decimal_time": 4.090379189275355e-13,
+        "denominator": "2995165200/25166777",
+        "ratio_error_bound": "1/60"
+      }
+    }
+  ]
+}

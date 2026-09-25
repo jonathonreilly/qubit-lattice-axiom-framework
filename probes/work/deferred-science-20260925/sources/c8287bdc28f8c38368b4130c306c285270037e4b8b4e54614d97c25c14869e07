@@ -1,0 +1,288 @@
+{
+  "phase": "Blind bounded PRE check40, before author release",
+  "sealed_utc": "2026-09-25T07:04:41.792957+00:00",
+  "report": "PRE.md",
+  "report_sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+  "source_pins": "SOURCE_PINS.json",
+  "source_pins_sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+  "members": [
+    {
+      "path": "CHARGE_COHERENCE_RESULTS.json",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "bytes": 3820
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "090d9f16692b7075e70afb8d0a42392695e7710193eb7ba44e2c8e1e8249f3e8",
+      "bytes": 1839
+    },
+    {
+      "path": "DECISIVE_RESULTS.json",
+      "sha256": "b23f0cdf4cc348a7530623e071a678e7a319435a63aa601bb5ea0cfd07600e90",
+      "bytes": 1491980
+    },
+    {
+      "path": "FINAL_BINDINGS.json",
+      "sha256": "51d593003192b4190aaa6e24ca7a6d73cb203ae9c33d5ffe154bc73964d61a6a",
+      "bytes": 5412
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "edc2d5b78c0cbad4f6858cfdf3ac9f67d24a9c5a6d8e2b46f0f64a0ed40b63f3",
+      "bytes": 23861
+    },
+    {
+      "path": "PROCESS_LOG.md",
+      "sha256": "df6697dbe964e92faa94cfb740994aa641652b7aa301ab4c24be37a48844663b",
+      "bytes": 5008
+    },
+    {
+      "path": "SMALL_PERIOD_RESULTS.json",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "bytes": 8528
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "bytes": 4405
+    },
+    {
+      "path": "SUPERSOLUTION_EXPLORATION.json",
+      "sha256": "006d787cb859251a42905f29f2a8e85fe763bdb4caf9da7224af6ff5626a860a",
+      "bytes": 26782
+    },
+    {
+      "path": "THRESHOLD_EXPLORATION.json",
+      "sha256": "f7cbce371b51a1deed335e39a21ea534902a3ee5f94d539a600ccc9214eee069",
+      "bytes": 621592
+    },
+    {
+      "path": "UNWRAPPED_PRIMITIVE_COLUMNS.json",
+      "sha256": "4b987e221fadd22e0066ed7a034ae80bd731376bbe6f57d23bede3b03dfd7ab9",
+      "bytes": 1286338
+    },
+    {
+      "path": "__pycache__/primitive_kernel.cpython-313.pyc",
+      "sha256": "6efe3c1ce6553fec7f540ff75ff38dfd0fde62f4f3fe0d28d4340988e0e1322d",
+      "bytes": 8167
+    },
+    {
+      "path": "charge_coherence.execution.json",
+      "sha256": "be65baa4cf6e400058cb76469e10938289ff5519f7c0887474f81a63d44190f5",
+      "bytes": 632
+    },
+    {
+      "path": "charge_coherence.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "charge_coherence.stdout.txt",
+      "sha256": "9ca60d42489ab7f60556ad9f4e814f840b63f8d1dabbd674982482a0720f30f2",
+      "bytes": 3820
+    },
+    {
+      "path": "charge_coherence_control.py",
+      "sha256": "96f037fd16dacc0005790d9acffa2409bc7ac5a209db6650c932cc637c20789a",
+      "bytes": 2695
+    },
+    {
+      "path": "decisive.execution.json",
+      "sha256": "ce868c7a31ebae30eaade8a5fd57dc5c63c389a559b03051fd0fca9c7e38d2c6",
+      "bytes": 643
+    },
+    {
+      "path": "decisive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "decisive.stdout.txt",
+      "sha256": "b3abbfddefa0caaf438537ce2437dd9c7c9e27e734263c47b098686ff026092f",
+      "bytes": 6708
+    },
+    {
+      "path": "decisive_threshold_and_charge_control.py",
+      "sha256": "fef49bb91bb3c8e6f4bd85bd40b34bcf7c7d7dcb5cab994cd93675f94ae28770",
+      "bytes": 10357
+    },
+    {
+      "path": "exploration.execution.json",
+      "sha256": "9ddff99c6dae646278fb149704b811b4087fe2c376ec2eb5cce0bacfe7b28632",
+      "bytes": 639
+    },
+    {
+      "path": "exploration.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "exploration.stdout.txt",
+      "sha256": "80d623ff1f56a4df23948dde58782c44520994887ab87c9ab5ef417996104cbf",
+      "bytes": 10425
+    },
+    {
+      "path": "freeze.execution.json",
+      "sha256": "8d45650daf1dd355249d7ced11847b26611da8092b63cb2da677a21a8a7aa4b2",
+      "bytes": 621
+    },
+    {
+      "path": "freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "freeze.stdout.txt",
+      "sha256": "75a77271184d35dd0e931e759d0d0c1cb9012d6d6aa0cb0510e706e5ca4df9b5",
+      "bytes": 4405
+    },
+    {
+      "path": "freeze_sources.py",
+      "sha256": "922b547a98fbcb82693213b6f7b54b08074f646003b339deb3341561fe212ddc",
+      "bytes": 3317
+    },
+    {
+      "path": "primitive_kernel.py",
+      "sha256": "25313e3420c4cba7fd2af4471b53727f435732c34ea65230b9e94751efd689d0",
+      "bytes": 2736
+    },
+    {
+      "path": "primitive_threshold_exploration.py",
+      "sha256": "5b1ca01ed9634c733f7477efc50634c0787bcc0f00aca4dcd8ff5ca16b1c3eca",
+      "bytes": 4777
+    },
+    {
+      "path": "run_logged.py",
+      "sha256": "2f3ab244d8506cdc12f47d06e0a5b8494f127b93bf1644bd8c62f2c0de81c75d",
+      "bytes": 1168
+    },
+    {
+      "path": "seal_pre.py",
+      "sha256": "14cb7bd68c999f25a9a5a963d34bebfc7f7d06d2baa2e33f5903c9551cba9213",
+      "bytes": 4687
+    },
+    {
+      "path": "small_period.execution.json",
+      "sha256": "b9f1a777b41dabac9546fdac9f46baf16708e4b8efc2559330dba52634a9382a",
+      "bytes": 628
+    },
+    {
+      "path": "small_period.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "small_period.stdout.txt",
+      "sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+      "bytes": 8528
+    },
+    {
+      "path": "small_period_control.py",
+      "sha256": "11372194114a4590222b2c2cea4ad14438754afebb55cd0a79cb9f36ea6c787a",
+      "bytes": 2432
+    },
+    {
+      "path": "small_verification.execution.json",
+      "sha256": "287bd002d72ee012498d555ae615c8ed8c5b35c67ba0c9fa09926de1f6ca7d2b",
+      "bytes": 636
+    },
+    {
+      "path": "small_verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "small_verification.stdout.txt",
+      "sha256": "a5ce5341935fadf2f782d2b3d0eab9a729746470845041a6e329263e3bd2fe62",
+      "bytes": 404
+    },
+    {
+      "path": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "sources/AGENTS_execution.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164
+    },
+    {
+      "path": "sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d709a13f913f0f16cce7f4fe4ae47ebfc90dc8d90b1fcd0cf0c952337bedcf7b",
+      "bytes": 57438
+    },
+    {
+      "path": "sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "supersolution.execution.json",
+      "sha256": "23b5d2ad8397554a628501122e9d1e148a3efbd839e2947622e971f9c2c94e73",
+      "bytes": 632
+    },
+    {
+      "path": "supersolution.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "supersolution.stdout.txt",
+      "sha256": "ecec57487d8a73e12cae5f3d64180204ec76908cb4a9cf3d092a700c6c5e15dc",
+      "bytes": 2745
+    },
+    {
+      "path": "supersolution_exploration.py",
+      "sha256": "67a8e95f916595206bf4d63fabac98146d16dc5536ee48c78419fc76608549e4",
+      "bytes": 2733
+    },
+    {
+      "path": "verification.execution.json",
+      "sha256": "e983559ae02d285ca374b8e9b76ca8a17eab62e2b64463f8554b8b4178c064bc",
+      "bytes": 624
+    },
+    {
+      "path": "verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "verification.stdout.txt",
+      "sha256": "26350ab4137d864eb8a0ebfe16be078935f92e64b3820a02ead8920ca509393a",
+      "bytes": 9577
+    },
+    {
+      "path": "verify_read_only.py",
+      "sha256": "90d0af5a55001a39a7adda747279be975870d53a5ace4abd2b52cfa6f892e6af",
+      "bytes": 11020
+    },
+    {
+      "path": "verify_small_period_read_only.py",
+      "sha256": "e35554659132ac064a95d2298ddd4c4ec24e71945569bd5c87e8538860f735cb",
+      "bytes": 2335
+    }
+  ],
+  "forbidden_candidate_or_current_checkpoint_read": false,
+  "parent_runtime_or_author_program_used_for_new_controls": false,
+  "historical_exposure": "Earlier authorized root33/35/36 work is known. Current computation imports only the four pinned public notes and its own new helper.",
+  "model_or_effort_changed": false,
+  "delegation": false,
+  "publication_or_audit_mutation": false,
+  "failed_search_routes_preserved": true,
+  "next_action": "Stop and send completion hashes/paths only; await root review before any author disclosure."
+}

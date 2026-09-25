@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790287153.1300821,
+  "wall_seconds": 0.06178129091858864,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/single_hop_energy_control.py"
+  ],
+  "code_sha256": "97a5ac743c1ac534ec673fb3cdac212010f278a375d01ee0f33afdcd9137e41e",
+  "stdout_sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 5726,
+  "stderr_bytes": 0
+}

@@ -1,0 +1,182 @@
+{
+  "sealed_utc": "2026-09-24T16:56:21.493400+00:00",
+  "stage": "independent PRE before root candidate release",
+  "scope": "Full N4-start continuously injected compensated cube: ordinary mean limit and epsilon^4 second-moment/variance limit on fixed positive physical-time intervals; conditional supplied model",
+  "current_root_candidate_read": false,
+  "inherited_model_and_effort_retained": true,
+  "delegation_used": false,
+  "prior_recent_birth_result": "Explicitly supplied lower-bound input; no second independent-discovery claim",
+  "members": [
+    {
+      "path": "CHECKPOINT.md",
+      "sha256": "0c112cbc579a1593d9b1b7dfd2de0767209d6adb24cc7348d3365fddaad85710",
+      "bytes": 3144
+    },
+    {
+      "path": "CONTROL_ATTEMPT_1.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_ATTEMPT_1.stdout.txt",
+      "sha256": "0b35c5c182b17c3592d66a2ff90439c0532505bc85db091c68baa8af074fb047",
+      "bytes": 10079
+    },
+    {
+      "path": "CONTROL_ATTEMPT_1_EXECUTION.json",
+      "sha256": "d5991fc756721b9d11e73b008e071243962527e27064aecad096f2ee426b3664",
+      "bytes": 1107
+    },
+    {
+      "path": "CONTROL_ATTEMPT_1_RESULTS.json",
+      "sha256": "0b35c5c182b17c3592d66a2ff90439c0532505bc85db091c68baa8af074fb047",
+      "bytes": 10079
+    },
+    {
+      "path": "CONTROL_ATTEMPT_1_SOURCE.py",
+      "sha256": "b1d8270f48b6f376a67bed334c2421915078b0613048d6b6bce37852472090b0",
+      "bytes": 10833
+    },
+    {
+      "path": "CONTROL_ATTEMPT_2.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_ATTEMPT_2.stdout.txt",
+      "sha256": "0d13f5dd9cc4fab0f761897ab5504e5f21697180f23864aac494a5cddba1d4ca",
+      "bytes": 13189
+    },
+    {
+      "path": "CONTROL_ATTEMPT_2_EXECUTION.json",
+      "sha256": "8f1ad2e9c541653833a3962832ec2042d1e12790f19e33587b4eaec1178a5b7a",
+      "bytes": 1252
+    },
+    {
+      "path": "CONTROL_ATTEMPT_2_SOURCE.py",
+      "sha256": "7551ceab1125b1371571fa8ba97e022b501addcc735638db65518334821a544c",
+      "bytes": 11482
+    },
+    {
+      "path": "INDEPENDENT_SOURCE_AGE_RESULTS.json",
+      "sha256": "0d13f5dd9cc4fab0f761897ab5504e5f21697180f23864aac494a5cddba1d4ca",
+      "bytes": 13189
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df",
+      "bytes": 31363
+    },
+    {
+      "path": "PRE_FINAL_VERIFICATION.json",
+      "sha256": "7446b333eceb3e60352d50fa776384b7e2d00de2e7e8322ea2b40e2b5d9ac0d9",
+      "bytes": 662
+    },
+    {
+      "path": "SEAL_PRE.py",
+      "sha256": "0818b0da8f4970382b3f07c869c0c6fd3069ccbfa26894ed3c04261e58ba73ed",
+      "bytes": 4260
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "sha256": "84113f47946f24254032295613d1c83e0963609f6ca84ecc22b60509ca917736",
+      "bytes": 3475
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "b6c6cd7caf289dbe111711758ec6e76ef555a937a7d3d3c5062f0ab2bcc39e6e",
+      "bytes": 5988
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "9b9711a430ecf9bbcc62629ea1e6c8f78828b4fd56540d9085b2c79ed43adcf0",
+      "bytes": 10869
+    },
+    {
+      "path": "SOURCE_VERIFICATION.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "SOURCE_VERIFICATION.stdout.txt",
+      "sha256": "84113f47946f24254032295613d1c83e0963609f6ca84ecc22b60509ca917736",
+      "bytes": 3475
+    },
+    {
+      "path": "SOURCE_VERIFICATION_EXECUTION.json",
+      "sha256": "7fb694f5522cd565c6dd11f10c73bd8e8f777e351eacd23a54923d34b28ae8ca",
+      "bytes": 1087
+    },
+    {
+      "path": "independent_source_age_controls.py",
+      "sha256": "7551ceab1125b1371571fa8ba97e022b501addcc735638db65518334821a544c",
+      "bytes": 11482
+    },
+    {
+      "path": "instructions/REPOSITORY_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "instructions/STANDING_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164
+    },
+    {
+      "path": "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317
+    },
+    {
+      "path": "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "04bf4ad2def6a5d8e7a0ab711d4e6e52d1933eb9d28366b1cdb5dee1383d9726",
+      "bytes": 18577
+    },
+    {
+      "path": "sources/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "ab8234682ea61bff35fbd18685f65ac0b853aa20e0d3600304b9004076bd147a",
+      "bytes": 31883
+    },
+    {
+      "path": "sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264
+    },
+    {
+      "path": "sources/RECENT_BIRTH_PRE.md",
+      "sha256": "82b7a4734b2fcfba45022c11859abdaa2239468e8b6a6ddc93f15481b1a41a25",
+      "bytes": 24504
+    },
+    {
+      "path": "sources/RECENT_BIRTH_PRE_SEAL.json",
+      "sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+      "bytes": 1875
+    },
+    {
+      "path": "sources/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076
+    },
+    {
+      "path": "verify_source_evidence.py",
+      "sha256": "686e32dfa078a1b1cb5028f873cf9216f93c49ec45bf9c6c81eea84bb411e6f0",
+      "bytes": 5226
+    }
+  ],
+  "immutable_policy": "All members and this seal are read-only; future POST must be a separate packet."
+}

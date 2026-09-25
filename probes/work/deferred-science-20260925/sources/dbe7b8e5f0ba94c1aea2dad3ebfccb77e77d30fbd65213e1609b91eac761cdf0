@@ -1,0 +1,213 @@
+{
+  "sealed_utc": "2026-09-25T03:55:16.593124+00:00",
+  "signed_by": "Codex scoped independent checker /root/rotor_upper_tail_check",
+  "scope": "Final publication correspondence for finite-window microscopic energy laws. Same scoped checker, no new independent scientific reconstruction, primary rerun or retained audit.",
+  "report": "PUBLICATION_COMPARISON.md",
+  "publication_note_sha256": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+  "publication_wrapper_sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+  "publication_result_sha256": "6a39a535a52df7e80a2a660c6aa5a6ed2ab5ee04becd1d85870eda739cf3d319",
+  "publication_cache_sha256": "856a1dea5097fceb4798a7a1c3a1dc45e12007c4ba6e31837f086b40aeb7e069",
+  "recomputed_input_fingerprint_sha256": "f82ab9b31c1b7e8dc17b5009f3d58f50bb4c01d4266a4643a208a89a52b51f35",
+  "preserved_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+      "members_verified": 25
+    },
+    "POST_SEAL.json": {
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+      "members_verified": 20
+    }
+  },
+  "source_origin_counts": {
+    "publication_manifest_members": 9,
+    "external_process_metadata": 4,
+    "separately_released_cache_tooling": 1,
+    "total": 14
+  },
+  "exact_parent_git_origins": 3,
+  "complete_scientific_payload_leaf_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "excluded_timing_fields": [
+    {
+      "path": "root_generic/elapsed_seconds",
+      "historical": 0.10359320905990899,
+      "fresh": 0.08806937490589917
+    },
+    {
+      "path": "independent_native/elapsed_seconds",
+      "historical": 0.0126952501013875,
+      "fresh": 0.010761958081275225
+    }
+  ],
+  "fresh_scientific_differences": [],
+  "repairs_verified": [
+    "Only distance-two A pairs in the full magnetic sum.",
+    "Fixed bounded continuous energy responses.",
+    "PRE Section 5 physical counterexample explicitly attributed; general stopped-instrument extension not promoted."
+  ],
+  "additional_repairs_identified": [],
+  "failures_preserved": [
+    "Root filename-lookup failure for CONTROL_ATTEMPT01_STDOUT.json versus CONTROL_ATTEMPT_01_STDOUT.json; no scientific failure or rerun.",
+    "Initial combined metadata display truncated; all fields subsequently read in complete batches and full stdout/cache bound byte-for-byte.",
+    "Earlier PRE lookup failure and all previous evidence remain unchanged."
+  ],
+  "own_check": {
+    "source": "publication_bind_and_check.py",
+    "execution": "PUBLICATION_BINDING_ATTEMPT_01_EXECUTION.json",
+    "output": "PUBLICATION_BINDING_ATTEMPT_01_STDOUT.json",
+    "exit_code": 0,
+    "kind": "Genuinely read-only source/AST/Git/payload/fingerprint/cache/text comparison."
+  },
+  "author_or_primary_programs_imported_or_executed": [],
+  "cache_tooling_functions_called": [],
+  "other_active_scientific_packets_opened": [],
+  "limitations": [
+    "Scientific independence belongs to the sealed PRE; exact-source fresh execution is reuse.",
+    "Fixed graph, fixed parameters, positive-probability finite windows, bounded spectral responses and ordered limits.",
+    "No moment, support-edge, isolated-timestamp, arbitrary simultaneous-schedule or physical energy-calibration upgrade.",
+    "No publication/repository/audit mutation; linked evidence-package copies beyond the stated manifest were not separately inventoried."
+  ],
+  "member_count": 27,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20",
+      "bytes": 19733
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+      "bytes": 5716
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "c2ea89a3449b8fadeb9d6429e6ba9eb20cce3ecea82d29b4a65b822924ae8d03",
+      "bytes": 4099
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743",
+      "bytes": 29737
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+      "bytes": 6077
+    },
+    {
+      "path": "PUBLICATION_BINDING_ATTEMPT_01_EXECUTION.json",
+      "sha256": "bb42ceae64131df9fb0bf9b2f34c1d56691b9719c2a306141a7c50cf9eb39284",
+      "bytes": 512
+    },
+    {
+      "path": "PUBLICATION_BINDING_ATTEMPT_01_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_BINDING_ATTEMPT_01_STDOUT.json",
+      "sha256": "3b7d3b25baaf424a68d282af6353d2b06377fee8de814b8e13f7859333dae11e",
+      "bytes": 16311
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "3e587ca34f684d624912b96d61f0b1aeca8791bf1f8a5c984459f6f94710bc6d",
+      "bytes": 18402
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "3dcbc643760944756f471369eea54dc37187b2703b0aa384157e1626749dfe19",
+      "bytes": 7554
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43",
+      "bytes": 6473
+    },
+    {
+      "path": "publication_bind_and_check.py",
+      "sha256": "c8f0579ef259bc0df33cfad78e2978a60bbc55199b64a35ca8ad0c0b5f1ea1fd",
+      "bytes": 15891
+    },
+    {
+      "path": "publication_frozen/metadata/FINITE_WINDOW_ENERGY_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "f96c0a11fdf0968c4d035d5881f92ee038c7bed0d766dd3b904171c4b912fd51",
+      "bytes": 1743
+    },
+    {
+      "path": "publication_frozen/metadata/FINITE_WINDOW_ENERGY_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "sha256": "9c21ce603b25de26019d0e07b6dcffe043d80cf3a56632ac4682d886528dcf8f",
+      "bytes": 389
+    },
+    {
+      "path": "publication_frozen/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "4dd1357cb01386868107c0841f81c27ca478c6d1d83fd8ad5e29f74428898160",
+      "bytes": 70407
+    },
+    {
+      "path": "publication_frozen/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "abf84a41106c3fe9d5f6b475b29d315e746446289b59f15f1a3f4dee472bd00e",
+      "bytes": 3663
+    },
+    {
+      "path": "publication_frozen/tooling/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_frozen/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "bytes": 12127
+    },
+    {
+      "path": "publication_frozen/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "bytes": 6301
+    },
+    {
+      "path": "publication_frozen/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "publication_frozen/worktree/docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+      "bytes": 23183
+    },
+    {
+      "path": "publication_frozen/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_frozen/worktree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_frozen/worktree/logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt",
+      "sha256": "856a1dea5097fceb4798a7a1c3a1dc45e12007c4ba6e31837f086b40aeb7e069",
+      "bytes": 65867
+    },
+    {
+      "path": "publication_frozen/worktree/outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+      "sha256": "6a39a535a52df7e80a2a660c6aa5a6ed2ab5ee04becd1d85870eda739cf3d319",
+      "bytes": 65487
+    },
+    {
+      "path": "publication_frozen/worktree/scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+      "sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+      "bytes": 3210
+    },
+    {
+      "path": "seal_publication_comparison.py",
+      "sha256": "f0b5e74f64987fef2d44d04dfdcf95f6740648a9c5ec14f6c8ed8cd87d1b57f5",
+      "bytes": 8503
+    }
+  ],
+  "next_step": "Stop after delivery; preserve every prior generation and the current publication sources."
+}

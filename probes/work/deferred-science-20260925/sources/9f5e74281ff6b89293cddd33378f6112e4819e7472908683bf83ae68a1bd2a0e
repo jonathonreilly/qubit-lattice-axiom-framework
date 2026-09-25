@@ -1,0 +1,10 @@
+{
+  "runner_sha256": "57a2c606b7898a69cd6390bb997a1e4ac5c9233161fd84bc86c8b6d71cc383ca",
+  "result_sha256": "7624d1ec0dbb59ac6d4a0cda95381dff22f66682bd69d238d8cd27ecfcd12e29",
+  "cache_sha256": "d1441be2c8aadc03a65d861319110dc09571c22db32f95b52bec677806bdbf19",
+  "seconds": 0.4803280830383301,
+  "complete_stdout_objects": 1,
+  "all_scientific_values_identical_to_sealed_sources_except_provenance_hash_and_timing": true,
+  "nine_helper_ASTs_identical": true,
+  "primitive_main_adaptation": "renamed, return result instead of writing/printing; inspected construction"
+}

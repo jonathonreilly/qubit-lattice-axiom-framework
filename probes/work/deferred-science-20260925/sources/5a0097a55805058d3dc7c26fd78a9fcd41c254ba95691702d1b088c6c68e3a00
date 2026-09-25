@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-09-25T01:29:19.660103+00:00",
+  "scope": "Coordination messages preserved as process evidence; no author generation edited.",
+  "reviewer_qualifications": [
+    "Explicitly include actual coherent sign-sum channels, with their prescribed coefficients, because each retains number grade +2.",
+    "Interpret intervening operations as number-preserving Kraus maps; number-commuting effects alone do not specify number-preserving state updates.",
+    "State the selected power as a gain/loss quadratic form on a sufficient domain. The direct gated-D graph bound proves original jumps preserve D(h); pure D(h) vectors or finite Tr(h^2 rho) mixtures suffice.",
+    "Keep the supplied weak-field O(g^2) rate outside the independent check; fixed gamma gives a vanishing shift. An order g^-2 offset alone does not imply a nonzero limit from an upper rate bound only."
+  ],
+  "root_response_verbatim": "Please seal the POST with those precise qualifications and the direct sufficient-domain argument. Keep the original author generation unchanged. For intervening operations, use number-preserving Kraus maps; effects commuting with N alone are insufficient to specify state updates. State coherent sign-sum +2 grading explicitly, and keep the weak-field rate premise outside your independent check. I will review the full sealed evidence before public incorporation.",
+  "author_source_unchanged": true,
+  "public_text_edited_by_this_reviewer": false,
+  "POST_domain_argument_attribution": "New bounded independent POST argument; not part of sealed root generation or blind PRE.",
+  "PRE_attribution_preserved": [
+    "physical Gauss-star control",
+    "variance identities",
+    "nonlinear history-dependent rotation",
+    "bounded offset ledger",
+    "distinct abstract six-state control"
+  ]
+}

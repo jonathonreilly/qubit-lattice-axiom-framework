@@ -1,0 +1,874 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/ROOT_READ_RECEIPT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/ROOT_READ_RECEIPT.json",
+      "sha256": "89fe5d294b22a5ecdfc850e802db441e2e6e1a9f324b40328c82a7d3de15bd10"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/SOURCE_PINS.json",
+      "sha256": "03b4056d4cfc5037c94297561eaac2766c28ff7bc06309caf76ae6df22b6604e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/WORKING_DERIVATION.md",
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/attempt01/EXECUTION.json",
+      "sha256": "bc7354c47fcfe35ed0fc95ad6d6564bbb3eacf5bdd3127a91f173e093c25bf62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/attempt01/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/attempt01/RESULT.json",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/attempt01/charge_cluster_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/attempt01/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/attempt01/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/charge_cluster_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/CONTROL_READOUT.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/CONTROL_READOUT.txt",
+      "sha256": "7fac4ba348de72f1ccb3a168cdcbeacbcbdb801d2fae834a26e047397730a8e1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/EVIDENCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/EVIDENCE_PINS.json",
+      "sha256": "2939d932471044490ad7ce3e1f4b920fcced38bb64019635a85f0116a3569bf0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/FAILURES_AND_LIMITS.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/FAILURES_AND_LIMITS.md",
+      "sha256": "0d186e7559ee52558d55cf143a000e3b0d6f86127039e874ff3f41e80093235e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/POST.md",
+      "sha256": "25c981ebf21e21916d0cda69383652813b2f08f48c2734c251652fcb5d6329d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/POST_SEAL.json",
+      "sha256": "97fb749f28603a6a3d49df3aaf654f02377a412f33607df19e7604a3db024fc4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/POST_SOURCE_PINS.json",
+      "sha256": "51c53e5196b53d0548cd4c343255bd738a215c1bc4e03a08e8130a395d4d49a6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/POST_VERIFICATION_REPORT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/POST_VERIFICATION_REPORT.md",
+      "sha256": "9e491eaaa5515b8b02653a1a3c7e6f82f25f7980515008bef43e4111633c3916"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/PRE.md",
+      "sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE_DRAFT01_BEFORE_PAIR_SCOPE_REPAIR.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/PRE_DRAFT01_BEFORE_PAIR_SCOPE_REPAIR.md",
+      "sha256": "df96886c8de24de6dad0dd6a26196b4c838cfee61b4b05698fd8aa5c6e6bceb8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/PRE_SEAL.json",
+      "sha256": "61b5a0edaffee445ba80cfd7eb7e25cb60dea3e6aede4b449df2fc2e3dbc7cca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/SOURCE_PINS.json",
+      "sha256": "0fd02b611e8dad6c386c0639913f01b9686ea76198e711f052d6fef867e380c8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/SOURCE_PINS_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/SOURCE_PINS_INITIAL.json",
+      "sha256": "8377d93aaea2f87b57ee64e0a298b993c80bb79e785a85aa546c9eac408ad06f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/VERIFICATION_REPORT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/VERIFICATION_REPORT.md",
+      "sha256": "1c587c363d7b9fafedbfc1e8001d73e3fac28b6e0af7cefb750cf80bf5655609"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/low_wave_remainder_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/low_wave_remainder_control.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_capture_sources.py",
+      "sha256": "9a4823e922a540211cce22fe1e7777f1483d654850008793aae76c45a94ca9a6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_record_verification.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_record_verification.py",
+      "sha256": "9b9048b30dafbdec0ab74328656503cd2a4ad2f1defd1544e2bb7e60d9486e97"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_seal.py",
+      "sha256": "75f12a8c1bf9d22844cf12deef3dd9fce672640686a71fd6f5a94042e5745eea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_verification_attempt01/EXECUTION.json",
+      "sha256": "6d041e8519e46a67d1139720738566dad4772fe91d9ee8bc0921c6e9d7aabb25"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_verification_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_verification_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_verification_attempt01/stdout.json",
+      "sha256": "f63af37e62cd86cc7292dbdc4d772bcab021d889dcdac599b0ce82e32194b8aa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_verify_readonly.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/post_verify_readonly.py",
+      "sha256": "74a772ec5de95cce663ff7eaaefea9a62b7cee1558e3e6a8ce9aeff98526162b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/prepare_evidence.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/prepare_evidence.py",
+      "sha256": "da7137dff7c6bacdf88a903e8070a03017d67107dfaa0e406714507d4761b651"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/primitive_attempt01/EXECUTION.json",
+      "sha256": "0056f83bf4fd995c04876ff3d8029fc821b7f192eb2b0bd22cd5bbff8958977c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/primitive_attempt01/source.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/primitive_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/primitive_attempt01/stdout.json",
+      "sha256": "04b1ed1bc0640e416e1b287807be905a78494a668a45066d1264fecf5c6b537f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/primitive_birth_charge_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/primitive_birth_charge_control.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/record_control_attempt.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/record_control_attempt.py",
+      "sha256": "3af26872e5374cedc8c95424fd01cc4329ebfbc46c5ce4d5a2b39d4119ed1d3c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/record_readonly_verification.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/record_readonly_verification.py",
+      "sha256": "987ce323e76047e78734bf63b51e252ba28d8473a415a1c4d346dc78e2cda01f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/remainder_attempt01/EXECUTION.json",
+      "sha256": "fcfd924b6c8346ac4419decb22cbfdae4e9fe0318f5722ff64da4d400b0b4d1b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/remainder_attempt01/source.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/remainder_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/remainder_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/remainder_attempt01/stdout.json",
+      "sha256": "fb941d016250c8d0df0ae560737fc0dd67c6aeae937b8c601cd6d39dbe058b73"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/seal_pre.py",
+      "sha256": "3dad8b4490167e0ef2d2694c40d0b415e4731025b495a6d37b06617c4c3ef56f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/verification_attempt01/EXECUTION.json",
+      "sha256": "e87132593577621cdb31f0d0cc4a6af3b691031597026dfcea276decb09669c1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/verification_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/verification_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/verification_attempt01/stdout.json",
+      "sha256": "7f91f7911f67f906f10e84807ed9d1b0d6c6c6e4f6d2a6a828ee78698575e4fb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/verify_readonly.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science42/verify_readonly.py",
+      "sha256": "b815a798bedfc6027b3b0adea04f306c090c26f430931cacc1d267be45d1b040"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/ROOT_READ_RECEIPT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/RESULT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/cluster_escape_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stderr.log",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/attempt01/stdout.log",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/birth_geometry.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-personal/cluster_escape_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author43_history/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/CHECKPOINT.md",
+      "sha256": "54c85fcdbe2cbea6d184b05bb6ccab5bc7b64b14d607293fdd0b0cb2f14fb037"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/FINAL_BINDINGS.json",
+      "sha256": "05f499f99db63e09dfa23482ad9d764a3b37aa1b6e4bd6cc2d8f5d2485e478cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L4.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L4.execution.json",
+      "sha256": "714ac667112d87d09e6a2c990905f84110e7234e6d42e91ca9a1e32b8cdc378e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L4.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L4.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L4.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L4.stdout.txt",
+      "sha256": "f5d7fe259927712807c221b9bbc5bd93d180d32e8154c72d93dd8f789b58d9a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L4_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L4_RESULTS.json",
+      "sha256": "2e896ec6eded7299c0b7e0102fff2805a5927101d3b704e56d8a846e7c8e7924"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6.console.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6.console.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6.console.txt",
+      "sha256": "7e10da8a4c32ec7b97ed1fe3d0f2b5535dff5051275535df3b0c582d472cec4f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6.execution.json",
+      "sha256": "ad1f2cbe98d306dd0dfa039270463c3eac90b94748d488a17bc256ad94571b21"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6.stdout.txt",
+      "sha256": "837a96c99a9783ba143de3df648057393f80683f4d53ce2e6d1a043e72120fb4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L6_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L6_RESULTS.json",
+      "sha256": "0ba30fb5223f0148bcf86ae19058e6a9a48909997c0e1ad69c80f5d3d2f34952"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8.console.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8.console.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8.console.txt",
+      "sha256": "a16ef3636254f9823278de63efbc3ba91f964d510ed8acbd52903b4bf6c98791"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8.execution.json",
+      "sha256": "4f3d8476d7d828184bd4d4bc76620b851c19ad34d525f7c2125c0fac455d8e5f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8.stdout.txt",
+      "sha256": "32a401f750cad25520ea88487d0b6450af2f396d5242b77a5fe1b1fa895c072b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/L8_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/L8_RESULTS.json",
+      "sha256": "adf385dc98dbf8477ff6c11b33ed1e6c5d67a73120070f554031cf85d748c21f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST.md",
+      "sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_FINAL_BINDINGS.json",
+      "sha256": "4a0bdef999315ef7422784dec7cab0481feaf09ee2762654ca375ddb166c9ac5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_PRESERVATION_AFTER.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_PRESERVATION_AFTER.json",
+      "sha256": "0afdee20185bd7e62df1dcde8c44efcd7846103e9a8028f01daf58de1c3231b4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_PRESERVATION_BEFORE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_PRESERVATION_BEFORE.json",
+      "sha256": "db56a79c59b224897fb48d4de47e15aac42b382c81955e59407c3ae72822ee53"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_PROCESS_LOG.md",
+      "sha256": "a1e058c1ad0957b1d560df234957690a0f23aa3af3ce73ed4334019f7e091cdd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_SEAL.json",
+      "sha256": "ba6bb037f247a0f041a6969ecf4c985393036ccaf786004664c5bb82f0c44e8b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/POST_SOURCE_PINS.json",
+      "sha256": "965337cd2ab6a8b4ff8ffea97a660a3e4608ee7e9eb229d48b537b0da4efa6a0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/PRE.md",
+      "sha256": "fd8ff944ce30133a794274084603d8e8652c5b8289281a50519b061c097b10fe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/PRE_SEAL.json",
+      "sha256": "b329a26433813d8c39038c47d5ff37b3d488c851edbc2c3e296b0359da1ef823"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/PROCESS_LOG.md",
+      "sha256": "5efeb0d05b8c2e4fe61784b0621bd767c13c206925b58edac6ea462f01d8c0ce"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/SOURCE_PINS.json",
+      "sha256": "3ba194311623fc163ef24cbe3b7ac01c92bad561e275471cc84ac37d2ea68b9a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/freeze.execution.json",
+      "sha256": "dcff6b0f2e79b281a492dc5321e5e0d71611ed3695dfd5353876aec7a3b2f48e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/freeze.stdout.txt",
+      "sha256": "3ba194311623fc163ef24cbe3b7ac01c92bad561e275471cc84ac37d2ea68b9a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/freeze_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/freeze_sources.py",
+      "sha256": "a2751664efb8160ca2a5d643a9af1a8734c89020e583e15b352c1d2be73bf2cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_compare_read_only.py",
+      "sha256": "adaea777dacb73c7e8f67a8b32cf583cf9c436c6035ab5e15eb26128b781a52b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_comparison.console.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_comparison.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_comparison.console.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_comparison.console.txt",
+      "sha256": "5ac52bcd4a15c883b395bdfb70982463c20daa9dd93e0da430e5db34d8077965"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_comparison.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_comparison.execution.json",
+      "sha256": "faeaec9ad3b07c51f38f81977f75af0671d578220e88acd07c90793ff8234795"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_comparison.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_comparison.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_comparison.stdout.txt",
+      "sha256": "b7fc89d6a0c1cbf9d8c7ac641e26a92df07ed78e8a95c5b057f2ba0133548437"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_freeze.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_freeze.execution.json",
+      "sha256": "ca1e5bcfea9fd882f4a7203552b0aa1d2b0a60e0d1538c0711763f43b91a0334"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_freeze.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_freeze.py",
+      "sha256": "35c9135c9f6853facbc6c47fb8f49a857672ef68d26c8e33c670e0ab80c41bb3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_freeze.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_freeze.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_freeze.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_freeze.stdout.txt",
+      "sha256": "965337cd2ab6a8b4ff8ffea97a660a3e4608ee7e9eb229d48b537b0da4efa6a0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_history/POST_before_math_typesetting.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_history/POST_before_math_typesetting.md",
+      "sha256": "9348fc6543d72e7cfbb680f0d252b9d0382bfdef7034e9b6cc243064c78b2981"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_record.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_record.py",
+      "sha256": "c7e8a28d4135e7ab0a42cb4f095f65f283ed7724f72653a43d2faf48552d2f46"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_seal.py",
+      "sha256": "4e5d18ae586dfbe741d6b2412660c8796299b998cc7d37aa4dd5e405d04f922f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_typeset.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_typeset.py",
+      "sha256": "f945cfc4a27055f12edf853cd55ff35fdfb515bf5c636e7e728e81c0252aabe1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_typesetting.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_typesetting.execution.json",
+      "sha256": "7593cde63e0f903c1a2e47455281c182077ef7ebc3d898ed6c2cc2a315cf6110"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_typesetting.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_typesetting.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_typesetting.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/post_typesetting.stdout.txt",
+      "sha256": "9b547beba2e287b78a1cd54591ec95c9a6d28f71dbfa7e31eb99144bb07f1f9a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/primitive_transport.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/primitive_transport.py",
+      "sha256": "fe7c37c69b5fbff754b487a74375fb357b40542bbfda6319451de662c277e1d9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/run_logged.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/run_logged.py",
+      "sha256": "ed5af24e299d56593cdfac3fe3ceec9d31b7278cacb647409c45484a76bcede3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/seal_pre.py",
+      "sha256": "b9c52b66460a41a81adb2ed9869615c363da1403811fef5f4417a81899bc5e23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verification.console.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verification.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verification.console.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verification.console.txt",
+      "sha256": "39833a3afabcbddf0b7e84048b877c7e395b0c03c7f6295460825f284a8b9de3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verification.execution.json",
+      "sha256": "63b82596ade6756b12e96089d5b39042e1d2fa7472795a075a784cfcab4ef50d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verification.stdout.txt",
+      "sha256": "d95633c06ab117b62e6a4f287335dffb4266c59fcb3c797340ff6e826a813c62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/verify_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/science43/verify_read_only.py",
+      "sha256": "db0e74ea33278f26bee2c5fcbfb68e01e8aa94a28510ce5321c043b6ef34cded"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/FINAL_BINDINGS.json",
+      "sha256": "ca983b1f0fa04f52c33401034a5ebf6805a0a425af17197579324a1a82add809"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/MECHANICAL_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/MECHANICAL_SOURCE_PINS.json",
+      "sha256": "f8217f4258ed9cab0e6276481ce62c0d728fb85b7eb8ae8c4b06ae1f3504b69b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/OWN_43_PRESERVATION_BEFORE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/OWN_43_PRESERVATION_BEFORE.json",
+      "sha256": "e9bac3588a0a326779acf32e6c5034c81957550261a8b8a93b7d543ba025ab2a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/PRESERVATION_AFTER.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/PRESERVATION_AFTER.json",
+      "sha256": "0e303c48c9232880d45cd70d88d5dc12cb7e7513bc496979a8159400c4ce790c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/PROCESS_LOG.md",
+      "sha256": "ba45d5850fa32077014c4e63ff443e61f861afa8b2a06f46a0a8ef73ff92e172"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/PUBLICATION_COMPARISON.md",
+      "sha256": "be8cad3c8ac15a6687e0530a46e2f5aa2b93eaded8e59bfc3fa42a4cada51964"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "f9557764e92daca33e8492f77864e2d4021072d2ab90531569b592f540b7736a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/REPORT_WRITE_FAILURE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/REPORT_WRITE_FAILURE.md",
+      "sha256": "a5ec0b65ad0081090cd362ca04840628e01fc15c273984208f62ce8a67533b32"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/SEAL_PREPARATION.log",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/SEAL_PREPARATION.log",
+      "sha256": "a322f6c3bd7759fe01167dc3843790edd61f7cfdda890d6319339e3250e11a11"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/SOURCE_PINS.json",
+      "sha256": "bbebc8141695fa9b371b0a0352b3e369ab81a1240d1b9e29d0873f2bdbb5e908"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture.execution.json",
+      "sha256": "adfcb59d71367bdeba991dacf9b33498e0cda90ad1386bd837c999a564426332"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture.stdout.txt",
+      "sha256": "e4920c3be983d59830e3e8fee627350a9a3050d68c00cd611551a18cb2f2bffd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture_mechanics.execution.json",
+      "sha256": "f3a766ae6f723c0f4716a21b724bd9ba6190884f8829f7e88ad3467d803421ec"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture_mechanics.py",
+      "sha256": "a57f24e8c45af4d39c93f220d9df691b46d36101fa4c23a5cbd2b23966c3eebe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture_mechanics.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture_mechanics.stdout.txt",
+      "sha256": "f8217f4258ed9cab0e6276481ce62c0d728fb85b7eb8ae8c4b06ae1f3504b69b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/capture_sources.py",
+      "sha256": "5d135a25bf55be1c34ce1c0452e375bb4fbc211cee7d581c33ab62527ac33b57"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/compare_read_only.py",
+      "sha256": "ed893670e8788efff968bb0f412513cc5d9caae04ad385577f9b6dca4779982c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/comparison.console.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/comparison.console.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/comparison.console.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/comparison.console.txt",
+      "sha256": "75644f486666c80121aa2fe10743af43a45d3a0ad24957c1b31f60e79f3bb85c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/comparison.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/comparison.execution.json",
+      "sha256": "6335283160999d0b7bf2134d43576e9c4de42a1a0b41087f80911f741c65d16e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/comparison.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/comparison.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/comparison.stdout.txt",
+      "sha256": "c127b1f8bb4829321bdf1a3f3c725bf33dd8bf551657a96f63856666b69142a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/record_run.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/record_run.py",
+      "sha256": "9f2ab5f6e2510a315127a5bcabbb003433b949dded934350867f72adb7e5a1aa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/seal_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/publication/seal_comparison.py",
+      "sha256": "662ee92d3e128a3e7f037b6170bd524b611fc2e31677fb44ab115173b3fde25c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_READONLY.stdout.json",
+      "sha256": "c127b1f8bb4829321bdf1a3f3c725bf33dd8bf551657a96f63856666b69142a3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "bff80825df09c51799f4947e5bc3f6c10e8123385a4bfe5766e645c8dc6b8508"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_FROZEN_SOURCES.json",
+      "sha256": "e1fa5fc27983528a89e42e7d20a02aba4de3d733121c3606c72a8fed9f64b5f7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stdout.txt",
+      "sha256": "13e148f00f55eb5270f6d601a8086167b0f4e73b567914cb7167b393707aba4c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_PRIMARY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_PRIMARY_EXECUTION.json",
+      "sha256": "edab146a66640922b02360780cefaebfdcabbaad9b4d416ba24dc10f271db408"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "7a540f8f258b486cc019e301c21db91598703f887b586e477e63f9b5a46a863f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/BIRTH_CHARGE_TRANSPORT_PUBLICATION_WORKING_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/BIRTH_CHARGE_TRANSPORT_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "2d55a6f979b9d15607532025b8d21746cc2605e2edaa5c063b8ea8341fb41a5b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_POST_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_POST_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_POST_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_POST_ROOT_READONLY.stdout.json",
+      "sha256": "dfd117f4ead58093968444b8139044613a5c01a063a9fb29a818e4fc4b3ffa67"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_POST_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_POST_ROOT_REVIEW.json",
+      "sha256": "7064a1a30551ec6ba23fc864b40ea569f5ead37d3f474b864d086c77c65d97ca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_PRE_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_PRE_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_PRE_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_PRE_ROOT_READONLY.stdout.json",
+      "sha256": "b84cfcde21ea57c9becf6c51d9c3028b0c73eec8203ad31ba5dd421a11b7088d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SECOND_PRE_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_SECOND_PRE_ROOT_REVIEW.json",
+      "sha256": "c3689f2d28d9ad3163d1a50760cd1c5abfb41882ebd1877c6947c88d0763d5d4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_POST_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_POST_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_POST_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_POST_ROOT_READONLY.stdout.json",
+      "sha256": "b7fc89d6a0c1cbf9d8c7ac641e26a92df07ed78e8a95c5b057f2ba0133548437"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_POST_ROOT_READ_COMPLETION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_POST_ROOT_READ_COMPLETION.json",
+      "sha256": "cddf9927c19158ff5eb668f3f8d8a3b45124b2ca1ed1e63009cef9f52c79216e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_POST_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_POST_ROOT_REVIEW.json",
+      "sha256": "e163d263016de06b7a00c62ad640e40a76c4299a0fd52c779ea2f0cffeaa6d23"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_PRE_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_PRE_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_PRE_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_PRE_ROOT_READONLY.stdout.json",
+      "sha256": "d95633c06ab117b62e6a4f287335dffb4266c59fcb3c797340ff6e826a813c62"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_THIRD_PRE_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/FORTY_THIRD_PRE_ROOT_REVIEW.json",
+      "sha256": "f6b4f04354cdd61584e2729bb9259e03e46357783decdf26bc06dad152fadb7a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/build_birth_charge_transport_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/build_birth_charge_transport_publication.py",
+      "sha256": "6e68763bb61473845cab6471548aeb31c3e16ee56ae3241ff120761935a590ea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_birth_charge_transport_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/verify_birth_charge_transport_publication.py",
+      "sha256": "09d97c0aa90fbc9eb677ab8c92ab791b007a5b527a55f2d96260432022bf59bf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_birth_charge_transport_final_root.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/verify_birth_charge_transport_final_root.py",
+      "sha256": "e35ee1fbc8a17d2a5c518e66b6921b8fab90a98a3e18b43a47fb5fab6bc11b05"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication-history/BIRTH_CHARGE_TRANSPORT_PUBLICATION_WORKING_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/build_history/BIRTH_CHARGE_TRANSPORT_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "2d55a6f979b9d15607532025b8d21746cc2605e2edaa5c063b8ea8341fb41a5b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication-history/FAILED_NEWLINE_FIX_ATTEMPT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/build_history/FAILED_NEWLINE_FIX_ATTEMPT.md",
+      "sha256": "f226c9a6d1523fec91a56ccd6d1839190a11b86523fcc92ef7838e6e2b03c3dd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication-history/build_birth_charge_transport_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/build_history/build_birth_charge_transport_publication.py",
+      "sha256": "6e68763bb61473845cab6471548aeb31c3e16ee56ae3241ff120761935a590ea"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/birth-charge-transport-publication-history/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+      "publication": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/review/root/build_history/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+      "sha256": "536efbf50f57eb27454b6ea9566f904b25f9f16d8c5627141bd4ca43ad838c61"
+    }
+  ]
+}

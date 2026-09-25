@@ -1,0 +1,133 @@
+{
+  "sealed_utc": "2026-09-24T17:18:35.287454+00:00",
+  "stage": "Released-source POST after independent PRE disclosure",
+  "PRE_dependency": {
+    "path": "PRE_SEAL.json",
+    "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+    "unchanged_members": 34
+  },
+  "root_candidate_sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+  "scope": "Full continuously injected N4-start ensemble mean/variance comparison; separate POST rare-density and frozen-source Lyapunov reconstruction; bounded author-evidence correspondence and exact own two-state control.",
+  "independence_limits": "PRE preserved. Root controls remain author evidence. New trace-density implications were reconstructed only after candidate release. No full-cube numerical reproduction or audit verdict.",
+  "inherited_model_and_effort_retained": true,
+  "delegation_used": false,
+  "author_sources_or_PRE_edited": false,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "8d9dcbec4f90d8acdc5bf2e50c90851a0e1aa51634d8d1c09661eeefed9af327",
+      "bytes": 25738
+    },
+    {
+      "path": "POST_CHECK.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_CHECK.stdout.txt",
+      "sha256": "4f044023af611650884e73af7666294620bea20edfecfd870912184fa0c79c6c",
+      "bytes": 11429
+    },
+    {
+      "path": "POST_CHECK_EXECUTION.json",
+      "sha256": "a51dcc64fdc17f9e03b65cb0475912a5d52683b5ce6b15464f91c6498fb21386",
+      "bytes": 1064
+    },
+    {
+      "path": "POST_EVIDENCE_CHECK.json",
+      "sha256": "4f044023af611650884e73af7666294620bea20edfecfd870912184fa0c79c6c",
+      "bytes": 11429
+    },
+    {
+      "path": "POST_FINAL_VERIFICATION.json",
+      "sha256": "3880eb0a3ee131a47984ffa329ee2361f42ac795c0036f7ad196ec832617a351",
+      "bytes": 975
+    },
+    {
+      "path": "POST_SOURCE_FREEZE.json",
+      "sha256": "58096e6f334a44494c9fc4564a8be6cf01881ad37f54ee468e0ecede395776eb",
+      "bytes": 4448
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "7c788022b1baa52c1c7b3ad7bf6fb843da48fc8fa55b87d51bf120e2ffa9d2f9",
+      "bytes": 7451
+    },
+    {
+      "path": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "b1911b15a9271cedd3f75f5291ce26b145af79ec3d0b81f33ac5daca1e414efd",
+      "bytes": 505
+    },
+    {
+      "path": "POST_sources/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "POST_sources/CONTROL.stdout.txt",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "path": "POST_sources/CONTROL_EXECUTION.json",
+      "sha256": "fa76d60015c0827e61cd7033f5cd926804050cb3267b4c156e1ca454314501aa",
+      "bytes": 245
+    },
+    {
+      "path": "POST_sources/CONTROL_SCOPE.md",
+      "sha256": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab",
+      "bytes": 1761
+    },
+    {
+      "path": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a8e9e3a9df291663235b06bcb5bff26b61b902ca37f6be6058de035aeb043fe2",
+      "bytes": 877
+    },
+    {
+      "path": "POST_sources/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+      "bytes": 21226
+    },
+    {
+      "path": "POST_sources/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "path": "POST_sources/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "path": "POST_sources/PROOF_SEARCH_GOVERNANCE.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "POST_sources/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "path": "POST_sources/SOURCE_PINS.json",
+      "sha256": "632ce908212e6a48321f54e0dfd5c9acccb4ade62bd37797c013159db2ccedfa",
+      "bytes": 4547
+    },
+    {
+      "path": "POST_sources/full_ensemble_energy_controls.py",
+      "sha256": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7",
+      "bytes": 9619
+    },
+    {
+      "path": "SEAL_POST.py",
+      "sha256": "2d0570cf628d6a2e8115f1aa19d5137b3bdd3075287594ff2280c6e9f1daf166",
+      "bytes": 7180
+    },
+    {
+      "path": "post_evidence_check.py",
+      "sha256": "576cc58b8803cd07163363832da5f9c55d07e30f17d7076f9defceed8422c425",
+      "bytes": 15790
+    }
+  ],
+  "immutable_policy": "All members and this seal are read-only. Any later comparison must use separate files and seal."
+}

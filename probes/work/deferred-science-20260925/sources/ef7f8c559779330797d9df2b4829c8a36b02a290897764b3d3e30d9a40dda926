@@ -1,0 +1,61 @@
+{
+  "analytic_review": [
+    "ambient local extensions and restriction to Gauss",
+    "single commuting-electric support halo and strong trace-class integration",
+    "support incidence constants and colored Dyson cluster convergence",
+    "all-Hamiltonian words vanish in minimum matter, retaining at least one formation factor",
+    "constant first insertion from branch isometries",
+    "positive series and connected mean-product error bounds",
+    "Pearson denominator and preparation trace-distance error"
+  ],
+  "at": "2026-09-25T10:22:09.305496+00:00",
+  "complete_reads": [
+    "full PRE argument",
+    "all three scientific/control-verifier sources",
+    "record_run, capture_sources and seal_pre as inert text",
+    "source pins, failed routes, approach registry and process log",
+    "complete compact verifier result and all 24 finite-time means/covariances/diagnostics; omitted display rows 6 through 17 separately retrieved"
+  ],
+  "independently_attributed": [
+    "O(kappa*(delta+kappa)*t^2) colored-series remainder",
+    "Pearson normalization and trace-distance preparation condition",
+    "new physical-tree full-generator diagnostics"
+  ],
+  "kind": "Primary root review of sealed independent PRE47; released POST remains running",
+  "numerical_scope": "All exact primitive and integer matrices and stored floating invariants checked. No fresh numerical propagation or interval enclosure. Large primitive/covariance arrays checked mechanically; not all manually read.",
+  "precise_observable_scope": "Bounded functions of matter charges, including q_x and q_x q_y; not arbitrary matter-diagonal operators with off-diagonal field dependence.",
+  "publication_status": "Unpublished; author47 correspondence POST running. No audit or empirical status.",
+  "replay": "Byte-exact sealed PRE isolated from concurrent POST writes: 0.469215583 seconds, 47 original/source and 40 copied files unchanged; science exact except observed-file count.",
+  "root_priority": "No root kappa-factor proof was sealed before PRE disclosure. Earlier unsealed thoughts about cancellation are not claimed as a result or independent confirmation.",
+  "six_vertex_scope": "New auxiliary tree has A=2, B=4 and two births. It is not the historical A=3, B=3 six-site fixture, which still cannot form a second pair.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_READONLY_EXECUTION.json",
+      "sha256": "a781735a7355fa9b2801e86e8cef2363f249ce2d771974c9965b1b6ac44f4288"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_READONLY.stdout.json",
+      "sha256": "a09871bce617dd0462b18f54cfc581c1fe7056506cf5a9cae62aa2e1e443ba89"
+    }
+  ]
+}

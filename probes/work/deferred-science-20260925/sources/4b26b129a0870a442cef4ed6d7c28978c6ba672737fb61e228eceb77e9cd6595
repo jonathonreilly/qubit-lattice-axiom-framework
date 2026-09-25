@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-09-24T18:29:12.875349+00:00",
+  "scope": "Blind initial full-generator field response. Both primary arguments read completely; unchanged instructions reused after matching hashes. Two explicitly recorded parent-definition reads; no parent numerical runner imported or rerun.",
+  "sources": [
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "AGENTS.md",
+      "snapshot": "sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "sources/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/docs/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "54559e6c6a6871aad27ac5cf899f7f30277ea4777f62b0235134ac05cb90af6a",
+      "bytes": 12303,
+      "coverage": "Necessary primitive definitions only: section 2 through its formation/transport/Gauss conventions; no energy theorem imported."
+    },
+    {
+      "repository": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working",
+      "revision": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8",
+      "path": "docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/docs/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "9e13c659e9a418e9e77e619a3cbd82d371f8219003a92e49fb2cc9ac5f87d6c7",
+      "bytes": 18408,
+      "coverage": "Definition search only: first 130 lines inspected before locating explicit primitive conventions in the star note; no result imported."
+    }
+  ]
+}

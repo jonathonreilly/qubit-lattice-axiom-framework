@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-25T05:55:58.231069+00:00",
+  "source_identities": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/runtime/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "adaptation": "None; exact sealed source."
+    }
+  ],
+  "complete_result_groups": {
+    "identity_rows": 6,
+    "spectral_rows": 4,
+    "integer_rows": 4
+  },
+  "leaf_counts": {
+    "str": 10,
+    "int": 90,
+    "float": 81,
+    "bool": 13
+  },
+  "all_differences": [
+    {
+      "path": "/elapsed_seconds",
+      "original": 0.16115583293139935,
+      "fresh": 0.1740700420923531
+    }
+  ],
+  "scientific_values_exactly_unchanged": true,
+  "elapsed_sec": 0.7297959327697754,
+  "input_fingerprint_sha256": "27e16141755767214fc57fb35a3cb3d22784e7115b86b0738de6f854265b9a6f",
+  "complete_scientific_artifact_sha256": "5fb8e8cd23f84752299b7158d504c67a23e63dd0071894ad562c0e5eca2b5004",
+  "root_reads": "Complete14 result rows, source-preserving note changes and wrapper reviewed. Earlier full scientific source and analytic proof reviews reused at exact identities.",
+  "limits": "Cycle mechanism controls only; not numerical cubic small-coupling proof, independent rerun, physical energy unit or data fit.",
+  "bookkeeping": "One graph-tool path lookup guessed scripts/ instead of docs/audit/scripts/; read-only failure, repaired by reading bound tooling inventory. One earlier template read output was clipped; the needed cache-binding portion was reread in full."
+}

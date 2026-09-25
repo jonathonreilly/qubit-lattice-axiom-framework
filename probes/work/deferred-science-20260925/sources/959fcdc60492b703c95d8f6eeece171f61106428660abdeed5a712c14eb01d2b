@@ -1,0 +1,336 @@
+{
+  "scope": "Find a finite plaquette filling, then verify its energy-power bound exactly.\n\nThe numerical linear program only proposes coefficients. Rational equality\nof every link and the displayed inequality are checked independently of the\noptimizer's feasibility tolerance or optimality report. Root author control.\n",
+  "input_sha256": "ca2ddf80d6dcf27995555fd7458175ddf6e2a8217e97fdcf24eb169c6acf597a",
+  "lambda": 1550,
+  "residual_filling_l1": "646",
+  "vacuum_covariance_lower_multiple_vp": "904",
+  "vacuum_covariance_upper_multiple_vp": "2196",
+  "all_edge_equalities_exact": true,
+  "edges_checked": 525,
+  "optimizer_optimality_required": false,
+  "filling": [
+    {
+      "origin": [
+        -1,
+        -1,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        -1,
+        0,
+        -1
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        -1,
+        0,
+        -1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        -1,
+        0,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "10"
+    },
+    {
+      "origin": [
+        -1,
+        0,
+        0
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-3"
+    },
+    {
+      "origin": [
+        -1,
+        0,
+        0
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        -1,
+        1,
+        -1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        0,
+        -2,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        0,
+        -1,
+        -1
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        0,
+        -1,
+        -1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        0,
+        -1,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "98"
+    },
+    {
+      "origin": [
+        0,
+        -1,
+        0
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-2"
+    },
+    {
+      "origin": [
+        0,
+        -1,
+        1
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "2"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -2
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -1
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "93"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        -1
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "-1"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "23"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-94"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "93"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-1"
+    },
+    {
+      "origin": [
+        0,
+        0,
+        1
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        0,
+        1,
+        -2
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        0,
+        1,
+        -1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "98"
+    },
+    {
+      "origin": [
+        0,
+        1,
+        -1
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "-1"
+    },
+    {
+      "origin": [
+        0,
+        1,
+        0
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-4"
+    },
+    {
+      "origin": [
+        0,
+        1,
+        0
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        1,
+        -1,
+        0
+      ],
+      "mu": 0,
+      "nu": 1,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        1,
+        0,
+        -2
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "-1"
+    },
+    {
+      "origin": [
+        1,
+        0,
+        -1
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "1"
+    },
+    {
+      "origin": [
+        1,
+        0,
+        -1
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "-98"
+    },
+    {
+      "origin": [
+        1,
+        0,
+        0
+      ],
+      "mu": 0,
+      "nu": 2,
+      "coefficient": "-1"
+    },
+    {
+      "origin": [
+        1,
+        0,
+        0
+      ],
+      "mu": 1,
+      "nu": 2,
+      "coefficient": "4"
+    }
+  ],
+  "claim": "t=lambda c_p + sum b_q c_q; triangle/Cauchy imply (lambda-sum|b|)v_p <= Cov(c_p.x,t.x) <= (lambda+sum|b|)v_p.",
+  "not_claimed": "Independent reconstruction, full positive-time power, total all-channel flux, heat or absorbed photon energy.",
+  "elapsed_seconds": 0.014264250174164772
+}

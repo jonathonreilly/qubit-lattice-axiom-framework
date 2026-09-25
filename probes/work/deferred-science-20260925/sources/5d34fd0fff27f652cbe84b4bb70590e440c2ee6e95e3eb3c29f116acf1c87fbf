@@ -1,0 +1,15 @@
+{
+  "verified_utc": "2026-09-24T19:22:59.183671+00:00",
+  "seal_members": {
+    "photon-dispersion-independent/PRE_SEAL.json": 37,
+    "photon-dispersion-independent/POST_SEAL.json": 10,
+    "live-birth-field-response-independent/PRE_SEAL.json": 22,
+    "live-birth-field-response-independent/POST_SEAL.json": 20,
+    "live-birth-field-response-independent/PUBLICATION_COMPARISON_SEAL.json": 22
+  },
+  "all_111_independent_members_verified": true,
+  "complete_PRE_POST_reports_code_and_scientific_rows_read": true,
+  "Part_I_publication_changes": "Leading-order qualifier, conditional arithmetic already checked, printed-number discrepancy preserved; root checked exact edits.",
+  "Part_II_publication_comparison": "Full report and source/cache binding code/results read; all four corrections present, no other PartII change.",
+  "scope": "Selective mathematical checks only; no new data fit or retained audit verdict."
+}

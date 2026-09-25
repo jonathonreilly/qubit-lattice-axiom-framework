@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T08:38:07.559068+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_typeset.py"
+  ],
+  "source_sha256": "f945cfc4a27055f12edf853cd55ff35fdfb515bf5c636e7e728e81c0252aabe1",
+  "recorder_sha256": "c7e8a28d4135e7ab0a42cb4f095f65f283ed7724f72653a43d2faf48552d2f46",
+  "elapsed_seconds": 0.031426416942849755,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "post_typesetting.stdout.txt",
+      "sha256": "9b547beba2e287b78a1cd54591ec95c9a6d28f71dbfa7e31eb99144bb07f1f9a",
+      "bytes": 364
+    },
+    "stderr.txt": {
+      "path": "post_typesetting.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

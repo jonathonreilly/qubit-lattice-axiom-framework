@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/verify_post_evidence.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent",
+  "started_utc": "2026-09-24T21:36:34.833957+00:00",
+  "completed_utc": "2026-09-24T21:36:35.205083+00:00",
+  "elapsed_seconds": 0.3697122500743717,
+  "exit_code": 0,
+  "script_sha256": "ee6518e80f21c75d8667f7375107df849712f1e24a4e6a72c4f7a589d9f12a16",
+  "stdout_sha256": "601ae1fc9e91d2abe4775d83ee4ca8a0677b77fa379f35d75220f8906ee049f7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "result_sha256": "54233e63ba8ff662a49511d77462df230c650f6ac174b8b2eb9b01ad3c434854"
+}

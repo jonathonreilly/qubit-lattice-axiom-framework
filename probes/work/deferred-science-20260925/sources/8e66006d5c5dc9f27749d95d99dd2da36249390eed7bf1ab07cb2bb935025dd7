@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-09-24T17:30:47.072062+00:00",
+  "base_revision": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+  "files": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/scripts/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.py",
+      "snapshot": "PUBLICATION_sources/worktree/scripts/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.py",
+      "sha256": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b",
+      "bytes": 11445
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+      "bytes": 36767
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+      "bytes": 24623
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/outputs/full_original_cube_energy_20260924/FULL_ENSEMBLE_ENERGY_RESULTS.json",
+      "snapshot": "PUBLICATION_sources/worktree/outputs/full_original_cube_energy_20260924/FULL_ENSEMBLE_ENERGY_RESULTS.json",
+      "sha256": "603bf4ed4fcb27c1c53d3cbf85a962880a1c6ef38a3e7f2375e1b6ab4a82d35e",
+      "bytes": 19225
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/logs/runner-cache/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.txt",
+      "snapshot": "PUBLICATION_sources/worktree/logs/runner-cache/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.txt",
+      "sha256": "2803e5776faaa9ddf4e33648596386e83021264337c861f52e25b10b5aca93e9",
+      "bytes": 19626
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/AGENTS.md",
+      "snapshot": "PUBLICATION_sources/worktree/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "snapshot": "PUBLICATION_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "snapshot": "PUBLICATION_sources/external/TENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "f0b6251cbf836747c41ded29d756ae4e2b37ee55c6edd2c4bf2a9e714df7fa5a",
+      "bytes": 838
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "snapshot": "PUBLICATION_sources/external/TENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "edf4b8933545b9ac667a66d21fc7552377b84c5154449e44947c1e86aad970ee",
+      "bytes": 21056
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TENTH_PRIMARY_ROOT_VERIFICATION.json",
+      "snapshot": "PUBLICATION_sources/external/TENTH_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "9fd6f264baf5bd4f1e4b29e7f6b4fa183eb84d3869d2d14b6d280babbe3a7bd8",
+      "bytes": 750
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/mixed_preparation_controls.py",
+      "snapshot": "PUBLICATION_sources/author_helpers/mixed_preparation_controls.py",
+      "sha256": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+      "bytes": 8684
+    }
+  ],
+  "PRE_seal_sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+  "POST_seal_sha256": "72d73d581716f85e7f47521aa7acfc40707b46a8bcc119933dcc0d8eeaf975fa",
+  "scope": "Final publication source/dependency/control/runtime comparison; no primary execution or publication edit."
+}

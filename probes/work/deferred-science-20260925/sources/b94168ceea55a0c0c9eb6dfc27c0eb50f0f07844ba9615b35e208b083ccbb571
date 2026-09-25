@@ -1,0 +1,35 @@
+{
+  "all_288_publication_Q_coefficients_equal_to_independent_reconstruction": true,
+  "all_edge_chord_and_charge_order_metadata_equal_to_independent_reconstruction": true,
+  "comparison_source_sha256": "254ad2cbfeeb6f152fe6871301c77205259258443aaa499696f0062e8e48493d",
+  "complete_execution_stdout_final_result_equals_published_result": true,
+  "entire_multiplier_shift_list_equal": true,
+  "entire_publication_certificate_list_equal_to_checked_root_witness": true,
+  "every_publication_sign_rank_and_coefficient_bound_equal_to_independent_results": true,
+  "reported_execution_elapsed_sec": 49.27271795272827,
+  "reported_execution_exit_code": 0,
+  "reported_execution_status": "ok",
+  "reported_execution_stderr": "",
+  "root_source_bytes_unchanged": true,
+  "scope": "The complete released execution record was inspected and bound to matching source/result/witness bytes; no root discovery code was executed by this checker and cache machinery is not separately audited.",
+  "sources": [
+    {
+      "bytes": 22360128,
+      "sha256": "efed9ff85c39626b132bb897a743bd77d2117757249a9becfcb828f51358cdec",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/RATIONAL_LAURENT_CERTIFICATES.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/outputs/sharp_rotor_cube_energy_tail_20260924/RATIONAL_LAURENT_CERTIFICATES.json"
+    },
+    {
+      "bytes": 4844,
+      "sha256": "afdf975511fd04331d91b51829e2d80078b2ea200b60a9cdd11be6f44742b87b",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/SHARP_TAIL_RESULTS.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/sharp-rotor-tail-publication/outputs/sharp_rotor_cube_energy_tail_20260924/SHARP_TAIL_RESULTS.json"
+    },
+    {
+      "bytes": 7112,
+      "sha256": "d997161013d44532da390c40c6200dbe39112904065351b94f12f53e0d4cd2a1",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/rotor-upper-tail-independent/released_sources/SECOND_PUBLICATION_CACHE_EXECUTION.json",
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SECOND_PUBLICATION_CACHE_EXECUTION.json"
+    }
+  ]
+}

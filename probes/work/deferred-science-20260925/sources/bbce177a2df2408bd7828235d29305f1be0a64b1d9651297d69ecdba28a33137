@@ -1,0 +1,41 @@
+--- successful_attempt01
++++ successful_attempt02
+@@ -275,6 +275,19 @@
+         a = (0, 0, 0)
+         common = neighbours[a] & neighbours[c]
+         non_tree, basis = cycles(graph)
++        for axis in range(3):
++            winding = [0]*len(edges)
++            for coordinate in range(lengths[axis]):
++                v, w = [0, 0, 0], [0, 0, 0]
++                v[axis] = coordinate
++                w[axis] = (coordinate+1) % lengths[axis]
++                v, w = tuple(v), tuple(w)
++                e = edge_index[frozenset((v, w))]
++                winding[e] += 1 if edges[e][0] == v else -1
++            assert not any(divergence(winding, graph))
++            coordinates = [winding[e] for e in non_tree]
++            assert tuple(winding) == tuple(sum(z*v[e] for z, v in zip(coordinates, basis))
++                                           for e in range(len(edges)))
+         test_cycle = tuple(sum((i % 3-1)*v[e] for i, v in enumerate(basis))
+                            for e in range(len(edges)))
+         assert not any(divergence(test_cycle, graph))
+@@ -302,6 +315,9 @@
+                             return_outputs[(q4, e4)] += 1
+             expected = local_return_count(neighbours[a], neighbours[c], occupied_B)
+             assert direct == expected == sum(return_outputs.values())
++            cycle_displacements = [sum(abs(e4[e]-field[e]) for e in non_tree)
++                                   for q4, e4 in return_outputs]
++            assert max(cycle_displacements, default=0) <= 4
+             if m == 0:
+                 assert electric_D(q, (0,)*len(edges), graph) == 0
+                 assert return_outputs[(q, field)] == 36-len(common)
+@@ -313,6 +329,8 @@
+                          'ungated_sum_E_squared': sum(x*x for x in field),
+                          'cycle_rank': len(basis), 'physical_return_paths': direct,
+                          'unchanged_charge_electric_return_paths': return_outputs[(q, field)],
++                         'max_cycle_coordinate_displacement_l1': max(cycle_displacements, default=0),
++                         'three_winding_cycles_exactly_reconstructed': True,
+                          'distinct_charge_electric_return_words': len(return_outputs),
+                          'gauss_checks_exact': True, 'actual_gate_retained': True})
+     return rows

@@ -1,0 +1,57 @@
+{
+  "base_revision": "63c82141301f5fe3828b1ed4d385bd9696628e7b",
+  "branch": "codex/mobile-record-coincidence-and-count-identifiability-20260925",
+  "note": "docs/ORIGINAL_COINCIDENCES_AND_NUMBER_ENERGY_IDENTIFIABILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/original_coincidences_and_number_energy_identifiability_2026_09_25.py",
+  "packet": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925",
+  "result": "outputs/count_interpretation_20260925/COUNT_INTERPRETATION_RESULTS.json",
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/coincidence/coincidence_controls.py",
+    ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/number_offset/number_offset_controls.py"
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/two-detector-coincidence-personal/coincidence_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/coincidence/coincidence_controls.py",
+      "sha256": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+      "adaptation": "None; exact author source bytes."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-personal/number_offset_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/number_offset/number_offset_controls.py",
+      "sha256": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+      "adaptation": "None; exact author source bytes."
+    }
+  ],
+  "parent_paths": [
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+  ],
+  "files_sha256": {
+    "docs/ORIGINAL_COINCIDENCES_AND_NUMBER_ENERGY_IDENTIFIABILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md": "ce5fb4cb9e4196cfa4c1261c1e7d96e13671acc75a98fceacd07df75e57a4109",
+    "scripts/original_coincidences_and_number_energy_identifiability_2026_09_25.py": "acb60f75ae0bc45c054c5867402ab6e9a2b98b322918b05bcfc64f43d1733523",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "99c9f0cdd6f30caa733f75a3c32ffadb3c5264458c0159f1df31130c5b704c6b",
+    "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+    "docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md": "9658836c90ceead6363e4cf91e6cdf2039be4e3587c009dae2447ae79026ad34",
+    ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/coincidence/coincidence_controls.py": "2e0a7d25d1d261a0c4bf235704fba7d2cb97e755275052a59453a8f4f40da103",
+    ".claude/science/physics-loops/mobile-record-count-interpretation-20260925/runtime/number_offset/number_offset_controls.py": "8b57fd1bc2d0ab47f00c49f91fb83f31108894cbda5ccf414050ef7011251724",
+    "outputs/count_interpretation_20260925/COUNT_INTERPRETATION_RESULTS.json": "3ef652ef3ab22f246bab51d91c091ff4d46c703c9d76fdf3b868dc5d5750f8a8",
+    "logs/runner-cache/original_coincidences_and_number_energy_identifiability_2026_09_25.txt": "a305bbc1803edc8a96af5f723f3094526928e9c470425ff31ab24f6ae420cfe1"
+  },
+  "frozen_at": "2026-09-25T02:14:35.330976+00:00",
+  "primary_execution": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/COUNT_INTERPRETATION_PUBLICATION_CACHE_EXECUTION.json",
+    "sha256": "d1252aea107ea5f4e1e99b510581ac8ef0e3f967b1256222aeb950081f096533"
+  }
+}

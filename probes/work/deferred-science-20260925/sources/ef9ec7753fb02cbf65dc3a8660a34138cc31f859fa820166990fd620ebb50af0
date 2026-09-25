@@ -1,0 +1,277 @@
+{
+  "graphs": [
+    {
+      "A": 4,
+      "B": 4,
+      "angle_kernel_at_u_pi_over_2_times_loop_divided_by_kappa": [
+        -24,
+        0
+      ],
+      "checks": "exact integer sparse-word equalities passed; no state truncation or floating eigensolver used",
+      "coherent_resolved_fixed_edge_joint_source_difference_hs_squared": 8,
+      "coherent_resolved_fixed_edge_reduced_field_source_equal": true,
+      "common_neighbor_histogram": {
+        "2": 6
+      },
+      "degree": 3,
+      "dist2_A_pairs": 6,
+      "edges": 12,
+      "first_incorrect_frozen_A_charge_example_e_sigma_d_correct_wrong": [
+        0,
+        -1,
+        4,
+        0,
+        2
+      ],
+      "graph": "cube",
+      "incorrect_frozen_A_charge_detected_branch_count": 8,
+      "initial_Wilson_second_coefficient_gamma_divided_by_kappa": 24,
+      "loop_electric_variance_rate_divided_by_kappa": 32,
+      "loop_norm_squared": 4,
+      "loop_transverse_mean_drift": 0,
+      "loss_rate_divided_by_kappa": 48,
+      "nonzero_postbirth_primitive_jump_commutation_checks": 4,
+      "per_edge_electric_covariance_rate_divided_by_kappa": 8,
+      "per_edge_electric_drift_divided_by_kappa": -4,
+      "primitive_H4_initial_scalar": -84,
+      "primitive_H4_initial_support": 13,
+      "psi_zero_plus_i_loop": {
+        "W_0": [
+          "0",
+          "-1/2"
+        ],
+        "W_double_prime_0_full": [
+          "-32",
+          "8"
+        ],
+        "W_double_prime_0_hamiltonian_only": [
+          "16",
+          "8"
+        ],
+        "W_prime_0": [
+          "2",
+          "0"
+        ],
+        "parameters": {
+          "K": 1,
+          "delta": 1,
+          "kappa": 1
+        }
+      },
+      "side": null,
+      "simple_unoriented_four_cycles": 6,
+      "vertices": 8,
+      "word_derivatives": [
+        {
+          "A_l": 4,
+          "field": [],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -96,
+          "second_real_support": 11
+        },
+        {
+          "A_l": 12,
+          "field": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -288,
+          "second_real_support": 11
+        },
+        {
+          "A_l": 16,
+          "field": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -2
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              -2
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -384,
+          "second_real_support": 11
+        }
+      ]
+    },
+    {
+      "A": 108,
+      "B": 108,
+      "angle_kernel_at_u_pi_over_2_times_loop_divided_by_kappa": [
+        -72,
+        0
+      ],
+      "checks": "exact integer sparse-word equalities passed; no state truncation or floating eigensolver used",
+      "coherent_resolved_fixed_edge_joint_source_difference_hs_squared": 50,
+      "coherent_resolved_fixed_edge_reduced_field_source_equal": true,
+      "common_neighbor_histogram": {
+        "1": 324,
+        "2": 648
+      },
+      "degree": 6,
+      "dist2_A_pairs": 972,
+      "edges": 648,
+      "first_incorrect_frozen_A_charge_example_e_sigma_d_correct_wrong": [
+        0,
+        -1,
+        5,
+        0,
+        2
+      ],
+      "graph": "periodic_6x6x6_cubic_torus",
+      "incorrect_frozen_A_charge_detected_branch_count": 32,
+      "initial_Wilson_second_coefficient_gamma_divided_by_kappa": 120,
+      "loop_electric_variance_rate_divided_by_kappa": 80,
+      "loop_norm_squared": 4,
+      "loop_transverse_mean_drift": 0,
+      "loss_rate_divided_by_kappa": 6480,
+      "nonzero_postbirth_primitive_jump_commutation_checks": 10,
+      "per_edge_electric_covariance_rate_divided_by_kappa": 20,
+      "per_edge_electric_drift_divided_by_kappa": -10,
+      "primitive_H4_initial_scalar": -66744,
+      "primitive_H4_initial_support": 1297,
+      "psi_zero_plus_i_loop": {
+        "W_0": [
+          "0",
+          "-1/2"
+        ],
+        "W_double_prime_0_full": [
+          "-224",
+          "8"
+        ],
+        "W_double_prime_0_hamiltonian_only": [
+          "16",
+          "8"
+        ],
+        "W_prime_0": [
+          "2",
+          "0"
+        ],
+        "parameters": {
+          "K": 1,
+          "delta": 1,
+          "kappa": 1
+        }
+      },
+      "side": 6,
+      "simple_unoriented_four_cycles": 648,
+      "vertices": 216,
+      "word_derivatives": [
+        {
+          "A_l": 4,
+          "field": [],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -480,
+          "second_real_support": 27
+        },
+        {
+          "A_l": 12,
+          "field": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              18,
+              -1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -1440,
+          "second_real_support": 27
+        },
+        {
+          "A_l": 16,
+          "field": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              -3
+            ],
+            [
+              18,
+              -1
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              30,
+              -2
+            ],
+            [
+              31,
+              2
+            ]
+          ],
+          "field_only_D_wrong_jump_coefficient": 0,
+          "resolved_coherent_equal": true,
+          "second_jump_imaginary_coefficient": -1920,
+          "second_real_support": 27
+        }
+      ]
+    }
+  ],
+  "overall": "all exact checks passed",
+  "scope": "Independent primitive finite-word corroboration of initial rotor identities only; analytic proof supplies graph/state generality. No photon propagation or finite-time damping is tested.",
+  "script_sha256": "c82c5ad022127307a0d818f6f7f5db3eca1ac9beb3ee2e36f701b31d1086408c",
+  "source_pins_sha256": "4b26b129a0870a442cef4ed6d7c28978c6ba672737fb61e228eceb77e9cd6595"
+}

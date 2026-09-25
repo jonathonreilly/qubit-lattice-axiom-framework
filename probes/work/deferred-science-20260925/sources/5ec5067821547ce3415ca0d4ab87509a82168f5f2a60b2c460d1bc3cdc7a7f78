@@ -1,0 +1,9 @@
+{
+  "status": "sealed and verified",
+  "member_count": 22,
+  "PRE_sha256": "c0c69dcc1481485c0257769977217729d0c29acca91b30dffa5c7b0f4e8dd1f6",
+  "PRE_SEAL_sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+  "SOURCE_PINS_sha256": "e1d31f7110202da90887290645df65e8f6f4ce151d9f7643aa850a574a2c01e2",
+  "control_source_sha256": "600f2abcd718c2c348d69039135e91d9a419bd2b0403316ce4e20eeabbcf592b",
+  "control_result_sha256": "640f6e62da99070fe780ec6807a288073b55622d1aefabb4d4db9b15ee065c37"
+}

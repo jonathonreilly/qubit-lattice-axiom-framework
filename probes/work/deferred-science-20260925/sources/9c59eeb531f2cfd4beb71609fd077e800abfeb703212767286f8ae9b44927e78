@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-25T05:39:58.420158+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/PHOTON_OBSERVATION_AND_LIVE_BIRTH_ROOT_DERIVATION.md",
+      "sha256": "15c48725d54c95abe43de50de23b62fbf9d983029ee2152c125f361a9ca316ba",
+      "role": "Prior initial-noise result and refreshed publication identity, not a new claim here."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+      "role": "Prior initial-noise result and refreshed publication identity, not a new claim here."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PR9124_SOURCE_REFRESH_0530.json",
+      "sha256": "85871b6b7040fa334357c4abe8e4f42467ff2dd22b2ada617b7e9c9011179b22",
+      "role": "Prior initial-noise result and refreshed publication identity, not a new claim here."
+    }
+  ],
+  "independent39_not_read": true,
+  "physical_identifications_adopted": false
+}

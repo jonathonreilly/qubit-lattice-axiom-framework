@@ -1,0 +1,26 @@
+{
+  "kind": "bounded_selective_averaged_variance_post",
+  "sealed_at_utc": "2026-09-24T14:56:48.535751+00:00",
+  "files": {
+    "POST.md": "5a53e72b0efa31bfd73d3d94246378a7748cf0e71f7f1f28a3ef374334e5f9d5",
+    "POST_SOURCE_PINS.json": "0861982f24d0e603e7bdcb9c586c280d4f58c284cf9a3177e4b5ca8683b5a136",
+    "post_selective_checks.py": "cbc3e1b47693108d556448bbffee54472ffb51c52aa72b74386c6d28e42e92ee",
+    "POST_SELECTIVE_RESULTS.json": "ca1fe7841addb42f2fc856e1b08ab23714c25ae233dc6728d36e8cca797bc126",
+    "POST_SELECTIVE_CHECKS.log": "ca1fe7841addb42f2fc856e1b08ab23714c25ae233dc6728d36e8cca797bc126"
+  },
+  "preserved_pre_sha256": "57819426fec612dcb000612dcb8419cca34d3538904dcaefea13fb4820181d8e",
+  "preserved_pre_seal_sha256": "35101d25eaf758e0d1f82abcfa6eda7e86779bd5f5d16cca6ffcb514b1924450",
+  "author_proof_sha256": "00e05d4918d58840e78f9bd3fb4326dcfb12ade7e5a2db8ca18d1dfc39f63eb0",
+  "author_seal_sha256": "cfbddc92c657bbeb09b4ea3ca01d1b75e0b6099fd2d820e332501506cabf3cbe",
+  "author_control_seal_sha256": "d4049a78d41fb775964aab56094e497f5d15e3901146645dfd7c64ec416a79d8",
+  "material_discrepancies_found": [],
+  "conclusion": "The frozen conditional time-integrated variance lower bound is supported. The rectangular Sylvester inverse is uniform in operator norm, the probability coefficient is kappa/2, and actual original words give loss 8 and squared loss-action norm 16 for each mark.",
+  "new_control_exit_code": 0,
+  "new_control_complete_log_inspected": true,
+  "pre_unchanged": true,
+  "author_sources_read_only_after_pre_seal": true,
+  "new_post_control_is_not_pre_evidence": true,
+  "pre_enhancements_not_relabelled_as_root_before_disclosure": true,
+  "delegation_used": false,
+  "publication_or_formal_audit_status_changed": false
+}

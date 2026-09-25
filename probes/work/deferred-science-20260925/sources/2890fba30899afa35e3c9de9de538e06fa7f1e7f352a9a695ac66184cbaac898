@@ -1,0 +1,9 @@
+{
+  "prepared_utc": "2026-09-25T09:45:10.672282+00:00",
+  "note_sha256": "9a83191276a1a0380158ef88961c1d36b0d82c9cd645210739c999c4568f464a",
+  "complete_personal_proof_and_code_read": true,
+  "all_six_compact_output_groups_read": true,
+  "raw_sets": "Mechanically checked by separate full-graph enumeration; not all manually read.",
+  "independent_check_claimed": false,
+  "required_repairs": []
+}

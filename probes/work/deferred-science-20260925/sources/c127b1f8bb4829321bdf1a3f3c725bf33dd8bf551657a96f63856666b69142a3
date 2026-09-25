@@ -1,0 +1,569 @@
+{
+  "scope": "Bounded publication correspondence42+43; no primary/scientific rerun and no historical writer execution",
+  "verifier_sha256": "ed893670e8788efff968bb0f412513cc5d9caae04ad385577f9b6dca4779982c",
+  "source_origins_checked": 104,
+  "own43_files_unchanged": 80,
+  "complete_embedded_proofs": [
+    {
+      "original_sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "complete_embedded_argument_exact": true,
+      "replacements": [
+        {
+          "old": "No independent check\nof this candidate is claimed.",
+          "new": "Separate scoped PRE and POST checks are complete; no retained audit status\nis claimed.",
+          "occurrences": 1
+        },
+        {
+          "old": "h=KD-2delta Q, the original",
+          "new": "h=KD-2delta Q, where Q is the sum of S_xy^* S_xy over unordered\nOVERLAPPING A-star pairs, S_xy=F_y F_x P, the original",
+          "occurrences": 1
+        },
+        {
+          "old": "On the full output span define",
+          "new": "On the closed span of all individual branch images define",
+          "occurrences": 1
+        },
+        {
+          "old": "On the output span let Z be q_a restricted to\nthat span",
+          "new": "On that individual-branch span let Z be q_a restricted to\nthat span (not necessarily the range of the coherent output isometry)",
+          "occurrences": 1
+        },
+        {
+          "old": "Consequently the first time is exponential with that rate when kappa>0;",
+          "new": "Consequently the first time is exponential when its total rate Gamma_0>0;",
+          "occurrences": 1
+        },
+        {
+          "old": "If kappa=0 there is no event to condition on.",
+          "new": "If Gamma_0=0 there is no event to condition on.",
+          "occurrences": 1
+        },
+        {
+          "old": "There is no independent\ncandidate42 result yet, and no result from independent40/41 was read for this\ncandidate.",
+          "new": "This historical author seal preceded the separate candidate42 checks.\nNo result from independent40/41 was read for this candidate.",
+          "occurrences": 1
+        }
+      ],
+      "heading_increment": 2
+    },
+    {
+      "original_sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "complete_embedded_argument_exact": true,
+      "replacements": [
+        {
+          "old": "This author packet is not independently\nchecked at its creation and is not an audit disposition or an observed particle\nprediction.",
+          "new": "This author packet was not independently checked at its creation. Separate\nscoped PRE and POST checks are now complete; they confer no retained audit\nstatus or observed particle prediction.",
+          "occurrences": 1
+        },
+        {
+          "old": "The denominators follow from the five distinct outgoing matter words for each",
+          "new": "An actually occurring conditioned mark requires kappa>0. At kappa=0 these\nnormalized bare-B vectors still define supplied states, but no such event occurs.\nThe denominators follow from the five distinct outgoing matter words for each",
+          "occurrences": 1
+        }
+      ],
+      "heading_increment": 2
+    }
+  ],
+  "runtime_correspondence": [
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "exact_original_bytes": true,
+      "functions": [
+        "geometry",
+        "gauss",
+        "birth",
+        "moments",
+        "short_link",
+        "main"
+      ],
+      "imports": [
+        "from collections import Counter",
+        "from fractions import Fraction as F",
+        "from itertools import product",
+        "from pathlib import Path",
+        "import hashlib, json, time"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "exact_original_bytes": true,
+      "functions": [
+        "hop",
+        "pair_column_target",
+        "main"
+      ],
+      "imports": [
+        "from pathlib import Path",
+        "from collections import Counter",
+        "import hashlib, json, time",
+        "from birth_geometry import geometry, gauss, birth"
+      ]
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "exact_original_bytes": true,
+      "functions": [
+        "geometry",
+        "gauss",
+        "birth",
+        "moments",
+        "short_link",
+        "main"
+      ],
+      "imports": [
+        "from collections import Counter",
+        "from fractions import Fraction as F",
+        "from itertools import product",
+        "from pathlib import Path",
+        "import hashlib, json, time"
+      ]
+    }
+  ],
+  "complete_fresh_scientific_payload_comparisons": [
+    {
+      "label": "charge",
+      "exact_nontiming_scalar_leaves": 186008,
+      "only_difference": {
+        "path": [
+          "elapsed_seconds"
+        ],
+        "historical": 3.940266374964267,
+        "fresh": 3.5472362500149757
+      },
+      "summary": {
+        "counts": {
+          "primitive_paths": 8448,
+          "negative_mark_ambiguity_controls": 4224,
+          "edge_marks": 852,
+          "charge_moment_controls": 4260,
+          "complex_structure_factor_controls": 852
+        },
+        "summaries": [
+          {
+            "L": 2,
+            "n_A": 4,
+            "degree": 3,
+            "edge_marks": 12,
+            "resolved_rate_per_edge_sign_in_kappa": 2,
+            "coherent_rate_per_edge_in_kappa": 4,
+            "total_first_birth_rate_in_kappa": 48,
+            "orientation_averaged_dipole_second_moment": null,
+            "selected_wavevector_structure_factor": "8/3"
+          },
+          {
+            "L": 4,
+            "n_A": 32,
+            "degree": 6,
+            "edge_marks": 192,
+            "resolved_rate_per_edge_sign_in_kappa": 5,
+            "coherent_rate_per_edge_in_kappa": 10,
+            "total_first_birth_rate_in_kappa": 1920,
+            "orientation_averaged_dipole_second_moment": [
+              [
+                "2/3",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "2/3",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "2/3"
+              ]
+            ],
+            "selected_wavevector_structure_factor": "4"
+          },
+          {
+            "L": 6,
+            "n_A": 108,
+            "degree": 6,
+            "edge_marks": 648,
+            "resolved_rate_per_edge_sign_in_kappa": 5,
+            "coherent_rate_per_edge_in_kappa": 10,
+            "total_first_birth_rate_in_kappa": 6480,
+            "orientation_averaged_dipole_second_moment": [
+              [
+                "2/3",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "2/3",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "2/3"
+              ]
+            ],
+            "selected_wavevector_structure_factor": "8/3"
+          }
+        ],
+        "complete_primitive_rows": 8448,
+        "complete_moment_rows": 4260
+      },
+      "old_sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "fresh_sha256": "2066944750f5779f7b95e2a03aafe44a1969205dd7af526c79abd16b6686d424"
+    },
+    {
+      "label": "transport",
+      "exact_nontiming_scalar_leaves": 17758,
+      "only_difference": {
+        "path": [
+          "elapsed_seconds"
+        ],
+        "historical": 0.08149287500418723,
+        "fresh": 0.06772220903076231
+      },
+      "summary": {
+        "sides": [
+          4,
+          6
+        ],
+        "relevant_rows": [
+          80,
+          95
+        ],
+        "matched_paths": [
+          2,
+          2
+        ],
+        "exact_coefficients": [
+          {
+            "resolved_minus": "16/5",
+            "resolved_plus": "0",
+            "coherent": "8/5"
+          },
+          {
+            "resolved_minus": "16/5",
+            "resolved_plus": "0",
+            "coherent": "8/5"
+          }
+        ]
+      },
+      "old_sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "fresh_sha256": "adfe796cc6d20c13fa1f6c4ab7e868497d322330c695d2e64ff126fccc00c750"
+    }
+  ],
+  "declared_inputs": [
+    {
+      "path": "docs/ORIGINAL_BIRTH_CHARGE_AND_GROUPING_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "e77b835457f41a17131ac9038cff3538cf3affd73a13fac64dc21465f4891c44",
+      "bytes": 34549
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604
+    }
+  ],
+  "input_fingerprint_sha256": "deaba64df4916d8b08e577bb8105a0d9373a6a6fbdd01cc7250ed42c43c12fbd",
+  "cache_sha256": "38612d69d7f66fe67fefd556c96c245ed91b85bd0b0c16b29e13fcd75c93b07c",
+  "exact_cache_bytes_reconstructed": true,
+  "cache_identity_and_execution_status": "fresh",
+  "primary_external_seconds": 3.840963840484619,
+  "primary_internal_seconds": 3.737793000182137,
+  "publication_result_sha256": "14a616466161eef6e6492632ffa81788d6a560afd99719339fb81600c0611af9",
+  "lexical_declared_input_tokens": [
+    [
+      "docs",
+      16877,
+      16777231,
+      463730619,
+      141536,
+      1790326590573655273,
+      1790326590573655273
+    ],
+    [
+      "docs/ORIGINAL_BIRTH_CHARGE_AND_GROUPING_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      33188,
+      16777231,
+      463795207,
+      34549,
+      1790326590573743022,
+      1790326590573743022
+    ],
+    [
+      "docs",
+      16877,
+      16777231,
+      463730619,
+      141536,
+      1790326590573655273,
+      1790326590573655273
+    ],
+    [
+      "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      33188,
+      16777231,
+      463733021,
+      10953,
+      1790326458761218048,
+      1790326458761218048
+    ],
+    [
+      "docs",
+      16877,
+      16777231,
+      463730619,
+      141536,
+      1790326590573655273,
+      1790326590573655273
+    ],
+    [
+      "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      33188,
+      16777231,
+      463733015,
+      14902,
+      1790326458760177424,
+      1790326458760177424
+    ],
+    [
+      "docs",
+      16877,
+      16777231,
+      463730619,
+      141536,
+      1790326590573655273,
+      1790326590573655273
+    ],
+    [
+      "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      33188,
+      16777231,
+      463732036,
+      16764,
+      1790326458637717462,
+      1790326458637717462
+    ],
+    [
+      ".claude",
+      16877,
+      16777231,
+      463716722,
+      192,
+      1790326456929659615,
+      1790326456929659615
+    ],
+    [
+      ".claude/science",
+      16877,
+      16777231,
+      463716749,
+      544,
+      1790326457845277810,
+      1790326457845277810
+    ],
+    [
+      ".claude/science/physics-loops",
+      16877,
+      16777231,
+      463716862,
+      9152,
+      1790326590573827231,
+      1790326590573827231
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925",
+      16877,
+      16777231,
+      463795208,
+      96,
+      1790326590573867272,
+      1790326590573867272
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime",
+      16877,
+      16777231,
+      463795209,
+      160,
+      1790326590574142897,
+      1790326590574142897
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py",
+      33188,
+      16777231,
+      463795210,
+      7604,
+      1790326590573987731,
+      1790326590573987731
+    ],
+    [
+      ".claude",
+      16877,
+      16777231,
+      463716722,
+      192,
+      1790326456929659615,
+      1790326456929659615
+    ],
+    [
+      ".claude/science",
+      16877,
+      16777231,
+      463716749,
+      544,
+      1790326457845277810,
+      1790326457845277810
+    ],
+    [
+      ".claude/science/physics-loops",
+      16877,
+      16777231,
+      463716862,
+      9152,
+      1790326590573827231,
+      1790326590573827231
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925",
+      16877,
+      16777231,
+      463795208,
+      96,
+      1790326590573867272,
+      1790326590573867272
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime",
+      16877,
+      16777231,
+      463795209,
+      160,
+      1790326590574142897,
+      1790326590574142897
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py",
+      33188,
+      16777231,
+      463795211,
+      6164,
+      1790326590574086022,
+      1790326590574086022
+    ],
+    [
+      ".claude",
+      16877,
+      16777231,
+      463716722,
+      192,
+      1790326456929659615,
+      1790326456929659615
+    ],
+    [
+      ".claude/science",
+      16877,
+      16777231,
+      463716749,
+      544,
+      1790326457845277810,
+      1790326457845277810
+    ],
+    [
+      ".claude/science/physics-loops",
+      16877,
+      16777231,
+      463716862,
+      9152,
+      1790326590573827231,
+      1790326590573827231
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925",
+      16877,
+      16777231,
+      463795208,
+      96,
+      1790326590573867272,
+      1790326590573867272
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime",
+      16877,
+      16777231,
+      463795209,
+      160,
+      1790326590574142897,
+      1790326590574142897
+    ],
+    [
+      ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py",
+      33188,
+      16777231,
+      463795212,
+      7604,
+      1790326590574178897,
+      1790326590574178897
+    ]
+  ],
+  "graph_manifest_delta": {
+    "old_nodes_unchanged": 6667,
+    "added_node": "original_birth_charge_and_grouping_dynamics_bounded_theorem_note_2026-09-25",
+    "added_edges": 3,
+    "new_node": {
+      "deps_hash": "bdb2639dba99",
+      "out_degree": 3
+    },
+    "dependencies": [
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "formation_balance_and_unsaturated_dark_states_bounded_theorem_note_2026-09-24"
+    ],
+    "old_node_count": 6667,
+    "new_node_count": 6668,
+    "old_edge_count": 14678,
+    "new_edge_count": 14681,
+    "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "scope": "Exact frozen topology-manifest delta; no graph rebuild or audit verdict"
+  },
+  "root_receipt_cross_check": {
+    "leaves": true,
+    "graph": true,
+    "cache_status": true
+  },
+  "preserved_root_packaging_failures": [
+    "Unnecessary wrapper newline correction stopped at assertion; source already correct and unchanged.",
+    "Manifest writer invoked before graph build completed; failed without output manifest modification.",
+    "Initial runner-cache path lookup used docs/audit/scripts instead of scripts; read-only lookup failure."
+  ],
+  "author42_timestamp_scope": "Original started_before_utc denotes an end time; copied unchanged.",
+  "proof_and_limit_judgments": "Reported separately in PUBLICATION_COMPARISON.md; no retained verdict inferred."
+}

@@ -1,0 +1,139 @@
+{
+  "phase": "Released-source POST; preserves blind PRE",
+  "sealed_utc": "2026-09-25T03:52:04.508306+00:00",
+  "report": "POST.md",
+  "report_sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c",
+  "source_manifest": "POST_SOURCE_PINS.json",
+  "source_manifest_sha256": "3954069f7a52c4e634db6da187e0223a5dcb38d85711bd7073321e28e7758aeb",
+  "PRE_seal_sha256": "0d420d0263cb53ed341d79f361cfc7ee2dae9125f976b6715216bd48a5cd8384",
+  "author_seal_sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c",
+      "bytes": 13958
+    },
+    {
+      "path": "POST_FINAL_VERIFICATION.json",
+      "sha256": "82328489d16cc67b00ec17b68a95a39cda6438f03245a7c019c0076e6bd1919c",
+      "bytes": 960
+    },
+    {
+      "path": "POST_FORMAT_REPAIR.diff",
+      "sha256": "140d51bd221bd2490729d9529ed5a47c7c9cf5b841f916bb7ed62da6b5a9dadd",
+      "bytes": 2031
+    },
+    {
+      "path": "POST_READ_AND_FAILURE_LOG.md",
+      "sha256": "a330c30e457d23e3db3dc322ac34d352b599952d7ed85502f4f6a939198126b3",
+      "bytes": 3758
+    },
+    {
+      "path": "POST_ROOT_LOCAL_r1.tsv",
+      "sha256": "96a428af33ad44f244a9e36fe12dbfc6550fda6c61c80f1e7482f97adc81430b",
+      "bytes": 2019
+    },
+    {
+      "path": "POST_ROOT_LOCAL_r2.tsv",
+      "sha256": "fc826fdcc47d97628d7f43cfcc1d964392eabe9337f37d339a5ae907dd2ed2b1",
+      "bytes": 2049
+    },
+    {
+      "path": "POST_ROOT_REMAINING_ROWS.json",
+      "sha256": "5aded972c53d3c81c20ea0e52a1d463a31e7e8714bca5be347d762eb7821e288",
+      "bytes": 12148
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "3954069f7a52c4e634db6da187e0223a5dcb38d85711bd7073321e28e7758aeb",
+      "bytes": 9474
+    },
+    {
+      "path": "POST_SOURCE_PINS_INITIAL.json",
+      "sha256": "c40f96641e529c1abd863b590db69c496260a44b39bce1e515c372e66bcd564a",
+      "bytes": 7255
+    },
+    {
+      "path": "post_check.py",
+      "sha256": "8886068fd7204f5fd2fc826be2a3181956d838735d899e7f3fb7cfccd02f2501",
+      "bytes": 12732
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/AUTHOR_SEAL.json",
+      "sha256": "0b72c3cd4dd5404a53de9808a5bf99fab48eab182defedba729b695ff4202066",
+      "bytes": 1561
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/CONTROL.stdout",
+      "sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57",
+      "bytes": 49447
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/EXECUTION.json",
+      "sha256": "89e82d001b25fb062cf0655d40587efb30234337a0b158a2af8f011258159445",
+      "bytes": 421
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/GROUND_FILLING_CERTIFICATES.json",
+      "sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57",
+      "bytes": 49447
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/NATIVE_GROUND_SECTOR_FILLING_ROOT.md",
+      "sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb",
+      "bytes": 14482
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/ROOT_REVIEW.json",
+      "sha256": "abe3cbbac444aa41d790c09333bdc74ae07cb64290cfed46e6ace044cabe7862",
+      "bytes": 1216
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/SOURCE_PINS.json",
+      "sha256": "9280163bb7bd88c6eb1b5ca2f1234281c7ecff392c261133e308fd6193828f90",
+      "bytes": 2866
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/WORKING_DERIVATION.md",
+      "sha256": "84c701607e7697ebfe9dc4b0438bc3d3e76c8c9c126e9e1f39ced705cecabc45",
+      "bytes": 4393
+    },
+    {
+      "path": "post_sources/native-ground-filling-personal/ground_filling_certificates.py",
+      "sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+      "bytes": 6929
+    },
+    {
+      "path": "post_verification_attempt01/EXECUTION.json",
+      "sha256": "3778c18a9dd2a80aacefdc5f831edb9bd98f8431fffef9e6f5bc47401c699951",
+      "bytes": 660
+    },
+    {
+      "path": "post_verification_attempt01/post_check.py",
+      "sha256": "8886068fd7204f5fd2fc826be2a3181956d838735d899e7f3fb7cfccd02f2501",
+      "bytes": 12732
+    },
+    {
+      "path": "post_verification_attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "post_verification_attempt01/stdout.log",
+      "sha256": "24369e4b581f544641b23f1f087c532af15b0e254f5cc5230099fd1e16601589",
+      "bytes": 14166
+    }
+  ],
+  "PRE_preserved": true,
+  "author_controls_executed": false,
+  "sealed_PRE_verifier_executed": false,
+  "other_active_packets_read": false,
+  "delegation": false,
+  "publication_or_audit_mutation": false,
+  "finding": "No material mathematical correction required on the stated fixed equal even L>=6 graph scope. PRE-only stronger results and tooling limitation remain separately attributed."
+}

@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-09-24T19:50:29.821077+00:00",
+  "phase": "blind PRE magnetic lag",
+  "scope": "Only the four previously permitted scientific sources and own preserved prior PRE provenance. No magnetic-lag author, checkpoint, microscopic-readout or active checker packet opened.",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "use": "Unchanged permitted main note or provisional resolved-readout premise, as identified in prior SOURCE_PINS.json."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "use": "Unchanged permitted main note or provisional resolved-readout premise, as identified in prior SOURCE_PINS.json."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "snapshot": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "use": "Unchanged permitted main note or provisional resolved-readout premise, as identified in prior SOURCE_PINS.json."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "snapshot": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "use": "Unchanged permitted main note or provisional resolved-readout premise, as identified in prior SOURCE_PINS.json."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE.md",
+      "snapshot": "sources/FINITE_BIN_PRIOR_PRE.md",
+      "sha256": "b0ccb94832307f39c106c87f16f1eaaf7949521b6d42f22c5ee399d850dd28ed",
+      "use": "Prior preserved independent graph-bound provenance; not a new discovery in this milestone."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/PRE_SEAL.json",
+      "snapshot": "sources/FINITE_BIN_PRIOR_PRE_SEAL.json",
+      "sha256": "7df82180e073ab40cb2228e15fd2e2ff43c731b90e8a690388598389c58d589f",
+      "use": "Prior preserved independent graph-bound provenance; not a new discovery in this milestone."
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-bin-photon-independent/SOURCE_PINS.json",
+      "snapshot": "sources/FINITE_BIN_PRIOR_SOURCE_PINS.json",
+      "sha256": "cefd81353225b5371142c5c0fbbb495b7ff7552c211837772ac6b02079736d49",
+      "use": "Prior preserved independent graph-bound provenance; not a new discovery in this milestone."
+    }
+  ]
+}

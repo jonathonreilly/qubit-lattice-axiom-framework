@@ -1,0 +1,7 @@
+{
+  "all_other_scientific_payload_exact": true,
+  "corrected_empty_rows": 10,
+  "change": "null optimum/ratio for infeasible empty normalized-state bands; explicit feasibility flag for every row",
+  "primary_reruns": 0,
+  "own_control_runs": 2
+}

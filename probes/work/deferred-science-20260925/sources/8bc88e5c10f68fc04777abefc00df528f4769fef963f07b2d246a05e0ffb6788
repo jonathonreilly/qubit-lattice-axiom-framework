@@ -1,0 +1,65 @@
+{
+  "phase": "released-source POST",
+  "frozen_utc": "2026-09-24T20:31:35.765789+00:00",
+  "preserved_PRE_seal_sha256": "3acf0388bdfdcad3ee4d5b829eeff1d0a65509c36d732b8ad9b449c415793196",
+  "preserved_PRE_member_count": 29,
+  "author_seal_sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18",
+  "sources": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/AUTHOR_CONTROL_SEAL.json",
+      "frozen_path": "post_sources/author/AUTHOR_CONTROL_SEAL.json",
+      "bytes": 857,
+      "sha256": "455aaba6c0bd18da70176272ed9df914c04f8101bd8e826a81a78495f9af1b18",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/CONTROL.stderr.txt",
+      "frozen_path": "post_sources/author/CONTROL.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/CONTROL.stdout.txt",
+      "frozen_path": "post_sources/author/CONTROL.stdout.txt",
+      "bytes": 11073,
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/CONTROL_EXECUTION.json",
+      "frozen_path": "post_sources/author/CONTROL_EXECUTION.json",
+      "bytes": 465,
+      "sha256": "b894d712e5d090d9af5ba775207dc5924aad657eb63307dea85d7ad67ae9ef0f",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "frozen_path": "post_sources/author/LOCAL_BACKGROUND_CONTROL_RESULTS.json",
+      "bytes": 11073,
+      "sha256": "28a9f5866a253f2ec4c86b893ff14cbace711a85431aa4877b7ee81444c2dbed",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "frozen_path": "post_sources/author/LOCAL_RECORD_BACKGROUND_STABILITY_ROOT.md",
+      "bytes": 14324,
+      "sha256": "9f21fae1ea269c0316757d7618d3b50161bd26c4da5759325187c64531220843",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/SOURCE_PINS.json",
+      "frozen_path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 3039,
+      "sha256": "5488304eb3c1393d99f7c20846de04f605b576924cc065e1eea7cf88f532ccb4",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-record-background-personal/local_background_controls.py",
+      "frozen_path": "post_sources/author/local_background_controls.py",
+      "bytes": 5512,
+      "sha256": "abd959ce389ce71f15108abdffdc97a49f7ad3d2baf40c8d0bf58f087f2a8807",
+      "role": "released root argument or author-only finite evidence; no independent author execution"
+    }
+  ]
+}

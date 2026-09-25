@@ -1,0 +1,82 @@
+{
+  "checked_utc": "2026-09-25T00:16:05.195929+00:00",
+  "source_origins_unchanged": 10,
+  "source_sha256": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/PRE.md": "5c5ef65435d4165048048fb3b3d7e8abc9ce86ef5e69d2a20024c9d767f15589",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/PRE_SEAL.json": "5c72901c7a027ba7f00685ce39abe206a2ae0b8a73098ab35e7f0b72324f177c",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/POST.md": "f93f56c8b39bdc79329d964bd0170ceae97876bb366733d492bc58b6edb4ecee",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-matter-probe-independent/POST_SEAL.json": "dca495a9a8d810740b3048f38e6709584df74d4d707de593f19426defcae0af1",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+  },
+  "executions": [
+    {
+      "label": "direct_matrix",
+      "script_version": "direct_matrix_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0134733750019222
+    },
+    {
+      "label": "fourier",
+      "script_version": "fourier_and_correspondence.initial_L6_gain.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.49569862498901784
+    },
+    {
+      "label": "fourier_corrected",
+      "script_version": "fourier_and_correspondence.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4872499580960721
+    },
+    {
+      "label": "freeze",
+      "script_version": "freeze_sources.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.07458845782093704
+    },
+    {
+      "label": "jet",
+      "script_version": "jet_coefficient_check.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.34721945808269083
+    },
+    {
+      "label": "primitive_L16",
+      "script_version": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.105340708978474
+    },
+    {
+      "label": "primitive_L6",
+      "script_version": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.059264332987368
+    },
+    {
+      "label": "primitive_infinite",
+      "script_version": "primitive_power.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.9782659581396729
+    },
+    {
+      "label": "verify",
+      "script_version": "verify_evidence.initial_uniform_pair_count.py",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2796152080409229
+    },
+    {
+      "label": "verify_corrected",
+      "script_version": "verify_evidence.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.3645762091036886
+    }
+  ],
+  "expected_failed_verifier_runs": 1,
+  "retained_initial_Fourier_scope_correction": true,
+  "full_coefficient_table_in_PRE": true,
+  "author_candidate_seen": false
+}

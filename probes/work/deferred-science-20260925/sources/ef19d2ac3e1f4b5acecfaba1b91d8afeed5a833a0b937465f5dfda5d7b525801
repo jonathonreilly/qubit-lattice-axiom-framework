@@ -1,0 +1,863 @@
+{
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-personal/attempt01/stdout.log",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Byte-identical large artifact already included once.",
+      "publication_duplicate": ".claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/author42_history/attempt01/RESULT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/PRE_PAIR_SCOPE_REPAIR.diff",
+      "sha256": "329de608bc7427f5014ccc7d02b16c61e179a29fbf44f6bd59a93f43c2aebf9d",
+      "bytes": 2077,
+      "role": "Exact historical whitespace-bearing diff preserved externally."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "bytes": 1824,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "bytes": 13333,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/ROOT_READ_RECEIPT.json",
+      "sha256": "89fe5d294b22a5ecdfc850e802db441e2e6e1a9f324b40328c82a7d3de15bd10",
+      "bytes": 4374,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/SOURCE_PINS.json",
+      "sha256": "03b4056d4cfc5037c94297561eaac2766c28ff7bc06309caf76ae6df22b6604e",
+      "bytes": 2136,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/WORKING_DERIVATION.md",
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c",
+      "bytes": 3637,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/attempt01/EXECUTION.json",
+      "sha256": "bc7354c47fcfe35ed0fc95ad6d6564bbb3eacf5bdd3127a91f173e093c25bf62",
+      "bytes": 229,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/attempt01/RESULT.json",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/attempt01/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/attempt01/stdout.log",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/post_sources/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-charge-cluster-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+      "bytes": 2211,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "bytes": 15036,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+      "bytes": 1235,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+      "bytes": 3152,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "bytes": 3923,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+      "bytes": 223,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/post_sources/author/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/AGENTS_execution.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+      "bytes": 10164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/sources/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "bytes": 1824,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "bytes": 13333,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/ROOT_READ_RECEIPT.json",
+      "sha256": "89fe5d294b22a5ecdfc850e802db441e2e6e1a9f324b40328c82a7d3de15bd10",
+      "bytes": 4374,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/SOURCE_PINS.json",
+      "sha256": "03b4056d4cfc5037c94297561eaac2766c28ff7bc06309caf76ae6df22b6604e",
+      "bytes": 2136,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/WORKING_DERIVATION.md",
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c",
+      "bytes": 3637,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/attempt01/EXECUTION.json",
+      "sha256": "bc7354c47fcfe35ed0fc95ad6d6564bbb3eacf5bdd3127a91f173e093c25bf62",
+      "bytes": 229,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/attempt01/RESULT.json",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/attempt01/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/attempt01/stdout.log",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author42/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/AUTHOR_SEAL.json",
+      "sha256": "897ee094e3766f845645260bc7d6f121ed98053d585fd6db04993db81efbeae6",
+      "bytes": 2211,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/ORIGINAL_BIRTH_CLUSTER_TRANSPORT_ROOT.md",
+      "sha256": "4bc09c86a5d4f1f26f4d82e5a446c55b12f65fbfc351e65594282a99835e582b",
+      "bytes": 15036,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/ROOT_READ_RECEIPT.json",
+      "sha256": "41858713f12f41a8c8e372e3153f3c25fa3abf39a4a9d9a64366d313ef9381d4",
+      "bytes": 1235,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/SOURCE_PINS.json",
+      "sha256": "8b90a0a2c78c132dc820911bc2e73c7056df530f80b3c04d4b2b2213583334f2",
+      "bytes": 3152,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/WORKING_DERIVATION.md",
+      "sha256": "f0d55c126f35bf1ed12ebd114f5998fcc380fb60a3c4352b8daa69d26bdecf26",
+      "bytes": 3923,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/attempt01/EXECUTION.json",
+      "sha256": "ccfacbc950e110aac5f0021516003d372603bc0eb642d231c989fc9bf9d31082",
+      "bytes": 223,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/attempt01/RESULT.json",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/attempt01/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/attempt01/stdout.log",
+      "sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+      "bytes": 368706,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/author43/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/base_citation_graph_manifest.json",
+      "sha256": "687e5130acd4b38ac5f318c4bea9c1362920a687eae2306c08b2706a35e20abf",
+      "bytes": 943724,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_FROZEN_SOURCES.json",
+      "sha256": "e1fa5fc27983528a89e42e7d20a02aba4de3d733121c3606c72a8fed9f64b5f7",
+      "bytes": 7737,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_GRAPH_BUILD.stdout.txt",
+      "sha256": "13e148f00f55eb5270f6d601a8086167b0f4e73b567914cb7167b393707aba4c",
+      "bytes": 281,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_PRIMARY_EXECUTION.json",
+      "sha256": "edab146a66640922b02360780cefaebfdcabbaad9b4d416ba24dc10f271db408",
+      "bytes": 2423,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "7a540f8f258b486cc019e301c21db91598703f887b586e477e63f9b5a46a863f",
+      "bytes": 1484,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/external/BIRTH_CHARGE_TRANSPORT_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "2d55a6f979b9d15607532025b8d21746cc2605e2edaa5c063b8ea8341fb41a5b",
+      "bytes": 5319,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/CONTROL_READOUT.txt",
+      "sha256": "7fac4ba348de72f1ccb3a168cdcbeacbcbdb801d2fae834a26e047397730a8e1",
+      "bytes": 48833,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/EVIDENCE_PINS.json",
+      "sha256": "2939d932471044490ad7ce3e1f4b920fcced38bb64019635a85f0116a3569bf0",
+      "bytes": 4764,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/FAILURES_AND_LIMITS.md",
+      "sha256": "0d186e7559ee52558d55cf143a000e3b0d6f86127039e874ff3f41e80093235e",
+      "bytes": 2746,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/POST.md",
+      "sha256": "25c981ebf21e21916d0cda69383652813b2f08f48c2734c251652fcb5d6329d3",
+      "bytes": 17334,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/POST_SEAL.json",
+      "sha256": "97fb749f28603a6a3d49df3aaf654f02377a412f33607df19e7604a3db024fc4",
+      "bytes": 13292,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/POST_SOURCE_PINS.json",
+      "sha256": "51c53e5196b53d0548cd4c343255bd738a215c1bc4e03a08e8130a395d4d49a6",
+      "bytes": 3852,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/POST_VERIFICATION_REPORT.md",
+      "sha256": "9e491eaaa5515b8b02653a1a3c7e6f82f25f7980515008bef43e4111633c3916",
+      "bytes": 2405,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/PRE.md",
+      "sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81",
+      "bytes": 28946,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/PRE_DRAFT01_BEFORE_PAIR_SCOPE_REPAIR.md",
+      "sha256": "df96886c8de24de6dad0dd6a26196b4c838cfee61b4b05698fd8aa5c6e6bceb8",
+      "bytes": 28242,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/PRE_PAIR_SCOPE_REPAIR.diff",
+      "sha256": "329de608bc7427f5014ccc7d02b16c61e179a29fbf44f6bd59a93f43c2aebf9d",
+      "bytes": 2077,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/PRE_SEAL.json",
+      "sha256": "61b5a0edaffee445ba80cfd7eb7e25cb60dea3e6aede4b449df2fc2e3dbc7cca",
+      "bytes": 9380,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/SOURCE_PINS.json",
+      "sha256": "0fd02b611e8dad6c386c0639913f01b9686ea76198e711f052d6fef867e380c8",
+      "bytes": 3758,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/SOURCE_PINS_INITIAL.json",
+      "sha256": "8377d93aaea2f87b57ee64e0a298b993c80bb79e785a85aa546c9eac408ad06f",
+      "bytes": 3693,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/VERIFICATION_REPORT.md",
+      "sha256": "1c587c363d7b9fafedbfc1e8001d73e3fac28b6e0af7cefb750cf80bf5655609",
+      "bytes": 3288,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/low_wave_remainder_control.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05",
+      "bytes": 1923,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_capture_sources.py",
+      "sha256": "9a4823e922a540211cce22fe1e7777f1483d654850008793aae76c45a94ca9a6",
+      "bytes": 1911,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_record_verification.py",
+      "sha256": "9b9048b30dafbdec0ab74328656503cd2a4ad2f1defd1544e2bb7e60d9486e97",
+      "bytes": 2204,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_seal.py",
+      "sha256": "75f12a8c1bf9d22844cf12deef3dd9fce672640686a71fd6f5a94042e5745eea",
+      "bytes": 3278,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/AUTHOR_SEAL.json",
+      "sha256": "061b603af09865b1f8673d2332816849f799f504dbadfe54b205e53be9077186",
+      "bytes": 1824,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/ORIGINAL_BIRTH_CHARGE_CLUSTERS_ROOT.md",
+      "sha256": "f0737e3faad1388a7dee3f875f8fee900655e5a4c48f31436787f26d5729d114",
+      "bytes": 13333,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/ROOT_READ_RECEIPT.json",
+      "sha256": "89fe5d294b22a5ecdfc850e802db441e2e6e1a9f324b40328c82a7d3de15bd10",
+      "bytes": 4374,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/SOURCE_PINS.json",
+      "sha256": "03b4056d4cfc5037c94297561eaac2766c28ff7bc06309caf76ae6df22b6604e",
+      "bytes": 2136,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/WORKING_DERIVATION.md",
+      "sha256": "b3096df3faa5b20fc17b7ef7c29c5d385a82cadc455e047a5edc89199d09667c",
+      "bytes": 3637,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/attempt01/EXECUTION.json",
+      "sha256": "bc7354c47fcfe35ed0fc95ad6d6564bbb3eacf5bdd3127a91f173e093c25bf62",
+      "bytes": 229,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/attempt01/RESULT.json",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/attempt01/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/attempt01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/attempt01/stdout.log",
+      "sha256": "f49e864d88d8bf8ced5f530d17d9176096e985840b9dddcf0625d2e4ccb28601",
+      "bytes": 3884221,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_sources/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_verification_attempt01/EXECUTION.json",
+      "sha256": "6d041e8519e46a67d1139720738566dad4772fe91d9ee8bc0921c6e9d7aabb25",
+      "bytes": 40438,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_verification_attempt01/stdout.json",
+      "sha256": "f63af37e62cd86cc7292dbdc4d772bcab021d889dcdac599b0ce82e32194b8aa",
+      "bytes": 8931,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/post_verify_readonly.py",
+      "sha256": "74a772ec5de95cce663ff7eaaefea9a62b7cee1558e3e6a8ce9aeff98526162b",
+      "bytes": 14098,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/prepare_evidence.py",
+      "sha256": "da7137dff7c6bacdf88a903e8070a03017d67107dfaa0e406714507d4761b651",
+      "bytes": 1334,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/primitive_attempt01/EXECUTION.json",
+      "sha256": "0056f83bf4fd995c04876ff3d8029fc821b7f192eb2b0bd22cd5bbff8958977c",
+      "bytes": 678,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/primitive_attempt01/source.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9",
+      "bytes": 16589,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/primitive_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/primitive_attempt01/stdout.json",
+      "sha256": "04b1ed1bc0640e416e1b287807be905a78494a668a45066d1264fecf5c6b537f",
+      "bytes": 87932,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/primitive_birth_charge_control.py",
+      "sha256": "a72ccc998efed3496f662aee6a3da93ee31e56eab166f2a3aaeb14876c50e3c9",
+      "bytes": 16589,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/record_control_attempt.py",
+      "sha256": "3af26872e5374cedc8c95424fd01cc4329ebfbc46c5ce4d5a2b39d4119ed1d3c",
+      "bytes": 1516,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/record_readonly_verification.py",
+      "sha256": "987ce323e76047e78734bf63b51e252ba28d8473a415a1c4d346dc78e2cda01f",
+      "bytes": 1786,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/remainder_attempt01/EXECUTION.json",
+      "sha256": "fcfd924b6c8346ac4419decb22cbfdae4e9fe0318f5722ff64da4d400b0b4d1b",
+      "bytes": 677,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/remainder_attempt01/source.py",
+      "sha256": "ef04eaa74a1dc4db4d3e81272175535de5d5280c5d591222a4c120d9b4c5aa05",
+      "bytes": 1923,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/remainder_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/remainder_attempt01/stdout.json",
+      "sha256": "fb941d016250c8d0df0ae560737fc0dd67c6aeae937b8c601cd6d39dbe058b73",
+      "bytes": 8157,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/seal_pre.py",
+      "sha256": "3dad8b4490167e0ef2d2694c40d0b415e4731025b495a6d37b06617c4c3ef56f",
+      "bytes": 2617,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/verification_attempt01/EXECUTION.json",
+      "sha256": "e87132593577621cdb31f0d0cc4a6af3b691031597026dfcea276decb09669c1",
+      "bytes": 15159,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/verification_attempt01/stdout.json",
+      "sha256": "7f91f7911f67f906f10e84807ed9d1b0d6c6c6e4f6d2a6a828ee78698575e4fb",
+      "bytes": 9986,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/independent42/verify_readonly.py",
+      "sha256": "b815a798bedfc6027b3b0adea04f306c090c26f430931cacc1d267be45d1b040",
+      "bytes": 8199,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/mechanical_graph_manifest_writer.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "bytes": 2049,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/.claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/birth_geometry.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/.claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/charge_cluster_controls.py",
+      "sha256": "4b1b273bb5046fab5e4f6dc307c650d9be9cba8df25b584020fcaadaa0d5ce6e",
+      "bytes": 7604,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/.claude/science/physics-loops/mobile-record-birth-charge-transport-20260925/runtime/cluster_escape_controls.py",
+      "sha256": "69c42bab1440254b3dfae096d3f8a41362fa363576cfa8b674ea5ab836a384b1",
+      "bytes": 6164,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/ORIGINAL_BIRTH_CHARGE_AND_GROUPING_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "e77b835457f41a17131ac9038cff3538cf3affd73a13fac64dc21465f4891c44",
+      "bytes": 34549,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "5970d3d90d03261a10476db4263d900dc965b30aef476c217ac5a7c6fd9004b7",
+      "bytes": 943863,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/logs/runner-cache/original_birth_charge_and_grouping_dynamics_2026_09_25.txt",
+      "sha256": "38612d69d7f66fe67fefd556c96c245ed91b85bd0b0c16b29e13fcd75c93b07c",
+      "bytes": 2050,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/outputs/native_birth_charge_transport_20260925/BIRTH_CHARGE_TRANSPORT_PUBLIC_RESULTS.json",
+      "sha256": "14a616466161eef6e6492632ffa81788d6a560afd99719339fb81600c0611af9",
+      "bytes": 1664,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/outputs/native_birth_charge_transport_20260925/charge.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/outputs/native_birth_charge_transport_20260925/charge.stdout.json",
+      "sha256": "2066944750f5779f7b95e2a03aafe44a1969205dd7af526c79abd16b6686d424",
+      "bytes": 3884222,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/outputs/native_birth_charge_transport_20260925/transport.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/outputs/native_birth_charge_transport_20260925/transport.stdout.json",
+      "sha256": "adfe796cc6d20c13fa1f6c4ab7e868497d322330c695d2e64ff126fccc00c750",
+      "bytes": 368706,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/scripts/original_birth_charge_and_grouping_dynamics_2026_09_25.py",
+      "sha256": "536efbf50f57eb27454b6ea9566f904b25f9f16d8c5627141bd4ca43ad838c61",
+      "bytes": 3570,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941,
+      "role": "Original immutable duplicate snapshot or private generated binary; externally preserved."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "signed_utc": "2026-09-25T01:53:23.356098+00:00",
+  "signed_by": "Codex independent checker /root/rotor_upper_tail_check",
+  "scope": "Chronology correction only; sealed PRE/POST and existing evidence unchanged. No scientific rerun.",
+  "report": "POST_CHRONOLOGY_ADDENDUM.md",
+  "correct_bound": {
+    "after": [
+      "Part A publication-comparison dispatch",
+      "PRE32 seal 2026-09-25T00:52:46.780324+00:00"
+    ],
+    "before": "2026-09-25 01:01:27 UTC explicit clock reading",
+    "exact_earlier_tool_timestamp": "unavailable"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST.md",
+      "sha256": "c743b65fe76f616baa1bb261a49a2e9df31cf6f4526530b998d01c152ac253c2",
+      "bytes": 21880
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/POST_SEAL.json",
+      "sha256": "43f565d7b9e362ca13e012bfadbe5b7e05b2ce22abb2c4a9ef3f24cd63d6099b",
+      "bytes": 5853
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/number-offset-observation-independent/PRE_SEAL.json",
+      "sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "bytes": 4540
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-added-energy-independent/PUBLICATION_SCOPE_INCIDENT.json",
+      "sha256": "e60ae5601e7625476f3e221d5ac18b5d7eb94c41b8773a1bb7f37bd3c30ae536",
+      "bytes": 3475
+    }
+  ],
+  "preserved_seal_member_counts": {
+    "PRE32": 22,
+    "POST32": 26
+  },
+  "scientific_or_blindness_conclusion_changed": false,
+  "members": [
+    {
+      "path": "POST_CHRONOLOGY_ADDENDUM.md",
+      "bytes": 1475,
+      "sha256": "779a1ee05b5bde456fc958bd2624cccc1e315ed0540e5847ea8e613f310a2ae1"
+    }
+  ]
+}

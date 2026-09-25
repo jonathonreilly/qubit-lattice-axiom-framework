@@ -1,0 +1,86 @@
+{
+  "at": "2026-09-24T23:19:02.797982+00:00",
+  "status": "root candidate, independently unchecked at sealing; pre-seal error preserved",
+  "files": {
+    "ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md": {
+      "sha256": "5feb53d99a0e1008019ff4563c16ba880ab3ab6e38fee5fd2682e62f081ee157",
+      "bytes": 13081
+    },
+    "CONTROL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONTROL.stdout": {
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "bytes": 425563
+    },
+    "ENERGY_POLYNOMIAL_RESULTS.json": {
+      "sha256": "bea10e8006149944feeb28621911dca837c6dc72733eca00eea4d2b3e9f617b9",
+      "bytes": 425563
+    },
+    "ENERGY_SPECTRAL_RESULTS.json": {
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "bytes": 133672
+    },
+    "EXECUTION.json": {
+      "sha256": "d19bcffe62cb6a8ba89c510114af76c461db58e2b35c1ac60ecd1add1451b113",
+      "bytes": 201
+    },
+    "PRESEAL_ELECTRIC_CORRECTION.md": {
+      "sha256": "a2fb49dfe4f567dc226bb89bfc7cbd46236a8575a5132933a529ed42d0ca7cb3",
+      "bytes": 897
+    },
+    "ROOT_REVIEW.md": {
+      "sha256": "c362fd8417bbcc0c14acf3ce35601bb13f339b9bdd9710f36a3e00258379bcf9",
+      "bytes": 1593
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "86f22245e10d07575237c6e8e44e1aee2b3caab66882d9ae71abcfb2f4ecb36d",
+      "bytes": 1853
+    },
+    "SPECTRAL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "SPECTRAL.stdout": {
+      "sha256": "921f356164c4f2e8ccb494cdb04a2ecf3d642497079c3eda2fd20edd59b479ef",
+      "bytes": 133672
+    },
+    "SPECTRAL_EXECUTION.json": {
+      "sha256": "fc94d17d74b59ce488310f1f5114068953e5097ac41a7d7e7418b3f519343149",
+      "bytes": 200
+    },
+    "energy_spectral_controls.py": {
+      "sha256": "f8c4eff9a2548248fc851d9bfc4f45dea633e8e461579d698ec9532a4d4c6f84",
+      "bytes": 6387
+    },
+    "history/pre-electric-occupancy-correction/ADDED_REFERENCE_EXCITATION_ACTUAL_ENERGY_ROOT.md": {
+      "sha256": "c3acc0d5aadf55e2434c2f7e577bd45624fdb84bbef08b02b7b9c9be94b39adf",
+      "bytes": 12017
+    },
+    "history/pre-electric-occupancy-correction/ENERGY_SPECTRAL_RESULTS.json": {
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "bytes": 132679
+    },
+    "history/pre-electric-occupancy-correction/SPECTRAL.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "history/pre-electric-occupancy-correction/SPECTRAL.stdout": {
+      "sha256": "d8cc9aacb13f0ccb5c5ed41bd8eb2932579765cc0572b98c9eef524e854a8221",
+      "bytes": 132679
+    },
+    "history/pre-electric-occupancy-correction/SPECTRAL_EXECUTION.json": {
+      "sha256": "e37c9ceb6de5f1db9f3de02158e776da6b762ef04a098a26903c8889ced7910a",
+      "bytes": 200
+    },
+    "history/pre-electric-occupancy-correction/energy_spectral_controls.py": {
+      "sha256": "602091cef199b21c239920a2e8732e910fa0daf2145e57a1d0d1dc4cc6756225",
+      "bytes": 5430
+    },
+    "prepared_energy_polynomial.py": {
+      "sha256": "6cccd8c7e49152fea4f1c6ff98475ce1c2912d2567592c883c6cf9df0152f48e",
+      "bytes": 4344
+    }
+  }
+}

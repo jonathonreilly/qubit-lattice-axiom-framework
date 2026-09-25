@@ -1,0 +1,15 @@
+{
+  "seals": {
+    "PRE_SEAL.json": {
+      "sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+      "members": 42
+    },
+    "POST_SEAL.json": {
+      "sha256": "60736b57d4e82d4803bae3f1b260fd00f330c277010eda990089034f81762217",
+      "members": 25
+    }
+  },
+  "origin_pins_verified": 18,
+  "POST_sha256": "0c78eb924bf08264f85c9cda41fc8b90dc0a30f4bc9f52a783dc73549098bfb8",
+  "review": "Complete POST, binding/certificate code and all compact scientific rows read. Full word list processed by independently written reviewed code; no claim of manual reading every repeated certificate word. Two public corrections included. Output independent enumeration remains PRE side8, no separate root16 output certificate."
+}

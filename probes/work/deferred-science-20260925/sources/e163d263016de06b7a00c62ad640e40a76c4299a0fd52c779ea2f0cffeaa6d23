@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-25T08:45:20.404980+00:00",
+  "report_sha256": "64a709a891fe2689d1295027d2db77b03ed21f1b580bbbbeb287384fc29dd690",
+  "seal_sha256": "ba6bb037f247a0f041a6969ecf4c985393036ccaf786004664c5bb82f0c44e8b",
+  "complete_report_all_new_code_recorders_sealer_and_editorial_diff_read": true,
+  "full_175_rows_four_paths_twenty_states_and_remaining_compact_output_read": true,
+  "all_stored_evidence_and_origins_mechanically_checked": true,
+  "elapsed_seconds": 0.3085453750099987,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "full_output_byte_exact": true,
+  "observed_files_byte_stat_unchanged": 98,
+  "PRE_members": 41,
+  "POST_members": 35,
+  "required_mathematical_repairs": [],
+  "publication_qualification": "Conditioning on an actual realized birth needs kappa>0; at kappa=0 the normalized bare-B vector remains a supplied state only.",
+  "attribution": "PRE plus-sign witness, whole-projector coefficients, vector loss identity and explicit coarse time bounds remain PRE contributions. Author exact one-target coefficients are supported.",
+  "source_limit": "Short historical author execution receipt lacks full command/environment transcript; available source/result bindings checked, not a stronger historical execution claim.",
+  "no_new_independence_or_audit": true
+}

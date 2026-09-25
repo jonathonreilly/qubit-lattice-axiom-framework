@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-25T07:45:39.040314+00:00",
+  "proof": "Personally derived and fully read; finite-support contraction remainder included. No independent43 review yet.",
+  "programs": "Personal scientific control fully read; geometry helper exact previously read personal42 reuse.",
+  "stored_data": "All175 relevant pair rows and all4 matched complete paths read losslessly in sparse form before sealing; every full matched state freshly mechanically rechecked for Gauss law.",
+  "counts": [
+    {
+      "L": 4,
+      "complete_relevant_rows": 80,
+      "complete_matched_paths": 2
+    },
+    {
+      "L": 6,
+      "complete_relevant_rows": 95,
+      "complete_matched_paths": 2
+    }
+  ],
+  "limitations": [
+    "Supplied immediately pre-mark zero-electric input, not claimed typical random first-event field.",
+    "No finite-time lifetime, physical calibration or broad particle exclusion.",
+    "No full-state propagation numerically performed.",
+    "Scratch lower bounds preserved; exact coefficient strengthens them."
+  ],
+  "stderr_bytes": 0,
+  "primary_result_sha256": "ee59b47784e989159e2ad1ca124676643b9c807974de2bcbf38cef6eb0179e2d",
+  "primary_external_seconds": 0.1268903750460595,
+  "independent41_PRE_credit": true
+}

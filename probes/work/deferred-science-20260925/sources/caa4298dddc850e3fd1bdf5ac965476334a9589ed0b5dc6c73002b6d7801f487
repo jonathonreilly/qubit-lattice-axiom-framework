@@ -1,0 +1,14 @@
+{
+  "post_sha256": "7f140d2c9907c734f81bd70e313c42f3736b475542dd6416aef4349a2581fdad",
+  "seal_sha256": "aa6a5a418433c44dbe1ac35d38fb59d6fb4cbdcc75e271ecce9eb23d7a24c781",
+  "members_verified": 27,
+  "live_origins_verified": 8,
+  "full_post_and_code_and_all_34_correspondence_rows_read": true,
+  "author_code_not_executed": true,
+  "public_changes_required": [
+    "explicit simple even cubic periods >=6",
+    "bounded measurable I",
+    "remove length,+electric typo",
+    "optional clarification global zero extension only for convergence"
+  ]
+}

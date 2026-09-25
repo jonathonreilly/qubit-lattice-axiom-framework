@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-25T03:41:47.988835+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent/freeze_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ground-formation-incompatibility-independent",
+  "elapsed_seconds": 0.17413583397865295,
+  "exit_code": 0,
+  "script_sha256": "0597eb690fd27cf55b3678cb2aab96fdfb344e03ad9ccf3b50c100be5751da19",
+  "stdout_bytes": 4298,
+  "stdout_sha256": "a7be673bf8a41527e3c05da8e31203ff5633edc9cc2e1672cc3c27978c607e30",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

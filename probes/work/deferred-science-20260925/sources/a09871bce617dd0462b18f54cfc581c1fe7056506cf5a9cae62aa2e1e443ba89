@@ -1,0 +1,402 @@
+{
+  "scope": "Read-only stored-evidence reconstruction; no writer or numerical evolution executed.",
+  "source_origins": 9,
+  "tori": [
+    {
+      "L": 4,
+      "primitive_rows": 1920,
+      "complete_covariance_entries_per_instrument": 4096,
+      "gram_entries": 252,
+      "mutant_different_entries": 928,
+      "diagonal": 120,
+      "nearest_entry": -20,
+      "support_summary": {
+        "magnetic": {
+          "term_count": 240,
+          "max_support_before": 24,
+          "max_support_after": 92,
+          "incidence_before": 75,
+          "incidence_after": 165
+        },
+        "resolved_jump": {
+          "term_count": 384,
+          "max_support_before": 13,
+          "max_support_after": 58,
+          "incidence_before": 72,
+          "incidence_after": 192
+        }
+      }
+    },
+    {
+      "L": 6,
+      "primitive_rows": 6480,
+      "complete_covariance_entries_per_instrument": 46656,
+      "gram_entries": 252,
+      "mutant_different_entries": 3456,
+      "diagonal": 120,
+      "nearest_entry": -20,
+      "support_summary": {
+        "magnetic": {
+          "term_count": 972,
+          "max_support_before": 25,
+          "max_support_after": 108,
+          "incidence_before": 93,
+          "incidence_after": 261
+        },
+        "resolved_jump": {
+          "term_count": 1296,
+          "max_support_before": 13,
+          "max_support_after": 61,
+          "incidence_before": 72,
+          "incidence_after": 228
+        }
+      }
+    }
+  ],
+  "tree": {
+    "full_dimension": 90,
+    "P_dimension": 40,
+    "all_integer_matrices_reconstructed": true,
+    "occupied_B_gate_mutant_different_entries": 34,
+    "covariance_slope_in_kappa": [
+      [
+        24,
+        0,
+        -8,
+        -8,
+        -8,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        -4,
+        -4
+      ],
+      [
+        -8,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        -8,
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        -8,
+        -4,
+        0,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        -4,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "mean_slope_in_kappa": [
+      -12,
+      -4,
+      4,
+      4,
+      6,
+      2
+    ],
+    "finite_time_rows": [
+      {
+        "instrument": "resolved",
+        "K": 0.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.5592833328031028e-08,
+        "pearson": -0.5773079380245197,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116510610202e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 0.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.16134966428329,
+        "N6_probability": 1.0234267724558033e-07,
+        "pearson": -0.5772656225673286,
+        "pearson_error_to_negative_inverse_sqrt3": 8.46466222972353e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 0.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274478151078,
+        "N6_probability": 4.0914158783599755e-07,
+        "pearson": -0.577181038765797,
+        "pearson_error_to_negative_inverse_sqrt3": 0.0001692304238288811
+      },
+      {
+        "instrument": "resolved",
+        "K": 0.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.321877522654766,
+        "N6_probability": 0.0002489630178078563,
+        "pearson": -0.5731944728122383,
+        "pearson_error_to_negative_inverse_sqrt3": 0.0041557963773874995
+      },
+      {
+        "instrument": "resolved",
+        "K": 2.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.5592833328031302e-08,
+        "pearson": -0.5773079380245196,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116510621304e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 2.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.16134966428329,
+        "N6_probability": 1.0234267724558905e-07,
+        "pearson": -0.5772656225673286,
+        "pearson_error_to_negative_inverse_sqrt3": 8.46466222972353e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 2.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274478151078,
+        "N6_probability": 4.091415878362754e-07,
+        "pearson": -0.5771810387657988,
+        "pearson_error_to_negative_inverse_sqrt3": 0.00016923042382699371
+      },
+      {
+        "instrument": "resolved",
+        "K": 2.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.321875693743294,
+        "N6_probability": 0.0002489630201076171,
+        "pearson": -0.5731944730013007,
+        "pearson_error_to_negative_inverse_sqrt3": 0.004155796188325178
+      },
+      {
+        "instrument": "resolved",
+        "K": 200.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.5592833334811394e-08,
+        "pearson": -0.5773079380245488,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116507701418e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 200.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.161349603221026,
+        "N6_probability": 1.0234267746236446e-07,
+        "pearson": -0.5772656225674244,
+        "pearson_error_to_negative_inverse_sqrt3": 8.464662220142305e-05
+      },
+      {
+        "instrument": "resolved",
+        "K": 200.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274429301265,
+        "N6_probability": 4.091415947595308e-07,
+        "pearson": -0.5771810387673175,
+        "pearson_error_to_negative_inverse_sqrt3": 0.00016923042230831964
+      },
+      {
+        "instrument": "resolved",
+        "K": 200.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.31696105760968,
+        "N6_probability": 0.00024900664993041804,
+        "pearson": -0.5731948460577438,
+        "pearson_error_to_negative_inverse_sqrt3": 0.004155423131881997
+      },
+      {
+        "instrument": "coherent",
+        "K": 0.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.5592833328030667e-08,
+        "pearson": -0.5773079380245197,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116510610202e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 0.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.16134966428329,
+        "N6_probability": 1.0234267724556855e-07,
+        "pearson": -0.5772656225673286,
+        "pearson_error_to_negative_inverse_sqrt3": 8.46466222972353e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 0.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274478151078,
+        "N6_probability": 4.0914158783562035e-07,
+        "pearson": -0.5771810387657971,
+        "pearson_error_to_negative_inverse_sqrt3": 0.00016923042382877007
+      },
+      {
+        "instrument": "coherent",
+        "K": 0.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.32187752266253,
+        "N6_probability": 0.00024896301420930186,
+        "pearson": -0.5731944728209887,
+        "pearson_error_to_negative_inverse_sqrt3": 0.004155796368637166
+      },
+      {
+        "instrument": "coherent",
+        "K": 2.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.5592833328030942e-08,
+        "pearson": -0.5773079380245196,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116510621304e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 2.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.16134966428329,
+        "N6_probability": 1.0234267724557726e-07,
+        "pearson": -0.5772656225673285,
+        "pearson_error_to_negative_inverse_sqrt3": 8.464662229734632e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 2.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274478151078,
+        "N6_probability": 4.0914158783589823e-07,
+        "pearson": -0.577181038765799,
+        "pearson_error_to_negative_inverse_sqrt3": 0.0001692304238268827
+      },
+      {
+        "instrument": "coherent",
+        "K": 2.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.321875693752176,
+        "N6_probability": 0.00024896301650915927,
+        "pearson": -0.5731944730100511,
+        "pearson_error_to_negative_inverse_sqrt3": 0.004155796179574733
+      },
+      {
+        "instrument": "coherent",
+        "K": 200.0,
+        "t": 0.0001,
+        "remainder_over_t2": 51.180669117839756,
+        "N6_probability": 2.559283333481103e-08,
+        "pearson": -0.5773079380245488,
+        "pearson_error_to_negative_inverse_sqrt3": 4.233116507701418e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 200.0,
+        "t": 0.0002,
+        "remainder_over_t2": 51.161349603221026,
+        "N6_probability": 1.0234267746235268e-07,
+        "pearson": -0.5772656225674244,
+        "pearson_error_to_negative_inverse_sqrt3": 8.464662220142305e-05
+      },
+      {
+        "instrument": "coherent",
+        "K": 200.0,
+        "t": 0.0004,
+        "remainder_over_t2": 51.12274429301265,
+        "N6_probability": 4.0914159475915395e-07,
+        "pearson": -0.5771810387673175,
+        "pearson_error_to_negative_inverse_sqrt3": 0.00016923042230831964
+      },
+      {
+        "instrument": "coherent",
+        "K": 200.0,
+        "t": 0.01,
+        "remainder_over_t2": 49.31696105296451,
+        "N6_probability": 0.0002490066471734183,
+        "pearson": -0.5731948460611346,
+        "pearson_error_to_negative_inverse_sqrt3": 0.004155423128491265
+      }
+    ],
+    "small_time_ratios": [
+      {
+        "instrument": "resolved",
+        "K": 0.0,
+        "absolute_remainder_ratio_double_time": 3.9984900976177564
+      },
+      {
+        "instrument": "resolved",
+        "K": 2.0,
+        "absolute_remainder_ratio_double_time": 3.9984900976177564
+      },
+      {
+        "instrument": "resolved",
+        "K": 200.0,
+        "absolute_remainder_ratio_double_time": 3.998490092845465
+      },
+      {
+        "instrument": "coherent",
+        "K": 0.0,
+        "absolute_remainder_ratio_double_time": 3.9984900976177564
+      },
+      {
+        "instrument": "coherent",
+        "K": 2.0,
+        "absolute_remainder_ratio_double_time": 3.9984900976177564
+      },
+      {
+        "instrument": "coherent",
+        "K": 200.0,
+        "absolute_remainder_ratio_double_time": 3.998490092845465
+      }
+    ],
+    "mutations": [
+      {
+        "instrument": "resolved",
+        "mutation": "drop_loss",
+        "trace": 1.0642560080633874,
+        "N6_probability": 0.00025600806338742937
+      },
+      {
+        "instrument": "resolved",
+        "mutation": "drop_recycling",
+        "trace": 0.9380049995307295,
+        "N6_probability": 0.0
+      },
+      {
+        "instrument": "coherent",
+        "mutation": "drop_loss",
+        "trace": 1.0642560080633874,
+        "N6_probability": 0.00025600806338742937
+      },
+      {
+        "instrument": "coherent",
+        "mutation": "drop_recycling",
+        "trace": 0.9380049995307295,
+        "N6_probability": 0.0
+      }
+    ]
+  },
+  "all_tree_float_leaves_finite": 1628,
+  "all_observed_input_files_unchanged": 40,
+  "result_hashes": {
+    "PRIMITIVE_RESULTS.json": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b",
+    "TREE_RESULTS.json": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-25T02:22:09.648803+00:00",
+  "root_personally_derived": true,
+  "full_note_code_and_all_scientific_rows_read": true,
+  "checked_scopes": [
+    "Uniform cluster rotation and its P-block remainder",
+    "Strong full-energy propagators on bare P inputs",
+    "Trace-close actual finite-record conditional densities tested against bounded energy characteristic functions",
+    "Positive-bin then shrinking-bin diagonal for original B output",
+    "Four-state illustrative exact birth-energy weak limit with divergent first and second moments"
+  ],
+  "failed_route_preserved": "Pointwise application of epsilon^-1 j to merely trace-close P density is invalid; bare jP=0. No such substitution is made.",
+  "source_binding_verified": true,
+  "row_counts": {
+    "spectrum": 10,
+    "first_event": 15,
+    "responses": 25
+  },
+  "numeric_scope": "80-digit finite matrix corroboration; not an original lattice simulation, interval proof or independent reconstruction.",
+  "independent_check": "Not started; root candidate only.",
+  "physical_limits": [
+    "No calibrated physical energy observable",
+    "No reservoir/heat/work or mean convergence",
+    "No all joint resource/bin schedule",
+    "No infinite-volume, weak-g or laboratory-error uniformity",
+    "No spectral-edge transfer from weak convergence"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "frozen_utc": "2026-09-24T16:19:30.159237+00:00",
+  "scope": "Only the released root proof, two seals and their named members; no other root gap work or active packets.",
+  "pre_seal_sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+  "sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/AUTHOR_SEAL.json",
+      "snapshot": "released_sources/AUTHOR_SEAL.json",
+      "sha256": "f158f2aad27dd8b4f4ef13e8d348ef2ef9ed049f42bc1ff92623e98ade62ae5f",
+      "bytes": 444
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/CONTROL_SEAL.json",
+      "snapshot": "released_sources/CONTROL_SEAL.json",
+      "sha256": "0ebde9f2bede5748005aa574d25f2f4a0415f8989f3bdc7d13bb2950925c4ecd",
+      "bytes": 684
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+      "snapshot": "released_sources/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+      "sha256": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+      "bytes": 10990
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/recent_birth_controls.py",
+      "snapshot": "released_sources/recent_birth_controls.py",
+      "sha256": "1d56ded6fa3ee1ef8b739c7117d0be2aeff24c2d28f651aceda6be258ad35fc6",
+      "bytes": 6226
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/RECENT_BIRTH_CONTROL_RESULTS.json",
+      "snapshot": "released_sources/RECENT_BIRTH_CONTROL_RESULTS.json",
+      "sha256": "e1e59a8f0faff148503e536bcbe6bdd20678a088eae72e816509d471fdcb1a5a",
+      "bytes": 9833
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/CONTROL.stdout.txt",
+      "snapshot": "released_sources/CONTROL.stdout.txt",
+      "sha256": "e1e59a8f0faff148503e536bcbe6bdd20678a088eae72e816509d471fdcb1a5a",
+      "bytes": 9833
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/CONTROL.stderr.txt",
+      "snapshot": "released_sources/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/CONTROL_EXECUTION.json",
+      "snapshot": "released_sources/CONTROL_EXECUTION.json",
+      "sha256": "9e05977d658e724b3587f95d8020836a1aebb0ca07dc520043da15f1c86b6145",
+      "bytes": 248
+    }
+  ]
+}

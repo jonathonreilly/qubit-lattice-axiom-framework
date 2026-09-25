@@ -1,0 +1,7 @@
+{
+  "PRE_sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27",
+  "seal_sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc",
+  "members_verified": 42,
+  "origins_verified": 11,
+  "read_status": "Complete PRE, four scientific scripts, evidence verifier and all compact scientific rows personally read; long repetitive witness fields mechanically traversed by inspected verifier, not claimed manually all read."
+}

@@ -1,0 +1,428 @@
+{
+  "primitive_graded_sources": {
+    "rows": [
+      {
+        "domain": "rotor",
+        "input": "zero",
+        "mark": "plus",
+        "B_norm2": "2",
+        "R_norm2": "4",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "4",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "44"
+      },
+      {
+        "domain": "rotor",
+        "input": "zero",
+        "mark": "minus",
+        "B_norm2": "2",
+        "R_norm2": "2",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "2",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "38"
+      },
+      {
+        "domain": "rotor",
+        "input": "zero",
+        "mark": "coherent",
+        "B_norm2": "4",
+        "R_norm2": "6",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "6",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "82"
+      },
+      {
+        "domain": "rotor",
+        "input": "one_face_circulation",
+        "mark": "plus",
+        "B_norm2": "2",
+        "R_norm2": "4",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "4",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "44"
+      },
+      {
+        "domain": "rotor",
+        "input": "one_face_circulation",
+        "mark": "minus",
+        "B_norm2": "2",
+        "R_norm2": "2",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "2",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "38"
+      },
+      {
+        "domain": "rotor",
+        "input": "one_face_circulation",
+        "mark": "coherent",
+        "B_norm2": "4",
+        "R_norm2": "6",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "6",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "82"
+      },
+      {
+        "domain": "spin_one",
+        "input": "zero",
+        "mark": "plus",
+        "B_norm2": "2",
+        "R_norm2": "4",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "4",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "44"
+      },
+      {
+        "domain": "spin_one",
+        "input": "zero",
+        "mark": "minus",
+        "B_norm2": "2",
+        "R_norm2": "2",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "2",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "38"
+      },
+      {
+        "domain": "spin_one",
+        "input": "zero",
+        "mark": "coherent",
+        "B_norm2": "4",
+        "R_norm2": "6",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "6",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "82"
+      },
+      {
+        "domain": "spin_one",
+        "input": "one_face_circulation",
+        "mark": "plus",
+        "B_norm2": "0",
+        "R_norm2": "0",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "0"
+      },
+      {
+        "domain": "spin_one",
+        "input": "one_face_circulation",
+        "mark": "minus",
+        "B_norm2": "1",
+        "R_norm2": "1",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "19"
+      },
+      {
+        "domain": "spin_one",
+        "input": "one_face_circulation",
+        "mark": "coherent",
+        "B_norm2": "1",
+        "R_norm2": "1",
+        "first_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        "second_high_grade_row_coefficient_norm2_orders_0_to_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "altered_cubic_middle_coefficient_norm2": "19"
+      }
+    ],
+    "initial_first_high_coefficient": "-i Gamma_1 F on both checked physical inputs in both domains",
+    "initial_higher_noevent_coefficients": "zero through cubic order for grades 2,3,4",
+    "arithmetic": "Exact Gaussian rational coefficients and exact contour residues",
+    "scope": "Two physical inputs, rotor and exact spin-one boundary actions, and three edge-01 marks; no complete matrix construction, finite-time cube simulation or uniform-time numerical proof."
+  },
+  "scalar_age_moments": {
+    "rows": [
+      {
+        "epsilon": 0.2,
+        "t": 0.2,
+        "mean": 0.14124275318780044,
+        "mean_limit": 0.1400059792019731,
+        "eps4_second": 0.1836155791441406,
+        "eps4_variance": 0.18358365991961567,
+        "eps4_second_and_variance_limit": 0.18200777296256504,
+        "age_quadrature_absolute_mean_error": 2.220446049250313e-16
+      },
+      {
+        "epsilon": 0.2,
+        "t": 0.7,
+        "mean": 0.1156552474312822,
+        "mean_limit": 0.11462720078745171,
+        "eps4_second": 0.15035182166066685,
+        "eps4_variance": 0.1503304198426534,
+        "eps4_second_and_variance_limit": 0.14901536102368723,
+        "age_quadrature_absolute_mean_error": 5.3912985187309914e-12
+      },
+      {
+        "epsilon": 0.2,
+        "t": 1.4,
+        "mean": 0.08741035562260455,
+        "mean_limit": 0.08663337468373693,
+        "eps4_second": 0.11363346230938592,
+        "eps4_variance": 0.11362123739695382,
+        "eps4_second_and_variance_limit": 0.11262338708885801,
+        "age_quadrature_absolute_mean_error": 4.077072013330962e-12
+      },
+      {
+        "epsilon": 0.1,
+        "t": 0.2,
+        "mean": 0.14031779652758997,
+        "mean_limit": 0.1400059792019731,
+        "eps4_second": 0.182413135485867,
+        "eps4_variance": 0.18241116657746476,
+        "eps4_second_and_variance_limit": 0.18200777296256504,
+        "age_quadrature_absolute_mean_error": 5.575040429306455e-12
+      },
+      {
+        "epsilon": 0.1,
+        "t": 0.7,
+        "mean": 0.11488249522127679,
+        "mean_limit": 0.11462720078745171,
+        "eps4_second": 0.14934724378765984,
+        "eps4_variance": 0.14934592398888902,
+        "eps4_second_and_variance_limit": 0.14901536102368723,
+        "age_quadrature_absolute_mean_error": 4.564446043353598e-12
+      },
+      {
+        "epsilon": 0.1,
+        "t": 1.4,
+        "mean": 0.08682632206610609,
+        "mean_limit": 0.08663337468373693,
+        "eps4_second": 0.11287421868593793,
+        "eps4_variance": 0.11287346480491758,
+        "eps4_second_and_variance_limit": 0.11262338708885801,
+        "age_quadrature_absolute_mean_error": 3.4497543710543255e-12
+      },
+      {
+        "epsilon": 0.05,
+        "t": 0.2,
+        "mean": 0.14008380353727162,
+        "mean_limit": 0.1400059792019731,
+        "eps4_second": 0.18210894459845314,
+        "eps4_variance": 0.18210882195175307,
+        "eps4_second_and_variance_limit": 0.18200777296256504,
+        "age_quadrature_absolute_mean_error": 5.3469451088972164e-12
+      },
+      {
+        "epsilon": 0.05,
+        "t": 0.7,
+        "mean": 0.11469091796409846,
+        "mean_limit": 0.11462720078745171,
+        "eps4_second": 0.14909819335332802,
+        "eps4_variance": 0.1490981111407864,
+        "eps4_second_and_variance_limit": 0.14901536102368723,
+        "age_quadrature_absolute_mean_error": 4.377720408399455e-12
+      },
+      {
+        "epsilon": 0.05,
+        "t": 1.4,
+        "mean": 0.08668153108989801,
+        "mean_limit": 0.08663337468373693,
+        "eps4_second": 0.11268599041686743,
+        "eps4_variance": 0.11268594345631848,
+        "eps4_second_and_variance_limit": 0.11262338708885801,
+        "age_quadrature_absolute_mean_error": 3.3086033912610446e-12
+      },
+      {
+        "epsilon": 0.025,
+        "t": 0.2,
+        "mean": 0.1400254271779701,
+        "mean_limit": 0.1400059792019731,
+        "eps4_second": 0.18203305533136113,
+        "eps4_variance": 0.18203304767232978,
+        "eps4_second_and_variance_limit": 0.18200777296256504,
+        "age_quadrature_absolute_mean_error": 5.291406202090343e-12
+      },
+      {
+        "epsilon": 0.025,
+        "t": 0.7,
+        "mean": 0.11464312344348557,
+        "mean_limit": 0.11462720078745171,
+        "eps4_second": 0.14903606047653126,
+        "eps4_variance": 0.149036055342529,
+        "eps4_second_and_variance_limit": 0.14901536102368723,
+        "age_quadrature_absolute_mean_error": 4.332242897753247e-12
+      },
+      {
+        "epsilon": 0.025,
+        "t": 1.4,
+        "mean": 0.0866454087682881,
+        "mean_limit": 0.08663337468373693,
+        "eps4_second": 0.11263903139877456,
+        "eps4_variance": 0.11263902846618594,
+        "eps4_second_and_variance_limit": 0.11262338708885801,
+        "age_quadrature_absolute_mean_error": 3.2742281108610882e-12
+      }
+    ],
+    "scope": "Separate scalar injection/depletion toy, not the cube; tests continuous-age scaling and mixed variance bookkeeping."
+  },
+  "age_envelope_exponents": {
+    "rows": [
+      {
+        "epsilon": 0.1,
+        "young_error_square_integral": 0.01601246398532014,
+        "young_divided_by_eps_1_5": 0.5063585714502861,
+        "old_age_square_integral_bound": 1.2170343454977317,
+        "old_divided_by_sqrt_eps": 3.848600522425122,
+        "persistent_Oeps3_source_scaled_contribution_at_T1": 1,
+        "persistent_Oeps4_source_scaled_contribution_at_T1": 0.010000000000000002
+      },
+      {
+        "epsilon": 0.01,
+        "young_error_square_integral": 0.0004100711248442168,
+        "young_divided_by_eps_1_5": 0.4100711248442168,
+        "old_age_square_integral_bound": 0.39805428447290037,
+        "old_divided_by_sqrt_eps": 3.9805428447290034,
+        "persistent_Oeps3_source_scaled_contribution_at_T1": 1,
+        "persistent_Oeps4_source_scaled_contribution_at_T1": 0.0001
+      },
+      {
+        "epsilon": 0.001,
+        "young_error_square_integral": 1.2680756738310007e-05,
+        "young_divided_by_eps_1_5": 0.4010007374758738,
+        "old_age_square_integral_bound": 0.126428034549841,
+        "old_divided_by_sqrt_eps": 3.9980054927595825,
+        "persistent_Oeps3_source_scaled_contribution_at_T1": 1,
+        "persistent_Oeps4_source_scaled_contribution_at_T1": 1e-06
+      },
+      {
+        "epsilon": 0.0001,
+        "young_error_square_integral": 4.0010000746012504e-07,
+        "young_divided_by_eps_1_5": 0.400100007460125,
+        "old_age_square_integral_bound": 0.039998000549927505,
+        "old_divided_by_sqrt_eps": 3.9998000549927504,
+        "persistent_Oeps3_source_scaled_contribution_at_T1": 1,
+        "persistent_Oeps4_source_scaled_contribution_at_T1": 1e-08
+      },
+      {
+        "epsilon": 1e-05,
+        "young_error_square_integral": 1.2649426870807246e-08,
+        "young_divided_by_eps_1_5": 0.4000100000748736,
+        "old_age_square_integral_bound": 0.012649047396859544,
+        "old_divided_by_sqrt_eps": 3.999980000549993,
+        "persistent_Oeps3_source_scaled_contribution_at_T1": 1,
+        "persistent_Oeps4_source_scaled_contribution_at_T1": 1.0000000000000002e-10
+      }
+    ],
+    "scope": "Arithmetic control of the analytic age-envelope exponents; no empirical cube decay fit."
+  },
+  "elapsed_seconds": 0.18976108287461102,
+  "source_sha256": "7551ceab1125b1371571fa8ba97e022b501addcc735638db65518334821a544c",
+  "author_code_imported": false
+}

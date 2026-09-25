@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-24T16:38:05.594912+00:00",
+  "comparison_base": "cfac353eedae504627196bf9e48009f1b4177f94",
+  "only_note_change": "Visible Type and proposed_retained status metadata; conditional/audit caveats and all mathematics unchanged.",
+  "fresh_primary_seconds": 0.41100001335144043,
+  "scientific_results_equal_original_except_timings": true,
+  "stdout_objects": 1,
+  "files_sha256": {
+    "docs/MIXED_LOW_FIELD_INPUTS_RETAIN_CUBE_BIRTH_ENERGY_AND_COHERENCE_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "79a66e29604172997b9b7f73b42f042acd7ea2e01e6f43285cf462cc84b2566c",
+    "scripts/mixed_low_field_inputs_cube_birth_energy_and_coherence_2026_09_24.py": "ec6abee27fc084839d8c50f8d386ffc20010668bbcb681044ff8be0827bfb802",
+    "logs/runner-cache/mixed_low_field_inputs_cube_birth_energy_and_coherence_2026_09_24.txt": "09481d603cd7d286c4f6415d28d3766496bee4574f82af06790987a979f371a9",
+    "outputs/mixed_low_field_birth_energy_20260924/MIXED_PREPARATION_CONTROL_RESULTS.json": "b4808238b29b8cf5af30b83f685879b6f9e3a9b1020fb0ccf1fc4ec07528ee6d"
+  }
+}

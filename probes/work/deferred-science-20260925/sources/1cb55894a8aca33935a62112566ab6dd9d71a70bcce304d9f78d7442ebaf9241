@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-24T23:52:03.410734+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/freeze_sources.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 0.07458845782093704,
+  "exit_code": 0,
+  "script_sha256": "34539f1cbaa27b68069607c8ffc0534ae3ebfa1c17d07619973a34fccc574149",
+  "stdout_bytes": 4084,
+  "stdout_sha256": "7d0b8b3ffd79ee4730ab1e415cc7d1d6f2928b431f7a2cde9712fef61c305973",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,321 @@
+{
+  "sealed_utc": "2026-09-25T11:01:12.275861+00:00",
+  "phase": "Final released-source publication correspondence for Part II and stated joins",
+  "members": [
+    {
+      "path": "FINAL_BINDINGS.json",
+      "sha256": "ca61696a4cfb4d1848cfef6f54a698383abd852cc3118e3170b5c856f05c42d0",
+      "bytes": 2983
+    },
+    {
+      "path": "GIT_SOURCE_EVIDENCE.json",
+      "sha256": "2699dbcd77571da3ec745e6117ba940653218fb7c1c65c06756648e7d8fe2281",
+      "bytes": 7620
+    },
+    {
+      "path": "PRESERVATION_AFTER.json",
+      "sha256": "c5ecb1fd300ec3ce2a2903d053603b39d867d8625bb28a807904c956948674b4",
+      "bytes": 86424
+    },
+    {
+      "path": "PRIOR_PRESERVATION_BEFORE.json",
+      "sha256": "b7caec65aaf497dee4ea3f1992ab6d40df919c466cfa9c56c005c7ddc3b07d76",
+      "bytes": 37016
+    },
+    {
+      "path": "PROCESS_LOG.md",
+      "sha256": "55b27425471b14f83302007688e684ac80ace312de991113243fb4583bcbbf7a",
+      "bytes": 3689
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "afd2fc9d3044c4cc1a9f0b4c439cad0c910595a1ed04362cb3ae367b3bf83b5e",
+      "bytes": 15252
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "1117371c26d6bbe19464a258a26b683d725d2ff8311b4d963297a78c56be5772",
+      "bytes": 27960
+    },
+    {
+      "path": "capture.execution.json",
+      "sha256": "3bc93a00c30f878ed87ddba4452fa68c1b18aba5106298efc59c3e022448810f",
+      "bytes": 877
+    },
+    {
+      "path": "capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "capture.stdout.txt",
+      "sha256": "237a5307625048ca0f514684d4727a3453fe18f6d5ab75bcab58df82ba28564a",
+      "bytes": 237
+    },
+    {
+      "path": "capture_sources.py",
+      "sha256": "244146f04671a1d42750b38df2308ac646a637cd312562a6ba045967ba573554",
+      "bytes": 8437
+    },
+    {
+      "path": "compare_read_only.py",
+      "sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9",
+      "bytes": 19974
+    },
+    {
+      "path": "comparison.execution.json",
+      "sha256": "46cad1760790e5ccd831ba9e313f5751418c29a0670ef221d999df0802b67c2b",
+      "bytes": 887
+    },
+    {
+      "path": "comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "comparison.stdout.txt",
+      "sha256": "ca52b8469b58b8956b6df1519d812468a64f7b16193c3872c5723844be8412db",
+      "bytes": 11638
+    },
+    {
+      "path": "record_run.py",
+      "sha256": "11091e9b5f1853c7dff93eb63e11ba08002c6bf01e9c3dd06ffdeecf7573551e",
+      "bytes": 1499
+    },
+    {
+      "path": "seal_packet.py",
+      "sha256": "607a0020ffb35341effd1a88fa5616cf19f044d4aae6ab8b2b2a68a744fdd2e2",
+      "bytes": 9658
+    },
+    {
+      "path": "sources/base_citation_graph_manifest.json",
+      "sha256": "687e5130acd4b38ac5f318c4bea9c1362920a687eae2306c08b2706a35e20abf",
+      "bytes": 943724
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_FROZEN_SOURCES.json",
+      "sha256": "ab6385c5cde92eef0512a455934dc90600ac711dbb2e613c43b198a43848005d",
+      "bytes": 7753
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stdout.txt",
+      "sha256": "13e148f00f55eb5270f6d601a8086167b0f4e73b567914cb7167b393707aba4c",
+      "bytes": 281
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_EXECUTION.json",
+      "sha256": "28ffa2b58b4fb6cad0d083db237f959657fe3c4973bb6c7f71111312ed9b5d60",
+      "bytes": 2368
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "08b29054c79ff0f74be83ad1feb5d9c15417d57f435f968ac52e079e5b85cce0",
+      "bytes": 1498
+    },
+    {
+      "path": "sources/external/LOCAL_CHARGE_OBSERVATION_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "45fac29adf50d8a33f6cfb1a66f360a83e0cda6d80e45231fe9ae5d3867df653",
+      "bytes": 5458
+    },
+    {
+      "path": "sources/external/build_local_charge_observation_publication.py",
+      "sha256": "ad789f18f600478da3a27b739e225ec2003aa9e7561b75814ceec3803503978f",
+      "bytes": 14109
+    },
+    {
+      "path": "sources/external/local-charge-observation-publication-history/PREMATURE_GRAPH_DEPENDENCY_FAILURE.json",
+      "sha256": "d878bcad193fb57276427e1433c1538a4efac2d4812d72dbca53ce927f4a08c1",
+      "bytes": 748
+    },
+    {
+      "path": "sources/external/local-charge-observation-publication-history/verify_publication_attempt01.py",
+      "sha256": "58a3e2354ca2e589c2d1c5b158a579ea83c3c6abb513a2df08c9b3b10a74f80e",
+      "bytes": 4398
+    },
+    {
+      "path": "sources/external/verify_local_charge_observation_publication.py",
+      "sha256": "f1bcd6221c343c63739dcf8bc59358c0d18422bca6d3f7c5a7e0bf006d327436",
+      "bytes": 4649
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d",
+      "bytes": 2977
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d",
+      "bytes": 10761
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/attempt01/EXECUTION.json",
+      "sha256": "4e221b706221f500e98d3b390f66f1a1631eb7c6bdbd280fa2710215303f0ce9",
+      "bytes": 730
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/attempt01/stdout.json",
+      "sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad",
+      "bytes": 1235781
+    },
+    {
+      "path": "sources/native-charge-current-noise-personal/current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "bytes": 6692
+    },
+    {
+      "path": "sources/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "sha256": "e1447ae3d5a5cad6c756dc1b2079e0bee6e275c53bc8f9a9d926037168c9cba4",
+      "bytes": 10800
+    },
+    {
+      "path": "sources/native-charge-current-noise-qualified/QUALIFICATION.md",
+      "sha256": "32e296ed994812fec4b9300f071d8a313abd042c711d0b7519f4bb37e0652ac2",
+      "bytes": 806
+    },
+    {
+      "path": "sources/native-charge-current-noise-qualified/QUALIFICATION_SEAL.json",
+      "sha256": "f13762c1ce4d0de5d4d6b185fd59059519b59956fa3f11a038ea514c85329a13",
+      "bytes": 2671
+    },
+    {
+      "path": "sources/native-charge-current-noise-qualified/WORDING_ONLY.diff",
+      "sha256": "f3fc7654beb59cb86e80cc2d17127f996c1ddcf5a4b874f8175a08d27579a17c",
+      "bytes": 1104
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/AUTHOR_SEAL.json",
+      "sha256": "1f2cb7ce4c8e8b5491a2e35aae215f7e0533d6119343074173ef13dc877d8ba8",
+      "bytes": 3030
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md",
+      "sha256": "9a83191276a1a0380158ef88961c1d36b0d82c9cd645210739c999c4568f464a",
+      "bytes": 13072
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/attempt01/EXECUTION.json",
+      "sha256": "8108d2eb4360e706148647be491fdd55446084e2528ee2d2fdf4cea8ef337502",
+      "bytes": 523
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/attempt01/stdout.json",
+      "sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545",
+      "bytes": 7158313
+    },
+    {
+      "path": "sources/native-charge-finite-time-personal/local_support_controls.py",
+      "sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+      "bytes": 5849
+    },
+    {
+      "path": "sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36",
+      "bytes": 6692
+    },
+    {
+      "path": "sources/publication/.claude/science/physics-loops/mobile-record-local-charge-observation-20260925/runtime/local_support_controls.py",
+      "sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263",
+      "bytes": 5849
+    },
+    {
+      "path": "sources/publication/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "sources/publication/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516",
+      "bytes": 16764
+    },
+    {
+      "path": "sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/publication/docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "087ba77c29a8d44a88aa3bb493d34bd1db64e10115a935a7521ea8895a12359e",
+      "bytes": 30350
+    },
+    {
+      "path": "sources/publication/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "sources/publication/docs/audit/data/citation_graph_manifest.json",
+      "sha256": "a58e960bfa9c8a06d7a52c00a5d357c115f186773a950df23b8b56dfab2bdb67",
+      "bytes": 943876
+    },
+    {
+      "path": "sources/publication/docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "bytes": 2049
+    },
+    {
+      "path": "sources/publication/logs/runner-cache/original_local_charge_current_and_finite_time_covariance_2026_09_25.txt",
+      "sha256": "07c11a625f1de764a6b020803a51634648c558fa3e677d91f9103ae84baf50cc",
+      "bytes": 1876
+    },
+    {
+      "path": "sources/publication/outputs/native_local_charge_covariance_20260925/LOCAL_CHARGE_OBSERVATION_PUBLIC_RESULTS.json",
+      "sha256": "12c3f617abd76dcd472ae06ad9385537a6977b458109dd3020b199c3286e2c05",
+      "bytes": 1477
+    },
+    {
+      "path": "sources/publication/outputs/native_local_charge_covariance_20260925/current.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/publication/outputs/native_local_charge_covariance_20260925/current.stdout.json",
+      "sha256": "8aa219f33df7b834bfc021fe65847e8bb4c1d4b392ac989ff853ae98b034a5df",
+      "bytes": 1235781
+    },
+    {
+      "path": "sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/publication/outputs/native_local_charge_covariance_20260925/finite_time.stdout.json",
+      "sha256": "fa35240e69133e82a52702afbcf4eadc7bdc3ff5954649e8533bb7d49561abdf",
+      "bytes": 7158313
+    },
+    {
+      "path": "sources/publication/scripts/original_local_charge_current_and_finite_time_covariance_2026_09_25.py",
+      "sha256": "d7c2f48c8f8b238ac8b37183d91fff4553a50ceb635f2750b8bcaa995e66a731",
+      "bytes": 3373
+    },
+    {
+      "path": "sources/publication/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    }
+  ],
+  "member_count": 62,
+  "PRE_seal_sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255",
+  "POST_seal_sha256": "2ce94c18e4e8ff9d0a0e14b0e2925e65b41aa7f02f4016530d07fb20325af7a6",
+  "audit_verdict_applied": false,
+  "receipt_outside_manifest": true
+}

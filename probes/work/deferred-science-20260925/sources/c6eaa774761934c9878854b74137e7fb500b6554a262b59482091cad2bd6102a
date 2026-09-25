@@ -1,0 +1,381 @@
+{
+  "all_complete_primitive_rows_checked": 8480,
+  "polarized_covariance_entries": 180,
+  "all_geometry_mark_norm_current_and_charge_arrays_checked": true,
+  "groups": [
+    {
+      "graph": "torus2",
+      "primitive_rows": 48,
+      "charge_mean": [
+        0,
+        -12,
+        0,
+        -96,
+        36,
+        60
+      ],
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -16,
+          48,
+          -32,
+          -56
+        ],
+        [
+          0,
+          -16,
+          448,
+          0,
+          48,
+          -64
+        ],
+        [
+          0,
+          48,
+          0,
+          384,
+          -144,
+          -240
+        ],
+        [
+          0,
+          -32,
+          48,
+          -144,
+          168,
+          24
+        ],
+        [
+          0,
+          -56,
+          -64,
+          -240,
+          24,
+          472
+        ]
+      ],
+      "formation_current_values": [
+        4
+      ],
+      "charge_drift_values": [
+        -12,
+        12
+      ],
+      "Fourier": null
+    },
+    {
+      "graph": "torus4",
+      "primitive_rows": 1920,
+      "charge_mean": [
+        0,
+        -60,
+        0,
+        -3840,
+        0,
+        0
+      ],
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -160,
+          240,
+          40,
+          0
+        ],
+        [
+          0,
+          -160,
+          53760,
+          0,
+          -1280,
+          1280
+        ],
+        [
+          0,
+          240,
+          0,
+          15360,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          -1280,
+          0,
+          1280,
+          0
+        ],
+        [
+          0,
+          0,
+          1280,
+          0,
+          0,
+          1280
+        ]
+      ],
+      "formation_current_values": [
+        10
+      ],
+      "charge_drift_values": [
+        -60,
+        60
+      ],
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1/2",
+          "0",
+          "0"
+        ],
+        "full_initial_second_moment_slope_in_kappa": 2560,
+        "site_normalized_slope_in_kappa": 40,
+        "defect_sum": 1,
+        "imaginary_self_covariance": 0
+      }
+    },
+    {
+      "graph": "torus6",
+      "primitive_rows": 6480,
+      "charge_mean": [
+        0,
+        -60,
+        0,
+        -12960,
+        0,
+        0
+      ],
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          120,
+          -240,
+          240,
+          80,
+          0
+        ],
+        [
+          0,
+          -240,
+          302400,
+          0,
+          -8640,
+          0
+        ],
+        [
+          0,
+          240,
+          0,
+          51840,
+          0,
+          0
+        ],
+        [
+          0,
+          80,
+          -8640,
+          0,
+          17280,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "formation_current_values": [
+        10
+      ],
+      "charge_drift_values": [
+        -60,
+        60
+      ],
+      "Fourier": {
+        "allowed_k_in_pi": [
+          "1",
+          "0",
+          "0"
+        ],
+        "full_initial_second_moment_slope_in_kappa": 17280,
+        "site_normalized_slope_in_kappa": 80,
+        "defect_sum": 2,
+        "imaginary_self_covariance": 0
+      }
+    },
+    {
+      "graph": "path7",
+      "primitive_rows": 8,
+      "charge_mean": [
+        0,
+        0,
+        0,
+        -16,
+        -6,
+        -10
+      ],
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          4,
+          -4
+        ],
+        [
+          0,
+          0,
+          0,
+          64,
+          24,
+          40
+        ],
+        [
+          0,
+          0,
+          4,
+          24,
+          28,
+          -16
+        ],
+        [
+          0,
+          0,
+          -4,
+          40,
+          -16,
+          76
+        ]
+      ],
+      "formation_current_values": [
+        0,
+        2
+      ],
+      "charge_drift_values": [
+        -4,
+        0,
+        2,
+        4
+      ],
+      "Fourier": null
+    },
+    {
+      "graph": "K2_3",
+      "primitive_rows": 24,
+      "charge_mean": [
+        0,
+        -12,
+        60,
+        -48,
+        12,
+        60
+      ],
+      "covariance": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          -72,
+          48,
+          -24,
+          -72
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ],
+        [
+          0,
+          48,
+          -240,
+          192,
+          -48,
+          -240
+        ],
+        [
+          0,
+          -24,
+          56,
+          -48,
+          56,
+          56
+        ],
+        [
+          0,
+          -72,
+          344,
+          -240,
+          56,
+          344
+        ]
+      ],
+      "formation_current_values": [
+        4
+      ],
+      "charge_drift_values": [
+        -12,
+        8
+      ],
+      "Fourier": null
+    }
+  ],
+  "mode": "read-only reconstruction of own stored evidence; no independent authorship or finite-lag calculation"
+}

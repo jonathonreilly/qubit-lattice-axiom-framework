@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-25T03:54:46.092283+00:00",
+  "POST_sha256": "b747087076f176840f9f55837b43f937aa4e2c19c192c01a7bba4175e29e885c",
+  "POST_seal_sha256": "913f1afadcdb43214ee63108b015e8e95df6c1cc98221a07295a99afbb404bed",
+  "sealed_members": {
+    "PRE_SEAL.json": 35,
+    "POST_SEAL.json": 24
+  },
+  "live_origins": 21,
+  "full_root_read": [
+    "complete POST",
+    "post_check.py",
+    "failure log and formatting diff",
+    "all new comparison output incl147local26ambient28torus4half2sharedgeometry scope",
+    "source and execution bindings"
+  ],
+  "fresh_readonly_verifier_output_sha256": "e026a0a4350cf1e91bc5af9490d81b7945bf3f12fb6dd11d749006ad0d314823",
+  "finding": "No required mathematical repair. PRE-only sharper bounds and finite-support estimate retain provenance; old mutating PRE utility never rerun.",
+  "limits": "Fresh correspondence verification, not a new physical simulation or third independent reconstruction."
+}

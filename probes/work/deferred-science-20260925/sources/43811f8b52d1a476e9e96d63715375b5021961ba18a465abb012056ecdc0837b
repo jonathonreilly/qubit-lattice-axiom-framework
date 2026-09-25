@@ -1,0 +1,14 @@
+{
+  "started_unix": 1790289147.4697778,
+  "wall_seconds": 0.11987612512893975,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_binding_check.py"
+  ],
+  "code_sha256": "acb53289791868249e842c6b842e7470b1abb59780eddf3370fd03bc87faf52e",
+  "stdout_sha256": "7a59680e329a31ab4625608dfc20aefc1fdfaf3733b18e37f72e91d6bcbfc39c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 3317,
+  "stderr_bytes": 0
+}

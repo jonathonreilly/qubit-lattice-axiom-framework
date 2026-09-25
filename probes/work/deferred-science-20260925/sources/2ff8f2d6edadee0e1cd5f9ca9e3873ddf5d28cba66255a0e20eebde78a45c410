@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-25T02:18:33.845348+00:00",
+  "scope": "Repair lost inline Markdown math delimiters; preserve the reviewed draft.",
+  "before_sha256": "af9ddd081ee38c4f59cee428b43132d8a4d4cef87e4e6efecb933daf768d614a",
+  "after_sha256": "0a3cbf8eaf157866d0c496ff6fb35f2e0fda5f4ba19767db37aa8a82cc4cf8a9",
+  "inline_delimiter_replacements": 132,
+  "complete_diff_sha256": "8f08d017b4f6e5949c12232898deedcf2213ff2f8911566cb0591f54014b67ad",
+  "formulas_and_claims_changed": false,
+  "earlier_scientific_verifier_binding_retained": true
+}

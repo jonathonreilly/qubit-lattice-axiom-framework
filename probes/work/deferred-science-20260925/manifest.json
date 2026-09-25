@@ -129,6 +129,39 @@
       ],
       "file": "unit-27.json",
       "sha256": "ceb1721e989e71d6542c5880fd25e03f4cad14a47df61c4be02aaa72121dfb0f"
+    },
+    {
+      "unit": 28,
+      "prs": [
+        9038,
+        9049,
+        9057,
+        9067,
+        9079,
+        9087,
+        9101,
+        9102,
+        9104,
+        9109,
+        9120,
+        9124,
+        9131,
+        9137,
+        9143,
+        9147,
+        9150,
+        9167,
+        9181,
+        9192,
+        9199,
+        9206,
+        9208,
+        9213,
+        9217,
+        9219
+      ],
+      "file": "unit-28.json",
+      "sha256": "f67dca42a90443b320a91c41a7f44b89dcddbf704bda6e9187a8d13dbac256cc"
     }
   ],
   "task_ids": [
@@ -142,10 +175,14 @@
     "J:derive:deferred-20260925-walker-source-closure:a1",
     "J:derive:deferred-20260925-excluded-record-interactions:a1",
     "J:derive:deferred-20260925-clock-formation-selection:a1",
-    "J:derive:deferred-20260925-walker-realization-limits:a1"
+    "J:derive:deferred-20260925-walker-realization-limits:a1",
+    "J:derive:deferred-20260925-energy-moments-and-apparatus:a1",
+    "J:derive:deferred-20260925-preparation-optical-readout:a1",
+    "J:derive:deferred-20260925-ground-energy-and-response:a1",
+    "J:derive:deferred-20260925-charge-threshold-and-transport:a1"
   ],
   "science_authority": "current origin/main, not frozen originals",
   "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
   "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction",
-  "main_at_latest_supplement": "ef918c1910ccf8b7a1125fbbdfc54eb84186176e"
+  "main_at_latest_supplement": "6b414efff904b7958b5a407686f5b0885d9a1dd7"
 }

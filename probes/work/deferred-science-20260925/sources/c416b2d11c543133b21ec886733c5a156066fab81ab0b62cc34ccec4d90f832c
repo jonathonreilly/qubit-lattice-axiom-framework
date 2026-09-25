@@ -1,0 +1,10 @@
+{
+  "started_at_utc": "2026-09-24T18:37:25.678224+00:00",
+  "elapsed_seconds": 0.3986627908889204,
+  "exit_code": 0,
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-dispersion-independent/dispersion_controls.py"
+  ],
+  "scope": "Independent small controls only; no parent runner or empirical likelihood rerun."
+}

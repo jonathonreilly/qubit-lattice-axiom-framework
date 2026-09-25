@@ -1,0 +1,9 @@
+{
+  "tau": 0.0001,
+  "J": 6496.270939773013,
+  "absolute_minimum_eigenvalue": -4.435186788519753e-12,
+  "dimensionless_minimum_eigenvalue": -4.931034019286234e-16,
+  "max_dimensionless_spectrum_error": 1.7763568394002505e-15,
+  "exact_analytic_minimum": 0.0,
+  "diagnosis": "Absolute eigensolver roundoff scales with J. The exact finite-path formula is nonnegative. Replace the dimensionful numerical diagnostic with a comparison of the full dimensionless spectrum at the same 2e-12 threshold; preserve the failed absolute check."
+}

@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-09-24T23:16:04.729589+00:00",
+  "elapsed_seconds": 0.03477983409538865,
+  "exit_code": 0,
+  "scope": "Source and existing evidence verification only; no numerical science rerun.",
+  "verifier_sha256": "76d329963967c04fa3a95ed6d5869cc8b677d0776363613d739f42d40595295d"
+}

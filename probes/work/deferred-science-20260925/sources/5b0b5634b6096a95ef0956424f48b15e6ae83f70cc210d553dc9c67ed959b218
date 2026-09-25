@@ -1,0 +1,154 @@
+{
+  "schema": "independent-post-evidence-seal-v1",
+  "created_utc": "2026-09-24T15:58:21.634226+00:00",
+  "root": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-independent",
+  "phase": "Released-source POST after immutable independent PRE",
+  "dependency": {
+    "path": "PRE_SEAL.json",
+    "sha256": "7b3a5de5ad3c2d1d47ad259333aa7ab90297d0108ebe36868306a72f8f4b1234",
+    "unchanged_member_count": 23
+  },
+  "member_count": 23,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 19532,
+      "sha256": "7317b366a9c936f7e2a9708bc4bb1556b55d9c516e98133b576efda9c51916cf",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_CHECK.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_CHECK.stdout.txt",
+      "bytes": 6228,
+      "sha256": "9b75753954ba6fedbd987421b62c9118dd7a2bf3dee0ca1bed8eed9f94b111ea",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_CHECKPOINT.md",
+      "bytes": 1885,
+      "sha256": "d6e1fc98e69b1f1975f482707e66cb9e335ceef31ab5e8bab72ff4adf6cb74fc",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_CHECK_EXECUTION.json",
+      "bytes": 1062,
+      "sha256": "c57c9359cf05e2c7e3e33a85905369bf5e87ae9a54208fad94ca48fb49780afa",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_CONTROL_FREEZE.json",
+      "bytes": 1331,
+      "sha256": "4c2280553ce9b16d6f933e57d165a09208f8f5bc3a92f80a1c71f333cf5bd2d8",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_EVIDENCE_CHECK.json",
+      "bytes": 6228,
+      "sha256": "9b75753954ba6fedbd987421b62c9118dd7a2bf3dee0ca1bed8eed9f94b111ea",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_FINAL_BINDING.json",
+      "bytes": 669,
+      "sha256": "07f3947440ff96796c839a6fbb73b23cf3991512ef9015ff489c6da30abbf604",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_RELEASE_FREEZE.json",
+      "bytes": 1682,
+      "sha256": "addb69b7f8f38c3f493a78888467e5cb670e6d800f1ccd1bd2fb7d067cb178f9",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_REUSED_HELPER_SCOPE.json",
+      "bytes": 3579,
+      "sha256": "cc273c0457c0dc9b53a0d13d88f048b57c6b69ea47a65b43d00e21ba17357b8b",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 5149,
+      "sha256": "fceca2ab71d48f81f08f27d09b53989b550fe48904e255bb0623fdd63c11c58d",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/ATTAINMENT_SEAL.json",
+      "bytes": 426,
+      "sha256": "35715649cdf5458bf97735dbf7ec1ab76c82f5511e4a0164899758f9076a53d6",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/AUTHOR_SEAL.json",
+      "bytes": 1596,
+      "sha256": "fbbf10a319bcc951e2a21780790763550ab5e960e1b514c96d8c3e9126564382",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/CONTROL_SEAL.json",
+      "bytes": 701,
+      "sha256": "a31565b163c22eb2c579d10dbcf37422251ccb7cd429965f172df85bb6524cb7",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/NOEVENT_CONTROL.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/NOEVENT_CONTROL.stdout",
+      "bytes": 20490,
+      "sha256": "883748e87c6164970d735079888df956be89a0c8e1ff8ea86694727de3b45a73",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/NOEVENT_CONTROL_RESULTS.json",
+      "bytes": 18339,
+      "sha256": "cc153bee2b8570fcd36b631df2748c8e795e1f33f283b30d67b567ac8ff11aa4",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/NOEVENT_ONE_BRANCH_ATTAINMENT.md",
+      "bytes": 4908,
+      "sha256": "1a8660af26a697d1b8f3545f848d612ded1f66876f609cf957bb57f8c9318753",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/NO_FIRST_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "bytes": 13087,
+      "sha256": "9996e86906f284c834d26eb38c0056ade90fe24c910038d583b6c1ae78651c31",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/REUSED_ORDINARY_ENERGY_RUNNER.py",
+      "bytes": 11444,
+      "sha256": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d",
+      "mode": "0444"
+    },
+    {
+      "path": "POST_sources/noevent_controls.py",
+      "bytes": 6970,
+      "sha256": "2ffedffaad64dc16ebb2767d356f0109171b4b09eb9d947ded7e79626c0655db",
+      "mode": "0444"
+    },
+    {
+      "path": "post_evidence_check.py",
+      "bytes": 6665,
+      "sha256": "c40bd253bd943c219c99369923519312a950379fbf89f89f89f65f14664ddeb5",
+      "mode": "0444"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 3664,
+      "sha256": "706f65b1d55163a527499df038e1aa8842178c8c85875709199a9ff22213ce4c",
+      "mode": "0444"
+    }
+  ],
+  "authority": "Scoped conditional source comparison and evidence correspondence; not an audit verdict",
+  "preservation": "Keep all PRE and POST members unchanged; later work uses separate artifacts"
+}

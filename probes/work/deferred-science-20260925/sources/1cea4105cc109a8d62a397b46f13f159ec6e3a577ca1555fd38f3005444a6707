@@ -1,0 +1,199 @@
+{
+  "cube_input": {
+    "M_Omega_coefficient": 12,
+    "H4_Omega_coefficient": -84,
+    "off_diagonal_words": 12,
+    "off_diagonal_coefficient": -2,
+    "H4_variance": 48,
+    "input_QFI_limit_over_delta_squared": 192,
+    "all_traversed_edges_have_unit_actual_spin_amplitude_for_S_ge_1": true
+  },
+  "cube_first_marks": [
+    {
+      "mark": "plus",
+      "b": "2",
+      "r": "4",
+      "ell": "2",
+      "leading_QFI_apparatus_over_alpha2_delta2_epsilon_minus4": "16"
+    },
+    {
+      "mark": "minus",
+      "b": "2",
+      "r": "2",
+      "ell": "1",
+      "leading_QFI_apparatus_over_alpha2_delta2_epsilon_minus4": "8"
+    },
+    {
+      "mark": "coherent",
+      "b": "4",
+      "r": "6",
+      "ell": "3/2",
+      "leading_QFI_apparatus_over_alpha2_delta2_epsilon_minus4": "24"
+    }
+  ],
+  "conservative_swap_toys": [
+    {
+      "epsilon": 0.25,
+      "gap": 256.0,
+      "target_conditional_QFI": 15360.000000000011,
+      "cases": [
+        {
+          "dephasing_fraction": 0.0,
+          "apparatus_QFI": 960.0000000000001,
+          "apparatus_variance": 255.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0625,
+          "subnormalized_trace_error": 0.0,
+          "error_over_epsilon_cubed": 0.0,
+          "robust_lower_using_actual_probability": 960.0000000000007,
+          "robust_lower_using_probability_tolerance": 960.0000000000007
+        },
+        {
+          "dephasing_fraction": 0.25,
+          "apparatus_QFI": 539.9999999999998,
+          "apparatus_variance": 255.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0625,
+          "subnormalized_trace_error": 0.00756442059806136,
+          "error_over_epsilon_cubed": 0.484122918275927,
+          "robust_lower_using_actual_probability": 540.0000000000006,
+          "robust_lower_using_probability_tolerance": 481.6995518112352
+        },
+        {
+          "dephasing_fraction": 0.75,
+          "apparatus_QFI": 59.99999999999997,
+          "apparatus_variance": 255.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0625,
+          "subnormalized_trace_error": 0.022693261794184086,
+          "error_over_epsilon_cubed": 1.4523687548277815,
+          "robust_lower_using_actual_probability": 60.00000000000014,
+          "robust_lower_using_probability_tolerance": 44.01756572086094
+        },
+        {
+          "dephasing_fraction": 1.0,
+          "apparatus_QFI": 0.0,
+          "apparatus_variance": 255.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0625,
+          "subnormalized_trace_error": 0.030257682392245445,
+          "error_over_epsilon_cubed": 1.9364916731037085,
+          "robust_lower_using_actual_probability": 1.135959703518257e-28,
+          "robust_lower_using_probability_tolerance": 7.654081003195317e-29
+        }
+      ]
+    },
+    {
+      "epsilon": 0.125,
+      "gap": 4096.0,
+      "target_conditional_QFI": 1032191.9999999999,
+      "cases": [
+        {
+          "dephasing_fraction": 0.0,
+          "apparatus_QFI": 16127.99999999999,
+          "apparatus_variance": 4095.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.015625,
+          "subnormalized_trace_error": 0.0,
+          "error_over_epsilon_cubed": 0.0,
+          "robust_lower_using_actual_probability": 16127.999999999998,
+          "robust_lower_using_probability_tolerance": 16127.999999999998
+        },
+        {
+          "dephasing_fraction": 0.25,
+          "apparatus_QFI": 9072.000000000004,
+          "apparatus_variance": 4095.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.015625,
+          "subnormalized_trace_error": 0.000968903068016818,
+          "error_over_epsilon_cubed": 0.4960783708246108,
+          "robust_lower_using_actual_probability": 9071.999999999998,
+          "robust_lower_using_probability_tolerance": 8542.29408349442
+        },
+        {
+          "dephasing_fraction": 0.75,
+          "apparatus_QFI": 1007.9999999999999,
+          "apparatus_variance": 4095.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.015625,
+          "subnormalized_trace_error": 0.0029067092040504536,
+          "error_over_epsilon_cubed": 1.4882351124738322,
+          "robust_lower_using_actual_probability": 1007.9999999999994,
+          "robust_lower_using_probability_tolerance": 849.8946225940957
+        },
+        {
+          "dephasing_fraction": 1.0,
+          "apparatus_QFI": 0.0,
+          "apparatus_variance": 4095.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.015625,
+          "subnormalized_trace_error": 0.003875612272067271,
+          "error_over_epsilon_cubed": 1.9843134832984428,
+          "robust_lower_using_actual_probability": 0.0,
+          "robust_lower_using_probability_tolerance": 0.0
+        }
+      ]
+    },
+    {
+      "epsilon": 0.0625,
+      "gap": 65536.0,
+      "target_conditional_QFI": 66846719.999999985,
+      "cases": [
+        {
+          "dephasing_fraction": 0.0,
+          "apparatus_QFI": 261119.99999999994,
+          "apparatus_variance": 65535.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0039062499999999996,
+          "subnormalized_trace_error": 0.0,
+          "error_over_epsilon_cubed": 0.0,
+          "robust_lower_using_actual_probability": 261119.9999999999,
+          "robust_lower_using_probability_tolerance": 261119.9999999999
+        },
+        {
+          "dephasing_fraction": 0.25,
+          "apparatus_QFI": 146879.99999999997,
+          "apparatus_variance": 65535.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0039062499999999996,
+          "subnormalized_trace_error": 0.00012183166063439417,
+          "error_over_epsilon_cubed": 0.49902248195847854,
+          "robust_lower_using_actual_probability": 146879.99999999994,
+          "robust_lower_using_probability_tolerance": 142437.529409381
+        },
+        {
+          "dephasing_fraction": 0.75,
+          "apparatus_QFI": 16319.999999999996,
+          "apparatus_variance": 65535.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0039062499999999996,
+          "subnormalized_trace_error": 0.00036549498190318247,
+          "error_over_epsilon_cubed": 1.4970674458754354,
+          "robust_lower_using_actual_probability": 16319.999999999987,
+          "robust_lower_using_probability_tolerance": 14923.643679590054
+        },
+        {
+          "dephasing_fraction": 1.0,
+          "apparatus_QFI": 0.0,
+          "apparatus_variance": 65535.0,
+          "apparatus_mean": 1.0,
+          "selected_probability": 0.0039062499999999996,
+          "subnormalized_trace_error": 0.00048732664253757664,
+          "error_over_epsilon_cubed": 1.996089927833914,
+          "robust_lower_using_actual_probability": 0.0,
+          "robust_lower_using_probability_tolerance": 0.0
+        }
+      ]
+    }
+  ],
+  "input_coherence_subtraction_example": {
+    "input_QFI": 0.9999999999999993,
+    "apparatus_QFI": 0.0,
+    "selected_probability": 0.25,
+    "selected_weighted_QFI": 0.24999999999999983,
+    "mechanism": "Identity system operation and stationary zero-energy classical success flag; target equals the supplied input."
+  },
+  "independent_mixed_checks": "QFI additivity, commutator lower bound and QFI<=4 variance verified on fixed random mixed states.",
+  "scope": "Exact primitive path integers and finite floating matrix controls; asymptotic and arbitrary-apparatus conclusions require PRE proofs."
+}
+All listed checks completed without assertion failure.

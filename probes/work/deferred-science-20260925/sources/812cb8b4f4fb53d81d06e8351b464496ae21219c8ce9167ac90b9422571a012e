@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-09-25T00:31:10.201551+00:00",
+  "elapsed_seconds": 0.21361612481996417,
+  "exit_code": 0,
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "two_detector_controls.py"
+  ],
+  "code_sha256": "7c1c296790b00c33a93708ad52f6c89955d9c96f021e2268152410f7362dd713",
+  "stdout_sha256": "53681f9a777fa9caee348997efff0fc5931f82000a102f838f805dac9a527298",
+  "stderr_bytes": 0,
+  "author_or_parent_runs": 0
+}

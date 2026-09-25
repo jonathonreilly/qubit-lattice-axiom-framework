@@ -1,0 +1,778 @@
+{
+  "scope": "Author spectral contraction of the exact selected-power polynomial.\n\nThe finite sums and Hessian factorization are controls of the new author\ncalculation, not an independent reconstruction or full evolution.\n",
+  "source_sha256": "c08d82d34c6dc33fffebf7f38b9b44285d085bdf7d86a0bef38cd76360a835f6",
+  "polynomials_identical_between_signs": true,
+  "hessian_nonzero_entries": 520,
+  "hessian_cp_contraction": "49600",
+  "hessian_exact_factorization": "H=c_p t^T+t c_p^T; Cmag quadratic term=(c_p A)(t A)",
+  "t_vector": [
+    {
+      "positive_edge_origin": [
+        -1,
+        -1,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        -1,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        -1
+      ],
+      "axis": 0,
+      "coefficient": "3"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "5"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "-8"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        1
+      ],
+      "axis": 0,
+      "coefficient": "3"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        0,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        1,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        1,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "-12"
+    },
+    {
+      "positive_edge_origin": [
+        -1,
+        1,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -2,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -2,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        -1
+      ],
+      "axis": 0,
+      "coefficient": "4"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "93"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "-97"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        1
+      ],
+      "axis": 0,
+      "coefficient": "4"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        -1,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        -2
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        -2
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        -1
+      ],
+      "axis": 0,
+      "coefficient": "91"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "-92"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "1381"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "-1469"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        1
+      ],
+      "axis": 0,
+      "coefficient": "91"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "-92"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        2
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        0,
+        2
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        -2
+      ],
+      "axis": 2,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        -1
+      ],
+      "axis": 0,
+      "coefficient": "4"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "-96"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "-1675"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "96"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        1
+      ],
+      "axis": 0,
+      "coefficient": "4"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        1,
+        1
+      ],
+      "axis": 2,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        2,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        0,
+        2,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -2,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "97"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "-2"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        -1,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "2"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        -2
+      ],
+      "axis": 2,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        -1
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        -1
+      ],
+      "axis": 1,
+      "coefficient": "-4"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "97"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        0
+      ],
+      "axis": 0,
+      "coefficient": "-3"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "1675"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "-97"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        1
+      ],
+      "axis": 0,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        1
+      ],
+      "axis": 1,
+      "coefficient": "-4"
+    },
+    {
+      "positive_edge_origin": [
+        1,
+        0,
+        1
+      ],
+      "axis": 2,
+      "coefficient": "-1"
+    },
+    {
+      "positive_edge_origin": [
+        2,
+        -1,
+        0
+      ],
+      "axis": 1,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        2,
+        0,
+        -1
+      ],
+      "axis": 2,
+      "coefficient": "1"
+    },
+    {
+      "positive_edge_origin": [
+        2,
+        0,
+        0
+      ],
+      "axis": 2,
+      "coefficient": "-1"
+    }
+  ],
+  "units": "All power rows are in kappa/(4 tau); electric contribution tends to zero, proof pending.",
+  "rows": [
+    {
+      "L": 16,
+      "v_p": 0.7958588527704435,
+      "vacuum_covariance_cp_t": 1245.3524037745194,
+      "rows": [
+        {
+          "epsilon": 0.2,
+          "empty": true
+        },
+        {
+          "epsilon": 0.4,
+          "empty": false,
+          "reference_mu": 0.3901806440322569,
+          "vacuum_magnetic_power_units": 1245.3524037745194,
+          "one_minus_vacuum_power_units": 0.6780007666723373,
+          "one_magnetic_power_units": 1246.0304045411917
+        },
+        {
+          "epsilon": 0.7,
+          "empty": false,
+          "reference_mu": 0.572128394768272,
+          "vacuum_magnetic_power_units": 1245.3524037745194,
+          "one_minus_vacuum_power_units": 4.14363726586097,
+          "one_magnetic_power_units": 1249.4960410403803
+        },
+        {
+          "epsilon": 1.0,
+          "empty": false,
+          "reference_mu": 0.816638468180261,
+          "vacuum_magnetic_power_units": 1245.3524037745194,
+          "one_minus_vacuum_power_units": 17.824750743115644,
+          "one_magnetic_power_units": 1263.177154517635
+        },
+        {
+          "epsilon": 2.0,
+          "empty": false,
+          "reference_mu": 1.6870172190886656,
+          "vacuum_magnetic_power_units": 1245.3524037745194,
+          "one_minus_vacuum_power_units": 400.4079213648156,
+          "one_magnetic_power_units": 1645.760325139335
+        },
+        {
+          "epsilon": 3.5,
+          "empty": false,
+          "reference_mu": 2.5130084223324927,
+          "vacuum_magnetic_power_units": 1245.3524037745194,
+          "one_minus_vacuum_power_units": 2490.704807549039,
+          "one_magnetic_power_units": 3736.0572113235585
+        }
+      ]
+    },
+    {
+      "L": 32,
+      "v_p": 0.7958668811554088,
+      "vacuum_covariance_cp_t": 1245.3667237736254,
+      "rows": [
+        {
+          "epsilon": 0.2,
+          "empty": false,
+          "reference_mu": 0.1960342806591214,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 0.04266301973938108,
+          "one_magnetic_power_units": 1245.4093867933648
+        },
+        {
+          "epsilon": 0.4,
+          "empty": false,
+          "reference_mu": 0.31260462269692624,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 0.3463246189729391,
+          "one_magnetic_power_units": 1245.7130483925982
+        },
+        {
+          "epsilon": 0.7,
+          "empty": false,
+          "reference_mu": 0.5675533961618602,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 3.895375321888055,
+          "one_magnetic_power_units": 1249.2620990955133
+        },
+        {
+          "epsilon": 1.0,
+          "empty": false,
+          "reference_mu": 0.8101706872403114,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 16.66071491852167,
+          "one_magnetic_power_units": 1262.0274386921471
+        },
+        {
+          "epsilon": 2.0,
+          "empty": false,
+          "reference_mu": 1.6703056114845563,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 381.85533935912645,
+          "one_magnetic_power_units": 1627.2220631327518
+        },
+        {
+          "epsilon": 3.5,
+          "empty": false,
+          "reference_mu": 2.512983072114368,
+          "vacuum_magnetic_power_units": 1245.3667237736254,
+          "one_minus_vacuum_power_units": 2490.7334475472508,
+          "one_magnetic_power_units": 3736.100171320876
+        }
+      ]
+    },
+    {
+      "L": 64,
+      "v_p": 0.7958673809958539,
+      "vacuum_covariance_cp_t": 1245.3676154519667,
+      "rows": [
+        {
+          "epsilon": 0.2,
+          "empty": false,
+          "reference_mu": 0.1566992944811666,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 0.021722372489755674,
+          "one_magnetic_power_units": 1245.3893378244563
+        },
+        {
+          "epsilon": 0.4,
+          "empty": false,
+          "reference_mu": 0.3082012052965781,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 0.3363939854966702,
+          "one_magnetic_power_units": 1245.7040094374634
+        },
+        {
+          "epsilon": 0.7,
+          "empty": false,
+          "reference_mu": 0.561794078710386,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 3.7429310481623856,
+          "one_magnetic_power_units": 1249.110546500129
+        },
+        {
+          "epsilon": 1.0,
+          "empty": false,
+          "reference_mu": 0.8048639733371042,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 16.235806272131306,
+          "one_magnetic_power_units": 1261.603421724098
+        },
+        {
+          "epsilon": 2.0,
+          "empty": false,
+          "reference_mu": 1.6682731520300829,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 379.72631903789363,
+          "one_magnetic_power_units": 1625.0939344898602
+        },
+        {
+          "epsilon": 3.5,
+          "empty": false,
+          "reference_mu": 2.5129814938481805,
+          "vacuum_magnetic_power_units": 1245.3676154519667,
+          "one_minus_vacuum_power_units": 2490.735230903934,
+          "one_magnetic_power_units": 3736.1028463559005
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.3904643750283867
+}

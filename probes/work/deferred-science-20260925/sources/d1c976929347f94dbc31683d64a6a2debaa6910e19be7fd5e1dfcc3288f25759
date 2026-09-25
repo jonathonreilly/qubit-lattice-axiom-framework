@@ -1,0 +1,27 @@
+--- attempt02
++++ attempt03
+@@ -172,6 +172,16 @@
+         initial = tuple([1]*g.na+[0]*g.nb), tuple([0]*len(g.edges))
+         words = {initial}
+         words.update(g.births({initial:Q(1)}))
++        nonzero_electric = set()
++        for w in sorted(words):
++            for y in g.M({w:Q(1)}):
++                if any(g.delta({y:Q(1)},a) for a in range(g.na)):
++                    nonzero_electric.add(y)
++        words.update(sorted(nonzero_electric)[:2])
++        if g.name == "square":
++            words.add((initial[0],(1,-1,-1,1)))
++        if g.name == "K3_3":
++            words.add((initial[0],(1,-1,0,-1,1,0,0,0,0)))
+         # Actual primitive outputs, including both placements of the new minus.
+         for w in sorted(words):
+             g.gauss(w)
+@@ -223,6 +233,7 @@
+              "nonzero_limit":-math.sqrt(3)/8,
+              "interpretation":"No uniform operator-norm replacement on D-bounded inputs; quadratic-form comparison is still possible."})
+     assert any(r["dropping_finite_spin_correction_is_wrong"] for r in rows)
++    assert any(Q(r["D"]) > 0 for r in rows)
+     result={"source_sha256":sha256(Path(__file__).read_bytes()).hexdigest(),
+             "scope":"Own exact spin-one primitive columns and integer weight comparisons; higher-spin displayed scalar amplitudes are floating evaluations of exact fractions.",
+             "local_identity_rows":rows,"graph_totals":totals,

@@ -1,0 +1,29 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent/publication_correspondence_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-independent",
+  "started_utc": "2026-09-24T17:36:07.746132+00:00",
+  "finished_utc": "2026-09-24T17:36:07.954176+00:00",
+  "elapsed_seconds": 0.20814037509262562,
+  "returncode": 0,
+  "files": {
+    "publication_correspondence_check.py": {
+      "sha256": "9cae32a55778f54e282f1d7055cb42e59a9af747558ef9538e51b2ec0ac44285",
+      "bytes": 13645
+    },
+    "PUBLICATION_CHECK.stdout.txt": {
+      "sha256": "44d342b2a38e8df2f11dcd5b3188e94a6da33381add9fda228a29ba9a12ce7d3",
+      "bytes": 8129
+    },
+    "PUBLICATION_CHECK.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "PUBLICATION_EVIDENCE_CHECK.json": {
+      "sha256": "44d342b2a38e8df2f11dcd5b3188e94a6da33381add9fda228a29ba9a12ce7d3",
+      "bytes": 8129
+    }
+  }
+}

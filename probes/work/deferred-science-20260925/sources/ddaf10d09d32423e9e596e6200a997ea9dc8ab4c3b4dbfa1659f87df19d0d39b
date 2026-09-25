@@ -1,0 +1,196 @@
+{
+  "sealed_utc": "2026-09-24T17:41:56.730282+00:00",
+  "stage": "Final publication source/dependency/AST/execution-cache comparison",
+  "base_revision": "55dfb1a8c7924d345d961a7e4763b11f20f1786a",
+  "prior_immutable_dependencies": [
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+      "unchanged_members": 34
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "72d73d581716f85e7f47521aa7acfc40707b46a8bcc119933dcc0d8eeaf975fa",
+      "unchanged_members": 23
+    }
+  ],
+  "publication_identities": {
+    "note": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+    "runner": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b",
+    "result": "603bf4ed4fcb27c1c53d3cbf85a962880a1c6ef38a3e7f2375e1b6ab4a82d35e",
+    "cache": "2803e5776faaa9ddf4e33648596386e83021264337c861f52e25b10b5aca93e9"
+  },
+  "inherited_model_and_effort_retained": true,
+  "delegation_used": false,
+  "primary_rerun": false,
+  "publication_or_author_source_or_old_packet_modified": false,
+  "audit_verdict_applied": false,
+  "members": [
+    {
+      "path": "PUBLICATION_CHECK.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_CHECK.stdout.txt",
+      "sha256": "82c6ce5bfcea3a6fb5b1afa91e2f3782c6cc8c86b1c1b73726194736a5e908c3",
+      "bytes": 8129
+    },
+    {
+      "path": "PUBLICATION_CHECK_ATTEMPT1/PUBLICATION_CHECK.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_CHECK_ATTEMPT1/PUBLICATION_CHECK.stdout.txt",
+      "sha256": "44d342b2a38e8df2f11dcd5b3188e94a6da33381add9fda228a29ba9a12ce7d3",
+      "bytes": 8129
+    },
+    {
+      "path": "PUBLICATION_CHECK_ATTEMPT1/PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "21e6024e76ff0ae2d6e48e0c0dbba468e4205fd15dcfe0d2e8761129c6e1b2d0",
+      "bytes": 1110
+    },
+    {
+      "path": "PUBLICATION_CHECK_ATTEMPT1/PUBLICATION_EVIDENCE_CHECK.json",
+      "sha256": "44d342b2a38e8df2f11dcd5b3188e94a6da33381add9fda228a29ba9a12ce7d3",
+      "bytes": 8129
+    },
+    {
+      "path": "PUBLICATION_CHECK_ATTEMPT1/publication_correspondence_check.py",
+      "sha256": "9cae32a55778f54e282f1d7055cb42e59a9af747558ef9538e51b2ec0ac44285",
+      "bytes": 13645
+    },
+    {
+      "path": "PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "5e4bdbe25c78be8c8662e6af249feeb3ffbcbe292f7528ceec854c82111ed9ef",
+      "bytes": 1270
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "6684246b8751ac36768d445c6f85d675aff31eade37bbbf3e669d1becfc8ab5e",
+      "bytes": 16295
+    },
+    {
+      "path": "PUBLICATION_EVIDENCE_CHECK.json",
+      "sha256": "82c6ce5bfcea3a6fb5b1afa91e2f3782c6cc8c86b1c1b73726194736a5e908c3",
+      "bytes": 8129
+    },
+    {
+      "path": "PUBLICATION_FINAL_VERIFICATION.json",
+      "sha256": "1f2d5a382460462fa23f2ee3c4dfa49bb437990dcf29a1cb52d9f0fed723382a",
+      "bytes": 1479
+    },
+    {
+      "path": "PUBLICATION_RUNTIME_PIN.json",
+      "sha256": "6a44d284935f14083ef3f89764b7b7e3e01da4e1d65ebdfa2c2ee69db2341841",
+      "bytes": 784
+    },
+    {
+      "path": "PUBLICATION_SOURCE_FREEZE.json",
+      "sha256": "8e66006d5c5dc9f27749d95d99dd2da36249390eed7bf1ab07cb2bb935025dd7",
+      "bytes": 6955
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "61e539824ded8ce46687205fa280541ea09d2b43c5e19087aee164282ffcfbfb",
+      "bytes": 9972
+    },
+    {
+      "path": "PUBLICATION_sources/author_helpers/mixed_preparation_controls.py",
+      "sha256": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+      "bytes": 8684
+    },
+    {
+      "path": "PUBLICATION_sources/external/TENTH_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "9fd6f264baf5bd4f1e4b29e7f6b4fa183eb84d3869d2d14b6d280babbe3a7bd8",
+      "bytes": 750
+    },
+    {
+      "path": "PUBLICATION_sources/external/TENTH_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "edf4b8933545b9ac667a66d21fc7552377b84c5154449e44947c1e86aad970ee",
+      "bytes": 21056
+    },
+    {
+      "path": "PUBLICATION_sources/external/TENTH_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "f0b6251cbf836747c41ded29d756ae4e2b37ee55c6edd2c4bf2a9e714df7fa5a",
+      "bytes": 838
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+      "bytes": 17317
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "b2fe61b2a821fea5cc99e4e87b2d28536673a10cab5c2bed5b51daffa6cc2d9d",
+      "bytes": 36767
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+      "bytes": 27264
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+      "bytes": 24623
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "28b1d78b9f16349e231822eb592683389540d1705996fffd086b4b6f97743967",
+      "bytes": 12076
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/logs/runner-cache/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.txt",
+      "sha256": "2803e5776faaa9ddf4e33648596386e83021264337c861f52e25b10b5aca93e9",
+      "bytes": 19626
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/outputs/full_original_cube_energy_20260924/FULL_ENSEMBLE_ENERGY_RESULTS.json",
+      "sha256": "603bf4ed4fcb27c1c53d3cbf85a962880a1c6ef38a3e7f2375e1b6ab4a82d35e",
+      "bytes": 19225
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/scripts/full_original_cube_ensemble_energy_and_rare_density_2026_09_24.py",
+      "sha256": "ff2af3a1caa0a0e4f4bdef7739a2ecc7cc56024990af0c82312f60d2f033ce9b",
+      "bytes": 11445
+    },
+    {
+      "path": "PUBLICATION_sources/worktree/scripts/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "SEAL_PUBLICATION.py",
+      "sha256": "284dce6d2579f57c96f635118a63fe3173c45b45f2739dbaf185c6a9acd4788f",
+      "bytes": 7582
+    },
+    {
+      "path": "publication_correspondence_check.py",
+      "sha256": "659fc7f1ace5b47fbf3df8b32f9621f53009f4dfa6375147cb3c16dad2954109",
+      "bytes": 13786
+    }
+  ],
+  "immutable_policy": "This seal and its members are read-only; any later source change requires a separate packet."
+}

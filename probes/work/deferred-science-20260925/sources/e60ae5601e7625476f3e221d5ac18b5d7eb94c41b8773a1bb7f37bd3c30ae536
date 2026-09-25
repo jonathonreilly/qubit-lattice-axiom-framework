@@ -1,0 +1,40 @@
+{
+  "recorded_context": "Part A-only publication correspondence after PRE29, POST29 and PRE32 had been sealed.",
+  "exposure_time_bound_utc": "After the publication-comparison dispatch and before the explicit clock reading 2026-09-25 01:01:27 UTC; an exact wall timestamp for the earlier tool call was not captured.",
+  "first_incident": {
+    "command": "cat INPUT_ENERGY_POWER_PRIMARY_ROOT_VERIFICATION.json INPUT_ENERGY_POWER_PUBLICATION_CACHE_EXECUTION.json",
+    "tool_output_chunk": "6eebe0",
+    "mistake": "The external execution JSON embeds the entire combined stdout. The tool displayed a truncated output, including an out-of-scope Part B payload excerpt. A top-level metadata extraction should have been used.",
+    "observed_tool_report": "553205 original output tokens, truncated",
+    "combined_stdout_copied_into_scoped_evidence": false,
+    "scientific_Part_B_conclusion_drawn": false
+  },
+  "followup_header_inspection": {
+    "mistake": "A 1600-character cache prefix was printed while checking the header; it also included the initial fragment of the cache's truncated stdout. Subsequent header handling splits at the explicit stdout delimiter.",
+    "remediation": "Cache body is now used only for opaque suffix/format equality; it is not displayed or copied into the scoped evidence."
+  },
+  "root_notification": "I made a read-scope error while inspecting the external execution receipt: its JSON embeds the entire combined stdout, and the tool displayed a truncated Part B output excerpt. I have not opened Part B's note text or runtime sources, or any root30/31/32 author directory. PRE32 was sealed before this incident and remains unchanged. I will preserve this exposure in the comparison record, restrict subsequent parsing to Part A and execution metadata, and issue no Part B scientific conclusion.",
+  "root_instruction_after_notification": "Preserve the exact scope incident and seal timings as you propose. Continue only the scoped Part A publication correspondence, and make no Part B validation claim. PRE29, POST29 and PRE32 predate this exposure; their unchanged identities and prior blindness remain explicit. Do not copy embedded combined stdout into your displayed or publication-scoped evidence.",
+  "preserved_prior_seals": [
+    {
+      "packet": "photon-added-energy PRE29",
+      "sealed_utc": "2026-09-24T23:49:17.223205+00:00",
+      "seal_sha256": "6dfea4b57bd88c1f127e385fa2c11294df50956079f748b48952fbf0b7965c43",
+      "members_verified_unchanged": 45
+    },
+    {
+      "packet": "photon-added-energy POST29",
+      "sealed_utc": "2026-09-25T00:13:05.450398+00:00",
+      "seal_sha256": "d3bad97dce3041c388754944d1b051aaf84148e6c5b26d16cf5ca423ffa83b80",
+      "members_verified_unchanged": 42
+    },
+    {
+      "packet": "number-offset-observation PRE32",
+      "sealed_utc": "2026-09-25T00:52:46.780324+00:00",
+      "seal_sha256": "75b6df3f1a085d3f921f9480a633e726c09230d9b027b62bc3e48b3a2898cdef",
+      "members_verified_unchanged": 22
+    }
+  ],
+  "continued_scope": "Part A scientific correspondence and shared front/footer and process metadata only. Part B body and runtime programs, root30/31/32 author directories, other active checkers and checkpoint/outcome remain unopened.",
+  "minor_process_failure": "A read-only rg command named nonexistent scripts/run_audit_runners.py and exited 2; the actual scripts/runner_cache.py was then inspected. No scientific run failed and no primary program was executed."
+}

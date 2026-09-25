@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-09-24T19:30:56.431582+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-record-readout-independent/abstract_record_control.py"
+  ],
+  "elapsed_seconds": 0.16453558299690485,
+  "returncode": 0,
+  "script_sha256": "c2df3043cc82f1744a4dc1667ce9fb10588b0a04943c3eedd99a201b874c5ac7",
+  "stdout_sha256": "a50a95e9444cb0ff80cfeaeaf3cfcfb8e865c1fd019f728a0106070251ef6c7c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

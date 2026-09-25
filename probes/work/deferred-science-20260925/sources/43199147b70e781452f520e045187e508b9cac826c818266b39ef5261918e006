@@ -1,0 +1,910 @@
+{
+  "created_utc": "2026-09-24T21:16:01.459508+00:00",
+  "source_origin_count": 10,
+  "source_origins": [
+    {
+      "frozen_path": "sources/local_compensation.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/local_pair_form.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/electric_magnetic.md",
+      "sha256": "eb5e31ae7e76f80383c454bf3e01ec98df2f503e93f04159b1cc11545d9996b4",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/weak_field_packets.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/workflow.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/agent_pointer.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/readout_PRE.md",
+      "sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/readout_POST.md",
+      "sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/readout_PRE_SEAL.json",
+      "sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6",
+      "origin_equal": true
+    },
+    {
+      "frozen_path": "sources/readout_POST_SEAL.json",
+      "sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e",
+      "origin_equal": true
+    }
+  ],
+  "prior_report_bindings": [
+    {
+      "phase": "PRE",
+      "report_sha256": "7e5140e5155943d99541efc2e8de7cc25f9cee9ba4d4330b9906def5c3adf76d",
+      "seal_sha256": "65ef5734192d3ca88511a992fad2b1788582ad8acf632c2b2d33e866d121cff6",
+      "sealed_report_binding_equal": true,
+      "other_old_members_traversed": false
+    },
+    {
+      "phase": "POST",
+      "report_sha256": "dc217d7ff74cb074998f2f4e92cd02b79e1bdb207c2f4ebfc0e6fd8e8ee96d1c",
+      "seal_sha256": "f6cc670e09877d631658d8d150f986fecfcd5925b0ecfb7394bdcd17aee7513e",
+      "sealed_report_binding_equal": true,
+      "other_old_members_traversed": false
+    }
+  ],
+  "execution_bindings_equal": true,
+  "stdout_result_checks_equal": true,
+  "empty_scientific_stderr": true,
+  "complete_effect_row_count": 48,
+  "serialized_paths_reconstructed": 128,
+  "full_effect_inventory": [
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "-1/2",
+        "+loop": "-1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "-1/2",
+        "+loop": "-1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2",
+        "-loop": "-1",
+        "+loop": "-1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "1/2",
+        "+loop": "1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "1/2",
+        "+loop": "1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2",
+        "-loop": "1",
+        "+loop": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "4"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        6,
+        6
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "-1/2",
+        "+loop": "-1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "-1/2",
+        "+loop": "-1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2",
+        "-loop": "-1",
+        "+loop": "-1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "1/2",
+        "+loop": "1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1",
+        "-loop": "1/2",
+        "+loop": "1/2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2",
+        "-loop": "1",
+        "+loop": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "loop",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {},
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": -1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_plus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": false,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "resolved_minus",
+      "dephased": true,
+      "path_count": 2,
+      "final_matter_word_count": 1,
+      "effect_coefficients": {
+        "I": "1"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": false,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "4"
+      },
+      "all_serialized_paths_reconstructed": true
+    },
+    {
+      "periods": [
+        6,
+        8,
+        10
+      ],
+      "dressing": "star",
+      "relative_sign": 1,
+      "channel": "coherent",
+      "dephased": true,
+      "path_count": 4,
+      "final_matter_word_count": 2,
+      "effect_coefficients": {
+        "I": "2"
+      },
+      "all_serialized_paths_reconstructed": true
+    }
+  ],
+  "scientific_control_reexecuted_or_imported": false,
+  "scope": "Complete source and execution binding, serialized primitive/Gauss/effect inspection; no new propagation or empirical calculation.",
+  "verifier_sha256": "0986867b751a908bb9fff0bd055a683e25ab0ba6dfce7135fd74ebe53306114e"
+}

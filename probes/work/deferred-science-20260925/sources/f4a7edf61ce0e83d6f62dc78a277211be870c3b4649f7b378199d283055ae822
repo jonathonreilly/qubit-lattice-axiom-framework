@@ -1,0 +1,218 @@
+{
+  "utc": "2026-09-24T20:31:33.454854+00:00",
+  "publication_comparison_seal_sha256": "0fd480d882c9f7f6ab238c3d0857eb8b266bf89370049f2b06b4bac7d8bed411",
+  "members": [
+    {
+      "path": "PUBLICATION_BINDING_EXECUTIONS.json",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_FINAL_BINDING_REPORT.json",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_FINAL_BINDING_STDERR.log",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_FINAL_SOURCE_BINDINGS.json",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_FINAL_TEXT_DELTA.patch",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_INITIAL_BINDING_REPORT.json",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_INITIAL_BINDING_STDERR.log",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_SECTION_B_DIFF.patch",
+      "matches": true
+    },
+    {
+      "path": "PUBLICATION_SOURCE_BINDINGS.json",
+      "matches": true
+    },
+    {
+      "path": "publication_binding_check.py",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/external/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "matches": true
+    },
+    {
+      "path": "publication_final_sources/publication/scripts/runner_cache.py",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/external/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "matches": true
+    },
+    {
+      "path": "publication_sources/publication/scripts/runner_cache.py",
+      "matches": true
+    }
+  ],
+  "live_origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/scripts/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.py",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/outputs/original_record_photon_bridge_20260924/ORIGINAL_RECORD_PHOTON_BRIDGE_RESULTS.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/logs/runner-cache/original_formation_record_photon_readout_and_microscopic_bins_2026_09_24.txt",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_FROZEN_SOURCES.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_CACHE_EXECUTION.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PRIMARY_ROOT_VERIFICATION.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ORIGINAL_RECORD_PUBLICATION_RERUN_DELTA.json",
+      "matches": true
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/original-photon-record-publication/scripts/runner_cache.py",
+      "matches": true
+    }
+  ],
+  "complete_report_binding_code_and_new_rows_read": true,
+  "scope": "Section B selective final check; A/C/D use their separately read PRE/POST and exact narrow public corrections. No retained audit verdict."
+}

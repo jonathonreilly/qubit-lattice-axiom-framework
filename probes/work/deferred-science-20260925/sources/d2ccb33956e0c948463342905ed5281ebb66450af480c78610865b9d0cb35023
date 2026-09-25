@@ -1,0 +1,90 @@
+{
+  "frozen_utc": "2026-09-24T13:45:35.830057+00:00",
+  "scope": "Released root candidate and range supplement only. Author evidence is source-reviewed, never imported or executed as independent evidence. PRE remains immutable.",
+  "files": {
+    "ACTUAL_BIRTH_COHERENCE_PERSONAL_DERIVATION.md": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/ACTUAL_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/ACTUAL_BIRTH_COHERENCE_PERSONAL_DERIVATION.md",
+      "sha256": "00d01629c212cadb4b0acd6eb7ab1e4ae072a036c2f76061c620be87766f85e7",
+      "bytes": 15222
+    },
+    "coherence_controls.py": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/coherence_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/coherence_controls.py",
+      "sha256": "d35f6eec45c744ab2858f35f359e98b24ca3499bfbf7bf718c3ef9d5264e9aec",
+      "bytes": 6986
+    },
+    "COHERENCE_CONTROL_RESULTS.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/COHERENCE_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/COHERENCE_CONTROL_RESULTS.json",
+      "sha256": "dae4f0edc2d0dd3b8ade9176a78326c932598fd358a54825166c8586b30efdbf",
+      "bytes": 9312
+    },
+    "COHERENCE_CONTROL.stdout": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/COHERENCE_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/COHERENCE_CONTROL.stdout",
+      "sha256": "a9bcc4ea373c7905522f70cc696188cf7ede8c34d755cea2461f6dd1be2faf43",
+      "bytes": 13615
+    },
+    "COHERENCE_CONTROL.stderr": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/COHERENCE_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/COHERENCE_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "SOURCE_PINS.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/SOURCE_PINS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/SOURCE_PINS.json",
+      "sha256": "6f61a49b2d23b5eaaad297ae9dc4f7ebf3bbf24857ee4accd4291b6e4a97e7b9",
+      "bytes": 1314
+    },
+    "literature/SOURCE_RECORD.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/literature/SOURCE_RECORD.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/literature/SOURCE_RECORD.json",
+      "sha256": "2eeaf7a0100229aa820e60a949e1e0ecefb67992ede01b1fa45c0a8072535dd2",
+      "bytes": 509
+    },
+    "control_attempt01/coherence_controls.py": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/control_attempt01/coherence_controls.py",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/control_attempt01/coherence_controls.py",
+      "sha256": "7fae0c67328c1a1aae5fe27621a53c9e7b728f6616a723e76b9a86e8bb2bc623",
+      "bytes": 6962
+    },
+    "control_attempt01/COHERENCE_CONTROL_RESULTS.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/control_attempt01/COHERENCE_CONTROL_RESULTS.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/control_attempt01/COHERENCE_CONTROL_RESULTS.json",
+      "sha256": "6101d46b5138b9847e9d560df7ce8d223ca6052ec9625b927a72ee96679eeef3",
+      "bytes": 9313
+    },
+    "control_attempt01/COHERENCE_CONTROL.stdout": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/control_attempt01/COHERENCE_CONTROL.stdout",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/control_attempt01/COHERENCE_CONTROL.stdout",
+      "sha256": "233696a8bd520753199be4085003d03c7729037e4d326bf535d2d243026bb981",
+      "bytes": 13617
+    },
+    "control_attempt01/COHERENCE_CONTROL.stderr": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/control_attempt01/COHERENCE_CONTROL.stderr",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/control_attempt01/COHERENCE_CONTROL.stderr",
+      "sha256": "2cc8eccf88f7902cd65ae31ea1d719d21e7b7e4a9808c109d60b7cccd6f2af2a",
+      "bytes": 964
+    },
+    "AUTHOR_SEAL.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/AUTHOR_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/AUTHOR_SEAL.json",
+      "sha256": "a99e6455194cf13a41ffeec1af1d7c65707a36574c341443daa381c0d7b094bb",
+      "bytes": 1502
+    },
+    "FREQUENCY_RANGE_AND_ONE_INPUT_RELAXATION.md": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/FREQUENCY_RANGE_AND_ONE_INPUT_RELAXATION.md",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/FREQUENCY_RANGE_AND_ONE_INPUT_RELAXATION.md",
+      "sha256": "e1e6edaa76b0fe3c952ff92f274ca6678283d203fd9c5bd828fb84a4e9d79349",
+      "bytes": 9394
+    },
+    "RANGE_SUPPLEMENT_SEAL.json": {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-personal/RANGE_SUPPLEMENT_SEAL.json",
+      "snapshot": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/energy-coherence-independent/POST_sources/RANGE_SUPPLEMENT_SEAL.json",
+      "sha256": "9fcccc3397f456048b7f072f8a809b7a99d9557edd12b7e5509dfebb601f2671",
+      "bytes": 635
+    }
+  }
+}

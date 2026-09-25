@@ -1,0 +1,179 @@
+{
+  "sealed_utc": "2026-09-25T04:17:53.684414+00:00",
+  "phase": "Released-source POST comparison; stopped after scoped completion",
+  "status": "Conditional mathematical comparison; no audit verdict or publication action",
+  "preserved_PRE_seal_sha256": "108fa39b7d3f86f2b9fd825307da6861dd8548bf9295a3415024a72dd19c4f51",
+  "preserved_PRE_members": 35,
+  "author_seal_sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572",
+  "author_note_sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81",
+  "author_programs_executed_or_imported": false,
+  "model_effort": "Inherited unchanged, no delegation",
+  "member_count": 33,
+  "members": [
+    {
+      "path": "POST.md",
+      "bytes": 16875,
+      "sha256": "0a737a77bdc61c1bf5f2e138f7d928e5165a6b9c66564ee1eec9a105196dec6b"
+    },
+    {
+      "path": "POST_BINDING_VERIFICATION.json",
+      "bytes": 7394,
+      "sha256": "716c39d7d05c9c3c5a5f36e77e72501b3a29089d0043c02490da35f3ab7d1948"
+    },
+    {
+      "path": "POST_CHECKPOINT.md",
+      "bytes": 2207,
+      "sha256": "f356fa51f3f25e2ef2486213623b1255e24ca7f86dc9961cafd925c606091104"
+    },
+    {
+      "path": "POST_PRIMITIVE_COMPARISON.json",
+      "bytes": 36462,
+      "sha256": "705010176fed221d0ba7a25e1e19c1f2a3299cdfa6967fba120f70f3f3f83a63"
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "bytes": 8769,
+      "sha256": "b8726f8295765042ea99269d7e88c87c7f68864f3a463c62d4a488edf2f9a071"
+    },
+    {
+      "path": "post_bindings.execution.json",
+      "bytes": 749,
+      "sha256": "8514ac946969fc3b2195a467ed934db6a84e1f294508338e47d071f6e7315b16"
+    },
+    {
+      "path": "post_bindings.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_bindings.stdout.txt",
+      "bytes": 7394,
+      "sha256": "716c39d7d05c9c3c5a5f36e77e72501b3a29089d0043c02490da35f3ab7d1948"
+    },
+    {
+      "path": "post_comparison.execution.json",
+      "bytes": 754,
+      "sha256": "5faa2da5ab2f5c63ae0eae3eb6f5da5383f81f9ecbbc4d89e49a0d8d732f34a8"
+    },
+    {
+      "path": "post_comparison.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_comparison.stdout.txt",
+      "bytes": 36462,
+      "sha256": "705010176fed221d0ba7a25e1e19c1f2a3299cdfa6967fba120f70f3f3f83a63"
+    },
+    {
+      "path": "post_freeze.execution.json",
+      "bytes": 748,
+      "sha256": "06e2d29cc59ff6fa27fd42bc71da5de0b5fa6e4a74d4cea9be9bf71b63eaddbd"
+    },
+    {
+      "path": "post_freeze.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_freeze.stdout.txt",
+      "bytes": 8769,
+      "sha256": "b8726f8295765042ea99269d7e88c87c7f68864f3a463c62d4a488edf2f9a071"
+    },
+    {
+      "path": "post_freeze_sources.py",
+      "bytes": 5054,
+      "sha256": "f58105919ee11969cc414818e8cb1901c0d0e73a3e137f01afdb60270feed990"
+    },
+    {
+      "path": "post_primitive_comparison.py",
+      "bytes": 14270,
+      "sha256": "f1663352dc4edb85435331d0b3f4ec3a50f477ffd0fd5cf96c1b54f14c8a415d"
+    },
+    {
+      "path": "post_sources/GROUND_FORMATION_MAIN_REFRESH_0331.json",
+      "bytes": 1007,
+      "sha256": "475581d44dabea7ffc548fa1fdf90449c82a1b984c4bea0c771feec2ec5e5dd1"
+    },
+    {
+      "path": "post_sources/author/AUTHOR_SEAL.json",
+      "bytes": 1616,
+      "sha256": "24e2131d01c9e47b9d8c684486e726ab753d7cab1962566baee13fbd5fead572"
+    },
+    {
+      "path": "post_sources/author/CONTROL_ATTEMPT01.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "post_sources/author/CONTROL_ATTEMPT01.stdout",
+      "bytes": 45454,
+      "sha256": "69f27361498e02124ff41b386d3aa80d7e4d96c8e56fa946498cf3c117f0a32b"
+    },
+    {
+      "path": "post_sources/author/EXECUTION_ATTEMPT01.json",
+      "bytes": 419,
+      "sha256": "95c62dd8d7b8703b15216d52f2864ad43da481557fa2341237bc945253778a6a"
+    },
+    {
+      "path": "post_sources/author/GROUND_ENERGY_AND_ORIGINAL_FORMATION_ROOT.md",
+      "bytes": 16531,
+      "sha256": "efd15929c31fb137219efb571b99fd0bc3641410f1ea857339fdde65d9128a81"
+    },
+    {
+      "path": "post_sources/author/PRIMITIVE_RATE_ENERGY_RESULTS.json",
+      "bytes": 3028891,
+      "sha256": "5a2080dff069ea2f24bc5411d25a60b3f4dc3c5a892b7133393be3d89e703433"
+    },
+    {
+      "path": "post_sources/author/ROOT_REVIEW.json",
+      "bytes": 1184,
+      "sha256": "208d71a49086d1c9e822227bc48c71f749e799e50c4d5a7bb5e0c2fb51935528"
+    },
+    {
+      "path": "post_sources/author/SOURCE_PINS.json",
+      "bytes": 2524,
+      "sha256": "e733811bd136e4a763d7cda899499e079bb3e24999296e832d62cd220094f5c9"
+    },
+    {
+      "path": "post_sources/author/WORKING_DERIVATION.md",
+      "bytes": 5750,
+      "sha256": "18b4dbe70813d06bac8907f49c33066a42cab538afe8bd4642368fb7a86de70b"
+    },
+    {
+      "path": "post_sources/author/primitive_rate_energy_controls.py",
+      "bytes": 9661,
+      "sha256": "355982f58f81e1c8ea93b7aacb9d6f9f478a0d96d225a92fa0e3fcfec7cebdf8"
+    },
+    {
+      "path": "post_sources/procedures/SKILL_FRESHNESS_CHECK.md",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "post_sources/procedures/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "post_sources/procedures/physics-loop/references/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "post_sources/procedures/review-loop/SKILL.md",
+      "bytes": 19430,
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "post_verify_bindings.py",
+      "bytes": 4293,
+      "sha256": "5b5a3b75ed7710a6b21d1293b8cf2ab5470a196c4c0bbadb031e693937e1325e"
+    },
+    {
+      "path": "seal_post.py",
+      "bytes": 2799,
+      "sha256": "2db0e647c68285102943a8e731454aa54fe7753faa1c53b2bebda83032cd168a"
+    }
+  ]
+}

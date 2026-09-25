@@ -1,0 +1,56 @@
+{
+  "scope": "Exact integer action of the original pair-form H4 at zero link angles.\n\nThis is a finite matter-fiber coefficient computation, not rotor propagation.\nH4=-2 sum S_ac^* S_ac. Full hard-core signs, occupied B sites and all local\noverlapping pairs are retained. Scalar far pairs are evaluated analytically.\n",
+  "rows": [
+    {
+      "side": 6,
+      "vertices": 216,
+      "overlap_pairs": 972,
+      "active_pair_counts": [
+        242,
+        252
+      ],
+      "all_B_empty_flat_scalar": -69336,
+      "mean_H4": "-64199",
+      "mean_minus_background": "5137",
+      "variance_H4": "5502897",
+      "selected_mark_leakage": {
+        "-1": {
+          "norm_squared": "8133884",
+          "output_words": 1798
+        },
+        "1": {
+          "norm_squared": "8133884",
+          "output_words": 1798
+        }
+      },
+      "shifted_action_words": 1788,
+      "action_certificate_sha256": "cf4ee7352f096be456ee9330f41e5111b76eaa59ca04305c9ffb9f2b4cf10795"
+    },
+    {
+      "side": 16,
+      "vertices": 4096,
+      "overlap_pairs": 18432,
+      "active_pair_counts": [
+        243,
+        254
+      ],
+      "all_B_empty_flat_scalar": -1314816,
+      "mean_H4": "-1309676",
+      "mean_minus_background": "5140",
+      "variance_H4": "5516448",
+      "selected_mark_leakage": {
+        "-1": {
+          "norm_squared": "7982020",
+          "output_words": 1792
+        },
+        "1": {
+          "norm_squared": "7982020",
+          "output_words": 1792
+        }
+      },
+      "shifted_action_words": 1846,
+      "action_certificate_sha256": "acb0b65e928d5c8f5295a1b1fba1f5ecf38423f2ac8d1ab6c9d2a438295b6318"
+    }
+  ],
+  "elapsed_seconds": 1.76988370786421
+}

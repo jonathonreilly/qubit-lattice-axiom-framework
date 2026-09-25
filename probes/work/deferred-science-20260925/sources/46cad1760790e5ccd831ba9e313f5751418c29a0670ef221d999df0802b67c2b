@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T10:55:23.606370+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/compare_read_only.py"
+  ],
+  "source_sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9",
+  "recorder_sha256": "11091e9b5f1853c7dff93eb63e11ba08002c6bf01e9c3dd06ffdeecf7573551e",
+  "elapsed_seconds": 1.1339558749459684,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "comparison.stdout.txt",
+      "sha256": "ca52b8469b58b8956b6df1519d812468a64f7b16193c3872c5723844be8412db",
+      "bytes": 11638
+    },
+    "stderr.txt": {
+      "path": "comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

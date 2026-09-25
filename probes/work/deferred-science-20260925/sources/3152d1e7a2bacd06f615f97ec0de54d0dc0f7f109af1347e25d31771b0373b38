@@ -1,0 +1,24 @@
+{
+  "sealed_utc": "2026-09-24T16:26:48.557170+00:00",
+  "stage": "independent-POST-after-recent-birth-author-release",
+  "scope": "Scoped central recent-birth source lemma and full-ensemble variance lower bound; explicitly unreviewed stronger upstream remainder/Fisher claim; analytic and evidence-only review of a labeled toy, without numerical replication. No audit verdict.",
+  "pre_seal_sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+  "pre_members_unchanged": 11,
+  "final_original_and_snapshot_hashes_reverified": true,
+  "files": {
+    "POST.md": "c6abb14d3ba48f748441941ad9aca16e5d3d6ad73df55677f0e1d483dafd4be3",
+    "POST_SOURCE_PINS.json": "3011cafaee465f6c1fd640e7032f8d35d07f31562febd10645a755cf100a33e1",
+    "post_evidence_check.py": "25aa9be9cd270407ee5d5d1a0a47ba2653d7133ebd8b5e668f659731e274d43f",
+    "POST_EVIDENCE_CHECK.json": "fd56feb48ca39cc6dd8068e02487160eeaf12f96fee0296eda62e9567047bf97",
+    "POST_EVIDENCE_CHECK.log": "fd56feb48ca39cc6dd8068e02487160eeaf12f96fee0296eda62e9567047bf97",
+    "POST_EVIDENCE_CHECK.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "released_sources/AUTHOR_SEAL.json": "f158f2aad27dd8b4f4ef13e8d348ef2ef9ed049f42bc1ff92623e98ade62ae5f",
+    "released_sources/CONTROL_SEAL.json": "0ebde9f2bede5748005aa574d25f2f4a0415f8989f3bdc7d13bb2950925c4ecd",
+    "released_sources/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+    "released_sources/recent_birth_controls.py": "1d56ded6fa3ee1ef8b739c7117d0be2aeff24c2d28f651aceda6be258ad35fc6",
+    "released_sources/RECENT_BIRTH_CONTROL_RESULTS.json": "e1e59a8f0faff148503e536bcbe6bdd20678a088eae72e816509d471fdcb1a5a",
+    "released_sources/CONTROL.stdout.txt": "e1e59a8f0faff148503e536bcbe6bdd20678a088eae72e816509d471fdcb1a5a",
+    "released_sources/CONTROL.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "released_sources/CONTROL_EXECUTION.json": "9e05977d658e724b3587f95d8020836a1aebb0ca07dc520043da15f1c86b6145"
+  }
+}

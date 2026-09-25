@@ -1,0 +1,10 @@
+{
+  "started_at_utc": "2026-09-24T19:00:08.586355+00:00",
+  "elapsed_seconds": 0.0559899581130594,
+  "exit_code": 0,
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-dispersion-independent/post_binding_verification.py"
+  ],
+  "scope": "Read-only hashes, extraction and comparison. No primary or physics control rerun."
+}

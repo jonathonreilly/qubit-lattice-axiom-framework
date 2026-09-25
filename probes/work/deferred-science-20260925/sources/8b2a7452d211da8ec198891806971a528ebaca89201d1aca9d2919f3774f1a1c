@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-25T00:13:19.489926+00:00",
+  "original_AUTHOR_SEAL_sha256": "effb2dc3b41f9e7c3cb8bc1b2b363fc86299feb3c38a752b4db4fec4a33c04cb",
+  "files": {
+    "SOURCE_METADATA_QUALIFICATION.md": {
+      "sha256": "d5bbf6244b07afd8d4b7b4582d5ad5b1408232dcb024178314e5eedebabe03b4",
+      "bytes": 684
+    }
+  },
+  "scope": "Inventory metadata clarification before independent source release; original seal preserved."
+}

@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-25T02:55:49.585286+00:00",
+  "status": "Root reviewed; not independently checked",
+  "coverage": [
+    "Complete final proof, direct Gram code, all147patternrows and multiplicities,26ambientaverages and28torusoccupancyrows read.",
+    "All3072directlocaloccupancy checks executed; allsites L6/8/10/12 geometry verified by original control.",
+    "Separately checked table maxima, exact source/result/stdout/execution binding, all8live premise/context origins.",
+    "Variational domain, all-cycle angles, finite color multiplicities, phase modulus and endpoint comparisons reviewed explicitly."
+  ],
+  "limits": [
+    "Fixed graph before smallg; no uniformvolume coupling threshold.",
+    "No fullmanybody eigenvalue, stationary state, spontaneousdecay, microscopic energy moment or empirical vacuumselection."
+  ],
+  "failed_attempts": "No scientific control failure; exact unsealed scratch retained with typographic phase,+a artifact.",
+  "note_sha256": "aef82e905d9270ae543501dd7548687fae93fda806cc8dd7b7c8861aafe8cadb",
+  "code_sha256": "197f7e83393b2d6fade8eaa5e6eb14dcab8f21d77e5dc56a566f1d37ee813080",
+  "result_sha256": "7942738261ffbcdd5dc28b75ea3f88dfcfce298129d9dba40253e9ea406a7f57"
+}

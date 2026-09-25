@@ -1,0 +1,13 @@
+{
+  "bytes": 14490,
+  "ctime_ns": 1788906559024445316,
+  "dev": 16777231,
+  "ino": 295080999,
+  "mode": 33188,
+  "mtime_ns": 1788906558708050244,
+  "nlink": 1,
+  "origin": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+  "role": "Installed procedural distribution copy read earlier; identity matched to repository source at closure.",
+  "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+  "snapshot": "sources/installed_physics_claim_reviewer_SKILL.md"
+}

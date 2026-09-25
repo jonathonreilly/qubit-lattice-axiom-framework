@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-25T07:55:25.380888+00:00",
+  "PRE_sha256": "bb66eeb37dad77a5a1c602822cde911fb9eceee35c57794f9fd9ec4ffc2fef81",
+  "PRE_seal_sha256": "61b5a0edaffee445ba80cfd7eb7e25cb60dea3e6aede4b449df2fc2e3dbc7cca",
+  "complete_proof_new_programs_recorders_sealer_verifier_and_repair_diff_read": true,
+  "all_166_scientific_group_rows_read_losslessly": true,
+  "controls": {
+    "exact_Gram_entries": 5649,
+    "group_rows": 166,
+    "primitive_outputs": 5956,
+    "selected_mark_moments": 1266
+  },
+  "source_origins_verified": 6,
+  "seal_members_verified": 33,
+  "elapsed_seconds": 0.05758949997834861,
+  "exit_code": 0,
+  "stderr_bytes": 0,
+  "observed_files_byte_stat_unchanged": 40,
+  "output_exact_except_verified_utc": true,
+  "required_mathematical_repair": null,
+  "shared_science": "Original signed birth map, exact regional Gauss charges, normal-field-independent commuting charge law, orientation-averaged structure factor and original first-event scalar-loss proof agree with personally sealed42.",
+  "PRE_additions_attributed": [
+    "Arbitrary irregular-graph mark-forgotten charge-pattern multiplicities and complete joint law.",
+    "Resolved-sign orientation-averaged Fourier formulas and staggered A-center exception.",
+    "Sixth-order remainder and bounded constrained electric-flux extension.",
+    "Explicit invalid cross-edge coherent-sum and coherent/dephased density controls."
+  ],
+  "preserved_failure": "Initial magnetic-pair shorthand corrected before seal; original draft/diff preserved. It does not change birth controls or the number-reduction argument.",
+  "limits": [
+    "Instantaneous existing Gauss charges, not persistent particle or detector.",
+    "Common rotor theorem, not finite-spin stopping-time transfer.",
+    "No field stationarity, field-only postbirth limit, calibration or empirical claim."
+  ],
+  "no_author42_exposure_before_PRE_seal": true,
+  "root43_already_sealed_before_this_PRE_read": true
+}

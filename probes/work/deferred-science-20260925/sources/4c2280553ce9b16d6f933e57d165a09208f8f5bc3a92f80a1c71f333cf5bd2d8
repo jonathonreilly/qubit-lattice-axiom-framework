@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-09-24T15:48:06.119622+00:00",
+  "frozen_control_members": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/noevent_controls.py",
+      "snapshot": "POST_sources/noevent_controls.py",
+      "sha256": "2ffedffaad64dc16ebb2767d356f0109171b4b09eb9d947ded7e79626c0655db",
+      "bytes": 6970
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL_RESULTS.json",
+      "snapshot": "POST_sources/NOEVENT_CONTROL_RESULTS.json",
+      "sha256": "cc153bee2b8570fcd36b631df2748c8e795e1f33f283b30d67b567ac8ff11aa4",
+      "bytes": 18339
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stdout",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stdout",
+      "sha256": "883748e87c6164970d735079888df956be89a0c8e1ff8ea86694727de3b45a73",
+      "bytes": 20490
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/continuous-coherence-personal/NOEVENT_CONTROL.stderr",
+      "snapshot": "POST_sources/NOEVENT_CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

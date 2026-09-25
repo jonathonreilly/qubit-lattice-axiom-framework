@@ -1,0 +1,40 @@
+{
+  "control": "Independent L6 physical primitive fixture; integer paths and full electric shifts",
+  "L": 6,
+  "A_sites": 108,
+  "B_occupied": 106,
+  "total_charge": 108,
+  "edges": 648,
+  "pair_degree": 18,
+  "pair_counts": {
+    "1": 324,
+    "2": 648
+  },
+  "holes": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      3,
+      2,
+      0
+    ]
+  ],
+  "Gauss_checked_unique_states": 1507,
+  "initial_electric_D": 2,
+  "intensity_over_kappa_initial": 0,
+  "Q_expectation_initial": 4,
+  "H4_expectation_initial": -8,
+  "Q_initial_words": 115,
+  "Q_initial_norm_squared": 190,
+  "B_Q_nonzero_channels": 116,
+  "B_Q_output_words": 328,
+  "B_Q_norm_squared_sum": 1240,
+  "sum_L_h_norm_squared_over_kappa_delta_squared": 4960,
+  "original_resolved_and_unnormalized_coherent_intensities_equal": true,
+  "saturated_sector_formal_check": "All B occupied makes each F, S, L and gated D zero, for any Gauss-legal color/field state.",
+  "data_sha256": "73a46c0dc8eb0f18ada6ac193776d5213425e8c3fb01a5aacf8327492178d047",
+  "elapsed_seconds": 0.043794249882921576
+}

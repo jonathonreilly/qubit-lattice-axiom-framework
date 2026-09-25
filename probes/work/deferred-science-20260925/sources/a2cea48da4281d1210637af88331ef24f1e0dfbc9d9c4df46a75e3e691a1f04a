@@ -1,0 +1,100 @@
+{
+  "sealed_utc": "2026-09-24T21:02:50.611362+00:00",
+  "phase": "blind_PRE",
+  "scope": "Original resolved first/first-pair instrument on fixed finite-Hermite preparations; conditional leading quadrature response, restricted mean calibration, finite-state counterexamples, spatial/time averaging and conservative full-generator finite bins. No source-to-detector identification or framework-wide no-go.",
+  "conditional_import": "Supplied exact resolved effect and original common compensated model, with source scope preserved.",
+  "author_candidate_or_controls_read": false,
+  "other_active_packets_read": false,
+  "parent_or_author_numerical_runs": 0,
+  "own_control_runs": 1,
+  "delegation": false,
+  "repository_publication_or_audit_mutations": false,
+  "members": [
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "5d02bacc623516e8f3f1a15061195240bd007f988cadc7dc7a2b4fc68059f2fd",
+      "bytes": 691
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "8d950d27a79d87d7017de2f2515a37a0bca042a456be5f625b6a63f85527be3d",
+      "bytes": 23218
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "8d950d27a79d87d7017de2f2515a37a0bca042a456be5f625b6a63f85527be3d",
+      "bytes": 23218
+    },
+    {
+      "path": "INITIAL_SOURCE_PINS.json",
+      "sha256": "c56e9b29efa3588307289f58d3510f0dfae4cb481ddd462d4db8c5780b6c7e63",
+      "bytes": 2252
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "317f27047dc373562edb0efb5be53ba83a9eb5bcd0f295ec0ef7b481d03f4ee1",
+      "bytes": 23134
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "47c79c355c508a10217f50c9a8e3f67cc4370f8c9f66efb0a0ef961c31814f6c",
+      "bytes": 5543
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "54be584b5024f2b480d2c4b8b907f27c2c0f8dadc7a8ed4eed9613cedfb09d29",
+      "bytes": 1605
+    },
+    {
+      "path": "calibration_controls.py",
+      "sha256": "10bc8ffdddd395025bf03dfa3f1d4f673d2e80a47f7b45986370d745e10e46ac",
+      "bytes": 10032
+    },
+    {
+      "path": "sources/BROURI_PDF_TEXT.txt",
+      "sha256": "1efa1725e842a9083c6d7363d47f705176bcc1baa8f0edd2bf8c8faaf75f3cb1",
+      "bytes": 16116
+    },
+    {
+      "path": "sources/GLAUBER_WEB_EQ10_20_RETRIEVAL.json",
+      "sha256": "c04ccfdfdf93ac5d9764d912a6d47fe4413b54f720eb049bb0d552806c47d4c2",
+      "bytes": 29307
+    },
+    {
+      "path": "sources/GLAUBER_WEB_NORMAL_ORDERING_RETRIEVAL.json",
+      "sha256": "5c114a6763d7345d42a81a4d0867e7b8b88bf8ab807781e904e33094afa39357",
+      "bytes": 13535
+    },
+    {
+      "path": "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/TWO_FORMATION_RECORDS_READ_A_PHOTON_PACKET_ROOT.md",
+      "sha256": "6710b11cede13fc0cb8c7d9e83fac816d590acef8401bd1e98f432c3252840ce",
+      "bytes": 11027
+    },
+    {
+      "path": "sources/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "sources/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "bytes": 164208
+    }
+  ],
+  "read_only_policy": "All members and this seal chmod 0444. Any released POST must be separate."
+}

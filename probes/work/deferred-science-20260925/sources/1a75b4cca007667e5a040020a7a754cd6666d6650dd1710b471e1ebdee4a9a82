@@ -1,0 +1,1285 @@
+{
+  "verified_utc": "2026-09-25T05:57:41.153060+00:00",
+  "scope": "Released-source correspondence and exact stored-row arithmetic; no author program execution, new simulation or applied audit verdict.",
+  "PRE_seal_sha256": "d65cdc1e27cd6757c9437f62cec7c45bfa7a3c850da4c5f2f2fe510983c00dad",
+  "PRE_members_unchanged": 30,
+  "author_seal_sha256": "ffd9f68e551afb30573d4cf727f8f5c58b4b32d6feb2c128fd660ecd74416486",
+  "author_members_live_and_snapshot_verified": 9,
+  "main_parent_origins_verified": 3,
+  "prior_provenance_references_not_followed": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-personal/PHOTON_OBSERVATION_AND_LIVE_BIRTH_ROOT_DERIVATION.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/photon-observation-publication/docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PR9124_SOURCE_REFRESH_0530.json"
+  ],
+  "author_functions_read_and_AST_parsed": [
+    "geometry",
+    "gauss",
+    "flow",
+    "electric",
+    "translated",
+    "response",
+    "words",
+    "primitive",
+    "main"
+  ],
+  "author_source_sha256": "dfd21b49faefe51eaedf1a70c75671a9aaf9b58a20cbbed276259148328bdfc5",
+  "author_result_and_stdout_sha256": "f8df67461df107971fb45c92e418d1255d299eecbaae9571cf6e443c438d34c8",
+  "author_execution_seconds": 24.113267082953826,
+  "author_internal_elapsed_seconds": 24.078476916998625,
+  "author_exit_code": 0,
+  "author_stderr_bytes": 0,
+  "geometry_rows": [
+    {
+      "side": 2,
+      "vertices": 8,
+      "A_sites": 4,
+      "edges": 12,
+      "plaquettes": 6,
+      "edge_squared_incidence": 2,
+      "degree": 3,
+      "response_coefficient_in_K": 12,
+      "per_birth_decrement_in_K": 24,
+      "complete_charge_enumeration": true,
+      "charge_words": 65
+    },
+    {
+      "side": 4,
+      "vertices": 64,
+      "A_sites": 32,
+      "edges": 192,
+      "plaquettes": 192,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    },
+    {
+      "side": 6,
+      "vertices": 216,
+      "A_sites": 108,
+      "edges": 648,
+      "plaquettes": 648,
+      "edge_squared_incidence": 4,
+      "degree": 6,
+      "response_coefficient_in_K": 48,
+      "per_birth_decrement_in_K": 96,
+      "complete_charge_enumeration": false,
+      "charge_words": 5
+    }
+  ],
+  "all_scientific_rows_reviewed": 75,
+  "all_three_flow_rows_per_charge_checked": 225,
+  "cube_charge_words_completely_enumerated": 65,
+  "second_difference_checks_stored": 13770,
+  "primitive_paths_stored_and_counted": 27344,
+  "stored_row_arithmetic": [
+    {
+      "L": 2,
+      "word": 0,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 1,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 2,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 3,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 4,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 5,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 6,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 7,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 8,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 9,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 10,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 11,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 12,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 13,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 14,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 15,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 16,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 17,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 18,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        4
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        10
+      ]
+    },
+    {
+      "L": 2,
+      "word": 19,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 20,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 21,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 22,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 23,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 24,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        16
+      ]
+    },
+    {
+      "L": 2,
+      "word": 25,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 26,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 27,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 28,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 29,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        4
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        10
+      ]
+    },
+    {
+      "L": 2,
+      "word": 30,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 31,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 32,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 33,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 34,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 35,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 36,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 37,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -6,
+        6
+      ],
+      "E2_polynomial": [
+        4,
+        -10,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 38,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -2,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        -6,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 39,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 40,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -12,
+        20
+      ]
+    },
+    {
+      "L": 2,
+      "word": 41,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        -8,
+        4
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        14
+      ]
+    },
+    {
+      "L": 2,
+      "word": 42,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -6,
+        4
+      ],
+      "E2_polynomial": [
+        4,
+        -10,
+        10
+      ]
+    },
+    {
+      "L": 2,
+      "word": 43,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        12
+      ]
+    },
+    {
+      "L": 2,
+      "word": 44,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        -2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -6,
+        6
+      ]
+    },
+    {
+      "L": 2,
+      "word": 45,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -8,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 46,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 47,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 48,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 49,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 50,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 51,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 52,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 53,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 54,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 55,
+      "response": 48,
+      "paths": 48,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "L": 2,
+      "word": 56,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 57,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 58,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        2
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 59,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        8
+      ]
+    },
+    {
+      "L": 2,
+      "word": 60,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 61,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -4,
+        4
+      ]
+    },
+    {
+      "L": 2,
+      "word": 62,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        2,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 63,
+      "response": 24,
+      "paths": 8,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "L": 2,
+      "word": 64,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "L": 4,
+      "word": 0,
+      "response": 1536,
+      "paths": 1920,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "L": 4,
+      "word": 1,
+      "response": 1440,
+      "paths": 1688,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "L": 4,
+      "word": 2,
+      "response": 1344,
+      "paths": 1488,
+      "D_polynomial": [
+        4,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "L": 4,
+      "word": 3,
+      "response": 768,
+      "paths": 640,
+      "D_polynomial": [
+        2,
+        -2,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        -2,
+        16
+      ]
+    },
+    {
+      "L": 4,
+      "word": 4,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        4,
+        0,
+        32
+      ]
+    },
+    {
+      "L": 6,
+      "word": 0,
+      "response": 5184,
+      "paths": 6480,
+      "D_polynomial": [
+        6,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        6,
+        0,
+        0
+      ]
+    },
+    {
+      "L": 6,
+      "word": 1,
+      "response": 5088,
+      "paths": 6244,
+      "D_polynomial": [
+        6,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        6,
+        0,
+        6
+      ]
+    },
+    {
+      "L": 6,
+      "word": 2,
+      "response": 4992,
+      "paths": 6028,
+      "D_polynomial": [
+        6,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        6,
+        0,
+        4
+      ]
+    },
+    {
+      "L": 6,
+      "word": 3,
+      "response": 2592,
+      "paths": 2520,
+      "D_polynomial": [
+        4,
+        -2,
+        0
+      ],
+      "E2_polynomial": [
+        6,
+        -2,
+        114
+      ]
+    },
+    {
+      "L": 6,
+      "word": 4,
+      "response": 0,
+      "paths": 0,
+      "D_polynomial": [
+        0,
+        0,
+        0
+      ],
+      "E2_polynomial": [
+        6,
+        2,
+        144
+      ]
+    }
+  ],
+  "lossless_payload_review_tsv_sha256": "5122ad39d0b4a737b9f5aa15af52eda1cf12073ffc0c07e25b4871ba665bcffa",
+  "own_PRE_elementary_geometry_agrees": true,
+  "PRE_only_L4_all_four_cycle_coefficient_retained": 60,
+  "author_code_imported_or_executed": false,
+  "file_writes_or_processes_spawned_by_verifier": false,
+  "all_checks_passed": true
+}

@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-24T21:38:32.097934+00:00",
+  "phase": "Personal output-energy addendum before independent dynamics PRE",
+  "files": {
+    "EXECUTION.json": {
+      "sha256": "6ac7d2289a12b3957afbfcd026eec5f0a4746a669a8948c2d324b57c639292e6",
+      "bytes": 341
+    },
+    "OUTPUT_ENERGY.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "OUTPUT_ENERGY_RESULTS.json": {
+      "sha256": "ce61deef4a687cc851fd19b12a35cfbdc32a34f70b35fe274a45ce882957e659",
+      "bytes": 1143
+    },
+    "SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md": {
+      "sha256": "57d3e1c06396db01957536224d7c03d0b3a04908a34ae01bb56a37ea5250ff35",
+      "bytes": 6955
+    },
+    "SOURCE_PINS.json": {
+      "sha256": "9bff76ca71e18ba6787cd01311af0702ffbd92362834f810fdcf3af018b8e8fd",
+      "bytes": 1044
+    },
+    "output_energy_controls.py": {
+      "sha256": "8d70c1821496c04cf98b066e0186fc6aa544c5f3f06bc97b312dabcc1e9a0eee",
+      "bytes": 4101
+    }
+  }
+}

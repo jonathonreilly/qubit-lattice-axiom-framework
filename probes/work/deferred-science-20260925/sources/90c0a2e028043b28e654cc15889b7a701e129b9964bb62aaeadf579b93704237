@@ -1,0 +1,54 @@
+{
+  "kind": "milestone_six_publication_comparison_pins",
+  "observed_publication_base_revision": "c234d47c9d99b7fd5590957ec08d9083877d25e6",
+  "reviewed_publication_and_completed_evidence": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/docs/TIME_INTEGRATED_MICROSCOPIC_CUBE_BIRTH_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f667f03f5b6b9fd1e50e3c01f800e19d754dae8281354ff2d0196d97ddbd44ae",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": "4a484ec7403e3f2306454fe01cfb91cdf2a7f601d2e896aaef6307134deec28f",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "af0b8e6494ea54cdb450e430a45e9d89d9e1e931e21b9a74ab2b4ea260a3a718",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/scripts/time_integrated_microscopic_cube_birth_variance_2026_09_24.py": "1482440722ca5c91dea2067b0c0ba2024c1c2a31ea93bf1736fe62c5fcaa48bc",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/logs/runner-cache/time_integrated_microscopic_cube_birth_variance_2026_09_24.txt": "798d06fc344c941c72841aee55de266044d3e83771c9faebad6edc36c2416406",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/outputs/integrated_cube_birth_variance_20260924/INTEGRATED_VARIANCE_CONTROL_RESULTS.json": "4a6501b933299c5ac6a658b615725b8bc47ebdfaa613bb9fe6b3947137ff7958",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/SIXTH_PUBLICATION_FROZEN_SOURCES.json": "a391ff94736b103d4b3e4a4709bc25bb1ab6c3c1ed11dbe569e3ae807bec16bc",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SIXTH_PUBLICATION_CACHE_EXECUTION.json": "6f4160314c9cc5c1baa280c33cb67df7dac0b54c9b5e889bdbe1cbe8dfc58a89",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/SIXTH_CACHE_EXECUTION.log": "0d4a4f4c5a7696f39098f36fa7e804f03eb96ebbc99f95067bc151f96b293589",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/PRE_EXTENSION_ROOT_REVIEW.md": "12c40fcffeae56ae2954e9f398ece2b7fec62cf10cf7564ebadae2474fb715d8",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/integrated-variance-publication/scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+  },
+  "reused_frozen_author_sources": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/AUTHOR_SEAL.json": "cfbddc92c657bbeb09b4ea3ca01d1b75e0b6099fd2d820e332501506cabf3cbe",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/AVERAGED_VARIANCE_PERSONAL_DERIVATION.md": "00e05d4918d58840e78f9bd3fb4326dcfb12ade7e5a2db8ca18d1dfc39f63eb0",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/second_birth_word_controls.py": "17226795e43c89fd0a4022044a28384adcb69d339cb8d512adf526ef06867869",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/SECOND_BIRTH_WORD_RESULTS.json": "be87a6249db1eb2c8679b76b3a03310470615863619b99e00efae830ef039254",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/SECOND_BIRTH_WORD.stdout": "be87a6249db1eb2c8679b76b3a03310470615863619b99e00efae830ef039254",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/SECOND_BIRTH_WORD.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/SOURCE_PINS.json": "ec3afcade682f757c348ff7c6472e5512dd62f56309215a460cd9ea929af00f4",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/CONTROL_SEAL.json": "d4049a78d41fb775964aab56094e497f5d15e3901146645dfd7c64ec416a79d8",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/variance_controls.py": "0602c08bdfa1d010cb0531cba45207f28ff1450db8d4eb74a0b2e20ed951298d",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/VARIANCE_CONTROL_RESULTS.json": "925d1ceb4a1dc909cc54ba8af9316e03762aabc2b1352041274e03258e85eb64",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/VARIANCE_CONTROL.stdout": "ef5f893e83b003b35e61ecadf8f765fe5414a5cf92ad69f53c4f2d559d0ca7d1",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/VARIANCE_CONTROL.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-personal/CONTROL_EXECUTION_RECORD.json": "730b7c303782a618d39742dc630655da353ca3cc1bb6bf35b469b9ec5d8e0160",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/ordinary-energy-publication/scripts/ordinary_microscopic_cube_energy_after_birth_layer_2026_09_24.py": "4bdb0a05140d30e98f1afa85ccbba6c4684626c492550ec0625896d946356c5d"
+  },
+  "preserved_independent_pre_post": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/PRE.md": "57819426fec612dcb000612dcb8419cca34d3538904dcaefea13fb4820181d8e",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/PRE_SEAL.json": "35101d25eaf758e0d1f82abcfa6eda7e86779bd5f5d16cca6ffcb514b1924450",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/POST.md": "5a53e72b0efa31bfd73d3d94246378a7748cf0e71f7f1f28a3ef374334e5f9d5",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/POST_SEAL.json": "cc44f74754512cd5dd7b6b7d2d24559fdf18244fe7c3b842df7b8cdd5ce02665",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/independent_variance_checks.py": "44b7e0eea9c2b9d64f6c32a00af87fea6e1c99a2446c844606bbb16a4ad4bd77",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/FINITE_CHECKS.json": "3b33852cd7e75dafd68faf6f0bfa24acd2c929faf9365bc3d0ea046d7df3e81c",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/FINITE_CHECKS.log": "9e03a26750f717bd4c8f89fc5aeb8ad1c827cf7746175b43b6265babe6b8d9ef",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/POST_SOURCE_PINS.json": "0861982f24d0e603e7bdcb9c586c280d4f58c284cf9a3177e4b5ca8683b5a136",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/post_selective_checks.py": "cbc3e1b47693108d556448bbffee54472ffb51c52aa72b74386c6d28e42e92ee",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/POST_SELECTIVE_RESULTS.json": "ca1fe7841addb42f2fc856e1b08ab23714c25ae233dc6728d36e8cca797bc126",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/POST_SELECTIVE_CHECKS.log": "ca1fe7841addb42f2fc856e1b08ab23714c25ae233dc6728d36e8cca797bc126"
+  },
+  "new_comparison_evidence": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/publication_evidence_checks.py": "37952b1b6107fb362aef2b083b2720164526ad11781e5218520028801288e259",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/PUBLICATION_EVIDENCE_VERIFICATION.json": "fd07031e564943123a8368115b6cc30427ce03b8f17641a2017351223b1994e6",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/averaged-variance-independent/PUBLICATION_EVIDENCE_VERIFICATION.log": "fd07031e564943123a8368115b6cc30427ce03b8f17641a2017351223b1994e6"
+  },
+  "comparison_scope": "Complete changed publication and runner, exact source adaptation, preserved PRE enhancements, completed cache fingerprint and full output correspondence; no new blind derivation or formal audit."
+}

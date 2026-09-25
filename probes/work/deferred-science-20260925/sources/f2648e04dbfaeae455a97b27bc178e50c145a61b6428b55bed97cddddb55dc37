@@ -1,0 +1,56 @@
+{
+  "base_revision": "d3dfdff92b6eb9e422da3691d13af4c249b7c4e9",
+  "base_branch": "codex/mobile-record-native-ground-energy-and-formation-20260925",
+  "branch": "codex/mobile-record-microscopic-ground-energy-budget-20260925",
+  "packet": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925",
+  "note": "docs/MICROSCOPIC_GROUND_ENERGY_AND_FORMATION_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+  "runner": "scripts/microscopic_ground_energy_and_formation_budget_2026_09_25.py",
+  "output_directory": "outputs/microscopic_energy_budget_20260925",
+  "parent_paths": [
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/NATIVE_GROUND_ENERGY_AND_ORIGINAL_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-25.md"
+  ],
+  "runtime": [
+    ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/runtime/primitive_spin_energy_controls.py"
+  ],
+  "source_notes": [
+    {
+      "unit": "microscopic",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/FULL_MICROSCOPIC_ENERGY_AND_FORMATION_ROOT.md",
+      "sha256": "7e03d6e1b644dd841cf5d7cc35863a884db8f40cf092d276cd0b90cfa7a0deeb"
+    },
+    {
+      "unit": "budget",
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-ground-energy-budget-personal/NATIVE_GROUND_RESIDENCE_AND_ENERGY_BUDGET_ROOT.md",
+      "sha256": "8b5ae458dd48672764ed9a79d35affcb945473ac330a9afbeb23af4d7411204d"
+    }
+  ],
+  "presentation_replacements": [
+    {
+      "unit": "microscopic",
+      "old": "Personal root conditional theorem candidate, 25 September 2026. Unreviewed\nuntil a separate reconstruction is sealed. The primary agent personally",
+      "new": "Personally derived conditional theorem, 25 September 2026. Separate scoped\nPRE and POST are complete; no retained audit status. The primary agent personally"
+    },
+    {
+      "unit": "budget",
+      "old": "Personally derived conditional candidate, 25 September 2026. This composes\nthe sealed but not yet independently checked root37 microscopic theorem",
+      "new": "Personally derived conditional consequence, 25 September 2026. This composes\nthe separately checked root37 microscopic theorem in Part I"
+    },
+    {
+      "unit": "budget",
+      "old": "This is an analytic composition. No new numerical experiment or independent\nconfirmation is claimed.",
+      "new": "This is an analytic composition. No new numerical experiment is claimed.\nIts separate scoped PRE and POST are described in the publication overview."
+    }
+  ],
+  "origins": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/microscopic-ground-stationarity-personal/primitive_spin_energy_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-microscopic-energy-budget-20260925/runtime/primitive_spin_energy_controls.py",
+      "sha256": "7dbb936adc22aec2fe5321cba6b6498e354b5cf609c92b6f518bcf6dca2a2c14",
+      "adaptation": "None; exact sealed source."
+    }
+  ]
+}

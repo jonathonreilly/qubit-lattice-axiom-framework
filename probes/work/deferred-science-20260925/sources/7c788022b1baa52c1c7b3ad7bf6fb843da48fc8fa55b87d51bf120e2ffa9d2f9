@@ -1,0 +1,147 @@
+{
+  "created_utc": "2026-09-24T17:18:35.286176+00:00",
+  "stage": "Released-source POST, separate from blind PRE",
+  "PRE_dependency": {
+    "seal": "PRE_SEAL.json",
+    "sha256": "ab052a8061d0103417c6ce431d132530951df70eea588e709c31f0f4bbc7995d",
+    "unchanged_members": 34,
+    "report": {
+      "path": "PRE.md",
+      "sha256": "3996a4a5d128545470b8636d88aef2d6b29e424eff8672bd3be125dc372258df",
+      "bytes": 31363
+    },
+    "source_pins": {
+      "path": "SOURCE_PINS.json",
+      "sha256": "9b9711a430ecf9bbcc62629ea1e6c8f78828b4fd56540d9085b2c79ed43adcf0",
+      "bytes": 10869
+    },
+    "scientific_scope": "Seven exact authorized note revisions and explicitly supplied prior recent-birth PRE/seal; imports remain conditional/unaudited."
+  },
+  "released_sources": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/AUTHOR_SEAL.json",
+      "snapshot": "POST_sources/AUTHOR_SEAL.json",
+      "sha256": "b1911b15a9271cedd3f75f5291ce26b145af79ec3d0b81f33ac5daca1e414efd",
+      "bytes": 505
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_SEAL.json",
+      "snapshot": "POST_sources/CONTROL_SEAL.json",
+      "sha256": "a8e9e3a9df291663235b06bcb5bff26b61b902ca37f6be6058de035aeb043fe2",
+      "bytes": 877
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "snapshot": "POST_sources/FULL_CUBE_ENERGY_ANOMALY_PERSONAL_DERIVATION.md",
+      "sha256": "42570c118387059b66ad7a76c4b57bfdc7acdcb8c0c58aa2a5f0c622bd9cc723",
+      "bytes": 21226
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/full_ensemble_energy_controls.py",
+      "snapshot": "POST_sources/full_ensemble_energy_controls.py",
+      "sha256": "7354476b7b253e966f66bfe0b3d6cca32f3949b18c4208470de27951e33ad7c7",
+      "bytes": 9619
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/SOURCE_PINS.json",
+      "snapshot": "POST_sources/SOURCE_PINS.json",
+      "sha256": "632ce908212e6a48321f54e0dfd5c9acccb4ade62bd37797c013159db2ccedfa",
+      "bytes": 4547
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+      "snapshot": "POST_sources/FULL_ENSEMBLE_CONTROL_RESULTS.json",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL.stdout.txt",
+      "snapshot": "POST_sources/CONTROL.stdout.txt",
+      "sha256": "c1cac5de8dbded6d3e76d9cc6da0f1ed10d8917b60e2a0d8d732d32d1b55d90b",
+      "bytes": 19002
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL.stderr.txt",
+      "snapshot": "POST_sources/CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_EXECUTION.json",
+      "snapshot": "POST_sources/CONTROL_EXECUTION.json",
+      "sha256": "fa76d60015c0827e61cd7033f5cd926804050cb3267b4c156e1ca454314501aa",
+      "bytes": 245
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/full-ensemble-energy-personal/CONTROL_SCOPE.md",
+      "snapshot": "POST_sources/CONTROL_SCOPE.md",
+      "sha256": "de65966a2f7f25ee0d3de0c00d6358facbbaf210ce42ec514bb49e01b2eb1fab",
+      "bytes": 1761
+    }
+  ],
+  "procedural_sources": [
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "snapshot": "POST_sources/PHYSICS_CLAIM_REVIEWER_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "snapshot": "POST_sources/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180
+    },
+    {
+      "source": "0e6ad8285096ed668816f18caaa6fbbfbd9c50e8:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "snapshot": "POST_sources/PROOF_SEARCH_GOVERNANCE.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    }
+  ],
+  "external_author_helper_byte_pin_only": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/preparation-uniform-personal/mixed_preparation_controls.py",
+    "sha256": "8f4320e1cb333098bb3a609b0a95366380ffc7f1c693cffb8342d757fbc7a09a",
+    "current_bytes_match": true,
+    "scope": "Byte pin only; body not re-reviewed or executed. The root word controls remain author evidence."
+  },
+  "root_only_declared_sources_not_imported": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-personal/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md",
+      "sha256": "5d462335236e20329c9fecac8970cf8ee6393f3af7506ee7db9dbe560e94d74e",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST.md",
+      "sha256": "c6abb14d3ba48f748441941ad9aca16e5d3d6ad73df55677f0e1d483dafd4be3",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/recent-birth-energy-independent/POST_SEAL.json",
+      "sha256": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38",
+      "status": "prior sealed lower-bound source, PRE improvement attributed"
+    }
+  ],
+  "read_and_evidence_scope": {
+    "complete_candidate_read": true,
+    "complete_released_control_source_read": true,
+    "complete_author_result_and_logs_read": true,
+    "truncated_combined_result_display_retried_as_complete_separate_read": true,
+    "full_new_own_check_source_result_and_logs_read": true,
+    "source_and_control_correspondence": "Author evidence; source seals and reported rows checked. No author control run imported or executed.",
+    "new_POST_mathematics": "Rate-free L2-in-age profiles imply trace-norm rare-density limit; trace-class semigroup integration gives frozen-source Lyapunov and bright trace balances.",
+    "new_own_control": "Separate exact rational two-state signs/factors/domain control; literal-array residual checks of author covariance answers.",
+    "no_new_blind_PRE_claim": true,
+    "no_cube_joint_limit_numerical_reproduction": true
+  },
+  "current_report": {
+    "path": "POST.md",
+    "sha256": "8d9dcbec4f90d8acdc5bf2e50c90851a0e1aa51634d8d1c09661eeefed9af327",
+    "bytes": 25738
+  },
+  "current_evidence": {
+    "path": "POST_EVIDENCE_CHECK.json",
+    "sha256": "4f044023af611650884e73af7666294620bea20edfecfd870912184fa0c79c6c",
+    "bytes": 11429
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-25T09:56:20.251143+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-B",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive_covariance_control.py"
+  ],
+  "source_sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045",
+  "recorder_sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670",
+  "elapsed_seconds": 3.0245806670282036,
+  "exit_code": 0,
+  "outputs": {
+    "stdout.txt": {
+      "path": "primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480",
+      "bytes": 497
+    },
+    "stderr.txt": {
+      "path": "primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  }
+}

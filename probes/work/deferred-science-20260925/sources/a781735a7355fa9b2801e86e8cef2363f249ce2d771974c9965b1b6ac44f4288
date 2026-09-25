@@ -1,0 +1,1590 @@
+{
+  "copies_byte_stat_unchanged": true,
+  "copy_after": [
+    {
+      "bytes": 502,
+      "ctime_ns": 1790331439969587253,
+      "inode": 463807488,
+      "mode": 33060,
+      "mtime_ns": 1790331439969529912,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/ADDITIONAL_PROCEDURAL_PIN.json",
+      "sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4"
+    },
+    {
+      "bytes": 1284,
+      "ctime_ns": 1790331439969811324,
+      "inode": 463807489,
+      "mode": 33060,
+      "mtime_ns": 1790331439969777878,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/APPROACH_REGISTRY.md",
+      "sha256": "465790ba5ecf99beb0df464e9afffd03cf744a2f64ff68fe5c84506533bd6064"
+    },
+    {
+      "bytes": 2039,
+      "ctime_ns": 1790331439970013667,
+      "inode": 463807490,
+      "mode": 33060,
+      "mtime_ns": 1790331439969987060,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/CHECKPOINT.md",
+      "sha256": "2d953f98c4d28a1277c55e250f04946c0a10983156def7e1e1333e2dc3d8d95f"
+    },
+    {
+      "bytes": 2996,
+      "ctime_ns": 1790331439970496129,
+      "inode": 463807491,
+      "mode": 33060,
+      "mtime_ns": 1790331439970465352,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/FAILED_ROUTES_AND_SCOPE.md",
+      "sha256": "d9a65bd33bdbc1d686ee348bfbc6d350492ae3a1815e55f3542a73100dc5eafb"
+    },
+    {
+      "bytes": 2576,
+      "ctime_ns": 1790331439970688213,
+      "inode": 463807492,
+      "mode": 33060,
+      "mtime_ns": 1790331439970660731,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/FINAL_BINDINGS.json",
+      "sha256": "ea8d95188f533ce215a2d896415cb42def33df63b64f0447b991297afca78828"
+    },
+    {
+      "bytes": 22522,
+      "ctime_ns": 1790331439970894268,
+      "inode": 463807493,
+      "mode": 33060,
+      "mtime_ns": 1790331439970864117,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "bytes": 6908,
+      "ctime_ns": 1790331439991035541,
+      "inode": 463807528,
+      "mode": 33060,
+      "mtime_ns": 1790331439991008892,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "bytes": 6639159,
+      "ctime_ns": 1790331439974498161,
+      "inode": 463807494,
+      "mode": 33060,
+      "mtime_ns": 1790331439974269295,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRIMITIVE_RESULTS.json",
+      "sha256": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b"
+    },
+    {
+      "bytes": 2766,
+      "ctime_ns": 1790331439982465859,
+      "inode": 463807495,
+      "mode": 33060,
+      "mtime_ns": 1790331439982413313,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PROCESS_LOG.md",
+      "sha256": "629f13c0a3df3ed2e824764ec6f180ee4f4db9011394584816315603f25b3d16"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331439982728755,
+      "inode": 463807496,
+      "mode": 33060,
+      "mtime_ns": 1790331439982694725,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/SOURCE_PINS.json",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3445,
+      "ctime_ns": 1790331439982947321,
+      "inode": 463807497,
+      "mode": 33060,
+      "mtime_ns": 1790331439982919588,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/SOURCE_PRESERVATION_AFTER.json",
+      "sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07"
+    },
+    {
+      "bytes": 98569,
+      "ctime_ns": 1790331439983453762,
+      "inode": 463807498,
+      "mode": 33060,
+      "mtime_ns": 1790331439983422151,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/TREE_RESULTS.json",
+      "sha256": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+    },
+    {
+      "bytes": 849,
+      "ctime_ns": 1790331439983856363,
+      "inode": 463807499,
+      "mode": 33060,
+      "mtime_ns": 1790331439983829006,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439984014334,
+      "inode": 463807500,
+      "mode": 33060,
+      "mtime_ns": 1790331439983994317,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331439984197494,
+      "inode": 463807501,
+      "mode": 33060,
+      "mtime_ns": 1790331439984173723,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.stdout.txt",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3549,
+      "ctime_ns": 1790331439984500550,
+      "inode": 463807502,
+      "mode": 33060,
+      "mtime_ns": 1790331439984467188,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture_sources.py",
+      "sha256": "f659520a32454dfa3054d97de5bfd37952a10ecae11b873970c26481992625e0"
+    },
+    {
+      "bytes": 865,
+      "ctime_ns": 1790331439984799394,
+      "inode": 463807503,
+      "mode": 33060,
+      "mtime_ns": 1790331439984772078,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439984942269,
+      "inode": 463807504,
+      "mode": 33060,
+      "mtime_ns": 1790331439984921000,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 497,
+      "ctime_ns": 1790331439985225766,
+      "inode": 463807505,
+      "mode": 33060,
+      "mtime_ns": 1790331439985197700,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480"
+    },
+    {
+      "bytes": 7726,
+      "ctime_ns": 1790331439985405297,
+      "inode": 463807506,
+      "mode": 33060,
+      "mtime_ns": 1790331439985380526,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "bytes": 1510,
+      "ctime_ns": 1790331439985604805,
+      "inode": 463807507,
+      "mode": 33060,
+      "mtime_ns": 1790331439985579157,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/record_run.py",
+      "sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670"
+    },
+    {
+      "bytes": 9263,
+      "ctime_ns": 1790331439985912823,
+      "inode": 463807508,
+      "mode": 33060,
+      "mtime_ns": 1790331439985883381,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/seal_pre.py",
+      "sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790331439986195695,
+      "inode": 463807510,
+      "mode": 33060,
+      "mtime_ns": 1790331439986166211,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790331439986451918,
+      "inode": 463807511,
+      "mode": 33060,
+      "mtime_ns": 1790331439986422142,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790331439986964157,
+      "inode": 463807512,
+      "mode": 33060,
+      "mtime_ns": 1790331439986920702,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 10164,
+      "ctime_ns": 1790331439987246736,
+      "inode": 463807513,
+      "mode": 33060,
+      "mtime_ns": 1790331439987217503,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/ai_execution_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331439987459047,
+      "inode": 463807514,
+      "mode": 33060,
+      "mtime_ns": 1790331439987432148,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/installed_physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331439987675444,
+      "inode": 463807515,
+      "mode": 33060,
+      "mtime_ns": 1790331439987647586,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790331439987880539,
+      "inode": 463807516,
+      "mode": 33060,
+      "mtime_ns": 1790331439987849804,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790331439988129298,
+      "inode": 463807517,
+      "mode": 33060,
+      "mtime_ns": 1790331439988102900,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790331439988388816,
+      "inode": 463807518,
+      "mode": 33060,
+      "mtime_ns": 1790331439988340398,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 4975,
+      "ctime_ns": 1790331439989043470,
+      "inode": 463807519,
+      "mode": 33060,
+      "mtime_ns": 1790331439989006604,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 854,
+      "ctime_ns": 1790331439989378137,
+      "inode": 463807520,
+      "mode": 33060,
+      "mtime_ns": 1790331439989347402,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439989574391,
+      "inode": 463807521,
+      "mode": 33060,
+      "mtime_ns": 1790331439989543281,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "ctime_ns": 1790331439989777527,
+      "inode": 463807522,
+      "mode": 33060,
+      "mtime_ns": 1790331439989749961,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22"
+    },
+    {
+      "bytes": 8412,
+      "ctime_ns": 1790331439989986167,
+      "inode": 463807523,
+      "mode": 33060,
+      "mtime_ns": 1790331439989956141,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "bytes": 862,
+      "ctime_ns": 1790331439990183339,
+      "inode": 463807524,
+      "mode": 33060,
+      "mtime_ns": 1790331439990157817,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439990336890,
+      "inode": 463807525,
+      "mode": 33060,
+      "mtime_ns": 1790331439990312702,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11376,
+      "ctime_ns": 1790331439990525012,
+      "inode": 463807526,
+      "mode": 33060,
+      "mtime_ns": 1790331439990493443,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.stdout.txt",
+      "sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e"
+    },
+    {
+      "bytes": 15005,
+      "ctime_ns": 1790331439990828402,
+      "inode": 463807527,
+      "mode": 33060,
+      "mtime_ns": 1790331439990801837,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    }
+  ],
+  "copy_before": [
+    {
+      "bytes": 502,
+      "ctime_ns": 1790331439969587253,
+      "inode": 463807488,
+      "mode": 33060,
+      "mtime_ns": 1790331439969529912,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/ADDITIONAL_PROCEDURAL_PIN.json",
+      "sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4"
+    },
+    {
+      "bytes": 1284,
+      "ctime_ns": 1790331439969811324,
+      "inode": 463807489,
+      "mode": 33060,
+      "mtime_ns": 1790331439969777878,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/APPROACH_REGISTRY.md",
+      "sha256": "465790ba5ecf99beb0df464e9afffd03cf744a2f64ff68fe5c84506533bd6064"
+    },
+    {
+      "bytes": 2039,
+      "ctime_ns": 1790331439970013667,
+      "inode": 463807490,
+      "mode": 33060,
+      "mtime_ns": 1790331439969987060,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/CHECKPOINT.md",
+      "sha256": "2d953f98c4d28a1277c55e250f04946c0a10983156def7e1e1333e2dc3d8d95f"
+    },
+    {
+      "bytes": 2996,
+      "ctime_ns": 1790331439970496129,
+      "inode": 463807491,
+      "mode": 33060,
+      "mtime_ns": 1790331439970465352,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/FAILED_ROUTES_AND_SCOPE.md",
+      "sha256": "d9a65bd33bdbc1d686ee348bfbc6d350492ae3a1815e55f3542a73100dc5eafb"
+    },
+    {
+      "bytes": 2576,
+      "ctime_ns": 1790331439970688213,
+      "inode": 463807492,
+      "mode": 33060,
+      "mtime_ns": 1790331439970660731,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/FINAL_BINDINGS.json",
+      "sha256": "ea8d95188f533ce215a2d896415cb42def33df63b64f0447b991297afca78828"
+    },
+    {
+      "bytes": 22522,
+      "ctime_ns": 1790331439970894268,
+      "inode": 463807493,
+      "mode": 33060,
+      "mtime_ns": 1790331439970864117,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "bytes": 6908,
+      "ctime_ns": 1790331439991035541,
+      "inode": 463807528,
+      "mode": 33060,
+      "mtime_ns": 1790331439991008892,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "bytes": 6639159,
+      "ctime_ns": 1790331439974498161,
+      "inode": 463807494,
+      "mode": 33060,
+      "mtime_ns": 1790331439974269295,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PRIMITIVE_RESULTS.json",
+      "sha256": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b"
+    },
+    {
+      "bytes": 2766,
+      "ctime_ns": 1790331439982465859,
+      "inode": 463807495,
+      "mode": 33060,
+      "mtime_ns": 1790331439982413313,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/PROCESS_LOG.md",
+      "sha256": "629f13c0a3df3ed2e824764ec6f180ee4f4db9011394584816315603f25b3d16"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331439982728755,
+      "inode": 463807496,
+      "mode": 33060,
+      "mtime_ns": 1790331439982694725,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/SOURCE_PINS.json",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3445,
+      "ctime_ns": 1790331439982947321,
+      "inode": 463807497,
+      "mode": 33060,
+      "mtime_ns": 1790331439982919588,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/SOURCE_PRESERVATION_AFTER.json",
+      "sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07"
+    },
+    {
+      "bytes": 98569,
+      "ctime_ns": 1790331439983453762,
+      "inode": 463807498,
+      "mode": 33060,
+      "mtime_ns": 1790331439983422151,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/TREE_RESULTS.json",
+      "sha256": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+    },
+    {
+      "bytes": 849,
+      "ctime_ns": 1790331439983856363,
+      "inode": 463807499,
+      "mode": 33060,
+      "mtime_ns": 1790331439983829006,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439984014334,
+      "inode": 463807500,
+      "mode": 33060,
+      "mtime_ns": 1790331439983994317,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331439984197494,
+      "inode": 463807501,
+      "mode": 33060,
+      "mtime_ns": 1790331439984173723,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture.stdout.txt",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3549,
+      "ctime_ns": 1790331439984500550,
+      "inode": 463807502,
+      "mode": 33060,
+      "mtime_ns": 1790331439984467188,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/capture_sources.py",
+      "sha256": "f659520a32454dfa3054d97de5bfd37952a10ecae11b873970c26481992625e0"
+    },
+    {
+      "bytes": 865,
+      "ctime_ns": 1790331439984799394,
+      "inode": 463807503,
+      "mode": 33060,
+      "mtime_ns": 1790331439984772078,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439984942269,
+      "inode": 463807504,
+      "mode": 33060,
+      "mtime_ns": 1790331439984921000,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 497,
+      "ctime_ns": 1790331439985225766,
+      "inode": 463807505,
+      "mode": 33060,
+      "mtime_ns": 1790331439985197700,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480"
+    },
+    {
+      "bytes": 7726,
+      "ctime_ns": 1790331439985405297,
+      "inode": 463807506,
+      "mode": 33060,
+      "mtime_ns": 1790331439985380526,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "bytes": 1510,
+      "ctime_ns": 1790331439985604805,
+      "inode": 463807507,
+      "mode": 33060,
+      "mtime_ns": 1790331439985579157,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/record_run.py",
+      "sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670"
+    },
+    {
+      "bytes": 9263,
+      "ctime_ns": 1790331439985912823,
+      "inode": 463807508,
+      "mode": 33060,
+      "mtime_ns": 1790331439985883381,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/seal_pre.py",
+      "sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790331439986195695,
+      "inode": 463807510,
+      "mode": 33060,
+      "mtime_ns": 1790331439986166211,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790331439986451918,
+      "inode": 463807511,
+      "mode": 33060,
+      "mtime_ns": 1790331439986422142,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790331439986964157,
+      "inode": 463807512,
+      "mode": 33060,
+      "mtime_ns": 1790331439986920702,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 10164,
+      "ctime_ns": 1790331439987246736,
+      "inode": 463807513,
+      "mode": 33060,
+      "mtime_ns": 1790331439987217503,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/ai_execution_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331439987459047,
+      "inode": 463807514,
+      "mode": 33060,
+      "mtime_ns": 1790331439987432148,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/installed_physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331439987675444,
+      "inode": 463807515,
+      "mode": 33060,
+      "mtime_ns": 1790331439987647586,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790331439987880539,
+      "inode": 463807516,
+      "mode": 33060,
+      "mtime_ns": 1790331439987849804,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790331439988129298,
+      "inode": 463807517,
+      "mode": 33060,
+      "mtime_ns": 1790331439988102900,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790331439988388816,
+      "inode": 463807518,
+      "mode": 33060,
+      "mtime_ns": 1790331439988340398,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/procedure_SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 4975,
+      "ctime_ns": 1790331439989043470,
+      "inode": 463807519,
+      "mode": 33060,
+      "mtime_ns": 1790331439989006604,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/sources/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 854,
+      "ctime_ns": 1790331439989378137,
+      "inode": 463807520,
+      "mode": 33060,
+      "mtime_ns": 1790331439989347402,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439989574391,
+      "inode": 463807521,
+      "mode": 33060,
+      "mtime_ns": 1790331439989543281,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "ctime_ns": 1790331439989777527,
+      "inode": 463807522,
+      "mode": 33060,
+      "mtime_ns": 1790331439989749961,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22"
+    },
+    {
+      "bytes": 8412,
+      "ctime_ns": 1790331439989986167,
+      "inode": 463807523,
+      "mode": 33060,
+      "mtime_ns": 1790331439989956141,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "bytes": 862,
+      "ctime_ns": 1790331439990183339,
+      "inode": 463807524,
+      "mode": 33060,
+      "mtime_ns": 1790331439990157817,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331439990336890,
+      "inode": 463807525,
+      "mode": 33060,
+      "mtime_ns": 1790331439990312702,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11376,
+      "ctime_ns": 1790331439990525012,
+      "inode": 463807526,
+      "mode": 33060,
+      "mtime_ns": 1790331439990493443,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verification.stdout.txt",
+      "sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e"
+    },
+    {
+      "bytes": 15005,
+      "ctime_ns": 1790331439990828402,
+      "inode": 463807527,
+      "mode": 33060,
+      "mtime_ns": 1790331439990801837,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-pre-root-replay/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    }
+  ],
+  "copy_files": 40,
+  "elapsed_seconds": 0.46921558305621147,
+  "exit_code": 0,
+  "origin_and_sealed_files": 47,
+  "original_after": [
+    {
+      "bytes": 14490,
+      "ctime_ns": 1788906559024445316,
+      "inode": 295080999,
+      "mode": 33188,
+      "mtime_ns": 1788906558708050244,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790247109016911615,
+      "inode": 411329219,
+      "mode": 33188,
+      "mtime_ns": 1790247109016911615,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790247110088356765,
+      "inode": 411336919,
+      "mode": 33188,
+      "mtime_ns": 1790247110088356765,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790247110237258803,
+      "inode": 411337899,
+      "mode": 33188,
+      "mtime_ns": 1790247110237258803,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790247110238463826,
+      "inode": 411337905,
+      "mode": 33188,
+      "mtime_ns": 1790247110238463826,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790247110546458927,
+      "inode": 411339933,
+      "mode": 33188,
+      "mtime_ns": 1790247110546458927,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790247110569287403,
+      "inode": 411339998,
+      "mode": 33188,
+      "mtime_ns": 1790247110569287403,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 502,
+      "ctime_ns": 1790331089272677196,
+      "inode": 463806535,
+      "mode": 33060,
+      "mtime_ns": 1790331089251339265,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/ADDITIONAL_PROCEDURAL_PIN.json",
+      "sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4"
+    },
+    {
+      "bytes": 1284,
+      "ctime_ns": 1790331089272697155,
+      "inode": 463805192,
+      "mode": 33060,
+      "mtime_ns": 1790330582255473756,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/APPROACH_REGISTRY.md",
+      "sha256": "465790ba5ecf99beb0df464e9afffd03cf744a2f64ff68fe5c84506533bd6064"
+    },
+    {
+      "bytes": 2039,
+      "ctime_ns": 1790331089272715363,
+      "inode": 463804090,
+      "mode": 33060,
+      "mtime_ns": 1790330935337284984,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/CHECKPOINT.md",
+      "sha256": "2d953f98c4d28a1277c55e250f04946c0a10983156def7e1e1333e2dc3d8d95f"
+    },
+    {
+      "bytes": 2996,
+      "ctime_ns": 1790331089272734489,
+      "inode": 463805191,
+      "mode": 33060,
+      "mtime_ns": 1790330582255318837,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FAILED_ROUTES_AND_SCOPE.md",
+      "sha256": "d9a65bd33bdbc1d686ee348bfbc6d350492ae3a1815e55f3542a73100dc5eafb"
+    },
+    {
+      "bytes": 2576,
+      "ctime_ns": 1790331089272749947,
+      "inode": 463806537,
+      "mode": 33060,
+      "mtime_ns": 1790331089266709831,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FINAL_BINDINGS.json",
+      "sha256": "ea8d95188f533ce215a2d896415cb42def33df63b64f0447b991297afca78828"
+    },
+    {
+      "bytes": 22522,
+      "ctime_ns": 1790331089272763906,
+      "inode": 463805422,
+      "mode": 33060,
+      "mtime_ns": 1790330964215469009,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "bytes": 6908,
+      "ctime_ns": 1790331089273330246,
+      "inode": 463806538,
+      "mode": 33060,
+      "mtime_ns": 1790331089272641612,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "bytes": 6639159,
+      "ctime_ns": 1790331089272781531,
+      "inode": 463804593,
+      "mode": 33060,
+      "mtime_ns": 1790330183260253014,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRIMITIVE_RESULTS.json",
+      "sha256": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b"
+    },
+    {
+      "bytes": 2766,
+      "ctime_ns": 1790331089272796156,
+      "inode": 463805577,
+      "mode": 33060,
+      "mtime_ns": 1790330935337785657,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PROCESS_LOG.md",
+      "sha256": "629f13c0a3df3ed2e824764ec6f180ee4f4db9011394584816315603f25b3d16"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331089272815323,
+      "inode": 463804116,
+      "mode": 33060,
+      "mtime_ns": 1790329952133839264,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PINS.json",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3445,
+      "ctime_ns": 1790331089272831907,
+      "inode": 463806536,
+      "mode": 33060,
+      "mtime_ns": 1790331089265401356,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PRESERVATION_AFTER.json",
+      "sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07"
+    },
+    {
+      "bytes": 98569,
+      "ctime_ns": 1790331089272846740,
+      "inode": 463804588,
+      "mode": 33060,
+      "mtime_ns": 1790330180781537059,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/TREE_RESULTS.json",
+      "sha256": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+    },
+    {
+      "bytes": 849,
+      "ctime_ns": 1790331089272862407,
+      "inode": 463804119,
+      "mode": 33060,
+      "mtime_ns": 1790329952137664192,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089272877907,
+      "inode": 463804118,
+      "mode": 33060,
+      "mtime_ns": 1790329952137488940,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331089272891199,
+      "inode": 463804117,
+      "mode": 33060,
+      "mtime_ns": 1790329952137444106,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stdout.txt",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3549,
+      "ctime_ns": 1790331089272908699,
+      "inode": 463804087,
+      "mode": 33060,
+      "mtime_ns": 1790329951772746328,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture_sources.py",
+      "sha256": "f659520a32454dfa3054d97de5bfd37952a10ecae11b873970c26481992625e0"
+    },
+    {
+      "bytes": 865,
+      "ctime_ns": 1790331089272923324,
+      "inode": 463804596,
+      "mode": 33060,
+      "mtime_ns": 1790330183276259838,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089272937575,
+      "inode": 463804595,
+      "mode": 33060,
+      "mtime_ns": 1790330183276093961,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 497,
+      "ctime_ns": 1790331089272951991,
+      "inode": 463804594,
+      "mode": 33060,
+      "mtime_ns": 1790330183276050752,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480"
+    },
+    {
+      "bytes": 7726,
+      "ctime_ns": 1790331089272966283,
+      "inode": 463804371,
+      "mode": 33060,
+      "mtime_ns": 1790330082360649483,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "bytes": 1510,
+      "ctime_ns": 1790331089272980283,
+      "inode": 463804089,
+      "mode": 33060,
+      "mtime_ns": 1790329951773156083,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/record_run.py",
+      "sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670"
+    },
+    {
+      "bytes": 9263,
+      "ctime_ns": 1790331089272993825,
+      "inode": 463806508,
+      "mode": 33060,
+      "mtime_ns": 1790331079988661631,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/seal_pre.py",
+      "sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790331089273010034,
+      "inode": 463804108,
+      "mode": 33060,
+      "mtime_ns": 1790329952034444883,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790331089273027659,
+      "inode": 463804107,
+      "mode": 33060,
+      "mtime_ns": 1790329951996530230,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790331089273046992,
+      "inode": 463804105,
+      "mode": 33060,
+      "mtime_ns": 1790329951979436743,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 10164,
+      "ctime_ns": 1790331089273069368,
+      "inode": 463804113,
+      "mode": 33060,
+      "mtime_ns": 1790329952056842444,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/ai_execution_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331089273091118,
+      "inode": 463806534,
+      "mode": 33060,
+      "mtime_ns": 1790331089251151429,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/installed_physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331089273111535,
+      "inode": 463804114,
+      "mode": 33060,
+      "mtime_ns": 1790329952086224144,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790331089273133577,
+      "inode": 463804109,
+      "mode": 33060,
+      "mtime_ns": 1790329952034838679,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790331089273149077,
+      "inode": 463804110,
+      "mode": 33060,
+      "mtime_ns": 1790329952035022516,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790331089273165286,
+      "inode": 463804111,
+      "mode": 33060,
+      "mtime_ns": 1790329952036401576,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 4975,
+      "ctime_ns": 1790331089273184119,
+      "inode": 463804115,
+      "mode": 33060,
+      "mtime_ns": 1790329952112838806,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 854,
+      "ctime_ns": 1790331089273202036,
+      "inode": 463804591,
+      "mode": 33060,
+      "mtime_ns": 1790330180799516282,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089273221411,
+      "inode": 463804590,
+      "mode": 33060,
+      "mtime_ns": 1790330180799338113,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "ctime_ns": 1790331089273239453,
+      "inode": 463804589,
+      "mode": 33060,
+      "mtime_ns": 1790330180799281904,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22"
+    },
+    {
+      "bytes": 8412,
+      "ctime_ns": 1790331089273258453,
+      "inode": 463804587,
+      "mode": 33060,
+      "mtime_ns": 1790330180146122791,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "bytes": 862,
+      "ctime_ns": 1790331089273271829,
+      "inode": 463805019,
+      "mode": 33060,
+      "mtime_ns": 1790330437695200783,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089273286579,
+      "inode": 463805018,
+      "mode": 33060,
+      "mtime_ns": 1790330437695042864,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11376,
+      "ctime_ns": 1790331089273301162,
+      "inode": 463805017,
+      "mode": 33060,
+      "mtime_ns": 1790330437694985863,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stdout.txt",
+      "sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e"
+    },
+    {
+      "bytes": 15005,
+      "ctime_ns": 1790331089273315121,
+      "inode": 463805016,
+      "mode": 33060,
+      "mtime_ns": 1790330437130824648,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    }
+  ],
+  "original_before": [
+    {
+      "bytes": 14490,
+      "ctime_ns": 1788906559024445316,
+      "inode": 295080999,
+      "mode": 33188,
+      "mtime_ns": 1788906558708050244,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790247109016911615,
+      "inode": 411329219,
+      "mode": 33188,
+      "mtime_ns": 1790247109016911615,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790247110088356765,
+      "inode": 411336919,
+      "mode": 33188,
+      "mtime_ns": 1790247110088356765,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790247110237258803,
+      "inode": 411337899,
+      "mode": 33188,
+      "mtime_ns": 1790247110237258803,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790247110238463826,
+      "inode": 411337905,
+      "mode": 33188,
+      "mtime_ns": 1790247110238463826,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790247110546458927,
+      "inode": 411339933,
+      "mode": 33188,
+      "mtime_ns": 1790247110546458927,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790247110569287403,
+      "inode": 411339998,
+      "mode": 33188,
+      "mtime_ns": 1790247110569287403,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/campaign-working/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 502,
+      "ctime_ns": 1790331089272677196,
+      "inode": 463806535,
+      "mode": 33060,
+      "mtime_ns": 1790331089251339265,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/ADDITIONAL_PROCEDURAL_PIN.json",
+      "sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4"
+    },
+    {
+      "bytes": 1284,
+      "ctime_ns": 1790331089272697155,
+      "inode": 463805192,
+      "mode": 33060,
+      "mtime_ns": 1790330582255473756,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/APPROACH_REGISTRY.md",
+      "sha256": "465790ba5ecf99beb0df464e9afffd03cf744a2f64ff68fe5c84506533bd6064"
+    },
+    {
+      "bytes": 2039,
+      "ctime_ns": 1790331089272715363,
+      "inode": 463804090,
+      "mode": 33060,
+      "mtime_ns": 1790330935337284984,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/CHECKPOINT.md",
+      "sha256": "2d953f98c4d28a1277c55e250f04946c0a10983156def7e1e1333e2dc3d8d95f"
+    },
+    {
+      "bytes": 2996,
+      "ctime_ns": 1790331089272734489,
+      "inode": 463805191,
+      "mode": 33060,
+      "mtime_ns": 1790330582255318837,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FAILED_ROUTES_AND_SCOPE.md",
+      "sha256": "d9a65bd33bdbc1d686ee348bfbc6d350492ae3a1815e55f3542a73100dc5eafb"
+    },
+    {
+      "bytes": 2576,
+      "ctime_ns": 1790331089272749947,
+      "inode": 463806537,
+      "mode": 33060,
+      "mtime_ns": 1790331089266709831,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FINAL_BINDINGS.json",
+      "sha256": "ea8d95188f533ce215a2d896415cb42def33df63b64f0447b991297afca78828"
+    },
+    {
+      "bytes": 22522,
+      "ctime_ns": 1790331089272763906,
+      "inode": 463805422,
+      "mode": 33060,
+      "mtime_ns": 1790330964215469009,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "bytes": 6908,
+      "ctime_ns": 1790331089273330246,
+      "inode": 463806538,
+      "mode": 33060,
+      "mtime_ns": 1790331089272641612,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "bytes": 6639159,
+      "ctime_ns": 1790331089272781531,
+      "inode": 463804593,
+      "mode": 33060,
+      "mtime_ns": 1790330183260253014,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRIMITIVE_RESULTS.json",
+      "sha256": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b"
+    },
+    {
+      "bytes": 2766,
+      "ctime_ns": 1790331089272796156,
+      "inode": 463805577,
+      "mode": 33060,
+      "mtime_ns": 1790330935337785657,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PROCESS_LOG.md",
+      "sha256": "629f13c0a3df3ed2e824764ec6f180ee4f4db9011394584816315603f25b3d16"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331089272815323,
+      "inode": 463804116,
+      "mode": 33060,
+      "mtime_ns": 1790329952133839264,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PINS.json",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3445,
+      "ctime_ns": 1790331089272831907,
+      "inode": 463806536,
+      "mode": 33060,
+      "mtime_ns": 1790331089265401356,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PRESERVATION_AFTER.json",
+      "sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07"
+    },
+    {
+      "bytes": 98569,
+      "ctime_ns": 1790331089272846740,
+      "inode": 463804588,
+      "mode": 33060,
+      "mtime_ns": 1790330180781537059,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/TREE_RESULTS.json",
+      "sha256": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+    },
+    {
+      "bytes": 849,
+      "ctime_ns": 1790331089272862407,
+      "inode": 463804119,
+      "mode": 33060,
+      "mtime_ns": 1790329952137664192,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089272877907,
+      "inode": 463804118,
+      "mode": 33060,
+      "mtime_ns": 1790329952137488940,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5895,
+      "ctime_ns": 1790331089272891199,
+      "inode": 463804117,
+      "mode": 33060,
+      "mtime_ns": 1790329952137444106,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stdout.txt",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "bytes": 3549,
+      "ctime_ns": 1790331089272908699,
+      "inode": 463804087,
+      "mode": 33060,
+      "mtime_ns": 1790329951772746328,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture_sources.py",
+      "sha256": "f659520a32454dfa3054d97de5bfd37952a10ecae11b873970c26481992625e0"
+    },
+    {
+      "bytes": 865,
+      "ctime_ns": 1790331089272923324,
+      "inode": 463804596,
+      "mode": 33060,
+      "mtime_ns": 1790330183276259838,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089272937575,
+      "inode": 463804595,
+      "mode": 33060,
+      "mtime_ns": 1790330183276093961,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 497,
+      "ctime_ns": 1790331089272951991,
+      "inode": 463804594,
+      "mode": 33060,
+      "mtime_ns": 1790330183276050752,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480"
+    },
+    {
+      "bytes": 7726,
+      "ctime_ns": 1790331089272966283,
+      "inode": 463804371,
+      "mode": 33060,
+      "mtime_ns": 1790330082360649483,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "bytes": 1510,
+      "ctime_ns": 1790331089272980283,
+      "inode": 463804089,
+      "mode": 33060,
+      "mtime_ns": 1790329951773156083,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/record_run.py",
+      "sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670"
+    },
+    {
+      "bytes": 9263,
+      "ctime_ns": 1790331089272993825,
+      "inode": 463806508,
+      "mode": 33060,
+      "mtime_ns": 1790331079988661631,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/seal_pre.py",
+      "sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5"
+    },
+    {
+      "bytes": 16764,
+      "ctime_ns": 1790331089273010034,
+      "inode": 463804108,
+      "mode": 33060,
+      "mtime_ns": 1790329952034444883,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/FORMATION_BALANCE_AND_UNSATURATED_DARK_STATES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "2ae8d264eaff3ab47ecf4ec41fa21178ff444546bcc2e36d885d092732e30516"
+    },
+    {
+      "bytes": 14902,
+      "ctime_ns": 1790331089273027659,
+      "inode": 463804107,
+      "mode": 33060,
+      "mtime_ns": 1790329951996530230,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "bytes": 10953,
+      "ctime_ns": 1790331089273046992,
+      "inode": 463804105,
+      "mode": 33060,
+      "mtime_ns": 1790329951979436743,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "bytes": 10164,
+      "ctime_ns": 1790331089273069368,
+      "inode": 463804113,
+      "mode": 33060,
+      "mtime_ns": 1790329952056842444,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/ai_execution_AGENTS.md",
+      "sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331089273091118,
+      "inode": 463806534,
+      "mode": 33060,
+      "mtime_ns": 1790331089251151429,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/installed_physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 14490,
+      "ctime_ns": 1790331089273111535,
+      "inode": 463804114,
+      "mode": 33060,
+      "mtime_ns": 1790329952086224144,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/physics_claim_reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "bytes": 737,
+      "ctime_ns": 1790331089273133577,
+      "inode": 463804109,
+      "mode": 33060,
+      "mtime_ns": 1790329952034838679,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "ctime_ns": 1790331089273149077,
+      "inode": 463804110,
+      "mode": 33060,
+      "mtime_ns": 1790329952035022516,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 2180,
+      "ctime_ns": 1790331089273165286,
+      "inode": 463804111,
+      "mode": 33060,
+      "mtime_ns": 1790329952036401576,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/procedure_SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "bytes": 4975,
+      "ctime_ns": 1790331089273184119,
+      "inode": 463804115,
+      "mode": 33060,
+      "mtime_ns": 1790329952112838806,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/sources/proof_search_governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "bytes": 854,
+      "ctime_ns": 1790331089273202036,
+      "inode": 463804591,
+      "mode": 33060,
+      "mtime_ns": 1790330180799516282,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089273221411,
+      "inode": 463804590,
+      "mode": 33060,
+      "mtime_ns": 1790330180799338113,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "ctime_ns": 1790331089273239453,
+      "inode": 463804589,
+      "mode": 33060,
+      "mtime_ns": 1790330180799281904,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22"
+    },
+    {
+      "bytes": 8412,
+      "ctime_ns": 1790331089273258453,
+      "inode": 463804587,
+      "mode": 33060,
+      "mtime_ns": 1790330180146122791,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "bytes": 862,
+      "ctime_ns": 1790331089273271829,
+      "inode": 463805019,
+      "mode": 33060,
+      "mtime_ns": 1790330437695200783,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    },
+    {
+      "bytes": 0,
+      "ctime_ns": 1790331089273286579,
+      "inode": 463805018,
+      "mode": 33060,
+      "mtime_ns": 1790330437695042864,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 11376,
+      "ctime_ns": 1790331089273301162,
+      "inode": 463805017,
+      "mode": 33060,
+      "mtime_ns": 1790330437694985863,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stdout.txt",
+      "sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e"
+    },
+    {
+      "bytes": 15005,
+      "ctime_ns": 1790331089273315121,
+      "inode": 463805016,
+      "mode": 33060,
+      "mtime_ns": 1790330437130824648,
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    }
+  ],
+  "originals_byte_stat_unchanged": true,
+  "scientific_output_exact_except_observed_file_count": true,
+  "scope": "Inspected read-only verifier copied byte-exact from 39 sealed PRE members plus seal; no historical writer or numerical propagation executed. Isolation avoids concurrent POST file creation.",
+  "seal_sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255",
+  "source_record_count": 10,
+  "source_sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e",
+  "started_utc": "2026-09-25T10:17:19.998443+00:00",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "a09871bce617dd0462b18f54cfc581c1fe7056506cf5a9cae62aa2e1e443ba89"
+}

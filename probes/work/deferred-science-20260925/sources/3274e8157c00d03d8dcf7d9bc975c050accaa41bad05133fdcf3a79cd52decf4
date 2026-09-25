@@ -1,0 +1,564 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/AUTHOR_SEAL.json",
+      "sha256": "70c96cb1ce304408760dbf698a119a8468d9ca466438b4ce1aa8fd5f5ce42af4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/EXECUTION.json",
+      "sha256": "94e7d99cd3b114a8c91cff2158250517e89f15a9d6bc57c65d7098ce5efc34cf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/FLAT_MATTER.stderr",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/FLAT_MATTER.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/FLAT_MATTER_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/FLAT_MATTER_RESULTS.json",
+      "sha256": "aaa4ee6e9f84d7e7aa065bb68747165c3fe7257d1f4366028d7770d8f9a5aeca"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/PREPARED_PROBE_ENERGY_AND_FINITE_SCALE_WINDOW_ROOT.md",
+      "sha256": "867d9b04e2023cdf3280382840e1f98fe1cd9061bf529ca94a84390c888bedc1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/ROOT_REVIEW.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/ROOT_REVIEW.md",
+      "sha256": "f010a6dd57e764adb06a560a3f124732b3157b2d02f750af670dd8c64fd8217a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/SOURCE_PINS.json",
+      "sha256": "cd24ee55a929037415ca1dd1b645391154bf0743f85661fb0d1d5c13b9b7d8ee"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-personal/flat_matter_controls.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/dynamics/flat_matter_controls.py",
+      "sha256": "ce3c7aa5e31bfb78231b4cd4ae746a97878fa39da6ae08fc24ab63d14db3c7d9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/AUTHOR_SEAL.json",
+      "sha256": "51b08bce5a0bbfefff5b6125164cf9a00510deda5fe0da11acb06b25623941bb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/EXECUTION.json",
+      "sha256": "6ac7d2289a12b3957afbfcd026eec5f0a4746a669a8948c2d324b57c639292e6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/OUTPUT_ENERGY.stderr",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/OUTPUT_ENERGY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/OUTPUT_ENERGY_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/OUTPUT_ENERGY_RESULTS.json",
+      "sha256": "ce61deef4a687cc851fd19b12a35cfbdc32a34f70b35fe274a45ce882957e659"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/ROOT_EDITORIAL_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/ROOT_EDITORIAL_QUALIFICATION.md",
+      "sha256": "9463799001beacfe35f5dacfc6260e360397bfce4ab1c11b36df130196468cda"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/SELECTED_PROBE_OUTPUT_ENERGY_ROOT.md",
+      "sha256": "57d3e1c06396db01957536224d7c03d0b3a04908a34ae01bb56a37ea5250ff35"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/SOURCE_PINS.json",
+      "sha256": "9bff76ca71e18ba6787cd01311af0702ffbd92362834f810fdcf3af018b8e8fd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-output-energy-personal/output_energy_controls.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/output_energy/output_energy_controls.py",
+      "sha256": "8d70c1821496c04cf98b066e0186fc6aa544c5f3f06bc97b312dabcc1e9a0eee"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/AUTHOR_SEAL.json",
+      "sha256": "47791345950251e276eec8d36de489e59c97999aa2b17547f83af3c20ffacaa6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/CONTROL.stderr",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/CONTROL.stdout",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/CONTROL.stdout",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/EXECUTION.json",
+      "sha256": "c41e3dda93649cfdbabe4868bb7e17e6aa631e6c3473e43eb1ed6f5ec4c9dcfe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/OBSERVATION_RESPONSE_AND_CLOCK_SCOPE_ROOT.md",
+      "sha256": "91fd6c3df5063dcbbbc999bd1e3a4817b286ae6ce8448156550cb957fd2d709b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/ROOT_METADATA_QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/ROOT_METADATA_QUALIFICATION.md",
+      "sha256": "1a4d164b0d23ae64f90b4004b22eb8dce169d316f63c761dcdbb99efcec0eb7f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/SOURCE_PINS.json",
+      "sha256": "852b90181a7aa93e0742cfa144ee1abba784d5fc46c22a84b4c08ea04ce4a0db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/UNIT_CONVERSIONS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/UNIT_CONVERSIONS.json",
+      "sha256": "d474ba3d5812cfc755de0e81908bb202f11686db53fb7308ba1f98e0a564212e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-personal/unit_conversions.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/author_history/observation/unit_conversions.py",
+      "sha256": "cad001b23a6fd9c896ee978a34e7320f6cb0e3ae98d8f46f6ad61652a1af5fb7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/CONTROL.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/CONTROL.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/CONTROL.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/CONTROL.stdout.log",
+      "sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/CONTROL_EXECUTION.json",
+      "sha256": "b01282822f7edd14779996f5e63cb89d6e6bbdd45297b6fbd76bff9de35faf72"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/EVIDENCE_CHECK.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/EVIDENCE_CHECK.json",
+      "sha256": "9eaa4851783d4215f1d504d911ccea2142e5aaf078aa2ddcee4bb890686d894f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/EVIDENCE_CHECK.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/EVIDENCE_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/EVIDENCE_CHECK.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/EVIDENCE_CHECK.stdout.log",
+      "sha256": "9eaa4851783d4215f1d504d911ccea2142e5aaf078aa2ddcee4bb890686d894f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/EVIDENCE_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/EVIDENCE_CHECK_EXECUTION.json",
+      "sha256": "581901ff8d9ac307a77b7319d0e42da9a40134e2fdedb7d5c8815529f223db19"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_CHECK.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/FINAL_PUBLICATION_CHECK.json",
+      "sha256": "7a59680e329a31ab4625608dfc20aefc1fdfaf3733b18e37f72e91d6bcbfc39c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_CHECK.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/FINAL_PUBLICATION_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_CHECK.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/FINAL_PUBLICATION_CHECK.stdout.log",
+      "sha256": "7a59680e329a31ab4625608dfc20aefc1fdfaf3733b18e37f72e91d6bcbfc39c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/FINAL_PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "43811f8b52d1a476e9e96d63715375b5021961ba18a465abb012056ecdc0837b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/FINAL_PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/FINAL_PUBLICATION_SOURCE_PINS.json",
+      "sha256": "d66a3ac059a80df8c5caf84f8755d70fcfab8fd06e5af45a8a8b2697a9d53651"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/OUTPUT_ENERGY.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/OUTPUT_ENERGY.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/OUTPUT_ENERGY.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/OUTPUT_ENERGY.stdout.log",
+      "sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/OUTPUT_ENERGY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/OUTPUT_ENERGY_EXECUTION.json",
+      "sha256": "e42e6295b6447a6386409c852941c3b760aa481f318ee34061f414cad3aa0fb3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/OUTPUT_ENERGY_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/OUTPUT_ENERGY_RESULTS.json",
+      "sha256": "da454f116779c0a47aeb110aa2042f68a44a2a5a822940fa01e043116b8aca86"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST.md",
+      "sha256": "0c78eb924bf08264f85c9cda41fc8b90dc0a30f4bc9f52a783dc73549098bfb8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_CHECK.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_CHECK.json",
+      "sha256": "814b0f623ca4b486cb3662e81e7f53d29c8695efe7cf6c81c5884964caf11fd2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_CHECK.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_CHECK.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_CHECK.stdout.log",
+      "sha256": "814b0f623ca4b486cb3662e81e7f53d29c8695efe7cf6c81c5884964caf11fd2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_CHECK_EXECUTION.json",
+      "sha256": "eb76f6549feadd924fee9a055f3b2d3dd27c17551d6cd96cbd1f5c1458419777"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_SEAL.json",
+      "sha256": "60736b57d4e82d4803bae3f1b260fd00f330c277010eda990089034f81762217"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/POST_SOURCE_PINS.json",
+      "sha256": "f7fed053b3f567fdc8fff2dc3a8a25bce07b05bf1b95e7d18b38eb068d6026a9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PRE.md",
+      "sha256": "3f9bae4b8de40697dce8ddd0d12382fd7b505156922ed8f713cc26de5e3a9a27"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PRE_SEAL.json",
+      "sha256": "c6686cc03d195af4487e3df90cd64e152869c608d5170cd70c5dd81f544b9fdc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PRIMITIVE_DYNAMICS_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PRIMITIVE_DYNAMICS_RESULTS.json",
+      "sha256": "99fc9bc4fe2ba955786ef7c4568530115e2c27106e32643cc6500e621c429da2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_CHECK.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_CHECK.json",
+      "sha256": "f5fc47909db56ff4c9fccaeac4f644f8d40a52425b05f40a4da0cfabb001544b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_CHECK.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_CHECK.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_CHECK.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_CHECK.stdout.log",
+      "sha256": "f5fc47909db56ff4c9fccaeac4f644f8d40a52425b05f40a4da0cfabb001544b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_CHECK_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_CHECK_EXECUTION.json",
+      "sha256": "77a2758242f406820648e3140d8a8cb182a429549abd7afc87c00b491f1d984d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_COMPARISON.md",
+      "sha256": "6bf791b000ebd53a4869bc7ce65096b4fe47a7fbaffe78d0d7062b9ab50f9e14"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "3741a7c4bdc6d078e34fb64f7770fd44bad0b8d6b9629351bbe88994b2c9a300"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "a7d21036e5b00a12383249f7dfbddff2ccfd7b394213633ee94ca34a1cfc905a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SINGLE_HOP.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SINGLE_HOP.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SINGLE_HOP.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SINGLE_HOP.stdout.log",
+      "sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SINGLE_HOP_ENERGY_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SINGLE_HOP_ENERGY_RESULTS.json",
+      "sha256": "effde2b7c1d9f171410cfeb977c3a9b56518b47efe373bf33f672872a216477c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SINGLE_HOP_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SINGLE_HOP_EXECUTION.json",
+      "sha256": "fb1a87f86e30d68f20d6fb2e5c63aecad9694662f8a4d8299f7e2a25e712d96f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SOURCE_PIN.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SOURCE_PIN.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SOURCE_PIN.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SOURCE_PIN.stdout.log",
+      "sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SOURCE_PINS.json",
+      "sha256": "ee19e1ca0614a3709a1c16a76604ca569fa59d2ae6c8e9ae1c2b88d273b7b609"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/SOURCE_PIN_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/SOURCE_PIN_EXECUTION.json",
+      "sha256": "767beb77b7d75a57b7a185bc1859b45a2b34f7a5e04b0846d3aa3a7c6f2d048e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/TOPOLOGY.stderr.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/TOPOLOGY.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/TOPOLOGY.stdout.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/TOPOLOGY.stdout.log",
+      "sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/TOPOLOGY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/TOPOLOGY_EXECUTION.json",
+      "sha256": "295a7a5276f015809d5d4958605d476cb7673388986009e9d5ae999c429d0501"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/TOPOLOGY_GRAM_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/TOPOLOGY_GRAM_RESULTS.json",
+      "sha256": "12b5f76860d94008911e3d6bbe252f737373f6c0e20b4227b459420273dca42e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/check_evidence.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/check_evidence.py",
+      "sha256": "85ceedcbd687ea0d5bd26fb4ad09f1918f92ed7d7e10bc24076c8012332ef1dd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/output_energy_control.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/output_energy_control.py",
+      "sha256": "2953f3d05511572527fe345ea79f501eabe773b8950268d36c23c74b1f030794"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/pin_sources.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/pin_sources.py",
+      "sha256": "89943e595a3457000414b3fff664a741ffba1751dae2cd1b813c7b2305789568"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/post_binding_and_certificate_check.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/post_binding_and_certificate_check.py",
+      "sha256": "3fa9ca6f53fd976206f90d40804dc97a0a1b2e52f1fc5269fc4d4a3e929c1f5a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/primitive_dynamics_control.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/primitive_dynamics_control.py",
+      "sha256": "f24031d1dc29abecae15dc47adf5a7eb1cadd83957f241fbc7a9bcdd321d8e2c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_binding_check.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/publication_binding_check.py",
+      "sha256": "44d31ed13c7c4191bbd0407a786c17b41ce607fba6c4fa20c628902de7e14ea9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/publication_final_binding_check.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/publication_final_binding_check.py",
+      "sha256": "acb53289791868249e842c6b842e7470b1abb59780eddf3370fd03bc87faf52e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/single_hop_energy_control.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/single_hop_energy_control.py",
+      "sha256": "97a5ac743c1ac534ec673fb3cdac212010f278a375d01ee0f33afdcd9137e41e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/prepared-probe-dynamics-independent/topology_and_gram_control.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/dynamics/topology_and_gram_control.py",
+      "sha256": "3ec0cdf6beb3e46f1129c272c0eef558a2df202e10035959daa04add36e204e9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/CONTROL_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/CONTROL_EXECUTION.json",
+      "sha256": "ac051a2f4c2d091e7e41082a9050b4ca0e7a2d14ef8648f8bfb6444ec6e90df5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/CONTROL_RESULTS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/CONTROL_RESULTS.json",
+      "sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/CONTROL_STDERR.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/CONTROL_STDOUT.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/CONTROL_STDOUT.log",
+      "sha256": "6379617e494029744796bf40574d3abc9f8202cd2d62ef7622bf5757dc289b3b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST.md",
+      "sha256": "9ed04ef0513fe997fc92bee72fd6a07919bf8db73bcfd684085f6a8a8ca63d2c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_SEAL.json",
+      "sha256": "e7121548b9b0372773a21dd88db53684327ed6a8f88b4a8e99c08919b7cd09fd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_SOURCE_PINS.json",
+      "sha256": "5f3528fc853bc1fcc0e33f48fe7d849a9767a236b68f79db8ae2cf55bea3e6ab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_VERIFICATION_EXECUTION.json",
+      "sha256": "5831a28a2c89ef318e48b928e2814513274a2116ce965030500f027ee3564e0c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_VERIFICATION_REPORT.json",
+      "sha256": "ed7be0d34df8b9c161f90999ab09b601bcad8fb0085653a0bafc8958a4902d36"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/POST_VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/POST_VERIFICATION_STDOUT.log",
+      "sha256": "1c86d5f3dc281653f606323c4a63d1d6990881660cdb743b733024f46cbe0170"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PRE.md",
+      "sha256": "1df863cca91858875c0fb84743f6fcf9a706ebde3a3e799b733bf2d1b8ac2a64"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PRE_SEAL.json",
+      "sha256": "6e08c4d893c9f40eabdb0b296c37bf1b850d48b88a2ec5dd10e2f939e866dce3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_COMPARISON.md",
+      "sha256": "34ca4e7ddf096f9601503677f6a70472d3f1d6586ca115977d9d5ba78f38f924"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "5c95af5b3b15e562106b7c575fa4fcc0b89f88bcf33f02e8a91961f4324ffc63"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_SOURCE_PINS.json",
+      "sha256": "8fa4ffd6dede02f90f4a209074c108ba6723971647ef4305604c5fa989be16b2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_VERIFICATION_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_VERIFICATION_EXECUTION.json",
+      "sha256": "01ba3f56ee01453279fb79adb57d5892e524ec3ba6bf32004cbb2d7463ed98cb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_VERIFICATION_REPORT.json",
+      "sha256": "a6e6f4ebfec0acbba42db2b53759e82dde1debc926eb677a34af280753cf530a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_VERIFICATION_STDERR.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/PUBLICATION_VERIFICATION_STDOUT.log",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/PUBLICATION_VERIFICATION_STDOUT.log",
+      "sha256": "f9ed2940ea3645aa6797fa2a732c18a497207f69a00adfbee2c28e83b9bf7af1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/SOURCE_PINS.json",
+      "sha256": "72437293d3b565d8910de46ca9071db5d5082accb5025ecfc00708ba299b440d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/VERIFICATION_REPORT.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/VERIFICATION_REPORT.json",
+      "sha256": "c05c0412f31e2cbf909db3df5bd136e12412ff0e797e2bd9eb9fd64dcc9a951e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/unit_bridge_controls.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/unit_bridge_controls.py",
+      "sha256": "3ac5d3789979efe54c15ed2532b477ea01f5c6136787e7148b775f4ba3477ecd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/verify_post_bindings.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/verify_post_bindings.py",
+      "sha256": "7258c9b1679f64d1bd7a05b4793b92b2ecdb8b7dc068284b12c7961b1e74fefa"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/observation-unit-bridge-independent/verify_publication_bindings.py",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/observation/verify_publication_bindings.py",
+      "sha256": "31b046e476e2d2d35883369aea13ce1c68f2f3d22d2eda0b5846e19ccb5c6df0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/PROBE_PHYSICAL_LIMITS_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "9c2fa71f055ceecaa9bb3a3ef6929c9be3772f8bd7a10a2e83480c8641217c69"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/PROBE_PHYSICAL_LIMITS_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "6bc0a19c2b4bd8787048072b81a9a5a485523c94491617c6a1bf3e3fa6f08d65"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/PROBE_PHYSICAL_LIMITS_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "948111c494396643e5c79827ab71b0f59978542a0ae985f8bf490ced267e9d92"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_THIRD_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/TWENTY_THIRD_PRE_ROOT_VERIFICATION.json",
+      "sha256": "517418419849191bdf34d7715f6369b169c6d2f5b21e03c3134932724837cecb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_THIRD_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/TWENTY_THIRD_POST_ROOT_VERIFICATION.json",
+      "sha256": "09c9dd5cc5f0e9dd67e11318209635f5a57a4d6cae3d78aaf41d5101f7886661"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_FIFTH_PRE_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/TWENTY_FIFTH_PRE_ROOT_VERIFICATION.json",
+      "sha256": "dea0579678eef9ecef4730e38e28c8a030484e050f91230ffdbba86b306f60d3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/TWENTY_FIFTH_POST_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/TWENTY_FIFTH_POST_ROOT_VERIFICATION.json",
+      "sha256": "34f7c39fd2a6029a7fbb20c9a6f369db37a5985c10d6e63118c3c51e16971770"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/PROBE_PHYSICAL_LIMITS_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/prepared-probe-physical-limits-20260924/review/PROBE_PHYSICAL_LIMITS_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "419361a7920e0a3f4debe1ca4f996690fb3c8de393f02688e45860b8c8aaa45a"
+    }
+  ]
+}

@@ -1,0 +1,1014 @@
+{
+  "files": [
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/AUTHOR_SEAL.json",
+      "sha256": "57208448fe5e06b459aaef80b7a044c848954d9ba386d7643baaba20787f604d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_ROOT.md",
+      "sha256": "b8bec7cc03e7af401aae097445ae24faecd45dcffd8e0273300f16d17d455c1d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/ROOT_READONLY.stdout.json",
+      "sha256": "c6eaa774761934c9878854b74137e7fb500b6554a262b59482091cad2bd6102a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READONLY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/ROOT_READONLY_EXECUTION.json",
+      "sha256": "630d6dadbac4b9aff3ed3c9252d5ab9edc1bf806bf223c017dab8228c197bf7b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/ROOT_READ_RECEIPT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/ROOT_READ_RECEIPT.json",
+      "sha256": "6b81387dee6096bf03dc7547491c2adb6378e8932104c020549534d6aca8116f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/SOURCE_PINS.json",
+      "sha256": "90624a6e4951de65094780827a37d25b6372f7542ae0cbfd041a4abc64ebbcbf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/WORKING_DERIVATION.md",
+      "sha256": "5e004d5b3c375b14beb9c4df5c74ba1b624f6565080da601ab4842f55f5bf5d2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/attempt01/EXECUTION.json",
+      "sha256": "4e221b706221f500e98d3b390f66f1a1631eb7c6bdbd280fa2710215303f0ce9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/attempt01/source.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/attempt01/stdout.json",
+      "sha256": "aa4b508fcc20a50b5fa17bdb4f0b07b420d53ed2b42bea387a0b04a2feafa7ad"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/current_noise_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/current_noise_controls.py",
+      "sha256": "62169110439e5e36b63bfc9b71eb24cc74b9d213b95e1ca5c70fcf682c463f36"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/prepare_final.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/prepare_final.py",
+      "sha256": "219ba2f0a17a3e3c36e7b2f9e07fd01329eb1a797c8921e84750b4d96252a998"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/root_readonly_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/root_readonly_check.py",
+      "sha256": "03e585863f846e4bef3922ff9473d9aa87ddcc4883c7fa09125ace101cdd0b35"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-personal/seal_author.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author46_history/seal_author.py",
+      "sha256": "d411c39eb4f4c6478cc20dbb5c98713ae00bfb4700195a14e974821dedc7ea84"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST.md",
+      "sha256": "66301af4de56c7a539b31fded490b8fd3196f978fc3f8cfeaeb51402ddf9927b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_CAPTURE.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_CAPTURE.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_CAPTURE.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_CAPTURE.stdout.json",
+      "sha256": "dc129eea38f288f122ace72765c0cdf921c0d4507d8022a7a5ee5712401f6b05"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_PRESERVATION_BASELINE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_PRESERVATION_BASELINE.json",
+      "sha256": "41cb14a844bbe5caefd6785627e08956e5a07f825efe87013619c53335442fcd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_SEAL.json",
+      "sha256": "474656df6a908fd8964eb87e9ce20221b0fdd0496fb97363c071323856443e26"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_SOURCE_PINS.json",
+      "sha256": "e25d913bc6d45c48355804db85efb0ed09925ed4b22aef5ee02223de53dc87cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_VERIFICATION_RECORDER.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_VERIFICATION_RECORDER.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_VERIFICATION_RECORDER.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_VERIFICATION_RECORDER.stdout.json",
+      "sha256": "a15d67e47e1d9ea0c070e02d1eef7c73a61a9a7e27e4e4804e088e1fa84be3bc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/POST_VERIFICATION_REPORT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/POST_VERIFICATION_REPORT.md",
+      "sha256": "48cc1211aa1bf5884a667f27086e225250be3aa7fea45f0cec280c932bcae67b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/PRE.md",
+      "sha256": "71e874f6073c54a76ce324685a5916ea79cea0ef75b80331d5869ab52142dfe2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/PRE_SEAL.json",
+      "sha256": "ba242266b82c1768b914a83749b6aa4de64c5fa7992fa7df44f01d4719224410"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/PRE_WORDING_REPAIR.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/PRE_WORDING_REPAIR.json",
+      "sha256": "b851df147b0763e697371b57d870a54f163cd79178ae2382ca8a25022a98c4da"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/SOURCE_PINS.json",
+      "sha256": "dd4b85f0abde81d878692a99c4f6e6e40b587c1aaa319ccb1c4dee968c22e6c7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/VERIFICATION_REPORT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/VERIFICATION_REPORT.md",
+      "sha256": "a309764c4f7aa6f5970be18fe5e5a8d721a13af57f58cc4dc2f01074ec3f2189"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/capture_post_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/capture_post_sources.py",
+      "sha256": "641ad1e5d522317532096c9d0755ecb1a68be64e10f83d6b7dce409f029863ee"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/charge_current_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/charge_current_control.py",
+      "sha256": "5f4300e84dbb3968d42278521e56187397b6a508a4d864b4bd683f66a8ccb160"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/fourier_attempt01/EXECUTION.json",
+      "sha256": "2d8a83bd61bbe7c6638704e7bd24a1be4657a7caa73e20fb1efdf57d68dea6a5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/fourier_attempt01/source.py",
+      "sha256": "a0998b6212cb6fb68a7568722f5b4ec3f0d8caa0f99a3213f3a9505940af37b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/fourier_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/fourier_attempt01/stdout.json",
+      "sha256": "8b0ff3ab7a0e474259a5705bd050d2cecde45543fd1ce895fe0115740c17eab0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/fourier_charge_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/fourier_charge_control.py",
+      "sha256": "a0998b6212cb6fb68a7568722f5b4ec3f0d8caa0f99a3213f3a9505940af37b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/history/PRE_before_mean_derivative_wording.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/history/PRE_before_mean_derivative_wording.md",
+      "sha256": "d265a1a4a873b16dda7094fa7936d03c3ce3a19fb90b5cf424503ef208a3f750"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/post_verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/post_verification_attempt01/EXECUTION.json",
+      "sha256": "1a4d4a01d0cb576d0852730c3546e5f22603fd57f785a9280d64cf27a04b7a46"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/post_verification_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/post_verification_attempt01/source.py",
+      "sha256": "c32eb0119e989634f06b0c8febbfbd1f2bc21849d66837745b7aede87875811b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/post_verification_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/post_verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/post_verification_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/post_verification_attempt01/stdout.json",
+      "sha256": "b990731574e02b21fed04152421d266f466aa4eb454f0dfadeeac746d16ff291"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/primitive_attempt01/EXECUTION.json",
+      "sha256": "088c48c1278e377da18fa2d582c6b6691ec0162341410c1a353815dc3af1ac81"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/primitive_attempt01/source.py",
+      "sha256": "5f4300e84dbb3968d42278521e56187397b6a508a4d864b4bd683f66a8ccb160"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/primitive_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/primitive_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/primitive_attempt01/stdout.json",
+      "sha256": "a9d5e0aa047bc8ec4f8fcb76ffcfec16bd71cef0dbe08197c90720244f78fb36"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/record_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/record_control.py",
+      "sha256": "29e090f896bd6a6776e64ea00bdf358c4d937f75c790db7762fe979c49e861fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/record_post_verification.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/record_post_verification.py",
+      "sha256": "c8ca5d7817568cba3e49fc00586cfc2971909e3146410dda3508cca418526978"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/record_verification.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/record_verification.py",
+      "sha256": "ca721bcb12954b7b4cfdd9d2a86a6184c9463b1c9465d8c1195ead22f7cf9c06"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/repair_pre_mean_wording.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/repair_pre_mean_wording.py",
+      "sha256": "c8d6fc1affd53faf5be6bf5664af32c115571f671449dfdbbd182b1616dc6605"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/seal_post.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/seal_post.py",
+      "sha256": "a4a58d5b9a5c6974573e96e3ea61504597fc0ab119af10c901016d93c5a0da00"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/seal_pre.py",
+      "sha256": "8ec591130c1a3ef29f03996237e89734d1a6e4c6f31f879874296f27a5c1c0d4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verification_attempt01/EXECUTION.json",
+      "sha256": "292f362b78c88a6243c884d62fce11d4d9fa1379c645de3ea4c83cb51659ac27"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verification_attempt01/source.py",
+      "sha256": "8fef3ad200ed4ade4a1cd9ab51cfce45fccddc2156311d7be0b4ad7fb4d00a0c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verification_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verification_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verification_attempt01/stdout.json",
+      "sha256": "ed0d918e09f15191dbce0f77cebbcb73709eab9ce3c41f45bcc1fd0d74a31121"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verify_post_readonly.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verify_post_readonly.py",
+      "sha256": "c32eb0119e989634f06b0c8febbfbd1f2bc21849d66837745b7aede87875811b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-independent/verify_readonly.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science46/verify_readonly.py",
+      "sha256": "8fef3ad200ed4ade4a1cd9ab51cfce45fccddc2156311d7be0b4ad7fb4d00a0c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/AUTHOR_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/AUTHOR_SEAL.json",
+      "sha256": "1f2cb7ce4c8e8b5491a2e35aae215f7e0533d6119343074173ef13dc877d8ba8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/LOCAL_CHARGE_FINITE_TIME_COVARIANCE_ROOT.md",
+      "sha256": "9a83191276a1a0380158ef88961c1d36b0d82c9cd645210739c999c4568f464a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/ROOT_READ_RECEIPT.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/ROOT_READ_RECEIPT.json",
+      "sha256": "2890fba30899afa35e3c9de9de538e06fa7f1e7f352a9a695ac66184cbaac898"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/SOURCE_PINS.json",
+      "sha256": "cd4bf5bd9ef02d34e4c26158d1506c6602f5a98fb87df0c4df53365443dd2dcf"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/WORKING_DERIVATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/WORKING_DERIVATION.md",
+      "sha256": "c326ca432fe8e3d155064e2405f7389e9ad40fe55397f7041f8386e759be2cd8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/attempt01/EXECUTION.json",
+      "sha256": "8108d2eb4360e706148647be491fdd55446084e2528ee2d2fdf4cea8ef337502"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/attempt01/WORKING_BEFORE_CONTROL.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/attempt01/WORKING_BEFORE_CONTROL.md",
+      "sha256": "c326ca432fe8e3d155064e2405f7389e9ad40fe55397f7041f8386e759be2cd8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/attempt01/source.py",
+      "sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/attempt01/stdout.json",
+      "sha256": "c386b3ba561286fb2287d4af3d088f0ea424af52ccd585a6536e248a3d341545"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/local_support_controls.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/local_support_controls.py",
+      "sha256": "0209208aad50e24832a054d82ae2cec42a1cc57bb440a7bfea3093c141b1f263"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/prepare_final.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/prepare_final.py",
+      "sha256": "69a018bdd677aaba69541b68f5423d9dc57f10ddbb728ccd69e7acfc9e66e560"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/root_readonly_attempt01/EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/root_readonly_attempt01/EXECUTION.json",
+      "sha256": "31323c1966769da7d7a93fde4eca14d87de19d368fdfc3fc0798b7933974d229"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/root_readonly_attempt01/source.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/root_readonly_attempt01/source.py",
+      "sha256": "a23f6abd79f2f7fcf7a876d2baf85b53168f27dc55a8fdccada092ef2037dba3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/root_readonly_attempt01/stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/root_readonly_attempt01/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/root_readonly_attempt01/stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/root_readonly_attempt01/stdout.json",
+      "sha256": "d33e426307324f8941a52c456767c3e7126f23e256836a0775f8edbd5290c4cd"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/root_readonly_check.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/root_readonly_check.py",
+      "sha256": "a23f6abd79f2f7fcf7a876d2baf85b53168f27dc55a8fdccada092ef2037dba3"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-personal/seal_author.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/author47_history/seal_author.py",
+      "sha256": "7f19200fe9e10214c245f23abc799c2d688a5ae9be10d8413f5988034a17ebf4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/ADDITIONAL_PROCEDURAL_PIN.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/ADDITIONAL_PROCEDURAL_PIN.json",
+      "sha256": "0a9ebde3f159ef0ef5f26c281d02c79dfcb2f8e4a46d98e4ee6768914738a0c4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/APPROACH_REGISTRY.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/APPROACH_REGISTRY.md",
+      "sha256": "465790ba5ecf99beb0df464e9afffd03cf744a2f64ff68fe5c84506533bd6064"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/CHECKPOINT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/CHECKPOINT.md",
+      "sha256": "2d953f98c4d28a1277c55e250f04946c0a10983156def7e1e1333e2dc3d8d95f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FAILED_ROUTES_AND_SCOPE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/FAILED_ROUTES_AND_SCOPE.md",
+      "sha256": "d9a65bd33bdbc1d686ee348bfbc6d350492ae3a1815e55f3542a73100dc5eafb"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/FINAL_BINDINGS.json",
+      "sha256": "ea8d95188f533ce215a2d896415cb42def33df63b64f0447b991297afca78828"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST.md",
+      "sha256": "6258dff3852b842a9c736d7194378aca3b1fae6837f1938cc347ea8a75fd36b9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_FINAL_BINDINGS.json",
+      "sha256": "f73065d5479179d75cc86702a50263697fbc71b7077ed420b4d6e9de29e9c414"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_PRESERVATION_AFTER.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_PRESERVATION_AFTER.json",
+      "sha256": "176142132bbbb97ee33fba192c700be87386df1c926b53649fbe510334f07119"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_PRE_PRESERVATION_BEFORE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_PRE_PRESERVATION_BEFORE.json",
+      "sha256": "6e8931d7693097683ff12d43fa5152538d4d8d7335cb2bca4f9d57d2958b2bd8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_PROCESS_INSTRUCTIONS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_PROCESS_INSTRUCTIONS.json",
+      "sha256": "af87730e70e90e8d371257da47759a54e0923a33b38dc3167f5887eecfb854f4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_PROCESS_LOG.md",
+      "sha256": "4a6dd1d26499e0ad037c0ee356215b08008b25794fec337fa80a0595de085e92"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_SEAL.json",
+      "sha256": "2ce94c18e4e8ff9d0a0e14b0e2925e65b41aa7f02f4016530d07fb20325af7a6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/POST_SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/POST_SOURCE_PINS.json",
+      "sha256": "cc61d562df92b61bbfbf54ea2e782a021723ef37c532576a9cb890be9c14553c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/PRE.md",
+      "sha256": "b0c81022aeed3224b48ea6985278e2f153c959e0ee7c123a5fa79e44587f11db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRE_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/PRE_SEAL.json",
+      "sha256": "2e45743285afecd1b294017ab085c965d96007872193dd9822b4b76976072255"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PRIMITIVE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/PRIMITIVE_RESULTS.json",
+      "sha256": "f24b90bf376f44df680a40ed41c40d503ba72c5956176c06048f1e9f0c25163b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/PROCESS_LOG.md",
+      "sha256": "629f13c0a3df3ed2e824764ec6f180ee4f4db9011394584816315603f25b3d16"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/SOURCE_PINS.json",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/SOURCE_PRESERVATION_AFTER.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/SOURCE_PRESERVATION_AFTER.json",
+      "sha256": "8cb940b49882146009db5957ab4645314cebbf71941784a60bad504dbc23bd07"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/TREE_RESULTS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/TREE_RESULTS.json",
+      "sha256": "4506ebc8c75e8e8e9c7159ed17196cdb359495789ffccd1fc60c2c06a3c94a61"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/capture.execution.json",
+      "sha256": "4b04a3eafcbfc8c05cc4e67383b99deaa6112eff2d49b9372215a4f7b09ab3fc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/capture.stdout.txt",
+      "sha256": "016e47b5009f4d7412cd0cdfdf771bb7fd054cc6080ab367719a8ac27704aea7"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture_post_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/capture_post_sources.py",
+      "sha256": "f98cc3b45e6ddfa31a8764dde01af09d8a92cc3241c416e0bf38076527a9f586"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/capture_sources.py",
+      "sha256": "f659520a32454dfa3054d97de5bfd37952a10ecae11b873970c26481992625e0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_capture.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_capture.execution.json",
+      "sha256": "4f37b4d360fd93819f12bbab26c1daca597c009912d81e1b72b24b0935accc00"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_capture.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_capture.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_capture.stdout.txt",
+      "sha256": "c8a64c6f0c22680e84367892afb1fbad08f48dd31e520f19808bd5bc0abfb5e4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_compare_read_only.py",
+      "sha256": "e3856ecc18409389c7c411af8c4641f43f346259aafa6b226012d6193946952e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_comparison.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_comparison.execution.json",
+      "sha256": "86c0284f14005aff20d424f590a031991906928e77709be95add9f56b7c16cbc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_comparison.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_comparison.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_comparison.stdout.txt",
+      "sha256": "ab8daaf6af1ce4c428422b06a8f690d4b3c655be0d88cbeca3c8b42ab49b9671"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_record_run.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_record_run.py",
+      "sha256": "ca4e92181b5c89a4190b2f4b9bcd20146e57545b8334b53590d338006e3154b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/post_seal.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/post_seal.py",
+      "sha256": "3d176a6da992795b4b0e649c11945db2d28e067c5c7384fdc95643afbff4f8f8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/primitive.execution.json",
+      "sha256": "8eb3c89e9795f74152da24520832fcc5335f391f8c4f705a53f954a7cf375050"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/primitive.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/primitive.stdout.txt",
+      "sha256": "250214c2ddf2e1d4f0b3df96eae49c9138800b8be3fc7314ab982894bfed0480"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/primitive_covariance_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/primitive_covariance_control.py",
+      "sha256": "46db7e03b06c35707f5f9857058d6029119e69b8f21338f5249a6e6dd61ad045"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/record_run.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/record_run.py",
+      "sha256": "273574440aee4898c07933735086a9254872e229fd3b4e9303558a4931319670"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/seal_pre.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/seal_pre.py",
+      "sha256": "825546bf7b2c878148c681d55de4f551e0b0584b8adb7eb0059153f8641314b5"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/tree.execution.json",
+      "sha256": "e8d1080bb85df7b297fec9b0c744a984490eb7ff71637312f0691ea48385391d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/tree.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/tree.stdout.txt",
+      "sha256": "602438a72b8e6a77916df301e3751bbda338126c5a21191327a567837277eb22"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/tree_full_generator_control.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/tree_full_generator_control.py",
+      "sha256": "59dd746aeada3579fb6749224f989c6fdd7350fa5bcfc4b8d26946e19bbcb986"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/verification.execution.json",
+      "sha256": "f70a08da57503ddb70f4a8959aa21928e4db3a8e1942a740924cbd48b22557d9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/verification.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verification.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/verification.stdout.txt",
+      "sha256": "45213a0e382f6de1a3d0e2024ce60164f39c3f2335965a456d9bd0e7eab2ff1e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/verify_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/science47/verify_read_only.py",
+      "sha256": "a709a96b09b723bda3987badad7999704f7007cc7b9e30d521186c8b9e11d60e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/qualified46/CHARGE_CURRENT_AND_INITIAL_COVARIANCE_QUALIFIED.md",
+      "sha256": "e1447ae3d5a5cad6c756dc1b2079e0bee6e275c53bc8f9a9d926037168c9cba4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/QUALIFICATION.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/qualified46/QUALIFICATION.md",
+      "sha256": "32e296ed994812fec4b9300f071d8a313abd042c711d0b7519f4bb37e0652ac2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-current-noise-qualified/QUALIFICATION_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/qualified46/QUALIFICATION_SEAL.json",
+      "sha256": "f13762c1ce4d0de5d4d6b185fd59059519b59956fa3f11a038ea514c85329a13"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/FINAL_BINDINGS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/FINAL_BINDINGS.json",
+      "sha256": "ca61696a4cfb4d1848cfef6f54a698383abd852cc3118e3170b5c856f05c42d0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/GIT_SOURCE_EVIDENCE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/GIT_SOURCE_EVIDENCE.json",
+      "sha256": "2699dbcd77571da3ec745e6117ba940653218fb7c1c65c06756648e7d8fe2281"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PRESERVATION_AFTER.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/PRESERVATION_AFTER.json",
+      "sha256": "c5ecb1fd300ec3ce2a2903d053603b39d867d8625bb28a807904c956948674b4"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PRIOR_PRESERVATION_BEFORE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/PRIOR_PRESERVATION_BEFORE.json",
+      "sha256": "b7caec65aaf497dee4ea3f1992ab6d40df919c466cfa9c56c005c7ddc3b07d76"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PROCESS_LOG.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/PROCESS_LOG.md",
+      "sha256": "55b27425471b14f83302007688e684ac80ace312de991113243fb4583bcbbf7a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PUBLICATION_COMPARISON.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/PUBLICATION_COMPARISON.md",
+      "sha256": "afd2fc9d3044c4cc1a9f0b4c439cad0c910595a1ed04362cb3ae367b3bf83b5e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/PUBLICATION_COMPARISON_SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "5846abbbf9931aea9abe51949e9074cfa9fd47e17eade05f063d4d770cd035a8"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/SOURCE_PINS.json",
+      "sha256": "1117371c26d6bbe19464a258a26b683d725d2ff8311b4d963297a78c56be5772"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/capture.execution.json",
+      "sha256": "3bc93a00c30f878ed87ddba4452fa68c1b18aba5106298efc59c3e022448810f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/capture.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/capture.stdout.txt",
+      "sha256": "237a5307625048ca0f514684d4727a3453fe18f6d5ab75bcab58df82ba28564a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/capture_sources.py",
+      "sha256": "244146f04671a1d42750b38df2308ac646a637cd312562a6ba045967ba573554"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/compare_read_only.py",
+      "sha256": "21f9438cb2850335c82a71492ce0ffcba6d4c9f35559374e7ab7242beb76efd9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/comparison.execution.json",
+      "sha256": "46cad1760790e5ccd831ba9e313f5751418c29a0670ef221d999df0802b67c2b"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/comparison.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/comparison.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/comparison.stdout.txt",
+      "sha256": "ca52b8469b58b8956b6df1519d812468a64f7b16193c3872c5723844be8412db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/record_run.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/record_run.py",
+      "sha256": "11091e9b5f1853c7dff93eb63e11ba08002c6bf01e9c3dd06ffdeecf7573551e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-finite-time-independent/publication_comparison_46_47/seal_packet.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final47/seal_packet.py",
+      "sha256": "607a0020ffb35341effd1a88fa5616cf19f044d4aae6ab8b2b2a68a744fdd2e2"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON.execution.json",
+      "sha256": "6cfb30a85bf9a43eaf866db9c917971f3313864ce066d05251941a1a58e03b06"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON.stderr.txt",
+      "sha256": "7c5ffe2c54fec84afffdb939cafb74a2c8aa423e4ace782597865bbadb0aa0b6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON.stdout.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON02.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON02.execution.json",
+      "sha256": "affe2537a560e1d704890c37e273b169adfe85ac60bb4bbc362f0e0418d1502a"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON02.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON02.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/COMPARISON02.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/COMPARISON02.stdout.json",
+      "sha256": "1be9524b6ca3b0b4ada376c6ffd1bb48e7f65f4fd2e0c303a957cddd915508be"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/CONCURRENT_PARTIAL_REVIEW_CHANGES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/CONCURRENT_PARTIAL_REVIEW_CHANGES.json",
+      "sha256": "7490725c029f417cd30ddd3b0dfe333bb88d87fe9d71bfd3d0c588504dedb440"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/FINAL_PRESERVATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/FINAL_PRESERVATION.json",
+      "sha256": "5517447a67632b92f25dd985c345f9fbd2b154cf1660eeaf5d0c7e8d388c03d1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/GIT_IDENTITY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/GIT_IDENTITY.json",
+      "sha256": "16cb07614d349c5f511130ac41da3e6cc7110e3983f86264509d6f30f7e826a9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/PARENT_BASE_IDENTITY.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/PARENT_BASE_IDENTITY.json",
+      "sha256": "89ff17df28a9fb5253e0ffacc95e6412a7e33d63fdd691ff09aee02f10d319dc"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/REPORT.md",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/REPORT.md",
+      "sha256": "a5d9ba293ec666d9025b128c4529a0b17e6e7d3ae3b8bd17e602a409b7564f8e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/SEAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/SEAL.json",
+      "sha256": "5bc0355fa7d14e120687927cf014d3adcccc0595328f5617df8b4e80d08aac2d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/SOURCE_PINS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/SOURCE_PINS.json",
+      "sha256": "71ebd4342975e329b36fe3b5b811300e8d4870c9ee4b0cc24571de1c72357231"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/attempt01/COMPARISON.execution.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/attempt01/COMPARISON.execution.json",
+      "sha256": "6cfb30a85bf9a43eaf866db9c917971f3313864ce066d05251941a1a58e03b06"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/attempt01/COMPARISON.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/attempt01/COMPARISON.stderr.txt",
+      "sha256": "7c5ffe2c54fec84afffdb939cafb74a2c8aa423e4ace782597865bbadb0aa0b6"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/attempt01/COMPARISON.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/attempt01/COMPARISON.stdout.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/attempt01/compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/attempt01/compare_read_only.py",
+      "sha256": "da726c21372120699a7af9e5953ed6c7aa2b65587a06526f0c4b3ed63d86fd39"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/attempt01/record_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/attempt01/record_comparison.py",
+      "sha256": "2037bc0561f9e9e27c2662847f2dd12a68f3574df4260785d88272e68162ebef"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/capture_sources.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/capture_sources.py",
+      "sha256": "c78ddaa18323466496a3ad14bdb97f0938b75a800325f13488aa79430e4e6cab"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/compare_read_only.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/compare_read_only.py",
+      "sha256": "387d3c4bde61db0a6d791b4a23620d4a8757a4ee5ad339a993d85a9ebcfa1918"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/record_comparison.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/record_comparison.py",
+      "sha256": "8798f49acfef279642ad39bf2cccd43dadaeb5235ea51e0a4b16ad10197b2f63"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-publication-recovery-independent/seal_recovery.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/final_recovery/seal_recovery.py",
+      "sha256": "44d4ba704fe486abd4c194b254ff560e492fae4d1d64df40a3afebf136476201"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_READONLY.stdout.json",
+      "sha256": "ca52b8469b58b8956b6df1519d812468a64f7b16193c3872c5723844be8412db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_FINAL47_ROOT_REVIEW.json",
+      "sha256": "8d0050dd6dbe6d5821701861a4b386a7e25a8fdf29ba5e5dd3df8b5909bfcd99"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_FINAL_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_FINAL_ROOT_VERIFICATION.json",
+      "sha256": "c844a5cfebc11915d367b801d1132b948c10ad8fd461dcc9253e4f80117b91d1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_FROZEN_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_FROZEN_SOURCES.json",
+      "sha256": "ab6385c5cde92eef0512a455934dc90600ac711dbb2e613c43b198a43848005d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stdout.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_GRAPH_BUILD.stdout.txt",
+      "sha256": "13e148f00f55eb5270f6d601a8086167b0f4e73b567914cb7167b393707aba4c"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_PRIMARY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_PRIMARY_EXECUTION.json",
+      "sha256": "28ffa2b58b4fb6cad0d083db237f959657fe3c4973bb6c7f71111312ed9b5d60"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "08b29054c79ff0f74be83ad1feb5d9c15417d57f435f968ac52e079e5b85cce0"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_PUBLICATION_WORKING_SOURCES.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_PUBLICATION_WORKING_SOURCES.json",
+      "sha256": "45fac29adf50d8a33f6cfb1a66f360a83e0cda6d80e45231fe9ae5d3867df653"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_RECOVERY_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_RECOVERY_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_RECOVERY_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_RECOVERY_ROOT_READONLY.stdout.json",
+      "sha256": "1be9524b6ca3b0b4ada376c6ffd1bb48e7f65f4fd2e0c303a957cddd915508be"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/LOCAL_CHARGE_OBSERVATION_RELEVANT_OPEN_PRS.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/LOCAL_CHARGE_OBSERVATION_RELEVANT_OPEN_PRS.json",
+      "sha256": "785920f7311a017b5f32959c3d414298d6b1ee6f37770b54f4e1c1df762fb744"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_POST_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_POST_ROOT_READONLY.stdout.json",
+      "sha256": "9e7f4566401b155655d645a38cb71c42d1d957908091d7fbf439c52a1509ae11"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_READONLY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_POST_ROOT_READONLY_EXECUTION.json",
+      "sha256": "e4afc87d3423a42731451ebbfb4895f8c9bd2e7af7f60ef87cc17f6120751cbe"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_POST_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_POST_ROOT_REVIEW.json",
+      "sha256": "09e6d823cf6d5ffd64af303141ff2f53deaebec89d4bc505be278053a7ae8671"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_PRE_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_PRE_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_PRE_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_PRE_ROOT_READONLY.stdout.json",
+      "sha256": "7ffaa16c4dc41a915d66fbc1fdfd942e86b3f8e95f500542087266de7d6c07db"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_PRE_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_PRE_ROOT_REVIEW.json",
+      "sha256": "a013f46fb68f46f9d460318457fd38a23739a4ef7f5da5bb88cafd0c4eb95ac9"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SIXTH_PRE_ROOT_REVIEW_INITIAL.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SIXTH_PRE_ROOT_REVIEW_INITIAL.json",
+      "sha256": "ce86574f3b1dd9d8da2a3aed787ec3b2ef16be995661e5d618676973fa9f613e"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_POST_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_POST_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_POST_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_POST_ROOT_READONLY.stdout.json",
+      "sha256": "ab8daaf6af1ce4c428422b06a8f690d4b3c655be0d88cbeca3c8b42ab49b9671"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_POST_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_POST_ROOT_REVIEW.json",
+      "sha256": "efa6beafcf47126d8b2fb3e341c19977ab0b7a94bbfe1abd5a9de85581175355"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_READONLY.stderr.txt",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_PRE_ROOT_READONLY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_READONLY.stdout.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_PRE_ROOT_READONLY.stdout.json",
+      "sha256": "a09871bce617dd0462b18f54cfc581c1fe7056506cf5a9cae62aa2e1e443ba89"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_READONLY_EXECUTION.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_PRE_ROOT_READONLY_EXECUTION.json",
+      "sha256": "a781735a7355fa9b2801e86e8cef2363f249ce2d771974c9965b1b6ac44f4288"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/FORTY_SEVENTH_PRE_ROOT_REVIEW.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/FORTY_SEVENTH_PRE_ROOT_REVIEW.json",
+      "sha256": "ef7f8c559779330797d9df2b4829c8a36b02a290897764b3d3e30d9a40dda926"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/build_local_charge_observation_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/build_local_charge_observation_publication.py",
+      "sha256": "ad789f18f600478da3a27b739e225ec2003aa9e7561b75814ceec3803503978f"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_local_charge_observation_publication.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/verify_local_charge_observation_publication.py",
+      "sha256": "f1bcd6221c343c63739dcf8bc59358c0d18422bca6d3f7c5a7e0bf006d327436"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_local_charge_observation_final_root.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/verify_local_charge_observation_final_root.py",
+      "sha256": "e4a1f47b694b21c1e045b9223591dee0e18172bb58bb14992d748ff909a5cb8d"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/verify_forty_seventh_post_root.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/verify_forty_seventh_post_root.py",
+      "sha256": "2ff7a3f0c2e84acf8286afbf2b506d071347091729cfa173fd8cebc8b344fbc1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/qualify_forty_sixth_current_wording.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/qualify_forty_sixth_current_wording.py",
+      "sha256": "f6d3e24b72993422d718ced07511aa81999cd6f1f3e67a13a7e225e68b8fc943"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-observation-publication-history/PREMATURE_GRAPH_DEPENDENCY_FAILURE.json",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/build_history/PREMATURE_GRAPH_DEPENDENCY_FAILURE.json",
+      "sha256": "d878bcad193fb57276427e1433c1538a4efac2d4812d72dbca53ce927f4a08c1"
+    },
+    {
+      "origin": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/local-charge-observation-publication-history/verify_publication_attempt01.py",
+      "publication": ".claude/science/physics-loops/mobile-record-local-charge-observation-20260925/review/root/build_history/verify_publication_attempt01.py",
+      "sha256": "58a3e2354ca2e589c2d1c5b158a579ea83c3c6abb513a2df08c9b3b10a74f80e"
+    }
+  ]
+}

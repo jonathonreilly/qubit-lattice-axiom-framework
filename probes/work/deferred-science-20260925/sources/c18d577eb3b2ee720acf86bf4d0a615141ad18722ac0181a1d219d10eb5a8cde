@@ -1,0 +1,334 @@
+{
+  "scope": "Complete source/AST/payload/cache correspondence and arithmetic check; no scientific runner execution, independent numerical replication, or audit verdict.",
+  "status": "PASS",
+  "checker_sha256": "108b10cedc82e8c970aaec9002e97fb5c9f798b1f4414b4448e1f4c8844ce264",
+  "prior_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "71ed041319a34f1a58a53bddbf1e7686094cb7fc7a0ca92886dbb6209868828f",
+      "member_count": 11,
+      "all_members_unchanged": true
+    },
+    "POST_SEAL.json": {
+      "sha256": "3152d1e7a2bacd06f615f97ec0de54d0dc0f7f109af1347e25d31771b0373b38",
+      "member_count": 14,
+      "all_members_unchanged": true
+    }
+  },
+  "publication_attempts": {
+    "initial": {
+      "note_sha256": "21795987055be8bf11f7e2bf8c0c05ce1b4ef1ec2c1bfc1a825a78a43dea64fd",
+      "runner_sha256": "57a2c606b7898a69cd6390bb997a1e4ac5c9233161fd84bc86c8b6d71cc383ca",
+      "result_sha256": "7624d1ec0dbb59ac6d4a0cda95381dff22f66682bd69d238d8cd27ecfcd12e29",
+      "cache_sha256": "d1441be2c8aadc03a65d861319110dc09571c22db32f95b52bec677806bdbf19",
+      "input_fingerprint_sha256": "cbfe9359b81589b386de1551e3ff4f800c04b4ba2890f450058675bb61f758ae",
+      "recorded_execution_seconds": 0.4803280830383301,
+      "runner_internal_seconds": 0.03389829094521701,
+      "complete_stdout_characters": 23265
+    },
+    "final": {
+      "note_sha256": "336545d7612288a176d8f1a44f05e157b3f196ec25da0a59154d4ed9ec22f4a6",
+      "runner_sha256": "57a2c606b7898a69cd6390bb997a1e4ac5c9233161fd84bc86c8b6d71cc383ca",
+      "result_sha256": "7d5b4786cd04c55acbc36f3ec34ec9254166b79c81e1fe41c747f162f1e6a839",
+      "cache_sha256": "04eeee2b625eb3dde5a418eae39fd4eb4da1ec49f9381075e3d6d5e5c23bb656",
+      "input_fingerprint_sha256": "6975bc3d2b3b77018eb0b848ea1d55e1e174c1173d9162eb89b92057e3adfa8f",
+      "recorded_execution_seconds": 0.631274938583374,
+      "runner_internal_seconds": 0.05995820788666606,
+      "complete_stdout_characters": 23265
+    }
+  },
+  "checks": [
+    {
+      "check": "frozen PRE_SEAL.json",
+      "pass": true,
+      "members": {
+        "PRE.md": true,
+        "SOURCE_PINS.json": true,
+        "SOURCE_EVIDENCE_CHECK.json": true,
+        "primitive_source_check.py": true,
+        "PRIMITIVE_SOURCE_RESULTS.json": true,
+        "PRIMITIVE_SOURCE_CHECK.log": true,
+        "PRIMITIVE_SOURCE_CHECK.stderr": true,
+        "sources/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+        "sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+        "sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": true,
+        "sources/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md": true
+      }
+    },
+    {
+      "check": "frozen POST_SEAL.json",
+      "pass": true,
+      "members": {
+        "POST.md": true,
+        "POST_SOURCE_PINS.json": true,
+        "post_evidence_check.py": true,
+        "POST_EVIDENCE_CHECK.json": true,
+        "POST_EVIDENCE_CHECK.log": true,
+        "POST_EVIDENCE_CHECK.stderr": true,
+        "released_sources/AUTHOR_SEAL.json": true,
+        "released_sources/CONTROL_SEAL.json": true,
+        "released_sources/RECENT_BIRTH_FULL_ENSEMBLE_ENERGY_PERSONAL_DERIVATION.md": true,
+        "released_sources/recent_birth_controls.py": true,
+        "released_sources/RECENT_BIRTH_CONTROL_RESULTS.json": true,
+        "released_sources/CONTROL.stdout.txt": true,
+        "released_sources/CONTROL.stderr.txt": true,
+        "released_sources/CONTROL_EXECUTION.json": true
+      }
+    },
+    {
+      "check": "initial snapshot pins",
+      "pass": true,
+      "members": [
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/scripts/recent_births_full_cube_energy_variance_2026_09_24.py",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/outputs/recent_birth_full_cube_variance_20260924/RECENT_BIRTH_FULL_ENSEMBLE_RESULTS.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/logs/runner-cache/recent_births_full_cube_energy_variance_2026_09_24.txt",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/AGENTS.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/worktree/scripts/runner_cache.py",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/external/NINTH_PUBLICATION_FROZEN_SOURCES.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/external/NINTH_PUBLICATION_CACHE_EXECUTION.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_initial_sources/external/NINTH_PRIMARY_ROOT_VERIFICATION.json",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "check": "final snapshot pins and current sources",
+      "pass": true,
+      "members": [
+        {
+          "snapshot": "publication_final_sources/worktree/docs/RECENT_BIRTHS_FORCE_FULL_CUBE_ENERGY_VARIANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/scripts/recent_births_full_cube_energy_variance_2026_09_24.py",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/outputs/recent_birth_full_cube_variance_20260924/RECENT_BIRTH_FULL_ENSEMBLE_RESULTS.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/logs/runner-cache/recent_births_full_cube_energy_variance_2026_09_24.txt",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/docs/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/docs/ORDINARY_MICROSCOPIC_CUBE_ENERGY_AFTER_THE_BIRTH_LAYER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/AGENTS.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/worktree/scripts/runner_cache.py",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/external/NINTH_PUBLICATION_FROZEN_SOURCES.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/external/NINTH_PUBLICATION_CACHE_EXECUTION.json",
+          "pass": true
+        },
+        {
+          "snapshot": "publication_final_sources/external/NINTH_PRIMARY_ROOT_VERIFICATION.json",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "check": "sole note correction restores explicit fixed-parameter integer-spin limit",
+      "pass": true
+    },
+    {
+      "check": "complete conventions, sections 1-5 proof and section 6 exclusions identical to PRE",
+      "pass": true,
+      "shared_characters": 18555,
+      "shared_sha256": "3d2d8ed80751dc5913ee65be929130091ceac01e84896bd32defd86292bfd72d"
+    },
+    {
+      "check": "final publication runner unchanged from initial attempt",
+      "pass": true
+    },
+    {
+      "check": "all nine reused helpers have identical ASTs",
+      "pass": true,
+      "helpers": {
+        "clean": true,
+        "add": true,
+        "hop": true,
+        "birth": true,
+        "mark": true,
+        "adjoint_product_polynomial": true,
+        "check_gauss": true,
+        "subnormalized_fisher": true,
+        "controls": true
+      }
+    },
+    {
+      "check": "primitive graph and zero-field input definitions unchanged",
+      "pass": true,
+      "constants": {
+        "A": true,
+        "B": true,
+        "EDGES": true,
+        "OMEGA": true
+      }
+    },
+    {
+      "check": "primitive main only renamed and output statements replaced by return",
+      "pass": true
+    },
+    {
+      "check": "disclosed reused-code provenance constants match sealed originals",
+      "pass": true
+    },
+    {
+      "check": "declared timeout and five authorized note inputs",
+      "pass": true
+    },
+    {
+      "check": "initial recorded execution is successful and stdout completely bound to result",
+      "pass": true
+    },
+    {
+      "check": "initial whole cache matches execution, runner hash and independent input fingerprint",
+      "pass": true,
+      "input_fingerprint_sha256": "cbfe9359b81589b386de1551e3ff4f800c04b4ba2890f450058675bb61f758ae"
+    },
+    {
+      "check": "initial external frozen-source manifest and verification hashes agree",
+      "pass": true
+    },
+    {
+      "check": "initial all 36 primitive result rows and remaining scientific payload reused exactly",
+      "pass": true
+    },
+    {
+      "check": "initial complete eight-row toy payload reused exactly",
+      "pass": true
+    },
+    {
+      "check": "initial top-level source and provenance identities correct",
+      "pass": true
+    },
+    {
+      "check": "final recorded execution is successful and stdout completely bound to result",
+      "pass": true
+    },
+    {
+      "check": "final whole cache matches execution, runner hash and independent input fingerprint",
+      "pass": true,
+      "input_fingerprint_sha256": "6975bc3d2b3b77018eb0b848ea1d55e1e174c1173d9162eb89b92057e3adfa8f"
+    },
+    {
+      "check": "final external frozen-source manifest and verification hashes agree",
+      "pass": true
+    },
+    {
+      "check": "final all 36 primitive result rows and remaining scientific payload reused exactly",
+      "pass": true
+    },
+    {
+      "check": "final complete eight-row toy payload reused exactly",
+      "pass": true
+    },
+    {
+      "check": "final top-level source and provenance identities correct",
+      "pass": true
+    },
+    {
+      "check": "initial-to-final result changes only elapsed_seconds",
+      "pass": true
+    },
+    {
+      "check": "restored declared note input changes fingerprint",
+      "pass": true
+    },
+    {
+      "check": "all seven toy values quoted in numerical prose round correctly",
+      "pass": true,
+      "rounded_values": {
+        "eps4_full_variance": "4.49336",
+        "limiting_eps4_variance": "4.49237",
+        "eps4_recent_within_path_variance": "2.41397",
+        "recent_variance_target": "2.41509",
+        "full_mean": "3.45643",
+        "limiting_mean": "3.45567",
+        "full_Fisher": "1.53044"
+      }
+    },
+    {
+      "check": "POST analytic toy integral agrees with saved value and quoted digits",
+      "pass": true,
+      "analytic_integral": 2.68491124260355
+    },
+    {
+      "check": "literal zero comparator remains expressly labeled",
+      "pass": true
+    }
+  ],
+  "preserved_finding": "Initial omitted integer-spin scaling hypothesis; final note restores it, with fresh recorded execution and changed declared-input fingerprint."
+}

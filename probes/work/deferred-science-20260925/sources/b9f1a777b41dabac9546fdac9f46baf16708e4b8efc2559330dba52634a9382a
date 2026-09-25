@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-25T06:53:25.256192+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-charge-identification-independent/small_period_control.py"
+  ],
+  "source_sha256": "11372194114a4590222b2c2cea4ad14438754afebb55cd0a79cb9f36ea6c787a",
+  "elapsed_seconds": 0.18534641712903976,
+  "exit_code": 0,
+  "stdout_sha256": "0fff2a5908c362bf1197df80a68b106c583d20f4e47c0d6ce852583f191e3baf",
+  "stdout_bytes": 8528,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

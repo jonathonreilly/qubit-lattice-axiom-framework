@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-24T23:02:54.140565+00:00",
+  "completed_utc": "2026-09-24T23:02:54.370994+00:00",
+  "wrapper_elapsed_seconds": 0.23029445810243487,
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-independent/optical_band_controls.py"
+  ],
+  "source_sha256": "3a11ce80240f7f2966783b8abd27ea7b271e61dd83c09f97846ae1cb3c6b8084",
+  "stdout_sha256": "22093bf947e12a5f5351bd0909bbe346cf0958b42d4ca5c9cd91977d8b0ea737",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0
+}

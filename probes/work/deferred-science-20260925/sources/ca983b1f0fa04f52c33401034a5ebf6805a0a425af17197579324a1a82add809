@@ -1,0 +1,150 @@
+{
+  "cache_sha256": "38612d69d7f66fe67fefd556c96c245ed91b85bd0b0c16b29e13fcd75c93b07c",
+  "closing_preservation_sha256": "0e303c48c9232880d45cd70d88d5dc12cb7e7513bc496979a8159400c4ce790c",
+  "complete_code_read_and_scientific_exposure": "See PUBLICATION_COMPARISON.md and PROCESS_LOG.md.",
+  "complete_comparison_output_sha256": "c127b1f8bb4829321bdf1a3f3c725bf33dd8bf551657a96f63856666b69142a3",
+  "complete_result_leaves": [
+    186008,
+    17758
+  ],
+  "fresh_comparator_read_only_ast_guard": {
+    "checked": true,
+    "imports": [
+      "ast",
+      "collections",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "stat"
+    ]
+  },
+  "graph_manifest_delta": {
+    "added_edges": 3,
+    "added_node": "original_birth_charge_and_grouping_dynamics_bounded_theorem_note_2026-09-25",
+    "base_revision": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "dependencies": [
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "formation_balance_and_unsaturated_dark_states_bounded_theorem_note_2026-09-24"
+    ],
+    "new_edge_count": 14681,
+    "new_node": {
+      "deps_hash": "bdb2639dba99",
+      "out_degree": 3
+    },
+    "new_node_count": 6668,
+    "old_edge_count": 14678,
+    "old_node_count": 6667,
+    "old_nodes_unchanged": 6667,
+    "scope": "Exact frozen topology-manifest delta; no graph rebuild or audit verdict"
+  },
+  "historical_writers_executed": [],
+  "input_fingerprint_sha256": "deaba64df4916d8b08e577bb8105a0d9373a6a6fbdd01cc7250ed42c43c12fbd",
+  "local_report_tool_parse_failure": {
+    "filesystem_mutation_before_failure": false,
+    "path": "REPORT_WRITE_FAILURE.md",
+    "sha256": "a5ec0b65ad0081090cd362ca04840628e01fc15c273984208f62ce8a67533b32"
+  },
+  "mechanical_source_pins_sha256": "f8217f4258ed9cab0e6276481ce62c0d728fb85b7eb8ae8c4b06ae1f3504b69b",
+  "origin_count": 104,
+  "prior_own43_file_count": 80,
+  "publication_result_sha256": "14a616466161eef6e6492632ffa81788d6a560afd99719339fb81600c0611af9",
+  "recorded_new_script_executions": [
+    {
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "-B",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_sources.py"
+        ],
+        "elapsed_seconds": 0.2514652078971267,
+        "exit_code": 0,
+        "outputs": {
+          "stderr.txt": {
+            "bytes": 0,
+            "path": "capture.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout.txt": {
+            "bytes": 1352,
+            "path": "capture.stdout.txt",
+            "sha256": "e4920c3be983d59830e3e8fee627350a9a3050d68c00cd611551a18cb2f2bffd"
+          }
+        },
+        "recorder_sha256": "9f2ab5f6e2510a315127a5bcabbb003433b949dded934350867f72adb7e5a1aa",
+        "source_sha256": "5d135a25bf55be1c34ce1c0452e375bb4fbc211cee7d581c33ab62527ac33b57",
+        "started_utc": "2026-09-25T09:04:20.827862+00:00"
+      },
+      "path": "capture.execution.json",
+      "sha256": "adfcb59d71367bdeba991dacf9b33498e0cda90ad1386bd837c999a564426332"
+    },
+    {
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "-B",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/capture_mechanics.py"
+        ],
+        "elapsed_seconds": 0.02363316691480577,
+        "exit_code": 0,
+        "outputs": {
+          "stderr.txt": {
+            "bytes": 0,
+            "path": "capture_mechanics.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout.txt": {
+            "bytes": 682,
+            "path": "capture_mechanics.stdout.txt",
+            "sha256": "f8217f4258ed9cab0e6276481ce62c0d728fb85b7eb8ae8c4b06ae1f3504b69b"
+          }
+        },
+        "recorder_sha256": "9f2ab5f6e2510a315127a5bcabbb003433b949dded934350867f72adb7e5a1aa",
+        "source_sha256": "a57f24e8c45af4d39c93f220d9df691b46d36101fa4c23a5cbd2b23966c3eebe",
+        "started_utc": "2026-09-25T09:08:51.163269+00:00"
+      },
+      "path": "capture_mechanics.execution.json",
+      "sha256": "f3a766ae6f723c0f4716a21b724bd9ba6190884f8829f7e88ad3467d803421ec"
+    },
+    {
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "-B",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/native-birth-cluster-transport-independent/publication_comparison_42_43/compare_read_only.py"
+        ],
+        "elapsed_seconds": 0.32692070794291794,
+        "exit_code": 0,
+        "outputs": {
+          "stderr.txt": {
+            "bytes": 0,
+            "path": "comparison.stderr.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout.txt": {
+            "bytes": 17137,
+            "path": "comparison.stdout.txt",
+            "sha256": "c127b1f8bb4829321bdf1a3f3c725bf33dd8bf551657a96f63856666b69142a3"
+          }
+        },
+        "recorder_sha256": "9f2ab5f6e2510a315127a5bcabbb003433b949dded934350867f72adb7e5a1aa",
+        "source_sha256": "ed893670e8788efff968bb0f412513cc5d9caae04ad385577f9b6dca4779982c",
+        "started_utc": "2026-09-25T09:09:08.859681+00:00"
+      },
+      "path": "comparison.execution.json",
+      "sha256": "6335283160999d0b7bf2134d43576e9c4de42a1a0b41087f80911f741c65d16e"
+    }
+  ],
+  "report": {
+    "path": "PUBLICATION_COMPARISON.md",
+    "sha256": "be8cad3c8ac15a6687e0530a46e2f5aa2b93eaded8e59bfc3fa42a4cada51964"
+  },
+  "scientific_programs_executed": [],
+  "scope": "Released-source final publication correspondence42+43; no retained or audit verdict.",
+  "sealing_program": {
+    "path": "seal_comparison.py",
+    "sha256": "662ee92d3e128a3e7f037b6170bd524b611fc2e31677fb44ab115173b3fde25c"
+  },
+  "source_pins_sha256": "bbebc8141695fa9b371b0a0352b3e369ab81a1240d1b9e29d0873f2bdbb5e908"
+}

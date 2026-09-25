@@ -1,0 +1,33 @@
+{
+  "base_revision": "1217d914870dd275893a5e15774c4a70bcde37f5",
+  "note": "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+  "runner": "scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py",
+  "result": "outputs/optical_observation_bridge_20260924/OPTICAL_OBSERVATION_RESULTS.json",
+  "packet": ".claude/science/physics-loops/optical-observation-bridge-20260924",
+  "files_sha256": {
+    "docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+    "scripts/optical_reference_energy_limits_for_original_record_counts_2026_09_24.py": "38e5e61368fd007a024135ceafa3f487daeaa86607eb8e4c4847bb01caa7e250",
+    "docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+    "docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "acf74cfce461cfbf607f7ba2994ff0a3d5986b9571bf7c5efacecebdf9ab5d7b",
+    "docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+    "docs/PREPARED_ORIGINAL_RECORD_PROBE_ENERGY_VACUUM_RESPONSE_AND_CLOCK_SCOPE_BOUNDED_THEOREM_NOTE_2026-09-24.md": "2dd49ffa004fa09726b2388decb7c4a36dd69f2cdaf5f3bbb8ffe3e829a47c6d"
+  },
+  "author_source_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-volume-observation-personal/finite_volume_units.py",
+      "sha256": "a3122d014e37d26850d9f4bab7352e0de81ef7d32396c690d2314afab84385ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-band-response-personal/optical_band_controls.py",
+      "sha256": "e938b4a2ab11be9c82b4dbd2ec628ab3a2823d1d137b0a7950dc6621d6d2b9ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/optical-experiment-scope-personal/experiment_units.py",
+      "sha256": "0b3fa19a85d696aea138375530e750a6f660eceea30b425bda86b22495b92e26"
+    }
+  ],
+  "adaptations": [
+    "The control result key max_eta is renamed projected_weight_fraction; arithmetic and feasibility flag unchanged.",
+    "Top-level arithmetic is wrapped in functions; serialization is combined. Source/timer metadata refer to actual canonical execution."
+  ]
+}

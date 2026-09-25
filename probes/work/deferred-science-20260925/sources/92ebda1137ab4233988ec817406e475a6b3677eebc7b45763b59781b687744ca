@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-24T23:59:40.374007+00:00",
+  "argv": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent/direct_matrix_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/selected-mark-power-independent",
+  "elapsed_seconds": 2.0134733750019222,
+  "exit_code": 0,
+  "script_sha256": "2cc6c493ac87418a4d98fc8af06e11e73ead8d18f1efc5c8609115bff035a3c0",
+  "stdout_bytes": 3264,
+  "stdout_sha256": "2e548720c5efa1d2a119c1e3055d0d00023ad60c45ce6891b83c431436c97264",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

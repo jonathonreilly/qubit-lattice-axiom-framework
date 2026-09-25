@@ -1,0 +1,235 @@
+{
+  "phase": "blind independent PRE; sealed before author disclosure",
+  "sealed_utc": "2026-09-25T00:48:46.189255+00:00",
+  "report": "PRE.md",
+  "report_sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+  "source_manifest": "SOURCE_PINS.json",
+  "source_manifest_sha256": "962ebbd7bfb080193c286c31397ce96fa96e0f51259711b36f44f59fd6bd60fa",
+  "members": [
+    {
+      "path": "CERTIFICATE_EXECUTION.json",
+      "sha256": "49d8d31e682d2b886531851a479853b280b9767a0b50ede15d1522400c130277",
+      "bytes": 409
+    },
+    {
+      "path": "CERTIFICATE_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CERTIFICATE_STDOUT.log",
+      "sha256": "d19f249f03a3c7c6ed9c0f1be6fb0e774079a331b32d6e61de65eaf66d9a9b69",
+      "bytes": 14103
+    },
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "812cb8b4f4fb53d81d06e8351b464496ae21219c8ce9167ac90b9422571a012e",
+      "bytes": 439
+    },
+    {
+      "path": "CONTROL_REPAIR_DIFF.txt",
+      "sha256": "65bebf68721b9f550b6b0444f8bbd0855ad1f4c993bde85f57349b9879ba8d70",
+      "bytes": 2617
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "53681f9a777fa9caee348997efff0fc5931f82000a102f838f805dac9a527298",
+      "bytes": 65128
+    },
+    {
+      "path": "CONTROL_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "CONTROL_STDOUT.log",
+      "sha256": "53681f9a777fa9caee348997efff0fc5931f82000a102f838f805dac9a527298",
+      "bytes": 65128
+    },
+    {
+      "path": "COVARIANCE_CERTIFICATE.json",
+      "sha256": "d19f249f03a3c7c6ed9c0f1be6fb0e774079a331b32d6e61de65eaf66d9a9b69",
+      "bytes": 14103
+    },
+    {
+      "path": "DIRECT_SUBTRACTION_DIAGNOSTIC.json",
+      "sha256": "6dc23be1dfba808e848b80f50b0f5bd42b5e67ba678646c3892f9ce156d1dc9d",
+      "bytes": 2042
+    },
+    {
+      "path": "DIRECT_SUBTRACTION_DIAGNOSTIC_EXECUTION.json",
+      "sha256": "73d9731d6804fc7f9ab539149295e7e1b5f867c96d806cd73d02d9b3ebf247eb",
+      "bytes": 738
+    },
+    {
+      "path": "DIRECT_SUBTRACTION_DIAGNOSTIC_STDOUT.log",
+      "sha256": "6dc23be1dfba808e848b80f50b0f5bd42b5e67ba678646c3892f9ce156d1dc9d",
+      "bytes": 2042
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "1590611844b8bf80ee857a6585d6df3bff990ed8c01ce3f1ec3bd1338192a4a7",
+      "bytes": 27135
+    },
+    {
+      "path": "READ_AND_FAILURE_LOG.md",
+      "sha256": "df508a8d265f55d17d062c846e285b18d1243acf3cd046e6a44b052266efa6ac",
+      "bytes": 2437
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "962ebbd7bfb080193c286c31397ce96fa96e0f51259711b36f44f59fd6bd60fa",
+      "bytes": 10581
+    },
+    {
+      "path": "SOURCE_PINS_INITIAL.json",
+      "sha256": "9ca1d4f85fcaea0233a9b76a6c8c0d921c310b1f1fb240620f4b05cee5cf28a0",
+      "bytes": 6515
+    },
+    {
+      "path": "VERIFICATION_EXECUTION.json",
+      "sha256": "cd2182b28213f64513054dfb8acd098cb8bea5b1376a145c8a92f8107d1335d6",
+      "bytes": 570
+    },
+    {
+      "path": "VERIFICATION_REPORT.json",
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2",
+      "bytes": 2028
+    },
+    {
+      "path": "VERIFICATION_STDERR.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "VERIFICATION_STDOUT.log",
+      "sha256": "2de0fdf12142a4b0e5329a2524a8fdb6adedcce6675caea91a72610996f814d2",
+      "bytes": 2028
+    },
+    {
+      "path": "attempt01_direct_subtraction_failure/CONTROL_EXECUTION.json",
+      "sha256": "7affc5987e98ffc98593769ac92b86f398070fe13161963b084a2061912224df",
+      "bytes": 440
+    },
+    {
+      "path": "attempt01_direct_subtraction_failure/CONTROL_STDERR.log",
+      "sha256": "67e0e25ab27db1cbc1f4b4a0b0eeabdd2c320e646f18fb0a069ac3222dce3327",
+      "bytes": 830
+    },
+    {
+      "path": "attempt01_direct_subtraction_failure/CONTROL_STDOUT.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "attempt01_direct_subtraction_failure/PRESERVATION.json",
+      "sha256": "349fde533bc6f05b03f2e71eb19cca5a7ffdf5386bacede2c529b7bd0f1632bc",
+      "bytes": 584
+    },
+    {
+      "path": "attempt01_direct_subtraction_failure/two_detector_controls.py",
+      "sha256": "dc6632fbf3383d87b8c3f0e082a80720e927273714f77bf7bba830358bd7175e",
+      "bytes": 10567
+    },
+    {
+      "path": "covariance_certificate.py",
+      "sha256": "4ec649497da93c54658e91f52a07cc837ee8c0b43dc062c2df13758bffbf4c59",
+      "bytes": 3723
+    },
+    {
+      "path": "diagnose_subtraction.py",
+      "sha256": "3c8b0816233ad8db0d8c59e03acf3487edf269ac85c80d48fd6730910e387586",
+      "bytes": 1436
+    },
+    {
+      "path": "instructions/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "bytes": 737
+    },
+    {
+      "path": "instructions/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "instructions/physics-claim-reviewer_SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "path": "sources/campaign-working/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "sources/campaign-working/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "sources/campaign-working/docs/WEAK_FIELD_WAVE_PACKETS_FROM_MOBILE_RECORD_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "651fa7cfd816ca5df8c401959458b7590c2f6ec706af437ef3ce31accb7d3ccf",
+      "bytes": 19851
+    },
+    {
+      "path": "sources/literature-photodetection/brouri-quant-ph-0007032v1.pdf",
+      "sha256": "a5759a2a381b2039448484e321b740f2bf2b73d3c8265e58f1e76d8b08a3cb6a",
+      "bytes": 164208
+    },
+    {
+      "path": "sources/optical-band-response-independent/POST.md",
+      "sha256": "10cfd38cd042db2bde69a305cb9b412efd97c2ff9f4ffe14606fb0f7abfafcd5",
+      "bytes": 15736
+    },
+    {
+      "path": "sources/optical-band-response-independent/POST_SEAL.json",
+      "sha256": "9b4f43ccd7586dddeb8b7b5889c7d8956119c4edc1ddc282260e06eb09c392fc",
+      "bytes": 12338
+    },
+    {
+      "path": "sources/optical-band-response-independent/PRE.md",
+      "sha256": "24e103cc969b14d80f7e4e897d1a94c885914306b6feecdacf9656663e168bc6",
+      "bytes": 27493
+    },
+    {
+      "path": "sources/optical-band-response-independent/PUBLICATION_COMPARISON.md",
+      "sha256": "c24e8e0dcd6df868a59f26e6059f4d19daafdf2604e509e8fc46937fdc73c415",
+      "bytes": 7463
+    },
+    {
+      "path": "sources/optical-band-response-independent/PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "821c8916b22e267c19129e8e8806e8c3c566875f602ee839e4d54b2bc7763911",
+      "bytes": 5461
+    },
+    {
+      "path": "sources/optical-observation-publication/docs/OPTICAL_REFERENCE_ENERGY_LIMITS_FOR_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "606bc1f5a53b76e5061a3d8a781ad5e2cd456d3815c4263520c4600658b9191d",
+      "bytes": 21012
+    },
+    {
+      "path": "sources/prepared-observation-publication/docs/ORIGINAL_RECORD_CALIBRATION_AND_PREPARED_MATTER_PROBE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "14ed0194fefd18eeee711e733bb76c75ce4a88832b01bc55dc41e6e058ba612b",
+      "bytes": 36259
+    },
+    {
+      "path": "two_detector_controls.py",
+      "sha256": "7c1c296790b00c33a93708ad52f6c89955d9c96f021e2268152410f7362dd713",
+      "bytes": 11522
+    },
+    {
+      "path": "verify_evidence.py",
+      "sha256": "a858150ebb26d9e02d2f239e1f8b3e193d6fa88dac84c6dd86db05b52f9aea58",
+      "bytes": 5129
+    }
+  ],
+  "member_count": 43,
+  "scientific_or_prior_review_origins": 12,
+  "instruction_origins": 3,
+  "excluded_nonscientific_generated_files": [
+    "__pycache__/"
+  ],
+  "author_or_active_other_packets_read": false,
+  "author_or_parent_code_executed": false,
+  "delegation": false,
+  "scope": "Exact initial two-copy original resolved effect and conditional full-process short-window coincidence; reference raw and independent-vacuum-subtracted normalizations; finite primitive/field controls with preserved failure. No formal audit or empirical verdict."
+}

@@ -22,11 +22,18 @@
  "stdout_tail": "hree spinors); lowest value -sqrt3, so E0(+) <= -sqrt3 N(V-N)/(V-1) when 4 | L; free fermions bound E0(-) from below; on 8^3 (shells |d|^2 = 3, 5/2, 2 with 8, 48, 120 states) interval arithmetic certifies E0(+) < E0(-) for N = 11..35; thermodynamic limit: the symmetric rule is strictly lower for rho < ((3/5)A^(-2/3)/sqrt3)^3 = 0.00365, A = (pi/6)(2sqrt3)^(3/2)\nruntime 104s; failed families: none\nSUMMARY: PARTIAL exact: the fourth-order linked-cluster (high-temperature) coefficients of the crowd on Z^3 at fixed filling, both composition signs: C2 = (3/2)rho(1-rho), C4(+/-) = -(3/8)rho(1-rho)(11-14rho+11rho^2 +/- 8rho(1-rho)); the sign enters first through plaquette exchanges, C4(+) - C4(-) = -6rho^2(1-rho)^2, so at that order the antisymmetric rule has the lower free energy and energy; the ground energy at low filling is lower for the symmetric rule (certified on 8^3 for 11 <= N <= 35 and for rho < 0.00365).\nHIT: (a) exact, hop amplitude 1/2: per site at fixed filling, log Z/V = s(rho) + beta^2 C2/2 + beta^4 C4/24 + O(beta^6) with C2 = (3/2)rho(1-rho), C4(+) = -(3/8)rho(1-rho)(11-6rho+3rho^2), C4(-) = -(3/8)rho(1-rho)(11-22rho+19rho^2); the antisymmetric rule lowers f by (beta^3/4)rho^2(1-rho)^2; (b) the sign also moves the fourth-order alternation coefficient (delta^2 part -12rho^2(1-rho)^2, all axes) and the clock-gradient coefficient (4rho^2(1-rho)^2|k|^2); but the ground-state order is the reverse at low filling: E0(+) <= -sqrt3 N(V-N)/(V-1) < E0(-) on 8^3 for N = 11..35.\n",
  "checked": {
   "by": "w-macbookpro9927a-je6b5",
-  "at_utc": "20260925T012511Z",
+  "at_utc": "20260925T012537Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 92a2f08f differs from the current HEAD a16ec888 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "check.py derives the exact fourth-order linked-cluster coefficients of the crowd on Z^3 at fixed filling for both composition signs (C4(+) - C4(-) = -6rho^2(1-rho)^2 from plaquette exchanges), validated against exact brute-force torus traces (2D N<=4, 3D N<=3), and certifies with interval arithmetic that the symmetric rule nevertheless has the lower ground energy on 8^3 for N = 11..35.",
+  "by": "w-macbookpro9927a-je6b5",
+  "at_utc": "20260925T012537Z"
  }
 }

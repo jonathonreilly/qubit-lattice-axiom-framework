@@ -603,3 +603,35 @@ Block 143 (PR #9229) needed one assumption: nondegenerate stationary points of t
 Each is nondegenerate: 4 and 2, and 8 and 6, per cell of half a period in each coordinate. At the cone points the other record's energy gradient is below one.
 
 So the statement of addenda 30 and 31, that nothing local keeps two records' books under one record per site in the plane or in space, now rests only on named standard imports: scattering theory for finite-rank perturbations, and the relation between the perturbation determinant and the scattering matrix. It is still the supervisor's own derivation, not refereed by another model family. The erratum in addendum 31 is superseded.
+
+## Thirty-fourth addendum (2026-09-25 evening): the third column, consolidated (a summary of addenda 28–33, no new results)
+
+"Fixed" means fixed by a stated demand in the cited blocks; nothing is adopted. Blocks 134–143 are the supervisor's own derivations, not refereed by another model family; blocks 111–133 are Grok-refereed harvests. Probe results marked unrefereed are same-family and wait for a referee.
+
+| Ingredient | Records alone | With the amplitude layer | Still supplied or open | Blocks |
+|---|---|---|---|---|
+| waves | never | the signed walk carries them | — (probes #9189, unrefereed: nonlinear record motion has no lasting waves either) | 96, 122, 123 |
+| a clock law | "no master clock" forces the lattice Laplacian | — | the bond energy beyond second order (probes #9202, unrefereed, classifies the third-order jets); `γ` tied to `K` | 53, 55, 56 |
+| a clock stiffness from the sea | — | on a ring the one-record-per-site sea gives `κ = 1/(6π)`; the free massive sea gives `κ(m) = ⟨|sin k|²/E⟩/12` (probes #9210, unrefereed) | two and three dimensions under one record per site | 76, 130 |
+| a rest energy | the record gas makes the chessboard when a recorded bond is expensive | the staggered mass: the only site rest energy that keeps the books | the coupling `c`; whether the gas's defects leave a gap (probes #9183, #9212, unrefereed) | 77, 79, 117, 119, 131, 133, 139 |
+| a source for the lengths | — | only the two-step current | the placements | 62, 120, 135, 136 |
+| one light cone (`α = K/4`) | — | fixed at linear order, exactly for free and massive walker content | — | 129, 134, 135, 136, 139 |
+| the kinetic term and closing ratio | — | `β = −α` | — | 101, 112, 124, 129 |
+| relabellings in time | — | a bond shift coupled to the symmetric momentum keeps every constraint | the shift itself: no landed object can be it (probes #9226, unrefereed); whether "No site is privileged" covers relabellings in time is a reading question | 124, 136, 138 |
+| the walk's kinematics | — | an exact boost charge; the fall weight `cos 2k`; an exactly kept angular momentum with the face spin, whose balance law is exact (probes #9214, unrefereed) | the angular momentum's own bracket closes only approximately | 106, 140 |
+| the unit of length `K` | — | — | supplied (probes #9198, unrefereed: the frame-coupled sea does not induce the member) | 129 |
+| action and reaction | only an unrecorded body is pulled and pulls nothing back | under exclusion the pulls match if the pair sources its compressed energy | probes #9211: a mixed pair with a staggered mass loses total wave vector at second order in the coupling (unexplained) | 55, 116, 121 |
+| exact books | — | exact for content that does not interact (linear order) | lost at the first order at which content scatters. Nothing local restores them under one record per site (two records; proved with named standard imports). At long wavelength the defect is third order in the records' momentum. | 137, 141, 143 |
+| the exchange sign | both sectors meet every axiom; the sign first shows at order four (any number of records: probes #9221, unrefereed) | the books do not see it | supplied | 78, 128 |
+| content of one sense at a crossing | frozen or out of reach under one record per site | — | two records on a site (the parked larger site algebra) or another reading | 77, 78, 125 |
+| a record's energy at formation | the ledger survives formation only at a price | — | the price | 58, 116 |
+| isotropy of moving records | forward streaming needs diagonal steps; isotropy rests on one number `β` | — | exact `β` (probes #9179, unrefereed) | 51, 52, 118 |
+| groups | records in a gradient settle alike but drift apart | a neighbour possibility shift binds records under one record per site | bound pairs do not move like records: `c² = 1/2` on a line, and never weight one along all three axes in space at strong binding. Open (probes refill o): moderate binding, and whether a static binding carries its energy as inertia. | 108, 111, 113, 115, 127, 142 |
+
+**The owner's fork, as it stands** (a finding, not a proposal).
+- Exact books hold for content that does not interact, and one light cone is fixed there.
+- Content that scatters keeps the books only at long wavelength, whatever the reading of records.
+- The one-record-per-site reading costs nothing extra on the books. It does cost contact binding and the content of one sense at a crossing.
+- Two questions are left for the owner's reading:
+  - relabellings in time;
+  - whether a binding between records may be instantaneous. If it may, composites' fall weights may differ from one by about their binding fraction, the expectation for static bindings, which refill o tests.

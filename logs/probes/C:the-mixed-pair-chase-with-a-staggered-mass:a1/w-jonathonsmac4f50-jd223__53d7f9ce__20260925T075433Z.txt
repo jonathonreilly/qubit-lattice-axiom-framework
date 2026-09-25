@@ -1,0 +1,150 @@
+X exact:
+  on a ring of 8, eps anticommutes with S and with C, and commutes with T^2: PASS
+  on the coin-up pair block [[b, m], [m, -b]] the energies are +-sqrt(b^2 + m^2): PASS
+  sin k + 2a cos k = sqrt(1 + 4a^2) sin(k + arctan 2a): PASS
+  so on one axis the scalar hop moves the coin-up rest momentum to k* = -arctan(2a), rescales the speed by sqrt(1 + 4a^2),
+  and leaves the rest energies at +-m.  On one axis it does NOT put the two walkers at different levels; the offset a0 does (a0 +- m).
+
+N ring of 1500, Gamma = 0.002, dt = 1, bodies at sites 500 (A) and 1000 (B), width 30; changes against the free (Gamma = 0) control
+N no scalar term (a = 0, a0 = 0), m = 0.3, mixed (A +, B -):
+    energies A +0.2754, B -0.3302; free control's wave-vector drift A +2.7e-16, B +4.6e-17
+    wave-vector changes at t = 300: A -9.0992e-03, B +9.0992e-03, sum -9.24e-11 = 1.0e-08 of the larger
+    weak-ansatz initial rates x 300: A -8.8764e-03, B +9.3307e-03
+    displacements at t = 100, 200, 300: A -0.4615 -1.8455 -4.1501; B -0.5474 -2.1836 -4.8915
+    mean accelerations A -9.22e-05, B -1.09e-04: same direction (chase)
+    ledger drift -8.7e-13 of -0.02721 (2 s)
+N no scalar term (a = 0, a0 = 0), m = 0.3, both +:
+    energies A +0.2890, B +0.2890; free control's wave-vector drift A +2.7e-16, B +4.5e-17
+    wave-vector changes at t = 300: A +8.4294e-03, B -8.4294e-03, sum -3.16e-16 = 3.7e-14 of the larger
+    weak-ansatz initial rates x 300: A +8.1650e-03, B -8.1650e-03
+    displacements at t = 100, 200, 300: A +0.4442 +1.7788 +4.0107; B -0.4442 -1.7788 -4.0107
+    mean accelerations A +8.91e-05, B -8.91e-05: opposite directions
+    ledger drift -3.1e-13 of 0.58919 (3 s)
+N no scalar term (a = 0, a0 = 0), m = 0.3, both -:
+    energies A -0.3135, B -0.3135; free control's wave-vector drift A -3.7e-17, B +4.6e-17
+    wave-vector changes at t = 300: A +9.6870e-03, B -9.6870e-03, sum -9.71e-17 = 1.0e-14 of the larger
+    weak-ansatz initial rates x 300: A +1.0103e-02, B -1.0103e-02
+    displacements at t = 100, 200, 300: A -0.5621 -2.2381 -4.9986; B +0.5621 +2.2381 +4.9986
+    mean accelerations A -1.11e-04, B +1.11e-04: opposite directions
+    ledger drift -1.5e-12 of -0.61366 (5 s)
+N no scalar term (a = 0, a0 = 0), m = 0.6, mixed (A +, B -):
+    energies A +0.5063, B -0.7340; free control's wave-vector drift A -3.4e-16, B +1.0e-16
+    wave-vector changes at t = 300: A -3.7207e-02, B +3.7218e-02, sum +1.14e-05 = 3.1e-04 of the larger
+    weak-ansatz initial rates x 300: A -3.5374e-02, B +3.9228e-02
+    displacements at t = 100, 200, 300: A -0.8753 -3.4898 -7.8114; B -1.2391 -4.8868 -10.7565
+    mean accelerations A -1.74e-04, B -2.39e-04: same direction (chase)
+    ledger drift -1.7e-10 of -0.11080 (7 s)
+N no scalar term (a = 0, a0 = 0), m = 0.6, both +:
+    energies A +0.5568, B +0.5568; free control's wave-vector drift A -3.4e-16, B -6.5e-17
+    wave-vector changes at t = 300: A +3.1469e-02, B -3.1469e-02, sum +4.09e-16 = 1.3e-14 of the larger
+    weak-ansatz initial rates x 300: A +2.9755e-02, B -2.9755e-02
+    displacements at t = 100, 200, 300: A +0.8016 +3.2022 +7.1889; B -0.8016 -3.2022 -7.1889
+    mean accelerations A +1.60e-04, B -1.60e-04: opposite directions
+    ledger drift -2.6e-11 of 1.15536 (9 s)
+N no scalar term (a = 0, a0 = 0), m = 0.6, both -:
+    energies A -0.6560, B -0.6560; free control's wave-vector drift A +1.9e-16, B +1.0e-16
+    wave-vector changes at t = 300: A +4.1554e-02, B -4.1554e-02, sum -2.84e-16 = 6.8e-15 of the larger
+    weak-ansatz initial rates x 300: A +4.5837e-02, B -4.5837e-02
+    displacements at t = 100, 200, 300: A -1.2872 -5.0752 -11.1625; B +1.2872 +5.0752 +11.1625
+    mean accelerations A -2.48e-04, B +2.48e-04: opposite directions
+    ledger drift -8.8e-11 of -1.25368 (11 s)
+N block 77's scalar hop a = 0.1, m = 0.3, mixed (A +, B -):
+    energies A +0.2754, B -0.3302; free control's wave-vector drift A -2.8e-17, B +1.1e-16
+    wave-vector changes at t = 300: A -9.1005e-03, B +9.1004e-03, sum -2.72e-09 = 3.0e-07 of the larger
+    weak-ansatz initial rates x 300: A -8.8774e-03, B +9.3319e-03
+    displacements at t = 100, 200, 300: A -0.4799 -1.9190 -4.3155; B -0.5692 -2.2701 -5.0843
+    mean accelerations A -9.59e-05, B -1.13e-04: same direction (chase)
+    ledger drift -1.0e-12 of -0.02722 (13 s)
+N block 77's scalar hop a = 0.1, m = 0.3, both +:
+    energies A +0.2890, B +0.2890; free control's wave-vector drift A -2.8e-17, B +8.3e-17
+    wave-vector changes at t = 300: A +8.4339e-03, B -8.4339e-03, sum -5.55e-17 = 6.6e-15 of the larger
+    weak-ansatz initial rates x 300: A +8.1659e-03, B -8.1659e-03
+    displacements at t = 100, 200, 300: A +0.4619 +1.8498 +4.1714; B -0.4619 -1.8498 -4.1714
+    mean accelerations A +9.27e-05, B -9.27e-05: opposite directions
+    ledger drift -3.4e-13 of 0.58923 (15 s)
+N block 77's scalar hop a = 0.1, m = 0.3, both -:
+    energies A -0.3135, B -0.3135; free control's wave-vector drift A +8.3e-17, B +1.1e-16
+    wave-vector changes at t = 300: A +9.6823e-03, B -9.6823e-03, sum +5.55e-17 = 5.7e-15 of the larger
+    weak-ansatz initial rates x 300: A +1.0104e-02, B -1.0104e-02
+    displacements at t = 100, 200, 300: A -0.5844 -2.3265 -5.1946; B +0.5844 +2.3265 +5.1946
+    mean accelerations A -1.15e-04, B +1.15e-04: opposite directions
+    ledger drift -1.7e-12 of -0.61370 (17 s)
+N block 77's scalar hop a = 0.1, m = 0.6, mixed (A +, B -):
+    energies A +0.5063, B -0.7340; free control's wave-vector drift A -1.1e-16, B +0.0e+00
+    wave-vector changes at t = 300: A -3.7210e-02, B +3.7221e-02, sum +1.12e-05 = 3.0e-04 of the larger
+    weak-ansatz initial rates x 300: A -3.5375e-02, B +3.9229e-02
+    displacements at t = 100, 200, 300: A -0.9102 -3.6289 -8.1216; B -1.2884 -5.0789 -11.1724
+    mean accelerations A -1.80e-04, B -2.48e-04: same direction (chase)
+    ledger drift -1.9e-10 of -0.11081 (19 s)
+N block 77's scalar hop a = 0.1, m = 0.6, both +:
+    energies A +0.5568, B +0.5568; free control's wave-vector drift A -1.1e-16, B -1.1e-16
+    wave-vector changes at t = 300: A +3.1491e-02, B -3.1491e-02, sum +2.50e-16 = 7.9e-15 of the larger
+    weak-ansatz initial rates x 300: A +2.9756e-02, B -2.9756e-02
+    displacements at t = 100, 200, 300: A +0.8336 +3.3301 +7.4760; B -0.8336 -3.3301 -7.4760
+    mean accelerations A +1.66e-04, B -1.66e-04: opposite directions
+    ledger drift -2.9e-11 of 1.15537 (21 s)
+N block 77's scalar hop a = 0.1, m = 0.6, both -:
+    energies A -0.6560, B -0.6560; free control's wave-vector drift A +1.4e-16, B +0.0e+00
+    wave-vector changes at t = 300: A +4.1495e-02, B -4.1495e-02, sum +2.50e-16 = 6.0e-15 of the larger
+    weak-ansatz initial rates x 300: A +4.5839e-02, B -4.5839e-02
+    displacements at t = 100, 200, 300: A -1.3384 -5.2743 -11.5917; B +1.3384 +5.2743 +11.5917
+    mean accelerations A -2.58e-04, B +2.58e-04: opposite directions
+    ledger drift -9.7e-11 of -1.25370 (23 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.3, mixed (A +, B -):
+    energies A +0.3635, B -0.2165; free control's wave-vector drift A +1.6e-16, B -9.8e-18
+    wave-vector changes at t = 300: A -7.8716e-03, B +7.8716e-03, sum +2.18e-08 = 2.8e-06 of the larger
+    weak-ansatz initial rates x 300: A -7.6274e-03, B +8.0007e-03
+    displacements at t = 100, 200, 300: A -0.3959 -1.5814 -3.5499; B -0.4659 -1.8612 -4.1809
+    mean accelerations A -7.89e-05, B -9.29e-05: same direction (chase)
+    ledger drift -3.4e-13 of 0.17295 (25 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.3, both +:
+    energies A +0.3804, B +0.3804; free control's wave-vector drift A +1.6e-16, B -1.0e-17
+    wave-vector changes at t = 300: A +1.4703e-02, B -1.4703e-02, sum -1.58e-16 = 1.1e-14 of the larger
+    weak-ansatz initial rates x 300: A +1.4058e-02, B -1.4058e-02
+    displacements at t = 100, 200, 300: A +0.7616 +3.0492 +6.8721; B -0.7616 -3.0492 -6.8721
+    mean accelerations A +1.53e-04, B -1.53e-04: opposite directions
+    ledger drift -4.2e-12 of 0.78035 (27 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.3, both -:
+    energies A -0.2061, B -0.2061; free control's wave-vector drift A +4.7e-17, B -9.8e-18
+    wave-vector changes at t = 300: A +4.2241e-03, B -4.2241e-03, sum -2.25e-16 = 5.3e-14 of the larger
+    weak-ansatz initial rates x 300: A +4.3250e-03, B -4.3250e-03
+    displacements at t = 100, 200, 300: A -0.2397 -0.9572 -2.1475; B +0.2397 +0.9572 +2.1475
+    mean accelerations A -4.77e-05, B +4.77e-05: opposite directions
+    ledger drift -1.1e-13 of -0.40651 (29 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.6, mixed (A +, B -):
+    energies A +0.5869, B -0.5978; free control's wave-vector drift A +4.5e-17, B -9.5e-18
+    wave-vector changes at t = 300: A -3.5145e-02, B +3.5154e-02, sum +8.71e-06 = 2.5e-04 of the larger
+    weak-ansatz initial rates x 300: A -3.3200e-02, B +3.6641e-02
+    displacements at t = 100, 200, 300: A -0.8213 -3.2681 -7.2909; B -1.1478 -4.5580 -10.1378
+    mean accelerations A -1.62e-04, B -2.25e-04: same direction (chase)
+    ledger drift -1.2e-11 of 0.09415 (31 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.6, both +:
+    energies A +0.6421, B +0.6421; free control's wave-vector drift A +4.5e-17, B -3.7e-17
+    wave-vector changes at t = 300: A +4.2031e-02, B -4.2031e-02, sum +2.08e-17 = 5.0e-16 of the larger
+    weak-ansatz initial rates x 300: A +3.9356e-02, B -3.9356e-02
+    displacements at t = 100, 200, 300: A +1.0544 +4.2032 +9.4030; B -1.0544 -4.2032 -9.4030
+    mean accelerations A +2.09e-04, B -2.09e-04: opposite directions
+    ledger drift -9.6e-11 of 1.33980 (33 s)
+N offset a0 = 0.1 (walkers at different levels), m = 0.6, both -:
+    energies A -0.5380, B -0.5380; free control's wave-vector drift A +1.9e-17, B -9.5e-18
+    wave-vector changes at t = 300: A +2.8305e-02, B -2.8305e-02, sum +2.08e-17 = 7.4e-16 of the larger
+    weak-ansatz initial rates x 300: A +3.0437e-02, B -3.0437e-02
+    displacements at t = 100, 200, 300: A -0.8550 -3.3919 -7.5315; B +0.8550 +3.3919 +7.5315
+    mean accelerations A -1.67e-04, B +1.67e-04: opposite directions
+    ledger drift -1.6e-11 of -1.03685 (34 s)
+
+N dt check (a = 0.1, m = 0.6, mixed): dt = 0.5 gives wave-vector changes A -3.720977e-02, B +3.722098e-02 (sum +1.121e-05) against dt = 1: A -3.720980e-02, B +3.722096e-02 (sum +1.116e-05)
+N self-consistency check (a = 0, m = 0.6, mixed): 20 field iterations per solve give sum +1.1365e-05 against 5 iterations: +1.1365e-05
+N coupling check (a = 0, m = 0.6, mixed): Gamma = 0.001 gives changes A -1.8157e-02, B +1.8158e-02, sum +5.514e-07 = 3.04e-05 of the larger (Gamma = 0.002: 3.05e-04)
+N residual against time for the mixed pairs (sum of the two wave-vector changes / the larger, at t = 100, 200, 300):
+    no scalar term (a = 0, a0 = 0), m = 0.3: -1.73e-08 / 3.03e-03  -1.91e-08 / 6.06e-03  -9.24e-11 / 9.10e-03
+    no scalar term (a = 0, a0 = 0), m = 0.6: +4.13e-07 / 1.24e-02  +3.88e-06 / 2.48e-02  +1.14e-05 / 3.72e-02
+    block 77's scalar hop a = 0.1, m = 0.3: -1.74e-08 / 3.03e-03  -1.98e-08 / 6.07e-03  -2.72e-09 / 9.10e-03
+    block 77's scalar hop a = 0.1, m = 0.6: +4.11e-07 / 1.24e-02  +3.85e-06 / 2.48e-02  +1.12e-05 / 3.72e-02
+    offset a0 = 0.1 (walkers at different levels), m = 0.3: -1.68e-08 / 2.62e-03  -1.48e-08 / 5.25e-03  +2.18e-08 / 7.87e-03
+    offset a0 = 0.1 (walkers at different levels), m = 0.6: +2.07e-07 / 1.17e-02  +2.51e-06 / 2.34e-02  +8.71e-06 / 3.52e-02
+
+HIT: the mixed pair's pulls do not cancel to 1e-4 of the larger (no scalar term (a = 0, a0 = 0), m = 0.6): A -3.7207e-02, B +3.7218e-02, sum = 3.1e-04 of the larger
+HIT: the mixed pair's pulls do not cancel to 1e-4 of the larger (block 77's scalar hop a = 0.1, m = 0.6): A -3.7210e-02, B +3.7221e-02, sum = 3.0e-04 of the larger
+HIT: the mixed pair's pulls do not cancel to 1e-4 of the larger (offset a0 = 0.1 (walkers at different levels), m = 0.6): A -3.5145e-02, B +3.5154e-02, sum = 2.5e-04 of the larger
+SUMMARY: block 71's mixed pair with block 77's staggered rest term (ring of 1500, Gamma = 0.002, t = 300): no scalar term m = 0.3: pulls cancel to 1.0e-08 of the larger, displacements A -4.150 B -4.891 (chase); no scalar term m = 0.6: pulls cancel to 3.1e-04 of the larger, displacements A -7.811 B -10.756 (chase); block 77's scalar hop a = 0.1 m = 0.3: pulls cancel to 3.0e-07 of the larger, displacements A -4.315 B -5.084 (chase); block 77's scalar hop a = 0.1 m = 0.6: pulls cancel to 3.0e-04 of the larger, displacements A -8.122 B -11.172 (chase); offset a0 = 0.1 m = 0.3: pulls cancel to 2.8e-06 of the larger, displacements A -3.550 B -4.181 (chase); offset a0 = 0.1 m = 0.6: pulls cancel to 2.5e-04 of the larger, displacements A -7.291 B -10.138 (chase)

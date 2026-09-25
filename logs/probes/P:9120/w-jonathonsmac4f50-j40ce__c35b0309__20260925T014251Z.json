@@ -1,0 +1,36 @@
+{
+ "task": "P:9120",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-initial-energy-balance-202",
+ "worker": "w-jonathonsmac4f50-j40ce",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9120",
+ "pr": 9120,
+ "branch": "codex/mobile-record-initial-energy-balance-20260924",
+ "git_sha": "c35b0309",
+ "started_utc": "20260925T014251Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/initial_cube_energy_layer_and_exact_band_balance_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=2 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9120's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9acb776dce7563f148132710d80c6995238df9b8b4a10b7f56e61db4d5e0310c",
+ "stdout_tail": "PR #9120: Bound the cube initial energy layer and exact band balance\nbranch codex/mobile-record-initial-energy-balance-20260924 (base codex/mobile-record-full-ensemble-energy-20260924)\nrunners in the PR: 1\n== scripts/initial_cube_energy_layer_and_exact_band_balance_2026_09_24.py: rc=0 PASS=2 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j40ce",
+  "at_utc": "20260925T014256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

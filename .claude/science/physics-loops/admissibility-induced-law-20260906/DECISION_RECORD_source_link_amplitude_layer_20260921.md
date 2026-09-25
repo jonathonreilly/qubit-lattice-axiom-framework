@@ -516,3 +516,38 @@ A separate effect does not shrink. For relativistic bodies bound by a static pot
 - #9225: block 124 T1's "two numbers" needs its rotation-invariance premise; there are three without it.
 - #9226: no landed object can be the field that absorbs transverse relabellings in time. This supports the table's "the shift itself" row.
 - #9207, #9211 and #9216 are compute results that contradict task expectation sentences, not landed claims.
+
+## Thirtieth addendum (2026-09-25): nothing local keeps the books under one record per site (block 143)
+
+**The finding.** Block 143 (PR #9229; the supervisor's own derivation, not refereed by another model family) settles, for two records, the fork's third option: a placement or push rule under one record per site.
+- **Exact books need a transparent pair.** The member's books need energy to flow as the records' two-step momentum. Two records' total two-step momentum is `sin K cos 2q`. A collision keeps the total wave vector and the energy but, in the plane and in space, not this sum. So a kept energy current forces the pair to be transparent: its records never scatter (standard scattering theory, named).
+- **A transparent pair removes and binds nothing.** Its perturbation determinant is identically one, under one named genericity assumption (nondegenerate stationary points of the pair's band functions for almost every total wave vector). One record per site removes the pair on one site, a zero of that determinant. So no finite-range interaction and no local placement keeps the books under one record per site in the plane or in space.
+- **Without exclusion**, an interaction that keeps the books binds no pair.
+- **On a line** there is no condition, as block 137 found.
+
+**The owner's fork, updated** (a finding, not a proposal). The exact books that fix one light cone hold only for records that never scatter or bind. The routes left are:
+- books exact only at long wavelength for interacting records (block 137: the defect is third order for slow records);
+- free records that may share a site with opposite possibilities (the parked larger site algebra), which then also do not interact.
+
+The third route, a placement or push rule under one record per site, is closed for two records.
+
+**The third column, updated.**
+
+| Ingredient | Records alone | With the amplitude layer | Still supplied or open | Blocks |
+|---|---|---|---|---|
+| one record per site and the books | the owner's reading | exact books hold for records that never scatter or bind | no local interaction or placement restores them under one record per site in the plane or in space (two records; one named genericity assumption); long-wave books open | 137, 141, 143 |
+
+**The probes.** The probes problem `no-local-interaction-keeps-excluded-records-books` asks this question; its attempts, if refereed, would give block 143 an other-family check.
+
+**What one record per site costs, against two records per site** (a summary of findings, no new results):
+
+| Item | One record per site (the owner's reading) | Two records per site (the parked larger site algebra) | Blocks |
+|---|---|---|---|
+| exact books | lost in the plane and in space; nothing local restores them | kept only for records that do not interact at all: any scattering or binding breaks them (block 143 T3, T5 without exclusion) | 137, 141, 143 |
+| binding | only neighbour binding; pairs have `c² = 1/2` on a line and never weight one along all three axes in space | contact binding; `c = 1` on a line, anisotropic in space | 115, 142 |
+| content of one sense at a crossing | frozen or out of reach | reachable | 125 |
+| the exchange sign | not supplied | not supplied | 78, 128 |
+
+So the choice that keeps exact books is not two records per site as such, but records that never scatter or bind. Under any interacting reading the books hold only for slow records, with a third-order defect.
+
+**What survives.** One light cone, `α = K/4`, is already fixed by the leading-order books (block 134). Slow interacting records keep those, since their defect is third order (block 137). So one light cone survives under the owner's reading. What is lost is the exact closure of the member's constraints at the closing ratio, which needs the exact books.

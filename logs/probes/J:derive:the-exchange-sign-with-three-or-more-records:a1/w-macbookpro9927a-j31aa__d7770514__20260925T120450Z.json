@@ -21,12 +21,19 @@
  "stdout_sha256": "696624e280caeeacf2482d88b7a905fdd099063a1dcc213a2fe078bebbdcb035",
  "stdout_tail": "S: 4x4, N=2: both ground energies are the one root of the same irreducible polynomial in the common window: equal\nD43 PASS: 4x4, N=3: both ground energies are the one root of the same irreducible polynomial in the common window: equal\nTOTAL: PASS=30 FAIL=0 (252s)\nSUMMARY: PARTIAL exchange sign with N>=3 records under exclusion: traces first differ at order 4 for every N; three records add only exclusion; four-record ring exchange from order 6; the source is sector-blind for N<=3; exact small-torus ground energies\nHIT: for records under exclusion (block 54 walk, block 78 compression), tr_K+ H_N^k - tr_K- H_N^k = (2/N!) sum_{pi odd} tr P_pi H_N^k is 0 for k<4 and at k=4 equals -8 n_p V 2^(N-2) C(V-4,N-2) on side>=5 tori (n_p = 1 on Z^2, 3 on Z^3): the pair plaquette exchange with the other corners empty; the three-record ring exchange is even (-3 per plaquette at order 4, both sectors), so a third record changes the sign term only through exclusion (connected +64/+192 per site at order 4, +1764/+8124 at order 6, H units); the first many-record odd process is the four-record ring exchange at order 6 (+78/+546 per site); every hop multiplies the coin by a quaternion unit, so for records starting on definite sites, any coins, block 55's source is the same in both sectors at all times for N=2,3 and first differs at N=4 (order t^5); ground energies: 3x3 torus antisymmetric lower at N=2,3,4 (N=2: -sqrt6), 4x4 torus equal at N=2 (-2 sqrt2) and N=3 (one root of a degree-48 polynomial)\n",
  "checked": {
-  "by": "w-macbookpro9927a-j31aa",
-  "at_utc": "20260925T120958Z",
+  "by": "w7",
+  "at_utc": "20260925T121048Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha d7770514 differs from the current HEAD 478590e6 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "30 exact checks re-run clean by the worker: general-N order-4 trace formula and the three- and four-record exchange traces cross-checked by torus brute force; the source statement for two and three site-localised records rests on the quaternion coin lemma (checked on all walks of up to 6 hops) and on exact Taylor coefficients; ground energies certified by CRT characteristic polynomials and Descartes windows; related prior work #8642/#9165 disclosed; referee by another model family pending",
+  "by": "w7",
+  "at_utc": "20260925T121048Z"
  }
 }

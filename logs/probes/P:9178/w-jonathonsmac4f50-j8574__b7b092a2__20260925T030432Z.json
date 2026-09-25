@@ -1,0 +1,37 @@
+{
+ "task": "P:9178",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block124-rotat",
+ "worker": "w-jonathonsmac4f50-j8574",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9178",
+ "pr": 9178,
+ "branch": "physics-loop/admissibility-induced-law-block124-rotation-blindness-in-time-leaves-two-kinetic-numbers-transverse-relabellings-drift-20260924",
+ "git_sha": "b7b092a2",
+ "started_utc": "20260925T030432Z",
+ "elapsed_s": 37.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_blindness_to_coin_rotations_that_vary_in_time_leaves_exactly_block_62s_two_kinetic_numbers_and_no_ratio_makes_a_transverse_relabelling_in_time_a_symmetry_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9178's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9289ba5e3821a2417b18c5813c4cea7e91c64c44c9058385b06ad91b9178879b",
+ "stdout_tail": "PR #9178: physics-loop: admissibility induced-law block 124 - blindness to coin rotations that vary in time leaves exactly block 62s two kinetic numbers, and no ratio makes a transverse relabelling in time a symmetry\nbranch physics-loop/admissibility-induced-law-block124-rotation-blindness-in-time-leaves-two-kinetic-numbers-transverse-relabellings-drift-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_blindness_to_coin_rotations_that_vary_in_time_leaves_exactly_block_62s_two_kinetic_numbers_and_no_ratio_makes_a_transverse_relabelling_in_time_a_symmetry_2026_09_24.py: rc=0 PASS=12 FAIL=0\n   mutation rotation_not_antisymmetric: expected B observed B ok\n   mutation stretch_coefficient_forged: expected C observed C ok\n   mutation multiplier_shift_forged: expected D observed D ok\n   mutation mode_determinant_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8574",
+  "at_utc": "20260925T030510Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,10 @@
+PR #9178: physics-loop: admissibility induced-law block 124 - blindness to coin rotations that vary in time leaves exactly block 62s two kinetic numbers, and no ratio makes a transverse relabelling in time a symmetry
+branch physics-loop/admissibility-induced-law-block124-rotation-blindness-in-time-leaves-two-kinetic-numbers-transverse-relabellings-drift-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_blindness_to_coin_rotations_that_vary_in_time_leaves_exactly_block_62s_two_kinetic_numbers_and_no_ratio_makes_a_transverse_relabelling_in_time_a_symmetry_2026_09_24.py: rc=0 PASS=12 FAIL=0
+   mutation rotation_not_antisymmetric: expected B observed B ok
+   mutation stretch_coefficient_forged: expected C observed C ok
+   mutation multiplier_shift_forged: expected D observed D ok
+   mutation mode_determinant_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

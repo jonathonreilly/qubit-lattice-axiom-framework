@@ -1,0 +1,66 @@
+[
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-conditional-dynamics:a1",
+  "problem": "deferred-20260925-conditional-dynamics",
+  "title": "Conditional dynamics and occurrence suppliers",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-18.json in that directory. Start with PR9041 and its corrected isolated-site law. State a finite autonomous preparation or occurrence question not already supplied by externally controlled rotations or a fixed-record boundary. Give one explicit countermodel or exact construction under declared assumptions; do not derive a clock or Born law from a supplied Hamiltonian. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-conditional-dynamics/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-band-gauge:a1",
+  "problem": "deferred-20260925-band-gauge",
+  "title": "Band and gauge global obligations",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-19.json in that directory. Start with PR9054: preserve the corrected explicit periodic cycle witness and distinguish the N=16 periodic lift from the covering tree. Pick one remaining quantitative global minimization or spectral enclosure claim from the frozen original and prove a bounded instance with rigorous arithmetic, or identify an explicit counterexample. Do not relabel a sampled band gap as global. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-species, deferred-20260924-stability, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-band-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-integer-gauge:a1",
+  "problem": "deferred-20260925-integer-gauge",
+  "title": "Unrestricted integer gauge support",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-20.json in that directory. Start with PR9077 or PR9095: determine one unrestricted integer-support lower bound beyond the previous coefficient-box MILP search. State coefficient domain and anchor normalization; preserve even-N cube and odd-N freeze distinctions and corrected effective-Hamiltonian factors. One exact dual certificate or counterexample is sufficient. Other phase and compact-oscillator obligations remain ranked open. Before work inspect existing attempts, referee reports and active claims for the-exchange-sign-from-the-coin, deferred-20260924-species, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-integer-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+ },
+ {
+  "type": "judgment",
+  "lane": "deferred-science-recovery",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260925-nonlinear-weights:a1",
+  "problem": "deferred-20260925-nonlinear-weights",
+  "title": "Nonlinear weight classification beyond affine candidates",
+  "what": "OWNER-REQUESTED deferred-science recovery, one bounded first pass. Read probes/work/deferred-science-20260925/README.md and unit-21.json in that directory. Start with PR9083: the corrected self-weighted Schmidt test classifies only already-affine covariant f_lambda. Formulate the full nonlinear functional constraint with normalized weights, endpoint support and composition assumptions explicit, then prove one nontrivial necessary condition or supply a counterexample. Do not assume ensemble affinity in order to derive it. The controlled randomizer and tensor-positive channel arguments remain conditional. Before work inspect existing attempts, referee reports and active claims for deferred-20260924-formation, the-exchange-sign-from-the-coin, and search current main/open source for the exact residual; reuse already settled results and do not duplicate an active claim. Fetch current origin/main and record its SHA: the probes checkout may be stale. Verify bundled original SHA256 and compare against the accepted paths and review findings. Work ONE residual with domain, quantifiers, premises and a success witness. Keep all review demotions; frozen originals are exploratory history, not authority. Deliver probes/work/derive/deferred-20260925-nonlinear-weights/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Mark proof steps PROVED/CHECKED/ASSUMED, independently test finite claims, and state the first failing step and exact next obligation. RECOVERY_STATUS records inspected hashes, already-covered/active-elsewhere/recovered/open dispositions and ranked remaining obligations. Print SUMMARY: PARTIAL or SUMMARY: ROUTE FAILS AT with concrete evidence; HIT only for a new demonstrated mathematical result or defect, never metadata recovery. Commit checker before run_probe.py, validate its log, and finish through claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, change budgets, edit scientific/audit authority, or merge science. A first pass is not exhaustion of this bundle."
+ }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "pr": 9066,
+    "head": "a3f5b3befaaa3ac264377c45e9f0938c587fe468",
+    "fetch_ref": "refs/pull/9066/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Total-generator freeze, matched charge spacings, odd-torus correction and fourth-order scope.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_AN_EXACT_GAUSS_LAW_FREEZES_THE_LINK_FIELD_UNDER_EVERY_TWO_SITE_GENERATOR_THE_FIELD_MOVES_BY_RINGS_AND_HOPS_INSIDE_ONE_NEIGHBOURHOOD_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "600c40ffb2232ef7082487ca153a64075131842cfddaae25c80021264b6ba816",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/600c40ffb2232ef7082487ca153a64075131842cfddaae25c80021264b6ba816",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_AN_EXACT_GAUSS_LAW_FREEZES_THE_LINK_FIELD_UNDER_EVERY_TWO_SITE_GENERATOR_THE_FIELD_MOVES_BY_RINGS_AND_HOPS_INSIDE_ONE_NEIGHBOURHOOD_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "3db85490644da758885b9b7342ef656a2038ce8a9b9f386d265a41840c00d346",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.txt",
+        "sha256": "2fb3e1d77a28499ab882fd56f01b461b4e78ea291f506ded19bf2720e47fea02",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2fb3e1d77a28499ab882fd56f01b461b4e78ea291f506ded19bf2720e47fea02",
+        "accepted_path": "logs/runner-cache/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.txt",
+        "accepted_sha256": "0a539bd0ae81cf47d7706a4eba3cf53b2fdda0a2495df6bfb69fe21988c5633f",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.py",
+        "sha256": "896277e36ded82f7ac74da4ac8c6b8d567ed5e2a694a884d3e2fce082229619a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/896277e36ded82f7ac74da4ac8c6b8d567ed5e2a694a884d3e2fce082229619a",
+        "accepted_path": "scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.py",
+        "accepted_sha256": "08c996597b987924bd33c251ab4e04394472f40894b87c9815a6918f1e085e7a",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9069,
+    "head": "20bea6fc2965f7b3981e83c0d13e2d1dd0b942c2",
+    "fetch_ref": "refs/pull/9069/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Projected T-junction channel; basis conjugation distinguished from vertex gauge and physical flux.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_CHARGES_ARE_GAUSS_DEFECTS_NO_QUBIT_CARRIES_A_COVARIANT_CHARGE_UNDER_FULL_SOLDERING_DEFECTS_ARE_BOSONS_AND_RECORD_PHASES_ARE_PURE_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "5a29904d512e3fbc3831eb89bd5c187be6c31925384d2bde0435b948a44acdb2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5a29904d512e3fbc3831eb89bd5c187be6c31925384d2bde0435b948a44acdb2",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_CHARGES_ARE_GAUSS_DEFECTS_NO_QUBIT_CARRIES_A_COVARIANT_CHARGE_UNDER_FULL_SOLDERING_DEFECTS_ARE_BOSONS_AND_RECORD_PHASES_ARE_PURE_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "278a453ef60c58c7a063d0ba2fbf5ce52e694934d790377936bab98b2fafaed9",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_charges_are_gauss_defects_2026_09_24.txt",
+        "sha256": "574241ee2393f99ce06a890ae916e07083f6f414752f9e303a8cd521a794a2a5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/574241ee2393f99ce06a890ae916e07083f6f414752f9e303a8cd521a794a2a5",
+        "accepted_path": "logs/runner-cache/dynamics_clause_charges_are_gauss_defects_2026_09_24.txt",
+        "accepted_sha256": "6e504ac863b717239826ab9ca3f5ead021184e3828bdd6465fd0b2ae2d5a7864",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_charges_are_gauss_defects_2026_09_24.py",
+        "sha256": "ed9c4acb151d848b3a15302d25f5fd38a819bc742230fa16ed48afac14f24188",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ed9c4acb151d848b3a15302d25f5fd38a819bc742230fa16ed48afac14f24188",
+        "accepted_path": "scripts/dynamics_clause_charges_are_gauss_defects_2026_09_24.py",
+        "accepted_sha256": "cb0bdc2075162d1fc3fc5da4fea156aa22ace856bc2c951bf24d9490bf91e31c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9072,
+    "head": "44851ea327976031e29defbd0c8dcc6f73dd374b",
+    "fetch_ref": "refs/pull/9072/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Positive RK coupling, coherent-state counterexample, exact finite counts and local competition bound.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_THE_COVARIANT_PLAQUETTE_CLAUSE_ANNIHILATES_UNIFORM_ICE_EXACTLY_AT_THE_ROKHSAR_KIVELSON_POINT_AND_UNRECORDED_PLAQUETTES_CAN_POLARIZE_THE_ICE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "018623300221352c9485f36f28885e82b0e5115edf5a7fa37097baacba09c4de",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/018623300221352c9485f36f28885e82b0e5115edf5a7fa37097baacba09c4de",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_THE_COVARIANT_PLAQUETTE_CLAUSE_ANNIHILATES_UNIFORM_ICE_EXACTLY_AT_THE_ROKHSAR_KIVELSON_POINT_AND_UNRECORDED_PLAQUETTES_CAN_POLARIZE_THE_ICE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "9f15180e846a43d30ddeacc77a6afc2e5b01b10041e10ab944cdac6bcb844ceb",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.txt",
+        "sha256": "58c478110c4989c7a58160a57ffd8361355c36c2d25c99f6e81691e68a8e4298",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/58c478110c4989c7a58160a57ffd8361355c36c2d25c99f6e81691e68a8e4298",
+        "accepted_path": "logs/runner-cache/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.txt",
+        "accepted_sha256": "44ce3f9efd70a168ba54ed3c633492b65e70956236c18fdb3450c9dc544dc4bb",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py",
+        "sha256": "18bcf431f020bef605d3626ecb47d6c6d48a8d1ae6fb704aef64aee78d0e4428",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/18bcf431f020bef605d3626ecb47d6c6d48a8d1ae6fb704aef64aee78d0e4428",
+        "accepted_path": "scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py",
+        "accepted_sha256": "fda4e20f475688f9736368c8934baf3c1a16eba97f56e7c50d9f009cf784a477",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9077,
+    "head": "bf3663ce79efd91384dd41b617f9403814a7c623",
+    "fetch_ref": "refs/pull/9077/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Exact Smith factors; explicit planar witnesses; restricted MILP not global minimum.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_THE_LANDED_TENSOR_CONSTRAINTS_FREEZE_UNDER_TWO_SITE_GENERATORS_AND_NO_SINGLE_NEIGHBOURHOOD_MOVES_THEM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c023c3cf8d77cf5a2ee5d9d04889d367ccaee0a2d5ff8b55deab2b6980c507a9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c023c3cf8d77cf5a2ee5d9d04889d367ccaee0a2d5ff8b55deab2b6980c507a9",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_THE_LANDED_TENSOR_CONSTRAINTS_FREEZE_UNDER_TWO_SITE_GENERATORS_AND_NO_SINGLE_NEIGHBOURHOOD_MOVES_THEM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "dd1436b1d66d446e90acff63968920927b59ccba09b3b39536533ea96133c587",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.txt",
+        "sha256": "32807457001a82595dca453495dbf3cba303c1341dced961df1eb0c38bd10a54",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/32807457001a82595dca453495dbf3cba303c1341dced961df1eb0c38bd10a54",
+        "accepted_path": "logs/runner-cache/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.txt",
+        "accepted_sha256": "a9e4c2e5eff46fc0389c1196890d484a2f1c71ae37969a6277c7194f9ac0c483",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.py",
+        "sha256": "cf82be5096c148d5c488c519c3d6740ee97ae7862a31625df085af891efac611",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/cf82be5096c148d5c488c519c3d6740ee97ae7862a31625df085af891efac611",
+        "accepted_path": "scripts/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.py",
+        "accepted_sha256": "67f0b705008eb684df50e951db9c3ec387f4ce99e009b9dfb1600cd72d369403",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9081,
+    "head": "772e7fba3402ec3ab3562d23abb9c03be10d1965",
+    "fetch_ref": "refs/pull/9081/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Analytic matrix-unit attainment, centre obstruction and independent-versus-joint dimension scope.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_NON_ABELIAN_GAUGE_LINKS_NEED_SEVERAL_QUBITS_ONE_QUBIT_CARRIES_NO_SU_N_LINK_SU2_NEEDS_TWO_SU3_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "73c9be64590d567dada143e158ccd00be63d3e3396e489347e6c9dc684514705",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/73c9be64590d567dada143e158ccd00be63d3e3396e489347e6c9dc684514705",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_NON_ABELIAN_GAUGE_LINKS_NEED_SEVERAL_QUBITS_ONE_QUBIT_CARRIES_NO_SU_N_LINK_SU2_NEEDS_TWO_SU3_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "d8af7c8a1c4c0954a655ae61aa25d9a4b3ac69308c558775b31243b053fbc712",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.txt",
+        "sha256": "fc7fe83fc766c029adf1b2a42bc0a9d3851d6069e73e285a5ad144fc444c8748",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/fc7fe83fc766c029adf1b2a42bc0a9d3851d6069e73e285a5ad144fc444c8748",
+        "accepted_path": "logs/runner-cache/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.txt",
+        "accepted_sha256": "faf47600ddd4854d99fd27d6a1d2bda5fbb96f17b7c8bc0dcf926ae20a14c38e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.py",
+        "sha256": "b4132798fc279764a4e64ef0add14e5da8ab76f19c979f5da23b6c4ef5382e7b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b4132798fc279764a4e64ef0add14e5da8ab76f19c979f5da23b6c4ef5382e7b",
+        "accepted_path": "scripts/dynamics_clause_non_abelian_links_need_several_qubits_2026_09_24.py",
+        "accepted_sha256": "3a2bd89cf226bd3051e46af4498f56c19ded9943e6a9effff4af378e022af56e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9095,
+    "head": "d3ac4167f983b583cd38dcea3212e4bb8ca98704",
+    "fetch_ref": "refs/pull/9095/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Named exact path coefficient; bounded search/sample claims; cosine Hessian factor two.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_A_SOFT_VECTOR_CONSTRAINT_AND_SLOT_FIELDS_GENERATE_THE_LANDED_TENSOR_FIELD_S_CURVATURE_MOVES_AT_TWELFTH_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "af8ad01275f6196b91a52b44cc5545bad7b0bab5b9b0fdd60923f961f0162e4c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/af8ad01275f6196b91a52b44cc5545bad7b0bab5b9b0fdd60923f961f0162e4c",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_A_SOFT_VECTOR_CONSTRAINT_AND_SLOT_FIELDS_GENERATE_THE_LANDED_TENSOR_FIELD_S_CURVATURE_MOVES_AT_TWELFTH_ORDER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "c6ddba698ca232cd6b491dc08da86e520c109d28137ecfbc22e105e9f71b5122",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.txt",
+        "sha256": "59859993af33087e9f262a6a86af803932c4cdd2f67f915921c8f735c74cbbc0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/59859993af33087e9f262a6a86af803932c4cdd2f67f915921c8f735c74cbbc0",
+        "accepted_path": "logs/runner-cache/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.txt",
+        "accepted_sha256": "1f78ea793ffd88c5981d78246e06c1fa6cb6b9515ab84497d4d767a22ac53a3d",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py",
+        "sha256": "187464f6213f9770712a32588cdda94d81a6d7573486e6b02a86e9c4cc7c4835",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/187464f6213f9770712a32588cdda94d81a6d7573486e6b02a86e9c4cc7c4835",
+        "accepted_path": "scripts/dynamics_clause_soft_tensor_constraint_generates_curvature_moves_2026_09_24.py",
+        "accepted_sha256": "226c2a40fadab9e939190d29e8d4ea9614689ae7c0557ab0d85954e4afe0cf82",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9145,
+    "head": "43cbf9f857e20b654f9a1d0f94a99bc360594271",
+    "fetch_ref": "refs/pull/9145/head",
+    "landing": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+    "findings": "Exact nonzero-momentum quotient proof, conjugation repair, state-dependent truncation errors.",
+    "files": [
+      {
+        "original_path": "docs/TENSOR_LINEAR_DISPERSION_NEEDS_OSCILLATOR_SLOTS_BOTH_CANONICAL_VARIABLES_MUST_BE_NON_COMPACT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "9eae62a9786b4210cc8ff39bf987ac2085a00c476a6593123cb73c5222d72e97",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9eae62a9786b4210cc8ff39bf987ac2085a00c476a6593123cb73c5222d72e97",
+        "accepted_path": "docs/TENSOR_LINEAR_DISPERSION_NEEDS_OSCILLATOR_SLOTS_BOTH_CANONICAL_VARIABLES_MUST_BE_NON_COMPACT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "cff48943bbb1655d96092ea02e59ef49bf71f05127ef1db848f1263170c1d769",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.txt",
+        "sha256": "2fa2bc37c013f3ecccfeb8ecad868a28cc32077b9effe7214dad904cd0979274",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/2fa2bc37c013f3ecccfeb8ecad868a28cc32077b9effe7214dad904cd0979274",
+        "accepted_path": "logs/runner-cache/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.txt",
+        "accepted_sha256": "40102feb8710806dc3a58deca9c763b79d02f6ea093c8e2afb031d2fc3a3f196",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py",
+        "sha256": "79883c279f349545ff924afe9f8cc2a9adad7f4eee47624be0bf00f7122dc881",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/79883c279f349545ff924afe9f8cc2a9adad7f4eee47624be0bf00f7122dc881",
+        "accepted_path": "scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py",
+        "accepted_sha256": "a778ff1d6c4562bfeaed75a9b908e6c84f0c3d8f60f577c2156ae74860099789",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  }
+]

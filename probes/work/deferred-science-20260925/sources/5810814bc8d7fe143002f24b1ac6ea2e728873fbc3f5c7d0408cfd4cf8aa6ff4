@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.py
+runner_sha256: cb770839e5da0e424e1ef63b4615f36c56beb5ffab0817ba08ff0092e00f1c64
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.31
+status: ok
+----- stdout -----
+[PASS] joint laws are product projectors: each E_qr lies on the line where the ranges of P_q (x) I and I (x) P_r meet, and the marginals fix c = 1 :: range intersection dimensions [1, 1, 1, 1]; marginal system rank 4, residual 1e-15, unique solution c = [1.0, 1.0, 1.0, 1.0]
+[PASS] sequential consistency gives compression on the partner: the partner's state after record q is the Lueders conditional state :: 200 random pairs (ranks 1-4); largest deviation 1.1e-15
+[PASS] a reset update fails: leaving the partner unchanged gives p_q p_r, which misses the joint law on a singlet by |a.b|/4 :: largest deviation from |a.b|/4 over 100 random axis pairs 2e-16; gap at parallel axes 0.250
+[PASS] the whole rest: two-qubit tomography of the rest after a record reproduces its Lueders compression :: 100 random three-qubit states; largest deviation 6.4e-15
+[PASS] two-possibility menus are antipodal: e1 P1 + e2 P2 = I is solvable only for antipodal possibilities, with e1 = e2 = 1 :: angle between possibilities (deg), completeness residual, weights: 180.0: 0.000 [1.0, 1.0]; 162.0: 0.219 [0.976113, 0.976113]; 90.0: 0.816 [0.666667, 0.666667]; 36.0: 0.975 [0.52507, 0.52507]
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,167 @@
+[
+  {
+    "pr": 9048,
+    "head": "cb641d8f3eedb7d328f92b43865770d3380a4a2f",
+    "fetch_ref": "refs/pull/9048/head",
+    "landing": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+    "findings": "Strict valence and zero-field hypotheses; finite gauge and positive-coupling scope explicit.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_CARVE_KITAEV_MODELS_AT_THE_COMPASS_POINT_ZERO_FIELD_CARVINGS_ARE_CUBES_AND_TUBES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "a02ab37be55ff824b4dfaafe5f643abc47db4b134ba054bfa5f61f8e3d8aca40",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/a02ab37be55ff824b4dfaafe5f643abc47db4b134ba054bfa5f61f8e3d8aca40",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORDS_CARVE_KITAEV_MODELS_AT_THE_COMPASS_POINT_ZERO_FIELD_CARVINGS_ARE_CUBES_AND_TUBES_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "dea0521e4512186fa2f6d0ff217e11ca0f2c072c18e8122a9ba02826a3f28e80",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.txt",
+        "sha256": "38dece8cbc82595e078daa1062d265320c0a34e6a386817a12a260a1e072b63f",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/38dece8cbc82595e078daa1062d265320c0a34e6a386817a12a260a1e072b63f",
+        "accepted_path": "logs/runner-cache/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.txt",
+        "accepted_sha256": "56aaab8e1a983e605f1c3672018b094c59e67e8ebbbe0ca6eef0a91377aeb192",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py",
+        "sha256": "773a74b2c6554627430bd37b1926be6b2e77ea3505a6afd4a39245eee6aff162",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/773a74b2c6554627430bd37b1926be6b2e77ea3505a6afd4a39245eee6aff162",
+        "accepted_path": "scripts/dynamics_clause_records_carve_kitaev_models_at_the_compass_point_2026_09_24.py",
+        "accepted_sha256": "242b2ca60c55f9fa988dde9fc32b03155732dae162789bce5e546469e52e9544",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9054,
+    "head": "8fcae64c5b0f50da7377738f2202fd204c0bf706",
+    "fetch_ref": "refs/pull/9054/head",
+    "landing": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+    "findings": "Tree and pure-gauge inference refuted by explicit periodic-lift cycle; sampled gap, flux and projection scopes corrected.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_CARVE_EXACTLY_SOLVABLE_THREE_DIMENSIONAL_KITAEV_NETWORKS_GAPPED_MAJORANA_FERMIONS_IN_A_STATIC_Z2_GAUGE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "0a05e8b7b318a8819159ceb73b0ddacfbece3bd3bbe537a26f82ed6ee60e6b53",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0a05e8b7b318a8819159ceb73b0ddacfbece3bd3bbe537a26f82ed6ee60e6b53",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORDS_CARVE_EXACTLY_SOLVABLE_THREE_DIMENSIONAL_KITAEV_NETWORKS_GAPPED_MAJORANA_FERMIONS_IN_A_STATIC_Z2_GAUGE_FIELD_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "36a45000490e3620e2a8c399b90713d5932a9f6c8d90e64a03f8708fda464f88",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.txt",
+        "sha256": "7433897c96231ee9236742140e75b5a3018f01d79ad9ab01e1a2495dcd339d50",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7433897c96231ee9236742140e75b5a3018f01d79ad9ab01e1a2495dcd339d50",
+        "accepted_path": "logs/runner-cache/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.txt",
+        "accepted_sha256": "088389fa0e0f160c18530854e077bf6ba4bd962fb754ca9345ec77cd09b691a0",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py",
+        "sha256": "23f5370206de2a7cdfa9af7a8fe4fd3251ab5ecbfe042dc74d3f1bc171e2989b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/23f5370206de2a7cdfa9af7a8fe4fd3251ab5ecbfe042dc74d3f1bc171e2989b",
+        "accepted_path": "scripts/dynamics_clause_records_carve_exactly_solvable_three_dimensional_kitaev_networks_2026_09_24.py",
+        "accepted_sha256": "19134c77ca8c29998ebc792d36d65c9ba98fd5e3c6b437949ec4ebacf253718c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9088,
+    "head": "f8430b0f95dec01f974c18f1ea44a81fd2da7ce9",
+    "fetch_ref": "refs/pull/9088/head",
+    "landing": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+    "findings": "Finite covariance and unrecorded cube-support obstruction bounded; image dimension controls strengthened.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_TIME_REVERSAL_ODD_STAR_TERMS_COVARIANCE_ALLOWS_THEM_AND_ON_THE_CUBE_CARVING_NONE_KEEPS_THE_MAJORANAS_FREE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "b3766740edd951664bb04ab93097bdaf70875ae56b1b664c0c1947b4aa245531",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b3766740edd951664bb04ab93097bdaf70875ae56b1b664c0c1947b4aa245531",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_TIME_REVERSAL_ODD_STAR_TERMS_COVARIANCE_ALLOWS_THEM_AND_ON_THE_CUBE_CARVING_NONE_KEEPS_THE_MAJORANAS_FREE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "6334039741a48335772a45d0436b04bf9de2c8a16ba14d644372f0b3127d32d4",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_time_reversal_odd_star_terms_and_free_majoranas_on_the_cube_2026_09_24.txt",
+        "sha256": "84c9514ed14663028f83497f693784d0ace9297a2decebde30877d8449698955",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/84c9514ed14663028f83497f693784d0ace9297a2decebde30877d8449698955",
+        "accepted_path": "logs/runner-cache/dynamics_clause_time_reversal_odd_star_terms_and_free_majoranas_on_the_cube_2026_09_24.txt",
+        "accepted_sha256": "122e84d2b8e323554fbc2a6b6bd7d2797fa76d9f2623375b97a8b48b0d6afa1b",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_time_reversal_odd_star_terms_and_free_majoranas_on_the_cube_2026_09_24.py",
+        "sha256": "f03b95c4afc3361776b44486e2f4ea21ccdeaa68f573bf4adf7342ba7605c880",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/f03b95c4afc3361776b44486e2f4ea21ccdeaa68f573bf4adf7342ba7605c880",
+        "accepted_path": "scripts/dynamics_clause_time_reversal_odd_star_terms_and_free_majoranas_on_the_cube_2026_09_24.py",
+        "accepted_sha256": "8a5500eaabc5e7a3374b2e312ac0dc3df97666dfc2f4e773eeba962d37a3db92",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9097,
+    "head": "48dd41edef55a29d5bfcc446419bc97e593294d4",
+    "fetch_ref": "refs/pull/9097/head",
+    "landing": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+    "findings": "Net-field cancellation not ruled out by componentwise obstruction; actual free-image ranks and nonsingular FHS links.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORD_FIELDS_KEEP_THE_CARVED_MAJORANAS_SUBLATTICE_SYMMETRIC_AND_A_GAPLESS_START_PLUS_A_TIME_REVERSAL_ODD_TERM_GIVES_A_CHERN_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "182673529ea71031a9256a2146cbd37f130a619f87839f4d5527b5db09210a14",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/182673529ea71031a9256a2146cbd37f130a619f87839f4d5527b5db09210a14",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORD_FIELDS_KEEP_THE_CARVED_MAJORANAS_SUBLATTICE_SYMMETRIC_AND_A_GAPLESS_START_PLUS_A_TIME_REVERSAL_ODD_TERM_GIVES_A_CHERN_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "88d9844f1fed7b7060e71b8e79572981177db8c489b7274a13fba5a72305b82c",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.txt",
+        "sha256": "578882f30ef7fc867d7a95a7d52cd298a811fa6dddd28cd24b4e7d16d46aa410",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/578882f30ef7fc867d7a95a7d52cd298a811fa6dddd28cd24b4e7d16d46aa410",
+        "accepted_path": "logs/runner-cache/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.txt",
+        "accepted_sha256": "b3c1acd2252df550ce0ee0c00c932efb0daf54ca8b52b5083c8f0423adfae50b",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py",
+        "sha256": "3dd639d0a800fa8de077d0ae1304be13a4523d73d1d127da60e89b2f9138dfa4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3dd639d0a800fa8de077d0ae1304be13a4523d73d1d127da60e89b2f9138dfa4",
+        "accepted_path": "scripts/dynamics_clause_record_fields_keep_carved_majoranas_sublattice_symmetric_2026_09_24.py",
+        "accepted_sha256": "305d300227a2ba4a35922eaaf99fc30b69782cda8379f3c575f008026b42afee",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9112,
+    "head": "b113cf8d0fa87f4a2fffdcc53e9fa639a0ca4a60",
+    "fetch_ref": "refs/pull/9112/head",
+    "landing": "48a52f2f19056a134e9f01d8ac2896bc287cd00c",
+    "findings": "Offset-preserving selected-term cancellation, rational reconstruction, nonsingular FHS links, finite phase and node diagnostics; physical interpretation deferred.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_A_COVARIANT_TIME_REVERSAL_ODD_STAR_TERM_GIVES_A_RECORD_CARVED_MAJORANA_NETWORK_A_CHERN_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "33d35189656a8562d3f21434d20c3867de0c675001a2c453d3bea1132c224c22",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/33d35189656a8562d3f21434d20c3867de0c675001a2c453d3bea1132c224c22",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_A_COVARIANT_TIME_REVERSAL_ODD_STAR_TERM_GIVES_A_RECORD_CARVED_MAJORANA_NETWORK_A_CHERN_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "e3f2da62f9c353f3d10af28ee30ce8201e519f4205e01fcdefc581102eb6e643",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.txt",
+        "sha256": "c0f85109b2a7c4b7e29863fab9ba9ca35a74340d894ac20fd221bafa6bf37275",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c0f85109b2a7c4b7e29863fab9ba9ca35a74340d894ac20fd221bafa6bf37275",
+        "accepted_path": "logs/runner-cache/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.txt",
+        "accepted_sha256": "a29f8e815ef9c83861f0b3bb68a8a7256170af4aad157245cf4cfa96f1801023",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py",
+        "sha256": "53f66220095e6add62afb3f305d5aa70b5c424092f22c4c2cdb4679ebb9c576c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/53f66220095e6add62afb3f305d5aa70b5c424092f22c4c2cdb4679ebb9c576c",
+        "accepted_path": "scripts/dynamics_clause_covariant_star_term_gives_carved_majoranas_a_chern_number_2026_09_24.py",
+        "accepted_sha256": "295ff52c2954dfd23740a0272694b058b28c6167404d817f6102a3b48c50cd31",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical exploratory broader phase, gauge and physical interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  }
+]

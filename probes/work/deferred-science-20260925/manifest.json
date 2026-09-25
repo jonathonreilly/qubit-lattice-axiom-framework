@@ -1,0 +1,65 @@
+{
+  "units": [
+    {
+      "unit": 18,
+      "prs": [
+        9142,
+        9052,
+        9050,
+        9046,
+        9043,
+        9041,
+        9040
+      ],
+      "file": "unit-18.json",
+      "sha256": "66f1a96ac71831904add6a2424ac78f2d4e611171494699e7a1a4b1845e85560"
+    },
+    {
+      "unit": 19,
+      "prs": [
+        9048,
+        9054,
+        9088,
+        9097,
+        9112
+      ],
+      "file": "unit-19.json",
+      "sha256": "f965faa0961842bdb84728d315f7b065ba17f12fb312ac2b81f54962db8234c2"
+    },
+    {
+      "unit": 20,
+      "prs": [
+        9066,
+        9069,
+        9072,
+        9077,
+        9081,
+        9095,
+        9145
+      ],
+      "file": "unit-20.json",
+      "sha256": "028fd2cdb03c52b48421524e1e42dd9a6cee2465f0bf5d7848d44d809fb721ca"
+    },
+    {
+      "unit": 21,
+      "prs": [
+        9083,
+        9084,
+        9085,
+        9086,
+        9140
+      ],
+      "file": "unit-21.json",
+      "sha256": "89cdc7ba80c1e30833f25461d7a46587ac85af883bd65e089b9a59fce8cb2d32"
+    }
+  ],
+  "task_ids": [
+    "J:derive:deferred-20260925-conditional-dynamics:a1",
+    "J:derive:deferred-20260925-band-gauge:a1",
+    "J:derive:deferred-20260925-integer-gauge:a1",
+    "J:derive:deferred-20260925-nonlinear-weights:a1"
+  ],
+  "science_authority": "current origin/main, not frozen originals",
+  "main_at_intake": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+  "planning_read": "ai/execution current scorecard/campaign/backlog/inventory; historical September11 cutoff superseded for this task by current owner backlog-drain direction"
+}

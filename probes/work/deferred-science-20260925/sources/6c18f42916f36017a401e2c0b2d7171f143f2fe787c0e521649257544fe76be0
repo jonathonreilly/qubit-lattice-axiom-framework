@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_bell_records_only_formation_versus_dynamics_clause_2026_09_24.py
+runner_sha256: ae6f284ed4f151e26a33b852215d7a0183973a6be534fa417e980685292396cd
+input_fingerprint_sha256: 0656376eb61a297e5f07031ff6c3a478bcf41cbf5cd2798d3c489ecb9e975798
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 3.79
+status: ok
+----- stdout -----
+A. deterministic response pairs
+[PASS] the 16 deterministic response pairs have |CHSH| <= 2, attained :: values [2]
+B. records-only formation windows
+[PASS] records-only formation: the chain-rule joint equals the mixture over the common ancestry alone :: 9000 random kernels on three templates; max deviation 7.8e-16
+[PASS] records-only formation: |CHSH| never exceeds 2 :: largest value 1.940799
+C. scope: a formation path across the wings
+[PASS] a record carrying the setting across the wings gives CHSH 4 exactly :: E = [['1', '1'], ['1', '-1']]
+D. scope: the static reading conditioned on its end records
+[PASS] a five-site chain law conditioned on its end records exceeds 2 sqrt 2 (exact rational) :: CHSH = 2981272129803/1020712070201 = 2.920777 > 2.828427
+E. the dynamics clause on an isolated pair
+[PASS] antiferromagnetic Heisenberg pair: unique ground state is the singlet, E(a, b) = -a.b :: E = -cos(theta_a - theta_b)
+[PASS] standard antipodal menus give CHSH = 2 sqrt 2 exactly :: CHSH = 2*sqrt(2)
+[PASS] no state and no antipodal menus exceed 2 sqrt 2 (Tsirelson) :: 20000 random draws: largest 2.543845; B^2 identity max 3.6e-15
+F. sequential formation with records as fields
+[PASS] A first by the trace rule, then B by its isolated ground-state law, reproduces the singlet odds :: 200 random menu pairs; max deviation 7.8e-16
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

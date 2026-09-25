@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py
+runner_sha256: 79883c279f349545ff924afe9f8cc2a9adad7f4eee47624be0bf00f7122dc881
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.64
+status: ok
+----- stdout -----
+[PASS] the momentum term E:E - (tr E)^2/2 is invariant under the scalar gauge on the constraint surface only :: G S^T = 0 exactly on the 4^3 torus; ker G has dimension 195 of 384; s.M0 s = 0e+00 for every delta_c and 0e+00 for a random beta; change under E -> E + s: 6e-14 for E in ker G, 44.864 off it
+[PASS] neither canonical variable can be compact: the periodic momentum term moves under the scalar-gauge orbit on ker G, and a quadratic potential is not 2 pi periodic :: periodic momentum term, E in ker G, theta = 0.7: changes 694.295, 656.394, 647.801; a quadratic potential under h -> h + 2 pi e_slot: changes 640.9, -1232.5, -908.9
+[PASS] oscillator slots: on the doubly constrained surface two modes with omega^2 = J g lambda, lambda ~ |k|^2 and positive; indefinite off it :: lattice potential X(k): 486 unknowns, rank 486, residual 1e-13, G X = 0 and X Hermitian; two reduced modes; lambda/|k|^2 at small k in [1.000, 1.000]; over 4000 random k: min lambda/|k|^2 = 0.420, negative modes 0; without the scalar constraint the potential's most negative eigenvalue over |k|^2 is -0.963
+[PASS] truncated oscillator slots: [x_N, p_N] = i (1 - N |N-1><N-1|) exactly, and a coherent state's weight on the top level is exponentially small :: N = 8 (3 qubits): top-level weight 7.3e-05; N = 16 (4 qubits): top-level weight 2.8e-13; N = 32 (5 qubits): top-level weight 4.5e-35; N = 64 (6 qubits): top-level weight 1.9e-88
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

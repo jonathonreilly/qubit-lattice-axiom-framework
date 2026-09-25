@@ -1,0 +1,167 @@
+[
+  {
+    "pr": 9083,
+    "head": "7e2c8026bb1a8d76c5f95da8fe2046ada3493697",
+    "fetch_ref": "refs/pull/9083/head",
+    "landing": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+    "findings": "Supply ensemble weights in the general affinity argument; Restrict self-weighted classification to the affine covariant family; Separate controlled preparation from an autonomous randomizer; Use exact positive-effect support instead of a sampled ratio bound; Keep frequency and finite-time propagation obligations separate",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_A_DISTANT_RECORD_IS_A_RECORDED_RANDOMIZER_LOCALITY_OF_MARGINALS_FORCES_PREPARATION_AFFINITY_AND_THE_TRACE_RULE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "1bf01f0da92c0664df18750622bb82156337ab4e8c69b560d6b37ec175689d00",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1bf01f0da92c0664df18750622bb82156337ab4e8c69b560d6b37ec175689d00",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_A_DISTANT_RECORD_IS_A_RECORDED_RANDOMIZER_LOCALITY_OF_MARGINALS_FORCES_PREPARATION_AFFINITY_AND_THE_TRACE_RULE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "d209a22e6c37d739b08f1f2f4eac3729af530c121212f53ddbe31f9f7c0523bb",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.txt",
+        "sha256": "df266b17608cfff4d36255cba11bf8240073a87e992f9a7cc8d9f4e843330b17",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/df266b17608cfff4d36255cba11bf8240073a87e992f9a7cc8d9f4e843330b17",
+        "accepted_path": "logs/runner-cache/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.txt",
+        "accepted_sha256": "ca88660da717d8d28ae30696f7b699c3d6d59460092b356facfaae66ed856c99",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py",
+        "sha256": "7d92cdc0fc2df3480c1a3169c6748a4d091b49d4a01cf1f53355d4f6c69b9b6a",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7d92cdc0fc2df3480c1a3169c6748a4d091b49d4a01cf1f53355d4f6c69b9b6a",
+        "accepted_path": "scripts/dynamics_clause_a_distant_record_is_a_recorded_randomizer_2026_09_24.py",
+        "accepted_sha256": "def00e3d6cba7decb6839e0ad40386fcf44da0d9bbcf026b189d6269c2d71500",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9084,
+    "head": "2df5947a26d283ee82241f0d287f8222f3995cab",
+    "fetch_ref": "refs/pull/9084/head",
+    "landing": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+    "findings": "Supply the tensor extension and positivity requirement for CP; Separate the transpose witness from a universal CP proof; Prove the same-dimensional channel inverse theorem using Kraus matrices; Require group time homogeneity for a fixed generator; Keep generator support independent from finite-time operator support",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_LOCALITY_OF_MARGINALS_MAKES_A_SITE_S_EVOLUTION_BETWEEN_RECORDS_LINEAR_AND_COMPLETELY_POSITIVE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "daf6e85e515c4cdb84c587c75cbd32509e0cf6cc31a06b5e53abd480c5892d02",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/daf6e85e515c4cdb84c587c75cbd32509e0cf6cc31a06b5e53abd480c5892d02",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_LOCALITY_OF_MARGINALS_MAKES_A_SITE_S_EVOLUTION_BETWEEN_RECORDS_LINEAR_AND_COMPLETELY_POSITIVE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "281a87546dd93f9f586d457465a07ba4155e3edadc397adc35bfcb5e8f852c11",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.txt",
+        "sha256": "d3f7f2b456aaf9bd82061a40621a985e78904c8d3304156841f49ee5bbbdeb7d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d3f7f2b456aaf9bd82061a40621a985e78904c8d3304156841f49ee5bbbdeb7d",
+        "accepted_path": "logs/runner-cache/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.txt",
+        "accepted_sha256": "c8f35666b36a4bc11a192d825b96669beed9848b35b4b4bf166449cdc846302e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py",
+        "sha256": "4d33c7d0c1ce5af90482cc2e1fb20be71fb47cf6791de6eb79af552a6959eb59",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4d33c7d0c1ce5af90482cc2e1fb20be71fb47cf6791de6eb79af552a6959eb59",
+        "accepted_path": "scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py",
+        "accepted_sha256": "fefe6ca8b9812982f989229976745b30d72134b3d328b14449b3518029724e7e",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9085,
+    "head": "fbfebbbb4ffa99030a19ab0b4f00901fb02c5518",
+    "fetch_ref": "refs/pull/9085/head",
+    "landing": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+    "findings": "Require positive outcome probability for a conditional state; Correct the rest partial trace by identifying site indices; Specify complete partner tomography and joint Born premises; Separate partner uniqueness from global instrument uniqueness; Retain larger supported menus as a counterroute",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_THE_COMPRESSION_UPDATE_IS_THE_ONE_DISTANT_UPDATE_CONSISTENT_WITH_LOCALITY_OF_MARGINALS_AND_AFFINE_JOINT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "4f57636186209c4ce0e85adc63e85977c1f4a046dbace974b306e47579190153",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4f57636186209c4ce0e85adc63e85977c1f4a046dbace974b306e47579190153",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_THE_COMPRESSION_UPDATE_IS_THE_ONE_DISTANT_UPDATE_CONSISTENT_WITH_LOCALITY_OF_MARGINALS_AND_AFFINE_JOINT_LAWS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "d06211015cc9f359e9176a0676d238ddb7c1c4c2f36b55d882c88f57880c3d33",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.txt",
+        "sha256": "5810814bc8d7fe143002f24b1ac6ea2e728873fbc3f5c7d0408cfd4cf8aa6ff4",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5810814bc8d7fe143002f24b1ac6ea2e728873fbc3f5c7d0408cfd4cf8aa6ff4",
+        "accepted_path": "logs/runner-cache/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.txt",
+        "accepted_sha256": "1c659b7ff01e891de0844a947fb044f95f9c2e5f20829712e84fba5143a469fe",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.py",
+        "sha256": "cb770839e5da0e424e1ef63b4615f36c56beb5ffab0817ba08ff0092e00f1c64",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/cb770839e5da0e424e1ef63b4615f36c56beb5ffab0817ba08ff0092e00f1c64",
+        "accepted_path": "scripts/dynamics_clause_compression_is_the_consistent_distant_update_2026_09_24.py",
+        "accepted_sha256": "2cede3a0ebb6eecf51d2428887b83a80a3411800307a660098be6a996bac3f8a",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9086,
+    "head": "a4c092788832103f5af5c6a2d043acf6ef9c2261",
+    "fetch_ref": "refs/pull/9086/head",
+    "landing": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+    "findings": "Prove the parallel-output linear-map lemma including its kernel; Retain the pure replacement exception before imposing distances; Normalize proportional Kraus matrices using trace preservation; Keep input and output dimensions equal in the unitary classification; Treat record-only irreversibility as a supplied mathematical requirement",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_AS_THE_ONLY_IRREVERSIBLE_EVENTS_RESTATE_REVERSIBILITY_A_CHANNEL_THAT_KEEPS_PURE_STATES_PURE_AND_DISTINGUISHABLE_IS_UNITARY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7a7397284d0ae44c00174adcd32591576526ad921dfbe37ebcb952eceab7f6bf",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7a7397284d0ae44c00174adcd32591576526ad921dfbe37ebcb952eceab7f6bf",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORDS_AS_THE_ONLY_IRREVERSIBLE_EVENTS_RESTATE_REVERSIBILITY_A_CHANNEL_THAT_KEEPS_PURE_STATES_PURE_AND_DISTINGUISHABLE_IS_UNITARY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "bcd0ed8fb4d4090c467cdf1d2f43583b993ff8be00ea09a7856c7ef53eee22b9",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.txt",
+        "sha256": "09cd5f5cbb11d5c46e77879b84c0326e07ff09bd39992d382c9f258716f7f46c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/09cd5f5cbb11d5c46e77879b84c0326e07ff09bd39992d382c9f258716f7f46c",
+        "accepted_path": "logs/runner-cache/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.txt",
+        "accepted_sha256": "6a73c6318327fc6a1b18236b8e81683ba759e52e47dc5f9e5b0216d73bbcb28a",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.py",
+        "sha256": "5eb98eb94b7cbb4061e3343fa5884c4d95011abc5897bf53db31c8fc37dc9f34",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5eb98eb94b7cbb4061e3343fa5884c4d95011abc5897bf53db31c8fc37dc9f34",
+        "accepted_path": "scripts/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.py",
+        "accepted_sha256": "4211cd924eafbdd31ff8bc52ba07ba541ba20c5a42d71dc606df6498c7a4e4f8",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  },
+  {
+    "pr": 9140,
+    "head": "1bdd8cad967a53505ebefeb33a12f450dd5a1c1a",
+    "fetch_ref": "refs/pull/9140/head",
+    "landing": "4bb62bc07d9a0bdfea002e8feb99a37044afcd6d",
+    "findings": "Prove tetrahedral reconstruction with an exact invertible Gram matrix; Distinguish cross-menu frequencies from one normalized outcome menu; Keep even observable commutation separate from odd CAR relations; Restrict the graded counterexample to one parity-superselected mode per site; Separate product positivity from positivity on the generated algebra",
+    "files": [
+      {
+        "original_path": "docs/RECORD_READOUT_LOCALITY_READ_AS_LOCAL_TOMOGRAPHY_ADMITS_THE_ORDINARY_COMPOSITE_AND_EXCLUDES_THE_GRADED_ONE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "6cdcf3c37069988020274ce9df8670a3675b9a5996679d01232c12861e0633c2",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6cdcf3c37069988020274ce9df8670a3675b9a5996679d01232c12861e0633c2",
+        "accepted_path": "docs/RECORD_READOUT_LOCALITY_READ_AS_LOCAL_TOMOGRAPHY_ADMITS_THE_ORDINARY_COMPOSITE_AND_EXCLUDES_THE_GRADED_ONE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "1f822cf503e4b6a6d808a80cf844feceabb9ed2292365b5c5d8c21158f335baa",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "logs/runner-cache/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.txt",
+        "sha256": "233f0396f0d581bdffe7ab74c88d7abcadfdf9e5753d9afad2ca94379b68f311",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/233f0396f0d581bdffe7ab74c88d7abcadfdf9e5753d9afad2ca94379b68f311",
+        "accepted_path": "logs/runner-cache/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.txt",
+        "accepted_sha256": "d505494d55ebf84bb1f2ef738f0f640faf34078a5867a66f919983d52b8bba53",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      },
+      {
+        "original_path": "scripts/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.py",
+        "sha256": "3986209b4236bb5349e9720fbfbe250a9d41fa4ce6daef1fffe99e63882d5193",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/3986209b4236bb5349e9720fbfbe250a9d41fa4ce6daef1fffe99e63882d5193",
+        "accepted_path": "scripts/record_readout_locality_as_local_tomography_selects_ordinary_composite_2026_09_24.py",
+        "accepted_sha256": "7916ddf9b237b050c979db58d1de2888e4112651e613854e0b51df96616f337d",
+        "disposition": "Source narrowed to the explicit conditional and numerical claims. Historical broader unconditional Born, locality-to-CP and physical composition interpretations are deferred with original branch and frozen patch recovery; replaced cache is historical evidence only. Close-with-reason disposition: land these narrowed results and preserve the remote original branch for deferred exploratory work; do not delete it. Final science PASS is separately recorded after fresh execution."
+      }
+    ]
+  }
+]

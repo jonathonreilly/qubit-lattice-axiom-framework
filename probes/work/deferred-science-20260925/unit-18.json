@@ -1,0 +1,233 @@
+[
+  {
+    "pr": 9142,
+    "head": "e14e6e4f4868b3e72340b2a805aed088f89e4def",
+    "fetch_ref": "refs/pull/9142/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Conditional hazard, menu-dependent weighted state, initial-preparation dependence, time-step bias and trajectory standard errors explicit.",
+    "files": [
+      {
+        "original_path": "docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "204e4f3c6d8d3b55a656b739d58bf5715633b8c074cdec5ba8c491ff3b793d07",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/204e4f3c6d8d3b55a656b739d58bf5715633b8c074cdec5ba8c491ff3b793d07",
+        "accepted_path": "docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "e242861a424809680635c8dacd7cbd03d096e2f50b4ee855efc9bab52b891dad",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.txt",
+        "sha256": "c974dbcf092eae0c9b0ee0c1bfa837b93cb95ae5667bab22ae384cb26e99f86e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c974dbcf092eae0c9b0ee0c1bfa837b93cb95ae5667bab22ae384cb26e99f86e",
+        "accepted_path": "logs/runner-cache/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.txt",
+        "accepted_sha256": "7004d451117dda664101d4e00089c48eacb3443c5a54d680214eaf4821275b81",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py",
+        "sha256": "11abf1f415b70936641aa32455e9eb8988f37a6859a3dc7fc8f4b673d1db42a0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/11abf1f415b70936641aa32455e9eb8988f37a6859a3dc7fc8f4b673d1db42a0",
+        "accepted_path": "scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py",
+        "accepted_sha256": "7105f676b389b44d19f02005ed1c2ff3199d2017736b0ddaf0ac05c4b16926cf",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9052,
+    "head": "6d5759d488d9222a94aa9ec14d013aa7d40d83c6",
+    "fetch_ref": "refs/pull/9052/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Uniform variance criterion versus sufficient clustering; supplied graph and finite Ritz diagnostics not thermodynamic proof.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORD_FREQUENCIES_FOLLOW_THE_ONE_SHOT_ODDS_EXACTLY_WHEN_CORRELATIONS_CLUSTER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "23b77c9f87c654d27d010bf46c1dbe4c82a72601a53bda47ebb5dea42499c69c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/23b77c9f87c654d27d010bf46c1dbe4c82a72601a53bda47ebb5dea42499c69c",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORD_FREQUENCIES_FOLLOW_THE_ONE_SHOT_ODDS_EXACTLY_WHEN_CORRELATIONS_CLUSTER_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "6d7f4c47b7bb6e1b167f4a7ad6f53001c0e1c21306601c630ec181818fcbfc57",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_record_frequencies_follow_the_odds_when_correlations_cluster_2026_09_24.txt",
+        "sha256": "5c3ee5d46cee748943d02e45c701fce1ea7e9af4c2c3140d2be95e430ac1cd68",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/5c3ee5d46cee748943d02e45c701fce1ea7e9af4c2c3140d2be95e430ac1cd68",
+        "accepted_path": "logs/runner-cache/dynamics_clause_record_frequencies_follow_the_odds_when_correlations_cluster_2026_09_24.txt",
+        "accepted_sha256": "f773d3545f6258ca034346a96e8d2d3bd522ed26cd3c4c26b7758d698cacf4a8",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_record_frequencies_follow_the_odds_when_correlations_cluster_2026_09_24.py",
+        "sha256": "b9c6a2d3af6eed2311be7e952440a1e1c5ba3e5dc598c542abe0249ea718b50b",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/b9c6a2d3af6eed2311be7e952440a1e1c5ba3e5dc598c542abe0249ea718b50b",
+        "accepted_path": "scripts/dynamics_clause_record_frequencies_follow_the_odds_when_correlations_cluster_2026_09_24.py",
+        "accepted_sha256": "720050b6601189e9a13d41654fec40110ae1b936f0aa1e31501781800237888e",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9050,
+    "head": "5d7a43f384721e5b8d2297441a90c243ea74b11c",
+    "fetch_ref": "refs/pull/9050/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "atan2 angle, cyclic rotation convention, signed pair correlation and analytic quaternion holonomy proof.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_MORIYA_HANDEDNESS_IS_A_TWIST_WITH_CURVATURE_GAUGED_ALONG_A_LINE_NOT_IN_THREE_DIMENSIONS_AND_SEEN_IN_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "27eaf1100ff65a6fd6282c32ff40eaf334c1367876ff54d7a31d06d1ad6ea877",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/27eaf1100ff65a6fd6282c32ff40eaf334c1367876ff54d7a31d06d1ad6ea877",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_MORIYA_HANDEDNESS_IS_A_TWIST_WITH_CURVATURE_GAUGED_ALONG_A_LINE_NOT_IN_THREE_DIMENSIONS_AND_SEEN_IN_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "47fd93234f65d56ec3481cfbd1a4dc8cd7afa0f7ef5b08724f9f93c88b08883a",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.txt",
+        "sha256": "9863ae52ca54436a45c22f17321b5dc1c1a348948dbb37bb22edaf39b7a0a24e",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/9863ae52ca54436a45c22f17321b5dc1c1a348948dbb37bb22edaf39b7a0a24e",
+        "accepted_path": "logs/runner-cache/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.txt",
+        "accepted_sha256": "d4ac5bf550d2ff022a6bdacab8a6fc3e0300fba0087a809f95926f708f59e136",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.py",
+        "sha256": "0691e02b0993f8832c6b66e6a561604468daae8f50cce62bc398aecd9f421262",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0691e02b0993f8832c6b66e6a561604468daae8f50cce62bc398aecd9f421262",
+        "accepted_path": "scripts/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.py",
+        "accepted_sha256": "0686f6e2b5c3b85b417cf9474059162a1acd3d9d151ad35979ade4c69fd06fc2",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9046,
+    "head": "13cb25934fa81fd216429618bc8e8937d4f19c4f",
+    "fetch_ref": "refs/pull/9046/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Reject universal unreadability and product law: preserve graph theorem and conditional factorized-preparation result with entangled counterexample.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_ONLY_ADMISSIBILITY_LEAVES_THE_DYNAMICS_UNREADABLE_FORMING_SITES_MUST_BE_ISOLATED_AND_NEVER_INTERACT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c649522585088d670aebfb0108b8dbc66e2290be351b5204289e345f78147dd0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/c649522585088d670aebfb0108b8dbc66e2290be351b5204289e345f78147dd0",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORDS_ONLY_ADMISSIBILITY_LEAVES_THE_DYNAMICS_UNREADABLE_FORMING_SITES_MUST_BE_ISOLATED_AND_NEVER_INTERACT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "04357ab8a7005b3b84bcc5c846e6a82ed746c88840dc3e2ffce5731b386a6e40",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_2026_09_24.txt",
+        "sha256": "85b5cc37db628d4aa57c4ae200ce3d0827452556cf2776b10b2bb95b39a945ff",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/85b5cc37db628d4aa57c4ae200ce3d0827452556cf2776b10b2bb95b39a945ff",
+        "accepted_path": "logs/runner-cache/dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_2026_09_24.txt",
+        "accepted_sha256": "57c6d66d7f8fc89efe109f65360f2745fffc0e15a1f068eb46523b4102aefd7b",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_2026_09_24.py",
+        "sha256": "d16d9505e0f436faf9148e8e191c8bdf78058862733e36d7cbd6f20bbfc1de5c",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/d16d9505e0f436faf9148e8e191c8bdf78058862733e36d7cbd6f20bbfc1de5c",
+        "accepted_path": "scripts/dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_2026_09_24.py",
+        "accepted_sha256": "8a03c5b432770bed34cdb960e5b71e1149d616a06e7a727c4f9b85779086f102",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9043,
+    "head": "e9f72aafa7a7a352de9e616d4cb9876daee6b11e",
+    "fetch_ref": "refs/pull/9043/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Cross-wing PR-box is operationally nonsignalling; static and adapted laws distinguished; exact rational assertion added.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_BELL_VALUES_OF_RECORD_LAWS_RECORDS_ONLY_FORMATION_STAYS_AT_TWO_THE_DYNAMICS_CLAUSE_REACHES_TWO_ROOT_TWO_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "1de2a55f1205a3c039a0d260a9558c288f29753d2b73d135b0f3fdfda315e9ac",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/1de2a55f1205a3c039a0d260a9558c288f29753d2b73d135b0f3fdfda315e9ac",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_BELL_VALUES_OF_RECORD_LAWS_RECORDS_ONLY_FORMATION_STAYS_AT_TWO_THE_DYNAMICS_CLAUSE_REACHES_TWO_ROOT_TWO_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "cca5ff1af963cc78b2306bd9c7087aa2c7dc52cd91e9b79ec029af79581c0684",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_bell_records_only_formation_versus_dynamics_clause_2026_09_24.txt",
+        "sha256": "6c18f42916f36017a401e2c0b2d7171f143f2fe787c0e521649257544fe76be0",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/6c18f42916f36017a401e2c0b2d7171f143f2fe787c0e521649257544fe76be0",
+        "accepted_path": "logs/runner-cache/dynamics_clause_bell_records_only_formation_versus_dynamics_clause_2026_09_24.txt",
+        "accepted_sha256": "3b167070f6e39aceb40a4d408cb60522bdde88bffa4a2501c6a6ed26de5115b6",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_bell_records_only_formation_versus_dynamics_clause_2026_09_24.py",
+        "sha256": "ae6f284ed4f151e26a33b852215d7a0183973a6be534fa417e980685292396cd",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/ae6f284ed4f151e26a33b852215d7a0183973a6be534fa417e980685292396cd",
+        "accepted_path": "scripts/dynamics_clause_bell_records_only_formation_versus_dynamics_clause_2026_09_24.py",
+        "accepted_sha256": "a3d1ceb8b26bbc18e44f7ea09b79f4b46ceea11b4ddba3bb75839bda15e6f9ec",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9041,
+    "head": "deeba38b0e405a3ae8f381bf2b120da881cd007c",
+    "fetch_ref": "refs/pull/9041/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Correct signed polarization and restrict stationarity to all-menu quantifier; zero field and single-menu exceptions explicit.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_RECORDS_ACT_AS_FIELDS_A_SITE_WITH_SIX_RECORDED_NEIGHBOURS_IS_A_QUBIT_IN_THEIR_FIELD_AND_ITS_LAW_POINTS_ALONG_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "4d9e77d9379f58e756b0c957df7c9175b31ccc1608b3df95a61f431f5b590ee9",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/4d9e77d9379f58e756b0c957df7c9175b31ccc1608b3df95a61f431f5b590ee9",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_RECORDS_ACT_AS_FIELDS_A_SITE_WITH_SIX_RECORDED_NEIGHBOURS_IS_A_QUBIT_IN_THEIR_FIELD_AND_ITS_LAW_POINTS_ALONG_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "8c2b4ec48e2d5f54e5a2d502ed5dd5066002edbdaa7db3e7962200753adc80db",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.txt",
+        "sha256": "cf719579bec920547c2bd970ef1344a6b699706b3940b0accb11e00db14fbfea",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/cf719579bec920547c2bd970ef1344a6b699706b3940b0accb11e00db14fbfea",
+        "accepted_path": "logs/runner-cache/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.txt",
+        "accepted_sha256": "17aeb47903bcfb4e46571b2c63c9db2de544f6a54fac2bc6ec37915d08418960",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py",
+        "sha256": "0570223d23742c9117da28a37280f356dd2a1a16174144d26482b9b2276c03c5",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/0570223d23742c9117da28a37280f356dd2a1a16174144d26482b9b2276c03c5",
+        "accepted_path": "scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py",
+        "accepted_sha256": "363c3bd980f9c760229b3141b5c35db71b079f089fedeb783ff5413bc998080e",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  },
+  {
+    "pr": 9040,
+    "head": "5de357f4807d6978873ab103e10a3e047fd5b380",
+    "fetch_ref": "refs/pull/9040/head",
+    "landing": "b47a67e3a08febd2aaf3545eae9a278b4901a72d",
+    "findings": "Distinguish covariant oriented-bond representative from uniqueness modulo telescoping terms.",
+    "files": [
+      {
+        "original_path": "docs/DYNAMICS_CLAUSE_COVARIANT_NEAREST_NEIGHBOUR_TWO_QUBIT_GENERATORS_HEISENBERG_UNDER_POSSIBILITY_COVARIANCE_THREE_COUPLINGS_UNDER_FULL_SOLDERING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "e073d403ca7ae9973c4300b2123e9109f439400a85070c199e4fad787a1abbce",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e073d403ca7ae9973c4300b2123e9109f439400a85070c199e4fad787a1abbce",
+        "accepted_path": "docs/DYNAMICS_CLAUSE_COVARIANT_NEAREST_NEIGHBOUR_TWO_QUBIT_GENERATORS_HEISENBERG_UNDER_POSSIBILITY_COVARIANCE_THREE_COUPLINGS_UNDER_FULL_SOLDERING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "accepted_sha256": "c12156bc89754069fbcdca1ccdb0748be8fc37d73a420b944a70a9865c138179",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "logs/runner-cache/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.txt",
+        "sha256": "7257e6d44683eab327e2c8d628d7983fec2865b35b42913d174c648bca5c9729",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/7257e6d44683eab327e2c8d628d7983fec2865b35b42913d174c648bca5c9729",
+        "accepted_path": "logs/runner-cache/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.txt",
+        "accepted_sha256": "04aa325629c0a0a0d1e0c2b396e0e0b1aea5c7cd00216c6d50307b2faa09c44d",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      },
+      {
+        "original_path": "scripts/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.py",
+        "sha256": "e98b02f93b7e87a95a8c82d69e5e95c1a58d3d880bc5d952f0525d665308664d",
+        "bundle_path": "probes/work/deferred-science-20260925/sources/e98b02f93b7e87a95a8c82d69e5e95c1a58d3d880bc5d952f0525d665308664d",
+        "accepted_path": "scripts/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.py",
+        "accepted_sha256": "29f47489302fa6bd5edd696e70ae2d49cc5a84271e42e28cc054065675fe5e90",
+        "disposition": "Complete source retained with specified mathematical narrowing and controls; historical cache replaced by fresh output after execution. False broader implications rejected, no physical selection or retained grade inferred."
+      }
+    ]
+  }
+]

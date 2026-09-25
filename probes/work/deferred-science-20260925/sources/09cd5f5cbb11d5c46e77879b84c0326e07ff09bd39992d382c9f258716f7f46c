@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_records_as_the_only_irreversible_events_restate_reversibility_2026_09_24.py
+runner_sha256: 5eb98eb94b7cbb4061e3343fa5884c4d95011abc5897bf53db31c8fc37dc9f34
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 0.71
+status: ok
+----- stdout -----
+[PASS] purity: random non-unitary channels send some pure state to a mixed one; unitary channels never do :: lowest output purity over non-unitary channels 0.383; unitary purity defect 2.8e-15
+[PASS] the replacement channel keeps purity but sends orthogonal states to the same output :: output purity 1; trace distance of orthogonal inputs 1 -> 0.0e+00
+[PASS] mechanism: proportional Kraus operators give a unitary conjugation; a generic channel has non-parallel Kraus outputs :: proportional-Kraus deviation from U rho U^dag 2.8e-16; largest non-parallelism 0.889
+[PASS] distinguishability: random non-unitary channels lower the trace distance of some pure pair; unitaries keep every pair's :: largest drop 0.864; unitary change 1.2e-15
+[PASS] the lemma: parallel outputs on every input mean proportional maps, or two rank-one maps with a common range :: rank-one pair with a common range: non-parallelism 4e-16, not proportional (rank 2); rank-two with rank-one: non-parallelism up to 0.993
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

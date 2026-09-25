@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_locality_of_marginals_makes_site_evolution_linear_and_completely_positive_2026_09_24.py
+runner_sha256: 4d33c7d0c1ce5af90482cc2e1fb20be71fb47cf6791de6eb79af552a6959eb59
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.05
+status: ok
+----- stdout -----
+[PASS] nonlinear evolutions signal: the site's marginal after evolution depends on whether and how a distant partner was recorded :: largest marginal shift: state-dependent precession 0.572, purity-dependent contraction 0.074
+[PASS] linear channels do not signal: random completely positive channels give the same marginal for every steering choice :: largest shift over 50 random channels 2.2e-16
+[PASS] chord consistency forces affinity: the precession passes only at zero nonlinearity, failing more as it grows :: largest chord violation g 0.0: 2.8e-16, g 0.05: 2.4e-02, g 0.5: 2.4e-01, g 1.5: 6.9e-01
+[PASS] complete positivity is forced: the transpose on half a singlet, then a field rotation and a Heisenberg bond, gives a negative product-record probability; channels never go negative :: transpose: smallest joint eigenvalue -0.500; most negative product-record probability after rotation and bond -0.430; random channels: smallest eigenvalue -2.2e-16
+[PASS] reversibility leaves unitaries: a unitary channel's inverse is a channel; a non-unitary channel's inverse is not completely positive :: smallest Choi eigenvalue of the inverse: unitary -2.1e-16; worst of 20 random channels -10.180
+[PASS] the two-site form is imposed on the generator: the clause's evolution is not a nearest-neighbour unitary at finite time :: weight of U^dag X_2 U outside radius 1 at t = 0.05, 0.2, 1: Heisenberg 7.8e-07, 2.0e-04, 9.8e-02; Ising 9e-33, 1e-32, 0e+00
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

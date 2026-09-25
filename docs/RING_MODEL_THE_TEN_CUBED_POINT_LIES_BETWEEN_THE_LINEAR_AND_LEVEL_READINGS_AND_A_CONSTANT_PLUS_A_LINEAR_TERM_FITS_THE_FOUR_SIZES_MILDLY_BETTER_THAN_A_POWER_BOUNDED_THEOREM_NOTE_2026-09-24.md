@@ -1,7 +1,7 @@
 ---
 claim_id: ring_model_the_ten_cubed_point_lies_between_the_linear_and_level_readings_and_a_constant_plus_a_linear_term_fits_the_four_sizes_mildly_better_than_a_power_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice with the exact vertex Gauss law (cubic ice) and the covariant plaquette clause -g (U + U^dag) at V = 0, g = 1 (open PRs 9066, 9072); the guided continuous-time projector Monte Carlo of open PR 9148 with the forward-walking estimator of open PR 9161 in the zero-winding sector of open PR 9153. Finite diagnostics on the 10^3 torus (100 walkers, projection 32, forward lags to 6, ten-bin errors): energy per plaquette -0.28741 +- 0.00010; pure transverse structure factor at k_min = pi/5 S_T = 0.510 +- 0.046 (lags 1/2/4/6: 0.543, 0.510, 0.506, 0.512, each +- 0.04; mixed 0.623), at 2pi/5 0.714 +- 0.043; Feynman bound 2 u_0 s^2 / S_T = 0.430 +- 0.039, omega L = 4.30, omega/k = 0.685; the mode's ground-state correlation has effective rates 0.42 +- 0.46, 0.39 +- 0.32, 0.41 +- 0.16 on [0, 0.3], [0.5, 1], [1, 2]. An auxiliary 120-walker projection-40 run (not in the runner) gave S_T(k_min) = 0.495 +- 0.035 with rates 0.43, 0.41, 0.43. The four-size series with open PR 9161's certified 0.692 +- 0.013, 0.557 +- 0.022, 0.575 +- 0.028: pairwise exponents 0.54 +- 0.11 (4^3-6^3), -0.11 +- 0.22 (6^3-8^3), 0.53 +- 0.46 (8^3-10^3), 0.33 +- 0.10 (4^3-10^3); weighted power law nu = 0.34 +- 0.06 (chi^2 5.1 for 2 degrees of freedom); linear-plus-constant S = S_0 + a k with S_0 = 0.392 +- 0.040, a = 0.189 +- 0.030 (chi^2 3.8); their 12^3 predictions 0.473 and 0.491; the 10^3 point against open PR 9166's readings: linear 0.46 (+1.1 standard errors), level 0.575 (-1.4), quadratic 0.375 (+3.0). The Feynman bound at k_min on 4^3-10^3 has omega L = 6.77, 6.22, 4.69, 4.30 and a fitted exponent in k of 1.45 (1 linear, 2 quadratic). No power law, no gap value, no phase and no thermodynamic limit is claimed."
+claim_scope: "Setting, all supplied and none adopted: spin-1/2 link fields on the cubic lattice with the exact vertex Gauss law (cubic ice) and the covariant plaquette clause -g (U + U^dag) at V = 0, g = 1 (open PRs 9066, 9072); the guided continuous-time projector Monte Carlo of open PR 9148 with the forward-walking estimator of open PR 9161 in the zero-winding sector of open PR 9153. Finite diagnostics on the 10^3 torus (100 walkers, projection 32, forward lags to 6, ten-bin errors): energy per plaquette -0.28741 +- 0.00010; pure transverse structure factor at k_min = pi/5 S_T = 0.510 +- 0.046 (lags 1/2/4/6: 0.543, 0.510, 0.506, 0.512, each +- 0.04; mixed 0.623), at 2pi/5 0.714 +- 0.043; Feynman bound 2 u_0 s^2 / S_T = 0.430 +- 0.039, omega L = 4.30, omega/k = 0.685; the mode's ground-state correlation has effective rates 0.42 +- 0.46, 0.39 +- 0.32, 0.41 +- 0.16 on [0, 0.3], [0.5, 1], [1, 2]. An auxiliary 120-walker projection-40 run (not in the runner) gave S_T(k_min) = 0.495 +- 0.035 with rates 0.43, 0.41, 0.43. The four-size series with open PR 9161's certified 0.692 +- 0.013, 0.557 +- 0.022, 0.575 +- 0.028: pairwise exponents 0.54 +- 0.11 (4^3-6^3), -0.11 +- 0.22 (6^3-8^3), 0.53 +- 0.46 (8^3-10^3), 0.33 +- 0.10 (4^3-10^3); weighted power law nu = 0.34 +- 0.06 (chi^2 5.1 for 2 degrees of freedom); linear-plus-constant S = S_0 + a k with S_0 = 0.392 +- 0.040, a = 0.189 +- 0.030 (chi^2 3.8); their 12^3 predictions 0.473 and 0.491; the 10^3 point against open PR 9166's readings: linear 0.46 (+1.1 standard errors), level 0.575 (-1.4), quadratic 0.375 (+3.0). The Feynman bound at k_min on 4^3-10^3 has omega L = 6.77, 6.22, 4.69, 4.30 and a fitted exponent in k of 1.45 (1 linear, 2 quadratic). No power law, no gap value, no phase and no thermodynamic limit is claimed. Correction (open PR 9220): the ten-bin errors of the forward-walking structure factor understate the run-to-run scatter by about a factor of two, so both fits are within that scatter; run averages give 0.710 +- 0.010, 0.572 +- 0.018, 0.491 +- 0.022 on 4^3, 6^3, 8^3; the auxiliary 12^3 and 16^3 runs at 100-120 walkers carry a population bias that grows with the torus, and the fixed-momentum growth they show is not established."
 upstream_dependencies:
   - minimal_axioms
   - uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_bounded_theorem_note_2026-09-23
@@ -47,19 +47,19 @@ under three readings: `0.46` for a linear photon, `0.575` for a level,
   smallest momenta the bound `2u_0 s²/S_T` scales as `k^{1.45}`; its
   product with `L` runs `6.77, 6.22, 4.69, 4.30`.
 
-- **The 12³ run (auxiliary, not in the runner) shifts the reading.** At
-  `k_min = π/6`, `S_T = 0.496 ± 0.057` (forward lags 1–6 on a plateau
-  `0.52–0.49`, lag 8 `0.458 ± 0.034`), on top of both fits' predictions
-  (0.473, 0.491) and 1.9 standard errors above the pure linear form through
-  8³. But at fixed momentum the structure factor grows with the torus:
-  `S_T(π/3) = 0.557 ± 0.022` on 6³ against `0.778 ± 0.048` on 12³ (four
-  standard errors), and `S_T(π/2) = 0.692 ± 0.013` on 4³, `0.75–0.83` on
-  8³, `0.89 ± 0.08` rising to `0.94 ± 0.06` across the lags on 12³. The
-  smallest-momentum series therefore mixes the `k`-dependence with a
-  finite-size suppression that weakens as `L` grows, and neither fit above
-  has an infinite-volume meaning; the observable that does is `S_T(k)` at
-  fixed `k` extrapolated in `L`, whose present lower bounds are
-  `0.94, 0.78, 0.58, 0.51, 0.50` at `k = π/2, π/3, π/4, π/5, π/6`.
+- **The 12³ and 16³ runs (auxiliary, not in the runner) do not decide.**
+  At `k_min = π/6` the 12³ torus gave `S_T = 0.496 ± 0.057` (100 walkers)
+  and at `π/8` the 16³ torus gave `0.591 ± 0.037` (120 walkers). At fixed
+  momentum the measured values grow with the torus (`S_T(π/3)`: 0.557 on
+  6³, 0.778 on 12³; `S_T(π/2)`: 0.692 on 4³, 0.75–0.83 on 8³, 0.89–0.94 on
+  12³, 1.04 on 16³). Open PR 9220 found that these runs are not a clean
+  test: the walker weights spread as the square root of the system size, so
+  the population bias grows with the torus (on 8³ it already moves the
+  energy per plaquette by 0.0012 between 60 and 480 walkers), and the
+  forward-walking errors are about half the run-to-run scatter. The
+  fixed-momentum growth is therefore not established as a property of the
+  ground state; an earlier version of this bullet read it as one, and that
+  reading is withdrawn.
 
 Supplied model, finite diagnostics: no power law, no gap value, no phase
 and no thermodynamic limit is claimed. If the constant `S_0` in the
@@ -129,26 +129,31 @@ certified by the cache of this note.
 | Feynman bound at `π/6` | `0.310 ± 0.036`, `ω·L = 3.72`, `ω/k = 0.59` |
 | correlation rates at `π/6` on `[0, 0.3]`, `[0.5, 1]`, `[1, 2]` | `0.33, 0.28, 0.24` (each `± 0.3–0.5`) |
 
-- **Fixed momentum, growing size.** `S_T(π/3)`: `0.557 ± 0.022` (6³) →
-  `0.778 ± 0.048` (12³), a growth of `0.22 ± 0.05`. `S_T(π/2)`:
-  `0.692 ± 0.013` (4³) → `0.833 ± 0.040` / `0.751 ± 0.018` (8³ at 120 /
-  240 walkers) → `0.89–0.94` (12³). The lags are flat at `π/3` and rise
-  with the lag at `π/2`, so the growth is in the ground state, not in the
-  estimator. This is the effect open PR 9166 found outside any Gaussian at
-  2.7–3.4 standard errors on 8³; on 12³ it is resolved at four.
-- **What it does to the series.** Each `S_T(k_min(L), L)` sits on the
-  finite-size-suppressed branch of its own torus; the fall from 0.692 to
-  0.496 along the series is the sum of the `k`-dependence (a fall) and the
-  suppression's weakening (a rise), and the level step between 6³ and 8³ is
-  where the two nearly cancel. The constant-plus-linear and power fits
-  describe this composite, not `S_∞(k)`. Present lower bounds on
-  `S_∞(k)`, taking the largest torus at each momentum, are `0.94, 0.78,
-  0.58, 0.51, 0.50` at `k = π/2, π/3, π/4, π/5, π/6`: a factor 1.9 over a
-  factor 3 in `k`, still growing at the larger momenta.
-- **The bound follows.** With `S_∞(k)` larger than the series values, the
-  Feynman bound at each `k` is smaller than the series gave: `1.25` at
-  `π/2` and `0.74` at `π/3` on 12³ against `1.69` and `1.04` on 4³ and 6³.
-  The mode at `π/6` decays with rate `0.25–0.33`, `ω·L ≈ 3–4`.
+- **Fixed momentum, growing size (not established).** `S_T(π/3)`:
+  `0.557 ± 0.022` (6³) → `0.778 ± 0.048` (12³). `S_T(π/2)`: `0.692 ± 0.013`
+  (4³) → `0.75–0.83` (8³) → `0.89–0.94` (12³) → `1.039 ± 0.073` (16³; that
+  run, 120 walkers and projection 30, also gave `S_T(π/4) = 0.770 ± 0.047`,
+  `S_T(π/8) = 0.591 ± 0.037` and `e_0 = −0.28576` per plaquette). An earlier
+  version read the flat forward-walking lags as showing that the growth is
+  in the ground state. That does not follow: flat lags exclude a lag bias,
+  not a population bias. Open PR 9220 measured the population bias on 8³
+  (the energy and the short-range correlations move with the walker number,
+  and extrapolating in it returns the 6³ value of the nearest-neighbour
+  correlation), found the weight spread per block twice as large on 12³
+  and 16³ as on 8³, and found the forward-walking errors understated by
+  about a factor of two. The growth may be a finite-size property of the
+  ground state or a bias that grows with the torus; these runs do not
+  decide.
+- **The series and the bound.** Earlier bullets here built lower bounds on
+  the infinite-lattice structure factor, and a smaller Feynman bound, from
+  the largest-torus values; they are withdrawn with the reading they rested
+  on. Averaged over independent runs (open PR 9220) the smallest-momentum
+  structure factor is `0.710 ± 0.010`, `0.572 ± 0.018`, `0.491 ± 0.022` on
+  4³, 6³, 8³, a monotonic fall; the two fits of this note use single-run
+  ten-bin errors and are within the run-to-run scatter.
+- **The mode at the smallest momentum.** Its correlation decays with rate
+  `0.25–0.33` at `π/6` on 12³ and `0.07–0.13` at `π/8` on 16³, with the same
+  caveats.
 
 ## What this means for the lanes
 
@@ -166,7 +171,8 @@ certified by the cache of this note.
 
 ## What stays open
 
-- The fixed-`k` extrapolations in `L`: `S_T(π/2)` on 16³, `S_T(π/3)` on
+- A controlled walker population first (open PR 9220), then the fixed-`k`
+  extrapolations in `L`: `S_T(π/2)` on 16³, `S_T(π/3)` on
   18³, `S_T(π/4)` on 16³, at a precision of 0.03, which need 250–500
   walkers and forward lags growing with the torus; a certified 12³ point.
 - The late-time gap on 10³ beyond `τ = 2`.

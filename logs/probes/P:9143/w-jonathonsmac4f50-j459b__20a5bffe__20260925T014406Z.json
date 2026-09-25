@@ -1,0 +1,36 @@
+{
+ "task": "P:9143",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-calibration-and-prepared-p",
+ "worker": "w-jonathonsmac4f50-j459b",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9143",
+ "pr": 9143,
+ "branch": "codex/mobile-record-calibration-and-prepared-probe-20260924",
+ "git_sha": "20a5bffe",
+ "started_utc": "20260925T014406Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9143's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "9fc74f1bc357f040bbacb084cbe389913a163453417d167df7d9b9c91c7b4d64",
+ "stdout_tail": "PR #9143: Calibrate original records and construct a prepared matter probe\nbranch codex/mobile-record-calibration-and-prepared-probe-20260924 (base codex/mobile-record-unrestricted-observation-counts-20260924)\nrunners in the PR: 1\n== scripts/original_record_calibration_and_prepared_matter_probe_2026_09_24.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j459b",
+  "at_utc": "20260925T014411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 ---
 claim_id: round_three_synthesis_the_photon_from_four_sides_the_formation_clocks_the_text_admits_and_a_three_dimensional_charge_bounded_theorem_note_2026-09-24
 claim_type: bounded_theorem
-claim_scope: "A synthesis of seven open blocks (open PRs 9161, 9163, 9169, 9171, 9164, 9166, 9168), all supplied models with finite diagnostics and none adopted. The runner recomputes one exact identity per block with its own code path: the Feynman numerator 2 u_0 s^2 on the exact 2^3 flip component (864 states, E_0 = -9.026721, to 1e-9); the zone average 3 of the transverse weight and the vanishing longitudinal combination on ice samples (to 1e-15); the RK clause D - A annihilating the uniform vector on that component (to 1e-15, lowest eigenvalue zero); the lattice Maxwell covariance (1/2) sqrt(K/U) (C^T C)^{1/2} on 4^3 equal to A |s(k)| (1 - g g^+) with kernel N + 2 (to 1e-15); rate functionals of the menu odds invariant under menu dephasing while purity and coherence rates move by 0.49 and 0.98; the hyperhoneycomb site set on the 4x4x8 torus trivalent with axis bonds, connected, bipartite, half the points; the two fits of the four-size series (nu = 0.341, chi^2 5.06; S_0 = 0.392, a = 0.189, chi^2 3.82); and the register of fourteen decision points. What the blocks found: the pure-ring point's transverse fluctuations at the smallest momentum are about a third of the uniform-ice constant (0.692, 0.557, 0.575, 0.510 on 4^3-10^3 against 1.5), the missing weight sits at the zone corner without growing, the redistribution switches on continuously from the RK point, no size-independent Gaussian photon fits the numbers, and the four-size series is fitted mildly better by a constant plus a linear term than by a power; the axiom text admits every formation-rate class and a rate reads only registered content iff it is invariant under menu dephasing; the hyperhoneycomb composite network embeds in the doubled cubic lattice with an exact SU(2) charge and one Weyl pair. No power law, gap value, phase, thermodynamic limit, reading or construction is adopted or asserted."
+claim_scope: "A synthesis of seven open blocks (open PRs 9161, 9163, 9169, 9171, 9164, 9166, 9168), all supplied models with finite diagnostics and none adopted. The runner recomputes one exact identity per block with its own code path: the Feynman numerator 2 u_0 s^2 on the exact 2^3 flip component (864 states, E_0 = -9.026721, to 1e-9); the zone average 3 of the transverse weight and the vanishing longitudinal combination on ice samples (to 1e-15); the RK clause D - A annihilating the uniform vector on that component (to 1e-15, lowest eigenvalue zero); the lattice Maxwell covariance (1/2) sqrt(K/U) (C^T C)^{1/2} on 4^3 equal to A |s(k)| (1 - g g^+) with kernel N + 2 (to 1e-15); rate functionals of the menu odds invariant under menu dephasing while purity and coherence rates move by 0.49 and 0.98; the hyperhoneycomb site set on the 4x4x8 torus trivalent with axis bonds, connected, bipartite, half the points; the two fits of the four-size series (nu = 0.341, chi^2 5.06; S_0 = 0.392, a = 0.189, chi^2 3.82); and the register of fourteen decision points. What the blocks found: the pure-ring point's transverse fluctuations at the smallest momentum are about a third of the uniform-ice constant (0.692, 0.557, 0.575, 0.510 on 4^3-10^3 against 1.5), the missing weight sits at the zone corner without growing, the redistribution switches on continuously from the RK point, no size-independent Gaussian photon fits the numbers, and the four-size series is fitted mildly better by a constant plus a linear term than by a power; the axiom text admits every formation-rate class and a rate reads only registered content iff it is invariant under menu dephasing; the hyperhoneycomb composite network embeds in the doubled cubic lattice with an exact SU(2) charge and one Weyl pair. No power law, gap value, phase, thermodynamic limit, reading or construction is adopted or asserted. Correction (open PR 9220): the single-run errors of the forward-walking structure factor are about half the run-to-run scatter, so the four-size fits are within it (run averages 0.710, 0.572, 0.491 on 4^3, 6^3, 8^3), and the fixed-momentum growth of the auxiliary 12^3 and 16^3 runs is not established."
 upstream_dependencies:
   - minimal_axioms
   - uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_bounded_theorem_note_2026-09-23
@@ -45,7 +45,10 @@ what stays open; the runner recomputes one identity per block.
   Gaussian; the mode at each `k_min` decays as one exponential with rate
   1.5, 0.9, 0.5, 0.4; the four-size series is fitted mildly better by
   `S_0 + a·k` (`S_0 = 0.39`, `χ² = 3.8`) than by a power (`ν = 0.34`,
-  `χ² = 5.1`); the bound's exponent in `k` is 1.45.
+  `χ² = 5.1`); the bound's exponent in `k` is 1.45. Open PR 9220 later
+  found these single-run errors about half the run-to-run scatter, so the
+  fits are within it; run averages give `0.710, 0.572, 0.491` on 4³, 6³,
+  8³, a monotonic fall.
 - *Price.* No new structure: D-gauss, D-roles, D-ring, and the RK potential
   D-RK for the sweep; the Gaussian theory is a supplied comparison
   (D-Gauss-comparator), not a premise.
@@ -54,10 +57,13 @@ what stays open; the runner recomputes one identity per block.
   of the transverse fluctuations — and its Feynman bound falls faster than
   `1/L`, but no power is resolved: a residual constant near a quarter of
   the pinch-point weight would make the bound quadratic at long
-  wavelengths; a fading one leaves the linear term as the photon. The 12³
-  run (open PR 9171, addendum) shows the smallest-momentum series is
-  contaminated by a finite-size suppression that weakens with `L`, so the
-  separator is `S_T(k)` at fixed `k` extrapolated in `L`, not the series.
+  wavelengths; a fading one leaves the linear term as the photon. The
+  auxiliary 12³ and 16³ runs (open PR 9171) show the structure factor
+  growing with the torus at fixed momentum, but open PR 9220 found a
+  walker-population bias that grows with the torus and forward-walking
+  errors about half the run-to-run scatter, so that growth is not
+  established; an earlier version of this paragraph read it as a
+  ground-state finite-size effect, and that reading is withdrawn.
 
 **Formation (open PR 9164).**
 - *Exact.* A rate reads only registered content iff it is invariant under
@@ -100,7 +106,10 @@ times `L`; the six-mode statistics did not support it and the check that
 had asserted it failed as designed — no note is framed on a 1.5-sigma
 point. Third, exact bookkeeping (a sum rule, a zero-mode identity, a
 dephasing criterion) turns a numerical puzzle into a question with a
-definite next measurement.
+definite next measurement. Fourth, added after open PR 9220: a method has
+regulators of its own; flat forward-walking lags do not exclude a
+population bias, and errors from bins along one run must be checked
+against independent runs.
 
 ## Setting and decision points
 
@@ -128,15 +137,13 @@ points. None is adopted.
 
 ## What stays open
 
-- The photon's power. An auxiliary 12³ run (open PR 9171, addendum) gave
-  `S_T(π/6) = 0.496 ± 0.057`, on both fits' predictions, but showed the
-  structure factor growing with the torus at fixed momentum
-  (`S_T(π/3)`: 0.557 on 6³ → 0.778 on 12³; `S_T(π/2)`: 0.69 → 0.9 from 4³
-  to 12³) with flat forward-walking lags: the smallest-momentum series
-  mixes the `k`-dependence with a weakening finite-size suppression, and
-  the observable to extrapolate is `S_T(k)` at fixed `k` (16³ and 18³ at
-  a precision of 0.03, with 250–500 walkers and lags growing with the
-  torus); the late-time gap on the larger tori.
+- The photon's power. Open PR 9220 answered the question whether the
+  torus steers the result: at size 8 a region bounded by records gives the
+  same interior, and the walker population is the larger regulator. What
+  stays open is a controlled population (walker numbers growing with the
+  system, a better guide, or a pure estimator without lineages, with errors
+  from independent runs), then the fixed-momentum structure factor beyond
+  8³ on both regulators; the late-time gap on the larger tori.
 - Which formation-rate class the framework favours, beyond what the text
   admits; whether D-register is binding.
 - The hyperhoneycomb network's ground-state flux sector and its gauging

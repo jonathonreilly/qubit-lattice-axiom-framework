@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_time_axis_is_history_index_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_time_axis_is_history_index_2026_07_03.py",
+ "seed": 76493,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224813Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f626247e15432456f8bc3d27fff49dd06e7757153d848e3ba2d59251045e1e4b",
+ "stdout_tail": "tions non-degenerate (a strict record step in each)\nCHECK 25: PASS -- T3 dichotomy horn A: incomparable off-diagonal => order NOT total => not a single sequence\nCHECK 26: PASS -- T3 degenerate-j grid collapses to a single chain along i (one clock remains)\nCHECK 27: PASS -- T3 dichotomy horn B: totally-ordered grid (cells ~ i+j) serializes to a single chain (one clock remains)\nCHECK 28: PASS -- T4 quote guard: single-clock note carries the S3' certificate W M_KS W^T = M_KS with the sign field\nCHECK 29: PASS -- T4 quote guard: S3' non-triviality -- plain permutation without the sign field FAILS\nCHECK 30: PASS -- T4 quote guard: axioms file carries the current landed Record sentence (records are permanent; commit 50f0db6187, authoritative)\nCHECK 31: PASS -- T4 statement guard: note carries the reconciliation/resonance sentence\nCHECK 32: PASS -- T4 record-content: generic history singles out index; symmetric history axis-blind (resonance with S3')\nCHECK 33: PASS -- T4 B-AXIS decomposition covers {1a,1b,2,3}; axis-selection CONDITIONAL/OPEN incl. periodic compactification; B-AXIS.3 UNCHANGED\nCHECK 34: PASS -- T5 residue list parsed from the note has 15 entries (got 15)\nCHECK 35: PASS -- T5 required residue keys present in the note's parsed list (missing: none)\nCHECK 36: PASS -- T5 four new residues present (translation convention; witness/window; four-axis; event import) (missing: none)\n------------------------------------------------------------------------\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

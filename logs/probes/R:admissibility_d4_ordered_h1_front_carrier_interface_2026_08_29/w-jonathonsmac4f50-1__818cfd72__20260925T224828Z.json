@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29.py",
+ "seed": 76508,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224828Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=7 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f8c84c6e08fa8b58ce285364f47bdbe3fd3d651c81a9e6b540b8e4a3eb8002db",
+ "stdout_tail": "PASS A_two_sector_algebra: central ranks are 16+16 and explicit matrix units give M2 direct-sum M2\nPASS B_cptp_multiplicity_trace: eight explicit C32-to-C4 Kraus selectors are complete and intertwine all three generators\nPASS C_carrier_covariance: two exact generators produce all 24 proper cubic carrier rotations and intertwine the multiplicity trace\nPASS D_fixed_frame_cylinders: fixed-frame enlarged-register protocol has sharp=(1/2, 0, 1/4, 1/4), half=(5/16, 3/16, 1/4, 1/4), and the stated shell overlap\nPASS E_stencil_covariance_counterexample: proper R fixes pure-permuted mask17 but flips its detector; branch residual rank is four\nPASS F_actual_fault_controls: rescaled Kraus, explicitly executed carrier reset, and changed branch-direction operands each fail their target identity\nPASS G_scope: physical encoding/readout, stencil covariance, full mutation sweep, and audit remain open\nALGEBRA: word_rank=8; chirality_ranks=[16, 16]; carrier=M4.\nHISTORY_FIXED_FRAME: sharp=(1/2, 0, 1/4, 1/4); half=(5/16, 3/16, 1/4, 1/4); reset=(1/4, 1/4, 1/4, 1/4); spatial_encoding=supplied_open_bridge.\nCOVARIANCE_BOUNDARY: pure_mask17=17; rotated_detector=(0, -1, 0); residual_rank=4.\nFAULT_CONTROLS: executed=3; rejected=3; full_mutation_sweep=false.\nTOTAL: PASS=7 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

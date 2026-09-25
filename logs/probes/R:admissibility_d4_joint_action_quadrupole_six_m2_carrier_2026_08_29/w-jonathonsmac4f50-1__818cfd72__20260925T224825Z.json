@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_d4_joint_action_quadrupole_six_m2_carrier_2026_08_29.py",
+ "seed": 76505,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224825Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "61a25786363e36e022947c5a233253965ab152a89bd4e564431305992e0e8d4e",
+ "stdout_tail": "ank': 3, 'spin2_rank': 5, 'sum_rank': 9, 'prepared_rank': 9, 'decode_identity': True, 'matrix_identity': True}\nPASS: conditional law excludes action scalar and skew sectors | {'condition': Matrix([\n[-q0/2, -q2/2,       -q3/2],\n[-q2/2, -q1/2,       -q4/2],\n[-q3/2, -q4/2, q0/2 + q1/2]]), 'condition_identity': True, 'probability_independence': True, 'moment_identity': True, 'source_identity': True, 'normalization': 1, 'universal_axis_floor': 1/18, 'universal_corner_floor': 1/64, 'universal_condition_rank': 5, 'universal_probability_rank': 5}\nPASS: all 24 joint rotation identities | 24\nPASS: exact H1/H2 incoming and outgoing coordinates | {'H1': (sqrt(2)/32 + 1139/2304, sqrt(2)/36 + 1793/20736, True, True), 'H2': (5*sqrt(6)/192 + 17*sqrt(3)/192 + 647/2304, sqrt(6)/1152 + 7*sqrt(2)/216 + 127*sqrt(3)/3456 + 4483/41472, True, True)}\nPASS: all 512 original box vertices | (131/1024, 395/9216)\nPASS: actual positive-direction Jacobian | (9, 3/16384)\nTOTAL: 6 passed, 0 failed\nper_element: exact finite matrix, coefficient or probability predicates named above were executed.\nper_site: supplied six-neighbor condition identities only; no generated physical-site update executed.\nper_mode: checked and not executed \u2014 no universal momentum or dynamical mode campaign is claimed.\nper_block: finite conditional source, carrier or channel scope is exactly the named predicates above.\nlattice_wide: checked and not executed \u2014 no whole-stencil dynamics, infinite history or physical selection is claimed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224826Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

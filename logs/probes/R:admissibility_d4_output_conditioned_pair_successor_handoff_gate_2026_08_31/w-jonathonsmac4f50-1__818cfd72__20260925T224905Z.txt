@@ -1,0 +1,5 @@
+PASS current_source_and_note_inputs
+PASS 192_routes_common160_carrier_and_failed_four_step
+PASS two_route_chiralities
+TERMINAL: BLOCK30-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED
+TOTAL: PASS=3 FAIL=0

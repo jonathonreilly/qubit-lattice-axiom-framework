@@ -1,0 +1,35 @@
+{
+ "task": "R:readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "readable",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.py",
+ "seed": 77395,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T230315Z",
+ "elapsed_s": 98.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=63 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b5666763c79038bc78ad8f9c97c811170254f3c6498b68266570a558bae898f1",
+ "stdout_tail": "ign classes: numerical KS minimum, 146 six-decimal energy bins\nPASS: T4-extras-energy conditional zero-diagonal isolated-state offsets from the two fixed-matrix energies\nPASS: T4-odd-corner-8x4x4 8x4x4 parity-map rank 15, fibre 2^33\nPASS: C-pinned-free-center both free-center and opposite-pinned alternatives prevent the lemma\nPASS: C-local-coverage one 5x5x5 window reaches 64/64 but only 80/128 sites\nPASS: C-completion-family full table is flexible but adds 358 entries at realised profiles\nPASS: C-zero-bit-not-hopping 24/48 formal complements from zero bits have zero supplied hop amplitudes\nPASS: C-fixed-matrix-squares integer H^2=12I/10I and trace zero certify the two chosen spectra\nPASS: note-length the note stays under 330 lines\nPASS: note-registry-id the note declares its registry id\nPASS: note-vocabulary the note avoids the banned vocabulary\nPASS: note-wording superlattice role pattern; nothing overclaimed\nPASS: note-scope no law selected; bounded scope stated\nPASS: note-interfaces the note names its parent pull requests\nPASS: note-numbers the note carries its counts\nPASS: note-boundary the quoted and undecided rows are named\nper_element: 2 record values, 48 templates, 124 offsets\nper_site: every site of every named torus and window\nper_mode: 8 and 16 coarse modes, free-fermion spectra\nper_block: support cylinders, 16 verified isolated witnesses; physical encoding not supplied\nlattice_wide: 4x2x2, 4x4x2, 4x4x4, 8x4x4; Z^3 censuses\nelapsed_sec: 98.6\nTOTAL: PASS=63 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/readable_matter_law_on_5x5x5_window_parity_completion_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

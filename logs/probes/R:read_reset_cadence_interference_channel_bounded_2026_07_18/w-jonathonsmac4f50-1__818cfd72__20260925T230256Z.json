@@ -1,0 +1,31 @@
+{
+ "task": "R:read_reset_cadence_interference_channel_bounded_2026_07_18",
+ "type": "runner-reexecution",
+ "lane": "read",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/read_reset_cadence_interference_channel_bounded_2026_07_18.py",
+ "seed": 77376,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T230256Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "42e80654ce447a8cff18bb5ee22912c9a48ed5972f35dca85988e5f229eb2f8b",
+ "stdout_tail": "PASS seeded control is unitary\nPASS every tested kernel is doubly stochastic\nPASS channel representation equals K_(m+n)-K_m K_n\nPASS entrywise defect equals distinct-intermediate-path cross terms\nPASS cadence defect has zero row and column sums\nPASS interval order is non-vacuous on the seeded control\nPASS monomial unitary closes every tested cadence pair\nPASS finite-order nonmonomial recurrence does not imply kernel semigroup closure\nPASS Hadamard determinant bound is strict on the seeded nonmonomial kernel\nPASS determinant-bound saturation gives one unit entry per column\nTOTAL PASS=10 FAIL=0\nBOUNDARY: finite supplied unitaries and a declared rank-one frame; no instrument, Record, probability law, clock, or mass law is derived\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

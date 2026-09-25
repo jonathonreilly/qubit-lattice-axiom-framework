@@ -1,0 +1,32 @@
+{
+ "task": "R:r_b10_port_to_zero_source_word_completion_cycle117_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "r",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/r_b10_port_to_zero_source_word_completion_cycle117_2026_07_15.py",
+ "seed": 77306,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T230146Z",
+ "elapsed_s": 44.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1638e9b7f94675597160f0de5c123ec3341e27c54a214401689abccdb5485484",
+ "stdout_tail": " :: []\nPASS C06 every rotated completed history exposes only rotated next rail :: []\n\n===============================================================================\nD - Wrong-word, VALID/READY, and typed-H0 controls\n===============================================================================\nPASS D01 all eight flips plus wrong VALID/READY stop before Cycle 117 :: []\nPASS D02 corrupted graph census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\nPASS D03 exhausted typed-H0 alternate reaches no Cycle-117 record :: states=44 edges=97 sizes=(6, 7) bad=() reached=[]\n\n===============================================================================\nE - Scope and no-go-discipline boundary\n===============================================================================\nFAIL E01 note names exact bounded positive\nFAIL E02 note names exact next object\nFAIL E03 note states Cycle 116 contributes zero rows\nFAIL E04 note carries refreshed N1-N8 discipline\nFAIL E05 note denies generic addressability and unbounded recurrence\nFAIL E06 note makes no axiom addition\nPASS E07 Cycle 117 writes only runner and review note\n\nWRITER_CANONICAL=8 WRITER_RAW=192 INHERITED=2 COMPLETION_CANONICAL=1 COMPLETION_RAW=24\nGROWN=82 UNION_RAW=8312 LOCAL_STATES=76056 LOCAL_EDGES=441682\nPRODUCT_STATES=7377432 PRODUCT_EDGES=50144530\nPASS=25 FAIL=7\nRESULT=FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230230Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

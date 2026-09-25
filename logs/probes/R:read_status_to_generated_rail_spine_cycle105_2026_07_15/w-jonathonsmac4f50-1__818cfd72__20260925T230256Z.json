@@ -1,0 +1,32 @@
+{
+ "task": "R:read_status_to_generated_rail_spine_cycle105_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "read",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/read_status_to_generated_rail_spine_cycle105_2026_07_15.py",
+ "seed": 77376,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T230256Z",
+ "elapsed_s": 19.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d7b024125d7ef6cfa91474a38238ca4467b0346a4033ba95cca20703fe33fa8",
+ "stdout_tail": "============\nD - Every literal corruption and handshake error fails closed\n===============================================================================\nPASS D01 all eight one-bit flips stop before join and payload :: []\nPASS D02 exact corrupted graph census is pinned :: [(760, 2274), (680, 2022), (600, 1770), (440, 1186), (120, 238), (200, 490), (80, 152), (60, 109)]\nPASS D03 wrong VALID and READY remain exact fail-closed products :: [(40, 66), (20, 23)]\nPASS D04 bit5 reject poison remains explicit and terminal\nPASS D05 all corrupt terminals grow eight exact rail slices without acceptance :: []\n\n===============================================================================\nE - Proper-cubic covariance, old debris, and bounded scope\n===============================================================================\nPASS E01 all 175,440 raw proper-cubic images preserve output :: []\nPASS E02 all 264 positive/corrupt terminal rotations expose only next rail :: []\nFAIL E03 note pins zero supplied static residue\nFAIL E04 note closes READ_STATUS_TO_GENERATED_RAIL_SPINE\nFAIL E05 note names the next constructive surface\nFAIL E06 note carries full N1-N8 discipline\nFAIL E07 note makes no complete reusable-harness claim\nPASS E08 Cycle 105 writes only runner and note\n\nSOURCE=264 SUPPLIED_STATIC=0 SPINE_WRITES=17 PAYLOAD_WRITES=3\nBASE_RAW=6896 BRIDGE_CANONICAL=18 BRIDGE_RAW=414 FULL_RAW=7310\nFB_STATES=5048 FB_EDGES=21426 PRODUCT_STATES=489656 PRODUCT_EDGES=2562930\nSUMMARY: 35 PASS / 6 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T230315Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

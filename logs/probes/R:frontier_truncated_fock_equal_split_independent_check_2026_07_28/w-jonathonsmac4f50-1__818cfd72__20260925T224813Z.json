@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_truncated_fock_equal_split_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_truncated_fock_equal_split_independent_check_2026_07_28.py",
+ "seed": 76493,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224813Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "54bdb26d85565bae4c524e691b9fa05556b2ec0e819cfb61b16e7101914976d6",
+ "stdout_tail": "prefix :: {'mask_counts': (1, 6, 15, 20, 15, 6, 1), 'channel_counts': (0, 6, 24, 36, 24, 6, 0), 'sign_counts': [{-1: 0, 1: 0}, {-1: 0, 1: 6}, {-1: 0, 1: 24}, {-1: 0, 1: 36}, {-1: 0, 1: 24}, {-1: 0, 1: 6}, {-1: 0, 1: 0}]}\nPASS the equal split is not selected by conservation :: {'commutators_by_alpha': {'0.0': 0.0, '0.25': 0.0, '1.0': 0.0, '1.7': 0.0, '2.0': 0.0}, 'conclusion': 'only the sum is conserved'}\nPASS dense exponentiation reproduces the truncated layers and layer-1 anchor :: {'angle': 0.36272452333990823, 'analytic_weight': 0.12589921612871377, 'layers': [{'number': 0, 'active_channels': 0, 'weight_min': 0.0, 'weight_max': 0.0, 'off_layer': 0.0, 'transpose_residual': 0.0}, {'number': 1, 'active_channels': 6, 'weight_min': 0.12589921612871374, 'weight_max': 0.12589921612871377, 'off_layer': 0.0, 'transpose_residual': 1.9229626863835638e-16}, {'number': 2, 'active_channels': 24, 'weight_min': 0.12042616790869433, 'weight_max': 0.12042616790869437, 'off_layer': 0.0, 'transpose_residual': 3.449963341299892e-16}]}\nPASS the enumerated domain is the strict 6,776-column truncated slice :: {'local_truncated_masks': 22, 'truncated_columns': 6776, 'complete_columns': 57344}\nPASS reciprocity is correctly limited to transpose and real-bilinear symmetry :: {'transpose_residual': 3.9496876521487887e-16, 'real_bilinear_residual': 3.469446951953614e-18, 'generic_complex_bra_ket_residual': 0.042218213544842946}\nSUMMARY {'pass': 7, 'fail': 0, 'runtime_seconds': 0.110441}\nFINAL ALL_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224813Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_truncated_fock_equal_split_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

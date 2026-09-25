@@ -1,0 +1,34 @@
+{
+ "task": "R:admissibility_d4_quantum_quadrupole_common_source_owner_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_d4_quantum_quadrupole_common_source_owner_2026_08_29.py",
+ "seed": 76547,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224907Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9f6a3403c121f984347d51b9e1a1d6a6b3c296311ae61c22d56458a7ffa58d20",
+ "stdout_tail": "PASS: normalized rank-five moment identity | (1, 5, 5)\nPASS: uniform Bloch-domain probability floors | ((4/3, 4/3, 4/3), (1, 1, 1), 1/18, 1/64)\nPASS: all 24 simultaneous address/Bloch frames | 24\nPASS: exact H1 and H2 preparations and source moment | {'H1': (27/32, sqrt(2)/16 + 3/16, True, True), 'H2': (27*sqrt(3)/128 + 81/128, 3*sqrt(2)/64 + sqrt(3)/16 + 3/16, True, True)}\nPASS: all 32 vertices of the five-parameter box | (27/128, 9/128)\nPASS: mixtures differ from fixed pure outcome menu | Q=0: auxiliary mixtures I/2; fixed outcomes pure\nTOTAL: 6 passed, 0 failed\nper_element: exact finite matrix, coefficient or probability predicates named above were executed.\nper_site: supplied six-neighbor condition identities only; no generated physical-site update executed.\nper_mode: checked and not executed \u2014 no universal momentum or dynamical mode campaign is claimed.\nper_block: finite conditional source, carrier or channel scope is exactly the named predicates above.\nlattice_wide: checked and not executed \u2014 no whole-stencil dynamics, infinite history or physical selection is claimed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224907Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

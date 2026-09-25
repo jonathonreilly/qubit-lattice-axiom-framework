@@ -1,0 +1,44 @@
+
+===============================================================================
+A - Literal placement and coordinate aliases
+===============================================================================
+FAIL A01 Cycle 127 note exists
+PASS A02 orientation 13 maps the old port exactly onto R_B01 port :: mapped=(5, 4, -3) new=(5, 4, -3)
+PASS A03 proposed G0 is exactly transformed JOIN :: G0=(5, 1, -3) JOIN=(5, 1, -3)
+PASS A04 proposed G1 is exactly transformed D7 :: G1=(6, 1, -3) D7=(6, 1, -3)
+PASS A05 all five phase-chain sites are open at Cycle-124 terminal
+PASS A06 G0 has the exact anchored L6+L6 local :: (((-1, 0, 0), 'L6'), ((0, -1, 0), 'L6'))
+
+===============================================================================
+B - Proper-cubic co-images and unary D7/D2 alias
+===============================================================================
+PASS B01 G0 anchor orbit fires at five source sites, not one :: ((-1, -5, -3), (-1, -2, -6), (2, -5, 0), (2, 1, -6), (5, 1, -3))
+PASS B02 all 153 phase roles give identical canonical locals at G1 and D2 :: []
+PASS B03 literal outputs disagree: G1/D7 needs H1 while D2 needs H0 :: G1/D7=H1 D2=H0
+PASS B04 eighteen roles conflict with an existing unary law :: ['ALL', 'BTQ', 'COMP6', 'DONE', 'L5', 'L8', 'L9', 'LAUNCH_A', 'M', 'R_B12', 'R_B31', 'R_B40', 'R_C12', 'R_C22', 'R_LB', 'R_LC', 'START', 'W5']
+PASS B05 one role already maps unary to H1; 134 would add it :: existing=['R_LA'] novel=134
+PASS B06 every nonconflicting unary choice writes wrong H1 at D2
+PASS B07 absent representative R_C01 yields nineteen unary shell sites :: ((-2, -5, -3), (-2, -2, -6), (-1, -6, -3), (-1, -5, -4), (-1, -5, -2), (-1, -3, -6), (-1, -2, -7), (-1, -1, -6), (1, -5, 0), (1, 1, -6), (2, -6, 0), (2, -5, 1), (2, 1, -7), (2, 2, -6), (3, -5, 0), (3, 1, -6), (5, 1, -4), (5, 2, -3), (6, 1, -3))
+
+===============================================================================
+C - Topological scope of the failure
+===============================================================================
+PASS C01 downstream G2 cannot be a prior second parent of G1 :: G1-G2=1 D2-G2=3
+PASS C02 G3 guards D4 and G4 neighbours D1 only downstream
+PASS C03 phase-only interpretation permanently occupies JOIN and D7
+
+===============================================================================
+D - Scope and no-go-discipline boundary
+===============================================================================
+FAIL D01 note names exact bounded negative
+FAIL D02 note names relocated D7/JOIN next target
+FAIL D03 note carries refreshed N1-N8 discipline
+FAIL D04 note denies broad orientation-13 and writer no-go
+FAIL D05 note makes no axiom addition
+PASS D06 Cycle 127 writes only runner and review note
+FAIL D07 note keeps the two-parent follow-up causal and non-retained
+
+ROLES=153 CONFLICT=18 EXISTING_H1=1 NOVEL_H1=134
+G0_SOURCE_IMAGES=5 REPRESENTATIVE_UNARY_SHELL=19
+PASS=16 FAIL=7
+RESULT=FAIL

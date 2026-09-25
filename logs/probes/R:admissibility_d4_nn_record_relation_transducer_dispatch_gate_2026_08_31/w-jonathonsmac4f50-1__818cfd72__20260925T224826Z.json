@@ -1,0 +1,35 @@
+{
+ "task": "R:admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31",
+ "type": "runner-reexecution",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/admissibility_d4_nn_record_relation_transducer_dispatch_gate_2026_08_31.py",
+ "seed": 76506,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "818cfd72",
+ "started_utc": "20260925T224826Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0ea705a6859bae9948e4578f8a7ecf35ab6ac15172191eafe24fe83f0bf91837",
+ "stdout_tail": "PASS current_source_and_note_inputs\nPASS reached_STATUS_sampling\nPASS 28_clean_76_borrowed\nPASS 56_macro_864_primitive_schedule\nPASS QND_and_symbolic_cleanup\nPASS complete256_truth\nPASS covariance\nPASS logical_side_exchange\nPASS abstract_totalization_only\nPASS token_route_correspondence\nPASS actual_Toffoli_CNOT_deletion\nTERMINAL: BLOCK31-NAMED-BOUNDED-CHECKS-COMPLETE;CONDITIONAL-PROOFS-PRESERVED\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T224828Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

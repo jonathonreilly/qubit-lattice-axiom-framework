@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F116 the price of forming one record | ledger of a moving amplitude from its definition against sum e phi; the price and its weak-field ratio (exact); prices by site in a held box; the star's point-charge field and price in boxes 7, 9, 11 (symmetry-reduced exact solves); two-place first-order kicks | block 116 (harvest of #8653, #8748; Grok-refereed) |

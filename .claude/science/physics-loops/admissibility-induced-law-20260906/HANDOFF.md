@@ -25,3 +25,10 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-24 block 116 opened for review (harvest block; independent vs main)
+Forming one record keeps the ledger only at a price:
+- the price is E' = Λ/(1 − kΛg_yy) for every amplitude, and at weak field the field energy gained by contracting to a point;
+- one price serves every site only with the ambient at infinity; in a held box it depends on the site and can be below the amplitude's energy;
+- the seven-site star's price does not see the walls; larger spreads' prices do;
+- at first order a source in two places kicks a test body with the mean only under amplitude sourcing, and not at all under records only.

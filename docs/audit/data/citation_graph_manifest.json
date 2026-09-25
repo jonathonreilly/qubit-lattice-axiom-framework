@@ -1,6 +1,6 @@
 {
  "edge_count": 14640,
- "node_count": 6655,
+ "node_count": 6656,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -861,6 +861,10 @@
   "admissibility_rule_formation_unit_conditional_identities_and_finite_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",
    "out_degree": 3
+  },
+  "admissibility_rule_forming_one_record_keeps_the_ledger_only_at_a_price_one_price_serves_every_site_only_with_the_ambient_at_infinity_and_a_source_in_two_places_separates_the_readings_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_free_capturing_bodies_are_carried_by_the_wind_capture_law_anisotropic_collisionless_shadow_dilution_law_of_motion_and_its_window_bounded_theorem_note_2026-09-21": {
    "deps_hash": "617561b49ce2",

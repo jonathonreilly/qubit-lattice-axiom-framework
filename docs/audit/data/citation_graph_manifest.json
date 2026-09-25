@@ -1,6 +1,6 @@
 {
  "edge_count": 14678,
- "node_count": 6667,
+ "node_count": 6668,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1057,6 +1057,10 @@
   "admissibility_rule_the_unit_of_rate_decides_the_alternations_thresholds_in_log_rates_an_exact_mass_a_convexity_term_and_no_global_minimum_under_a_quadratic_law_bounded_theorem_note_2026-09-23": {
    "deps_hash": "8512a390dd54",
    "out_degree": 8
+  },
+  "admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_walks_links_built_from_the_frame_carry_the_lengths_curvature_only_at_plaquette_reach_bounded_theorem_note_2026-09-23": {
    "deps_hash": "00936abbd730",

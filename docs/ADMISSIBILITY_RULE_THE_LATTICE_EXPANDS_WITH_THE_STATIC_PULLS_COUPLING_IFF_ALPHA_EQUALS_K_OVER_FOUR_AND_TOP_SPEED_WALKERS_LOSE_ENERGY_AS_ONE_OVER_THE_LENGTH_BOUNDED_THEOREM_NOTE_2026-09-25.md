@@ -1,13 +1,13 @@
 ---
 claim_id: admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 60's homogeneous kinetic model (T5(b)), block 124's kinetic family, block 129's volume power s = 3 and block 101's static clock law, with blocks 134, 135 and 136 for the kinetic normalization, all as landed on main; uniform content on a closed lattice; unit rate. (T1) exact: the member's clock constraint has no zero mode, so a static closed lattice holds no positive content; on the uniform dilation the member's kinetic term gives c_k = 12 alpha + 36 beta, which is -24 alpha < 0 at the closing ratio, so block 60's uniform motion exists, with lamdot^2 = rho/(24 alpha) (rho the content's energy per unit volume). (T2) exact: the static clock law gives the pull's coupling G = 1/(16 pi K), and the expansion obeys lamdot^2 = (8 pi G/3) rho with that same G iff alpha = K/4; then l-ddot/l = -(4 pi G/3)(rho + 3p), with the content's pressure p defined by dm/dlam = -3 p l^3. (T3) exact: content crosses bonds at rate w/l, so the massless walk on a uniformly stretched lattice is H(k)/l: a top-speed walker keeps its wave vector, its energy falls exactly as 1/l and its pressure is rho/3; the lattice then expands as l = (1 + t/t1)^(1/2), against (1 + t/t0)^(2/3) for rest content; a mixture's pressure is that of its top-speed part. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 60's homogeneous kinetic model (T5(b)), block 124's kinetic family, block 129's volume power s = 3 and block 101's static clock law, with blocks 134, 135 and 136 for the kinetic normalization, all as landed on main; uniform content on a closed lattice; unit rate. (T1) exact: the member's clock constraint has no zero mode, so a static closed lattice holds no positive content; on the uniform dilation the member's kinetic term gives c_k = 12 alpha + 36 beta, which is -24 alpha < 0 at the closing ratio, so block 60's uniform motion exists, with lamdot^2 = rho/(24 alpha) (rho the content's energy per unit volume); the equations are even under reversing time, so what is shown is that there is no static state, not a direction. (T2) exact: the static clock law gives the pull's coupling G = 1/(16 pi K), and the uniform motion obeys lamdot^2 = (8 pi G/3) rho with that same G iff alpha = K/4 (at beta = -alpha, alpha/K is the member's only free kinetic ratio, so this is the condition of blocks 134-136 met again, not independent evidence for it); then l-ddot/l = -(4 pi G/3)(rho + 3p), with the content's pressure p defined by dm/dlam = -3 p l^3. (T3) exact: content crosses bonds at rate w/l, so the massless walk on a uniformly stretched lattice is H(k)/l: a top-speed walker keeps its wave vector, its energy falls exactly as 1/l and its pressure is rho/3; on the growing branch the lattice then goes as l = (1 + t/t1)^(1/2), against (1 + t/t0)^(2/3) for rest content, and each has a time mirror; a mixture's pressure is that of its top-speed part. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py
 ---
 
-# The lattice expands with the static pull's coupling iff α = K/4, and top-speed walkers lose energy as one over the length
+# A closed lattice with content has no static state; its uniform motion shares the static pull's coupling iff α = K/4, and top-speed walkers lose energy as one over the length
 
 **Date:** 2026-09-25
 **Type:** bounded_theorem
@@ -21,11 +21,11 @@ No value, constant or theorem is imported as authority; the standard mathematica
 
 The landing review of blocks 134–139 left one question open: the member's zero modes. On a closed lattice the member's constraints have a uniform part, and at linear order about a static lattice that part forces the mean energy to vanish. Block 60 (landed) found that a closed lattice with content has no static configuration, but can move uniformly when its kinetic coefficient `c_k` is negative. This note puts the member's own numbers into that motion.
 
-- **T1: the zero mode is an expansion.** The member's clock constraint has no uniform part, so a static closed lattice holds no positive content. On a uniform stretch the member's kinetic term gives `c_k = 12α + 36β`, which is `−24α` at the closing ratio. That is negative, so block 60's uniform motion exists: the lattice expands (or contracts) with `λ̇² = ρ/(24α)`, where `ℓ = e^λ` is the bond length and `ρ` the content's energy per unit volume.
-- **T2: the same coupling as the static pull.** The member's static clock law gives the pull between bodies the coupling `G = 1/(16πK)`. The expansion obeys `λ̇² = (8πG/3)ρ` with that same `G` if and only if `α = K/4`. Then the expansion's rate of change obeys `ℓ̈/ℓ = −(4πG/3)(ρ + 3p)`, with `p` the content's pressure.
-- **T3: walkers in an expanding lattice.**
+- **T1: no static state.** The member's clock constraint has no uniform part, so a static closed lattice holds no positive content. On a uniform stretch the member's kinetic term gives `c_k = 12α + 36β`, which is `−24α` at the closing ratio. That is negative, so block 60's uniform motion exists: the lattice stretches or shrinks with `λ̇² = ρ/(24α)`, where `ℓ = e^λ` is the bond length and `ρ` the content's energy per unit volume. The equations are even under reversing time, so they do not say which.
+- **T2: the same coupling as the static pull.** The member's static clock law gives the pull between bodies the coupling `G = 1/(16πK)`. The uniform motion obeys `λ̇² = (8πG/3)ρ` with that same `G` if and only if `α = K/4`. At `β = −α`, `α/K` is the member's only free kinetic ratio, so this is the condition of blocks 134–136 met again, not independent evidence for it. Then the rate of change obeys `ℓ̈/ℓ = −(4πG/3)(ρ + 3p)`, with `p` the content's pressure.
+- **T3: walkers in a stretching lattice.**
   - Content crosses bonds at a rate proportional to `1/ℓ` (block 60's premise). So on a uniformly stretched lattice the massless walk is exactly `H(k)/ℓ`. A top-speed walker keeps its wave vector, and its energy falls exactly as `1/ℓ`. Its pressure is one third of its energy density.
-  - A lattice filled with top-speed content expands as `ℓ = (1 + t/t₁)^{1/2}`. With content at rest it expands as `(1 + t/t₀)^{2/3}` (block 60).
+  - On the growing branch a lattice filled with top-speed content goes as `ℓ = (1 + t/t₁)^{1/2}`, and with content at rest as `(1 + t/t₀)^{2/3}` (block 60). Each has a time mirror in which the lattice shrinks.
   - In a mixture only the top-speed part has pressure.
 
 In plain terms: a closed lattice with anything in it cannot sit still; it must stretch or shrink as a whole. How fast is set by the same number, `α = K/4`, that the books fixed and that makes bodies' pulls consistent with their motion. With that number, the stretching rate and the pull between two bodies are governed by one and the same constant. As the lattice stretches, a walker moving at the top speed keeps its wave pattern on the lattice, but each hop takes longer, so its energy falls in proportion to the stretch.
@@ -42,7 +42,7 @@ In plain terms: a closed lattice with anything in it cannot sit still; it must s
 - **Crossing bonds.** Block 60's premise is that bonds are crossed at `√(w_xw_y)/(χ_xχ_y)`, which on a uniform stretch is `w/ℓ`. For the walk this makes the hopping part `H(k)/ℓ`.
 - **Standard imports, named at definition level.** The fundamental solution of the Laplacian (`1/p²` is `1/(4πr)`); exact symbolic arithmetic.
 
-## Theorem T1 — the zero mode is an expansion
+## Theorem T1 — no static state
 
 *Statement.*
 - (a) `R₁` has no uniform part. So the uniform part of the clock constraint `K R₁ = e` reads `⟨e⟩ = 0`, and a static closed lattice holds no positive content.
@@ -58,7 +58,7 @@ In plain terms: a closed lattice with anything in it cannot sit still; it must s
 
 *Statement.*
 - (a) The static clock law `u = −e/(4Kp²)` gives, for a body of energy `m`, `u = −Gm/r` with `G = 1/(16πK)`.
-- (b) The expansion `λ̇² = ρ/(24α)` is `(8πG/3)ρ` with this `G` if and only if `α = K/4`.
+- (b) The uniform motion's constraint `λ̇² = ρ/(24α)` is `(8πG/3)ρ` with this `G` if and only if `α = K/4`.
 - (c) The length's equation, with the constraint, gives `ℓ̈/ℓ = λ̈ + λ̇² = −(ρ + 3p)/(48α)`. At `α = K/4` this is `−(4πG/3)(ρ + 3p)`.
 
 *Proof.*
@@ -66,9 +66,9 @@ In plain terms: a closed lattice with anything in it cannot sit still; it must s
 - (b) Solve for `α` (runner C1).
 - (c) The length's equation at `c_k = −24α`, `s = 3` is `−24αℓ³(2λ̈ + 3λ̇²) − 3pℓ³ = 0`. Substitute the constraint (runner C2). ∎
 
-So `α = K/4`, which the books fixed as a necessary condition (blocks 134–136), is also the value at which the lattice's expansion and the pull between bodies share one coupling. This is a second route to that value, independent of the books (block 144's condition is the books' condition in exchange form). It uses only the landed static clock law and block 60's homogeneous model.
+So `α = K/4`, which the books fixed as a necessary condition (blocks 134–136), is also the value at which the lattice's uniform motion and the pull between bodies share one coupling. This is the same condition met again, not a second route to it: at `β = −α` the member has one free kinetic ratio, `α/K`, so every comparison of a kinetic effect with the static pull tests that one number. It uses only the landed static clock law and block 60's homogeneous model.
 
-## Theorem T3 — walkers in an expanding lattice
+## Theorem T3 — walkers in a stretching lattice
 
 *Statement.*
 - (a) On a uniformly stretched lattice the massless walk is `H(k)/ℓ`, with eigenvalues `±|sin k|/ℓ`. A top-speed walker keeps its wave vector, and its energy falls exactly as `1/ℓ` for any history `ℓ(t)`. Top-speed content with `m = ε/ℓ` has pressure `p = ρ/3`.
@@ -110,7 +110,7 @@ audit_required_before_effective_retained: true
   - Block 124: the kinetic family, and `c_k = 12α + 36β`.
   - Block 129: `s = p + 2`, the kinetic sign, and the comparator's values `s = 3` and `c_k = −6K`.
   - Blocks 134–136: `α = K/4` as a necessary condition; the closing ratio; the zero-mode restriction.
-- **Opened, not landed.** Blocks 144 and 145 (PRs #9230 and #9233): the same `G = 1/(16πK)` from the member's pull at first order.
+- **Landed after this branch was cut** (25b8c1874f). Blocks 144 and 145: the same `G = 1/(16πK)` from the member's pull at first order, as conditional calculations in the supplied continuum model.
 - **Probes.** The owner's residual task `deferred-20260925-walker-source-closure` names zero-mode solvability among its open questions. No attempt yet.
 - **In the literature.**
   - The expansion equations of Friedmann, and their pressure form.
@@ -118,16 +118,16 @@ audit_required_before_effective_retained: true
   - All reference only.
 - **New here:**
   - T1: the zero mode's resolution in the member's own numbers, `c_k = −24α`.
-  - T2: the expansion shares the static pull's coupling iff `α = K/4`, a route to that value independent of the books; and the pressure form of the rate of change.
-  - T3: the exact `1/ℓ` fall of top-speed walkers' energy, the pressure `ρ/3`, and the `t^{1/2}` expansion.
+  - T2: the uniform motion shares the static pull's coupling iff `α = K/4` (the condition of blocks 134–136 met again); and the pressure form of the rate of change.
+  - T3: the exact `1/ℓ` fall of top-speed walkers' energy, the pressure `ρ/3`, and the `t^{1/2}` law on the growing branch.
 - **Provenance.** This is the supervisor's own derivation, in the same model family as the probes workers. No other model family has refereed it.
 
 ## Exact target and obligation graph
 
 Target: the member's zero mode on a closed lattice with content, in the member's own numbers. The obligations are:
 - (O1) no static solution, and the kinetic coefficient on a uniform stretch (T1);
-- (O2) the expansion's coupling against the static pull's, and the rate of change (T2);
-- (O3) walkers in an expanding lattice, with exact solutions (T3).
+- (O2) the uniform motion's coupling against the static pull's, and the rate of change (T2);
+- (O3) walkers in a stretching lattice, with exact solutions and their time mirrors (T3).
 
 T1–T3 discharge them.
 
@@ -135,7 +135,7 @@ T1–T3 discharge them.
 
 The note's negative sentences:
 - a static closed lattice holds no positive content;
-- at any `α ≠ K/4` the expansion and the static pull have different couplings.
+- at any `α ≠ K/4` the uniform motion and the static pull have different couplings.
 
 ### N1 — Routes by which the sentences could fail or mislead
 1. *The homogeneous model.* Uniform motion is block 60's homogeneous kinetic model with `s = 3`. Anisotropic uniform modes (shear) are not treated.
@@ -157,26 +157,26 @@ None beyond the supplied member, kinetic term, content and crossing of bonds.
 | block 101 (landed) | the static clock law | yes (restated) |
 | blocks 124, 129 (landed) | `c_k = 12α + 36β`; `s = 3` | yes (restated) |
 | blocks 134, 135, 136 (landed) | `α = K/4`, `β = −α`; the zero-mode restriction | yes (restated) |
-| blocks 144, 145 (open) | the same `G` from the pull | no (comparison) |
+| blocks 144, 145 (landed after this branch was cut) | the same `G` from the pull | no (comparison) |
 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "a closed lattice with content expands, sharing the static pull's coupling iff `α = K/4`; top-speed walkers' energies fall as `1/ℓ`" | executed: the zero mode of the constraint; `c_k` on the stretch | executed: the homogeneous model's constraint for any content | executed: the couplings and the rate of change | executed: the stretched walk; exact solutions; mixtures | uniform content; the homogeneous model |
+| "a closed lattice with content has no static state; its uniform motion shares the static pull's coupling iff `α = K/4`; top-speed walkers' energies fall as `1/ℓ`" | executed: the zero mode of the constraint; `c_k` on the stretch | executed: the homogeneous model's constraint for any content | executed: the couplings and the rate of change | executed: the stretched walk; exact solutions; mixtures | uniform content; the homogeneous model |
 
 ### N6 — Partial-closure paths and primitive scan
 `kinetic_isotropy_primitive` grants `c_t = c_s` of a kinetic form of the repository. It is not used. `scale_reference_primitive` is not used. Nothing is proposed for registration.
 
 ### N7 — Steelman
 - *Objection:* "Block 60 already had the uniform motion. This only renames constants."
-  - *Reply:* Block 60 had the motion with a free `c_k` and free `K`. Here the member's own kinetic term fixes `c_k = −24α`. The comparison with the static clock law shows that one value, `α = K/4`, makes the stretching rate and the pull between bodies one constant. That is a consistency condition, not a renaming.
+  - *Reply:* Block 60 had the motion with a free `c_k` and free `K`. Here the member's own kinetic term fixes `c_k = −24α`. The comparison with the static clock law shows that one value, `α = K/4`, makes the stretching rate and the pull between bodies one constant. That is a consistency condition, not a renaming. It is the condition of blocks 134–136 again, not a new one.
   - The walker's `1/ℓ` fall and the `t^{1/2}` law are new.
 
 ### N8 — Cross-cycle echo
 - Block 60: no static closed lattice; uniform motion iff `c_k < 0`.
 - Blocks 124 and 129: `c_k = 12α + 36β`; `s = 3`.
 - Blocks 134–136: `α = K/4` from the books.
-- This note: `α = K/4` again, from the expansion.
+- This note: `α = K/4` met again, in the zero mode.
 
 ## Falsifiers
 
@@ -195,15 +195,19 @@ None beyond the supplied member, kinetic term, content and crossing of bonds.
 
 ## Imports
 
-- `minimal_axioms`. Blocks 60, 101, 124, 129, 134, 135 and 136 (landed), restated. Blocks 144 and 145 (open), for comparison only.
+- `minimal_axioms`. Blocks 60, 101, 124, 129, 134, 135 and 136 (landed), restated. Blocks 144 and 145 (landed after this branch was cut), for comparison only.
 - Named standard imports, at definition level: exact symbolic arithmetic; the fundamental solution of the Laplacian.
 
 ## Review record
 
 - **Who and when.** Supervisor-run block, the ninety-fourth since the source-link direction opened; 2026-09-25.
 - **Provenance.** The supervisor's own derivation (Claude Opus 5.5), with exact checks by its own runner. It is not refereed by another model family.
-- **Before writing.** The own prior-art check (memory, open PRs, probes attempts, main) found block 60's uniform motion and block 129's comparator values, and no statement tying the expansion's coupling to the static pull, no `1/ℓ` fall of walkers' energy, and no probes attempt on zero modes.
+- **Before writing.** The own prior-art check (memory, open PRs, probes attempts, main) found block 60's uniform motion and block 129's comparator values, and no statement tying the uniform motion's coupling to the static pull, no `1/ℓ` fall of walkers' energy, and no probes attempt on zero modes.
 - **Why now.** The landing review of blocks 111–141 (ef918c1910) listed zero-mode solvability as open for blocks 134–139. This note answers it for uniform content within block 60's homogeneous model.
+- **After opening (a panel's report).** A three-lens panel (programme strategy, lattice field theory, gravitation theory; all three Claude Opus 5.5 subagents, the same model family as the supervisor, so not an independent check) found two overstatements, corrected here.
+  - T2 was called a route to `α = K/4` independent of the books. At `β = −α`, `α/K` is the member's only free kinetic ratio, so T2 is the same condition met again: count it once.
+  - "Expands" assumed a direction of time. The equations are even under reversing time, and each solution has a mirror (runner D2). T1 shows that there is no static state.
+  - The title in the body is corrected; the file name keeps the original wording.
 - **Independence.** Mutation census: six mutations in families B–E, each failing in its own family, and two in family F.
 
 ## Verification

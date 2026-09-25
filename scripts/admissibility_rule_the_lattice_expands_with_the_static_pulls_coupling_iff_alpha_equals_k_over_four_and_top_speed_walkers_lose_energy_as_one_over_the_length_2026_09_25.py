@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Exact checks: a closed lattice with content expands, at the static pull's own coupling iff alpha = K/4 - within block 60's
+"""Exact checks: a closed lattice with content has no static state, and its uniform motion has the static pull's own coupling iff
+alpha = K/4 - within block 60's
 homogeneous kinetic model (T5(b)), block 124's kinetic family and block 129's volume power, and block 101's static clock law, all
 as landed on main: the member's clock constraint has no zero mode, so a static closed lattice holds no positive content; the
-member's kinetic term on a uniform dilation has c_k = 12 alpha + 36 beta = -24 alpha at the closing ratio, so the lattice expands
-with lambdadot^2 = rho/(24 alpha), which is (8 pi G/3) rho with the static pull's G = 1/(16 pi K) iff alpha = K/4, and then
-l-ddot/l = -(4 pi G/3)(rho + 3p); content crosses bonds at rate w/l, so a top-speed walker's energy falls exactly as 1/l, its
-pressure is rho/3 and the lattice expands as t^(1/2); rest content gives t^(2/3) (the supervisor's own derivation; not adopted).
+member's kinetic term on a uniform dilation has c_k = 12 alpha + 36 beta = -24 alpha at the closing ratio, so the lattice stretches or
+shrinks with lambdadot^2 = rho/(24 alpha), which is (8 pi G/3) rho with the static pull's G = 1/(16 pi K) iff alpha = K/4 (at beta = -alpha, alpha/K
+is the member's only free kinetic ratio, so this is blocks 134-136's condition met again), and then l-ddot/l = -(4 pi G/3)(rho + 3p); content crosses bonds at rate w/l, so a top-speed walker's energy falls exactly as 1/l, its
+pressure is rho/3 and on the growing branch the lattice goes as t^(1/2); rest content gives t^(2/3); each motion has a time
+mirror, so the equations fix no direction (the supervisor's own derivation; not adopted).
 
 B (T1): the zero mode: no static solution; the homogeneous model's constraint and c_k on the dilation.
-C (T2): the expansion's coupling against the static pull's; the rate of change of the expansion.
-D (T3): walkers on a uniformly stretched lattice; exact solutions.
+C (T2): the uniform motion's coupling against the static pull's; its rate of change.
+D (T3): walkers on a uniformly stretched lattice; exact solutions and their time mirrors.
 E (T3): mixtures of rest and top-speed content.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
@@ -133,7 +135,7 @@ def family_c(checks: Checks) -> None:
     same = sp.simplify(g_static - g_used) == 0
     H2 = rho / (24 * al)
     sol = sp.solve(sp.Eq(H2, sp.Rational(8, 3) * sp.pi * g_used * rho), al)
-    checks.check("C1", same and sol == [K / 4], "the static clock law gives the pull's coupling G = 1/(16 pi K); the expansion's constraint lamdot^2 = rho/(24 alpha) (c_k = -24 alpha, s = 3, rho = m/l^3) is (8 pi G/3) rho with that G iff alpha = K/4")
+    checks.check("C1", same and sol == [K / 4], "the static clock law gives the pull's coupling G = 1/(16 pi K); the uniform motion's constraint lamdot^2 = rho/(24 alpha) (c_k = -24 alpha, s = 3, rho = m/l^3) is (8 pi G/3) rho with that G iff alpha = K/4")
     ld, ldd, l = sp.symbols("ld ldd l", positive=True)
     sign = 1 if mut("pressure_sign_flipped") else -1
     mprime = sign * 3 * p * l ** 3
@@ -166,17 +168,21 @@ def family_d(checks: Checks) -> None:
     al, m0, t0, t1 = sp.symbols("alpha m0 t0 t1", positive=True)
     ok = True
     expo_rest = sp.Rational(1, 3) if mut("solution_exponent_forged") else sp.Rational(2, 3)
-    for mfun, lsol, ts in ((lambda x: m0, (1 + t / t0) ** expo_rest, t0), (lambda x: eps * sp.exp(-x), (1 + t / t1) ** HALF, t1)):
+    for mfun, lgrow, ts in ((lambda x: m0, (1 + t / t0) ** expo_rest, t0), (lambda x: eps * sp.exp(-x), (1 + t / t1) ** HALF, t1)):
         tt, lamf, con, el = homogeneous(-24 * al, 3, mfun)
-        lamsol = sp.log(lsol)
-        c = sp.simplify(con.subs(lamf, lamsol).doit().subs(tt, t))
-        tsol = sp.solve(c, ts)
-        if not tsol:
-            ok = False
-            continue
-        e2 = sp.simplify(el.subs(lamf, lamsol).doit().subs(tt, t).subs(ts, tsol[0]))
-        ok = ok and e2 == 0
-    checks.check("D2", ok, "exact uniform solutions at c_k = -24 alpha, s = 3: rest content gives l = (1 + t/t0)^(2/3), t0 = (4/3) sqrt(6 alpha/m0); top-speed content gives l = (1 + t/t1)^(1/2), t1 = sqrt(6 alpha/eps)")
+        found = []
+        for lsol in (lgrow, lgrow.subs(t, -t)):    # the growing branch and its time mirror
+            lamsol = sp.log(lsol)
+            c = sp.simplify(con.subs(lamf, lamsol).doit().subs(tt, t))
+            tsol = sp.solve(c, ts)
+            if not tsol:
+                ok = False
+                continue
+            found.append(tsol[0])
+            e2 = sp.simplify(el.subs(lamf, lamsol).doit().subs(tt, t).subs(ts, tsol[0]))
+            ok = ok and e2 == 0
+        ok = ok and len(found) == 2 and sp.simplify(found[0] - found[1]) == 0
+    checks.check("D2", ok, "exact uniform solutions at c_k = -24 alpha, s = 3: rest content gives l = (1 + t/t0)^(2/3), t0 = (4/3) sqrt(6 alpha/m0); top-speed content gives l = (1 + t/t1)^(1/2), t1 = sqrt(6 alpha/eps); each time mirror (t -> -t) solves with the same constant, so the equations fix no direction")
 
 
 # ============================================================================================ family E
@@ -189,7 +195,7 @@ def family_e(checks: Checks) -> None:
     tt, lamf, con, el = homogeneous(-24 * al, 3, lambda x: m0 + eps * sp.exp(-x))
     kept = sp.simplify(sp.diff(con, tt) + sp.diff(lamf, tt) * el) == 0
     checks.check("E1", sp.simplify(p_mix - expected) == 0 and kept,
-                 "a mixture of rest and top-speed content, m = m0 + eps/l: the pressure is that of the top-speed part alone, rho_top/3, and the expansion constraint is kept by the lengths' equation")
+                 "a mixture of rest and top-speed content, m = m0 + eps/l: the pressure is that of the top-speed part alone, rho_top/3, and the constraint is kept by the lengths' equation")
 
 
 # ============================================================================================ family F
@@ -244,7 +250,7 @@ def family_f(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed - the member's clock constraint at the zero mode, and its kinetic term on the uniform dilation",
     "per_site: executed - block 60's homogeneous model: the constraint kept by the lengths' equation for any content m(lam)",
-    "per_mode: executed - the expansion's coupling against the static pull's, and the rate of change of the expansion",
+    "per_mode: executed - the uniform motion's coupling against the static pull's, and its rate of change",
     "per_block: executed - the walk on a uniformly stretched lattice; exact uniform solutions for rest and top-speed content; mixtures",
     "lattice_wide: uniform content on a closed lattice; block 60's homogeneous kinetic model with s = 3; unit rate",
 )
@@ -282,7 +288,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: a closed lattice with positive content has no static zero mode and expands uniformly; the expansion carries the static pull coupling iff alpha = K/4, with l-ddot/l = -(4 pi G/3)(rho + 3p); top-speed walkers lose energy as 1/l, giving t^(1/2); rest content gives t^(2/3); supervisor derivation, unrefereed; nothing adopted")
+    print("scope: a closed lattice with positive content has no static state and stretches or shrinks uniformly (the equations fix no direction); the uniform motion carries the static pull coupling iff alpha = K/4, the condition of blocks 134-136 met again, with l-ddot/l = -(4 pi G/3)(rho + 3p); top-speed walkers lose energy as 1/l, giving t^(1/2); rest content gives t^(2/3); supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

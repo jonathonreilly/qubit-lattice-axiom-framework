@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-25 block 146 — author checks (not a review PASS)
 The supervisor's own derivation, not refereed by another model family. Exact symbolic checks; census 8/8 in family.
+
+## 2026-09-25 block 146 follow-up - wording after a panel's report (author checks, not a review PASS)
+Panel of three Claude Opus 5.5 subagents (same model family). 'Expands' replaced by 'no static state' (time mirrors checked, D2); T2 is the condition of blocks 134-136 met again, not an independent route. Runner 14/0; census 8/8.

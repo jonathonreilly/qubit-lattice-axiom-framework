@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F125 the a-term's levels under one record per site | exact band counts on even tori and the odd contrast; stagger identities with symbolic a, m on 4^3; many-record ring generator (both compositions) at full and nearly full occupancy; row sums; thin-window counts; sense-weighted moments | block 125 (harvest of #9106; Grok-refereed #9126) |

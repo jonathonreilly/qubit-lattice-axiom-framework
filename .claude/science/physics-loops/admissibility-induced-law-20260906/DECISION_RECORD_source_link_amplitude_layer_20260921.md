@@ -697,3 +697,14 @@ Block 148 (PR #9241; own derivation, unrefereed) treats uneven uniform stretches
 - The three-length volume factor is supplied.
 
 **A new reading question for the owner** (a finding, not a proposal): which zero of energy does the member see in a many-walker state? The landed clauses fix only the zero of one-walker energies.
+
+## Thirty-eighth addendum (2026-09-25 evening): the walker's cone lies inside the member's at every lattice momentum (block 149)
+
+Block 149 (PR #9242) is the supervisor's own derivation, not refereed by another model family; nothing is adopted. It uses only landed blocks. It answers part of the landing review's scoping of blocks 134–135, which landed as a necessary condition at linear order with no universal light cone.
+- At every lattice momentum a free walker's energy differences stay strictly below the member's frequency: `|E(k) − E(k − q)| < |p(q)|`, with `p_j = 2 sin(q_j/2)`. This holds with or without the staggered mass.
+- So no single walker emits or absorbs one of the member's travelling disturbances. Walkers are stable against the member at every scale.
+- The two cones agree at long wavelength and separate at third order, with the walker's inside.
+- A control: against the walker's own dispersion the bound fails at the edge of the zone. The member's half-angle lattice differences are what keep walkers inside.
+
+What this changes in addendum 34's table:
+- **One light cone.** At linear order, a necessary condition (blocks 134–135). At the lattice scale there is no single cone, but a definite ordering: the member's is outside the walker's everywhere.

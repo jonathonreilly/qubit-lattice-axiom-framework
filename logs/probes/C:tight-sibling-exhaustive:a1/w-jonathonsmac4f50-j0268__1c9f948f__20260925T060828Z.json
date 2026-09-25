@@ -1,0 +1,32 @@
+{
+ "task": "C:tight-sibling-exhaustive:a1",
+ "type": "judgment",
+ "lane": "computation",
+ "worker": "w-jonathonsmac4f50-j0268",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/compute/tight-sibling-exhaustive/w-jonathonsmac4f50-j0268/run.py",
+ "seed": 16508,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1c9f948f",
+ "started_utc": "20260925T060828Z",
+ "elapsed_s": 78.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "tight-sibling lemma, exhaustive: depth 3 with <= 6 marks (60460 configurations) and depth 4 with <= 5 marks (384168): 0 and 0 processed sites have all 1-predecessors processed and tight (no processed site is tight at all on these cones: v <= -1), largest v among them None and None; with tight seeds allowed as predecessors: largest v -2 and -2; no counterexample"
+ },
+ "review": "Independent run 1 of 2 by claude-opus-5-5 (Claude family; blocks 32-33 were authored in this campaign by the same family). Exhaustive enumeration with probes/lib/family.py's automaton; exact rooted values by family.brute_min on the configuration below each site (Fractions), cross-checked on 209 sites against rooted.py's integer program (all agree). Axis-permutation orbits are weighted back. Depth 3 with <=6 marks and depth 4 with <=5 marks.",
+ "what": "LANDED FIRST (2026-09-24): the owner has landed PRs #8033-#8993 on main with narrowed or corrected statements, and origin/main is the science authority. Read each named note as landed (git show origin/main:docs/<note>; find its path with gh pr view <n> --json files) BEFORE any PR branch. Wherever this problem's SETTING paraphrases a claim that the landed note narrows or withdraws, the landed version controls: say so in ATTEMPT.md and do not build on the withdrawn wording. Known narrowings: block 54's exact packet force is withdrawn (T3 is a finite-power identity, the evolution form is conditional on a self-adjoint realization, T4 is a conditional ray model); block 55's point-force coupling is not gamma; the ray statements of blocks 59-60 are local same-point comparisons, not integrated turns; block 66's lattice force is leading order; block 77's corner energies are not established as rest masses; blocks 90-93 are conditional comparators under the excluded re-recording clause; block 95's pair law is a neutralized torus law; block 98 has no nonlinear bending or changed-length result; block 108's domains rest on the stated endpoint theory and its inverse-clock sum is not an arrival-time theorem. WORKED COMPUTATION (independent run 1 of 2): Finite cases of the open tight-sibling lemma (README section 8; PR #8177). Use probes/lib/family.py (automaton, kinds) and probes/lib/rooted.py (the rooted value v by integer programming). Enumerate EXHAUSTIVELY every mark configuration with at most 6 marks on the cone of depth 3 below a root (then depth 4 with at most 5 marks if time allows), run the two-level automaton, and for every processed 1-site compute v and list the sites all of whose 1-predecessors are processed and tight (v = 0). Report: how many configurations, how many processed sites, how many have all 1-predecessors tight, and the largest v found among those. Expectation: v <= 0 everywhere. Any site with v > 0 is a counterexample to the lemma: print it as HIT with the marks. DELIVERABLE in your unit worktree: probes/work/compute/tight-sibling-exhaustive/<your worker name>/run.py (self-contained; exact arithmetic wherever the statement is exact; numpy only for the numerical cross-checks named) and RESULT.md (the table or formulas, in plain text). run.py prints one line per result, a final `SUMMARY: <the main result in one line>`, and `HIT: <what>` ONLY if a result contradicts the expectation stated in the task (that is the interesting case: report it precisely). Two workers do each computation independently; the supervisor compares them. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/compute/tight-sibling-exhaustive/<name>/run.py\"",
+ "stdout_sha256": "61d406862ea6f64fc7e2ef81be9676dd9ee14938edad3e2a123c9cf3c9c0eb84",
+ "stdout_tail": "12: 2233, -11: 6789, -10: 8349, -9: 14883, -8: 22312, -7: 19823, -6: 24745, -5: 24982, -4: 12100, -3: 12447, -2: 13398, -1: 887}; sites all of whose 1-predecessors are processed and tight: 0, largest v among them None; allowing tight seeds among the 1-predecessors: 71665, largest v -2 (17 s)\nX depth 3: processed sites with v = 0 (tight): 0; largest v over all processed sites -1: the lemma's hypothesis (every 1-predecessor processed and tight) never occurs on this cone\nX depth 4 cone (35 sites), every configuration with at most 5 marks: 384168 configurations (65470 symmetry orbits); 496585 processed 1-sites (with multiplicity); v over processed sites: {-11: 2667, -10: 4341, -9: 11631, -8: 31197, -7: 33528, -6: 56131, -5: 94811, -4: 52007, -3: 78531, -2: 125481, -1: 6260}; sites all of whose 1-predecessors are processed and tight: 0, largest v among them None; allowing tight seeds among the 1-predecessors: 267860, largest v -2 (78 s)\nX depth 4: processed sites with v = 0 (tight): 0; largest v over all processed sites -1: the lemma's hypothesis (every 1-predecessor processed and tight) never occurs on this cone\n\nSUMMARY: tight-sibling lemma, exhaustive: depth 3 with <= 6 marks (60460 configurations) and depth 4 with <= 5 marks (384168): 0 and 0 processed sites have all 1-predecessors processed and tight (no processed site is tight at all on these cones: v <= -1), largest v among them None and None; with tight seeds allowed as predecessors: largest v -2 and -2; no counterexample\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0268",
+  "at_utc": "20260925T060946Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

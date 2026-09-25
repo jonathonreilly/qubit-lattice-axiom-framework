@@ -1,0 +1,10 @@
+PR #9241: physics-loop: admissibility induced-law block 148 - an empty closed lattice can stretch along some axes while shrinking along another, and content makes the stretch alike
+branch physics-loop/admissibility-induced-law-block148-an-empty-closed-lattice-can-stretch-unequally-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_an_empty_closed_lattice_can_stretch_along_some_axes_while_shrinking_along_another_and_content_makes_the_stretch_alike_2026_09_25.py: rc=0 PASS=12 FAIL=0
+   mutation cross_term_coefficient_forged: expected B observed B ok
+   mutation exponent_family_forged: expected C observed C ok
+   mutation content_cone_dropped: expected D observed D ok
+   mutation isotropic_reduction_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,12 @@
+PR #9237: physics-loop: admissibility induced-law block 146 - the lattice expands with the static pull's coupling iff alpha = K/4, and top-speed walkers lose energy as one over the length
+branch physics-loop/admissibility-induced-law-block146-the-lattice-expands-with-the-static-pulls-coupling-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py: rc=0 PASS=14 FAIL=0
+   mutation dilation_amplitude_forged: expected B observed B ok
+   mutation static_pull_normalization_forged: expected C observed C ok
+   mutation pressure_sign_flipped: expected C observed C ok
+   mutation hop_rate_scaling_forged: expected D observed D ok
+   mutation solution_exponent_forged: expected D observed D ok
+   mutation mixture_pressure_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

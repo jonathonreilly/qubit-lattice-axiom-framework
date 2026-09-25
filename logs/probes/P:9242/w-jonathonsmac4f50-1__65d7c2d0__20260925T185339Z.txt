@@ -1,0 +1,10 @@
+PR #9242: physics-loop: admissibility induced-law block 149 - a free walker never emits or absorbs one of the member's travelling disturbances: its energies stay inside the member's cone at every lattice momentum
+branch physics-loop/admissibility-induced-law-block149-a-free-walker-never-emits-or-absorbs-the-members-disturbances-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py: rc=0 PASS=13 FAIL=0
+   mutation half_angle_dropped: expected B observed B ok
+   mutation lipschitz_forged: expected C observed C ok
+   mutation third_order_forged: expected D observed D ok
+   mutation control_inverted: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

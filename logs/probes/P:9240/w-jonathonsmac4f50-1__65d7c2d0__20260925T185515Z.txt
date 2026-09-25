@@ -1,0 +1,12 @@
+PR #9240: physics-loop: admissibility induced-law block 147 - the member's zero mode tests the zero of energy: if the member sees the half-filled sea, a closed lattice bounces or cannot move
+branch physics-loop/admissibility-induced-law-block147-the-members-zero-mode-tests-the-zero-of-energy-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py: rc=0 PASS=13 FAIL=0
+   mutation sea_sign_flipped: expected B observed B ok
+   mutation hardcore_parity_forged: expected B observed B ok
+   mutation turn_length_forged: expected C observed C ok
+   mutation bounce_history_forged: expected C observed C ok
+   mutation mass_threshold_forged: expected D observed D ok
+   mutation constant_density_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

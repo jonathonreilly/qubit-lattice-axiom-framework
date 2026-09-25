@@ -1,0 +1,35 @@
+{
+ "task": "R:four_cube_cutting_kernel_colour_closed_form_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "four",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/four_cube_cutting_kernel_colour_closed_form_2026_08_11.py",
+ "seed": 62630,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65d7c2d0",
+ "started_utc": "20260925T185710Z",
+ "elapsed_s": 16.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=38 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d692cca28b1e2258c92c43eef9c7e41439dbe397574f1897281bf773091d5315",
+ "stdout_tail": " constant and fixer weight has 3 fibres; the geometric label has 6\nPASS C25 both labels are equivariant for the axis action: 0 failures in 73728 cover checks and 0 in 73728 piece checks\nPASS C26 rejector: the piece label shifted by one axis fails equivariance on 57344 of the same 73728 checks\nPASS C27 every cover holds 8 pieces of which 6 carry its axis, and every piece lies in 8 covers of which 6 carry the axis\nPASS C28 the incidence table is the entrywise sum of exactly 4 orbits, 3 of one colour and 1 of the other\nPASS C29 at the primary prime their stack ranks 180; their sum ranks 105 at both primes, and 192 - 105 = 87\nPASS C30 bounded fibres: the shared-corner profile takes 25 values and 21 fibres contain both observed colours\nPASS M0 geometry mutation: a sample-disjoint pair sharing (4,3,2,1)/11 is rejected by exact separation\nPASS M1 group mutation: a copied stabilizer with one duplicate image fails bijection and involution\nPASS M2 kernel mutation: one changed copied cycle-vector entry fails integer annihilation\nPASS M3 meet, module, and stack mutations: copied sign, image, and table corruptions all fail their predicates\nPASS M4 label mutation: one shifted copied piece label fails block size and equivariance\nPASS M5 incidence mutation: one flipped copied entry fails orbit decomposition and regularity\ntwo kernels of dim 48 meeting in 12, join 84, either colour stack rank 144, colour sums rank 4, incidence rank 105\nelapsed 16 s, peak resident 204 MB\nTOTAL: PASS=38 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T185727Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/four_cube_cutting_kernel_colour_closed_form_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

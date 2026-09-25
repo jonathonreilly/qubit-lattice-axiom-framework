@@ -1,0 +1,35 @@
+{
+ "task": "R:record_map_keeps_mass_fraction_vacuum_weightlessness_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_map_keeps_mass_fraction_vacuum_weightlessness_check_2026_09_04.py",
+ "seed": 62680,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65d7c2d0",
+ "started_utc": "20260925T185800Z",
+ "elapsed_s": 7.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b2f21f4646805c38a0d9793b83b2f96bb57634c6a9379845271f62bcbf9d43cc",
+ "stdout_tail": "883883, 0.4136069814883883), (8, 6.0, 0.0, 0.858609560139961, 0.858609560139961)]. Not independent evidence for a record or source law.\n    m    p_y      cp     sx=10      sx=14      sx=20   Richardson     closed\n   1.0 0.0000    read  -3.851206  -3.882803  -3.896135   -3.908944  -4.000000\n   1.0 0.0000     tot  -3.816694  -3.902879  -3.950560   -3.996371  -4.000000\n   0.4 0.7854    read  -0.832933  -0.853292  -0.862349   -0.871052  -0.858152\n   0.4 0.7854     tot  -3.762287  -3.873287  -3.935423   -3.995122  -4.000000\n   0.0 0.7854    read   0.000000   0.000000   0.000000    0.000000   0.000000\n   0.0 0.7854     tot  -3.716225  -3.846908  -3.921736   -3.993629  -4.000000\nPASS C6 96x32x4 finite packet central derivatives g=2.0e-04, widths10/14/20 with two-width Richardson assumption: max formula discrepancy=0.0910561, massless=0.000e+00, read/tot=0.2180289 vs 0.2145379. Residual origin not isolated.\nPASS D1 Separate finite-radius arithmetic R=(1.0, 3.0, 10.0, 1000.0, 1000000.0, 1000000000000.0),3/R**2=[3.0, 0.3333333333333333, 0.03, 3e-06, 3e-12, 3e-24]; positive for every finite R>0. This supplies no cosmological conclusion from P0 or reference subtraction.\nPASS D2 Supplied8^3 m1 sea total=-1.2996379 and pinched=-0.2017032 are nonzero dimensionless model densities. Neither determines cosmological Lambda or a radius.\nSUMMARY: finite conditional identities and declared-fixture calculations only; physical source, carrier, metric and cosmology remain open.\nTOTAL: PASS=18 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T185808Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/record_map_keeps_mass_fraction_vacuum_weightlessness_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

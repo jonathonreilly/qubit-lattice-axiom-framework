@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_orbit_occupancy_maxent_relocation_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_orbit_occupancy_maxent_relocation_2026_06_09.py",
+ "seed": 62719,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65d7c2d0",
+ "started_utc": "20260925T185839Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99201f299ef27755ce286c3a77c05ca8be30d578ab9509793d196829241ff1c5",
+ "stdout_tail": "sure; NO such measure on generation space is retained (the staggered realization gate is the open Tier-A admission)  --  the Jaynes-vs-Liouville residual is SUPPORTED by retained-status asymmetry, not proven\n\n----------------------------------------------------------------------------------------\nM6: honest status -- candidate support, not adoption\n----------------------------------------------------------------------------------------\n  [PASS] the admission is NOT skipped by this note; MAXENT-R is a candidate premise, not an adopted one\n  [PASS] possible improvement if later adopted: Koide-specific binary -> universal/prior (Jaynes 1957, predates the data), context-blind (same principle everywhere), structure-blind in output (Q=1 for Majorana, 2/3 for Dirac), no per-context knob\n  [PASS] what remains a choice: maxent over REGISTRABLE alternatives vs equipartition over phase-space dof (Liouville). Supported by the framework's ontology -- the outcome algebra is axiom-grade; no Liouville measure on generation space is retained -- but SUPPORTED is not DERIVED; flagged\n  [PASS] candidate for re-panel: does MAXENT-R pass the premise-purity test that the bare binary failed? (universal, no selector-among-cells, consequence varies by structure). NOT adopted here; sets no audit status\n\n========================================================================================\nSUMMARY: PASS=16 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T185840Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

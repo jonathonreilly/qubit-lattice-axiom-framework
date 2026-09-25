@@ -1,0 +1,35 @@
+{
+ "task": "R:record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_observable_quotient_and_rank_one_formation_outcome_operation_2026_07_11.py",
+ "seed": 62688,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65d7c2d0",
+ "started_utc": "20260925T185808Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bdb5da37b4aae889e3b969568463de1a4f89549069267b8ff20a7e538fa1a217",
+ "stdout_tail": "tor\nPASS U05: general U(2) has formation-block norm identically equal to record-leakage norm\nPASS U06: sampled unitaries satisfy the formation/leakage norm identity on unequal sector splits\nPASS U07: a non-unitary control preserves the record sector yet forms records, so the identity genuinely needs unitarity\nPASS J00: the locked-output condition on a generic symbolic Kraus operator forces its bottom row to vanish, hence K=|p><v|\nPASS J00b: the forced solution is exactly the rank-one form K=|p><v|\nPASS J01: a symbolic locked-output Kraus family equals Tr(E rho) P identically\nPASS J02: the symbolic operation output is supported on the locked rank-one record\nPASS J02c: a Kraus operator with off-record support is rejected by the locked-output condition\nPASS J03: constructed effect is positive definite\nPASS J04: constructed effect obeys E less-than-or-equal-to I\nPASS J05: formation weight is the effect functional\nPASS J06: permanence and locked output admit inequivalent formation effects\nPASS J07: both alternative effects define valid positive weights\nPASS J08: both alternative effects are trace-nonincreasing\nBOUNDARY: record-equivalence is operational; deleting record-null ontology requires a separate criterion.\nBOUNDARY: the rank-one outcome-operation normal form fixes neither E, full-instrument normalization, firing site/rate, nor coherent evolution.\nBOUNDARY: same-carrier permanence excludes both SWAP and ordinary hopping, so it is not a Dirac selector.\nTOTAL: PASS=36 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T185808Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

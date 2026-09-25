@@ -1,0 +1,35 @@
+{
+ "task": "R:four_cube_cutting_fixed_point_orbit_floor_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "four",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/four_cube_cutting_fixed_point_orbit_floor_2026_08_11.py",
+ "seed": 62539,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "65d7c2d0",
+ "started_utc": "20260925T185539Z",
+ "elapsed_s": 91.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=41 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25ddd95abef4b386da349428c57d668779b5d6dc4fa83e39616cc316cd780eb3",
+ "stdout_tail": "least its forced part; total blind dimension 87, least slack 0\nPASS C28 row by row on all 20 rows, d times min plus d times the positive difference rebuilds the row dimension\nPASS C29 ceiling 144 plus floor 48 is 192, which is the piece count and the cover count\nPASS C30 one cell orbit alone has rank 144 at both primes and blind dimension 48, and 144 plus 48 is 192\nPASS C31 wrong-count rejector: 8 of 8 altered fixed-point tuples break at least one identity\nPASS C32 wrong-row rejector: 40 of 40 altered rows fail the row test, which turns on the dimension being d times m\nPASS C33 source hygiene: ASCII yes, no tab yes, no remainder sign yes, no long dash yes, 41 barred strings absent yes\nPASS C34 budget: 91 s under 900, 224 MB under 2500, stdout under 5200 with 578 to spare\nPASS C35 exact geometry: 15168 co-pairs in 59 symmetry classes are interior-disjoint; the sample false negative has margin 1/11\nPASS C36 direct corner-set action bypasses stored permutations and gives fixed sets 16, 0, 0, 48\nPASS C37 group mutation: duplicating one stabiliser image is rejected as a non-bijection while the accepted stabiliser passes\nPASS C38 freeness mutation: changing the zero non-identity cell-fixed count to one is rejected\nPASS C39 part-table mutation: increasing one multiplicity is rejected by the row-and-bridge validator\nPASS C40 floor mutation: increasing one floor term is rejected by the rowwise ceiling-plus-floor identity\ncharacters printed before this line: 4364\nTOTAL: PASS=41 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T185710Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/four_cube_cutting_fixed_point_orbit_floor_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

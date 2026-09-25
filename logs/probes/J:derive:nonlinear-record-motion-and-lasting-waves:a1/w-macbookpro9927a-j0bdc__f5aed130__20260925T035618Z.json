@@ -22,11 +22,18 @@
  "stdout_tail": "x|R-1| 2.2e-16, c=-1.000000\n[N] PASS [float] L=1024, k = 2pi m/1024, m = 4..64: V=1 rho=0.25: tau_1/e [1103.2  407.8  143.8   50.5   18.9], local z [1.44 1.5  1.51 1.42]; V=2 rho=0.5: tau_1/e [1003.5  367.2  129.8   48.7   17.4], local z [1.45 1.5  1.41 1.49]\n[N] PASS [float] V=2 rho=1/2 r=0.05 L=512 k0: R(256) = 0.315, R(2048) = 0.014 +- 0.016  (95s)\ntotal 135s; failing families: none\nSUMMARY: PROVED (A) r = 0: on every ring every orbit ends, after a finite transient, in rigid translation of the occupied set (+V per step if N(V+1) < L, -1 if N(V+1) > L, uniform gaps V if equal); (B) 0 < r < 1: every finite ring has one aperiodic closed class, so every disturbance decays; (C) mean field: signed weights for V >= 2, exact damping at 144 points, exact outside roots at 3; numerics: the fixed-k decay persists as L grows\nHIT: records on a ring with speed contents, u = min(v+1, V, gap), slowed by one with probability r. At r = 0 a record that uses its full gap at a step t >= 1 keeps doing so and copies its leader's move one step late, so every orbit on every ring ends in rigid translation of the occupied set: +V per step below density 1/(V+1), a jam wave at -1 above; every density mode then keeps its modulus forever. At every 0 < r < 1 each finite ring has one aperiodic closed class, so every disturbance decays; numerically the fixed-k decay persists as the ring grows. The mean-field linearization is not always damped (exact roots outside the unit circle, V = 2, r = 0, rho = 3/20).\n",
  "checked": {
   "by": "w-macbookpro9927a-j0bdc",
-  "at_utc": "20260925T035847Z",
+  "at_utc": "20260925T040010Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha f5aed130 differs from the current HEAD 9e15b41f (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "science: exact r = 0 theorem on every ring (saturation persists from t >= 1 and copies the leader's move one step late; every orbit ends in rigid translation, +V or the -1 jam wave), exact finite-ring ergodicity at 0 < r < 1 (general argument incl. the lone-record case, exhaustive support graph), exact mean-field certificates (V = 1 nonnegative density rule damped; V >= 2 signed weights, damping at 144 points, outside roots at 3); float numerics controlled (fixed-k decay converging over L = 128..1024, exact r = 0 control)",
+  "by": "w-macbookpro9927a-j0bdc",
+  "at_utc": "20260925T040010Z"
  }
 }

@@ -335,12 +335,12 @@ All structural residuals are exactly zero in the stored arithmetic. At S=32, the
 
 ## Evidence and remaining physical obligations
 
-The [root history](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md)
-and [independent PRE](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE.md)
-preserve their exact original arguments. The
-[POST](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST.md)
-and [magnetic-sum correction](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md)
-record the necessary repair without changing either seal. The
+The [root history](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/)
+and [independent PRE](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)
+contain `FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md` and `PRE.md`, preserving their exact original arguments. The
+[POST](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)
+and [magnetic-sum correction](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/)
+contain `POST.md` and `FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md`, recording the necessary repair without changing either seal. The
 [primary runner](../scripts/finite_window_microscopic_energy_laws_2026_09_25.py) and
 [complete fresh result](../outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json) distinguish the generic four-state
 control from the native full-graph control. Historical failures and limitations

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/finite_window_microscopic_energy_laws_2026_09_25.py
 runner_sha256: 566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084
-input_fingerprint_sha256: f82ab9b31c1b7e8dc17b5009f3d58f50bb4c01d4266a4643a208a89a52b51f35
+input_fingerprint_sha256: 18fc944893cea337313ad993f2ac65027120c4ae043285c289d3b1f6fefa42cc
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.68
+elapsed_sec: 0.70
 status: ok
 ----- stdout -----
 {
@@ -665,7 +665,7 @@ status: ok
       "conditional_energy_identity": "Analytic for this example; not a numerical integration of a lattice trajectory.",
       "all_assertions_passed": true,
       "source_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
-      "elapsed_seconds": 0.08806937490589917
+      "elapsed_seconds": 0.0858408329077065
     },
     "independent_native": {
       "scope": "Independent exact-small-graph control of post-record energy measurements.\n\nPhysical graph: a two-leaf A-centred star, disjoint from a single A--B edge.\nAll legal charge/electric words are retained. The full physical dimension is\n12 for every integer spin S >= 1. Original resolved and coherent jumps are\nbuilt from local creation; no author module, data or runner is imported.\n",
@@ -1727,31 +1727,31 @@ status: ok
         }
       ],
       "author_sources_read_or_imported": [],
-      "elapsed_seconds": 0.010761958081275225
+      "elapsed_seconds": 0.013097959104925394
     }
   },
   "stages": [
     {
       "program": "finite_window_energy_controls.py",
       "code_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
-      "stdout_sha256": "78ee0871266e4279b8ee86b1b2e61a4648f0b1332956c96af8c257e513734d76",
-      "stdout_bytes": 33975,
+      "stdout_sha256": "129cd930d830ce85273deba69c875db99c4df56e0988f772b030b81b49a4ce9a",
+      "stdout_bytes": 33974,
       "stderr_bytes": 0,
       "exit_code": 0,
-      "elapsed_seconds": 0.1626005000434816
+      "elapsed_seconds": 0.1800648330245167
     },
     {
       "program": "primitive_energy_control.py",
       "code_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
-      "stdout_sha256": "f6482a8371170ae8b1576ecc8b6e1610896f2fdb2f9814484cb4ace0d0c0987f",
+      "stdout_sha256": "54eb35af962193cca51de984f84f20998571ddbf4ea50e0d3126c92af69da992",
       "stdout_bytes": 23511,
       "stderr_bytes": 0,
       "exit_code": 0,
-      "elapsed_seconds": 0.4020937921013683
+      "elapsed_seconds": 0.42314933286979795
     }
   ],
   "source_sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
-  "elapsed_seconds": 0.5669277089182287,
+  "elapsed_seconds": 0.6047160420566797,
   "all_assertions_passed": true
 }
 TOTAL_PASS: 2

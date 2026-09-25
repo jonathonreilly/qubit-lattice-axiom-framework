@@ -50,7 +50,7 @@ with the earlier scientific outputs except two declared elapsed-time fields.
 Full cache bytes and all scoped public-text transformations are verified.
 This check does not execute a scientific runner or manufacture new independence.
 
-The fresh primary execution used the exact earlier root and independent
+The generation01 fresh primary execution used the exact earlier root and independent
 programs in temporary directories. It completed in 0.6842081546783447 seconds,
 exit zero, empty stderr. The earlier wrong-filename lookup by the read-only
 root verifier is preserved separately; it was corrected without a scientific
@@ -84,3 +84,31 @@ Physical energy calibration, laboratory preparation and detector identity,
 actual-parameter and long-time errors, and the reservoir ledger remain open.
 The publication is ready for an exact-path review PR after the mechanical
 receipt/cache gate. No merge, audit verdict or axiom adoption is requested.
+
+## Narrow final publication revision
+
+Generation01 is preserved at commit65bfe2ae12623a073de3de00a51e35d33c53e7a7
+and externally with every one of its 65 allowlisted files. The focused gate
+rejected historical Markdown provenance links outside its canonical docs
+resolver. Root inspected that resolver: the actual files exist, but its
+source-citation check deliberately accepts docs paths only. Four provenance
+links now point to existing evidence directories, with all four original
+filenames written explicitly. The complete scientific text, three parent
+citations and physical-obligations paragraph are unchanged; no gate code,
+scientific dependency, exemption or premise was altered.
+
+The same checker sealed a narrow revision comparison under new names. Root
+read its complete report, new checker and seal writer, full 14562-byte stdout,
+and execution receipt. All 30 revision members and 14 current origins verify;
+the old 25/20/27-member seals and frozen snapshots remain unchanged. A fresh
+readonly invocation reproduces the complete output except its timestamp.
+Root additionally verified all 65 archived publication files against the old
+allowlist. Source recovery does not depend on the changed live origins.
+
+Generation02 required a fresh primary cache because its declared note input
+changed. It completed in 0.6965310573577881 seconds, exit zero, empty stderr.
+All scientific payload values remain exactly equal except the same two
+elapsed-time fields. The new six-input fingerprint is
+18fc944893cea337313ad993f2ac65027120c4ae043285c289d3b1f6fefa42cc.
+The scoped revision is correspondence, not a new independent proof. The
+mechanical gate is to be rerun after the current exact package commit.

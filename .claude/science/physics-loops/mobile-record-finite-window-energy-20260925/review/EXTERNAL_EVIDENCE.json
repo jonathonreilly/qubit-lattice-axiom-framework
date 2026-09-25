@@ -121,6 +121,71 @@
       "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
     },
     {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "04c009b0fa5523c8409d8663c935dffaebcaaa1aad61320c6f90dba1704094de",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8ec03d41266350e7f73b3e1ea38665ed77fe01f91a53fbee7f9424fcd823335b",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.diff",
+      "sha256": "205711c2b9cd4471b7cf739ef3b181de12fb13c7bb75ba1417fc6811e2869158",
+      "role": "Exact sealed context-whitespace diff retained externally unchanged."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.json",
+      "sha256": "b8edb41ee31f18ef7c82e6388be29e17c9031fbeae964235b9d40adf0c46d25c",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt",
+      "sha256": "5e3d683233e573f592431a81c0c6f9ae5d3ee647ec5b3fc7803ced3c66a964a4",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+      "sha256": "dc8e36945250c40b98e7ea831ac1190a95f12b6dfc50c2e4f21253b38ae34a84",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/publication_revision_frozen/generation02/worktree/scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+      "sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+      "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."
+    },
+    {
       "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-measure-independent/sources/AGENTS.md",
       "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
       "role": "Frozen duplicate or instruction snapshot retained externally, bound by copied inventories and seals."

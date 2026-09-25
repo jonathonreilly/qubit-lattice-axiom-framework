@@ -1,0 +1,215 @@
+{
+  "checked_utc": "2026-09-25T04:13:02.680269+00:00",
+  "scope": "Read-only generation02 link, complete payload, recovery and cache binding.\n\nNo scientific runner or cache helper is imported or executed. All output is\nJSON on stdout; the caller records it outside the publication worktree.\n",
+  "source_sha256": "ff7e0d6c9960a12e67c23246f33e2b56de0803439a17b82097af3b30f976467d",
+  "source_pins_sha256": "ddaaba080c6e5a466674e287751fe162f055c84a571585fe1aeb942abbb7d5cf",
+  "current_origins_verified": 14,
+  "preserved_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+      "members": 25
+    },
+    "POST_SEAL.json": {
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+      "members": 20
+    },
+    "PUBLICATION_COMPARISON_SEAL.json": {
+      "sha256": "dbe7b8e5f0ba94c1aea2dad3ebfccb77e77d30fbd65213e1609b91eac761cdf0",
+      "members": 27
+    }
+  },
+  "changed_nine_manifest_members": [
+    "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+    "outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+    "logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt"
+  ],
+  "generation01_commit": "65bfe2ae12623a073de3de00a51e35d33c53e7a7",
+  "generation01_nine_member_recovery": [
+    {
+      "path": "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "generation01_sha256": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    },
+    {
+      "path": "scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+      "generation01_sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "generation01_sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": false
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "generation01_sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": false
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "generation01_sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": false
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "generation01_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "generation01_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    },
+    {
+      "path": "outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+      "generation01_sha256": "6a39a535a52df7e80a2a660c6aa5a6ed2ab5ee04becd1d85870eda739cf3d319",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    },
+    {
+      "path": "logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt",
+      "generation01_sha256": "856a1dea5097fceb4798a7a1c3a1dc45e12007c4ba6e31837f086b40aeb7e069",
+      "git_commit_bytes_match": true,
+      "separate_history_copy_exists_and_matches": true
+    }
+  ],
+  "generation01_external_metadata_recovery": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "abf84a41106c3fe9d5f6b475b29d315e746446289b59f15f1a3f4dee472bd00e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "4dd1357cb01386868107c0841f81c27ca478c6d1d83fd8ad5e29f74428898160"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01/FINITE_WINDOW_ENERGY_PRIMARY_VERIFICATION_ATTEMPT01_FAILURE.json",
+      "sha256": "9c21ce603b25de26019d0e07b6dcffe043d80cf3a56632ac4682d886528dcf8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01/FINITE_WINDOW_ENERGY_PRIMARY_ROOT_VERIFICATION.json",
+      "sha256": "f96c0a11fdf0968c4d035d5881f92ee038c7bed0d766dd3b904171c4b912fd51"
+    }
+  ],
+  "unchanged_helper_git_and_live_bytes_verified": true,
+  "full_actual_diff_equals_supplied_diff": true,
+  "complete_diff": "--- generation01\n+++ generation02\n@@ -335,12 +335,12 @@\n \n ## Evidence and remaining physical obligations\n \n-The [root history](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md)\n-and [independent PRE](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE.md)\n-preserve their exact original arguments. The\n-[POST](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST.md)\n-and [magnetic-sum correction](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md)\n-record the necessary repair without changing either seal. The\n+The [root history](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/)\n+and [independent PRE](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)\n+contain `FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md` and `PRE.md`, preserving their exact original arguments. The\n+[POST](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)\n+and [magnetic-sum correction](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/)\n+contain `POST.md` and `FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md`, recording the necessary repair without changing either seal. The\n [primary runner](../scripts/finite_window_microscopic_energy_laws_2026_09_25.py) and\n [complete fresh result](../outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json) distinguish the generic four-state\n control from the native full-graph control. Historical failures and limitations\n",
+  "complete_revised_evidence_paragraph": "## Evidence and remaining physical obligations\n\nThe [root history](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/)\nand [independent PRE](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)\ncontain `FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md` and `PRE.md`, preserving their exact original arguments. The\n[POST](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/)\nand [magnetic-sum correction](../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/)\ncontain `POST.md` and `FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md`, recording the necessary repair without changing either seal. The\n[primary runner](../scripts/finite_window_microscopic_energy_laws_2026_09_25.py) and\n[complete fresh result](../outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json) distinguish the generic four-state\ncontrol from the native full-graph control. Historical failures and limitations\nare retained in the review packet; source bindings distinguish omitted duplicate\nsnapshots from scientific evidence actually included.",
+  "science_canonical_citations_and_final_physical_obligations_byte_unchanged": true,
+  "provenance_links": [
+    {
+      "label": "root history",
+      "old_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "new_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/author_history/",
+      "named_historical_file": "FINITE_WINDOW_MICROSCOPIC_ENERGY_MEASURES_ROOT.md",
+      "directory_and_named_file_exist": true,
+      "linked_historical_contents_reaudited": false
+    },
+    {
+      "label": "independent PRE",
+      "old_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/PRE.md",
+      "new_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/",
+      "named_historical_file": "PRE.md",
+      "directory_and_named_file_exist": true,
+      "linked_historical_contents_reaudited": false
+    },
+    {
+      "label": "POST",
+      "old_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/POST.md",
+      "new_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/independent/",
+      "named_historical_file": "POST.md",
+      "directory_and_named_file_exist": true,
+      "linked_historical_contents_reaudited": false
+    },
+    {
+      "label": "magnetic-sum correction",
+      "old_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "new_target": "../.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/review/",
+      "named_historical_file": "FINITE_WINDOW_ENERGY_MAGNETIC_SUM_CORRECTION.md",
+      "directory_and_named_file_exist": true,
+      "linked_historical_contents_reaudited": false
+    }
+  ],
+  "recorded_mechanical_failure_and_repair": {
+    "at": "2026-09-25T04:08:35.457082+00:00",
+    "generation01_commit": "65bfe2ae12623a073de3de00a51e35d33c53e7a7",
+    "preserved_generation": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/finite-window-energy-publication-history/generation01",
+    "failure": "Focused gate rejected historical .md evidence links outside docs, because resolve_link_target intentionally accepts only docs sources. The paths exist; no scientific argument failed.",
+    "change": "Point provenance links to their actual evidence directories and name the unchanged historical files explicitly. Canonical source citations and all scientific sections remain unchanged. No gate implementation or exemption altered.",
+    "old_note": "55b3d3cad252bab95b96af4ab9165404545de141651fa32e8d642bd80940c693",
+    "new_note": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb"
+  },
+  "new_note_sha256": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb",
+  "new_manifest_sha256": "8ec03d41266350e7f73b3e1ea38665ed77fe01f91a53fbee7f9424fcd823335b",
+  "new_input_fingerprint_sha256": "18fc944893cea337313ad993f2ac65027120c4ae043285c289d3b1f6fefa42cc",
+  "declared_inputs": [
+    "docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+    ".claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py"
+  ],
+  "full_scientific_payload_leaf_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "scientific_differences": [],
+  "only_excluded_payload_fields": [
+    {
+      "path": "root_generic/elapsed_seconds",
+      "generation01": 0.08806937490589917,
+      "generation02": 0.0858408329077065
+    },
+    {
+      "path": "independent_native/elapsed_seconds",
+      "generation01": 0.010761958081275225,
+      "generation02": 0.013097959104925394
+    }
+  ],
+  "new_stage_records": [
+    {
+      "program": "finite_window_energy_controls.py",
+      "code_sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "stdout_sha256": "129cd930d830ce85273deba69c875db99c4df56e0988f772b030b81b49a4ce9a",
+      "stdout_bytes": 33974,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.1800648330245167
+    },
+    {
+      "program": "primitive_energy_control.py",
+      "code_sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "stdout_sha256": "54eb35af962193cca51de984f84f20998571ddbf4ea50e0d3126c92af69da992",
+      "stdout_bytes": 23511,
+      "stderr_bytes": 0,
+      "exit_code": 0,
+      "elapsed_seconds": 0.42314933286979795
+    }
+  ],
+  "new_result_sha256": "dc8e36945250c40b98e7ea831ac1190a95f12b6dfc50c2e4f21253b38ae34a84",
+  "new_result_bytes": 65487,
+  "new_cache_sha256": "5e3d683233e573f592431a81c0c6f9ae5d3ee647ec5b3fc7803ced3c66a964a4",
+  "new_cache_bytes": 65867,
+  "full_result_execution_stdout_cache_exact": true,
+  "external_run_seconds": 0.6965310573577881,
+  "wrapper_seconds": 0.6047160420566797,
+  "programs_or_cache_helpers_imported_or_executed": [],
+  "other_active_packets_opened": [],
+  "scope_limits": [
+    "No scientific rerun or new independent reconstruction.",
+    "No mechanical gate execution or retained audit; root separately checks the full evidence package and allowlist.",
+    "Recovery checked for prior pinned sources, not an inventory audit of all 65 publication files.",
+    "Earlier live origins intentionally changed; earlier frozen snapshots and seals remain unchanged."
+  ],
+  "check_failures": []
+}

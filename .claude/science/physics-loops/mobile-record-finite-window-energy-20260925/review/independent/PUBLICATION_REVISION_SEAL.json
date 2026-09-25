@@ -1,0 +1,207 @@
+{
+  "sealed_utc": "2026-09-25T04:15:58.854568+00:00",
+  "signed_by": "Codex scoped independent checker /root/rotor_upper_tail_check",
+  "scope": "Narrow generation02 final publication correspondence: provenance paragraph revision and complete fresh source/payload/cache binding. No scientific rerun, fresh independence claim or retained audit.",
+  "report": "PUBLICATION_REVISION.md",
+  "preserved_seals": {
+    "PRE_SEAL.json": {
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+      "members": 25
+    },
+    "POST_SEAL.json": {
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+      "members": 20
+    },
+    "PUBLICATION_COMPARISON_SEAL.json": {
+      "sha256": "dbe7b8e5f0ba94c1aea2dad3ebfccb77e77d30fbd65213e1609b91eac761cdf0",
+      "members": 27
+    }
+  },
+  "generation01_commit": "65bfe2ae12623a073de3de00a51e35d33c53e7a7",
+  "generation01_recovery_scope": "Nine pinned publication files verified from exact Git bytes; six artifact copies and four earlier external metadata records verified in history. Not a full 65-file package audit.",
+  "generation02_note_sha256": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb",
+  "generation02_manifest_sha256": "8ec03d41266350e7f73b3e1ea38665ed77fe01f91a53fbee7f9424fcd823335b",
+  "generation02_result_sha256": "dc8e36945250c40b98e7ea831ac1190a95f12b6dfc50c2e4f21253b38ae34a84",
+  "generation02_cache_sha256": "5e3d683233e573f592431a81c0c6f9ae5d3ee647ec5b3fc7803ced3c66a964a4",
+  "recomputed_input_fingerprint_sha256": "18fc944893cea337313ad993f2ac65027120c4ae043285c289d3b1f6fefa42cc",
+  "current_origin_count": 14,
+  "scientific_payload_leaf_counts": {
+    "str": 464,
+    "int": 232,
+    "bool": 8,
+    "float": 410
+  },
+  "excluded_payload_timers": [
+    {
+      "path": "root_generic/elapsed_seconds",
+      "generation01": 0.08806937490589917,
+      "generation02": 0.0858408329077065
+    },
+    {
+      "path": "independent_native/elapsed_seconds",
+      "generation01": 0.010761958081275225,
+      "generation02": 0.013097959104925394
+    }
+  ],
+  "science_and_canonical_citations_unchanged": true,
+  "additional_repair_identified": false,
+  "mechanical_failure_preserved": "Historical markdown provenance links were rejected by the focused docs-only resolver, as recorded by root. Directory-link repair and named-file existence checked; gate not rerun by this checker.",
+  "earlier_frozen_sources_overwritten": false,
+  "author_primary_or_cache_programs_executed": [],
+  "other_active_scientific_packets_opened": [],
+  "own_read_only_check": "PUBLICATION_REVISION_CHECK_EXECUTION.json",
+  "member_count": 30,
+  "members": [
+    {
+      "path": "POST.md",
+      "sha256": "857e153edde43cc21847a7a0aeb6ee04ca5731d201691573e7e010a013153c20",
+      "bytes": 19733
+    },
+    {
+      "path": "POST_SEAL.json",
+      "sha256": "5c8cf25f153a2e8d2ece143e22afa95242c93e1ebfe137efa005809c2617b6a0",
+      "bytes": 5716
+    },
+    {
+      "path": "POST_SOURCE_PINS.json",
+      "sha256": "c2ea89a3449b8fadeb9d6429e6ba9eb20cce3ecea82d29b4a65b822924ae8d03",
+      "bytes": 4099
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "59be01a8d017fb3d1c08887723f91b25af203e318192749185791617f31de743",
+      "bytes": 29737
+    },
+    {
+      "path": "PRE_SEAL.json",
+      "sha256": "75bdc5d36dad74adf96285cefb0896539466f4e14c179cecc30f9afe5dbbf4ca",
+      "bytes": 6077
+    },
+    {
+      "path": "PUBLICATION_COMPARISON.md",
+      "sha256": "3e587ca34f684d624912b96d61f0b1aeca8791bf1f8a5c984459f6f94710bc6d",
+      "bytes": 18402
+    },
+    {
+      "path": "PUBLICATION_COMPARISON_SEAL.json",
+      "sha256": "dbe7b8e5f0ba94c1aea2dad3ebfccb77e77d30fbd65213e1609b91eac761cdf0",
+      "bytes": 9036
+    },
+    {
+      "path": "PUBLICATION_REVISION.md",
+      "sha256": "49fb9b3bdeca3582f3800e99fa045c832dd0120cb97cf86be658daeef4c58844",
+      "bytes": 9011
+    },
+    {
+      "path": "PUBLICATION_REVISION_CHECK_EXECUTION.json",
+      "sha256": "60f67e0c818a350296dc1403aac92e2dcd593ed543e6d9f0bb7f38842ea68700",
+      "bytes": 463
+    },
+    {
+      "path": "PUBLICATION_REVISION_CHECK_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "PUBLICATION_REVISION_CHECK_STDOUT.json",
+      "sha256": "3f4db25890da508f46c329355782d96aa1891563fb23705524a55d206e0ac43f",
+      "bytes": 14562
+    },
+    {
+      "path": "PUBLICATION_REVISION_SOURCE_PINS.json",
+      "sha256": "ddaaba080c6e5a466674e287751fe162f055c84a571585fe1aeb942abbb7d5cf",
+      "bytes": 7557
+    },
+    {
+      "path": "PUBLICATION_SOURCE_PINS.json",
+      "sha256": "3dcbc643760944756f471369eea54dc37187b2703b0aa384157e1626749dfe19",
+      "bytes": 7554
+    },
+    {
+      "path": "SOURCE_PINS.json",
+      "sha256": "f278cb8f6550a5a5688ad1f56a4c7cfebd4150d637eea1d7eafa8126a3f06a43",
+      "bytes": 6473
+    },
+    {
+      "path": "publication_frozen/tooling/runner_cache.py",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "bytes": 24941
+    },
+    {
+      "path": "publication_revision_check.py",
+      "sha256": "ff7e0d6c9960a12e67c23246f33e2b56de0803439a17b82097af3b30f976467d",
+      "bytes": 12783
+    },
+    {
+      "path": "publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_CACHE_EXECUTION.json",
+      "sha256": "04c009b0fa5523c8409d8663c935dffaebcaaa1aad61320c6f90dba1704094de",
+      "bytes": 70407
+    },
+    {
+      "path": "publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_FROZEN_SOURCES.json",
+      "sha256": "8ec03d41266350e7f73b3e1ea38665ed77fe01f91a53fbee7f9424fcd823335b",
+      "bytes": 3758
+    },
+    {
+      "path": "publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.diff",
+      "sha256": "205711c2b9cd4471b7cf739ef3b181de12fb13c7bb75ba1417fc6811e2869158",
+      "bytes": 1813
+    },
+    {
+      "path": "publication_revision_frozen/generation02/metadata/FINITE_WINDOW_ENERGY_PUBLICATION_LINK_REPAIR.json",
+      "sha256": "b8edb41ee31f18ef7c82e6388be29e17c9031fbeae964235b9d40adf0c46d25c",
+      "bytes": 870
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/independent_native/primitive_energy_control.py",
+      "sha256": "c72006547f16bc1636ac3b156e2fc1343e6ceaa835c173eef339559ab673659b",
+      "bytes": 12127
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/.claude/science/physics-loops/mobile-record-finite-window-energy-20260925/runtime/root_generic/finite_window_energy_controls.py",
+      "sha256": "1f6bd26b8a4bd735cfe3e4e1b06cf862329d49478b862691a37e6af6d24b486d",
+      "bytes": 6301
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "f950ff0435287ce4be95d278422319d398d5969676299211e12b5478e42bdfbb",
+      "bytes": 23226
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/logs/runner-cache/finite_window_microscopic_energy_laws_2026_09_25.txt",
+      "sha256": "5e3d683233e573f592431a81c0c6f9ae5d3ee647ec5b3fc7803ced3c66a964a4",
+      "bytes": 65867
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/outputs/finite_window_energy_20260925/FINITE_WINDOW_ENERGY_PUBLIC_RESULTS.json",
+      "sha256": "dc8e36945250c40b98e7ea831ac1190a95f12b6dfc50c2e4f21253b38ae34a84",
+      "bytes": 65487
+    },
+    {
+      "path": "publication_revision_frozen/generation02/worktree/scripts/finite_window_microscopic_energy_laws_2026_09_25.py",
+      "sha256": "566e019596b8f24e110bd2dc56e0fcdceb89a5dd57bf02d5dff37395f34ed084",
+      "bytes": 3210
+    },
+    {
+      "path": "seal_publication_revision.py",
+      "sha256": "171e412ab6a3b760e30b436a4620e45e5be7e3fb73aa13177379c18c385c703a",
+      "bytes": 6419
+    }
+  ],
+  "next_step": "Stop after delivery; full package/allowlist and mechanical-gate verification remain root work."
+}

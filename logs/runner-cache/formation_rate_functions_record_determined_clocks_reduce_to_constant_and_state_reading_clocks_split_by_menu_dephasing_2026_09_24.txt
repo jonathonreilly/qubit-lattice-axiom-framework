@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/formation_rate_functions_record_determined_clocks_reduce_to_constant_and_state_reading_clocks_split_by_menu_dephasing_2026_09_24.py
+runner_sha256: e563a0758b3113206794653eb2e074c076897001ae83f9111eb6c5ad5a50aad9
+input_fingerprint_sha256: 9db0b6c78ca8879a5d4abcda9e965876de6b8e21d7234ed1ba91e4bcecfaf108
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.70
+status: ok
+----- stdout -----
+[PASS] covariance: relabelling-invariant functionals of the law-level distribution are fixed under the 24 proper cubic rotations; a labelled component is not :: 24 rotations; entropy/support/1/max change by at most 0e+00; the +z odds change by up to 0.400
+[PASS] register criterion: constant, law, odds and alignment clocks are invariant under menu dephasing; purity and coherence clocks are not :: max |f(rho) - f(Delta_p rho)| over 400 states: constant 0e+00; law: entropy 0e+00; law: support size 0e+00; law: 1/max 0e+00; odds (1+r.p)/2 1e-16; alignment 2(r.p)^2 9e-16; purity |r|^2 0.991; coherence 1+4|rho+-|^2 0.991
+[PASS] constant clock: recorded odds equal (1 + r_f.p)/2 with the Laplace-transformed Bloch vector r_f; landed tilted values reproduced; fast and slow limits :: precession vs expm 2e-16; trapezoid vs closed form at most 7e-08 over 4 rates x 3 menus; landed tilted menu: f=1 gives 0.8437, f=|r0|^2=0.64 gives 0.8154; limits on that menu: f=1e3 0.8606 vs initial odds 0.8605, f=1e-3 0.7435 vs field-dephased odds 0.7434; dt = 2e-03, T = 60; the landed tilt vector has cosine 0.861 to the field (its construction vector has cosine 0.424 to the field, so it is not the perpendicular direction)
+[PASS] record-determined clocks: between neighbour record events each equals the constant clock at its value (isolated site, both menus) :: rates entropy 0.8113, support 2, 1/max 1.3333 at supplied law odds 0.75; odds differ from the constant clock at the same value by at most 0e+00; tilted-menu odds by class: constant 0.8437, law: entropy 0.8308, law: 1/max 0.8584, odds (1+r.p)/2 0.8360, alignment 2(r.p)^2 0.8570, purity |r|^2 0.8154, coherence 1+4|rho+-|^2 0.8499
+[PASS] witness pair: identical menu odds at every time and different menu coherence give identical odds for registered-only clocks and different odds for state-reading clocks :: perpendicular menu: |odds_A(t) - odds_B(t)| at most 1e-16; |rho+-| differs by at least 0.100; registered-only clocks differ by at most 1e-16 (constant 0.6732); purity 0.6126 vs 0.5547 (gap +0.0579); coherence 0.7165 vs 0.6905 (gap +0.0259). Field menu, same r.h, transverse halved: odds differ by at most 1e-16 for all clocks; registered-only mean formation times differ by at most 0e+00; purity clock times 1.562 vs 2.502
+[PASS] two-qubit model: record-determined clocks still equal the constant clock at their value; odds-reading and state-reading clocks depart (landed values reproduced) :: r_A.h varies by 0.252; law clocks vs constant clock at their value at most 0e+00; field-menu odds: constant 0.7197, law/entropy 0.7202, law/1/max 0.7219, odds 0.7242, alignment 0.7535, purity 0.7204, coherence 0.7211; largest survival at T=60 is 9e-14
+[PASS] explicit-time clock: a linear hazard with unit mean formation time departs from the constant clock on the tilted menu and agrees on the field menu :: mean formation time 1.0000; tilted-menu odds 0.8607 vs constant clock 0.8437; field-menu odds 0.7826 = (1 + r0.h)/2
+per_element: Rate functions are classified by menu dephasing and rotation invariance.
+per_site: Isolated precession, closed-form constant-clock odds and witness pairs are tested.
+per_mode: checked and not executed - no normal-mode or continuum clock limit is claimed.
+per_block: One- and two-site trajectories under the supplied clause are tested.
+lattice_wide: checked and not executed - no many-site formation law is claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

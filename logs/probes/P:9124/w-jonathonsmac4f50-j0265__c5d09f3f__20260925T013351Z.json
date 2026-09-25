@@ -1,0 +1,36 @@
+{
+ "task": "P:9124",
+ "type": "pr-reexecution",
+ "lane": "mobile-record-photon-observation-bridge-",
+ "worker": "w-jonathonsmac4f50-j0265",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9124",
+ "pr": 9124,
+ "branch": "codex/mobile-record-photon-observation-bridge-20260924",
+ "git_sha": "c5d09f3f",
+ "started_utc": "20260925T013351Z",
+ "elapsed_s": 7.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/photon_dispersion_observation_and_live_formation_response_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9124's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "fddaaf50e1975b1b2ab0b6e57340855bf8cefe9049428bd7670794ae4c5ebec1",
+ "stdout_tail": "PR #9124: Conditional photon dispersion constraints and live formation response\nbranch codex/mobile-record-photon-observation-bridge-20260924 (base main)\nrunners in the PR: 1\n== scripts/photon_dispersion_observation_and_live_formation_response_2026_09_24.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0265",
+  "at_utc": "20260925T013359Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

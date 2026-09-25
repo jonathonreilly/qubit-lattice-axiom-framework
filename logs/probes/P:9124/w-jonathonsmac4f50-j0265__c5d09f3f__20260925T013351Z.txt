@@ -1,0 +1,4 @@
+PR #9124: Conditional photon dispersion constraints and live formation response
+branch codex/mobile-record-photon-observation-bridge-20260924 (base main)
+runners in the PR: 1
+== scripts/photon_dispersion_observation_and_live_formation_response_2026_09_24.py: rc=0 PASS=4 FAIL=0

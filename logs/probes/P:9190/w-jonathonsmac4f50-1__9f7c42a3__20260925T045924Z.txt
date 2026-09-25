@@ -1,0 +1,10 @@
+PR #9190: physics-loop: admissibility induced-law block 132 - the two-wall level rule holds on every ring whose length is a multiple of four, and an antipodal wall pair costs the sea exactly
+branch physics-loop/admissibility-induced-law-block132-the-two-wall-level-rule-on-every-ring-with-four-dividing-l-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_two_wall_level_rule_holds_on_every_ring_whose_length_is_a_multiple_of_four_and_an_antipodal_wall_pair_costs_the_sea_exactly_2026_09_24.py: rc=0 PASS=11 FAIL=0
+   mutation wall_defect_forged: expected B observed B ok
+   mutation chebyshev_forged: expected C observed C ok
+   mutation level_rule_forged: expected D observed D ok
+   mutation zero_mode_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

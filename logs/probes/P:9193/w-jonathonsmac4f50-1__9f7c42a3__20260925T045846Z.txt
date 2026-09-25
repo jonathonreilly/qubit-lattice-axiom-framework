@@ -1,0 +1,10 @@
+PR #9193: physics-loop: admissibility induced-law block 134 - one light cone from the source link: the walkers smooth states meet the members identity at leading order iff alpha = K/4
+branch physics-loop/admissibility-induced-law-block134-one-light-cone-from-the-source-link-alpha-equals-k-over-four-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_light_cone_from_the_source_link_the_walkers_smooth_states_meet_the_members_identity_at_leading_order_iff_alpha_equals_k_over_four_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation closing_ratio_forged: expected B observed B ok
+   mutation leading_ratio_forged: expected C observed C ok
+   mutation lattice_correction_forged: expected D observed D ok
+   mutation light_cone_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

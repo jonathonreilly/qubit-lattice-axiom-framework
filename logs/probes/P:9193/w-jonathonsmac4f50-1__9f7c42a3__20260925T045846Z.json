@@ -1,0 +1,37 @@
+{
+ "task": "P:9193",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block134-one-l",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/run_pr_branch.py 9193",
+ "pr": 9193,
+ "branch": "physics-loop/admissibility-induced-law-block134-one-light-cone-from-the-source-link-alpha-equals-k-over-four-20260925",
+ "git_sha": "9f7c42a3",
+ "started_utc": "20260925T045846Z",
+ "elapsed_s": 16.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_one_light_cone_from_the_source_link_the_walkers_smooth_states_meet_the_members_identity_at_leading_order_iff_alpha_equals_k_over_four_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "bf4287ae5889b2863a90ef012bd1905333dc987ed6ac0587cce150c18ffabe38",
+ "stdout_tail": "PR #9193: physics-loop: admissibility induced-law block 134 - one light cone from the source link: the walkers smooth states meet the members identity at leading order iff alpha = K/4\nbranch physics-loop/admissibility-induced-law-block134-one-light-cone-from-the-source-link-alpha-equals-k-over-four-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_one_light_cone_from_the_source_link_the_walkers_smooth_states_meet_the_members_identity_at_leading_order_iff_alpha_equals_k_over_four_2026_09_25.py: rc=0 PASS=11 FAIL=0\n   mutation closing_ratio_forged: expected B observed B ok\n   mutation leading_ratio_forged: expected C observed C ok\n   mutation lattice_correction_forged: expected D observed D ok\n   mutation light_cone_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T045902Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

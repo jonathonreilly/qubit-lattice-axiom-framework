@@ -1,0 +1,10 @@
+PR #9195: physics-loop: admissibility induced-law block 135 - one light cone exactly on the lattice: the two-step content meets the members identity for every state and species iff alpha = K/4
+branch physics-loop/admissibility-induced-law-block135-one-light-cone-exactly-on-the-lattice-two-step-content-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation energy_unaveraged: expected B observed B ok
+   mutation trig_identity_forged: expected C observed C ok
+   mutation k_bar_independent_forged: expected D observed D ok
+   mutation light_cone_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

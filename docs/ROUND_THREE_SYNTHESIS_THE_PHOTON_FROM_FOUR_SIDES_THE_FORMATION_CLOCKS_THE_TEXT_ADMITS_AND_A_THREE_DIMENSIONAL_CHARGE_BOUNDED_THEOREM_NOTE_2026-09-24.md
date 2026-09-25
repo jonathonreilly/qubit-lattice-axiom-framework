@@ -54,8 +54,10 @@ what stays open; the runner recomputes one identity per block.
   of the transverse fluctuations — and its Feynman bound falls faster than
   `1/L`, but no power is resolved: a residual constant near a quarter of
   the pinch-point weight would make the bound quadratic at long
-  wavelengths; a fading one leaves the linear term as the photon. The
-  separator is the value of `S_T(k_min)` on tori beyond 12³.
+  wavelengths; a fading one leaves the linear term as the photon. The 12³
+  run (open PR 9171, addendum) shows the smallest-momentum series is
+  contaminated by a finite-size suppression that weakens with `L`, so the
+  separator is `S_T(k)` at fixed `k` extrapolated in `L`, not the series.
 
 **Formation (open PR 9164).**
 - *Exact.* A rate reads only registered content iff it is invariant under
@@ -126,9 +128,15 @@ points. None is adopted.
 
 ## What stays open
 
-- The photon's power: `S_T(k_min)` on 12³ (a run is in progress) and
-  beyond, with forward lags growing with the torus; the fixed-`k` series at
-  `π/2` and `π/3`; the late-time gap on the larger tori.
+- The photon's power. An auxiliary 12³ run (open PR 9171, addendum) gave
+  `S_T(π/6) = 0.496 ± 0.057`, on both fits' predictions, but showed the
+  structure factor growing with the torus at fixed momentum
+  (`S_T(π/3)`: 0.557 on 6³ → 0.778 on 12³; `S_T(π/2)`: 0.69 → 0.9 from 4³
+  to 12³) with flat forward-walking lags: the smallest-momentum series
+  mixes the `k`-dependence with a weakening finite-size suppression, and
+  the observable to extrapolate is `S_T(k)` at fixed `k` (16³ and 18³ at
+  a precision of 0.03, with 250–500 walkers and lags growing with the
+  torus); the late-time gap on the larger tori.
 - Which formation-rate class the framework favours, beyond what the text
   admits; whether D-register is binding.
 - The hyperhoneycomb network's ground-state flux sector and its gauging

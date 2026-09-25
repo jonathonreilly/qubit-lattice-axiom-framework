@@ -1,0 +1,36 @@
+{
+ "task": "P:9148",
+ "type": "pr-reexecution",
+ "lane": "ring-model-projector-monte-carlo-pure-ri",
+ "worker": "w-jonathonsmac4f50-j5eb7",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9148",
+ "pr": 9148,
+ "branch": "claude/ring-model-projector-monte-carlo-pure-ring-point-20260924",
+ "git_sha": "2170e199",
+ "started_utc": "20260925T021848Z",
+ "elapsed_s": 86.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9148's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "02e913a0d892c7ec6b2fb04373fbd8a53cdc431601ddfef6f7baa0b43e156d78",
+ "stdout_tail": "PR #9148: feat(photon): projector Monte Carlo of the ring model at the pure-ring point\nbranch claude/ring-model-projector-monte-carlo-pure-ring-point-20260924 (base main)\nrunners in the PR: 1\n== scripts/ring_model_projector_monte_carlo_at_the_pure_ring_point_2026_09_24.py: rc=0 PASS=3 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5eb7",
+  "at_utc": "20260925T022014Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

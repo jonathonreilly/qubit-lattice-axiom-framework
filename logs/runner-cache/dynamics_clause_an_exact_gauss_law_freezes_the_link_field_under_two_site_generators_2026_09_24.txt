@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_two_site_generators_2026_09_24.py
+runner_sha256: 08c996597b987924bd33c251ab4e04394472f40894b87c9815a6918f1e085e7a
+input_fingerprint_sha256: f18c45064931ce7d61dba15db7a4a5ce7e10d5453ced48084b8c25962a9fd94b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.83
+status: ok
+----- stdout -----
+[PASS] roles: neighbours differ by one role; links are independent; vertex 6 links, link 2 vertices + 4 plaquettes, plaquette 4 links + 2 cubes :: role steps [1]; link-link bonds 0; neighbour role counts [[(0, 6, 0, 0)], [(2, 0, 4, 0)], [(0, 4, 0, 2)], [(0, 0, 6, 0)]]
+[PASS] freeze (U(1)): two-site generators commuting with the Gauss operators at both ends commute with E_l :: static: invariant two-site span 26, max |[H, E_l]| 4.2e-15; dynamical: invariant two-site span 18, max |[H, E_l]| 4.0e-15
+[PASS] freeze (Z2): two-site generators commuting with tau^x_v X_l and tau^x_w X_l commute with X_l; tau^z_v Z_l tau^z_w moves it :: invariant two-site span 18, max |[H, X_l]| 9.8e-15; three-site mover norm 1.960
+[PASS] freeze (compression): P H P commutes with E_l in every Gauss sector, for random two-site H :: 7 sectors; max |[P H P, E_l]| 0.0e+00; |[H, E_l]| 53.35
+[PASS] hops: with dynamical vertex charges some vertex-link-vertex operators are Gauss-invariant field movers; with static charges none :: max |[O, E_l]|: static 1.3e-15, dynamical 0.930
+[PASS] rings: the tested even L=6 coarse torus is bipartite and simple; its 4-cycles are exactly the plaquette boundaries; on a plaquette the divergence-free changes are +-(ring) :: bipartite True; simple True; 4-cycles 648 (plaquettes 648); all plaquettes True; divergence-free [(-1, -1, 1, 1), (1, 1, -1, -1)]
+[PASS] soldered vertex: sum_l s_l . n(v->l) is invariant under the 24 rotations; invariant one-qubit operators = multiples of 1; a fixed axis with trivial action is not covariant :: max deviation 1.3e-14; invariant one-qubit dimension 1; trivial action fails for 21 of 24 rotations
+[PASS] soldered plaquette: 8 rotations fix it; Gauss-commuting operators dim 18 with 2 movers; covariant Hermitian dim 5 with one real ring coupling and the flippability projector :: stabilizer 8; corner covariance 3.3e-15; Gauss-commuting 18, movers 2; covariant Hermitian 5, movers 1; flippable pair 2 states, projector covariant True
+[PASS] soft Gauss ring (ED, one plaquette): half-splitting of the ice doublet -> 5 h^4 / (32 U^3) :: ratio 0.999440 at h/U = 0.04, 0.999860 at h/U = 0.02
+[PASS] soft Gauss diagonal (coarse L = 6 torus): the fourth-order diagonal energy is the same on random ice configurations; ring element -5 h^4/(32 U^3) :: diagonal (units h^4/U^3) -18.5625000000, spread 0.0e+00 over 5 configurations (min Hamming distance 308); ring element -0.156250 vs -0.156250
+[PASS] transverse record fields at K = -J, D = 0: vertex records, and plaquette records along the normal, give link fields with no component along the link :: max longitudinal component 0.0e+00
+[PASS] four landed actions: oriented link field (intertwiner from the spatial rotation) exists for full soldering alone; nonconstant vertex charge needs an invariant axis :: homomorphism defect 0e+00; det 1; intertwiner dims (trivial, sign twist, axis, full) [0, 0, 0, 1]; invariant axes [3, 1, 0, 0]
+N5 resolution 1: A total-generator matrix-element selection rule proves freeze without requiring each bond term to commute separately.
+N5 resolution 2: A three-site hop escapes freeze only when endpoint charge transitions match the link electric step.
+N5 resolution 3: Elementary ring minimality uses simple cubic geometry; odd large tori are not bipartite but have the same four-cycle classification.
+N5 resolution 4: The fourth-order equal-field diagonal is constant by local three-in-three-out pair counts, not a state-selection mechanism.
+N5 resolution 5: Soft Gauss energy and record fields are supplied extra terms; their ring does not derive a photon phase or native law.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

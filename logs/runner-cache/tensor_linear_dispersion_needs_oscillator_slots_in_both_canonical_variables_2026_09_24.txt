@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/tensor_linear_dispersion_needs_oscillator_slots_in_both_canonical_variables_2026_09_24.py
+runner_sha256: a778ff1d6c4562bfeaed75a9b908e6c84f0c3d8f60f577c2156ae74860099789
+input_fingerprint_sha256: a3c65980a2e587f5a891382c0e907e190600e4b2b017304adf6256fb57e16d17
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.65
+status: ok
+----- stdout -----
+[PASS] the momentum term E:E - (tr E)^2/2 is invariant under the scalar gauge on the constraint surface only :: G S^T = 0 exactly on the 4^3 torus; ker G has dimension 195 of 384; s.M0 s = 0e+00 for every delta_c and 0e+00 for a random beta; change under E -> E + s: -4e-13 for E in ker G, 44.864 off it
+[PASS] specified cosine replacement fails scalar invariance; the tested nonconstant quadratic potential is not periodic :: periodic momentum term, E in ker G, theta = 0.7: changes 702.007, 654.773, 653.230; a quadratic potential under h -> h + 2 pi e_slot: changes 640.9, -1232.5, -908.9
+[PASS] exact polynomial quotient identities and rank minors :: GX=0; Gs=0; Ms=G^T K; XMX=tX+ss^T/2; rank G=rank X=3 for K!=0; two quotient modes lambda=t
+[PASS] fitted Fourier convention and corrected quotient agree with exact symbol :: maximum error 2.176e-14; axes and zone corner included
+[PASS] oscillator slots: on the doubly constrained surface two modes with omega^2 = J g lambda, lambda ~ |k|^2 and positive; indefinite off it :: lattice potential X(k): 486 unknowns, rank 486, residual 1e-13, G X = 0 and X Hermitian; two reduced modes; lambda/|k|^2 at small k in [1.000, 1.000]; over 4000 random k: min lambda/|k|^2 = 0.420, negative modes 0; without the scalar constraint the potential's most negative eigenvalue over |k|^2 is -0.963
+[PASS] truncated CCR identity: operator norm defect N, normalized coherent expectation defect N times top probability; polynomial compression boundary term N/2 :: N = 8 (3 qubits): normalized top probability 7.3e-05, CCR expectation defect 5.8e-04; N = 16 (4 qubits): normalized top probability 2.8e-13, CCR expectation defect 4.5e-12; N = 32 (5 qubits): normalized top probability 4.5e-35, CCR expectation defect 1.4e-33; N = 64 (6 qubits): normalized top probability 1.9e-88, CCR expectation defect 1.2e-86
+N5 resolution 1: exact polynomial identities close the nonzero-momentum quotient proof; no physical phase follows.
+N5 resolution 2: correcting the conjugate scalar direction removes a defective choice of quotient representatives.
+N5 resolution 3: the cosine replacement fails, but this is not a classification of every compact completion.
+N5 resolution 4: finite truncation has operator-norm CCR defect N and state-dependent errors, not uniform convergence.
+N5 resolution 5: finite quadratic penalty failure is scoped to the parent's supplied comparator; nonlinear routes remain open.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

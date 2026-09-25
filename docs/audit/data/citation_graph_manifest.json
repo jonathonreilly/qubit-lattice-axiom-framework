@@ -1,6 +1,6 @@
 {
- "edge_count": 14661,
- "node_count": 6660,
+ "edge_count": 14678,
+ "node_count": 6667,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5134,8 +5134,20 @@
    "deps_hash": "e23a95af8450",
    "out_degree": 6
   },
+  "dynamics_clause_a_soft_vector_constraint_and_slot_fields_generate_the_landed_tensor_field_s_curvature_moves_at_twelfth_order_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "a4b603a422e7",
+   "out_degree": 2
+  },
+  "dynamics_clause_an_exact_gauss_law_freezes_the_link_field_under_every_two_site_generator_the_field_moves_by_rings_and_hops_inside_one_neighbourhood_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "d50760114938",
+   "out_degree": 6
+  },
   "dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
+   "out_degree": 3
+  },
+  "dynamics_clause_charges_are_gauss_defects_no_qubit_carries_a_covariant_charge_under_full_soldering_defects_are_bosons_and_record_phases_are_pure_gauge_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "f892b007ac95",
    "out_degree": 3
   },
   "dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_heisenberg_under_possibility_covariance_three_couplings_under_full_soldering_bounded_theorem_note_2026-09-24": {
@@ -5145,6 +5157,10 @@
   "dynamics_clause_moriya_handedness_is_a_twist_with_curvature_gauged_along_a_line_not_in_three_dimensions_and_seen_in_records_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
+  },
+  "dynamics_clause_non_abelian_gauge_links_need_several_qubits_one_qubit_carries_no_su_n_link_su2_needs_two_su3_three_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "dynamics_clause_record_fields_keep_the_carved_majoranas_sublattice_symmetric_and_a_gapless_start_plus_a_time_reversal_odd_term_gives_a_chern_number_bounded_theorem_note_2026-09-24": {
    "deps_hash": "a23731497a06",
@@ -5169,6 +5185,14 @@
   "dynamics_clause_records_only_admissibility_leaves_the_dynamics_unreadable_forming_sites_must_be_isolated_and_never_interact_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9fce644fd0e7",
    "out_degree": 3
+  },
+  "dynamics_clause_the_covariant_plaquette_clause_annihilates_uniform_ice_exactly_at_the_rokhsar_kivelson_point_and_unrecorded_plaquettes_can_polarize_the_ice_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "dynamics_clause_the_landed_tensor_constraints_freeze_under_two_site_generators_and_no_single_neighbourhood_moves_them_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "a4b603a422e7",
+   "out_degree": 2
   },
   "dynamics_clause_time_reversal_odd_star_terms_covariance_allows_them_and_on_the_cube_carving_none_keeps_the_majoranas_free_bounded_theorem_note_2026-09-24": {
    "deps_hash": "5f141bcbc75f",
@@ -19281,6 +19305,10 @@
   "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "tensor_linear_dispersion_needs_oscillator_slots_both_canonical_variables_must_be_non_compact_bounded_theorem_note_2026-09-24": {
+   "deps_hash": "a4b603a422e7",
+   "out_degree": 2
   },
   "tensor_matching_completion_theorem_note": {
    "deps_hash": "0d0b6d5c901a",

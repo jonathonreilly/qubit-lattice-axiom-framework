@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_tensor_constraints_freeze_under_two_site_generators_2026_09_24.py
+runner_sha256: 67f0b705008eb684df50e951db9c3ec387f4ce99e009b9dfb1600cd72d369403
+input_fingerprint_sha256: d8cc75ebea316d3c2f79bfef3c4172768e4e68dc1cb9752465eacadda7d23f16
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 154.01
+status: ok
+----- stdout -----
+[PASS] placement: each row uses exactly its link site's six neighbours with coefficients +-1; each slot enters rows at >= 2 distinct link sites; slot sites are never adjacent :: 192 rows on the L = 4 torus; fewest link sites per slot 2 (diagonal 2, face 4); adjacent slot-site pairs 0
+[PASS] freeze: on a Z2 window, two-site operators commuting with every row's window part commute with every slot :: invariant operator span of rank 27; max |[H, X_slot]| 0.0e+00
+[PASS] no single neighbourhood (integer slots): no nonzero Gauss-invariant slot change fits in any site's closed neighbourhood :: vertex: 3 slots, null dimension 0; link: 10 slots, null dimension 0; plaquette: 1 slots, null dimension 0; cube: 6 slots, null dimension 0
+[PASS] exact Smith factors: odd-N neighbourhood freeze; even-N cube half-period witness :: {'vertex': [1, 1, 1], 'link': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'plaquette': [1], 'cube': [1, 1, 1, 1, 1, 2]}
+[PASS] restricted radius-two, coefficient-bound-four, anchor-one minima: 10 slots on 9 sites, planar, coefficients 1 and 2; a planar piece of the landed scalar-gauge pattern, which is the sum of the three pieces :: through a diagonal slot: support 10 on 9 sites, doubled extent [0, 4, 4]; through a face slot: support 10 on 9 sites; solver optimal True; planar pieces in the kernel True; sum of pieces = S^T delta True; face-slot optimum is a planar piece True
+N5 resolution 1: Commuting electric slots permit a product-basis freeze argument; arbitrary noncommuting on-site operators are outside scope.
+N5 resolution 2: Exact Smith factors prove the integer and odd-N neighbourhood obstruction without numerical-rank inference.
+N5 resolution 3: The even-N cube half-period vector is an explicit escaping modular move, so an all-N obstruction is false.
+N5 resolution 4: Ten-slot planar patterns are exact kernel witnesses; the bounded MILP does not settle box-free minimality.
+N5 resolution 5: Long winding shifts and changed supports remain available outside the stated finite-support neighbourhood class.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

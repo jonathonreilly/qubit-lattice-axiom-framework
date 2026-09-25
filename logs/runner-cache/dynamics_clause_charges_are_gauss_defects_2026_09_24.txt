@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_charges_are_gauss_defects_2026_09_24.py
+runner_sha256: cb0bdc2075162d1fc3fc5da4fea156aa22ace856bc2c951bf24d9490bf91e31c
+input_fingerprint_sha256: ee28c18bd2954fea36e0ddd46023826a0a144eec060b10e75e320f0113663a30
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+[PASS] no covariant one-qubit charge: under full soldering no role's stabilizer fixes a Bloch axis :: stabilizer orders (vertex, link, plaquette, cube) [24, 8, 8, 24]; fixed axes [0, 0, 0, 0]
+[PASS] no two-site charge transfer: a soldered link is flipped by a covariant vertex-link term only when the vertex is fully soldered, which has no charge :: bond stabilizer 4; link-flip dims (trivial, sign twist, axis, full) [0, 0, 0, 2]; charge-transfer norms (no charge axis: -) ['1.2e-16', '2.3e-33', '-', '-']
+[PASS] defects: one flip from ice costs 2U and leaves charges +1, -1; flips carrying the +1 defect's field onward keep 2U and move it one link :: pair energy 2 U; hop moves from the +1 defect 3, all at 2U and moving the charge: True
+[PASS] bare distinct-link flips satisfy the algebraic T-junction relation; a projected nonzero channel is checked separately :: |t1 t2^dag t3 - t3 t2^dag t1| = 7.9e-17
+[PASS] nonzero projected two-defect T-junction channel has equal unit-amplitude products :: both three-hop orders remain at energy 4U with two fixed negative partners and give the identical electric configuration
+[PASS] fourth-order ring asymptote includes the flip phases; their lattice curl has zero cube sum but need not vanish :: ratio 0.99976+0.00000j, 0.99994+0.00000j at h/U = 0.03, 0.015; phase error 4.0e-08 rad; max cube sum 3.6e-15
+[PASS] on-link unitary removes transverse phases, even when their plaquette curl is nonzero :: local conjugation error 2.36e-16; nonzero sample curl rules out a vertex-gradient interpretation
+[PASS] magnitudes matter: equal field sizes give one fourth-order diagonal energy on all ice states; unequal sizes do not (the disjoint-pair and renormalization parts are configuration independent) :: shared-vertex part, equal sizes: spread 0.0e+00; unequal sizes: spread 0.3769 (units h^4/U^3)
+N5 resolution 1: Full-soldering scalar charge obstruction is scoped to one-qubit role stabilizers, not composite matter.
+N5 resolution 2: An explicit projected two-defect T-junction channel realizes equal nonzero hop products; a universal quasiparticle phase is not inferred.
+N5 resolution 3: On-link phase conjugation gives exact model equivalence but nonzero curl disproves a general vertex-gauge interpretation.
+N5 resolution 4: The ring coefficient is fourth-order perturbation theory; finite-h diagonalization is an asymptotic diagnostic.
+N5 resolution 5: Unequal transverse magnitudes can split ice configurations; neither constant diagonal shifts nor auxiliary fermions select physical matter.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

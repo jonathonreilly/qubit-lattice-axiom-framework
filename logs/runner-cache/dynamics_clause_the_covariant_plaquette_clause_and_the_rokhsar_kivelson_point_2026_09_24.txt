@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/dynamics_clause_the_covariant_plaquette_clause_and_the_rokhsar_kivelson_point_2026_09_24.py
+runner_sha256: fda4e20f475688f9736368c8934baf3c1a16eba97f56e7c50d9f009cf784a477
+input_fingerprint_sha256: e083df95e1bde96867d62fdcbfd3a37955e1a4697203d939a42f268181dafe4b
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.86
+status: ok
+----- stdout -----
+[PASS] orbits: eight rotations split the 16 link configurations into flippable 2, opposite 2, adjacent 4, odd 8 (with the ring: 5 covariant generators) :: stabilizer 8; orbit sizes {'adjacent': 4, 'odd': 8, 'flippable': 2, 'opposite': 2}
+[PASS] uniform-ice point: the covariant plaquette generators annihilating the equal-amplitude flippable state and all other configurations are the line g (P_flip - U - U^dag), positive for g >= 0 :: solution dimension 1; coefficients (ring, flippable, opposite, adjacent, odd) [1.0, 1.0, 0.0, 0.0, 0.0]; eigenvalues [0.0, 2.0]
+[PASS] ground states on the 2x2x2 torus: the summed projector is the flip-graph Laplacian, for g>0 its kernel is spanned by class-uniform states; the pure ring ground state is not uniform :: 9600 ice states, 937 flip classes (largest 864, 760 frozen states); Laplacian row sums 0e+00; largest-class spectrum starts -2.0e-15, 0.9696; pure-ring ground amplitude spread 2.738
+[PASS] uniform readout does not select a unique class-diagonal mixed state :: coherent uniform vector is a ground state for g>0; at g=0 all 9600 states lie in the kernel
+[PASS] unrecorded plaquettes at D = 0 with normal fields: under Gauss compression the link field vanishes on flippable and opposite plaquettes (highest energy); the potential's minimizers on 2x2x2 are the 8 uniformly polarized ice states, with no flippable plaquette :: orbit energies (B/J = 4) {'adjacent': -2.12132, 'odd': -2.06155, 'flippable': -2.0, 'opposite': -2.0}; minimizers 8, uniform along each axis: True; flippable plaquettes in them 0
+[PASS] local potential plus ring remains positive above polarized energy for 0<=g<Delta_flip :: Delta_flip=0.12132034, tested g=0.06066017; only four adjacent local configurations have zero energy
+N5 resolution 1: g>0 makes the graph Laplacian kernel the ground space; g=0 and g<0 require different statements.
+N5 resolution 2: coherent class superpositions also have uniform configuration readout, so no unique mixed state is selected.
+N5 resolution 3: the finite 2x2x2 graph counts distinct oriented links, including parallel-endpoint pairs.
+N5 resolution 4: a local spectral-gap inequality controls ring competition; no universal scale ordering is assumed.
+N5 resolution 5: state preparation, arbitrary record orientations and thermodynamic phases remain outside these finite controls.
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

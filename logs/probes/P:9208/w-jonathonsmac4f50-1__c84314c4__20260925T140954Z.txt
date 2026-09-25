@@ -1,0 +1,4 @@
+PR #9208: physics: derive formation-count budget for aggregate field response
+branch codex/mobile-record-formation-response-budget-20260925 (base main)
+runners in the PR: 1
+== scripts/original_formation_and_field_response_budget_2026_09_25.py: rc=0 no PASS/FAIL count line (verdict by exit code)

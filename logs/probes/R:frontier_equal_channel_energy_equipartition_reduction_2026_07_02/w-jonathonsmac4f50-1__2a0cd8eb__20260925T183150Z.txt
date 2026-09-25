@@ -1,0 +1,3 @@
+CHECKS: PASS=16 FAIL=0
+VALUES: component r=1/2 Q=2/3; slot r=1 Q=1; S3 outside=True
+TOTAL: PASS=16 FAIL=0

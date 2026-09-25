@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_epsstar_full_kernel_coefficient_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_epsstar_full_kernel_coefficient_2026_06_12.py",
+ "seed": 61079,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T183119Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6b1fb72838ca9a3c8912585023d7c69369a057788e9399567d3def6655c058f8",
+ "stdout_tail": " finite-T slope reproduces internally recomputed +3.88 :: d_measured=+3.877078419951, frozen=+3.88, tol=7.50e-01\n\nS2 FULL COEFFICIENT: complete finite-T divided-difference kernel\nCOEFFICIENTS alpha_seagull=-9.266358431848 alpha_kernel=+13.408176855551 alpha_full=+4.141818423703\nFULL_INTERNAL coeff_T=0.050 chi_full(T)=-8.737907831617e-01 seagull(T)=+5.786462059832e+01 kernel(T)=-5.873841138148e+01 C_T2_full=-3.495163132647e+02; R0_prime=+2.557860549618e+02 C_T2_naive=+7.819617146791e+02\nCOMPARISON d_measured=+3.877078419951 alpha_full=+4.141818423703 relative_mismatch=6.828337605721e-02\n\nS3 GATES\nPASS: S3 alpha_full has the same positive sign as the measured boundary slope :: alpha_full=+4.141818423703, d_measured=+3.877078419951, gate both > 0\nPASS: S3 alpha_full matches d_measured within the frozen relative tolerance :: relative_mismatch=6.828338e-02, tol=1.50e-01\nPASS: S3 kernel term flips the naive sign :: alpha_seagull=-9.266358431848, alpha_kernel=+13.408176855551, gate seagull<0, kernel>0, |kernel|>|seagull|\n\nS4 SOURCE HYGIENE\nPASS: S4 canonical source metadata is present :: claim_type bounded_theorem; independent audit authority; no-promotion statement\nPASS: S4 runner and cache markdown links are present :: primary runner/cache links seed review discoverability\nPASS: S4 closed-PR authority rhetoric is absent :: no closed PR is cited as load-bearing authority\nPASS: S4 minimal-axiom dependency link is present :: one scope-reference dependency link\n\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183124Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

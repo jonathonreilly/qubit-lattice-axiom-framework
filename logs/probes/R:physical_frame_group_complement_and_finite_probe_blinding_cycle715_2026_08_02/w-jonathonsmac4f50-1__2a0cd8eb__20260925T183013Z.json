@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_frame_group_complement_and_finite_probe_blinding_cycle715_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_frame_group_complement_and_finite_probe_blinding_cycle715_2026_08_02.py",
+ "seed": 61013,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T183013Z",
+ "elapsed_s": 6.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9e361bbbbe8368cc37f8f2a712930239e0cdef73c209f676fdb67c3f28ba2f5a",
+ "stdout_tail": "nce=1.0e-06\nPASS Q.cluster.separation.L4 between-cluster minimum=4.000000\nPASS Q.sextet.gap.L4 nearest nonmember defect=4.000000\nPASS Q.coset_orientation.hostile.L4 left-block spread=4.000000\nPASS Q.matrix_mutation.hostile.L4 single-entry mutation raises sextet spread to 2.500e-01\n=== Exact subgroup covering census and finite probe observations ===\nPASS H.subgroups.count count=30\nPASS H.covering.count_law matches=30/30\nPASS H.covering.orders orders=[4, 4, 4, 4, 8, 8, 8, 12, 24]\nPASS H.covering.minimum minimum covering subgroups=[(0, 3, 20, 23), (0, 7, 16, 23), (3, 10, 14, 23), (20, 21, 22, 23)]\nPASS H.probes.scan.L3 three seed-7153 Gaussian probes agree on 30/30 subgroups\nPASS H.probes.covering_sufficiency.L3 covering worst=1.140e-11\nPASS H.probes.noncovering_witness.L3 smallest noncovering Gaussian spread=2.477e-02\nPASS H.probes.average_invariance.L3 max H-invariance residual=2.502e-16\nPASS H.probes.no_cancellation.L3 minimum pre-normalization average norm=2.581e-01\nPASS H.accidental_ones.L3 H={e} all-ones spread=2.498e-16\nPASS H.probes.scan.L4 three seed-7154 Gaussian probes agree on 30/30 subgroups\nPASS H.probes.covering_sufficiency.L4 covering worst=1.788e-10\nPASS H.probes.noncovering_witness.L4 smallest noncovering Gaussian spread=9.497e-02\nPASS H.probes.average_invariance.L4 max H-invariance residual=2.753e-16\nPASS H.probes.no_cancellation.L4 minimum pre-normalization average norm=1.961e-01\nPASS H.accidental_ones.L4 H={e} all-ones spread=7.250e-14\nTOTAL: PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183019Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_frame_group_complement_and_finite_probe_blinding_cycle715_2026_08_02.txt against the .txt beside this log"
+  ]
+ }
+}

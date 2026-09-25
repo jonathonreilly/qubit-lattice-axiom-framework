@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_equal_channel_energy_equipartition_reduction_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_equal_channel_energy_equipartition_reduction_2026_07_02.py",
+ "seed": 61110,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T183150Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=16 FAIL=0",
+   "PASS=16 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4c5c8c7af4fca5089ed3b7fd4021932467d41bf70bfe1f807c7a75e0815a282c",
+ "stdout_tail": "CHECKS: PASS=16 FAIL=0\nVALUES: component r=1/2 Q=2/3; slot r=1 Q=1; S3 outside=True\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183150Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

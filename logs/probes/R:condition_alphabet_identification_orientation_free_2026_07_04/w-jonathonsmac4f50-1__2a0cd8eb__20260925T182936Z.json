@@ -1,0 +1,35 @@
+{
+ "task": "R:condition_alphabet_identification_orientation_free_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "condition",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/condition_alphabet_identification_orientation_free_2026_07_04.py",
+ "seed": 60976,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T182936Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=16 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e0c93a2335b5440bed112d49c8b90bfa2023664ac8bfa8cac19211d8ccd1471a",
+ "stdout_tail": "221e-15\nPASS: A3 self-adjoint state content preserves the polar vector law | hermitian_max=4.965e-16, pure_state_max=3.377e-16, state_b_w_max=2.220e-16\nPASS: A4 pseudoscalar coefficient is readout-invisible | readout_max=4.441e-16, b_law_max=4.441e-16, improper_flips=72\nPASS: B1 covariant alphabet exceeds the chirality threshold | joint_invariance_max=1.776e-15, values=[0.1, 0.2, 0.3, 0.4, 0.5]\nPASS: B2 separating values are even under inversion | P_invariance_max=0.000e+00, P_values=[0.1, 0.2, 0.3, 0.4, 0.5]\nPASS: C1 no sign character below vector pairs | mV=0 (sum=0), mVV=0 (sum=0)\nPASS: C2 vector triple has one sign character | mVVV=1 (sum=48)\nPASS: C3 direction alphabet channels first appear at vector pairs | mDir=0 (sum=0), mDirV=0 (sum=0), mDirVV=1 (sum=48)\nPASS: C4 epsilon uniqueness from projector and permutation signs | c=-0.06266910642791916, max_err=1.388e-16\nPASS: C5 pseudoscalar odd channel is excluded from state readout | b_channel_max=2.220e-16, hermitian_b_w_max=2.220e-16, readout_even_max=4.441e-16\nPASS: D1 content triple product is conjugation-odd | proper_max=0.000e+00, improper_flip_max=0.000e+00\nPASS: D2 imaginary triple product is invariant and readout-blind | twisted_invariance_max=0.000e+00, real_part_max=0.000e+00\nPASS: D3 relative orientation is invariant under all signed permutations | relative_orientation_max=0.000e+00\nPASS: D4 absolute orientation is one bit | four_combinations=20, max_err=0.000e+00, min_abs_triple=1.453e-02\nTOTAL: PASS=16 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T182937Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

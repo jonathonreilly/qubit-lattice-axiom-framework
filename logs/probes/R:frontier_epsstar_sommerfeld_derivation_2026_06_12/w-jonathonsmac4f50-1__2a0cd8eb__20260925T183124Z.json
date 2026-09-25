@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_epsstar_sommerfeld_derivation_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_epsstar_sommerfeld_derivation_2026_06_12.py",
+ "seed": 61084,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T183124Z",
+ "elapsed_s": 25.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "60d082186332464f56af017fb67d2eaeb9da08f44fd2aaaad74ea3c277766372",
+ "stdout_tail": " b=6.345798215134 c=-90.246344745705; linear_T2_residual_scale=1.304018284170e-02; |a-mu0_surface|=6.162072407723e-03\nPASS: D1 T->0 quadratic extrapolation matches the fixed T=0 surface branch :: delta=6.162e-03, tol=1.5e-02\n\nS2 SOMMERFELD COEFFICIENT\nD2_MU2_FIT T=0.100:mu=1.576146132255 T=0.150:mu=1.618806032391 T=0.200:mu=1.631150561591 T=0.250:mu=1.645930351011\nD2_COEFF measured_d_m0=3.877078419951 fit_c=2.487775722248 max_rel_residual=1.737165085183e-02; alpha_analytic=-9.266358431848 R0_prime=2.557860549618e+02 C_T2=7.819617146791e+02 rel_mismatch=3.390036369696e+00\nPASS: D2 NEGATIVE: fixed Sommerfeld alpha has opposite sign from measured d :: measured_d=3.877e+00, alpha=-9.266e+00, margin=1.0e+00\nPASS: D2 NEGATIVE: analytic-vs-measured mismatch exceeds fixed 200% floor :: rel_mismatch=3.390e+00, floor=2.0e+00\n\nS3 WAVE-10 REGRESSION CROSS-CHECK\nEPS_TABLE T=0.150 eps*=1.612643530678 collapse_spread=1.250315999131e-02\nEPS_TABLE T=0.200 eps*=1.624656494801 collapse_spread=1.297701724709e-02\nEPS_TABLE T=0.300 eps*=1.657294308376 collapse_spread=1.328682851332e-02\nEPS_TABLE T=0.400 eps*=1.699862096939 collapse_spread=1.531136135402e-02\nD3_COEFF wave10_d=2.098439570228 eps2_fit_c=2.555130272657 eps2_max_rel_residual=9.592103586246e-04; alpha_analytic=-9.266358431848 wave_vs_alpha_rel_mismatch=5.415832870917e+00; m0_d_vs_wave10_d_rel=4.587575119889e-01\nPASS: D3 NEGATIVE: wave-10 d is not consistent with fixed alpha :: rel_mismatch=5.416e+00, floor=4.0e+00\n\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183149Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_epsstar_sommerfeld_derivation_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

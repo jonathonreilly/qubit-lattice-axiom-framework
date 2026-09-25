@@ -1,0 +1,35 @@
+{
+ "task": "R:composition_law_selection_graded_zeros_order_blind_rules_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "composition",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/composition_law_selection_graded_zeros_order_blind_rules_2026_09_13.py",
+ "seed": 60889,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T182809Z",
+ "elapsed_s": 86.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=63 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0a57e3b893161484f27f749ff28ba08a8f016cd37f38a952a580e2d27a51abc3",
+ "stdout_tail": "rder + forbidden classes: 20 of 180 order classes reproduce the zeros\nPASS cube N=4: one fixed order + forbidden classes: 0 of 840 order classes reproduce the zeros\nPASS grid2x3 N=2: bond-type forbidding rules give zero-set sizes 15,15,7,15,15,15,15, never the graded set\nPASS grid2x3 N=2: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 3 zeros\nPASS grid2x3 N=2: positive bond-product on every graded zero (min 1/48)\nPASS grid2x3 N=3: bond-type forbidding rules give zero-set sizes 18,20,18,20,18,20,20, never the graded set\nPASS grid2x3 N=3: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 2 zeros\nPASS grid2x3 N=3: positive bond-product on every graded zero (min 1/72)\nPASS cube N=4: bond-type forbidding rules give zero-set sizes 68,70,68,70,68,70,70, never the graded set\nPASS cube N=4: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 12 zeros\nPASS cube N=4: positive bond-product on every graded zero (min 1/2304)\nPASS grid3x3 N=3: bond-type forbidding rules give zero-set sizes 84,84,62,84,84,84,84, never the graded set\nPASS grid3x3 N=3: star-local rule: maximal forbidden class set has 0 classes and kills 0 of 8 zeros\nPASS grid3x3 N=3: positive bond-product on every graded zero (min 1/576)\nper_element: exact amplitudes/masks\nper_site: 6/8/9 sites\nper_mode: four fixed-N sectors\nper_block: declared finite families\nlattice_wide: not run; finite windows do not establish a lattice-wide law\nTOTAL: PASS=63 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T182936Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

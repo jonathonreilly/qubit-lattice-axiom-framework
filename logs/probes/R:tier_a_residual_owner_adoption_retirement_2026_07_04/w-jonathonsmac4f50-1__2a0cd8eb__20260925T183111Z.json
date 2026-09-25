@@ -1,0 +1,38 @@
+{
+ "task": "R:tier_a_residual_owner_adoption_retirement_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "tier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/tier_a_residual_owner_adoption_retirement_2026_07_04.py",
+ "seed": 61071,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2a0cd8eb",
+ "started_utc": "20260925T183111Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=10 FAIL=0",
+   "PASS=4 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cb4020dd8088f75836ad1d77f828006d352a1777526a761a61aeaf917cf70276",
+ "stdout_tail": "[PASS] admission registry is absent\n[PASS] decision history is explicitly non-authoritative\n[PASS] historical admission count is zero\n[PASS] historical admission ids are empty\n[PASS] historical derivation-target map is empty\n[PASS] retired governance registry is absent\n[PASS] exact AC and theta obligations are live\n[PASS] foundation contains axiom plus three approved primitives\n[PASS] accepted ids equal foundation ids\n[PASS] open obligations are not supplied premises\nTOTAL: PASS=10 FAIL=0\n[PASS] historical note: Premise weight:** none\n[PASS] historical note: former governance-only premise channel is withdrawn\n[PASS] historical note: AC_ORBIT_OCCUPANCY_STATISTICAL_GRAIN_DERIVATION_OBLIGATION.md\n[PASS] historical note: AC_RETA_HCLASS_HUNIT_READOUT_DERIVATION_OBLIGATION.md\nHISTORICAL NOTE: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T183111Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

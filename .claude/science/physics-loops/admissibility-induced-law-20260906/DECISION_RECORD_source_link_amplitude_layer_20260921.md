@@ -490,3 +490,29 @@ This gathers addenda 23–27 into one table: what records alone do not supply, a
 - find a pushing rule or an energy placement (open, with the probes).
 
 At the closing ratio the member's constraints need exact books. Away from it, the clock responds at once to any change of energy (block 101).
+
+## Twenty-ninth addendum (2026-09-25): groups under one record per site (block 142)
+
+**The question.** The owner's reading has the possibility at a site shift as the neighbourhood changes. Under one record per site, that shift is the only way records can bind: contact binding (block 115) needs two records on one site. Block 142 (PR #9227; the supervisor's own derivation, not refereed by another model family) asks how pairs bound this way move.
+
+**The measure.** A body's speed squared, `c² = d²(E²/2)/dK²` at rest, ties its inertia to its rest energy. A free record has `cos 2k = 1` along each axis, so its three axes sum to 3. Under block 54's conditional ray model (block 115) this is also the body's fall weight.
+
+**What block 142 finds.**
+- **On a line**, exactly and for every binding strength, equal-coin pairs have `E = V + sin²(K/2)/V`. So `c² = 1/2`: the rear record can never step first. Without exclusion the even channel has `3/2`, and contact pairs (two per site, block 115) have `c = 1`.
+- **In space, at strong binding**, exclusion halves the pair's step along its bond. For every rotation-covariant possibility shift, a bound pair's weights along the three axes sum to at most `3/2`, against 3.
+
+**The third column, updated.**
+
+| Ingredient | Records alone | With the amplitude layer | Still supplied or open | Blocks |
+|---|---|---|---|---|
+| groups | records in a gradient settle alike but drift apart; block 95's pairs are unbound in space | a neighbour possibility shift binds records under one record per site | the bound pairs do not move like records: `c² = 1/2` on a line; never weight one along all three axes in space at strong binding; moderate binding and pushes open | 111, 115, 142 |
+
+**A lead for the probes (exploration, not a result).** Massive records at rest sit on one sublattice (block 133), so neighbour terms barely bind them; a two-step term does. On the line, the supervisor's floating-point exploration found such pairs' weight to follow `W = 1/(4m|V|)` to about 1 %. That is block 142's half-line law on the records' own sublattice: `W = 1` at the binding threshold, and a deficit of order (lattice spacing)/(pair size) below it. This size effect shrinks for large bodies.
+
+A separate effect does not shrink. For relativistic bodies bound by a static potential, the pair's weight is `1 + ⟨U⟩/(2m) − ⟨T⟩/m`, short of one by about the binding fraction. If the lattice confirms this, a static possibility shift would make composites fall by their binding fraction, and a binding that moves with the pair (carried by a field with the walkers' light cone) would be what keeps them falling alike. Probes refill o poses both questions: moderate binding in space, and the inertia of a static binding.
+
+**Unrefereed probe results since addendum 28** (same model family, waiting for a Grok referee):
+- #9215: reach-two ties of bond and coin rotations are only relabellings.
+- #9225: block 124 T1's "two numbers" needs its rotation-invariance premise; there are three without it.
+- #9226: no landed object can be the field that absorbs transverse relabellings in time. This supports the table's "the shift itself" row.
+- #9207, #9211 and #9216 are compute results that contradict task expectation sentences, not landed claims.

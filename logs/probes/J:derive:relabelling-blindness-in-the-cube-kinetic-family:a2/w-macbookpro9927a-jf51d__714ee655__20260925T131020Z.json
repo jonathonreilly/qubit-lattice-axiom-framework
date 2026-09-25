@@ -21,12 +21,19 @@
  "stdout_sha256": "69a724e923d8451ba387edf7af8da72fdbd407f284454df271e1890fd95adb48",
  "stdout_tail": "= 0; the rotation block decouples with det (2 N X)^3\nC2 PASS: at X = p^2/4 the null space is 3-dimensional: the transverse traceless pair (u = 0, no rotation) plus the gauge vector (p p^T, u = 2 alpha X/K), which is null at every X: the gradient relabelling with the multiplier\nTOTAL: PASS=8 FAIL=0 (14s)\nSUMMARY: PARTIAL (a) agreement with block 124 T5 by an independent Euler-operator derivation, with the multiplier shift unique; (b) exact classification in the frame's full rate; (c) the survivors' modes\nHIT: (a) in block 62's cube family the gradient relabelling in time is a symmetry of K(u R1 + R2) + kinetic iff (M1, M2, M3) = (0, c, -c) with u -> u + (c/K) zeta'' (the only multiplier shift among zeta, zeta', zeta'', zeta'''); a transverse one iff (M, 2M, 0) with no shift; both only for zero; (b) in the frame's full rate the cube's symmetry allows exactly four numbers (M1, M2, M3, N), N on the frame's rotation part: blindness to coin rotations in time forces N = 0 and leaves three (the count of two needs block 124's metric premise); the gradient demand forces (0, c, -c) and leaves N; the transverse demand forces (M, 2M, 0) and N = 0; rotation blindness with the gradient demand leaves block 62's member at beta = -alpha; (c) for (0, c, -c), c = -2 alpha < 0: one travelling pair, transverse traceless, X = K p^2/(4 alpha) with p_j = 2 sin(k_j/2); every other mode has X = 0 (the transverse relabellings and, if N != 0, the three rotations drift) or is the gradient gauge direction\n",
  "checked": {
-  "by": "w-macbookpro9927a-jf51d",
-  "at_utc": "20260925T131035Z",
+  "by": "w7",
+  "at_utc": "20260925T131106Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 714ee655 differs from the current HEAD 0437cad2 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "8 exact sympy checks re-run clean by the worker: (a) reproduces block 124 T5 by an Euler-operator derivation with a general multiplier shift (shift unique); (b) new: four cube numbers in the frame's full rate, rotation blindness forces N = 0 and leaves three, gradient demand leaves N; (c) survivor spectrum by gcd of minors; same model family as block 124's supervisor, so no cross-family weight; referee by another family pending",
+  "by": "w7",
+  "at_utc": "20260925T131106Z"
  }
 }

@@ -1,0 +1,37 @@
+{
+ "task": "P:9156",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block114-possi",
+ "worker": "w-jonathonsmac4f50-j7f02",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9156",
+ "pr": 9156,
+ "branch": "physics-loop/admissibility-induced-law-block114-possibilitys-odds-only-the-turn-is-massless-20260924",
+ "git_sha": "01f4f7bc",
+ "started_utc": "20260925T014829Z",
+ "elapsed_s": 21.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_possibilitys_odds_only_the_turn_is_massless_a_precessing_turn_diffuses_a_records_lean_runs_logarithmically_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9156's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "33edaadef9e5e9545505e4f997f5de2a8559ade545fc8bf24d569da6b586d6fc",
+ "stdout_tail": "PR #9156: physics-loop: admissibility induced-law block 114 - possibility's odds: only the turn is massless, a precessing turn diffuses instead of carrying sound, and on the six-axis massless surface a record's lean falls as 1/r only up to a logarithm\nbranch physics-loop/admissibility-induced-law-block114-possibilitys-odds-only-the-turn-is-massless-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_possibilitys_odds_only_the_turn_is_massless_a_precessing_turn_diffuses_a_records_lean_runs_logarithmically_2026_09_24.py: rc=0 PASS=12 FAIL=0\n   mutation mehler_ratio_forged: expected B observed B ok\n   mutation staggered_coupling_forged: expected C observed C ok\n   mutation cubic_coefficient_forged: expected D observed D ok\n   mutation centre_manifold_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7f02",
+  "at_utc": "20260925T014851Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

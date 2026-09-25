@@ -1,0 +1,36 @@
+{
+ "task": "P:9168",
+ "type": "pr-reexecution",
+ "lane": "three-dimensional-composite-site-network",
+ "worker": "w-jonathonsmac4f50-j9fc9",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9168",
+ "pr": 9168,
+ "branch": "claude/three-dimensional-composite-site-network-with-an-exact-charge-20260924",
+ "git_sha": "73316282",
+ "started_utc": "20260925T030627Z",
+ "elapsed_s": 20.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=8 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR re-execution of #9168's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "57eafb4cb93f6e195ebdbf67102f4119b4a8de9faae3bfa7447fa7b45bb58d21",
+ "stdout_tail": "PR #9168: feat(matter): embed the hyperhoneycomb composite-site network with an exact charge\nbranch claude/three-dimensional-composite-site-network-with-an-exact-charge-20260924 (base main)\nrunners in the PR: 1\n== scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py: rc=0 PASS=8 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9fc9",
+  "at_utc": "20260925T030648Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #9168: feat(matter): embed the hyperhoneycomb composite-site network with an exact charge
+branch claude/three-dimensional-composite-site-network-with-an-exact-charge-20260924 (base main)
+runners in the PR: 1
+== scripts/three_dimensional_composite_site_network_with_an_exact_charge_2026_09_24.py: rc=0 PASS=8 FAIL=0

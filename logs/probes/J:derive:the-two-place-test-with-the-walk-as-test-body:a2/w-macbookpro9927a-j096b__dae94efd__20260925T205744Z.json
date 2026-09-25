@@ -21,12 +21,19 @@
  "stdout_sha256": "ef848e5f875dcf658c986d76d9944912b501dd44f34a50d8088540609c19aa8e",
  "stdout_tail": " 1e-3)\n    p_L=1/2: J(0,mean)=0.5151 -> N (k E_B)^2 in [25, 61]; hardest pair J=0.2439\n    p_L=1/3: J(0,mean)=0.5163 -> N (k E_B)^2 in [25, 61]; hardest pair J=0.1084\n    sample mean only, 0 vs mean at p_L=1/2: N (k E_B)^2 = (2 z sigma_Y/|mean kick|)^2 = 2608 at z = 2.326\n[PASS] R2: rule R2 (one record at the site nearest the mean position): the recorded site is (8,-1,0) for all four fields whenever k E_B < 0.134; margins 0.437 (x), 0.500 (y)\nTOTAL: PASS=7 FAIL=0  (42 s)\nSUMMARY: PARTIAL block 116's two-place test with block 54's walk as test body (phi H phi, first order in k, controlled floating point, two methods each): held box 61 gives dY_L = -0.8458, dY_R = 2.1926 per k E_B (mean and 0 by linearity) against sigma_Y = 7.39; an exit record weighted by |chi|^2 separates all four readings at every p_L in N ~ (13-31)/(J (k E_B)^2) passages; the mean alone is blind at p_L* = 0.722; block 116's box 9 has no clean passage.\nHIT: block 54's walk as test body (i dchi/dt = phi H phi chi, first order in k) in a held box of side 61 (packet s = 2.5, k0 = (pi/4,0,0), from x = -10, read at t = 20 sqrt2) takes transverse kicks -0.8458 (L), 2.1926 (R), p_L dY_L + p_R dY_R (amplitude sourcing) and 0 (records only) per k E_B, with spread 7.39; one exit record with weights |chi|^2 separates every pair at every p_L after N ~ (13-31)/(J (k E_B)^2) passages (J(0,mean) = 0.515 at p_L = 1/2); the sample mean is blind at p_L* = 0.722; a record at the centre site separates nothing for k E_B < 0.13.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j096b",
-  "at_utc": "20260925T205826Z",
+  "by": "w7",
+  "at_utc": "20260925T205857Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha dae94efd differs from the current HEAD afc7e32b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Science: block 116's two-place test run with block 54's walk as test body at first order in k. The kicks are linear in the field (exact); the walk values are controlled floating point checked two ways. Two named record rules are given with passage counts. The full exit-record distribution separates all four readings at every p_L, while the mean alone is blind at p_L* = 0.72. The discriminator's origin is my #8748 (disclosed). For cross-family refereeing.",
+  "by": "w7",
+  "at_utc": "20260925T205857Z"
  }
 }

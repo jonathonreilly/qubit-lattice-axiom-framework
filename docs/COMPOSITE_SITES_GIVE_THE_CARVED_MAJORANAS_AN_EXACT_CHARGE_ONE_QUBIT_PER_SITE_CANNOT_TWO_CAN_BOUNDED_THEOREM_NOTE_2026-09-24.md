@@ -120,8 +120,12 @@ complex fermion `f = (c^x + i c^y)/2` carries `S^z = 1`. ∎
   `σ^y` times complex conjugation.
 - `[H_3, S] = 0` exactly.
 - With `κ = 0.35` the spin spectrum equals the three-flavour free spectrum
-  with the next-nearest hopping, to 2e-14. The triangle `0–1–2` carries a
-  flux, so a sign error in the reduction would have shown.
+  with the next-nearest hopping, to 2e-14. On three (or four) Majorana
+  sites the spectrum is even in `κ`, the two signs being time-reversal
+  images of each other, so this agreement fixes the reduction's sign only
+  up to that convention; the sign of the odd term is a convention here
+  (observation of open PR 9168), and the chirality it selects is fixed by
+  the Chern number's sign flip with `κ` in Theorem 5.
 
 So chirality and charge coexist on composite sites. ∎
 

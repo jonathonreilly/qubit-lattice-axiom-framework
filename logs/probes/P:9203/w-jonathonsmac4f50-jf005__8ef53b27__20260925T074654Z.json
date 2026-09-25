@@ -1,0 +1,37 @@
+{
+ "task": "P:9203",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block140-the-w",
+ "worker": "w-jonathonsmac4f50-jf005",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9203",
+ "pr": 9203,
+ "branch": "physics-loop/admissibility-induced-law-block140-the-walk-carries-an-exact-boost-charge-20260925",
+ "git_sha": "8ef53b27",
+ "started_utc": "20260925T074654Z",
+ "elapsed_s": 30.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_2026_09_25.py",
+    "returncode": 0,
+    "total": "PASS=11 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9203's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "df1bdbcb49a0707348365dc1ed8ae02781caac3aeb49425bc28cc6f711ba7f27",
+ "stdout_tail": "PR #9203: physics-loop: admissibility induced-law block 140 - the walk carries an exact boost charge: its brackets give the fall weight and an exactly kept angular momentum with the face spin\nbranch physics-loop/admissibility-induced-law-block140-the-walk-carries-an-exact-boost-charge-20260925 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_2026_09_25.py: rc=0 PASS=11 FAIL=0\n   mutation centroid_momentum_one_step: expected B observed B ok\n   mutation fall_weight_forged: expected C observed C ok\n   mutation spin_unaveraged: expected D observed D ok\n   mutation rotation_weight_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf005",
+  "at_utc": "20260925T074724Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

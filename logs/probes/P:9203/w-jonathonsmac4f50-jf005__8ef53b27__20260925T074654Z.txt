@@ -1,0 +1,10 @@
+PR #9203: physics-loop: admissibility induced-law block 140 - the walk carries an exact boost charge: its brackets give the fall weight and an exactly kept angular momentum with the face spin
+branch physics-loop/admissibility-induced-law-block140-the-walk-carries-an-exact-boost-charge-20260925 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_2026_09_25.py: rc=0 PASS=11 FAIL=0
+   mutation centroid_momentum_one_step: expected B observed B ok
+   mutation fall_weight_forged: expected C observed C ok
+   mutation spin_unaveraged: expected D observed D ok
+   mutation rotation_weight_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

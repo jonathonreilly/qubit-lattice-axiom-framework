@@ -1,0 +1,37 @@
+{
+ "task": "P:9160",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block117-the-r",
+ "worker": "w-jonathonsmac4f50-j57a4",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9160",
+ "pr": 9160,
+ "branch": "physics-loop/admissibility-induced-law-block117-the-record-gas-does-make-the-chessboard-when-bonds-are-expensive-20260924",
+ "git_sha": "000334ed",
+ "started_utc": "20260925T013854Z",
+ "elapsed_s": 51.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_the_record_gas_does_make_the_chessboard_when_a_recorded_bond_is_expensive_a_wall_counting_bound_2026_09_24.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR re-execution of #9160's runners with mutation censuses via run_pr_branch.py; exit codes, count lines and census compared as the tool reports.",
+ "stdout_sha256": "bec4116a00d1f8e1e2f9feea8351561d8d3af74c60e893fe8b01385dc7c0ff25",
+ "stdout_tail": "PR #9160: physics-loop: admissibility induced-law block 117 - the record gas does make the chessboard when a recorded bond is expensive: its two framed states differ at every site for g <= 9/62500 without contents and 10^-5 at (3,1,2)\nbranch physics-loop/admissibility-induced-law-block117-the-record-gas-does-make-the-chessboard-when-bonds-are-expensive-20260924 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_the_record_gas_does_make_the_chessboard_when_a_recorded_bond_is_expensive_a_wall_counting_bound_2026_09_24.py: rc=0 PASS=16 FAIL=0\n   mutation unlike_form_forged: expected B observed B ok\n   mutation contents_sign_forged: expected C observed C ok\n   mutation unlike_drop_forged: expected D observed D ok\n   mutation wall_count_forged: expected E observed E ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j57a4",
+  "at_utc": "20260925T013945Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

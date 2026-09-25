@@ -1,0 +1,10 @@
+PR #9160: physics-loop: admissibility induced-law block 117 - the record gas does make the chessboard when a recorded bond is expensive: its two framed states differ at every site for g <= 9/62500 without contents and 10^-5 at (3,1,2)
+branch physics-loop/admissibility-induced-law-block117-the-record-gas-does-make-the-chessboard-when-bonds-are-expensive-20260924 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_record_gas_does_make_the_chessboard_when_a_recorded_bond_is_expensive_a_wall_counting_bound_2026_09_24.py: rc=0 PASS=16 FAIL=0
+   mutation unlike_form_forged: expected B observed B ok
+   mutation contents_sign_forged: expected C observed C ok
+   mutation unlike_drop_forged: expected D observed D ok
+   mutation wall_count_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

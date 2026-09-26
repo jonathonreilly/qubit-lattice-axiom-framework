@@ -1,0 +1,46 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_every_clock_profile_a_relabelling_forces_the_whole_momentum_constraint_and_no_positive_inertia_can_be_added_to_the_member_2026_09_25.py
+runner_sha256: a178f711b506b0425e55136ac86902221b5ad57a6e303b7f72fa35c24d81f392
+input_fingerprint_sha256: 38378b34189c21ade1ad0d7a545d270423a9beafca368a49029dd04bbd9159b2
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.32
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the clocks, the lengths, the kinetic term, the walk and its sea are supplied; the memo does not define a time metric)
+PASS: B1 on the 3^3 torus, lapses M = delta at x and N = delta at x + e_j give block 112's xi(M, N) = K/(4 alpha) on that bond alone, for all 81 bonds: the xi(M, N) span every bond field (rank 81)
+PASS: B2 for twelve of these pairs, block 112's bracket {C[N], C[M]} (the term linear in momenta at flat strain, beta = -alpha, faces timed by the mean of their four corners) is exactly the relabelling generator of that single bond
+PASS: B3 with a uniform lapse N = 1, xi(M, 1) = -(K/(4 alpha)) times the forward difference of M: over all M these span only the gradients (rank 26 = sites - 1), and G[xi(M, 1)] = (K/(4 alpha)) sum_x M_x (backward divergence of the constraint)(x) exactly
+PASS: C1 control: with no cubic-only term, at c = 1/2 the bracket for lapses at 0 and e1 lies in the span of the relabellings (block 112)
+PASS: C2 with a cubic-only kinetic term gamma sum hdot_ii^2 (diagonal block alpha + gamma, faces alpha), gamma = 1/5, -1/7, 2/3: the bracket is affine in c = beta/(alpha + gamma + 3 beta) and the whole line misses the relabellings' span (rank 78 -> 78 + [2, 2, 2]); no kinetic ratio closes the algebra unless gamma = 0
+PASS: D1 block 124's kinetic family with a cubic-only term, alpha tr(v^2) + beta (tr v)^2 + gamma sum v_ii^2, takes 3 alpha + 9 beta + 3 gamma, 2 alpha + 2 gamma and 2 alpha on the dilation, the E strain diag(1, -1, 0) and the T strain (e1 e2 + e2 e1)
+PASS: D2 the closing line gamma = 0, beta = -alpha takes -6*alpha, 2*alpha, 2*alpha on (A, E, T): opposite signs on the dilation and the T strain, so a positive semidefinite kinetic term lies on the line only if it vanishes on both, hence on all three
+PASS: E1 for the walk's plane-wave block sigma.s, |<+|sigma.a|->|^2 = |a|^2 - (a.s)^2/|s|^2; the frame (1 + h)^(-1/2) is 1 - h/2 at first order, so a uniform strain rate v enters as -(1/2) sigma.(v s)
+PASS: E2 with the staggered mass the block squares to (|s|^2 + mu^2) and the summed matrix elements are tr(P+ X P- X) = (|s x a|^2 + mu^2 |a|^2)/(2(|s|^2 + mu^2)): the sea's adiabatic inertia per site is M(v) = <(|s x v s|^2 + mu^2 |v s|^2)/(|s|^2 + mu^2)^(5/2)>/16, a sum of nonnegative terms
+PASS: E3 |s x v s|^2 is 0 on the dilation (so at mu = 0 the sea's inertia has no dilation part), (s1^2 - s2^2)^2 + (s1^2 + s2^2) s3^2 on the T strain (positive at s = (1, 0, 0), so the inertia is nonzero for every mu) and 4 s1^2 s2^2 + (s1^2 + s2^2) s3^2 on the E strain
+PASS: E4 averaged over the six axis permutations, the E strain's integrand minus three times the T strain's is -[(s1^2 - s2^2)^2 + (s1^2 - s3^2)^2 + (s2^2 - s3^2)^2] <= 0, and -2 at s = (1, 0, 0): so at mu = 0, mu_E < 3 mu_T
+PASS: E5 at mu = 0 the sea's inertia, read in the member's family, has alpha = mu_T/4, gamma = (mu_E - mu_T)/4, beta = -mu_E/12: ratio beta/alpha = -mu_E/(3 mu_T), in (-1, 0) by E4; added to the member at alpha = K/4, beta = -alpha, the total lies on the closing line only if mu_T = 0, which E3 excludes
+PASS: H1 T5(a): with one lapse uniform the walker's bracket is block 112's G[xi] exactly with K/(4 alpha) = 1 (X = -Y at 729 rational (k, q)); the curl-carrying part is orthogonal to gradients; control: with e in place of e' the ratio is -1/prod cos q_a, not constant
+PASS: H2 T5(b): delta lapses at u and u + 2e_1 give xi = 0 on every bond, but [H_M, H_N] has 16 nonzero two-by-two entries: exact closure fails for every c
+PASS: H3 T5(b): at 32 rational (k, q1, q2) no single c gives X = c Y entrywise; along an axis with M = e^{-iqx}, N = e^{iqx} the ratio is -(1/2) cos^2 q (1 + cos q) (at cos q = 3/5 and 5/13), which is -1 only as q -> 0
+PASS: H4 T5(c): with q1 = t u, q2 = t v, for every k and all directions (symbolic; modulo cos^2 + sin^2 = 1), X + Y vanishes at orders t^0, t^1, t^2, while X itself starts at t^1; at t^3 it is (i/4) sum_j sin k_j cos k_j (u_j - v_j)(4 u.v + u_j v_j) times the identity: the walker's momentum density against a bilinear of third order in the lapses' wave numbers
+PASS: H5 T5(d): for the body-diagonal placement the extreme hop sites in the direction (1, 1/10, 1/100) are (2, 1, 1) and (-2, -1, -1); for the non-adjacent pair u, u + (4, 2, 2) the commutator element is the single-path product W(a_h, a')^dag W(b_h, b') != 0; time reversal forces every block to a real quaternion (a 4-dimensional solution space, W^dag W = |W|^2), so such products vanish only with a factor; over every proper-rotation orbit in [-3, 3]^3 the extremes are never one step apart
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - delta lapses at a bond's two ends give that bond alone; block 112's bracket for twelve such pairs
+per_site: executed - the uniform lapse gives only gradients (rank sites - 1) and the divergence identity
+per_mode: executed - the cubic-only kinetic term: the bracket's line in c misses the relabellings' span on the 3^3 torus
+per_block: executed - the sea's adiabatic inertia on uniform strains: two- and four-band matrix elements, positivity, the permutation average; the walker's bracket: one lapse uniform, delta lapses two steps apart, the third-order defect, the extreme-hop witness against every local placement
+lattice_wide: block 112's scope (flat strain, the term linear in canonical momentum, symmetric face timing); uniform strains for the sea
+PASS: G1 the five N5 resolution lines are printed
+scope: block 112's relabelling fields span every bond field while a uniform lapse gives only gradients, so if every clock profile is a relabelling the whole momentum constraint is forced; a cubic-only kinetic term breaks the closure for every ratio; the closing line is indefinite on uniform strains and the walker sea's adiabatic inertia is positive and nonzero, so the member plus that inertia is off the line; the walker bracket closes with block 112 xi exactly only when one lapse is uniform, and otherwise through second order in the lapse wave numbers; no finite-range placement with the rotations and time reversal closes it; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

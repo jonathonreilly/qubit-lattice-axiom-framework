@@ -1,6 +1,6 @@
 {
  "edge_count": 15050,
- "node_count": 6755,
+ "node_count": 6756,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -865,6 +865,10 @@
   "admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_the_relabellings_coupling_shows_them_different_lengths_bounded_theorem_note_2026-09-21": {
    "deps_hash": "2e36a66177dc",
    "out_degree": 6
+  },
+  "admissibility_rule_every_clock_profile_a_relabelling_forces_the_whole_momentum_constraint_and_no_positive_inertia_can_be_added_to_the_member_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_bounded_theorem_note_2026-09-25": {
    "deps_hash": "75e3c4308656",

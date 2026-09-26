@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F150 the clock algebra's consequences and the walker's side | the span of block 112's relabellings; the cubic-only rank witness; the closing line's signature; the sea's inertia; the walker's bracket in plane-wave form, in position space and as a series; the extreme-hop witness | block 150 (own derivation, unrefereed; a consolidating note) |

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-26 block 150 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. Exact rational, Gaussian-rational and symbolic arithmetic. Census 12/12 in family. Conformance pass against the PR conformance spec: sections 1–3 (self-contained on landed inputs only; cache through the envelope with AUDIT_TIMEOUT_SEC = 900; claim scope identical on note, docstring and scope line), 4 (N1 with six attack routes, each ATTEMPTED, and the scope left open; N2–N8 in the note; N5 lines in the runner's stdout), 5 (target and obligation graph in the note), 6 (one load-bearing mutation per family; T5(a) also proved by hand), 7 (single primary runner, no helper), 8 (new graph node: manifest regenerated), 9–12 (note structure as the lane's landed notes; nothing ratified; counts from the runner).

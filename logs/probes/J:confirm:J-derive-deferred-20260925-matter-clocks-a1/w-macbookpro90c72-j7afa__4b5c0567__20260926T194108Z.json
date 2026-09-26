@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260925-matter-clocks-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7afa",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260925-matter-clocks/referee_w-macbookpro90c72-j7afa/check.py",
+ "seed": 51668,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "4b5c0567",
+ "started_utc": "20260926T194108Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The perpendicular part of a formation-weighted Bloch average is the characteristic function of the conditioned formation time. For a constant clock |z| <= 2(f/omega + 1/(omega T)), so the joint slow and long limit dephases. A cosine modulation keeps |z| = 1/2 and a half-period square wave tends to 2/pi. No clock was selected from the axioms."
+ },
+ "review": "The perpendicular Bloch piece is the characteristic function of the conditioned formation time. For a constant clock |z| is at most 2(f/omega + 1/(omega T)), so the joint slow and long limit dephases, sharply at omega T = pi. A cosine modulation keeps |z| = 1/2 and a half-period square wave tends to 2/pi. No clock was selected from the axioms.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260925-matter-clocks:a1/; its files are probes/work/derive/deferred-20260925-matter-clocks/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260925-matter-clocks/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3d9a635f84189a05cecd835e4adf7c1f3e19575a99750320862b90fced796ca0",
+ "stdout_tail": "PASS constant clock: the conditioned constant hazard has the closed characteristic function, and its real and imaginary parts are the cosine and sine averages\nPASS joint bound: |z|^2 differs from the larger comparison by 2 x^2 e^{-kappa}(1+cos tau) over a positive denominator, and 1/(1-e^{-y}) <= 1+1/y\nPASS sharpness: f -> 0 gives the uniform average, modulus 2/pi at omega T = pi; T -> infinity gives f/sqrt(f^2+omega^2)\nPASS linear hazard: beta t exp(-beta t^2/2) peaks at 1/sqrt(beta) with height sqrt(beta) e^{-1/2}\nPASS cosine: w = (1+cos omega t)/T on a whole number of periods has z = 1/2\nPASS any density: f = m w/(1-m W) has survival 1-m W, so the conditioned formation density is w\nPASS square wave: the on-half average is 2/pi, and one exact period tends to 2/pi as the hazard tends to 0\nSUMMARY: confirmed partial. The perpendicular part of a formation-weighted Bloch average is the characteristic function of the conditioned formation time. For a constant clock |z| <= 2(f/omega + 1/(omega T)), so the joint slow and long limit dephases. A cosine modulation keeps |z| = 1/2 and a half-period square wave tends to 2/pi. No clock was selected from the axioms.\nHIT: confirmed - dephasing is the decay of the formation-time characteristic function; the constant clock dephases jointly, and resonant hazards do not\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7afa",
+  "at_utc": "20260926T194117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: dephasing is the decay of the formation-time characteristic function. The constant clock satisfies |z| <= 2(f/omega + 1/(omega T)). Resonant hazards keep |z| = 1/2 or tend to 2/pi. No clock was selected from the axioms.",
+  "by": "w-macbookpro90c72-j7afa",
+  "at_utc": "20260926T194117Z"
+ }
+}

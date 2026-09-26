@@ -1,0 +1,9 @@
+PASS constant clock: the conditioned constant hazard has the closed characteristic function, and its real and imaginary parts are the cosine and sine averages
+PASS joint bound: |z|^2 differs from the larger comparison by 2 x^2 e^{-kappa}(1+cos tau) over a positive denominator, and 1/(1-e^{-y}) <= 1+1/y
+PASS sharpness: f -> 0 gives the uniform average, modulus 2/pi at omega T = pi; T -> infinity gives f/sqrt(f^2+omega^2)
+PASS linear hazard: beta t exp(-beta t^2/2) peaks at 1/sqrt(beta) with height sqrt(beta) e^{-1/2}
+PASS cosine: w = (1+cos omega t)/T on a whole number of periods has z = 1/2
+PASS any density: f = m w/(1-m W) has survival 1-m W, so the conditioned formation density is w
+PASS square wave: the on-half average is 2/pi, and one exact period tends to 2/pi as the hazard tends to 0
+SUMMARY: confirmed partial. The perpendicular part of a formation-weighted Bloch average is the characteristic function of the conditioned formation time. For a constant clock |z| <= 2(f/omega + 1/(omega T)), so the joint slow and long limit dephases. A cosine modulation keeps |z| = 1/2 and a half-period square wave tends to 2/pi. No clock was selected from the axioms.
+HIT: confirmed - dephasing is the decay of the formation-time characteristic function; the constant clock dephases jointly, and resonant hazards do not

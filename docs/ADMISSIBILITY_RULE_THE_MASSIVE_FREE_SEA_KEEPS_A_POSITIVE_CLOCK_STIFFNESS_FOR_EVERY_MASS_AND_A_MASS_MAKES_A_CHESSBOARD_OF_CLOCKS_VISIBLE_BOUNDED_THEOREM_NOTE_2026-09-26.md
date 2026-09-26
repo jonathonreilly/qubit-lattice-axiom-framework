@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_and_a_mass_makes_a_chessboard_of_clocks_visible_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 77's walk with a staggered mass, H_m = H + m eps (eps_x = (-1)^(x+y+z), m != 0 real), clocked as phi H_m phi = phi H phi + m w eps (w = phi^2 = e^u), block 76's filled sea E_sea = sum of the negative levels, block 55's energy density, and the kernel normalisation E(a) - E(0) = Pi(q) a^2 N + O(a^3) for u = a cos(q.x) (2q not 0 or Q), Pi = c0/4 + (kappa/4)|q|^2_lat + O(|q|^4): (T1) the even exchange maps commute with H_m, the odd ones after eps, no map commuting with eps is a twin (block 71's on-site twin fails by 2 m w eps |psi|^2), and eps T is a twin with e_x[eps T psi; T phi] = -e_{x-e1}[psi; phi]; (T2) the filled sea's energy density is exactly m eps_x - <E>, E = sqrt(|sin k|^2 + m^2), and its second-order kernel is the held sea's plus a term in [-9|q|^4/(64|m|^3), 0]; (T3) hence c0 = -<E> and kappa(m) = (1/12)<|sin k|^2/E>, positive and strictly decreasing in |m| for every m, tending to the massless value as m -> 0, with 1/(8m) - 7/(64m^3) + 81/(512m^5) - ... for m > sqrt3 and exact enclosures at m = 2, 4; (T4) a chessboard of clocks, invisible without a mass (block 76 T1), has first variation N m and second -N m^2 <1/E> with one. Exact (integers, fractions, sympy); T2's kernel uses standard second-order perturbation theory for the gapped sea. A harvest of probe #9210 (Claude Opus 5.5, the supervisor's family) confirmed by an other-family referee (#9295); nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 77's walk with a staggered mass, H_m = H + m eps (eps_x = (-1)^(x+y+z), m != 0 real), clocked as phi H_m phi = phi H phi + m w eps (w = phi^2 = e^u), block 76's filled sea E_sea = sum of the negative levels, block 55's energy density, and the kernel normalisation E(a) - E(0) = Pi(q) a^2 N + O(a^3) for u = a cos(q.x) (2q not 0 or Q), Pi = c0/4 + (kappa/4)|q|^2_lat + O(|q|^4): (T1) the even exchange maps commute with H_m, the odd ones after eps, no map commuting with eps is a twin (block 71's on-site twin fails by 2 m w eps |psi|^2), and eps T is a twin with e_x[eps T psi; T phi] = -e_{x-e1}[psi; phi]; (T2) the filled sea's energy density is exactly m eps_x - <E>, E = sqrt(|sin k|^2 + m^2), and its second-order kernel is the held sea's plus a term in [-9|q|^4/(64|m|^3), 0]; (T3) hence c0 = -<E> and kappa(m) = (1/12)<|sin k|^2/E>, positive and strictly decreasing in |m| for every m, tending to the massless value as m -> 0, with 1/(8m) - 7/(64m^3) + 81/(512m^5) - ... for m > sqrt3 and exact enclosures at m = 2, 4; (T4) a chessboard of clocks, invisible without a mass (block 76 T1), has first variation N m and second -N m^2 <1/E> with one; (T5) without a mass the free sea's deficit below the held sea is negative and of order |q|^4 log(1/|q|) (exact two-sided bounds along an axis), so both have the stiffness I/12, I = <|sin k|>, and on a line the free sea is softer by a third. Exact (integers, fractions, sympy); T2's and T5's kernels use standard second-order perturbation theory. T1-T4 a harvest of probe #9210 confirmed by #9295; T5 a harvest of probe #8716 confirmed by #9321 (Claude Opus 5.5 finders, the supervisor's family; Grok referees); nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_2026_09_26.py
@@ -25,6 +25,8 @@ Block 77 gave the walk a staggered mass `m ε`, and deferred its numerical massi
 - **T2: the sea.** The filled sea's energy density is exactly `mε_x − ⟨E⟩`: a uniform part and a chessboard of amplitude exactly `m`. Its response to a clock profile, at second order, is the held sea's plus a term of order `|q|⁴/|m|³`.
 - **T3: the stiffness.** `κ(m) = (1/12)⟨|sin k|²/√(|sin k|² + m²)⟩`. It is positive for every mass and falls as the mass grows: it is `1/(8m)` for a heavy sea. So a staggered mass never turns the sea's clock stiffness negative. The volume term is `c₀ = −⟨E⟩`.
 - **T4: the chessboard.** Without a mass, a chessboard of clocks is invisible (block 76 T1). With one, it is not. The sea's energy changes at first order, by `N m`, which is exactly the sea's own chessboard density of T2.
+
+- **T5: without a mass too.** The free sea's energy lies below the held sea's only by a term of order `|q|⁴ log(1/|q|)`. So both have the stiffness `I/12`, the `m → 0` value of T3. Block 76's `0.095` is a torus value.
 
 In plain terms: giving the walk a mass does not destabilise the clocks, since the sea still resists a varying clock rate. But the mass lets the sea feel an alternating clock pattern that it could not feel before, and the sea's own alternating density is what it feels.
 
@@ -109,10 +111,24 @@ In plain terms: giving the walk a mass does not destabilise the clocks, since th
 - (b) The levels are `±√(|s|² + m² cosh² a) + m sinh a`, and `|m sinh a| < |m| cosh a`.
 - (c) Differentiation (runner D3). ∎
 
+## Theorem T5 — without a mass
+
+*Statement.* At `m = 0`, for `u = ε cos(q·x)` with `2q ≢ 0`:
+- (a) The held sea's kernel is `(β/8)(3 + Σ_a cos q_a)`, so `κ_held = −β/4 = I/12` with `I = ⟨|sin k|⟩`.
+- (b) The free sea's deficit below it, `ΔΠ(q)`, is negative. Along an axis it satisfies `C t⁴ log(1/(4t)) ≤ −8ΔΠ(t e₁) ≤ π t⁴(1/6 + ½ log(√3/t))` for `t ≤ 1/8`, with an exact positive `C`. So `ΔΠ/|q|² → 0`, and the free sea's stiffness is also `I/12`.
+- (c) On a line, `ΔΠ(q) = −(cos²(q/2)/(2π sin(q/2)))[ln(sec + tan)(q/2) − sin(q/2)] = −q²/(24π) + O(q⁴)`. There the free sea is softer by a third.
+
+*Proof.*
+- (a) The held sea's bond and site sums are exact on every mode of the `4³` and `6³` tori.
+- (b) The integrand is `(a − b)²/(a + b)·(1 − n̂′·n̂)/2 ≥ 0`. It is bounded above by a vector inequality with a cell integral, and below by elementary inequalities on a cone near a massless corner of the zone.
+- (c) Closed form by differentiation.
+
+Runner E1–E3. ∎
+
 ## What this settles and what it does not
 
 - **Settled.**
-  - Block 76's inputs `c` and `κ`, for the free sea with a staggered mass, are now derived: `c₀ = −⟨E⟩` and `κ(m) = ⟨|s|²/E⟩/12 > 0`.
+  - Block 76's inputs `c` and `κ`, for the free sea with or without a staggered mass, are now derived: `c₀ = −⟨E⟩` and `κ(m) = ⟨|s|²/E⟩/12 > 0`. At `m = 0` this is `I/12` for both the free and the held sea (T5).
   - A mass never turns the stiffness negative.
   - A mass makes the chessboard of clocks visible, with a linear source equal to the sea's own chessboard density.
 - **Not settled.**
@@ -150,6 +166,7 @@ audit_required_before_effective_retained: true
   - #9210, worker `w-macbookpro9927a-j17cc`, Claude Opus 5.5, the supervisor's own model family, found T1–T4 with an exact checker plus floating-point checks.
   - Attempt a2 (`w-jonathonsmac4f50-ja540`, the same family) had found the maps, the twin `εT`, the chessboard energy and floating-point `κ` values.
   - #9295, a Grok worker, another model family, refereed #9210 with its own checker. Its verdict: "Confirmed partial. A staggered mass does not change the sign of the free sea's stiffness."
+  - T5: #8716 (Claude Opus 5.5 worker `w-macbookpro90c72-j29ee`), refereed by #9321 (a Grok worker): "the free sea's second-order deficit is a negative zone integral of order `|q|⁴ log(1/|q|)`, both seas have stiffness `I/12`".
 - **New here.** The harvest. The supervisor ported the exact families, dropped the floating-point ones, and added the held-sea kernel check (C4).
 - **Provenance.** Found by the supervisor's family and confirmed by another family.
 
@@ -250,4 +267,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_2026_09_26.py
 ```
 
-Expected: `TOTAL: PASS=17 FAIL=0`.
+Expected: `TOTAL: PASS=20 FAIL=0`.

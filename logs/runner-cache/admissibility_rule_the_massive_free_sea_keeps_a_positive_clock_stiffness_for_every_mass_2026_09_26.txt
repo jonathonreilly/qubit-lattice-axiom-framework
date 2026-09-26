@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_2026_09_26.py
-runner_sha256: ebf3dbc02e33a2952804771c702edc9da08d4c5de0ed77866fb822cf02e3928d
-input_fingerprint_sha256: dcbd9088ff61ab427a49fc71ab1616ba1b766faebd38cb4c4cdd7686663c59bf
+runner_sha256: 104fdacdb3eaa646fb489a60fcf74188b0f53c0bb15c7b9b4e85aa30c8a03d3e
+input_fingerprint_sha256: a61269cd69175786a7bc3bc5864f361d37c0125adc5b07fc57b88ecbda8c5bbe
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.01
+elapsed_sec: 2.30
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -26,6 +26,9 @@ PASS: C3 the remainder bounds: |d_j n|^2 = cos^2 k_j (E^2 - sin^2 k_j)/E^4 <= 1/
 PASS: D1 exact zone moments <|s|^2> = 3/2, <|s|^4> = 21/8, <|s|^6> = 81/16, so for m > sqrt3 kappa(m) = (1/12)<|s|^2/sqrt(|s|^2 + m^2)> = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) - ... (an alternating series whose partial sums bracket it)
 PASS: D2 exact rational enclosures of kappa(2) and kappa(4), each of width below 10^-10 and positive
 PASS: D3 a chessboard of clocks phi = c^eps: phi_x phi_y = 1 on every bond and m w eps = m cosh(a) eps + m sinh(a) (exact on the 4^3 torus); per mode E(a) = m sinh a - sqrt(|s|^2 + m^2 cosh^2 a), whose first variation is m and second -m^2/E: with a mass the chessboard is not invisible
+PASS: E1 massless sea: the coin overlap |<u_+(k')|u_-(k)>|^2 = (1 - n'.n)/2 (rational unit vectors), and on every mode of the 4^3 and 6^3 tori sum_bonds (u_x + u_y) = 0, sum_bonds (u_x + u_y)^2 = eps^2 N (3 + sum_a cos q_a): the held sea's kernel is (beta/8)(3 + sum cos q_a), kappa_held = -beta/4 = I/12 with I = <|sin k|>
+PASS: E2 two-sided bounds on the free sea's deficit below the held sea near q = 0: the vector identity 4(a^2 + b^2 - 2abc) - 2(1 - c)(a + b)^2 = 2(1 + c)(a - b)^2; the upper bound -8 dPi <= pi |q|^4 (1/6 + log(sqrt3/|q|)/2) from the cell integral; the lower bound C t^4 log(1/(4t)) <= -8 dPi(t e1) for t <= 1/8 with an exact positive C (> 4/10^5 using pi < 22/7): so dPi/|q|^2 -> 0 and kappa_free = kappa_held = I/12, with a long-ranged |q|^4 log(1/|q|) difference
+PASS: E3 on a line, in closed form: dPi(q) = -(cos^2(q/2)/(2 pi sin(q/2)))[ln(sec + tan)(q/2) - sin(q/2)] = -q^2/(24 pi) + O(q^4), so the free sea is softer by a third there (1/(6 pi) against 1/(4 pi) in g, kappa 1/(3 pi) against 1/(2 pi))
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -36,8 +39,8 @@ per_mode: executed - the (k, k+Q) block algebra, projector overlaps, the second-
 per_block: executed - the zone moments, the stiffness series and the exact enclosures of kappa(2), kappa(4); the chessboard
 lattice_wide: checked and not executed - brute-force diagonalization and torus averages (the probe's floating-point families), the kernel at q = Q, the projected sea
 PASS: G1 the five N5 resolution lines are printed
-scope: the massive free sea of H + m eps with clocks: density m eps_x - <E>; clock stiffness kappa(m) = <|s|^2/sqrt(|s|^2 + m^2)>/12 > 0 for every m; the twin eps T; a mass makes the chessboard of clocks visible; harvest of #9210 (confirmed by #9295); nothing adopted (1s)
-TOTAL: PASS=17 FAIL=0
+scope: the massive free sea of H + m eps with clocks: density m eps_x - <E>; clock stiffness kappa(m) = <|s|^2/sqrt(|s|^2 + m^2)>/12 > 0 for every m; the twin eps T; a mass makes the chessboard of clocks visible; harvest of #9210 (confirmed by #9295); nothing adopted (2s)
+TOTAL: PASS=20 FAIL=0
 
 ----- stderr -----
 

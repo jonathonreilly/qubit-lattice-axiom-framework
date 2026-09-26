@@ -63,6 +63,7 @@ MUTATION_GATE = {
     "twin_sign_forged": "B",
     "overlap_sign_forged": "C",
     "moment_forged": "D",
+    "line_limit_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -361,6 +362,61 @@ def family_d(checks: Checks) -> None:
     checks.check("D3", ok_var and ok_cb, "a chessboard of clocks phi = c^eps: phi_x phi_y = 1 on every bond and m w eps = m cosh(a) eps + m sinh(a) (exact on the 4^3 torus); per mode E(a) = m sinh a - sqrt(|s|^2 + m^2 cosh^2 a), whose first variation is m and second -m^2/E: with a mass the chessboard is not invisible")
 
 
+# ============================================================================================ family E (T5, the massless sea: harvest of #8716, confirmed by #9321)
+def family_e(checks: Checks) -> None:
+    import random as _random
+    rng = _random.Random(20260923)
+
+    def runit():
+        a = F(rng.randint(-9, 9), rng.randint(1, 9))
+        b = F(rng.randint(-9, 9), rng.randint(1, 9))
+        n = a * a + b * b + 1
+        return (2 * a / n, 2 * b / n, (a * a + b * b - 1) / n)
+    SIGm = [sp.Matrix([[0, 1], [1, 0]]), sp.Matrix([[0, -sp.I], [sp.I, 0]]), sp.Matrix([[1, 0], [0, -1]])]
+
+    def proj(n, sgn):
+        return (sp.eye(2) + sgn * sum((sp.Rational(n[i]) * SIGm[i] for i in range(3)), sp.zeros(2))) / 2
+    good = True
+    for _ in range(6):
+        a, b = runit(), runit()
+        trv = sp.simplify((proj(a, 1) * proj(b, -1)).trace())
+        good &= trv == sp.Rational(1, 2) * (1 - sum(sp.Rational(a[i]) * sp.Rational(b[i]) for i in range(3)))
+    for L in (4, 6):
+        cosL = {m: {0: F(1), 1: F(0), 2: F(-1), 3: F(0)}[m] if L == 4 else {0: F(1), 1: F(1, 2), 2: F(-1, 2), 3: F(-1), 4: F(-1, 2), 5: F(1, 2)}[m] for m in range(L)}
+        Xs = list(itertools.product(range(L), repeat=3))
+        for n in itertools.product(range(L), repeat=3):
+            if n == (0, 0, 0):
+                continue
+            c = {x: cosL[sum(p * q for p, q in zip(n, x)) % L] for x in Xs}
+            lin = sum(c[x] + c[tuple((x[i] + (i == a)) % L for i in range(3))] for x in Xs for a in range(3))
+            quad = sum((c[x] + c[tuple((x[i] + (i == a)) % L for i in range(3))]) ** 2 for x in Xs for a in range(3))
+            mult = 2 if all((2 * m) % L == 0 for m in n) else 1
+            good &= lin == 0 and quad == mult * len(Xs) * (3 + sum(cosL[m] for m in n))
+    checks.check("E1", good, "massless sea: the coin overlap |<u_+(k')|u_-(k)>|^2 = (1 - n'.n)/2 (rational unit vectors), and on every mode of the 4^3 and 6^3 tori sum_bonds (u_x + u_y) = 0, sum_bonds (u_x + u_y)^2 = eps^2 N (3 + sum_a cos q_a): the held sea's kernel is (beta/8)(3 + sum cos q_a), kappa_held = -beta/4 = I/12 with I = <|sin k|>")
+    a_, b_, c_ = sp.symbols("a b c", real=True)
+    vec = sp.expand(4 * (a_ ** 2 + b_ ** 2 - 2 * a_ * b_ * c_) - 2 * (1 - c_) * (a_ + b_) ** 2 - 2 * (1 + c_) * (a_ - b_) ** 2) == 0
+    vec &= sp.expand(2 - 2 * c_ - (1 - c_ ** 2) - (1 - c_) ** 2) == 0
+    qq, r_ = sp.symbols("q r", positive=True)
+    r0, Rm = sp.pi * qq / 2, sp.pi * sp.sqrt(3) / 2
+    up = sp.integrate(qq * 4 * sp.pi * r_ ** 2, (r_, 0, r0)) + sp.integrate(sp.pi ** 3 * qq ** 4 / (8 * r_ ** 3) * 4 * sp.pi * r_ ** 2, (r_, r0, Rm))
+    upper = sp.simplify(up - sp.pi ** 4 * qq ** 4 * (sp.Rational(1, 6) + sp.log(sp.sqrt(3) / qq) / 2)) == 0 and sp.simplify(sp.pi ** 3 * qq ** 4 / (8 * r0 ** 3) - qq) == 0
+    dc = F(431, 512) * F(1535, 1536)
+    Kc = sp.Rational(dc.numerator, dc.denominator) ** 4 * sp.Rational(23, 24) ** 4 * sp.Rational(32, 1125) * sp.Rational(4, 15) / 8     # C = Kc / pi^2
+    low = (1 - F(9, 16) ** 2 / 2 == F(431, 512)) and (1 - F(1, 16) ** 2 / 6 == F(1535, 1536)) and (1 - F(1, 2) ** 2 / 6 == F(23, 24))
+    low &= sp.integrate(2 * sp.pi * c_ ** 2 * (1 - c_ ** 2), (c_, 0, 1)) == 4 * sp.pi / 15
+    low &= (F(5, 2) ** 3 * F(9, 4) == F(1125, 32)) and Kc * sp.Rational(49, 484) > sp.Rational(4, 100000)       # pi^2 < (22/7)^2 = 484/49
+    checks.check("E2", vec and upper and low, "two-sided bounds on the free sea's deficit below the held sea near q = 0: the vector identity 4(a^2 + b^2 - 2abc) - 2(1 - c)(a + b)^2 = 2(1 + c)(a - b)^2; the upper bound -8 dPi <= pi |q|^4 (1/6 + log(sqrt3/|q|)/2) from the cell integral; the lower bound C t^4 log(1/(4t)) <= -8 dPi(t e1) for t <= 1/8 with an exact positive C (> 4/10^5 using pi < 22/7): so dPi/|q|^2 -> 0 and kappa_free = kappa_held = I/12, with a long-ranged |q|^4 log(1/|q|) difference")
+    h, q1 = sp.symbols("h q", positive=True)
+    Gd = sp.log(1 / sp.cos(h) + sp.tan(h)) - sp.sin(h)
+    line = sp.simplify(sp.diff(Gd, h) - sp.sin(h) ** 2 / sp.cos(h)) == 0
+    dPi1 = -(sp.cos(q1 / 2) ** 2 / (2 * sp.pi * sp.sin(q1 / 2))) * Gd.subs(h, q1 / 2)
+    g1 = 1 / (4 * sp.pi) + dPi1 / (1 - sp.cos(q1))
+    lim0 = sp.Rational(1, 4) if mut("line_limit_forged") else sp.Rational(1, 6)
+    line &= sp.simplify(sp.series(dPi1, q1, 0, 4).removeO() + q1 ** 2 / (24 * sp.pi)) == 0
+    line &= sp.simplify(sp.limit(g1, q1, 0, "+") - lim0 / sp.pi) == 0 and sp.simplify(sp.limit(g1, q1, sp.pi, "-") - 1 / (4 * sp.pi)) == 0
+    checks.check("E3", line, "on a line, in closed form: dPi(q) = -(cos^2(q/2)/(2 pi sin(q/2)))[ln(sec + tan)(q/2) - sin(q/2)] = -q^2/(24 pi) + O(q^4), so the free sea is softer by a third there (1/(6 pi) against 1/(4 pi) in g, kappa 1/(3 pi) against 1/(2 pi))")
+
+
 # ============================================================================================ family F
 FENCES = (
     "This note works within blocks 55, 70, 71, 76 and 77 as landed on main (the energy density, the exchange maps and twins, the filled sea and the clocked walk with a staggered mass); it reports the massive free sea's density and clock stiffness exactly, and what a mass does to the chessboard of clocks; nothing is adopted and no gravitational claim is made.",
@@ -445,6 +501,7 @@ def main(argv) -> int:
     family_b(checks)
     family_c(checks)
     family_d(checks)
+    family_e(checks)
     family_f(checks, texts[0])
     family_g(checks)
     if ACTIVE_MUTATION:

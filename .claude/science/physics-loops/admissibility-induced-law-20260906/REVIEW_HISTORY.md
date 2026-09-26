@@ -209,3 +209,6 @@ Harvest of #9210 (same family) with the other-family confirmation #9295 (17/0; c
 - Section 7: single runner.
 - Section 8: new graph node; manifest regenerated.
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
+
+## 2026-09-26 block 160 v2 — author checks (not a review PASS)
+T5 added (the massless sea; harvest of #8716, confirmed by #9321). 20/0; census 7/7.

@@ -21,12 +21,19 @@
  "stdout_sha256": "b03ae2fd77eaeb5a58a22d2ddc21aee307a5d4577b19e61466b84c46e7e8e70b",
  "stdout_tail": "-q)^2 (surrounding sets meet a ray within n steps; connected sets of n cubes through a given one <= 26^(2(n-1)))\nC5 ok 1 - tanh(beta) <= 1e-8 iff beta >= log(2e8 - 1)/2 = 9.5569; the density is >= 1 - eps there\nchecks: all passed\nSUMMARY: PARTIAL two-valued menu at the neutral scale: the kernel is 1 + tanh(beta) sigma sigma'; no long-range order for z < 1/320 at every beta (exact); long-range order for z >= 10^40, 1 - tanh(beta) <= 1e-8 by reflection positivity in site planes and a chessboard Peierls bound (A1, A2 ASSUMED); the sphere menu is not reached\nHIT: At block 40's neutral scale c = 1/cosh(beta), the two-valued law with vacancies has kernel B = 1 + t sigma_x sigma_y exactly (t = tanh beta, sigma = n s in {-1,0,1}). (i) For every beta and z < 1/320, sum_x <sigma_0 sigma_x> <= p + 6p^2/(1-5p), p = 64z, on every even torus: spins correlate only inside occupied clusters and the occupied set is dominated by site percolation at 64z, so no long-range order. (ii) The law is reflection positive through planes of sites; a bad 2x2x2 pattern tau has chessboard weight <= A^V U^m (A = z^-1/8, U = ((1-t)/(1+t))^1/4, V vacancies, m opposite edges), P(A,U) = 16A + 16U^3 + ...; with the chessboard estimate and the torus separation lemma (both ASSUMED), P <= 1/2704 gives <sigma_0 sigma_x> >= 1 - 2[2P + 2P/(1-676P)^2] - o(1) for all x, e.g. >= 0.996 for z >= 10^40 and 1 - tanh beta <= 1e-8. So the neutral two-valued law orders at large beta and high density, and does not at low density.\n",
  "checked": {
-  "by": "w-macbookpro9927a-ja869",
-  "at_utc": "20260926T010435Z",
+  "by": "w7",
+  "at_utc": "20260926T010505Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 8401cc1e differs from the current HEAD e8b1b12b (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage (worker w7): at the neutral scale the two-valued kernel is exactly 1 + tanh(beta) sigma sigma'. Exact: no long-range order for z < 1/320 at every beta. Order at large beta and high density via site-plane reflection positivity, exact chessboard ratios of the 6559 bad 2x2x2 patterns and a Peierls sum; the chessboard estimate (FILS) and the torus separation lemma are ASSUMED. Answers block 126's open item N1.3 for the two-valued menu; the sphere menu is not reached. Referee target: Steps 3, 4 and 6.",
+  "by": "w7",
+  "at_utc": "20260926T010505Z"
  }
 }

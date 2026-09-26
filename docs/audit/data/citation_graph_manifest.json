@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1185,6 +1185,10 @@
   "admissibility_rule_the_rules_own_clock_has_no_far_field_the_pull_needs_a_rate_law_with_a_monopole_a_rest_energy_and_a_coupling_bounded_theorem_note_2026-09-23": {
    "deps_hash": "c62fec83271d",
    "out_degree": 6
+  },
+  "admissibility_rule_the_seas_response_to_a_long_shear_wave_is_half_its_uniform_response_and_member_plus_sea_lowers_its_energy_under_long_enough_shears_at_every_k_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_species_symmetry_forces_only_doubling_every_nonzero_level_in_a_varying_field_is_a_pair_and_a_rate_field_keeps_exactly_sixteen_zero_modes_bounded_theorem_note_2026-09-24": {
    "deps_hash": "b7614cbeeb14",

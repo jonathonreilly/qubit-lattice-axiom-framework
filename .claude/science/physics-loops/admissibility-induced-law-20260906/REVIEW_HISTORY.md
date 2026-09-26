@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-26 block 167 — author checks (not a review PASS)
+Harvest of #9299 (same family) with the other-family confirmation #9332 (18/0; census 6/6 in family). The counted reading is declared.

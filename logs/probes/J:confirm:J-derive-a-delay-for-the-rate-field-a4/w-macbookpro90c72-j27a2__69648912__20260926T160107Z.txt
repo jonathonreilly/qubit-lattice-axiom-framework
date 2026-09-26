@@ -1,0 +1,16 @@
+PASS 1.1 weight: a(w) = 1/w is the unique on-site weight-one coefficient of u-dot squared
+PASS 1.1 admissibility: referring the rate to the walls removes the f'' change
+PASS 1.2 law: the kinetic Euler-Lagrange equation is (u'' - u'^2/2)/(gamma c^2 w)
+PASS 1.4 chain: u'' - u'^2/2 = 2 phi''/phi - 4 phi'^2/phi^2 when u = 2 log phi
+PASS 1.5 constant: Delta_lat u = 6 (average - u), so the weak-field factor in front of (average - u) is 6
+PASS 1.7 speed: the group speed is at most c wbar, and it reaches c wbar as k -> 0
+PASS 2.4 bodies: ray speed p/sqrt(m^2+p^2) takes every value in [0, 1), so no ever-growing wake means c >= 1
+PASS 2.3 resonance: V < c has no resonance direction, and V = 2c has the cone cos theta = 1/2
+PASS 3.1 phase: 2t(1-cos(s/sqrt t)) = s^2 - s^4/(12 t) and cos(n s/sqrt t) = 1 - n^2 s^2/(2t)
+PASS 3.2 kernel: the odd part is -lam/(4 pi) at every site, then -lam^3(|x|^2 - 3/4)/(24 pi)
+PASS 6.1 angles: <n_i n_j> = delta/3 and <(n.J.n)^2> = (2 J:J + (tr J)^2)/15
+PASS 6.2 flux: (1/gamma)(1/c)(gamma/(4 pi))^2 (4 pi) = G/c
+PASS 6.3 jacobi: tr I''' = -2 dU/dt on a Kepler orbit
+PASS 6.3 power: the scalar power is (16/15) of the Kepler base, one sixth of the comparator on circles
+SUMMARY: confirmed partial. The unique on-site weight-one kinetic term gives u'' = c^2 wbar^2 Delta u - gamma c^2 wbar e, and the factor in front of (average - u) is 6. Changes travel at most c sites per local tick. Ray speeds fill [0, 1), so no ever-growing wake is the inequality c >= 1. The lattice retarded kernel's odd part is -lam/(4 pi), the same at every site, then -lam^3(|x|^2 - 3/4)/(24 pi). The leading scalar power on a Kepler orbit is (16/15) G^4 mu^2 M^3 (1 + 99 e^2/32 + 51 e^4/128) / (c^5 a^5 (1-e^2)^{7/2}), one sixth of the comparator on a circle. The 49^3 and 61^3 runs were not rebuilt.
+HIT: confirmed - the wall-referred rate field has local speed c wbar, no ever-growing wake requires c >= 1, and the retarded kernel's odd terms are -lam/(4 pi) and -lam^3(|x|^2 - 3/4)/(24 pi)

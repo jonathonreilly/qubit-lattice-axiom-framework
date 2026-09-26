@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-delay-for-the-rate-field-a4",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j27a2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-delay-for-the-rate-field/referee_w-macbookpro90c72-j27a2/check.py",
+ "seed": 38467,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "69648912",
+ "started_utc": "20260926T160107Z",
+ "elapsed_s": 5.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The unique on-site weight-one kinetic term gives u'' = c^2 wbar^2 Delta u - gamma c^2 wbar e, and the factor in front of (average - u) is 6. Changes travel at most c sites per local tick. Ray speeds fill [0, 1), so no ever-growing wake is the inequality c >= 1. The lattice retarded kernel's odd part is -lam/(4 pi), the same at every site, then -lam^3(|x|^2 - 3/4)/(24 pi). The leading scalar power on a Kepler orbit is (16/15) G^4 mu^2 M^3 (1 + 99 e^2/32 + 51 e^4/128) / (c^5 a^5 (1-e^2)^{7/2}), one sixth of the comparator on a circle. The 49^3 and 61^3 runs were not rebuilt."
+ },
+ "review": "Independent exact check: the weak-field factor is 6, no ever-growing wake is c >= 1, and the retarded kernel's odd part is -lam/(4 pi) then -lam^3(|x|^2-3/4)/(24 pi).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-delay-for-the-rate-field:a4/; its files are probes/work/derive/a-delay-for-the-rate-field/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-delay-for-the-rate-field/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5c7d0b4a53a778c718447d60048bb2cd203388324fc18798ffd58e587c40b305",
+ "stdout_tail": "c wbar as k -> 0\nPASS 2.4 bodies: ray speed p/sqrt(m^2+p^2) takes every value in [0, 1), so no ever-growing wake means c >= 1\nPASS 2.3 resonance: V < c has no resonance direction, and V = 2c has the cone cos theta = 1/2\nPASS 3.1 phase: 2t(1-cos(s/sqrt t)) = s^2 - s^4/(12 t) and cos(n s/sqrt t) = 1 - n^2 s^2/(2t)\nPASS 3.2 kernel: the odd part is -lam/(4 pi) at every site, then -lam^3(|x|^2 - 3/4)/(24 pi)\nPASS 6.1 angles: <n_i n_j> = delta/3 and <(n.J.n)^2> = (2 J:J + (tr J)^2)/15\nPASS 6.2 flux: (1/gamma)(1/c)(gamma/(4 pi))^2 (4 pi) = G/c\nPASS 6.3 jacobi: tr I''' = -2 dU/dt on a Kepler orbit\nPASS 6.3 power: the scalar power is (16/15) of the Kepler base, one sixth of the comparator on circles\nSUMMARY: confirmed partial. The unique on-site weight-one kinetic term gives u'' = c^2 wbar^2 Delta u - gamma c^2 wbar e, and the factor in front of (average - u) is 6. Changes travel at most c sites per local tick. Ray speeds fill [0, 1), so no ever-growing wake is the inequality c >= 1. The lattice retarded kernel's odd part is -lam/(4 pi), the same at every site, then -lam^3(|x|^2 - 3/4)/(24 pi). The leading scalar power on a Kepler orbit is (16/15) G^4 mu^2 M^3 (1 + 99 e^2/32 + 51 e^4/128) / (c^5 a^5 (1-e^2)^{7/2}), one sixth of the comparator on a circle. The 49^3 and 61^3 runs were not rebuilt.\nHIT: confirmed - the wall-referred rate field has local speed c wbar, no ever-growing wake requires c >= 1, and the retarded kernel's odd terms are -lam/(4 pi) and -lam^3(|x|^2 - 3/4)/(24 pi)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j27a2",
+  "at_utc": "20260926T160121Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed partial: weak-field factor is 6, no ever-growing wake is c >= 1, and the retarded odd part is -lam/(4 pi) then -lam^3(|x|^2-3/4)/(24 pi).",
+  "by": "w-macbookpro90c72-j27a2",
+  "at_utc": "20260926T160121Z"
+ }
+}

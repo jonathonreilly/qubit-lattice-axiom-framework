@@ -1,0 +1,22 @@
+{
+  "task": "J:derive:mobile-record-gibbs-vector-transport:a1",
+  "worker": "w-jonathonsmac4f50-jb383",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "source": {"pr": 8567, "frozen_head": "801affee6e5fb11519c5b31ec2532cf320b8ba22", "author_family": "Codex",
+    "files": {"docs/MOBILE_RECORDS_LOCAL_GIBBS_CIRCULATIONS_AND_WINDING_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c2d6d019f1125249b4df91bcf435e68be727c72c5d3cf9570fe1f734d473d1b4",
+              "scripts/mobile_records_local_gibbs_circulations_and_winding_transport_2026_09_21.py": "3812fca512d10953f8af64200cbacd9816844f712420d917d07935ddbf92640c"},
+    "hashes_match_source_map": true},
+  "related_work_checked": [{"path": "probes/work/derive/mobile-record-gibbs-vector-transport", "finding": "no prior attempt"}],
+  "proved": ["Part A orbit-flow invariance and contractible-cycle current cancellation", "stacked-chain factorisation at Jp = 0"],
+  "checked": ["K1 sixteen-word certificate (symbolic)", "K2 exact master-equation stationarity on all rings N = 4..9", "K3 positive current", "K4 nonzero covariance", "P1 random finite-range Gibbs invariance", "P2 zero stationary current on a 3x3 torus", "C1 3D stacked KLS stationary at Jp = 0 (4x2x2, all 12870 states)", "C2 exact nonstationarity witness at Jp != 0"],
+  "assumed": ["supplied labels, energies, rates and interpretation of #8567"],
+  "dispositions": [
+    {"claim": "Part B finite-word KLS certificate and positive current", "disposition": "recovered", "note": "cross-family independent reproduction"},
+    {"claim": "Part A local Gibbs-preserving circulation and zero contractible-cycle current", "disposition": "recovered", "note": "cross-family independent reproduction"},
+    {"claim": "3D cubic-covariant correlated vector Gibbs state with nonzero Euler transport", "disposition": "open", "note": "one explicit candidate (stacked KLS with transverse coupling) excluded: stationary only at Jp = 0, where transverse correlation and cubic covariance fail"}
+  ],
+  "first_unresolved_step": "a 3D cubic-covariant local exchange with a pointwise stationarity certificate for a Gibbs family with transverse vector correlations and nonzero transport",
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "Parts A and B are correctly scoped supplied-model lemmas, now independently reproduced by another model family; they could be packaged narrowly after the N1-N8 gate and combined current-main validation; the research target stays on the backlog"
+}

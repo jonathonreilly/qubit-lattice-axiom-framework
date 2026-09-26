@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-sixteen-branches-and-the-ledger-with-a-staggered-mass-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7bd9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-sixteen-branches-and-the-ledger-with-a-staggered-mass/referee_w-macbookpro90c72-j7bd9/check.py",
+ "seed": 37392,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ceac7996",
+ "started_utc": "20260926T154312Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. H + m eps has paired levels \u00b1E. The filled sea's on-site density is m eps_x - <E>. Its stiffness is kappa(m) = <|s|^2/E>/12, positive and strictly decreasing, with kappa = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) + ... for |m| > sqrt(3). The free-sea correction beyond the held sea is O(|q|^4/m^3) and cannot change the sign of kappa. eps T is a twin on the 4-torus, and a chessboard of clocks has first variation N m. The large-torus floating averages were not rebuilt."
+ },
+ "review": "Independent exact check: kappa(m) = <|s|^2/E>/12 is positive and strictly decreasing, with series 1/(8m) - 7/(64 m^3) + 81/(512 m^5), and eps T is a twin on the 4-torus.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-sixteen-branches-and-the-ledger-with-a-staggered-mass:a1/; its files are probes/work/derive/the-sixteen-branches-and-the-ledger-with-a-staggered-mass/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-sixteen-branches-and-the-ledger-with-a-staggered-mass/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b52fe9d43fc9b4819959c8bf3059dab6b507e20fbdd18ab31a1ef2e05399b576",
+ "stdout_tail": "moments: <|s|^2> = 3/2, <|s|^4> = 21/8, <|s|^6> = 81/16\nPASS R2 series: for |m| > sqrt(3), kappa(m) = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) + ...\nPASS R3 enclosure: alternating enclosures of kappa(2) and kappa(4) have width below 1e-10 and stay positive\nPASS R4 decrease: the integrand |s|^2/E decreases strictly in |m| wherever |s| is not zero\nPASS R5 constants: c0 = 3 beta - m^2 <1/E> = -<E>, and kappa = -beta/4 = <|s|^2/E>/12\nPASS K4 remainder: 1-n\u00b7n' <= 3|q|^2/(2m^2) and (E-E')^2 <= 3|q|^2 put the extra kernel term in [-9|q|^4/(64|m|^3), 0]\nPASS D1 chessboard: dE/da at a=0 is m, the second derivative is -m^2/E, and |sinh a| < cosh a so no level crosses zero\nPASS M8 twin: on the 4-torus, e_x of eps T psi in the shifted clocks equals -e at the previous site\nPASS M10 chessboard: phi = c^eps has phi_x phi_y = 1 on every bond, and w eps = cosh(a) eps + sinh(a)\nSUMMARY: confirmed partial. H + m eps has paired levels \u00b1E. The filled sea's on-site density is m eps_x - <E>. Its stiffness is kappa(m) = <|s|^2/E>/12, positive and strictly decreasing, with kappa = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) + ... for |m| > sqrt(3). The free-sea correction beyond the held sea is O(|q|^4/m^3) and cannot change the sign of kappa. eps T is a twin on the 4-torus, and a chessboard of clocks has first variation N m. The large-torus floating averages were not rebuilt.\nHIT: confirmed - the massive free sea has kappa(m) = <|sin k|^2 / sqrt(|sin k|^2 + m^2)> / 12, positive for every m and with no sign change\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7bd9",
+  "at_utc": "20260926T154321Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed partial: kappa(m) = <|s|^2/E>/12 is positive for every m, with no sign change. eps T is a twin, and a chessboard has first variation N m.",
+  "by": "w-macbookpro90c72-j7bd9",
+  "at_utc": "20260926T154321Z"
+ }
+}

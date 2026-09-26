@@ -1,0 +1,14 @@
+PASS S1 spectrum: M(k)^2 = (|s|^2 + m^2) I, so the levels are paired at ±E
+PASS S2 density: P_- M = (M - E)/2, and the on-site coin trace of the mass block is 2m
+PASS K1 overlap: tr P_a(k) P_b(k') = 1 + ab (s·s' + m^2)/(E E')
+PASS R1 moments: <|s|^2> = 3/2, <|s|^4> = 21/8, <|s|^6> = 81/16
+PASS R2 series: for |m| > sqrt(3), kappa(m) = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) + ...
+PASS R3 enclosure: alternating enclosures of kappa(2) and kappa(4) have width below 1e-10 and stay positive
+PASS R4 decrease: the integrand |s|^2/E decreases strictly in |m| wherever |s| is not zero
+PASS R5 constants: c0 = 3 beta - m^2 <1/E> = -<E>, and kappa = -beta/4 = <|s|^2/E>/12
+PASS K4 remainder: 1-n·n' <= 3|q|^2/(2m^2) and (E-E')^2 <= 3|q|^2 put the extra kernel term in [-9|q|^4/(64|m|^3), 0]
+PASS D1 chessboard: dE/da at a=0 is m, the second derivative is -m^2/E, and |sinh a| < cosh a so no level crosses zero
+PASS M8 twin: on the 4-torus, e_x of eps T psi in the shifted clocks equals -e at the previous site
+PASS M10 chessboard: phi = c^eps has phi_x phi_y = 1 on every bond, and w eps = cosh(a) eps + sinh(a)
+SUMMARY: confirmed partial. H + m eps has paired levels ±E. The filled sea's on-site density is m eps_x - <E>. Its stiffness is kappa(m) = <|s|^2/E>/12, positive and strictly decreasing, with kappa = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) + ... for |m| > sqrt(3). The free-sea correction beyond the held sea is O(|q|^4/m^3) and cannot change the sign of kappa. eps T is a twin on the 4-torus, and a chessboard of clocks has first variation N m. The large-torus floating averages were not rebuilt.
+HIT: confirmed - the massive free sea has kappa(m) = <|sin k|^2 / sqrt(|sin k|^2 + m^2)> / 12, positive for every m and with no sign change

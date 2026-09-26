@@ -39,7 +39,7 @@ In plain terms: the filled sea of walkers is a negative energy that grows in siz
   - "No possibility is privileged." "No site is privileged."
   - "Admissibility is not a dynamics axiom." The memo does not "define a time metric". The walk, the frame, the mass, the member and its homogeneous action are supplied clauses. Nothing is adopted.
 - **The framed walk** (block 62 as landed). For a uniform real frame `E`, `H(k) = Σ_j (E^j·σ) sin k_j`, and `H(k)² = g^{ij}s_is_j`, with `s_j = sin k_j` and `g^{−1} = EᵀE`. The metric is `g = δ + h`. A symmetric frame `E = 1 − h/2` gives `g^{−1} = (1 − h/2)²`; a diagonal one, `E_j^j = 1/ℓ_j`, gives `g_jj = ℓ_j²`.
-- **The staggered mass** (block 139 as landed). It adds `μ` to the band energies as `±(|Es|² + μ²)^{1/2}`, with the frame acting on the hops, as in block 150 T4 (pushed).
+- **The staggered mass** (block 139 as landed). It adds `μ` to the band energies as `±(|Es|² + μ²)^{1/2}`, with the frame acting on the hops, as in block 150 T4 (landed).
 - **The sea.** Every lower-band state is filled. `⟨·⟩` is the zone average, and `R = (|s|² + μ²)^{1/2}`.
 - **The member's energy for uniform strains** (block 62). `R₁ = p²tr h − pᵀhp` and `R₂` are quadratic in the symbol `p`, so both vanish on uniform strains.
 - **The homogeneous action** (block 148 as landed). `L = −8αVΣ_{i<j}λ̇_iλ̇_j/w − wm`, with `ℓ_i = e^{λ_i}`, `V = ℓ₁ℓ₂ℓ₃`, and `w` varied before `w = 1`. It is supplied, with the owner's review scoping.
@@ -119,7 +119,7 @@ audit_required_before_effective_retained: true
   - Block 139: the staggered mass.
   - Block 147: the zero of energy, and the bounce with equal lengths.
   - Block 148: the homogeneous action with unequal lengths.
-- **Blocks, as pushed.** Block 150 T4: the sea's inertia, positive and without a dilation part. This note concerns its energy, not its inertia.
+- **Block 150 T4 (landed 2026-09-26).** The sea's formal adiabatic inertia, positive and without a dilation part. This note concerns its energy, not its inertia.
 - **Probes.** #9198 (Claude Opus 5.5 worker `w-macbookpro9927a-j5403`, the supervisor's own model family; not refereed by another family) found T1 at `μ = 0`, the second-order formula on traceless strains at first order in the volume, and the negative definiteness. Its floating-point findings are not used here: the `q²` part is not relabelling-invariant, and the transverse stiffness and `α/K` values.
 - **In the literature.** The vacuum energy of a filled lattice band under strain; convexity of log-sum-exp. Reference only.
 - **New here:**
@@ -201,7 +201,7 @@ No registered primitive is used; nothing is proposed for registration.
 
 ## Imports
 
-- `minimal_axioms`. Blocks 62, 139, 147 and 148 (landed), restated. Block 150 T4 (pushed), cited as context.
+- `minimal_axioms`. Blocks 62, 139, 147 and 148 (landed), restated. Block 150 T4 (landed), cited as context.
 - Named standard imports, at definition level: convexity of log-sum-exp and of log-convex functions; the inequality of Cauchy and Schwarz; exact symbolic arithmetic.
 
 ## Review record

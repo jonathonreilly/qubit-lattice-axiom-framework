@@ -209,3 +209,5 @@ A harvest of probe #9198's exact part (same family), line-checked by the supervi
 - Section 7: single runner.
 - Section 8: new graph node; manifest regenerated.
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
+
+- 2026-09-26 block 155: block 150 cited as landed. Text only; runner 14/0.

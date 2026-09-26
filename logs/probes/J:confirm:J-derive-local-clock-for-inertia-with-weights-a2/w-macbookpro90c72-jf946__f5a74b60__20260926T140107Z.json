@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-local-clock-for-inertia-with-weights-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf946",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/local-clock-for-inertia-with-weights/referee_w-macbookpro90c72-jf946/check.py",
+ "seed": 31267,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f5a74b60",
+ "started_utc": "20260926T140107Z",
+ "elapsed_s": 58.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial on the 3-torus at (3,1,2). Distance-one rates make pi stationary on the whole three-record sector, at c = 1 (332 equations, 274 patterns) and at c = 1/2 (334 equations), with a strictly positive solution checked in exact arithmetic. Adjoining (1,0,1):-x, (1,0,2):+z, (1,1,2):-x, (1,2,1):-x makes that class infeasible: a rational Farkas vector is nonpositive on all 275 patterns and sums to -36/5. The local clock 1/pi_x fails on 3168 of the 70200 three-record states, with largest defect 3. Record number and the content multiset are kept by every checked event. A larger window and a wider locality class were not examined."
+ },
+ "review": "Independent exact check: three-record stationarity is feasible at c=1 (332 by 274) and c=1/2 (334 by 274) with positive rates, and the four-record witness is infeasible by a Farkas sum of -36/5.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:local-clock-for-inertia-with-weights:a2/; its files are probes/work/derive/local-clock-for-inertia-with-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/local-clock-for-inertia-with-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "551f459868ef4bda09249ca8fc5bc4885e3f9aa73f902f0872670c543c4b3c4f",
+ "stdout_tail": "PASS V1 local clock: 70200 three-record states, 3168 local-clock failures, largest defect 3 at the stated witness\nPASS V2 conservation: every three-record event and the four-record witness keep the record count and the content multiset\nPASS V3 c = 1: 332 equations, 274 patterns, exact positive solution rates in [1, 29]\nPASS V3 c = 1/2: 334 equations, 274 patterns, exact positive solution rates in [1, 55/3]\nPASS V4 four records: 333 equations, 275 patterns, sum of the certificate -36/5\nSUMMARY: confirmed partial on the 3-torus at (3,1,2). Distance-one rates make pi stationary on the whole three-record sector, at c = 1 (332 equations, 274 patterns) and at c = 1/2 (334 equations), with a strictly positive solution checked in exact arithmetic. Adjoining (1,0,1):-x, (1,0,2):+z, (1,1,2):-x, (1,2,1):-x makes that class infeasible: a rational Farkas vector is nonpositive on all 275 patterns and sums to -36/5. The local clock 1/pi_x fails on 3168 of the 70200 three-record states, with largest defect 3. Record number and the content multiset are kept by every checked event. A larger window and a wider locality class were not examined.\nHIT: confirmed - three-record stationarity is feasible with strictly positive distance-one rates at c = 1 and at c = 1/2, and one four-record configuration makes the same class infeasible by an exact certificate summing to -36/5\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf946",
+  "at_utc": "20260926T140213Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed partial: three-record stationarity is feasible at c=1 and c=1/2 with positive distance-one rates, and the four-record witness is infeasible by a Farkas sum of -36/5.",
+  "by": "w-macbookpro90c72-jf946",
+  "at_utc": "20260926T140213Z"
+ }
+}

@@ -1,0 +1,7 @@
+PASS V1 local clock: 70200 three-record states, 3168 local-clock failures, largest defect 3 at the stated witness
+PASS V2 conservation: every three-record event and the four-record witness keep the record count and the content multiset
+PASS V3 c = 1: 332 equations, 274 patterns, exact positive solution rates in [1, 29]
+PASS V3 c = 1/2: 334 equations, 274 patterns, exact positive solution rates in [1, 55/3]
+PASS V4 four records: 333 equations, 275 patterns, sum of the certificate -36/5
+SUMMARY: confirmed partial on the 3-torus at (3,1,2). Distance-one rates make pi stationary on the whole three-record sector, at c = 1 (332 equations, 274 patterns) and at c = 1/2 (334 equations), with a strictly positive solution checked in exact arithmetic. Adjoining (1,0,1):-x, (1,0,2):+z, (1,1,2):-x, (1,2,1):-x makes that class infeasible: a rational Farkas vector is nonpositive on all 275 patterns and sums to -36/5. The local clock 1/pi_x fails on 3168 of the 70200 three-record states, with largest defect 3. Record number and the content multiset are kept by every checked event. A larger window and a wider locality class were not examined.
+HIT: confirmed - three-record stationarity is feasible with strictly positive distance-one rates at c = 1 and at c = 1/2, and one four-record configuration makes the same class infeasible by an exact certificate summing to -36/5

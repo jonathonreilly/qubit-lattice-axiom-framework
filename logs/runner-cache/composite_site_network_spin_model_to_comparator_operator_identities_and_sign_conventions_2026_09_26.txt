@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_spin_model_to_comparator_operator_identities_and_sign_conventions_2026_09_26.py
+runner_sha256: 837338f7c1b763d5cfd8fc42bdfda1fc9e00615ff19d3a35c5f9dc7171928b0e
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.08
+status: ok
+----- stdout -----
+[PASS] on the constrained space D_i = 1 (rank 4 per site), sigma^a = -(i/2) eps c c and tau^l = -(i/2) eps b b satisfy the two-qubit Pauli algebra, and sigma^a tau^l = +i b^l c^a :: three sites: rank 64; algebra residual 0.0e+00; sigma tau = +i b c residual 0.0e+00 (-i b c: 2.0); 0 s
+[PASS] each positive-J spin bond equals, on the constrained space, the comparator bond with hopping -2J u_ij (u_ij = i b_i b_j, i on sublattice A): the comparator's +2J u_ij is the opposite sign :: x: residual 4.0e+00 (+), 0.0e+00 (-); y: residual 4.0e+00 (+), 0.0e+00 (-); z: residual 4.0e+00 (+), 0.0e+00 (-); 1 s
+[PASS] each odd path of the spin model equals, on the constrained space, the comparator's odd hop between the two outer sites with one sign for every colour pair and for the middle site on either sublattice :: sign {-1}; (x,y) middle on A: 4.0e+00 (+), 0.0e+00 (-); (x,y) middle on B: 4.0e+00 (+), 0.0e+00 (-); (y,z) middle on A: 4.0e+00 (+), 0.0e+00 (-); (y,z) middle on B: 4.0e+00 (+), 0.0e+00 (-); (z,x) middle on A: 4.0e+00 (+), 0.0e+00 (-); (z,x) middle on B: 4.0e+00 (+), 0.0e+00 (-); 1 s
+[PASS] for random bond sectors on the 32-, 64- and 128-site tori at kappa = 0.3, the four sign conventions (bond +-, odd +-) give the same projected sector energy; admissible tori have N = Lx Ly Lz / 2 = 8abc sites, so N/2 is even :: 32 sites (N/2 = 16), 64 sites (N/2 = 32), 128 sites (N/2 = 64); max spread over conventions 1.1e-13; 2 s
+TOTAL: PASS=4 FAIL=0 (2 s)
+
+----- stderr -----
+

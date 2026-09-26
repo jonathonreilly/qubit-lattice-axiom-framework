@@ -1,0 +1,13 @@
+PASS K1 equations of state :: m=-I/l has p=rho/3; the counterterm +I/l does too; a constant I/l0 has p=0 and leaves I/l0-I/l
+PASS K2 massive ratio :: p/rho = (s^2/l^2) / (3(mu^2 + s^2/l^2))
+PASS C1 commutator :: ||[H_l1,H_l2]||^2 = 16 mu^2 |s|^2 (1/l1-1/l2)^2, and mu=0 gives H_l = H_1/l
+PASS C1b sigma.s :: sigma.s has eigenvalues ±|s|, independent of l
+PASS C1c massless sea :: half filling of one block has energy -2|s|/l, hence -|s|/l per site
+PASS A1 matrix element :: |<+|d_lambda h|->|^2 = mu^2 r^2/(l^2 E^2), and |<+|d_lambda ->| = that over 2E
+PASS M1 dressing algebra :: under c = i lamdot <+|d_lambda ->/(2E), the excess is (1/2) m lamdot^2 with m = mu^2 r^2/(4 l^2 E^5)
+PASS M2 per site :: two sectors and half a block per site give m_lambda = <mu^2 |s|^2/(4 E^5)> at l=1, which is 4 times mu^2|s|^2/(16 E^5)
+PASS N1 Noether :: d/dt of e+V+(1/2)(m+c) lamdot^2 equals lamdot times the Euler-Lagrange expression
+PASS H1 hard core :: on a fully occupied ring every hop targets an occupied site, so the hopping annihilates the state
+TOTAL FAIL=0
+SUMMARY: PARTIAL on a uniformly stretched lattice with dm/dlam = -3 p l^3. Massless: H_l = H_1/l, half-filled block energy -2|s|/l, p=rho/3 for m=-I/l, and the subtraction that cancels it at every length is +I/l. A time-constant I/l0 leaves I/l0-I/l. Massive: ||[H_l1,H_l2]||^2 = 16 mu^2 |s|^2 (1/l1-1/l2)^2, and the ground state of a sector has a nonzero first time derivative of the excited amplitude whenever mu|s| lamdot != 0. The leading adiabatic dressing (1/2) m lamdot^2 with m = mu^2 r^2/(4 l^2 E^5) per sector uses the assumed formula c = i lamdot <+|d_lambda ->/(2E). Fully occupied hard-core hopping is blocked. Irreversible pair creation was not treated.
+HIT: confirmed - without the staggered mass the free sea keeps its occupations for every history and its energy is -|s|/l per site with p=rho/3; cancelling that at every length takes the counterterm +I/l, while a subtraction frozen at one length leaves I/l0-I/l. With the staggered mass the blocks at two lengths fail to commute by 16 mu^2 |s|^2 (1/l1-1/l2)^2, and a sea started in the instantaneous ground state is excited at order tau wherever mu|s| lamdot != 0. Granting the first adiabatic correction, the excess energy is (1/2) m_lambda lamdot^2 per site with m_lambda = <mu^2 |s|^2/(4 l^2 E^5)>, and that term plus the member conserves its Noether energy.

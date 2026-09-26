@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260925-sea-source-subtraction-consistency-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j2662",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/referee_w-macbookpro90c72-j2662/check.py",
+ "seed": 54766,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7ea3f819",
+ "started_utc": "20260926T203246Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL on a uniformly stretched lattice with dm/dlam = -3 p l^3. Massless: H_l = H_1/l, half-filled block energy -2|s|/l, p=rho/3 for m=-I/l, and the subtraction that cancels it at every length is +I/l. A time-constant I/l0 leaves I/l0-I/l. Massive: ||[H_l1,H_l2]||^2 = 16 mu^2 |s|^2 (1/l1-1/l2)^2, and the ground state of a sector has a nonzero first time derivative of the excited amplitude whenever mu|s| lamdot != 0. The leading adiabatic dressing (1/2) m lamdot^2 with m = mu^2 r^2/(4 l^2 E^5) per sector uses the assumed formula c = i lamdot <+|d_lambda ->/(2E). Fully occupied hard-core hopping is blocked. Irreversible pair creation was not treated."
+ },
+ "review": "Independent block algebra: massless H_l equals H_1/l with energy -|s|/l per site and p=rho/3. A frozen subtraction leaves I/l0-I/l. The massive commutator is 16 mu^2 |s|^2 (1/l1-1/l2)^2, and the ground state is excited at order tau. The adiabatic dressing is assumed.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260925-sea-source-subtraction-consistency:a1/; its files are probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "97e30ee40e4116eb48c65046d8a6bb1023e37d9d9a3ab14d98fcc120ec9ed681",
+ "stdout_tail": "t times the Euler-Lagrange expression\nPASS H1 hard core :: on a fully occupied ring every hop targets an occupied site, so the hopping annihilates the state\nTOTAL FAIL=0\nSUMMARY: PARTIAL on a uniformly stretched lattice with dm/dlam = -3 p l^3. Massless: H_l = H_1/l, half-filled block energy -2|s|/l, p=rho/3 for m=-I/l, and the subtraction that cancels it at every length is +I/l. A time-constant I/l0 leaves I/l0-I/l. Massive: ||[H_l1,H_l2]||^2 = 16 mu^2 |s|^2 (1/l1-1/l2)^2, and the ground state of a sector has a nonzero first time derivative of the excited amplitude whenever mu|s| lamdot != 0. The leading adiabatic dressing (1/2) m lamdot^2 with m = mu^2 r^2/(4 l^2 E^5) per sector uses the assumed formula c = i lamdot <+|d_lambda ->/(2E). Fully occupied hard-core hopping is blocked. Irreversible pair creation was not treated.\nHIT: confirmed - without the staggered mass the free sea keeps its occupations for every history and its energy is -|s|/l per site with p=rho/3; cancelling that at every length takes the counterterm +I/l, while a subtraction frozen at one length leaves I/l0-I/l. With the staggered mass the blocks at two lengths fail to commute by 16 mu^2 |s|^2 (1/l1-1/l2)^2, and a sea started in the instantaneous ground state is excited at order tau wherever mu|s| lamdot != 0. Granting the first adiabatic correction, the excess energy is (1/2) m_lambda lamdot^2 per site with m_lambda = <mu^2 |s|^2/(4 l^2 E^5)>, and that term plus the member conserves its Noether energy.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j2662",
+  "at_utc": "20260926T203253Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Massless sea energy is -|s|/l per site with counterterm +I/l. A frozen subtraction leaves I/l0-I/l. The massive sea is excited at order tau; the adiabatic cranking term is assumed.",
+  "by": "w-macbookpro90c72-j2662",
+  "at_utc": "20260926T203253Z"
+ }
+}

@@ -1,0 +1,50 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_members_rays_turn_by_a_closed_series_at_every_order_2026_09_26.py
+runner_sha256: fac1fd30e2ef62893ad55c7589c2fc2035141f76965be82c2ce2de5e27a22a8e
+input_fingerprint_sha256: 888fc587d2a126a938e80dbb94cd36e3e5c64f5ba40cab6948c6507695c47c11
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 35.03
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_RAYS_TURN_BY_A_CLOSED_SERIES_AT_EVERY_ORDER_AND_THE_SERIES_REACHES_EXACTLY_DOWN_TO_THE_CAPTURE_THRESHOLD_AT_EVERY_CHARGE_RATIO_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_AROUND_A_BODY_THE_WALKS_RAYS_MATCH_THE_COMPARATORS_AT_EVERY_ORDER_EXACTLY_WHEN_ITS_TWO_CHARGES_AGREE_AND_THEY_AGREE_ONLY_WHEN_HOP_ENERGY_BALANCES_THE_SLOWED_CLOCKS_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, the rates, the ray model and the content are supplied)
+PASS: A3 landed block 110: the index n = chi^3/N = (r + a)^3/(r^2 (r - p)) (T1), the turn's third order (4/3)(nu1^3 + 6 nu1 nu2 + 3 nu3)/b^3 (T4) and the threshold b_c/M = 2(rho + s + 2)^3/((rho + 3)(s + 1)(rho + s + 1)) (T3)
+PASS: B1 the orbit integral: with w = u/n(u) and g(w) = log n(u(w)), du/(n sqrt(1/b^2 - w^2)) = (1 + w g'(w)) dw/sqrt(1/b^2 - w^2) and n^2/b^2 - u^2 = n^2 (1/b^2 - w^2); the '1' gives exactly the half-turn pi/2
+PASS: B2 the moments m_k = 2 int_0^1 y^k (1 - y^2)^(-1/2) dy = sqrt(pi) Gamma((k+1)/2)/Gamma(k/2 + 1) = 2, pi/2, 4/3, 3pi/8, 16/15, 5pi/16, 32/35, 35pi/128 (k = 1..8), integrated exactly
+PASS: B3 for the root u(w) of u = w n(u) with u(0) = 0: [w^k] log n(u(w)) = (1/k)[u^k] n(u)^k, exactly to order 12, on five random rational indices and on the member at (a, p) = (2/7, 3/5)
+PASS: B4 the orbit integral 2 int_0^u0 du/sqrt(n^2/b^2 - u^2) expanded directly in 1/b for n = 1 + nu1 u + ... + nu5 u^5 (turning point x0 = n(x0/b), exact rational integrals in tan(theta/2)): the (1/b)^k coefficient is m_k [u^k] n^k for k = 1..5; orders 1-3 are landed block 110 T4's; order 4 is (3pi/8)(nu1^4 + 12 nu1^2 nu2 + 12 nu1 nu3 + 6 nu2^2 + 4 nu4)
+PASS: C1 the member: [u^k] ((1 + a u)^3/(1 - p u))^k = sum_j C(3k, k - j) C(k + j - 1, j) a^(k-j) p^j for k = 1..8
+PASS: C2 m_k [u^k] n^k reproduces landed block 110 T4's four coefficients 2(3a + p), (3pi/2)(5a^2 + 4ap + p^2), (8/3)(42a^3 + 54a^2 p + 27ap^2 + 5p^3), (15pi/8)(99a^4 + ... + 7p^4)
+PASS: C3 at equal charges a = p = M/2 the series is 4, 15pi/4, 128/3, 3465pi/64, 3584/5, 255255pi/256 times (M/b)^k, k = 1..6
+PASS: C4 for the index e^(kappa u) the closed series gives landed block 110 T5's c_k = sqrt(pi) k^k Gamma((k+1)/2)/(k! Gamma(k/2+1)) kappa^k, k = 1..8
+PASS: C5 at a fixed first-order turn (3a + p = 2M, rho = p/a): second order 6pi(5 + 4rho + rho^2)/(3 + rho)^2 (landed); third order (64/3)(42 + 54rho + 27rho^2 + 5rho^3)/(3 + rho)^3 (M/b)^3, slope 384(rho + 1)(rho + 2)/(3 + rho)^4 > 0, from 896/27 through 128/3 at rho = 1 to 320/3
+PASS: D1 turning points solve E_b(u) = (1 + a u)^3 - b u (1 - p u) = 0; Disc_u E_b = -b^2 [27a^2 (a + p)^2 + (4p^3 + 6ap^2 - 6a^2 p - 4a^3) b - p^2 b^2]
+PASS: D2 for p > 0 the bracket's two roots in b have product -27a^2 (a + p)^2/p^2 < 0, so exactly one is positive; at p = 0 the bracket is linear with root 27a/4
+PASS: D3 landed block 110 T3's b_c/M = 2(rho + s + 2)^3/((rho + 3)(s + 1)(rho + s + 1)), s^2 = rho^2 + rho + 1, is that positive root (the bracket reduces to 0)
+PASS: D4 at b = b_c = f(r*), r* = a + p + S, S = sqrt(a^2 + ap + p^2), the cubic has the double root u* = 1/r* (the circular ray), and 1/p - u* = (a + S)/(p(a + p + S)) > 0
+PASS: D5 b_c/M = 9/2, 4 sqrt7 - 40/7, 3 sqrt3, (70 + 26 sqrt13)/27 at rho = 0, 1/2, 1, 3, tending to 8
+PASS: E1 the coefficients: [u^k] n^k is a polynomial in (a, p) with positive coefficients (k = 1..12; in general, (1 + a u)^(3k) and (1 - p u)^(-k) have nonnegative coefficients), so lambda_k = (1/k)[u^k] n^k >= 0 whenever a, p >= 0
+PASS: E2 w(u) = u(1 - p u)/(1 + a u)^3 = 1/(r n) has w'(u) = q(u)/(1 + a u)^4, q = 1 - 2(a + p)u + a p u^2, with roots u* = 1/(a + p + S) and u- = 1/(a + p - S) ((a + p)^2 - S^2 = ap >= 0), so q > 0 on [0, u*) and w rises there to w(u*) = 1/b_c
+PASS: E3 d log n/du = 3a/(1 + a u) + p/(1 - p u) > 0 on [0, 1/p), which contains [0, u*] (D4)
+PASS: E4 at the stationary point, a + p - a p u* = S exactly, so q'(u*) = -2S and w''(u*) = -2S/(1 + a u*)^4 < 0: u(w) - u* ~ -c sqrt(w* - w) with c > 0, and g'(w) = (d log n/du) u'(w) is unbounded as w -> w* = 1/b_c
+PASS: E5 exact evidence: at rho = 0, 1/2, 1, 3 (M = 1) every ratio lambda_{k+1}/lambda_k for 10 <= k <= 80 lies in [b_c(1 - 3/(2k)), b_c), the window of a square-root singularity at w = 1/b_c (compared exactly with 9/2, 4 sqrt7 - 40/7, 3 sqrt3, (70 + 26 sqrt13)/27)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the substitution w = u/n(u) for an arbitrary index; the moments m_k integrated exactly
+per_site: executed - the inversion identity to order 12 on six rational indices; the direct expansion to order 5
+per_mode: executed - the member's coefficients to k = 8 and k = 12; the discriminant and its positive root
+per_block: executed - the stationary points of w, the sign of d log n/du, w''(u*); exact coefficient ratios to k = 81 at four charge ratios
+lattice_wide: checked and not executed - lattice corrections to the exterior and finite wave numbers (block 110's model is continuum and long-wave)
+PASS: G1 the five N5 resolution lines are printed
+scope: block 110's continuum exterior and long-wave ray model: the turn is sum_k m_k [u^k] n^k b^-k at every order; for the member its radius in 1/b is exactly 1/b_c at every charge ratio; the third-order term at a fixed first-order turn rises with rho; harvest of #9231 (confirmed by #9326); nothing adopted (34s)
+TOTAL: PASS=27 FAIL=0
+
+----- stderr -----
+

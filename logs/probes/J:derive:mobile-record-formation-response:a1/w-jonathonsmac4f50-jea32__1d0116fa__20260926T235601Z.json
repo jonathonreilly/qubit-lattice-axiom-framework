@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:mobile-record-formation-response:a1",
+ "type": "judgment",
+ "lane": "mobile-record-research",
+ "worker": "w-jonathonsmac4f50-jea32",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/mobile-record-formation-response/w-jonathonsmac4f50-jea32/check.py",
+ "seed": 66961,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "1d0116fa",
+ "started_utc": "20260926T235601Z",
+ "elapsed_s": 17.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PARTIAL (cross-family recovery, no defect found) - the decisive finite facts reproduce exactly: six-site event law 2701/53880 vs static 73/1440 (ratio 444/449), the finite-epsilon value at 1/1000, D2 = 14/5, 224/5, 0 and the torus formula (d = 1, 2 exact; 2379/5 per volume in d = 3), and the generator-power identities giving the epsilon^4 t^5 coefficient 2 kappa eps^4 D2/5! symbolically; the note's volume-uniform short-time remainder is re-derived; the finite-intensity all-time response bound and all-time monotonicity remain open (small-graph search found no sign change)"
+ },
+ "review": "Own plan: independent recovery of the decisive finite facts with disjoint code: six-site slow class process from BFS motion classes (2701/53880 vs 73/1440, ratio 444/449), finite-eps exact value via killed resolvent (static entry law proved), D2 brute force + edge reduction + torus formula (d=1,2 exact), symbolic generator-power identities on the path, float screens of the eps^4 closed form and of all-time monotonicity (no sign change on small graphs). No defect; research target open. Cross-family (Claude on Codex).",
+ "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Establish a volume-uniform finite-intensity population response bound for the supplied vacancy-hop process, or an explicit finite counterexample to all-time mobility monotonicity. Start from the hazard-resolvent and epsilon-four coefficient, not the withdrawn static-ensemble substitution. Keep the finite-graph rare-birth limit, fixed-time epsilon expansion and infinite-volume limits separate. Recheck the positive formation-floor and product-initial-law hypotheses before using fixation or terminal correlation decay. Decisive first check and completion: Recover the exact six-site dynamic/static ratio and the Dirichlet-energy population coefficient independently; test a small exact generator at finite epsilon. Record whether a uniform remainder is established, fails with a witness, or remains open. Related tasks: J:derive:deferred-20260924-formation-packets:a1.",
+ "stdout_sha256": "67f9a71cf3f2079727809e702a9dfac817e97e53a3d495935f7e3f94858a96c7",
+ "stdout_tail": "per volume :: 174/5, 203/5, 232/5, 20952/5, 28518/5\nPASS F4 exact full-generator powers on the path of 3 (343 states, symbolic kappa, epsilon): delta0 L^k = eps^k delta0 B^k for k <= 3, delta0 L^4 = eps^4 delta0 B^4 + kappa eps^3 delta0 B^3 H, and delta0 L^5 N - eps^5 delta0 B^5 N = 2 kappa eps^4 D2 = 28 kappa eps^4/5 :: 28*epsilon**4*kappa/5\n== S float screens\nPASS S1 (float) the epsilon^4 coefficient of E_kappa[N_t] - E_0[N_t] on the path (Richardson at eps = 2e-3, 1e-3) matches the closed form (t^4/3)[(9/8)psi(8 kappa t/5) + (3/4)psi(4 kappa t/3)] :: [(0.5, 1.0, np.float64(0.02069), 0.0207), (2.0, 2.0, np.float64(1.42875), 1.42924)]\nPASS S2 (float screen, not a no-go) E_kappa[N_t] >= E_0[N_t] on t <= 8 for the path of 3, the star and the 4-cycle, three row-six menus, kappa = 1 and 50 (no finite counterexample to all-time mobility monotonicity found) :: smallest difference -2.35e-14\n== done in 17s\nSUMMARY: PARTIAL (cross-family recovery, no defect found) - the decisive finite facts reproduce exactly: six-site event law 2701/53880 vs static 73/1440 (ratio 444/449), the finite-epsilon value at 1/1000, D2 = 14/5, 224/5, 0 and the torus formula (d = 1, 2 exact; 2379/5 per volume in d = 3), and the generator-power identities giving the epsilon^4 t^5 coefficient 2 kappa eps^4 D2/5! symbolically; the note's volume-uniform short-time remainder is re-derived; the finite-intensity all-time response bound and all-time monotonicity remain open (small-graph search found no sign change)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jea32",
+  "at_utc": "20260926T235619Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

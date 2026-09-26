@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260925-band-gauge-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8964",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260925-band-gauge/referee_w-macbookpro90c72-j8964/check.py",
+ "seed": 44442,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "23146a92",
+ "started_utc": "20260926T174042Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. In every translation-invariant gauge sector the auxiliary Bloch operator of N20 has exactly two zero bands and every other energy at least 0.6079 in eight sectors and 0.7858 in the other eight. N16 has exactly four zero bands and every other energy at least 1.4333 in all eight sectors. The three sampled minima sit at most 0.6179, 0.7959 and 1.4368. Non-periodic gauge fields and the physical projection were not treated."
+ },
+ "review": "In every translation-invariant gauge sector N20 has exactly two zero bands and every other energy at least 0.6079 or 0.7858, and N16 has exactly four zero bands and every other energy at least 1.4333. The sampled minima sit at most 0.6179, 0.7959 and 1.4368.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260925-band-gauge:a1/; its files are probes/work/derive/deferred-20260925-band-gauge/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260925-band-gauge/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "361a6c6bebca60560812e8604999fb391c53b91c8178971d83f23945f020b0f0",
+ "stdout_tail": "PASS structure: both nets are bipartite with one or two structural zero singular values, and the quotient cycle ranks are 4 and 3\n  N20: 16 sectors certified\n  N16: 8 sectors certified\nPASS lower bounds: N20 is at least 0.6079 in eight sectors and 0.7858 in eight; N16 is at least 1.4333 in all eight\n  upper N20 (-1, 1, -1, 1): 0.617873 <= 0.6179\n  upper N20 (1, 1, 1, 1): 0.795865 <= 0.7959\n  upper N16 (-1, 1, 1): 1.436791 <= 1.4368\nPASS upper bounds: the three minimising momenta lie at most 0.6179, 0.7959 and 1.4368\nPASS lift cycle: the N16 lift contains a simple 28-edge cycle, so it is not a tree\nSUMMARY: confirmed partial. In every translation-invariant gauge sector the auxiliary Bloch operator of N20 has exactly two zero bands and every other energy at least 0.6079 in eight sectors and 0.7858 in the other eight. N16 has exactly four zero bands and every other energy at least 1.4333 in all eight sectors. The three sampled minima sit at most 0.6179, 0.7959 and 1.4368. Non-periodic gauge fields and the physical projection were not treated.\nHIT: confirmed - the N20 and N16 compass carvings have uniform band gaps in every translation-invariant gauge sector, with the stated zero-band counts and lower bounds\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8964",
+  "at_utc": "20260926T174053Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "N20 has exactly two zero bands and a uniform gap of 0.6079 or 0.7858 in every translation-invariant sector. N16 has exactly four zero bands and a gap of 1.4333. Non-periodic gauges were not treated.",
+  "by": "w-macbookpro90c72-j8964",
+  "at_utc": "20260926T174053Z"
+ }
+}

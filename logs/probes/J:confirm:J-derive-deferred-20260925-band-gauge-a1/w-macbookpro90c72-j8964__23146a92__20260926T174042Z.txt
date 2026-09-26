@@ -1,0 +1,11 @@
+PASS structure: both nets are bipartite with one or two structural zero singular values, and the quotient cycle ranks are 4 and 3
+  N20: 16 sectors certified
+  N16: 8 sectors certified
+PASS lower bounds: N20 is at least 0.6079 in eight sectors and 0.7858 in eight; N16 is at least 1.4333 in all eight
+  upper N20 (-1, 1, -1, 1): 0.617873 <= 0.6179
+  upper N20 (1, 1, 1, 1): 0.795865 <= 0.7959
+  upper N16 (-1, 1, 1): 1.436791 <= 1.4368
+PASS upper bounds: the three minimising momenta lie at most 0.6179, 0.7959 and 1.4368
+PASS lift cycle: the N16 lift contains a simple 28-edge cycle, so it is not a tree
+SUMMARY: confirmed partial. In every translation-invariant gauge sector the auxiliary Bloch operator of N20 has exactly two zero bands and every other energy at least 0.6079 in eight sectors and 0.7858 in the other eight. N16 has exactly four zero bands and every other energy at least 1.4333 in all eight sectors. The three sampled minima sit at most 0.6179, 0.7959 and 1.4368. Non-periodic gauge fields and the physical projection were not treated.
+HIT: confirmed - the N20 and N16 compass carvings have uniform band gaps in every translation-invariant gauge sector, with the stated zero-band counts and lower bounds

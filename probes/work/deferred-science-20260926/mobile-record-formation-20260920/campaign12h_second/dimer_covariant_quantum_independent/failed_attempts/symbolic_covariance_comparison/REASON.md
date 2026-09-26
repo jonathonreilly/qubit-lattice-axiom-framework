@@ -1,0 +1,1 @@
+The first independent run completed encoding controls, then used structural matrix equality for a symbolic Gram identity. The difference simplifies exactly to zero and the eigenvalues already match. Only that assertion is changed to an exact simplified-difference test; matrices, assumptions and expected spectrum remain unchanged.

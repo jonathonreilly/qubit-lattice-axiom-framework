@@ -1,0 +1,141 @@
+{
+  "Git_PR_audit_actions": false,
+  "additional_agents": false,
+  "artifacts": [
+    {
+      "bytes": 507,
+      "path": "ATTEMPT_01_RECEIPT.json",
+      "sha256": "d7e7c6eadd3ca819792b8b2e7aa1348a685d8647cf9f5756cf0dd7c3de15b85f"
+    },
+    {
+      "bytes": 751,
+      "path": "CHECKPOINT.md",
+      "sha256": "44fd404796489d350d9c03daa2e8322c13a9aa0d10530cadabdf8cff4529c80a"
+    },
+    {
+      "bytes": 718,
+      "path": "EXTERNAL_SOURCE.json",
+      "sha256": "77597d59d44c0b74fbb7c2522f172a3a901c53b1997ca8fbd0aa8c2f59ffeba8"
+    },
+    {
+      "bytes": 1427,
+      "path": "INDEPENDENT_CHECK.log",
+      "sha256": "55fbd2e959d3369d26a6c7d1aa3c1ffbe41e19ebb07899654aa215ee01605faa"
+    },
+    {
+      "bytes": 2655,
+      "path": "INDEPENDENT_RESULTS.json",
+      "sha256": "4c14526d0507bece4fa702da358934b9407392284cfaab364a8a010f1e27107f"
+    },
+    {
+      "bytes": 4407,
+      "path": "PRE_CHECKER_SEAL.json",
+      "sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045"
+    },
+    {
+      "bytes": 12294,
+      "path": "PROVISIONAL_REVIEW.md",
+      "sha256": "f2d3f17383090ce982e9324d921272b794f1d005917f5527a058caecf0a76be4"
+    },
+    {
+      "bytes": 12091,
+      "path": "REPORT.md",
+      "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+    },
+    {
+      "bytes": 2246,
+      "path": "SOURCE_COMPARISON.json",
+      "sha256": "321e5c53a7bbaeaff4125d308a7d06bee8c27dcaff38c8ea791a5bce4aad6017"
+    },
+    {
+      "bytes": 191795,
+      "path": "UELTSCHI_math-ph_0304003v3.pdf",
+      "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc"
+    },
+    {
+      "bytes": 2292,
+      "path": "attempt_01_INDEPENDENT_CHECK.log",
+      "sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787"
+    },
+    {
+      "bytes": 9034,
+      "path": "attempt_01_independent_check.py",
+      "sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a"
+    },
+    {
+      "bytes": 9070,
+      "path": "independent_check.py",
+      "sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff"
+    }
+  ],
+  "created_utc": "2026-09-21T08:44:53.012605+00:00",
+  "disposition": "The stated periodic E/B theorem is supported. Clarify norm factors for general bounded site observables and the global/boundary Gauss convention in the vacant-box extension.",
+  "external_source": {
+    "bytes": 191795,
+    "content_type": "application/pdf",
+    "downloaded_utc": "2026-09-21T08:28:05.770380+00:00",
+    "read_boundary": "Title/version and Section 2, including Theorem 1, definitions (1)-(2), assumptions (3), bounds (4)-(5), and its complete proof through (13), pages 1-4. Not relying on Section 3 or its correlation theorems.",
+    "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc",
+    "url_requested": "https://arxiv.org/pdf/math-ph/0304003v3",
+    "url_returned": "https://arxiv.org/pdf/math-ph/0304003v3",
+    "version": "arXiv:math-ph/0304003v3, 18 February 2005",
+    "web_verification": "The same version and Section 2 were read through the web tool before local preservation."
+  },
+  "independent_groups": 11,
+  "instruction_identities": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  ],
+  "pre_checker_seal_sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045",
+  "preserved_failed_attempts": [
+    "attempt_01_independent_check.py",
+    "attempt_01_INDEPENDENT_CHECK.log",
+    "ATTEMPT_01_RECEIPT.json"
+  ],
+  "primary_checker_executed": false,
+  "primary_recorded_groups": 10,
+  "production_edits": false,
+  "scope": "Bounded independent mathematical proof review with pre-checker seal and complete authorized-source comparison; no audit verdict.",
+  "source_identities": [
+    {
+      "bytes": 16105,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+    },
+    {
+      "bytes": 11623,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "bytes": 12493,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    {
+      "bytes": 3931,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+      "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf"
+    },
+    {
+      "bytes": 8291,
+      "lines": 156,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_polymer_check.py",
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    {
+      "bytes": 4377,
+      "lines": 175,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RESULTS.json",
+      "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b"
+    }
+  ]
+}

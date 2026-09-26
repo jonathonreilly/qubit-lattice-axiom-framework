@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T19:58:47.804063+00:00",
+  "before_sha256": "dc76f4254177a8587d4fa3f22eb051c6ca17017107916dabed0b237920539600",
+  "after_sha256": "106f126b17231b6a859cb5c47ee59ff969a32b299244524e152b43ecbce8e468",
+  "reason": "Replace explicitly pending patch with complete exact Gram certificate and honest execution coverage."
+}

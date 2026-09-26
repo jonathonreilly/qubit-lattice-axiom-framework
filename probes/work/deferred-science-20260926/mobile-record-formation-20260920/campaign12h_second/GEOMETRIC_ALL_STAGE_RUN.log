@@ -1,0 +1,8 @@
+{"group": "connectivity", "passed": true}
+{"group": "counting_progress", "vertices": 2, "graphs": 1, "injective_triples": 1}
+{"group": "counting_progress", "vertices": 4, "graphs": 34, "injective_triples": 276}
+{"group": "counting_progress", "vertices": 6, "graphs": 24298, "injective_triples": 2291040}
+{"group": "counting", "passed": true}
+{"group": "clock", "passed": true}
+{"group": "comparison", "passed": true}
+PASS: four complete all-stage control groups

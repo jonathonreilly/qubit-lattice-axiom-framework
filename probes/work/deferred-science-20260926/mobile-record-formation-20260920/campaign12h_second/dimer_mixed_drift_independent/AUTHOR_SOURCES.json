@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-22T00:06:10.466244+00:00",
+  "boundary": "Author files accessed only after independent pre-comparison seal and supplied hashes. No separate author command receipt exists; only streams and source-bound output are authenticated.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_mixed_encoding_drift_ambiguity_check.py",
+      "bytes": 2914,
+      "sha256": "c6dfe27f6d0b09e8f505dc2da488904858c157e456d83a4967ae5ad5170786e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY_RESULTS.json",
+      "bytes": 992,
+      "sha256": "ef373d0981c92419e7a7a6c53bbf5106890f171dabb935b3310aeb6a6d247736"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_DRIFT_AMBIGUITY_RUN.log",
+      "bytes": 902,
+      "sha256": "bd5f6cc983dd931265eeb68174e06c0833244fa1a7f84df94efe036500511551"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_DRIFT_AMBIGUITY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

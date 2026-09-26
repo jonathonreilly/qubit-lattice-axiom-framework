@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-23T18:26:58.602172+00:00",
+  "seal_sha256": "97aa84106b6ca88adcb4bd4c6286ada6d24087740da767fded03485590df495b",
+  "bindings": {
+    "sources": 10,
+    "artifacts": 34
+  },
+  "errors": [],
+  "coverage": "Complete independent report read by root; scientific script read continues separately. Root read no checker files before this PRE freeze. Initial generic verifier expected a flat sources list; this corrected reader handles the nested sources record. No scientific source changed."
+}

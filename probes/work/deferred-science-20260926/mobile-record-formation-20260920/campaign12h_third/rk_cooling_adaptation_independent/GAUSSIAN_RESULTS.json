@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-09-22T19:19:11.857937+00:00",
+  "script_sha256": "d47601ad4f2e753e1d17e9d3d9a70d75e9b52bcb1ed896f25e9ffd094b4f15b9",
+  "exact_Weyl_dual_generator_checks": [
+    "q",
+    "p",
+    "q2",
+    "p2",
+    "symmetric_qp"
+  ],
+  "generic_covariance": [
+    [
+      "a*(a/r - b*r)/(4*a*b + g**2) + r/2",
+      "g*(a/r - b*r)/(8*a*b + 2*g**2)"
+    ],
+    [
+      "g*(a/r - b*r)/(8*a*b + 2*g**2)",
+      "-b*(a/r - b*r)/(4*a*b + g**2) + 1/(2*r)"
+    ]
+  ],
+  "generic_determinant": "(a**2 + 2*a*b*r**2 + b**2*r**4 + g**2*r**2)/(4*r**2*(4*a*b + g**2))",
+  "generic_energy": "(a + b*r**2)/(4*r)",
+  "generic_reference_occupation": "(a**2 - 2*a*b*r**2 + b**2*r**4)/(2*r**2*(4*a*b + g**2))",
+  "stationary_physical_parameters": {
+    "Q": "sqrt(K)*(-K*U + 2*K*(U + W*soft) + gamma**2*soft/2)/(sqrt(W)*(4*K*(U + W*soft) + gamma**2*soft))",
+    "P": "(K*U*(U + W*soft) + W*soft*(4*K*(U + W*soft) + gamma**2*soft)/2)/(sqrt(K)*sqrt(W)*soft*(4*K*(U + W*soft) + gamma**2*soft))",
+    "C": "-sqrt(K)*U*gamma/(2*sqrt(W)*(4*K*(U + W*soft) + gamma**2*soft))",
+    "purity": "sqrt(W)*sqrt(soft)*sqrt(4*K*(U + W*soft) + gamma**2*soft)/sqrt(K*U**2 + W*soft*(4*K*(U + W*soft) + gamma**2*soft))",
+    "energy": "sqrt(K)*(U + 2*W*soft)/(4*sqrt(W))",
+    "Hamiltonian_quanta": "U/(4*sqrt(W)*sqrt(soft)*sqrt(U + W*soft)) + sqrt(W)*sqrt(soft)/(2*sqrt(U + W*soft)) - 1/2",
+    "reference_quanta": "K*U**2/(2*W*soft*(4*K*U + 4*K*W*soft + gamma**2*soft))",
+    "jump_intensity": "K*U**2*gamma/(2*W*(4*K*U + 4*K*W*soft + gamma**2*soft))"
+  },
+  "positive_U_soft_limits": {
+    "Q": "sqrt(K)/(4*sqrt(W))",
+    "soft_times_P": "U/(4*sqrt(K)*sqrt(W))",
+    "C": "-gamma/(8*sqrt(K)*sqrt(W))",
+    "purity_over_sqrt_soft": "2*sqrt(W)/sqrt(U)",
+    "energy": "sqrt(K)*U/(4*sqrt(W))",
+    "sqrt_soft_times_Hamiltonian_quanta": "sqrt(U)/(4*sqrt(W))",
+    "soft_times_reference_quanta": "U/(8*W)",
+    "jump_intensity": "U*gamma/(8*W)"
+  },
+  "U_zero_control": {
+    "Q": "sqrt(K)/(2*sqrt(W))",
+    "P": "sqrt(W)/(2*sqrt(K))",
+    "C": "0",
+    "purity": "1",
+    "energy": "sqrt(K)*sqrt(W)*soft/2",
+    "Hamiltonian_quanta": "0",
+    "reference_quanta": "0",
+    "jump_intensity": "0"
+  },
+  "exact_example_parameters": {
+    "K": "4",
+    "W": "1",
+    "U": "3",
+    "gamma": "2",
+    "soft": "1/5"
+  },
+  "exact_example": {
+    "Q": "7/13",
+    "P": "109/52",
+    "C": "-3/26",
+    "purity": "sqrt(754)/58",
+    "energy": "17/10",
+    "Hamiltonian_quanta": "9/16",
+    "reference_quanta": "45/26",
+    "jump_intensity": "9/13"
+  },
+  "retuned_covariance": [
+    [
+      "sqrt(a)/(2*sqrt(b))",
+      "0"
+    ],
+    [
+      "0",
+      "sqrt(b)/(2*sqrt(a))"
+    ]
+  ],
+  "retuned_purity": 1,
+  "retuned_jump_intensity": 0,
+  "limits": "A separately stipulated stable Gaussian Lindblad mode; no microscopic derivation or interchange of long-time and soft-mode limits.",
+  "runtime_seconds": 0.6377473340835422
+}

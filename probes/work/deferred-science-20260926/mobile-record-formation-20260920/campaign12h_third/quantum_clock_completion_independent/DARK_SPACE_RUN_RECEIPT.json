@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/dark_space_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-22T17:49:20.611184+00:00",
+  "finished_utc": "2026-09-22T17:49:22.459878+00:00",
+  "exit_code": 0,
+  "script_sha256": "af098cf869b59f0178fb8827d0f71a7068e9df19a8dfbb223be17dbe42486b8d",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+}

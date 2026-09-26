@@ -1,0 +1,50 @@
+{
+  "algebraic_check_groups": 104,
+  "command": "python3 independent_check.py > RUN.log 2>&1",
+  "complete_results_are_run_log_suffix": true,
+  "dependencies_verified": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md",
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json",
+      "sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/PRE_SOURCE_SEAL.json",
+      "sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/PRE_SOURCE_SEAL.json",
+      "sha256": "c729b0f85e0350b834380909001ef62f0db0378fdf114b108f5feef7f6e0e8d1"
+    }
+  ],
+  "executed_source_compiles": true,
+  "exit_code": 0,
+  "failed_check_groups": 0,
+  "no_primary_source_access_before_seal": true,
+  "numerical_check_groups": 4,
+  "preserved_warning_prefix_bytes": 543,
+  "progress_lines": 108,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "scope": "Fixed finite modes/times, fixed full-support product and fixed positive floor; no empty-state or infinite-dimensional claim.",
+  "successful_check_groups": 108,
+  "utc": "2026-09-21T05:49:20.155951+00:00"
+}

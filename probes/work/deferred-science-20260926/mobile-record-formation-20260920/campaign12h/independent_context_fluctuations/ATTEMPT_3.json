@@ -1,0 +1,5 @@
+{
+  "status": "checker compared differently factored complex symbolic expressions structurally",
+  "script_sha256": "d54a61d071bcc5f803e71f8734c2d81e1a9001127d73993f97e45b189fc62b29",
+  "correction": "Use entrywise simplification of matrix differences for symbolic matrix equality; make Fourier normalization explicitly Rational(1,2)."
+}

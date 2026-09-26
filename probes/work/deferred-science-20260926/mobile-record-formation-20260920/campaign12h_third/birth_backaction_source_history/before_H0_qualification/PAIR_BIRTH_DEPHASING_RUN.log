@@ -1,0 +1,140 @@
+{
+  "created_utc": "2026-09-22T14:29:23.057332+00:00",
+  "status": "author_exact_finite_controls_independent_check_pending",
+  "script_sha256": "dbb3cc7cea1fbf5ecb575df47c428cbe039935925ae57a6dfaacfd873d779b62",
+  "symbolic_waiting": {
+    "holes_basis": [
+      3,
+      5,
+      6,
+      9,
+      10,
+      12
+    ],
+    "opposite_pair_indices": [
+      1,
+      4
+    ],
+    "mean_from_dark_state": "1/(2*beta + 4*d) + 1/(beta + d) + (beta + 2*d)/(16*kappa**2) + 1/d + 3/(2*beta)",
+    "at_unit_parameters": "161/48",
+    "complete_symbolic_transient_density_equation_exact": true,
+    "small_d_times_mean": "1",
+    "large_d_mean_over_d": "1/(8*kappa^2)",
+    "large_beta_mean_over_beta": "1/(16*kappa^2)",
+    "conditions": "kappa>0, beta>0, d>0; pair birth beta on every cycle edge; local dephasing d at every site"
+  },
+  "stationarity": [
+    {
+      "case": "all_birth_with_monitoring",
+      "kappa": 1,
+      "d": 1,
+      "birth_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "Hilbert_even_parity_dimension": 8,
+      "Liouville_dimension": 64,
+      "exact_stationary_operator_nullity": 1,
+      "full_occupation_stationary": true,
+      "trace_preservation_exact": true
+    },
+    {
+      "case": "all_birth_without_monitoring",
+      "kappa": 1,
+      "d": 0,
+      "birth_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "Hilbert_even_parity_dimension": 8,
+      "Liouville_dimension": 64,
+      "exact_stationary_operator_nullity": 4,
+      "full_occupation_stationary": true,
+      "trace_preservation_exact": true
+    },
+    {
+      "case": "one_birth_source_with_monitoring",
+      "kappa": 1,
+      "d": 1,
+      "birth_edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "Hilbert_even_parity_dimension": 8,
+      "Liouville_dimension": 64,
+      "exact_stationary_operator_nullity": 1,
+      "full_occupation_stationary": true,
+      "trace_preservation_exact": true
+    },
+    {
+      "case": "no_birth",
+      "kappa": 1,
+      "d": 1,
+      "birth_edges": [],
+      "Hilbert_even_parity_dimension": 8,
+      "Liouville_dimension": 64,
+      "exact_stationary_operator_nullity": 3,
+      "full_occupation_stationary": true,
+      "trace_preservation_exact": true
+    },
+    {
+      "case": "no_hopping",
+      "kappa": 0,
+      "d": 1,
+      "birth_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "Hilbert_even_parity_dimension": 8,
+      "Liouville_dimension": 64,
+      "exact_stationary_operator_nullity": 3,
+      "full_occupation_stationary": true,
+      "trace_preservation_exact": true
+    }
+  ],
+  "scope": "Complete four-site even-hole sector and exact all-positive-parameter two-vacancy waiting time. General graph convergence is a separate analytic theorem; no thermodynamic or native-law claim."
+}

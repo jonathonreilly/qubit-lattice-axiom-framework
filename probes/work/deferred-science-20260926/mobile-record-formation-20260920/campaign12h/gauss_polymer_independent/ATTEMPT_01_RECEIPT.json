@@ -1,0 +1,9 @@
+{
+  "failure": "SymPy structural equality compared equivalent differently factored expressions; no mathematical counterexample.",
+  "left": "-(M - 2)/2",
+  "right": "1 - M/2",
+  "simplified_difference": "0",
+  "script_sha256": "b5e8180782e22204d1e4ec5776b3a1dcf0a7059e9f1c993fe73321d6d528e84a",
+  "log_sha256": "51fa65905c3b46089860b65f9bdc3413c35e8b89ac96cd33982d9e6382954787",
+  "correction": "Compare simplified differences to zero; remove an unrelated dead no-op loop and cache the branch adjacency."
+}

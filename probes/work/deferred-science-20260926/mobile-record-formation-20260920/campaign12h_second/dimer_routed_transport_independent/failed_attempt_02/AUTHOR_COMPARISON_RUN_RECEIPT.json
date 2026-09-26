@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/compare_author.py"
+  ],
+  "started_utc": "2026-09-21T18:20:47.364924+00:00",
+  "ended_utc": "2026-09-21T18:20:48.345336+00:00",
+  "elapsed_seconds": 0.9798838328570127,
+  "returncode": 1,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "9e94763af381af6e13e1df50ef0a15f626c827a87706a213f8c933abd31eb95b"
+}

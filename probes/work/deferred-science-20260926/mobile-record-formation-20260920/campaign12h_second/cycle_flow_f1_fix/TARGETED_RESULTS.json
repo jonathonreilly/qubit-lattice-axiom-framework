@@ -1,0 +1,334 @@
+{
+  "source_sha256": "0f408c7ccd9d5dafdf2df0d639b7f99f73461992485fa5e2510af381e2f6da2d",
+  "receipts": [
+    {
+      "case": "baseline",
+      "assertion_failure": null,
+      "rows": [
+        {
+          "name": "four_state_cycle_preserves_gauss_capacity_and_record_contents",
+          "pass": true,
+          "distinct_states": 4,
+          "record_count": 8,
+          "cycle_length": 4
+        },
+        {
+          "name": "nonuniform_weights_preserved_by_common_gauss_cycle_flow",
+          "pass": true,
+          "pi": [
+            "1/11",
+            "2/11",
+            "3/11",
+            "5/11"
+          ],
+          "rates": [
+            "1",
+            "1/2",
+            "1/3",
+            "1/5"
+          ]
+        },
+        {
+          "name": "conservative_local_fourier_increment_bound",
+          "pass": true,
+          "cases": [
+            {
+              "N": 9,
+              "species": "E",
+              "increment_norm": 0.17422513360879902,
+              "bound": 0.5066863526565389,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "B",
+              "increment_norm": 0.17422513360879902,
+              "bound": 1.6022829337179703,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "E",
+              "increment_norm": 0.17422513360879902,
+              "bound": 0.5066863526565389,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 9,
+              "species": "B",
+              "increment_norm": 0.17422513360879902,
+              "bound": 1.6022829337179703,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "E",
+              "increment_norm": 0.043624187915957215,
+              "bound": 0.10332922619744236,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "B",
+              "increment_norm": 0.04362418791595723,
+              "bound": 0.32675570364665724,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "E",
+              "increment_norm": 0.043624187915957215,
+              "bound": 0.10332922619744236,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 17,
+              "species": "B",
+              "increment_norm": 0.04362418791595723,
+              "bound": 0.32675570364665724,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "E",
+              "increment_norm": 0.008800352489593094,
+              "bound": 0.019681610409340442,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "B",
+              "increment_norm": 0.008800352489593093,
+              "bound": 0.06223871691359471,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "E",
+              "increment_norm": 0.008800352489593094,
+              "bound": 0.019681610409340442,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 33,
+              "species": "B",
+              "increment_norm": 0.008800352489593093,
+              "bound": 0.06223871691359471,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "E",
+              "increment_norm": 0.0016411213227779339,
+              "bound": 0.0036146153531431647,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "B",
+              "increment_norm": 0.001641121322777934,
+              "bound": 0.011430417381346267,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "E",
+              "increment_norm": 0.0016411213227779339,
+              "bound": 0.0036146153531431647,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 65,
+              "species": "B",
+              "increment_norm": 0.001641121322777934,
+              "bound": 0.011430417381346267,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "E",
+              "increment_norm": 0.0002969386087892592,
+              "bound": 0.0006514351745440998,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "B",
+              "increment_norm": 0.0002969386087892592,
+              "bound": 0.0020600188995086957,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "E",
+              "increment_norm": 0.0002969386087892592,
+              "bound": 0.0006514351745440998,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "B",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "E",
+              "increment_norm": 0.0,
+              "bound": 0.0,
+              "zero_content_sum": true
+            },
+            {
+              "N": 129,
+              "species": "B",
+              "increment_norm": 0.0002969386087892592,
+              "bound": 0.0020600188995086957,
+              "zero_content_sum": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "identity_mutation",
+      "assertion_failure": "four_state_cycle_preserves_gauss_capacity_and_record_contents",
+      "rows": [
+        {
+          "name": "four_state_cycle_preserves_gauss_capacity_and_record_contents",
+          "pass": false,
+          "distinct_states": 1,
+          "record_count": 8,
+          "cycle_length": 4
+        }
+      ]
+    }
+  ],
+  "scope": "Only affected loop assertions rerun; original independent report and complete author run preserved unchanged."
+}

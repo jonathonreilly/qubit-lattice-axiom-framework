@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-21T11:13:23.779055+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WINDING_STIFFNESS_FOLLOWUP_PLAN.md",
+    "bytes": 2477,
+    "sha256": "a7713f111bcaf62f59c3664f7714ab5846af8d88729846535a0184347ff2956d"
+  },
+  "dependency": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/FINAL_SEAL.json",
+    "bytes": 63781,
+    "sha256": "f784d85cf1cb5b7eb0986c043564f157ce477a24755e814aeecc57668e6c33f6"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK.stdout",
+      "bytes": 1246,
+      "sha256": "8fe90cbe8a6f75096ce4c9d3bd15f15ad12e439ca9b643c1d0d8886e971c96a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK_RESULTS.json",
+      "bytes": 1246,
+      "sha256": "8fe90cbe8a6f75096ce4c9d3bd15f15ad12e439ca9b643c1d0d8886e971c96a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/PRE_COMPARISON.md",
+      "bytes": 3245,
+      "sha256": "5f0bdf8c74f3c11c9fd7209379a584d563a408295e6b18d4df448dcb44f4fad8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/benchmark_check.py",
+      "bytes": 1337,
+      "sha256": "6b352e2be4ddd3a6da5064bdb959aab3b1b28999b890626e83d96ca459ee96c1"
+    }
+  ],
+  "new_author_script_or_results_opened": false
+}

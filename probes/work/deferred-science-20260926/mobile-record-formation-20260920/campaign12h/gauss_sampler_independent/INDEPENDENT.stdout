@@ -1,0 +1,108 @@
+{
+  "source_sha256": "8ab6b63a07cb6440fcd75554ff76ade3f9bd37fa332b7e027b73730cd02f897d",
+  "checks": [
+    {
+      "name": "square_extended_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "square_extended_detailed_balance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "closed_uniform_endpoint_relocation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "composed_kernel_stationarity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_closed_trace_stationarity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "trace_rows_include_self_transitions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "three_square_closed_field_weights",
+      "passed": true,
+      "detail": {
+        "(-1, -1, -1, -1)": "16/33",
+        "(0, 0, 0, 0)": "1/33",
+        "(1, 1, 1, 1)": "16/33"
+      }
+    },
+    {
+      "name": "dropping_closed_field_self_visits_biases_target",
+      "passed": true,
+      "detail": {
+        "target": [
+          "16/33",
+          "1/33",
+          "16/33"
+        ],
+        "jump_stationary": [
+          "1/4",
+          "1/2",
+          "1/4"
+        ]
+      }
+    },
+    {
+      "name": "square_extended_accessibility",
+      "passed": true,
+      "detail": {
+        "extended_states": 36,
+        "closed_states_with_tail": 12
+      }
+    },
+    {
+      "name": "all_eight_even_torus_staggering_identities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "adjoint_cross_gram_order_and_conjugation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "adjoint_maxwell_six_field_spectrum",
+      "passed": true,
+      "detail": {
+        "charpoly": "lambda**2*(lambda**2 + 8)**2"
+      }
+    },
+    {
+      "name": "adjoint_single_zero_and_centered_eight_corners",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "square_field_trace": [
+    [
+      "59/60",
+      "1/60",
+      "0"
+    ],
+    [
+      "4/15",
+      "7/15",
+      "4/15"
+    ],
+    [
+      "0",
+      "1/60",
+      "59/60"
+    ]
+  ],
+  "scope": "Exact reduced square-cycle sampler control and operator algebra; not a full cubic sampler equivalence or production mixing test."
+}

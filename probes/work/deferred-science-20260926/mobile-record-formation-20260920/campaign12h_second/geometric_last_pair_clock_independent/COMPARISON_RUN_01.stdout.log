@@ -1,0 +1,67 @@
+{
+  "authentication": {
+    "preseal_artifacts_unchanged": 11,
+    "author_groups": 3,
+    "four_source_bindings_match": true,
+    "recorded_log_matches_results": true,
+    "stderr_empty": true,
+    "author_runner_imported_or_executed": false
+  },
+  "generic_fixture": {
+    "joint_Laplace_limit_per_target": "1/(3*s+2)",
+    "scaled_first_moment_limits": [
+      "3/2",
+      "3/2",
+      "3/2"
+    ],
+    "scaled_second_moment_limits": [
+      "9/2",
+      "9/2",
+      "9/2"
+    ],
+    "two_state_countercontrol_confirmed": true,
+    "method": "First and second derivatives of the joint transform; no author implementation import."
+  },
+  "cube_receipts": [
+    {
+      "beta": "1",
+      "stationary_mean": "290/231",
+      "maximum_scaled_error": "23/126"
+    },
+    {
+      "beta": "1/10",
+      "stationary_mean": "24671/2013",
+      "maximum_scaled_error": "203/10980"
+    },
+    {
+      "beta": "1/100",
+      "stationary_mean": "2424701/19833",
+      "maximum_scaled_error": "2003/1081800"
+    }
+  ],
+  "monomer_receipts": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "Z": 9,
+      "near_matchings": 44,
+      "all_origin_ratios_match": true,
+      "method": "Independent minimum-vertex matching-polynomial and removed-vertex recursion; no permanent-minor author code import."
+    },
+    {
+      "shape": [
+        4,
+        4,
+        1
+      ],
+      "Z": 272,
+      "near_matchings": 3712,
+      "all_origin_ratios_match": true,
+      "method": "Independent minimum-vertex matching-polynomial and removed-vertex recursion; no permanent-minor author code import."
+    }
+  ],
+  "limits": "No numerical control verifies the external d>2 theorem. Its definitions/statements/hypotheses were checked separately against authenticated primary sources; its full proof was not independently verified."
+}

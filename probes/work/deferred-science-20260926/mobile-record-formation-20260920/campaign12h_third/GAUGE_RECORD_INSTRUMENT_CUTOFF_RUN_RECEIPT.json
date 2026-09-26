@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_instrument_cutoff_check.py"
+  ],
+  "started_utc": "2026-09-22T17:38:24.430599+00:00",
+  "completed_utc": "2026-09-22T17:38:25.701757+00:00",
+  "returncode": 0,
+  "script_sha256": "f1ddf4ff9868f91c6d2ffab81f7b64bb15ebef82b7b4c71254745c4384287759"
+}

@@ -1,0 +1,52 @@
+{
+  "sealed_at_utc": "2026-09-21T02:02:21.649459+00:00",
+  "scientific_check_only": true,
+  "pre_source_independence": "Derived only from the supplied quantum-interface specification and standard CP quantum operations. No new primary campaign calculation, primary file with QUANTUM/quantum in its name, or other primary quantum-interface source was read. No result from the primary author was supplied before this seal.",
+  "input_source": {
+    "path": "INPUT.md",
+    "sha256": "3d97c8d686d9afb5c71e314a5ca27d82c28f48520465a3c6b4f39e14a39403ee",
+    "origin": "Parent task specification and its bounded postselection extension, recorded without importing author calculations."
+  },
+  "interface_hypotheses": "One unknown physical qubit per independently selectable six-axis parent preparation; no input-correlated ancilla, preparation label, or extra input copy; positive p,q,r; arbitrary instruments and deterministic recovery allowed. Uniform input average and pure-state overlap convention for parent fidelity.",
+  "artifacts_sha256": {
+    "INPUT.md": "3d97c8d686d9afb5c71e314a5ca27d82c28f48520465a3c6b4f39e14a39403ee",
+    "REPORT.md": "38be6c4c55724ae3329659cc61f605d95e507f7c3a004c5f04929e8595c75f52",
+    "RESULTS.json": "74b0719b0955d7dcf1742ba1048d075c543bcd10371f815ffc445658a5b1fbdc",
+    "RUN.log": "74b0719b0955d7dcf1742ba1048d075c543bcd10371f815ffc445658a5b1fbdc",
+    "check.py": "2d369157609cea0176bf07f81215ea50c7202dca064865cbc6040cb33e71d774"
+  },
+  "results": {
+    "exact_POVM": "p+q=2r iff",
+    "optimal_worst_row_TV": "abs((p+q)/(p+q+4r)-1/3)",
+    "maximal_average_parent_overlap_when_feasible": "(2+sqrt(1-eta^2))/3, eta=(p-q)/(p+q)",
+    "newborn_marginal_channel": "-1/3 <= (p-q)/(p+q+4r) <= 1 iff",
+    "supplied_two_parent_occurrence_rate": "For epsilon>0, realizable iff p+q=2r. Positive outcome-rate effects epsilon*(I+eta v_b.sigma) tensor (I+eta v_b.sigma).",
+    "one_parent_postselection": "Does not rescue an unrealizable kernel. Nontrivial feasible kernel forces a constant occurrence rate. Uniform kernel permits any positive rate operator.",
+    "multiparent_product_odds": "For fixed n, a nonzero instrument requires p+q=2r. For p!=q, rate lambda=c Z and R_b=c tensor_j(I+eta v_b.sigma), c>0, are forced and sufficient. Uniform odds admit any positive total rate operator."
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "exit_code": 0,
+    "versions": {
+      "python": "3.13.5",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "sympy": "1.14.0"
+    },
+    "exact_arithmetic": "Fractions and SymPy second moments, rate identities, and linearity ranks.",
+    "floating_checks": "HiGHS LP lower bounds with POVM positivity relaxed; nonnegative rate feasibility; instrument and semidefinite dual certificates.",
+    "measurement_menus": 13,
+    "parent_fidelity_cases": 5,
+    "random_conditional_instruments": 60,
+    "largest_effect_residual": 3.3306690738754696e-16,
+    "smallest_dual_certificate_eigenvalue": -2.1557936475382896e-16,
+    "numerical_certificate_tolerance": 1e-12,
+    "measurement_LP_comparison_tolerance": 1e-09,
+    "one_and_two_parent_postselection_cases": 8,
+    "three_parent_preparation_tuples": 216,
+    "three_parent_outcome_rate_checks": 1296,
+    "status": "All checks passed"
+  },
+  "scope_limits": "No full growing-process quantum realization, preservation of parents by the multiparent rate construction, classical constant-hazard waiting-time realization after backaction, imperfect label-free broadcasting optimum, zero-weight multiparent boundary classification, approximate multiparent optimization, or physics/TOE conclusion is claimed.",
+  "operations": "Writes confined to this independent directory. No primary source edit, Git/PR/audit action, delegation, external communication, or model/reasoning-effort change."
+}

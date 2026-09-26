@@ -1,0 +1,10 @@
+{
+  "original_diagnosis_sha256": "bd844ed0e2d6eab8ca45d09a6ea5c114cd37c3c5aa743aa580455868dc385646",
+  "original_failed_source_sha256": "b0dd2d89d937739735d8c0a637ec9bbde5948535096a54f4c8a5146da332360a",
+  "final_source_sha256": "3deb57afb65bb94ab73b2af0dd816e07542f4dab6e24c67aee61d8ae44209585",
+  "repair": "Add a70decimal-digit coefficient reassembly and solve when preliminary float64 Hermiticity residual is >=1e-8.",
+  "unchanged": "All physical parameters, d grid, target formulas, and original verification thresholds.",
+  "final_exit_code": 0,
+  "rerun_result": "PASS; K8,K10,K12 at d=1e-5 used high precision.",
+  "classification": "Numerical conditioning failure, not a failed exact theorem assertion."
+}

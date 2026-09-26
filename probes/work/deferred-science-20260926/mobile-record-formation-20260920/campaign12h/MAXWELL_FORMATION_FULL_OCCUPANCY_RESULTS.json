@@ -1,0 +1,116 @@
+{
+  "source_sha256": "bf087e97a146ae11d58b3de514cfa98a76d8c6e4b7c7d86ae15156144ee5636f",
+  "sympy_version": "1.14.0",
+  "checks": [
+    {
+      "name": "complete_fourteen_label_moment_basis",
+      "passed": true,
+      "detail": {
+        "determinant": "98304"
+      }
+    },
+    {
+      "name": "fixed_occupancy_linear_current_has_zero_mass_row_and_column",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_thirteen_field_linearization_retains_every_static_mode",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_occupancy_characteristic_polynomial",
+      "passed": true,
+      "detail": {
+        "polynomial": "lambda**9*(gamma**2*kx**2*r**2 - gamma**2*kx**2*r + gamma**2*ky**2*r**2 - gamma**2*ky**2*r + gamma**2*kz**2*r**2 - gamma**2*kz**2*r + 3*lambda**2)**2/9"
+      }
+    },
+    {
+      "name": "full_occupancy_entropy_symmetrizer",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_occupancy_vector_covariances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_discarded_extra_wave_modes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourteen_species_birth_Lyapunov_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vector_reaction_zero_for_arbitrary_profile",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "vector_birth_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equal_label_rescaling_has_equal_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_one_site_product_birth_trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equal_label_late_transverse_speed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "equal_time_covariance_derivative_equals_birth_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "finite_total_birth_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "transverse_propagator_derivative_and_cross_sign",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "propagator_unitary_with_longitudinal_static_sector",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "propagator_composition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "integrated_phase_derivative_and_zero_interval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "empty_start_covariance_and_integrated_noise",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonproportional_orbit_masses_require_time_ordering",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Exact finite-label linearization, birth covariance and Gaussian propagator identities. Conditional finite-mode theorem applications still require their separate proof hypotheses. No native-birth fluctuation theorem or physical Maxwell identification."
+}

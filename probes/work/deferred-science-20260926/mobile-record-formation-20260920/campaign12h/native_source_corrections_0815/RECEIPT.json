@@ -1,0 +1,7 @@
+{
+  "source": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_FORMATION_EULER_DERIVATION.md",
+  "before_sha256": "a4f4d2c6cf39a58d46e98e58c979756d3c467d18b8bd812ac768e17e19cba49a",
+  "after_sha256": "9dda6203328530added92e9369a271077ead4da2704979211bc0eb308e6b7458",
+  "origin": "Mirror the independently acknowledged F1/F2 corrections in PR8561; no mathematical checker changes.",
+  "publication": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8561"
+}

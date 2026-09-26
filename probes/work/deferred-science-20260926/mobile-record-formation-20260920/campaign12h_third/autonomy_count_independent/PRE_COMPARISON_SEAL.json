@@ -1,0 +1,135 @@
+{
+  "created_utc": "2026-09-22T17:14:58.883414+00:00",
+  "status": "Independent reconstruction and controls complete before any new author-source comparison.",
+  "read_boundary": "Only neutral supplied definitions and six pinned prior dependencies; new author autonomy/count/clock/observability sources, scripts, results, checkpoint, registry and seal contents unopened.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "bytes": 9771,
+      "sha256": "9c71310bfe26b93ae5206d5a4525bc01dc6136be1d39e6f1b08ecfa08b83e6a4",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+      "bytes": 9784,
+      "sha256": "49b1abd18c3c793b4089de38055b447842a96e4f74317b04dc0b857aa78b901a",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+      "bytes": 11028,
+      "sha256": "eb46b801aa126fbcf4b950c5f6a2fb775f247b07fde8900556a3101338cce8b1",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/REPORT.md",
+      "bytes": 18532,
+      "sha256": "eb588f78316fe92791af32c698ed7991fa92fe5f3d64e978e959486866b87d57",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8671,
+      "sha256": "fc30598ddaf5e586a999301ba3ad4561a78a6614268399d09fa8fb435519cc3b",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/correction_ack/SEAL.json",
+      "bytes": 38488,
+      "sha256": "b234712226490dcc8305dbd018a0f7daafeec7ad380de93a404a56254d86a911",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/CARRIER_RESULTS.json",
+      "bytes": 13424,
+      "sha256": "9d7cad0d3027360ce3bdf2d1fa830132ef6cb427081caf67ba0c0f4bde2d72b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/CARRIER_RUN.log",
+      "bytes": 13424,
+      "sha256": "9d7cad0d3027360ce3bdf2d1fa830132ef6cb427081caf67ba0c0f4bde2d72b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/CARRIER_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/CARRIER_RUN_RECEIPT.json",
+      "bytes": 635,
+      "sha256": "7d717471fae9ffaff473673d63a4fb66102d6354f7925946fa31c805a8f8addb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/COUNT_RING_RESULTS.json",
+      "bytes": 13975,
+      "sha256": "3bdd1e8bdba45b46c7147f9f550f096c583e51f89f0ddf5f2b1b7026a4962892"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/COUNT_RING_RUN.log",
+      "bytes": 13975,
+      "sha256": "3bdd1e8bdba45b46c7147f9f550f096c583e51f89f0ddf5f2b1b7026a4962892"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/COUNT_RING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/COUNT_RING_RUN_RECEIPT.json",
+      "bytes": 638,
+      "sha256": "9f769c297f90a2584c7c87b2fbd5729ad55ff25ab8af409fc524892cef75b03e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/DEPENDENCIES.json",
+      "bytes": 2974,
+      "sha256": "646dbe6918f62c8b486745f1c8759383235ec91cbc740f3a91944167909c9cfc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/READ_BOUNDARY.json",
+      "bytes": 3633,
+      "sha256": "c4d4a06d2b9e4afa75d7493083a4d34451b611ac8103b1e1240f6c3ed5554669"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/REPORT.md",
+      "bytes": 16268,
+      "sha256": "22c56c717f59d2aaf566ec5e86b178f46113d613725d1347a676d0f9c65795fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/RUNTIME.json",
+      "bytes": 290,
+      "sha256": "a1b9837d840b255e580caa43ba725c8577c78785caa8655fb891f5b7382a5222"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/SPECIFICATION.md",
+      "bytes": 1795,
+      "sha256": "40a0e6999bdf46251f806f6054442ed586e101b04667255b4ad9c46450a3a1d6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/carrier_check.py",
+      "bytes": 6255,
+      "sha256": "9d47ab121c9ea2b91a9e5069872d21102839236d69d5956b5675ab50e97aa16d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/count_ring_check.py",
+      "bytes": 9314,
+      "sha256": "6bc6f24c6ea7572731fa2c26bee2ca31e92a3f959ec0e26e28a658d0ec54111f"
+    }
+  ],
+  "counts": {
+    "sources": 6,
+    "artifacts": 15
+  },
+  "main_results": [
+    "Exact arrival-weighted carrier channel; analytic moment-based bound uniform over all later times; strictly positive finite-M asymptotic directional error.",
+    "Count-weighted T conservation includes chi=0; physical electric monitoring gives decay rate sum(delta_e)/2.",
+    "Specified monitored even ring completes and selects terminal (I+chi^(K/2)T)/2 from empty cat."
+  ],
+  "countercontrols": [
+    "Anti-T electric involution without count commutation does not obey the stated simple decay law.",
+    "Arbitrary extra N,T-commuting jumps can defeat monitored-ring completion although they preserve the count identity."
+  ],
+  "failed_attempts": [],
+  "limitations": "Conditional supplied models, finite-model completion rate only, no fresh-stream/native-site/thermodynamic realization or audit/publication claim."
+}

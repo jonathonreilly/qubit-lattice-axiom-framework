@@ -1,0 +1,139 @@
+{
+  "created_utc": "2026-09-22T18:13:59.429851+00:00",
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/comparison_check.py",
+    "bytes": 13904,
+    "sha256": "75eb7ae59902531b4e3e0ee33884baa78f10247f23354ddde608c0eb214b3740"
+  },
+  "authentication": {
+    "original_independent_bindings": 27,
+    "author_bindings": 12,
+    "author_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_CLOCK_AND_COHERENT_COMPLETION_AUTHOR_SEAL.json",
+      "bytes": 4052,
+      "sha256": "7231481bd65aec211905948c3f30c0e55d4923ccf89bd281ef40c758d26d1195"
+    },
+    "precomparison_seal": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 11239,
+      "sha256": "5e850f785c0f41eb34d75a30f84f86830963763b57cac1b6f6bcaa7466531395"
+    }
+  },
+  "author_evidence_consistency": {
+    "clock_rows_read_and_authenticated": 48,
+    "observable_rows_read_and_metadata_checked": 111,
+    "clock_max_recorded_reduced_residual": 6.359357485052897e-13,
+    "clock_full_matrix_checks_recorded": 24,
+    "gauge_sector_rows": 9,
+    "exact_dark_rows": 6,
+    "both_stdout_streams_match_result_fields": true,
+    "both_stderr_empty": true,
+    "note": "Authentication and algebraic metadata checks do not replay all author calculations."
+  },
+  "symbolic_clock_comparison": {
+    "method": "Compare author expressions with independently sealed closed formulas, exactly over rational functions.",
+    "residuals": {
+      "uniform_incoherent_mean": "0",
+      "opposite_localized_mean": "0",
+      "adjacent_localized_mean": "0",
+      "dark_initial_mean": "0",
+      "weak_dephasing_uniform_coefficient": "0",
+      "strong_dephasing_uniform_coefficient": "0"
+    }
+  },
+  "unreduced_clock_comparison": {
+    "K": 12,
+    "d": 0.3,
+    "beta": 1,
+    "kappa": 1,
+    "unknowns": 4356,
+    "method": "Full matrix-unit sparse Poisson solve; no translation or reflection reduction and no author import.",
+    "means": {
+      "uniform_incoherent_mean": 8.358907878191427,
+      "adjacent_localized_mean": 5.499999999999973,
+      "opposite_localized_mean": 9.45765889151885
+    },
+    "absolute_differences_from_author": {
+      "uniform_incoherent_mean": 1.2434497875801753e-14,
+      "adjacent_localized_mean": 2.6645352591003757e-14,
+      "opposite_localized_mean": 1.9539925233402755e-14
+    },
+    "full_entry_residual": 2.447521352255677e-13,
+    "Hermiticity_residual": 1.8185453143360064e-13,
+    "minimum_eigenvalue": 2.378268916929997
+  },
+  "open_path_control": {
+    "path_vertices": 7,
+    "holes": 2,
+    "dimension": 21,
+    "contact_dimension": 6,
+    "noncontact_dimension": 15,
+    "weights": [
+      "1 + I",
+      "2 - I",
+      "3*I",
+      "4",
+      "1 - 2*I",
+      "2 + 3*I"
+    ],
+    "potential": "sum(2**x for holes x)+3*(x_first+1)*(x_second+1)",
+    "exact_Qi_observability_ranks": [
+      {
+        "maximum_power": 0,
+        "rank": 5
+      },
+      {
+        "maximum_power": 1,
+        "rank": 9
+      },
+      {
+        "maximum_power": 2,
+        "rank": 12
+      },
+      {
+        "maximum_power": 3,
+        "rank": 14
+      },
+      {
+        "maximum_power": 4,
+        "rank": 15
+      }
+    ],
+    "dark_dimension": 0,
+    "scope": "Finite control of the open-path step, not the all-size proof."
+  },
+  "physical_sector_control": {
+    "K": 6,
+    "holes": 2,
+    "physical_dimension": 30,
+    "weights": [
+      "1 + I",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "H0": "f(holes) I + g(holes) T with f=sum(x+1)^2, g=(1+sum holes)/7",
+    "loss": "sum(edge+1) over adjacent-hole edges",
+    "sectors": [
+      {
+        "T_sector": 1,
+        "dimension": 15,
+        "hopping_product": "720 + 720*I",
+        "exp_2iPhi": "I",
+        "full_H_and_loss_compression_exact": true
+      },
+      {
+        "T_sector": -1,
+        "dimension": 15,
+        "hopping_product": "-720 - 720*I",
+        "exp_2iPhi": "I",
+        "full_H_and_loss_compression_exact": true
+      }
+    ],
+    "scope": "Exact characteristic-zero check of complex phases and nontrivial T-dependent H0."
+  },
+  "author_scripts_executed": false,
+  "runtime_seconds": 0.9123017077799886
+}

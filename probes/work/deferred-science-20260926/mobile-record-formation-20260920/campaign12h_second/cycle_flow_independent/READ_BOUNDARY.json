@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-21T12:45:21.417368+00:00",
+  "sources_read_completely": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "bytes": 9977,
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "bytes": 9998,
+      "sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "bytes": 11623,
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    }
+  ],
+  "author_runner_or_result_read": false,
+  "scope": "One bounded independent finite-chain and application check; no primary source edits or campaign authorship."
+}

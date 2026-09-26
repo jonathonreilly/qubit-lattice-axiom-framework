@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-22T14:34:45.711384+00:00",
+  "boundary": "Author supplied birth-backaction models and occupation-monitoring completion theorem frozen before independent reconstruction.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md",
+      "bytes": 10714,
+      "sha256": "be2eef3b7257a95a58fe4ceba13b0b67f33f155101dc0ed89d400afb54bdc074"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "bytes": 11728,
+      "sha256": "ae2f80e8b3b72cf601d458d2e13a4e6c9e5a591e7aa9f35ae1e9dbf3fdc85bda"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_birth_backaction_check.py",
+      "bytes": 6896,
+      "sha256": "ea8041a3f5150cfd110ae4046bc2f51e068ce909e5dae5ee6826554dc464788f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RESULTS.json",
+      "bytes": 6620,
+      "sha256": "07f97702b5f9c8f7a011e4897bc1b08884af4955bfc8a328643cbd75007de958"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN.log",
+      "bytes": 6620,
+      "sha256": "07f97702b5f9c8f7a011e4897bc1b08884af4955bfc8a328643cbd75007de958"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN_RECEIPT.json",
+      "bytes": 329,
+      "sha256": "806657ecd23c1b7cec5bf4c6638e736e8c07f98bd900ad33f6ca5520ad29d7de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pair_birth_dephasing_check.py",
+      "bytes": 5679,
+      "sha256": "dbb3cc7cea1fbf5ecb575df47c428cbe039935925ae57a6dfaacfd873d779b62"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RESULTS.json",
+      "bytes": 3232,
+      "sha256": "dff2d27bdad501984e8ee9c43c4733a1db848e9257cae652c5de0d0c061bb185"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN.log",
+      "bytes": 3232,
+      "sha256": "dff2d27bdad501984e8ee9c43c4733a1db848e9257cae652c5de0d0c061bb185"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN_RECEIPT.json",
+      "bytes": 325,
+      "sha256": "c5135398bce1c49b9d0bf2f3feb83573380aaadba3195d8837413cee5f52e157"
+    }
+  ],
+  "status": "author derivation and exact finite controls; independent check pending"
+}

@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-22T15:48:11.399068+00:00",
+  "script_sha256": "b637c056db3b31d1f2666c24558f1630487a4126a24512a800e451a48ffb2197",
+  "local_channel": {
+    "local_dimension": 18,
+    "Gauss_commutators_exact_zero": true,
+    "birth_adds_two_records": true,
+    "coherent_birth_isometry_on_vacant_field": true,
+    "same_total_loss_for_coherent_and_separate_channels": true,
+    "field_independent_birth_rate": "beta",
+    "channel_parameter": "chi=(sum_mu a_mu conjugate(b_mu))/beta, |chi|<=1",
+    "Gram_determinant": "-x**2 - y**2 + 1",
+    "edge_reversal_covariance": "Im(chi)=0",
+    "pure_coherent_choices": "chi=+1 or -1; relative phase only",
+    "separate_orientation_channels": "chi=0"
+  },
+  "loop_control": {
+    "physical_zero_Gauss_dimension": 16,
+    "initial_state": "(|all electric bits 0>+|all electric bits 1>)/sqrt(2), all matter vacant",
+    "birth_edges": "All four edges, common beta>0; hopping absent in this exact preparation control.",
+    "exact_full_density_equation_residual_zero": true,
+    "full_occupation_probability": "1 - 4*exp(-beta*t)/3 + exp(-4*beta*t)/3",
+    "mean_completion_time": "5/(4 beta)",
+    "final_field_basis_indices": [
+      5,
+      10
+    ],
+    "final_density_in_two_state_basis": "[[1,chi^2],[chi^2,1]]/2",
+    "terminal_gauge_invariant_cycle_coherence": "chi^2",
+    "terminal_joint_purity": "(1+chi^4)/2",
+    "arbitrary_occupation_monitoring_annihilates_entire_trajectory": true,
+    "field_plaquette_and_full_occupied_cycle_commute_with_entire_trajectory": true,
+    "cycle_Hamiltonian_in_full_space": "2g X",
+    "source_of_coherence": "Initially supplied gauge-loop phase; birth preserves or loses it, it is not generated from a classical mixture.",
+    "scope": "Complete finite preparation control, not a photon phase or a native record-carrier construction."
+  }
+}

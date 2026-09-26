@@ -1,0 +1,7 @@
+{
+  "scope": "Local-only recovery commit; not publication validation",
+  "whitespace_check": "One trailing-whitespace line in a sealed raw interrupted-execution traceback; preserved byte-for-byte to keep the independent seal valid. No claim of a clean whole-diff whitespace result.",
+  "path": ".claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/INTERRUPTED_SYMBOLIC_ATTEMPT.log",
+  "sha256": "851c6cf85beb1c35c268a10badc571d3c8b6dbcdc156facfeadb7e5d677290d8",
+  "line": 47
+}

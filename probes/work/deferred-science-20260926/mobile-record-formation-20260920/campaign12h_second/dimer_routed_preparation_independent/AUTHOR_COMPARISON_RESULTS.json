@@ -1,0 +1,115 @@
+{
+  "scope": "Author source/log binding, group consistency, independent inventory and analytic/numerical receipt controls; no full author-suite rerun.",
+  "author_checker": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_check.py",
+    "bytes": 8306,
+    "sha256": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b"
+  },
+  "author_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/RESULTS.json",
+      "bytes": 5560,
+      "sha256": "4006d8eb9072391b9733885c5ac9d9595092f0a82c182dccb39b8f335eadcb2a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_PREPARATION_RUN.log",
+      "bytes": 215,
+      "sha256": "b32aa6e39f1ee38dbffc4c1a989fa105165b5e433d0af47a16b1244ee783c284"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_PREPARATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/conditional_permutation_bound.json",
+      "bytes": 934,
+      "sha256": "48006035212a5f61b365fa668859586b35fe90fc9f291057ec84c6487de4ea3b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/physical_graph_comparison.json",
+      "bytes": 956,
+      "sha256": "f58ea27c87232a3305f232e5cb1b611245ae19928cbb839888b024d8a8b8673d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/nonreversible_preparation.json",
+      "bytes": 1928,
+      "sha256": "9c509673ef4f8d11672829af5e962e09cf32cfd0ddde03e3454385f7af1ae2a5"
+    }
+  ],
+  "graph_inventory": [
+    {
+      "K": 2,
+      "independently_counted_connected_graphs": 1
+    },
+    {
+      "K": 3,
+      "independently_counted_connected_graphs": 4
+    },
+    {
+      "K": 4,
+      "independently_counted_connected_graphs": 38
+    },
+    {
+      "K": 5,
+      "independently_counted_connected_graphs": 728
+    }
+  ],
+  "five_cycle_character_inversion": [
+    {
+      "time": 0.05,
+      "L2_absolute_difference": 4.440892098500626e-16,
+      "TV_absolute_difference": 0.0
+    },
+    {
+      "time": 0.5,
+      "L2_absolute_difference": 1.1102230246251565e-16,
+      "TV_absolute_difference": 1.6653345369377348e-16
+    },
+    {
+      "time": 2.0,
+      "L2_absolute_difference": 6.938893903907228e-18,
+      "TV_absolute_difference": 4.163336342344337e-17
+    },
+    {
+      "time": 10.0,
+      "L2_absolute_difference": 1.0064923920541897e-16,
+      "TV_absolute_difference": 3.0531133177191805e-16
+    }
+  ],
+  "schedule_high_precision": [
+    {
+      "N": 8,
+      "independent_80_digit_preparation_time": "7366950.941245788431750718691253165313121",
+      "reported_float_relative_error": 8.887585892507413e-17
+    },
+    {
+      "N": 16,
+      "independent_80_digit_preparation_time": "949072717.0195298134682897649429461956412",
+      "reported_float_relative_error": 2.4486884862279547e-16
+    },
+    {
+      "N": 32,
+      "independent_80_digit_preparation_time": "122429927067.9951896391274624734544031813",
+      "reported_float_relative_error": 9.324902404077207e-17
+    },
+    {
+      "N": 64,
+      "independent_80_digit_preparation_time": "15746211189505.33377321888412177662828087",
+      "reported_float_relative_error": 2.346655865116628e-16
+    },
+    {
+      "N": 128,
+      "independent_80_digit_preparation_time": "2020645815517464.760175128379717904647968",
+      "reported_float_relative_error": 2.524812238057008e-16
+    },
+    {
+      "N": 256,
+      "independent_80_digit_preparation_time": "258977533908763718.6278968938058195981133",
+      "reported_float_relative_error": 2.7271823863566333e-16
+    }
+  ],
+  "all_771_author_spectral_eigenvalue_rows_independently_recomputed": false,
+  "author_conditional_random_test_values_independently_recomputed": false,
+  "unresolved_findings": []
+}

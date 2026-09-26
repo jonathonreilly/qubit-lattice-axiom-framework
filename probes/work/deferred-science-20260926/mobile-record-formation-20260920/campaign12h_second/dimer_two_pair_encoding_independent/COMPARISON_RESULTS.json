@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-22T00:21:48.393028+00:00",
+  "author_files_authenticated": 5,
+  "embedded_sources_authenticated": 2,
+  "pre_seal_rows_authenticated": 8,
+  "all_reported_mathematical_values_agree": true,
+  "rank_certificate": "Independent integer minor determinant 22325 mod65537 certifies the same rational rank14; normalized differences give affine13.",
+  "scope": "Complete author source/evidence read. No author execution or new rational-rank rerun. Exact saved outputs compared against the independently sealed modular and integer construction. No source correction or unresolved finite-construction claim."
+}

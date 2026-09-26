@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_polynomial_independent/independent_check.py"
+  ],
+  "started_utc": "2026-09-21T20:47:03.473583+00:00",
+  "finished_utc": "2026-09-21T20:47:05.126198+00:00",
+  "returncode": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "script_sha256": "40188fb7cfbd3b69ba95f15f5761019ffa3cf704bf07b774720e1e826bd9dcd7"
+}

@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-21T11:05:48.012302+00:00",
+  "scope": "Independent dependent-addendum proof and controls before author code/results; sealed base evidence unchanged.",
+  "base_precomparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/BASE_PRE_COMPARISON_SEAL.json",
+    "bytes": 2098,
+    "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9"
+  },
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+    "bytes": 4508,
+    "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON.md",
+      "bytes": 3573,
+      "sha256": "eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/selection_independent_check.py",
+      "bytes": 3517,
+      "sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT_RESULTS.json",
+      "bytes": 1459,
+      "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stdout",
+      "bytes": 1459,
+      "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "author_code_or_results_opened": false
+}

@@ -1,0 +1,4 @@
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/independent_check.py", line 216
+    check(f"direct_product_derivative_{case}_axis{i}_{implementation", jac == expected)
+                                                                    ^
+SyntaxError: f-string: expecting '}'

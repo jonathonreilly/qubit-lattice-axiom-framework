@@ -1,0 +1,530 @@
+{
+  "created_utc": "2026-09-22T00:02:35.903772+00:00",
+  "boundary": "Independent exact reconstruction before author checker/results access.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "encoding": {
+    "q": "1/2",
+    "r": "1/6",
+    "lambda_A": "1/8",
+    "lambda_B": "1/12",
+    "axis_Schur_complement": "13/32",
+    "corner_Schur_complement": "3/8",
+    "minimum_profile_probability": "3/56",
+    "rows": [
+      {
+        "x": 0,
+        "twice_cosine": 2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 1,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 2,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 3,
+        "twice_cosine": -2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 4,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 5,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 6,
+        "twice_cosine": 2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 7,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 8,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 9,
+        "twice_cosine": -2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 10,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 11,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      }
+    ],
+    "two_pair_tensor_dimension": 16,
+    "exact_two_pair_product_equality": true,
+    "full_product_statement": "Factorwise equality proves equality for all 864 independent pair factors. The 4^864 matrix is not materialized."
+  },
+  "direct_rate_enumeration": {
+    "four_context_channels": 120,
+    "assignments_per_channel": 38416,
+    "total_weighted_assignments": 4609920,
+    "denominator": "25780541194240",
+    "int64_bound_verified": true,
+    "rate_ranges": [
+      {
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      }
+    ],
+    "actual_contexts": [
+      {
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "displacement": [
+          -2,
+          0,
+          0
+        ],
+        "actual_four_contexts": [
+          [
+            3,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            11,
+            1,
+            0
+          ],
+          [
+            9,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "displacement": [
+          -1,
+          1,
+          0
+        ],
+        "actual_four_contexts": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            11,
+            3,
+            0
+          ]
+        ]
+      },
+      {
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "displacement": [
+          -1,
+          -1,
+          0
+        ],
+        "actual_four_contexts": [
+          [
+            2,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            11,
+            0
+          ]
+        ]
+      },
+      {
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "displacement": [
+          -1,
+          0,
+          1
+        ],
+        "actual_four_contexts": [
+          [
+            2,
+            1,
+            11
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            11,
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "displacement": [
+          -1,
+          0,
+          -1
+        ],
+        "actual_four_contexts": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            11
+          ],
+          [
+            11,
+            1,
+            10
+          ]
+        ]
+      }
+    ]
+  },
+  "exact_initial_derivatives": {
+    "rows": [
+      {
+        "primed": false,
+        "x": 0,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": false,
+        "x": 1,
+        "X2_derivative": "-3/224",
+        "A2_derivative": "-3/896"
+      },
+      {
+        "primed": false,
+        "x": 2,
+        "X2_derivative": "-3/224",
+        "A2_derivative": "-3/896"
+      },
+      {
+        "primed": false,
+        "x": 3,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": false,
+        "x": 4,
+        "X2_derivative": "3/224",
+        "A2_derivative": "3/896"
+      },
+      {
+        "primed": false,
+        "x": 5,
+        "X2_derivative": "3/224",
+        "A2_derivative": "3/896"
+      },
+      {
+        "primed": false,
+        "x": 6,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": false,
+        "x": 7,
+        "X2_derivative": "-3/224",
+        "A2_derivative": "-3/896"
+      },
+      {
+        "primed": false,
+        "x": 8,
+        "X2_derivative": "-3/224",
+        "A2_derivative": "-3/896"
+      },
+      {
+        "primed": false,
+        "x": 9,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": false,
+        "x": 10,
+        "X2_derivative": "3/224",
+        "A2_derivative": "3/896"
+      },
+      {
+        "primed": false,
+        "x": 11,
+        "X2_derivative": "3/224",
+        "A2_derivative": "3/896"
+      },
+      {
+        "primed": true,
+        "x": 0,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": true,
+        "x": 1,
+        "X2_derivative": "-15/896",
+        "A2_derivative": "-15/3584"
+      },
+      {
+        "primed": true,
+        "x": 2,
+        "X2_derivative": "-15/896",
+        "A2_derivative": "-15/3584"
+      },
+      {
+        "primed": true,
+        "x": 3,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": true,
+        "x": 4,
+        "X2_derivative": "15/896",
+        "A2_derivative": "15/3584"
+      },
+      {
+        "primed": true,
+        "x": 5,
+        "X2_derivative": "15/896",
+        "A2_derivative": "15/3584"
+      },
+      {
+        "primed": true,
+        "x": 6,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": true,
+        "x": 7,
+        "X2_derivative": "-15/896",
+        "A2_derivative": "-15/3584"
+      },
+      {
+        "primed": true,
+        "x": 8,
+        "X2_derivative": "-15/896",
+        "A2_derivative": "-15/3584"
+      },
+      {
+        "primed": true,
+        "x": 9,
+        "X2_derivative": "0",
+        "A2_derivative": "0"
+      },
+      {
+        "primed": true,
+        "x": 10,
+        "X2_derivative": "15/896",
+        "A2_derivative": "15/3584"
+      },
+      {
+        "primed": true,
+        "x": 11,
+        "X2_derivative": "15/896",
+        "A2_derivative": "15/3584"
+      }
+    ],
+    "selected_black_site": [
+      1,
+      1,
+      0
+    ],
+    "X2_derivative_difference": "-3/896",
+    "A2_derivative_difference": "-3/3584",
+    "encoded_local_density_derivative_difference": [
+      [
+        "0",
+        "0",
+        "-3/7168",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-3/7168",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "Euler_A2_difference": "-9/896",
+    "clock": "Unaccelerated microscopic time; Euler acceleration multiplies by 12.",
+    "scope": "Exact initial expectation only; initial independent colors permit four-context product weights, without assuming product evolution."
+  },
+  "checker_sha256": "8715f2590d45cff5274a30618677d26efe16c9c74d5f4b3f95eedbe215e408f9"
+}

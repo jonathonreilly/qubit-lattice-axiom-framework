@@ -1,0 +1,210 @@
+{
+  "local_graphs": [
+    {
+      "name": "square",
+      "shape": [
+        2,
+        2
+      ],
+      "vertices": 4,
+      "edges": 4,
+      "plaquettes": 1,
+      "covers": 2,
+      "spin_sector_dimension": 6,
+      "exact_cover_Gram_rank": 2,
+      "qdm_metric_constraint_rank": 0,
+      "nn_leakage_rank": 0,
+      "ring_leakage_rank": 0,
+      "nn_leakage_norm_squared": "0",
+      "cross_leakage_inner_product": "0",
+      "ring_leakage_norm_squared": "0",
+      "optimal_nn_coefficient": null,
+      "minimal_combination_leakage_squared": "0",
+      "computation": "Integer singlet columns in the zero-magnetization basis, exact rational small Gram inverse; no author matrices imported.",
+      "edge_readout": {
+        "coherent": "3/4",
+        "incoherent": "5/8",
+        "classical_matching_occupation": "1/2"
+      }
+    },
+    {
+      "name": "ladder6",
+      "shape": [
+        2,
+        3
+      ],
+      "vertices": 6,
+      "edges": 7,
+      "plaquettes": 2,
+      "covers": 3,
+      "spin_sector_dimension": 20,
+      "exact_cover_Gram_rank": 3,
+      "qdm_metric_constraint_rank": 1,
+      "nn_leakage_rank": 1,
+      "ring_leakage_rank": 1,
+      "nn_leakage_norm_squared": "3/2",
+      "cross_leakage_inner_product": "3/2",
+      "ring_leakage_norm_squared": "3/2",
+      "optimal_nn_coefficient": "-1",
+      "minimal_combination_leakage_squared": "0",
+      "computation": "Integer singlet columns in the zero-magnetization basis, exact rational small Gram inverse; no author matrices imported."
+    },
+    {
+      "name": "cube",
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "vertices": 8,
+      "edges": 12,
+      "plaquettes": 6,
+      "covers": 9,
+      "spin_sector_dimension": 70,
+      "exact_cover_Gram_rank": 9,
+      "qdm_metric_constraint_rank": 2,
+      "nn_leakage_rank": 1,
+      "ring_leakage_rank": 1,
+      "nn_leakage_norm_squared": "5",
+      "cross_leakage_inner_product": "10",
+      "ring_leakage_norm_squared": "20",
+      "optimal_nn_coefficient": "-2",
+      "minimal_combination_leakage_squared": "0",
+      "computation": "Integer singlet columns in the zero-magnetization basis, exact rational small Gram inverse; no author matrices imported."
+    },
+    {
+      "name": "ladder8",
+      "shape": [
+        2,
+        4
+      ],
+      "vertices": 8,
+      "edges": 10,
+      "plaquettes": 3,
+      "covers": 5,
+      "spin_sector_dimension": 70,
+      "exact_cover_Gram_rank": 5,
+      "qdm_metric_constraint_rank": 2,
+      "nn_leakage_rank": 3,
+      "ring_leakage_rank": 3,
+      "nn_leakage_norm_squared": "69/16",
+      "cross_leakage_inner_product": "63/16",
+      "ring_leakage_norm_squared": "69/16",
+      "optimal_nn_coefficient": "-21/23",
+      "minimal_combination_leakage_squared": "33/46",
+      "computation": "Integer singlet columns in the zero-magnetization basis, exact rational small Gram inverse; no author matrices imported."
+    },
+    {
+      "name": "patch12",
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "vertices": 12,
+      "edges": 20,
+      "plaquettes": 11,
+      "covers": 32,
+      "spin_sector_dimension": 924,
+      "exact_cover_Gram_rank": 32,
+      "qdm_metric_constraint_rank": 2,
+      "nn_leakage_rank": 24,
+      "ring_leakage_rank": 27,
+      "nn_leakage_norm_squared": "7243/120",
+      "cross_leakage_inner_product": "29041/360",
+      "ring_leakage_norm_squared": "1575/8",
+      "optimal_nn_coefficient": "-29041/21729",
+      "minimal_combination_leakage_squared": "348331597/3911220",
+      "computation": "Integer singlet columns in the zero-magnetization basis, exact rational small Gram inverse; no author matrices imported."
+    }
+  ],
+  "signed_fibers": [
+    {
+      "vertices": 4,
+      "covers": 2,
+      "marked_states": 16,
+      "signed_rotation_bijections": 4,
+      "exact_product_frame_sum_factor": 2,
+      "normalized_intertwiner_factor": "sqrt(2)",
+      "representative_phase_is_common": true
+    },
+    {
+      "vertices": 6,
+      "covers": 3,
+      "marked_states": 144,
+      "signed_rotation_bijections": 8,
+      "exact_product_frame_sum_factor": 6,
+      "normalized_intertwiner_factor": "sqrt(6)",
+      "representative_phase_is_common": true
+    }
+  ],
+  "cube_parent": {
+    "stars": 8,
+    "star_size": 4,
+    "exact_parent_kernel_dimension": 19,
+    "exact_cover_span_dimension": 9,
+    "kernel_su2_multiplicities": {
+      "spin0": 10,
+      "spin1": 3
+    },
+    "magnetization_sectors": [
+      {
+        "number_down": 0,
+        "dimension": 1,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 8.0
+      },
+      {
+        "number_down": 1,
+        "dimension": 8,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 3.999999999999999
+      },
+      {
+        "number_down": 2,
+        "dimension": 28,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 0.9999999999999989
+      },
+      {
+        "number_down": 3,
+        "dimension": 56,
+        "exact_kernel_dimension": 3,
+        "finite_numerical_positive_gap": 0.612574113277206
+      },
+      {
+        "number_down": 4,
+        "dimension": 70,
+        "exact_kernel_dimension": 13,
+        "finite_numerical_positive_gap": 0.6125741132772056
+      },
+      {
+        "number_down": 5,
+        "dimension": 56,
+        "exact_kernel_dimension": 3,
+        "finite_numerical_positive_gap": 0.6125741132772058
+      },
+      {
+        "number_down": 6,
+        "dimension": 28,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 0.9999999999999992
+      },
+      {
+        "number_down": 7,
+        "dimension": 8,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 3.999999999999999
+      },
+      {
+        "number_down": 8,
+        "dimension": 1,
+        "exact_kernel_dimension": 0,
+        "finite_numerical_positive_gap": 8.0
+      }
+    ],
+    "finite_numerical_gap": 0.6125741132772056,
+    "nn_and_ring_leakage_orthogonal_to_entire_parent_kernel": true,
+    "scope": "Finite open cube. No assertion about infinite-volume gap or equality of ground space with cover span."
+  }
+}

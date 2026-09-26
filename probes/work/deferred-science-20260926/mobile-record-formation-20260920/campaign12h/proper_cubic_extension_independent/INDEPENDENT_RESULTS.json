@@ -1,0 +1,30 @@
+{
+  "source_sha256": "ef47dfef3a0a82919a0334f24d650607a19d05dbbb1c118feec7973959dcb8b3",
+  "status": "all exact assertions passed",
+  "proper_group_elements": 24,
+  "six_extra_actual_species_covariance": true,
+  "all_eleven_independent": true,
+  "vector_closure_conditions": [
+    "a1",
+    "a2",
+    "u",
+    "v",
+    "b1",
+    "b2",
+    "bu",
+    "bv"
+  ],
+  "raw_gauss_conditions_same": true,
+  "curl_closure_conditions": [
+    "u",
+    "v",
+    "bu",
+    "bv"
+  ],
+  "longitudinal_kernel_checked": true,
+  "nonvector_determinant": "-6*sqrt(3)*d**2*g*q1*q2*q3",
+  "generic_closed_vector_example_rank": 10,
+  "extra_reversal_even_old_reversal_odd": true,
+  "six_extra_uniform_current_normalizations": true,
+  "scope": "Exact finite symbol/realization checks; no new continuum theorem, no interpretation of extra moments."
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_check.py", line 124, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_check.py", line 119, in main
+    result=dict(created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),sources=[],geometry_entropy=geometry_entropy(),owner_blocks=owner_blocks(),exponential_constants=constants(),
+                                                                                                                                                 ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_check.py", line 107, in owner_blocks
+    assert nonzero,'rough matching must exhibit a nonzero finite-block tensor boundary term'
+           ^^^^^^^
+AssertionError: rough matching must exhibit a nonzero finite-block tensor boundary term

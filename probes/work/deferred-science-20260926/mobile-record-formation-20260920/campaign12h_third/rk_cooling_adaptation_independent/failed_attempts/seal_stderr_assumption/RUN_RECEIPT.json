@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-09-22T19:35:17.321237+00:00",
+  "original_command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-"
+  ],
+  "submitted_stdin_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/failed_attempts/seal_stderr_assumption/attempt.py",
+    "bytes": 6224,
+    "sha256": "e9c3bb5ce295c7e34fc5ed1ba8ecfa6ea0d4f6d18f20f5bf5997bbe6d2c629a7"
+  },
+  "observed_exec_chunk_id": "591593",
+  "observed_returncode": 1,
+  "observed_wall_time_seconds": 0.264668625,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/failed_attempts/seal_stderr_assumption/RUN.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/failed_attempts/seal_stderr_assumption/RUN.stderr",
+    "bytes": 89,
+    "sha256": "1749331be7a0c2cf37c990703c54e627c697470c6f9ec180a120f00488c0543f"
+  },
+  "note": "Historical stdin execution, not a rerun of the archived file. Original start/end timestamps were not recorded. The failure was a bookkeeping assertion; no scientific result changed."
+}

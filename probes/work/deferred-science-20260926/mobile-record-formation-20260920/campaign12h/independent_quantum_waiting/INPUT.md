@@ -1,0 +1,9 @@
+# Independent quantum waiting-law input receipt
+
+The primary author requested one bounded check with the following specification, without reading the primary `QUANTUM_WAITING_TIME` files or results.
+
+> Two independently selectable, fixed, unknown physical qubit inputs rho_a and rho_c are drawn from the six Pauli-axis pure states. There is no classical preparation label or input-correlated ancillary resource. The supplied classical formation model has first-event hazard H(a,c)=epsilon sum_b (1+j v_b dot v_a)(1+j v_b dot v_c), with epsilon>0 and 0<|j|<1, and predicts exponential survival exp[−t H(a,c)] at every time t. Determine whether any physical quantum experiment on the initial two qubits reproduces this complete law for every promised input, allowing adaptation, disturbance and input-independent ancillas. Separately analyze the time-homogeneous jump instrument with marked positive rate effects F_b=epsilon (I+j v_b dot sigma) tensor (I+j v_b dot sigma), no Hamiltonian and no-event propagator exp[−t sum_b F_b/2]. Derive its survival law, the initial-rate agreement, a finite-time comparison and a scoped error lower bound.
+
+The six vectors are v_a in {±e1,±e2,±e3}; rho_a=(I+v_a dot sigma)/2. All 36 product preparations rho_a tensor rho_c are independently available as promises. The quantum operation and all auxiliary initial resources are independent of their preparation labels. Probabilities of the observed event by a deadline are unconditional; a survival-conditioned or heralding-conditioned subensemble is not a replacement for that waiting law.
+
+Only this output directory may be written. No primary files or new author calculations were read, and no production edits, Git/PR/audit actions, delegation, external communication or additional research branch was undertaken. The report uses the supplied specification and elementary finite-dimensional quantum operations directly; earlier independent results are not needed as proof imports.

@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-22T14:43:12.002913+00:00",
+  "final_seal_sha256": "e9239e67b96aba80e671f73f25bb1c8a01f180a80dbc365a6eb1000c3acfe305",
+  "source_count": 15,
+  "artifact_count": 16,
+  "mismatches": [],
+  "read_scope": "Complete independent report, checker, result, source specification, comparison report, comparison checker and result; all final bindings authenticated. No formal audit determination."
+}

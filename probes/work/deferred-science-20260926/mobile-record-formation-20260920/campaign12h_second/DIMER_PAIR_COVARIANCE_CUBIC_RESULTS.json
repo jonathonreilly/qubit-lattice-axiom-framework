@@ -1,0 +1,732 @@
+{
+  "created_utc": "2026-09-22T00:04:50.333830+00:00",
+  "proper_rotations": [
+    {
+      "matrix": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "16"
+    },
+    {
+      "matrix": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    },
+    {
+      "matrix": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ]
+      ],
+      "character": 1,
+      "operator_character": "1"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "-1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "-1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "0"
+    },
+    {
+      "matrix": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0"
+        ]
+      ],
+      "character": -1,
+      "operator_character": "4"
+    }
+  ],
+  "alternating_operator_projection_all_256_entries_zero": true,
+  "trivial_operator_projection_rank": 2,
+  "covariance_checks": 336,
+  "positive_state_leading_principal_minors": [
+    [
+      "1/2",
+      "61/768",
+      "61/4608",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "61/768",
+      "61/4608",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "1/12",
+      "61/4608",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "1/12",
+      "61/4608",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "1/12",
+      "1/72",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "1/12",
+      "1/72",
+      "61/27648"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ],
+    [
+      "1/2",
+      "191/2304",
+      "505/36864",
+      "1775/786432"
+    ]
+  ],
+  "N": 12,
+  "minimum_color_probability": "3/56",
+  "local_density_equality_all_coordinates": true,
+  "full_product_equality": "Follows exactly from all local equalities; full tensor not materialized.",
+  "Z12_initial_derivatives": [
+    "0",
+    "3/3584"
+  ],
+  "physical_Q12_derivative_difference": "1/57344",
+  "directional_derivatives": [
+    [
+      {
+        "delta": [
+          "1",
+          "0",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "-1",
+          "0",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "1",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "-1",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "0",
+          "1"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "0",
+          "-1"
+        ],
+        "Z12_derivative": "0"
+      }
+    ],
+    [
+      {
+        "delta": [
+          "1",
+          "0",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "-1",
+          "0",
+          "0"
+        ],
+        "Z12_derivative": "3/3584"
+      },
+      {
+        "delta": [
+          "0",
+          "1",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "-1",
+          "0"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "0",
+          "1"
+        ],
+        "Z12_derivative": "0"
+      },
+      {
+        "delta": [
+          "0",
+          "0",
+          "-1"
+        ],
+        "Z12_derivative": "0"
+      }
+    ]
+  ],
+  "boundary": "Specified U=1 plus vector, affine covariant pair encoding and a domain with the displayed preparations. Not a general no-go result.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md",
+      "bytes": 4999,
+      "sha256": "7cfff2132cf070ee69c5dd80bd868e6a2568bed6343dc99dbf5d388a770c4cf8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_covariance_cubic_check.py",
+      "bytes": 4787,
+      "sha256": "df54440ecf138348ece9aefda505634db3be394e0e2597a6730a3f03617a43f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "bytes": 11820,
+      "sha256": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+    }
+  ]
+}

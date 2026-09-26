@@ -1,0 +1,39 @@
+{
+  "tagged_bijections": {
+    "torus_side": 3,
+    "labeled_records": 3,
+    "placements": 17550,
+    "event_inverse_checks": 52650
+  },
+  "full_ring_controls": {
+    "ring_states": 2401,
+    "biased_product_forward_equations": 2401,
+    "exact_initial_response_entries": 36,
+    "response_wavevector": "pi/2",
+    "response_density": "2/3"
+  },
+  "currents_and_entropy": {
+    "bond_current_symbolic_identities": 18,
+    "entropy_symmetrizer_entries": 36,
+    "current_conserved_density_covariance_entries": 108,
+    "spatial_moment_scope": "local coefficient checked; infinite spatial sums justified analytically in note, not by enumeration"
+  },
+  "mode_checks": {
+    "generic_characteristic_polynomial": "(3*kx**2*ky**2*kz**2*rho - 3*kx**2*ky**2*kz**2 - 2*kx**2*ky**2*rho*w**2 + 3*kx**2*ky**2*w**2 - 2*kx**2*kz**2*rho*w**2 + 3*kx**2*kz**2*w**2 + kx**2*rho*w**4 - 3*kx**2*w**4 - 2*ky**2*kz**2*rho*w**2 + 3*ky**2*kz**2*w**2 + ky**2*rho*w**4 - 3*ky**2*w**4 + kz**2*rho*w**4 - 3*kz**2*w**4 + 3*w**6)/3",
+    "axis_density_oscillation_amplitude": "(rho - 1)/(rho - 3)",
+    "matrix_exponential_cases": 54,
+    "maximum_response_error": 6.661338147750939e-16
+  },
+  "one_record": {
+    "one_direction_full_transition_matrix_cases": 20,
+    "maximum_error": 2.8609792490763985e-16,
+    "six_direction_propagator": "sum_i exp[(cos k_i-1)t] cos[t sin k_i]/3"
+  },
+  "status": "primary checks passed; no independent check or hydrodynamic limit",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": "5f1d43faae7c7de8c68572487c13faa47cd77018b8d193a71553c0e484b8c501"
+}

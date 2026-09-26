@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "fixture": "baseline",
+      "root_result_sha256": "7b0110f1fce6f372dfb842bb2126aa7210464601fcf857d9dbbec27eba86dbb2",
+      "independent_targeted_replay_result_sha256": "7b0110f1fce6f372dfb842bb2126aa7210464601fcf857d9dbbec27eba86dbb2",
+      "identical_bytes": true
+    },
+    {
+      "fixture": "wrapper_exception",
+      "root_result_sha256": "74a97e32144fd4f31f896494e1bac999fcb704a9484f247513a2c0a70b15e551",
+      "independent_targeted_replay_result_sha256": "74a97e32144fd4f31f896494e1bac999fcb704a9484f247513a2c0a70b15e551",
+      "identical_bytes": true
+    },
+    {
+      "fixture": "zero_winding",
+      "root_result_sha256": "fd67632e1fb5f39fe11ae068df4297601b3aca55050530764e72fcab07972955",
+      "independent_targeted_replay_result_sha256": "fd67632e1fb5f39fe11ae068df4297601b3aca55050530764e72fcab07972955",
+      "identical_bytes": true
+    },
+    {
+      "fixture": "mixed_zero_winding",
+      "root_result_sha256": "b4d43ab63c604fed22ec9758ca45944c13eeb852b04f612b0d55763fde51c82f",
+      "independent_targeted_replay_result_sha256": "b4d43ab63c604fed22ec9758ca45944c13eeb852b04f612b0d55763fde51c82f",
+      "identical_bytes": true
+    }
+  ],
+  "author_results_sha256": "d8e15fb1145a9c927e329c50cc0144ad9a6b9f4aefd1a85f7e410f0d768fc4c9",
+  "preserved_first_author_control_failure": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/ATTEMPT_01.json",
+    "sha256": "e2dfedf4ab146ca6ed9be34b170970fa3be03e2f0db35bd5574b0b52b507f10f",
+    "bytes": 285
+  },
+  "interpretation": "The first failed control compared floating SE to 1.5 by exact equality. Source delta changes that assertion to 1e-15 tolerance and uses new output names; analyzer bytes were unchanged. Independently recomputed paired covariance SEs agree.",
+  "production_values_read": false
+}

@@ -1,0 +1,62 @@
+{
+  "sources_sha256": {
+    "geometric_singlet_fiber_check.py": "5777981b140a00fcbb47077002e25774a306ba0b1128f207598eac46bd3c2654",
+    "geometric_quantum_lift_check.py": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c"
+  },
+  "rows": [
+    {
+      "graph": "square",
+      "matchings": 2,
+      "fiber": 8,
+      "signed_integer_intertwiner": true,
+      "VB_rank": 2,
+      "loop_Gram_formula": true,
+      "Gram": "Matrix([[1, 1/2], [1/2, 1]])",
+      "v_solutions_at_t_one": "Reals",
+      "independent_commutator_equations": []
+    },
+    {
+      "graph": "ladder6",
+      "matchings": 3,
+      "fiber": 48,
+      "signed_integer_intertwiner": true,
+      "VB_rank": 3,
+      "loop_Gram_formula": true,
+      "Gram": "Matrix([[1, 1/4, 1/2], [1/4, 1, 1/2], [1/2, 1/2, 1]])",
+      "v_solutions_at_t_one": "{(1/2,)}",
+      "independent_commutator_equations": [
+        "(2*v - 1)/4",
+        "-(2*v - 1)/4"
+      ],
+      "positive_tuned_ladder_Hermitian_lift": true
+    },
+    {
+      "graph": "cube8",
+      "matchings": 9,
+      "fiber": 384,
+      "signed_integer_intertwiner": true,
+      "VB_rank": 9,
+      "loop_Gram_formula": true,
+      "Gram": "Matrix([[1, 1/2, 1/2, 1/2, 1/4, 1/8, 1/8, 1/2, 1/4], [1/2, 1, 1/4, 1/4, 1/2, 1/4, 1/4, 1/4, 1/8], [1/2, 1/4, 1, 1/4, 1/8, 1/4, 1/4, 1/4, 1/2], [1/2, 1/4, 1/4, 1, 1/2, 1/4, 1/4, 1/4, 1/8], [1/4, 1/2, 1/8, 1/2, 1, 1/2, 1/2, 1/8, 1/4], [1/8, 1/4, 1/4, 1/4, 1/2, 1, 1/4, 1/4, 1/2], [1/8, 1/4, 1/4, 1/4, 1/2, 1/4, 1, 1/4, 1/2], [1/2, 1/4, 1/4, 1/4, 1/8, 1/4, 1/4, 1, 1/2], [1/4, 1/8, 1/2, 1/8, 1/4, 1/2, 1/2, 1/2, 1]])",
+      "v_solutions_at_t_one": "EmptySet",
+      "independent_commutator_equations": [
+        "(2*v - 1)/2",
+        "(v - 2)/4",
+        "-(2*v - 1)/2",
+        "-(v - 2)/4"
+      ]
+    }
+  ],
+  "square_readout": {
+    "RVB_norm_squared": "3",
+    "RVB_singlet_projector": "3/4",
+    "incoherent_singlet_cover_mixture": "5/8",
+    "classical_uniform_geometric_occupation": "1/2"
+  },
+  "antipodal_classical_mixture": {
+    "density_matrix": "Matrix([[1/6, 0, 0, 0], [0, 1/3, -1/6, 0], [0, -1/6, 1/3, 0], [0, 0, 0, 1/6]])",
+    "singlet_fidelity": "1/2",
+    "explicit_separable_six_product_decomposition": true
+  },
+  "scope": "Exploratory conditional coherent antisymmetric sector. No native preparation, local physical Hamiltonian, geometric measurement, or photon theorem."
+}

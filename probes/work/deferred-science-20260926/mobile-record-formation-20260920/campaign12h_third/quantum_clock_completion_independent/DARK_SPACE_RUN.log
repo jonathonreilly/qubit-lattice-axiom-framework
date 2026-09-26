@@ -1,0 +1,1001 @@
+{
+  "status": "PASS",
+  "exact_dark_space_cases": [
+    {
+      "name": "uniform_flux_zero",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 1,
+      "rank_iterations": [
+        1,
+        1
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_magnitude_flux_pi",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "nonexceptional_flux_pi_over_two",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "one_monitored_site_at_exceptional_flux",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": 0,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        1,
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_flux_zero",
+      "K": 6,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 15,
+      "contact_free_dimension": 9,
+      "dark_dimension": 1,
+      "rank_iterations": [
+        5,
+        8,
+        8
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_magnitude_flux_pi",
+      "K": 6,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 15,
+      "contact_free_dimension": 9,
+      "dark_dimension": 2,
+      "rank_iterations": [
+        5,
+        7,
+        7
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "nonexceptional_flux_pi_over_two",
+      "K": 6,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 15,
+      "contact_free_dimension": 9,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        6,
+        9,
+        9
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "one_monitored_site_at_exceptional_flux",
+      "K": 6,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": 0,
+      "dimension": 15,
+      "contact_free_dimension": 9,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        5,
+        9,
+        9
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_flux_zero",
+      "K": 8,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 28,
+      "contact_free_dimension": 20,
+      "dark_dimension": 3,
+      "rank_iterations": [
+        7,
+        14,
+        17,
+        17
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_magnitude_flux_pi",
+      "K": 8,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 28,
+      "contact_free_dimension": 20,
+      "dark_dimension": 2,
+      "rank_iterations": [
+        7,
+        14,
+        18,
+        18
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "nonexceptional_flux_pi_over_two",
+      "K": 8,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 28,
+      "contact_free_dimension": 20,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        8,
+        16,
+        20,
+        20
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "one_monitored_site_at_exceptional_flux",
+      "K": 8,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": 0,
+      "dimension": 28,
+      "contact_free_dimension": 20,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        7,
+        15,
+        19,
+        20,
+        20
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_flux_zero",
+      "K": 10,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 45,
+      "contact_free_dimension": 35,
+      "dark_dimension": 3,
+      "rank_iterations": [
+        9,
+        18,
+        27,
+        32,
+        32
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "uniform_magnitude_flux_pi",
+      "K": 10,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "-1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 45,
+      "contact_free_dimension": 35,
+      "dark_dimension": 4,
+      "rank_iterations": [
+        9,
+        18,
+        27,
+        31,
+        31
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "nonexceptional_flux_pi_over_two",
+      "K": 10,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 45,
+      "contact_free_dimension": 35,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        10,
+        20,
+        30,
+        35,
+        35
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "one_monitored_site_at_exceptional_flux",
+      "K": 10,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": 0,
+      "dimension": 45,
+      "contact_free_dimension": 35,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        9,
+        19,
+        29,
+        35,
+        35
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "paired_opposite_magnitudes",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "2",
+        "1",
+        "2"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 1,
+      "rank_iterations": [
+        1,
+        1
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "unpaired_magnitudes_remove_dark",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "2"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "diagonal_detuning_removes_dark",
+      "K": 4,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 6,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        1,
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "nonuniform_diagonal_and_complex_hops",
+      "K": 6,
+      "h": 2,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": 2,
+      "dimension": 15,
+      "contact_free_dimension": 9,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        5,
+        9,
+        9
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 6,
+      "h": 3,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 20,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 7,
+      "h": 3,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I",
+        "2"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 35,
+      "contact_free_dimension": 7,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        7,
+        7
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 8,
+      "h": 3,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I",
+        "2",
+        "-1"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 56,
+      "contact_free_dimension": 16,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        16,
+        16
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 10,
+      "h": 3,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 120,
+      "contact_free_dimension": 50,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        40,
+        50,
+        50
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 8,
+      "h": 4,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I",
+        "2",
+        "-1"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 70,
+      "contact_free_dimension": 2,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        2,
+        2
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "three_or_more_holes_with_arbitrary_potential",
+      "K": 10,
+      "h": 4,
+      "links": [
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I",
+        "2",
+        "-1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": true,
+      "monitored_site": null,
+      "dimension": 210,
+      "contact_free_dimension": 25,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        25,
+        25
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "odd_cycle_nonexceptional_zero_flux",
+      "K": 5,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 10,
+      "contact_free_dimension": 5,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        5,
+        5
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "odd_cycle_exceptional_pi_over_two",
+      "K": 5,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 10,
+      "contact_free_dimension": 5,
+      "dark_dimension": 1,
+      "rank_iterations": [
+        4,
+        4
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "odd_cycle_nonexceptional_zero_flux",
+      "K": 7,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 21,
+      "contact_free_dimension": 14,
+      "dark_dimension": 0,
+      "rank_iterations": [
+        7,
+        14,
+        14
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "odd_cycle_exceptional_pi_over_two",
+      "K": 7,
+      "h": 2,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "I"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": null,
+      "dimension": 21,
+      "contact_free_dimension": 14,
+      "dark_dimension": 2,
+      "rank_iterations": [
+        6,
+        12,
+        12
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    },
+    {
+      "name": "one_hole_cannot_form_a_pair_even_with_monitoring",
+      "K": 6,
+      "h": 1,
+      "links": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "diagonal_potential": false,
+      "monitored_site": 0,
+      "dimension": 6,
+      "contact_free_dimension": 6,
+      "dark_dimension": 6,
+      "rank_iterations": [
+        0,
+        0
+      ],
+      "field": "exact rational complex Q(i), not modular rank"
+    }
+  ],
+  "physical_gauge_sector_reductions": [
+    {
+      "K": 4,
+      "h": 0,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 4,
+      "h": 0,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 4,
+      "h": 2,
+      "T_sector": -1,
+      "sector_dimension": 6,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 4,
+      "h": 2,
+      "T_sector": 1,
+      "sector_dimension": 6,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 4,
+      "h": 4,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 4,
+      "h": 4,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 0,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 0,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 2,
+      "T_sector": -1,
+      "sector_dimension": 15,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 2,
+      "T_sector": 1,
+      "sector_dimension": 15,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 4,
+      "T_sector": -1,
+      "sector_dimension": 15,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 4,
+      "T_sector": 1,
+      "sector_dimension": 15,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 6,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 6,
+      "h": 6,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 0,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 0,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 2,
+      "T_sector": -1,
+      "sector_dimension": 28,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 2,
+      "T_sector": 1,
+      "sector_dimension": 28,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 4,
+      "T_sector": -1,
+      "sector_dimension": 70,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 4,
+      "T_sector": 1,
+      "sector_dimension": 70,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 6,
+      "T_sector": -1,
+      "sector_dimension": 28,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 6,
+      "T_sector": 1,
+      "sector_dimension": 28,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 8,
+      "T_sector": -1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": -1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    },
+    {
+      "K": 8,
+      "h": 8,
+      "T_sector": 1,
+      "sector_dimension": 1,
+      "boundary_hopping_sign": 1,
+      "exact_reduction": "verified",
+      "one_occupation_monitor_and_contact_kernel": "verified"
+    }
+  ],
+  "countercontrols": {
+    "basiswise_loss_positivity_is_insufficient": {
+      "Gamma": "I+sigma_x",
+      "H": "sigma_x",
+      "dark_vector": "(1,-1)",
+      "Gamma_kernel_nonzero": true
+    },
+    "C4_empty_start_boundary": "First birth from four vacancies leaves an adjacent two-hole configuration. Its entire range is orthogonal to the dark space; the H/loss evolution cannot populate that invariant dark space. The other T sector has no two-hole dark state. Thus a two-hole dark vector is not proof of empty-start trapping."
+  },
+  "failed_attempts": [],
+  "proof_boundary": "Finite exact Q(i) ranks and matrix reductions corroborate, rather than establish, the all-size minimal-gap and single-monitor arguments."
+}

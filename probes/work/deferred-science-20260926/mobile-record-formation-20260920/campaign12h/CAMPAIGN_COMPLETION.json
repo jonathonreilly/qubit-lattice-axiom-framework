@@ -1,0 +1,34 @@
+{
+  "requested_window_start_utc": "2026-09-20T23:32:19Z",
+  "requested_window_end_utc": "2026-09-21T11:32:19Z",
+  "requested_duration_hours": 12,
+  "research_window_status": "complete",
+  "packaging_recorded_utc": "2026-09-21T11:33:52.140200+00:00",
+  "heartbeat_id": "mobile-record-toe-12-hour-campaign",
+  "heartbeat_status": "PAUSED",
+  "heartbeat_tool_confirmation_utc": "2026-09-21T11:32:27Z",
+  "heartbeat_saved_configuration_read_back": true,
+  "raw_recovery_parent": "d2dbc77e192f64d18183d84a3604f0d27aeeaa29",
+  "raw_branch_policy": "local only; never push because it contains third-party references",
+  "draft_pull_requests": [
+    8545,
+    8551,
+    8552,
+    8557,
+    8560,
+    8561,
+    8565,
+    8566,
+    8567,
+    8569
+  ],
+  "main_merged": false,
+  "retained_audit_status_granted": false,
+  "editable_prompts_changed": [],
+  "authorship": "Root personally chose, derived, implemented and packaged the research; one separate-context checker performed bounded independent reconstruction.",
+  "packaging_whitespace_check": {
+    "whole_staged_tree": "fails only on the preserved literal patch context line at centered_gauss_staggered_development/FIX.diff:11",
+    "excluding_that_historical_patch": "pass",
+    "preservation_reason": "The diff is an original development evidence artifact with sealed bytes; its whitespace was not altered."
+  }
+}

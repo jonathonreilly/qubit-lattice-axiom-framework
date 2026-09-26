@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_birth_fresh_memory_dilation_check.py", line 93, in <module>
+    script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),result=check())
+                                                                                 ~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_birth_fresh_memory_dilation_check.py", line 55, in check
+    assert s.factor(block.det())==p*p*(1-chi*chi)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

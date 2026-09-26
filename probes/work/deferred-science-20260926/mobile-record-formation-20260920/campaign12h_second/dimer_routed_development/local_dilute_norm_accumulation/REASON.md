@@ -1,0 +1,1 @@
+The N6 collision identity failed because the host BLAS norm squared differed from the exact value by2.5e-13. Elementwise squared-modulus summation and math.fsum agreed with the analytic identity to3e-16. The rerun uses compensated norm accumulation, preserving all original assertion tolerances and the frozen mathematical note.

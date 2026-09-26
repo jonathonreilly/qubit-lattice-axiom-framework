@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-22T15:41:24.640498+00:00",
+  "final_source_seal_sha256": "044bfe06c1808a9fb0aa29d0fe3ebc90e7845b504e9fb0b72d859af53b8eabe6",
+  "all_28_source_and_6_artifact_bindings_verified": true,
+  "root_read": "Full F1 acknowledgment and result; earlier complete comparison/script/results read and 52 bindings verified separately.",
+  "F1": "Closed: only H0=0 conditions added; unchanged mathematics replayed by author and delta-confirmed independently."
+}

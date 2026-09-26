@@ -1,0 +1,249 @@
+{
+  "graph": "cycle4",
+  "vertices": 4,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "weights_raw": [
+    3.0,
+    1.0,
+    2.0
+  ],
+  "epsilon": 0.1,
+  "rho0": 0.25,
+  "theta_vector": 1.0,
+  "normalization": "ratio of expectations E[M]/E[N], linearized at zero uniform bias; not E[M/N]",
+  "initial_density_slope": 0.44999999999999996,
+  "initial_absolute_response_slope": 0.15000000000000002,
+  "initial_per_record_gain_slope": -1.65,
+  "generator_states": 2401,
+  "generator_nonzeros": 12985,
+  "elapsed_sec": 0.10302212508395314,
+  "rows": [
+    {
+      "tau": 0.0,
+      "density": 0.2500000000000019,
+      "absolute_orientation_response": 0.9999999999999986,
+      "per_record_response_gain": 0.999999999999991,
+      "S0_per_record": 0.9999999999999883,
+      "Smin_per_record": 0.9999999999999923,
+      "bond_alignment_given_pair": -5.5511151231256977e-17,
+      "iid_closure_response_gain": 0.9999999999999931
+    },
+    {
+      "tau": 0.2,
+      "density": 0.38592671108666554,
+      "absolute_orientation_response": 1.04564412675301,
+      "per_record_response_gain": 0.6773592606538935,
+      "S0_per_record": 1.0760072994163337,
+      "Smin_per_record": 1.0067362175556303,
+      "bond_alignment_given_pair": 0.10741428038073285,
+      "iid_closure_response_gain": 0.6778171875859301
+    },
+    {
+      "tau": 0.4,
+      "density": 0.4971973915341199,
+      "absolute_orientation_response": 1.0835946755318384,
+      "per_record_response_gain": 0.5448513477657079,
+      "S0_per_record": 1.1278967882291968,
+      "Smin_per_record": 1.003493487366646,
+      "bond_alignment_given_pair": 0.13231268767029564,
+      "iid_closure_response_gain": 0.5460050441346409
+    },
+    {
+      "tau": 0.6000000000000001,
+      "density": 0.5883006876866287,
+      "absolute_orientation_response": 1.1150993222830041,
+      "per_record_response_gain": 0.47386453289214336,
+      "S0_per_record": 1.167866920398393,
+      "Smin_per_record": 0.9987802818812853,
+      "bond_alignment_given_pair": 0.1417583587105944,
+      "iid_closure_response_gain": 0.4756797824628933
+    },
+    {
+      "tau": 0.8,
+      "density": 0.6628962874981918,
+      "absolute_orientation_response": 1.1411861383559567,
+      "per_record_response_gain": 0.4303788389971446,
+      "S0_per_record": 1.1997945723830385,
+      "Smin_per_record": 0.9941370781336135,
+      "bond_alignment_given_pair": 0.14635875353814903,
+      "iid_closure_response_gain": 0.43278009871572615
+    },
+    {
+      "tau": 1.0,
+      "density": 0.7239759889442442,
+      "absolute_orientation_response": 1.162732687096953,
+      "per_record_response_gain": 0.4015094094462085,
+      "S0_per_record": 1.2256432976427603,
+      "Smin_per_record": 0.9899401723210514,
+      "bond_alignment_given_pair": 0.14894450178553392,
+      "iid_closure_response_gain": 0.40441839197162094
+    },
+    {
+      "tau": 1.2000000000000002,
+      "density": 0.7739882439196644,
+      "absolute_orientation_response": 1.180489953371358,
+      "per_record_response_gain": 0.38130099605682327,
+      "S0_per_record": 1.24668414630202,
+      "Smin_per_record": 0.9862760742977309,
+      "bond_alignment_given_pair": 0.15053189322407115,
+      "iid_closure_response_gain": 0.38464554969162296
+    },
+    {
+      "tau": 1.4000000000000001,
+      "density": 0.8149377771081601,
+      "absolute_orientation_response": 1.1950970165630408,
+      "per_record_response_gain": 0.36662216740150744,
+      "S0_per_record": 1.263848086022938,
+      "Smin_per_record": 0.983137520291285,
+      "bond_alignment_given_pair": 0.15156339159552043,
+      "iid_closure_response_gain": 0.3703383421338815
+    },
+    {
+      "tau": 1.6,
+      "density": 0.8484663190813109,
+      "absolute_orientation_response": 1.2070940336679814,
+      "per_record_response_gain": 0.35566940210867176,
+      "S0_per_record": 1.2778590915210304,
+      "Smin_per_record": 0.9804824609568239,
+      "bond_alignment_given_pair": 0.15225933963652172,
+      "iid_closure_response_gain": 0.3597015215137523
+    },
+    {
+      "tau": 1.8,
+      "density": 0.8759184071765429,
+      "absolute_orientation_response": 1.2169347023271881,
+      "per_record_response_gain": 0.34733106769895544,
+      "S0_per_record": 1.28929656209498,
+      "Smin_per_record": 0.9782565676139573,
+      "bond_alignment_given_pair": 0.15274077312367265,
+      "iid_closure_response_gain": 0.35163113766350407
+    },
+    {
+      "tau": 2.0,
+      "density": 0.8983951657775804,
+      "absolute_orientation_response": 1.2249980686846658,
+      "per_record_response_gain": 0.3408850902554678,
+      "S0_per_record": 1.298630552931655,
+      "Smin_per_record": 0.9764032847102311,
+      "bond_alignment_given_pair": 0.15307926730077803,
+      "iid_closure_response_gain": 0.3454119961479673
+    },
+    {
+      "tau": 2.2,
+      "density": 0.916798326112783,
+      "absolute_orientation_response": 1.2315994059279998,
+      "per_record_response_gain": 0.33584251051972647,
+      "S0_per_record": 1.3062448036166816,
+      "Smin_per_record": 0.9748686280968344,
+      "bond_alignment_given_pair": 0.15331960673209918,
+      "iid_closure_response_gain": 0.34056117965527793
+    },
+    {
+      "tau": 2.4000000000000004,
+      "density": 0.9318662839398618,
+      "absolute_orientation_response": 1.2369999863081118,
+      "per_record_response_gain": 0.3318609138529423,
+      "S0_per_record": 1.3124534046147522,
+      "Smin_per_record": 0.9736034103599739,
+      "bond_alignment_given_pair": 0.15349106104506766,
+      "iid_closure_response_gain": 0.33674151759061216
+    },
+    {
+      "tau": 2.6,
+      "density": 0.9442036451235265,
+      "absolute_orientation_response": 1.241415683057855,
+      "per_record_response_gain": 0.32869383884221437,
+      "S0_per_record": 1.3175136391817124,
+      "Smin_per_record": 0.9725640977771023,
+      "bond_alignment_given_pair": 0.15361341593014768,
+      "iid_closure_response_gain": 0.33371106483509655
+    },
+    {
+      "tau": 2.8000000000000003,
+      "density": 0.9543054373407511,
+      "absolute_orientation_response": 1.245024423310586,
+      "per_record_response_gain": 0.3261598369333268,
+      "S0_per_record": 1.3216362326114026,
+      "Smin_per_record": 0.9717129189201353,
+      "bond_alignment_given_pair": 0.15370039922478843,
+      "iid_closure_response_gain": 0.33129224154784936
+    },
+    {
+      "tau": 3.0,
+      "density": 0.9625769498067185,
+      "absolute_orientation_response": 1.2479725661492647,
+      "per_record_response_gain": 0.32412280555851986,
+      "S0_per_record": 1.3249936840610808,
+      "Smin_per_record": 0.9710175718022356,
+      "bond_alignment_given_pair": 0.15376172827819048,
+      "iid_closure_response_gain": 0.32935224646311867
+    },
+    {
+      "tau": 3.2,
+      "density": 0.9693499884554506,
+      "absolute_orientation_response": 1.2503803081411136,
+      "per_record_response_gain": 0.3224790640719594,
+      "S0_per_record": 1.327727100086051,
+      "Smin_per_record": 0.9704507320160638,
+      "bond_alignment_given_pair": 0.15380438695256954,
+      "iid_closure_response_gain": 0.3277902081519086
+    },
+    {
+      "tau": 3.4000000000000004,
+      "density": 0.9748961921521451,
+      "absolute_orientation_response": 1.2523462297403456,
+      "per_record_response_gain": 0.32114861044223386,
+      "S0_per_record": 1.329951820220759,
+      "Smin_per_record": 0.9699894814263056,
+      "bond_alignment_given_pair": 0.15383345156849906,
+      "iid_closure_response_gain": 0.32652851006122957
+    },
+    {
+      "tau": 3.6,
+      "density": 0.9794379395736195,
+      "absolute_orientation_response": 1.25395109597689,
+      "per_record_response_gain": 0.32006905320687673,
+      "S0_per_record": 1.3317620528184306,
+      "Smin_per_record": 0.9696147270865376,
+      "bond_alignment_given_pair": 0.15385264179366884,
+      "iid_closure_response_gain": 0.32550678315482123
+    },
+    {
+      "tau": 3.8000000000000003,
+      "density": 0.9831572813560744,
+      "absolute_orientation_response": 1.255261018416494,
+      "per_record_response_gain": 0.3191913039298009,
+      "S0_per_record": 1.33323469390383,
+      "Smin_per_record": 0.9693106493043322,
+      "bond_alignment_given_pair": 0.15386469774504996,
+      "iid_closure_response_gain": 0.32467765149272626
+    },
+    {
+      "tau": 4.0,
+      "density": 0.9862032540887498,
+      "absolute_orientation_response": 1.2563300755719984,
+      "per_record_response_gain": 0.31847645765802235,
+      "S0_per_record": 1.3344324698557886,
+      "Smin_per_record": 0.969064198728584,
+      "bond_alignment_given_pair": 0.15387164383336782,
+      "iid_closure_response_gain": 0.324003658738872
+    }
+  ]
+}

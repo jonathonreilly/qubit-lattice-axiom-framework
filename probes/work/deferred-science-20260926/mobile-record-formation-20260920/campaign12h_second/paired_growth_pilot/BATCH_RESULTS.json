@@ -1,0 +1,466 @@
+[
+  {
+    "stem": "N4_empty_baseline_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.006396207958459854,
+    "side": 4,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": 8.437738175878064,
+    "occupied": 64,
+    "attempts": 57509,
+    "accepted": [
+      32,
+      67,
+      314,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      3,
+      3
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_empty_baseline_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.006297500105574727,
+    "side": 4,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 62,
+    "attempts": 57795,
+    "accepted": [
+      31,
+      235,
+      149,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      6,
+      2,
+      2
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_empty_extended_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.006673417054116726,
+    "side": 4,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": 0.9279309362321744,
+    "occupied": 64,
+    "attempts": 76734,
+    "accepted": [
+      32,
+      21,
+      0,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_empty_extended_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.006907791830599308,
+    "side": 4,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 62,
+    "attempts": 76802,
+    "accepted": [
+      31,
+      113,
+      1,
+      14
+    ],
+    "enabled_channel_counts": [
+      0,
+      2,
+      0,
+      3
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_jam_baseline_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.005164249800145626,
+    "side": 4,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 48,
+    "attempts": 57509,
+    "accepted": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      48
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_jam_baseline_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.005172541830688715,
+    "side": 4,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 48,
+    "attempts": 57795,
+    "accepted": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      48
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_jam_extended_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.006164582911878824,
+    "side": 4,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 62,
+    "attempts": 76734,
+    "accepted": [
+      7,
+      164,
+      159,
+      14
+    ],
+    "enabled_channel_counts": [
+      0,
+      2,
+      2,
+      2
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N4_jam_extended_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.006131165893748403,
+    "side": 4,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 62,
+    "attempts": 76802,
+    "accepted": [
+      7,
+      47,
+      7,
+      5
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_empty_baseline_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.02100749989040196,
+    "side": 8,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 510,
+    "attempts": 460498,
+    "accepted": [
+      255,
+      762,
+      1068,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      10,
+      10
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_empty_baseline_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.021155207883566618,
+    "side": 8,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 508,
+    "attempts": 460740,
+    "accepted": [
+      254,
+      1337,
+      555,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      4,
+      6,
+      6
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_empty_extended_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.03399024996906519,
+    "side": 8,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 508,
+    "attempts": 613485,
+    "accepted": [
+      254,
+      1347,
+      560,
+      58
+    ],
+    "enabled_channel_counts": [
+      0,
+      14,
+      4,
+      4
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_empty_extended_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.03530575009062886,
+    "side": 8,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "empty",
+    "first_full_time": -1,
+    "occupied": 510,
+    "attempts": 614080,
+    "accepted": [
+      255,
+      1199,
+      329,
+      33
+    ],
+    "enabled_channel_counts": [
+      0,
+      8,
+      2,
+      2
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_jam_baseline_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.023191082989796996,
+    "side": 8,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 384,
+    "attempts": 460498,
+    "accepted": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      384
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_jam_baseline_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.023293707985430956,
+    "side": 8,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 384,
+    "attempts": 460740,
+    "accepted": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "enabled_channel_counts": [
+      0,
+      0,
+      0,
+      384
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_jam_extended_s21092101",
+    "returncode": 0,
+    "wall_seconds": 0.03122766688466072,
+    "side": 8,
+    "seed": 21092101,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 510,
+    "attempts": 613485,
+    "accepted": [
+      63,
+      684,
+      1021,
+      105
+    ],
+    "enabled_channel_counts": [
+      0,
+      8,
+      9,
+      9
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  },
+  {
+    "stem": "N8_jam_extended_s21092102",
+    "returncode": 0,
+    "wall_seconds": 0.030791499884799123,
+    "side": 8,
+    "seed": 21092102,
+    "beta": 1,
+    "kappa": 1,
+    "nu": 1,
+    "mu": 0.06666666666666667,
+    "horizon": 100,
+    "initial": "jam",
+    "first_full_time": -1,
+    "occupied": 508,
+    "attempts": 614080,
+    "accepted": [
+      62,
+      939,
+      1190,
+      125
+    ],
+    "enabled_channel_counts": [
+      0,
+      2,
+      13,
+      13
+    ],
+    "translation_count_convention": "endpoint channels of rate kappa/2"
+  }
+]

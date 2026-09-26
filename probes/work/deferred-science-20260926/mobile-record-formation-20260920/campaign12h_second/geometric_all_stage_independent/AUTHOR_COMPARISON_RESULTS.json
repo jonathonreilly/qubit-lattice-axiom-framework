@@ -1,0 +1,120 @@
+{
+  "completed_utc": "2026-09-21T17:23:42.215888+00:00",
+  "precomparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 3437,
+    "sha256": "e1cdf112190c195c6fd9d30298a244dde2db62c521716ffbe586361cd66d3cea"
+  },
+  "source_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_check.py",
+      "bytes": 13404,
+      "sha256": "e75dde7de0a9570e58a4b10f1bea076548a0fe7ba369fc44c38cfaf925c1f560"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_corridor_transport_check.py",
+      "bytes": 8748,
+      "sha256": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_ALL_STAGE_FORMATION_CLOCK.md",
+      "bytes": 15500,
+      "sha256": "e7d47eb97d62fad65153d377bc19257ebcc2ff8aa1b0f0c5027a5424afe0eabd"
+    }
+  ],
+  "authentication": {
+    "all_four_group_files_equal_combined_result": true,
+    "author_connectivity_graph_inventories_reconstructed": 42,
+    "author_marked_paths_receipt_count_only": 8330,
+    "author_exhaustive_injections_receipt_count_only": 2291317,
+    "preliminary_corridor_graphs_receipt_count_only": 842,
+    "preliminary_ordered_paths_receipt_count_only": 115062,
+    "run_log_agrees_and_stderr_empty": true
+  },
+  "selective_independent_recomputations": {
+    "matrix_and_marked_route_cases": [
+      {
+        "graph": "path4",
+        "layers_exactly_compared": 2,
+        "author_paths_independently_replayed": 4
+      },
+      {
+        "graph": "cycle4",
+        "layers_exactly_compared": 2,
+        "author_paths_independently_replayed": 5
+      },
+      {
+        "graph": "odd_barbell",
+        "layers_exactly_compared": 3,
+        "author_paths_independently_replayed": 19
+      }
+    ],
+    "path10_empty_corridor_length": 8,
+    "complete_transient_generator_clock_rows": [
+      {
+        "graph": "cycle4",
+        "beta": "1",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "cycle4",
+        "beta": "1/100",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "cycle4",
+        "beta": "1/1000000",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "paw4",
+        "beta": "1",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "paw4",
+        "beta": "1/100",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "paw4",
+        "beta": "1/1000000",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "cycle6",
+        "beta": "1",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "cycle6",
+        "beta": "1/100",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "cycle6",
+        "beta": "1/1000000",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "irregular6",
+        "beta": "1",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "irregular6",
+        "beta": "1/100",
+        "complete_generator_mean_and_transform_equal": true
+      },
+      {
+        "graph": "irregular6",
+        "beta": "1/1000000",
+        "complete_generator_mean_and_transform_equal": true
+      }
+    ]
+  },
+  "coverage_limit": "Author exhaustive suites were not rerun. Authenticated stored counts are distinct from the selective independent recomputations and pre-seal proof/controls.",
+  "failed_attempts": [
+    "failed_attempt_01/FAILURE_RECEIPT.json: fixed independent tuple/list flattening error; no author-source or mathematical finding."
+  ]
+}

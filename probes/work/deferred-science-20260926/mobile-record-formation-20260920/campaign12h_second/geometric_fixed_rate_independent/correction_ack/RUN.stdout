@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-21T16:11:17.337751+00:00",
+  "prior_final_seal_rows_authenticated": 728,
+  "prior_artifacts_preserved": 715,
+  "inverse_full_diff_recovers_reviewed_source": true,
+  "four_sealed_synthetic_replays_all_exit_zero": true,
+  "successful_baseline_point_estimates_and_percentile_endpoints_byte_equal_as_JSON_values": true,
+  "all_twelve_declared_cells_and_fixed_seed_indices_checked": true,
+  "wrapper_exception_schema_preserved_and_excluded": true,
+  "zero_winding_and_mixed_zero_resample_statuses_checked": true,
+  "mixed_zero_resamples": 2481,
+  "exact_paired_covariance_delta_SE_squared": {
+    "S1": "9/4",
+    "W": "976562499999999937500000000000001/1000000000000000000000000000000000000",
+    "S2_over_S1": "4/2401",
+    "S3_over_S1": "400/2401",
+    "S4_over_S1": "1600/2401",
+    "W_over_S1": "1/153664",
+    "axis_mode_fourth_ratio": "880111111111111368222222222222241/29412250000000000000000000000000000",
+    "axis_shell_fourth_ratio": "2916/117649",
+    "winding_fourth_ratio": "3725290298461913612153795030381956359486521026234670380015432098765625000000000000000000000000000000/19961474936031341419870797825775956747790259425332758815854338135636862086334019182775634430727023481",
+    "time_per_volume": "9/4",
+    "slides_per_site": "1/4",
+    "site_reuse_fraction": "25000000000000010000000000000001/2500000000000000000000000000000000"
+  },
+  "zero_one_and_zero_S1_history_branches_checked": true,
+  "current_analyzer_sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a",
+  "correction_note_sha256": "9caea17017738357a7a9a8ff6d32ef937265a08d249e7046f15b9595b7fc7857",
+  "unchanged_protocol_sha256": "4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48",
+  "unchanged_plan_sha256": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab",
+  "production_values_read": false,
+  "unresolved_findings": []
+}

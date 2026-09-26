@@ -1,0 +1,160 @@
+{
+  "created_utc": "2026-09-21T16:42:30.265272+00:00",
+  "scope": "Narrow polynomial F1 correction acknowledgment only; prior mathematical review unchanged.",
+  "finding": "F1 closed: cycle_6 is selected and contributes its five intended numerical killing rows.",
+  "exact_one_line_forward_and_inverse_delta_verified": true,
+  "old_seals_authenticated": [
+    {
+      "seal": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/PRE_COMPARISON_SEAL.json",
+        "bytes": 13069,
+        "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd"
+      },
+      "bindings_authenticated": 43,
+      "old_runner_substitutions": [
+        {
+          "original_binding": {
+            "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+            "bytes": 11808,
+            "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+          },
+          "preserved_source": {
+            "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py",
+            "bytes": 11808,
+            "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+          }
+        }
+      ]
+    },
+    {
+      "seal": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/FINAL_SEAL.json",
+        "bytes": 20297,
+        "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97"
+      },
+      "bindings_authenticated": 61,
+      "old_runner_substitutions": [
+        {
+          "original_binding": {
+            "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+            "bytes": 11808,
+            "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+          },
+          "preserved_source": {
+            "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py",
+            "bytes": 11808,
+            "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py",
+      "bytes": 11808,
+      "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+      "bytes": 11809,
+      "sha256": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+      "bytes": 11276,
+      "sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_FIXTURE_CORRECTION.md",
+      "bytes": 1462,
+      "sha256": "6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/check_correction.py",
+      "bytes": 2946,
+      "sha256": "6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RESULTS.json",
+      "bytes": 16148,
+      "sha256": "7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.log",
+      "bytes": 12939,
+      "sha256": "e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_checks/RESULTS.json",
+      "bytes": 75606,
+      "sha256": "b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/REPORT.md",
+      "bytes": 9979,
+      "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py",
+      "bytes": 12260,
+      "sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2"
+    }
+  ],
+  "previous_35_rows_exactly_unchanged": true,
+  "new_rows": 5,
+  "replayed_rows_match_author_exactly": true,
+  "exact_inverse_controls": [
+    {
+      "beta_times_T": 0.0001,
+      "beta_exact_binary_float_value": "5852459515554133/147573952589676412928",
+      "exit_TV_exact": "5852459515554133/590307515277736759978",
+      "scaled_mean_error_exact": "5852459515554133/885443715538058477568",
+      "joint_event_error_exact": "29365313594002849164942036538731793751/2787800433222359756828936877141139839270920",
+      "maximum_numeric_difference": 2.5057775678623967e-17
+    },
+    {
+      "beta_times_T": 0.01,
+      "beta_exact_binary_float_value": "2286116998263333/576460752303423488",
+      "exit_TV_exact": "2286116998263333/2310415243210220618",
+      "scaled_mean_error_exact": "762038999421111/1152921504606846976",
+      "joint_event_error_exact": "44885523602812086060533329190460471/42851957774865655883583885411782107400",
+      "maximum_numeric_difference": 6.331740687315346e-17
+    },
+    {
+      "beta_times_T": 0.1,
+      "beta_exact_binary_float_value": "5715292495658333/144115188075855872",
+      "exit_TV_exact": "5715292495658333/587891337294740154",
+      "scaled_mean_error_exact": "5715292495658333/864691128455135232",
+      "joint_event_error_exact": "28494423923955090406868810253650119/2858486349189097396276794821076619400",
+      "maximum_numeric_difference": 3.382710778154774e-17
+    },
+    {
+      "beta_times_T": 1,
+      "beta_exact_binary_float_value": "1786028904893229/4503599627370496",
+      "exit_TV_exact": "1786028904893229/21586456319268442",
+      "scaled_mean_error_exact": "595342968297743/9007199254740992",
+      "joint_event_error_exact": "1786028904893229/21586456319268442",
+      "maximum_numeric_difference": 1.1102230246251565e-16
+    },
+    {
+      "beta_times_T": 10,
+      "beta_exact_binary_float_value": "8930144524466145/2251799813685248",
+      "exit_TV_exact": "8930144524466145/26867488303673282",
+      "scaled_mean_error_exact": "2976714841488715/4503599627370496",
+      "joint_event_error_exact": "8930144524466145/26867488303673282",
+      "maximum_numeric_difference": 2.220446049250313e-16
+    }
+  ],
+  "new_failures": [],
+  "limits": [
+    "Only the affected C6 fixture rerun, not unrelated author groups.",
+    "Old result bindings authenticated through preserved old runner bytes; they do not bind the corrected runner.",
+    "No primary edits, production observables, Git changes or formal audit disposition."
+  ]
+}

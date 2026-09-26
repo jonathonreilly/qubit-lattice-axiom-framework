@@ -1,0 +1,14 @@
+{"eigenvalues": ["1 once", "j/7 six times", "0 seven times"], "name": "rank_seven_original_kernel", "status": "passed"}
+{"lower_bound": "sqrt(3/7) |j| / 14", "name": "rank_TV_constant_and_Frobenius_control", "rank_four_example_worst_TV": "3 |j| / 28", "status": "passed"}
+{"a_effect_slope": "0", "b_effect_slope": "j(2-sqrt(3))/56", "name": "natural_encoding_minimax_exact_primal_and_dual", "optimum": "|j|(3-sqrt(3))/14", "status": "passed"}
+{"cases": [{"j": -0.83, "largest_inequality_violation": 2.42861286636753e-17, "optimum": 0.0751712735512737, "target": 0.0751712735512737}, {"j": -0.17, "largest_inequality_violation": 2.42861286636753e-17, "optimum": 0.0153965259080922, "target": 0.015396525908092207}, {"j": 0.0, "largest_inequality_violation": 0.0, "optimum": 0.0, "target": 0.0}, {"j": 0.29, "largest_inequality_violation": 0.0, "optimum": 0.026264661843216113, "target": 0.026264661843216113}, {"j": 0.91, "largest_inequality_violation": 6.938893903907228e-18, "optimum": 0.082416697508023, "target": 0.08241669750802298}], "name": "natural_minimax_symmetry_reduced_LP", "scope": "Numerical cross-check of the exact twirling/primal/dual proof, not a separate unrestricted encoding optimization.", "status": "passed"}
+{"certified_range": "|j|<=1/3 by Hilbert-Schmidt norm bound", "exact_probability_pairs": 196, "name": "qutrit_exact_construction", "numerical_endpoint_min_effect": 0.020920944200960887, "numerical_endpoint_min_state": 0.09763107293781749, "status": "passed"}
+{"covariance": "I_orbit tensor the proper-cubic spinor", "effect_bloch_radii": ["|j|", "3|j|/4"], "exact_probability_pairs": 196, "name": "four_dimensional_exact_construction", "status": "passed"}
+{"name": "shared_encoding_randomness_scope_countercontrol", "range": "|j|<=1/6", "resource": "Uniform six-valued shared seed r; input Bloch z=t_br and effect slope 6j t_ar. Excluded by the note's product-resource assumption.", "status": "passed"}
+{"allowed_W": "two trivial characters", "available_ordinary_character_ratios": 2, "character_table": [[1, 1, 1, 1, 1], [1, -1, 1, 1, -1], [2, 0, 2, -1, 0], [3, -1, -1, 0, 1], [3, 1, -1, 0, -1]], "class_sizes": [1, 6, 3, 8, 6], "name": "proper_cubic_character_and_projective_commutant_obstruction", "required_commutant_dimension": 3, "required_projective_blocks": "three inequivalent one-dimensional blocks with one shared multiplier", "status": "passed"}
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/independent_check.py", line 182, in <module>
+    nonorth_pairs=sum(overlap[a,bb]>0 for a in range(14) for bb in range(a+1,14))
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/logic/boolalg.py", line 249, in _noop
+    raise TypeError('BooleanAtom not allowed in this context.')
+TypeError: BooleanAtom not allowed in this context.

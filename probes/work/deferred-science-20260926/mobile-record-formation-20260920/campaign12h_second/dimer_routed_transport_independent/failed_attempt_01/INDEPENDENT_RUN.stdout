@@ -1,0 +1,4 @@
+geometry winding_staggered8 cycles 4 8 direction variance 0
+geometry irregular8 cycles 4 8 direction variance 0
+geometry irregular12 cycles 6 12 direction variance 0
+exact rates, full-support currents and cubic code passed

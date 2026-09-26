@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-09-22T20:22:30.345783+00:00",
+  "author_head": "76b210e9e1fb2f2ff4d9e7156ca327dd0dfb01ee",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md",
+      "bytes": 15367,
+      "sha256": "a527532324a5ed75e660b19c131f759fa0b38be4cdcf855f3a4f59c205cbc99e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION.md",
+      "bytes": 11198,
+      "sha256": "b900352f9e1d33c249f5ff155602feb6345c680d09ea192eedbc65d51ee670a4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_PENALTY_FOR_MOBILE_RECORDS.md",
+      "bytes": 10593,
+      "sha256": "860e8d364e50f8cddcbb6c534d69ca4ce822020ea80deab6c22361eeda0d361c"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/2301.07717v3",
+      "read_scope": "Full Section2 including Gauss constraint and PXP mapping, introductory context, Section3.2 spin-one mapping through Eq5; no later effective-Hamiltonian result imported."
+    },
+    {
+      "url": "https://dlmf.nist.gov/10.6",
+      "read_scope": "Ordinary Bessel recurrence; exact propagator also derived and checked directly."
+    },
+    {
+      "url": "https://arxiv.org/abs/quant-ph/0408140",
+      "read_scope": "Abstract only, general ballistic-walk context; the boundary-state first-moment coefficient is derived in this packet."
+    },
+    {
+      "url": "https://arxiv.org/html/2403.13576v2",
+      "read_scope": "Model definitions through start of Laplace analysis; no theorem imported from this alternating-hopping/localization paper."
+    }
+  ],
+  "scope": "Exact 1D physical-space factorization and second-order coefficient; exact singular-limit result only for the separately declared reduced one-birth kernel. No microscopic thermodynamic/Lindblad-limit claim."
+}

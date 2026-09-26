@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-09-21T17:52:17.198201+00:00",
+  "positive_literal_square_intertwiner_exact": true,
+  "square_Gram_commutes_even_though_not_isometric": true,
+  "consistent_configuration_basis_rephasing_preserves_compatibility": true,
+  "scope": "All configurations of one square are flippable. This does not construct the sharply conditioned ladder operation.",
+  "checker_sha256": "2d7157295b3149c901417cbddf13aa38d181876f43d4fde5a5c1f60f671d25e8",
+  "independent_helper_sha256": "dfa0d3aacbe3209ef615a0c8751ad0b780a95052621d7a280f90095caafebc0e"
+}

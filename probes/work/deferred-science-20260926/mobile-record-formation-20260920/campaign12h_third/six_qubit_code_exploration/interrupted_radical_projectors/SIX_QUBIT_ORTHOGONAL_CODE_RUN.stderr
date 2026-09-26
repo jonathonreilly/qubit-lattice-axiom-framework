@@ -1,0 +1,41 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/six_qubit_orthogonal_code_check.py", line 88, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/six_qubit_orthogonal_code_check.py", line 61, in main
+    Q=s.simplify(Q)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/simplify.py", line 616, in simplify
+    return _eval_simplify(**kwargs)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2578, in _eval_simplify
+    return self.applyfunc(lambda x: x.simplify(**kwargs))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2108, in applyfunc
+    return self._eval_applyfunc(f)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2040, in _eval_applyfunc
+    valmap = {v: f(v) for v in dok.values()}
+                 ~^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2578, in <lambda>
+    return self.applyfunc(lambda x: x.simplify(**kwargs))
+                                    ~~~~~~~~~~^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/basic.py", line 1956, in simplify
+    return simplify(self, **kwargs)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/simplify.py", line 758, in simplify
+    n, d = fraction(radsimp(1/denom, symbolic=False, max_terms=1))
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/radsimp.py", line 1006, in radsimp
+    n, d = fraction(handle(expr))
+                    ~~~~~~^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/radsimp.py", line 942, in handle
+    _d = nsimplify(d)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/simplify.py", line 1518, in nsimplify
+    re = nsimplify_real(re)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/simplify/simplify.py", line 1500, in nsimplify_real
+    newexpr = mpmath.identify(xv, constants=constants_dict,
+        tol=tolerance, full=full)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/identification.py", line 827, in identify
+    r = ctx.pslq([ctx.ln(x)] + [a[0] for a in logs], tol, M)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/mpmath/identification.py", line 226, in pslq
+    B[k,j] = B[k,j] + (t*B[k,i] >> prec)
+    ~^^^^^
+KeyboardInterrupt

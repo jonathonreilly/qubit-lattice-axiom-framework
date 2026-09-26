@@ -1,0 +1,84 @@
+{
+  "count": 15,
+  "checks": [
+    {
+      "name": "full_simplex_entropy_metric_inverse",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pure_vector_species_reconstruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "positive_quadratic_wave_energy",
+      "passed": true,
+      "detail": {
+        "expression": "(Yx**2 + Yy**2 + Yz**2)/(2*rho_B) + (3*Xx**2 + 3*Xy**2 + 3*Xz**2)/(2*rho_A)"
+      }
+    },
+    {
+      "name": "quadratic_entropy_flux_is_Poynting_component_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_entropy_flux_is_Poynting_component_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quadratic_entropy_flux_is_Poynting_component_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_orbit_and_total_record_current_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_orbit_and_total_record_current_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exact_orbit_and_total_record_current_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "energy_continuity_without_Gauss_assumption",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stress_identity_with_both_divergence_terms",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "unconstrained_product_requires_Gauss_defect",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "second_order_record_energy_coefficient_A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "second_order_record_energy_coefficient_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "second_order_total_record_energy_coefficient",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "source_sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab",
+  "scope": "Symbolic controls of the stated conditional classical continuum identities; not physical energy identification, quantization, Gauss-sector preparation or a smooth-solution existence theorem."
+}

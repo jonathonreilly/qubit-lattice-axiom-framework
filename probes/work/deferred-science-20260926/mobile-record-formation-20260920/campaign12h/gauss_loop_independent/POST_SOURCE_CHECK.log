@@ -1,0 +1,8 @@
+VERIFIED blind_bytes_unchanged_and_primary_sources_authenticated {"blind_artifacts": 4, "primary_files": 5}
+VERIFIED authenticated_MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json {"recorded_groups": 13, "rerun": false}
+VERIFIED authenticated_GAUSS_LOOP_FUGACITY_RESULTS.json {"recorded_groups": 6, "rerun": false}
+VERIFIED exact_template_membership_under_48_cubic_actions_N5 {"polar_and_axial": true}
+VERIFIED exact_template_membership_under_48_cubic_actions_N7 {"polar_and_axial": true}
+VERIFIED birth_bracket_normalization_and_two_sector_trace {"empty_population_rate": "48 beta", "general_population_rate": "16 beta sum_planes P(four vacancies)"}
+VERIFIED isolated_center_and_circulation_modes {"center_eigenvalue": "-2*kappa*(-cos(q1) - cos(q2) - cos(q3) + 3)", "orientation_eigenvalue": "-2*kappa*(-cos(q1) - cos(q2) - cos(q3) + 3) - 2*nu"}
+POST_SOURCE_GROUPS 7

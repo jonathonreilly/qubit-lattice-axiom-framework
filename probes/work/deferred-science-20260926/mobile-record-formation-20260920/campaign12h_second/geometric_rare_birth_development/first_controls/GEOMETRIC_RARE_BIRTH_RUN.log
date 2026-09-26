@@ -1,0 +1,14 @@
+{"name": "all_connected_regular_bipartite_graphs_up_to_four_vertices_per_side", "pass": true, "graphs": 106, "near_states": 2381, "directed_slide_channels": 8864, "longest_constructed_transform": 8, "cycles_flipped": 751}
+{"name": "cube_exact_symbolic_absorption_and_108_state_harmonic_lift", "pass": true, "states": 108, "probability": "(6*b**3 + 77*b**2 + 308*b + 308)/(7*(b + 6)*(3*b**2 + 19*b + 22))", "at_one": "699/2156", "slow_limit": "1/3", "fast_limit": "2/7"}
+{"name": "full_near_perfect_killed_chain_all_targets", "pass": true, "near_states": 44, "full_states": 9, "rows": [{"beta": "1", "worst_start_TV": "1334/3791", "decimal": 0.3518860458981799}, {"beta": "1/10", "worst_start_TV": "5157842/86622563", "decimal": 0.05954386272315678}, {"beta": "1/100", "worst_start_TV": "45935750402/7191547805603", "decimal": 0.006387463678710589}, {"beta": "1/1000", "worst_start_TV": "453933574704002/705505144380056003", "decimal": 0.0006434163922403204}]}
+{"name": "periodic_constructive_paths_with_noncontractible_cycles", "pass": true, "rows": [{"N": 4, "case": "shifted_columnar_noncontractible_cycles", "events": 80, "cycles": 15}, {"N": 4, "case": "orthogonal_columnar", "events": 80, "cycles": 15}, {"N": 6, "case": "shifted_columnar_noncontractible_cycles", "events": 288, "cycles": 35}, {"N": 6, "case": "orthogonal_columnar", "events": 398, "cycles": 53}, {"N": 8, "case": "shifted_columnar_noncontractible_cycles", "events": 706, "cycles": 63}, {"N": 8, "case": "orthogonal_columnar", "events": 1220, "cycles": 127}, {"N": 12, "case": "shifted_columnar_noncontractible_cycles", "events": 2450, "cycles": 143}, {"N": 12, "case": "orthogonal_columnar", "events": 6078, "cycles": 431}]}
+{
+  "complete": true,
+  "groups": 4,
+  "source_sha256": {
+    "geometric_rare_birth_check.py": "2b34607932623c47e8744203bb5da18b6cae7b42eea248c7e2043301ddff5a3b",
+    "GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md": "19ebfe1d244139a349f5e73b5c685f510c2c52d094044ed44fd27be1bf7df14a",
+    "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259",
+    "GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+  }
+}

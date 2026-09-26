@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-09-21T15:04:15.321222+00:00",
+  "acknowledgment": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK.json",
+    "bytes": 2802,
+    "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+  },
+  "original_review_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+    "bytes": 12389,
+    "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+  },
+  "note_before": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_f1_fix/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.before.md",
+    "bytes": 8317,
+    "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+  },
+  "note_after": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+    "bytes": 8459,
+    "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+  },
+  "delta": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_f1_fix/DELTA.json",
+    "bytes": 643,
+    "sha256": "34bee9756b392e907177142d37cfd32285535a5c40190ca79ccf299b0b20916d"
+  }
+}

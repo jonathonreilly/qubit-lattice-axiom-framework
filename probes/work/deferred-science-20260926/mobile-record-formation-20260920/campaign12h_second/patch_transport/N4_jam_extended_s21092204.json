@@ -1,0 +1,2610 @@
+{
+  "source_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092204.final.txt",
+  "source_sha256": "55c3d497b3d1002f46b52eeebf3737f3c6e4d9d2c41665970fa91c65f5a12b84",
+  "N": 4,
+  "trials": [
+    {
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003982088528573513,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042399996891617775,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004295420367270708,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003749169409275055,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.005316791124641895,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041037495248019695,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004814169369637966,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000451583880931139,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.005705708870664239,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004166660364717245,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043079094029963017,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003939580637961626,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003951250109821558,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003809579648077488,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000433540903031826,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042229192331433296,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037858285941183567,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043570809066295624,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041070813313126564,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000390833942219615,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00038879108615219593,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003802499268203974,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00040841707959771156,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004424590151757002,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003937908913940191,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037816702388226986,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004064580425620079,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003881659358739853,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003972090780735016,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037670903839170933,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003750422038137913,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037274998612701893,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000378916971385479,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004011669661849737,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042887497693300247,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00039849989116191864,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003852918744087219,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003808331675827503,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003742920234799385,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037241680547595024,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003783339634537697,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00038420804776251316,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042775017209351063,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00038062501698732376,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037283310666680336,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037812511436641216,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000398790929466486,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037066685035824776,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003937091678380966,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037137512117624283,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003705001436173916,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003712500911206007,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00038708304055035114,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00036949990317225456,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003955420106649399,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003699171356856823,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00039333407767117023,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00036791712045669556,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004556670319288969,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004124159459024668,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        0
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003760000690817833,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        1
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 28,
+      "constraints": 51,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00037633394822478294,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        2
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00038266717456281185,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        3
+      ],
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "variables": 32,
+      "constraints": 52,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0003915838897228241,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042458390817046165,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004749579820781946,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043533300049602985,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004366668872535229,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0005470828618854284,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041233422234654427,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042516691610217094,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004682089202105999,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00048458296805620193,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041579105891287327,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004469591658562422,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        2,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00044954195618629456,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004945839755237103,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00046208291314542294,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00045670801773667336,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        3,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000445124926045537,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004195000510662794,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004812919069081545,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004462499637156725,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        0,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00044916593469679356,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043833302333950996,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004106659907847643,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004292090889066458,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        1,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004862088244408369,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00045670801773667336,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00042583304457366467,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00047604204155504704,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        2,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004295830149203539,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004437919706106186,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041695800609886646,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004430417902767658,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        1,
+        3,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041887490078806877,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00047212489880621433,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00046254112385213375,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0005051249172538519,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        0,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004490420687943697,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000447375001385808,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004265420138835907,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0005075829103589058,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        1,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000420666066929698,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00046566594392061234,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043020909652113914,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0005813331808894873,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        2,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00045587518252432346,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004145421553403139,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041566696017980576,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004455831367522478,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        2,
+        3,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004197079688310623,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00047983299009501934,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041133398190140724,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004446248058229685,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        0,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004275408573448658,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000475957989692688,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 48,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00041816593147814274,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.005104584153741598,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        1,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000489416066557169,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.000499707879498601,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00043408293277025223,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00047604204155504704,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        2,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004651250783354044,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        0
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004313329700380564,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        1
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004249580670148134,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        2
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004887080285698175,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        3,
+        3,
+        3
+      ],
+      "shape": [
+        3,
+        2,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00044508278369903564,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.004992000060155988,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        1
+      ],
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "variables": 47,
+      "constraints": 75,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0004612079355865717,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        2
+      ],
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.00045316596515476704,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        0,
+        3
+      ],
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "variables": 52,
+      "constraints": 76,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0005063328426331282,
+      "objective": 0.0
+    },
+    {
+      "base": [
+        0,
+        1,
+        0
+      ],
+      "shape": [
+        2,
+        3,
+        2
+      ],
+      "variables": 44,
+      "constraints": 74,
+      "status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "seconds": 0.0007070829160511494,
+      "objective": -8.0
+    }
+  ],
+  "positive_witnesses": [
+    {
+      "receipt": {
+        "base": [
+          0,
+          1,
+          0
+        ],
+        "shape": [
+          2,
+          3,
+          2
+        ],
+        "variables": 44,
+        "constraints": 74,
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.0007070829160511494,
+        "objective": -8.0
+      },
+      "witness": {
+        "moves": [
+          {
+            "record_initial_site": [
+              0,
+              1,
+              0
+            ],
+            "destination": [
+              1,
+              1,
+              0
+            ],
+            "content": 4
+          },
+          {
+            "record_initial_site": [
+              0,
+              1,
+              1
+            ],
+            "destination": [
+              1,
+              1,
+              1
+            ],
+            "content": 5
+          },
+          {
+            "record_initial_site": [
+              0,
+              2,
+              0
+            ],
+            "destination": [
+              0,
+              1,
+              0
+            ],
+            "content": 2
+          },
+          {
+            "record_initial_site": [
+              0,
+              3,
+              0
+            ],
+            "destination": [
+              0,
+              2,
+              0
+            ],
+            "content": 3
+          },
+          {
+            "record_initial_site": [
+              1,
+              1,
+              0
+            ],
+            "destination": [
+              1,
+              2,
+              0
+            ],
+            "content": 2
+          },
+          {
+            "record_initial_site": [
+              1,
+              2,
+              0
+            ],
+            "destination": [
+              1,
+              3,
+              0
+            ],
+            "content": 3
+          },
+          {
+            "record_initial_site": [
+              1,
+              3,
+              0
+            ],
+            "destination": [
+              0,
+              3,
+              0
+            ],
+            "content": 4
+          },
+          {
+            "record_initial_site": [
+              1,
+              3,
+              1
+            ],
+            "destination": [
+              0,
+              3,
+              1
+            ],
+            "content": 5
+          }
+        ],
+        "final_state": [
+          1,
+          0,
+          3,
+          0,
+          2,
+          -1,
+          4,
+          5,
+          3,
+          0,
+          1,
+          1,
+          4,
+          5,
+          2,
+          0,
+          0,
+          1,
+          2,
+          1,
+          4,
+          5,
+          3,
+          2,
+          2,
+          1,
+          2,
+          3,
+          3,
+          -1,
+          3,
+          1,
+          1,
+          4,
+          5,
+          0,
+          2,
+          4,
+          5,
+          0,
+          3,
+          0,
+          4,
+          5,
+          4,
+          5,
+          4,
+          5,
+          0,
+          3,
+          2,
+          1,
+          4,
+          5,
+          3,
+          1,
+          2,
+          1,
+          0,
+          0,
+          3,
+          2,
+          4,
+          5
+        ],
+        "new_vacancies": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            3,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "limits": "Only exact positive certificates are scientific conclusions; no search failure promoted to a universal negative."
+}

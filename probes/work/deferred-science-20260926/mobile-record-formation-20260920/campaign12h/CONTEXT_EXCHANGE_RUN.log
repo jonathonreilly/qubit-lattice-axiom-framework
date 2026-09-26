@@ -1,0 +1,108 @@
+{
+  "status": "primary_finite_and_symbolic_controls",
+  "source_sha256": "5f9c775f4381ab50ef22831ffbe0e27016cff193b18b977f2156d635b57ebc71",
+  "local_rate_cases": 28812,
+  "rotation_cases": 691488,
+  "pointwise_periodic_stationarity": [
+    {
+      "length": 4,
+      "states": 2401,
+      "u": -1,
+      "E": 1,
+      "max_residual": 0
+    },
+    {
+      "length": 4,
+      "states": 2401,
+      "u": 2,
+      "E": 0,
+      "max_residual": 0
+    },
+    {
+      "length": 4,
+      "states": 2401,
+      "u": 1,
+      "E": -2,
+      "max_residual": 0
+    },
+    {
+      "length": 4,
+      "states": 2401,
+      "u": 0,
+      "E": 1,
+      "max_residual": 0
+    },
+    {
+      "length": 5,
+      "states": 16807,
+      "u": -1,
+      "E": 1,
+      "max_residual": 0
+    },
+    {
+      "length": 5,
+      "states": 16807,
+      "u": 2,
+      "E": 0,
+      "max_residual": 0
+    },
+    {
+      "length": 5,
+      "states": 16807,
+      "u": 1,
+      "E": -2,
+      "max_residual": 0
+    },
+    {
+      "length": 5,
+      "states": 16807,
+      "u": 0,
+      "E": 1,
+      "max_residual": 0
+    },
+    {
+      "length": 6,
+      "states": 117649,
+      "u": -1,
+      "E": 1,
+      "max_residual": 0
+    },
+    {
+      "length": 6,
+      "states": 117649,
+      "u": 2,
+      "E": 0,
+      "max_residual": 0
+    },
+    {
+      "length": 6,
+      "states": 117649,
+      "u": 1,
+      "E": -2,
+      "max_residual": 0
+    },
+    {
+      "length": 6,
+      "states": 117649,
+      "u": 0,
+      "E": 1,
+      "max_residual": 0
+    }
+  ],
+  "exact_product_current_entries": 216,
+  "generic_symbolic_checks": [
+    "A C symmetric",
+    "A^3=c^2|k|^2 A",
+    "trace A^2=2c^2|k|^2",
+    "six by six characteristic polynomial"
+  ],
+  "full_generator_insertion_identity_states": 2401,
+  "example": {
+    "rho_star": 0.5,
+    "u": -1,
+    "E": 1,
+    "sound_speed_squared": "1/6",
+    "minimal_rate_floor": "1/20",
+    "interpretation": "exact current eigenvalues; microscopic waves not established"
+  }
+}

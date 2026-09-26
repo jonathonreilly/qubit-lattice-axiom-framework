@@ -1,0 +1,15 @@
+{
+  "histories": 960,
+  "cells": 8,
+  "authenticated_files": 3840,
+  "results": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_analysis/RESULTS.json",
+    "bytes": 136370,
+    "sha256": "08aab30040e7b0c50c60486bf769f7c87247d8771f3f2315d577725fd4d60345"
+  },
+  "per_history": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_analysis/PER_HISTORY.json",
+    "bytes": 2509850,
+    "sha256": "433459f27af8320e915c9568bfa8d726d94483c8cf85cffec6b0f20d1fdfcf92"
+  }
+}

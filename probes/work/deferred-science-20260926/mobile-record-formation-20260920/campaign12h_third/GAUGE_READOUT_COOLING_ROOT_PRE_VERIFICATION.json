@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-22T18:54:05.919448+00:00",
+  "receipts": [
+    {
+      "seal": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "99c8c68ce7803368e633fdf7f3d7314eb1f47f7ba3150a3fa732888e1f1a43b3",
+      "bindings_verified": 43
+    },
+    {
+      "seal": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_AND_RK_COOLING_AUTHOR_SEAL.json",
+      "sha256": "d9ea3fc91a09aff6e197925cd2a37907217f4583a8bf29a9a871a64423c2b8fc",
+      "bindings_verified": 13
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "created_utc": "2026-09-21T08:27:31.908374+00:00",
+  "parent": "7dc431c38d9d91e1901e6dc89e9113b343b69627",
+  "scope": "Completed new local Gauss construction, proposed static proof, independent finite reconstruction and primary native source corrections. Axis runs and active polymer review excluded.",
+  "files": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/CHECKPOINT.md",
+      "bytes": 6959,
+      "sha256": "56bf537e5838854b38dac31d3934603fcc722e5aa0545718b21d7931ccd8c3f8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_FORMATION_EULER_DERIVATION.md",
+      "bytes": 13642,
+      "sha256": "9dda6203328530added92e9369a271077ead4da2704979211bc0eb308e6b7458"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_FUGACITY_RESULTS.json",
+      "bytes": 1917,
+      "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_FUGACITY_RUN.log",
+      "bytes": 348,
+      "sha256": "6d681c05fd5d974e03e97765d0553ab4629600ac8d6dd35f74086cac367c71ba"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_INDEPENDENT_VERIFICATION.json",
+      "bytes": 884,
+      "sha256": "7d02a83a5a7871451e058b46ea720342417839ed1f8040545e75aef42b471156"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RESULTS.json",
+      "bytes": 4377,
+      "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RUN.log",
+      "bytes": 553,
+      "sha256": "ba4068b9495e7bc4f2c0a8b35fcf59c98cfad5bba47b3340046f2b017e1e133d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "bytes": 16105,
+      "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "bytes": 11623,
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+      "bytes": 3206,
+      "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_RECORD_LOOP_RUN.log",
+      "bytes": 792,
+      "sha256": "234c4421972c9dd5848300c694e244980c16345aab3c66c18db3ab8933b1dc0e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/checkpoint_history/CHECKPOINT_before_20260921_0820.md",
+      "bytes": 77367,
+      "sha256": "be469be71a40005fa205d6b6f5361434755e373c4d81195fbe74e7eb8f4b6665"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/birth_covariance_structural_equality/DIAGNOSTIC.json",
+      "bytes": 262,
+      "sha256": "9e349bbb78a524c7ce503d92974f68ce8551794bf1356b86c1b2dccab3076f39"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/birth_covariance_structural_equality/MICROSCOPIC_GAUSS_RECORD_LOOP_RUN.log",
+      "bytes": 1353,
+      "sha256": "842f748903f9292fc26d8438e81476f21d8c82e60160b21541f26ac8185b58c5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/birth_covariance_structural_equality/microscopic_gauss_record_loop_check.py",
+      "bytes": 6834,
+      "sha256": "3ba1737abfd42e291a1a46e04f5837cf43c7194da33dfaa00fcfc2b03e9337da"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/first_local_controls/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+      "bytes": 3093,
+      "sha256": "597dd73f772d355e38e89392303269c662ac921e3cca1623b4e89f52810a33f9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/first_local_controls/MICROSCOPIC_GAUSS_RECORD_LOOP_RUN.log",
+      "bytes": 746,
+      "sha256": "6a71bb5b50e7b42fd0486d0ea3a365a8e958b323c804f05f5e195a9d12a66bb6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/first_local_controls/REVISION.json",
+      "bytes": 171,
+      "sha256": "7b5da3cf9f06310d591c6309026958230d3a0f5d842bf2eae1d5376652346cab"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_development/first_local_controls/microscopic_gauss_record_loop_check.py",
+      "bytes": 6428,
+      "sha256": "6a99a18af71d09cb731a71b6541552f137fd996836faee9dce766fb4b7d832f4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_fugacity_check.py",
+      "bytes": 4279,
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/BLIND_CHECK.log",
+      "bytes": 1522,
+      "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/BLIND_DERIVATION.md",
+      "bytes": 9979,
+      "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/BLIND_RESULTS.json",
+      "bytes": 2907,
+      "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/CHECKPOINT.md",
+      "bytes": 917,
+      "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+      "bytes": 3931,
+      "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/POST_SOURCE_CHECK.log",
+      "bytes": 862,
+      "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/PRE_SOURCE_SEAL.json",
+      "bytes": 1726,
+      "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+      "bytes": 12493,
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/SOURCE_COMPARISON_RESULTS.json",
+      "bytes": 2550,
+      "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/blind_check.py",
+      "bytes": 9622,
+      "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/comparison_check.py",
+      "bytes": 4610,
+      "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_polymer_check.py",
+      "bytes": 8291,
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py",
+      "bytes": 6862,
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/native_source_corrections_0815/ADMISSIBILITY_FORMATION_EULER_DERIVATION.md",
+      "bytes": 13556,
+      "sha256": "a4f4d2c6cf39a58d46e98e58c979756d3c467d18b8bd812ac768e17e19cba49a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/native_source_corrections_0815/RECEIPT.json",
+      "bytes": 505,
+      "sha256": "8e7e21390d74086265b72ec196bbc770da6377047e81cf8d5b83b96ca6de06c4"
+    }
+  ]
+}

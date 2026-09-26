@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-09-21T13:24:34.372025+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_FORMATION_AND_DIMER_GAUSS.md",
+      "bytes": 13265,
+      "sha256": "ed48192900501781ead6d60f17aedc1e9470746e65f449c5d75eccb6a66188ca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py",
+      "bytes": 11960,
+      "sha256": "65ad8acc7384f25196132b23876f4510347832c4a7f4db548d9c9aead71d2288"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_DIMER_RESULTS.json",
+      "bytes": 2806,
+      "sha256": "ecd779bbabaf253e0d307ab39ef4f944918bbe871179f792d0fb646889775f43"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_DIMER_RUN.log",
+      "bytes": 1901,
+      "sha256": "5cd40e89e1f6fbc88e06d258df28506cca0bcca8096b1210c90523c5bcc413ea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_CUBE_ABSORPTION.json",
+      "bytes": 9714,
+      "sha256": "af49fce1761134e501ddbb6836cdfd61875713c7e66d804db4ac227ba8865f0e"
+    }
+  ],
+  "pre_comparison_seal_authenticated": true,
+  "all_108_states_all_three_channel_families_match_exactly": true,
+  "closed_class_probabilities_confirmed_via_independent_lumping_and_graph_symmetry": [
+    {
+      "category": "full_columnar",
+      "size": 1,
+      "probability": "13/147"
+    },
+    {
+      "category": "full_mixed",
+      "size": 2,
+      "probability": "80/441"
+    },
+    {
+      "category": "full_mixed",
+      "size": 2,
+      "probability": "80/441"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "unfilled_trap",
+      "size": 1,
+      "probability": "1/42"
+    },
+    {
+      "category": "full_columnar",
+      "size": 1,
+      "probability": "13/147"
+    },
+    {
+      "category": "full_mixed",
+      "size": 2,
+      "probability": "80/441"
+    },
+    {
+      "category": "full_columnar",
+      "size": 1,
+      "probability": "13/147"
+    }
+  ],
+  "author_log_and_source_bindings_match": true,
+  "actual_mutations_rejected": [
+    {
+      "case": "identity_translation",
+      "failure": {
+        "type": "ValueError",
+        "message": "occupied birth endpoint"
+      }
+    },
+    {
+      "case": "identity_cube",
+      "failure": {
+        "type": "AssertionError",
+        "message": "dense_cube_moves_eight_immutable_records_and_returns"
+      }
+    },
+    {
+      "case": "missing_staggering",
+      "failure": {
+        "type": "AssertionError",
+        "message": "exact_staggered_gauss_identity"
+      }
+    }
+  ],
+  "full_author_absorption_inverse_rerun": false,
+  "actionable_findings": [],
+  "scope": "Post-seal complete-source comparison plus targeted helper execution. The independent ten-class solve and exact harmonic proof remain distinct from the author 91-state inverse."
+}

@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-09-21T16:13:01.228436+00:00",
+  "scope": "Narrow correction acknowledgment of original F1-F3 only; no generator/FFT or production replay, no audit/landing verdict.",
+  "original_review_report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/REPORT.md",
+    "sha256": "fc272b01eaeb93c3e3d1b2947561376c83df94ba47153a9b4eab0ee27ce7e594",
+    "bytes": 16364
+  },
+  "original_final_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/FINAL_SEAL.json",
+    "sha256": "b3754b93fa492301d4875760c3de7cc598664530a7cf119cda91b1958f39f7fb",
+    "bytes": 250789
+  },
+  "original_analyzer_preserved_at": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/before_analyze_geometric_fixed_rate_followup.py",
+    "sha256": "531c59d50c910bca28f8ae0255bc3507831ac32dc3dbd2dd011cb433bd9d557d",
+    "bytes": 7313
+  },
+  "final_analyzer": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+    "sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a",
+    "bytes": 11122
+  },
+  "new_correction_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_ANALYSIS_CORRECTION.md",
+    "sha256": "9caea17017738357a7a9a8ff6d32ef937265a08d249e7046f15b9595b7fc7857",
+    "bytes": 2282
+  },
+  "complete_source_diff": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/correction_ack/ANALYZER_SOURCE_DIFF.patch",
+    "sha256": "ec3315d80e6a7364d13c0d8bb819af7d30087ecd20f9298c5168a86b1a46396c",
+    "bytes": 10991
+  },
+  "inverse_diff_recovers_original_reviewed_bytes": true,
+  "unchanged_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+      "bytes": 10226
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_growth.cpp",
+      "sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+      "bytes": 11790
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/run_geometric_fixed_rate_followup.py",
+      "sha256": "fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e",
+      "bytes": 9367
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md",
+      "sha256": "4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48",
+      "bytes": 4036
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md",
+      "sha256": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab",
+      "bytes": 3224
+    }
+  ],
+  "finding_dispositions": {
+    "F1": {
+      "status": "closed",
+      "basis": "Actual wrapper_exception rows are excluded before receipt interpretation, with errors/tracebacks retained; declared empty cells and fixed cell seed indices remain visible; exclusions distinguish caps, deadline nonstarts and other failures."
+    },
+    "F2": {
+      "status": "closed",
+      "basis": "Undefined estimates and intervals are metric-specific. Any zero-denominator resample makes that entire interval undefined with exact counts; no draw is removed. Other defined summaries remain available."
+    },
+    "F3": {
+      "status": "closed",
+      "basis": "Direct sample SEs for means and paired delta-method SEs for ratios are reported, with n<2/zero-denominator statuses and explicit first-order scope. Independent exact sample-covariance reconstruction gives SE(S1)=3/2 and SE(S2/S1)=2/49 on the sealed toy."
+    }
+  },
+  "checks": {
+    "four_preserved_synthetic_cases_replayed": true,
+    "all_original_baseline_estimates_and_percentile_endpoints_unchanged": true,
+    "zero_one_and_zero_S1_direct_cases_checked": true,
+    "paired_covariance_SE_checked_for_every_defined_metric": true,
+    "author_replay_results_identical_to_independent_replays": true,
+    "old_seal_rows_authenticated_using_preserved_old_analyzer": 728,
+    "old_artifacts_unchanged": 715
+  },
+  "correction_scope": "Only analyzer edge-case/reporting handling and its separate correction note changed; the original protocol/analysis plan and scientific generator/observables remain untouched.",
+  "limitations": [
+    "No production results or streams inspected.",
+    "No new claim about Gaussianity, phase selection or statistical coverage.",
+    "Standard errors are sample/delta estimates, not exact finite-sample coverage statements.",
+    "Unchanged generator and Fourier controls were not rerun."
+  ],
+  "unresolved_findings": [],
+  "targeted_check_results": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/correction_ack/TARGETED_RESULTS.json",
+    "sha256": "ae089e372936fc2ffc87b460f3c61263d6c28425084f857a79297e4eae661300",
+    "bytes": 1889
+  },
+  "own_checker": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/correction_ack/check_ack.py",
+    "sha256": "fe2c45082c665a8c653ec9542b01793704c6041b621fac1cad0a7a5aff7e8016",
+    "bytes": 7838
+  }
+}

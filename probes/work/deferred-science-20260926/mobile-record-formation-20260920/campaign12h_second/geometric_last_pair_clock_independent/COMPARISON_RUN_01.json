@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/comparison_check.py",
+    "--out",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/COMPARISON_RESULTS.json"
+  ],
+  "source_sha256": "4a70f7aac34c8014237631d9e0b230577db7f24ea40ca5d238021186ecd54cee",
+  "returncode": 0,
+  "elapsed_seconds": 0.5571300983428955
+}

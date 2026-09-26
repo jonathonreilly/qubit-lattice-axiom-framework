@@ -1,0 +1,3 @@
+# Current bounded-check checkpoint
+
+General-graph connectivity proof, diameter, marked legality and fixed-graph exit/clock inheritance have been reconstructed and checked. PRE_COMPARISON_SEAL.json predates author runner/results access. Complete source comparison is finished, with no unresolved mathematical finding. All source and prior evidence identities remain unchanged. Separate mixing work and production values were not read. Next already authorized action is a narrow acknowledgment of the fixed-rate analyzer repairs in its own evidence directory; no further general-graph work is needed absent changed sources.

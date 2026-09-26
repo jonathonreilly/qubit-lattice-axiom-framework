@@ -1,0 +1,11 @@
+{
+  "exit_code": 1,
+  "cause": "Unscaled killed resolvent at very small beta has a tiny eigenvalue; a generic100-state path-chain test exceeded the1e-7 row-normalization tolerance.",
+  "repair": "Use exact constant/centered Schur identity for numerical evaluation; preserve direct-solve discrepancy and check residual. No theorem or bound changed.",
+  "attempt01_files": {
+    "attempt01_geometric_polynomial_relaxation_check.py": "345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa",
+    "attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr": "7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646",
+    "attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log": "2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c"
+  },
+  "completed_attempt02_source_sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+}

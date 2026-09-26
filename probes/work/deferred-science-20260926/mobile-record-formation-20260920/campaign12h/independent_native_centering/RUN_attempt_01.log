@@ -1,0 +1,221 @@
+{
+  "completed_control_groups": 11,
+  "controls": {
+    "cubic_torus_short_time_geometry": [
+      {
+        "F_at_zero": 0,
+        "F_prime_at_zero": 60,
+        "N": 4,
+        "j3_t3_factor_divided_by_beta2_alpha_v02_rho0": "80"
+      },
+      {
+        "F_at_zero": 0,
+        "F_prime_at_zero": 54,
+        "N": 5,
+        "j3_t3_factor_divided_by_beta2_alpha_v02_rho0": "72"
+      },
+      {
+        "F_at_zero": 0,
+        "F_prime_at_zero": 54,
+        "N": 6,
+        "j3_t3_factor_divided_by_beta2_alpha_v02_rho0": "72"
+      },
+      {
+        "F_at_zero": 0,
+        "F_prime_at_zero": 54,
+        "N": 8,
+        "j3_t3_factor_divided_by_beta2_alpha_v02_rho0": "72"
+      }
+    ],
+    "finite_punctured_torus_poisson_identity": [
+      {
+        "N": 4,
+        "centered_potential_mean": -2.20282346155785e-19,
+        "maximum_residual": 4.440892098500626e-16
+      },
+      {
+        "N": 5,
+        "centered_potential_mean": 5.483964536958938e-18,
+        "maximum_residual": 4.440892098500626e-16
+      },
+      {
+        "N": 8,
+        "centered_potential_mean": -8.690591190803573e-19,
+        "maximum_residual": 2.6194324487249787e-16
+      }
+    ],
+    "full_generator_assembly": {
+      "beta": "1/6",
+      "coefficient_nonzeros": [
+        18859,
+        4644,
+        984
+      ],
+      "degree": 2,
+      "exchange_rate": "3/2",
+      "integer_column_sums_zero": true,
+      "states": 2401
+    },
+    "full_generator_exact_time_and_j_control": {
+      "first_j_generator_on_density_identically_zero": true,
+      "j3_t3_coefficient": "1/36",
+      "second_j_product_mean_zero": true,
+      "target": "1/36"
+    },
+    "full_generator_time_coefficients": {
+      "coefficient_masses": [
+        0.9999999999999996,
+        2.42861286636753e-17,
+        2.3852447794681098e-18,
+        -2.6020852139652106e-18
+      ],
+      "j_coefficients_0_to_3": [
+        0.7517073481042953,
+        2.2442984970449942e-17,
+        6.1257422745431e-18,
+        0.001575877562643943
+      ],
+      "t": 0.7,
+      "uniform_product_error": 9.75781955236954e-19
+    },
+    "full_generator_vacancy_pair_factorization": {
+      "maximum_error": 1.3877787807814457e-17,
+      "pair_coefficients": {
+        "0,1": 0.07494317722652669,
+        "0,2": 0.06015627034294128,
+        "0,3": 0.07494317722652669,
+        "1,2": 0.07494317722652669,
+        "1,3": 0.0601562703429413,
+        "2,3": 0.07494317722652669
+      }
+    },
+    "growing_torus_coefficient_controls": [
+      {
+        "N": 4,
+        "N_times_a3": 0.028902260827190884,
+        "a3": 0.007225565206797721,
+        "elapsed_seconds": 0.0022403330076485872,
+        "ratio_to_limit": 1.4327634668472142,
+        "relative_states": 63
+      },
+      {
+        "N": 6,
+        "N_times_a3": 0.018189184246163004,
+        "a3": 0.0030315307076938343,
+        "elapsed_seconds": 0.006888957927003503,
+        "ratio_to_limit": 0.9016872014087411,
+        "relative_states": 215
+      },
+      {
+        "N": 8,
+        "N_times_a3": 0.01579716378511724,
+        "a3": 0.001974645473139655,
+        "elapsed_seconds": 0.014728166861459613,
+        "ratio_to_limit": 0.783108258777612,
+        "relative_states": 511
+      },
+      {
+        "N": 12,
+        "N_times_a3": 0.015143352600109142,
+        "a3": 0.001261946050009095,
+        "elapsed_seconds": 0.020929167047142982,
+        "ratio_to_limit": 0.75069706486802,
+        "relative_states": 1727
+      },
+      {
+        "N": 16,
+        "N_times_a3": 0.015420746903926466,
+        "a3": 0.0009637966814954041,
+        "elapsed_seconds": 0.07371874991804361,
+        "ratio_to_limit": 0.7644482529427976,
+        "relative_states": 4095
+      },
+      {
+        "N": 24,
+        "N_times_a3": 0.016084055481088218,
+        "a3": 0.0006701689783786758,
+        "elapsed_seconds": 0.26307241595350206,
+        "ratio_to_limit": 0.7973302583432081,
+        "relative_states": 13823
+      },
+      {
+        "N": 32,
+        "N_times_a3": 0.01656825384799962,
+        "a3": 0.0005177579327499881,
+        "elapsed_seconds": 0.8280377918854356,
+        "ratio_to_limit": 0.8213332847834469,
+        "relative_states": 32767
+      }
+    ],
+    "independently_reduced_four_cycle": {
+      "closed_kernel_quadrature_j3": 0.001575877562643947,
+      "full_generator_j3": 0.001575877562643943,
+      "quadrature_error_estimate": 1.7495755540374827e-17,
+      "relative_ode_j3": 0.0015758775626439465,
+      "relative_opposite_to_adjacency_probability": "(2/3)*(1-exp(-6u))"
+    },
+    "infinite_volume_green_constant": {
+      "G_star": 2.372895443639834,
+      "discrete_time_srw_green_at_zero": 1.5163860591519778,
+      "fixed_time_N_times_a3_limit": 0.020172388182670586,
+      "g0_generator_2_delta": 0.1263655049293315,
+      "parameters": {
+        "beta": 0.16666666666666666,
+        "kappa": 1.0,
+        "t": 1.0,
+        "v0": 0.5
+      },
+      "quadrature_error_estimate": 1.4027351038516754e-15,
+      "quadrature_is_support_not_proof": true
+    },
+    "physical_generator_odd_response": [
+      {
+        "difference_from_j3": -1.5553600834581488e-06,
+        "j": 0.2,
+        "odd_density_over_j3": 0.0015743222025604848
+      },
+      {
+        "difference_from_j3": -3.901332378906247e-07,
+        "j": 0.1,
+        "odd_density_over_j3": 0.0015754874294060524
+      },
+      {
+        "difference_from_j3": -9.761433989764756e-08,
+        "j": 0.05,
+        "odd_density_over_j3": 0.0015757799483040453
+      }
+    ],
+    "six_axis_second_moment": {
+      "sum_outer_products": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "sum_vectors": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "elapsed_seconds": 1.2617329161148518,
+  "scope": "Full 7^4 four-cycle generator plus exact cubic-torus relative process; no simulations",
+  "source_sha256": "56f932f0751e9cc98a9691c7f63aeec98799c951be843c702e13c0623a0f4449",
+  "versions": {
+    "numpy": "2.4.4",
+    "python": "3.13.5",
+    "scipy": "1.17.1"
+  }
+}

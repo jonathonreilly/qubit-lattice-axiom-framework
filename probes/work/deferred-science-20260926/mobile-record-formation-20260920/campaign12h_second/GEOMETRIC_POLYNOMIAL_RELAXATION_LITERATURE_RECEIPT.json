@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-09-21T16:00:54.874502+00:00",
+  "title": "Jerrum and Sinclair, Approximating the permanent (1989)",
+  "url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+  "doi": "https://doi.org/10.1137/0218077",
+  "PDF_external_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+  "PDF_sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9",
+  "PDF_bytes": 11144147,
+  "read_primary_pages": [
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "rendered_statement_page": 13,
+  "rendered_statement_sha256": "c866c70782c118317c4ab65a65553d2d5ed6fd76da73423594c7d9b9f8141c20",
+  "scope": "Imported Theorem3.6 conductance >= 1/(16|E|R^2), general-graph hypotheses and lazy proposal1/(2|E|) checked in original. Read surrounding proof; entire external theorem not independently rederived.",
+  "Taggi_input": {
+    "URL": "https://arxiv.org/html/1909.06558v3",
+    "equation": "2.5",
+    "read_boundary": "Definitions and Theorem2.1 including Eq2.5; reuse prior source-bound independent clock check, not full proof reconstruction."
+  },
+  "copyright_boundary": "Third-party PDF, extracted text and rendered primary page remain external; not staged or included in review PR."
+}

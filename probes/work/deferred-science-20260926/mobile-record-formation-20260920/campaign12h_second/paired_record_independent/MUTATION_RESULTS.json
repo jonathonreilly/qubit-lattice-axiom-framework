@@ -1,0 +1,194 @@
+{
+  "author_source_sha256": "65ad8acc7384f25196132b23876f4510347832c4a7f4db548d9c9aead71d2288",
+  "receipts": [
+    {
+      "case": "baseline",
+      "failure": null,
+      "rows": [
+        {
+          "name": "actual_record_transport_and_repeated_formation",
+          "pass": true,
+          "first_ids": [
+            0,
+            1
+          ],
+          "new_ids": [
+            2,
+            3
+          ],
+          "original_sites_reused": [
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "name": "all_orientations_rigid_translation_and_inverse",
+          "pass": true,
+          "cases": 36
+        },
+        {
+          "name": "dense_cube_moves_eight_immutable_records_and_returns",
+          "pass": true,
+          "records": 8,
+          "occupied_sites": 8,
+          "direction_counts_preserved": true
+        },
+        {
+          "name": "birth_translation_and_cube_event_rotation_covariance",
+          "pass": true,
+          "translation_cases": 864,
+          "cube_cases": 24
+        },
+        {
+          "name": "exact_staggered_gauss_identity",
+          "pass": true,
+          "states": 6,
+          "side": 8
+        },
+        {
+          "name": "missing_staggering_mutation_is_detected",
+          "pass": true,
+          "mutant_div6": 0,
+          "required_div6": -6
+        },
+        {
+          "name": "exact_cube_fourier_polynomial_and_gauss_symbol",
+          "pass": true,
+          "delta": [
+            "Y*Z + Y - Z - 1",
+            "-X*Z - X + Z + 1",
+            "0"
+          ],
+          "divergence": "0"
+        },
+        {
+          "name": "identity_cube_mutation_is_detected",
+          "pass": true,
+          "mutant_increment": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "identity_translation",
+      "failure": {
+        "type": "ValueError",
+        "message": "occupied birth endpoint"
+      },
+      "rows": []
+    },
+    {
+      "case": "identity_cube",
+      "failure": {
+        "type": "AssertionError",
+        "message": "dense_cube_moves_eight_immutable_records_and_returns"
+      },
+      "rows": [
+        {
+          "name": "actual_record_transport_and_repeated_formation",
+          "pass": true,
+          "first_ids": [
+            0,
+            1
+          ],
+          "new_ids": [
+            2,
+            3
+          ],
+          "original_sites_reused": [
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "name": "all_orientations_rigid_translation_and_inverse",
+          "pass": true,
+          "cases": 36
+        },
+        {
+          "name": "dense_cube_moves_eight_immutable_records_and_returns",
+          "pass": false,
+          "records": 8,
+          "occupied_sites": 8,
+          "direction_counts_preserved": true
+        }
+      ]
+    },
+    {
+      "case": "missing_staggering",
+      "failure": {
+        "type": "AssertionError",
+        "message": "exact_staggered_gauss_identity"
+      },
+      "rows": [
+        {
+          "name": "actual_record_transport_and_repeated_formation",
+          "pass": true,
+          "first_ids": [
+            0,
+            1
+          ],
+          "new_ids": [
+            2,
+            3
+          ],
+          "original_sites_reused": [
+            [
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "name": "all_orientations_rigid_translation_and_inverse",
+          "pass": true,
+          "cases": 36
+        },
+        {
+          "name": "dense_cube_moves_eight_immutable_records_and_returns",
+          "pass": true,
+          "records": 8,
+          "occupied_sites": 8,
+          "direction_counts_preserved": true
+        },
+        {
+          "name": "birth_translation_and_cube_event_rotation_covariance",
+          "pass": true,
+          "translation_cases": 864,
+          "cube_cases": 24
+        },
+        {
+          "name": "exact_staggered_gauss_identity",
+          "pass": false,
+          "states": 6,
+          "side": 8
+        }
+      ]
+    }
+  ]
+}

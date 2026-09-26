@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-22T18:44:33.860004+00:00",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+      "bytes": 12648,
+      "sha256": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+      "bytes": 12497,
+      "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_AND_RK_COOLING_AUTHOR_SEAL.json",
+      "bytes": 4415,
+      "sha256": "d9ea3fc91a09aff6e197925cd2a37907217f4583a8bf29a9a871a64423c2b8fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_GAUGE_AND_CUTOFF_SOURCE_CONTEXT.json",
+      "bytes": 3476,
+      "sha256": "97d12e2795ef81661c5eb8741d6a08febc709ce96b37ae8409469192e058a104"
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/cond-mat/0305401",
+      "coverage": "Complete SectionIII.B RK effective action and SectionIII.C representative Hamiltonian corrections through Eq54; source context only, no microscopic phase claim imported as a new result."
+    }
+  ],
+  "repo_revision": "dee2310d375f37a0ca4c8641e9a12aa7fabb8577",
+  "repo_coverage": "Sept3 cubic ice RK/conditional phase bridge note read completely earlier; Sections5/6 refreshed; Sept4 pure model note fully read earlier."
+}

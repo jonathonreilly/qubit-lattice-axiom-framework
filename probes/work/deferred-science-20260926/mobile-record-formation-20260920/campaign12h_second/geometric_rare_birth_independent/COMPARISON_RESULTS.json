@@ -1,0 +1,41 @@
+{
+  "authentication": {
+    "preseal_artifacts_unchanged": 12,
+    "author_groups_authenticated": 4,
+    "all_four_source_bindings_match": true,
+    "recorded_stdout_equals_results": true,
+    "stderr_empty": true,
+    "author_runner_executed_or_imported": false
+  },
+  "cube_certificate": {
+    "original_states_checked": 108,
+    "quotient_rows_and_lifted_harmonic_solution_match": true
+  },
+  "cube_killed_chain": {
+    "near_states": 44,
+    "full_states": 9,
+    "rows": [
+      {
+        "beta": "1",
+        "independently_recomputed_exact_worst_start_TV": "1334/3791"
+      },
+      {
+        "beta": "1/10",
+        "independently_recomputed_exact_worst_start_TV": "5157842/86622563"
+      },
+      {
+        "beta": "1/100",
+        "independently_recomputed_exact_worst_start_TV": "45935750402/7191547805603"
+      },
+      {
+        "beta": "1/1000",
+        "independently_recomputed_exact_worst_start_TV": "453933574704002/705505144380056003"
+      }
+    ]
+  },
+  "limits": [
+    "Author exact transform event/cycle totals and eight N=4,6,8,12 periodic path receipts were authenticated, not independently replayed.",
+    "Independent blind controls include all small graph connectivity and separate complete path reconstructions, plus distant and winding N=4 cycles.",
+    "No production kinetics, phase, fixed-rate thermodynamic or wave result was accessed."
+  ]
+}

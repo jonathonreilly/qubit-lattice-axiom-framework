@@ -1,0 +1,7 @@
+{"name": "N4_b1_s21092302", "N": 4, "beta": 1, "seed": 21092302, "wall_seconds": 0.00402787490747869, "full": true, "time": 4.765136813732183, "events": 160, "slide_events": 128, "site_reuses": 19, "max_site_births": 3, "winding": [1, 0, -2]}
+{"name": "N4_b1_s21092301", "N": 4, "beta": 1, "seed": 21092301, "wall_seconds": 0.0041622500866651535, "full": true, "time": 3.1762660967635923, "events": 106, "slide_events": 74, "site_reuses": 20, "max_site_births": 3, "winding": [0, -1, -1]}
+{"name": "N6_b1_s21092302", "N": 6, "beta": 1, "seed": 21092302, "wall_seconds": 0.005644041812047362, "full": true, "time": 10.3282662162633, "events": 646, "slide_events": 538, "site_reuses": 58, "max_site_births": 4, "winding": [0, -1, -1]}
+{"name": "N6_b1_s21092301", "N": 6, "beta": 1, "seed": 21092301, "wall_seconds": 0.006571374833583832, "full": true, "time": 44.90996896788952, "events": 1092, "slide_events": 984, "site_reuses": 58, "max_site_births": 4, "winding": [1, -1, 1]}
+{"name": "N8_b1_s21092301", "N": 8, "beta": 1, "seed": 21092301, "wall_seconds": 0.017370249843224883, "full": true, "time": 50.326193757702725, "events": 2193, "slide_events": 1937, "site_reuses": 129, "max_site_births": 3, "winding": [-2, 1, -1]}
+{"name": "N8_b1_s21092302", "N": 8, "beta": 1, "seed": 21092302, "wall_seconds": 0.022809583926573396, "full": true, "time": 118.56375858170345, "events": 3126, "slide_events": 2870, "site_reuses": 127, "max_site_births": 4, "winding": [1, 1, 0]}
+{"runs": 6, "failures": 0, "all_full": true, "total_process_seconds": 0.06058537540957332}

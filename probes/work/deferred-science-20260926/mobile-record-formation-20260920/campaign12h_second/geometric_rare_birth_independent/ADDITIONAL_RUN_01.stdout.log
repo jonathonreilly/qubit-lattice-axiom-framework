@@ -1,0 +1,80 @@
+{
+  "long_excursions": [
+    {
+      "name": "distant_plaquette",
+      "torus_side": 4,
+      "near_pairs": 31,
+      "cycle": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2
+        ]
+      ],
+      "slides": 9,
+      "excursion": {
+        "cycle_vertices": 4,
+        "approach_slides": 4,
+        "around_slides": 2
+      },
+      "outside_edges_and_both_vacancies_restored": true
+    },
+    {
+      "name": "winding_axis_cycle",
+      "torus_side": 4,
+      "near_pairs": 31,
+      "cycle": [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ]
+      ],
+      "slides": 9,
+      "excursion": {
+        "cycle_vertices": 4,
+        "approach_slides": 4,
+        "around_slides": 2
+      },
+      "outside_edges_and_both_vacancies_restored": true
+    }
+  ],
+  "zero_slide_cube": {
+    "kappa": 0,
+    "nu": 0,
+    "full_packing_probability": "17/21",
+    "unconditional_columnar_probability": "2/7",
+    "columnar_given_full": "6/17",
+    "distinction": "Positive fixed kappa followed by beta/kappa to infinity still eventually fills. Setting kappa=0 first has positive jamming probability."
+  }
+}

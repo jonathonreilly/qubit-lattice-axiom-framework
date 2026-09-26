@@ -1,0 +1,599 @@
+{
+  "scope": "distributional sanity check; 5 estimated-standard-error gate, not a formal confidence certificate",
+  "summary": {
+    "model": "neutral12",
+    "replicates": 16384,
+    "maximum_z": 1.6551584641577128,
+    "elapsed_sec": 0.6051592498552054
+  },
+  "rows": [
+    {
+      "tau": 0.0,
+      "column": "density",
+      "difference": 0.0007934570312481126,
+      "standard_error": 0.0016839080201342003,
+      "z": 0.4711997459248858
+    },
+    {
+      "tau": 0.0,
+      "column": "M2_per_site",
+      "difference": -0.001251220703123973,
+      "standard_error": 0.0021531013703299127,
+      "z": 0.5811248464034243
+    },
+    {
+      "tau": 0.0,
+      "column": "Smin_per_site",
+      "difference": 0.0017089843750000278,
+      "standard_error": 0.0018531819513889066,
+      "z": 0.9221891966513018
+    },
+    {
+      "tau": 0.0,
+      "column": "response_score_increment_per_site",
+      "difference": 3.608224830031759e-16,
+      "standard_error": 0.0,
+      "z": 0.0
+    },
+    {
+      "tau": 0.2,
+      "column": "density",
+      "difference": 0.0013257779369220124,
+      "standard_error": 0.0018890974152291546,
+      "z": 0.7018049605245956
+    },
+    {
+      "tau": 0.2,
+      "column": "M2_per_site",
+      "difference": 0.0006290691573512808,
+      "standard_error": 0.004055441716084024,
+      "z": 0.15511729705209928
+    },
+    {
+      "tau": 0.2,
+      "column": "Smin_per_site",
+      "difference": 0.0013989964524515064,
+      "standard_error": 0.0022124441212761424,
+      "z": 0.6323307508641449
+    },
+    {
+      "tau": 0.2,
+      "column": "response_score_increment_per_site",
+      "difference": -0.00020311777447196144,
+      "standard_error": 0.0009735651160010969,
+      "z": 0.2086329626376348
+    },
+    {
+      "tau": 0.4,
+      "column": "density",
+      "difference": 0.00023777972327454489,
+      "standard_error": 0.001944771198004526,
+      "z": 0.12226616864674048
+    },
+    {
+      "tau": 0.4,
+      "column": "M2_per_site",
+      "difference": 0.0017074209250013128,
+      "standard_error": 0.005568893445889634,
+      "z": 0.30659967578685665
+    },
+    {
+      "tau": 0.4,
+      "column": "Smin_per_site",
+      "difference": 0.0009788242292818605,
+      "standard_error": 0.0023886114523062607,
+      "z": 0.4097879662834165
+    },
+    {
+      "tau": 0.4,
+      "column": "response_score_increment_per_site",
+      "difference": 0.00013086917837767942,
+      "standard_error": 0.001362168326920102,
+      "z": 0.0960741604332983
+    },
+    {
+      "tau": 0.6000000000000001,
+      "column": "density",
+      "difference": -0.0006248382849050049,
+      "standard_error": 0.0019260572127724673,
+      "z": 0.32441314866528814
+    },
+    {
+      "tau": 0.6000000000000001,
+      "column": "M2_per_site",
+      "difference": 0.002980314511368376,
+      "standard_error": 0.006805127941736707,
+      "z": 0.4379512827510166
+    },
+    {
+      "tau": 0.6000000000000001,
+      "column": "Smin_per_site",
+      "difference": -0.001616305070884061,
+      "standard_error": 0.0025445001851108,
+      "z": 0.635215151620702
+    },
+    {
+      "tau": 0.6000000000000001,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0014905752569107644,
+      "standard_error": 0.0016402076920507206,
+      "z": 0.9087722634973906
+    },
+    {
+      "tau": 0.8,
+      "column": "density",
+      "difference": 1.5338404714237974e-05,
+      "standard_error": 0.00185251141784462,
+      "z": 0.008279789569169872
+    },
+    {
+      "tau": 0.8,
+      "column": "M2_per_site",
+      "difference": 0.003085680822457526,
+      "standard_error": 0.0076749349058541135,
+      "z": 0.4020465137891789
+    },
+    {
+      "tau": 0.8,
+      "column": "Smin_per_site",
+      "difference": 0.00022750106571067796,
+      "standard_error": 0.0026960032433074855,
+      "z": 0.08438456677506709
+    },
+    {
+      "tau": 0.8,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0015328398303954271,
+      "standard_error": 0.0018363049794923032,
+      "z": 0.834741422320394
+    },
+    {
+      "tau": 1.0,
+      "column": "density",
+      "difference": -0.00013449297444545483,
+      "standard_error": 0.0017635164969124094,
+      "z": 0.07626408637567446
+    },
+    {
+      "tau": 1.0,
+      "column": "M2_per_site",
+      "difference": 0.00540094335923591,
+      "standard_error": 0.008418747782433811,
+      "z": 0.6415376132903376
+    },
+    {
+      "tau": 1.0,
+      "column": "Smin_per_site",
+      "difference": -9.554422854129996e-05,
+      "standard_error": 0.0028797988785292782,
+      "z": 0.03317739625973279
+    },
+    {
+      "tau": 1.0,
+      "column": "response_score_increment_per_site",
+      "difference": 0.001024279031101305,
+      "standard_error": 0.0019910908459140034,
+      "z": 0.5144310884675447
+    },
+    {
+      "tau": 1.2000000000000002,
+      "column": "density",
+      "difference": -0.0005684771205234362,
+      "standard_error": 0.0016573104476871813,
+      "z": 0.3430118486954333
+    },
+    {
+      "tau": 1.2000000000000002,
+      "column": "M2_per_site",
+      "difference": 0.003465426420381057,
+      "standard_error": 0.0088704421008539,
+      "z": 0.3906712180723735
+    },
+    {
+      "tau": 1.2000000000000002,
+      "column": "Smin_per_site",
+      "difference": 0.0009246910563109889,
+      "standard_error": 0.0030409436642345896,
+      "z": 0.3040802982266806
+    },
+    {
+      "tau": 1.2000000000000002,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0017852611508864524,
+      "standard_error": 0.002106617926064752,
+      "z": 0.8474536976059027
+    },
+    {
+      "tau": 1.4000000000000001,
+      "column": "density",
+      "difference": -0.0002863911822992282,
+      "standard_error": 0.0015390292699214254,
+      "z": 0.18608559817309375
+    },
+    {
+      "tau": 1.4000000000000001,
+      "column": "M2_per_site",
+      "difference": 0.0014538252667231077,
+      "standard_error": 0.00915183659765584,
+      "z": 0.1588561215237925
+    },
+    {
+      "tau": 1.4000000000000001,
+      "column": "Smin_per_site",
+      "difference": 0.0018784628503460965,
+      "standard_error": 0.003179863168573232,
+      "z": 0.5907370068344611
+    },
+    {
+      "tau": 1.4000000000000001,
+      "column": "response_score_increment_per_site",
+      "difference": 0.002010719449095477,
+      "standard_error": 0.00218872773044158,
+      "z": 0.9186704317442949
+    },
+    {
+      "tau": 1.6,
+      "column": "density",
+      "difference": -0.0003579744861272882,
+      "standard_error": 0.0014296939173577652,
+      "z": 0.25038540192495556
+    },
+    {
+      "tau": 1.6,
+      "column": "M2_per_site",
+      "difference": 0.0037832765920811084,
+      "standard_error": 0.009381277970155135,
+      "z": 0.4032794470131819
+    },
+    {
+      "tau": 1.6,
+      "column": "Smin_per_site",
+      "difference": -0.00048560719795642804,
+      "standard_error": 0.003306235226133087,
+      "z": 0.14687617932266286
+    },
+    {
+      "tau": 1.6,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0021913815105384926,
+      "standard_error": 0.0022537486830057733,
+      "z": 0.9723273615476491
+    },
+    {
+      "tau": 1.8,
+      "column": "density",
+      "difference": -0.0020136755711476217,
+      "standard_error": 0.0013292387486517278,
+      "z": 1.514908870351644
+    },
+    {
+      "tau": 1.8,
+      "column": "M2_per_site",
+      "difference": 0.0005022035873218922,
+      "standard_error": 0.009503146599504709,
+      "z": 0.052846031792045216
+    },
+    {
+      "tau": 1.8,
+      "column": "Smin_per_site",
+      "difference": -0.003414452687085179,
+      "standard_error": 0.003394472445190682,
+      "z": 1.0058861110871014
+    },
+    {
+      "tau": 1.8,
+      "column": "response_score_increment_per_site",
+      "difference": 0.001998673035910281,
+      "standard_error": 0.002297285552472112,
+      "z": 0.8700150635429307
+    },
+    {
+      "tau": 2.0,
+      "column": "density",
+      "difference": -0.0016816169269382453,
+      "standard_error": 0.0012251310680128876,
+      "z": 1.3726016512386376
+    },
+    {
+      "tau": 2.0,
+      "column": "M2_per_site",
+      "difference": 0.000367439269585601,
+      "standard_error": 0.009568354467450113,
+      "z": 0.03840151102632808
+    },
+    {
+      "tau": 2.0,
+      "column": "Smin_per_site",
+      "difference": -0.0007431281137143531,
+      "standard_error": 0.0034930133437080617,
+      "z": 0.2127470011109302
+    },
+    {
+      "tau": 2.0,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0017157844511495601,
+      "standard_error": 0.0023299787270952593,
+      "z": 0.7363948997459716
+    },
+    {
+      "tau": 2.2,
+      "column": "density",
+      "difference": -0.0017125550119971855,
+      "standard_error": 0.0011253213851493765,
+      "z": 1.5218363701227084
+    },
+    {
+      "tau": 2.2,
+      "column": "M2_per_site",
+      "difference": -0.0005096382420402001,
+      "standard_error": 0.009579085524373306,
+      "z": 0.0532032249574828
+    },
+    {
+      "tau": 2.2,
+      "column": "Smin_per_site",
+      "difference": -0.000735319989596861,
+      "standard_error": 0.0035649284463193254,
+      "z": 0.20626500662476277
+    },
+    {
+      "tau": 2.2,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0016741835926870063,
+      "standard_error": 0.0023562215309330553,
+      "z": 0.7105374306736072
+    },
+    {
+      "tau": 2.4000000000000004,
+      "column": "density",
+      "difference": -0.0014222687047685811,
+      "standard_error": 0.0010360750417617534,
+      "z": 1.3727468063994088
+    },
+    {
+      "tau": 2.4000000000000004,
+      "column": "M2_per_site",
+      "difference": 0.00022785334318609074,
+      "standard_error": 0.009592863518710708,
+      "z": 0.023752380375439187
+    },
+    {
+      "tau": 2.4000000000000004,
+      "column": "Smin_per_site",
+      "difference": -0.0009328021347503324,
+      "standard_error": 0.0036367435763118108,
+      "z": 0.2564937876913307
+    },
+    {
+      "tau": 2.4000000000000004,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0015619055808351323,
+      "standard_error": 0.002381669357262152,
+      "z": 0.6558028620020626
+    },
+    {
+      "tau": 2.6,
+      "column": "density",
+      "difference": -0.0015763379530360222,
+      "standard_error": 0.000952378873184326,
+      "z": 1.6551584641577128
+    },
+    {
+      "tau": 2.6,
+      "column": "M2_per_site",
+      "difference": 0.00030377677495962985,
+      "standard_error": 0.009566241090310422,
+      "z": 0.03175508249183927
+    },
+    {
+      "tau": 2.6,
+      "column": "Smin_per_site",
+      "difference": -0.00015386715000120788,
+      "standard_error": 0.0036902040386908074,
+      "z": 0.04169610904653286
+    },
+    {
+      "tau": 2.6,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0014380567251949805,
+      "standard_error": 0.0023975581418687365,
+      "z": 0.5998005637828292
+    },
+    {
+      "tau": 2.8000000000000003,
+      "column": "density",
+      "difference": -0.0012585624767642578,
+      "standard_error": 0.0008752388102087285,
+      "z": 1.437964658427468
+    },
+    {
+      "tau": 2.8000000000000003,
+      "column": "M2_per_site",
+      "difference": 0.0013929745023477658,
+      "standard_error": 0.009548245154561838,
+      "z": 0.14588801185967123
+    },
+    {
+      "tau": 2.8000000000000003,
+      "column": "Smin_per_site",
+      "difference": -0.00041173909502612016,
+      "standard_error": 0.0037365027718664944,
+      "z": 0.11019370790415452
+    },
+    {
+      "tau": 2.8000000000000003,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0014649097098639041,
+      "standard_error": 0.0024112177063610302,
+      "z": 0.6075393797911022
+    },
+    {
+      "tau": 3.0,
+      "column": "density",
+      "difference": -0.0003819326907774645,
+      "standard_error": 0.0008021137637673257,
+      "z": 0.476157757203446
+    },
+    {
+      "tau": 3.0,
+      "column": "M2_per_site",
+      "difference": 0.004799474536192783,
+      "standard_error": 0.009515397883111643,
+      "z": 0.5043903150609295
+    },
+    {
+      "tau": 3.0,
+      "column": "Smin_per_site",
+      "difference": -0.0006994800168669268,
+      "standard_error": 0.003774151848854529,
+      "z": 0.18533435984543706
+    },
+    {
+      "tau": 3.0,
+      "column": "response_score_increment_per_site",
+      "difference": 0.00145737343531549,
+      "standard_error": 0.0024215342611388284,
+      "z": 0.6018388666655077
+    },
+    {
+      "tau": 3.2,
+      "column": "density",
+      "difference": -0.0004412729637141011,
+      "standard_error": 0.0007396901542778988,
+      "z": 0.5965646036547304
+    },
+    {
+      "tau": 3.2,
+      "column": "M2_per_site",
+      "difference": 0.0061930686491558085,
+      "standard_error": 0.009495449240190438,
+      "z": 0.6522143915996124
+    },
+    {
+      "tau": 3.2,
+      "column": "Smin_per_site",
+      "difference": -0.0012171803648513002,
+      "standard_error": 0.00380783214191443,
+      "z": 0.31965179122610937
+    },
+    {
+      "tau": 3.2,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0015015866297068414,
+      "standard_error": 0.0024290509741929723,
+      "z": 0.6181783114723348
+    },
+    {
+      "tau": 3.4000000000000004,
+      "column": "density",
+      "difference": -0.000715265846240154,
+      "standard_error": 0.0006863138669980133,
+      "z": 1.0421847504972888
+    },
+    {
+      "tau": 3.4000000000000004,
+      "column": "M2_per_site",
+      "difference": 0.005145659667914693,
+      "standard_error": 0.00946304726638187,
+      "z": 0.543763496373415
+    },
+    {
+      "tau": 3.4000000000000004,
+      "column": "Smin_per_site",
+      "difference": -0.00048238321352522817,
+      "standard_error": 0.003834066147365606,
+      "z": 0.12581504725907627
+    },
+    {
+      "tau": 3.4000000000000004,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0011250927249653042,
+      "standard_error": 0.002437068475505117,
+      "z": 0.46165823253370536
+    },
+    {
+      "tau": 3.6,
+      "column": "density",
+      "difference": -0.0005077787298092273,
+      "standard_error": 0.0006327942469473303,
+      "z": 0.8024389163757545
+    },
+    {
+      "tau": 3.6,
+      "column": "M2_per_site",
+      "difference": 0.005302411310044164,
+      "standard_error": 0.009436669089353368,
+      "z": 0.561894378179102
+    },
+    {
+      "tau": 3.6,
+      "column": "Smin_per_site",
+      "difference": -3.5639645293183975e-05,
+      "standard_error": 0.003862544259184119,
+      "z": 0.009226986903371329
+    },
+    {
+      "tau": 3.6,
+      "column": "response_score_increment_per_site",
+      "difference": 0.000940063051699247,
+      "standard_error": 0.0024424571291653077,
+      "z": 0.3848841563988912
+    },
+    {
+      "tau": 3.8000000000000003,
+      "column": "density",
+      "difference": -0.00036411132220726117,
+      "standard_error": 0.0005806806763654598,
+      "z": 0.6270422575214168
+    },
+    {
+      "tau": 3.8000000000000003,
+      "column": "M2_per_site",
+      "difference": 0.0053271203558296065,
+      "standard_error": 0.009403808807293213,
+      "z": 0.5664853959704187
+    },
+    {
+      "tau": 3.8000000000000003,
+      "column": "Smin_per_site",
+      "difference": -0.00018691449464847132,
+      "standard_error": 0.0038789226235068706,
+      "z": 0.048187219181878134
+    },
+    {
+      "tau": 3.8000000000000003,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0009458358595864635,
+      "standard_error": 0.002445625568541974,
+      "z": 0.3867459809681125
+    },
+    {
+      "tau": 4.0,
+      "column": "density",
+      "difference": -0.0002637243018595026,
+      "standard_error": 0.0005345142768598814,
+      "z": 0.49339056649488855
+    },
+    {
+      "tau": 4.0,
+      "column": "M2_per_site",
+      "difference": 0.005509346552948546,
+      "standard_error": 0.009372769205271242,
+      "z": 0.5878035010026804
+    },
+    {
+      "tau": 4.0,
+      "column": "Smin_per_site",
+      "difference": 5.8424615726027085e-05,
+      "standard_error": 0.0038970671984779747,
+      "z": 0.014991944647206804
+    },
+    {
+      "tau": 4.0,
+      "column": "response_score_increment_per_site",
+      "difference": 0.0008617011876819181,
+      "standard_error": 0.0024476263876924555,
+      "z": 0.3520558497060095
+    }
+  ]
+}

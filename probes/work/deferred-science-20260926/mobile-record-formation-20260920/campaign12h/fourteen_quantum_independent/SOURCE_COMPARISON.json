@@ -1,0 +1,90 @@
+{
+  "actionable_mathematical_findings": [],
+  "added_exact_control": "S^T P=(j/7) S^T verifies the sealed quantum-only depolarizing marginal witness.",
+  "author_evidence": [
+    {
+      "all_names_logs_and_hashes_authenticated": true,
+      "reported_group_count": 13,
+      "rerun_by_reviewer": false,
+      "source": "fourteen_label_quantum_check.py"
+    },
+    {
+      "all_names_logs_and_hashes_authenticated": true,
+      "reported_group_count": 5,
+      "rerun_by_reviewer": false,
+      "source": "fourteen_label_cubic_carrier_check.py"
+    },
+    {
+      "all_names_logs_and_hashes_authenticated": true,
+      "reported_group_count": 13,
+      "rerun_by_reviewer": false,
+      "source": "born_compatible_fourteen_formation_check.py"
+    }
+  ],
+  "author_source_identities": [
+    {
+      "bytes": 7334,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_label_quantum_check.py",
+      "sha256": "7cac1e6ac6129faa930f3cc322686420c790070f962f09f67ee9a851df7d5561"
+    },
+    {
+      "bytes": 4480,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_QUANTUM_RESULTS.json",
+      "sha256": "93fdcf46089dd1f217e00e623bb29472013f049a287aa566d8981f5aa1e986f6"
+    },
+    {
+      "bytes": 583,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_QUANTUM_RUN.log",
+      "sha256": "eeca427188ec78ce74ed1e3f1c0381ca270e147445e108306155b1d6b7d91bed"
+    },
+    {
+      "bytes": 4008,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_label_cubic_carrier_check.py",
+      "sha256": "398741417193fe997c9d11c717ecfff717378332a916edba71765287dea58ef5"
+    },
+    {
+      "bytes": 958,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_CUBIC_CARRIER_RESULTS.json",
+      "sha256": "ba1263308418497ae9128201ee2381b758e2827d1105e8e09608076f7ac61bb1"
+    },
+    {
+      "bytes": 278,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/FOURTEEN_LABEL_CUBIC_CARRIER_RUN.log",
+      "sha256": "ddec08fc53b43b641a59f4c6e038529d3a8705da57dd57ae8e6951812a3cd9f4"
+    },
+    {
+      "bytes": 6869,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/born_compatible_fourteen_formation_check.py",
+      "sha256": "cd899415da554be8d4e691417248c709820d17c220c9cebce86c6640dc4816d4"
+    },
+    {
+      "bytes": 2715,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/BORN_COMPATIBLE_FOURTEEN_FORMATION_RESULTS.json",
+      "sha256": "ae402a402bebd22ad71e5737de9f21cfd18f47c070ff999081ebf0354506158c"
+    },
+    {
+      "bytes": 614,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/BORN_COMPATIBLE_FOURTEEN_FORMATION_RUN.log",
+      "sha256": "e6de92c244a7251a2f3fba05a7479c664794a356325e4045f9718c0980b27e66"
+    }
+  ],
+  "born_j0_rounding": "The recorded j=0 ODE tail difference exceeds its analytic tail bound by about 2e-11, within the declared 2e-10 numerical tolerance. This is not a counterexample to the exact ODE inequality.",
+  "created_utc": "2026-09-21T09:36:05.972911+00:00",
+  "initial_sealed_artifacts_and_sources_unchanged": true,
+  "maximum_recorded_POVM_objective_error": 3.6535635627998886e-12,
+  "numerical_scope": "Primary unconstrained-effect SOCP outputs are authenticated and their arithmetic checked; no primal effect arrays are stored, and the unavailable local cvxpy program was not rerun. Exact independent twirling/primal/dual proof establishes the optimum.",
+  "pre_comparison_seal": {
+    "bytes": 8094,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/fourteen_quantum_independent/PRE_COMPARISON_SEAL.json",
+    "sha256": "b8d703de6cf7c9618c51d1294a35f0d867b63ba85a61085f793e4f423aeb4ef5"
+  },
+  "primary_numerical_record_arithmetic_verified": true,
+  "primary_numerical_results_recomputed": false,
+  "source_code_drift_findings": [],
+  "source_scope_limits": [
+    "The cubic carrier check enumerates ordinary characters and verifies the positive construction numerically; the projective commutant exclusion is supplied by the reconstructed proof.",
+    "The Born checker verifies the two-design; the independent Kraus trace argument, not a finite PASS count, proves optimal fidelity.",
+    "Norm/scattering statements concern the six-vector block, not the separate density component.",
+    "Quantum one-event constructions do not realize the repeated classical process."
+  ]
+}

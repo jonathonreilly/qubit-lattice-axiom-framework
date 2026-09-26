@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-22T20:00:45.930856+00:00",
+  "status": "F1 scope correction authenticated and resolved; prior seals untouched",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+      "bytes": 9124,
+      "sha256": "791875b79af460884cb30802f4a454eaabc4ec6514a82fbc0c09e56573f4fd71"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+      "bytes": 9142,
+      "sha256": "a47a407bd613ac86d0e9e7d359e86185859236ec1a12b88d08fd6f9a2e1a66ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+      "bytes": 6686,
+      "sha256": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+      "bytes": 7097,
+      "sha256": "de4fae0a513464b2ebcdf00ab954db3fd9c637333e19d73acfd347ea06cc722e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_F1_REPAIR_RECEIPT.json",
+      "bytes": 2440,
+      "sha256": "42d1d7d2a727c83c94de11e9dcf1e0b4cac96ca684fcd322a184681ae3c81d4d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/scope_repair.diff",
+      "bytes": 757,
+      "sha256": "c07573add552492482ad7fff315219aa5c0688abc4301ecf0b1d0636af448500"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/FINAL_SEAL.json",
+      "bytes": 23833,
+      "sha256": "3ecaa3abb44f2c6ae1e19ee5394c8537b4018331790f449c49bb021233e94fda"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/ACK.json",
+      "bytes": 3480,
+      "sha256": "8d463a6ad6b34d5f78c85f7e281c8622b975a637b8946f0c5ce92dd0d72d5d13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/RUN.log",
+      "bytes": 3480,
+      "sha256": "8d463a6ad6b34d5f78c85f7e281c8622b975a637b8946f0c5ce92dd0d72d5d13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/RUN_RECEIPT.json",
+      "bytes": 398,
+      "sha256": "c6493af46254d8f5fe625704a351365fd4662be3042a86a24d1f0745af5bb320"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/check_ack.py",
+      "bytes": 3089,
+      "sha256": "d2f6bcaa5a936bd77d5d06d410283710dd430fb3eb3b2c53ac5eeb3612c5c29b"
+    }
+  ]
+}

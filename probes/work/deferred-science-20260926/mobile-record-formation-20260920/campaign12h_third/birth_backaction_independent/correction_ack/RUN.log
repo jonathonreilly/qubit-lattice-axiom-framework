@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-09-22T15:25:20.717614+00:00",
+  "finding": "F1",
+  "status": "closed at corrected source identities",
+  "scope": "Only the H0=0 qualification and updated result/receipt; no unchanged mathematical check rerun.",
+  "exact_source_replacements": [
+    {
+      "name": "OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "old_sha256": "ae2f80e8b3b72cf601d458d2e13a4e6c9e5a591e7aa9f35ae1e9dbf3fdc85bda",
+      "new_sha256": "a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094",
+      "removed": "Use one occupied color, a four-cycle, uniform coherent hopping kappa > 0,",
+      "inserted": "Use one occupied color, a four-cycle, H_0 = 0, uniform coherent hopping kappa > 0,",
+      "inverse_replacement_recovers_reviewed_bytes": true
+    },
+    {
+      "name": "pair_birth_dephasing_check.py",
+      "old_sha256": "dbb3cc7cea1fbf5ecb575df47c428cbe039935925ae57a6dfaacfd873d779b62",
+      "new_sha256": "e4619c974fcdb16e1b543d624568c4e20b8a9f99c9a422b2e1d67942b203953c",
+      "removed": "conditions='kappa>0, beta>0, d>0; pair birth beta on every cycle edge; local dephasing d at every site')",
+      "inserted": "conditions='H_0=0; kappa>0, beta>0, d>0; pair birth beta on every cycle edge; local dephasing d at every site')",
+      "inverse_replacement_recovers_reviewed_bytes": true
+    }
+  ],
+  "all_computational_results_unchanged": true,
+  "new_result_changes_only": [
+    "created_utc",
+    "script_sha256",
+    "symbolic_waiting.conditions"
+  ],
+  "successful_source_bound_author_rerun_authenticated": true,
+  "original_author_manifest_bindings_preserved": 12,
+  "corrected_author_manifest_bindings_authenticated": 12,
+  "prior_independent_artifacts_unchanged": 39,
+  "prior_source_bindings_recovered_via_archive": 13,
+  "unchanged_author_files": 7,
+  "failed_attempts": [],
+  "unresolved_findings_in_this_correction": [],
+  "limitations": "Narrow source confirmation only; inherits the earlier proof scope and limitations. No formal audit status or broader review."
+}

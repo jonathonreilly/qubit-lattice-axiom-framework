@@ -1,0 +1,271 @@
+{
+  "source_sha256": "2b04b217a5e58e45d5f8413ee208809eeddb406a0f20310dcd829f3128f368df",
+  "checks": [
+    {
+      "name": "exact_optimal_cycle_form_certificates",
+      "details": [
+        {
+          "length": 2,
+          "full_constant_squared": "1",
+          "anti_constant_squared": "0",
+          "principal_minors_certified": 2
+        },
+        {
+          "length": 3,
+          "full_constant_squared": "4/3",
+          "anti_constant_squared": "1/3",
+          "principal_minors_certified": 6
+        },
+        {
+          "length": 4,
+          "full_constant_squared": "2",
+          "anti_constant_squared": "1",
+          "principal_minors_certified": 14
+        },
+        {
+          "length": 6,
+          "full_constant_squared": "4",
+          "anti_constant_squared": "3",
+          "principal_minors_certified": 62
+        }
+      ]
+    },
+    {
+      "name": "exact_nonuniform_reducible_overlap_sector_certificate",
+      "details": {
+        "states": 7,
+        "closed_components": 2,
+        "max_cycle_length": 4,
+        "principal_minors_certified": 62,
+        "centered_nonzero_null_function": [
+          13,
+          13,
+          13,
+          13,
+          13,
+          -15,
+          -15
+        ]
+      }
+    },
+    {
+      "name": "complex_stationary_semigroup_and_energy_checks",
+      "details": [
+        {
+          "time": 0.0001,
+          "direct_stationary_difference": 0.009991362006477444,
+          "sector_bound": 0.5585815736136679,
+          "energy_integral_error": 4.2240516640035253e-16
+        },
+        {
+          "time": 0.02,
+          "direct_stationary_difference": 1.9483558244550225,
+          "sector_bound": 7.8995363709615445,
+          "energy_integral_error": 1.5543122344752192e-15
+        },
+        {
+          "time": 0.2,
+          "direct_stationary_difference": 14.873987244822036,
+          "sector_bound": 24.980527391579283,
+          "energy_integral_error": 8.881784197001252e-16
+        },
+        {
+          "time": 1.0,
+          "direct_stationary_difference": 28.36573204758045,
+          "sector_bound": 55.85815736136678,
+          "energy_integral_error": 0.0
+        },
+        {
+          "time": 5.0,
+          "direct_stationary_difference": 29.961794019503365,
+          "sector_bound": 124.9026369578964,
+          "energy_integral_error": 0.0
+        }
+      ]
+    },
+    {
+      "name": "exact_Gibbs_plaquette_cycle_decomposition",
+      "details": {
+        "states": 16,
+        "permutation_orbit_lengths": [
+          1,
+          1,
+          2,
+          4,
+          4,
+          4
+        ],
+        "metropolis_two_cycles_included": true,
+        "nonuniform_rational_Gibbs_weights": [
+          "16",
+          "7",
+          "5",
+          "35",
+          "3",
+          "21/16",
+          "15",
+          "105",
+          "2",
+          "14",
+          "5/8",
+          "70",
+          "6",
+          "42",
+          "30",
+          "3360"
+        ]
+      }
+    },
+    {
+      "name": "Gauss_preserving_four_configuration_cycle",
+      "details": {
+        "side": 7,
+        "identities": 8,
+        "states": 4,
+        "stationary_weights": [
+          "1/11",
+          "2/11",
+          "3/11",
+          "5/11"
+        ],
+        "uniform_flow": "1/11",
+        "reversal_order": [
+          "A",
+          "B",
+          "A",
+          "B"
+        ]
+      }
+    },
+    {
+      "name": "long_cycle_local_motion_countercontrol",
+      "details": [
+        {
+          "N": 8,
+          "correlation_real": 0.08680884986856648,
+          "correlation_imag": 0.5498575998213745,
+          "difference": 1.826382300262867,
+          "incorrect_M4_bound": 1.530733729460359,
+          "true_anti_sector_constant": 2.414213562373095
+        },
+        {
+          "N": 16,
+          "correlation_real": 0.029538478756446145,
+          "correlation_imag": 0.7369136258770655,
+          "difference": 1.9409230424871078,
+          "incorrect_M4_bound": 1.1035975171317722,
+          "true_anti_sector_constant": 5.027339492125849
+        },
+        {
+          "N": 32,
+          "correlation_real": 0.008638236269613159,
+          "correlation_imag": 0.8574705042938421,
+          "difference": 1.9827235274607737,
+          "incorrect_M4_bound": 0.7841371226364852,
+          "true_anti_sector_constant": 10.153170387608862
+        },
+        {
+          "N": 64,
+          "correlation_real": 0.0023350635988454113,
+          "correlation_imag": 0.9258458251688977,
+          "difference": 1.9953298728023092,
+          "incorrect_M4_bound": 0.5551373640635231,
+          "true_anti_sector_constant": 20.355467624987188
+        },
+        {
+          "N": 128,
+          "correlation_real": 0.0006068984339005973,
+          "correlation_imag": 0.9621878276317323,
+          "difference": 1.9987862031321988,
+          "incorrect_M4_bound": 0.3926596563665946,
+          "true_anti_sector_constant": 40.7354838720833
+        },
+        {
+          "N": 256,
+          "correlation_real": 0.00015469064914012872,
+          "correlation_imag": 0.9809089708954053,
+          "difference": 1.9996906187017198,
+          "incorrect_M4_bound": 0.27767321399751904,
+          "true_anti_sector_constant": 81.48324020654617
+        }
+      ]
+    },
+    {
+      "name": "small_structure_factor_renormalization_countercontrol",
+      "details": [
+        {
+          "N": 8,
+          "structure_factor": 0.07322330470336312,
+          "D": 0.14644660940672624,
+          "relative_difference": 1.5962069640106893,
+          "absolute_difference": 0.11687954889538488
+        },
+        {
+          "N": 16,
+          "structure_factor": 0.01903011687217831,
+          "D": 0.03806023374435662,
+          "relative_difference": 1.9184755920432677,
+          "absolute_difference": 0.03650881473300486
+        },
+        {
+          "N": 32,
+          "structure_factor": 0.004803679899192388,
+          "D": 0.009607359798384776,
+          "relative_difference": 1.996676885453652,
+          "absolute_difference": 0.00959139661983577
+        },
+        {
+          "N": 64,
+          "structure_factor": 0.0012038183319507784,
+          "D": 0.002407636663901557,
+          "relative_difference": 1.999994478454856,
+          "absolute_difference": 0.002407630016964292
+        },
+        {
+          "N": 128,
+          "structure_factor": 0.00030113594870690184,
+          "D": 0.0006022718974138037,
+          "relative_difference": 1.9999999999847562,
+          "absolute_difference": 0.0006022718974092132
+        }
+      ]
+    },
+    {
+      "name": "nonstationary_initial_product_countercontrol",
+      "details": [
+        {
+          "N": 8,
+          "nonstationary_mean_shift_squared": 1.8945461158945835,
+          "stationary_bound_inapplicable": 0.34228246745251356
+        },
+        {
+          "N": 16,
+          "nonstationary_mean_shift_squared": 6.091435534315469,
+          "stationary_bound_inapplicable": 0.24677190681066308
+        },
+        {
+          "N": 32,
+          "nonstationary_mean_shift_squared": 15.578013106787171,
+          "stationary_bound_inapplicable": 0.17533839098962692
+        },
+        {
+          "N": 64,
+          "nonstationary_mean_shift_squared": 35.25946423748342,
+          "stationary_bound_inapplicable": 0.1241324882896092
+        },
+        {
+          "N": 128,
+          "nonstationary_mean_shift_squared": 75.01853547220179,
+          "stationary_bound_inapplicable": 0.08780136836574182
+        },
+        {
+          "N": 256,
+          "nonstationary_mean_shift_squared": 154.74484474591813,
+          "stationary_bound_inapplicable": 0.06208961820293295
+        }
+      ]
+    }
+  ],
+  "status": "all assertions passed",
+  "scope": "Exact cycle/flow/form controls; numerical complex semigroup evaluations; exact formulas for scope counterexamples. No author code/results read, no mixing or new hydrodynamic theorem."
+}

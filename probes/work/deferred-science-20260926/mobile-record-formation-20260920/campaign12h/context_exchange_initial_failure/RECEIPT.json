@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-21T03:17:54.563979+00:00",
+  "files": {
+    "context_exchange_check.py": "5f396d3d6bda0615cd6b9c2d7b70b35151f088ff5383c46f2bd93a3b79c9796d",
+    "CONTEXT_EXCHANGE_RUN.log": "b5c574ab76792d83df3d5fd39c44cc7414876d4a6e12f8aa51f58829cfc7332d"
+  },
+  "status": "first primary run failed at exact characteristic-polynomial comparison; diagnosing before editing",
+  "resolution": "SymPy charpoly stripped the real assumption from its polynomial generator. Substitution of characteristic.gen into the requested symbol gives an exact zero residual. The primary mathematical expression was unchanged.",
+  "corrected_source_sha256": "5f9c775f4381ab50ef22831ffbe0e27016cff193b18b977f2156d635b57ebc71"
+}

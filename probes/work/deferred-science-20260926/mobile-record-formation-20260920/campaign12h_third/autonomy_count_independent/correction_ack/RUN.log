@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-22T17:33:03.712299+00:00",
+  "status": "PASS; F1 resolved at the corrected note identity.",
+  "scope": "Only complete source delta and source/evidence authentication; no mathematical rerun.",
+  "original_author_artifacts_archived": 13,
+  "original_author_seals_archived": 1,
+  "corrected_author_artifacts_authenticated": 13,
+  "unchanged_author_artifacts": 12,
+  "prior_sealed_bindings_authenticated": {
+    "PRE_COMPARISON_SEAL.json": {
+      "sources": 6,
+      "artifacts": 15
+    },
+    "FINAL_COMPARISON_SEAL.json": {
+      "sources": 20,
+      "artifacts": 23
+    }
+  },
+  "changed_source": {
+    "before": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md",
+      "bytes": 11099,
+      "sha256": "7c3444041d1d348d35390e9388d03b03d45e5811456e71bb784dfc87fac46ebe"
+    },
+    "after": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md",
+      "bytes": 11427,
+      "sha256": "43aae29ef21aca04cc3fd096368ad2bdb5172c7aff31966fe118ad9597a6bbb5"
+    }
+  },
+  "complete_delta_is_exactly_two_unique_replacements": true,
+  "inverse_byte_recovery": true,
+  "assessment": "Section3 explicitly excludes arbitrary added N,T-commuting jumps; Section4 expressly inherits that restricted model and names occupation-monitoring jumps. The broader Section1 count identity remains intact.",
+  "failed_attempts": []
+}
+Unique authenticated inputs: 59

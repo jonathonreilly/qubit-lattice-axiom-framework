@@ -1,0 +1,1919 @@
+{
+  "scope": "Pre-author-checker independent finite geometry and exact killed-chain controls; no production values or mixing comparison read.",
+  "started_utc": "2026-09-21T15:57:35.207402+00:00",
+  "finished_utc": "2026-09-21T15:57:44.414505+00:00",
+  "source_note_sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+  "exhaustive_labeled_small_graphs": {
+    "rows": [
+      {
+        "n": 2,
+        "connected_graphs": 1,
+        "connected_graphs_with_perfect_matching": 1,
+        "nonbipartite_covered": 0,
+        "near_states_checked": 1,
+        "constructive_paths_checked": 2,
+        "longest_constructed_path": 0,
+        "alternating_cycles_used": 0
+      },
+      {
+        "n": 4,
+        "connected_graphs": 38,
+        "connected_graphs_with_perfect_matching": 34,
+        "nonbipartite_covered": 19,
+        "near_states_checked": 132,
+        "constructive_paths_checked": 68,
+        "longest_constructed_path": 4,
+        "alternating_cycles_used": 0
+      },
+      {
+        "n": 6,
+        "connected_graphs": 26704,
+        "connected_graphs_with_perfect_matching": 24298,
+        "nonbipartite_covered": 22338,
+        "near_states_checked": 327690,
+        "constructive_paths_checked": 48596,
+        "longest_constructed_path": 10,
+        "alternating_cycles_used": 5994
+      }
+    ],
+    "elapsed_seconds": 4.511048832908273
+  },
+  "named_graphs": {
+    "path_4": {
+      "n": 4,
+      "edges": 3,
+      "full_matchings": 1,
+      "near_matchings": 3,
+      "bipartite": true,
+      "exact_slide_diameter": 2,
+      "constructive_paths": 9,
+      "longest_constructed_path": 3,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 2,
+      "uniform_clock_rate": "2/3"
+    },
+    "path_6": {
+      "n": 6,
+      "edges": 5,
+      "full_matchings": 1,
+      "near_matchings": 6,
+      "bipartite": true,
+      "exact_slide_diameter": 4,
+      "constructive_paths": 36,
+      "longest_constructed_path": 6,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 3,
+      "uniform_clock_rate": "1/2"
+    },
+    "path_8": {
+      "n": 8,
+      "edges": 7,
+      "full_matchings": 1,
+      "near_matchings": 10,
+      "bipartite": true,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 100,
+      "longest_constructed_path": 9,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 4,
+      "uniform_clock_rate": "2/5"
+    },
+    "path_10": {
+      "n": 10,
+      "edges": 9,
+      "full_matchings": 1,
+      "near_matchings": 15,
+      "bipartite": true,
+      "exact_slide_diameter": 8,
+      "constructive_paths": 225,
+      "longest_constructed_path": 12,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 5,
+      "uniform_clock_rate": "1/3"
+    },
+    "cycle_4": {
+      "n": 4,
+      "edges": 4,
+      "full_matchings": 2,
+      "near_matchings": 4,
+      "bipartite": true,
+      "exact_slide_diameter": 2,
+      "constructive_paths": 16,
+      "longest_constructed_path": 3,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 4,
+      "uniform_clock_rate": "1"
+    },
+    "cycle_6": {
+      "n": 6,
+      "edges": 6,
+      "full_matchings": 2,
+      "near_matchings": 9,
+      "bipartite": true,
+      "exact_slide_diameter": 3,
+      "constructive_paths": 81,
+      "longest_constructed_path": 6,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 6,
+      "uniform_clock_rate": "2/3"
+    },
+    "cycle_8": {
+      "n": 8,
+      "edges": 8,
+      "full_matchings": 2,
+      "near_matchings": 16,
+      "bipartite": true,
+      "exact_slide_diameter": 4,
+      "constructive_paths": 256,
+      "longest_constructed_path": 10,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 8,
+      "uniform_clock_rate": "1/2"
+    },
+    "diamond": {
+      "n": 4,
+      "edges": 5,
+      "full_matchings": 2,
+      "near_matchings": 5,
+      "bipartite": false,
+      "exact_slide_diameter": 2,
+      "constructive_paths": 25,
+      "longest_constructed_path": 4,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 4,
+      "uniform_clock_rate": "4/5"
+    },
+    "two_odd_triangles_with_mandatory_bridge": {
+      "n": 6,
+      "edges": 7,
+      "full_matchings": 1,
+      "near_matchings": 11,
+      "bipartite": false,
+      "exact_slide_diameter": 4,
+      "constructive_paths": 121,
+      "longest_constructed_path": 6,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 3,
+      "uniform_clock_rate": "3/11"
+    },
+    "two_even_squares_with_never_full_bridge": {
+      "n": 8,
+      "edges": 9,
+      "full_matchings": 4,
+      "near_matchings": 20,
+      "bipartite": true,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 400,
+      "longest_constructed_path": 15,
+      "alternating_cycles_used": 256,
+      "eligible_near_states": 16,
+      "uniform_clock_rate": "4/5"
+    },
+    "complete_6": {
+      "n": 6,
+      "edges": 15,
+      "full_matchings": 15,
+      "near_matchings": 45,
+      "bipartite": false,
+      "exact_slide_diameter": 3,
+      "constructive_paths": 2025,
+      "longest_constructed_path": 7,
+      "alternating_cycles_used": 498,
+      "eligible_near_states": 45,
+      "uniform_clock_rate": "1"
+    },
+    "two_by_four_grid": {
+      "n": 8,
+      "edges": 10,
+      "full_matchings": 5,
+      "near_matchings": 26,
+      "bipartite": true,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 676,
+      "longest_constructed_path": 13,
+      "alternating_cycles_used": 352,
+      "eligible_near_states": 20,
+      "uniform_clock_rate": "10/13"
+    },
+    "petersen": {
+      "n": 10,
+      "edges": 15,
+      "full_matchings": 6,
+      "near_matchings": 90,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 8100,
+      "longest_constructed_path": 11,
+      "alternating_cycles_used": 870,
+      "eligible_near_states": 30,
+      "uniform_clock_rate": "1/3"
+    },
+    "irregular_seeded_n8_0": {
+      "n": 8,
+      "edges": 9,
+      "full_matchings": 1,
+      "near_matchings": 14,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 196,
+      "longest_constructed_path": 9,
+      "alternating_cycles_used": 0,
+      "eligible_near_states": 4,
+      "uniform_clock_rate": "2/7"
+    },
+    "irregular_seeded_n8_1": {
+      "n": 8,
+      "edges": 10,
+      "full_matchings": 2,
+      "near_matchings": 21,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 441,
+      "longest_constructed_path": 10,
+      "alternating_cycles_used": 76,
+      "eligible_near_states": 8,
+      "uniform_clock_rate": "8/21"
+    },
+    "irregular_seeded_n8_2": {
+      "n": 8,
+      "edges": 11,
+      "full_matchings": 3,
+      "near_matchings": 29,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 841,
+      "longest_constructed_path": 9,
+      "alternating_cycles_used": 200,
+      "eligible_near_states": 12,
+      "uniform_clock_rate": "12/29"
+    },
+    "irregular_seeded_n8_3": {
+      "n": 8,
+      "edges": 15,
+      "full_matchings": 12,
+      "near_matchings": 66,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 4356,
+      "longest_constructed_path": 10,
+      "alternating_cycles_used": 2034,
+      "eligible_near_states": 48,
+      "uniform_clock_rate": "8/11"
+    },
+    "irregular_seeded_n8_4": {
+      "n": 8,
+      "edges": 12,
+      "full_matchings": 2,
+      "near_matchings": 29,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 841,
+      "longest_constructed_path": 11,
+      "alternating_cycles_used": 200,
+      "eligible_near_states": 8,
+      "uniform_clock_rate": "8/29"
+    },
+    "irregular_seeded_n8_5": {
+      "n": 8,
+      "edges": 17,
+      "full_matchings": 15,
+      "near_matchings": 93,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 8649,
+      "longest_constructed_path": 10,
+      "alternating_cycles_used": 3482,
+      "eligible_near_states": 60,
+      "uniform_clock_rate": "20/31"
+    },
+    "irregular_seeded_n8_6": {
+      "n": 8,
+      "edges": 13,
+      "full_matchings": 4,
+      "near_matchings": 40,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 1600,
+      "longest_constructed_path": 9,
+      "alternating_cycles_used": 366,
+      "eligible_near_states": 16,
+      "uniform_clock_rate": "2/5"
+    },
+    "irregular_seeded_n8_7": {
+      "n": 8,
+      "edges": 11,
+      "full_matchings": 4,
+      "near_matchings": 30,
+      "bipartite": false,
+      "exact_slide_diameter": 5,
+      "constructive_paths": 900,
+      "longest_constructed_path": 12,
+      "alternating_cycles_used": 306,
+      "eligible_near_states": 16,
+      "uniform_clock_rate": "8/15"
+    },
+    "irregular_seeded_n10_0": {
+      "n": 10,
+      "edges": 17,
+      "full_matchings": 10,
+      "near_matchings": 110,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 12100,
+      "longest_constructed_path": 15,
+      "alternating_cycles_used": 4768,
+      "eligible_near_states": 50,
+      "uniform_clock_rate": "5/11"
+    },
+    "irregular_seeded_n10_1": {
+      "n": 10,
+      "edges": 19,
+      "full_matchings": 17,
+      "near_matchings": 177,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 2,
+      "longest_constructed_path": 10,
+      "alternating_cycles_used": 2,
+      "eligible_near_states": 85,
+      "uniform_clock_rate": "85/177"
+    },
+    "irregular_seeded_n10_2": {
+      "n": 10,
+      "edges": 14,
+      "full_matchings": 3,
+      "near_matchings": 48,
+      "bipartite": false,
+      "exact_slide_diameter": 7,
+      "constructive_paths": 2304,
+      "longest_constructed_path": 12,
+      "alternating_cycles_used": 730,
+      "eligible_near_states": 15,
+      "uniform_clock_rate": "5/16"
+    },
+    "irregular_seeded_n10_3": {
+      "n": 10,
+      "edges": 12,
+      "full_matchings": 2,
+      "near_matchings": 27,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 729,
+      "longest_constructed_path": 13,
+      "alternating_cycles_used": 184,
+      "eligible_near_states": 10,
+      "uniform_clock_rate": "10/27"
+    },
+    "irregular_seeded_n10_4": {
+      "n": 10,
+      "edges": 20,
+      "full_matchings": 9,
+      "near_matchings": 136,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 2,
+      "longest_constructed_path": 7,
+      "alternating_cycles_used": 1,
+      "eligible_near_states": 45,
+      "uniform_clock_rate": "45/136"
+    },
+    "irregular_seeded_n10_5": {
+      "n": 10,
+      "edges": 17,
+      "full_matchings": 8,
+      "near_matchings": 112,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 12544,
+      "longest_constructed_path": 13,
+      "alternating_cycles_used": 3084,
+      "eligible_near_states": 40,
+      "uniform_clock_rate": "5/14"
+    },
+    "irregular_seeded_n10_6": {
+      "n": 10,
+      "edges": 16,
+      "full_matchings": 6,
+      "near_matchings": 83,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 6889,
+      "longest_constructed_path": 13,
+      "alternating_cycles_used": 2182,
+      "eligible_near_states": 30,
+      "uniform_clock_rate": "30/83"
+    },
+    "irregular_seeded_n10_7": {
+      "n": 10,
+      "edges": 15,
+      "full_matchings": 5,
+      "near_matchings": 62,
+      "bipartite": false,
+      "exact_slide_diameter": 6,
+      "constructive_paths": 3844,
+      "longest_constructed_path": 15,
+      "alternating_cycles_used": 908,
+      "eligible_near_states": 25,
+      "uniform_clock_rate": "25/62"
+    }
+  },
+  "named_graph_definitions": {
+    "path_4": {
+      "n": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "path_6": {
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "path_8": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "path_10": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "cycle_4": {
+      "n": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "cycle_6": {
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "cycle_8": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "diamond": {
+      "n": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "two_odd_triangles_with_mandatory_bridge": {
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "two_even_squares_with_never_full_bridge": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "complete_6": {
+      "n": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "two_by_four_grid": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "petersen": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n8_0": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_1": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_2": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_3": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_4": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_5": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_6": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n8_7": {
+      "n": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    "irregular_seeded_n10_0": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_1": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_2": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_3": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_4": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_5": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_6": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    },
+    "irregular_seeded_n10_7": {
+      "n": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ]
+    }
+  },
+  "bridge_cycle_excursion_length": 7,
+  "diamond_clock_rate": "4/5",
+  "countercontrols": {
+    "disconnected_edge_plus_square": {
+      "near_components": [
+        1,
+        1,
+        4
+      ],
+      "full_matchings": 2,
+      "two_singletons_exit_deterministically_to_different_full_states": true
+    },
+    "connected_star_without_perfect_matching": {
+      "near_states": 3,
+      "birth_eligible_states": 0,
+      "full_matchings": 0
+    },
+    "path4_marked": {
+      "marked_components": [
+        3,
+        3
+      ],
+      "geometric_components": [
+        3
+      ]
+    }
+  },
+  "open_findings": []
+}

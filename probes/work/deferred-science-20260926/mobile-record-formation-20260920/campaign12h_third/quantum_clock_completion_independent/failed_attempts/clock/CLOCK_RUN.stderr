@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/clock_check.py", line 175, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/clock_check.py", line 169, in main
+    result={'status':'PASS','four_cycle_exact':exact_four_cycle(),'fixed_K_numeric_controls':numerical_families(),
+                                                                                             ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/clock_check.py", line 127, in numerical_families
+    m,h,res=mean_operator(k,kappa,beta,d,states,neighbors,contact,mapping,reps)
+            ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/clock_check.py", line 112, in mean_operator
+    assert np.linalg.norm(m-m.conj().T)<2e-7
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

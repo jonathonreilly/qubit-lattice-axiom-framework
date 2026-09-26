@@ -1,0 +1,18 @@
+[
+  {
+    "attempt": 1,
+    "returncode": 0,
+    "script_sha256": "7463384bf7eb35c9fdca0e6074c7b571b051211d23f576d1e973c36be371a420",
+    "log": "RUN_attempt_01.log",
+    "finding": "The general biased-product star output mislabeled a raw adjacent vector pair-moment derivative as a connected covariance derivative. Its balanced counterexample has zero mean, so the value 1/18 is unaffected. Correct by explicitly subtracting 2 times mean vector times its source derivative; retain both quantities with distinct labels.",
+    "script": "independent_check_attempt_01.py"
+  },
+  {
+    "attempt": 2,
+    "returncode": 0,
+    "script_sha256": "f27061a13b4a84a5098a42a550d0e2395e9f34cd059dc413a131eeec832ce31b",
+    "log": "RUN_attempt_02.log",
+    "result": "15 controls completed. Distinct raw-pair and connected-covariance quantities now reported; uniform-weight control included. No assertion failures.",
+    "script": "independent_check.py"
+  }
+]

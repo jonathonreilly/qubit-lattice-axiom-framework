@@ -1,0 +1,147 @@
+{
+  "method": "All link bit strings; exact integer Gauss charges with frozen positive exterior; complete legal vacancy-hop graph.",
+  "cases": [
+    {
+      "lengths": [
+        2,
+        2,
+        2
+      ],
+      "vertices": 8,
+      "edges": 12,
+      "bit_strings_exhaustively_scanned": 4096,
+      "physical_basis_states": 375,
+      "independent_direct_charge_crosschecks": 375,
+      "undirected_hop_edges": 516,
+      "directed_birth_arcs": 696,
+      "total_components": 28,
+      "nonfull_components": 10,
+      "every_nonfull_hop_component_contains_positive_loss": true,
+      "maximum_vacant_edge_count": 12,
+      "component_histogram": [
+        {
+          "holes": 0,
+          "size": 1,
+          "active_configurations": 0,
+          "max_hazard": 0,
+          "multiplicity": 18
+        },
+        {
+          "holes": 2,
+          "size": 1,
+          "active_configurations": 1,
+          "max_hazard": 1,
+          "multiplicity": 6
+        },
+        {
+          "holes": 2,
+          "size": 164,
+          "active_configurations": 72,
+          "max_hazard": 1,
+          "multiplicity": 1
+        },
+        {
+          "holes": 4,
+          "size": 156,
+          "active_configurations": 156,
+          "max_hazard": 4,
+          "multiplicity": 1
+        },
+        {
+          "holes": 6,
+          "size": 30,
+          "active_configurations": 30,
+          "max_hazard": 7,
+          "multiplicity": 1
+        },
+        {
+          "holes": 8,
+          "size": 1,
+          "active_configurations": 1,
+          "max_hazard": 12,
+          "multiplicity": 1
+        }
+      ],
+      "failing_components": [],
+      "runtime_seconds": 0.003750666044652462
+    },
+    {
+      "lengths": [
+        2,
+        2,
+        3
+      ],
+      "vertices": 12,
+      "edges": 20,
+      "bit_strings_exhaustively_scanned": 1048576,
+      "physical_basis_states": 25386,
+      "independent_direct_charge_crosschecks": 259,
+      "undirected_hop_edges": 67204,
+      "directed_birth_arcs": 70824,
+      "total_components": 234,
+      "nonfull_components": 34,
+      "every_nonfull_hop_component_contains_positive_loss": true,
+      "maximum_vacant_edge_count": 20,
+      "component_histogram": [
+        {
+          "holes": 0,
+          "size": 1,
+          "active_configurations": 0,
+          "max_hazard": 0,
+          "multiplicity": 200
+        },
+        {
+          "holes": 2,
+          "size": 1,
+          "active_configurations": 1,
+          "max_hazard": 1,
+          "multiplicity": 28
+        },
+        {
+          "holes": 2,
+          "size": 4570,
+          "active_configurations": 1412,
+          "max_hazard": 1,
+          "multiplicity": 1
+        },
+        {
+          "holes": 4,
+          "size": 11684,
+          "active_configurations": 10906,
+          "max_hazard": 4,
+          "multiplicity": 1
+        },
+        {
+          "holes": 6,
+          "size": 7394,
+          "active_configurations": 7386,
+          "max_hazard": 7,
+          "multiplicity": 1
+        },
+        {
+          "holes": 8,
+          "size": 1427,
+          "active_configurations": 1427,
+          "max_hazard": 12,
+          "multiplicity": 1
+        },
+        {
+          "holes": 10,
+          "size": 82,
+          "active_configurations": 82,
+          "max_hazard": 15,
+          "multiplicity": 1
+        },
+        {
+          "holes": 12,
+          "size": 1,
+          "active_configurations": 1,
+          "max_hazard": 20,
+          "multiplicity": 1
+        }
+      ],
+      "failing_components": [],
+      "runtime_seconds": 0.5825446669477969
+    }
+  ]
+}

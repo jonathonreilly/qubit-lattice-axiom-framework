@@ -1,0 +1,9 @@
+{
+  "phase": "report file creation, not mathematical checker",
+  "attempt": 1,
+  "tool": "apply_patch",
+  "result": "rejected before changing files",
+  "raw_error": "apply_patch verification failed: invalid hunk at line 527, 'unproved question and is not needed for this bounded result.' is not a valid hunk header. Valid hunk headers: '*** Add File: {path}', '*** Delete File: {path}', '*** Update File: {path}'",
+  "cause": "One line in the proposed Add File patch lacked its required plus prefix.",
+  "resolution": "Build the Add File patch by prefixing every report line programmatically; no mathematical target or formula changed."
+}

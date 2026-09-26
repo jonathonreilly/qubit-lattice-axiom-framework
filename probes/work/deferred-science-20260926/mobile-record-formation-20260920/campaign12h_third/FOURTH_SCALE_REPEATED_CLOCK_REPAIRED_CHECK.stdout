@@ -1,0 +1,11 @@
+{
+  "rows": 5,
+  "full_microscopic_controls": 12,
+  "largest_micro_count_difference": 1.9317880628477724e-14,
+  "smallest_epsilon_joint_L1_bounds": {
+    "coherent": 0.013107022162971221,
+    "resolved": 0.013107019886737868
+  },
+  "source_sha256": "743e263d645d9fbd15fd870e3c48fe85166f1493d7ba85e672f54d468037ab4d",
+  "result_sha256": "b8ba0084933025735d0cc204d1731a3b350f1d2a5d25098b24a1e155630cb416"
+}

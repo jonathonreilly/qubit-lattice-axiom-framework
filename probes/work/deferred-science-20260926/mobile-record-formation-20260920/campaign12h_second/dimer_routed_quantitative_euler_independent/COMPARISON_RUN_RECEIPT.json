@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_independent/compare_author.py"
+  ],
+  "started_utc": "2026-09-21T20:34:12.482205+00:00",
+  "finished_utc": "2026-09-21T20:34:12.716179+00:00",
+  "returncode": 0,
+  "script_sha256": "1f796a5efb63728cb7c03f9bc2b857b93cd5bf09a7e75e1a38862ea6e06ae5cc"
+}

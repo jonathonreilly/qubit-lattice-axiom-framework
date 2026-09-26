@@ -1,0 +1,146 @@
+{
+  "scope": "Pre-author independent controls; exact permutation/form identities and separately numerical finite moment/Fourier evaluations.",
+  "switched_energy": {
+    "noncommuting_generators": true,
+    "exact_interval_Hminus_norms": [
+      "19/20",
+      "1387/1494",
+      "1/5"
+    ],
+    "rows": [
+      {
+        "constant_geometry_intervals": 1,
+        "total_time": 0.6,
+        "integral_second_moment": 0.6455679278815516,
+        "energy_bound": 1.14,
+        "forward_martingale_second": 1.1400000000000003,
+        "backward_martingale_second": 1.1399999999999997,
+        "expected_each_martingale_second": 1.14,
+        "forward_backward_pairing_error": 5.551115123125783e-16,
+        "nonstationary_density_permutation_norm_error": 0.0
+      },
+      {
+        "constant_geometry_intervals": 2,
+        "total_time": 0.6,
+        "integral_second_moment": 0.29987876730702234,
+        "energy_bound": 1.1270281124497992,
+        "forward_martingale_second": 1.1270281124497992,
+        "backward_martingale_second": 1.127028112449799,
+        "expected_each_martingale_second": 1.1270281124497992,
+        "forward_backward_pairing_error": 0.0,
+        "nonstationary_density_permutation_norm_error": 0.0
+      },
+      {
+        "constant_geometry_intervals": 9,
+        "total_time": 0.6,
+        "integral_second_moment": 0.06007033312509839,
+        "energy_bound": 0.8313520749665326,
+        "forward_martingale_second": 0.8313520749665331,
+        "backward_martingale_second": 0.8313520749665331,
+        "expected_each_martingale_second": 0.8313520749665326,
+        "forward_backward_pairing_error": 3.469446951953614e-17,
+        "nonstationary_density_permutation_norm_error": 2.7755575615628914e-17
+      },
+      {
+        "constant_geometry_intervals": 37,
+        "total_time": 0.6,
+        "integral_second_moment": 0.031741615214468805,
+        "energy_bound": 0.8396939107782484,
+        "forward_martingale_second": 0.8396939107782492,
+        "backward_martingale_second": 0.8396939107782483,
+        "expected_each_martingale_second": 0.8396939107782484,
+        "forward_backward_pairing_error": 1.3877787807814457e-16,
+        "nonstationary_density_permutation_norm_error": 4.440892098500626e-16
+      }
+    ],
+    "excluded_nonstationary_color_countercontrol": {
+      "initial_state": 1,
+      "stationary_law": [
+        "100/101",
+        "1/101"
+      ],
+      "time": 0.5,
+      "actual_integral_second": 0.18016257944662556,
+      "incorrect_stationary_energy_bound": 0.009900990099009901
+    }
+  },
+  "immutable_square": {
+    "record_orientation_parity_and_sense_cases": 64,
+    "projection_counts": {
+      "identity": 32,
+      "swap": 32
+    },
+    "inverse_immutable_rotation_exact": true,
+    "geometry_flip_rate": "2 nu",
+    "color_swap_drift_rate": "nu"
+  },
+  "matching_form_comparison": [
+    {
+      "matching": "winding",
+      "N": 8,
+      "flippable_squares": 0,
+      "maximum_squares_per_black_pair": 0,
+      "minimum_routed_multiplicity_on_flip_edges": 0,
+      "exact_edgewise_form_comparison": true,
+      "one_marker_Hminus_squared": 0.0,
+      "one_marker_D_K": 0.0,
+      "displayed_Hminus_upper_bound": 0.0
+    },
+    {
+      "matching": "columnar",
+      "N": 8,
+      "flippable_squares": 512,
+      "maximum_squares_per_black_pair": 1,
+      "minimum_routed_multiplicity_on_flip_edges": 2,
+      "exact_edgewise_form_comparison": true,
+      "one_marker_Hminus_squared": 0.007890499194847023,
+      "one_marker_D_K": 0.015190972222222219,
+      "displayed_Hminus_upper_bound": 0.018904320987654318
+    },
+    {
+      "matching": "irregular",
+      "N": 8,
+      "flippable_squares": 148,
+      "maximum_squares_per_black_pair": 1,
+      "minimum_routed_multiplicity_on_flip_edges": 2,
+      "exact_edgewise_form_comparison": true,
+      "one_marker_Hminus_squared": 0.0012120237634164481,
+      "one_marker_D_K": 0.003992895432700725,
+      "displayed_Hminus_upper_bound": 0.004968936538472013
+    }
+  ],
+  "gauss_fourier": {
+    "increment_cases": 96,
+    "maximum_component_formula_error": 2.928967324333586e-16,
+    "maximum_symbolic_divergence_error": 1.5135618037402904e-16,
+    "per_size": [
+      {
+        "N": 8,
+        "local_increment_cases": 48,
+        "cumulative_cases": 48
+      },
+      {
+        "N": 10,
+        "local_increment_cases": 48,
+        "cumulative_cases": 96
+      }
+    ],
+    "two_state_reversible_boundary_control": [
+      {
+        "time": 0.01,
+        "stationary_increment_second": 0.00017947561579189546,
+        "twice_time_D": 0.00018199999999999998
+      },
+      {
+        "time": 0.3,
+        "stationary_increment_second": 0.003693881597710982,
+        "twice_time_D": 0.005459999999999999
+      },
+      {
+        "time": 2.0,
+        "stationary_increment_second": 0.00647596388584286,
+        "twice_time_D": 0.036399999999999995
+      }
+    ]
+  }
+}

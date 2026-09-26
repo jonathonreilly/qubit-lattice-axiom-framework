@@ -1,0 +1,240 @@
+{
+  "created_utc": "2026-09-22T16:19:40.411977+00:00",
+  "script_sha256": "7bfc1048e170c1d6b192e34d89a994bbed423e4784508609e42779089b80a936",
+  "finite_link_checks": [
+    {
+      "cosine": "3/5",
+      "sine": "4/5",
+      "clock_sites": 6,
+      "total_matrix_dimension": 216,
+      "direct_defect_equals_unitary_conjugate": true,
+      "exact_Gauss_and_resource_conservation": true,
+      "both_plane_wave_boundary_equations_exact": true
+    },
+    {
+      "cosine": "0",
+      "sine": "1",
+      "clock_sites": 6,
+      "total_matrix_dimension": 216,
+      "direct_defect_equals_unitary_conjugate": true,
+      "exact_Gauss_and_resource_conservation": true,
+      "both_plane_wave_boundary_equations_exact": true
+    }
+  ],
+  "packet_moments_and_bounds": {
+    "exact_finite_sum_controls": [
+      {
+        "M": 1,
+        "position_variance": "1/4",
+        "mean_velocity_at_J1": "1",
+        "velocity_variance_at_J1": "1",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 2,
+        "position_variance": "1/3",
+        "mean_velocity_at_J1": "4/3",
+        "velocity_variance_at_J1": "5/9",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 3,
+        "position_variance": "9/20",
+        "mean_velocity_at_J1": "3/2",
+        "velocity_variance_at_J1": "7/20",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 4,
+        "position_variance": "4/7",
+        "mean_velocity_at_J1": "8/5",
+        "velocity_variance_at_J1": "6/25",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 5,
+        "position_variance": "25/36",
+        "mean_velocity_at_J1": "5/3",
+        "velocity_variance_at_J1": "11/63",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 6,
+        "position_variance": "9/11",
+        "mean_velocity_at_J1": "12/7",
+        "velocity_variance_at_J1": "13/98",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 7,
+        "position_variance": "49/52",
+        "mean_velocity_at_J1": "7/4",
+        "velocity_variance_at_J1": "5/48",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 8,
+        "position_variance": "16/15",
+        "mean_velocity_at_J1": "16/9",
+        "velocity_variance_at_J1": "34/405",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 9,
+        "position_variance": "81/68",
+        "mean_velocity_at_J1": "9/5",
+        "velocity_variance_at_J1": "19/275",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 10,
+        "position_variance": "25/19",
+        "mean_velocity_at_J1": "20/11",
+        "velocity_variance_at_J1": "7/121",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 11,
+        "position_variance": "121/84",
+        "mean_velocity_at_J1": "11/6",
+        "velocity_variance_at_J1": "23/468",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 12,
+        "position_variance": "36/23",
+        "mean_velocity_at_J1": "24/13",
+        "velocity_variance_at_J1": "50/1183",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 13,
+        "position_variance": "169/100",
+        "mean_velocity_at_J1": "13/7",
+        "velocity_variance_at_J1": "9/245",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 14,
+        "position_variance": "49/27",
+        "mean_velocity_at_J1": "28/15",
+        "velocity_variance_at_J1": "29/900",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 15,
+        "position_variance": "225/116",
+        "mean_velocity_at_J1": "15/8",
+        "velocity_variance_at_J1": "31/1088",
+        "symmetrized_covariance": "0"
+      },
+      {
+        "M": 16,
+        "position_variance": "64/31",
+        "mean_velocity_at_J1": "32/17",
+        "velocity_variance_at_J1": "22/867",
+        "symmetrized_covariance": "0"
+      }
+    ],
+    "uniform_time_bound_derivative_checked": true,
+    "finite_time_bounds": [
+      {
+        "M": 16,
+        "L": 32,
+        "T": 40,
+        "mean_position": "872/17",
+        "position_variance_at_T": "1146688/26877",
+        "uniform_later_nonpassage_bound": "17917/1122850",
+        "decimal_bound": 0.01595671728191655
+      },
+      {
+        "M": 40,
+        "L": 80,
+        "T": 100,
+        "mean_position": "5540/41",
+        "position_variance_at_T": "47366800/929593",
+        "uniform_later_nonpassage_bound": "118417/42549554",
+        "decimal_bound": 0.0027830373968197176
+      },
+      {
+        "M": 80,
+        "L": 160,
+        "T": 200,
+        "mean_position": "22280/81",
+        "position_variance_at_T": "826107200/14257053",
+        "uniform_later_nonpassage_bound": "516317/674687394",
+        "decimal_bound": 0.0007652684852149468
+      }
+    ]
+  },
+  "asymptotic_directional_tail_controls": [
+    {
+      "M": 1,
+      "exact_tail": "1/2 - 1/pi",
+      "tail_decimal_diagnostic": "0.1816901138162093",
+      "integral_bound_exact": "1/2",
+      "elementary_bound_exact": "3/4"
+    },
+    {
+      "M": 2,
+      "exact_tail": "1/2 - 4/(3*pi)",
+      "tail_decimal_diagnostic": "0.07558681842161244",
+      "integral_bound_exact": "1/3",
+      "elementary_bound_exact": "5/8"
+    },
+    {
+      "M": 4,
+      "exact_tail": "1/2 - 32/(21*pi)",
+      "tail_decimal_diagnostic": "0.01495636391041421",
+      "integral_bound_exact": "4/35",
+      "elementary_bound_exact": "9/32"
+    },
+    {
+      "M": 8,
+      "exact_tail": "1/2 - 23552/(15015*pi)",
+      "tail_decimal_diagnostic": "0.0007103270462445624",
+      "integral_bound_exact": "64/6435",
+      "elementary_bound_exact": "17/512"
+    },
+    {
+      "M": 16,
+      "exact_tail": "1/2 - 416962576384/(265447707525*pi)",
+      "tail_decimal_diagnostic": "2.047600312331446e-6",
+      "integral_bound_exact": "16384/300540195",
+      "elementary_bound_exact": "33/131072"
+    },
+    {
+      "M": 40,
+      "exact_tail": "1/2 - 2773681782513336034604255019008/(1765780665004027815310473230925*pi)",
+      "tail_decimal_diagnostic": "7.944563175162916e-14",
+      "integral_bound_exact": "137438953472/26876802183334044115405",
+      "elementary_bound_exact": "81/2199023255552"
+    },
+    {
+      "M": 80,
+      "exact_tail": "1/2 - 37026978254641194318818608018797606567622363460095375572874559488/(23572106467929061465923640953798614172072977364411302263215288375*pi)",
+      "tail_decimal_diagnostic": "5.162117103921973e-26",
+      "integral_bound_exact": "151115727451828646838272/23011281453433559506615565759344515997519182285",
+      "elementary_bound_exact": "161/2417851639229258349412352"
+    }
+  ],
+  "specified_nonmonotone_control": {
+    "preparation": "walker localized at rail position 0",
+    "J": 1,
+    "t_early": 1,
+    "t_late": 2,
+    "p_early_lower_bound_decimal": "0.47493645950776521575",
+    "p_late_upper_bound_decimal": "0.42113601426255494022",
+    "strict_decrease_proved_by_rational_alternating_series_bounds": true,
+    "J0_2_interval": [
+      "14610465045642360767057360129078908571/65257109299823952731727294627840000000",
+      "69748013107255571151962573715617179/311526956915259351864075878400000000"
+    ],
+    "J0_4_interval": [
+      "-15085591323842171668483811683/37984636903172331356750390625",
+      "-34207690076739618295881659/86132963499256987203515625"
+    ],
+    "scope": "A specified reversible Hamiltonian and localized preparation; not a universal obstruction."
+  },
+  "limits": "Infinite-rail velocity-limit and all-M bounds are analytic proofs in the companion note. Finite checks do not prove a native compiler, continuous permanence, or many-carrier dynamics."
+}

@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-21T20:13:34.631623+00:00",
+  "finding": "N64 winding x-mode at21/16 upper1SE endpoint2.308821 exceeded the previous2.3 upper display limit. Root visual QA did not catch the clipped cap.",
+  "change": "Only error-panel y-limit changes2.3 to2.4; underlying comparison and production evidence unchanged.",
+  "before_sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5",
+  "after_sha256": "27ceae7150c95ce5f32e77c4525b6c96ef0422b36fa9b6586011b7935ed146c4"
+}

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T15:31:16.613920+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_occupation_observability_check.py"
+  ],
+  "script_sha256": "0b60c8032c2746541be4d06b9d083aa7e103412109a439dc583d9ae2a28bb869",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T15:31:22.148191+00:00"
+}

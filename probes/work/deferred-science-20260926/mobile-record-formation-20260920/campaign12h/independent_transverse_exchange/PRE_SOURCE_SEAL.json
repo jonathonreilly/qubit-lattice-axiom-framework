@@ -1,0 +1,206 @@
+{
+  "task": "Independent fifteen-state transverse immutable-exchange reconstruction",
+  "sealed_utc": "2026-09-21T06:58:48.578631+00:00",
+  "scope": "Pre-primary-source independent calculation; finite-time finite-mode limit statements and bounded exact controls; no audit or physical-field identification",
+  "primary_source_access_before_seal": false,
+  "new_external_mathematical_imports": [],
+  "unresolved_mathematical_obligations_within_stated_scope": [],
+  "artifact_count": 15,
+  "artifacts": [
+    {
+      "path": "ATTEMPTS.json",
+      "bytes": 1388,
+      "sha256": "f980b2c1e092aeea7934a16b8fdd41ce4deb146e635bfa2307992b4b3469d08b"
+    },
+    {
+      "path": "BOOKKEEPING_FAILURE.json",
+      "bytes": 771,
+      "sha256": "19d24853bea2ef0c158305d3a7ead8e5a3541d77a33cb8dd75fc706aba049758"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 2420,
+      "sha256": "0a6784c4346722c1a81d120e2a7d8a62f33a8db4ae834053459ce0a45934b8d9"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 6260,
+      "sha256": "ad48547f4a5649f7a3a31df2defb4fa7b8d6f329d68e441681e2182f48ddfac5"
+    },
+    {
+      "path": "DIAGNOSE_attempt_01.log",
+      "bytes": 2541,
+      "sha256": "485cb7a3e26224943e9e69a9a85797f6d2843cd7901e94da94c84e2eefe48f8a"
+    },
+    {
+      "path": "DIAGNOSE_attempt_02.log",
+      "bytes": 1369,
+      "sha256": "0672a069833b71610c4fa54bd2303ef5487e705095c2fee75ad2d3df6c4ba9ca"
+    },
+    {
+      "path": "INPUT.md",
+      "bytes": 1402,
+      "sha256": "c119ca3f14356bbb4db583327ed5ad8221f9b4dc4a9f245271eba76af528ebdc"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 30451,
+      "sha256": "9de24aa5265ec720e24f8ce0d95b34fa7760d1112baed3cbca7cb05e44689dcf"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 8830,
+      "sha256": "579bc3377bda1bf756dc9f44a6f0298294933c503201c95faeacaab945d39c5f"
+    },
+    {
+      "path": "RUN_attempt_01.log",
+      "bytes": 783,
+      "sha256": "dabd75cce3465fbecb4aacca6ce97b90bbd8dcf0b550ae115365a4cf8e7081f7"
+    },
+    {
+      "path": "RUN_attempt_02.log",
+      "bytes": 832,
+      "sha256": "b3551c621f5575f9c4908b51d5de43657049621df283fcf04d9d8c3098edf52a"
+    },
+    {
+      "path": "RUN_attempt_03.log",
+      "bytes": 8830,
+      "sha256": "579bc3377bda1bf756dc9f44a6f0298294933c503201c95faeacaab945d39c5f"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 13120,
+      "sha256": "ed6ec9663d065f267908fee1c476d5abcbafb32a74e206261f6b542b6b22502d"
+    },
+    {
+      "path": "independent_check_attempt_01.py",
+      "bytes": 13061,
+      "sha256": "675159c23e392746c66f7b7723fcf31b6bea3fe642c6589672e2e4090d0e73ec"
+    },
+    {
+      "path": "independent_check_attempt_02.py",
+      "bytes": 13084,
+      "sha256": "ed7940bd4d191dbef065d2f5e3b839a4f97c5d1fcaf73cdf7b16d7f56a2fb293"
+    }
+  ],
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md",
+      "bytes": 13405,
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713",
+      "role": "mathematical dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json",
+      "bytes": 2320,
+      "sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/independent_check.py",
+      "bytes": 12544,
+      "sha256": "f1c5145fdde96ef17b4a85f738d0d31456b5f32944edcc59af6ebe38ebb58404",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "bytes": 18148,
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+      "role": "mathematical dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "bytes": 3840,
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py",
+      "bytes": 9938,
+      "sha256": "5ebc1ce0750c658649447e0a0d8da146b2ab64bd4fd83d232329281d1df4b3d4",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+      "bytes": 22838,
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68",
+      "role": "mathematical dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/PRE_SOURCE_SEAL.json",
+      "bytes": 4691,
+      "sha256": "c729b0f85e0350b834380909001ef62f0db0378fdf114b108f5feef7f6e0e8d1",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/independent_check.py",
+      "bytes": 13581,
+      "sha256": "38ce7ba4dc4e63401709ea9c1558180dd1446f95285dce68b5e12048f887e434",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/REPORT.md",
+      "bytes": 25686,
+      "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc",
+      "role": "mathematical dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/PRE_SOURCE_SEAL.json",
+      "bytes": 4297,
+      "sha256": "c86eba9af78a19fbeb92782f521bb9ed43553f078adf638c4ca846e6b9ee6286",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/independent_check.py",
+      "bytes": 15744,
+      "sha256": "36633e18c34699b6ed490ceceb091c666da5775d54b3bd1154ba5187b9b5ca69",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_polynomial_flux/REPORT.md",
+      "bytes": 27427,
+      "sha256": "94d8ffa8681f9fbc605bd6ff196c495d6725e3c92fdd9013cee1b840577776e8",
+      "role": "mathematical dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_polynomial_flux/PRE_SOURCE_SEAL.json",
+      "bytes": 4151,
+      "sha256": "47f87385cccde288d7cd950cc7bd9860cf0b2379f3527ee133af2f0e75d2f174",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_polynomial_flux/independent_check.py",
+      "bytes": 16023,
+      "sha256": "ed68c2e0ba1ec8358d589f1fcafd59140c29964abca7351ffbc85cf9acd9190c",
+      "role": "source identity; not rerun"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "bytes": 11333,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "boundary comparison only; does not supply the generator"
+    }
+  ],
+  "instruction_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "instruction snapshot"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "instruction snapshot"
+    }
+  ],
+  "checks": {
+    "checker_attempts": 3,
+    "retained_bookkeeping_failures": 1,
+    "completed_exact_finite_symbolic_control_groups": 23,
+    "final_output_matches_full_raw_log": true,
+    "all_dependency_and_attempt_identities_verified": true
+  },
+  "write_boundary": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange"
+}

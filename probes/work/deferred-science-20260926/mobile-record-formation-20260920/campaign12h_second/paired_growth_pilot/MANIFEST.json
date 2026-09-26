@@ -1,0 +1,269 @@
+{
+  "created_utc": "2026-09-21T13:18:13.864845+00:00",
+  "phase": "pilot",
+  "source_sha256": {
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth": "e6a5b8b83e10614d1a9b6f662d9532ed8ac63aa4922338af2e6455047bb98d90",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_growth.cpp": "f63efebb430fa8ac9998281972831001cb06f0ae1be1f926fd47fd94f9b08098",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_GROWTH_SCREEN_PROTOCOL.md": "1a500d313cb56c5d8a7a01b0a743ae0b9782299b2fe35a8b01c2a60354cb2c7f",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/run_paired_growth_batch.py": "d848da723379ac9eef21e2fed20696ae007c0d781985fef663cd278a78b69874"
+  },
+  "workers": 2,
+  "jobs": [
+    {
+      "stem": "N4_empty_baseline_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092101",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_empty_baseline_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092102",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_empty_extended_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092101",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_empty_extended_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092102",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_jam_baseline_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092101",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_jam_baseline_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092102",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_jam_extended_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092101",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N4_jam_extended_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "4",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092102",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_empty_baseline_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092101",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_empty_baseline_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092102",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_empty_extended_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092101",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_empty_extended_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092102",
+        "empty",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_jam_baseline_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092101",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_jam_baseline_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092102",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_jam_extended_s21092101",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092101",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092101",
+        "jam",
+        "40"
+      ]
+    },
+    {
+      "stem": "N8_jam_extended_s21092102",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/paired_record_growth",
+        "8",
+        "21092102",
+        "1",
+        "1",
+        "1",
+        "0.06666666666666666667",
+        "100",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092102",
+        "jam",
+        "40"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "scope": "Independent before any new author checker/results; exact arithmetic except explicitly numeric semigroup evaluations.",
+  "conditional_coupling": [
+    {
+      "K": 2,
+      "distinct_label_states": 2,
+      "positions_checked": 2,
+      "conditional_indicator_ratio": "1/2",
+      "complete_bound_certificate": {
+        "nontrivial_dimension": 1,
+        "minimum_LDL_pivot": "2"
+      }
+    },
+    {
+      "K": 3,
+      "distinct_label_states": 6,
+      "positions_checked": 3,
+      "conditional_indicator_ratio": "1/3",
+      "complete_bound_certificate": {
+        "nontrivial_dimension": 5,
+        "minimum_LDL_pivot": "27/13"
+      }
+    },
+    {
+      "K": 4,
+      "distinct_label_states": 24,
+      "positions_checked": 4,
+      "conditional_indicator_ratio": "1/4",
+      "complete_bound_certificate": {
+        "nontrivial_dimension": 23,
+        "minimum_LDL_pivot": "240/71"
+      }
+    },
+    {
+      "K": 5,
+      "distinct_label_states": 120,
+      "positions_checked": 5,
+      "conditional_indicator_ratio": "1/5",
+      "complete_bound_certificate": null
+    }
+  ],
+  "connected_graphs": [
+    {
+      "graph": "path4",
+      "K": 4,
+      "diameter": 3,
+      "color_sector_size": 24,
+      "immutable_label_word_checks": 144,
+      "max_reference_edge_occurrences": 6,
+      "displayed_unit_rate_gap_lower_bound": "1/30",
+      "exact_certificate": {
+        "nontrivial_dimension": 23,
+        "minimum_LDL_pivot": "545364680692085996/285076814262594415"
+      }
+    },
+    {
+      "graph": "star4",
+      "K": 4,
+      "diameter": 2,
+      "color_sector_size": 12,
+      "immutable_label_word_checks": 144,
+      "max_reference_edge_occurrences": 5,
+      "displayed_unit_rate_gap_lower_bound": "1/18",
+      "exact_certificate": {
+        "nontrivial_dimension": 11,
+        "minimum_LDL_pivot": "6055/2808"
+      }
+    },
+    {
+      "graph": "diamond4",
+      "K": 4,
+      "diameter": 2,
+      "color_sector_size": 6,
+      "immutable_label_word_checks": 144,
+      "max_reference_edge_occurrences": 3,
+      "displayed_unit_rate_gap_lower_bound": "1/18",
+      "exact_certificate": {
+        "nontrivial_dimension": 5,
+        "minimum_LDL_pivot": "265895/71619"
+      }
+    },
+    {
+      "graph": "triangle_with_bridge_tail5",
+      "K": 5,
+      "diameter": 3,
+      "color_sector_size": 20,
+      "immutable_label_word_checks": 1200,
+      "max_reference_edge_occurrences": 9,
+      "displayed_unit_rate_gap_lower_bound": "1/40",
+      "exact_certificate": {
+        "nontrivial_dimension": 19,
+        "minimum_LDL_pivot": "18199151864021689359295778951594889/8352763563677327994960695318035660"
+      }
+    },
+    {
+      "graph": "cycle5",
+      "K": 5,
+      "diameter": 2,
+      "color_sector_size": 20,
+      "immutable_label_word_checks": 1200,
+      "max_reference_edge_occurrences": 5,
+      "displayed_unit_rate_gap_lower_bound": "1/24",
+      "exact_certificate": {
+        "nontrivial_dimension": 19,
+        "minimum_LDL_pivot": "199933452539123665012655287063/79547249999104964949618244608"
+      }
+    }
+  ],
+  "disconnected_countercontrol": {
+    "disconnected_absorbing_state": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "sector_size": 6,
+    "TV_from_uniform_for_all_times": "5/6"
+  },
+  "contracted_geometry": [
+    {
+      "matching": "winding",
+      "N": 8,
+      "K": 256,
+      "simple_contracted_edges": 1280,
+      "exact_contracted_diameter": 8,
+      "physical_diameter_bound": 12,
+      "accepted_fixture_flips": 0
+    },
+    {
+      "matching": "columnar",
+      "N": 8,
+      "K": 256,
+      "simple_contracted_edges": 768,
+      "exact_contracted_diameter": 10,
+      "physical_diameter_bound": 12,
+      "accepted_fixture_flips": 0
+    },
+    {
+      "matching": "irregular",
+      "N": 8,
+      "K": 256,
+      "simple_contracted_edges": 1109,
+      "exact_contracted_diameter": 6,
+      "physical_diameter_bound": 12,
+      "accepted_fixture_flips": 542
+    }
+  ],
+  "nonreversible": {
+    "states": 24,
+    "k0": "5/4",
+    "gamma": "3/4",
+    "nonreversible": true,
+    "symmetric_part_exactly_k0_over_2_graph_swaps": true,
+    "comparison_gap": "5/144",
+    "exact_LDL_certificate": {
+      "nontrivial_dimension": 23,
+      "minimum_LDL_pivot": "190114925/90077478"
+    },
+    "density_energy_derivative": "-1215/2",
+    "samples": [
+      {
+        "time": 0.1,
+        "centered_density_L2_squared": 14.016335144886993,
+        "displayed_L2_bound": 22.84083108727727,
+        "TV": 0.7793799934634665,
+        "displayed_TV_bound": 2.3896041035743383
+      },
+      {
+        "time": 1.0,
+        "centered_density_L2_squared": 0.6902110732980214,
+        "displayed_L2_bound": 21.45697508890439,
+        "TV": 0.2963215256018023,
+        "displayed_TV_bound": 2.3160837144253006
+      },
+      {
+        "time": 4.0,
+        "centered_density_L2_squared": 0.0003116187867368265,
+        "displayed_L2_bound": 17.421697953130227,
+        "TV": 0.00793919425092282,
+        "displayed_TV_bound": 2.0869653778351367
+      },
+      {
+        "time": 20.0,
+        "centered_density_L2_squared": 1.2536843782201487e-21,
+        "displayed_L2_bound": 5.735100801877813,
+        "TV": 1.5200288944194895e-11,
+        "displayed_TV_bound": 1.1974035244934988
+      },
+      {
+        "time": 100.0,
+        "centered_density_L2_squared": 1.659638030743294e-29,
+        "displayed_L2_bound": 0.022171441691886073,
+        "TV": 1.9394208461420703e-15,
+        "displayed_TV_bound": 0.07445038900483676
+      }
+    ]
+  },
+  "probability_transfer": {
+    "fourteen_label_K3_states": 2744,
+    "multinomial_sectors": 560,
+    "all_sector_mixture_weights_equal_product_exactly": true,
+    "missing_count_geometry_independence_counterexample_TV": "1/2",
+    "wrong_counts_counterexample": "All-one-color sector stays there; TV from iid p is 1-p_a^K.",
+    "schedule": [
+      {
+        "N": 8,
+        "K": 256,
+        "g_N_at_k0_1": "1/23460",
+        "epsilon_N": "1/4096",
+        "K_times_epsilon_N": "1/16",
+        "exact_log_TV_bound_equals_log_epsilon": true
+      },
+      {
+        "N": 16,
+        "K": 2048,
+        "g_N_at_k0_1": "1/384836",
+        "epsilon_N": "1/65536",
+        "K_times_epsilon_N": "1/32",
+        "exact_log_TV_bound_equals_log_epsilon": true
+      },
+      {
+        "N": 32,
+        "K": 16384,
+        "g_N_at_k0_1": "1/6225540",
+        "epsilon_N": "1/1048576",
+        "K_times_epsilon_N": "1/64",
+        "exact_log_TV_bound_equals_log_epsilon": true
+      },
+      {
+        "N": 64,
+        "K": 131072,
+        "g_N_at_k0_1": "1/100138244",
+        "epsilon_N": "1/16777216",
+        "K_times_epsilon_N": "1/128",
+        "exact_log_TV_bound_equals_log_epsilon": true
+      },
+      {
+        "N": 128,
+        "K": 1048576,
+        "g_N_at_k0_1": "1/1606416900",
+        "epsilon_N": "1/268435456",
+        "K_times_epsilon_N": "1/256",
+        "exact_log_TV_bound_equals_log_epsilon": true
+      }
+    ],
+    "TV_only_countercontrol": "Two-point laws differing by epsilon and a [0,K] test can differ in expectation by K epsilon; epsilon=o(1) alone is insufficient."
+  }
+}

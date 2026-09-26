@@ -1,0 +1,15 @@
+[
+  {
+    "sample": 0,
+    "accepted_geometry_flips": 0,
+    "independent_exact_action_rate_count": 1280,
+    "all_routing_arrays_and_both_parity_event_rates_agree": true
+  },
+  {
+    "sample": 1,
+    "accepted_geometry_flips": 564,
+    "independent_exact_action_rate_count": 1104,
+    "all_routing_arrays_and_both_parity_event_rates_agree": true
+  }
+]
+All declared sources/results authenticate; selected complete rates and exact wave/covariance matrices agree.

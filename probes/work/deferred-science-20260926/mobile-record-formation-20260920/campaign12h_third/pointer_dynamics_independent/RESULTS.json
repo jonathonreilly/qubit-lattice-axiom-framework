@@ -1,0 +1,272 @@
+{
+  "boundary": "Independent pre-author-source calculation.",
+  "pointer_code": {
+    "dimension": 64,
+    "occupied_columns": 14,
+    "rank": 14,
+    "Gram_characteristic_polynomial": "(lam - 48)**4*(lam - 6)**2*(lam**2 - 92*lam + 192)*(lam**2 - 88*lam + 384)**3",
+    "Gram_determinant": "2077601987473440768",
+    "Gram_eigenvalues": {
+      "46-2*sqrt(481)": 1,
+      "46+2*sqrt(481)": 1,
+      "44-4*sqrt(97)": 3,
+      "44+4*sqrt(97)": 3,
+      "6": 2,
+      "48": 4
+    },
+    "proper_cubic_transformations_checked": 24,
+    "vacuum_numerator_norm_squared": 6,
+    "vacuum_all_occupied_inner_products": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "vacuum_rotation_residuals_zero": true,
+    "orthonormalization_scope": "G>0 and W=F G^(-1/2) imply W^dagger W=I exactly; covariance follows from the checked commutation GP=PG by spectral functional calculus."
+  },
+  "support": {
+    "black_sites": 864,
+    "nonidentity_channels": 4320,
+    "different_sites": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0
+      ]
+    ],
+    "contributing_four_context_channels": [
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "sites": [
+          [
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "origin": [
+          10,
+          0,
+          0
+        ],
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "sites": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            0
+          ],
+          [
+            6,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "noisy_intertwiner": {
+    "input_color_indices": [
+      6,
+      10,
+      2
+    ],
+    "output_color_indices": [
+      2,
+      6,
+      10
+    ],
+    "all_other_color_index": 0,
+    "label_order": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "two_local_symbolic_entries": [
+      "-eta**2*(eta**2 - 2*eta + 2)/(1568*(eta - 1)**2)",
+      "-eta**2*(eta**2 - 2*eta + 2)/(1568*(eta - 1)**2)"
+    ],
+    "full_generator_symbolic_entry": "-eta**2*(eta**2 - 2*eta + 2)/(784*(eta - 1)**2)",
+    "two_full_four_context_entries_at_eta_half": [
+      "-5/6272",
+      "-5/6272"
+    ],
+    "full_generator_entry_at_eta_half": "-5/3136",
+    "symbolic_numerator_polynomials_before_cancellation": [
+      [
+        0,
+        0,
+        -76832,
+        153664,
+        -115248,
+        38416,
+        0
+      ],
+      [
+        0,
+        0,
+        -76832,
+        153664,
+        -115248,
+        38416,
+        0
+      ]
+    ],
+    "actual_rate_ranges_for_full_sums": [
+      [
+        "1/20",
+        "21/20"
+      ],
+      [
+        "1/20",
+        "21/20"
+      ]
+    ],
+    "constant_stirring_contributions": [
+      "0",
+      "0"
+    ],
+    "symbolic_inverse_verified": true,
+    "local_metric": {
+      "u": "7*(eta - 1)**2",
+      "v": "7*(eta - 1)**2/4",
+      "cross": "0"
+    },
+    "eta_zero_limit": "0",
+    "eta_one_limit_from_below": "-oo"
+  },
+  "runtime_seconds": 1.2787039161194116,
+  "versions": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  }
+}

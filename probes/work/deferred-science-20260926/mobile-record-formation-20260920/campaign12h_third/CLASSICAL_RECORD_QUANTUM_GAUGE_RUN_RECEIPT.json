@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/classical_record_quantum_gauge_check.py"
+  ],
+  "started_utc": "2026-09-22T17:26:30.662874+00:00",
+  "completed_utc": "2026-09-22T17:26:32.215874+00:00",
+  "returncode": 0,
+  "script_sha256": "5b37347c1e075ea19ed2b2a06e4adb43b8418932fddac387beb994c4357939b9"
+}

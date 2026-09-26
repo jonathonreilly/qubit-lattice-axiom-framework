@@ -1,0 +1,381 @@
+{
+  "measurement": [
+    {
+      "pqr": [
+        1,
+        1,
+        1
+      ],
+      "exact_POVM": true,
+      "exact_optimal_worst_row_TV": "0",
+      "attaining_eta": "0",
+      "PSD_relaxed_LP_lower_bound": 0.0
+    },
+    {
+      "pqr": [
+        3,
+        1,
+        2
+      ],
+      "exact_POVM": true,
+      "exact_optimal_worst_row_TV": "0",
+      "attaining_eta": "1/2",
+      "PSD_relaxed_LP_lower_bound": 0.0
+    },
+    {
+      "pqr": [
+        1,
+        3,
+        2
+      ],
+      "exact_POVM": true,
+      "exact_optimal_worst_row_TV": "0",
+      "attaining_eta": "-1/2",
+      "PSD_relaxed_LP_lower_bound": 0.0
+    },
+    {
+      "pqr": [
+        2,
+        2,
+        1
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "1/6",
+      "attaining_eta": "0",
+      "PSD_relaxed_LP_lower_bound": 0.16666666666666669
+    },
+    {
+      "pqr": [
+        10,
+        1,
+        1
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "2/5",
+      "attaining_eta": "9/11",
+      "PSD_relaxed_LP_lower_bound": 0.39999999999999997
+    },
+    {
+      "pqr": [
+        1,
+        10,
+        1
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "2/5",
+      "attaining_eta": "-9/11",
+      "PSD_relaxed_LP_lower_bound": 0.4
+    },
+    {
+      "pqr": [
+        2,
+        7,
+        3
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "2/21",
+      "attaining_eta": "-5/9",
+      "PSD_relaxed_LP_lower_bound": 0.09523809523809527
+    },
+    {
+      "pqr": [
+        11,
+        4,
+        2
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "22/69",
+      "attaining_eta": "7/15",
+      "PSD_relaxed_LP_lower_bound": 0.31884057971014496
+    },
+    {
+      "pqr": [
+        9,
+        2,
+        8
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "10/129",
+      "attaining_eta": "7/11",
+      "PSD_relaxed_LP_lower_bound": 0.07751937984496124
+    },
+    {
+      "pqr": [
+        4,
+        9,
+        1
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "22/51",
+      "attaining_eta": "-5/13",
+      "PSD_relaxed_LP_lower_bound": 0.4313725490196078
+    },
+    {
+      "pqr": [
+        2,
+        2,
+        7
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "5/24",
+      "attaining_eta": "0",
+      "PSD_relaxed_LP_lower_bound": 0.20833333333333334
+    },
+    {
+      "pqr": [
+        5,
+        3,
+        4
+      ],
+      "exact_POVM": true,
+      "exact_optimal_worst_row_TV": "0",
+      "attaining_eta": "1/4",
+      "PSD_relaxed_LP_lower_bound": 0.0
+    },
+    {
+      "pqr": [
+        1,
+        4,
+        1
+      ],
+      "exact_POVM": false,
+      "exact_optimal_worst_row_TV": "2/9",
+      "attaining_eta": "-3/5",
+      "PSD_relaxed_LP_lower_bound": 0.22222222222222215
+    }
+  ],
+  "parent_fidelity": {
+    "exact_six_state_second_moment_identity": true,
+    "cases": [
+      {
+        "eta": -0.9,
+        "optimal_average_overlap_fidelity": 0.8119632981180224,
+        "Luders_value": 0.8119632981180221,
+        "minimum_dual_certificate_eigenvalue": -2.1557936475382896e-16,
+        "random_instruments": 12,
+        "largest_random_instrument_fidelity": 0.5426399368518368,
+        "maximum_effect_error": 2.220446049250313e-16
+      },
+      {
+        "eta": -0.5,
+        "optimal_average_overlap_fidelity": 0.9553418012614795,
+        "Luders_value": 0.9553418012614795,
+        "minimum_dual_certificate_eigenvalue": -5.551115123125783e-17,
+        "random_instruments": 12,
+        "largest_random_instrument_fidelity": 0.5670490225738456,
+        "maximum_effect_error": 2.498001805406602e-16
+      },
+      {
+        "eta": 0.0,
+        "optimal_average_overlap_fidelity": 1.0,
+        "Luders_value": 1.0000000000000002,
+        "minimum_dual_certificate_eigenvalue": 0.0,
+        "random_instruments": 12,
+        "largest_random_instrument_fidelity": 0.5628723126661884,
+        "maximum_effect_error": 1.942890293094024e-16
+      },
+      {
+        "eta": 0.5,
+        "optimal_average_overlap_fidelity": 0.9553418012614795,
+        "Luders_value": 0.9553418012614795,
+        "minimum_dual_certificate_eigenvalue": -5.551115123125783e-17,
+        "random_instruments": 12,
+        "largest_random_instrument_fidelity": 0.5722341514854272,
+        "maximum_effect_error": 3.3306690738754696e-16
+      },
+      {
+        "eta": 0.9,
+        "optimal_average_overlap_fidelity": 0.8119632981180224,
+        "Luders_value": 0.8119632981180221,
+        "minimum_dual_certificate_eigenvalue": -2.1557936475382896e-16,
+        "random_instruments": 12,
+        "largest_random_instrument_fidelity": 0.5240361314947541,
+        "maximum_effect_error": 3.3306690738754696e-16
+      }
+    ]
+  },
+  "marginal_and_two_parent_rate": [
+    {
+      "pqr": [
+        1,
+        1,
+        1
+      ],
+      "newborn_shrinkage": "0",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "0",
+      "two_parent_rate_operator_spectrum_per_epsilon": [
+        6.0,
+        6.0,
+        6.0,
+        6.0
+      ]
+    },
+    {
+      "pqr": [
+        3,
+        1,
+        2
+      ],
+      "newborn_shrinkage": "1/6",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "0",
+      "two_parent_rate_operator_spectrum_per_epsilon": [
+        4.5,
+        6.5,
+        6.5,
+        6.5
+      ]
+    },
+    {
+      "pqr": [
+        1,
+        3,
+        2
+      ],
+      "newborn_shrinkage": "-1/6",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "0",
+      "two_parent_rate_operator_spectrum_per_epsilon": [
+        4.5,
+        6.5,
+        6.5,
+        6.5
+      ]
+    },
+    {
+      "pqr": [
+        2,
+        2,
+        1
+      ],
+      "newborn_shrinkage": "0",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "9/8"
+    },
+    {
+      "pqr": [
+        10,
+        1,
+        1
+      ],
+      "newborn_shrinkage": "3/5",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "162/25"
+    },
+    {
+      "pqr": [
+        1,
+        10,
+        1
+      ],
+      "newborn_shrinkage": "-3/5",
+      "newborn_marginal_CP": false,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "162/25"
+    },
+    {
+      "pqr": [
+        1,
+        4,
+        1
+      ],
+      "newborn_shrinkage": "-1/3",
+      "newborn_marginal_CP": true,
+      "two_parent_same_density_matrix_rate_difference_per_epsilon": "2"
+    }
+  ],
+  "postselection": {
+    "one_and_two_parent_linearity_tests": [
+      {
+        "parents": 1,
+        "pqr": [
+          3,
+          1,
+          2
+        ],
+        "exact_linearity_nullity_for_h": 1,
+        "nonnegative_nonzero_h_feasible_LP": true
+      },
+      {
+        "parents": 1,
+        "pqr": [
+          1,
+          1,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 4,
+        "nonnegative_nonzero_h_feasible_LP": true
+      },
+      {
+        "parents": 1,
+        "pqr": [
+          3,
+          1,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 0,
+        "nonnegative_nonzero_h_feasible_LP": false
+      },
+      {
+        "parents": 1,
+        "pqr": [
+          2,
+          2,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 3,
+        "nonnegative_nonzero_h_feasible_LP": false
+      },
+      {
+        "parents": 2,
+        "pqr": [
+          3,
+          1,
+          2
+        ],
+        "exact_linearity_nullity_for_h": 1,
+        "nonnegative_nonzero_h_feasible_LP": true
+      },
+      {
+        "parents": 2,
+        "pqr": [
+          1,
+          1,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 16,
+        "nonnegative_nonzero_h_feasible_LP": true
+      },
+      {
+        "parents": 2,
+        "pqr": [
+          3,
+          1,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 0,
+        "nonnegative_nonzero_h_feasible_LP": false
+      },
+      {
+        "parents": 2,
+        "pqr": [
+          2,
+          2,
+          1
+        ],
+        "exact_linearity_nullity_for_h": 9,
+        "nonnegative_nonzero_h_feasible_LP": false
+      }
+    ],
+    "three_parent_positive_effect_preparations": 216,
+    "three_parent_individual_outcome_rates_checked": 1296
+  },
+  "arithmetic": "Exact fractions/SymPy identities; floating HiGHS LPs and matrix certificates at declared tolerances.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "all_checks_passed": true
+}

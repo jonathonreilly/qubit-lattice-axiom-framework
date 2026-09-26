@@ -1,0 +1,174 @@
+{
+  "original_seal_sha256": "016efff81e95874edb19222e7d5b490bc0b1e1693aed003b04a58d444fa71f08",
+  "reason": "Accepted F1: chi classifies summed birth CP map and generator, not marked mu refinements. Preserve all original 28 artifacts before narrow prose corrections.",
+  "mapping": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+      "sha256": "eb46b801aa126fbcf4b950c5f6a2fb775f247b07fde8900556a3101338cce8b1",
+      "bytes": 11028
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_configuration_connectivity_screen.py",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/gauge_configuration_connectivity_screen.py",
+      "sha256": "0475077786dd16b23a2096fc8de0ab40c58fd3e1a262bbe1aed764a13ed90d9a",
+      "bytes": 6792
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RESULTS.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RESULTS.json",
+      "sha256": "13e5493d22647fd870eec283bb53d182b0d4f39372007893f7d5b8e081f82495",
+      "bytes": 10242
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN.log",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN.log",
+      "sha256": "13e5493d22647fd870eec283bb53d182b0d4f39372007893f7d5b8e081f82495",
+      "bytes": 10242
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN.stderr",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN_RECEIPT.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_CONFIGURATION_CONNECTIVITY_SCREEN_RUN_RECEIPT.json",
+      "sha256": "3f1ed2314f1f9ac27e81d8b2d83a51917029fce34bc7c142deeaa491d92c3aa3",
+      "bytes": 338
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_occupation_observability_check.py",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/gauge_occupation_observability_check.py",
+      "sha256": "ad220bc10d0cb8d3675752ec38ccda89b09901734a16f3002dbd8a22f07e02b9",
+      "bytes": 5155
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OCCUPATION_OBSERVABILITY_RESULTS.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OCCUPATION_OBSERVABILITY_RESULTS.json",
+      "sha256": "fe365cc62061b2d9416982febe435c805cd2e6cc67afe4a6d3994d4bc8ce71de",
+      "bytes": 23183
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OCCUPATION_OBSERVABILITY_RUN.log",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OCCUPATION_OBSERVABILITY_RUN.log",
+      "sha256": "fe365cc62061b2d9416982febe435c805cd2e6cc67afe4a6d3994d4bc8ce71de",
+      "bytes": 23183
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OCCUPATION_OBSERVABILITY_RUN.stderr",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OCCUPATION_OBSERVABILITY_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OCCUPATION_OBSERVABILITY_RUN_RECEIPT.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OCCUPATION_OBSERVABILITY_RUN_RECEIPT.json",
+      "sha256": "1f8ca9f730d1e398ec5c74efbd4b10d46139e6fe95afdfcb0b8675a14bddd408",
+      "bytes": 442
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_open_box_jam_screen.py",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/gauge_open_box_jam_screen.py",
+      "sha256": "c6645fdaa40706d67b308498eb234063a9ed7514b7a2a96b69c9eb85cc69ab99",
+      "bytes": 2988
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OPEN_BOX_JAM_SCREEN_RESULTS.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OPEN_BOX_JAM_SCREEN_RESULTS.json",
+      "sha256": "14fc838d49591a5144861d1712452e80307bb08458210121c7409454bc3e207e",
+      "bytes": 21079
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OPEN_BOX_JAM_SCREEN_RUN.log",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OPEN_BOX_JAM_SCREEN_RUN.log",
+      "sha256": "127d91e69762068bd171d23a87bcd4da2b1cdde9f33dfec9adf908825b2dd694",
+      "bytes": 1466
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OPEN_BOX_JAM_SCREEN_RUN.stderr",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OPEN_BOX_JAM_SCREEN_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_OPEN_BOX_JAM_SCREEN_RUN_RECEIPT.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_OPEN_BOX_JAM_SCREEN_RUN_RECEIPT.json",
+      "sha256": "3be853b1937e795f265bba8fea8aa2ced0f9b3cf968a2dff4b1219db10c7e02f",
+      "bytes": 324
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "sha256": "1e7dd9088f8835455fa274bafe019a455acd340c97231a86bc44243db515ad38",
+      "bytes": 9416
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_pair_birth_check.py",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/gauge_coherent_pair_birth_check.py",
+      "sha256": "b637c056db3b31d1f2666c24558f1630487a4126a24512a800e451a48ffb2197",
+      "bytes": 6356
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COHERENT_PAIR_BIRTH_RESULTS.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_COHERENT_PAIR_BIRTH_RESULTS.json",
+      "sha256": "007003baa5c42f8d8d6c3a6f17e21ed6c0771cb5ef11c38bc24e3b429e9a14f0",
+      "bytes": 1841
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COHERENT_PAIR_BIRTH_RUN.log",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_COHERENT_PAIR_BIRTH_RUN.log",
+      "sha256": "007003baa5c42f8d8d6c3a6f17e21ed6c0771cb5ef11c38bc24e3b429e9a14f0",
+      "bytes": 1841
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COHERENT_PAIR_BIRTH_RUN.stderr",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_COHERENT_PAIR_BIRTH_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COHERENT_PAIR_BIRTH_RUN_RECEIPT.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_COHERENT_PAIR_BIRTH_RUN_RECEIPT.json",
+      "sha256": "71f65413f9832a1f1e5658b349dfbff24d99af08d6dc34b0e57959d075ffdddd",
+      "bytes": 330
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+      "sha256": "88c14c443b9dc2457d494e27ec9bfeb52f45b91784556fb7ed5766c49a93aa08",
+      "bytes": 9571
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_birth_fresh_memory_dilation_check.py",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/gauge_birth_fresh_memory_dilation_check.py",
+      "sha256": "43797dd58458d68d5d6e32d2b63cc31e6183ee0ab8a866b83869ecc8955c5ed4",
+      "bytes": 5118
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RESULTS.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RESULTS.json",
+      "sha256": "9094ebd9636119a00566cde557374889bbe422f6f877d5c6bdbc0e967e93c0ad",
+      "bytes": 1558
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.log",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.log",
+      "sha256": "9094ebd9636119a00566cde557374889bbe422f6f877d5c6bdbc0e967e93c0ad",
+      "bytes": 1558
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.stderr",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN_RECEIPT.json",
+      "archive_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_source_history/before_coarse_instrument_qualification/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN_RECEIPT.json",
+      "sha256": "ae43927bdd959eb453a81f629ed95e76c8ad2d1015de1bbef5f0c0c2b7419949",
+      "bytes": 338
+    }
+  ]
+}

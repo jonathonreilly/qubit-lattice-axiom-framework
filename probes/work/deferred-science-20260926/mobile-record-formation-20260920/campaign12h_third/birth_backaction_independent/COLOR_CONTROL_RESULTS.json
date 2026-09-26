@@ -1,0 +1,53 @@
+{
+  "occupied_content_dimension": 2,
+  "entangled_born_state": "(|1,1>+|2,2>)/sqrt(2)",
+  "birth_JdaggerJ_is_vacant_pair_projector": true,
+  "occupation_monitoring_dissipates_no_full_internal_entanglement": true,
+  "with_H0_zero_every_full_density_is_stationary": "Analytic: hops and births vanish, all n_x restrict to identity.",
+  "admissible_H0_can_drive_full_internal_unitary_motion": true,
+  "nonzero_internal_density_derivative_entries": [
+    [
+      4,
+      5,
+      "I/2"
+    ],
+    [
+      4,
+      7,
+      "I/2"
+    ],
+    [
+      5,
+      4,
+      "-I/2"
+    ],
+    [
+      5,
+      8,
+      "-I/2"
+    ],
+    [
+      7,
+      4,
+      "-I/2"
+    ],
+    [
+      7,
+      8,
+      "-I/2"
+    ],
+    [
+      8,
+      5,
+      "I/2"
+    ],
+    [
+      8,
+      7,
+      "I/2"
+    ]
+  ],
+  "full_occupation_probability_derivative": "0",
+  "empty_to_full_survival_for_this_two_site_model": "exp(-beta*t)",
+  "scope": "Completion does not imply a unique stationary internal state or convergence of the full density matrix."
+}

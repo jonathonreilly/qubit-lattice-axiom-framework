@@ -1,0 +1,7 @@
+physical_occupation PASS
+discrete_curl PASS
+finite block K=4 completed
+finite block K=8 completed
+finite block K=16 completed
+finite block K=32 completed
+finite_block_limit PASS

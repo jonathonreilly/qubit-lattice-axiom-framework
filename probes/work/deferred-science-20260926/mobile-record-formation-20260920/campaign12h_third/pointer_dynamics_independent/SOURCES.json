@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-22T14:11:51.332632+00:00",
+  "boundary": "No new author pointer/noise notes, code or output accessed. The routed model and the preceding contraction definitions are reused at verified identities.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md",
+      "bytes": 10751,
+      "sha256": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7"
+    }
+  ]
+}

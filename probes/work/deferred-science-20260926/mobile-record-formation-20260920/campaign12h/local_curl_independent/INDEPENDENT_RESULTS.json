@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "determinant": "-1835008",
+      "fields": [
+        "rho",
+        "4rhoA-3rhoB",
+        "U1",
+        "U2",
+        "U3",
+        "V1",
+        "V2",
+        "V3",
+        "r1",
+        "r2",
+        "M12",
+        "M13",
+        "M23",
+        "M123"
+      ],
+      "name": "complete_fourteen_field_basis",
+      "status": "passed"
+    },
+    {
+      "blocked_x_probability": "1/10",
+      "blocked_yz_probability": "3/40",
+      "empty_probability": "1/12",
+      "name": "loop_conditional_law_counterexample",
+      "only_intersecting_background_site": [
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "status": "passed",
+      "templates": 48,
+      "totals": [
+        48,
+        40
+      ]
+    },
+    {
+      "name": "weights_and_full_cubic_covariance",
+      "row_sum": "14",
+      "signed_actions": 48,
+      "status": "passed",
+      "weight_bracket_max": "1",
+      "weight_bracket_min": "-1"
+    },
+    {
+      "impulses": 30,
+      "name": "all_label_impulse_divergence_of_curl",
+      "scope": "Linearity makes every configuration and all allowed transitions follow.",
+      "status": "passed",
+      "torus_side": 7
+    },
+    {
+      "density_decay": "-14 beta",
+      "name": "full_reaction_flux_jacobian",
+      "reaction_diagonal": [
+        "-14*beta",
+        "0",
+        "12*beta*j*(1 - rho)",
+        "12*beta*j*(1 - rho)",
+        "12*beta*j*(1 - rho)",
+        "12*beta*j*(1 - rho)",
+        "12*beta*j*(1 - rho)",
+        "12*beta*j*(1 - rho)",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "spectator_zero_fields": 7,
+      "status": "passed",
+      "vector_characteristic": "(12*beta*j*rho - 12*beta*j + z)**2*(4*K1**2*gamma**2*rho**2 + 4*K2**2*gamma**2*rho**2 + 4*K3**2*gamma**2*rho**2 + 7056*beta**2*j**2*rho**2 - 14112*beta**2*j**2*rho + 7056*beta**2*j**2 + 1176*beta*j*rho*z - 1176*beta*j*z + 49*z**2)**2/2401"
+    },
+    {
+      "curl_speed": "2*gamma*rho/7",
+      "lambda_over_rho_prime": "6 j / 7",
+      "name": "nonautonomous_commuting_propagator",
+      "scopes": "Homogeneous equal-per-label background; all fourteen fields retained.",
+      "status": "passed"
+    },
+    {
+      "alphabet_size": 15,
+      "derivative": "H(p) B(p)",
+      "j": "-2/5",
+      "name": "birth_adjoint_constant_linear_cancellation",
+      "reference": "(1,...,15)/120",
+      "status": "passed",
+      "uniform_reference_site_upper_bound": "beta (1+abs(j))^6"
+    },
+    {
+      "every_other_entry_zero": true,
+      "name": "adjacent_native_covariance_generator",
+      "negative_j_rational_witness": "-32/175",
+      "six_vector_diagonal": "16*beta*j*rho*(1 - rho)/7",
+      "status": "passed"
+    },
+    {
+      "name": "curl_covariance_noise_and_propagation",
+      "one_sector_birth_bracket": "8 beta(1-rho) (|K|^2 I-K K^T)",
+      "one_sector_covariance": "4 rho/7 (|K|^2 I-K K^T)",
+      "scaled_lattice_symbol": "N sin(K/N)",
+      "status": "passed"
+    },
+    {
+      "coordinate_direction": 3,
+      "irreducible": true,
+      "name": "complete_finite_context_count_sector",
+      "scope": "Four-site periodic coordinate-line control; general torus proof uses telescoping and the positive floor.",
+      "states": 24,
+      "status": "passed",
+      "uniform_stationary": true
+    },
+    {
+      "enumerated_sectors": [
+        24,
+        12
+      ],
+      "fields": 14,
+      "full_occupancy_covariance_rank": 13,
+      "mode_pairs_per_sector": 9,
+      "name": "canonical_fourier_and_random_count_mixture",
+      "nonzero_modes": 3,
+      "random_zero_mode_covariance_nonzero": true,
+      "status": "passed"
+    },
+    {
+      "count_completions": 84,
+      "finite_time_vacancy": "v0 exp(-14 beta T)",
+      "harmonic_levels": 20,
+      "lyapunov": "H_m/r_min",
+      "name": "absorption_lyapunov_and_count_squeeze",
+      "ordered_limits": "Long time at each fixed N; then N to infinity. Fixed T hydrodynamics is used only to select final counts.",
+      "status": "passed"
+    }
+  ],
+  "failed": 0,
+  "passed": 12,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "scope": "Independent calculations sealed before reading associated author checkers/results.",
+  "sympy": "1.14.0"
+}

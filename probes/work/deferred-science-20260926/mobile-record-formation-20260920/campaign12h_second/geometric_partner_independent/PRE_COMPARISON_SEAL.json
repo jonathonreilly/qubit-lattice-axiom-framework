@@ -1,0 +1,111 @@
+{
+  "time_utc": "2026-09-21T14:35:18.287679+00:00",
+  "phase": "pre-author-checker independent reconstruction",
+  "primary_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+    "bytes": 10226,
+    "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+  },
+  "parent_supplied_commit": "b711317bab78df9e344dc9de0c18526d6e9dec4d (not independently queried by Git)",
+  "procedures": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FAILED_ATTEMPT_01_EXPLANATION.md",
+      "bytes": 509,
+      "sha256": "aa25fdb6a3108e472fe508803acc9a0419a15264e0baeb2241670786fbe4aa63"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 26081,
+      "sha256": "24a06aea2de643105f577b2a03639dbe6b9dcc5bcc6f026b4b6621dd6bc976e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.json",
+      "bytes": 317,
+      "sha256": "e094ec0a99a6f9265861b6874ef08bc53bac91372e4808adc772a1e519273532"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.stderr.log",
+      "bytes": 1153,
+      "sha256": "62d354360e5943a8dd0a3d8b6a4de93aaa31e57ced30c8973f329d21aa88f551"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_01.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.json",
+      "bytes": 316,
+      "sha256": "0f03153aa98f5def1e6d2a2e4f5573a2c2ac9bc14c3263ca930b519c62b5a1f9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/INDEPENDENT_RUN_02.stdout.log",
+      "bytes": 16997,
+      "sha256": "bf56030c406adb597058b46d043c609d00feddd6eb227cad1d09b2fbf227d525"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 10348,
+      "sha256": "c009d2f3ec170183ec69813db330a6e35073796f9e82338fd26cd7fc297c58a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/READ_BOUNDARY.json",
+      "bytes": 832,
+      "sha256": "594b144a0b078186c460eb1b3431f01608e6630f6817ce628504d1b0930c0c88"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/SEAL_ATTEMPT_01.log",
+      "bytes": 357,
+      "sha256": "e2559b4e0aa5a5a4cfbec3cb3682dfdc445a880e71bc751dc6d376b2ff2e8f24"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+      "bytes": 14609,
+      "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check_attempt01.py",
+      "bytes": 14489,
+      "sha256": "b53d77367a4dc968b6082d5cdb65cea253977df03090ee3da9033bfae18143cb"
+    }
+  ],
+  "author_access_boundary": "Author geometric checker/results/logs remain unopened. No production diagnostic access.",
+  "provisional_findings": [],
+  "limitations": [
+    "Classical supplied content recognition, not a physical unknown-qubit operation.",
+    "Finite geometry theorem; no infinite-volume or uniform filling-time theorem.",
+    "No formation-selected ensemble, phase or wave conclusion."
+  ],
+  "failures_preserved": [
+    "INDEPENDENT_RUN_01.stderr.log",
+    "independent_check_attempt01.py",
+    "FAILED_ATTEMPT_01_EXPLANATION.md",
+    "SEAL_ATTEMPT_01.log"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Only the accepted F1 paragraph and preserved/final source identities; no mathematics rerun.",
+  "finding": "F1 resolved in the corrected source; no new claim introduced by this paragraph.",
+  "old_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_source_history/before_invariant_subspace_qualification/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+    "bytes": 8453,
+    "sha256": "66be07b03dcd19dceb6c989e83f23267de16c00299c897d09df1c21aff65f2ed"
+  },
+  "corrected_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+    "bytes": 8662,
+    "sha256": "a8fff88d18ea74660636171d8c4db861f9b0cb77cfeee0b427a5f4e034398fa5"
+  },
+  "corrected_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_AUTHOR_CORRECTED_SEAL.json",
+    "bytes": 7092,
+    "sha256": "aff064625c5c987e7a45c0d6a25b7b9c9f05025ea148cc14f224adc3855a6bef"
+  },
+  "archive_rows_authenticated": 19,
+  "prior_independent_artifacts_unchanged": 26,
+  "prior_source_bindings_authenticated_using_archives": 20,
+  "corrected_author_artifacts_authenticated": 18,
+  "unchanged_author_artifacts": 17,
+  "exact_single_replacement_and_inverse_recovery": true,
+  "recorded_unified_diff_exact": true,
+  "removed_text": "Hamiltonian to the trapped state: that Hamiltonian annihilates it. Deriving\nan effective cycle from a larger microscopic model would require new\n",
+  "inserted_text": "Hamiltonian to the trapped state: the earlier dynamics cannot leave the\nclosed fixed-charge saturated matching sector. Hopping and elementary\nplaquette terms annihilate this basis vector, while diagonal energies and\nlarger contractible field loops may act inside that sector. Deriving an\neffective cycle from a larger microscopic model would require new\n",
+  "limitations": "Earlier scoped scientific conclusions are reused; no broader source review, new frontier access, audit or publication determination."
+}

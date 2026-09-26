@@ -1,0 +1,25 @@
+--- original/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md
++++ corrected/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md
+@@ -148,7 +148,10 @@
+ transition graph alone is not the quantum proof.
+ 
+ For the coherence identity and terminal density, also require [H0,T]=0.
+-No ordinary hopping is omitted in this ring family.
++No ordinary hopping is omitted in this ring family. The completion assertion
++contains only the specified hopping, occupation-preserving H0,
++occupation-monitoring jumps and birth terms. It does not extend to arbitrary
++additional N,T-commuting jumps allowed for the Section 1 count identity.
+ 
+ ## 4. The complete terminal state from a supplied vacant gauge cat
+ 
+@@ -161,7 +164,9 @@
+ Gauss-determined matter charges. T acts as Pauli X on this sector.
+ The entire generator is covariant under rho -> T rho T: the real-chi birth
+ coefficient matrix is invariant under exchanging its two orientations,
+-the Hamiltonian commutes with T, and the other jumps commute with T.
++the Hamiltonian commutes with T, and the occupation-monitoring jumps commute
++with T. This section uses precisely the restricted completion model of
++Section 3.
+ The initial density is T-invariant, so every later density is T-invariant.
+ On this two-dimensional full sector, that forces equal diagonal weights
+ and a real off-diagonal entry. Completion and the conserved observable

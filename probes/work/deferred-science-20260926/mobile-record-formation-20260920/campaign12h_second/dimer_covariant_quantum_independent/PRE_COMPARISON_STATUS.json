@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-21T21:42:02.537554+00:00",
+  "provisional_findings": "No actionable mathematical defect. Positivity/readout, finite-family product Weyl limit, onsite energy signature and derivative-bracket construction reconstruct.",
+  "scope_clarifications": [
+    "Spatially smeared general arrays determine their limiting empirical inner product; a continuum delta refers to the chosen uniform spatial normalization.",
+    "B=curl Q on a periodic box has zero mean; harmonic magnetic sectors are not covered without extra data.",
+    "No transfer of the classical stochastic-wave theorem to this changed quantum encoding."
+  ],
+  "failed_attempt": "Symbolic Gram matrix structural equality failed despite an exactly zero simplified difference; preserved before replacing that assertion with simplified-difference equality.",
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0",
+    "scipy": "1.17.1"
+  }
+}

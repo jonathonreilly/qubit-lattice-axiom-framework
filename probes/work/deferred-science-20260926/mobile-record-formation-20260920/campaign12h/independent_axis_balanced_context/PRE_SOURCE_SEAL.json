@@ -1,0 +1,64 @@
+{
+  "actions": "Only the assigned deliverable directory was intentionally written; no Git, PR, audit, external-message, or delegation actions.",
+  "algebraic_result": "Every homogeneous product is exchange-stationary. The nonzero direction-independent current pair exists at every interior density exactly for u=0, B=-3A/2, EA nonzero; the other four modes are zero. The proposed fixed witness satisfies this condition.",
+  "artifacts": {
+    "CHECKPOINT.md": {
+      "bytes": 1385,
+      "sha256": "65d2e959b3bc77fd89b5d03414753131cf894c50d2f3081603012c3230c2b083"
+    },
+    "INPUT.md": {
+      "bytes": 1447,
+      "sha256": "c6917c6bb792a999753af240178527ee51746a5b54c0bb8e76236991a67acb63"
+    },
+    "PROGRESS.log": {
+      "bytes": 3460,
+      "sha256": "73f640b4ef785614c45256ac256dd54d717b9f4ff5c9f66940cb70e4921ec28a"
+    },
+    "REPORT.md": {
+      "bytes": 19131,
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    "RESULTS.json": {
+      "bytes": 26207,
+      "sha256": "b40cf464a1d62beae7b40c700562d78801b4c4580eb341cf35f0737a96155f26"
+    },
+    "RUN.log": {
+      "bytes": 26207,
+      "sha256": "b40cf464a1d62beae7b40c700562d78801b4c4580eb341cf35f0737a96155f26"
+    },
+    "independent_check.py": {
+      "bytes": 15883,
+      "sha256": "9fca0cc51bb6c4289b31697e6dc84ac7b65934f76a02b268599ba28505748cac"
+    },
+    "seal_evidence.py": {
+      "bytes": 4485,
+      "sha256": "f7931de397776111e4671d369c75507ecee74ebfad771b9692b27df7f69e0277"
+    }
+  },
+  "birth_scope": "Balanced homogeneous growth preserves the all-density current tuning but changes the speed and adds reaction. Microscopic epsilon/N gives finite Euler reaction; fixed microscopic epsilon is a distinct fast-filling scaling.",
+  "dependency_sha256": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py": "5ebc1ce0750c658649447e0a0d8da146b2ab64bd4fd83d232329281d1df4b3d4",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+  },
+  "directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context",
+  "euler_status": "The earlier sealed smooth-profile proof applies after explicit verification of the new rate bounds, stationarity, local current, entropy potential, entropy symmetry, and unchanged block and reaction hypotheses. Uniform positivity and a given smooth interior solution remain assumptions.",
+  "external_literature_imports": [],
+  "input_source": "Supplied task specification reproduced in INPUT.md, plus the explicitly identified earlier independent current/Euler evidence.",
+  "kind": "bounded_independent_pre_primary_source_axis_balanced_context_derivation",
+  "limitations": "No exact finite-N wave, microscopic fluctuation theorem, continuous rotational symmetry of the nonlinear dynamics, post-shock extension, boundary-density Euler extension, audit, or retained-status verdict is claimed.",
+  "new_primary_author_sources_read": [],
+  "primary_simulations_or_outcomes_read": [],
+  "sealed_at_utc": "2026-09-21T04:29:40.139127+00:00",
+  "validation": {
+    "all_passed": true,
+    "exact_grouped_checks": 66,
+    "prior_independent_sources_unchanged": true,
+    "progress_log_matches_check_list": true,
+    "python": "3.13.5",
+    "run_log_identical_to_results": true,
+    "sympy": "1.14.0"
+  }
+}

@@ -1,0 +1,1366 @@
+{
+  "status": "all independent controls passed",
+  "graphs": [
+    {
+      "name": "path4",
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "near": 3,
+      "full": 1,
+      "bipartite": true,
+      "route": {
+        "routes": 2,
+        "length_histogram": {
+          "2": 2
+        },
+        "max_reference_count": 1,
+        "max_ordered_path_load": 2,
+        "load_bound": 8,
+        "two_reference_witness": null
+      },
+      "matrices": {
+        "gap_slide": 0.9999999999999997,
+        "gap_trace": 2.0000000000000004,
+        "gap_broder": 2.0,
+        "claimed_gap_lower": "1/311040",
+        "trace_form_comparison_min_eigenvalue": 4.725858126022526e-16,
+        "centered_Green_exact_infinity_norm": "10/9",
+        "TG": 2.098612288668111,
+        "conductance_exact": "1/6"
+      },
+      "killing": {
+        "p": "2/3",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "1/30000",
+            "mean_bound": 0.0004198986986474176,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "2/202503",
+              "2": "7/405021"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "1/900",
+            "mean_bound": 0.01418926705923882,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1/3039",
+              "2": "7/12171"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "1/30",
+            "mean_bound": 0.7233132891793832,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4/411",
+              "2": "7/426"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "1/3",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "8/93",
+              "2": "14/123"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": false
+      }
+    },
+    {
+      "name": "cycle4",
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "near": 4,
+      "full": 2,
+      "bipartite": true,
+      "route": {
+        "routes": 4,
+        "length_histogram": {
+          "2": 4
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 3,
+        "load_bound": 8,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          "path_load": 3
+        }
+      },
+      "matrices": {
+        "gap_slide": 1.9999999999999987,
+        "gap_trace": 2.999999999999999,
+        "gap_broder": 1.4384471871911695,
+        "claimed_gap_lower": "1/81920",
+        "trace_form_comparison_min_eigenvalue": -4.8381612490251875e-15,
+        "centered_Green_exact_infinity_norm": "5/8",
+        "TG": 1.1931471805599463,
+        "conductance_exact": "1/6"
+      },
+      "killing": {
+        "p": "1",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "1/80002",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.00023868639371152825,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1/80003",
+              "2": "1/80006"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "1/2402",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.008018092970541435,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1/2403",
+              "2": "1/2406"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "1/82",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.31342088521705586,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1/83",
+              "2": "1/86"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "1/10",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1/11",
+              "2": "1/14"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": true
+      }
+    },
+    {
+      "name": "diamond",
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "near": 5,
+      "full": 2,
+      "bipartite": false,
+      "route": {
+        "routes": 4,
+        "length_histogram": {
+          "2": 4
+        },
+        "max_reference_count": 1,
+        "max_ordered_path_load": 2,
+        "load_bound": 8,
+        "two_reference_witness": null
+      },
+      "matrices": {
+        "gap_slide": 3.0,
+        "gap_trace": 4.0,
+        "gap_broder": 1.5505102572168223,
+        "claimed_gap_lower": "1/250000",
+        "trace_form_comparison_min_eigenvalue": -9.140918361914422e-16,
+        "centered_Green_exact_infinity_norm": "34/75",
+        "TG": 0.8698126374780335,
+        "conductance_exact": "1/5"
+      },
+      "killing": {
+        "p": "4/5",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "1/100002",
+            "scaled_mean_error_exact": "1/50000",
+            "mean_bound": 0.00017399279572211654,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "5750056/562521000147",
+              "2": "13/1125039"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "1/3002",
+            "scaled_mean_error_exact": "1/1500",
+            "mean_bound": 0.005832572551951523,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "172556/506880147",
+              "2": "13/33789"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "1/102",
+            "scaled_mean_error_exact": "1/50",
+            "mean_bound": 0.2105988327238768,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "5806/583647",
+              "2": "13/1164"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "1/12",
+            "scaled_mean_error_exact": "1/5",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "631/7872",
+              "2": "26/303"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": false
+      }
+    },
+    {
+      "name": "complete4",
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "near": 6,
+      "full": 3,
+      "bipartite": false,
+      "route": {
+        "routes": 6,
+        "length_histogram": {
+          "2": 6
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 4,
+        "load_bound": 8,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          ],
+          "path_load": 4
+        }
+      },
+      "matrices": {
+        "gap_slide": 3.999999999999998,
+        "gap_trace": 4.999999999999997,
+        "gap_broder": 1.6277186767309846,
+        "claimed_gap_lower": "1/122880",
+        "trace_form_comparison_min_eigenvalue": -5.904650962478632e-15,
+        "centered_Green_exact_infinity_norm": "13/36",
+        "TG": 0.6979398673070141,
+        "conductance_exact": "1/6"
+      },
+      "killing": {
+        "p": "1",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "2/180003",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.00013960746098396165,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4/360009",
+              "2": "2/180009"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "2/5403",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.004674683434955395,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4/10809",
+              "2": "2/5409"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "2/183",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.16223387069908773,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4/369",
+              "2": "2/189"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "2/21",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4/45",
+              "2": "2/27"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": true
+      }
+    },
+    {
+      "name": "path6",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "near": 6,
+      "full": 1,
+      "bipartite": true,
+      "route": {
+        "routes": 6,
+        "length_histogram": {
+          "2": 4,
+          "4": 2
+        },
+        "max_reference_count": 1,
+        "max_ordered_path_load": 4,
+        "load_bound": 18,
+        "two_reference_witness": null
+      },
+      "matrices": {
+        "gap_slide": 0.5857864376269052,
+        "gap_trace": 1.381966011250105,
+        "gap_broder": 1.3819660112501055,
+        "claimed_gap_lower": "1/21565440",
+        "trace_form_comparison_min_eigenvalue": 4.823654328296125e-15,
+        "centered_Green_exact_infinity_norm": "7/3",
+        "TG": 4.765831521360967,
+        "conductance_exact": "1/10"
+      },
+      "killing": {
+        "p": "1/2",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "16001/240016000",
+            "mean_bound": 0.0009540756970783736,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1792149334/92170368224001",
+              "2": "150021667/4501050065001"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "481/216480",
+            "mean_bound": 0.03281480915465099,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "4851842/7492973763",
+              "2": "406951/367340853"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "17/256",
+            "mean_bound": 20.352147945187074,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1942/102753",
+              "2": "43/1404"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "13/20",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "838/5481",
+              "2": "8/45"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": false
+      }
+    },
+    {
+      "name": "cycle6",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "near": 9,
+      "full": 2,
+      "bipartite": true,
+      "route": {
+        "routes": 12,
+        "length_histogram": {
+          "2": 12
+        },
+        "max_reference_count": 1,
+        "max_ordered_path_load": 2,
+        "load_bound": 18,
+        "two_reference_witness": null
+      },
+      "matrices": {
+        "gap_slide": 1.2679491924311226,
+        "gap_trace": 1.9999999999999987,
+        "gap_broder": 1.2679491924311224,
+        "claimed_gap_lower": "1/8188128",
+        "trace_form_comparison_min_eigenvalue": -2.086913837301591e-15,
+        "centered_Green_exact_infinity_norm": "10/9",
+        "TG": 2.5215715238604868,
+        "conductance_exact": "1/10"
+      },
+      "killing": {
+        "p": "2/3",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "1/40002",
+            "scaled_mean_error_exact": "1/60000",
+            "mean_bound": 0.0005045687660185417,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "615005/24301800012",
+              "2": "2550077/97213860294"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "1/1202",
+            "scaled_mean_error_exact": "1/1800",
+            "mean_bound": 0.017097900689038405,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "18455/21924012",
+              "2": "76577/87896094"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "1/42",
+            "scaled_mean_error_exact": "1/60",
+            "mean_bound": 1.0174074209267379,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "155/6528",
+              "2": "2627/111354"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "1/6",
+            "scaled_mean_error_exact": "1/6",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "133/870",
+              "2": "83/663"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": false
+      }
+    },
+    {
+      "name": "triangles_with_bridge",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "near": 11,
+      "full": 1,
+      "bipartite": false,
+      "route": {
+        "routes": 6,
+        "length_histogram": {
+          "2": 4,
+          "4": 2
+        },
+        "max_reference_count": 1,
+        "max_ordered_path_load": 4,
+        "load_bound": 18,
+        "two_reference_witness": null
+      },
+      "matrices": {
+        "gap_slide": 1.2679491924311228,
+        "gap_trace": 1.9999999999999996,
+        "gap_broder": 1.6277186767309866,
+        "claimed_gap_lower": "1/341076736",
+        "trace_form_comparison_min_eigenvalue": -1.025624439798186e-14,
+        "centered_Green_exact_infinity_norm": "157/121",
+        "TG": 2.679835511613333,
+        "conductance_exact": "2/21"
+      },
+      "killing": {
+        "p": "3/11",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "290009/6600220000",
+            "mean_bound": 0.0005362545171023054,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "235736230418/20240838660345627",
+              "2": "6836887092601/395347874961277803"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "2903/1982200",
+            "mean_bound": 0.018190554707292538,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "1815562/4679324943",
+              "2": "684940589/1190012251767"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "299/6820",
+            "mean_bound": 1.1550196225426952,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "6115394/534332451",
+              "2": "7226191/437349873"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "0",
+            "scaled_mean_error_exact": "19/44",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "22406/225273",
+              "2": "4387/37119"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": false
+      }
+    },
+    {
+      "name": "K33",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "near": 18,
+      "full": 6,
+      "bipartite": true,
+      "route": {
+        "routes": 36,
+        "length_histogram": {
+          "2": 36
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 2,
+        "load_bound": 18,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                5
+              ]
+            ]
+          ],
+          "path_load": 2
+        }
+      },
+      "matrices": {
+        "gap_slide": 1.999999999999999,
+        "gap_trace": 2.4384471871911706,
+        "gap_broder": 1.6277186767309864,
+        "claimed_gap_lower": "1/2426112",
+        "trace_form_comparison_min_eigenvalue": 1.1700062677358688e-14,
+        "centered_Green_exact_infinity_norm": "61/72",
+        "TG": 1.9451858789480834,
+        "conductance_exact": null
+      },
+      "killing": {
+        "p": "1",
+        "checks": [
+          {
+            "beta": "1/10000",
+            "max_exit_TV_exact": "100001/3200200002",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.0003891885846174258,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "200003/6400600009",
+              "2": "100003/3200600018"
+            }
+          },
+          {
+            "beta": "1/300",
+            "max_exit_TV_exact": "3001/2886002",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.013138281861997878,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "667/642001",
+              "2": "1001/966006"
+            }
+          },
+          {
+            "beta": "1/10",
+            "max_exit_TV_exact": "101/3402",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": 0.6367607984862478,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "203/7009",
+              "2": "103/3818"
+            }
+          },
+          {
+            "beta": "1",
+            "max_exit_TV_exact": "11/54",
+            "scaled_mean_error_exact": "0",
+            "mean_bound": null,
+            "joint_event_Laplace_errors_exact": {
+              "1/2": "23/133",
+              "2": "353/2970"
+            }
+          }
+        ],
+        "constant_hazard_exact_clock": true
+      }
+    },
+    {
+      "name": "squares_with_bridge",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "near": 20,
+      "full": 4,
+      "bipartite": true,
+      "route": {
+        "routes": 48,
+        "length_histogram": {
+          "2": 24,
+          "4": 16,
+          "6": 8
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 9,
+        "load_bound": 32,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          ],
+          "path_load": 9
+        }
+      },
+      "matrices": {
+        "gap_slide": 0.29270673117834384,
+        "gap_trace": 0.703525925582403,
+        "gap_broder": 0.5956682970360948,
+        "claimed_gap_lower": "1/36000000",
+        "trace_form_comparison_min_eigenvalue": -5.181566297450543e-15,
+        "centered_Green_exact_infinity_norm": "11/2",
+        "TG": 13.650975013346802,
+        "conductance_exact": null
+      },
+      "killing": null
+    },
+    {
+      "name": "cube",
+      "vertices": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "near": 44,
+      "full": 9,
+      "bipartite": true,
+      "route": {
+        "routes": 108,
+        "length_histogram": {
+          "2": 96,
+          "4": 12
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 8,
+        "load_bound": 32,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                7
+              ]
+            ]
+          ],
+          "path_load": 8
+        }
+      },
+      "matrices": {
+        "gap_slide": 1.171572875253808,
+        "gap_trace": 1.4920972286234413,
+        "gap_broder": 1.1792146212371684,
+        "claimed_gap_lower": "2187/95951257600",
+        "trace_form_comparison_min_eigenvalue": 4.2800154451245593e-16,
+        "centered_Green_exact_infinity_norm": "4517/2904",
+        "TG": 4.083561283272132,
+        "conductance_exact": null
+      },
+      "killing": null
+    },
+    {
+      "name": "complete6",
+      "vertices": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "near": 45,
+      "full": 15,
+      "bipartite": false,
+      "route": {
+        "routes": 90,
+        "length_histogram": {
+          "2": 90
+        },
+        "max_reference_count": 2,
+        "max_ordered_path_load": 4,
+        "load_bound": 18,
+        "two_reference_witness": {
+          "microedge": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "reference_perfect_matchings": [
+            [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          ],
+          "path_load": 4
+        }
+      },
+      "matrices": {
+        "gap_slide": 3.9999999999999947,
+        "gap_trace": 4.404304063165538,
+        "gap_broder": 2.243177114166336,
+        "claimed_gap_lower": "1/4043520",
+        "trace_form_comparison_min_eigenvalue": -2.1316282072803006e-14,
+        "centered_Green_exact_infinity_norm": "1046/2025",
+        "TG": 1.2016656224425815,
+        "conductance_exact": null
+      },
+      "killing": null
+    }
+  ],
+  "two_reference_countercontrols": [
+    "cycle4",
+    "complete4",
+    "K33",
+    "squares_with_bridge",
+    "cube",
+    "complete6"
+  ],
+  "torus_gap_denominator_exact": "64*K**11/d**3",
+  "statement_limits": [
+    "Eigenvalues and logarithmic bound comparisons are floating controls; matrix identities and displayed rational killing values are exact.",
+    "Published conductance and monomer theorems are imported, not reproved.",
+    "No author checker/results or production trajectories accessed."
+  ],
+  "elapsed_seconds": 0.7805743750650436,
+  "checker_sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2",
+  "reused_independent_checker_sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee",
+  "completed_utc": "2026-09-21T16:25:50.121111+00:00"
+}

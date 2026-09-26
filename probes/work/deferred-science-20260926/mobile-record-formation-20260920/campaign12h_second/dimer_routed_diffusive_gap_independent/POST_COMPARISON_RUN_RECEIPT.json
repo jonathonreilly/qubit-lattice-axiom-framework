@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T19:45:33.467242+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/compare_author.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.07376804179511964,
+  "script_sha256": "1280a0a3eef21ac95292e8585c8b5960c8583fc634537728aeeb0edfb102b997"
+}

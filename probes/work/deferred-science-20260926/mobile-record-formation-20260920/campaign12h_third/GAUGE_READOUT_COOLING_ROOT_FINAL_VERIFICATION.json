@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-22T19:08:51.197051+00:00",
+  "seal_sha256": "24abda952a7f728c5408dc5846dc4fdf7cc913c5552d12fe50b4a773c550eb81",
+  "bindings_verified": 65,
+  "root_full_reads": [
+    "REPORT.md",
+    "readout_check.py",
+    "cooling_check.py",
+    "READOUT_RESULTS.json",
+    "COOLING_RESULTS.json",
+    "COMPARISON.md",
+    "comparison_check.py",
+    "COMPARISON_RESULTS.json"
+  ],
+  "outcome": "No material correction; independent polynomial and author exponential-vector proofs both checked. Distinct phase sign labels reconcile exactly. No full864 traversal replay, volume-uniform rate or native claim."
+}

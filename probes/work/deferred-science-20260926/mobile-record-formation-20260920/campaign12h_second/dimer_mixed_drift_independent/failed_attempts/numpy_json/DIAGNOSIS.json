@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-22T00:02:35.235287+00:00",
+  "failure": "JSON serialization of NumPy int64 coordinates in the saved context tuples, after every mathematical assertion completed.",
+  "repair": "Convert each context coordinate to Python int when forming the stencil. No formulas, rate weights, grids, assertions or thresholds change.",
+  "source_sha256": "7e362ba926c0657b9d4aa1baa257b45f72b3f7952328ddffe6c21d13cd05e726"
+}

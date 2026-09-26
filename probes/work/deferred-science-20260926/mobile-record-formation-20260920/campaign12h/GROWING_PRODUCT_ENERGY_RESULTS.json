@@ -1,0 +1,34 @@
+{
+  "states": 81,
+  "swap_acceleration": 7.0,
+  "per_label_birth_rate": 0.3,
+  "maximum_residuals": {
+    "product_forward_equation": 5.93275428784068e-16,
+    "reverse_row_sum": 7.105427357601002e-15,
+    "symmetric_detailed_balance": 2.220446049250313e-16,
+    "form_identity": 1.3877787807814457e-17,
+    "poisson_residual": 1.7763568394002505e-15,
+    "centered_current": 3.209238430557093e-17
+  },
+  "minimum_added_birth_form_eigenvalue": 4.440892091014099e-16,
+  "wrong_plain_adjoint_row_sum_defect": 2.4,
+  "energy_comparisons": [
+    {
+      "time": 0.1,
+      "exact_augmented_moment_variance": 0.0032752480821322547,
+      "forward_backward_energy_upper_bound": 0.006494293623456071
+    },
+    {
+      "time": 1.0,
+      "exact_augmented_moment_variance": 0.031029777156820017,
+      "forward_backward_energy_upper_bound": 0.04741791972897146
+    },
+    {
+      "time": 3.0,
+      "exact_augmented_moment_variance": 0.046260027138074616,
+      "forward_backward_energy_upper_bound": 0.072000775229146
+    }
+  ],
+  "source_sha256": "cdd616b26641866edbbc6855b051b4c62b2dddf391b3f1989ae163c14eb1de68",
+  "scope": "Finite-model independent implementation paths: full forward equation, physical reverse rates, Poisson forms and augmented additive-functional moments. General theorem scrutiny remains pending."
+}

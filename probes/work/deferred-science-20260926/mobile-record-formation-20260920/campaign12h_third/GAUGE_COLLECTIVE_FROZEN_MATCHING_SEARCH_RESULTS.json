@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-22T15:35:36.167510+00:00",
+  "script_sha256": "d388c4e85f83a70c0fccdc377d6e4b0823ba20e5483b5be81a884ead76d2ccdc",
+  "cases": [
+    {
+      "N": 4,
+      "variables": 256,
+      "constraints": 2492,
+      "started_utc": "2026-09-22T15:35:36.189604+00:00",
+      "completed_utc": "2026-09-22T15:35:36.207285+00:00",
+      "time_limit_seconds": 40,
+      "solver_status": 2,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "scope": "Only the specified minimal-flux matching sector and two fixed holes; no coherent dark-state or arbitrary-state exclusion."
+    },
+    {
+      "N": 6,
+      "variables": 864,
+      "constraints": 9180,
+      "started_utc": "2026-09-22T15:35:36.282847+00:00",
+      "completed_utc": "2026-09-22T15:35:36.330063+00:00",
+      "time_limit_seconds": 40,
+      "solver_status": 2,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "scope": "Only the specified minimal-flux matching sector and two fixed holes; no coherent dark-state or arbitrary-state exclusion."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "review_report_sha256": "2e23630a501e17b7c31f5dca06c1f3b788781778855c297bc7eed7e921f076fd",
+  "final_seal_sha256": "f784d85cf1cb5b7eb0986c043564f157ce477a24755e814aeecc57668e6c33f6",
+  "authenticated": {
+    "source_identities": 136,
+    "procedure_dependencies": 3,
+    "artifact_identities": 13
+  },
+  "precomparison_sources_and_artifacts": 8,
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "compare_evidence.py"
+  ],
+  "raw_csv_rehashes": 0,
+  "limits": "Root authenticated compact sources and review artifacts; no repeat production or bootstrap, no full raw-data verification."
+}

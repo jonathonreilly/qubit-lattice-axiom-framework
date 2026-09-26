@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T15:55:23.296559+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_birth_fresh_memory_dilation_check.py"
+  ],
+  "script_sha256": "df5d118e32412b0b4d5f14d4a01c2b7be275b0dbe452c47c7e95eaca8d34a56a",
+  "returncode": 1,
+  "completed_utc": "2026-09-22T15:55:23.663970+00:00"
+}

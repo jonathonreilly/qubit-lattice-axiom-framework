@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-21T18:08:59.159381+00:00",
+  "sources": [
+    {
+      "path": "dimer_routed_dynamic_setup.py",
+      "sha256": "68160271075f825636e2c1c0bfa789d7eaab050b157373ef438aae5b2a009699"
+    },
+    {
+      "path": "DIMER_ROUTED_DYNAMIC_SETUP_RUN.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "DIMER_ROUTED_DYNAMIC_SETUP_RUN.stderr",
+      "sha256": "125c3aeb4fbbf343ed9a5f05f81519f3eeb0bbbeef9fe62a94fb372ecf4c3b0e"
+    }
+  ],
+  "failure": "Independent geometry decoder attempted min() on the empty nonfixed-step array for the maximal-winding routing direction whose entire permutation is identity. Keep the universal assertion (vacuously true), and update the minimum only for nonempty arrays. No simulation dispatched or model source changed. Partial external output retained under dimer_routed_dynamic_screen_setup_attempt01."
+}

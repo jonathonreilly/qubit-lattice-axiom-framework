@@ -1,0 +1,95 @@
+{
+  "artifacts": [
+    {
+      "bytes": 962,
+      "path": "ATTEMPT_1.log",
+      "sha256": "4e0cddaf79929c1c234a5e78f3d2a407c3bd1549c749afa2eccd237f71f53696"
+    },
+    {
+      "bytes": 929,
+      "path": "ATTEMPT_1_DIAGNOSIS.json",
+      "sha256": "20a1e4da03bb0c61036b741fc612b49338f8f7bb634279551b16d72b7800ab53"
+    },
+    {
+      "bytes": 1172,
+      "path": "ATTEMPT_1_PROGRESS.log",
+      "sha256": "e141dd427e7c4478b7dd3ad9c16712e7350b6d6dbffb5da49e5fce2a0353d9cd"
+    },
+    {
+      "bytes": 2735,
+      "path": "CHECKPOINT.md",
+      "sha256": "5b7a4ab17bd17a22be902379155de634dcbc039cd0dd3cafcd529979c6db2f03"
+    },
+    {
+      "bytes": 1271,
+      "path": "EXECUTION_NOTES.md",
+      "sha256": "6c6edca52c90b8dc6949fb1f2d3588e1cf6589be21c336dda1e836035580c9fa"
+    },
+    {
+      "bytes": 2495,
+      "path": "FINAL_VERIFICATION.json",
+      "sha256": "cf9bdf67f2f4fbf521edd39c9ae4b11d40f17016cce302b35e49f7f3326d3124"
+    },
+    {
+      "bytes": 1597,
+      "path": "INPUT.md",
+      "sha256": "fb6c1e6f49850e92ab5f3527e1b4197edc8d9559614bb7b136ca01573172e679"
+    },
+    {
+      "bytes": 1732,
+      "path": "PROGRESS.log",
+      "sha256": "d8ab824195566fe329c1ba2336ece1ac923597dc0dce116f376f3311b85ae04c"
+    },
+    {
+      "bytes": 27427,
+      "path": "REPORT.md",
+      "sha256": "94d8ffa8681f9fbc605bd6ff196c495d6725e3c92fdd9013cee1b840577776e8"
+    },
+    {
+      "bytes": 8187,
+      "path": "RESULTS.json",
+      "sha256": "a5b018d0ebfd8582b2271fc44dc1fa6b48c3ed5a36233d78c81be78874752904"
+    },
+    {
+      "bytes": 8187,
+      "path": "RUN.log",
+      "sha256": "a5b018d0ebfd8582b2271fc44dc1fa6b48c3ed5a36233d78c81be78874752904"
+    },
+    {
+      "bytes": 16023,
+      "path": "independent_check.py",
+      "sha256": "ed68c2e0ba1ec8358d589f1fcafd59140c29964abca7351ffbc85cf9acd9190c"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/PRE_SOURCE_SEAL.json",
+      "sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/PRE_SOURCE_SEAL.json",
+      "sha256": "c729b0f85e0350b834380909001ef62f0db0378fdf114b108f5feef7f6e0e8d1"
+    }
+  ],
+  "forbidden_actions_taken": [],
+  "kind": "pre-primary-source independent mathematical check",
+  "result": "Exact arbitrary-degree product currents, cubic six-field spectrum and nonlinear rotation counterexample, and complete specified four-site coboundary/mean-potential classification.",
+  "source_access_statement": "Only the supplied tensor/classification specification and own unchanged sealed reports were used. No primary polynomial, classification, nonlinear, simulation, or new growing-product source was read before sealing.",
+  "utc": "2026-09-21T05:23:34.494715+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T00:07:08.526749+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_mixed_drift_independent/compare_author.py"
+  ],
+  "checker_sha256": "bf3b0f195b98c9f148e854340106013c3f771c18303ced7b8136793d6dc1c9b2",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T00:07:08.609062+00:00"
+}

@@ -1,0 +1,1 @@
+The first run stopped because SymPy factor returned unevaluated 0*I for four residuals. Exact cancel returns zero for every entry and unit-parameter substitution is zero. Only the residual zero comparison is repaired; all model definitions are retained.

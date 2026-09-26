@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T22:03:24.900653+00:00",
+  "end_utc": "2026-09-21T22:03:25.339339+00:00",
+  "returncode": 0,
+  "script_sha256": "63d9198e83b662db4a493817bb50f7b3dc6894720de9bfcf311b4aaa17501eec",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_independent/compare_author.py"
+  ]
+}

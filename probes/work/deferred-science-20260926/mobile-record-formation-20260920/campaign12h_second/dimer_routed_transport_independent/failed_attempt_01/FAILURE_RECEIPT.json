@@ -1,0 +1,25 @@
+{
+  "cause": "The maximal-winding initial matching has no flippable squares, so random plaquette proposals left the intended irregular fixtures unchanged. The attempted nonzero direction-variance assertion correctly failed. Use a separate standard columnar initial matching for irregular fixtures, retaining the frozen maximal-winding control. No primary claim/source changed.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_01/independent_check.py",
+      "bytes": 14887,
+      "sha256": "02e6db6eac054f4a0ff35ab161d768e0c357f036e9587779f31ac68f08fd49aa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_01/INDEPENDENT_RUN.stdout",
+      "bytes": 223,
+      "sha256": "e705941aa531d57477093009ac1b50b50e244493711b38f61797e8bdf9d6474c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_01/INDEPENDENT_RUN.stderr",
+      "bytes": 670,
+      "sha256": "506d67a6c8bb6db8716d3544c4cef0f7be03d53384ba1be6fb39325afec6b872"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_01/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 572,
+      "sha256": "0b37af203de7d1045ec97aa29058f930d1f85bed1e24ebccae752f08ee95e84d"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/compare_author.py", line 55
+    if shape in [(2,2),(2,3),(2,2,2)]:built[{(2,2):'square',(2,3):'ladder6',(2,2,2):'cube8'}[shape]=(D,G,Wnn,Wr)
+                                           ^
+SyntaxError: '[' was never closed

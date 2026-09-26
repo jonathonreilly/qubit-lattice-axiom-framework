@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-09-21T19:49:31.517240+00:00",
+  "sources": {
+    "geometric_local_quantum_gram_fast_check.py": "77cd08aa123483d95cd8712fa25ba442dc3712bbdd35ed6451a156c11f8a1e93",
+    "geometric_local_quantum_combination_check.py": "0cd4eec4b067e8e27434dbf4fc53407e653d66bc303d26646272072f5b212daa"
+  },
+  "rows": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "sites": 4,
+      "singlet_covers": 2,
+      "magnetization_zero_dimension": 6,
+      "integer_dot_product_bound": 24,
+      "NN_leakage_rank": 0,
+      "ring_leakage_rank": 0,
+      "NN_squared_Frobenius_leakage": "0",
+      "ring_squared_Frobenius_leakage": "0",
+      "exact_least_squares_alpha": "unrestricted",
+      "minimum_squared_Frobenius_leakage": "0",
+      "exact_cover_subspace_closure": true
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "sites": 6,
+      "singlet_covers": 3,
+      "magnetization_zero_dimension": 20,
+      "integer_dot_product_bound": 320,
+      "NN_leakage_rank": 1,
+      "ring_leakage_rank": 1,
+      "NN_squared_Frobenius_leakage": "3/2",
+      "ring_squared_Frobenius_leakage": "3/2",
+      "exact_least_squares_alpha": "-1",
+      "minimum_squared_Frobenius_leakage": "0",
+      "exact_cover_subspace_closure": true
+    },
+    {
+      "shape": [
+        2,
+        4
+      ],
+      "sites": 8,
+      "singlet_covers": 5,
+      "magnetization_zero_dimension": 70,
+      "integer_dot_product_bound": 2520,
+      "NN_leakage_rank": 3,
+      "ring_leakage_rank": 3,
+      "NN_squared_Frobenius_leakage": "69/16",
+      "ring_squared_Frobenius_leakage": "69/16",
+      "exact_least_squares_alpha": "-21/23",
+      "minimum_squared_Frobenius_leakage": "33/46",
+      "exact_cover_subspace_closure": false
+    },
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "sites": 8,
+      "singlet_covers": 9,
+      "magnetization_zero_dimension": 70,
+      "integer_dot_product_bound": 4480,
+      "NN_leakage_rank": 1,
+      "ring_leakage_rank": 1,
+      "NN_squared_Frobenius_leakage": "5",
+      "ring_squared_Frobenius_leakage": "20",
+      "exact_least_squares_alpha": "-2",
+      "minimum_squared_Frobenius_leakage": "0",
+      "exact_cover_subspace_closure": true
+    },
+    {
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "sites": 12,
+      "singlet_covers": 32,
+      "magnetization_zero_dimension": 924,
+      "integer_dot_product_bound": 181104,
+      "NN_leakage_rank": 24,
+      "ring_leakage_rank": 27,
+      "NN_squared_Frobenius_leakage": "7243/120",
+      "ring_squared_Frobenius_leakage": "1575/8",
+      "exact_least_squares_alpha": "-29041/21729",
+      "minimum_squared_Frobenius_leakage": "348331597/3911220",
+      "exact_cover_subspace_closure": false
+    }
+  ],
+  "earlier_completed_patch_rows_reproduced": 4,
+  "scope": "Exact finite-patch rational Gram certificates. Positive residual is a boundary of this two-operator family only. No infinite-volume or other-Hamiltonian conclusion."
+}

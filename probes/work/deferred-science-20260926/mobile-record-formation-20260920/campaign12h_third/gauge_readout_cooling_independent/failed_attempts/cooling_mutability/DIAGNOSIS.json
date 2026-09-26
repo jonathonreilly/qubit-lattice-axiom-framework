@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-22T18:37:20.137798+00:00",
+  "type": "Helper API failure before constrained Poisson solve; no mathematical assertion failed.",
+  "cause": "SymPy kronecker_product produced an ImmutableDenseMatrix, and .copy() retained immutability.",
+  "repair": "Use s.Matrix(G.H) to obtain a mutable matrix before replacing the one constraint row. No graph, model, equations, parameters or acceptance criteria change.",
+  "preserved": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/cooling_mutability/cooling_check.py",
+      "bytes": 12021,
+      "sha256": "6cc725eecaffc0ce92c3419648abbc17e22b3e6f0d7c09c54d7c6f4676d569d4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/cooling_mutability/COOLING_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/cooling_mutability/COOLING_RUN.stderr",
+      "bytes": 970,
+      "sha256": "0b495cb7f92761e0de63c4a7f10623ca00c7c7fe30900c7933470091ecbe3789"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/cooling_mutability/COOLING_RUN_RECEIPT.json",
+      "bytes": 922,
+      "sha256": "7ef40a30364feb2754c9a3d008c885109aa20eaa032adfc3d9f6de13cf485819"
+    }
+  ]
+}

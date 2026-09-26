@@ -1,0 +1,538 @@
+{
+  "created_utc": "2026-09-22T13:49:25.019942+00:00",
+  "status": "author_exact_construction_independent_check_pending",
+  "script_sha256": "3222b205b8cb304e529a235db859e5badcda20b2c722711f6610edab93a245a0",
+  "physical_M2_factors": 6,
+  "hilbert_dimension": 64,
+  "color_dimension": 14,
+  "F_rank": 14,
+  "gram_determinant": "2077601987473440768",
+  "gram_eigenvalues": {
+    "6": 2,
+    "48": 4,
+    "46 - 2*sqrt(481)": 1,
+    "2*sqrt(481) + 46": 1,
+    "44 - 4*sqrt(97)": 3,
+    "4*sqrt(97) + 44": 3
+  },
+  "covariance_checks": 336,
+  "invariant_vacuum_checks": 24,
+  "vacuum_norm_squared": 6,
+  "code_plus_vacuum_dimension": 15,
+  "characteristic_polynomial": "(t - 48)**4*(t - 6)**2*(t**2 - 92*t + 192)*(t**2 - 88*t + 384)**3",
+  "rational_annihilating_polynomial_exact": true,
+  "floating_orthogonality_residual_diagnostic": 3.9623643138597094e-15,
+  "orthogonal_metric": {
+    "u": "7",
+    "v": "7/4",
+    "cross": "0",
+    "u_minus_4v": "0"
+  },
+  "group_characters": [
+    {
+      "rotation": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "trace_H": 64,
+      "trace_code": 14
+    },
+    {
+      "rotation": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "trace_H": 1,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 0,
+      "trace_code": 0
+    },
+    {
+      "rotation": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "trace_H": 8,
+      "trace_code": 2
+    }
+  ],
+  "scope": "Covariant Hilbert-space code with orthogonal color states and an orthogonal invariant vacuum. Rates, Lindblad dynamics, site placement and physical interpretation are separate premises, not supplied by this rank certificate."
+}

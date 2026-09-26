@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-22T00:15:44.984307+00:00",
+  "dimension": 16,
+  "physical_pairs": 2,
+  "proper_rotations": 24,
+  "stabilizers": [
+    4,
+    3
+  ],
+  "seed_vectors": [
+    [
+      -3,
+      7,
+      -3,
+      1,
+      2,
+      0,
+      -5,
+      4,
+      -7,
+      -4,
+      -4,
+      -7,
+      4,
+      -5,
+      0,
+      2
+    ],
+    [
+      -8,
+      7,
+      -7,
+      -3,
+      9,
+      0,
+      -2,
+      -7,
+      -6,
+      -9,
+      -7,
+      9,
+      -9,
+      5,
+      3,
+      -6
+    ]
+  ],
+  "trace_denominators": [
+    1168,
+    2125
+  ],
+  "rational_state_column_rank": 14,
+  "affine_probability_rank": 13,
+  "operator_alternating_multiplicity": "7",
+  "hilbert_alternating_multiplicity": "0",
+  "cubic_operator_nonzero": true,
+  "covariance_equalities": 336,
+  "strict_positivity": "Each state is a conjugate of I plus a sum of vv^T terms, divided by its positive trace.",
+  "minimum_eigenvalue_lower_bounds": [
+    "1/1168",
+    "1/2125"
+  ],
+  "cubic_operator_frobenius_square": "2516832/903125",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_faithful_encoding_check.py",
+      "bytes": 3600,
+      "sha256": "07e9dbd7aea660c5cf4bcd36da7dc448e02e479dea99d43c31140d056f5a5c0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md",
+      "bytes": 2820,
+      "sha256": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46"
+    }
+  ]
+}

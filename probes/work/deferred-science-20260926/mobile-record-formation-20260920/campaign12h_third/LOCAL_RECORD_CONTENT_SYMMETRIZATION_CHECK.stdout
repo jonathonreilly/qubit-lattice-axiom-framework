@@ -1,0 +1,748 @@
+{
+  "created_utc": "2026-09-22T21:54:45.703107+00:00",
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_record_content_symmetrization_check.py",
+    "bytes": 6018,
+    "sha256": "55563785c0d284e5619ae66747b7300bf60ab4a22e266aad7a07b3104eac7d90"
+  },
+  "cases": [
+    {
+      "counts": [
+        2,
+        1
+      ],
+      "dimension": 3,
+      "jump_families": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1
+          ]
+        }
+      ],
+      "configuration_graph_connected": true,
+      "integer_scaled_generator_rank_mod_65521": 8,
+      "exact_complex_kernel_dimension_certificate": 1,
+      "numerical_decay_gap": 0.25000000000000006,
+      "expected_total_cooling_events_from_first_word": 1.0000000000000004,
+      "dynamics": [
+        {
+          "time": 0.5,
+          "Dicke_fidelity": 0.4735944189429298,
+          "trace_distance": 0.6957701042356876,
+          "instantaneous_jump_rate": 0.3540030520423989
+        },
+        {
+          "time": 3.0,
+          "Dicke_fidelity": 0.8028081949383584,
+          "trace_distance": 0.350116170279762,
+          "instantaneous_jump_rate": 0.10853553909767247
+        },
+        {
+          "time": 20.0,
+          "Dicke_fidelity": 0.9995667133686417,
+          "trace_distance": 0.004159101749816587,
+          "instantaneous_jump_rate": 0.00023372247616426645
+        }
+      ]
+    },
+    {
+      "counts": [
+        2,
+        2
+      ],
+      "dimension": 6,
+      "jump_families": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1
+          ]
+        }
+      ],
+      "configuration_graph_connected": true,
+      "integer_scaled_generator_rank_mod_65521": 35,
+      "exact_complex_kernel_dimension_certificate": 1,
+      "numerical_decay_gap": 0.14644660940672483,
+      "expected_total_cooling_events_from_first_word": 2.0000000000000004,
+      "dynamics": [
+        {
+          "time": 0.5,
+          "Dicke_fidelity": 0.2424561009775017,
+          "trace_distance": 0.8566191921230326,
+          "instantaneous_jump_rate": 0.4046781076554302
+        },
+        {
+          "time": 3.0,
+          "Dicke_fidelity": 0.5268108452461876,
+          "trace_distance": 0.614304320243278,
+          "instantaneous_jump_rate": 0.2103486577354911
+        },
+        {
+          "time": 20.0,
+          "Dicke_fidelity": 0.9815313447371704,
+          "trace_distance": 0.04831650172948258,
+          "instantaneous_jump_rate": 0.0076855344256790276
+        }
+      ]
+    },
+    {
+      "counts": [
+        1,
+        1,
+        1
+      ],
+      "dimension": 6,
+      "jump_families": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            1,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            1,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1
+          ]
+        }
+      ],
+      "configuration_graph_connected": true,
+      "integer_scaled_generator_rank_mod_65521": 35,
+      "exact_complex_kernel_dimension_certificate": 1,
+      "numerical_decay_gap": 0.19098300562505313,
+      "expected_total_cooling_events_from_first_word": 2.5000000000000027,
+      "dynamics": [
+        {
+          "time": 0.5,
+          "Dicke_fidelity": 0.3002423815605208,
+          "trace_distance": 0.8128732007828388,
+          "instantaneous_jump_rate": 0.6450252952384277
+        },
+        {
+          "time": 3.0,
+          "Dicke_fidelity": 0.6042559306372931,
+          "trace_distance": 0.5140187581165481,
+          "instantaneous_jump_rate": 0.2339204859957946
+        },
+        {
+          "time": 20.0,
+          "Dicke_fidelity": 0.9846860683928534,
+          "trace_distance": 0.016284605734119707,
+          "instantaneous_jump_rate": 0.008774102060264716
+        }
+      ]
+    },
+    {
+      "counts": [
+        2,
+        1,
+        1
+      ],
+      "dimension": 12,
+      "jump_families": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            2
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            1,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            2
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            1,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1,
+            0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "colors": [
+            0,
+            2
+          ],
+          "spectator_pairs": 2,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            -1
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "colors": [
+            1,
+            2
+          ],
+          "spectator_pairs": 1,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            0,
+            1,
+            -1
+          ]
+        }
+      ],
+      "configuration_graph_connected": true,
+      "integer_scaled_generator_rank_mod_65521": 143,
+      "exact_complex_kernel_dimension_certificate": 1,
+      "numerical_decay_gap": 0.105264447751407,
+      "expected_total_cooling_events_from_first_word": 4.453278856527369,
+      "dynamics": [
+        {
+          "time": 0.5,
+          "Dicke_fidelity": 0.15293911546482664,
+          "trace_distance": 0.9090471049640637,
+          "instantaneous_jump_rate": 0.6948124743512768
+        },
+        {
+          "time": 3.0,
+          "Dicke_fidelity": 0.3662386898164048,
+          "trace_distance": 0.7292174756274502,
+          "instantaneous_jump_rate": 0.3309453661836842
+        },
+        {
+          "time": 20.0,
+          "Dicke_fidelity": 0.8954142554477231,
+          "trace_distance": 0.11754075928723398,
+          "instantaneous_jump_rate": 0.050513376785395976
+        }
+      ]
+    },
+    {
+      "counts": [
+        3,
+        2
+      ],
+      "dimension": 10,
+      "jump_families": [
+        {
+          "edge": [
+            0,
+            1
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 3,
+          "fixed_displacement": [
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 3,
+          "fixed_displacement": [
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 3,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "colors": [
+            0,
+            1
+          ],
+          "spectator_pairs": 3,
+          "fixed_displacement": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            1,
+            1,
+            -1
+          ]
+        }
+      ],
+      "configuration_graph_connected": true,
+      "integer_scaled_generator_rank_mod_65521": 99,
+      "exact_complex_kernel_dimension_certificate": 1,
+      "numerical_decay_gap": 0.09549150281252325,
+      "expected_total_cooling_events_from_first_word": 3.0000000000000044,
+      "dynamics": [
+        {
+          "time": 0.5,
+          "Dicke_fidelity": 0.14562047859756816,
+          "trace_distance": 0.9168907671215784,
+          "instantaneous_jump_rate": 0.40783379290626653
+        },
+        {
+          "time": 3.0,
+          "Dicke_fidelity": 0.3378107877258979,
+          "trace_distance": 0.7692206630016365,
+          "instantaneous_jump_rate": 0.24904557847022016
+        },
+        {
+          "time": 20.0,
+          "Dicke_fidelity": 0.9068387446520217,
+          "trace_distance": 0.1653329930387613,
+          "instantaneous_jump_rate": 0.031206728160610403
+        }
+      ]
+    }
+  ],
+  "geometry": [
+    {
+      "dimension": 2,
+      "period": 6,
+      "A_vertices": 18,
+      "face_diagonal_graph_connected": true
+    },
+    {
+      "dimension": 3,
+      "period": 6,
+      "A_vertices": 108,
+      "face_diagonal_graph_connected": true
+    }
+  ],
+  "status": "Author controls passed for engineered local color exchange cooling.",
+  "scope": "Finite count sectors; coherent Dicke preparation, no autonomous native implementation or uniform gap claim."
+}

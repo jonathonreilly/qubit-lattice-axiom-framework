@@ -1,0 +1,51 @@
+{
+  "local_18_state_Gauss_number_loss_and_reversal_identities": true,
+  "C4": {
+    "complete_16_state_master_equation_verified": true,
+    "z_definition": "exp(-beta*t)",
+    "vacuum_probability": "z^4",
+    "each_of_four_two_record_sector_probabilities": "(z-z^4)/3",
+    "full_probability": "z**4/3 - 4*z/3 + 1",
+    "survival": "(4*z-z^4)/3",
+    "mean_completion_time": "5/(4*beta)",
+    "expected_record_number": "4-(8/3)*z-(4/3)*z^4",
+    "terminal_cycle_coherence": "chi^2",
+    "terminal_off_diagonal_density": "chi^2/2",
+    "occupation_monitoring_annihilates_complete_density": true,
+    "real_field_loop_and_occupied_cycle_H_commute_with_complete_density": true,
+    "charge_monitoring_countercontrol": "Unit-rate Q_0 dephasing changes terminal cycle expectation at rate -2*chi^2."
+  },
+  "probe": {
+    "C_cubic_identity": true,
+    "resonant_number_fuel_conservation": true,
+    "fresh_probe_unitary_and_Kraus_identity_at_theta_pi_over_4": true,
+    "finite_step_choi_ranks": [
+      {
+        "chi": "-1",
+        "choi_rank": 2
+      },
+      {
+        "chi": "0",
+        "choi_rank": 3
+      },
+      {
+        "chi": "1/3",
+        "choi_rank": 3
+      },
+      {
+        "chi": "1",
+        "choi_rank": 2
+      }
+    ],
+    "two_fresh_channel_composition_verified_on_25_matrix_units": true,
+    "reused_probe_theta_pi_over_2": "First collision creates two records; second returns exactly to the original vacancy state up to phase.",
+    "fresh_probe_theta_pi_over_2": "The second fresh-fuel collision leaves the two records present.",
+    "exact_semigroup_parameter": "cos(theta)=exp(-beta*dt/2), 0<=theta<=pi/2"
+  },
+  "partial_bijection_countercontrol": {
+    "graph_component_has_positive_loss": true,
+    "stationary_dark_density_despite_occupation_monitoring": true,
+    "violated_hypothesis": "Off-pattern block map is not a partial bijection: two same-pattern configurations map to the same target.",
+    "dark_vector": "(c1-c2)/sqrt(2)"
+  }
+}

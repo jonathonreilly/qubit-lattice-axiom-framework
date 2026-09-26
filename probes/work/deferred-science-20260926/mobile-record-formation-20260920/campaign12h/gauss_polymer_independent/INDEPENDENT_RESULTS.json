@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "charge_edges": 1029,
+        "charge_vertices": 343,
+        "line_degree": 10
+      },
+      "name": "simple_step_two_graph_and_line_degree"
+    },
+    {
+      "detail": {
+        "claimed_safe_bound": 17,
+        "endpoint_anchors": 11,
+        "midpoint_anchors": 6,
+        "union": 16
+      },
+      "name": "typed_incompatibility_anchor_overcount"
+    },
+    {
+      "detail": {
+        "counts": {
+          "1": 1,
+          "2": 10,
+          "3": 95,
+          "4": 908
+        },
+        "walk_length": "2(n-1)"
+      },
+      "name": "canonical_depth_first_injection_for_rooted_edge_animals"
+    },
+    {
+      "detail": {
+        "count": 8
+      },
+      "name": "balanced_signed_four_edge_anchor_count"
+    },
+    {
+      "detail": {
+        "S": "1/800",
+        "ordinary_root_budget": "17/800",
+        "q": "200 e^2 z",
+        "spatial_ghost_budget": "3/400",
+        "z_star": "1/(400 e^2)"
+      },
+      "name": "enlarged_activity_and_zero_activity_ghost_constants"
+    },
+    {
+      "detail": {
+        "component_count": 1,
+        "records": 10,
+        "simple_cycle_decompositions": 2
+      },
+      "name": "branched_component_is_unique_when_cycle_decomposition_is_not"
+    },
+    {
+      "detail": {
+        "charge_components": 2,
+        "individually_balanced": true,
+        "physical_slots": 7,
+        "records": 8
+      },
+      "name": "midpoint_capacity_is_independent_of_charge_component_separation"
+    },
+    {
+      "detail": null,
+      "name": "different_species_may_share_charge_vertex_without_conflict"
+    },
+    {
+      "detail": {
+        "phi": {
+          "1": "1",
+          "2": "-1/2",
+          "3": "1/3",
+          "4": "-1/4",
+          "5": "1/5"
+        },
+        "root_insertion": "R_x=n",
+        "two_insertions": "n^2"
+      },
+      "name": "root_multiplicity_and_two_source_derivative_factorials"
+    },
+    {
+      "detail": {
+        "covariance_envelope": "(2/e) exp(-r/4)",
+        "graph_step_bound": 2
+      },
+      "name": "distance_and_cluster_mass_exponential_envelope"
+    },
+    {
+      "detail": {
+        "solution": {
+          "b": "-a",
+          "c": "-a"
+        }
+      },
+      "name": "cubic_analytic_Gauss_quadratic_tensor"
+    }
+  ],
+  "failed_executions": [
+    "ATTEMPT_01_RECEIPT.json"
+  ],
+  "scope": "Independent provisional proof controls before author polymer checker/results access.",
+  "source_sha256": "db9c9d004b416ce15e65b26187c99bde86217caf535401cf6a9da5f77038d3ff",
+  "versions": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0"
+  }
+}

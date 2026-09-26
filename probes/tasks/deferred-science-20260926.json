@@ -1,0 +1,291 @@
+[
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1",
+  "problem": "deferred-20260926-quantum-record-codes-and-pointers",
+  "title": "Quantum codes and pointers for mobile records",
+  "research_target": "Referee, with machinery disjoint from the author's, one exact finite result about implementing the routed record law with a quantum code or pointer: the fixed nonorthogonal code's exact finite incompatibility with a CPTP implementation of the full routed law; the covariant six-qubit block pointer's exact rank, covariance and vacuum construction with its analytic lift; or the depolarized commuting pointer's exact negative off-diagonal generator entry for every 0 < eta < 1. Then attack the open step the campaign registry names: explicit local logical-block Lindblad dynamics for the block pointer, or an approximate implementation for the depolarized family.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_COVARIANT_POINTER_DYNAMICS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DEPOLARIZED_POINTER_RATE_BOUNDARY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Referee, with machinery disjoint from the author's, one exact finite result about implementing the routed record law with a quantum code or pointer: the fixed nonorthogonal code's exact finite incompatibility with a CPTP implementation of the full routed law; the covariant six-qubit block pointer's exact rank, covariance and vacuum construction with its analytic lift; or the depolarized commuting pointer's exact negative off-diagonal generator entry for every 0 < eta < 1. Then attack the open step the campaign registry names: explicit local logical-block Lindblad dynamics for the block pointer, or an approximate implementation for the depolarized family. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_COVARIANT_POINTER_DYNAMICS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DEPOLARIZED_POINTER_RATE_BOUNDARY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-coherent-vacancy-birth-and-clocks:a1",
+  "problem": "deferred-20260926-coherent-vacancy-birth-and-clocks",
+  "title": "Coherent vacancy motion, birth back-action and completion clocks",
+  "research_target": "The last-pair quantum clock (exact transient Poisson equation, dark projection and singular limits) and coherent ring formation without occupation monitoring were independently reconstructed within the same model family. Take one open step the registry names: genuinely uniform volume and rate bounds for the final formation delay (do not balance nonuniform limits); larger-volume connectivity for partial bijective constrained hopping; or an independent review of the author-only fourth-order-scale repeated clocks (all-time count-path convergence with nonvanishing t4/Delta3). Prove a bound, give an exact counterexample, or give a checked partial result.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/TWO_VACANCY_QUANTUM_COMPLETION_CLOCK.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_FORMATION_WITHOUT_OCCUPATION_MONITORING.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_AT_FIXED_FOURTH_ORDER_SCALE.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-matter-clocks:a1",
+   "J:derive:deferred-20260925-clock-formation-selection:a1"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: The last-pair quantum clock (exact transient Poisson equation, dark projection and singular limits) and coherent ring formation without occupation monitoring were independently reconstructed within the same model family. Take one open step the registry names: genuinely uniform volume and rate bounds for the final formation delay (do not balance nonuniform limits); larger-volume connectivity for partial bijective constrained hopping; or an independent review of the author-only fourth-order-scale repeated clocks (all-time count-path convergence with nonvanishing t4/Delta3). Prove a bound, give an exact counterexample, or give a checked partial result. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/TWO_VACANCY_QUANTUM_COMPLETION_CLOCK.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_FORMATION_WITHOUT_OCCUPATION_MONITORING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_AT_FIXED_FOURTH_ORDER_SCALE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/. Related tasks: J:derive:deferred-20260925-matter-clocks:a1, J:derive:deferred-20260925-clock-formation-selection:a1. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-coherent-vacancy-birth-and-clocks/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-gauge-record-traps-and-circulation:a1",
+  "problem": "deferred-20260926-gauge-record-traps-and-circulation",
+  "title": "Permanent charged records in a spin-half U(1) model: traps and circulation",
+  "research_target": "In the supplied gauge-covariant permanent-record model (local U(1) Gauss law, gauge-covariant nearest-neighbour hopping, irreversible opposite-charge pair birth), the extreme-flux traps and a collective circulation that releases them were independently reconstructed for small witnesses (one N=4 renewal amplitude). Settle one remaining question for a stated finite family: which invariant sectors stay trapped; whether formation completes almost surely under collective circulation; or an exact certificate for the fixed-hole matching MILP infeasibility. Trapping statements are negative claims and need the N1-N8 gate before any promotion.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/U1_EXTREME_FLUX_RECORD_TRAPPING.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/VIRTUAL_MULTIPLE_OCCUPANCY_SOURCE_FOR_RECORD_CIRCULATION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-integer-gauge:a1",
+   "J:derive:deferred-20260925-band-gauge:a1"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: In the supplied gauge-covariant permanent-record model (local U(1) Gauss law, gauge-covariant nearest-neighbour hopping, irreversible opposite-charge pair birth), the extreme-flux traps and a collective circulation that releases them were independently reconstructed for small witnesses (one N=4 renewal amplitude). Settle one remaining question for a stated finite family: which invariant sectors stay trapped; whether formation completes almost surely under collective circulation; or an exact certificate for the fixed-hole matching MILP infeasibility. Trapping statements are negative claims and need the N1-N8 gate before any promotion. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/U1_EXTREME_FLUX_RECORD_TRAPPING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/VIRTUAL_MULTIPLE_OCCUPANCY_SOURCE_FOR_RECORD_CIRCULATION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/. Related tasks: J:derive:deferred-20260925-integer-gauge:a1, J:derive:deferred-20260925-band-gauge:a1. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-gauge-record-traps-and-circulation/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-coherent-formation-instruments:a1",
+  "problem": "deferred-20260926-coherent-formation-instruments",
+  "title": "Coherent formation instruments and a retained gauge phase",
+  "research_target": "Coherent neutral-pair formation, the fresh departing quantum memory, autonomous moving fuel and formation-count coherence were independently checked within the same model family, with an acknowledged scope repair. Three related results were still author-only at closure: classical permanent records with quantum gauge memory, the open-instrument cyclic cutoff (finite-time control of rotor versus cyclic finite-link outputs) and fresh charged-record readout of spin-half gauge loops. Independently check one of them, or advance the open step named in the registry: a native formation instrument and a long-distance gauge phase in place of a supplied initial phase.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/AUTONOMOUS_MOVING_FUEL_FOR_GAUGE_RECORD_FORMATION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_PERMANENT_RECORDS_WITH_QUANTUM_GAUGE_MEMORY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FINITE_CYCLIC_APPROXIMATION_OF_GAUGE_RECORD_INSTRUMENTS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_READOUT_OF_SPIN_HALF_GAUGE_LOOPS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-conditional-dynamics:a1"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Coherent neutral-pair formation, the fresh departing quantum memory, autonomous moving fuel and formation-count coherence were independently checked within the same model family, with an acknowledged scope repair. Three related results were still author-only at closure: classical permanent records with quantum gauge memory, the open-instrument cyclic cutoff (finite-time control of rotor versus cyclic finite-link outputs) and fresh charged-record readout of spin-half gauge loops. Independently check one of them, or advance the open step named in the registry: a native formation instrument and a long-distance gauge phase in place of a supplied initial phase. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/AUTONOMOUS_MOVING_FUEL_FOR_GAUGE_RECORD_FORMATION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_PERMANENT_RECORDS_WITH_QUANTUM_GAUGE_MEMORY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FINITE_CYCLIC_APPROXIMATION_OF_GAUGE_RECORD_INSTRUMENTS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_READOUT_OF_SPIN_HALF_GAUGE_LOOPS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/. Related tasks: J:derive:deferred-20260925-conditional-dynamics:a1. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-coherent-formation-instruments/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-local-rk-preparation:a1",
+  "problem": "deferred-20260926-local-rk-preparation",
+  "title": "Local preparation of RK states by record cooling",
+  "research_target": "The author's all-size conditional proof says that an established plaquette cooling jump, together with a separating-diagonal invariant-space argument, prepares an equal-amplitude finite-component state from arbitrary input. It comes with an exact bad-orientation countercontrol and the actual 864-state geometry, and its blind reconstruction was still underway at closure. Independently reconstruct the global-attraction theorem under its explicit premises, or locate the failing step. Then address one registry obligation: a uniform rate; compatibility with an adjacent field phase through the changed-Hamiltonian adaptation; or the coherent ramp's certified gap.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_PREPARATION_AFTER_LOCAL_RECORD_COOLING.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:derive:deferred-20260924-formation-packets:a1",
+   "J:derive:deferred-20260925-ring-limits:a1"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: The author's all-size conditional proof says that an established plaquette cooling jump, together with a separating-diagonal invariant-space argument, prepares an equal-amplitude finite-component state from arbitrary input. It comes with an exact bad-orientation countercontrol and the actual 864-state geometry, and its blind reconstruction was still underway at closure. Independently reconstruct the global-attraction theorem under its explicit premises, or locate the failing step. Then address one registry obligation: a uniform rate; compatibility with an adjacent field phase through the changed-Hamiltonian adaptation; or the coherent ramp's certified gap. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_PREPARATION_AFTER_LOCAL_RECORD_COOLING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/. Related tasks: J:derive:deferred-20260924-formation-packets:a1, J:derive:deferred-20260925-ring-limits:a1. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-local-rk-preparation/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-author-only-field-results:a1",
+  "problem": "deferred-20260926-author-only-field-results",
+  "title": "Author-only field results: static-source Coulomb energy and formation energy offsets",
+  "research_target": "Independently check one author-frozen result. (a) Static-source Coulomb energy in the compact U(1) rotor target: a fixed-box ground-energy comparison in which, at weak coupling, a static source contributes the lattice Coulomb energy plus its allowed harmonic electric energy with an exponentially small correction, and the ordered weak-coupling, infinite-box, long-distance limit gives the attractive 1/r coefficient. (b) The initial energy cost and number offset of record formation. (c) Distinct permanent contents through the exact permutation-fibre intertwiner. Say what matching to actually created mobile matter would still require.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/STATIC_SOURCE_COULOMB_ENERGY_IN_THE_ROTOR_TARGET.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/INITIAL_ENERGY_COST_AND_NUMBER_OFFSET_OF_RECORD_FORMATION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/PERMANENT_RECORD_CONTENTS_AND_SYMMETRIC_FIELD_DYNAMICS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:derive:deferred-20260925-ground-energy-and-response:a1",
+   "J:derive:deferred-20260925-charge-threshold-and-transport:a1",
+   "J:derive:deferred-20260924-ledger:a1"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Independently check one author-frozen result. (a) Static-source Coulomb energy in the compact U(1) rotor target: a fixed-box ground-energy comparison in which, at weak coupling, a static source contributes the lattice Coulomb energy plus its allowed harmonic electric energy with an exponentially small correction, and the ordered weak-coupling, infinite-box, long-distance limit gives the attractive 1/r coefficient. (b) The initial energy cost and number offset of record formation. (c) Distinct permanent contents through the exact permutation-fibre intertwiner. Say what matching to actually created mobile matter would still require. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/STATIC_SOURCE_COULOMB_ENERGY_IN_THE_ROTOR_TARGET.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/INITIAL_ENERGY_COST_AND_NUMBER_OFFSET_OF_RECORD_FORMATION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/PERMANENT_RECORD_CONTENTS_AND_SYMMETRIC_FIELD_DYNAMICS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md. Related tasks: J:derive:deferred-20260925-ground-energy-and-response:a1, J:derive:deferred-20260925-charge-threshold-and-transport:a1, J:derive:deferred-20260924-ledger:a1. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-author-only-field-results/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-colour-encodings-quantum-lift:a1",
+  "problem": "deferred-20260926-colour-encodings-quantum-lift",
+  "title": "Quantum encodings of the fourteen pair colours and the geometric quantum lift",
+  "research_target": "Three exact results were independently checked within the same model family. (1) A six-moment mixed encoding has the same product density but a different exact initial drift, -3/3584. (2) Affine covariant single-pair density encodings lose the cubic colour moment; a positive encoding with a readable quadratic observable has an exact drift difference of 1/57344. (3) Positive covariant states on two pair spaces (dimension 16), with column rank 14 and affine rank 13, retain all fourteen probabilities. The campaign report names what remains open: injectivity supplies neither perfect colour readout nor a completely positive evolution implementing the rates. For the two-pair encoding, decide whether a completely positive generator on the encoded states reproduces the specified colour rates, or exhibit an obstruction. Alternatively, test the quantum-lift boundary of the geometric singlet channel and fibre construction.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/CAMPAIGN_REPORT.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Three exact results were independently checked within the same model family. (1) A six-moment mixed encoding has the same product density but a different exact initial drift, -3/3584. (2) Affine covariant single-pair density encodings lose the cubic colour moment; a positive encoding with a readable quadratic observable has an exact drift difference of 1/57344. (3) Positive covariant states on two pair spaces (dimension 16), with column rank 14 and affine rank 13, retain all fourteen probabilities. The campaign report names what remains open: injectivity supplies neither perfect colour readout nor a completely positive evolution implementing the rates. For the two-pair encoding, decide whether a completely positive generator on the encoded states reproduces the specified colour rates, or exhibit an obstruction. Alternatively, test the quantum-lift boundary of the geometric singlet channel and fibre construction. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/CAMPAIGN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-colour-encodings-quantum-lift/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ },
+ {
+  "type": "judgment",
+  "lane": "unpublished-codex-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "id": "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1",
+  "problem": "deferred-20260926-cubic-couplings-and-gauss-screens",
+  "title": "Proper-cubic coupling classification and Gauss-loop screens",
+  "research_target": "The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside open PR #8569. Referee it with disjoint machinery; if it survives, record it as a candidate addendum for #8569's review. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning.",
+  "source_paths": [
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GRAM_KERNEL_CUBIC_FORMATION_RESPONSE.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_COMPLETED_SCREEN_REPORT.md",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/",
+   "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/"
+  ],
+  "source_branch": {
+   "name": "codex/mobile-record-post-formation-campaign-20260923",
+   "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+   "on_origin": false
+  },
+  "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "related_tasks": [
+   "J:falsifier:PR8569"
+  ],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside open PR #8569. Referee it with disjoint machinery; if it survives, record it as a candidate addendum for #8569's review. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GRAM_KERNEL_CUBIC_FORMATION_RESPONSE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_COMPLETED_SCREEN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/. Related tasks: J:falsifier:PR8569. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-cubic-couplings-and-gauss-screens/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+ }
+]

@@ -1,0 +1,1324 @@
+{
+  "completed_utc": "2026-09-21T17:11:14.149323+00:00",
+  "graphs": [
+    {
+      "name": "path4",
+      "V": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "layer_counts": [
+        1,
+        3,
+        1
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 3,
+          "upper_states": 1,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "2/3",
+          "slide_gap": 0.9999999999999997,
+          "auxiliary_gap": 2.0,
+          "comparison_C": 217,
+          "compressed_comparison_min_eigenvalue": 3.671755351786431e-14,
+          "upper_energy_comparison_min_eigenvalue": 0.0,
+          "parent_routes": 1,
+          "maximum_route_length": 2,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 1,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "0",
+              "mean_error_exact": "1/3000"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "0",
+              "mean_error_exact": "1/21"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 2,
+            "codomain": 9
+          },
+          {
+            "j": 1,
+            "domain": 3,
+            "codomain": 3
+          }
+        ],
+        "C_exact": "11/6",
+        "lower_exact": "3/2",
+        "upper_exact": "3"
+      }
+    },
+    {
+      "name": "cycle4",
+      "V": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "layer_counts": [
+        1,
+        4,
+        2
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 4,
+          "upper_states": 2,
+          "hazard_range": [
+            1,
+            1
+          ],
+          "p_exact": "1",
+          "slide_gap": 1.9999999999999987,
+          "auxiliary_gap": 1.4384471871911688,
+          "comparison_C": 441,
+          "compressed_comparison_min_eigenvalue": 8.323625782489084e-14,
+          "upper_energy_comparison_min_eigenvalue": 0.0,
+          "parent_routes": 2,
+          "maximum_route_length": 2,
+          "maximum_reference_count": 2,
+          "maximum_route_load": 2,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "1/8002",
+              "mean_error_exact": "0"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "1/58",
+              "mean_error_exact": "0"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 4,
+            "codomain": 16
+          },
+          {
+            "j": 1,
+            "domain": 8,
+            "codomain": 8
+          }
+        ],
+        "C_exact": "5/4",
+        "lower_exact": "1",
+        "upper_exact": "2"
+      }
+    },
+    {
+      "name": "diamond",
+      "V": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "layer_counts": [
+        1,
+        5,
+        2
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 5,
+          "upper_states": 2,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "4/5",
+          "slide_gap": 3.0,
+          "auxiliary_gap": 1.5505102572168221,
+          "comparison_C": 781,
+          "compressed_comparison_min_eigenvalue": 3.4638958368304884e-14,
+          "upper_energy_comparison_min_eigenvalue": 0.0,
+          "parent_routes": 2,
+          "maximum_route_length": 2,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 1,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "1/10002",
+              "mean_error_exact": "1/5000"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "1/72",
+              "mean_error_exact": "1/35"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 4,
+            "codomain": 25
+          },
+          {
+            "j": 1,
+            "domain": 10,
+            "codomain": 10
+          }
+        ],
+        "C_exact": "29/20",
+        "lower_exact": "5/4",
+        "upper_exact": "5/2"
+      }
+    },
+    {
+      "name": "path6",
+      "V": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "layer_counts": [
+        1,
+        5,
+        6,
+        1
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 5,
+          "upper_states": 6,
+          "hazard_range": [
+            2,
+            3
+          ],
+          "p_exact": "12/5",
+          "slide_gap": 0.3819660112501052,
+          "auxiliary_gap": 3.018125742939868,
+          "comparison_C": 1561,
+          "compressed_comparison_min_eigenvalue": 3.4442405124471833e-13,
+          "upper_energy_comparison_min_eigenvalue": 2.9662984680271216e-15,
+          "parent_routes": 6,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 5,
+          "maximum_route_load": 5,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "5273027009/3031077066018",
+              "mean_error_exact": "7003/15035015"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "12503/88356",
+              "mean_error_exact": "52/995"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 6,
+          "upper_states": 1,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "1/2",
+          "slide_gap": 0.5857864376269052,
+          "auxiliary_gap": 1.454991102354935,
+          "comparison_C": 3361,
+          "compressed_comparison_min_eigenvalue": 6.438067965495359e-13,
+          "upper_energy_comparison_min_eigenvalue": -7.771561172376097e-16,
+          "parent_routes": 3,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 2,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "0",
+              "mean_error_exact": "1601/2401600"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "0",
+              "mean_error_exact": "61/644"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 3,
+            "codomain": 30
+          },
+          {
+            "j": 1,
+            "domain": 10,
+            "codomain": 36
+          },
+          {
+            "j": 2,
+            "domain": 6,
+            "codomain": 6
+          }
+        ],
+        "C_exact": "157/60",
+        "lower_exact": "2",
+        "upper_exact": "11/2"
+      }
+    },
+    {
+      "name": "complete6",
+      "V": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "layer_counts": [
+        1,
+        15,
+        45,
+        15
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 15,
+          "upper_states": 45,
+          "hazard_range": [
+            6,
+            6
+          ],
+          "p_exact": "6",
+          "slide_gap": 5.999999999999998,
+          "auxiliary_gap": 6.516685226452115,
+          "comparison_C": 31681,
+          "compressed_comparison_min_eigenvalue": -4.5700604188208784e-26,
+          "upper_energy_comparison_min_eigenvalue": 2.842170943040401e-14,
+          "parent_routes": 45,
+          "maximum_route_length": 2,
+          "maximum_reference_count": 6,
+          "maximum_route_load": 6,
+          "exact_killing_controls": []
+        },
+        {
+          "j": 2,
+          "lower_states": 45,
+          "upper_states": 15,
+          "hazard_range": [
+            1,
+            1
+          ],
+          "p_exact": "1",
+          "slide_gap": 3.9999999999999947,
+          "auxiliary_gap": 2.313191025332643,
+          "comparison_C": 65281,
+          "compressed_comparison_min_eigenvalue": 2.1458077053269844e-10,
+          "upper_energy_comparison_min_eigenvalue": -7.488599529670895e-15,
+          "parent_routes": 45,
+          "maximum_route_length": 2,
+          "maximum_reference_count": 2,
+          "maximum_route_load": 2,
+          "exact_killing_controls": []
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 45,
+            "codomain": 675
+          },
+          {
+            "j": 1,
+            "domain": 450,
+            "codomain": 2025
+          },
+          {
+            "j": 2,
+            "domain": 675,
+            "codomain": 675
+          }
+        ],
+        "C_exact": "37/30",
+        "lower_exact": "1",
+        "upper_exact": "11/4"
+      }
+    },
+    {
+      "name": "odd_barbell",
+      "V": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "layer_counts": [
+        1,
+        7,
+        11,
+        1
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 7,
+          "upper_states": 11,
+          "hazard_range": [
+            2,
+            4
+          ],
+          "p_exact": "22/7",
+          "slide_gap": 0.5857864376269047,
+          "auxiliary_gap": 3.6066555216290133,
+          "comparison_C": 3809,
+          "compressed_comparison_min_eigenvalue": -3.8619153455491196e-13,
+          "upper_energy_comparison_min_eigenvalue": 6.193515642419281e-15,
+          "parent_routes": 11,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 7,
+          "maximum_route_load": 7,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "3665361233/2774051289009",
+              "mean_error_exact": "16012/38566521"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "199073/1551264",
+              "mean_error_exact": "124/2373"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 11,
+          "upper_states": 1,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "3/11",
+          "slide_gap": 1.2679491924311228,
+          "auxiliary_gap": 1.683375209644601,
+          "comparison_C": 8065,
+          "compressed_comparison_min_eigenvalue": 7.0445485769319275e-12,
+          "upper_energy_comparison_min_eigenvalue": -8.813564457699458e-16,
+          "parent_routes": 3,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 2,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "0",
+              "mean_error_exact": "29009/66022000"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "0",
+              "mean_error_exact": "53/847"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 3,
+            "codomain": 77
+          },
+          {
+            "j": 1,
+            "domain": 14,
+            "codomain": 121
+          },
+          {
+            "j": 2,
+            "domain": 11,
+            "codomain": 11
+          }
+        ],
+        "C_exact": "1907/462",
+        "lower_exact": "11/3",
+        "upper_exact": "121/12"
+      }
+    },
+    {
+      "name": "triangle_tail",
+      "V": 6,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "layer_counts": [
+        1,
+        6,
+        8,
+        1
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 6,
+          "upper_states": 8,
+          "hazard_range": [
+            2,
+            4
+          ],
+          "p_exact": "8/3",
+          "slide_gap": 0.43844718719116876,
+          "auxiliary_gap": 3.2080947124495105,
+          "comparison_C": 2521,
+          "compressed_comparison_min_eigenvalue": -2.4230715103096073e-12,
+          "upper_energy_comparison_min_eigenvalue": -1.0489209327061636e-15,
+          "parent_routes": 8,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 7,
+          "maximum_route_load": 7,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "7781407259/4040592823518",
+              "mean_error_exact": "4263386753/2020296411759"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "35443/228582",
+              "mean_error_exact": "17587/114291"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 8,
+          "upper_states": 1,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "3/8",
+          "slide_gap": 0.7576704117945422,
+          "auxiliary_gap": 1.522345212466721,
+          "comparison_C": 5377,
+          "compressed_comparison_min_eigenvalue": 3.408168959777374e-12,
+          "upper_energy_comparison_min_eigenvalue": -4.580275299138502e-16,
+          "parent_routes": 3,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 2,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "0",
+              "mean_error_exact": "45399019/80122704000"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "0",
+              "mean_error_exact": "675/8428"
+            }
+          ]
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 3,
+            "codomain": 48
+          },
+          {
+            "j": 1,
+            "domain": 12,
+            "codomain": 64
+          },
+          {
+            "j": 2,
+            "domain": 8,
+            "codomain": 8
+          }
+        ],
+        "C_exact": "77/24",
+        "lower_exact": "8/3",
+        "upper_exact": "22/3"
+      }
+    },
+    {
+      "name": "squares_bridge",
+      "V": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "layer_counts": [
+        1,
+        9,
+        24,
+        20,
+        4
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 9,
+          "upper_states": 24,
+          "hazard_range": [
+            4,
+            6
+          ],
+          "p_exact": "16/3",
+          "slide_gap": 0.3819660112501048,
+          "auxiliary_gap": 5.600782741497374,
+          "comparison_C": 11341,
+          "compressed_comparison_min_eigenvalue": -3.3940704940878564e-12,
+          "upper_energy_comparison_min_eigenvalue": -2.1324860257966332e-14,
+          "parent_routes": 24,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 9,
+          "maximum_route_load": 9,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "2194519182565963/541009212566170908",
+              "mean_error_exact": "2303/3614109"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "12941293/52626684",
+              "mean_error_exact": "191/2841"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 24,
+          "upper_states": 20,
+          "hazard_range": [
+            2,
+            4
+          ],
+          "p_exact": "5/2",
+          "slide_gap": 0.43844718719116926,
+          "auxiliary_gap": 2.784560711872323,
+          "comparison_C": 23761,
+          "compressed_comparison_min_eigenvalue": 2.1555091821640743e-11,
+          "upper_energy_comparison_min_eigenvalue": -2.245196818210069e-15,
+          "parent_routes": 60,
+          "maximum_route_length": 5,
+          "maximum_reference_count": 4,
+          "maximum_route_load": 8,
+          "exact_killing_controls": []
+        },
+        {
+          "j": 3,
+          "lower_states": 20,
+          "upper_states": 4,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "4/5",
+          "slide_gap": 0.29270673117834384,
+          "auxiliary_gap": 1.1254075954825675,
+          "comparison_C": 37261,
+          "compressed_comparison_min_eigenvalue": -1.7764780572062077e-11,
+          "upper_energy_comparison_min_eigenvalue": -7.105445070488062e-15,
+          "parent_routes": 24,
+          "maximum_route_length": 6,
+          "maximum_reference_count": 2,
+          "maximum_route_load": 6,
+          "exact_killing_controls": []
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 16,
+            "codomain": 180
+          },
+          {
+            "j": 1,
+            "domain": 108,
+            "codomain": 480
+          },
+          {
+            "j": 2,
+            "domain": 192,
+            "codomain": 400
+          },
+          {
+            "j": 3,
+            "domain": 80,
+            "codomain": 80
+          }
+        ],
+        "C_exact": "1403/720",
+        "lower_exact": "5/4",
+        "upper_exact": "25/6"
+      }
+    },
+    {
+      "name": "cube",
+      "V": 8,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "layer_counts": [
+        1,
+        12,
+        42,
+        44,
+        9
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 12,
+          "upper_states": 42,
+          "hazard_range": [
+            7,
+            7
+          ],
+          "p_exact": "7",
+          "slide_gap": 1.9999999999999976,
+          "auxiliary_gap": 7.315341561573505,
+          "comparison_C": 25273,
+          "compressed_comparison_min_eigenvalue": 4.1804201313311713e-11,
+          "upper_energy_comparison_min_eigenvalue": -2.735075526739984e-14,
+          "parent_routes": 42,
+          "maximum_route_length": 3,
+          "maximum_reference_count": 7,
+          "maximum_route_load": 7,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "159255173/96617176686",
+              "mean_error_exact": "0"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "253/1470",
+              "mean_error_exact": "0"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 42,
+          "upper_states": 44,
+          "hazard_range": [
+            2,
+            4
+          ],
+          "p_exact": "22/7",
+          "slide_gap": 2.103450471868077,
+          "auxiliary_gap": 3.643640537758882,
+          "comparison_C": 52417,
+          "compressed_comparison_min_eigenvalue": 1.5739293420945765e-10,
+          "upper_energy_comparison_min_eigenvalue": 1.4210854715145237e-14,
+          "parent_routes": 132,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 4,
+          "maximum_route_load": 5,
+          "exact_killing_controls": []
+        },
+        {
+          "j": 3,
+          "lower_states": 44,
+          "upper_states": 9,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "9/11",
+          "slide_gap": 1.171572875253808,
+          "auxiliary_gap": 1.5176961179222004,
+          "comparison_C": 81433,
+          "compressed_comparison_min_eigenvalue": -2.7570057959773175e-11,
+          "upper_energy_comparison_min_eigenvalue": -4.675029729936974e-15,
+          "parent_routes": 54,
+          "maximum_route_length": 4,
+          "maximum_reference_count": 2,
+          "maximum_route_load": 4,
+          "exact_killing_controls": []
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 36,
+            "codomain": 528
+          },
+          {
+            "j": 1,
+            "domain": 324,
+            "codomain": 1848
+          },
+          {
+            "j": 2,
+            "domain": 756,
+            "codomain": 1936
+          },
+          {
+            "j": 3,
+            "domain": 396,
+            "codomain": 396
+          }
+        ],
+        "C_exact": "4897/2772",
+        "lower_exact": "11/9",
+        "upper_exact": "110/27"
+      }
+    },
+    {
+      "name": "path10",
+      "V": 10,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "layer_counts": [
+        1,
+        9,
+        28,
+        35,
+        15,
+        1
+      ],
+      "all_nonfull_layers_connected": true,
+      "stages": [
+        {
+          "j": 1,
+          "lower_states": 9,
+          "upper_states": 28,
+          "hazard_range": [
+            6,
+            7
+          ],
+          "p_exact": "56/9",
+          "slide_gap": 0.12061475842818312,
+          "auxiliary_gap": 6.526926183994158,
+          "comparison_C": 15121,
+          "compressed_comparison_min_eigenvalue": -5.597256324981535e-12,
+          "upper_energy_comparison_min_eigenvalue": -1.2625986528036863e-14,
+          "parent_routes": 28,
+          "maximum_route_length": 8,
+          "maximum_reference_count": 19,
+          "maximum_route_load": 19,
+          "exact_killing_controls": [
+            {
+              "beta": "1/1000",
+              "TV_exact": "16484228766229091272163/951197781623660986544326",
+              "mean_error_exact": "3531581063/3573910337567"
+            },
+            {
+              "beta": "1/7",
+              "TV_exact": "1941184773/4627161812",
+              "mean_error_exact": "964/17173"
+            }
+          ]
+        },
+        {
+          "j": 2,
+          "lower_states": 28,
+          "upper_states": 35,
+          "hazard_range": [
+            3,
+            5
+          ],
+          "p_exact": "15/4",
+          "slide_gap": 0.15224093497742638,
+          "auxiliary_gap": 3.8638848395780405,
+          "comparison_C": 31681,
+          "compressed_comparison_min_eigenvalue": 8.453733872571123e-12,
+          "upper_energy_comparison_min_eigenvalue": 5.506318173776635e-14,
+          "parent_routes": 105,
+          "maximum_route_length": 8,
+          "maximum_reference_count": 11,
+          "maximum_route_load": 22,
+          "exact_killing_controls": []
+        },
+        {
+          "j": 3,
+          "lower_states": 35,
+          "upper_states": 15,
+          "hazard_range": [
+            0,
+            3
+          ],
+          "p_exact": "12/7",
+          "slide_gap": 0.19806226419516162,
+          "auxiliary_gap": 1.9942442386635988,
+          "comparison_C": 49681,
+          "compressed_comparison_min_eigenvalue": -9.935956643233498e-12,
+          "upper_energy_comparison_min_eigenvalue": 2.939105896420592e-15,
+          "parent_routes": 90,
+          "maximum_route_length": 8,
+          "maximum_reference_count": 5,
+          "maximum_route_load": 20,
+          "exact_killing_controls": []
+        },
+        {
+          "j": 4,
+          "lower_states": 15,
+          "upper_states": 1,
+          "hazard_range": [
+            0,
+            1
+          ],
+          "p_exact": "1/3",
+          "slide_gap": 0.26794919243112275,
+          "auxiliary_gap": 0.6965294248417193,
+          "comparison_C": 69121,
+          "compressed_comparison_min_eigenvalue": 1.4082906282062906e-11,
+          "upper_energy_comparison_min_eigenvalue": -2.9544753820325517e-15,
+          "parent_routes": 10,
+          "maximum_route_length": 8,
+          "maximum_reference_count": 1,
+          "maximum_route_load": 6,
+          "exact_killing_controls": []
+        }
+      ],
+      "counting": {
+        "injective_maps": [
+          {
+            "j": 0,
+            "domain": 5,
+            "codomain": 135
+          },
+          {
+            "j": 1,
+            "domain": 36,
+            "codomain": 420
+          },
+          {
+            "j": 2,
+            "domain": 84,
+            "codomain": 525
+          },
+          {
+            "j": 3,
+            "domain": 70,
+            "codomain": 225
+          },
+          {
+            "j": 4,
+            "domain": 15,
+            "codomain": 15
+          }
+        ],
+        "C_exact": "10387/2520",
+        "lower_exact": "3",
+        "upper_exact": "137/12"
+      }
+    }
+  ],
+  "symbolic_stage_composition": {
+    "cycle4": {
+      "rates": [
+        "4",
+        "1"
+      ],
+      "scaled_total_mean_exact": "5/4",
+      "scaled_total_mean_limit": "5/4",
+      "different_stage_tilt_parameters": [
+        "1/3",
+        "2/3"
+      ],
+      "joint_clock_and_final_geometry_exact": [
+        "18/65",
+        "18/65"
+      ],
+      "joint_limits": [
+        "18/65",
+        "18/65"
+      ],
+      "postbirth_geometry_event_gate": "even enumerator indices at each stage",
+      "gated_joint_transform_exact": "9/65",
+      "gated_joint_limit": "9/65"
+    },
+    "diamond": {
+      "rates": [
+        "5",
+        "4/5"
+      ],
+      "scaled_total_mean_exact": "(beta + 29)/20",
+      "scaled_total_mean_limit": "29/20",
+      "different_stage_tilt_parameters": [
+        "1/3",
+        "2/3"
+      ],
+      "joint_clock_and_final_geometry_exact": [
+        "9*(2*beta + 15)/(16*(5*beta + 33))",
+        "9*(2*beta + 15)/(16*(5*beta + 33))"
+      ],
+      "joint_limits": [
+        "45/176",
+        "45/176"
+      ],
+      "postbirth_geometry_event_gate": "even enumerator indices at each stage",
+      "gated_joint_transform_exact": "9*(beta + 9)/(16*(5*beta + 33))",
+      "gated_joint_limit": "27/176"
+    },
+    "path6": {
+      "rates": [
+        "5",
+        "12/5",
+        "1/2"
+      ],
+      "scaled_total_mean_exact": "(30*beta**3 + 228*beta**2 + 398*beta + 157)/(20*(3*beta**2 + 7*beta + 3))",
+      "scaled_total_mean_limit": "157/60",
+      "different_stage_tilt_parameters": [
+        "1/3",
+        "2/3",
+        "1"
+      ],
+      "joint_clock_and_final_geometry_exact": [
+        "9*(216*beta**5 + 1964*beta**4 + 5913*beta**3 + 7578*beta**2 + 4185*beta + 810)/(16*(2*beta + 3)*(beta**2 + 5*beta + 3)*(352*beta**2 + 624*beta + 207))"
+      ],
+      "joint_limits": [
+        "45/184"
+      ],
+      "postbirth_geometry_event_gate": "even enumerator indices at each stage",
+      "gated_joint_transform_exact": "9*(560*beta**5 + 4244*beta**4 + 10252*beta**3 + 11055*beta**2 + 5454*beta + 972)/(64*(2*beta + 3)*(beta**2 + 5*beta + 3)*(352*beta**2 + 624*beta + 207))",
+      "gated_joint_limit": "27/368"
+    }
+  },
+  "countercontrols": {
+    "disconnected_graph_lower_chain_components": [
+      1,
+      1
+    ],
+    "star_no_perfect_matching_no_terminal_birth": true,
+    "full_level_has_no_physical_slides": true
+  },
+  "exact_control_status": "Rational matrix identities, symbolic limits, marked path/injection checks exact; spectral/PSD checks numerical.",
+  "not_accessed": "New author checker and all new author outputs remain unopened.",
+  "checker": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/independent_check.py",
+    "bytes": 14908,
+    "sha256": "f0a2c5d9e3fabfe19e1bb9f9913973666bcacbf169ab8dee7b1e68dfb044e9d3"
+  },
+  "reused_independent_helper": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/independent_check.py",
+    "bytes": 17093,
+    "sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee"
+  }
+}

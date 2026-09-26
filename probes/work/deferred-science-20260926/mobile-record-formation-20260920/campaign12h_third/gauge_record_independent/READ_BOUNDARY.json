@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-22T15:31:30.440262+00:00",
+  "boundary": "Pre-author-source independent reconstruction. Only neutral supplied definitions and INPUT_WITNESS.json read; no new author gauge note, script, result, seal or campaign checkpoint accessed.",
+  "input": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/INPUT_WITNESS.json",
+    "bytes": 1613,
+    "sha256": "85ba81d38bf71f92045d833f549fb313ebc6d39a05bca17c0790fd069082adef"
+  },
+  "payload_source_identity": "The source_identity_sha256 field is supplied neutral provenance, not authentication of an opened author file.",
+  "allowed_prior_dependency": "Corrected occupation-monitoring theorem, already reviewed at SHA256 a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094; its fiber argument is reconstructed here for edge gauge degrees of freedom.",
+  "output_scope": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent",
+  "excluded": "Virtual multiple occupancy, author gauge work, publication and formal audit."
+}

@@ -1,0 +1,145 @@
+{
+  "classical_pairs": [
+    {
+      "j": "-9/10",
+      "mixture_distance": "9/100",
+      "universal_worst_row_TV_lower_bound": "9/200",
+      "approximation_ell": "-1/2",
+      "actual_worst_row_TV": "241/1800",
+      "optimality_proved": false,
+      "matches_target_individual_marginals": false,
+      "minimum_effect_eigenvalue": 0.0
+    },
+    {
+      "j": "-1/2",
+      "mixture_distance": "1/36",
+      "universal_worst_row_TV_lower_bound": "1/72",
+      "approximation_ell": "-1/2",
+      "actual_worst_row_TV": "1/72",
+      "optimality_proved": true,
+      "matches_target_individual_marginals": true,
+      "minimum_effect_eigenvalue": 0.0
+    },
+    {
+      "j": "-1/4",
+      "mixture_distance": "1/144",
+      "universal_worst_row_TV_lower_bound": "1/288",
+      "approximation_ell": "-1/4",
+      "actual_worst_row_TV": "1/288",
+      "optimality_proved": true,
+      "matches_target_individual_marginals": true,
+      "minimum_effect_eigenvalue": 0.013888888888888886
+    },
+    {
+      "j": "0",
+      "mixture_distance": "0",
+      "universal_worst_row_TV_lower_bound": "0",
+      "approximation_ell": "0",
+      "actual_worst_row_TV": "0",
+      "optimality_proved": true,
+      "matches_target_individual_marginals": true,
+      "minimum_effect_eigenvalue": 0.027777777777777776
+    },
+    {
+      "j": "1/4",
+      "mixture_distance": "1/144",
+      "universal_worst_row_TV_lower_bound": "1/288",
+      "approximation_ell": "1/4",
+      "actual_worst_row_TV": "1/288",
+      "optimality_proved": true,
+      "matches_target_individual_marginals": true,
+      "minimum_effect_eigenvalue": 0.013888888888888886
+    },
+    {
+      "j": "1/2",
+      "mixture_distance": "1/36",
+      "universal_worst_row_TV_lower_bound": "1/72",
+      "approximation_ell": "1/2",
+      "actual_worst_row_TV": "1/72",
+      "optimality_proved": true,
+      "matches_target_individual_marginals": true,
+      "minimum_effect_eigenvalue": 0.0
+    },
+    {
+      "j": "3/4",
+      "mixture_distance": "1/16",
+      "universal_worst_row_TV_lower_bound": "1/32",
+      "approximation_ell": "1/2",
+      "actual_worst_row_TV": "25/288",
+      "optimality_proved": false,
+      "matches_target_individual_marginals": false,
+      "minimum_effect_eigenvalue": 0.0
+    },
+    {
+      "j": "9/10",
+      "mixture_distance": "9/100",
+      "universal_worst_row_TV_lower_bound": "9/200",
+      "approximation_ell": "1/2",
+      "actual_worst_row_TV": "241/1800",
+      "optimality_proved": false,
+      "matches_target_individual_marginals": false,
+      "minimum_effect_eigenvalue": 0.0
+    }
+  ],
+  "quantum_only": {
+    "j": "1/2",
+    "newborn_marginal_shrinkage": "1/6",
+    "product_target_same_input_density_matrix_output_difference_eigenvalues": {
+      "-1/72": 1,
+      "0": 2,
+      "1/72": 1
+    },
+    "correlated_two_newborn_channel_has_correct_marginals": true
+  },
+  "encoded_instrument": {
+    "encoded_cases": [
+      {
+        "j": "-9/10",
+        "joint_dimension": 6,
+        "ancillary_dimension": 3,
+        "all_216_length_three_histories_checked_for_each_input": true
+      },
+      {
+        "j": "1/2",
+        "joint_dimension": 6,
+        "ancillary_dimension": 3,
+        "all_216_length_three_histories_checked_for_each_input": true
+      },
+      {
+        "j": "9/10",
+        "joint_dimension": 6,
+        "ancillary_dimension": 3,
+        "all_216_length_three_histories_checked_for_each_input": true
+      }
+    ],
+    "history_checks": 3888,
+    "maximum_single_branch_residual": 5.551115123125783e-17,
+    "maximum_relative_history_residual": 4.025100565352435e-15,
+    "one_event_supplied_copy_ancilla_dimension": 2,
+    "one_event_copy_checks": 36,
+    "optional_orthogonal_vacuum_direct_sum_dimension": 7
+  },
+  "information": {
+    "j": "1/2",
+    "cross_axis_single_mark_Bhattacharyya_affinity": 0.9772838841927122,
+    "illustrative_loose_pairwise_history_bounds": [
+      {
+        "resource": "one_qubit",
+        "initial_cross_axis_trace_distance": 0.7071067811865476,
+        "first_N_where_affinity_lower_bound_exceeds_it": 54
+      },
+      {
+        "resource": "parent_plus_supplied_copy",
+        "initial_cross_axis_trace_distance": 0.8660254037844386,
+        "first_N_where_affinity_lower_bound_exceeds_it": 88
+      }
+    ],
+    "encoded_joint_state_orthogonality_checked_separately": true
+  },
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "all_checks_passed": true
+}

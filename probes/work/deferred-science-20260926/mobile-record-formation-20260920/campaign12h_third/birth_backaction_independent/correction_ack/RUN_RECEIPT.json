@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-22T15:25:20.683895+00:00",
+  "completed_utc": "2026-09-22T15:25:20.720646+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/correction_ack/check_correction.py"
+  ],
+  "returncode": 0,
+  "script_sha256": "4f3767b8674790a3846ae0a11e442fbab0c64503051de5d0be34791eac331ac2",
+  "coverage": "Source authentication and exact-delta checks only; no theorem or generator rerun."
+}

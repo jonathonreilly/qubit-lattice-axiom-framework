@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:53:31.028177+00:00",
+  "author_head": "94b9deb79e80bac3c344b7844a9fa5781d3b4b82",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+      "bytes": 12497,
+      "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+      "bytes": 12648,
+      "sha256": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+      "bytes": 9124,
+      "sha256": "791875b79af460884cb30802f4a454eaabc4ec6514a82fbc0c09e56573f4fd71"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md",
+      "bytes": 7559,
+      "sha256": "e6cc8029beca2c290935ccac94147b3c679a7bfef8db521c972a055514624d63"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md",
+      "bytes": 8508,
+      "sha256": "f7fec2a31f61a020ff7b305617c98ca9b397bb408b3902472b24b40406233d4c"
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/html/quant-ph/0603175v3",
+      "read_scope": "Hypotheses I/II, Theorems 1-4 and Section III through integration-by-parts; Theorem 3 rank-one specialization applied with finite gap and C2 hypotheses checked."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2201.07171",
+      "read_scope": "Abstract, introduction and V.A through start of V.B; phase context only."
+    }
+  ],
+  "check_scope": "Exact integer residual/Gram spectral bounds plus Lipschitz coverage of the whole finite path; independent reconstruction pending. Evolution performance is numerical with two-tolerance controls, distinct from the loose adiabatic bound. Rounded basis hashes are stored; matrix witnesses can be reconstructed by rerunning the checker."
+}

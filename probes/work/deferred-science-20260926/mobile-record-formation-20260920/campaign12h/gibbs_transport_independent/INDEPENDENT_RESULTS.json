@@ -1,0 +1,291 @@
+{
+  "all_passed": true,
+  "arithmetic": "Exact Fractions and symbolic rational identities only; no Monte Carlo or floating-point comparison.",
+  "check_count": 14,
+  "checks": [
+    {
+      "detail": {
+        "pair_checks": 10800,
+        "proper": 24
+      },
+      "name": "all_48_cubic_actions_preserve_menu_pair_energy_and_axial_chirality",
+      "passed": true
+    },
+    {
+      "detail": {
+        "directed_transitions": 1164,
+        "states": 256
+      },
+      "name": "complete_256_state_conditional_plaquette_plus_Metropolis_generator_is_Gibbs_stationary",
+      "passed": true
+    },
+    {
+      "detail": {
+        "forward_reverse_flow_ratio": "9/7"
+      },
+      "name": "four_distinct_record_circulation_is_not_reversible",
+      "passed": true
+    },
+    {
+      "detail": {
+        "first_witness": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          "65025/128"
+        ],
+        "nonzero_residuals": 242
+      },
+      "name": "negative_control_wrong_energy_sign_breaks_stationarity",
+      "passed": true
+    },
+    {
+      "detail": {
+        "first_witness": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          "-1"
+        ],
+        "nonzero_residuals": 234
+      },
+      "name": "negative_control_non_orbit_invariant_amplitude_breaks_stationarity",
+      "passed": true
+    },
+    {
+      "detail": {
+        "orbit_lengths": [
+          1,
+          2,
+          4
+        ],
+        "weighted_currents": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "name": "contractible_orbit_and_complete_stationary_displacement_cancellation",
+      "passed": true
+    },
+    {
+      "detail": {
+        "H4": "25/12",
+        "grand_Gibbs_expected_vacancy_drift": "-6920160508/336058025137"
+      },
+      "name": "vacancy_Lyapunov_drift_and_sharp_constant_rate_harmonic_filling_bound",
+      "passed": true
+    },
+    {
+      "detail": {
+        "000": "0",
+        "001": "0",
+        "010": "-1",
+        "011": "-2/(z + 1)",
+        "100": "0",
+        "101": "(z - 1)/(z + 1)",
+        "110": "-2/(z + 1)",
+        "111": "-2/(z + 1)"
+      },
+      "name": "symbolically_derived_unique_16_word_coboundary_for_all_positive_z",
+      "passed": true
+    },
+    {
+      "detail": [
+        {
+          "N": 4,
+          "exact_current": "8676/44497",
+          "exp_mu": "4/9",
+          "z": "2"
+        },
+        {
+          "N": 5,
+          "exact_current": "7380/37981",
+          "exp_mu": "4/9",
+          "z": "2"
+        },
+        {
+          "N": 6,
+          "exact_current": "1820484/9374617",
+          "exp_mu": "4/9",
+          "z": "2"
+        },
+        {
+          "N": 4,
+          "exact_current": "2196/8257",
+          "exp_mu": "9/4",
+          "z": "1/3"
+        },
+        {
+          "N": 5,
+          "exact_current": "3060/11161",
+          "exp_mu": "9/4",
+          "z": "1/3"
+        },
+        {
+          "N": 6,
+          "exact_current": "202644/745057",
+          "exp_mu": "9/4",
+          "z": "1/3"
+        },
+        {
+          "N": 4,
+          "exact_current": "1/4",
+          "exp_mu": "1",
+          "z": "1"
+        },
+        {
+          "N": 5,
+          "exact_current": "1/4",
+          "exp_mu": "1",
+          "z": "1"
+        },
+        {
+          "N": 6,
+          "exact_current": "1/4",
+          "exp_mu": "1",
+          "z": "1"
+        }
+      ],
+      "name": "nine_complete_binary_ring_generators_stationarity_and_finite_transfer_current",
+      "passed": true
+    },
+    {
+      "detail": [
+        {
+          "infinite_current": "4/15",
+          "rho": "1/2",
+          "second_eigenvalue_ratio": "-1/3",
+          "z": "1/4"
+        },
+        {
+          "infinite_current": "1/4",
+          "rho": "1/2",
+          "second_eigenvalue_ratio": "0",
+          "z": "1"
+        },
+        {
+          "infinite_current": "2/15",
+          "rho": "1/2",
+          "second_eigenvalue_ratio": "1/3",
+          "z": "4"
+        }
+      ],
+      "name": "exact_thermodynamic_PF_current_and_correlations_including_repulsion",
+      "passed": true
+    },
+    {
+      "detail": {
+        "canonical_one_particle_current_per_bond": "1/5",
+        "cycle_length": 5,
+        "physical_displacement": 5,
+        "wrapped_coordinate_telescoping_sum": 0
+      },
+      "name": "local_KLS_rates_have_a_winding_configuration_cycle_with_nonzero_displacement",
+      "passed": true
+    },
+    {
+      "detail": {
+        "coarse_exp_mu": "3/8",
+        "same_class_swap_rate": "1/7",
+        "states": 256
+      },
+      "name": "complete_256_state_fine_label_generator_and_coarse_chemical_potential_lift",
+      "passed": true
+    },
+    {
+      "detail": {
+        "class_weights_A_B": [
+          "12",
+          "29"
+        ],
+        "raw_feature_covariance": [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "scalar_covariance_at_distance_one": "762801276816/17830021398721",
+        "vacancy_class": "B"
+      },
+      "name": "explicit_15_label_grand_Gibbs_lift_has_zero_vector_but_nonzero_class_covariance",
+      "passed": true
+    },
+    {
+      "detail": {
+        "canonical_two_plus_two_minus_covariance": "-1/3"
+      },
+      "name": "negative_control_grand_vector_covariance_statement_cannot_be_imported_into_fixed_fine_counts",
+      "passed": true
+    }
+  ],
+  "scope": "Independent finite controls supplement the written general proofs. No author checker/results read or imported.",
+  "source_sha256": "1e40a0be9cad55574791f131614a4999b3c082425d2ffbaad7aaea2f7409e2b7"
+}

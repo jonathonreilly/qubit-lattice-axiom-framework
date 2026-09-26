@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-21T18:25:21.025470+00:00",
+  "old_sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479",
+  "new_sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+  "change": "Qualify propagating mode count by nonzero coupling and state zero-coupling degeneration. The fixed-mode theorem already included the identity propagator at zero coupling. No checker changed; existing checks use gamma=1.",
+  "independent_ack": "pending"
+}

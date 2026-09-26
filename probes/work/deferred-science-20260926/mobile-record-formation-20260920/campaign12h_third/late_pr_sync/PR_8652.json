@@ -1,0 +1,88 @@
+{
+  "body": "## Block 84 \u2014 bond rates alternate on their own below a threshold stiffness (source-link direction, block 32; third after the rest-energy panel)\n\nHand-off PR against `main` (independent of the open stack; blocks 54, 59, 76, 78, 82, 83 restated or placed, not required). Nothing is adopted; no gravitational claim; no parked decision is touched.\n\n**Question.** Block 83's corrigendum (#8632) placed the bond-amplitude coupling in block 59 (#8581): every bond's hop is timed by its own crossing rate, and each rate is sourced by the hop energy it times. Do those bond rates alternate spontaneously under the sea, at what stiffness of block 59's bond law, and what rest energy follows?\n\n**Exact.**\n- **T1 \u2014 the sea's energy in closed form.** With independent alternations `\u03b4_j` along the three axes, `H\u00b2 = \u03b2\u00b2\u03a3_j(sin\u00b2k_j + \u03b4_j\u00b2cos\u00b2k_j)` on the whole 16-dimensional block of the species: the sea's energy per site is exactly `\u2212\u03b2\u27e8\u221a(\u03a3 sin\u00b2k_j + \u03a3 \u03b4_j\u00b2cos\u00b2k_j)\u27e9`, even and concave in each `\u03b4_j`, and `\u2212\u221a3\u03b2` at `\u03b4 = 1` (the lattice fallen into disconnected `2\u00d72\u00d72` cubes).\n- **T2 \u2014 what block 59's law charges.** At the alternation wave vector `\u03c0e_j` the law's `3\u00d73` matrix has the own-axis alternation as an eigenvector with restoring coefficient `4\u03b1 + 8\u03b2`: cost `2(\u03b1 + 2\u03b2)\u03b4_j\u00b2` per bond, decoupled from the other axes and independent of the parallel coupling `\u03b3`, while the long-range stiffness is `\u03b1 + 2\u03b2 + 2\u03b3`.\n- **T3 \u2014 the threshold.** The second-order balance per site is `(6\u03ba \u2212 \u03c7/2)\u03b4\u00b2`, `\u03ba = \u03b1 + 2\u03b2`, `\u03c7 = \u27e8\u03a3cos\u00b2k/\u221a(\u03a3sin\u00b2k)\u27e9`: the uniform bond-rate field is a local minimum iff `\u03ba \u2265 \u03c7/12`, and alternates below it (per axis `\u03c7/3`; axes independent at this order).\n- **T4.** With the axioms' scalar hop timed by the same bond rates, the corner energies cross zero exactly at `\u03b4 = 2a/\u03b2`.\n- **T5.** On a ring, a wall between the two alternation phases binds exactly two zero modes (four on the ring of 12 with two walls, none without).\n\n**Executed.** `\u03c7 = 1.538` (midpoint grids to `128\u00b3`, settled to four places): `\u03ba_c = 0.128`. Full balance: `\u03b4* = 0.10, 0.18, 0.33, 0.48` at `\u03ba = 0.125, 0.12, 0.11, 0.10`; runaway to `\u03b4* = 1` below `\u03ba = 0.0897`. With the scalar hop the least `|E|` is zero up to `\u03b4 = 2a` and opens above it.\n\n**What it means.** Under the sea reading, a rest energy for all eight species \u2014 `\u221a3\u03b2|\u03b4*|` \u2014 is *derived* from a balance the lane already carries (block 59's bond rates against their own law), with one condition on block 59's supplied numbers: `\u03b1 + 2\u03b2 < \u03c7/12`. What is supplied: the sea (a comparator, block 78), the law's three numbers, and reading the static balance as a minimisation. What is not fixed: the size of the rest energy \u2014 it is of the order of the hop unless `\u03ba` sits just below the threshold. Next: the same balance for the hard-core crowd; the 3D wall sheets; whether anything constrains `\u03b1 + 2\u03b2`.\n\n**Evidence.** Runner `scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py`: `TOTAL: PASS=17 FAIL=0`; 7 mutations, each failing in its own family only. Two pipeline passes (`rows=4880`, `graph_delta=acknowledged`); lints clean. Author checks only; no independent review has taken place.\n\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/APPROACH_REGISTRY.md",
+      "additions": 2,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CHECKER_block84_findings.md",
+      "additions": 8,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/CLAIM_STATUS_CERTIFICATE_block84.md",
+      "additions": 8,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/GOAL_block84.md",
+      "additions": 9,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/HANDOFF.md",
+      "additions": 3,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/OPPORTUNITY_QUEUE.md",
+      "additions": 3,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/RESULTS_block84.md",
+      "additions": 8,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/REVIEW_HISTORY.md",
+      "additions": 3,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/STATE.yaml",
+      "additions": 2,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/admissibility-induced-law-20260906/TRACE_GATE.md",
+      "additions": 11,
+      "deletions": 0
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_BOND_RATES_ALTERNATE_ON_THEIR_OWN_BELOW_A_THRESHOLD_STIFFNESS_THE_SEA_AGAINST_BLOCK_59S_BOND_LAW_GIVES_EVERY_SPECIES_ONE_REST_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+      "additions": 186,
+      "deletions": 0
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "additions": 5,
+      "deletions": 1
+    },
+    {
+      "path": "logs/runner-cache/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.txt",
+      "additions": 39,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/admissibility_rule_bond_rates_alternate_on_their_own_below_a_threshold_stiffness_sea_against_bond_law_one_rest_energy_2026_09_22.py",
+      "additions": 434,
+      "deletions": 0
+    },
+    {
+      "path": "specs/supervisor_control_block84_bond_rate_alternation.out.txt",
+      "additions": 26,
+      "deletions": 0
+    },
+    {
+      "path": "specs/supervisor_control_block84_bond_rate_alternation.py",
+      "additions": 100,
+      "deletions": 0
+    }
+  ],
+  "headRefOid": "8204d45d90b5ad366f2e2eaecb1f9143687f7296",
+  "number": 8652,
+  "title": "physics-loop: admissibility induced-law block 84 - bond rates alternate on their own below a threshold stiffness: the sea against block 59's bond law gives every species one rest energy"
+}

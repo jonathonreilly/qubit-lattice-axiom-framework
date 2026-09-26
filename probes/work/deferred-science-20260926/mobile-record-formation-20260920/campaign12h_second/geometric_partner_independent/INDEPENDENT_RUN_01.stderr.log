@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py", line 278, in <module>
+    result=run();args.out.write_text(json.dumps(result,indent=2)+'\n')
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py", line 272, in run
+    def run():return {'birth_and_projectors':birth_and_projector_controls(),'marked_moves':marked_controls(),
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py", line 255, in birth_and_projector_controls
+    assert P*P==P and s.trace(P)==1 and P.conjugate().T==P and P*(s.eye(2)-P)==s.zeros(2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

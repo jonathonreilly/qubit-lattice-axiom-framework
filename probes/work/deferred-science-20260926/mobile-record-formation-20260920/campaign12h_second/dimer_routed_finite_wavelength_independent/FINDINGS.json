@@ -1,0 +1,28 @@
+[
+  {
+    "id": "F1",
+    "type": "minor display correction",
+    "status": "open at final review seal",
+    "source": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/compare_dimer_routed_finite_wavelength.py",
+      "bytes": 6061,
+      "sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5"
+    },
+    "line": 72,
+    "description": "Fixed upper y-limit clips the top of one displayed one-standard-error bar.",
+    "cell": {
+      "N": 64,
+      "kind": "winding",
+      "axis": 0,
+      "time": 1.3125,
+      "metric": "propagation_residual",
+      "mean": 2.196496360849972,
+      "standard_error": 0.11232465801764097,
+      "upper_endpoint": 2.308821018867613,
+      "display_limit": 2.3
+    },
+    "narrow_correction": "Raise only the error-panel upper limit above 2.308821018867613, for example to 2.4. Retain all numerical estimates, comparisons and scope labels.",
+    "scientific_values_affected": false,
+    "parent_response": "Parent acknowledged and will preserve old sources/plots before a separate narrow correction acknowledgment."
+  }
+]

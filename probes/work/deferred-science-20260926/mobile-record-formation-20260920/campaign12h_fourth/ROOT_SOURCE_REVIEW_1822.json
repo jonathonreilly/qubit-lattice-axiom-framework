@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-23T18:19:54.529462+00:00",
+  "reviewer": "root",
+  "unit1_final": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_independent/FINAL_SEAL.json",
+    "bytes": 20293,
+    "sha256": "6beaa587833b2d626154ffdd8fd2729ad844f164ee4be6b0c607b3f9b4402851"
+  },
+  "unit2_pre": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/second_event_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 21378,
+    "sha256": "e710cf956b2cff69afc8241757901c040a4c2f6b23516f09968cb372975bd734"
+  },
+  "hash_verification": {
+    "unit1_sources": 18,
+    "unit1_artifacts": 38,
+    "unit2_sources": 7,
+    "unit2_artifacts": 49,
+    "mismatches": 0
+  },
+  "coverage": "Unit1 complete report/comparison and scientific controls were read before compaction; current final hashes reauthenticated. Unit2 complete report, operators.py, ring_exact_repaired.py and ring_survival_repaired.py now read. Remaining Unit2 cube/control scripts still to read before publication."
+}

@@ -1,0 +1,42 @@
+{
+  "graph": "cycle4",
+  "vertices": 4,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "weights_raw": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "epsilon": 0.1,
+  "rho0": 0.25,
+  "theta_vector": 0.0,
+  "normalization": "ratio of expectations E[M]/E[N], linearized at zero uniform bias; not E[M/N]",
+  "initial_density_slope": 0.4499999999999996,
+  "initial_absolute_response_slope": -2.877653266138609e-17,
+  "initial_per_record_gain_slope": -1.7999999999999985,
+  "generator_states": 2401,
+  "generator_nonzeros": 12985,
+  "elapsed_sec": 0.09435837506316602
+}
+{"tau": 0.0, "density": 0.2500000000000019, "absolute_orientation_response": 0.9999999999999986, "per_record_response_gain": 0.999999999999991, "S0_per_record": 0.9999999999999883, "Smin_per_record": 0.9999999999999923, "bond_alignment_given_pair": -5.5511151231256977e-17, "iid_closure_response_gain": 0.9999999999999925}
+{"tau": 1.0, "density": 0.7240904191214161, "absolute_orientation_response": 1.0000000000000002, "per_record_response_gain": 0.34526074837910514, "S0_per_record": 1.000000000000009, "Smin_per_record": 1.0000000000000053, "bond_alignment_given_pair": 1.6543014787387204e-18, "iid_closure_response_gain": 0.3452607483791051}
+{"tau": 2.0, "density": 0.8984985375725403, "absolute_orientation_response": 0.9999999999999958, "per_record_response_gain": 0.2782419665093948, "S0_per_record": 0.9999999999999921, "Smin_per_record": 0.9999999999999952, "bond_alignment_given_pair": 1.0743987911428983e-18, "iid_closure_response_gain": 0.278241966509396}
+{"tau": 3.0, "density": 0.9626596987241014, "absolute_orientation_response": 1.0000000000000018, "per_record_response_gain": 0.25969717059034225, "S0_per_record": 1.000000000000007, "Smin_per_record": 1.0000000000000042, "bond_alignment_given_pair": 3.9778060949801394e-18, "iid_closure_response_gain": 0.2596971705903418}
+{"tau": 4.0, "density": 0.9862632708334522, "absolute_orientation_response": 0.9999999999999931, "per_record_response_gain": 0.25348201377177226, "S0_per_record": 0.9999999999999989, "Smin_per_record": 1.0000000000000004, "bond_alignment_given_pair": 2.1177668903424404e-18, "iid_closure_response_gain": 0.253482013771774}

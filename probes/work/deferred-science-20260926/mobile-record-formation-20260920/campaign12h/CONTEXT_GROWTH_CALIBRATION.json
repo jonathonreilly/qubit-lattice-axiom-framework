@@ -1,0 +1,237 @@
+{
+  "plan_sha256": "70ceb0b96c34a59adc5c9e92ff25475baf3f88b3304e3260c00c44393a1a25de",
+  "gate": "maximum estimated standardized real/imaginary correlation discrepancy <5.5; stochastic sanity check, not rigorous confidence certification",
+  "cases": [
+    [
+      "isotropic",
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      2026092160
+    ],
+    [
+      "biased",
+      [
+        0.19230769230769232,
+        0.038461538461538464,
+        0.07692307692307693,
+        0.11538461538461539,
+        0.15384615384615385,
+        0.19230769230769232,
+        0.23076923076923078
+      ],
+      2026092161
+    ]
+  ],
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "calibrator_sha256": "dea88a4cf20771ce669c004e23264710199b9ac56fffb11b7bae1eff40ad1db1",
+  "results": [
+    {
+      "case": "isotropic",
+      "passed": true,
+      "max_estimated_SE": 2.423842569283538,
+      "exact_product_evolution_residual": 1.734723475976807e-17,
+      "final_vacancy_count_frequencies": [
+        0.834716796875,
+        0.1536865234375,
+        0.011474609375,
+        0.0001220703125,
+        0.0
+      ],
+      "exact_final_vacancy_binomial": [
+        0.830539654136547,
+        0.15784961196020714,
+        0.011250140137149103,
+        0.00035636072006562644,
+        4.233046030678369e-06
+      ],
+      "vacancy_count_max_standardized_residual": 1.1235229867676513,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.5,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092160,
+        "u": -1.0,
+        "E": 1.0,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.08,
+        "rate_ceiling": 3.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.24571329192258418,
+        "max_fourier_reconstruction_error": 1.0235750533041806e-15,
+        "total_proposals": 578589,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    },
+    {
+      "case": "biased",
+      "passed": true,
+      "max_estimated_SE": 2.590406922806859,
+      "exact_product_evolution_residual": 4.336808689942018e-18,
+      "final_vacancy_count_frequencies": [
+        0.9351806640625,
+        0.06298828125,
+        0.0018310546875,
+        0.0,
+        0.0
+      ],
+      "exact_final_vacancy_binomial": [
+        0.9320219401575306,
+        0.06619413221578042,
+        0.0017629667356836715,
+        2.0868259312676594e-05,
+        9.263169248884777e-08
+      ],
+      "vacancy_count_max_standardized_residual": 1.1670790008378888,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.19230769230769232,
+          0.038461538461538464,
+          0.07692307692307693,
+          0.11538461538461539,
+          0.15384615384615385,
+          0.19230769230769232,
+          0.23076923076923078
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092161,
+        "u": -1.0,
+        "E": 1.0,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.08,
+        "rate_ceiling": 3.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.019224083982408047,
+        "max_fourier_reconstruction_error": 1.2560739669470201e-15,
+        "total_proposals": 578903,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    }
+  ],
+  "all_predeclared_gates_passed": true
+}

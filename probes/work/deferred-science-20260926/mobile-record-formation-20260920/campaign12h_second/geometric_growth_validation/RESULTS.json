@@ -1,0 +1,371 @@
+{
+  "scope": "root catalog cross-check with a separate representation, not independent review of stochastic kinetics",
+  "fixtures": 24,
+  "accepted_channels": 5069,
+  "rows": [
+    {
+      "N": 4,
+      "name": "empty",
+      "pairs": 0,
+      "birth_channels": 192,
+      "slide_channels": 0,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_empty.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_empty.catalog.txt"
+      ],
+      "state_sha256": "3b6715f34f2ff81364389fc87b1d5bb97f072e48eb98c52e5a1c13c1bdf36c67"
+    },
+    {
+      "N": 4,
+      "name": "wrapped_pair_0",
+      "pairs": 1,
+      "birth_channels": 181,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_0.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_0.catalog.txt"
+      ],
+      "state_sha256": "ce545bbf7ea72510867f3ad0f09ea08948d9737da92118f349e204cc2cd6b6fb"
+    },
+    {
+      "N": 4,
+      "name": "wrapped_pair_1",
+      "pairs": 1,
+      "birth_channels": 181,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_1.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_1.catalog.txt"
+      ],
+      "state_sha256": "037a3e5f5a11ac51933c10ee5dc7a4f2601b71b699e11c2e0b59de26ad5a9fda"
+    },
+    {
+      "N": 4,
+      "name": "wrapped_pair_2",
+      "pairs": 1,
+      "birth_channels": 181,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_2.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_wrapped_pair_2.catalog.txt"
+      ],
+      "state_sha256": "6eeda3f1a38adb5fc2f08f7ac6b6ba1f56f92d293125a561ad35a9b60f5f6022"
+    },
+    {
+      "N": 4,
+      "name": "full_columnar",
+      "pairs": 32,
+      "birth_channels": 0,
+      "slide_channels": 0,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_full_columnar.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_full_columnar.catalog.txt"
+      ],
+      "state_sha256": "554ab65fd4c63560e61845d854b6afe30e62595ad3e2bfe6989d19dfc87b75c4"
+    },
+    {
+      "N": 4,
+      "name": "old_direction_tag_jam",
+      "pairs": 24,
+      "birth_channels": 0,
+      "slide_channels": 96,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_old_direction_tag_jam.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_old_direction_tag_jam.catalog.txt"
+      ],
+      "state_sha256": "709d3e4861b8ebe9a7a550e12e9c6ab0e650f5d4c1270d1378ff11457c20418d"
+    },
+    {
+      "N": 4,
+      "name": "random_0",
+      "pairs": 28,
+      "birth_channels": 1,
+      "slide_channels": 46,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_0.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_0.catalog.txt"
+      ],
+      "state_sha256": "87a026a8452100b74fa952cc73de6bd509ab7cf4e9513d09657b0ccc5fcc803f"
+    },
+    {
+      "N": 4,
+      "name": "random_1",
+      "pairs": 29,
+      "birth_channels": 0,
+      "slide_channels": 36,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_1.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_1.catalog.txt"
+      ],
+      "state_sha256": "c2118f64e1c789c82f268fdcab5826442a12aee397d8d612ccc84f3f7b37cbe4"
+    },
+    {
+      "N": 4,
+      "name": "random_2",
+      "pairs": 28,
+      "birth_channels": 3,
+      "slide_channels": 42,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_2.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_2.catalog.txt"
+      ],
+      "state_sha256": "7470f05a9c99e9e20294759fa2ed5d3405eb4715e3bbbbcc9d4aae1127d4779c"
+    },
+    {
+      "N": 4,
+      "name": "random_3",
+      "pairs": 28,
+      "birth_channels": 1,
+      "slide_channels": 46,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_3.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_3.catalog.txt"
+      ],
+      "state_sha256": "16eefa405742fc45963f55e7182a4890eb9499af369dab791b2d9627bf5af0b0"
+    },
+    {
+      "N": 4,
+      "name": "random_4",
+      "pairs": 29,
+      "birth_channels": 0,
+      "slide_channels": 36,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_4.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_4.catalog.txt"
+      ],
+      "state_sha256": "6ab5d67601609c8cf082ead7ed5328d69876e3d1446b249ed1c05b2741d0e6cc"
+    },
+    {
+      "N": 4,
+      "name": "random_5",
+      "pairs": 27,
+      "birth_channels": 3,
+      "slide_channels": 54,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "4",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_5.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N4_random_5.catalog.txt"
+      ],
+      "state_sha256": "c602e8f472a133dac748bb6088e1e5017f655be1fb33cdae49fae0300a3506ff"
+    },
+    {
+      "N": 6,
+      "name": "empty",
+      "pairs": 0,
+      "birth_channels": 648,
+      "slide_channels": 0,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_empty.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_empty.catalog.txt"
+      ],
+      "state_sha256": "7daf6cfbf85255c4b8808d6ba092386a6c2261f6c905e6dd18f5d06ce94e9ebf"
+    },
+    {
+      "N": 6,
+      "name": "wrapped_pair_0",
+      "pairs": 1,
+      "birth_channels": 637,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_0.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_0.catalog.txt"
+      ],
+      "state_sha256": "b35cc2d70592049c9e7ec13595f2f5ffde3ed4fccabef1558fee28a9ae85a865"
+    },
+    {
+      "N": 6,
+      "name": "wrapped_pair_1",
+      "pairs": 1,
+      "birth_channels": 637,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_1.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_1.catalog.txt"
+      ],
+      "state_sha256": "cb4f5e80d5a84d56b2efc3b0457ca9195b762f89fc56b0e0690368a6e1cc8ba4"
+    },
+    {
+      "N": 6,
+      "name": "wrapped_pair_2",
+      "pairs": 1,
+      "birth_channels": 637,
+      "slide_channels": 10,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_2.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_wrapped_pair_2.catalog.txt"
+      ],
+      "state_sha256": "f6b3217b5642d69e9265a08486f5c8ad8d413d371dc79bfaa9a75f6d7efaa841"
+    },
+    {
+      "N": 6,
+      "name": "full_columnar",
+      "pairs": 108,
+      "birth_channels": 0,
+      "slide_channels": 0,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_full_columnar.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_full_columnar.catalog.txt"
+      ],
+      "state_sha256": "ae570383de0a2b11b9607350fb68e5506022af4ada3308cdd67320667ff2598a"
+    },
+    {
+      "N": 6,
+      "name": "old_direction_tag_jam",
+      "pairs": 81,
+      "birth_channels": 0,
+      "slide_channels": 324,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_old_direction_tag_jam.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_old_direction_tag_jam.catalog.txt"
+      ],
+      "state_sha256": "d83d847274b4e6a43ac71601726fb40c809fddaa5cdfed347527a8910f01bfec"
+    },
+    {
+      "N": 6,
+      "name": "random_0",
+      "pairs": 93,
+      "birth_channels": 9,
+      "slide_channels": 162,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_0.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_0.catalog.txt"
+      ],
+      "state_sha256": "bc5e79b7671a391f37c8032bbbbb4469d0e2a672710c4d038f991534dd0fbb98"
+    },
+    {
+      "N": 6,
+      "name": "random_1",
+      "pairs": 94,
+      "birth_channels": 8,
+      "slide_channels": 152,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_1.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_1.catalog.txt"
+      ],
+      "state_sha256": "1e54c4bd087a2fcedded9e7f5b1087e15b55088df0d4e0ca828891f92321b50e"
+    },
+    {
+      "N": 6,
+      "name": "random_2",
+      "pairs": 93,
+      "birth_channels": 10,
+      "slide_channels": 160,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_2.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_2.catalog.txt"
+      ],
+      "state_sha256": "39f8c28215ab36c48fe37b048742bf0e802d0d5d80ed4dc23fa5ee4f8998d2d8"
+    },
+    {
+      "N": 6,
+      "name": "random_3",
+      "pairs": 91,
+      "birth_channels": 8,
+      "slide_channels": 188,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_3.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_3.catalog.txt"
+      ],
+      "state_sha256": "19365acf92740aed30aaf721f48a8cbad7605a5c35c0e09284f2c8c7b1dab993"
+    },
+    {
+      "N": 6,
+      "name": "random_4",
+      "pairs": 93,
+      "birth_channels": 10,
+      "slide_channels": 160,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_4.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_4.catalog.txt"
+      ],
+      "state_sha256": "4d22d93a2cf206138ec9ec4c0b45882241fd9d5ea4d9fc2a590bd311ce45c250"
+    },
+    {
+      "N": 6,
+      "name": "random_5",
+      "pairs": 94,
+      "birth_channels": 8,
+      "slide_channels": 152,
+      "command": [
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+        "--catalog",
+        "6",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_5.state.txt",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_validation/N6_random_5.catalog.txt"
+      ],
+      "state_sha256": "3ff478785162f06c52467a4bfa24a21f6e4a34bbd24cbe66b36207942355ee06"
+    }
+  ],
+  "source_sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+  "binary_sha256": "ffc3e77cf1793b5acb6fdb792563ee13db11ed73a698b2652dbff79300b4f10d",
+  "oracle_sha256": "9f4e0c144e44d847d3b5b898a5bb93849989e1465f3416393cf08e4b1e50a16b",
+  "all_pass": true
+}

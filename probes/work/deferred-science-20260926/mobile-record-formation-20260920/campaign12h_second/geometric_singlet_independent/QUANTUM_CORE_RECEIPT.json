@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:14:32.755665+00:00",
+  "end_utc": "2026-09-21T21:14:53.847132+00:00",
+  "returncode": 0,
+  "script_sha256": "ac5493b8c1bfbd837a17cb28adfff523fba9b33d171f5aa18cf8eb9e6266d5b9",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/quantum_core_check.py"
+  ]
+}

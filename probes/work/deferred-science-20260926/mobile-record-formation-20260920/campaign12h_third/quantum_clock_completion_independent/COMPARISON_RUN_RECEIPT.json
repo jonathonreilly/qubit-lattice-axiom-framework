@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-09-22T18:13:58.803281+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-u",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/comparison_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent",
+  "script_sha256": "75eb7ae59902531b4e3e0ee33884baa78f10247f23354ddde608c0eb214b3740",
+  "finished_utc": "2026-09-22T18:14:00.403790+00:00",
+  "returncode": 0,
+  "COMPARISON_RUN.log": {
+    "bytes": 4527,
+    "sha256": "375a835144a9f69a61dd6cd727bfaa7fc313d2f71f8872740ce7c3c986526db9"
+  },
+  "COMPARISON_RUN.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "COMPARISON_RESULTS.json": {
+    "bytes": 4527,
+    "sha256": "375a835144a9f69a61dd6cd727bfaa7fc313d2f71f8872740ce7c3c986526db9"
+  }
+}

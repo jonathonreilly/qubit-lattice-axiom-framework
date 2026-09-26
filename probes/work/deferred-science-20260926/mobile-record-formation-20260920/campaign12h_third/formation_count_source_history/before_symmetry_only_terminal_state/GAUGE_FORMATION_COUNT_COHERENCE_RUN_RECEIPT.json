@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_formation_count_coherence_check.py"
+  ],
+  "started_utc": "2026-09-22T16:31:33.737839+00:00",
+  "completed_utc": "2026-09-22T16:31:36.861566+00:00",
+  "returncode": 0,
+  "script_sha256": "ac273d63fc08e6ba0b900c31b69a3d3a41ec1759965a0fc3f3c4431f3defaf87"
+}

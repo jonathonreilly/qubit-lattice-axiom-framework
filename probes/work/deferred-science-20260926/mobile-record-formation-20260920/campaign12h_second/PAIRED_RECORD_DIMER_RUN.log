@@ -1,0 +1,13 @@
+{"name": "conditional_birth_all_realizable_neighbor_patterns_and_cubic_covariance", "pass": true, "pattern_rotation_pairs": 1536, "patterns": 64, "rotations": 24, "zero_hazard_patterns": 1}
+{"first_ids": [0, 1], "name": "actual_record_transport_and_repeated_formation", "new_ids": [2, 3], "original_sites_reused": [[2, 2, 2], [3, 2, 2]], "pass": true}
+{"cases": 36, "name": "all_orientations_rigid_translation_and_inverse", "pass": true}
+{"direction_counts_preserved": true, "name": "dense_cube_moves_eight_immutable_records_and_returns", "occupied_sites": 8, "pass": true, "records": 8}
+{"cube_cases": 24, "name": "birth_translation_and_cube_event_rotation_covariance", "pass": true, "translation_cases": 864}
+{"name": "exact_staggered_gauss_identity", "pass": true, "side": 8, "states": 6}
+{"mutant_div6": 0, "name": "missing_staggering_mutation_is_detected", "pass": true, "required_div6": -6}
+{"delta": ["Y*Z + Y - Z - 1", "-X*Z - X + Z + 1", "0"], "divergence": "0", "name": "exact_cube_fourier_polynomial_and_gauss_symbol", "pass": true}
+{"mutant_increment": [0, 0, 0], "name": "identity_cube_mutation_is_detected", "pass": true}
+{"by_dimer_count": {"0": 1, "1": 12, "2": 42, "3": 44, "4": 9}, "max_conservative_exit_rate": 4, "name": "reflecting_cube_matching_census_and_detailed_balance", "pass": true, "states": 108}
+{"closed_component_sizes": {"1": 11, "2": 3}, "closed_components": 14, "name": "reflecting_cube_exact_absorption_keeps_unfilled_states", "pass": true, "transient_states": 91, "unfilled_absorption_probability": "4/21"}
+{"name": "reflecting_cube_exact_vacancy_generator_identity", "pass": true, "states": 108}
+{"all_pass": true, "groups": 12, "sources_sha256": {"PAIRED_RECORD_FORMATION_AND_DIMER_GAUSS.md": "ed48192900501781ead6d60f17aedc1e9470746e65f449c5d75eccb6a66188ca", "paired_record_dimer_check.py": "65ad8acc7384f25196132b23876f4510347832c4a7f4db548d9c9aead71d2288"}}

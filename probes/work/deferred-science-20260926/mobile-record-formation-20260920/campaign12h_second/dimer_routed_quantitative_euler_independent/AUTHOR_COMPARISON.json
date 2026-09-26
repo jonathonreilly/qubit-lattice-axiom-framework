@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-09-21T20:34:12.702334+00:00",
+  "status": "pass",
+  "preseal_authentication": {
+    "artifacts": 7,
+    "source_bindings": 13
+  },
+  "exact_shared_open_cube_rows": 3,
+  "exact_shared_columnar_endpoint_inventory": true,
+  "author_fixture_scope": [
+    {
+      "N": 16,
+      "radius": 2,
+      "kind": "winding",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 16,
+      "radius": 2,
+      "kind": "columnar",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 16,
+      "radius": 2,
+      "kind": "irregular",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 20,
+      "radius": 3,
+      "kind": "winding",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 20,
+      "radius": 3,
+      "kind": "columnar",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 20,
+      "radius": 3,
+      "kind": "irregular",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    },
+    {
+      "N": 32,
+      "radius": 6,
+      "kind": "irregular",
+      "theorem_global_radius_range": false,
+      "interpretation": "Finite geometric/counting control; no finite test is the all-N proof."
+    }
+  ],
+  "independent_full_array_coefficient_comparisons": [
+    {
+      "N": 16,
+      "radius": 2,
+      "maximum_integer_convolution": 113,
+      "block_cardinality": 63,
+      "maximum_phase_comparison_error": 2.224917125611188e-16
+    },
+    {
+      "N": 20,
+      "radius": 3,
+      "maximum_integer_convolution": 210,
+      "block_cardinality": 171,
+      "maximum_phase_comparison_error": 1.1102230246251565e-16
+    },
+    {
+      "N": 32,
+      "radius": 6,
+      "maximum_integer_convolution": 546,
+      "block_cardinality": 1099,
+      "maximum_phase_comparison_error": 3.3530913207275715e-16
+    }
+  ],
+  "preserved_author_helper_failure": {
+    "before": "832f89f37b79430b1ea09a90470b182498d2ad772c4a8b13ee59c34a98fadc92",
+    "after": "f3f7ffd137678cb282a0ae289e7a4c3fbd99a2e5bacdf59032eb36db9a4e2449",
+    "exact_forward_and_inverse_recovery": true,
+    "only_replacements": [
+      [
+        "index[tuple(x%N for x in a)]",
+        "index(tuple(x%N for x in a))"
+      ],
+      [
+        "index[tuple(map(int,a))]",
+        "index(tuple(map(int,a)))"
+      ]
+    ]
+  },
+  "author_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md",
+      "bytes": 11118,
+      "sha256": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_check.py",
+      "bytes": 7480,
+      "sha256": "f3f7ffd137678cb282a0ae289e7a4c3fbd99a2e5bacdf59032eb36db9a4e2449"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py",
+      "bytes": 18007,
+      "sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_checks/RESULTS.json",
+      "bytes": 8125,
+      "sha256": "5fc91245c51a0db06efc3e728dd6e5bae9d2a6762327214d2cc0d4f3fb16b862"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_QUANTITATIVE_EULER_RUN.log",
+      "bytes": 2854,
+      "sha256": "4cc0ee9de5298e30b1901582876786248a557e541d4e111decad8a4d07fc91a5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_QUANTITATIVE_EULER_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/quantitative_euler_index_api/DIMER_ROUTED_QUANTITATIVE_EULER_RUN.log",
+      "bytes": 21,
+      "sha256": "99d054927e41955a87031220684e51b48d7d50d6789b0a3408a3d73b88de681c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/quantitative_euler_index_api/DIMER_ROUTED_QUANTITATIVE_EULER_RUN.stderr",
+      "bytes": 1049,
+      "sha256": "d52de8baf727b728cc5e8cc61661c544ff2d50701f037e7454ffaf2a08e3262c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/quantitative_euler_index_api/FIX_RECEIPT.json",
+      "bytes": 355,
+      "sha256": "08e2e0691e6481c56bc215c3b02f27da4943468bd93b8ad9a243f619e89089e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/quantitative_euler_index_api/dimer_routed_quantitative_euler_check.py",
+      "bytes": 7480,
+      "sha256": "832f89f37b79430b1ea09a90470b182498d2ad772c4a8b13ee59c34a98fadc92"
+    }
+  ],
+  "scope": "Full source/result/log reading plus selective reconstruction. No execution of the author suite, no all-N verification by enumeration, no production observable access."
+}

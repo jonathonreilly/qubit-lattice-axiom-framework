@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-09-21T12:59:33.456825+00:00",
+  "finding": "F1",
+  "status": "closed",
+  "scope": "Exact source replacement, unchanged note identity, affected baseline and identity mutation only. No broader mathematical rerun or audit verdict.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_f1_fix/bounded_cycle_flow_check_before_f1.py",
+      "bytes": 10063,
+      "sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/bounded_cycle_flow_check.py",
+      "bytes": 10136,
+      "sha256": "0f408c7ccd9d5dafdf2df0d639b7f99f73461992485fa5e2510af381e2f6da2d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "bytes": 9977,
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_f1_fix/TARGETED_RESULTS.json",
+      "bytes": 9518,
+      "sha256": "71fd5e2c6bd62f49c491548a8b547eb85a6c873fb458ace91e10a54162c45617"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/REPORT.md",
+      "bytes": 9548,
+      "sha256": "7cf25f0053ba4fe60dfc39024df0c4e0caaa75e40bbf42f5adc1ea76181b64af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/FINAL_SEAL.json",
+      "bytes": 8898,
+      "sha256": "ff379fd75c5a5b5c774d58b270ad6a58ab22ffcb4b5811a5cf5b5451a8c726e7"
+    }
+  ],
+  "exact_only_change": {
+    "old_block": "    identities = sorted(initial.values())\n    check(\"four_state_cycle_preserves_gauss_capacity_and_record_contents\",\n          states[-1] == states[0]\n          and all(len(s) == 8 and sorted(s.values()) == identities for s in states)\n          and all(not charge(field(s, a)) for s in states for a in (\"E\", \"B\")),\n          distinct_states=len({tuple(sorted(s.items())) for s in states[:-1]}),\n          record_count=8, cycle_length=4)\n",
+    "new_block": "    identities = sorted(initial.values())\n    distinct_states = len({tuple(sorted(s.items())) for s in states[:-1]})\n    check(\"four_state_cycle_preserves_gauss_capacity_and_record_contents\",\n          states[-1] == states[0]\n          and distinct_states == 4\n          and all(len(s) == 8 and sorted(s.values()) == identities for s in states)\n          and all(not charge(field(s, a)) for s in states for a in (\"E\", \"B\")),\n          distinct_states=distinct_states,\n          record_count=8, cycle_length=4)\n",
+    "inverse_recovers_original_bytes": true,
+    "recovered_sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc"
+  },
+  "original_review_artifacts_authenticated_unchanged": 19,
+  "baseline": "All three affected loop controls pass; four distinct states.",
+  "identity_mutation": "Rejected by the corrected first assertion with one distinct state.",
+  "author_targeted_receipts_match_independent_execution": true,
+  "remaining_findings_from_original_review": [],
+  "formal_audit_status_applied": false
+}

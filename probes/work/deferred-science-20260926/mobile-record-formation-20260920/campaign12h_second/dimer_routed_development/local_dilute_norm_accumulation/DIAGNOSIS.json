@@ -1,0 +1,11 @@
+{
+  "dimension": 208980,
+  "numpy_norm_squared": 0.9942129629627128,
+  "sum_squared_abs": 0.9942129629629626,
+  "fsum_squared_abs": 0.9942129629629627,
+  "predicted_projected_norm_squared": 0.9942129629629629,
+  "f_norm_squared": 1.0000000000000004,
+  "g_norm_squared": 0.9999999999999997,
+  "fg_inner_real": -4.7704895589362195e-18,
+  "fg_inner_imag": 1.1191978580187062e-18
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_polynomial_flux/independent_check.py", line 226, in <module>
+    check("cubic_flux/full_characteristic_polynomial",
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          s.factor(Jac.charpoly(z).as_expr()-z**4*(z**2-speed_squared)) == 0,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          characteristic_polynomial="z^4 (z^2-3 alpha^2 rho^4 (1-rho) |nu|^2)")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_polynomial_flux/independent_check.py", line 23, in check
+    raise AssertionError(name)
+AssertionError: cubic_flux/full_characteristic_polynomial

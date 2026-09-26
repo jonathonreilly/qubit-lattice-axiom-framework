@@ -1,0 +1,73 @@
+{
+  "status": "sealed_pre_primary_source_access",
+  "sealed_utc": "2026-09-21T02:34:15.452866+00:00",
+  "task": "Independent two-parent quantum first-event waiting-law check",
+  "root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_quantum_waiting",
+  "source_scope": "Supplied two-parent six-axis qubit specification recorded in INPUT.md. No primary QUANTUM_WAITING_TIME files or results, or other new author calculations, were read. No earlier independent result is needed as a proof import.",
+  "files": {
+    "INPUT.md": {
+      "sha256": "6ac52ebd884a1523ff5a5fdebb7ac0de6e52e4de6c09e4f6015de774410fd612",
+      "bytes": 1975
+    },
+    "REPORT.md": {
+      "sha256": "29b4ae34525945f2272b4c0da3db4ac5640554013d6692cfc982cf3b3a43614b",
+      "bytes": 10127
+    },
+    "check.py": {
+      "sha256": "7c2d737ec4e7f1622e079476c7b716a863b2b71baad29dc5d1b47298fca44404",
+      "bytes": 7599
+    },
+    "RESULTS.json": {
+      "sha256": "f3ab701aaa9c5bd8c4f75130b3a87e58ca91bd0d5812ca6b51deecaddc250e3b",
+      "bytes": 6653
+    },
+    "RUN.log": {
+      "sha256": "f3ab701aaa9c5bd8c4f75130b3a87e58ca91bd0d5812ca6b51deecaddc250e3b",
+      "bytes": 6653
+    }
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "working_directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_quantum_waiting",
+    "exit_code": 0,
+    "all_checks_passed": true,
+    "symbolic_total_rate_checks": 36,
+    "symbolic_marked_rate_checks": 216,
+    "symbolic_weight_checks": 36,
+    "symbolic_second_order_checks": 36,
+    "direct_matrix_exponential_input_checks": 36,
+    "finite_time_parameter_cases": 3,
+    "pointwise_minimax_vertex_enumeration_cases": 7,
+    "versions": {
+      "python": "3.13.5",
+      "numpy": "2.4.4",
+      "sympy": "1.14.0"
+    },
+    "run_log_matches_results_byte_for_byte": true
+  },
+  "proven_results": [
+    "The prescribed exponential survival target violates ensemble consistency at every positive deadline for epsilon>0 and nonzero j.",
+    "Any physical experiment has worst-input deadline error at least exp(-6*epsilon*t)*(cosh(2*epsilon*j^2*t)-1)/2.",
+    "The sharp binary deadline minimax error is derived piecewise, with transition at 2*epsilon*j^2*t=log(3).",
+    "A positive lower bound for worst-input full timestamp TV follows by choosing t=1/(6*epsilon); optimal full timestamp TV is not classified.",
+    "The supplied quantum jump instrument has singlet/triplet mixture survival with rates epsilon*(6-6*j^2) and epsilon*(6+2*j^2).",
+    "All initial marked rates agree with the classical specification, but survival is strictly greater for perpendicular and antiparallel parents at positive time.",
+    "The jump instrument has an almost surely finite first event for the stipulated |j|<1."
+  ],
+  "limits": [
+    "No optimal full timestamp approximation is claimed.",
+    "A classical preparation label or input-correlated resource changes the premises.",
+    "The marked-rate agreement is at the initial instant; no integrated mark-law agreement is asserted.",
+    "The |j|=1 dark-singlet boundary lies outside the stated strict hypotheses."
+  ],
+  "mutation_scope": {
+    "writes_only_in_assigned_directory": true,
+    "primary_source_edits": false,
+    "git_actions": false,
+    "pr_or_audit_actions": false,
+    "delegation": false,
+    "external_communications": false,
+    "additional_research_branches": false
+  },
+  "seal_convention": "The listed file identities are complete SHA-256 hashes. The seal does not recursively hash itself."
+}

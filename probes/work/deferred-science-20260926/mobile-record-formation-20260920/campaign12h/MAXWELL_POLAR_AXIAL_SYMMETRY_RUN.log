@@ -1,0 +1,14 @@
+PASS: all_48_polar_axial_spatial_rate_symmetries
+PASS: exact_group_composition_on_all_15_labels
+PASS: spatial_inversion_is_polar_on_A_and_axial_on_B
+PASS: time_reversal_is_an_involution
+PASS: time_reversal_and_endpoint_swap_reverse_the_same_drive
+PASS: time_reversal_commutes_with_full_spatial_group
+PASS: actual_escape_rates_match_under_Theta_minimal
+PASS: actual_escape_rates_match_under_Theta_linear
+PASS: complete_sector_stationarity
+PASS: complete_sector_generalized_reversal
+PASS: ordinary_detailed_balance_negative_control
+PASS: all_fourteen_field_reversal_parities
+PASS: linear_Maxwell_generator_reversal_identity
+TOTAL: 13 PASS

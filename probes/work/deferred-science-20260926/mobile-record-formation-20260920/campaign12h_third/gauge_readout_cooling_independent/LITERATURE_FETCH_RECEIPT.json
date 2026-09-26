@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-22T18:27:28.605271+00:00",
+  "files": [
+    {
+      "file": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/literature/Weimer_0907.1657v2.pdf",
+      "url": "https://arxiv.org/pdf/0907.1657v2",
+      "bytes": 494021,
+      "sha256": "b0960af617c8b922382dbeccf97548427003812a3e5e3c8d546881bb90881e7b"
+    },
+    {
+      "file": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/literature/Kraus_0803.1463v3.pdf",
+      "url": "https://arxiv.org/pdf/0803.1463v3",
+      "bytes": 241295,
+      "sha256": "2635be63106a6dca937a104e62af145e6f84e211887ee9d877fe95bfe198edb3"
+    }
+  ],
+  "read_boundary": "Only named external background sources; all new author readout/cooling files and author seal unopened.",
+  "extractor": null
+}

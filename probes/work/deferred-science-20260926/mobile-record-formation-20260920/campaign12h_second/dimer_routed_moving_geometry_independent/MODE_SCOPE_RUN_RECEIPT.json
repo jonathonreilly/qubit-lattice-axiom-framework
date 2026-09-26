@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T19:20:26.264239+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/mode_scope_countercontrol.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.7250388748943806,
+  "script_sha256": "e81d98acca04559b2962d5f0d8480bf43c86614b7c60747adb70b71cbfa00854"
+}

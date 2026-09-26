@@ -1,0 +1,61 @@
+{
+  "basis_dimension": 18,
+  "operator_commutators": {
+    "hop_plus": {
+      "both_local_Gauss_commutators": "0",
+      "record_number_change": 0
+    },
+    "hop_minus": {
+      "both_local_Gauss_commutators": "0",
+      "record_number_change": 0
+    },
+    "birth_plus": {
+      "both_local_Gauss_commutators": "0",
+      "record_number_change": 2
+    },
+    "birth_minus": {
+      "both_local_Gauss_commutators": "0",
+      "record_number_change": 2
+    }
+  },
+  "birth_plus_loss_without_beta": "q_x q_y P_(E=-1/2)",
+  "birth_minus_loss_without_beta": "q_x q_y P_(E=+1/2)",
+  "sum_birth_losses_without_beta": "q_x q_y",
+  "total_birth_hazard_on_vacant_edge": "beta, not 2 beta, when both supplied channels have coefficient sqrt(beta)",
+  "F_changes": {
+    "hop_plus_forward": 1,
+    "hop_minus_forward": -1,
+    "birth_plus": -1,
+    "birth_minus": 1
+  },
+  "matching_sector_countercontrol": {
+    "initial_negative_link": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ],
+    "legal_positive_hop": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "initial_F": 1,
+    "final_F": 2,
+    "record_count": 2,
+    "conclusion": "Matching-sector geometry alone does not block hopping; the neutral witness needs its specific surrounding charge pattern."
+  }
+}

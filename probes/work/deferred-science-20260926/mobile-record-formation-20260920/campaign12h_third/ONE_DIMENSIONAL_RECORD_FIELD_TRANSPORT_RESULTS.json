@@ -1,0 +1,434 @@
+{
+  "status": "PASS",
+  "exact_physical_sectors": [
+    {
+      "length": 6,
+      "fixed_minus_site": 1,
+      "complete_sector_dimension": 3,
+      "low_dimension": 2,
+      "low_words_hex": [
+        "0x39",
+        "0x21"
+      ],
+      "second_order_matrix_over_t2_over_Delta": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "exact_first_birth_seed_word_hex": "0x39",
+      "first_birth_amplitude_over_t_over_Delta": 1,
+      "flux_deficit_of_position_n": "2n links",
+      "finite_spectral_controls": [
+        {
+          "epsilon": 0.02,
+          "max_energy_error_over_Delta": 6.389780434235557e-07,
+          "error_over_epsilon4": 3.9936127713972227
+        },
+        {
+          "epsilon": 0.04,
+          "max_energy_error_over_Delta": 1.0174983635027977e-05,
+          "error_over_epsilon4": 3.9746029824328035
+        },
+        {
+          "epsilon": 0.08,
+          "max_energy_error_over_Delta": 0.0001597752809481337,
+          "error_over_epsilon4": 3.9007636950227953
+        }
+      ],
+      "basis_sha256": "8329111b0bf5454bc913626a21d1d49a9d17cc7f33c73f9d407d63d2c0475cca"
+    },
+    {
+      "length": 8,
+      "fixed_minus_site": 1,
+      "complete_sector_dimension": 8,
+      "low_dimension": 3,
+      "low_words_hex": [
+        "0xf9",
+        "0xe1",
+        "0x81"
+      ],
+      "second_order_matrix_over_t2_over_Delta": [
+        [
+          -2,
+          -1,
+          0
+        ],
+        [
+          -1,
+          -2,
+          -1
+        ],
+        [
+          0,
+          -1,
+          -2
+        ]
+      ],
+      "exact_first_birth_seed_word_hex": "0xf9",
+      "first_birth_amplitude_over_t_over_Delta": 1,
+      "flux_deficit_of_position_n": "2n links",
+      "finite_spectral_controls": [
+        {
+          "epsilon": 0.02,
+          "max_energy_error_over_Delta": 9.311457774201053e-07,
+          "error_over_epsilon4": 5.819661108875658
+        },
+        {
+          "epsilon": 0.04,
+          "max_energy_error_over_Delta": 1.4831558500264137e-05,
+          "error_over_epsilon4": 5.793577539165678
+        },
+        {
+          "epsilon": 0.08,
+          "max_energy_error_over_Delta": 0.0002331582534082291,
+          "error_over_epsilon4": 5.692340171099343
+        }
+      ],
+      "basis_sha256": "06a77fe1e4221fbeadb57cfd6dff1fc24a1528e59f6f31d5ecc66d220fb95405"
+    },
+    {
+      "length": 10,
+      "fixed_minus_site": 1,
+      "complete_sector_dimension": 21,
+      "low_dimension": 4,
+      "low_words_hex": [
+        "0x3f9",
+        "0x3e1",
+        "0x381",
+        "0x201"
+      ],
+      "second_order_matrix_over_t2_over_Delta": [
+        [
+          -3,
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          -3,
+          -1,
+          0
+        ],
+        [
+          0,
+          -1,
+          -3,
+          -1
+        ],
+        [
+          0,
+          0,
+          -1,
+          -3
+        ]
+      ],
+      "exact_first_birth_seed_word_hex": "0x3f9",
+      "first_birth_amplitude_over_t_over_Delta": 1,
+      "flux_deficit_of_position_n": "2n links",
+      "finite_spectral_controls": [
+        {
+          "epsilon": 0.02,
+          "max_energy_error_over_Delta": 1.1287899461958923e-06,
+          "error_over_epsilon4": 7.054937163724326
+        },
+        {
+          "epsilon": 0.04,
+          "max_energy_error_over_Delta": 1.798211027914838e-05,
+          "error_over_epsilon4": 7.024261827792336
+        },
+        {
+          "epsilon": 0.08,
+          "max_energy_error_over_Delta": 0.0002828391249792943,
+          "error_over_epsilon4": 6.905252074689802
+        }
+      ],
+      "basis_sha256": "0887a88587685abd33ac8b8208db2b581f620c43dd13aecf09a91bd53b73cf5a"
+    },
+    {
+      "length": 12,
+      "fixed_minus_site": 1,
+      "complete_sector_dimension": 55,
+      "low_dimension": 5,
+      "low_words_hex": [
+        "0xff9",
+        "0xfe1",
+        "0xf81",
+        "0xe01",
+        "0x801"
+      ],
+      "second_order_matrix_over_t2_over_Delta": [
+        [
+          -4,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          -4,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -4,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -4,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          -4
+        ]
+      ],
+      "exact_first_birth_seed_word_hex": "0xff9",
+      "first_birth_amplitude_over_t_over_Delta": 1,
+      "flux_deficit_of_position_n": "2n links",
+      "finite_spectral_controls": [],
+      "basis_sha256": "6052316a321d172def05955a6a7fb2a2b2b6079917509e188da5525980536f2d"
+    },
+    {
+      "length": 14,
+      "fixed_minus_site": 1,
+      "complete_sector_dimension": 144,
+      "low_dimension": 6,
+      "low_words_hex": [
+        "0x3ff9",
+        "0x3fe1",
+        "0x3f81",
+        "0x3e01",
+        "0x3801",
+        "0x2001"
+      ],
+      "second_order_matrix_over_t2_over_Delta": [
+        [
+          -5,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          -5,
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          -5,
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1,
+          -5,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          -5,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          -5
+        ]
+      ],
+      "exact_first_birth_seed_word_hex": "0x3ff9",
+      "first_birth_amplitude_over_t_over_Delta": 1,
+      "flux_deficit_of_position_n": "2n links",
+      "finite_spectral_controls": [],
+      "basis_sha256": "1c7e3bff651dbb6278aba823c796810bc652d32cd72f8568edafc4253e23b84c"
+    }
+  ],
+  "PXP_and_live_constraints": [
+    {
+      "length": 6,
+      "no_minus_dimension": 18,
+      "complete_live_dimension": 27,
+      "exact_PXP_equivalence": true,
+      "all_A_minus_forbidden": true,
+      "all_hops_preserve_each_B_minus_location": true,
+      "directed_hops_checked": 72,
+      "birth_maps_checked": 18
+    },
+    {
+      "length": 8,
+      "no_minus_dimension": 47,
+      "complete_live_dimension": 81,
+      "exact_PXP_equivalence": true,
+      "all_A_minus_forbidden": true,
+      "all_hops_preserve_each_B_minus_location": true,
+      "directed_hops_checked": 288,
+      "birth_maps_checked": 72
+    },
+    {
+      "length": 10,
+      "no_minus_dimension": 123,
+      "complete_live_dimension": 243,
+      "exact_PXP_equivalence": true,
+      "all_A_minus_forbidden": true,
+      "all_hops_preserve_each_B_minus_location": true,
+      "directed_hops_checked": 1080,
+      "birth_maps_checked": 270
+    },
+    {
+      "length": 12,
+      "no_minus_dimension": 322,
+      "complete_live_dimension": 729,
+      "exact_PXP_equivalence": true,
+      "all_A_minus_forbidden": true,
+      "all_hops_preserve_each_B_minus_location": true,
+      "directed_hops_checked": 3888,
+      "birth_maps_checked": 972
+    }
+  ],
+  "halfline_quantum_walk": {
+    "asymptotic_mean_velocity_over_h_exact": "16/(3*pi)",
+    "controls": [
+      {
+        "h_times_age": 0.1,
+        "probability_sum": 1.0000000000000007,
+        "mean_separation": 1.009983361076422,
+        "mean_separation_over_h_times_age": 10.099833610764218,
+        "larger_cutoff_mean_difference": 0.0,
+        "full_finite_matrix_amplitude_distance": 3.333739820392172e-16
+      },
+      {
+        "h_times_age": 1.0,
+        "probability_sum": 1.0000000000000004,
+        "mean_separation": 1.857941057410747,
+        "mean_separation_over_h_times_age": 1.857941057410747,
+        "larger_cutoff_mean_difference": 0.0,
+        "full_finite_matrix_amplitude_distance": 2.3073818192014154e-16
+      },
+      {
+        "h_times_age": 5.0,
+        "probability_sum": 1.0000000000000004,
+        "mean_separation": 8.520238387044785,
+        "mean_separation_over_h_times_age": 1.704047677408957,
+        "larger_cutoff_mean_difference": 0.0,
+        "full_finite_matrix_amplitude_distance": 6.538450140941138e-16
+      },
+      {
+        "h_times_age": 20.0,
+        "probability_sum": 0.9999999999999994,
+        "mean_separation": 33.961010137030115,
+        "mean_separation_over_h_times_age": 1.6980505068515057,
+        "larger_cutoff_mean_difference": 0.0,
+        "full_finite_matrix_amplitude_distance": 3.78315464136342e-15
+      },
+      {
+        "h_times_age": 100.0,
+        "probability_sum": 1.0000000000000036,
+        "mean_separation": 169.76686416646476,
+        "mean_separation_over_h_times_age": 1.6976686416646476,
+        "larger_cutoff_mean_difference": 0.0
+      },
+      {
+        "h_times_age": 500.0,
+        "probability_sum": 1.0000000000000044,
+        "mean_separation": 848.8266814668347,
+        "mean_separation_over_h_times_age": 1.6976533629336694,
+        "larger_cutoff_mean_difference": 0.0
+      },
+      {
+        "h_times_age": 2000.0,
+        "probability_sum": 1.0000000000000073,
+        "mean_separation": 3395.305532204622,
+        "mean_separation_over_h_times_age": 1.697652766102311,
+        "larger_cutoff_mean_difference": 0.0
+      }
+    ]
+  },
+  "reduced_birth_transport": {
+    "definition": "Exact beta=0 linear susceptibility for a declared reduced single-birth half-line quantum-walk kernel; not the proved microscopic Lindblad limit.",
+    "order_of_limits": "Take volume to infinity before epsilon to zero for field derivative 4 J T^2/(3 pi); reversing the limits gives zero.",
+    "controls": [
+      {
+        "epsilon": 0.2,
+        "h": 12.499999999999998,
+        "J_scale": 1.0,
+        "time": 1.0,
+        "new_record_density_derivative_wrt_beta": 0.04000000000000001,
+        "field_deficit_derivative_wrt_beta": 0.42715088522809197,
+        "asymptotic_field_derivative": 0.4244131815783876,
+        "difference_from_asymptote": 0.0027377036497043816,
+        "quadrature_error_estimate_after_epsilon2": 4.742323779739897e-15,
+        "two_tolerance_integral_difference": 1.7763568394002505e-15
+      },
+      {
+        "epsilon": 0.1,
+        "h": 49.99999999999999,
+        "J_scale": 1.0,
+        "time": 1.0,
+        "new_record_density_derivative_wrt_beta": 0.010000000000000002,
+        "field_deficit_derivative_wrt_beta": 0.4246284171260781,
+        "asymptotic_field_derivative": 0.4244131815783876,
+        "difference_from_asymptote": 0.00021523554769048436,
+        "quadrature_error_estimate_after_epsilon2": 3.840929751675283e-12,
+        "two_tolerance_integral_difference": 1.779145009095373e-08
+      },
+      {
+        "epsilon": 0.05,
+        "h": 199.99999999999997,
+        "J_scale": 1.0,
+        "time": 1.0,
+        "new_record_density_derivative_wrt_beta": 0.0025000000000000005,
+        "field_deficit_derivative_wrt_beta": 0.42442939175610683,
+        "asymptotic_field_derivative": 0.4244131815783876,
+        "difference_from_asymptote": 1.621017771924471e-05,
+        "quadrature_error_estimate_after_epsilon2": 2.379050746556755e-12,
+        "two_tolerance_integral_difference": 9.947598300641403e-13
+      },
+      {
+        "epsilon": 0.025,
+        "h": 799.9999999999999,
+        "J_scale": 1.0,
+        "time": 1.0,
+        "new_record_density_derivative_wrt_beta": 0.0006250000000000001,
+        "field_deficit_derivative_wrt_beta": 0.4244143670860829,
+        "asymptotic_field_derivative": 0.4244131815783876,
+        "difference_from_asymptote": 1.1855076952893562e-06,
+        "quadrature_error_estimate_after_epsilon2": 1.5310810921270045e-13,
+        "two_tolerance_integral_difference": 2.2737367544323206e-13
+      }
+    ]
+  },
+  "runtime_seconds": 1.0686117911245674,
+  "limits": "Second-order microscopic coefficients and reduced transport asymptotics are separately checked. No uniform microscopic effective-dynamics theorem, finite-beta interacting limit, 3D photon claim or native closure is asserted."
+}

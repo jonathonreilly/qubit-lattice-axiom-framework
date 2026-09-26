@@ -1,0 +1,27 @@
+{
+  "plan_sha256": "70ceb0b96c34a59adc5c9e92ff25475baf3f88b3304e3260c00c44393a1a25de",
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "cases": [
+    [
+      "growth_scaled_L24",
+      24,
+      0.0016666666666666668,
+      2026092162
+    ],
+    [
+      "growth_scaled_L48",
+      48,
+      0.0008333333333333334,
+      2026092163
+    ],
+    [
+      "growth_fixed_clock_L48",
+      48,
+      0.0016666666666666668,
+      2026092164
+    ]
+  ],
+  "launcher_sha256": "72ff5d1f4ffc11de2b90f1da67f4aeb0e33e603fe9bcb216da25c45a40f34f19",
+  "trajectories_per_case": 512,
+  "threads": 4
+}

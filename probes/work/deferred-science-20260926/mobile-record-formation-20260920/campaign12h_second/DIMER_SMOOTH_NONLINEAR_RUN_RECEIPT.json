@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T22:53:18.773801+00:00",
+  "end_utc": "2026-09-21T22:53:19.983017+00:00",
+  "returncode": 0,
+  "script_sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "dimer_smooth_nonlinear_check.py"
+  ]
+}

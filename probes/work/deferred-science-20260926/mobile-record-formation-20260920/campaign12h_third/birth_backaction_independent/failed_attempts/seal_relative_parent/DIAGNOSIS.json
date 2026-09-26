@@ -1,0 +1,7 @@
+{
+  "preserved_utc": "2026-09-22T15:16:18.037438+00:00",
+  "original_tool_chunk": "8c6505",
+  "returncode": 1,
+  "original_invocation": "python3 via stdin in the independent directory; source and error transcribed from complete tool input/output",
+  "diagnosis": "Path('.').parent remains '.', so the seal helper looked in the independent directory instead of the campaign directory. Resolve the path first. No source or mathematical check failed, and no final seal was created."
+}

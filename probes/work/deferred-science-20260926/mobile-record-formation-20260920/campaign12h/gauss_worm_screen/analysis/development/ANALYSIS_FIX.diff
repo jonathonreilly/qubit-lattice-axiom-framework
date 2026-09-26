@@ -1,0 +1,16 @@
+--- attempt01
++++ current
+@@ -38,11 +38,11 @@
+     bcor=[]
+     for i in range(8):
+         x=b[:,i]
+-        bcor.append(float(np.corrcoef(x[:-1],x[1:])[0,1]) if len(x)>2 and np.std(x)>1e-13 else None)
++        bcor.append(float(np.corrcoef(x[:-1],x[1:])[0,1]) if len(x)>2 and np.std(x[:-1])>1e-13 and np.std(x[1:])>1e-13 else None)
+     if any(x is not None and abs(x)>.2 for x in bcor):flags.append('material_lag1_block_dependence')
+     cases.append(dict(tag=tag,metadata=meta,summary=summary,ratios=dict(axis=boot_ratio(b[:,1],b[:,2]),diagonal=boot_ratio(b[:,3],b[:,4])),flags=flags,block_lag1_correlation=bcor,first_half_block_mean=None if first is None else first.tolist(),last_half_block_mean=None if last is None else last.tolist()))
+ 
+ result=dict(created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),analysis_source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),raw_identities_sha256=hashlib.sha256((OUT/'RAW_IDENTITIES.json').read_bytes()).hexdigest(),block_size=128,bootstrap_replicates=2000,cases=cases,scope='Separate initializations; no pooling. Descriptive finite-size equilibrium-sampler screen. Block bootstrap coverage is not established when serial dependence or lack of equilibration persists. No phase, quantum-vacuum or formation-selected-state result.')
+-(OUT/'SCREEN_ANALYSIS.json').write_text(json.dumps(result,indent=2)+'\n')
++(OUT/'SCREEN_ANALYSIS.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
+ for c in cases:
+     print(c['tag'],'rho',c['summary']['mean'][0],'axis',c['ratios']['axis'],'diagonal',c['ratios']['diagonal'],'flags',c['flags'])

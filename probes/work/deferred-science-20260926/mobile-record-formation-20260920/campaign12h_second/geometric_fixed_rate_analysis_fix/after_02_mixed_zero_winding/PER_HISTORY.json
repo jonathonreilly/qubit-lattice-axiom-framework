@@ -1,0 +1,54 @@
+[
+  {
+    "case": [
+      16,
+      0.1,
+      210160001
+    ],
+    "name": "N16_b0.1_s210160001",
+    "winding": [
+      0,
+      0,
+      0
+    ],
+    "observables": {
+      "S1": 2.0,
+      "S2": 3.0,
+      "S3": 4.0,
+      "S4": 8.0,
+      "W": 0.0,
+      "axis_mode_square": 4.666666666666667,
+      "axis_shell_square": 4.0,
+      "winding_square": 0.0,
+      "time_per_volume": 2.0,
+      "slides_per_site": 7.0,
+      "site_reuse_fraction": 0.1
+    }
+  },
+  {
+    "case": [
+      16,
+      0.1,
+      210160002
+    ],
+    "name": "N16_b0.1_s210160002",
+    "winding": [
+      2,
+      0,
+      0
+    ],
+    "observables": {
+      "S1": 5.0,
+      "S2": 7.0,
+      "S3": 5.0,
+      "S4": 10.0,
+      "W": 0.08333333333333333,
+      "axis_mode_square": 31.0,
+      "axis_shell_square": 25.0,
+      "winding_square": 0.006944444444444444,
+      "time_per_volume": 5.0,
+      "slides_per_site": 8.0,
+      "site_reuse_fraction": 0.30000000000000004
+    }
+  }
+]

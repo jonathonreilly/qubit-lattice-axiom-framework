@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/color_control.py"
+  ],
+  "started_utc": "2026-09-22T14:54:01.629473+00:00",
+  "finished_utc": "2026-09-22T14:54:01.903460+00:00",
+  "returncode": 0,
+  "source_sha256": "e0972acebeba506f5e7c0995696570fed5afdd09568baf70eefb873be1291ff8"
+}

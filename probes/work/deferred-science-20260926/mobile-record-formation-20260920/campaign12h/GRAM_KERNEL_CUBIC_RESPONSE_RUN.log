@@ -1,0 +1,9 @@
+PASS: old_six_axis_Gram_moments
+PASS: original_fourteen_Gram_moments
+PASS: Born_fourteen_Gram_moments
+PASS: exact_kernel_coefficient_ratio
+PASS: old_six_axis_full_generator_jet_vs_pair_and_vacancy_closure
+PASS: original_fourteen_full_generator_jet_vs_pair_and_vacancy_closure
+PASS: Born_fourteen_full_generator_jet_vs_pair_and_vacancy_closure
+PASS: full_finite_generator_cubic_ratio
+TOTAL: 8 PASS

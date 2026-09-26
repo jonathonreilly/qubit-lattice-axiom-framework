@@ -1,0 +1,30 @@
+{
+  "accessed_utc": "2026-09-21T21:29:37.681656+00:00",
+  "boundary": "Read after precomparison seal. These contextual sources supply no theorem used in the independently reconstructed finite algebra. No PDF was downloaded or copied.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/cond-mat/0502146v2",
+      "version": "v2",
+      "title": "SU(2)-invariant spin-1/2 Hamiltonians with RVB and other valence bond phases",
+      "read": "Version-specific abstract and bibliographic page via web tool",
+      "supports": "Klein local-spin construction and lattice-decoration control are established additional premises.",
+      "not_reviewed": "Full derivation, overlap expansion, local groundspace proof, or thermodynamic claims."
+    },
+    {
+      "url": "https://arxiv.org/abs/1204.3195v2",
+      "version": "v2",
+      "title": "Coexistence of long-range and algebraic correlations for short-range valence-bond wave functions in three dimensions",
+      "read": "Version-specific abstract and bibliographic page via web tool",
+      "supports": "The cited magnetic order and dipolar correlations are reported as Monte Carlo findings for the cubic nearest-neighbor valence-bond state.",
+      "not_reviewed": "Production Monte Carlo data, convergence, or a phase proof."
+    },
+    {
+      "url": "https://arxiv.org/abs/1311.0004v1",
+      "version": "v1",
+      "title": "Two distinct spin liquid states in a layered cubic lattice",
+      "read": "Version-specific abstract and bibliographic page via web tool",
+      "supports": "The family has anisotropic bond amplitudes along a selected axis and is studied by Monte Carlo.",
+      "not_reviewed": "Full paper, claimed gap interpretation, or an exhaustive verification that no parent Hamiltonian is supplied."
+    }
+  ]
+}

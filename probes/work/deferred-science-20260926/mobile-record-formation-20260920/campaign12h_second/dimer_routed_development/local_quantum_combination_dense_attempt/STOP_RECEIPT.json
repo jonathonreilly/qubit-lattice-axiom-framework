@@ -1,0 +1,27 @@
+{
+  "stopped_utc": "2026-09-21T19:26:40.015451+00:00",
+  "pid": 69940,
+  "command": "/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python geometric_local_quantum_combination_check.py",
+  "reason": "First four exact patches finished; the 12-site dense symbolic calculation exceeded 12 minutes without another completed result. Replace large symbolic leakage matrices with exact small Gram-matrix identities, preserving this attempt.",
+  "completed_patch_rows": 4,
+  "unfinished_patch": [
+    2,
+    2,
+    3
+  ],
+  "signal": "SIGTERM",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/geometric_local_quantum_combination_check.py",
+      "sha256": "0cd4eec4b067e8e27434dbf4fc53407e653d66bc303d26646272072f5b212daa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.log",
+      "sha256": "f531186b8f3de6e9a6ae75f49373f82800570756808239f2ad2767d5e214284e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

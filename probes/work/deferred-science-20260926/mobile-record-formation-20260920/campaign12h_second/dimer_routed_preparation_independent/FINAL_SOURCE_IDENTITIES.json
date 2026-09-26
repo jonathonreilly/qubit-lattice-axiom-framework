@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-09-21T19:03:01.479980+00:00",
+  "complete_primary_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_check.py",
+      "bytes": 8306,
+      "sha256": "ceb61f213da0e675d27fafd094704590916d77f200f5682187d3c42b3b38c82b"
+    }
+  ],
+  "reused_verified_dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK.md",
+      "bytes": 2072,
+      "sha256": "73a39a5c56bf1b3113a86eb542e252e291b56bf30a134754e4165bea18b3cef9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK_SEAL.json",
+      "bytes": 17067,
+      "sha256": "5d8d706106c443df78680377df20578a7cbe4e32305a350ea2e7a1b0b66b0a8c"
+    }
+  ],
+  "author_evidence_authenticated": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/RESULTS.json",
+      "bytes": 5560,
+      "sha256": "4006d8eb9072391b9733885c5ac9d9595092f0a82c182dccb39b8f335eadcb2a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_PREPARATION_RUN.log",
+      "bytes": 215,
+      "sha256": "b32aa6e39f1ee38dbffc4c1a989fa105165b5e433d0af47a16b1244ee783c284"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_PREPARATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/conditional_permutation_bound.json",
+      "bytes": 934,
+      "sha256": "48006035212a5f61b365fa668859586b35fe90fc9f291057ec84c6487de4ea3b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/physical_graph_comparison.json",
+      "bytes": 956,
+      "sha256": "f58ea27c87232a3305f232e5cb1b611245ae19928cbb839888b024d8a8b8673d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_checks/nonreversible_preparation.json",
+      "bytes": 1928,
+      "sha256": "9c509673ef4f8d11672829af5e962e09cf32cfd0ddde03e3454385f7af1ae2a5"
+    }
+  ],
+  "external_literature_imports": [],
+  "unrelated_dynamic_aggregates_or_moving_geometry_accessed": false,
+  "verification_limits": {
+    "author_full_suite_rerun": false,
+    "all_author_graph_spectral_rows_recomputed": false,
+    "author_random_conditional_values_recomputed": false,
+    "proof_and_exact_independent_controls": "See sealed PRE_COMPARISON_DERIVATION.md and INDEPENDENT_RESULTS.json."
+  },
+  "unresolved_findings": []
+}

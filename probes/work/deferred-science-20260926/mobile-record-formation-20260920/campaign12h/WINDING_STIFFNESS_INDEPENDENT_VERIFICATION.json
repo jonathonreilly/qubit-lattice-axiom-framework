@@ -1,0 +1,17 @@
+{
+  "review_report_sha256": "995d1112235f7c4cc253d06a915c300785f1a2c6f0fde1c2aad417b99edf99e9",
+  "final_seal_sha256": "0fa87868b788d9ef14c029f494d815793ffba641a73218185af2beb1de5677e5",
+  "authenticated": {
+    "sources": 31,
+    "procedures_reused_unchanged": 3,
+    "artifacts": 11
+  },
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON.md",
+    "benchmark_check.py",
+    "compare_compact.py"
+  ],
+  "raw_csv_rehashes": 0,
+  "limits": "Separate Gaussian benchmark and compact arithmetic review with selected raw windows; no production replay, mixing proof or calibrated coverage."
+}

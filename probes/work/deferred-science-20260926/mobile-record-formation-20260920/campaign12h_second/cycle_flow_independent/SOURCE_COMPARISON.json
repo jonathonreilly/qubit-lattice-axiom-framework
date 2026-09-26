@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-09-21T12:53:15.019731+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "bytes": 9977,
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "bytes": 9998,
+      "sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "bytes": 11623,
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/bounded_cycle_flow_check.py",
+      "bytes": 10063,
+      "sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_RESULTS.json",
+      "bytes": 22180,
+      "sha256": "1f2a545d2f885e48a1bab9843f6cc8d4c22bc01287b0cb900754b3bcd61aa9cb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_RUN.log",
+      "bytes": 14307,
+      "sha256": "1e18f566b488b34a34ca8fb8adf27ee9619263595e997f383d467bc88bcd7e6d"
+    }
+  ],
+  "author_log_matches_complete_result": true,
+  "author_control_rows": 10,
+  "full_author_suite_reexecuted": false,
+  "selective_author_execution": "Three loop controls baseline plus identity-reversal mutation, compiled in memory after pre-comparison seal",
+  "mathematical_findings": [],
+  "executable_findings": [
+    {
+      "id": "F1",
+      "severity": "narrow assertion coverage",
+      "function": "immutable_gauss_cycle",
+      "details": "Four-state construction count is reported, not asserted; identity reversal passes all three controls."
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

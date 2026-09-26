@@ -1,0 +1,7 @@
+{"K": 4, "completed_cases": 11}
+{"K": 6, "completed_cases": 25}
+{"K": 8, "completed_cases": 42}
+{"K": 10, "completed_cases": 62}
+{"K": 12, "completed_cases": 85}
+{"K": 14, "completed_cases": 111}
+{"finished": true, "cases": 111, "runtime_seconds": 0.33142037503421307}

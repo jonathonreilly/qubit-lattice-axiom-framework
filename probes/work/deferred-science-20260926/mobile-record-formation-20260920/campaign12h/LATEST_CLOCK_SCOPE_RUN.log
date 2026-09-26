@@ -1,0 +1,8 @@
+{
+  "source_sha256": "99d5bedf9a80e8e54d475d8306e2771d05140980ac01d356bc36ed042004f8dc",
+  "arithmetic_mean_nonlinear_residual_at_log2": "-log(12) + log(13)",
+  "residual_second_derivative_at_zero": "1/3",
+  "symmetric_departure_clock_conditional_lifted_drift": "zero",
+  "inverse_rate_stationary_law_exact": true,
+  "scope": "Author checks of narrow reading observations; no complete PR review or audit verdict."
+}

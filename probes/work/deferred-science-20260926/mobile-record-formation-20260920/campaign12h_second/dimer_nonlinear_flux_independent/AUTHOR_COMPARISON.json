@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-09-21T22:53:33.925047+00:00",
+  "status": "no actionable discrepancy",
+  "pre_seal_verified": {
+    "sources": 5,
+    "artifacts": 7
+  },
+  "author_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+      "bytes": 7787,
+      "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py",
+      "bytes": 8306,
+      "sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_checks/RESULTS.json",
+      "bytes": 9421,
+      "sha256": "756b19b0ebcdacdda23510173e63f2b16627d6ba6cc1d6a2998d0a145fe6f138"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_FLUX_RUN.log",
+      "bytes": 143,
+      "sha256": "cdc3ae85d854e0af3e39efc7eedc0f57ed0afdc9517dcf3ef27472de8a67176f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_FLUX_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_FLUX_RUN_RECEIPT.json",
+      "bytes": 451,
+      "sha256": "d2f39b76c5ebed2cb59fd57ea71182b1b9809a1a36469ee9328ed70ebe9b1583"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/nonlinear_initial_drift_threshold/DIAGNOSIS.json",
+      "bytes": 1198,
+      "sha256": "d3992f0ce11dc5542e1afe6d3e2d6b8ed7669fa92772ce10c29cb63f45e3846d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/nonlinear_initial_drift_threshold/DIMER_NONLINEAR_FLUX_RUN.log",
+      "bytes": 80,
+      "sha256": "e516d125bcabab8bc2dd073cd63cae00e296a090267ae7efbe966952297cea42"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/nonlinear_initial_drift_threshold/DIMER_NONLINEAR_FLUX_RUN.stderr",
+      "bytes": 1381,
+      "sha256": "35a63533718dce7d1e3932bf927f00ecc1de7ad427ab167310dd1c070844932e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/nonlinear_initial_drift_threshold/EXPLANATION.md",
+      "bytes": 768,
+      "sha256": "296c6e019e0b85dc107d238c9c36da0d3ea5264133416be809c8131b12a01be3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/nonlinear_initial_drift_threshold/dimer_nonlinear_flux_check.py",
+      "bytes": 8360,
+      "sha256": "957b38d32367e78e1bb6bce5ddd07148b24a47d2be59bed839db3736b06c73ce"
+    }
+  ],
+  "author_code_executed": false,
+  "coverage": "Complete final checker/result and preserved source delta read. All four result source bindings authenticated. Four initial profiles independently recomputed; all eleven N-times-error arithmetic rows, nine exact optical pairs and two symbolic harmonic fluxes checked. Author moment/entropy checks are authenticated support; general identities are supported by the sealed independent derivation.",
+  "selected_initial_drift_rows": [
+    {
+      "N": 8,
+      "independent_error": 0.7643936520893415,
+      "stored_error": 0.7643936520893413,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "N": 128,
+      "independent_error": 0.05425558199206609,
+      "stored_error": 0.05425558199206609,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 1024,
+      "independent_error": 0.006785299804060153,
+      "stored_error": 0.006785299804060153,
+      "absolute_difference": 0.0
+    },
+    {
+      "N": 8192,
+      "independent_error": 0.0008481690248899553,
+      "stored_error": 0.0008481690248899553,
+      "absolute_difference": 0.0
+    }
+  ],
+  "source_delta_only": "dead false conditional in tangent basis plus three larger grids",
+  "preserved_failure": "Original threshold failure retained; all eight original row values exactly retained, profile and .003 threshold unchanged."
+}

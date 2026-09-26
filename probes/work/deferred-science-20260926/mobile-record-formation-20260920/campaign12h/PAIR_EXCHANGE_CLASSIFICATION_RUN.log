@@ -1,0 +1,68 @@
+{
+  "antisymmetric_coordinates": 63,
+  "three_color_cycle_constraints": 105,
+  "cycle_rank": 45,
+  "cycle_nullity": 18,
+  "proper_cubic_rotations": 24,
+  "total_constraints": 1617,
+  "combined_rank": 62,
+  "combined_nullity": 1,
+  "basis_exactly_velocity_difference": true,
+  "stationarity_menus": [
+    {
+      "drift": "-2/3",
+      "symmetric_scale": "0",
+      "states": 343
+    },
+    {
+      "drift": "-2/3",
+      "symmetric_scale": "2/5",
+      "states": 343
+    },
+    {
+      "drift": "0",
+      "symmetric_scale": "0",
+      "states": 343
+    },
+    {
+      "drift": "0",
+      "symmetric_scale": "2/5",
+      "states": 343
+    },
+    {
+      "drift": "1",
+      "symmetric_scale": "0",
+      "states": 343
+    },
+    {
+      "drift": "1",
+      "symmetric_scale": "2/5",
+      "states": 343
+    },
+    {
+      "drift": "7/4",
+      "symmetric_scale": "0",
+      "states": 343
+    },
+    {
+      "drift": "7/4",
+      "symmetric_scale": "2/5",
+      "states": 343
+    }
+  ],
+  "nonzero_cycle_stationarity_counterexample": {
+    "configuration": [
+      1,
+      2,
+      3
+    ],
+    "incoming": "0",
+    "outgoing": "3"
+  },
+  "status": "primary algebraic classification checked; independent scrutiny pending",
+  "source_sha256": "38d97ae279a1fdafcacb5be3f8277189490700c71af8ea757391b43256427daa",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  }
+}

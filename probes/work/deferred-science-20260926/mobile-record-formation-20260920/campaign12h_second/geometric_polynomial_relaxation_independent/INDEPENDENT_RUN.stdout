@@ -1,0 +1,12 @@
+path4 {"near": 3, "full": 1, "routes": 2, "gap": 0.9999999999999997}
+cycle4 {"near": 4, "full": 2, "routes": 4, "gap": 1.9999999999999987}
+diamond {"near": 5, "full": 2, "routes": 4, "gap": 3.0}
+complete4 {"near": 6, "full": 3, "routes": 6, "gap": 3.999999999999998}
+path6 {"near": 6, "full": 1, "routes": 6, "gap": 0.5857864376269052}
+cycle6 {"near": 9, "full": 2, "routes": 12, "gap": 1.2679491924311226}
+triangles_with_bridge {"near": 11, "full": 1, "routes": 6, "gap": 1.2679491924311228}
+K33 {"near": 18, "full": 6, "routes": 36, "gap": 1.999999999999999}
+squares_with_bridge {"near": 20, "full": 4, "routes": 48, "gap": 0.29270673117834384}
+cube {"near": 44, "full": 9, "routes": 108, "gap": 1.171572875253808}
+complete6 {"near": 45, "full": 15, "routes": 90, "gap": 3.9999999999999947}
+complete {"graphs": 11, "seconds": 0.7805743750650436}

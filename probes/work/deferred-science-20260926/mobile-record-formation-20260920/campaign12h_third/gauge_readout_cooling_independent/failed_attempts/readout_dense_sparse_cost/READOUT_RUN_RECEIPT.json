@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-09-22T18:36:52.189803+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "-u",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/readout_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent",
+  "script_sha256": "324be78d3674edfd1e7c553b8324f25f2d90af19c99d1d3ab7b64de067d201b2",
+  "finished_utc": "2026-09-22T18:40:47.449759+00:00",
+  "returncode": -2,
+  "READOUT_RUN.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "READOUT_RUN.stderr": {
+    "bytes": 2594,
+    "sha256": "fb893b07bf04ef691ffe26e4f534664e4c2cce5c8e034ed5e58f979d03ebbe12"
+  }
+}

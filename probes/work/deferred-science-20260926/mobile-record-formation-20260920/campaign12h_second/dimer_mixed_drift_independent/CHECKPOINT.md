@@ -1,0 +1,1 @@
+Completed and sealed. Witness exact: derivative differences -3/896 for X2, -3/3584 for A2. No source correction. All 8 sources and 21 artifact rows authenticate. Preseal and failed JSON attempt preserved. Primary sources untouched; no audit status.

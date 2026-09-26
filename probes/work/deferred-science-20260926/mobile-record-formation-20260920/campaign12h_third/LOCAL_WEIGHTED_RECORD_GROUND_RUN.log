@@ -1,0 +1,1395 @@
+{
+  "status": "PASS",
+  "geometry_dependency_sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552",
+  "weighted_algebra": {
+    "symbolic_pair_identity": "exact for arbitrary positive r,z",
+    "eight_state_weight": "psi(c) proportional to 2^(bit0*bit1), with bit2 coherent spectator",
+    "local_context_jump_count": 5,
+    "pair_counts": [
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "common_dark_dimension": 1,
+    "exact_complex_Liouvillian_nullity": 1,
+    "modular_rank_certificate": {
+      "prime": 65537,
+      "i_image": 256,
+      "rank": 63
+    },
+    "separating_vector_identity": "Each class checked exactly at exp(t)=2 with F=sum3^bit*bit.",
+    "target_normalization_squared": "14"
+  },
+  "bounded_local_support": [
+    {
+      "side": 2,
+      "all_links": 24,
+      "overlapping_plaquettes_including_self": 11,
+      "support_links": 20,
+      "random_flippable_backgrounds": 128,
+      "background_charge": "Arbitrary fixed charges; each flip preserves them exactly.",
+      "observed_delta_flippability_values": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "locality_check": "All global changes equal changes in the bounded overlap neighborhood."
+    },
+    {
+      "side": 3,
+      "all_links": 81,
+      "overlapping_plaquettes_including_self": 13,
+      "support_links": 30,
+      "random_flippable_backgrounds": 128,
+      "background_charge": "Arbitrary fixed charges; each flip preserves them exactly.",
+      "observed_delta_flippability_values": [
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "locality_check": "All global changes equal changes in the bounded overlap neighborhood."
+    },
+    {
+      "side": 4,
+      "all_links": 192,
+      "overlapping_plaquettes_including_self": 13,
+      "support_links": 32,
+      "random_flippable_backgrounds": 128,
+      "background_charge": "Arbitrary fixed charges; each flip preserves them exactly.",
+      "observed_delta_flippability_values": [
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "locality_check": "All global changes equal changes in the bounded overlap neighborhood."
+    }
+  ],
+  "finite_variational": {
+    "dimension": 864,
+    "component_states_sha256": "8e2de3fbae7fad1ce6e16047bfa1d45c5855e8fe848bf66b31faa2fa3888e8f5",
+    "flippability_counts": {
+      "4": 120,
+      "8": 492,
+      "6": 64,
+      "10": 96,
+      "12": 80,
+      "16": 12
+    },
+    "edge_middegree_counts": {
+      "8": 960,
+      "6": 384,
+      "9": 672,
+      "7": 480,
+      "10": 576,
+      "11": 96,
+      "13": 96,
+      "12": 96,
+      "14": 96
+    },
+    "cases": [
+      {
+        "delta": "1/20",
+        "normalization_polynomial": "12*x**16 + 80*x**12 + 96*x**10 + 492*x**8 + 64*x**6 + 120*x**4",
+        "energy_numerator_polynomial": "912*x**16/5 - 192*x**14 - 192*x**13 + 720*x**12 - 192*x**11 - 240*x**10 - 1344*x**9 + 9096*x**8/5 - 960*x**7 - 2016*x**6/5 + 456*x**4",
+        "critical_polynomial_without_zero_root": "1440*x**20 + 2160*x**19 + 7440*x**18 + 3600*x**17 + 28632*x**16 + 30480*x**15 + 146736*x**14 + 19920*x**13 - 70320*x**12 - 52560*x**11 + 291720*x**10 + 44880*x**9 - 108072*x**8 - 204240*x**7 + 153984*x**6 + 16560*x**5 + 60672*x**4 - 271200*x**3 - 7560*x**2 - 108000*x - 48480",
+        "all_positive_critical_root_intervals": [
+          {
+            "lower": "4142655/4076869",
+            "upper": "3486679/3431310",
+            "multiplicity": 1,
+            "midpoint": 1.0161364027149624,
+            "energy": -0.4021532597140301
+          }
+        ],
+        "endpoint_energies": {
+          "x_to_zero": "19/5",
+          "x_to_infinity": "76/5"
+        },
+        "x_optimum": 1.0161364027149624,
+        "theta_optimum": 0.01600759478565345,
+        "variational_energy": -0.40215325971403054,
+        "uniform_RK_trial_energy": -0.3999999999999999,
+        "ground_energy": -0.40273650590973453,
+        "finite_ground_gap": 1.0305400919127634,
+        "ground_infidelity": 0.00019553198368038593,
+        "energy_gap_infidelity_upper_bound": 0.0005659616741561597,
+        "all_later_time_trace_error_upper_bound": 0.047579898030834816,
+        "all_local_jump_target_residual_max": 3.4676696673687316e-18,
+        "local_jump_count": 168,
+        "plaquette_contexts": [
+          {
+            "plaquette": 0,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 1,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 2,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 3,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 4,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 5,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 6,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 7,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 8,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 9,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 10,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 11,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 12,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 13,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 14,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 15,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 16,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 17,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 18,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 19,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 20,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 21,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 22,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 23,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          }
+        ],
+        "claim_limit": "Optimum of this one-parameter family on this one finite component; no thermodynamic fidelity or physical-law selection."
+      },
+      {
+        "delta": "1/5",
+        "normalization_polynomial": "12*x**16 + 80*x**12 + 96*x**10 + 492*x**8 + 64*x**6 + 120*x**4",
+        "energy_numerator_polynomial": "768*x**16/5 - 192*x**14 - 192*x**13 + 576*x**12 - 192*x**11 - 384*x**10 - 1344*x**9 + 6144*x**8/5 - 960*x**7 - 2304*x**6/5 + 384*x**4",
+        "critical_polynomial_without_zero_root": "1440*x**20 + 2160*x**19 + 6720*x**18 + 3600*x**17 + 26688*x**16 + 30480*x**15 + 129024*x**14 + 19920*x**13 - 75360*x**12 - 52560*x**11 + 252480*x**10 + 44880*x**9 - 125568*x**8 - 204240*x**7 + 120576*x**6 + 16560*x**5 + 35328*x**4 - 271200*x**3 - 51840*x**2 - 108000*x - 49920",
+        "all_positive_critical_root_intervals": [
+          {
+            "lower": "4425733/4159927",
+            "upper": "2640711/2482112",
+            "multiplicity": 1,
+            "midpoint": 1.0638967943428337,
+            "energy": -1.6341599084844518
+          }
+        ],
+        "endpoint_energies": {
+          "x_to_zero": "16/5",
+          "x_to_infinity": "64/5"
+        },
+        "x_optimum": 1.0638967943428337,
+        "theta_optimum": 0.061938388416773356,
+        "variational_energy": -1.6341599084844574,
+        "uniform_RK_trial_energy": -1.5999999999999988,
+        "ground_energy": -1.6424425919679506,
+        "finite_ground_gap": 1.2141728438377515,
+        "ground_infidelity": 0.00256010416350938,
+        "energy_gap_infidelity_upper_bound": 0.006821667545547629,
+        "all_later_time_trace_error_upper_bound": 0.1651867736297023,
+        "all_local_jump_target_residual_max": 6.820802839607114e-18,
+        "local_jump_count": 168,
+        "plaquette_contexts": [
+          {
+            "plaquette": 0,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 1,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 2,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 3,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 4,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 5,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 6,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 7,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 8,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 9,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 10,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 11,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 12,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 13,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 14,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 15,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 16,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 17,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 18,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 19,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 20,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 21,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 22,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 23,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          }
+        ],
+        "claim_limit": "Optimum of this one-parameter family on this one finite component; no thermodynamic fidelity or physical-law selection."
+      },
+      {
+        "delta": "1/2",
+        "normalization_polynomial": "12*x**16 + 80*x**12 + 96*x**10 + 492*x**8 + 64*x**6 + 120*x**4",
+        "energy_numerator_polynomial": "96*x**16 - 192*x**14 - 192*x**13 + 288*x**12 - 192*x**11 - 672*x**10 - 1344*x**9 + 48*x**8 - 960*x**7 - 576*x**6 + 240*x**4",
+        "critical_polynomial_without_zero_root": "288*x**20 + 432*x**19 + 1056*x**18 + 720*x**17 + 4560*x**16 + 6096*x**15 + 18720*x**14 + 3984*x**13 - 17088*x**12 - 10512*x**11 + 34800*x**10 + 8976*x**9 - 32112*x**8 - 40848*x**7 + 10752*x**6 + 3312*x**5 - 3072*x**4 - 54240*x**3 - 28080*x**2 - 21600*x - 10560",
+        "all_positive_critical_root_intervals": [
+          {
+            "lower": "4807634/4145615",
+            "upper": "3771103/3251816",
+            "multiplicity": 1,
+            "midpoint": 1.1596913847523598,
+            "energy": -4.213344242874199
+          }
+        ],
+        "endpoint_energies": {
+          "x_to_zero": "2",
+          "x_to_infinity": "8"
+        },
+        "x_optimum": 1.1596913847523598,
+        "theta_optimum": 0.1481539220940489,
+        "variational_energy": -4.213344242874201,
+        "uniform_RK_trial_energy": -4.0,
+        "ground_energy": -4.255811262628795,
+        "finite_ground_gap": 1.5933553484109306,
+        "ground_infidelity": 0.011431174042431547,
+        "energy_gap_infidelity_upper_bound": 0.026652573010123925,
+        "all_later_time_trace_error_upper_bound": 0.3265123152968287,
+        "all_local_jump_target_residual_max": 4.46840537314921e-18,
+        "local_jump_count": 168,
+        "plaquette_contexts": [
+          {
+            "plaquette": 0,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 1,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 2,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 3,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 4,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 5,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 6,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 7,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 8,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 9,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 10,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 11,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 12,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 13,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 14,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 15,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 16,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 17,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 18,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 19,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 20,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 21,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 22,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 23,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          }
+        ],
+        "claim_limit": "Optimum of this one-parameter family on this one finite component; no thermodynamic fidelity or physical-law selection."
+      },
+      {
+        "delta": "1",
+        "normalization_polynomial": "12*x**16 + 80*x**12 + 96*x**10 + 492*x**8 + 64*x**6 + 120*x**4",
+        "energy_numerator_polynomial": "-192*x**14 - 192*x**13 - 192*x**12 - 192*x**11 - 1152*x**10 - 1344*x**9 - 1920*x**8 - 960*x**7 - 768*x**6",
+        "critical_polynomial_without_zero_root": "288*x**20 + 432*x**19 + 576*x**18 + 720*x**17 + 3264*x**16 + 6096*x**15 + 6912*x**14 + 3984*x**13 - 20448*x**12 - 10512*x**11 + 8640*x**10 + 8976*x**9 - 43776*x**8 - 40848*x**7 - 11520*x**6 + 3312*x**5 - 19968*x**4 - 54240*x**3 - 57600*x**2 - 21600*x - 11520",
+        "all_positive_critical_root_intervals": [
+          {
+            "lower": "6942316/5197735",
+            "upper": "8888239/6654654",
+            "multiplicity": 1,
+            "midpoint": 1.3356425443005608,
+            "energy": -8.889831612811259
+          }
+        ],
+        "endpoint_energies": {
+          "x_to_zero": "0",
+          "x_to_infinity": "0"
+        },
+        "x_optimum": 1.3356425443005608,
+        "theta_optimum": 0.28941248265352787,
+        "variational_energy": -8.88983161281124,
+        "uniform_RK_trial_energy": -8.0,
+        "ground_energy": -9.026720913531113,
+        "finite_ground_gap": 2.225785385893964,
+        "ground_infidelity": 0.02960518714816729,
+        "energy_gap_infidelity_upper_bound": 0.061501572248347625,
+        "all_later_time_trace_error_upper_bound": 0.49599021058221554,
+        "all_local_jump_target_residual_max": 5.919301199640844e-18,
+        "local_jump_count": 168,
+        "plaquette_contexts": [
+          {
+            "plaquette": 0,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 1,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 2,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 3,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 4,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 5,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 6,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 7,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 8,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 9,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 10,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 11,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 12,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 13,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 14,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 15,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 16,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 17,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 18,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 19,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 20,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 21,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 22,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          },
+          {
+            "plaquette": 23,
+            "contexts": {
+              "-6": 4,
+              "-4": 22,
+              "-2": 24,
+              "0": 44,
+              "2": 24,
+              "4": 22,
+              "6": 4
+            }
+          }
+        ],
+        "claim_limit": "Optimum of this one-parameter family on this one finite component; no thermodynamic fidelity or physical-law selection."
+      }
+    ]
+  },
+  "scope": "Local supplied many-qubit cooling and finite variational energy/overlap; no native nearest-neighbor compiler or thermodynamic photon claim."
+}

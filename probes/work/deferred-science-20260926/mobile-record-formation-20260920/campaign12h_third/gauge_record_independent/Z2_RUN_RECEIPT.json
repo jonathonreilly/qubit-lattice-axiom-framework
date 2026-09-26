@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/z2_completion_check.py"
+  ],
+  "started_utc": "2026-09-22T15:34:10.772052+00:00",
+  "completed_utc": "2026-09-22T15:34:43.124806+00:00",
+  "returncode": 0,
+  "script_sha256": "d754663013016ead2053f7edef33accaa24a408aba32f2df6b2c8da3a5842094"
+}

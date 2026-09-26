@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-22T15:48:11.115544+00:00",
+  "failure": "SymPy structural equality compared factored and expanded forms.",
+  "lhs": "(chi**4 + 1)/2",
+  "rhs": "chi**4/2 + 1/2",
+  "exact_expanded_difference": "0",
+  "scope": "All preceding full density-equation checks passed. Fix the equality comparison, not the density or claimed purity."
+}

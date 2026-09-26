@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-22T19:55:47.038012+00:00",
+  "preserved_pre_bindings_verified": 39,
+  "author_bindings_verified": 20,
+  "comparison_first_run": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/comparison_check.py"
+    ],
+    "started_utc": "2026-09-22T19:52:09.812091+00:00",
+    "completed_utc": "2026-09-22T19:52:10.423942+00:00",
+    "returncode": 0,
+    "script_sha256": "e4e392a9fcd15eef4ef0f5f33c2ccfbe336012f7a7b770348c265843232489ad"
+  },
+  "comparison_stdout_equals_complete_results": true,
+  "comparison_stderr_empty": true,
+  "new_artifacts_before_this_receipt": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/comparison_check.py",
+      "bytes": 13430,
+      "sha256": "e4e392a9fcd15eef4ef0f5f33c2ccfbe336012f7a7b770348c265843232489ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON_RESULTS.json",
+      "bytes": 12344,
+      "sha256": "3f8101392bf0d3114c0f7dfbc2cc6e9a7fb38a5216715c8c9c873b25a552dc07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON_RUN.log",
+      "bytes": 12344,
+      "sha256": "3f8101392bf0d3114c0f7dfbc2cc6e9a7fb38a5216715c8c9c873b25a552dc07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON_RUN_RECEIPT.json",
+      "bytes": 482,
+      "sha256": "018bdd74de8a8eaf9538fdbab5966d67e8ea3a8db81566e1dd0a79627c75af0d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON.md",
+      "bytes": 16855,
+      "sha256": "d0faae83f1cbced58acea53845e031822cdc24a22621ad3c5a71df4ac103b102"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/COMPARISON_READ_BOUNDARY.json",
+      "bytes": 5836,
+      "sha256": "a367e7ebe262050630e43b63d75ece2a906dbbb8834153c498e2adfa65e15130"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "status": "accepted_by_author_pending_narrow_source_repair",
+      "required_delta": "Repeat delta != 0 in the no-pure-stationary-state conclusion at author note lines 37-38."
+    }
+  ],
+  "prior_failed_attempts_preserved": true,
+  "no_new_failed_execution": true
+}

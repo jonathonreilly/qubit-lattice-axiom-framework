@@ -1,0 +1,357 @@
+{
+  "created_utc": "2026-09-21T10:59:11.574994+00:00",
+  "preanalysis_seal_sha256": "d176654bf7ea8f12ff264835cb4672a5d52027973f5afc6a340adfec47d60302",
+  "source_sha256": "bf7f83d313d5349f8d5e5bc345d5fbe22aa4f0ed1bebb2355c0d8382266e69ff",
+  "cases": [
+    {
+      "tag": "L17_z10_init0",
+      "L": 17,
+      "initialization": 0,
+      "raw_sha256_recomputed": "d95e17038fcb3582d8b7a0391a8b86dca95c90aae643e1af2d775b8af2f30b29",
+      "samples": 401610,
+      "blocks": 392,
+      "discarded_tail": 202,
+      "local_four_mode_average": 0.3684068582025213,
+      "global_three_flux_variance_average": 0.3622613107743113,
+      "global_over_local": 0.9833185857120182,
+      "descriptive_interval": [
+        0.9673386082718193,
+        0.9997108009381283
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.35165965800382804,
+        0.3629805437800136,
+        0.3721437305390922
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.005469933368178802,
+        -0.009870411079484144,
+        -0.0023787835712493588
+      ],
+      "lag1_local_global": [
+        -0.07020605257890042,
+        -0.09209852818425962
+      ],
+      "first_half_local_global": [
+        0.3659280445798594,
+        0.36033104648109415
+      ],
+      "last_half_local_global": [
+        0.3708856718251832,
+        0.3641915750675286
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0,
+      "gaussian_winding_cutoff": 36,
+      "flags": [],
+      "blocks_sha256": "6e7ba460a253cf4dd84055684c2e84eec585e419bcaba40e945250a37db6e983",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L17_z10_init1",
+      "L": 17,
+      "initialization": 1,
+      "raw_sha256_recomputed": "fa22a7d34e979f9b41965d56cdb67ed6c2e97ddef7fb666fc8ec575c28858930",
+      "samples": 391983,
+      "blocks": 382,
+      "discarded_tail": 815,
+      "local_four_mode_average": 0.3686178036462203,
+      "global_three_flux_variance_average": 0.3663626199825494,
+      "global_over_local": 0.9938820544168958,
+      "descriptive_interval": [
+        0.9768797007477755,
+        1.0101302604533342
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3710021690695275,
+        0.36203039584616714,
+        0.3660552950319544
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.013017515358203705,
+        -0.008961903643128162,
+        0.016640966644383432
+      ],
+      "lag1_local_global": [
+        0.03325686039350937,
+        -0.04181599981849866
+      ],
+      "first_half_local_global": [
+        0.3667188919277019,
+        0.3649902594382008
+      ],
+      "last_half_local_global": [
+        0.37051671536473896,
+        0.3677349805268984
+      ],
+      "quantized_gaussian_variance_over_continuum": 0.9999999999999999,
+      "gaussian_winding_cutoff": 36,
+      "flags": [],
+      "blocks_sha256": "0d271da071cc8413e12ecb12272ee2b08116266fdf3a62b79b191de8486e48e5",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L25_z10_init0",
+      "L": 25,
+      "initialization": 0,
+      "raw_sha256_recomputed": "3863abd4b982ec056ce240def13401fc24b5e7c3f76be7592e8f7c5d540c2f8f",
+      "samples": 126777,
+      "blocks": 123,
+      "discarded_tail": 825,
+      "local_four_mode_average": 0.36562607492385935,
+      "global_three_flux_variance_average": 0.3698115684281861,
+      "global_over_local": 1.0114474699464429,
+      "descriptive_interval": [
+        0.9781036333361127,
+        1.0423486931704475
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3567476498983761,
+        0.3821046112804893,
+        0.37058244410569285
+      ],
+      "individual_flux_means_per_sqrtV": [
+        -0.00612137957317072,
+        -0.008188833841463369,
+        0.0019181910569103667
+      ],
+      "lag1_local_global": [
+        -0.032338385016277435,
+        -0.06624260625304379
+      ],
+      "first_half_local_global": [
+        0.36742777150402917,
+        0.3684782701502749
+      ],
+      "last_half_local_global": [
+        0.3639731735228497,
+        0.3701477117486356
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0,
+      "gaussian_winding_cutoff": 41,
+      "flags": [],
+      "blocks_sha256": "0f8448b2f4e1f25137acc02a14ef0dd7ca7d720894909d0769108ff2c33d00fc",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L25_z10_init1",
+      "L": 25,
+      "initialization": 1,
+      "raw_sha256_recomputed": "8bdf8863c5b7e82e6587d0e188370acceb873c3505c65991bd6ae589e27989f0",
+      "samples": 126566,
+      "blocks": 123,
+      "discarded_tail": 614,
+      "local_four_mode_average": 0.363950297706066,
+      "global_three_flux_variance_average": 0.3705123644986468,
+      "global_over_local": 1.0180301179417648,
+      "descriptive_interval": [
+        0.9868369059995565,
+        1.0500001489891142
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3894645579268315,
+        0.36847783282520524,
+        0.3535947027439045
+      ],
+      "individual_flux_means_per_sqrtV": [
+        -0.024517276422764207,
+        -0.005092416158536523,
+        0.02722465701219508
+      ],
+      "lag1_local_global": [
+        -0.1124075174567176,
+        -0.058081418393483165
+      ],
+      "first_half_local_global": [
+        0.3604364316644609,
+        0.3690635672814225
+      ],
+      "last_half_local_global": [
+        0.3677931236287369,
+        0.37139002732240656
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0,
+      "gaussian_winding_cutoff": 41,
+      "flags": [],
+      "blocks_sha256": "3a2a564c58a58aa8b1fa17a46a2b9e520c9edf4660fefee83b11e778575ab959",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L33_z10_init0",
+      "L": 33,
+      "initialization": 0,
+      "raw_sha256_recomputed": "120c67c1aa82759bb7d881e264f8dec268e7633c7abebb52f6341aa3f1a605a3",
+      "samples": 53713,
+      "blocks": 52,
+      "discarded_tail": 465,
+      "local_four_mode_average": 0.3739652489586496,
+      "global_three_flux_variance_average": 0.36624925638597416,
+      "global_over_local": 0.9793670866633691,
+      "descriptive_interval": [
+        0.9256060545421404,
+        1.0331382881917148
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3724920099431811,
+        0.3569569265370039,
+        0.36929883267773767
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.03362358570283113,
+        -0.003919754910811182,
+        -0.020210112475926332
+      ],
+      "lag1_local_global": [
+        0.28898985625598433,
+        0.3131880380974305
+      ],
+      "first_half_local_global": [
+        0.38082724980196464,
+        0.36855142470376745
+      ],
+      "last_half_local_global": [
+        0.3671032481153346,
+        0.3639470880681808
+      ],
+      "quantized_gaussian_variance_over_continuum": 0.9999999999999999,
+      "gaussian_winding_cutoff": 46,
+      "flags": [
+        "material_lag1_block_dependence"
+      ],
+      "blocks_sha256": "ad1e16e7c3925658a32a6f82c254d99ceece44c7db7977a34acf17ab92c4f706",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L33_z10_init1",
+      "L": 33,
+      "initialization": 1,
+      "raw_sha256_recomputed": "5b3b5fe9b9c84fa1732732308cea50c89a1226e914658d952efcdd5e07968c80",
+      "samples": 55377,
+      "blocks": 54,
+      "discarded_tail": 81,
+      "local_four_mode_average": 0.3626920815308658,
+      "global_three_flux_variance_average": 0.36402307946361645,
+      "global_over_local": 1.0036697738950702,
+      "descriptive_interval": [
+        0.9596276433305394,
+        1.0465808989862257
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3700234769570694,
+        0.35745475589225456,
+        0.3645910055415253
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.0078293390184067,
+        0.005225855557119114,
+        -0.012491683644969047
+      ],
+      "lag1_local_global": [
+        -0.06301928012163795,
+        -0.12034529625326085
+      ],
+      "first_half_local_global": [
+        0.36383762118674146,
+        0.36243000023381844
+      ],
+      "last_half_local_global": [
+        0.3615465418749903,
+        0.3656161586934145
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0,
+      "gaussian_winding_cutoff": 45,
+      "flags": [],
+      "blocks_sha256": "9b768c5235d3c47391ea1626779ccfa3c8d09b3e71f424302e8cd363fced5c95",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L49_z10_init0",
+      "L": 49,
+      "initialization": 0,
+      "raw_sha256_recomputed": "b7e31cd2d3e6171a7c877967e989e72ca665d2f81703b7271d766822f1919bb2",
+      "samples": 17798,
+      "blocks": 17,
+      "discarded_tail": 390,
+      "local_four_mode_average": 0.3644909072350479,
+      "global_three_flux_variance_average": 0.34994388380352,
+      "global_over_local": 0.9600894750931412,
+      "descriptive_interval": [
+        0.9093325227616574,
+        1.014967342335813
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3290640474939967,
+        0.38567184686374323,
+        0.33509575705282
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.03971080619747884,
+        0.047392003676470604,
+        0.08193277310924366
+      ],
+      "lag1_local_global": [
+        -0.05031096668078199,
+        -0.11198306985437859
+      ],
+      "first_half_local_global": [
+        0.3559974999976059,
+        0.342065097523383
+      ],
+      "last_half_local_global": [
+        0.37226578049467174,
+        0.36148839418579787
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0,
+      "gaussian_winding_cutoff": 53,
+      "flags": [],
+      "blocks_sha256": "17fe6e416b46fe93897b0206ac94b43b78edb71e0db5eba142e092d738f6dfe7",
+      "earlier_spectral_block_reduction_agrees": true
+    },
+    {
+      "tag": "L49_z10_init1",
+      "L": 49,
+      "initialization": 1,
+      "raw_sha256_recomputed": "a29ba32d5987463e634f1d3979aa97dc3d478ed92ed70050971f503878398c1d",
+      "samples": 17226,
+      "blocks": 16,
+      "discarded_tail": 842,
+      "local_four_mode_average": 0.36449041628806383,
+      "global_three_flux_variance_average": 0.3665568033854153,
+      "global_over_local": 1.005669249464486,
+      "descriptive_interval": [
+        0.9330139241140171,
+        1.075579266670914
+      ],
+      "individual_flux_second_moments_per_V": [
+        0.3852962571747432,
+        0.3047398158482129,
+        0.4096343371332898
+      ],
+      "individual_flux_means_per_sqrtV": [
+        0.04792131696428554,
+        -0.023402622767857262,
+        -0.03483363560267852
+      ],
+      "lag1_local_global": [
+        0.32082045530770464,
+        0.11773455155094145
+      ],
+      "first_half_local_global": [
+        0.35979940894093165,
+        0.36799050674957356
+      ],
+      "last_half_local_global": [
+        0.36918142363519607,
+        0.36512310002125703
+      ],
+      "quantized_gaussian_variance_over_continuum": 1.0000000000000002,
+      "gaussian_winding_cutoff": 53,
+      "flags": [
+        "material_lag1_block_dependence"
+      ],
+      "blocks_sha256": "cf4868bd059005b34d70d2ab950eda2d317fa1888293cd77065102e7a76b050f",
+      "earlier_spectral_block_reduction_agrees": true
+    }
+  ],
+  "raw_bytes_rehashed": 150150494,
+  "scope": "Adaptive descriptive global/local covariance check. Supplied Gaussian benchmark, not derived effective action. No quantitative mixing, coverage, infinite-volume phase, quantum-vacuum or formation-state result."
+}

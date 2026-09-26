@@ -1,0 +1,65 @@
+{
+  "actions": "Only the assigned deliverable directory was intentionally written; no Git, PR, audit, external-message, or delegation actions.",
+  "artifacts": {
+    "CHECKPOINT.md": {
+      "bytes": 1413,
+      "sha256": "501910a8dd3dfd421300f9a5be34ad8ad17996970ea2c9adb2347e06254323b4"
+    },
+    "EXECUTION_NOTES.md": {
+      "bytes": 797,
+      "sha256": "e0a971c6bb565fbd0183ce70bbe3d9ae7c5de39d0edd9c0aa419eb460bd33b2e"
+    },
+    "INPUT.md": {
+      "bytes": 1765,
+      "sha256": "d530c32b27ce807568dc9a4098995be269d62a04d7b4394f9e49e6ae2ce4b3e8"
+    },
+    "INTERRUPTED_SYMBOLIC_ATTEMPT.log": {
+      "bytes": 3703,
+      "sha256": "851c6cf85beb1c35c268a10badc571d3c8b6dbcdc156facfeadb7e5d677290d8"
+    },
+    "REPORT.md": {
+      "bytes": 18148,
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    "RESULTS.json": {
+      "bytes": 7807,
+      "sha256": "ac086876ff4cf329986f99f64ecf66089aa72ad8a1135f7361b6a15310284595"
+    },
+    "RUN.log": {
+      "bytes": 7807,
+      "sha256": "ac086876ff4cf329986f99f64ecf66089aa72ad8a1135f7361b6a15310284595"
+    },
+    "independent_check.py": {
+      "bytes": 9938,
+      "sha256": "5ebc1ce0750c658649447e0a0d8da146b2ab64bd4fd83d232329281d1df4b3d4"
+    },
+    "seal_evidence.py": {
+      "bytes": 3786,
+      "sha256": "6be72cfae93aa2b9c518232ae1097362c6dfeebbc124e147c1c679c6348e346b"
+    }
+  },
+  "dependency_sha256": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/INPUT.md": "f20f6ebd367456ee24667bd3dcd52f30961ecd1673a21ffc996cd297bcbcdd96",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/independent_check.py": "f1c5145fdde96ef17b4a85f738d0d31456b5f32944edcc59af6ebe38ebb58404"
+  },
+  "directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler",
+  "external_literature_imports": [],
+  "input_source": "Supplied Euler-limit task, reproduced in INPUT.md; the previously sealed independent context-exchange report is the only mathematical source dependency.",
+  "kind": "bounded_independent_pre_primary_source_euler_limit_derivation",
+  "load_bearing_argument": "Uniform exchange floor controls unrestricted finite-block swaps; a proved m^2 7^m Poincare bound, canonical sampling, and the entropy budget imply block replacement. Flux entropy compatibility and the birth-reference cancellation are derived explicitly.",
+  "new_primary_author_sources_read": [],
+  "sealed_at_utc": "2026-09-21T04:06:49.521810+00:00",
+  "simulations_or_author_outcomes_read": [],
+  "status": "Smooth-profile relative-entropy and empirical-profile limits proved under the explicit hypotheses in REPORT.md, including the slow-birth extension; not a post-shock, microscopic-wave, audit, or retained-status result.",
+  "validation": {
+    "all_passed": true,
+    "focused_check_groups": 32,
+    "interrupted_source_sha256": "1ca8aa162584d9c4118ef15ea1cf28d5e621e9fc48f134300b2c6065425e0a04",
+    "interrupted_symbolic_attempt_preserved": true,
+    "python": "3.13.5",
+    "run_log_identical_to_results": true,
+    "sympy": "1.14.0"
+  }
+}

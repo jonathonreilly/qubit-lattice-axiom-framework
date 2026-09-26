@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T20:07:55.977122+00:00",
+  "reason": "The reused lattice index helper is callable, not a dictionary. Correct two call sites; no mathematical change.",
+  "before_sha256": "832f89f37b79430b1ea09a90470b182498d2ad772c4a8b13ee59c34a98fadc92",
+  "after_sha256": "f3f7ffd137678cb282a0ae289e7a4c3fbd99a2e5bacdf59032eb36db9a4e2449"
+}

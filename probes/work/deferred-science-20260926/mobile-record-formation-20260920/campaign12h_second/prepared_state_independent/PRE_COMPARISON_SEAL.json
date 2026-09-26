@@ -1,0 +1,72 @@
+{
+  "kind": "PRE_COMPARISON_SEAL",
+  "time_utc": "2026-09-21T14:09:26.660045+00:00",
+  "boundary": "Independent proof and exact controls completed from the new note and pinned propagation/prior-conditioning inputs. No prepared-state author checker or output has been opened.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_EULER_STATE.md",
+      "bytes": 9226,
+      "sha256": "d0f31d58931cdce1671d252ec77a9ffe2296c03940ab761584245816857317d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_GAUSS_SECTOR_PREPARATION.md",
+      "bytes": 6660,
+      "sha256": "96ff2a8b16e0e5b65d0e4024b4b943102c080024d74948b499a754802006308d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_CONSTRUCTION.md",
+      "bytes": 9788,
+      "sha256": "1403c91ef041838347bc72c9a30a63d4db73619dcca7fd7775158cfaa2586d32"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FLUCTUATION_DERIVATION.md",
+      "bytes": 12027,
+      "sha256": "0c0b3713caa0769a2a711c7a75480f6db59f01bea5088982fb97b1acf7edc85e"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ENVIRONMENT.json",
+      "bytes": 111,
+      "sha256": "3e481c761aa85940ebc6d52b44fffba1f3dac8d36bae9a626d4d82171682e7ee"
+    },
+    {
+      "path": "INDEPENDENT_RECEIPT.json",
+      "bytes": 365,
+      "sha256": "df1c103a52d9232ffc3001d24542f852991c069ef64922f6fc313e9fdf9d3ae5"
+    },
+    {
+      "path": "INDEPENDENT_RESULTS.json",
+      "bytes": 11741,
+      "sha256": "6b265baf393896b6f8c7ffa52e3c5477641957f2654d65997a7ba959daaade16"
+    },
+    {
+      "path": "INDEPENDENT_RUN.log",
+      "bytes": 3872,
+      "sha256": "0a927e46a83e40e09f635ae25a2e7f690d5908d4d50ba703017e0e6e8c25b3bb"
+    },
+    {
+      "path": "INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PRE_COMPARISON_DERIVATION.md",
+      "bytes": 10172,
+      "sha256": "39d34cb03619e57f6818ad5424ce56252e9c6957b8baf9e79d10150a5de028ce"
+    },
+    {
+      "path": "READ_BOUNDARY.json",
+      "bytes": 1817,
+      "sha256": "2ff7d0fa2187a0370f952afdfc30035f618608bad2e8c80f7c0e8f3705e12849"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 11969,
+      "sha256": "0facf14d56ec46cfc439afe30d81ff437275ff5b0ffa6e1421c0986460fe011e"
+    }
+  ],
+  "new_stationary_dynamics_proof": false,
+  "failed_attempts": [],
+  "finding": "Limit covariance, entropy and fixed-local-set assertions hold conditionally on the imported propagator. The finite-N distance-one/two witness needs the first-axis-shell choice of M or a sufficiently-large-N qualification; N=5 with first and second axis shells cancels it exactly."
+}

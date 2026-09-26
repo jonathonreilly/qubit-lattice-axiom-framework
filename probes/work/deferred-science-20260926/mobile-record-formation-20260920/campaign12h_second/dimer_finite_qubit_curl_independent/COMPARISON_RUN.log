@@ -1,0 +1,138 @@
+{
+  "created_utc": "2026-09-21T22:03:25.313245+00:00",
+  "preseal_authenticated": true,
+  "source_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md",
+      "bytes": 10195,
+      "sha256": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_check.py",
+      "bytes": 6643,
+      "sha256": "ece62b774654458b29c94fe07766742d586a483c45e4711ff25157076a8cee3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_ANALYTIC_VECTOR_SOURCE.json",
+      "bytes": 2203,
+      "sha256": "95560e69c1ab9c3501ccc4341ad9161ec37ef308e3801edace2bbfbc230e6db0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_CURL_RUN.log",
+      "bytes": 178,
+      "sha256": "f76e3c132ea06a61738de08c1502d28d6027de242bc8da9635bebe35dc9dd965"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_CURL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_checks/RESULTS.json",
+      "bytes": 9973,
+      "sha256": "2812c4143491b41996fc8380c6b0f535f6ca568ba55bc5615204dacd83a74487"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_checks/discrete_curl.json",
+      "bytes": 457,
+      "sha256": "bc203f40d6efcad5895912670dcfcd7240f9d169fb37ed540c8688b3e73ca610"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_checks/finite_block_limit.json",
+      "bytes": 7494,
+      "sha256": "18d56d2b0015f1e52566fe3d555fdb1d405dd14d5b94a935eaf9acb8f8c9ff39"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_checks/physical_occupation.json",
+      "bytes": 369,
+      "sha256": "99f3439a28f449f94aeb8184e4427343d9c63209bca7107ab78a64f77bb5fd6d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Simon_analytic_vectors_R4.pdf",
+      "bytes": 2326400,
+      "sha256": "fc0424acae0b1e4508560dc2a60a85695dd6122716e703996ceda287716007ac"
+    }
+  ],
+  "complete_author_code_and_results_read": true,
+  "author_code_executed": false,
+  "author_three_group_files_match_summary": true,
+  "direct_quadratic_weighted_norm_comparisons": [
+    {
+      "K": 4,
+      "independent_norm": 0.16112891620230296,
+      "difference": 5.551115123125783e-17
+    },
+    {
+      "K": 8,
+      "independent_norm": 0.08013959593517363,
+      "difference": 0.0
+    },
+    {
+      "K": 16,
+      "independent_norm": 0.04005115649369191,
+      "difference": 3.469446951953614e-17
+    },
+    {
+      "K": 32,
+      "independent_norm": 0.020021979451734343,
+      "difference": 3.8163916471489756e-17
+    },
+    {
+      "K": 64,
+      "independent_norm": 0.010010182133919602,
+      "difference": 1.214306433183765e-17
+    },
+    {
+      "K": 128,
+      "independent_norm": 0.0050048990751193545,
+      "difference": 3.469446951953614e-18
+    }
+  ],
+  "dense_spectral_K4_Weyl_comparisons": [
+    {
+      "time": 0.25,
+      "observable": 0,
+      "independent_real": 0.8877922235295824,
+      "independent_imag": 1.3877787807814457e-16,
+      "difference": 3.608224830031759e-16
+    },
+    {
+      "time": 0.25,
+      "observable": 1,
+      "independent_real": 0.805777442228611,
+      "independent_imag": -8.326672684688674e-17,
+      "difference": 6.713178136967714e-16
+    },
+    {
+      "time": 0.75,
+      "observable": 0,
+      "independent_real": 0.8665901789965248,
+      "independent_imag": 1.1102230246251565e-16,
+      "difference": 2.7755575615628914e-16
+    },
+    {
+      "time": 0.75,
+      "observable": 1,
+      "independent_real": 0.8085530454441565,
+      "independent_imag": -1.1102230246251565e-16,
+      "difference": 2.7755575615628914e-16
+    },
+    {
+      "time": 1.25,
+      "observable": 0,
+      "independent_real": 0.8436255292201555,
+      "independent_imag": 1.3877787807814457e-16,
+      "difference": 3.7238012298709097e-16
+    },
+    {
+      "time": 1.25,
+      "observable": 1,
+      "independent_real": 0.8142387177479267,
+      "independent_imag": -2.7755575615628914e-16,
+      "difference": 5.23691153334427e-16
+    }
+  ],
+  "all_24_Gaussian_targets_and_errors_checked": true,
+  "max_Gaussian_target_discrepancy": 0.0,
+  "scope": "Direct monomial coefficients and dense spectral decomposition were independently assembled. K>4 finite Weyl rows were authenticated and their target/error arithmetic checked, not dynamically recomputed."
+}

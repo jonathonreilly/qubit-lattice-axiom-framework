@@ -1,0 +1,698 @@
+{
+  "marked_moves": {
+    "site_reuse": {
+      "site": [
+        0,
+        0,
+        0
+      ],
+      "births_at_site": 2,
+      "old_records_preserved": true,
+      "first_slide": [
+        [
+          1,
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          2,
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    "plaquette": {
+      "distinct_marked_channels": 2,
+      "same_geometric_target": true,
+      "projected_rate": "2 nu",
+      "both_exact_inverses": true
+    },
+    "reflecting_cube_turn": {
+      "records_before_after": [
+        6,
+        8
+      ],
+      "old_records_moved_before_birth": 2,
+      "axis_counts": [
+        {
+          "1": 1,
+          "2": 1,
+          "0": 1
+        },
+        {
+          "0": 2,
+          "2": 1
+        },
+        {
+          "0": 2,
+          "2": 2
+        }
+      ]
+    }
+  },
+  "finite_graphs": {
+    "all_labeled_four_vertex_graphs_with_perfect_matching": [
+      {
+        "name": "four_vertex_mask_12",
+        "vertices": 4,
+        "edges": 2,
+        "matchings": 4,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_13",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_14",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_15",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_18",
+        "vertices": 4,
+        "edges": 2,
+        "matchings": 4,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_19",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_22",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_23",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_26",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_27",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_28",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_29",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_30",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 7,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 8,
+          "slide": 8
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_31",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_33",
+        "vertices": 4,
+        "edges": 2,
+        "matchings": 4,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_35",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_37",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_39",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_41",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_43",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_44",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_45",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 7,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 8,
+          "slide": 8
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_46",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_47",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_49",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_50",
+        "vertices": 4,
+        "edges": 3,
+        "matchings": 5,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 5,
+          "slide": 4
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_51",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 7,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 8,
+          "slide": 8
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_53",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_54",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_55",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_57",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_58",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_59",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_60",
+        "vertices": 4,
+        "edges": 4,
+        "matchings": 6,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 6,
+          "slide": 10
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_61",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_62",
+        "vertices": 4,
+        "edges": 5,
+        "matchings": 8,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 9,
+          "slide": 16
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      },
+      {
+        "name": "four_vertex_mask_63",
+        "vertices": 4,
+        "edges": 6,
+        "matchings": 10,
+        "full_matchings": 3,
+        "channels": {
+          "birth": 12,
+          "slide": 24
+        },
+        "max_events_in_constructed_filling_path": 2,
+        "max_shortest_distance_to_full": 2
+      }
+    ],
+    "additional_graphs": [
+      {
+        "name": "complete_K6",
+        "vertices": 6,
+        "edges": 15,
+        "matchings": 76,
+        "full_matchings": 15,
+        "channels": {
+          "birth": 150,
+          "slide": 480
+        },
+        "max_events_in_constructed_filling_path": 3,
+        "max_shortest_distance_to_full": 3
+      },
+      {
+        "name": "complete_bipartite_K3_3",
+        "vertices": 6,
+        "edges": 9,
+        "matchings": 34,
+        "full_matchings": 6,
+        "channels": {
+          "birth": 63,
+          "slide": 108
+        },
+        "max_events_in_constructed_filling_path": 3,
+        "max_shortest_distance_to_full": 3
+      },
+      {
+        "name": "triangular_prism",
+        "vertices": 6,
+        "edges": 9,
+        "matchings": 32,
+        "full_matchings": 4,
+        "channels": {
+          "birth": 57,
+          "slide": 120
+        },
+        "max_events_in_constructed_filling_path": 3,
+        "max_shortest_distance_to_full": 3
+      },
+      {
+        "name": "triangle_with_three_leaves",
+        "vertices": 6,
+        "edges": 6,
+        "matchings": 14,
+        "full_matchings": 1,
+        "channels": {
+          "birth": 21,
+          "slide": 30
+        },
+        "max_events_in_constructed_filling_path": 3,
+        "max_shortest_distance_to_full": 3
+      },
+      {
+        "name": "cycle_10",
+        "vertices": 10,
+        "edges": 10,
+        "matchings": 123,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 340,
+          "slide": 420
+        },
+        "max_events_in_constructed_filling_path": 5,
+        "max_shortest_distance_to_full": 5
+      },
+      {
+        "name": "ladder_2_by_5",
+        "vertices": 10,
+        "edges": 13,
+        "matchings": 228,
+        "full_matchings": 8,
+        "channels": {
+          "birth": 671,
+          "slide": 1060
+        },
+        "max_events_in_constructed_filling_path": 5,
+        "max_shortest_distance_to_full": 5
+      },
+      {
+        "name": "reflecting_cube",
+        "vertices": 8,
+        "edges": 12,
+        "matchings": 108,
+        "full_matchings": 9,
+        "channels": {
+          "birth": 264,
+          "slide": 480
+        },
+        "max_events_in_constructed_filling_path": 4,
+        "max_shortest_distance_to_full": 4
+      },
+      {
+        "name": "edge_plus_cycle_6",
+        "vertices": 8,
+        "edges": 7,
+        "matchings": 36,
+        "full_matchings": 2,
+        "channels": {
+          "birth": 78,
+          "slide": 72
+        },
+        "max_events_in_constructed_filling_path": 4,
+        "max_shortest_distance_to_full": 4
+      }
+    ]
+  },
+  "finite_generators": {
+    "path4": {
+      "mean_filling_time_from_empty": "(beta + 11*kappa)/(6*beta*kappa)",
+      "full_packing_probability_positive_kappa": "1",
+      "full_packing_probability_kappa_zero": "2/3",
+      "expected_site_birth_counts": [
+        "5/6",
+        "7/6",
+        "7/6",
+        "5/6"
+      ]
+    },
+    "cycle4": {
+      "expected_site_birth_counts": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    },
+    "no_perfect_matching_countercontrol": {
+      "graph": "path3",
+      "max_records": 2,
+      "vertices": 3
+    }
+  }
+}
+{
+  "spherical_integrals": "E n=0; E n_i n_j=delta_ij/3",
+  "proper_cubic_rotations": 24,
+  "exact_pure_projector_fixtures": 6,
+  "density_lower_bound": "(1-|epsilon|)/(4*pi)>0",
+  "site_hazard": "beta*r_x",
+  "empty_neighbor_conditional_rule": "unused because site hazard is zero",
+  "local_quantum_recognition_countercontrol": {
+    "antipodal_input": "P_z tensor P_-z",
+    "nonpartner_input": "P_z tensor P_x",
+    "overlap_trace": "1/2",
+    "consequence": "No perfect deterministic discrimination of these unknown physical-input alternatives without extra information."
+  }
+}
+PASS: independent local/marked, all-graph augmentation and finite-generator controls.

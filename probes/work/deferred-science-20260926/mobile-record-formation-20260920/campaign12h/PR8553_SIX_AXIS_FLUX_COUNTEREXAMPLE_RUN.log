@@ -1,0 +1,61 @@
+PASS: D1 T4: the uniform sphere has <s_z^2> = 1/3, <s_z^4> = 1/5, <s_x^2 s_z^2> = 1/15; the tilted state has <s_i s_j> = delta_ij/3 + l_i l_j/15 - delta_ij l^2/45 to second order (20 rational tilts); hence sqrt3 Pi_ij = (rho/3) delta_ij + A g_i g_j + B g^2 delta_ij with A = (3/5 - rho)/rho and B = -1/(5 rho)
+PASS: D2 T4: for the six-axis menu <s_1^2> = 1/3 + l_1^2/9 - (l_2^2 + l_3^2)/18 to second order and <s_1 s_2> vanishes identically: the six-axis gas has no g_1 g_2 term in its momentum flux and is not isotropic at second order
+{
+  "PR": 8553,
+  "head": "e07ae767d484763bd9446eb2d5c4c9b05643dd1c",
+  "probabilities": [
+    "18/65",
+    "12/65",
+    "3/65",
+    "18/65",
+    "2/65",
+    "6/65",
+    "6/65"
+  ],
+  "momentum": [
+    "9/65",
+    "16/65",
+    "0"
+  ],
+  "tilted_product_witness": "Occupied weights proportional to (2,1/2,3,1/3,1,1), hence exp(lambda.s) with lambda=(log2,log3,0); opposite-pair weights equal, so the stated scattering adds zero mean flux.",
+  "correct_exact_tensor": "Pi_ij=delta_ij*q_i-g_i*g_j for six-axis unit-rate streaming",
+  "direct_event_tensor": [
+    [
+      "894/4225",
+      "-144/4225",
+      "0"
+    ],
+    [
+      "-144/4225",
+      "1044/4225",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "12/65"
+    ]
+  ],
+  "original_bond_flux_tensor": [
+    [
+      "894/4225",
+      "-144/4225",
+      "0"
+    ],
+    [
+      "-144/4225",
+      "1044/4225",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "12/65"
+    ]
+  ],
+  "off_diagonal_counterexample": "-144/4225",
+  "original_family_D_passes": 2,
+  "coverage_gap": "D2 and refuter W4 calculate only one-site mixed moments. The negative product of first moments contributed by exchange is omitted from their asserted conclusion about the full flux.",
+  "scope": "Refutes the six-axis no-g_i_g_j statement in T4. Does not refute its anisotropy conclusion, the sphere calculation, the local continuity identities or measured sink forces.",
+  "source_sha256": "c2f83269145621dbadddd6356335e7a5b1e99af725367c31a75ecf1e305d2668"
+}

@@ -1,0 +1,16 @@
+PASS: full_simplex_entropy_metric_inverse
+PASS: pure_vector_species_reconstruction
+PASS: positive_quadratic_wave_energy
+PASS: quadratic_entropy_flux_is_Poynting_component_0
+PASS: quadratic_entropy_flux_is_Poynting_component_1
+PASS: quadratic_entropy_flux_is_Poynting_component_2
+PASS: exact_orbit_and_total_record_current_0
+PASS: exact_orbit_and_total_record_current_1
+PASS: exact_orbit_and_total_record_current_2
+PASS: energy_continuity_without_Gauss_assumption
+PASS: stress_identity_with_both_divergence_terms
+PASS: unconstrained_product_requires_Gauss_defect
+PASS: second_order_record_energy_coefficient_A
+PASS: second_order_record_energy_coefficient_B
+PASS: second_order_total_record_energy_coefficient
+TOTAL: 15 PASS

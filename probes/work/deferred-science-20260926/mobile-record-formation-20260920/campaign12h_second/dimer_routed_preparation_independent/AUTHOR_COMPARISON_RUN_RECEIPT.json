@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T19:00:37.415531+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/compare_author.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.1723587499000132,
+  "script_sha256": "e6eba94e53bdfda7002231861d95ecf932c2d9e7bbc3c9d6876154faa07810ea"
+}

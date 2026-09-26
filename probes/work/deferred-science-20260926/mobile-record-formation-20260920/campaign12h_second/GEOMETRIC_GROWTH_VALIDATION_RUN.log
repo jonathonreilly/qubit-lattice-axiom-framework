@@ -1,0 +1,8 @@
+{
+  "fixtures": 24,
+  "accepted_channels": 5069,
+  "all_pass": true,
+  "source_sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+  "binary_sha256": "ffc3e77cf1793b5acb6fdb792563ee13db11ed73a698b2652dbff79300b4f10d",
+  "oracle_sha256": "9f4e0c144e44d847d3b5b898a5bb93849989e1465f3416393cf08e4b1e50a16b"
+}

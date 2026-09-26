@@ -1,0 +1,20 @@
+{
+  "charpoly_generator": "z",
+  "difference": "-(-z + z)*(z + z)*(3*alpha**2*nu1**2*rho**5*z**2 + 3*alpha**2*nu1**2*rho**5*z**2 - 3*alpha**2*nu1**2*rho**4*z**2 - 3*alpha**2*nu1**2*rho**4*z**2 + 3*alpha**2*nu2**2*rho**5*z**2 + 3*alpha**2*nu2**2*rho**5*z**2 - 3*alpha**2*nu2**2*rho**4*z**2 - 3*alpha**2*nu2**2*rho**4*z**2 + 3*alpha**2*nu3**2*rho**5*z**2 + 3*alpha**2*nu3**2*rho**5*z**2 - 3*alpha**2*nu3**2*rho**4*z**2 - 3*alpha**2*nu3**2*rho**4*z**2 + z**4 + z**2*z**2 + z**4)",
+  "difference_after_generator_substitution": "0",
+  "generator_assumptions": {
+    "commutative": true
+  },
+  "generator_equals_requested_z": false,
+  "requested_assumptions": {
+    "commutative": true,
+    "complex": true,
+    "extended_real": true,
+    "finite": true,
+    "hermitian": true,
+    "imaginary": false,
+    "infinite": false,
+    "real": true
+  },
+  "script_sha256": "3995948980b096eb23b0a874b2a805d17036c4fa33d8ef630df782bd46f70a72"
+}

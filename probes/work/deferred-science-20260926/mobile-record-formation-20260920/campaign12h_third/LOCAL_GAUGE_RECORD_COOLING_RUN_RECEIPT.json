@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py"
+  ],
+  "started_utc": "2026-09-22T18:09:54.541263+00:00",
+  "completed_utc": "2026-09-22T18:09:55.541673+00:00",
+  "returncode": 0,
+  "script_sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+}

@@ -1,0 +1,81 @@
+{
+  "symbolic_Curl_square_and_divergence": true,
+  "symbolic_generator_Hessian_identity": true,
+  "symmetric_covariance_and_CCR_preserved": true,
+  "positive_energy_derivative_bracket_identity": true,
+  "normalization_c": "2/7",
+  "exact_Fourier_rows": [
+    {
+      "Q": [
+        1,
+        0,
+        0
+      ],
+      "onsite_generator_energy_eigenvalues": {
+        "0": 2,
+        "-3/7": 2,
+        "3/7": 2
+      },
+      "derivative_bracket_rank": 4,
+      "positive_potential_energy_eigenvalues": {
+        "0": 1,
+        "1": 5
+      }
+    },
+    {
+      "Q": [
+        1,
+        2,
+        0
+      ],
+      "onsite_generator_energy_eigenvalues": {
+        "-3*sqrt(5)/7": 2,
+        "3*sqrt(5)/7": 2,
+        "0": 2
+      },
+      "derivative_bracket_rank": 4,
+      "positive_potential_energy_eigenvalues": {
+        "5": 2,
+        "0": 1,
+        "1": 3
+      }
+    },
+    {
+      "Q": [
+        2,
+        -1,
+        2
+      ],
+      "onsite_generator_energy_eigenvalues": {
+        "-9/7": 2,
+        "9/7": 2,
+        "0": 2
+      },
+      "derivative_bracket_rank": 4,
+      "positive_potential_energy_eigenvalues": {
+        "9": 2,
+        "0": 1,
+        "1": 3
+      }
+    },
+    {
+      "Q": [
+        -3,
+        4,
+        0
+      ],
+      "onsite_generator_energy_eigenvalues": {
+        "-15/7": 2,
+        "15/7": 2,
+        "0": 2
+      },
+      "derivative_bracket_rank": 4,
+      "positive_potential_energy_eigenvalues": {
+        "25": 2,
+        "0": 1,
+        "1": 3
+      }
+    }
+  ],
+  "scope": "Indefinite Hessian only for the specified onsite CCR and exact full-helicity curl drift. The canonical potential escape changes the observable bracket; neither construction is a microscopic record generator."
+}

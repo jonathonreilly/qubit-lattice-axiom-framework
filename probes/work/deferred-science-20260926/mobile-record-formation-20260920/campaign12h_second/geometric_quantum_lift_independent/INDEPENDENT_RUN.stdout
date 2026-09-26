@@ -1,0 +1,75 @@
+orthogonal lift square
+orthogonal lift ladder
+orthogonal lift cube
+[
+  {
+    "v": "0",
+    "row": 0,
+    "column": 8,
+    "bra_configuration": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      3
+    ],
+    "ket_configuration": [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    "commutator_exact": "-5/16 - I/16",
+    "nonzero_commutator_entries": 7104
+  },
+  {
+    "v": "1",
+    "row": 0,
+    "column": 8,
+    "bra_configuration": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      3
+    ],
+    "ket_configuration": [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    "commutator_exact": "-5/16 - I/16",
+    "nonzero_commutator_entries": 8256
+  },
+  {
+    "v": "2/3",
+    "row": 0,
+    "column": 8,
+    "bra_configuration": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      3
+    ],
+    "ket_configuration": [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    "commutator_exact": "-5/16 - I/16",
+    "nonzero_commutator_entries": 8256
+  }
+]
+All independent exact controls passed.

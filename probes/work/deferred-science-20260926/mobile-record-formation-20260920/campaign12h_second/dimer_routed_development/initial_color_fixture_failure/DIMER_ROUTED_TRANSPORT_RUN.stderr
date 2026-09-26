@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 316, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 307, in main
+    value=fn();(out/(name+'.json')).write_text(json.dumps(value,indent=2,allow_nan=False)+'\n')
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 193, in symmetry_and_code
+    assert set(counts)==set(range(14))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

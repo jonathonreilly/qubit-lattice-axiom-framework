@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_charged_record_loop_readout_check.py"
+  ],
+  "started_utc": "2026-09-22T17:48:04.983632+00:00",
+  "completed_utc": "2026-09-22T17:48:19.222076+00:00",
+  "returncode": 0,
+  "script_sha256": "84666c00f11256630fb1f2a7f5ad6de7a98c81c7a93e1b0953b3e3dd1f2ed7a3"
+}

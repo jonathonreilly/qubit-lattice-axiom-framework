@@ -1,0 +1,38 @@
+{
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+      "bytes": 21955,
+      "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+      "role": "Only prior mathematical report consulted; new closure and heat-kernel proof are independent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/PRE_SOURCE_SEAL.json",
+      "bytes": 6526,
+      "sha256": "bcc3bc4ccdefc35df7fd42c8427b2fa7bd8350dab8a7471692ea169acd683c88",
+      "role": "Prior seal identity"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/independent_check.py",
+      "bytes": 12533,
+      "sha256": "f27061a13b4a84a5098a42a550d0e2395e9f34cd059dc413a131eeec832ce31b",
+      "role": "Prior source identity only; not imported or rerun"
+    }
+  ],
+  "instruction_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Unchanged process snapshot"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Unchanged process snapshot"
+    }
+  ],
+  "primary_centering_source_access": false,
+  "new_external_mathematical_imports": []
+}

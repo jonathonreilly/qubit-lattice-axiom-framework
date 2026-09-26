@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T20:47:49.015346+00:00",
+  "before_sha256": "a4d84361b1c43e385f15defb067fc7256d159ee6acd301459ec41951e330303c",
+  "after_sha256": "37751f6e2e7d26d1b61134efdb00af9872a4da52d4de5891a75685e6808964d7",
+  "change": "Simplify exact symbolic matrix/trace equality; no theorem or expected value changed."
+}

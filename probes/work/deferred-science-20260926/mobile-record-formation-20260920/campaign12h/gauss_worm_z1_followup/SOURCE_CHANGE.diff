@@ -1,0 +1,13 @@
+--- original_screen.cpp
++++ z1_followup.cpp
+@@ -114,8 +114,8 @@
+  const std::string output=argv[1];uint64_t burn=std::stoull(argv[2]),production=std::stoull(argv[3]);
+  const int count=std::stoi(argv[4]);if(count<1||count>8)return 2;
+  std::vector<Job> jobs;int case_index=0;
+- for(int L:{9,13,17})for(double z:{.2,1.,4.}){
+-  for(int initial:{0,1})jobs.push_back({L,z,initial,uint64_t(20260921300ULL+2*case_index+initial)});
++ for(int L:{17,25,33,49})for(double z:{1.}){
++  for(int initial:{0,1})jobs.push_back({L,z,initial,uint64_t(20260921400ULL+2*case_index+initial)});
+   case_index++;
+  }
+  std::atomic<size_t> next{0};std::atomic<bool> failed{false};std::vector<std::thread> workers;

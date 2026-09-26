@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-22T21:30:52.315142+00:00",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AUTHOR_SEAL.json",
+      "bytes": 2597,
+      "sha256": "f48d6ee6d9e013bcc12019164ede7f8593feb93e62cd6076e753573b2126ef26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/HOMOGENEOUS_FIELD_STAR_AUTHOR_SEAL.json",
+      "bytes": 2532,
+      "sha256": "67624b8eafbc339d4c581165ef01ef366035752bfef1e8404faf34edcf6aceaf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/UNIFORM_LOCAL_RING_AUTHOR_SEAL.json",
+      "bytes": 5925,
+      "sha256": "4b52f52f820ed5efbe01b18d47c0166018f0c421cd507fb55f171d893f8a7ce5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/uniform_local_dynamics_independent/FINAL_SEAL.json",
+      "bytes": 21317,
+      "sha256": "cc213db7ba3b00cce3ae52d8206878219257bda27b831bfdad93129a9dbcafcf"
+    }
+  ],
+  "scope": "Initial source of specified prepared spin-half models; number-offset instrument identity; fixed-volume conditional star energy variance.",
+  "limits": [
+    "No integrated heating theorem or general no-go.",
+    "Mean energy injection depends on record rest-energy/chemical-potential convention.",
+    "Energy-variance statement is fixed-volume; no reservoir-resource bound claimed.",
+    "Independent check pending."
+  ],
+  "draft_write_event": "An apply_patch JavaScript call failed to parse because of unescaped Markdown backticks in its template literal; no file was written by that failed call. Retried with plain filenames. No mathematical assertion was changed."
+}

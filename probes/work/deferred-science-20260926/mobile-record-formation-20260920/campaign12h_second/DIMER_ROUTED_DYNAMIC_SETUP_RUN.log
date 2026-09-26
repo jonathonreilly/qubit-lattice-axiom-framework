@@ -1,0 +1,90 @@
+geometry verified 16 winding
+geometry verified 16 irregular
+geometry verified 32 winding
+geometry verified 32 irregular
+geometry verified 64 winding
+geometry verified 64 irregular
+geometry verified 128 winding
+geometry verified 128 irregular
+state/DFT/RNG verified 16 winding 0
+state/DFT/RNG verified 16 winding 1
+state/DFT/RNG verified 16 winding 2
+state/DFT/RNG verified 16 winding 3
+state/DFT/RNG verified 16 irregular 0
+state/DFT/RNG verified 16 irregular 1
+state/DFT/RNG verified 16 irregular 2
+state/DFT/RNG verified 16 irregular 3
+state/DFT/RNG verified 128 irregular 0
+{
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/MANIFEST.json",
+    "bytes": 673550,
+    "sha256": "4db87d1484554a0173ca07a43c82fdd6148604416b2674da7fe7a57b930acc00"
+  },
+  "histories": 960,
+  "benchmarks": [
+    {
+      "N": 16,
+      "kind": "winding",
+      "seed": 202609219600,
+      "attempts": 3469,
+      "seconds": 0.000227625
+    },
+    {
+      "N": 16,
+      "kind": "winding",
+      "seed": 202609219601,
+      "attempts": 3366,
+      "seconds": 0.000221709
+    },
+    {
+      "N": 16,
+      "kind": "winding",
+      "seed": 202609219602,
+      "attempts": 3421,
+      "seconds": 0.000239708
+    },
+    {
+      "N": 16,
+      "kind": "winding",
+      "seed": 202609219603,
+      "attempts": 3544,
+      "seconds": 0.000222916
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "seed": 202609219600,
+      "attempts": 3469,
+      "seconds": 0.000281416
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "seed": 202609219601,
+      "attempts": 3366,
+      "seconds": 0.000285458
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "seed": 202609219602,
+      "attempts": 3421,
+      "seconds": 0.000273667
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "seed": 202609219603,
+      "attempts": 3544,
+      "seconds": 0.000282375
+    },
+    {
+      "N": 128,
+      "kind": "irregular",
+      "seed": 202609230800,
+      "attempts": 14092404,
+      "seconds": 0.602034
+    }
+  ]
+}

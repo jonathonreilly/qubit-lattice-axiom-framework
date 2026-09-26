@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-09-22T00:09:35.159210+00:00",
+  "boundary": "Complete new note read and unchanged actual rate/current premises reused; previous independent operational scope reused by identity. No author new code/results accessed.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md",
+      "bytes": 4999,
+      "sha256": "7cfff2132cf070ee69c5dd80bd868e6a2568bed6343dc99dbf5d388a770c4cf8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_mixed_drift_independent/REPORT.md",
+      "bytes": 6584,
+      "sha256": "6a6a4123536a361311dd6278487b190bd61f4e738d9df832f10c10c58697b02c"
+    }
+  ]
+}

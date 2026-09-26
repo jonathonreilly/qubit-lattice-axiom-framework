@@ -1,0 +1,305 @@
+{
+  "created_utc": "2026-09-22T22:05:22.446740+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/static_source_coulomb_check.py",
+    "bytes": 7865,
+    "sha256": "f03fb4c1b6cad10b9a95e13097f5f81605010a49f9f3d09e5d14fb0da1d858c7"
+  },
+  "cubic_affine_controls": [
+    {
+      "period": 6,
+      "separation": 1,
+      "vertices": 216,
+      "charge_laplacian_residual": 2.220446049250313e-16,
+      "integer_reference_norm_squared": 1.0,
+      "longitudinal_norm_squared": 0.33179012345679004,
+      "harmonic_norm_squared": 0.004629629629629629,
+      "transverse_reference_norm_squared": 0.6635802469135802,
+      "pair_Green_formula": 0.33179012345679015,
+      "orthogonality_errors": [
+        -4.336808689942018e-19,
+        3.469446951953614e-18,
+        0.0
+      ],
+      "harmonic_total_flux": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "harmonic_warning": "Nonzero source dipole prevents assuming zero harmonic electric component in this sector."
+    },
+    {
+      "period": 6,
+      "separation": 2,
+      "vertices": 216,
+      "charge_laplacian_residual": 2.220446049250313e-16,
+      "integer_reference_norm_squared": 2.0,
+      "longitudinal_norm_squared": 0.41240179573512903,
+      "harmonic_norm_squared": 0.018518518518518517,
+      "transverse_reference_norm_squared": 1.5690796857463523,
+      "pair_Green_formula": 0.41240179573512914,
+      "orthogonality_errors": [
+        0.0,
+        3.469446951953614e-17,
+        2.168404344971009e-19
+      ],
+      "harmonic_total_flux": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "harmonic_warning": "Nonzero source dipole prevents assuming zero harmonic electric component in this sector."
+    },
+    {
+      "period": 8,
+      "separation": 3,
+      "vertices": 512,
+      "charge_laplacian_residual": 8.326672684688674e-17,
+      "integer_reference_norm_squared": 3.0,
+      "longitudinal_norm_squared": 0.44316680805386677,
+      "harmonic_norm_squared": 0.017578125,
+      "transverse_reference_norm_squared": 2.5392550669461342,
+      "pair_Green_formula": 0.4431668080538667,
+      "orthogonality_errors": [
+        0.0,
+        0.0,
+        5.963111948670274e-19
+      ],
+      "harmonic_total_flux": [
+        3.0,
+        0.0,
+        0.0
+      ],
+      "harmonic_warning": "Nonzero source dipole prevents assuming zero harmonic electric component in this sector."
+    },
+    {
+      "period": 12,
+      "separation": 4,
+      "vertices": 1728,
+      "charge_laplacian_residual": 2.220446049250313e-16,
+      "integer_reference_norm_squared": 4.0,
+      "longitudinal_norm_squared": 0.46127012931637223,
+      "harmonic_norm_squared": 0.009259259259259259,
+      "transverse_reference_norm_squared": 3.5294706114243684,
+      "pair_Green_formula": 0.4612701293163723,
+      "orthogonality_errors": [
+        8.673617379884035e-19,
+        4.85722573273506e-17,
+        5.149960319306146e-19
+      ],
+      "harmonic_total_flux": [
+        4.0,
+        0.0,
+        0.0
+      ],
+      "harmonic_warning": "Nonzero source dipole prevents assuming zero harmonic electric component in this sector."
+    }
+  ],
+  "exact_square": {
+    "incidence": [
+      [
+        "1",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-1",
+        "1"
+      ]
+    ],
+    "source": [
+      "1",
+      "0",
+      "-1",
+      "0"
+    ],
+    "reference": [
+      "1",
+      "1",
+      "0",
+      "0"
+    ],
+    "longitudinal": [
+      "1/2",
+      "1/2",
+      "-1/2",
+      "-1/2"
+    ],
+    "electric_offset": "1",
+    "flat_connection_alpha": "1/2",
+    "exact_energy": "4*n**2 + 4*n + 2",
+    "decomposition": "||E||^2=1+4(n+1/2)^2; neutral loop has 4n^2.",
+    "scope": "Exact affine Gauss decomposition on one loop; not a cubic photon model."
+  },
+  "twisted_pendulum": {
+    "rows": [
+      {
+        "g": 1.2,
+        "h": 1.44,
+        "ground_energies_at_alpha_0_quarter_half": [
+          0.4374682281149489,
+          0.44882987603912244,
+          0.46125575676502567
+        ],
+        "twist_energy_differences": [
+          0.0,
+          0.011361647924173546,
+          0.023787528650076772
+        ],
+        "max_cutoff_disagreement": 1.0058620603103918e-13,
+        "max_eigenpair_residual": 1.3466091997089857e-13,
+        "max_endpoint_probability": 3.842425062231945e-96,
+        "leading_instanton_exponential_for_orientation_only": 0.0038659201394728076
+      },
+      {
+        "g": 1.0,
+        "h": 1.0,
+        "ground_energies_at_alpha_0_quarter_half": [
+          0.4649351477123032,
+          0.46626127808406276,
+          0.46760213742980744
+        ],
+        "twist_energy_differences": [
+          0.0,
+          0.0013261303717595485,
+          0.002666989717504231
+        ],
+        "max_cutoff_disagreement": 1.1013412404281553e-13,
+        "max_eigenpair_residual": 1.1855705096031306e-13,
+        "max_endpoint_probability": 1.5332998007202824e-96,
+        "leading_instanton_exponential_for_orientation_only": 0.00033546262790251185
+      },
+      {
+        "g": 0.85,
+        "h": 0.7224999999999999,
+        "ground_energies_at_alpha_0_quarter_half": [
+          0.47615078297782154,
+          0.4762263295092582,
+          0.476301926939552
+        ],
+        "twist_energy_differences": [
+          0.0,
+          7.554653143665435e-05,
+          0.00015114396173043776
+        ],
+        "max_cutoff_disagreement": 3.552713678800501e-14,
+        "max_eigenpair_residual": 2.1761216512500406e-14,
+        "max_endpoint_probability": 1.0616214462711305e-99,
+        "leading_instanton_exponential_for_orientation_only": 1.553112691231501e-05
+      },
+      {
+        "g": 0.7,
+        "h": 0.48999999999999994,
+        "ground_energies_at_alpha_0_quarter_half": [
+          0.4841678777721436,
+          0.48416837215790953,
+          0.48416886654612357
+        ],
+        "twist_energy_differences": [
+          0.0,
+          4.943857659367445e-07,
+          9.887739799707695e-07
+        ],
+        "max_cutoff_disagreement": 5.92303983637521e-14,
+        "max_eigenpair_residual": 5.814381799894651e-14,
+        "max_endpoint_probability": 2.55596236739528e-96,
+        "leading_instanton_exponential_for_orientation_only": 8.118538349144025e-08
+      },
+      {
+        "g": 0.6,
+        "h": 0.36,
+        "ground_energies_at_alpha_0_quarter_half": [
+          0.4884778364119243,
+          0.4884778380242659,
+          0.48847783963668506
+        ],
+        "twist_energy_differences": [
+          0.0,
+          1.6123415935709318e-09,
+          3.2247607362201336e-09
+        ],
+        "max_cutoff_disagreement": 5.2013948703688584e-14,
+        "max_eigenpair_residual": 3.423455619786324e-14,
+        "max_endpoint_probability": 5.487889815669049e-96,
+        "leading_instanton_exponential_for_orientation_only": 2.233631436203166e-10
+      }
+    ],
+    "scope": "Numerical fixed-box flat-connection sensitivity, not a certified exponential bound; the proof is analytic."
+  },
+  "lattice_Green_controls": {
+    "rows": [
+      {
+        "axis_distance": 0,
+        "infinite_lattice_G": 0.252731009858663,
+        "quadrature_error_estimate": 1.419749679371047e-14
+      },
+      {
+        "axis_distance": 1,
+        "infinite_lattice_G": 0.08606434319199634,
+        "quadrature_error_estimate": 2.066117682717887e-15,
+        "four_pi_r_times_G": 1.0815164332320257,
+        "r_squared_relative_correction": 0.08151643323202573
+      },
+      {
+        "axis_distance": 2,
+        "infinite_lattice_G": 0.04288931454236575,
+        "quadrature_error_estimate": 2.4423697258622684e-13,
+        "four_pi_r_times_G": 1.0779260438703848,
+        "r_squared_relative_correction": 0.3117041754815393
+      },
+      {
+        "axis_distance": 4,
+        "infinite_lattice_G": 0.02028886727529324,
+        "quadrature_error_estimate": 2.8928969422738126e-15,
+        "four_pi_r_times_G": 1.0198297021075138,
+        "r_squared_relative_correction": 0.3172752337202205
+      },
+      {
+        "axis_distance": 8,
+        "infinite_lattice_G": 0.009988047383436234,
+        "quadrature_error_estimate": 1.297837202170228e-13,
+        "four_pi_r_times_G": 1.0041080410723209,
+        "r_squared_relative_correction": 0.2629146286285362
+      },
+      {
+        "axis_distance": 16,
+        "infinite_lattice_G": 0.004978505130594292,
+        "quadrature_error_estimate": 6.493875371859086e-14,
+        "four_pi_r_times_G": 1.0009878492245836,
+        "r_squared_relative_correction": 0.25288940149340533
+      },
+      {
+        "axis_distance": 32,
+        "infinite_lattice_G": 0.0024874048301899063,
+        "quadrature_error_estimate": 1.5268766942114064e-15,
+        "four_pi_r_times_G": 1.0002448308516323,
+        "r_squared_relative_correction": 0.25070679207146895
+      },
+      {
+        "axis_distance": 64,
+        "infinite_lattice_G": 0.001243473937256195,
+        "quadrature_error_estimate": 3.62579396448237e-15,
+        "four_pi_r_times_G": 1.0000610780708958,
+        "r_squared_relative_correction": 0.2501757783893481
+      }
+    ],
+    "source_Poisson_normalization_residual": -2.220446049250313e-16,
+    "scope": "Quadrature with estimated errors; analytic Fourier proof establishes the asymptotic, not these samples."
+  },
+  "status": "Author static-source target-rotor controls passed; mobile charged-record matching not established."
+}

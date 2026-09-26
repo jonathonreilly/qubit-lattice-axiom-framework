@@ -1,0 +1,134 @@
+{
+  "plot_source_sha256": "a7ae4ef290e2fa9b56f455fa3c1b6401f317d768c6d3e053f7bb05d112d64463",
+  "inputs": {
+    "axis_balanced_screen/STATIONARY_ANALYSIS.json": "59e090b4d0f2da1213ccd3e6868ca2ebb955c1858915dde65d0767b168388c99",
+    "axis_balanced_screen/COMPLETED_CASES.json": "599127cf242cde133a77ae5c9ec03fab080e1398443f3c208d916213ac370f98",
+    "AXIS_BALANCED_SIMULATION_PLAN.md": "f6d4f0a0202bae7e6e6ef37a2da6553f7a67fc6814eb5c6263c0dcd0903a1636",
+    "analyze_stationary_context_cases.py": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "analyze_context_exchange.py": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "axis_balanced_screen/balanced_r025_L32_stationary_analysis.npz": "1a1b4fcf05adf46694df189cfc28bd3d48fe20d55136578d42e19d8593fe9484",
+    "axis_balanced_screen/balanced_r050_L32_stationary_analysis.npz": "f90ef6a06a832118d2d2569a9af2503a552e1e3eeddac8022fc4f85fb505e9e4",
+    "axis_balanced_screen/balanced_r075_L32_stationary_analysis.npz": "e68365709137b62da26807452ec98d11094fdcc82a80661699377ee0a435a6fb",
+    "axis_balanced_screen/balanced_r025_L64_stationary_analysis.npz": "61979a948e306034fd6b34c1e4cab2f13f874d3c5bdf81c6afbc8ef92047139b",
+    "axis_balanced_screen/balanced_r050_L64_stationary_analysis.npz": "8987f59b7475ffb5e19948bece8874e829c6ee7c3ac7d0206b0a8572093e529d",
+    "axis_balanced_screen/balanced_r075_L64_stationary_analysis.npz": "eb3294e3854e32ec2507484aed494b562e6569ec08acb2dec948921e6cd02fab"
+  },
+  "raw_cases": [
+    {
+      "case": "balanced_r025_L32",
+      "elapsed_seconds": 685.8465434999671,
+      "total_proposals": 13045896486,
+      "max_fourier_reconstruction_error": 1.6360879492599815e-13,
+      "reference_speed": 0.25,
+      "exact_final_vacancy_fraction": 0.75,
+      "mean_final_vacancy_fraction": 0.7499313354492188,
+      "estimated_standard_error": 0.00015353609437015849,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "be14f1db4d5d25470b602d31375c1755cda35e6dab05b32947a18b73dd21820e",
+      "metadata_sha256": "b14a4233d67ebb903a7e14f8d3138f415657cf41674d38c99f6e4b684936fae8"
+    },
+    {
+      "case": "balanced_r050_L32",
+      "elapsed_seconds": 484.84152720915154,
+      "total_proposals": 7989141454,
+      "max_fourier_reconstruction_error": 3.8110703810086213e-13,
+      "reference_speed": 0.408248290463863,
+      "exact_final_vacancy_fraction": 0.5,
+      "mean_final_vacancy_fraction": 0.5000650882720947,
+      "estimated_standard_error": 0.00016647959711349586,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "9b94be0aa09efb33772381505d84ff74b57513cc955baf6fea9775517ae512a9",
+      "metadata_sha256": "da43143dda0e5470950567d5c46039ea74adcc95696b333b6e2ccbb5e23be3b0"
+    },
+    {
+      "case": "balanced_r075_L32",
+      "elapsed_seconds": 530.6988540838938,
+      "total_proposals": 7532020572,
+      "max_fourier_reconstruction_error": 6.016815757666865e-13,
+      "reference_speed": 0.4330127018922193,
+      "exact_final_vacancy_fraction": 0.25,
+      "mean_final_vacancy_fraction": 0.24963319301605225,
+      "estimated_standard_error": 0.00015488876196866256,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "ccc6f94add20571cbc45bb881bb5b1d4f7b76cab8cc85d19d8696fe287eb74f8",
+      "metadata_sha256": "6930e570628b0c6019b5e9c6fffef3762a04d71f53ab24c3cfaa2d44e94fe88d"
+    },
+    {
+      "case": "balanced_growth_L24",
+      "elapsed_seconds": 280.41537479218096,
+      "total_proposals": 5059680132,
+      "max_fourier_reconstruction_error": 4.218212046183358e-13,
+      "reference_speed": 0.408248290463863,
+      "exact_final_vacancy_fraction": 0.27775253632305985,
+      "mean_final_vacancy_fraction": 0.2774231522171585,
+      "estimated_standard_error": 0.00016553537417995963,
+      "mean_births_per_site": 0.22238371107313368,
+      "raw_npz_sha256": "2dcfd14bbd6634d6a2187a24e5c83cb9530248393402ee89a68e09003e485782",
+      "metadata_sha256": "94a599ac25039956b9ac47af1345dc635e2faaa018b804aca4a984c8b69b8d83"
+    },
+    {
+      "case": "balanced_growth_L48",
+      "elapsed_seconds": 5271.611997125205,
+      "total_proposals": 80921615224,
+      "max_fourier_reconstruction_error": 1.722086201780923e-12,
+      "reference_speed": 0.408248290463863,
+      "exact_final_vacancy_fraction": 0.27775253632305985,
+      "mean_final_vacancy_fraction": 0.2777269857901114,
+      "estimated_standard_error": 6.0265796382110864e-05,
+      "mean_births_per_site": 0.22228165026064273,
+      "raw_npz_sha256": "b1de7508f0cf121dfbc0f2a675e6e205018506100271f6d86c3db1666c778aa2",
+      "metadata_sha256": "02b156ced7694ab4dc09ee722122d6ef4ee2e87051c786a08bcd495242e183a9"
+    },
+    {
+      "case": "balanced_r025_L64",
+      "elapsed_seconds": 3142.058013957925,
+      "total_proposals": 208735423053,
+      "max_fourier_reconstruction_error": 1.933047779654666e-12,
+      "reference_speed": 0.25,
+      "exact_final_vacancy_fraction": 0.75,
+      "mean_final_vacancy_fraction": 0.7499938905239105,
+      "estimated_standard_error": 5.3209799116296855e-05,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "4f648ea5c88dd736ca0c28e5c62e448448bf3e082fe469cf0731703981e2b1b0",
+      "metadata_sha256": "9656a0af70793e150b36b45d82bd6a904a1cb39c1bc245d6ad47ac280e30954b"
+    },
+    {
+      "case": "balanced_r050_L64",
+      "elapsed_seconds": 2244.150236791931,
+      "total_proposals": 127823832140,
+      "max_fourier_reconstruction_error": 7.835283779993837e-12,
+      "reference_speed": 0.408248290463863,
+      "exact_final_vacancy_fraction": 0.5,
+      "mean_final_vacancy_fraction": 0.4999557286500931,
+      "estimated_standard_error": 6.735009675102753e-05,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "3e9d88533882b7d09acfee3ca754cba2b245174894df603a1c622498903bf7cc",
+      "metadata_sha256": "bf58055cbcbf635695019b3fed32b43d56e528ec9fe23c8670c39093ad3f29ed"
+    },
+    {
+      "case": "balanced_r075_L64",
+      "elapsed_seconds": 2377.660113125108,
+      "total_proposals": 120513887947,
+      "max_fourier_reconstruction_error": 1.2771454996077272e-11,
+      "reference_speed": 0.4330127018922193,
+      "exact_final_vacancy_fraction": 0.25,
+      "mean_final_vacancy_fraction": 0.25005635619163513,
+      "estimated_standard_error": 5.1499090201018065e-05,
+      "mean_births_per_site": 0.0,
+      "raw_npz_sha256": "ba2f0640f38bd13a3a40e61964c138961e05569633889c8d67d2f658bc4f9119",
+      "metadata_sha256": "d794adc295edce4112f1f71e0197f735b119368cca38e1f0224c78606c108400"
+    }
+  ],
+  "outputs": {
+    "figures/axis_balanced_completed_screen.png": "806cbb754c441c9b348a09cad4f3fe1acd0801e87ef5f2f9a79ce09ce5f6aa7a",
+    "figures/axis_balanced_completed_screen.pdf": "b55095448f5c602bc61b8fe07906aea33e149fe0d9eaacd6d61fa3a13836cf47",
+    "AXIS_BALANCED_COMPLETED_SCREEN_REPORT.md": "b183cdeefabc1ad4f389b2289cfb56411df85a035771880607d71038e100c8cc"
+  },
+  "maximum_L64_relative_speed_discrepancy": 0.005953871106445963,
+  "interval_coverage_count": 9,
+  "versions": {
+    "numpy": "2.4.4",
+    "matplotlib": "3.11.2"
+  },
+  "scope": "Descriptive fixed-plan finite-volume screen; no claim of universal or asymptotic physics."
+}

@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-21T17:53:51.848079+00:00",
+  "source_read_completely": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+    "bytes": 8188,
+    "sha256": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d"
+  },
+  "procedures_reused_unchanged": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "external_theorem_dependencies": [],
+  "earlier_independent_code_dependencies": [],
+  "unread_author_paths": [
+    "geometric_quantum_lift_check.py",
+    "geometric_quantum_lift_checks/RESULTS.json",
+    "any quantum-lift author run logs"
+  ],
+  "failed_attempts": []
+}

@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/RESULTS.json",
+      "bytes": 15123,
+      "sha256": "c694f17850f26562349be83b76317eacf459ae9885ee7ccf62f5704f37dda344"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "bytes": 11820,
+      "sha256": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_check.py",
+      "bytes": 7589,
+      "sha256": "371256d50f196b3e35bc3872feed93024b227373860931e95d9ffbe02eaf4a72"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/local_encoding_and_moments.json",
+      "bytes": 4178,
+      "sha256": "f3c710220c9ad4890247ab9ef6fa1c8cf6941eea6cf1233ca4cbb1629e2c7c61"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/finite_quantum_fluctuations.json",
+      "bytes": 6134,
+      "sha256": "182a63043a4b237f96b7f5d71f82373e366ba8df9e14c51bed1bf445b1e8c656"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/Hamiltonian_and_derivative_escape.json",
+      "bytes": 1747,
+      "sha256": "641d488599d2607fd892405063c60d1cf3bd5babb8d8e96b7b22a4a922deb94f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_ENCODING_RUN.log",
+      "bytes": 104,
+      "sha256": "b06f93e2acca68958150d19c206f8e7a6a4f92d1d8f0d1a9bf0758cbe6b1fa36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_ENCODING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/correction_ack/check_correction.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-22T16:57:01.127081+00:00",
+  "finished_utc": "2026-09-22T16:57:01.175311+00:00",
+  "exit_code": 0,
+  "checker_sha256": "b0627795099abe4a73c1c3d1caf5eafb02f0631dbbefda3d250e9773a4bd4114",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+}

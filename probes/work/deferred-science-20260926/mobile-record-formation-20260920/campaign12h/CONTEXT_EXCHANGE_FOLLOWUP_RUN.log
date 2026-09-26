@@ -1,0 +1,4 @@
+{"starting_case": "context_minimal_L48", "utc": "2026-09-21T03:33:40Z"}
+{"case": "context_minimal_L48", "elapsed_seconds": 855.9526541670784, "total_proposals": 60915779381, "max_fourier_reconstruction_error": 1.326248223745175e-12, "raw_npz_sha256": "f908b4952efa72404296a1cdeb8ac0934a547a5673300c63b775f5383c5810f7", "metadata_sha256": "09263e5f9b5041967ee568eb1157755824909a1a24dcd172f95b576ab165b884"}
+{"starting_case": "context_minimal_L64", "utc": "2026-09-21T03:47:58Z"}
+{"case": "context_minimal_L64", "elapsed_seconds": 7815.114093167009, "total_proposals": 192525044184, "max_fourier_reconstruction_error": 5.367506739636698e-12, "raw_npz_sha256": "80b3ccd9d6c7bae4d22faca6ffb6777e97343738803cb786331e0ff6c5ae63c5", "metadata_sha256": "36f9a41633a2e9c0fd18291a4f97a0c16a9a201ebf9d217124c2f918f87bebda"}

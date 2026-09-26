@@ -1,0 +1,74 @@
+{
+  "mathematical_source_identity": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md",
+      "bytes": 13405,
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713",
+      "role": "mathematical proof dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json",
+      "bytes": 2320,
+      "sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5",
+      "role": "authenticated sealed-source identity; not executed anew"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/independent_check.py",
+      "bytes": 12544,
+      "sha256": "f1c5145fdde96ef17b4a85f738d0d31456b5f32944edcc59af6ebe38ebb58404",
+      "role": "authenticated sealed-source identity; not executed anew"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "bytes": 18148,
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3",
+      "role": "mathematical proof dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "bytes": 3840,
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9",
+      "role": "authenticated sealed-source identity; not executed anew"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py",
+      "bytes": 9938,
+      "sha256": "5ebc1ce0750c658649447e0a0d8da146b2ab64bd4fd83d232329281d1df4b3d4",
+      "role": "authenticated sealed-source identity; not executed anew"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/REPORT.md",
+      "bytes": 19131,
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf",
+      "role": "mathematical proof dependency"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/PRE_SOURCE_SEAL.json",
+      "bytes": 4411,
+      "sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2",
+      "role": "authenticated sealed-source identity; not executed anew"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/independent_check.py",
+      "bytes": 15883,
+      "sha256": "9fca0cc51bb6c4289b31697e6dc84ac7b65934f76a02b268599ba28505748cac",
+      "role": "authenticated sealed-source identity; not executed anew"
+    }
+  ],
+  "instructions": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "instruction snapshot; not a mathematical premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "instruction snapshot; not a mathematical premise"
+    }
+  ],
+  "new_external_imports": [],
+  "primary_native_source_access": false
+}

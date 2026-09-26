@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-09-22T18:11:16.264876+00:00",
+  "status": "Frozen personally authored conditional readout and local RK-cooling packet, independent reconstruction pending.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_READOUT_OF_SPIN_HALF_GAUGE_LOOPS.md",
+      "bytes": 9791,
+      "sha256": "8cdf426a9e96a01602a0e77874bc05b939a8c0bf372a11cda2acc0f647be84d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_charged_record_loop_readout_check.py",
+      "bytes": 7573,
+      "sha256": "84666c00f11256630fb1f2a7f5ad6de7a98c81c7a93e1b0953b3e3dd1f2ed7a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_LOOP_READOUT_RESULTS.json",
+      "bytes": 7443,
+      "sha256": "159fad39fb3a12327859a2c035f9519ee48d89e44d4288a9b8aa0d0d8c921078"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_LOOP_READOUT_RUN.log",
+      "bytes": 7443,
+      "sha256": "159fad39fb3a12327859a2c035f9519ee48d89e44d4288a9b8aa0d0d8c921078"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_LOOP_READOUT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_CHARGED_RECORD_LOOP_READOUT_RUN_RECEIPT.json",
+      "bytes": 471,
+      "sha256": "37c293e50adb5d2b6ee56f3f6b569b06bb7110f1ad1d1728239f64a12c1bd980"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+      "bytes": 12648,
+      "sha256": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+      "bytes": 12497,
+      "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_RESULTS.json",
+      "bytes": 24412,
+      "sha256": "5c1771868cd2086b074e8e81629046a5fb7d1aa4b51c0decd4fd548c34133e7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_RUN.log",
+      "bytes": 24412,
+      "sha256": "5c1771868cd2086b074e8e81629046a5fb7d1aa4b51c0decd4fd548c34133e7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_RUN_RECEIPT.json",
+      "bytes": 464,
+      "sha256": "caef87aff15fe58a984615cdee22f6dcc2f2bb4aea122d6e6d7ea3eeb233c080"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_AND_RK_COOLING_SOURCE_CONTEXT.json",
+      "bytes": 943,
+      "sha256": "2bb2e659d6611013e59edab0a70d83af27722d14bd46f1cab1d7dba6c029da3f"
+    }
+  ],
+  "limits": "Supplied gauge, apparatus, stream and resource roles; no native compiler, autonomous many-carrier proof, efficient thermodynamic preparation, or Maxwell phase."
+}

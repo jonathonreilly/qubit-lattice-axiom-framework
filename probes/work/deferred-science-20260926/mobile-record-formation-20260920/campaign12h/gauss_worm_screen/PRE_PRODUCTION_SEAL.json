@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-21T10:09:10.877334+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_SCREEN_PLAN.md",
+      "bytes": 4787,
+      "sha256": "b7419f714112fc59381b849b4c27b35ceca007b12867e8ee54685a898d49fb9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_trace_check.py",
+      "bytes": 2327,
+      "sha256": "cc4221c0fc7d90c07a78a98549540a38d29e1c3179eed563123ec4a7ddf8816f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_TRACE_RESULTS.json",
+      "bytes": 1035,
+      "sha256": "018bf90eeaada3edf59bb2a97097523ffe11fadc115b0601faa4471aa5a7da01"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen.cpp",
+      "bytes": 6190,
+      "sha256": "1920e4df3144ae7fcdabd360428f1ab4bdee8a835b8a5b8460e9cbba53adb183"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/gauss_worm_screen",
+      "bytes": 59296,
+      "sha256": "7f252dfd9c0b46b509a7cbb863d793ed37f783a77266b8f0695c0314fce6f1f6"
+    }
+  ],
+  "parameters": {
+    "burn": 5000000,
+    "production": 25000000,
+    "threads": 8
+  },
+  "scope": "Author pre-output protocol and exact toy check; no independent sampler review yet."
+}

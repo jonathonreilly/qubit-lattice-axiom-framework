@@ -1,0 +1,6 @@
+The first extraction attempt found no pdftotext executable in PATH. The follow-up sed command returned exit 1 because Taggi_v3_extracted.txt was not created. No theorem check failed and no source changed. A Python PDF reader is being used as the fallback.
+
+Observed executable probe stdout: None
+Follow-up command: sed -n '1,225p' Taggi_v3_extracted.txt
+Exit: 1
+Stderr: sed: Taggi_v3_extracted.txt: No such file or directory

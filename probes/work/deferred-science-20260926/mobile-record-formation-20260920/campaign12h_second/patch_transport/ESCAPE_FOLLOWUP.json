@@ -1,0 +1,12 @@
+{
+  "input_certificate_sha256": "68a629b3c4de5dfe84c4aab6115bc1f4549b86f9b54507f25dff66c4de48883e",
+  "script_sha256": "c53c2d04fd99cb07e1f19cce6597c0fa6193dcaa7dfa717b6e97165b48583e3a",
+  "author_channel_implementation_sha256": "996763525066720f9fb0325ba405f5343eab0b7135e20e951b84d3c963fe894d",
+  "found_full_packing": false,
+  "explored": 4,
+  "seen": 4,
+  "unexplored_queue": 0,
+  "cap": 500,
+  "steps_after_patch_move": [],
+  "scope": "Finite exact positive path if found; no general reachability conclusion."
+}

@@ -1,0 +1,16 @@
+{
+  "analysis_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/FOLLOWUP_ANALYSIS.json",
+  "analysis_sha256": "8c1ee0b283056e3409cafe7477b578e2d6d40bb33d0d88a79490a38e4f103207",
+  "script_sha256": "723306436d1feb587f431a3a9a15bb850e9f7d603678dbe7d8ba0bba9d965c65",
+  "raw_identities_sha256": "dfc40af7fcda9a20dd77fd73f38e38ccf07532018f32a4b6d96873b3507782ad",
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/figures/gauss_worm_z1_followup.png",
+      "sha256": "105692f77c3713a9d78b0c989f814de44f684a3754c7cd494247a698901f3beb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/figures/gauss_worm_z1_followup.pdf",
+      "sha256": "0b9eb0fa76615049bb2077506a3302f7ed110a1466fcd0a08886e4f18b7db78a"
+    }
+  ]
+}

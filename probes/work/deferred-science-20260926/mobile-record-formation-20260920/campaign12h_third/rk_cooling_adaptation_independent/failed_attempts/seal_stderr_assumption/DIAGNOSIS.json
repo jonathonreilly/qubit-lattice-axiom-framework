@@ -1,0 +1,16 @@
+{
+  "captured_utc": "2026-09-22T19:31:43.615140+00:00",
+  "failure": "Final sealing helper asserted all scientific stderr files were empty.",
+  "cause": "The successful variational run emitted one SciPy FutureWarning about sparse.diags int64 input being cast to float64. The current Hamiltonian calculation intentionally uses float arithmetic; the warning does not report a numerical or mathematical failure.",
+  "scientific_runs_changed_or_rerun": false,
+  "preserved_warning_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/VARIATIONAL_RUN.stderr",
+  "preserved_warning_sha256": "fc6cab0cbebc3c2d31bfed89dc808dbb2fe9b90c4d76db9d45183ffe32db270a",
+  "original_execution": "Python stdin through exec_command; the archived attempt.py is the captured submitted stdin source, not a separately executed file.",
+  "exit_code": 1,
+  "partial_helper_outputs_preserved": [
+    "before_DEPENDENCIES.json",
+    "before_RUNTIME.json"
+  ],
+  "earlier_report_draft_preserved": "before_REPORT.md",
+  "repair": "Authenticate the exact known warning, distinguish it from the other two empty stderr files, and preserve this failed bookkeeping attempt. Do not change scientific parameters, tolerances, scripts or results."
+}

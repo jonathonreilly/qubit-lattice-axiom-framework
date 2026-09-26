@@ -1,0 +1,9 @@
+{
+  "status": "ACTIVE",
+  "id": "mobile-record-toe-12-hour-campaign",
+  "deadline_utc": "2026-09-24T04:59:48Z",
+  "target_thread_id": "01a0c028-a7ea-74f2-8e37-3f636ab5f91e",
+  "caffeinate_pid": 3377,
+  "seconds_until_deadline": 42999,
+  "observed_utc": "2026-09-23T17:03:08.010148+00:00"
+}

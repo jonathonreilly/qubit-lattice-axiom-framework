@@ -1,0 +1,10 @@
+/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py:17: RuntimeWarning: invalid value encountered in divide
+  return np.stack((m[...,0],m[...,4],m[...,1]/m[...,0],m[...,2]/m[...,0],m[...,3]/m[...,0],m[...,4]/m[...,0],m[...,5]/m[...,0]**2,m[...,6]/m[...,0]**2,m[...,7]/m[...,4]**2,m[...,8],m[...,9],m[...,10]),axis=-1)
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py", line 87, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py", line 61, in main
+    assert np.all(np.isfinite(point)) and np.all(np.isfinite(boot))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

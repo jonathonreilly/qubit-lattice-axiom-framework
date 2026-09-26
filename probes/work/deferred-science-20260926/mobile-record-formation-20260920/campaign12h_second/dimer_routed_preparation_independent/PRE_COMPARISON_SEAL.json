@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-21T18:58:29.283151+00:00",
+  "read_boundary": "Complete new preparation note read and independently reconstructed; no new author checker/results or dynamic aggregate accessed.",
+  "primary_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+    "bytes": 9224,
+    "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+  },
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK.md",
+      "bytes": 2072,
+      "sha256": "73a39a5c56bf1b3113a86eb542e252e291b56bf30a134754e4165bea18b3cef9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK_SEAL.json",
+      "bytes": 17067,
+      "sha256": "5d8d706106c443df78680377df20578a7cbe4e32305a350ea2e7a1b0b66b0a8c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/PRE_COMPARISON_SOURCES.json",
+      "bytes": 2125,
+      "sha256": "c9da152eecf35a2dbca039cd3fe557644cd2cb84efab3e5d1a4e246e43698270"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 9545,
+      "sha256": "c4ab962153914df942349a64bef5ed0cfa95fb95e8f9d71513c726a8434009d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/independent_check.py",
+      "bytes": 11863,
+      "sha256": "e3c3404562a0566a041600e3dbac9bcbf26da4aaa4a33b4de10fd9b115c54feb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 7102,
+      "sha256": "6f63b4b388648918ceaca62b05175c3be1a9b6a39a16c9e19d09686c24d689e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/INDEPENDENT_RUN.stdout",
+      "bytes": 271,
+      "sha256": "2ce82f971955104ba5014a461fa60efece820543fcbe32a0a586fd35c2006108"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 435,
+      "sha256": "4c8aa9f69d214d881609496dd110ba9496419890e36e981f89630344893c7557"
+    }
+  ],
+  "failed_attempts": [],
+  "provisional_findings": [],
+  "coverage": "All displayed proof constants and probability-law transfer reconstructed; exact conditional coupling/path/Dirichlet/sector-mixture controls and separately identified numerical finite semigroup checks."
+}

@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-21T21:51:12.415732+00:00",
+  "read_boundary": "Complete frozen note read; author checker/results and newly supplied analytic-vector source receipt remain unopened. Previous mixed-encoding proof reused at checked identities.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md",
+      "bytes": 10195,
+      "sha256": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "bytes": 11820,
+      "sha256": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/REPORT.md",
+      "bytes": 8945,
+      "sha256": "1111a99b2991097629f16fe8c60cd821d14e328393b1e149b791bc9cb19f8ad2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/FINAL_SEAL.json",
+      "bytes": 9588,
+      "sha256": "294d38446b81b08b3d2db70046b8c6184bef8f4c265801f3e36f04311a1fae8a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

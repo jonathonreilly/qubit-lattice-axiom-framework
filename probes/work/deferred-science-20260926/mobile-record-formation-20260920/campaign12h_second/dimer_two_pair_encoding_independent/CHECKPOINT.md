@@ -1,0 +1,1 @@
+Completed final bounded target before 00:23 UTC stop. Exact integer minor determinant 22325 modulo65537 proves rank14; affine13, strict positivity and covariance hold. Complete author comparison agrees. No correction, no failed run. Preparation map only; no CP dynamics or perfect readout. Prior packets unchanged. All new analysis stopped; no further targets.

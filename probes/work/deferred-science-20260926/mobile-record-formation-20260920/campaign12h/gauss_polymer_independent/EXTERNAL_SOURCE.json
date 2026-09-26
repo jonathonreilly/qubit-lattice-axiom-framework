@@ -1,0 +1,11 @@
+{
+  "url_requested": "https://arxiv.org/pdf/math-ph/0304003v3",
+  "url_returned": "https://arxiv.org/pdf/math-ph/0304003v3",
+  "downloaded_utc": "2026-09-21T08:28:05.770380+00:00",
+  "bytes": 191795,
+  "sha256": "2cc3e036af5b2a46afe95acf0b5863fe5c7d31554debb10a2a5cade4122bdbfc",
+  "content_type": "application/pdf",
+  "version": "arXiv:math-ph/0304003v3, 18 February 2005",
+  "read_boundary": "Title/version and Section 2, including Theorem 1, definitions (1)-(2), assumptions (3), bounds (4)-(5), and its complete proof through (13), pages 1-4. Not relying on Section 3 or its correlation theorems.",
+  "web_verification": "The same version and Section 2 were read through the web tool before local preservation."
+}

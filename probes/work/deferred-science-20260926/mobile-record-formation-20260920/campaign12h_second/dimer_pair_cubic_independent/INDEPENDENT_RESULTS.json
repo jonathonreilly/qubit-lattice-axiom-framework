@@ -1,0 +1,346 @@
+{
+  "created_utc": "2026-09-22T00:11:08.619613+00:00",
+  "boundary": "Independent exact construction before any new author script/results.",
+  "representation": {
+    "proper_rotations": 24,
+    "all_256_projection_entries_exactly_zero": true,
+    "state_covariance_relations": 336,
+    "leading_principal_minors": [
+      [
+        "1/2",
+        "61/768",
+        "61/4608",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "61/768",
+        "61/4608",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "1/12",
+        "61/4608",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "1/12",
+        "61/4608",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "1/12",
+        "1/72",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "1/12",
+        "1/72",
+        "61/27648"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ],
+      [
+        "1/2",
+        "191/2304",
+        "505/36864",
+        "1775/786432"
+      ]
+    ],
+    "corner_orthogonal_eigenvalue": "5/32",
+    "corner_parallel_eigenvalue": "3/16",
+    "corner_Schur_complement": "71/144",
+    "axis_Schur_complement": "61/128",
+    "exact_cubic_operator_sum_zero": true,
+    "readout_coefficient": "1/48",
+    "constant_encoding_countercontrol": "Covariant rho_a=I/4 is w-blind and has no nonzero Z12 readout; covariance alone supplies no drift contradiction."
+  },
+  "drift_witness": {
+    "N": 12,
+    "minimum_probability": "3/56",
+    "local_density_equal_at_all_12_phases": true,
+    "two_pair_tensor_equality_exact": true,
+    "full_product_equality": "Factorwise equality for independent encoded pairs; no full tensor matrix materialization.",
+    "four_context_cases": 20,
+    "assignments_per_case": 38416,
+    "exact_channel_currents": [
+      {
+        "primed": false,
+        "anchor_x": 3,
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 1,
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": false,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 3,
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "exact_Z12_current": "1/3584"
+      },
+      {
+        "primed": true,
+        "anchor_x": 1,
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "exact_Z12_current": "-1/1792"
+      },
+      {
+        "primed": true,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 2,
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "exact_Z12_current": "0"
+      },
+      {
+        "primed": true,
+        "anchor_x": 1,
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "exact_Z12_current": "0"
+      }
+    ],
+    "Z12_derivatives": [
+      "0",
+      "3/3584"
+    ],
+    "Q12_derivative_difference": "1/57344",
+    "local_density_derivative_difference": [
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/114688",
+        "0"
+      ],
+      [
+        "0",
+        "1/114688",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "clock": "Actual unaccelerated rates k0/2+h/4, k0=11/10 and gamma=1."
+  },
+  "checker_sha256": "0f0acf1f0e976c99fb8ac4d31d2a3ebf8203a94d99ae6e5e2074d95a9ca81683"
+}

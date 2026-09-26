@@ -1,0 +1,12 @@
+{
+  "structural_Gram_identity": false,
+  "simplified_Gram_difference": "Matrix([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]])",
+  "Gram_eigenvalues": {
+    "2*r": 3,
+    "2*q": 3
+  },
+  "expected_eigenvalues": {
+    "2*q": 3,
+    "2*r": 3
+  }
+}

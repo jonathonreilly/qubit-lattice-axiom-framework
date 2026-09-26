@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/local_operator_check.py"
+  ],
+  "started_utc": "2026-09-22T15:39:32.809807+00:00",
+  "completed_utc": "2026-09-22T15:39:33.063114+00:00",
+  "returncode": 0,
+  "script_sha256": "a842d5ebd1def1ea0e7332930f9a6fa150a23cfbb207dbc6e7077447f8000304",
+  "own_geometry_dependency_sha256": "1ba595dda7498d0cc0dbbaa2393be00f47a5ffd5e90d521e8e922c89e5e3bfd0"
+}

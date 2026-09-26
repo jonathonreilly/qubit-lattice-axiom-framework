@@ -1,0 +1,4 @@
+{"group": "conditional_permutation_bound", "passed": true}
+{"group": "physical_graph_comparison", "passed": true}
+{"group": "nonreversible_preparation", "passed": true}
+PASS: three complete color-preparation groups

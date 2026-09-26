@@ -1,0 +1,19 @@
+{
+  "plan_sha256": "764bba68ef389548a63c7030f5054b22ac7e79bdbcf70ca3a46300d38de302a8",
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "cases": [
+    [
+      "context_minimal_L48",
+      48,
+      2026092150
+    ],
+    [
+      "context_minimal_L64",
+      64,
+      2026092151
+    ]
+  ],
+  "launcher_sha256": "bca7dcd37b3d1408761a22e4f7b6335ef6a937dcd95f7fa50d313b5702a53fe3",
+  "trajectories_per_case": 512,
+  "threads": 4
+}

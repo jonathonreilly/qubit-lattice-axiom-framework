@@ -1,0 +1,62 @@
+{
+  "scope": "Author targeted repairs checked against sealed nonproduction fixtures; no production values read.",
+  "analysis_sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a",
+  "correction_sha256": "9caea17017738357a7a9a8ff6d32ef937265a08d249e7046f15b9595b7fc7857",
+  "original_review_seal_sha256": "b3754b93fa492301d4875760c3de7cc598664530a7cf119cda91b1958f39f7fb",
+  "rows": [
+    {
+      "fixture": "baseline",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_baseline_input",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/after_02_baseline"
+      ],
+      "returncode": 0,
+      "result_sha256": "7b0110f1fce6f372dfb842bb2126aa7210464601fcf857d9dbbec27eba86dbb2",
+      "pass": true
+    },
+    {
+      "fixture": "wrapper_exception",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_wrapper_exception_input",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/after_02_wrapper_exception"
+      ],
+      "returncode": 0,
+      "result_sha256": "74a97e32144fd4f31f896494e1bac999fcb704a9484f247513a2c0a70b15e551",
+      "pass": true
+    },
+    {
+      "fixture": "zero_winding",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_zero_winding_input",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/after_02_zero_winding"
+      ],
+      "returncode": 0,
+      "result_sha256": "fd67632e1fb5f39fe11ae068df4297601b3aca55050530764e72fcab07972955",
+      "pass": true
+    },
+    {
+      "fixture": "mixed_zero_winding",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_mixed_zero_winding_input",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_analysis_fix/after_02_mixed_zero_winding"
+      ],
+      "returncode": 0,
+      "result_sha256": "b4d43ab63c604fed22ec9758ca45944c13eeb852b04f612b0d55763fde51c82f",
+      "pass": true
+    }
+  ],
+  "additional_controls": [
+    "zero first-shell denominator",
+    "one completed history",
+    "zero completed histories"
+  ],
+  "successful_original_estimates_and_intervals_unchanged": true
+}

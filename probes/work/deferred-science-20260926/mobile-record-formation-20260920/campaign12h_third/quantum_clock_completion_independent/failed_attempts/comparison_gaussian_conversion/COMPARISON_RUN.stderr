@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/comparison_check.py", line 235, in <module>
+    'open_path_control': exact_path_control(),
+                         ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/comparison_check.py", line 168, in exact_path_control
+    rank = DomainMatrix.from_Matrix(O).convert_to(s.QQ_I).rank()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/matrices/domainmatrix.py", line 548, in convert_to
+    rep_K = rep.convert_to(K)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/matrices/sdm.py", line 927, in convert_to
+    Ak = unop_dict(A, lambda e: K.convert_from(e, Kold))
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/matrices/sdm.py", line 1452, in unop_dict
+    Bij = f(Aij)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/matrices/sdm.py", line 927, in <lambda>
+    Ak = unop_dict(A, lambda e: K.convert_from(e, Kold))
+                                ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/domains/domain.py", line 396, in convert_from
+    result = _convert(element, base)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/domains/domain.py", line 664, in from_ExpressionDomain
+    return K1.from_sympy(a.ex)
+           ~~~~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/domains/gaussiandomains.py", line 272, in from_sympy
+    raise CoercionFailed("{} is not Gaussian".format(a))
+sympy.polys.polyerrors.CoercionFailed: -3*I*(2 + I) is not Gaussian

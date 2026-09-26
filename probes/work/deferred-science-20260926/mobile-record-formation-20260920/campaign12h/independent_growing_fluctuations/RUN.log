@@ -1,0 +1,544 @@
+/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_growing_fluctuations/independent_check.py:93: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  Gnum = csr_matrix((rates, (src, dst)), shape=(SIZE, SIZE))-diags(out)
+{
+  "checks": [
+    {
+      "name": "old_context/linear/complete_generator",
+      "states": 2401,
+      "status": "PASS",
+      "transitions": 16464
+    },
+    {
+      "name": "old_context/linear/survival_1/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/linear/survival_1/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-1/21",
+      "name": "old_context/linear/survival_1/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/linear/survival_1/2/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-11/168",
+      "name": "old_context/linear/survival_1/2/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/2/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/linear/survival_1/4/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-29/672",
+      "name": "old_context/linear/survival_1/4/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/linear/survival_1/4/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/complete_generator",
+      "states": 2401,
+      "status": "PASS",
+      "transitions": 16464
+    },
+    {
+      "name": "old_context/positive_part/survival_1/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/positive_part/survival_1/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-1/21",
+      "name": "old_context/positive_part/survival_1/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/positive_part/survival_1/2/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-11/168",
+      "name": "old_context/positive_part/survival_1/2/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/2/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "old_context/positive_part/survival_1/4/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-29/672",
+      "name": "old_context/positive_part/survival_1/4/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "old_context/positive_part/survival_1/4/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/complete_generator",
+      "states": 2401,
+      "status": "PASS",
+      "transitions": 16464
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/linear/survival_1/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-1/21",
+      "name": "axis_balanced/linear/survival_1/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/linear/survival_1/2/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-11/168",
+      "name": "axis_balanced/linear/survival_1/2/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/2/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/linear/survival_1/4/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-29/672",
+      "name": "axis_balanced/linear/survival_1/4/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/survival_1/4/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/complete_generator",
+      "states": 2401,
+      "status": "PASS",
+      "transitions": 16464
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/positive_part/survival_1/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-1/21",
+      "name": "axis_balanced/positive_part/survival_1/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/positive_part/survival_1/2/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-11/168",
+      "name": "axis_balanced/positive_part/survival_1/2/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/2/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/exact_product_forward_equation",
+      "status": "PASS"
+    },
+    {
+      "formal_adjoint_row_sums_nonzero": true,
+      "name": "axis_balanced/positive_part/survival_1/4/reverse_rates_and_score_correction",
+      "reverse_birth_rate": "beta p0(t)/pa(t)",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/evolving_energy_and_floor",
+      "status": "PASS"
+    },
+    {
+      "minus_E_u_Gu": "-29/672",
+      "name": "axis_balanced/positive_part/survival_1/4/naive_stationary_energy_counterexample",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/exact_one_time_six_field_covariance",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/complete_generator_covariance_energy",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/birth_drift_and_noise_normalization",
+      "noise_covariance": "beta p0(t) I_6",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/survival_1/4/limit_lyapunov_identity",
+      "status": "PASS"
+    },
+    {
+      "example_commutator_entry": "pi*(-pi - 84*I)/126",
+      "name": "old_context/time_ordering_needed",
+      "status": "PASS"
+    },
+    {
+      "example_commutator_entry": "pi*(4540*pi - 19257*I)/37044",
+      "name": "axis_balanced/time_ordering_needed",
+      "status": "PASS"
+    },
+    {
+      "drift": "-8 I_6-beta 11^T for the four-cycle mode pi/2, acceleration 4",
+      "name": "constant_rate/full_generator_fourier_drift",
+      "status": "PASS"
+    },
+    {
+      "expected_exchange_bracket": "16 C(t); finite-N stirring noise is not zero",
+      "name": "constant_rate/exact_exchange_bracket",
+      "status": "PASS"
+    },
+    {
+      "count_sectors": 210,
+      "maximum_poisson_residual": 1.5700924586837751e-15,
+      "name": "nonstationary_energy/complete_count_sector_poisson_control",
+      "status": "PASS"
+    },
+    {
+      "additive_functional_variance": 0.001089218953484066,
+      "energy_bound": 0.0027338542219831515,
+      "mean_abs": 5.421010862427522e-20,
+      "name": "nonstationary_energy/full_reward_bound_t_0.1",
+      "quadrature_nodes": 24,
+      "status": "PASS"
+    },
+    {
+      "additive_functional_variance": 0.012851570898064588,
+      "energy_bound": 0.0186778711683378,
+      "mean_abs": 1.0842021724855044e-19,
+      "name": "nonstationary_energy/full_reward_bound_t_0.4",
+      "quadrature_nodes": 24,
+      "status": "PASS"
+    },
+    {
+      "additive_functional_variance": 0.039490297248639436,
+      "energy_bound": 0.05243189604290152,
+      "mean_abs": 8.673617379884035e-19,
+      "name": "nonstationary_energy/full_reward_bound_t_0.8",
+      "quadrature_nodes": 24,
+      "status": "PASS"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 108,
+  "complete_generator_state_count": 2401,
+  "exact_product_trajectory_samples": [
+    "exp(-6 beta t)=1",
+    "1/2",
+    "1/4"
+  ],
+  "models_and_implementations": 4,
+  "numerical_energy_controls": [
+    {
+      "bound": 0.0027338542219831515,
+      "time": 0.1,
+      "variance": 0.001089218953484066
+    },
+    {
+      "bound": 0.0186778711683378,
+      "time": 0.4,
+      "variance": 0.012851570898064588
+    },
+    {
+      "bound": 0.05243189604290152,
+      "time": 0.8,
+      "variance": 0.039490297248639436
+    }
+  ],
+  "scope": "Complete finite generators check exact nonstationary identities; one sparse reward calculation is numerical. The limiting theorem is proved separately.",
+  "software": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

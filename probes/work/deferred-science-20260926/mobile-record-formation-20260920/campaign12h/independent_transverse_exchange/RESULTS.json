@@ -1,0 +1,356 @@
+{
+  "scope": "Independent pre-source exact finite and symbolic controls; no stochastic simulation or primary code.",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "count": 23,
+  "checks": [
+    {
+      "name": "sharp_tensor_and_drive_bounds",
+      "passed": true,
+      "details": {
+        "gamma": 1,
+        "max_abs_S": "1/2",
+        "max_abs_h": 2,
+        "local_words": 50625
+      }
+    },
+    {
+      "name": "sharp_bound_witness",
+      "passed": true,
+      "details": {
+        "axis": 3,
+        "labels": [
+          "A1:+1",
+          "B(-1, 1, -1)",
+          "B(-1, -1, -1)",
+          "A1:+1"
+        ],
+        "h": 2
+      }
+    },
+    {
+      "name": "endpoint_antisymmetry_and_complete_cycle_balance",
+      "passed": true,
+      "details": {
+        "axes": 3,
+        "configurations_per_axis": 50625
+      }
+    },
+    {
+      "name": "both_fixed_positive_floors",
+      "passed": true,
+      "details": {
+        "gamma": 1,
+        "kappa": 1,
+        "K": 2,
+        "rate_range": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "name": "proper_cubic_tensor_covariance",
+      "passed": true,
+      "details": {
+        "rotations": 24,
+        "pairs_per_rotation": 225
+      }
+    },
+    {
+      "name": "direct_biased_product_currents_both_rates",
+      "passed": true,
+      "details": {
+        "E": [
+          "-1/120",
+          "-1/120",
+          "-1/120"
+        ],
+        "B": [
+          "2/15",
+          "1/15",
+          "1/30"
+        ],
+        "potential": [
+          "1/3600",
+          "-1/1200",
+          "1/1800"
+        ],
+        "cases": [
+          {
+            "axis": 1,
+            "variant": "positive_part",
+            "current": [
+              "-1/216000",
+              "-1/108000",
+              "-1/72000",
+              "59/54000",
+              "-61/43200",
+              "-121/36000",
+              "833/216000",
+              "-1/27000",
+              "-31/24000",
+              "29/21600",
+              "-11/216000",
+              "-1/18000",
+              "-403/216000",
+              "203/108000",
+              "-1/14400"
+            ]
+          },
+          {
+            "axis": 1,
+            "variant": "linear",
+            "current": [
+              "-1/216000",
+              "-1/108000",
+              "-1/72000",
+              "59/54000",
+              "-61/43200",
+              "-121/36000",
+              "833/216000",
+              "-1/27000",
+              "-31/24000",
+              "29/21600",
+              "-11/216000",
+              "-1/18000",
+              "-403/216000",
+              "203/108000",
+              "-1/14400"
+            ]
+          },
+          {
+            "axis": 2,
+            "variant": "positive_part",
+            "current": [
+              "1/72000",
+              "-19/36000",
+              "7/8000",
+              "1/18000",
+              "1/14400",
+              "27/4000",
+              "-553/72000",
+              "1/9000",
+              "11/8000",
+              "1/7200",
+              "121/72000",
+              "-3/2000",
+              "13/72000",
+              "-7/4000",
+              "1/4800"
+            ]
+          },
+          {
+            "axis": 2,
+            "variant": "linear",
+            "current": [
+              "1/72000",
+              "-19/36000",
+              "7/8000",
+              "1/18000",
+              "1/14400",
+              "27/4000",
+              "-553/72000",
+              "1/9000",
+              "11/8000",
+              "1/7200",
+              "121/72000",
+              "-3/2000",
+              "13/72000",
+              "-7/4000",
+              "1/4800"
+            ]
+          },
+          {
+            "axis": 3,
+            "variant": "positive_part",
+            "current": [
+              "-1/108000",
+              "59/54000",
+              "-61/36000",
+              "-121/27000",
+              "119/21600",
+              "-1/18000",
+              "-7/108000",
+              "-1/13500",
+              "-1/12000",
+              "-1/675",
+              "-11/6750",
+              "7/4500",
+              "91/54000",
+              "-7/54000",
+              "-1/7200"
+            ]
+          },
+          {
+            "axis": 3,
+            "variant": "linear",
+            "current": [
+              "-1/108000",
+              "59/54000",
+              "-61/36000",
+              "-121/27000",
+              "119/21600",
+              "-1/18000",
+              "-7/108000",
+              "-1/13500",
+              "-1/12000",
+              "-1/675",
+              "-11/6750",
+              "7/4500",
+              "91/54000",
+              "-7/54000",
+              "-1/7200"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "chemical_potential_current_and_entropy_at_biased_product",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "fourteen_field_basis_is_complete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "isotropic_potential_gradient_vanishes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "complete_curl_signs_and_eight_spectator_fields",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_fourteen_mode_spectrum",
+      "passed": true,
+      "details": {
+        "propagating_modes": 4,
+        "zero_speed_modes": 10,
+        "speed_squared": "gamma^2 rho_A rho_B / 3"
+      }
+    },
+    {
+      "name": "field_covariance_normalizations",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_occupancy_independent_coordinate_derivation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full_occupancy_thirteen_mode_spectrum",
+      "passed": true,
+      "details": {
+        "propagating_modes": 4,
+        "zero_speed_modes": 9
+      }
+    },
+    {
+      "name": "full_occupancy_entropy_metric_is_nonsingular",
+      "passed": true,
+      "details": {
+        "equal_label_speed_at_abs_gamma_1": "2/7"
+      }
+    },
+    {
+      "name": "uniform_birth_all_field_reaction",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "formation_noise_all_vector_components",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "equal_label_Maxwell_covariance_and_noise",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "equal_label_common_curl_coefficient",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "unequal_orbits_need_time_ordering",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "complete_cycle_forward_energy_and_birth_covariance",
+      "passed": true,
+      "details": {
+        "states": 50625,
+        "transition_array_entries": 391500,
+        "cases": [
+          {
+            "case": "interior_equal",
+            "forward_equation_max_integer_residual": 0,
+            "evolving_energy_integer_residual": 0,
+            "incorrect_stationary_energy": "-1/14",
+            "actual_count_bracket": "2/3",
+            "birth_covariance_identity": true
+          },
+          {
+            "case": "interior_biased",
+            "forward_equation_max_integer_residual": 0,
+            "evolving_energy_integer_residual": 0,
+            "incorrect_stationary_energy": "-8/2023",
+            "actual_count_bracket": "8/51",
+            "birth_covariance_identity": true
+          },
+          {
+            "case": "empty",
+            "forward_equation_max_integer_residual": 0,
+            "evolving_energy_integer_residual": 0,
+            "incorrect_stationary_energy": "0",
+            "actual_count_bracket": "4/3",
+            "birth_covariance_identity": true
+          },
+          {
+            "case": "fully_occupied",
+            "forward_equation_max_integer_residual": 0,
+            "evolving_energy_integer_residual": 0,
+            "incorrect_stationary_energy": "0",
+            "actual_count_bracket": "0",
+            "birth_covariance_identity": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "complete_configuration_Fourier_orientation",
+      "passed": true,
+      "details": {
+        "configurations": 50625,
+        "features": 6,
+        "phase": "exp(-i pi x/2)"
+      }
+    },
+    {
+      "name": "empty_initial_state_requires_formation_noise",
+      "passed": true,
+      "details": {
+        "initial_field": "identically zero",
+        "at_vacancy_half_trace_covariance": "27/56"
+      }
+    }
+  ],
+  "limitations": [
+    "The complete finite generator is a directional four-cycle control; the three-dimensional limits rest on the reconstructed proofs.",
+    "No finite-N fluctuation limit is inferred from a spectrum alone.",
+    "No physical electromagnetism, qubit realization or parity extension is certified by these checks."
+  ]
+}

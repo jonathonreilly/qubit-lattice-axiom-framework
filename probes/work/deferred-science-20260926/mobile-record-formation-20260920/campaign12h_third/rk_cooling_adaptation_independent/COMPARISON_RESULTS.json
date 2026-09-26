@@ -1,0 +1,310 @@
+{
+  "created_utc": "2026-09-22T19:52:10.152343+00:00",
+  "script_sha256": "e4e392a9fcd15eef4ef0f5f33c2ccfbe336012f7a7b770348c265843232489ad",
+  "authentication": {
+    "author_artifacts": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+        "bytes": 9124,
+        "sha256": "791875b79af460884cb30802f4a454eaabc4ec6514a82fbc0c09e56573f4fd71"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_hamiltonian_change_check.py",
+        "bytes": 10215,
+        "sha256": "df1f1793afb5e84fb5811225c9a7d43451be4d246b56067fa2c72158334e869e"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RESULTS.json",
+        "bytes": 20823,
+        "sha256": "43b17bc16adcda0bda755bbe65715faf13cffe576cf20012cab94f5bc6cad1fa"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN.log",
+        "bytes": 20823,
+        "sha256": "43b17bc16adcda0bda755bbe65715faf13cffe576cf20012cab94f5bc6cad1fa"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN.stderr",
+        "bytes": 552,
+        "sha256": "3478a4f9943e0dd0b7040228fed5221420da10355b927af1e4e0687d81af1f3a"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN_RECEIPT.json",
+        "bytes": 467,
+        "sha256": "145154c00a988106dd84ee7324d54050b1d34ec4f08c7c4865b38e7b87701679"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md",
+        "bytes": 7559,
+        "sha256": "e6cc8029beca2c290935ccac94147b3c679a7bfef8db521c972a055514624d63"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/cubic_record_cooling_stationary_screen.py",
+        "bytes": 10397,
+        "sha256": "39a8b1d908145576238b3171e4736c7254e1493b436a73afcc270f67df473419"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RESULTS.json",
+        "bytes": 6371,
+        "sha256": "b1dbca67d1ef0020a052df142850ca988334f793a5c6d61fae7ad8dbc3646fc9"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.log",
+        "bytes": 5032,
+        "sha256": "ddc53271308258a18f46f047f13d8f227fe381ec30f84b3ed54efb86a698facc"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.stderr",
+        "bytes": 510,
+        "sha256": "84aa724f6a8e7ca380f2774b20b5ac682b45bab88d097c99c8eeb27cfffe13ae"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN_RECEIPT.json",
+        "bytes": 470,
+        "sha256": "0e556670af96d2d3bcd38c8a0ccb88c18e07b067b1aff69a8568f224b88ef181"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md",
+        "bytes": 8508,
+        "sha256": "f7fec2a31f61a020ff7b305617c98ca9b397bb408b3902472b24b40406233d4c"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_weighted_record_ground_screen.py",
+        "bytes": 9661,
+        "sha256": "5712326ef62ff7b93c6c772a5473b2745addf08c7ef123ea1f29a9fab32e5124"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RESULTS.json",
+        "bytes": 34469,
+        "sha256": "425cf9a9dee90c3dcbfc7b70f7d147f9117c5f423aa819367b4a9c283083a038"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.log",
+        "bytes": 34469,
+        "sha256": "425cf9a9dee90c3dcbfc7b70f7d147f9117c5f423aa819367b4a9c283083a038"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.stderr",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN_RECEIPT.json",
+        "bytes": 467,
+        "sha256": "1d7dd59906860f47cdaa4415dfc929deb20c4c69078bc17eda2605665d8c08ff"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_GROUND_OPTIMUM_CERTIFICATE.json",
+        "bytes": 1389,
+        "sha256": "30526c4de82eece127df5d9d97992d04c477a6bb2226cc1c18c88c8a55504e68"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_SOURCE_CONTEXT.json",
+        "bytes": 1854,
+        "sha256": "0d5650c3cd30967b5e3f6d5a5998380c1054e181e7b6ca26ca81017737e13bb7"
+      }
+    ],
+    "preserved_pre_bindings": 39,
+    "streams": [
+      {
+        "stem": "RK_COOLING_HAMILTONIAN_CHANGE",
+        "receipt": "authenticated",
+        "stderr_bytes": 552,
+        "log_matches": "exact result bytes"
+      },
+      {
+        "stem": "CUBIC_RECORD_COOLING_STATIONARY",
+        "receipt": "authenticated",
+        "stderr_bytes": 510,
+        "log_matches": "all progress rows match corresponding complete result fields"
+      },
+      {
+        "stem": "LOCAL_WEIGHTED_RECORD_GROUND",
+        "receipt": "authenticated",
+        "stderr_bytes": 0,
+        "log_matches": "exact result bytes"
+      }
+    ],
+    "reused_direct_dependencies": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+        "bytes": 12648,
+        "sha256": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_gauge_record_cooling_check.py",
+        "bytes": 12497,
+        "sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552"
+      }
+    ],
+    "external_context_limit": "Provenance statements read, not independently certified; no new external or later frontier source opened."
+  },
+  "global_edge_target": {
+    "dimension": 7,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "unnormalized_positive_target": [
+      1,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "normalization_squared": 140,
+    "dual_fidelity_identity": "exact",
+    "M_and_loss_rank_exact": 6,
+    "mu_numeric": 0.022187127082755383,
+    "loss_operator_norm_numeric": 5.2352087076336,
+    "claim": "Checks the additional author global-edge construction; no local implementation inferred."
+  },
+  "weighted_and_local_support": {
+    "independent_link_footprints": [
+      {
+        "side": 2,
+        "overlap": 11,
+        "links": 20
+      },
+      {
+        "side": 3,
+        "overlap": 13,
+        "links": 30
+      },
+      {
+        "side": 4,
+        "overlap": 13,
+        "links": 32
+      }
+    ],
+    "weighted_exponential_vector_identity": "exact",
+    "reversing_pair_orientation_changes_L_by_minus_sign": "exact",
+    "all_volume_bound": "At most 12 other overlapping plaquettes and at most 4+12*3=40 links; not a range-zero compiler."
+  },
+  "gaussian": {
+    "rows": [
+      {
+        "s": 0.25,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 1.0,
+        "gamma": 0.4,
+        "exact_formula_comparison": "agrees",
+        "final_Fock_covariance_error": 1.354472090042691e-14
+      },
+      {
+        "s": 0.0625,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 1.0,
+        "gamma": 1.0,
+        "exact_formula_comparison": "agrees",
+        "final_Fock_covariance_error": 9.465091554972105e-08
+      },
+      {
+        "s": 1.0,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 2.0,
+        "gamma": 2.0,
+        "exact_formula_comparison": "agrees",
+        "final_Fock_covariance_error": 2.7755575615628914e-17
+      },
+      {
+        "s": 0.36,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 0.0,
+        "gamma": 0.7,
+        "exact_formula_comparison": "agrees",
+        "final_Fock_covariance_error": 0.0
+      },
+      {
+        "s": 0.25,
+        "K": 2.0,
+        "W": 0.5,
+        "U": 1.0,
+        "gamma": 0.3,
+        "exact_formula_comparison": "agrees",
+        "final_Fock_covariance_error": 2.842170943040401e-14
+      }
+    ],
+    "coverage": "Independent algebraic reduction of all five reported parameter rows; no repeat of Fock stationary solves."
+  },
+  "variational": {
+    "rows": [
+      {
+        "delta": "1/20",
+        "exact_positive_critical_count": 1,
+        "theta": 0.01600759478565345,
+        "energy": -0.40215325971403054,
+        "gap_bound_from_reported_finite_spectrum": 0.0005659616741561597
+      },
+      {
+        "delta": "1/5",
+        "exact_positive_critical_count": 1,
+        "theta": 0.061938388416773356,
+        "energy": -1.6341599084844574,
+        "gap_bound_from_reported_finite_spectrum": 0.006821667545547629
+      },
+      {
+        "delta": "1/2",
+        "exact_positive_critical_count": 1,
+        "theta": 0.1481539220940489,
+        "energy": -4.213344242874201,
+        "gap_bound_from_reported_finite_spectrum": 0.026652573010123925
+      },
+      {
+        "delta": "1",
+        "exact_positive_critical_count": 1,
+        "theta": 0.28941248265352787,
+        "energy": -8.88983161281124,
+        "gap_bound_from_reported_finite_spectrum": 0.061501572248347625
+      }
+    ],
+    "independent_delta_one_fifth_matches": true,
+    "coverage": "All four exact energy/critical polynomials reconstructed from sealed independent census, exact root counts and reported numerical consequences checked. Only delta=1/5 has the prior independent full spectral calculation and rational ground-energy enclosure; no full author stationary solve replay."
+  },
+  "finding_F1": {
+    "source": "ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md:37",
+    "needed_qualification": "delta != 0, in addition to nonconstant d(c)",
+    "prior_zero_delta_countercontrol": true
+  },
+  "status": "Bounded comparison controls completed; one prose scope repair identified."
+}

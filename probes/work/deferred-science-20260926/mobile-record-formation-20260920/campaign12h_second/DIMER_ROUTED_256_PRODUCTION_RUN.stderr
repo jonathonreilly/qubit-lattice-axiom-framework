@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_run.py", line 69, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_run.py", line 66, in main
+    dispatch=identity(root/'DISPATCH.json'),statuses=statuses,rows=sorted(results,key=lambda x:(x['N'],x['kind'],x['replicate'])))
+                                                                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_run.py", line 66, in <lambda>
+    dispatch=identity(root/'DISPATCH.json'),statuses=statuses,rows=sorted(results,key=lambda x:(x['N'],x['kind'],x['replicate'])))
+                                                                                                ~^^^^^
+KeyError: 'N'

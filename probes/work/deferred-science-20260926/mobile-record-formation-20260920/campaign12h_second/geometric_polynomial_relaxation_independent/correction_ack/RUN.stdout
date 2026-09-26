@@ -1,0 +1,10 @@
+{
+  "F1": "closed",
+  "old_seal_binding_counts": [
+    43,
+    61
+  ],
+  "new_cycle6_rows": 5,
+  "previous_rows_exactly_unchanged": 35,
+  "largest_exact_vs_numeric_difference": 2.220446049250313e-16
+}

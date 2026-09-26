@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T19:49:30.487179+00:00",
+  "reason": "Five scientific patch calculations completed; final comparison compared JSON shape lists with internal tuples. Normalize both sides to tuples. No mathematical changes.",
+  "before_sha256": "11267c3546e8038278d45dba8088680b6d593894c7bee6a1d3e140cbb37b7f2f",
+  "after_sha256": "77cd08aa123483d95cd8712fa25ba442dc3712bbdd35ed6451a156c11f8a1e93"
+}

@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-09-21T12:50:16.310266+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "bytes": 9977,
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "bytes": 9998,
+      "sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "bytes": 11623,
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/INDEPENDENT.stdout",
+      "bytes": 7897,
+      "sha256": "463c14232cc8c63511bf4a4e4652fb26d86a936937b99a157368b0f61485df7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 7897,
+      "sha256": "463c14232cc8c63511bf4a4e4652fb26d86a936937b99a157368b0f61485df7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 8767,
+      "sha256": "1b389c130697b407fd45db334ad3d3b1ff1a2a5e5ee79aebab719bd5aa62133e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/READ_BOUNDARY.json",
+      "bytes": 1167,
+      "sha256": "3f7bf9abb989928b1407c0d381d2080caec0d207734f968c6627f818dbb39e7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/independent_check.py",
+      "bytes": 10438,
+      "sha256": "2b04b217a5e58e45d5f8413ee208809eeddb406a0f20310dcd829f3128f368df"
+    }
+  ],
+  "author_runner_or_result_read": false,
+  "independent_checks_status": "All assertions passed on first execution; full stdout and empty stderr retained",
+  "scope": "Pre-comparison mathematical reconstruction and finite controls only."
+}

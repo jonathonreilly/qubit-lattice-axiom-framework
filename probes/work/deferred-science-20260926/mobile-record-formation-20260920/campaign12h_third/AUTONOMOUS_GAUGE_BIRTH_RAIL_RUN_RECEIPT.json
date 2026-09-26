@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomous_gauge_birth_rail_check.py"
+  ],
+  "started_utc": "2026-09-22T16:19:40.154794+00:00",
+  "completed_utc": "2026-09-22T16:20:53.900088+00:00",
+  "returncode": 0,
+  "script_sha256": "7bfc1048e170c1d6b192e34d89a994bbed423e4784508609e42779089b80a936"
+}

@@ -1,0 +1,36 @@
+{
+  "time_utc": "2026-09-21T13:55:01.939595+00:00",
+  "scope": "Narrow prose-only correction acknowledgment; no mathematical or numerical rerun.",
+  "old_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/periodic_parity_f1_fix/PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.before.md",
+    "sha256": "fe6f9a4f71bdeac7f971b233ce6def6ef918bf29476ea4e48641a881f2ee8257"
+  },
+  "corrected_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.md",
+    "sha256": "8423eb976225c8e267221203f731a19426624111bae5b88e5412d3b76fe6cd63"
+  },
+  "review_report_sha256": "e40650e33daed41c5228b247d490773378f18a4f56f32418d5936e33c16b1415",
+  "review_final_seal_sha256": "a7a2302c0663ba3b25a1f9f97f2e68f02594ca95729a46d7ecd5c21a2eb4e73e",
+  "complete_delta": [
+    {
+      "old_start_line": 49,
+      "new_start_line": 49,
+      "before": "enabled event. Those parities are (0,0,1), so (1) does **not** explain that\nobserved jam. The initial idea that this particular endpoint might have all\n",
+      "after": "content-changing event in the projected content process. Optional swaps of\nequal-content records can still transport identities: the independent census\nfinds 115 such accepted channels, including the swap of the two +x records\nat (0,0,2) and (0,1,2). The stored `zero_active_rate` flag refers to projected\ncontent activity. Those parities are (0,0,1), so (1) does **not** explain that\nobserved content jam. The initial idea that this particular endpoint might have all\n"
+    },
+    {
+      "old_start_line": 78,
+      "new_start_line": 82,
+      "before": "For exactly two vacancies it is O(N^-1), uniformly in their separation,\n",
+      "after": "For exactly two vacancies the squared longitudinal norm is O(N^-1), uniformly in their separation,\n"
+    }
+  ],
+  "inverse_replacement_recovers_reviewed_bytes": true,
+  "findings": {
+    "F1": "Closed: the paragraph now explicitly refers to projected content activity, records the 115 accepted identity-transport channels and the independently verified equal-label witness, and scopes zero_active_rate correctly.",
+    "squared_norm_precision": "Closed: O(N^-1) now explicitly refers to the squared longitudinal norm, in agreement with the sealed bound and sharpness control."
+  },
+  "new_mathematical_claims": false,
+  "prior_review_artifacts_preserved": 18,
+  "unresolved_findings_within_original_scope": []
+}

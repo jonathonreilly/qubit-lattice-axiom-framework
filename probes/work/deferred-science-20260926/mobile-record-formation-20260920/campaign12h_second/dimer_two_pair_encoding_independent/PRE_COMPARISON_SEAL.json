@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-22T00:19:37.499463+00:00",
+  "boundary": "Independent construction, positivity, all covariance identities, full modular rank certificate and complete result read before author checker/results. No correction found.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md",
+      "bytes": 2820,
+      "sha256": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/INDEPENDENT_DERIVATION.md",
+      "bytes": 3082,
+      "sha256": "aab7797615cc155142211a01cd89059d005b806dfd217a63577c8b6df4aeafff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 3936,
+      "sha256": "e297a5e54a88addbfae203599967ae2be1f0a45cecdc870b2979a17ea57cfb56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/INDEPENDENT_RUN.log",
+      "bytes": 95,
+      "sha256": "853925166d97b4791849ccd6d3ed1ea38d3ab78e33f97f65631e8b7d99a1eecb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 487,
+      "sha256": "4f7d57807912b7773402ea1e006fd7bcc986adc19f224699e7f7a7b2912a00c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/PRE_SOURCES.json",
+      "bytes": 471,
+      "sha256": "ab0f7581b06f1207fc09e38dbbb7fc61061dab7c340b3651a732965bf6870029"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/independent_check.py",
+      "bytes": 6132,
+      "sha256": "f307d03583d44faffb19f7b012905afc92d12866c53be2bea99da77aa8b3a72c"
+    }
+  ]
+}

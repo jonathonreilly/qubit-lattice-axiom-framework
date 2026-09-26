@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-22T18:41:35.945447+00:00",
+  "type": "Explicitly interrupted own bounded control for an avoidable dense/sparse multiplication cost. No mathematical assertion failed.",
+  "cause": "SymPy immutable-dense times mutable-sparse multiplication used an all-entry/all-inner-index fallback on a 432-dimensional diagonal Gauss commutator.",
+  "repair": "Represent all matter/probe-scale matrices consistently as mutable sparse matrices. Keep all dimensions, exact entries, full commutator/unitarity/Kraus checks and parameters.",
+  "preserved": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/readout_dense_sparse_cost/readout_check.py",
+      "bytes": 6491,
+      "sha256": "324be78d3674edfd1e7c553b8324f25f2d90af19c99d1d3ab7b64de067d201b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/readout_dense_sparse_cost/READOUT_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/readout_dense_sparse_cost/READOUT_RUN.stderr",
+      "bytes": 2594,
+      "sha256": "fb893b07bf04ef691ffe26e4f534664e4c2cce5c8e034ed5e58f979d03ebbe12"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/readout_dense_sparse_cost/READOUT_RUN_RECEIPT.json",
+      "bytes": 924,
+      "sha256": "b1f3704f586195ef1d0eb980880d1df0d33e14a7a9d5793cb9d4b07861ab6d6f"
+    }
+  ]
+}

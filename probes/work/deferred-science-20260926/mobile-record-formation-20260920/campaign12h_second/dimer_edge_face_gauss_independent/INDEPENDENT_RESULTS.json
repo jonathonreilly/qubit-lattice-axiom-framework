@@ -1,0 +1,646 @@
+{
+  "incidence": [
+    {
+      "side": 3,
+      "vertices": 27,
+      "curl_rank": 52,
+      "gradient_rank": 26,
+      "divergence_rank": 26,
+      "real_transverse_modes": 52,
+      "gauge_modes": 29,
+      "proper_cubical_chain_map_controls": 24,
+      "squared_frequency_inventory": {
+        "0": 1,
+        "3": 6,
+        "6": 12,
+        "9": 8
+      },
+      "max_symbol_Gram_residual": 2.312193700069882e-15,
+      "wrong_adjoint_energy_countercontrol": {
+        "E_edge": 0,
+        "Q_edge": 42,
+        "wrong_energy_derivative": 1
+      },
+      "sufficient_HK_norm_constant_times_K": "1377/4 * K"
+    },
+    {
+      "side": 4,
+      "vertices": 64,
+      "curl_rank": 126,
+      "gradient_rank": 63,
+      "divergence_rank": 63,
+      "real_transverse_modes": 126,
+      "gauge_modes": 66,
+      "proper_cubical_chain_map_controls": 24,
+      "squared_frequency_inventory": {
+        "0": 1,
+        "2": 6,
+        "4": 15,
+        "6": 20,
+        "8": 15,
+        "10": 6,
+        "12": 1
+      },
+      "max_symbol_Gram_residual": 2.6645352591003757e-15,
+      "wrong_adjoint_energy_countercontrol": {
+        "E_edge": 0,
+        "Q_edge": 92,
+        "wrong_energy_derivative": 1
+      },
+      "sufficient_HK_norm_constant_times_K": "3264/4 * K"
+    }
+  ],
+  "spin": {
+    "spin_norm_rows": [
+      {
+        "K": 1,
+        "exact_Q_norm_squared": "1/2",
+        "exact_finite_CCR": true
+      },
+      {
+        "K": 2,
+        "exact_Q_norm_squared": "1",
+        "exact_finite_CCR": true
+      },
+      {
+        "K": 3,
+        "exact_Q_norm_squared": "3/2",
+        "exact_finite_CCR": true
+      },
+      {
+        "K": 4,
+        "exact_Q_norm_squared": "2",
+        "exact_finite_CCR": true
+      }
+    ],
+    "two_edge_finite_Gauss_commutator_Frobenius_squared": "4"
+  },
+  "two_edge_squeezed_controls": [
+    {
+      "K": 2,
+      "epsilon": 0.8908987181403393,
+      "physical_dimension": 9,
+      "projection_norm": 0.9999697307189532,
+      "projection_tail_norm": 0.00778059418451519,
+      "Markov_tail_bound": 0.4328596753079526,
+      "weighted_number_norm": 1.7314387012318104,
+      "epsilon_four_scaled_number_norm": 1.090738033142299,
+      "canonical_energy": 0.9055319126825725,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.8825285505357049,
+      "K_one_third_scaled_energy_error": 0.22101757981280656,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.8825285505357049,
+          "gauge_mean_square": 0.38124384567102276,
+          "K_one_sixth_scaled_gauge": 0.4279317479172387,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9881527541960418,
+              "characteristic_imag": -8.705390148617525e-17,
+              "distance_from_reduced_value": 0.01184724580395824
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8256225503138015,
+              "characteristic_imag": -3.3532740451027e-16,
+              "distance_from_reduced_value": 0.1743774496861985
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.17897958010709977,
+              "characteristic_imag": -2.003198861419304e-16,
+              "distance_from_reduced_value": 0.8210204198929002
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.8825285505357049,
+          "gauge_mean_square": 0.38975517653279956,
+          "K_one_sixth_scaled_gauge": 0.43748539379018747,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9878895342036274,
+              "characteristic_imag": -1.1102230246251565e-16,
+              "distance_from_reduced_value": 0.01211046579637265
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.822030529073891,
+              "characteristic_imag": -3.885780586188048e-16,
+              "distance_from_reduced_value": 0.17796947092610904
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.17279753725825048,
+              "characteristic_imag": -1.3964523981613297e-16,
+              "distance_from_reduced_value": 0.8272024627417496
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.8825285505357048,
+          "gauge_mean_square": 0.4000290734034934,
+          "K_one_sixth_scaled_gauge": 0.4490174531157858,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9875718053900858,
+              "characteristic_imag": 5.551115123125783e-17,
+              "distance_from_reduced_value": 0.012428194609914178
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8176946553573712,
+              "characteristic_imag": -4.440892098500626e-16,
+              "distance_from_reduced_value": 0.18230534464262882
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.16533528820334475,
+              "characteristic_imag": -1.1102230246251565e-16,
+              "distance_from_reduced_value": 0.8346647117966552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "K": 4,
+      "epsilon": 0.7937005259840998,
+      "physical_dimension": 25,
+      "projection_norm": 0.999999638989846,
+      "projection_tail_norm": 0.0008497177046795529,
+      "Markov_tail_bound": 0.14413950448378116,
+      "weighted_number_norm": 2.3062320717404985,
+      "epsilon_four_scaled_number_norm": 0.915228804190917,
+      "canonical_energy": 0.8645969124234067,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.8476704878293629,
+      "K_one_third_scaled_energy_error": 0.22313097579335447,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.8476704878293629,
+          "gauge_mean_square": 0.31098520786686984,
+          "K_one_sixth_scaled_gauge": 0.391816809597402,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.990328568473869,
+              "characteristic_imag": -1.3403786533697687e-16,
+              "distance_from_reduced_value": 0.009671431526131036
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8559537694879764,
+              "characteristic_imag": -4.2681209783851747e-16,
+              "distance_from_reduced_value": 0.1440462305120236
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.24753388263522422,
+              "characteristic_imag": -4.057267682680772e-16,
+              "distance_from_reduced_value": 0.7524661173647758
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.8476704878293628,
+          "gauge_mean_square": 0.3223345356469653,
+          "K_one_sixth_scaled_gauge": 0.40611606656970095,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9899773840859715,
+              "characteristic_imag": -2.220446049250313e-16,
+              "distance_from_reduced_value": 0.010022615914028532
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8511104344734262,
+              "characteristic_imag": -3.885780586188048e-16,
+              "distance_from_reduced_value": 0.14888956552657384
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.23578475486221848,
+              "characteristic_imag": -3.608224830031759e-16,
+              "distance_from_reduced_value": 0.7642152451377815
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.8476704878293627,
+          "gauge_mean_square": 0.35366998698499497,
+          "K_one_sixth_scaled_gauge": 0.445596261318441,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.989007627233343,
+              "characteristic_imag": -2.220446049250313e-16,
+              "distance_from_reduced_value": 0.010992372766656988
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8377065943709798,
+              "characteristic_imag": -6.661338147750939e-16,
+              "distance_from_reduced_value": 0.16229340562902017
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.20245785448116943,
+              "characteristic_imag": -1.6653345369377348e-16,
+              "distance_from_reduced_value": 0.7975421455188305
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "K": 8,
+      "epsilon": 0.7071067811865476,
+      "physical_dimension": 81,
+      "projection_norm": 0.9999999928053455,
+      "projection_tail_norm": 0.00011995544621900412,
+      "Markov_tail_bound": 0.05210958701395144,
+      "weighted_number_norm": 3.3350135688928924,
+      "epsilon_four_scaled_number_norm": 0.8337533922232233,
+      "canonical_energy": 0.8321067811865476,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.8176728329781359,
+      "K_one_third_scaled_energy_error": 0.2211321035831766,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.8176728329781359,
+          "gauge_mean_square": 0.24840395963331022,
+          "K_one_sixth_scaled_gauge": 0.3512962486606061,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9922678253969457,
+              "characteristic_imag": -2.3292557185581833e-16,
+              "distance_from_reduced_value": 0.007732174603054309
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8832933192135738,
+              "characteristic_imag": -8.08219248238934e-16,
+              "distance_from_reduced_value": 0.11670668078642621
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.3300850578076957,
+              "characteristic_imag": -9.290580316288626e-16,
+              "distance_from_reduced_value": 0.6699149421923043
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.8176728329781353,
+          "gauge_mean_square": 0.25433411073115464,
+          "K_one_sixth_scaled_gauge": 0.35968274877009937,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9920840237900039,
+              "characteristic_imag": -3.3306690738754696e-16,
+              "distance_from_reduced_value": 0.007915976209996067
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.8806934208947411,
+              "characteristic_imag": -1.1102230246251565e-15,
+              "distance_from_reduced_value": 0.11930657910525888
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.3219311425184589,
+              "characteristic_imag": -9.298117831235686e-16,
+              "distance_from_reduced_value": 0.6780688574815411
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.8176728329781355,
+          "gauge_mean_square": 0.27202926538858463,
+          "K_one_sixth_scaled_gauge": 0.3847074764749263,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9915356789746761,
+              "characteristic_imag": -2.220446049250313e-16,
+              "distance_from_reduced_value": 0.008464321025323907
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.872959214074783,
+              "characteristic_imag": -7.771561172376096e-16,
+              "distance_from_reduced_value": 0.12704078592521695
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.2981758624937362,
+              "characteristic_imag": -8.604228440844963e-16,
+              "distance_from_reduced_value": 0.7018241375062638
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "K": 16,
+      "epsilon": 0.6299605249474366,
+      "physical_dimension": 289,
+      "projection_norm": 0.9999999999971573,
+      "projection_tail_norm": 2.3844186102917054e-06,
+      "Markov_tail_bound": 0.019513575632201716,
+      "weighted_number_norm": 4.995475361843639,
+      "epsilon_four_scaled_number_norm": 0.7867380703272512,
+      "canonical_energy": 0.8063193469345601,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.7944547755327747,
+      "K_one_third_scaled_energy_error": 0.22010315348581977,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.7944547755327747,
+          "gauge_mean_square": 0.19747701738996004,
+          "K_one_sixth_scaled_gauge": 0.313475225144365,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.993848131821516,
+              "characteristic_imag": -2.137002709662507e-16,
+              "distance_from_reduced_value": 0.00615186817848401
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9060465343615173,
+              "characteristic_imag": -7.786148500064047e-16,
+              "distance_from_reduced_value": 0.09395346563848272
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.41373563922073486,
+              "characteristic_imag": -9.874309415339538e-16,
+              "distance_from_reduced_value": 0.5862643607792651
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.7944547755327749,
+          "gauge_mean_square": 0.20002707035749417,
+          "K_one_sixth_scaled_gauge": 0.31752318190760326,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9937689548159112,
+              "characteristic_imag": -1.1102230246251565e-16,
+              "distance_from_reduced_value": 0.00623104518408879
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9048964449987787,
+              "characteristic_imag": -6.106226635438361e-16,
+              "distance_from_reduced_value": 0.09510355500122125
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.4091876552240997,
+              "characteristic_imag": -1.0408340855860843e-15,
+              "distance_from_reduced_value": 0.5908123447759003
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.7944547755327755,
+          "gauge_mean_square": 0.2076911099314736,
+          "K_one_sixth_scaled_gauge": 0.32968908638966415,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9935310239829706,
+              "characteristic_imag": -3.885780586188048e-16,
+              "distance_from_reduced_value": 0.006468976017029449
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9014471077217127,
+              "characteristic_imag": -6.661338147750939e-16,
+              "distance_from_reduced_value": 0.09855289227828734
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.3957582014853875,
+              "characteristic_imag": -6.661338147750939e-16,
+              "distance_from_reduced_value": 0.6042417985146125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "K": 32,
+      "epsilon": 0.5612310241546865,
+      "physical_dimension": 1089,
+      "projection_norm": 1.0,
+      "projection_tail_norm": 0.0,
+      "Markov_tail_bound": 0.007430946878508479,
+      "weighted_number_norm": 7.609289603592683,
+      "epsilon_four_scaled_number_norm": 0.7549371450921069,
+      "canonical_energy": 0.7858518468049771,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.7766861421178066,
+      "K_one_third_scaled_energy_error": 0.2209007014751113,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.7766861421178066,
+          "gauge_mean_square": 0.15686286324417853,
+          "K_one_sixth_scaled_gauge": 0.279497847576124,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9951101764558603,
+              "characteristic_imag": -2.9702463559360856e-16,
+              "distance_from_reduced_value": 0.004889823544139693
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.924600181151404,
+              "characteristic_imag": -1.126148762415288e-15,
+              "distance_from_reduced_value": 0.07539981884859603
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.4951846076666312,
+              "characteristic_imag": -1.8538184574916733e-15,
+              "distance_from_reduced_value": 0.5048153923333688
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.7766861421178087,
+          "gauge_mean_square": 0.15789401310010298,
+          "K_one_sixth_scaled_gauge": 0.28133514774583135,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9950781145767574,
+              "characteristic_imag": -2.220446049250313e-16,
+              "distance_from_reduced_value": 0.004921885423242567
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9241244327892606,
+              "characteristic_imag": -1.0547118733938987e-15,
+              "distance_from_reduced_value": 0.0758755672107394
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.49292963634120757,
+              "characteristic_imag": -1.582067810090848e-15,
+              "distance_from_reduced_value": 0.5070703636587924
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.7766861421178082,
+          "gauge_mean_square": 0.16097151762536865,
+          "K_one_sixth_scaled_gauge": 0.2868186374190919,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9949824301815924,
+              "characteristic_imag": 2.7755575615628914e-16,
+              "distance_from_reduced_value": 0.005017569818407619
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9227058354425228,
+              "characteristic_imag": -2.0539125955565396e-15,
+              "distance_from_reduced_value": 0.07729416455747717
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.4862529190793873,
+              "characteristic_imag": -1.887379141862766e-15,
+              "distance_from_reduced_value": 0.5137470809206127
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "K": 64,
+      "epsilon": 0.5,
+      "physical_dimension": 4225,
+      "projection_norm": 0.9999999999999999,
+      "projection_tail_norm": 1.4901161193847656e-08,
+      "Markov_tail_bound": 0.0028569403543924217,
+      "weighted_number_norm": 11.70202769159136,
+      "epsilon_four_scaled_number_norm": 0.73137673072446,
+      "canonical_energy": 0.7696067811865476,
+      "transverse_energy": 0.7071067811865476,
+      "initial_physical_energy": 0.7628809069504238,
+      "K_one_third_scaled_energy_error": 0.22309650305550474,
+      "evolutions": [
+        {
+          "time": 0.0,
+          "energy": 0.7628809069504238,
+          "gauge_mean_square": 0.12459669539108963,
+          "K_one_sixth_scaled_gauge": 0.24919339078217925,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9961139896281868,
+              "characteristic_imag": -1.3609944026404916e-15,
+              "distance_from_reduced_value": 0.003886010371813242
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.939618443272556,
+              "characteristic_imag": -5.196123750166511e-15,
+              "distance_from_reduced_value": 0.06038155672744405
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.5716029902615695,
+              "characteristic_imag": -9.844712272352763e-15,
+              "distance_from_reduced_value": 0.42839700973843053
+            }
+          ]
+        },
+        {
+          "time": 0.5,
+          "energy": 0.7628809069504249,
+          "gauge_mean_square": 0.12500414380655608,
+          "K_one_sixth_scaled_gauge": 0.25000828761311217,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9961013069387686,
+              "characteristic_imag": -1.4432899320127035e-15,
+              "distance_from_reduced_value": 0.003898693061231362
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9394271642152741,
+              "characteristic_imag": -5.6066262743570405e-15,
+              "distance_from_reduced_value": 0.06057283578472594
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.570562268859709,
+              "characteristic_imag": -9.270362255620057e-15,
+              "distance_from_reduced_value": 0.42943773114029105
+            }
+          ]
+        },
+        {
+          "time": 1.0,
+          "energy": 0.7628809069504143,
+          "gauge_mean_square": 0.1262110000888359,
+          "K_one_sixth_scaled_gauge": 0.2524220001776718,
+          "Gauss_characteristics": [
+            {
+              "z": 0.25,
+              "characteristic_real": 0.9960637418983227,
+              "characteristic_imag": -1.1102230246251565e-15,
+              "distance_from_reduced_value": 0.0039362581016773035
+            },
+            {
+              "z": 1.0,
+              "characteristic_real": 0.9388608152523459,
+              "characteristic_imag": -5.440092820663267e-15,
+              "distance_from_reduced_value": 0.06113918474765412
+            },
+            {
+              "z": 3.0,
+              "characteristic_real": 0.5674900155350125,
+              "characteristic_imag": -9.2148511043888e-15,
+              "distance_from_reduced_value": 0.43250998446498745
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "two_edge_scope": "C=(1,-1), one transverse and one gauge coordinate. This is an independent finite-dimensional state/projection/Hamiltonian control, not the full cubic lattice simulation. Its Gaussian Fock coefficients have analytic infinite-space normalization; no canonical evolution cutoff is used.",
+  "weak_convergence_countercontrol": "X_R=R with probability R^-2 and zero otherwise has characteristic function converging uniformly to 1, while E X_R^2=1. Thus characteristic convergence or bounded energy alone would not replace the addendum target-energy argument."
+}

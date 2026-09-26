@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-22T18:18:02.877618+00:00",
+  "sole_replacement": {
+    "before": "DomainMatrix.from_Matrix(O).convert_to(s.QQ_I).rank()",
+    "after": "DomainMatrix.from_Matrix(O.applyfunc(s.expand)).convert_to(s.QQ_I).rank()"
+  },
+  "whole_script_inverse_recovery": true,
+  "original_script_sha256": "09f17a76d0bdb1ca2b2d66706dd6f1346daee4a894f31e5be2502ecf59224cfb",
+  "final_script_sha256": "75eb7ae59902531b4e3e0ee33884baa78f10247f23354ddde608c0eb214b3740",
+  "all_inputs_and_rank_target_unchanged": true,
+  "final_result_sha256": "375a835144a9f69a61dd6cd727bfaa7fc313d2f71f8872740ce7c3c986526db9",
+  "final_receipt_sha256": "99402a4e6517a45a7c2aecb862249c35c6dfcaf602b286716e216704daa3446e",
+  "final_returncode": 0
+}

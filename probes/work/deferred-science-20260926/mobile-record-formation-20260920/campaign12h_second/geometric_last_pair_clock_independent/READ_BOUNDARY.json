@@ -1,0 +1,58 @@
+{
+  "time_utc": "2026-09-21T15:05:21.428587+00:00",
+  "source_commit_supplied": "4d6a7634bd13487bb30ddfcfd51fdaefc01f0530 (not queried by Git)",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+      "bytes": 7543,
+      "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "bytes": 10226,
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+      "bytes": 8459,
+      "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+      "bytes": 14609,
+      "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/independent_check.py",
+      "bytes": 15065,
+      "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/REPORT.md",
+      "bytes": 10727,
+      "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+      "bytes": 12389,
+      "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK.json",
+      "bytes": 2802,
+      "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK_SEAL.json",
+      "bytes": 1675,
+      "sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+      "bytes": 836060,
+      "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517"
+    }
+  ],
+  "read_boundary": "Complete supplied clock note read; prior proof identities reused; author clock checker/results/logs remain unopened. Taggi v3 primary HTML definitions/Theorem 2.1/Eqs 2.3-2.5 opened; local PDF authentication and targeted statement read follow. No production diagnostic or unrelated primary source accessed.",
+  "external_primary_url": "https://arxiv.org/html/1909.06558v3"
+}

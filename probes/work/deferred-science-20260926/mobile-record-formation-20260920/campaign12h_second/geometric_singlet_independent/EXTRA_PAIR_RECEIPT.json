@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:23:05.385871+00:00",
+  "end_utc": "2026-09-21T21:23:05.817185+00:00",
+  "returncode": 0,
+  "script_sha256": "903c06437437aafe7fb1f2a1fd85da765f88662c359033bcc5d34cd47c5413f2",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/extra_pair_controls.py"
+  ]
+}

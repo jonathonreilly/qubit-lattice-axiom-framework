@@ -1,0 +1,121 @@
+{
+  "completed_utc": "2026-09-21T18:12:54.085610+00:00",
+  "large_footprint_graph": {
+    "N": 16,
+    "successful_geometry_flips": 8260,
+    "blocks": [
+      {
+        "center": 0,
+        "radius": 6,
+        "black_count": 1099,
+        "contracted_count": 1183,
+        "all_six_current_footprints_contained": true,
+        "exact_block_average_difference_variance": "12/185731"
+      },
+      {
+        "center": 186,
+        "radius": 6,
+        "black_count": 1099,
+        "contracted_count": 1182,
+        "all_six_current_footprints_contained": true,
+        "exact_block_average_difference_variance": "83/1299018"
+      },
+      {
+        "center": 512,
+        "radius": 6,
+        "black_count": 1099,
+        "contracted_count": 1187,
+        "all_six_current_footprints_contained": true,
+        "exact_block_average_difference_variance": "88/1304513"
+      },
+      {
+        "center": 2047,
+        "radius": 6,
+        "black_count": 1099,
+        "contracted_count": 1188,
+        "all_six_current_footprints_contained": true,
+        "exact_block_average_difference_variance": "89/1305612"
+      }
+    ]
+  },
+  "all_allowed_bounded_shift_controls": [
+    {
+      "radius": 1,
+      "black_sites": 13,
+      "maximum_symmetric_difference": 18,
+      "maximum_exact_iid_shift_difference_variance": "18/169",
+      "radius4_times_variance": 0.10650887573964497
+    },
+    {
+      "radius": 2,
+      "black_sites": 63,
+      "maximum_symmetric_difference": 50,
+      "maximum_exact_iid_shift_difference_variance": "50/3969",
+      "radius4_times_variance": 0.2015621063240111
+    },
+    {
+      "radius": 4,
+      "black_sites": 365,
+      "maximum_symmetric_difference": 162,
+      "maximum_exact_iid_shift_difference_variance": "162/133225",
+      "radius4_times_variance": 0.31129292550197035
+    },
+    {
+      "radius": 6,
+      "black_sites": 1099,
+      "maximum_symmetric_difference": 338,
+      "maximum_exact_iid_shift_difference_variance": "338/1207801",
+      "radius4_times_variance": 0.3626822630549238
+    },
+    {
+      "radius": 10,
+      "black_sites": 4631,
+      "maximum_symmetric_difference": 882,
+      "maximum_exact_iid_shift_difference_variance": "882/21446161",
+      "radius4_times_variance": 0.41126241661619534
+    }
+  ],
+  "period_eight_mean_zero_direction_countercontrol": [
+    {
+      "radius": 0,
+      "exact_normalized_iid_sum_variance": "65/128",
+      "value": 0.5078125
+    },
+    {
+      "radius": 1,
+      "exact_normalized_iid_sum_variance": "1/52",
+      "value": 0.019230769230769232
+    },
+    {
+      "radius": 2,
+      "exact_normalized_iid_sum_variance": "461/254016",
+      "value": 0.001814846308893928
+    },
+    {
+      "radius": 4,
+      "exact_normalized_iid_sum_variance": "4347/17052800",
+      "value": 0.0002549141489960593
+    },
+    {
+      "radius": 6,
+      "exact_normalized_iid_sum_variance": "2577/38649632",
+      "value": 6.667592591825972e-05
+    },
+    {
+      "radius": 10,
+      "exact_normalized_iid_sum_variance": "25951/1372554304",
+      "value": 1.8907084349501993e-05
+    }
+  ],
+  "scope_of_periodic_variance": "Variance of a scalar coefficient applied to independent unit-variance pair colors, for periodic repetitions at N>2l+3; no stochastic geometry averaging or production simulation.",
+  "pointwise_direction_drive_sums": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "checker_sha256": "725faf8c4d9394ee1804f494ab110fbff0dd2275e65989f2d696dc893b74ff04",
+  "independent_dependency_sha256": "e362c6efe9fde62d36af2c263b2b28733cccbfae35b76081b8eaa647b5e781c8"
+}

@@ -1,0 +1,210 @@
+{
+  "created_utc": "2026-09-21T21:46:16.350404+00:00",
+  "disposition": "No actionable mathematical defect or required source correction. Conditional encoding/finite-family product-Weyl and bracket-energy review only.",
+  "precomparison_seal_sha256": "b4dcfe9a8f9b0558482a3bf2c877ab68bdee96dab82c7216fa93872598e7088b",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "bytes": 11820,
+      "sha256": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "bytes": 8749,
+      "sha256": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/REPORT.md",
+      "bytes": 12348,
+      "sha256": "26d893d2f6eb5935a758fee24bb4e64e36146147c471ceab762b8db6fd78d8e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/FINAL_SEAL.json",
+      "bytes": 25228,
+      "sha256": "a3e41997eca0f3fdd3e23b454da1157f85f9ca4d40c815f02c27e060182190f2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/RESULTS.json",
+      "bytes": 15123,
+      "sha256": "c694f17850f26562349be83b76317eacf459ae9885ee7ccf62f5704f37dda344"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_check.py",
+      "bytes": 7589,
+      "sha256": "371256d50f196b3e35bc3872feed93024b227373860931e95d9ffbe02eaf4a72"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/local_encoding_and_moments.json",
+      "bytes": 4178,
+      "sha256": "f3c710220c9ad4890247ab9ef6fa1c8cf6941eea6cf1233ca4cbb1629e2c7c61"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/finite_quantum_fluctuations.json",
+      "bytes": 6134,
+      "sha256": "182a63043a4b237f96b7f5d71f82373e366ba8df9e14c51bed1bf445b1e8c656"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_encoding_checks/Hamiltonian_and_derivative_escape.json",
+      "bytes": 1747,
+      "sha256": "641d488599d2607fd892405063c60d1cf3bd5babb8d8e96b7b22a4a922deb94f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_ENCODING_RUN.log",
+      "bytes": 104,
+      "sha256": "b06f93e2acca68958150d19c206f8e7a6a4f92d1d8f0d1a9bf0758cbe6b1fa36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_ENCODING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "AUTHOR_COMPARISON.json",
+      "bytes": 566,
+      "sha256": "d5580523517e35fb2d7e2128b9513b5d036c0b5c572d7e7c9bc39c235ec2b600"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RECEIPT.json",
+      "bytes": 409,
+      "sha256": "c770f93888905f1deee88926b38e401841bce7f75d021e9564b350e81ee2f0c6"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RUN.log",
+      "bytes": 566,
+      "sha256": "d5580523517e35fb2d7e2128b9513b5d036c0b5c572d7e7c9bc39c235ec2b600"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXTERNAL_ACCESS_RECEIPT.json",
+      "bytes": 733,
+      "sha256": "2a89ccdf974d20eb53b12e996579319c8b994a52311d22bb000e5122794af979"
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "bytes": 7438,
+      "sha256": "b4a4ea939ef862e1251bdaab374147eeaa31f09759b9255b1912eabe9b2575f1"
+    },
+    {
+      "path": "INDEPENDENT_RECEIPT.json",
+      "bytes": 412,
+      "sha256": "f41602d0ff0eef699da84780652d59384bd389be16c3f8c927d229fb02bb0d35"
+    },
+    {
+      "path": "INDEPENDENT_RESULTS.json",
+      "bytes": 3107,
+      "sha256": "5eccec39da3b6d2b16f02843e09bda103fe70c6d851f90e0ad0bfeabfb9cf9ff"
+    },
+    {
+      "path": "INDEPENDENT_RUN.log",
+      "bytes": 2534,
+      "sha256": "ebb5e9d4e48cba480fa7c70b7e64ac11912e470e7683cd1c541b2c09a8ea3104"
+    },
+    {
+      "path": "INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "POST_COMPARISON_SOURCES.json",
+      "bytes": 2616,
+      "sha256": "d1ac65b57ea4228657e9ab1c38383d48e958eec8ad066d74dce1ae31fe4b391e"
+    },
+    {
+      "path": "PRE_COMPARISON_SEAL.json",
+      "bytes": 5599,
+      "sha256": "b4dcfe9a8f9b0558482a3bf2c877ab68bdee96dab82c7216fa93872598e7088b"
+    },
+    {
+      "path": "PRE_COMPARISON_SOURCES.json",
+      "bytes": 3065,
+      "sha256": "4b8e55b1cca2cd4f0155eb4055eb01c40ea548d0f05cc3a6366a2f0a709dde2d"
+    },
+    {
+      "path": "PRE_COMPARISON_STATUS.json",
+      "bytes": 1017,
+      "sha256": "d259d453778428e6886ec7eefd7212cfac4856e005da3cbd37daa470bf8deb8d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 8945,
+      "sha256": "1111a99b2991097629f16fe8c60cd821d14e328393b1e149b791bc9cb19f8ad2"
+    },
+    {
+      "path": "compare_author.py",
+      "bytes": 4328,
+      "sha256": "d172867cebf52a0c919885a500745bc99fc3d8453355c203353dcfd5063b4456"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/DIAGNOSTIC.json",
+      "bytes": 320,
+      "sha256": "091393f15b1e84af99b919b6cd4323046badbecf1bbf74e1776eeaacb8080b19"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/INDEPENDENT_RECEIPT.json",
+      "bytes": 412,
+      "sha256": "92182376b1478d79da5e914f0271724e4cb92de35ef1f230c9f3d0ed26229dd7"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/INDEPENDENT_RUN.log",
+      "bytes": 316,
+      "sha256": "da1fab972ca3c64a23129a74e7cf18d637b0067e03f50a1f962e9ac5114bcac8"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/INDEPENDENT_RUN.stderr",
+      "bytes": 723,
+      "sha256": "d39a5a157be1f910cacb83b87f913736926ee653dc0ee4352311e2a85d55fbea"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/REASON.md",
+      "bytes": 332,
+      "sha256": "f8c29eb9ef4127a18d0d01828add23aecc64de04ab0348aefbedcede25d341d7"
+    },
+    {
+      "path": "failed_attempts/symbolic_covariance_comparison/independent_check.py",
+      "bytes": 9948,
+      "sha256": "d1a55e7a34f1ed7d77031f4368ccf241f8c634d4dfd1b1539bad4980153c68c0"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 9966,
+      "sha256": "d5457afadb1031f736e25677d70077c325665b573f0fbd2a7a0e4427e82e5538"
+    }
+  ],
+  "scope": "Complete source and checker read; own precomparison proof and controls; author result/group/log authentication and independent closed-form finite-K comparison. No author code execution or microscopic quantum dynamics inference."
+}

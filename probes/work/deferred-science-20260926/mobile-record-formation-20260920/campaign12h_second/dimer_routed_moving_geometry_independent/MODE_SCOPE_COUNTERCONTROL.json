@@ -1,0 +1,70 @@
+{
+  "source_current": "Corrected routed note equation (5), differentiated symbolically on the full variables then restricted to the probability tangent.",
+  "Fourier_scaling": "For the actual fixed mode Q=2pi e3, multiply every eigenvalue by 2pi; the mode counts are unchanged.",
+  "finding": "F1: positive orbit masses alone do not imply four propagating and nine static modes. Require the orbit-isotropic probabilities for this specialization.",
+  "does_not_refute": "The arbitrary fixed full-support p matrix-propagation theorem.",
+  "rows": [
+    {
+      "case": "isotropic",
+      "p": [
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14"
+      ],
+      "rho_A": "3/7",
+      "rho_B": "4/7",
+      "gamma": "1",
+      "direction_Q_without_2pi": [
+        0,
+        0,
+        1
+      ],
+      "tangent_rank_nonzero_eigenvalues": 4,
+      "zero_eigenvalue_multiplicity": 9,
+      "monic_characteristic_polynomial": "z**9*(7*z - 2)**2*(7*z + 2)**2/2401",
+      "entropy_covariance_symmetry_exact": true
+    },
+    {
+      "case": "asymmetric_A",
+      "p": [
+        "3/28",
+        "1/28",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14",
+        "1/14"
+      ],
+      "rho_A": "3/7",
+      "rho_B": "4/7",
+      "gamma": "1",
+      "direction_Q_without_2pi": [
+        0,
+        0,
+        1
+      ],
+      "tangent_rank_nonzero_eigenvalues": 8,
+      "zero_eigenvalue_multiplicity": 5,
+      "monic_characteristic_polynomial": "z**5*(14*z - 1)**2*(14*z + 1)**2*(196*z**2 - 17)*(1372*z**2 - 103)/10330523392",
+      "entropy_covariance_symmetry_exact": true
+    }
+  ]
+}

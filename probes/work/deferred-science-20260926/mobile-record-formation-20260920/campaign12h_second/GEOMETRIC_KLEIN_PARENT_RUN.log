@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-09-21T18:32:25.701667+00:00",
+  "sources_sha256": {
+    "geometric_klein_parent_check.py": "41ca4c99e13408f0bef3c36740b4560c0c9e5679050bd2f49f579f7d7ab005b2",
+    "geometric_singlet_fiber_check.py": "5777981b140a00fcbb47077002e25774a306ba0b1128f207598eac46bd3c2654",
+    "geometric_quantum_lift_check.py": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c",
+    "geometric_corridor_transport_check.py": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c"
+  },
+  "graph": "Eight-vertex simple cube, degree three; not a degree-six infinite cubic lattice.",
+  "stars": [
+    [
+      0,
+      1,
+      2,
+      4
+    ],
+    [
+      0,
+      1,
+      3,
+      5
+    ],
+    [
+      0,
+      2,
+      3,
+      6
+    ],
+    [
+      1,
+      2,
+      3,
+      7
+    ],
+    [
+      0,
+      4,
+      5,
+      6
+    ],
+    [
+      1,
+      4,
+      5,
+      7
+    ],
+    [
+      2,
+      4,
+      6,
+      7
+    ],
+    [
+      3,
+      5,
+      6,
+      7
+    ]
+  ],
+  "VB_dimension": 9,
+  "parent_kernel_dimension": 19,
+  "all_VB_columns_annihilated_by_each_star": true,
+  "magnetization_sectors": [
+    {
+      "down_spins": 0,
+      "dimension": 1,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 8.0
+    },
+    {
+      "down_spins": 1,
+      "dimension": 8,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 3.999999999999999
+    },
+    {
+      "down_spins": 2,
+      "dimension": 28,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 0.9999999999999992
+    },
+    {
+      "down_spins": 3,
+      "dimension": 56,
+      "exact_nullity": 3,
+      "smallest_positive_eigenvalue": 0.6125741132772058
+    },
+    {
+      "down_spins": 4,
+      "dimension": 70,
+      "exact_nullity": 13,
+      "smallest_positive_eigenvalue": 0.6125741132772056
+    },
+    {
+      "down_spins": 5,
+      "dimension": 56,
+      "exact_nullity": 3,
+      "smallest_positive_eigenvalue": 0.612574113277206
+    },
+    {
+      "down_spins": 6,
+      "dimension": 28,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 0.9999999999999989
+    },
+    {
+      "down_spins": 7,
+      "dimension": 8,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 3.999999999999999
+    },
+    {
+      "down_spins": 8,
+      "dimension": 1,
+      "exact_nullity": 0,
+      "smallest_positive_eigenvalue": 8.0
+    }
+  ],
+  "kernel_spin_multiplicities": {
+    "0": 10,
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 0
+  },
+  "extra_groundspace_dimension": "10",
+  "perturbations": [
+    {
+      "operator": "nearest_neighbor_swap_sum",
+      "coefficient_matrix": "Matrix([[4, -4/3, -4/3, -4/3, 0, 2/3, 2/3, -4/3, 0], [-2, 19/9, -8/9, 1/9, -2, -8/9, -8/9, -8/9, 0], [-2, -8/9, 19/9, -8/9, 0, -8/9, -8/9, 1/9, -2], [-2, 1/9, -8/9, 19/9, -2, -8/9, -8/9, -8/9, 0], [0, -4/3, 2/3, -4/3, 4, -4/3, -4/3, 2/3, 0], [0, -8/9, -8/9, -8/9, -2, 19/9, 1/9, -8/9, -2], [0, -8/9, -8/9, -8/9, -2, 1/9, 19/9, -8/9, -2], [-2, -8/9, 1/9, -8/9, 0, -8/9, -8/9, 19/9, -2], [0, 2/3, -4/3, 2/3, 0, -4/3, -4/3, -4/3, 4]])",
+      "Gram_Hermitian": true,
+      "ordinary_symmetric": false,
+      "leakage_rank": 1,
+      "squared_Frobenius_leakage": "5",
+      "outside_parent_kernel_rank": 1,
+      "extra_parent_groundspace_rank": 0,
+      "leakage_scope": "Finite cube only; projection is algebraic and not a local effective-Hamiltonian theorem."
+    },
+    {
+      "operator": "unconditional_plaquette_ring_sum",
+      "coefficient_matrix": "Matrix([[4, 10/3, 10/3, 10/3, 0, 4/3, 4/3, 10/3, 0], [0, -34/9, 2/9, 2/9, 0, 2/9, 2/9, 2/9, 2], [0, 2/9, -34/9, 2/9, 2, 2/9, 2/9, 2/9, 0], [0, 2/9, 2/9, -34/9, 0, 2/9, 2/9, 2/9, 2], [0, 10/3, 4/3, 10/3, 4, 10/3, 10/3, 4/3, 0], [2, 2/9, 2/9, 2/9, 0, -34/9, 2/9, 2/9, 0], [2, 2/9, 2/9, 2/9, 0, 2/9, -34/9, 2/9, 0], [0, 2/9, 2/9, 2/9, 2, 2/9, 2/9, -34/9, 0], [0, 4/3, 10/3, 4/3, 0, 10/3, 10/3, 10/3, 4]])",
+      "Gram_Hermitian": true,
+      "ordinary_symmetric": false,
+      "leakage_rank": 1,
+      "squared_Frobenius_leakage": "20",
+      "outside_parent_kernel_rank": 1,
+      "extra_parent_groundspace_rank": 0,
+      "leakage_scope": "Finite cube only; projection is algebraic and not a local effective-Hamiltonian theorem."
+    }
+  ],
+  "scope": "Exploratory author exact finite controls. No thermodynamic spectral gap, complete cubic-lattice groundspace, physical preparation or photon claim."
+}

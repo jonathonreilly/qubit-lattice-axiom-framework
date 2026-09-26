@@ -1,0 +1,50 @@
+--- original/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md
++++ corrected/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md
+@@ -42,7 +42,7 @@
+ entangled. The preserved quantity is joint gauge-invariant information, not
+ a duplicated unknown quantum state.
+ 
+-## 2. Complete instrument family on these two formation transitions
++## 2. Complete coarse birth-map family on these two transitions
+ 
+ Restrict to local birth Kraus operators of the form
+ 
+@@ -52,6 +52,12 @@
+ arbitrary independent local environment and any number of its outcomes within
+ that transition space. It does not classify instruments with additional
+ matter outputs, nonlocal field changes or initial environment correlations.
++
++The classification by chi below concerns the birth CP map and generator
++after summing over mu. If individual mu outcomes are retained as records,
++their separate outcome maps are additional instrument data; chi alone does
++not classify that refinement. Unitary rotations of a Kraus list preserve
++the summed map while changing its individually marked outcomes.
+ 
+ Requiring the same field-independent vacant-edge hazard beta gives
+ 
+--- original/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md
++++ corrected/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md
+@@ -148,9 +148,9 @@
+ stream has been derived. The construction connects memory motion to reliable
+ local renewal, while exposing the resource and arrow-of-time assumption.
+ 
+-## 5. Minimal pure probe size distinguishes the instrument choices
+-
+-For the real-chi instrument family of the preceding note, retain the same
++## 5. Minimal pure probe size for the coarse channel
++
++For the real-chi coarse birth-map family of the preceding note, retain the same
+ no-event M_0 and multiply the formation coefficient matrix by p=1-c^2.
+ In the eighteen-dimensional local system, the no-event Choi vector is
+ orthogonal to the two formation-transition Choi vectors. Their squared norms
+@@ -165,6 +165,10 @@
+ representation gives an isometry into an r-dimensional environment, extendible
+ to a finite unitary. Thus the minimal pure environment dimensions are2 and3,
+ respectively. The displayed qubit collision attains the coherent case.
++
++This minimum concerns the summed channel and its coarse event/no-event
++instrument. Preserving a specified finer mu-outcome record is an additional
++requirement, not classified by chi or by this channel's Choi rank alone.
+ 
+ This result counts a pure fresh environment and all purification resources.
+ It is not a bound on a mixed probe whose omitted purification carries

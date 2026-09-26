@@ -1,0 +1,121 @@
+{
+  "status": "author finite controls; independent review pending",
+  "sources_sha256": {
+    "paired_record_dimer_check.py": "65ad8acc7384f25196132b23876f4510347832c4a7f4db548d9c9aead71d2288",
+    "PAIRED_RECORD_FORMATION_AND_DIMER_GAUSS.md": "ed48192900501781ead6d60f17aedc1e9470746e65f449c5d75eccb6a66188ca"
+  },
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "rows": [
+    {
+      "name": "conditional_birth_all_realizable_neighbor_patterns_and_cubic_covariance",
+      "pass": true,
+      "patterns": 64,
+      "rotations": 24,
+      "pattern_rotation_pairs": 1536,
+      "zero_hazard_patterns": 1
+    },
+    {
+      "name": "actual_record_transport_and_repeated_formation",
+      "pass": true,
+      "first_ids": [
+        0,
+        1
+      ],
+      "new_ids": [
+        2,
+        3
+      ],
+      "original_sites_reused": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "all_orientations_rigid_translation_and_inverse",
+      "pass": true,
+      "cases": 36
+    },
+    {
+      "name": "dense_cube_moves_eight_immutable_records_and_returns",
+      "pass": true,
+      "records": 8,
+      "occupied_sites": 8,
+      "direction_counts_preserved": true
+    },
+    {
+      "name": "birth_translation_and_cube_event_rotation_covariance",
+      "pass": true,
+      "translation_cases": 864,
+      "cube_cases": 24
+    },
+    {
+      "name": "exact_staggered_gauss_identity",
+      "pass": true,
+      "states": 6,
+      "side": 8
+    },
+    {
+      "name": "missing_staggering_mutation_is_detected",
+      "pass": true,
+      "mutant_div6": 0,
+      "required_div6": -6
+    },
+    {
+      "name": "exact_cube_fourier_polynomial_and_gauss_symbol",
+      "pass": true,
+      "delta": [
+        "Y*Z + Y - Z - 1",
+        "-X*Z - X + Z + 1",
+        "0"
+      ],
+      "divergence": "0"
+    },
+    {
+      "name": "identity_cube_mutation_is_detected",
+      "pass": true,
+      "mutant_increment": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "reflecting_cube_matching_census_and_detailed_balance",
+      "pass": true,
+      "states": 108,
+      "by_dimer_count": {
+        "0": 1,
+        "1": 12,
+        "2": 42,
+        "3": 44,
+        "4": 9
+      },
+      "max_conservative_exit_rate": 4
+    },
+    {
+      "name": "reflecting_cube_exact_absorption_keeps_unfilled_states",
+      "pass": true,
+      "transient_states": 91,
+      "closed_components": 14,
+      "unfilled_absorption_probability": "4/21",
+      "closed_component_sizes": {
+        "1": 11,
+        "2": 3
+      }
+    },
+    {
+      "name": "reflecting_cube_exact_vacancy_generator_identity",
+      "pass": true,
+      "states": 108
+    }
+  ],
+  "all_pass": true
+}

@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-22T18:11:16.263740+00:00",
+  "repo_context": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_GAUGE_AND_CUTOFF_SOURCE_CONTEXT.json",
+    "bytes": 3476,
+    "sha256": "97d12e2795ef81661c5eb8741d6a08febc709ce96b37ae8409469192e058a104"
+  },
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/0907.1657",
+      "coverage": "Abstract/introduction and complete lattice-gauge section through Eq12 and finite cooling description; local jump explicitly credited."
+    },
+    {
+      "url": "https://arxiv.org/pdf/0803.1463",
+      "coverage": "SectionIII through Theorem2 and its complete proof; root supplied own semigroup argument with jump and R invariance."
+    }
+  ],
+  "status": "Primary source context, not independent proof verification. No third-party paper copied into the packet."
+}

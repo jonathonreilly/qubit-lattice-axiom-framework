@@ -1,0 +1,88 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2982,
+      "path": "CHECKPOINT.md",
+      "sha256": "a5ab2e675b5c3a34e5a22f3bdbe0a2575ca84a397f529db03bcc02350d521d7f"
+    },
+    {
+      "bytes": 1545,
+      "path": "EXECUTION_NOTES.md",
+      "sha256": "75ccbd7697bb6d9b26cba005a84eac7af7e204cc365ce22c0110fef206887d1a"
+    },
+    {
+      "bytes": 2996,
+      "path": "FINAL_VERIFICATION.json",
+      "sha256": "a779912a7b193920dae2eaa5ae16950bd44f05725161de9f8711bfa338d557ab"
+    },
+    {
+      "bytes": 1341,
+      "path": "INPUT.md",
+      "sha256": "d58f8c877564e8bc1de6b2d48d63a1e12d39642367a63090ee0aad976b871f8a"
+    },
+    {
+      "bytes": 7660,
+      "path": "PROGRESS.log",
+      "sha256": "08f889c73c3f809ec50cda39ee984f3dbb55a4ab633731b12d78c8a93d8dbf6f"
+    },
+    {
+      "bytes": 25686,
+      "path": "REPORT.md",
+      "sha256": "168ae65623d124f2aa10a0c215c75e8767950f7fb1c50fc5a3fc287f1667b1dc"
+    },
+    {
+      "bytes": 16843,
+      "path": "RESULTS.json",
+      "sha256": "0b74d2245dc449311d668b6bd8d8ccca18a5b13ea5c80fa2314aaa2e8b3317ec"
+    },
+    {
+      "bytes": 17386,
+      "path": "RUN.log",
+      "sha256": "c60744bc0fa20204995d496cf56cd3819fb57c33472dc60a2c0d28f9a8b3b191"
+    },
+    {
+      "bytes": 15744,
+      "path": "independent_check.py",
+      "sha256": "36633e18c34699b6ed490ceceb091c666da5775d54b3bd1154ba5187b9b5ca69"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md",
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json",
+      "sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/PRE_SOURCE_SEAL.json",
+      "sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/PRE_SOURCE_SEAL.json",
+      "sha256": "c729b0f85e0350b834380909001ef62f0db0378fdf114b108f5feef7f6e0e8d1"
+    }
+  ],
+  "forbidden_actions_taken": [],
+  "kind": "pre-primary-source independent growing-product fluctuation proof/check",
+  "result": "The deterministic transport conclusion fails with births; a six-field time-inhomogeneous Gaussian diffusion with beta p0 I noise is proved using a nonstationary energy replacement estimate.",
+  "source_access_statement": "Only the supplied model and the eight listed own sealed report/seal dependencies were used. No primary growing-product proof, analysis, simulation outcome, publication draft, or new admissibility-formation file was read.",
+  "utc": "2026-09-21T05:49:20.159453+00:00"
+}

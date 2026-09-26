@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-21T19:40:14.704415+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/compare_dimer_routed_finite_wavelength.py",
+    "bytes": 6061,
+    "sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5"
+  },
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_checks/RESULTS.json",
+      "bytes": 18485,
+      "sha256": "89bd6b739074ffd695e0883394339bb975248e1e9793510bee3b84bafb9aa556"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_analysis/RESULTS.json",
+      "bytes": 136370,
+      "sha256": "08aab30040e7b0c50c60486bf769f7c87247d8771f3f2315d577725fd4d60345"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison/RESULTS.json",
+      "bytes": 57313,
+      "sha256": "51fdd3128de3e2e6edc181740e49cd56c134e337bd4d05ec5c771962f228d7eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison/WINDING_FINITE_WAVELENGTH_COMPARISON.png",
+      "bytes": 394150,
+      "sha256": "298b9cfe4166c8592e94ae4ce298d3e537a73cbdaa067c59c14cd452d94f0102"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison/WINDING_FINITE_WAVELENGTH_COMPARISON.pdf",
+      "bytes": 38410,
+      "sha256": "d6feb78f8312e9533f8612a16b4b780fdab471ba8d149f6cac36a43ce9ef4a89"
+    }
+  ],
+  "visual_inspection": "Pending root image inspection."
+}

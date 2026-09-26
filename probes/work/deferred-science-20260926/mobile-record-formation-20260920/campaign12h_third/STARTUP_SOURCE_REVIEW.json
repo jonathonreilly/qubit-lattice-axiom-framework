@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-22T13:54:55.006066+00:00",
+  "current_main": "dee2310d375f37a0ca4c8641e9a12aa7fabb8577",
+  "planning_ref": "068e916ca37b004757ad3a3c082857a91dc37215",
+  "science_workflow_sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+  "planning_reads_complete": true,
+  "prs": [
+    {
+      "number": 8611,
+      "head": "2fc37b9f66dd04517137a7addadfeeb7f416d114",
+      "title": "physics-loop: admissibility induced-law block 76 - the filled sea's energy as the ledger's field term: chessboard of clocks invisible; the sea induces a clock stiffness, not the curvature member",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8611",
+      "primary_notes_fully_read": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/PR8611/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+          "sha256": "39f02118a0cb55b931e79e32587301c2ac96e9deac6d23f6cd1f80146040030d"
+        }
+      ],
+      "runner_replayed": false,
+      "science_imported": false
+    },
+    {
+      "number": 8612,
+      "head": "a2c138c297024d90879cca1eb58336216ff8cfd0",
+      "title": "physics-loop: admissibility induced-law block 77 - the axioms' own generator: the scalar hop splits the species into four levels of one sense; a staggered term gives them mass",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8612",
+      "primary_notes_fully_read": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/PR8612/ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+          "sha256": "71599681d7559382d202d3313f6be19e865d00950f60965cc38540916dfc2493"
+        }
+      ],
+      "runner_replayed": false,
+      "science_imported": false
+    },
+    {
+      "number": 8613,
+      "head": "88a8e6752e01205879181758e70b2a47f2bad275",
+      "title": "physics-loop: admissibility induced-law block 78 - one record per site is an interaction, not a free sea",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8613",
+      "primary_notes_fully_read": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/PR8613/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_IS_AN_INTERACTION_NOT_A_FREE_SEA_TWO_RECORDS_UNDER_EXCLUSION_AGAINST_FREE_ANTISYMMETRIC_AND_SYMMETRIC_PAIRS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+          "sha256": "b4525a2dbad595c808cf4edadccd396ce5cbc1951db5ab93c76d2947bd569fdc"
+        }
+      ],
+      "runner_replayed": false,
+      "science_imported": false
+    }
+  ],
+  "new_prior_art_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/main/docs/ADMISSIBILITY_D4_OUTCOME_TYPED_GENERATED_FRONT_PREFIX_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-29.md",
+      "sha256": "bfd4a2f8cccb42b5f26620b1ad3c040d7b17e88c1d0d41fae201e1364e7a527b",
+      "coverage": "full note; no runner replay; context only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/main/docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "0d40064ad01d7754e65b787c2697c248b206624844a7098d83ebf7834cbc4b04",
+      "coverage": "full note; no runner replay; context only"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+      "sha256": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d",
+      "coverage": "full note; no runner replay; context only"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/independent_check.py", line 161, in <module>
+    answer[name]=fn();print(name+' '+json.dumps(answer[name],default=str),flush=True)
+                 ~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/independent_check.py", line 80, in covariance
+    assert G==V+I*Sigma/2 and G.eigenvals()=={2*q:3,2*r:3}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

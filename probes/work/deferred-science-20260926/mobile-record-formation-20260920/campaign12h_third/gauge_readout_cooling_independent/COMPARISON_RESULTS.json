@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-09-22T19:03:48.080886+00:00",
+  "script_sha256": "f31cf946ecac63e96bad5b8737675f277b9528051fc1d80642f0ffd83a024480",
+  "authentication": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_AND_RK_COOLING_AUTHOR_SEAL.json",
+      "sha256": "d9ea3fc91a09aff6e197925cd2a37907217f4583a8bf29a9a871a64423c2b8fc",
+      "matched_bindings": 13,
+      "all_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "99c8c68ce7803368e633fdf7f3d7314eb1f47f7ba3150a3fa732888e1f1a43b3",
+      "matched_bindings": 43,
+      "all_match": true
+    }
+  ],
+  "stdout_result_identity_and_receipts": true,
+  "readout_sign_comparison": {
+    "author_phase_probabilities_recomputed_exactly": 24,
+    "nonflippable_rows_recomputed_exactly": 14,
+    "author_X_estimator": "s*q, pulse exp(-i*s*pi*Y/4)",
+    "author_Y_estimator": "-s*q, pulse exp(-i*s*pi*X/4)",
+    "setting_map_to_sealed_reconstruction": "s_author=-s_independent for X; equal for Y",
+    "diagonal_phase_synthesis_exact": true,
+    "imaginary_cat_Y": "-1"
+  },
+  "analytic_vector_comparison": {
+    "geometry": "Open strip of three square plaquettes, ten spin-half links",
+    "dimension": 5,
+    "separating_F": "integer bit-word; linear in all link bits",
+    "t": "log(2)",
+    "checks": [
+      {
+        "delta_F": 57,
+        "pair_count": 2,
+        "identity_exact": true
+      },
+      {
+        "delta_F": 114,
+        "pair_count": 1,
+        "identity_exact": true
+      },
+      {
+        "delta_F": 228,
+        "pair_count": 2,
+        "identity_exact": true
+      }
+    ],
+    "R_dagger_identity_exact_for_inhomogeneous_signed_h": true,
+    "Vandermonde_determinant": "21895775886512782739520",
+    "independent_polynomial_proof": "Preserved verbatim in sealed REPORT.md; not replaced."
+  },
+  "cube_normalization_control": {
+    "geometry": "open 2x2x2 cube, post-comparison seed 476",
+    "dimension": 9,
+    "independently_assembled_component": [
+      476,
+      754,
+      977,
+      1596,
+      1642,
+      1865,
+      2364,
+      2410,
+      2865
+    ],
+    "pair_counts": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "row_major_matrix_unit_superoperator": true,
+    "alternative_exact_certificate": {
+      "prime": 257,
+      "image_of_i": 16,
+      "rank": 80,
+      "target_nullvector_exact": true
+    },
+    "gap_numeric": 0.8676724142632016,
+    "expected_total_jumps_numeric": {
+      "basis0": 3.2205813001704713,
+      "mixed": 3.199535228041951,
+      "target": 1.559413467016588e-15
+    },
+    "maximum_mean_difference_from_author": 0.0,
+    "maximum_late_row_difference_from_author": 5.41524256805672e-16,
+    "coverage_limit": "No periodic 864-state traversal or complete author suite replay."
+  },
+  "author_scripts_imported_or_executed": false,
+  "failures": [],
+  "runtime_seconds": 0.08840866689570248
+}

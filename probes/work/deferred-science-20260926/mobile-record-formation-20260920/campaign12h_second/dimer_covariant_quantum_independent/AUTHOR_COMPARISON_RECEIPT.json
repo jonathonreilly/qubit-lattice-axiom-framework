@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:44:04.739770+00:00",
+  "end_utc": "2026-09-21T21:44:06.157326+00:00",
+  "returncode": 0,
+  "script_sha256": "d172867cebf52a0c919885a500745bc99fc3d8453355c203353dcfd5063b4456",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/compare_author.py"
+  ]
+}

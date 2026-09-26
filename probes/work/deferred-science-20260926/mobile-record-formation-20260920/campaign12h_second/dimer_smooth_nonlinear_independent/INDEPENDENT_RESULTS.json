@@ -1,0 +1,228 @@
+{
+  "created_utc": "2026-09-21T23:02:21.926599+00:00",
+  "scope": "New independent finite controls for the complete supplied proof, before author smooth-time checker/results.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "entropy_cycle": {
+    "states": 38416,
+    "directed_route_channels": 4,
+    "integer_uniform_stationarity_residual": 0,
+    "rates_min_max": [
+      0.9166666666666666,
+      1.5833333333333333
+    ],
+    "rstar": 0.9166666666666666,
+    "bare_dirichlet": 1.0128124581165812,
+    "entropy_derivative_Euler_N8": -51.596808093796426,
+    "upper_bound_minus_2NrstarD": -14.85458271904319,
+    "inhomogeneous_relative_entropy_decomposition_residual": 0.0,
+    "conditional_sector_count": 2380,
+    "conditional_V_expectation_abs": 0.0005233271102648004,
+    "conditional_CS_bound": 1.4536845033401569,
+    "conditional_variance_sqrtf": 0.24374380840919446,
+    "ring_Poincare_bound_D_over_2": 0.5064062290582906,
+    "wrong_grandcanonical_centering_countercontrol": {
+      "swap_dirichlet": 0,
+      "nonzero_expectation": "13/252"
+    },
+    "scope": "One complete four-anchor physical route cycle and the actual fourteen labels/rates; not the complete three-dimensional finite generator."
+  },
+  "all_four_cycle_count_sector_gaps": [
+    {
+      "count_partition": [
+        4
+      ],
+      "arrangements": 1,
+      "gap": null,
+      "exact_eigenvalue_multiplicities": {
+        "0": 1
+      }
+    },
+    {
+      "count_partition": [
+        3,
+        1
+      ],
+      "arrangements": 4,
+      "gap": "2",
+      "exact_eigenvalue_multiplicities": {
+        "4": 1,
+        "2": 2,
+        "0": 1
+      }
+    },
+    {
+      "count_partition": [
+        2,
+        2
+      ],
+      "arrangements": 6,
+      "gap": "2",
+      "exact_eigenvalue_multiplicities": {
+        "6": 1,
+        "4": 1,
+        "2": 3,
+        "0": 1
+      }
+    },
+    {
+      "count_partition": [
+        2,
+        1,
+        1
+      ],
+      "arrangements": 12,
+      "gap": "2",
+      "exact_eigenvalue_multiplicities": {
+        "6": 3,
+        "4": 3,
+        "2": 5,
+        "0": 1
+      }
+    },
+    {
+      "count_partition": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "arrangements": 24,
+      "gap": "2",
+      "exact_eigenvalue_multiplicities": {
+        "8": 1,
+        "4": 6,
+        "6": 8,
+        "2": 8,
+        "0": 1
+      }
+    }
+  ],
+  "finite_torus_block_geometry": [
+    {
+      "N": 24,
+      "ell": 2,
+      "m": 8,
+      "overlap_degree": 26,
+      "available_colors_8m": 64,
+      "bond_multiplicities": [
+        4,
+        4,
+        4
+      ],
+      "internal_four_context_anchors": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "N": 40,
+      "ell": 4,
+      "m": 64,
+      "overlap_degree": 342,
+      "available_colors_8m": 512,
+      "bond_multiplicities": [
+        48,
+        48,
+        48
+      ],
+      "internal_four_context_anchors": [
+        16,
+        16,
+        16,
+        4,
+        4
+      ]
+    },
+    {
+      "N": 48,
+      "ell": 5,
+      "m": 125,
+      "overlap_degree": 728,
+      "available_colors_8m": 1000,
+      "bond_multiplicities": [
+        100,
+        100,
+        100
+      ],
+      "internal_four_context_anchors": [
+        50,
+        50,
+        50,
+        20,
+        20
+      ]
+    },
+    {
+      "N": 80,
+      "ell": 9,
+      "m": 729,
+      "overlap_degree": 4912,
+      "available_colors_8m": 5832,
+      "bond_multiplicities": [
+        648,
+        648,
+        648
+      ],
+      "internal_four_context_anchors": [
+        486,
+        486,
+        486,
+        324,
+        324
+      ]
+    }
+  ],
+  "tangent_entropy_cancellation": {
+    "coefficient_is_constant_ambient_vector": "64/15015",
+    "mass_zero_pairing": 0,
+    "constant_spatial_term_entropy_divergence_residual": 0,
+    "countercontrol": "The ambient coefficient is nonzero; requiring its componentwise vanishing would be an incorrect stronger cancellation."
+  },
+  "product_exponential_and_canonical_bounds": {
+    "alpha": "1/224",
+    "chi": "8m",
+    "Holder_exponent": "m/14",
+    "integrated_tail_bound": 29,
+    "nonidentical_four_draws_exponential_moment": 1.0466562383905362,
+    "canonical_boundary_controls": [
+      {
+        "counts": [
+          5,
+          3
+        ],
+        "hypergeometric_current": -0.029761904761904732,
+        "product_current": "-5/256",
+        "coupling_failure_probability": 0.58984375,
+        "union_bound": 0.75
+      },
+      {
+        "counts": [
+          1,
+          7
+        ],
+        "hypergeometric_current": 0.04166666666666685,
+        "product_current": "7/256",
+        "coupling_failure_probability": 0.58984375,
+        "union_bound": 0.75
+      },
+      {
+        "counts": [
+          8,
+          0
+        ],
+        "hypergeometric_current": 0.0,
+        "product_current": "0",
+        "coupling_failure_probability": 0.58984375,
+        "union_bound": 0.75
+      }
+    ]
+  },
+  "checker_sha256": "d4a4b9ada84e826681ab7739184c0a84fe3dacc6e630176db472364f52a3e48a"
+}

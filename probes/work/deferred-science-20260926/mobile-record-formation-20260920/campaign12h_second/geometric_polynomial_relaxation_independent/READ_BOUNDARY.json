@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-21T16:29:56.846578+00:00",
+  "read": [
+    "Complete frozen primary note",
+    "Identity-matched earlier independent connectivity and clock evidence",
+    "JS1989 pages4,5,8,9,13; formula images pages5 and13"
+  ],
+  "not_read": [
+    "Author polynomial checker body (only hash)",
+    "Author polynomial results or logs",
+    "New kinetic sources",
+    "Production simulations or observables"
+  ],
+  "verification_kind": "Independent reconstruction of supplied proof before comparison; external theorem statements/hypotheses imported, not their whole proofs",
+  "writes": "This evidence directory; external third-party page extracts/renderings kept in the supplied literature area only."
+}

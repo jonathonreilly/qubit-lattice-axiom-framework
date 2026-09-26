@@ -1,0 +1,218 @@
+{
+  "created_utc": "2026-09-21T20:56:53.363650+00:00",
+  "sources_sha256": {
+    "dimer_color_operational_moment_check.py": "31da0fa691212bb76d78150ea71cb1ffaf945f7d91581653b0cf9d75ae67fa59",
+    "DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c",
+    "DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+  },
+  "groups": [
+    {
+      "group": "cubic_stabilizers",
+      "passed": true,
+      "detail": {
+        "exact_quartic_covariance_rotations": 24,
+        "stabilizer_solutions": [
+          {
+            "color": "A_axis",
+            "stabilizer_order": 4,
+            "opposite_rotations": 4,
+            "exact_invariant_symmetric_matrix": "Matrix([[a, 0, 0], [0, c, 0], [0, 0, c]])",
+            "all_opposite_rotations_preserve_it": true
+          },
+          {
+            "color": "B_corner",
+            "stabilizer_order": 3,
+            "opposite_rotations": 3,
+            "exact_invariant_symmetric_matrix": "Matrix([[c, h, h], [h, c, h], [h, h, c]])",
+            "all_opposite_rotations_preserve_it": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "pair_quantum_density",
+      "passed": true,
+      "detail": {
+        "Bell_basis_orthonormal": true,
+        "projector_formula_mod_unit_sphere_exact": true,
+        "tilted_moment_controls": [
+          {
+            "axis": 0,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "23/128",
+              "1/6",
+              "1/12"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 0,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "17/72",
+              "1/6",
+              "1/12"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 1,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/4",
+              "13/96",
+              "1/12"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 1,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/4",
+              "13/81",
+              "1/12"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 2,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/4",
+              "1/6",
+              "29/384"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 2,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/4",
+              "1/6",
+              "53/648"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 0,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "13/96",
+              "5/32",
+              "1/6"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 0,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "13/81",
+              "5/32",
+              "1/6"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 1,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "253/1536",
+              "65/506",
+              "1/6"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 1,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "431/2592",
+              "65/431",
+              "1/6"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 2,
+            "tilt": "-3/4",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/6",
+              "5/32",
+              "13/96"
+            ],
+            "tilted_operator_domination": true
+          },
+          {
+            "axis": 2,
+            "tilt": "1/3",
+            "exact_positive_LDL_pivots": [
+              "1/2",
+              "1/6",
+              "5/32",
+              "13/81"
+            ],
+            "tilted_operator_domination": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "wave_population_kernel",
+      "passed": true,
+      "detail": {
+        "opposite_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            7,
+            12
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "odd_tangent_rank": 7,
+        "exact_moment_image_of_odd_tangent_zero": true,
+        "vector_feature_rank_on_kernel": 6,
+        "finite_interior_moment_tangent_rank": 5,
+        "equal_prior_even_discrimination_bound": "1/7",
+        "scope": "Interior moment values test only the algebraic rank bound; they are not estimates of actual spherical region moments."
+      }
+    }
+  ],
+  "scope": "Exact symbolic controls conditional on ordinary single-pair quantum-state/Born readout. No alternate ontology or encoding excluded; no stochastic-wave theorem changed."
+}

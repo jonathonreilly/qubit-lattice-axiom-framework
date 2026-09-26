@@ -1,0 +1,31 @@
+{
+  "case": "N4_jam_extended_s21092102.final",
+  "counts": [
+    12,
+    10,
+    9
+  ],
+  "original_exits": [
+    0,
+    0,
+    0
+  ],
+  "accepted_parallel_channels": 115,
+  "content_changing_parallel_channels": 0,
+  "identity_changing_parallel_channels": 115,
+  "first_identity_channel": [
+    [
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ]
+    ]
+  ],
+  "interpretation": "No content-changing exits. If optional identity-only channels are retained, this endpoint is not frozen as an identity-labeled configuration."
+}

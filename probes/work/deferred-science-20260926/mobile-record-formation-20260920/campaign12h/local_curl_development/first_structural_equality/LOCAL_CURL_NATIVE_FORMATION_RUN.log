@@ -1,0 +1,20 @@
+PASS: all_pair_weight_brackets_and_positivity_bound
+PASS: full_uniform_reaction_trajectory
+PASS: fourteen_moments_reconstruct_all_occupied_probabilities
+PASS: complete_native_reaction_jacobian
+PASS: all_fourteen_linear_flux_and_reaction_fields
+PASS: transverse_wave_and_longitudinal_reaction_structure
+PASS: local_curl_field_evolution_intertwining
+PASS: exact_initial_neighbor_covariance_with_both_birth_endpoints
+PASS: integrated_native_linear_gain
+PASS: exact_lattice_Gauss_and_curl_covariance
+PASS: polar_axial_curl_readout_under_all_cubic_actions
+PASS: finite_configuration_identity_after_all_birth_labels_and_whole_record_swap
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_native_formation_check.py", line 100, in <module>
+    check('nearest_neighbor_birth_law_is_nonconstant_for_nonzero_j',sum(probabilities)==1 and probabilities[1]==(1+j)/14 and probabilities[0]==(1-j)/14)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/local_curl_native_formation_check.py", line 21, in check
+    assert bool(condition),(name,detail)
+           ~~~~^^^^^^^^^^^
+AssertionError: ('nearest_neighbor_birth_law_is_nonconstant_for_nonzero_j', None)

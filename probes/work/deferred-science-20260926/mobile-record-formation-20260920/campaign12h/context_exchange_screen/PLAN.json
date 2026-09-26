@@ -1,0 +1,54 @@
+{
+  "screen_plan_sha256": "4df3555c760a221d65b26eaeabf77b55d651f5b1c32ef199ec62b6369724b8ae",
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "launcher_sha256": "239d729084cdcfbe730edf01c05ba5b31c90638554be56d5b8b448afa9662116",
+  "cases": [
+    [
+      "context_minimal_L16",
+      16,
+      -1.0,
+      1.0,
+      0.05,
+      0,
+      2026092130
+    ],
+    [
+      "context_minimal_L24",
+      24,
+      -1.0,
+      1.0,
+      0.05,
+      0,
+      2026092131
+    ],
+    [
+      "context_minimal_L32",
+      32,
+      -1.0,
+      1.0,
+      0.05,
+      0,
+      2026092132
+    ],
+    [
+      "context_constant_L16",
+      16,
+      -1.0,
+      1.0,
+      4.0,
+      1,
+      2026092133
+    ],
+    [
+      "flat_symmetric_L16",
+      16,
+      0.0,
+      0.0,
+      0.05,
+      0,
+      2026092134
+    ]
+  ],
+  "trajectories_per_case": 256,
+  "threads": 4
+}

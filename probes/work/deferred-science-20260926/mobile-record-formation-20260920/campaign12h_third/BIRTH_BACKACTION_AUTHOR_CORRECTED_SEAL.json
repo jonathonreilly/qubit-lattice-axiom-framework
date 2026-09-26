@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-22T15:23:18.417252+00:00",
+  "boundary": "Narrow F1 correction following frozen independent comparison 3034807baa8f8cbc69fb7ba40b109a0878718b43d3c92e04a47e4cbeb33db366; only mathematical conditions H_0=0 added in note Section 5 and checker output. No equation changed.",
+  "history": "birth_backaction_source_history/before_H0_qualification/SOURCE_PATH_MAPPING.json",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md",
+      "bytes": 10714,
+      "sha256": "be2eef3b7257a95a58fe4ceba13b0b67f33f155101dc0ed89d400afb54bdc074"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "bytes": 11737,
+      "sha256": "a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_birth_backaction_check.py",
+      "bytes": 6896,
+      "sha256": "ea8041a3f5150cfd110ae4046bc2f51e068ce909e5dae5ee6826554dc464788f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RESULTS.json",
+      "bytes": 6620,
+      "sha256": "07f97702b5f9c8f7a011e4897bc1b08884af4955bfc8a328643cbd75007de958"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN.log",
+      "bytes": 6620,
+      "sha256": "07f97702b5f9c8f7a011e4897bc1b08884af4955bfc8a328643cbd75007de958"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_BIRTH_BACKACTION_RUN_RECEIPT.json",
+      "bytes": 329,
+      "sha256": "806657ecd23c1b7cec5bf4c6638e736e8c07f98bd900ad33f6ca5520ad29d7de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pair_birth_dephasing_check.py",
+      "bytes": 5686,
+      "sha256": "e4619c974fcdb16e1b543d624568c4e20b8a9f99c9a422b2e1d67942b203953c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RESULTS.json",
+      "bytes": 3239,
+      "sha256": "14498823c4893607d923158f2a40fd2a2038bc84cc3c9c9367ea07ef8e3438eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN.log",
+      "bytes": 3239,
+      "sha256": "14498823c4893607d923158f2a40fd2a2038bc84cc3c9c9367ea07ef8e3438eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PAIR_BIRTH_DEPHASING_RUN_RECEIPT.json",
+      "bytes": 423,
+      "sha256": "c471f324a6272bd4ecde5c86c61fa8d81fc1438269b36a7e33defa7c40872dfd"
+    }
+  ]
+}

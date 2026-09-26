@@ -1,0 +1,17 @@
+{
+  "side": 16,
+  "raw_weights": [
+    12.0,
+    1.0,
+    2.0
+  ],
+  "epsilon": 0.1,
+  "mobility": 1.0,
+  "rho0": 0.0,
+  "replicates": 128,
+  "elapsed_seconds": 4.204690542072058,
+  "source_sha256": {
+    "growing_spectrum.py": "4ae4f3d8bddfd943664c478555b22d466a8e358ca1df40205f553687fd203f93",
+    "growing_sim.py": "cfebba3cf2ef1b8b407658c411528ac94012eadbb58a1d972fa121fa8a30f3e3"
+  }
+}

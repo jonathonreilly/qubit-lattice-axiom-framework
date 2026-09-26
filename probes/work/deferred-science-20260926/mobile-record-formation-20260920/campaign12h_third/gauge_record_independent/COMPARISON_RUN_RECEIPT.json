@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/comparison_check.py"
+  ],
+  "started_utc": "2026-09-22T15:54:25.950976+00:00",
+  "completed_utc": "2026-09-22T15:54:27.538630+00:00",
+  "returncode": 0,
+  "script_sha256": "91785e3b5f8a68f7fe2db7840d57e4948429dd6fa8cee2a3970d1c8afc2b7133",
+  "own_dependencies": {
+    "z2_completion_check.py": "d754663013016ead2053f7edef33accaa24a408aba32f2df6b2c8da3a5842094",
+    "link_witness_check.py": "1ba595dda7498d0cc0dbbaa2393be00f47a5ffd5e90d521e8e922c89e5e3bfd0"
+  }
+}

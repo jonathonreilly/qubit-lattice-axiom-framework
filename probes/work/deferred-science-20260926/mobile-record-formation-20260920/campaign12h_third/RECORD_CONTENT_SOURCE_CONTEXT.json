@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-22T22:00:00Z",
+  "status": "Author reconstruction; independent check pending.",
+  "primary_literature": [
+    {
+      "url": "https://www.tau.ac.il/~elieis/PDFS/p33.pdf",
+      "title": "Eisenberg and Lieb, Polarization of interacting bosons with spin, 2002",
+      "read": "Main-body positivity proof and lattice generalization through conclusion; formula OCR imperfect. Own finite-fiber proof supplied, no uniqueness theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/html/0803.1463v3",
+      "title": "Kraus et al., Preparation of Entangled States by Quantum Markov Processes",
+      "read": "Sections II-III including Theorem 2 proof and Section V.1 equations 8-10 and uniqueness discussion; additional intervening material viewed. Credit for local antisymmetric-to-symmetric pumping; no bosonic-space uniqueness imported."
+    },
+    {
+      "url": "https://arxiv.org/html/0803.1482v2",
+      "read": "404; no theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/pdf/0803.1482",
+      "read": "PDF metadata opened, full PDF not read; related credit follows Kraus Section V.1."
+    }
+  ],
+  "scientific_execution": "Both first scientific runs passed; full runner sources and all result fields read. Rejected initial apply_patch had no file mutation. No failed scientific run.",
+  "dependencies": [
+    "Hard-core record ring author/independent unit and uniform local field author/independent unit, as frozen in PR8635.",
+    "Large-spin author unit 40797e4620ebb864744753ae5429a1727c7b407fc712bda4360e75ea295a1f3b; independent source comparison currently pending.",
+    "Local gauge record cooling note 7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f and independent REPORT d72068c4dae9a210224f5c7217dc9b6ded91ea0422f7f14ec9ff1b659302747f; fixed-displacement argument specialized and written in full."
+  ]
+}

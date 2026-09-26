@@ -84,3 +84,7 @@ Everything above checks work that exists. `J:derive:<problem>:a<k>` units are th
 ## Deferred science recovery — 2026-09-24
 
 The [review-drain recovery bundle](work/deferred-science-20260924/README.md) preserves all deferred source addresses and review boundaries from the 160-PR landing drain. Eleven first-pass judgment units (`J:derive:deferred-20260924-*`) recover and advance scoped residuals, with related existing problems linked to avoid duplicate work. Claim them through the normal maximum-thinking J queue. A finished first pass is not exhaustion of its source bundle; per-worker `RECOVERY_STATUS.json` records what remains.
+
+## Unpublished Codex research recovery — 2026-09-26
+
+[This bundle](work/deferred-science-20260926/README.md) preserves the unpublished results of four Codex mobile-record campaigns (2026-09-20 to 09-24), whose raw branch was never pushed. None of them met the bar for a science PR: all are conditional on supplied models, and none has had a cross-model check. The probable parts are queued as eight first-pass judgment units, `J:derive:deferred-20260926-*`. Each unit's `RECOVERY_STATUS.json` states whether its result is ready to be packaged as a science PR.

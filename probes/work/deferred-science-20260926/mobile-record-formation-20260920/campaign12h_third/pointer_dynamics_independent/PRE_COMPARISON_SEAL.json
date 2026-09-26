@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-09-22T14:25:59.715418+00:00",
+  "boundary": "Independent pointer-code construction assessment and noisy full-generator reconstruction frozen before any new author pointer/noise note, script or result access.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md",
+      "bytes": 10751,
+      "sha256": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/REPORT.md",
+      "bytes": 14356,
+      "sha256": "66491f161ba2a19c234a4d2507e4a07db1309a2e42c31f7516f7ad8e345c4c2d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/RESULTS.json",
+      "bytes": 4410,
+      "sha256": "a1e13ea962e216337bf4072ffebc38d68fde1591899130c34259e2356b66df2d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/RUN.log",
+      "bytes": 4872,
+      "sha256": "45a5f32262b10b6ab0fbd3ec84816fbbcbc44ec6a91f4b3b663b11c2774e3f14"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/RUN_RECEIPT.json",
+      "bytes": 465,
+      "sha256": "18703c76baf7bf78007fb9bdff1ad13a462863496963ba7917e5e4233e30341c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/SOURCES.json",
+      "bytes": 860,
+      "sha256": "4822eea09f2830a7787e15e78acbe6ffe2eea7efa55092d8840b8b6bc0671a17"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/SPECIFICATION.md",
+      "bytes": 1652,
+      "sha256": "a70ca4dff0135a1c20b9c24936d3af1f08c15b499bf02de235049a23c539e735"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/check.py",
+      "bytes": 10082,
+      "sha256": "8438043bb8eabc924e9fd7c2a9832edfa6513220b85ee7edf66f563d7cfe0354"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/failed_attempts/report_patch/ATTEMPT.txt",
+      "bytes": 423,
+      "sha256": "608c7127613a8bc42262a88a805382f26ef761b3e28f45fbf2b618a4be1bdb1a"
+    }
+  ],
+  "failed_attempts": "No failed mathematical execution; one no-op prose patch context failure is preserved under failed_attempts/report_patch.",
+  "scope": "Conditional finite-block pointer realization and exact finite-N=12 noisy-preparation positivity test; no native-site realization, publication or formal audit determination."
+}

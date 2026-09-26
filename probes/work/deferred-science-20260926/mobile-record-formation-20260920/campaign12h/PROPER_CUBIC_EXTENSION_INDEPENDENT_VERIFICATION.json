@@ -1,0 +1,17 @@
+{
+  "review_report_sha256": "4b16425c81270cf448a570c3f090fd02040af86a70266ba2e61c2e674af4ab39",
+  "final_seal_sha256": "64e66ef544ad7d035e42776e58c9d37edb6e1e1ba26a7d481590d1c6d0622bab",
+  "authenticated": {
+    "sources": 6,
+    "procedures_reused_unchanged": 3,
+    "artifacts": 14
+  },
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON.md",
+    "independent_check.py",
+    "compare_sources.py",
+    "first attempt diff and stderr"
+  ],
+  "scope": "Exact bounded extension review, separate from publication8569; no new continuum or physical claim."
+}

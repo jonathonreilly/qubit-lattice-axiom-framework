@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-09-22T18:50:55.979006+00:00",
+  "extractor": "pypdf 6.11.0",
+  "pdftotext": "Unavailable; no scientific inference depends on extractor choice.",
+  "reads": [
+    {
+      "source": "Weimer_0907.1657v2.pdf",
+      "sha256": "b0960af617c8b922382dbeccf97548427003812a3e5e3c8d546881bb90881e7b",
+      "PDF_pages": [
+        4,
+        5
+      ],
+      "scope": "Complete selected pages including definitions preceding Eq. (12) and its local jump; no broader phase/experimental claim imported."
+    },
+    {
+      "source": "Kraus_0803.1463v3.pdf",
+      "sha256": "2635be63106a6dca937a104e62af145e6f84e211887ee9d877fe95bfe198edb3",
+      "PDF_pages": [
+        1,
+        2,
+        3
+      ],
+      "scope": "Equation (2) convention, definitions, Theorem 2 and complete proof; the needed physical-generator invariant-space argument is derived independently."
+    }
+  ],
+  "limits": "Remaining pages not read as part of this task; no full-paper proof review claimed."
+}

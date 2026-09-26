@@ -1,0 +1,49 @@
+{
+  "recorded_utc": "2026-09-22T16:33:29.591925+00:00",
+  "boundary": "Independent reconstruction from the neutral specification and previously checked dependencies only. No new author completion/coherent-birth frontier note, script, result, author seal, autonomous-scattering source or campaign checkpoint read.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "bytes": 11737,
+      "sha256": "a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md",
+      "bytes": 8942,
+      "sha256": "6ed987c83e94f981c0b956bc55a2eaa071282e956ce5594da5f4ab047a763978",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/U1_EXTREME_FLUX_RECORD_TRAPPING.md",
+      "bytes": 10332,
+      "sha256": "2e3b2beb945e1fa133f83d4874a02b0be63bb55af06eb6dc3f26e85b9f1ab5e4",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+      "bytes": 8662,
+      "sha256": "a8fff88d18ea74660636171d8c4db861f9b0cb77cfeee0b427a5f4e034398fa5",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/REPORT.md",
+      "bytes": 16663,
+      "sha256": "3e618c3210b4ab0cf7fac0aeaab873a80455e20975295456af6d6046cf9da9d2",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REPORT.md",
+      "bytes": 20990,
+      "sha256": "6a01fe727d842624277c332f966c282a6e10035b6d7374934a1d80f16c103d04",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    }
+  ],
+  "method": "Fresh independent finite enumeration and exact matrices; no author checker imports or copied output constants.",
+  "environment": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  }
+}

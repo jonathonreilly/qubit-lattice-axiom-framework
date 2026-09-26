@@ -1,0 +1,638 @@
+{
+  "created_utc": "2026-09-22T15:31:16.642044+00:00",
+  "script_sha256": "0b60c8032c2746541be4d06b9d083aa7e103412109a439dc583d9ae2a28bb869",
+  "inventory_script_sha256": "0475077786dd16b23a2096fc8de0ab40c58fd3e1a262bbe1aed764a13ed90d9a",
+  "prime": 1000003,
+  "characteristic_zero_bound": "Full rank modulo the prime implies full rational rank; deficits alone do not prove dark states.",
+  "monitoring": "All local occupation projectors only; no electric-field measurement.",
+  "cases": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "physical_basis_size": 375,
+      "models": [
+        {
+          "model": "hop_only",
+          "coefficients": {
+            "kappa": 1,
+            "field": 0,
+            "cycle": 0
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 30,
+              "occupation_blocks": 19,
+              "maximum_occupation_block_dimension": 6,
+              "initial_contact_rank": 30,
+              "generated_rank_mod_prime": 30,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 102,
+              "independent_vectors_processed": 30,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 156,
+              "occupation_blocks": 60,
+              "maximum_occupation_block_dimension": 7,
+              "initial_contact_rank": 156,
+              "generated_rank_mod_prime": 156,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 660,
+              "independent_vectors_processed": 156,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 170,
+              "occupation_blocks": 28,
+              "maximum_occupation_block_dimension": 10,
+              "initial_contact_rank": 78,
+              "generated_rank_mod_prime": 170,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 534,
+              "independent_vectors_processed": 170,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field",
+          "coefficients": {
+            "kappa": 1,
+            "field": 1,
+            "cycle": 0
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 30,
+              "occupation_blocks": 19,
+              "maximum_occupation_block_dimension": 6,
+              "initial_contact_rank": 30,
+              "generated_rank_mod_prime": 30,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 120,
+              "independent_vectors_processed": 30,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 156,
+              "occupation_blocks": 60,
+              "maximum_occupation_block_dimension": 7,
+              "initial_contact_rank": 156,
+              "generated_rank_mod_prime": 156,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 774,
+              "independent_vectors_processed": 156,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 170,
+              "occupation_blocks": 28,
+              "maximum_occupation_block_dimension": 10,
+              "initial_contact_rank": 78,
+              "generated_rank_mod_prime": 170,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 660,
+              "independent_vectors_processed": 170,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field_cycle",
+          "coefficients": {
+            "kappa": 1,
+            "field": 1,
+            "cycle": 1
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 30,
+              "occupation_blocks": 19,
+              "maximum_occupation_block_dimension": 6,
+              "initial_contact_rank": 30,
+              "generated_rank_mod_prime": 30,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 120,
+              "independent_vectors_processed": 30,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 156,
+              "occupation_blocks": 60,
+              "maximum_occupation_block_dimension": 7,
+              "initial_contact_rank": 156,
+              "generated_rank_mod_prime": 156,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 786,
+              "independent_vectors_processed": 156,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 170,
+              "occupation_blocks": 28,
+              "maximum_occupation_block_dimension": 10,
+              "initial_contact_rank": 78,
+              "generated_rank_mod_prime": 170,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 696,
+              "independent_vectors_processed": 170,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field_cycle_unequal",
+          "coefficients": {
+            "kappa": 2,
+            "field": 3,
+            "cycle": 5
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 30,
+              "occupation_blocks": 19,
+              "maximum_occupation_block_dimension": 6,
+              "initial_contact_rank": 30,
+              "generated_rank_mod_prime": 30,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 120,
+              "independent_vectors_processed": 30,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 156,
+              "occupation_blocks": 60,
+              "maximum_occupation_block_dimension": 7,
+              "initial_contact_rank": 156,
+              "generated_rank_mod_prime": 156,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 786,
+              "independent_vectors_processed": 156,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 170,
+              "occupation_blocks": 28,
+              "maximum_occupation_block_dimension": 10,
+              "initial_contact_rank": 78,
+              "generated_rank_mod_prime": 170,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 696,
+              "independent_vectors_processed": 170,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        }
+      ]
+    },
+    {
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "physical_basis_size": 25386,
+      "models": [
+        {
+          "model": "hop_only",
+          "coefficients": {
+            "kappa": 1,
+            "field": 0,
+            "cycle": 0
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 82,
+              "occupation_blocks": 42,
+              "maximum_occupation_block_dimension": 12,
+              "initial_contact_rank": 82,
+              "generated_rank_mod_prime": 82,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 330,
+              "independent_vectors_processed": 82,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 1427,
+              "occupation_blocks": 382,
+              "maximum_occupation_block_dimension": 32,
+              "initial_contact_rank": 1427,
+              "generated_rank_mod_prime": 1427,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 8615,
+              "independent_vectors_processed": 1427,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 7394,
+              "occupation_blocks": 885,
+              "maximum_occupation_block_dimension": 45,
+              "initial_contact_rank": 7386,
+              "generated_rank_mod_prime": 7394,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 51526,
+              "independent_vectors_processed": 7394,
+              "block_deficits": []
+            },
+            {
+              "records": 8,
+              "sector_dimension": 11684,
+              "occupation_blocks": 495,
+              "maximum_occupation_block_dimension": 69,
+              "initial_contact_rank": 10906,
+              "generated_rank_mod_prime": 11684,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 76638,
+              "independent_vectors_processed": 11684,
+              "block_deficits": []
+            },
+            {
+              "records": 10,
+              "sector_dimension": 4598,
+              "occupation_blocks": 66,
+              "maximum_occupation_block_dimension": 116,
+              "initial_contact_rank": 1440,
+              "generated_rank_mod_prime": 4598,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 18540,
+              "independent_vectors_processed": 4598,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field",
+          "coefficients": {
+            "kappa": 1,
+            "field": 1,
+            "cycle": 0
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 82,
+              "occupation_blocks": 42,
+              "maximum_occupation_block_dimension": 12,
+              "initial_contact_rank": 82,
+              "generated_rank_mod_prime": 82,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 388,
+              "independent_vectors_processed": 82,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 1427,
+              "occupation_blocks": 382,
+              "maximum_occupation_block_dimension": 32,
+              "initial_contact_rank": 1427,
+              "generated_rank_mod_prime": 1427,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 9846,
+              "independent_vectors_processed": 1427,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 7394,
+              "occupation_blocks": 885,
+              "maximum_occupation_block_dimension": 45,
+              "initial_contact_rank": 7386,
+              "generated_rank_mod_prime": 7394,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 58260,
+              "independent_vectors_processed": 7394,
+              "block_deficits": []
+            },
+            {
+              "records": 8,
+              "sector_dimension": 11684,
+              "occupation_blocks": 495,
+              "maximum_occupation_block_dimension": 69,
+              "initial_contact_rank": 10906,
+              "generated_rank_mod_prime": 11684,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 87413,
+              "independent_vectors_processed": 11684,
+              "block_deficits": []
+            },
+            {
+              "records": 10,
+              "sector_dimension": 4598,
+              "occupation_blocks": 66,
+              "maximum_occupation_block_dimension": 116,
+              "initial_contact_rank": 1440,
+              "generated_rank_mod_prime": 4598,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 22714,
+              "independent_vectors_processed": 4598,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field_cycle",
+          "coefficients": {
+            "kappa": 1,
+            "field": 1,
+            "cycle": 1
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 82,
+              "occupation_blocks": 42,
+              "maximum_occupation_block_dimension": 12,
+              "initial_contact_rank": 82,
+              "generated_rank_mod_prime": 82,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 388,
+              "independent_vectors_processed": 82,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 1427,
+              "occupation_blocks": 382,
+              "maximum_occupation_block_dimension": 32,
+              "initial_contact_rank": 1427,
+              "generated_rank_mod_prime": 1427,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 9868,
+              "independent_vectors_processed": 1427,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 7394,
+              "occupation_blocks": 885,
+              "maximum_occupation_block_dimension": 45,
+              "initial_contact_rank": 7386,
+              "generated_rank_mod_prime": 7394,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 58516,
+              "independent_vectors_processed": 7394,
+              "block_deficits": []
+            },
+            {
+              "records": 8,
+              "sector_dimension": 11684,
+              "occupation_blocks": 495,
+              "maximum_occupation_block_dimension": 69,
+              "initial_contact_rank": 10906,
+              "generated_rank_mod_prime": 11684,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 88123,
+              "independent_vectors_processed": 11684,
+              "block_deficits": []
+            },
+            {
+              "records": 10,
+              "sector_dimension": 4598,
+              "occupation_blocks": 66,
+              "maximum_occupation_block_dimension": 116,
+              "initial_contact_rank": 1440,
+              "generated_rank_mod_prime": 4598,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 23148,
+              "independent_vectors_processed": 4598,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        },
+        {
+          "model": "hop_field_cycle_unequal",
+          "coefficients": {
+            "kappa": 2,
+            "field": 3,
+            "cycle": 5
+          },
+          "sectors": [
+            {
+              "records": 0,
+              "sector_dimension": 1,
+              "occupation_blocks": 1,
+              "maximum_occupation_block_dimension": 1,
+              "initial_contact_rank": 1,
+              "generated_rank_mod_prime": 1,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 1,
+              "independent_vectors_processed": 1,
+              "block_deficits": []
+            },
+            {
+              "records": 2,
+              "sector_dimension": 82,
+              "occupation_blocks": 42,
+              "maximum_occupation_block_dimension": 12,
+              "initial_contact_rank": 82,
+              "generated_rank_mod_prime": 82,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 388,
+              "independent_vectors_processed": 82,
+              "block_deficits": []
+            },
+            {
+              "records": 4,
+              "sector_dimension": 1427,
+              "occupation_blocks": 382,
+              "maximum_occupation_block_dimension": 32,
+              "initial_contact_rank": 1427,
+              "generated_rank_mod_prime": 1427,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 9868,
+              "independent_vectors_processed": 1427,
+              "block_deficits": []
+            },
+            {
+              "records": 6,
+              "sector_dimension": 7394,
+              "occupation_blocks": 885,
+              "maximum_occupation_block_dimension": 45,
+              "initial_contact_rank": 7386,
+              "generated_rank_mod_prime": 7394,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 58516,
+              "independent_vectors_processed": 7394,
+              "block_deficits": []
+            },
+            {
+              "records": 8,
+              "sector_dimension": 11684,
+              "occupation_blocks": 495,
+              "maximum_occupation_block_dimension": 69,
+              "initial_contact_rank": 10906,
+              "generated_rank_mod_prime": 11684,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 88123,
+              "independent_vectors_processed": 11684,
+              "block_deficits": []
+            },
+            {
+              "records": 10,
+              "sector_dimension": 4598,
+              "occupation_blocks": 66,
+              "maximum_occupation_block_dimension": 116,
+              "initial_contact_rank": 1440,
+              "generated_rank_mod_prime": 4598,
+              "full_rational_rank_certified": true,
+              "unresolved_modular_deficit": 0,
+              "insertions_attempted": 23148,
+              "independent_vectors_processed": 4598,
+              "block_deficits": []
+            }
+          ],
+          "every_nonfull_sector_observable": true
+        }
+      ]
+    }
+  ]
+}

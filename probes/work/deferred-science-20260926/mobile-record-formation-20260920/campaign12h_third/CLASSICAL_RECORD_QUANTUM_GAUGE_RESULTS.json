@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "exact_Wilson_instrument": [
+    {
+      "m": 3,
+      "exact_total_effect": "I",
+      "exact_bit_effect": "(I+b Re W)/2",
+      "orientation_reversal_coarse_map": "equal",
+      "Wilson_powers_preserved": 3,
+      "p_plus_W1": 1.0,
+      "p_plus_W_exp_2pii_over_m": 0.2500000000000001
+    },
+    {
+      "m": 5,
+      "exact_total_effect": "I",
+      "exact_bit_effect": "(I+b Re W)/2",
+      "orientation_reversal_coarse_map": "equal",
+      "Wilson_powers_preserved": 5,
+      "p_plus_W1": 1.0,
+      "p_plus_W_exp_2pii_over_m": 0.6545084971874737
+    },
+    {
+      "m": 7,
+      "exact_total_effect": "I",
+      "exact_bit_effect": "(I+b Re W)/2",
+      "orientation_reversal_coarse_map": "equal",
+      "Wilson_powers_preserved": 7,
+      "p_plus_W1": 1.0,
+      "p_plus_W_exp_2pii_over_m": 0.8117449009293668
+    }
+  ],
+  "physical_CQ_controls": [
+    {
+      "m": 3,
+      "readout_bits": false,
+      "record_configurations": 19,
+      "gauge_fiber_dimension": 3,
+      "CQ_Liouville_dimension": 171,
+      "occupation_patterns": 8,
+      "directed_hop_jumps": 32,
+      "birth_Kraus_jumps": 24,
+      "Gauss_maps": "every enumerated unit shift is a whole-fiber permutation",
+      "Wilson_intertwining_residual": 0.0,
+      "occupation_closure_residual": 8.881784197001252e-16,
+      "evolution_checks": [
+        {
+          "time": 0.1,
+          "classical_full_probability": 0.008149694765571057,
+          "four_field_input_occupation_errors": [
+            4.447460240342618e-16,
+            3.3417091327868055e-16,
+            1.1318987599818132e-16,
+            2.231362878617398e-16
+          ],
+          "minimum_block_eigenvalue": -6.880673592372452e-17
+        },
+        {
+          "time": 0.8,
+          "classical_full_probability": 0.22437043600636555,
+          "four_field_input_occupation_errors": [
+            1.5884066496382707e-16,
+            1.5395005703983683e-16,
+            1.4288057263550842e-16,
+            8.554842949272357e-17
+          ],
+          "minimum_block_eigenvalue": -3.0254671329004175e-17
+        },
+        {
+          "time": 2.0,
+          "classical_full_probability": 0.534087375127342,
+          "four_field_input_occupation_errors": [
+            3.651354682592464e-16,
+            3.696250864253988e-16,
+            3.884938334649537e-16,
+            1.625857952070209e-16
+          ],
+          "minimum_block_eigenvalue": -3.2327827387029404e-18
+        },
+        {
+          "time": 20.0,
+          "classical_full_probability": 0.9997092183751668,
+          "four_field_input_occupation_errors": [
+            3.1086454585874627e-15,
+            3.552722804998339e-15,
+            3.1086276120588203e-15,
+            3.774758291449939e-15
+          ],
+          "minimum_block_eigenvalue": -2.6278229664553004e-35
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "readout_bits": false,
+      "record_configurations": 19,
+      "gauge_fiber_dimension": 5,
+      "CQ_Liouville_dimension": 475,
+      "occupation_patterns": 8,
+      "directed_hop_jumps": 32,
+      "birth_Kraus_jumps": 24,
+      "Gauss_maps": "every enumerated unit shift is a whole-fiber permutation",
+      "Wilson_intertwining_residual": 0.0,
+      "occupation_closure_residual": 8.881784197001252e-16,
+      "evolution_checks": [
+        {
+          "time": 0.1,
+          "classical_full_probability": 0.008149694765571057,
+          "four_field_input_occupation_errors": [
+            1.1211856333338924e-16,
+            3.00023260767075e-17,
+            2.252820801052864e-16,
+            1.1819375171415872e-16
+          ],
+          "minimum_block_eigenvalue": -8.190740229786266e-17
+        },
+        {
+          "time": 0.8,
+          "classical_full_probability": 0.22437043600636555,
+          "four_field_input_occupation_errors": [
+            1.2645365160816343e-16,
+            1.2644663815833344e-16,
+            1.3311106829310753e-16,
+            1.1443916996305594e-16
+          ],
+          "minimum_block_eigenvalue": -2.6039126212587622e-17
+        },
+        {
+          "time": 2.0,
+          "classical_full_probability": 0.534087375127342,
+          "four_field_input_occupation_errors": [
+            1.233524165049756e-16,
+            1.334287149424328e-16,
+            2.5023088163446903e-16,
+            1.3165696935058644e-16
+          ],
+          "minimum_block_eigenvalue": -1.569197367874531e-18
+        },
+        {
+          "time": 20.0,
+          "classical_full_probability": 0.9997092183751668,
+          "four_field_input_occupation_errors": [
+            1.3785901117536855e-17,
+            4.442289616687734e-16,
+            6.661557322107168e-16,
+            8.881785344972771e-16
+          ],
+          "minimum_block_eigenvalue": -4.6965895097510564e-36
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "readout_bits": true,
+      "record_configurations": 145,
+      "gauge_fiber_dimension": 3,
+      "CQ_Liouville_dimension": 1305,
+      "occupation_patterns": 8,
+      "directed_hop_jumps": 128,
+      "birth_Kraus_jumps": 288,
+      "Gauss_maps": "every enumerated unit shift is a whole-fiber permutation",
+      "Wilson_intertwining_residual": 0.0,
+      "occupation_closure_residual": 6.661338147750939e-16,
+      "evolution_checks": [
+        {
+          "time": 0.1,
+          "classical_full_probability": 0.008149694765571057,
+          "four_field_input_occupation_errors": [
+            2.2402293371059044e-16,
+            2.2315180123220267e-16,
+            2.2452609930238203e-16,
+            2.230806502600208e-16
+          ],
+          "minimum_block_eigenvalue": -2.0017582997190649e-16
+        },
+        {
+          "time": 0.8,
+          "classical_full_probability": 0.22437043600636555,
+          "four_field_input_occupation_errors": [
+            3.179917495451863e-16,
+            1.520722031552374e-16,
+            4.3951233564466797e-16,
+            2.2030328694217683e-16
+          ],
+          "minimum_block_eigenvalue": -1.1721075415925766e-16
+        },
+        {
+          "time": 2.0,
+          "classical_full_probability": 0.534087375127342,
+          "four_field_input_occupation_errors": [
+            3.3718831242805546e-16,
+            1.3185246385918115e-16,
+            2.3441275845799115e-16,
+            1.2040602786120044e-16
+          ],
+          "minimum_block_eigenvalue": -4.891945928479183e-18
+        },
+        {
+          "time": 20.0,
+          "classical_full_probability": 0.9997092183751668,
+          "four_field_input_occupation_errors": [
+            5.788416862734791e-15,
+            2.0810702159219245e-15,
+            1.199151990040056e-14,
+            1.1991472966313135e-14
+          ],
+          "minimum_block_eigenvalue": -9.295732852489563e-28
+        }
+      ]
+    },
+    {
+      "m": 5,
+      "readout_bits": true,
+      "record_configurations": 145,
+      "gauge_fiber_dimension": 5,
+      "CQ_Liouville_dimension": 3625,
+      "occupation_patterns": 8,
+      "directed_hop_jumps": 128,
+      "birth_Kraus_jumps": 288,
+      "Gauss_maps": "every enumerated unit shift is a whole-fiber permutation",
+      "Wilson_intertwining_residual": 0.0,
+      "occupation_closure_residual": 6.661338147750939e-16,
+      "evolution_checks": [
+        {
+          "time": 0.1,
+          "classical_full_probability": 0.008149694765571057,
+          "four_field_input_occupation_errors": [
+            3.82132582263432e-17,
+            5.1329352422506335e-17,
+            1.1637525326494631e-16,
+            1.1573349088572955e-16
+          ],
+          "minimum_block_eigenvalue": -7.496047480058785e-17
+        },
+        {
+          "time": 0.8,
+          "classical_full_probability": 0.22437043600636555,
+          "four_field_input_occupation_errors": [
+            1.8723961937330023e-16,
+            2.63046225373421e-16,
+            3.78536144949514e-16,
+            2.4630637731279154e-16
+          ],
+          "minimum_block_eigenvalue": -4.891670633812499e-17
+        },
+        {
+          "time": 2.0,
+          "classical_full_probability": 0.534087375127342,
+          "four_field_input_occupation_errors": [
+            3.638609814740743e-16,
+            2.4182314457796e-16,
+            1.2773899727137876e-16,
+            3.3880276594272413e-16
+          ],
+          "minimum_block_eigenvalue": -6.484843218154324e-18
+        },
+        {
+          "time": 20.0,
+          "classical_full_probability": 0.9997092183751668,
+          "four_field_input_occupation_errors": [
+            2.221144411855005e-16,
+            7.852051358598625e-16,
+            4.466421235666707e-16,
+            9.992695776163026e-16
+          ],
+          "minimum_block_eigenvalue": -4.387358854127968e-32
+        }
+      ]
+    }
+  ],
+  "failed_attempts": [],
+  "limits": "Finite C4 controls support the general direct proofs; no native lattice compilation, full-trajectory retention, rotor limit or physical phase is established."
+}

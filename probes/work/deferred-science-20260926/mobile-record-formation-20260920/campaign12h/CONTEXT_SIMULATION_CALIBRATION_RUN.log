@@ -1,0 +1,3 @@
+{"case": "flat", "passed": true, "max_estimated_SE": 2.7225303922123234, "max_absolute_discrepancy": 0.007377277739083515, "exact_stationarity_residual": 2.3009179438303483e-19}
+{"case": "context_isotropic", "passed": true, "max_estimated_SE": 2.7275399884282034, "max_absolute_discrepancy": 0.007266118380429849, "exact_stationarity_residual": 1.2480371674388695e-18}
+{"case": "context_biased", "passed": true, "max_estimated_SE": 2.3974947732987344, "max_absolute_discrepancy": 0.005413288119516487, "exact_stationarity_residual": 2.465938332146673e-19}

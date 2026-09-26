@@ -1,0 +1,25 @@
+{
+  "cause": "Independent post-comparison helper attempted list concatenation of tuple matching layers. No mathematical target or author source failed. Fixed by flattening via a list comprehension.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/compare_author.py",
+      "bytes": 8859,
+      "sha256": "1c9dfa4be91dc767a1e6baf4f126f428b56041e47cf67918eb8004c920bf5b13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 971,
+      "sha256": "ab6cc1836eea66313104c62739721e0629a152253c633d42eaf496f8af39aa0f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN_RECEIPT.json",
+      "bytes": 566,
+      "sha256": "bbe5425412446901c637e50eab7f3757147794937550e0c5e3c31df7d9832926"
+    }
+  ]
+}

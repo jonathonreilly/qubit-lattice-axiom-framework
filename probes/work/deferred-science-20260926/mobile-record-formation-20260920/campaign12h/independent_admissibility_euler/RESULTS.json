@@ -1,0 +1,196 @@
+{
+  "scope": "Pre-source independent exact local-generator and symbolic controls, plus stated numerical ODE controls.",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "count": 15,
+  "checks": [
+    {
+      "name": "six_distinct_neighbor_orbit_count",
+      "passed": true,
+      "details": {
+        "orbits": 924,
+        "center_times_orbits": 6468,
+        "unlumped_states": 823543
+      }
+    },
+    {
+      "name": "general_W_star_reaction_and_source_adjoint_Taylor",
+      "passed": true,
+      "details": {
+        "reaction": [
+          "562589253233296/1347646586640625",
+          "289207845356544/1347646586640625",
+          "347071385541904/1347646586640625",
+          "34828517376/86249381545",
+          "16/145",
+          "248921554453504/1347646586640625"
+        ],
+        "adjoint_mean": "0",
+        "adjoint_derivative": [
+          "830175684837702/46470571953125",
+          "412190354282678/46470571953125",
+          "1149830680355122/139411715859375",
+          "403635327604406/46470571953125",
+          "297327597654406/46470571953125",
+          "185444014407994/27882343171875"
+        ],
+        "max_uniform_adjoint": "128/5",
+        "entropy_budget_per_site": "128/5",
+        "adjacent_vector_pair_moment_derivative": "43770085335904/1347646586640625",
+        "adjacent_vector_connected_covariance_derivative": "363219058098944/7816350202515625"
+      }
+    },
+    {
+      "name": "general_W_off_reference_source_expectation",
+      "passed": true,
+      "details": {
+        "reaction": [
+          "43116861316/321696484375",
+          "271749158553856/5026507568359375",
+          "333378591960964/5026507568359375",
+          "48922361856/321696484375",
+          "4/175",
+          "305677387911424/5026507568359375"
+        ],
+        "adjoint_mean": "16877262904480292/5026507568359375",
+        "adjoint_derivative": null,
+        "max_uniform_adjoint": "128/5",
+        "entropy_budget_per_site": "128/5",
+        "adjacent_vector_pair_moment_derivative": "104709433703144/5026507568359375",
+        "adjacent_vector_connected_covariance_derivative": "638390539803904/25132537841796875"
+      }
+    },
+    {
+      "name": "uniform_weight_product_control",
+      "passed": true,
+      "details": {
+        "reaction": [
+          "16/145",
+          "16/145",
+          "16/145",
+          "16/145",
+          "16/145",
+          "16/145"
+        ],
+        "adjoint_mean": "0",
+        "adjoint_derivative": [
+          "28/5",
+          "4",
+          "52/15",
+          "16/5",
+          "76/25",
+          "44/15"
+        ],
+        "max_uniform_adjoint": "2/5",
+        "entropy_budget_per_site": "2/5",
+        "adjacent_vector_pair_moment_derivative": "0",
+        "adjacent_vector_connected_covariance_derivative": "0"
+      }
+    },
+    {
+      "name": "j_family_product_law_is_not_preserved",
+      "passed": true,
+      "details": {
+        "reaction": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        "adjoint_mean": "0",
+        "adjoint_derivative": [
+          "4",
+          "4",
+          "4",
+          "4",
+          "4",
+          "4"
+        ],
+        "max_uniform_adjoint": "243/64",
+        "entropy_budget_per_site": "243/64",
+        "adjacent_vector_pair_moment_derivative": "1/18",
+        "adjacent_vector_connected_covariance_derivative": "1/18"
+      }
+    },
+    {
+      "name": "all_six_reaction_eigenfields",
+      "passed": true,
+      "details": {
+        "density": "-6 beta",
+        "three_vectors": "12 beta j (1-rho)",
+        "two_quadrupoles": "0"
+      }
+    },
+    {
+      "name": "all_six_axis_balanced_transport_fields",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "complete_nonlinear_density_vector_quadrupole_reactions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "reaction_does_not_depend_on_quadrupole_state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_time_dependent_entropy_energy_identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "frozen_longitudinal_polynomial_only",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "nonautonomous_matrix_solver_succeeded",
+      "passed": true,
+      "details": {
+        "message": "The solver successfully reached the end of the integration interval.",
+        "derivative_evaluations": 1946
+      }
+    },
+    {
+      "name": "finite_time_entropy_energy_bound",
+      "passed": true,
+      "details": {
+        "max_gain_squared_over_bound": 1.0,
+        "times": 101,
+        "tolerance": 2e-09
+      }
+    },
+    {
+      "name": "exact_transverse_gain_and_quadrupole_constancy",
+      "passed": true,
+      "details": {
+        "max_transverse_error": 3.064215547965432e-13,
+        "max_quadrupole_error": 0.0,
+        "actual_transverse_gain": 4.905360883851552,
+        "all_time_transverse_bound": 5.053090316563868
+      }
+    },
+    {
+      "name": "frozen_exponential_is_not_the_nonautonomous_propagator",
+      "passed": true,
+      "details": {
+        "frobenius_difference": 966.195227238601,
+        "frozen_transverse_gain": 651.9709462711725
+      }
+    }
+  ],
+  "limitations": [
+    "The star is the exact local birth component, with all 7^7 states represented by count orbits; it is not a complete 7^(N^3) torus enumeration.",
+    "No stochastic simulation or primary author code was used.",
+    "Numerical propagators support analytic estimates and do not prove them."
+  ]
+}

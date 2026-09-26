@@ -1,0 +1,1172 @@
+{
+  "created_utc": "2026-09-22T19:22:34.412899+00:00",
+  "script_sha256": "16007f3a7dc1ab9e270db3cbb044a15ab4b2ae33303f78e820c94c81ae3a5574",
+  "geometry": {
+    "periods": [
+      2,
+      2,
+      2
+    ],
+    "vertices": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "distinct_positive_axis_links": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          1,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        0
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          1
+        ],
+        2
+      ]
+    ],
+    "plaquettes": [
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          0,
+          13
+        ],
+        "lowered": [
+          6,
+          1
+        ],
+        "r": 8193,
+        "l": 66
+      },
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          0,
+          14
+        ],
+        "lowered": [
+          3,
+          2
+        ],
+        "r": 16385,
+        "l": 12
+      },
+      {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          1,
+          8
+        ],
+        "lowered": [
+          4,
+          2
+        ],
+        "r": 258,
+        "l": 20
+      },
+      {
+        "origin": [
+          0,
+          0,
+          1
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          3,
+          16
+        ],
+        "lowered": [
+          9,
+          4
+        ],
+        "r": 65544,
+        "l": 528
+      },
+      {
+        "origin": [
+          0,
+          0,
+          1
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          3,
+          17
+        ],
+        "lowered": [
+          0,
+          5
+        ],
+        "r": 131080,
+        "l": 33
+      },
+      {
+        "origin": [
+          0,
+          0,
+          1
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          4,
+          11
+        ],
+        "lowered": [
+          1,
+          5
+        ],
+        "r": 2064,
+        "l": 34
+      },
+      {
+        "origin": [
+          0,
+          1,
+          0
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          6,
+          19
+        ],
+        "lowered": [
+          0,
+          7
+        ],
+        "r": 524352,
+        "l": 129
+      },
+      {
+        "origin": [
+          0,
+          1,
+          0
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          6,
+          20
+        ],
+        "lowered": [
+          9,
+          8
+        ],
+        "r": 1048640,
+        "l": 768
+      },
+      {
+        "origin": [
+          0,
+          1,
+          0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          7,
+          2
+        ],
+        "lowered": [
+          10,
+          8
+        ],
+        "r": 132,
+        "l": 1280
+      },
+      {
+        "origin": [
+          0,
+          1,
+          1
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          9,
+          22
+        ],
+        "lowered": [
+          3,
+          10
+        ],
+        "r": 4194816,
+        "l": 1032
+      },
+      {
+        "origin": [
+          0,
+          1,
+          1
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          9,
+          23
+        ],
+        "lowered": [
+          6,
+          11
+        ],
+        "r": 8389120,
+        "l": 2112
+      },
+      {
+        "origin": [
+          0,
+          1,
+          1
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          10,
+          5
+        ],
+        "lowered": [
+          7,
+          11
+        ],
+        "r": 1056,
+        "l": 2176
+      },
+      {
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          12,
+          1
+        ],
+        "lowered": [
+          18,
+          13
+        ],
+        "r": 4098,
+        "l": 270336
+      },
+      {
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          12,
+          2
+        ],
+        "lowered": [
+          15,
+          14
+        ],
+        "r": 4100,
+        "l": 49152
+      },
+      {
+        "origin": [
+          1,
+          0,
+          0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          13,
+          20
+        ],
+        "lowered": [
+          16,
+          14
+        ],
+        "r": 1056768,
+        "l": 81920
+      },
+      {
+        "origin": [
+          1,
+          0,
+          1
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          15,
+          4
+        ],
+        "lowered": [
+          21,
+          16
+        ],
+        "r": 32784,
+        "l": 2162688
+      },
+      {
+        "origin": [
+          1,
+          0,
+          1
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          15,
+          5
+        ],
+        "lowered": [
+          12,
+          17
+        ],
+        "r": 32800,
+        "l": 135168
+      },
+      {
+        "origin": [
+          1,
+          0,
+          1
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          16,
+          23
+        ],
+        "lowered": [
+          13,
+          17
+        ],
+        "r": 8454144,
+        "l": 139264
+      },
+      {
+        "origin": [
+          1,
+          1,
+          0
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          18,
+          7
+        ],
+        "lowered": [
+          12,
+          19
+        ],
+        "r": 262272,
+        "l": 528384
+      },
+      {
+        "origin": [
+          1,
+          1,
+          0
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          18,
+          8
+        ],
+        "lowered": [
+          21,
+          20
+        ],
+        "r": 262400,
+        "l": 3145728
+      },
+      {
+        "origin": [
+          1,
+          1,
+          0
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          19,
+          14
+        ],
+        "lowered": [
+          22,
+          20
+        ],
+        "r": 540672,
+        "l": 5242880
+      },
+      {
+        "origin": [
+          1,
+          1,
+          1
+        ],
+        "axes": [
+          0,
+          1
+        ],
+        "raised": [
+          21,
+          10
+        ],
+        "lowered": [
+          15,
+          22
+        ],
+        "r": 2098176,
+        "l": 4227072
+      },
+      {
+        "origin": [
+          1,
+          1,
+          1
+        ],
+        "axes": [
+          0,
+          2
+        ],
+        "raised": [
+          21,
+          11
+        ],
+        "lowered": [
+          18,
+          23
+        ],
+        "r": 2099200,
+        "l": 8650752
+      },
+      {
+        "origin": [
+          1,
+          1,
+          1
+        ],
+        "axes": [
+          1,
+          2
+        ],
+        "raised": [
+          22,
+          17
+        ],
+        "lowered": [
+          19,
+          23
+        ],
+        "r": 4325376,
+        "l": 8912896
+      }
+    ],
+    "seed_bits": 15798951,
+    "component_dimension": 864,
+    "component_states_sha256": "8e2de3fbae7fad1ce6e16047bfa1d45c5855e8fe848bf66b31faa2fa3888e8f5",
+    "Gauss_twice": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "flux_twice": [
+      0,
+      0,
+      0
+    ],
+    "oriented_pairs_by_p": [
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144,
+      144
+    ]
+  },
+  "weighted_locality_controls": [
+    {
+      "p": 0,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 1,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 2,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 3,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 4,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 5,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 6,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 7,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 8,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 9,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 10,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 11,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 12,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 13,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 14,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 15,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 16,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 17,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 18,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 19,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 20,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 21,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 22,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    },
+    {
+      "p": 23,
+      "overlapping_plaquettes_including_self": 11,
+      "m_pair_histogram": {
+        "-6": 4,
+        "-4": 22,
+        "-2": 24,
+        "0": 44,
+        "2": 24,
+        "4": 22,
+        "6": 4
+      }
+    }
+  ],
+  "flippability_histogram": {
+    "4": 120,
+    "6": 64,
+    "8": 492,
+    "10": 96,
+    "12": 80,
+    "16": 12
+  },
+  "edge_endpoint_flippability_sum_histogram": {
+    "12": 384,
+    "14": 480,
+    "16": 960,
+    "18": 672,
+    "20": 576,
+    "22": 96,
+    "24": 96,
+    "26": 96,
+    "28": 96
+  },
+  "J": "1",
+  "delta": "1/5",
+  "variational_energy_function_q_exp_theta_over_2": "48*(4*q**24 - 5*q**20 - 5*q**18 + 15*q**16 - 5*q**14 - 10*q**12 - 35*q**10 + 32*q**8 - 25*q**6 - 12*q**4 + 10)/(5*(3*q**24 + 20*q**16 + 24*q**12 + 123*q**8 + 16*q**4 + 30))",
+  "critical_polynomial_factorization": "480*q**3*(30*q**40 + 45*q**38 + 140*q**36 + 75*q**34 + 556*q**32 + 635*q**30 + 2688*q**28 + 415*q**26 - 1570*q**24 - 1095*q**22 + 5260*q**20 + 935*q**18 - 2616*q**16 - 4255*q**14 + 2512*q**12 + 345*q**10 + 736*q**8 - 5650*q**6 - 1080*q**4 - 2250*q**2 - 1040)",
+  "all_positive_critical_intervals": [
+    {
+      "q_interval": [
+        "78665521597806507/76266651050730689",
+        "7171543212891482/6952850150911371"
+      ],
+      "multiplicity": 1,
+      "q_mid": "1.031453728648451453231439505512283072931805780508861407015483161396240",
+      "theta_mid": "0.06193838841673541793084228506950096158722058624990147153638420142059965",
+      "energy_mid": "-1.634159908484452109404798455941682217501134585383277511755923396453503"
+    }
+  ],
+  "endpoint_energy_limits": {
+    "theta_minus_infinity": "16/5",
+    "theta_plus_infinity": "64/5"
+  },
+  "uniform_energy": "-8/5",
+  "optimum_theta_numeric": 0.06193838841673542,
+  "optimum_energy_numeric": -1.6341599084844516,
+  "computed_lowest_two_eigenvalues": [
+    -1.6424425919679508,
+    -0.4282697481301969
+  ],
+  "ground_energy_exact_rational_lower": "-4781053331520493/2910940908924955",
+  "ground_energy_exact_rational_upper": "-234590294577373/142830133439430",
+  "ground_energy_enclosure_width": 1.7382224904103046e-13,
+  "ground_eigenvector_residual_norm": 8.507983784087896e-15,
+  "variational_energy_excess": 0.008282683483499254,
+  "variational_fidelity_numeric": 0.9974398958364804,
+  "variational_eigenvector_residual_norm": 0.21031644375741435,
+  "mean_flippability_variational": 8.34030126409349,
+  "mean_flippability_ground": 8.416876197406662,
+  "data_artifact": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/VARIATIONAL_COMPONENT.npz",
+    "sha256": "e09677303518353475d353782efee1457373f78d865b8872c07a300179ffea62"
+  },
+  "limits": "One finite fixed component. Eigenvector/fidelity numerical; ground energy bounded by exact rational Collatz inequalities. Root isolation covers the whole one-parameter family. No thermodynamic or phase conclusion.",
+  "runtime_seconds": 0.21926079085096717
+}

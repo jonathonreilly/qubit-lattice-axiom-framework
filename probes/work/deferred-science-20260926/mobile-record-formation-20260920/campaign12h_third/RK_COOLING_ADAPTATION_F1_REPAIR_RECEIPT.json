@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-22T19:59:12.501570+00:00",
+  "finding": "F1: repeat delta != 0 in the no-pure-stationary conclusion; all equations, runners and numerical evidence unchanged",
+  "old_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+    "bytes": 9124,
+    "sha256": "791875b79af460884cb30802f4a454eaabc4ec6514a82fbc0c09e56573f4fd71"
+  },
+  "new_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+    "bytes": 9142,
+    "sha256": "a47a407bd613ac86d0e9e7d359e86185859236ec1a12b88d08fd6f9a2e1a66ab"
+  },
+  "old_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+    "bytes": 6686,
+    "sha256": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937"
+  },
+  "new_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+    "bytes": 7097,
+    "sha256": "de4fae0a513464b2ebcdf00ab954db3fd9c637333e19d73acfd347ea06cc722e"
+  },
+  "diff": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/scope_repair.diff",
+    "bytes": 757,
+    "sha256": "c07573add552492482ad7fff315219aa5c0688abc4301ecf0b1d0636af448500"
+  },
+  "independent_final_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/FINAL_SEAL.json",
+    "bytes": 23833,
+    "sha256": "3ecaa3abb44f2c6ae1e19ee5394c8537b4018331790f449c49bb021233e94fda"
+  },
+  "historical_binding_recovery": "Old absolute-path references to this note recover the exact pre-repair bytes in old_note.path. Unchanged historical seals remain untouched."
+}

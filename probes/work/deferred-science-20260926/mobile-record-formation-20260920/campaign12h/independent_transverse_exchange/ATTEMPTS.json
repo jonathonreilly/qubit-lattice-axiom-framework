@@ -1,0 +1,26 @@
+[
+  {
+    "attempt": 1,
+    "script": "independent_check_attempt_01.py",
+    "source_sha256": "675159c23e392746c66f7b7723fcf31b6bea3fe642c6589672e2e4090d0e73ec",
+    "log": "RUN_attempt_01.log",
+    "returncode": 1,
+    "finding": "SymPy structural equality rejected an unexpanded zero isotropic gradient. Exact expansion in DIAGNOSE_attempt_01.log confirms all fourteen entries vanish. Repair the equality test by expanding; no mathematical formula changed."
+  },
+  {
+    "attempt": 2,
+    "script": "independent_check_attempt_02.py",
+    "source_sha256": "ed7940bd4d191dbef065d2f5e3b839a4f97c5d1fcaf73cdf7b16d7f56a2fb293",
+    "log": "RUN_attempt_02.log",
+    "returncode": 1,
+    "finding": "Structural equality again distinguished equivalent factored forms in the fully occupied coordinate matrix. DIAGNOSE_attempt_02.log verifies the expanded difference is the exact zero matrix and coordinate rank is thirteen. The failed symbolic matrix comparison is normalized by expansion; no theorem or target changed."
+  },
+  {
+    "attempt": 3,
+    "script": "independent_check.py",
+    "source_sha256": "ed6ec9663d065f267908fee1c476d5abcbafb32a74e206261f6b542b6b22502d",
+    "log": "RUN_attempt_03.log",
+    "returncode": 0,
+    "result": "23 exact finite/symbolic control groups completed. Earlier structural-equality failures were repaired without changing any mathematical target."
+  }
+]

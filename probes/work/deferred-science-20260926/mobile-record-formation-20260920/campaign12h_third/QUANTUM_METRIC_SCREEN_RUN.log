@@ -1,0 +1,188 @@
+{
+  "created_utc": "2026-09-22T13:31:58.781137+00:00",
+  "status": "exploratory_float_screen",
+  "code": "Frozen positive two-pair stabilizer construction; author recreation",
+  "minimum_tau_eigenvalue": 0.00252786041127055,
+  "local_chi_squared_metric": {
+    "X2_X2": 1.8349048814296212,
+    "Y3_Y3": 0.6011620212926314,
+    "X2_Y3": 8.537468786953455e-18,
+    "mismatch_u_minus_4v": -0.5697432037409045
+  },
+  "rates": {
+    "k0": 1.1,
+    "gamma": 1.0
+  },
+  "scan": [
+    {
+      "N": 8,
+      "microscopic_k": 0.7853981633974483,
+      "damping": 2.388730162779191,
+      "antisymmetric": -0.07142857142857142,
+      "contraction_eigenvalues": [
+        -8.766466242100151,
+        -2.8717467360612994
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -5.859802432205076,
+        -5.778410545956375
+      ]
+    },
+    {
+      "N": 12,
+      "microscopic_k": 0.5235987755982988,
+      "damping": 1.1394882233484698,
+      "antisymmetric": 7.93016446160826e-18,
+      "contraction_eigenvalues": [
+        -4.181705006707348,
+        -1.370034087174631
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -2.7758695469409895,
+        -2.7758695469409895
+      ]
+    },
+    {
+      "N": 16,
+      "microscopic_k": 0.39269908169872414,
+      "damping": 0.6571125976451361,
+      "antisymmetric": 0.020920944200960894,
+      "contraction_eigenvalues": [
+        -2.4115658460775373,
+        -0.7899746548927833
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -1.5888506847108206,
+        -1.6126898162595007
+      ]
+    },
+    {
+      "N": 24,
+      "microscopic_k": 0.2617993877991494,
+      "damping": 0.29729842016521685,
+      "antisymmetric": 0.026144671698888476,
+      "contraction_eigenvalues": [
+        -1.0913309868085563,
+        -0.35714669638364094
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.7093430925816199,
+        -0.7391345906105776
+      ]
+    },
+    {
+      "N": 32,
+      "microscopic_k": 0.19634954084936207,
+      "damping": 0.1682772804633707,
+      "antisymmetric": 0.023173096344389833,
+      "contraction_eigenvalues": [
+        -0.6179649868765945,
+        -0.20190443995726004
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.396731999265078,
+        -0.42313742756877665
+      ]
+    },
+    {
+      "N": 48,
+      "microscopic_k": 0.1308996938995747,
+      "damping": 0.07512420103725918,
+      "antisymmetric": 0.017227211064105658,
+      "contraction_eigenvalues": [
+        -0.27620977868814756,
+        -0.08980538079249209
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.17319249331713552,
+        -0.19282266616350416
+      ]
+    },
+    {
+      "N": 64,
+      "microscopic_k": 0.09817477042468103,
+      "damping": 0.04232339419878004,
+      "antisymmetric": 0.013399507882068682,
+      "contraction_eigenvalues": [
+        -0.15587393994306897,
+        -0.05033129969396112
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.09546834126923374,
+        -0.11073689836779636
+      ]
+    },
+    {
+      "N": 96,
+      "microscopic_k": 0.06544984694978735,
+      "damping": 0.018831390238953274,
+      "antisymmetric": 0.009163775205890654,
+      "contraction_eigenvalues": [
+        -0.06968703263992984,
+        -0.022062020346792083
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.04065352784919536,
+        -0.051095525137526576
+      ]
+    },
+    {
+      "N": 128,
+      "microscopic_k": 0.04908738521234052,
+      "damping": 0.010596793357824798,
+      "antisymmetric": 0.006933798691897689,
+      "contraction_eigenvalues": [
+        -0.03947203891065944,
+        -0.012156956237308553
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.021864012893167712,
+        -0.029764982254800277
+      ]
+    },
+    {
+      "N": 256,
+      "microscopic_k": 0.02454369260617026,
+      "damping": 0.0026501959110116547,
+      "antisymmetric": 0.0034963904287244707,
+      "contraction_eigenvalues": [
+        -0.010284751501994401,
+        -0.0026273575870962786
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.0044640098601548255,
+        -0.008448099228935855
+      ]
+    },
+    {
+      "N": 512,
+      "microscopic_k": 0.01227184630308513,
+      "damping": 0.0006626113419395119,
+      "antisymmetric": 0.0017518889860361233,
+      "contraction_eigenvalues": [
+        -0.002904340115747072,
+        -0.000323991003187372
+      ],
+      "equal_amplitude_profile_derivatives": [
+        -0.0006160387159645966,
+        -0.002612292402969848
+      ]
+    },
+    {
+      "N": 1024,
+      "microscopic_k": 0.006135923151542565,
+      "damping": 0.00016565673349616672,
+      "antisymmetric": 0.0008764064455137402,
+      "contraction_eigenvalues": [
+        -0.0009430852771776974,
+        0.00013598350581151244
+      ],
+      "equal_amplitude_profile_derivatives": [
+        9.577573036308423e-05,
+        -0.0009028775017292693
+      ]
+    }
+  ],
+  "scope": "Necessary quantum contraction test using the proposed full generator linearization at the uniform encoded product law. Exact proof, microscopic linearization verification and independent review remain pending.",
+  "script_sha256": "1c000b4a0ef5714a3ad7d41de1a9c9ab5c02fc8e942495af6933ecd302f3dcf1"
+}

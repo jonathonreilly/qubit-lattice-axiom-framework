@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/additional_controls.py",
+    "--out",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RESULTS.json"
+  ],
+  "source_sha256": "b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19",
+  "returncode": 0,
+  "elapsed_seconds": 0.2874307632446289
+}

@@ -1,0 +1,6 @@
+{
+  "square_dark_projector_is_conserved_without_monitoring": true,
+  "empty_initial_dark_weight": "0",
+  "each_first_birth_state_dark_overlap": "0",
+  "consequence": "The specified square dark state is inaccessible from the all-vacant square without monitoring. Its existence alone does not show empty-start failure. The separate N4-torus matching history supplies the required positive reachability witness."
+}

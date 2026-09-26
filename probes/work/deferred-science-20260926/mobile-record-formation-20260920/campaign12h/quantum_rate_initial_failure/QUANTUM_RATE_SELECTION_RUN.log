@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/quantum_rate_selection_check.py", line 174, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/quantum_rate_selection_check.py", line 163, in main
+    'exact':exact_checks(),'positive_instruments':constructive_checks(),
+            ~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/quantum_rate_selection_check.py", line 73, in exact_checks
+    assert eigens=={6-6*j*j:1,6+2*j*j:3}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,710 @@
+[
+  {
+    "case": "balanced_r025_L32",
+    "rho": 0.25,
+    "reference_speed": 0.25,
+    "groups": {
+      "axis": {
+        "wave_number": 0.19634954084936207,
+        "initial_density_correlation": 0.9767868095923072,
+        "predicted_first_minimum_sample_time": 64.0,
+        "predicted_first_minimum_sample_theta": 3.141592653589793,
+        "density_at_that_time": -0.33268194160811254,
+        "density_pointwise_95_interval": [
+          -0.38700686668391515,
+          -0.2789056215080621
+        ],
+        "complex_fit": {
+          "amplitude": 0.9803049075623801,
+          "speed": 0.23963391397764675,
+          "damping": 0.41246188944580925,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9317405198688835,
+              1.0293705111628508
+            ],
+            [
+              0.23305930542744527,
+              0.245909111358197
+            ],
+            [
+              0.37673540618601603,
+              0.44716525341389285
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.01755512935411585,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.2776801836348979,
+        "initial_density_correlation": 1.0872968049748801,
+        "predicted_first_minimum_sample_time": 46.0,
+        "predicted_first_minimum_sample_theta": 3.1933221118013257,
+        "density_at_that_time": -0.33165334360104193,
+        "density_pointwise_95_interval": [
+          -0.3707089712667567,
+          -0.2924147859802319
+        ],
+        "complex_fit": {
+          "amplitude": 1.038922128684876,
+          "speed": 0.24145959337634523,
+          "damping": 0.3380719264776081,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.997293226057975,
+              1.0783270789566868
+            ],
+            [
+              0.23628354569988066,
+              0.24674685061533314
+            ],
+            [
+              0.3159984247784052,
+              0.3605372972320793
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.012778798465626878,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.3400873807939158,
+        "initial_density_correlation": 0.963944058338132,
+        "predicted_first_minimum_sample_time": 36.0,
+        "predicted_first_minimum_sample_theta": 3.0607864271452425,
+        "density_at_that_time": -0.2632801728772257,
+        "density_pointwise_95_interval": [
+          -0.3061072773973759,
+          -0.221368491931104
+        ],
+        "complex_fit": {
+          "amplitude": 1.0056794198092314,
+          "speed": 0.24540816139627178,
+          "damping": 0.3019362347784995,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.956027597080523,
+              1.059810633151761
+            ],
+            [
+              0.2381703740044925,
+              0.25238819159854575
+            ],
+            [
+              0.281015140838512,
+              0.322480561390968
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.016375418055433077,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "be14f1db4d5d25470b602d31375c1755cda35e6dab05b32947a18b73dd21820e",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 2577714200,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "1a1b4fcf05adf46694df189cfc28bd3d48fe20d55136578d42e19d8593fe9484"
+  },
+  {
+    "case": "balanced_r050_L32",
+    "rho": 0.5,
+    "reference_speed": 0.408248290463863,
+    "groups": {
+      "axis": {
+        "wave_number": 0.19634954084936207,
+        "initial_density_correlation": 0.9953448534975112,
+        "predicted_first_minimum_sample_time": 39.191835884530846,
+        "predicted_first_minimum_sample_theta": 3.1415926535897927,
+        "density_at_that_time": -0.3561066881640708,
+        "density_pointwise_95_interval": [
+          -0.4097021164538226,
+          -0.3053345908433888
+        ],
+        "complex_fit": {
+          "amplitude": 1.0192657316047538,
+          "speed": 0.40277814822496394,
+          "damping": 0.694619642585829,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.969026780688112,
+              1.0706063812072095
+            ],
+            [
+              0.3932462695157358,
+              0.41254165038794427
+            ],
+            [
+              0.6425941583317961,
+              0.7497808770167926
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.014662382197216106,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.2776801836348979,
+        "initial_density_correlation": 0.9879895751986232,
+        "predicted_first_minimum_sample_time": 28.169132042006545,
+        "predicted_first_minimum_sample_theta": 3.1933221118013253,
+        "density_at_that_time": -0.33876285038675924,
+        "density_pointwise_95_interval": [
+          -0.37686278849328253,
+          -0.30105643547813166
+        ],
+        "complex_fit": {
+          "amplitude": 1.0287446436671948,
+          "speed": 0.39631897822002526,
+          "damping": 0.5166508939594318,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9917925916441076,
+              1.0679769049720118
+            ],
+            [
+              0.38908121949622987,
+              0.40364315655004684
+            ],
+            [
+              0.4861358178617056,
+              0.544644653716571
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.011724521190541681,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.3400873807939158,
+        "initial_density_correlation": 0.9431710441928726,
+        "predicted_first_minimum_sample_time": 22.045407685048602,
+        "predicted_first_minimum_sample_theta": 3.060786427145242,
+        "density_at_that_time": -0.3036287010110637,
+        "density_pointwise_95_interval": [
+          -0.346754750253688,
+          -0.2611749828872905
+        ],
+        "complex_fit": {
+          "amplitude": 0.9727329005826267,
+          "speed": 0.39348860795869006,
+          "damping": 0.42933338752333133,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9292892994671411,
+              1.017862666315216
+            ],
+            [
+              0.3839855900541377,
+              0.40370606178562435
+            ],
+            [
+              0.4001021395405325,
+              0.45920211367793046
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.01729206542761863,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "9b94be0aa09efb33772381505d84ff74b57513cc955baf6fea9775517ae512a9",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 3459842442,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "f90ef6a06a832118d2d2569a9af2503a552e1e3eeddac8022fc4f85fb505e9e4"
+  },
+  {
+    "case": "balanced_r075_L32",
+    "rho": 0.75,
+    "reference_speed": 0.4330127018922193,
+    "groups": {
+      "axis": {
+        "wave_number": 0.19634954084936207,
+        "initial_density_correlation": 0.9838385493018305,
+        "predicted_first_minimum_sample_time": 36.950417228136054,
+        "predicted_first_minimum_sample_theta": 3.1415926535897936,
+        "density_at_that_time": -0.25656729074364243,
+        "density_pointwise_95_interval": [
+          -0.3029456104612025,
+          -0.21167846867886225
+        ],
+        "complex_fit": {
+          "amplitude": 0.9923616338135101,
+          "speed": 0.4172997182741792,
+          "damping": 0.9325804639476849,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.931747846979112,
+              1.052698846803641
+            ],
+            [
+              0.4034872818244601,
+              0.42955839465259055
+            ],
+            [
+              0.86028427656922,
+              1.0071431002677091
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.016219694465864243,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.2776801836348979,
+        "initial_density_correlation": 0.9790318145200383,
+        "predicted_first_minimum_sample_time": 26.55811238272279,
+        "predicted_first_minimum_sample_theta": 3.193322111801326,
+        "density_at_that_time": -0.23022979629482831,
+        "density_pointwise_95_interval": [
+          -0.26429744075224154,
+          -0.1947412752221569
+        ],
+        "complex_fit": {
+          "amplitude": 1.004112713868394,
+          "speed": 0.4144604128373863,
+          "damping": 0.6616229593020581,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9718031576347037,
+              1.0370336315008897
+            ],
+            [
+              0.40552127543887323,
+              0.4246257219724273
+            ],
+            [
+              0.6270604183411016,
+              0.6965744038816186
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.008042671334650663,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.3400873807939158,
+        "initial_density_correlation": 1.0469741169072473,
+        "predicted_first_minimum_sample_time": 20.78460969082653,
+        "predicted_first_minimum_sample_theta": 3.0607864271452425,
+        "density_at_that_time": -0.26742307649930375,
+        "density_pointwise_95_interval": [
+          -0.3141574517885294,
+          -0.21959246102623625
+        ],
+        "complex_fit": {
+          "amplitude": 1.020597360283495,
+          "speed": 0.43515595582277466,
+          "damping": 0.566921004925071,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9724207366680854,
+              1.0702038956751407
+            ],
+            [
+              0.4221955549758414,
+              0.44841711040196025
+            ],
+            [
+              0.5248781108396064,
+              0.6056213977305211
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.014954618760269614,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "ccc6f94add20571cbc45bb881bb5b1d4f7b76cab8cc85d19d8696fe287eb74f8",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 2250441684,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "e68365709137b62da26807452ec98d11094fdcc82a80661699377ee0a435a6fb"
+  },
+  {
+    "case": "balanced_r025_L64",
+    "rho": 0.25,
+    "reference_speed": 0.25,
+    "groups": {
+      "axis": {
+        "wave_number": 0.09817477042468103,
+        "initial_density_correlation": 0.9351032083888711,
+        "predicted_first_minimum_sample_time": 128.0,
+        "predicted_first_minimum_sample_theta": 3.141592653589793,
+        "density_at_that_time": -0.5253403059894202,
+        "density_pointwise_95_interval": [
+          -0.5756522569694151,
+          -0.47371685414533066
+        ],
+        "complex_fit": {
+          "amplitude": 0.9798671239619798,
+          "speed": 0.2504197955574089,
+          "damping": 0.44462785535473887,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9305898983257143,
+              1.0299081052268626
+            ],
+            [
+              0.2465933190350517,
+              0.25425188346442945
+            ],
+            [
+              0.40100069818947237,
+              0.4851206318863261
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.011551477265288096,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.13884009181744894,
+        "initial_density_correlation": 0.9979294240612654,
+        "predicted_first_minimum_sample_time": 92.0,
+        "predicted_first_minimum_sample_theta": 3.1933221118013257,
+        "density_at_that_time": -0.5141361349476509,
+        "density_pointwise_95_interval": [
+          -0.553778716158936,
+          -0.47467926860129606
+        ],
+        "complex_fit": {
+          "amplitude": 0.9936120056404368,
+          "speed": 0.2508801529920782,
+          "damping": 0.3668153840021129,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9599283155987104,
+              1.0258549961560073
+            ],
+            [
+              0.24746494161254293,
+              0.2541804650659037
+            ],
+            [
+              0.34178057493319697,
+              0.39199257117854136
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.005919862018985089,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.1700436903969579,
+        "initial_density_correlation": 0.9869849781507126,
+        "predicted_first_minimum_sample_time": 72.0,
+        "predicted_first_minimum_sample_theta": 3.0607864271452425,
+        "density_at_that_time": -0.5392110251091505,
+        "density_pointwise_95_interval": [
+          -0.5895447619843398,
+          -0.48813538108403
+        ],
+        "complex_fit": {
+          "amplitude": 0.9834382622332654,
+          "speed": 0.2502603406064698,
+          "damping": 0.302861903332293,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9413085671731699,
+              1.0233163399739345
+            ],
+            [
+              0.24633363095977745,
+              0.25426608212224844
+            ],
+            [
+              0.27852566870174544,
+              0.3245866938591794
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.011415090325695765,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "4f648ea5c88dd736ca0c28e5c62e448448bf3e082fe469cf0731703981e2b1b0",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 456927269,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "61979a948e306034fd6b34c1e4cab2f13f874d3c5bdf81c6afbc8ef92047139b"
+  },
+  {
+    "case": "balanced_r050_L64",
+    "rho": 0.5,
+    "reference_speed": 0.408248290463863,
+    "groups": {
+      "axis": {
+        "wave_number": 0.09817477042468103,
+        "initial_density_correlation": 0.997965509396072,
+        "predicted_first_minimum_sample_time": 78.38367176906169,
+        "predicted_first_minimum_sample_theta": 3.1415926535897927,
+        "density_at_that_time": -0.614004123177787,
+        "density_pointwise_95_interval": [
+          -0.6789165855680477,
+          -0.5509391563216544
+        ],
+        "complex_fit": {
+          "amplitude": 1.0108221300665634,
+          "speed": 0.40857894218971635,
+          "damping": 0.6420382982896625,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9539556547651393,
+              1.0701698257223204
+            ],
+            [
+              0.40228623829658133,
+              0.41450676817064197
+            ],
+            [
+              0.581226395550284,
+              0.705688560422094
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.01868712963849674,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.13884009181744894,
+        "initial_density_correlation": 0.993031782750731,
+        "predicted_first_minimum_sample_time": 56.33826408401309,
+        "predicted_first_minimum_sample_theta": 3.1933221118013253,
+        "density_at_that_time": -0.5597796889326225,
+        "density_pointwise_95_interval": [
+          -0.6002949797475792,
+          -0.5211073531218623
+        ],
+        "complex_fit": {
+          "amplitude": 0.9691695564921022,
+          "speed": 0.40714034645740843,
+          "damping": 0.5010962477742643,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9359929349069854,
+              1.0057705178053504
+            ],
+            [
+              0.4024941123301937,
+              0.41165651574013934
+            ],
+            [
+              0.46712703616666534,
+              0.5379906465863358
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.006865588021508162,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.1700436903969579,
+        "initial_density_correlation": 0.9966712635434789,
+        "predicted_first_minimum_sample_time": 44.090815370097204,
+        "predicted_first_minimum_sample_theta": 3.060786427145242,
+        "density_at_that_time": -0.5747723794570598,
+        "density_pointwise_95_interval": [
+          -0.6284487239824158,
+          -0.5231448233568373
+        ],
+        "complex_fit": {
+          "amplitude": 1.0216708558806853,
+          "speed": 0.40848284758113695,
+          "damping": 0.4391216007917345,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9786501913302125,
+              1.064686113544372
+            ],
+            [
+              0.4024120927222884,
+              0.4143858435298963
+            ],
+            [
+              0.4059475736981409,
+              0.4755211636855356
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.013538601987756638,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "3e9d88533882b7d09acfee3ca754cba2b245174894df603a1c622498903bf7cc",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 342080932,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "8987f59b7475ffb5e19948bece8874e829c6ee7c3ac7d0206b0a8572093e529d"
+  },
+  {
+    "case": "balanced_r075_L64",
+    "rho": 0.75,
+    "reference_speed": 0.4330127018922193,
+    "groups": {
+      "axis": {
+        "wave_number": 0.09817477042468103,
+        "initial_density_correlation": 0.9726220187145826,
+        "predicted_first_minimum_sample_time": 73.90083445627211,
+        "predicted_first_minimum_sample_theta": 3.1415926535897936,
+        "density_at_that_time": -0.4887210850230489,
+        "density_pointwise_95_interval": [
+          -0.5422533824690436,
+          -0.43544677162612305
+        ],
+        "complex_fit": {
+          "amplitude": 0.9822602158023094,
+          "speed": 0.433621629359977,
+          "damping": 0.9281180525383552,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9326163618470712,
+              1.035864731166735
+            ],
+            [
+              0.4258440714653158,
+              0.4415158722393002
+            ],
+            [
+              0.8411122749705587,
+              1.0142596747315404
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.012879673572531503,
+          "observation_count": 33
+        }
+      },
+      "face": {
+        "wave_number": 0.13884009181744894,
+        "initial_density_correlation": 0.9985223416422778,
+        "predicted_first_minimum_sample_time": 53.11622476544558,
+        "predicted_first_minimum_sample_theta": 3.193322111801326,
+        "density_at_that_time": -0.4934609463399172,
+        "density_pointwise_95_interval": [
+          -0.5307766259800828,
+          -0.45553874889027646
+        ],
+        "complex_fit": {
+          "amplitude": 1.0068086255084336,
+          "speed": 0.43312251213413533,
+          "damping": 0.7045427193378954,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.970855491362687,
+              1.0429989630257872
+            ],
+            [
+              0.42759006833773444,
+              0.4383354430088251
+            ],
+            [
+              0.664024761251739,
+              0.747262355993589
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.007984574542667988,
+          "observation_count": 23
+        }
+      },
+      "body": {
+        "wave_number": 0.1700436903969579,
+        "initial_density_correlation": 0.9637143817808033,
+        "predicted_first_minimum_sample_time": 41.56921938165306,
+        "predicted_first_minimum_sample_theta": 3.0607864271452425,
+        "density_at_that_time": -0.47115738177784716,
+        "density_pointwise_95_interval": [
+          -0.5240004172783814,
+          -0.4212334119373422
+        ],
+        "complex_fit": {
+          "amplitude": 1.0033180886780153,
+          "speed": 0.4304346000776991,
+          "damping": 0.5754353087597118,
+          "pointwise_bootstrap_parameter_intervals": [
+            [
+              0.9607383721751153,
+              1.0471162846944972
+            ],
+            [
+              0.4238863042328146,
+              0.437269160893349
+            ],
+            [
+              0.5301915417991017,
+              0.6252333312791885
+            ]
+          ],
+          "optimizer_success": true,
+          "bootstrap_optimizer_failures": 0,
+          "maximum_component_residual": 0.010808214174833908,
+          "observation_count": 19
+        }
+      }
+    },
+    "trajectories": 256,
+    "raw_npz_sha256": "ba2f0640f38bd13a3a40e61964c138961e05569633889c8d67d2f658bc4f9119",
+    "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+    "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+    "base_seed": 2026092191,
+    "name_seed": 613363319,
+    "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+    "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+    "analysis_npz_sha256": "eb3294e3854e32ec2507484aed494b562e6569ec08acb2dec948921e6cd02fab"
+  }
+]

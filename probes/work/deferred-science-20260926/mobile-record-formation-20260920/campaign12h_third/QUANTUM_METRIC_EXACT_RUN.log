@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-09-22T13:40:14.048841+00:00",
+  "status": "author_exact_finite_certificate_independent_check_pending",
+  "source_sha256": {
+    "campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46",
+    "campaign12h_second/dimer_two_pair_faithful_encoding_check.py": "07e9dbd7aea660c5cf4bcd36da7dc448e02e479dea99d43c31140d056f5a5c0b",
+    "campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873",
+    "campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+  },
+  "script_sha256": "be629d6d9ef483bda8b246e19135b1cc5524bffc6075612ea36d0c53532749ce",
+  "code": {
+    "hilbert_dimension": 16,
+    "colors": 14,
+    "group_size": 24,
+    "seed_traces": [
+      1168,
+      2125
+    ],
+    "covariance_checks": 336,
+    "positivity": "I + sum vv^T before positive normalization",
+    "tau_inverse_exactly_checked": true
+  },
+  "metric": {
+    "u": "2417748739555754821116820340799639977750/1317642545956945503834165709296483091641",
+    "v": "3294027190941045443247182637892226930624/5479433287981426997353428830244670390875",
+    "cross": "0",
+    "u_minus_4v": "-531758502242505963707999362550825631158902/933330136719503065215867377418342189912375",
+    "decimal_u": "1.83490488142962236",
+    "decimal_v": "0.601162021292631682"
+  },
+  "rates": {
+    "k0": "11/10",
+    "gamma": "1",
+    "lower_bound": "(k0-|gamma|)/2=1/20"
+  },
+  "witnesses": [
+    {
+      "N": 512,
+      "orientation": -1,
+      "coefficient_u": "1329/2293760",
+      "coefficient_v": "-366847/73400320",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "-97411535959108598837985402354363078574485623/50175828150040484786005030210010076129689280000",
+      "decimal_derivative": "-0.00194140365093366180",
+      "strictly_positive": false,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 67108864,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    },
+    {
+      "N": 512,
+      "orientation": 1,
+      "coefficient_u": "-60611/36700160",
+      "coefficient_v": "288153/73400320",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "-2649447828113033964785260022891886125659278929/3952311386587804340066857764234639842830909440000",
+      "decimal_derivative": "-0.000670354020461027754",
+      "strictly_positive": false,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 67108864,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    },
+    {
+      "N": 1024,
+      "orientation": -1,
+      "coefficient_u": "1111/2621440",
+      "coefficient_v": "-198473/83886080",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "-16430466319792421238921340670036349856058017/25486134933353897034161285186036864065873920000",
+      "decimal_derivative": "-0.000644682544558364793",
+      "strictly_positive": false,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 536870912,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    },
+    {
+      "N": 1024,
+      "orientation": 1,
+      "coefficient_u": "-29029/41943040",
+      "coefficient_v": "175967/83886080",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "-1463191469498602485841466827665713077784479/164481946460636915312906445570389173131018240000",
+      "decimal_derivative": "-8.89575726080531843e-6",
+      "strictly_positive": false,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 536870912,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    },
+    {
+      "N": 2048,
+      "orientation": -1,
+      "coefficient_u": "36033/146800640",
+      "coefficient_v": "-5400319/4697620480",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "-3091798089997107411191769249875154403067899109/12845012006410364105217287733762579489200455680000",
+      "decimal_derivative": "-0.000240700288053769893",
+      "strictly_positive": false,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 4294967296,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    },
+    {
+      "N": 2048,
+      "orientation": 1,
+      "coefficient_u": "-734147/2348810240",
+      "coefficient_v": "5085081/4697620480",
+      "coefficient_cross": "0",
+      "chi_squared_derivative_per_pair": "253943551350785258709380168798915548993408646371/3288323073641053210935625659843220349235316654080000",
+      "decimal_derivative": "0.0000772258521026651502",
+      "strictly_positive": true,
+      "full_14_color_residual_exactly_zero": true,
+      "physical_pairs": 4294967296,
+      "profile": "X=T_x/(N/2); Y=orientation*T_(x-N/4)/(N/2); T_x=N/2-2*abs(x-N/2)"
+    }
+  ],
+  "mathematical_scope": "Necessary stationary quantum chi-squared contraction, fixed product preparation, exact specified routed classical generator on a finite winding matching. Proof linking the local certificate to a full CPTP obstruction is in the companion note. No claim about other codes or physical generators."
+}

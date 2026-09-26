@@ -1,0 +1,12 @@
+{
+  "source": "Barry Simon, Topics in Functional Analysis, Theorem 1.7 (Nelson's analytic-vector criterion)",
+  "url": "https://math.caltech.edu/SimonPapers/R4.pdf",
+  "external_local_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Simon_analytic_vectors_R4.pdf",
+  "external_pdf_bytes": 2326400,
+  "external_pdf_sha256": "fc0424acae0b1e4508560dc2a60a85695dd6122716e703996ceda287716007ac",
+  "read_after_precomparison_seal": true,
+  "read_boundary": "Web PDF accessed successfully; local pypdf extraction of complete PDF pages 9-10 (printed pages 24-25) read, including the analytic-vector definition, Theorem 1.7, proof and neighboring remarks. Formula extraction has ordinary OCR gaps. No whole-book or original Nelson-paper read claimed.",
+  "criterion_summary": "A symmetric operator with a dense set of vectors analytic for it is essentially self-adjoint.",
+  "checked_application": "Finite-particle vectors form a dense invariant domain for the fixed finite quadratic Hamiltonian. Its repeated-action factorial bound gives a positive analytic radius for each vector. The criterion therefore applies. The number-moment propagation and Duhamel estimate were independently reconstructed before this source or the author receipt was opened.",
+  "verification_limit": "This is statement/hypothesis verification of an established functional-analysis criterion, not an independent reproof of the complete external theory. No external PDF or extract is copied into this review packet."
+}

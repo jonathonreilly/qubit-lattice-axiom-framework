@@ -1,0 +1,25 @@
+{
+  "cause": "Independent comparison helper asked SymPy to parse a polynomial whose symbol is named lambda, a Python keyword. Rename the serialized variable for parsing. No primary data, formula or target changed.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_02/compare_author.py",
+      "bytes": 6066,
+      "sha256": "1a4e943787d5c9c1ab444efcf451c0da21cdc4e506950bab90bd8e852aac1f90"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_02/AUTHOR_COMPARISON_RUN.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_02/AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 2081,
+      "sha256": "9e94763af381af6e13e1df50ef0a15f626c827a87706a213f8c933abd31eb95b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/failed_attempt_02/AUTHOR_COMPARISON_RUN_RECEIPT.json",
+      "bytes": 569,
+      "sha256": "dc2e600dfa2728d8dd20298a7d0af195d0f8aacf4b727af05d2830c1d838f7e4"
+    }
+  ]
+}

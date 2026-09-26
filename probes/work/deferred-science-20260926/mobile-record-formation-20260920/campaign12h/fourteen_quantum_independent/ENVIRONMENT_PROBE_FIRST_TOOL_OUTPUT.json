@@ -1,0 +1,6 @@
+{
+  "command": "python3 - <<'PY'\nimport sympy,numpy,scipy,cvxpy\nprint({'sympy':sympy.__version__,'numpy':numpy.__version__,'scipy':scipy.__version__,'cvxpy':cvxpy.__version__,'solvers':cvxpy.installed_solvers()})\nPY",
+  "exit_code": 1,
+  "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nModuleNotFoundError: No module named 'cvxpy'\n",
+  "scope": "Transcription of the original read-only dependency-probe tool output, before the identical source was preserved and rerun as environment_probe.py."
+}

@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-09-21T15:53:48.694257+00:00",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md",
+    "sha256": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+    "read": "complete"
+  },
+  "author_runner": "hash only; contents and results not read",
+  "excluded": "separate mixing comparison, production simulation values, unrelated campaign sources",
+  "writes_only_within": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent"
+}

@@ -1,0 +1,28 @@
+{
+  "time_utc": "2026-09-21T14:02:39.175152+00:00",
+  "sources_read_completely": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_EULER_STATE.md",
+      "bytes": 9226,
+      "sha256": "d0f31d58931cdce1671d252ec77a9ffe2296c03940ab761584245816857317d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_GAUSS_SECTOR_PREPARATION.md",
+      "bytes": 6660,
+      "sha256": "96ff2a8b16e0e5b65d0e4024b4b943102c080024d74948b499a754802006308d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_CONSTRUCTION.md",
+      "bytes": 9788,
+      "sha256": "1403c91ef041838347bc72c9a30a63d4db73619dcca7fd7775158cfaa2586d32"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FLUCTUATION_DERIVATION.md",
+      "bytes": 12027,
+      "sha256": "0c0b3713caa0769a2a711c7a75480f6db59f01bea5088982fb97b1acf7edc85e"
+    }
+  ],
+  "boundary": "New note and pinned propagation/prior conditioning inputs read. Stationary propagation is an imported checked hypothesis, not being re-proved. Author prepared-state checker and outputs remain unopened.",
+  "preceding_correction_ack_sha256": "7b6b74de86025be783a68e04416c6899ea65b7376a831bf115d1a34d4da30db6",
+  "allowed_output_directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/prepared_state_independent"
+}

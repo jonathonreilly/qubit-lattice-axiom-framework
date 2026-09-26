@@ -1,0 +1,11 @@
+--- attempt01.py
++++ current.py
+@@ -48,7 +48,7 @@
+ v=s.Matrix([a[i]+s.I*b[i] for i in range(3)]);Cp=cross(v);Cm=Cp.conjugate().T;norm=(v.conjugate().T*v)[0]
+ assert (Cp.conjugate().T*Cp-norm*s.eye(3)+v*v.conjugate().T).applyfunc(s.expand)==s.zeros(3)
+ assert (Cp*Cp.conjugate().T-norm*s.eye(3)+v.conjugate()*v.T).applyfunc(s.expand)==s.zeros(3)
+-assert v.T*Cp==s.zeros(1,3) and (-v.conjugate()).T*Cm==s.zeros(1,3)
++assert (v.T*Cp).applyfunc(s.expand)==s.zeros(1,3) and ((-v.conjugate()).T*Cm).applyfunc(s.expand)==s.zeros(1,3)
+ G=s.zeros(6);G[:3,3:]=Cm;G[3:,:3]=-Cp
+ check('general_complex_cross_singular_values_Gauss_identities_and_energy_adjointness',G.conjugate().T+G==s.zeros(6))
+ 

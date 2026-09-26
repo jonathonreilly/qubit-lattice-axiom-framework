@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/spatial_formula_check.py"
+  ],
+  "started_utc": "2026-09-22T14:01:38.051920+00:00",
+  "finished_utc": "2026-09-22T14:01:38.445643+00:00",
+  "returncode": 0,
+  "source_sha256": "ccd4e6745ab3a24f5758664915ab94007e7c85e12c66293d3f983312dfb49fa9"
+}

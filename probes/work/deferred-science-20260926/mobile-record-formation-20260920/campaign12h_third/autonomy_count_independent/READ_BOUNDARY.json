@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-22T17:14:00.953320+00:00",
+  "initial_input": "Parent-supplied neutral models recorded in SPECIFICATION.md.",
+  "allowed_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "bytes": 9771,
+      "sha256": "9c71310bfe26b93ae5206d5a4525bc01dc6136be1d39e6f1b08ecfa08b83e6a4",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+      "bytes": 9784,
+      "sha256": "49b1abd18c3c793b4089de38055b447842a96e4f74317b04dc0b857aa78b901a",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+      "bytes": 11028,
+      "sha256": "eb46b801aa126fbcf4b950c5f6a2fb775f247b07fde8900556a3101338cce8b1",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/REPORT.md",
+      "bytes": 18532,
+      "sha256": "eb588f78316fe92791af32c698ed7991fa92fe5f3d64e978e959486866b87d57",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8671,
+      "sha256": "fc30598ddaf5e586a999301ba3ad4561a78a6614268399d09fa8fb435519cc3b",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/correction_ack/SEAL.json",
+      "bytes": 38488,
+      "sha256": "b234712226490dcc8305dbd018a0f7daafeec7ad380de93a404a56254d86a911",
+      "use": "Previously checked local algebra, completion theorem or own sealed derivation; reused at the unchanged or separately acknowledged corrected identity."
+    }
+  ],
+  "new_author_sources_read": [],
+  "excluded": "All new autonomous-carrier, formation-count, last-pair-clock, coherent-ring observability notes, scripts, results, checkpoint, registry and author seal contents.",
+  "independent_execution": "Two standalone independently written scripts; no author script imported or executed.",
+  "author_contact": "A scope countercontrol was sent to parent; parent clarified intended ring completion excludes arbitrary extra commuting jumps. No author calculation or verdict was received.",
+  "failed_attempts": []
+}

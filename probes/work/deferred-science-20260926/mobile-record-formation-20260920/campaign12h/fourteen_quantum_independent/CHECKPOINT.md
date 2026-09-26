@@ -1,0 +1,3 @@
+# Current checkpoint
+
+Both complete quantum/Born notes and all three author checkers/results/logs reviewed. Initial reconstruction remains sealed unchanged. Sixteen independent groups completed after one preserved Boolean-count helper failure; cvxpy environment-probe failure preserved. No actionable mathematical defect or code/prose drift found. Report explicitly confines late-wave norm/scattering to U,V and keeps quantum one-event interfaces separate from repeated classical histories. REPORT.md is the final deliverable; SOURCE_COMPARISON.json authenticates nine author files. FINAL_SEAL.json binds all sources and evidence. No production edits, Git/PR/audit actions or delegation.

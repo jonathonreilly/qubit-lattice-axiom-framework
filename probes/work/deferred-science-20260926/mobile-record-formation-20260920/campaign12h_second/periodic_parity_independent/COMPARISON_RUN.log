@@ -1,0 +1,336 @@
+{
+  "source_hashes": {
+    "PAIRED_RECORD_PERIODIC_JAM_AND_ESCAPE.md": "cf03eaff8ea4effc674881e5807fa3449b5211a487308360b0f0e448f19a0bdd",
+    "PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.md": "fe6f9a4f71bdeac7f971b233ce6def6ef918bf29476ea4e48641a881f2ee8257",
+    "paired_record_periodic_check.py": "51a31337880a4613ebfc2981100f821d5410bc8299c178c117141e52aa545e05",
+    "paired_record_parity_check.py": "30e503d581e77469a83b4be031aa9c101379d8cc80f80c3b281e6b395e6b64ba"
+  },
+  "author_runners": "read completely, not executed or imported",
+  "independent_preseal_preserved": true,
+  "periodic_exact_groups_compared": 7,
+  "endpoint_states_checked": 80,
+  "constructed_sizes_checked": [
+    4,
+    6,
+    8,
+    16,
+    32
+  ],
+  "FFT_rows_compared": 255,
+  "max_power_or_bound_difference": 1.7053025658242404e-13,
+  "max_independent_divergence_residual": 2.0934566115783667e-16,
+  "selected_activity_reconstruction": [
+    {
+      "case": "N4_empty_extended_s21092102",
+      "phase": "pilot",
+      "N": 4,
+      "counts": [
+        9,
+        9,
+        13
+      ],
+      "original_channels": [
+        0,
+        1,
+        0
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 1,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_jam_extended_s21092101",
+      "phase": "pilot",
+      "N": 4,
+      "counts": [
+        9,
+        11,
+        11
+      ],
+      "original_channels": [
+        0,
+        1,
+        2
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 1,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_jam_extended_s21092102",
+      "phase": "pilot",
+      "N": 4,
+      "counts": [
+        12,
+        10,
+        9
+      ],
+      "original_channels": [
+        0,
+        0,
+        0
+      ],
+      "positive_content_activity_witness": null,
+      "parallel_channels_fully_enumerated": true,
+      "accepted_parallel_attempts": 115,
+      "identity_changing_parallel_attempts": 115,
+      "content_changing_parallel_attempts": 0,
+      "first_identity_channel": [
+        [
+          [
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "N4_empty_baseline_s21092201",
+      "phase": "screen",
+      "N": 4,
+      "counts": [
+        13,
+        9,
+        9
+      ],
+      "original_channels": [
+        0,
+        3,
+        3
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 3,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_empty_baseline_s21092202",
+      "phase": "screen",
+      "N": 4,
+      "counts": [
+        9,
+        11,
+        11
+      ],
+      "original_channels": [
+        0,
+        4,
+        0
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 4,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_empty_baseline_s21092203",
+      "phase": "screen",
+      "N": 4,
+      "counts": [
+        9,
+        13,
+        9
+      ],
+      "original_channels": [
+        0,
+        2,
+        1
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 2,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_jam_extended_s21092202",
+      "phase": "screen",
+      "N": 4,
+      "counts": [
+        9,
+        9,
+        13
+      ],
+      "original_channels": [
+        0,
+        2,
+        0
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 2,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N4_jam_extended_s21092203",
+      "phase": "screen",
+      "N": 4,
+      "counts": [
+        9,
+        13,
+        9
+      ],
+      "original_channels": [
+        0,
+        4,
+        3
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 4,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N6_empty_baseline_s21092202",
+      "phase": "screen",
+      "N": 6,
+      "counts": [
+        31,
+        39,
+        37
+      ],
+      "original_channels": [
+        0,
+        0,
+        2
+      ],
+      "positive_content_activity_witness": {
+        "family": "original_cube",
+        "count": 2,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N6_empty_extended_s21092201",
+      "phase": "screen",
+      "N": 6,
+      "counts": [
+        35,
+        35,
+        37
+      ],
+      "original_channels": [
+        0,
+        2,
+        1
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 2,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N6_empty_extended_s21092202",
+      "phase": "screen",
+      "N": 6,
+      "counts": [
+        31,
+        39,
+        37
+      ],
+      "original_channels": [
+        0,
+        4,
+        5
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 4,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    },
+    {
+      "case": "N8_empty_extended_s21092204",
+      "phase": "screen",
+      "N": 8,
+      "counts": [
+        85,
+        79,
+        91
+      ],
+      "original_channels": [
+        0,
+        3,
+        7
+      ],
+      "positive_content_activity_witness": {
+        "family": "translation",
+        "count": 3,
+        "positive_rate_parameter": 1
+      },
+      "parallel_channels_fully_enumerated": false,
+      "accepted_parallel_attempts": null,
+      "identity_changing_parallel_attempts": null,
+      "content_changing_parallel_attempts": null,
+      "first_identity_channel": null
+    }
+  ],
+  "finding": "Pilot has zero content-changing exits, but 115 identity-changing parallel-swap attempts if the optional identity-only channels are retained.",
+  "limits": "No simulator source, trajectories, event-rate kinetics, phase/scaling inference or mutation campaign reviewed. Other endpoint activity flags are metadata arithmetic only, except the named pilot and the 11 obstructed endpoints checked independently."
+}
+PASS: source identities, preserved independent evidence, endpoint parity/Gauss/readout and selected activity checks. One content-versus-identity scope clarification remains.

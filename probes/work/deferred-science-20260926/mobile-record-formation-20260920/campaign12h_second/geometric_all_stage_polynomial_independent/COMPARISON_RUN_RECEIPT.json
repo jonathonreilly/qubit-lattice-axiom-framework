@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_polynomial_independent/compare_author.py"
+  ],
+  "started_utc": "2026-09-21T20:54:57.430961+00:00",
+  "finished_utc": "2026-09-21T20:54:58.050964+00:00",
+  "returncode": 0,
+  "script_sha256": "701e50134873c817bb512cd4940e7d999d4186a195d362347d4d8fa58f5ca1ed"
+}

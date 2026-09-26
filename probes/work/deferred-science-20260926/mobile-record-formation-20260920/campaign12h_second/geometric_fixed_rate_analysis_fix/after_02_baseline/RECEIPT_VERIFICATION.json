@@ -1,0 +1,16 @@
+{
+  "rows": [
+    {
+      "name": "N16_b0.1_s210160001",
+      "receipt_sha256": "4b16a81dfe78cd2c4a5f75943cb08984e815a9aa69a5a7fbd04a60983bce9dbb",
+      "files": 3
+    },
+    {
+      "name": "N16_b0.1_s210160002",
+      "receipt_sha256": "d101c4e3f5fa0027e24efa37edb565206b9cdf0962f645b36a848fd8e671a1bc",
+      "files": 3
+    }
+  ],
+  "all_files_in_listed_receipts_hashed": true,
+  "wrapper_exception_receipts_not_interpreted": 0
+}

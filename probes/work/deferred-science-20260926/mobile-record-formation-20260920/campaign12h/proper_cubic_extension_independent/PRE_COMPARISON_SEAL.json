@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-09-21T11:23:47.610633+00:00",
+  "new_author_checker_or_results_read": false,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md",
+    "bytes": 5420,
+    "sha256": "d7833106fd96783eae700f7b505e41207bed74a4d8709723492091800ffb4070"
+  },
+  "dependency": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/FINAL_SEAL.json",
+    "bytes": 12504,
+    "sha256": "485b0abf604335fd7cf93c18c933952a25877d9db39f42493a8e467d682a9fb1"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/ATTEMPT1.stderr",
+      "bytes": 368,
+      "sha256": "8f04bf26a6b23068365b4347a67014f7094b5d38a48ff1b3d61cc83c23719636"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/ATTEMPT1.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/INDEPENDENT.stdout",
+      "bytes": 826,
+      "sha256": "424493bc0e24964d38fafab6a300803329e5c55a994bef7720e2d8c099add9ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 826,
+      "sha256": "424493bc0e24964d38fafab6a300803329e5c55a994bef7720e2d8c099add9ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/PRE_COMPARISON.md",
+      "bytes": 3957,
+      "sha256": "cf9bb42b1b0bccf66f82ab53a8e41f0895789ac214acce25d132f80312d0a79e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/independent_check.py",
+      "bytes": 4852,
+      "sha256": "ef47dfef3a0a82919a0334f24d650607a19d05dbbb1c118feec7973959dcb8b3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/independent_check_attempt1.py",
+      "bytes": 4832,
+      "sha256": "93817947917d78699d035effa38a4e9ece482b3a49494846dddfb20979df61fc"
+    }
+  ],
+  "failed_attempt": "Initial symbolic matrix equality before expansion; preserved source and stderr. Expanded polynomial is identically zero; second run passes."
+}

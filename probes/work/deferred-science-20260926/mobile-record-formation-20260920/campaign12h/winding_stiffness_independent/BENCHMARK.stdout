@@ -1,0 +1,32 @@
+{
+  "source_sha256": "6b352e2be4ddd3a6da5064bdb959aab3b1b28999b890626e83d96ca459ee96c1",
+  "transverse_projector_trace": 2,
+  "zero_mode_components": 3,
+  "discrete_Gaussian": [
+    {
+      "sigma_squared": "0.2",
+      "ratio": "0.706599415235344773278420431473439964583299967604891405411778675466473460503415951953139997",
+      "one_minus_ratio_upper_bound": "0.32929174799024086729",
+      "direct_dual_error": "7.143671196e-102"
+    },
+    {
+      "sigma_squared": "1",
+      "ratio": "0.999999788767728083111723048574102858136122935961489888684747572386783103519346594783354715",
+      "one_minus_ratio_upper_bound": "2.1123227530753126497e-7",
+      "direct_dual_error": "7.143671196e-102"
+    },
+    {
+      "sigma_squared": "6",
+      "ratio": "0.999999999999999999999999999999999999999999999999826314236045130187921818288118324583805444",
+      "one_minus_ratio_upper_bound": "1.7368576395486981208e-49",
+      "direct_dual_error": "1.428734239e-101"
+    },
+    {
+      "sigma_squared": "18",
+      "ratio": "1.0",
+      "one_minus_ratio_upper_bound": "7.0037713422480677025e-152",
+      "direct_dual_error": "1.428734239e-101"
+    }
+  ],
+  "scope": "Added Gaussian benchmark only; no record-ensemble or confidence-coverage theorem."
+}

@@ -1,0 +1,35 @@
+{
+  "utc": "2026-09-22T18:44:33.754999+00:00",
+  "source_results_sha256": "425cf9a9dee90c3dcbfc7b70f7d147f9117c5f423aa819367b4a9c283083a038",
+  "method": "Exact rational polynomial root count independent of a floating optimizer; same author, not independent review.",
+  "cases": [
+    {
+      "delta": "1/20",
+      "positive_critical_roots_exact": 1,
+      "constant_sign": -1,
+      "leading_sign": 1,
+      "conclusion": "Derivative starts negative, ends positive, and has exactly one positive zero; the root is the unique global minimum for x>0."
+    },
+    {
+      "delta": "1/5",
+      "positive_critical_roots_exact": 1,
+      "constant_sign": -1,
+      "leading_sign": 1,
+      "conclusion": "Derivative starts negative, ends positive, and has exactly one positive zero; the root is the unique global minimum for x>0."
+    },
+    {
+      "delta": "1/2",
+      "positive_critical_roots_exact": 1,
+      "constant_sign": -1,
+      "leading_sign": 1,
+      "conclusion": "Derivative starts negative, ends positive, and has exactly one positive zero; the root is the unique global minimum for x>0."
+    },
+    {
+      "delta": "1",
+      "positive_critical_roots_exact": 1,
+      "constant_sign": -1,
+      "leading_sign": 1,
+      "conclusion": "Derivative starts negative, ends positive, and has exactly one positive zero; the root is the unique global minimum for x>0."
+    }
+  ]
+}

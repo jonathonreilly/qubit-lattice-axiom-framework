@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-21T23:24:39.359230+00:00",
+  "failure": "A purported rough matching fixture had no nonzero tensor boundary witness.",
+  "cause": "All attempted plaquette flips started from black-to-positive-x winding matching, which has no flippable elementary square. Thus every attempt failed to change geometry.",
+  "repair": "Keep the zero-attempt winding control; initialize attempted-flip cases from an x-columnar matching, add an assertion of at least one accepted flip, and preserve every mathematical assertion and primary proof.",
+  "old_sha256": "9e50a523f96c1ee5ac4fd76e9fc6cce1f164553acdad16333deda17858a55577",
+  "new_sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052"
+}

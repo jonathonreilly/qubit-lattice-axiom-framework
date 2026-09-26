@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-09-21T14:17:31.488240+00:00",
+  "scope": "Only the F1 phrase correction, with no theorem or numerical rerun.",
+  "reviewed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/prepared_state_f1_fix/PREPARED_TRANSVERSE_EULER_STATE.before.md",
+    "sha256": "d0f31d58931cdce1671d252ec77a9ffe2296c03940ab761584245816857317d8"
+  },
+  "corrected_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_EULER_STATE.md",
+    "sha256": "e39c96e98a4fe3f6c5df1331bdc374d612d6ffbad0898737bbd6440ac5863f4a"
+  },
+  "complete_delta": {
+    "before": "For a\nsymmetry-closed set containing the first axis shell the other axis modes",
+    "after": "For the\nfirst-axis-shell choice of M the other axis modes"
+  },
+  "inverse_replacement_recovers_reviewed_bytes": true,
+  "finding": "F1 closed: the nonstationarity witness is now restricted to the first-axis-shell choice of M, exactly the case verified in the sealed reconstruction. No new mathematical claim is introduced.",
+  "original_report_sha256": "415e66728cb01fa76da646cc44087c2e68311da07d0438c62d7a12d784b923de",
+  "original_final_seal_sha256": "568ae13549585a40b553334515ad67b83b336e5099353951ce65bb3239d36953",
+  "original_artifacts_preserved": 16,
+  "unresolved_findings_within_original_scope": []
+}

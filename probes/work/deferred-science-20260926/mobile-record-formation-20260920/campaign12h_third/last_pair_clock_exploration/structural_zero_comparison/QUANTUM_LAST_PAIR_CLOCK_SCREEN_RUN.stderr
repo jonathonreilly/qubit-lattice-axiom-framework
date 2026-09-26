@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_last_pair_clock_screen.py", line 173, in <module>
+    'exact_C4': exact_four_cycle(), 'dark_projection_controls': dark_space_checks(), 'screen': []}
+                ~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_last_pair_clock_screen.py", line 118, in exact_four_cycle
+    assert all(s.factor(z) == 0 for z in A*x-rhs)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

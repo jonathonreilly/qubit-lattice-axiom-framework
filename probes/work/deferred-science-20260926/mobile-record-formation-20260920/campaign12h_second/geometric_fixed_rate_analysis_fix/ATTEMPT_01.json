@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "failed_assertion": "exact equality of floating-point standard error to 1.5",
+  "scope": "Root control assertion; successful analyzer baseline outputs preserved unchanged",
+  "analysis_sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a"
+}

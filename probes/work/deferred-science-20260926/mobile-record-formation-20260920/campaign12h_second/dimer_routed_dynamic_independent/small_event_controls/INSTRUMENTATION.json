@@ -1,0 +1,27 @@
+{
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamics.cpp",
+    "bytes": 10682,
+    "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+  },
+  "changes": [
+    {
+      "old": "    std::vector<U>key(g.K);",
+      "new": "    std::ofstream catalog(output+\".channels\");\n    for(const auto &z:channels)catalog<<z.l<<\",\"<<z.u<<\",\"<<z.v<<\",\"<<z.r<<\",\"<<int(z.axis)<<\",\"<<int(z.sign)<<\"\\n\";\n    catalog.close();std::ofstream trace(output+\".trace\");trace<<std::setprecision(17);\n    std::vector<U>key(g.K);"
+    },
+    {
+      "old": "            const Channel &c=channels[rng.bounded(channels.size())];",
+      "new": "            uint64_t chosen=rng.bounded(channels.size());const Channel &c=channels[chosen];"
+    },
+    {
+      "old": "            if(rng.bounded(42)<uint64_t(numerator)){std::swap(key[c.u],key[c.v]);++accepted;changed+=a!=b;}",
+      "new": "            uint64_t draw=rng.bounded(42);\n            trace<<t<<\",\"<<chosen<<\",\"<<key[c.u]<<\",\"<<key[c.v]<<\",\"<<h2<<\",\"<<numerator<<\",\"<<draw<<\"\\n\";\n            if(draw<uint64_t(numerator)){std::swap(key[c.u],key[c.v]);++accepted;changed+=a!=b;}"
+    }
+  ],
+  "instrumented": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/instrumented.cpp",
+    "bytes": 11095,
+    "sha256": "289f32746e225ef734e582a013c1faa244b0d4ca8d0b18f0cffb8c9138ad7322"
+  },
+  "scope": "Only logs channel catalog and existing random draws; no extra RNG draw or altered state update."
+}

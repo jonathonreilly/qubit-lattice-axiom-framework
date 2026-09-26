@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_independent/compare_author.py"
+  ],
+  "started_utc": "2026-09-21T17:56:24.916674+00:00",
+  "ended_utc": "2026-09-21T17:56:25.299912+00:00",
+  "elapsed_seconds": 0.3831102920230478,
+  "returncode": 0,
+  "stdout_sha256": "d981280cd5cd4d3c4ab62e58bf35cbdb01816ea4a190718f2baf0704b981e66a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,530 @@
+{
+  "status": "PASS",
+  "dependency_sha256": "9c0f787bb5b64238145c0647076e88b1011571f5539bcb7a4ed60d4d62234b27",
+  "all_physical_word_controls": [
+    {
+      "length": 6,
+      "physical_dimension": 27,
+      "minus_pattern_sectors": 4,
+      "nonempty_minus_pattern_sectors": 3,
+      "all_exact_factorizations": true,
+      "directed_hops_in_cut_sectors_checked": 12,
+      "examples": [
+        {
+          "minus_positions": [
+            3
+          ],
+          "B_site_gaps": [
+            3
+          ],
+          "open_PXP_block_lengths": [
+            2
+          ],
+          "tensor_product_dimension": 3
+        },
+        {
+          "minus_positions": [
+            5
+          ],
+          "B_site_gaps": [
+            3
+          ],
+          "open_PXP_block_lengths": [
+            2
+          ],
+          "tensor_product_dimension": 3
+        },
+        {
+          "minus_positions": [
+            1
+          ],
+          "B_site_gaps": [
+            3
+          ],
+          "open_PXP_block_lengths": [
+            2
+          ],
+          "tensor_product_dimension": 3
+        }
+      ],
+      "sector_classes": [
+        {
+          "minus_count": 1,
+          "sorted_B_gaps": [
+            3
+          ],
+          "dimension": 3,
+          "patterns": 3
+        }
+      ]
+    },
+    {
+      "length": 8,
+      "physical_dimension": 81,
+      "minus_pattern_sectors": 7,
+      "nonempty_minus_pattern_sectors": 6,
+      "all_exact_factorizations": true,
+      "directed_hops_in_cut_sectors_checked": 80,
+      "examples": [
+        {
+          "minus_positions": [
+            3
+          ],
+          "B_site_gaps": [
+            4
+          ],
+          "open_PXP_block_lengths": [
+            4
+          ],
+          "tensor_product_dimension": 8
+        },
+        {
+          "minus_positions": [
+            5
+          ],
+          "B_site_gaps": [
+            4
+          ],
+          "open_PXP_block_lengths": [
+            4
+          ],
+          "tensor_product_dimension": 8
+        },
+        {
+          "minus_positions": [
+            7
+          ],
+          "B_site_gaps": [
+            4
+          ],
+          "open_PXP_block_lengths": [
+            4
+          ],
+          "tensor_product_dimension": 8
+        },
+        {
+          "minus_positions": [
+            3,
+            7
+          ],
+          "B_site_gaps": [
+            2,
+            2
+          ],
+          "open_PXP_block_lengths": [
+            0,
+            0
+          ],
+          "tensor_product_dimension": 1
+        },
+        {
+          "minus_positions": [
+            1
+          ],
+          "B_site_gaps": [
+            4
+          ],
+          "open_PXP_block_lengths": [
+            4
+          ],
+          "tensor_product_dimension": 8
+        },
+        {
+          "minus_positions": [
+            1,
+            5
+          ],
+          "B_site_gaps": [
+            2,
+            2
+          ],
+          "open_PXP_block_lengths": [
+            0,
+            0
+          ],
+          "tensor_product_dimension": 1
+        }
+      ],
+      "sector_classes": [
+        {
+          "minus_count": 1,
+          "sorted_B_gaps": [
+            4
+          ],
+          "dimension": 8,
+          "patterns": 4
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            2,
+            2
+          ],
+          "dimension": 1,
+          "patterns": 2
+        }
+      ]
+    },
+    {
+      "length": 10,
+      "physical_dimension": 243,
+      "minus_pattern_sectors": 11,
+      "nonempty_minus_pattern_sectors": 10,
+      "all_exact_factorizations": true,
+      "directed_hops_in_cut_sectors_checked": 400,
+      "examples": [
+        {
+          "minus_positions": [
+            3
+          ],
+          "B_site_gaps": [
+            5
+          ],
+          "open_PXP_block_lengths": [
+            6
+          ],
+          "tensor_product_dimension": 21
+        },
+        {
+          "minus_positions": [
+            5
+          ],
+          "B_site_gaps": [
+            5
+          ],
+          "open_PXP_block_lengths": [
+            6
+          ],
+          "tensor_product_dimension": 21
+        },
+        {
+          "minus_positions": [
+            7
+          ],
+          "B_site_gaps": [
+            5
+          ],
+          "open_PXP_block_lengths": [
+            6
+          ],
+          "tensor_product_dimension": 21
+        },
+        {
+          "minus_positions": [
+            3,
+            7
+          ],
+          "B_site_gaps": [
+            2,
+            3
+          ],
+          "open_PXP_block_lengths": [
+            0,
+            2
+          ],
+          "tensor_product_dimension": 3
+        },
+        {
+          "minus_positions": [
+            9
+          ],
+          "B_site_gaps": [
+            5
+          ],
+          "open_PXP_block_lengths": [
+            6
+          ],
+          "tensor_product_dimension": 21
+        },
+        {
+          "minus_positions": [
+            3,
+            9
+          ],
+          "B_site_gaps": [
+            3,
+            2
+          ],
+          "open_PXP_block_lengths": [
+            2,
+            0
+          ],
+          "tensor_product_dimension": 3
+        }
+      ],
+      "sector_classes": [
+        {
+          "minus_count": 1,
+          "sorted_B_gaps": [
+            5
+          ],
+          "dimension": 21,
+          "patterns": 5
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            2,
+            3
+          ],
+          "dimension": 3,
+          "patterns": 5
+        }
+      ]
+    },
+    {
+      "length": 12,
+      "physical_dimension": 729,
+      "minus_pattern_sectors": 18,
+      "nonempty_minus_pattern_sectors": 17,
+      "all_exact_factorizations": true,
+      "directed_hops_in_cut_sectors_checked": 1752,
+      "examples": [
+        {
+          "minus_positions": [
+            3
+          ],
+          "B_site_gaps": [
+            6
+          ],
+          "open_PXP_block_lengths": [
+            8
+          ],
+          "tensor_product_dimension": 55
+        },
+        {
+          "minus_positions": [
+            5
+          ],
+          "B_site_gaps": [
+            6
+          ],
+          "open_PXP_block_lengths": [
+            8
+          ],
+          "tensor_product_dimension": 55
+        },
+        {
+          "minus_positions": [
+            7
+          ],
+          "B_site_gaps": [
+            6
+          ],
+          "open_PXP_block_lengths": [
+            8
+          ],
+          "tensor_product_dimension": 55
+        },
+        {
+          "minus_positions": [
+            3,
+            7
+          ],
+          "B_site_gaps": [
+            2,
+            4
+          ],
+          "open_PXP_block_lengths": [
+            0,
+            4
+          ],
+          "tensor_product_dimension": 8
+        },
+        {
+          "minus_positions": [
+            9
+          ],
+          "B_site_gaps": [
+            6
+          ],
+          "open_PXP_block_lengths": [
+            8
+          ],
+          "tensor_product_dimension": 55
+        },
+        {
+          "minus_positions": [
+            3,
+            9
+          ],
+          "B_site_gaps": [
+            3,
+            3
+          ],
+          "open_PXP_block_lengths": [
+            2,
+            2
+          ],
+          "tensor_product_dimension": 9
+        }
+      ],
+      "sector_classes": [
+        {
+          "minus_count": 1,
+          "sorted_B_gaps": [
+            6
+          ],
+          "dimension": 55,
+          "patterns": 6
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            2,
+            4
+          ],
+          "dimension": 8,
+          "patterns": 6
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            3,
+            3
+          ],
+          "dimension": 9,
+          "patterns": 3
+        },
+        {
+          "minus_count": 3,
+          "sorted_B_gaps": [
+            2,
+            2,
+            2
+          ],
+          "dimension": 1,
+          "patterns": 2
+        }
+      ]
+    },
+    {
+      "length": 14,
+      "physical_dimension": 2187,
+      "minus_pattern_sectors": 29,
+      "nonempty_minus_pattern_sectors": 28,
+      "all_exact_factorizations": true,
+      "directed_hops_in_cut_sectors_checked": 7084,
+      "examples": [
+        {
+          "minus_positions": [
+            3
+          ],
+          "B_site_gaps": [
+            7
+          ],
+          "open_PXP_block_lengths": [
+            10
+          ],
+          "tensor_product_dimension": 144
+        },
+        {
+          "minus_positions": [
+            5
+          ],
+          "B_site_gaps": [
+            7
+          ],
+          "open_PXP_block_lengths": [
+            10
+          ],
+          "tensor_product_dimension": 144
+        },
+        {
+          "minus_positions": [
+            7
+          ],
+          "B_site_gaps": [
+            7
+          ],
+          "open_PXP_block_lengths": [
+            10
+          ],
+          "tensor_product_dimension": 144
+        },
+        {
+          "minus_positions": [
+            3,
+            7
+          ],
+          "B_site_gaps": [
+            2,
+            5
+          ],
+          "open_PXP_block_lengths": [
+            0,
+            6
+          ],
+          "tensor_product_dimension": 21
+        },
+        {
+          "minus_positions": [
+            9
+          ],
+          "B_site_gaps": [
+            7
+          ],
+          "open_PXP_block_lengths": [
+            10
+          ],
+          "tensor_product_dimension": 144
+        },
+        {
+          "minus_positions": [
+            3,
+            9
+          ],
+          "B_site_gaps": [
+            3,
+            4
+          ],
+          "open_PXP_block_lengths": [
+            2,
+            4
+          ],
+          "tensor_product_dimension": 24
+        }
+      ],
+      "sector_classes": [
+        {
+          "minus_count": 1,
+          "sorted_B_gaps": [
+            7
+          ],
+          "dimension": 144,
+          "patterns": 7
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            2,
+            5
+          ],
+          "dimension": 21,
+          "patterns": 7
+        },
+        {
+          "minus_count": 2,
+          "sorted_B_gaps": [
+            3,
+            4
+          ],
+          "dimension": 24,
+          "patterns": 7
+        },
+        {
+          "minus_count": 3,
+          "sorted_B_gaps": [
+            2,
+            2,
+            3
+          ],
+          "dimension": 3,
+          "patterns": 7
+        }
+      ]
+    }
+  ],
+  "runtime_seconds": 0.055577791994437575,
+  "scope": "One-dimensional supplied Gauss sector only; fixed minus records cut the closed Hamiltonian exactly, and births can create further cuts. No 3D fragmentation inference."
+}

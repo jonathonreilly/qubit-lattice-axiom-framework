@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-21T09:22:27.189767+00:00",
+  "environment_probe": {
+    "consequence": "No package installed. Use the independently derived exact minimax proof and an available SciPy linear program after justified cubic twirling; do not present that numerical LP as an independent unrestricted-POVM theorem.",
+    "first_observed": "A read-only import probe raised ModuleNotFoundError before any mathematical checker was run. The exact probe is preserved and its repeat output is logged.",
+    "status": "cvxpy unavailable in the default Python runtime"
+  },
+  "mathematical_attempts": [
+    {
+      "attempt": 1,
+      "failure": "Python sum cannot add SymPy BooleanAtom values when counting nonorthogonal pairs.",
+      "log": {
+        "bytes": 2946,
+        "path": "attempt_01_INDEPENDENT_CHECK.log",
+        "sha256": "744af310d11bd37a7a60072fbbde6dd1414e8ac0d10bd609dd83cbcd95c8b491"
+      },
+      "repair": "Explicitly convert each proven Boolean to bool then int; no formula, parameter, assertion target or model changed.",
+      "source": {
+        "bytes": 17504,
+        "path": "attempt_01_independent_check.py",
+        "sha256": "7680a0ca82410d4a36a475d196c0f72858e95fa00a940c00dc825a8e07e6a22a"
+      },
+      "status": "stopped after eight completed groups"
+    },
+    {
+      "attempt": 2,
+      "log": {
+        "bytes": 5091,
+        "path": "INDEPENDENT_CHECK.log",
+        "sha256": "7e9aae7e1011e69467898a07dacf5b3720557e4381459e0832b53cc216f3d5e3"
+      },
+      "scientific_changes_from_attempt_1": false,
+      "source": {
+        "bytes": 17515,
+        "path": "independent_check.py",
+        "sha256": "9dbf5708ae200922fdfefa6ca04e5f1d736e6cddcc1130f739b2aa9169bd2405"
+      },
+      "status": "completed all sixteen control groups"
+    }
+  ]
+}

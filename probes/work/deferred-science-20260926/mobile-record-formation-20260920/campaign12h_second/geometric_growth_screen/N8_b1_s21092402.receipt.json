@@ -1,0 +1,26 @@
+{
+  "case": [
+    8,
+    1,
+    21092402
+  ],
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_partner_growth",
+    "8",
+    "21092402",
+    "1",
+    "1",
+    "10000000",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_growth_screen/N8_b1_s21092402",
+    "0"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.0050737501587718725,
+  "files": {
+    "N8_b1_s21092402.csv": "a38e53c1e8659b20ac41b728ec4e37a560ccfa848ece5b1deea6c29deee1c373",
+    "N8_b1_s21092402.json": "cbffd61d5f0d2d278e8df941990ccea8d06b25247abf8ecf90f9d2962ee25043",
+    "N8_b1_s21092402.state.txt": "6518d1d94020c622f61df55c4115352a712e72ff09e106af0547e46fc8fc92e7",
+    "N8_b1_s21092402.stdout": "1a0b61d1dcd45c1114c8936a71e8a90e8fe65d6c318253773b53936d07e7feb7",
+    "N8_b1_s21092402.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-21T23:29:08.305389+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/independent_check.py"
+  ],
+  "checker_sha256": "2dafa30bca6d2a0dec24b35d8cbaa781740555e5a0bc6884ab5ba40facbb977b",
+  "returncode": 0,
+  "completed_utc": "2026-09-21T23:29:10.801001+00:00"
+}

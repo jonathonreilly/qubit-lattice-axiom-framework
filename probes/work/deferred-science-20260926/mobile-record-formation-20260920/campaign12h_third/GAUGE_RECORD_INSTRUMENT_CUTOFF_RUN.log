@@ -1,0 +1,366 @@
+{
+  "status": "PASS",
+  "exact_birth_operator_controls": [
+    {
+      "S": 2,
+      "input_dimension": 25,
+      "exact_instrument_normalization": "16 I / 16",
+      "weighted_growth_at_lambda_log2": [
+        {
+          "link": 0,
+          "radius": 2,
+          "minimum_integer_weighted_slack": 156,
+          "exact_squared_growth_factor": 16
+        },
+        {
+          "link": 1,
+          "radius": 1,
+          "minimum_integer_weighted_slack": 24,
+          "exact_squared_growth_factor": 4
+        }
+      ],
+      "correct_interior_discrepancy": "exact zero",
+      "largest_squared_dilation_discrepancy_numeric": 1.25,
+      "underestimated_radius_countercontrol_nonzero_entries": 24
+    },
+    {
+      "S": 3,
+      "input_dimension": 49,
+      "exact_instrument_normalization": "16 I / 16",
+      "weighted_growth_at_lambda_log2": [
+        {
+          "link": 0,
+          "radius": 2,
+          "minimum_integer_weighted_slack": 156,
+          "exact_squared_growth_factor": 16
+        },
+        {
+          "link": 1,
+          "radius": 1,
+          "minimum_integer_weighted_slack": 24,
+          "exact_squared_growth_factor": 4
+        }
+      ],
+      "correct_interior_discrepancy": "exact zero",
+      "largest_squared_dilation_discrepancy_numeric": 1.25,
+      "underestimated_radius_countercontrol_nonzero_entries": 40
+    },
+    {
+      "S": 4,
+      "input_dimension": 81,
+      "exact_instrument_normalization": "16 I / 16",
+      "weighted_growth_at_lambda_log2": [
+        {
+          "link": 0,
+          "radius": 2,
+          "minimum_integer_weighted_slack": 156,
+          "exact_squared_growth_factor": 16
+        },
+        {
+          "link": 1,
+          "radius": 1,
+          "minimum_integer_weighted_slack": 24,
+          "exact_squared_growth_factor": 4
+        }
+      ],
+      "correct_interior_discrepancy": "exact zero",
+      "largest_squared_dilation_discrepancy_numeric": 1.25,
+      "underestimated_radius_countercontrol_nonzero_entries": 56
+    }
+  ],
+  "Hamiltonian_weighted_norm_controls": [
+    {
+      "S": 1,
+      "link": 0,
+      "anti_Hermitian_norm": 0.21476731594914533,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 1,
+      "link": 1,
+      "anti_Hermitian_norm": 0.2147673159491453,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 2,
+      "link": 0,
+      "anti_Hermitian_norm": 0.26303516875125293,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 2,
+      "link": 1,
+      "anti_Hermitian_norm": 0.26303516875125277,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 3,
+      "link": 0,
+      "anti_Hermitian_norm": 0.2806070210850569,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 3,
+      "link": 1,
+      "anti_Hermitian_norm": 0.28060702108505686,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 5,
+      "link": 0,
+      "anti_Hermitian_norm": 0.2933776094891316,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    },
+    {
+      "S": 5,
+      "link": 1,
+      "anti_Hermitian_norm": 0.29337760948913155,
+      "two_J_sinh_log2": 0.30372685096974883,
+      "large_diagonal_cancels": true
+    }
+  ],
+  "state_dependent_counting_and_compensator_controls": [
+    {
+      "t": 0.1,
+      "counting_MGF": 1.1502676170769879,
+      "MGF_bound": 1.4451310362804413,
+      "pre_event_compensator_integral": 0.13655613618608597,
+      "compensator_bound": 0.4182926087806428
+    },
+    {
+      "t": 1.0,
+      "counting_MGF": 3.434097312317345,
+      "MGF_bound": 39.72576620639417,
+      "pre_event_compensator_integral": 2.272435214675734,
+      "compensator_bound": 36.39086123686145
+    },
+    {
+      "t": 3.0,
+      "counting_MGF": 10.796960835288637,
+      "MGF_bound": 62692.681667992896,
+      "pre_event_compensator_integral": 9.210706684109471,
+      "compensator_bound": 58911.79211603896
+    }
+  ],
+  "finite_CQ_time_diagnostics": [
+    {
+      "S": 2,
+      "T": 0.2,
+      "half_trace_distance_to_large_cyclic": 0.023785434920635253,
+      "final_permanent_mark_total_variation": 2.743256725945553e-09,
+      "embedded_integer_Gauss_violation_probability": 0.008607080242571029,
+      "bound_B_raw": 0.631072769168407,
+      "selected_lambda": 0.6586916666062236,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 2.7807157846080683e-22,
+      "large_reference_selected_lambda": 2.2985782287920804,
+      "vacuum_probability": 0.8693582353988057,
+      "predicted_vacuum_probability": 0.8693582353988059
+    },
+    {
+      "S": 3,
+      "T": 0.2,
+      "half_trace_distance_to_large_cyclic": 0.0006274566457604372,
+      "final_permanent_mark_total_variation": 1.9625967517811205e-13,
+      "embedded_integer_Gauss_violation_probability": 5.657081334784585e-06,
+      "bound_B_raw": 0.2525748911845552,
+      "selected_lambda": 1.097187648460871,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 2.7807157846080683e-22,
+      "large_reference_selected_lambda": 2.2985782287920804,
+      "vacuum_probability": 0.8693582353988055,
+      "predicted_vacuum_probability": 0.8693582353988059
+    },
+    {
+      "S": 5,
+      "T": 0.2,
+      "half_trace_distance_to_large_cyclic": 6.839690627144198e-08,
+      "final_permanent_mark_total_variation": 1.734723475976807e-16,
+      "embedded_integer_Gauss_violation_probability": 7.002345577909255e-14,
+      "bound_B_raw": 0.019211406492481962,
+      "selected_lambda": 1.4307170172817714,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 2.7807157846080683e-22,
+      "large_reference_selected_lambda": 2.2985782287920804,
+      "vacuum_probability": 0.8693582353988055,
+      "predicted_vacuum_probability": 0.8693582353988059
+    },
+    {
+      "S": 8,
+      "T": 0.2,
+      "half_trace_distance_to_large_cyclic": 9.722424872140434e-15,
+      "final_permanent_mark_total_variation": 1.734723475976807e-16,
+      "embedded_integer_Gauss_violation_probability": 1.4083152386390662e-27,
+      "bound_B_raw": 0.00017582855975955622,
+      "selected_lambda": 1.6750272682052558,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 2.7807157846080683e-22,
+      "large_reference_selected_lambda": 2.2985782287920804,
+      "vacuum_probability": 0.8693582353988055,
+      "predicted_vacuum_probability": 0.8693582353988059
+    },
+    {
+      "S": 12,
+      "T": 0.2,
+      "half_trace_distance_to_large_cyclic": 1.6538713662586723e-16,
+      "final_permanent_mark_total_variation": 1.734723475976807e-16,
+      "embedded_integer_Gauss_violation_probability": 0.0,
+      "bound_B_raw": 1.4096150625664262e-07,
+      "selected_lambda": 1.8756659997781884,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 2.7807157846080683e-22,
+      "large_reference_selected_lambda": 2.2985782287920804,
+      "vacuum_probability": 0.8693582353988055,
+      "predicted_vacuum_probability": 0.8693582353988059
+    },
+    {
+      "S": 2,
+      "T": 0.7,
+      "half_trace_distance_to_large_cyclic": 0.08621005833642958,
+      "final_permanent_mark_total_variation": 9.665974962935753e-07,
+      "embedded_integer_Gauss_violation_probability": 0.029214457538817573,
+      "bound_B_raw": 2.6515703963376724,
+      "selected_lambda": 0.1462048540985602,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.0431879704386935e-14,
+      "large_reference_selected_lambda": 1.669108218243729,
+      "vacuum_probability": 0.612626394184416,
+      "predicted_vacuum_probability": 0.6126263941844161
+    },
+    {
+      "S": 3,
+      "T": 0.7,
+      "half_trace_distance_to_large_cyclic": 0.007059589805883742,
+      "final_permanent_mark_total_variation": 7.046138950084213e-10,
+      "embedded_integer_Gauss_violation_probability": 0.0002155578766699779,
+      "bound_B_raw": 1.8109322505646306,
+      "selected_lambda": 0.5458294056454301,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.0431879704386935e-14,
+      "large_reference_selected_lambda": 1.669108218243729,
+      "vacuum_probability": 0.612626394184416,
+      "predicted_vacuum_probability": 0.6126263941844161
+    },
+    {
+      "S": 5,
+      "T": 0.7,
+      "half_trace_distance_to_large_cyclic": 8.050169584817884e-06,
+      "final_permanent_mark_total_variation": 2.0816681711721685e-16,
+      "embedded_integer_Gauss_violation_probability": 3.3676310188394447e-10,
+      "bound_B_raw": 0.43171871975448695,
+      "selected_lambda": 0.8443709271623224,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.0431879704386935e-14,
+      "large_reference_selected_lambda": 1.669108218243729,
+      "vacuum_probability": 0.6126263941844158,
+      "predicted_vacuum_probability": 0.6126263941844161
+    },
+    {
+      "S": 8,
+      "T": 0.7,
+      "half_trace_distance_to_large_cyclic": 3.1460558337653684e-11,
+      "final_permanent_mark_total_variation": 2.42861286636753e-16,
+      "embedded_integer_Gauss_violation_probability": 6.427370277716397e-21,
+      "bound_B_raw": 0.02390517077354976,
+      "selected_lambda": 1.064496242051841,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.0431879704386935e-14,
+      "large_reference_selected_lambda": 1.669108218243729,
+      "vacuum_probability": 0.6126263941844159,
+      "predicted_vacuum_probability": 0.6126263941844161
+    },
+    {
+      "S": 12,
+      "T": 0.7,
+      "half_trace_distance_to_large_cyclic": 3.6472788124016586e-16,
+      "final_permanent_mark_total_variation": 2.983724378680108e-16,
+      "embedded_integer_Gauss_violation_probability": 1.210656676039762e-37,
+      "bound_B_raw": 0.00022729931842228394,
+      "selected_lambda": 1.2519171312879178,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.0431879704386935e-14,
+      "large_reference_selected_lambda": 1.669108218243729,
+      "vacuum_probability": 0.612626394184416,
+      "predicted_vacuum_probability": 0.6126263941844161
+    },
+    {
+      "S": 2,
+      "T": 1.4,
+      "half_trace_distance_to_large_cyclic": 0.17095709484485666,
+      "final_permanent_mark_total_variation": 1.6399780228312788e-05,
+      "embedded_integer_Gauss_violation_probability": 0.05669652541629032,
+      "bound_B_raw": 5.376015138478968,
+      "selected_lambda": 1.0000000807028554e-05,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.3032923555876716e-10,
+      "large_reference_selected_lambda": 1.3200385140704447,
+      "vacuum_probability": 0.3753110988513994,
+      "predicted_vacuum_probability": 0.37531109885139957
+    },
+    {
+      "S": 3,
+      "T": 1.4,
+      "half_trace_distance_to_large_cyclic": 0.023812931623590605,
+      "final_permanent_mark_total_variation": 2.90025926746873e-08,
+      "embedded_integer_Gauss_violation_probability": 0.001428631173990363,
+      "bound_B_raw": 4.86764490995371,
+      "selected_lambda": 0.24661972850633535,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.3032923555876716e-10,
+      "large_reference_selected_lambda": 1.3200385140704447,
+      "vacuum_probability": 0.37531109885139946,
+      "predicted_vacuum_probability": 0.37531109885139957
+    },
+    {
+      "S": 5,
+      "T": 1.4,
+      "half_trace_distance_to_large_cyclic": 7.219998773066065e-05,
+      "final_permanent_mark_total_variation": 3.212707877509047e-14,
+      "embedded_integer_Gauss_violation_probability": 2.1110348964129717e-08,
+      "bound_B_raw": 2.127853514093287,
+      "selected_lambda": 0.5354813336446161,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.3032923555876716e-10,
+      "large_reference_selected_lambda": 1.3200385140704447,
+      "vacuum_probability": 0.3753110988513995,
+      "predicted_vacuum_probability": 0.37531109885139957
+    },
+    {
+      "S": 8,
+      "T": 1.4,
+      "half_trace_distance_to_large_cyclic": 5.669411479166438e-10,
+      "final_permanent_mark_total_variation": 5.134781488891349e-16,
+      "embedded_integer_Gauss_violation_probability": 2.871544758164077e-18,
+      "bound_B_raw": 0.3055307842203193,
+      "selected_lambda": 0.7389533430250746,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.3032923555876716e-10,
+      "large_reference_selected_lambda": 1.3200385140704447,
+      "vacuum_probability": 0.37531109885139957,
+      "predicted_vacuum_probability": 0.37531109885139957
+    },
+    {
+      "S": 12,
+      "T": 1.4,
+      "half_trace_distance_to_large_cyclic": 7.64247406885109e-16,
+      "final_permanent_mark_total_variation": 6.245004513516506e-16,
+      "embedded_integer_Gauss_violation_probability": 6.294653176204311e-35,
+      "bound_B_raw": 0.011020518215267524,
+      "selected_lambda": 0.9123473969737391,
+      "large_reference_S": 28,
+      "large_reference_B_raw": 1.3032923555876716e-10,
+      "large_reference_selected_lambda": 1.3200385140704447,
+      "vacuum_probability": 0.37531109885139957,
+      "predicted_vacuum_probability": 0.37531109885139957
+    }
+  ],
+  "failed_attempts": [],
+  "limits": "Exact event identities use integer arithmetic. Spectral and time diagnostics use floating point, without interval-rounding certification. Reference cutoff error uses the displayed analytic candidate theorem; it is not an independent proof of that theorem. No infinite-volume or long-time limit."
+}

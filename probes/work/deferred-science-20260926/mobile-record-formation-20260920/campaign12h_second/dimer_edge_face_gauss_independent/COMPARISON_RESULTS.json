@@ -1,0 +1,208 @@
+{
+  "created_utc": "2026-09-21T22:32:19.514429+00:00",
+  "source_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_GAUSS_QUANTUM_LIMIT.md",
+      "bytes": 11787,
+      "sha256": "a6759908ef27e5f2990c7f20d4615aa4166d9a33bec66ea4b4e8143c22f01824"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_ENERGY_AND_GAUSS_MOMENT_ADDENDUM.md",
+      "bytes": 5016,
+      "sha256": "602b4a066aabbbe67ab455558287b332bb0a3daa9a9334200668cf1f3c7a0fb5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_edge_face_gauss_check.py",
+      "bytes": 9182,
+      "sha256": "56c3bc0963a49ac64f27b1ebf8e28f526edc9c2307c6aedce409ec872592066e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_edge_face_gauss_checks/RESULTS.json",
+      "bytes": 28962,
+      "sha256": "a048be7f60b498d420ef28344af0b7e5674f6113e6bc004fba1f204f242662e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_GAUSS_RUN.log",
+      "bytes": 262,
+      "sha256": "5b6011c8e2f4bd67eeb6dfed5d7385cdd70ab944ec866d0ebe7b219b81e9c2dc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_GAUSS_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_EDGE_FACE_GAUSS_RUN_RECEIPT.json",
+      "bytes": 269,
+      "sha256": "2144a17d31f2b2d88b05af448aa864e41a697fef2f194633ddc5fd897d711886"
+    }
+  ],
+  "preseal_authenticated": true,
+  "complete_author_code_and_results_read": true,
+  "author_code_executed": false,
+  "incidence_comparisons": [
+    {
+      "L": 3,
+      "independent_wrong_adjoint_defect": 44.090815370097204,
+      "declared_entry_mutation_detected": true
+    },
+    {
+      "L": 4,
+      "independent_wrong_adjoint_defect": 67.88225099390856,
+      "declared_entry_mutation_detected": true
+    }
+  ],
+  "Gauss_commutator_normalization": "Author G=-(P0+P1)/sqrt(2) has squared Frobenius norm 2; independent unnormalized G=P0+P1 has 4. These agree.",
+  "common_presealed_energy_Gauss_comparisons": [
+    {
+      "K": 4,
+      "time": 0.0,
+      "energy_difference": 0.0,
+      "Gauss_difference": 1.1102230246251565e-16
+    },
+    {
+      "K": 4,
+      "time": 0.5,
+      "energy_difference": 0.0,
+      "Gauss_difference": 1.6653345369377348e-16
+    },
+    {
+      "K": 8,
+      "time": 0.0,
+      "energy_difference": 1.1102230246251565e-16,
+      "Gauss_difference": 1.942890293094024e-16
+    },
+    {
+      "K": 8,
+      "time": 0.5,
+      "energy_difference": 0.0,
+      "Gauss_difference": 1.6653345369377348e-16
+    },
+    {
+      "K": 16,
+      "time": 0.0,
+      "energy_difference": 2.220446049250313e-16,
+      "Gauss_difference": 0.0
+    },
+    {
+      "K": 16,
+      "time": 0.5,
+      "energy_difference": 3.3306690738754696e-16,
+      "Gauss_difference": 2.7755575615628914e-17
+    },
+    {
+      "K": 32,
+      "time": 0.0,
+      "energy_difference": 1.1102230246251565e-16,
+      "Gauss_difference": 0.0
+    },
+    {
+      "K": 32,
+      "time": 0.5,
+      "energy_difference": 5.551115123125783e-16,
+      "Gauss_difference": 1.1102230246251565e-16
+    },
+    {
+      "K": 64,
+      "time": 0.0,
+      "energy_difference": 3.3306690738754696e-16,
+      "Gauss_difference": 1.3877787807814457e-17
+    },
+    {
+      "K": 64,
+      "time": 0.5,
+      "energy_difference": 1.5543122344752192e-15,
+      "Gauss_difference": 1.1102230246251565e-16
+    }
+  ],
+  "all_36_Weyl_targets_and_errors_checked": 36,
+  "dense_K4_Weyl_comparisons": [
+    {
+      "K": 4,
+      "time": 0.0,
+      "e": [
+        0.4,
+        -0.2
+      ],
+      "b": 0.3,
+      "independent_real": 0.9072697460180615,
+      "independent_imag": 8.72057196379076e-18,
+      "difference": 5.552128966624532e-16
+    },
+    {
+      "K": 4,
+      "time": 0.0,
+      "e": [
+        0.5,
+        0.5
+      ],
+      "b": 0.0,
+      "independent_real": 0.9251872971249799,
+      "independent_imag": 2.2247467351569045e-16,
+      "difference": 4.966993121206894e-16
+    },
+    {
+      "K": 4,
+      "time": 0.5,
+      "e": [
+        0.4,
+        -0.2
+      ],
+      "b": 0.3,
+      "independent_real": 0.8988929494022949,
+      "independent_imag": -5.551115123125783e-17,
+      "difference": 1.0007415106216803e-15
+    },
+    {
+      "K": 4,
+      "time": 0.5,
+      "e": [
+        0.5,
+        0.5
+      ],
+      "b": 0.0,
+      "independent_real": 0.9225656426909511,
+      "independent_imag": 3.3306690738754696e-16,
+      "difference": 5.23691153334427e-16
+    },
+    {
+      "K": 4,
+      "time": 1.25,
+      "e": [
+        0.4,
+        -0.2
+      ],
+      "b": 0.3,
+      "independent_real": 0.8999149878854019,
+      "independent_imag": -5.551115123125783e-17,
+      "difference": 2.482534153247273e-16
+    },
+    {
+      "K": 4,
+      "time": 1.25,
+      "e": [
+        0.5,
+        0.5
+      ],
+      "b": 0.0,
+      "independent_real": 0.9103228874790001,
+      "independent_imag": 1.6653345369377348e-16,
+      "difference": 2.0014830212433605e-16
+    }
+  ],
+  "tiny_tail_precision_limits": [
+    {
+      "K": 32,
+      "author_float_missing_probability": 0.0,
+      "independent_90_digit_missing_probability": "0.0000000000000000102316188347274241758729987281181575093010359605138635653748",
+      "limitation": "Float zero is unresolved subtraction near one, not an exact zero probability."
+    },
+    {
+      "K": 64,
+      "author_float_missing_probability": 0.0,
+      "independent_90_digit_missing_probability": "4.14513482714925707157588389088118451860069686896827667874858e-27",
+      "limitation": "Float zero is unresolved subtraction near one, not an exact zero probability."
+    }
+  ],
+  "scope": "Author K128 dynamics authenticated only. Common presealed state values are reused; only six K4 Weyl entries were independently recomputed after comparison. No source or proof repair needed."
+}

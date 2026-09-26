@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-21T23:13:27.042071+00:00",
+  "event": "Post-comparison helper deliberately terminated with SIGTERM after approximately 175 seconds without completion; no assertion failure occurred.",
+  "observation": "Own process PID81987 was observed at elapsed02:47 and96.7percentCPU. Generic exact Matrix.rank was the identified costly operation; no per-line profiler was captured.",
+  "change": {
+    "removed": "assert s.Matrix(L).rank()==dim-1",
+    "inserted": "assert s.Matrix(L).to_DM().rank()==dim-1"
+  },
+  "scope": "Same exact connectivity rank assertion and all other mathematical tests preserved. DomainMatrix exact arithmetic avoids generic symbolic rank overhead. Author sources and all pre-comparison files unchanged.",
+  "before_sha256": "e8d3eeb3c4b36a32a2536365a332d79d34b94f73083fb46d85c533b7dcb3b992",
+  "after_sha256": "4140b44be560ac527a3b4921d0cfeebfa29d15532d8e1cc5f8113b4560b11b68"
+}

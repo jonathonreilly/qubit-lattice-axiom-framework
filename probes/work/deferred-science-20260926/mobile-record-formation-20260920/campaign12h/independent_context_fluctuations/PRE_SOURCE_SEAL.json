@@ -1,0 +1,115 @@
+{
+  "artifacts": [
+    {
+      "bytes": 222,
+      "path": "ATTEMPT_1.json",
+      "sha256": "45cda8267586bf9d736350e755c920c3595c79d81b9c3849054b845ecbcd0c22"
+    },
+    {
+      "bytes": 278,
+      "path": "ATTEMPT_1_SYNTAX.log",
+      "sha256": "91c5154d5b8ff2a32003b8f4dc88bab611c5d887da1085feeda90040407ac500"
+    },
+    {
+      "bytes": 455,
+      "path": "ATTEMPT_2.json",
+      "sha256": "561a43269d836eb1a52105a0d8fe0e7a8d5651dfbf2df70848d6ed6db447f1c3"
+    },
+    {
+      "bytes": 68,
+      "path": "ATTEMPT_2_PROGRESS.log",
+      "sha256": "962c9ff43266b186938fa815eb44e14728a8df23b902da67fe516af6dde91b0e"
+    },
+    {
+      "bytes": 642,
+      "path": "ATTEMPT_2_REVERSIBLE_SECTOR.log",
+      "sha256": "5978e466ad720706222c9d176a22d30d110da9d93de2ddd99ced3f7e05a78be9"
+    },
+    {
+      "bytes": 338,
+      "path": "ATTEMPT_3.json",
+      "sha256": "671ea5a74c9b8d2630adf33b7444cd8753acaa6489935f2ddd5901aa9c9dec4b"
+    },
+    {
+      "bytes": 117,
+      "path": "ATTEMPT_3_PROGRESS.log",
+      "sha256": "4fd88bc46f17fd588a48d8ffa8fa75843c6ff91bafce52e70c813bbb4be9e89e"
+    },
+    {
+      "bytes": 736,
+      "path": "ATTEMPT_3_SYMBOLIC_EQUALITY.log",
+      "sha256": "bba412cbfd80037a100a6f9e23eb4b014aa2370617c2f444036d8159f01e7a31"
+    },
+    {
+      "bytes": 1709,
+      "path": "CHECKPOINT.md",
+      "sha256": "afc07c1d9d2c79d46d40119f3b2ceac23d7024b19f7c32b739e69a519c269dd4"
+    },
+    {
+      "bytes": 2304,
+      "path": "FINAL_VERIFICATION.json",
+      "sha256": "dbd0cc1122787a7b3b7aaaa6dcba51a1c34ebc79f4af58bc5ef0742584340fc2"
+    },
+    {
+      "bytes": 1660,
+      "path": "INPUT.md",
+      "sha256": "102c7c94317f85e136cad903c6bcad625338298e778f11c016381f4c1c870ba4"
+    },
+    {
+      "bytes": 4354,
+      "path": "PROGRESS.log",
+      "sha256": "0be9c1d6cb9e9bd897235be5efa04b4509b5ed9e86004a98c712dc33dec3d2a6"
+    },
+    {
+      "bytes": 22838,
+      "path": "REPORT.md",
+      "sha256": "772046745ac814c32adcd8f36e3c8415ddf4a3a4b37435e8992441c6c8d5be68"
+    },
+    {
+      "bytes": 17655,
+      "path": "RESULTS.json",
+      "sha256": "d5c365fb8a03000c1ad92368edd9611c37b9585aa2a221b143fbf7f4d5e9608a"
+    },
+    {
+      "bytes": 17655,
+      "path": "RUN.log",
+      "sha256": "d5c365fb8a03000c1ad92368edd9611c37b9585aa2a221b143fbf7f4d5e9608a"
+    },
+    {
+      "bytes": 13581,
+      "path": "independent_check.py",
+      "sha256": "38ce7ba4dc4e63401709ea9c1558180dd1446f95285dce68b5e12048f887e434"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/REPORT.md",
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange/PRE_SOURCE_SEAL.json",
+      "sha256": "7e924cc17d429c64ceb8e1b626f874dc6386ac2618ec7399af2879dce8f4d5f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/REPORT.md",
+      "sha256": "60aaef142f97aea228be967a711880c5272328e5173d6c8df8c033176605a1e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/PRE_SOURCE_SEAL.json",
+      "sha256": "48dda0ccb30539906dd6274bbf8736258727077c0018bb89c604f491164a1fa9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/REPORT.md",
+      "sha256": "b9cedcafccb48dfcd2503e5f00569a547288d4dcef0fb7dfca832565aec8f7cf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_axis_balanced_context/PRE_SOURCE_SEAL.json",
+      "sha256": "8519e354a43ed16b9c176aa3e7e4672e6b3e6e1101e83af040555323aa3390a2"
+    }
+  ],
+  "forbidden_actions_taken": [],
+  "kind": "pre-primary-source independent mathematical check",
+  "result": "Fixed-mode stationary Euler fluctuations converge in L2 to full six-field linear current transport, for both uniformly positive conservative context generators.",
+  "source_access_statement": "Used only the supplied specification and unchanged own sealed dependencies. No primary fluctuation argument, simulation or outcome was read before sealing.",
+  "utc": "2026-09-21T04:58:27.546890+00:00"
+}

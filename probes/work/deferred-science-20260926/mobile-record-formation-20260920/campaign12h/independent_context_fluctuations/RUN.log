@@ -1,0 +1,624 @@
+{
+  "canonical_projection_controls": [
+    {
+      "model": "context_tuned_rho_half",
+      "values": [
+        {
+          "M": 8,
+          "M_squared_variance": "89/756",
+          "variance": "89/48384"
+        },
+        {
+          "M": 16,
+          "M_squared_variance": "115/1134",
+          "variance": "115/290304"
+        },
+        {
+          "M": 32,
+          "M_squared_variance": "397/4185",
+          "variance": "397/4285440"
+        },
+        {
+          "M": 64,
+          "M_squared_variance": "4846/52731",
+          "variance": "2423/107993088"
+        }
+      ]
+    },
+    {
+      "model": "axis_balanced",
+      "values": [
+        {
+          "M": 8,
+          "M_squared_variance": "134/567",
+          "variance": "67/18144"
+        },
+        {
+          "M": 16,
+          "M_squared_variance": "22/105",
+          "variance": "11/13440"
+        },
+        {
+          "M": 32,
+          "M_squared_variance": "2492/12555",
+          "variance": "623/3214080"
+        },
+        {
+          "M": 64,
+          "M_squared_variance": "3400/17577",
+          "variance": "425/8999424"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "maximum_rate": "9/2",
+      "minimum_rate": "7/2",
+      "name": "context_tuned_rho_half/linear/canonical_stationarity_and_floor",
+      "state_count": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/linear/nonreversible",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/linear/exact_fourier_conservation_sign",
+      "status": "PASS"
+    },
+    {
+      "H_minus_one_norm_squared": "193/192",
+      "name": "context_tuned_rho_half/linear/symmetric_poisson_identity",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.10052083333333334,
+      "integrated_variance": 0.08455791320392943,
+      "name": "context_tuned_rho_half/linear/forward_backward_bound_t_0.2",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.5026041666666666,
+      "integrated_variance": 0.4845365035418534,
+      "name": "context_tuned_rho_half/linear/forward_backward_bound_t_1.0",
+      "status": "PASS"
+    },
+    {
+      "bound": 1.0052083333333333,
+      "integrated_variance": 0.9845365035418533,
+      "name": "context_tuned_rho_half/linear/forward_backward_bound_t_2.0",
+      "status": "PASS"
+    },
+    {
+      "maximum_rate": "2",
+      "minimum_rate": "1",
+      "name": "context_tuned_rho_half/positive_part/canonical_stationarity_and_floor",
+      "state_count": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/positive_part/nonreversible",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/positive_part/exact_fourier_conservation_sign",
+      "status": "PASS"
+    },
+    {
+      "H_minus_one_norm_squared": "767/2484",
+      "name": "context_tuned_rho_half/positive_part/symmetric_poisson_identity",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.030877616747181966,
+      "integrated_variance": 0.016805284886485142,
+      "name": "context_tuned_rho_half/positive_part/forward_backward_bound_t_0.2",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.15438808373590981,
+      "integrated_variance": 0.13189208188090865,
+      "name": "context_tuned_rho_half/positive_part/forward_backward_bound_t_1.0",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.30877616747181963,
+      "integrated_variance": 0.27772691075481876,
+      "name": "context_tuned_rho_half/positive_part/forward_backward_bound_t_2.0",
+      "status": "PASS"
+    },
+    {
+      "maximum_rate": "4",
+      "minimum_rate": "2",
+      "name": "axis_balanced/linear/canonical_stationarity_and_floor",
+      "state_count": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/nonreversible",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/linear/exact_fourier_conservation_sign",
+      "status": "PASS"
+    },
+    {
+      "H_minus_one_norm_squared": "19/24",
+      "name": "axis_balanced/linear/symmetric_poisson_identity",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.07916666666666666,
+      "integrated_variance": 0.061016711499644105,
+      "name": "axis_balanced/linear/forward_backward_bound_t_0.2",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.3958333333333333,
+      "integrated_variance": 0.36101973684268734,
+      "name": "axis_balanced/linear/forward_backward_bound_t_1.0",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.7916666666666666,
+      "integrated_variance": 0.7360197368421056,
+      "name": "axis_balanced/linear/forward_backward_bound_t_2.0",
+      "status": "PASS"
+    },
+    {
+      "maximum_rate": "3",
+      "minimum_rate": "1",
+      "name": "axis_balanced/positive_part/canonical_stationarity_and_floor",
+      "state_count": 24,
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/nonreversible",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/positive_part/exact_fourier_conservation_sign",
+      "status": "PASS"
+    },
+    {
+      "H_minus_one_norm_squared": "131/264",
+      "name": "axis_balanced/positive_part/symmetric_poisson_identity",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.04962121212121212,
+      "integrated_variance": 0.030576608274816147,
+      "name": "axis_balanced/positive_part/forward_backward_bound_t_0.2",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.2481060606060606,
+      "integrated_variance": 0.19774015254508467,
+      "name": "axis_balanced/positive_part/forward_backward_bound_t_1.0",
+      "status": "PASS"
+    },
+    {
+      "bound": 0.4962121212121212,
+      "integrated_variance": 0.40607344632776615,
+      "name": "axis_balanced/positive_part/forward_backward_bound_t_2.0",
+      "status": "PASS"
+    },
+    {
+      "expectation": "1/21",
+      "name": "context_tuned_rho_half/linear/canonical_current_M_8",
+      "status": "PASS"
+    },
+    {
+      "expectation": "4/39",
+      "name": "context_tuned_rho_half/linear/canonical_current_M_14",
+      "status": "PASS"
+    },
+    {
+      "expectation": "1/21",
+      "name": "context_tuned_rho_half/positive_part/canonical_current_M_8",
+      "status": "PASS"
+    },
+    {
+      "expectation": "4/39",
+      "name": "context_tuned_rho_half/positive_part/canonical_current_M_14",
+      "status": "PASS"
+    },
+    {
+      "expectation": "4/21",
+      "name": "axis_balanced/linear/canonical_current_M_8",
+      "status": "PASS"
+    },
+    {
+      "expectation": "7/39",
+      "name": "axis_balanced/linear/canonical_current_M_14",
+      "status": "PASS"
+    },
+    {
+      "expectation": "4/21",
+      "name": "axis_balanced/positive_part/canonical_current_M_8",
+      "status": "PASS"
+    },
+    {
+      "expectation": "7/39",
+      "name": "axis_balanced/positive_part/canonical_current_M_14",
+      "status": "PASS"
+    },
+    {
+      "gradient": [
+        "1/4",
+        "1/12",
+        "1/6"
+      ],
+      "name": "context_tuned_rho_half/grouped_current_gradient",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/projection_centering_M_8",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "89/756",
+      "linear_variance": "7/6912",
+      "name": "context_tuned_rho_half/projection_variance_split_M_8",
+      "quadratic_residual_variance": "89/48384",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/projection_centering_M_16",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "115/1134",
+      "linear_variance": "7/13824",
+      "name": "context_tuned_rho_half/projection_variance_split_M_16",
+      "quadratic_residual_variance": "115/290304",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/projection_centering_M_32",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "397/4185",
+      "linear_variance": "7/27648",
+      "name": "context_tuned_rho_half/projection_variance_split_M_32",
+      "quadratic_residual_variance": "397/4285440",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/projection_centering_M_64",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "4846/52731",
+      "linear_variance": "7/55296",
+      "name": "context_tuned_rho_half/projection_variance_split_M_64",
+      "quadratic_residual_variance": "2423/107993088",
+      "status": "PASS"
+    },
+    {
+      "gradient": [
+        "1/4",
+        "1/12",
+        "1/6"
+      ],
+      "name": "axis_balanced/grouped_current_gradient",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/projection_centering_M_8",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "134/567",
+      "linear_variance": "7/6912",
+      "name": "axis_balanced/projection_variance_split_M_8",
+      "quadratic_residual_variance": "67/18144",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/projection_centering_M_16",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "22/105",
+      "linear_variance": "7/13824",
+      "name": "axis_balanced/projection_variance_split_M_16",
+      "quadratic_residual_variance": "11/13440",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/projection_centering_M_32",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "2492/12555",
+      "linear_variance": "7/27648",
+      "name": "axis_balanced/projection_variance_split_M_32",
+      "quadratic_residual_variance": "623/3214080",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/projection_centering_M_64",
+      "status": "PASS"
+    },
+    {
+      "M_squared_times_variance": "3400/17577",
+      "linear_variance": "7/55296",
+      "name": "axis_balanced/projection_variance_split_M_64",
+      "quadratic_residual_variance": "425/8999424",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/balanced_rho_half/susceptibility_inverse",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/balanced_rho_half/entropy_symmetrization",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/biased_full_support/susceptibility_inverse",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/biased_full_support/entropy_symmetrization",
+      "status": "PASS"
+    },
+    {
+      "name": "context_tuned_rho_half/six_field_acoustic_rank_and_minimal_polynomial",
+      "status": "PASS"
+    },
+    {
+      "density_covariance": "sqrt(2)/8",
+      "name": "context_tuned_rho_half/transported_covariance_t_1/8",
+      "status": "PASS"
+    },
+    {
+      "density_covariance": "0",
+      "name": "context_tuned_rho_half/transported_covariance_t_1/4",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/balanced_rho_half/susceptibility_inverse",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/balanced_rho_half/entropy_symmetrization",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/biased_full_support/susceptibility_inverse",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/biased_full_support/entropy_symmetrization",
+      "status": "PASS"
+    },
+    {
+      "name": "axis_balanced/six_field_acoustic_rank_and_minimal_polynomial",
+      "status": "PASS"
+    },
+    {
+      "density_covariance": "sqrt(2)/8",
+      "name": "axis_balanced/transported_covariance_t_1/8",
+      "status": "PASS"
+    },
+    {
+      "density_covariance": "0",
+      "name": "axis_balanced/transported_covariance_t_1/4",
+      "status": "PASS"
+    },
+    {
+      "name": "two_generators_same_tuned_jacobians",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.0008854299147566936,
+      "diffusive_covariance_multiplier": 3.777752713772407e-25,
+      "error_covariance_multiplier": 1.9982291401704866,
+      "name": "constant_rate_exact_three_dimensional_control_N_8",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.02589300459907028,
+      "diffusive_covariance_multiplier": 4.0824340299903976e-26,
+      "error_covariance_multiplier": 1.9482139908018594,
+      "name": "constant_rate_exact_three_dimensional_control_N_16",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.15808647567317496,
+      "diffusive_covariance_multiplier": 2.3154262979521812e-26,
+      "error_covariance_multiplier": 1.68382704865365,
+      "name": "constant_rate_exact_three_dimensional_control_N_32",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.39671684920794875,
+      "diffusive_covariance_multiplier": 2.0079890844845715e-26,
+      "error_covariance_multiplier": 1.2065663015841026,
+      "name": "constant_rate_exact_three_dimensional_control_N_64",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.6296791864124985,
+      "diffusive_covariance_multiplier": 1.9376498369966703e-26,
+      "error_covariance_multiplier": 0.7406416271750029,
+      "name": "constant_rate_exact_three_dimensional_control_N_128",
+      "status": "PASS"
+    },
+    {
+      "Euler_covariance_multiplier": 0.793495633937388,
+      "diffusive_covariance_multiplier": 1.9204482861762142e-26,
+      "error_covariance_multiplier": 0.41300873212522404,
+      "name": "constant_rate_exact_three_dimensional_control_N_256",
+      "status": "PASS"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 75,
+  "constant_rate_three_dimensional_control": [
+    {
+      "Euler_covariance_multiplier": 0.0008854299147566936,
+      "N": 8,
+      "diffusive_covariance_multiplier": 3.777752713772407e-25,
+      "error_covariance_multiplier": 1.9982291401704866,
+      "upper_bound": 14.804406601634037
+    },
+    {
+      "Euler_covariance_multiplier": 0.02589300459907028,
+      "N": 16,
+      "diffusive_covariance_multiplier": 4.0824340299903976e-26,
+      "error_covariance_multiplier": 1.9482139908018594,
+      "upper_bound": 7.4022033008170185
+    },
+    {
+      "Euler_covariance_multiplier": 0.15808647567317496,
+      "N": 32,
+      "diffusive_covariance_multiplier": 2.3154262979521812e-26,
+      "error_covariance_multiplier": 1.68382704865365,
+      "upper_bound": 3.7011016504085092
+    },
+    {
+      "Euler_covariance_multiplier": 0.39671684920794875,
+      "N": 64,
+      "diffusive_covariance_multiplier": 2.0079890844845715e-26,
+      "error_covariance_multiplier": 1.2065663015841026,
+      "upper_bound": 1.8505508252042546
+    },
+    {
+      "Euler_covariance_multiplier": 0.6296791864124985,
+      "N": 128,
+      "diffusive_covariance_multiplier": 1.9376498369966703e-26,
+      "error_covariance_multiplier": 0.7406416271750029,
+      "upper_bound": 0.9252754126021273
+    },
+    {
+      "Euler_covariance_multiplier": 0.793495633937388,
+      "N": 256,
+      "diffusive_covariance_multiplier": 1.9204482861762142e-26,
+      "error_covariance_multiplier": 0.41300873212522404,
+      "upper_bound": 0.46263770630106366
+    }
+  ],
+  "dependencies": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "finite_generator_controls": [
+    {
+      "implementation": "linear",
+      "model": "context_tuned_rho_half",
+      "norm_squared": "193/192",
+      "times": [
+        {
+          "bound": 0.10052083333333334,
+          "time": 0.2,
+          "variance": 0.08455791320392943
+        },
+        {
+          "bound": 0.5026041666666666,
+          "time": 1.0,
+          "variance": 0.4845365035418534
+        },
+        {
+          "bound": 1.0052083333333333,
+          "time": 2.0,
+          "variance": 0.9845365035418533
+        }
+      ]
+    },
+    {
+      "implementation": "positive_part",
+      "model": "context_tuned_rho_half",
+      "norm_squared": "767/2484",
+      "times": [
+        {
+          "bound": 0.030877616747181966,
+          "time": 0.2,
+          "variance": 0.016805284886485142
+        },
+        {
+          "bound": 0.15438808373590981,
+          "time": 1.0,
+          "variance": 0.13189208188090865
+        },
+        {
+          "bound": 0.30877616747181963,
+          "time": 2.0,
+          "variance": 0.27772691075481876
+        }
+      ]
+    },
+    {
+      "implementation": "linear",
+      "model": "axis_balanced",
+      "norm_squared": "19/24",
+      "times": [
+        {
+          "bound": 0.07916666666666666,
+          "time": 0.2,
+          "variance": 0.061016711499644105
+        },
+        {
+          "bound": 0.3958333333333333,
+          "time": 1.0,
+          "variance": 0.36101973684268734
+        },
+        {
+          "bound": 0.7916666666666666,
+          "time": 2.0,
+          "variance": 0.7360197368421056
+        }
+      ]
+    },
+    {
+      "implementation": "positive_part",
+      "model": "axis_balanced",
+      "norm_squared": "131/264",
+      "times": [
+        {
+          "bound": 0.04962121212121212,
+          "time": 0.2,
+          "variance": 0.030576608274816147
+        },
+        {
+          "bound": 0.2481060606060606,
+          "time": 1.0,
+          "variance": 0.19774015254508467
+        },
+        {
+          "bound": 0.4962121212121212,
+          "time": 2.0,
+          "variance": 0.40607344632776615
+        }
+      ]
+    }
+  ],
+  "matrix_controls": [
+    {
+      "density_covariance": "sqrt(2)/8",
+      "model": "context_tuned_rho_half",
+      "time": "1/8"
+    },
+    {
+      "density_covariance": "0",
+      "model": "context_tuned_rho_half",
+      "time": "1/4"
+    },
+    {
+      "density_covariance": "sqrt(2)/8",
+      "model": "axis_balanced",
+      "time": "1/8"
+    },
+    {
+      "density_covariance": "0",
+      "model": "axis_balanced",
+      "time": "1/4"
+    }
+  ],
+  "scope": "Independent finite controls; not a finite-volume proof of the asymptotic theorem."
+}

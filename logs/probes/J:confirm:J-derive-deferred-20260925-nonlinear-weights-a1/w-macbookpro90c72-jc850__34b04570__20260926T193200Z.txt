@@ -1,0 +1,9 @@
+PASS geometry: for every Bloch length the partner's z-menu steers to +-x and its y-menu steers to (l, +-sqrt(1-l^2), 0)
+PASS oddness: antipodal normalization makes the radial average (2w-1) times the odd part
+PASS circle formula: P_L(cos psi) matches the binomial cosine sum for L = 1..13
+PASS modes: cos(k(theta-beta)) averages to cos(k beta) cos(k theta); odd degrees through 7 match, and the k=1 and k=3 binomial coefficients stay positive through degree 13
+PASS triple angle: cos 3 beta - cos beta = -2 sin(2 beta) sin beta, and at l = 3/5 the values are 3/5 and -117/125
+PASS born: a linear odd law with nonzero slope is forced to Born's (1+c)/2
+PASS affine and cubic: the radial chord forces lam(lam-1)=0 on the affine family, a pure triple angle survives in-plane at cos 3 beta, and the cubic has no such weight
+SUMMARY: confirmed partial. Under covariance, antipodal normalization, projective steering, and self-weighted no-signalling at one Bloch length, a measurable pure law is Born or constant. Spherical-harmonic completeness and the Legendre circle formula are imported; the formula was checked through degree 13. The tanh scan was not rebuilt. The steering update itself was not derived.
+HIT: confirmed - at one Bloch length the two partner menus force a measurable self-weighted qubit law to be Born or constant, and the endpoint condition removes the constant

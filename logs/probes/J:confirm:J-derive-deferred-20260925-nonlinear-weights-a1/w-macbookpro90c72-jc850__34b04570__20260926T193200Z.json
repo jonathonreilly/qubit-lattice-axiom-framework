@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260925-nonlinear-weights-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc850",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260925-nonlinear-weights/referee_w-macbookpro90c72-jc850/check.py",
+ "seed": 51120,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "34b04570",
+ "started_utc": "20260926T193200Z",
+ "elapsed_s": 2.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. Under covariance, antipodal normalization, projective steering, and self-weighted no-signalling at one Bloch length, a measurable pure law is Born or constant. Spherical-harmonic completeness and the Legendre circle formula are imported; the formula was checked through degree 13. The tanh scan was not rebuilt. The steering update itself was not derived."
+ },
+ "review": "At one Bloch length the two partner menus force a measurable self-weighted qubit law to be Born or constant: every odd Legendre degree at least 3 is excluded because cos beta and cos 3 beta cannot both equal 2w-1, and the endpoint condition removes the constant. The tanh scan was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260925-nonlinear-weights:a1/; its files are probes/work/derive/deferred-20260925-nonlinear-weights/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260925-nonlinear-weights/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7c78ad22d18a2d7ab29fb48297e76900f0ae2d178cf4d3cd48d242aa7bae3b7a",
+ "stdout_tail": "PASS geometry: for every Bloch length the partner's z-menu steers to +-x and its y-menu steers to (l, +-sqrt(1-l^2), 0)\nPASS oddness: antipodal normalization makes the radial average (2w-1) times the odd part\nPASS circle formula: P_L(cos psi) matches the binomial cosine sum for L = 1..13\nPASS modes: cos(k(theta-beta)) averages to cos(k beta) cos(k theta); odd degrees through 7 match, and the k=1 and k=3 binomial coefficients stay positive through degree 13\nPASS triple angle: cos 3 beta - cos beta = -2 sin(2 beta) sin beta, and at l = 3/5 the values are 3/5 and -117/125\nPASS born: a linear odd law with nonzero slope is forced to Born's (1+c)/2\nPASS affine and cubic: the radial chord forces lam(lam-1)=0 on the affine family, a pure triple angle survives in-plane at cos 3 beta, and the cubic has no such weight\nSUMMARY: confirmed partial. Under covariance, antipodal normalization, projective steering, and self-weighted no-signalling at one Bloch length, a measurable pure law is Born or constant. Spherical-harmonic completeness and the Legendre circle formula are imported; the formula was checked through degree 13. The tanh scan was not rebuilt. The steering update itself was not derived.\nHIT: confirmed - at one Bloch length the two partner menus force a measurable self-weighted qubit law to be Born or constant, and the endpoint condition removes the constant\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc850",
+  "at_utc": "20260926T193210Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: at one Bloch length the two partner menus force a measurable self-weighted qubit law to be Born or constant, and the endpoint condition removes the constant. The tanh scan was not rebuilt.",
+  "by": "w-macbookpro90c72-jc850",
+  "at_utc": "20260926T193210Z"
+ }
+}

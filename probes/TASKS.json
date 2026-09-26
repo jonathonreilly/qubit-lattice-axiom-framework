@@ -50905,6 +50905,1134 @@
   "what": "re-execute the runners of PR #9248 (docs(synthesis): collect the pure-ring photon rebuilt from energies al) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9248 --worker <name> --review \"...\""
  },
  {
+  "id": "J:falsifier:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): attack COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9255",
+  "type": "judgment",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9255 (docs(composite-network): find the flux-free ground sector wi): for every number in the theorem statements of COMPOSITE_SITE_NETWORK_SPIN_MODEL_GROUND_STATE_IS_LOCALLY_FLUX_FREE_ON_THE_CLUSTERS_SEARCHED_WITH_THE_PROJECTION_EXACT_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925; git show origin/claude/hyperhoneycomb-composite-network-ground-state-is-flux-free-20260925:<note>. Create probes/work/pr9255/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9255/<script>.py\""
+ },
+ {
+  "id": "P:9255",
+  "type": "pr-reexecution",
+  "lane": "hyperhoneycomb-composite-network-ground-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9255",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9255 (docs(composite-network): find the flux-free ground sector with exact p) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9255 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): attack RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9258",
+  "type": "judgment",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9258 (docs(ring-model): read the electric coupling from winding-se): for every number in the theorem statements of RING_MODEL_WINDING_SECTOR_ENERGIES_GIVE_AN_ELECTRIC_COUPLING_THAT_AGREES_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_ON_8_CUBED_AND_THE_COMPARATOR_COUPLING_CONSTANT_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925; git show origin/claude/ring-model-electric-coupling-from-winding-sectors-and-the-comparator-coupling-constant-20260925:<note>. Create probes/work/pr9258/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9258/<script>.py\""
+ },
+ {
+  "id": "P:9258",
+  "type": "pr-reexecution",
+  "lane": "ring-model-electric-coupling-from-windin",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9258",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9258 (docs(ring-model): read the electric coupling from winding-sector energ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9258 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): attack RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9263",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9263 (docs(ring-model): scan single-link charge hopping with energ): for every number in the theorem statements of RING_MODEL_WITH_SINGLE_LINK_CHARGE_HOPPING_CHANGES_RAPIDLY_BETWEEN_WEAK_AND_STRONG_HOPPING_AND_ITS_MOMENT_BOUND_STAYS_FINITE_AT_SMALL_MOMENTUM_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925; git show origin/claude/ring-model-single-link-charge-hopping-energy-only-scan-20260925:<note>. Create probes/work/pr9263/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9263/<script>.py\""
+ },
+ {
+  "id": "P:9263",
+  "type": "pr-reexecution",
+  "lane": "ring-model-single-link-charge-hopping-en",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9263",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9263 (docs(ring-model): scan single-link charge hopping with energies alone) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9263 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9264",
+  "type": "judgment",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9264 (docs(composite-network): follow the flux-free sector's excit): for every number in the theorem statements of COMPOSITE_SITE_NETWORK_FLUX_FREE_SECTOR_LOWEST_PAIR_EXCITATION_FALLS_AS_ONE_OVER_L_TO_4000_SITES_AND_THE_ODD_TERM_THINS_THE_LOW_LEVELS_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925; git show origin/claude/composite-network-physical-excitations-in-the-flux-free-ground-sector-20260925:<note>. Create probes/work/pr9264/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9264/<script>.py\""
+ },
+ {
+  "id": "P:9264",
+  "type": "pr-reexecution",
+  "lane": "composite-network-physical-excitations-i",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9264",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9264 (docs(composite-network): follow the flux-free sector's excitations to ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9264 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): attack RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9265",
+  "type": "judgment",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9265 (docs(ring-model): extend the energy-only photon bound to the): for every number in the theorem statements of RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_HOLDS_ON_THE_20_CUBED_TORUS_WITH_THE_TRANSVERSE_SUSCEPTIBILITY_NEAR_ONE_DOWN_TO_K_PI_OVER_10_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925; git show origin/claude/ring-model-energy-only-photon-bound-on-the-20-cubed-torus-20260925:<note>. Create probes/work/pr9265/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9265/<script>.py\""
+ },
+ {
+  "id": "P:9265",
+  "type": "pr-reexecution",
+  "lane": "ring-model-energy-only-photon-bound-on-t",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9265",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9265 (docs(ring-model): extend the energy-only photon bound to the 20^3 toru) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9265 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9266",
+  "type": "judgment",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): for every number in the theorem statements of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
+ },
+ {
+  "id": "P:9266",
+  "type": "pr-reexecution",
+  "lane": "ring-model-single-link-charge-hopping-fi",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9266",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes a guide bi) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9266 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): attack ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9267",
+  "type": "judgment",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9267 (docs(synthesis): recompute one exact identity per block of t): for every number in the theorem statements of ROUND_FIVE_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_THIRD_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/round-five-synthesis-one-exact-identity-per-block-20260925; git show origin/claude/round-five-synthesis-one-exact-identity-per-block-20260925:<note>. Create probes/work/pr9267/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9267/<script>.py\""
+ },
+ {
+  "id": "P:9267",
+  "type": "pr-reexecution",
+  "lane": "round-five-synthesis-one-exact-identity-",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9267",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9267 (docs(synthesis): recompute one exact identity per block of the third c) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9267 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9268",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9268 (docs(ring-model): measure the guide dependence of fixed-guid): for every number in the theorem statements of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_LINK_EXPECTATION_FROM_FIXED_GUIDE_GRIDS_DEPENDS_ON_THE_GUIDE_PENALTY_ON_6_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926; git show origin/claude/ring-model-charge-hopping-guide-dependence-of-fixed-guide-grids-20260926:<note>. Create probes/work/pr9268/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9268/<script>.py\""
+ },
+ {
+  "id": "P:9268",
+  "type": "pr-reexecution",
+  "lane": "ring-model-charge-hopping-guide-dependen",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9268",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9268 (docs(ring-model): measure the guide dependence of fixed-guide hopping ) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9268 --worker <name> --review \"...\""
+ },
+ {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
   "type": "judgment",
   "lane": "adjacency",
@@ -64388,6 +65516,70 @@
   "problem": "the-members-cubic-completion-in-the-scalar-sector",
   "title": "Does the member's quadratic action admit an exact cubic completion on the lattice, restricted to the scalar sector?",
   "what": "DERIVATION, independent attempt 2 of 2: Does the member's quadratic action admit an exact cubic completion on the lattice, restricted to the scalar sector?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-145 are LANDED on main (ef918c1910, 6b414efff9, 25b8c1874f; the review findings are in probes/work/deferred-science-20260925/unit-27.json and unit-29.json). Blocks 146-149 are OPEN hand-off PRs (#9237, #9240, #9241, #9242): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-149 are the supervisor's own derivations (Claude), not refereed by another family; block 112 is a harvest of Grok-refereed attempts. Nothing is adopted. SETTING: the member's quadratic action (blocks 62, 101 and 124 as landed; the shift on bonds, the lapse on sites, h_jj on sites and h_ij on faces; every difference has the symbol p_j = 2 sin(k_j/2)) at alpha = K/4, beta = -alpha, with its linear gauge symmetries: spatial relabellings on bonds and relabellings in time on sites (block 112 T1-T2; block 144 T5). The continuum comparator's cubic terms are known (reference only). TASK: make your own plan first. Restrict to the scalar sector (the lapse, the longitudinal shift and the trace and longitudinal parts of h). Enumerate local cubic vertices V3 (range at most 1, cubic-symmetric, time-reversal even, at most one time derivative per field, two derivatives at leading order) and first-order deformations delta1 of the gauge symmetry, and solve delta0 V3 + delta1 S2 = 0 exactly over the rationals as polynomial identities in z_a = e^(i k_a). Report the dimension of the solution space modulo field redefinitions and delta0-exact delta1, and compare each solution's leading symbol with the comparator's scalar-sector cubic terms. Pre-registered by the supervisor: a one-dimensional continuum part equal to the comparator's, tied to the walker's coupling, continues the programme; dimension two or more, or untied, is a departure; no nontrivial solution at range 2 is an obstruction to record with its order in the spacing. HIT: the dimension and the comparison, or an exact obstruction. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:how-far-a-local-placement-pushes-the-walkers-clock-defect:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "how-far-a-local-placement-pushes-the-walkers-clock-defect",
+  "title": "How far can a local placement of the walker's energy push the clock defect, given that none removes it?",
+  "what": "DERIVATION, independent attempt 1 of 2: How far can a local placement of the walker's energy push the clock defect, given that none removes it?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-145 are LANDED on main (ef918c1910, 6b414efff9, 25b8c1874f; the review findings are in probes/work/deferred-science-20260925/unit-27.json and unit-29.json). Blocks 146-149 are OPEN hand-off PRs (#9237, #9240, #9241, #9242): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-149 are the supervisor's own derivations (Claude), not refereed by another family; block 112 is a harvest of Grok-refereed attempts. Nothing is adopted. SETTING: block 112 (landed) T1: the member's lapse constraints satisfy {C[N], C[M]} = G[xi(N, M)] exactly for every pair of lapses iff beta = -alpha and the face timing is symmetric, with the nearest-neighbour xi_j(x -> x + e_j) = (K/(4 alpha))(N_{x+e_j} M_x - N_x M_{x+e_j}). Block 135 (landed): the walker's energy placed as e' = C1 C2 C3 e, e_x = (1/2)(Pi_x H + H Pi_x), C_a the average over x +- e_a. Block 136 (landed): the momentum density P^B keeps the books with e'. The supervisor's own results, unrefereed and not yet opened (decision-record addendum 41; probe #9254 found (a) and (b) first): with the lapse coupled to e' and P^B, (a) the walker's bracket -i[H_M, H_N] equals the walker part of G[xi(N, M)] exactly when one lapse is uniform, iff K/(4 alpha) = 1; (b) delta lapses at u and u + 2e_1 give xi = 0 on every bond but a nonzero bracket; (c) for plane-wave lapses e^{i q1 x}, e^{i q2 x} the defect vanishes through second order and at third order is (i/4) sum_j sin k_j cos k_j (q1_j - q2_j)(4 q1.q2 + q1_j q2_j) times the identity; (d) NO finite-range placement E_u = T_u E_0 T_u^dag with sum_u E_u = H, covariant under the cube's proper rotations and invariant under the time reversal i sigma_y K, closes it exactly: with phi = n.x generic, a_h and b_h the hop sites of E_0 with the largest and smallest phi and t = a_h - b_h, the element <u + a'| [E_u, E_{u+t}] |u + t + b'> is the single-path product W(a_h, a')^dag W(b_h, b'), time reversal makes every block a real quaternion so it is nonzero, and the half-turns about the axes keep t from being a unit vector, while xi(delta_{u+t}, delta_u) = 0 on every bond. TASK: make your own plan first. (1) Check or refute (d), step by step, including the single-path claim when E_0 has on-site blocks beyond its hop sites. (2) Among finite-range placements with the cube's rotations and time reversal, of range at most 2, that keep the books at first order (closure exactly when one lapse is uniform, with some local momentum placement), find the highest order in the lapses' wave numbers through which the walker's bracket agrees with block 112's G[xi]. Is e''s third-order defect removable, and at what cost to the books? The supervisor's prior: (d) holds (90 percent); fifth order is reachable at range 2 (50 percent). HIT: an error in (d), or the highest order with an exact placement that reaches it. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/how-far-a-local-placement-pushes-the-walkers-clock-defect/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/how-far-a-local-placement-pushes-the-walkers-clock-defect/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:how-far-a-local-placement-pushes-the-walkers-clock-defect:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "how-far-a-local-placement-pushes-the-walkers-clock-defect",
+  "title": "How far can a local placement of the walker's energy push the clock defect, given that none removes it?",
+  "what": "DERIVATION, independent attempt 2 of 2: How far can a local placement of the walker's energy push the clock defect, given that none removes it?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-145 are LANDED on main (ef918c1910, 6b414efff9, 25b8c1874f; the review findings are in probes/work/deferred-science-20260925/unit-27.json and unit-29.json). Blocks 146-149 are OPEN hand-off PRs (#9237, #9240, #9241, #9242): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-149 are the supervisor's own derivations (Claude), not refereed by another family; block 112 is a harvest of Grok-refereed attempts. Nothing is adopted. SETTING: block 112 (landed) T1: the member's lapse constraints satisfy {C[N], C[M]} = G[xi(N, M)] exactly for every pair of lapses iff beta = -alpha and the face timing is symmetric, with the nearest-neighbour xi_j(x -> x + e_j) = (K/(4 alpha))(N_{x+e_j} M_x - N_x M_{x+e_j}). Block 135 (landed): the walker's energy placed as e' = C1 C2 C3 e, e_x = (1/2)(Pi_x H + H Pi_x), C_a the average over x +- e_a. Block 136 (landed): the momentum density P^B keeps the books with e'. The supervisor's own results, unrefereed and not yet opened (decision-record addendum 41; probe #9254 found (a) and (b) first): with the lapse coupled to e' and P^B, (a) the walker's bracket -i[H_M, H_N] equals the walker part of G[xi(N, M)] exactly when one lapse is uniform, iff K/(4 alpha) = 1; (b) delta lapses at u and u + 2e_1 give xi = 0 on every bond but a nonzero bracket; (c) for plane-wave lapses e^{i q1 x}, e^{i q2 x} the defect vanishes through second order and at third order is (i/4) sum_j sin k_j cos k_j (q1_j - q2_j)(4 q1.q2 + q1_j q2_j) times the identity; (d) NO finite-range placement E_u = T_u E_0 T_u^dag with sum_u E_u = H, covariant under the cube's proper rotations and invariant under the time reversal i sigma_y K, closes it exactly: with phi = n.x generic, a_h and b_h the hop sites of E_0 with the largest and smallest phi and t = a_h - b_h, the element <u + a'| [E_u, E_{u+t}] |u + t + b'> is the single-path product W(a_h, a')^dag W(b_h, b'), time reversal makes every block a real quaternion so it is nonzero, and the half-turns about the axes keep t from being a unit vector, while xi(delta_{u+t}, delta_u) = 0 on every bond. TASK: make your own plan first. (1) Check or refute (d), step by step, including the single-path claim when E_0 has on-site blocks beyond its hop sites. (2) Among finite-range placements with the cube's rotations and time reversal, of range at most 2, that keep the books at first order (closure exactly when one lapse is uniform, with some local momentum placement), find the highest order in the lapses' wave numbers through which the walker's bracket agrees with block 112's G[xi]. Is e''s third-order defect removable, and at what cost to the books? The supervisor's prior: (d) holds (90 percent); fifth order is reachable at range 2 (50 percent). HIT: an error in (d), or the highest order with an exact placement that reaches it. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/how-far-a-local-placement-pushes-the-walkers-clock-defect/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/how-far-a-local-placement-pushes-the-walkers-clock-defect/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-massive-seas-inertia-in-the-zero-mode:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-massive-seas-inertia-in-the-zero-mode",
+  "title": "With the massive sea's inertia included, does the closed lattice's zero mode keep block 147's threshold?",
+  "what": "DERIVATION, independent attempt 1 of 2: With the massive sea's inertia included, does the closed lattice's zero mode keep block 147's threshold?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-145 are LANDED on main (ef918c1910, 6b414efff9, 25b8c1874f; the review findings are in probes/work/deferred-science-20260925/unit-27.json and unit-29.json). Blocks 146-149 are OPEN hand-off PRs (#9237, #9240, #9241, #9242): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-149 are the supervisor's own derivations (Claude), not refereed by another family; block 112 is a harvest of Grok-refereed attempts. Nothing is adopted. SETTING: block 146 (open, #9237): the member's zero mode on a closed lattice obeys 24 alpha l^3 lamdot^2 = m for uniform content of energy m per site (lambda = log l; the member's kinetic coefficient c_k = -24 alpha). Block 147 (open, #9240, current head): T2, if the member sees the sea's energy: with the staggered mass mu and rest content m0 per site, m = m0 - <sqrt(mu^2 + s^2/l^2)>, s_a = sin k_a; large lengths need m0 > mu, and there is no uniform motion if m0 <= mu, computed with the sea's instantaneous energy. T3(b) (added after probe #9262): the walks at two lengths do not commute, so a stretch excites the massive sea at first order; at leading adiabatic order the sea carries (1/2) m_lam lamdot^2 per site with m_lam = <mu^2 s^2/(4 l^2 E^5)>, E^2 = mu^2 + s^2/l^2, and the constraint becomes (24 alpha l^3 - m_lam/2) lamdot^2 = m. TASK: make your own plan first. Decide exactly, as functions of alpha/mu^2, on Z^3 and on the 4^3 torus: (i) whether 24 alpha l^3 - m_lam/2 keeps its sign at every length (on Z^3, m_lam/l^3 tends to mu^2 <1/(4|s|^3)>, which diverges logarithmically at the eight corners); (ii) whether T2's statement for m0 <= mu survives, and whether the leading adiabatic order holds where it matters (the rate lamdot against the gap 2 mu); (iii) the bounce and the threshold with the inertia. The supervisor's prior: the large-length statement stands (m_lam <= <s^2>/(4 mu^3 l^2)), and the small-length statement fails only where the adiabatic order already fails (60 percent). HIT: exact statements with their domains, or an error in T3(b). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-massive-seas-inertia-in-the-zero-mode/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-massive-seas-inertia-in-the-zero-mode/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-massive-seas-inertia-in-the-zero-mode:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-massive-seas-inertia-in-the-zero-mode",
+  "title": "With the massive sea's inertia included, does the closed lattice's zero mode keep block 147's threshold?",
+  "what": "DERIVATION, independent attempt 2 of 2: With the massive sea's inertia included, does the closed lattice's zero mode keep block 147's threshold?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-145 are LANDED on main (ef918c1910, 6b414efff9, 25b8c1874f; the review findings are in probes/work/deferred-science-20260925/unit-27.json and unit-29.json). Blocks 146-149 are OPEN hand-off PRs (#9237, #9240, #9241, #9242): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-149 are the supervisor's own derivations (Claude), not refereed by another family; block 112 is a harvest of Grok-refereed attempts. Nothing is adopted. SETTING: block 146 (open, #9237): the member's zero mode on a closed lattice obeys 24 alpha l^3 lamdot^2 = m for uniform content of energy m per site (lambda = log l; the member's kinetic coefficient c_k = -24 alpha). Block 147 (open, #9240, current head): T2, if the member sees the sea's energy: with the staggered mass mu and rest content m0 per site, m = m0 - <sqrt(mu^2 + s^2/l^2)>, s_a = sin k_a; large lengths need m0 > mu, and there is no uniform motion if m0 <= mu, computed with the sea's instantaneous energy. T3(b) (added after probe #9262): the walks at two lengths do not commute, so a stretch excites the massive sea at first order; at leading adiabatic order the sea carries (1/2) m_lam lamdot^2 per site with m_lam = <mu^2 s^2/(4 l^2 E^5)>, E^2 = mu^2 + s^2/l^2, and the constraint becomes (24 alpha l^3 - m_lam/2) lamdot^2 = m. TASK: make your own plan first. Decide exactly, as functions of alpha/mu^2, on Z^3 and on the 4^3 torus: (i) whether 24 alpha l^3 - m_lam/2 keeps its sign at every length (on Z^3, m_lam/l^3 tends to mu^2 <1/(4|s|^3)>, which diverges logarithmically at the eight corners); (ii) whether T2's statement for m0 <= mu survives, and whether the leading adiabatic order holds where it matters (the rate lamdot against the gap 2 mu); (iii) the bounce and the threshold with the inertia. The supervisor's prior: the large-length statement stands (m_lam <= <s^2>/(4 mu^3 l^2)), and the small-length statement fails only where the adiabatic order already fails (60 percent). HIT: exact statements with their domains, or an error in T3(b). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-massive-seas-inertia-in-the-zero-mode/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-massive-seas-inertia-in-the-zero-mode/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",

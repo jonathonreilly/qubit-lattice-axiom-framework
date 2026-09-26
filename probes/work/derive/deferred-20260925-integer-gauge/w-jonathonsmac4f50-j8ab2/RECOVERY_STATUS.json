@@ -1,0 +1,52 @@
+{
+  "task": "J:derive:deferred-20260925-integer-gauge:a1",
+  "worker": "w-jonathonsmac4f50-j8ab2",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "78db61c32a39234bab16034c57361bf0c418c0b1",
+  "landing_commit_of_narrowed_notes": "60c5f194d940a7bbaf1cdd545296e31d74a02f1a",
+  "source_unit": "probes/work/deferred-science-20260925/unit-20.json",
+  "provenance": "source PRs were written on claude/dynamics-clause-* branches (same model family as this attempt; not this machine's induced-law blocks); no independence claimed",
+  "inspected": [
+    {"pr": 9077, "head": "bf3663ce79efd91384dd41b617f9403814a7c623", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false,
+     "note": "main holds the narrowed note from landing 60c5f194d9; the head claim (iii) 'independent complete search, with no box' was not supplied"},
+    {"pr": 9095, "head": "d3ac4167f983b583cd38dcea3212e4bb8ca98704", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false,
+     "note": "main holds the narrowed note; head claims (i) box-free L1 minimum 12, (v) box-free unit minimum 20, 'next moves at L1 16' were not supplied"},
+    {"pr": 9066, "head": "a3f5b3befaaa3ac264377c45e9f0938c587fe468", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false, "note": "hashes only"},
+    {"pr": 9069, "head": "20bea6fc2965f7b3981e83c0d13e2d1dd0b942c2", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false, "note": "hashes only"},
+    {"pr": 9072, "head": "44851ea327976031e29defbd0c8dcc6f73dd374b", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false, "note": "hashes only"},
+    {"pr": 9081, "head": "772e7fba3402ec3ab3562d23abb9c03be10d1965", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false, "note": "hashes only"},
+    {"pr": 9145, "head": "43cbf9f857e20b654f9a1d0f94a99bc360594271", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false, "note": "hashes only"}
+  ],
+  "related_work_checked": [
+    {"path": "probes/work/derive/deferred-20260925-integer-gauge", "finding": "no prior attempt"},
+    {"search": "gh issues 'box-free tensor', 'integer-gauge', 'twelfth order planar'", "finding": "no related probe issue"},
+    {"claims": "claim.py status", "finding": "only this unit's claim"}
+  ],
+  "dispositions": [
+    {"residual": "box-free minimum support of an integer move (9077 N6; head claim iii)", "disposition": "recovered",
+     "scope": "Z^3, finite support, integer/rational/real slots, no box/coefficient/anchor restriction: support >= 10, equality iff c*planar",
+     "evidence": "ATTEMPT.md Steps 1-6 (proof); check.py E1-E2 (independent exhaustive connected-support search to size 12)", "pending": "cross-model referee"},
+    {"residual": "globally first off-diagonal order / complete leading effective Hamiltonian for rotor slots (9095 N6; head claims i, ii, iv)", "disposition": "recovered",
+     "scope": "formal perturbation theory: L1 >= 12, equality iff +-planar; no odd orders; order-12 off-diagonal part is exactly -A h^12/U^11 times the planar shifts, A = 111150053/31850496 re-derived",
+     "evidence": "ATTEMPT.md Corollary 2; check.py H1-H3", "pending": "cross-model referee"},
+    {"residual": "box-free minimum of unit-entry (two-level) moves (9095 head claim v: 20)", "disposition": "open",
+     "partial": "box-free lower bound 14 (support 13 excluded by the classification, parity gives 14); gap 14..20 open"},
+    {"residual": "even-N cube / odd-N freeze distinction", "disposition": "already-covered", "where": "landed 9077 note (single neighbourhood)",
+     "extension": "global: Z_N moves of support <= 9 exist iff N even; minimum cyclic steps 6 (N=2), 10 (N=3), 12 (N=4 with the half-period cube tying), 12 for every other N"},
+    {"residual": "two-site freeze, Smith neighbourhood factors, planar witnesses, cosine Hessian factor two", "disposition": "already-covered", "where": "landed notes on main"},
+    {"residual": "moves with L1 = 14 and the order-14 content (head claim 'next moves at 16')", "disposition": "open"},
+    {"residual": "finite tori: winding classes and small-L aliases", "disposition": "open"},
+    {"residual": "sampled qubit fourth-order formula (201/960) dN_A for every balanced background", "disposition": "open"},
+    {"residual": "convergence / uniform perturbative limit / controlled phase", "disposition": "open"},
+    {"residual": "phase obligations (9066, 9069, 9072, 9081) and compact-oscillator obligation (9145)", "disposition": "open", "note": "not inspected beyond snapshot hashes in this pass"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. unit-entry box-free minimum: close 14..20 (larger connected-support search with unit-entry leaf tests, or entry-bounded algebra)",
+    "2. do integer moves with L1 = 14 exist; order-14 off-diagonal content",
+    "3. torus statements (winding classes, small L)",
+    "4. all-background qubit fourth-order formula",
+    "5. phase and compact-oscillator obligations of the bundle",
+    "6. convergence of the formal expansion"
+  ],
+  "first_pass_note": "one obligation worked (box-free minimum); bundle not exhausted"
+}

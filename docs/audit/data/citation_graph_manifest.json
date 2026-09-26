@@ -1,6 +1,6 @@
 {
  "edge_count": 15050,
- "node_count": 6755,
+ "node_count": 6756,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -965,6 +965,10 @@
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
+  },
+  "admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_the_walks_force_is_a_bond_energy_times_a_clock_difference_and_no_ledger_can_demand_it_exactly_bounded_theorem_note_2026-09-23": {
    "deps_hash": "09240f3eec74",

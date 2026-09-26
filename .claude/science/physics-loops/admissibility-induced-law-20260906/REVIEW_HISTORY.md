@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-26 block 151 — author checks (not a review PASS)
+A harvest of probe #9251 (same model family), line-checked by the supervisor: every step S0–S7 read against block 143's landed T1, T4 and T6; the probe's checker rerun (7/7). This runner re-derives the algebraic steps independently; census 7/7 in family. Conformance pass against the PR conformance spec: sections 1–3 (landed inputs only; cache through the envelope, AUDIT_TIMEOUT_SEC = 600; one claim scope on every surface), 4 (N1 with six attack routes, each ATTEMPTED, and the scope left open; N2–N8; N5 lines in stdout, one stated as checked and not executed with its reason), 5 (target and obligation graph with the strongest unchecked step named), 6 (one load-bearing mutation per family; the algebra re-derived by hand in the note), 7 (single runner), 8 (new graph node: manifest regenerated), 9–12 (structure as the lane's landed notes; nothing ratified; counts from the runner).

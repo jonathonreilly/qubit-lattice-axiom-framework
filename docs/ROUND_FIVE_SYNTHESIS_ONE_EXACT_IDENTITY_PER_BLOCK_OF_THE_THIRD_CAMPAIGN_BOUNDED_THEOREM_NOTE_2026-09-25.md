@@ -1,7 +1,7 @@
 ---
 claim_id: round_five_synthesis_one_exact_identity_per_block_of_the_third_campaign_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "Collects the third campaign's blocks (open PRs 9255, 9258, 9263, 9264 and 9265, and draft PR 9266) on two supplied models, the composite-site network in the six-Majorana representation and the link-qubit ring clause with and without a single-link term and charge mass, and recomputes one exact identity per block by exact linear algebra on small clusters: the projection rule gives the exact 16-qubit ground energy on 8 sites; the matching bound at J_z = 2.5 on 256 sites (z-part singular values 5, x- and y-part norms 2, every level at least 1); the section flux on 2^3 (equal on every plane, conserved by every flip) with the exact sector grounds; the averaged f-sum 2 u s^2 on the exact 2^3 component; the f-sum with the single-link term, 2 u s^2 + (2t/3N) sum <sigma^x>, and the central differences that estimate <sigma^x>. The finite diagnostics are quoted from the blocks, not recomputed. No limit, phase or physical-field claim."
+claim_scope: "Collects the third campaign's blocks (open PRs 9255, 9258, 9263, 9264, 9265 and 9268, and draft PR 9266) on two supplied models, the composite-site network in the six-Majorana representation and the link-qubit ring clause with and without a single-link term and charge mass, and recomputes one exact identity per block by exact linear algebra on small clusters: the projection rule gives the exact 16-qubit ground energy on 8 sites; the matching bound at J_z = 2.5 on 256 sites (z-part singular values 5, x- and y-part norms 2, every level at least 1); the section flux on 2^3 (equal on every plane, conserved by every flip) with the exact sector grounds; the averaged f-sum 2 u s^2 on the exact 2^3 component; the f-sum with the single-link term, 2 u s^2 + (2t/3N) sum <sigma^x>, and the central differences that estimate <sigma^x>. The finite diagnostics are quoted from the blocks, not recomputed. No limit, phase or physical-field claim."
 upstream_dependencies:
   - minimal_axioms
   - the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24
@@ -17,12 +17,12 @@ runner: scripts/round_five_synthesis_one_exact_identity_per_block_of_the_third_c
 
 ## Result
 
-The third campaign ran six blocks on two supplied models, each opened as a
+The third campaign ran seven blocks on two supplied models, each opened as a
 note, runner and cache: the composite-site network's flux sector (open PR
 9255) and its excitations (open PR 9264); the ring clause's winding-sector
 coupling (open PR 9258), its energy-only photon bound on 20³ (open PR 9265),
-and the ring clause with a charge-creating single-link term (open PR 9263
-and draft PR 9266). This runner recomputes one exact identity from each, from the
+and the ring clause with a charge-creating single-link term (open PRs 9263
+and 9268, and draft PR 9266). This runner recomputes one exact identity from each, from the
 model's definition and without Monte Carlo, in about ten seconds.
 
 | block | identity recomputed here | value |
@@ -62,8 +62,11 @@ of 6³ within errors of the pure-ring value. A fine scan on 4³–10³ put the
 steepest rise between `t = 0.35` and `0.45` on every torus but exposed a
 fixed-population bias that depends on the guide's charge penalty (0.6 per
 cent of the energy on 6³ between two penalties), so its size trend is not
-established; it is preserved as draft PR 9266, and open PR 9263 now states
-the bias.
+established; it is preserved as draft PR 9266. With one penalty for a whole
+grid, link expectations on 6³ still differ by up to 0.08 between penalties
+0.8 and 1.1 across `t = 0.30–0.50` (open PR 9268): the several-fold rise
+holds at both, but where it is steepest and how it changes with size are
+open, and open PR 9263 now says so.
 
 **The composite-site network.** With the projection exact, the ground
 state lies in the locally flux-free sector on the clusters searched, with
@@ -76,9 +79,11 @@ thins the low levels, and `J_z = 2.5` stays gapped by the matching bound
 
 ## What stays open
 
-- **Moving charges.** Whether the rapid change near `t ≈ 0.35–0.45` at
-  `M = 2` sharpens with size needs a scan with one guide per difference and
-  the guide checked on each torus (draft PR 9266); the
+- **Moving charges.** Whether the rapid change near `t ≈ 0.3–0.5` at
+  `M = 2` sharpens with size needs guide-independent link expectations:
+  larger populations with an extrapolation in the inverse population, or a
+  guide with charge-pair correlations, checked by two guides on each torus
+  (draft PR 9266, open PR 9268); the
   static pair energy with moving charges (whether the charges screen it)
   needs static sources in the charge projector; the moment bound cannot
   show or exclude a transverse gap once the single-link term is on.

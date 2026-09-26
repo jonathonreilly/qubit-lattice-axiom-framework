@@ -22,7 +22,7 @@ note, runner and cache: the composite-site network's flux sector (open PR
 9255) and its excitations (open PR 9264); the ring clause's winding-sector
 coupling (open PR 9258), its energy-only photon bound on 20³ (open PR 9265),
 and the ring clause with a charge-creating single-link term (open PRs 9263
-and 9268, and draft PR 9266). This runner recomputes one exact identity from each, from the
+and 9268, and draft PR 9266). This runner recomputes one exact identity per block, the three hopping blocks sharing one, from the
 model's definition and without Monte Carlo, in about ten seconds.
 
 | block | identity recomputed here | value |

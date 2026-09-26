@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -941,6 +941,10 @@
   "admissibility_rule_in_discrete_ticks_a_local_clock_is_exact_only_for_walks_that_do_not_move_the_flat_band_theorem_and_a_walk_clocked_to_relative_eps_squared_bounded_theorem_note_2026-09-23": {
    "deps_hash": "6d7a2520c540",
    "out_degree": 3
+  },
+  "admissibility_rule_in_the_cube_kinetic_family_relabellings_in_time_fix_the_kinetic_shape_and_the_frames_full_rate_has_four_numbers_of_which_blindness_removes_one_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_in_the_curvature_member_the_clock_is_a_constraint_a_bodys_change_of_energy_acts_at_once_unless_formation_keeps_energy_local_bounded_theorem_note_2026-09-23": {
    "deps_hash": "43bf322d0386",

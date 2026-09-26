@@ -25,3 +25,8 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-26 block 165 pushed (harvest of #9225, confirmed by #9312; PR held by the pacing rule)
+- In block 62's cube kinetic family, the gradient and transverse relabellings in time each fix the shape, and together they allow only zero.
+- The frame's full rate has four cube numbers, and blindness removes one. Block 124's count of two uses its metric premise.
+- The branch is pushed without a PR.

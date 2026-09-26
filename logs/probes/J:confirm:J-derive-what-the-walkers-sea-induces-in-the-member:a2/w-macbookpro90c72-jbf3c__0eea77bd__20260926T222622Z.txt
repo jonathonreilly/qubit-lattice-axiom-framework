@@ -1,0 +1,17 @@
+E1 ok |(1-h/2)s| = r - (s.h.s)/(2r) + (s.h^2.s)/(8r) - (s.h.s)^2/(8 r^3) + O(h^3)
+E2 ok sum_ij s_i^2 s_j^2/r^3 = r and /r^5 = 1/r, so 3B+6A = I and 3B'+6A' = J
+E3 ok second order is -(B/8)tr h^2 + (A/8)(tr h)^2 + ((B-3A)/8) sum h_ii^2
+E4 ok first order is (I/6) tr h
+E5 ok for h = lam*1 and 1-lam/2 > 0, (det g)^(-1/6) = 1-lam/2 and sqrt(det g) = (1-lam/2)^(-3)
+E6 ok matching orders 0 and 1 forces C = I/3, c0 = -4I/3, and order 2 fails by I/2
+E7 ok traceless second order is -(3A/8) sum h_ii^2 - (B/4) sum_{i<j} h_ij^2; a dilation has no second order; no trace cross term
+E8 ok A=sqrt(2)/4, A'=sqrt(2)/8 at (pi/2,pi/2,0); B=1 and (s1^2-s2^2)^2/r^5=1 at (pi/2,0,0)
+K1 ok B' - A' = (1/2)<(s1^2 - s2^2)^2 / r^5>
+K2 ok kinetic coefficient of tr hd^2 is B', so T = (1/32)[B' tr hd^2 - A'(tr hd)^2 - (B'-3A') sum hd_ii^2]
+K3 ok M1 = A'/16, M2 = -A'/16, M3 = B'/16
+K4 ok a dilation has zero second-order inertia
+K5 ok trace formula |<+,n'|sigma.w|-,n>|^2 matches [|w|^2(1+n.n') - 2(n.w)(n'.w)]/2 at unit vectors
+K6 ok two-level excess |<+|Hdot|->|^2/Delta^3 equals [s.hd^2.s - (s.hd.s)^2/r^2]/(32 r^3)
+checks: all passed
+SUMMARY: confirmed exact partial - uniform sea energy -I + (I/6)tr h - (B/8)tr h^2 + (A/8)(tr h)^2 + ((B-3A)/8) sum h_ii^2, dilation -I (det g)^(-1/6), no multiple of sqrt(det g); kinetic M1=-M2=A'/16, M3=B'/16, zero on a dilation, so not beta=-alpha. Float q^2 and alpha/K were not confirmed.
+HIT: confirmed - the exact claim survives. Independently, the second-order sea energy is the stated cubic form with 3B+6A=I, a dilation is exactly -I(det g)^(-1/6) so no multiple of sqrt(det g) matches through order two (the mismatch is I/2), and shear is negative definite because A and B are averages of nonnegative integrands that are positive on an open set. The adiabatic kinetic term is M1=-M2=A'/16, M3=B'/16, vanishes on a dilation, and cannot have beta=-alpha because A'>0 and B'>A'. The floating-point q^2 kernel and alpha/K>1/4 were not re-established.

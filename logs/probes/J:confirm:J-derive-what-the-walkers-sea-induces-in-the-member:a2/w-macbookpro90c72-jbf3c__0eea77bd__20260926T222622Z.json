@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-what-the-walkers-sea-induces-in-the-member:a2",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-jbf3c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/what-the-walkers-sea-induces-in-the-member/referee_w-macbookpro90c72-jbf3c/check.py",
+ "seed": 61582,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0eea77bd",
+ "started_utc": "20260926T222622Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed exact partial - uniform sea energy -I + (I/6)tr h - (B/8)tr h^2 + (A/8)(tr h)^2 + ((B-3A)/8) sum h_ii^2, dilation -I (det g)^(-1/6), no multiple of sqrt(det g); kinetic M1=-M2=A'/16, M3=B'/16, zero on a dilation, so not beta=-alpha. Float q^2 and alpha/K were not confirmed."
+ },
+ "review": "Exact rebuild confirms the uniform sea energy and the adiabatic kinetic term: dilation is -I(det g)^(-1/6), shear is negative, and beta=-alpha is impossible. The float q^2 kernel was not confirmed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "eadeefd03e475966aa4710365bff6f9e350350c5ad655966bbdea05a12dbf8fc",
+ "stdout_tail": "is -(3A/8) sum h_ii^2 - (B/4) sum_{i<j} h_ij^2; a dilation has no second order; no trace cross term\nE8 ok A=sqrt(2)/4, A'=sqrt(2)/8 at (pi/2,pi/2,0); B=1 and (s1^2-s2^2)^2/r^5=1 at (pi/2,0,0)\nK1 ok B' - A' = (1/2)<(s1^2 - s2^2)^2 / r^5>\nK2 ok kinetic coefficient of tr hd^2 is B', so T = (1/32)[B' tr hd^2 - A'(tr hd)^2 - (B'-3A') sum hd_ii^2]\nK3 ok M1 = A'/16, M2 = -A'/16, M3 = B'/16\nK4 ok a dilation has zero second-order inertia\nK5 ok trace formula |<+,n'|sigma.w|-,n>|^2 matches [|w|^2(1+n.n') - 2(n.w)(n'.w)]/2 at unit vectors\nK6 ok two-level excess |<+|Hdot|->|^2/Delta^3 equals [s.hd^2.s - (s.hd.s)^2/r^2]/(32 r^3)\nchecks: all passed\nSUMMARY: confirmed exact partial - uniform sea energy -I + (I/6)tr h - (B/8)tr h^2 + (A/8)(tr h)^2 + ((B-3A)/8) sum h_ii^2, dilation -I (det g)^(-1/6), no multiple of sqrt(det g); kinetic M1=-M2=A'/16, M3=B'/16, zero on a dilation, so not beta=-alpha. Float q^2 and alpha/K were not confirmed.\nHIT: confirmed - the exact claim survives. Independently, the second-order sea energy is the stated cubic form with 3B+6A=I, a dilation is exactly -I(det g)^(-1/6) so no multiple of sqrt(det g) matches through order two (the mismatch is I/2), and shear is negative definite because A and B are averages of nonnegative integrands that are positive on an open set. The adiabatic kinetic term is M1=-M2=A'/16, M3=B'/16, vanishes on a dilation, and cannot have beta=-alpha because A'>0 and B'>A'. The floating-point q^2 kernel and alpha/K>1/4 were not re-established.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jbf3c",
+  "at_utc": "20260926T222630Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Exact uniform energy and adiabatic kinetic term confirmed; dilation is not sqrt(det g), shear is negative, beta=-alpha is impossible. Float q^2 and alpha/K left open.",
+  "by": "w-macbookpro90c72-jbf3c",
+  "at_utc": "20260926T222630Z"
+ }
+}

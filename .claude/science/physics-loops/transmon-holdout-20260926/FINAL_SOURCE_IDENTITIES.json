@@ -1,0 +1,8 @@
+{
+  "docs/TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md": "e553afa49b545c81734c05e99a08ab81a6ed8e77279a9334eeda3b0cdccfaf9a",
+  "scripts/transmon_calibration_holdout_2026_09_26.py": "c1e8c1eb6339ce8a6cb47fa974cdc2a4e7eaa25dbcdb7e23190c5b90c21cadcb",
+  "scripts/transmon_resonator_model_2026_09_26.py": "8daeb82d042f317b75227c3c2a8aa437262a5d29ab87076a43ffc473e28122a2",
+  "scripts/transmon_direct_charge_check_2026_09_26.py": "a9c39077eca1799da9f7e1bdb93f26c1e37a367a60be05a0a79063283dcec5b7",
+  "scripts/data/transmon_holdout_2026_09_26/Experiment.csv": "0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b",
+  "scripts/data/transmon_holdout_2026_09_26/provenance.json": "609dde17f4e7d01bc93e57921abc44af1e58cc74aa62f1683c86a5d1fb136712"
+}

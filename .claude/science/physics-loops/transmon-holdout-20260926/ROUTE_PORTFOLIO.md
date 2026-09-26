@@ -1,0 +1,2 @@
+# Artifact routes
+Completed: exact supplied-square Fourier reduction; four-coordinate calibration; three unused measured lines; full cavity numerical construction; independent charge-photon verification; finite cutoff, charge, assignment and calibration-sensitivity controls. Outputs are a note, runner, pinned measurements and review evidence. No fit to higher lines was substituted after their discrepancies became visible.

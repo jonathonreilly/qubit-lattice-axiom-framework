@@ -1,0 +1,28 @@
+{
+  "paper_doi": "10.1038/s41567-024-02400-8",
+  "data_doi": "10.26165/JUELICH-DATA/LGRHUH",
+  "upstream_repository": "https://jugit.fz-juelich.de/qip/josephson-harmonics",
+  "commit": "d97280c61c54ca8d54ccf0a8706713130778eb63",
+  "path": "results/Experiment.csv",
+  "sha256": "0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b",
+  "selected_row": "KIT",
+  "calibration": [
+    "f01",
+    "f02",
+    "fres1",
+    "fres2"
+  ],
+  "evaluation": [
+    "f03",
+    "f04",
+    "f05"
+  ],
+  "units": "GHz; f0j is total transition, measured drive f0j/j",
+  "resonator_indexing": "fres1 and fres2 correspond to transmon levels0 and1",
+  "source_caveats": [
+    "KIT cooldown1 uses dispersive-shift calibration transferred from cooldown2 (SI III.A)",
+    "endpoint averaging is a supplied model convention; KIT-specific parity averaging was not established",
+    "order1MHz drive-frequency accuracy is not a Gaussian sigma or covariance matrix"
+  ],
+  "scope": "Public numerical measurement facts; original CSV preserved byte-for-byte. No author fitted parameter tables used."
+}

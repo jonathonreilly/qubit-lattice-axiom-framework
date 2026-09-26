@@ -1,0 +1,2 @@
+# Negative-claim scope
+No universal no-go is claimed. The three positive residual values are preserved. Basis, hybridization, offset, calibration-corner and label controls were attempted, with their precise limited coverage in the source note. Additional modes, line shifts, transfer errors and alternate roots remain open. Source note contains N1-N8 scope checks; these are not an impossibility certificate.

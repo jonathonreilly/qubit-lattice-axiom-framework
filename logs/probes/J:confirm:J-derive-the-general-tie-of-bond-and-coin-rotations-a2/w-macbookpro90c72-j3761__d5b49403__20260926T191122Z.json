@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-general-tie-of-bond-and-coin-rotations-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3761",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-general-tie-of-bond-and-coin-rotations/referee_w-macbookpro90c72-j3761/check.py",
+ "seed": 49882,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d5b49403",
+ "started_utc": "20260926T191122Z",
+ "elapsed_s": 7.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. At reach two on the 8^3 torus the constraint rank is 267 out of 342 over two primes, and the 75 relabelling ties are independent and lie in the kernel. The solution space is exactly those relabellings. Reach three was not rebuilt."
+ },
+ "review": "At reach two the 8^3 constraint rank is 267 out of 342 over two primes, and the 75 relabelling ties are independent and lie in the kernel, so the ties are exactly those relabellings and the nine-plus-three variables stay forced. Reach one reproduces the refereed ranks 81 and 87. Reach three was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-general-tie-of-bond-and-coin-rotations:a2/; its files are probes/work/derive/the-general-tie-of-bond-and-coin-rotations/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-general-tie-of-bond-and-coin-rotations/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "1f0bd2f29ef7059dca7cd9d059a5c6b58833fc2900539ea5e6c5f64461afb699",
+ "stdout_tail": "PASS primes: the first prime is 1048681, and both dot products of the elimination stay inside the exact float range\nPASS embedding: i, sqrt2, sqrt3 and sqrt5 embed, and zeta8 is primitive\nPASS reach one: ranks 81, 87, 87 on 4^3, 6^3, 8^3\nPASS reach two: 38 sites, rank 267 on primes [1048681, 1049281], gauge rank 75, rows 472832, stencil span 5\nSUMMARY: confirmed partial. At reach two on the 8^3 torus the constraint rank is 267 out of 342 over two primes, and the 75 relabelling ties are independent and lie in the kernel. The solution space is exactly those relabellings. Reach three was not rebuilt.\nHIT: confirmed - at reach two the ties with vanishing current adjoint are exactly the relabelling ties on the radius-two ball, 75 per component, so the nine-plus-three variables stay forced\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3761",
+  "at_utc": "20260926T191137Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: at reach two the constraint rank is 267 of 342 over two primes, and the 75 relabelling ties are independent and lie in the kernel. Reach three was not rebuilt.",
+  "by": "w-macbookpro90c72-j3761",
+  "at_utc": "20260926T191137Z"
+ }
+}

@@ -1,0 +1,6 @@
+PASS primes: the first prime is 1048681, and both dot products of the elimination stay inside the exact float range
+PASS embedding: i, sqrt2, sqrt3 and sqrt5 embed, and zeta8 is primitive
+PASS reach one: ranks 81, 87, 87 on 4^3, 6^3, 8^3
+PASS reach two: 38 sites, rank 267 on primes [1048681, 1049281], gauge rank 75, rows 472832, stencil span 5
+SUMMARY: confirmed partial. At reach two on the 8^3 torus the constraint rank is 267 out of 342 over two primes, and the 75 relabelling ties are independent and lie in the kernel. The solution space is exactly those relabellings. Reach three was not rebuilt.
+HIT: confirmed - at reach two the ties with vanishing current adjoint are exactly the relabelling ties on the radius-two ball, 75 per component, so the nine-plus-three variables stay forced

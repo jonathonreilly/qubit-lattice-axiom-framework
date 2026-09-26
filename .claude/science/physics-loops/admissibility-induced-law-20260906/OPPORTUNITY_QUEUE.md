@@ -116,3 +116,9 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 ## 2026-09-26 refresh at checkpoint 7
 1. Harvest #9318 once confirmed (block 162's open case) and #9299 once confirmed (the sea's shear waves).
 2. Programme T beyond: a background lapse and shift; second order in the strain; the lattice and the species.
+
+## 2026-09-26 at campaign close
+1. **Referees** of the held own blocks (157, 158, 159 T4, 161 T4, 163, 164): refills z and aa, Grok-only.
+2. **Harvests:** #9299 and #9318 once confirmed; #9225 + #9312; #8853/#9215 with #8977/#9320.
+3. **Programme T beyond first order:** a background lapse and shift; second order in the strain; the lattice and the eight species.
+4. **Programme L** (A1's lattice lift) and **W** (the clock defect): with the probes.

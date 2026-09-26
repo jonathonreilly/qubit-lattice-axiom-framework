@@ -90,3 +90,40 @@ Current source review found five further P2 groups, corrected in the canonical n
 - **Addendum 50.**
 - **Probe #9318** (same family) answers block 162's open case. It awaits a Grok confirmation, then a harvest.
 - **Held branches:** blocks 156–164; the commands are in `PR_BACKLOG.md`.
+
+## 2026-09-26 campaign — final handoff (~19:45Z)
+
+**Delivered.** Blocks 150–164.
+- Landed: 150–152 (owner, e37967e326).
+- Open PRs: #9285 (153), #9287 (154), #9289 (155).
+- Held branches, with PR bodies in `pr_bodies/` and commands in `PR_BACKLOG.md`: 156, 157, 158 (v2 3e0f193a56), 159 (9b6644140f), 160 (eadcb435ea), 161 (e5195cdf6b), 162 (174d83ec4f), 163 (6899378a58), 164 (a85979299c).
+- Decision-record addenda 43–51.
+- Probe refills x, y, z, aa.
+
+**Suggested landing order** (the owner decides):
+1. **Grok-confirmed harvests** first. They are independent and the cheapest to review:
+   - 156 (the spin's books; #9284);
+   - 160 (the massive sea; #9295);
+   - 162 (the formation price; #9311);
+   - 159 T1–T3 (bending; #9294);
+   - 161 T1–T3 (links; #9308).
+2. **The member-and-walker chain** (own or same family, unrefereed; referee tasks queued):
+   - 157 (cubic completion) → 159 T4, which rests on 157;
+   - 158 (`(1/8)ε·C`) → 161 T4 (links supply it) → 163 (relabellings that vary in time) → 164 (the lapse sector).
+3. **The open PRs** #9285, #9287 and #9289.
+
+**Harvest candidates left.**
+- Same family, awaiting Grok: #9299 (the sea's shear waves); #9318 (block 162's confined sources).
+- Grok-confirmed, not harvested:
+  - #9225 + #9312 (the cube kinetic family, extending block 124);
+  - #8853 + #8977 and #9215 + #9320 (no local tie of bond and coin rotations at reach 1–2);
+  - #9189 + #9317 (nonlinear record motion). This one is left for the owner's mobile-record triage.
+
+**Machinery.**
+- Point-jet engines in scratch `b158_dev/` (spatial and with time; polarization over basis jets). They will not survive the session; the runners of blocks 158, 163 and 164 contain them.
+- Runner rules learnt today:
+  - `AUDIT_INPUT_PATHS` must be a literal tuple.
+  - `QQ_I(a, b)` is `a + bi`.
+  - Symbolic generic jets blow up memory; use numeric basis jets.
+
+**Housekeeping.** The disk filled twice. The supervisor's probes worktree was removed, and the checkpoint script now uses a sparse checkout. The lock is released at close.

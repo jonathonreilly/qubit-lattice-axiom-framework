@@ -1145,3 +1145,33 @@ Nothing is adopted.
   Reading E costs the walker nothing new at this order. The readings differ only beyond leading order, where block 150's lattice clock defect sits, and for the records' books.
 - **Block 162's open case (probe #9318, same family, unrefereed).** The window does not determine the formation price even for window-confined sources that are not point-equivalent, when the two boxes share a wall plane just outside the window. For strictly nested boxes, window-identical data force a point-equivalent source with `Q = 0`. A nonnegative source never coincides. So the non-locality of block 162 holds for confined signed sources too. A Grok referee is awaited.
 - **Row added to addendum 48's table.** Relabellings in time with varying clock profiles: nothing new at leading order (block 164).
+
+## Fifty-first addendum (2026-09-26, campaign close): what the day established, and what is open
+
+Nothing is adopted. This is a map; every entry points to its block.
+
+**Established at leading order in the spacing** (landed, in open PRs, or on held branches; provenance marked):
+
+| Question | Answer | Blocks (status) |
+|---|---|---|
+| Do records keep the member's books? | Exactly through second order in their offsets; broken at third by the hops; the drift is bounded | 151–154 (151–152 landed; 153–154 PRs), addendum 47 |
+| Does the member's cubic order follow? | Yes, from relabelling consistency with all fields (uniform relabellings in time suffice): the comparator's | 157 (held; same family) |
+| Which static member? | Not fixed by bending; fixed by consistency, as the curvature member | 159 (held; bending Grok-confirmed; T4 conditional on 157) |
+| The walker's coupling to the lengths, lapse and shift? | Forced through first order in the strain for every relabelling of both readings; of the comparator's form | 158, 163, 164 (held; own) |
+| Its lattice carrier? | Links following the lengths' connection, at long wavelength | 161 (held; links Grok-confirmed; T4 own) |
+| The coin's spin? | Keeps its own books; a spin-polarised walker at rest sources only the shift | 156 (held; Grok-confirmed) |
+| The sea? | Its energy falls under shear (a closed lattice must shear); a massive sea keeps positive clock stiffness | 155 (PR), 160 (held; Grok-confirmed) |
+| The price of forming a record? | Not local, under either reading, except for point-like sources | 162 (held; Grok-confirmed) |
+
+**What records alone do not fix:**
+- the formation price (block 162);
+- whether the member counts the sea's energy (block 155, #9299);
+- the reading of relabellings in time. Reading E costs the walker nothing at leading order (block 164); it matters beyond leading order (block 150) and for the records' books.
+
+**Open, queued to the probes:**
+- the member's lattice lift (A1, refill y);
+- the walker's clock defect under placements (refill w);
+- the lattice placement of `(1/8)ε·C` for the eight species (refill z);
+- referees for blocks 157, 158, 159 T4 and 161 T4 (refills z, aa);
+- block 162's confined sources (answered by #9318, same family, awaiting a referee);
+- the massive sea at the chessboard momentum (refill aa).

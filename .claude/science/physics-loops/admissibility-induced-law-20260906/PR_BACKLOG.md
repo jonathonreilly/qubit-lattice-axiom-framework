@@ -52,3 +52,6 @@ Still open: #9285, #9287, #9289. Held, in order after items 5–7 (blocks 156–
 ## 2026-09-26 checkpoint 7
 13. Block 164 (own; unrefereed).
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block164-relabellings-in-time-need-no-new-term-20260926 --title "[physics-loop] admissibility-induced-law block 164: bounded_theorem bounded-support - relabellings in time whose clock profile varies in space need no new term: the walker's own generator moves it as the member's shift changes" --body-file <pr_body164.md>`
+
+## 2026-09-26 campaign close
+The PR bodies for items 5–13 (blocks 156–164) are in `pr_bodies/block<NN>.md` next to this file. Pass them to `--body-file`.

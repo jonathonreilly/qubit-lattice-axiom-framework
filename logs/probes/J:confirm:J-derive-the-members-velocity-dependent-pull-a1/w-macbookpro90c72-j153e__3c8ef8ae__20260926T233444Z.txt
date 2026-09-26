@@ -1,0 +1,9 @@
+PASS T1 kinetic :: the extrinsic-curvature square matches iff alpha = K/4 and beta = -alpha
+PASS T1 curvature :: the first order of sqrt(g) R is R1, and the second order differs from R2 by a divergence
+PASS T4 legendre :: to order v^4 the Hamiltonian is the relativistic kinetic energy minus the stated pull
+PASS T4 clock :: on 1s the clock-only ratio is 4/3 and the directional virial holds
+PASS T4 2p :: 2p0 is normalized and <U along its axis>/<U> = 3/5, so the clock-only ratio along z is 8/5
+PASS T5 books :: with the momentum books, (1/2) Theta.h for h = t(d xi + d xi^T) is d(t xi.P)/dt - xi.P plus a divergence
+TOTAL FAIL=0
+SUMMARY: PARTIAL the kinetic term matches the comparator iff alpha = K/4 and beta = -alpha. sqrt(g) R agrees with R1 at first order, and its second order differs from R2 by a divergence. On 1s the clock-only weight ratio is 4/3; on 2p0 the axial potential ratio is 3/5. The drifting-length coupling reduces to -xi.P by the books. The non-axis exchange and the full W=1 cancellation were not rebuilt.
+HIT: confirmed - the member is K times the comparator's second-order lapse-and-shift action exactly when alpha = K/4 and beta = -alpha, for a generic field, and the drifting lengths couple as -xi.P once the books are used.

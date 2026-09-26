@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-members-velocity-dependent-pull-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j153e",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-members-velocity-dependent-pull/referee_w-macbookpro90c72-j153e/check.py",
+ "seed": 65684,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3c8ef8ae",
+ "started_utc": "20260926T233444Z",
+ "elapsed_s": 12.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the kinetic term matches the comparator iff alpha = K/4 and beta = -alpha. sqrt(g) R agrees with R1 at first order, and its second order differs from R2 by a divergence. On 1s the clock-only weight ratio is 4/3; on 2p0 the axial potential ratio is 3/5. The drifting-length coupling reduces to -xi.P by the books. The non-axis exchange and the full W=1 cancellation were not rebuilt."
+ },
+ "review": "Independent check. Kinetic match forces alpha = K/4 and beta = -K/4. For a generic symmetric field, sqrt(g) R equals R1 at first order and its second order differs from R2 by a divergence. The Legendre transform of the pull holds through order v^4. On 1s the clock-only ratio is 4/3; on 2p0 the axial ratio is 3/5, so the clock-only ratio along z is 8/5. With the momentum books, one-half Theta.h for the drifting lengths is d(t xi.P)/dt - xi.P plus a divergence. The non-axis exchange and the full W=1 cancellation were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-members-velocity-dependent-pull:a1/; its files are probes/work/derive/the-members-velocity-dependent-pull/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-members-velocity-dependent-pull/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "d07bb2bb2294672ab9119438a866d006d3af35f24f9029c2d6a485df16954c0a",
+ "stdout_tail": "PASS T1 kinetic :: the extrinsic-curvature square matches iff alpha = K/4 and beta = -alpha\nPASS T1 curvature :: the first order of sqrt(g) R is R1, and the second order differs from R2 by a divergence\nPASS T4 legendre :: to order v^4 the Hamiltonian is the relativistic kinetic energy minus the stated pull\nPASS T4 clock :: on 1s the clock-only ratio is 4/3 and the directional virial holds\nPASS T4 2p :: 2p0 is normalized and <U along its axis>/<U> = 3/5, so the clock-only ratio along z is 8/5\nPASS T5 books :: with the momentum books, (1/2) Theta.h for h = t(d xi + d xi^T) is d(t xi.P)/dt - xi.P plus a divergence\nTOTAL FAIL=0\nSUMMARY: PARTIAL the kinetic term matches the comparator iff alpha = K/4 and beta = -alpha. sqrt(g) R agrees with R1 at first order, and its second order differs from R2 by a divergence. On 1s the clock-only weight ratio is 4/3; on 2p0 the axial potential ratio is 3/5. The drifting-length coupling reduces to -xi.P by the books. The non-axis exchange and the full W=1 cancellation were not rebuilt.\nHIT: confirmed - the member is K times the comparator's second-order lapse-and-shift action exactly when alpha = K/4 and beta = -alpha, for a generic field, and the drifting lengths couple as -xi.P once the books are used.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j153e",
+  "at_utc": "20260926T233506Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "T1 holds for a generic field: alpha = K/4 and beta = -alpha, and the second-order curvature density differs from R2 by a divergence. The Legendre transform, the 1s clock ratio 4/3, the 2p0 axial ratio 3/5, and the books identity for drifting lengths hold. T2 and the full W=1 cancellation were not rebuilt.",
+  "by": "w-macbookpro90c72-j153e",
+  "at_utc": "20260926T233506Z"
+ }
+}

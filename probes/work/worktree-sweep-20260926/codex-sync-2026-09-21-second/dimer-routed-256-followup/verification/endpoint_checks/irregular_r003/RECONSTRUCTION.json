@@ -1,0 +1,284 @@
+{
+  "created_utc": "2026-09-21T22:39:15.439217+00:00",
+  "job": {
+    "N": 256,
+    "kind": "irregular",
+    "replicate": 3,
+    "seed": 202609271903,
+    "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json",
+    "command": [
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+      "run",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_irregular.bin",
+      "202609271903",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json"
+    ]
+  },
+  "geometry": {
+    "N": 256,
+    "K": 8388608,
+    "geometry": {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_irregular.bin",
+      "bytes": 67108876,
+      "sha256": "8dd8429adc75292cf0f91563b617569e927b5288baef11302525d4c52ed07128"
+    },
+    "routes": [
+      {
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "moving_channels": 6933465
+      },
+      {
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "moving_channels": 6933465
+      },
+      {
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "moving_channels": 7019730
+      },
+      {
+        "direction": [
+          0,
+          -1,
+          0
+        ],
+        "moving_channels": 7019730
+      },
+      {
+        "direction": [
+          0,
+          0,
+          1
+        ],
+        "moving_channels": 7018325
+      },
+      {
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "moving_channels": 7018325
+      }
+    ],
+    "all_matching_sites_checked": 16777216
+  },
+  "state": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.state",
+    "bytes": 41943052,
+    "sha256": "d4b4184dea63cad56ede774041490c9cb08c381e18ea660e3adaf02cbf11d16f"
+  },
+  "selection": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_ENDPOINT_CHECK_SELECTION.json",
+    "bytes": 1903,
+    "sha256": "44845f1f09b301e1de22c5ec2b03ad1fd5257c6f8950e8a01cd3a1da3d9be314"
+  },
+  "decoder": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/independent_decode.py",
+    "bytes": 4973,
+    "sha256": "1fb07df9636f256150d23c38f610cee6ce4e62960f0e6730de60c5aa0da0b7af"
+  },
+  "adapter": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/check_dimer_routed_256_endpoints.py",
+    "bytes": 8132,
+    "sha256": "5519f15ad920b5dbc93d80a0bee8f5f41ef990667b82694207bdc5c45268eaef"
+  },
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json",
+    "bytes": 19639,
+    "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+  },
+  "boundary": "No observable history JSON or receipt payload read before this reconstruction and seal.",
+  "keys_checked": 8388608,
+  "physical_records_checked": 16777216,
+  "record_identity_reason": "All pair keys form a permutation; the full bipartite matching involution puts record 2*key at its black site and 2*key+1 at its white partner, proving distinctness, partner xor 1, and roles for every record.",
+  "seeded_initial_lookup_equal": true,
+  "initial_draw_rejections": 0,
+  "color_counts": [
+    599246,
+    598648,
+    598621,
+    598815,
+    598683,
+    599215,
+    598834,
+    600156,
+    600289,
+    598172,
+    599323,
+    600040,
+    599521,
+    599045
+  ],
+  "initial_fields": [
+    [
+      [
+        0.1166567569115534,
+        -0.11329708290183571
+      ],
+      [
+        0.23248300156161822,
+        0.14977119213229811
+      ],
+      [
+        0.07604449436332682,
+        -0.3024480755681677
+      ],
+      [
+        0.06714639634627975,
+        -0.12357022619223908
+      ],
+      [
+        0.24640887570977973,
+        0.1757032040862667
+      ],
+      [
+        -0.04476982057912506,
+        -0.7213809898195307
+      ]
+    ],
+    [
+      [
+        0.1401790341816907,
+        -0.009359130077597599
+      ],
+      [
+        -0.042006199024656896,
+        -0.250316116619776
+      ],
+      [
+        -0.002122332642941248,
+        0.15179114933761959
+      ],
+      [
+        0.43755764660904495,
+        0.5335602189428266
+      ],
+      [
+        -0.5684960360552113,
+        1.0905868010441242
+      ],
+      [
+        1.5572849758552902,
+        -0.43272536032815273
+      ]
+    ],
+    [
+      [
+        -0.26813205759997655,
+        0.2866615112648958
+      ],
+      [
+        -0.13534099908661537,
+        0.417209520128803
+      ],
+      [
+        -0.014635255356975869,
+        0.22422660929928187
+      ],
+      [
+        0.11440454650142932,
+        -0.6110787846076495
+      ],
+      [
+        0.23788970046944524,
+        0.01461514644752693
+      ],
+      [
+        0.0327767603649765,
+        0.11992261767493656
+      ]
+    ]
+  ],
+  "final_fields": [
+    [
+      [
+        0.3974396727177503,
+        -0.2336062462748044
+      ],
+      [
+        -0.0750509671909685,
+        -0.17396979407012308
+      ],
+      [
+        -0.42787780354945226,
+        -0.20033764710766847
+      ],
+      [
+        0.0006144600291090531,
+        0.012159118686944382
+      ],
+      [
+        0.1104609522938255,
+        -0.5773990194172768
+      ],
+      [
+        0.40188773371989156,
+        0.40679618713496113
+      ]
+    ],
+    [
+      [
+        -0.5415055708604323,
+        -0.015378193122767598
+      ],
+      [
+        0.20093485488941623,
+        -0.19544306658540747
+      ],
+      [
+        0.11281352853868999,
+        -0.2150643005475337
+      ],
+      [
+        -0.4925262719302876,
+        -0.04195786627244582
+      ],
+      [
+        -0.8587425205805057,
+        0.35967869009148595
+      ],
+      [
+        -0.7978909490330681,
+        -0.10036690260307367
+      ]
+    ],
+    [
+      [
+        0.4394119660755682,
+        -0.2727864451054186
+      ],
+      [
+        0.004315426018897286,
+        -0.47214466105710234
+      ],
+      [
+        0.05239840914425399,
+        0.35129248890920656
+      ],
+      [
+        -0.17867998395762483,
+        0.8591477449819357
+      ],
+      [
+        -0.09406205830890658,
+        -0.35379043660896703
+      ],
+      [
+        0.4329000569134563,
+        0.32064893326649846
+      ]
+    ]
+  ]
+}

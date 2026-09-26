@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T18:43:50.940178+00:00",
+  "analyzer": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_dimer_routed_256.py",
+    "bytes": 11737,
+    "sha256": "00319341324b4c88719fb9643a22f03ac5224e81600584ef50118bca7e5fb195"
+  },
+  "bootstrap_seed": 202609211900,
+  "bootstrap_draws": 10000,
+  "checks": [
+    {
+      "axis": 0,
+      "exact_current_and_covariance": true,
+      "unitary_full_propagator": true,
+      "deterministic_identity_covariance_controls": true
+    },
+    {
+      "axis": 1,
+      "exact_current_and_covariance": true,
+      "unitary_full_propagator": true,
+      "deterministic_identity_covariance_controls": true
+    },
+    {
+      "axis": 2,
+      "exact_current_and_covariance": true,
+      "unitary_full_propagator": true,
+      "deterministic_identity_covariance_controls": true
+    }
+  ],
+  "scope": "Author exact algebra and independent-form deterministic second-moment controls, performed before opening production aggregate data. These are not separate-context independent verification."
+}

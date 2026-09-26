@@ -1,0 +1,16 @@
+compared selected endpoint 16 winding 3 max error 9.155133597044475e-16
+compared selected endpoint 16 winding 27 max error 1.191874962812805e-15
+compared selected endpoint 16 irregular 3 max error 1.2947314098277875e-15
+compared selected endpoint 16 irregular 27 max error 1.2262814116578437e-15
+compared selected endpoint 32 winding 3 max error 5.1071013354786156e-15
+compared selected endpoint 32 winding 27 max error 5.467214348906571e-15
+compared selected endpoint 32 irregular 3 max error 1.1330021790324646e-14
+compared selected endpoint 32 irregular 27 max error 5.486414520141272e-15
+compared selected endpoint 64 winding 3 max error 2.2413864675738947e-14
+compared selected endpoint 64 winding 27 max error 1.151593014374386e-14
+compared selected endpoint 64 irregular 3 max error 1.5465609967063685e-14
+compared selected endpoint 64 irregular 27 max error 1.2377368580770684e-14
+compared selected endpoint 128 winding 3 max error 5.6504244306134954e-14
+compared selected endpoint 128 winding 27 max error 2.9026812296057033e-14
+compared selected endpoint 128 irregular 3 max error 4.396907200584312e-14
+compared selected endpoint 128 irregular 27 max error 2.4668650057352258e-14

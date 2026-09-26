@@ -1,0 +1,17 @@
+[
+  {
+    "prefix": ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy0",
+    "reconstructed_ASCII_sha256": "cc273922e2a9516bb148418b7a57e5fa84de0490084e214525dab3ef2c8c7edd",
+    "byte_identical": true
+  },
+  {
+    "prefix": ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy1",
+    "reconstructed_ASCII_sha256": "0f34f70a958ac8edd0c47c29751512de64d7f48b178a00ea67bf282463d1d36f",
+    "byte_identical": true
+  },
+  {
+    "prefix": ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy2",
+    "reconstructed_ASCII_sha256": "f609263026157d472caa8aa52f09c95712e63d69db4f9eee79bbc4758101ba60",
+    "byte_identical": true
+  }
+]

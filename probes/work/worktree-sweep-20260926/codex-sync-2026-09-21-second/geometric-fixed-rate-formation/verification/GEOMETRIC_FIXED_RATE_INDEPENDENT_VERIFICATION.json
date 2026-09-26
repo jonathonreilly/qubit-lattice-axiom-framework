@@ -1,0 +1,11 @@
+{
+  "PRE_CODE_SEAL.json": {
+    "sha256": "4114a0dc2c93244faccd59e7591fbf2324350ac3a3d9691ecb142ac7629a3e9c",
+    "authenticated_rows": 7
+  },
+  "FINAL_SEAL.json": {
+    "sha256": "b3754b93fa492301d4875760c3de7cc598664530a7cf119cda91b1958f39f7fb",
+    "authenticated_rows": 728
+  },
+  "scope": "Root authentication of full machine-readable seals; report and derivation read fully; independent checker scripts read separately. No production values."
+}

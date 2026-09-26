@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "geometry",
+    "32",
+    "winding",
+    "29121032",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.bin"
+  ],
+  "started_unix": 1790014139.3678799,
+  "seconds": 0.00568699836730957,
+  "exit_code": 0,
+  "stdout_sha256": "9dd9746adcdab2f1b6356e2688b034df50ade0e87c2b2faab603b15783aba02e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

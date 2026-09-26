@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-09-21T20:41:18.226317+00:00",
+  "boundary": "Root has not opened any N256 observable. Selected before aggregate analysis; completion status only has been inspected.",
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json",
+    "bytes": 19639,
+    "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+  },
+  "selected_endpoint_histories": [
+    {
+      "N": 256,
+      "kind": "winding",
+      "replicate": 3,
+      "seed": 202609261903,
+      "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r003.json"
+    },
+    {
+      "N": 256,
+      "kind": "winding",
+      "replicate": 7,
+      "seed": 202609261907,
+      "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r007.json"
+    },
+    {
+      "N": 256,
+      "kind": "irregular",
+      "replicate": 3,
+      "seed": 202609271903,
+      "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json"
+    },
+    {
+      "N": 256,
+      "kind": "irregular",
+      "replicate": 7,
+      "seed": 202609271907,
+      "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r007.json"
+    }
+  ],
+  "selection_rule": "Replicates 3 and 7 in each declared geometry; authenticate and independently reconstruct key/count/endpoint Fourier quantities once each is complete. If incomplete at deadline retain missing status; no substitution by output values.",
+  "statistical_scope": "Eight histories per geometry, fixed original observable definitions, pointwise bootstrap seed 202609211900; no pooling with original screen or fitted exponent."
+}

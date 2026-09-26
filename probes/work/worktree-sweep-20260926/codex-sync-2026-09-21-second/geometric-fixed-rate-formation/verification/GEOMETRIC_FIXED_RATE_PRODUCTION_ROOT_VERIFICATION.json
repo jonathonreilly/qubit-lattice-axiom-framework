@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-21T17:06:32.609471+00:00",
+  "scope": "Root read the complete independent report, declared reconstruction and all three checking scripts, and authenticated all four staged seals. No extra generator replay or bootstrap quantile recalculation.",
+  "seals": [
+    {
+      "seal": "SELECTION_SEAL.json",
+      "sha256": "0eb3bb10d144a4a6db6be22c1a05a466a1d331ae10e7ec537611e5ff34d39902",
+      "bindings": 8
+    },
+    {
+      "seal": "ENDPOINT_PRECOMPARISON_SEAL.json",
+      "sha256": "4e8175bd91c040100607bb0ef1805772953ad6db5e2e156fe33274658726a60b",
+      "bindings": 39
+    },
+    {
+      "seal": "AGGREGATION_PRECOMPARISON_SEAL.json",
+      "sha256": "e7d0c83092e658d1cb299f2eab6e813a4c71ff0dd9eee61ed7ec0458c4298670",
+      "bindings": 24
+    },
+    {
+      "seal": "FINAL_SEAL.json",
+      "sha256": "1cf42bdc87fc279bbc94b815b40fda9145ea73e0b4f9f0ca432e38b369cd0504",
+      "bindings": 78
+    }
+  ],
+  "report_sha256": "4e75c9c5449119f44b2f5affde6153a705cbf8b4f2edf7fa75c06cda75cc99f8",
+  "unresolved_findings": []
+}

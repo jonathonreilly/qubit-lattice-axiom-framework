@@ -1,0 +1,1703 @@
+[
+  {
+    "name": "interior_000",
+    "N": 4,
+    "file": "fixtures/interior_000.txt",
+    "sha256": "3b6715f34f2ff81364389fc87b1d5bb97f072e48eb98c52e5a1c13c1bdf36c67",
+    "occupied": 0
+  },
+  {
+    "name": "interior_001",
+    "N": 4,
+    "file": "fixtures/interior_001.txt",
+    "sha256": "b2360bee27685aa8891100ef1df6c84e82672ffbe5772031709202ef6c843bf4",
+    "occupied": 2
+  },
+  {
+    "name": "interior_002",
+    "N": 4,
+    "file": "fixtures/interior_002.txt",
+    "sha256": "3525eb61b9d12d0a4cb37cbebbb9094247c1bec10c2b0c87be106ec276cf0c1e",
+    "occupied": 2
+  },
+  {
+    "name": "interior_003",
+    "N": 4,
+    "file": "fixtures/interior_003.txt",
+    "sha256": "a0322014fc83dfdaa468801f4442c9e38eb9aa3b12bc1da97e54e85f1d437faa",
+    "occupied": 2
+  },
+  {
+    "name": "interior_004",
+    "N": 4,
+    "file": "fixtures/interior_004.txt",
+    "sha256": "d689d1c7fb5acedeacd95c19601220ff2261330c07c61d20dbcc9dd78a8c74bf",
+    "occupied": 2
+  },
+  {
+    "name": "interior_005",
+    "N": 4,
+    "file": "fixtures/interior_005.txt",
+    "sha256": "6569a25fd123d7d708de90f2b967a7d74e056bddf5f8979c0e55a6fd57a5d1f4",
+    "occupied": 2
+  },
+  {
+    "name": "interior_006",
+    "N": 4,
+    "file": "fixtures/interior_006.txt",
+    "sha256": "cc65db8e843609ad7ebd479aef4ed88486073b1ccdf0cf8fe0dd5ae722a081d3",
+    "occupied": 2
+  },
+  {
+    "name": "interior_007",
+    "N": 4,
+    "file": "fixtures/interior_007.txt",
+    "sha256": "dae1aa1712d57bfd5c5098e7fe9cba6c437c16a16a824bafed13bff0a96d792e",
+    "occupied": 2
+  },
+  {
+    "name": "interior_008",
+    "N": 4,
+    "file": "fixtures/interior_008.txt",
+    "sha256": "99a5394c0c3c7ed42668c94fa05f9d88036952e300b68d8c060d05fa849eda77",
+    "occupied": 2
+  },
+  {
+    "name": "interior_009",
+    "N": 4,
+    "file": "fixtures/interior_009.txt",
+    "sha256": "3250864fc4fb1b0b318aaf1940caf9b2316d44f4354cd3b6a33b6f78be12273b",
+    "occupied": 2
+  },
+  {
+    "name": "interior_010",
+    "N": 4,
+    "file": "fixtures/interior_010.txt",
+    "sha256": "0d923b1224b949036bbd65618f6baa435c13dd5c305345a74a5eb730f5f16f77",
+    "occupied": 2
+  },
+  {
+    "name": "interior_011",
+    "N": 4,
+    "file": "fixtures/interior_011.txt",
+    "sha256": "8e253b177b3a4b2271e1b6a9b363365c470a50828f39496c7c00b3eb51848364",
+    "occupied": 2
+  },
+  {
+    "name": "interior_012",
+    "N": 4,
+    "file": "fixtures/interior_012.txt",
+    "sha256": "1912a99dfbad90ba0f270d71ce6d3ff6fdf12ab60514066701f331e82dd337ea",
+    "occupied": 2
+  },
+  {
+    "name": "interior_013",
+    "N": 4,
+    "file": "fixtures/interior_013.txt",
+    "sha256": "d78d1f925551c53b953ca0b7d7dfe27b7689bf77dd82e34e600c7dddbea052bf",
+    "occupied": 4
+  },
+  {
+    "name": "interior_014",
+    "N": 4,
+    "file": "fixtures/interior_014.txt",
+    "sha256": "a533b9277b0aae1a61048881320a609b5e2767aec5e14ef7254cda47bf09e1c4",
+    "occupied": 4
+  },
+  {
+    "name": "interior_015",
+    "N": 4,
+    "file": "fixtures/interior_015.txt",
+    "sha256": "89521e744cd3bcc946b12ef55ad1f478ebadcb39ad2c719c1cec4ab1984b6004",
+    "occupied": 4
+  },
+  {
+    "name": "interior_016",
+    "N": 4,
+    "file": "fixtures/interior_016.txt",
+    "sha256": "dd5df59b52504d386163fee2523ff4ef0ade3141b7df712293a2c318d824f304",
+    "occupied": 4
+  },
+  {
+    "name": "interior_017",
+    "N": 4,
+    "file": "fixtures/interior_017.txt",
+    "sha256": "9afe54ac052d9d29ea786c6f7247b81a9d6b7ee274092345d9c1f040459ed19c",
+    "occupied": 4
+  },
+  {
+    "name": "interior_018",
+    "N": 4,
+    "file": "fixtures/interior_018.txt",
+    "sha256": "ff55f7c6f5cbb499f61925df90c7dbea79afa49d4643d7fd69894ec5487a5dd6",
+    "occupied": 4
+  },
+  {
+    "name": "interior_019",
+    "N": 4,
+    "file": "fixtures/interior_019.txt",
+    "sha256": "db94d22791c7bfef340aefb46e70e520d7c6fa2dac9e69ae9b80214d44af9fd2",
+    "occupied": 4
+  },
+  {
+    "name": "interior_020",
+    "N": 4,
+    "file": "fixtures/interior_020.txt",
+    "sha256": "fd38116d6d618aa020ec44829b30189ba07b7adbeb97376421828bbae2f3de4b",
+    "occupied": 4
+  },
+  {
+    "name": "interior_021",
+    "N": 4,
+    "file": "fixtures/interior_021.txt",
+    "sha256": "88fd973c99013e05309fc0d51b57c15bd996e0f8367a1f0a6d389fb92a1d0e66",
+    "occupied": 4
+  },
+  {
+    "name": "interior_022",
+    "N": 4,
+    "file": "fixtures/interior_022.txt",
+    "sha256": "64756d52b29839441657f46272840ead9acf3dc806ac06fa58f793725485fed3",
+    "occupied": 4
+  },
+  {
+    "name": "interior_023",
+    "N": 4,
+    "file": "fixtures/interior_023.txt",
+    "sha256": "4d9167529a034634cb5336df98c46d8f74683c9f66a8cba117a33037dba7f0b2",
+    "occupied": 4
+  },
+  {
+    "name": "interior_024",
+    "N": 4,
+    "file": "fixtures/interior_024.txt",
+    "sha256": "7053a0fde7d9ddf8754a0565d1e47c8d1409f4b4a8776f06bb790f3d369fdca3",
+    "occupied": 4
+  },
+  {
+    "name": "interior_025",
+    "N": 4,
+    "file": "fixtures/interior_025.txt",
+    "sha256": "0e574dbdab59bb0861912bbb565269d0cae09cb68044bd20b3f95ca93a1a4ab5",
+    "occupied": 4
+  },
+  {
+    "name": "interior_026",
+    "N": 4,
+    "file": "fixtures/interior_026.txt",
+    "sha256": "686c84dd2ce1b86c7e74730783feb3c77ee27e1947f7be4fe392b19ee2949500",
+    "occupied": 4
+  },
+  {
+    "name": "interior_027",
+    "N": 4,
+    "file": "fixtures/interior_027.txt",
+    "sha256": "6319c98face50c519013c0c701e13b85ab724142641f00c2b948cb50d6536c33",
+    "occupied": 4
+  },
+  {
+    "name": "interior_028",
+    "N": 4,
+    "file": "fixtures/interior_028.txt",
+    "sha256": "212bc320c2bbabe2830b9df931419bb5498a5af16037f8544834744f9e9f35fd",
+    "occupied": 4
+  },
+  {
+    "name": "interior_029",
+    "N": 4,
+    "file": "fixtures/interior_029.txt",
+    "sha256": "7e393969c49597c069c9086aeb5c0eae0e5c58f41be8982a106fa05f622b63a0",
+    "occupied": 4
+  },
+  {
+    "name": "interior_030",
+    "N": 4,
+    "file": "fixtures/interior_030.txt",
+    "sha256": "7506376330cedb5b440d3ce2d757bb7eae1340d8340591a83763f281ae207e84",
+    "occupied": 4
+  },
+  {
+    "name": "interior_031",
+    "N": 4,
+    "file": "fixtures/interior_031.txt",
+    "sha256": "8039b6338e925e1795de9c1a42f1323fcefcfbbfa2ca1f2a713e1779e515ad04",
+    "occupied": 4
+  },
+  {
+    "name": "interior_032",
+    "N": 4,
+    "file": "fixtures/interior_032.txt",
+    "sha256": "3a9f049fd6b10134b693ec25af8eded3619f0ab3925935dac874e5c4bed2f1b1",
+    "occupied": 4
+  },
+  {
+    "name": "interior_033",
+    "N": 4,
+    "file": "fixtures/interior_033.txt",
+    "sha256": "874f0bb83f63223980f0732960375624cd872aa10ee7d9c6b57c047fe1984260",
+    "occupied": 4
+  },
+  {
+    "name": "interior_034",
+    "N": 4,
+    "file": "fixtures/interior_034.txt",
+    "sha256": "81b818bf1d6480d2931cb656d51912908035fd6ea0ad493357b5e47907035b1c",
+    "occupied": 4
+  },
+  {
+    "name": "interior_035",
+    "N": 4,
+    "file": "fixtures/interior_035.txt",
+    "sha256": "f8d8b261e004608dffddef7b83b20e8fa105dc272a77051a9b10c49819d34423",
+    "occupied": 4
+  },
+  {
+    "name": "interior_036",
+    "N": 4,
+    "file": "fixtures/interior_036.txt",
+    "sha256": "ff1b76367c669950fbcf4da5f681ae49c5aced5df5063b1912e6c661dcda90e6",
+    "occupied": 4
+  },
+  {
+    "name": "interior_037",
+    "N": 4,
+    "file": "fixtures/interior_037.txt",
+    "sha256": "75356ae275046ebc7b22de42ccc4b1c5b50f0d0cd24bce27629866e13e9ffd28",
+    "occupied": 4
+  },
+  {
+    "name": "interior_038",
+    "N": 4,
+    "file": "fixtures/interior_038.txt",
+    "sha256": "9b65ebc254c811c33118a968f4081ddb7636a16f981f9ac0c8e7cc2461cf2510",
+    "occupied": 4
+  },
+  {
+    "name": "interior_039",
+    "N": 4,
+    "file": "fixtures/interior_039.txt",
+    "sha256": "8ab7c4b041c4b9cbd50e72943a390237c14a54f949a4ebb1c4c12b42bb641207",
+    "occupied": 4
+  },
+  {
+    "name": "interior_040",
+    "N": 4,
+    "file": "fixtures/interior_040.txt",
+    "sha256": "5228b53a2f76b2f5b3940e99bc416a7f43b8ead4f0545b1d42d9d5d470ddf7e1",
+    "occupied": 4
+  },
+  {
+    "name": "interior_041",
+    "N": 4,
+    "file": "fixtures/interior_041.txt",
+    "sha256": "20f8a88a3ad7e43db3dcb3e96e40f8bc9d198beaf982b8ea71498d331732cd80",
+    "occupied": 4
+  },
+  {
+    "name": "interior_042",
+    "N": 4,
+    "file": "fixtures/interior_042.txt",
+    "sha256": "02142e162f5b08fe22d5fb5149fa0cc8da3a5f376835edd37debbe8b88d0ce55",
+    "occupied": 4
+  },
+  {
+    "name": "interior_043",
+    "N": 4,
+    "file": "fixtures/interior_043.txt",
+    "sha256": "1648dadd6a0e9516d410578071d846d45a20eb84d73074e016e700f1497d19ad",
+    "occupied": 4
+  },
+  {
+    "name": "interior_044",
+    "N": 4,
+    "file": "fixtures/interior_044.txt",
+    "sha256": "f62587242dd21a0f6d0da9291c234adaf0a26654ee10a941367465fc95effaee",
+    "occupied": 4
+  },
+  {
+    "name": "interior_045",
+    "N": 4,
+    "file": "fixtures/interior_045.txt",
+    "sha256": "ed226fb277564fe95c2f549d47c6afb8fbcdfe736312d9fdad6e98041232fc2e",
+    "occupied": 4
+  },
+  {
+    "name": "interior_046",
+    "N": 4,
+    "file": "fixtures/interior_046.txt",
+    "sha256": "621a46c8ad8ecd4f1511d4d20fc4f3cedc298d7826009791e16d1ed4bb7f89fe",
+    "occupied": 4
+  },
+  {
+    "name": "interior_047",
+    "N": 4,
+    "file": "fixtures/interior_047.txt",
+    "sha256": "25941f75bddaf331fd590da4c421d95197b6c9e3f95dd029e43d3597764a319f",
+    "occupied": 4
+  },
+  {
+    "name": "interior_048",
+    "N": 4,
+    "file": "fixtures/interior_048.txt",
+    "sha256": "8e33af5fc11be923e250e6d84d0124b2140000cb27a86e6fdc54d9297fc5319f",
+    "occupied": 4
+  },
+  {
+    "name": "interior_049",
+    "N": 4,
+    "file": "fixtures/interior_049.txt",
+    "sha256": "de4bf4eead383a4bc4305ae99fa485fbf21d0bb02c49d99a63d4b9210dc5b78a",
+    "occupied": 4
+  },
+  {
+    "name": "interior_050",
+    "N": 4,
+    "file": "fixtures/interior_050.txt",
+    "sha256": "f3a819e5087dc4ea71f573c1875a8fcbc2f7b3314d6e466d217cad6aec4a9572",
+    "occupied": 4
+  },
+  {
+    "name": "interior_051",
+    "N": 4,
+    "file": "fixtures/interior_051.txt",
+    "sha256": "323d3d2cdf9f360bfdcbba43592ccc7c2c805b50c8bc2ccd91d4f9e8f799c17b",
+    "occupied": 4
+  },
+  {
+    "name": "interior_052",
+    "N": 4,
+    "file": "fixtures/interior_052.txt",
+    "sha256": "49e71890ae36962657b255300351a187d27086b996ef2757b7b324e1a7ad7300",
+    "occupied": 4
+  },
+  {
+    "name": "interior_053",
+    "N": 4,
+    "file": "fixtures/interior_053.txt",
+    "sha256": "400a634f3689b5badaa9860d438a7b320ba1fcd3a3b4a40e8b9c9c79aebb5bf0",
+    "occupied": 4
+  },
+  {
+    "name": "interior_054",
+    "N": 4,
+    "file": "fixtures/interior_054.txt",
+    "sha256": "b3f66e76dc0f0d8f6291376e8dc06403618c06862f5e90933bc66df4c0f867e1",
+    "occupied": 4
+  },
+  {
+    "name": "interior_055",
+    "N": 4,
+    "file": "fixtures/interior_055.txt",
+    "sha256": "6f359eeb85a1cce701e9b970608700a62a1824491aed6c67f54562f64d5bce48",
+    "occupied": 6
+  },
+  {
+    "name": "interior_056",
+    "N": 4,
+    "file": "fixtures/interior_056.txt",
+    "sha256": "a059606bec471e273a1fe61d6078534c81317369bf928d75a47575d90b8dcfc4",
+    "occupied": 6
+  },
+  {
+    "name": "interior_057",
+    "N": 4,
+    "file": "fixtures/interior_057.txt",
+    "sha256": "f4e5d22c38331fe848289233b435ec5f583869fb5ef231074ac4f2b0fc09ea7e",
+    "occupied": 6
+  },
+  {
+    "name": "interior_058",
+    "N": 4,
+    "file": "fixtures/interior_058.txt",
+    "sha256": "e9f3ba2f57e0fa4f58ea0f693d0c26b858d33b563996b9754fa31d624cafb994",
+    "occupied": 6
+  },
+  {
+    "name": "interior_059",
+    "N": 4,
+    "file": "fixtures/interior_059.txt",
+    "sha256": "c23cfcb6ed8e2e57dc88db6c20364ecedd96e76903013463e76b6896058bbcb1",
+    "occupied": 6
+  },
+  {
+    "name": "interior_060",
+    "N": 4,
+    "file": "fixtures/interior_060.txt",
+    "sha256": "51c68eb50b1a2836cc6ecc207df0bc34a8828147b12bb7e037a0978d0fe190da",
+    "occupied": 6
+  },
+  {
+    "name": "interior_061",
+    "N": 4,
+    "file": "fixtures/interior_061.txt",
+    "sha256": "aa410279ff34d698a2c02d10d250a38e9de26184b59456739a9e49f0d73a67e9",
+    "occupied": 6
+  },
+  {
+    "name": "interior_062",
+    "N": 4,
+    "file": "fixtures/interior_062.txt",
+    "sha256": "63042a62f3e294d6de47595376ca5cd69fa59b55e64e65b8ad62aba1c9890934",
+    "occupied": 6
+  },
+  {
+    "name": "interior_063",
+    "N": 4,
+    "file": "fixtures/interior_063.txt",
+    "sha256": "5183a5b04d13743f2254391a672db475578e37dd05ed0987796091d793fb7647",
+    "occupied": 6
+  },
+  {
+    "name": "interior_064",
+    "N": 4,
+    "file": "fixtures/interior_064.txt",
+    "sha256": "d3008f92d9ae4749367afa310c86c5c54f43c1960f2ab6fb63c7188516707f05",
+    "occupied": 6
+  },
+  {
+    "name": "interior_065",
+    "N": 4,
+    "file": "fixtures/interior_065.txt",
+    "sha256": "e66ec4b1ac72622e87084fb69e1077669b0e419d04bb6fc586d98b959d219b88",
+    "occupied": 6
+  },
+  {
+    "name": "interior_066",
+    "N": 4,
+    "file": "fixtures/interior_066.txt",
+    "sha256": "6ea379d87cbb0de18bdf2d4b665ffa2188d7257a2b94786548756efca1d1ed85",
+    "occupied": 6
+  },
+  {
+    "name": "interior_067",
+    "N": 4,
+    "file": "fixtures/interior_067.txt",
+    "sha256": "633e123f4568f53e2f323d6b13c7b3fdd098965071c2fe5f9311c86b992999fe",
+    "occupied": 6
+  },
+  {
+    "name": "interior_068",
+    "N": 4,
+    "file": "fixtures/interior_068.txt",
+    "sha256": "5e471081e564ff6970d53af75bbe3c3847444b61877f1ef1d0d6cb8f48c294c2",
+    "occupied": 6
+  },
+  {
+    "name": "interior_069",
+    "N": 4,
+    "file": "fixtures/interior_069.txt",
+    "sha256": "0a7885565ef7f80b1c399d6b90801baa4dfb79243a7530e6ba2964772214b0a2",
+    "occupied": 6
+  },
+  {
+    "name": "interior_070",
+    "N": 4,
+    "file": "fixtures/interior_070.txt",
+    "sha256": "564335888b1880c9579949d325a6ae7c4881f45e902a79c53e2d0ec38ce8746c",
+    "occupied": 6
+  },
+  {
+    "name": "interior_071",
+    "N": 4,
+    "file": "fixtures/interior_071.txt",
+    "sha256": "e5565112e9aaa72b527e7a5f64ba061f7ddb624704dc8d6cf2f2c533403d7906",
+    "occupied": 6
+  },
+  {
+    "name": "interior_072",
+    "N": 4,
+    "file": "fixtures/interior_072.txt",
+    "sha256": "22c88003b55b4ab74b2498ad417795b30efd9747b43e66834b3a1ed7990e1a9a",
+    "occupied": 6
+  },
+  {
+    "name": "interior_073",
+    "N": 4,
+    "file": "fixtures/interior_073.txt",
+    "sha256": "2fcafb677c7726b730c70d71fd8cc2db98d46b68ee9d993fe167bc83f22c4b61",
+    "occupied": 6
+  },
+  {
+    "name": "interior_074",
+    "N": 4,
+    "file": "fixtures/interior_074.txt",
+    "sha256": "cafa62df8d39a1594574dafe808f730619ad57cb10d1dca6bf3934f07c65623e",
+    "occupied": 6
+  },
+  {
+    "name": "interior_075",
+    "N": 4,
+    "file": "fixtures/interior_075.txt",
+    "sha256": "97dda62e7dd7031269aeb0655d37d4bf24bcd357ff32ccf745caf9c8e3296a8f",
+    "occupied": 6
+  },
+  {
+    "name": "interior_076",
+    "N": 4,
+    "file": "fixtures/interior_076.txt",
+    "sha256": "7f370dedf79494b18e7961672f7b519479591c1a9ff0723b913aaaca975b6ff5",
+    "occupied": 6
+  },
+  {
+    "name": "interior_077",
+    "N": 4,
+    "file": "fixtures/interior_077.txt",
+    "sha256": "913da80688696b1d92bc60330f08c77699c26b630d7f76c60677167440dd965c",
+    "occupied": 6
+  },
+  {
+    "name": "interior_078",
+    "N": 4,
+    "file": "fixtures/interior_078.txt",
+    "sha256": "16d8f55ab5d37836e5cc7c4a20c7f61ff90eddc4a29af92d45fe96577a3c6cc7",
+    "occupied": 6
+  },
+  {
+    "name": "interior_079",
+    "N": 4,
+    "file": "fixtures/interior_079.txt",
+    "sha256": "4341afafe9bcabc5a5dcf6c87e7c18df569c796f1f6970b6b577aa213d52b776",
+    "occupied": 6
+  },
+  {
+    "name": "interior_080",
+    "N": 4,
+    "file": "fixtures/interior_080.txt",
+    "sha256": "7cc4813210b6aa953709a791689045abcf4df01bd36d84669ebe5f071369483d",
+    "occupied": 6
+  },
+  {
+    "name": "interior_081",
+    "N": 4,
+    "file": "fixtures/interior_081.txt",
+    "sha256": "0f42171c829afae2e5cff97c5a176260899fb43116ac78d9cbf60059c7f5f81e",
+    "occupied": 6
+  },
+  {
+    "name": "interior_082",
+    "N": 4,
+    "file": "fixtures/interior_082.txt",
+    "sha256": "26959e8627dee3c4e81a9b58f146263f5a1e4895eb477ff42f307e2b6f1b186e",
+    "occupied": 6
+  },
+  {
+    "name": "interior_083",
+    "N": 4,
+    "file": "fixtures/interior_083.txt",
+    "sha256": "d018cbf3f647721c979250cfded395f592d376dd3f6eaf395d331794d85d415d",
+    "occupied": 6
+  },
+  {
+    "name": "interior_084",
+    "N": 4,
+    "file": "fixtures/interior_084.txt",
+    "sha256": "405c07efbdb2b1e64edba068b4c2a8896afbf1e572e484bf050c7992142c23b4",
+    "occupied": 6
+  },
+  {
+    "name": "interior_085",
+    "N": 4,
+    "file": "fixtures/interior_085.txt",
+    "sha256": "0c60cbaa9f15d174251a848b9a24bc16b360d3a24284a516ea2ba92385d31069",
+    "occupied": 6
+  },
+  {
+    "name": "interior_086",
+    "N": 4,
+    "file": "fixtures/interior_086.txt",
+    "sha256": "6683f4777d20083f05984b8575f1a0d42320d95d4ce1c0a49d72634fd2d0d7a6",
+    "occupied": 6
+  },
+  {
+    "name": "interior_087",
+    "N": 4,
+    "file": "fixtures/interior_087.txt",
+    "sha256": "1d3bfeb8d3644193a78425dde361e70f4977a96c51b9454d6331ba4e3fc756fb",
+    "occupied": 6
+  },
+  {
+    "name": "interior_088",
+    "N": 4,
+    "file": "fixtures/interior_088.txt",
+    "sha256": "fbe2396a9409cb6b44b9c1f089b50dcc00e1079614bfdad857add11275eba45a",
+    "occupied": 6
+  },
+  {
+    "name": "interior_089",
+    "N": 4,
+    "file": "fixtures/interior_089.txt",
+    "sha256": "36f4db19d1ac1b4cdd21c8f3f687fce03dbbfe8a80a36d585df38f39f275b32d",
+    "occupied": 6
+  },
+  {
+    "name": "interior_090",
+    "N": 4,
+    "file": "fixtures/interior_090.txt",
+    "sha256": "2b21be92297419a7021187c973d49423567051611cbe8b0593a9b9f9e4053223",
+    "occupied": 6
+  },
+  {
+    "name": "interior_091",
+    "N": 4,
+    "file": "fixtures/interior_091.txt",
+    "sha256": "6dd6dd777b93a486583335cf636dc69af08ffc27a2c0eeb3d627c2db621a2d84",
+    "occupied": 6
+  },
+  {
+    "name": "interior_092",
+    "N": 4,
+    "file": "fixtures/interior_092.txt",
+    "sha256": "7e5b9c368b4225c5e6b9f9dca1a1d7d94bf161753b63bcbd3ae817572ebd995d",
+    "occupied": 6
+  },
+  {
+    "name": "interior_093",
+    "N": 4,
+    "file": "fixtures/interior_093.txt",
+    "sha256": "703b32ebfc865cbd182d06f1fe9ad05cde7dfa52c1ba162df6b8e6de987626dc",
+    "occupied": 6
+  },
+  {
+    "name": "interior_094",
+    "N": 4,
+    "file": "fixtures/interior_094.txt",
+    "sha256": "f71e6a5afd02b5cccb6d476fa2f51304e3def25f842214eaa19344931b9d4e46",
+    "occupied": 6
+  },
+  {
+    "name": "interior_095",
+    "N": 4,
+    "file": "fixtures/interior_095.txt",
+    "sha256": "e7aa00f58823a586ac21ed9ed28d44bd97c0b41d7371e49170c2c7e54d8bdbc3",
+    "occupied": 6
+  },
+  {
+    "name": "interior_096",
+    "N": 4,
+    "file": "fixtures/interior_096.txt",
+    "sha256": "98a87869a645840089a121a66724fd6df2146f298e82810eeca99a4851a25082",
+    "occupied": 6
+  },
+  {
+    "name": "interior_097",
+    "N": 4,
+    "file": "fixtures/interior_097.txt",
+    "sha256": "6501ea4cb365f481572c01ad9f5b323c19d7c25302886dceab3a64f8e190827f",
+    "occupied": 6
+  },
+  {
+    "name": "interior_098",
+    "N": 4,
+    "file": "fixtures/interior_098.txt",
+    "sha256": "f211f935f16edf78197cf4f24cb328362f17bc7b7e08092121145060f76dec6f",
+    "occupied": 6
+  },
+  {
+    "name": "interior_099",
+    "N": 4,
+    "file": "fixtures/interior_099.txt",
+    "sha256": "b09b8cadf5a5bfd2d01110940a682ba712ffb2430000fe98e61668ab0c4c7b6e",
+    "occupied": 8
+  },
+  {
+    "name": "interior_100",
+    "N": 4,
+    "file": "fixtures/interior_100.txt",
+    "sha256": "4f80875cb8f5d4a65dc425efea2501416036399472c5f3ddebd126e93114f753",
+    "occupied": 8
+  },
+  {
+    "name": "interior_101",
+    "N": 4,
+    "file": "fixtures/interior_101.txt",
+    "sha256": "1926591aeb9672bee7f20e9be822861747840a773c922b698d1c58b90cd20396",
+    "occupied": 8
+  },
+  {
+    "name": "interior_102",
+    "N": 4,
+    "file": "fixtures/interior_102.txt",
+    "sha256": "a9e7cf2a6c94857e77df0a9b8e1becd0857d0125307bfd18c3395cdbe3aac4ca",
+    "occupied": 8
+  },
+  {
+    "name": "interior_103",
+    "N": 4,
+    "file": "fixtures/interior_103.txt",
+    "sha256": "566187a4c29bb2e936655a57890fcf862f6082a5e3b2d9975766a7c4366a58d8",
+    "occupied": 8
+  },
+  {
+    "name": "interior_104",
+    "N": 4,
+    "file": "fixtures/interior_104.txt",
+    "sha256": "7c75cb06f5c60aabaca2f3dc1aba3f55149021a28abe64cf77179ebba95623e5",
+    "occupied": 8
+  },
+  {
+    "name": "interior_105",
+    "N": 4,
+    "file": "fixtures/interior_105.txt",
+    "sha256": "820f191d59194252a999e6cbc8080894b8072bfacf5c0bfb7890ee9957ad879a",
+    "occupied": 8
+  },
+  {
+    "name": "interior_106",
+    "N": 4,
+    "file": "fixtures/interior_106.txt",
+    "sha256": "2a9c7a4b2f55d5b20f0015e2cb9905ae6e7c73c60f98d241d3cf851213aa6729",
+    "occupied": 8
+  },
+  {
+    "name": "interior_107",
+    "N": 4,
+    "file": "fixtures/interior_107.txt",
+    "sha256": "4f26027a65f95f876254cdc189e5dde3429b0af8036a4325e082db7114c7a34f",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_000",
+    "N": 4,
+    "file": "fixtures/periodic_000.txt",
+    "sha256": "3b6715f34f2ff81364389fc87b1d5bb97f072e48eb98c52e5a1c13c1bdf36c67",
+    "occupied": 0
+  },
+  {
+    "name": "periodic_001",
+    "N": 4,
+    "file": "fixtures/periodic_001.txt",
+    "sha256": "6eeda3f1a38adb5fc2f08f7ac6b6ba1f56f92d293125a561ad35a9b60f5f6022",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_002",
+    "N": 4,
+    "file": "fixtures/periodic_002.txt",
+    "sha256": "037a3e5f5a11ac51933c10ee5dc7a4f2601b71b699e11c2e0b59de26ad5a9fda",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_003",
+    "N": 4,
+    "file": "fixtures/periodic_003.txt",
+    "sha256": "ce545bbf7ea72510867f3ad0f09ea08948d9737da92118f349e204cc2cd6b6fb",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_004",
+    "N": 4,
+    "file": "fixtures/periodic_004.txt",
+    "sha256": "66579aef57b6347dd4c29c9759d2df961dba085e43e6dd6c4bd6901ce349a068",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_005",
+    "N": 4,
+    "file": "fixtures/periodic_005.txt",
+    "sha256": "fbdef35b4638f1898ef7a332f49a6966f48bfa29b7a6e38783901f34852775dd",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_006",
+    "N": 4,
+    "file": "fixtures/periodic_006.txt",
+    "sha256": "4dbc64c21a1ede658ab10d33138be1762d42cdc916bb82238a57c68243460ed1",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_007",
+    "N": 4,
+    "file": "fixtures/periodic_007.txt",
+    "sha256": "a72288fa291a495d9b5e1392ba5fe51f27cef9abc16165e28a80a4b3b20e625c",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_008",
+    "N": 4,
+    "file": "fixtures/periodic_008.txt",
+    "sha256": "d961823f948d6e451f3ad82c32263bc50cce928e40a595b0abfa2f0ce808a161",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_009",
+    "N": 4,
+    "file": "fixtures/periodic_009.txt",
+    "sha256": "8c34101042675fe66933486fa383dd36ac5a2534632960023f72d817af0c58c0",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_010",
+    "N": 4,
+    "file": "fixtures/periodic_010.txt",
+    "sha256": "6a2d22664c033d9b2d3fbe7f32b4be278838e3bdfa9750a4c5cf3f2a3b94daab",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_011",
+    "N": 4,
+    "file": "fixtures/periodic_011.txt",
+    "sha256": "7bf16c3f8f924528ef9212ad1b494948360dd99cd5e3a923369cc39efeaa031e",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_012",
+    "N": 4,
+    "file": "fixtures/periodic_012.txt",
+    "sha256": "dcf8bffa66cda4975455ad545cbe08ff3b10a2e34b078a4f0fc3b3b2d0f47daa",
+    "occupied": 2
+  },
+  {
+    "name": "periodic_013",
+    "N": 4,
+    "file": "fixtures/periodic_013.txt",
+    "sha256": "1463e452968eaf4a8e040a9fe3deb8859637a263f2f2e110c01bbe259686dc26",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_014",
+    "N": 4,
+    "file": "fixtures/periodic_014.txt",
+    "sha256": "fad16f8d237993b6bfaf94bc5bfaaa14a5265a3ca68888590f8d991c582d9b69",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_015",
+    "N": 4,
+    "file": "fixtures/periodic_015.txt",
+    "sha256": "1e3d5d876e9782eb5b5f70658c766c43bf304adad2bf249dcfa02251b701801e",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_016",
+    "N": 4,
+    "file": "fixtures/periodic_016.txt",
+    "sha256": "5a81890ef4cfa87bafe73c167753c7c5ff6dc8c8e6fbc62e7959e16e4fd1cb9d",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_017",
+    "N": 4,
+    "file": "fixtures/periodic_017.txt",
+    "sha256": "f72a8de92a21a6b82908a6325dccba1f3fe7fded4182e82400104f9fd9bf6db7",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_018",
+    "N": 4,
+    "file": "fixtures/periodic_018.txt",
+    "sha256": "eb2b0ececfacd6344b498bf9c89f0adb641f82319990e78bc21cb19db60e4325",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_019",
+    "N": 4,
+    "file": "fixtures/periodic_019.txt",
+    "sha256": "b2b89ab833d89f7b697888b415e5ff02b9091087135f7df191d2b72f7acf3b68",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_020",
+    "N": 4,
+    "file": "fixtures/periodic_020.txt",
+    "sha256": "da41a36719e8c96194c0dff0bb72dd531ed5d87c06d61ad4a5d723b725714b58",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_021",
+    "N": 4,
+    "file": "fixtures/periodic_021.txt",
+    "sha256": "4868cfe5495162fafe8e860dc1c3fc0c4cdf74c5a2108caf25cd7180d0c3106d",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_022",
+    "N": 4,
+    "file": "fixtures/periodic_022.txt",
+    "sha256": "7573af17f1873137318054c46bf9bdfeb897d0cc6a82c678fe6cf7a98a5be35a",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_023",
+    "N": 4,
+    "file": "fixtures/periodic_023.txt",
+    "sha256": "e9247b5032e08e1b0fff14b0039db6e18c989d9a966803c18b1c3b9c558a9437",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_024",
+    "N": 4,
+    "file": "fixtures/periodic_024.txt",
+    "sha256": "4c8491caf8f52871300edabbee9effd8c7754e974020050356d1ccca053eb0c8",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_025",
+    "N": 4,
+    "file": "fixtures/periodic_025.txt",
+    "sha256": "17c151576e3730dfaf0c5120e9526651820155e55208a778c185cf003b701f1b",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_026",
+    "N": 4,
+    "file": "fixtures/periodic_026.txt",
+    "sha256": "f05ecd6cc2c1b9538f773e71992be3630df9ed87940bba7507e938b38c839b6e",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_027",
+    "N": 4,
+    "file": "fixtures/periodic_027.txt",
+    "sha256": "d47b55d2ed404c113c83f8b8e7510499dfe88fe8ade04fb016016c985776de69",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_028",
+    "N": 4,
+    "file": "fixtures/periodic_028.txt",
+    "sha256": "6514c2dbe1236dfb0dd279b76dc337e0e5847daede3a3598d0c8abb5393133f5",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_029",
+    "N": 4,
+    "file": "fixtures/periodic_029.txt",
+    "sha256": "60f952e55ab8016208e068263c850ff72fb5d5014673a71dd7bbbea99119fdea",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_030",
+    "N": 4,
+    "file": "fixtures/periodic_030.txt",
+    "sha256": "d1bdb019e02cfdd01b8b461023c4119d5925752345acf8822aa279b967984e56",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_031",
+    "N": 4,
+    "file": "fixtures/periodic_031.txt",
+    "sha256": "1a29e18952446904506729bde56e9a4aafdfb9077f43f71884fc40d219135b50",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_032",
+    "N": 4,
+    "file": "fixtures/periodic_032.txt",
+    "sha256": "88ff39201c2cd94d2dbcbe81c80f511249c007affaea480ebd4ac157a7d3baa8",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_033",
+    "N": 4,
+    "file": "fixtures/periodic_033.txt",
+    "sha256": "2d33e52461784279e4200a83deecac1f7d1eb0333c1198a336ab150b39311cbe",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_034",
+    "N": 4,
+    "file": "fixtures/periodic_034.txt",
+    "sha256": "91a4d0fa1213cbdbab2e0baee2616580841c98e328afe72a89fa90c38ad80d1f",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_035",
+    "N": 4,
+    "file": "fixtures/periodic_035.txt",
+    "sha256": "2576df5cb0f4cc2b6297b07c1f2eba071f2a6b497a564902a3b2962ef815dc50",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_036",
+    "N": 4,
+    "file": "fixtures/periodic_036.txt",
+    "sha256": "ba4127609bdb1fc2c1359855ab3008d5e25d7c13859249926a025d472ae60047",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_037",
+    "N": 4,
+    "file": "fixtures/periodic_037.txt",
+    "sha256": "9a19dc1335aa5ef2bb02674a1b923f792358648dcd2609f49de3bf2cec61e599",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_038",
+    "N": 4,
+    "file": "fixtures/periodic_038.txt",
+    "sha256": "19403f42d655911c3e556593df766e7fb043d2b7b79be810690a43d47f4c7db2",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_039",
+    "N": 4,
+    "file": "fixtures/periodic_039.txt",
+    "sha256": "62499fab151212e5e82a2f42de5056612e225cb2f2f05f2722d75089e09f611c",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_040",
+    "N": 4,
+    "file": "fixtures/periodic_040.txt",
+    "sha256": "492b8e0697d05445504503c2440729557638a5ac82f7addb71ead87bc10262f1",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_041",
+    "N": 4,
+    "file": "fixtures/periodic_041.txt",
+    "sha256": "dcca39d24aa07757617e72aba14dade6d0a8e054640fafd012f0fec71973bf84",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_042",
+    "N": 4,
+    "file": "fixtures/periodic_042.txt",
+    "sha256": "4ef92e1c5478b7f7377a85b82eb06a1b00a8c6013a7d82863b4fe297bfbb6232",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_043",
+    "N": 4,
+    "file": "fixtures/periodic_043.txt",
+    "sha256": "fd66e311d875f40878013c49bc02184bff8f7723d7185e1d9a5d05fe914addc8",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_044",
+    "N": 4,
+    "file": "fixtures/periodic_044.txt",
+    "sha256": "22b15f2cd8b5070b4c6aad3c08119d36f90fb57e2538a42f8613f2a0e4a79b80",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_045",
+    "N": 4,
+    "file": "fixtures/periodic_045.txt",
+    "sha256": "d6572f41923a72978f0b42864b33d02309b4431d8880ba9acdb59cd3b841cca7",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_046",
+    "N": 4,
+    "file": "fixtures/periodic_046.txt",
+    "sha256": "92eb8515a1e01a6008f580e7fdf2f4f84d6e0c510bf84469df4cd429b6c1fcad",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_047",
+    "N": 4,
+    "file": "fixtures/periodic_047.txt",
+    "sha256": "b5430553109b21c461042bfda8fe66b705b9e5200231796f76cc51ec14865585",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_048",
+    "N": 4,
+    "file": "fixtures/periodic_048.txt",
+    "sha256": "eefe5792bf8494dab8e7d5643a7c9297c1ba80bababca8afa6c0f3f6ba14b44b",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_049",
+    "N": 4,
+    "file": "fixtures/periodic_049.txt",
+    "sha256": "2fd76a9f7e11e4f312502297e9ddc2373ee3b353d6356ff0a13cb5b8332f1178",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_050",
+    "N": 4,
+    "file": "fixtures/periodic_050.txt",
+    "sha256": "d01d975521ea47f6430ae244b03f2b355488e7f2a599bafaa5eb783ff3876382",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_051",
+    "N": 4,
+    "file": "fixtures/periodic_051.txt",
+    "sha256": "3abf8716afeb1d2ee92cbf92dadc0f02d4a6084ed89a30657bf48006485be546",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_052",
+    "N": 4,
+    "file": "fixtures/periodic_052.txt",
+    "sha256": "6afe079b20872408fd443503f29d479ebb8ca728a49d3ac8c396308855b384f8",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_053",
+    "N": 4,
+    "file": "fixtures/periodic_053.txt",
+    "sha256": "cc2cc180a3d251ff36300ec6d3cf5a06bbbc1f8f9b6b539d3b2b05c220af8999",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_054",
+    "N": 4,
+    "file": "fixtures/periodic_054.txt",
+    "sha256": "e2d0f995c584fd096ef5b379a7c3b3a8ee8dbecabc9a61d1dc025b37c1b1659c",
+    "occupied": 4
+  },
+  {
+    "name": "periodic_055",
+    "N": 4,
+    "file": "fixtures/periodic_055.txt",
+    "sha256": "72f09671830296d679f4ae6be6b946804f09fee6b4ef5ef1f058f5adc31cce53",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_056",
+    "N": 4,
+    "file": "fixtures/periodic_056.txt",
+    "sha256": "5edc8e8061562ba2fd895b2803e149ddb31a6e3e605a810167d923738c934a1c",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_057",
+    "N": 4,
+    "file": "fixtures/periodic_057.txt",
+    "sha256": "b784800c2a5eaf09bd6ce6dc32c1ba2afbd32321c6f7b70c3b3c315ab5916849",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_058",
+    "N": 4,
+    "file": "fixtures/periodic_058.txt",
+    "sha256": "206ff64551598ff8c9ba3f7c3f70663fecfd0a2ea7e8cb14173a6c9abb3da347",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_059",
+    "N": 4,
+    "file": "fixtures/periodic_059.txt",
+    "sha256": "db6eb280b4d1de7946837ce989280592825da5869e316c4012be88077d838a9c",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_060",
+    "N": 4,
+    "file": "fixtures/periodic_060.txt",
+    "sha256": "c736c0c5f7480715bdd53855a829bf39101aab842cce03a0b0df3383928133be",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_061",
+    "N": 4,
+    "file": "fixtures/periodic_061.txt",
+    "sha256": "a4191db03e6b854b3ccf2220616c944dfda028cb1e6fd8ea19c47951a8d0c13f",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_062",
+    "N": 4,
+    "file": "fixtures/periodic_062.txt",
+    "sha256": "795c19031510754219ff0d37d16cf56edeaee09ecbf760d4f7f8a8a7d8d46c21",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_063",
+    "N": 4,
+    "file": "fixtures/periodic_063.txt",
+    "sha256": "64677330cab4cae2accc83e2e073b975cd3211d47fbbd57d9851a30d51d3a887",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_064",
+    "N": 4,
+    "file": "fixtures/periodic_064.txt",
+    "sha256": "5dfabb6dcc7049c311a030aa6ecaa6d7005019839982904afa3c6c9e9ab1733e",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_065",
+    "N": 4,
+    "file": "fixtures/periodic_065.txt",
+    "sha256": "9c9094b63ba0d069497b1fc3c63d8794244c4cd86357575e8d68f0d305fac87f",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_066",
+    "N": 4,
+    "file": "fixtures/periodic_066.txt",
+    "sha256": "b3392fc43216dde66f64feeca9b34136407910ac62f58922fc438b3d7e6c1229",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_067",
+    "N": 4,
+    "file": "fixtures/periodic_067.txt",
+    "sha256": "fb641f720278e3fc5e991cff18fdab16f48feaf58bbffe07958ba6ed2ef4df80",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_068",
+    "N": 4,
+    "file": "fixtures/periodic_068.txt",
+    "sha256": "11dc02b99ab398a4df71eef045bcb3d9380413ac08018c52cf31fee09c969196",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_069",
+    "N": 4,
+    "file": "fixtures/periodic_069.txt",
+    "sha256": "8ce427b5baf580bcd699d4f104e2e796661836972593c3eeca61bd867f6702a5",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_070",
+    "N": 4,
+    "file": "fixtures/periodic_070.txt",
+    "sha256": "3af769c83dd8c05d94c7ab1689fcb96dd98378d0835fcc1c67e047526e7f2044",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_071",
+    "N": 4,
+    "file": "fixtures/periodic_071.txt",
+    "sha256": "69a3588c466ae3104af772ed57a226e9b5c7e27d2c72328ccbf88e84fceaf15e",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_072",
+    "N": 4,
+    "file": "fixtures/periodic_072.txt",
+    "sha256": "2432d699ebd4a300f74688af1b1e94c7b5b29a64381b25dedbc38bc49f2a2044",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_073",
+    "N": 4,
+    "file": "fixtures/periodic_073.txt",
+    "sha256": "3fd28e89ae7a2d8f264d656fda481a61ef670628cf80463c3977128b1c59253c",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_074",
+    "N": 4,
+    "file": "fixtures/periodic_074.txt",
+    "sha256": "7dae05f31942b15fe260891dd21081b89b8356c1f8a4f34c142d97850b0f182d",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_075",
+    "N": 4,
+    "file": "fixtures/periodic_075.txt",
+    "sha256": "4b1281992209d8d558b0238567f91149aeb4da2d59a4c127b69aa862b9e13c9e",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_076",
+    "N": 4,
+    "file": "fixtures/periodic_076.txt",
+    "sha256": "99ecae38bd9229e3274688f2d307520473fe6bd6859cd120b4532f9e396cafd1",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_077",
+    "N": 4,
+    "file": "fixtures/periodic_077.txt",
+    "sha256": "c4a8a99d8e62ab516bd445ead6aee5593f289b7f5702ef27a5e3991fe4454b9e",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_078",
+    "N": 4,
+    "file": "fixtures/periodic_078.txt",
+    "sha256": "3485a9efce1d3d1872dbc52006f8691b386b6f5e8290266f2bab5bf0aa832e12",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_079",
+    "N": 4,
+    "file": "fixtures/periodic_079.txt",
+    "sha256": "a62d0a467884c2f054090bebd239b2416ab36212407621f7000268ccbb588152",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_080",
+    "N": 4,
+    "file": "fixtures/periodic_080.txt",
+    "sha256": "1c14550ea1d0ba58c8a2e408d5107955b2028ea597038c88d0dfc353ac08e82c",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_081",
+    "N": 4,
+    "file": "fixtures/periodic_081.txt",
+    "sha256": "cd6c74a54d38c717f6c37018b25a0f1a629c15460e4eeaf0828452d41171defa",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_082",
+    "N": 4,
+    "file": "fixtures/periodic_082.txt",
+    "sha256": "f434e9fb4098c94e410b505d17696dfe5249a59704a64eb800ca97732fe234be",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_083",
+    "N": 4,
+    "file": "fixtures/periodic_083.txt",
+    "sha256": "5b28c8927a87dda74ab1a211914ab9fdc9ed9a3c00b26060d9cab6fb78e2a9ea",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_084",
+    "N": 4,
+    "file": "fixtures/periodic_084.txt",
+    "sha256": "2727ba7df6f62a69fa2fe50be7947383d5a4ca8b26370c6333a5bcdea1bf357a",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_085",
+    "N": 4,
+    "file": "fixtures/periodic_085.txt",
+    "sha256": "a7332937a0409e6221b59a954f235cb5b8c117847702f2b34310e512ef9cbefd",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_086",
+    "N": 4,
+    "file": "fixtures/periodic_086.txt",
+    "sha256": "c9da43cfe28187d5e307e3c404e8d730de8f8f75c45fa02634701a8acc0adfb4",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_087",
+    "N": 4,
+    "file": "fixtures/periodic_087.txt",
+    "sha256": "7fa1471011ce6c8ef8f9565b547e22f42b6c3686d7eef3fc850b2b698877c908",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_088",
+    "N": 4,
+    "file": "fixtures/periodic_088.txt",
+    "sha256": "a8dbf3c92287397b627c4e6b32c54d88306a46147b2e9a6a6dbdba7af29988b1",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_089",
+    "N": 4,
+    "file": "fixtures/periodic_089.txt",
+    "sha256": "727210de84d253ff60ff7e59187245462dc6c2cdb4568ac423300178f5e7263a",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_090",
+    "N": 4,
+    "file": "fixtures/periodic_090.txt",
+    "sha256": "31a5b30581e00be78302fcb116b6802cdf927efb3093e49077742efb1d8a149f",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_091",
+    "N": 4,
+    "file": "fixtures/periodic_091.txt",
+    "sha256": "9b893f0084e29170c5d884216560a9a94620515f0b7a6c2da5d9768889feb439",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_092",
+    "N": 4,
+    "file": "fixtures/periodic_092.txt",
+    "sha256": "8c29307447011bcd8bedbc94ec7ced7bfaf9e1eb957c57ddc6e4d41c93647bc8",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_093",
+    "N": 4,
+    "file": "fixtures/periodic_093.txt",
+    "sha256": "b6367646d8f934da2c2e1582d3421959f5e835d71b4080703b2b36a884e19055",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_094",
+    "N": 4,
+    "file": "fixtures/periodic_094.txt",
+    "sha256": "f0a2524145e9e50cc925bd773b79e90a49b664d70f2ba97a9fa7d7d836c2f988",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_095",
+    "N": 4,
+    "file": "fixtures/periodic_095.txt",
+    "sha256": "2654841a0aeefc2c9b95938ae82fa4b7271a5be45e830f9b49e3f9abc7dabd2a",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_096",
+    "N": 4,
+    "file": "fixtures/periodic_096.txt",
+    "sha256": "90bf8bd3b6dc162e83dc2e4d68bb2fd9c73ec530687ffb379076d5b58cd33f21",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_097",
+    "N": 4,
+    "file": "fixtures/periodic_097.txt",
+    "sha256": "0f331e3f2da862e0b479b02b1dbaef90505e9593d57544eccc4ad58cfb7b4933",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_098",
+    "N": 4,
+    "file": "fixtures/periodic_098.txt",
+    "sha256": "2c39a0879fc7b3f92624ac044b00eece9b32274f4eaa2e9bd1b7b3411f84c71d",
+    "occupied": 6
+  },
+  {
+    "name": "periodic_099",
+    "N": 4,
+    "file": "fixtures/periodic_099.txt",
+    "sha256": "bc80802d226f1142ab05161c5aad90ca37a8325ef4ed5a5e2ed43bc6c34a8c7a",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_100",
+    "N": 4,
+    "file": "fixtures/periodic_100.txt",
+    "sha256": "461d79d84e6b77e09342d87e31981c27ab31d584b8d7d43766753b88488b4004",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_101",
+    "N": 4,
+    "file": "fixtures/periodic_101.txt",
+    "sha256": "93ed4f55ea4e26b831dff90e995e6f9097ccdd0e318ca405faf90bc7e0b383c0",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_102",
+    "N": 4,
+    "file": "fixtures/periodic_102.txt",
+    "sha256": "e1b10f33de22b8eecf7b6878f0fae1c817d460b8e57b1ae7305bd590415f524a",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_103",
+    "N": 4,
+    "file": "fixtures/periodic_103.txt",
+    "sha256": "9cf8e2f7e57dad9553c0f1348cca13542e67ea904411a8b9f66caeb367b7af40",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_104",
+    "N": 4,
+    "file": "fixtures/periodic_104.txt",
+    "sha256": "2c4bb5cdef4a04fdea8b173c80e5c657f33e1c3d4d5fff6428eb728359df5152",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_105",
+    "N": 4,
+    "file": "fixtures/periodic_105.txt",
+    "sha256": "437300f275883f07b1f9c4d0fa8245055da3354a9fb0d1e0857f46d1b5e5899e",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_106",
+    "N": 4,
+    "file": "fixtures/periodic_106.txt",
+    "sha256": "b4349c60c56d73dfcff4aae5bbee9cef302172effdd8c701c341be85284cd3d0",
+    "occupied": 8
+  },
+  {
+    "name": "periodic_107",
+    "N": 4,
+    "file": "fixtures/periodic_107.txt",
+    "sha256": "b52cbe33f3c2a6b876c0cb2096260a42beb76fa934735f76efaf6487aca793bb",
+    "occupied": 8
+  },
+  {
+    "name": "full_N4_axis0_wind0",
+    "N": 4,
+    "file": "fixtures/full_N4_axis0_wind0.txt",
+    "sha256": "554ab65fd4c63560e61845d854b6afe30e62595ad3e2bfe6989d19dfc87b75c4",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis0_wind0_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis0_wind0_one_pair_removed.txt",
+    "sha256": "ad84dc36899005ae5d516449d6c5926d0fb9447176fcbd2bd5e83b5bcf6e621f",
+    "occupied": 62
+  },
+  {
+    "name": "full_N4_axis0_wind1",
+    "N": 4,
+    "file": "fixtures/full_N4_axis0_wind1.txt",
+    "sha256": "697c3cdfae7ef2be1cc0f99ab054e403ef81d765cb280d322749327b4ac90a09",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis0_wind1_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis0_wind1_one_pair_removed.txt",
+    "sha256": "2e2ed1f77fd84a38f5135059fc2c165b4920dac03821c8091c7edcbc5a9d1782",
+    "occupied": 62
+  },
+  {
+    "name": "full_N4_axis1_wind0",
+    "N": 4,
+    "file": "fixtures/full_N4_axis1_wind0.txt",
+    "sha256": "5bd70cb4c4bf7dab9a00518137c95c0cf2a86141ab07a72faddcacca0f06f03d",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis1_wind0_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis1_wind0_one_pair_removed.txt",
+    "sha256": "df388cc20b89b9ffd1ddad2edb5d64d2b425a0483a2ce94b1e2dad605f5a027c",
+    "occupied": 62
+  },
+  {
+    "name": "full_N4_axis1_wind1",
+    "N": 4,
+    "file": "fixtures/full_N4_axis1_wind1.txt",
+    "sha256": "6be4fbddcaa604c6279ce1285b649bf8489f9399a8493ed03cb1ffecbb75a065",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis1_wind1_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis1_wind1_one_pair_removed.txt",
+    "sha256": "31927aa6bf66f543c97bfa224610a7a1d5dc9cb68bd18cdcfe254ba87d901c02",
+    "occupied": 62
+  },
+  {
+    "name": "full_N4_axis2_wind0",
+    "N": 4,
+    "file": "fixtures/full_N4_axis2_wind0.txt",
+    "sha256": "b52cf8893423e9263e4e24aa79d415a6b1f9800590dc34534fcada273400937c",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis2_wind0_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis2_wind0_one_pair_removed.txt",
+    "sha256": "8d5a6443aea0896bbd8c3a85269e5a4ddaa7f174c0c4f2043c34d69aa4f27398",
+    "occupied": 62
+  },
+  {
+    "name": "full_N4_axis2_wind1",
+    "N": 4,
+    "file": "fixtures/full_N4_axis2_wind1.txt",
+    "sha256": "1fde4575f1d62376b45f1599fc3f890a2ed9fbab0ff3177844dfb2cd817b44e3",
+    "occupied": 64
+  },
+  {
+    "name": "full_N4_axis2_wind1_one_pair_removed",
+    "N": 4,
+    "file": "fixtures/full_N4_axis2_wind1_one_pair_removed.txt",
+    "sha256": "58df456594274f7bfc8186e316dcad8fe5fb8a0a9d205714c60447ed11618178",
+    "occupied": 62
+  },
+  {
+    "name": "empty_N4",
+    "N": 4,
+    "file": "fixtures/empty_N4.txt",
+    "sha256": "3b6715f34f2ff81364389fc87b1d5bb97f072e48eb98c52e5a1c13c1bdf36c67",
+    "occupied": 0
+  },
+  {
+    "name": "full_N6_axis0_wind0",
+    "N": 6,
+    "file": "fixtures/full_N6_axis0_wind0.txt",
+    "sha256": "ae570383de0a2b11b9607350fb68e5506022af4ada3308cdd67320667ff2598a",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis0_wind0_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis0_wind0_one_pair_removed.txt",
+    "sha256": "34f417bb6d0cfd70a6e51f7997985c01139d4186f407c417148293d27bcd1133",
+    "occupied": 214
+  },
+  {
+    "name": "full_N6_axis0_wind1",
+    "N": 6,
+    "file": "fixtures/full_N6_axis0_wind1.txt",
+    "sha256": "c1bcce3420df18388190d88873e824334e9cbbe44e55a1e1251fc831f51700d1",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis0_wind1_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis0_wind1_one_pair_removed.txt",
+    "sha256": "8fe44b51e66720ba6004b2c4ab8880abd04ce56cc39985dcab8911fe7cf2ba0c",
+    "occupied": 214
+  },
+  {
+    "name": "full_N6_axis1_wind0",
+    "N": 6,
+    "file": "fixtures/full_N6_axis1_wind0.txt",
+    "sha256": "d3252494024fe01c5d8b9e3e4e3564f6dbf0e66586b4cdae4dd036a4e73b7447",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis1_wind0_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis1_wind0_one_pair_removed.txt",
+    "sha256": "9d1a0d882a940707713a7384807e8f2b5dd9837c3ac9de1e73769400663bd2e2",
+    "occupied": 214
+  },
+  {
+    "name": "full_N6_axis1_wind1",
+    "N": 6,
+    "file": "fixtures/full_N6_axis1_wind1.txt",
+    "sha256": "83fdc00cb11d62b6df93b37e65f6205dc911a22b4afed868df9353fefe4e8629",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis1_wind1_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis1_wind1_one_pair_removed.txt",
+    "sha256": "0b0729f41a23130b332239df68f2418caddbb4469eec659c39b4f4643ac54112",
+    "occupied": 214
+  },
+  {
+    "name": "full_N6_axis2_wind0",
+    "N": 6,
+    "file": "fixtures/full_N6_axis2_wind0.txt",
+    "sha256": "c9e39336b473051288106218fcc642a721d690beae6817f02cf9ec9477596aab",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis2_wind0_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis2_wind0_one_pair_removed.txt",
+    "sha256": "61faf0df409d31b626d9fc3fd137ff414fb712cb9e2c55261d86789d3de3284a",
+    "occupied": 214
+  },
+  {
+    "name": "full_N6_axis2_wind1",
+    "N": 6,
+    "file": "fixtures/full_N6_axis2_wind1.txt",
+    "sha256": "28d4f13b2eb05d51727f86d105760d7fdd9c5072ee03f3b9541681956edd1b3b",
+    "occupied": 216
+  },
+  {
+    "name": "full_N6_axis2_wind1_one_pair_removed",
+    "N": 6,
+    "file": "fixtures/full_N6_axis2_wind1_one_pair_removed.txt",
+    "sha256": "2f7766d8881778173daf27615edef48832432b507cb6c52ffc721f0f31ee9185",
+    "occupied": 214
+  },
+  {
+    "name": "empty_N6",
+    "N": 6,
+    "file": "fixtures/empty_N6.txt",
+    "sha256": "7daf6cfbf85255c4b8808d6ba092386a6c2261f6c905e6dd18f5d06ce94e9ebf",
+    "occupied": 0
+  },
+  {
+    "name": "full_mixed_orientation",
+    "N": 4,
+    "file": "fixtures/full_mixed_orientation.txt",
+    "sha256": "b605a0935445ae4647e250aee616896ef13eece1dcac7366ebc226fc86ce2766",
+    "occupied": 64
+  }
+]

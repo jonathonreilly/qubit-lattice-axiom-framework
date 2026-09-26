@@ -1,0 +1,329 @@
+{
+  "created_utc": "2026-09-21T16:48:21.555612+00:00",
+  "production_observable_values_read": false,
+  "selection_rule": "One-based declared replicate indices17 and41 in every cell, no outcome-dependent replacement",
+  "selected_endpoints": [
+    {
+      "N": 16,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210160017,
+      "name": "N16_b0.1_s210160017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b0.1_s210160017.state.npz"
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210160041,
+      "name": "N16_b0.1_s210160041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b0.1_s210160041.state.npz"
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210161017,
+      "name": "N16_b1_s210161017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b1_s210161017.state.npz"
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210161041,
+      "name": "N16_b1_s210161041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b1_s210161041.state.npz"
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210162017,
+      "name": "N16_b10_s210162017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b10_s210162017.state.npz"
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210162041,
+      "name": "N16_b10_s210162041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N16_b10_s210162041.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210320017,
+      "name": "N32_b0.1_s210320017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b0.1_s210320017.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210320041,
+      "name": "N32_b0.1_s210320041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b0.1_s210320041.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210321017,
+      "name": "N32_b1_s210321017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b1_s210321017.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210321041,
+      "name": "N32_b1_s210321041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b1_s210321041.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210322017,
+      "name": "N32_b10_s210322017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b10_s210322017.state.npz"
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210322041,
+      "name": "N32_b10_s210322041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N32_b10_s210322041.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210640017,
+      "name": "N64_b0.1_s210640017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b0.1_s210640017.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210640041,
+      "name": "N64_b0.1_s210640041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b0.1_s210640041.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210641017,
+      "name": "N64_b1_s210641017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b1_s210641017.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210641041,
+      "name": "N64_b1_s210641041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b1_s210641041.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 17,
+      "seed": 210642017,
+      "name": "N64_b10_s210642017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b10_s210642017.state.npz"
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 256,
+      "replicate_one_based": 41,
+      "seed": 210642041,
+      "name": "N64_b10_s210642041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N64_b10_s210642041.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 64,
+      "replicate_one_based": 17,
+      "seed": 211280017,
+      "name": "N128_b0.1_s211280017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b0.1_s211280017.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "beta_index": 0,
+      "declared_cell_size": 64,
+      "replicate_one_based": 41,
+      "seed": 211280041,
+      "name": "N128_b0.1_s211280041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b0.1_s211280041.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 64,
+      "replicate_one_based": 17,
+      "seed": 211281017,
+      "name": "N128_b1_s211281017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b1_s211281017.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "beta_index": 1,
+      "declared_cell_size": 64,
+      "replicate_one_based": 41,
+      "seed": 211281041,
+      "name": "N128_b1_s211281041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b1_s211281041.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 64,
+      "replicate_one_based": 17,
+      "seed": 211282017,
+      "name": "N128_b10_s211282017",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b10_s211282017.state.npz"
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "beta_index": 2,
+      "declared_cell_size": 64,
+      "replicate_one_based": 41,
+      "seed": 211282041,
+      "name": "N128_b10_s211282041",
+      "archive": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/N128_b10_s211282041.state.npz"
+    }
+  ],
+  "declared_modes": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      0
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      0,
+      -1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      0,
+      0
+    ]
+  ]
+}

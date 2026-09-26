@@ -1,0 +1,544 @@
+{
+  "created_utc": "2026-09-21T18:48:25.635902+00:00",
+  "complete_primary_sources_read": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+      "bytes": 4870,
+      "sha256": "d8cbfed1ba55a4a11048c7d68135f0ee7f6d0c98c38dc685e43bb43ead90952d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamics.cpp",
+      "bytes": 10682,
+      "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_setup.py",
+      "bytes": 8549,
+      "sha256": "ef662a36150dd8db8ea6831062c4f18cbb11b95397056c7e5fa16b60343b50dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_run.py",
+      "bytes": 5049,
+      "sha256": "ba650514d868c9fa6b6e4d023534243d99a78f19221c19a3a4276f82faa1c46b"
+    }
+  ],
+  "prior_review_reused_unchanged": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK.md",
+      "bytes": 2072,
+      "sha256": "73a39a5c56bf1b3113a86eb542e252e291b56bf30a134754e4165bea18b3cef9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK_SEAL.json",
+      "bytes": 17067,
+      "sha256": "5d8d706106c443df78680377df20578a7cbe4e32305a350ea2e7a1b0b66b0a8c"
+    }
+  ],
+  "historical_dispatch_construction_alias": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/DIMER_ROUTED_RECORD_TRANSPORT.before.md",
+    "bytes": 19545,
+    "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+  },
+  "external_authenticated_inputs_and_selected_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/DISPATCH.json",
+      "bytes": 3431,
+      "sha256": "6125c10998f7c49fe39112816adc981f32ce465a826692f923cff2ab1c75c060"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/MANIFEST.json",
+      "bytes": 673550,
+      "sha256": "4db87d1484554a0173ca07a43c82fdd6148604416b2674da7fe7a57b930acc00"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+      "bytes": 4870,
+      "sha256": "d8cbfed1ba55a4a11048c7d68135f0ee7f6d0c98c38dc685e43bb43ead90952d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19545,
+      "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamic_setup.py",
+      "bytes": 8549,
+      "sha256": "ef662a36150dd8db8ea6831062c4f18cbb11b95397056c7e5fa16b60343b50dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamics.cpp",
+      "bytes": 10682,
+      "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_irregular.bin",
+      "bytes": 8388620,
+      "sha256": "b36e6c5128103ecd62ba8bdded3197f6f073c8c0861934116023a6ae4cecb0e2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_winding.bin",
+      "bytes": 8388620,
+      "sha256": "c83ab21c96ffa7e32ef7cc798f4773573e45bea60d4b2551e506a600a38491fb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.bin",
+      "bytes": 16396,
+      "sha256": "3bbb04d8d26b70d018a30bdcdb954f56acfdba1ea6124efa6a000d497fd21b45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.bin",
+      "bytes": 16396,
+      "sha256": "0114e510f20298c0d091bb01b7211200fa010e6cd63b5a76643aa1325c9cf807"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_irregular.bin",
+      "bytes": 131084,
+      "sha256": "b44d78902133e95c19aa6d202fe0ac1fa631e1b0e90ac1da36786dbdfc435ab9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.bin",
+      "bytes": 131084,
+      "sha256": "fbf7e807de71f9064c7cca72eeffb1d0d62ed74718f58c17bb14e5f1d6301b80"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_irregular.bin",
+      "bytes": 1048588,
+      "sha256": "093b397d695b45e45a557f7240e26626d338986bd39537d1ac2b597cc384a1c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_winding.bin",
+      "bytes": 1048588,
+      "sha256": "adb12c4c0c30fae145fc3f327f0eaef74f6c9c4449f05a82611e339574308f95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json",
+      "bytes": 4663,
+      "sha256": "fc044b80988ca98a9f9b1bb3baa0609c667596955eb87f4f3c76b55fd2404264"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json.receipt.json",
+      "bytes": 2132,
+      "sha256": "fd8706c9b5e80c78d27a693bc8792de4e4079d07dca26cdd2ed091e70e994ea8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json.state",
+      "bytes": 5242892,
+      "sha256": "8870ca946598be2877b16e8f660865cb74916f6763753c35170ade4c31d6bc5e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json.stdout",
+      "bytes": 75,
+      "sha256": "e1fa715b4e5874e783d2a3430006ada5842ebd4fc0aa8aa69f326b247a3ede7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json",
+      "bytes": 4694,
+      "sha256": "ebc4f5967386de8598447d68b616b8947cd9ff2285932bed718574aefa91116a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json.receipt.json",
+      "bytes": 2133,
+      "sha256": "fcfec50ac367d32abc5cab848ee47e2f65048de3c3aedf4ea26d9917cba9ff28"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json.state",
+      "bytes": 5242892,
+      "sha256": "20f86bad410427f7197e4769d238dcb0899f741c1374903cd5c4a253abe5fe13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json.stdout",
+      "bytes": 73,
+      "sha256": "c520a44aa927b1141d037d9a66a48ebae11576dcca499244c79d80bb439df695"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json",
+      "bytes": 4706,
+      "sha256": "089d46077bfa66d1872d3c45e22e958dd40752454d0f19dd37e2e9aec84cccc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json.receipt.json",
+      "bytes": 2112,
+      "sha256": "a27063fae8ad07db315fe7783e5cabb3a9833d8a1c603bfee5f68bb466c3b655"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json.state",
+      "bytes": 5242892,
+      "sha256": "80f6c4e41cc20199603c36b89b54d43d735fcee7760e93f22eaf815730214c4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json.stdout",
+      "bytes": 75,
+      "sha256": "76b5f53a3ee6cd448d8f978a6a470139c0d4f05e2730b8e37fc32e7ac9d6afc9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json",
+      "bytes": 4669,
+      "sha256": "afd6fff33d24520d5e9af8806f04e2237299c107622cb7978d261fa13dace47f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json.receipt.json",
+      "bytes": 2117,
+      "sha256": "b6e8292a4c1d0a21882cda332f02414b05f5e80e8cbc4cb4e6fcc1de1327f5fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json.state",
+      "bytes": 5242892,
+      "sha256": "fe31c083255e5ff0ac045eca5daf5bcddb6b90a19da0ee44c102e3444777aab7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json.stdout",
+      "bytes": 75,
+      "sha256": "82ea2bcc4b0299a73fcc8f627daeafed2fc373e5f48763988fd77568f94449f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json",
+      "bytes": 4615,
+      "sha256": "c496c95301a57ad08c2210cef33c5840fd82390bfb8f04ea6cf0bff1c7b571ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json.receipt.json",
+      "bytes": 2118,
+      "sha256": "7ff2499fb81a6cb8bd35054d4dcee14e86d904ebed8918a11f8daefd9f525c39"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json.state",
+      "bytes": 10252,
+      "sha256": "a69cdd7c0f9f8b8f5be53e6c95d3586e39fc2ab8dfac94fdbe6a0b487eab668d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json.stdout",
+      "bytes": 73,
+      "sha256": "a0f49a1f5570115ea7c1dad24b37a5c7febe3f1d291aae71486c8c04b1f1a849"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json",
+      "bytes": 4639,
+      "sha256": "dbb941a315fe64a60d559df57eb18bbc1466369dc5430cc451c97b2105a3364a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json.receipt.json",
+      "bytes": 2117,
+      "sha256": "d2566b1f4ea3510e6988014409c15761025c81adc883c24ab7dcc8924cffd946"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json.state",
+      "bytes": 10252,
+      "sha256": "6448ca2d57b24b33785344edb1ab9ecf14fe589727f458c3359d8dae6fe1ae08"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json.stdout",
+      "bytes": 73,
+      "sha256": "a0528ad31c09e17aace12760bbac63cec294f7dab52bdb396a8f0b9270715aa2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json",
+      "bytes": 4645,
+      "sha256": "69f35208cde9479a90839ef52d90f58a06646aae38d5c79d87c0dc037bb9ec34"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json.receipt.json",
+      "bytes": 2101,
+      "sha256": "e7d6bd9a821fcb604ca11bf9d44e43990a4dc0f789565201d9e86e197ed54746"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json.state",
+      "bytes": 10252,
+      "sha256": "2d11a9244029e5334971d055c6db626f3e309f7c6130feef0b597bfc2d66c538"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json.stdout",
+      "bytes": 73,
+      "sha256": "dd282130e06e91f8b39c451794c564ce8960a0a327dc19ab59832083139360fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json",
+      "bytes": 4621,
+      "sha256": "8e167bc5abe9f3e057608d0d0664d8451d0b2a879ae8e080b92e2718cd7f5cee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json.receipt.json",
+      "bytes": 2103,
+      "sha256": "87a29b49d800a8768794aefad760d8c06aad1d1da549121486b319ef82b8a594"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json.state",
+      "bytes": 10252,
+      "sha256": "f4bae64b83ca388164f84526d0e6471f2ee4438881d4b6c145eb676ec583d901"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json.stdout",
+      "bytes": 73,
+      "sha256": "74bca8dc84bac3236926e7a3ec68f2afa1a2e1ae34184be976fb64a364ccd37d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json",
+      "bytes": 4627,
+      "sha256": "21fc3d3d03775c8532c35b3685d07fd01e19ebe32503e79546dfcdaa066862e3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json.receipt.json",
+      "bytes": 2118,
+      "sha256": "a972a5cfe39a0a3f13d7e1a50113c2a5fa64e9a7b414b0d4c5183d82ea886633"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json.state",
+      "bytes": 81932,
+      "sha256": "1c958da2ab55bfae7a25f603b2eecd0cc3e7e46df42c7e949284d73877c3196f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json.stdout",
+      "bytes": 73,
+      "sha256": "6ac81b3ebbd9ecef9a75129e7f4613512abf1260bc1b89d52955d270d4ef3f6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json",
+      "bytes": 4656,
+      "sha256": "6d5f5f649f9da2a1f66c5bfd1dee1c362db51a056ab04c90df82f6fe03eac3fa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json.receipt.json",
+      "bytes": 2120,
+      "sha256": "a094a0ce81a3bb87365a18de84dff0e4dd71d27ac86b7b3ecc7d39410cc99d8c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json.state",
+      "bytes": 81932,
+      "sha256": "2ece9f5750ccc239f14f3227df08d89186095538cc570c42a2c58deda7445c18"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json.stdout",
+      "bytes": 73,
+      "sha256": "2f6d9c6146323eaddb6b1c188565a2843fd78e93a9525e532cb753ee7d891301"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json",
+      "bytes": 4654,
+      "sha256": "df60c7fc1aa6371b21445c26f269b26839b21aa8ecb155f78d63bde401808cea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json.receipt.json",
+      "bytes": 2102,
+      "sha256": "f9a159f5ad0547216e61c2b466be8dd08c0e1cd2247369acc4d19ad3196ce57d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json.state",
+      "bytes": 81932,
+      "sha256": "79697a87ef548127438a6a5e5d5b565c57918d95059d58d95cd633efd397637f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json.stdout",
+      "bytes": 72,
+      "sha256": "b6b8bdbb9ab8512a98bac95ab19d8ddc80495bcda6b08d86e684d3700a848363"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json",
+      "bytes": 4637,
+      "sha256": "5e2056e33523bcd838e65f737ccb13d8f24af4f5b2566f4647259a5b504ff779"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json.receipt.json",
+      "bytes": 2103,
+      "sha256": "d0b3a8a836662038c8670a078e5705cc342fc71c75e7f9ce6d2de9dbe968d655"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json.state",
+      "bytes": 81932,
+      "sha256": "4d6d861adc40b0dfeaa58dbb568e8e9d49a2d5b4a0364a8e36c138fc1eacca5e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json.stdout",
+      "bytes": 73,
+      "sha256": "8be08786a919250be85327bdefbcff1dd98ef4a0a157c2165e7eedf622bbd258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json",
+      "bytes": 4647,
+      "sha256": "1f6ce11873ef5fca0d76679b575bfd7b7f48293e0734ec5503af9bbf80fcc4e2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json.receipt.json",
+      "bytes": 2116,
+      "sha256": "fbfd19fb128d37887cab3ee71e8064ce07a4a58b86b966774e3fcba3255087c6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json.state",
+      "bytes": 655372,
+      "sha256": "69b58234ab362fba82879772d060c8da795f73ba38ddc5b3078fd1f148ea5d0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json.stdout",
+      "bytes": 72,
+      "sha256": "ce6e8a02fe7b97428d317ca3eef8217a8dbf0ea29ad95dbe04d42f256854441b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json",
+      "bytes": 4658,
+      "sha256": "97ffb36d42e5a3c9ba4734c3f13c8c3281c547f3203965f762f64b65bf0d8162"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json.receipt.json",
+      "bytes": 2122,
+      "sha256": "4d03507f30d2fcd99d5818b3f08d4aa8e9bc52f16b71d569b7c7146b030db401"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json.state",
+      "bytes": 655372,
+      "sha256": "d06160cc6ea4541916317a500dbf7b43307b67b6eeea03049c78a71fd5a5f17f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json.stdout",
+      "bytes": 72,
+      "sha256": "badc2a97cf67790d45844234c6a6d25cebbf4fd712160444d6f44cc2aaba7686"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json",
+      "bytes": 4646,
+      "sha256": "98153c1c483d99d3eb05c0f84149e8d593f2b5f6cb2ab8cdf348d2c2df5ac824"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json.receipt.json",
+      "bytes": 2102,
+      "sha256": "b72ab61c97a2343488f615072ac8700482fbf86a152f5e4f56e7c958bf06adef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json.state",
+      "bytes": 655372,
+      "sha256": "1f5d348ac4a51a5a0029dd2697fd688276581b1fb1b48988f980ddade4de0ce6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json.stdout",
+      "bytes": 72,
+      "sha256": "e52f074425e7f6ea8b5c04bc438139453d34f8a28dbd21bca9d5d1fb3bc7ba39"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json",
+      "bytes": 4641,
+      "sha256": "e96e87a2d04e8a43e0de03c1f11ffe4cdb8736e8d70ed101a42cd94d1dedd3e6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json.receipt.json",
+      "bytes": 2103,
+      "sha256": "3586aba51cd1c46c32aa9145cdf2413753f16efe00956133af34bbc8b5c5730a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json.state",
+      "bytes": 655372,
+      "sha256": "919151b61f178b82760c08db9506b9bc0753531b21deb2fa4d0e5f4a00fce301"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json.stdout",
+      "bytes": 72,
+      "sha256": "d82ba68513b8342c64e9afe9714c5a09f3a8e9b770683063f61ba63ab58c28c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+      "bytes": 60104,
+      "sha256": "4e00276a24fe77c1a6aa899aafeeff86eb0d7b8b271637695c2289cc19d18131"
+    }
+  ],
+  "read_limits": {
+    "author_analysis_or_aggregate_production_outputs_opened": false,
+    "other_944_production_payloads_checked": false,
+    "all_960_declared_jobs_and_seed_metadata_checked": true,
+    "all_eight_geometry_files_checked": true,
+    "selected_endpoints_checked": 16,
+    "full_production_trajectory_replayed": false,
+    "general_RNG_properties_proved": false
+  },
+  "no_external_literature_imports": true
+}

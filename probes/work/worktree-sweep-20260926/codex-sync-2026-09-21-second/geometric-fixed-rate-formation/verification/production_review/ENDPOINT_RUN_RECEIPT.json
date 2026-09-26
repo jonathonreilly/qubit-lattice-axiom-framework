@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/reconstruct_endpoints.py"
+  ],
+  "started_utc": "2026-09-21T16:50:21.677550+00:00",
+  "completed_utc": "2026-09-21T16:50:27.784273+00:00",
+  "elapsed_seconds": 6.106542584020644,
+  "returncode": 0,
+  "outputs": {
+    "ENDPOINT_RUN.stdout": "abe48e5c0db37578817bb88707e5e7d8000840da5c1a7342ef039e34da13ac0b",
+    "ENDPOINT_RUN.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

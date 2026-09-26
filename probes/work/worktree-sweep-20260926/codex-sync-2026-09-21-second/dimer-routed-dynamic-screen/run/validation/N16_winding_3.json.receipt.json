@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "validate",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.bin",
+    "202609219603",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_3.json"
+  ],
+  "started_unix": 1790014141.697401,
+  "seconds": 0.0028607845306396484,
+  "exit_code": 0,
+  "stdout_sha256": "4c82295b370290114aedc8a7d46a3b7481cba8e920cb7f29ed29c7e39eac1c17",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

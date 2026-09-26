@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-21T15:33:51.236734+00:00",
+  "boundary": "Pre-implementation reconstruction; production outputs unread; writes restricted to this directory.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+      "read_status": "complete prior model/protocol/plan"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md",
+      "sha256": "4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48",
+      "read_status": "complete prior model/protocol/plan"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md",
+      "sha256": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab",
+      "read_status": "complete prior model/protocol/plan"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_growth.cpp",
+      "sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+      "read_status": "hash and line count only; content unread"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/run_geometric_fixed_rate_followup.py",
+      "sha256": "fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e",
+      "read_status": "hash and line count only; content unread"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+      "sha256": "531c59d50c910bca28f8ae0255bc3507831ac32dc3dbd2dd011cb433bd9d557d",
+      "read_status": "hash and line count only; content unread"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/PRE_CODE_DERIVATION.md",
+      "sha256": "069748d66b79184f15f7876fb72e8e70fdb7ea4c8fdf0b94af14f66835096a84"
+    }
+  ]
+}

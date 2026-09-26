@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "validate",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.bin",
+    "202609219600",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_0.json"
+  ],
+  "started_unix": 1790014141.70107,
+  "seconds": 0.0029840469360351562,
+  "exit_code": 0,
+  "stdout_sha256": "ccb33cbab06ed53e388adc25111e993c32c5912a77f8daf4aa809bf6ab0e9e3f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

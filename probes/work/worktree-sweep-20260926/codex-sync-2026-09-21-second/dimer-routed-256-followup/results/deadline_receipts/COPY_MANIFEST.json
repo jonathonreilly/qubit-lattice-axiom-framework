@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-09-22T00:35:01.382794+00:00",
+  "scope": "Byte-identical final source-receipt copies for private recovery; original files and failed wrapper output preserved. Large endpoints remain at original paths.",
+  "files": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/MANIFEST.json",
+      "bytes": 19639,
+      "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/DISPATCH.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/DISPATCH.json",
+      "bytes": 3403,
+      "sha256": "e1dee605eb18cdd23496d76394caed7b7959f9e519d911e7d18a16c8eec1842d"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/PROGRESS.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/PROGRESS.json",
+      "bytes": 8342,
+      "sha256": "c2cb89e5c249372dcd526eb0e35b09be00042c13456a8651e29b2945f0c41231"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/RECOVERY_SUMMARY.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/RECOVERY_SUMMARY.json",
+      "bytes": 41913,
+      "sha256": "b4978fb872ff79f827594121ac807ca5e37ab69563f87ac916fc87fa33ef8efd"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r001.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r001.json.receipt.json",
+      "bytes": 2126,
+      "sha256": "c8a61ce8a0680602966ec4adc076b2ba83fa706e0fbfbd2b52de298317ea9fe6"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r002.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r002.json.receipt.json",
+      "bytes": 2123,
+      "sha256": "3948990b4bdebe0f9c5396491343e07eecd072f44199ddffd243625127455ea9"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r003.json.receipt.json",
+      "bytes": 2124,
+      "sha256": "3daeb3dfbe957e293715c50425739d14160012437670507530babb90f2b6c3eb"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r004.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r004.json.receipt.json",
+      "bytes": 2124,
+      "sha256": "585fea8bf59d31236898ad6265d19fa02717101b974e67cc61604a986e631c88"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r005.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r005.json.receipt.json",
+      "bytes": 2124,
+      "sha256": "d3b718522d2e7a5dd247e83b1b070bc1777912885fcc2ecaa82a889cb9553827"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r006.json.receipt.json",
+      "bytes": 2125,
+      "sha256": "4935d0338ba2e37eb8b74aa424bf6835a4b24bab312377fe4e4c6dd47f638de1"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r007.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r007.json.receipt.json",
+      "bytes": 2123,
+      "sha256": "b40ba12fd2ff354945a1b4f9263f7c0d0f2ccbbfdbd0cdc1af3fce815cc1677a"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r008.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r008.json.receipt.json",
+      "bytes": 2125,
+      "sha256": "ede085f515bb5bc7b30e14aa5be6c8b7dbc4470d0db330d0c4b2dc58d095608b"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r001.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r001.json.receipt.json",
+      "bytes": 2107,
+      "sha256": "e5c228b575dc18c652ac3d33d13c8d9b13ca07f58351dc85984d64ebcbbf3d23"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r002.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r002.json.receipt.json",
+      "bytes": 2107,
+      "sha256": "2f947de9c897ff6ffcf48a6f2b348c7c121032bb0e53f43cfa2d15023c3a733a"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r003.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r003.json.receipt.json",
+      "bytes": 1480,
+      "sha256": "9c1a25d42ee11409a3e02ba8b0ea03730dac52f886bcb288c390b1c941afe255"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r004.json.receipt.json",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r004.json.receipt.json",
+      "bytes": 1480,
+      "sha256": "7bc9073a289e1377917f326afc2db77268176185cd9aaed144566dae8de4de6e"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r003.json.stderr",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r003.json.stderr",
+      "bytes": 33,
+      "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r004.json.stderr",
+      "copy_path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r004.json.stderr",
+      "bytes": 33,
+      "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+    }
+  ]
+}

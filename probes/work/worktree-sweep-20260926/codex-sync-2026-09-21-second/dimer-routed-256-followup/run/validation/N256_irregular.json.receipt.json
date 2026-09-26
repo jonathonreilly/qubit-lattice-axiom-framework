@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "validate",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_irregular.bin",
+    "202609218901",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json"
+  ],
+  "returncode": 0,
+  "seconds": 18.052290201187134,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json.stdout",
+    "bytes": 74,
+    "sha256": "e722ebbb5b8a0f2eeef548bd6003931a0104059d97a85de3c07132565dcfc2cf"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

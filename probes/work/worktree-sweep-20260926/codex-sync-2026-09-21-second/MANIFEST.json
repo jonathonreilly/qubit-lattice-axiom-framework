@@ -1,0 +1,3729 @@
+{
+ "recovered_on": "2026-09-26",
+ "deleted_directory": {
+  "path": "~/Documents/Codex/physics-sync-2026-09-21-second",
+  "entries": 318,
+  "files": 25669,
+  "bytes": 4400827373
+ },
+ "local_branch": {
+  "name": "codex/mobile-record-post-formation-campaign-20260923",
+  "head": "eb34060bef8afdb3f807f8449f5e7f293aab81d8",
+  "worktree": "~/Documents/Codex/mobile-record-formation-20260920",
+  "pack": ".claude/science/mobile-record-formation-20260920/campaign12h_second",
+  "on_origin": false,
+  "note": "73 commits ahead of origin/codex/mobile-record-formation-20260920; the worktree was kept (touched within three days)"
+ },
+ "identity_checks": "saved source, protocol, analysis plan, analyzer, RESULTS.json and PER_HISTORY.json SHA-256 values equal those recorded in the assessments and run manifests",
+ "saved": [
+  {
+   "path": "geometric-fixed-rate-formation/assessment/GEOMETRIC_FIXED_RATE_FOLLOWUP_ASSESSMENT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_FOLLOWUP_ASSESSMENT.md",
+   "bytes": 9112,
+   "sha256": "ee27f050e432d02b9f8d95ade29c181abdd885a78d58e5fb46879d47b403eee0"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/assessment/GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md",
+   "bytes": 4036,
+   "sha256": "4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/assessment/GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md",
+   "bytes": 3224,
+   "sha256": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/assessment/GEOMETRIC_FIXED_RATE_ANALYSIS_CORRECTION.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_ANALYSIS_CORRECTION.md",
+   "bytes": 2282,
+   "sha256": "9caea17017738357a7a9a8ff6d32ef937265a08d249e7046f15b9595b7fc7857"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/source/geometric_partner_growth.cpp",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_growth.cpp",
+   "bytes": 11790,
+   "sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/source/run_geometric_fixed_rate_followup.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/run_geometric_fixed_rate_followup.py",
+   "bytes": 9367,
+   "sha256": "fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/source/analyze_geometric_fixed_rate_followup.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+   "bytes": 11122,
+   "sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/source/plot_geometric_fixed_rate_followup.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/plot_geometric_fixed_rate_followup.py",
+   "bytes": 4244,
+   "sha256": "83e9d19bc8328269a6d91ef0d49f6aa648608760aa7445f658bda9187fb9a515"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/PER_HISTORY.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/PER_HISTORY.json",
+   "bytes": 1521166,
+   "sha256": "2bfcb1b31f4d4010488920652cd43163c624121f5d8826bbf10417baa398aa88"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/PLOT_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/PLOT_RECEIPT.json",
+   "bytes": 916,
+   "sha256": "d4f74b4f325c08abbb5d2293be8b23955502bd0a2314ca308d7732d3378c3c31"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/RECEIPT_VERIFICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/RECEIPT_VERIFICATION.json",
+   "bytes": 394677,
+   "sha256": "08d91c689610d57b703ed2e26850f44b1785dbd613c9af0155cfb9d7abd50344"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/RESULTS.json",
+   "bytes": 81999,
+   "sha256": "51b2f9b5174877030b7ebb8baa345dd030dbeb23b3ca3072f6525fb73ed79c86"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/TABLE.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/TABLE.md",
+   "bytes": 5296,
+   "sha256": "e95040a5c6cfad8ee5db191d3776685a0ad305984b011b619e5f438525bca7b6"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/fixed_rate_formation.pdf",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/fixed_rate_formation.pdf",
+   "bytes": 47076,
+   "sha256": "7f113d0b3efc1b7dd8f68b9eac647e804a555272feb9467bab3de2bd483acc7f"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/results/fixed_rate_formation.png",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_results/fixed_rate_formation.png",
+   "bytes": 300401,
+   "sha256": "73bd11c79b18af7cd7d59cec6e6141a194a0dfc17ffdbf7a29cf80628bc3f552"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/GEOMETRIC_FIXED_RATE_INDEPENDENT_VERIFICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_INDEPENDENT_VERIFICATION.json",
+   "bytes": 451,
+   "sha256": "e14fa0c19950fcb79bf9008567679ffb8f6dd37dbebfbb28890783373c7919dc"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/GEOMETRIC_FIXED_RATE_PRODUCTION_ROOT_VERIFICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_PRODUCTION_ROOT_VERIFICATION.json",
+   "bytes": 1050,
+   "sha256": "4d2b3392ba21f35995a30f98c05d6d6cc969edd61daf6de4326fc6ce4cf0a9ca"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/GEOMETRIC_FIXED_RATE_FIGURE_QA.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_FIXED_RATE_FIGURE_QA.json",
+   "bytes": 680,
+   "sha256": "3772ad8ba9a4b35422db12f923f0fd90664c286f58a28ffc93773dfd1858a344"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/ANCILLARY_REPRODUCTION.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/ANCILLARY_REPRODUCTION.stdout",
+   "bytes": 1674,
+   "sha256": "80afa1b88d3b9b0a11679d07f4d8a16b7fa8496dba4983ffedd16a7bbdd80200"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/ANCILLARY_RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/ANCILLARY_RESULTS.json",
+   "bytes": 1674,
+   "sha256": "80afa1b88d3b9b0a11679d07f4d8a16b7fa8496dba4983ffedd16a7bbdd80200"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/ANCILLARY_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/ANCILLARY_RUN.stdout",
+   "bytes": 1674,
+   "sha256": "80afa1b88d3b9b0a11679d07f4d8a16b7fa8496dba4983ffedd16a7bbdd80200"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/ARCHIVE_RECONSTRUCTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/ARCHIVE_RECONSTRUCTION.json",
+   "bytes": 813,
+   "sha256": "a9ad6bdf45d2cc624ebb535aa4d75aec390679eb2746e8a6ea3e37c16b60cbe9"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/CHECKPOINT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/CHECKPOINT.md",
+   "bytes": 698,
+   "sha256": "9b4b6ba5736d9e86038d09ac0d4f2424448a095e7055fc43be32dcaa9123bb05"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/FIXTURE_IDENTITIES.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/FIXTURE_IDENTITIES.json",
+   "bytes": 46958,
+   "sha256": "d4beffde8c843911ea890671727d0d9d3baedfdddc42641630114d1577f56a72"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/PRE_CODE_DERIVATION.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/PRE_CODE_DERIVATION.md",
+   "bytes": 6034,
+   "sha256": "069748d66b79184f15f7876fb72e8e70fdb7ea4c8fdf0b94af14f66835096a84"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/PRE_CODE_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/PRE_CODE_SEAL.json",
+   "bytes": 2594,
+   "sha256": "4114a0dc2c93244faccd59e7591fbf2324350ac3a3d9691ecb142ac7629a3e9c"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/REPORT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/REPORT.md",
+   "bytes": 16364,
+   "sha256": "fc272b01eaeb93c3e3d1b2947561376c83df94ba47153a9b4eab0ee27ce7e594"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/REPRODUCTION.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/REPRODUCTION.stdout",
+   "bytes": 3801,
+   "sha256": "ea20859267b4f5c3babf561e071e46d62ae7b78c592e122ce66a757d272e8529"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/RESULTS.json",
+   "bytes": 3801,
+   "sha256": "6e2de259073c0f5293b539eb8f857d79df4ce365b9a748b2b03706c509736dc4"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/REVIEW_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/REVIEW_RECEIPT.json",
+   "bytes": 920,
+   "sha256": "cf3e81458c89fb68400d89ca6d5240f2b945efb3d09f066f00605166955bb6ac"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/RUN.stdout",
+   "bytes": 3801,
+   "sha256": "6e2de259073c0f5293b539eb8f857d79df4ce365b9a748b2b03706c509736dc4"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/ancillary_controls.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/ancillary_controls.py",
+   "bytes": 3403,
+   "sha256": "df11dd17dbd594c33506f3d325f8e4baccb232b8024c842920acf864e632a21e"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/catalog_control.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/catalog_control.receipt.json",
+   "bytes": 857,
+   "sha256": "29c052262aa6e18cbcd7fb6bb3cda66481875c6fac51e486f39b46c5edf279f0"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/catalog_control.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/catalog_control.stdout",
+   "bytes": 141,
+   "sha256": "d572451e4d776ae734800c6cd30eb126b824ff6df6d6bee731313adee0b77474"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/catalog_harness.cpp",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/catalog_harness.cpp",
+   "bytes": 4078,
+   "sha256": "506a048dda0af56afd07c3fb6ae4a449153c2a7fc23373ca6a6b59197f652111"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/compile_catalog.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/compile_catalog.receipt.json",
+   "bytes": 718,
+   "sha256": "f295e99072b78360db1db0a6bb91202af481aad51c79dc15fb6e34d4ece49941"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/compile_growth.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/compile_growth.receipt.json",
+   "bytes": 692,
+   "sha256": "aaba143975a908982ee5871417122fbb1806c14ef1fc97a27af0f36c6ac3a7c3"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/compiler_version.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/compiler_version.receipt.json",
+   "bytes": 312,
+   "sha256": "8a270eed9ac682ada543f482e0a4fbcf2cf54731b2f169eac5e9f8581cd6ed57"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/compiler_version.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/compiler_version.stdout",
+   "bytes": 202,
+   "sha256": "042af9433fb0dd5784acb36e7f4de32c0c64bb8a17741dc90013c2895d32855a"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/independent_check.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/independent_check.py",
+   "bytes": 16530,
+   "sha256": "55ba333a8627bf5ae44ec778e2de6d03f67587d46139f9b1734e22e1a02cadfc"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/synthetic_baseline_analysis.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_baseline_analysis.receipt.json",
+   "bytes": 906,
+   "sha256": "2b55a19f7e9f3b13b07aad4704fbd8e02850ea082b86c4ae2dc78f830e979043"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/synthetic_baseline_analysis.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_baseline_analysis.stdout",
+   "bytes": 161,
+   "sha256": "a3beac918da00bfbac4e13a0541128ddffa21cedb9d8790151ae196b3154ea44"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/synthetic_mixed_zero_winding_analysis.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_mixed_zero_winding_analysis.receipt.json",
+   "bytes": 926,
+   "sha256": "1054cf2e4150b2e96b63ee30232d6586b3af90b04698bc7baea919a0ce4923ea"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/synthetic_wrapper_exception_analysis.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_wrapper_exception_analysis.receipt.json",
+   "bytes": 924,
+   "sha256": "4f28d255c2189898c1b836b3c6ae88ade1de82bfe84b7b2e44ac4daaf106ad23"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/synthetic_zero_winding_analysis.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_zero_winding_analysis.receipt.json",
+   "bytes": 914,
+   "sha256": "375b5c15f2787a3bde3e0bc34555bb5a15cf5da8cf412a5db491b7f18a624cf4"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_0.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_0.receipt.json",
+   "bytes": 712,
+   "sha256": "39cef58c0b14efec64c6fd923f342fb3d3b0b7c6592af65010c2b87ba7e80fd7"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_0.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_0.stdout",
+   "bytes": 58,
+   "sha256": "07789d0013c43bf186b6f3d5dd93756bac646769d8f81c164d0d773f49348eab"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_1.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_1.receipt.json",
+   "bytes": 714,
+   "sha256": "081f1f1c5083764a6f383416d0964b4b757537c6fd78f3cc66759fccf0a9859e"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_1.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_1.stdout",
+   "bytes": 58,
+   "sha256": "b0b909063a2cad62dae3d6966ece9b39bfe0d4fe15418256ac9e8f1a24b69a0a"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_2.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_2.receipt.json",
+   "bytes": 714,
+   "sha256": "a28f171e1058659f546fae4b0d6e615937a4b188877ddc9f6554f076a32659b1"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_2.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_2.stdout",
+   "bytes": 61,
+   "sha256": "6b25e11eb0fec25e4828a83dfc15f54d1b280e904913dce3ece2396fdafc820c"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_3.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_3.receipt.json",
+   "bytes": 707,
+   "sha256": "9bbf55191d853b2cb5290dc4f7baedef3e59b20abcff66818eaf277fc5bb33c2"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/source_review/toy_run_3.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_run_3.stdout",
+   "bytes": 58,
+   "sha256": "4963e0d8d8c0cd1a3d0a94b9cae855f477bc808270c44259cc43ceb98b8087f6"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/AGGREGATION_PRECOMPARISON_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/AGGREGATION_PRECOMPARISON_SEAL.json",
+   "bytes": 8099,
+   "sha256": "e7d0c83092e658d1cb299f2eab6e813a4c71ff0dd9eee61ed7ec0458c4298670"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ANALYSIS_COMPARISON.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ANALYSIS_COMPARISON.json",
+   "bytes": 27908,
+   "sha256": "da94ec87c80e9fd719ea4037f78a96bd43bfaa14610d037dddf2009d41c367de"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ANALYSIS_COMPARISON.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ANALYSIS_COMPARISON.stdout",
+   "bytes": 316,
+   "sha256": "acd09c1254dd52be2790bd251fd22f7e8e790dd2860f04b937a9836c57488254"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ANALYSIS_COMPARISON_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ANALYSIS_COMPARISON_RECEIPT.json",
+   "bytes": 568,
+   "sha256": "26d6a33fa470a76b9513f12bf163948691fa5308cccd469958f1099dab9d0d48"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/AUTHENTICATION_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/AUTHENTICATION_RUN.stdout",
+   "bytes": 520,
+   "sha256": "b41e9233714e761281e0d0e753d5215c75c05f63892ce19f4855d04d844ee47b"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/AUTHENTICATION_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/AUTHENTICATION_RUN_RECEIPT.json",
+   "bytes": 575,
+   "sha256": "fd062ce3c48dae55f69633b3619d92e9a320f48be51848f18d531bd3805a3864"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/CHECKPOINT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/CHECKPOINT.md",
+   "bytes": 924,
+   "sha256": "52f60d3f3782ec74b8b5c608aad8814d161ea4b4d175433dc076a18ad8a2c5dd"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/DECLARED_RECONSTRUCTION.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/DECLARED_RECONSTRUCTION.md",
+   "bytes": 4518,
+   "sha256": "8f14911be29bf0b4b2e2b5539ef5ea2fbda179492d46a7a42f38a1b7a41d3a35"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ENDPOINT_PRECOMPARISON_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ENDPOINT_PRECOMPARISON_SEAL.json",
+   "bytes": 11404,
+   "sha256": "4e8175bd91c040100607bb0ef1805772953ad6db5e2e156fe33274658726a60b"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ENDPOINT_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ENDPOINT_RUN.stdout",
+   "bytes": 1296,
+   "sha256": "abe48e5c0db37578817bb88707e5e7d8000840da5c1a7342ef039e34da13ac0b"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/ENDPOINT_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/ENDPOINT_RUN_RECEIPT.json",
+   "bytes": 557,
+   "sha256": "b5d5069360c55369c3cc29afbad40a65598a97e6d96792cd2dfd79bff27c096b"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/FINAL_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/FINAL_SEAL.json",
+   "bytes": 24281,
+   "sha256": "1cf42bdc87fc279bbc94b815b40fda9145ea73e0b4f9f0ca432e38b369cd0504"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/INDEPENDENT_AGGREGATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/INDEPENDENT_AGGREGATION.json",
+   "bytes": 90893,
+   "sha256": "47f68442385ef8388502fa1f5960a24cbfafaccc9a8cc0cf993e92822181ad53"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/RENDER_ATTEMPT_01_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/RENDER_ATTEMPT_01_RECEIPT.json",
+   "bytes": 567,
+   "sha256": "0ada701115d9c3ab7b97de1fa5c2db74b0b7b41e247c3c35f03e17b27fe15799"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/REPORT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/REPORT.md",
+   "bytes": 9131,
+   "sha256": "4e75c9c5449119f44b2f5affde6153a705cbf8b4f2edf7fa75c06cda75cc99f8"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/SELECTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/SELECTION.json",
+   "bytes": 9029,
+   "sha256": "a7606b1b50890e67f47ca96beb0142a35ea6430d732513885d9ad87d290237f5"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/SELECTION_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/SELECTION_SEAL.json",
+   "bytes": 2730,
+   "sha256": "0eb3bb10d144a4a6db6be22c1a05a466a1d331ae10e7ec537611e5ff34d39902"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/authenticate_and_aggregate.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/authenticate_and_aggregate.py",
+   "bytes": 12197,
+   "sha256": "99fa85dfc11fc8e7fcae7713efc7a5b56ab45d83327f91369243275c5f544aa1"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/compare_analysis.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/compare_analysis.py",
+   "bytes": 6856,
+   "sha256": "5e50899845c734b37efeeb3f482d9e41f06ca24b866ef674f6bb2a847c4bdd81"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/finalize_review.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/finalize_review.py",
+   "bytes": 4238,
+   "sha256": "33735d9634b94ca1e4d72e9a346732b02f63a12ebfd3c50bc74820e9fc631517"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/verification/production_review/reconstruct_endpoints.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/reconstruct_endpoints.py",
+   "bytes": 6377,
+   "sha256": "12c1ebcacc99998bc2f7a555143937eff9f76db04f0c7275d299261acb01b45f"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/followup_MANIFEST.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/MANIFEST.json",
+   "bytes": 123080,
+   "sha256": "5ef3455f4902be019f0863754c14b44b447914eed3f3219a17891fa29c6a00e2"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/followup_PROGRESS.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/PROGRESS.json",
+   "bytes": 149,
+   "sha256": "ed1f04ef262d51f87583de86742ac49670bc008c8decd5ec93d86c3102994e88"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/followup_SUMMARY.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_followup/SUMMARY.json",
+   "bytes": 2431321,
+   "sha256": "310e9bc256bbad3e03cefd5d44258d781ea431e42b5e253114eedfbc4a948ea0"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/pilot_MANIFEST.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_pilot/MANIFEST.json",
+   "bytes": 1021,
+   "sha256": "140040dcb5b168de3db9e6f2b5ed7346fb44837ce0b5ea5825938915b0b900df"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/pilot_SUMMARY.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_pilot/SUMMARY.json",
+   "bytes": 9385,
+   "sha256": "cf74131f8cd3cdeb6cff720fcc181182cc3900956b39810ee9397e5c8ccb1a1f"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/pilot_v2_MANIFEST.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_pilot_v2/MANIFEST.json",
+   "bytes": 1021,
+   "sha256": "bc1079e3808d54d84f5b22a5ff03fbec190d4f47ca8f4455099f8f8873335b90"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/pilot_v2_SUMMARY.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_pilot_v2/SUMMARY.json",
+   "bytes": 9402,
+   "sha256": "3b38f96b29fd22c8ee4736b928faedc156fdf9382ce2d5f4048a4ee829bb6461"
+  },
+  {
+   "path": "geometric-fixed-rate-formation/run/pilot_comparison.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_pilot_comparison.json",
+   "bytes": 1617,
+   "sha256": "243f61a77eda300a8656866aa75a38a3e7d5102fbcc05ebdd006f4a23126da56"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/assessment/DIMER_ROUTED_DYNAMIC_SCREEN_ASSESSMENT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_SCREEN_ASSESSMENT.md",
+   "bytes": 6546,
+   "sha256": "58d0a8682b3733453ddb45657bc2b4cf449b6613a200304e2b7457139c9ec1c8"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/assessment/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+   "bytes": 4870,
+   "sha256": "d8cbfed1ba55a4a11048c7d68135f0ee7f6d0c98c38dc685e43bb43ead90952d"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/assessment/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "bytes": 19650,
+   "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/source/dimer_routed_dynamics.cpp",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamics.cpp",
+   "bytes": 10682,
+   "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/source/dimer_routed_dynamic_setup.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_setup.py",
+   "bytes": 8549,
+   "sha256": "ef662a36150dd8db8ea6831062c4f18cbb11b95397056c7e5fa16b60343b50dd"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/source/dimer_routed_dynamic_run.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_run.py",
+   "bytes": 5049,
+   "sha256": "ba650514d868c9fa6b6e4d023534243d99a78f19221c19a3a4276f82faa1c46b"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/source/analyze_dimer_routed_dynamics.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_dimer_routed_dynamics.py",
+   "bytes": 11747,
+   "sha256": "752ccdd5506c5f7714bb7c97175dde7fc179ba8592a9248df4a8dc00760e283c"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/source/plot_dimer_routed_dynamics.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/plot_dimer_routed_dynamics.py",
+   "bytes": 10530,
+   "sha256": "ff14cc6164ec1f234446302105e0a11d1c18bb4d4983bea6f1dc013d9f25ecff"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/AUTHENTICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/AUTHENTICATION.json",
+   "bytes": 355790,
+   "sha256": "62d3fcbb7c9ce85900df21568de5014f637c828c1e36c5f07e0fc8c57a6820a1"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/DIMER_ROUTED_DYNAMIC_SCREEN.pdf",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.pdf",
+   "bytes": 46933,
+   "sha256": "0fb81bfea64b7e7803084872d2f9216ae5a50444af1728c58218c5c4c0eb1194"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/DIMER_ROUTED_DYNAMIC_SCREEN.png",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.png",
+   "bytes": 508691,
+   "sha256": "15d61d26bb6527aeab57a10eacae4307dd23b38d9e1304bf43e9978c092561a6"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/PER_HISTORY.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/PER_HISTORY.json",
+   "bytes": 2509850,
+   "sha256": "433459f27af8320e915c9568bfa8d726d94483c8cf85cffec6b0f20d1fdfcf92"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/PLOT_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/PLOT_RECEIPT.json",
+   "bytes": 1694,
+   "sha256": "a64f046d0026582bcaa110fc9e3982f50e6e3c1d2896b2aad27e662fcc8b6692"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/RESULTS.json",
+   "bytes": 136370,
+   "sha256": "08aab30040e7b0c50c60486bf769f7c87247d8771f3f2315d577725fd4d60345"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/results/ROOT_VISUAL_QA.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/ROOT_VISUAL_QA.json",
+   "bytes": 1143,
+   "sha256": "9f899d2b2b24df389a4ec22f84ed8f2c1507b2b414a7ffb45f6f0fef85766a41"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/DIMER_ROUTED_DYNAMIC_ROOT_VERIFICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_ROOT_VERIFICATION.json",
+   "bytes": 49139,
+   "sha256": "62ade774d66725acc3fe18128c4139f945da825c981247269aa8c33ed0f2d30e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/DIMER_ROUTED_DYNAMIC_SETUP_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_SETUP_RECEIPT.json",
+   "bytes": 1631,
+   "sha256": "7decb36b554d6987fd73431aaaa2d7aba09b0e6b52c52e39702713600f63fbc8"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/DIMER_ROUTED_DYNAMIC_ANALYSIS_SIGN_CONTROLS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_ANALYSIS_SIGN_CONTROLS.json",
+   "bytes": 1153,
+   "sha256": "5d701fb3a35f2d0705034c157fc3aa89dc3df70957756f043319d8d9380c51ab"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/CHECKPOINT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/CHECKPOINT.md",
+   "bytes": 670,
+   "sha256": "8f6d2cd0969ecd3bda12384577a9b673b2ceafc75c02ae5d2b8c926e3afd987a"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/ENDPOINT_SELECTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/ENDPOINT_SELECTION.json",
+   "bytes": 1824,
+   "sha256": "c958d16ea50baddd613fa6c0cc487dfc3d77efcabcaaee986b288541b0906a71"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/FINAL_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/FINAL_SEAL.json",
+   "bytes": 21986,
+   "sha256": "4a6f1d12524a711c36f60001ccad352752555369931e5e3a29017de7aa74e54e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/FINAL_SOURCE_IDENTITIES.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/FINAL_SOURCE_IDENTITIES.json",
+   "bytes": 28774,
+   "sha256": "bc23946a88631e525ef98d1bde8d3414a959b9cdee02090fb0487a65fc93ab0f"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_CHECK_RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_CHECK_RESULTS.json",
+   "bytes": 2582,
+   "sha256": "bf0b6b135f609bae08a87ffe1c6f13fec38a41a077722abdb3e7bab1e14e653c"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_CHECK_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_CHECK_RUN.stdout",
+   "bytes": 2582,
+   "sha256": "bf0b6b135f609bae08a87ffe1c6f13fec38a41a077722abdb3e7bab1e14e653c"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_CHECK_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_CHECK_RUN_RECEIPT.json",
+   "bytes": 434,
+   "sha256": "e79978ac26f47e50b2a7595ad3492b54f8bd06c030a723d5774a56c1a4f205f3"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_COMPARISON_DERIVATION.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_COMPARISON_DERIVATION.md",
+   "bytes": 7447,
+   "sha256": "e6f515b2f75258830e3f228bf1edc643a651ef907e91d64a65ef69770d97a182"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_COMPARISON_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_COMPARISON_SEAL.json",
+   "bytes": 3620,
+   "sha256": "fc1ee4425c5a37fe32980565e2704bfff827a0249b7f8bdffd93438378ff3e37"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/PRE_COMPARISON_SOURCES.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/PRE_COMPARISON_SOURCES.json",
+   "bytes": 2050,
+   "sha256": "560f3654e6af34aaa0f6b2c9480c4159a350cccdd76d33dc922abbd66500a551"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/REPORT.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/REPORT.md",
+   "bytes": 11095,
+   "sha256": "e94fdd1c6e8306d6213edee89d4429340d543eccab0a83aff739ab1c7e9a0e11"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_COMPARISON_RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_COMPARISON_RESULTS.json",
+   "bytes": 26298,
+   "sha256": "9154874975df6867536f0820cac8a55bac65ca83e92e5068bff12c22d23d1bfa"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_COMPARISON_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_COMPARISON_RUN.stdout",
+   "bytes": 1190,
+   "sha256": "cba7a590f26e2321317692433d450438784eb7e625ef7951eb8523ee0e979a9b"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_COMPARISON_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_COMPARISON_RUN_RECEIPT.json",
+   "bytes": 454,
+   "sha256": "33bc3830173646b39fda586505aeafc89ade9ea2de9c2489b25c5c8e8890a69f"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_RECONSTRUCTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_RECONSTRUCTION.json",
+   "bytes": 93700,
+   "sha256": "b0362e10b91cbd3a089704c3b50e0c8d59c62510a2148e6901bf6b078af60413"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_RECONSTRUCTION_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_RECONSTRUCTION_RUN.stdout",
+   "bytes": 748,
+   "sha256": "4f52bd057b678332a50dedcc566d74885d58d468d5d09fe4e1c09765ff8209d5"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_RECONSTRUCTION_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_RECONSTRUCTION_RUN_RECEIPT.json",
+   "bytes": 544,
+   "sha256": "86883f0e98fed3150a895603c54512122ea15c910192bc0f71bad1099d5f13e3"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SELECTED_RECONSTRUCTION_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SELECTED_RECONSTRUCTION_SEAL.json",
+   "bytes": 11062,
+   "sha256": "0ea9a06a72d246d5025f89266ddc0a9d6a667e15a69555ddf29acdf385885bb4"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SMALL_EVENT_RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SMALL_EVENT_RESULTS.json",
+   "bytes": 1599,
+   "sha256": "2974fd8f841d3a8fb6baf8710fc52e6ee072ca234f3421ba281c66ed862fd35c"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SMALL_EVENT_RUN.stdout",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SMALL_EVENT_RUN.stdout",
+   "bytes": 733,
+   "sha256": "b7e71fe1bab2055b0904e58c1564c3510d4c606bb99d84840fa9af49fd1e6b6e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/SMALL_EVENT_RUN_RECEIPT.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/SMALL_EVENT_RUN_RECEIPT.json",
+   "bytes": 438,
+   "sha256": "c5123093c17f53159e8417b7b02bedc3ee0a9dcf4d1a1e74d4aeb7774ad7876a"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/check_instrumented_events.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/check_instrumented_events.py",
+   "bytes": 7765,
+   "sha256": "95e8c4a94b7a6748485e1aeba73fbd963b6b56f93602f3cfdd5395d838d4e80e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/check_selected_endpoints.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/check_selected_endpoints.py",
+   "bytes": 7567,
+   "sha256": "3fa082a80e0178ac3753abd5f4502c64b2df6f32f7e9c1e2057aa0efb62d253e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/independent_decode.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/independent_decode.py",
+   "bytes": 4973,
+   "sha256": "1fb07df9636f256150d23c38f610cee6ce4e62960f0e6730de60c5aa0da0b7af"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/verification/independent_review/independent_precheck.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/independent_precheck.py",
+   "bytes": 7849,
+   "sha256": "e09435e1e8b2a43b0c6fba863153c645ee55206d26f17fceff2766eb1612e50d"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/MANIFEST.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/MANIFEST.json",
+   "bytes": 673550,
+   "sha256": "4db87d1484554a0173ca07a43c82fdd6148604416b2674da7fe7a57b930acc00"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/DISPATCH.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/DISPATCH.json",
+   "bytes": 3431,
+   "sha256": "6125c10998f7c49fe39112816adc981f32ce465a826692f923cff2ab1c75c060"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/PROGRESS.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/PROGRESS.json",
+   "bytes": 424806,
+   "sha256": "dc0249f34db87e0d3280c1d18fe4153318feb96d318a40bd462b0bc742f1a073"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/SUMMARY.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/SUMMARY.json",
+   "bytes": 425366,
+   "sha256": "76365d7b920d6b1b29dd0ad3113e450dfc9bc6b5dcf3118eca74c748aeef7f5e"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N128_irregular_0.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N128_irregular_0.json",
+   "bytes": 4680,
+   "sha256": "4de53dac00398b28bae9e89758e06a1f711a82806e53de4665921d034d70ebfb"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N128_irregular_0.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N128_irregular_0.json.receipt.json",
+   "bytes": 672,
+   "sha256": "7ae161561e186b3290ae3be5b59b25e429905937a4d6a7f81b4fef5cf4029fa7"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N128_irregular_0.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N128_irregular_0.json.stdout",
+   "bytes": 74,
+   "sha256": "407aff839d9799e8fc395b3b9a758a4fa26aa0f820a9afb828732bc6f1b5b0fe"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_0.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_0.json",
+   "bytes": 4642,
+   "sha256": "fb4448fbcc424e666fc3c11758718d57219e9e5faf89ba36614b4b7c4d1c1924"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_0.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_0.json.receipt.json",
+   "bytes": 672,
+   "sha256": "4d200091022ba41d8e5b033c390b2b150533a1e1803741fdff6c98eba2e8d7c1"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_0.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_0.json.stdout",
+   "bytes": 72,
+   "sha256": "ccb33cbab06ed53e388adc25111e993c32c5912a77f8daf4aa809bf6ab0e9e3f"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_1.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_1.json",
+   "bytes": 4661,
+   "sha256": "264f8494575025ff016e6ef1e934e63b812868b7502318495203f87664575d76"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_1.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_1.json.receipt.json",
+   "bytes": 673,
+   "sha256": "6ab1649baa7a9e421be9c45eb10acd189b97034920ae8c3781eb39586eaf30da"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_1.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_1.json.stdout",
+   "bytes": 72,
+   "sha256": "2ede7d710a060b1611f24070636535a9c1fd76570fbf4d2449ce324fcac66563"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_2.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_2.json",
+   "bytes": 4665,
+   "sha256": "6566407d2083b38a3781293336887732223a912e1be01719e3b8c06ee3018d05"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_2.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_2.json.receipt.json",
+   "bytes": 672,
+   "sha256": "7c03e008d4e06c5e82770256986e58483daa58403ec64e35831c64aa9df85c67"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_2.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_2.json.stdout",
+   "bytes": 72,
+   "sha256": "db62858a7b70be4bd7a5c15d8c9727db652ca233b72e112f73fe3f6f84b92394"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_3.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_3.json",
+   "bytes": 4652,
+   "sha256": "4495c50b7098ccd35c673ddacc7dee2f94072e662288da65e2e982be9d709a68"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_3.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_3.json.receipt.json",
+   "bytes": 674,
+   "sha256": "bffeae4cdfc0341a14942920bc8e99c94c6c0ff449f7802a471e1c0879ce6bdc"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_irregular_3.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_irregular_3.json.stdout",
+   "bytes": 72,
+   "sha256": "bbdecd3b8d91d33c88eb9340d48ae330c3262916335e1be07cc2223cf3ed7889"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_0.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_0.json",
+   "bytes": 4642,
+   "sha256": "854e14cae21333a5340248dffb7f2e43a8b153958690d0e50d93957d4b449073"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_0.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_0.json.receipt.json",
+   "bytes": 669,
+   "sha256": "b66f5de58a0d21a449bfa4e392040b9be1bdde3b8b0fbce0ba301a4bfd2331dc"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_0.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_0.json.stdout",
+   "bytes": 72,
+   "sha256": "a44650ffc57d174908533c0a21ed9c70877d165b375dee123f9452ff67ba55d2"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_1.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_1.json",
+   "bytes": 4650,
+   "sha256": "d4d9f3704952f180b600c70f35e89d72580085c5d3f2a730757f9fb9da927651"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_1.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_1.json.receipt.json",
+   "bytes": 668,
+   "sha256": "0a59efe9b9ba7643ecde898de246bc10471c071dafba6f620ebd071f247f8ed3"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_1.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_1.json.stdout",
+   "bytes": 72,
+   "sha256": "5595d22f299ee56018e65f7955bb140af56561f3451bfeaa13d7ce37468a1298"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_2.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_2.json",
+   "bytes": 4671,
+   "sha256": "9a27d44aba38899a639bde01d1c96559b6204fc208c51525cf8e0eac057a50cf"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_2.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_2.json.receipt.json",
+   "bytes": 668,
+   "sha256": "ad83241890dfbac461d4a2b57e22f0ed7b181f35400f5ce18b622fda2acadec7"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_2.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_2.json.stdout",
+   "bytes": 72,
+   "sha256": "a202ab3a56b67920d7124597310e60bd1c0d62edf998eb6ee7f4cba926b7f632"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_3.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_3.json",
+   "bytes": 4657,
+   "sha256": "dcc8a2fef50a26d0542bda6241a34e49555e3929a6560fa799f647dda59e1cc1"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_3.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_3.json.receipt.json",
+   "bytes": 669,
+   "sha256": "c732e95c4d0100a2bcf1e2fd421070ca1d7aff8782ac6fee91f8dfc0cdd50057"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/validation/N16_winding_3.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/validation/N16_winding_3.json.stdout",
+   "bytes": 72,
+   "sha256": "4c82295b370290114aedc8a7d46a3b7481cba8e920cb7f29ed29c7e39eac1c17"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N128_irregular.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_irregular.receipt.json",
+   "bytes": 565,
+   "sha256": "ad9133020c912c5139b5dc96f93f4c295be35fad9a6e094f8b91ab8607d5fd98"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N128_winding.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_winding.receipt.json",
+   "bytes": 562,
+   "sha256": "96a0f4cf9147bd3b92f5ac2bb37c05f78f52c64539a3fb0fbb9267d5268096ea"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N16_irregular.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.receipt.json",
+   "bytes": 565,
+   "sha256": "3afb38d854cc4d912cc69dc40b0f061af343b721e71ace696ec94e8f1f56ea57"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N16_winding.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.receipt.json",
+   "bytes": 561,
+   "sha256": "3d4891aae0113ca11a67ed4c457b96d88993bf508a7be1d654205a12181f49a1"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N32_irregular.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_irregular.receipt.json",
+   "bytes": 564,
+   "sha256": "65533234f008914578b57df8b2ad73727894e2010769a10dcd109e877fdab748"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N32_winding.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.receipt.json",
+   "bytes": 560,
+   "sha256": "49d3fd59c6329fdff51e2499974e2d7f439234517251d6ab2d784f138102a972"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N64_irregular.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_irregular.receipt.json",
+   "bytes": 564,
+   "sha256": "eb535883e91afe28c23f7142c2c13ccfd08e87b85f7b79e0b3bcbd6ebf94b50a"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/geometry/N64_winding.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_winding.receipt.json",
+   "bytes": 560,
+   "sha256": "9364a54c3b91fadbdc67bead85fac0aee3d64c28ee177065a857578dbdf84673"
+  },
+  {
+   "path": "dimer-routed-256-followup/assessment/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+   "bytes": 2687,
+   "sha256": "58bb811851350c804fd12518cb58dd46625a5eec198ba955dc891886837a4b6e"
+  },
+  {
+   "path": "dimer-routed-256-followup/assessment/DIMER_ROUTED_256_DEADLINE_ANALYSIS_PLAN.md",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_DEADLINE_ANALYSIS_PLAN.md",
+   "bytes": 2382,
+   "sha256": "e51e579ab0ef56818d9ebd14cbfc44980f95bcfa73e61376972c1e13d56880d6"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/dimer_routed_256_setup.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_setup.py",
+   "bytes": 3593,
+   "sha256": "b61744a2501655c8e6f1c9e16ec21282f5b7cc3c7dd0090012c07c8d33ddb473"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/dimer_routed_256_run.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_run.py",
+   "bytes": 5030,
+   "sha256": "de81121c1c624f36901a9579c39de6656674ecbfa9192adb8ca784589bc0578f"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/analyze_dimer_routed_256.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_dimer_routed_256.py",
+   "bytes": 11737,
+   "sha256": "00319341324b4c88719fb9643a22f03ac5224e81600584ef50118bca7e5fb195"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/analyze_dimer_routed_256_censored.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_dimer_routed_256_censored.py",
+   "bytes": 7995,
+   "sha256": "2065f4a8ceb1f97abd40408bc716ed0f923fa2fb57bdfe99741265643150a5db"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/check_dimer_routed_256_endpoints.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/check_dimer_routed_256_endpoints.py",
+   "bytes": 8132,
+   "sha256": "5519f15ad920b5dbc93d80a0bee8f5f41ef990667b82694207bdc5c45268eaef"
+  },
+  {
+   "path": "dimer-routed-256-followup/source/reconcile_dimer_routed_256_deadline.py",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/reconcile_dimer_routed_256_deadline.py",
+   "bytes": 4297,
+   "sha256": "39cb97e4b9c38706cc5b3994faa62c5ceccd977d0661862cb043eb9f61d015ce"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/AUTHENTICATION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/AUTHENTICATION.json",
+   "bytes": 7163,
+   "sha256": "091ecf0e3c11434d426a975e6295c1b86998888a3edc94304988fb808ba5dda1"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/PER_HISTORY.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/PER_HISTORY.json",
+   "bytes": 26559,
+   "sha256": "b1c4a634b06517be4488d189b58dc446237534a97ef00c30b2d88c1d227fee37"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/RESULTS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/RESULTS.json",
+   "bytes": 42203,
+   "sha256": "089aa7c29f4750821da8b3eb94b45e3036667ea848e098f45eafbbc60173a6ff"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/COPY_MANIFEST.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/COPY_MANIFEST.json",
+   "bytes": 9606,
+   "sha256": "0660326586799f6d9a98890d37f14286de645072ea830b62b40df63ffd29fc2f"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/DISPATCH.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/DISPATCH.json",
+   "bytes": 3403,
+   "sha256": "e1dee605eb18cdd23496d76394caed7b7959f9e519d911e7d18a16c8eec1842d"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/MANIFEST.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/MANIFEST.json",
+   "bytes": 19639,
+   "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/PROGRESS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/PROGRESS.json",
+   "bytes": 8342,
+   "sha256": "c2cb89e5c249372dcd526eb0e35b09be00042c13456a8651e29b2945f0c41231"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/RECOVERY_SUMMARY.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/RECOVERY_SUMMARY.json",
+   "bytes": 41913,
+   "sha256": "b4978fb872ff79f827594121ac807ca5e37ab69563f87ac916fc87fa33ef8efd"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r001.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r001.json.receipt.json",
+   "bytes": 2126,
+   "sha256": "c8a61ce8a0680602966ec4adc076b2ba83fa706e0fbfbd2b52de298317ea9fe6"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r002.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r002.json.receipt.json",
+   "bytes": 2123,
+   "sha256": "3948990b4bdebe0f9c5396491343e07eecd072f44199ddffd243625127455ea9"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r003.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r003.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "3daeb3dfbe957e293715c50425739d14160012437670507530babb90f2b6c3eb"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r004.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r004.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "585fea8bf59d31236898ad6265d19fa02717101b974e67cc61604a986e631c88"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r005.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r005.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "d3b718522d2e7a5dd247e83b1b070bc1777912885fcc2ecaa82a889cb9553827"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r006.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r006.json.receipt.json",
+   "bytes": 2125,
+   "sha256": "4935d0338ba2e37eb8b74aa424bf6835a4b24bab312377fe4e4c6dd47f638de1"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r007.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r007.json.receipt.json",
+   "bytes": 2123,
+   "sha256": "b40ba12fd2ff354945a1b4f9263f7c0d0f2ccbbfdbd0cdc1af3fce815cc1677a"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_irregular_r008.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_irregular_r008.json.receipt.json",
+   "bytes": 2125,
+   "sha256": "ede085f515bb5bc7b30e14aa5be6c8b7dbc4470d0db330d0c4b2dc58d095608b"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r001.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r001.json.receipt.json",
+   "bytes": 2107,
+   "sha256": "e5c228b575dc18c652ac3d33d13c8d9b13ca07f58351dc85984d64ebcbbf3d23"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r002.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r002.json.receipt.json",
+   "bytes": 2107,
+   "sha256": "2f947de9c897ff6ffcf48a6f2b348c7c121032bb0e53f43cfa2d15023c3a733a"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r003.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r003.json.receipt.json",
+   "bytes": 1480,
+   "sha256": "9c1a25d42ee11409a3e02ba8b0ea03730dac52f886bcb288c390b1c941afe255"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r003.json.stderr",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r003.json.stderr",
+   "bytes": 33,
+   "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r004.json.receipt.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r004.json.receipt.json",
+   "bytes": 1480,
+   "sha256": "7bc9073a289e1377917f326afc2db77268176185cd9aaed144566dae8de4de6e"
+  },
+  {
+   "path": "dimer-routed-256-followup/results/deadline_receipts/histories/N256_winding_r004.json.stderr",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_censored_results/deadline_receipts/histories/N256_winding_r004.json.stderr",
+   "bytes": 33,
+   "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/DIMER_ROUTED_256_ANALYSIS_SIGN_CONTROLS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_ANALYSIS_SIGN_CONTROLS.json",
+   "bytes": 1148,
+   "sha256": "62b198a668d4e9496072ae23911eb5d7d084451ce871d08ba03676044154e3f4"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/DIMER_ROUTED_256_CENSORED_ANALYSIS_CONTROLS.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_CENSORED_ANALYSIS_CONTROLS.json",
+   "bytes": 1772,
+   "sha256": "899e22f78759575a855ba230fd101894efd52fccc80f17ef0f5e34309db87811"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/DIMER_ROUTED_256_ENDPOINT_CHECK_SELECTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_ENDPOINT_CHECK_SELECTION.json",
+   "bytes": 1903,
+   "sha256": "44845f1f09b301e1de22c5ec2b03ad1fd5257c6f8950e8a01cd3a1da3d9be314"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r003/COMPARISON.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r003/COMPARISON.json",
+   "bytes": 2125,
+   "sha256": "986d0acc2d95700948b76734c75837734a7e76f5e0b5c6845ae02ba9ea61afd9"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r003/RECONSTRUCTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r003/RECONSTRUCTION.json",
+   "bytes": 6775,
+   "sha256": "4245da78e6b2d0a96a00b8745a1f7e4acd362482fdf2927773598af366370b8e"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r003/RECONSTRUCTION_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r003/RECONSTRUCTION_SEAL.json",
+   "bytes": 1355,
+   "sha256": "4efe85ea20d851933c10d223cbfd96a94e055ca20ae37b08e0d7b1826fb308da"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r007/COMPARISON.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r007/COMPARISON.json",
+   "bytes": 2127,
+   "sha256": "ce015c9b332f9028151dd35bbe8db9914a6237f3f15582de578890e84d65a90a"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r007/RECONSTRUCTION.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r007/RECONSTRUCTION.json",
+   "bytes": 6775,
+   "sha256": "18537b08fdb86e4a49cf7704f424aade6f5e13a6e71b3a99708913548f92b0e7"
+  },
+  {
+   "path": "dimer-routed-256-followup/verification/endpoint_checks/irregular_r007/RECONSTRUCTION_SEAL.json",
+   "origin": "local-branch codex/mobile-record-post-formation-campaign-20260923 @ eb34060bef (not on origin)",
+   "source": "~/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r007/RECONSTRUCTION_SEAL.json",
+   "bytes": 1355,
+   "sha256": "9c405f50b597857816ece1371599cd65af11809dd444728839743767c40ef9f1"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/MANIFEST.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json",
+   "bytes": 19639,
+   "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/DISPATCH.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/DISPATCH.json",
+   "bytes": 3403,
+   "sha256": "e1dee605eb18cdd23496d76394caed7b7959f9e519d911e7d18a16c8eec1842d"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/PROGRESS.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/PROGRESS.json",
+   "bytes": 8342,
+   "sha256": "c2cb89e5c249372dcd526eb0e35b09be00042c13456a8651e29b2945f0c41231"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/RECOVERY_SUMMARY.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/RECOVERY_SUMMARY.json",
+   "bytes": 41913,
+   "sha256": "b4978fb872ff79f827594121ac807ca5e37ab69563f87ac916fc87fa33ef8efd"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_irregular.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json",
+   "bytes": 4763,
+   "sha256": "aff1ff41e363d5fd634a55c2b1bed49956d8de41137690ac9979ced793eaa506"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_irregular.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json.receipt.json",
+   "bytes": 975,
+   "sha256": "57c83c7f279fc03f8b165c79c1a671203dd531dfbf22593d896724a189ccb1d0"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_irregular.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_irregular.json.stdout",
+   "bytes": 74,
+   "sha256": "e722ebbb5b8a0f2eeef548bd6003931a0104059d97a85de3c07132565dcfc2cf"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_winding.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_winding.json",
+   "bytes": 4718,
+   "sha256": "a5d0c10db476e96af363a4d9d498dfea5c239b14c986d04da46c303bd1116cac"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_winding.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_winding.json.receipt.json",
+   "bytes": 966,
+   "sha256": "df2cf5cbf81c7613344dab56e046fa46be88aadf6da9e41ca297a238dcda86c6"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/validation/N256_winding.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/validation/N256_winding.json.stdout",
+   "bytes": 74,
+   "sha256": "7f8e680f7a7421beca84e4d852e4efe58f822f7dd8ee8d3ded1c0d25be3ea477"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r001.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r001.json",
+   "bytes": 4699,
+   "sha256": "142f928c3cf2b987479c1ce56fb76da525e879b53f773333b1634870a63d41ec"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r001.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r001.json.receipt.json",
+   "bytes": 2126,
+   "sha256": "c8a61ce8a0680602966ec4adc076b2ba83fa706e0fbfbd2b52de298317ea9fe6"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r001.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r001.json.stdout",
+   "bytes": 76,
+   "sha256": "52e51ef67599bcba78af937eea8b16f8a87783a0fe9b6af665399238bce387c3"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r002.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r002.json",
+   "bytes": 4694,
+   "sha256": "420af1fc9cc03e81aa78ade326fc90fddbf04530dbba14b4782f4db35cfbfa69"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r002.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r002.json.receipt.json",
+   "bytes": 2123,
+   "sha256": "3948990b4bdebe0f9c5396491343e07eecd072f44199ddffd243625127455ea9"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r002.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r002.json.stdout",
+   "bytes": 76,
+   "sha256": "cb8e429e7dc5d68efac6d4afaf1c06fe9caeb3f1934541d7e1820bd68b0b34cf"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r003.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json",
+   "bytes": 4686,
+   "sha256": "05ba015dc443ae2f43af378c044e6a992e6b0bafa6968101dff1c0db678af00e"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r003.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "3daeb3dfbe957e293715c50425739d14160012437670507530babb90f2b6c3eb"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r003.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.stdout",
+   "bytes": 76,
+   "sha256": "78b50ef32dc32b125e9010e19617c090a4bf951fd378425d31828cc66365e504"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r004.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r004.json",
+   "bytes": 4675,
+   "sha256": "e87f65d41a903e4261ebf57e607fa8d8ed9d62ff92468ff768a9ef5d3972f542"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r004.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r004.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "585fea8bf59d31236898ad6265d19fa02717101b974e67cc61604a986e631c88"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r004.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r004.json.stdout",
+   "bytes": 75,
+   "sha256": "98a42f0628cb5a847762108583c1b19d1bdb9564c24b51b12ac73e0676f329d3"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r005.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r005.json",
+   "bytes": 4695,
+   "sha256": "8f4b12f99532b51d51294f4cf29cfba688cb800267c209e2469752a88704106d"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r005.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r005.json.receipt.json",
+   "bytes": 2124,
+   "sha256": "d3b718522d2e7a5dd247e83b1b070bc1777912885fcc2ecaa82a889cb9553827"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r005.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r005.json.stdout",
+   "bytes": 76,
+   "sha256": "21c8652d8c907c2b6d1152366e46f07449381fbf5b009f4d9f390ed80d8310ff"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r006.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json",
+   "bytes": 4708,
+   "sha256": "7e5b6f088f775e1d038ea5f8b2c7621e515e62a51e26b3e2289e0a962b059cc5"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r006.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.receipt.json",
+   "bytes": 2125,
+   "sha256": "4935d0338ba2e37eb8b74aa424bf6835a4b24bab312377fe4e4c6dd47f638de1"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r006.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.stdout",
+   "bytes": 76,
+   "sha256": "b416a5e4a220855d5e43f692071451db7aee7e080f78f22712d91c58e328e4c7"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r007.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r007.json",
+   "bytes": 4697,
+   "sha256": "98ae6bebca5a3bfe7fd6d5a9e2f7e31a590b505c0f76884fe7dec26c0413b03c"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r007.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r007.json.receipt.json",
+   "bytes": 2123,
+   "sha256": "b40ba12fd2ff354945a1b4f9263f7c0d0f2ccbbfdbd0cdc1af3fce815cc1677a"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r007.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r007.json.stdout",
+   "bytes": 76,
+   "sha256": "182b6e14b5e2a393b9271210ef667a31000ddcfdf9a290e9ba3a25fcc6cad1ae"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r008.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r008.json",
+   "bytes": 4674,
+   "sha256": "12310075300dd60778eb612d8c67e788c26977d1389117c192ddd4b6c6168b16"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r008.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r008.json.receipt.json",
+   "bytes": 2125,
+   "sha256": "ede085f515bb5bc7b30e14aa5be6c8b7dbc4470d0db330d0c4b2dc58d095608b"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_irregular_r008.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r008.json.stdout",
+   "bytes": 76,
+   "sha256": "74ff3e517ee656d61188d91fe5973d28253a15d47e9b160b99eb9730da70e24c"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r001.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r001.json",
+   "bytes": 4686,
+   "sha256": "e213516ae826b194399294c9752a253684b155d7f88331ed9c59c3f24bb5a326"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r001.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r001.json.receipt.json",
+   "bytes": 2107,
+   "sha256": "e5c228b575dc18c652ac3d33d13c8d9b13ca07f58351dc85984d64ebcbbf3d23"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r001.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r001.json.stdout",
+   "bytes": 76,
+   "sha256": "b974bfa0ba897b6fe57183e5c63e0fd8027ef881ebdf08ac467e955ffb55fa7c"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r002.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r002.json",
+   "bytes": 4674,
+   "sha256": "21d710259f0c6b18678eb718fc5f58e158956a5cd0f023f24f36dd409267457f"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r002.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r002.json.receipt.json",
+   "bytes": 2107,
+   "sha256": "2f947de9c897ff6ffcf48a6f2b348c7c121032bb0e53f43cfa2d15023c3a733a"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r002.json.stdout",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r002.json.stdout",
+   "bytes": 76,
+   "sha256": "7fdce73073e2011eabc85b31f6017ff6a91a73d6ae69c07668f100fbfb9f6136"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r003.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r003.json.receipt.json",
+   "bytes": 1480,
+   "sha256": "9c1a25d42ee11409a3e02ba8b0ea03730dac52f886bcb288c390b1c941afe255"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r003.json.stderr",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r003.json.stderr",
+   "bytes": 33,
+   "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r004.json.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r004.json.receipt.json",
+   "bytes": 1480,
+   "sha256": "7bc9073a289e1377917f326afc2db77268176185cd9aaed144566dae8de4de6e"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/histories/N256_winding_r004.json.stderr",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_winding_r004.json.stderr",
+   "bytes": 33,
+   "sha256": "9bcda81697589bd7903b7f7b3b59df2246d4194e8dc259b3d4e9f75f8e0faf2d"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/geometry/N256_irregular.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_irregular.receipt.json",
+   "bytes": 857,
+   "sha256": "189754d5895417cc22d34ffe5e0a00df644d12894152f59988dc23d61ff5208c"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/geometry/N256_winding.receipt.json",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_winding.receipt.json",
+   "bytes": 849,
+   "sha256": "78f6b3a456e4e566cf26c04aa44588af243545a16775fca126623d793a7e1d71"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/frozen_sources/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+   "bytes": 4870,
+   "sha256": "d8cbfed1ba55a4a11048c7d68135f0ee7f6d0c98c38dc685e43bb43ead90952d"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "bytes": 19545,
+   "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/frozen_sources/dimer_routed_dynamic_setup.py",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamic_setup.py",
+   "bytes": 8549,
+   "sha256": "ef662a36150dd8db8ea6831062c4f18cbb11b95397056c7e5fa16b60343b50dd"
+  },
+  {
+   "path": "dimer-routed-dynamic-screen/run/frozen_sources/dimer_routed_dynamics.cpp",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamics.cpp",
+   "bytes": 10682,
+   "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/frozen_sources/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+   "bytes": 2687,
+   "sha256": "58bb811851350c804fd12518cb58dd46625a5eec198ba955dc891886837a4b6e"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+   "bytes": 19650,
+   "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/frozen_sources/dimer_routed_256_setup.py",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/dimer_routed_256_setup.py",
+   "bytes": 3593,
+   "sha256": "b61744a2501655c8e6f1c9e16ec21282f5b7cc3c7dd0090012c07c8d33ddb473"
+  },
+  {
+   "path": "dimer-routed-256-followup/run/frozen_sources/dimer_routed_dynamics.cpp",
+   "origin": "deleted scratch directory ~/Documents/Codex/physics-sync-2026-09-21-second",
+   "source": "~/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/dimer_routed_dynamics.cpp",
+   "bytes": 10682,
+   "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+  }
+ ],
+ "deleted_directory_inventory": [
+  {
+   "entry": "EXTERNAL_PR_LATEST_NOTE_IDENTITIES.json",
+   "files": 1,
+   "bytes": 995,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "EXTERNAL_PR_LATEST_READ_RECEIPT.json",
+   "files": 1,
+   "bytes": 2362,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "GEOMETRIC_PARTNER_COMPILE.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "PR8601_NOTE.md",
+   "files": 1,
+   "bytes": 19931,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "PR8601_SOURCE_IDENTITY.json",
+   "files": 1,
+   "bytes": 617,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "QUANTUM_NO_GO_SKILL_REVISION.json",
+   "files": 1,
+   "bytes": 1126,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_author_run.json",
+   "files": 1,
+   "bytes": 73283,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_author_run.log",
+   "files": 1,
+   "bytes": 128,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_author_run.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_cache.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_cache.stderr",
+   "files": 1,
+   "bytes": 592,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_cache_receipt.json",
+   "files": 1,
+   "bytes": 1338,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_changed_evidence.log",
+   "files": 1,
+   "bytes": 729,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_changed_evidence.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_double_killed_birth_hazard.json",
+   "files": 1,
+   "bytes": 2788,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_double_killed_birth_hazard.log",
+   "files": 1,
+   "bytes": 95,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_double_killed_birth_hazard.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_omit_augmenting_path_flip.json",
+   "files": 1,
+   "bytes": 2646,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_omit_augmenting_path_flip.log",
+   "files": 1,
+   "bytes": 95,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_omit_augmenting_path_flip.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_pipeline.log",
+   "files": 1,
+   "bytes": 21647,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_pr_body.md",
+   "files": 1,
+   "bytes": 1171,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_vocab.log",
+   "files": 1,
+   "bytes": 194,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "all_stage_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "authenticate_mixed_drift_packet.py",
+   "files": 1,
+   "bytes": 2160,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "authenticate_moving_nonlinear_packet.py",
+   "files": 1,
+   "bytes": 1922,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "authenticate_pair_cubic_packet.py",
+   "files": 1,
+   "bytes": 1893,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "authenticate_two_pair_encoding_packet.py",
+   "files": 1,
+   "bytes": 2519,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_all_stage_publication.py",
+   "files": 1,
+   "bytes": 10212,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_empty_start_publication.py",
+   "files": 1,
+   "bytes": 13299,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_geometric_publication.py",
+   "files": 1,
+   "bytes": 12144,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_geometric_publication_five.py",
+   "files": 1,
+   "bytes": 13773,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_nonlinear_final_publication.py",
+   "files": 1,
+   "bytes": 13278,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_nonlinear_publication.py",
+   "files": 1,
+   "bytes": 10078,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_quantum_publication.py",
+   "files": 1,
+   "bytes": 11900,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "build_wave_publication.py",
+   "files": 1,
+   "bytes": 15077,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "current_open_PRs_2050.json",
+   "files": 1,
+   "bytes": 12597,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "dimer_routed_256_followup/",
+   "files": 82,
+   "bytes": 637729645,
+   "disposition": "MANIFEST/DISPATCH/PROGRESS/RECOVERY_SUMMARY, frozen_sources, validation and history JSON with receipts saved under dimer-routed-256-followup/run/; endpoint states and geometry fixtures deleted"
+  },
+  {
+   "entry": "dimer_routed_dynamic_analysis/",
+   "files": 3,
+   "bytes": 3002010,
+   "disposition": "byte-identical to dimer-routed-dynamic-screen/results/ (saved from the local branch)"
+  },
+  {
+   "entry": "dimer_routed_dynamic_screen/",
+   "files": 4885,
+   "bytes": 478324114,
+   "disposition": "MANIFEST/DISPATCH/PROGRESS/SUMMARY, frozen_sources, validation JSON and geometry receipts saved under dimer-routed-dynamic-screen/run/; histories, endpoint states and geometry fixtures deleted"
+  },
+  {
+   "entry": "dimer_routed_dynamic_screen_setup_attempt01/",
+   "files": 4,
+   "bytes": 17044,
+   "disposition": "deleted: superseded setup attempt"
+  },
+  {
+   "entry": "dimer_routed_dynamics",
+   "files": 1,
+   "bytes": 60104,
+   "disposition": "deleted: compiled binary (source saved)"
+  },
+  {
+   "entry": "empty_PR_BODY.md",
+   "files": 1,
+   "bytes": 1346,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_PR_FINAL.json",
+   "files": 1,
+   "bytes": 327,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_author_run.json",
+   "files": 1,
+   "bytes": 110129,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_author_run.log",
+   "files": 1,
+   "bytes": 213,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_author_run.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_cache.log",
+   "files": 1,
+   "bytes": 33,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_cache.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_cache_receipt.json",
+   "files": 1,
+   "bytes": 978,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_changed_evidence.log",
+   "files": 1,
+   "bytes": 64,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_changed_evidence.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_changed_evidence_final.log",
+   "files": 1,
+   "bytes": 64,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_changed_evidence_final.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_commit.log",
+   "files": 1,
+   "bytes": 9557,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_diff_check.log",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_expected_reviews.json",
+   "files": 1,
+   "bytes": 400,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_final_gate_before_commit.log",
+   "files": 1,
+   "bytes": 64,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_final_gate_before_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_finalize.log",
+   "files": 1,
+   "bytes": 200,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_finalize.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_integration_commands.json",
+   "files": 1,
+   "bytes": 883,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_mutation_receipt.json",
+   "files": 1,
+   "bytes": 1377,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_birth_killing_scale.json",
+   "files": 1,
+   "bytes": 3670,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_birth_killing_scale.log",
+   "files": 1,
+   "bytes": 106,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_birth_killing_scale.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_route_orientation_factor.json",
+   "files": 1,
+   "bytes": 3627,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_route_orientation_factor.log",
+   "files": 1,
+   "bytes": 107,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_omit_route_orientation_factor.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_packaging.log",
+   "files": 1,
+   "bytes": 73,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_packaging.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_pipeline.log",
+   "files": 1,
+   "bytes": 21647,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_publication_development/",
+   "files": 5,
+   "bytes": 111453,
+   "disposition": "deleted: publication drafts; the published versions are in open PRs"
+  },
+  {
+   "entry": "empty_push.log",
+   "files": 1,
+   "bytes": 155,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_push.stderr",
+   "files": 1,
+   "bytes": 520,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_vocab.log",
+   "files": 1,
+   "bytes": 190,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_wrong_original_hole_fiber.json",
+   "files": 1,
+   "bytes": 3949,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_wrong_original_hole_fiber.log",
+   "files": 1,
+   "bytes": 106,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "empty_wrong_original_hole_fiber.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "final_main_fetch.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "final_main_fetch.stderr",
+   "files": 1,
+   "bytes": 121,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_all_stage_publication.py",
+   "files": 1,
+   "bytes": 4165,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_empty_start_publication.py",
+   "files": 1,
+   "bytes": 5042,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_geometric_publication.py",
+   "files": 1,
+   "bytes": 2649,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_nonlinear_final_publication.py",
+   "files": 1,
+   "bytes": 5506,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_nonlinear_publication.py",
+   "files": 1,
+   "bytes": 5119,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_quantum_publication.py",
+   "files": 1,
+   "bytes": 5092,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "finalize_wave_publication.py",
+   "files": 1,
+   "bytes": 4996,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "formation_density_inventory.txt",
+   "files": 1,
+   "bytes": 44544,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_capsules.log",
+   "files": 1,
+   "bytes": 8714,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_capsules.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_changed_evidence.log",
+   "files": 1,
+   "bytes": 757,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_changed_evidence.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_integration_progress.json",
+   "files": 1,
+   "bytes": 700,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_pipeline.log",
+   "files": 1,
+   "bytes": 21647,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_staged_evidence.json",
+   "files": 1,
+   "bytes": 757,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_staged_evidence.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_vocab.log",
+   "files": 1,
+   "bytes": 200,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_final_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_fixed_rate_analysis/",
+   "files": 4,
+   "bytes": 2003138,
+   "disposition": "byte-identical to geometric-fixed-rate-formation/results/ (saved from the local branch)"
+  },
+  {
+   "entry": "geometric_fixed_rate_followup/",
+   "files": 17475,
+   "bytes": 3188070149,
+   "disposition": "run MANIFEST/PROGRESS/SUMMARY saved under geometric-fixed-rate-formation/run/; 2,496 per-history outputs (csv, json, receipts, state.npz) deleted, regenerable from the manifest seeds"
+  },
+  {
+   "entry": "geometric_fixed_rate_pilot/",
+   "files": 65,
+   "bytes": 632067,
+   "disposition": "MANIFEST and SUMMARY saved; pilot outputs deleted"
+  },
+  {
+   "entry": "geometric_fixed_rate_pilot_comparison.json",
+   "files": 1,
+   "bytes": 1617,
+   "disposition": "saved as geometric-fixed-rate-formation/run/pilot_comparison.json"
+  },
+  {
+   "entry": "geometric_fixed_rate_pilot_v2/",
+   "files": 65,
+   "bytes": 632119,
+   "disposition": "MANIFEST and SUMMARY saved; pilot outputs deleted"
+  },
+  {
+   "entry": "geometric_formation_pr_body.md",
+   "files": 1,
+   "bytes": 2443,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_partner_growth",
+   "files": 1,
+   "bytes": 60632,
+   "disposition": "deleted: compiled binary (source saved)"
+  },
+  {
+   "entry": "geometric_publication_before_five_parts/",
+   "files": 65,
+   "bytes": 886449,
+   "disposition": "deleted: publication drafts; the published versions are in open PRs"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_02.json",
+   "files": 1,
+   "bytes": 952,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_02.log",
+   "files": 1,
+   "bytes": 55,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_02.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_03.json",
+   "files": 1,
+   "bytes": 1095,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_03.log",
+   "files": 1,
+   "bytes": 408,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_cache_attempt_03.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_commit.log",
+   "files": 1,
+   "bytes": 14500,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "geometric_publication_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "latest_prs_2332.json",
+   "files": 1,
+   "bytes": 3096,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "latest_prs_final.json",
+   "files": 1,
+   "bytes": 3725,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "literature/",
+   "files": 59,
+   "bytes": 19744072,
+   "disposition": "deleted: copies and page extracts of published papers (Jerrum-Sinclair 1989, Taggi arXiv:1909.06558v3, Moessner-Sondhi 2003, Raman-Moessner-Sondhi 2005, Albuquerque-Alet-Moessner 2012, Xu-Beach 2013, Jain-Mizgerd 2024, Simon), re-downloadable"
+  },
+  {
+   "entry": "main_fetch_2332.log",
+   "files": 1,
+   "bytes": 121,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_PR_BODY.md",
+   "files": 1,
+   "bytes": 2323,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_PR_FINAL.json",
+   "files": 1,
+   "bytes": 378,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_assembly.json",
+   "files": 1,
+   "bytes": 200,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_assembly.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_author_run.json",
+   "files": 1,
+   "bytes": 43841,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_author_run.log",
+   "files": 1,
+   "bytes": 260,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_author_run.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_cache_receipt.json",
+   "files": 1,
+   "bytes": 964,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_capsule_verification.json",
+   "files": 1,
+   "bytes": 23591,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_commit.log",
+   "files": 1,
+   "bytes": 11969,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_double_block_exponential_coefficient.json",
+   "files": 1,
+   "bytes": 4448,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_double_block_exponential_coefficient.log",
+   "files": 1,
+   "bytes": 98,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_double_block_exponential_coefficient.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_expected_reviews.json",
+   "files": 1,
+   "bytes": 571,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_controls.log",
+   "files": 1,
+   "bytes": 247,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_controls.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_gate.json",
+   "files": 1,
+   "bytes": 681,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_gate.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_integration.log",
+   "files": 1,
+   "bytes": 33,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_final_integration.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_fresh_output_comparison.json",
+   "files": 1,
+   "bytes": 910,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_integration_commands.json",
+   "files": 1,
+   "bytes": 879,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_integration_stdout.log",
+   "files": 1,
+   "bytes": 19,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_integration_stdout.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_mutation_receipt.json",
+   "files": 1,
+   "bytes": 491,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_entropy_flux_half_M.json",
+   "files": 1,
+   "bytes": 4662,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_entropy_flux_half_M.log",
+   "files": 1,
+   "bytes": 96,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_entropy_flux_half_M.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_geometry_marginal_entropy_derivative.json",
+   "files": 1,
+   "bytes": 4595,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_geometry_marginal_entropy_derivative.log",
+   "files": 1,
+   "bytes": 98,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_geometry_marginal_entropy_derivative.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_nonlinear_population_flux.json",
+   "files": 1,
+   "bytes": 4667,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_nonlinear_population_flux.log",
+   "files": 1,
+   "bytes": 96,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_nonlinear_population_flux.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_owner_boundary_coverage.json",
+   "files": 1,
+   "bytes": 4597,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_owner_boundary_coverage.log",
+   "files": 1,
+   "bytes": 98,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_omit_owner_boundary_coverage.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_packaging.json",
+   "files": 1,
+   "bytes": 73,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_packaging.log",
+   "files": 1,
+   "bytes": 74,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_packaging.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_pipeline.log",
+   "files": 1,
+   "bytes": 21648,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_publication_development/",
+   "files": 18,
+   "bytes": 105388,
+   "disposition": "deleted: publication drafts; the published versions are in open PRs"
+  },
+  {
+   "entry": "nonlinear_push.log",
+   "files": 1,
+   "bytes": 139,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_push.stderr",
+   "files": 1,
+   "bytes": 488,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_staged_candidate.json",
+   "files": 1,
+   "bytes": 22934,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_vocab.log",
+   "files": 1,
+   "bytes": 194,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "nonlinear_whitespace.log",
+   "files": 1,
+   "bytes": 902,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_all_stage_review.py",
+   "files": 1,
+   "bytes": 3686,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_empty_start_reviews.py",
+   "files": 1,
+   "bytes": 5884,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_geometric_reviews.py",
+   "files": 1,
+   "bytes": 5599,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_geometric_reviews_five.py",
+   "files": 1,
+   "bytes": 6536,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_nonlinear_reviews.py",
+   "files": 1,
+   "bytes": 6145,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_quantum_reviews.py",
+   "files": 1,
+   "bytes": 6149,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "package_wave_reviews.py",
+   "files": 1,
+   "bytes": 6448,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "paired_record_growth",
+   "files": 1,
+   "bytes": 59048,
+   "disposition": "deleted: compiled binary for an earlier computation (source on the local branch)"
+  },
+  {
+   "entry": "paired_record_growth_compile.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "planning-open-pr-inventory.json",
+   "files": 1,
+   "bytes": 3203,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "plotting-venv/",
+   "files": 2627,
+   "bytes": 67345125,
+   "disposition": "deleted: Python virtualenv"
+  },
+  {
+   "entry": "plotting_install.log",
+   "files": 1,
+   "bytes": 2105,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "plotting_install.stderr",
+   "files": 1,
+   "bytes": 205,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8570-note.md",
+   "files": 1,
+   "bytes": 41102,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8570.json",
+   "files": 1,
+   "bytes": 8511,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8607_2335.json",
+   "files": 1,
+   "bytes": 5515,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8607_latest_note.md",
+   "files": 1,
+   "bytes": 18283,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8608_2335.json",
+   "files": 1,
+   "bytes": 5237,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "pr8608_latest_note.md",
+   "files": 1,
+   "bytes": 19173,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_N8_echo_inventory.txt",
+   "files": 1,
+   "bytes": 7788,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_N8_ledger_inventory.json",
+   "files": 1,
+   "bytes": 11703,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_PR_FINAL.json",
+   "files": 1,
+   "bytes": 272,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_author_run.json",
+   "files": 1,
+   "bytes": 59710,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_author_run.log",
+   "files": 1,
+   "bytes": 263,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_author_run.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_cache.log",
+   "files": 1,
+   "bytes": 33,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_cache.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_cache_receipt.json",
+   "files": 1,
+   "bytes": 999,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_capsule_verification.json",
+   "files": 1,
+   "bytes": 25211,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_commit.log",
+   "files": 1,
+   "bytes": 8020,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_diff_check.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_expected_reviews.json",
+   "files": 1,
+   "bytes": 574,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_final_gate.json",
+   "files": 1,
+   "bytes": 705,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_final_gate.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_fresh_output_comparison.json",
+   "files": 1,
+   "bytes": 343,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_gram_1949_sample.txt",
+   "files": 1,
+   "bytes": 73360,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_halve_dilute_commutator_bound.json",
+   "files": 1,
+   "bytes": 3078,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_halve_dilute_commutator_bound.log",
+   "files": 1,
+   "bytes": 99,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_halve_dilute_commutator_bound.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_integration_commands.json",
+   "files": 1,
+   "bytes": 883,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_mutation_receipt.json",
+   "files": 1,
+   "bytes": 1380,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_omit_occupation_depletion.json",
+   "files": 1,
+   "bytes": 3127,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_omit_occupation_depletion.log",
+   "files": 1,
+   "bytes": 99,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_omit_occupation_depletion.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_packaging.log",
+   "files": 1,
+   "bytes": 76,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_packaging.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_packet_schema_inventory.txt",
+   "files": 1,
+   "bytes": 3941,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_pipeline.log",
+   "files": 1,
+   "bytes": 21647,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_pr_body.md",
+   "files": 1,
+   "bytes": 697,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_publication_development/",
+   "files": 1,
+   "bytes": 405,
+   "disposition": "deleted: publication drafts; the published versions are in open PRs"
+  },
+  {
+   "entry": "quantum_recursive_external_inventory.json",
+   "files": 1,
+   "bytes": 2826,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_staged_candidate.json",
+   "files": 1,
+   "bytes": 15414,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_vocab.log",
+   "files": 1,
+   "bytes": 192,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_wrong_incidence_adjoint.json",
+   "files": 1,
+   "bytes": 3052,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_wrong_incidence_adjoint.log",
+   "files": 1,
+   "bytes": 97,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "quantum_wrong_incidence_adjoint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_0011.json",
+   "files": 1,
+   "bytes": 16129,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_0011_candidate.json",
+   "files": 1,
+   "bytes": 14918,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_0011_commit.log",
+   "files": 1,
+   "bytes": 8351,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_0011_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_0011_whitespace.log",
+   "files": 1,
+   "bytes": 368,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_1920.json",
+   "files": 1,
+   "bytes": 66571,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2200.json",
+   "files": 1,
+   "bytes": 78250,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2200_candidate.json",
+   "files": 1,
+   "bytes": 50259,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2200_whitespace.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2310.json",
+   "files": 1,
+   "bytes": 32706,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2310_candidate.json",
+   "files": 1,
+   "bytes": 32034,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2310_commit.log",
+   "files": 1,
+   "bytes": 17823,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2310_whitespace.log",
+   "files": 1,
+   "bytes": 424,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2342.json",
+   "files": 1,
+   "bytes": 12118,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2342_commit.log",
+   "files": 1,
+   "bytes": 6122,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_2342_whitespace.log",
+   "files": 1,
+   "bytes": 886,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_FINAL.json",
+   "files": 1,
+   "bytes": 19109,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_FINAL_CANDIDATE.json",
+   "files": 1,
+   "bytes": 18698,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_FINAL_commit.log",
+   "files": 1,
+   "bytes": 10357,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_FINAL_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_FINAL_whitespace.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_commit_1713.log",
+   "files": 1,
+   "bytes": 24460,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_stage_1713.json",
+   "files": 1,
+   "bytes": 22027,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "raw_recovery_whitespace_1713.log",
+   "files": 1,
+   "bytes": 1209,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "recovery_1605_commit.log",
+   "files": 1,
+   "bytes": 130928,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "recovery_1605_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "recovery_1605_paths.json",
+   "files": 1,
+   "bytes": 120625,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "review_context_PR8572.json",
+   "files": 1,
+   "bytes": 2439,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "review_context_PR8601.json",
+   "files": 1,
+   "bytes": 5456,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "run_empty_start_integration.py",
+   "files": 1,
+   "bytes": 1698,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "run_nonlinear_final_controls.py",
+   "files": 1,
+   "bytes": 1364,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "run_nonlinear_integration.py",
+   "files": 1,
+   "bytes": 1683,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "run_quantum_integration.py",
+   "files": 1,
+   "bytes": 1692,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "stage_nonlinear_final_candidate.py",
+   "files": 1,
+   "bytes": 2629,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "verify_geometric_publication_final.py",
+   "files": 1,
+   "bytes": 3841,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_PR_BODY.md",
+   "files": 1,
+   "bytes": 1229,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_author_run.json",
+   "files": 1,
+   "bytes": 73384,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_author_run.log",
+   "files": 1,
+   "bytes": 339,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_author_run.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_cache.log",
+   "files": 1,
+   "bytes": 51,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_cache.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_cache_receipt.json",
+   "files": 1,
+   "bytes": 1049,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_capsule_verification.json",
+   "files": 1,
+   "bytes": 31558,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_changed_evidence.log",
+   "files": 1,
+   "bytes": 64,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_changed_evidence.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_changed_evidence_final.log",
+   "files": 1,
+   "bytes": 64,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_changed_evidence_final.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_commit.log",
+   "files": 1,
+   "bytes": 10849,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_commit.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_diff_check.log",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_double_context_current.json",
+   "files": 1,
+   "bytes": 3422,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_double_context_current.log",
+   "files": 1,
+   "bytes": 98,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_double_context_current.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_integration_commands.json",
+   "files": 1,
+   "bytes": 879,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_mutation_receipt.json",
+   "files": 1,
+   "bytes": 447,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_omit_endpoint_return_word.json",
+   "files": 1,
+   "bytes": 3344,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_omit_endpoint_return_word.log",
+   "files": 1,
+   "bytes": 102,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_omit_endpoint_return_word.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_packaging.log",
+   "files": 1,
+   "bytes": 76,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_packaging.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_packaging_development/",
+   "files": 8,
+   "bytes": 8151,
+   "disposition": "deleted: publication drafts; the published versions are in open PRs"
+  },
+  {
+   "entry": "wave_pipeline.log",
+   "files": 1,
+   "bytes": 21647,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_pipeline.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_strict_lint.log",
+   "files": 1,
+   "bytes": 13775,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_strict_lint.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_vocab.json",
+   "files": 1,
+   "bytes": 153,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_vocab.log",
+   "files": 1,
+   "bytes": 189,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_vocab.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_wrong_plaquette_record_rotation.json",
+   "files": 1,
+   "bytes": 3441,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_wrong_plaquette_record_rotation.log",
+   "files": 1,
+   "bytes": 104,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  },
+  {
+   "entry": "wave_wrong_plaquette_record_rotation.stderr",
+   "files": 1,
+   "bytes": 0,
+   "disposition": "deleted: publication tooling, receipts or logs for PRs #8551-#8610 (science in those PRs)"
+  }
+ ]
+}

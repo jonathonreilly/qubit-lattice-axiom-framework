@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-21T19:15:30.247548+00:00",
+  "scope": "Root inspected the complete revised PNG at tool-rendered resolution; all eight panels, legend, axis labels, intervals and footer are visible. The legend-to-heading gap was increased after first render. No data or analysis changes.",
+  "plot_receipt_sha256": "a64f046d0026582bcaa110fc9e3982f50e6e3c1d2896b2aad27e662fcc8b6692",
+  "figures": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.png",
+      "bytes": 508691,
+      "sha256": "15d61d26bb6527aeab57a10eacae4307dd23b38d9e1304bf43e9978c092561a6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.pdf",
+      "bytes": 46933,
+      "sha256": "0fb81bfea64b7e7803084872d2f9216ae5a50444af1728c58218c5c4c0eb1194"
+    }
+  ],
+  "assessment_fully_read": true,
+  "PDF_separately_rendered": false
+}

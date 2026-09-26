@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "geometry",
+    "256",
+    "winding",
+    "29122256",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_winding.bin"
+  ],
+  "returncode": 0,
+  "seconds": 0.4388091564178467,
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_winding.stdout",
+    "bytes": 93,
+    "sha256": "665d718a510cc7c583e35d6229ef258344aa1132d01db971e9a87fde72972a55"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_winding.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

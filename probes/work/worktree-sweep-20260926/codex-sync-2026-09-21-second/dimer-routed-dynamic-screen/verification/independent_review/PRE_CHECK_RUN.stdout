@@ -1,0 +1,118 @@
+{
+  "scope": "Pre-author finite controls only; no production data read.",
+  "rates_and_current": [
+    {
+      "axis": 0,
+      "contexts": 38416,
+      "h2_min": -4,
+      "h2_max": 4,
+      "actual_current_derivative": "T_i/28 = A_i/2",
+      "rate_range": [
+        "1/20",
+        "21/20"
+      ]
+    },
+    {
+      "axis": 1,
+      "contexts": 38416,
+      "h2_min": -4,
+      "h2_max": 4,
+      "actual_current_derivative": "T_i/28 = A_i/2",
+      "rate_range": [
+        "1/20",
+        "21/20"
+      ]
+    },
+    {
+      "axis": 2,
+      "contexts": 38416,
+      "h2_min": -4,
+      "h2_max": 4,
+      "actual_current_derivative": "T_i/28 = A_i/2",
+      "rate_range": [
+        "1/20",
+        "21/20"
+      ]
+    }
+  ],
+  "uniformization": {
+    "states": 24,
+    "channels_per_state": 4,
+    "ceiling_per_channel": "21/20",
+    "total_uniformization_rate": "21/5",
+    "key_distinct_same_color_actions": 16,
+    "nonreversible": true,
+    "uniform_invariant": true,
+    "poisson_mixture_max_error": 3.885780586188048e-16,
+    "independent_interval_semigroup_error": 4.996003610813204e-16
+  },
+  "geometry": [
+    {
+      "name": "winding",
+      "N": 8,
+      "pairs": 256,
+      "channels": 1280,
+      "distinct_unordered_pair_edges": 1280,
+      "max_channel_multiplicity": 1,
+      "minimum_nontrivial_cycle": 4,
+      "fixture_accepted_plaquettes": 0
+    },
+    {
+      "name": "irregular",
+      "N": 8,
+      "pairs": 256,
+      "channels": 1280,
+      "distinct_unordered_pair_edges": 1104,
+      "max_channel_multiplicity": 2,
+      "minimum_nontrivial_cycle": 5,
+      "fixture_accepted_plaquettes": 532
+    }
+  ],
+  "fourier": {
+    "normalized_initial_covariance": "I_6",
+    "speed": "2/7",
+    "current_checks": [
+      {
+        "Q_without_2pi": [
+          1,
+          0,
+          0
+        ],
+        "exact_full_current_to_six_field_identity": true
+      },
+      {
+        "Q_without_2pi": [
+          0,
+          1,
+          0
+        ],
+        "exact_full_current_to_six_field_identity": true
+      },
+      {
+        "Q_without_2pi": [
+          0,
+          0,
+          1
+        ],
+        "exact_full_current_to_six_field_identity": true
+      },
+      {
+        "Q_without_2pi": [
+          1,
+          2,
+          3
+        ],
+        "exact_full_current_to_six_field_identity": true
+      }
+    ],
+    "cross_blocks": "U_EB=+i sin(theta) C_hat; U_BE=-i sin(theta) C_hat",
+    "time_phases": [
+      "0",
+      "pi/4",
+      "pi/2",
+      "3pi/4",
+      "pi"
+    ],
+    "unitarity_autocorrelation_and_cross_contraction_checks": 5
+  }
+}

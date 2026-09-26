@@ -1,0 +1,41 @@
+{
+  "scope": "Two small validation traces, not production trajectory replay or an RNG statistical audit.",
+  "frozen_production_binary": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "bytes": 60104,
+    "sha256": "4e00276a24fe77c1a6aa899aafeeff86eb0d7b8b271637695c2289cc19d18131"
+  },
+  "instrumented_binary": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/instrumented",
+    "bytes": 60320,
+    "sha256": "6508ed7ede9338615fe1433016393a8f65c654129a9d81e57b35f7f99230c40a"
+  },
+  "rows": [
+    {
+      "kind": "winding",
+      "N": 8,
+      "seed": 761003,
+      "fixture_flips": 0,
+      "all_catalog_rows_reconstructed": 1280,
+      "all_small_trace_attempts_checked": 225,
+      "accepted": 109,
+      "color_changes": 102,
+      "same_color_distinct_key_swaps": 7,
+      "all_five_snapshots_reconstructed_max_error": 4.965068306494546e-16,
+      "instrumented_and_frozen_binary_state_rng_counters_and_fields_equal": true
+    },
+    {
+      "kind": "irregular",
+      "N": 8,
+      "seed": 761027,
+      "fixture_flips": 532,
+      "all_catalog_rows_reconstructed": 1280,
+      "all_small_trace_attempts_checked": 224,
+      "accepted": 115,
+      "color_changes": 112,
+      "same_color_distinct_key_swaps": 3,
+      "all_five_snapshots_reconstructed_max_error": 4.47545209131181e-16,
+      "instrumented_and_frozen_binary_state_rng_counters_and_fields_equal": true
+    }
+  ]
+}

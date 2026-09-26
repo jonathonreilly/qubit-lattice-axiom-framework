@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/bin/clang++",
+    "-std=c++17",
+    "-O2",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_growth.cpp",
+    "-o",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/growth_binary"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "production": false
+}

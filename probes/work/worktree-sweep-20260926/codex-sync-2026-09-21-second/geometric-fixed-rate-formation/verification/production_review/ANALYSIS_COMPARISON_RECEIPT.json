@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/compare_analysis.py"
+  ],
+  "started_utc": "2026-09-21T16:58:20.802598+00:00",
+  "completed_utc": "2026-09-21T16:58:20.845014+00:00",
+  "elapsed_seconds": 0.04206145810894668,
+  "returncode": 0,
+  "outputs": {
+    "ANALYSIS_COMPARISON.stdout": "acd09c1254dd52be2790bd251fd22f7e8e790dd2860f04b937a9836c57488254",
+    "ANALYSIS_COMPARISON.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

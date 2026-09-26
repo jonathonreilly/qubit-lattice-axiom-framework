@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-09-21T22:39:15.871345+00:00",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r003/RECONSTRUCTION.json",
+      "bytes": 6775,
+      "sha256": "4245da78e6b2d0a96a00b8745a1f7e4acd362482fdf2927773598af366370b8e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/check_dimer_routed_256_endpoints.py",
+      "bytes": 8132,
+      "sha256": "5519f15ad920b5dbc93d80a0bee8f5f41ef990667b82694207bdc5c45268eaef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/independent_decode.py",
+      "bytes": 4973,
+      "sha256": "1fb07df9636f256150d23c38f610cee6ce4e62960f0e6730de60c5aa0da0b7af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_ENDPOINT_CHECK_SELECTION.json",
+      "bytes": 1903,
+      "sha256": "44845f1f09b301e1de22c5ec2b03ad1fd5257c6f8950e8a01cd3a1da3d9be314"
+    }
+  ]
+}

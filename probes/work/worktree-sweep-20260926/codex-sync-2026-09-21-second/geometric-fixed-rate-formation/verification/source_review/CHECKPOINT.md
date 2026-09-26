@@ -1,0 +1,3 @@
+# Current bounded-review checkpoint
+
+The complete requested generator/protocol/wrapper/analyzer read and independent controls are complete. Primary source identities remain the six hashes in REPORT.md. PRE_CODE_SEAL.json preserves the pre-implementation reconstruction. F1 incomplete outcomes, F2 undefined ratios, and F3 missing declared standard errors remain open at this seal. Sources have not been edited; no production values were read. All countercontrol tracebacks are retained. Any correction review should be restricted to the affected source delta and corresponding synthetic control; do not rerun the unchanged generator/FFT mathematics. Earlier clock and other seals remain untouched.

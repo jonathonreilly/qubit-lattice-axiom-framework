@@ -1,0 +1,44 @@
+{
+  "kind": "irregular",
+  "replicate": 3,
+  "N": 256,
+  "keys_checked": 8388608,
+  "physical_records_checked": 16777216,
+  "endpoint_complex_errors": [
+    7.44983550061891e-14,
+    7.064020288467936e-14
+  ],
+  "evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json",
+      "bytes": 4686,
+      "sha256": "05ba015dc443ae2f43af378c044e6a992e6b0bafa6968101dff1c0db678af00e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.state",
+      "bytes": 41943052,
+      "sha256": "d4b4184dea63cad56ede774041490c9cb08c381e18ea660e3adaf02cbf11d16f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.stdout",
+      "bytes": 76,
+      "sha256": "78b50ef32dc32b125e9010e19617c090a4bf951fd378425d31828cc66365e504"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r003.json.receipt.json",
+    "bytes": 2124,
+    "sha256": "3daeb3dfbe957e293715c50425739d14160012437670507530babb90f2b6c3eb"
+  },
+  "seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_endpoint_checks/irregular_r003/RECONSTRUCTION_SEAL.json",
+    "bytes": 1355,
+    "sha256": "4efe85ea20d851933c10d223cbfd96a94e055ca20ae37b08e0d7b1826fb308da"
+  },
+  "scope": "Root memory-bounded adaptation of previously independently sealed decoder. Selected endpoints only, no aggregate statistics, intermediate snapshots or trajectory-clock replay. No fresh independent review claimed."
+}

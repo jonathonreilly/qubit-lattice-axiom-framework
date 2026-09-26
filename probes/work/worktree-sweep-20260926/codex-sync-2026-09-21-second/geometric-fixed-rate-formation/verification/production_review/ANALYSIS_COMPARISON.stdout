@@ -1,0 +1,8 @@
+{
+  "all144_point_estimates_and144_standard_errors_checked": true,
+  "maximum_absolute_point_estimate_difference": 5.551115123125783e-15,
+  "maximum_absolute_standard_error_difference": 1.942890293094024e-16,
+  "TABLE_rendering_matches_saved_results": true,
+  "bootstrap_resampling_rerun": false,
+  "findings": []
+}

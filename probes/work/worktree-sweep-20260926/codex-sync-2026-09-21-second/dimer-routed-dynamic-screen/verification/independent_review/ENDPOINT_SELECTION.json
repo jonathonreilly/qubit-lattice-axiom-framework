@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-09-21T18:34:30.215200+00:00",
+  "read_boundary": "No author dynamic C++/setup/runner or production outputs have been opened. Only the corrected theorem note and declared dynamic protocol were read for this task.",
+  "selection_rule": "Literal replicate identifiers 3 and 27, not row positions, in every declared cell; filenames and seed bindings will be resolved from the implementation after the pre-comparison seal.",
+  "cells": [
+    {
+      "N": 16,
+      "geometry": "winding",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 256
+    },
+    {
+      "N": 16,
+      "geometry": "irregular",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 256
+    },
+    {
+      "N": 32,
+      "geometry": "winding",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 128
+    },
+    {
+      "N": 32,
+      "geometry": "irregular",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 128
+    },
+    {
+      "N": 64,
+      "geometry": "winding",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 64
+    },
+    {
+      "N": 64,
+      "geometry": "irregular",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 64
+    },
+    {
+      "N": 128,
+      "geometry": "winding",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 32
+    },
+    {
+      "N": 128,
+      "geometry": "irregular",
+      "replicate_ids": [
+        3,
+        27
+      ],
+      "declared_history_count": 32
+    }
+  ],
+  "total_selected_endpoints": 16,
+  "restriction": "No aggregate production outcomes; selected initial/final endpoints and their own logged Fourier fields only."
+}

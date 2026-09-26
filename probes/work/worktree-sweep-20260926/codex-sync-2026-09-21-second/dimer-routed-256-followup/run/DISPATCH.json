@@ -1,0 +1,71 @@
+{
+  "started_utc": "2026-09-21T18:43:51.134412+00:00",
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json",
+    "bytes": 19639,
+    "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"
+  },
+  "wrapper": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_run.py",
+    "bytes": 5030,
+    "sha256": "de81121c1c624f36901a9579c39de6656674ecbfa9192adb8ca784589bc0578f"
+  },
+  "concurrency": 2,
+  "jobs": 16,
+  "source_snapshots": [
+    {
+      "role": "protocol",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+        "bytes": 2687,
+        "sha256": "58bb811851350c804fd12518cb58dd46625a5eec198ba955dc891886837a4b6e"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/DIMER_ROUTED_256_FOLLOWUP_PROTOCOL.md",
+        "bytes": 2687,
+        "sha256": "58bb811851350c804fd12518cb58dd46625a5eec198ba955dc891886837a4b6e"
+      }
+    },
+    {
+      "role": "construction",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+        "bytes": 19650,
+        "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+        "bytes": 19650,
+        "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+      }
+    },
+    {
+      "role": "source",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamics.cpp",
+        "bytes": 10682,
+        "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/dimer_routed_dynamics.cpp",
+        "bytes": 10682,
+        "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+      }
+    },
+    {
+      "role": "setup",
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_256_setup.py",
+        "bytes": 3593,
+        "sha256": "b61744a2501655c8e6f1c9e16ec21282f5b7cc3c7dd0090012c07c8d33ddb473"
+      },
+      "snapshot": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/frozen_sources/dimer_routed_256_setup.py",
+        "bytes": 3593,
+        "sha256": "b61744a2501655c8e6f1c9e16ec21282f5b7cc3c7dd0090012c07c8d33ddb473"
+      }
+    }
+  ],
+  "hard_deadline_utc": "2026-09-22T00:25:55+00:00",
+  "order": "Descending N, then declared geometry and replicate; all declared jobs retained."
+}

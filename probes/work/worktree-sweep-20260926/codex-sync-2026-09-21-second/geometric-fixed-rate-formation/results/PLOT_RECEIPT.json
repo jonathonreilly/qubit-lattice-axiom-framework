@@ -1,0 +1,15 @@
+{
+  "source_result_sha256": "51b2f9b5174877030b7ebb8baa345dd030dbeb23b3ca3072f6525fb73ed79c86",
+  "plotter_sha256": "83e9d19bc8328269a6d91ef0d49f6aa648608760aa7445f658bda9187fb9a515",
+  "input_copies": {
+    "PER_HISTORY.json": "2bfcb1b31f4d4010488920652cd43163c624121f5d8826bbf10417baa398aa88",
+    "RESULTS.json": "51b2f9b5174877030b7ebb8baa345dd030dbeb23b3ca3072f6525fb73ed79c86",
+    "TABLE.md": "e95040a5c6cfad8ee5db191d3776685a0ad305984b011b619e5f438525bca7b6",
+    "RECEIPT_VERIFICATION.json": "08d91c689610d57b703ed2e26850f44b1785dbd613c9af0155cfb9d7abd50344"
+  },
+  "figures": {
+    "fixed_rate_formation.png": "73bd11c79b18af7cd7d59cec6e6141a194a0dfc17ffdbf7a29cf80628bc3f552",
+    "fixed_rate_formation.pdf": "7f113d0b3efc1b7dd8f68b9eac647e804a555272feb9467bab3de2bd483acc7f"
+  },
+  "scope": "Display of already declared estimates and intervals; no new estimator, fit, history selection or resampling."
+}

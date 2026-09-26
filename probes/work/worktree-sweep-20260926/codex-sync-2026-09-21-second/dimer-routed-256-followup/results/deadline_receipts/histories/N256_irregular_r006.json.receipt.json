@@ -1,0 +1,47 @@
+{
+  "job": {
+    "N": 256,
+    "kind": "irregular",
+    "replicate": 6,
+    "seed": 202609271906,
+    "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json",
+    "command": [
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+      "run",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/geometry/N256_irregular.bin",
+      "202609271906",
+      "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json"
+    ]
+  },
+  "started_unix": 1790022053.953585,
+  "seconds": 3605.4398460388184,
+  "returncode": 0,
+  "stdout_sha256": "b416a5e4a220855d5e43f692071451db7aee7e080f78f22712d91c58e328e4c7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json",
+      "bytes": 4708,
+      "sha256": "7e5b6f088f775e1d038ea5f8b2c7621e515e62a51e26b3e2289e0a962b059cc5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.state",
+      "bytes": 41943052,
+      "sha256": "1f3930edcd47f235f9481327ac8e5c8c04b0e892f5bb1efd3a2c2bf162e7ad86"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.stdout",
+      "bytes": 76,
+      "sha256": "b416a5e4a220855d5e43f692071451db7aee7e080f78f22712d91c58e328e4c7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/histories/N256_irregular_r006.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "status": "complete_verified_receipt",
+  "attempts": 19730050082,
+  "accepted": 10334765240,
+  "wall_seconds": 3605.339061584
+}

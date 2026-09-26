@@ -1,0 +1,1044 @@
+{
+  "completed_utc": "2026-09-21T16:58:20.837861+00:00",
+  "analysis_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_analysis/PER_HISTORY.json",
+      "bytes": 1521166,
+      "sha256": "2bfcb1b31f4d4010488920652cd43163c624121f5d8826bbf10417baa398aa88"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_analysis/RECEIPT_VERIFICATION.json",
+      "bytes": 394677,
+      "sha256": "08d91c689610d57b703ed2e26850f44b1785dbd613c9af0155cfb9d7abd50344"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_analysis/RESULTS.json",
+      "bytes": 81999,
+      "sha256": "51b2f9b5174877030b7ebb8baa345dd030dbeb23b3ca3072f6525fb73ed79c86"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/geometric_fixed_rate_analysis/TABLE.md",
+      "bytes": 5296,
+      "sha256": "e95040a5c6cfad8ee5db191d3776685a0ad305984b011b619e5f438525bca7b6"
+    }
+  ],
+  "all144_point_estimates_and144_standard_errors_checked": true,
+  "comparisons": [
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "W",
+      "point_estimate_difference": 8.326672684688674e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 1.0408340855860843e-17
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 2.6645352591003757e-15,
+      "standard_error_difference": 3.469446951953614e-17
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 0.1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "S1",
+      "point_estimate_difference": 1.3877787807814457e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "W",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-15,
+      "standard_error_difference": 4.85722573273506e-17
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-15,
+      "standard_error_difference": 4.85722573273506e-17
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 3.469446951953614e-17
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 6.245004513516506e-17
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 2.4424906541753444e-15,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 1.9984014443252818e-15,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 2.886579864025407e-15,
+      "standard_error_difference": 1.3183898417423734e-16
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 5.551115123125783e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "S1",
+      "point_estimate_difference": 1.3877787807814457e-16,
+      "standard_error_difference": 8.673617379884035e-19
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "W",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 4.163336342344337e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 5.551115123125783e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 1.9984014443252818e-15,
+      "standard_error_difference": 5.204170427930421e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 1.7763568394002505e-15,
+      "standard_error_difference": 5.204170427930421e-18
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 2.4424906541753444e-15,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "S1",
+      "point_estimate_difference": 8.326672684688674e-17,
+      "standard_error_difference": 8.673617379884035e-19
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "W",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 3.3306690738754696e-16,
+      "standard_error_difference": 1.734723475976807e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 3.8163916471489756e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 2.220446049250313e-15,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 9.992007221626409e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "S1",
+      "point_estimate_difference": 5.551115123125783e-17,
+      "standard_error_difference": 8.673617379884035e-19
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "W",
+      "point_estimate_difference": 8.326672684688674e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 1.0408340855860843e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 7.771561172376096e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 5.204170427930421e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 1.5543122344752192e-15,
+      "standard_error_difference": 3.122502256758253e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 6.938893903907228e-17
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 9.71445146547012e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "S1",
+      "point_estimate_difference": 2.7755575615628914e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "W",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 1.734723475976807e-18
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 3.3306690738754696e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 1.214306433183765e-17
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 6.938893903907228e-17
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 6.938893903907228e-18,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "W",
+      "point_estimate_difference": 1.6653345369377348e-16,
+      "standard_error_difference": 1.734723475976807e-18
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 7.771561172376096e-16,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 5.551115123125783e-15,
+      "standard_error_difference": 6.938893903907228e-17
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 5.551115123125783e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "S1",
+      "point_estimate_difference": 8.326672684688674e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "W",
+      "point_estimate_difference": 5.551115123125783e-17,
+      "standard_error_difference": 1.734723475976807e-18
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 9.992007221626409e-16,
+      "standard_error_difference": 3.469446951953614e-17
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 5.551115123125783e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 1.7763568394002505e-15,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 8.326672684688674e-17
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 6.938893903907228e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "S1",
+      "point_estimate_difference": 2.7755575615628914e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "W",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 1.734723475976807e-18
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 3.3306690738754696e-16,
+      "standard_error_difference": 1.0408340855860843e-17
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 9.992007221626409e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 6.938893903907228e-18
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 3.469446951953614e-18
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 4.440892098500626e-15,
+      "standard_error_difference": 1.942890293094024e-16
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 4.163336342344337e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "S1",
+      "point_estimate_difference": 5.551115123125783e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "W",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 4.163336342344337e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 5.551115123125783e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 5.551115123125783e-17
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 1.1102230246251565e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "S1",
+      "point_estimate_difference": 2.7755575615628914e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "W",
+      "point_estimate_difference": 8.326672684688674e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 8.881784197001252e-16,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 1.3322676295501878e-15,
+      "standard_error_difference": 1.6653345369377348e-16
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 1.3877787807814457e-17,
+      "standard_error_difference": 1.734723475976807e-18
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "W",
+      "point_estimate_difference": 5.551115123125783e-17,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "S2_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "S3_over_S1",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "S4_over_S1",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 1.3877787807814457e-17
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "W_over_S1",
+      "point_estimate_difference": 2.220446049250313e-16,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "axis_mode_fourth_ratio",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 2.0816681711721685e-17
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "axis_shell_fourth_ratio",
+      "point_estimate_difference": 6.661338147750939e-16,
+      "standard_error_difference": 3.469446951953614e-18
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "winding_fourth_ratio",
+      "point_estimate_difference": 4.440892098500626e-16,
+      "standard_error_difference": 2.7755575615628914e-17
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "time_per_volume",
+      "point_estimate_difference": 6.938893903907228e-18,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "slides_per_site",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "metric": "site_reuse_fraction",
+      "point_estimate_difference": 0.0,
+      "standard_error_difference": 0.0
+    }
+  ],
+  "maximum_absolute_point_estimate_difference": 5.551115123125783e-15,
+  "maximum_absolute_standard_error_difference": 1.942890293094024e-16,
+  "all_cell_counts_seed_indices_and_statuses_match": true,
+  "TABLE_rendering_matches_saved_results": true,
+  "bootstrap_interval_entries_authenticated": 144,
+  "bootstrap_resampling_rerun": false,
+  "bootstrap_limit": "The unchanged previously checked whole-history resampling implementation is reused; production quantiles and statistical coverage are not independently recomputed.",
+  "findings": []
+}

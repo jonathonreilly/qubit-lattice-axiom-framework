@@ -1,0 +1,237 @@
+#!/usr/bin/env python3
+"""Bounded independent catalog/observable/statistics checks; never reads production outputs."""
+from pathlib import Path
+import collections, csv, datetime, hashlib, importlib.util, itertools, json, math, shutil, subprocess, sys
+import numpy as np
+sys.dont_write_bytecode = True
+EVIDENCE=Path(__file__).resolve().parent
+OUT=EVIDENCE
+SRC=EVIDENCE.parent
+EXPECTED={
+'GEOMETRIC_PARTNER_RECORD_FORMATION.md':'1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969',
+'GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md':'4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48',
+'GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md':'13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab',
+'geometric_partner_growth.cpp':'5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716',
+'run_geometric_fixed_rate_followup.py':'fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e',
+'analyze_geometric_fixed_rate_followup.py':'531c59d50c910bca28f8ae0255bc3507831ac32dc3dbd2dd011cb433bd9d557d'}
+
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def write(p,x):Path(p).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+def logrun(name,cmd,ok=0):
+    proc=subprocess.run([str(x) for x in cmd],cwd=OUT,text=True,capture_output=True)
+    (OUT/(name+'.stdout')).write_text(proc.stdout);(OUT/(name+'.stderr')).write_text(proc.stderr)
+    write(OUT/(name+'.receipt.json'),{'command':[str(x) for x in cmd],'cwd':str(OUT),'returncode':proc.returncode,'expected_returncode':ok,'production':False})
+    assert proc.returncode==ok,(name,proc.returncode,proc.stderr)
+    return proc
+
+def index(x,N):return (x[0]*N+x[1])*N+x[2]
+def neighbor(u,axis,sg,N):
+    x=list(np.unravel_index(u,(N,N,N)));x[axis]=(x[axis]+sg)%N;return index(x,N)
+def edge(a,b):return tuple(sorted((a,b)))
+def torus_edges(N):return sorted({edge(u,neighbor(u,i,1,N)) for u in range(N**3) for i in range(3)})
+def matchings(vertices,edges):
+    vertices=tuple(sorted(vertices));adj={u:set() for u in vertices}
+    for a,b in edges:adj[a].add(b);adj[b].add(a)
+    def rec(left):
+        if not left:yield ();return
+        a=min(left)
+        yield from rec(left-{a})
+        for b in sorted(adj[a]&left):
+            for rest in rec(left-{a,b}):yield tuple(sorted((edge(a,b),*rest)))
+    return sorted(set(rec(set(vertices))),key=lambda m:(len(m),m))
+def state(N,m):
+    V=N**3;a=np.full((V,4),-1,dtype=np.int32);a[:,0]=np.arange(V);a[:,3]=0
+    for k,(u,v) in enumerate(sorted(m)):
+        a[u,1]=v;a[v,1]=u;a[u,2]=2*k;a[v,2]=2*k+1;a[[u,v],3]=1
+    return a
+
+def fixtures():
+    dst=OUT/'fixtures';dst.mkdir(exist_ok=True);entries=[]
+    def add(name,N,m):
+        a=state(N,m);p=dst/(name+'.txt')
+        with p.open('w') as f:
+            f.write(f'N {N}\nsite partner identity births_at_site\n');np.savetxt(f,a,fmt='%d')
+        entries.append((name,N,p,a))
+    for title,coordinates in [('interior',(0,1)),('periodic',(0,3))]:
+        vertices=[index(x,4) for x in itertools.product(coordinates,repeat=3)]
+        edges=[e for e in torus_edges(4) if set(e)<=set(vertices)]
+        ms=matchings(vertices,edges);assert len(ms)==108
+        for j,m in enumerate(ms):add(f'{title}_{j:03}',4,m)
+    for N in [4,6]:
+        for axis in range(3):
+            for winding in [False,True]:
+                m=set()
+                for x in itertools.product(range(N),repeat=3):
+                    if (sum(x)%2==0) if winding else (x[axis]%2==0):
+                        u=index(x,N);m.add(edge(u,neighbor(u,axis,1,N)))
+                assert len(m)==N**3//2
+                title=f'full_N{N}_axis{axis}_wind{int(winding)}';add(title,N,m)
+                add(title+'_one_pair_removed',N,m-{min(m)})
+        add(f'empty_N{N}',N,[])
+    # A full matching with all three orientations, assembled by independent plaquette flips.
+    N=4;m=set(edge(u,neighbor(u,0,1,N)) for u in range(N**3) if np.unravel_index(u,(N,N,N))[0]%2==0)
+    rng=np.random.default_rng(834024)
+    accepted=0
+    for _ in range(200):
+        u=int(rng.integers(N**3));i,j=rng.choice(3,2,replace=False)
+        v=neighbor(u,int(i),1,N);w=neighbor(u,int(j),1,N);z=neighbor(v,int(j),1,N)
+        a={edge(u,v),edge(w,z)};b={edge(u,w),edge(v,z)}
+        if a<=m:m=m-a|b;accepted+=1
+        elif b<=m:m=m-b|a;accepted+=1
+    assert accepted>0;add('full_mixed_orientation',N,m)
+    (OUT/'fixture_list.txt').write_text(''.join(f'{name} {N} {p}\n' for name,N,p,a in entries))
+    write(OUT/'FIXTURE_IDENTITIES.json',[{'name':name,'N':N,'file':str(p.relative_to(OUT)),'sha256':sha(p),'occupied':int(np.sum(a[:,1]>=0))} for name,N,p,a in entries])
+    return {name:(N,a) for name,N,p,a in entries}
+
+def parse_stream(s):
+    d=json.JSONDecoder();ans=[]
+    while s.strip():s=s.lstrip();x,k=d.raw_decode(s);ans.append(x);s=s[k:]
+    return ans
+
+def independently_observe(N,a,modes):
+    V=N**3;p=a[:,1];x=np.array(list(itertools.product(range(N),repeat=3)))
+    sigma=1-2*(x.sum(axis=1)%2);ni=np.array([[p[u]==neighbor(u,i,1,N) for i in range(3)] for u in range(V)],int)
+    six=(sigma[:,None]*(6*ni-1)).reshape(N,N,N,3)
+    div=sum(six[...,i]-np.roll(six[...,i],1,axis=i) for i in range(3))
+    assert np.array_equal(div.reshape(-1),-6*sigma*(p<0))
+    field=six.reshape(V,3)/6;transform=np.fft.fftn(field.reshape(N,N,N,3),axes=(0,1,2),norm='ortho')
+    planes=[[int(np.sum(sigma[x[:,i]==z]*ni[x[:,i]==z,i])) for z in range(N)] for i in range(3)]
+    if np.all(p>=0):
+        assert all(len(set(v))==1 for v in planes)
+        assert np.allclose(field.sum(axis=0),N*np.array([z[0] for z in planes]))
+    values=[]
+    for mode in modes:
+        ell=np.array(mode['ell']);phase=np.exp(-2j*np.pi*(x@ell)/N)/np.sqrt(V)
+        z=phase@field;z_fft=transform[tuple(ell%N)];assert np.max(abs(z-z_fft))<2e-12
+        normal=1-np.exp(-2j*np.pi*ell/N);divz=normal@z
+        charge=np.sum(phase*(-sigma)*(p<0));assert abs(divz-charge)<2e-12
+        longitudinal=abs(divz)**2/np.sum(abs(normal)**2);power=np.sum(abs(z)**2)
+        centered=np.exp(-1j*np.pi*ell/N)*z;real_normal=np.sin(np.pi*ell/N)
+        alternative=abs(real_normal@centered)**2/(real_normal@real_normal)
+        assert abs(longitudinal-alternative)<2e-12
+        values.append({'ell':ell.tolist(),'power':float(power),'transverse_per_polarization':float((power-longitudinal)/2),'longitudinal':float(longitudinal),'gauss_residual':float(abs(divz-charge))})
+    edges=torus_edges(N);births=[(u,v) for u,v in edges if p[u]<0 and p[v]<0]
+    slides=[(int(p[b]),b,c) for b in range(V) if p[b]>=0 for i in range(3) for sg in [-1,1] if p[c:=neighbor(b,i,sg,N)]<0]
+    assert len(slides)==sum((p[u]<0)!=(p[v]<0) for u,v in edges)
+    return {'orientation_counts':ni.sum(axis=0).tolist(),'winding':[v[0] for v in planes],
+            'planes':planes,'winding_valid':bool(np.all(p>=0)),'birth_channels':len(births),'slide_channels':len(slides),'modes':values,
+            'W':float(np.sum(field.sum(axis=0)**2)/(3*V)) if np.all(p>=0) else None}
+
+def module(path,name):
+    spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
+
+def synthetic_input(folder,kind):
+    folder.mkdir()
+    cases=[(N,b,210000000+10000*N+1000*j+r) for N in [16,32,64,128] for j,b in enumerate([.1,1,10]) for r in range(1,(64 if N==128 else 256)+1)]
+    manifest={'pilot':False,'cases':cases,'protocol_sha256':EXPECTED['GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md'],
+              'wrapper_sha256':EXPECTED['run_geometric_fixed_rate_followup.py'],'source_sha256':EXPECTED['geometric_partner_growth.cpp'],'synthetic_unit_fixture_not_a_physical_run':True}
+    rows=[];reference=[]
+    for k,(N,b,seed) in enumerate(cases):
+        name=f'N{N}_b{b}_s{seed}';row={'case':[N,b,seed],'name':name,'status':'not_started_deadline'}
+        if k<2:
+            axis=([1.,2.,3.] if k==0 else [2.,5.,8.]);S1=float(np.mean(axis));wind=[1+k,0,0]
+            if kind=='zero_winding':wind=[0,0,0]
+            W=sum(w*w for w in wind)/(3*N);shells={'1':S1,'2':3.+4*k,'3':4.+k,'4':8.+2*k}
+            d={'N':N,'beta':b,'seed':seed,'full':True,'winding':wind,'time':(2+3*k)*N**3,'slide_events':(7+k)*N**3}
+            archive=folder/(name+'.state.npz');np.savez(archive,synthetic=np.array([k]))
+            v={'lossless_arrays_reopened_and_equal':True,'integer_Gauss_max_abs':0,'archive':archive.name,'archive_sha256':sha(archive),'shells':shells,'winding_power_per_component':W,
+               'modes':[{'ell':ell,'transverse_per_polarization':a} for ell,a in zip([[1,0,0],[0,1,0],[0,0,1]],axis)],'site_reuse_fraction':.1+.2*k}
+            write(folder/(name+'.json'),d);write(folder/(name+'.verification.json'),v)
+            paths=[archive,folder/(name+'.json'),folder/(name+'.verification.json')]
+            receipt={'case':[N,b,seed],'status':'full_verified','files':{p.name:sha(p) for p in paths}}
+            write(folder/(name+'.receipt.json'),receipt)
+            row.update(status='full_verified',shells=shells,winding_power_per_component=W)
+            reference.append([*shells.values(),W,float(np.mean(np.square(axis))),S1**2,W**2,2.+3*k,7.+k,.1+.2*k])
+        if kind=='wrapper_exception' and k==2:
+            # Exactly the schema emitted by run_geometric_fixed_rate_followup.py lines 123-124.
+            row={'case':[N,b,seed],'status':'wrapper_exception','error':'synthetic subprocess/file exception','traceback':'synthetic; no production data'}
+        rows.append(row)
+    write(folder/'MANIFEST.json',manifest);write(folder/'SUMMARY.json',{'manifest':manifest,'results':rows})
+    return np.array(reference)
+
+def stats_controls():
+    analyzer=module(SRC/'analyze_geometric_fixed_rate_followup.py','supplied_analysis')
+    a=synthetic_input(OUT/'synthetic_baseline_input','baseline')
+    proc=logrun('synthetic_baseline_analysis',[sys.executable,SRC/'analyze_geometric_fixed_rate_followup.py',OUT/'synthetic_baseline_input',OUT/'synthetic_baseline_analysis'])
+    result=json.loads((OUT/'synthetic_baseline_analysis'/'RESULTS.json').read_text());cell=result['cells'][0]
+    # Independently reconstruct metric numerators; no call to supplied metrics.
+    def reference_metrics(m):
+        return np.array([m[0],m[4],m[1]/m[0],m[2]/m[0],m[3]/m[0],m[4]/m[0],m[5]/m[0]**2,m[6]/m[0]**2,m[7]/m[4]**2,m[8],m[9],m[10]])
+    point=reference_metrics(a.mean(axis=0));rng=np.random.default_rng(2109211530)
+    indices=rng.integers(0,2,size=(10000,2))
+    boot=np.array([reference_metrics((a[i]+a[j])/2) for i,j in indices]);ci=np.quantile(boot,[.025,.975],axis=0)
+    got=np.array([cell['observables'][k]['estimate'] for k in analyzer.METRICS])
+    intervals=np.array([cell['observables'][k]['CI95_pointwise'] for k in analyzer.METRICS]).T
+    assert np.allclose(got,point,atol=0,rtol=1e-15) and np.allclose(intervals,ci,atol=0,rtol=1e-15)
+    assert not np.isclose(point[2],np.mean(a[:,1]/a[:,0]))
+    assert not np.isclose(point[6],point[7])
+    assert result['statistical_unit']=='one complete independent history' and len(result['excluded'])==2494
+    statuses={}
+    for kind in ['wrapper_exception','zero_winding']:
+        synthetic_input(OUT/f'synthetic_{kind}_input',kind)
+        bad=logrun('synthetic_'+kind+'_analysis',[sys.executable,SRC/'analyze_geometric_fixed_rate_followup.py',OUT/f'synthetic_{kind}_input',OUT/f'synthetic_{kind}_analysis'],ok=1)
+        statuses[kind]={'returncode':bad.returncode,'last_stderr_lines':bad.stderr.splitlines()[-5:]}
+    assert "KeyError: 'name'" in (OUT/'synthetic_wrapper_exception_analysis.stderr').read_text()
+    assert 'AssertionError' in (OUT/'synthetic_zero_winding_analysis.stderr').read_text()
+    return {'synthetic_completed_histories':2,'declared_history_rows':2496,'bootstrap_replicates':10000,'paired_row_bootstrap_matches':True,
+            'ratios_are_ratios_of_means':True,'conditional_Gaussian_ratios':['3/2','7/6','5/3'],
+            'undefined_and_exception_controls':statuses,'production_values_read':False}
+
+def main():
+    global OUT
+    if len(sys.argv)==3 and sys.argv[1]=='--output':
+        target=Path(sys.argv[2]).resolve()
+        assert target.is_relative_to(EVIDENCE) and target!=EVIDENCE, 'output must be a new subdirectory of this evidence directory'
+        target.mkdir(parents=True,exist_ok=False);OUT=target
+    elif len(sys.argv)!=1:
+        raise SystemExit('usage: independent_check.py [--output NEW_EVIDENCE_SUBDIRECTORY]')
+    elif (OUT/'RESULTS.json').exists():
+        raise SystemExit('preserved results exist; use --output with a new evidence subdirectory')
+    start=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    for n,h in EXPECTED.items():assert sha(SRC/n)==h,(n,sha(SRC/n))
+    info=fixtures()
+    compiler=shutil.which('clang++') or shutil.which('g++');assert compiler
+    logrun('compiler_version',[compiler,'--version'])
+    logrun('compile_catalog',[compiler,'-std=c++17','-O2',EVIDENCE/'catalog_harness.cpp','-o',OUT/'catalog_harness'])
+    cat=logrun('catalog_control',[OUT/'catalog_harness',OUT/'fixture_list.txt',OUT/'catalog_observables.jsonstream'])
+    counts=json.loads(cat.stdout);observed=parse_stream((OUT/'catalog_observables.jsonstream').read_text());assert len(observed)==len(info)
+    errors=[]
+    for supplied in observed:
+        name=supplied['fixture'];N,a=info[name];ref=independently_observe(N,a,supplied['modes'])
+        for key in ['orientation_counts','winding','winding_valid','birth_channels','slide_channels']:assert supplied[key]==ref[key],(name,key)
+        for actual,expected in zip(supplied['modes'],ref['modes']):
+            assert actual['ell']==expected['ell']
+            for key in ['power','transverse_per_polarization','longitudinal']:
+                err=abs(actual[key]-expected[key]);errors.append(err);assert err<1e-10,(name,key,err)
+        if supplied['winding_valid']:assert abs(ref['W']-sum(w*w for w in supplied['winding'])/(3*N))<2e-12
+    ell=np.array([1,-1,0]);normal=1-np.exp(-2j*np.pi*ell/6);z=np.array([normal[1],-normal[0],0])
+    correct=abs(normal@z);wrong=float(abs(np.vdot(normal,z)));assert correct<1e-14 and wrong>1
+    logrun('compile_growth',[compiler,'-std=c++17','-O2',SRC/'geometric_partner_growth.cpp','-o',OUT/'growth_binary'])
+    wrapper=module(SRC/'run_geometric_fixed_rate_followup.py','supplied_wrapper');runs=[]
+    toy=OUT/'toy_runs';toy.mkdir(exist_ok=True)
+    for j,(N,beta,kappa,cap) in enumerate([(4,1,1,200000),(4,4,.5,200000),(6,.3,2,200000),(4,1,1,1)]):
+        prefix=toy/f'toy{j}';seed=9123400+j
+        logrun(f'toy_run_{j}',[OUT/'growth_binary',N,seed,beta,kappa,cap,prefix,1])
+        d=json.loads(Path(str(prefix)+'.json').read_text());path=Path(str(prefix)+'.state.txt')
+        a=np.loadtxt(path,skiprows=2,dtype=int);ref=independently_observe(N,a,d['modes'])
+        assert d['birth_events']*2==int(np.sum(a[:,1]>=0))==int(a[:,3].sum())
+        assert d['events']==d['birth_events']+d['slide_events'] and d['events']<=cap
+        assert d['site_reuses']==int(np.maximum(a[:,3]-1,0).sum())
+        assert d['full']==(j!=3)
+        if d['full']:
+            backup=Path(str(prefix)+'.original.state.txt');shutil.copyfile(path,backup)
+            cert=wrapper.verify_state(prefix,d);assert not path.exists()
+            with np.load(Path(str(prefix)+'.state.npz')) as arr:
+                assert np.array_equal(arr['partner'],a[:,1]) and np.array_equal(arr['identity'],a[:,2]) and np.array_equal(arr['births_at_site'],a[:,3])
+            assert cert['ASCII_sha256']==sha(backup)
+        runs.append({'N':N,'beta':beta,'kappa':kappa,'cap':cap,'full':d['full'],'events':d['events'],'independent_state_and_observables_checked':True})
+    stats=stats_controls()
+    result={'scope':'Selective independent code and observable controls only; all numerical inputs generated here, no production outputs read.',
+            'started_utc':start,'finished_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            'sources':EXPECTED,'catalog':counts,'observable_configurations':len(observed),'observable_modes_compared':16*len(observed),'maximum_power_difference':max(errors),
+            'Hermitian_projection_countercontrol':{'correct_constraint_residual':correct,'incorrect_conjugated_row_residual':wrong},'toy_runs':runs,'statistics':stats,
+            'RNG_scope':'Inspected use of standard generator/distributions and executable finite controls, not an independent proof of RNG statistical properties or seed independence.'}
+    write(OUT/'RESULTS.json',result)
+    print(json.dumps(result,indent=2,allow_nan=False))
+
+if __name__=='__main__':main()

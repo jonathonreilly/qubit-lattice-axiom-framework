@@ -1,0 +1,2237 @@
+{
+  "scope": "Author descriptive statistics of the supplied fixed-rate geometry-only process. Selective independent source/observable review is separate; these production values are not independently replayed. No phase proof or Maxwell dynamics.",
+  "source_manifest_sha256": "5ef3455f4902be019f0863754c14b44b447914eed3f3219a17891fa29c6a00e2",
+  "source_summary_sha256": "310e9bc256bbad3e03cefd5d44258d781ea431e42b5e253114eedfbc4a948ea0",
+  "analysis_sha256": "9da84212404a18f7a1eaf6be7ddef3bfab657d6d8f5c201bba5778ac4720597a",
+  "analysis_plan_sha256": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab",
+  "analysis_correction_sha256": "9caea17017738357a7a9a8ff6d32ef937265a08d249e7046f15b9595b7fc7857",
+  "status_counts": {
+    "full_verified": 2496
+  },
+  "runs_used": 2496,
+  "excluded": [],
+  "bootstrap_resamples": 10000,
+  "statistical_unit": "one complete independent history",
+  "intervals": "95% pointwise percentile bootstrap; not simultaneous or a finite-size-bias estimate",
+  "undefined_bootstrap_policy": "If any resample has zero denominator, the affected entire interval is undefined; no resample is dropped.",
+  "standard_errors": "Across-history sample SE for linear means; paired delta-method influence SE for ratios; undefined for fewer than two histories or zero denominator.",
+  "gaussian_conditional_reference": {
+    "S2_over_S1": 1,
+    "S3_over_S1": 1,
+    "S4_over_S1": 1,
+    "W_over_S1": 1,
+    "axis_mode_fourth_ratio": 1.5,
+    "axis_shell_fourth_ratio": 1.1666666666666667,
+    "winding_fourth_ratio": 1.6666666666666667
+  },
+  "cells": [
+    {
+      "N": 16,
+      "beta": 0.1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211530,
+      "observables": {
+        "S1": {
+          "estimate": 0.1897533105935004,
+          "estimate_status": "defined",
+          "standard_error": 0.005442279034282254,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.17914225436029596,
+            0.2005945718269947
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.19750976562499992,
+          "estimate_status": "defined",
+          "standard_error": 0.009131673965614004,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18001302083333326,
+            0.21533203124999967
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 1.0216529947663184,
+          "estimate_status": "defined",
+          "standard_error": 0.035387341095875165,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9547619877577255,
+            1.0957458303813252
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0145501987889867,
+          "estimate_status": "defined",
+          "standard_error": 0.03945175431892337,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9402450998932073,
+            1.0960567713430893
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0964226431872546,
+          "estimate_status": "defined",
+          "standard_error": 0.04433344210151785,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.0132592404275975,
+            1.1869264305215446
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.0408765201894992,
+          "estimate_status": "defined",
+          "standard_error": 0.0552290760902084,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9369202499228133,
+            1.149072761617134
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.5319294443895222,
+          "estimate_status": "defined",
+          "standard_error": 0.026958812709036856,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4783276610360105,
+            1.5847019288247188
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.2097601896517902,
+          "estimate_status": "defined",
+          "standard_error": 0.017730744419450183,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1756943028805247,
+            1.2446351475194724
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.5450844935826191,
+          "estimate_status": "defined",
+          "standard_error": 0.048490473561712724,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4524885506330947,
+            1.6462321241128228
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.9836729439963565,
+          "estimate_status": "defined",
+          "standard_error": 0.036675791444437625,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.9126354444904369,
+            1.0574344332431436
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 54.53602695465088,
+          "estimate_status": "defined",
+          "standard_error": 0.5609831373295555,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            53.436404776573184,
+            55.64875330924988
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.26218223571777344,
+          "estimate_status": "defined",
+          "standard_error": 0.0002588291951669046,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.2616729259490967,
+            0.26268768310546875
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 16,
+      "beta": 1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211531,
+      "observables": {
+        "S1": {
+          "estimate": 0.18891167077158916,
+          "estimate_status": "defined",
+          "standard_error": 0.00493562015927595,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.17913254600419917,
+            0.19863033871347113
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.19856770833333323,
+          "estimate_status": "defined",
+          "standard_error": 0.009831443502755279,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1796874999999999,
+            0.2180989583333331
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 1.041629277531568,
+          "estimate_status": "defined",
+          "standard_error": 0.03418059717271158,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9766235634959567,
+            1.1116533326522389
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0274492489599587,
+          "estimate_status": "defined",
+          "standard_error": 0.03148323937231355,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9680456299808369,
+            1.0915407962170551
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0405541128281817,
+          "estimate_status": "defined",
+          "standard_error": 0.03692006028979165,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9721636837538075,
+            1.11467859684101
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.0511140339943268,
+          "estimate_status": "defined",
+          "standard_error": 0.0594058622375379,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9377147160157436,
+            1.1717728829158915
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.5042058336014144,
+          "estimate_status": "defined",
+          "standard_error": 0.03184277048831927,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4425558767060496,
+            1.5674641651695
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.174062838414007,
+          "estimate_status": "defined",
+          "standard_error": 0.016433715440810532,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1419918619760527,
+            1.20655161058791
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.625111529158831,
+          "estimate_status": "defined",
+          "standard_error": 0.05369290605885516,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5213118661477993,
+            1.7310542079942999
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.12322696663243453,
+          "estimate_status": "defined",
+          "standard_error": 0.005471322844491197,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.11294524683052326,
+            0.13432924966288073
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 6.309538841247559,
+          "estimate_status": "defined",
+          "standard_error": 0.08182747340660788,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            6.155297350883484,
+            6.472820377349853
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.2263927459716797,
+          "estimate_status": "defined",
+          "standard_error": 0.0002464081319591474,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.22591209411621094,
+            0.22687246799468994
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 16,
+      "beta": 10,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211532,
+      "observables": {
+        "S1": {
+          "estimate": 0.19564187144559675,
+          "estimate_status": "defined",
+          "standard_error": 0.004628693466905958,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1866230914073241,
+            0.2048062189932889
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.20393880208333323,
+          "estimate_status": "defined",
+          "standard_error": 0.009298595281110414,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1861145019531248,
+            0.22281901041666652
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 1.0032534592264828,
+          "estimate_status": "defined",
+          "standard_error": 0.02908217392901838,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9479802090838119,
+            1.0620889868368337
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0413572696697768,
+          "estimate_status": "defined",
+          "standard_error": 0.03314207437523761,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9792100382413796,
+            1.1094017999878052
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0277160187599335,
+          "estimate_status": "defined",
+          "standard_error": 0.03259940837735164,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9661933683265763,
+            1.0941437364991962
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.042408767491491,
+          "estimate_status": "defined",
+          "standard_error": 0.053943373889433675,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9413090986603618,
+            1.1542531753424718
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4400753130452002,
+          "estimate_status": "defined",
+          "standard_error": 0.023298839675684538,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3961811676122433,
+            1.4861675806578896
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1427359615468695,
+          "estimate_status": "defined",
+          "standard_error": 0.011968309393041793,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1199996485288086,
+            1.1665745454552172
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.530121164910522,
+          "estimate_status": "defined",
+          "standard_error": 0.05224908748882935,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4332033952775878,
+            1.6368442290610061
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.035195749418488846,
+          "estimate_status": "defined",
+          "standard_error": 0.0013806023407669664,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.03251720801777433,
+            0.03796725361159104
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 1.4700031280517578,
+          "estimate_status": "defined",
+          "standard_error": 0.020178438240820266,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            1.4299248456954956,
+            1.5099315881729125
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.121551513671875,
+          "estimate_status": "defined",
+          "standard_error": 0.00022946153419318538,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.12110135555267335,
+            0.12200736999511719
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 32,
+      "beta": 0.1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211533,
+      "observables": {
+        "S1": {
+          "estimate": 0.19605843720204627,
+          "estimate_status": "defined",
+          "standard_error": 0.004487377331927755,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18742907483320714,
+            0.204824337929142
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.18025716145833345,
+          "estimate_status": "defined",
+          "standard_error": 0.008910440955506933,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1632486979166666,
+            0.1982014973958336
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9961830525913906,
+          "estimate_status": "defined",
+          "standard_error": 0.03005470528557332,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9392485445210238,
+            1.056680713396265
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0272010659459778,
+          "estimate_status": "defined",
+          "standard_error": 0.032443654886806395,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9676517718805486,
+            1.0919056415545199
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0151028711220593,
+          "estimate_status": "defined",
+          "standard_error": 0.03707913855619353,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9459450616765933,
+            1.08933484144215
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.9194052754412759,
+          "estimate_status": "defined",
+          "standard_error": 0.04729781574827698,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8304966422267764,
+            1.0158308955576627
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4657816679857725,
+          "estimate_status": "defined",
+          "standard_error": 0.04088690997778869,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3954633854306862,
+            1.553057477299844
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1335839517758364,
+          "estimate_status": "defined",
+          "standard_error": 0.013518729335391938,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1078564768763992,
+            1.160740359777648
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.6230939265932542,
+          "estimate_status": "defined",
+          "standard_error": 0.058098104934562425,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5112633404839277,
+            1.7393029278771088
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.9881207937488699,
+          "estimate_status": "defined",
+          "standard_error": 0.0381486028720895,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.9143410841020456,
+            1.0639858317484459
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 68.32368278503418,
+          "estimate_status": "defined",
+          "standard_error": 0.5628120350470693,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            67.23645032346249,
+            69.42653628587723
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.2622166872024536,
+          "estimate_status": "defined",
+          "standard_error": 9.563493581159392e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.2620284527540207,
+            0.2624003946781158
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 32,
+      "beta": 1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211534,
+      "observables": {
+        "S1": {
+          "estimate": 0.19820483344284073,
+          "estimate_status": "defined",
+          "standard_error": 0.005102920272666383,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18827445405188348,
+            0.20858744448930133
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.19173177083333343,
+          "estimate_status": "defined",
+          "standard_error": 0.009481742392224605,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.17358296712239588,
+            0.2104085286458333
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9497270807070971,
+          "estimate_status": "defined",
+          "standard_error": 0.029491918574527497,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8932442354430101,
+            1.0103757822064503
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 0.9884595269069834,
+          "estimate_status": "defined",
+          "standard_error": 0.03291999223883951,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9248936212781452,
+            1.0560744552458026
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 0.9986453610670788,
+          "estimate_status": "defined",
+          "standard_error": 0.03478102613015714,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9337285386094933,
+            1.0689442786284862
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.9673415501677256,
+          "estimate_status": "defined",
+          "standard_error": 0.05445374692700822,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8659948532079546,
+            1.0773014011946607
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4941346254156318,
+          "estimate_status": "defined",
+          "standard_error": 0.026840796254685426,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4416106921545027,
+            1.5472430554851764
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1690243460869967,
+          "estimate_status": "defined",
+          "standard_error": 0.014601787542407213,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1407500900105594,
+            1.1983382840647865
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.6236318931399358,
+          "estimate_status": "defined",
+          "standard_error": 0.05340249617332001,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5211180189628326,
+            1.728264045339882
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.11609931510266552,
+          "estimate_status": "defined",
+          "standard_error": 0.00473787859557932,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.10714122602630752,
+            0.1255920922049244
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 7.974586725234985,
+          "estimate_status": "defined",
+          "standard_error": 0.06896354328432727,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            7.842401227355003,
+            8.110978028178215
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.22607970237731934,
+          "estimate_status": "defined",
+          "standard_error": 9.885115183928235e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.2258865773677826,
+            0.22626626789569854
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 32,
+      "beta": 10,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211535,
+      "observables": {
+        "S1": {
+          "estimate": 0.19749157538318127,
+          "estimate_status": "defined",
+          "standard_error": 0.005069492915180772,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18755321902388966,
+            0.2073608350679785
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.17598470052083334,
+          "estimate_status": "defined",
+          "standard_error": 0.009213990940757496,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.15860900878906253,
+            0.19445800781250003
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 1.001027646773411,
+          "estimate_status": "defined",
+          "standard_error": 0.031481288329322586,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9421753852672039,
+            1.0643516463642413
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 0.9809923598372733,
+          "estimate_status": "defined",
+          "standard_error": 0.0335351656682328,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9180928074192811,
+            1.0486525341738155
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 0.9624501520702119,
+          "estimate_status": "defined",
+          "standard_error": 0.03400131909038087,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8975800269850304,
+            1.0316839663063921
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.8910997857978529,
+          "estimate_status": "defined",
+          "standard_error": 0.05236540144086356,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.7928846954175939,
+            0.9973383349613824
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4638113921238862,
+          "estimate_status": "defined",
+          "standard_error": 0.03094571935443711,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.405772265618606,
+            1.5250801684607296
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1680242915644208,
+          "estimate_status": "defined",
+          "standard_error": 0.014404742570978638,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1404966946987523,
+            1.1959259654023522
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.6990140666243447,
+          "estimate_status": "defined",
+          "standard_error": 0.10487918750450408,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5051085843964047,
+            1.9063294435720006
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.03488252239278581,
+          "estimate_status": "defined",
+          "standard_error": 0.0013620297168528115,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.032314524755292125,
+            0.03764273880300656
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 2.019824504852295,
+          "estimate_status": "defined",
+          "standard_error": 0.02061440479487702,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            1.9806840151548386,
+            2.061165088415146
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.12134075164794922,
+          "estimate_status": "defined",
+          "standard_error": 8.578220153097593e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.12117681503295899,
+            0.12150812149047852
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 64,
+      "beta": 0.1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211536,
+      "observables": {
+        "S1": {
+          "estimate": 0.19010987408560265,
+          "estimate_status": "defined",
+          "standard_error": 0.005218718321655706,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.17982876173173246,
+            0.2005157284311005
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.1905924479166665,
+          "estimate_status": "defined",
+          "standard_error": 0.009718999319572584,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1718134562174478,
+            0.21051076253255194
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9994032970403759,
+          "estimate_status": "defined",
+          "standard_error": 0.03327451869462031,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9362617551146645,
+            1.0677180183278925
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0707249133247534,
+          "estimate_status": "defined",
+          "standard_error": 0.03680302530671337,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.0007207152471178,
+            1.1471134937768945
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0495329758903564,
+          "estimate_status": "defined",
+          "standard_error": 0.039903802009354096,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9745153576992073,
+            1.1318804799253364
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.0025383943542383,
+          "estimate_status": "defined",
+          "standard_error": 0.05801321983279945,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8928718918808443,
+            1.1239082662012105
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.5339898568574017,
+          "estimate_status": "defined",
+          "standard_error": 0.03693460309563892,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4643796667140079,
+            1.6073457694347741
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1921580333376813,
+          "estimate_status": "defined",
+          "standard_error": 0.02028618483715859,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1547789151406902,
+            1.233040402804167
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.6630891287527194,
+          "estimate_status": "defined",
+          "standard_error": 0.06491823647558526,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5402368062134344,
+            1.7938274567430965
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.9294587074054235,
+          "estimate_status": "defined",
+          "standard_error": 0.03249306553826432,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.8664261208465721,
+            0.9926076795647092
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 81.75154750049114,
+          "estimate_status": "defined",
+          "standard_error": 0.5029747376023131,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            80.75649598613381,
+            82.74136856310069
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.2621782422065735,
+          "estimate_status": "defined",
+          "standard_error": 3.0123629513373967e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.26211900897324086,
+            0.2622386824339628
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 64,
+      "beta": 1,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211537,
+      "observables": {
+        "S1": {
+          "estimate": 0.20561170222644315,
+          "estimate_status": "defined",
+          "standard_error": 0.0054562571877803745,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.19537453056771875,
+            0.21654670628289008
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.1844889322916667,
+          "estimate_status": "defined",
+          "standard_error": 0.009532258054595774,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1660756429036457,
+            0.20316670735677078
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.92963245497179,
+          "estimate_status": "defined",
+          "standard_error": 0.029169756745902692,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8748696972244955,
+            0.9880820257570916
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 0.9747058150639678,
+          "estimate_status": "defined",
+          "standard_error": 0.03501844276827685,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9082262494273089,
+            1.0457946935953693
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 0.9415966129407116,
+          "estimate_status": "defined",
+          "standard_error": 0.03464200361400986,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8739106758627067,
+            1.011521488882293
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.8972686393524741,
+          "estimate_status": "defined",
+          "standard_error": 0.05396855241772692,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.7948247557094978,
+            1.0021799444424138
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.5169032773052133,
+          "estimate_status": "defined",
+          "standard_error": 0.03091648916533118,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4568295781174105,
+            1.5781955431819665
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.179570168289953,
+          "estimate_status": "defined",
+          "standard_error": 0.016532992660463205,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1475527310868228,
+            1.2117980794012762
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.6807554508026314,
+          "estimate_status": "defined",
+          "standard_error": 0.0671742059967998,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.552035282836661,
+            1.8133194077779424
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.11611307898425584,
+          "estimate_status": "defined",
+          "standard_error": 0.004777374975524569,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.10710958049193532,
+            0.1256959691865977
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 9.882357999682426,
+          "estimate_status": "defined",
+          "standard_error": 0.07291051861145299,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            9.742492290958761,
+            10.02786369882524
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.22623500227928162,
+          "estimate_status": "defined",
+          "standard_error": 3.127058602507603e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.22617414481937886,
+            0.226296067237854
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 64,
+      "beta": 10,
+      "completed": 256,
+      "declared": 256,
+      "status_counts": {
+        "full_verified": 256
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211538,
+      "observables": {
+        "S1": {
+          "estimate": 0.19435793308984736,
+          "estimate_status": "defined",
+          "standard_error": 0.004562279962076621,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18537875576189194,
+            0.20329899002817814
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.20141601562499978,
+          "estimate_status": "defined",
+          "standard_error": 0.010915397063949634,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.18031768798828104,
+            0.22324676513671854
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9877405064836274,
+          "estimate_status": "defined",
+          "standard_error": 0.028702235467982243,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9344130835556042,
+            1.0465814649783103
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.013155390425261,
+          "estimate_status": "defined",
+          "standard_error": 0.03217531082923049,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9522290374862545,
+            1.0785241602695386
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 0.9731241522942464,
+          "estimate_status": "defined",
+          "standard_error": 0.032798881861219084,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9105806942889817,
+            1.041597741366172
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.036314867229472,
+          "estimate_status": "defined",
+          "standard_error": 0.05755906056372283,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9258621891433348,
+            1.1521496992110691
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4634901752275464,
+          "estimate_status": "defined",
+          "standard_error": 0.023941580636952987,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.4184575447745755,
+            1.510955811394003
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1405074980949195,
+          "estimate_status": "defined",
+          "standard_error": 0.012278456294523388,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.1171161651024726,
+            1.1645623018663183
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.7489128048158396,
+          "estimate_status": "defined",
+          "standard_error": 0.09521592584342445,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5843833785961474,
+            1.9495042866910652
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.03771202647393895,
+          "estimate_status": "defined",
+          "standard_error": 0.0015155112927592123,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.034867505733662374,
+            0.040759596433617325
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 2.6212568879127502,
+          "estimate_status": "defined",
+          "standard_error": 0.022730138677234165,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            2.579194646701217,
+            2.6658965539187194
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.12128572165966034,
+          "estimate_status": "defined",
+          "standard_error": 2.9839515253359225e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.12122745774686336,
+            0.12134400010108948
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 128,
+      "beta": 0.1,
+      "completed": 64,
+      "declared": 64,
+      "status_counts": {
+        "full_verified": 64
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211539,
+      "observables": {
+        "S1": {
+          "estimate": 0.19652312943714995,
+          "estimate_status": "defined",
+          "standard_error": 0.00940705414391003,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.17904297510018907,
+            0.21474243926161196
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.16646321614583334,
+          "estimate_status": "defined",
+          "standard_error": 0.016111760273848977,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.13684082031250006,
+            0.1992604573567708
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9935612901904197,
+          "estimate_status": "defined",
+          "standard_error": 0.05761093655479718,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8858556048724808,
+            1.1087372908170545
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 0.9278911235972347,
+          "estimate_status": "defined",
+          "standard_error": 0.0603574588489104,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8184866359262165,
+            1.0493859548843942
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.1000267554458454,
+          "estimate_status": "defined",
+          "standard_error": 0.07451346703426176,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9646667673536218,
+            1.2542901109439355
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.8470413463422377,
+          "estimate_status": "defined",
+          "standard_error": 0.0944994539153034,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.6761509783591297,
+            1.0394421043760327
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4266164375945134,
+          "estimate_status": "defined",
+          "standard_error": 0.04233700069298307,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3460720917212725,
+            1.5082660427793122
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1443512318501081,
+          "estimate_status": "defined",
+          "standard_error": 0.03167490357873311,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.0911997915781302,
+            1.2084527897090684
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.5901874496490584,
+          "estimate_status": "defined",
+          "standard_error": 0.13058223245943942,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3575293189627218,
+            1.847206563745572
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.935359223822856,
+          "estimate_status": "defined",
+          "standard_error": 0.05830430884875804,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.8241607249544421,
+            1.0537727132476709
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 95.60829216986895,
+          "estimate_status": "defined",
+          "standard_error": 0.8728760352955565,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            93.96432079914958,
+            97.34025399759412
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.2621917128562927,
+          "estimate_status": "defined",
+          "standard_error": 2.3744806379553434e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.2621444143354893,
+            0.262236588075757
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 128,
+      "beta": 1,
+      "completed": 64,
+      "declared": 64,
+      "status_counts": {
+        "full_verified": 64
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211540,
+      "observables": {
+        "S1": {
+          "estimate": 0.17662248767696556,
+          "estimate_status": "defined",
+          "standard_error": 0.008675049760447974,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1593760706895705,
+            0.1933216149962546
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.20764160156249992,
+          "estimate_status": "defined",
+          "standard_error": 0.02439647060940119,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.16296284993489582,
+            0.25817972819010415
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 1.0854601709797715,
+          "estimate_status": "defined",
+          "standard_error": 0.060716028267932064,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9759767372568854,
+            1.2154622088163674
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 1.0737938754999914,
+          "estimate_status": "defined",
+          "standard_error": 0.06869175861187025,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9480243729896477,
+            1.217546252607174
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 1.0924184985889132,
+          "estimate_status": "defined",
+          "standard_error": 0.06513152521282191,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.9759465666814041,
+            1.2328944973747498
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 1.175623808120441,
+          "estimate_status": "defined",
+          "standard_error": 0.15799312142773694,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8973038608423528,
+            1.5177174850829847
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.4955117790622015,
+          "estimate_status": "defined",
+          "standard_error": 0.05556990692304318,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3916831649916883,
+            1.6065075287751267
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1519821219914295,
+          "estimate_status": "defined",
+          "standard_error": 0.029981822374093282,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.0984706324033746,
+            1.2142554056265515
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.8696926788463373,
+          "estimate_status": "defined",
+          "standard_error": 0.14326735179782993,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.5656643949749718,
+            2.141929986195923
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.11824953845655992,
+          "estimate_status": "defined",
+          "standard_error": 0.009763943292961154,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.10019072130772984,
+            0.13861194284756795
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 11.694970563054085,
+          "estimate_status": "defined",
+          "standard_error": 0.14567156515139265,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            11.421600170992315,
+            11.991894094087183
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.2262062132358551,
+          "estimate_status": "defined",
+          "standard_error": 2.0567478029609282e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.22616460900753738,
+            0.22624618746340275
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    },
+    {
+      "N": 128,
+      "beta": 10,
+      "completed": 64,
+      "declared": 64,
+      "status_counts": {
+        "full_verified": 64
+      },
+      "conditional_on_full_verified_completion": false,
+      "event_cap_censored": 0,
+      "not_started_deadline": 0,
+      "other_excluded": 0,
+      "bootstrap_seed": 2109211541,
+      "observables": {
+        "S1": {
+          "estimate": 0.20486777750304583,
+          "estimate_status": "defined",
+          "standard_error": 0.009114195475082177,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1871156025085592,
+            0.2224536564366374
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W": {
+          "estimate": 0.19665527343750006,
+          "estimate_status": "defined",
+          "standard_error": 0.017780387189972043,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.16320800781250003,
+            0.23254394531249997
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S2_over_S1": {
+          "estimate": 0.9331897003767122,
+          "estimate_status": "defined",
+          "standard_error": 0.05338871837172558,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8355841807948831,
+            1.0427933305804025
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S3_over_S1": {
+          "estimate": 0.9256231261275264,
+          "estimate_status": "defined",
+          "standard_error": 0.06630890044352314,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8070587464325916,
+            1.0654773518327791
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "S4_over_S1": {
+          "estimate": 0.925616735485769,
+          "estimate_status": "defined",
+          "standard_error": 0.05272741280968629,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.8288761383087773,
+            1.0330477625386048
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "W_over_S1": {
+          "estimate": 0.9599131490288966,
+          "estimate_status": "defined",
+          "standard_error": 0.09703201790954719,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            0.7848880232645934,
+            1.1595293389853976
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_mode_fourth_ratio": {
+          "estimate": 1.40665902179041,
+          "estimate_status": "defined",
+          "standard_error": 0.05576893445099747,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.302178849683458,
+            1.5176093317782335
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "axis_shell_fourth_ratio": {
+          "estimate": 1.1246895090519644,
+          "estimate_status": "defined",
+          "standard_error": 0.02677064075624052,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.0754333345447382,
+            1.1774453528242876
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "winding_fourth_ratio": {
+          "estimate": 1.5150054013870855,
+          "estimate_status": "defined",
+          "standard_error": 0.09970676319097055,
+          "standard_error_status": "defined",
+          "standard_error_method": "paired_delta_method_from_history_influence",
+          "CI95_pointwise": [
+            1.3404167193696435,
+            1.7149117455318008
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "time_per_volume": {
+          "estimate": 0.036121750143764696,
+          "estimate_status": "defined",
+          "standard_error": 0.0026629434975169028,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.03116307752859498,
+            0.04136330715986483
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "slides_per_site": {
+          "estimate": 3.148866757750511,
+          "estimate_status": "defined",
+          "standard_error": 0.04038855211203429,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            3.071422854438424,
+            3.2266975715756416
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        },
+        "site_reuse_fraction": {
+          "estimate": 0.12132559716701508,
+          "estimate_status": "defined",
+          "standard_error": 2.33761745768844e-05,
+          "standard_error_status": "defined",
+          "standard_error_method": "sample_standard_deviation_over_sqrt_n",
+          "CI95_pointwise": [
+            0.1212802655994892,
+            0.12137259654700756
+          ],
+          "CI_status": "defined",
+          "bootstrap_defined_resamples": 10000,
+          "bootstrap_undefined_resamples": 0
+        }
+      }
+    }
+  ]
+}

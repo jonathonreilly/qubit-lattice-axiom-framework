@@ -1,0 +1,40 @@
+{
+  "conditional_Gaussian_exact_moments": {
+    "single_two_complex_polarizations": {
+      "independent_real_Gaussians": 4,
+      "ratio": "3/2"
+    },
+    "three_mode_average": {
+      "independent_real_Gaussians": 12,
+      "ratio": "7/6"
+    },
+    "three_real_windings": {
+      "independent_real_Gaussians": 3,
+      "ratio": "5/3"
+    }
+  },
+  "archive_reconstruction": [
+    {
+      "prefix": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy0",
+      "sha256": "cc273922e2a9516bb148418b7a57e5fa84de0490084e214525dab3ef2c8c7edd",
+      "reconstructed_ASCII_is_byte_identical": true
+    },
+    {
+      "prefix": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy1",
+      "sha256": "0f34f70a958ac8edd0c47c29751512de64d7f48b178a00ea67bf282463d1d36f",
+      "reconstructed_ASCII_is_byte_identical": true
+    },
+    {
+      "prefix": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy2",
+      "sha256": "f609263026157d472caa8aa52f09c95712e63d69db4f9eee79bbc4758101ba60",
+      "reconstructed_ASCII_is_byte_identical": true
+    }
+  ],
+  "mixed_zero_winding": {
+    "empirical_mean_W_positive": true,
+    "probability_of_zero_W_mean_in_one_two_row_bootstrap_resample": "1/4",
+    "analyzer_exit_code": 1,
+    "failure_is_preserved": true
+  },
+  "production_outputs_read": false
+}

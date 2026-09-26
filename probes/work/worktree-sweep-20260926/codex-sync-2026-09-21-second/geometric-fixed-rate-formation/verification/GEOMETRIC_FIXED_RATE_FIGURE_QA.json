@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-21T17:13:42.302692+00:00",
+  "figure": "geometric_fixed_rate_results/fixed_rate_formation.png",
+  "visual_inspection": "Root viewed the complete six-panel PNG; titles, axes, intervals, legend and footnotes are readable and unclipped.",
+  "source_values": "N128 table entries independently compared with all three frozen result rows; values/rounded intervals agree.",
+  "runtime": "External plotting-venv, matplotlib installed locally after both existing Python runtimes lacked it. Original missing-dependency log preserved.",
+  "font_warning": "DejaVu Sans semibold fell back to weight700; visible text was inspected. No result or interval changed."
+}

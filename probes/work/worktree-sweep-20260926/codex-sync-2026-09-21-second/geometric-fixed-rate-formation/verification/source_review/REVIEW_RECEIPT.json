@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-21T15:48:01.178480+00:00",
+  "scope": "All outputs were generated inside this independent directory; no production output access.",
+  "successful_primary_commands": [
+    "python3 independent_check.py (original preserved source before output-option addition)",
+    "python3 ancillary_controls.py (original preserved source before output-option addition)",
+    "python3 independent_check.py --output final_checker_reproduction",
+    "python3 ancillary_controls.py --output final_ancillary_reproduction"
+  ],
+  "expected_failure_controls": [
+    "wrapper_exception schema -> KeyError at name lookup",
+    "zero mean winding -> undefined-ratio assertion",
+    "positive point mean winding with zero bootstrap denominators -> undefined-ratio assertion"
+  ],
+  "final_reproduction_agrees_with_initial_science_fields": true,
+  "all_primary_source_edits": false,
+  "production_values_read": false
+}

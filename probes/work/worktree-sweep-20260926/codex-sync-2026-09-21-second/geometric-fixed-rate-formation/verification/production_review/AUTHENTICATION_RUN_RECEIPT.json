@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_production_independent/authenticate_and_aggregate.py"
+  ],
+  "started_utc": "2026-09-21T16:54:42.386804+00:00",
+  "completed_utc": "2026-09-21T16:54:45.558101+00:00",
+  "elapsed_seconds": 3.1710314170923084,
+  "returncode": 0,
+  "outputs": {
+    "AUTHENTICATION_RUN.stdout": "b41e9233714e761281e0d0e753d5215c75c05f63892ce19f4855d04d844ee47b",
+    "AUTHENTICATION_RUN.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

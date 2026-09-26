@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/growth_binary",
+    "4",
+    "9123401",
+    "4",
+    "0.5",
+    "200000",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/toy_runs/toy1",
+    "1"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "production": false
+}

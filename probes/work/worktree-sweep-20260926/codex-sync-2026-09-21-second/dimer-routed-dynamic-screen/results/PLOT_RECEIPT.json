@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T19:13:57.154488+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/plot_dimer_routed_dynamics.py",
+    "bytes": 10530,
+    "sha256": "ff14cc6164ec1f234446302105e0a11d1c18bb4d4983bea6f1dc013d9f25ecff"
+  },
+  "analysis": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_analysis/RESULTS.json",
+    "bytes": 136370,
+    "sha256": "08aab30040e7b0c50c60486bf769f7c87247d8771f3f2315d577725fd4d60345"
+  },
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DYNAMIC_SCREEN_ASSESSMENT.md",
+      "bytes": 6546,
+      "sha256": "58d0a8682b3733453ddb45657bc2b4cf449b6613a200304e2b7457139c9ec1c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.png",
+      "bytes": 508691,
+      "sha256": "15d61d26bb6527aeab57a10eacae4307dd23b38d9e1304bf43e9978c092561a6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_results/DIMER_ROUTED_DYNAMIC_SCREEN.pdf",
+      "bytes": 46933,
+      "sha256": "0fb81bfea64b7e7803084872d2f9216ae5a50444af1728c58218c5c4c0eb1194"
+    }
+  ],
+  "visual_inspection": "Pending root image inspection; this script does not establish layout quality."
+}

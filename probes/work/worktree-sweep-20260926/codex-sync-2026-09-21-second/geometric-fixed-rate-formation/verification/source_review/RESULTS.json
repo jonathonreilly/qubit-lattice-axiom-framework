@@ -1,0 +1,101 @@
+{
+  "scope": "Selective independent code and observable controls only; all numerical inputs generated here, no production outputs read.",
+  "started_utc": "2026-09-21T15:39:34.472937+00:00",
+  "finished_utc": "2026-09-21T15:39:38.469112+00:00",
+  "sources": {
+    "GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+    "GEOMETRIC_FIXED_RATE_FOLLOWUP_PROTOCOL.md": "4dae8ad738bf49af9b01ac6dada4f8f35383f317d6716b9e4de279797b999d48",
+    "GEOMETRIC_FIXED_RATE_ANALYSIS_PLAN.md": "13db5d01088ff610b4787b89b42c04cc048e0322fb666a0985141011352e13ab",
+    "geometric_partner_growth.cpp": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+    "run_geometric_fixed_rate_followup.py": "fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e",
+    "analyze_geometric_fixed_rate_followup.py": "531c59d50c910bca28f8ae0255bc3507831ac32dc3dbd2dd011cb433bd9d557d"
+  },
+  "catalog": {
+    "fixtures": 243,
+    "birth_transitions": 37092,
+    "slide_transitions_and_exact_inverses": 4248,
+    "turning_slides": 3168,
+    "periodic_crossing_slides": 1332
+  },
+  "observable_configurations": 243,
+  "observable_modes_compared": 3888,
+  "maximum_power_difference": 3.209238430557093e-16,
+  "Hermitian_projection_countercontrol": {
+    "correct_constraint_residual": 2.4115923810503947e-17,
+    "incorrect_conjugated_row_residual": 1.7320508075688767
+  },
+  "toy_runs": [
+    {
+      "N": 4,
+      "beta": 1,
+      "kappa": 1,
+      "cap": 200000,
+      "full": true,
+      "events": 370,
+      "independent_state_and_observables_checked": true
+    },
+    {
+      "N": 4,
+      "beta": 4,
+      "kappa": 0.5,
+      "cap": 200000,
+      "full": true,
+      "events": 115,
+      "independent_state_and_observables_checked": true
+    },
+    {
+      "N": 6,
+      "beta": 0.3,
+      "kappa": 2,
+      "cap": 200000,
+      "full": true,
+      "events": 4549,
+      "independent_state_and_observables_checked": true
+    },
+    {
+      "N": 4,
+      "beta": 1,
+      "kappa": 1,
+      "cap": 1,
+      "full": false,
+      "events": 1,
+      "independent_state_and_observables_checked": true
+    }
+  ],
+  "statistics": {
+    "synthetic_completed_histories": 2,
+    "declared_history_rows": 2496,
+    "bootstrap_replicates": 10000,
+    "paired_row_bootstrap_matches": true,
+    "ratios_are_ratios_of_means": true,
+    "conditional_Gaussian_ratios": [
+      "3/2",
+      "7/6",
+      "5/3"
+    ],
+    "undefined_and_exception_controls": {
+      "wrapper_exception": {
+        "returncode": 1,
+        "last_stderr_lines": [
+          "                            ~~~~^^",
+          "  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py\", line 31, in main",
+          "    N,beta,seed=row['case'];name=row['name'];prefix=src/name",
+          "                                 ~~~^^^^^^^^",
+          "KeyError: 'name'"
+        ]
+      },
+      "zero_winding": {
+        "returncode": 1,
+        "last_stderr_lines": [
+          "                            ~~~~^^",
+          "  File \"/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py\", line 61, in main",
+          "    assert np.all(np.isfinite(point)) and np.all(np.isfinite(boot))",
+          "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+          "AssertionError"
+        ]
+      }
+    },
+    "production_values_read": false
+  },
+  "RNG_scope": "Inspected use of standard generator/distributions and executable finite controls, not an independent proof of RNG statistical properties or seed independence."
+}

@@ -1,0 +1,3877 @@
+{
+  "created_utc": "2026-09-21T18:42:33.284335+00:00",
+  "read_boundary": "Selected binary states reconstructed without reading any history JSON/receipt payload or aggregate output.",
+  "manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/MANIFEST.json",
+    "bytes": 673550,
+    "sha256": "4db87d1484554a0173ca07a43c82fdd6148604416b2674da7fe7a57b930acc00"
+  },
+  "dispatch": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/DISPATCH.json",
+    "bytes": 3431,
+    "sha256": "6125c10998f7c49fe39112816adc981f32ce465a826692f923cff2ab1c75c060"
+  },
+  "binary": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "bytes": 60104,
+    "sha256": "4e00276a24fe77c1a6aa899aafeeff86eb0d7b8b271637695c2289cc19d18131"
+  },
+  "frozen_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_DYNAMIC_SCREEN_PROTOCOL.md",
+      "bytes": 4870,
+      "sha256": "d8cbfed1ba55a4a11048c7d68135f0ee7f6d0c98c38dc685e43bb43ead90952d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19545,
+      "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamics.cpp",
+      "bytes": 10682,
+      "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/frozen_sources/dimer_routed_dynamic_setup.py",
+      "bytes": 8549,
+      "sha256": "ef662a36150dd8db8ea6831062c4f18cbb11b95397056c7e5fa16b60343b50dd"
+    }
+  ],
+  "geometry_checks": [
+    {
+      "N": 16,
+      "kind": "winding",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.bin",
+        "bytes": 16396,
+        "sha256": "0114e510f20298c0d091bb01b7211200fa010e6cd63b5a76643aa1325c9cf807"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 0
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 2048
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 2048
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 2048
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 2048
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 2048
+        }
+      ]
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.bin",
+        "bytes": 16396,
+        "sha256": "3bbb04d8d26b70d018a30bdcdb954f56acfdba1ea6124efa6a000d497fd21b45"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 1695
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 1695
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 1721
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 1721
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 1704
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 1704
+        }
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "winding",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.bin",
+        "bytes": 131084,
+        "sha256": "fbf7e807de71f9064c7cca72eeffb1d0d62ed74718f58c17bb14e5f1d6301b80"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 0
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 16384
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 16384
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 16384
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 16384
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 16384
+        }
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "irregular",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_irregular.bin",
+        "bytes": 131084,
+        "sha256": "b44d78902133e95c19aa6d202fe0ac1fa631e1b0e90ac1da36786dbdfc435ab9"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 13476
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 13476
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 13823
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 13823
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 13661
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 13661
+        }
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "winding",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_winding.bin",
+        "bytes": 1048588,
+        "sha256": "adb12c4c0c30fae145fc3f327f0eaef74f6c9c4449f05a82611e339574308f95"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 0
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 131072
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 131072
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 131072
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 131072
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 131072
+        }
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "irregular",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_irregular.bin",
+        "bytes": 1048588,
+        "sha256": "093b397d695b45e45a557f7240e26626d338986bd39537d1ac2b597cc384a1c8"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 108537
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 108537
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 109527
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 109527
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 109616
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 109616
+        }
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "winding",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_winding.bin",
+        "bytes": 8388620,
+        "sha256": "c83ab21c96ffa7e32ef7cc798f4773573e45bea60d4b2551e506a600a38491fb"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 0
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 1048576
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 1048576
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 1048576
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 1048576
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 1048576
+        }
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "irregular",
+      "geometry_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_irregular.bin",
+        "bytes": 8388620,
+        "sha256": "b36e6c5128103ecd62ba8bdded3197f6f073c8c0861934116023a6ae4cecb0e2"
+      },
+      "routes": [
+        {
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "moving_channels": 866557
+        },
+        {
+          "direction": [
+            -1,
+            0,
+            0
+          ],
+          "moving_channels": 866557
+        },
+        {
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "moving_channels": 876764
+        },
+        {
+          "direction": [
+            0,
+            -1,
+            0
+          ],
+          "moving_channels": 876764
+        },
+        {
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "moving_channels": 878119
+        },
+        {
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "moving_channels": 878119
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "N": 16,
+      "kind": "winding",
+      "replicate": 3,
+      "seed": 202609211812,
+      "job": {
+        "N": 16,
+        "kind": "winding",
+        "replicate": 3,
+        "seed": 202609211812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.bin",
+          "202609211812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r003.json.state",
+        "bytes": 10252,
+        "sha256": "2d11a9244029e5334971d055c6db626f3e309f7c6130feef0b597bfc2d66c538"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 2048,
+      "physical_record_check": {
+        "whole_pair_record_ids": 4096,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        134,
+        143,
+        142,
+        147,
+        149,
+        146,
+        165,
+        155,
+        138,
+        147,
+        140,
+        152,
+        144,
+        146
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.24481770999114705,
+            -0.2393206308946952
+          ],
+          [
+            0.28571867629600095,
+            0.020980812915512032
+          ],
+          [
+            0.13614527345045266,
+            -0.1016269534482613
+          ],
+          [
+            -0.02459040038919795,
+            -0.1293839653799663
+          ],
+          [
+            0.5895836060123824,
+            -0.5524274331844197
+          ],
+          [
+            -0.25422606989174,
+            -0.32159929736153237
+          ]
+        ],
+        [
+          [
+            0.04102608430250176,
+            0.18169501990056014
+          ],
+          [
+            0.03031892778243058,
+            -0.5500363610842657
+          ],
+          [
+            -0.10033578641981793,
+            -0.18230677262523196
+          ],
+          [
+            0.012502155107271784,
+            0.6922527995246621
+          ],
+          [
+            0.5292791064920701,
+            0.18089621414767898
+          ],
+          [
+            0.00976019650163942,
+            0.39008412092779526
+          ]
+        ],
+        [
+          [
+            0.163345258126661,
+            -0.185869524603207
+          ],
+          [
+            -0.19746128608149996,
+            -0.26570034296342
+          ],
+          [
+            -0.1393484117415482,
+            -0.3790025115684236
+          ],
+          [
+            0.6822165905093908,
+            -0.33553436680218174
+          ],
+          [
+            -0.3531047441742049,
+            -0.0828600604745886
+          ],
+          [
+            -0.5021906232915071,
+            -0.4577192754176433
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.005426686567979169,
+            0.08005169752744196
+          ],
+          [
+            -0.042678768060321205,
+            0.0776594638912153
+          ],
+          [
+            0.06724406019084017,
+            -0.11157619242105897
+          ],
+          [
+            0.0015235164788673621,
+            0.9134739564340396
+          ],
+          [
+            0.09850752921804458,
+            0.5060004509846957
+          ],
+          [
+            0.05246647014081627,
+            -0.2463616446761755
+          ]
+        ],
+        [
+          [
+            -0.22376092549342236,
+            0.7681394120953574
+          ],
+          [
+            -0.05956867744643396,
+            -0.1913545047976711
+          ],
+          [
+            0.16868265158002133,
+            -0.04998616602038916
+          ],
+          [
+            -0.30481903820185363,
+            0.2091085145353921
+          ],
+          [
+            0.3963095521543098,
+            0.008904675836633982
+          ],
+          [
+            -0.17335814903811875,
+            -0.15810314471888723
+          ]
+        ],
+        [
+          [
+            0.29846127941630507,
+            -0.31571965471075064
+          ],
+          [
+            0.2635213589033874,
+            0.18398591331346567
+          ],
+          [
+            0.2624320229612286,
+            -0.12224830017169208
+          ],
+          [
+            0.32563942396785023,
+            0.22663395442050344
+          ],
+          [
+            0.5003316391364503,
+            -0.2045949007524793
+          ],
+          [
+            0.2951124574266023,
+            -0.2934164666895173
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 16,
+      "kind": "winding",
+      "replicate": 27,
+      "seed": 202609211836,
+      "job": {
+        "N": 16,
+        "kind": "winding",
+        "replicate": 27,
+        "seed": 202609211836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_winding.bin",
+          "202609211836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_winding_r027.json.state",
+        "bytes": 10252,
+        "sha256": "f4bae64b83ca388164f84526d0e6471f2ee4438881d4b6c145eb676ec583d901"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 2048,
+      "physical_record_check": {
+        "whole_pair_record_ids": 4096,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        139,
+        149,
+        149,
+        140,
+        151,
+        147,
+        124,
+        127,
+        156,
+        142,
+        148,
+        150,
+        164,
+        162
+      ],
+      "initial_fields": [
+        [
+          [
+            0.47005058677434347,
+            0.06923895221466175
+          ],
+          [
+            0.23683021731522946,
+            0.20695461728055714
+          ],
+          [
+            0.29543735597323995,
+            0.4125967085320022
+          ],
+          [
+            0.5366004546033369,
+            -0.4999443855296025
+          ],
+          [
+            -0.06015438111791919,
+            0.5624618641972465
+          ],
+          [
+            0.26448246836110173,
+            -0.020918718237731428
+          ]
+        ],
+        [
+          [
+            0.03640777072810217,
+            0.4470829925500392
+          ],
+          [
+            0.31161491391778373,
+            0.0792814206957512
+          ],
+          [
+            0.33419074558342293,
+            0.011414189290329658
+          ],
+          [
+            1.1541333710001773,
+            0.43589173296423334
+          ],
+          [
+            -0.5291920846563111,
+            0.33368685293031985
+          ],
+          [
+            0.0758156871249427,
+            0.3964703475401885
+          ]
+        ],
+        [
+          [
+            -0.1289471056871702,
+            -0.3588359110826606
+          ],
+          [
+            0.0738661526176816,
+            0.11890263846207133
+          ],
+          [
+            -0.061724772733361966,
+            0.013292221526330915
+          ],
+          [
+            0.40128038274183386,
+            0.042225738730751944
+          ],
+          [
+            0.5654141724814207,
+            0.29129562876117143
+          ],
+          [
+            0.39052120136215634,
+            0.1286215785217399
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.35126480810009253,
+            -0.18272900175475104
+          ],
+          [
+            -0.3379304411305686,
+            -0.4425268132942847
+          ],
+          [
+            -0.22469151658699726,
+            -0.030120256976228017
+          ],
+          [
+            -0.03591466794611598,
+            -0.16411348442105694
+          ],
+          [
+            0.4191717050807032,
+            0.36979914303419714
+          ],
+          [
+            0.0033748710428893555,
+            -0.4242362463005137
+          ]
+        ],
+        [
+          [
+            0.22994125958580586,
+            -0.19386780715024146
+          ],
+          [
+            -0.4361792157610603,
+            0.1651524167101951
+          ],
+          [
+            -0.7156466843122106,
+            -0.21553976503514957
+          ],
+          [
+            0.3927523792300748,
+            -0.7642068851781788
+          ],
+          [
+            -0.3749640622293396,
+            0.06280522184690049
+          ],
+          [
+            0.876891240880776,
+            -0.3454651863128278
+          ]
+        ],
+        [
+          [
+            0.2263834580427782,
+            -0.16967764827110113
+          ],
+          [
+            0.1644691617142634,
+            -0.4394724232803656
+          ],
+          [
+            -0.01487582178654849,
+            0.21049743217636552
+          ],
+          [
+            -0.08018239457882989,
+            -0.6411145346246764
+          ],
+          [
+            0.10803117949315753,
+            -1.5967435768785656
+          ],
+          [
+            -0.7918068906228797,
+            0.43062914955701315
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "replicate": 3,
+      "seed": 202609221812,
+      "job": {
+        "N": 16,
+        "kind": "irregular",
+        "replicate": 3,
+        "seed": 202609221812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.bin",
+          "202609221812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r003.json.state",
+        "bytes": 10252,
+        "sha256": "a69cdd7c0f9f8b8f5be53e6c95d3586e39fc2ab8dfac94fdbe6a0b487eab668d"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 2048,
+      "physical_record_check": {
+        "whole_pair_record_ids": 4096,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        135,
+        146,
+        146,
+        147,
+        159,
+        138,
+        159,
+        149,
+        137,
+        154,
+        156,
+        140,
+        141,
+        141
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.003417696898160495,
+            -0.034444767193636726
+          ],
+          [
+            0.13560376575945524,
+            -0.08155679454415757
+          ],
+          [
+            -0.5083052945488002,
+            0.18593723797559214
+          ],
+          [
+            -0.814622909919122,
+            0.4553853872011871
+          ],
+          [
+            0.5119626979535692,
+            0.21479321418450006
+          ],
+          [
+            0.32693022275993033,
+            -0.5182123362851194
+          ]
+        ],
+        [
+          [
+            0.3217504644123668,
+            -0.05194016983860311
+          ],
+          [
+            -0.12038689724297724,
+            -0.29258747620169295
+          ],
+          [
+            0.5139019237137078,
+            -0.22478143832040887
+          ],
+          [
+            -0.5730033266897772,
+            0.26792973067647313
+          ],
+          [
+            -0.6430880676478292,
+            -0.22778047424636
+          ],
+          [
+            -0.34916116700347993,
+            0.14062679015486534
+          ]
+        ],
+        [
+          [
+            -0.11465993926304485,
+            0.3833577487391157
+          ],
+          [
+            -0.09008385726140904,
+            0.39898069820182086
+          ],
+          [
+            -0.2493938263290682,
+            0.016937265646682607
+          ],
+          [
+            -0.17212933706988542,
+            -0.7323222954736879
+          ],
+          [
+            -0.26395437790402326,
+            -0.1747919645251394
+          ],
+          [
+            1.0313632305361646,
+            -1.0832844133881692
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.17448990295832095,
+            0.04929770020708065
+          ],
+          [
+            -0.006366016995376146,
+            -0.002928643397478519
+          ],
+          [
+            -0.18604330789229556,
+            0.11467835872519656
+          ],
+          [
+            0.4356842710309234,
+            0.33673751513971006
+          ],
+          [
+            -0.277099953483758,
+            0.9790619732988946
+          ],
+          [
+            0.9380047938067462,
+            0.17132002328179818
+          ]
+        ],
+        [
+          [
+            0.3161251070381851,
+            0.5241435441249944
+          ],
+          [
+            0.3879217050807033,
+            -0.11692437574553616
+          ],
+          [
+            -0.21133653212322853,
+            0.3436273007760101
+          ],
+          [
+            0.2444141607062092,
+            -0.06026366310799009
+          ],
+          [
+            -0.941667776265255,
+            -0.6034486908017869
+          ],
+          [
+            -0.5286474166852316,
+            0.10094842814571195
+          ]
+        ],
+        [
+          [
+            -0.06802196661356578,
+            -0.04041322183504273
+          ],
+          [
+            -0.15556674500406828,
+            -0.19815533094854848
+          ],
+          [
+            -0.36945493602418555,
+            0.3385011581548345
+          ],
+          [
+            -0.1572254278452764,
+            0.555503454733858
+          ],
+          [
+            -0.7187584789513924,
+            -0.8195459031220818
+          ],
+          [
+            -0.08885972319327266,
+            -0.3138600419369011
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 16,
+      "kind": "irregular",
+      "replicate": 27,
+      "seed": 202609221836,
+      "job": {
+        "N": 16,
+        "kind": "irregular",
+        "replicate": 27,
+        "seed": 202609221836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N16_irregular.bin",
+          "202609221836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N16_irregular_r027.json.state",
+        "bytes": 10252,
+        "sha256": "6448ca2d57b24b33785344edb1ab9ecf14fe589727f458c3359d8dae6fe1ae08"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 2048,
+      "physical_record_check": {
+        "whole_pair_record_ids": 4096,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        138,
+        132,
+        150,
+        148,
+        161,
+        140,
+        155,
+        125,
+        144,
+        144,
+        149,
+        147,
+        155,
+        160
+      ],
+      "initial_fields": [
+        [
+          [
+            0.2748371078680484,
+            0.2634563246870898
+          ],
+          [
+            -0.05092933713994627,
+            -0.06204588238112485
+          ],
+          [
+            0.003284688927048204,
+            -0.1370411494037857
+          ],
+          [
+            -0.1938798542589437,
+            0.5518282604857301
+          ],
+          [
+            -0.5517424001860435,
+            0.5304050088236818
+          ],
+          [
+            -0.10842015000810384,
+            0.12940543223456868
+          ]
+        ],
+        [
+          [
+            0.15015326708086404,
+            0.306403267080864
+          ],
+          [
+            -0.33052597297004865,
+            0.4946899128374117
+          ],
+          [
+            -0.18392824830577342,
+            -0.4139435418241284
+          ],
+          [
+            -0.5560628489697272,
+            0.4764256034859712
+          ],
+          [
+            -0.7177189180434617,
+            -1.0734845513113407
+          ],
+          [
+            0.2859626528254785,
+            0.9250058548725472
+          ]
+        ],
+        [
+          [
+            0.08643676260376253,
+            0.07627948487214754
+          ],
+          [
+            0.22445497036047082,
+            0.13395871159267064
+          ],
+          [
+            -0.08181335109961736,
+            -0.14650059336947746
+          ],
+          [
+            -0.7451744970271407,
+            0.30327085494743744
+          ],
+          [
+            -0.4227446183110024,
+            -0.4217611529974634
+          ],
+          [
+            -0.34358247617672955,
+            -0.002964320785709342
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.6276696284274962,
+            -0.2199665044771015
+          ],
+          [
+            0.3693412365164472,
+            -0.16718834443442254
+          ],
+          [
+            -0.36691090671833176,
+            0.116799886366681
+          ],
+          [
+            0.06886869615146368,
+            0.5021423658772941
+          ],
+          [
+            0.26969949496367784,
+            -0.5619357631831171
+          ],
+          [
+            0.9386101741779684,
+            -0.03240036051801677
+          ]
+        ],
+        [
+          [
+            0.25321965471075064,
+            0.2698862661559764
+          ],
+          [
+            0.07338919801898736,
+            -0.5012079858848444
+          ],
+          [
+            -0.11748046220652512,
+            -0.22041857155868183
+          ],
+          [
+            0.6720759420850623,
+            0.9908751468616964
+          ],
+          [
+            -0.5459426309039807,
+            -0.2513611516796883
+          ],
+          [
+            -0.22963856940019461,
+            0.8757722877281209
+          ]
+        ],
+        [
+          [
+            -0.1818190281554209,
+            -0.3848189101577729
+          ],
+          [
+            0.0008467295378979145,
+            0.5643502051803702
+          ],
+          [
+            0.12989901614054936,
+            0.0499753761492723
+          ],
+          [
+            -0.04262062192863445,
+            1.6556815664070146
+          ],
+          [
+            -0.09493104783043561,
+            1.2972148973462776
+          ],
+          [
+            -0.5691781269268875,
+            0.3076112529657085
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "winding",
+      "replicate": 3,
+      "seed": 202609311812,
+      "job": {
+        "N": 32,
+        "kind": "winding",
+        "replicate": 3,
+        "seed": 202609311812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.bin",
+          "202609311812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r003.json.state",
+        "bytes": 81932,
+        "sha256": "79697a87ef548127438a6a5e5d5b565c57918d95059d58d95cd633efd397637f"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 16384,
+      "physical_record_check": {
+        "whole_pair_record_ids": 32768,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        1180,
+        1198,
+        1191,
+        1174,
+        1240,
+        1102,
+        1168,
+        1132,
+        1147,
+        1175,
+        1201,
+        1124,
+        1142,
+        1210
+      ],
+      "initial_fields": [
+        [
+          [
+            0.0638532477072608,
+            0.21954221204902852
+          ],
+          [
+            0.11277231278867594,
+            -0.07188574657309954
+          ],
+          [
+            -0.5291032565247236,
+            -0.02857314027574609
+          ],
+          [
+            -0.7471371660118273,
+            0.023100621073681243
+          ],
+          [
+            -0.1675738549578162,
+            -0.045337733825303386
+          ],
+          [
+            -0.16629856397654214,
+            0.6185166590326032
+          ]
+        ],
+        [
+          [
+            0.1850494684926737,
+            0.08431762377434851
+          ],
+          [
+            0.3840993939111174,
+            0.07377886932979133
+          ],
+          [
+            -0.008285520815720218,
+            0.4697625166459076
+          ],
+          [
+            0.07067590935886406,
+            0.03324806444575817
+          ],
+          [
+            -1.2847821876793968,
+            0.30952574417166745
+          ],
+          [
+            -1.2932444885184733,
+            -0.1017822594391612
+          ]
+        ],
+        [
+          [
+            -0.06468436973490842,
+            -0.5207870951534305
+          ],
+          [
+            0.07908138752323235,
+            -0.22514930934315905
+          ],
+          [
+            -0.3090503680570548,
+            -0.2765979187544185
+          ],
+          [
+            0.5800416950003571,
+            0.2365158810233589
+          ],
+          [
+            -0.10629978336648568,
+            0.1155454825171798
+          ],
+          [
+            0.517038488810886,
+            0.044285302663883676
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.4300742915347269,
+            0.16402777999600304
+          ],
+          [
+            -0.19049190651255257,
+            -0.016979161476910948
+          ],
+          [
+            -0.040767941896752286,
+            -0.34436407258531015
+          ],
+          [
+            -0.17684363782344928,
+            -0.10356978927688992
+          ],
+          [
+            0.26600867292287667,
+            -0.20730186344174645
+          ],
+          [
+            -0.32749007004068775,
+            -0.40165249778049406
+          ]
+        ],
+        [
+          [
+            0.10665330485966958,
+            0.1263517289713178
+          ],
+          [
+            -0.4566248257817249,
+            -0.007993634855252979
+          ],
+          [
+            -0.25905389335535783,
+            0.391131930013702
+          ],
+          [
+            -0.012828311136809378,
+            0.06540698426124755
+          ],
+          [
+            0.06683763347456614,
+            -0.29746074172457054
+          ],
+          [
+            -0.8086245894705666,
+            -0.18660773422198795
+          ]
+        ],
+        [
+          [
+            -0.25398628388551625,
+            0.29442404324427174
+          ],
+          [
+            0.12436514397404824,
+            0.05773421947616153
+          ],
+          [
+            -0.18232235124709895,
+            -0.43709952563366694
+          ],
+          [
+            0.5372320747224635,
+            0.01962008754990871
+          ],
+          [
+            0.3949574121591654,
+            -0.19837252623540932
+          ],
+          [
+            0.03404583392985519,
+            0.5760309299977541
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "winding",
+      "replicate": 27,
+      "seed": 202609311836,
+      "job": {
+        "N": 32,
+        "kind": "winding",
+        "replicate": 27,
+        "seed": 202609311836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_winding.bin",
+          "202609311836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_winding_r027.json.state",
+        "bytes": 81932,
+        "sha256": "4d6d861adc40b0dfeaa58dbb568e8e9d49a2d5b4a0364a8e36c138fc1eacca5e"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 16384,
+      "physical_record_check": {
+        "whole_pair_record_ids": 32768,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        1159,
+        1215,
+        1155,
+        1131,
+        1199,
+        1172,
+        1169,
+        1166,
+        1156,
+        1208,
+        1178,
+        1170,
+        1140,
+        1166
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.44828664814942343,
+            0.019698411904062296
+          ],
+          [
+            -0.30983192981638374,
+            0.45231672484652197
+          ],
+          [
+            0.21956899958572546,
+            0.26244180259099026
+          ],
+          [
+            0.6146267556440242,
+            0.499181393438462
+          ],
+          [
+            0.6660428690499255,
+            -0.087357462109097
+          ],
+          [
+            0.22432333578299254,
+            -0.3762721156374209
+          ]
+        ],
+        [
+          [
+            -0.08339569574023228,
+            -0.26983166635960826
+          ],
+          [
+            -0.4286818930346985,
+            -0.3666882077215513
+          ],
+          [
+            0.07881804993830174,
+            -0.0871240952996333
+          ],
+          [
+            0.28377094464962693,
+            0.5611038149792483
+          ],
+          [
+            0.2579179004828186,
+            -0.8816919108388085
+          ],
+          [
+            -1.3838782941085568,
+            0.8963066739990166
+          ]
+        ],
+        [
+          [
+            0.23110993501694857,
+            -0.165867660681831
+          ],
+          [
+            -0.087938566431316,
+            0.30275133791242437
+          ],
+          [
+            -0.07828081255205999,
+            0.3016520048796836
+          ],
+          [
+            0.15387956906411127,
+            -0.23278372073113485
+          ],
+          [
+            -0.9894902208329243,
+            -0.47431478368721447
+          ],
+          [
+            0.21286513652279215,
+            0.14996223177887383
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.6937887727562582,
+            0.3574552413841555
+          ],
+          [
+            -0.3504520945068744,
+            0.23118820945876006
+          ],
+          [
+            0.24580234158072709,
+            0.12944933975088005
+          ],
+          [
+            0.06769284328389724,
+            0.530448368849982
+          ],
+          [
+            -0.6477374248680698,
+            -1.2339559616730766
+          ],
+          [
+            -0.15264265422366108,
+            -0.8039707066099611
+          ]
+        ],
+        [
+          [
+            0.20256259484147615,
+            -0.07190723482941344
+          ],
+          [
+            0.2669589195413207,
+            -0.2501767853857382
+          ],
+          [
+            0.44398410830146623,
+            -0.14188809749478395
+          ],
+          [
+            -0.23477114675814245,
+            -0.41647410767318427
+          ],
+          [
+            -0.3137924001146817,
+            0.011876560517392137
+          ],
+          [
+            0.3041043551581397,
+            -0.5397829402597357
+          ]
+        ],
+        [
+          [
+            -0.07068508159072959,
+            -0.18685227365098572
+          ],
+          [
+            -0.11217521822637534,
+            -0.12275529636539267
+          ],
+          [
+            0.10952000040370188,
+            0.40242868165591755
+          ],
+          [
+            -0.17753299564543357,
+            0.06116153001866072
+          ],
+          [
+            -0.016438547433529793,
+            0.7292441348205678
+          ],
+          [
+            0.811270661456178,
+            0.17608400814656408
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "irregular",
+      "replicate": 3,
+      "seed": 202609321812,
+      "job": {
+        "N": 32,
+        "kind": "irregular",
+        "replicate": 3,
+        "seed": 202609321812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_irregular.bin",
+          "202609321812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r003.json.state",
+        "bytes": 81932,
+        "sha256": "1c958da2ab55bfae7a25f603b2eecd0cc3e7e46df42c7e949284d73877c3196f"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 16384,
+      "physical_record_check": {
+        "whole_pair_record_ids": 32768,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        1166,
+        1181,
+        1192,
+        1229,
+        1121,
+        1199,
+        1155,
+        1167,
+        1136,
+        1145,
+        1216,
+        1120,
+        1174,
+        1183
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.057480671634381655,
+            -0.49993222037863727
+          ],
+          [
+            0.2106342453261534,
+            -0.039809938321747285
+          ],
+          [
+            -0.07588729893183073,
+            0.7303243484202644
+          ],
+          [
+            0.5550234473099684,
+            0.4757902849611667
+          ],
+          [
+            0.03529948928475568,
+            -0.42505542901465676
+          ],
+          [
+            0.26538875304283793,
+            -0.021858577556812142
+          ]
+        ],
+        [
+          [
+            0.2623402905625268,
+            -0.07216898807628322
+          ],
+          [
+            -0.12184283987587852,
+            0.3811061294160564
+          ],
+          [
+            -0.21663027925362766,
+            0.3257800324412287
+          ],
+          [
+            0.05454315060688847,
+            0.9885857513950912
+          ],
+          [
+            0.046558401787727466,
+            -0.3243892223996324
+          ],
+          [
+            -0.01323536584793833,
+            0.6174923197664544
+          ]
+        ],
+        [
+          [
+            -0.04683842125352801,
+            0.408114235860391
+          ],
+          [
+            -0.31698549675746773,
+            -0.4547504155783759
+          ],
+          [
+            -0.4151195014468567,
+            0.062243197589090665
+          ],
+          [
+            -0.7403496640720149,
+            -0.4022119588118324
+          ],
+          [
+            0.24728960119831694,
+            1.0275511201217464
+          ],
+          [
+            1.6429443870040918,
+            -0.24661122068289304
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.5736212589329677,
+            -0.03409774767006487
+          ],
+          [
+            0.1666246060851001,
+            0.10077836117358518
+          ],
+          [
+            0.2810873719482375,
+            -0.5387410486241827
+          ],
+          [
+            0.5600685700121568,
+            -1.0661716108048718
+          ],
+          [
+            -0.15610531478433826,
+            0.9192999843629525
+          ],
+          [
+            0.3029380552165558,
+            -0.24384353463612982
+          ]
+        ],
+        [
+          [
+            0.08067786725267742,
+            0.2884878347501474
+          ],
+          [
+            -0.12554479744108915,
+            -0.52259805683579
+          ],
+          [
+            -0.07953247505325434,
+            0.05969908242886679
+          ],
+          [
+            -0.07380466737032179,
+            0.29421040323434117
+          ],
+          [
+            0.47336911158697725,
+            -0.013080310375441086
+          ],
+          [
+            0.49980220612912174,
+            0.42009273878897774
+          ]
+        ],
+        [
+          [
+            -0.2422544271809069,
+            -0.03822457132911375
+          ],
+          [
+            0.024492798654010217,
+            -0.1642785855760893
+          ],
+          [
+            -0.5537808110990949,
+            0.002138564486168365
+          ],
+          [
+            -0.0917391287843577,
+            0.7537833831346632
+          ],
+          [
+            -0.16696977955295378,
+            0.31549177161191405
+          ],
+          [
+            0.05659605601264339,
+            -0.5446324244516738
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 32,
+      "kind": "irregular",
+      "replicate": 27,
+      "seed": 202609321836,
+      "job": {
+        "N": 32,
+        "kind": "irregular",
+        "replicate": 27,
+        "seed": 202609321836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N32_irregular.bin",
+          "202609321836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N32_irregular_r027.json.state",
+        "bytes": 81932,
+        "sha256": "2ece9f5750ccc239f14f3227df08d89186095538cc570c42a2c58deda7445c18"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 16384,
+      "physical_record_check": {
+        "whole_pair_record_ids": 32768,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        1136,
+        1111,
+        1127,
+        1210,
+        1204,
+        1231,
+        1190,
+        1161,
+        1191,
+        1121,
+        1161,
+        1195,
+        1211,
+        1135
+      ],
+      "initial_fields": [
+        [
+          [
+            0.19554471062979056,
+            -0.6243733174013623
+          ],
+          [
+            0.06774248723598625,
+            0.07371110036887621
+          ],
+          [
+            0.12547239024752344,
+            0.10645702196230625
+          ],
+          [
+            1.345820687561389,
+            1.0391878605638873
+          ],
+          [
+            0.18528339241877861,
+            0.6036914670288113
+          ],
+          [
+            0.6626514590740958,
+            1.004132550572108
+          ]
+        ],
+        [
+          [
+            0.08787082014759166,
+            0.18928790135931212
+          ],
+          [
+            0.4139285360671121,
+            -0.16477182906630577
+          ],
+          [
+            0.08705284986307481,
+            0.2431510619816214
+          ],
+          [
+            -0.48528370236747465,
+            -0.3863777589978782
+          ],
+          [
+            0.792715969632495,
+            -0.39146707933022795
+          ],
+          [
+            -0.2118495735869512,
+            0.4001236516023053
+          ]
+        ],
+        [
+          [
+            0.049953251791763346,
+            -0.056208303885240146
+          ],
+          [
+            -0.001949002134588762,
+            0.1077163267348501
+          ],
+          [
+            -0.14992573555730135,
+            0.011902966218402311
+          ],
+          [
+            -0.25937713744732094,
+            0.8563596341945415
+          ],
+          [
+            -0.26399598194613394,
+            0.34099293793415797
+          ],
+          [
+            0.055045390796416155,
+            0.07607152360204106
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.3350554184540011,
+            0.1029528734323591
+          ],
+          [
+            -0.006822358710008192,
+            -0.24368441765321724
+          ],
+          [
+            -0.23548438990216725,
+            -0.2580042047671495
+          ],
+          [
+            -0.28945953709819605,
+            0.4866178671957351
+          ],
+          [
+            -0.17373316130160552,
+            -0.21470698727632825
+          ],
+          [
+            0.364979313923591,
+            0.4974023891775523
+          ]
+        ],
+        [
+          [
+            0.19390899989771326,
+            0.0027278120470901543
+          ],
+          [
+            0.0399481364365742,
+            -0.18420380240365844
+          ],
+          [
+            -0.19835395664955774,
+            -0.15078343181934722
+          ],
+          [
+            0.5080852976552503,
+            -0.39994878168698966
+          ],
+          [
+            0.15485360611201246,
+            -0.019743670172190364
+          ],
+          [
+            -2.692668785436105,
+            0.30484468768096923
+          ]
+        ],
+        [
+          [
+            -0.5523877520120861,
+            -0.09849084845415584
+          ],
+          [
+            -0.5386667913844572,
+            -0.11938159036095604
+          ],
+          [
+            -0.27635941136472464,
+            0.12586067892612882
+          ],
+          [
+            -0.3976404359475454,
+            -0.4239557465358192
+          ],
+          [
+            0.6081235397606605,
+            -0.5651812832510127
+          ],
+          [
+            0.2521047039875861,
+            -0.03725211644083132
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "winding",
+      "replicate": 3,
+      "seed": 202609411812,
+      "job": {
+        "N": 64,
+        "kind": "winding",
+        "replicate": 3,
+        "seed": 202609411812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_winding.bin",
+          "202609411812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r003.json.state",
+        "bytes": 655372,
+        "sha256": "1f5d348ac4a51a5a0029dd2697fd688276581b1fb1b48988f980ddade4de0ce6"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 131072,
+      "physical_record_check": {
+        "whole_pair_record_ids": 262144,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        9370,
+        9322,
+        9467,
+        9496,
+        9533,
+        9268,
+        9243,
+        9340,
+        9333,
+        9246,
+        9225,
+        9591,
+        9270,
+        9368
+      ],
+      "initial_fields": [
+        [
+          [
+            0.36266848648121025,
+            -0.548831429169464
+          ],
+          [
+            0.06371972846821625,
+            0.04007890264278054
+          ],
+          [
+            -0.04858610697799428,
+            -0.15845334763344682
+          ],
+          [
+            0.501794961192741,
+            0.716102748593295
+          ],
+          [
+            0.9254768467673774,
+            -0.3932255784674587
+          ],
+          [
+            0.23625892463869413,
+            -0.22070244910416553
+          ]
+        ],
+        [
+          [
+            0.40188805894314755,
+            -0.14649431596651347
+          ],
+          [
+            -0.347794444991907,
+            0.01194771115374609
+          ],
+          [
+            0.3109782612638621,
+            -0.2357063860399172
+          ],
+          [
+            1.5784831075438008,
+            0.23845047449667364
+          ],
+          [
+            -0.11675361386584926,
+            -0.4578442224614948
+          ],
+          [
+            0.09121036865659811,
+            0.99829432422129
+          ]
+        ],
+        [
+          [
+            0.44198690476114316,
+            -0.36492680614560147
+          ],
+          [
+            0.6755499370409133,
+            0.16301740288176425
+          ],
+          [
+            -0.2579753943893416,
+            -0.13118527132325497
+          ],
+          [
+            0.8459881491936206,
+            0.3086215851983869
+          ],
+          [
+            -0.16480257895502995,
+            0.45639833828024484
+          ],
+          [
+            -0.27097688828193245,
+            -0.004718720840656107
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.3219284347734965,
+            -0.33831009487684555
+          ],
+          [
+            0.009214223710338393,
+            0.26912191938920776
+          ],
+          [
+            0.08827841446228459,
+            -0.13860415853532781
+          ],
+          [
+            0.4718000476877577,
+            0.014669404031785871
+          ],
+          [
+            -0.783740329963092,
+            0.21154220735871027
+          ],
+          [
+            0.5995859043504798,
+            -0.21975735107348368
+          ]
+        ],
+        [
+          [
+            0.06452379496299844,
+            0.3639135278818228
+          ],
+          [
+            0.23795748683269105,
+            0.5588142106608284
+          ],
+          [
+            -0.25125849904780956,
+            0.042340399165530875
+          ],
+          [
+            -0.19685892005207764,
+            -0.8817893343871357
+          ],
+          [
+            0.13728549049865582,
+            -0.31071555614658625
+          ],
+          [
+            0.11593156196684344,
+            -0.789645244325408
+          ]
+        ],
+        [
+          [
+            -0.05059993972935763,
+            0.16370126031403862
+          ],
+          [
+            -0.22666898260705914,
+            -0.24171415661876047
+          ],
+          [
+            -0.26309218638988496,
+            0.2129172788927614
+          ],
+          [
+            -0.227160336211507,
+            -0.38740697058203644
+          ],
+          [
+            0.19714439539229794,
+            0.13640694812218482
+          ],
+          [
+            0.49547874090326155,
+            -0.29979935473528874
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "winding",
+      "replicate": 27,
+      "seed": 202609411836,
+      "job": {
+        "N": 64,
+        "kind": "winding",
+        "replicate": 27,
+        "seed": 202609411836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_winding.bin",
+          "202609411836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_winding_r027.json.state",
+        "bytes": 655372,
+        "sha256": "919151b61f178b82760c08db9506b9bc0753531b21deb2fa4d0e5f4a00fce301"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 131072,
+      "physical_record_check": {
+        "whole_pair_record_ids": 262144,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        9297,
+        9363,
+        9296,
+        9426,
+        9456,
+        9393,
+        9370,
+        9461,
+        9310,
+        9289,
+        9379,
+        9258,
+        9466,
+        9308
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.12273097142514995,
+            0.019840190113938626
+          ],
+          [
+            0.579376765257843,
+            -0.18569319300907
+          ],
+          [
+            -0.30056256375065493,
+            0.5057018773480633
+          ],
+          [
+            0.3046324066336429,
+            -0.21225419458506528
+          ],
+          [
+            0.3048210517680435,
+            -0.2211471618762964
+          ],
+          [
+            0.447011636285771,
+            0.1530540960669623
+          ]
+        ],
+        [
+          [
+            -0.156769713696176,
+            0.13063575149341308
+          ],
+          [
+            -0.07650301107310535,
+            -0.6081189758313269
+          ],
+          [
+            -0.09525876988793364,
+            0.07296524724833145
+          ],
+          [
+            -0.37925753017462593,
+            -0.9172211615925434
+          ],
+          [
+            -0.21491461744572485,
+            0.1509454301134257
+          ],
+          [
+            0.3275864732320383,
+            -0.3310320324931385
+          ]
+        ],
+        [
+          [
+            0.3349478788793486,
+            0.25258845222997717
+          ],
+          [
+            0.2971843659361856,
+            -0.45817357367690403
+          ],
+          [
+            -0.5944282468170211,
+            -0.031357228278784205
+          ],
+          [
+            0.18352374595152615,
+            -0.11312923676610527
+          ],
+          [
+            0.33858654811423106,
+            -0.1831120242102582
+          ],
+          [
+            -0.39517736712687196,
+            -0.6391567456915532
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.19470294421652687,
+            -0.42692776250725356
+          ],
+          [
+            0.3474574649494225,
+            -0.3075102251762298
+          ],
+          [
+            -0.2695974845184382,
+            0.23344880453646655
+          ],
+          [
+            0.1309105831461735,
+            0.8764576783682775
+          ],
+          [
+            0.8632477421193497,
+            -0.5305533167497639
+          ],
+          [
+            -0.49680391878760877,
+            -0.5874473136034042
+          ]
+        ],
+        [
+          [
+            0.1217602784403434,
+            -0.30815841713305214
+          ],
+          [
+            -0.012347753435364475,
+            -0.255965690617091
+          ],
+          [
+            0.012384330008390204,
+            0.04182396167394489
+          ],
+          [
+            0.5187663585154573,
+            -0.05503310621282349
+          ],
+          [
+            -0.681445376319402,
+            0.3225131565788241
+          ],
+          [
+            -0.47323913044842425,
+            -0.4582085346847296
+          ]
+        ],
+        [
+          [
+            -0.40260943091218504,
+            -0.3667620404193126
+          ],
+          [
+            0.013986409472825333,
+            0.24488258380491068
+          ],
+          [
+            -0.5290903407236687,
+            -0.157791468023331
+          ],
+          [
+            0.08501783337316837,
+            0.5594963838515493
+          ],
+          [
+            -0.4447741861157591,
+            -1.0510278819854857
+          ],
+          [
+            0.17752742940094057,
+            -0.12045372437958078
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "irregular",
+      "replicate": 3,
+      "seed": 202609421812,
+      "job": {
+        "N": 64,
+        "kind": "irregular",
+        "replicate": 3,
+        "seed": 202609421812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_irregular.bin",
+          "202609421812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r003.json.state",
+        "bytes": 655372,
+        "sha256": "69b58234ab362fba82879772d060c8da795f73ba38ddc5b3078fd1f148ea5d0a"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 131072,
+      "physical_record_check": {
+        "whole_pair_record_ids": 262144,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        9476,
+        9380,
+        9260,
+        9396,
+        9402,
+        9250,
+        9221,
+        9357,
+        9375,
+        9340,
+        9434,
+        9378,
+        9483,
+        9320
+      ],
+      "initial_fields": [
+        [
+          [
+            0.1144428760528558,
+            0.14390027679365636
+          ],
+          [
+            -0.11722003353115137,
+            0.22714251374513375
+          ],
+          [
+            0.3836624387717308,
+            0.4191091285593911
+          ],
+          [
+            -0.17432309581469196,
+            -0.45360439218936327
+          ],
+          [
+            0.31967689975699964,
+            0.029948132119587956
+          ],
+          [
+            0.6168697120838936,
+            0.037548974120084636
+          ]
+        ],
+        [
+          [
+            0.3419808894981339,
+            0.1908625221236233
+          ],
+          [
+            -0.3145490446758518,
+            -0.40710256487628144
+          ],
+          [
+            -0.2971511833996419,
+            0.06253950255789671
+          ],
+          [
+            -0.38292128973371176,
+            -0.28269645711828034
+          ],
+          [
+            0.2687659253804763,
+            0.3673978729869588
+          ],
+          [
+            -0.3230937886525888,
+            -0.8991754911276629
+          ]
+        ],
+        [
+          [
+            0.2829513781769719,
+            -0.29161654415671096
+          ],
+          [
+            0.032156981129691384,
+            0.30358986397189286
+          ],
+          [
+            -0.0514181511926664,
+            0.3619972067394836
+          ],
+          [
+            0.6940579698288966,
+            -0.018408046789496167
+          ],
+          [
+            -0.8819340101146128,
+            0.12012691760141789
+          ],
+          [
+            0.11117495951375125,
+            -1.3086388687633146
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.21596302105077825,
+            -0.05494756065977687
+          ],
+          [
+            -0.08071844790523862,
+            0.0725308047842833
+          ],
+          [
+            -0.6293547718487961,
+            0.1718345322759984
+          ],
+          [
+            -0.9755984330685109,
+            0.8184751021214827
+          ],
+          [
+            -0.4975386549267116,
+            0.19932074224428367
+          ],
+          [
+            -1.0021663435456185,
+            -0.7393446180129388
+          ]
+        ],
+        [
+          [
+            0.2571957791135171,
+            0.2928161872430759
+          ],
+          [
+            -0.11456527943196783,
+            0.06513332634423193
+          ],
+          [
+            -0.1786208610979088,
+            0.17391918456969682
+          ],
+          [
+            -0.14102662004444738,
+            0.07534605917858454
+          ],
+          [
+            0.62001737130125,
+            0.5630157658003915
+          ],
+          [
+            -0.2329674629159398,
+            0.4938832675662438
+          ]
+        ],
+        [
+          [
+            0.02883018915648807,
+            -0.020379061406122764
+          ],
+          [
+            -0.14611536390590024,
+            -0.16376954361212281
+          ],
+          [
+            0.3248607573737144,
+            -0.14462756059260387
+          ],
+          [
+            0.12025502875691566,
+            -0.022958677505163116
+          ],
+          [
+            0.7389091173347624,
+            0.10965871600637199
+          ],
+          [
+            -0.3992281659476024,
+            -0.04658662760983325
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 64,
+      "kind": "irregular",
+      "replicate": 27,
+      "seed": 202609421836,
+      "job": {
+        "N": 64,
+        "kind": "irregular",
+        "replicate": 27,
+        "seed": 202609421836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N64_irregular.bin",
+          "202609421836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N64_irregular_r027.json.state",
+        "bytes": 655372,
+        "sha256": "d06160cc6ea4541916317a500dbf7b43307b67b6eeea03049c78a71fd5a5f17f"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 131072,
+      "physical_record_check": {
+        "whole_pair_record_ids": 262144,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        9276,
+        9255,
+        9344,
+        9314,
+        9366,
+        9288,
+        9421,
+        9469,
+        9430,
+        9468,
+        9293,
+        9381,
+        9435,
+        9332
+      ],
+      "initial_fields": [
+        [
+          [
+            0.4115938600250156,
+            -0.27683562772998305
+          ],
+          [
+            -0.029183329556171964,
+            -0.11089135034603725
+          ],
+          [
+            0.16930292580289497,
+            0.09809120804093895
+          ],
+          [
+            0.7500741600009854,
+            0.10788172274131373
+          ],
+          [
+            -1.2092108503464563,
+            0.230520065239094
+          ],
+          [
+            -0.3492779405869345,
+            0.22572627555356234
+          ]
+        ],
+        [
+          [
+            -0.041179087734217475,
+            0.027466896689940103
+          ],
+          [
+            0.026966626666693836,
+            -0.23914867367952947
+          ],
+          [
+            0.1504941607909455,
+            -0.20061981252846364
+          ],
+          [
+            0.17962988611257533,
+            0.5765723688224329
+          ],
+          [
+            0.918773366986008,
+            0.24774716137180308
+          ],
+          [
+            0.2470235814578873,
+            0.29260449605519173
+          ]
+        ],
+        [
+          [
+            -0.47582975504212466,
+            0.40138481210096333
+          ],
+          [
+            -0.004996095292933657,
+            -0.4369021807608805
+          ],
+          [
+            0.011292741736981401,
+            -0.6451319311283926
+          ],
+          [
+            0.6491437548923451,
+            -0.3221455776404939
+          ],
+          [
+            0.40266484849876494,
+            0.25832675325066395
+          ],
+          [
+            -0.2568902255832818,
+            0.10212080825062014
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.002095332262330475,
+            -0.08062918897065885
+          ],
+          [
+            -0.18208504469202666,
+            0.24037225076414723
+          ],
+          [
+            -0.12467674209136302,
+            0.07970468305156556
+          ],
+          [
+            -0.2744876235265731,
+            -1.0255104702734077
+          ],
+          [
+            -0.7881747765013728,
+            0.29015129328102046
+          ],
+          [
+            -0.08968306143642546,
+            0.3003972849265891
+          ]
+        ],
+        [
+          [
+            -0.2496936706124215,
+            -0.037726648339886926
+          ],
+          [
+            -0.09176520900657949,
+            -0.0422993490398185
+          ],
+          [
+            -0.15505847445827836,
+            -0.07756302676651244
+          ],
+          [
+            0.27761474763768645,
+            -0.3736283317836438
+          ],
+          [
+            -0.06801142884359403,
+            -0.4345104172896999
+          ],
+          [
+            0.691895472436181,
+            -0.08605567199465826
+          ]
+        ],
+        [
+          [
+            0.2890366894075144,
+            -0.2659237990740999
+          ],
+          [
+            0.041966612732260086,
+            -0.2444993323998408
+          ],
+          [
+            -0.18419344871302734,
+            -0.0861987990633561
+          ],
+          [
+            0.0005269035709434998,
+            -0.5332828712858432
+          ],
+          [
+            -0.0785611628272515,
+            0.8005104592648715
+          ],
+          [
+            -0.4386045664334369,
+            0.7887004592633579
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "winding",
+      "replicate": 3,
+      "seed": 202609511812,
+      "job": {
+        "N": 128,
+        "kind": "winding",
+        "replicate": 3,
+        "seed": 202609511812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_winding.bin",
+          "202609511812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r003.json.state",
+        "bytes": 5242892,
+        "sha256": "80f6c4e41cc20199603c36b89b54d43d735fcee7760e93f22eaf815730214c4b"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 1048576,
+      "physical_record_check": {
+        "whole_pair_record_ids": 2097152,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        74637,
+        74600,
+        74403,
+        74694,
+        75054,
+        74869,
+        75109,
+        74683,
+        74432,
+        74999,
+        75312,
+        75333,
+        75183,
+        75268
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.10992564460703001,
+            -0.022487766197617165
+          ],
+          [
+            -0.010344878884707573,
+            -0.24535561682606383
+          ],
+          [
+            0.1392740109958679,
+            -0.17847272267654152
+          ],
+          [
+            -0.07115568300380642,
+            -0.2940332476200986
+          ],
+          [
+            0.2490357905311861,
+            0.028665484429679977
+          ],
+          [
+            0.7254971994616304,
+            -0.7268511705449552
+          ]
+        ],
+        [
+          [
+            -0.17220665439864888,
+            -0.026246093244984642
+          ],
+          [
+            0.06209033611108647,
+            -0.13348441941432893
+          ],
+          [
+            -0.30635085677639584,
+            -0.40028831538300225
+          ],
+          [
+            -0.34975517917570087,
+            0.19232400731012306
+          ],
+          [
+            -0.12051810038633223,
+            -0.5164558131081418
+          ],
+          [
+            0.2605394162639614,
+            -0.6308403038792949
+          ]
+        ],
+        [
+          [
+            0.11597153167200132,
+            -0.14131876363082105
+          ],
+          [
+            0.4265788742244939,
+            0.17119975437883742
+          ],
+          [
+            0.3439148870645732,
+            -0.2663197253165369
+          ],
+          [
+            -0.02187396155293489,
+            -0.11017750104122867
+          ],
+          [
+            0.8659121347956625,
+            -0.3707432902193576
+          ],
+          [
+            -0.5234207363797744,
+            -0.5487224981158548
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.022130449263360663,
+            -0.05193263644918639
+          ],
+          [
+            0.4547356079463152,
+            0.3314282479924562
+          ],
+          [
+            0.11877498362823405,
+            -0.32888071361918025
+          ],
+          [
+            -0.9254913038970363,
+            0.2336367333888143
+          ],
+          [
+            -0.1494428437959368,
+            -0.30468544843915446
+          ],
+          [
+            -0.5758224305210999,
+            0.5711826271355347
+          ]
+        ],
+        [
+          [
+            -0.03808614315266131,
+            0.17890129041354635
+          ],
+          [
+            0.016617618974913956,
+            -0.1680761086398703
+          ],
+          [
+            -0.26888091386065316,
+            0.3996269232779592
+          ],
+          [
+            -0.13968351406129323,
+            -1.072632680457577
+          ],
+          [
+            -0.46757444820873695,
+            -0.02246075779606331
+          ],
+          [
+            -0.07794238654679614,
+            0.6492656147983084
+          ]
+        ],
+        [
+          [
+            0.11344110028618444,
+            0.10982944212176463
+          ],
+          [
+            -0.5382148349244763,
+            -0.07907832394173736
+          ],
+          [
+            0.24326992683431958,
+            0.045999726528614754
+          ],
+          [
+            0.03971014608123602,
+            -0.1646177972195518
+          ],
+          [
+            -0.5074113434989389,
+            -0.19291478459602895
+          ],
+          [
+            0.06997667056165324,
+            -0.4472658144010845
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "winding",
+      "replicate": 27,
+      "seed": 202609511836,
+      "job": {
+        "N": 128,
+        "kind": "winding",
+        "replicate": 27,
+        "seed": 202609511836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_winding.bin",
+          "202609511836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_winding_r027.json.state",
+        "bytes": 5242892,
+        "sha256": "fe31c083255e5ff0ac045eca5daf5bcddb6b90a19da0ee44c102e3444777aab7"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 1048576,
+      "physical_record_check": {
+        "whole_pair_record_ids": 2097152,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        74559,
+        74900,
+        74772,
+        74785,
+        75173,
+        74990,
+        74613,
+        75072,
+        75253,
+        74828,
+        74971,
+        74992,
+        74774,
+        74894
+      ],
+      "initial_fields": [
+        [
+          [
+            0.3216137558904807,
+            -0.4356975598674531
+          ],
+          [
+            -0.2503731878420148,
+            -0.24534878835470936
+          ],
+          [
+            -0.018695140725064313,
+            0.5947700127711328
+          ],
+          [
+            -0.030401110973955925,
+            0.1805971880437897
+          ],
+          [
+            0.773033664408914,
+            -0.5552245572325121
+          ],
+          [
+            0.5240048917013552,
+            0.23053277332896807
+          ]
+        ],
+        [
+          [
+            0.05119401250235983,
+            -0.21524224407620085
+          ],
+          [
+            -0.23424644357139612,
+            -0.0621546015221463
+          ],
+          [
+            -0.09231068989235128,
+            0.11492117467101497
+          ],
+          [
+            0.0908802664684793,
+            0.18780911543283726
+          ],
+          [
+            0.11913068914719771,
+            0.6115814302859404
+          ],
+          [
+            -0.039988331028852714,
+            -0.5117327406254459
+          ]
+        ],
+        [
+          [
+            0.46519049500087234,
+            0.3424867345125505
+          ],
+          [
+            -0.20693668316218694,
+            0.19084224116107207
+          ],
+          [
+            -0.4221660790141737,
+            0.31230665370369093
+          ],
+          [
+            -0.6176061372991869,
+            -0.3752710815763594
+          ],
+          [
+            -0.17959892987165005,
+            -0.2348275015937796
+          ],
+          [
+            -0.2655978082066054,
+            0.7106054235987054
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.8502259937230978,
+            0.10796751392478651
+          ],
+          [
+            0.3404864531287625,
+            0.08209935643450739
+          ],
+          [
+            0.07158101935252435,
+            0.006732415850960655
+          ],
+          [
+            0.03896226086419596,
+            0.7785015612309693
+          ],
+          [
+            0.20339103308136952,
+            1.2331483025333996
+          ],
+          [
+            0.20417277806715117,
+            -0.016178830421408108
+          ]
+        ],
+        [
+          [
+            0.18832224733345307,
+            -0.19279358267621888
+          ],
+          [
+            0.16611047062218354,
+            -0.3316871531281844
+          ],
+          [
+            -0.4290918311268547,
+            -0.32996311577108584
+          ],
+          [
+            0.5480885558235083,
+            0.4594667677922264
+          ],
+          [
+            -0.13573829367866075,
+            -0.15183421247518772
+          ],
+          [
+            -0.4268479576088733,
+            0.587739789297121
+          ]
+        ],
+        [
+          [
+            -0.4836032104783127,
+            -0.11609255107890085
+          ],
+          [
+            -0.043969216312263,
+            0.0607168114247188
+          ],
+          [
+            -0.3736366443660408,
+            -0.05113608781998104
+          ],
+          [
+            0.44925520675183694,
+            0.058768976652104676
+          ],
+          [
+            -0.34404850617664107,
+            0.16209280247660512
+          ],
+          [
+            -0.513880339833509,
+            0.7950560567113694
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "irregular",
+      "replicate": 3,
+      "seed": 202609521812,
+      "job": {
+        "N": 128,
+        "kind": "irregular",
+        "replicate": 3,
+        "seed": 202609521812,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_irregular.bin",
+          "202609521812",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r003.json.state",
+        "bytes": 5242892,
+        "sha256": "8870ca946598be2877b16e8f660865cb74916f6763753c35170ade4c31d6bc5e"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 1048576,
+      "physical_record_check": {
+        "whole_pair_record_ids": 2097152,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        75441,
+        74928,
+        75219,
+        74470,
+        74609,
+        74749,
+        74689,
+        74958,
+        74469,
+        74802,
+        75272,
+        75397,
+        74783,
+        74790
+      ],
+      "initial_fields": [
+        [
+          [
+            -0.32710962293023904,
+            -0.24708687150806272
+          ],
+          [
+            -0.3371196004830721,
+            0.14360625759962872
+          ],
+          [
+            -0.06558652067787601,
+            0.14176338774929267
+          ],
+          [
+            -0.10979864580408785,
+            0.43655953203127373
+          ],
+          [
+            0.26527275937689554,
+            -0.1738843548850763
+          ],
+          [
+            -0.7311747837717258,
+            -0.629066263425827
+          ]
+        ],
+        [
+          [
+            -0.08221400269945914,
+            0.14784354971250363
+          ],
+          [
+            0.4281370281636006,
+            -0.29515633235339933
+          ],
+          [
+            0.23990283950372904,
+            0.1570516222984217
+          ],
+          [
+            1.074088293818313,
+            -0.8051443309968845
+          ],
+          [
+            0.2857104909823858,
+            -0.41061211364430433
+          ],
+          [
+            0.1647107696604789,
+            0.32439871872655646
+          ]
+        ],
+        [
+          [
+            0.05338209630100399,
+            0.09609953766179716
+          ],
+          [
+            0.02458943164512975,
+            0.03190718584096859
+          ],
+          [
+            0.32355801679229024,
+            0.2168772168905253
+          ],
+          [
+            0.6412892631797888,
+            0.7844422648339114
+          ],
+          [
+            -0.6767050757381792,
+            0.26219389822079664
+          ],
+          [
+            -0.9672373449403725,
+            -0.8693059361776072
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            -0.14219863339077665,
+            -0.008354331615463118
+          ],
+          [
+            0.0028131159938936945,
+            -0.20910654975364706
+          ],
+          [
+            -0.5085802235199678,
+            -0.08130435405636925
+          ],
+          [
+            -0.4610311792601504,
+            0.7099942808908638
+          ],
+          [
+            -0.7432948265133524,
+            0.2506584958603774
+          ],
+          [
+            0.6361600586841982,
+            0.11308425134448821
+          ]
+        ],
+        [
+          [
+            -0.21643101429013406,
+            0.1222222878772879
+          ],
+          [
+            0.39746981613458054,
+            0.18972876184198306
+          ],
+          [
+            -0.12225621962833015,
+            -0.21030296256086023
+          ],
+          [
+            -1.2133823190242872,
+            0.865097271949563
+          ],
+          [
+            0.22640279745365463,
+            0.591625782120569
+          ],
+          [
+            -0.11893155065864694,
+            -0.9722846606081106
+          ]
+        ],
+        [
+          [
+            0.02240598852004763,
+            0.20912433111760054
+          ],
+          [
+            0.5011264779754248,
+            -0.08591224612006663
+          ],
+          [
+            0.29237673498884753,
+            0.1427978563580363
+          ],
+          [
+            0.2718372429001629,
+            -0.1950993651890573
+          ],
+          [
+            0.18160797935790024,
+            -1.014792571088899
+          ],
+          [
+            -0.3525402392205652,
+            0.5334313869772495
+          ]
+        ]
+      ]
+    },
+    {
+      "N": 128,
+      "kind": "irregular",
+      "replicate": 27,
+      "seed": 202609521836,
+      "job": {
+        "N": 128,
+        "kind": "irregular",
+        "replicate": 27,
+        "seed": 202609521836,
+        "output": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json",
+        "command": [
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+          "run",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/geometry/N128_irregular.bin",
+          "202609521836",
+          "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json"
+        ]
+      },
+      "state_identity": {
+        "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/histories/N128_irregular_r027.json.state",
+        "bytes": 5242892,
+        "sha256": "20f86bad410427f7197e4769d238dcb0899f741c1374903cd5c4a253abe5fe13"
+      },
+      "full_initial_lookup_rng_matches": true,
+      "initial_color_draw_rejections": 0,
+      "keys_checked": 1048576,
+      "physical_record_check": {
+        "whole_pair_record_ids": 2097152,
+        "all_record_ids_distinct": true,
+        "geometric_partner_equals_antipodal_record_partner": true,
+        "black_white_record_roles_conserved": true
+      },
+      "color_counts": [
+        75552,
+        74412,
+        74789,
+        74388,
+        74709,
+        74378,
+        75095,
+        75437,
+        74953,
+        74806,
+        75156,
+        75377,
+        74982,
+        74542
+      ],
+      "initial_fields": [
+        [
+          [
+            0.14178033412508387,
+            -0.3892421741093971
+          ],
+          [
+            0.11525359408662275,
+            0.06508139609962821
+          ],
+          [
+            0.19281329753948467,
+            0.40731264717005145
+          ],
+          [
+            -0.08306138055395434,
+            -0.10506926645829084
+          ],
+          [
+            -0.17949896049467656,
+            0.19008752488498293
+          ],
+          [
+            -0.27264460782523425,
+            0.0479433642827925
+          ]
+        ],
+        [
+          [
+            -0.341181432645514,
+            0.14407381266359237
+          ],
+          [
+            0.2155614894718679,
+            0.11610291556324295
+          ],
+          [
+            -0.14481660369844,
+            -0.18591750027012993
+          ],
+          [
+            0.5478557083852098,
+            0.04754039294169132
+          ],
+          [
+            -0.23817553564559243,
+            0.783547876990331
+          ],
+          [
+            -0.4019152072247469,
+            0.20750436763887103
+          ]
+        ],
+        [
+          [
+            -0.02160320925280578,
+            0.23269849098646167
+          ],
+          [
+            -0.19258021979256323,
+            0.2101896995808091
+          ],
+          [
+            -0.023541534431384,
+            -0.09466745838338023
+          ],
+          [
+            0.052019597278144966,
+            0.44794318845382586
+          ],
+          [
+            0.25924904231120677,
+            -0.5708700139352272
+          ],
+          [
+            -0.14279442912194962,
+            0.16209791856864955
+          ]
+        ]
+      ],
+      "final_fields": [
+        [
+          [
+            0.34531122930898817,
+            -0.11142390866156565
+          ],
+          [
+            -0.07280781064858097,
+            -0.14168327505595532
+          ],
+          [
+            -0.0369522617976343,
+            -0.2906535068844549
+          ],
+          [
+            0.6587286851857097,
+            0.14714268481533688
+          ],
+          [
+            -0.6206929118254645,
+            0.31748994621766174
+          ],
+          [
+            -0.08083317898482932,
+            0.021882935821912128
+          ]
+        ],
+        [
+          [
+            -0.2577770687919394,
+            0.19924011418995685
+          ],
+          [
+            0.04764766052744461,
+            0.07617149505955034
+          ],
+          [
+            -0.11320360948901001,
+            0.39104245902765994
+          ],
+          [
+            0.05080108670703076,
+            -0.5736770474585724
+          ],
+          [
+            -0.38291182155576736,
+            -0.10511336727097051
+          ],
+          [
+            0.3390431495605274,
+            0.1427422070098332
+          ]
+        ],
+        [
+          [
+            0.03202776870988913,
+            -0.14740098396884552
+          ],
+          [
+            -0.0558658442670526,
+            -0.40792609128919455
+          ],
+          [
+            -0.1559046989198791,
+            -0.1037206806456547
+          ],
+          [
+            -0.2760098205292524,
+            -0.07326708887409011
+          ],
+          [
+            -0.07580505654530378,
+            0.059028809015757355
+          ],
+          [
+            -0.6807823775066679,
+            0.1679810442785215
+          ]
+        ]
+      ]
+    }
+  ]
+}

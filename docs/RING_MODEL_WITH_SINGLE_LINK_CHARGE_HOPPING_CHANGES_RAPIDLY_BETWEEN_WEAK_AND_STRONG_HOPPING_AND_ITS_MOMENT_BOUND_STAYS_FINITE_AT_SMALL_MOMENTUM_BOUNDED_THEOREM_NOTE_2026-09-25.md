@@ -35,8 +35,10 @@ tools apply, and one of them changes character.
   and 0.21 in the neighbouring steps). The printed values at `t = 0.5`
   move with size (0.438, 0.456, 0.470 on 4³, 6³, 8³), but open PR 9268
   later measured link expectations in this window that differ by up to
-  0.08 on 6³ between two guide penalties at these populations, so neither
-  that size dependence nor where the rise is steepest is established here.
+  0.08 on 6³ between two guide penalties at these populations, and open PR
+  9276 found the 6³ energy at `t = 0.35` spanning 2 per cent across five
+  penalties, so neither that size dependence nor where the rise is steepest
+  is established here.
 - **Weak hopping leaves the transverse response; strong hopping moves it.**
   On 6³ the susceptibility at the smallest momentum is `1.044`, `1.080`,
   `1.043` at `t = 0`, `0.25`, `0.5` (within errors) and `0.908`, `0.796` at
@@ -74,8 +76,9 @@ physical field.
   tuned on 4³ at each `t` for the smallest energy variance, in calibration
   runs outside the runner (`γ = 1.2, 0.7, 0.5, 0.3` at `t = 0.25, 0.5, 0.75, 1`);
   the first-order guess `½ ln(2M/t)` gave a larger variance and a visible
-  population bias there. The mixed energy estimator is exact for any guide;
-  the fixed-population bias depends on it. Fixed populations of 1920
+  population bias there. The mixed energy estimator is exact for any guide
+  only in the limit of an infinite population; at a fixed population its
+  bias depends on the guide (open PR 9276). Fixed populations of 1920
   walkers, time step 0.05, projection 30 per run, four seeds (three on 8³);
   errors are the larger of the seed scatter and the mean bin error, a
   heuristic.
@@ -87,7 +90,8 @@ None is adopted.
 1. **Sign-free.** In the `σ^z` basis every off-diagonal element of the
    Hamiltonian is `−g` (a flippable plaquette) or `−t` (a link), so the
    ground state has non-negative amplitudes and the projector's weights are
-   positive. The mixed energy estimator is exact for any guide.
+   positive. The mixed energy estimator is exact for any positive guide in the
+   limit of an infinite population.
 2. **Hellmann–Feynman.** `∂E_0/∂t = −Σ_l ⟨σ^x_l⟩` and
    `∂E_0/∂M = Σ_v ⟨Q_v²⟩`, so the link expectation and the charge density
    follow from energy differences.
@@ -207,7 +211,13 @@ At `t = 0.25` the momentum-independent part is a third of the ring part on
   9268 found link expectations on 6³ that still differ by 0.041–0.077 between
   penalties 0.8 and 1.1 at `t = 0.30–0.50`, and on 4³ by up to 0.032 at
   `t ≥ 0.4`; the values in that window here carry a guide dependence of that
-  size.
+  size. Open PR 9276 compares this projector with the exact full 2³ torus
+  (the single-link term on all 24 links): a penalty of 0.8 reproduces the
+  exact energies within 0.01, a penalty of 1.4 at `t = 0.5` sits 0.03–0.09
+  above them at every population tried, and on 6³ at `t = 0.35` the energy
+  spans 4.1 (2 per cent) across penalties 0.8–2.0. The 6³ link expectations
+  here are therefore guide-dependent diagnostics of this projector, not
+  estimates with a controlled error.
 - It claims no phase, transition, mass or limit: the rapid change is seen on
   three small tori at five hopping values and one charge mass.
 - The moment bound is an upper bound. Its momentum-independent part neither

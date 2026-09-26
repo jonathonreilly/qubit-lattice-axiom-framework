@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_energy_only_photon_bound_on_the_24_cubed_torus_2026_09_26.py
+runner_sha256: 7c0f8705572f16f9b8c93f1b8b7c53e32902494a6de9c8d87a893e2379d2f7a4
+timeout_sec: 14400
+exit_code: 0
+elapsed_sec: 9481.44
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.02751+-0.00305 (-0.3 sigma; 8 runs, scatter 0.0086, mean bin error 0.0066); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87066+-0.00301 (-0.5 sigma; 8 runs, scatter 0.0047, mean bin error 0.0085); 11 s
+[PASS] 16^3 at k = 2 pi/16 with dtau = 0.015 against open PR 9236's value at dtau = 0.05 (quoted: 1.038 +- 0.029): the resampling interval does not move chi beyond its errors :: chi 1.039+-0.022 (+0.0 sigma); u 0.28680; 8.41 ms per walker-time; 1465 s
+[PASS] the transverse susceptibility on 24^3 at k = 2 pi/24, the energy-only bounds and the comparator coupling (reported; open PR 9265: 0.990 +- 0.032 on 20^3 at pi/10) :: k = 0.2618: chi 0.831+-0.077 (seeds 0.908, 0.754), omega bound 0.3058 (/s 1.171), S_T bound 0.1271 (/s 0.487), alpha_G 0.3270; u 0.28513; 46.36 ms per walker-time; 9480 s
+TOTAL: PASS=3 FAIL=0 (9480 s)
+
+----- stderr -----
+

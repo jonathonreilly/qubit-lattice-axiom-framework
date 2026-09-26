@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/round_six_synthesis_one_exact_identity_per_block_of_the_fourth_campaign_2026_09_26.py
+runner_sha256: d6faab0447cb6c7d0e43f038741481ce9e7803c23bc8c86fa39aadc3fbd88f92
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 43.83
+status: ok
+----- stdout -----
+[PASS] the four-site Bloch matrix of the u = +1 comparator reproduces the 32-site torus levels at kappa = 0.3 (landed band note) :: 32 levels, max deviation 6.0e-15; 0 s
+[PASS] at f = (1/4, 3/4, 1/2), isotropic J = 1, the characteristic polynomial is (l^2 - 48 (1/2 - kappa)^2)(l^2 - 48 (1/2 + kappa)^2) (landed band note) :: exact: True; 0 s
+[PASS] on the line f = (x, 1 - x, f3) with J_x = J_y = 1, J_z = J: at w = 1, D = det H = 16 N^2 with N = J^2 + 4 c^2 kappa^2 - 2c - 4 kappa^2 - 2; on N = 0, C = (w d/dw)^2 D at w = 1 = -64 ((1 + c)(J + 2) - J^2)^2 / (1 + c), and C = N = 0 gives kappa^2 = J (J + 2) / (4 (4 + 2J - J^2)), 3/20 at J = 1 (landed composite-network band note) :: D identity True, C identity True, J = 1 value True; 1 s
+[PASS] at J = 1 the root of N = 0 in (-1, 1) is c = -(1 + 4 kappa^2) / (1 + (1 + 4 kappa^2 + 16 kappa^4)^(1/2)), tending to -1/2 (open PR 9300) :: exact: True; 1 s
+[PASS] 32 sites, kappa = 0.3: the flux-free and exception candidates' projected-comparator energies (-84.81708, -85.64104; 16 of 32 loops at -1), and the exception pattern repeated onto 64 sites lies above the flux-free energy there (landed flux-candidate note) :: flux-free -84.81708, exception -85.64104 (16 loops at -1); 64 sites: repeated -166.1920 vs flux-free -166.7786 (+0.5865); 2 s
+[PASS] the full 2^3 torus with the single-link term on all 24 links (2^24 states), t = 0.35, M = 2: Lanczos Ritz reference -9.631658548 (landed projector note) :: E0 -9.6316585480 (90 steps, last change 3.3e-12); 43 s
+TOTAL: PASS=6 FAIL=0 (43 s)
+
+----- stderr -----
+

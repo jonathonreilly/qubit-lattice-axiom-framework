@@ -78,3 +78,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-26 refresh after block 153
+1. The window 1/320 <= z < 10^40 at large beta for the two-valued menu: a better occupation bound, or a better contour count.
+2. The sphere menu at the neutral scale: another embedding of the empty state (block 126's route 2).
+3. A proof of the torus separation lemma at this scope, which retires premise A2.

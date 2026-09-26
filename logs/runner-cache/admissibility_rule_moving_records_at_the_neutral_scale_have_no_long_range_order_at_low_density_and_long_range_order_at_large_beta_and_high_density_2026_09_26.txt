@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_moving_records_at_the_neutral_scale_have_no_long_range_order_at_low_density_and_long_range_order_at_large_beta_and_high_density_2026_09_26.py
+runner_sha256: 35830978a1c042aa60c8a8eabc5de30c76f61af7c108dd4f4208766a0864254f
+input_fingerprint_sha256: 3fcb9413321692c1282f67561a10edb79a782d7995eb1aac8a5e888a303e109c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.10
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the law with vacancies, its weights and the menu are supplied; the memo does not define a time metric)
+PASS: B1 at the neutral scale c0 = 1/cosh(beta), c0 e^(beta s s') = 1 + tanh(beta) s s' for s s' = +-1; with an empty end the kernel is 1, so with vacancies it is 1 + t sigma sigma', sigma = n s in {-1, 0, 1}
+PASS: C1 reflection through the plane of sites x = 0 (also fixing x = 2) on the 4 x 2 torus with the pair on the side of two joined twice: for all 81 configurations of the fixed planes, the weight matrix over the two mirror columns (9 x 9) is symmetric and rank one with a positive diagonal, for the neutral kernel and for a general c, beta, z; so E[F theta(F)] is a sum of squares (exact)
+PASS: D1 for every k + l <= 6 occupied neighbour ends, S = (1+t)^k (1-t)^l + (1-t)^k (1+t)^l <= (1+t)^6 + (1-t)^6 <= 64 on [0, 1] (nonnegative basis coefficients): P(x occupied | rest) = zS/(1 + zS) <= 64 z
+PASS: D2 given the occupied set, contents decouple across clusters (<s0 s3> = 0 across two clusters, <s0 s1> = t inside one); the path sum p + sum_n 6 5^(n-1) p^(n+1) = p + 6 p^2/(1 - 5p) for p < 1/5
+PASS: D3 on the 2 x 2 x 2 torus with the pairs joined twice, exactly at (z, t) = (1/400, 9/10) and (1/330, 1/2): sum_x <sigma_0 sigma_x> <= p + 6p^2/(1 - 5p), p = 64 z
+PASS: E1 for all 3^8 cube patterns at (t, z) = (1/3, 5) and (9/10, 1/7): the cell weight is z^(8-V) (1 - t)^(2m) (1 + t)^(2(12-m-k)) (V empty sites, m opposite edges, k edges at an empty site) and w_tau/w_+ <= z^(-V) ((1 - t)/(1 + t))^(2m), the eighth power of A^V U^m; the 2-periodic dissemination on the 4^3 torus has weight w_tau^(N/8) exactly (five patterns)
+PASS: E2 all 3^8 patterns of the 2 x 2 x 2 cube: 6559 bad ones; the pattern polynomial P(A, U) = 16A + 16U^3 + 48AU^2 + 56A^2 + 30U^4 + ... has 42 terms, all with positive coefficients (so it grows with A and U)
+PASS: H1 sum_n n x^(n-1) = 1/(1 - x)^2, so the contour sum is 2 eps/(1 - 676 eps)^2; at A = 10^-5, U = 10^-2 (z >= 10^40, 1 - tanh(beta) <= 10^-8) eps <= 1/2704 and 1 - 2[2 eps + 2 eps/(1 - 676 eps)^2] > 998/1000
+PASS: H2 counts on Z^3: self-avoiding paths of n <= 5 steps number at most 6 5^(n-1); *-connected sets of n <= 3 cubes through a given cube number at most 26^(2(n-1)) = 676^(n-1) (there are 26 and 711)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the neutral kernel c0 e^(beta s s') = 1 + t s s' symbolically
+per_site: executed - the occupation bound for every neighbourhood of k + l <= 6 occupied ends, by basis certificates
+per_mode: executed - cluster decoupling, the path sum, and the exact 2 x 2 x 2 torus check of the low-density bound
+per_block: executed - reflection positivity on the 4 x 2 torus for every plane configuration; all 3^8 cube patterns; dissemination weights on the 4^3 torus
+lattice_wide: checked and not executed - every even torus by proof; T2 given the chessboard estimate and the torus separation lemma (premises A1, A2)
+PASS: G1 the five N5 resolution lines are printed
+scope: block 126's static vacancy law, two-valued menu, at the neutral scale; no long-range order for z < 1/320 at every beta (exact); long-range order at large beta and high density given the chessboard estimate and the torus separation lemma; harvest of probe #9260, line-checked by the supervisor, unrefereed by another family; nothing adopted
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

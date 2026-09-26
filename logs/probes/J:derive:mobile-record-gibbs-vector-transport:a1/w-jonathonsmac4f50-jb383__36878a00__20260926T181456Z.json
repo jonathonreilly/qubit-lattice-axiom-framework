@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:mobile-record-gibbs-vector-transport:a1",
+ "type": "judgment",
+ "lane": "mobile-record-research",
+ "worker": "w-jonathonsmac4f50-jb383",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/mobile-record-gibbs-vector-transport/w-jonathonsmac4f50-jb383/check.py",
+ "seed": 46496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "36878a00",
+ "started_utc": "20260926T181456Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "PARTIAL (independent verification, no new result): #8567 Part B's sixteen-word KLS certificate holds (symbolic) and exact master-equation stationarity holds on all rings N = 4..9; Part A's plaquette circulation preserves a random finite-range Gibbs law and its stationary content current vanishes exactly (3x3 torus). Explicit 3D candidate (KLS along x, transverse coupling Jp): Gibbs-stationary iff Jp = 0 (exact witness), and at Jp = 0 it is a stack of independent chains with no transverse correlation and no cubic covariance - first failed condition for the research target"
+ },
+ "review": "Cross-family independent check of Codex #8567: KLS word certificate (symbolic) and exact ring stationarity N=4..9; plaquette circulation Gibbs invariance and zero contractible-cycle current (exact small systems). 3D candidate (stacked KLS, transverse coupling): stationary iff Jp=0, where transverse correlation and cubic covariance fail. No new result claimed.",
+ "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Construct a three-dimensional local permanent-record process having both a nontrivial correlated vector Gibbs state and nonzero Euler vector transport, or prove a scoped obstruction for a precisely specified generator class. The contractible-cycle zero-current result and one-dimensional KLS winding countercontrol do not prove a universal incompatibility. Formation selects an unknown count mixture; do not substitute a desired Gibbs grand law. Decisive first check and completion: Independently reproduce the finite-word KLS stationarity certificate and the cancellation of contractible-cycle current. Test one explicit three-dimensional candidate, reporting its first failed condition if it fails. Related tasks: .",
+ "stdout_sha256": "3721aacf387af9b118cbd48bae93be3914dfdfed07c3b0b2762c5ed64746d903",
+ "stdout_tail": "4 records of class 1: stationary class-1 current of irreversible plaquette circulations plus Metropolis swaps is exactly zero (unwrapped displacement) :: [Fraction(0, 1), Fraction(0, 1)]\n== C an explicit three-dimensional candidate: KLS along x with transverse coupling\nPASS C1 transverse coupling Jp = 0 (zp = 1): the Gibbs law is stationary on every one of the 12870 configurations with 8 records on the 4x2x2 torus (independent chains)\nPASS C2 transverse coupling Jp != 0 (zp = 3): exact nonzero stationarity residual at an explicit configuration (the candidate's first failed condition) :: state (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1) residual -1813985280\n   C3 (PROVED in ATTEMPT, not a finite check): at Jp = 0 the grand Gibbs weight factorises over the Ly*Lz x-chains, so transverse covariances vanish in the grand law, and the drive along +x is not invariant under exchanging axes\n== done in 1s\nSUMMARY: PARTIAL (independent verification, no new result): #8567 Part B's sixteen-word KLS certificate holds (symbolic) and exact master-equation stationarity holds on all rings N = 4..9; Part A's plaquette circulation preserves a random finite-range Gibbs law and its stationary content current vanishes exactly (3x3 torus). Explicit 3D candidate (KLS along x, transverse coupling Jp): Gibbs-stationary iff Jp = 0 (exact witness), and at Jp = 0 it is a stack of independent chains with no transverse correlation and no cubic covariance - first failed condition for the research target\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb383",
+  "at_utc": "20260926T181457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

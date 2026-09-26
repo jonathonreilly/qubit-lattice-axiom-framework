@@ -1,0 +1,14 @@
+== K Part B: the KLS certificate
+PASS K1 all sixteen words: F(a,b,c,d) = h(a,b,c) - h(b,c,d) for symbolic z, kappa (the draft's table)
+PASS K2 exact master-equation stationarity of the Gibbs law on every configuration of rings N = 4..9 (z in {2, 1/3, 5/2}, three fugacities) - a different method from the word certificate
+PASS K3 the class-1 clockwise current per bond is strictly positive (N = 8, z = 2, grand law at fugacity 1) :: 1076/6621
+PASS K4 det T = e^mu (e^J - 1) != 0 for J != 0, so u = Lambda2/Lambda != 0 and Cov(sigma_0, sigma_1) != 0
+== P Part A: plaquette circulation
+PASS P1 the plaquette circulation with a_+- = nu(1 +- eps chi), chi orbit-invariant, and rates a exp(H_S) is stationary for a random finite-range Gibbs law (exact, 150 random states of a 6-site system with 3 labels)
+PASS P2 3x3 torus, 4 records of class 1: stationary class-1 current of irreversible plaquette circulations plus Metropolis swaps is exactly zero (unwrapped displacement) :: [Fraction(0, 1), Fraction(0, 1)]
+== C an explicit three-dimensional candidate: KLS along x with transverse coupling
+PASS C1 transverse coupling Jp = 0 (zp = 1): the Gibbs law is stationary on every one of the 12870 configurations with 8 records on the 4x2x2 torus (independent chains)
+PASS C2 transverse coupling Jp != 0 (zp = 3): exact nonzero stationarity residual at an explicit configuration (the candidate's first failed condition) :: state (0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1) residual -1813985280
+   C3 (PROVED in ATTEMPT, not a finite check): at Jp = 0 the grand Gibbs weight factorises over the Ly*Lz x-chains, so transverse covariances vanish in the grand law, and the drive along +x is not invariant under exchanging axes
+== done in 1s
+SUMMARY: PARTIAL (independent verification, no new result): #8567 Part B's sixteen-word KLS certificate holds (symbolic) and exact master-equation stationarity holds on all rings N = 4..9; Part A's plaquette circulation preserves a random finite-range Gibbs law and its stationary content current vanishes exactly (3x3 torus). Explicit 3D candidate (KLS along x, transverse coupling Jp): Gibbs-stationary iff Jp = 0 (exact witness), and at Jp = 0 it is a stack of independent chains with no transverse correlation and no cubic covariance - first failed condition for the research target

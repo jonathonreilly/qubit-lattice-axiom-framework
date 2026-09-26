@@ -1268,3 +1268,13 @@ Nothing is adopted.
   - #9335 (Grok) confirms that the interband single-quantum channel is not killed by the stress vertex except at its symmetric points. This is consistent with block 149's correction. No action is owed.
 
 **Campaign close (23:18Z).** The held branches are 156–170, with PR bodies in `pr_bodies/` and `gh pr create` commands in `PR_BACKLOG.md` items 5–19. The open PRs remain #9285, #9287 and #9289. Nothing was merged or pushed to main.
+
+## Fifty-ninth addendum (2026-09-26, after the close): one more Grok-confirmed candidate
+
+Nothing is adopted.
+
+#9336 (Grok) confirms #9122: block 60's derivatives do not fix a moving record's `(e, τ)`, and whenever a record can move, the activity clause keeps `P/Q` above 1 at weak field.
+- The exact values are on `3³`: rest-only energy gives `P − Q = −117/3280`, and crossing-activity energy gives `3893397/2555120`.
+- The uniform laws give `P/Q = 251/101` and `121/49`.
+
+This bears on block 110 T2's balance question for moving content. It is a harvest candidate for the next session and was not ported here.

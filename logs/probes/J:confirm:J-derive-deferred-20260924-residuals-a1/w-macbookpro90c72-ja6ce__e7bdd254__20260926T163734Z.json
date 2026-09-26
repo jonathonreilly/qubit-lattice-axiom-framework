@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-residuals-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja6ce",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-residuals/referee_w-macbookpro90c72-ja6ce/check.py",
+ "seed": 40654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e7bdd254",
+ "started_utc": "20260926T163734Z",
+ "elapsed_s": 9.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. On the rotor cube the bright-from-dark block has flat rank 23. Exactly eight of the 32 half-period phases are dark, with kernel dimensions 1, 1, 2, 1, 1, 2, 4, 2. Each pencil has full column rank, and the three inputs overlap every kernel by 1/12, 1/12, 1/6 per dimension. Twenty unit pivots leave a 52 by 4 residual whose last-column branch is only (-1,-1,1,1,-1). The exponent 5/2 is exact only if no dark phase lies off that lattice; that exclusion, and the 300-start search, were not proved."
+ },
+ "review": "Eight of the 32 half-period phases are dark, with dimensions 1, 1, 2, 1, 1, 2, 4, 2; each pencil is full rank and the inputs overlap by 1/12, 1/12, 1/6 per dimension. The 52 by 4 residual's last-column branch is only (-1,-1,1,1,-1). The exponent 5/2 stays conditional on no off-lattice dark phase.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-residuals:a1/; its files are probes/work/derive/deferred-20260924-residuals/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-residuals/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "4b57bbaa77cbfca5559db71d15d6fe128f5671fd1da4238c8d1182ccc1fefcfd",
+ "stdout_tail": "PASS S invariants: grades 36/96/36, 24 dark and 72 bright words, flat rank 23, uniform kernel\nPASS H phases: exactly the eight listed phases are dark, dims 1,1,2,1,1,2,4,2; pencils are full rank; overlaps are 1/12, 1/12, 1/6 per dimension\nPASS G reduction: 20 unit pivots leave a 52 by 4 residual, and one 3 by 3 minor is the stated product\nPASS G last column: the last-column branch forces z = (-1,-1,1,1,-1)\nSUMMARY: confirmed partial. On the rotor cube the bright-from-dark block has flat rank 23. Exactly eight of the 32 half-period phases are dark, with kernel dimensions 1, 1, 2, 1, 1, 2, 4, 2. Each pencil has full column rank, and the three inputs overlap every kernel by 1/12, 1/12, 1/6 per dimension. Twenty unit pivots leave a 52 by 4 residual whose last-column branch is only (-1,-1,1,1,-1). The exponent 5/2 is exact only if no dark phase lies off that lattice; that exclusion, and the 300-start search, were not proved.\nHIT: confirmed - exactly eight half-period phases are dark, with dimensions 1, 1, 2, 1, 1, 2, 4, 2, all nondegenerate and overlapped by 1/12, 1/12, 1/6 per dimension; the last-column branch of the 52 by 4 residual is only (-1,-1,1,1,-1), while the exponent 5/2 stays conditional on no off-lattice dark phase\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja6ce",
+  "at_utc": "20260926T163751Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Eight half-period phases are dark with dimensions 1, 1, 2, 1, 1, 2, 4, 2. Pencils are full rank and overlaps are 1/12, 1/12, 1/6 per dimension. The exponent 5/2 remains conditional on no off-lattice dark phase.",
+  "by": "w-macbookpro90c72-ja6ce",
+  "at_utc": "20260926T163751Z"
+ }
+}

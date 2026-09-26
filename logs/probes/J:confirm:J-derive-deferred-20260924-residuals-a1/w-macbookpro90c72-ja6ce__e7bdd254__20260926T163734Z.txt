@@ -1,0 +1,6 @@
+PASS S invariants: grades 36/96/36, 24 dark and 72 bright words, flat rank 23, uniform kernel
+PASS H phases: exactly the eight listed phases are dark, dims 1,1,2,1,1,2,4,2; pencils are full rank; overlaps are 1/12, 1/12, 1/6 per dimension
+PASS G reduction: 20 unit pivots leave a 52 by 4 residual, and one 3 by 3 minor is the stated product
+PASS G last column: the last-column branch forces z = (-1,-1,1,1,-1)
+SUMMARY: confirmed partial. On the rotor cube the bright-from-dark block has flat rank 23. Exactly eight of the 32 half-period phases are dark, with kernel dimensions 1, 1, 2, 1, 1, 2, 4, 2. Each pencil has full column rank, and the three inputs overlap every kernel by 1/12, 1/12, 1/6 per dimension. Twenty unit pivots leave a 52 by 4 residual whose last-column branch is only (-1,-1,1,1,-1). The exponent 5/2 is exact only if no dark phase lies off that lattice; that exclusion, and the 300-start search, were not proved.
+HIT: confirmed - exactly eight half-period phases are dark, with dimensions 1, 1, 2, 1, 1, 2, 4, 2, all nondegenerate and overlapped by 1/12, 1/12, 1/6 per dimension; the last-column branch of the 52 by 4 residual is only (-1,-1,1,1,-1), while the exponent 5/2 stays conditional on no off-lattice dark phase

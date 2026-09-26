@@ -1,0 +1,32 @@
+================================================================================================
+ABSTRACT HERMITIAN MATRIX-TRACE DEFICIT CERTIFICATE
+Arithmetic: exact symbolic plus independent numerical reconstruction
+Mode: normal
+================================================================================================
+
+------------------------------------------------------------------------------------------------
+Part A: exact derivative, Gram, remainder, and rescaling route
+------------------------------------------------------------------------------------------------
+  [PASS (A)] A1 packet has positive dimension
+  [PASS (A)] A2 supplied packet satisfies Hermiticity and the half-Gram relation
+  [PASS (A)] A3 assembled A is Hermitian
+  [PASS (A)] A4 Gram contraction gives Tr(A^2)=F2/2  (f1**2/2 + f2**2/2 + f3**2/2)
+  [PASS (A)] A5 D(0)=0
+  [PASS (A)] A6 D'(0)=0
+  [PASS (A)] A7 D''(0)=Tr(A^2)/n=F2/(2n)  (f1**2/4 + f2**2/4 + f3**2/4)
+  [PASS (A)] A8 [x^2]D=D''(0)/2=F2/(4n)  (f1**2/8 + f2**2/8 + f3**2/8)
+  [PASS (A)] A9 the scalar deficit has fourth derivative -cos(y)
+  [PASS (A)] A10 the fourth derivative is globally bounded by one on the real line  (1-cos(y)^2=sin(y)^2>=0)
+  [PASS (A)] A11 the spectral fourth moment equals Tr(A^4)
+  [PASS (A)] A12 zero A saturates the identities and bound at zero
+  [PASS (A)] A13 n=1 is allowed when the supplied Gram relation holds
+  [PASS (A)] A14 tracelessness is unnecessary for the real deficit derivative  (Tr(A)=1, D'(0)=0)
+  [PASS (A)] A15 the n=1 packet has D''(0)=1 and [x^2]D=1/2
+  [PASS (A)] A16 its complex deficit retains the nonzero linear coefficient -i  (-I)
+  [PASS (A)] A17 extracting x^2*F2 after substitution in w D(sx) gives w*s^2/(4n)  (term=F2*s**2*w*x**2/(4*n), coefficient=s**2*w/(4*n))
+  [PASS (A)] A18 scalar rescaling is quadratic in s
+
+================================================================================================
+TOTAL: PASS=18 FAIL=0
+================================================================================================
+VERDICT: native matrix Taylor, global remainder, and rescaling theorem verified.

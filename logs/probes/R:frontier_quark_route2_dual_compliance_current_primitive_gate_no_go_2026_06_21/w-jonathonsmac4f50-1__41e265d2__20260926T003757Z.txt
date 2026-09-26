@@ -1,0 +1,89 @@
+Route-2 dual-compliance current primitive-bank gate
+Status: no-go for current primitive-bank p=2 gate; not an audit verdict.
+TRACE: negative_route_pruning
+
+PART 1: current primitive-bank authority markers
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md exists
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: class-A definition only
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: **not** a positive theorem
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: physical tensor primitive
+PASS: S3_TIME_BILINEAR_TENSOR_PRIMITIVE_NOTE.md contains marker: endpoint-fitted, not first-principles
+FAIL: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md exists
+FAIL: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: membership-but-not-uniqueness
+FAIL: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: rho_E = beta_E / alpha_E
+FAIL: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: P(rho_E)
+FAIL: S3_TIME_READOUT_PRIMITIVE_BRIDGE_ASSESSMENT_BOUNDED_NOTE_2026-06-12.md contains marker: not derived by the cited one-hop authorities
+FAIL: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md exists
+FAIL: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: fix the readout **norm**
+FAIL: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: readout's **direction**
+FAIL: ROUTE2_READOUT_RECORD_POSITIVITY_DOES_NOT_FIX_RHO_E_NARROW_NO_GO_NOTE_2026-06-08.md contains marker: Selecting `rho_E` requires a shell-vs-center
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md exists
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: inverse-square characterization
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: realized by no named functional
+PASS: QUARK_ROUTE2_QE_COVARIANCE_SCHUR_QUADRATIC_NO_GO_NARROW_NOTE_2026-06-14.md contains marker: quadratic-invariant route is closed
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md exists
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: P(rho_E)
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: irreducible missing map entry
+PASS: QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md contains marker: beta_E / alpha_E = 21/4
+
+PART 2: current primitive candidate inventory
+PASS: candidate classified: bilinear_K_R_definition
+      class=definition_only, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: eta_floor_endpoint_affine
+      class=endpoint_fitted_membership, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: record_positivity_registration
+      class=norm_or_bound, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: generic_quadratic_Oh_invariant
+      class=free_reduced_matrix_element, p=None, rho=None, authority=True, closes_p2=False
+PASS: candidate classified: uniform_scaling
+      class=wrong_exponent_control, p=0, rho=-1, authority=False, closes_p2=False
+PASS: candidate classified: one_power_dual_scaling
+      class=wrong_exponent_control, p=1, rho=3/2, authority=False, closes_p2=False
+PASS: candidate classified: ordinary_projector_square
+      class=wrong_exponent_control, p=-2, rho=-34/9, authority=False, closes_p2=False
+PASS: candidate classified: dual_compliance_p2
+      class=new_premise, p=2, rho=21/4, authority=False, closes_p2=True
+PASS: no current-authority candidate closes p=2
+      []
+PASS: only the explicitly new dual-compliance premise closes p=2
+      ['dual_compliance_p2']
+
+PART 3: wrong-exponent arithmetic
+PASS: p=2 gives rho_E=21/4
+      21/4
+PASS: p=0 does not give rho_E=21/4
+      -1
+PASS: p=1 does not give rho_E=21/4
+      3/2
+PASS: p=-2 does not give rho_E=21/4
+      -34/9
+PASS: tested wrong controls are exact rational alternatives
+
+PART 4: gate no-go statement
+PASS: four current primitive classes are considered
+PASS: each primitive class has a named blocker
+PASS: none of the blockers is a numerical-comparator objection only
+PASS: positive reopen condition is precise
+
+PART 5: companion note hygiene
+FAIL: QUARK_ROUTE2_DUAL_COMPLIANCE_CURRENT_PRIMITIVE_GATE_NO_GO_NOTE_2026-06-21.md exists
+FAIL: note contains marker: **Actual current-surface status:** no-go
+FAIL: note contains marker: This is not an audit verdict
+FAIL: note contains marker: negative_route_pruning
+FAIL: note contains marker: does not close the parent S3/Route-2 gate
+FAIL: note contains marker: does not prove arbitrary future nonlinear observables impossible
+FAIL: note contains marker: derive a same-domain dual-compliance p=2 primitive
+PASS: note avoids overclaim: parent closure
+PASS: note avoids overclaim: endpoint derivation
+PASS: note avoids overclaim: future impossibility
+PASS: note avoids overclaim: bare retained
+
+PART 6: N5 execution certificate
+per_element: each of the 8 bank entries is classified on its own row with its own class, exponent, exact rho and two flags, and the four exponent-carrying rows are evaluated individually to rho_E=-1 at p=0, 3/2 at p=1, -34/9 at p=-2 and 21/4 at p=2 -- note that the free-text reason string on the p=-2 row reads -14/9 while the value this runner computes and prints is -34/9.
+per_site: checked and not executed -- nothing spatial is reconstructed in this file at all, since the channel leverage enters rho_from_p as the hard-coded Fraction 2/3 rather than being rebuilt from a star, so there is no arm, no center, no coordinate and consequently no object that a site-resolved gate statement could be attached to.
+per_mode: resolved, but only through the single E-over-T ratio the law is written in -- the T channel is held at q_T=5/6 while the E channel receives q_E=q_T*(w_E/w_T)^(-p), so the two bright channels are distinguished exactly once per exponent and no separate per-channel amplitude, norm or direction is ever evaluated on either of them.
+per_block: checked, and what is resolved here is an inventory rather than any amplitude -- the bank is partitioned into 6 named classes (definition_only, endpoint_fitted_membership, free_reduced_matrix_element, new_premise, norm_or_bound, wrong_exponent_control), four current-authority classes are each paired with one named blocker, and the closure query returns an empty current-authority list against the single new-premise entry dual_compliance_p2.
+lattice_wide: checked and not executed -- this gate never constructs a lattice, a volume or a limit, and its widest statement is a text-marker sweep across five authority documents plus the companion note; the whole-surface theorem that would be needed is the one the note names as still owed, a same-domain dual-compliance p=2 source/readout law.
+
+TOTAL: PASS=36, FAIL=16
+VERDICT: current primitive-bank p=2 gate checks failed.

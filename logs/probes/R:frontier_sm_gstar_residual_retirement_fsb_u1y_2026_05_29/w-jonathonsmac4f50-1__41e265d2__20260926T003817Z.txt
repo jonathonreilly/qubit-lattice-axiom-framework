@@ -1,0 +1,94 @@
+
+----------------------------------------------------------------------------------------
+1. R-FSB: 7/8 fermion thermal weight from direct thermal integrals
+----------------------------------------------------------------------------------------
+  [PASS] Gamma(4) = 6 (6)
+  [PASS] zeta(4) = pi^4/90 (pi**4/90)
+  [PASS] eta(4) = (7/8) zeta(4) (7/8)
+  [PASS] Bose integral I_B = pi^4/15 (pi**4/15)
+  [PASS] Fermi integral I_F = 7*pi^4/120 (7*pi**4/120)
+  [PASS] direct thermal-integral ratio I_F/I_B = 7/8 (7/8)
+  [PASS] rho_B per dof = pi^2/30 * T^4 (pi**2/30)
+  [PASS] rho_F per dof = (7/8) rho_B (7/8)
+  [PASS] g_* consumes only the dimensionless direct thermal 7/8 ratio (7/8 = 0.875)
+
+----------------------------------------------------------------------------------------
+2. R-U1Y: one-abelian-factor gauge-rank dof count from retained gl(3)+gl(1)
+----------------------------------------------------------------------------------------
+  [PASS] dim adj(SU(3)) = N_c^2 - 1 = 8 (retained cl3_color_automorphism N_c=3) (dim adj SU(3) = 8)
+  [PASS] dim adj(SU(2)) = 2^2 - 1 = 3 (retained native_gauge Cl(3) bivectors) (dim adj SU(2) = 3)
+  [PASS] exactly ONE abelian factor: gl(1) summand of retained gl(3)+gl(1) commutant (abelian factors = 1)
+  [PASS] gauge generator count 8 + 3 + 1 = 12 (generators = 12)
+  [PASS] gluon dof = 8 * 2 = 16 (16)
+  [PASS] SU(2)_L dof = 3 * 2 = 6 (6)
+  [PASS] abelian (one-factor) dof = 1 * 2 = 2 (2)
+  [PASS] gauge dof subtotal 16 + 6 + 2 = 24 (gauge dof = 24)
+  [PASS] gauge dof = generator count * 2 (each generator one massless vector)
+  [PASS] transverse-pol factor 2 stays the SEPARATE residual R-POL (not retired here)
+
+----------------------------------------------------------------------------------------
+3. Separation: abelian dof = rank only; hypercharge VALUES not a dof input
+----------------------------------------------------------------------------------------
+  [PASS] abelian dof = 2 under SM hypercharge eigenvalue normalization (dof = 2)
+  [PASS] abelian dof = 2 under arbitrary nonzero eigenvalue rescaling (dof = 2)
+  [PASS] dof count is INVARIANT under hypercharge eigenvalue normalization (values not an input)
+  [PASS] the eigenvalue sets differ (so the invariance is non-trivial)
+  [PASS] both eigenvalue sets describe ONE abelian factor (rank 1) -> same dof
+
+----------------------------------------------------------------------------------------
+4. Note / authority cross-checks and retirement bookkeeping
+----------------------------------------------------------------------------------------
+  [PASS] authority file exists: NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] authority file exists: GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] authority file exists: GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] authority file exists: HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] authority file exists: AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md
+  [PASS] authority file exists: STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
+  [PASS] authority file exists: HYPERCHARGE_IDENTIFICATION_NOTE.md
+  [PASS] retained source cited as markdown link (load-bearing edge): NATIVE_GAUGE_CLOSURE_NOTE.md
+  [PASS] retained source cited as markdown link (load-bearing edge): GRAPH_FIRST_SU3_INTEGRATION_NOTE.md
+  [PASS] context/separated statement is plain-text (non-load-bearing): GSTAR_THERMAL_SEVEN_EIGHTHS_STEFAN_BOLTZMANN_BRIDGE_NARROW_THEOREM_NOTE_2026-06-06.md
+  [PASS] context/separated statement is plain-text (non-load-bearing): HIERARCHY_SEVEN_EIGHTHS_RIEMANN_DIRICHLET_DIMENSIONAL_ANCHOR_NARROW_THEOREM_NOTE_2026-05-10.md
+  [PASS] context/separated statement is plain-text (non-load-bearing): AXIOM_FIRST_FERMIONIC_STEFAN_BOLTZMANN_NARROW_THEOREM_NOTE_2026-05-26.md
+  [PASS] context/separated statement is plain-text (non-load-bearing): STANDARD_MODEL_HYPERCHARGE_UNIQUENESS_THEOREM_NOTE_2026-04-24.md
+  [PASS] context/separated statement is plain-text (non-load-bearing): HYPERCHARGE_IDENTIFICATION_NOTE.md
+  [PASS] note marks R-FSB source-local direct bounded closure
+  [PASS] note marks R-U1Y retired-to-retained-sourced
+  [PASS] remaining residual named: R-HIGGS
+  [PASS] remaining residual named: R-POL
+  [PASS] remaining residual named: R-MATTER
+  [PASS] remaining residual named: R-SPIN
+
+----------------------------------------------------------------------------------------
+5. Ledger status cross-check (optional)
+----------------------------------------------------------------------------------------
+  [SKIP] audit ledger not present; status cross-check skipped
+
+----------------------------------------------------------------------------------------
+6. No-overclaim / forbidden-import / vocabulary scan
+----------------------------------------------------------------------------------------
+  [PASS] no bare '**Status:** retained/promoted' line
+  [PASS] claim type is bounded_theorem
+  [PASS] status authority is independent audit lane only
+  [PASS] note states full fermionic-SB law NOT claimed derived
+  [PASS] note states hypercharge values NOT claimed derived
+  [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'link unitar' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'monte carlo' (1 occurrence(s))
+  [PASS] no load-bearing forbidden import 'best-fit' (0 occurrence(s))
+  [PASS] no load-bearing forbidden import 'chi-squared fit' (0 occurrence(s))
+  [PASS] no load-bearing forbidden import 'fitted to data' (0 occurrence(s))
+  [PASS] no new-vocabulary string 'algebraic universality'
+  [PASS] no new-vocabulary string 'two-class framing'
+  [PASS] no new-vocabulary string 'lattice-realization-invariant by definition'
+  [PASS] no new-vocabulary string '(CKN)'
+
+----------------------------------------------------------------------------------------
+SCORECARD
+----------------------------------------------------------------------------------------
+  PASS = 61
+  FAIL = 0
+
+RESULT: PASS=61 FAIL=0

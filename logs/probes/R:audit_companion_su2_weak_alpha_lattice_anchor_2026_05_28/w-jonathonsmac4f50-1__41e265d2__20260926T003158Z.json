@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_su2_weak_alpha_lattice_anchor_2026_05_28.py",
+ "seed": 82718,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003158Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "be4cba429cf381e2f28757243f2de117fe2176f6623d70d2dc2af87e2638f6ff",
+ "stdout_tail": "ASS (A)] (numeric-readout corollary) alpha_2 |_lattice numeric 14 sig figs: 0.019894367886...  (sympy num approx = 0.019894367886487)\n  [PASS (A)] (numeric-readout corollary) 1 / alpha_2 |_lattice numeric 14 sig figs: 50.26548245744...  (sympy num approx = 50.265482457437)\n\n----------------------------------------------------------------------------------------\nPart 11: round-trip checks for the alpha anchor and fine-structure convention\n----------------------------------------------------------------------------------------\n  [PASS (A)] round-trip 1: alpha_2 |_lattice * 16 pi = 1 (exact)  (alpha_2 * 16 pi = 1)\n  [PASS (A)] round-trip 2: 4 pi * alpha_2 |_lattice = g_2^2 |_lattice = 1/4  (4 pi * alpha_2 = 1/4)\n  [PASS (A)] round-trip 3: beta_W * g_2^2 |_lattice = 2 * N = 4 at N = 2  (beta_W * g_2^2 = 4)\n\n----------------------------------------------------------------------------------------\nPart 12: consistency with framework b_2 = 19/6 form\n----------------------------------------------------------------------------------------\n  [PASS (A)] consistency: b_2/(2 pi) at b_2 = 19/6 equals 19/(12 pi)  (19/6 / (2 pi) = 19/(12*pi))\n\n========================================================================================\nTOTAL: PASS=26 FAIL=0\nVERDICT: bounded narrow-theorem anchor passes; alpha_2 |_lattice = 1 / (16 pi)\nfollows from the four named inputs by exact sympy rational + pi arithmetic.\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003159Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

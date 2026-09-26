@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_records_objectivity_conditional_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_records_objectivity_conditional_2026_05_31.py",
+ "seed": 83089,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003809Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9898195f49748a13713e26436b81584625218d827903228beb9821aa4d3f10d",
+ "stdout_tail": "==============================================\n[PASS] F4.1 dephasing fixed point = maximally-mixed I/3 (trace, per-dimension) -> the relaxation comparison selects the Q=1 / asymmetry channel, NOT objectivity-max\n       objectivity-MAXIMIZATION (-> r=1/2) is a SEPARATE named input, not the dephasing/trace comparison (-> trace -> Q=1)\n\n========================================================================================\nF5 \u2014 both conditional hypotheses are unforced\n========================================================================================\n[PASS] F5.1 (i) equal-block HS metric = the cited isotype-split freedom; (ii) objectivity-max is an extra named input -> Q=2/3 is conditional, not forced\n       koide_frobenius_isotype_split_uniqueness: weight not forced here; objectivity-max remains an explicit input.\n\n========================================================================================\nSUMMARY\n========================================================================================\n  17/17 checks passed\n\n  THE HONEST RESULT: Q=2/3 is a CONDITIONAL, not a forced theorem.\n    GIVEN (i) equal-block (1,1) metric AND (ii) objectivity-MAXIMIZATION,\n    THEN r=1/2 -> Q=2/3 (non-circular; 2/3 is the output; (1,2) would give r=1).\n  The 2-block pointer fixes #channels=2, NOT the weight (r*=w_p/(2 w_s)).\n  Records relaxation comparison (trace -> per-dim) points to Q=1.\n  Both hypotheses (i)+(ii) remain explicit inputs in this conditional theorem.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003809Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

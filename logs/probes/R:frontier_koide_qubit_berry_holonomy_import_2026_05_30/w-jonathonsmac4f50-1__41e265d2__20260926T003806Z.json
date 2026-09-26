@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_qubit_berry_holonomy_import_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_qubit_berry_holonomy_import_2026_05_30.py",
+ "seed": 83086,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003806Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "864ea6a65ff54a2bafdf6976b80aa0bed6ba5ea582ace904e5ecdd34fea9bad7",
+ "stdout_tail": "==================================================================================\n[PASS] F4.1 numerical Berry(r) == -pi(1-1/sqrt(1+4r)) across r\n       max|numeric - closed form| = 2.49e-05\n[PASS] F4.2 dGamma/dr != 0 at r=1/2 (NO stationarity -> not value-selective)\n       dGamma/dr|_{r=1/2} = -1.2092; Gamma(1/2) = -1.327793 = -pi(1-1/sqrt3) = -1.327793\n[PASS] F4.3 |Gamma| = 2/9 rad at r~0.0395, = 2pi/9 at r~0.163, -2pi/3 at r=2 (NEVER r=1/2)\n       r(|G|=2/9)=0.0395, r(|G|=2pi/9)=0.1633, Gamma(r=2)=-2.094395 = -2pi/3=-2.094395\n\n========================================================================================\nSUMMARY\n========================================================================================\n  10/10 checks passed\n\n  Faithful embedding of arg(b) on R^3(x)C^2  -> Berry holonomy = 0 EXACTLY\n    (bare-R^3 circulant flatness persists into the tensor seam)\n  Nonzero holonomy  -> requires non-collinear coin B(x)(cos d sz+sin d sy)\n    = the C3-orbit-splitting chiral IMPORT (B(x)sy _|_ iJ(x)* sector)\n  Even granting the import: Gamma(r)=-pi(1-1/sqrt(1+4r)) is monotone,\n    NOT stationary at r=1/2; hits 2/9 at r~0.0395, never r=1/2.\n\n  => qubit-factor Berry route does NOT natively source omega / r=1/2 / Q=2/3.\n     It maps where the r=1/2 principle is missing (the shared chiral import),\n     it does not supply it. Next open path: does the framework baseline\n     force a nontrivial qubit Z3/chiral action that canonically picks the relative axis?\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_qubit_berry_holonomy_import_2026_05_30.txt against the .txt beside this log"
+  ]
+ }
+}

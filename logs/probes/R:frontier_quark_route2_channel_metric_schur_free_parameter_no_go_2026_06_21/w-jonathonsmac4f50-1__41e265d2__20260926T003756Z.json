@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_quark_route2_channel_metric_schur_free_parameter_no_go_2026_06_21.py",
+ "seed": 83076,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003756Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dc7787603c94afb890a751ee35329c432ac2a8a16862432844260ad3711f3f7b",
+ "stdout_tail": " on the full arm space and dimension 2 after restriction to E (+) T1, and the mode-weight powers w, w^2, w^-1, w^-2 are evaluated one per mode pair to give 2/3, 4/9, 3/2 and 9/4 respectively.\nper_block: resolved on the Schur blocks of the Reynolds-projected metric -- the generic integer seed averages to diagonal blocks a_E=29/3 on E and a_T=41/6 on T1, each exactly a scalar multiple of its own projector, with the E:T1 cross block identically zero; that is the whole content of the free ratio c_E/c_T, since two independent block scalars admit ratios 1, 3/2, 9/4, 1/5 and 7 alike.\nlattice_wide: checked and not executed -- the classification never leaves the single star, so no box length, site count, volume or thermodynamic limit appears anywhere in this file; the missing global object is precisely the note's result, namely an inverse-square normalization law c_X proportional to w_X^-2 that would have to be supplied as a new primitive rather than derived here.\n\n========================================================================================\nPASS=13 FAIL=0\n\nVERDICT: no-go for the pure O_h channel-metric route. The allowed positive\nchannel metrics on E (+) T1 are G(c_E,c_T)=c_E P_E + c_T P_T1 with c_E/c_T\nfree. Symmetry alone permits ambient lambda=1, one-reciprocal lambda=3/2,\nand inverse-square lambda=9/4. The endpoint value is therefore not derived\nby declaring a channel metric; it is obtained only by supplying the inverse-\nsquare normalization law as an extra primitive.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

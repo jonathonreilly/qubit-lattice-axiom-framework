@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_owned_seam_routes_adversary_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_owned_seam_routes_adversary_2026_07_25.py",
+ "seed": 82929,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003529Z",
+ "elapsed_s": 137.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25f7b7f9b0221e03e05f9b716b4e698f822d5dc0fba7093d11284d7f84f7b1a0",
+ "stdout_tail": "eral_coin_sample_columns_per_size\": 78, \"literal_component_deletion_witnesses_executed\": true, \"literal_decoded_interface_M2\": 335, \"runtime_target_operand_present\": false, \"whole_literal_word_inverse_executed\": false}, \"missing_executed_objects\": {\"decoded_sparse_baseline\": \"the old 125749-row direct sum remains an aggregate decoded baseline; use the literal 335-M2 successor for factor-execution claims\", \"direct_and_gauge_common_E\": \"the actual direct common-E product has now been measured and fails its target; the finite order-derived gauge correction closes that fixture. What remains is a fixed target-independent local gauge/chart generator that handles L-shaped and larger overlaps without a supplied global order, plus an ambient transformed-E covariance test before any recurrent/autonomous-law claim\", \"literal_register_successor\": \"execute the supplied Cycle655 decode/interface/encode binding end to end; complete the literal L6 stream/contact and literal coin sweeps beyond the current 78-column samples; add omissions from the composed 335-M2 word, a whole-word inverse/off-code check, and transformed-E covariance. The recurrent transition still needs a no-preferred-order local replacement\"}, \"pass\": true, \"status\": \"finite-common-E-and-literal-interface-positive-recurrent-law-open\", \"terminal\": \"FINITE_COMMON_E_AND_LITERAL_INTERFACE_POSITIVE_RECURRENT_LAW_OPEN\", \"tests_failed\": 0, \"tests_passed\": 27}\nRESULT FINITE_COMMON_E_AND_LITERAL_INTERFACE_POSITIVE_RECURRENT_LAW_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

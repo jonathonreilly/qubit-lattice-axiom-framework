@@ -1,0 +1,64 @@
+== gibbs_density_wrong_normalization
+TOTAL: PASS=10 FAIL=1
+== gibbs_density_negative_weight
+TOTAL: PASS=10 FAIL=1
+== claim_bare_H_selects_state
+TOTAL: PASS=10 FAIL=1
+== z_pvm_not_resolution
+TOTAL: PASS=10 FAIL=1
+== x_pvm_not_resolution
+TOTAL: PASS=10 FAIL=1
+== claim_z_x_same_distribution
+TOTAL: PASS=10 FAIL=1
+== state_measure_barycenter_wrong
+TOTAL: PASS=10 FAIL=1
+== claim_barycenter_injective
+TOTAL: PASS=10 FAIL=1
+== born_weights_negative
+TOTAL: PASS=10 FAIL=1
+== born_weights_not_normalized
+TOTAL: PASS=10 FAIL=1
+== claim_event_partition_selected
+TOTAL: PASS=10 FAIL=1
+== claim_admissibility_identification_derived
+TOTAL: PASS=10 FAIL=1
+== same_effect_instruments_same_output
+TOTAL: PASS=10 FAIL=1
+== claim_lueders_without_matching_output
+TOTAL: PASS=10 FAIL=1
+== admissibility_law_not_covariant
+TOTAL: PASS=10 FAIL=1
+== admissibility_law_not_varying
+TOTAL: PASS=10 FAIL=1
+== two_admissibility_laws_equal
+TOTAL: PASS=10 FAIL=1
+== conditional_content_determines_hazard
+TOTAL: PASS=10 FAIL=1
+== hazard_models_same_record_rate
+TOTAL: PASS=10 FAIL=1
+== active_H_commutes_with_record
+TOTAL: PASS=10 FAIL=1
+== claim_permanence_implementation_selected
+TOTAL: PASS=10 FAIL=1
+== observe_unrecorded_alternative
+TOTAL: PASS=10 FAIL=1
+== omit_repeatability_stationarity
+TOTAL: PASS=10 FAIL=1
+== conflate_state_effect_record
+TOTAL: PASS=10 FAIL=1
+== import_unaudited_as_retained
+TOTAL: PASS=10 FAIL=1
+== claim_broad_no_go
+TOTAL: PASS=10 FAIL=1
+== claim_axiom_edit_performed
+TOTAL: PASS=10 FAIL=1
+== claim_obligation_retired
+TOTAL: PASS=10 FAIL=1
+== claim_toe_score_moved
+TOTAL: PASS=10 FAIL=1
+== source_blob_drift
+TOTAL: PASS=10 FAIL=1
+== omit_N5_cached_stdout
+TOTAL: PASS=10 FAIL=1
+== omit_resolution_lines
+TOTAL: PASS=10 FAIL=1

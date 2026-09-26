@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_two_endpoint_gauss_law_invariance_profile_bounded_2026_06_05.py",
+ "seed": 82719,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003159Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "466976cbedf81d53a8b2137755b0b8a4b35da5dc3be55f46d038a24a5e205334",
+ "stdout_tail": "=========================================================\nPASS U1 bare link-end transport is variant at both endpoints\nPASS U1 half-dressed transport is invariant only at endpoint A\nPASS U1 fully dressed Wilson-type line is invariant at both endpoints\nPASS U1 endpoint-invariance count is monotone 0 to 1 to 2\nPASS U1 bare operator is not zero\nPASS U1 half-dressed operator is not zero\nPASS U1 fully dressed operator is not zero\nPASS U1 invariant algebra is the commutant of the endpoint generators\nPASS U1 invariant algebra dimension is 36 :: dim=36\nPASS U1 invariant algebra is a proper subalgebra of the full four-qubit algebra\nPASS SU2 bare link-end transport is variant at both endpoints\nPASS SU2 double-singlet Wilson-type observable is invariant at both endpoints\nPASS SU2 double-singlet observable is nonzero\nPASS source-note firewall present: does not derive gauge invariance of observables from the Record axiom\nPASS source-note firewall present: does not identify all gauge-invariant algebra elements with physical observables\nPASS source-note firewall present: does not derive the endpoint Gauss generators from Lattice + Qubit + Admissibility + Record\nPASS source-note firewall present: does not derive gauge dynamics\nPASS source-note firewall present: does not require or establish a repo-wide quantum-link ontology\n========================================================================\nSUMMARY: PASS=18 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003200Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

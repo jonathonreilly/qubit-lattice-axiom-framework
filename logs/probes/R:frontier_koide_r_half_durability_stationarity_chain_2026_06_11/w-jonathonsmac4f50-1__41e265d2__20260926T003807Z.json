@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_r_half_durability_stationarity_chain_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_r_half_durability_stationarity_chain_2026_06_11.py",
+ "seed": 83087,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003807Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a601e1c4b3243708e3599cb6e1faf03eb8d8f2fe4e1f5d62b01eb3b73e6b19a8",
+ "stdout_tail": "exact = cap(200), -1e-5: 14, +1e-5: 14]\n[PASS] (14) g(f(r)) = r exactly: the 'thermalizing' reverse map is the functional INVERSE (erasure) of the records map -- consistent with the stabilizer-fails no-go; this chain does NOT use g as a stabilizer or reopen that route\n[PASS] (15) thermal consistency: I/3 gives p = (1/3, 2/3) -> r = 1 (the no-go's computed value, interface-checked), and r = 1 is NOT records-stationary (f(1) = 2 != 1): thermal-ensemble values are not durable registrations -- the Q = 1 cell's consumer is ensemble statistics, with no conflict with the registered Q = 2/3\nRESIDUAL (declared-open): the records-map identification itself (registration composes by the Lueders map) is consumed at the retained_bounded grade of luders_rule_from_composition_consistency via the separatrix note; binding PHYSICAL charged-lepton re-registration to that map is part of the R-D bridge, not derived here.\n\nTOTAL: PASS=15 FAIL=0\nVERDICT: conditional on the named R-D durability bridge and the custody 2-sector partition prong, the unique durably registrable 2-sector weight is r = 1/2 (Q = 2/3): the complete records-flow stationary set is {0, 1/2, infinity}; r = 0 is excluded by the registered C_3-breaking content and r = infinity by the unsigned branch (it is the signed/Brannen endpoint); the equal-power weight admission becomes a corollary. Attraction is neither claimed nor needed; the stabilizer-fails no-go's closed scope is respected. No premise is adopted; no audit status is set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003807Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

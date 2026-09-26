@@ -1,0 +1,32 @@
+{
+ "task": "M:finite_action_functional_typed_admissibility_record_identification_2026_09_02",
+ "type": "mutation-census",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "for m in $(python3 scripts/finite_action_functional_typed_admissibility_record_identification_2026_09_02.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/finite_action_functional_typed_admissibility_record_identification_2026_09_02.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 82803,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003323Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "e511e1098ff334849c43bea5878a582c6f2fc0e1ca1966d2e53e925ffff48337",
+ "stdout_tail": "t_resolution\nTOTAL: PASS=10 FAIL=1\n== claim_z_x_same_distribution\nTOTAL: PASS=10 FAIL=1\n== state_measure_barycenter_wrong\nTOTAL: PASS=10 FAIL=1\n== claim_barycenter_injective\nTOTAL: PASS=10 FAIL=1\n== born_weights_negative\nTOTAL: PASS=10 FAIL=1\n== born_weights_not_normalized\nTOTAL: PASS=10 FAIL=1\n== claim_event_partition_selected\nTOTAL: PASS=10 FAIL=1\n== claim_admissibility_identification_derived\nTOTAL: PASS=10 FAIL=1\n== same_effect_instruments_same_output\nTOTAL: PASS=10 FAIL=1\n== claim_lueders_without_matching_output\nTOTAL: PASS=10 FAIL=1\n== admissibility_law_not_covariant\nTOTAL: PASS=10 FAIL=1\n== admissibility_law_not_varying\nTOTAL: PASS=10 FAIL=1\n== two_admissibility_laws_equal\nTOTAL: PASS=10 FAIL=1\n== conditional_content_determines_hazard\nTOTAL: PASS=10 FAIL=1\n== hazard_models_same_record_rate\nTOTAL: PASS=10 FAIL=1\n== active_H_commutes_with_record\nTOTAL: PASS=10 FAIL=1\n== claim_permanence_implementation_selected\nTOTAL: PASS=10 FAIL=1\n== observe_unrecorded_alternative\nTOTAL: PASS=10 FAIL=1\n== omit_repeatability_stationarity\nTOTAL: PASS=10 FAIL=1\n== conflate_state_effect_record\nTOTAL: PASS=10 FAIL=1\n== import_unaudited_as_retained\nTOTAL: PASS=10 FAIL=1\n== claim_broad_no_go\nTOTAL: PASS=10 FAIL=1\n== claim_axiom_edit_performed\nTOTAL: PASS=10 FAIL=1\n== claim_obligation_retired\nTOTAL: PASS=10 FAIL=1\n== claim_toe_score_moved\nTOTAL: PASS=10 FAIL=1\n== source_blob_drift\nTOTAL: PASS=10 FAIL=1\n== omit_N5_cached_stdout\nTOTAL: PASS=10 FAIL=1\n== omit_resolution_lines\nTOTAL: PASS=10 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003325Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

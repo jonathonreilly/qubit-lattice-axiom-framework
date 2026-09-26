@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_sm_gstar_r_matter_reduction_2026_05_29",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_sm_gstar_r_matter_reduction_2026_05_29.py",
+ "seed": 83097,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003817Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=92 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d987be95bc824acd15a7a9fe3362e8cca623fb4496e32f1391db0dbcf235faeb",
+ "stdout_tail": "tatus authority is independent audit lane only\n  [PASS] note states full one-generation closure NOT claimed derived\n  [PASS] note states nu_R thermal exclusion is registered, not primitive-derived\n  [PASS] note states neutral-singlet branch convention NOT claimed derived\n  [PASS] note states RH inventory is registered, not native-derived\n  [PASS] note states thermal Weyl factor is registered, not downstream native-derived\n  [PASS] no load-bearing forbidden import 'wilson plaquette' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'staggered phase' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'brillouin' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'link unitar' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'monte carlo' (1 occurrence(s))\n  [PASS] no load-bearing forbidden import 'best-fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'chi-squared fit' (0 occurrence(s))\n  [PASS] no load-bearing forbidden import 'fitted to data' (0 occurrence(s))\n  [PASS] no new-vocabulary string 'algebraic universality'\n  [PASS] no new-vocabulary string 'two-class framing'\n  [PASS] no new-vocabulary string 'lattice-realization-invariant by definition'\n  [PASS] no new-vocabulary string '(CKN)'\n\n----------------------------------------------------------------------------------------\nSCORECARD\n----------------------------------------------------------------------------------------\n  PASS = 92\n  FAIL = 0\n\nRESULT: PASS=92 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003817Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: verdict line differs from the pinned cache: run 'PASS=92 FAIL=0' vs cache 'PASS=106 FAIL=0'"
+  ]
+ }
+}

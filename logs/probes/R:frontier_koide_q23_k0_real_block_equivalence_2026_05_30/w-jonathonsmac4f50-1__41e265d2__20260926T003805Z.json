@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_q23_k0_real_block_equivalence_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.py",
+ "seed": 83085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003805Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "95ce59497c7621e6fd8a2955d1204ebdf83bb34d7c37dfb18a79a8e764a631ec",
+ "stdout_tail": "3.00000, sum^2=6.00000, Q=0.666667\n[PASS] F4.3 dimension-weighted (doublet x2) -> r=1 -> Q=1 (per-dim, K0-complex)\n       r=1 -> Q=1\n\n========================================================================================\nF5 \u2014 C^3=I forbids U(1)_b SYMMETRY but not the Schur J for the det_C MEASURE\n========================================================================================\n[PASS] F5.1 (e^{i a}C)^3=I only at a in {0,120,240} deg (U(1)_b-as-SYMMETRY -> discrete C3)\n       valid alpha (deg) = [0, 120, 240]\n[PASS] F5.2 BUT the Schur complex structure Jcs in End_R(doublet)=C EXISTS (Jcs^2=-P_doublet) -> the det_C MEASURE is available; neither measure forced\n       C^3=I bites the SYMMETRY, not the measure (corrects the over-stated 'det_R is the default')\n\n========================================================================================\nSUMMARY\n========================================================================================\n  10/10 checks passed\n\n  Q=2/3  <=>  K0-real / real-Wedderburn-block / coherent-state count (2 blocks, each once)\n  Q=1    <=>  K0-complex / complex-dimension / trace-default count (3 modes)\n  the central qubit i is a GENERATION SCALAR (i*I_3) -> does NOT fix the choice;\n  the doublet measure is a FREE convention slot in the bounded comparison.\n  Q=2/3 is the coherent-state/per-block candidate; Q=1 is the trace-default rival.\n  NOT uniquely forced; choosing det_C as physical remains a separate convention/admission.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003806Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_q23_k0_real_block_equivalence_2026_05_30.txt against the .txt beside this log"
+  ]
+ }
+}

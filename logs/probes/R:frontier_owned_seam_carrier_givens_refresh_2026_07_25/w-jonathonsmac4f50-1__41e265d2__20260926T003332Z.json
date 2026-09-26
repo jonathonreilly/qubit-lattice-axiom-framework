@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_owned_seam_carrier_givens_refresh_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_owned_seam_carrier_givens_refresh_2026_07_25.py",
+ "seed": 82812,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003332Z",
+ "elapsed_s": 116.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97faeed6d4525dacd793d93cfebb43df57377dfd7750b4b0f175d9317c8be0b1",
+ "stdout_tail": "'endpoint_preserving_frames': 12, 'endpoint_reversing_frames': 12, 'maximum_representation_unitarity': 0.0, 'maximum_update_covariance': 0.0, 'maximum_update_covariance_raw': 6.206335383118183e-17, 'frame_products': 576, 'frame_group_failures': 0, 'feature_transport_failures': 0, 'feature_group_failures': 0}, 'dense_EUE_completion_used': False, 'full_union_selector_used': False}\nboundary {'authority': 'none', 'audit': 'unset', 'finite_rotation_ROM_rows_L5': 46306, 'finite_rotation_ROM_rows_L6': 46306, 'diagonal_collision_phase_rows_L5': 11, 'finite_rotation_ROM_supplied': True, 'ROM_contents': 'bounded source/target owner observations, fixed transition Pauli, landed carrier Givens coefficient or occupation FSWAP/phase, and gate ordinal', 'carrier_coefficient_direction_rule': 'for landed G=[[c,s],[-conj(s),c]]: other->canonical uses s, canonical->other uses -conj(s); reprepare uses the reversed adjoint word', 'owner_gate_order_supplied': 'per owner: 24 left-carrier unprepare factors, then 24 right-carrier unprepare factors, canonical occupation FSWAP plus collision phase, then inverse right and inverse left factors; owners 0..10, then contact', 'owner_schedule_is_finite_program_ordinal_not_physical_time': True, 'derived_translation_invariant_recurrent_law': False, 'recurrent_volume_update_claimed': False, 'global_mode_order_used': False, 'dense_EUE_completion_used': False, 'axiom_pressure_claimed': False}\nLOCAL_OWNED_CARRIER_GIVENS_PRIMITIVES_CLOSED_GLOBAL_COMMON_E_UNSET_HERE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003529Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

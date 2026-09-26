@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_koide_orientation_blind_count_b_field_gate_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_orientation_blind_count_b_field_gate_2026_05_30.py",
+ "seed": 83085,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003805Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=36 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "99a4a21fb501efdb4d0716e3c17f7c808c1b583022fe09c149988d0383944d6b",
+ "stdout_tail": "========================\nCirculant Q formula\n================================================================================\n[PASS] trace(H) = 3a  --  3*a\n[PASS] trace(H^2) = 3a^2 + 6|b|^2  --  3*a**2 + 6*x**2 + 6*y**2\n[PASS] Q = (a^2 + 2|b|^2)/(3a^2)  --  (a**2 + 2*x**2 + 2*y**2)/(3*a**2)\n[PASS] Q = 2/3 at |b|^2/a^2 = 1/2  --  2/3\n\n================================================================================\nAction-order gate\n================================================================================\n[PASS] first-order b-plane phase space has one mode\n[PASS] static-coupling cotangent phase space has two modes\n[PASS] the two readings are distinct\n\n================================================================================\nCooling jump is outside the native circulant algebra\n================================================================================\n[PASS] projection onto span{I,C,C^2} has zero norm  --  norm=1.001e-16\n[PASS] Hilbert-Schmidt residual fraction is one  --  fraction=1.000000000000\n\n================================================================================\nK\u00e4hler-Dirac form-degree block gate\n================================================================================\n[PASS] Lambda^1 subspace has dimension three  --  [3, 5, 6]\n[PASS] D_KD Lambda^1 -> Lambda^1 block is zero  --  max=0.000e+00\n\nTOTAL: PASS=36 FAIL=0\nVERDICT: bounded orientation-blind count and B-field local gate checks pass; the B-coupling to B-field bridge remains open.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

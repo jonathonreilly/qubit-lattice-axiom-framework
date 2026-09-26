@@ -1,0 +1,24 @@
+========================================================================
+Two-endpoint Gauss-law invariance profile bounded checks
+========================================================================
+PASS U1 bare link-end transport is variant at both endpoints
+PASS U1 half-dressed transport is invariant only at endpoint A
+PASS U1 fully dressed Wilson-type line is invariant at both endpoints
+PASS U1 endpoint-invariance count is monotone 0 to 1 to 2
+PASS U1 bare operator is not zero
+PASS U1 half-dressed operator is not zero
+PASS U1 fully dressed operator is not zero
+PASS U1 invariant algebra is the commutant of the endpoint generators
+PASS U1 invariant algebra dimension is 36 :: dim=36
+PASS U1 invariant algebra is a proper subalgebra of the full four-qubit algebra
+PASS SU2 bare link-end transport is variant at both endpoints
+PASS SU2 double-singlet Wilson-type observable is invariant at both endpoints
+PASS SU2 double-singlet observable is nonzero
+PASS source-note firewall present: does not derive gauge invariance of observables from the Record axiom
+PASS source-note firewall present: does not identify all gauge-invariant algebra elements with physical observables
+PASS source-note firewall present: does not derive the endpoint Gauss generators from Lattice + Qubit + Admissibility + Record
+PASS source-note firewall present: does not derive gauge dynamics
+PASS source-note firewall present: does not require or establish a repo-wide quantum-link ontology
+========================================================================
+SUMMARY: PASS=18 FAIL=0
+========================================================================

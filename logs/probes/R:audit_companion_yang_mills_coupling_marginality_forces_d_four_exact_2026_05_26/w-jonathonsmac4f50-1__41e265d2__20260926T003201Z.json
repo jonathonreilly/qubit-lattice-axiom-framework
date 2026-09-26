@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_yang_mills_coupling_marginality_forces_d_four_exact_2026_05_26.py",
+ "seed": 82721,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "41e265d2",
+ "started_utc": "20260926T003201Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07c2a9ac37891a9c4b9d7d887fffd799a879c7650431e935a7471a43e4645d2c",
+ "stdout_tail": "lity iff d == 4  (v1 == 0: False, d == 4: False)\n  [PASS (A)] (consistency) at d = 12: g_v1 = g_v2  (g_v1 - g_v2 = 0)\n  [PASS (A)] (consistency) at d = 12: (g_v1 == 0) iff (g_v2 == 0)  (v1 == 0: False, v2 == 0: False)\n  [PASS (A)] (consistency) at d = 12: marginality iff d == 4  (v1 == 0: False, d == 4: False)\n\n----------------------------------------------------------------------------------------\nPart 8: Informational dimensional readings (cross-check, not load-bearing)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (info) At d = 4: [A_mu] = 1 (canonical gauge field dimension in 4d)  ([A_mu]|_{d=4} = 1)\n  [PASS (A)] (info) At d = 4: [F_{mu nu}] = 2 (2-form on R^4)  ([F]|_{d=4} = 2)\n  [PASS (A)] (info) At d = 4: [g_YM] = 0 (dimensionless coupling, marginal/ren.)  ([g_YM]|_{d=4} = 0)\n  [PASS (A)] (info) At d = 3: [g_YM] = 1/2 (super-ren. Yang-Mills in 3d)  ([g_YM]|_{d=3} = 1/2)\n  [PASS (A)] (info) At d = 6: [g_YM] = -1 (non-ren. Yang-Mills in 6d)  ([g_YM]|_{d=6} = -1)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 146\n  FAIL = 0\n\n  Note path: YANG_MILLS_COUPLING_MARGINALITY_FORCES_D_FOUR_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  yang_mills_coupling_marginality_forces_d_four_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T003202Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,402 @@
+{
+ "sweep_date": "2026-09-26",
+ "rule": "remove registered worktrees of this repository whose newest working-tree file is older than three days (cutoff 2026-09-23T06:22-04:00); Codex worktrees included; science saved to ai/probes first",
+ "registered_worktrees_before": 80,
+ "removed_registered": 24,
+ "kept_registered": 56,
+ "checks_per_worktree": [
+  "newest working-tree file mtime",
+  "no process with its cwd inside",
+  "git status incl. untracked and ignored files (ignored = regenerated audit data and empty runner-cache staging only)",
+  "head contained in origin/main, the origin branch or origin/ai/probes",
+  "PR state"
+ ],
+ "removed": [
+  {
+   "worktree": "~/.probe-workers/Physics/J-note-COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026_09_13",
+   "newest_file_mtime": "2026-09-19T00:43-04:00",
+   "branch": null,
+   "head": "8bcdf5df516ac6f6943973993541326443876ae0",
+   "kind": "probe-worker",
+   "unit": "J:note:COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026_09_13",
+   "head_on_ai_probes": true,
+   "unit_completed_by": [
+    "logs/probes/J:note:COMPOSITION_LAW_SELECTION_GRADED_ZEROS_ORDER_BLIND_RULES_BOUNDED_THEOREM_NOTE_2026_09_13/w-jonathonsmac4f50-jd679__a2053ef8__20260919T134102Z.json"
+   ],
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "worktree": "~/.probe-workers/Physics/J-note-G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026_06_18",
+   "newest_file_mtime": "2026-09-19T00:43-04:00",
+   "branch": null,
+   "head": "8bcdf5df516ac6f6943973993541326443876ae0",
+   "kind": "probe-worker",
+   "unit": "J:note:G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026_06_18",
+   "head_on_ai_probes": true,
+   "unit_completed_by": [
+    "logs/probes/J:note:G_BARE_PARENT_FINITE_LINK_WILSON_BETA6_BRIDGE_NOTE_2026_06_18/w-jonathonsmac4f50-j55e7__25ec8ad9__20260919T125647Z.json"
+   ],
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "worktree": "~/.probe-workers/Physics/J-note-NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026_06_12",
+   "newest_file_mtime": "2026-09-19T00:43-04:00",
+   "branch": null,
+   "head": "8bcdf5df516ac6f6943973993541326443876ae0",
+   "kind": "probe-worker",
+   "unit": "J:note:NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026_06_12",
+   "head_on_ai_probes": true,
+   "unit_completed_by": [
+    "logs/probes/J:note:NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026_06_12/w-jonathonsmac4f50-j7507__9f62703f__20260919T135232Z.json"
+   ],
+   "uncommitted": 1,
+   "rescued": [
+    "rescued/J-note-NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RUNG_TWELVE_BOUNDED_NOTE_2026_06_12/probes/work/note_NATIVE_GAUGE_TRANSFER_C00_LOWER_BOUND_RU/hessian_and_power.py"
+   ]
+  },
+  {
+   "worktree": "~/.probe-workers/Physics/J-provenance-PR8024",
+   "newest_file_mtime": "2026-09-19T00:43-04:00",
+   "branch": null,
+   "head": "93e757b3d3789ad1acc4b9d7691deb68dd6f1b2e",
+   "kind": "probe-worker",
+   "unit": "J:provenance:PR8024",
+   "head_on_ai_probes": true,
+   "unit_completed_by": [
+    "logs/probes/J:provenance:PR8024/w-jonathonsmac4f50-j6c79__64b493b3__20260919T125344Z.json"
+   ],
+   "uncommitted": 3,
+   "rescued": [
+    "rescued/J-provenance-PR8024/probes/work/pr8024/provenance_theorem_numbers.py",
+    "rescued/J-provenance-PR8024/logs/probes/J:provenance:PR8024/w-macbookpro90c72-jda2d__93e757b3__20260919T044336Z.json",
+    "rescued/J-provenance-PR8024/logs/probes/J:provenance:PR8024/w-macbookpro90c72-jda2d__93e757b3__20260919T044336Z.txt"
+   ]
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-all-stage-publication-20260921",
+   "newest_file_mtime": "2026-09-21T14:43-04:00",
+   "branch": "codex/mobile-record-all-stage-formation-20260921",
+   "head": "d0dec3ccac49f285194d6aad20a299765269910c",
+   "pr": {
+    "number": 8594,
+    "state": "OPEN",
+    "title": "Derive the complete slow-formation clock for mobile records"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8594 (head on origin/codex/mobile-record-all-stage-formation-20260921); queued units in probes/TASKS.json: J:attack-a:PR8594, J:attack-b:PR8594, J:attack-d:PR8594, J:attack-e:PR8594, J:attack-f:PR8594, J:attack-g:PR8594, J:attack:PR8594, J:falsifier:PR8594, J:provenance:PR8594, P:8594"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-cubic-selection-publication-20260921",
+   "newest_file_mtime": "2026-09-21T07:16-04:00",
+   "branch": "codex/mobile-record-cubic-selection-20260921",
+   "head": "508722df2eafb18464e8c5f84ed89fca6383f67c",
+   "pr": {
+    "number": 8569,
+    "state": "OPEN",
+    "title": "Classify cubic record dynamics and conditional Gauss selection"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8569 (head on origin/codex/mobile-record-cubic-selection-20260921); queued units in probes/TASKS.json: J:attack-a:PR8569, J:attack-b:PR8569, J:attack-d:PR8569, J:attack-e:PR8569, J:attack-f:PR8569, J:attack-g:PR8569, J:attack:PR8569, J:falsifier:PR8569, J:provenance:PR8569, P:8569"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-empty-start-publication-20260921",
+   "newest_file_mtime": "2026-09-20T21:35-04:00",
+   "branch": "codex/mobile-record-empty-start-response-20260921",
+   "head": "4de7aa06bbdb48db8d31ba29dbd90b2d8433eaf8",
+   "pr": {
+    "number": 8551,
+    "state": "OPEN",
+    "title": "Derive the first effect of motion on formation from an empty lattice"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8551 (head on origin/codex/mobile-record-empty-start-response-20260921); queued units in probes/TASKS.json: J:attack-a:PR8551, J:attack-b:PR8551, J:attack-d:PR8551, J:attack-e:PR8551, J:attack-f:PR8551, J:attack-g:PR8551, J:attack:PR8551, J:falsifier:PR8551, J:provenance:PR8551, P:8551"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-gauss-loops-publication-20260921",
+   "newest_file_mtime": "2026-09-21T06:04-04:00",
+   "branch": "codex/mobile-record-gauss-loops-phase-20260921",
+   "head": "dceb153003b35f7a84f68f5bddeb5c22befaaa30",
+   "pr": {
+    "number": 8565,
+    "state": "OPEN",
+    "title": "Explore mobile Gauss-preserving record loops, dilute equilibrium and birth locality"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8565 (head on origin/codex/mobile-record-gauss-loops-phase-20260921); queued units in probes/TASKS.json: J:attack-a:PR8565, J:attack-b:PR8565, J:attack-d:PR8565, J:attack-e:PR8565, J:attack-f:PR8565, J:attack-g:PR8565, J:attack:PR8565, J:falsifier:PR8565, J:provenance:PR8565, P:8565"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-geometric-formation-publication-20260921",
+   "newest_file_mtime": "2026-09-21T13:07-04:00",
+   "branch": "codex/mobile-record-geometric-formation-selection-20260921",
+   "head": "97c1522d462e574663d8dd50fa424f9147587792",
+   "pr": {
+    "number": 8589,
+    "state": "OPEN",
+    "title": "Geometric record formation with uniform slow-birth selection and a controlled clock"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8589 (head on origin/codex/mobile-record-geometric-formation-selection-20260921); queued units in probes/TASKS.json: P:8589"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-immutable-waves-publication-20260921",
+   "newest_file_mtime": "2026-09-21T02:11-04:00",
+   "branch": "codex/mobile-record-immutable-waves-20260921",
+   "head": "6aaa725a086377dfbca541fec3f453024d67b774",
+   "pr": {
+    "number": 8557,
+    "state": "OPEN",
+    "title": "Immutable records support acoustic Euler and fluctuation limits"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8557 (head on origin/codex/mobile-record-immutable-waves-20260921); queued units in probes/TASKS.json: J:attack-a:PR8557, J:attack-b:PR8557, J:attack-d:PR8557, J:attack-e:PR8557, J:attack-f:PR8557, J:attack-g:PR8557, J:attack:PR8557, J:falsifier:PR8557, J:provenance:PR8557, P:8557"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-lifetime-publication-20260921",
+   "newest_file_mtime": "2026-09-20T23:08-04:00",
+   "branch": "codex/mobile-record-lifetime-correlation-20260921",
+   "head": "197c05b563aac6f271b3b2c4875b4bd4e594b72d",
+   "pr": {
+    "number": 8552,
+    "state": "OPEN",
+    "title": "Bound mobile-record lifetime activity and terminal correlations"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8552 (head on origin/codex/mobile-record-lifetime-correlation-20260921); queued units in probes/TASKS.json: J:attack-a:PR8552, J:attack-b:PR8552, J:attack-d:PR8552, J:attack-e:PR8552, J:attack-f:PR8552, J:attack-g:PR8552, J:attack:PR8552, J:falsifier:PR8552, J:provenance:PR8552, P:8552"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-local-curl-quantum-publication-20260921",
+   "newest_file_mtime": "2026-09-21T06:40-04:00",
+   "branch": "codex/mobile-record-local-curl-quantum-20260921",
+   "head": "ead70def0390d2d93e82fc87bf006904df9cc914",
+   "pr": {
+    "number": 8566,
+    "state": "OPEN",
+    "title": "Local curl fields and quantum-compatible record formation interfaces"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8566 (head on origin/codex/mobile-record-local-curl-quantum-20260921); queued units in probes/TASKS.json: J:attack-a:PR8566, J:attack-b:PR8566, J:attack-d:PR8566, J:attack-e:PR8566, J:attack-f:PR8566, J:attack-g:PR8566, J:attack:PR8566, J:falsifier:PR8566, J:provenance:PR8566, P:8566"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-local-gibbs-publication-20260921",
+   "newest_file_mtime": "2026-09-21T06:46-04:00",
+   "branch": "codex/mobile-record-local-gibbs-transport-20260921",
+   "head": "801affee6e5fb11519c5b31ec2532cf320b8ba22",
+   "pr": {
+    "number": 8567,
+    "state": "OPEN",
+    "title": "Local Gibbs record circulations and winding transport"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8567 (head on origin/codex/mobile-record-local-gibbs-transport-20260921); queued units in probes/TASKS.json: J:attack-a:PR8567, J:attack-b:PR8567, J:attack-d:PR8567, J:attack-e:PR8567, J:attack-f:PR8567, J:attack-g:PR8567, J:attack:PR8567, J:falsifier:PR8567, J:provenance:PR8567, P:8567"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-native-formation-publication-20260921",
+   "newest_file_mtime": "2026-09-21T04:09-04:00",
+   "branch": "codex/mobile-record-native-formation-20260921",
+   "head": "4ae52ade2299b4dfaff388971f423aa8f6ddf64a",
+   "pr": {
+    "number": 8561,
+    "state": "OPEN",
+    "title": "Native record formation: conditional Euler limit and cubic centering response"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8561 (head on origin/codex/mobile-record-native-formation-20260921); queued units in probes/TASKS.json: J:attack-a:PR8561, J:attack-b:PR8561, J:attack-d:PR8561, J:attack-e:PR8561, J:attack-f:PR8561, J:attack-g:PR8561, J:attack:PR8561, J:falsifier:PR8561, J:provenance:PR8561, P:8561"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-nonlinear-publication-20260921",
+   "newest_file_mtime": "2026-09-21T20:06-04:00",
+   "branch": "codex/mobile-record-smooth-nonlinear-euler-20260921",
+   "head": "05ce3bed24d4b13226cfe0bef84ea344fd54b59c",
+   "pr": {
+    "number": 8610,
+    "state": "OPEN",
+    "title": "Nonlinear permanent-record waves with moving geometry"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8610 (head on origin/codex/mobile-record-smooth-nonlinear-euler-20260921); queued units in probes/TASKS.json: J:attack-a:PR8610, J:attack-b:PR8610, J:attack-d:PR8610, J:attack-e:PR8610, J:attack-f:PR8610, J:attack-g:PR8610, J:attack:PR8610, J:falsifier:PR8610, J:provenance:PR8610, P:8610"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-positive-quantum-publication-20260921",
+   "newest_file_mtime": "2026-09-21T18:55-04:00",
+   "branch": "codex/mobile-record-positive-quantum-curl-20260921",
+   "head": "b5fcda79703d6b0c459065f83329a54238bb50ff",
+   "pr": {
+    "number": 8609,
+    "state": "OPEN",
+    "title": "Physics: controlled positive quantum curl limits from finite qubits"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8609 (head on origin/codex/mobile-record-positive-quantum-curl-20260921); queued units in probes/TASKS.json: J:attack-a:PR8609, J:attack-b:PR8609, J:attack-d:PR8609, J:attack-e:PR8609, J:attack-f:PR8609, J:attack-g:PR8609, J:attack:PR8609, J:falsifier:PR8609, J:provenance:PR8609, P:8609"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-quantitative-formation-waves-publication-20260921",
+   "newest_file_mtime": "2026-09-21T17:22-04:00",
+   "branch": "codex/mobile-record-empty-start-quantitative-waves-20260921",
+   "head": "af45e32418ba6af18af646164c8d90abc3d933ba",
+   "pr": {
+    "number": 8604,
+    "state": "OPEN",
+    "title": "Bound empty-start formation and quantitative mobile-record waves"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8604 (head on origin/codex/mobile-record-empty-start-quantitative-waves-20260921); queued units in probes/TASKS.json: J:attack-a:PR8604, J:attack-b:PR8604, J:attack-d:PR8604, J:attack-e:PR8604, J:attack-f:PR8604, J:attack-g:PR8604, J:attack:PR8604, J:falsifier:PR8604, J:provenance:PR8604, P:8604"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-transverse-waves-publication-20260921",
+   "newest_file_mtime": "2026-09-21T03:48-04:00",
+   "branch": "codex/mobile-record-transverse-waves-20260921",
+   "head": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+   "pr": {
+    "number": 8560,
+    "state": "OPEN",
+    "title": "Immutable records: transverse curl waves and formation noise"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8560 (head on origin/codex/mobile-record-transverse-waves-20260921); queued units in probes/TASKS.json: J:attack-a:PR8560, J:attack-b:PR8560, J:attack-d:PR8560, J:attack-e:PR8560, J:attack-f:PR8560, J:attack-g:PR8560, J:attack:PR8560, J:falsifier:PR8560, J:provenance:PR8560, P:8560"
+  },
+  {
+   "worktree": "~/Documents/Codex/mobile-record-wave-publication-20260921",
+   "newest_file_mtime": "2026-09-21T16:23-04:00",
+   "branch": "codex/mobile-record-moving-geometry-waves-20260921",
+   "head": "3c6fea4be33116952cc81f004b3550baec4087a9",
+   "pr": {
+    "number": 8600,
+    "state": "OPEN",
+    "title": "Record-color waves through moving geometry with finite preparation"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "open PR #8600 (head on origin/codex/mobile-record-moving-geometry-waves-20260921); queued units in probes/TASKS.json: J:attack-a:PR8600, J:attack-b:PR8600, J:attack-d:PR8600, J:attack-e:PR8600, J:attack-f:PR8600, J:attack-g:PR8600, J:attack:PR8600, J:falsifier:PR8600, J:provenance:PR8600, P:8600"
+  },
+  {
+   "worktree": "~/Documents/Codex/physics-sync-2026-09-22-third/charged-record-publication",
+   "newest_file_mtime": "2026-09-22T20:04-04:00",
+   "branch": "codex/mobile-record-homogeneous-charged-20260922",
+   "head": "a5e06800ed56708c370ebaa4830bf203c96c9656",
+   "pr": {
+    "number": 8661,
+    "state": "CLOSED",
+    "title": "Physics: mobile charged records and their field response"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "landed (reviewed, narrowed) on main in 9d8596c758 from this head; deferred residuals in probes/work/deferred-science-20260924/batch-12.json and landing-rollup.json"
+  },
+  {
+   "worktree": "~/Documents/Codex/physics-sync-2026-09-22-third/local-field-publication",
+   "newest_file_mtime": "2026-09-22T17:39-04:00",
+   "branch": "codex/mobile-record-local-field-limit-20260922",
+   "head": "ff1edc030d8a2aaec9aab16a2354e7cc113ef8cf",
+   "pr": {
+    "number": 8635,
+    "state": "CLOSED",
+    "title": "Physics: local field dynamics from hard-core record motion and slow formation"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "landed (reviewed, narrowed) on main in 9d8596c758 from this head; deferred residuals in probes/work/deferred-science-20260924/batch-12.json and landing-rollup.json"
+  },
+  {
+   "worktree": "~/Documents/Codex/physics-sync-2026-09-22-third/repeated-formation-publication",
+   "newest_file_mtime": "2026-09-22T21:15-04:00",
+   "branch": "codex/mobile-record-repeated-formation-20260923",
+   "head": "fe6dc2c5ef061fa1e0051063d49178f23b872c13",
+   "pr": {
+    "number": 8672,
+    "state": "CLOSED",
+    "title": "Physics: repeated record formation and generated field dynamics"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "landed (reviewed, narrowed) on main in 9d8596c758 from this head; deferred residuals in probes/work/deferred-science-20260924/batch-12.json and landing-rollup.json"
+  },
+  {
+   "worktree": "~/Documents/Codex/physics-sync-2026-09-22-third/rotor-wave-publication",
+   "newest_file_mtime": "2026-09-22T18:49-04:00",
+   "branch": "codex/mobile-record-rotor-waves-20260922",
+   "head": "1ca7b4c2ee69d0840bd9196766e3b77c4251bcc0",
+   "pr": {
+    "number": 8650,
+    "state": "CLOSED",
+    "title": "Physics: generated rotor fields and prepared transverse waves"
+   },
+   "remote_branch_contains_head": true,
+   "uncommitted": 0,
+   "kind": "codex-publication",
+   "science_location": "landed (reviewed, narrowed) on main in 9d8596c758 from this head; deferred residuals in probes/work/deferred-science-20260924/batch-12.json and landing-rollup.json"
+  },
+  {
+   "worktree": "~/Documents/Codex/token-efficiency-20260920",
+   "newest_file_mtime": "2026-09-20T11:27-04:00",
+   "branch": "codex/science-token-efficiency-20260920",
+   "head": "b5f7ab760a55dd3d67d706221b0dfdd1f4f89018",
+   "pr": {
+    "number": 8528,
+    "state": "MERGED",
+    "title": "Route science workflow context by operation"
+   },
+   "remote_branch_contains_head": false,
+   "uncommitted": 0,
+   "kind": "codex-process",
+   "science_location": "merged as PR #8528 (5d784d8ccd on main); methodology, not science"
+  },
+  {
+   "worktree": "~/.probe-workers/Physics/J-attack-PR8155",
+   "kind": "probe-leftover-directory (not a registered worktree)",
+   "newest_file_mtime": "2026-09-18T19:22-04:00",
+   "unit": "J:attack-g:PR8155",
+   "unit_completed_by": [
+    "logs/probes/J:attack-g:PR8155/w-macbookpro90c72-j80ae__ee2f4c41__20260918T232941Z.json"
+   ],
+   "rescued": [
+    "rescued/J-attack-PR8155/probes/work/pr8155/walk_bound_brute.py"
+   ],
+   "note": "earlier draft; differs from the committed probes/work/pr8155/walk_bound_brute.py, which is the version the completing log ran"
+  },
+  {
+   "worktree": "~/.probe-workers/Physics/J-attack-g-PR8168",
+   "kind": "probe-leftover-directory (not a registered worktree)",
+   "newest_file_mtime": "2026-09-18T22:28-04:00",
+   "unit": "J:attack-g:PR8168",
+   "unit_completed_by": [
+    "logs/probes/J:attack-g:PR8168/w-macbookpro90c72-j7f2b__c5747cca__20260919T022723Z.json"
+   ],
+   "rescued": [],
+   "note": "empty directory tree, nothing to rescue"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+cache stdout lines=10
+[DERIVED] poly(1,0)=4 poly(0,1)=4 (stated floor 4)
+[DERIVED] C(1,0)=8/3 C(0,1)=8/3 (2/3 of the polynomial)
+INFO: known science HIT C>=4 vs C(1,0)=8/3 is the (2/3) Casimir factor vs the unscaled quadratic used in E=[poly]/a = 4/a
+[DERIVED] L=2 whole-group plaquettes=3 individual=6 stated 3 and 6
+[DERIVED] ||phi_x||<=3u/4 from three plaquettes |J|<=1 times u/4
+[DERIVED] 3u/4 < c1 iff u < (4/3)c1, matching u_*=(4/3)min(c1,1/(2c2))
+[DERIVED] scaled gap 1/2 times 4/a gives gap(H)>=2/a
+[NOTE] 2/a
+[NOTE] 4/a
+[NOTE] 4/3
+[NOTE] 3u/4
+[CACHE+NOTE] 35
+[NOTE] 3(L-1)^3
+[NOTE] (2/3)
+SUMMARY: PROVENANCE (PR #8024): gap 2/a, u_*=(4/3)min(c1,1/(2c2)), 3u/4, L=2 counts 3 vs 6, poly(1,0)=4 and C(1,0)=8/3 are NOTE/DERIVED; geometry 35-check TOTAL is CACHE; known C>=4 science HIT is sourced as the unscaled quadratic vs (2/3) Casimir, not unsourced; no provenance HIT

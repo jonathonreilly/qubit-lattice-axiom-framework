@@ -29,7 +29,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.907,
+  "load_bearing_score": 5.248,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -50,6 +50,6 @@
   },
   "runner_path": "scripts/menus_and_born_stabilizer_degenerate_supports_and_antipodal_weight_class_2026_09_22.py",
   "title": "Menus and Born: stabiliser-degenerate supports, the antipodal weight class, and two non-affine witnesses",
-  "transitive_descendants": 14,
+  "transitive_descendants": 18,
   "verdict_rationale": null
 }

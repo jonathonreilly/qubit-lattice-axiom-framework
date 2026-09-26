@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.807,
+  "load_bearing_score": 5.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/admissibility_rule_re_recording_at_every_tick_static_law_stationary_bilayer_ferromagnet_long_range_order_green_function_response_2026_09_20.py",
   "title": "If records re-form at every tick: the static law is the stationary law, the light-cone variant is one layer of a bilayer ferromagnet with long-range order, and a persistent source is surrounded by the lattice Green function (conditional on a clause the axioms exclude)",
-  "transitive_descendants": 6,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

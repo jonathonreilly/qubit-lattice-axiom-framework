@@ -27,13 +27,13 @@
     "dynamics_clause_records_act_as_fields_a_site_with_six_recorded_neighbours_is_a_qubit_in_their_field_and_its_law_points_along_it_bounded_theorem_note_2026-09-24",
     "minimal_axioms"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 1.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/dynamics_clause_moriya_handedness_is_a_twist_with_curvature_2026_09_24.py",
   "title": "The Moriya coupling's handedness is a twist with curvature",
-  "transitive_descendants": 0,
+  "transitive_descendants": 1,
   "verdict_rationale": null
 }

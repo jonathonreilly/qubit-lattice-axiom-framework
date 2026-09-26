@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.407,
+  "load_bearing_score": 6.358,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/admissibility_rule_amplitudes_of_negative_energy_fall_like_the_others_and_source_the_opposite_field_2026_09_21.py",
   "title": "Signed sources: weak pair identities, finite grounded fields and spectral projectors",
-  "transitive_descendants": 14,
+  "transitive_descendants": 28,
   "verdict_rationale": null
 }

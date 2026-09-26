@@ -8599,6 +8599,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "to": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+        },
+        {
+          "from": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "to": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 45,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "A local compensation that gives a common field/record limit",
+          "transitive_descendants": 45
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Local pair form of the compensated Hamiltonian",
+          "transitive_descendants": 45
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0054",
+      "decision": null,
+      "edges": [
+        {
           "from": "hubble_lane5_eta_retirement_gate_audit_note_2026-04-26",
           "to": "hubble_lane5_cosmic_history_ratio_necessity_no_go_note_2026-04-26"
         },
@@ -8627,43 +8664,6 @@
           "note_path": "docs/HUBBLE_LANE5_COSMIC_HISTORY_RATIO_NECESSITY_NO_GO_NOTE_2026-04-26.md",
           "title": "Lane 5 Cosmic-History-Ratio Necessity No-Go: `H_0` Needs Scale-Route And History-Ratio Content Beyond Baseline",
           "transitive_descendants": 28
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0054",
-      "decision": null,
-      "edges": [
-        {
-          "from": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
-          "to": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
-        },
-        {
-          "from": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
-          "to": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 19,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "A local compensation that gives a common field/record limit",
-          "transitive_descendants": 19
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "Local pair form of the compensated Hamiltonian",
-          "transitive_descendants": 19
         }
       ],
       "requires_lemma_extraction": false
@@ -8719,7 +8719,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8728,7 +8728,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8737,7 +8737,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
           "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
@@ -8756,7 +8756,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8765,7 +8765,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8774,7 +8774,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_TRANSPARENT_BODIES_CAPTURE_RATE_IS_THE_RECORD_COUNT_AND_THE_FORCE_IS_THE_PRODUCT_OF_RECORD_COUNTS_OVER_DISTANCE_SQUARED_PREDICTED_COEFFICIENT_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Kinetic capture by exposed faces and a conditional transparent-body force coefficient",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
@@ -8793,7 +8793,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8802,7 +8802,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
           "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8811,7 +8811,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
@@ -8830,7 +8830,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8839,7 +8839,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8848,13 +8848,50 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_POTENTIAL_OF_THE_WIND_SOLVES_THE_LATTICE_POISSON_EQUATION_WITH_CAPTURE_RATES_AS_SOURCES_INERTIAL_GAS_HAS_THE_CONSERVED_TENSOR_OF_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Finite periodic potential currents and rest-state tensor identities in the supplied inertial gas",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
     },
     {
       "cycle_id": "cycle-0060",
+      "decision": null,
+      "edges": [
+        {
+          "from": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
+          "to": "short_time_scaling_bounded_theorem_note_2026-09-24"
+        },
+        {
+          "from": "short_time_scaling_bounded_theorem_note_2026-09-24",
+          "to": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 7,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/POSTMARK_ELECTRIC_CORE_AND_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Post-mark finite-spin correction and interior edge limit",
+          "transitive_descendants": 7
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "short_time_scaling_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/SHORT_TIME_SCALING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Exact short-time scaling limit of the post-mark vacancy observable",
+          "transitive_descendants": 7
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0061",
       "decision": null,
       "edges": [
         {
@@ -8871,7 +8908,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8880,7 +8917,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_FREE_CAPTURING_BODIES_ARE_CARRIED_BY_THE_WIND_CAPTURE_LAW_ANISOTROPIC_COLLISIONLESS_SHADOW_DILUTION_LAW_OF_MOTION_AND_ITS_WINDOW_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Free capturing bodies are carried by the wind: the capture law, the anisotropic collisionless shadow, and the dilution law of motion with its window",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8889,7 +8926,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
           "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8898,13 +8935,13 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false
     },
     {
-      "cycle_id": "cycle-0061",
+      "cycle_id": "cycle-0062",
       "decision": null,
       "edges": [
         {
@@ -8921,7 +8958,7 @@
         }
       ],
       "length": 3,
-      "max_transitive_descendants": 6,
+      "max_transitive_descendants": 7,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8930,7 +8967,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_LAW_FLUX_THEOREMS_INVERSE_SQUARE_WIND_OF_A_CAPTURING_BODY_SECOND_ORDER_MOMENTUM_FLUX_FORCE_PROPORTIONAL_TO_PRODUCT_OF_CAPTURE_RATES_BOUNDED_THEOREM_NOTE_2026-09-20.md",
           "title": "Finite flux identities and conditional wind-force coefficients for the supplied inertial gas",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8939,7 +8976,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_WIND_OF_A_CAPTURING_BODY_IS_NOT_ISOTROPIC_LATTICE_STREAMING_GIVES_A_VISCOUS_TERM_OF_CUBIC_SYMMETRY_DIRECTION_DEPENDENCE_DOES_NOT_DECAY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "The wind of a capturing body is not isotropic: the lattice's streaming gives the gas a viscous term of cubic symmetry, and the direction dependence of the creeping inflow does not decay with distance",
-          "transitive_descendants": 6
+          "transitive_descendants": 7
         },
         {
           "audit_status": "unaudited",
@@ -8948,44 +8985,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/ADMISSIBILITY_RULE_THE_POTENTIAL_OF_THE_WIND_SOLVES_THE_LATTICE_POISSON_EQUATION_WITH_CAPTURE_RATES_AS_SOURCES_INERTIAL_GAS_HAS_THE_CONSERVED_TENSOR_OF_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-21.md",
           "title": "Finite periodic potential currents and rest-state tensor identities in the supplied inertial gas",
-          "transitive_descendants": 6
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0062",
-      "decision": null,
-      "edges": [
-        {
-          "from": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
-          "to": "short_time_scaling_bounded_theorem_note_2026-09-24"
-        },
-        {
-          "from": "short_time_scaling_bounded_theorem_note_2026-09-24",
-          "to": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 2,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "postmark_electric_core_and_boundary_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/POSTMARK_ELECTRIC_CORE_AND_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "Post-mark finite-spin correction and interior edge limit",
-          "transitive_descendants": 2
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "short_time_scaling_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/SHORT_TIME_SCALING_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "Exact short-time scaling limit of the post-mark vacancy observable",
-          "transitive_descendants": 2
+          "transitive_descendants": 7
         }
       ],
       "requires_lemma_extraction": false

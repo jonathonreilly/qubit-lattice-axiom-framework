@@ -34,7 +34,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.248,
+  "load_bearing_score": 7.109,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/finite_rate_repeated_record_formation_2026_09_24.py",
   "title": "Finite-rate repeated record formation with gauge-preserving motion",
-  "transitive_descendants": 37,
+  "transitive_descendants": 68,
   "verdict_rationale": null
 }

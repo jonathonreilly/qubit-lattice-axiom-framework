@@ -27,13 +27,13 @@
     "minimal_axioms",
     "menus_and_born_stabilizer_degenerate_supports_antipodal_weight_class_and_non_affine_witness_bounded_theorem_note_2026-09-22"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 11,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.7,
+  "load_bearing_score": 9.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/dynamics_clause_records_act_as_fields_isolated_site_law_2026_09_24.py",
   "title": "Records act as fields: a site with six recorded neighbours is a qubit in their field, and its law points along it",
-  "transitive_descendants": 12,
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

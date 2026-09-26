@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.587,
+  "load_bearing_score": 4.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/support_rule_gauss_glued_groups_covariant_nn_codes_2026_09_14.py",
   "title": "Covariant nearest-neighbour support rules: Gauss's law as glued support, and the hole statistics of the order-blind rule",
-  "transitive_descendants": 16,
+  "transitive_descendants": 19,
   "verdict_rationale": null
 }

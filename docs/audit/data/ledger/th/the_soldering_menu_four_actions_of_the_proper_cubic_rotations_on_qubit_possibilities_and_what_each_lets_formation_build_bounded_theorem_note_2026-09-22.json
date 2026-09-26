@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.907,
+  "load_bearing_score": 6.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/soldering_menu_four_cubic_actions_on_qubit_possibilities_and_formation_bounds_2026_09_22.py",
   "title": "Four proper-cubic actions on qubit possibilities and conditional broadcast bounds",
-  "transitive_descendants": 14,
+  "transitive_descendants": 17,
   "verdict_rationale": null
 }

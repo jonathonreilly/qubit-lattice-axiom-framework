@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.0,
+  "load_bearing_score": 8.6,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/admissibility_rule_what_a_source_is_when_records_move_one_mass_per_record_screened_density_signed_tilt_2026_09_20.py",
   "title": "Finite source identities: disconnected-component factorization, signed conditional content, pinning costs and production",
-  "transitive_descendants": 63,
+  "transitive_descendants": 96,
   "verdict_rationale": null
 }

@@ -27,13 +27,13 @@
     "admissibility_rule_no_master_clock_a_neighbour_determined_scale_covariant_tick_rate_obeys_the_lattice_laplace_equation_records_enter_as_additive_sources_bounded_theorem_note_2026-09-21",
     "gravity_weak_field_source_response_bridge_bounded_theorem_note_2026-06-11"
   ],
-  "direct_in_degree": 33,
+  "direct_in_degree": 50,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 22.085,
+  "load_bearing_score": 31.285,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/admissibility_rule_a_phase_timed_by_the_local_clock_every_packet_falls_towards_slow_clocks_force_is_energy_times_gradient_2026_09_21.py",
   "title": "Clocked nearest-neighbour amplitudes: finite operator identities and conditional ray motion",
-  "transitive_descendants": 47,
+  "transitive_descendants": 77,
   "verdict_rationale": null
 }

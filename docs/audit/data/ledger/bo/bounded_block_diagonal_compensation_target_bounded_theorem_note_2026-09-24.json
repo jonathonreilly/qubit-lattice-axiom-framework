@@ -19,14 +19,14 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
     "minimal_axioms",
     "finite_formation_with_retained_fourth_order_dynamics_bounded_theorem_note_2026-09-24"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 13,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -36,7 +36,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.892,
+  "load_bearing_score": 12.055,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/bounded_block_diagonal_compensation_target_2026_09_24.py",
   "title": "Effective target with a bounded penalty-preserving compensation",
-  "transitive_descendants": 20,
+  "transitive_descendants": 46,
   "verdict_rationale": null
 }

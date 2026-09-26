@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.954,
+  "load_bearing_score": 6.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/admissibility_rule_three_lengths_per_site_a_body_at_rest_stretches_them_alike_hop_energy_drives_whole_columns_2026_09_21.py",
   "title": "Three lengths per site under the curvature member: a body at rest stretches them alike, hop energy drives whole columns, and the delay's speed depends on direction",
-  "transitive_descendants": 30,
+  "transitive_descendants": 55,
   "verdict_rationale": null
 }

@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.644,
+  "load_bearing_score": 13.34,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/admissibility_rule_no_master_clock_neighbour_determined_scale_covariant_tick_rate_lattice_laplace_equation_additive_sources_2026_09_21.py",
   "title": "Local rate covariance: linearization, conditional source superposition, and waiting-time weights",
-  "transitive_descendants": 49,
+  "transitive_descendants": 80,
   "verdict_rationale": null
 }

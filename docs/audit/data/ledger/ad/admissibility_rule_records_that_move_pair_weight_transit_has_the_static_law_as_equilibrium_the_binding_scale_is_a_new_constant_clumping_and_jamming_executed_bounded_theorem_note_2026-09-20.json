@@ -26,13 +26,13 @@
     "minimal_axioms",
     "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
   ],
-  "direct_in_degree": 10,
+  "direct_in_degree": 13,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.087,
+  "load_bearing_score": 13.187,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/admissibility_rule_records_that_move_pair_weight_transit_static_equilibrium_binding_scale_2026_09_20.py",
   "title": "Records that move: pair-weight transit has the static law as its equilibrium, the binding scale is a constant the rule cannot see, and where records clump and jam",
-  "transitive_descendants": 67,
+  "transitive_descendants": 102,
   "verdict_rationale": null
 }

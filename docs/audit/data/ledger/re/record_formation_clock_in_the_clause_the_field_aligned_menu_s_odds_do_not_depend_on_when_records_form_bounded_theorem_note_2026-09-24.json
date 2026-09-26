@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,18 +27,18 @@
     "dynamics_clause_records_act_as_fields_a_site_with_six_recorded_neighbours_is_a_qubit_in_their_field_and_its_law_points_along_it_bounded_theorem_note_2026-09-24",
     "minimal_axioms"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e242861a424809680635c8dacd7cbd03d096e2f50b4ee855efc9bab52b891dad",
+  "note_hash": "a6bc27566ae41c9a8e0121b4d65513401ed6558e3586df0ff2d57885fe80c8ce",
   "note_path": "docs/RECORD_FORMATION_CLOCK_IN_THE_CLAUSE_THE_FIELD_ALIGNED_MENU_S_ODDS_DO_NOT_DEPEND_ON_WHEN_RECORDS_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/formation_clock_field_aligned_menu_odds_do_not_depend_on_when_records_form_2026_09_24.py",
   "title": "A formation clock in the clause: the field-aligned menu's odds do not depend on when records form",
-  "transitive_descendants": 0,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

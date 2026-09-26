@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.5,
+  "load_bearing_score": 7.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/uniform_ice_on_cubic_tori_winding_stiffness_and_correlations_carry_the_sum_rule_stiffness_2026_09_23.py",
   "title": "Ice winding samples and the Gaussian zero-mode distinction",
-  "transitive_descendants": 7,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

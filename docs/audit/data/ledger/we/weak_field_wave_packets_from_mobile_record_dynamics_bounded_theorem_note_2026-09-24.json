@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,7 +27,7 @@
     "electric_and_magnetic_dynamics_from_record_motion_bounded_theorem_note_2026-09-24",
     "uniform_local_ring_dynamics_with_slow_record_formation_bounded_theorem_note_2026-09-24"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 8,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -35,7 +35,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 7.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/weak_field_wave_packets_from_mobile_record_dynamics_2026_09_24.py",
   "title": "Weak field wave packets from the supplied mobile-record construction",
-  "transitive_descendants": 0,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

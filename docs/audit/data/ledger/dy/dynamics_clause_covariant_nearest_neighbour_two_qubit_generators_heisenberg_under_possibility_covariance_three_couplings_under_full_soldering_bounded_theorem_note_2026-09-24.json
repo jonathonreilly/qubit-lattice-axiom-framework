@@ -26,13 +26,13 @@
     "minimal_axioms",
     "the_soldering_menu_four_actions_of_the_proper_cubic_rotations_on_qubit_possibilities_and_what_each_lets_formation_build_bounded_theorem_note_2026-09-22"
   ],
-  "direct_in_degree": 11,
+  "direct_in_degree": 12,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.307,
+  "load_bearing_score": 10.087,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/dynamics_clause_covariant_nearest_neighbour_two_qubit_generators_2026_09_24.py",
   "title": "The covariant nearest-neighbour two-qubit generator",
-  "transitive_descendants": 13,
+  "transitive_descendants": 16,
   "verdict_rationale": null
 }

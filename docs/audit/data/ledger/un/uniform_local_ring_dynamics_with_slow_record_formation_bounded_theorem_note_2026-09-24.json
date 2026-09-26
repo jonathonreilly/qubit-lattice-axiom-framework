@@ -27,7 +27,7 @@
     "hardcore_record_motion_generates_gauge_rings_bounded_theorem_note_2026-09-24",
     "homogeneous_field_star_penalty_for_mobile_records_bounded_theorem_note_2026-09-24"
   ],
-  "direct_in_degree": 3,
+  "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -38,7 +38,7 @@
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.858,
+  "load_bearing_score": 8.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -59,6 +59,6 @@
   },
   "runner_path": "scripts/uniform_local_ring_dynamics_with_slow_record_formation_2026_09_24.py",
   "title": "Uniform local ring dynamics with slow record formation",
-  "transitive_descendants": 40,
+  "transitive_descendants": 71,
   "verdict_rationale": null
 }

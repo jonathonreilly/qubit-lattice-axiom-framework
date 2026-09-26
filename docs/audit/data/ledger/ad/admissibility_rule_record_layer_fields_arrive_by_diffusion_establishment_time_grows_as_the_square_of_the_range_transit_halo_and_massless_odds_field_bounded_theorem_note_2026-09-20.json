@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.2,
+  "load_bearing_score": 4.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/admissibility_rule_record_layer_fields_arrive_by_diffusion_establishment_time_square_of_the_range_2026_09_20.py",
   "title": "Walk-kernel tail bounds and low-frequency relaxation bounds for supplied record-layer updates",
-  "transitive_descendants": 12,
+  "transitive_descendants": 15,
   "verdict_rationale": null
 }

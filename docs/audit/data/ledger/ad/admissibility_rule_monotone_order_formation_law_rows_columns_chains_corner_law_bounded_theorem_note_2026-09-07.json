@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 7.748,
+  "load_bearing_score": 7.822,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_2026_09_07.py",
   "title": "The formation law of every monotone order is one law whose rows and columns are path chains: the corner law and finite boundary witnesses",
-  "transitive_descendants": 18,
+  "transitive_descendants": 19,
   "verdict_rationale": null
 }

@@ -29,13 +29,13 @@
     "minimal_axioms",
     "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.907,
+  "load_bearing_score": 5.748,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_interaction_through_the_odds_of_unformed_sites_field_equation_massless_surface_2026_09_20.py",
   "title": "Records interacting through the odds of unformed sites: contents interact across empty sites and masses do not; the field equation of the odds, its massless surface 5p = 7q + 4r, a proved screened regime, and no first-order mass channel at the neutral scale",
-  "transitive_descendants": 14,
+  "transitive_descendants": 18,
   "verdict_rationale": null
 }

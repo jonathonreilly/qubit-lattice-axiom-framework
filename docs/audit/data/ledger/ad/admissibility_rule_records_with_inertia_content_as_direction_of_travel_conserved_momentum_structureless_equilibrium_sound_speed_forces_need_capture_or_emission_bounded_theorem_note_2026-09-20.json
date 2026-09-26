@@ -28,13 +28,13 @@
     "minimal_axioms",
     "admissibility_rule_formation_law_versus_static_law_finite_window_classification_bounded_theorem_note_2026-09-06"
   ],
-  "direct_in_degree": 9,
+  "direct_in_degree": 10,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.085,
+  "load_bearing_score": 8.907,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/admissibility_rule_records_with_inertia_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_2026_09_20.py",
   "title": "Conservation, stationary uniform measures and conditional sound closure for a supplied inertial gas",
-  "transitive_descendants": 11,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

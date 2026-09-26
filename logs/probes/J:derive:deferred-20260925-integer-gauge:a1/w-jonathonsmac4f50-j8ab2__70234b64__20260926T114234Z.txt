@@ -1,0 +1,48 @@
+== A  encoding
+PASS A1 each row is the six neighbours of its link site, coefficients +-1; doubled encoding = formula
+== B  generating functions
+PASS B1 (Gp)_j(x) = [t^x] sum_i (1-t_i) Q_ij on 40 random integer vectors
+== C  planar moves
+PASS C1 named planar move = Airy(monomial) in each plane; Gv=0; support 10 on 9 sites; L1 12
+== D  proof identities (symbolic)
+PASS D1 Airy triple solves the planar rows identically
+PASS D2 no diagonal: rows 1,2 solved, row 3 = -2 u1 u2 a (so a = 0 in characteristic 0)
+PASS D3 one diagonal: the derived family solves all three rows
+PASS D4 one diagonal: rows 2,3 solved by (u3 b, u2 b, -u1 b); row 1 = u1 Q11 + 2 u2 u3 b
+PASS D5 a two-term Laurent polynomial with a double root at t=1 is zero when m != n :: [{A: 0, B: 0}]
+PASS D6 three nonzero integers with zero sum have L1 >= 4
+== E  box-free exhaustive search (connected supports through a lex-minimal anchor)
+   budget 12: 1954858 nodes, 103 closed leaves, 167s
+PASS E1 no nonzero rational (hence integer or real) move has support <= 9 :: 3 rank-deficient leaves, sizes [10, 10, 10]
+PASS E2 every rational move with connected support <= 12 is a multiple of a planar move (3 planes) :: [(10, 10, 12), (10, 10, 12), (10, 10, 12)]
+== F  consequences over Z (proof in ATTEMPT.md; E is the independent confirmation)
+PASS F1 minimum support of a nonzero integer move = 10, attained exactly by c*(planar move), c != 0
+PASS F2 minimum L1 = 12 (L1 <= 12 forces support <= 12, hence c*planar with L1 = 12|c|); equality iff +-planar
+PASS F3 unit-entry (qubit-step) moves: support >= 13 by E2 (planar has entries -2) and even L1 -> >= 14
+== G  clock slots Z_N (same leaves; a Z_N move's minimal support is connected and passes the same row test)
+   N= 2: min support 6, min cyclic steps 6, minimizers (support,diag,face) [(6, 0, 6)] x1
+   N= 3: min support 10, min cyclic steps 10, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N= 4: min support 6, min cyclic steps 12, minimizers (support,diag,face) [(6, 0, 6), (10, 6, 4)] x7
+   N= 5: min support 10, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N= 6: min support 6, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N= 7: min support 10, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N= 8: min support 6, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N= 9: min support 10, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N=10: min support 6, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N=11: min support 10, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N=12: min support 6, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+   N=13: min support 10, min cyclic steps 12, minimizers (support,diag,face) [(10, 6, 4)] x6
+PASS G1 N=2: six-face cube is the minimum (support 6, 6 steps, the only minimizer); planar mod 2 has 8 slots
+PASS G2 N=4: minimum 12 steps shared by the planar moves and the half-period cube (2 on six faces) :: (6, 12, [(6, 0, 6), (10, 6, 4)], 7)
+PASS G3 odd N: minimum support 10 (the integer value) for N = 3,5,7,9,11,13 :: {3: (10, 10), 5: (10, 12), 7: (10, 12), 9: (10, 12), 11: (10, 12), 13: (10, 12)}
+PASS G4 N=3: the planar move needs only 10 steps (-2 = +1 mod 3) :: (10, 10, [(10, 6, 4)], 6)
+PASS G5 N >= 5 odd and N = 6..13: minimum 12 steps (lifting lemma covers N >= 12) :: {5: 12, 6: 12, 7: 12, 8: 12, 9: 12, 10: 12, 11: 12, 12: 12, 13: 12}
+   primes dividing a Smith invariant (or rational rank deficiency), by leaf size: {6: ['2'], 8: ['2'], 9: ['2'], 10: ['2', 'rank<cols'], 11: ['2'], 12: ['2']}
+PASS G6 all N: a Z_N move with support <= 9 exists iff N is even (only the prime 2 divides an invariant of a leaf of size <= 9) :: ['2']
+== H  order-12 amplitude (rotor slots, H0 = U sum_rows (Gv)^2, V = -h sum_s (X_s + X_s^dag))
+PASS H1 monotone partial states form a 3*3*2^8 = 2304 box
+PASS H2 only the two endpoints have zero syndrome
+PASS H3 A = sum over monotone paths of prod 1/|Gw|^2 = 111150053/31850496 :: 111150053/31850496
+== done in 167s
+SUMMARY: PROVED box-free: every nonzero finite-support integer move of the landed tensor stencil on Z^3 has support >= 10 and L1 >= 12, with equality exactly for the planar moves (algebraic proof + independent exhaustive connected-support search to size 12); rotor off-diagonal effective terms start at order 12 and are exactly the planar moves; unit-entry moves need >= 14 slots; Z_N: support <= 9 iff N even (every N); steps N=2 cube 6, N=3 planar 10, N=4 cube ties at 12, every other N 12
+HIT box-free minimum move of the tensor stencil: support 10 / L1 12 exactly the planar pieces, no coefficient box, radius or anchor restriction

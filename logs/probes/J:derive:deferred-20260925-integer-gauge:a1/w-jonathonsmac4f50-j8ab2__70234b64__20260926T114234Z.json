@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260925-integer-gauge:a1",
+ "type": "judgment",
+ "lane": "stronger-claim-research",
+ "worker": "w-jonathonsmac4f50-j8ab2",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-integer-gauge/w-jonathonsmac4f50-j8ab2/check.py",
+ "seed": 22954,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "70234b64",
+ "started_utc": "20260926T114234Z",
+ "elapsed_s": 167.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED box-free: every nonzero finite-support integer move of the landed tensor stencil on Z^3 has support >= 10 and L1 >= 12, with equality exactly for the planar moves (algebraic proof + independent exhaustive connected-support search to size 12); rotor off-diagonal effective terms start at order 12 and are exactly the planar moves; unit-entry moves need >= 14 slots; Z_N: support <= 9 iff N even (every N); steps N=2 cube 6, N=3 planar 10, N=4 cube ties at 12, every other N 12"
+ },
+ "review": "Algebraic box-free proof (Laurent projection + divisibility) that every nonzero finite-support integer move of the landed tensor stencil on Z^3 has support >= 10 and L1 >= 12, equality exactly the planar moves; confirmed independently by an exhaustive connected-support search to size 12; rotor off-diagonal effective terms start at order 12 (A re-derived); Z_N table and all-N support<=9 iff N even. Same-family provenance disclosed.",
+ "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9077 or PR9095: determine one unrestricted integer-support lower bound beyond the previous coefficient-box MILP search. State coefficient domain and anchor normalization; preserve even-N cube and odd-N freeze distinctions and corrected effective-Hamiltonian factors. One exact dual certificate or counterexample is sufficient. Other phase and compact-oscillator obligations remain ranked open. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9066 at a3f5b3befaaa3ac264377c45e9f0938c587fe468, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9069 at 20bea6fc2965f7b3981e83c0d13e2d1dd0b942c2, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9072 at 44851ea327976031e29defbd0c8dcc6f73dd374b, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9077 at bf3663ce79efd91384dd41b617f9403814a7c623, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9081 at 772e7fba3402ec3ab3562d23abb9c03be10d1965, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9095 at d3ac4167f983b583cd38dcea3212e4bb8ca98704, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9145 at 43cbf9f857e20b654f9a1d0f94a99bc360594271. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-integer-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+ "stdout_sha256": "abed7fc9834d203c661dd0b4a4f2a54b74da661b6d77284af2d27ae99adc6753",
+ "stdout_tail": "0, 12)}\nPASS G4 N=3: the planar move needs only 10 steps (-2 = +1 mod 3) :: (10, 10, [(10, 6, 4)], 6)\nPASS G5 N >= 5 odd and N = 6..13: minimum 12 steps (lifting lemma covers N >= 12) :: {5: 12, 6: 12, 7: 12, 8: 12, 9: 12, 10: 12, 11: 12, 12: 12, 13: 12}\n   primes dividing a Smith invariant (or rational rank deficiency), by leaf size: {6: ['2'], 8: ['2'], 9: ['2'], 10: ['2', 'rank<cols'], 11: ['2'], 12: ['2']}\nPASS G6 all N: a Z_N move with support <= 9 exists iff N is even (only the prime 2 divides an invariant of a leaf of size <= 9) :: ['2']\n== H  order-12 amplitude (rotor slots, H0 = U sum_rows (Gv)^2, V = -h sum_s (X_s + X_s^dag))\nPASS H1 monotone partial states form a 3*3*2^8 = 2304 box\nPASS H2 only the two endpoints have zero syndrome\nPASS H3 A = sum over monotone paths of prod 1/|Gw|^2 = 111150053/31850496 :: 111150053/31850496\n== done in 167s\nSUMMARY: PROVED box-free: every nonzero finite-support integer move of the landed tensor stencil on Z^3 has support >= 10 and L1 >= 12, with equality exactly for the planar moves (algebraic proof + independent exhaustive connected-support search to size 12); rotor off-diagonal effective terms start at order 12 and are exactly the planar moves; unit-entry moves need >= 14 slots; Z_N: support <= 9 iff N even (every N); steps N=2 cube 6, N=3 planar 10, N=4 cube ties at 12, every other N 12\nHIT box-free minimum move of the tensor stencil: support 10 / L1 12 exactly the planar pieces, no coefficient box, radius or anchor restriction\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8ab2",
+  "at_utc": "20260926T114548Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9272. Box-free support >= 10 / L1 >= 12 for the landed tensor stencil, equality exactly planar moves; algebraic proof + exhaustive connected-support search; Z_N table; same-family provenance, cross-model confirmation needed.",
+  "by": "w-jonathonsmac4f50-j8ab2",
+  "at_utc": "20260926T114548Z"
+ }
+}

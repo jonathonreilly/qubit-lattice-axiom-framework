@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260925-nearest-neighbour-finite-coupling:a1",
+ "type": "judgment",
+ "lane": "stronger-claim-research",
+ "worker": "w-macbookpro9927a-jce96",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-nearest-neighbour-finite-coupling/w-macbookpro9927a-jce96/check.py",
+ "seed": 19311,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a4064b74",
+ "started_utc": "20260926T104151Z",
+ "elapsed_s": 3.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL coin-blind excluded pair on Z^3: exact Feshbach control of the levels for |g| >= 20, the exact g^-3 term and the first finite-coupling curvature corrections; block 142's axis-sum bound 3/2 is exceeded at next order on two fermion states"
+ },
+ "review": "Recovery of block 142 (PR9227 frozen 5c7c52847e; landed 25b8c1874f = main 78db61c32a, sha256-verified; review unit-29 scope preserved). Coin-blind bond term: exact Feshbach series, odd orders vanish, ||H2|| <= 2 sqrt 3; for |g| >= 20 the 12 sector levels are contraction fixed points within 1856/(|g|-1)^5 of the L4-truncated ones. Omega = L2 + (L4 - L2^2/2)/g^2 with exact L4: rest shifts and O(g^-2) axis-sum corrections; the fermion 3/2 level reaches 3/2 + 3/(2g^2) on two states, so block 142's bound 3/2 is leading order only. Float box cross-check at g = 20 agrees to 2.5e-5.",
+ "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: The accepted pair-speed result is a leading large-coupling Gram formula at fixed nonzero isolated coin eigenvalue and gap. Derive controlled finite-coupling corrections, handle closing gaps/projector coincidences, and test physical inertial/passive response without inferring it from curvature alone. Original PR9227 and its branch remain recovery inputs. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9227 at 5c7c52847eeb03489813c0ddf3094759f9bd7a9c, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9229 at 136eb4f7a61b7e1b98b829593bace4f8b7cbc240, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9230 at 6b91f8337245036fbf155ef06f0c20414f18b4b9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9233 at 937d5cfd95f419e5f68f9602e6cd13dd701f1a52. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-charge-threshold-and-transport:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-nearest-neighbour-finite-coupling/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+ "stdout_sha256": "e98df3e29252aa9843b31ec71de0081f620e7eeca5ce0bb506e6ca953f6ff68a",
+ "stdout_tail": " 31/2. The fermion 3/2 level reaches 3/2 + 3/(2g^2) on two states\nI1 ok E = sqrt(g^2 + 2X): E'' = X''/E0 - X'^2/E0^3, so at a rest point (X' = 0) the inertial K^2-form of E is the energy-squared form W divided by E0, at every order in 1/g\nC1 ok [float] 3^3-box exact diagonalisation at g = 20, K = 0 and (0.3, 0.2, -0.1), both sectors: 12 levels each; |E - Omega prediction| <= 2.5e-05, while the leading order misses by >= 8.7e-04\nchecks: all passed\nSUMMARY: PARTIAL coin-blind excluded pair on Z^3: exact Feshbach control of the levels for |g| >= 20, the exact g^-3 term and the first finite-coupling curvature corrections; block 142's axis-sum bound 3/2 is exceeded at next order on two fermion states\nHIT: Block 142's excluded pair, coin-blind bond term g: the exact Feshbach series F(E) = g + L2/E + L4/E^3 + ... (odd orders vanish, ||H2(K)|| <= 2 sqrt 3) puts the 12 levels of each exchange sector in |E - g| <= 1 for |g| >= 20, within 1856/(|g|-1)^5 of the L4-truncated levels, for every K. To relative order g^-2, E^2/2 - g^2/2 is the spectrum of L2 + (L4 - L2^2/2)/g^2 (L4 by exact path enumeration): rest values omega + delta/g^2, (omega, delta) = (0,0), (1,9/2), (4,8), (5,-15/2) for fermions, (1,9/2), (2,6), (5,-15/2) for bosons; curvature axis sums 7/10 + 6/(5g^2), 3/2 + {3/2, 3/2, -21/2}/g^2, -1/2 - 12/g^2, -17/10 + 123/(10g^2) (fermions), 3/2 - 5/(2g^2), 1/2 - 7/g^2, -5/2 + 31/(2g^2) (bosons). So the bound 3/2 holds at leading order only: two fermion states reach 3/2 + 3/(2g^2).\n",
+ "checked": {
+  "by": "w-macbookpro9927a-jce96",
+  "at_utc": "20260926T104155Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

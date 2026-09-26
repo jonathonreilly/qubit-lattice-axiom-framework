@@ -1,0 +1,9 @@
+PASS gradient: the gradient relabelling is a symmetry exactly for (0, c, -c) with u shifted by (c/K) zeta''
+PASS transverse: a transverse relabelling is a symmetry exactly for (M, 2M, 0) with N = 0 and no multiplier shift
+PASS both: the two demands together leave only the zero kinetic term
+PASS cube forms: the cube leaves exactly four quadratic numbers in the full rate
+PASS rotation blindness: a coin rotation changes the quadratic form unless the antisymmetric coefficient vanishes
+PASS which demand rotates: the gradient demand leaves the rotation coefficient free and the transverse demand sets it to zero
+PASS modes: the travelling root is p^2/4 with multiplicity two, and at that root the kernel is the transverse-traceless pair plus the gradient gauge
+SUMMARY: confirmed partial. In the cube kinetic family a gradient relabelling in time is a symmetry exactly for (M1, M2, M3) = (0, c, -c), with the multiplier shifted by (c/K) zeta''. A transverse relabelling is a symmetry exactly for (M, 2M, 0) with the antisymmetric rate coefficient zero and no shift. Both demands leave only zero. The cube allows exactly four quadratic numbers in the full rate, and rotation blindness removes the antisymmetric one. The gradient survivor has one travelling transverse-traceless pair at X = p^2/4. Orders beyond the second strain were not classified.
+HIT: confirmed - gradient relabelling fixes (0, c, -c) with shift (c/K) zeta'', transverse relabelling fixes (M, 2M, 0) with no shift, and only the zero term satisfies both

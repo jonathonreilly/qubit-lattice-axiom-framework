@@ -4,8 +4,9 @@ within block 54's walk and block 78's one record per site, with any bounded herm
 relative range and any placement in block 143's class, all as landed: a kept current forces the one-body placement current to
 vanish; the resolvent identity [g, T(z)] = (h0 - z)[F2, R''(z)](h0 - z) makes the on-shell T-matrix vanish at almost every energy;
 the determinant identity makes the perturbation determinant real on the continuum; bounded spectral densities (block 143 T6)
-make it identically one; the removed on-site states make it vanish at their energy, a contradiction. The analytic steps are
-proved in the note from named standard theorems; this runner checks the algebraic steps and the landed inputs exactly (a harvest
+make it identically one; the removed on-site states make it vanish at their energy, a contradiction. The same holds for any
+number of records, and for the total two-step momentum in any such placement (the proof uses only the current's form). The
+analytic steps are proved in the note from named standard theorems; this runner checks the algebraic steps and the landed inputs exactly (a harvest
 of probe #9251, same model family, line-checked by the supervisor; not adopted).
 
 B (the one-body lemma): the double-commutator identity and the partial trace.
@@ -359,7 +360,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted")
+    print("scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved, nor is any local two-step momentum of the same form; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

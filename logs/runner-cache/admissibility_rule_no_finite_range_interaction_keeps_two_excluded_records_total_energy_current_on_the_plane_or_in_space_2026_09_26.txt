@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_2026_09_26.py
-runner_sha256: 2c0f09543e030d55a39ff000b5268e2ba029d11a1fa8edfbfeb84311f299b215
-input_fingerprint_sha256: 50a584495e51515f6fb87d3d73829d125df0c79dff348d444cd66dcdd95cb5d5
+runner_sha256: 4bc9b0ec626f7eacf6679f8b8fb90ef17bfca9c7895441b57311a796ea240846
+input_fingerprint_sha256: 60d8dee1955af2635929ab46bffbfaaa5ec2eda6e1f3a9021762ebc1d6fa467a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.58
+elapsed_sec: 0.79
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -29,7 +29,7 @@ per_mode: executed - push-through, the determinant product, the determinant iden
 per_block: executed - block 143's T1 minor and T6 cone tilts recomputed; the removed state's zero of the determinant on a chain; the cluster reduction
 lattice_wide: checked and not executed - the density, boundary-value and H^2 steps on the torus are proved in the note from named theorems
 PASS: G1 the five N5 resolution lines are printed
-scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted
+scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved, nor is any local two-step momentum of the same form; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted
 TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----

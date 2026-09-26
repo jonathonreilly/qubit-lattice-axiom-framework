@@ -5,4 +5,5 @@
 - **The theorem.** Two records under one record per site, on Z^2 or Z^3, either exchange sign; any bounded hermitian translation-invariant interaction of finite relative range; any placement in block 143's class: the total energy current is not conserved.
 - **The route.** The one-body placement current is forced to vanish; the resolvent identity makes the pair transparent at almost every energy; the determinant identity makes the perturbation determinant real on the continuum; bounded spectral densities (block 143 T6) put it in H^2 of both half-planes, so it is one; the removed states make it vanish at their energy.
 - **T2 (added after the first push).** Any number of records N >= 2 and any finite-range interaction of any body number: separating all but two records reduces a kept current exactly to the pair's (runner I1).
+- **T3.** The proof uses only the current's form, so the total two-step momentum in any local placement is not conserved either: under exclusion, records conserve energy locally but neither the energy current nor a local two-step momentum.
 - **Not covered.** Infinite-range interactions, non-local placements.

@@ -21,12 +21,19 @@
  "stdout_sha256": "5d31a648fe35b21a6c7bbd11c9a1197f73e1a834acae8055f90e0b32bec7a3bb",
  "stdout_tail": "nd difference -(12E^2 + 2), unbounded, with steps 24E + 12; so for small u > 0 the phases uK(12E^2+2) sweep past pi/2 in steps < pi/2 and ||(1/u)[U_u(W), W*]|| >= sqrt 2/u: the bounded-quotient route needs the quadratic (bounded mixed difference) electric term\nchecks: all passed\nSUMMARY: PARTIAL #9208's Wilson-quadrature impulse response has an initial-lag slope for every normal state (no electric moment), with explicit slope operators; the review PRE's bounded strong-quotient route is validated independently; the route needs the bounded mixed second difference; #9199 and #9206's stronger claims stay open\nHIT: In #9208's common matter/rotor law on a fixed finite cubic torus, for every normal initial density rho_0, every t >= 0 and every finite integer loop nu, the lag slope lim_{u->0} chi_{a<-b}(t,u)/u of the Wilson-quadrature impulse response exists and equals Tr rho_t [Q_b,[KD,Q_a]], with R_XX = KA - K/2 (W^2+W^-2)A, R_YY = KA + K/2 (W^2+W^-2)A, R_XY = R_YX = iK/2 (W^2-W^-2)A, A = sum_e v_b nu_e^2; the quadrature sum is Tr rho_t F_nu = 2K<A>_t (4K<v_b1 + v_b2>_t on a plaquette). No moment is needed: the gated electric term's mixed second difference is 2 eps tau A exactly, so (i/u)[U_u(Q_a),Q_b] is bounded by 2K||A|| and converges strongly, and H4 and the formation channels enter through a bounded Duhamel term that vanishes on Q. This removes the landed note's fourth-moment hypothesis for its (3)-(5); the route fails for a quartic electric term (unbounded mixed difference).\n",
  "checked": {
-  "by": "w-macbookpro9927a-jc63a",
-  "at_utc": "20260926T105348Z",
+  "by": "w7",
+  "at_utc": "20260926T105417Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha eeaa8a0a differs from the current HEAD 3225d2aa (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage (worker w7): #9208's Wilson-quadrature impulse response has an initial-lag slope for every normal state with explicit slope operators (sum F = 2KA); exact mixed-second-difference identity, strong limit, bounded Duhamel; removes the landed fourth-moment hypothesis for its (3)-(5); independent validation of the review PRE route (same three steps, uniformity in r made explicit); quartic electric term breaks the route. #9199/#9206 claims untouched. Referee target: S5.",
+  "by": "w7",
+  "at_utc": "20260926T105417Z"
  }
 }

@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_one_record_per_site_a_collision_changes_the_records_two_step_momentum_only_at_third_order_in_their_offsets_from_the_cones_2026_09_26.py
+runner_sha256: 3c723a562361411c2af01fa37de2ca66fc93682d6a4a7cd0279ddc045561b244
+input_fingerprint_sha256: 7c21cc0dcf0b0a648270ccb893d86dde9c558af51b3e0e9e99e347d7f2ca716e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.43
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk and one record per site are supplied; the memo does not define a time metric)
+PASS: B1 at a corner A in {0, pi}, sin(A + delta) cos(A + delta) = sin(delta) cos(delta) = delta - (2/3) delta^3 + (2/15) delta^5 + ...: odd in delta, so no second-order term
+PASS: B2 crystal momentum: with offset sums in (-pi/2, pi/2) and corners in {0, pi}, every congruence mod 2 pi on a rational grid (88 cases over all corner channels) has equal offset sums: the sum is conserved exactly in every channel
+PASS: B3 the dispersion eps(k) = (sum_a sin^2 k_a)^(1/2) is subadditive, eps(a + b) <= eps(a) + eps(b), at 192 exact point pairs with rational sines and cosines; with sin^2(pi/4) = 1/2, a pair of energy below sqrt(2)/2 keeps every offset below pi/4, and a band pair (+, -) has energy at most eps(K) <= eps(k1) + eps(k2)
+PASS: C1 the compression to the complement of a removed unit vector c has resolvent G = R0 - R0|c><c|R0/<c|R0|c> (exact, a six-state model): the hard core scatters through the rank-one T-matrix |c><c|/G_cc
+PASS: C2 for a rank-one kernel <q'|c><c|q>/G_cc the rate-weighted change of g from q is |<c|q>|^2 rho_c (gbar - g(q))/|G_cc|^2, with gbar the contact-weighted mean: the same outgoing distribution for every incoming state (exact on a five-state shell)
+PASS: D1 on the massless shell |d1| + |d2| = E with total offset (p, 0, 0) the cubic of the offsets is p^3/4 + 3 p x^2 along d1 = (p/2 + x, y, 0), d2 = (p/2 - x, -y, 0): at E = 5/2, p = 1 it is 79/16 at (5/4, 0) and 1/4 at (0, sqrt 21/4), so the third-order change is not constant on the shell
+PASS: E1 the singlet's weight in the band pair (s1, s2) with spinor directions n1, n2 is (1 - s1 s2 n1.n2)/4, positive except where n1.n2 = s1 s2, a null set of the shell
+PASS: E2 T4: (1 - SWAP)/2 is the singlet projector, so at leading order an antisymmetric pair's plane wave on a finite set of relative positions is (sum_r |r>) (x) P_s u, and any operator there gives the on-shell form <u'|s> tau <s|u>: the same-corner coin factorization only; threshold regularity and channel restrictions are extra hypotheses
+PASS: E3 three-dimensional same-corner angular comparison at small K/E: the singlet kernel is 1/4 and the triplet kernel c^2/4 (c the cosine of the scattering angle), with angular means <c^2> = 1/3 and 3/5, both below one; the coincident triplet is irreducible under the quarter turns (its commutant is the scalars), so a rotation-covariant triplet amplitude is scalar; exchange symmetry alone is insufficient
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the corner identity sin(A + d) cos(A + d) = sin d cos d and the series to fifth order
+per_site: executed - the offsets' sum in every corner channel on a rational grid (congruence mod 2 pi forces equality)
+per_mode: executed - the compression's resolvent (rank-one T-matrix) and the rank-one loss formula, exactly
+per_block: executed - the cubic of the offsets on the massless shell (a family and two exact points); the singlet's band weight
+lattice_wide: checked and not executed - the null-set statements on lattice shells rest on block 143 T1 and analyticity, proved in the note
+PASS: G1 the five N5 resolution lines are printed
+scope: two records of the walk under one record per site, no added interaction; near the corners a collision changes the pair two-step momentum only at third order in the offsets, in every corner channel; for antisymmetric pairs the rank-one hard core makes every incoming state on a shell scatter alike and the change nonzero for almost every incoming state, with generic cubic variation, not every state or scaling; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

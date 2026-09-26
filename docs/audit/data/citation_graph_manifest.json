@@ -1,6 +1,6 @@
 {
- "edge_count": 15135,
- "node_count": 6774,
+ "edge_count": 15150,
+ "node_count": 6777,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -874,6 +874,10 @@
    "deps_hash": "2e36a66177dc",
    "out_degree": 6
   },
+  "admissibility_rule_every_clock_profile_a_relabelling_forces_the_whole_momentum_constraint_and_no_positive_inertia_can_be_added_to_the_member_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "ee2f07ab3351",
+   "out_degree": 9
+  },
   "admissibility_rule_exact_books_need_records_that_never_scatter_or_bind_nothing_local_keeps_them_under_one_record_per_site_bounded_theorem_note_2026-09-25": {
    "deps_hash": "75e3c4308656",
    "out_degree": 4
@@ -972,6 +976,10 @@
   },
   "admissibility_rule_monotone_order_formation_law_rows_columns_chains_corner_law_bounded_theorem_note_2026-09-07": {
    "deps_hash": "1b3132f0c69b",
+   "out_degree": 3
+  },
+  "admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "50bb1e404a3d",
    "out_degree": 3
   },
   "admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_the_walks_force_is_a_bond_energy_times_a_clock_difference_and_no_ledger_can_demand_it_exactly_bounded_theorem_note_2026-09-23": {
@@ -1261,6 +1269,10 @@
   "admissibility_rule_two_step_content_keeps_symmetric_books_where_the_member_keeps_its_fields_and_a_bond_shift_keeps_every_constraint_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25": {
    "deps_hash": "2ed995b942db",
    "out_degree": 9
+  },
+  "admissibility_rule_under_one_record_per_site_a_collision_changes_the_records_two_step_momentum_only_at_third_order_in_their_offsets_from_the_cones_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "50bb1e404a3d",
+   "out_degree": 3
   },
   "admissibility_rule_under_one_record_per_site_the_a_terms_levels_are_frozen_or_out_of_reach_the_middle_level_is_one_record_per_site_and_a_full_lattice_has_a_constant_generator_bounded_theorem_note_2026-09-24": {
    "deps_hash": "a3123139c25c",

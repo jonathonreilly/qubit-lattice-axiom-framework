@@ -1,0 +1,21 @@
+== A/B structure
+PASS A N20: every nonzero entry of A(k) joins the two sides (bipartite); |A| = |B| = 17
+PASS B N20: support of M(k) has maximum matching 16 < 17: at least 1 zero singular value(s) at every k, so at least 2 zero energies of iA(k) at every k :: matching 16
+PASS A N16: every nonzero entry of A(k) joins the two sides (bipartite); |A| = |B| = 14
+PASS B N16: support of M(k) has maximum matching 12 < 14: at least 2 zero singular value(s) at every k, so at least 4 zero energies of iA(k) at every k :: matching 12
+== C/D gauge, deletion and exact lower bounds, every translation-invariant sector
+PASS D N20: in all 16 translation-invariant sectors the gap band is bounded below uniformly in k :: bounds 0.7858 (8 sectors), 0.6079 (8 sectors)
+   example certificate (N20, sector (1, 1, 1, 1)): 3 k-dependent bonds after gauge, deleted rows [0], columns [3], submatrix (16, 16), inertia of M'^T M' - c^2 I (16, 0, 0), entry error bound 5.1e-38
+PASS D N16: in all 8 translation-invariant sectors the gap band is bounded below uniformly in k :: bounds 1.4333 (8 sectors)
+   example certificate (N16, sector (1, 1, 1)): 3 k-dependent bonds after gauge, deleted rows [8], columns [2], submatrix (13, 13), inertia of M'^T M' - c^2 I (12, 1, 0), entry error bound 3.4e-38
+PASS C interlacing lemma: deleting a row r of M gives M*M - M'*M' = r* r >= 0, so each ordered eigenvalue of M*M is >= that of M'*M' (Weyl monotonicity); columns likewise via M^T :: proved in ATTEMPT.md
+== E upper bounds at the minimising momenta (Courant-Fischer, exact test vectors)
+PASS E N20 sector (-1, 1, -1, 1): gap band at k = pi*(1, 0, 1) is <= 0.6179; enclosure [0.6079, 0.6179] :: float value 0.6178728513
+PASS E N20 sector (1, 1, 1, 1): gap band at k = pi*(0, 1, 1) is <= 0.7959; enclosure [0.7858, 0.7959] :: float value 0.7958648426
+PASS E N16 sector (-1, 1, 1): gap band at k = pi*(1, 1, 1) is <= 1.4368; enclosure [1.4333, 1.4368] :: float value 1.4367910873
+== F the corrected lift witness
+PASS F the N16 periodic lift has the 28-edge simple cycle (not a tree), as landed
+PASS F quotient cycle ranks: N20 23-20+1 = 4, N16 18-16+1 = 3
+== done in 5s
+SUMMARY: PROVED (bounded instance): in every translation-invariant gauge sector, for every momentum, the auxiliary Majorana Bloch Hamiltonian of N20 has exactly two zero bands and all other energies |E| >= 0.6079 (8 sectors) or >= 0.7858 (8 sectors); N16 has exactly four zero bands and |E| >= 1.4333 (all 8 sectors); the sampled minima 0.61787/0.79585/1.43679 are attained within these enclosures. Arbitrary (non-periodic) gauge fields and the global flux minimiser remain open
+HIT certified uniform band gaps for the N20/N16 carvings in every translation-invariant sector (gauge + interlacing, exact)

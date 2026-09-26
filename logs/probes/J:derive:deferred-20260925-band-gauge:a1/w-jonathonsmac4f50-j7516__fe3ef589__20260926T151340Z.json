@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260925-band-gauge:a1",
+ "type": "judgment",
+ "lane": "stronger-claim-research",
+ "worker": "w-jonathonsmac4f50-j7516",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-band-gauge/w-jonathonsmac4f50-j7516/check.py",
+ "seed": 35620,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fe3ef589",
+ "started_utc": "20260926T151340Z",
+ "elapsed_s": 5.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (bounded instance): in every translation-invariant gauge sector, for every momentum, the auxiliary Majorana Bloch Hamiltonian of N20 has exactly two zero bands and all other energies |E| >= 0.6079 (8 sectors) or >= 0.7858 (8 sectors); N16 has exactly four zero bands and |E| >= 1.4333 (all 8 sectors); the sampled minima 0.61787/0.79585/1.43679 are attained within these enclosures. Arbitrary (non-periodic) gauge fields and the global flux minimiser remain open"
+ },
+ "review": "Certified uniform band gaps for the relaxed compass carvings: bipartite structure, structural-rank flat bands, gauge moving k-dependence onto 3 winding bonds, row/column deletion interlacing to a k-independent matrix, exact inertia certificates; every translation-invariant sector of N20 (>=0.6079 / 0.7858) and N16 (>=1.4333), upper bounds by Courant-Fischer. Same-family source disclosed.",
+ "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Start with PR9054: preserve the corrected explicit periodic cycle witness and distinguish the N=16 periodic lift from the covering tree. Pick one remaining quantitative global minimization or spectral enclosure claim from the frozen original and prove a bounded instance with rigorous arithmetic, or identify an explicit counterexample. Do not relabel a sampled band gap as global. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9048 at cb641d8f3eedb7d328f92b43865770d3380a4a2f, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9054 at 8fcae64c5b0f50da7377738f2202fd204c0bf706, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9088 at f8430b0f95dec01f974c18f1ea44a81fd2da7ce9, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9097 at 48dd41edef55a29d5bfcc446419bc97e593294d4, https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9112 at b113cf8d0fa87f4a2fffdcc53e9fa639a0ca4a60. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-band-gauge/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+ "stdout_sha256": "1f1cc24814f300bcf6cba0bd80a8c3f8ee061a5f28c749abc927d2bca93b934e",
+ "stdout_tail": ", 0), entry error bound 3.4e-38\nPASS C interlacing lemma: deleting a row r of M gives M*M - M'*M' = r* r >= 0, so each ordered eigenvalue of M*M is >= that of M'*M' (Weyl monotonicity); columns likewise via M^T :: proved in ATTEMPT.md\n== E upper bounds at the minimising momenta (Courant-Fischer, exact test vectors)\nPASS E N20 sector (-1, 1, -1, 1): gap band at k = pi*(1, 0, 1) is <= 0.6179; enclosure [0.6079, 0.6179] :: float value 0.6178728513\nPASS E N20 sector (1, 1, 1, 1): gap band at k = pi*(0, 1, 1) is <= 0.7959; enclosure [0.7858, 0.7959] :: float value 0.7958648426\nPASS E N16 sector (-1, 1, 1): gap band at k = pi*(1, 1, 1) is <= 1.4368; enclosure [1.4333, 1.4368] :: float value 1.4367910873\n== F the corrected lift witness\nPASS F the N16 periodic lift has the 28-edge simple cycle (not a tree), as landed\nPASS F quotient cycle ranks: N20 23-20+1 = 4, N16 18-16+1 = 3\n== done in 5s\nSUMMARY: PROVED (bounded instance): in every translation-invariant gauge sector, for every momentum, the auxiliary Majorana Bloch Hamiltonian of N20 has exactly two zero bands and all other energies |E| >= 0.6079 (8 sectors) or >= 0.7858 (8 sectors); N16 has exactly four zero bands and |E| >= 1.4333 (all 8 sectors); the sampled minima 0.61787/0.79585/1.43679 are attained within these enclosures. Arbitrary (non-periodic) gauge fields and the global flux minimiser remain open\nHIT certified uniform band gaps for the N20/N16 carvings in every translation-invariant sector (gauge + interlacing, exact)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7516",
+  "at_utc": "20260926T151405Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9292. Certified uniform band gaps (exact) for N20/N16 in every translation-invariant gauge sector via gauge + deletion interlacing; flat bands by structural rank. Same-family source; cross-model referee needed.",
+  "by": "w-jonathonsmac4f50-j7516",
+  "at_utc": "20260926T151405Z"
+ }
+}

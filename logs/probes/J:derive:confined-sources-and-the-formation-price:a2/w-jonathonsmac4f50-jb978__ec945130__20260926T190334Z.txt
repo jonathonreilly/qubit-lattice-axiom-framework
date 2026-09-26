@@ -1,0 +1,22 @@
+== X counterexample (R = 1): boxes sharing the low x-wall at distance 2 from y
+PASS X1 side 5, y = (2, 2, 2): source s = (1-A) delta_(y - e1) (interior) lies in B_1(y); the static law's exact solution is psi = k delta_(y-e1) (elimination found every pivot, so the solution is unique)
+PASS X1 side 7, y = (2, 3, 3): source s = (1-A) delta_(y - e1) (interior) lies in B_1(y); the static law's exact solution is psi = k delta_(y-e1) (elimination found every pivot, so the solution is unique)
+PASS X2 identical window data: rest energies and pre-event rates in B_1(y) agree exactly in the two boxes
+PASS X3 same total effective source Q = 1/6 in both boxes :: 1/6
+PASS X4 g_yy differs between the two boxes, so the prices Q/(1 - kQ g_yy) differ :: g_yy = 22/17 vs 34706593/25555530; prices = 102/601 vs 306666360/1805291567
+PASS X5 the source is not point-equivalent at y: its first moment along the wall normal is -1/3 != 0 :: -1/3
+PASS X6 for every R = 1..5 the construction (wall at distance R+1) is supported in B_R(y) with charge 1 - 5/6 = 1/6
+== G Gram identity for nested boxes (exact)
+PASS G1 shared face: side 5 at y = (2,2,2) inside side 7 at y = (2,3,3): G_2 - G_1 = H_1 Gamma H_1^T on I_1 x I_1, and every row of H_1 sums to 1 :: 54 wall points, 9 shared
+PASS G2 the counterexample's outer flux c = H_1^T s is (1/6) delta at the shared wall point y - 2e1, zero elsewhere, so (G_2 - G_1) s = H_1 Gamma c = 0 on all of I_1
+PASS G1 strictly nested: side 5 centred inside side 9 centred: G_2 - G_1 = H_1 Gamma H_1^T on I_1 x I_1, and every row of H_1 sums to 1 :: 54 wall points, 0 shared
+PASS G3 strictly nested: Gamma (= g_2 on the wall of Omega_1, all inside Omega_2) is symmetric positive definite (exact elimination without row exchanges, every pivot > 0)
+== P nonnegative sources: exact Stiemke certificates, cubes of side 5 and 7, R = 1
+PASS P1 269 pairs (side 5 and 7 cubes, y at distance >= 2, different g_yy): each has an exact z > 0 orthogonal to ker(G_1 - G_2)_W, so no nonzero nonnegative window source gives identical window data :: certificates 269, failures 0
+PASS C1 the same 269 pairs: a window-identical source with Q != 0 exists (exact kernel over Q) iff the two boxes share a wall plane at distance R + 1 = 2 from y :: (Q != 0 kernel, shared plane at distance 2): {(True, True): 146, (False, False): 123}
+== F far regime (R = 1, y at distance >= 3 from every wall): exact kernel bounds mod a prime
+PASS F1 11628 far pairs: every pair either has kernel exactly the trivial (1-A)delta_y (Q = 0; exact because dim ker over Q <= dim ker mod p) or equal g_yy, so identical window data give identical prices :: trivial-kernel pairs 10785, larger-kernel pairs 843 (all with equal g_yy)
+PASS F2 every pair with equal g_yy (mod p) is congruent by a symmetry fixing y (so g_yy is equal exactly)
+== done in 186s
+SUMMARY: COUNTEREXAMPLE (block 162's open case): for every R, a window-confined, non-point-equivalent source next to a wall shared by two held boxes (s = (1-A) delta at the site next to the wall, Q = 1/6) has field exactly f in both boxes, so the amplitude and pre-event rates in B_R(y) coincide while the prices Q/(1 - kQ g_yy) differ (exact, sides 5 and 7). Nested boxes: coincidence iff the outer flux H_1^T s sits on shared wall points (Gram identity), so strict nesting forces a point-equivalent source with Q = 0 and nonnegative sources never coincide (proof); in cubes of side 5-7 (269 pairs) a Q != 0 coincidence occurs iff a wall plane at distance R+1 is shared, and nonnegative sources give none (exact certificates); far windows (distance >= 3, R = 1, sides 7-11, 11628 pairs) give identical prices
+HIT: the window does not determine the formation price even for window-confined sources: explicit exact wall-adjacent counterexample for every R

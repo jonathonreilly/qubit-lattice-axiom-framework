@@ -815,3 +815,45 @@ The lenses were programme strategy with a rigour hawk, lattice field theory, and
 - **#9246:** block 143's assumption (A′) certified in exact rational interval arithmetic at two further `K₀`, on `ℤ²` and `ℤ³`. Also the same family.
 
 The other-family referees have been idle since 2026-09-24 21:40Z. Dispatching them is outside this session.
+
+## Forty-first addendum (2026-09-26 morning): a probe harvest; corrections to blocks 147 and 149; the walker's side of the clock algebra
+
+Nothing is adopted. **Provenance:** every probe result below is by a Claude Opus 5.5 worker, the supervisor's own model family, so none counts as a referee. Other-family referees have been idle since 2026-09-24 21:40Z. Blocks 142–145 landed on main at 25b8c1874f with narrowed scopes. The open hand-off PRs are 146–149.
+
+**1. Corrections, verified by the supervisor's own exact checks and pushed.**
+- **Block 149 (#9242, 35f84904e5), from #9261.**
+  - T1's clause for the second step's equality case omitted `s(k) = 0`. The conclusion is unchanged: the first step's equality case gives `|s(k)| = |s(k − q)|`, and the proof now uses that argument.
+  - T3 was stated for every single free walker. It holds within one band, which covers every single-excitation move above the filled sea.
+  - Outside that scope, an interband drop can emit. This is T5 run backwards: at `q = (π/3, 0, 0)` the balance is `√3/2 − 1 < 0` at `k = q` and `√11 − 1 > 0` at `k = (2π/3, π/2, π/2)`.
+  - Two walkers scattering within the upper band can also emit (kinematically open).
+  - The title now begins "Within one band"; the claim id is kept. #9256's nonzero amplitude for T5's channel is recorded, and no rate is claimed.
+- **Block 147 (#9240, bc9ed1b214), from #9262.** T3's "the subtraction is a constant per site" holds in space, not in time.
+  - For the massless sea the stretch only rescales the walk, so the subtraction `−I/ℓ` tracks the sea exactly (`p = ρ/3`). A subtraction fixed in time leaves `I/ℓ₀ − I/ℓ`.
+  - For the massive sea the walks at two lengths do not commute, so a stretch excites the sea at first order. The energy above the instantaneous sea keeps the sea's inertia, `½m_λλ̇²` per site with `m_λ = ⟨μ²s²/(4ℓ²E⁵)⟩`. At leading adiabatic order block 146's constraint becomes `(24αℓ³ − ½m_λ)λ̇² = m`.
+  - T2 now says it uses the instantaneous energy. Its large-length statement stands, since `m_λ ≤ ⟨s²⟩/(4μ³ℓ²)`. Its statement for `m₀ ≤ μ` is not settled once the inertia is included: on `ℤ³`, `m_λ/ℓ³` grows without bound, logarithmically, as `ℓ → 0`.
+
+**2. Confirmations (same family, no error found).**
+- #9252: blocks 146–148. New: block 148's rest-content family starts as the empty lattice's motion, with `p_k = 1 − 2D_k/D`. With unequal lengths, top-speed content loses the exact `1/ℓ` law; block 148 treats rest content only.
+- #9257: block 145, as landed. New: a pinned body couples with `m + 2E_self`.
+- #9253: block 143 T6, by a Groebner certificate.
+
+**3. Other results, which need an other-family referee before any use.**
+- #9249: under block 53's pull, two walkers lose exact books at first order.
+- #9251 claims block 143's deferred unrestricted no-go: two excluded records, a finite-range interaction and a local placement, on `ℤ³` and `ℤ²`, without T3's hypotheses. The landing kept that no-go deferred pending exactly this analytic bridge. It is a candidate for the owner's review queue once refereed.
+- #9260: the neutral two-valued moving-records law has long-range order at large `β` and high density, conditional on the chessboard estimate and a separation lemma (ASSUMED). It has none at low density (exact). This answers block 126's open item N1.3 in part.
+- #9250: the two-place test (block 116 T4) with the walk as test body, in labelled floating point.
+- #9269 (an owner-requested recovery): block 142's excluded pair at finite coupling. Block 142's axis-sum bound `3/2` holds at leading order only; two fermion states reach `3/2 + 3/(2g²)`. This fits the landed scope, which leaves finite-coupling corrections open.
+
+**4. Programme A: the walker's side of the clock algebra (lemma L2).** This is the supervisor's own derivation. It is held in scratch as T5 of block 150, a consolidating note of lemmas L1–L3.
+- Couple the lapse to block 135's `e′ = C₁C₂C₃e`, and take block 136's `P^B`.
+- When one lapse is uniform, the walker's bracket is block 112's `G[ξ]` exactly, with `K/(4α) = 1`. That is the books again.
+- For general lapse pairs no `c` works. Delta lapses two steps apart along an axis give `ξ = 0` on every bond, yet their bracket is nonzero.
+- For every walker momentum and all lapse directions, the defect vanishes through second order in the lapses' wave numbers. At third order it is `(i/4)Σ_j sin k_j cos k_j (q₁_j − q₂_j)(4q₁·q₂ + q₁_jq₂_j)` times the identity.
+- **No local placement closes it.** For any finite-range placement of the walker's energy with the cube's rotations and time reversal, some two sites that share no bond have energies whose commutator is not zero. Take the placement's extreme hop sites in a generic direction: the commutator then has a single-path matrix element, a product of real quaternions, which cannot vanish. For the body-diagonal placement the pair is `u` and `u + (4, 2, 2)`.
+- #9254 found the uniform-lapse closure and the delta-lapse witness first, and that with block 137's `e` no normalization works even at first order. #9259 independently confirms L3's inertia, with a positive cubic-only part for every `μ`, and `β/α ∈ [−0.4648, −0.4645]` at `μ = 0`. The panel's quoted `−0.47` in addendum 40 was off in the second digit.
+- **For the owner's reading question on relabellings in time.** With walker content in the landed placements, "every clock profile is a relabelling" holds only through second order in the profile's wave numbers. Taken exactly, it would impose a further condition on the content: the bracket of the two delta lapses would have to vanish on every allowed state. No finite-range placement with the cube's rotations and time reversal avoids this. Placements of infinite range, and a member whose relabelling fields reach beyond neighbouring sites, are not examined.
+
+**5. Pacing and next steps.**
+- Four unrefereed block PRs remain open, 146–149, above the limit of three. Block 150 (T1–T5; runner 24/0; mutation census 12/12) waits in scratch.
+- Refill w queues two problems. The first checks the placement no-go and asks how far a local placement can push the walker's clock defect beyond third order. The second is the massive sea's inertia in the zero mode.
+- A1, the member's cubic terms, continues in scratch.

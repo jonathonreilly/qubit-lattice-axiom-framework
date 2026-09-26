@@ -1,6 +1,6 @@
 {
- "edge_count": 15129,
- "node_count": 6773,
+ "edge_count": 15135,
+ "node_count": 6774,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3565,6 +3565,10 @@
   "composite_site_network_spin_model_ground_state_is_locally_flux_free_on_the_clusters_searched_with_the_projection_exact_bounded_theorem_note_2026-09-25": {
    "deps_hash": "19b764db97ac",
    "out_degree": 3
+  },
+  "composite_site_network_the_half_fluxed_sectors_that_undercut_the_flux_free_one_on_32_and_64_sites_lose_when_repeated_onto_larger_clusters_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "1acd8d44827c",
+   "out_degree": 6
   },
   "composite_sites_give_the_carved_majoranas_an_exact_charge_one_qubit_per_site_cannot_two_can_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",

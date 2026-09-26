@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/round_five_synthesis_one_exact_identity_per_block_of_the_third_campaign_2026_09_25.py
+runner_sha256: 833c1f651bc4c4f8bbab6962870a20ca41d0acf77e35e47583fd633213911fa7
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 10.82
+status: ok
+----- stdout -----
+[PASS] open PR 9255, the projection rule: the lowest physical energy it assigns over every sector of the 8-site cluster equals the exact ground energy of the full 16-qubit spin model :: J = (1.0, 1.0, 2.5): lowest physical energy over the 32 sectors -35.66888833, exact ground -35.66888833 (difference 1.4e-14); J = (0.4, 1.0, 1.6): lowest physical energy over the 32 sectors -23.61311995, exact ground -23.61311995 (difference 9.9e-14); 1 s
+[PASS] open PR 9264, the matching bound at J_z = 2.5, kappa = 0 on the 256-site cluster: in every winding class of the flux-free sector the z-bond part has every singular value 5 and the x- and y-bond parts norm 2, so Weyl's inequality puts every level at 1 or above :: 256 sites; z-part singular values 5.000000000000 to 5.000000000000; x-part norm 2.000000000000; y-part norm 2.000000000000; lowest level over the eight classes 1.000000000000; 1 s
+[PASS] open PR 9258, the section flux on the 2^3 torus: for every ice state the flux through every plane of an axis is the same, every plaquette flip conserves it, and the sector with one flux quantum lies above the sector with none :: 9600 ice states; every plane equal: True; 49920 flips, flux conserved: True; exact sector grounds -9.026721 (880 states) and -7.399111 (464 states); comparator reading L [E(1) - E(0)] / 2 = 1.62761; 3 s
+[PASS] open PR 9236 (the bound the 20^3 block extends), the averaged f-sum: on the exact 2^3 component at k = pi the cyclic-triple first moment equals 2 u s^2 without any symmetry of the state :: 864 states; E0 -9.026721; per-mode first moments 3.008907, 3.008907, 3.008907; average 3.008906971; 2 u s^2 3.008906971; 3 s
+[PASS] open PR 9263, the f-sum with the single-link term on the 2^3 torus (184320 states, the term on the six links at one vertex): the averaged first moment equals 2 u s^2 + (2t / 3N) sum <sigma^x> exactly, and the central differences of the energy that estimate <sigma^x> agree with its exact value within 1 per cent :: t 0.8, M 1.5: averaged first moment 3.053953358, 2 u s^2 + (2t/3N) sum <sigma^x> 3.053953358 (difference 3.6e-15); sum <sigma^x> 2.401775, central differences of step 0.05 and 0.1 give 2.401638 and 2.401221; t 0.4, M 2.0: averaged first moment 3.023601331, 2 u s^2 + (2t/3N) sum <sigma^x> 3.023601331 (difference 8.4e-15); sum <sigma^x> 0.918975, central differences of step 0.05 and 0.1 give 0.919318 and 0.920343; 10 s
+TOTAL: PASS=5 FAIL=0 (10 s)
+
+----- stderr -----
+

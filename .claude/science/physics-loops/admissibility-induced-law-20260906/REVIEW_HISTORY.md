@@ -209,3 +209,6 @@ Harvest of #9202 (same family) with the other-family confirmation #9294 (14/0; c
 - Section 7: single runner.
 - Section 8: new graph node; manifest regenerated.
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
+
+## 2026-09-26 block 159 v2 — author checks (not a review PASS)
+T4 added (the dictionary to block 157; conditional on it). 16/0; census 7/7 (families A–E and two in F), each in its own family.

@@ -13,6 +13,8 @@ C (T1, the plane): nu2/M^2 = -2(2A1 - C1 + D1 s^2 - 4 D1 s - 2 s^2 - s - 2)/(1 +
 D (T2, bilinear members; T3, the clauses): X = w f(l), Y = g(l) with f'(1) = 1/2; the index equals the comparator's at every
    order iff l f = ((1 + g)/2)^3; five g's; power laws Y = l^gamma give (17 - 6 gamma)/8, the comparator's only at gamma = 1/2;
    capture of the comparator's index at r n = 3 sqrt3 M; the ledger's wall term is A(0) L1, blind to the third-order jet.
+E (T4, conditional on block 157): with the metric e^(2 lam) delta and the lapse e^u the comparator's static density is the
+   curvature member at every order; no zero-derivative redefinition keeps the member's transformation laws.
 Exact arithmetic (sympy); the probe's floating-point radial integrations are not used. The runner scans its own source for
 floating-point literals.
 """
@@ -52,6 +54,7 @@ MUTATION_GATE = {
     "turn_moment_forged": "B",
     "plane_constant_forged": "C",
     "matching_power_forged": "D",
+    "static_reduction_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -251,6 +254,49 @@ def family_d(checks: Checks) -> None:
     checks.check("D3", sp.simplify(wall - L1) == 0, "the ledger's wall term, the far-field flux of dL/du', is A(0) L1 whatever the third-order jet (A1, C1, D1): the named clause that fixes the ledger is blind to the plane")
 
 
+# ============================================================================================ family E
+def family_e(checks: Checks) -> None:
+    import itertools
+    x = sp.symbols("x1:4")
+    lam = sp.Function("lam")(*x)
+    u = sp.Function("u")(*x)
+    g = sp.diag(*[sp.exp(2 * lam)] * 3)
+    gi = g.inv()
+    dd = lambda f, k: sp.diff(f, x[k])
+    Gam = [[[sum(gi[k, l] * (dd(g[l, i], j) + dd(g[l, j], i) - dd(g[i, j], l)) for l in range(3)) / 2 for j in range(3)] for i in range(3)] for k in range(3)]
+
+    def ric(i, j):
+        return sum(dd(Gam[k][i][j], k) - dd(Gam[k][i][k], j) + sum(Gam[k][k][l] * Gam[l][i][j] - Gam[k][j][l] * Gam[l][i][k] for l in range(3)) for k in range(3))
+    Rs = sp.simplify(sum(gi[i, j] * ric(i, j) for i in range(3) for j in range(3)))
+    lap = sum(dd(dd(lam, k), k) for k in range(3))
+    gl2 = sum(dd(lam, k) ** 2 for k in range(3))
+    gul = sum(dd(u, k) * dd(lam, k) for k in range(3))
+    ok_R = sp.simplify(Rs + sp.exp(-2 * lam) * (4 * lap + 2 * gl2)) == 0
+    NsR = sp.exp(u) * sp.exp(3 * lam) * Rs
+    div = sum(dd(sp.exp(u + lam) * dd(lam, k), k) for k in range(3))
+    cfac = sp.Integer(1) if mut("static_reduction_forged") else sp.Rational(1, 2)
+    ok_ibp = sp.simplify(NsR - (-4 * div + 4 * sp.exp(u) * (sp.exp(lam) * gul + cfac * sp.exp(lam) * gl2))) == 0
+    checks.check("E1", ok_R and ok_ibp, "with the metric e^(2 lam) delta and the lapse e^u, the comparator's static density N sqrt(g) R equals -4 div(e^(u+lam) grad lam) + 4 e^u [e^lam grad u.grad lam + (e^lam/2)|grad lam|^2]: in this family it is the curvature member, A = e^lam, C = e^lam/2, D = 0 at every order, third-order jet (1, 1/2, 0)")
+    hs = sp.symbols("h0:6")
+    nn = sp.Symbol("n")
+    fields = list(hs) + [nn]
+    mons = [a * b for a, b in itertools.combinations_with_replacement(fields, 2)]
+    coef = []
+    Fs = []
+    for c in range(7):
+        cs = sp.symbols(f"f{c}_0:{len(mons)}")
+        coef += cs
+        Fs.append(sum(ci * m for ci, m in zip(cs, mons)))
+    S = sp.symbols("S0:6")
+    z = sp.Symbol("zeta")
+    eqs = []
+    for F in Fs:
+        ch = sum(sp.diff(F, hs[i]) * S[i] for i in range(6)) + sp.diff(F, nn) * z
+        eqs += list(sp.Poly(sp.expand(ch), *fields, *S, z).coeffs())
+    sol = sp.solve(eqs, coef, dict=True)
+    checks.check("E2", len(sol) == 1 and len(sol[0]) == len(coef) and all(v == 0 for v in sol[0].values()), f"a zero-derivative quadratic redefinition of (h, n) changes the first-order transformation laws by dF.delta0; with delta0 h (any symmetric S) and delta0 n (any zeta, also for uniform clock profiles) arbitrary at a point, only F = 0 keeps them ({len(coef)} coefficients)")
+
+
 # ============================================================================================ family F
 FENCES = (
     "This note works within blocks 55, 60 and 110 as landed on main (the ledger per tick, the weight-one field energies of rates and lengths with their second-order jet, the curvature member and the index its rays see); it reports which static completions bend rays like the comparator; nothing is adopted and no gravitational claim is made.",
@@ -304,7 +350,7 @@ N5_LINES = (
     "per_element: executed - the completion's field equations order by order (general jets, general beta), and the curvature member's exact exterior",
     "per_site: executed - the turn from the ray invariant and the comparator's index coefficients",
     "per_mode: executed - the plane of third-order jets, the fourth-order slopes, the general-beta formula for a body at rest",
-    "per_block: executed - bilinear members: the matching identity, five choices of g, power laws, the capture minimum; the wall term",
+    "per_block: executed - bilinear members: the matching identity, five choices of g, power laws, the capture minimum; the wall term; the comparator's static reduction and the redefinitions that keep the transformation laws",
     "lattice_wide: checked and not executed - the exact lattice exterior (the long-wave reduction is assumed), and clauses beyond the three named",
 )
 
@@ -335,6 +381,7 @@ def main(argv) -> int:
     family_b(checks)
     family_c(checks)
     family_d(checks)
+    family_e(checks)
     family_f(checks, texts[0])
     family_g(checks)
     if ACTIVE_MUTATION:

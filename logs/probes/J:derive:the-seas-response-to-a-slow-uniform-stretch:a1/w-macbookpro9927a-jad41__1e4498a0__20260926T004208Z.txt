@@ -1,0 +1,19 @@
+P1 ok Tr_spin[E^2X^2-(AX)^2+mu^2X^2] = 4(|s x b|^2+mu^2|b|^2)
+P2 ok 4^3 torus, mu in {0,1,2/3}, 4 stretches: H^2=S^2+mu^2 and Tr(E^2X^2-(HX)^2) = 4 sum_k(|s x b|^2+mu^2|b|^2), exactly
+M1 ok |dh s|^2 equal for E,T2; |s x Es|^2-|s x Ts|^2 = 2w; dilation: s x s = 0
+M2 ok integrand O_h-invariant (48 signed perms); invariant quadratic forms on Sym(3): dim 3 = span{tr h^2, (tr h)^2, sum h_ii^2}
+M3 ok s x (dh s) = 0 for all s iff dh = lam*1: positive on every traceless stretch
+M4 ok Q = a tr h^2 + b (tr h)^2 + c sum h_ii^2 with a=Q_T/2, c=(Q_E-Q_T)/2, b=(Q_A-3Q_E/2)/9; at mu=0 Q_A=0 so b/a = -(1+c/a)/3
+H1 ok D = <2w/E^5> = 3/4 mu^-5 - 65/16 mu^-7 + 8155/512 mu^-9 - 113085/2048 mu^-11 + 11823735/65536 mu^-13 + ...
+H2 ok m_E - m_T = <w/(8E^5)> = D/16 per unit dh; = <w/(2E^5)> = D/4 per unit frame displacement de (dh = -2de); a common factor for all three parts
+H3 ok D >= 2mu^-5[3/8 - (65/32)/mu^2 - (35/8)W+/mu^4], W+ = 583/128; = 44619/262144 > 0 at mu^2 = 16
+L1 ok f_p(t)=<x^p e^{-tx}>: f0=e^-z S0, f1=e^-z(S0-S1)/2, f2=e^-z(S0-2S1+S2)/4, z=t/2 (to t^12); term ratios z^2 rho_m with rho_m decreasing
+L2 ok <w e^-tS> = 3f1^2f0 - f2f0^2 =: A - B; at mu=0 Q_E ~ 2A, Q_T ~ 2B (same factor)
+R1 ok D(0) in [0.12387, 0.12408] (quoted 0.124): 635 cells to t=400.5, Jensen/chord brackets, two-sided tails
+R2 ok mu=0: Q_E/Q_T in [1.39355, 1.39434]; c/a in [0.3936, 0.3943]; b/a in [-0.4648, -0.4645] (> -0.465)
+R3 ok D(mu) > 0 on 25 cells covering mu^2 in [0,16] (least lower margin 1.53e-04); with H3, D(mu) > 0 for every mu >= 0
+K1 ok member on h=2lam*1: (12a+36b)lamdot^2 = -24a lamdot^2 at b=-a; on unit shear T2: +2a
+K2 ok the two values have opposite signs for every alpha != 0: the member's form is indefinite; a PSD form (or any positive sum of them) takes no negative value
+checks: all passed
+SUMMARY: PROVED (family R by interval arithmetic, ASSUMED A1) cranking inertia of the half-filled staggered sea: exact per-mode formula, PSD, dilation part zero iff mu=0, exact hopping coefficients of D, D(mu)>0 for every mu, and no PSD response equals the member's indefinite form
+HIT: For H = sigma.(e s) + mu(-1)^(x1+x2+x3), e = (1+h)^(-1/2), the half-filled sea's cranking inertia per site is m(dh) = <(|s x dh s|^2 + mu^2|dh s|^2)/(16E^5)>, E^2 = |s|^2+mu^2: positive semidefinite, positive on every traceless stretch, dilation part <mu^2|s|^2/(16E^5)>, zero exactly at mu = 0. m_E - m_T = D/16 per unit dh (D/4 per unit frame displacement) with D = <2w/E^5> = 3/4 mu^-5 - 65/16 mu^-7 + 8155/512 mu^-9 - ...; interval arithmetic gives D(0) in [0.1238, 0.1241] and D(mu) > 0 for every mu, so the sea's inertia always carries a positive cubic-only term. At mu = 0, b/a = -(1+c/a)/3 with c/a in [0.3935, 0.3944], b/a in [-0.4648, -0.4645] (quoted -0.47). The member's alpha[tr hdot^2 - (tr hdot)^2] is -24 alpha lamdot^2 on the dilation and +2 alpha on a unit shear, so no positive semidefinite response equals it.

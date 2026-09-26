@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block164: "pushed 2026-09-26 without a PR (pacing); own: relabellings in time with clock profiles varying in space need no new term through first order in the strain; block 163's coupling is needed; nothing adopted"

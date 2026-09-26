@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_relabellings_in_time_whose_clock_profile_varies_in_space_need_no_new_term_2026_09_26.py
+runner_sha256: fd609249b5c0254708f3a076a618d6988daaffb7c7946cf081b6379b5938377b
+input_fingerprint_sha256: 4f89de3220a683ebf535ba152be6af19a66f7d396f3a1aaa687c48e61d43c0a3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 5.55
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RELABELLINGS_IN_TIME_WHOSE_CLOCK_PROFILE_VARIES_IN_SPACE_NEED_NO_NEW_TERM_THE_WALKERS_OWN_GENERATOR_MOVES_IT_AS_THE_MEMBERS_SHIFT_CHANGES_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walker's coupling, the member's relabellings and the comparator are supplied)
+PASS: A3 landed block 150: the walker's clock rules match the member's exactly when one clock profile is uniform, and on the lattice only through second order in the profiles' wave numbers otherwise
+PASS: B1 order u (flat): for all 10 basis clock profiles, -(i u/2)[xi0, H^2] is exactly the shift term (1/2){u grad xi0, -i d}: principal parts agree and nothing is left
+PASS: C1 order u s, all 600 basis pairs (strain jets x clock-profile jets): the principal part is the shift term with the metric-raised gradient N'^k = g^{jk} d_j xi0, and the residual vanishes with block 163's coupling (1/4) sigma_c eps_cab (e L_N E)_ab
+PASS: D1 without block 163's coupling the residual at order u s is nonzero on 18 of 600 basis pairs, so the lapse sector needs it as well
+PASS: D2 block 158's (1/8) eps.C does not enter at this order (it is second order in the strain): the residual vanishes with or without it
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the smeared generator's commutator with H^2 as an operator at a point
+per_site: executed - all 10 basis clock profiles at first order
+per_mode: executed - all 600 basis pairs of strain jets and clock-profile jets at order u s
+per_block: executed - with and without block 163's coupling, with and without block 158's term
+lattice_wide: checked and not executed - second order in the strain, background lapse and shift, the lattice (block 150's defect at higher wave numbers), and the eight species
+PASS: G1 the five N5 resolution lines are printed
+scope: relabellings in time with clock profiles varying in space, continuum, zero background lapse and shift, through first order in the strain: the walker's own smeared generator moves it as the member's shift changes (N' = g^-1 grad xi0) with block 163's coupling, which is needed, and no new term; own derivation; nothing adopted (5s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

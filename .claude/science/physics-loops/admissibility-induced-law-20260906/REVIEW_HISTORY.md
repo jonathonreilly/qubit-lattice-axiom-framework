@@ -205,3 +205,5 @@ The supervisor's own derivation, not refereed by another model family. Exact tor
 
 ## 2026-09-25 block 147 follow-up - the sea's equation of state after a panel's report (author checks, not a review PASS)
 Panel of three Claude Opus 5.5 subagents (same model family). T1(e): massless sea p = rho/3, massive 0 < p/rho < 1/3, constant energy per volume p = -rho (E2); all eight species count. Runner 14/0; census 9/9.
+
+- 2026-09-26 block 147 (#9240): probe harvest (same family). #9262: T3's subtraction is constant in space only; massless sea removed exactly, massive sea keeps its inertia (runner H1, H2); T2 scoped to the instantaneous energy. #9252: T1, T2 re-derived, no error. Runner 16/0; census 11/11.

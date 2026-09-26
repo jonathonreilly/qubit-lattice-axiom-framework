@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1",
+ "type": "judgment",
+ "lane": "unpublished-codex-research",
+ "worker": "w-jonathonsmac4f50-j07c6",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/w-jonathonsmac4f50-j07c6/check.py",
+ "seed": 33110,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "f529fed6",
+ "started_utc": "20260926T143150Z",
+ "elapsed_s": 4.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (referee + sharpening): the author's entry -eta^2[1+(1-eta)^2]/[784(1-eta)^2] is reproduced for every eta by a symbolic pair identity and two independent exact computations; NEW: an entry eta(eta-2)(eta^2-14eta+14)/[784(1-eta)^2] = -eta/28 + O(eta^2) < 0 for all 0<eta<1, so positivity already fails at first order in the noise and any positive implementation has generator error >= eta/28 - O(eta^2)"
+ },
+ "review": "Cross-model referee (Codex source, Claude referee) of the depolarized pointer's negative generator entry: reproduced for every eta by symbolic pair identity, torus-level exact values and an independent tensor-propagation algorithm. New exact witness eta(eta-2)(eta^2-14eta+14)/[784(1-eta)^2] = -eta/28+O(eta^2) < 0 on (0,1): positivity fails at first order in the noise; approximation error >= eta/28 - O(eta^2).",
+ "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Referee, with machinery disjoint from the author's, one exact finite result about implementing the routed record law with a quantum code or pointer: the fixed nonorthogonal code's exact finite incompatibility with a CPTP implementation of the full routed law; the covariant six-qubit block pointer's exact rank, covariance and vacuum construction with its analytic lift; or the depolarized commuting pointer's exact negative off-diagonal generator entry for every 0 < eta < 1. Then attack the open step the campaign registry names: explicit local logical-block Lindblad dynamics for the block pointer, or an approximate implementation for the depolarized family. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_COVARIANT_POINTER_DYNAMICS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DEPOLARIZED_POINTER_RATE_BOUNDARY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR.",
+ "stdout_sha256": "64b4462f4b5388d979794d8288edf38a997776e87559cd4991f653b51ad90814",
+ "stdout_tail": "ymbolic eta :: eta*(eta - 2)*(eta**2 - 14*eta + 14)/(784*(eta - 1)**2)\nPASS N2 negative for every 0 < eta < 1: eta > 0, eta - 2 < 0, roots 7 -+ sqrt 35 of the quadratic lie above 1 :: [7 - sqrt(35), sqrt(35) + 7]\nPASS N3 leading order: -eta/28 - eta^2/56 (the author's witness starts at -eta^2/392)\nPASS N4 eta=1/2: new witness on the full torus :: -87/3136\nPASS N4 eta=1/5: new witness on the full torus :: -2529/313600\nPASS N4 eta=1/100: new witness on the full torus :: -27581599/76839840000\nPASS N5 at eta = 1/2 the new entry -87/3136 is 17.4 times the author's -5/3136\nPASS N6 tensor propagation reproduces -87/3136 :: -87/3136\n== D  diagnostic: single-site entries in random contexts (float-free exact values at eta = 1/1000; a search, not a bound)\n   most negative single-site entry / eta over 150 contexts: -0.05360 (compare -1/28 = -0.03571)\nPASS D1 single-site entries are also negative at first order in some context\n== done in 4s\nSUMMARY: PROVED (referee + sharpening): the author's entry -eta^2[1+(1-eta)^2]/[784(1-eta)^2] is reproduced for every eta by a symbolic pair identity and two independent exact computations; NEW: an entry eta(eta-2)(eta^2-14eta+14)/[784(1-eta)^2] = -eta/28 + O(eta^2) < 0 for all 0<eta<1, so positivity already fails at first order in the noise and any positive implementation has generator error >= eta/28 - O(eta^2)\nHIT depolarized pointer: required generator is negative at first order in eta (exact witness), author's O(eta^2) entry confirmed cross-model\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j07c6",
+  "at_utc": "20260926T143216Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9286. Cross-model referee confirms the Codex depolarized-pointer negative entry for every eta; new exact witness -eta/28+O(eta^2) shows positivity fails at first order in the noise. Not PR-ready (N1-N8 gate, referee of new witness).",
+  "by": "w-jonathonsmac4f50-j07c6",
+  "at_utc": "20260926T143216Z"
+ }
+}

@@ -1,0 +1,38 @@
+   source DEPOLARIZED_POINTER_RATE_BOUNDARY.md: sha256 e0e646f4b326939c75a8505c5897eaad5ce6ae4b4bc3c5c567197be376f74d4a
+   source DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md: sha256 f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7
+   source noisy_pointer_generator_check.py: sha256 efb2595eb63a634a5899e3cb55099fca63ccab3bfcc4c729539ae8392473f238
+   source APPROACH_REGISTRY.md: sha256 3a6536bc32f96f87b8ab981201604fcd5687ade741fd935b39357bb103ab83ec
+== R1 model facts
+PASS R1a every S_delta is symmetric with zero diagonal
+PASS R1b every S_delta has zero row sums (sum of b over B labels and of e over A labels vanish)
+PASS R1c |S| <= 1/2 so every rate k0/2 + h/4 >= 1/20 > 0
+PASS R1d author's colours: S_-e1(a,b) = S_-e1(a,c) = 1/2
+== R2 preparation matrix
+PASS R2 B^-1 = (I - q 11^T)/r exactly (r + 14 q = 1)
+== R3 torus stencils
+PASS R3a 864 sites x 5 routes = 4320 routed stencils, four distinct positions each
+PASS R3b exactly two stencils contain the three consecutive delta=-e1 positions (0,0,0),(10,0,0),(8,0,0) :: [((2, 0, 0), (0, 0, 0), (10, 0, 0), (8, 0, 0)), ((0, 0, 0), (10, 0, 0), (8, 0, 0), (6, 0, 0))]
+== R4 closed form of the author's entry for every eta (symbolic pair identity)
+PASS R4a (K_S)_{ij,ji} = q^2 (1 + r^2) S_ij / r^2 (symbolic eta, sampled colour pairs)
+PASS R4b author's entry = -eta^2 [1 + (1-eta)^2] / [784 (1-eta)^2] for symbolic eta :: -eta**2*(eta**2 - 2*eta + 2)/(784*(eta - 1)**2)
+== R5 torus-level exact values
+PASS R5 eta=1/2: author's entry on the full torus :: -5/3136
+PASS R5 eta=1/5: author's entry on the full torus :: -41/313600
+PASS R5 eta=9/10: author's entry on the full torus :: -8181/78400
+== R6 independent algorithm: tensor propagation on the 14^4 stencil space (eta = 1/2)
+PASS R6 propagation gives the two stencil contributions -5/6272 each, total -5/3136 :: -5/6272, -5/6272
+== N  a witness negative at first order in eta
+PASS N1 exact entry = eta (eta - 2)(eta^2 - 14 eta + 14) / [784 (1 - eta)^2] for symbolic eta :: eta*(eta - 2)*(eta**2 - 14*eta + 14)/(784*(eta - 1)**2)
+PASS N2 negative for every 0 < eta < 1: eta > 0, eta - 2 < 0, roots 7 -+ sqrt 35 of the quadratic lie above 1 :: [7 - sqrt(35), sqrt(35) + 7]
+PASS N3 leading order: -eta/28 - eta^2/56 (the author's witness starts at -eta^2/392)
+PASS N4 eta=1/2: new witness on the full torus :: -87/3136
+PASS N4 eta=1/5: new witness on the full torus :: -2529/313600
+PASS N4 eta=1/100: new witness on the full torus :: -27581599/76839840000
+PASS N5 at eta = 1/2 the new entry -87/3136 is 17.4 times the author's -5/3136
+PASS N6 tensor propagation reproduces -87/3136 :: -87/3136
+== D  diagnostic: single-site entries in random contexts (float-free exact values at eta = 1/1000; a search, not a bound)
+   most negative single-site entry / eta over 150 contexts: -0.05360 (compare -1/28 = -0.03571)
+PASS D1 single-site entries are also negative at first order in some context
+== done in 4s
+SUMMARY: PROVED (referee + sharpening): the author's entry -eta^2[1+(1-eta)^2]/[784(1-eta)^2] is reproduced for every eta by a symbolic pair identity and two independent exact computations; NEW: an entry eta(eta-2)(eta^2-14eta+14)/[784(1-eta)^2] = -eta/28 + O(eta^2) < 0 for all 0<eta<1, so positivity already fails at first order in the noise and any positive implementation has generator error >= eta/28 - O(eta^2)
+HIT depolarized pointer: required generator is negative at first order in eta (exact witness), author's O(eta^2) entry confirmed cross-model

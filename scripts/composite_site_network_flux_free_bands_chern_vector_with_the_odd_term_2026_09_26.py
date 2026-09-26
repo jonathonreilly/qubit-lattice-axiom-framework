@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
-"""The composite-site network's flux-free bands with the odd term: the Chern vector of the lowest two bands, in closed form below the split.
+"""The composite-site comparator's flux-free bands with the odd term: slice fluxes of the lowest two bands averaged along each axis.
 
 Setting (all supplied, none adopted): the colored periodic network of composite sites of the landed note
 docs/THE_HYPERHONEYCOMB_EMBEDS_IN_THE_DOUBLED_CUBIC_LATTICE_A_THREE_DIMENSIONAL_COMPOSITE_SITE_NETWORK_WITH_AN_EXACT_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md
-(site and colour rules reproduced below), bonds J_x = J_y = 1, J_z = J and the three-site odd term kappa in the sign convention of
-open PR 9255, in the sector with every bond variable u = +1, one free-Majorana copy, through open PR 9273's four-band Bloch matrix.
+(site and colour rules reproduced below), bonds J_x = J_y = 1, J_z = J and the three-site odd term kappa in the fixed hopping-sign
+convention of the landed notes, in the supplied u = +1 quadratic Majorana comparator (one copy), through the landed four-band Bloch
+reduction. Equality to the named spin Hamiltonian is not established.
 
-Checks: (1) exact: on the line f = (x, 1 - x, 0) the touching curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)), c = cos 2 pi x, gives at
-J = 1 the root c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / (4 kappa^2), and reaches c = 1 at J = 2 for every kappa; (2) the numerical
-touching on the line matches the closed form (J = 1 and J = 1.5); (3) the slice-averaged Chern numbers of the lowest two bands along the
-three fractional axes are (arccos(c)/pi, -arccos(c)/pi, 0) within the slice spacing at kappa = 0.1 and 0.3; (4) they change sign with
-kappa; (5) at kappa = 0.6 (six touchings) the averages equal minus the charge-weighted sum of the certified touching
-positions modulo one, the same rule that gives the closed form below the split. Prints TOTAL: PASS=N FAIL=M.
+Checks: (1) exact: on the line f = (x, 1 - x, 0) the middle levels vanish on the zero-determinant curve
+J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)), c = cos 2 pi x; at J = 1 its root in (-1, 1) is c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] /
+(4 kappa^2), and the curve passes through c = 1 at J = 2 for every kappa; (2) the numerical zero on the line matches the root (J = 1
+and J = 1.5); (3) discrete overlap fluxes of the lowest two bands on 96 slices per fractional axis are integers, and their averages are
+(arccos c / pi, -arccos c / pi, 0) within two slice spacings at kappa = 0.1 and 0.3; (4) they reverse with kappa; (5) at kappa = 0.6
+(six numerical groups) the averages equal minus the flux-weighted sum of the group positions modulo one. Finite diagnostics: no
+certified continuum Chern number, node count, transport coefficient, phase or physical identification. Prints TOTAL: PASS=N FAIL=M.
 """
 import os
 
@@ -233,20 +235,20 @@ def certify_zero(B, n0=40, levels=14, chunk=200000):
 DRY = "--dry" in sys.argv
 NS = 32 if DRY else 96
 
-# ---------------------------------------------------------------- 1. the closed forms on the touching line
+# ---------------------------------------------------------------- 1. the closed forms on the zero-determinant line
 Js, cs, ks = sp.symbols("J c kappa")
 curve = 2 * (1 + cs) * (1 + 2 * ks ** 2 * (1 - cs)) - Js ** 2
 c_iso = (1 - sp.sqrt(1 + 4 * ks ** 2 + 16 * ks ** 4)) / (4 * ks ** 2)
 ok_iso = sp.simplify(curve.subs({Js: 1, cs: c_iso})) == 0
 ok_zone = sp.simplify(curve.subs({Js: 2, cs: 1})) == 0
 ok_lim = sp.limit(c_iso, ks, 0) == sp.Rational(-1, 2)
-check("exact: at J = 1 the touching curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)) has the root c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / "
+check("exact: at J = 1 the zero-determinant curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)) has the root c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / "
       "(4 kappa^2) (c -> -1/2 as kappa -> 0), and at J = 2 it passes through c = 1, the zone centre, for every kappa",
       ok_iso and ok_zone and ok_lim, f"root {ok_iso}, J = 2 through c = 1 {ok_zone}, kappa -> 0 limit -1/2 {ok_lim}; {time.time() - T0:.0f} s")
 
 
 def c_closed(J, kap):
-    """The root in [-1, 1] of the touching curve at given J, kappa (numerically, from the quadratic in c)."""
+    """The root in [-1, 1] of the zero-determinant curve at given J, kappa (numerically, from the quadratic in c)."""
     # 4 kappa^2 c^2 - 2 c (1 - 2 kappa^2 ... ) : expand J^2 = 2 (1 + c) + 4 kappa^2 (1 - c^2)
     a, b, cc = -4 * kap ** 2, 2.0, 2 + 4 * kap ** 2 - J ** 2
     roots = np.roots([a, b, cc])
@@ -258,7 +260,7 @@ def line_node(B, lo, hi):
     return minimize_scalar(g, bounds=(lo, hi), method="bounded", options={"xatol": 1e-14}).x
 
 
-# ---------------------------------------------------------------- 2. the numerical touching on the line
+# ---------------------------------------------------------------- 2. the numerical zero on the line
 rows2, ok2, dmax = [], True, 0.0
 for J, kap in [(1.0, 0.05), (1.0, 0.1), (1.0, 0.2), (1.0, 0.3), (1.0, 0.35), (1.5, 0.3), (1.5, 0.5)]:
     B = Bloch((1.0, 1.0, J), kap)
@@ -267,11 +269,11 @@ for J, kap in [(1.0, 0.05), (1.0, 0.1), (1.0, 0.2), (1.0, 0.3), (1.0, 0.35), (1.
     dmax = max(dmax, abs(xn - xc))
     rows2.append(f"J {J}, kappa {kap}: x {xn:.8f} (closed {xc:.8f})")
 ok2 = dmax < 1e-6
-check("the touching on the line found numerically matches the closed-form root at J = 1 (kappa 0.05-0.35) and J = 1.5 (kappa 0.3, 0.5)", ok2,
+check("the numerical zero of the middle levels on the line matches the closed-form root at J = 1 (kappa 0.05-0.35) and J = 1.5 (kappa 0.3, 0.5)", ok2,
       "; ".join(rows2) + f"; max difference {dmax:.1e}; {time.time() - T0:.0f} s")
 
 
-# ---------------------------------------------------------------- 3./4./5. slice-averaged Chern numbers
+# ---------------------------------------------------------------- 3./4./5. slice-averaged discrete fluxes
 def chern_vector(kap):
     B = Bloch((1.0, 1.0, 1.0), kap)
     out, allint, gmin = [], True, np.inf
@@ -296,13 +298,13 @@ for kap in (0.1, 0.3):
     good = allint and abs(v[0] - pred) <= 2.0 / NS and abs(v[1] + pred) <= 2.0 / NS and abs(v[2]) < 1e-12
     ok3 &= good
     rows3.append(f"kappa {kap}: ({v[0]:+.4f}, {v[1]:+.4f}, {v[2]:+.4f}) against (+{pred:.4f}, -{pred:.4f}, 0)")
-check(f"kappa = 0.1 and 0.3: the Chern numbers of the lowest two bands on {NS} slices per fractional axis are integers, and their averages "
+check(f"kappa = 0.1 and 0.3: the discrete overlap fluxes of the lowest two bands on {NS} slices per fractional axis are integers, and their averages "
       "are (arccos(c)/pi, -arccos(c)/pi, 0) within two slice spacings", ok3, "; ".join(rows3) + f"; {time.time() - T0:.0f} s")
 v3, v3m = cv[0.3][0], cv[-0.3][0]
 ok4 = bool(np.allclose(v3, -v3m, atol=1e-12)) and cv[-0.3][1]
-check("the Chern vector changes sign with kappa (kappa = 0.3 against -0.3)", ok4,
+check("the slice-averaged fluxes change sign with kappa (kappa = 0.3 against -0.3)", ok4,
       f"kappa 0.3: ({v3[0]:+.4f}, {v3[1]:+.4f}, {v3[2]:+.4f}); kappa -0.3: ({v3m[0]:+.4f}, {v3m[1]:+.4f}, {v3m[2]:+.4f}); {time.time() - T0:.0f} s")
-# six touchings: the slice averages against the charge-weighted touching positions, -sum_n q_n f_n (mod 1)
+# six numerical groups: the slice averages against the flux-weighted group positions, -sum_n q_n f_n (mod 1)
 B6 = Bloch((1.0, 1.0, 1.0), 0.6)
 C6, h6, cnt6 = certify(B6, levels=6 if DRY else 10)
 nodes6 = []
@@ -320,8 +322,8 @@ for kap in (0.1, 0.3):                          # the same rule below the split
     x = np.arccos(c_closed(1.0, kap)) / (2 * np.pi)
     dip2 = -(-1 * np.array([x, 1 - x, 0.0]) + 1 * np.array([1 - x, x, 0.0]))
     ok6 &= all(abs(((cv[kap][0][i] - dip2[i]) + 0.5) % 1.0 - 0.5) <= 2.0 / NS for i in range(3))
-check("kappa = 0.6 (six touchings): slice Chern numbers are integers on every slice, and the averages equal minus the charge-weighted sum of "
-      "the six certified touching positions modulo one within two slice spacings (the same rule holds at kappa = 0.1 and 0.3)", ok6,
+check("kappa = 0.6 (six numerical groups): the slice fluxes are integers on every slice, and their averages equal minus the flux-weighted sum "
+      "of the six numerical group positions modulo one within two slice spacings (the same weighting at kappa = 0.1 and 0.3)", ok6,
       f"averages ({v6[0]:+.4f}, {v6[1]:+.4f}, {v6[2]:+.4f}); -sum q f = ({dip[0]:+.4f}, {dip[1]:+.4f}, {dip[2]:+.4f}) from "
       + ", ".join(f"({c[0]:.3f},{c[1]:.3f},{c[2]:.3f}){q:+d}" for c, q in nodes6) + f"; smallest middle gap on the slices {g6:.3f}; {time.time() - T0:.0f} s")
 

@@ -1,101 +1,85 @@
 ---
 claim_id: composite_site_network_flux_free_bands_carry_a_chern_vector_odd_in_the_odd_term_with_a_closed_form_below_the_split_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "Supplied colored periodic network of composite sites of the landed network note, bonds J_x = J_y = 1, J_z = J and the three-site odd term kappa in the sign convention of open PR 9255, in the u = +1 sector (one free-Majorana copy), with open PR 9273's Bloch reduction. Exact on the line f = (x, 1 - x, 0): the touching lies on J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)), c = cos 2 pi x; at isotropic J, c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / (4 kappa^2); the curve reaches c = 1 (the zone centre) exactly at J = 2 for every kappa. Finite computations: the numerical touching on the line matches the closed form to 3e-9; the slice-averaged Chern numbers of the lowest two bands on 96 slices per axis are (arccos(c)/pi, -arccos(c)/pi, 0) up to the slice spacing below the split, change sign with kappa, and at kappa = 0.6 (six touchings) equal minus the charge-weighted sum of the certified touching positions modulo one, (0.093, -0.093, 0), within the slice spacing (0.104 measured). No transport coefficient of a physical system, phase or physical identification is claimed."
+claim_scope: "Supplied u = +1 quadratic Majorana comparator of the landed composite-site network notes (one of three identical copies, the fixed hopping-sign convention), with bonds J_x = J_y = 1, J_z = J and odd term kappa. Exact: on the line f = (x, 1 - x, 0), from the landed determinant identity, the middle levels vanish on the curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)), c = cos 2 pi x; at J = 1 its root in (-1, 1) is c = -(1 + 4 kappa^2) / (1 + (1 + 4 kappa^2 + 16 kappa^4)^(1/2)); the curve passes through c = 1 at J = 2 for every kappa. Finite diagnostics: the numerical zero on the line matches that root to 3e-9; discrete overlap fluxes of the lowest two bands on 96 slices per fractional axis average to (0.667, -0.667, 0) at kappa = 0.1 and (0.708, -0.708, 0) at kappa = 0.3, near (arccos c / pi, -arccos c / pi, 0) = (0.672, -0.672, 0) and (0.710, -0.710, 0); they reverse at kappa = -0.3; at kappa = 0.6 they average (0.104, -0.104, 0), near minus the flux-weighted sum of the six numerical group positions modulo one, (0.093, -0.093, 0). No certified continuum Chern number, node count, transport coefficient, spin-Hamiltonian equivalence, ground-sector selection, phase or physical identification."
 upstream_dependencies:
   - minimal_axioms
   - the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24
+  - composite_site_network_flux_free_bands_with_the_odd_term_two_certified_touchings_of_opposite_charge_become_six_at_kappa_root_3_over_20_bounded_theorem_note_2026-09-26
 runner: scripts/composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py
 ---
 
-# The composite-site network's flux-free bands carry a Chern vector that is odd in the odd term, with a closed form below the split
+# The composite-site comparator's flux-free bands: slice fluxes averaged along each axis, odd in the odd term, near a closed form below the split
 
 **Date:** 2026-09-26
 **Type:** bounded_theorem
-**Status:** exact statements on the touching line and finite slice computations for one sector of the supplied model; unaudited.
+**Status:** exact algebra on one momentum line and finite discrete-flux diagnostics for a supplied comparator; unaudited.
 
-## Result
+## Supplied setting
 
-Open PR 9273 certified the band touchings of the composite-site network's
-flux-free sector with the odd term: two, of charge `−1` and `+1`, below
-`κ_c² = J(J + 2)/[4(4 + 2J − J²)]`, and six above. Touchings of opposite
-charge at different momenta leave two-dimensional slices of the zone with
-nonzero Chern numbers. Averaged over the slices along each fractional axis,
-these give a Chern vector of the lowest two bands. This block gives it in
-closed form below the split.
+Use the supplied `u = +1` quadratic Majorana comparator of the landed
+composite-site network notes, one of three identical copies, in the fixed
+hopping-sign convention and the four-site Bloch reduction of the landed note
+`COMPOSITE_SITE_NETWORK_FLUX_FREE_BANDS_WITH_THE_ODD_TERM_TWO_CERTIFIED_TOUCHINGS_OF_OPPOSITE_CHARGE_BECOME_SIX_AT_KAPPA_ROOT_3_OVER_20_BOUNDED_THEOREM_NOTE_2026-09-26.md`.
+As that note records, equality to the named spin Hamiltonian is not
+established in this sign convention, and `u = +1` is not proved to be the
+lowest sector. Filenames are historical; note bodies govern.
 
-- **Exact on the touching line.** The touching lies on
-  `J² = 2(1 + c)(1 + 2κ²(1 − c))` with `c = cos 2πx`. At isotropic `J`
-  this is a quadratic in `c` whose root in `[−1, 1]` is
-  `c = [1 − √(1 + 4κ² + 16κ⁴)]/(4κ²)`, tending to `−1/2` as `κ → 0` (the
-  touching approaches `x = 1/3`). For every `κ` the curve reaches `c = 1`,
-  the zone centre, exactly at `J = 2`: there the touchings meet at the zone
-  centre, the change to the gapped side that the landed note's matching
-  bound shows at `J = 2.5`, `κ = 0`. The numerical touching on the line
-  matches the root to `3 × 10⁻⁹` at `J = 1` (`κ = 0.05`–`0.35`) and
-  `J = 1.5` (`κ = 0.3`, `0.5`).
-- **The Chern vector in closed form.** Below the split, the Chern number of
-  the lowest two bands is `+1` on the slices `f₁ = const` outside the
-  interval between the two touchings and `0` inside, and the mirror of that
-  along `f₂`. So the slice-averaged Chern vector is
-  `(arccos c / π, −arccos c / π, 0)`. On 96 slices per axis the averages
-  are `(0.667, −0.667, 0)` at `κ = 0.1` and `(0.708, −0.708, 0)` at
-  `κ = 0.3`, against `0.672` and `0.710`, within the slice spacing. As `κ`
-  leaves zero the vector jumps from nothing to `(2/3, −2/3, 0)`. At `κ = 0`
-  the touchings form a line and slices through it are gapless.
-- **Odd in the odd term.** At `κ = −0.3` every slice Chern number changes
-  sign: the vector is `(−0.708, +0.708, 0)`.
-- **Six touchings: a small vector, and one rule for both regimes.** At
-  `κ = 0.6` the averages are `(0.104, −0.104, 0)`. That matches minus the
-  charge-weighted sum of the six certified touching positions modulo one,
-  `(0.093, −0.093, 0)`, within the slice spacing. The same rule gives the
-  closed form below the split. After the split the on-plane touchings have
-  reversed their charges and the off-plane ones sit far apart, so their
-  dipole, and with it the Chern vector, nearly cancels.
+## Exact on the line f = (x, 1 − x, 0)
 
-## Setting and decision points
+That landed note gives, with `J_x = J_y = 1`, `J_z = J` and `c = cos 2πx`,
+`det H = 16 [J² + 4c²κ² − 2c − 4κ² − 2]²` on this line. So, for
+`−1 < c < 1`, the middle levels vanish exactly on the curve
 
-- **D-network, D-bonds, D-odd, D-majorana (supplied, landed).** As in open
-  PR 9273: the colored periodic network, bonds and odd term of the landed
-  network note
-  `THE_HYPERHONEYCOMB_EMBEDS_IN_THE_DOUBLED_CUBIC_LATTICE_A_THREE_DIMENSIONAL_COMPOSITE_SITE_NETWORK_WITH_AN_EXACT_CHARGE_BOUNDED_THEOREM_NOTE_2026-09-24.md`,
-  one of the three identical free-Majorana copies. The filenames are
-  historical; the note bodies govern.
-- **D-sector (open PR 9255).** The sector with every bond variable `u = +1`.
-  Open PR 9277 supports, without proving, that it is the lowest sector on
-  the larger clusters searched at `κ = 0.45` and `0.6`.
+`J² = 2(1 + c)[1 + 2κ²(1 − c)]`.
 
-## Method
+- **At isotropic J.** At `J = 1` this is `4κ²c² − 2c − (1 + 4κ²) = 0`,
+  whose root in `(−1, 1)` is
+  `c = −(1 + 4κ²) / (1 + √(1 + 4κ² + 16κ⁴))`, tending to `−1/2` as `κ → 0`.
+- **At J = 2.** The curve passes through `c = 1`, the zone centre, for
+  every `κ`. The finite scan of the landed note found a cleared zone at
+  `J_z = 2.5`, `κ = 0.3`; the exact statement here is only that the
+  zero-determinant curve reaches the zone centre at `J = 2`.
 
-1. **The touching line.** From open PR 9273, the determinant of `H` on
-   `f = (x, 1 − x, 0)` is `16 (J² + 4c²κ² − 2c − 4κ² − 2)²`, so the touching
-   sits where `J² = 2(1 + c)(1 + 2κ²(1 − c))`. At `J = 1` this is a quadratic
-   in `c` with the root `c = [1 − √(1 + 4κ² + 16κ⁴)]/(4κ²)` in `[−1, 1]`.
-2. **Slices.** The Chern number of the lowest two bands on each of 96
-   slices per fractional axis, by the lattice link method with periodic
-   seams. Their average is the component of the Chern vector along that
-   axis, up to the slice spacing `1/96`.
+## Finite diagnostics reproduced by the runner
 
-## Relation to other work
+- **The numerical zero on the line.** Minimising the middle gap along the
+  line finds its zero within `3 × 10⁻⁹` of the root above, at `J = 1`
+  (`κ = 0.05` to `0.35`) and at `J = 1.5` (`κ = 0.3`, `0.5`).
+- **Slice fluxes and their averages.** The runner computes discrete
+  determinant-overlap fluxes of the lowest two bands on 96 slices per
+  fractional axis (mesh 48, periodic seams), all integer-valued. Averaged
+  over the slices of each axis they give `(0.667, −0.667, 0)` at `κ = 0.1`
+  and `(0.708, −0.708, 0)` at `κ = 0.3`. The zero-determinant root gives
+  `(arccos c / π, −arccos c / π, 0) = (0.672, −0.672, 0)` and
+  `(0.710, −0.710, 0)`, which is what these averages would be if the
+  continuum slice Chern numbers were `+1` outside the interval between the
+  two zeros on the line and `0` inside, mirrored along `f₂`. The agreement is
+  within two slice spacings.
+- **Odd in the odd term.** At `κ = −0.3` every slice flux changes sign.
+- **Six numerical groups.** At `κ = 0.6` the adaptive search of the landed
+  note leaves six numerical groups, and the slice fluxes average to
+  `(0.104, −0.104, 0)`. Minus the sum of the six group positions weighted by
+  their rounded sphere fluxes, modulo one, is `(0.093, −0.093, 0)`, within
+  two slice spacings. The same weighting gives the closed-form value below
+  the split.
 
-- A Chern vector from separated touchings of opposite charge is the band
-  structure's way of carrying a Hall-type response. Here it is a number of
-  one free-Majorana copy in one sector; no transport coefficient of a
-  physical system is computed.
-- **Prior art (not premises).** Hall responses from separated band
-  touchings (for example A. A. Burkov and L. Balents, Phys. Rev. Lett. 107,
-  127205 (2011)); Weyl-type touchings in three-dimensional Kitaev-type
-  Majorana models (M. Hermanns, K. O'Brien, S. Trebst, Phys. Rev. Lett. 114,
-  157202 (2015)).
+## What this does not establish
 
-## Boundary
+- No certified continuum Chern number: discrete overlap fluxes need
+  nonsingular overlaps and a gap across each continuous slice, which the
+  sampled gaps do not certify.
+- No node count, no transport coefficient of a physical system, no
+  spin-Hamiltonian equivalence, no ground-sector selection, no phase and no
+  physical identification.
+- The averages carry the slice resolution `1/96`.
 
-- One sector, one copy, and slices at spacing `1/96`: the averages carry
-  that resolution.
-- The closed form holds below the split, where the two touchings lie on the
-  line. Above it the six-touching values are finite computations.
-- No transport coefficient of a physical system, no phase and no physical
-  identification.
+## Prior art (not premises)
+
+Hall-type responses from separated band touchings (for example A. A.
+Burkov and L. Balents, Phys. Rev. Lett. 107, 127205 (2011)); Weyl-type
+touchings in three-dimensional Kitaev-type Majorana models (M. Hermanns,
+K. O'Brien, S. Trebst, Phys. Rev. Lett. 114, 157202 (2015)).
 
 ## Reproduction
 

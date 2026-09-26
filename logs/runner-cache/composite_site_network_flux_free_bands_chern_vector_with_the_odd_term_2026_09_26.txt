@@ -1,16 +1,16 @@
 ===== runner cache v1 =====
 runner: scripts/composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py
-runner_sha256: 689abd60c67b9e8d35b4d294e10339861d2423fb5e36a977fea563b3b439a36b
+runner_sha256: 9565d0fb73ea0f2829d8c606a03a677ec9509815bba674f556ca1d4ceaed20a6
 timeout_sec: 600
 exit_code: 0
-elapsed_sec: 13.66
+elapsed_sec: 13.54
 status: ok
 ----- stdout -----
-[PASS] exact: at J = 1 the touching curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)) has the root c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / (4 kappa^2) (c -> -1/2 as kappa -> 0), and at J = 2 it passes through c = 1, the zone centre, for every kappa :: root True, J = 2 through c = 1 True, kappa -> 0 limit -1/2 True; 0 s
-[PASS] the touching on the line found numerically matches the closed-form root at J = 1 (kappa 0.05-0.35) and J = 1.5 (kappa 0.3, 0.5) :: J 1.0, kappa 0.05: x 0.33401991 (closed 0.33401991); J 1.0, kappa 0.1: x 0.33604865 (closed 0.33604865); J 1.0, kappa 0.2: x 0.34370379 (closed 0.34370379); J 1.0, kappa 0.3: x 0.35491339 (closed 0.35491339); J 1.0, kappa 0.35: x 0.36126667 (closed 0.36126667); J 1.5, kappa 0.3: x 0.25867283 (closed 0.25867283); J 1.5, kappa 0.5: x 0.30232478 (closed 0.30232478); max difference 3.2e-09; 0 s
-[PASS] kappa = 0.1 and 0.3: the Chern numbers of the lowest two bands on 96 slices per fractional axis are integers, and their averages are (arccos(c)/pi, -arccos(c)/pi, 0) within two slice spacings :: kappa 0.1: (+0.6667, -0.6667, +0.0000) against (+0.6721, -0.6721, 0); kappa 0.3: (+0.7083, -0.7083, +0.0000) against (+0.7098, -0.7098, 0); 8 s
-[PASS] the Chern vector changes sign with kappa (kappa = 0.3 against -0.3) :: kappa 0.3: (+0.7083, -0.7083, +0.0000); kappa -0.3: (-0.7083, +0.7083, +0.0000); 8 s
-[PASS] kappa = 0.6 (six touchings): slice Chern numbers are integers on every slice, and the averages equal minus the charge-weighted sum of the six certified touching positions modulo one within two slice spacings (the same rule holds at kappa = 0.1 and 0.3) :: averages (+0.1042, -0.1042, +0.0000); -sum q f = (-0.9073, +0.9073, -0.0000) from (0.120,0.681,0.400)-1, (0.319,0.880,0.600)-1, (0.393,0.607,0.000)+1, (0.607,0.393,0.000)-1, (0.681,0.120,0.400)+1, (0.880,0.319,0.600)+1; smallest middle gap on the slices 0.051; 12 s
+[PASS] exact: at J = 1 the zero-determinant curve J^2 = 2 (1 + c)(1 + 2 kappa^2 (1 - c)) has the root c = [1 - (1 + 4 kappa^2 + 16 kappa^4)^(1/2)] / (4 kappa^2) (c -> -1/2 as kappa -> 0), and at J = 2 it passes through c = 1, the zone centre, for every kappa :: root True, J = 2 through c = 1 True, kappa -> 0 limit -1/2 True; 0 s
+[PASS] the numerical zero of the middle levels on the line matches the closed-form root at J = 1 (kappa 0.05-0.35) and J = 1.5 (kappa 0.3, 0.5) :: J 1.0, kappa 0.05: x 0.33401991 (closed 0.33401991); J 1.0, kappa 0.1: x 0.33604865 (closed 0.33604865); J 1.0, kappa 0.2: x 0.34370379 (closed 0.34370379); J 1.0, kappa 0.3: x 0.35491339 (closed 0.35491339); J 1.0, kappa 0.35: x 0.36126667 (closed 0.36126667); J 1.5, kappa 0.3: x 0.25867283 (closed 0.25867283); J 1.5, kappa 0.5: x 0.30232478 (closed 0.30232478); max difference 3.2e-09; 0 s
+[PASS] kappa = 0.1 and 0.3: the discrete overlap fluxes of the lowest two bands on 96 slices per fractional axis are integers, and their averages are (arccos(c)/pi, -arccos(c)/pi, 0) within two slice spacings :: kappa 0.1: (+0.6667, -0.6667, +0.0000) against (+0.6721, -0.6721, 0); kappa 0.3: (+0.7083, -0.7083, +0.0000) against (+0.7098, -0.7098, 0); 8 s
+[PASS] the slice-averaged fluxes change sign with kappa (kappa = 0.3 against -0.3) :: kappa 0.3: (+0.7083, -0.7083, +0.0000); kappa -0.3: (-0.7083, +0.7083, +0.0000); 8 s
+[PASS] kappa = 0.6 (six numerical groups): the slice fluxes are integers on every slice, and their averages equal minus the flux-weighted sum of the six numerical group positions modulo one within two slice spacings (the same weighting at kappa = 0.1 and 0.3) :: averages (+0.1042, -0.1042, +0.0000); -sum q f = (-0.9073, +0.9073, -0.0000) from (0.120,0.681,0.400)-1, (0.319,0.880,0.600)-1, (0.393,0.607,0.000)+1, (0.607,0.393,0.000)-1, (0.681,0.120,0.400)+1, (0.880,0.319,0.600)+1; smallest middle gap on the slices 0.051; 12 s
 TOTAL: PASS=5 FAIL=0 (12 s)
 
 ----- stderr -----

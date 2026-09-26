@@ -13,7 +13,7 @@ runner: scripts/composite_site_network_small_cluster_flux_exceptions_repeated_on
 
 **Date:** 2026-09-26
 **Type:** bounded_theorem
-**Status:** exhaustive sweep on 32 sites and annealed searches on 64 to 256 sites, with the exact projection; unaudited.
+**Status:** a sweep of every sector on 32 sites and annealed searches on 64 to 256 sites, with the exact projection; unaudited.
 
 ## Result
 

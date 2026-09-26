@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_resummation_radius_growth_rate_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_resummation_radius_growth_rate_2026_05_30.py",
+ "seed": 85106,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011146Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9b362f570388329c21f6328adcf01d8608adf24cc11a45b593d77e2325310e60",
+ "stdout_tail": "-F)=18^-5\n[PASS] two-cube tree box: F=10, n=9, Euler weight 18^-9\n[PASS] tree chain obeys F=4k+2 and n=4k+1\n[PASS] compact 2x2x1 block is still closed K-built: every boundary link has incidence two\n[PASS] compact K-built block falsifies all-cluster fixed increment F=4k+2\n[PASS] shared-face formula holds: F = 4k+2-2c, n = 4k+1-2c\n[PASS] Euler exponent correction: tree sector uses 18^{-(4k+1)}, not 18^{-(4k+2)}\n[PASS] at beta=6, one face-deficit unit weakens Euler suppression by factor 9\n    g_tree=1.0:  R_tree = 18/g_tree^(1/4) = 18.0\n    g_tree=7.0:  R_tree = 18/g_tree^(1/4) = 11.0662\n    g_tree=81.0:  R_tree = 18/g_tree^(1/4) = 6.0\n[PASS] tree-sector critical growth product for R=6: g_crit = (18/6)^4 = 81  ::  g_crit = 81.0\n[PASS] illustrative self-avoiding-chain normalization g_tree=7 gives R_tree > 6  ::  R_tree(7)=11.0662\n[PASS] if an external lambda_tree <= 7 bound were supplied, rho_crit would be 81/7  ::  rho_crit(lambda_tree=7) = 11.5714\n\n    cube-sector (single-cube) radius (J-zero)      = 8.2052\n    tree-sector illustrative bound (g_tree=7)       = 11.0662\n    compact K-built deficit factor at beta=6        = 9^c per excess shared face\n    Fisher/Lee-Yang thermodynamic comparator       ~ 5.54 (CITED, lattice-QCD)\n[PASS] VERDICT: tree K-built radius > 6 for g_tree < 81, but all K-built needs a deficit-growth bound  ::  The fixed-increment bridge is false for compact K-built clusters; do not promote the all-K-built sector from g_tree alone.\n\nSCORECARD: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011148Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

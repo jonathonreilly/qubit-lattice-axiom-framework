@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_action_functional_typed_admissibility_record_identification_2026_09_02",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/finite_action_functional_typed_admissibility_record_identification_2026_09_02.py",
+ "seed": 84424,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010024Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "25be273e5b21b250eaad20f3d767c547ac0a6d51199efa07af2503bf26cdce83",
+ "stdout_tail": "th supplied action weights; only one obeys the bridge equality :: covariant=(True,True) varying=(True,True) p1(n=0)=(1/8,1/14)\nPASS local conditional content leaves hazard free; frequency inference additionally needs a joint sampling protocol :: conditional=(5/8,3/8) hazards=(1/3,2/3) joint_one=(1/8,1/4)\nPASS IID frequency variance decreases; stationary common-bit trials do not concentrate :: m=4; IID(mean,var)=(Fraction(1, 4), Fraction(3, 64)); common-bit(mean,var)=(Fraction(1, 4), Fraction(3, 16)); joint reset is supplied\nPASS Record permanence constrains but does not select a physical post-write implementation :: [X,P0]!=0=True; two preserving maps differ off Record states=True\nPASS N1-N8 publication boundaries and zero-closure statements are present; not a proof or audit :: local finite separation only; full-model extension and physical realization remain open\nN5_rhetoric: PASS local finite separation only; full-domain entailment unestablished; no impossibility or compulsory axiom edit\nper_element: algebra elements, density states, effects, and Record contents are type-separated\nper_site: two exact PVMs and same-effect/different-output instruments are certified\nper_mode: one finite Gibbs-weight package uniquely normalizes its declared state functional\nper_block: action/Admissibility identity and formation hazard remain explicit independent inputs\nlattice_wide: six-neighbor count laws are translation/proper-cubic covariant; no global dynamics claimed\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

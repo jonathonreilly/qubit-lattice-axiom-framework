@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_branching_record_budget_inequality_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_branching_record_budget_inequality_2026_06_12.py",
+ "seed": 85153,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011233Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0c85c4429f02bdbaf228eb81e09f0e920b0f3dccc8f36ff865c8fe40a4027cd9",
+ "stdout_tail": "anch linear ledger:\npath        weight          norm            R  B  S               c01             c02             c03\nlinear      1  1  3  0  3  1  1  1\n[PASS] W4e eps=0 single branch: branches = 1\n[PASS] W4e eps=0 landed linear ledger: R=3, S=3, B=0\n\nCONTROL eps=1 projective nonzero branches:\npath        weight          norm            R  B  S               c01             c02             c03\n+++         0.5  0.707106781187  0  3  0  0  0  0\n---         0.5  0.707106781187  0  3  0  0  0  0\n[PASS] W4e eps=1 projective branch support: nonzero branches = 2, paths = ['+++', '---']\n[PASS] W4e eps=1 pointer eigenstates: all nonzero projective branches have Z-basis pure pointer marginals\n[PASS] W4e eps=1 deterministic copies have R_b=0: R_b values = [0, 0]\n\nCONTROL pointer initial |0>, eps=0.6:\npath        weight          norm            R  B  S               c01             c02             c03\n+++         0.512  0.7155417528  0  3  0  0  0  0\n++-         0.128  0.3577708764  0  3  0  0  0  0\n+-+         0.128  0.3577708764  0  3  0  0  0  0\n+--         0.032  0.1788854382  0  3  0  0  0  0\n-++         0.128  0.3577708764  0  3  0  0  0  0\n-+-         0.032  0.1788854382  0  3  0  0  0  0\n--+         0.032  0.1788854382  0  3  0  0  0  0\n---         0.008  0.0894427191  0  3  0  0  0  0\n[PASS] W4f pointer-eigenstate tree: branches = 8, sum weights = 0.99999999999999978\n[PASS] W4f pointer-eigenstate initial condition: R_b values = [0, 0, 0, 0, 0, 0, 0, 0]\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011233Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

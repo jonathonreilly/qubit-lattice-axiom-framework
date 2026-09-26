@@ -1,0 +1,40 @@
+{
+ "task": "R:frontier_beta6_d9_coefficient_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_d9_coefficient_2026_06_04.py",
+ "seed": 84944,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010904Z",
+ "elapsed_s": 109.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=21 FAIL=0",
+   "PASS=24 FAIL=0",
+   "PASS=25 FAIL=0",
+   "PASS=33 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ac04cdfd5c0918f6093835014f3ff0a23512ea69bf5c1a4ec81f4dcab1d0c8a7",
+ "stdout_tail": "===============================\nSCORECARD: PASS=33 FAIL=0   (109.3s)\n==============================================================================\nThis is an exact strong-coupling series coefficient (bounded result).\nIt does NOT close beta=6. The exact d_7 falsifies the single-ratio\ntadpole/geometric ansatz (d_7/d_6 = 5/21 != d_6/d_5 = 7/12); drop\n{6:7/5668704, 7:5/17006112} into the harness\nscripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py for the\nSUPPORT/FALSIFY scorecard line.\nThe exact d_8 = 5/272097792 (POSITIVE, d_8/d_7 = 1/16) additionally\nfalsifies the single-complex-pair ansatz (which predicts a sign\nchange to negative) and ACTIVATES the [1/1] d-log-Pade (d_5..d_8);\nthe [1/1] returns a spurious real pole + garbage Delta(6) => the\nactivation coefficient contradicts its own single-pole premise.\nStill NOT a beta=6 closure (0.594 is a Monte-Carlo comparator).\nThe exact d_9 = -2035/264479053824 (NEGATIVE, d_9/d_8 = -407/972) is\nthe FIRST sign change in the connected series: cube-shell part\n-235/29386561536 (cube-sector closed form 72 K''(K')^5, validated vs\nthe direct engine through d_8) PLUS the new weight-10 two-cube\ndistinct-support part +5/16529940864 (60 supports, each 1/198359290368).\nThe tadpole/geometric ansatz predicts d_9 > 0 (sign wrong) and the\nactivated [1/1] d-log-Pade predicts the correct NEGATIVE sign but the\nwrong magnitude (~37% off) on a spurious real pole => d_9 sharpens the\nmulti-pair / amplitude-varying picture but does NOT close beta=6.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011054Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_d9_coefficient_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

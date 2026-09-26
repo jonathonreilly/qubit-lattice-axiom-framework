@@ -1,0 +1,41 @@
+{
+ "task": "R:frontier_beta6_d7_source_packet_manifest_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_d7_source_packet_manifest_2026_06_05.py",
+ "seed": 84944,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010904Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=22 FAIL=0: SCORECARD: PASS=22 FAIL=0",
+   "PASS=53 FAIL=0",
+   "PASS=53 FAIL=0",
+   "PASS=33 FAIL=0: SCORECARD: PASS=33 FAIL=0",
+   "PASS=53 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "81b10891379d55464dd83dbdeb55137f4c906098bc5f9c5c198a9024fa5f05e4",
+ "stdout_tail": "ta6_d9_coefficient_2026_06_04.py\n[PASS] cache_sha_fresh:d9_cache: 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4 == 52418e78afb23e1a5afe5bfef0534df4404deda3097677bf6c10eaa784e517f4\n[PASS] cache_status_ok:d9_cache: status=ok exit=0\n[PASS] maxorder7_cache_snippet:delegated_argv: 7: delegated_argv: 7\n[PASS] maxorder7_cache_snippet:primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e: primary_runner_sha256: dc6319dffac36c4fea8b4b1a33c364325859106606a924f1b85893e57b10635e\n[PASS] maxorder7_cache_snippet:V5. order-beta^7 coefficient: V5. order-beta^7 coefficient\n[PASS] maxorder7_cache_snippet:d_7 exact value = 5/17006112: d_7 exact value = 5/17006112\n[PASS] maxorder7_cache_snippet:d_7/d_6 = 5/21: d_7/d_6 = 5/21\n[PASS] maxorder7_cache_snippet:SCORECARD:: SCORECARD:\n[PASS] maxorder7_cache_snippet:FAIL=0: FAIL=0\n[PASS] d9_cache_snippet:d_7 = 5/17006112: d_7 = 5/17006112\n[PASS] d9_cache_snippet:cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY: cube-sector closed form 72 K''(K')^5 reproduces the direct-engine d_5, d_6, d_7, d_8 EXACTLY\n[PASS] d9_cache_snippet:SCORECARD: PASS=33 FAIL=0: SCORECARD: PASS=33 FAIL=0\n==============================================================================\nSUMMARY: BETA6 D7 SOURCE PACKET PASS=53 FAIL=0\n==============================================================================\nOutput written: outputs/frontier_beta6_d7_source_packet_manifest_2026_06_05.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010904Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

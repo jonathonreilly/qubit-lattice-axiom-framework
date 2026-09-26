@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_plaquette_tensor_network_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_plaquette_tensor_network_2026_06_04.py",
+ "seed": 85096,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011136Z",
+ "elapsed_s": 8.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "546887b5304946f7dfc7d248f5e868138d1b50981b42cbdb1b83953ef0043347",
+ "stdout_tail": "idated 3 ways)\n  Independent 4D Monte-Carlo comparator chain (NOT a character-route output):\n     L=2^4: 0.6271   L=3^4: 0.6042   L=4^4: 0.5956   L->inf: ~0.5934\n     single elementary 3-cube cluster (6 faces, open): 0.4366(13)\n  => recoupling ACROSS shared links RAISES <P> from the 2D 0.4225 toward the\n     4D 0.5934; that recoupling is exactly the 6j-intertwiner contraction that\n     is the treewidth wall. The naive delta-link plaquette-irrep contraction\n     (valid only in 2D) can stabilize in the cutoff to a WRONG value, so it is\n     NOT reported. delta-link plaquette-irrep contraction is exact in 2D only; D>=3 needs 6j intertwiner recoupling at each link (treewidth wall).\n  [PASS] Task 3 reported HONESTLY: exact controlled character value is the 2D 0.4225; the D>=3 exact value requires the 6j-recoupled contraction (treewidth wall) and is NOT over-claimed as converged\n         deliverable = validated machinery + finite-coefficient support + honest wall report\n\n==============================================================================\nSCORECARD: PASS=9  FAIL=0   (8.5s)\n==============================================================================\nBounded support result. Character coefficients are checked by independent Haar routes, the finite cutoff sample decays with Casimir, and the 2D exactly-solvable plaquette is reproduced. A fully controlled 4D <P>(6) needs the 6j-recoupled D>=3 contraction (treewidth wall); 0.5934 is the Monte-Carlo comparator, never an input.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_plaquette_tensor_network_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

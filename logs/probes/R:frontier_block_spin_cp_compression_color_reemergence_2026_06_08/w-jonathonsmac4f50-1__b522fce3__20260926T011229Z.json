@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_block_spin_cp_compression_color_reemergence_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_block_spin_cp_compression_color_reemergence_2026_06_08.py",
+ "seed": 85149,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011229Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=12 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a3a46108defda31224ceda5872e0310d16c30b4fee8ca1f496a957fb1f918927",
+ "stdout_tail": "limit is instantiated anywhere in this runner; the claim that the blocked lattice again satisfies Lattice + Qubit holds by construction of the decimation rather than by any computation performed here, and the scale-blindness evidence is a single blocking step re-run one level up, not an iteration toward an RG fixed point.\n==============================================================================\nTOTAL: PASS=12 FAIL=0\n==============================================================================\nSCOPE (narrow transport no-go + per-scale corollary): NO unital *-homomorphism\n  blocking exists (256 does not divide 2), so axiom-preserving block-spin cannot be\n  an algebra morphism.  Any unital block-qubit quantum channel is non-multiplicative, and the\n  runner's isometric CP compression model is never multiplicative (forced).  The\n  block qubit carries NO faithful su(3): color is NOT TRANSPORTED through the step.\n  BUT this is not a wall: the blocked lattice satisfies Lattice+Quantum verbatim and\n  the retained graph-first construction is SCALE-BLIND (re-verified at the block\n  level: su(2) relations, commutant dim 10, 3(+)1 split) \u2014 color is a PER-SCALE\n  derivation, not an RG-carried quantity.  Standard Kadanoff blocking is likewise a\n  truncating channel (method context, not an import).  The CHOICE of isometry V is\n  an undelivered selection (same family as the open gauge-link-dynamics input) and\n  is NOT supplied here.  Per-scale color (retained) untouched.  No new axiom.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

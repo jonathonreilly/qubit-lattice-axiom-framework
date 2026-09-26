@@ -1,0 +1,35 @@
+{
+ "task": "R:fibred_menu_independence_clause_non_vacuous_discriminating_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "fibred",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fibred_menu_independence_clause_non_vacuous_discriminating_check_2026_09_04.py",
+ "seed": 84371,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T005931Z",
+ "elapsed_s": 44.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0c5f41887baab5bf04041b603d005dee6bcb26988487e29d5d4ff4e3e5fd1e90",
+ "stdout_tail": "note the note reproduces the layman candidate wording verbatim\nPASS: T5-precise-wording-in-note the note reproduces the precise candidate wording verbatim\nPASS: T5-register-audit finite word-list check on the two candidate sentences only; not a formal audit or constitutional adoption\nPASS: T5-candidate-not-axiom-text the note offers both as candidate wordings and not as axiom text\nPASS: source-qubit Qubit: the one-site possibility domain has presentation M_2(C)\nPASS: source-admissibility Admissibility: the distribution is nearest-neighbor determined and varying\nPASS: source-admissibility-support reading note (3): 'available'/'admissible' denotes the distribution's support\nPASS: source-record Record: a record locks one admissible possibility; only records are readable\nPASS: source-parent-frame-import the 2026-08-09 parent names the dimension-three frame theorem\nPASS: surface-status the note keeps its conditional surface and independent audit explicit\nper_element: every direction, condition, record subset, fibre and rotation is declared and completely enumerated\nper_site: one M_2(C) site, on a supplied six-slot compiler and on the 12-qubit cube\nper_mode: binary, ternary and coin menus only; no arity above three\nper_block: the clause, the cube identity, the fibre census, the equivariance sweep, the wordings\nlattice_wide: no lattice-wide Born claim; the cube is one finite carrier\nruntime_seconds: 43.8\nrecorded_arguments: 11 printed, none counted as verified\nTOTAL: PASS=55 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010015Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/fibred_menu_independence_clause_non_vacuous_discriminating_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

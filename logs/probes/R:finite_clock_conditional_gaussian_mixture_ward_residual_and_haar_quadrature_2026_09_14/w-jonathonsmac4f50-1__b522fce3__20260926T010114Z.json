@@ -1,0 +1,35 @@
+{
+ "task": "R:finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "finite",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/finite_clock_conditional_gaussian_mixture_ward_residual_and_haar_quadrature_2026_09_14.py",
+ "seed": 84474,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010114Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71b00f060c663b54efadc1608a6c9da77954de798476d083f4bfea6ba1f18834",
+ "stdout_tail": "d\": 1.1649318392184471\n    },\n    {\n      \"N\": 7,\n      \"states\": 823543,\n      \"max_link_charge\": 1,\n      \"charge\": [\n        1,\n        0\n      ],\n      \"clock\": 0.4895416595637511,\n      \"haar\": 0.4895416595569531,\n      \"absolute_error\": 6.79800660208383e-12,\n      \"bound\": 0.000652775651600946\n    },\n    {\n      \"N\": 7,\n      \"states\": 823543,\n      \"max_link_charge\": 1,\n      \"charge\": [\n        1,\n        1\n      ],\n      \"clock\": 0.31072995807765236,\n      \"haar\": 0.3107299199092631,\n      \"absolute_error\": 3.8168389282500215e-08,\n      \"bound\": 0.000652775651600946\n    },\n    {\n      \"N\": 7,\n      \"states\": 823543,\n      \"max_link_charge\": 2,\n      \"charge\": [\n        1,\n        -1\n      ],\n      \"clock\": 0.31072995807765236,\n      \"haar\": 0.3107299199092631,\n      \"absolute_error\": 3.8168389282500215e-08,\n      \"bound\": 0.013512868348421867\n    }\n  ],\n  \"growing_order\": [\n    {\n      \"E\": 100,\n      \"N\": 12,\n      \"comparison_bound\": 0.009582950590540006,\n      \"summed_Ward_bound\": 0.10024911622980763\n    },\n    {\n      \"E\": 10000,\n      \"N\": 16,\n      \"comparison_bound\": 0.00015474894469649558,\n      \"summed_Ward_bound\": 0.002302122572205674\n    },\n    {\n      \"E\": 1000000,\n      \"N\": 19,\n      \"comparison_bound\": 3.931246208012613e-06,\n      \"summed_Ward_bound\": 7.142209502849746e-05\n    },\n    {\n      \"E\": 100000000,\n      \"N\": 21,\n      \"comparison_bound\": 6.895608591395246e-07,\n      \"summed_Ward_bound\": 1.4020598740532995e-05\n    }\n  ]\n}\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010115Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

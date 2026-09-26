@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_resummation_ansatz_test_2026_05_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_resummation_ansatz_test_2026_05_30.py",
+ "seed": 85105,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011145Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8054b8783d3dc0bf6974a35ee170da0a986186e74daecc29c1a5203a64afacfc",
+ "stdout_tail": " single low-order truncation reaches the comparator; resummation is required)\n  [PASS] the next coefficient d_6 measurably moves <P>(6) (sensitivity is real, resummation matters)\n         <P>(6) span across the d_6 trial band = 0.06931\n\n==============================================================================\n7. Honest test summary\n==============================================================================\n  * The d-log-Pade METHOD is sound on a controlled complex-pair proxy: it localizes\n    the singularity (|beta_c|->5.70, off-axis) and reconstructs Delta(6) to <1e-3 by\n    [10/10], and its predictive next-coefficient call is exact to ~1e-11 on the proxy.\n  * On the PHYSICAL series, the supplied d_5..d_11 packet is now consumed. The\n    historical d_5-only PENDING surface is retired; predictive tests are live.\n  * Tadpole/boosted-PT of the BARE single-plaquette series does NOT reach 0.594: it\n    collapses to 0 or, convention-dependent, lands on the blocked 0.611 / 0.8740.\n  * CURRENT TEST STATUS: tadpole/geometric is FALSIFIED by the supplied coefficients;\n    d-log-Pade is unstable rather than converged (d_9 and d_11 falsify while d_10\n    narrowly supports). This harness evaluates the route; it does NOT close beta=6.\n    0.594 is a Monte-Carlo comparator, never a derivation input.\n\n==============================================================================\nSCORECARD: PASS=30 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011146Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

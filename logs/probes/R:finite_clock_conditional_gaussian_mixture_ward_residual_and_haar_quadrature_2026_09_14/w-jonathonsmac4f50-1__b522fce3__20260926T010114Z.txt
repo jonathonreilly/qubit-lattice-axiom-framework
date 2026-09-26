@@ -1,0 +1,446 @@
+per_element: executed positive relative-image Gaussian mixtures match direct products in one,two,three and six factor cases; infinite tails are checked and not executed.
+per_site: executed fifteen conditional finite-clock derivative identities match Fourier aliases; generic mean forces are nonzero and obey the uniform bound.
+per_mode: executed charge-N clock characters alias to one while their Haar expectations can be tiny; bounded-frequency tails are checked explicitly.
+per_block: executed nine two-square gauge Wilson expectations match independent plaquette sums, with direct clock sums up to823543states.
+lattice_wide: checked and not executed as an infinite-volume theorem; four growing-clock scales evaluate the uniform E-link comparison; arbitrary lattices and infinite-volume convergence are checked and not executed.
+{
+  "positive_mixture": [
+    {
+      "r": 1,
+      "Gamma": 0.3,
+      "relative_product_error": 0.0,
+      "fourier": [
+        [
+          0,
+          1.0,
+          1.0
+        ],
+        [
+          1,
+          0.18887560283756175,
+          0.18887560283756183
+        ],
+        [
+          2,
+          0.0012726338013397695,
+          0.0012726338013398079
+        ],
+        [
+          3,
+          3.059023204666426e-07,
+          3.0590232050182584e-07
+        ],
+        [
+          7,
+          5.325566591606505e-17,
+          3.4089239391151124e-36
+        ]
+      ]
+    },
+    {
+      "r": 2,
+      "Gamma": 1.05,
+      "relative_product_error": 3.5696999650510565e-16,
+      "fourier": [
+        [
+          0,
+          1.0,
+          1.0000000000000002
+        ],
+        [
+          1,
+          0.5779407209858386,
+          0.5779407209858386
+        ],
+        [
+          2,
+          0.1258982538735867,
+          0.12589825387358675
+        ],
+        [
+          3,
+          0.012488419072896757,
+          0.012488419072896866
+        ],
+        [
+          7,
+          6.51027175353932e-11,
+          6.510264335696683e-11
+        ]
+      ]
+    },
+    {
+      "r": 3,
+      "Gamma": 2.3,
+      "relative_product_error": 2.8453401753309e-16,
+      "fourier": [
+        [
+          0,
+          1.0,
+          1.0
+        ],
+        [
+          1,
+          0.8024934510120848,
+          0.8024934510120847
+        ],
+        [
+          2,
+          0.4175279643449601,
+          0.41752796434496026
+        ],
+        [
+          3,
+          0.14094099259053527,
+          0.14094099259053547
+        ],
+        [
+          7,
+          2.3567534047421614e-05,
+          2.3567534047527914e-05
+        ]
+      ]
+    },
+    {
+      "r": 6,
+      "Gamma": 6.6,
+      "relative_product_error": 5.477451526283933e-16,
+      "fourier": [
+        [
+          0,
+          1.0,
+          0.9999999999999999
+        ],
+        [
+          1,
+          0.9270402158246894,
+          0.9270402158246894
+        ],
+        [
+          2,
+          0.738575041195637,
+          0.7385750411956368
+        ],
+        [
+          3,
+          0.505695179877642,
+          0.5056951798776418
+        ],
+        [
+          7,
+          0.024425637820771093,
+          0.024425637820771322
+        ]
+      ]
+    }
+  ],
+  "ward_and_alias": [
+    {
+      "r": 1,
+      "N": 3,
+      "Gamma": 0.4,
+      "force": 6.990290786284283e-05,
+      "ward_abs": 0.01676290446993227,
+      "bound": 0.04578374316789881,
+      "alias_error": 1.4827573645541452e-16
+    },
+    {
+      "r": 1,
+      "N": 5,
+      "Gamma": 0.4,
+      "force": 2.5767437799896366e-13,
+      "ward_abs": 6.555862124709827e-09,
+      "bound": 2.3341648221019207e-08,
+      "alias_error": 7.824974092519511e-17
+    },
+    {
+      "r": 1,
+      "N": 9,
+      "Gamma": 0.4,
+      "force": -4.889085799919548e-18,
+      "ward_abs": 8.921744373349118e-17,
+      "bound": 3.679045089595557e-34,
+      "alias_error": 1.0492068636491692e-16
+    },
+    {
+      "r": 1,
+      "N": 17,
+      "Gamma": 0.4,
+      "force": -3.9141052533650496e-17,
+      "ward_abs": 7.325503918323917e-17,
+      "bound": 4.0856942711388595e-138,
+      "alias_error": 4.857099805941487e-17
+    },
+    {
+      "r": 1,
+      "N": 3,
+      "Gamma": 1.2,
+      "force": 0.12380253975889968,
+      "ward_abs": 0.4933410456646815,
+      "bound": 1.3471297897305359,
+      "alias_error": 1.8619006149354548e-16
+    },
+    {
+      "r": 1,
+      "N": 5,
+      "Gamma": 1.2,
+      "force": 0.0002877093995625191,
+      "ward_abs": 0.004135001887149286,
+      "bound": 0.01441287462548987,
+      "alias_error": 1.4661228859660187e-16
+    },
+    {
+      "r": 1,
+      "N": 9,
+      "Gamma": 1.2,
+      "force": -7.316477286932927e-15,
+      "ward_abs": 1.5473063573083356e-11,
+      "bound": 5.346966690909136e-11,
+      "alias_error": 8.978772588236428e-17
+    },
+    {
+      "r": 1,
+      "N": 17,
+      "Gamma": 1.2,
+      "force": -2.2030408497437918e-17,
+      "ward_abs": 2.1889457577009514e-16,
+      "bound": 1.822868492205091e-45,
+      "alias_error": 1.7935918173255987e-16
+    },
+    {
+      "r": 2,
+      "N": 3,
+      "Gamma": 2.0,
+      "force": -0.3941269243427009,
+      "ward_abs": 0.4987873211378127,
+      "bound": 3.201550983042138,
+      "alias_error": 2.8066088919804617e-16
+    },
+    {
+      "r": 2,
+      "N": 5,
+      "Gamma": 2.0,
+      "force": -0.018670787103578248,
+      "ward_abs": 0.04477606725066494,
+      "bound": 0.20822042213587136,
+      "alias_error": 2.561053526745152e-16
+    },
+    {
+      "r": 2,
+      "N": 9,
+      "Gamma": 2.0,
+      "force": -1.9903323078081228e-08,
+      "ward_abs": 7.994952130072087e-07,
+      "bound": 2.2939394682302144e-06,
+      "alias_error": 2.1747366439215094e-16
+    },
+    {
+      "r": 2,
+      "N": 17,
+      "Gamma": 2.0,
+      "force": 5.2215703299790485e-17,
+      "ward_abs": 1.7622799863679289e-16,
+      "bound": 6.175231352148049e-27,
+      "alias_error": 2.0491296300090337e-16
+    },
+    {
+      "r": 6,
+      "N": 5,
+      "Gamma": 6.0,
+      "force": 0.24994528914104408,
+      "ward_abs": 0.7768874138018212,
+      "bound": 4.0128999392672275,
+      "alias_error": 6.473657049138938e-16
+    },
+    {
+      "r": 6,
+      "N": 9,
+      "Gamma": 6.0,
+      "force": 0.009147864052761568,
+      "ward_abs": 0.03668051612292758,
+      "bound": 0.09864490024329044,
+      "alias_error": 9.46771326333043e-16
+    },
+    {
+      "r": 6,
+      "N": 17,
+      "Gamma": 6.0,
+      "force": 8.872008293821766e-10,
+      "ward_abs": 7.833489789061642e-09,
+      "bound": 2.0919491679332098e-08,
+      "alias_error": 1.1493694722195334e-15
+    }
+  ],
+  "sharpness_and_charge_alias": [
+    {
+      "N": 3,
+      "Gamma": 0.8,
+      "normalization_error": 0.00721312661041118,
+      "saturated_bound": 0.007213126610411046,
+      "charge_N_clock": 1.0,
+      "charge_N_Haar": 0.0036065631360157305
+    },
+    {
+      "N": 5,
+      "Gamma": 1.0,
+      "normalization_error": 7.453306344107347e-06,
+      "saturated_bound": 7.453306344157342e-06,
+      "charge_N_clock": 1.0000000000000002,
+      "charge_N_Haar": 3.726653172078671e-06
+    },
+    {
+      "N": 9,
+      "Gamma": 3.0,
+      "normalization_error": 2.741918172732838e-06,
+      "saturated_bound": 2.741918172768169e-06,
+      "charge_N_clock": 1.0,
+      "charge_N_Haar": 1.3709590863840845e-06
+    }
+  ],
+  "full_gauge_Wilson": [
+    {
+      "N": 3,
+      "states": 2187,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        0
+      ],
+      "clock": 0.5452243679071261,
+      "haar": 0.4895416595569531,
+      "absolute_error": 0.05568270835017303,
+      "bound": 2.0
+    },
+    {
+      "N": 3,
+      "states": 2187,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        1
+      ],
+      "clock": 0.4208820027538107,
+      "haar": 0.3107299199092631,
+      "absolute_error": 0.11015208284454764,
+      "bound": 2.0
+    },
+    {
+      "N": 3,
+      "states": 2187,
+      "max_link_charge": 2,
+      "charge": [
+        1,
+        -1
+      ],
+      "clock": 0.4208820027538107,
+      "haar": 0.3107299199092631,
+      "absolute_error": 0.11015208284454764,
+      "bound": 2.0
+    },
+    {
+      "N": 5,
+      "states": 78125,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        0
+      ],
+      "clock": 0.48955252250230097,
+      "haar": 0.4895416595569531,
+      "absolute_error": 1.0862945347855923e-05,
+      "bound": 0.17825011851434566
+    },
+    {
+      "N": 5,
+      "states": 78125,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        1
+      ],
+      "clock": 0.31106948546567337,
+      "haar": 0.3107299199092631,
+      "absolute_error": 0.00033956555641029285,
+      "bound": 0.17825011851434566
+    },
+    {
+      "N": 5,
+      "states": 78125,
+      "max_link_charge": 2,
+      "charge": [
+        1,
+        -1
+      ],
+      "clock": 0.31106948546567337,
+      "haar": 0.3107299199092631,
+      "absolute_error": 0.00033956555641029285,
+      "bound": 1.1649318392184471
+    },
+    {
+      "N": 7,
+      "states": 823543,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        0
+      ],
+      "clock": 0.4895416595637511,
+      "haar": 0.4895416595569531,
+      "absolute_error": 6.79800660208383e-12,
+      "bound": 0.000652775651600946
+    },
+    {
+      "N": 7,
+      "states": 823543,
+      "max_link_charge": 1,
+      "charge": [
+        1,
+        1
+      ],
+      "clock": 0.31072995807765236,
+      "haar": 0.3107299199092631,
+      "absolute_error": 3.8168389282500215e-08,
+      "bound": 0.000652775651600946
+    },
+    {
+      "N": 7,
+      "states": 823543,
+      "max_link_charge": 2,
+      "charge": [
+        1,
+        -1
+      ],
+      "clock": 0.31072995807765236,
+      "haar": 0.3107299199092631,
+      "absolute_error": 3.8168389282500215e-08,
+      "bound": 0.013512868348421867
+    }
+  ],
+  "growing_order": [
+    {
+      "E": 100,
+      "N": 12,
+      "comparison_bound": 0.009582950590540006,
+      "summed_Ward_bound": 0.10024911622980763
+    },
+    {
+      "E": 10000,
+      "N": 16,
+      "comparison_bound": 0.00015474894469649558,
+      "summed_Ward_bound": 0.002302122572205674
+    },
+    {
+      "E": 1000000,
+      "N": 19,
+      "comparison_bound": 3.931246208012613e-06,
+      "summed_Ward_bound": 7.142209502849746e-05
+    },
+    {
+      "E": 100000000,
+      "N": 21,
+      "comparison_bound": 6.895608591395246e-07,
+      "summed_Ward_bound": 1.4020598740532995e-05
+    }
+  ]
+}
+TOTAL: PASS=5 FAIL=0

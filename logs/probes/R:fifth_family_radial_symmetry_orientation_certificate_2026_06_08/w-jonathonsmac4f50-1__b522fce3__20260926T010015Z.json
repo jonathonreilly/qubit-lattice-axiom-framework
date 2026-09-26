@@ -1,0 +1,35 @@
+{
+ "task": "R:fifth_family_radial_symmetry_orientation_certificate_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "fifth",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.py",
+ "seed": 84415,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010015Z",
+ "elapsed_s": 9.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62ed9fc18db852d6b23e5f96a1bfd21fe9caa6ab824357a7e825f05e9923c4ca",
+ "stdout_tail": "================================================================================================\nFIFTH FAMILY RADIAL SYMMETRY/ORIENTATION CERTIFICATE\n================================================================================================\nrow: drift=0.20 seed=0\nmethod: source-field linearity + zero-field variational recurrence\n\nPASS source note links this independent certificate\nPASS empty-source field is exactly zero componentwise\nPASS +1 and -1 same-point source fields cancel exactly\n\nzero_delta     = +0.000000000000e+00\nneutral_delta  = +0.000000000000e+00\nplus_delta     = -2.028481894900e-06\nminus_delta    = +2.028191386616e-06\nlinear_slope   = -2.028336655911e-06\n\nPASS zero-source centroid delta is exact\nPASS neutral same-point centroid delta is exact\nPASS first-order positive-source radial response is negative\nPASS finite +1 source has same negative sign as variational slope\nPASS finite -1 source has opposite positive sign\nPASS plus/minus signs certify orientation boundary, not control leak\n\nSCORECARD PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010024Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/fifth_family_radial_symmetry_orientation_certificate_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

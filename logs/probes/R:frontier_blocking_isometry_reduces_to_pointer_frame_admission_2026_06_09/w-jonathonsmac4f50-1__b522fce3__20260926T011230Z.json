@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_blocking_isometry_reduces_to_pointer_frame_admission_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_blocking_isometry_reduces_to_pointer_frame_admission_2026_06_09.py",
+ "seed": 85150,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T011230Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=30 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4f7088e8b64ee96dc9c5f7665554b2a5a5af9a4455a3fc52f9381d15ee163c76",
+ "stdout_tail": "B3 two DIFFERENT pointer sets give DIFFERENT channels (physical choice)\n  PASS  B3 a record-label relabeling leaves the channel invariant (pure gauge)\n  PASS  B3 relabeled set is the same projector set up to order (one-hot preserved)\n\n=== B4: compression isometry V (block spin) -- same reduction ===\n  PASS  B4 V^dag V = I_2 (V is an isometry; E(X)=V^dag X V is unital, CP)\n  PASS  B4 V'=V U has the SAME range (survivor-qubit gauge, not physical)\n  PASS  B4 the gauge only conjugates the survivor: E'(Y) = U^dag E(Y) U\n  PASS  B4 a different range = a physically distinct surviving sector/pointer\n\n=== B5: irreducible color C^3 -- no canonical covariant pointer set ===\n  PASS  B5 sampled g are genuine SU(3) (unitary, det=1)\n  PASS  B5 I3 commutes with every g (the trivial invariant projector)\n  PASS  B5 a rank-1 color projector breaks SU(3) covariance (commutator > 0)\n  PASS  B5 HW(3) generators lie in SU(3) (det Z = det X = 1)\n  PASS  B5 HW(3) twirl of a Hermitian X -> scalar (Tr X /3) I3 (commutant=scalars)\n  PASS  B5 only SU(3)-invariant projector ranks are 0 and 3 (no nontrivial sector)\n  PASS  B5 d=2 sanity: a rank-1 SU(2) projector also breaks covariance\n\n=== B6: consolidation (each flag is recomputed fresh, not a literal) ===\n  PASS  B6 isometry FIXED given {P_r} (so hat 4 is gated, not impossible/no-go)\n  PASS  B6 hat 4 reduces to the named pointer-frame admission (not independent)\n  PASS  B6 NO hat discharged (isometry not delivered from the axioms)\n\nTOTAL: PASS=30 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011230Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta6_d10_coefficient_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta6_d10_coefficient_2026_06_04.py",
+ "seed": 84559,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010239Z",
+ "elapsed_s": 92.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "267878253b964f77a8e5f2cf280a57df6f9d66796ed41ad5b257a0353398753e",
+ "stdout_tail": "5 = 1/472392 = 2.11688598e-06\n   d_6 = 7/5668704 = 1.23485015e-06\n   d_7 = 5/17006112 = 2.94011941e-07\n   d_8 = 5/272097792 = 1.83757463e-08\n   d_9 = -2035/264479053824 = -7.69437114e-09\n   d_10 = -10483/5289581076480 = -1.98182046e-09\n--------------------------------------------------------------------------------\n   d_10 PIECES: cube(10) = -4081/1763193692160 = -2.314550e-09\n                weight-10@10 = 55/198359290368 = 2.772746e-10\n                weight-11@10 = 11/198359290368 = 5.545493e-11 (NEW; baryon/eps-active)\n                baryon/epsilon = folded into weight-11@10 (+ w10@10 inc-3 vectors), NOT separate\n   d_10 = -10483/5289581076480 = -1.98182046e-09  (NEGATIVE; d_10/d_9 = 953/3700)\n   RADIUS: complex-conjugate pair, [2/2] x_c ~ (1.78123 - 5.08303j), R ~ 5.3861 < 6\n           => supports Delta divergence at beta=6 (consistent with literature Fisher-zero ~5.7; earlier R~8 disfavored)\n================================================================================\nSCORECARD: PASS=19 FAIL=0   (92.2s, peak RSS 0.59 GB)\n================================================================================\nd_10 is an EXACT strong-coupling coefficient (bounded result). The radius\nevidence for R<6 is a 6-coefficient differential-approximant ESTIMATE: the complex-\npair structure + R<6 are robust; the precise R~5.4 carries ~+/-1 uncertainty.\nThis is NOT a beta=6 closure -- the infinite-hierarchy obstruction stands.\n0.594 is a Monte-Carlo comparator, never a derivation input.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_beta6_d10_coefficient_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

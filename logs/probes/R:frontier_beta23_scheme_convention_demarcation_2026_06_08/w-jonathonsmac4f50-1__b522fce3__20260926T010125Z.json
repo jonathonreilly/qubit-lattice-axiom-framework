@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_beta23_scheme_convention_demarcation_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_beta23_scheme_convention_demarcation_2026_06_08.py",
+ "seed": 84485,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b522fce3",
+ "started_utc": "20260926T010125Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7989e8e5537c814979d14dfde23681049f4676f7f5de98b4f37e4583078cd304",
+ "stdout_tail": "======================\n  [PASS] b1' has ZERO dependence on (c1, c2, c3): d(b1')/dc_i == 0 for all i (the demarcation sits exactly at n >= 2, not movable)\n  [PASS] a leading rescaling a' = lam*a sends b0 -> b0/lam (lam != 1 changes b0): that freedom is the separate g_bare NORMALIZATION convention, NOT a scheme map (normalization-preserving maps fix the leading coefficient = 1)\n==============================================================================\nTOTAL: PASS=15 FAIL=0\n==============================================================================\nSCOPE (demarcation, NOT closure): under normalization-preserving coupling\n  reparametrizations, b0 and b1 are IDENTICALLY invariant (derived) and b2, b3 are\n  FULLY adjustable (any prescribed pair; 't Hooft scheme explicit; solvable iff\n  b0 != 0 = asymptotic freedom).  The inherited bounded QCD-running coefficients\n  (b0, b1) = (7, 26) are exactly the invariant set, so the L3/L4 'MS-bar structural\n  gap' consists of CONVENTION-side coefficients: at fixed physical spacing the\n  native coefficient set carries the invariant running content, and the MS-bar labels\n  are a literature-comparison DICTIONARY (HK->MSbar conversion integrals = the\n  named admission, owned by the closure_c_l1a structural form; NOT computed here).\n  The alpha_s(M_Z) certificate's imports (dictionary, running, thresholds, Sommer)\n  are UNCHANGED; inherited color/g_bare gates are not retired; the sister b_3\n  N_f-dependence lane is untouched.  No new axiom.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T010127Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

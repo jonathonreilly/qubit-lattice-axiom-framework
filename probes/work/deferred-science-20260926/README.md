@@ -4,7 +4,7 @@ Source: the local Codex branch `codex/mobile-record-post-formation-campaign-2026
 
 The campaigns published their milestones as curated PRs:
 
-- the sixteen drafts in #8545–#8610 are assigned for closure and research transfer under the [draft disposition](../mobile-record-draft-triage-20260926/README.md); their source branches remain;
+- the sixteen drafts in #8545–#8610 are closed and transferred to research under the [draft disposition](../mobile-record-draft-triage-20260926/README.md); their source branches remain;
 - #8635–#8672 and #8831–#8958 landed in narrowed form.
 
 ## Triage

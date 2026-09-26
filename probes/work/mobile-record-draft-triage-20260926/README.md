@@ -25,3 +25,7 @@ The manifest categories are routing classifications, not mathematical verdicts. 
 Inspect the relevant complete proof and dependencies before reusing any lemma. Reproduce decisive checks independently; distinguish actual defects from merely missing verification. Record narrowed source candidates and the first unresolved research step. Existing recovered C tasks own fixed-rate numerical and dimer-wave replay; J work should reuse those results. Stronger physical selection, quantum-history and joint-limit claims stay hypotheses.
 
 Normal independent confirmation and combined current-main validation are required before any future landing. Do not recreate sixteen replacement PRs. This package is a work queue, not a scientific review receipt. #9008 and #9266 are outside this sixteen-draft disposition.
+
+## Completed disposition
+
+All sixteen drafts are closed, with their source branches verified intact. [Closure receipt](CLOSURE_RECEIPT.json) records the final checks. The generated task catalog now contains the seven research assignments and no automatic open-PR tasks for these closed drafts. No mathematical PASS, audit verdict or science landing is implied.

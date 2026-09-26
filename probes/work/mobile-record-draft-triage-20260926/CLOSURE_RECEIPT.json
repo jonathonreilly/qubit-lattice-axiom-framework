@@ -1,0 +1,237 @@
+{
+  "scope": "16 mobile-record drafts; research transfer, no science landing",
+  "closures": [
+    {
+      "number": 8545,
+      "state": "CLOSED",
+      "head_sha": "689941783bea870e08458e079ddb208257d0083d",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-formation-response:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:08.683393+00:00"
+    },
+    {
+      "number": 8551,
+      "state": "CLOSED",
+      "head_sha": "4de7aa06bbdb48db8d31ba29dbd90b2d8433eaf8",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-formation-response:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:13.201779+00:00"
+    },
+    {
+      "number": 8552,
+      "state": "CLOSED",
+      "head_sha": "197c05b563aac6f271b3b2c4875b4bd4e594b72d",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-formation-response:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:17.472631+00:00"
+    },
+    {
+      "number": 8557,
+      "state": "CLOSED",
+      "head_sha": "6aaa725a086377dfbca541fec3f453024d67b774",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-native-hydrodynamics:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:22.442228+00:00"
+    },
+    {
+      "number": 8560,
+      "state": "CLOSED",
+      "head_sha": "c26b0171974c456f68dd92a4c8661ade1cc5ddbd",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-native-hydrodynamics:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:27.114303+00:00"
+    },
+    {
+      "number": 8561,
+      "state": "CLOSED",
+      "head_sha": "4ae52ade2299b4dfaff388971f423aa8f6ddf64a",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-native-hydrodynamics:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:32.015061+00:00"
+    },
+    {
+      "number": 8565,
+      "state": "CLOSED",
+      "head_sha": "dceb153003b35f7a84f68f5bddeb5c22befaaa30",
+      "branch_preserved": true,
+      "task_id": "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:35.961651+00:00"
+    },
+    {
+      "number": 8566,
+      "state": "CLOSED",
+      "head_sha": "ead70def0390d2d93e82fc87bf006904df9cc914",
+      "branch_preserved": true,
+      "task_id": "J:derive:deferred-20260926-colour-encodings-quantum-lift:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:40.051396+00:00"
+    },
+    {
+      "number": 8567,
+      "state": "CLOSED",
+      "head_sha": "801affee6e5fb11519c5b31ec2532cf320b8ba22",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-gibbs-vector-transport:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:44.206731+00:00"
+    },
+    {
+      "number": 8569,
+      "state": "CLOSED",
+      "head_sha": "508722df2eafb18464e8c5f84ed89fca6383f67c",
+      "branch_preserved": true,
+      "task_id": "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:48.332614+00:00"
+    },
+    {
+      "number": 8589,
+      "state": "CLOSED",
+      "head_sha": "97c1522d462e574663d8dd50fa424f9147587792",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-geometric-formation-waves:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:52.658904+00:00"
+    },
+    {
+      "number": 8594,
+      "state": "CLOSED",
+      "head_sha": "d0dec3ccac49f285194d6aad20a299765269910c",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-geometric-formation-waves:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:49:57.363548+00:00"
+    },
+    {
+      "number": 8600,
+      "state": "CLOSED",
+      "head_sha": "3c6fea4be33116952cc81f004b3550baec4087a9",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-geometric-formation-waves:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:50:09.836405+00:00"
+    },
+    {
+      "number": 8604,
+      "state": "CLOSED",
+      "head_sha": "af45e32418ba6af18af646164c8d90abc3d933ba",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-geometric-formation-waves:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:50:14.881314+00:00"
+    },
+    {
+      "number": 8609,
+      "state": "CLOSED",
+      "head_sha": "b5fcda79703d6b0c459065f83329a54238bb50ff",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-positive-quantum-curl:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:50:20.171891+00:00"
+    },
+    {
+      "number": 8610,
+      "state": "CLOSED",
+      "head_sha": "05ce3bed24d4b13226cfe0bef84ea344fd54b59c",
+      "branch_preserved": true,
+      "task_id": "J:derive:mobile-record-geometric-formation-waves:a1",
+      "routing_commit": "6e283b71e30183c6e9d139b46e6c0fb246211670",
+      "at": "2026-09-26T17:50:24.922779+00:00"
+    }
+  ],
+  "checks": {
+    "all_16_absent_from_open_prs": true,
+    "all_16_original_source_branches_preserved_at_frozen_heads": true,
+    "all_7_research_tasks_in_generated_catalog": true,
+    "unique_task_ids": true,
+    "obsolete_open_pr_tasks_removed": true,
+    "science_proofs_or_runners_newly_certified": false
+  },
+  "queue_units": [
+    {
+      "unit": "J-derive-deferred-20260926-colour-encodings-quantum-lift-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-deferred-20260926-cubic-couplings-and-gauss-screens-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-mobile-record-formation-response-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-mobile-record-native-hydrodynamics-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-mobile-record-gibbs-vector-transport-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-mobile-record-geometric-formation-waves-a1",
+      "already_done": false
+    },
+    {
+      "unit": "J-derive-mobile-record-positive-quantum-curl-a1",
+      "already_done": false
+    }
+  ],
+  "remaining_open_pr_snapshot": [
+    {
+      "headRefOid": "9510856f9c01d0b0bf2f45358a02ac5f07f72ea5",
+      "isDraft": false,
+      "number": 9307,
+      "title": "docs(synthesis): recompute one exact identity per block of campaign four"
+    },
+    {
+      "headRefOid": "190b7a4bae7838a053c02822d1abe9e21198908e",
+      "isDraft": false,
+      "number": 9306,
+      "title": "test(ring-model): test the energy-minimising guide for the charge projector"
+    },
+    {
+      "headRefOid": "b204601528d82681057ee033bc7f68d3c824cb77",
+      "isDraft": false,
+      "number": 9300,
+      "title": "docs(composite-network): average the flux-free slice fluxes along each axis"
+    },
+    {
+      "headRefOid": "031ddb41b1dcb5110d891a62e2f767c3873d500e",
+      "isDraft": false,
+      "number": 9298,
+      "title": "docs(ring-model): add finite curvature diagnostics on the 24^3 torus"
+    },
+    {
+      "headRefOid": "9208f06f5ac73724f5c5ba0db89a630b75643973",
+      "isDraft": false,
+      "number": 9289,
+      "title": "[physics-loop] admissibility-induced-law block 155: bounded_theorem bounded-support - the walker sea's energy falls under every uniform shear at fixed volume, and counted by the member it forces the closed lattice to shear"
+    },
+    {
+      "headRefOid": "b484be7728741fe37efa1af4eee2e01a723337d5",
+      "isDraft": false,
+      "number": 9287,
+      "title": "[physics-loop] admissibility-induced-law block 154: bounded_theorem bounded-support - the order at which records' collisions break the books is set by their hops; no placement of the walker's energy changes it"
+    },
+    {
+      "headRefOid": "146e33463ea70c3b802bc5be8084f38de9078e13",
+      "isDraft": false,
+      "number": 9285,
+      "title": "[physics-loop] admissibility-induced-law block 153: bounded_theorem bounded-support - moving records at the neutral scale have no long-range order at low density and long-range order at large beta and high density"
+    },
+    {
+      "headRefOid": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "isDraft": true,
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)"
+    }
+  ]
+}

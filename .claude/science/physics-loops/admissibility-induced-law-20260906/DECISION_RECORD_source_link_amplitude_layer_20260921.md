@@ -1208,3 +1208,26 @@ Block 165 (3691bede25) is a harvest of #9225, confirmed by #9312 (Grok). In bloc
 **More Grok-confirmed candidates, not harvested:**
 - #9231 + #9326: the curvature member's turn series has radius equal to the capture threshold, and the two charges agree on balanced content. Its checker settles several claims numerically, so a harvest needs an exact port.
 - #9158 + #9325: the delayed clock and the pair law, conditional on well-posedness.
+
+## Fifty-fifth addendum (2026-09-26, campaign): blocks 166–168, three Grok-confirmed harvests
+
+Nothing is adopted.
+
+- **Block 166** (843d923cb1; #9231 with #9326). The member's rays turn by `Σ_k m_k [uᵏ]nᵏ b^{−k}` at every order.
+  - The series sums to the turn exactly for `b > b_c`, and diverges below and at `b_c`, at every charge ratio.
+  - The third-order term at a fixed first-order turn rises with `ρ`.
+  - T4's second proof, through the nonnegative coefficients, is the supervisor's and is unrefereed.
+- **Block 167** (6116fb6362; #9299 with #9332). With the sea's energy counted (block 147's reading in which the member sees the sea):
+  - the sea's response to a long shear wave is half its uniform response, which is negative for every shear;
+  - the member costs only `K q²` on transverse traceless waves;
+  - so member plus sea lowers its static energy under every long enough shear, at every `K`.
+
+  This answers block 155's open long-wave case. For the third-column table, it adds to the sea-counting row: if the member sees the sea, the flat frame is not a minimum at any `K`.
+- **Block 168** (448c6fc06f; #9304 with #9329). At the neutral scale there is no long-range order for `z < 1/(4F₆(β))` on the sphere (asymptotic to `3/(64β⁵)`), and for `z < 1/(4G(tanh β))` on the two-valued menu. The latter contains `1/256`, and so block 153's `1/320`. The referee's `w/(1 + w)` enlarged the attempt's regions.
+
+**Other referee results.**
+- #9331 (Grok) confirms the statement landed in block 147 T3. The massless sea's energy is exact for every length history, with the counterterm `+I/ℓ`, and a frozen subtraction leaves `I/ℓ₀ − I/ℓ`. It adds that the massive sea is excited at any finite rate, with the adiabatic formula assumed. No action is owed.
+- #9333 (the massive sea at the chessboard momentum, same family) awaits a referee.
+- #9318 (block 162's open case) still awaits Grok.
+
+**Pacing.** #9285, #9287 and #9289 are open. Blocks 156–168 are held as branches, with PR bodies in `pr_bodies/`.

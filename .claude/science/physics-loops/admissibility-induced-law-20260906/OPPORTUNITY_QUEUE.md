@@ -122,3 +122,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 2. **Harvests:** #9299 and #9318 once confirmed; #9225 + #9312; #8853/#9215 with #8977/#9320.
 3. **Programme T beyond first order:** a background lapse and shift; second order in the strain; the lattice and the eight species.
 4. **Programme L** (A1's lattice lift) and **W** (the clock defect): with the probes.
+
+## 2026-09-26 late update 4
+1. The `q²` part of the sea's response, exactly: interval enclosures of about thirty one-dimensional integrals (after block 167).
+2. The window between low and high density at the neutral scale: an exploration with conditional neutrality (after block 168).
+3. Lattice corrections to the member's exterior, and finite wave numbers (after block 166).

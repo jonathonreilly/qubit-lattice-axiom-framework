@@ -59,3 +59,11 @@ The PR bodies for items 5–13 (blocks 156–164) are in `pr_bodies/block<NN>.md
 ## 2026-09-26 late update 3
 14. Block 165 (harvest, Grok-confirmed).
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block165-in-the-cube-kinetic-family-relabellings-in-time-fix-the-kinetic-shape-20260926 --title "[physics-loop] admissibility-induced-law block 165: bounded_theorem bounded-support - in the cube kinetic family, relabellings in time fix the kinetic shape, and the frame's full rate has four numbers of which blindness removes one" --body-file pr_bodies/block165.md`
+
+## 2026-09-26 late update 4
+15. Block 166 (harvest, Grok-confirmed).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block166-the-members-rays-turn-by-a-closed-series-down-to-capture-20260926 --title "[physics-loop] admissibility-induced-law block 166: bounded_theorem bounded-support - the member's rays turn by a closed series at every order, and the series reaches exactly down to the capture threshold at every charge ratio" --body-file pr_bodies/block166.md`
+16. Block 167 (harvest, Grok-confirmed; builds on block 155, #9289).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block167-member-plus-sea-gives-way-to-long-shear-waves-at-every-k-20260926 --title "[physics-loop] admissibility-induced-law block 167: bounded_theorem bounded-support - the sea's response to a long shear wave is half its uniform response, and member plus sea lowers its energy under long enough shears at every K" --body-file pr_bodies/block167.md`
+17. Block 168 (harvest, Grok-confirmed; contains block 153 T1, #9285).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block168-at-the-neutral-scale-no-long-range-order-at-low-density-on-both-menus-20260926 --title "[physics-loop] admissibility-induced-law block 168: bounded_theorem bounded-support - at the neutral scale, moving records have no long-range order at low density on both menus, and the sphere's threshold falls as beta^-5" --body-file pr_bodies/block168.md`

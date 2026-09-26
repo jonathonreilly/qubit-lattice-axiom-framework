@@ -49636,147 +49636,6 @@
   "what": "re-execute the runners of PR #9008 (docs(ice): test the transverse angular form of the cubic covariance (d) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9008 --worker <name> --review \"...\""
  },
  {
-  "id": "J:falsifier:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-g:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-a:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-b:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-d:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-e:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:attack-f:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "J:provenance:PR9266",
-  "type": "judgment",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 2,
-  "command": "{EXTRA}",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?mi)^HIT",
-  "parse": {
-   "summary": "(?m)^SUMMARY: (.*)"
-  },
-  "what": "PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes ): for every number in the theorem statements of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_FINE_SCAN_THE_PROJECTED_ENERGY_DEPENDS_ON_THE_GUIDE_CHARGE_PENALTY_SO_THE_SIZE_TREND_IS_NOT_ESTABLISHED_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925; git show origin/claude/ring-model-single-link-charge-hopping-fine-scan-across-the-rapid-change-20260925:<note>. Create probes/work/pr9266/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9266/<script>.py\""
- },
- {
-  "id": "P:9266",
-  "type": "pr-reexecution",
-  "lane": "ring-model-single-link-charge-hopping-fi",
-  "tier": 0,
-  "direct": true,
-  "command": "python3 probes/run_pr_branch.py 9266",
-  "cwd": ".",
-  "timeout_s": 7200,
-  "hit_pattern": "(?m)^HIT: ",
-  "parse": {
-   "runners": "runners in the PR: (\\d+)"
-  },
-  "what": "re-execute the runners of PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes a guide bi) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9266 --worker <name> --review \"...\""
- },
- {
   "id": "J:falsifier:PR9285",
   "type": "judgment",
   "lane": "admissibility-induced-law-block153-movin",
@@ -50480,6 +50339,288 @@
    "runners": "runners in the PR: (\\d+)"
   },
   "what": "re-execute the runners of PR #9300 (docs(composite-network): average the flux-free slice fluxes along each) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9300 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): attack RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9306",
+  "type": "judgment",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): for every number in the theorem statements of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\""
+ },
+ {
+  "id": "P:9306",
+  "type": "pr-reexecution",
+  "lane": "ring-model-charge-hopping-energy-minimis",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9306",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9306 (test(ring-model): test the energy-minimising guide for the charge proj) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9306 --worker <name> --review \"...\""
+ },
+ {
+  "id": "J:falsifier:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-g:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-a:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-b:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-d:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-e:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:attack-f:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): attack ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "J:provenance:PR9307",
+  "type": "judgment",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 2,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "what": "PR #9307 (docs(synthesis): recompute one exact identity per block of c): for every number in the theorem statements of ROUND_SIX_SYNTHESIS_ONE_EXACT_IDENTITY_PER_BLOCK_OF_THE_FOURTH_CAMPAIGN_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/round-six-synthesis-one-exact-identity-per-block-20260926; git show origin/claude/round-six-synthesis-one-exact-identity-per-block-20260926:<note>. Create probes/work/pr9307/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9307/<script>.py\""
+ },
+ {
+  "id": "P:9307",
+  "type": "pr-reexecution",
+  "lane": "round-six-synthesis-one-exact-identity-p",
+  "tier": 0,
+  "direct": true,
+  "command": "python3 probes/run_pr_branch.py 9307",
+  "cwd": ".",
+  "timeout_s": 7200,
+  "hit_pattern": "(?m)^HIT: ",
+  "parse": {
+   "runners": "runners in the PR: (\\d+)"
+  },
+  "what": "re-execute the runners of PR #9307 (docs(synthesis): recompute one exact identity per block of campaign fo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9307 --worker <name> --review \"...\""
  },
  {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
@@ -56248,7 +56389,12 @@
   },
   "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
   "related_tasks": [],
-  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Three exact results were independently checked within the same model family. (1) A six-moment mixed encoding has the same product density but a different exact initial drift, -3/3584. (2) Affine covariant single-pair density encodings lose the cubic colour moment; a positive encoding with a readable quadratic observable has an exact drift difference of 1/57344. (3) Positive covariant states on two pair spaces (dimension 16), with column rank 14 and affine rank 13, retain all fourteen probabilities. The campaign report names what remains open: injectivity supplies neither perfect colour readout nor a completely positive evolution implementing the rates. For the two-pair encoding, decide whether a completely positive generator on the encoded states reproduces the specified colour rates, or exhibit an obstruction. Alternatively, test the quantum-lift boundary of the geometric singlet channel and fibre construction. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/CAMPAIGN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-colour-encodings-quantum-lift/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: Three exact results were independently checked within the same model family. (1) A six-moment mixed encoding has the same product density but a different exact initial drift, -3/3584. (2) Affine covariant single-pair density encodings lose the cubic colour moment; a positive encoding with a readable quadratic observable has an exact drift difference of 1/57344. (3) Positive covariant states on two pair spaces (dimension 16), with column rank 14 and affine rank 13, retain all fourteen probabilities. The campaign report names what remains open: injectivity supplies neither perfect colour readout nor a completely positive evolution implementing the rates. For the two-pair encoding, decide whether a completely positive generator on the encoded states reproduces the specified colour rates, or exhibit an obstruction. Alternatively, test the quantum-lift boundary of the geometric singlet channel and fibre construction. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/CAMPAIGN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-colour-encodings-quantum-lift/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR. Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Now also owns frozen #8566: recover the rank-seven marked kernel, restricted fixed-preparation qubit obstruction, dimension/covariance qualifications and changed one-event Born-compatible kernel. Use these as candidate inputs to the existing completely-positive evolution question. A one-event instrument and classical curl readout do not implement repeated permanent quantum histories. Verify the restricted obstruction independently before using it; shared randomness or changed encodings alter the hypotheses.",
+  "source_prs": [
+   8566
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "draft16_extension": "Now also owns frozen #8566: recover the rank-seven marked kernel, restricted fixed-preparation qubit obstruction, dimension/covariance qualifications and changed one-event Born-compatible kernel. Use these as candidate inputs to the existing completely-positive evolution question. A one-event instrument and classical curl readout do not implement repeated permanent quantum histories. Verify the restricted obstruction independently before using it; shared randomness or changed encodings alter the hypotheses."
  },
  {
   "type": "judgment",
@@ -56264,7 +56410,7 @@
   "id": "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1",
   "problem": "deferred-20260926-cubic-couplings-and-gauss-screens",
   "title": "Proper-cubic coupling classification and Gauss-loop screens",
-  "research_target": "The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside open PR #8569. Referee it with disjoint machinery; if it survives, record it as a candidate addendum for #8569's review. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning.",
+  "research_target": "The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside frozen candidate #8569. Referee it with disjoint machinery; if it survives, record it alongside #8569 in this research unit. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning.",
   "source_paths": [
    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md",
    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md",
@@ -56282,10 +56428,14 @@
    "on_origin": false
   },
   "completion_criterion": "A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
-  "related_tasks": [
-   "J:falsifier:PR8569"
+  "related_tasks": [],
+  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside frozen candidate #8569. Referee it with disjoint machinery; if it survives, record it alongside #8569 in this research unit. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GRAM_KERNEL_CUBIC_FORMATION_RESPONSE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_COMPLETED_SCREEN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-cubic-couplings-and-gauss-screens/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR. Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Now owns frozen candidates #8565 and #8569. Independently recover the five-versus-eleven cubic-symbol classification and the distinction between raw-vector Gauss closure and derivative-curl closure. Recover the exact reachable-background birth-locality counterexample and low-fugacity polymer assumptions before using the loop ensemble. Then attack an explicitly local formation/transport mechanism selecting the raw constraints; do not confuse a conditioned static ensemble with the irreversible selected law. The proper-cubic addendum belongs to this same research unit; no replacement PR is requested.",
+  "source_prs": [
+   8565,
+   8569
   ],
-  "what": "OWNER-REQUESTED RECOVERY OF UNPUBLISHED CODEX RESEARCH (2026-09-26). Four Codex mobile-record campaigns (2026-09-20 to 09-24) left results that were never in any PR. Their files are preserved under probes/work/deferred-science-20260926/mobile-record-formation-20260920/ (index, triage and statuses in probes/work/deferred-science-20260926/README.md). These are conditional results in supplied models: quantum carriers, Hamiltonians, instruments, rates and preparations are supplied, not derived from the axioms. Codex's separate-context checks were same-family and do not count as cross-model confirmation. Research question: The eleven-map proper-cubic extension gives all eleven first-order couplings at the uniform fifteen-state product under proper cubic symmetry. It finds that conditional closed-vector curl selection survives without spatial reflections, while a separate non-vector sector can remain active. It had a separate exact check but lies outside open PR #8569. Referee it with disjoint machinery; if it survives, record it as a candidate addendum for #8569's review. Second target: the author-only general Gram-kernel cubic formation response, or the centered-Gauss staggered-sector analysis. The Gauss-loop ensemble screens (finite size, L <= 49) overlap the uniform-ice results already landed on main; compare against those rather than rerunning. Source files: probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GRAM_KERNEL_CUBIC_FORMATION_RESPONSE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_COMPLETED_SCREEN_REPORT.md, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/, probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/. Related tasks: J:falsifier:PR8569. Completion: a proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. An independent reproduction of an exact finite claim with disjoint machinery counts. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Fetch current origin/main first and read related landed notes; the preserved statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Keep the chosen obligation distinct from related tasks and reuse their results rather than duplicate active work. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections (each packet's correction_ack/ folder). A failed search is not a no-go theorem, and negative claims need the N1-N8 gate before any promotion. Deliver probes/work/derive/deferred-20260926-cubic-couplings-and-gauss-screens/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. RECOVERY_STATUS.json records source paths and hashes, the proved, checked and assumed steps, the first unresolved step, the remaining obligations, and whether the result is ready to be packaged as a science PR (validated and moving the program forward) or should stay on this backlog. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit the checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific or audit authority, merge science or create a PR."
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "draft16_extension": "Now owns frozen candidates #8565 and #8569. Independently recover the five-versus-eleven cubic-symbol classification and the distinction between raw-vector Gauss closure and derivative-curl closure. Recover the exact reachable-background birth-locality counterexample and low-fugacity polymer assumptions before using the loop ensemble. Then attack an explicitly local formation/transport mechanism selecting the raw constraints; do not confuse a conditioned static ensemble with the irreversible selected law. The proper-cubic addendum belongs to this same research unit; no replacement PR is requested."
  },
  {
   "id": "J:derive:tight-sibling-lemma:a1",
@@ -67302,6 +67452,139 @@
    "summary": "(?m)^SUMMARY: (.*)"
   },
   "what": "For a chosen note: reimplement its central computation from the note's statement alone, without reading the runner, in a different method; compare the numbers; print 'HIT: ...' on disagreement and a 'SUMMARY: ...' line; run through run_probe with --extra as above. Disagreement is reported, not resolved."
+ },
+ {
+  "id": "J:derive:mobile-record-formation-response:a1",
+  "type": "judgment",
+  "lane": "mobile-record-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "mobile-record-formation-response",
+  "title": "Motion, formation response and terminal correlations",
+  "research_target": "Establish a volume-uniform finite-intensity population response bound for the supplied vacancy-hop process, or an explicit finite counterexample to all-time mobility monotonicity. Start from the hazard-resolvent and epsilon-four coefficient, not the withdrawn static-ensemble substitution. Keep the finite-graph rare-birth limit, fixed-time epsilon expansion and infinite-volume limits separate. Recheck the positive formation-floor and product-initial-law hypotheses before using fixation or terminal correlation decay.",
+  "completion_criterion": "Recover the exact six-site dynamic/static ratio and the Dirichlet-energy population coefficient independently; test a small exact generator at finite epsilon. Record whether a uniform remainder is established, fails with a witness, or remains open.",
+  "source_prs": [
+   8545,
+   8551,
+   8552
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "related_tasks": [
+   "J:derive:deferred-20260924-formation-packets:a1"
+  ],
+  "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Establish a volume-uniform finite-intensity population response bound for the supplied vacancy-hop process, or an explicit finite counterexample to all-time mobility monotonicity. Start from the hazard-resolvent and epsilon-four coefficient, not the withdrawn static-ensemble substitution. Keep the finite-graph rare-birth limit, fixed-time epsilon expansion and infinite-volume limits separate. Recheck the positive formation-floor and product-initial-law hypotheses before using fixation or terminal correlation decay. Decisive first check and completion: Recover the exact six-site dynamic/static ratio and the Dirichlet-energy population coefficient independently; test a small exact generator at finite epsilon. Record whether a uniform remainder is established, fails with a witness, or remains open. Related tasks: J:derive:deferred-20260924-formation-packets:a1."
+ },
+ {
+  "id": "J:derive:mobile-record-native-hydrodynamics:a1",
+  "type": "judgment",
+  "lane": "mobile-record-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "mobile-record-native-hydrodynamics",
+  "title": "Native formation fluctuations in immutable-record waves",
+  "research_target": "Derive a native neighbor-dependent formation fluctuation theorem for the supplied seven- or fifteen-state exchange law, or isolate an explicit obstruction. Uniform independent births already have a different Gaussian statement; do not substitute that product law for native formation. The cubic centering coefficient is extracted at j=0 under symmetric stirring: obtain a controlled fixed-j remainder before using it to center a driven wave process.",
+  "completion_criterion": "Check the reaction-adjoint constant/linear cancellation and exact nonproduct adjacent-covariance witness with disjoint algebra. Identify every conserved field in the relevant symbol, then prove or explicitly isolate the missing replacement/centering estimate.",
+  "source_prs": [
+   8557,
+   8560,
+   8561
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "related_tasks": [],
+  "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Derive a native neighbor-dependent formation fluctuation theorem for the supplied seven- or fifteen-state exchange law, or isolate an explicit obstruction. Uniform independent births already have a different Gaussian statement; do not substitute that product law for native formation. The cubic centering coefficient is extracted at j=0 under symmetric stirring: obtain a controlled fixed-j remainder before using it to center a driven wave process. Decisive first check and completion: Check the reaction-adjoint constant/linear cancellation and exact nonproduct adjacent-covariance witness with disjoint algebra. Identify every conserved field in the relevant symbol, then prove or explicitly isolate the missing replacement/centering estimate. Related tasks: ."
+ },
+ {
+  "id": "J:derive:mobile-record-gibbs-vector-transport:a1",
+  "type": "judgment",
+  "lane": "mobile-record-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "mobile-record-gibbs-vector-transport",
+  "title": "Correlated Gibbs states with immutable-record vector transport",
+  "research_target": "Construct a three-dimensional local permanent-record process having both a nontrivial correlated vector Gibbs state and nonzero Euler vector transport, or prove a scoped obstruction for a precisely specified generator class. The contractible-cycle zero-current result and one-dimensional KLS winding countercontrol do not prove a universal incompatibility. Formation selects an unknown count mixture; do not substitute a desired Gibbs grand law.",
+  "completion_criterion": "Independently reproduce the finite-word KLS stationarity certificate and the cancellation of contractible-cycle current. Test one explicit three-dimensional candidate, reporting its first failed condition if it fails.",
+  "source_prs": [
+   8567
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "related_tasks": [],
+  "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Construct a three-dimensional local permanent-record process having both a nontrivial correlated vector Gibbs state and nonzero Euler vector transport, or prove a scoped obstruction for a precisely specified generator class. The contractible-cycle zero-current result and one-dimensional KLS winding countercontrol do not prove a universal incompatibility. Formation selects an unknown count mixture; do not substitute a desired Gibbs grand law. Decisive first check and completion: Independently reproduce the finite-word KLS stationarity certificate and the cancellation of contractible-cycle current. Test one explicit three-dimensional candidate, reporting its first failed condition if it fails. Related tasks: ."
+ },
+ {
+  "id": "J:derive:mobile-record-geometric-formation-waves:a1",
+  "type": "judgment",
+  "lane": "mobile-record-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "mobile-record-geometric-formation-waves",
+  "title": "Formation-selected nonlinear waves through moving matching geometry",
+  "research_target": "Determine whether the actual empty-start paired-record formation law can prepare a nontrivial smooth inhomogeneous color profile with o(K) conditional entropy, sufficient for the stated nonlinear Euler theorem. The fixed-graph rare-birth uniform matching law, fixed-positive-rate polynomial filling estimate, stationary color preparation and supplied smooth-profile theorem are distinct results. Do not infer fixed-rate uniform geometry or shock control. First verify the all-stage gap/comparison and deterministic-time coupling chain used as input; use the existing recovered computation tasks for numerical replay.",
+  "completion_criterion": "Give an explicit preparation law and quantitative entropy estimate (or a finite obstruction to a named proposed preparation), and separately inventory the conditional lemmas that survive independent review. Check the imported matching conductance/monomer theorem hypotheses and the actual physical-slide comparison before reusing polynomial exponents.",
+  "source_prs": [
+   8589,
+   8594,
+   8600,
+   8604,
+   8610
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "related_tasks": [
+   "C:recovered-fixed-rate-geometric-formation:a1",
+   "C:recovered-fixed-rate-geometric-formation:a2",
+   "C:recovered-dimer-routed-color-waves:a1",
+   "C:recovered-dimer-routed-color-waves:a2"
+  ],
+  "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Determine whether the actual empty-start paired-record formation law can prepare a nontrivial smooth inhomogeneous color profile with o(K) conditional entropy, sufficient for the stated nonlinear Euler theorem. The fixed-graph rare-birth uniform matching law, fixed-positive-rate polynomial filling estimate, stationary color preparation and supplied smooth-profile theorem are distinct results. Do not infer fixed-rate uniform geometry or shock control. First verify the all-stage gap/comparison and deterministic-time coupling chain used as input; use the existing recovered computation tasks for numerical replay. Decisive first check and completion: Give an explicit preparation law and quantitative entropy estimate (or a finite obstruction to a named proposed preparation), and separately inventory the conditional lemmas that survive independent review. Check the imported matching conductance/monomer theorem hypotheses and the actual physical-slide comparison before reusing polynomial exponents. Related tasks: C:recovered-fixed-rate-geometric-formation:a1, C:recovered-fixed-rate-geometric-formation:a2, C:recovered-dimer-routed-color-waves:a1, C:recovered-dimer-routed-color-waves:a2."
+ },
+ {
+  "id": "J:derive:mobile-record-positive-quantum-curl:a1",
+  "type": "judgment",
+  "lane": "mobile-record-research",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "mobile-record-positive-quantum-curl",
+  "title": "Positive local quantum curl with controlled preparation",
+  "research_target": "Close one explicit gap between the two separate finite-qubit constructions: establish a local positive-energy Gauss-prepared spatial limit, or a controlled positive-density extension of the fixed-particle local model. Do not combine the fixed-coarse-volume collective-block theorem with the carrier-subtracted dilute Euler theorem as though they were one Hamiltonian. Growing interaction range, correlated squeezing, extra sine zeros and longitudinal modes must remain explicit.",
+  "completion_criterion": "Independently verify the finite operator/symbol estimate used by the selected route, then state a uniform bound with its parameter order or a precise obstruction. Permanent-record realization and physical state selection remain separate obligations.",
+  "source_prs": [
+   8609
+  ],
+  "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+  "related_tasks": [
+   "J:derive:deferred-20260926-local-rk-preparation:a1",
+   "J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1"
+  ],
+  "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Close one explicit gap between the two separate finite-qubit constructions: establish a local positive-energy Gauss-prepared spatial limit, or a controlled positive-density extension of the fixed-particle local model. Do not combine the fixed-coarse-volume collective-block theorem with the carrier-subtracted dilute Euler theorem as though they were one Hamiltonian. Growing interaction range, correlated squeezing, extra sine zeros and longitudinal modes must remain explicit. Decisive first check and completion: Independently verify the finite operator/symbol estimate used by the selected route, then state a uniform bound with its parameter order or a precise obstruction. Permanent-record realization and physical state selection remain separate obligations. Related tasks: J:derive:deferred-20260926-local-rk-preparation:a1, J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1."
  },
  {
   "id": "X:sixaxis-formation-threshold-lines",

@@ -88,3 +88,7 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 ## Unpublished Codex research recovery — 2026-09-26
 
 [This bundle](work/deferred-science-20260926/README.md) preserves the unpublished results of four Codex mobile-record campaigns (2026-09-20 to 09-24), whose raw branch was never pushed. None of them met the bar for a science PR: all are conditional on supplied models, and none has had a cross-model check. The probable parts are queued as eight first-pass judgment units, `J:derive:deferred-20260926-*`. Each unit's `RECOVERY_STATUS.json` states whether its result is ready to be packaged as a science PR.
+
+## Mobile-record draft consolidation (2026-09-26)
+
+[Sixteen-draft research map](work/mobile-record-draft-triage-20260926/README.md): five new J tasks and two augmented existing J tasks cover the mobile-record/quantum draft stack. The original source branches remain, with exact identities in the source map. This is a research transfer, not a science landing or proof certification. Tasks require independent recovery of useful bounded lemmas and one precise remaining scientific obligation; no replacement PRs or copied snapshot packs.

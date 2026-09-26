@@ -1,0 +1,135 @@
+[
+  {
+    "id": "J:derive:mobile-record-formation-response:a1",
+    "type": "judgment",
+    "lane": "mobile-record-research",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "problem": "mobile-record-formation-response",
+    "title": "Motion, formation response and terminal correlations",
+    "research_target": "Establish a volume-uniform finite-intensity population response bound for the supplied vacancy-hop process, or an explicit finite counterexample to all-time mobility monotonicity. Start from the hazard-resolvent and epsilon-four coefficient, not the withdrawn static-ensemble substitution. Keep the finite-graph rare-birth limit, fixed-time epsilon expansion and infinite-volume limits separate. Recheck the positive formation-floor and product-initial-law hypotheses before using fixation or terminal correlation decay.",
+    "completion_criterion": "Recover the exact six-site dynamic/static ratio and the Dirichlet-energy population coefficient independently; test a small exact generator at finite epsilon. Record whether a uniform remainder is established, fails with a witness, or remains open.",
+    "source_prs": [
+      8545,
+      8551,
+      8552
+    ],
+    "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+    "related_tasks": [
+      "J:derive:deferred-20260924-formation-packets:a1"
+    ],
+    "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Establish a volume-uniform finite-intensity population response bound for the supplied vacancy-hop process, or an explicit finite counterexample to all-time mobility monotonicity. Start from the hazard-resolvent and epsilon-four coefficient, not the withdrawn static-ensemble substitution. Keep the finite-graph rare-birth limit, fixed-time epsilon expansion and infinite-volume limits separate. Recheck the positive formation-floor and product-initial-law hypotheses before using fixation or terminal correlation decay. Decisive first check and completion: Recover the exact six-site dynamic/static ratio and the Dirichlet-energy population coefficient independently; test a small exact generator at finite epsilon. Record whether a uniform remainder is established, fails with a witness, or remains open. Related tasks: J:derive:deferred-20260924-formation-packets:a1."
+  },
+  {
+    "id": "J:derive:mobile-record-native-hydrodynamics:a1",
+    "type": "judgment",
+    "lane": "mobile-record-research",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "problem": "mobile-record-native-hydrodynamics",
+    "title": "Native formation fluctuations in immutable-record waves",
+    "research_target": "Derive a native neighbor-dependent formation fluctuation theorem for the supplied seven- or fifteen-state exchange law, or isolate an explicit obstruction. Uniform independent births already have a different Gaussian statement; do not substitute that product law for native formation. The cubic centering coefficient is extracted at j=0 under symmetric stirring: obtain a controlled fixed-j remainder before using it to center a driven wave process.",
+    "completion_criterion": "Check the reaction-adjoint constant/linear cancellation and exact nonproduct adjacent-covariance witness with disjoint algebra. Identify every conserved field in the relevant symbol, then prove or explicitly isolate the missing replacement/centering estimate.",
+    "source_prs": [
+      8557,
+      8560,
+      8561
+    ],
+    "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+    "related_tasks": [],
+    "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Derive a native neighbor-dependent formation fluctuation theorem for the supplied seven- or fifteen-state exchange law, or isolate an explicit obstruction. Uniform independent births already have a different Gaussian statement; do not substitute that product law for native formation. The cubic centering coefficient is extracted at j=0 under symmetric stirring: obtain a controlled fixed-j remainder before using it to center a driven wave process. Decisive first check and completion: Check the reaction-adjoint constant/linear cancellation and exact nonproduct adjacent-covariance witness with disjoint algebra. Identify every conserved field in the relevant symbol, then prove or explicitly isolate the missing replacement/centering estimate. Related tasks: ."
+  },
+  {
+    "id": "J:derive:mobile-record-gibbs-vector-transport:a1",
+    "type": "judgment",
+    "lane": "mobile-record-research",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "problem": "mobile-record-gibbs-vector-transport",
+    "title": "Correlated Gibbs states with immutable-record vector transport",
+    "research_target": "Construct a three-dimensional local permanent-record process having both a nontrivial correlated vector Gibbs state and nonzero Euler vector transport, or prove a scoped obstruction for a precisely specified generator class. The contractible-cycle zero-current result and one-dimensional KLS winding countercontrol do not prove a universal incompatibility. Formation selects an unknown count mixture; do not substitute a desired Gibbs grand law.",
+    "completion_criterion": "Independently reproduce the finite-word KLS stationarity certificate and the cancellation of contractible-cycle current. Test one explicit three-dimensional candidate, reporting its first failed condition if it fails.",
+    "source_prs": [
+      8567
+    ],
+    "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+    "related_tasks": [],
+    "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Construct a three-dimensional local permanent-record process having both a nontrivial correlated vector Gibbs state and nonzero Euler vector transport, or prove a scoped obstruction for a precisely specified generator class. The contractible-cycle zero-current result and one-dimensional KLS winding countercontrol do not prove a universal incompatibility. Formation selects an unknown count mixture; do not substitute a desired Gibbs grand law. Decisive first check and completion: Independently reproduce the finite-word KLS stationarity certificate and the cancellation of contractible-cycle current. Test one explicit three-dimensional candidate, reporting its first failed condition if it fails. Related tasks: ."
+  },
+  {
+    "id": "J:derive:mobile-record-geometric-formation-waves:a1",
+    "type": "judgment",
+    "lane": "mobile-record-research",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "problem": "mobile-record-geometric-formation-waves",
+    "title": "Formation-selected nonlinear waves through moving matching geometry",
+    "research_target": "Determine whether the actual empty-start paired-record formation law can prepare a nontrivial smooth inhomogeneous color profile with o(K) conditional entropy, sufficient for the stated nonlinear Euler theorem. The fixed-graph rare-birth uniform matching law, fixed-positive-rate polynomial filling estimate, stationary color preparation and supplied smooth-profile theorem are distinct results. Do not infer fixed-rate uniform geometry or shock control. First verify the all-stage gap/comparison and deterministic-time coupling chain used as input; use the existing recovered computation tasks for numerical replay.",
+    "completion_criterion": "Give an explicit preparation law and quantitative entropy estimate (or a finite obstruction to a named proposed preparation), and separately inventory the conditional lemmas that survive independent review. Check the imported matching conductance/monomer theorem hypotheses and the actual physical-slide comparison before reusing polynomial exponents.",
+    "source_prs": [
+      8589,
+      8594,
+      8600,
+      8604,
+      8610
+    ],
+    "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+    "related_tasks": [
+      "C:recovered-fixed-rate-geometric-formation:a1",
+      "C:recovered-fixed-rate-geometric-formation:a2",
+      "C:recovered-dimer-routed-color-waves:a1",
+      "C:recovered-dimer-routed-color-waves:a2"
+    ],
+    "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Determine whether the actual empty-start paired-record formation law can prepare a nontrivial smooth inhomogeneous color profile with o(K) conditional entropy, sufficient for the stated nonlinear Euler theorem. The fixed-graph rare-birth uniform matching law, fixed-positive-rate polynomial filling estimate, stationary color preparation and supplied smooth-profile theorem are distinct results. Do not infer fixed-rate uniform geometry or shock control. First verify the all-stage gap/comparison and deterministic-time coupling chain used as input; use the existing recovered computation tasks for numerical replay. Decisive first check and completion: Give an explicit preparation law and quantitative entropy estimate (or a finite obstruction to a named proposed preparation), and separately inventory the conditional lemmas that survive independent review. Check the imported matching conductance/monomer theorem hypotheses and the actual physical-slide comparison before reusing polynomial exponents. Related tasks: C:recovered-fixed-rate-geometric-formation:a1, C:recovered-fixed-rate-geometric-formation:a2, C:recovered-dimer-routed-color-waves:a1, C:recovered-dimer-routed-color-waves:a2."
+  },
+  {
+    "id": "J:derive:mobile-record-positive-quantum-curl:a1",
+    "type": "judgment",
+    "lane": "mobile-record-research",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "problem": "mobile-record-positive-quantum-curl",
+    "title": "Positive local quantum curl with controlled preparation",
+    "research_target": "Close one explicit gap between the two separate finite-qubit constructions: establish a local positive-energy Gauss-prepared spatial limit, or a controlled positive-density extension of the fixed-particle local model. Do not combine the fixed-coarse-volume collective-block theorem with the carrier-subtracted dilute Euler theorem as though they were one Hamiltonian. Growing interaction range, correlated squeezing, extra sine zeros and longitudinal modes must remain explicit.",
+    "completion_criterion": "Independently verify the finite operator/symbol estimate used by the selected route, then state a uniform bound with its parameter order or a precise obstruction. Permanent-record realization and physical state selection remain separate obligations.",
+    "source_prs": [
+      8609
+    ],
+    "source_map": "probes/work/mobile-record-draft-triage-20260926/SOURCE_MAP.json",
+    "related_tasks": [
+      "J:derive:deferred-20260926-local-rk-preparation:a1",
+      "J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1"
+    ],
+    "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Close one explicit gap between the two separate finite-qubit constructions: establish a local positive-energy Gauss-prepared spatial limit, or a controlled positive-density extension of the fixed-particle local model. Do not combine the fixed-coarse-volume collective-block theorem with the carrier-subtracted dilute Euler theorem as though they were one Hamiltonian. Growing interaction range, correlated squeezing, extra sine zeros and longitudinal modes must remain explicit. Decisive first check and completion: Independently verify the finite operator/symbol estimate used by the selected route, then state a uniform bound with its parameter order or a precise obstruction. Permanent-record realization and physical state selection remain separate obligations. Related tasks: J:derive:deferred-20260926-local-rk-preparation:a1, J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1."
+  }
+]

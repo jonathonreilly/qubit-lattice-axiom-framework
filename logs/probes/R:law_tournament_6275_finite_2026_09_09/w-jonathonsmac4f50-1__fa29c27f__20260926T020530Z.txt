@@ -1,0 +1,8 @@
+PASS exact-normalized-kernels: 10/10 exact boundary/mixed-state kernels, 8 retain legitimate zero-weight branches
+PASS fail-closed-domain-and-readiness: 18/18 actual malformed density, structural readiness, invalid frame and occupied-target refusals
+PASS zero-weight-realization: a zero-weight branch is valid in the distribution and unavailable as a realized event
+PASS same-input-channel-bridge: 16 canonical matrix units: no-record + four fine outputs (80 maps) and 48 coarse sums; max residual=1.11e-16
+PASS common-weights-distinct-actual-geometry: 24/24 common exact kernels and 192/192 root-aligned carrier geometry signatures
+PASS finite-common-continuation: 8/8 canonical three-write continuations preserve original roots and signatures
+SCOPE: two supplied dictionaries distinguished under a common geometric decoder; no unrestricted-recoding or full physical-axiom nonselection theorem.
+TOTAL: PASS=6 FAIL=0

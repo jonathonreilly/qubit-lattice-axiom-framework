@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle756_c35_independent_set_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle756_c35_independent_set_census_2026_07_28.py",
+ "seed": 88955,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021555Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "26da2601df10eba96692e2131b8b7dbb44d3b40a6cacf40a9b519ecbc6dac3af",
+ "stdout_tail": "PASS c35_closed_formula_matches_declared_strata :: True\nPASS c35_fraction_form_matches_closed_formula :: True\nPASS c35_path_split_matches_closed_formula :: True\nPASS c35_strata_sum_matches_declared_total :: True\nPASS c35_total_matches_lucas_recurrence :: True\nPASS adjacent_pair_mask_census_is_exact :: True\nPASS adjacent_pair_masks_have_two_occupied_vertices :: True\nPASS adjacent_pair_masks_are_rotations_of_one_labelled_mask :: True\nPASS each_pair_has_two_occupied_endpoint_incidences :: True\nPASS occupied_endpoint_incidence_total_is_seventy :: True\nPASS note_declares_finite_graph_only_scope :: True\n{\"adjacent_pair_masks\":35,\"claim\":\"c35_independent_set_census_and_adjacent_pair_incidences\",\"cycle\":756,\"failed\":0,\"independent_set_total\":20633239,\"lucas_number\":20633239,\"occupied_endpoint_incidences\":70,\"pair_mask_sha256\":\"f1726623158a5fcfcb2677daf14ddad80c552b624f464d38745337ebefefac99\",\"passed\":11,\"runtime_sec\":0.000737,\"stations\":35,\"strata\":[1,35,560,5425,35525,166257,573300,1480050,2877875,4206125,4576264,3640210,2057510,791350,193800,27132,1785,35],\"terminal\":\"CYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS\"}\nCYCLE756_C35_INDEPENDENT_SET_CENSUS_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021555Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle756_c35_independent_set_census_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

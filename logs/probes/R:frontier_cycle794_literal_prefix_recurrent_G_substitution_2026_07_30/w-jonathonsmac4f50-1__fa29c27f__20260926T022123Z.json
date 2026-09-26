@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle794_literal_prefix_recurrent_G_substitution_2026_07_30.py",
+ "seed": 89283,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T022123Z",
+ "elapsed_s": 92.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "07eed9b1ae58fda481e48ea6f0bad74059416bbcb00aadea19fbfa26c542673b",
+ "stdout_tail": ", \"5\": 3, \"6\": 3, \"7\": 3, \"8\": 3, \"9\": 3}, \"active_sector_maximum_residuals\": {\"0\": 0.0, \"1\": 6.785940242169747e-16, \"10\": 1.8062482307640406e-15, \"11\": 1.6876924906519235e-15, \"12\": 2.526252967680787e-15, \"2\": 8.45910052549725e-16, \"3\": 1.0166871743693817e-15, \"4\": 9.45487775021095e-16, \"5\": 1.0664840463823726e-15, \"6\": 1.3455980933353975e-15, \"7\": 1.2811760506494001e-15, \"8\": 1.3120671629492239e-15, \"9\": 1.5509516890185795e-15}, \"compiled_one_particle_residual\": 1.7920088139491047e-15, \"contact_all_basis_phase_residual\": 2.2256874016713148e-15, \"full_logical_dimension\": 4096, \"local_number_leakage_amplitude\": 0.0, \"maximum_active_column_residual\": 2.526252967680787e-15, \"particle_number_sectors\": 13, \"proof\": \"each free primitive equals Gamma of its one-particle restriction; Gamma is a homomorphism on every exterior-power sector; every contact primitive is the supplied occupied-pair phase and their product was checked on every computational basis state\", \"second_quantized_local_factor_residual\": 8.673527957121405e-19}, \"stages\": {\"coin_stage_residual\": 6.243831416688722e-15, \"contact_stage_residual\": 0.0, \"falsifier_interpretation\": \"the nonadjacent two-wire tensor gate omits intervening CAR parity; the nine landed adjacent FSWAPs restore it\", \"free_one_particle_target_digest\": \"1515279904e972ba60d9052e31e3be6c827dad48608297a0fc7478fd1d4495ae\", \"landed_seam_stage_residual\": 0.0, \"reverse_stage_residual\": 0.0, \"single_nonadjacent_tensor_FSWAP_residual\": 5.656854249492381}}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022256Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

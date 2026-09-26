@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle794_actual_frame_shear_three_bank_schedule_2026_07_30.py",
+ "seed": 89143,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021903Z",
+ "elapsed_s": 139.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b28ae3cb7fe26e5205b6164a003dc4fc1eb9e197d826a516116045e7b02a2e9d",
+ "stdout_tail": "f65b6a29e28974\", \"frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py\": \"34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d\", \"frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py\": \"3553ec8293d7cba935422ddccbc9e4b8dc9f4cd30c3ee6487f65f15c4ad2fe68\"}, \"status\": \"PASS\", \"supplied\": \"fixed parity/center and mixed-gauge sector; retained three-bit coframe origin and frame label; clean pump/Bell syndrome banks; target-basis atlas, cell chart, boundary, stage/program order and Cycle720 G\", \"two_cube\": {\"active_auxiliary_route_contexts\": 23, \"active_inversion_pairs\": 0, \"coframe_origin_sectors\": 8, \"contexts\": 192, \"hostile_deleted_target_basis_unsolved_rows\": 192, \"hostile_same_slot_signed_mismatches\": 15616, \"hostile_shear_before_measurement_failures\": 1952, \"isometry_contexts\": 24, \"isometry_logical_failures\": 0, \"isometry_signed_stabilizer_failures\": 0, \"maximum_CNOT_shear_gates_per_cell\": 46, \"maximum_cell_and_edge_local_CNOT_shear_gates\": 352, \"maximum_literal_word_microsteps\": 2325, \"maximum_repair_cells\": 2, \"maximum_repair_diameter\": 1, \"maximum_repair_weight\": 9, \"maximum_signed_shear_row_weight\": 11, \"minimum_auxiliary_deletion_mismatches\": 2, \"named_failure_sum\": 0, \"proper_cubic_frames\": 24, \"resource_M2_per_cell_values\": [64], \"routed_inversion_CZ_macros\": 0, \"routed_syndrome_CNOT_macros\": 11184, \"routing_contexts\": 24, \"routing_named_failure_sum\": 0, \"seed_binary_shear_changes\": 0, \"seed_signed_row_changes\": 0, \"shape\": [2, 2, 2]}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022123Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

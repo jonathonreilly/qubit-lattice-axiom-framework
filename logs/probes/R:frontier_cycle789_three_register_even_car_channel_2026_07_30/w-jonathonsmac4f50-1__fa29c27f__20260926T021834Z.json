@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle789_three_register_even_car_channel_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle789_three_register_even_car_channel_2026_07_30.py",
+ "seed": 89114,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021834Z",
+ "elapsed_s": 23.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f6b9eb25ad67a8f7c94e2c3625fabe9acdfc4998204afbabd635edeb1235c517",
+ "stdout_tail": "itive exact three-register even-CAR input channel under a supplied companion-encoded live bank. It repairs the landed two-bank semantic collision but is not bare-input genesis or a full A+B+C+G compiler.\", \"controls\": {\"deleted_private_dual_index\": 5, \"deleted_private_dual_output_binary_failures\": 1, \"deleted_private_dual_output_signed_failures\": 1, \"self_comparison_output_binary_failures\": 11, \"self_comparison_output_signed_failures\": 11, \"shape\": [1, 1, 1]}, \"derived\": [\"Bell characters relocated from the self-comparing O-I pair to I-L\", \"exact signed stabilizer-span transfer from L-R to O-R on the full retained even-CAR character basis\", \"corrections remain confined to Choi output O\", \"held-size deletion and hostile self-comparison discrimination\"], \"open\": [\"the separate package runner supplies literal route-expanded physical-M2 placement; this algebra runner does not\", \"autonomous encoding/genesis of the external L bank from bare physical input\", \"one computed prefix-plus-non-Clifford-recurrent-G channel\", \"the separate package runner supplies geometric/order 24-frame/576-product controls; full frame-sheared signed-channel covariance remains open\"], \"report_sha256\": \"be76e123afa8e6c2dd284d6a7c30b9910e160365e66591057ad7f015b22f1efa\", \"status\": \"PASS\", \"supplied\": [\"the landed Choi output/input preparation on O,I\", \"an independent companion-encoded live bank L and diagnostic Bell reference R\", \"the fixed parity/center sector, clean Bell ancillas, and private-dual atlas\"]}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021858Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

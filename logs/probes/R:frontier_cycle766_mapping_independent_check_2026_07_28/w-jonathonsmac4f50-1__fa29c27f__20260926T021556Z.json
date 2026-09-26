@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle766_mapping_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle766_mapping_independent_check_2026_07_28.py",
+ "seed": 88956,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021556Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c4809e20b2c008a618e37c6a4a8517ab4048ce69c14cdb3315421e338877a95",
+ "stdout_tail": "PASS A independently enumerated S3 cubed\nPASS B inverse-index transform reproduces exact rows\nPASS C direct exact comparator distances\nPASS D direct exact uniform distances\nPASS E independent endpoint classifications\nPASS F independent unique pooled rank\nPASS G independent next score and endpoint counts\nPASS H candidate appears once\n{\"boundary\":\"independent exact check of supplied synthetic rows, comparator, coordinate order, and per-row bijection over S3 cubed only\",\"checks\":{\"A independently enumerated S3 cubed\":true,\"B inverse-index transform reproduces exact rows\":true,\"C direct exact comparator distances\":true,\"D direct exact uniform distances\":true,\"E independent endpoint classifications\":true,\"F independent unique pooled rank\":true,\"G independent next score and endpoint counts\":true,\"H candidate appears once\":true},\"comparator_tv_exact\":[\"4185210791616554691/10450000000000000000\",\"87657118548737201/206250000000000000\",\"1140349238972309449/3643750000000000000\",\"21609661557155861/1168750000000000000\"],\"mapping_input_to_output\":[[0,1,2],[1,2,0],[2,0,1]],\"next_distinct_pooled_comparator_tv_exact\":\"823671370658282203/28050000000000000000\",\"pass\":true,\"pooled\":[391,230,501],\"rank_by_pooled_comparator_tv\":[1,1],\"rows\":[[13,128,68],[232,97,1],[146,5,432]],\"terminal\":\"CYCLE766_INDEPENDENT_CONDITIONAL_S3_CUBED_PASS\",\"uniform_tv_exact\":[\"175/627\",\"61/165\",\"713/1749\",\"24/187\"]}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021556Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

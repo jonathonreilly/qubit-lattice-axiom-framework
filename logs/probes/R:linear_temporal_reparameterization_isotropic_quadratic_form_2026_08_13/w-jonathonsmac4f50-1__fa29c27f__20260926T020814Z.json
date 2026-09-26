@@ -1,0 +1,35 @@
+{
+ "task": "R:linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13",
+ "type": "runner-reexecution",
+ "lane": "linear",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/linear_temporal_reparameterization_isotropic_quadratic_form_2026_08_13.py",
+ "seed": 88494,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T020814Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=20 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4cc2c8c6e403cdae8eeab0f869ca06dc448a91ae987d6d944833ed562216bca6",
+ "stdout_tail": "esentative-ratios the temporal-to-spatial ratios are 1/4, 1, and 4\nPASS: finite-pair-census all nine ordered pairs in the representative set satisfy the exact equivalence\nPASS: wrong-direction-mutation reversing a/b to b/a is not an identity for generic positive a,b\nPASS: singular-zero-mutation a=0 removes the temporal term and has no inverse frequency map\nPASS: anisotropic-mutation unequal Euclidean coefficients are outside the represented isotropic family\nPASS: note-contract the note states the exact equivalence and bounded non-physical scope\nPASS: note-dependency the note links only the kinetic-isotropy primitive as scientific authority\nPASS: retired-record-semantics-absent the note does not restore scalar Record additivity or a value at absence\nPASS: no-physical-selector-rhetoric the theorem does not label a raw coefficient as a physical discriminator\nPASS: review-record the source records why the original negative framing was removed\nper_element: checked \u2014 every positive parameter pair obeys the symbolic reparameterization identity exactly\nper_site: checked and not executed \u2014 the theorem is a momentum-coordinate identity with no site carrier\nper_mode: checked \u2014 arbitrary symbolic frequency and spatial momentum variables are retained throughout\nper_block: checked \u2014 Euclidean and continued quadratic blocks are compared coefficient by coefficient\nlattice_wide: checked and not executed \u2014 no lattice dynamics, reconstruction, or physical clock is claimed\nTOTAL: PASS=20 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T020814Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

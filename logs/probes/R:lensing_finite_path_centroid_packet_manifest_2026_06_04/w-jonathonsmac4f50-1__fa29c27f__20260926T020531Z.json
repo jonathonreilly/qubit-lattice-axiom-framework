@@ -1,0 +1,35 @@
+{
+ "task": "R:lensing_finite_path_centroid_packet_manifest_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "lensing",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/lensing_finite_path_centroid_packet_manifest_2026_06_04.py",
+ "seed": 88331,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T020531Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=60 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2b0fcc7c370646b0e55b56d42a7232eeae5cac4d6dffe454ec479c00b793ef36",
+ "stdout_tail": "k\n[PASS] cache_contains:long_path_cache:status: ok: status: ok\n[PASS] cache_contains:long_path_cache:T_phys = 45.0: T_phys = 45.0\n[PASS] cache_contains:long_path_cache:T_phys = 7.5: T_phys = 7.5\n[PASS] cache_contains:long_path_cache:H=0.25 kubo_true:        slope = -1.4356: H=0.25 kubo_true:        slope = -1.4356\n[PASS] cache_contains:long_path_cache:analytical (no fit):    slope = -1.7336: analytical (no fit):    slope = -1.7336\n[PASS] cache_contains:long_path_cache:H=0.5 kubo_true:        slope = -1.8128: H=0.5 kubo_true:        slope = -1.8128\n[PASS] cache_contains:long_path_cache:POOR MATCH: POOR MATCH\n[PASS] note_has_source_packet_reaudit_section: finite-path note has the 2026-06-04 repair section\n[PASS] note_preserves_open_gate_boundary: repair section states that status movement remains audit-owned\n[PASS] note_has_negative_boundary_title: finite-path note is narrowed to a negative boundary packet\n[PASS] note_disclaims_positive_explanation: finite-path note disclaims positive detector-centroid explanation\n[PASS] note_registers_no_go_claim_type: audit registration records no_go claim type\n[PASS] note_names_remaining_centroid_bridge: note keeps the centroid/layer-weighted bridge visible\n==============================================================================\nSUMMARY: LENSING SOURCE PACKET PASS=60 FAIL=0\n==============================================================================\nOutput written: outputs/lensing_finite_path_centroid_packet_manifest_2026_06_04.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T020531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/lensing_finite_path_centroid_packet_manifest_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

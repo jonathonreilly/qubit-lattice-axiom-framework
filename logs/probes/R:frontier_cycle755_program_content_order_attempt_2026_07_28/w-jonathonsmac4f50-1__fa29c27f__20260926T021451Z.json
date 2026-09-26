@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle755_program_content_order_attempt_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle755_program_content_order_attempt_2026_07_28.py",
+ "seed": 88891,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021451Z",
+ "elapsed_s": 31.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d6875c5a057b822fdd7be1ef1c9c4ed034bca42332ef2349d2a304ab3a729711",
+ "stdout_tail": "e row/token at station 0\",\"safety\":\"every labelled oriented-ring program has exactly one such representative; all P rotations are restored and audited\"},{\"rule\":\"choose equal role_key inventory copies in source order\",\"safety\":\"the two b=2 relay-swap copies have identical kind, index, and mapped gate word, so exchanging their copy labels does not change a candidate program\"},{\"rule\":\"merge prefixes only at equal remaining masks and exactly equal tuples of all held full states\",\"safety\":\"future K macro action is deterministic from precisely that state and remaining multiset; multiplicities are summed\"},{\"rule\":\"reject only complete states unequal to K's held targets\",\"safety\":\"there are zero heuristic or partial-bit prefix rejections; all recovered target paths are replayed through the predicate\"}],\"report_sha256\":\"879d4c18ac970d930b7400600022a02ba9da0564b025bc80bf16433b1da75f5a\",\"runtime_sec\":31.193977,\"scope_status\":{\"arrangement_census\":\"one_of_81_accepted_b2_arrangements\",\"broader_residual\":\"not_retired_by_this_fixed_API_census\",\"constructor_inventory\":\"supplied_not_derived\",\"translation_equivariance\":\"894_exact_simultaneous_relabelings\"},\"translation_equivariance\":{\"by_bank\":{\"1\":{\"failures\":0,\"labelled_rotations_tested\":3},\"2\":{\"failures\":0,\"labelled_rotations_tested\":891}},\"equivariance_failures\":0,\"labelled_rotations_tested\":894,\"orientation_reversal_in_scope\":false,\"relabeling_group\":\"simultaneous oriented-ring station/token translations C_P\",\"roundtrip_failures\":0}}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021523Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

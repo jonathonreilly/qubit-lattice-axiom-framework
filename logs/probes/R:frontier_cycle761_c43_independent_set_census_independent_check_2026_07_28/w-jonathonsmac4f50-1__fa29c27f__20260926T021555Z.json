@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.py",
+ "seed": 88955,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021555Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c98addef1101e922d1d0f8884f9671a928482ea7038a231b309d199092e4672e",
+ "stdout_tail": "43_formula_matches_state_dp :: True\nPASS independent_c43_total_is_exact :: True\nPASS closed_formula_matches_all_masks_for_c3_through_c18 :: True\nPASS independent_adjacent_pair_mask_census_is_exact :: True\nPASS independent_occupied_endpoint_incidence_total_is_eighty_six :: True\nPASS independent_one_edge_family_size_is_structurally_derived :: True\nPASS independent_one_edge_vertex_sets_are_pairwise_distinct :: True\nPASS independent_one_edge_rows_have_declared_cardinality :: True\nPASS independent_one_edge_rows_have_only_the_labelled_edge :: True\nPASS independent_one_edge_occupied_endpoint_incidence_total_is_exact :: True\nPASS fresh_primary_subprocess_passes :: True\nPASS fresh_primary_report_matches_independent_recount :: True\nPASS note_preserves_narrow_unaudited_scope :: True\n{\"adjacent_pair_masks\":43,\"claim\":\"independent_c43_census_check\",\"cycle\":761,\"failed\":0,\"independent_set_total\":969323029,\"occupied_endpoint_incidences\":86,\"one_edge_masks\":860,\"one_edge_occupied_endpoint_incidences\":1720,\"one_edge_occupied_range\":[12,21],\"one_edge_phases\":[0,1],\"passed\":17,\"primary_imported\":false,\"runtime_sec\":0.070818,\"small_cycle_exhaustive_range\":[3,18],\"small_cycle_masks_checked\":524280,\"stations\":43,\"strata\":[1,43,860,10621,90687,567987,2701776,9970840,28915436,66335412,120609840,173376645,195747825,171655785,115000920,57500460,20764055,5167525,826804,76153,3311,43],\"terminal\":\"CYCLE761_C43_INDEPENDENT_SET_CENSUS_INDEPENDENT_PASS\"}\nCYCLE761_C43_INDEPENDENT_SET_CENSUS_INDEPENDENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021556Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle761_c43_independent_set_census_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

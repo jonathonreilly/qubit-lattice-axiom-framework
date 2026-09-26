@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle789_three_bank_fixed_coframe_schedule_2026_07_30.py",
+ "seed": 89094,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021814Z",
+ "elapsed_s": 20.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "386b4ba5cd9a88be98cd41123d16d47bf715d33c7d5825f8004cabc8f701c331",
+ "stdout_tail": "ion_pairs\": 15, \"canonical_gates\": 150, \"hostile_reversal_O_output_generator_mismatches\": 11, \"hostile_reversal_full_signed_generator_mismatches\": 64, \"hostile_reversal_reduced_O_channel_mismatches\": 0, \"inversion_CZ_gates\": 30, \"one_cell_abstract_wires\": 49, \"one_cell_rows_per_stage\": 11, \"reduced_O_Pauli_observables_exhausted\": 262144, \"verdict\": \"bare row order changes the retained-syndrome dilation but not the reduced O channel; the explicit local inversion-CZ cocycle restores the full signed Clifford tableau for reversal\"}, \"source_sha256\": {\"frontier_companion_bank_bell_character_dilation_2026_07_28.py\": \"102f8bc31e60fd4a452a1cfab176129f922665e10b564f0421dc26ffb11ee152\", \"frontier_cycle720_companion_2cube_m2_stinespring_covariance_2026_07_27.py\": \"42ada20e51eaf48c14d9862ddce1467982af90874829ddac62ba75b424d45da5\", \"frontier_cycle720_companion_local_choi_tree_plaquette_pump_2026_07_27.py\": \"108568254546e1f64e4454b455f4aa866fe9abfbd4a6ca3a82f65b6a29e28974\", \"frontier_cycle720_companion_subsystem_m2_update_2026_07_27.py\": \"34c3b0fe14b6937010b88daf8594811fa8a6ef1741ab539b682db2429560c87d\"}, \"status\": \"PASS\", \"supplied\": \"fixed parity/center sector and mixed-gauge reference; 3N locally constrained coframe M2 and its origin sector; clean pump and Bell ancillas; O/I Choi-pump and I/L Bell-character algebra; private correction atlas; cell chart, signed-port slot labels, mod-3 colour origin, transported ordered tableau program, stage order, boundary, and the landed recurrent G\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

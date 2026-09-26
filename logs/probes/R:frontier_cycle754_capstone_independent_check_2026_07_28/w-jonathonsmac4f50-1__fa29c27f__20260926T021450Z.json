@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle754_capstone_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle754_capstone_independent_check_2026_07_28.py",
+ "seed": 88890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021450Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dff16a68c953ff37e5145090c37beefc7b6a7535fde9b4c6d410fae2f3d4cb15",
+ "stdout_tail": "independent_source_and_input_contract :: {\"declared\": 86, \"missing_inputs\": [], \"primary_exists\": true, \"primary_imported\": false, \"unique\": 86}\nPASS C_direct_endpoint_support_reconstruction :: {\"api_indicators\": [1, 1, 1, 1], \"direct_indicators\": [1, 1, 1, 1], \"endpoint_rows\": 4, \"mismatches\": 0}\nPASS D_complete_receiver_conjunction_reconstruction :: {\"receiver_mismatches\": 0, \"rows\": 256}\nPASS E_independent_decision_branch_matches_API :: {\"expected\": {\"admitted\": 4, \"refused_supplied\": 252}, \"observed\": {\"admitted\": 4, \"refused_supplied\": 252}, \"status_mismatches\": 0}\nPASS F_runtime_within_declared_timeout :: {\"runtime_sec\": 0.044215, \"timeout_sec\": 900}\n{\"bounded\":true,\"checks\":{\"A_exact_note_boundary\":true,\"B_independent_source_and_input_contract\":true,\"C_direct_endpoint_support_reconstruction\":true,\"D_complete_receiver_conjunction_reconstruction\":true,\"E_independent_decision_branch_matches_API\":true,\"F_runtime_within_declared_timeout\":true},\"checks_failed\":0,\"checks_passed\":6,\"claim\":\"independent finite receiver/endpoint API reconstruction\",\"cycle\":754,\"pass\":true,\"result\":{\"api_indicators\":[1,1,1,1],\"direct_indicators\":[1,1,1,1],\"endpoint_indicator_mismatches\":0,\"endpoint_rows\":4,\"expected_status_counts\":{\"admitted\":4,\"refused_supplied\":252},\"observed_status_counts\":{\"admitted\":4,\"refused_supplied\":252},\"receiver_mismatches\":0,\"rows\":256,\"status_mismatches\":0},\"runtime_sec\":0.044215,\"terminal\":\"CYCLE754_FINITE_API_INDEPENDENT_PASS\"}\nCYCLE754_FINITE_API_INDEPENDENT_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021451Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

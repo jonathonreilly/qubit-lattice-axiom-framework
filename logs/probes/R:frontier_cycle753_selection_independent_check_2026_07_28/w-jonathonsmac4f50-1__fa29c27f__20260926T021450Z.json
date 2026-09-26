@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_cycle753_selection_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle753_selection_independent_check_2026_07_28.py",
+ "seed": 88890,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021450Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "83be0a3321a2f17a3453691cefc2d005c2087dd24f9c10774a51b9b21dc5826a",
+ "stdout_tail": "072ff93644c65ad38894043d\"},\"pass\":true,\"primary_report_sha256\":\"75131c7548314c5127cfe550fcacbc340fbf3e2a70084c824153299905e4b615\",\"report_sha256\":\"1c95cab74d1d0cac4eaeddfeb256a7c7d4e5fd226f69f2b0cc871b69d574325c\",\"runtime_seconds\":0.097618,\"scientific_authority\":\"none\",\"small_prufer_exhaustion\":{\"2\":{\"code_count\":1,\"distinct_tree_count\":1,\"expected\":1,\"roundtrips\":true},\"3\":{\"code_count\":3,\"distinct_tree_count\":3,\"expected\":3,\"roundtrips\":true},\"4\":{\"code_count\":16,\"distinct_tree_count\":16,\"expected\":16,\"roundtrips\":true},\"5\":{\"code_count\":125,\"distinct_tree_count\":125,\"expected\":125,\"roundtrips\":true},\"6\":{\"code_count\":1296,\"distinct_tree_count\":1296,\"expected\":1296,\"roundtrips\":true}},\"small_word_exhaustion\":{\"1\":{\"commutation_class_count\":1,\"expected_commutation_class_count\":1,\"expected_minimum_word_count\":1,\"minimum_word_count\":1,\"success_counts_lengths_0_through_width\":[0,1]},\"2\":{\"commutation_class_count\":3,\"expected_commutation_class_count\":3,\"expected_minimum_word_count\":4,\"minimum_word_count\":4,\"success_counts_lengths_0_through_width\":[0,0,4]},\"3\":{\"commutation_class_count\":16,\"expected_commutation_class_count\":16,\"expected_minimum_word_count\":36,\"minimum_word_count\":36,\"success_counts_lengths_0_through_width\":[0,0,0,36]},\"4\":{\"commutation_class_count\":125,\"expected_commutation_class_count\":125,\"expected_minimum_word_count\":576,\"minimum_word_count\":576,\"success_counts_lengths_0_through_width\":[0,0,0,0,576]}},\"terminal\":\"CYCLE753_FIXED_TARGET_INDEPENDENT_CHECK_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021450Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: last line differs from the pinned cache: run '{\"AUDIT_INPUT_PATHS\":[\"docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_BOUND' vs cache '{\"AUDIT_INPUT_PATHS\":[\"docs/FIXED_TARGET_X_CNOT_PREPARATION_COUNT_CYCLE753_BOUND'",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cycle753_selection_independent_check_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

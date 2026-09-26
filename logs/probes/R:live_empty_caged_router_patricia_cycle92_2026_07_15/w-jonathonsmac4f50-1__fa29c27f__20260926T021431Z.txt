@@ -1,0 +1,83 @@
+
+===============================================================================
+A - Live open-direction to physical EMPTY word
+===============================================================================
+PASS A01 EMPTY remains reserved all-one word
+PASS A02 source has exactly 59 supplied H0/H1 records
+PASS A03 monitored port and all seventeen additions start open
+PASS A04 sensor has four transverse records and two axial openings
+PASS A05 EMPTY table has two arity-four canonical rows and 36 raw rows
+PASS A06 EMPTY rows are disjoint from corrected Cycle-90 union
+PASS A07 EMPTY union has 5,488 single-valued raw rows
+PASS A08 supplied EMPTY source has trivial proper-cubic stabilizer
+
+===============================================================================
+B - Asynchronous, extra-neighbour, and covariance controls
+===============================================================================
+PASS B01 graph has 46 states and 73 append edges :: (46, 73)
+PASS B02 graph has one complete seventeen-record terminal
+PASS B03 graph has no parasite or output conflict :: ()
+PASS B04 no state enables more than candidate plus comparator
+PASS B05 states are exactly sensor then 0<=certificate<=candidate<=8 :: Counter()
+PASS B06 terminal candidate and certificate are physical all-one words
+PASS B07 monitored port is never naturally writable
+PASS B08 all 3,850 one-extra-neighbour controls are quiet :: []
+PASS B09 every one of 153 live roles blocks EMPTY formation
+PASS B10 all 1,104 rotated reachable states have exact frontier :: []
+
+===============================================================================
+C - Three-guide caged physical one-bit branch gate
+===============================================================================
+PASS C01 each gate source has twelve supplied records
+PASS C02 all three guard roles already belong to the live alphabet
+PASS C03 gate has four canonical and 84 raw rows
+PASS C04 caged gate raw domain is disjoint from the prior union
+PASS C05 complete live compiler union has 5,572 raw rows
+PASS C06 complete live compiler union is output-single-valued
+PASS C07 every gate row contains a non-H guide marker
+PASS C08 gate outputs remain physical H0/H1
+PASS C09 both branch graphs and cage stabilizers are exact :: []
+PASS C10 all 144 transformed gate stages are exact
+
+===============================================================================
+D - Mixed-pipeline parasite repair and exhaustive separation
+===============================================================================
+PASS D01 all 15,576 equal-program pipeline states are all-H :: []
+PASS D02 all 11,328 one-bit stopped contexts are all-H :: []
+PASS D03 caged rows are impossible in all 26,904 contexts
+PASS D04 content separation survives every proper-cubic image
+PASS D05 old all-H gate creates 32 immediate R_LB parasites :: Counter({'H0': 24, 'H1': 8})
+PASS D06 old all-H gate corrupts exactly 63 of 66 R_LB states
+PASS D07 repaired R_LB mixed pipeline preserves all 66 frontiers :: []
+
+===============================================================================
+E - Corrected 236-program serial/Patricia selector inventory
+===============================================================================
+PASS E01 bank has 236 distinct 48-bit leaves
+PASS E02 explicit prefix trie has 8,239 nodes and 8,238 edges
+PASS E03 explicit trie has 235 branch and 7,768 unary nodes :: Counter({1: 7768, 2: 235})
+PASS E04 maximum width is 236 at depths 46-48
+PASS E05 compressed Patricia trie has 471 nodes and 470 edges
+PASS E06 compressed labels total 8,238 bits
+PASS E07 longest compressed edge is 43 bits
+PASS E08 every live program classifies to its unique row
+PASS E09 every selected leaf retains its output association
+PASS E10 all 11,328 one-bit perturbations classify exactly or reject
+PASS E11 exactly 28 directed one-bit flips reach another live row
+
+===============================================================================
+F - Bounded result and residual interfaces
+===============================================================================
+PASS F01 note exists and carries authority none
+PASS F02 note states both supplied-source sizes
+PASS F03 note names candidate-bit bus residual
+PASS F04 note names physical embedding residual
+PASS F05 note denies a seed-grown selector
+PASS F06 note preserves historical routes
+PASS F07 note denies foundation and axiom effects
+
+EMPTY_SOURCE=59 EMPTY_RAW=36 EMPTY_UNION_RAW=5488 EXTRA_CONTROLS=3850
+GATE_SOURCE=12 GATE_RAW=84 COMPLETE_UNION_RAW=5572 MIXED_CONTEXTS=26904
+PROGRAMS=236 PREFIX_NODES=8239 PATRICIA_NODES=471 PATRICIA_EDGES=470
+PERTURBATIONS=11328 ACCEPTED_DIRECTED_FLIPS=28
+SUMMARY: 53 PASS / 0 FAIL

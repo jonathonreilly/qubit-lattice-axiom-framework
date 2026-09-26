@@ -1,0 +1,235 @@
+
+===============================================================================
+A - Source, primitive, literature, and N1-N8 contract
+===============================================================================
+PASS A live axioms still say Records form
+PASS A live axioms still exclude a supplied update law
+PASS A primitive registry names only the approved four canonical nodes
+PASS A note contains boundary: authority: none
+PASS A note contains boundary: result up front
+PASS A note contains boundary: strictly nearest-neighbor
+PASS A note contains boundary: commit current
+PASS A note contains boundary: archive count
+PASS A note contains boundary: stationary lattice green response
+PASS A note contains boundary: attractive sign
+PASS A note contains boundary: universal local lapse
+PASS A note contains boundary: m2
+PASS A note contains boundary: boundary and renewal cost
+PASS A note contains boundary: n1 — alternative routes
+PASS A note contains boundary: n2 — wall-independence audit
+PASS A note contains boundary: n3 — hidden-wall scan
+PASS A note contains boundary: n4 — residual matching
+PASS A note contains boundary: n5 — rhetoric and resolution
+PASS A note contains boundary: n6 — partial-closure paths
+PASS A note contains boundary: n7 — steelman
+PASS A note contains boundary: n8 — cross-cycle echo
+PASS A note cites primary source: https://arxiv.org/abs/2304.07703
+PASS A note cites primary source: https://arxiv.org/abs/1104.3445
+PASS A note cites primary source: https://arxiv.org/abs/cond-mat/0109346
+
+===============================================================================
+B - Smallest scalar local update: conservation and cubic covariance
+===============================================================================
+PASS B graph Laplacian is exactly symmetric
+PASS B graph Laplacian has zero row and column sums
+PASS B 12P has nonnegative integer entries
+PASS B P is exactly doubly stochastic
+PASS B P retains one-half onsite weight
+PASS B every nonzero off-diagonal update is a nearest-neighbor edge
+PASS B proper cubic rotation group has order 24
+PASS B P is exactly covariant under cubic rotation 00
+PASS B P is exactly covariant under cubic rotation 01
+PASS B P is exactly covariant under cubic rotation 02
+PASS B P is exactly covariant under cubic rotation 03
+PASS B P is exactly covariant under cubic rotation 04
+PASS B P is exactly covariant under cubic rotation 05
+PASS B P is exactly covariant under cubic rotation 06
+PASS B P is exactly covariant under cubic rotation 07
+PASS B P is exactly covariant under cubic rotation 08
+PASS B P is exactly covariant under cubic rotation 09
+PASS B P is exactly covariant under cubic rotation 10
+PASS B P is exactly covariant under cubic rotation 11
+PASS B P is exactly covariant under cubic rotation 12
+PASS B P is exactly covariant under cubic rotation 13
+PASS B P is exactly covariant under cubic rotation 14
+PASS B P is exactly covariant under cubic rotation 15
+PASS B P is exactly covariant under cubic rotation 16
+PASS B P is exactly covariant under cubic rotation 17
+PASS B P is exactly covariant under cubic rotation 18
+PASS B P is exactly covariant under cubic rotation 19
+PASS B P is exactly covariant under cubic rotation 20
+PASS B P is exactly covariant under cubic rotation 21
+PASS B P is exactly covariant under cubic rotation 22
+PASS B P is exactly covariant under cubic rotation 23
+PASS B P is exactly translation covariant
+PASS B field-plus-local-current update is exactly translation covariant
+PASS B field-plus-local-current update is exactly rotation covariant
+PASS B source-sink current has exactly zero total resource
+
+===============================================================================
+C - Exact rational local iteration and stationary Poisson identity
+===============================================================================
+PASS C exact stationary field has zero mean
+PASS C exact stationary field solves L phi=12 epsilon source
+PASS C exact stationary field is a fixed point of the local update
+PASS C source site has positive resource deficit
+PASS C export site has negative relative deficit
+PASS C local iterate 1 conserves exact zero total
+PASS C local iterate 1 remains rational
+PASS C local iterate 2 conserves exact zero total
+PASS C local iterate 2 remains rational
+PASS C local iterate 3 conserves exact zero total
+PASS C local iterate 3 remains rational
+PASS C local iterate 4 conserves exact zero total
+PASS C local iterate 4 remains rational
+PASS C local iterate 5 conserves exact zero total
+PASS C local iterate 5 remains rational
+PASS C local iterate 6 conserves exact zero total
+PASS C local iterate 6 remains rational
+PASS C local iterate 7 conserves exact zero total
+PASS C local iterate 7 remains rational
+PASS C local iterate 8 conserves exact zero total
+PASS C local iterate 8 remains rational
+PASS C source without export grows the exact zero mode at step 1
+PASS C source without export grows the exact zero mode at step 2
+PASS C source without export grows the exact zero mode at step 3
+PASS C source without export grows the exact zero mode at step 4
+PASS C source without export grows the exact zero mode at step 5
+PASS C a closed finite conservative torus needs zero net sustained current for stationarity
+
+===============================================================================
+D - Finite spectral formula equals repeated nearest-neighbor iteration
+===============================================================================
+PASS D spectral stationary response has zero mean
+PASS D spectral stationary response satisfies the local fixed-point equation
+PASS D step 1 direct local iteration equals its finite spectral sum
+PASS D step 10 direct local iteration equals its finite spectral sum
+PASS D step 50 direct local iteration equals its finite spectral sum
+PASS D step 200 direct local iteration equals its finite spectral sum
+PASS D step 1000 direct local iteration equals its finite spectral sum
+PASS D stationary error falls at every sampled iteration :: [0.8663849607409346, 0.5169354781252329, 0.10287942835224656, 0.00026377178589085884, 8.115381370723672e-16]
+PASS D 1000 strictly local steps converge below 1e-12 on the side-9 fixture :: 8.115381370723672e-16
+PASS D every update consults only self, six neighbors, commit, and export fields
+
+===============================================================================
+E - Open-SSEP stationary current and controlled 1/r window
+===============================================================================
+PASS E reservoir-coupled stationary density stays in [0,1]
+PASS E effective resistance is positive :: 0.49737118058708285
+PASS E stationary commit current is positive :: 0.40042105385588683
+PASS E local stationary equation is Poisson with source minus export
+PASS E source reservoir current closes exactly
+PASS E export reservoir current closes exactly
+PASS E axial radii 4 through L/4 have a controlled a+b/r window :: R2=0.999874836
+PASS E fitted 1/r coefficient is within four percent of j/(4 pi kappa) :: ratio=1.025382
+PASS E density decreases monotonically away from the commit source on the tested axis
+PASS E stationary source-antipode profile is cubic invariant 00
+PASS E stationary source-antipode profile is cubic invariant 01
+PASS E stationary source-antipode profile is cubic invariant 02
+PASS E stationary source-antipode profile is cubic invariant 03
+PASS E stationary source-antipode profile is cubic invariant 04
+PASS E stationary source-antipode profile is cubic invariant 05
+PASS E stationary source-antipode profile is cubic invariant 06
+PASS E stationary source-antipode profile is cubic invariant 07
+PASS E stationary source-antipode profile is cubic invariant 08
+PASS E stationary source-antipode profile is cubic invariant 09
+PASS E stationary source-antipode profile is cubic invariant 10
+PASS E stationary source-antipode profile is cubic invariant 11
+PASS E stationary source-antipode profile is cubic invariant 12
+PASS E stationary source-antipode profile is cubic invariant 13
+PASS E stationary source-antipode profile is cubic invariant 14
+PASS E stationary source-antipode profile is cubic invariant 15
+PASS E stationary source-antipode profile is cubic invariant 16
+PASS E stationary source-antipode profile is cubic invariant 17
+PASS E stationary source-antipode profile is cubic invariant 18
+PASS E stationary source-antipode profile is cubic invariant 19
+PASS E stationary source-antipode profile is cubic invariant 20
+PASS E stationary source-antipode profile is cubic invariant 21
+PASS E stationary source-antipode profile is cubic invariant 22
+PASS E stationary source-antipode profile is cubic invariant 23
+PASS E Green response was computed for verification, not inserted into the local update
+
+===============================================================================
+F - Exact M2-resource realization by symmetric exclusion
+===============================================================================
+PASS F full finite generator has nonnegative transition rates
+PASS F full finite generator has exact probability-conserving column sums
+PASS F every bulk exchange preserves particle number configuration by configuration
+PASS F stationary distribution is normalized and nonnegative
+PASS F stationary distribution solves the complete Markov generator
+PASS F commit and export currents agree at stationarity :: 0.41379310344827624
+PASS F exact SSEP one-point equation closes without mean-field factorization
+PASS F full 256-state stationary means equal the eight-site linear solve
+PASS F one binary resource occupancy per site is an M2 carrier
+PASS F stationary field coexists with archive growth jT at T=1
+PASS F stationary field coexists with archive growth jT at T=7
+PASS F stationary field coexists with archive growth jT at T=23
+
+===============================================================================
+G - Paired-law, source, and persistence ablations
+===============================================================================
+PASS G commit-current source is not the cumulative archive count
+PASS G two different permanent archives can share the same active current profile
+PASS G archive-sourced comparator remembers different historical archives
+PASS G one isolated commit pulse conserves its token
+PASS G one isolated commit pulse relaxes toward uniform rather than stationary 1/r
+PASS G sustained source without export grows its torus mean linearly
+PASS G direct one-edge capacity rule is exactly zero beyond nearest neighbors
+PASS G repeated conservative transport, not direct edge loss, supplies the Green window
+PASS G changing diffusion rate changes the exact stationary coupling
+PASS G local conservation and cubic symmetry do not select alpha, beta, kappa, or lapse strength
+
+===============================================================================
+H - Attractive scalar-lapse sign and composition universality
+===============================================================================
+PASS H positive commit current creates positive relative deficit at its source
+PASS H capacity lapse is slower at the source than far on the axis
+PASS H lapse remains positive on the finite fixture
+PASS H positive-energy probe potential rises outward
+PASS H the corresponding discrete force points inward
+PASS H reversing debt-to-lapse orientation reverses the force sign
+PASS H common scheduler gives two-level every nonzero gap the same lapse ratio
+PASS H common scheduler gives three-level every nonzero gap the same lapse ratio
+PASS H common scheduler gives composite every nonzero gap the same lapse ratio
+PASS H species-dependent scheduler couplings break fractional universality
+PASS H universal local lapse is a theorem of the common scheduler clause, not diffusion alone
+PASS H scalar energy descent is not yet a spin-2, lensing, or nonlinear-GR theorem
+
+===============================================================================
+I - Boundary, renewal, dissipation, and carrier costs
+===============================================================================
+PASS I steady Dirichlet dissipation is positive
+PASS I steady source work equals bulk quadratic dissipation :: D=0.0797470131138
+PASS I removing source and export lets local diffusion erase the field
+PASS I a finite source reservoir supports only finite expected stationary duration
+PASS I indefinite stationarity requires renewal, export to infinity, or a maintained reservoir
+PASS I two-site exclusion SWAP exactly conserves resource number
+PASS I stochastic local averaging turns a pure resource state into a mixture
+PASS I a closed-system unitary cannot implement that dissipative mixing without an environment
+PASS I one M2 carries one binary resource occupancy
+PASS I one M2 cannot carry two independent perfectly readable binary labels
+PASS I an M4 two-qubit block has room for archive content plus resource occupancy
+PASS I adding an independent local probe generally needs a larger block or spatial encoding
+PASS I dimension room does not prove a covariant block code or unitary dilation
+PASS I a maintained stationary profile stores nonlocal resource imbalance
+
+===============================================================================
+J - G-lane closure and exact-law residue gate
+===============================================================================
+PASS J conclusion names: theorems of the displayed local law
+PASS J conclusion names: stationary green response
+PASS J conclusion names: active source equals commit current
+PASS J conclusion names: archive remains inert
+PASS J conclusion names: scalar attractive sign
+PASS J conclusion names: common scheduler
+PASS J conclusion names: independent law values
+PASS J conclusion names: mass-to-commit
+PASS J conclusion names: renewal reservoir
+PASS J conclusion names: quantum dilation
+PASS J conclusion names: nonlinear metric
+PASS J conclusion names: no axiom addition
+PASS J conclusion names: partial-attempt-with-named-untested-routes
+
+===============================================================================
+TOTAL PASS=191 FAIL=0
+===============================================================================

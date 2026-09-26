@@ -1,0 +1,9 @@
+PASS A supplied domains and simplexes
+PASS B exact supplied-map transformed rows
+PASS C exact endpoint total-variation values
+PASS D supplied map is comparator-closer at four scopes
+PASS E exhaustive S3-cubed family cardinality
+PASS F exact supplied-map pooled rank interval
+PASS G exact S3-cubed endpoint counts
+PASS H supplied map is present in census
+{"boundary":"supplied synthetic vectors, comparator, coordinate order, and per-row bijection; exhaustive only over S3 cubed; no physical mapping, occurrence, probability, frequency, apparatus, selector, convergence, framework, or no-go claim","candidate":{"comparator_tv":[{"decimal":"0.184405677211864","exact":"240879915857997727/1306250000000000000"},{"decimal":"0.274995788854608","exact":"56717881451262799/206250000000000000"},{"decimal":"0.312960340026706","exact":"1140349238972309449/3643750000000000000"},{"decimal":"0.277847838765481","exact":"29521332868832351/106250000000000000"}],"mapping_feature_index_to_output_index":[[1,2,0],[0,1,2],[2,0,1]],"pooled":[311,19,792],"rank_interval_by_pooled_comparator_tv":[123,128],"rows":[[68,13,128],[97,1,232],[146,5,432]],"uniform_tv":[{"decimal":"0.279106858054226","exact":"175/627"},{"decimal":"0.369696969696970","exact":"61/165"},{"decimal":"0.407661520869068","exact":"713/1749"},{"decimal":"0.372549019607843","exact":"19/51"}]},"checks":{"A supplied domains and simplexes":true,"B exact supplied-map transformed rows":true,"C exact endpoint total-variation values":true,"D supplied map is comparator-closer at four scopes":true,"E exhaustive S3-cubed family cardinality":true,"F exact supplied-map pooled rank interval":true,"G exact S3-cubed endpoint counts":true,"H supplied map is present in census":true},"family":{"all_four_scopes_comparator_closer":18,"members":216,"pooled_comparator_closer":91,"strictly_lower_pooled_comparator_tv":122,"ties_at_candidate_pooled_comparator_tv":6},"pass":true,"terminal":"CYCLE765_CONDITIONAL_S3_CUBED_CENSUS_PASS"}

@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle755_program_order_independent_check_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle755_program_order_independent_check_2026_07_28.py",
+ "seed": 88923,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021523Z",
+ "elapsed_s": 32.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4d7bbc391a9ccee2e3178a8f5129b69fe6cadbcd77768b09e998eda07afbf361",
+ "stdout_tail": "ented at every depth; only complete signatures unequal to K's held target fail.\",\"pass\":true},\"exact_state_merge\":{\"justification\":\"K macro action is deterministic; byte-identical tuples of all held states with identical used counts have identical future actions. Twelve sampled merge nodes are rechecked over all 252 compatible suffixes in those samples.\",\"merge_savings\":{\"1\":0,\"2\":27728},\"pass\":true,\"windows\":{\"1\":{\"failures\":0,\"merge_windows_checked\":0,\"suffixes_checked\":0},\"2\":{\"failures\":0,\"merge_windows_checked\":12,\"suffixes_checked\":252}}},\"identical_copy_exchange\":{\"duplicate_station_pairs\":[[4,7]],\"duplicate_word_failures\":0,\"justification\":\"The only repeated role is the literally equal relay-swap row; exchanging its two artificial copy labels changes no program row or K action.\",\"pass\":true,\"quotiented_orders\":1814400,\"raw_copy_labelled_orders\":3628800},\"unique_source_rotation\":{\"full_b1_anchored_classes\":2,\"full_b1_programs\":6,\"justification\":\"The source is unique, so every oriented-ring station translation orbit has one source-at-zero representative.\",\"pass\":true,\"rotation_predicate_failures\":0}}},\"report_sha256\":\"1e904818ef02f5c00c1ab836636550333a5ef435b79c56b92fdff96dbc96ba71\",\"runtime_sec\":31.663414,\"translation_equivariance_recount\":{\"by_bank\":{\"1\":{\"failures\":0,\"translation_checks\":3},\"2\":{\"failures\":0,\"translation_checks\":891}},\"equivariance_failures\":0,\"pass\":true,\"roundtrip_failures\":0,\"translation_checks\":894}}\nCYCLE755_PROGRAM_ORDER_INDEPENDENT_CHECK_PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021555Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

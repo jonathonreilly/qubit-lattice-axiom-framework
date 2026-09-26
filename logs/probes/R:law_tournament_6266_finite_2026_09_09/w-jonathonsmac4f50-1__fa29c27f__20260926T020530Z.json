@@ -1,0 +1,35 @@
+{
+ "task": "R:law_tournament_6266_finite_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "law",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/law_tournament_6266_finite_2026_09_09.py",
+ "seed": 88330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T020530Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b3b7cb6d8767011d525a9c32d14ea74feb4fddf72acf0481669c58c9c58bc7ff",
+ "stdout_tail": "PASS sharp-refinement: 24 frames: valid joint marginals=24; nonzero menu0 effects=96; menu1 noncommuting pairs=96\nPASS additional-registration-contract: f=3/4 has a live branch of weight1/4 and unchanged normalized state; f=1 only under no-live-on-this-attempt contract\nPASS actual-signed-carriers: 96/96 exact two-carrier roots/heads decoded; all proper frames and four fine outcomes\nPASS finite-head-source: 4/4 canonical one-event continuations; preserved root, old Records, unique head frontier and signed head movement\nPASS conditional-incidence-and-tensor: six supplied unit directions; four scaled incidence identities, orientation-even spatial tensor, odd mixed tensor, supplied Minkowski-null normalization\nSCOPE: finite carrier/source algebra only. Literal Cycle713/placement, long histories, 17^3 TT sample and old mutation totals are historical conditional evidence, not replayed.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T020530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

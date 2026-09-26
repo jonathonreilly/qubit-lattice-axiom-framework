@@ -1,0 +1,31 @@
+{
+ "task": "R:frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle765_per_row_bijection_s3_cubed_conditional_census_2026_07_28.py",
+ "seed": 88956,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T021556Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "af23381f289f7b52994a1a53dc0a54b3d11c1fd6ca92bbe13120a0ec28c0aabc",
+ "stdout_tail": "ubed; no physical mapping, occurrence, probability, frequency, apparatus, selector, convergence, framework, or no-go claim\",\"candidate\":{\"comparator_tv\":[{\"decimal\":\"0.184405677211864\",\"exact\":\"240879915857997727/1306250000000000000\"},{\"decimal\":\"0.274995788854608\",\"exact\":\"56717881451262799/206250000000000000\"},{\"decimal\":\"0.312960340026706\",\"exact\":\"1140349238972309449/3643750000000000000\"},{\"decimal\":\"0.277847838765481\",\"exact\":\"29521332868832351/106250000000000000\"}],\"mapping_feature_index_to_output_index\":[[1,2,0],[0,1,2],[2,0,1]],\"pooled\":[311,19,792],\"rank_interval_by_pooled_comparator_tv\":[123,128],\"rows\":[[68,13,128],[97,1,232],[146,5,432]],\"uniform_tv\":[{\"decimal\":\"0.279106858054226\",\"exact\":\"175/627\"},{\"decimal\":\"0.369696969696970\",\"exact\":\"61/165\"},{\"decimal\":\"0.407661520869068\",\"exact\":\"713/1749\"},{\"decimal\":\"0.372549019607843\",\"exact\":\"19/51\"}]},\"checks\":{\"A supplied domains and simplexes\":true,\"B exact supplied-map transformed rows\":true,\"C exact endpoint total-variation values\":true,\"D supplied map is comparator-closer at four scopes\":true,\"E exhaustive S3-cubed family cardinality\":true,\"F exact supplied-map pooled rank interval\":true,\"G exact S3-cubed endpoint counts\":true,\"H supplied map is present in census\":true},\"family\":{\"all_four_scopes_comparator_closer\":18,\"members\":216,\"pooled_comparator_closer\":91,\"strictly_lower_pooled_comparator_tv\":122,\"ties_at_candidate_pooled_comparator_tv\":6},\"pass\":true,\"terminal\":\"CYCLE765_CONDITIONAL_S3_CUBED_CENSUS_PASS\"}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T021556Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

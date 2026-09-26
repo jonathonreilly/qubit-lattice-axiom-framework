@@ -1,0 +1,35 @@
+{
+ "task": "R:law_tournament_6275_finite_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "law",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/law_tournament_6275_finite_2026_09_09.py",
+ "seed": 88330,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa29c27f",
+ "started_utc": "20260926T020530Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=6 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e0340b5173a876d71439a32d0f5304a4fd41fe22efe898a37583626bbec21e1c",
+ "stdout_tail": "PASS exact-normalized-kernels: 10/10 exact boundary/mixed-state kernels, 8 retain legitimate zero-weight branches\nPASS fail-closed-domain-and-readiness: 18/18 actual malformed density, structural readiness, invalid frame and occupied-target refusals\nPASS zero-weight-realization: a zero-weight branch is valid in the distribution and unavailable as a realized event\nPASS same-input-channel-bridge: 16 canonical matrix units: no-record + four fine outputs (80 maps) and 48 coarse sums; max residual=1.11e-16\nPASS common-weights-distinct-actual-geometry: 24/24 common exact kernels and 192/192 root-aligned carrier geometry signatures\nPASS finite-common-continuation: 8/8 canonical three-write continuations preserve original roots and signatures\nSCOPE: two supplied dictionaries distinguished under a common geometric decoder; no unrestricted-recoding or full physical-axiom nonselection theorem.\nTOTAL: PASS=6 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T020531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -113,7 +113,11 @@ penalties; the two grids here give `0.4518` and `0.3893`.
 ## What this does not do
 
 - It does not say which penalty is closer to the infinite-population
-  value; it measures that the two differ.
+  value; it measures that the two differ. Open PR 9276 later checked the
+  projector against the exact full 2³ torus (the single-link term on all 24
+  links): there a penalty of 0.8 reproduces the exact energy within 0.01,
+  while 1.4 sits 0.03–0.09 above it at `t = 0.5`; on 6³ at `t = 0.35` the
+  energy spans 2 per cent across penalties 0.8–2.0 and is lowest near 1.4.
 - It claims no slope, size trend, crossover or transition, and revises no
   exact statement of open PR 9263.
 - It adopts no clause, charge mass, guide or method.
@@ -122,7 +126,12 @@ penalties; the two grids here give `0.4518` and `0.3893`.
 
 Larger populations with an extrapolation in the inverse population, or a
 guide that carries charge-pair correlations, with the gap between two
-guides checked on every torus before a size trend is read.
+guides checked on every torus before a size trend is read. Open PR 9276
+found that at a mismatched penalty the bias on the exact 2³ torus does not
+shrink between 250 and 4000 walkers, so an extrapolation in the inverse
+population is not reliable at these sizes; a guide with the ground state's
+charge statistics, validated on the exact 2³ torus, or a sampler with no
+guide and no population, is what the scan needs.
 
 ## Prior art (not premises)
 

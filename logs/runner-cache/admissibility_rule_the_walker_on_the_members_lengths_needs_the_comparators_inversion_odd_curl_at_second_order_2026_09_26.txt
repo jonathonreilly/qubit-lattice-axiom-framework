@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_walker_on_the_members_lengths_needs_the_comparators_inversion_odd_curl_at_second_order_2026_09_26.py
+runner_sha256: fc49eeda029c2990f631f2c76bc6fe45f0d8d0b033c5a9560b1d8ba34cea67bc
+input_fingerprint_sha256: 0a6e9e9aa0be3b8913a5ccbaabaeb6045c7649925e805fefe5dee6eae87cdd12
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 22.24
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WALKER_ON_THE_MEMBERS_LENGTHS_KEEPS_RELABELLINGS_AT_FIRST_ORDER_AND_AT_THE_NEXT_NEEDS_EXACTLY_ONE_TERM_THE_COMPARATORS_INVERSION_ODD_CURL_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walker's coupling, the member's relabellings and the comparator are supplied)
+PASS: A3 the framed walk on half-densities, relabelled with its frame dragged along (no coin rotation), is exactly the framed walk of the dragged frame at orders u and u s, on all 1800 pairs of basis jets
+PASS: B1 general covector frame e = 1 + s eta, generic jets: the comparator's operator on half-densities minus the framed walk is (1/8) eps.C times the identity with no vector part, through s^2 (eps.C is already nonzero at order s)
+PASS: B2 symmetric frame (the lengths' own): the same identity through s^2; eps.C vanishes at order s and equals 2 eps_abc eta_aq d_b eta_cq at order s^2
+PASS: C1 order u (first order): with the coin turned by the rotation part of the relabelling, the new frame is symmetric and the relabelled framed walk is the framed walk of the new lengths, no residual (all 30 basis relabellings)
+PASS: C2 order u s, all 1800 pairs of basis jets: the new frame is symmetric, the derivative terms are the new frame's, and the residual has no coin-vector part
+PASS: C3 order u s: the residual is the coin scalar t = (change of eps.C)/8 = -(1/8) eps_abc (eta_aq d_b S_cq + S_aq d_b eta_cq), S = d xi + d xi^T; so framed walk + eps.C/8 keeps the relabelling; t is nonzero on 48 basis pairs
+PASS: C4 example: a rod stretched by lambda along axis 1 (eta_11 = lambda) and twisted about that axis by tau per unit length (xi = tau x1 (0, -x3, x2)): t = -lambda tau / 4
+PASS: D1 7320 exact equations over Q in 612 unknowns (linear and quadratic, with and without one derivative, scalar and coin vector): rank 612 = rank with the residual 612 = 612, and the unique solution is (1/8) eps.C = (1/4) eps_abc eta_aq d_b eta_cq times the identity
+PASS: D2 the walker's local law is fixed: a further coin rotation gives the frame an antisymmetric part (not the lengths' frame), and a phase phi adds -i M_j d_j phi, a pure coin-vector term, so neither removes a coin-scalar residual
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the comparator-minus-walk identity for every jet of a general and of a symmetric frame through second order
+per_site: executed - the relabelled walker at a point, on every pair of basis jets of the strain and the relabelling (1800 pairs, orders u and u s)
+per_mode: executed - the residual's closed form and its nonzero example (a stretched rod twisted about its axis)
+per_block: executed - the uniqueness system over Q (7320 equations, 612 unknowns) and the coin's transformation law
+lattice_wide: checked and not executed - the lattice placement of the term for the eight species, relabellings in time, and third order
+PASS: G1 the five N5 resolution lines are printed
+scope: the walker's framed coupling through the symmetric frame of the member's lengths, long wavelength, spatial relabellings; first order kept, order strain x relabelling missed by -(1/8) eps (eta dS + S d eta), restored uniquely by (1/8) eps.C (the comparator's term); nothing adopted (22s)
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

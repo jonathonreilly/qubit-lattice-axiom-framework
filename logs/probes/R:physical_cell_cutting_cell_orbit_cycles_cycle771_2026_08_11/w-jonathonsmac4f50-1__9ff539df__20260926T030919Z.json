@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_cell_orbit_cycles_cycle771_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_cell_orbit_cycles_cycle771_2026_08_11.py",
+ "seed": 92159,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T030919Z",
+ "elapsed_s": 21.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5485881b59e337d4a2e9e84e9b4658c04e240cd1e90097cbf5b32ffd5c4ff74f",
+ "stdout_tail": " component is a cycle of length 8: 48 per table, 96 x 48 = 4608 cycles in all\nPASS C13 each of the 4608 cycles has length twice the order of the product of the two generators at its base pair\nPASS C14 block det 0 so rank at most 3, leading 3 by 3 minor det 1 so rank at least 3: rank 3 nullity 1 over every field\nPASS C15 on each cycle the 4 by 4 submatrix is that block exactly, and its rows and columns carry no ones outside it\nPASS C16 48 blocks of rank 3 give rank 144 and nullity 48 = 192 - 144 for all 96 tables, no large elimination\nPASS C17 the integral alternating vector on each of the 4608 cycles is annihilated; the 48 per table form a kernel basis\nPASS C18 direct modular elimination gives rank 144 for all 96 tables at both primes, 192 measurements\nPASS C19 F_1000003 rejector: moving one row entry breaks two-regularity and moves rank from 144 to 145\nPASS C20 the 96 orbit tables sum entrywise to the all ones 192 by 192 matrix\nPASS C21 the cover by piece incidence is exactly the entrywise sum of 4 of the 96 orbit tables\nPASS C22 incidence rank 105 at F_1000003 and F_1000033, kernel 87, excess 39 from singleton rank 144\nPASS C23 at F_1000003 each of 4 summands has rank 144; the 6 pair sums measure 72 93 117 129 144 144\nPASS C24 mutations 13/13 reject: object/geometry/group/action/free/orbit/cycle/order/block/kernel/rank/incidence/pair\ngroup 384, orbits 96, cycles 4608, every orbit table rank 144, incidence rank 105\nelapsed 21.5 s, peak resident 61.2 MB\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T030940Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/physical_cell_cutting_cell_orbit_cycles_cycle771_2026_08_11.txt against the .txt beside this log"
+  ]
+ }
+}

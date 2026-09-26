@@ -1,0 +1,17 @@
+PASS K1 cell: 2672 unit pieces, cost floor 6, 400 at floor, 15800 cuttings of 24, 192 used pieces each in 1975, 379200 slots, 384 namings 2 per piece
+PASS K2 label product and two-naming agreement on 192 pieces; q_order ones 96, q_corner ones 96
+PASS K3 chambers: 12 walls, 24 orders times 8 signs = 192 chambers, 8 per piece either naming, 8 pieces per chamber, 192 sign patterns, 0 on a wall
+PASS K4 local formula L = sign(b) s1 s3 eta_b2 eta_b4 on all 192 times 8 = 1536 incident piece and chamber pairs, failures 0
+PASS K5 geometry: 192 exact sample points, offsets 8/20 6/20 4/20 2/20 from the centre, each strictly inside exactly 8 of 192 pieces, mismatches 0
+PASS K6 partition at a point: on all 192 times 15800 = 3033600 chamber and cutting pairs the meeting is exactly 1 piece, exceptions 0
+PASS K7 the eight-piece clique enumeration returns 192 covers of 8; the sorted cover sets equal the 192 distinct chamber piece-sets: yes
+PASS K8 corner-parity certificate on 192 pieces and 8 chambers each modulo 2, failures 0
+PASS K9 order-parity certificate on 192 pieces and 8 chambers each modulo 2, for 4 axes: 768 checks, failures 0
+PASS K10 even chamber totals over 192: g_corner 96; g_order,j by axis 24 24 24 24
+PASS K11 on 15800: S=24-2N_order-2N_corner+4N_joint; failures 0, odd N_order 0, odd N_corner 0
+PASS K12 S divisible by 4 on 15800 of 15800 cuttings, exceptions 0; census -8:120 -4:2832 0:9896 4:2832 8:120, sum 15800
+PASS K13 flipping one g_corner value breaks 8 holder pieces; negating one piece label breaks 1975 cuttings
+PASS K14 boundary: 8 diagonals, max |D_w| 4, sum-|D_w| census 0:9320 4:6096 8:384, max 8; N_corner mod 4 zero on 15800
+PASS K15 exact geometry: 15168 simplex pairs separated by 80 ternary normals; 24 unimodular-simplex volumes sum to cube volume
+resource: under 60 s of the 300 s budget, under 250 MB of the 2500 MB budget, 1789 gate characters
+TOTAL: PASS=15 FAIL=0

@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_cover_spectrum_cycle761_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_cover_spectrum_cycle761_2026_08_09.py",
+ "seed": 92658,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T031738Z",
+ "elapsed_s": 21.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8c55ab0bff32b4c32808c1a5daa9cd4ef47dfa122674848f32a3734d9bdd38b4",
+ "stdout_tail": "hanged cubic leaves 33024 nonzeros; multiplicity 9 at 20 gives total 191\nsharing: 4 distinct off diagonal values; each of the 192 rows carries value:count 0:157 1:20 2:10 4:4, adding to 191\nproduct variation: 16 ordered pairs of sharing-relation matrices vary within at least one relation class\nPASS sharing product witnesses  S has 19 distinct eigenvalues and 16 ordered relation products vary within a sharing class\nPASS sharing mutation control  a fixed corrupted shared-piece count is detected\nPASS four-cube relabelling action  384 distinct permutations form a group on 192 pieces in one orbit; character norm 104\nPASS group-action mutation control  a fixed duplicated image in one proposed map is detected\nPASS cutting characters  cutting rank 88, invariant: row-space 29, complement 33, cross 21, constants 1 and 0\nPASS eight-set characters  eight-set rank 105, invariant: row-space 34, complement 28, cross 21, constants 1 and 0\nPASS character decomposition control  the invariant all-ones line and its complement have cross inner product 0; self inner products 1 and 103\nPASS character mutation control  a fixed non-invariant coordinate line is rejected by the conjugation check\nPASS exact character division  every counting value and every average divides through with remainder 0 on both tables and on the control\nPASS resource bounds  elapsed under 300 s and peak memory under 500 MB, measured in this run against limits of 300 s and 2500 MB\nstdout characters: 3542\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T031800Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

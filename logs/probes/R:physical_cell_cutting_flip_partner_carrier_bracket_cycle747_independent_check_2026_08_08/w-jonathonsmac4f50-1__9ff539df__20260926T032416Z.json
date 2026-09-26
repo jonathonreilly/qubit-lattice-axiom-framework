@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08.py",
+ "seed": 93056,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T032416Z",
+ "elapsed_s": 1.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=9 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "88d8f01a33f417de12bdd328a9c9ed0383952f1157d2aee695bb479d50aad88a",
+ "stdout_tail": "lement reproduce the bound target counts\nPASS independent.all_marked  the counting floor is attained by exactly 192 independently enumerated weight-eight carriers\nPASS independent.weight_twenty  the landed eleven supports and independent weight-eight census give 512 distinct weight-twenty flip carriers\nFAIL independent.lower_bound  independent through-14 and weight-16 emptiness plus even parity leave 18 as the first candidate, while 20 is attained\nFAIL independent.primary_contract  the final primary receipt equals the independent reconstruction and preserves the unresolved weight-18 residual\nPASS hostile.primary_status  a failing primary receipt is rejected\nPASS hostile.all_marked  a changed weight-eight carrier is rejected\nPASS hostile.overlap  a changed overlap ceiling is rejected\nPASS hostile.eighteen  a false weight-18 completion claim is rejected\nPASS hostile.lower_bound  a reverted weight-16 emptiness certificate is rejected\nper_element: checked -- all 192 columns enter the independent incidence and clique calculations\nper_site: checked and not executed -- one supplied coordinate four-cube only\nper_mode: checked and not executed -- the finite binary object has no modes\nper_block: checked -- all 15800 rows and every predecessor search block are bound\nlattice_wide: checked and not executed -- no multicell or continuum claim\nRECEIPT outputs/physical_cell_cutting_flip_partner_carrier_bracket_cycle747_independent_check_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=9 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T032417Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=9 FAIL=2' vs cache 'TOTAL: PASS=11 FAIL=0'"
+  ]
+ }
+}

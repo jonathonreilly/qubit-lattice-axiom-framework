@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_complement_spaces_cycle768_2026_08_11",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_complement_spaces_cycle768_2026_08_11.py",
+ "seed": 92472,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T031432Z",
+ "elapsed_s": 185.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "62f7c336ed327701923367be61086243bfa6736620dde6cfbc0404aba1c100e4",
+ "stdout_tail": "s\nPASS C45 cmpl 105 144 72,93,117,129,144,144\nPASS C46 empty 0 full 1\nPASS C47 192 of 5 corners top 4\nPASS C48 36864 cells 0 vary\nPASS C49 25 strata 2:12 4:7 6:4 8:1 12:1\nPASS C50 B 83 vals finer 1975 on 4\nPASS C51 stratum max/ceiling/min-blind/incidence 143/144/49/105\nPASS C52 19 lift slot 0 orb 5 str 23\nPASS C53 0 all 10 none 15 mixed\nPASS C54 stab 2 fix 0 4 pairs\nPASS C55 partners 2 2 2 2\nPASS C56 least pair 2 2 rank 72\nPASS C57 row-pair checks covers/fixed/misses/pairs/reject 192/0/0/96/1\nPASS C58 one cover: 8 blocks, 4 incidence labels, multiplicity two\nPASS C59 complement spaces sets/right/left/different/reject/blind 16/0/0/16/1/87\nPASS C60 exact all-ones row/column checks 16; misses 0; top rank 144\nPASS C61 singleton cycle/rank: 48x4, orbits 96, rank 144, misses 0\nPASS C62 F_1000003 pairs: 4560, 13 values 48..144, ceiling 960, <=105 1104; 25 full-table checks, second-prime misses 0; complements size 94\nPASS C63 F_1000003 triples: 142880, 18 values 64..144, ceiling 60960, <=105 1472; 15 full-table checks; complements size 93\nPASS C64 F_1000003 pair aggregation: degree 75 on all 96; 313 of 325 stratum fibres contain multiple ranks, maximum 13\nPASS C65 mutations 13/13 reject: object/group/orbit/rank/block/drop/p2/incidence/exact/cycle/pair/triple/degree\nPASS C66 gate labels sequential: 67\nPASS C67 closing source checks clean: 3\nPASS C68 budget: declared wall/RSS limits and prospective complete stdout under 6000\nstdout characters before trailer: 4555\nTOTAL: PASS=69 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T031738Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

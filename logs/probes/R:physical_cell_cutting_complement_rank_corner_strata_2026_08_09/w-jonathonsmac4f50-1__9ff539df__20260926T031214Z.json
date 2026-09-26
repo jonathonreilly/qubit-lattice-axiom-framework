@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_complement_rank_corner_strata_2026_08_09",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_complement_rank_corner_strata_2026_08_09.py",
+ "seed": 92334,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T031214Z",
+ "elapsed_s": 137.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d0a74f6f81d9cd60e30370b07b6df286c21585430bce4c917e52b3d0f0b1f671",
+ "stdout_tail": "gnostic: 8 drop parts have least short subset size 2; size-1 count 0\nPASS C38 component diagnostic: 3 additional parts have least short subset size 2 and quartet allowance; d/m/mc 3/1/3 4/2/1 8/4/2\nPASS C39 the other prime gives the same size on every part: 15 compared, 0 differ, 30 short sub-sums at those sizes\nPASS C40 all 96 orbit tables sum entrywise to the all-ones matrix of rank 1\nPASS C41 all 96 orbit tables have two ones per row and column; exceptions 0\nPASS C42 complement exact ranks: quartet 105, singleton 144, pairs 72,93,117,129,144,144\nPASS C43 endpoint exact ranks: empty 0, full 1\nPASS C44 all 192 used pieces have five corners; distinct-pair overlap maximum 4\nPASS C45 corner profile recomputed on 36864 cells; varying orbit count 0\nPASS C46 corner profile has 25 strata with size histogram 2:12 4:7 6:4 8:1 12:1\nPASS C47 body profile has 83 values, refines corner profile, and marks 4 incidences\nPASS C48 the 25 exact stratum ranks have maximum 143; incidence stratum rank 105\nPASS C49 cover stabilizer order 2, fixed blocks 0, partner pairs 4\nPASS C50 the four partner-pair corner overlaps are 2 2 2 2\nPASS C51 unique least incidence-pair exact rank 72; next exact rank 93\nPASS C52 gate labels form one strict sequence of 53 with no gap and no repeat\nPASS C53 closing source check: 3 further barred pairs absent, no barred digit pair, the single-word use kept out\nPASS C54 closing resource measurements are inside declared limits\nstdout characters: 5751\nTOTAL: PASS=55 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T031432Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

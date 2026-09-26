@@ -1,0 +1,34 @@
+{
+ "task": "R:physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_charge_space_cycle736_independent_check_2026_08_05.py",
+ "seed": 92314,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T031154Z",
+ "elapsed_s": 20.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8a9674adea30619362cf448647f3d3ed1cec03b0e432d0ce87a1b8f7a3dc9c56",
+ "stdout_tail": "plied finite model and geometric population\nPASS finite universe  2672 unit simplices, 400 minimum-cost candidates, and collision-free samples\nPASS exact-cover geometry  15800 covers form 391 geometric orbits with 107916 exact pair certificates\nPASS exchange census  all unordered pairs reproduce the seven size counts and six exchange counts\nPASS response spans  ranks=[85, 86, 86, 87, 87, 87], affine=[86, 86, 86, 87, 87, 87], reversal={4: True, 6: False, 7: False, 8: False, 9: False, 10: False}, odd=[None, 7, 5, 5, 7, 5], multi=[([4], 2), ([4, 6], 2), ([4, 7], 2)], lattice=True\nPASS charge functions  the 107-dimensional weight space induces exactly eight rank-three charges\nPASS component and symmetry identity  the four-keeping charge is exactly the 24-by-236 component-orbit indicator\nPASS hostile sample-only cover rejected  sample-disjoint simplices can overlap, so exact geometric separation is necessary\nPASS hostile exchange mutation rejected  a local exchange-bit mutation changes the certified smallest-move response space\nPASS hostile source mutation rejected  the checker source binding rejects a local primary semantic mutation\nPASS hostile upstream mutation rejected  a terminal dependency hash mutation invalidates the positive receipt contract\nPASS hostile failed verdict rejected  a failed generated verdict cannot satisfy the independent acceptance predicate\nPASS receipt summary  generated primary receipt matches the independent finite reconstruction\n\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T031214Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

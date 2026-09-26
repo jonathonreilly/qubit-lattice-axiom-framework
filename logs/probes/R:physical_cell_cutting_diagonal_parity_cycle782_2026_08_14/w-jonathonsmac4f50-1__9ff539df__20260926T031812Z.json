@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_cell_cutting_diagonal_parity_cycle782_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_diagonal_parity_cycle782_2026_08_14.py",
+ "seed": 92692,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9ff539df",
+ "started_utc": "20260926T031812Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "bb3159ce4551fd4a7fffb1c4a24d171c61efac3c07f86f5851e56ca667f533f4",
+ "stdout_tail": "t, axis 3 within the first 2 steps, the weight parity of phi equals that of the label, failures 0 of 96\nPASS K7 certificate shape: the five clause cells are pairwise disjoint of sizes 6, 6, 2, 4, 2, total 20 chambers, even parity yes\nPASS K8 certificate law: the parity of the certificate count on a piece equals its odd-diagonal half-set value, failures 0 of 192, support 48\nPASS K9 evenness: every cutting holds an even number of odd-diagonal half-set pieces, failures 0 of 15800\nPASS K10 theorem: the odd-diagonal count sums n_w over labels 1, 2, 4, 7; modulo 4 it is 2 times the odd count and is 0, failures 0 of 15800\nPASS K11 control one: dropping 1 chamber from the certificate breaks the piece parity at exactly 8 pieces, its holders, match yes\nPASS K12 control two: replacing the 6 of the local law by 4 breaks the rule at exactly 96 pairs, the q class, of the 1536\nPASS K13 naming invariance: the second of the 384 namings, 2 per piece, by complement and reversal, gives the same 192 odd values, failures 0\nPASS K14 coupling: the sum of q_w over the four odd labels equals the odd-diagonal half-set count of the cutting, failures 0 of 15800\ncensus: odd-diagonal half-set count over the 15800 cuttings 0:472 2:1848 4:3384 6:4392 8:3384 10:1848 12:472, sum 15800\ncensus: odd-diagonal count over the 15800 cuttings 0:112 4:1176 8:3936 12:5352 16:3936 20:1176 24:112, sum 15800\nresource: under 60 s of the 120 s budget, under 250 MB of the 2500 MB budget, 2155 characters\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T031820Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

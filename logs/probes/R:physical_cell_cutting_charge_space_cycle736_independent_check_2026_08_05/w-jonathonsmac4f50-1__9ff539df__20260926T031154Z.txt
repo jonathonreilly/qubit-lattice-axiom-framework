@@ -1,0 +1,16 @@
+PASS receipt contract  the positive verdict and every declared primary input are content-bound
+PASS upstream geometric contract  Cycle 733 independently binds the supplied finite model and geometric population
+PASS finite universe  2672 unit simplices, 400 minimum-cost candidates, and collision-free samples
+PASS exact-cover geometry  15800 covers form 391 geometric orbits with 107916 exact pair certificates
+PASS exchange census  all unordered pairs reproduce the seven size counts and six exchange counts
+PASS response spans  ranks=[85, 86, 86, 87, 87, 87], affine=[86, 86, 86, 87, 87, 87], reversal={4: True, 6: False, 7: False, 8: False, 9: False, 10: False}, odd=[None, 7, 5, 5, 7, 5], multi=[([4], 2), ([4, 6], 2), ([4, 7], 2)], lattice=True
+PASS charge functions  the 107-dimensional weight space induces exactly eight rank-three charges
+PASS component and symmetry identity  the four-keeping charge is exactly the 24-by-236 component-orbit indicator
+PASS hostile sample-only cover rejected  sample-disjoint simplices can overlap, so exact geometric separation is necessary
+PASS hostile exchange mutation rejected  a local exchange-bit mutation changes the certified smallest-move response space
+PASS hostile source mutation rejected  the checker source binding rejects a local primary semantic mutation
+PASS hostile upstream mutation rejected  a terminal dependency hash mutation invalidates the positive receipt contract
+PASS hostile failed verdict rejected  a failed generated verdict cannot satisfy the independent acceptance predicate
+PASS receipt summary  generated primary receipt matches the independent finite reconstruction
+
+TOTAL: PASS=14 FAIL=0

@@ -1,6 +1,6 @@
 {
- "edge_count": 15152,
- "node_count": 6778,
+ "edge_count": 15155,
+ "node_count": 6779,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3885,6 +3885,10 @@
   "cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cubic_original_record_response_at_fixed_couplings_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "07d414bbf386",
+   "out_degree": 3
   },
   "cubic_repulsive_flux_fixed_half_and_canonical_twists_bounded_theorem_note_2026-09-04": {
    "deps_hash": "e3b0c44298fc",

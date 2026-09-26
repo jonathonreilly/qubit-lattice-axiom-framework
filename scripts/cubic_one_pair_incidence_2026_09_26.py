@@ -143,4 +143,3 @@ class Torus:
             out[k_out] += 1
             routes[k_out].append(d)
         return out, routes
-

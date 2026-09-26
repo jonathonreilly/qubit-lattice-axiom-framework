@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk and block 78's one record per site, two records of either exchange sign on Z^2 or Z^3, with any bounded hermitian translation-invariant interaction acting within a fixed relative distance and any placement in block 143's class (the member's density plus a bounded finite-range one-body change, with a bounded remainder of finite relative support), all as landed on main: the total energy current J' = i[H', D'] is not conserved, [H', J'] != 0, so no such interaction and placement keeps the books. Proof in the fibers of total wave vector K near block 143's K0: (i) a kept current forces the one-body placement current to vanish, since a multiplication operator of finite rank is zero; (ii) the resolvent identity [g, T(z)] = (h0 - z)[F2, R''(z)](h0 - z) and the spectral theorem make the on-shell T-matrix vanish at almost every energy, by block 143 T1; (iii) the determinant identity det(1 + AB) = det(1 + BA) then makes the perturbation determinant real on the continuum; (iv) bounded spectral densities, from block 143 T6, put Delta - 1 in H^2 of both half-planes, whose boundary values meet only in zero, so Delta = 1; (v) the removed on-site states make Delta vanish at their energy, a contradiction. This proves block 143's deferred conclusion within that class, without its scattering hypotheses. Found by probe #9251 (Claude Opus 5.5, the supervisor's own model family), line-checked by the supervisor, with an independent exact runner for the algebraic steps; the analytic steps rest on named standard theorems. Not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk and block 78's one record per site, two records of either exchange sign on Z^2 or Z^3, with any bounded hermitian translation-invariant interaction acting within a fixed relative distance and any placement in block 143's class (the member's density plus a bounded finite-range one-body change, with a bounded remainder of finite relative support), all as landed on main: the total energy current J' = i[H', D'] is not conserved, [H', J'] != 0, so no such interaction and placement keeps the books. Proof in the fibers of total wave vector K near block 143's K0: (i) a kept current forces the one-body placement current to vanish, since a multiplication operator of finite rank is zero; (ii) the resolvent identity [g, T(z)] = (h0 - z)[F2, R''(z)](h0 - z) and the spectral theorem make the on-shell T-matrix vanish at almost every energy, by block 143 T1; (iii) the determinant identity det(1 + AB) = det(1 + BA) then makes the perturbation determinant real on the continuum; (iv) bounded spectral densities, from block 143 T6, put Delta - 1 in H^2 of both half-planes, whose boundary values meet only in zero, so Delta = 1; (v) the removed on-site states make Delta vanish at their energy, a contradiction. (T2) The same holds for any number N >= 2 of records and any finite-range interaction of any body number: separating all but two records reduces a kept current exactly to the pair's, since a free record keeps its own current. This proves block 143's deferred conclusion within that class, without its scattering hypotheses. Found by probe #9251 (Claude Opus 5.5, the supervisor's own model family), line-checked by the supervisor, with an independent exact runner for the algebraic steps; the analytic steps rest on named standard theorems. Not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_2026_09_26.py
@@ -30,6 +30,8 @@ Block 137 (landed) found that under one record per site, two records keep their 
   - the pair then scatters nothing on almost every energy shell;
   - the perturbation determinant is then real on the continuum, and a complex-analysis argument makes it identically one;
   - but the removed on-site states make it vanish at their own energy.
+
+- **Any number of records.** The same holds for any number of records, `N ≥ 2`, and any finite-range interaction of any body number (T2). Move all but two records far apart; a free record keeps its own current, so a kept current for all `N` would be a kept current for the pair.
 
 In plain terms: the books need the pair's total energy current to stay constant. When two records meet, the current can change unless the collision does nothing at all, exactly, on every energy shell. A collision that does nothing leaves a certain determinant equal to one everywhere. But one record per site deletes the coincident states, and deleting states always leaves a zero in that determinant. So a pair of excluded records always scatters in a way that changes its energy current, whatever short-range force acts between them.
 
@@ -100,6 +102,17 @@ In plain terms: the books need the pair's total energy current to stay constant.
 - **S6. `Δ = 1`.** `Δ − 1` is a sum of products of `k ≤ r` entries of `WQ₀`. Each entry lies in `H^{2r}`, so each product lies in `H^{2r/k}`, is locally square-integrable on lines parallel to the real axis uniformly, and is `O(|z|^{−k})` at infinity. So `Δ − 1 ∈ H²` of the upper half-plane, and by `Δ(z̄) = conj Δ(z)` also of the lower one. By S4 the two boundary functions agree almost everywhere. The boundary values of the two `H²` spaces meet only in zero (Premises), so `Δ = 1` on both half-planes, and by analyticity on the whole complement of the spectrum of `h₀`.
 - **S7. The contradiction.** `λ` lies outside the spectrum of `h₀`, and `h″Π₀ = λΠ₀` with `Π₀ ≠ 0` (T4). Since `h″ − λ = (h₀ − λ)(1 + R₀(λ)F₁)`, the factor `1 + R₀(λ)F₁` is not injective, so `Δ(λ) = det(1 + R₀(λ)F₁) = 0` (the determinant identity; runner H1). This contradicts `Δ = 1`. So `[h″(K), j″(K)] ≠ 0` for almost every `K ∈ U`, and `[H′, J′] ≠ 0`. ∎
 
+## Theorem T2 — any number of records
+
+*Statement.* Take `N ≥ 2` records under one record per site on `ℤ²` or `ℤ³`, either exchange sign, with a bounded hermitian translation-invariant interaction of finite range, of any body number, and a placement whose one- and two-record parts are in block 143's class. Then `[H_N, J_N] ≠ 0`.
+
+*Proof.*
+- **One record.** If the one-body placement change makes a single record lose its current, `[H_1, J_1] ≠ 0`. Records placed far apart then give `[H_N, J_N] ≠ 0` directly, by the reduction below with every cluster a single record. Otherwise `[H_1, J_1] = 0`, as for the free record (block 140 T1).
+- **Clusters.** Take two-record states `ψ, ψ′` and one-record states `φ_m, φ′_m` (`m = 3, …, N`), all of finite support in position space, and translate record `m` by `a_m`. Once the translated supports lie farther apart than the interaction's range plus the hop, every term coupling different clusters acts as zero on these states: the commutator's cross terms, the exclusion between clusters, and the exchange overlaps between different assignments of records to clusters. So, exactly,
+  `⟨Ψ_a, [H_N, J_N] Ψ′_a⟩ = ⟨ψ, [H₂, J₂] ψ′⟩ Π_m ⟨φ_m, φ′_m⟩ + Σ_m ⟨φ_m, [H₁, J₁] φ′_m⟩ (…)`,
+  where `H₂`, `J₂` are the pair's generator and current, built from the two-record parts of the interaction and placement. The same holds for exchange-symmetrized states, term by term.
+- **Contradiction.** If `[H_N, J_N] = 0`, the left side vanishes. With `[H₁, J₁] = 0` and `φ′_m = φ_m` normalized, `⟨ψ, [H₂, J₂] ψ′⟩ = 0` for a dense set of `ψ, ψ′`, so `[H₂, J₂] = 0`. This contradicts the theorem above. The step that commutators of sums over separated clusters are sums of cluster commutators is runner I1. ∎
+
 ## Consistency
 
 - **The line.** On `ℤ` each shell is two points carrying one value of `g` (block 143 T4). S3's density step has nothing to act on, which matches block 137's kept current on the infinite line.
@@ -116,7 +129,7 @@ target_blocker_text: "block 143 (landed): the unrestricted local-interaction no-
 source_of_blocker_text: block 143's landed claim scope (25b8c1874f); the landing review record unit-29
 reachability_to_target: advances
 artifact_role: theorem
-next_trace_action: "more than two records; exponentially decaying interactions (determinants of trace-class perturbations); the long-range pull with exclusion; an other-family referee"
+next_trace_action: "exponentially decaying interactions (determinants of trace-class perturbations); the long-range pull with exclusion; what the member sees when the books fail; an other-family referee"
 conditional_surface_status: "two records; bounded interactions of finite relative range; placements in block 143's class; K near K0"
 hypothetical_axiom_status: "the walk, one record per site, the interaction and the placement are supplied; nothing adopted"
 admitted_observation_status: null
@@ -144,7 +157,8 @@ Target: `[h′(K), j′(K)] ≠ 0` for almost every `K` in a neighbourhood of `K
 - (O4) the determinant's reality (S4: proved here, runner D1);
 - (O5) bounded spectral densities near `K₀` (S5: proved here from block 143 T6, the coarea formula and the quadratic normal form);
 - (O6) `Δ = 1` (S6: proved here from the `H^p` bound on transforms, products of `H^p` functions, and the uniqueness of `H²` boundary values);
-- (O7) `Δ(λ) = 0` at the removed states (S7: block 143 T4, runner H1).
+- (O7) `Δ(λ) = 0` at the removed states (S7: block 143 T4, runner H1);
+- (O8) the reduction from `N` records to the pair (T2: proved here; runner I1 for the commutator of cluster sums).
 
 The strongest step not checked by a runner is O5, the volume bounds near cones and stationary points; it is proved in the text.
 
@@ -160,8 +174,9 @@ Attack routes, each tested here:
 4. *The determinant has a zero or pole where no bound applies.* It lies in `H²` of both half-planes with equal boundary values, so it is one (S4–S6; runner D1). ATTEMPTED.
 5. *The removed states are not seen by the determinant.* They are exact eigenvalues of the extended generator off the spectrum, so they are zeros of `Δ` (S7; runner H1). ATTEMPTED.
 6. *The line escapes.* It does, and the note says so: the shells are two points with one value of `g` (Consistency). ATTEMPTED.
+7. *Many records compensate the pair.* Separating all but two records reduces a kept current exactly to the pair's (T2; runner I1). ATTEMPTED.
 
-Scope left open: interactions of infinite range (including exponentially decaying ones, which need determinants of trace-class perturbations); placements whose currents are not of finite rank off the free one; more than two records; the long-range pull with exclusion.
+Scope left open: interactions of infinite range (including exponentially decaying ones, which need determinants of trace-class perturbations); placements whose currents are not of finite rank off the free one; the long-range pull with exclusion.
 
 ### N2 — Wall-independence audit
 No no-go wall of the repository is used. The inputs are block 143's exact T1, T4 and T6.
@@ -207,7 +222,7 @@ No registered primitive is used; nothing is proposed for registration. Partial r
 
 ## Boundaries and non-claims
 
-- Two records; bounded interactions of finite relative range; placements in block 143's class. Infinite-range interactions, non-local placements and more than two records are not covered.
+- Bounded interactions of finite range; placements in block 143's class; any number of records (T2). Infinite-range interactions and non-local placements are not covered.
 - Not refereed by another model family.
 - No gravitational claim is made.
 
@@ -222,7 +237,8 @@ No registered primitive is used; nothing is proposed for registration. Partial r
 - **Provenance.** The proof is probe #9251's (Claude Opus 5.5 worker `w-macbookpro9927a-j84a4`, the supervisor's own model family). The supervisor read every step (S0–S7) against block 143's landed text, reran the probe's exact checker (7/7), and wrote this note's runner independently. No other model family has refereed it.
 - **Before writing.** The own prior-art check (memory, open PRs, probes attempts, main) found block 143's deferred bridge, #9249 (the long-range pull without exclusion) and no other attempt at the unrestricted no-go.
 - **Line-check notes.** S3 needs the shell components to be analytic, which holds for almost every energy since the cones and stationary values are finitely many near `K₀`. S4's `X = 0` uses that `Γ^{1/2}` is invertible on the range of `Γ`. S6's `H²` membership uses the uniform local `L²` bounds and the `O(|z|^{−k})` decay together.
-- **Independence.** Mutation census: one mutation per science family (B, C, D, E, H), each failing in its own family, and two in family F.
+- **After the first push (2026-09-26).** T2, the reduction from any number of records to the pair, was added by the supervisor, with runner I1.
+- **Independence.** Mutation census: one mutation per science family (B, C, D, E, H, I), each failing in its own family, and two in family F.
 
 ## Verification
 
@@ -230,4 +246,4 @@ No registered primitive is used; nothing is proposed for registration. Partial r
 PYTHONPATH=scripts python3 scripts/admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_2026_09_26.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

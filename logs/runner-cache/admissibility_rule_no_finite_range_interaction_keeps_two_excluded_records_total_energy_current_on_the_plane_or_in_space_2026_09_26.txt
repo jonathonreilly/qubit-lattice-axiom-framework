@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_2026_09_26.py
-runner_sha256: 31ede305e91c58eb98e1c7e703b0c701534a1e543564e2562b9145b81d977298
-input_fingerprint_sha256: 7019c73d68d4159870f6f860dee6dfe68e5614ccb1805a6939905065af331da8
+runner_sha256: 2c0f09543e030d55a39ff000b5268e2ba029d11a1fa8edfbfeb84311f299b215
+input_fingerprint_sha256: 50a584495e51515f6fb87d3d73829d125df0c79dff348d444cd66dcdd95cb5d5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.99
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -18,6 +18,7 @@ PASS: C1 exact finite model (6 states, rank-2 F1, j'' a function of h'', [h0, g]
 PASS: D1 T = A W (1 + Q0 W)^-1 A* with Q0 = A* R0 A; det(1 + W Q0) det(1 - W Q'') = 1; Delta(conj z) = conj Delta(z); and det(1 + W(Q - c Gamma)) = det(1 + W Q) det(1 - c B* M B) for Gamma = B B* and M = W(1 + Q W)^-1, identically in c
 PASS: E1 block 143's inputs recomputed: T1's minor dg1/dq1 = -2002/7225 with dE/dq2 nonzero for all four band pairs; T6's cone tilts 139761000/606502321 (plane) and 2653455542/8714332815 (space), both below one
 PASS: H1 a removed state placed at lambda = 3, outside the free spectrum of a five-site chain: Delta(z) = det(1 + R0(z) F1) = det(h'' - z)/det(h0 - z) at three complex z, and Delta(lambda) = 0
+PASS: I1 separated clusters: [A (x) 1 + 1 (x) B, C (x) 1 + 1 (x) D] = [A, C] (x) 1 + 1 (x) [B, D] (symbolic 3 x 3 and 2 x 2 blocks), so with every cross term acting as zero a kept current for N records is a kept current for each cluster
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -25,11 +26,11 @@ PASS: F4 the authors' names appear only under Prior art, Imports, the Premises a
 per_element: executed - the one-record double-commutator identity and the two-record partial trace (the one-body lemma)
 per_site: executed - the resolvent identity and its shell sandwich in an exact six-state model with a kept current
 per_mode: executed - push-through, the determinant product, the determinant identity with Gamma = B B*, and conjugation
-per_block: executed - block 143's T1 minor and T6 cone tilts recomputed; the removed state's zero of the determinant on a chain
+per_block: executed - block 143's T1 minor and T6 cone tilts recomputed; the removed state's zero of the determinant on a chain; the cluster reduction
 lattice_wide: checked and not executed - the density, boundary-value and H^2 steps on the torus are proved in the note from named theorems
 PASS: G1 the five N5 resolution lines are printed
-scope: two records of the walk under one record per site, on the plane or in space, either exchange sign; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted
-TOTAL: PASS=13 FAIL=0
+scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

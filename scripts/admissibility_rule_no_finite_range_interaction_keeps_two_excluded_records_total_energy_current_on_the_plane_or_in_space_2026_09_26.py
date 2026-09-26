@@ -13,6 +13,7 @@ C (the resolvent identity): the operator identity and its shell sandwich, in an 
 D (the determinant): push-through, the determinant product, the determinant identity with Gamma = B B*, and conjugation.
 E (block 143's inputs): T1's minor at its rational point and T6's cone tilts, recomputed.
 H (the removed states): Delta(z) = det(h'' - z)/det(h0 - z) and Delta(lambda) = 0 when a state is placed at lambda.
+I (any number of records): commutators of sums over separated clusters are sums of cluster commutators.
 Exact rational, Gaussian-rational and symbolic arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -47,6 +48,7 @@ MUTATION_GATE = {
     "determinant_weight_dropped": "D",
     "cone_tilt_forged": "E",
     "removed_state_restored": "H",
+    "cluster_cross_term_kept": "I",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -249,6 +251,22 @@ def family_h(checks: Checks) -> None:
                  "a removed state placed at lambda = 3, outside the free spectrum of a five-site chain: Delta(z) = det(1 + R0(z) F1) = det(h'' - z)/det(h0 - z) at three complex z, and Delta(lambda) = 0")
 
 
+# ============================================================================================ family I
+def family_i(checks: Checks) -> None:
+    # two separated clusters: H = A (x) 1 + 1 (x) B and J = C (x) 1 + 1 (x) D give [H, J] = [A, C] (x) 1 + 1 (x) [B, D]
+    a = sp.Matrix(3, 3, sp.symbols("a0:9")); b = sp.Matrix(2, 2, sp.symbols("b0:4"))
+    c = sp.Matrix(3, 3, sp.symbols("c0:9")); d = sp.Matrix(2, 2, sp.symbols("d0:4"))
+    k = sp.kronecker_product
+    Hs = k(a, sp.eye(2)) + k(sp.eye(3), b)
+    Js = k(c, sp.eye(2)) + k(sp.eye(3), d)
+    if mut("cluster_cross_term_kept"):
+        Js = Js + k(sp.eye(3), sp.eye(2)) * 0 + k(c, d)
+    lhs = Hs * Js - Js * Hs
+    rhs = k(a * c - c * a, sp.eye(2)) + k(sp.eye(3), b * d - d * b)
+    checks.check("I1", sp.expand(lhs - rhs) == sp.zeros(6, 6),
+                 "separated clusters: [A (x) 1 + 1 (x) B, C (x) 1 + 1 (x) D] = [A, C] (x) 1 + 1 (x) [B, D] (symbolic 3 x 3 and 2 x 2 blocks), so with every cross term acting as zero a kept current for N records is a kept current for each cluster")
+
+
 # ============================================================================================ family F
 FENCES = (
     "This note works within blocks 54, 78, 121, 137, 140 and 143 as landed on main (the walk, one record per site, the exclusion's compression, the placement class, the two-step momentum and the shell geometry); it proves that no finite-range interaction keeps two excluded records' total energy current on the plane or in space; nothing is adopted and no gravitational claim is made.",
@@ -302,7 +320,7 @@ N5_LINES = (
     "per_element: executed - the one-record double-commutator identity and the two-record partial trace (the one-body lemma)",
     "per_site: executed - the resolvent identity and its shell sandwich in an exact six-state model with a kept current",
     "per_mode: executed - push-through, the determinant product, the determinant identity with Gamma = B B*, and conjugation",
-    "per_block: executed - block 143's T1 minor and T6 cone tilts recomputed; the removed state's zero of the determinant on a chain",
+    "per_block: executed - block 143's T1 minor and T6 cone tilts recomputed; the removed state's zero of the determinant on a chain; the cluster reduction",
     "lattice_wide: checked and not executed - the density, boundary-value and H^2 steps on the torus are proved in the note from named theorems",
 )
 
@@ -335,12 +353,13 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_h(checks)
+    family_i(checks)
     family_f(checks, texts[0])
     family_g(checks)
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: two records of the walk under one record per site, on the plane or in space, either exchange sign; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted")
+    print("scope: two records of the walk under one record per site, on the plane or in space, either exchange sign, and by reduction any number of records; any bounded hermitian translation-invariant interaction of finite relative range and any placement in block 143 class; the total energy current is not conserved; algebraic steps checked here, analytic steps proved in the note; a harvest of probe 9251 (same family), line-checked by the supervisor, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

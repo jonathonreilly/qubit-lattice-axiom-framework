@@ -147,3 +147,4 @@ Current source review found five further P2 groups, corrected in the canonical n
 ## 2026-09-26 campaign, late update 4
 - **Blocks 166–168** (843d923cb1, 6116fb6362, 448c6fc06f), all harvests confirmed by Grok. PRs are held; bodies are in `pr_bodies/block166.md`–`block168.md`. Held branches are now 156–168.
 - **Referee results:** #9331 confirms block 147 T3 as landed. #9333 (same family) awaits a referee. #9318 still awaits Grok.
+- **Block 169** (c7c16c791e; harvest of #9158 with #9325; PR held; body in `pr_bodies/block169.md`). Held branches are now 156–169.

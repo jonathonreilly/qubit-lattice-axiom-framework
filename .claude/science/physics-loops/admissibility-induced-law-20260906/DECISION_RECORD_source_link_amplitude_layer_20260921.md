@@ -1231,3 +1231,15 @@ Nothing is adopted.
 - #9318 (block 162's open case) still awaits Grok.
 
 **Pacing.** #9285, #9287 and #9289 are open. Blocks 156–168 are held as branches, with PR bodies in `pr_bodies/`.
+
+## Fifty-sixth addendum (2026-09-26, campaign): block 169, a lagging clock
+
+Nothing is adopted.
+
+Block 169 (c7c16c791e) is a harvest of #9158, confirmed by #9325 (Grok). Block 95 (landed) states that delayed clocks are absent. Here the clock field relaxes towards the records at a rate `Γ`, under a supplied clause.
+- Given A1, block 95's pair law survives at first order, with the coupling scaled by `γ = 2Γ/(2Γ + 1)`.
+- Given A0, no stationary law is of product form or reversible at finite `Γ`.
+- A0 (well-posedness) and A1 (differentiability at `λ = 0`) are stated, not proved.
+- The separation of two records still jumps as the simple random walk off the origin, so the lag acts only through sojourn times.
+
+The remaining Grok-confirmed candidates are #8853/#9215 with #8977/#9320 (bond–coin ties at reach 1–2; heavy ranks) and #9189 with #9317 (the owner's mobile-record lane).

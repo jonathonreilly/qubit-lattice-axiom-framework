@@ -994,3 +994,84 @@ Block 150 T1 ties this to addendum 39's reading question on relabellings in time
   - with no relabellings in time, there are five.
 
   So the uniqueness does not need every clock profile to be a relabelling. The reading that keeps free walkers exact (only uniform profiles) also forces the comparator's cubic vertex at leading order.
+
+## Forty-fifth addendum (2026-09-26, campaign): the owner's second question, restated by landed results
+
+Nothing is adopted. This synthesis adds no new science; every entry points to its block.
+
+**The question as posed** (addendum 43). When colliding records lose two-step momentum, where does it go? Either nowhere, so the member sees the books only order by order, or into the lattice, so the member is a momentum reservoir.
+
+**What the landed and pushed results say.**
+- **Nothing is lost.** Near the corners, crystal momentum is conserved exactly in every collision and every corner channel (block 152 T1(b), landed). The records themselves keep it.
+- **What changes is the member's source.** The member's identity makes its momentum source the energy current (block 136, landed). At zero transfer that current's band value is the energy times the velocity, `sin k_j cos k_j` for the walk, whatever the placement (block 154 T1, PR #9287). It differs from crystal momentum `δ_j` by `−(2/3)δ_j³ + …`.
+- **So the member cannot track the kept momentum.** Crystal momentum is not the energy current, so a member sourced by it would break its own identity. There is also no local density for it: a trigonometric symbol equal to `δ` on an open set would equal it everywhere, which periodicity forbids. The same argument excludes any real-analytic symbol, and hence any density with exponentially decaying range.
+
+**The question restated.** May the member's momentum constraint be sourced by a quantity that the records do not conserve, so that the member is consistent only order by order, through second order? This is the owner's first question again (addendum 44). Records under neighbour hops give exactly third order.
+
+## Forty-sixth addendum (2026-09-26, campaign): a panel after blocks 150–157; the next programme
+
+Nothing is adopted. **Provenance:** three lenses, all Claude Fable 5.1 subagents (the same vendor family as the supervisor, so not referees): strategy with a rigour hawk; lattice gauge theory and discretized gravitation; many-body and kinetic theory. The dossier is scratch `panel_dossier_0926b.md`. The options were:
+- **L**, A1's lattice lift;
+- **T**, the tie to the walker's coupling at second order;
+- **W**, the walker's clock defect under placements;
+- **G**, the record gas;
+- **H**, harvest and hold.
+
+**1. Verdicts.**
+- Strategy: T, on the supervisor; L with the probes; the referee to be pointed at block 157.
+- Lattice: T now. L is an order-of-failure measurement. Its prediction is that the connection-free framed walk fails at second order in the strains, and that a coin-rotation field on bonds restores it.
+- Kinetic: G, re-scoped to one short block, then L. Crystal momentum is conserved exactly, and the member's source differs from it by at most a cubic in the offsets, so the drift is bounded, not secular.
+
+**2. Rigour findings (to act on).**
+- Block 157's uniform-reading count should be reproduced by the other family. Log it as structure forced by relabelling consistency, not as something that comes from records.
+- The sea result (block 155, probe #9198) uses the connection-free coupling, which T tests.
+- Block 154 names its quantity: the momentum the member sees (the energy current).
+- The kinetic lens's claim that slow pairs scatter into the lower band contradicts block 152 T1(d) (landed): that channel is closed below pair energy `√2/2`. Its threshold caveat, a two-body state at zero energy at `K = 0` without the sea, matches the supervisor's own observation (probes refill y).
+
+**3. Decisions (the supervisor's execution choices).**
+- G's short block first: the bound on the member's source for all time (exact, from block 152 T1).
+- Then T. Its first step validates the machinery: the comparator's own coupling must pass the relabelling test. Only then is the framed walk's residual recorded.
+- Pre-registered from the lattice lens, all as exact coefficients:
+  - some local coin rotation removes the residual: no new field is needed;
+  - the residual lies in the spin channel: a coin-rotation field on bonds is forced;
+  - the residual lies outside the spin channel: no connection fixes it, and T records the order and structure and stops.
+- L stays with the probes (refill y). W stays with the probes (refill w).
+
+## Forty-seventh addendum (2026-09-26, campaign): the drift bound; programme T answered; the afternoon's probe harvest
+
+Nothing is adopted.
+
+**1. G, the short item, as a lemma** (the supervisor's; exact; not a separate note).
+- For records near the corners with small offsets, the offsets' sum `Σ_r δ_r` is conserved exactly in every collision (block 152 T1(b), landed).
+- Per record and axis, the member's source at zero transfer is `½ sin 2δ` (block 154 T1, PR #9287).
+- For `δ ≥ 0`, `0 ≤ δ − ½ sin 2δ ≤ (2/3)δ³`.
+- So at every time the member's source lies within `(2/3) Σ_r |δ_r|³` of an exactly conserved total. The drift is bounded by the cube of the offsets. It does not grow with time.
+
+**2. Programme T** (block 158, pushed; the supervisor's own; unrefereed).
+- The walker on the member's lengths keeps the member's spatial relabellings at first order.
+- At order strain times relabelling it misses them by the coin scalar `t = −(1/8)ε_abc(η_ad ∂_b S_cd + S_ad ∂_b η_cd)`.
+- Exactly one local potential with at most one derivative repairs this: `(1/8)ε·C`, the comparator's connection term, built from the lengths.
+
+Against addendum 46's pre-registration:
+- *A local coin rotation removes the residual:* no (block 158 T3(b)).
+- *The residual lies in the spin channel, so a coin-rotation field on bonds is forced:* half right.
+  - The residual is exactly what a connection supplies in three dimensions, the coin scalar `(1/8)ε·C`.
+  - The needed connection is the one the lengths determine, so no independent field is needed at this order.
+- *The residual lies outside the spin channel:* no.
+
+The probes' walker "that sees only `√g`" (flat links fixed by the frame) is therefore not consistent with relabellings at second order. The torsion-free rule for the links, which the probe named as missing, is what supplies `(1/8)ε·C`.
+
+**3. For the owner's question.** Blocks 157 and 158 are structure forced by relabelling consistency, not by records. At leading order in the spacing, the member's next order and the walker's second-order coupling are both the comparator's. Records enter through the source only (addenda 44–45).
+
+**4. Probe harvest, afternoon.**
+- **#9294** (a Grok worker, other family) confirms **#9202**.
+  - A weight-one completion bends like the comparator at second order exactly on a plane of its coefficients (`4A₁ − 2C₁ − 6D₁ = 3` at `σ = 1`).
+  - The curvature member is one of a family of bilinear members that do.
+  - So static bending does not single out the member, while relabelling consistency does (block 157).
+- **#9295** (Grok) confirms **#9210**: the massive free sea's stiffness `κ(m) = ⟨|sin k|²/E⟩/12` is positive for every `m`.
+- **#9299** (Claude Opus 5.5, the same family; unrefereed): the sea's long-wavelength shear response.
+  - It is continuous at `q = 0` with half the uniform form.
+  - Member plus sea lowers its energy under every long enough transverse traceless shear wave, for every `K > 0` (exact).
+  - The `q²` relabelling non-invariance is shown in floating point only.
+  - This extends block 155 (PR #9289) and needs an other-family referee before use.
+- #9296, #9297 and #9301–#9303 are confirms in other lanes.

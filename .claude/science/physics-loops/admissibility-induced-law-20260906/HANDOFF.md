@@ -50,3 +50,19 @@ Current source review found five further P2 groups, corrected in the canonical n
   - the consequences of the landing;
   - A1's leading-order answer, "continue" under addendum 40's table, read on the full sector.
 - **Probes.** Refill x (8 attempts) is pushed. Refill y (A1's lattice lift; the hard core's contact resolvent at zero energy) is pushed after block 157.
+
+## 2026-09-26 campaign, checkpoint 4 (16:50Z)
+- **Programme T answered** (block 158, pushed, 66cdca4b13; PR held by the pacing rule).
+  - The walker on the member's lengths needs exactly one extra term at the order of the member's cubic completion: `(1/8)ε·C`, the comparator's connection term, built from the lengths.
+  - The pre-registered outcomes are mapped in addendum 47.
+- **The drift bound (G)** is recorded as a lemma in addendum 47: the member's source stays within `(2/3)Σ|δ|³` of an exactly conserved total.
+- **Decision record.**
+  - Addendum 45: the owner's second question, restated.
+  - Addendum 46: the afternoon panel.
+  - Addendum 47: the G lemma, programme T, and the probe harvest.
+- **Open PRs:** #9285 (block 153), #9287 (block 154), #9289 (block 155).
+- **Pushed with PR held:** blocks 156, 157 and 158. The commands are in `PR_BACKLOG.md`.
+- **Probe HITs to harvest:**
+  - #9202 with #9294 (Grok): static bending does not single out the member.
+  - #9210 with #9295 (Grok): the massive sea's stiffness is positive for every mass.
+  - #9299 (same family): member plus sea softens under long TT shear waves. It needs a referee.

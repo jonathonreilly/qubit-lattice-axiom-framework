@@ -26,3 +26,9 @@ Opened: #9285 (block 153), #9287 (block 154), #9289 (block 155). Held, three unr
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block156-the-coins-spin-keeps-its-own-books-and-sources-only-the-shift-20260926 --title "[physics-loop] admissibility-induced-law block 156: bounded_theorem bounded-support - the coin's spin keeps its own books on the faces, and a spin-polarised walker at rest sources only the shift" --body-file <pr_body156.md>`
 6. Block 157.
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block157-the-members-cubic-completion-is-the-comparators-at-leading-order-20260926 --title "[physics-loop] admissibility-induced-law block 157: bounded_theorem bounded-support - at leading order the member's cubic completion is unique and the comparator's with all fields, even with only uniform relabellings in time" --body-file <pr_body157.md>`
+
+## 2026-09-26 checkpoint 4
+Still open: #9285 (block 153), #9287 (block 154), #9289 (block 155). Held, in order, behind items 5 and 6 of checkpoint 3 (blocks 156 and 157):
+
+7. Block 158 (own; unrefereed).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block158-the-walker-on-the-members-lengths-needs-the-comparators-inversion-odd-curl-20260926 --title "[physics-loop] admissibility-induced-law block 158: bounded_theorem bounded-support - the walker on the member's lengths keeps relabellings at first order and at the next needs exactly one term, the comparator's inversion-odd curl" --body-file <pr_body158.md>`

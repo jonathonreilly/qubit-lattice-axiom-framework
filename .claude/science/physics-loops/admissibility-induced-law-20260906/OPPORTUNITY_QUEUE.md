@@ -97,3 +97,9 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 2. **A1's next step** (probes, refill y): the exact lattice lift of the comparator's cubic class at range 1–2, and the tie to the walker's coupling.
 3. **The walker's clock defect under placements** (probes, refill w). It matters for free walkers under the reading that every clock profile is a relabelling (addendum 44).
 4. **The hard core near zero energy** (probes, refill y): the threshold behaviour of the contact amplitude, which block 152's landed text leaves open.
+
+## 2026-09-26 refresh at checkpoint 4
+1. **Programme T in time:** the walker's coupling to the lapse and the shift at order strain times relabelling in time, on the lengths' frame with `(1/8)ε·C`.
+2. **The lattice placement of `(1/8)ε·C`** for the eight species. Block 65's twist hop is the first-order lattice form.
+3. **Harvests** of the Grok-confirmed #9202 and #9210, and a referee for #9299.
+4. **Refill z** for the probes: referees for blocks 157 and 158; T in time; the lattice placement.

@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_coins_spin_keeps_its_own_books_on_the_faces_and_a_spin_polarised_walker_at_rest_sources_only_the_shift_2026_09_26.py
+runner_sha256: 25f512d2a3c71755385ee2eeff9a2ef0e2d1b0eb05e9acf827800099fc269f20
+input_fingerprint_sha256: 4e91b36f97ead2a667968b128e87db8c99d4d700b04225b86235cdc5241ea155
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.93
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_COINS_SPIN_KEEPS_ITS_OWN_BOOKS_ON_THE_FACES_AND_A_SPIN_POLARISED_WALKER_AT_REST_SOURCES_ONLY_THE_SHIFT_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_COINS_SPIN_ENTERS_THE_SOURCE_LINK_THROUGH_ITS_CURL_THE_SYMMETRIC_MOMENTUM_IS_THE_TWO_STEP_MOMENTUM_PLUS_HALF_THE_CURL_OF_THE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its densities, the member and the shift are supplied; the memo does not define a time metric)
+PASS: A3 the landed texts carry block 138 T1 and T3 and block 136 T4's shift constraints, as used
+PASS: B1 on the 5^3 torus (2 random Gaussian-rational state(s), 750 site-direction pairs): dS~_l/dt + D(x) - D(x - e_l) = -sum_ij eps_lij (Theta_ij - Theta_ji) with zero residual and all three terms nonzero
+PASS: B2 on the 6^3 torus (1 random Gaussian-rational state(s), 93 site-direction pairs): dS~_l/dt + D(x) - D(x - e_l) = -sum_ij eps_lij (Theta_ij - Theta_ji) with zero residual and all three terms nonzero
+PASS: B3 the same densities reproduce block 138 T1, Q_j - P''_j = (1/2)(curl S~)_j, on a random state of the 5^3 torus
+PASS: B4 the beat identities: (sigma.s') sigma_l - sigma_l (sigma.s) = (s'_l - s_l) + i eps_mln (s_m + s'_m) sigma_n; s_l - s'_l = 2 cos kb_l sin(q_l/2); (s_a + s'_a) cos kb_a = sin 2kb_a cos(q_a/2); the mean of the four body-diagonal cosines is the product of the three
+PASS: C1 a 3^3 box of spin chi = (3/5, 4i/5), n = (0, 24/25, -7/25), at rest in the 6^3 torus: energy density, two-step momentum and every current K vanish at every site, so Theta = 0 and P'' = 0
+PASS: C2 P^B = (1/4)(curl S~) on every bond, nonzero on 144 bonds of 648
+PASS: C3 the total face spin is b(b - 1)^2 n = 12 n at b = 3
+PASS: C4 4 alpha (-Lap) N = wbar P^B is solved exactly with the degree-12 inverse Laplacian of the 6^3 torus, and N equals the lattice vector potential curl (-Lap)^(-1) of the magnetisation wbar S~/(16 alpha) at every bond
+PASS: C5 the static shift has zero lattice divergence, so the longitudinal constraint is P^B_parallel = 0 and the clock is not driven
+PASS: C6 at rest d pi/dt = 0 and dS~/dt = -grad D with zero torque, so the curl of the spin, and with it P^B, is momentarily static
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the coin identity and the beat identities symbolically
+per_site: executed - the balance law at every site and direction of the 5^3 torus on random exact states
+per_mode: executed - P^B = (1/4) curl S~ on every bond of the 6^3 torus for the box at rest
+per_block: executed - the exact inverse Laplacian of the 6^3 torus and the vector potential; the divergence; the momentary rates
+lattice_wide: checked and not executed - every state by proof; T3 on the declared lattice reading of block 136 T4
+PASS: G1 the five N5 resolution lines are printed
+scope: block 54's walk with blocks 120, 136 and 138 as landed; the face spin's balance law for every state; a walker at rest with a real envelope sources only the shift, through P^B = (1/4) curl S~; the static shift is the lattice vector potential of wbar S~/(16 alpha) on the declared reading of block 136 T4; harvest of #9214 confirmed by a Grok referee (#9284); nothing adopted
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1129,6 +1129,10 @@
   "admissibility_rule_the_coins_spin_enters_the_source_link_through_its_curl_the_symmetric_momentum_is_the_two_step_momentum_plus_half_the_curl_of_the_spin_bounded_theorem_note_2026-09-25": {
    "deps_hash": "78e68ea2fd13",
    "out_degree": 7
+  },
+  "admissibility_rule_the_coins_spin_keeps_its_own_books_on_the_faces_and_a_spin_polarised_walker_at_rest_sources_only_the_shift_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_crowd_under_exclusion_also_gains_from_an_alternation_of_the_bond_rates_its_ground_energy_never_rises_the_jam_is_blind_bounded_theorem_note_2026-09-22": {
    "deps_hash": "cc5c0040b8c9",

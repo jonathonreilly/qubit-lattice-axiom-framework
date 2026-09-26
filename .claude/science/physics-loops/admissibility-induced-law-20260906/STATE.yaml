@@ -119,3 +119,11 @@ source_review_correction:
 #   records: ["decision-record addendum 41 2f63e59a25", "probes refill w 7ff50d6e15"]
 #   active_route: "the ledger of exact versus long-wavelength statements (addendum 42); then the member's cubic terms on the lattice"
 #   next_exact_action: "push addendum 42 and this checkpoint; open the member's cubic-consistency computation in the static spatial sector (Fourier symbols, exact linear algebra), time-boxed"
+# checkpoint_2 (2026-09-26T14:05Z):
+#   owner_landed: "blocks 146-149 on main (289ce5c7d0, 'review: land 18 reviewed conditional model results'), scopes narrowed by the owner's review; PRs #9237, #9240, #9241, #9242 closed"
+#   prs_opened: ["#9278 block 150", "#9279 block 151", "#9280 block 152"]
+#   pushed_without_pr: ["block 150 418ddf6f3c (panel corrections)", "block 151 689f00c253 (panel corrections)", "block 152 cd32672e5f (T1(d) channel closure)", "block 153 146e33463e (harvest of #9260)", "block 154 bac6cf79a0 (the order is set by the hops)"]
+#   records: ["decision-record addendum 43 (panel; blocks 152-154)"]
+#   pr_state: "the three PRs conflict with main only in docs/audit/data/citation_graph_manifest.json (derived)"
+#   active_route: "the records' side of the order question is answered under neighbour hops (third order); the walker side stays with the probes (refill w)"
+#   next_exact_action: "layman update; probes refill x; the next block from the queue"

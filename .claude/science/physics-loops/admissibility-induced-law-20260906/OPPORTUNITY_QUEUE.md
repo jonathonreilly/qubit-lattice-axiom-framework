@@ -85,3 +85,9 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **The massive sea's inertia in the zero mode** (refill w; small).
 4. **How far a local placement pushes the walker's clock defect** (refill w).
 5. **Harvests** as probe results arrive; corrections to the open PRs as needed.
+
+## 2026-09-26 refresh at checkpoint 2
+1. **The walker's clock defect under placements** (probes refill w; not yet attempted by any worker). Block 154 shows placements cannot move the records' order. Whether they move the walker's is the other half of the owner's first question.
+2. **Block 153's open items.** The window `1/320 ≤ z < 10⁴⁰` at large `β`; the sphere menu at the neutral scale; a proof of the torus separation lemma.
+3. **Independent checks** of blocks 152–154 (same family unless a referee returns).
+4. **Harvests** as probe results arrive.

@@ -33,3 +33,9 @@ Current source review found five further P2 groups, corrected in the canonical n
   - Block 150: consolidating lemmas; branch `physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926`.
   - Block 151: harvest of probe #9251; branch `physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926`.
 - **Never.** Merge a PR, push to main, or touch the parked statistical-bridge decision.
+
+## 2026-09-26 campaign, checkpoint 2 (14:05Z)
+- **Owner landing.** Blocks 146–149 are on main (289ce5c7d0), with scopes narrowed by the owner's review; their PRs are closed. Read the landed texts before building on them. Blocks 150–154 do not use them.
+- **PRs opened**, oldest first, as the pacing rule allows: #9278 (block 150), #9279 (block 151), #9280 (block 152). They conflict with main only in the derived `citation_graph_manifest.json`.
+- **Pushed without a PR** (the pacing limit is reached): block 153 (harvest of probe #9260: the neutral moving-records law) and block 154 (the order at which records break the books is set by their hops). The commands are in `PR_BACKLOG.md`.
+- **Decision record.** Addendum 43 holds the panel, the trilemma, blocks 152–154 and the three owner questions.

@@ -888,3 +888,74 @@ Nothing is adopted. This is a synthesis of landed and open results, written for 
 - **The exclusion.** Under one record per site, the member's exact books cannot come from the records with any finite-range interaction (151). What the member sees instead, coarse-grained books or something else, is the owner's reading.
 
 **4. Supplied, not derived.** The member's stiffness `K`. The exchange sign (128). The member's form: the curvature member, forced by blindness to the coin's axes (64). The walker's placements `e′` and `P^B`. The volume factor for three lengths (148). The transfer of the walker's response to the member's source (112 T4). The member's cubic terms, the next open item.
+
+## Forty-third addendum (2026-09-26, campaign): a panel after the records-side no-go; the order of the failures
+
+Nothing is adopted. **Provenance:** three lenses, all Claude Fable 5.1 subagents: strategy with a rigour hawk; lattice field theory and kinetic theory; gravitation theory. Fable is not the supervisor's model (Claude Opus 5.5), but it is the same vendor family, so the panel is not an independent referee. The dossier (scratch `panel_dossier_0926.md`) summarised blocks 112, 134–137, 147 and 150–151. It offered five options:
+- **A1**, the member's cubic terms;
+- **K**, coarse-grained books;
+- **S**, a member that needs less;
+- **R**, records that do not scatter;
+- **P**, a pause for the owner's readings.
+
+**1. The trilemma (the supervisor's synthesis of landed results and blocks 150–152).** Three things cannot all hold exactly on the lattice:
+- (i) the member is the curvature member, whose consistency needs exact books (blocks 62, 101, 112; selected by blindness to the coin's axes at leading order, block 64);
+- (ii) records obey one per site, with any finite-range interaction (block 151);
+- (iii) the member's equations hold exactly with the records as source.
+
+Under (ii) the records conserve their energy locally, but neither their energy current nor any local two-step momentum (block 151 T3). The member's lapse needs the first and its shift the second. Each drop has a cost:
+- **Drop (i).** The lane's clock-only member (blocks 53–57, 60) is sourced by energy alone and needs no momentum books, so records under one per site can source it exactly. In block 59's supplied ray model, a member that sources rates only bends rays by half the comparator's value (conditional, as landed).
+- **Drop (ii).** Free walkers keep exact books (134–136, 139).
+- **Drop (iii).** The curvature member couples to records only order by order at long wavelength (item 3 below).
+
+**2. The lenses.**
+- **Ranking.** All three put K first, as a question of order: at which order in the lattice wave number does each side fail, and can finite-range choices raise it? Priors 0.55–0.7. All three put A1 below it:
+  - the gravitation lens: A1's cubic vertex repairs the non-conservation that the field itself causes, while block 151's failure is at zero field, so A1 cannot rescue the source;
+  - the other two: A1's informative output is the order of its own obstruction, and lattice brackets lack an exact product rule. The probes keep A1's scalar sector.
+  - S scored low. The gravitation lens: a curvature member with one global clock behaves like a lattice solid, with a negative-energy dilation and pumped relabelling modes. The kinetic lens: a uniform-lapse-only member still needs the longitudinal books, which the records fail. (Neither lens took up the clock-only rate-field member of item 1; its drop stands as stated.)
+  - R is closed on the plane and in space by block 151.
+- **Rigour findings, applied to the pushed branches.**
+  - Block 151: "keeps the books" is the operator identity, not conservation in every state; and near `K₀` the second record stays off its cones when the first is at one.
+  - Block 150 T5(d): the single-path step now handles sites carrying only on-site blocks.
+  - The time reversal is named. The lens thought `H` odd under `iσ_yK`; it is invariant once `S_a`'s own sign flip is counted.
+  - T5 is scoped against block 112's nearest-neighbour relabellings.
+  - The member–walker cross bracket through the frame response is an open obligation.
+  - Block 147 (from the kinetic lens): one record per site at the free sea's density fills every site, so the records are frozen at exactly zero energy. T2(a) carries to the hard-core records only below full occupancy (pushed, df4a90a84b).
+- **Owner questions** (verbatim in substance):
+  - Is "consistent through second order in the lattice wave number, with computed third-order defects" an acceptable target? Or does the axiom demand exact consistency, in which case blocks 150–151 close the source question and the lane should report?
+  - When colliding records lose two-step momentum, where does it go? Nowhere, so the member sees the books only order by order and stays gauge-like. Or into the lattice, so the member is a momentum reservoir, a solid.
+  - Which content does the member see: the free walker's sea, or records under one per site? At the sea's density they exclude each other.
+
+**3. What was done (block 152, pushed; own derivation, unrefereed).** The panel's first block. Under one record per site, a hard-core collision changes the records' two-step momentum only at third order in their offsets from the corners of the zone, in every corner channel. The lenses' feared first-order loss between different corners does not occur: crystal momentum keeps the offsets' sum exactly. For antisymmetric pairs the hard core's T-matrix is rank one, so the change is nonzero for almost every incoming state, exactly third order.
+
+So both sides now fail first at third order:
+- the walkers' clock rules part from the member's at third order in the lapses' wave numbers (block 150 T5(c));
+- the records' books change at third order in their offsets (block 152).
+
+The variables differ. Whether one effective source term carries both is the next question.
+
+Two further results in block 152 answer the panel's "improvement half" at leading order:
+- **T3(c).** Both exchange signs lose at leading order near one corner. The singlet's kernel is `1/4` and the triplet's `c²/4`, with `c` the cosine of the scattering angle.
+- **T4.** Near one corner, a finite-range interaction meets the pair at leading order only through the coincident states. So it changes the collision rate, not the loss per collision.
+
+Finite range therefore cannot raise the order of the records' failure near one corner.
+
+A later author check added T1(d) (block 152, re-pushed): the walk's dispersion is subadditive. So below pair energy `√2/2` two upper-band records scatter only into the upper band, and both stay within `π/4` of corners. The third-order law therefore covers every collision there, not only those assumed to stay near corners.
+
+**3a. What sets the order (block 154, pushed; own derivation, unrefereed).** The remaining finite-range choices are the placement of the walker's energy and the reach of the records' hops.
+- **The placement does not matter at zero transfer.** Take every placement pair that matches block 112's shift when one lapse is uniform. The momentum's total then has band-diagonal equal to the band's energy times its velocity, `sin k_j cos k_j` for block 54's walk. Placements differ only in terms that vanish at zero transfer or mix the bands (block 143 T2).
+- **The hops set the order.** Take walks `h = Σ_a σ_a f(k_a)` with one light cone and hops of range `R`. The records' momentum equals the offset through order `N − 1` with `N ≤ R + 2`. Neighbour hops force `f = ± sin` and `N = 3`. Range three reaches `N = 5`.
+
+So under the owner's reading, records moving between neighbouring sites, the records' collisions break the member's books at third order, whatever the bookkeeping.
+
+**4. Decisions (the supervisor's execution choices; readings stay with the owner).**
+- The records' side of the order question is answered under the owner's reading: third order. Neither placements nor finite-range interactions change it (blocks 152 T4, 154); only longer hops could.
+- The walker's side stays with the probes (refill w): how far a placement pushes the clock defect. That is a question about the dependence on the transfer, which block 154 leaves open.
+- A1 stays with the probes.
+- The three owner questions go to the next layman update, with the trilemma. The first of them is now sharper. Under neighbour hops, the records' books fail at third order and nothing finite-range raises that. So "exact" would require either free walkers or a member that does not need the books.
+
+**5. Also harvested (block 153, pushed; probe #9260, line-checked by the supervisor, unrefereed).** This answers block 126's open neutral-scale question for the two-valued menu of moving records with vacancies:
+- At the neutral scale the kernel is `1 + tσσ′`.
+- For `z < 1/320` there is no long-range order at any `β`: contents correlate only inside occupied clusters, which are dominated by independent occupation at density `64z`.
+- At large `β` and high density there is long-range order, given the chessboard estimate for laws reflection positive through planes of sites and a torus separation lemma. Both are named standard results, carried as premises.
+- The window between the two statements and the sphere menu are open.

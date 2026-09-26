@@ -105,3 +105,17 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# ---------------------------------------------------------------- campaign 2026-09-26 (12 hours, supervisor; owner's request "keep going, run a 12 hour campaign")
+# campaign_start: "2026-09-26T11:18Z"
+# campaign_deadline: "2026-09-26T23:18Z"
+# mode: campaign; delivery: block (the owner's standing directive: self-contained PRs off main)
+# lock: "scripts/automation_lock.py owner=physics-loop, ttl 13h from 2026-09-26T11:19Z (worktree-local)"
+# pacing: "at most three unrefereed block PRs open (decision-record addendum 40); four open at start (146-149: #9237, #9240, #9241, #9242), so new block branches are pushed without PRs and listed in PR_BACKLOG.md"
+# checkpoint_interval: "60m, and at every artifact"
+# checkpoint_1 (2026-09-26T11:50Z):
+#   pushed_without_pr: ["block 150 57c93101a0 (consolidating lemmas; runner 24/0; census 12/12)", "block 151 185e0dfb69 (harvest of probe #9251; runner 13/0; census 7/7; T2 follow-up staged)"]
+#   corrections_pushed_before_start: ["block 149 35f84904e5", "block 147 bc9ed1b214"]
+#   records: ["decision-record addendum 41 2f63e59a25", "probes refill w 7ff50d6e15"]
+#   active_route: "the ledger of exact versus long-wavelength statements (addendum 42); then the member's cubic terms on the lattice"
+#   next_exact_action: "push addendum 42 and this checkpoint; open the member's cubic-consistency computation in the static spatial sector (Fourier symbols, exact linear algebra), time-boxed"

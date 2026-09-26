@@ -25,3 +25,11 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-26 campaign (12 hours; start 11:18Z, deadline 23:18Z)
+- **Resume surface.** This section, `STATE.yaml`'s campaign block, `OPPORTUNITY_QUEUE.md`'s 2026-09-26 refresh and `PR_BACKLOG.md`.
+- **Pacing.** Blocks 146–149 (#9237, #9240, #9241, #9242) are open and unrefereed, above the limit of three. New blocks are pushed as branches without PRs. When the owner lands any of 146–149, open the backlog PRs oldest first, one per freed slot, with the commands in `PR_BACKLOG.md`.
+- **Pushed so far.**
+  - Block 150: consolidating lemmas; branch `physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926`.
+  - Block 151: harvest of probe #9251; branch `physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926`.
+- **Never.** Merge a PR, push to main, or touch the parked statistical-bridge decision.

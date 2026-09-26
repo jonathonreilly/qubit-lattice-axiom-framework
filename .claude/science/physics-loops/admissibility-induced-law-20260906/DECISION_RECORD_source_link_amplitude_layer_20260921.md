@@ -293,7 +293,6 @@ The owner asked: "are you writing blocks from the opus probe work?" Blocks 95–
 | 94 | Refereed qualifications posted on open PRs | Posted on #8919 (block 103), #8889 (block 100), #8558 (block 48), #8559 (block 49), #8590 (block 60) and #8178 (block 34):<br>- #8919: two records add within 10% iff \|r\|² ≥ 8;<br>- #8889: a sibling confirmation of the record-by-record no-go;<br>- #8558: a body carried by a growing source moves at half the wind;<br>- #8559: a balanced body's reduced push is its own recapture share;<br>- #8590: with block 64's p = 1, unit-free speeds force s = 3 and the sum rule forces c_k < 0;<br>- #8178: absorbed by the owner's landing. | PR comments with the referees' reports | recorded |
 | 95 | The owner's landings of 2026-09-23 (b7d460034a, 61fa847f03, 5efa36e7c3, 6bf62ae06c, c3f8c47a58) | Blocks 34–67 are on main with review changes:<br>- block 54: exact packet force withdrawn; the translation identity is a finite-power identity, and its evolution form is conditional;<br>- block 55: point-force coupling separate from γ; no physical source or exact packet force established; μ = ledger/N;<br>- block 53: its remark about block 50's clock is removed;<br>- block 66: retitled, lattice force at leading order;<br>- block 48: T5 scoped to a constant central source;<br>- block 42: T6 restricted to 0 < 6λ₁ < 1.<br>Rows of this record that cite the PR texts of these blocks (notably rows 1–40 on block 54's packet force) are to be read against the landed versions.<br>Audit of open blocks that lean on the withdrawn readings:<br>- corrigenda on blocks 103, 104 and 105;<br>- block 106 re-titled before shipping;<br>- qualification comments on blocks 97 (#8872: T3's κ–γ link is an identification), 101 (#8895: the control's `−E⟨∇u⟩` is a leading-order comparator) and 71 (#8603: "everything falls towards slow clocks" holds for rays at rest or moving across the gradient);<br>- blocks 72, 95 and 98 use leading-order or ray statements consistent with the landed texts. | the owner's commits; corrigenda e299fffbb6, 36ab6c595e, 6cad973f8d; PR comments | recorded |
 
-
 ## Nineteenth addendum (2026-09-24): one geometry for the walker's connection (block 107) and the clocked walk's realizations (blocks 108–109)
 
 | # | Question | State | Deciding computation | Status |
@@ -857,3 +856,35 @@ Nothing is adopted. **Provenance:** every probe result below is by a Claude Opus
 - Four unrefereed block PRs remain open, 146–149, above the limit of three. Block 150 (T1–T5; runner 24/0; mutation census 12/12) waits in scratch.
 - Refill w queues two problems. The first checks the placement no-go and asks how far a local placement can push the walker's clock defect beyond third order. The second is the massive sea's inertia in the zero mode.
 - A1, the member's cubic terms, continues in scratch.
+
+## Forty-second addendum (2026-09-26, campaign start): what is exact on the lattice, what holds only at long wavelength, and what the records cannot supply
+
+Nothing is adopted. This is a synthesis of landed and open results, written for the owner's question about the "not from records alone" parts. It adds no new science, and every entry points to its block. "Exact" means the statement holds at every lattice momentum, or for every state, within the block's stated scope. Blocks 146–151 are open or pushed without a PR, and none is refereed by another model family.
+
+**1. Exact on the lattice.**
+
+| Statement | Where |
+|---|---|
+| The member's clock rules close exactly, for every pair of clock profiles, iff `β = −α` with symmetric face timing (flat strain, first order in the momenta) | 112 (landed; Grok-refereed harvest) |
+| The walker's two-step content keeps the member's books (energy current = momentum density) in the member's placement; `α = K/4` is necessary at linear order | 134–136 (landed, scoped) |
+| The staggered mass keeps the books exactly | 139 (landed) |
+| Within one band, a free walker's energy changes stay strictly inside the member's cone at every lattice momentum | 149 (open) |
+| Block 112's relabellings reach every bond field; a cubic-only kinetic term breaks the closure; the closing line admits no positive addition; the sea's inertia is a positive addition | 150 T1–T4 (pushed) |
+| The walker's own clock rules close with block 112's relabellings exactly when one clock change is uniform, and no finite-range placement of the walker's energy with the cube's rotations and time reversal closes them for every pair | 150 T5 (pushed) |
+| Under one record per site, two records lose their total energy current at a collision; no neighbour coin term restores it; no finite-range interaction does | 137, 141 (landed); 151 (pushed; harvest of #9251) |
+
+**2. Only at long wavelength, or leading order.**
+
+| Statement | Where |
+|---|---|
+| The walker's clock rules match the member's for every clock profile only through second order in the profile's wave numbers | 150 T5(c) |
+| One record per site keeps the books only at leading order | 137 |
+| The member's pull between slow bodies, the weight of bound pairs and the fall of binding energy: in the supplied continuum models, first order | 144, 145 (landed, scoped) |
+| The closed lattice's uniform and uneven stretches, and the sea's equation of state: in the homogeneous model | 146–148 (open) |
+
+**3. Reading questions the landed clauses leave open.**
+- **Relabellings in time.** If every clock profile is a relabelling, the whole momentum constraint is forced (150 T1). But with walkers present that reading is exact only without content: it holds only for slowly varying profiles (150 T5).
+- **The zero of energy.** Measured above the sea, the massless sea drops out exactly. The massive sea still adds inertia when the lattice stretches (147 T3, corrected 2026-09-26). The member cannot take that inertia on top of its landed numbers (150 T4).
+- **The exclusion.** Under one record per site, the member's exact books cannot come from the records with any finite-range interaction (151). What the member sees instead, coarse-grained books or something else, is the owner's reading.
+
+**4. Supplied, not derived.** The member's stiffness `K`. The exchange sign (128). The member's form: the curvature member, forced by blindness to the coin's axes (64). The walker's placements `e′` and `P^B`. The volume factor for three lengths (148). The transfer of the walker's response to the member's source (112 T4). The member's cubic terms, the next open item.

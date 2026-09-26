@@ -78,3 +78,10 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-26 campaign refresh (ranked by expected evidence for the owner's "not from records alone" question)
+1. **The member's cubic terms on the lattice.** First the static spatial sector: does block 62's quadratic potential admit a local cubic term invariant under a first-order deformation of the lattice relabellings (`δ₀V₃ + δ₁V₂ = 0`, exact trigonometric-polynomial identities)? The pre-registered decision table (addendum 40) applies. Probes are on the scalar sector (refill v).
+2. **More than two excluded records**, and exponentially decaying interactions, for block 151's chain.
+3. **The massive sea's inertia in the zero mode** (refill w; small).
+4. **How far a local placement pushes the walker's clock defect** (refill w).
+5. **Harvests** as probe results arrive; corrections to the open PRs as needed.

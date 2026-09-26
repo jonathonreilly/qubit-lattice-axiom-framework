@@ -190,6 +190,16 @@ At `t = 0.25` the momentum-independent part is a third of the ring part on
 
 ## What this does not do
 
+- **Guide-dependent bias.** A later fine scan (draft PR 9266) found that
+  the fixed-population energy at fixed `t` depends on the guide's charge
+  penalty beyond the errors quoted here: on 6³ at `t = 0.35`, penalties
+  `1.0` and `1.2` give energies `1.22 ± 0.16` apart (0.6 per cent). The
+  differences in this note use one penalty for all energies at a given `t`,
+  which removes the part of the bias that does not change with `t` or `M`.
+  A same-penalty probe there reproduces the `t = 0.25` link expectation on
+  6³ (`0.1033` against `0.1016 ± 0.0020`). The absolute energies,
+  the homogeneity value of `u` and `χ̄` carry a bias of the penalty's size that
+  is not in the quoted errors.
 - It claims no phase, transition, mass or limit: the rapid change is seen on
   three small tori at five hopping values and one charge mass.
 - The moment bound is an upper bound. Its momentum-independent part neither
@@ -227,7 +237,7 @@ None yet.
 - **N2 — Independence:** self-checked; the 2³ control is internal to this runner.
 - **N3 — Imports:** the clauses, charge mass, comparator and matching rule are supplied, not framework admissions.
 - **N4 — Dependencies:** the landed comparator note's scope governs; open PRs are cited, not relied on.
-- **N5 — Resolution:** finite Monte Carlo with heuristic errors; the guide was tuned outside the runner.
+- **N5 — Resolution:** finite Monte Carlo with heuristic errors; the guide was tuned outside the runner, and the fixed-population bias depends on it (draft PR 9266).
 - **N6 — Residuals:** larger tori, finer hopping steps, other charge masses, the static pair with moving charges and the transverse gap remain open.
 - **N7 — Counterroutes:** other hopping clauses, guides, populations and orders of limits remain available.
 - **N8 — Boundary:** source note, not an audit verdict.

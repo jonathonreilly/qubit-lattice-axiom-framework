@@ -1112,3 +1112,19 @@ So consistency, not records, fixes the member's structure and the walker's coupl
 - the price of forming a record;
 - the zero of energy (whether the sea is counted);
 - the reading of relabellings in time.
+
+## Forty-ninth addendum (2026-09-26, campaign): programme T in time, shift sector (block 163)
+
+Nothing is adopted.
+
+- **Block 163** (pushed; the supervisor's own; unrefereed). The member's spatial relabellings may vary in time, and they are required under both readings. With them:
+  - The walker needs `¼σ·curl N` at first order. That is exactly the spin part of block 138's symmetric momentum coupled to the shift, so the landed choice of `P^B` is forced by these relabellings.
+  - At order strain times relabelling, the walker needs the coin's coupling to the frame's rotation rate relative to the shift's flow, `¼σ_c ε_cab (e(∂_t + L_N)E)_ab`.
+  - Over 636 couplings of the stated class, the solution is unique up to the scalar expansion rate. That rate is odd under time reversal.
+- **Programme T now stands as follows.** For spatial relabellings, fixed or varying in time, the walker's coupling to the member's lengths and shift is forced through first order in the strain. It has the comparator's form:
+  - the axial term `(1/8)ε·C` (block 158);
+  - the spin's coupling to the shift's vorticity and to the frame's rotation rate (block 163);
+  - carried on the lattice, at long wavelength, by links that follow the lengths' connection (block 161).
+
+  Only the lapse sector remains open: relabellings in time whose clock profile varies in space, which only reading E requires. It is with the probes (refill z).
+- **Row added to addendum 48's table.** The walker's coupling to the shift: forced by relabellings that vary in time; the spin term of `P^B`, plus the frame's rotation rate at the next order (block 163).

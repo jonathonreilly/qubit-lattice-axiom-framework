@@ -108,3 +108,7 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 1. **Harvests:** #9225 with #9312 (confirmed); #9299 once confirmed.
 2. **From refill z:** referees of blocks 157 and 158; programme T in time; the lattice placement of `(1/8)ε·C` for the eight species, now framed by block 161's links.
 3. **Block 162's open case:** window-confined sources that are not point-equivalent.
+
+## 2026-09-26 refresh at checkpoint 6
+1. **Programme T's lapse sector** (reading E): relabellings in time with clock profiles that vary in space. They act on the walker as a boost of its coin, which is not unitary for the counting norm. With the probes (refill z).
+2. **Harvests:** #9299 once an other-family referee confirms it.

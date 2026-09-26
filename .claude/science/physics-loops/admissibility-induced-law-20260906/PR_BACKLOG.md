@@ -44,3 +44,7 @@ Still open: #9285, #9287, #9289. Held, in order after items 5–7 (blocks 156–
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block161-links-on-the-bonds-make-turning-the-coin-a-symmetry-20260926 --title "[physics-loop] admissibility-induced-law block 161: bounded_theorem bounded-support - links on the bonds make turning the coin a symmetry; flat links leave only the lengths, and the lengths' connection adds the inversion-odd curl" --body-file <pr_body161.md>`
 11. Block 162 (harvest, Grok-confirmed).
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block162-no-local-rule-sets-the-price-of-forming-a-record-20260926 --title "[physics-loop] admissibility-induced-law block 162: bounded_theorem bounded-support - no local rule of any fixed radius sets the price of forming a record, under either reading, and a point-equivalent source has an exact local price" --body-file <pr_body162.md>`
+
+## 2026-09-26 checkpoint 6
+12. Block 163 (own; unrefereed).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block163-relabellings-that-vary-in-time-make-the-walkers-coin-turn-with-its-frame-20260926 --title "[physics-loop] admissibility-induced-law block 163: bounded_theorem bounded-support - relabellings that vary in time make the walker's coin turn with its frame: the spin couples to the shift's vorticity and the frame's rotation rate" --body-file <pr_body163.md>`

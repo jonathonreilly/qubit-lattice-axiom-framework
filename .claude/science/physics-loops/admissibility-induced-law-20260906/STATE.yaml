@@ -146,3 +146,7 @@ source_review_correction:
 #   pushed_without_pr: ["156 917d53bdfe", "157 b8b53224b6", "158 66cdca4b13", "159 9b6644140f", "160 eadcb435ea", "161 e5195cdf6b", "162 174d83ec4f"]
 #   records: ["decision-record addendum 48 (blocks 159-162; the third column table)"]
 #   next_exact_action: "harvest #9225/#9312 if time; watch #9299's confirmation; final handoff by 23:00Z"
+# checkpoint_6 (2026-09-26T19:05Z):
+#   pushed_without_pr: ["156", "157", "158 3e0f193a56 (v2)", "159 9b6644140f", "160 eadcb435ea", "161 e5195cdf6b", "162 174d83ec4f", "163 6899378a58"]
+#   records: ["decision-record addendum 49 (programme T in time, shift sector)"]
+#   next_exact_action: "watch for #9299's confirmation; final handoff and lock release by 23:18Z"

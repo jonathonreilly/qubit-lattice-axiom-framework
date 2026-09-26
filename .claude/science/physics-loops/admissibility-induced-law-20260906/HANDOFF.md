@@ -78,3 +78,9 @@ Current source review found five further P2 groups, corrected in the canonical n
 - **Probe HITs to watch:**
   - #9299 (sea shear waves, same family): a Grok confirmation is needed before harvest.
   - #9225 with #9312 (relabelling blindness in the cube kinetic family, Grok-confirmed): a harvest candidate.
+
+## 2026-09-26 campaign, checkpoint 6 (~19:05Z)
+- **Block 163** (6899378a58; own; PR held). Relabellings that vary in time force the walker's spin coupling to the shift's vorticity (block 138's term) and the frame's rotation rate. Unique up to the time-odd expansion rate.
+- **Block 158 v2** (3e0f193a56): text only; cites #9308 and block 161.
+- **Addendum 49** records programme T's standing: forced and of the comparator's form for spatial relabellings through first order in the strain; the lapse sector (reading E) open.
+- **Held branches:** blocks 156–163. The commands are in `PR_BACKLOG.md`.

@@ -1,0 +1,52 @@
+{
+  "task": "J:derive:mobile-record-geometric-formation-waves:a1",
+  "worker": "w-jonathonsmac4f50-jccaf",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "sources": [
+    {"pr": 8589, "frozen_head": "97c1522d462e574663d8dd50fa424f9147587792", "author_family": "Codex",
+     "files": {"docs/MOBILE_RECORDS_GEOMETRIC_FORMATION_SELECTION_AND_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "2f87af236d872d27c2347e35f880afec4aeff761f3b81bba34157b7e55670206",
+               "scripts/mobile_records_geometric_formation_selection_and_clock_2026_09_21.py": "939cd94b62c6f0d81fab24c31f0bbb52b33f719262da5639a62b0c087d70181b"},
+     "read": "definitions (contents, birth density, slides)"},
+    {"pr": 8594, "frozen_head": "d0dec3ccac49f285194d6aad20a299765269910c", "author_family": "Codex",
+     "files": {"docs/MOBILE_RECORDS_ALL_STAGE_FORMATION_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-21.md": "e45dbe02cdfcbb756595b81a6c18e3b511b0987efcf66d2906c214b531255ef6",
+               "scripts/mobile_records_all_stage_formation_clock_2026_09_21.py": "0dae718913fe649f757e23e5f682cb5cd5b0365aea26bb2aed8fde6e5c7eba1b"},
+     "read": "not reconstructed; its slide comparison screened numerically"},
+    {"pr": 8600, "frozen_head": "3c6fea4be33116952cc81f004b3550baec4087a9", "author_family": "Codex",
+     "files": {"docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747",
+               "scripts/mobile_records_moving_geometry_color_waves_2026_09_21.py": "2d4cdcd4aca957a9f188fc29e5b5d2372ccb5c419b48f7945d02031a514fcf7e"},
+     "read": "section 1 (colours) and section 7 (birth colour law (19)-(20))"},
+    {"pr": 8604, "frozen_head": "af45e32418ba6af18af646164c8d90abc3d933ba", "author_family": "Codex",
+     "files": {"docs/MOBILE_RECORDS_EMPTY_START_QUANTITATIVE_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md": "39a135715624f58cf342efcf12cae0d4f6b26b14b2f5a46ae1d3c7ab30ea0b4e",
+               "scripts/mobile_records_empty_start_quantitative_waves_2026_09_21.py": "5756e8d7870b2d6486f461e123147599404267f3fb81af99180d428902ecf839"},
+     "read": "complete"},
+    {"pr": 8610, "frozen_head": "05ce3bed24d4b13226cfe0bef84ea344fd54b59c", "author_family": "Codex",
+     "files": {"docs/MOBILE_RECORDS_SMOOTH_NONLINEAR_EULER_BOUNDED_THEOREM_NOTE_2026-09-21.md": "b0b1a4d5eb7803db6c160f2ac590fed447dc803ff8deb83d7591e7a32a48aceb",
+               "scripts/mobile_records_smooth_nonlinear_euler_2026_09_21.py": "5a4960136b67ce43ef27ee794da243e806f0e065e19c8b002778e2ccc4a87be7"},
+     "read": "complete"}
+  ],
+  "hashes_match_source_map": true,
+  "related_work_checked": [
+    {"path": "probes/work/derive/mobile-record-geometric-formation-waves", "finding": "no prior attempt"},
+    {"path": "probes/work/worktree-sweep-20260926/codex-sync-2026-09-21-second/geometric-fixed-rate-formation/results/TABLE.md", "finding": "fixed-rate filling time per site roughly N-independent (N 16-128) and slides per site slowly growing; used as context only, not replayed (owned by C:recovered-fixed-rate-geometric-formation)"}
+  ],
+  "proved": ["Theorem O: even-translation invariance of the actual empty-start law; h >= sum_u KL(q||p(u/N)) >= (1/2) sum_u |p(u/N) - pbar|^2; h = +infinity at deterministic times; TV < 1/2 version",
+             "Lemma P (conditional): position-dependent birth colours with exchanges from first completion give h(F) <= (Lip^2/eps) N^-2 E sum_u |b_u - u|^2"],
+  "checked": ["O1-O6 exact symbolic ingredients and the cosine example h0/K >= 1/1568",
+              "F1 #8604 padded fibre counts, R_hat formula, R_hat <= U_j (exact, 10 cases)",
+              "C1 #8604 comparison steps (6)-(7) (exact rationals, 10 cases)",
+              "S1-S4 numerical screens: imported Broder bound (4), comparison (8), physical-slide comparison and connectivity, killed-chain bound (9)"],
+  "assumed": ["supplied model of #8589/#8600/#8604", "Jerrum-Sinclair Broder-chain bound", "Taggi monomer bound and p_j >= 6/K", "#8594 empty-corridor comparison"],
+  "dispositions": [
+    {"claim": "actual empty-start law prepares a nonconstant smooth profile with o(K) conditional entropy (research target)", "disposition": "refuted", "note": "Theorem O: translation invariance forces h >= Theta(K); infinite at deterministic times"},
+    {"claim": "#8604 Part I padded fibres and comparison (6)-(8)", "disposition": "recovered", "note": "proof read; exact small-graph checks of fibres and (6)-(7); (8) screened"},
+    {"claim": "#8604 Part I physical-slide comparison and imports", "disposition": "open", "note": "screened only; #8594 comparison and Jerrum-Sinclair/Taggi imports not reconstructed"},
+    {"claim": "#8604 Part I killed-chain estimate (9)-(10)", "disposition": "recovered", "note": "proof read; screened"},
+    {"claim": "#8604 Part III deterministic-time coupling", "disposition": "recovered", "note": "valid TV statement; reaches #8610 only via its reference process and only for constant p"},
+    {"claim": "#8610 nonlinear Euler theorem", "disposition": "not reviewed", "note": "hypothesis used as target only"},
+    {"claim": "birth-generated inhomogeneous preparation", "disposition": "open", "note": "Lemma P reduces a named variant (position-dependent births, exchanges from completion) to a displacement bound; always-on variant faces ~N^2 Euler-time formation (data, unproved)"}
+  ],
+  "first_unresolved_step": "E sum_u |b_u - u|^2 = o(N^2 K) (birth-to-final pair displacement) for the fixed-rate geometric birth/slide process, and a local replacement for the global exchange switch at completion",
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "Theorem O is a short exact no-go that could be packaged with the #8610 scope sentence after an other-family referee and the N1-N8 gate; #8604 Part I fibre/comparison lemmas are small-case checked, not all-volume re-proved"
+}

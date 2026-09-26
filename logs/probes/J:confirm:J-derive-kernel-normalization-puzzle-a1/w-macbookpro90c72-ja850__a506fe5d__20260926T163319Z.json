@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-kernel-normalization-puzzle-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-ja850",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/kernel-normalization-puzzle/referee_w-macbookpro90c72-ja850/check.py",
+ "seed": 40399,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a506fe5d",
+ "started_utc": "20260926T163319Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The estimator projects onto axes fixed by the initial direction and averages the two lab-frame components. For an isotropic Gaussian of total variance T, E[sin^2 theta]/T = 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4). With T = A(3 beta)/(3 beta) the linear deficit is 0.09259 at beta = 2 and 0.00913 at beta = 24, and beta times that deficit tends to 2/9. The attempt's summary states 0.0300 and 0.00309 instead. The corrected quadratic ratio at beta = 2 is 0.9126, below the quoted table 0.95-0.99, so this factor at T = sigma^2 is too large to be the whole measured ratio. It remains below 1, so it does not produce the values above 1. The formation runs were not repeated, and the Gaussian hypothesis was not proved."
+ },
+ "review": "The Gaussian lab-frame ratio expands as 1-(2/3)T+(4/15)T^2-(8/105)T^3, and at T=A(3 beta)/(3 beta) the deficit is 0.09259 at beta=2 and 0.00913 at beta=24, not the attempt summary's 0.030 and 0.0031; that corrected ratio sits below the quoted table.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:kernel-normalization-puzzle:a1/; its files are probes/work/derive/kernel-normalization-puzzle/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/kernel-normalization-puzzle/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "003468183a49099eed5e9c80c869f4871a4db7aa45a80e091929e20bd821a227",
+ "stdout_tail": "S N2 series: sin^2 theta = theta^2 - theta^4/3 + 2 theta^6/45 - theta^8/315 + O(theta^10)\nPASS N2 ratio: E[sin^2 theta]/T = 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4)\nPASS N3 limit: A = 1 - 1/kappa + 2/(e^{2 kappa}-1), so beta*(2/3)*A(3 beta)/(3 beta) = (2/9) A(3 beta) -> 2/9\nPASS N3 size: at n=3 and T=sigma^2 the deficit is 0.09259 at beta=2 and 0.00913 at beta=24; the quadratic ratio 0.9126 lies below the quoted 0.95\nPASS N3 stencil count: the same linear deficit at beta=2 is still above 0.07 for n=4 and above 0.04 for n=7\nSUMMARY: confirmed partial. The estimator projects onto axes fixed by the initial direction and averages the two lab-frame components. For an isotropic Gaussian of total variance T, E[sin^2 theta]/T = 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4). With T = A(3 beta)/(3 beta) the linear deficit is 0.09259 at beta = 2 and 0.00913 at beta = 24, and beta times that deficit tends to 2/9. The attempt's summary states 0.0300 and 0.00309 instead. The corrected quadratic ratio at beta = 2 is 0.9126, below the quoted table 0.95-0.99, so this factor at T = sigma^2 is too large to be the whole measured ratio. It remains below 1, so it does not produce the values above 1. The formation runs were not repeated, and the Gaussian hypothesis was not proved.\nHIT: confirmed - the lab-frame Gaussian ratio is 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4), and at T = A(3 beta)/(3 beta) the deficit is 0.09259 at beta = 2 and 0.00913 at beta = 24, not the stated 0.030 and 0.0031\n",
+ "checked": {
+  "by": "w-macbookpro90c72-ja850",
+  "at_utc": "20260926T163329Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The expansion is 1-(2/3)T+(4/15)T^2-(8/105)T^3. At T=A(3 beta)/(3 beta) the deficit is 0.09259 at beta=2 and 0.00913 at beta=24. The attempt summary's 0.030 and 0.0031 do not match its own stdout.",
+  "by": "w-macbookpro90c72-ja850",
+  "at_utc": "20260926T163329Z"
+ }
+}

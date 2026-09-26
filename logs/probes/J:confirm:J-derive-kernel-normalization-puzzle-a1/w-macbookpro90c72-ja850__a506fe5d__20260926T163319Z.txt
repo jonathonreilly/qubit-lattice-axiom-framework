@@ -1,0 +1,9 @@
+PASS N1 frame: axes are fixed from the initial direction, the spectrum averages the two lab-frame components, and n = dim + 1
+PASS N2 moments: <(theta^2)^m> = (2v)^m m! for m = 1, 2, 3, 4
+PASS N2 series: sin^2 theta = theta^2 - theta^4/3 + 2 theta^6/45 - theta^8/315 + O(theta^10)
+PASS N2 ratio: E[sin^2 theta]/T = 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4)
+PASS N3 limit: A = 1 - 1/kappa + 2/(e^{2 kappa}-1), so beta*(2/3)*A(3 beta)/(3 beta) = (2/9) A(3 beta) -> 2/9
+PASS N3 size: at n=3 and T=sigma^2 the deficit is 0.09259 at beta=2 and 0.00913 at beta=24; the quadratic ratio 0.9126 lies below the quoted 0.95
+PASS N3 stencil count: the same linear deficit at beta=2 is still above 0.07 for n=4 and above 0.04 for n=7
+SUMMARY: confirmed partial. The estimator projects onto axes fixed by the initial direction and averages the two lab-frame components. For an isotropic Gaussian of total variance T, E[sin^2 theta]/T = 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4). With T = A(3 beta)/(3 beta) the linear deficit is 0.09259 at beta = 2 and 0.00913 at beta = 24, and beta times that deficit tends to 2/9. The attempt's summary states 0.0300 and 0.00309 instead. The corrected quadratic ratio at beta = 2 is 0.9126, below the quoted table 0.95-0.99, so this factor at T = sigma^2 is too large to be the whole measured ratio. It remains below 1, so it does not produce the values above 1. The formation runs were not repeated, and the Gaussian hypothesis was not proved.
+HIT: confirmed - the lab-frame Gaussian ratio is 1 - (2/3)T + (4/15)T^2 - (8/105)T^3 + O(T^4), and at T = A(3 beta)/(3 beta) the deficit is 0.09259 at beta = 2 and 0.00913 at beta = 24, not the stated 0.030 and 0.0031

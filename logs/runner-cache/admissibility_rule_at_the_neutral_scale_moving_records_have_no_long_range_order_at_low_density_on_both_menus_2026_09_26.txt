@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_at_the_neutral_scale_moving_records_have_no_long_range_order_at_low_density_on_both_menus_2026_09_26.py
 runner_sha256: 39032cf3629f26c3a178b9a27d1461df361c472ef1b61c78433033dd8583ffc7
-input_fingerprint_sha256: 49aba0e68667aa68a8e66c1cbb2f935a13235b9266469c496e7b673943a23e49
+input_fingerprint_sha256: 4f8619c1f3377c88b742e803d1a0e3fd6a4b447c0f0830844f7f425262795c53
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.13
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

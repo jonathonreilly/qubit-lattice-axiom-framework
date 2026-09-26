@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-26 block 168 — author checks (not a review PASS)
 Harvest of #9304 (same family) with the other-family confirmation #9329 (18/0; census 6/6 in family). The referee's enlargement is the stated region.
+
+## 2026-09-26 block 168 v2 — author check (not a review PASS)
+Attribution corrected (the domination lemma is a standard sequential coupling, not Harris's inequality). Text only; runner 18/0; cache re-pinned.

@@ -49,7 +49,7 @@ In plain terms: at the neutral scale an occupied neighbour weighs, on average, w
   - The scales: `c₀(γ) = γ/sinh γ` (sphere) or `1/cosh γ` (two-valued). The neutral scale is `c₀(β)`.
   - The diagnostic: `σ_x = n_x s_x`, and `M_N² = N⁻¹Σ_x⟨σ₀·σ_x⟩`.
 - **Block 153** (open PR #9285, not landed) is placement only. Its architecture is used: clusters decouple, the occupied set is dominated, and paths are counted.
-- **Names.** The two-valued weight bound uses Bernstein-basis certificates on `[0, 1]`. The path count is the standard bound for self-avoiding walks. The domination is the sequential coupling with independent site occupation (Harris's comparison).
+- **Names.** The two-valued weight bound uses Bernstein-basis certificates on `[0, 1]`. The path count is the standard bound for self-avoiding walks. The domination is the standard sequential coupling with independent site occupation.
 
 ## Domain qualifications
 
@@ -141,7 +141,7 @@ audit_required_before_effective_retained: true
     Both of its regions use `ρ = w`.
   - #9329, worker `w-macbookpro90c72-jc7b4`, `grok-4.6`, another model family, refereed #9304 with its own checker. It kept the occupation probability as `w/(1 + w)`, which gives the larger regions `1/(4F₆)` and `1/(4G)` stated here: "HIT: confirmed - no long-range order for `z < 1/(4 F_6(β))` on the sphere, asymptotic to `3/(64 β^5)`, and for `z < 1/(4 G(tanh β))` on the two-valued menu."
 - **In the literature.**
-  - Low-density absence of order by domination and path counting is a standard pattern: Harris's comparison, and counts of self-avoiding walks.
+  - Low-density absence of order by domination and path counting is a standard pattern: a sequential coupling with independent site occupation, and counts of self-avoiding walks.
   - The known connective constant of `ℤ³`, about 4.68, is not used.
 - **New here.**
   - The harvest.
@@ -222,7 +222,7 @@ No registered primitive is used; nothing is proposed for registration.
 - `minimal_axioms`. Block 126 (landed), restated and quoted. Block 153 (open PR) placed.
 - Named standard imports, at definition level:
   - Bernstein-basis certificates of nonnegativity on `[0, 1]`;
-  - sequential domination by independent site occupation (Harris);
+  - sequential domination by independent site occupation (a standard coupling lemma);
   - the self-avoiding path bound `6·5^{n−1}` on `ℤ³`;
   - the geometric series;
   - exact symbolic and rational arithmetic.

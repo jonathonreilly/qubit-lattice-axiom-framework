@@ -1195,3 +1195,16 @@ Block 160 v2 (394524330e) adds T5, a harvest of probe #8716, confirmed by #9321 
 - on a line, the free sea is softer by a third (closed form).
 
 With T3, block 76's stiffness input is now derived for the free sea at every mass, including zero.
+
+## Fifty-fourth addendum (2026-09-26, campaign): block 165, the cube kinetic family
+
+Nothing is adopted.
+
+Block 165 (3691bede25) is a harvest of #9225, confirmed by #9312 (Grok). In block 62's cube kinetic family, with the frame's rotation rate included:
+- the relabellings in time each fix the kinetic shape, and together they allow only zero;
+- the frame's full rate has four cube-invariant numbers, and blindness to coin rotations removes one, leaving three;
+- so block 124's count of two uses its stated metric premise. The landed note states the premise, and no correction is owed.
+
+**More Grok-confirmed candidates, not harvested:**
+- #9231 + #9326: the curvature member's turn series has radius equal to the capture threshold, and the two charges agree on balanced content. Its checker settles several claims numerically, so a harvest needs an exact port.
+- #9158 + #9325: the delayed clock and the pair law, conditional on well-posedness.

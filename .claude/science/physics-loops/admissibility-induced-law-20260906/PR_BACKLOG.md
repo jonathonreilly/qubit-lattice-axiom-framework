@@ -55,3 +55,7 @@ Still open: #9285, #9287, #9289. Held, in order after items 5–7 (blocks 156–
 
 ## 2026-09-26 campaign close
 The PR bodies for items 5–13 (blocks 156–164) are in `pr_bodies/block<NN>.md` next to this file. Pass them to `--body-file`.
+
+## 2026-09-26 late update 3
+14. Block 165 (harvest, Grok-confirmed).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block165-in-the-cube-kinetic-family-relabellings-in-time-fix-the-kinetic-shape-20260926 --title "[physics-loop] admissibility-induced-law block 165: bounded_theorem bounded-support - in the cube kinetic family, relabellings in time fix the kinetic shape, and the frame's full rate has four numbers of which blindness removes one" --body-file pr_bodies/block165.md`

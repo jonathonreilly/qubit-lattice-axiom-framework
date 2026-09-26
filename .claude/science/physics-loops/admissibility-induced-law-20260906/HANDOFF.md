@@ -139,3 +139,7 @@ Current source review found five further P2 groups, corrected in the canonical n
 ## 2026-09-26 campaign, late update 2
 - **Block 160 v2** (394524330e): T5, the massless sea (#8716 with #9321). 20/0, census 7/7. `pr_bodies/block160.md` is updated.
 - **Probes refill ab** (e90c68c182, after the TASKS.json restore): referees for 163 and 164; T with a background lapse and shift; block 158 at second order.
+
+## 2026-09-26 campaign, late update 3
+- **Block 165** (3691bede25; harvest of #9225 with #9312; PR held; body in `pr_bodies/block165.md`). Held branches are now 156–165.
+- **Harvest candidates added:** #9231 + #9326 (needs an exact port); #9158 + #9325 (conditional).

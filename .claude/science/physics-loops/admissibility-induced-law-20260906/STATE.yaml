@@ -166,3 +166,5 @@ source_review_correction:
 # late_update_2 (2026-09-26):
 #   block160: "v2 394524330e (T5 massless sea)"
 #   probes: "refill ab; TASKS.json restored e90c68c182"
+# late_update_3 (2026-09-26T20:15Z):
+#   block165: "3691bede25 (harvest of #9225 with #9312)"

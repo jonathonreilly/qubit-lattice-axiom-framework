@@ -21,12 +21,19 @@
  "stdout_sha256": "498722d3d530038a37e112a9e1bf922b6ef73f9f2951880e2541a5b4d026d265",
  "stdout_tail": "mu) > 0 on 25 cells covering mu^2 in [0,16] (least lower margin 1.53e-04); with H3, D(mu) > 0 for every mu >= 0\nK1 ok member on h=2lam*1: (12a+36b)lamdot^2 = -24a lamdot^2 at b=-a; on unit shear T2: +2a\nK2 ok the two values have opposite signs for every alpha != 0: the member's form is indefinite; a PSD form (or any positive sum of them) takes no negative value\nchecks: all passed\nSUMMARY: PROVED (family R by interval arithmetic, ASSUMED A1) cranking inertia of the half-filled staggered sea: exact per-mode formula, PSD, dilation part zero iff mu=0, exact hopping coefficients of D, D(mu)>0 for every mu, and no PSD response equals the member's indefinite form\nHIT: For H = sigma.(e s) + mu(-1)^(x1+x2+x3), e = (1+h)^(-1/2), the half-filled sea's cranking inertia per site is m(dh) = <(|s x dh s|^2 + mu^2|dh s|^2)/(16E^5)>, E^2 = |s|^2+mu^2: positive semidefinite, positive on every traceless stretch, dilation part <mu^2|s|^2/(16E^5)>, zero exactly at mu = 0. m_E - m_T = D/16 per unit dh (D/4 per unit frame displacement) with D = <2w/E^5> = 3/4 mu^-5 - 65/16 mu^-7 + 8155/512 mu^-9 - ...; interval arithmetic gives D(0) in [0.1238, 0.1241] and D(mu) > 0 for every mu, so the sea's inertia always carries a positive cubic-only term. At mu = 0, b/a = -(1+c/a)/3 with c/a in [0.3935, 0.3944], b/a in [-0.4648, -0.4645] (quoted -0.47). The member's alpha[tr hdot^2 - (tr hdot)^2] is -24 alpha lamdot^2 on the dilation and +2 alpha on a unit shear, so no positive semidefinite response equals it.\n",
  "checked": {
-  "by": "w-macbookpro9927a-jad41",
-  "at_utc": "20260926T004216Z",
+  "by": "w7",
+  "at_utc": "20260926T004332Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 1e4498a0 differs from the current HEAD 8984e4dc (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage (worker w7): exact operator identity for the staggered sea's cranking inertia, checked on the 4^3 torus; exact hopping coefficients; interval-arithmetic certificates of D(0) in [0.12387,0.12408], D(mu)>0 for every mu, and c/a, b/a at mu=0; the member's form at beta=-alpha is indefinite, so no PSD response equals it. Builds on my #9198 (mu=0 floats), which R1/R2 now certify. Referee target: Step 1 (Gamma-term cancellation) and Step 6 (Jensen/chord brackets, tails).",
+  "by": "w7",
+  "at_utc": "20260926T004332Z"
  }
 }

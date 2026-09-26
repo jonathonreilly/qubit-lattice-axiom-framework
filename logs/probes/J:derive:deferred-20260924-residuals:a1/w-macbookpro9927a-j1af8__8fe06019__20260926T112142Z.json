@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260924-residuals:a1",
+ "type": "judgment",
+ "lane": "deferred-science-recovery",
+ "worker": "w-macbookpro9927a-j1af8",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260924-residuals/w-macbookpro9927a-j1af8/check.py",
+ "seed": 21702,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8fe06019",
+ "started_utc": "20260926T112142Z",
+ "elapsed_s": 9.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL rotor-tail fibre generator: the dark phases on the half-period lattice are exactly 8 (kernel dims 1,1,2,1,1,2,4,2), all non-degenerate, all overlapped by the actual inputs; if no dark phase lies off {0,pi}^5 the actual-birth fast energy decays exactly as tau^(-5/2); the off-lattice exclusion is reduced to three explicit sub-cases (first unresolved step)"
+ },
+ "review": "Batch-15 first pass. #8960's GR stress identification overlaps this worker's #8732 (cited by #8960) and bending-over-fall attempts: not recovered, recorded open. Recovered #8957/#8958 rotor tail: dark phases of the fibre generator = rank drop of the bright-from-dark block; exactly 8 of 32 half-period phases dark (dims 1,1,2,1,1,2,4,2), all non-degenerate (full-rank pencils), inputs overlap each with 1/12,1/12,1/6 per dimension; exact exponent 5/2 conditional on no off-lattice dark phase; unit-pivot reduction to a 52x4 residual, last-column branch only (-1,-1,1,1,-1). Manifest hashes at frozen heads verified (97+40).",
+ "what": "OWNER-REQUESTED DEFERRED-SCIENCE RECOVERY, first bounded pass: Rotor tails and ray/body physical identifications. Read probes/work/deferred-science-20260924/README.md and probes/work/deferred-science-20260924/batch-15.json; frozen originals, accepted canonical paths, exact review findings and claim boundaries are there. Start with PR8960: isolate the unsupported GR mass/stress identification or unproved lattice-error order from the valid conditional two-charge ray theorem. Choose one explicit missing step and establish a bounded result or counterexample; alternatively recover a genuinely distinct rotor-tail residual from PR8957/8958. Before calculating, inspect existing attempts/logs for these related problems: internal-hop-energy-and-the-two-masses, p-equals-q-for-compact-and-strong-bodies, bending-over-fall-at-strong-field. Reuse refereed results and corrected main source; do not redo an already settled result or compete with an active claim on the same question. If the first target is covered, select the next genuinely distinct deferred statement in this bundle and record why. Treat source-candidate labels as routing hints, not proof that anything is new or true. Ignore administrative seals and old PASS labels as evidence. Compare against current origin/main and record its SHA; the ai/probes science checkout can be stale. Fetch each frozen head and verify SHA256 using the manifest before reuse. Work ONE sharply stated residual, with domain, quantifiers, minimal premises and success witness. Preserve all original review demotions; do not restore a disproved overclaim or infer physical selection from a supplied model. DELIVERABLE: probes/work/derive/deferred-20260924-residuals/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json. Number proof steps PROVED/CHECKED/ASSUMED. Include the first failing step and exact next obligation. RECOVERY_STATUS.json lists source SHA256 groups inspected, already-landed/duplicate/historical/active-elsewhere/recovered/open dispositions, existing task/log links, and the remaining ranked source groups. This is the first pass, not a claim that the whole bundle was exhausted. check.py independently checks each claimed finite fact with exact arithmetic when applicable, prints SUMMARY: PARTIAL ... or SUMMARY: ROUTE FAILS AT ... (or a precisely justified proof/counterexample). Print HIT: only for a new mathematical result or demonstrated defect, never merely recovered metadata; normal cross-model confirmation applies. A precise already-covered disposition is valid and must cite evidence. Commit the script before logging it with run_probe.py and finish through claim.py. Use the existing maximum-thinking J queue; do not launch workers or subagents, change worker budgets, edit authority surfaces, apply audit verdicts, or merge science. Outputs remain provisional until independent review and later authorized landing.",
+ "stdout_sha256": "6fc2207aaee01f049b6a42e4d40a9a9baeea60ef8020834178c4e6abd7652cdf",
+ "stdout_tail": "t 4x3 block is -(z2^3 - z4^3 z5)(z2^3 z5 - z4^3)(z1 z3 + 1)\nG2 ok if all 48 last-column entries vanish then z5 = -1, z2 = -z4, z3 = -z4 z5, z3 = -z5, so (z2,z3,z4,z5) = (-1,1,1,-1), and the rest force z1 = -1: the half-period dark point (-1,-1,1,1,-1)\nchecks: all passed\nSUMMARY: PARTIAL rotor-tail fibre generator: the dark phases on the half-period lattice are exactly 8 (kernel dims 1,1,2,1,1,2,4,2), all non-degenerate, all overlapped by the actual inputs; if no dark phase lies off {0,pi}^5 the actual-birth fast energy decays exactly as tau^(-5/2); the off-lattice exclusion is reduced to three explicit sub-cases (first unresolved step)\nHIT: For #8957/#8958's rotor cube (N = 6, charge 4, W = 1), the fibre generator L(theta) = -i delta G(theta) - kappa P_bright has a purely imaginary eigenvalue exactly where the 72x24 bright-from-dark block B(theta) loses rank. Among the 32 half-period phases this happens at exactly 8, not only the flat one: kernel dims 1,1,2,1,1,2,4,2. At each, the pencil [B | dB_k K] has full column rank r + 5 dim K, so Re L is negative definite to second order along every direction on the dark kernel (non-degenerate). The three actual first-mark inputs overlap every dark kernel with 1/12, 1/12, 1/6 per dimension. Hence, if no dark phase lies off {0,pi}^5, c(1+tau)^(-5/2) <= f_i(tau) <= C(1+tau)^(-5/2): the exponent 5/2 of #8958 is exact. Off the lattice, 20 unit pivots reduce the question to a 52x4 residual; its last-column branch gives only (-1,-1,1,1,-1).\n",
+ "checked": {
+  "by": "w-macbookpro9927a-j1af8",
+  "at_utc": "20260926T112152Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

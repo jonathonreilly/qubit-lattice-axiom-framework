@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_retained_grassmann_two_layer_kp_polymer_norm_2026_07_12.py",
+ "seed": 93671,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033431Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "308aed9e431830bd605ffbe96a436b7fb9fab1dcc8b437c7ecdc896d835b1f20",
+ "stdout_tail": "W=0.023702952081, K_I=0.017189402625, K_S=0.066085584459, K=0.106977939166, epsilon=0.013022060834, q=0.318448548204\nPASS closed_envelopes_m16: K_I=0.017189402625<=0.017217054958, K_S=0.066085584459<=0.066102304315\nPASS joint_kp_point_m20: K_W=0.061710429711, K_I=0.007046543214, K_S=0.030126268784, K=0.098883241708, epsilon=0.026116758292, q=0.257319207457\nPASS closed_envelopes_m20: K_I=0.007046543214<=0.007051045068, K_S=0.030126268784<=0.030129958636\nPASS fixed_link_path_incidence: words=4096, determinant=0.009259259259, schur=1.333333333333\nPASS induced_bipartite_constant_floor: odd closed words forbidden; length-two reversals=8\nPASS eta_norm_submultiplicative: product=0.342015700000, bound=0.344746352577\nPASS banach_factor_to_polymer_identity: body=0.999976000000, regrouping=1.110e-16, log=0.000e+00\nPASS balanced_quartic_connected_log: quartic=0.000029662824, monomials=[(0, 1, 2, 3), (0, 3), (1, 2)]\nPASS schur_path_coarse_support: coarse_path=[(0, 0, 0, 0), (0, 0, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0)], anchor_multiplicity=68\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['MASSIVE_WILSON_STAGGERED_FACTOR_TWO_GAUGE_BLOCK_SCHUR_OS_SEMIGROUP_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_CONSTRAINED_FIBER_TWO_LAYER_KP_COMPLEX_SOURCE_POLYMER_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033431Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

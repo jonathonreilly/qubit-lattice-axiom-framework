@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_v1_picard_fuchs_ode_2026_05_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py",
+ "seed": 93595,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033315Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "23f5e28fbe7fba54baf684aada115627ed32bc07b2ebbc2d92d2fc5da8bbc53c",
+ "stdout_tail": "             \n\u21aa   \u239e d           \n\u21aa 20\u23a0\u22c5\u2500\u2500(J(\u03b2)) = 0\n\u21aa     d\u03b2          \n\u21aa                 \n\nODE residual (truncated to degree 21):\n  = 0\n\nNumerical solution and verification at \u03b2=6:\n beta            J_ODE           Jp_ODE      <P>_1_ODE     <P>_1_Weyl\n 2.00 1.1309566867e+00 1.4547245390e-01   0.1286277853   0.1286277853\n 4.00 1.6987936929e+00 4.7501524744e-01   0.2796191494   0.2796191494\n 6.00 3.4414403550e+00 1.4541177801e+00   0.4225317396   0.4225317396\n 8.00 9.0224728415e+00 4.8338258264e+00   0.5357539902   0.5357539902\n10.00 2.8737268099e+01 1.7764681943e+01   0.6181757390   0.6181757390\n\n*** \u27e8P\u27e9_1(\u03b2=6) = 0.422531739650 (direct integration, Ng=1200)\n\nFrobenius solution at \u03b2=0 (regular sing. point, indices \u03c1=0,-3,-4):\n  Solution analytic at \u03b2=0 is the 'physical' J(\u03b2); two singular ones grow as 1/\u03b2^3, 1/\u03b2^4 near 0.\n  Series J(\u03b2) = sum_n a_n \u03b2^n with a_0=1, a_1=0, a_2=1/36, a_3=1/648, a_4=1/2592, ...\n  Recurrence (extracted from ODE on Taylor coefficients):\n  6(N+1)(N+4)(N+5) a_{N+1} = N(N+1) a_N + 2(2N+3) a_{N-1} + a_{N-2}\n\nRecurrence verification (with a_0=1, a_1=0, a_2=1/36):\n  a_3 = 1/648\n  a_4 = 1/2592\n  a_5 = 1/31104\n  a_6 = 13/3359232\n  a_7 = 11/33592320\n  a_8 = 139/4837294080\n  a_9 = 19/8707129344\n  a_10 = 23/145118822400\n  a_11 = 29/2742745743360\n  a_12 = 2629/3949553870438400\n\n==============================================================================\nSUMMARY: THEOREM PASS=4 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033317Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

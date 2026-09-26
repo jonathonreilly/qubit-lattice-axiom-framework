@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_raw_constrained_action_hessian_decay_2026_07_12.py",
+ "seed": 93671,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033431Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "820f0094d22cfa84d630d7c94a3365d069345df07e879c455e0557351984b505",
+ "stdout_tail": "PASS deep_fiber_margin: q0=2alpha=0.748784292630\nPASS first_response_sign: DR=0.071692756243, E[F]=0.071692756236\nPASS mixed_hessian_sign: D2R=-0.226540453063, -Cov=-0.226540467154\nPASS quarter_oscillation_covariance_convention: Var=1.0, (1/4)delta^2=1.0\nPASS weighted_resolvent_geometric_sum: 1/(1-q_lambda)=3.448275862069\nPASS positive_exponential_hessian_rate: lambda_H=0.080000, bound_at_40=1.405593240633e-01\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS direct_dependency: markdown_dependency_set=['WILSON_STAGGERED_CONSTRAINED_FIBER_DOBRUSHIN_AND_RAW_RG_UNIT_DIRECTIONS_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033431Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

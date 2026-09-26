@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_v1_picard_fuchs_minimality_2026_05_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_su3_v1_picard_fuchs_minimality_2026_05_06.py",
+ "seed": 93584,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033304Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "31542c8a3d110355c9cafd3740cffd3c11caa9056f4a7116993964acd3d96580",
+ "stdout_tail": "32, rank=24, kernel_dim=0 -> OK: no annihilator\n    r=2,d=8: unknowns=27, equations=35, rank=27, kernel_dim=0 -> OK: no annihilator\n    r=2,d=9: unknowns=30, equations=36, rank=30, kernel_dim=0 -> OK: no annihilator\n    r=2,d=10: unknowns=33, equations=36, rank=33, kernel_dim=0 -> OK: no annihilator\n    r=2,d=11: unknowns=36, equations=36, rank=36, kernel_dim=0 -> OK: no annihilator\n    r=2,d=12: skipped (not enough Taylor coeffs)\n\n[C] Uniqueness at (r=3, d=2) certificate:\n    Uniqueness at (r=3, d=2): kernel = 1D, matches published ODE\n    info: {'unknowns': 12, 'equations': 20, 'rank': 11, 'kernel_dim': 1, 'scalar': '6', 'status': 'OK: kernel is 1-dimensional and matches published ODE'}\n\n[E] Higher-degree (r=3, d > 2) consistency:\n    Higher-degree (r=3, d > 2) consistency: ALL kernels match polynomial-multiple bound\n    r=3,d=2: kernel_dim=1, expected=1 -> OK\n    r=3,d=3: kernel_dim=2, expected=2 -> OK\n    r=3,d=4: kernel_dim=3, expected=3 -> OK\n    r=3,d=5: kernel_dim=4, expected=4 -> OK\n    r=3,d=6: kernel_dim=5, expected=5 -> OK\n\n==============================================================================\nSUMMARY: CERTIFICATE PASS=5 FAIL=0\n==============================================================================\n\nExact finite certificates passed. All-order minimality remains out of\nscope without external holonomicity/rank and creative-telescoping\ninputs accepted by the independent audit lane.\nOutput written: outputs/su3_v1_picard_fuchs_minimality_2026_05_06.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033305Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

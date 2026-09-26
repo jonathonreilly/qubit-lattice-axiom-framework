@@ -1,0 +1,36 @@
+{
+ "task": "R:physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08.py",
+ "seed": 93113,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T032513Z",
+ "elapsed_s": 2.3,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=13 FAIL=2",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ce9931a3a2f55fe02b24b185061174e62e002e23a3a2681b88864fec2bd0e876",
+ "stdout_tail": " gives rank 88 and nullity 104\nPASS independent.fixed_free  kernel orthogonality independently gives five fixed blocks\nPASS independent.classes  seventeen realizable targets form classes 15 and 2\nPASS independent.total_parity  odd column weight independently identifies total-support parity\nPASS independent.profile_counts  direct four-loop enumeration reproduces both sequences\nPASS independent.odd_sizes  neither realizable class licenses an odd-size profile\nPASS independent.inventory  all split-target pairs through size twenty total 180625\nFAIL independent.primary_contract  primary receipt pins current sources and independently reconstructed conclusions\nPASS hostile.realizable_count  promoting odd-ctl to a reading invalidates the contract\nPASS hostile.dependency_status  a failing predecessor is rejected\nPASS hostile.witness  a changed target witness fails semantic identity\nPASS hostile.incidence  one changed incidence bit invalidates the canonical identity\nper_element: checked -- all 192 columns enter opposite-pivot incidence and kernel\nper_site: checked and not executed -- one supplied coordinate four-cube only\nper_mode: checked and not executed -- no field or momentum modes are present\nper_block: checked -- seven blocks, seventeen realizable targets, one control\nlattice_wide: checked and not executed -- no multi-cell or continuum claim\nRECEIPT outputs/physical_cell_cutting_carrier_parity_law_cycle746_independent_check_2026_08_08_receipt_2026-08-08.json\nTOTAL: PASS=13 FAIL=2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T032516Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=13 FAIL=2' vs cache 'TOTAL: PASS=15 FAIL=0'"
+  ]
+ }
+}

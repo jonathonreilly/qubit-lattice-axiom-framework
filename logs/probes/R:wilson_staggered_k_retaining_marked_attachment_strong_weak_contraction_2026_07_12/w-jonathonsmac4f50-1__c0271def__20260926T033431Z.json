@@ -1,0 +1,35 @@
+{
+ "task": "R:wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12",
+ "type": "runner-reexecution",
+ "lane": "wilson",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/wilson_staggered_k_retaining_marked_attachment_strong_weak_contraction_2026_07_12.py",
+ "seed": 93671,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033431Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dbda67299cd1e142b7dd117bd26f85941a99bb0074871c4033be82a41a01366f",
+ "stdout_tail": "PASS k_retaining_base_bound_m12: K=0.090084010199, c=0.120000000000, old=8.164081020170, sharpened=6.128776315741\nPASS k_retaining_base_bound_m16: K=0.106977939166, c=0.120000000000, old=8.164081020170, sharpened=7.278138022653\nPASS k_retaining_base_bound_m20: K=0.098883241708, c=0.125000000000, old=8.504251062677, sharpened=6.727423307032\nPASS ultra_deep_anchored_attachment: K=2.113419745763349e-12, slack=9.999999978865803e-04, d_s=367.879441948926@n=1000, a0=7.774836758536872e-10@n=1000, tau=7.774836766752619e-10, A_att=1.554967354342392e-09, q_centered=1.743321271597051e-07\nPASS strong_to_weak_linear_contraction: q_raw=0.606530659713, q_centered=1.743321271597051e-07, q=max=0.606530659713, B_weak=2.369419260355230e-10\nPASS two_layer_marked_path_resolvent: tau=7.774836766752619e-10, first_partial=7.774836772797428e-10, first_closed=7.774836772797428e-10, two_layer_partial=1.554967354342392e-09, A_att=1.554967354342392e-09\nPASS conditional_ball_scalar_feasibility: r_src=9.995003309722248e-04, delta=1.0e-08, M_delta=224454.829860094, lhs=6.313471264654862e-09\nPASS source_contract: missing=[], forbidden_hits=[]\nPASS repository_dependency_set: markdown_dependency_set=['WILSON_STAGGERED_RETAINED_GRASSMANN_TWO_LAYER_KP_POLYMER_NORM_BOUNDED_THEOREM_NOTE_2026-07-12.md', 'WILSON_STAGGERED_SPLIT_DERIVATIVE_AND_UNLOCALIZED_CAUCHY_CERTIFICATE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-07-12.md']\nSCORECARD PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033431Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

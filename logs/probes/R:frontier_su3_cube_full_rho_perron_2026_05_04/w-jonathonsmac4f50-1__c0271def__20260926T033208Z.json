@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_cube_full_rho_perron_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_su3_cube_full_rho_perron_2026_05_04.py",
+ "seed": 93528,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033208Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=1 SUPPORT=1 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3ad7e2848d144002d4f7abc2799a3cbcfb527da8f3b0395a90eb327c4466cd68",
+ "stdout_tail": "  0.4524071590\n    P_candidate (full \u03c1, NMAX=4):       0.4291049969\n    Bridge support upper:               0.5935306800\n    \u03b5_witness:                           3.030e-04\n\n  This Block (full candidate-\u03c1 at NMAX=4): P = 0.4291049969\n  Gap to bridge target:               0.164426 = 543\u00d7 \u03b5_witness\n\n  Verdict: full candidate-\u03c1 value lies in [0.4225, 0.4524] support envelope.\n  L_s=2 APBC cube alone CANNOT close to bridge support upper\n  (0.5935); the gap stays at\n  ~ 0.16 = ~ 543\u00d7 \u03b5_witness across the tested NMAX_rho values.\n\n  SUPPORT: confirms L_s=2 cube does not close bridge witness\n--- Section D: higher-NMAX_rho convergence study ---\n\n  NMAX_rho =  3: P(6) = 0.429104996947\n  NMAX_rho =  4: P(6) = 0.429104996947\n  NMAX_rho =  5: P(6) = 0.429104996947\n  NMAX_rho =  6: P(6) = 0.429104996947\n  NMAX_rho =  7: P(6) = 0.429104996947\n  NMAX_rho =  8: P(6) = 0.429104996947\n\n==============================================================================\nSUMMARY: THEOREM PASS=1 SUPPORT=1 FAIL=0\n==============================================================================\n\nHeadline:\n  L_s=2 APBC cube full-candidate-\u03c1 Perron value: P(6) = 0.429105\n  Wigner Block 5 reference: 0.429105\n  Match: True\n  Gap to bridge target 0.5935: 0.1644 = 543\u00d7 \u03b5_witness\n  Conclusion: L_s=2 APBC cube alone CANNOT close the no-go \u03b5_witness\n             under the existing implementation.\n  Existing L_s=2 target label evaluated: value computed, but not\n  closing \u2014 consistent with prior Wigner Block 5 finding.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

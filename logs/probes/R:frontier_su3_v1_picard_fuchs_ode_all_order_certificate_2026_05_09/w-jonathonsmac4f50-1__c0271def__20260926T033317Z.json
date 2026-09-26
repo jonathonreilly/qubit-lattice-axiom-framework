@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.py",
+ "seed": 93597,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033317Z",
+ "elapsed_s": 45.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b364bb41cea42b1495d6c49d8188da153482994e3956c3a2ad79d12739dcc3d3",
+ "stdout_tail": "eading exponent 0. Bessel-determinant Taylor: a_0 = 1, a_1 = 0, a_2 = 1/36. J(beta) IS the analytic Frobenius branch normalized by J(0) = 1.\n\n==============================================================================\nSUMMARY: FINITE-WINDOW BOUNDARY PASS=5 FAIL=0\n==============================================================================\n\nFinite-window Picard-Fuchs boundary packet passed:\n  [T1] J is D-finite (via D_0 explicit holonomic-closure annihilator\n       + Bars 1980 + Stanley/Lipshitz closure under sums).\n  [T2] The scanned finite grid excludes all order <= 2, degree <= 30\n       annihilator cells and finds the order-3 degree-2 candidate L.\n  [T3] Bostan-Salvy-Schost threshold arithmetic is satisfied only\n       conditionally on an external all-degree R=3,D=2 bound.\n  [T4] L's indicial polynomial is 6 s (s+3)(s+4); unique analytic\n       root s = 0; J is the unique analytic Frobenius branch\n       normalized by J(0) = 1 from the Bessel-determinant identity.\n  [T5] Depth-200 regression: A and D certificates pass.\n\nOpen blocker preserved:\n  - This runner does NOT prove the all-degree lower-order exclusion.\n  - Therefore it does NOT certify all-order minimal-annihilator closure.\n\nBounded scope unchanged:\n  - V = 1 single-plaquette only.\n  - No thermodynamic-limit, multi-plaquette, higher-irrep, or\n    bridge promotion claimed.\n  - Audit verdict belongs to the independent audit lane.\nOutput written: outputs/su3_v1_picard_fuchs_all_order_certificate_2026_05_09.json\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033402Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_v1_picard_fuchs_ode_all_order_certificate_2026_05_09.txt against the .txt beside this log"
+  ]
+ }
+}

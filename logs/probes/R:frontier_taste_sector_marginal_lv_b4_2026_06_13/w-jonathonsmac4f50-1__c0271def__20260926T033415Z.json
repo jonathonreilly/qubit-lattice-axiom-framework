@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_taste_sector_marginal_lv_b4_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_taste_sector_marginal_lv_b4_2026_06_13.py",
+ "seed": 93655,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033415Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a39b33a328a83ac3b677ccfcd52b40d03b99a73ae50a2e1cade43a6ab463a297",
+ "stdout_tail": ": physical taste-LV is dim-6 cubic harmonic (Planck-suppr)\n==============================================================================\n[PASS] physical taste-changing dispersion HAS a nonzero dim-6 quartic piece  ::  axis quartic = -7.5473e+00\n[PASS] axis vs body-diagonal dim-6 coefficients DIFFER (hypercubic survivor present)  ::  axis=-7.5473e+00  diag=-1.7948e+00  (anisotropic dim-6 = cubic harmonic)\n[PASS] dim-6 cubic harmonic sum n_mu^4: axis=1, body-diagonal=1/4, ratio=4 (4D)  ::  axis=1.000000, diag=0.250000, ratio=4.0000\n[PASS] observable taste-LV at E=1 GeV is Planck-suppressed ~ (1/3)(E/M_Pl)^2 ~ 2e-39  ::  delta(1 GeV) = 2.236e-39  (c4=1/3 is a size estimate only)\n  -> on OS0 the surviving taste-SUM-level taste-LV is the SAME dim-6\n     B4-invariant cubic harmonic as the marginal-protected free theory:\n     axis-vs-diagonal anisotropic, Planck-suppressed (size estimate),\n     NOT a marginal taste velocity difference at the taste-sum level.\n\n==============================================================================\nSCORECARD\n==============================================================================\nTOTAL: PASS=29 FAIL=0\nVERDICT(report-only, narration): claim_type = bounded_theorem --\n  on the OS0 surface the B4-orbit / taste-multiplet-SUMMED marginal\n  velocity is Lorentz-isotropic (B4-protected); the per-SINGLE-taste\n  marginal velocity carries a real O(0.2) anisotropy that cancels ONLY\n  across the B4-covariant taste orbit. Bounded model; sets no audit.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033417Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_taste_sector_marginal_lv_b4_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

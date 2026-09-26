@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_su3_wigner_l3_cube_haar_mc_2026_05_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.py",
+ "seed": 93642,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033402Z",
+ "elapsed_s": 11.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 SUPPORT=1 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "775ca9b0b72b819f12409119c6e82044326a3c38f2b26719ab812c6246876280",
+ "stdout_tail": ".515448e-24\n\n--- Source-sector Perron solve ---\n  Perron eigenvalue: 0.9176428098\n  P_cube(L=3, beta=6, MC) = 0.1075862340\n\n--- Bridge comparison ---\n  P_triv (rho = delta):         0.4225317396\n  P_loc (rho = 1):              0.4524071590\n  P_candidate(L=2 PBC):         0.4291049969\n  P_cube(L=3 PBC, MC, this):    0.1075862340\n  bridge-support target:        0.5935306800\n  epsilon_witness:              3.030e-04\n\n  |P_cube - bridge_target|:     0.485944\n  gap factor: 1604x epsilon_witness\n\n--- Honest caveats ---\n\n  This is a Haar Monte Carlo with N_samples = 5000.\n  Statistical error on T_lambda values may be large for high\n  irreps. The integrand product across 81 plaquettes has\n  large variance because each plaquette's chi can be near 0\n  with occasional large fluctuations.\n\n  The truncation to 7 irreps may also bias the Perron\n  solve relative to the full source-sector Perron solve at NMAX=7.\n\n==============================================================================\nSUMMARY: THEOREM PASS=8 SUPPORT=1 FAIL=0\n==============================================================================\n\nHeadline:\n  L_s=3 PBC cube Haar MC at beta=6.0, N_samples=5000:\n    P_cube(L=3 PBC, MC) = 0.1076\n    bridge target       = 0.5935\n    gap                 = 0.4859 = 1604x epsilon_witness\n  Result: Haar MC does not provide a bridge-support signal here;\n  the reported P_cube is noise-dominated, not a derived value.\n  next step: exact/rank-aware tensor-network route, not status promotion.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033414Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_su3_wigner_l3_cube_haar_mc_2026_05_04.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_susceptibility_density_identity_zero_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_susceptibility_density_identity_zero_2026_06_12.py",
+ "seed": 93654,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c0271def",
+ "started_utc": "20260926T033414Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c606f0082fb60455a6962c5af014404cd3126ddac0501a13b3c2f75465474302",
+ "stdout_tail": "t=2.606e-16, tol=5.0e-13\nPASS Y2b no negative density-limit entries below tolerance: smallest=-2.120e-16, tol=5.0e-13\nY2c particle-hole point mu_ch=0\n  m=0.20 T=0.15 chi_inf(mu=0)=+2.0320210464905801e-16 sign=ZERO\n  m=0.20 T=0.30 chi_inf(mu=0)=+5.3009244691058611e-17 sign=ZERO\n  m=0.20 T=0.60 chi_inf(mu=0)=+7.0678992921411486e-17 sign=ZERO\n  m=0.40 T=0.15 chi_inf(mu=0)=+8.8348741151764360e-17 sign=ZERO\n  m=0.40 T=0.30 chi_inf(mu=0)=+2.6062878639770486e-16 sign=ZERO\n  m=0.40 T=0.60 chi_inf(mu=0)=+0.0000000000000000e+00 sign=ZERO\n  m=1.00 T=0.15 chi_inf(mu=0)=+4.4174370575882179e-18 sign=ZERO\n  m=1.00 T=0.30 chi_inf(mu=0)=+7.0678992921411486e-17 sign=ZERO\n  m=1.00 T=0.60 chi_inf(mu=0)=+0.0000000000000000e+00 sign=ZERO\nPASS Y2c particle-hole envelope limit is ZERO to stated precision: max_abs_mu0=2.606e-16, tol=5.0e-13\nY2d independent quadrature validation\n  m=0.40 mu_ch=0.00 T=0.30 quad=+2.6062878639770486e-16 gauss=+3.9262518204078584e-15 diff=3.666e-15 quad_err=1.076e-14\nPASS Y2d quad-vs-gauss agreement m=0.40 mu=0.00 T=0.30: diff=3.666e-15, tol=1.0e-10\n  m=0.20 mu_ch=1.25 T=0.15 quad=-1.0601848938211722e-16 gauss=-1.4153764443094158e-15 diff=1.309e-15 quad_err=7.742e-15\nPASS Y2d quad-vs-gauss agreement m=0.20 mu=1.25 T=0.15: diff=1.309e-15, tol=1.0e-10\n  m=1.00 mu_ch=0.75 T=0.60 quad=+0.0000000000000000e+00 gauss=+1.5841633696023552e-16 diff=1.584e-16 quad_err=6.785e-15\nPASS Y2d quad-vs-gauss agreement m=1.00 mu=0.75 T=0.60: diff=1.584e-16, tol=1.0e-10\nTOTAL: PASS=23 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033415Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

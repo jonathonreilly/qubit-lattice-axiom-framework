@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_the_spin_couples_to_the_shifts_vorticity_and_the_frames_rotation_rate_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 62's framed coupling at long wavelength on smooth zero-corner states, on half-densities, with the frame built from the member's lengths (the symmetric e = g^(1/2) = 1 + eta, now varying in time) plus block 158's (1/8) eps.C, the shift entering as (1/2){N^j, -i d_j} (zero background shift), and spatial relabellings that vary in time (xi(t, x), rate chi = d_t xi), which move the walker as a half-density and turn its coin to keep the frame symmetric: (T1) at first order the moved walker differs from the walker of the new fields by exactly (1/4) sigma.curl chi, the coin's turning rate, so consistency needs the coupling (1/4) sigma.curl N, which is the spin part of block 138's symmetric momentum coupled to the shift; (T2) at order strain x relabelling the coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab, the coin's coupling to the rotation rate of the lengths' frame relative to the shift's flow, restores consistency on all basis pairs of jets; (T3) among local couplings linear in the shift's gradient, in the shift times the strain's gradient or in the frame's rate, up to first order in the strain, scalar or coin vector (636 coefficients), the solutions are this coupling plus a multiple of the scalar expansion rate, which time reversal excludes. Exact over the Gaussian rationals. Relabellings in time with clock profiles that vary in space (the lapse), a background shift and second order in the strain are not examined. The supervisor's own derivation; unrefereed; nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 62's framed coupling at long wavelength on smooth zero-corner states, on half-densities, with the frame built from the member's lengths (the symmetric e = g^(1/2) = 1 + eta, now varying in time) plus block 158's (1/8) eps.C, the shift entering as (1/2){N^j, -i d_j} (zero background shift), and spatial relabellings that vary in time (xi(t, x), rate chi = d_t xi), which move the walker as a half-density and turn its coin to keep the frame symmetric: (T1) at first order the moved walker differs from the walker of the new fields by exactly (1/4) sigma.curl chi, the coin's turning rate, so consistency needs the coupling (1/4) sigma.curl N, which is the spin part of block 138's symmetric momentum coupled to the shift; (T2) at order strain x relabelling the coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab, the coin's coupling to the rotation rate of the lengths' frame relative to the shift's flow, restores consistency on all basis pairs of jets; (T3) among local couplings linear in the shift's gradient, in the shift times the strain's gradient or in the frame's rate, up to first order in the strain, scalar or coin vector (636 coefficients), the solutions are this coupling plus a multiple of the scalar expansion rate, which time reversal excludes; (T4) the comparator's connection along the time direction of the time-gauge tetrad, computed from the 3+1 metric at a point, has rotation part antisym(e (d_t - L_N) E), so with the note's sign of N this coupling is the comparator's. Exact over the Gaussian rationals. Relabellings in time with clock profiles that vary in space (the lapse), a background shift and second order in the strain are not examined. The supervisor's own derivation; unrefereed; nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_2026_09_26.py
@@ -25,7 +25,7 @@ Block 158 settled the walker's coupling for relabellings that are fixed in time.
 - **T2: next order, the spin feels the frame's rotation rate.** At order strain times relabelling, the needed coupling is `¼ σ_c ε_cab (e(∂_t + L_N)E)_ab`: the coin's coupling to how fast the lengths' frame rotates relative to the flow of the shift. At first order this reduces to T1's term.
 - **T3: nothing else, up to one term that time reversal forbids.** Take every local coupling linear in the shift's gradient, the shift times the strain's gradient, or the frame's rate, up to first order in the strain, scalar or coin vector. Consistency fixes all of them except a multiple of the local expansion rate, a scalar that is odd under time reversal.
 
-In plain terms: when the relabelling itself moves, the coin has to keep turning to keep up with its frame. The walker then needs a term that lets its spin feel how the frame and the shift rotate. That term is unique, and it is built from the member's own fields. It has the form of the rotation part of the comparator's connection along time; the comparator's operator is not recomputed here. With block 158, the walker's coupling to the member's lengths and shift is now the comparator's, through this order, for every spatial relabelling.
+In plain terms: when the relabelling itself moves, the coin has to keep turning to keep up with its frame. The walker then needs a term that lets its spin feel how the frame and the shift rotate. That term is unique, it is built from the member's own fields, and it is the rotation part of the comparator's connection along time. T4 checks this against the comparator's 3+1 geometry. With block 158, the walker's coupling to the member's lengths and shift is now the comparator's, through this order, for every spatial relabelling.
 
 ## Premises and declared objects
 
@@ -82,11 +82,17 @@ that is, `∂_t log √g + div N` through this order. The expansion rate is odd 
 
 *Proof.* Rank and kernel computed exactly (runner D1). ∎
 
+## Theorem T4 — the coupling is the comparator's
+
+*Statement.* Take the time-gauge tetrad of `ds² = −dt² + g_ij(dx^i + N^i dt)(dx^j + N^j dt)`: `e_0 = ∂_t − N^i∂_i` and `e_a = E^i_a∂_i`. The comparator's connection along `e_0`, `ω_0ab = g(e_a, ∇_{e_0} e_b)`, is antisymmetric, and it equals `antisym(e(∂_t − L_N)E)_ab`. This holds at first order in the strain and the shift, with their product kept. The two-component operator's connection term along `e_0` has the rotation part `¼ε_abc ω_0ab σ_c`. In the comparator, the shift enters the time derivative as `∂_t − N·∂`. This note's walker writes it as `+½{N, −i∂}`, so its `N` is the comparator's with the opposite sign. With that sign, the rotation part is T2's coupling.
+
+*Proof.* Torsion-freeness gives `∇_{e_0}e_b = ∇_{e_b}e_0 + [e_0, e_b]`. The first term projects on `e_a` as the symmetric extrinsic curvature, and the second is `(∂_t − L_N)E_b`. The runner computes the 3+1 metric's connection coefficients at a point with generic jets and checks the identity exactly (runner E1). ∎
+
 ## What this settles and what it does not
 
 - **Programme T** (panel of 2026-09-26 afternoon) asked what the member's relabellings demand of the walker's coupling.
   - Block 158 answered this for relabellings fixed in time.
-  - This note answers it for relabellings that vary in time: the coin must couple to the shift's vorticity and to the frame's rotation rate, uniquely, in the form the comparator's connection has.
+  - This note answers it for relabellings that vary in time: the coin must couple to the shift's vorticity and to the frame's rotation rate, uniquely, and that coupling is the comparator's (T4).
   - Spatial relabellings, including those that vary in time, are required under both readings of relabellings in time. So these results do not depend on that reading.
 - **The landed symmetric momentum.** Block 136 coupled the shift to `P^B`, and block 138 found its spin part. T1 shows that this spin part is exactly what relabellings that vary in time require.
 - **Not settled.**
@@ -138,9 +144,10 @@ Target: programme T in time, shift sector. The obligations are:
 - (O1) the premise, block 138's momentum (A3);
 - (O2) first order (B1);
 - (O3) the coupling at order strain times relabelling (C1);
-- (O4) uniqueness (D1).
+- (O4) uniqueness (D1);
+- (O5) the comparator's identification (E1).
 
-The strongest missing step is the lapse sector.
+The strongest missing step is the lapse sector; block 164 later found it needs no new term.
 
 ## No-Go Discipline Gate
 
@@ -233,4 +240,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_2026_09_26.py
 ```
 
-Expected: `TOTAL: PASS=11 FAIL=0`.
+Expected: `TOTAL: PASS=12 FAIL=0`.

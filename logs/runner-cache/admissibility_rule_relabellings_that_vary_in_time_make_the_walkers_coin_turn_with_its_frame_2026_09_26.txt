@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_2026_09_26.py
-runner_sha256: f7f9e55dea2ac2d251a46ead03f9f9a1d43a61781538b00cc47a5fc832ed34e0
-input_fingerprint_sha256: b05bd387c08c7ecb194b8eba01f481c717559c164267ddf4b05b5b88abdb7a2d
+runner_sha256: a16fa3877ed4ef14c9bdd171bf60d1be97cefe48d60add01122bfbe4edd22499
+input_fingerprint_sha256: d2fa0312b984acbe6a82eed9dd003b899f4384b43cfa37bff7f5ad6bcb7b3dc9
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 33.13
+elapsed_sec: 33.41
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -17,6 +17,7 @@ PASS: A3 landed block 138: the symmetric momentum that block 136 couples to the 
 PASS: B1 order u, all 60 basis relabellings (static and time-varying) and then all 7200 basis pairs: the principal parts of the moved walker and of the walker of the new fields agree (the shift N' = u chi absorbs the moving relabelling), and at order u the residual is exactly (1/4) sigma.curl chi, the turning rate of the coin; so the walker needs (1/4) sigma.curl N
 PASS: C1 the coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab, expanded to first order in the strain as (1/4) sigma.curl N + (1/4) sigma_c eps_cab [-(eta M)_ab + (M eta)_ab + (edot eta)_ab] with M_ij = d_j N^i, satisfies all 29040 exact equations at orders u and u s
 PASS: D1 the exact system in 636 unknowns (couplings linear in the shift's gradient, in the shift times the strain's gradient, or in the frame's rate, up to first order in the strain, scalar and coin vector) has rank 635; its kernel is one scalar coupling, the expansion rate div N + N.grad tr(e - 1) + tr edot - tr((e - 1) edot), odd under time reversal (the walk's Theta commutes with H, and edot, N are odd)
+PASS: E1 the comparator's connection along the time direction e_0 = d_t - N.d of the time-gauge tetrad of ds^2 = -dt^2 + g_ij (dx^i + N^i dt)(dx^j + N^j dt), computed from the 3+1 metric at a point with generic jets, is antisymmetric and equals antisym(e (d_t - L_N) E) at first order in the strain and the shift (their product kept); with the note's opposite sign for N this is block 163's coupling, (1/4) eps_abc omega_0ab sigma_c being the rotation part of the two-component operator's connection term
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -28,7 +29,7 @@ per_block: executed - the 29040-equation system: the candidate solves it, rank 6
 lattice_wide: checked and not executed - relabellings in time with varying clock profiles (the lapse), a background shift, second order in the strain, and the lattice placement
 PASS: G1 the five N5 resolution lines are printed
 scope: spatial relabellings that vary in time, zero background shift, long wavelength: the walker needs (1/4) sigma.curl N at first order and the frame's rotation-rate coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab at order strain x relabelling, unique up to the time-odd expansion rate; own derivation; nothing adopted (33s)
-TOTAL: PASS=11 FAIL=0
+TOTAL: PASS=12 FAIL=0
 
 ----- stderr -----
 

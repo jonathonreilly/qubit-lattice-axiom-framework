@@ -14,6 +14,8 @@ C (T2): order u s: the coupling (1/4) sigma.curl N + (1/4) sigma_c eps_cab [-(et
    M_ij = d_j N^i, solves all 29040 exact equations from the basis pairs.
 D (T3): the system has 636 unknowns and rank 635; its one-dimensional kernel is the scalar expansion rate
    div N + N.grad tr(e - 1) + tr edot - tr((e - 1) edot), odd under time reversal.
+E (T4): the comparator's connection along its time direction, from the 3+1 metric at a point, has rotation part
+   antisym(e (d_t - L_N) E): with the note's sign of N, block 163's coupling is the comparator's.
 Exact arithmetic over the Gaussian rationals; identities bilinear in the jets are proved on every pair of basis jets.
 The runner scans its own source for floating-point literals.
 """
@@ -50,6 +52,7 @@ MUTATION_GATE = {
     "turning_rate_forged": "B",
     "candidate_sign_forged": "C",
     "kernel_forged": "D",
+    "adm_sign_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -386,6 +389,73 @@ def family_d(checks: Checks) -> None:
     checks.check("D1", ok, "the exact system in 636 unknowns (couplings linear in the shift's gradient, in the shift times the strain's gradient, or in the frame's rate, up to first order in the strain, scalar and coin vector) has rank 635; its kernel is one scalar coupling, the expansion rate div N + N.grad tr(e - 1) + tr edot - tr((e - 1) edot), odd under time reversal (the walk's Theta commutes with H, and edot, N are odd)")
 
 
+# ============================================================================================ family E (T4: the comparator's connection along time)
+def family_e(checks: Checks) -> None:
+    import sympy as sp
+    X = sp.symbols("t x1 x2 x3")
+    s_, r_ = sp.symbols("s r")
+    eta = [[None] * 3 for _ in range(3)]
+    for (a, i) in SYM:
+        p = sp.Symbol(f"h{a}{i}") + sum(sp.Symbol(f"h{a}{i}_{m}") * X[m] for m in range(4))
+        eta[a][i] = eta[i][a] = p
+    nu = [sp.Symbol(f"n{k}") + sum(sp.Symbol(f"n{k}_{m}") * X[m] for m in range(1, 4)) for k in range(3)]
+
+    def trunc(ex):
+        ex = sp.expand(ex)
+        return sp.expand(sum(ex.coeff(s_, i).coeff(r_, j) * s_ ** i * r_ ** j for i in range(2) for j in range(2)))
+    e = sp.Matrix(3, 3, lambda a, i: (1 if a == i else 0) + s_ * eta[a][i])
+    E = (sp.eye(3) - s_ * sp.Matrix(3, 3, lambda a, i: eta[a][i])).T
+    N = [r_ * nu[k] for k in range(3)]
+    g = (e.T * e).applyfunc(trunc)
+    G4 = sp.zeros(4, 4)
+    G4[0, 0] = trunc(-1 + sum(g[i, j] * N[i] * N[j] for i in range(3) for j in range(3)))
+    for i in range(3):
+        G4[0, i + 1] = G4[i + 1, 0] = trunc(sum(g[i, j] * N[j] for j in range(3)))
+        for j in range(3):
+            G4[i + 1, j + 1] = g[i, j]
+    eA = sp.zeros(4, 4)
+    eA[0, 0] = 1
+    for i in range(3):
+        eA[0, i + 1] = -N[i]
+    for a in range(3):
+        for i in range(3):
+            eA[a + 1, i + 1] = E[i, a]
+    zero = {x: 0 for x in X}
+    dd = lambda f, m: sp.diff(f, X[m])
+    G0 = G4.subs(zero).applyfunc(trunc)
+    gam_inv = (E * E.T).applyfunc(trunc)
+    Gi = sp.zeros(4, 4)
+    Gi[0, 0] = -1
+    for i in range(3):
+        Gi[0, i + 1] = Gi[i + 1, 0] = N[i]
+        for j in range(3):
+            Gi[i + 1, j + 1] = trunc(gam_inv[i, j] - N[i] * N[j])
+    Gi0 = Gi.subs(zero).applyfunc(trunc)
+    inv_ok = (G0 * Gi0).applyfunc(trunc) == sp.eye(4)
+    dG = [[[trunc(dd(G4[m, n], l).subs(zero)) for l in range(4)] for n in range(4)] for m in range(4)]
+    Chr = [[[trunc(sum(Gi0[k, l] * (dG[l][m][n] + dG[l][n][m] - dG[m][n][l]) for l in range(4)) / 2) for n in range(4)] for m in range(4)] for k in range(4)]
+    eA0 = eA.subs(zero).applyfunc(trunc)
+    omega = sp.zeros(3, 3)
+    for b in range(3):
+        nb = []
+        for nu_ in range(4):
+            v = sum(eA0[0, l] * trunc(dd(eA[b + 1, nu_], l).subs(zero)) for l in range(4))
+            v += sum(Chr[nu_][l][k] * eA0[0, l] * eA0[b + 1, k] for l in range(4) for k in range(4))
+            nb.append(trunc(v))
+        for a in range(3):
+            omega[a, b] = trunc(sum(G0[m, n] * eA0[a + 1, m] * nb[n] for m in range(4) for n in range(4)))
+    sgn = 1 if mut("adm_sign_forged") else -1          # the comparator's derivative along its time direction is d_t - L_N
+    LNE = sp.zeros(3, 3)
+    for i in range(3):
+        for b in range(3):
+            LNE[i, b] = sum(N[j] * dd(E[i, b], j + 1) - E[j, b] * dd(N[i], j + 1) for j in range(3))
+    DtE = sp.Matrix(3, 3, lambda i, b: dd(E[i, b], 0)) + sgn * LNE
+    cand = (e * DtE).subs(zero).applyfunc(trunc)
+    anti = lambda M: ((M - M.T) / 2).applyfunc(sp.expand)
+    ok = inv_ok and anti(omega) == anti(cand) and ((omega + omega.T) / 2).applyfunc(sp.expand) == sp.zeros(3, 3)
+    checks.check("E1", ok, "the comparator's connection along the time direction e_0 = d_t - N.d of the time-gauge tetrad of ds^2 = -dt^2 + g_ij (dx^i + N^i dt)(dx^j + N^j dt), computed from the 3+1 metric at a point with generic jets, is antisymmetric and equals antisym(e (d_t - L_N) E) at first order in the strain and the shift (their product kept); with the note's opposite sign for N this is block 163's coupling, (1/4) eps_abc omega_0ab sigma_c being the rotation part of the two-component operator's connection term")
+
+
 # ============================================================================================ family F
 FENCES = (
     "This note works within blocks 62, 65, 136 and 138 as landed on main (the walker's framed coupling, what turning the coin does, the shift and the symmetric momentum); it reports what relabellings that vary in time require of the walker's coupling to the shift and to the frame's rate, through first order in the strain, at leading order in the spacing; nothing is adopted and no gravitational claim is made.",
@@ -471,6 +541,7 @@ def main(argv) -> int:
     family_b(checks)
     family_c(checks)
     family_d(checks)
+    family_e(checks)
     family_f(checks, texts[0])
     family_g(checks)
     if ACTIVE_MUTATION:

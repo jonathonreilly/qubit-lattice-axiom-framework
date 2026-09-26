@@ -1,0 +1,10 @@
+PASS linear extensions: every parent-first order of the six windows equals the causal product, at (3,1,2) and (5,1,2)
+PASS causal clocks: rates supported only on formable sites reproduce the causal product
+PASS pair gap: 144 K_2 is 22, 24 or 26, and the two-parent marginal differs from 1/36 by total variation 1/72
+PASS three-site distances: at (3,1,2) the V, bent chain and lambda match the stated total variations, including parallel growth
+PASS domino: forming the parent-child domino after the other parent is the static law and differs by 1/72
+PASS two sites: every candidate on a single bond reproduces the causal law
+PASS marginals: on every down-closed subset the causal marginal is the subset's own causal law
+PASS plaquette: on the four-site diamond the five noncausal laws have the stated total variations
+SUMMARY: confirmed partial. Every parent-first order equals the product of one-site kernels. Rates supported only on formable sites do too. At (3,1,2) the V differs from that product by 1/72 for the static law, 1/108 for uniform clocks, 1/72 for the seeded clock, 7/648 for the attracting clock and 37/3888 for parallel growth. The bent chain and lambda give 1/216, 0, 1/324 and 17/3888 for those four clocks, and the static law agrees. A two-site window does not separate them. Down-closed marginals reproduce the subset law. The random policy sample was not repeated.
+HIT: confirmed - on a causal window every parent-first clock finishes in the product of kernels given the parents, and the recorded noncausal candidates first differ from it on a three-site window by the stated total variations

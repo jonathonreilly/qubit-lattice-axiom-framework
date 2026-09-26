@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-causal-clauses-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j0b26",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/causal-clauses/referee_w-macbookpro90c72-j0b26/check.py",
+ "seed": 43874,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b8a1ec5d",
+ "started_utc": "20260926T173114Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. Every parent-first order equals the product of one-site kernels. Rates supported only on formable sites do too. At (3,1,2) the V differs from that product by 1/72 for the static law, 1/108 for uniform clocks, 1/72 for the seeded clock, 7/648 for the attracting clock and 37/3888 for parallel growth. The bent chain and lambda give 1/216, 0, 1/324 and 17/3888 for those four clocks, and the static law agrees. A two-site window does not separate them. Down-closed marginals reproduce the subset law. The random policy sample was not repeated."
+ },
+ "review": "Parent-first orders and formable-site clocks equal the causal product. At (3,1,2) the V differs by 1/72 static, 1/108 uniform, 1/72 seeded, 7/648 attracting and 37/3888 parallel growth. The chain and lambda give 1/216, 0, 1/324 and 17/3888.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:causal-clauses:a2/; its files are probes/work/derive/causal-clauses/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/causal-clauses/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ad2bb5606167b313ac91f30e14acb46449631e81e24830d45eccdf3eb959157d",
+ "stdout_tail": ")\nPASS causal clocks: rates supported only on formable sites reproduce the causal product\nPASS pair gap: 144 K_2 is 22, 24 or 26, and the two-parent marginal differs from 1/36 by total variation 1/72\nPASS three-site distances: at (3,1,2) the V, bent chain and lambda match the stated total variations, including parallel growth\nPASS domino: forming the parent-child domino after the other parent is the static law and differs by 1/72\nPASS two sites: every candidate on a single bond reproduces the causal law\nPASS marginals: on every down-closed subset the causal marginal is the subset's own causal law\nPASS plaquette: on the four-site diamond the five noncausal laws have the stated total variations\nSUMMARY: confirmed partial. Every parent-first order equals the product of one-site kernels. Rates supported only on formable sites do too. At (3,1,2) the V differs from that product by 1/72 for the static law, 1/108 for uniform clocks, 1/72 for the seeded clock, 7/648 for the attracting clock and 37/3888 for parallel growth. The bent chain and lambda give 1/216, 0, 1/324 and 17/3888 for those four clocks, and the static law agrees. A two-site window does not separate them. Down-closed marginals reproduce the subset law. The random policy sample was not repeated.\nHIT: confirmed - on a causal window every parent-first clock finishes in the product of kernels given the parents, and the recorded noncausal candidates first differ from it on a three-site window by the stated total variations\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j0b26",
+  "at_utc": "20260926T173127Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Parent-first clocks finish in the causal product. At (3,1,2) the V distances are 1/72, 1/108, 1/72, 7/648 and 37/3888. The random policy sample was not repeated.",
+  "by": "w-macbookpro90c72-j0b26",
+  "at_utc": "20260926T173127Z"
+ }
+}

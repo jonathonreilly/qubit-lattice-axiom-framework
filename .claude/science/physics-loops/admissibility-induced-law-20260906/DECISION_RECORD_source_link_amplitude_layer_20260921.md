@@ -1243,3 +1243,13 @@ Block 169 (c7c16c791e) is a harvest of #9158, confirmed by #9325 (Grok). Block 9
 - The separation of two records still jumps as the simple random walk off the origin, so the lag acts only through sojourn times.
 
 The remaining Grok-confirmed candidates are #8853/#9215 with #8977/#9320 (bond–coin ties at reach 1–2; heavy ranks) and #9189 with #9317 (the owner's mobile-record lane).
+
+## Fifty-seventh addendum (2026-09-26, campaign): block 167 v2, the massive sea
+
+Nothing is adopted.
+
+Block 167 v2 (7993143510) adds T4, the supervisor's extension, which is unrefereed. With block 139's staggered mass `μ > 0`:
+- the mass anticommutes with every framed walk, so the sea is gapped by `2μ`;
+- its long-wave response tends to half the massive uniform form `−⟨(|s × εs|² + μ²|εs|²)/(2R³)⟩`, which is negative for every nonzero strain.
+
+So, with the sea counted, member plus sea gives way to long transverse traceless shears at every `K`, massless or massive. For the owner's reading question (block 147), this is one more consequence of the member seeing the sea.

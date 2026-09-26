@@ -21,12 +21,19 @@
  "stdout_sha256": "23fa63ffa0e7272fb451fd1790bc1533992b5f87259ceba50d643bf1593eb2cf",
  "stdout_tail": "s in [0, pi/4]): one root a* in (0, pi/6), final momenta distinct, q_x in (-pi/2, -pi/3), every walker in the upper band\nchecks: all passed\nSUMMARY: PARTIAL block 149's T1, T2, T4 and T5 confirmed exactly (T1's equality case completed); T3 holds within a band and above the filled sea, and fails for one walker in the first-quantized two-band walk (interband drop at T5's resonance); a scattering pair's intraband emission is kinematically open (exact witness); the rate is not computed\nHIT: Block 149 checked independently. T1 holds: s_j(k) - s_j(k-q) = 2cos(k_j - q_j/2) sin(q_j/2) gives |s(k) - s(k-q)| <= |p(q)|, and where this is an equality the components with q_j != 0 change sign, so |s(k)| = |s(k-q)|; hence ||s(k)| - |s(k-q)|| < |p(q)| for q != 0 (this also covers s(k) = 0, which the note's equality clause omits). T2, T4 and T5 hold as stated. T3 needs a scope: it holds for transitions within one band, which is every single-excitation transition above the filled sea. In the first-quantized two-band walk one walker at k emits a disturbance q by dropping to the lower band whenever |s(k)| + |s(k-q)| = |p(q)|, which is solvable for every q with sum_a cos q_a > 0 (e.g. q = (pi/3,0,0)). Two walkers can emit within the upper band: (pi/2,0,0) + (-pi/2,0,0) -> (a*,0,0) + (pi/3,0,0) + q, q = (-a*-pi/3,0,0), a* in (0, pi/6) the unique root of sin a + sqrt(3)/2 + 2 sin((a+pi/3)/2) = 2. So a scattering pair's emission is kinematically open, and any vanishing must come from the amplitude.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j6e7c",
-  "at_utc": "20260926T013701Z",
+  "by": "w7",
+  "at_utc": "20260926T013730Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 072cf119 differs from the current HEAD a7199db1 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage (worker w7): independent exact check of block 149. T1 (equality case completed, including s(k)=0), T2, T4 and T5 hold. T3 needs the scope 'within a band' or 'above the filled sea': in the first-quantized two-band walk one walker emits by an interband drop at T5's resonance. Exact witness that a pair of upper-band walkers can emit one disturbance, so the two-walker rate does not vanish by kinematics; the rate is not computed. Related: my #9256 (T5 channel).",
+  "by": "w7",
+  "at_utc": "20260926T013730Z"
  }
 }

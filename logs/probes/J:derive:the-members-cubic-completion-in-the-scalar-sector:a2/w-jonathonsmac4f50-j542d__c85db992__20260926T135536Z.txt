@@ -1,0 +1,43 @@
+== A  the member and the comparator's quadratic part
+PASS A1 member invariant under relabelling in time (du = zeta-dot, dN = -grad zeta) for every field
+PASS A2 member invariant under spatial relabelling (dh = d xi + d xi^T, dN = xi-dot) for every field
+PASS A3 quadratic part of N sqrt(g)(K K - K^2 + R) equals the member (block 144 T1), all ten field components
+== B  scalar sector, rotation-invariant (planar momenta, WLOG by rotation invariance)
+   B scalar/iso: vertices 1122 -> 67 independent; consistent 21; redefinitions 17 (all consistent: True); classes 4; strictly invariant classes 0; 17s
+PASS B scalar/iso: redefinitions lie in the consistent space
+PASS B scalar/iso: the comparator's cubic vertex is consistent and nontrivial
+PASS B scalar/iso: number of classes = 4 :: 4
+PASS B scalar/iso: no strictly gauge-invariant class
+   sectors (classes realisable with the listed vertices only):
+     no shift factor: consistent 6, classes 2
+     no lapse factor: consistent 6, classes 1
+     lengths only: consistent 3, classes 1
+     no time derivative: consistent 7, classes 2
+PASS B5 a static lengths-only class exists in the scalar sector (not the comparator, which needs the lapse)
+PASS B6 V_n = n |d_i h_ij - d_j tr h|^2: consistent and nontrivial in the scalar sector
+PASS B6 V_h (eight-term static lengths-only cubic): consistent and nontrivial in the scalar sector
+PASS B7 comparator, V_n and V_h are independent classes
+PASS B8 on scalar configurations d_i h_ij - d_j tr h = -4 d_j psi (psi = p): invariant under longitudinal relabellings only
+== C  full configurations, rotation-invariant (validation: known uniqueness of the comparator's vertex)
+   C full/iso: vertices 1122 -> 87 independent; consistent 18; redefinitions 17 (all consistent: True); classes 1; strictly invariant classes 0; 76s
+PASS C full/iso: redefinitions lie in the consistent space
+PASS C full/iso: the comparator's cubic vertex is consistent and nontrivial
+PASS C full/iso: number of classes = 1 :: 1
+PASS C full/iso: no strictly gauge-invariant class
+PASS C5 V_n and V_h are not consistent once all configurations are allowed (scalar-sector artefacts)
+== D  scalar sector, cubic-symmetric (general momenta)
+   D scalar/cubic: vertices 3186 -> 130 independent; consistent 30; redefinitions 26 (all consistent: True); classes 4; strictly invariant classes 0; 438s
+PASS D scalar/cubic: redefinitions lie in the consistent space
+PASS D scalar/cubic: the comparator's cubic vertex is consistent and nontrivial
+PASS D scalar/cubic: number of classes = 4 :: 4
+PASS D scalar/cubic: no strictly gauge-invariant class
+PASS D5 the rotation-invariant classes span the cubic-symmetric classes (anisotropy adds none) :: 4
+== E  full configurations, cubic-symmetric (general momenta) [long]
+   E full/cubic: vertices 3186 -> 183 independent; consistent 27; redefinitions 26 (all consistent: True); classes 1; strictly invariant classes 0; 844s
+PASS E full/cubic: redefinitions lie in the consistent space
+PASS E full/cubic: the comparator's cubic vertex is consistent and nontrivial
+PASS E full/cubic: number of classes = 1 :: 1
+PASS E full/cubic: no strictly gauge-invariant class
+== done in 844s
+SUMMARY: PARTIAL (exact, leading order in the spacing): the scalar-sector first-order problem has 4 classes modulo local field redefinitions (rotation-invariant or cubic-symmetric alike), one of them the comparator's; none is strictly invariant; the unrestricted problem has exactly 1 (the comparator's). So the pre-registered 'one-dimensional continuum part' cannot hold in the scalar sector even for the comparator; exact lattice lift (range 1-2) not computed
+HIT scalar-sector restriction is not selective: 4 first-order classes (comparator + 3) vs 1 in the full sector, exact over Q

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_theta_gauge_native_positive_class_emergent_sector_weighting_2026_07_04.py",
+ "seed": 83270,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004110Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e067ddcfb6ac2bf009fb6d96bd3ef0487bda2046fe20a4d31b741a7aaa6ce0e8",
+ "stdout_tail": "A PASS explicit SU(2)^3 paths endpoint/unitarity worst_err=6.281e-16\nB PASS N=24 T=6 sectors=[-3, -2, -1, 0, 1, 2, 3] min_link_weight=6.738e-03 adjacent=(-3, -2) conjugation_pairing=True\nC PASS admitted_thetas_from_positive_masses=[0.0] (360-point grid) fake_recovered_thetas=[0.7] nonreal_fake=True\nD PASS mixed_parity=True even_sector=-2 odd_sector=-3 native_mass=2.245830e-12 pi_weighted_value=-2.245830e-12\nH PASS relative_even=[0.0, 3.14159265359] relative_odd=[0.0, 3.14159265359] relative_mixed=[0.0] exact_odd=[0.0] singleton_all_alias=True\nE PASS coarse_nonnegative=True coarse_equals_fine=True weak_T_windows=[[-1, 0, 1], [-2, -1, 0, 1, 2], [-3, -2, -1, 0, 1, 2, 3]] tv_to_delta0=['1.350e-04', '7.842e-06', '4.049e-07']\nF PASS N=6 links=3 ticks=3 min_plaquette=2.466e-01 min_transfer=1.320e-01 conjugation=True sectors=[-3, -2, -1, 0, 1, 2, 3]\nG PASS missing=[] banned=[] bad_md_targets=[]\nSUMMARY PASS=8 FAIL=0\nDONE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

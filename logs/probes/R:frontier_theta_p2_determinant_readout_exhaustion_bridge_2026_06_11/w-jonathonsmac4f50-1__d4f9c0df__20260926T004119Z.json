@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_theta_p2_determinant_readout_exhaustion_bridge_2026_06_11.py",
+ "seed": 83279,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004119Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=47 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1700779c8fef24a6eabdd57fa6b6c952576bf53bcf0e7c83f30eb7f19b5c1d52",
+ "stdout_tail": "mposition (per-plaquette class) + named boundary\n------------------------------------------------------------------------------\nPASS: per-plaquette (single-plane-summand) class: all dual-pair cross-plane mixed derivatives vanish  [composes with retained_bounded cross-plane absence; no local F.Ftilde slot to host an orientation datum]\nPASS: BOUNDARY: registrability of the physical readout (W2) is a standing premise, not derived here  [theorem is conditional on the Record-registrable class (additivity + orbit constancy)]\nPASS: BOUNDARY: strong-CP premise 1 ('no bare theta slot') is a SEPARATE action-surface premise  [RP no-go note keeps it open; this bridge addresses ONLY the mass-orientation datum]\nPASS: BOUNDARY: per-plaquette class is a licensed input (retained_bounded); multi-plaquette/clover reopens a cross-plane slot  [the action-level half is conditional on the supplied class]\nPASS: BOUNDARY: fermion-source/insertion observables carry (D+M)^{-1} dependence outside the theta_eff vacuum-weight premise  [the bridge covers the arg det(M_u M_d) contribution to theta_eff, not all M-dependence]\nPASS: BOUNDARY: prior additive+even core note is cited as prior statement (currently unaudited); its legs are re-derived self-contained here  [no unaudited dependency is load-bearing for this runner's checks]\n\n==============================================================================\nTOTAL: PASS=47 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004120Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

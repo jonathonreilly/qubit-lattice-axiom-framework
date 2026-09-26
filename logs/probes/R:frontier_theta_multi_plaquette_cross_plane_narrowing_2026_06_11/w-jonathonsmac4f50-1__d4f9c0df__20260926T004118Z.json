@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_multi_plaquette_cross_plane_narrowing_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_theta_multi_plaquette_cross_plane_narrowing_2026_06_11.py",
+ "seed": 83278,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004118Z",
+ "elapsed_s": 1.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c05af8bfcf6a64b4e99434e4da38b8e3a51a085b5855df4312dc9e5682ad5631",
+ "stdout_tail": "-----------------------------------------\n  [PASS] d=3: among the 3 spatial coordinate planes, every pair shares a direction (the cross-plane pairing needs 4 distinct directions)\n\n----------------------------------------------------------------------------------------\n(O) Interface pins on the consumed dependency notes\n----------------------------------------------------------------------------------------\n  [PASS] license note pin: verbatim license condition string present\n  [PASS] cross-plane note pin: the multi-plaquette reopening boundary this runner narrows is present verbatim\n\n========================================================================================\nTOTAL: PASS=26 FAIL=0\n========================================================================================\nVERDICT (bounded): within the adjacency-licensed action class the\ncross-plane FtildeF absence EXTENDS to local multi-plaquette terms:\nverbatim composite license -> single plaquettes only (all loop\nlengths; reopening empty); pairwise-proximity weakening -> genuine\nmulti-plaquette products exist but complementary-plane pairs are\nexcluded at every translation, so no cross-plane monomial at any\nfactor order. The theta_gauge residual on this surface narrows to:\n(i) chain-connected non-pairwise-proximate cluster terms (explicit\nwitness; license-external, as is the 06-07 clover), and (ii) the\nglobal winding-sector / emergent-Q bridge data. No license\nderivation, no theta closure, no audit status is claimed.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_two_band_lattice_moyal_full_b2_2026_06_13",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_band_lattice_moyal_full_b2_2026_06_13.py",
+ "seed": 83286,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004126Z",
+ "elapsed_s": 10.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0af73673c1926fb2898a1d4d1e37972448e4e6696a01fb7925039473343252fd",
+ "stdout_tail": "e Moyal integral 48->64 drift is below frozen tolerance :: max_rel=4.254397e-05\nPASS partial-fraction pole reconstruction of tr G2 is below frozen tolerance :: max_abs=4.983756e-12\nRESULT_TABLE\nm raw_full raw_cross raw_second closed_form exact rel_dev quad_rel\n0.0 -1.919231499963e-01 -1.512796811380e-01 -4.064346885829e-02 +4.293368751700e-02 +4.293368751700e-02 0.000000e+00 6.848300e-06\nPASS component accounting full=cross+second at m=0.0 :: delta=+6.495e-15\n0.2 -1.911159680716e-01 -1.511919018653e-01 -3.992406620630e-02 +4.275311890648e-02 +4.127331849500e-02 3.585368e-02 1.497703e-05\nPASS component accounting full=cross+second at m=0.2 :: delta=+3.414e-15\n0.3 -1.900675977836e-01 -1.510512013202e-01 -3.901639646342e-02 +4.251859585729e-02 +3.917581159100e-02 8.532776e-02 2.466104e-05\nPASS component accounting full=cross+second at m=0.3 :: delta=-6.606e-15\n0.5 -1.864358826837e-01 -1.503642275925e-01 -3.607165509114e-02 +4.170617212803e-02 +3.074445999900e-02 3.565427e-01 4.254397e-05\nPASS component accounting full=cross+second at m=0.5 :: delta=-2.082e-15\nPASS S2 measured non-reference residual is honestly bounded; complete Moyal B^2 does not close below 2% :: max_rel=3.565427e-01 at m=0.5; bound=0.38\nCLAIM_STATUS leaves named residual: after the single m=0 cell normalization, the full lattice Moyal B^2 response misses the independent masses by up to 35.654%; the missing object is a mass-dependent finite-cell/full-PT correction, not a scalar prefactor.\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004137Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_two_band_lattice_moyal_full_b2_2026_06_13.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:spin10_symmetric_atomic_gaps_mirror_boundary_projection_and_current_response_2026_09_14",
+ "type": "runner-reexecution",
+ "lane": "spin10",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/spin10_symmetric_atomic_gaps_mirror_boundary_projection_and_current_response_2026_09_14.py",
+ "seed": 83251,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004051Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=4 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "77f9733123aa1a816cb6de4f4d77f372d9f6a671c3a98585969f4c7c3f4d1670",
+ "stdout_tail": "calar\": 8.171386355485705}}\nPASS: check_induced_terms_and_fixed_box_control\n{\"actual_interband_Kubo_integrals\": [{\"D\": 1.0, \"L\": 3, \"kind\": \"projected\", \"omega\": 0.001, \"predicted\": 8.0, \"relative_error\": 7.499983656344966e-08, \"sum_normalized_optical_slope\": 8.000000599998693}, {\"D\": 1.0, \"L\": 3, \"kind\": \"projected\", \"omega\": 0.0005, \"predicted\": 8.0, \"relative_error\": 1.8749517272098615e-08, \"sum_normalized_optical_slope\": 8.000000149996138}, {\"D\": 1.0, \"L\": 3, \"kind\": \"quadratic_dilation\", \"omega\": 0.001, \"predicted\": 97.15459634139305, \"relative_error\": -5.972057982917001e-06, \"sum_normalized_optical_slope\": 97.15401612851039}, {\"D\": 1.0, \"L\": 3, \"kind\": \"quadratic_dilation\", \"omega\": 0.0005, \"predicted\": 97.15459634139305, \"relative_error\": -1.4936513349494973e-06, \"sum_normalized_optical_slope\": 97.15445122630052}]}\nPASS: check_actual_lattice_current_response\nper_element: exact Clifford, Casimir and fourth exterior-tensor identities test the supplied Spin(10) interaction\nper_site: full atomic Fock spaces challenge the gap, elementary and composite propagators, and non-Gaussianity\nper_mode: complete projected slab spectra and actual velocity matrices detect all eight corner nodes and their handedness\nper_block: full atom-bath operators and a separate reduced-sector spectrum challenge the induced interaction and Schur bound\nlattice_wide: actual-current Kubo surface integrals test the free infrared response; no finite-coupling chiral phase is inferred\nTOTAL: PASS=4 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

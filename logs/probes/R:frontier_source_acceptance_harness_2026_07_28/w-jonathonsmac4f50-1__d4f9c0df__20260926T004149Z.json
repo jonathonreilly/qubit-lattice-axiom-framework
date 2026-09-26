@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_source_acceptance_harness_2026_07_28",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_source_acceptance_harness_2026_07_28.py",
+ "seed": 83309,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004149Z",
+ "elapsed_s": 127.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c0355399465f7142adcdce72ed354fd00558f209878f07c21268861e42bffa81",
+ "stdout_tail": "s\": [\n        \"orientation_twist\",\n        \"response_locking\",\n        \"free_tensor_carrier\"\n      ],\n      \"verdict\": \"REJECT\"\n    },\n    \"typed_bridge_landed\": \"REJECT\",\n    \"wrong_tensor_pin\": \"DRIFT\"\n  },\n  \"frozen_record_digests\": {\n    \"recoil\": \"f0700d2a13aaabc3817d422876d76682c2ed6c393f796f58c9f16f83428f2530\",\n    \"tensor_lift\": \"7ceadfe93210f0e16b523cc525987b490ed5ed67451a6a3f283c670858d4cc56\",\n    \"typed_bridge\": \"dbda46063afcd1d3d7092079f090907f23fbbf0786c2fa8164be1efee16fd40b\",\n    \"typed_bridge_contract_rows\": \"9ced4631a1382e85989c8a301fca8bc48bf7f759aad71c8ba7c5110c85614b35\"\n  },\n  \"harness_input_ports\": {\n    \"recoil\": false,\n    \"tensor_lift\": true,\n    \"typed_bridge\": false\n  },\n  \"new_physics_claimed\": false,\n  \"pins\": {\n    \"recoil\": {\n      \"actual\": \"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75\",\n      \"expected\": \"4f7e25a20bcea41c285bfb52b122f84ec5c41f1f6095b6ec0068d2a228ed5d75\",\n      \"verified\": true\n    },\n    \"tensor_lift\": {\n      \"actual\": \"33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31\",\n      \"expected\": \"33c2bf0df699da181eed1414ee828c3633fec2be51ac1646659ffce714d2ab31\",\n      \"verified\": true\n    },\n    \"typed_bridge\": {\n      \"actual\": \"834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59\",\n      \"expected\": \"834f63475a66e02b7b2a956c710d9b6b3107df764605bae747cc1bf40ed61b59\",\n      \"verified\": true\n    }\n  },\n  \"runtime_seconds\": 127.816142,\n  \"tool_role\": \"non-authoritative candidate testing\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004357Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_source_acceptance_harness_2026_07_28.txt against the .txt beside this log"
+  ]
+ }
+}

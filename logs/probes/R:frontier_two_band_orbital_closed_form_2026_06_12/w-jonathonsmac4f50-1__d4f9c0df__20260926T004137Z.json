@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_two_band_orbital_closed_form_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_two_band_orbital_closed_form_2026_06_12.py",
+ "seed": 83297,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004137Z",
+ "elapsed_s": 3.4,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=30 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "711639fc24e4518985c09e977b0391d1a3eb5917b8ff117e1d0680d97f2fe1d2",
+ "stdout_tail": "ll_PT=3.9175811591e-02 rel_dev=1.438e-01 LP_only_rel=1.384e-02\nPASS: no-fudge closed form is inside the frozen residual gate m=0.3 :: rel=1.438e-01, tol=3.0e-01\nREPRO m=0.5 closed=3.9423409639e-02 full_PT=3.0744459999e-02 rel_dev=2.823e-01 LP_only_rel=1.156e-01\nPASS: no-fudge closed form is inside the frozen residual gate m=0.5 :: rel=2.823e-01, tol=3.0e-01\nPASS: LP determinant term alone reproduces the m=0 full response :: m0_rel=9.947e-12, tol=5.0e-06\nPASS: LP determinant term alone fails off m=0 on the fixed mass panel :: max_off_m0_rel=1.156e-01, floor=1.0e-01\nPASS: anti-fabrication: lattice star-product interband is nonzero off m=0 :: min_off_m0|chi_inter|=5.093e-03, min=1.0e-03\nPASS: named residual: no-fudge closed form leaves at most 30% relative gap :: max_closed_rel=2.823e-01, tol=3.0e-01\n\nS4 MASS CURVE: no-fudge response on a fixed fine panel\nMASS_CURVE m=0.00 chi=4.8147282428e-02\nMASS_CURVE m=0.05 chi=4.7898620198e-02\nMASS_CURVE m=0.10 chi=4.7582527199e-02\nMASS_CURVE m=0.15 chi=4.7126379969e-02\nMASS_CURVE m=0.20 chi=4.6513938697e-02\nMASS_CURVE m=0.25 chi=4.5742830212e-02\nMASS_CURVE m=0.30 chi=4.4810892972e-02\nMASS_CURVE m=0.35 chi=4.3715614902e-02\nMASS_CURVE m=0.40 chi=4.2454283823e-02\nMASS_CURVE m=0.45 chi=4.1024277714e-02\nMASS_CURVE m=0.50 chi=3.9423409639e-02\nMASS_CURVE m=0.55 chi=3.7650303382e-02\nMASS_CURVE m=0.60 chi=3.5704792294e-02\nPASS: no-fudge chi(m) is strictly decreasing on m=0..0.6 fixed grid :: min_drop=2.487e-04, floor=2.0e-04\n\nTOTAL: PASS=30 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004140Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=30 FAIL=1' vs cache 'TOTAL: PASS=31 FAIL=0'"
+  ]
+ }
+}

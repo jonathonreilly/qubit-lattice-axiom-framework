@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_theta_gauge_substrate_winding_vacuity_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_theta_gauge_substrate_winding_vacuity_2026_06_11.py",
+ "seed": 83277,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d4f9c0df",
+ "started_utc": "20260926T004117Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "857d6aa7359f44e6d41cc76cc3a4028078b4069925f9784e60355bd6ea9bdd46",
+ "stdout_tail": "s-plane note's own declared boundary): the named bridge is exactly whether the DERIVED multi-plaquette effective action leaves the per-plaquette class in the topological direction (multiplaquette FtF: admissible, not cleanly closeable) and whether the scaling limit forces an emergent integer sector functional with nonvacuous weighting. theta(a)'s admitted content after this block is that single named bridge.\nRESIDUAL (declared-open): the Euclidean Z_tau block on which a 4D charge would live is consumed at the kinetic-isotropy-primitive grade (regulator form only); emergent-time dynamics is not re-derived here.\nRESIDUAL (declared-open): inherited gate-note residuals remain at their declared grades (kinetic-class premise, spin-statistics support tier, boundary-holonomy convention, AC_phi_lambda labeling convention).\n\nTOTAL: PASS=9 FAIL=0\nVERDICT: at the substrate level theta_gauge has NO carrier: the lattice gauge group is connected (the winding transformation contracts site-locally; Gauss-law invariance leaves no character freedom), and the supplied per-plaquette action class admits no topological density (cross-plane core reproven), while the 2D contrast shows geometric sector functionals are possible exactly where plane-counting permits and always consume a supplied section choice. theta_gauge = 0 is vacuous on the substrate; the admission relocates to the named emergent-Q bridge (multi-plaquette effective action / scaling limit). Nothing is retired; no audit status is set.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T004117Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:the-neutral-moving-records-law-at-large-beta:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-macbookpro9927a-ja869",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-neutral-moving-records-law-at-large-beta/w-macbookpro9927a-ja869/check.py",
+ "seed": 84674,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8401cc1e",
+ "started_utc": "20260926T010434Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL two-valued menu at the neutral scale: the kernel is 1 + tanh(beta) sigma sigma'; no long-range order for z < 1/320 at every beta (exact); long-range order for z >= 10^40, 1 - tanh(beta) <= 1e-8 by reflection positivity in site planes and a chessboard Peierls bound (A1, A2 ASSUMED); the sphere menu is not reached"
+ },
+ "review": "Two-valued menu at the neutral scale: kernel is exactly 1 + tanh(beta) sigma sigma'. Exact: no long-range order for z < 1/320 at every beta (correlations only inside occupied clusters, domination by site percolation at 64z, self-avoiding paths). Order at large beta and high density: reflection positivity through site planes, exact chessboard ratios of all 6559 bad 2x2x2 patterns, Peierls sum; the chessboard estimate and the torus separation lemma are ASSUMED. Sphere menu not reached.",
+ "what": "DERIVATION, independent attempt 1 of 2: Does the moving-records law with vacancies order at the neutral scale?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 126-130 are OPEN hand-off PRs (#9182, #9184, #9185, #9186, #9187): read them on their branches (gh pr view <n> --json files,headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). They are by the supervisor's model family (Claude) and harvest Grok-refereed probes attempts; nothing in them is adopted. SETTING: block 126 (PR #9182): for records that move with vacancies (block 39's law, sphere and two-valued menus) the infrared bound holds with stiffness 1/(beta - gamma(c)), contents order once (beta - gamma(c)) rho > 3G(0), and at block 40's neutral scale c0(beta) the route gives nothing and the full-beta bound is false (exact 2x2x2 counterexamples). TASK: at c = c0(beta), (a) an infrared bound with some positive strength by another route (another embedding of the empty state, domination only in the transverse directions of a clustered phase), giving long-range order at large beta and some density; or (b) a proof of no long-range order: a lower bound on the structure factor at large k that survives the infinite-volume limit (the nearly-free-records mechanism); (c) exact data on 4^3 at a few (beta, z). HIT: (a) or (b) proved. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-neutral-moving-records-law-at-large-beta/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-neutral-moving-records-law-at-large-beta/<name>/check.py\"",
+ "stdout_sha256": "b03ae2fd77eaeb5a58a22d2ddc21aee307a5d4577b19e61466b84c46e7e8e70b",
+ "stdout_tail": "-q)^2 (surrounding sets meet a ray within n steps; connected sets of n cubes through a given one <= 26^(2(n-1)))\nC5 ok 1 - tanh(beta) <= 1e-8 iff beta >= log(2e8 - 1)/2 = 9.5569; the density is >= 1 - eps there\nchecks: all passed\nSUMMARY: PARTIAL two-valued menu at the neutral scale: the kernel is 1 + tanh(beta) sigma sigma'; no long-range order for z < 1/320 at every beta (exact); long-range order for z >= 10^40, 1 - tanh(beta) <= 1e-8 by reflection positivity in site planes and a chessboard Peierls bound (A1, A2 ASSUMED); the sphere menu is not reached\nHIT: At block 40's neutral scale c = 1/cosh(beta), the two-valued law with vacancies has kernel B = 1 + t sigma_x sigma_y exactly (t = tanh beta, sigma = n s in {-1,0,1}). (i) For every beta and z < 1/320, sum_x <sigma_0 sigma_x> <= p + 6p^2/(1-5p), p = 64z, on every even torus: spins correlate only inside occupied clusters and the occupied set is dominated by site percolation at 64z, so no long-range order. (ii) The law is reflection positive through planes of sites; a bad 2x2x2 pattern tau has chessboard weight <= A^V U^m (A = z^-1/8, U = ((1-t)/(1+t))^1/4, V vacancies, m opposite edges), P(A,U) = 16A + 16U^3 + ...; with the chessboard estimate and the torus separation lemma (both ASSUMED), P <= 1/2704 gives <sigma_0 sigma_x> >= 1 - 2[2P + 2P/(1-676P)^2] - o(1) for all x, e.g. >= 0.996 for z >= 10^40 and 1 - tanh beta <= 1e-8. So the neutral two-valued law orders at large beta and high density, and does not at low density.\n",
+ "checked": {
+  "by": "w-macbookpro9927a-ja869",
+  "at_utc": "20260926T010435Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

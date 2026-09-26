@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-nonlinear-record-motion-and-lasting-waves-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jb6d9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/nonlinear-record-motion-and-lasting-waves/referee_w-macbookpro90c72-jb6d9/check.py",
+ "seed": 49213,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e01db932",
+ "started_utc": "20260926T190013Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. At r=0 every orbit on the executed rings, and 54 random states on L=40, 60 and 80, ends in rigid translation of the occupied set: +V below density 1/(V+1), a jam wave at -1 above, and both when every gap equals V. For 0<r<1 the executed finite rings have one aperiodic closed class. The V=1 mean field damps every nonzero mode, and the V>=2 linearization has a root outside the unit circle at the three stated points and is damped at the 144 rational points. The autocorrelation runs and the modulus scan were not rebuilt. Geometric convergence of a finite chain is imported, not re-proved."
+ },
+ "review": "At r=0 every executed orbit ends in rigid translation, +V below density 1/(V+1) and a jam wave at -1 above; for 0<r<1 the executed finite rings have one aperiodic closed class; the V=1 mean field is damped for k not 0, and the V>=2 linearization has a root outside the unit circle at the three stated points. The autocorrelation runs and the modulus scan were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:nonlinear-record-motion-and-lasting-waves:a1/; its files are probes/work/derive/nonlinear-record-motion-and-lasting-waves/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/nonlinear-record-motion-and-lasting-waves/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "9faaa42930dd2c21c232f5150de6ffc2ff7dbd708a168def7f5100e08657957a",
+ "stdout_tail": "ean-field V=1: density weights are r, (1-r)(1-rho), (1-r)rho; 1-|lambda|^2 = 2p(1-p)(1-cos k) + 4p^2 rho(1-rho) sin^2 k with p=1-r\nPASS mean-field signs: at r=rho=1/4 the speed weights are negative: V=2 count 3 least -111/880, V=3 count 6 least -132/1145, V=5 count 15 least -132/1145\nPASS mean-field damping: all roots strictly inside at 144/144 points V in {2,3,5}, r in {1/4,1/2}, rho in {1/10,1/4,1/2,4/5}, six roots of unity angles\nPASS mean-field outside roots: Schur-Cohn fails and the resultant with the reciprocal is nonzero at the three stated points; float max moduli [1.0456, 1.01988, 1.00635]. The modulus scan over the (V, r, rho) grid was not rebuilt\nSUMMARY: confirmed partial. At r=0 every orbit on the executed rings, and 54 random states on L=40, 60 and 80, ends in rigid translation of the occupied set: +V below density 1/(V+1), a jam wave at -1 above, and both when every gap equals V. For 0<r<1 the executed finite rings have one aperiodic closed class. The V=1 mean field damps every nonzero mode, and the V>=2 linearization has a root outside the unit circle at the three stated points and is damped at the 144 rational points. The autocorrelation runs and the modulus scan were not rebuilt. Geometric convergence of a finite chain is imported, not re-proved.\nHIT: confirmed - at r=0 the occupied set eventually translates by +V or by the jam wave -1, for 0<r<1 every executed finite ring has one aperiodic closed class, and the mean-field linearization is not always damped\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jb6d9",
+  "at_utc": "20260926T190025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: at r=0 the occupied set eventually translates by +V or by the jam wave -1. For 0<r<1 the executed finite rings have one aperiodic closed class. The mean-field linearization has roots outside the unit circle at the three stated points. Autocorrelation runs and the modulus scan were not rebuilt.",
+  "by": "w-macbookpro90c72-jb6d9",
+  "at_utc": "20260926T190025Z"
+ }
+}

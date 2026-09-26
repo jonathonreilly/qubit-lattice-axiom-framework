@@ -1,0 +1,14 @@
+PASS deterministic sets: 130592 states on V=1..3, L<=9/8/7: free excludes the jam set, jam excludes the free set, and on the equal line the two sets are the uniform gap V
+PASS deterministic lemmas: after one step on 130592 states the gap is at least the leader's speed, saturation persists, and the saturated record copies its leader
+PASS deterministic orbits: all 130592 orbits enter the rigid set for their density and then translate (+V, -1, or both when the gaps are V); longest observed entry 3
+PASS deterministic t=0: gaps (0, 2), speeds (0, 2), V=2: both saturated at step 0, and record 0 is not saturated at step 1
+PASS deterministic larger rings: 54 random states on L=40, 60, 80 enter the same rigid motion; seed 20260926
+PASS support graph: 64 rings, 41944 states, V=1 L<=8, V=2 L<=7, V=3 L<=6: one closed class, period 1; all-slowdown never raises a speed; a lone record with room cruises in {m-1, m} and returns in L and L+1 steps. The author's 1184754-state graph was not rebuilt
+PASS lowering maneuver: from a common speed 2, withholding one slowdown drops the next common speed
+PASS mean-field jacobian: uniform fixed point and symbol weights match unit differences of the ring map at 4 points
+PASS mean-field V=1: density weights are r, (1-r)(1-rho), (1-r)rho; 1-|lambda|^2 = 2p(1-p)(1-cos k) + 4p^2 rho(1-rho) sin^2 k with p=1-r
+PASS mean-field signs: at r=rho=1/4 the speed weights are negative: V=2 count 3 least -111/880, V=3 count 6 least -132/1145, V=5 count 15 least -132/1145
+PASS mean-field damping: all roots strictly inside at 144/144 points V in {2,3,5}, r in {1/4,1/2}, rho in {1/10,1/4,1/2,4/5}, six roots of unity angles
+PASS mean-field outside roots: Schur-Cohn fails and the resultant with the reciprocal is nonzero at the three stated points; float max moduli [1.0456, 1.01988, 1.00635]. The modulus scan over the (V, r, rho) grid was not rebuilt
+SUMMARY: confirmed partial. At r=0 every orbit on the executed rings, and 54 random states on L=40, 60 and 80, ends in rigid translation of the occupied set: +V below density 1/(V+1), a jam wave at -1 above, and both when every gap equals V. For 0<r<1 the executed finite rings have one aperiodic closed class. The V=1 mean field damps every nonzero mode, and the V>=2 linearization has a root outside the unit circle at the three stated points and is damped at the 144 rational points. The autocorrelation runs and the modulus scan were not rebuilt. Geometric convergence of a finite chain is imported, not re-proved.
+HIT: confirmed - at r=0 the occupied set eventually translates by +V or by the jam wave -1, for 0<r<1 every executed finite ring has one aperiodic closed class, and the mean-field linearization is not always damped

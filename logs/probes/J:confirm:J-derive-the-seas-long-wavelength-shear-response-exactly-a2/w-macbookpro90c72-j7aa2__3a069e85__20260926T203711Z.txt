@@ -1,0 +1,10 @@
+PASS A1 vertex :: the anticommutator {f, S} averages the two sines; fhat of cos(q.x) at ±q is 1/2, so w = eps(s+s')/4
+PASS A2 interband square :: Tr[P+ sigma.w P- sigma.w] = [|w|^2(1+n.n') - 2(n.w)(n'.w)]/2 once n and n' are unit vectors
+PASS A3 pointwise limit :: F(k,0) = (a^2 |eps s|^2 - (s.eps s)^2)/(4 a^3)
+PASS A4 uniform second order :: the lambda^2 term of -|(1+eps)s| equals -2 F(k,0), so half the uniform form is -F(k,0)
+PASS B gram identities :: |s|^2|t|^2-(s.t)^2 = |s x t|^2, and ||eps||_F^2 |s|^2 - |eps s|^2 is the sum of the three row cross-squares
+PASS C1 uniform sign :: the integrand |s|^2|eps s|^2-(s.eps s)^2 vanishes for a scalar and equals 4 at s=(1,1,0) for diag(1,-1,0)
+PASS C2 member :: this R2 is degree 2 in p and invariant under h -> h + p xi^T + xi p^T; a TT wave with tr h = 0 and h p = 0 has R1 = 0
+TOTAL FAIL=0
+SUMMARY: PARTIAL exact for the long-wave sign. F(k,0) is half the negative of the uniform second-order form, the uniform integrand is nonnegative and not identically zero for a non-scalar symmetric strain, and the member polynomial used here is O(|p|^2) and vanishes in the R1 channel of a TT wave. So for every K>0 a long enough TT shear has negative second-order energy. Dominated convergence and Rayleigh-Schrodinger for the filled sea are imports. The floating-point q^2 relabelling coefficients were not rebuilt and are not certified.
+HIT: confirmed - the sea's static response is continuous at q=0 and equals half the uniform second-order form, and member plus sea has negative second-order energy for every K>0 once a TT shear wave is long enough. The q^2 relabelling coefficient remains uncertified.

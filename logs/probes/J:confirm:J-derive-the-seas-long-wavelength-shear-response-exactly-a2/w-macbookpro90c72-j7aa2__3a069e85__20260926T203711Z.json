@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-seas-long-wavelength-shear-response-exactly-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j7aa2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-seas-long-wavelength-shear-response-exactly/referee_w-macbookpro90c72-j7aa2/check.py",
+ "seed": 55031,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "3a069e85",
+ "started_utc": "20260926T203711Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL exact for the long-wave sign. F(k,0) is half the negative of the uniform second-order form, the uniform integrand is nonnegative and not identically zero for a non-scalar symmetric strain, and the member polynomial used here is O(|p|^2) and vanishes in the R1 channel of a TT wave. So for every K>0 a long enough TT shear has negative second-order energy. Dominated convergence and Rayleigh-Schrodinger for the filled sea are imports. The floating-point q^2 relabelling coefficients were not rebuilt and are not certified."
+ },
+ "review": "Exact recomputation: F(k,0) is half the negative of the uniform second-order form, and a TT member term is O(q^2), so every K>0 loses to a long shear. The floating-point q^2 coefficients were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-seas-long-wavelength-shear-response-exactly:a2/; its files are probes/work/derive/the-seas-long-wavelength-shear-response-exactly/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-seas-long-wavelength-shear-response-exactly/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "35f465b7e328de86921d4ffc2cfe8d2e05edaa2fb08994da51bd2856d0c4c1af",
+ "stdout_tail": "sigma.w P- sigma.w] = [|w|^2(1+n.n') - 2(n.w)(n'.w)]/2 once n and n' are unit vectors\nPASS A3 pointwise limit :: F(k,0) = (a^2 |eps s|^2 - (s.eps s)^2)/(4 a^3)\nPASS A4 uniform second order :: the lambda^2 term of -|(1+eps)s| equals -2 F(k,0), so half the uniform form is -F(k,0)\nPASS B gram identities :: |s|^2|t|^2-(s.t)^2 = |s x t|^2, and ||eps||_F^2 |s|^2 - |eps s|^2 is the sum of the three row cross-squares\nPASS C1 uniform sign :: the integrand |s|^2|eps s|^2-(s.eps s)^2 vanishes for a scalar and equals 4 at s=(1,1,0) for diag(1,-1,0)\nPASS C2 member :: this R2 is degree 2 in p and invariant under h -> h + p xi^T + xi p^T; a TT wave with tr h = 0 and h p = 0 has R1 = 0\nTOTAL FAIL=0\nSUMMARY: PARTIAL exact for the long-wave sign. F(k,0) is half the negative of the uniform second-order form, the uniform integrand is nonnegative and not identically zero for a non-scalar symmetric strain, and the member polynomial used here is O(|p|^2) and vanishes in the R1 channel of a TT wave. So for every K>0 a long enough TT shear has negative second-order energy. Dominated convergence and Rayleigh-Schrodinger for the filled sea are imports. The floating-point q^2 relabelling coefficients were not rebuilt and are not certified.\nHIT: confirmed - the sea's static response is continuous at q=0 and equals half the uniform second-order form, and member plus sea has negative second-order energy for every K>0 once a TT shear wave is long enough. The q^2 relabelling coefficient remains uncertified.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j7aa2",
+  "at_utc": "20260926T203718Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The long-wave sign is exact: the sea tends to half the uniform form, which is negative for a non-scalar strain, and the member term is O(q^2). The floating-point q^2 coefficients stay uncertified.",
+  "by": "w-macbookpro90c72-j7aa2",
+  "at_utc": "20260926T203718Z"
+ }
+}

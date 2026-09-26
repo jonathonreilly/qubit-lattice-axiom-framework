@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -969,6 +969,10 @@
   "admissibility_rule_light_cone_formation_keeps_memory_in_3plus1_its_stationary_law_is_one_layer_of_a_reflection_positive_bilayer_ordered_above_beta_0p5905_bounded_theorem_note_2026-09-23": {
    "deps_hash": "0d5c7b17d50e",
    "out_degree": 2
+  },
+  "admissibility_rule_links_on_the_bonds_make_turning_the_coin_a_symmetry_flat_links_leave_only_the_lengths_and_the_lengths_connection_adds_the_inversion_odd_curl_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_many_records_under_exclusion_source_is_the_projected_density_chessboard_invisible_interacting_sea_stiffens_clocks_oppositely_bounded_theorem_note_2026-09-22": {
    "deps_hash": "d76207766a3a",

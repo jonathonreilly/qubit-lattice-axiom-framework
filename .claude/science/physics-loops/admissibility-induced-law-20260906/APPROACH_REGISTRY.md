@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F161 links on the bonds (the coin-rotation lane) | exact bond identities with rational SU(2) turns; torque balance on tori; the connection's scalar at a point | block 161 (harvest of #8843, confirmed by #9308; T4 own) |

@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 161 (2026-09-26)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "block 65: a rotation carried along each bond (not constructed); block 158: the lattice object supplying (1/8) eps.C"
+source_of_blocker_text: landed block 65; block 158 (pushed)
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "a nearest-neighbour link rule from the lengths; the eight species; an other-family referee of T4"
+```

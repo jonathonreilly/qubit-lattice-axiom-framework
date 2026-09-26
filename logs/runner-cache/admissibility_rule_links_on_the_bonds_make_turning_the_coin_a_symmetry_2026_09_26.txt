@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_links_on_the_bonds_make_turning_the_coin_a_symmetry_2026_09_26.py
+runner_sha256: 6443724e9f293836b9a59f1d821f12ca7baf67417e559e68f85c9c0fd3d550e6
+input_fingerprint_sha256: 02f53468c5112b2b58fcee0871eb046c815aeeaa2d4719e0d411593d71587818
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 194.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_LINKS_ON_THE_BONDS_MAKE_TURNING_THE_COIN_A_SYMMETRY_FLAT_LINKS_LEAVE_ONLY_THE_LENGTHS_AND_THE_LENGTHS_CONNECTION_ADDS_THE_INVERSION_ODD_CURL_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BLIND_WALK_A_SCALAR_HOP_WEIGHTED_BY_THE_TWIST_OF_THE_COIN_ALONG_THE_BOND_MAKES_A_VARYING_ROTATION_OF_THE_COIN_AXES_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the frame, the links and the comparator are supplied)
+PASS: A3 landed block 62 has no connection (the comparator's is quoted as a comparator) and landed block 65 says that beyond first order a rotation must be carried along each bond, not constructed there
+PASS: B1 exact rational SU(2) turns (Cayley) and rational frames: U_x (Ebar.s) U_y^dag - ((R_x E_x + R_y E_y)/2).s = (1/2)[U_x (E_x.s)(U_y^dag - U_x^dag) + (U_x - U_y)(E_y.s) U_y^dag], with a nonzero trace that no frame bond has; at first order it is block 65's frame rotation plus the twist (i/2)(th_y - th_x)_j
+PASS: C1 the bond (1/2)(E_x.s W + W E_y.s) is covariant, B[R_x E_x, R_y E_y, U_x W U_y^dag] = U_x B U_y^dag, and at W = 1 it is block 62's bond; with E = R_E S and flat links W = Uhat_x Uhat_y^dag every bond is Uhat_x B[S_x, S_y, 1] Uhat_y^dag, so the walker sees only S = sqrt(g); a lift fixes the link up to a site sign
+PASS: D1 for a random exact state, frame and link field on the 3^3 torus: frame torque + link response = (1/2) d<psi^dag s_c psi>(x)/dt at all 81 site-axis pairs (81 with every term nonzero)
+PASS: D2 on the exactly stationary 4^3 state sum_j i^(x_j) c_j (energy +1): with no links the frame torque is nonzero at 136 of 192 pairs and equals minus the link response; with flat links fixed by a rotated frame the dressed state is again an eigenstate and the total torque vanishes at every pair
+PASS: E1 a link W = 1 + (i/2) a.s adds (i/2)(E.a) times the identity to the bond at first order, i.e. the scalar hop (1/4)(E.a)(psi_x^dag psi_y + h.c.), whose long-wavelength value on smooth zero-corner states is (1/2) E.a per bond direction; with a_j the frame's own connection along the bond (a_{j,c} = (1/2) eps_cab omega_jab), (1/2) sum_j E^j.a_j = (1/4) eps_abc omega_abc = (1/8) eps.C through second order, for general and for symmetric frames with generic jets
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the bond identities with exact rational SU(2) turns, frames and links
+per_site: executed - the torque balance at every site and axis of a 3^3 torus with random exact data
+per_mode: executed - the exactly stationary 4^3 state, with no links and with flat links fixed by a rotated frame
+per_block: executed - the link's first-order bond term and the connection scalar against (1/8) eps.C at a point, generic jets through second order
+lattice_wide: checked and not executed - a nearest-neighbour rule fixing the links from the lengths on the lattice, link dynamics, and the eight species
+PASS: G1 the five N5 resolution lines are printed
+scope: SU(2) links on the bonds (1/2)(E_x.s W + W E_y.s): turning the coin a symmetry to all orders; flat links fixed by the frame leave only sqrt(g); frame torque + link response = (1/2) d<s_c>/dt; links carrying the lengths' connection add (1/8) eps.C at long wavelength; harvest of #8843 (confirmed by #9308) with the supervisor's T4; nothing adopted (194s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

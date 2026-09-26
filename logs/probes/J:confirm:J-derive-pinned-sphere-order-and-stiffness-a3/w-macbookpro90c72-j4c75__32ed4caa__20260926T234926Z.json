@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-pinned-sphere-order-and-stiffness-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4c75",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/pinned-sphere-order-and-stiffness/referee_w-macbookpro90c72-j4c75/check.py",
+ "seed": 66566,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "32ed4caa",
+ "started_utc": "20260926T234926Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the two-valued bond kernel is positive semidefinite iff c >= 1/cosh beta, and has rank 2 there. The sphere kernel's empty-constant block requires c >= beta/sinh beta, with i0 = sinh(beta)/beta and i1 > 0. On the 4^3 torus one vacancy drops the twisted dissipation from 64 to 7936/129 = 64 - 320/129. The stiffness factor is (1/beta)(1 + (a - 2) epsilon) + O(epsilon^2). A 160^3 quadrature gives a = 2.5311 on Z^3. Higher spherical eigenvalues and the domination route were not re-proved."
+ },
+ "review": "Independent check. The two-valued bond kernel is positive semidefinite iff c >= 1/cosh beta, and rank 2 at the threshold. The sphere empty-constant block requires c >= beta/sinh beta; i0 = sinh(beta)/beta and i1 > 0. On the 4^3 torus one vacancy drops the twisted dissipation from 64 to 7936/129 = 64 - 320/129. The stiffness expansion is (1/beta)(1 + (a - 2) epsilon). A 160^3 quadrature gives a = 2.531138 on Z^3. Higher spherical eigenvalues and the domination route were not re-proved.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:pinned-sphere-order-and-stiffness:a3/; its files are probes/work/derive/pinned-sphere-order-and-stiffness/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/pinned-sphere-order-and-stiffness/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "6f8f2ddaec228b5d4d8aa7b8610d44a08e00c1a77b6dbe7b1bef92c02d318794",
+ "stdout_tail": "PASS sphere block :: i0 = sinh(beta)/beta, i1 = (beta cosh beta - sinh beta)/beta^2 > 0, and the empty-constant block forces c >= beta/sinh beta\nPASS two-valued :: PSD iff c >= 1/cosh beta, because the odd eigenvalue is 2c sinh beta and the even determinant is 2c cosh beta - 2; rank 2 at the threshold\nPASS torus green :: G0 - G1 = (1 - 1/N)/6 and a_L = 2/(1 - (G0 - G(2,0,0))) = 320/129\nPASS vacancy power :: removing one site drops the twisted dissipation from 64 to 7936/129\nPASS stiffness algebra :: rho^2/(beta (1 - a epsilon)) = (1/beta)(1 + (a - 2) epsilon) + O(epsilon^2)\nPASS infinite lattice :: quadrature on a 160^3 grid gives a = 2.531138, against the printed 2.531138; six separate bonds would cost 3\nTOTAL FAIL=0\nSUMMARY: PARTIAL the two-valued bond kernel is positive semidefinite iff c >= 1/cosh beta, and has rank 2 there. The sphere kernel's empty-constant block requires c >= beta/sinh beta, with i0 = sinh(beta)/beta and i1 > 0. On the 4^3 torus one vacancy drops the twisted dissipation from 64 to 7936/129 = 64 - 320/129. The stiffness factor is (1/beta)(1 + (a - 2) epsilon) + O(epsilon^2). A 160^3 quadrature gives a = 2.5311 on Z^3. Higher spherical eigenvalues and the domination route were not re-proved.\nHIT: confirmed - vacancies keep the two-valued bond kernel positive semidefinite exactly for c >= 1/cosh beta. On the 4^3 torus a site vacancy lowers the twisted dissipation from 64 to 7936/129.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4c75",
+  "at_utc": "20260926T234942Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The two-valued kernel is positive semidefinite iff c >= 1/cosh beta, rank 2 at the threshold. The sphere empty-constant block requires c >= beta/sinh beta. On the 4^3 torus one vacancy drops the twisted dissipation from 64 to 7936/129. A 160^3 quadrature gives a = 2.531138. Higher eigenvalues and the domination route were not re-proved.",
+  "by": "w-macbookpro90c72-j4c75",
+  "at_utc": "20260926T234942Z"
+ }
+}

@@ -1,0 +1,9 @@
+PASS sphere block :: i0 = sinh(beta)/beta, i1 = (beta cosh beta - sinh beta)/beta^2 > 0, and the empty-constant block forces c >= beta/sinh beta
+PASS two-valued :: PSD iff c >= 1/cosh beta, because the odd eigenvalue is 2c sinh beta and the even determinant is 2c cosh beta - 2; rank 2 at the threshold
+PASS torus green :: G0 - G1 = (1 - 1/N)/6 and a_L = 2/(1 - (G0 - G(2,0,0))) = 320/129
+PASS vacancy power :: removing one site drops the twisted dissipation from 64 to 7936/129
+PASS stiffness algebra :: rho^2/(beta (1 - a epsilon)) = (1/beta)(1 + (a - 2) epsilon) + O(epsilon^2)
+PASS infinite lattice :: quadrature on a 160^3 grid gives a = 2.531138, against the printed 2.531138; six separate bonds would cost 3
+TOTAL FAIL=0
+SUMMARY: PARTIAL the two-valued bond kernel is positive semidefinite iff c >= 1/cosh beta, and has rank 2 there. The sphere kernel's empty-constant block requires c >= beta/sinh beta, with i0 = sinh(beta)/beta and i1 > 0. On the 4^3 torus one vacancy drops the twisted dissipation from 64 to 7936/129 = 64 - 320/129. The stiffness factor is (1/beta)(1 + (a - 2) epsilon) + O(epsilon^2). A 160^3 quadrature gives a = 2.5311 on Z^3. Higher spherical eigenvalues and the domination route were not re-proved.
+HIT: confirmed - vacancies keep the two-valued bond kernel positive semidefinite exactly for c >= 1/cosh beta. On the 4^3 torus a site vacancy lowers the twisted dissipation from 64 to 7936/129.

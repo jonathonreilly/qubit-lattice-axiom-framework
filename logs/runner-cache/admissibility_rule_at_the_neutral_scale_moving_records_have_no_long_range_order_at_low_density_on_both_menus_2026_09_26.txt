@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_at_the_neutral_scale_moving_records_have_no_long_range_order_at_low_density_on_both_menus_2026_09_26.py
+runner_sha256: 39032cf3629f26c3a178b9a27d1461df361c472ef1b61c78433033dd8583ffc7
+input_fingerprint_sha256: 49aba0e68667aa68a8e66c1cbb2f935a13235b9266469c496e7b673943a23e49
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_AT_THE_NEUTRAL_SCALE_MOVING_RECORDS_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_ON_BOTH_MENUS_AND_THE_SPHERE_THRESHOLD_FALLS_AS_BETA_TO_MINUS_FIVE_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_WITH_VACANCIES_THE_INFRARED_STIFFNESS_IS_SET_BY_THE_BINDING_SCALE_LONG_RANGE_ORDER_ABOVE_THE_NEUTRAL_SCALE_AND_NO_FULL_BOUND_AT_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the law with vacancies, its weights and the menus are supplied)
+PASS: A3 landed block 126: c0(gamma) = gamma/sinh gamma (sphere) or 1/cosh gamma (two-valued); the sphere menu with the uniform measure; the two-valued menu with counting measure; B(s, s') = c e^(beta s.s')
+PASS: B1 the sphere average <e^(beta s.v)> = sinh(beta|v|)/(beta|v|) (uniform probability measure); at the neutral scales an occupied neighbour weighs 1 on average: (beta/sinh beta) sinh(beta)/beta = 1, and e^(+-beta)/cosh beta = 1 +- tanh beta
+PASS: B2 y cosh y - sinh y = sum_(n >= 1) 2n y^(2n+1)/(2n+1)! (coefficients to y^21), so sinh(y)/y increases on y > 0 and x coth x > 1 for x > 0
+PASS: B3 F_m = c0^m sinh(m beta)/(m beta) has F_1 = 1 and F_(m+1)/F_m = (m/(m+1)) beta (coth beta + coth(m beta)) (m = 1..5), which exceeds 1 by B2; with |v| <= m <= 6 the sphere's conditional weight c0^m sinh(beta|v|)/(beta|v|) is at most F_6(beta)
+PASS: B4 two-valued: with k neighbours at +1 and l at -1 the conditional weight (1+t)^k (1-t)^l + (1-t)^k (1+t)^l is at most G(t) = (1+t)^6 + (1-t)^6 on [0, 1] for all 28 pairs k + l <= 6 (Bernstein certificates); G rises from G(0) = 2 to G(1) = 64
+PASS: C1 given the rest, a site is occupied with probability zS/(1 + zS), which increases in S; with S <= S_max and w = z S_max it is at most rho = w/(1 + w), and rho < 1/5 exactly when w < 1/4
+PASS: C2 self-avoiding paths on Z^3 from a site: 6, 30, 150, 726, 3534 for n = 1..5, within 6 5^(n-1); the path sum (1 - 5p) sum_(n <= N) 6 5^(n-1) p^(n+1) = 6 p^2 (1 - (5p)^N) (N = 1..10), so the occupied cluster of a site under domination at density rho < 1/5 has expected size at most rho + 6 rho^2/(1 - 5 rho)
+PASS: C3 cluster decoupling on the sphere: given the occupied set, a common rotation of one cluster's contents keeps every bond weight, so the cluster's conditional mean is fixed by the quarter turns about z and x, whose only common fixed vector is 0; on the two-valued menu a common sign flip does the same
+PASS: C4 the two-valued region z < 1/(4 G(tanh beta)) contains z < 1/256 at every beta (G <= 64 on [0, 1]), hence block 153's z < 1/320; it is larger than 1/320 by 80/G: 40 as beta -> 0 and 5/4 as beta -> oo
+PASS: D1 F_6(beta)/beta^5 -> 16/3 as beta -> oo and F_6 -> 1 as beta -> 0: the sphere threshold z0(beta) = 1/(4 F_6(beta)) tends to 1/4 at small beta and is asymptotic to 3/(64 beta^5)
+PASS: D2 the earlier remark's weight (beta e^beta/sinh beta)^6 exceeds F_6 by a factor asymptotic to 12 beta; the attempt's region 1/(5 F_6) lies inside 1/(4 F_6)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the sphere average and the two neutral scales
+per_site: executed - the conditional weights: F_m's ratios and the 28 two-valued neighbour counts
+per_mode: executed - the occupation bound w/(1 + w) and its cutoff w < 1/4
+per_block: executed - self-avoiding path counts to n = 5, the path sum, the quarter turns, the regions and the sphere asymptotics
+lattice_wide: checked and not executed - the window between low and high density; the sphere at high density; the torus separation lemma
+PASS: G1 the five N5 resolution lines are printed
+scope: block 126's law with vacancies at the neutral scale: no long-range order for z < 1/(4 F_6(beta)) on the sphere (~ 3/(64 beta^5)) and z < 1/(4 G(tanh beta)) on the two-valued menu (contains z < 1/256); harvest of #9304 (confirmed and sharpened by #9329); nothing adopted (1s)
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

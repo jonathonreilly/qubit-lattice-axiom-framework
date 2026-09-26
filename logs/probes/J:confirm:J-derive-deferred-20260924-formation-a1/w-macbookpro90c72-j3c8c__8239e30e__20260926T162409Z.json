@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-formation-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j3c8c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-formation/referee_w-macbookpro90c72-j3c8c/check.py",
+ "seed": 39849,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8239e30e",
+ "started_utc": "20260926T162409Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The drift identities, the single-site inequality -3 beta log A(3 beta)/A(3 beta) > 1, and the first-order law under premises A1-A2 all hold. S*_2,3,4,6 = 27/32, 11/9, 189/128, 2627/1440. The gap 2 - 1/(2 L^2) - S* equals 33/32, 13/18, 63/128, 233/1440 at those sides, stays positive at L=5 and L=7, and is negative at L=8,9,10,16,32,64. The log coefficient is 2 c0 sigma^2 with c0 = 3 sqrt(3)/(4 pi). The additive continuum offset, the seeded Monte Carlo, and premises A1-A2 were not proved."
+ },
+ "review": "The independent script confirms the drift identities, the four S* rationals, the single-site bound above 1, and the first-order memory slope S*+2-1/(2L^2) under A1-A2, which is distinct from 2 S*, while Monte Carlo and those premises stay open.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-formation:a1/; its files are probes/work/derive/deferred-20260924-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ffb27a70bb92ebc087e809f89af81256f4c2cc19771224d589d453baec7913e5",
+ "stdout_tail": "2,3,4,6 = 27/32, 11/9, 189/128, 2627/1440\nPASS C2 Lyapunov: for L=2,3,4 the circulant solution has c(0,0)=S* and E(P pi)^2 = S* - 1 + 1/L^2\nPASS S8 chord: 1 - n\u00b7n' = X/2 - (3/8) X^2 + O(X^3), X = |b|^2/(m+a)^2\nPASS F coefficients: x1 tau and lambda1 tau open at 1, with slopes S*+2-1/L^2 and S*+2-1/(2L^2); 1/|M|^2 has slope 2 S*\nPASS F4 gap: exact gaps 33/32, 13/18, 63/128, 233/1440; positive at L=5,7 and negative at L=8,9,10,16,32,64\nPASS F log coefficient: 1-u = (2/9)(k1^2 - k1 k2 + k2^2) + O(k^4), and the log coefficient is 2 c0 with c0 = 3 sqrt(3)/(4 pi)\nPASS E single site: A < kappa/(kappa+1) < 1, so -kappa log A/A > 1 for every kappa > 0\nPASS E large beta: dropping the exponential tail, lambda1 tau1 = 1 + (3/2) sigma^2 + O(sigma^4), and this is the L=1 case of the memory law\nSUMMARY: confirmed partial. The drift identities, the single-site inequality -3 beta log A(3 beta)/A(3 beta) > 1, and the first-order law under premises A1-A2 all hold. S*_2,3,4,6 = 27/32, 11/9, 189/128, 2627/1440. The gap 2 - 1/(2 L^2) - S* equals 33/32, 13/18, 63/128, 233/1440 at those sides, stays positive at L=5 and L=7, and is negative at L=8,9,10,16,32,64. The log coefficient is 2 c0 sigma^2 with c0 = 3 sqrt(3)/(4 pi). The additive continuum offset, the seeded Monte Carlo, and premises A1-A2 were not proved.\nHIT: confirmed - the 1/|m|^2 factor is not the strong-coupling memory law: lambda1 tau_L = 1 + sigma^2 (S*_L + 2 - 1/(2 L^2)) under A1-A2, and at one site the rate exceeds 1 for every beta\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j3c8c",
+  "at_utc": "20260926T162425Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The single-site rate exceeds 1 for every beta, and under A1-A2 the memory slope is S*+2-1/(2L^2) rather than 2 S*. Monte Carlo and A1-A2 remain open.",
+  "by": "w-macbookpro90c72-j3c8c",
+  "at_utc": "20260926T162425Z"
+ }
+}

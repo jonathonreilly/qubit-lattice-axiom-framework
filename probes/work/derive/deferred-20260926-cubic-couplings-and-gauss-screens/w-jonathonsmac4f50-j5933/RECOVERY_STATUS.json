@@ -1,0 +1,33 @@
+{
+  "task": "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1",
+  "worker": "w-jonathonsmac4f50-j5933",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "author_family": "Codex (sources); this attempt Claude (cross-family)",
+  "sources": {
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md": "d7833106fd96783eae700f7b505e41207bed74a4d8709723492091800ffb4070",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/proper_cubic_extension_independent/REPORT.md": "4b16425c81270cf448a570c3f090fd02040af86a70266ba2e61c2e674af4ab39",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h/CAMPAIGN_OUTCOME.md": "3ac19f2a1d2a7133ff1d3a2b4797522e0ee83da0c8ecf5f457653fa7e6549ca1",
+    "frozen #8569 @508722df2eafb18464e8c5f84ed89fca6383f67c docs/MOBILE_RECORDS_CUBIC_SYMBOL_SELECTION_AND_GAUSS_CLOSURE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "a1e8be3e9d29e43324c5257e996f7501d1c44220e074dcbe118ae8bf060276f1",
+    "frozen #8569 runner scripts/mobile_records_cubic_symbol_selection_and_gauss_closure_2026_09_21.py": "3807ae952de8245d7606f21b4eb0617e43e22440c6c548ffc0fd5b4faf97536e",
+    "frozen #8565 note (not read in this attempt)": "7f88d63e632ce83e983b684979792b864a816f69545124f7850f4c4bbc1e829f"
+  },
+  "hashes_match_source_map": true,
+  "related_work_checked": [{"path": "probes/work/derive/deferred-20260926-cubic-couplings-and-gauss-screens", "finding": "no prior attempt"}],
+  "proved": [],
+  "checked": ["K1 species-space nullspace dimensions 11 (proper) and 5 (full)", "K2 eleven maps covariant, independent, exhaustive; inversion covariance on a1,a2,m,u,v",
+              "K3 raw-vector closure and raw Gauss preservation: eight zeros; derivative-curl closure: u=v=b_u=b_v=0", "K4 d,g block and determinant",
+              "K5 reversal parity", "K6 rank 10", "K7 #8569 Gram formula", "K8 15/2 normalisation"],
+  "assumed": ["#8569 supplied model: alphabet, uniform law, entropy compatibility, first order"],
+  "dispositions": [
+    {"claim": "proper-cubic eleven-coupling extension and its conditional vector selection", "disposition": "recovered", "note": "cross-family referee with disjoint machinery; no defect"},
+    {"claim": "#8569 five-versus-eleven classification and raw-vs-derivative closure distinction", "disposition": "recovered", "note": "reproduced exactly"},
+    {"claim": "#8569 local positive context-exchange realisation", "disposition": "open", "note": "only the normalisation checked"},
+    {"claim": "#8565 birth-locality counterexample, polymer assumptions, loop ensemble", "disposition": "not addressed", "note": "next obligation"},
+    {"claim": "Gram-kernel cubic formation response; centred-Gauss staggered sectors; Gauss-worm screens", "disposition": "not addressed", "note": ""}
+  ],
+  "first_unresolved_step": "a local irreversible formation/transport law whose stationary sector keeps the raw Gauss constraints (it must switch off the eight couplings of K3)",
+  "remaining_obligations": ["#8565 referee", "local selecting mechanism", "positivity of the local realisation for all eleven maps"],
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "the proper-cubic addendum can join #8569's finite classification as a cross-family confirmed supplied-model lemma; the selection mechanism stays on the backlog"
+}

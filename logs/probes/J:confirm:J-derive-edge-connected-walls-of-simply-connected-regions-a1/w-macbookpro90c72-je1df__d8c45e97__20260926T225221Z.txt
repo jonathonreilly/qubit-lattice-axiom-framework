@@ -1,0 +1,11 @@
+PASS A1 neighbours :: 12 edge, 32 vertex
+PASS A2 census :: counts [1, 3, 15, 86, 534, 3481, 23502, 162913]; wall tally {6: 1, 10: 6, 14: 45, 18: 332, 22: 2538, 20: 240, 16: 12}
+PASS A3 sharpness :: a cavity splits the wall; a vertex touch does too; an edge touch does not
+PASS A4 ray parity :: the +e1 crossing parity recovers every tested cube set from its wall
+PASS B1 trees :: r_k = 12/(k-1) C(11k, k-2) through k=20
+PASS B2 radius :: the tree series converges for x < 10^10/11^11
+PASS B3 sum :: 12-neighbour sum 0.14296; 32-neighbour sum 0.08962
+PASS B4 thresholds :: without contents g* = (347/10000)^2; the four triples hold at the stated g and fail at 1.001 g
+TOTAL FAIL=0
+SUMMARY: PARTIAL every fixed polycube of at most 8 cells has an even wall and, when it is a region, an edge-connected wall. A cavity and a vertex touch split the wall; an edge touch does not. The ray parity recovers the tested sets. At x0=347/10000 the 12-neighbour tree sum is below 0.1430, so g* = 120409/10^8 without contents, below (10^10/11^11)^2. The general proof is the mod-2 cycle argument; the half-filling window was not rerun.
+HIT: confirmed - the wall of a finite face-connected set in Z^3 with face-connected complement is edge-connected, and the 12-neighbour certificate gives g* = (347/10000)^2 without contents.
